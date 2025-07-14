@@ -1,3 +1,0 @@
-#!/bin/bash -ex
-
-pipx install --python $(which pypy3) "manticore[native]"
