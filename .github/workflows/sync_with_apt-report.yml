@@ -1,8 +1,8 @@
-name: 🔄 Sync `APT/APT_REPORT/` from blackorbird/APT_REPORT
+name: 🔄 Sync APT_REPORT from blackorbird/APT_REPORT
 
 on:
   schedule:
-    - cron: "0 0,12 * * *"
+    - cron: "0 0,12 * * *" # 每日兩次（UTC 00:00 & 12:00，台北時間 08:00 & 20:00）
   workflow_dispatch:
 
 jobs:
@@ -48,5 +48,10 @@ jobs:
           git add APT/APT_REPORT
           git diff --cached --quiet && echo "✅ No changes to commit." && exit 0
 
-          git commit -m "🔄 Sync APT_REPORT from blackorbird/APT_REPORT (${UPSTREAM_COMMIT}) [bot][action]"
+          git commit -m "🛡 Sync APT_REPORT from blackorbird/APT_REPORT (${UPSTREAM_COMMIT}) [bot][action]"
+
+          echo "🔃 Pulling remote changes before push..."
+          git pull --rebase https://x-access-token:${GIT_TOKEN}@github.com/XD3an/awesome-cybersecurity-all-in-one.git main || true
+
+          echo "🚀 Pushing to main..."
           git push https://x-access-token:${GIT_TOKEN}@github.com/XD3an/awesome-cybersecurity-all-in-one.git HEAD:main
