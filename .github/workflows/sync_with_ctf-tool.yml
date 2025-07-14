@@ -1,12 +1,12 @@
-name: 🔄 Sync `PoC-in-GitHub` from `nomi-sec/PoC-in-GitHub`
+name: 🔄 Sync ctf-tools from zardus/ctf-tools
 
 on:
   schedule:
-    - cron: "0 0,12 * * *" # 每日兩次（UTC 00:00 和 12:00）
+    - cron: "0 0,12 * * *"
   workflow_dispatch:
 
 jobs:
-  sync_poc_in_github:
+  sync_ctf_tools:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,33 +21,32 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      - name: 🧾 Checkout your repo
+      - name: 🧾 Checkout repo (disable default token)
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: 🌐 Clone PoC-in-GitHub (without .git)
+      - name: 🌐 Clone upstream repo & sync content
         run: |
-          echo "📥 Cloning nomi-sec/PoC-in-GitHub..."
+          echo "📥 Cloning zardus/ctf-tools..."
+          rm -rf temp-ctf
+          git clone --depth=1 https://github.com/zardus/ctf-tools.git temp-ctf
 
-          rm -rf poc
-          git clone --depth=1 https://github.com/nomi-sec/PoC-in-GitHub.git temp-poc
-
-          export UPSTREAM_COMMIT=$(cd temp-poc && git rev-parse --short HEAD)
+          export UPSTREAM_COMMIT=$(cd temp-ctf && git rev-parse --short HEAD)
           echo "UPSTREAM_COMMIT=${UPSTREAM_COMMIT}" >> $GITHUB_ENV
 
-          mkdir -p poc
-          rsync -av --exclude='.git' temp-poc/ poc/
-          rm -rf temp-poc
+          rm -rf ctf/ctf-tools
+          mkdir -p ctf/ctf-tools
+          rsync -av --delete --exclude='.git' temp-ctf/ ctf/ctf-tools/
+          rm -rf temp-ctf
 
-      - name: 📦 Commit and push changes
+      - name: 📝 Commit and push if changed
         env:
           GIT_TOKEN: ${{ secrets.SYNC_PAT }}
         run: |
-          git add poc/
+          git add ctf/ctf-tools
           git diff --cached --quiet && echo "✅ No changes to commit." && exit 0
 
-          git commit -m "🚨 Sync PoC-in-GitHub from nomi-sec/PoC-in-GitHub (${UPSTREAM_COMMIT}) [bot][action]"
+          git commit -m "🔄 Sync ctf-tools from zardus/ctf-tools (${UPSTREAM_COMMIT}) [bot][action]"
           git push https://x-access-token:${GIT_TOKEN}@github.com/XD3an/awesome-cybersecurity-all-in-one.git HEAD:main
-  
