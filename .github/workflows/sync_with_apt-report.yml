@@ -1,4 +1,4 @@
-name: 📘 Sync `APT_REPORT` README from `blackorbird/APT_REPORT`
+name: 🔄 Sync `APT_REPORT` README from `blackorbird/APT_REPORT`
 
 on:
   schedule:
@@ -51,5 +51,5 @@ jobs:
           git add APT/APT_REPORT/README.md
           git diff --cached --quiet && echo "✅ No README changes to commit." && exit 0
 
-          git commit -m "📘 Sync APT_REPORT README (${UPSTREAM_COMMIT}) [bot][action]"
+          git commit -m "🔄 Sync APT_REPORT README (${UPSTREAM_COMMIT}) [bot][action]"
           git push https://x-access-token:${GIT_TOKEN}@github.com/XD3an/awesome-cybersecurity-all-in-one.git HEAD:main
