@@ -1,12 +1,12 @@
-name: 🔄 Sync APT_REPORT from blackorbird/APT_REPORT
+name: 🔄 Sync APT_REPORT README only
 
 on:
   schedule:
-    - cron: "0 0,12 * * *" # 每日兩次（UTC 00:00 & 12:00，台北時間 08:00 & 20:00）
+    - cron: "0 0,12 * * *" # 每日兩次（UTC 00:00 & 12:00）
   workflow_dispatch:
 
 jobs:
-  sync_apt_report:
+  sync_apt_report_readme:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,31 +27,30 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: 🌐 Clone APT_REPORT & mirror folder
+      - name: 🌐 Fetch README from upstream
         run: |
-          echo "📥 Cloning blackorbird/APT_REPORT..."
-          rm -rf temp-apt-report
-          git clone --depth=1 https://github.com/blackorbird/APT_REPORT.git temp-apt-report
-
-          export UPSTREAM_COMMIT=$(cd temp-apt-report && git rev-parse --short HEAD)
-          echo "UPSTREAM_COMMIT=${UPSTREAM_COMMIT}" >> $GITHUB_ENV
-
-          rm -rf APT/APT_REPORT
+          echo "📥 Cloning README only from blackorbird/APT_REPORT..."
+          git clone --depth=1 --filter=blob:none --sparse https://github.com/blackorbird/APT_REPORT.git temp-apt
+          cd temp-apt
+          git sparse-checkout set README.md
+          cd ..
           mkdir -p APT/APT_REPORT
-          rsync -av --delete --exclude='.git' temp-apt-report/ APT/APT_REPORT/
-          rm -rf temp-apt-report
+          cp temp-apt/README.md APT/APT_REPORT/README.md
+          export UPSTREAM_COMMIT=$(cd temp-apt && git rev-parse --short HEAD)
+          echo "UPSTREAM_COMMIT=${UPSTREAM_COMMIT}" >> $GITHUB_ENV
+          rm -rf temp-apt
 
       - name: 📦 Commit and push if changed
         env:
           GIT_TOKEN: ${{ secrets.SYNC_PAT }}
         run: |
-          git add APT/APT_REPORT
-          git diff --cached --quiet && echo "✅ No changes to commit." && exit 0
+          git add APT/APT_REPORT/README.md
+          git diff --cached --quiet && echo "✅ No README changes to commit." && exit 0
 
-          git commit -m "🛡 Sync APT_REPORT from blackorbird/APT_REPORT (${UPSTREAM_COMMIT}) [bot][action]"
+          git commit -m "🔃 Sync APT_REPORT README (${UPSTREAM_COMMIT}) [bot][action]"
 
           echo "🔃 Pulling remote changes before push..."
           git pull --rebase https://x-access-token:${GIT_TOKEN}@github.com/XD3an/awesome-cybersecurity-all-in-one.git main || true
 
-          echo "🚀 Pushing to main..."
+          echo "🚀 Pushing updated README..."
           git push https://x-access-token:${GIT_TOKEN}@github.com/XD3an/awesome-cybersecurity-all-in-one.git HEAD:main
