@@ -2,7 +2,7 @@ name: 🔄 Sync APT_REPORT README only
 
 on:
   schedule:
-    - cron: "0 0,12 * * *" # 每日兩次（UTC 00:00 & 12:00）
+    - cron: "0 0,12 * * *"
   workflow_dispatch:
 
 jobs:
@@ -27,17 +27,17 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: 🌐 Fetch README from upstream
+      - name: 🌐 Fetch only README.md from upstream
         run: |
-          echo "📥 Cloning README only from blackorbird/APT_REPORT..."
+          echo "📥 Sparse cloning README.md from blackorbird/APT_REPORT..."
           git clone --depth=1 --filter=blob:none --sparse https://github.com/blackorbird/APT_REPORT.git temp-apt
           cd temp-apt
           git sparse-checkout set README.md
+          export UPSTREAM_COMMIT=$(git rev-parse --short HEAD)
+          echo "UPSTREAM_COMMIT=${UPSTREAM_COMMIT}" >> $GITHUB_ENV
           cd ..
           mkdir -p APT/APT_REPORT
           cp temp-apt/README.md APT/APT_REPORT/README.md
-          export UPSTREAM_COMMIT=$(cd temp-apt && git rev-parse --short HEAD)
-          echo "UPSTREAM_COMMIT=${UPSTREAM_COMMIT}" >> $GITHUB_ENV
           rm -rf temp-apt
 
       - name: 📦 Commit and push if changed
@@ -46,11 +46,6 @@ jobs:
         run: |
           git add APT/APT_REPORT/README.md
           git diff --cached --quiet && echo "✅ No README changes to commit." && exit 0
-
-          git commit -m "🔃 Sync APT_REPORT README (${UPSTREAM_COMMIT}) [bot][action]"
-
-          echo "🔃 Pulling remote changes before push..."
+          git commit -m "📘 Sync APT_REPORT README (${UPSTREAM_COMMIT}) [bot][action]"
           git pull --rebase https://x-access-token:${GIT_TOKEN}@github.com/XD3an/awesome-cybersecurity-all-in-one.git main || true
-
-          echo "🚀 Pushing updated README..."
           git push https://x-access-token:${GIT_TOKEN}@github.com/XD3an/awesome-cybersecurity-all-in-one.git HEAD:main
