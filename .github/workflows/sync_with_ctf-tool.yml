@@ -1,4 +1,4 @@
-name: 🔄 Sync ctf-tools from zardus/ctf-tools
+name: 🔄 Sync `ctf-tools` from `zardus/ctf-tools`
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  sync_ctf_tools:
+  sync_ctf-tools:
     runs-on: ubuntu-latest
 
     steps:

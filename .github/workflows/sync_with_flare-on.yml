@@ -1,4 +1,4 @@
-name: 🔄 Sync Flare‑On Challenges from fareedfauzi/Flare-On-Challenges
+name: 🔄 Sync `Flare‑On Challenges` from fareedfauzi/Flare-On-Challenges
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  sync_flare_on:
+  sync_flare-on-Challenges:
     runs-on: ubuntu-latest
 
     steps:
