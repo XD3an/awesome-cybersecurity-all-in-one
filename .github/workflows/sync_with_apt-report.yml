@@ -1,4 +1,4 @@
-name: 🔄 Sync APT_REPORT README only
+name: 🔄 Sync `APT/APT_REPORT` from `blackorbird/APT_REPORT`
 
 on:
   schedule:
