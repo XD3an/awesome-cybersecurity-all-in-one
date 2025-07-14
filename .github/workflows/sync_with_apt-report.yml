@@ -1,4 +1,4 @@
-name: 🔄 Sync `APT/APT_REPORT` from `blackorbird/APT_REPORT`
+name: 📘 Sync `APT_REPORT` README from `blackorbird/APT_REPORT`
 
 on:
   schedule:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🔧 Configure Git identity & validate token
+      - name: 🔧 Configure Git identity & check token
         env:
           GIT_TOKEN: ${{ secrets.SYNC_PAT }}
         run: |
@@ -21,39 +21,34 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      - name: 🧾 Checkout this repo
+      - name: 🧾 Checkout repo (disable default token)
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: 🌐 Fetch only README from upstream
+      - name: 🌐 Clone APT_REPORT & sync README.md
         run: |
-          mkdir temp-apt
-          cd temp-apt
-          git init
-          git remote add -f origin https://github.com/blackorbird/APT_REPORT.git
-          git config core.sparseCheckout true
-          echo "README.md" >> .git/info/sparse-checkout
-          git pull --depth=1 origin main
+          echo "📥 Cloning blackorbird/APT_REPORT..."
+          rm -rf temp-apt
+          git clone --depth=1 --filter=blob:none --sparse https://github.com/blackorbird/APT_REPORT.git temp-apt
 
+          cd temp-apt
+          git sparse-checkout set README.md
           export UPSTREAM_COMMIT=$(git rev-parse --short HEAD)
           echo "UPSTREAM_COMMIT=${UPSTREAM_COMMIT}" >> $GITHUB_ENV
-
-          mkdir -p ../APT/APT_REPORT
-          cp README.md ../APT/APT_REPORT/README.md
           cd ..
+
+          mkdir -p APT/APT_REPORT
+          cp temp-apt/README.md APT/APT_REPORT/README.md
           rm -rf temp-apt
 
-      - name: 📦 Commit & push if README changed
+      - name: 📦 Commit and push if changed
         env:
           GIT_TOKEN: ${{ secrets.SYNC_PAT }}
         run: |
           git add APT/APT_REPORT/README.md
-          git diff --cached --quiet && echo "✅ No README changes" && exit 0
+          git diff --cached --quiet && echo "✅ No changes to commit." && exit 0
 
-          git commit -m "📘 Sync APT_REPORT from `blackorbird/APT_REPORT` (${UPSTREAM_COMMIT}) [bot][action]"
-
-          git pull --rebase https://x-access-token:${GIT_TOKEN}@github.com/XD3an/awesome-cybersecurity-all-in-one.git main || true
-
+          git commit -m "📘 Sync APT_REPORT README (${UPSTREAM_COMMIT}) [bot][action]"
           git push https://x-access-token:${GIT_TOKEN}@github.com/XD3an/awesome-cybersecurity-all-in-one.git HEAD:main
