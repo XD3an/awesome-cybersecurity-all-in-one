@@ -2,7 +2,7 @@ name: 🔄 Sync `PoC-in-GitHub` from `nomi-sec/PoC-in-GitHub`
 
 on:
   schedule:
-    - cron: "0 0,12 * * *" # 每日兩次（UTC 00:00 和 12:00）
+    - cron: "0 0,12 * * *"
   workflow_dispatch:
 
 jobs:
