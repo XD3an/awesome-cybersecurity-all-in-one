@@ -1,0 +1,52 @@
+name: 🔄 Sync Flare‑On Challenges & Write‑ups
+
+on:
+  schedule:
+    - cron: "0 0,12 * * *"  # 每天 UTC 00:00 & 12:00（台灣時間早上 8 點 & 晚上 8 點）
+  workflow_dispatch:
+
+jobs:
+  sync_flareon:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🔧 Configure Git identity & check SYNC_PAT
+        env:
+          GIT_TOKEN: ${{ secrets.SYNC_PAT }}
+        run: |
+          if [ -z "$GIT_TOKEN" ]; then
+            echo "❌ SYNC_PAT is missing!"
+            exit 1
+          fi
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: 🧾 Checkout your repo (persist-credentials: false)
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: 🌐 Clone `Flare-On-Challenges`
+        run: |
+          echo "📥 Cloning fareedfauzi/Flare-On-Challenges..."
+          rm -rf temp-flareon
+          git clone --depth=1 https://github.com/fareedfauzi/Flare-On-Challenges.git temp-flareon
+          export UPSTREAM_COMMIT=$(cd temp-flareon && git rev-parse --short HEAD)
+          echo "UPSTREAM_COMMIT=${UPSTREAM_COMMIT}" >> $GITHUB_ENV
+
+          rm -rf ctf/Flare-On-Challenges
+          mkdir -p ctf/Flare-On-Challenges
+          rsync -av --delete --exclude='.git' \
+            temp-flareon/Challenges/ temp-flareon/Write-ups/ \
+            ctf/Flare-On-Challenges/
+          rm -rf temp-flareon
+
+      - name: 📝 Commit and push only if changed
+        env:
+          GIT_TOKEN: ${{ secrets.SYNC_PAT }}
+        run: |
+          git add ctf/Flare-On-Challenges
+          git diff --cached --quiet && echo "✅ No changes to commit." && exit 0
+          git commit -m "🔄 Sync Flare‑On challenges & write‑ups (${UPSTREAM_COMMIT}) [bot][action]"
+          git push https://x-access-token:${GIT_TOKEN}@github.com/XD3an/awesome-cybersecurity-all-in-one.git HEAD:main
