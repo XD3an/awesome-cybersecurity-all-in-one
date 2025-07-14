@@ -33,7 +33,7 @@ jobs:
           rm -rf temp-apt
           git clone --depth=1 --filter=blob:none --sparse https://github.com/blackorbird/APT_REPORT.git temp-apt
           cd temp-apt
-          git sparse-checkout set README.md
+          git sparse-checkout set --skip-checks README.md
           export UPSTREAM_COMMIT=$(git rev-parse --short HEAD)
           echo "UPSTREAM_COMMIT=${UPSTREAM_COMMIT}" >> $GITHUB_ENV
           cd ..
