@@ -793,6 +793,13 @@
 ### CVE-2025-5329
 - [sahici/CVE-2025-5329](https://github.com/sahici/CVE-2025-5329)
 
+### CVE-2025-5349 (2025-06-17)
+
+<code>Improper access control on the NetScaler Management Interface in NetScaler ADC and NetScaler Gateway
+</code>
+
+- [olimpiofreitas/CVE-2025-5349-Scanner](https://github.com/olimpiofreitas/CVE-2025-5349-Scanner)
+
 ### CVE-2025-5419 (2025-06-02)
 
 <code>Out of bounds read and write in V8 in Google Chrome prior to 137.0.7151.68 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
@@ -838,7 +845,6 @@
 - [FrenzisRed/CVE-2025-5777](https://github.com/FrenzisRed/CVE-2025-5777)
 - [bughuntar/CVE-2025-5777](https://github.com/bughuntar/CVE-2025-5777)
 - [0xgh057r3c0n/CVE-2025-5777](https://github.com/0xgh057r3c0n/CVE-2025-5777)
-- [Jishanluhar/CVE-2025-5777](https://github.com/Jishanluhar/CVE-2025-5777)
 - [SleepNotF0und/CVE-2025-5777](https://github.com/SleepNotF0und/CVE-2025-5777)
 
 ### CVE-2025-5815 (2025-06-13)
@@ -1262,6 +1268,13 @@
 
 - [GabrieleDattile/CVE-2025-23040](https://github.com/GabrieleDattile/CVE-2025-23040)
 
+### CVE-2025-23167 (2025-05-19)
+
+<code>A flaw in Node.js 20's HTTP parser allows improper termination of HTTP/1 headers using `\r\n\rX` instead of the required `\r\n\r\n`.\nThis inconsistency enables request smuggling, allowing attackers to bypass proxy-based access controls and submit unauthorized requests.\n\nThe issue was resolved by upgrading `llhttp` to version 9, which enforces correct header termination.\n\nImpact:\n* This vulnerability affects only Node.js 20.x users prior to the `llhttp` v9 upgrade.
+</code>
+
+- [abhisek3122/CVE-2025-23167](https://github.com/abhisek3122/CVE-2025-23167)
+
 ### CVE-2025-23369 (2025-01-21)
 
 <code>An improper verification of cryptographic signature vulnerability was identified in GitHub Enterprise Server that allowed signature spoofing for unauthorized internal users.  Instances not utilizing SAML single sign-on or where the attacker is not already an existing user were not impacted. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.12.14, 3.13.10, 3.14.7, 3.15.2, and 3.16.0. This vulnerability was reported via the GitHub Bug Bounty program.
@@ -1601,6 +1614,7 @@
 - [imbas007/CVE-2025-25257](https://github.com/imbas007/CVE-2025-25257)
 - [B1ack4sh/Blackash-CVE-2025-25257](https://github.com/B1ack4sh/Blackash-CVE-2025-25257)
 - [mtjanus106/CVE-2025-25257](https://github.com/mtjanus106/CVE-2025-25257)
+- [0xgh057r3c0n/CVE-2025-25257](https://github.com/0xgh057r3c0n/CVE-2025-25257)
 
 ### CVE-2025-25279 (2025-02-24)
 
@@ -1997,7 +2011,7 @@
 - [obamalaolu/CVE-2025-27591](https://github.com/obamalaolu/CVE-2025-27591)
 - [rvizx/CVE-2025-27591](https://github.com/rvizx/CVE-2025-27591)
 - [BridgerAlderson/CVE-2025-27591-PoC](https://github.com/BridgerAlderson/CVE-2025-27591-PoC)
-- [DarksBlackSk/CVE-2025-27591-Proof-Of-Concept](https://github.com/DarksBlackSk/CVE-2025-27591-Proof-Of-Concept)
+- [DarksBlackSk/CVE-2025-27591](https://github.com/DarksBlackSk/CVE-2025-27591)
 - [dollarboysushil/Linux-Privilege-Escalation-CVE-2025-27591](https://github.com/dollarboysushil/Linux-Privilege-Escalation-CVE-2025-27591)
 
 ### CVE-2025-27607 (2025-03-07)
@@ -2775,7 +2789,9 @@
 - [abrewer251/CVE-2025-32463_Sudo_PoC](https://github.com/abrewer251/CVE-2025-32463_Sudo_PoC)
 - [0xb0rn3/CVE-2025-32463-EXPLOIT](https://github.com/0xb0rn3/CVE-2025-32463-EXPLOIT)
 - [morgenm/sudo-chroot-CVE-2025-32463](https://github.com/morgenm/sudo-chroot-CVE-2025-32463)
+- [MohamedKarrab/CVE-2025-32463](https://github.com/MohamedKarrab/CVE-2025-32463)
 - [dbarquero/cve-2025-32463-lab](https://github.com/dbarquero/cve-2025-32463-lab)
+- [9Insomnie/CVE-2025-32463](https://github.com/9Insomnie/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -3345,6 +3361,7 @@
 - [testdjshan/CVE-2025-48384](https://github.com/testdjshan/CVE-2025-48384)
 - [p1026/CVE-2025-48384](https://github.com/p1026/CVE-2025-48384)
 - [vinieger/vinieger-CVE-2025-48384-Dockerfile](https://github.com/vinieger/vinieger-CVE-2025-48384-Dockerfile)
+- [ECHO6789/CVE-2025-48384-submodule](https://github.com/ECHO6789/CVE-2025-48384-submodule)
 
 ### CVE-2025-48461 (2025-06-24)
 
@@ -3462,6 +3479,7 @@
 - [Vr00mm/CVE-2025-49144](https://github.com/Vr00mm/CVE-2025-49144)
 - [TheTorjanCaptain/CVE-2025-49144_PoC](https://github.com/TheTorjanCaptain/CVE-2025-49144_PoC)
 - [assad12341/notepad-v8.8.1-LPE-CVE-](https://github.com/assad12341/notepad-v8.8.1-LPE-CVE-)
+- [tristanvandermeer/CVE-2025-49144-Test](https://github.com/tristanvandermeer/CVE-2025-49144-Test)
 - [b0ySie7e/Notepad-8.8.1_CVE-2025-49144](https://github.com/b0ySie7e/Notepad-8.8.1_CVE-2025-49144)
 - [timsonner/CVE-2025-49144-Research](https://github.com/timsonner/CVE-2025-49144-Research)
 
@@ -3540,6 +3558,13 @@
 </code>
 
 - [DVKunion/CVE-2025-53547-POC](https://github.com/DVKunion/CVE-2025-53547-POC)
+
+### CVE-2025-53833 (2025-07-14)
+
+<code>LaRecipe is an application that allows users to create documentation with Markdown inside a Laravel app. Versions prior to 2.8.1 are vulnerable to Server-Side Template Injection (SSTI), which could potentially lead to Remote Code Execution (RCE) in vulnerable configurations. Attackers could execute arbitrary commands on the server, access sensitive environment variables, and/or escalate access depending on server configuration. Users are strongly advised to upgrade to version v2.8.1 or later to receive a patch.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-53833](https://github.com/B1ack4sh/Blackash-CVE-2025-53833)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -4755,6 +4780,7 @@
 - [byteReaper77/CVE-2024-4577](https://github.com/byteReaper77/CVE-2024-4577)
 - [r0otk3r/CVE-2024-4577](https://github.com/r0otk3r/CVE-2024-4577)
 - [ZeroMemoryEx/PHP-CGI-INTERNAL-RCE](https://github.com/ZeroMemoryEx/PHP-CGI-INTERNAL-RCE)
+- [Skycritch/CVE-2024-4577](https://github.com/Skycritch/CVE-2024-4577)
 
 ### CVE-2024-4701 (2024-05-10)
 
@@ -14237,6 +14263,7 @@
 - [SanjayRagavendar/Ubuntu-GameOver-Lay](https://github.com/SanjayRagavendar/Ubuntu-GameOver-Lay)
 - [Nkipohcs/CVE-2023-2640-CVE-2023-32629](https://github.com/Nkipohcs/CVE-2023-2640-CVE-2023-32629)
 - [K5LK/CVE-2023-2640-32629](https://github.com/K5LK/CVE-2023-2640-32629)
+- [filippo-zullo98/phpMyAdmin-RCE-Exploit-Lab](https://github.com/filippo-zullo98/phpMyAdmin-RCE-Exploit-Lab)
 
 ### CVE-2023-2645 (2023-05-11)
 
@@ -52144,6 +52171,7 @@
 
 - [jpiechowka/jenkins-cve-2016-0792](https://github.com/jpiechowka/jenkins-cve-2016-0792)
 - [Aviksaikat/CVE-2016-0792](https://github.com/Aviksaikat/CVE-2016-0792)
+- [gonn4cry/CVE-2016-0792](https://github.com/gonn4cry/CVE-2016-0792)
 
 ### CVE-2016-0793 (2016-04-01)
 
