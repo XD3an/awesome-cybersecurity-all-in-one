@@ -658,13 +658,6 @@
 
 - [RandomRobbieBF/CVE-2025-4578](https://github.com/RandomRobbieBF/CVE-2025-4578)
 
-### CVE-2025-4593 (2025-07-11)
-
-<code>The WP Register Profile With Shortcode plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.6.2 via the 'rp_user_data' shortcode. This makes it possible for authenticated attackers, with Contributor-level access and above, to extract sensitive data from user meta like hashed passwords, usernames, and more.
-</code>
-
-- [karenucqki/CVE-2025-4593](https://github.com/karenucqki/CVE-2025-4593)
-
 ### CVE-2025-4601 (2025-06-10)
 
 <code>The &quot;RH - Real Estate WordPress Theme&quot; theme for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 4.4.0. This is due to the theme not properly restricting user roles that can be updated as part of the inspiry_update_profile() function. This makes it possible for authenticated attackers, with subscriber-level access and above, to set their role to that of an administrator. The vulnerability was partially patched in version 4.4.0, and fully patched in version 4.4.1.
@@ -706,6 +699,13 @@
 </code>
 
 - [MantisToboggan-git/CVE-2025-4632-POC](https://github.com/MantisToboggan-git/CVE-2025-4632-POC)
+
+### CVE-2025-4660 (2025-05-13)
+
+<code>A remote code execution vulnerability exists in the Windows agent component of SecureConnector due to improper access controls on a named pipe. The pipe is accessible to the Everyone group and does not restrict remote connections, allowing any network-based attacker to connect without authentication. By interacting with this pipe, an attacker can redirect the agent to communicate with a rogue server that can issue commands via the SecureConnector Agent. \n\n\n\nThis does not impact Linux or OSX Secure Connector.
+</code>
+
+- [NetSPI/CVE-2025-4660](https://github.com/NetSPI/CVE-2025-4660)
 
 ### CVE-2025-4664 (2025-05-14)
 
@@ -950,6 +950,13 @@
 - [PwnToday/CVE-2025-6554](https://github.com/PwnToday/CVE-2025-6554)
 - [ghostn4444/POC-CVE-2025-6554](https://github.com/ghostn4444/POC-CVE-2025-6554)
 - [9Insomnie/CVE-2025-6554](https://github.com/9Insomnie/CVE-2025-6554)
+
+### CVE-2025-6558 (2025-07-15)
+
+<code>Insufficient validation of untrusted input in ANGLE and GPU in Google Chrome prior to 138.0.7204.157 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)
+</code>
+
+- [allinsthon/CVE-2025-6558-exp](https://github.com/allinsthon/CVE-2025-6558-exp)
 
 ### CVE-2025-6586 (2025-07-04)
 
@@ -1610,7 +1617,11 @@
 - [RandomRobbieBF/CVE-2025-25163](https://github.com/RandomRobbieBF/CVE-2025-25163)
 - [RootHarpy/CVE-2025-25163-Nuclei-Template](https://github.com/RootHarpy/CVE-2025-25163-Nuclei-Template)
 
-### CVE-2025-25257
+### CVE-2025-25257 (2025-07-17)
+
+<code>An improper neutralization of special elements used in an SQL command ('SQL Injection') vulnerability [CWE-89] in Fortinet FortiWeb version 7.6.0 through 7.6.3, 7.4.0 through 7.4.7, 7.2.0 through 7.2.10 and below 7.0.10 allows an unauthenticated attacker to execute unauthorized SQL code or commands via crafted HTTP or HTTPs requests.
+</code>
+
 - [watchtowrlabs/watchTowr-vs-FortiWeb-CVE-2025-25257](https://github.com/watchtowrlabs/watchTowr-vs-FortiWeb-CVE-2025-25257)
 - [0xbigshaq/CVE-2025-25257](https://github.com/0xbigshaq/CVE-2025-25257)
 - [adilburaksen/CVE-2025-25257-Exploit-Tool](https://github.com/adilburaksen/CVE-2025-25257-Exploit-Tool)
@@ -1980,13 +1991,6 @@
 
 - [jiseoung/CVE-2025-27415-PoC](https://github.com/jiseoung/CVE-2025-27415-PoC)
 
-### CVE-2025-27521 (2025-03-04)
-
-<code>Vulnerability of improper access permission in the process management module\nImpact: Successful exploitation of this vulnerability may affect service confidentiality.
-</code>
-
-- [alialucas7/CVE-2025-27521_PoC](https://github.com/alialucas7/CVE-2025-27521_PoC)
-
 ### CVE-2025-27533 (2025-05-07)
 
 <code>Memory Allocation with Excessive Size Value vulnerability in Apache ActiveMQ.\n\nDuring unmarshalling of OpenWire commands the size value of buffers was not properly validated which could lead to excessive memory allocation and be exploited to cause a denial of service (DoS) by depleting process memory, thereby affecting applications and services that rely on the availability of the ActiveMQ broker when not using mutual TLS connections.\nThis issue affects Apache ActiveMQ: from 6.0.0 before 6.1.6, from 5.18.0 before 5.18.7, from 5.17.0 before 5.17.7, before 5.16.8. ActiveMQ 5.19.0 is not affected.\n\nUsers are recommended to upgrade to version 6.1.6+, 5.19.0+,  5.18.7+, 5.17.7, or 5.16.8 or which fixes the issue.\n\nExisting users may implement mutual TLS to mitigate the risk on affected brokers.
@@ -2025,6 +2029,7 @@
 - [BridgerAlderson/CVE-2025-27591-PoC](https://github.com/BridgerAlderson/CVE-2025-27591-PoC)
 - [DarksBlackSk/CVE-2025-27591](https://github.com/DarksBlackSk/CVE-2025-27591)
 - [dollarboysushil/Linux-Privilege-Escalation-CVE-2025-27591](https://github.com/dollarboysushil/Linux-Privilege-Escalation-CVE-2025-27591)
+- [alialucas7/CVE-2025-27591_PoC](https://github.com/alialucas7/CVE-2025-27591_PoC)
 
 ### CVE-2025-27607 (2025-03-07)
 
@@ -2313,6 +2318,7 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
+- [AventurineJun/CVE-2025-29927-Research](https://github.com/AventurineJun/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -2381,6 +2387,7 @@
 - [mouadk/parquet-rce-poc-CVE-2025-30065](https://github.com/mouadk/parquet-rce-poc-CVE-2025-30065)
 - [ThreatRadarAI/TRAI-001-Critical-RCE-Vulnerability-in-Apache-Parquet-CVE-2025-30065-Simulation](https://github.com/ThreatRadarAI/TRAI-001-Critical-RCE-Vulnerability-in-Apache-Parquet-CVE-2025-30065-Simulation)
 - [F5-Labs/parquet-canary-exploit-rce-poc-CVE-2025-30065](https://github.com/F5-Labs/parquet-canary-exploit-rce-poc-CVE-2025-30065)
+- [B1ack4sh/Blackash-CVE-2025-30065](https://github.com/B1ack4sh/Blackash-CVE-2025-30065)
 
 ### CVE-2025-30066 (2025-03-15)
 
@@ -3336,6 +3343,8 @@
 - [ill-deed/WingFTP-CVE-2025-47812-illdeed](https://github.com/ill-deed/WingFTP-CVE-2025-47812-illdeed)
 - [pevinkumar10/CVE-2025-47812](https://github.com/pevinkumar10/CVE-2025-47812)
 - [rxerium/CVE-2025-47812](https://github.com/rxerium/CVE-2025-47812)
+- [blindma1den/CVE-2025-47812](https://github.com/blindma1den/CVE-2025-47812)
+- [B1ack4sh/Blackash-CVE-2025-47812](https://github.com/B1ack4sh/Blackash-CVE-2025-47812)
 
 ### CVE-2025-47827 (2025-06-05)
 
@@ -3373,6 +3382,7 @@
 - [ECHO6789/CVE-2025-48384-submodule](https://github.com/ECHO6789/CVE-2025-48384-submodule)
 - [nguyentranbaotran/cve-2025-48384-poc](https://github.com/nguyentranbaotran/cve-2025-48384-poc)
 - [admin-ping/CVE-2025-48384-RCE](https://github.com/admin-ping/CVE-2025-48384-RCE)
+- [simplyfurious/CVE-2025-48384-submodule_test](https://github.com/simplyfurious/CVE-2025-48384-submodule_test)
 
 ### CVE-2025-48461 (2025-06-24)
 
@@ -3594,7 +3604,11 @@
 
 - [B1ack4sh/Blackash-CVE-2025-53833](https://github.com/B1ack4sh/Blackash-CVE-2025-53833)
 
-### CVE-2025-53964
+### CVE-2025-53964 (2025-07-17)
+
+<code>GoldenDict 1.5.0 and 1.5.1 has an exposed dangerous method that allows reading and modifying files when a user adds a crafted dictionary and then searches for any term included in that dictionary.
+</code>
+
 - [tigr78/CVE-2025-53964](https://github.com/tigr78/CVE-2025-53964)
 
 ### CVE-2025-492025
@@ -28018,6 +28032,7 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
+- [AventurineJun/CVE-2022-39299-Research](https://github.com/AventurineJun/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -52908,6 +52923,7 @@
 - [samh4cks/CVE-2016-6210-OpenSSH-User-Enumeration](https://github.com/samh4cks/CVE-2016-6210-OpenSSH-User-Enumeration)
 - [coolbabayaga/CVE-2016-6210](https://github.com/coolbabayaga/CVE-2016-6210)
 - [nicoleman0/CVE-2016-6210-OpenSSHd-7.2p2](https://github.com/nicoleman0/CVE-2016-6210-OpenSSHd-7.2p2)
+- [KiPhuong/cve-2016-6210](https://github.com/KiPhuong/cve-2016-6210)
 
 ### CVE-2016-6271 (2017-01-18)
 
