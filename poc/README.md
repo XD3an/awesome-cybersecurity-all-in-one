@@ -1029,6 +1029,20 @@
 
 - [sunhuiHi666/CVE-2025-7606](https://github.com/sunhuiHi666/CVE-2025-7606)
 
+### CVE-2025-7753 (2025-07-17)
+
+<code>Es wurde eine Schwachstelle in code-projects Online Appointment Booking System 1.0 ausgemacht. Sie wurde als kritisch eingestuft. Dabei betrifft es einen unbekannter Codeteil der Datei /admin/adddoctor.php. Durch das Beeinflussen des Arguments Username mit unbekannten Daten kann eine sql injection-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei über das Netzwerk erfolgen. Der Exploit steht zur öffentlichen Verfügung.
+</code>
+
+- [byteReaper77/CVE-2025-7753](https://github.com/byteReaper77/CVE-2025-7753)
+
+### CVE-2025-7783 (2025-07-18)
+
+<code>Use of Insufficiently Random Values vulnerability in form-data allows HTTP Parameter Pollution (HPP). This vulnerability is associated with program files lib/form_data.Js.\n\nThis issue affects form-data: &lt; 2.5.4, 3.0.0 - 3.0.3, 4.0.0 - 4.0.3.
+</code>
+
+- [benweissmann/CVE-2025-7783-poc](https://github.com/benweissmann/CVE-2025-7783-poc)
+
 ### CVE-2025-20029 (2025-02-05)
 
 <code>Command injection vulnerability exists in iControl REST and BIG-IP TMOS Shell (tmsh) save command, which may allow an authenticated attacker to execute arbitrary system commands.\n\n \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
@@ -1974,8 +1988,13 @@
 - [andreglock/axios-ssrf](https://github.com/andreglock/axios-ssrf)
 - [davidblakecoe/axios-CVE-2025-27152-PoC](https://github.com/davidblakecoe/axios-CVE-2025-27152-PoC)
 
-### CVE-2025-27210
+### CVE-2025-27210 (2025-07-18)
+
+<code>An incomplete fix has been identified for CVE-2025-23084 in Node.js, specifically affecting Windows device names like CON, PRN, and AUX. \r\n\r\nThis vulnerability affects Windows users of `path.join` API.
+</code>
+
 - [absholi7ly/CVE-2025-27210_NodeJS_Path_Traversal_Exploit](https://github.com/absholi7ly/CVE-2025-27210_NodeJS_Path_Traversal_Exploit)
+- [B1ack4sh/Blackash-CVE-2025-27210](https://github.com/B1ack4sh/Blackash-CVE-2025-27210)
 
 ### CVE-2025-27363 (2025-03-11)
 
@@ -2816,8 +2835,8 @@
 - [9Insomnie/CVE-2025-32463](https://github.com/9Insomnie/CVE-2025-32463)
 - [krypton-0x00/CVE-2025-32463-Chwoot-POC](https://github.com/krypton-0x00/CVE-2025-32463-Chwoot-POC)
 - [Floodnut/CVE-2025-32463](https://github.com/Floodnut/CVE-2025-32463)
-- [92gmuz/CVE-2025-32463](https://github.com/92gmuz/CVE-2025-32463)
 - [Rajneeshkarya/CVE-2025-32463](https://github.com/Rajneeshkarya/CVE-2025-32463)
+- [MGunturG/CVE-2025-32463](https://github.com/MGunturG/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -3159,6 +3178,9 @@
 
 - [yggcwhat/CVE-2025-46080](https://github.com/yggcwhat/CVE-2025-46080)
 
+### CVE-2025-46099
+- [0xC4J/CVE-Lists](https://github.com/0xC4J/CVE-Lists)
+
 ### CVE-2025-46142
 - [AugustusSploits/CVE-2025-46142](https://github.com/AugustusSploits/CVE-2025-46142)
 
@@ -3261,6 +3283,13 @@
 </code>
 
 - [mbanyamer/mbanyamer-Microsoft-PowerPoint-Use-After-Free-Remote-Code-Execution-RCE](https://github.com/mbanyamer/mbanyamer-Microsoft-PowerPoint-Use-After-Free-Remote-Code-Execution-RCE)
+
+### CVE-2025-47176 (2025-06-10)
+
+<code>'.../...//' in Microsoft Office Outlook allows an authorized attacker to execute code locally.
+</code>
+
+- [mahyarx/CVE-2025-47176](https://github.com/mahyarx/CVE-2025-47176)
 
 ### CVE-2025-47181 (2025-05-22)
 
@@ -3595,6 +3624,13 @@
 </code>
 
 - [UltimateHG/CVE-2025-52689-PoC](https://github.com/UltimateHG/CVE-2025-52689-PoC)
+
+### CVE-2025-53367 (2025-07-03)
+
+<code>DjVuLibre is a GPL implementation of DjVu, a web-centric format for distributing documents and images. Prior to version 3.5.29, the MMRDecoder::scanruns method is affected by an OOB-write vulnerability, because it does not check that the xr pointer stays within the bounds of the allocated buffer. This can lead to writes beyond the allocated memory, resulting in a heap corruption condition. An out-of-bounds read with pr is also possible for the same reason. This issue has been patched in version 3.5.29.
+</code>
+
+- [kevinbackhouse/DjVuLibre-poc-CVE-2025-53367](https://github.com/kevinbackhouse/DjVuLibre-poc-CVE-2025-53367)
 
 ### CVE-2025-53547 (2025-07-08)
 
@@ -11594,7 +11630,6 @@
 </code>
 
 - [congdong007/CVE-2024-45216-Poc](https://github.com/congdong007/CVE-2024-45216-Poc)
-- [qhoko/CVE-2024-45216](https://github.com/qhoko/CVE-2024-45216)
 
 ### CVE-2024-45241 (2024-08-26)
 
@@ -28809,6 +28844,7 @@
 </code>
 
 - [IgorDuino/CVE-2022-44136-exploit](https://github.com/IgorDuino/CVE-2022-44136-exploit)
+- [Ch35h1r3c47/CVE-2022-44136-poc](https://github.com/Ch35h1r3c47/CVE-2022-44136-poc)
 
 ### CVE-2022-44149 (2023-01-06)
 
@@ -30086,7 +30122,6 @@
 - [Wra7h/SharpPN](https://github.com/Wra7h/SharpPN)
 - [OppressionBreedsResistance/CVE-2021-1675-PrintNightmare](https://github.com/OppressionBreedsResistance/CVE-2021-1675-PrintNightmare)
 - [eversinc33/NimNightmare](https://github.com/eversinc33/NimNightmare)
-- [AndrewTrube/CVE-2021-1675](https://github.com/AndrewTrube/CVE-2021-1675)
 - [TheJoyOfHacking/cube0x0-CVE-2021-1675](https://github.com/TheJoyOfHacking/cube0x0-CVE-2021-1675)
 - [TheJoyOfHacking/calebstewart-CVE-2021-1675](https://github.com/TheJoyOfHacking/calebstewart-CVE-2021-1675)
 - [jj4152/cve-2021-1675](https://github.com/jj4152/cve-2021-1675)
@@ -30427,7 +30462,6 @@
 - [chenaotian/CVE-2021-3156](https://github.com/chenaotian/CVE-2021-3156)
 - [ret2basic/SudoScience](https://github.com/ret2basic/SudoScience)
 - [puckiestyle/CVE-2021-3156](https://github.com/puckiestyle/CVE-2021-3156)
-- [barebackbandit/CVE-2021-3156](https://github.com/barebackbandit/CVE-2021-3156)
 - [RodricBr/CVE-2021-3156](https://github.com/RodricBr/CVE-2021-3156)
 - [ypl6/heaplens](https://github.com/ypl6/heaplens)
 - [q77190858/CVE-2021-3156](https://github.com/q77190858/CVE-2021-3156)
@@ -30453,6 +30487,7 @@
 - [Shuhaib88/Baron-Samedit-Heap-Buffer-Overflow-CVE-2021-3156](https://github.com/Shuhaib88/Baron-Samedit-Heap-Buffer-Overflow-CVE-2021-3156)
 - [Superliverbun/cve-2021-3156-](https://github.com/Superliverbun/cve-2021-3156-)
 - [TopskiyPavelQwertyGang/Review.CVE-2021-3156](https://github.com/TopskiyPavelQwertyGang/Review.CVE-2021-3156)
+- [Maalfer/Sudo-CVE-2021-3156](https://github.com/Maalfer/Sudo-CVE-2021-3156)
 
 ### CVE-2021-3157
 - [CrackerCat/cve-2021-3157](https://github.com/CrackerCat/cve-2021-3157)
@@ -32989,6 +33024,7 @@
 </code>
 
 - [akr3ch/CVE-2021-32099](https://github.com/akr3ch/CVE-2021-32099)
+- [magicrc/CVE-2021-32099](https://github.com/magicrc/CVE-2021-32099)
 
 ### CVE-2021-32156 (2022-04-11)
 
