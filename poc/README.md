@@ -1043,6 +1043,13 @@
 
 - [benweissmann/CVE-2025-7783-poc](https://github.com/benweissmann/CVE-2025-7783-poc)
 
+### CVE-2025-7795 (2025-07-18)
+
+<code>Eine kritische Schwachstelle wurde in Tenda FH451 1.0.0.9 entdeckt. Es geht hierbei um die Funktion fromP2pListFilter der Datei /goform/P2pListFilter. Dank Manipulation des Arguments page mit unbekannten Daten kann eine stack-based buffer overflow-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk angegangen werden. Der Exploit steht zur öffentlichen Verfügung.
+</code>
+
+- [byteReaper77/CVE-2025-7795](https://github.com/byteReaper77/CVE-2025-7795)
+
 ### CVE-2025-20029 (2025-02-05)
 
 <code>Command injection vulnerability exists in iControl REST and BIG-IP TMOS Shell (tmsh) save command, which may allow an authenticated attacker to execute arbitrary system commands.\n\n \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
@@ -1067,6 +1074,13 @@
 - [grupooruss/CVE-2025-20281-Cisco](https://github.com/grupooruss/CVE-2025-20281-Cisco)
 - [ill-deed/Cisco-CVE-2025-20281-illdeed](https://github.com/ill-deed/Cisco-CVE-2025-20281-illdeed)
 - [B1ack4sh/Blackash-CVE-2025-20281](https://github.com/B1ack4sh/Blackash-CVE-2025-20281)
+
+### CVE-2025-20337 (2025-07-16)
+
+<code>A vulnerability in a specific API of Cisco ISE and Cisco ISE-PIC could allow an unauthenticated, remote attacker to execute arbitrary code on the underlying operating system as root. The attacker does not require any valid credentials to exploit this vulnerability.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by submitting a crafted API request. A successful exploit could allow the attacker to obtain root privileges on an affected device.
+</code>
+
+- [barbaraeivyu/CVE-2025-20337-EXP](https://github.com/barbaraeivyu/CVE-2025-20337-EXP)
 
 ### CVE-2025-21204 (2025-04-08)
 
@@ -1298,6 +1312,13 @@
 </code>
 
 - [abhisek3122/CVE-2025-23167](https://github.com/abhisek3122/CVE-2025-23167)
+
+### CVE-2025-23266 (2025-07-17)
+
+<code>NVIDIA Container Toolkit for all platforms contains a vulnerability in some hooks used to initialize the container, where an attacker could execute arbitrary code with elevated permissions. A successful exploit of this vulnerability might lead to escalation of privileges, data tampering, information disclosure, and denial of service.
+</code>
+
+- [jpts/cve-2025-23266-poc](https://github.com/jpts/cve-2025-23266-poc)
 
 ### CVE-2025-23369 (2025-01-21)
 
@@ -1565,6 +1586,7 @@
 - [yaleman/cve-2025-24813-poc](https://github.com/yaleman/cve-2025-24813-poc)
 - [GongWook/CVE-2025-24813](https://github.com/GongWook/CVE-2025-24813)
 - [sentilaso1/CVE-2025-24813-Apache-Tomcat-RCE-PoC](https://github.com/sentilaso1/CVE-2025-24813-Apache-Tomcat-RCE-PoC)
+- [x00byte/PutScanner](https://github.com/x00byte/PutScanner)
 
 ### CVE-2025-24893 (2025-02-20)
 
@@ -1644,6 +1666,7 @@
 - [B1ack4sh/Blackash-CVE-2025-25257](https://github.com/B1ack4sh/Blackash-CVE-2025-25257)
 - [0xgh057r3c0n/CVE-2025-25257](https://github.com/0xgh057r3c0n/CVE-2025-25257)
 - [mrmtwoj/CVE-2025-25257](https://github.com/mrmtwoj/CVE-2025-25257)
+- [TheStingR/CVE-2025-25257](https://github.com/TheStingR/CVE-2025-25257)
 
 ### CVE-2025-25279 (2025-02-24)
 
@@ -2052,6 +2075,7 @@
 - [dollarboysushil/Linux-Privilege-Escalation-CVE-2025-27591](https://github.com/dollarboysushil/Linux-Privilege-Escalation-CVE-2025-27591)
 - [alialucas7/CVE-2025-27591_PoC](https://github.com/alialucas7/CVE-2025-27591_PoC)
 - [incommatose/CVE-2025-27591-PoC](https://github.com/incommatose/CVE-2025-27591-PoC)
+- [00xCanelo/CVE-2025-27591-PoC](https://github.com/00xCanelo/CVE-2025-27591-PoC)
 
 ### CVE-2025-27607 (2025-03-07)
 
@@ -2583,6 +2607,7 @@
 - [0xgh057r3c0n/CVE-2025-31161](https://github.com/0xgh057r3c0n/CVE-2025-31161)
 - [B1ack4sh/Blackash-CVE-2025-31161](https://github.com/B1ack4sh/Blackash-CVE-2025-31161)
 - [ibrahmsql/CVE-2025-31161](https://github.com/ibrahmsql/CVE-2025-31161)
+- [r0otk3r/CVE-2025-31161](https://github.com/r0otk3r/CVE-2025-31161)
 
 ### CVE-2025-31200 (2025-04-16)
 
@@ -2690,7 +2715,7 @@
 
 - [leesh3288/CVE-2025-32023](https://github.com/leesh3288/CVE-2025-32023)
 - [B1ack4sh/Blackash-CVE-2025-32023](https://github.com/B1ack4sh/Blackash-CVE-2025-32023)
-- [atomicjjbod/CVE-2025-32023](https://github.com/atomicjjbod/CVE-2025-32023)
+- [LordBheem/CVE-2025-32023](https://github.com/LordBheem/CVE-2025-32023)
 
 ### CVE-2025-32118 (2025-04-04)
 
@@ -2787,7 +2812,6 @@
 
 - [Hacksparo/CVE-2025-32462](https://github.com/Hacksparo/CVE-2025-32462)
 - [CryingN/CVE-2025-32462](https://github.com/CryingN/CVE-2025-32462)
-- [atomicjjbod/CVE-2025-32462](https://github.com/atomicjjbod/CVE-2025-32462)
 - [cybersentinelx1/CVE-2025-32462-Exploit](https://github.com/cybersentinelx1/CVE-2025-32462-Exploit)
 - [mylovem313/CVE-2025-32462](https://github.com/mylovem313/CVE-2025-32462)
 - [cyberpoul/CVE-2025-32462-POC](https://github.com/cyberpoul/CVE-2025-32462-POC)
@@ -2838,6 +2862,7 @@
 - [Floodnut/CVE-2025-32463](https://github.com/Floodnut/CVE-2025-32463)
 - [Rajneeshkarya/CVE-2025-32463](https://github.com/Rajneeshkarya/CVE-2025-32463)
 - [MGunturG/CVE-2025-32463](https://github.com/MGunturG/CVE-2025-32463)
+- [Maalfer/Sudo-CVE-2021-3156](https://github.com/Maalfer/Sudo-CVE-2021-3156)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -3022,6 +3047,7 @@
 </code>
 
 - [GreenForceNetwork/CVE-2025-41646---Critical-Authentication-Bypass-](https://github.com/GreenForceNetwork/CVE-2025-41646---Critical-Authentication-Bypass-)
+- [r0otk3r/CVE-2025-41646](https://github.com/r0otk3r/CVE-2025-41646)
 
 ### CVE-2025-43864 (2025-04-25)
 
@@ -3418,7 +3444,6 @@
 - [nguyentranbaotran/cve-2025-48384-poc](https://github.com/nguyentranbaotran/cve-2025-48384-poc)
 - [admin-ping/CVE-2025-48384-RCE](https://github.com/admin-ping/CVE-2025-48384-RCE)
 - [simplyfurious/CVE-2025-48384-submodule_test](https://github.com/simplyfurious/CVE-2025-48384-submodule_test)
-- [Anezatraa/CVE-2025-48384-POC](https://github.com/Anezatraa/CVE-2025-48384-POC)
 - [Anezatraa/CVE-2025-48384-submodule](https://github.com/Anezatraa/CVE-2025-48384-submodule)
 
 ### CVE-2025-48461 (2025-06-24)
@@ -3509,6 +3534,7 @@
 - [issamjr/CVE-2025-49113-Scanner](https://github.com/issamjr/CVE-2025-49113-Scanner)
 - [hackmelocal/HML-CVE-2025-49113-Round-Cube](https://github.com/hackmelocal/HML-CVE-2025-49113-Round-Cube)
 - [Joelp03/CVE-2025-49113](https://github.com/Joelp03/CVE-2025-49113)
+- [00xCanelo/CVE-2025-49113](https://github.com/00xCanelo/CVE-2025-49113)
 
 ### CVE-2025-49125 (2025-06-16)
 
@@ -3597,6 +3623,36 @@
 ### CVE-2025-51046
 - [0xMesh-X/CVE-2025-51046](https://github.com/0xMesh-X/CVE-2025-51046)
 
+### CVE-2025-51858
+- [Secsys-FDU/CVE-2025-51858](https://github.com/Secsys-FDU/CVE-2025-51858)
+
+### CVE-2025-51859
+- [Secsys-FDU/CVE-2025-51859](https://github.com/Secsys-FDU/CVE-2025-51859)
+
+### CVE-2025-51860
+- [Secsys-FDU/CVE-2025-51860](https://github.com/Secsys-FDU/CVE-2025-51860)
+
+### CVE-2025-51862
+- [Secsys-FDU/CVE-2025-51862](https://github.com/Secsys-FDU/CVE-2025-51862)
+
+### CVE-2025-51863
+- [Secsys-FDU/CVE-2025-51863](https://github.com/Secsys-FDU/CVE-2025-51863)
+
+### CVE-2025-51864
+- [Secsys-FDU/CVE-2025-51864](https://github.com/Secsys-FDU/CVE-2025-51864)
+
+### CVE-2025-51865
+- [Secsys-FDU/CVE-2025-51865](https://github.com/Secsys-FDU/CVE-2025-51865)
+
+### CVE-2025-51867
+- [Secsys-FDU/CVE-2025-51867](https://github.com/Secsys-FDU/CVE-2025-51867)
+
+### CVE-2025-51868
+- [Secsys-FDU/CVE-2025-51868](https://github.com/Secsys-FDU/CVE-2025-51868)
+
+### CVE-2025-51869
+- [Secsys-FDU/CVE-2025-51869](https://github.com/Secsys-FDU/CVE-2025-51869)
+
 ### CVE-2025-52097
 - [rwilsonecs/CVE-2025-52097](https://github.com/rwilsonecs/CVE-2025-52097)
 
@@ -3641,6 +3697,13 @@
 </code>
 
 - [DVKunion/CVE-2025-53547-POC](https://github.com/DVKunion/CVE-2025-53547-POC)
+
+### CVE-2025-53640 (2025-07-14)
+
+<code>Indico is an event management system that uses Flask-Multipass, a multi-backend authentication system for Flask. Starting in version 2.2 and prior to version 3.3.7, an endpoint used to display details of users listed in certain fields (such as ACLs) could be misused to dump basic user details (such as name, affiliation and email) in bulk. Version 3.3.7 fixes the issue. Owners of instances that allow everyone to create a user account, who wish to truly restrict access to these user details, should consider restricting user search to managers. As a workaround, it is possible to restrict access to the affected endpoints (e.g. in the webserver config), but doing so would break certain form fields which could no longer show the details of the users listed in those fields, so upgrading instead is highly recommended.
+</code>
+
+- [rafaelcorvino1/CVE-2025-53640](https://github.com/rafaelcorvino1/CVE-2025-53640)
 
 ### CVE-2025-53833 (2025-07-14)
 
@@ -6920,6 +6983,7 @@
 - [m-cetin/CVE-2024-20767](https://github.com/m-cetin/CVE-2024-20767)
 - [Chocapikk/CVE-2024-20767](https://github.com/Chocapikk/CVE-2024-20767)
 - [Praison001/CVE-2024-20767-Adobe-ColdFusion](https://github.com/Praison001/CVE-2024-20767-Adobe-ColdFusion)
+- [alm6no5/CVE-2024-20767](https://github.com/alm6no5/CVE-2024-20767)
 
 ### CVE-2024-20931 (2024-02-17)
 
@@ -11940,6 +12004,7 @@
 - [expl0itsecurity/CVE-2024-47575](https://github.com/expl0itsecurity/CVE-2024-47575)
 - [XiaomingX/cve-2024-47575-exp](https://github.com/XiaomingX/cve-2024-47575-exp)
 - [revanslbw/CVE-2024-47575-POC](https://github.com/revanslbw/CVE-2024-47575-POC)
+- [AnnnNix/CVE-2024-47575](https://github.com/AnnnNix/CVE-2024-47575)
 
 ### CVE-2024-47773 (2024-10-08)
 
@@ -23325,7 +23390,7 @@
 - [savior-only/CVE-2022-1609](https://github.com/savior-only/CVE-2022-1609)
 - [0xSojalSec/CVE-2022-1609](https://github.com/0xSojalSec/CVE-2022-1609)
 - [0xSojalSec/-CVE-2022-1609](https://github.com/0xSojalSec/-CVE-2022-1609)
-- [iaaaannn0/cve-2022-1609-exploit](https://github.com/iaaaannn0/cve-2022-1609-exploit)
+- [hex0x13h/cve-2022-1609-exploit](https://github.com/hex0x13h/cve-2022-1609-exploit)
 
 ### CVE-2022-1679 (2022-05-16)
 
