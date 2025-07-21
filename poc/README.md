@@ -615,6 +615,13 @@
 
 - [d0n601/CVE-2025-4336](https://github.com/d0n601/CVE-2025-4336)
 
+### CVE-2025-4380 (2025-07-02)
+
+<code>The Ads Pro Plugin - Multi-Purpose WordPress Advertising Manager plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.89 via the 'bsa_template' parameter of the `bsa_preview_callback` function. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases .php files can can be uploaded and included, or already exist on the site.
+</code>
+
+- [r0otk3r/CVE-2025-4380](https://github.com/r0otk3r/CVE-2025-4380)
+
 ### CVE-2025-4389 (2025-05-17)
 
 <code>The Crawlomatic Multipage Scraper Post Generator plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the crawlomatic_generate_featured_image() function in all versions up to, and including, 2.6.8.1. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
@@ -1049,6 +1056,13 @@
 </code>
 
 - [byteReaper77/CVE-2025-7795](https://github.com/byteReaper77/CVE-2025-7795)
+
+### CVE-2025-7840 (2025-07-19)
+
+<code>Es wurde eine Schwachstelle in Campcodes Online Movie Theater Seat Reservation System 1.0 ausgemacht. Sie wurde als problematisch eingestuft. Hiervon betroffen ist ein unbekannter Codeblock der Datei /index.php?page=reserve der Komponente Reserve Your Seat Page. Durch das Beeinflussen des Arguments Firstname/Lastname mit unbekannten Daten kann eine cross site scripting-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk angegangen werden. Der Exploit steht zur öffentlichen Verfügung.
+</code>
+
+- [byteReaper77/CVE-2025-7840](https://github.com/byteReaper77/CVE-2025-7840)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -2829,6 +2843,7 @@
 - [pr0v3rbs/CVE-2025-32463_chwoot](https://github.com/pr0v3rbs/CVE-2025-32463_chwoot)
 - [4f-kira/CVE-2025-32463](https://github.com/4f-kira/CVE-2025-32463)
 - [K1tt3h/CVE-2025-32463-POC](https://github.com/K1tt3h/CVE-2025-32463-POC)
+- [IC3-512/linux-root-kit](https://github.com/IC3-512/linux-root-kit)
 - [Adonijah01/cve-2025-32463-lab](https://github.com/Adonijah01/cve-2025-32463-lab)
 - [SysMancer/CVE-2025-32463](https://github.com/SysMancer/CVE-2025-32463)
 - [kh4sh3i/CVE-2025-32463](https://github.com/kh4sh3i/CVE-2025-32463)
@@ -2865,6 +2880,7 @@
 - [Rajneeshkarya/CVE-2025-32463](https://github.com/Rajneeshkarya/CVE-2025-32463)
 - [MGunturG/CVE-2025-32463](https://github.com/MGunturG/CVE-2025-32463)
 - [Maalfer/Sudo-CVE-2021-3156](https://github.com/Maalfer/Sudo-CVE-2021-3156)
+- [daryllundy/CVE-2025-32463](https://github.com/daryllundy/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -2971,6 +2987,7 @@
 ### CVE-2025-34085
 - [MrjHaxcore/CVE-2025-34085](https://github.com/MrjHaxcore/CVE-2025-34085)
 - [ill-deed/CVE-2025-34085-Multi-target](https://github.com/ill-deed/CVE-2025-34085-Multi-target)
+- [0xgh057r3c0n/CVE-2025-34085](https://github.com/0xgh057r3c0n/CVE-2025-34085)
 
 ### CVE-2025-36041 (2025-06-15)
 
@@ -3447,6 +3464,7 @@
 - [admin-ping/CVE-2025-48384-RCE](https://github.com/admin-ping/CVE-2025-48384-RCE)
 - [simplyfurious/CVE-2025-48384-submodule_test](https://github.com/simplyfurious/CVE-2025-48384-submodule_test)
 - [Anezatraa/CVE-2025-48384-submodule](https://github.com/Anezatraa/CVE-2025-48384-submodule)
+- [IK-20211125/CVE-2025-48384](https://github.com/IK-20211125/CVE-2025-48384)
 
 ### CVE-2025-48461 (2025-06-24)
 
@@ -3600,6 +3618,13 @@
 
 - [cristibtz/CVE-2025-49619](https://github.com/cristibtz/CVE-2025-49619)
 
+### CVE-2025-49706 (2025-07-08)
+
+<code>Improper authentication in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network.
+</code>
+
+- [AdityaBhatt3010/CVE-2025-49706-SharePoint-Spoofing-Vulnerability-Under-Active-Exploitation](https://github.com/AdityaBhatt3010/CVE-2025-49706-SharePoint-Spoofing-Vulnerability-Under-Active-Exploitation)
+
 ### CVE-2025-49719 (2025-07-08)
 
 <code>Improper input validation in SQL Server allows an unauthorized attacker to disclose information over a network.
@@ -3624,6 +3649,24 @@
 
 ### CVE-2025-51046
 - [0xMesh-X/CVE-2025-51046](https://github.com/0xMesh-X/CVE-2025-51046)
+
+### CVE-2025-51396
+- [Thewhiteevil/CVE-2025-51396](https://github.com/Thewhiteevil/CVE-2025-51396)
+
+### CVE-2025-51397
+- [Thewhiteevil/CVE-2025-51397](https://github.com/Thewhiteevil/CVE-2025-51397)
+
+### CVE-2025-51398
+- [Thewhiteevil/CVE-2025-51398](https://github.com/Thewhiteevil/CVE-2025-51398)
+
+### CVE-2025-51400
+- [Thewhiteevil/CVE-2025-51400](https://github.com/Thewhiteevil/CVE-2025-51400)
+
+### CVE-2025-51401
+- [Thewhiteevil/CVE-2025-51401](https://github.com/Thewhiteevil/CVE-2025-51401)
+
+### CVE-2025-51403
+- [Thewhiteevil/CVE-2025-51403](https://github.com/Thewhiteevil/CVE-2025-51403)
 
 ### CVE-2025-51858
 - [Secsys-FDU/CVE-2025-51858](https://github.com/Secsys-FDU/CVE-2025-51858)
@@ -3654,6 +3697,9 @@
 
 ### CVE-2025-51869
 - [Secsys-FDU/CVE-2025-51869](https://github.com/Secsys-FDU/CVE-2025-51869)
+
+### CVE-2025-51970
+- [M4xIq/CVE-2025-51970](https://github.com/M4xIq/CVE-2025-51970)
 
 ### CVE-2025-52097
 - [rwilsonecs/CVE-2025-52097](https://github.com/rwilsonecs/CVE-2025-52097)
@@ -3706,6 +3752,13 @@
 </code>
 
 - [rafaelcorvino1/CVE-2025-53640](https://github.com/rafaelcorvino1/CVE-2025-53640)
+
+### CVE-2025-53770 (2025-07-20)
+
+<code>Deserialization of untrusted data in on-premises Microsoft SharePoint Server allows an unauthorized attacker to execute code over a network.\nMicrosoft is aware that an exploit for CVE-2025-53770 exists in the wild.\nMicrosoft is preparing and fully testing a comprehensive update to address this vulnerability.  In the meantime, please make sure that the mitigation provided in this CVE documentation is in place so that you are protected from exploitation.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-53770](https://github.com/B1ack4sh/Blackash-CVE-2025-53770)
 
 ### CVE-2025-53833 (2025-07-14)
 
@@ -7119,7 +7172,6 @@
 - [th3Hellion/CVE-2024-21413](https://github.com/th3Hellion/CVE-2024-21413)
 - [ShubhamKanhere307/CVE-2024-21413](https://github.com/ShubhamKanhere307/CVE-2024-21413)
 - [olebris/CVE-2024-21413](https://github.com/olebris/CVE-2024-21413)
-- [DerZiad/CVE-2024-21413](https://github.com/DerZiad/CVE-2024-21413)
 - [Redfox-Security/Unveiling-Moniker-Link-CVE-2024-21413-Navigating-the-Latest-Cybersecurity-Landscape](https://github.com/Redfox-Security/Unveiling-Moniker-Link-CVE-2024-21413-Navigating-the-Latest-Cybersecurity-Landscape)
 - [ThemeHackers/CVE-2024-21413](https://github.com/ThemeHackers/CVE-2024-21413)
 - [D1se0/CVE-2024-21413-Vulnerabilidad-Outlook-LAB](https://github.com/D1se0/CVE-2024-21413-Vulnerabilidad-Outlook-LAB)
@@ -15076,7 +15128,7 @@
 - [teraGL/looneyCVE](https://github.com/teraGL/looneyCVE)
 - [snurkeburk/Looney-Tunables](https://github.com/snurkeburk/Looney-Tunables)
 - [puckiestyle/CVE-2023-4911](https://github.com/puckiestyle/CVE-2023-4911)
-- [yanfernandess/Looney-Tunables-CVE-2023-4911](https://github.com/yanfernandess/Looney-Tunables-CVE-2023-4911)
+- [RRespxwnss/Looney-Tunables-CVE-2023-4911](https://github.com/RRespxwnss/Looney-Tunables-CVE-2023-4911)
 - [NishanthAnand21/CVE-2023-4911-PoC](https://github.com/NishanthAnand21/CVE-2023-4911-PoC)
 - [Billar42/CVE-2023-4911](https://github.com/Billar42/CVE-2023-4911)
 - [shacojx/CVE-2023-4911-Exploit](https://github.com/shacojx/CVE-2023-4911-Exploit)
@@ -20698,6 +20750,13 @@
 
 - [d0rb/CVE-2023-42931](https://github.com/d0rb/CVE-2023-42931)
 
+### CVE-2023-42961 (2025-04-11)
+
+<code>A path handling issue was addressed with improved validation. This issue is fixed in iOS 17 and iPadOS 17, iOS 16.7 and iPadOS 16.7, macOS Sonoma 14, macOS Ventura 13.6, macOS Monterey 12.7. A sandboxed process may be able to circumvent sandbox restrictions.
+</code>
+
+- [windz3r0day/CVE-2023-42961](https://github.com/windz3r0day/CVE-2023-42961)
+
 ### CVE-2023-43040 (2024-05-13)
 
 <code>IBM Spectrum Fusion HCI 2.5.2 through 2.7.2 could allow an attacker to perform unauthorized actions in RGW for Ceph due to improper bucket access.  IBM X-Force ID:  266807.
@@ -22848,6 +22907,7 @@
 - [Trinadh465/device_renesas_kernel_AOSP10_r33_CVE-2022-0492](https://github.com/Trinadh465/device_renesas_kernel_AOSP10_r33_CVE-2022-0492)
 - [yoeelingBin/CVE-2022-0492-Container-Escape](https://github.com/yoeelingBin/CVE-2022-0492-Container-Escape)
 - [T1erno/CVE-2022-0492-Docker-Breakout-Checker-and-PoC](https://github.com/T1erno/CVE-2022-0492-Docker-Breakout-Checker-and-PoC)
+- [Perimora/cve_2022_0492](https://github.com/Perimora/cve_2022_0492)
 
 ### CVE-2022-0529 (2022-02-09)
 
@@ -38792,7 +38852,6 @@
 </code>
 
 - [fairyming/CVE-2020-9547](https://github.com/fairyming/CVE-2020-9547)
-- [Pranjal6955/CVE-2020-9547](https://github.com/Pranjal6955/CVE-2020-9547)
 
 ### CVE-2020-9548 (2020-03-02)
 
@@ -42811,13 +42870,6 @@
 </code>
 
 - [aneeshanilkumar89/Maximo_Sql_Injection-CVE-2019-4650](https://github.com/aneeshanilkumar89/Maximo_Sql_Injection-CVE-2019-4650)
-
-### CVE-2019-4716 (2019-12-18)
-
-<code>IBM Planning Analytics 2.0.0 through 2.0.8 is vulnerable to a configuration overwrite that allows an unauthenticated user to login as &quot;admin&quot;, and then execute code as root or SYSTEM via TM1 scripting. IBM X-Force ID: 172094.
-</code>
-
-- [Pranjal6955/CVE-2019-4716-Test-Environment](https://github.com/Pranjal6955/CVE-2019-4716-Test-Environment)
 
 ### CVE-2019-5010 (2019-10-31)
 
