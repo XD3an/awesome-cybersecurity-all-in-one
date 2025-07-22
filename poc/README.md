@@ -300,13 +300,6 @@
 - [Wa1nut4/CVE-2025-2135](https://github.com/Wa1nut4/CVE-2025-2135)
 - [sangnguyenthien/CVE-2025-2135](https://github.com/sangnguyenthien/CVE-2025-2135)
 
-### CVE-2025-2233 (2025-03-11)
-
-<code>Samsung SmartThings Improper Verification of Cryptographic Signature Authentication Bypass Vulnerability. This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of Samsung SmartThings. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the Hub Local API service, which listens on TCP port 8766 by default. The issue results from the lack of proper verification of a cryptographic signature. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-25615.
-</code>
-
-- [McTavishSue/CVE-2025-2233](https://github.com/McTavishSue/CVE-2025-2233)
-
 ### CVE-2025-2249 (2025-03-29)
 
 <code>The SoJ SoundSlides plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the soj_soundslides_options_subpanel() function in all versions up to, and including, 1.2.2. This makes it possible for authenticated attackers, with Contributor-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.
@@ -333,7 +326,11 @@
 - [Yucaerin/CVE-2025-2294](https://github.com/Yucaerin/CVE-2025-2294)
 - [0xWhoami35/CVE-2025-2294](https://github.com/0xWhoami35/CVE-2025-2294)
 
-### CVE-2025-2301
+### CVE-2025-2301 (2025-07-21)
+
+<code>Authorization Bypass Through User-Controlled Key vulnerability in Akbim Software Online Exam Registration allows Exploitation of Trusted Identifiers.This issue affects Online Exam Registration: before 14.03.2025.
+</code>
+
 - [sahici/CVE-2025-2301](https://github.com/sahici/CVE-2025-2301)
 
 ### CVE-2025-2404
@@ -887,6 +884,7 @@
 
 ### CVE-2025-6018
 - [iamgithubber/CVE-2025-6018-19-exploit](https://github.com/iamgithubber/CVE-2025-6018-19-exploit)
+- [dreysanox/CVE-2025-6018_Poc](https://github.com/dreysanox/CVE-2025-6018_Poc)
 
 ### CVE-2025-6019 (2025-06-19)
 
@@ -896,7 +894,6 @@
 - [guinea-offensive-security/CVE-2025-6019](https://github.com/guinea-offensive-security/CVE-2025-6019)
 - [And-oss/CVE-2025-6019-exploit](https://github.com/And-oss/CVE-2025-6019-exploit)
 - [neko205-mx/CVE-2025-6019_Exploit](https://github.com/neko205-mx/CVE-2025-6019_Exploit)
-- [dreysanox/CVE-2025-6019_Poc](https://github.com/dreysanox/CVE-2025-6019_Poc)
 
 ### CVE-2025-6058 (2025-07-12)
 
@@ -1462,13 +1459,6 @@
 
 - [Feralthedogg/CVE-2025-24132-Scanner](https://github.com/Feralthedogg/CVE-2025-24132-Scanner)
 
-### CVE-2025-24200 (2025-02-10)
-
-<code>An authorization issue was addressed with improved state management. This issue is fixed in iPadOS 17.7.5, iOS 18.3.1 and iPadOS 18.3.1. A physical attack may disable USB Restricted Mode on a locked device. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals.
-</code>
-
-- [McTavishSue/CVE-2025-24200](https://github.com/McTavishSue/CVE-2025-24200)
-
 ### CVE-2025-24201 (2025-03-11)
 
 <code>An out-of-bounds write issue was addressed with improved checks to prevent unauthorized actions. This issue is fixed in visionOS 2.3.2, iOS 18.3.2 and iPadOS 18.3.2, macOS Sequoia 15.3.2, Safari 18.3.1, watchOS 11.4, iPadOS 17.7.6, iOS 16.7.11 and iPadOS 16.7.11, iOS 15.8.4 and iPadOS 15.8.4. Maliciously crafted web content may be able to break out of Web Content sandbox. This is a supplementary fix for an attack that was blocked in iOS 17.2. (Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 17.2.).
@@ -1637,6 +1627,7 @@
 </code>
 
 - [davidxbors/CVE-2025-25014](https://github.com/davidxbors/CVE-2025-25014)
+- [B1ack4sh/Blackash-CVE-2025-25014](https://github.com/B1ack4sh/Blackash-CVE-2025-25014)
 
 ### CVE-2025-25062 (2025-02-03)
 
@@ -2621,7 +2612,6 @@
 - [SUPRAAA-1337/CVE-2025-31161_exploit](https://github.com/SUPRAAA-1337/CVE-2025-31161_exploit)
 - [0xgh057r3c0n/CVE-2025-31161](https://github.com/0xgh057r3c0n/CVE-2025-31161)
 - [B1ack4sh/Blackash-CVE-2025-31161](https://github.com/B1ack4sh/Blackash-CVE-2025-31161)
-- [ibrahmsql/CVE-2025-31161](https://github.com/ibrahmsql/CVE-2025-31161)
 - [r0otk3r/CVE-2025-31161](https://github.com/r0otk3r/CVE-2025-31161)
 
 ### CVE-2025-31200 (2025-04-16)
@@ -2881,6 +2871,7 @@
 - [MGunturG/CVE-2025-32463](https://github.com/MGunturG/CVE-2025-32463)
 - [Maalfer/Sudo-CVE-2021-3156](https://github.com/Maalfer/Sudo-CVE-2021-3156)
 - [daryllundy/CVE-2025-32463](https://github.com/daryllundy/CVE-2025-32463)
+- [AdityaBhatt3010/Sudo-Privilege-Escalation-Linux-CVE-2025-32463-and-CVE-2025-32462](https://github.com/AdityaBhatt3010/Sudo-Privilege-Escalation-Linux-CVE-2025-32463-and-CVE-2025-32462)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -3433,6 +3424,13 @@
 
 - [Zedeldi/CVE-2025-47827](https://github.com/Zedeldi/CVE-2025-47827)
 
+### CVE-2025-47917 (2025-07-20)
+
+<code>Mbed TLS before 3.6.4 allows a use-after-free in certain situations of applications that are developed in accordance with the documentation. The function mbedtls_x509_string_to_names() takes a head argument that is documented as an output argument. The documentation does not suggest that the function will free that pointer; however, the function does call mbedtls_asn1_free_named_data_list() on that argument, which performs a deep free(). As a result, application code that uses this function (relying only on documented behavior) is likely to still hold pointers to the memory blocks that were freed, resulting in a high risk of use-after-free or double-free. In particular, the two sample programs x509/cert_write and x509/cert_req are affected (use-after-free if the san string contains more than one DN).
+</code>
+
+- [byteReaper77/CVE-2025-47917](https://github.com/byteReaper77/CVE-2025-47917)
+
 ### CVE-2025-48129 (2025-06-09)
 
 <code>Incorrect Privilege Assignment vulnerability in Holest Engineering Spreadsheet Price Changer for WooCommerce and WP E-commerce – Light allows Privilege Escalation. This issue affects Spreadsheet Price Changer for WooCommerce and WP E-commerce – Light: from n/a through 2.4.37.
@@ -3625,13 +3623,6 @@
 
 - [AdityaBhatt3010/CVE-2025-49706-SharePoint-Spoofing-Vulnerability-Under-Active-Exploitation](https://github.com/AdityaBhatt3010/CVE-2025-49706-SharePoint-Spoofing-Vulnerability-Under-Active-Exploitation)
 
-### CVE-2025-49719 (2025-07-08)
-
-<code>Improper input validation in SQL Server allows an unauthorized attacker to disclose information over a network.
-</code>
-
-- [HExploited/CVE-2025-49719-Exploit](https://github.com/HExploited/CVE-2025-49719-Exploit)
-
 ### CVE-2025-50000
 - [adiivascu/CVE-2025-50000](https://github.com/adiivascu/CVE-2025-50000)
 
@@ -3650,22 +3641,46 @@
 ### CVE-2025-51046
 - [0xMesh-X/CVE-2025-51046](https://github.com/0xMesh-X/CVE-2025-51046)
 
-### CVE-2025-51396
+### CVE-2025-51396 (2025-07-21)
+
+<code>A stored cross-site scripting (XSS) vulnerability in Live Helper Chat v4.60 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the Telegram Bot Username parameter.
+</code>
+
 - [Thewhiteevil/CVE-2025-51396](https://github.com/Thewhiteevil/CVE-2025-51396)
 
-### CVE-2025-51397
+### CVE-2025-51397 (2025-07-21)
+
+<code>A stored cross-site scripting (XSS) vulnerability in the Facebook Chat module of Live Helper Chat v4.60 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the Surname parameter under the Recipient' Lists.
+</code>
+
 - [Thewhiteevil/CVE-2025-51397](https://github.com/Thewhiteevil/CVE-2025-51397)
 
-### CVE-2025-51398
+### CVE-2025-51398 (2025-07-21)
+
+<code>A stored cross-site scripting (XSS) vulnerability in the Facebook registration page of Live Helper Chat v4.60 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the Name parameter.
+</code>
+
 - [Thewhiteevil/CVE-2025-51398](https://github.com/Thewhiteevil/CVE-2025-51398)
 
-### CVE-2025-51400
+### CVE-2025-51400 (2025-07-21)
+
+<code>A stored cross-site scripting (XSS) vulnerability in the Personal Canned Messages of Live Helper Chat v4.60 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload.
+</code>
+
 - [Thewhiteevil/CVE-2025-51400](https://github.com/Thewhiteevil/CVE-2025-51400)
 
-### CVE-2025-51401
+### CVE-2025-51401 (2025-07-21)
+
+<code>A stored cross-site scripting (XSS) vulnerability in the chat transfer function of Live Helper Chat v4.60 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the operator name parameter.
+</code>
+
 - [Thewhiteevil/CVE-2025-51401](https://github.com/Thewhiteevil/CVE-2025-51401)
 
-### CVE-2025-51403
+### CVE-2025-51403 (2025-07-21)
+
+<code>A stored cross-site scripting (XSS) vulnerability in the department assignment editing module of of Live Helper Chat v4.60 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the Alias Nick parameter.
+</code>
+
 - [Thewhiteevil/CVE-2025-51403](https://github.com/Thewhiteevil/CVE-2025-51403)
 
 ### CVE-2025-51858
@@ -3692,10 +3707,18 @@
 ### CVE-2025-51867
 - [Secsys-FDU/CVE-2025-51867](https://github.com/Secsys-FDU/CVE-2025-51867)
 
-### CVE-2025-51868
+### CVE-2025-51868 (2025-07-21)
+
+<code>Insecure Direct Object Reference (IDOR) vulnerability in Dippy (chat.dippy.ai) v2 allows attackers to gain sensitive information via the conversation_id parameter to the conversation_history endpoint.
+</code>
+
 - [Secsys-FDU/CVE-2025-51868](https://github.com/Secsys-FDU/CVE-2025-51868)
 
-### CVE-2025-51869
+### CVE-2025-51869 (2025-07-21)
+
+<code>Insecure Direct Object Reference (IDOR) vulnerability in Liner thru 2025-06-03 allows attackers to gain sensitive information via crafted space_id, thread_id, and message_id parameters to the v1/space/{space_id}/thread/{thread_id}/message/{message_id} endpoint.
+</code>
+
 - [Secsys-FDU/CVE-2025-51869](https://github.com/Secsys-FDU/CVE-2025-51869)
 
 ### CVE-2025-51970
@@ -3761,7 +3784,14 @@
 - [B1ack4sh/Blackash-CVE-2025-53770](https://github.com/B1ack4sh/Blackash-CVE-2025-53770)
 - [RukshanaAlikhan/CVE-2025-53770](https://github.com/RukshanaAlikhan/CVE-2025-53770)
 - [Bluefire-Redteam-Cybersecurity/bluefire-sharepoint-cve-2025-53770](https://github.com/Bluefire-Redteam-Cybersecurity/bluefire-sharepoint-cve-2025-53770)
-- [n1chr0x/Zeropoint](https://github.com/n1chr0x/Zeropoint)
+- [n1chr0x/ZeroPoint](https://github.com/n1chr0x/ZeroPoint)
+- [kaizensecurity/CVE-2025-53770](https://github.com/kaizensecurity/CVE-2025-53770)
+- [paolokappa/SharePointSecurityMonitor](https://github.com/paolokappa/SharePointSecurityMonitor)
+- [soltanali0/CVE-2025-53770-Exploit](https://github.com/soltanali0/CVE-2025-53770-Exploit)
+- [hazcod/CVE-2025-53770](https://github.com/hazcod/CVE-2025-53770)
+- [ZephrFish/CVE-2025-53770-Scanner](https://github.com/ZephrFish/CVE-2025-53770-Scanner)
+- [siag-itsec/CVE-2025-53770-Hunting](https://github.com/siag-itsec/CVE-2025-53770-Hunting)
+- [grupooruss/CVE-2025-53770-Checker](https://github.com/grupooruss/CVE-2025-53770-Checker)
 
 ### CVE-2025-53833 (2025-07-14)
 
@@ -3921,7 +3951,6 @@
 - [cbeek-r7/CVE-2024-0204](https://github.com/cbeek-r7/CVE-2024-0204)
 - [m-cetin/CVE-2024-0204](https://github.com/m-cetin/CVE-2024-0204)
 - [adminlove520/CVE-2024-0204](https://github.com/adminlove520/CVE-2024-0204)
-- [ibrahmsql/CVE-2024-0204](https://github.com/ibrahmsql/CVE-2024-0204)
 
 ### CVE-2024-0230 (2024-01-12)
 
@@ -4986,7 +5015,6 @@
 - [Gill-Singh-A/CVE-2024-4577-Exploit](https://github.com/Gill-Singh-A/CVE-2024-4577-Exploit)
 - [tntrock/CVE-2024-4577_PowerShell](https://github.com/tntrock/CVE-2024-4577_PowerShell)
 - [KimJuhyeong95/cve-2024-4577](https://github.com/KimJuhyeong95/cve-2024-4577)
-- [ibrahmsql/CVE-2024-4577](https://github.com/ibrahmsql/CVE-2024-4577)
 - [byteReaper77/CVE-2024-4577](https://github.com/byteReaper77/CVE-2024-4577)
 - [r0otk3r/CVE-2024-4577](https://github.com/r0otk3r/CVE-2024-4577)
 - [ZeroMemoryEx/PHP-CGI-INTERNAL-RCE](https://github.com/ZeroMemoryEx/PHP-CGI-INTERNAL-RCE)
@@ -5427,6 +5455,13 @@
 </code>
 
 - [12345qwert123456/CVE-2024-6473-PoC](https://github.com/12345qwert123456/CVE-2024-6473-PoC)
+
+### CVE-2024-6485 (2024-07-11)
+
+<code>A security vulnerability has been discovered in bootstrap that could enable Cross-Site Scripting (XSS) attacks. The vulnerability is associated with the data-loading-text attribute within the button plugin. This vulnerability can be exploited by injecting malicious JavaScript code into the attribute, which would then be executed when the button's loading state is triggered.
+</code>
+
+- [Yumeae/Bootstrap-with-XSS](https://github.com/Yumeae/Bootstrap-with-XSS)
 
 ### CVE-2024-6529 (2024-08-01)
 
@@ -5997,6 +6032,7 @@
 - [Royall-Researchers/CVE-2024-9264](https://github.com/Royall-Researchers/CVE-2024-9264)
 - [ruizii/CVE-2024-9264](https://github.com/ruizii/CVE-2024-9264)
 - [rvizx/CVE-2024-9264](https://github.com/rvizx/CVE-2024-9264)
+- [patrickpichler/grafana-CVE-2024-9264](https://github.com/patrickpichler/grafana-CVE-2024-9264)
 
 ### CVE-2024-9290 (2024-12-13)
 
@@ -6861,13 +6897,6 @@
 </code>
 
 - [tausifzaman/CVE-2024-13346](https://github.com/tausifzaman/CVE-2024-13346)
-
-### CVE-2024-13375 (2025-01-18)
-
-<code>The Adifier System plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 3.1.7. This is due to the plugin not properly validating a user's identity prior to updating their details like password through the adifier_recover() function. This makes it possible for unauthenticated attackers to change arbitrary user's passwords, including administrators, and leverage that to gain access to their account.
-</code>
-
-- [McTavishSue/CVE-2024-13375](https://github.com/McTavishSue/CVE-2024-13375)
 
 ### CVE-2024-13478 (2025-02-19)
 
@@ -8987,7 +9016,6 @@
 - [Praison001/CVE-2024-28995-SolarWinds-Serv-U](https://github.com/Praison001/CVE-2024-28995-SolarWinds-Serv-U)
 - [Stuub/CVE-2024-28995](https://github.com/Stuub/CVE-2024-28995)
 - [gotr00t0day/CVE-2024-28995](https://github.com/gotr00t0day/CVE-2024-28995)
-- [ibrahmsql/CVE-2024-28995](https://github.com/ibrahmsql/CVE-2024-28995)
 
 ### CVE-2024-28999 (2024-06-04)
 
@@ -10226,6 +10254,7 @@
 - [whitebear-ch/GeoServerExploit](https://github.com/whitebear-ch/GeoServerExploit)
 - [bmth666/GeoServer-Tools-CVE-2024-36401](https://github.com/bmth666/GeoServer-Tools-CVE-2024-36401)
 - [amoy6228/CVE-2024-36401_Geoserver_RCE_POC](https://github.com/amoy6228/CVE-2024-36401_Geoserver_RCE_POC)
+- [holokitty/Exploit-CVE-2024-36401](https://github.com/holokitty/Exploit-CVE-2024-36401)
 
 ### CVE-2024-36416 (2024-06-10)
 
@@ -11327,13 +11356,6 @@
 
 - [partywavesec/CVE-2024-42346](https://github.com/partywavesec/CVE-2024-42346)
 
-### CVE-2024-42364 (2024-08-23)
-
-<code>Homepage is a highly customizable homepage with Docker and service API integrations. The default setup of homepage 0.9.1 is vulnerable to DNS rebinding. Homepage is setup without certificate and authentication by default, leaving it to vulnerable to DNS rebinding. In this attack, an attacker will ask a user to visit his/her website. The attacker website will then change the DNS records of their domain from their IP address to the internal IP address of the homepage instance. To tell which IP addresses are valid, we can rebind a subdomain to each IP address we want to check, and see if there is a response. Once potential candidates have been found, the attacker can launch the attack by reading the response of the webserver after the IP address has changed. When the attacker domain is fetched, the response will be from the homepage instance, not the attacker website, because the IP address has been changed. Due to a lack of authentication, a user’s private information such as API keys (fixed after first report) and other private information can then be extracted by the attacker website.
-</code>
-
-- [ibrahmsql/CVE-2024-42364](https://github.com/ibrahmsql/CVE-2024-42364)
-
 ### CVE-2024-42448 (2024-12-11)
 
 <code>From the VSPC management agent machine, under condition that the management agent is authorized on the server, it is possible to perform Remote Code Execution (RCE) on the VSPC server machine.
@@ -11771,7 +11793,7 @@
 
 ### CVE-2024-45244 (2024-08-25)
 
-<code>Hyperledger Fabric through 2.5.9 does not verify that a request has a timestamp within the expected time window.
+<code>Hyperledger Fabric through 3.0.0 and 2.5.x through 2.5.9 do not verify that a request has a timestamp within the expected time window.
 </code>
 
 - [shanker-sec/HLF_TxTime_spoofing](https://github.com/shanker-sec/HLF_TxTime_spoofing)
@@ -12069,13 +12091,6 @@
 - [XiaomingX/cve-2024-47575-exp](https://github.com/XiaomingX/cve-2024-47575-exp)
 - [revanslbw/CVE-2024-47575-POC](https://github.com/revanslbw/CVE-2024-47575-POC)
 - [AnnnNix/CVE-2024-47575](https://github.com/AnnnNix/CVE-2024-47575)
-
-### CVE-2024-47773 (2024-10-08)
-
-<code>Discourse is an open source platform for community discussion. An attacker can make several XHR requests until the cache is poisoned with a response without any preloaded data. This issue only affects anonymous visitors of the site. This problem has been patched in the latest version of Discourse. Users are advised to upgrade. Users unable to upgrade should disable anonymous cache by setting the `DISCOURSE_DISABLE_ANON_CACHE` environment variable to a non-empty value.
-</code>
-
-- [ibrahmsql/CVE-2024-47773](https://github.com/ibrahmsql/CVE-2024-47773)
 
 ### CVE-2024-47854 (2024-10-04)
 
@@ -13404,7 +13419,11 @@
 
 - [Allevon412/CVE-2024-54951](https://github.com/Allevon412/CVE-2024-54951)
 
-### CVE-2024-55040
+### CVE-2024-55040 (2025-07-21)
+
+<code>Cross Site Scripting vulnerability in Sensaphone WEB600 Monitoring System v.1.6.5.H and before allows a remote attacker to execute arbitrary code via a crafted GET requests to /@.xml, placing payloads in the g7200, g7300, g4601, and g1F02 parameters.
+</code>
+
 - [tcbutler320/CVE-2024-55040-Sensaphone-XSS](https://github.com/tcbutler320/CVE-2024-55040-Sensaphone-XSS)
 
 ### CVE-2024-55060 (2025-03-13)
@@ -14260,7 +14279,6 @@
 - [deIndra/CVE-2023-1698](https://github.com/deIndra/CVE-2023-1698)
 - [thedarknessdied/WAGO-CVE-2023-1698](https://github.com/thedarknessdied/WAGO-CVE-2023-1698)
 - [X3RX3SSec/CVE-2023-1698](https://github.com/X3RX3SSec/CVE-2023-1698)
-- [ibrahmsql/CVE-2023-1698](https://github.com/ibrahmsql/CVE-2023-1698)
 
 ### CVE-2023-1718 (2023-11-01)
 
@@ -15635,6 +15653,7 @@
 - [gh-ost00/CVE-2023-7028](https://github.com/gh-ost00/CVE-2023-7028)
 - [sariamubeen/CVE-2023-7028](https://github.com/sariamubeen/CVE-2023-7028)
 - [Sornphut/CVE-2023-7028-GitLab](https://github.com/Sornphut/CVE-2023-7028-GitLab)
+- [szybnev/CVE-2023-7028](https://github.com/szybnev/CVE-2023-7028)
 
 ### CVE-2023-7172 (2023-12-30)
 
@@ -19538,13 +19557,6 @@
 
 - [SpiralBL0CK/cve-2023-37456](https://github.com/SpiralBL0CK/cve-2023-37456)
 
-### CVE-2023-37467 (2023-07-28)
-
-<code>Discourse is an open source discussion platform. Prior to version 3.1.0.beta7 of the `beta` and `tests-passed` branches, a CSP (Content Security Policy) nonce reuse vulnerability was discovered could allow cross-site scripting (XSS) attacks to bypass CSP protection for anonymous (i.e. unauthenticated) users. There are no known XSS vectors at the moment, but should one be discovered, this vulnerability would allow the XSS attack to bypass CSP and execute successfully. This vulnerability isn't applicable to logged-in users. Version 3.1.0.beta7 contains a patch. The stable branch doesn't have this vulnerability. A workaround to prevent the vulnerability is to disable Google Tag Manager, i.e., unset the `gtm container id` setting.
-</code>
-
-- [ibrahmsql/CVE-2023-37467](https://github.com/ibrahmsql/CVE-2023-37467)
-
 ### CVE-2023-37474 (2023-07-14)
 
 <code>Copyparty is a portable file server. Versions prior to 1.8.2 are subject to a path traversal vulnerability detected in the `.cpr` subfolder. The Path Traversal attack technique allows an attacker access to files, directories, and commands that reside outside the web document root directory. This issue has been addressed in commit `043e3c7d` which has been included in release 1.8.2. Users are advised to upgrade. There are no known workarounds for this vulnerability.
@@ -19860,6 +19872,7 @@
 - [DaniTheHack3r/CVE-2023-38646](https://github.com/DaniTheHack3r/CVE-2023-38646)
 - [XiaomingX/cve-2023-38646-poc](https://github.com/XiaomingX/cve-2023-38646-poc)
 - [JayRyz/CVE-2023-38646-PoC-Metabase](https://github.com/JayRyz/CVE-2023-38646-PoC-Metabase)
+- [BreezeGalaxy/CVE-2023-38646](https://github.com/BreezeGalaxy/CVE-2023-38646)
 
 ### CVE-2023-38709 (2024-04-04)
 
@@ -21325,13 +21338,6 @@
 
 ### CVE-2023-44976
 - [keowu/BadRentdrv2](https://github.com/keowu/BadRentdrv2)
-
-### CVE-2023-45131 (2023-10-16)
-
-<code>Discourse is an open source platform for community discussion. New chat messages can be read by making an unauthenticated POST request to MessageBus. This issue is patched in the 3.1.1 stable and 3.2.0.beta2 versions of Discourse. Users are advised to upgrade. There are no known workarounds for this vulnerability.
-</code>
-
-- [ibrahmsql/CVE-2023-45131](https://github.com/ibrahmsql/CVE-2023-45131)
 
 ### CVE-2023-45158 (2023-10-16)
 
@@ -30262,6 +30268,7 @@
 - [Wra7h/SharpPN](https://github.com/Wra7h/SharpPN)
 - [OppressionBreedsResistance/CVE-2021-1675-PrintNightmare](https://github.com/OppressionBreedsResistance/CVE-2021-1675-PrintNightmare)
 - [eversinc33/NimNightmare](https://github.com/eversinc33/NimNightmare)
+- [AndrewTrube/CVE-2021-1675](https://github.com/AndrewTrube/CVE-2021-1675)
 - [TheJoyOfHacking/cube0x0-CVE-2021-1675](https://github.com/TheJoyOfHacking/cube0x0-CVE-2021-1675)
 - [TheJoyOfHacking/calebstewart-CVE-2021-1675](https://github.com/TheJoyOfHacking/calebstewart-CVE-2021-1675)
 - [jj4152/cve-2021-1675](https://github.com/jj4152/cve-2021-1675)
@@ -30602,6 +30609,7 @@
 - [chenaotian/CVE-2021-3156](https://github.com/chenaotian/CVE-2021-3156)
 - [ret2basic/SudoScience](https://github.com/ret2basic/SudoScience)
 - [puckiestyle/CVE-2021-3156](https://github.com/puckiestyle/CVE-2021-3156)
+- [barebackbandit/CVE-2021-3156](https://github.com/barebackbandit/CVE-2021-3156)
 - [RodricBr/CVE-2021-3156](https://github.com/RodricBr/CVE-2021-3156)
 - [ypl6/heaplens](https://github.com/ypl6/heaplens)
 - [q77190858/CVE-2021-3156](https://github.com/q77190858/CVE-2021-3156)
@@ -34610,14 +34618,6 @@
 </code>
 
 - [Jajangjaman/CVE-2021-41160](https://github.com/Jajangjaman/CVE-2021-41160)
-
-### CVE-2021-41163 (2021-10-20)
-
-<code>Discourse is an open source platform for community discussion. In affected versions maliciously crafted requests could lead to remote code execution. This resulted from a lack of validation in subscribe_url values. This issue is patched in the latest stable, beta and tests-passed versions of Discourse. To workaround the issue without updating, requests with a path starting /webhooks/aws path could be blocked at an upstream proxy.
-</code>
-
-- [ibrahmsql/CVE-2021-41163](https://github.com/ibrahmsql/CVE-2021-41163)
-- [ibrahmsql/discourse-CVE-2021-41163](https://github.com/ibrahmsql/discourse-CVE-2021-41163)
 
 ### CVE-2021-41182 (2021-10-26)
 
@@ -43208,7 +43208,7 @@
 
 ### CVE-2019-6446 (2019-01-16)
 
-<code>An issue was discovered in NumPy 1.16.0 and earlier. It uses the pickle Python module unsafely, which allows remote attackers to execute arbitrary code via a crafted serialized object, as demonstrated by a numpy.load call. NOTE: third parties dispute this issue because it is  a behavior that might have legitimate applications in (for example)  loading serialized Python object arrays from trusted and authenticated  sources
+<code>An issue was discovered in NumPy before 1.16.3. It uses the pickle Python module unsafely, which allows remote attackers to execute arbitrary code via a crafted serialized object, as demonstrated by a numpy.load call. NOTE: third parties dispute this issue because it is a behavior that might have legitimate applications in (for example) loading serialized Python object arrays from trusted and authenticated sources.
 </code>
 
 - [RayScri/CVE-2019-6446](https://github.com/RayScri/CVE-2019-6446)
@@ -43425,6 +43425,7 @@
 
 - [Snorlyd/https-nj.gov---CVE-2019-8331](https://github.com/Snorlyd/https-nj.gov---CVE-2019-8331)
 - [Thampakon/CVE-2019-8331](https://github.com/Thampakon/CVE-2019-8331)
+- [Yumeae/Bootstrap-with-XSS](https://github.com/Yumeae/Bootstrap-with-XSS)
 
 ### CVE-2019-8341 (2019-02-15)
 
@@ -48574,6 +48575,7 @@
 </code>
 
 - [Snorlyd/https-nj.gov---CVE-2018-14040](https://github.com/Snorlyd/https-nj.gov---CVE-2018-14040)
+- [Yumeae/Bootstrap-with-XSS](https://github.com/Yumeae/Bootstrap-with-XSS)
 
 ### CVE-2018-14041 (2018-07-13)
 
@@ -53522,6 +53524,13 @@
 </code>
 
 - [wetw0rk/Exploit-Development](https://github.com/wetw0rk/Exploit-Development)
+
+### CVE-2016-10735 (2019-01-09)
+
+<code>In Bootstrap 3.x before 3.4.0 and 4.x-beta before 4.0.0-beta.2, XSS is possible in the data-target attribute, a different vulnerability than CVE-2018-14041.
+</code>
+
+- [Yumeae/Bootstrap-with-XSS](https://github.com/Yumeae/Bootstrap-with-XSS)
 
 ### CVE-2016-10761 (2019-06-29)
 
