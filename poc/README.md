@@ -407,6 +407,7 @@
 - [WOOOOONG/CVE-2025-2825](https://github.com/WOOOOONG/CVE-2025-2825)
 - [punitdarji/crushftp-CVE-2025-2825](https://github.com/punitdarji/crushftp-CVE-2025-2825)
 - [ghostsec420/ShatteredFTP](https://github.com/ghostsec420/ShatteredFTP)
+- [Shivshantp/CVE-2025-2825-CrushFTP-AuthBypass](https://github.com/Shivshantp/CVE-2025-2825-CrushFTP-AuthBypass)
 
 ### CVE-2025-2907 (2025-04-26)
 
@@ -909,6 +910,14 @@
 
 - [Nxploited/CVE-2025-6058](https://github.com/Nxploited/CVE-2025-6058)
 - [JayVillain/Scan-CVE-2025-6058](https://github.com/JayVillain/Scan-CVE-2025-6058)
+- [0xgh057r3c0n/CVE-2025-6058](https://github.com/0xgh057r3c0n/CVE-2025-6058)
+
+### CVE-2025-6082 (2025-07-22)
+
+<code>The Birth Chart Compatibility plugin for WordPress is vulnerable to Full Path Disclosure in all versions up to, and including, 2.0. This is due to insufficient protection against directly accessing the plugin's index.php file, which causes an error exposing the full path. This makes it possible for unauthenticated attackers to retrieve the full path of the web application, which can be used to aid other attacks. The information displayed is not useful on its own, and requires another vulnerability to be present for damage to an affected website.
+</code>
+
+- [byteReaper77/CVE-2025-6082](https://github.com/byteReaper77/CVE-2025-6082)
 
 ### CVE-2025-6218 (2025-06-21)
 
@@ -1011,6 +1020,13 @@
 
 - [Nxploited/CVE-2025-6934](https://github.com/Nxploited/CVE-2025-6934)
 - [MrjHaxcore/CVE-2025-6934](https://github.com/MrjHaxcore/CVE-2025-6934)
+
+### CVE-2025-6965 (2025-07-15)
+
+<code>There exists a vulnerability in SQLite versions before 3.50.2 where the number of aggregate terms could exceed the number of columns available. This could lead to a memory corruption issue. We recommend upgrading to version 3.50.2 or above.
+</code>
+
+- [mariaecgzv/CVE-2025-6965-](https://github.com/mariaecgzv/CVE-2025-6965-)
 
 ### CVE-2025-6970 (2025-07-09)
 
@@ -2988,6 +3004,8 @@
 - [MrjHaxcore/CVE-2025-34085](https://github.com/MrjHaxcore/CVE-2025-34085)
 - [ill-deed/CVE-2025-34085-Multi-target](https://github.com/ill-deed/CVE-2025-34085-Multi-target)
 - [0xgh057r3c0n/CVE-2025-34085](https://github.com/0xgh057r3c0n/CVE-2025-34085)
+- [yukinime/CVE-2025-34085](https://github.com/yukinime/CVE-2025-34085)
+- [B1ack4sh/Blackash-CVE-2025-34085](https://github.com/B1ack4sh/Blackash-CVE-2025-34085)
 
 ### CVE-2025-36041 (2025-06-15)
 
@@ -3559,7 +3577,7 @@
 - [5kr1pt/Roundcube_CVE-2025-49113](https://github.com/5kr1pt/Roundcube_CVE-2025-49113)
 - [punitdarji/roundcube-cve-2025-49113](https://github.com/punitdarji/roundcube-cve-2025-49113)
 - [issamjr/CVE-2025-49113-Scanner](https://github.com/issamjr/CVE-2025-49113-Scanner)
-- [hackmelocal/HML-CVE-2025-49113-Round-Cube](https://github.com/hackmelocal/HML-CVE-2025-49113-Round-Cube)
+- [hackmelocal/CVE-2025-49113-Simulation](https://github.com/hackmelocal/CVE-2025-49113-Simulation)
 - [Joelp03/CVE-2025-49113](https://github.com/Joelp03/CVE-2025-49113)
 - [00xCanelo/CVE-2025-49113](https://github.com/00xCanelo/CVE-2025-49113)
 
@@ -3580,7 +3598,6 @@
 - [qiaojojo/CVE-2025-49132_poc](https://github.com/qiaojojo/CVE-2025-49132_poc)
 - [63square/CVE-2025-49132](https://github.com/63square/CVE-2025-49132)
 - [melonlonmeo/CVE-2025-49132](https://github.com/melonlonmeo/CVE-2025-49132)
-- [uxieltc/CVE-2025-49132](https://github.com/uxieltc/CVE-2025-49132)
 - [0xtensho/CVE-2025-49132-poc](https://github.com/0xtensho/CVE-2025-49132-poc)
 
 ### CVE-2025-49144 (2025-06-23)
@@ -3594,6 +3611,7 @@
 - [tristanvandermeer/CVE-2025-49144-Test](https://github.com/tristanvandermeer/CVE-2025-49144-Test)
 - [b0ySie7e/Notepad-8.8.1_CVE-2025-49144](https://github.com/b0ySie7e/Notepad-8.8.1_CVE-2025-49144)
 - [timsonner/CVE-2025-49144-Research](https://github.com/timsonner/CVE-2025-49144-Research)
+- [0xCZR1/cve-2025-49144](https://github.com/0xCZR1/cve-2025-49144)
 
 ### CVE-2025-49223 (2025-06-04)
 
@@ -3627,7 +3645,7 @@
 
 ### CVE-2025-49706 (2025-07-08)
 
-<code>Improper authentication in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network.
+<code>Improper authentication in Microsoft Office SharePoint allows an unauthorized attacker to perform spoofing over a network.
 </code>
 
 - [AdityaBhatt3010/CVE-2025-49706-SharePoint-Spoofing-Vulnerability-Under-Active-Exploitation](https://github.com/AdityaBhatt3010/CVE-2025-49706-SharePoint-Spoofing-Vulnerability-Under-Active-Exploitation)
@@ -3649,6 +3667,9 @@
 
 ### CVE-2025-51046
 - [0xMesh-X/CVE-2025-51046](https://github.com/0xMesh-X/CVE-2025-51046)
+
+### CVE-2025-51385
+- [saarcastified/CVE-2023-51385---OpenSSH-ProxyCommand-Injection-PoC](https://github.com/saarcastified/CVE-2023-51385---OpenSSH-ProxyCommand-Injection-PoC)
 
 ### CVE-2025-51396 (2025-07-21)
 
@@ -3692,28 +3713,60 @@
 
 - [Thewhiteevil/CVE-2025-51403](https://github.com/Thewhiteevil/CVE-2025-51403)
 
-### CVE-2025-51858
+### CVE-2025-51858 (2025-07-22)
+
+<code>Self Cross-Site Scripting (XSS) vulnerability in ChatPlayground.ai through 2025-05-24, allows attackers to execute arbitrary code and gain sensitive information via a crafted SVG file contents sent through the chat component.
+</code>
+
 - [Secsys-FDU/CVE-2025-51858](https://github.com/Secsys-FDU/CVE-2025-51858)
 
-### CVE-2025-51859
+### CVE-2025-51859 (2025-07-22)
+
+<code>Stored Cross-Site Scripting (XSS) vulnerability in Chaindesk thru 2025-05-26 in its agent chat component. An attacker can achieve arbitrary client-side script execution by crafting an AI agent whose system prompt instructs the underlying Large Language Model (LLM) to embed malicious script payloads (e.g., SVG-based XSS) into its chat responses. When a user interacts with such a malicious agent or accesses a direct link to a conversation containing an XSS payload, the script executes in the user's browser. Successful exploitation can lead to the theft of sensitive information, such as JWT session tokens, potentially resulting in account hijacking.
+</code>
+
 - [Secsys-FDU/CVE-2025-51859](https://github.com/Secsys-FDU/CVE-2025-51859)
 
-### CVE-2025-51860
+### CVE-2025-51860 (2025-07-22)
+
+<code>Stored Cross-Site Scripting (XSS) in TelegAI (telegai.com) 2025-05-26 in its chat component and character container component. An attacker can achieve arbitrary client-side script execution by crafting an AI Character with SVG XSS payloads in either description, greeting, example dialog, or system prompt(instructing the LLM to embed XSS payload in its chat response). When a user interacts with such a malicious AI Character or just browse its profile, the script executes in the user's browser. Successful exploitation can lead to the theft of sensitive information, such as session tokens, potentially resulting in account hijacking.
+</code>
+
 - [Secsys-FDU/CVE-2025-51860](https://github.com/Secsys-FDU/CVE-2025-51860)
 
-### CVE-2025-51862
+### CVE-2025-51862 (2025-07-22)
+
+<code>Insecure Direct Object Reference (IDOR) vulnerability in TelegAI (telegai.com) thru 2025-05-26 in its chat component. An attacker can exploit this IDOR to tamper other users' conversation. Additionally, malicious contents and XSS payloads can be injected, leading to phishing attack, user spoofing and account hijacking via XSS.
+</code>
+
 - [Secsys-FDU/CVE-2025-51862](https://github.com/Secsys-FDU/CVE-2025-51862)
 
-### CVE-2025-51863
+### CVE-2025-51863 (2025-07-22)
+
+<code>Self Cross Site Scripting (XSS) vulnerability in ChatGPT Unli (ChatGPTUnli.com) thru 2025-05-26 allows attackers to execute arbitrary code via a crafted SVG file to the chat interface.
+</code>
+
 - [Secsys-FDU/CVE-2025-51863](https://github.com/Secsys-FDU/CVE-2025-51863)
 
-### CVE-2025-51864
+### CVE-2025-51864 (2025-07-22)
+
+<code>A reflected cross-site scripting (XSS) vulnerability exists in AIBOX LLM chat (chat.aibox365.cn) through 2025-05-27, allowing attackers to hijack accounts through stolen JWT tokens.
+</code>
+
 - [Secsys-FDU/CVE-2025-51864](https://github.com/Secsys-FDU/CVE-2025-51864)
 
-### CVE-2025-51865
+### CVE-2025-51865 (2025-07-22)
+
+<code>Ai2 playground web service (playground.allenai.org) LLM chat through 2025-06-03 is vulnerable to Insecure Direct Object Reference (IDOR), allowing attackers to gain sensitvie information via enumerating thread keys in the URL.
+</code>
+
 - [Secsys-FDU/CVE-2025-51865](https://github.com/Secsys-FDU/CVE-2025-51865)
 
-### CVE-2025-51867
+### CVE-2025-51867 (2025-07-22)
+
+<code>Insecure Direct Object Reference (IDOR) vulnerability in Deepfiction AI (deepfiction.ai) thru June 3, 2025, allowing attackers to chat with the LLM using other users' credits via sensitive information gained by the /browse/stories endpoint.
+</code>
+
 - [Secsys-FDU/CVE-2025-51867](https://github.com/Secsys-FDU/CVE-2025-51867)
 
 ### CVE-2025-51868 (2025-07-21)
@@ -3802,6 +3855,12 @@
 - [siag-itsec/CVE-2025-53770-Hunting](https://github.com/siag-itsec/CVE-2025-53770-Hunting)
 - [grupooruss/CVE-2025-53770-Checker](https://github.com/grupooruss/CVE-2025-53770-Checker)
 - [tripoloski1337/CVE-2025-53770-scanner](https://github.com/tripoloski1337/CVE-2025-53770-scanner)
+- [AdityaBhatt3010/CVE-2025-53770-SharePoint-Zero-Day-Variant-Exploited-for-Full-RCE](https://github.com/AdityaBhatt3010/CVE-2025-53770-SharePoint-Zero-Day-Variant-Exploited-for-Full-RCE)
+- [GreenForceNetwork/Toolshell_CVE-2025-53770](https://github.com/GreenForceNetwork/Toolshell_CVE-2025-53770)
+- [imbas007/CVE-2025-53770-Vulnerable-Scanner](https://github.com/imbas007/CVE-2025-53770-Vulnerable-Scanner)
+- [Sec-Dan/CVE-2025-53770-Scanner](https://github.com/Sec-Dan/CVE-2025-53770-Scanner)
+- [MuhammadWaseem29/CVE-2025-53770](https://github.com/MuhammadWaseem29/CVE-2025-53770)
+- [bijikutu/CVE-2025-53770-Exploit](https://github.com/bijikutu/CVE-2025-53770-Exploit)
 
 ### CVE-2025-53833 (2025-07-14)
 
@@ -4748,6 +4807,7 @@
 </code>
 
 - [truonghuuphuc/CVE-2024-3552-Poc](https://github.com/truonghuuphuc/CVE-2024-3552-Poc)
+- [KiPhuong/cve-2024-3552](https://github.com/KiPhuong/cve-2024-3552)
 
 ### CVE-2024-3568 (2024-04-10)
 
@@ -5462,7 +5522,6 @@
 - [identity-threat-labs/Article-RegreSSHion-CVE-2024-6387](https://github.com/identity-threat-labs/Article-RegreSSHion-CVE-2024-6387)
 - [anhvutuan/CVE-2024-6387-poc-1](https://github.com/anhvutuan/CVE-2024-6387-poc-1)
 - [YassDEV221608/CVE-2024-6387](https://github.com/YassDEV221608/CVE-2024-6387)
-- [zql-gif/CVE-2024-6387](https://github.com/zql-gif/CVE-2024-6387)
 - [awusan125/test_for6387](https://github.com/awusan125/test_for6387)
 - [YassDEV221608/CVE-2024-6387_PoC](https://github.com/YassDEV221608/CVE-2024-6387_PoC)
 - [AzrDll/CVE-2024-6387](https://github.com/AzrDll/CVE-2024-6387)
@@ -10943,6 +11002,7 @@
 </code>
 
 - [theMcSam/CVE-2024-39930-PoC](https://github.com/theMcSam/CVE-2024-39930-PoC)
+- [alexander47777/-CVE-2024-39930](https://github.com/alexander47777/-CVE-2024-39930)
 
 ### CVE-2024-39943 (2024-07-04)
 
@@ -14776,6 +14836,7 @@
 - [DiMarcoSK/CVE-2023-3460_POC](https://github.com/DiMarcoSK/CVE-2023-3460_POC)
 - [julienbrs/exploit-CVE-2023-3460](https://github.com/julienbrs/exploit-CVE-2023-3460)
 - [TranKuBao/CVE-2023-3460_FIX](https://github.com/TranKuBao/CVE-2023-3460_FIX)
+- [GURJOTEXPERT/CVE-2023-3460](https://github.com/GURJOTEXPERT/CVE-2023-3460)
 
 ### CVE-2023-3519 (2023-07-19)
 
@@ -17603,6 +17664,7 @@
 </code>
 
 - [benjaminhays/CVE-2023-28771-PoC](https://github.com/benjaminhays/CVE-2023-28771-PoC)
+- [JinParkmida/cve-2023-28771-demo](https://github.com/JinParkmida/cve-2023-28771-demo)
 
 ### CVE-2023-28772 (2023-03-23)
 
@@ -19805,7 +19867,6 @@
 - [wxrdnx/CVE-2023-38408](https://github.com/wxrdnx/CVE-2023-38408)
 - [mrtacojr/CVE-2023-38408](https://github.com/mrtacojr/CVE-2023-38408)
 - [fazilbaig1/cve_2023_38408_scanner](https://github.com/fazilbaig1/cve_2023_38408_scanner)
-- [Nick-Morbid/cve-2023-38408](https://github.com/Nick-Morbid/cve-2023-38408)
 - [TX-One/CVE-2023-38408](https://github.com/TX-One/CVE-2023-38408)
 
 ### CVE-2023-38434 (2023-07-18)
@@ -22719,6 +22780,8 @@
 - [Featherw1t/CVE-2023-51385_test](https://github.com/Featherw1t/CVE-2023-51385_test)
 - [GroundCTL2MajorTom/CVE-2023-51385POC](https://github.com/GroundCTL2MajorTom/CVE-2023-51385POC)
 - [GroundCTL2MajorTom/CVE-2023-51385P-POC](https://github.com/GroundCTL2MajorTom/CVE-2023-51385P-POC)
+- [saarcastified/CVE-2023-51385---OpenSSH-ProxyCommand-Injection-PoC](https://github.com/saarcastified/CVE-2023-51385---OpenSSH-ProxyCommand-Injection-PoC)
+- [runooovb/CVE-2023-51385test](https://github.com/runooovb/CVE-2023-51385test)
 
 ### CVE-2023-51409 (2024-04-12)
 
@@ -23401,6 +23464,7 @@
 - [zycoder0day/CVE-2022-1386-Mass_Vulnerability](https://github.com/zycoder0day/CVE-2022-1386-Mass_Vulnerability)
 - [satyasai1460/CVE-2022-1386](https://github.com/satyasai1460/CVE-2022-1386)
 - [cur1y-dev/CVE-2022-1386](https://github.com/cur1y-dev/CVE-2022-1386)
+- [fayassgit/CVE-2022-1386-FusionBuilder-SSRF](https://github.com/fayassgit/CVE-2022-1386-FusionBuilder-SSRF)
 
 ### CVE-2022-1388 (2022-05-05)
 
@@ -25986,6 +26050,13 @@
 
 - [scopion/CVE-2022-26629](https://github.com/scopion/CVE-2022-26629)
 - [sysenter-eip/CVE-2022-26629](https://github.com/sysenter-eip/CVE-2022-26629)
+
+### CVE-2022-26671 (2022-04-07)
+
+<code>Taiwan Secom Dr.ID Access Control system’s login page has a hard-coded credential in the source code. An unauthenticated remote attacker can use the hard-coded credential to acquire partial system information and modify system setting to cause partial disrupt of service.
+</code>
+
+- [DefensiveOrigins/POC-CVE-2022-26671](https://github.com/DefensiveOrigins/POC-CVE-2022-26671)
 
 ### CVE-2022-26717 (2022-11-01)
 
@@ -30665,6 +30736,7 @@
 - [chenaotian/CVE-2021-3156](https://github.com/chenaotian/CVE-2021-3156)
 - [ret2basic/SudoScience](https://github.com/ret2basic/SudoScience)
 - [puckiestyle/CVE-2021-3156](https://github.com/puckiestyle/CVE-2021-3156)
+- [barebackbandit/CVE-2021-3156](https://github.com/barebackbandit/CVE-2021-3156)
 - [RodricBr/CVE-2021-3156](https://github.com/RodricBr/CVE-2021-3156)
 - [ypl6/heaplens](https://github.com/ypl6/heaplens)
 - [q77190858/CVE-2021-3156](https://github.com/q77190858/CVE-2021-3156)
@@ -30686,7 +30758,6 @@
 - [ten-ops/baron-samedit](https://github.com/ten-ops/baron-samedit)
 - [Sornphut/CVE-2021-3156-Heap-Based-Buffer-Overflow-in-Sudo-Baron-Samedit-](https://github.com/Sornphut/CVE-2021-3156-Heap-Based-Buffer-Overflow-in-Sudo-Baron-Samedit-)
 - [shishirpandey18/CVE-2021-3156](https://github.com/shishirpandey18/CVE-2021-3156)
-- [duongdz96/CVE-2021-3156-main](https://github.com/duongdz96/CVE-2021-3156-main)
 - [Shuhaib88/Baron-Samedit-Heap-Buffer-Overflow-CVE-2021-3156](https://github.com/Shuhaib88/Baron-Samedit-Heap-Buffer-Overflow-CVE-2021-3156)
 - [Superliverbun/cve-2021-3156-](https://github.com/Superliverbun/cve-2021-3156-)
 - [TopskiyPavelQwertyGang/Review.CVE-2021-3156](https://github.com/TopskiyPavelQwertyGang/Review.CVE-2021-3156)
@@ -46500,6 +46571,7 @@
 </code>
 
 - [mgargiullo/cve-2018-1207](https://github.com/mgargiullo/cve-2018-1207)
+- [SYNKTeam/CVE-2018-1207](https://github.com/SYNKTeam/CVE-2018-1207)
 
 ### CVE-2018-1235 (2018-05-29)
 
