@@ -165,6 +165,7 @@
 </code>
 
 - [EQSTLab/CVE-2025-1302](https://github.com/EQSTLab/CVE-2025-1302)
+- [abrewer251/CVE-2025-1302_jsonpath-plus_RCE](https://github.com/abrewer251/CVE-2025-1302_jsonpath-plus_RCE)
 
 ### CVE-2025-1304 (2025-05-01)
 
@@ -727,10 +728,18 @@
 ### CVE-2025-4688
 - [sahici/CVE-2025-4688](https://github.com/sahici/CVE-2025-4688)
 
-### CVE-2025-4784
+### CVE-2025-4784 (2025-07-24)
+
+<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Moderec Tourtella allows SQL Injection.This issue affects Tourtella: before 26.05.2025.
+</code>
+
 - [sahici/CVE-2025-4784](https://github.com/sahici/CVE-2025-4784)
 
-### CVE-2025-4822
+### CVE-2025-4822 (2025-07-24)
+
+<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Bayraktar Solar Energies ScadaWatt Otopilot allows SQL Injection.This issue affects ScadaWatt Otopilot: before 27.05.2025.
+</code>
+
 - [sahici/CVE-2025-4822](https://github.com/sahici/CVE-2025-4822)
 
 ### CVE-2025-4866 (2025-05-18)
@@ -861,6 +870,7 @@
 - [cyberleelawat/ExploitVeer](https://github.com/cyberleelawat/ExploitVeer)
 - [B1ack4sh/Blackash-CVE-2025-5777](https://github.com/B1ack4sh/Blackash-CVE-2025-5777)
 - [Shivshantp/CVE-2025-5777-TrendMicro-ApexCentral-RCE](https://github.com/Shivshantp/CVE-2025-5777-TrendMicro-ApexCentral-RCE)
+- [rob0tstxt/POC-CVE-2025-5777](https://github.com/rob0tstxt/POC-CVE-2025-5777)
 
 ### CVE-2025-5815 (2025-06-13)
 
@@ -898,6 +908,7 @@
 
 - [iamgithubber/CVE-2025-6018-19-exploit](https://github.com/iamgithubber/CVE-2025-6018-19-exploit)
 - [dreysanox/CVE-2025-6018_Poc](https://github.com/dreysanox/CVE-2025-6018_Poc)
+- [ibrahmsql/CVE-2025-6018](https://github.com/ibrahmsql/CVE-2025-6018)
 
 ### CVE-2025-6019 (2025-06-19)
 
@@ -2723,6 +2734,14 @@
 
 - [iSee857/CVE-2025-31486-PoC](https://github.com/iSee857/CVE-2025-31486-PoC)
 - [Ly4j/CVE-2025-31486](https://github.com/Ly4j/CVE-2025-31486)
+- [hackmelocal/CVE-2025-31486-Simulation](https://github.com/hackmelocal/CVE-2025-31486-Simulation)
+
+### CVE-2025-31511 (2025-07-22)
+
+<code>An issue was discovered in AlertEnterprise Guardian 4.1.14.2.2.1. One can bypass manager approval by changing the user ID in a Request%20Building%20Access requestSubmit API call.
+</code>
+
+- [pand0rausa/CVE-2025-31511_to_31513.md](https://github.com/pand0rausa/CVE-2025-31511_to_31513.md)
 
 ### CVE-2025-31644 (2025-05-07)
 
@@ -3923,7 +3942,8 @@
 - [exfil0/CVE-2025-53770](https://github.com/exfil0/CVE-2025-53770)
 - [zach115th/ToolShellFinder](https://github.com/zach115th/ToolShellFinder)
 - [nisargsuthar/suricata-rule-CVE-2025-53770](https://github.com/nisargsuthar/suricata-rule-CVE-2025-53770)
-- [JustinnT/cve-2025-53770-](https://github.com/JustinnT/cve-2025-53770-)
+- [bharath-cyber-root/sharepoint-toolshell-cve-2025-53770](https://github.com/bharath-cyber-root/sharepoint-toolshell-cve-2025-53770)
+- [Rabbitbong/OurSharePoint-CVE-2025-53770](https://github.com/Rabbitbong/OurSharePoint-CVE-2025-53770)
 
 ### CVE-2025-53833 (2025-07-14)
 
@@ -6876,6 +6896,13 @@
 - [themirze/cve-2024-12084](https://github.com/themirze/cve-2024-12084)
 - [rxerium/CVE-2024-12084](https://github.com/rxerium/CVE-2024-12084)
 
+### CVE-2024-12085 (2025-01-14)
+
+<code>A flaw was found in rsync which could be triggered when rsync compares file checksums. This flaw allows an attacker to manipulate the checksum length (s2length) to cause a comparison between a checksum and uninitialized memory and leak one byte of uninitialized stack data at a time.
+</code>
+
+- [Otsutez/cve-2024-12085](https://github.com/Otsutez/cve-2024-12085)
+
 ### CVE-2024-12157 (2025-01-07)
 
 <code>The Popup – MailChimp, GetResponse and ActiveCampaign Intergrations plugin for WordPress is vulnerable to SQL Injection via the 'id' parameter of the 'upc_delete_db_record' AJAX action in all versions up to, and including, 3.2.6 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.
@@ -7892,6 +7919,7 @@
 - [MAWK0235/CVE-2024-23346](https://github.com/MAWK0235/CVE-2024-23346)
 - [Sanity-Archive/CVE-2024-23346](https://github.com/Sanity-Archive/CVE-2024-23346)
 - [szyth/CVE-2024-23346-rust-exploit](https://github.com/szyth/CVE-2024-23346-rust-exploit)
+- [DAVIDAROCA27/CVE-2024-23346-exploit](https://github.com/DAVIDAROCA27/CVE-2024-23346-exploit)
 
 ### CVE-2024-23443 (2024-06-19)
 
@@ -8089,7 +8117,6 @@
 - [viszsec/CVE-2024-23897](https://github.com/viszsec/CVE-2024-23897)
 - [jopraveen/CVE-2024-23897](https://github.com/jopraveen/CVE-2024-23897)
 - [AbraXa5/Jenkins-CVE-2024-23897](https://github.com/AbraXa5/Jenkins-CVE-2024-23897)
-- [brijne/CVE-2024-23897-RCE](https://github.com/brijne/CVE-2024-23897-RCE)
 - [WLXQqwer/Jenkins-CVE-2024-23897-](https://github.com/WLXQqwer/Jenkins-CVE-2024-23897-)
 - [kaanatmacaa/CVE-2024-23897](https://github.com/kaanatmacaa/CVE-2024-23897)
 - [Praison001/CVE-2024-23897-Jenkins-Arbitrary-Read-File-Vulnerability](https://github.com/Praison001/CVE-2024-23897-Jenkins-Arbitrary-Read-File-Vulnerability)
@@ -8112,6 +8139,7 @@
 - [slytechroot/CVE-2024-23897](https://github.com/slytechroot/CVE-2024-23897)
 - [brandonhjh/Jenkins-CVE-2024-23897-Exploit-Demo](https://github.com/brandonhjh/Jenkins-CVE-2024-23897-Exploit-Demo)
 - [tvasari/CVE-2024-23897](https://github.com/tvasari/CVE-2024-23897)
+- [Fineken/Jenkins-CVE-2024-23897-Lab](https://github.com/Fineken/Jenkins-CVE-2024-23897-Lab)
 
 ### CVE-2024-23898 (2024-01-24)
 
@@ -11251,6 +11279,13 @@
 </code>
 
 - [Jansen-C-Moreira/CVE-2024-40512](https://github.com/Jansen-C-Moreira/CVE-2024-40512)
+
+### CVE-2024-40586 (2025-02-11)
+
+<code>An Improper Access Control vulnerability [CWE-284] in FortiClient Windows version 7.4.0, version 7.2.6 and below, version 7.0.13 and below may allow a local user to escalate his privileges via FortiSSLVPNd service pipe.
+</code>
+
+- [Hagrid29/CVE-2024-40586-Windows-Coerced-Authentication-in-FortiClient](https://github.com/Hagrid29/CVE-2024-40586-Windows-Coerced-Authentication-in-FortiClient)
 
 ### CVE-2024-40617 (2024-07-17)
 
@@ -29730,6 +29765,7 @@
 - [69camau/sw1tch](https://github.com/69camau/sw1tch)
 - [Code2Crusader/46689](https://github.com/Code2Crusader/46689)
 - [daviszhto/overwrite](https://github.com/daviszhto/overwrite)
+- [LumberjackStorys/CVE](https://github.com/LumberjackStorys/CVE)
 
 ### CVE-2022-46718 (2023-06-23)
 
@@ -30502,6 +30538,7 @@
 - [whoami-chmod777/CVE-2021-1675---PrintNightmare-LPE-PowerShell-](https://github.com/whoami-chmod777/CVE-2021-1675---PrintNightmare-LPE-PowerShell-)
 - [0xSs0rZ/Windows_Exploit](https://github.com/0xSs0rZ/Windows_Exploit)
 - [Sp4ceDogy/NPE-CS-V-CVE-2021-1675](https://github.com/Sp4ceDogy/NPE-CS-V-CVE-2021-1675)
+- [CameraShutterBug/PrintNightmare](https://github.com/CameraShutterBug/PrintNightmare)
 
 ### CVE-2021-1678 (2021-01-12)
 
@@ -31167,7 +31204,6 @@
 - [glowbase/PwnKit-CVE-2021-4034](https://github.com/glowbase/PwnKit-CVE-2021-4034)
 - [codiobert/pwnkit-scanner](https://github.com/codiobert/pwnkit-scanner)
 - [v-rzh/CVE-2021-4034](https://github.com/v-rzh/CVE-2021-4034)
-- [TW-D/PwnKit-Vulnerability_CVE-2021-4034](https://github.com/TW-D/PwnKit-Vulnerability_CVE-2021-4034)
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
 - [milot/dissecting-pkexec-cve-2021-4034](https://github.com/milot/dissecting-pkexec-cve-2021-4034)
 - [Almorabea/pkexec-exploit](https://github.com/Almorabea/pkexec-exploit)
@@ -44432,7 +44468,7 @@
 
 ### CVE-2019-11687 (2019-05-02)
 
-<code>An issue was discovered in the DICOM Part 10 File Format in the NEMA DICOM Standard 1995 through 2019b. The preamble of a DICOM file that complies with this specification can contain the header for an executable file, such as Portable Executable (PE) malware. This space is left unspecified so that dual-purpose files can be created. (For example, dual-purpose TIFF/DICOM files are used in digital whole slide imaging for applications in medicine.) To exploit this vulnerability, someone must execute a maliciously crafted file that is encoded in the DICOM Part 10 File Format. PE/DICOM files are executable even with the .dcm file extension. Anti-malware configurations at healthcare facilities often ignore medical imagery. Also, anti-malware tools and business processes could violate regulatory frameworks (such as HIPAA) when processing suspicious DICOM files.
+<code>An issue was discovered in the DICOM Part 10 File Format in the NEMA DICOM Standard 1995 through 2019b and continuing in current implementations. The 128-byte preamble of a DICOM file that complies with this specification can contain arbitrary executable headers for multiple operating systems, including Portable Executable (PE) files for Windows and Executable and Linkable Format (ELF) files for Linux-based systems. This space is left unspecified so that dual-purpose files can be created. For example, dual-purpose TIFF/DICOM files are used in digital whole slide imaging applications in medicine. This design flaw enables system-wide compromise as malicious DICOM files are routinely shared between medical devices and hospital systems and transported via removable media for patient care coordination. To exploit this vulnerability, someone must execute the maliciously crafted file. These files can be executable even with the .dcm file extension. Anti-malware configurations at healthcare facilities often ignore medical imagery. DICOM files exist on systems that process protected health information, and successful exploitation could result in violations of regulatory compliance requirements such as HIPAA and FDA postmarket obligations.
 </code>
 
 - [kosmokato/bad-dicom](https://github.com/kosmokato/bad-dicom)
