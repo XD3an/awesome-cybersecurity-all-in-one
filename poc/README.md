@@ -223,6 +223,7 @@
 
 - [gbrsh/CVE-2025-1661](https://github.com/gbrsh/CVE-2025-1661)
 - [MuhammadWaseem29/CVE-2025-1661](https://github.com/MuhammadWaseem29/CVE-2025-1661)
+- [shahwarshah/CVE-2025-1661](https://github.com/shahwarshah/CVE-2025-1661)
 
 ### CVE-2025-1716 (2025-02-26)
 
@@ -1038,13 +1039,6 @@
 - [Nxploited/CVE-2025-6934](https://github.com/Nxploited/CVE-2025-6934)
 - [MrjHaxcore/CVE-2025-6934](https://github.com/MrjHaxcore/CVE-2025-6934)
 
-### CVE-2025-6965 (2025-07-15)
-
-<code>There exists a vulnerability in SQLite versions before 3.50.2 where the number of aggregate terms could exceed the number of columns available. This could lead to a memory corruption issue. We recommend upgrading to version 3.50.2 or above.
-</code>
-
-- [mariaecgzv/CVE-2025-6965-](https://github.com/mariaecgzv/CVE-2025-6965-)
-
 ### CVE-2025-6970 (2025-07-09)
 
 <code>The Events Manager – Calendar, Bookings, Tickets, and more! plugin for WordPress is vulnerable to time-based SQL Injection via the ‘orderby’ parameter in all versions up to, and including, 7.0.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.
@@ -1436,6 +1430,7 @@
 - [huseyinstif/CVE-2025-24016-Nuclei-Template](https://github.com/huseyinstif/CVE-2025-24016-Nuclei-Template)
 - [0xjessie21/CVE-2025-24016](https://github.com/0xjessie21/CVE-2025-24016)
 - [MuhammadWaseem29/CVE-2025-24016](https://github.com/MuhammadWaseem29/CVE-2025-24016)
+- [GloStarRx1/CVE-2025-24016](https://github.com/GloStarRx1/CVE-2025-24016)
 - [celsius026/poc_CVE-2025-24016](https://github.com/celsius026/poc_CVE-2025-24016)
 - [cybersecplayground/CVE-2025-24016-Wazuh-Remote-Code-Execution-RCE-PoC](https://github.com/cybersecplayground/CVE-2025-24016-Wazuh-Remote-Code-Execution-RCE-PoC)
 - [rxerium/CVE-2025-24016](https://github.com/rxerium/CVE-2025-24016)
@@ -1595,6 +1590,7 @@
 </code>
 
 - [MuhammadWaseem29/CVE-2025-24799](https://github.com/MuhammadWaseem29/CVE-2025-24799)
+- [nak000/CVE-2025-24799-sqli](https://github.com/nak000/CVE-2025-24799-sqli)
 - [MatheuZSecurity/Exploit-CVE-2025-24799](https://github.com/MatheuZSecurity/Exploit-CVE-2025-24799)
 - [galletitaconpate/CVE-2025-24799](https://github.com/galletitaconpate/CVE-2025-24799)
 
@@ -1631,7 +1627,7 @@
 - [manjula-aw/CVE-2025-24813](https://github.com/manjula-aw/CVE-2025-24813)
 - [B1gN0Se/Tomcat-CVE-2025-24813](https://github.com/B1gN0Se/Tomcat-CVE-2025-24813)
 - [AsaL1n/CVE-2025-24813](https://github.com/AsaL1n/CVE-2025-24813)
-- [MuhammadWaseem29/CVE-2025-24813](https://github.com/MuhammadWaseem29/CVE-2025-24813)
+- [uzairhaider502/CVE-2025-24813](https://github.com/uzairhaider502/CVE-2025-24813)
 - [La3B0z/CVE-2025-24813-POC](https://github.com/La3B0z/CVE-2025-24813-POC)
 - [Heimd411/CVE-2025-24813-noPoC](https://github.com/Heimd411/CVE-2025-24813-noPoC)
 - [horsehacks/CVE-2025-24813-checker](https://github.com/horsehacks/CVE-2025-24813-checker)
@@ -2331,7 +2327,11 @@
 
 - [harish0x/CVE-2025-29602](https://github.com/harish0x/CVE-2025-29602)
 
-### CVE-2025-29628
+### CVE-2025-29628 (2025-07-25)
+
+<code>An issue in Gardyn 4 allows a remote attacker to obtain sensitive information and execute arbitrary code via a request
+</code>
+
 - [mselbrede/gardyn](https://github.com/mselbrede/gardyn)
 
 ### CVE-2025-29632 (2025-05-29)
@@ -2437,7 +2437,6 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [AventurineJun/CVE-2025-29927-Research](https://github.com/AventurineJun/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -2447,6 +2446,7 @@
 - [dante01yoon/CVE-2025-29927](https://github.com/dante01yoon/CVE-2025-29927)
 - [ayato-shitomi/WebLab_CVE-2025-29927](https://github.com/ayato-shitomi/WebLab_CVE-2025-29927)
 - [Kamal-418/Vulnerable-Lab-NextJS-CVE-2025-29927](https://github.com/Kamal-418/Vulnerable-Lab-NextJS-CVE-2025-29927)
+- [dedibagus/cve-2025-29927-poc](https://github.com/dedibagus/cve-2025-29927-poc)
 - [alastair66/CVE-2025-29927](https://github.com/alastair66/CVE-2025-29927)
 - [BilalGns/CVE-2025-29927](https://github.com/BilalGns/CVE-2025-29927)
 - [nyctophile0969/CVE-2025-29927](https://github.com/nyctophile0969/CVE-2025-29927)
@@ -2476,7 +2476,7 @@
 - [hed1ad/CVE-2025-29927](https://github.com/hed1ad/CVE-2025-29927)
 - [HoumanPashaei/CVE-2025-29927](https://github.com/HoumanPashaei/CVE-2025-29927)
 - [rubbxalc/CVE-2025-29927](https://github.com/rubbxalc/CVE-2025-29927)
-- [olimpiofreitas/CVE-2025-29927_scanner](https://github.com/olimpiofreitas/CVE-2025-29927_scanner)
+- [olimpiofreitas/CVE-2025-29927-scanner](https://github.com/olimpiofreitas/CVE-2025-29927-scanner)
 - [moften/CVE-2025-29927](https://github.com/moften/CVE-2025-29927)
 - [EarthAngel666/x-middleware-exploit](https://github.com/EarthAngel666/x-middleware-exploit)
 - [enochgitgamefied/NextJS-CVE-2025-29927-Docker-Lab](https://github.com/enochgitgamefied/NextJS-CVE-2025-29927-Docker-Lab)
@@ -2645,6 +2645,8 @@
 </code>
 
 - [sunhuiHi666/CVE-2025-31125](https://github.com/sunhuiHi666/CVE-2025-31125)
+- [MuhammadWaseem29/Vitejs-exploit](https://github.com/MuhammadWaseem29/Vitejs-exploit)
+- [nak000/Vitejs-exploit-CVE-2025-31125-rce](https://github.com/nak000/Vitejs-exploit-CVE-2025-31125-rce)
 - [0xgh057r3c0n/CVE-2025-31125](https://github.com/0xgh057r3c0n/CVE-2025-31125)
 - [harshgupptaa/Path-Transversal-CVE-2025-31125-](https://github.com/harshgupptaa/Path-Transversal-CVE-2025-31125-)
 
@@ -2661,6 +2663,7 @@
 </code>
 
 - [MuhammadWaseem29/CVE-2025-31131](https://github.com/MuhammadWaseem29/CVE-2025-31131)
+- [nak000/CVE-2025-31131-RCE](https://github.com/nak000/CVE-2025-31131-RCE)
 - [B1ack4sh/Blackash-CVE-2025-31131](https://github.com/B1ack4sh/Blackash-CVE-2025-31131)
 
 ### CVE-2025-31137 (2025-04-01)
@@ -2849,6 +2852,13 @@
 </code>
 
 - [diegovargasj/CVE-2025-32407](https://github.com/diegovargasj/CVE-2025-32407)
+
+### CVE-2025-32429 (2025-07-24)
+
+<code>XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. In versions 9.4-rc-1 through 16.10.5 and 17.0.0-rc-1 through 17.2.2, it's possible for anyone to inject SQL using the parameter sort of the getdeleteddocuments.vm. It's injected as is as an ORDER BY value. This is fixed in versions 16.10.6 and 17.3.0-rc-1.
+</code>
+
+- [byteReaper77/CVE-2025-32429](https://github.com/byteReaper77/CVE-2025-32429)
 
 ### CVE-2025-32432 (2025-04-25)
 
@@ -3225,7 +3235,11 @@
 ### CVE-2025-44603
 - [Moulish2004/CVE-2025-44603-CSRF-Leads_to_Create_FakeUsers](https://github.com/Moulish2004/CVE-2025-44603-CSRF-Leads_to_Create_FakeUsers)
 
-### CVE-2025-44608
+### CVE-2025-44608 (2025-07-25)
+
+<code>CloudClassroom-PHP Project v1.0 was discovered to contain a SQL injection vulnerability via the viewid parameter.
+</code>
+
 - [mr-xmen786/CVE-2025-44608](https://github.com/mr-xmen786/CVE-2025-44608)
 
 ### CVE-2025-44998 (2025-05-23)
@@ -3246,10 +3260,18 @@
 ### CVE-2025-45407
 - [yallasec/CVE-2025-45407](https://github.com/yallasec/CVE-2025-45407)
 
-### CVE-2025-45466
+### CVE-2025-45466 (2025-07-25)
+
+<code>Unitree Go1 &lt;= Go1_2022_05_11 is vulnerale to Incorrect Access Control due to authentication credentials being hardcoded in plaintext.
+</code>
+
 - [zgsnj123/CVE-2025-45466](https://github.com/zgsnj123/CVE-2025-45466)
 
-### CVE-2025-45467
+### CVE-2025-45467 (2025-07-25)
+
+<code>Unitree Go1 &lt;= Go1_2022_05_11 is vulnerable to Insecure Permissions as the firmware update functionality (via Wi-Fi/Ethernet) implements an insecure verification mechanism that solely relies on MD5 checksums for firmware integrity validation.
+</code>
+
 - [zgsnj123/CVE-2025-45467](https://github.com/zgsnj123/CVE-2025-45467)
 
 ### CVE-2025-45512
@@ -3270,7 +3292,11 @@
 ### CVE-2025-45781
 - [ahmetumitbayram/CVE-2025-45781-Kemal-Framework-Path-Traversal-Vulnerability-PoC](https://github.com/ahmetumitbayram/CVE-2025-45781-Kemal-Framework-Path-Traversal-Vulnerability-PoC)
 
-### CVE-2025-45960
+### CVE-2025-45960 (2025-07-25)
+
+<code>Cross Site Scripting vulnerability in tawk.to Live Chat v.1.6.1 allows a remote attacker to execute arbitrary code via the web application stores and displays user-supplied input without proper input validation or encoding
+</code>
+
 - [pracharapol/CVE-2025-45960](https://github.com/pracharapol/CVE-2025-45960)
 
 ### CVE-2025-46041 (2025-06-09)
@@ -3689,7 +3715,6 @@
 <code>Akamai CloudTest before 60 2025.06.02 (12988) allows file inclusion via XML External Entity (XXE) injection.
 </code>
 
-- [MuhammadWaseem29/CVE-2025-49493-Poc](https://github.com/MuhammadWaseem29/CVE-2025-49493-Poc)
 - [B1ack4sh/Blackash-CVE-2025-49493](https://github.com/B1ack4sh/Blackash-CVE-2025-49493)
 - [SystemVll/CVE-2025-49493](https://github.com/SystemVll/CVE-2025-49493)
 
@@ -3787,7 +3812,11 @@
 
 - [Thewhiteevil/CVE-2025-51403](https://github.com/Thewhiteevil/CVE-2025-51403)
 
-### CVE-2025-51411
+### CVE-2025-51411 (2025-07-25)
+
+<code>A reflected cross-site scripting (XSS) vulnerability exists in Institute-of-Current-Students v1.0 via the email parameter in the /postquerypublic endpoint. The application fails to properly sanitize user input before reflecting it in the HTML response. This allows unauthenticated attackers to inject and execute arbitrary JavaScript code in the context of the victim's browser by tricking them into visiting a crafted URL or submitting a malicious form. Successful exploitation may lead to session hijacking, credential theft, or other client-side attacks.
+</code>
+
 - [tansique-17/CVE-2025-51411](https://github.com/tansique-17/CVE-2025-51411)
 
 ### CVE-2025-51858 (2025-07-22)
@@ -3873,6 +3902,9 @@
 
 - [wrathfulDiety/CVE-2025-52357](https://github.com/wrathfulDiety/CVE-2025-52357)
 
+### CVE-2025-52399
+- [gmh5225/CVE-2025-52399-SQLi-Institute-of-Current-Students](https://github.com/gmh5225/CVE-2025-52399-SQLi-Institute-of-Current-Students)
+
 ### CVE-2025-52488 (2025-06-21)
 
 <code>DNN (formerly DotNetNuke) is an open-source web content management platform (CMS) in the Microsoft ecosystem. In versions 6.0.0 to before 10.0.1, DNN.PLATFORM allows a specially crafted series of malicious interaction to potentially expose NTLM hashes to a third party SMB server. This issue has been patched in version 10.0.1.
@@ -3893,6 +3925,9 @@
 </code>
 
 - [UltimateHG/CVE-2025-52689-PoC](https://github.com/UltimateHG/CVE-2025-52689-PoC)
+
+### CVE-2025-52914
+- [rxerium/CVE-2025-52914](https://github.com/rxerium/CVE-2025-52914)
 
 ### CVE-2025-53367 (2025-07-03)
 
@@ -3915,6 +3950,13 @@
 
 - [rafaelcorvino1/CVE-2025-53640](https://github.com/rafaelcorvino1/CVE-2025-53640)
 
+### CVE-2025-53652 (2025-07-09)
+
+<code>Jenkins Git Parameter Plugin 439.vb_0e46ca_14534 and earlier does not validate that the Git parameter value submitted to the build matches one of the offered choices, allowing attackers with Item/Build permission to inject arbitrary values into Git parameters.
+</code>
+
+- [pl4tyz/CVE-2025-53652-Jenkins-Git-Parameter-Analysis](https://github.com/pl4tyz/CVE-2025-53652-Jenkins-Git-Parameter-Analysis)
+
 ### CVE-2025-53770 (2025-07-20)
 
 <code>Deserialization of untrusted data in on-premises Microsoft SharePoint Server allows an unauthorized attacker to execute code over a network.\nMicrosoft is aware that an exploit for CVE-2025-53770 exists in the wild.\nMicrosoft is preparing and fully testing a comprehensive update to address this vulnerability.  In the meantime, please make sure that the mitigation provided in this CVE documentation is in place so that you are protected from exploitation.
@@ -3935,20 +3977,19 @@
 - [AdityaBhatt3010/CVE-2025-53770-SharePoint-Zero-Day-Variant-Exploited-for-Full-RCE](https://github.com/AdityaBhatt3010/CVE-2025-53770-SharePoint-Zero-Day-Variant-Exploited-for-Full-RCE)
 - [b33b0y/CVE-2025-53770](https://github.com/b33b0y/CVE-2025-53770)
 - [GreenForceNetwork/Toolshell_CVE-2025-53770](https://github.com/GreenForceNetwork/Toolshell_CVE-2025-53770)
+- [a-hydrae/ToolShell-Honeypot](https://github.com/a-hydrae/ToolShell-Honeypot)
 - [imbas007/CVE-2025-53770-Vulnerable-Scanner](https://github.com/imbas007/CVE-2025-53770-Vulnerable-Scanner)
 - [Sec-Dan/CVE-2025-53770-Scanner](https://github.com/Sec-Dan/CVE-2025-53770-Scanner)
 - [MuhammadWaseem29/CVE-2025-53770](https://github.com/MuhammadWaseem29/CVE-2025-53770)
-- [bijikutu/CVE-2025-53770-Exploit](https://github.com/bijikutu/CVE-2025-53770-Exploit)
-- [Lapesha/CVE-2025-53770](https://github.com/Lapesha/CVE-2025-53770)
-- [Hassanopop/CVE-2025-53770](https://github.com/Hassanopop/CVE-2025-53770)
-- [m4r1x/CVE-2025-53770-Scanner](https://github.com/m4r1x/CVE-2025-53770-Scanner)
-- [Kamal-Hegazi/CVE-2025-53770-SharePoint-RCE](https://github.com/Kamal-Hegazi/CVE-2025-53770-SharePoint-RCE)
+- [0xray5c68616e37/cve-2025-53770](https://github.com/0xray5c68616e37/cve-2025-53770)
 - [exfil0/CVE-2025-53770](https://github.com/exfil0/CVE-2025-53770)
 - [zach115th/ToolShellFinder](https://github.com/zach115th/ToolShellFinder)
 - [nisargsuthar/suricata-rule-CVE-2025-53770](https://github.com/nisargsuthar/suricata-rule-CVE-2025-53770)
 - [bharath-cyber-root/sharepoint-toolshell-cve-2025-53770](https://github.com/bharath-cyber-root/sharepoint-toolshell-cve-2025-53770)
 - [Rabbitbong/OurSharePoint-CVE-2025-53770](https://github.com/Rabbitbong/OurSharePoint-CVE-2025-53770)
 - [Udyz/CVE-2025-53770-Exploit](https://github.com/Udyz/CVE-2025-53770-Exploit)
+- [Kamal-Hegazi/CVE-2025-53770-SharePoint-RCE](https://github.com/Kamal-Hegazi/CVE-2025-53770-SharePoint-RCE)
+- [BirdsAreFlyingCameras/CVE-2025-53770_Raw-HTTP-Request-Generator](https://github.com/BirdsAreFlyingCameras/CVE-2025-53770_Raw-HTTP-Request-Generator)
 
 ### CVE-2025-53833 (2025-07-14)
 
@@ -3963,6 +4004,9 @@
 </code>
 
 - [tigr78/CVE-2025-53964](https://github.com/tigr78/CVE-2025-53964)
+
+### CVE-2025-54554
+- [Aman-Parmar/CVE-2025-54554](https://github.com/Aman-Parmar/CVE-2025-54554)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -4089,7 +4133,6 @@
 
 - [Cappricio-Securities/CVE-2024-0195](https://github.com/Cappricio-Securities/CVE-2024-0195)
 - [gh-ost00/CVE-2024-0195-SpiderFlow](https://github.com/gh-ost00/CVE-2024-0195-SpiderFlow)
-- [MuhammadWaseem29/CVE-2024-0195-SpiderFlow](https://github.com/MuhammadWaseem29/CVE-2024-0195-SpiderFlow)
 - [hack-with-rohit/CVE-2024-0195-SpiderFlow](https://github.com/hack-with-rohit/CVE-2024-0195-SpiderFlow)
 
 ### CVE-2024-0197 (2024-02-27)
@@ -5252,7 +5295,6 @@
 </code>
 
 - [bjrjk/CVE-2024-4947](https://github.com/bjrjk/CVE-2024-4947)
-- [DiabloX90911/CVE-2024-4947](https://github.com/DiabloX90911/CVE-2024-4947)
 
 ### CVE-2024-4956 (2024-05-16)
 
@@ -5882,7 +5924,7 @@
 - [bigb0x/CVE-2024-7954](https://github.com/bigb0x/CVE-2024-7954)
 - [gh-ost00/CVE-2024-7954-RCE](https://github.com/gh-ost00/CVE-2024-7954-RCE)
 - [TheCyberguy-17/RCE_CVE-2024-7954](https://github.com/TheCyberguy-17/RCE_CVE-2024-7954)
-- [MuhammadWaseem29/RCE-CVE-2024-7954](https://github.com/MuhammadWaseem29/RCE-CVE-2024-7954)
+- [nak000/RCE-CVE-2024-7954](https://github.com/nak000/RCE-CVE-2024-7954)
 - [issamjr/CVE-2024-7954](https://github.com/issamjr/CVE-2024-7954)
 - [zxj-hub/CVE-2024-7954POC](https://github.com/zxj-hub/CVE-2024-7954POC)
 - [0dayan0n/RCE_CVE-2024-7954-](https://github.com/0dayan0n/RCE_CVE-2024-7954-)
@@ -8937,8 +8979,8 @@
 <code>pictureproxy.php in the dirk1983 mm1.ltd source code f9f4bbc allows SSRF via the url parameter. NOTE: the references section has an archived copy of pictureproxy.php from its original GitHub location, but the repository name might later change because it is misleading.
 </code>
 
-- [MuhammadWaseem29/SSRF-Exploit-CVE-2024-27564](https://github.com/MuhammadWaseem29/SSRF-Exploit-CVE-2024-27564)
 - [Quantum-Hacker/CVE-2024-27564](https://github.com/Quantum-Hacker/CVE-2024-27564)
+- [chaudhrymuhammadtayab/SSRF-Exploit-CVE-2024-27564](https://github.com/chaudhrymuhammadtayab/SSRF-Exploit-CVE-2024-27564)
 
 ### CVE-2024-27619 (2024-03-29)
 
@@ -10780,6 +10822,13 @@
 </code>
 
 - [pwndorei/CVE-2024-38080](https://github.com/pwndorei/CVE-2024-38080)
+
+### CVE-2024-38112 (2024-07-09)
+
+<code>Windows MSHTML Platform Spoofing Vulnerability
+</code>
+
+- [BunBunCodes/CPSC253Project](https://github.com/BunBunCodes/CPSC253Project)
 
 ### CVE-2024-38124 (2024-10-08)
 
@@ -17494,6 +17543,7 @@
 - [redboltsec/CVE-2023-27372-PoC](https://github.com/redboltsec/CVE-2023-27372-PoC)
 - [1amthebest1/CVE-2023-27372](https://github.com/1amthebest1/CVE-2023-27372)
 - [1Ronkkeli/spip-cve-2023-27372-rce](https://github.com/1Ronkkeli/spip-cve-2023-27372-rce)
+- [G01d3nW01f/cve-2023-27372](https://github.com/G01d3nW01f/cve-2023-27372)
 
 ### CVE-2023-27470 (2023-09-11)
 
@@ -28483,7 +28533,6 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [AventurineJun/CVE-2022-39299-Research](https://github.com/AventurineJun/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -28834,7 +28883,6 @@
 - [segfault-it/cve-2022-41352](https://github.com/segfault-it/cve-2022-41352)
 - [Cr4ckC4t/cve-2022-41352-zimbra-rce](https://github.com/Cr4ckC4t/cve-2022-41352-zimbra-rce)
 - [qailanet/cve-2022-41352-zimbra-rce](https://github.com/qailanet/cve-2022-41352-zimbra-rce)
-- [MuhammadWaseem29/cve-2022-41352](https://github.com/MuhammadWaseem29/cve-2022-41352)
 
 ### CVE-2022-41358 (2022-10-20)
 
@@ -55559,6 +55607,7 @@
 - [YunchoHang/CVE-2014-6271-SHELLSHOCK](https://github.com/YunchoHang/CVE-2014-6271-SHELLSHOCK)
 - [moften/CVE-2014-6271](https://github.com/moften/CVE-2014-6271)
 - [knightc0de/Shellshock_vuln_Exploit](https://github.com/knightc0de/Shellshock_vuln_Exploit)
+- [rsherstnev/CVE-2014-6271](https://github.com/rsherstnev/CVE-2014-6271)
 
 ### CVE-2014-6287 (2014-10-07)
 
