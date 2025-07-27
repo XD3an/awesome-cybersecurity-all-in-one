@@ -993,7 +993,7 @@
 <code>Insufficient validation of untrusted input in ANGLE and GPU in Google Chrome prior to 138.0.7204.157 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)
 </code>
 
-- [allinsthon/CVE-2025-6558-exp](https://github.com/allinsthon/CVE-2025-6558-exp)
+- [gmh5225/CVE-2025-6558-exp](https://github.com/gmh5225/CVE-2025-6558-exp)
 - [DevBuiHieu/CVE-2025-6558-Proof-Of-Concept](https://github.com/DevBuiHieu/CVE-2025-6558-Proof-Of-Concept)
 
 ### CVE-2025-6586 (2025-07-04)
@@ -1116,6 +1116,9 @@
 
 - [drackyjr/CVE-2025-8018](https://github.com/drackyjr/CVE-2025-8018)
 
+### CVE-2025-8220
+- [m3m0o/engeman-web-languagecombobox-sqli](https://github.com/m3m0o/engeman-web-languagecombobox-sqli)
+
 ### CVE-2025-20029 (2025-02-05)
 
 <code>Command injection vulnerability exists in iControl REST and BIG-IP TMOS Shell (tmsh) save command, which may allow an authenticated attacker to execute arbitrary system commands.\n\n \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
@@ -1140,13 +1143,6 @@
 - [grupooruss/CVE-2025-20281-Cisco](https://github.com/grupooruss/CVE-2025-20281-Cisco)
 - [ill-deed/Cisco-CVE-2025-20281-illdeed](https://github.com/ill-deed/Cisco-CVE-2025-20281-illdeed)
 - [B1ack4sh/Blackash-CVE-2025-20281](https://github.com/B1ack4sh/Blackash-CVE-2025-20281)
-
-### CVE-2025-20337 (2025-07-16)
-
-<code>A vulnerability in a specific API of Cisco ISE and Cisco ISE-PIC could allow an unauthenticated, remote attacker to execute arbitrary code on the underlying operating system as root. The attacker does not require any valid credentials to exploit this vulnerability.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by submitting a crafted API request. A successful exploit could allow the attacker to obtain root privileges on an affected device.
-</code>
-
-- [barbaraeivyu/CVE-2025-20337-EXP](https://github.com/barbaraeivyu/CVE-2025-20337-EXP)
 
 ### CVE-2025-21204 (2025-04-08)
 
@@ -2740,13 +2736,6 @@
 - [Ly4j/CVE-2025-31486](https://github.com/Ly4j/CVE-2025-31486)
 - [hackmelocal/CVE-2025-31486-Simulation](https://github.com/hackmelocal/CVE-2025-31486-Simulation)
 
-### CVE-2025-31511 (2025-07-22)
-
-<code>An issue was discovered in AlertEnterprise Guardian 4.1.14.2.2.1. One can bypass manager approval by changing the user ID in a Request%20Building%20Access requestSubmit API call.
-</code>
-
-- [pand0rausa/CVE-2025-31511_to_31513.md](https://github.com/pand0rausa/CVE-2025-31511_to_31513.md)
-
 ### CVE-2025-31644 (2025-05-07)
 
 <code>When running in Appliance mode, a command injection vulnerability exists in an undisclosed iControl REST and BIG-IP TMOS Shell (tmsh) command which may allow an authenticated attacker with administrator role privileges to execute arbitrary system commands. A successful exploit can allow the attacker to cross a security boundary.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
@@ -2803,7 +2792,6 @@
 - [leesh3288/CVE-2025-32023](https://github.com/leesh3288/CVE-2025-32023)
 - [B1ack4sh/Blackash-CVE-2025-32023](https://github.com/B1ack4sh/Blackash-CVE-2025-32023)
 - [LordBheem/CVE-2025-32023](https://github.com/LordBheem/CVE-2025-32023)
-- [shayantrix/POC-CVE-2025-32023](https://github.com/shayantrix/POC-CVE-2025-32023)
 
 ### CVE-2025-32118 (2025-04-04)
 
@@ -2860,6 +2848,7 @@
 </code>
 
 - [byteReaper77/CVE-2025-32429](https://github.com/byteReaper77/CVE-2025-32429)
+- [amir-othman/CVE-2025-32429](https://github.com/amir-othman/CVE-2025-32429)
 
 ### CVE-2025-32432 (2025-04-25)
 
@@ -3072,6 +3061,13 @@
 - [0xgh057r3c0n/CVE-2025-34085](https://github.com/0xgh057r3c0n/CVE-2025-34085)
 - [yukinime/CVE-2025-34085](https://github.com/yukinime/CVE-2025-34085)
 - [B1ack4sh/Blackash-CVE-2025-34085](https://github.com/B1ack4sh/Blackash-CVE-2025-34085)
+
+### CVE-2025-34138 (2025-07-25)
+
+<code>A vulnerability exists in Sitecore Experience Manager (XM), Experience Platform (XP), Experience Commerce (XC), and Managed Cloud that could allow remote code execution or unauthorized access to information. This vulnerability affects all Experience Platform topologies (XM, XP, XC) from 9.2 Initial Release through 10.4 Initial Release. PaaS and containerized solutions are similarly affected.
+</code>
+
+- [allinsthon/CVE-2025-34138](https://github.com/allinsthon/CVE-2025-34138)
 
 ### CVE-2025-36041 (2025-06-15)
 
@@ -3765,6 +3761,9 @@
 ### CVE-2025-50777
 - [veereshgadige/aziot-cctv-cve-2025-50777](https://github.com/veereshgadige/aziot-cctv-cve-2025-50777)
 
+### CVE-2025-50867
+- [SacX-7/CVE-2025-50867](https://github.com/SacX-7/CVE-2025-50867)
+
 ### CVE-2025-51046
 - [0xMesh-X/CVE-2025-51046](https://github.com/0xMesh-X/CVE-2025-51046)
 
@@ -4005,6 +4004,21 @@
 </code>
 
 - [tigr78/CVE-2025-53964](https://github.com/tigr78/CVE-2025-53964)
+
+### CVE-2025-54309 (2025-07-18)
+
+<code>CrushFTP 10 before 10.8.5 and 11 before 11.3.4_23, when the DMZ proxy feature is not used, mishandles AS2 validation and consequently allows remote attackers to obtain admin access via HTTPS, as exploited in the wild in July 2025.
+</code>
+
+- [issamjr/CVE-2025-54309-EXPLOIT](https://github.com/issamjr/CVE-2025-54309-EXPLOIT)
+
+### CVE-2025-54313 (2025-07-19)
+
+<code>eslint-config-prettier 8.10.1, 9.1.1, 10.1.6, and 10.1.7 has embedded malicious code for a supply chain compromise. Installing an affected package executes an install.js file that launches the node-gyp.dll malware on Windows.
+</code>
+
+- [nihilor/cve-2025-54313](https://github.com/nihilor/cve-2025-54313)
+- [ShinP451/scavenger_scanner](https://github.com/ShinP451/scavenger_scanner)
 
 ### CVE-2025-54554
 - [Aman-Parmar/CVE-2025-54554](https://github.com/Aman-Parmar/CVE-2025-54554)
@@ -5915,6 +5929,13 @@
 - [gh-ost00/CVE-2024-7928](https://github.com/gh-ost00/CVE-2024-7928)
 - [wh6amiGit/CVE-2024-7928](https://github.com/wh6amiGit/CVE-2024-7928)
 - [th3gokul/CVE-2024-7928](https://github.com/th3gokul/CVE-2024-7928)
+
+### CVE-2024-7940 (2024-08-27)
+
+<code>The product exposes a service that is intended for local only to\nall network interfaces without any authentication.
+</code>
+
+- [barbaraeivyu/CVE-2024-7940](https://github.com/barbaraeivyu/CVE-2024-7940)
 
 ### CVE-2024-7954 (2024-08-23)
 
@@ -8695,6 +8716,7 @@
 - [ivanbg2004/ODH-BricksBuilder-CVE-2024-25600-THM](https://github.com/ivanbg2004/ODH-BricksBuilder-CVE-2024-25600-THM)
 - [DedsecTeam-BlackHat/Poleposph](https://github.com/DedsecTeam-BlackHat/Poleposph)
 - [r0otk3r/CVE-2024-25600](https://github.com/r0otk3r/CVE-2024-25600)
+- [frankfm-labs/bricks-rce-writeup](https://github.com/frankfm-labs/bricks-rce-writeup)
 
 ### CVE-2024-25641 (2024-05-13)
 
@@ -8968,6 +8990,13 @@
 
 - [dead1nfluence/Leantime-POC](https://github.com/dead1nfluence/Leantime-POC)
 
+### CVE-2024-27499 (2024-03-01)
+
+<code>Bagisto v1.5.1 is vulnerable for Cross site scripting(XSS) via png file upload vulnerability in product review option.
+</code>
+
+- [auspicious7/CVE-2024-27499-Bagisto-XSS-FileUpload](https://github.com/auspicious7/CVE-2024-27499-Bagisto-XSS-FileUpload)
+
 ### CVE-2024-27518 (2024-04-29)
 
 <code>An issue in SUPERAntiSyware Professional X 10.0.1262 and 10.0.1264 allows unprivileged attackers to escalate privileges via a restore of a crafted DLL file into the C:\Program Files\SUPERAntiSpyware folder.
@@ -9027,6 +9056,9 @@
 </code>
 
 - [Alaatk/CVE-2024-27674](https://github.com/Alaatk/CVE-2024-27674)
+
+### CVE-2024-27686
+- [ThemeHackers/CVE-2024-27686](https://github.com/ThemeHackers/CVE-2024-27686)
 
 ### CVE-2024-27697
 - [SanjinDedic/FuguHub-8.4-Authenticated-RCE-CVE-2024-27697](https://github.com/SanjinDedic/FuguHub-8.4-Authenticated-RCE-CVE-2024-27697)
@@ -10057,6 +10089,9 @@
 </code>
 
 - [Akshath-Nagulapally/ReproducingCVEs_Akshath_Nagulapally](https://github.com/Akshath-Nagulapally/ReproducingCVEs_Akshath_Nagulapally)
+
+### CVE-2024-33676
+- [dersecure/CVE-2024-33676](https://github.com/dersecure/CVE-2024-33676)
 
 ### CVE-2024-33722
 - [fuzzlove/soplanning-1.52-exploits](https://github.com/fuzzlove/soplanning-1.52-exploits)
@@ -14214,6 +14249,13 @@
 
 - [str4ng3r-0x7/CVE-2024-57610](https://github.com/str4ng3r-0x7/CVE-2024-57610)
 
+### CVE-2024-57698 (2025-04-29)
+
+<code>An issue in modernwms v.1.0 allows an attacker view the MD5 hash of the administrator password and other attributes without authentication, even after initial configuration and password change. This happens due to excessive exposure of information and the lack of adequate access control on the /user/list?culture=en-us endpoint.
+</code>
+
+- [rodolfomarianocy/xpl-ModernWMS-CVE-2024-57698](https://github.com/rodolfomarianocy/xpl-ModernWMS-CVE-2024-57698)
+
 ### CVE-2024-57725 (2025-02-14)
 
 <code>An issue in the Arcadyan Livebox Fibra PRV3399B_B_LT allows a remote or local attacker to modify the GPON link value without authentication, causing an internet service disruption via the /firstconnection.cgi endpoint.
@@ -15175,6 +15217,7 @@
 </code>
 
 - [N1ghtfallXxX/CVE-2023-4220](https://github.com/N1ghtfallXxX/CVE-2023-4220)
+- [m3m0o/chamilo-lms-unauthenticated-big-upload-rce-poc](https://github.com/m3m0o/chamilo-lms-unauthenticated-big-upload-rce-poc)
 - [dollarboysushil/Chamilo-LMS-Unauthenticated-File-Upload-CVE-2023-4220](https://github.com/dollarboysushil/Chamilo-LMS-Unauthenticated-File-Upload-CVE-2023-4220)
 - [charlesgargasson/CVE-2023-4220](https://github.com/charlesgargasson/CVE-2023-4220)
 - [Rai2en/CVE-2023-4220-Chamilo-LMS](https://github.com/Rai2en/CVE-2023-4220-Chamilo-LMS)
@@ -17232,6 +17275,7 @@
 </code>
 
 - [rvizx/CVE-2023-26035](https://github.com/rvizx/CVE-2023-26035)
+- [m3m0o/zoneminder-snapshots-rce-poc](https://github.com/m3m0o/zoneminder-snapshots-rce-poc)
 - [heapbytes/CVE-2023-26035](https://github.com/heapbytes/CVE-2023-26035)
 - [Yuma-Tsushima07/CVE-2023-26035](https://github.com/Yuma-Tsushima07/CVE-2023-26035)
 - [0xfalafel/zoneminder_CVE-2023-26035](https://github.com/0xfalafel/zoneminder_CVE-2023-26035)
@@ -20149,6 +20193,7 @@
 - [kh4sh3i/CVE-2023-38646](https://github.com/kh4sh3i/CVE-2023-38646)
 - [yxl2001/CVE-2023-38646](https://github.com/yxl2001/CVE-2023-38646)
 - [alexandre-pecorilla/CVE-2023-38646](https://github.com/alexandre-pecorilla/CVE-2023-38646)
+- [m3m0o/metabase-pre-auth-rce-poc](https://github.com/m3m0o/metabase-pre-auth-rce-poc)
 - [CN016/Metabase-H2-CVE-2023-38646-](https://github.com/CN016/Metabase-H2-CVE-2023-38646-)
 - [Boogipop/MetabaseRceTools](https://github.com/Boogipop/MetabaseRceTools)
 - [nickswink/CVE-2023-38646](https://github.com/nickswink/CVE-2023-38646)
@@ -29360,6 +29405,7 @@
 - [FlojBoj/CVE-2022-44268](https://github.com/FlojBoj/CVE-2022-44268)
 - [katseyres2/CVE-2022-44268-pilgrimage](https://github.com/katseyres2/CVE-2022-44268-pilgrimage)
 - [J0ey17/Automate_Exploit_CVE-2022-44268](https://github.com/J0ey17/Automate_Exploit_CVE-2022-44268)
+- [jkobierczynski/cve-2022-44268](https://github.com/jkobierczynski/cve-2022-44268)
 
 ### CVE-2022-44276 (2023-06-28)
 
@@ -38000,13 +38046,6 @@
 - [Al1ex/CVE-2020-2883](https://github.com/Al1ex/CVE-2020-2883)
 - [Qynklee/POC_CVE-2020-2883](https://github.com/Qynklee/POC_CVE-2020-2883)
 
-### CVE-2020-2950 (2020-04-15)
-
-<code>Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Fusion Middleware (component: Analytics Web General). Supported versions that are affected are 5.5.0.0.0, 11.1.1.9.0, 12.2.1.3.0 and 12.2.1.4.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Business Intelligence Enterprise Edition. Successful attacks of this vulnerability can result in takeover of Oracle Business Intelligence Enterprise Edition. CVSS 3.0 Base Score 9.8 (Confidentiality, Integrity and Availability impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
-</code>
-
-- [tuo4n8/CVE-2020-2950](https://github.com/tuo4n8/CVE-2020-2950)
-
 ### CVE-2020-2969 (2020-07-15)
 
 <code>Vulnerability in the Data Pump component of Oracle Database Server. Supported versions that are affected are 11.2.0.4, 12.1.0.2, 12.2.0.1, 18c and 19c. Difficult to exploit vulnerability allows high privileged attacker having DBA role account privilege with network access via Oracle Net to compromise Data Pump. Successful attacks of this vulnerability can result in takeover of Data Pump. CVSS 3.1 Base Score 6.6 (Confidentiality, Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H).
@@ -39176,7 +39215,7 @@
 <code>Firmware developed by Shenzhen Hichip Vision Technology (V6 through V20), as used by many different vendors in millions of Internet of Things devices, suffers from a privilege escalation vulnerability that allows attackers on the local network to reset the device's administrator password. This affects products marketed under the following brand names: Accfly, Alptop, Anlink, Besdersec, BOAVISION, COOAU, CPVAN, Ctronics, D3D Security, Dericam, Elex System, Elite Security, ENSTER, ePGes, Escam, FLOUREON, GENBOLT, Hongjingtian (HJT), ICAMI, Iegeek, Jecurity, Jennov, KKMoon, LEFTEK, Loosafe, Luowice, Nesuniq, Nettoly, ProElite, QZT, Royallite, SDETER, SV3C, SY2L, Tenvis, ThinkValue, TOMLOV, TPTEK, WGCC, and ZILINK.
 </code>
 
-- [dimalmfao/hichipreset](https://github.com/dimalmfao/hichipreset)
+- [prisect/hichipreset](https://github.com/prisect/hichipreset)
 
 ### CVE-2020-9547 (2020-03-02)
 
