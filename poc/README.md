@@ -2452,6 +2452,7 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
+- [AventurineJun/CVE-2025-29927-Research](https://github.com/AventurineJun/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -2502,6 +2503,7 @@
 - [KamalideenAK/poc-cve-2025-29927](https://github.com/KamalideenAK/poc-cve-2025-29927)
 - [mickhacking/Thank-u-Next](https://github.com/mickhacking/Thank-u-Next)
 - [Kamal-Hegazi/CVE-2025-29927-Next.js-Middleware-Authorization-Bypass](https://github.com/Kamal-Hegazi/CVE-2025-29927-Next.js-Middleware-Authorization-Bypass)
+- [sahbaazansari/CVE-2025-29927](https://github.com/sahbaazansari/CVE-2025-29927)
 
 ### CVE-2025-29972 (2025-05-08)
 
@@ -2883,7 +2885,7 @@
 <code>Erlang/OTP is a set of libraries for the Erlang programming language. Prior to versions OTP-27.3.3, OTP-26.2.5.11, and OTP-25.3.2.20, a SSH server may allow an attacker to perform unauthenticated remote code execution (RCE). By exploiting a flaw in SSH protocol message handling, a malicious actor could gain unauthorized access to affected systems and execute arbitrary commands without valid credentials. This issue is patched in versions OTP-27.3.3, OTP-26.2.5.11, and OTP-25.3.2.20. A temporary workaround involves disabling the SSH server or to prevent access via firewall rules.
 </code>
 
-- [ProDefense/CVE-2025-32433](https://github.com/ProDefense/CVE-2025-32433)
+- [platsecurity/CVE-2025-32433](https://github.com/platsecurity/CVE-2025-32433)
 - [ekomsSavior/POC_CVE-2025-32433](https://github.com/ekomsSavior/POC_CVE-2025-32433)
 - [Epivalent/CVE-2025-32433-detection](https://github.com/Epivalent/CVE-2025-32433-detection)
 - [darses/CVE-2025-32433](https://github.com/darses/CVE-2025-32433)
@@ -3547,6 +3549,7 @@
 - [rxerium/CVE-2025-47812](https://github.com/rxerium/CVE-2025-47812)
 - [blindma1den/CVE-2025-47812](https://github.com/blindma1den/CVE-2025-47812)
 - [B1ack4sh/Blackash-CVE-2025-47812](https://github.com/B1ack4sh/Blackash-CVE-2025-47812)
+- [r0otk3r/CVE-2025-47812](https://github.com/r0otk3r/CVE-2025-47812)
 
 ### CVE-2025-47827 (2025-06-05)
 
@@ -4008,6 +4011,8 @@
 - [Udyz/CVE-2025-53770-Exploit](https://github.com/Udyz/CVE-2025-53770-Exploit)
 - [Kamal-Hegazi/CVE-2025-53770-SharePoint-RCE](https://github.com/Kamal-Hegazi/CVE-2025-53770-SharePoint-RCE)
 - [BirdsAreFlyingCameras/CVE-2025-53770_Raw-HTTP-Request-Generator](https://github.com/BirdsAreFlyingCameras/CVE-2025-53770_Raw-HTTP-Request-Generator)
+- [bossnick98/-SOC342---CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-and-RCE](https://github.com/bossnick98/-SOC342---CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-and-RCE)
+- [3a7/CVE-2025-53770](https://github.com/3a7/CVE-2025-53770)
 
 ### CVE-2025-53833 (2025-07-14)
 
@@ -9008,13 +9013,6 @@
 
 - [dead1nfluence/Leantime-POC](https://github.com/dead1nfluence/Leantime-POC)
 
-### CVE-2024-27499 (2024-03-01)
-
-<code>Bagisto v1.5.1 is vulnerable for Cross site scripting(XSS) via png file upload vulnerability in product review option.
-</code>
-
-- [auspicious7/CVE-2024-27499-Bagisto-XSS-FileUpload](https://github.com/auspicious7/CVE-2024-27499-Bagisto-XSS-FileUpload)
-
 ### CVE-2024-27518 (2024-04-29)
 
 <code>An issue in SUPERAntiSyware Professional X 10.0.1262 and 10.0.1264 allows unprivileged attackers to escalate privileges via a restore of a crafted DLL file into the C:\Program Files\SUPERAntiSpyware folder.
@@ -11770,6 +11768,9 @@
 
 ### CVE-2024-42992
 - [thanhh23/CVE-2024-42992](https://github.com/thanhh23/CVE-2024-42992)
+
+### CVE-2024-43018
+- [joaosilva21/CVE-2024-43018](https://github.com/joaosilva21/CVE-2024-43018)
 
 ### CVE-2024-43035
 - [ZeroPathAI/Fonoster-LFI-PoC](https://github.com/ZeroPathAI/Fonoster-LFI-PoC)
@@ -21133,6 +21134,7 @@
 </code>
 
 - [d0rb/CVE-2023-42931](https://github.com/d0rb/CVE-2023-42931)
+- [tageniu/CVE-2023-42931](https://github.com/tageniu/CVE-2023-42931)
 
 ### CVE-2023-42961 (2025-04-11)
 
@@ -28597,6 +28599,7 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
+- [AventurineJun/CVE-2022-39299-Research](https://github.com/AventurineJun/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -31323,7 +31326,6 @@
 - [codiobert/pwnkit-scanner](https://github.com/codiobert/pwnkit-scanner)
 - [v-rzh/CVE-2021-4034](https://github.com/v-rzh/CVE-2021-4034)
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
-- [Almorabea/pkexec-exploit](https://github.com/Almorabea/pkexec-exploit)
 - [teelrabbit/Polkit-pkexec-exploit-for-Linux](https://github.com/teelrabbit/Polkit-pkexec-exploit-for-Linux)
 - [scent2d/PoC-CVE-2021-4034](https://github.com/scent2d/PoC-CVE-2021-4034)
 - [HrishitJoshi/CVE-2021-4034](https://github.com/HrishitJoshi/CVE-2021-4034)
@@ -34080,6 +34082,7 @@
 - [TakenoSite/Simple-CVE-2021-36260](https://github.com/TakenoSite/Simple-CVE-2021-36260)
 - [haingn/HIK-CVE-2021-36260-Exploit](https://github.com/haingn/HIK-CVE-2021-36260-Exploit)
 - [NanoTrash/hikvision_brute](https://github.com/NanoTrash/hikvision_brute)
+- [tamim1089/HikvisionExploiter](https://github.com/tamim1089/HikvisionExploiter)
 - [aengussong/hikvision_probe](https://github.com/aengussong/hikvision_probe)
 
 ### CVE-2021-36393 (2023-03-06)
