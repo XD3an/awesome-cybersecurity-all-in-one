@@ -412,6 +412,13 @@
 - [ghostsec420/ShatteredFTP](https://github.com/ghostsec420/ShatteredFTP)
 - [Shivshantp/CVE-2025-2825-CrushFTP-AuthBypass](https://github.com/Shivshantp/CVE-2025-2825-CrushFTP-AuthBypass)
 
+### CVE-2025-2828 (2025-06-23)
+
+<code>A Server-Side Request Forgery (SSRF) vulnerability exists in the RequestsToolkit component of the langchain-community package (specifically, langchain_community.agent_toolkits.openapi.toolkit.RequestsToolkit) in langchain-ai/langchain version 0.0.27. This vulnerability occurs because the toolkit does not enforce restrictions on requests to remote internet addresses, allowing it to also access local addresses. As a result, an attacker could exploit this flaw to perform port scans, access local services, retrieve instance metadata from cloud environments (e.g., Azure, AWS), and interact with servers on the local network. This issue has been fixed in version 0.0.28.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-2828](https://github.com/B1ack4sh/Blackash-CVE-2025-2828)
+
 ### CVE-2025-2907 (2025-04-26)
 
 <code>The Order Delivery Date WordPress plugin before 12.3.1 does not have authorization and CSRF checks when importing settings. Furthermore it also lacks proper checks to only update options relevant to the Order Delivery Date WordPress plugin before 12.3.1. This leads to attackers being able to modify the default_user_role to administrator and users_can_register, allowing them to register as an administrator of the site for complete site takeover.
@@ -1550,7 +1557,7 @@
 </code>
 
 - [jailbreakdotparty/dirtyZero](https://github.com/jailbreakdotparty/dirtyZero)
-- [BlueDiamond2021/iOS-CVE-2025-24203-Paths](https://github.com/BlueDiamond2021/iOS-CVE-2025-24203-Paths)
+- [aokumo21/iOS-CVE-2025-24203-Paths](https://github.com/aokumo21/iOS-CVE-2025-24203-Paths)
 - [GeoSn0w/CVE-2025-24203-iOS-Exploit-With-Error-Logging](https://github.com/GeoSn0w/CVE-2025-24203-iOS-Exploit-With-Error-Logging)
 - [pxx917144686/iDevice_ZH](https://github.com/pxx917144686/iDevice_ZH)
 
@@ -2453,7 +2460,7 @@
 - [kOaDT/poc-cve-2025-29927](https://github.com/kOaDT/poc-cve-2025-29927)
 - [yugo-eliatrope/test-cve-2025-29927](https://github.com/yugo-eliatrope/test-cve-2025-29927)
 - [emadshanab/CVE-2025-29927](https://github.com/emadshanab/CVE-2025-29927)
-- [bitdotioinc/CVE-2025-29927](https://github.com/bitdotioinc/CVE-2025-29927)
+- [newweshi/CVE-2025-29927](https://github.com/newweshi/CVE-2025-29927)
 - [aleongx/CVE-2025-29927](https://github.com/aleongx/CVE-2025-29927)
 - [nicknisi/next-attack](https://github.com/nicknisi/next-attack)
 - [jmbowes/NextSecureScan](https://github.com/jmbowes/NextSecureScan)
@@ -2513,6 +2520,7 @@
 - [mickhacking/Thank-u-Next](https://github.com/mickhacking/Thank-u-Next)
 - [Kamal-Hegazi/CVE-2025-29927-Next.js-Middleware-Authorization-Bypass](https://github.com/Kamal-Hegazi/CVE-2025-29927-Next.js-Middleware-Authorization-Bypass)
 - [sahbaazansari/CVE-2025-29927](https://github.com/sahbaazansari/CVE-2025-29927)
+- [b4sh0xf/PoC-CVE-2025-29927](https://github.com/b4sh0xf/PoC-CVE-2025-29927)
 
 ### CVE-2025-29972 (2025-05-08)
 
@@ -2982,6 +2990,7 @@
 - [daryllundy/CVE-2025-32463](https://github.com/daryllundy/CVE-2025-32463)
 - [AdityaBhatt3010/Sudo-Privilege-Escalation-Linux-CVE-2025-32463-and-CVE-2025-32462](https://github.com/AdityaBhatt3010/Sudo-Privilege-Escalation-Linux-CVE-2025-32463-and-CVE-2025-32462)
 - [ChetanKomal/sudo_exploit](https://github.com/ChetanKomal/sudo_exploit)
+- [KaiHT-Ladiant/CVE-2025-32463](https://github.com/KaiHT-Ladiant/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -3237,10 +3246,18 @@
 
 - [harish0x/CVE-2025-44108-SXSS](https://github.com/harish0x/CVE-2025-44108-SXSS)
 
-### CVE-2025-44136
+### CVE-2025-44136 (2025-07-29)
+
+<code>MapTiler Tileserver-php v2.0 is vulnerable to Cross Site Scripting (XSS). The GET parameter &quot;layer&quot; is reflected in an error message without html encoding. This leads to XSS and allows an unauthenticated attacker to execute arbitrary HTML or JavaScript code on a victim's browser.
+</code>
+
 - [mheranco/CVE-2025-44136](https://github.com/mheranco/CVE-2025-44136)
 
-### CVE-2025-44137
+### CVE-2025-44137 (2025-07-29)
+
+<code>MapTiler Tileserver-php v2.0 is vulnerable to Directory Traversal. The renderTile function within tileserver.php is responsible for delivering tiles that are stored as files on the server via web request. Creating the path to a file allows the insertion of &quot;../&quot; and thus read any file on the web server. Affected GET parameters are &quot;TileMatrix&quot;, &quot;TileRow&quot;, &quot;TileCol&quot; and &quot;Format&quot;
+</code>
+
 - [mheranco/CVE-2025-44137](https://github.com/mheranco/CVE-2025-44137)
 
 ### CVE-2025-44148 (2025-06-03)
@@ -3493,6 +3510,7 @@
 </code>
 
 - [synacktiv/CVE-2025-47227_CVE-2025-47228](https://github.com/synacktiv/CVE-2025-47227_CVE-2025-47228)
+- [B1ack4sh/Blackash-CVE-2025-47227](https://github.com/B1ack4sh/Blackash-CVE-2025-47227)
 
 ### CVE-2025-47256 (2025-05-06)
 
@@ -3926,11 +3944,18 @@
 
 - [Secsys-FDU/CVE-2025-51869](https://github.com/Secsys-FDU/CVE-2025-51869)
 
-### CVE-2025-51970
+### CVE-2025-51970 (2025-07-29)
+
+<code>A SQL Injection vulnerability exists in the action.php endpoint of PuneethReddyHC Online Shopping System Advanced 1.0 due to improper sanitization of user-supplied input in the keyword POST parameter.
+</code>
+
 - [M4xIq/CVE-2025-51970](https://github.com/M4xIq/CVE-2025-51970)
 
 ### CVE-2025-52097
 - [rwilsonecs/CVE-2025-52097](https://github.com/rwilsonecs/CVE-2025-52097)
+
+### CVE-2025-52289
+- [Madhav-Bhardwaj/CVE-2025-52289](https://github.com/Madhav-Bhardwaj/CVE-2025-52289)
 
 ### CVE-2025-52357 (2025-07-09)
 
@@ -4031,6 +4056,7 @@
 - [r3xbugbounty/CVE-2025-53770](https://github.com/r3xbugbounty/CVE-2025-53770)
 - [daryllundy/CVE-2025-53770](https://github.com/daryllundy/CVE-2025-53770)
 - [0x-crypt/CVE-2025-53770-Scanner](https://github.com/0x-crypt/CVE-2025-53770-Scanner)
+- [Immersive-Labs-Sec/SharePoint-CVE-2025-53770-POC](https://github.com/Immersive-Labs-Sec/SharePoint-CVE-2025-53770-POC)
 
 ### CVE-2025-53833 (2025-07-14)
 
@@ -4060,6 +4086,20 @@
 
 - [nihilor/cve-2025-54313](https://github.com/nihilor/cve-2025-54313)
 - [ShinP451/scavenger_scanner](https://github.com/ShinP451/scavenger_scanner)
+
+### CVE-2025-54352 (2025-07-21)
+
+<code>WordPress 3.5 through 6.8.2 allows remote attackers to guess titles of private and draft posts via pingback.ping XML-RPC requests. NOTE: the Supplier is not changing this behavior.
+</code>
+
+- [yohannslm/CVE-2025-54352](https://github.com/yohannslm/CVE-2025-54352)
+
+### CVE-2025-54381 (2025-07-29)
+
+<code>BentoML is a Python library for building online serving systems optimized for AI apps and model inference. In versions 1.4.0 until 1.4.19, the file upload processing system contains an SSRF vulnerability that allows unauthenticated remote attackers to force the server to make arbitrary HTTP requests. The vulnerability stems from the multipart form data and JSON request handlers, which automatically download files from user-provided URLs without validating whether those URLs point to internal network addresses, cloud metadata endpoints, or other restricted resources. The documentation explicitly promotes this URL-based file upload feature, making it an intended design that exposes all deployed services to SSRF attacks by default. Version 1.4.19 contains a patch for the issue.
+</code>
+
+- [rockmelodies/bentoml_CVE-2025-54381](https://github.com/rockmelodies/bentoml_CVE-2025-54381)
 
 ### CVE-2025-54554
 - [Aman-Parmar/CVE-2025-54554](https://github.com/Aman-Parmar/CVE-2025-54554)
@@ -11788,7 +11828,11 @@
 ### CVE-2024-42992
 - [thanhh23/CVE-2024-42992](https://github.com/thanhh23/CVE-2024-42992)
 
-### CVE-2024-43018
+### CVE-2024-43018 (2025-07-29)
+
+<code>Piwigo 13.8.0 and below is vulnerable to SQL Injection in the parameters max_level and min_register. These parameters are used in ws_user_gerList function from file include\ws_functions\pwg.users.php and this same function is called by ws.php file at some point can be used for searching users in advanced way in /admin.php?page=user_list.
+</code>
+
 - [joaosilva21/CVE-2024-43018](https://github.com/joaosilva21/CVE-2024-43018)
 
 ### CVE-2024-43035
@@ -12120,7 +12164,7 @@
 <code>In Nintendo Mario Kart 8 Deluxe before 3.0.3, the LAN/LDN local multiplayer implementation allows a remote attacker to exploit a stack-based buffer overflow upon deserialization of session information via a malformed browse-reply packet, aka KartLANPwn. The victim is not required to join a game session with an attacker. The victim must open the &quot;Wireless Play&quot; (or &quot;LAN Play&quot;) menu from the game's title screen, and an attacker nearby (LDN) or on the same LAN network as the victim can send a crafted reply packet to the victim's console. This enables a remote attacker to obtain complete denial-of-service on the game's process, or potentially, remote code execution on the victim's console. The issue is caused by incorrect use of the Nintendo Pia library,
 </code>
 
-- [latte-soft/kartlanpwn](https://github.com/latte-soft/kartlanpwn)
+- [regginator/kartlanpwn](https://github.com/regginator/kartlanpwn)
 
 ### CVE-2024-45216 (2024-10-16)
 
@@ -13184,7 +13228,6 @@
 </code>
 
 - [refr4g/CVE-2024-51378](https://github.com/refr4g/CVE-2024-51378)
-- [i0x29A/CVE-2024-51378](https://github.com/i0x29A/CVE-2024-51378)
 - [qnole000/CVE-2024-51378](https://github.com/qnole000/CVE-2024-51378)
 
 ### CVE-2024-51430 (2024-10-31)
@@ -25036,7 +25079,7 @@
 - [talentsec/Spring-Cloud-Gateway-CVE-2022-22947](https://github.com/talentsec/Spring-Cloud-Gateway-CVE-2022-22947)
 - [aesm1p/CVE-2022-22947-POC-Reproduce](https://github.com/aesm1p/CVE-2022-22947-POC-Reproduce)
 - [4nNns/CVE-2022-22947](https://github.com/4nNns/CVE-2022-22947)
-- [expzhizhuo/Burp_VulPscan](https://github.com/expzhizhuo/Burp_VulPscan)
+- [kkx600/Burp_VulPscan](https://github.com/kkx600/Burp_VulPscan)
 - [twseptian/cve-2022-22947](https://github.com/twseptian/cve-2022-22947)
 - [whwlsfb/cve-2022-22947-godzilla-memshell](https://github.com/whwlsfb/cve-2022-22947-godzilla-memshell)
 - [0730Nophone/CVE-2022-22947-](https://github.com/0730Nophone/CVE-2022-22947-)
@@ -25759,7 +25802,7 @@
 <code>regex is an implementation of regular expressions for the Rust language. The regex crate features built-in mitigations to prevent denial of service attacks caused by untrusted regexes, or untrusted input matched by trusted regexes. Those (tunable) mitigations already provide sane defaults to prevent attacks. This guarantee is documented and it's considered part of the crate's API. Unfortunately a bug was discovered in the mitigations designed to prevent untrusted regexes to take an arbitrary amount of time during parsing, and it's possible to craft regexes that bypass such mitigations. This makes it possible to perform denial of service attacks by sending specially crafted regexes to services accepting user-controlled, untrusted regexes. All versions of the regex crate before or equal to 1.5.4 are affected by this issue. The fix is include starting from regex 1.5.5. All users accepting user-controlled regexes are recommended to upgrade immediately to the latest version of the regex crate. Unfortunately there is no fixed set of problematic regexes, as there are practically infinite regexes that could be crafted to exploit this vulnerability. Because of this, it us not recommend to deny known problematic regexes.
 </code>
 
-- [ItzSwirlz/CVE-2022-24713-POC](https://github.com/ItzSwirlz/CVE-2022-24713-POC)
+- [JPeisach/CVE-2022-24713-POC](https://github.com/JPeisach/CVE-2022-24713-POC)
 
 ### CVE-2022-24715 (2022-03-08)
 
@@ -30682,6 +30725,7 @@
 - [0xSs0rZ/Windows_Exploit](https://github.com/0xSs0rZ/Windows_Exploit)
 - [Sp4ceDogy/NPE-CS-V-CVE-2021-1675](https://github.com/Sp4ceDogy/NPE-CS-V-CVE-2021-1675)
 - [CameraShutterBug/PrintNightmare](https://github.com/CameraShutterBug/PrintNightmare)
+- [DLL00P/CVE-2021-1675](https://github.com/DLL00P/CVE-2021-1675)
 
 ### CVE-2021-1678 (2021-01-12)
 
@@ -31346,9 +31390,7 @@
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [glowbase/PwnKit-CVE-2021-4034](https://github.com/glowbase/PwnKit-CVE-2021-4034)
 - [codiobert/pwnkit-scanner](https://github.com/codiobert/pwnkit-scanner)
-- [v-rzh/CVE-2021-4034](https://github.com/v-rzh/CVE-2021-4034)
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
-- [Almorabea/pkexec-exploit](https://github.com/Almorabea/pkexec-exploit)
 - [teelrabbit/Polkit-pkexec-exploit-for-Linux](https://github.com/teelrabbit/Polkit-pkexec-exploit-for-Linux)
 - [scent2d/PoC-CVE-2021-4034](https://github.com/scent2d/PoC-CVE-2021-4034)
 - [HrishitJoshi/CVE-2021-4034](https://github.com/HrishitJoshi/CVE-2021-4034)
@@ -35953,6 +35995,7 @@
 
 - [lowkey0808/CVE-2021-43857](https://github.com/lowkey0808/CVE-2021-43857)
 - [G4sp4rCS/CVE-2021-43857-POC](https://github.com/G4sp4rCS/CVE-2021-43857-POC)
+- [ProwlSec/gerapy-cve-2021-43857](https://github.com/ProwlSec/gerapy-cve-2021-43857)
 
 ### CVE-2021-43858 (2021-12-27)
 
@@ -56435,7 +56478,7 @@
 - [cyberharsh/PHP_CVE-2012-1823](https://github.com/cyberharsh/PHP_CVE-2012-1823)
 - [0xl0k1/CVE-2012-1823](https://github.com/0xl0k1/CVE-2012-1823)
 - [Jimmy01240397/CVE-2012-1823-Analyze](https://github.com/Jimmy01240397/CVE-2012-1823-Analyze)
-- [JasonHobs/CVE-2012-1823-exploit-for-https-user-password-web](https://github.com/JasonHobs/CVE-2012-1823-exploit-for-https-user-password-web)
+- [Dmitri131313/CVE-2012-1823-exploit-for-https-user-password-web](https://github.com/Dmitri131313/CVE-2012-1823-exploit-for-https-user-password-web)
 
 ### CVE-2012-1831 (2012-07-05)
 
@@ -58007,6 +58050,13 @@
 </code>
 
 - [alt3kx/CVE-2001-1442](https://github.com/alt3kx/CVE-2001-1442)
+
+### CVE-2001-1473 (2005-04-21)
+
+<code>The SSH-1 protocol allows remote servers to conduct man-in-the-middle attacks and replay a client challenge response to a target server by creating a Session ID that matches the Session ID of the target, but which uses a public key pair that is weaker than the target's public key, which allows the attacker to compute the corresponding private key and use the target's Session ID with the compromised key pair to masquerade as the target.
+</code>
+
+- [alexandermoro/cve-2001-1473](https://github.com/alexandermoro/cve-2001-1473)
 
 ### CVE-2001-3389
 - [becrevex/Gaston](https://github.com/becrevex/Gaston)
