@@ -157,7 +157,7 @@
 <code>In PHP from 8.1.* before 8.1.32, from 8.2.* before 8.2.28, from 8.3.* before 8.3.19, from 8.4.* before 8.4.5, when requesting a HTTP resource using the DOM or SimpleXML extensions, the wrong content-type header is used to determine the charset when the requested resource performs a redirect. This may cause the resulting document to be parsed incorrectly or bypass validations.
 </code>
 
-- [ediop3SquadALT/ediop3PHP](https://github.com/ediop3SquadALT/ediop3PHP)
+- [BreadSquad/ediop3PHP](https://github.com/BreadSquad/ediop3PHP)
 
 ### CVE-2025-1302 (2025-02-15)
 
@@ -595,7 +595,7 @@
 
 ### CVE-2025-4275 (2025-06-11)
 
-<code>Running the provided utility changes the certificate on any Insyde BIOS and then the attached .efi file can be launched.
+<code>A vulnerability in the digital signature verification process does not properly validate variable attributes which allows an attacker to bypass signature verification by creating a non-authenticated NVRAM variable. An attacker may to execute arbitrary signed UEFI code and bypass Secure Boot.
 </code>
 
 - [NikolajSchlej/Hydroph0bia](https://github.com/NikolajSchlej/Hydroph0bia)
@@ -880,6 +880,7 @@
 - [B1ack4sh/Blackash-CVE-2025-5777](https://github.com/B1ack4sh/Blackash-CVE-2025-5777)
 - [Shivshantp/CVE-2025-5777-TrendMicro-ApexCentral-RCE](https://github.com/Shivshantp/CVE-2025-5777-TrendMicro-ApexCentral-RCE)
 - [rob0tstxt/POC-CVE-2025-5777](https://github.com/rob0tstxt/POC-CVE-2025-5777)
+- [below0day/Honeypot-Logs-CVE-2025-5777](https://github.com/below0day/Honeypot-Logs-CVE-2025-5777)
 
 ### CVE-2025-5815 (2025-06-13)
 
@@ -918,6 +919,7 @@
 - [iamgithubber/CVE-2025-6018-19-exploit](https://github.com/iamgithubber/CVE-2025-6018-19-exploit)
 - [dreysanox/CVE-2025-6018_Poc](https://github.com/dreysanox/CVE-2025-6018_Poc)
 - [ibrahmsql/CVE-2025-6018](https://github.com/ibrahmsql/CVE-2025-6018)
+- [B1ack4sh/Blackash-CVE-2025-6018](https://github.com/B1ack4sh/Blackash-CVE-2025-6018)
 
 ### CVE-2025-6019 (2025-06-19)
 
@@ -1176,6 +1178,13 @@
 - [grupooruss/CVE-2025-20281-Cisco](https://github.com/grupooruss/CVE-2025-20281-Cisco)
 - [ill-deed/Cisco-CVE-2025-20281-illdeed](https://github.com/ill-deed/Cisco-CVE-2025-20281-illdeed)
 - [B1ack4sh/Blackash-CVE-2025-20281](https://github.com/B1ack4sh/Blackash-CVE-2025-20281)
+
+### CVE-2025-20337 (2025-07-16)
+
+<code>A vulnerability in a specific API of Cisco ISE and Cisco ISE-PIC could allow an unauthenticated, remote attacker to execute arbitrary code on the underlying operating system as root. The attacker does not require any valid credentials to exploit this vulnerability.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by submitting a crafted API request. A successful exploit could allow the attacker to obtain root privileges on an affected device.
+</code>
+
+- [barbaraeivyu/CVE-2025-20337-EXP](https://github.com/barbaraeivyu/CVE-2025-20337-EXP)
 
 ### CVE-2025-21204 (2025-04-08)
 
@@ -1657,7 +1666,6 @@
 - [B1gN0Se/Tomcat-CVE-2025-24813](https://github.com/B1gN0Se/Tomcat-CVE-2025-24813)
 - [AsaL1n/CVE-2025-24813](https://github.com/AsaL1n/CVE-2025-24813)
 - [MuhammadWaseem29/CVE-2025-24813](https://github.com/MuhammadWaseem29/CVE-2025-24813)
-- [uzairhaider502/CVE-2025-24813](https://github.com/uzairhaider502/CVE-2025-24813)
 - [La3B0z/CVE-2025-24813-POC](https://github.com/La3B0z/CVE-2025-24813-POC)
 - [Heimd411/CVE-2025-24813-noPoC](https://github.com/Heimd411/CVE-2025-24813-noPoC)
 - [horsehacks/CVE-2025-24813-checker](https://github.com/horsehacks/CVE-2025-24813-checker)
@@ -2148,6 +2156,13 @@
 
 - [TrustStackSecurity/CVE-2025-27580](https://github.com/TrustStackSecurity/CVE-2025-27580)
 
+### CVE-2025-27581 (2025-04-23)
+
+<code>NIH BRICS (aka Biomedical Research Informatics Computing System) through 14.0.0-67 allows users who lack the InET role to access the InET module via direct requests to known endpoints.
+</code>
+
+- [Henryisnotavailable/CVE-2025-27581](https://github.com/Henryisnotavailable/CVE-2025-27581)
+
 ### CVE-2025-27590 (2025-03-03)
 
 <code>In oxidized-web (aka Oxidized Web) before 0.15.0, the RANCID migration page allows an unauthenticated user to gain control over the Linux user account that is running oxidized-web.
@@ -2351,6 +2366,12 @@
 
 - [Yoshik0xF6/CVE-2025-29529](https://github.com/Yoshik0xF6/CVE-2025-29529)
 
+### CVE-2025-29556
+- [0xsu3ks/CVE-2025-29556](https://github.com/0xsu3ks/CVE-2025-29556)
+
+### CVE-2025-29557
+- [0xsu3ks/CVE-2025-29557](https://github.com/0xsu3ks/CVE-2025-29557)
+
 ### CVE-2025-29602 (2025-05-07)
 
 <code>flatpress 1.3.1 is vulnerable to Cross Site Scripting (XSS) in Administration area via Manage categories.
@@ -2419,6 +2440,7 @@
 </code>
 
 - [encrypter15/CVE-2025-29824](https://github.com/encrypter15/CVE-2025-29824)
+- [AfanPan/CVE-2025-29824-Exploit](https://github.com/AfanPan/CVE-2025-29824-Exploit)
 
 ### CVE-2025-29927 (2025-03-21)
 
@@ -2991,6 +3013,7 @@
 - [AdityaBhatt3010/Sudo-Privilege-Escalation-Linux-CVE-2025-32463-and-CVE-2025-32462](https://github.com/AdityaBhatt3010/Sudo-Privilege-Escalation-Linux-CVE-2025-32463-and-CVE-2025-32462)
 - [ChetanKomal/sudo_exploit](https://github.com/ChetanKomal/sudo_exploit)
 - [KaiHT-Ladiant/CVE-2025-32463](https://github.com/KaiHT-Ladiant/CVE-2025-32463)
+- [y4ney/CVE-2025-32463-lab](https://github.com/y4ney/CVE-2025-32463-lab)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -3174,6 +3197,9 @@
 
 - [hacefresko/CVE-2025-40634](https://github.com/hacefresko/CVE-2025-40634)
 
+### CVE-2025-40766
+- [FurkanKAYAPINAR/ecs_checker](https://github.com/FurkanKAYAPINAR/ecs_checker)
+
 ### CVE-2025-40775 (2025-05-21)
 
 <code>When an incoming DNS protocol message includes a Transaction Signature (TSIG), BIND always checks it.  If the TSIG contains an invalid value in the algorithm field, BIND immediately aborts with an assertion failure.\nThis issue affects BIND 9 versions 9.20.0 through 9.20.8 and 9.21.0 through 9.21.7.
@@ -3303,6 +3329,13 @@
 - [xp3s/CVE-2025-45250](https://github.com/xp3s/CVE-2025-45250)
 - [Anike-x/CVE-2025-45250](https://github.com/Anike-x/CVE-2025-45250)
 
+### CVE-2025-45346 (2025-07-29)
+
+<code>SQL Injection vulnerability in Bacula-web before v.9.7.1 allows a remote attacker to execute arbitrary code via a crafted HTTP GET request.
+</code>
+
+- [0xsu3ks/CVE-2025-45346](https://github.com/0xsu3ks/CVE-2025-45346)
+
 ### CVE-2025-45407
 - [yallasec/CVE-2025-45407](https://github.com/yallasec/CVE-2025-45407)
 
@@ -3323,10 +3356,18 @@
 ### CVE-2025-45512
 - [AzhariRamadhan/CVE-2025-45512](https://github.com/AzhariRamadhan/CVE-2025-45512)
 
-### CVE-2025-45619
+### CVE-2025-45619 (2025-07-30)
+
+<code>An issue in Aver PTC310UV2 firmware v.0.1.0000.59 allows a remote attacker to execute arbitrary code via the SendAction function
+</code>
+
 - [weedl/CVE-2025-45619](https://github.com/weedl/CVE-2025-45619)
 
-### CVE-2025-45620
+### CVE-2025-45620 (2025-07-30)
+
+<code>An issue in Aver PTC310UV2 v.0.1.0000.59 allows a remote attacker to obtain sensitive information via a crafted request
+</code>
+
 - [weedl/CVE-2025-45620](https://github.com/weedl/CVE-2025-45620)
 
 ### CVE-2025-45710
@@ -3628,7 +3669,6 @@
 - [Anezatraa/CVE-2025-48384-submodule](https://github.com/Anezatraa/CVE-2025-48384-submodule)
 - [IK-20211125/CVE-2025-48384](https://github.com/IK-20211125/CVE-2025-48384)
 - [elprogramadorgt/CVE-2025-48384](https://github.com/elprogramadorgt/CVE-2025-48384)
-- [rtefx/CVE-2025-48384](https://github.com/rtefx/CVE-2025-48384)
 
 ### CVE-2025-48461 (2025-06-24)
 
@@ -3800,6 +3840,9 @@
 ### CVE-2025-50365
 - [1h3ll/CVE-2025-50365_CSRF_DELETE_CATEGORY-phpgurukul-CVE](https://github.com/1h3ll/CVE-2025-50365_CSRF_DELETE_CATEGORY-phpgurukul-CVE)
 
+### CVE-2025-50460
+- [Anchor0221/CVE-2025-50460](https://github.com/Anchor0221/CVE-2025-50460)
+
 ### CVE-2025-50472
 - [xhjy2020/CVE-2025-50472](https://github.com/xhjy2020/CVE-2025-50472)
 
@@ -3813,7 +3856,11 @@
 ### CVE-2025-50716
 - [MooseLoveti/realestate-php-cve-report](https://github.com/MooseLoveti/realestate-php-cve-report)
 
-### CVE-2025-50777
+### CVE-2025-50777 (2025-07-30)
+
+<code>The firmware of the AZIOT 2MP Full HD Smart Wi-Fi CCTV Home Security Camera (version V1.00.02) contains an Incorrect Access Control vulnerability that allows local attackers to gain root shell access. Once accessed, the device exposes critical data including Wi-Fi credentials and ONVIF service credentials stored in plaintext, enabling further compromise of the network and connected systems.
+</code>
+
 - [veereshgadige/aziot-cctv-cve-2025-50777](https://github.com/veereshgadige/aziot-cctv-cve-2025-50777)
 
 ### CVE-2025-50866
@@ -4106,6 +4153,13 @@
 
 ### CVE-2025-54554
 - [Aman-Parmar/CVE-2025-54554](https://github.com/Aman-Parmar/CVE-2025-54554)
+
+### CVE-2025-54769 (2025-07-28)
+
+<code>An authenticated, read-only user can upload a file and perform a directory traversal to have the uploaded file placed in a location of their choosing.  This can be used to overwrite existing PERL modules within the application to achieve remote code execution (RCE) by an attacker.
+</code>
+
+- [byteReaper77/CVE-2025-54769](https://github.com/byteReaper77/CVE-2025-54769)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -8800,7 +8854,6 @@
 - [ivanbg2004/ODH-BricksBuilder-CVE-2024-25600-THM](https://github.com/ivanbg2004/ODH-BricksBuilder-CVE-2024-25600-THM)
 - [DedsecTeam-BlackHat/Poleposph](https://github.com/DedsecTeam-BlackHat/Poleposph)
 - [r0otk3r/CVE-2024-25600](https://github.com/r0otk3r/CVE-2024-25600)
-- [frankfm-labs/bricks-rce-writeup](https://github.com/frankfm-labs/bricks-rce-writeup)
 
 ### CVE-2024-25641 (2024-05-13)
 
@@ -10306,6 +10359,12 @@
 </code>
 
 - [vincentscode/CVE-2024-34313](https://github.com/vincentscode/CVE-2024-34313)
+
+### CVE-2024-34327
+- [0xsu3ks/CVE-2024-34327](https://github.com/0xsu3ks/CVE-2024-34327)
+
+### CVE-2024-34328
+- [0xsu3ks/CVE-2024-34328](https://github.com/0xsu3ks/CVE-2024-34328)
 
 ### CVE-2024-34329 (2024-07-22)
 
@@ -14856,6 +14915,13 @@
 - [Any3ite/CVE-2023-2523](https://github.com/Any3ite/CVE-2023-2523)
 - [werwolfz/cve-2023-2523-and-cve-2023-2648](https://github.com/werwolfz/cve-2023-2523-and-cve-2023-2648)
 
+### CVE-2023-2533 (2023-06-20)
+
+<code>A Cross-Site Request Forgery (CSRF) vulnerability has been identified in\nPaperCut NG/MF, which, under specific conditions, could potentially enable\nan attacker to alter security settings or execute arbitrary code. This could\nbe exploited if the target is an admin with a current login session. Exploiting\nthis would typically involve the possibility of deceiving an admin into clicking\na specially crafted malicious link, potentially leading to unauthorized changes.\n
+</code>
+
+- [allinsthon/CVE-2023-2533](https://github.com/allinsthon/CVE-2023-2533)
+
 ### CVE-2023-2579 (2023-07-17)
 
 <code>The InventoryPress WordPress plugin through 1.7 does not sanitise and escape some of its settings, which could allow users with the role of author and above to perform Stored Cross-Site Scripting attacks.
@@ -15210,7 +15276,6 @@
 </code>
 
 - [jhonnybonny/CVE-2023-3824](https://github.com/jhonnybonny/CVE-2023-3824)
-- [fr33c0d3/poc-cve-2023-3824](https://github.com/fr33c0d3/poc-cve-2023-3824)
 - [bluefish3r/poc-cve](https://github.com/bluefish3r/poc-cve)
 
 ### CVE-2023-3836 (2023-07-22)
@@ -16682,6 +16747,13 @@
 
 - [smash8tap/CVE-2023-22490_PoC](https://github.com/smash8tap/CVE-2023-22490_PoC)
 
+### CVE-2023-22493 (2023-01-13)
+
+<code>RSSHub is an open source RSS feed generator. RSSHub is vulnerable to Server-Side Request Forgery (SSRF) attacks. This vulnerability allows an attacker to send arbitrary HTTP requests from the server to other servers or resources on the network. An attacker can exploit this vulnerability by sending a request to the affected routes with a malicious URL. An attacker could also use this vulnerability to send requests to internal or any other servers or resources on the network, potentially gain access to sensitive information that would not normally be accessible and amplifying the impact of the attack. The patch for this issue can be found in commit a66cbcf. 
+</code>
+
+- [buitanhung144/SSRF-CVE-2023-22493](https://github.com/buitanhung144/SSRF-CVE-2023-22493)
+
 ### CVE-2023-22515 (2023-10-04)
 
 <code>Atlassian has been made aware of an issue reported by a handful of customers where external attackers may have exploited a previously unknown vulnerability in publicly accessible Confluence Data Center and Server instances to create unauthorized Confluence administrator accounts and access Confluence instances. \r\n\r\nAtlassian Cloud sites are not affected by this vulnerability. If your Confluence site is accessed via an atlassian.net domain, it is hosted by Atlassian and is not vulnerable to this issue. 
@@ -16810,6 +16882,7 @@
 - [AntiVlad/CVE-2023-22809](https://github.com/AntiVlad/CVE-2023-22809)
 - [laxmiyamkolu/SUDO-privilege-escalation](https://github.com/laxmiyamkolu/SUDO-privilege-escalation)
 - [D0rDa4aN919/CVE-2023-22809-Exploiter](https://github.com/D0rDa4aN919/CVE-2023-22809-Exploiter)
+- [spidoman/CVE-2023-22809-automated-python-exploits](https://github.com/spidoman/CVE-2023-22809-automated-python-exploits)
 
 ### CVE-2023-22855 (2023-02-15)
 
@@ -35345,7 +35418,7 @@
 - [javaamo/CVE-2021-41773](https://github.com/javaamo/CVE-2021-41773)
 - [ashique-thaha/CVE-2021-41773-POC](https://github.com/ashique-thaha/CVE-2021-41773-POC)
 - [khaidtraivch/CVE-2021-41773-Apache-2.4.49-](https://github.com/khaidtraivch/CVE-2021-41773-Apache-2.4.49-)
-- [Ask-os/CVE-2021-41773](https://github.com/Ask-os/CVE-2021-41773)
+- [AzK-os-dev/CVE-2021-41773](https://github.com/AzK-os-dev/CVE-2021-41773)
 - [CyberQuestor-infosec/CVE-2021-41773-Apache_2.4.49-Path-traversal-to-RCE](https://github.com/CyberQuestor-infosec/CVE-2021-41773-Apache_2.4.49-Path-traversal-to-RCE)
 - [psibot/apache-vulnerable](https://github.com/psibot/apache-vulnerable)
 - [blu3ming/PoC-CVE-2021-41773](https://github.com/blu3ming/PoC-CVE-2021-41773)
@@ -39453,6 +39526,13 @@
 </code>
 
 - [zhzyker/CVE-2020-10204](https://github.com/zhzyker/CVE-2020-10204)
+
+### CVE-2020-10220 (2020-03-07)
+
+<code>An issue was discovered in rConfig through 3.9.4. The web interface is prone to a SQL injection via the commands.inc.php searchColumn parameter.
+</code>
+
+- [CSpanias/rConfig_rce](https://github.com/CSpanias/rConfig_rce)
 
 ### CVE-2020-10238 (2020-03-16)
 
@@ -49135,7 +49215,7 @@
 - [tin-z/CVE-2018-14714-POC](https://github.com/tin-z/CVE-2018-14714-POC)
 - [sunn1day/CVE-2018-14714-POC](https://github.com/sunn1day/CVE-2018-14714-POC)
 - [BTtea/CVE-2018-14714-RCE-exploit](https://github.com/BTtea/CVE-2018-14714-RCE-exploit)
-- [ediop3SquadALT/TimeInjector](https://github.com/ediop3SquadALT/TimeInjector)
+- [BreadSquad/TimeInjector](https://github.com/BreadSquad/TimeInjector)
 
 ### CVE-2018-14716 (2018-08-06)
 
@@ -50906,6 +50986,7 @@
 - [toothbrushsoapflannelbiscuits/cve-2017-5638](https://github.com/toothbrushsoapflannelbiscuits/cve-2017-5638)
 - [haxerr9/CVE-2017-5638](https://github.com/haxerr9/CVE-2017-5638)
 - [QHxDr-dz/CVE-2017-5638](https://github.com/QHxDr-dz/CVE-2017-5638)
+- [joidiego/Detection-struts-cve-2017-5638-detector](https://github.com/joidiego/Detection-struts-cve-2017-5638-detector)
 
 ### CVE-2017-5645 (2017-04-17)
 
