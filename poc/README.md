@@ -563,6 +563,7 @@
 </code>
 
 - [Stuub/CVE-2025-3969-Exploit](https://github.com/Stuub/CVE-2025-3969-Exploit)
+- [Alif145/CVE-2025-3969-Exploit](https://github.com/Alif145/CVE-2025-3969-Exploit)
 
 ### CVE-2025-4094 (2025-05-21)
 
@@ -829,6 +830,13 @@
 </code>
 
 - [olimpiofreitas/CVE-2025-5349-Scanner](https://github.com/olimpiofreitas/CVE-2025-5349-Scanner)
+
+### CVE-2025-5394 (2025-07-15)
+
+<code>The Alone – Charity Multipurpose Non-profit WordPress Theme theme for WordPress is vulnerable to arbitrary file uploads due to a missing capability check on the alone_import_pack_install_plugin() function in all versions up to, and including, 7.8.3. This makes it possible for unauthenticated attackers to upload zip files containing webshells disguised as plugins from remote locations to achieve remote code execution.
+</code>
+
+- [fokda-prodz/CVE-2025-5394](https://github.com/fokda-prodz/CVE-2025-5394)
 
 ### CVE-2025-5419 (2025-06-02)
 
@@ -2184,6 +2192,7 @@
 - [incommatose/CVE-2025-27591-PoC](https://github.com/incommatose/CVE-2025-27591-PoC)
 - [00xCanelo/CVE-2025-27591](https://github.com/00xCanelo/CVE-2025-27591)
 - [Thekin-ctrl/CVE-2025-27591-Below](https://github.com/Thekin-ctrl/CVE-2025-27591-Below)
+- [Cythonic1/CVE-2025-27591](https://github.com/Cythonic1/CVE-2025-27591)
 
 ### CVE-2025-27607 (2025-03-07)
 
@@ -2366,10 +2375,18 @@
 
 - [Yoshik0xF6/CVE-2025-29529](https://github.com/Yoshik0xF6/CVE-2025-29529)
 
-### CVE-2025-29556
+### CVE-2025-29556 (2025-07-31)
+
+<code>ExaGrid EX10 6.3 - 7.0.1.P08 is vulnerable to Incorrect Access Control. Since version 6.3, ExaGrid enforces restrictions preventing users with the Admin role from creating or modifying users with the Security Officer role without approval. However, a flaw in the account creation process allows an attacker to bypass these restrictions via API request manipulation. An attacker with an Admin access can intercept and modify the API request during user creation, altering the parameters to assign the new account to the ExaGrid Security Officers group without the required approval.
+</code>
+
 - [0xsu3ks/CVE-2025-29556](https://github.com/0xsu3ks/CVE-2025-29556)
 
-### CVE-2025-29557
+### CVE-2025-29557 (2025-07-31)
+
+<code>ExaGrid EX10 6.3 - 7.0.1.P08 is vulnerable to Incorrect Access Control in the MailConfiguration API endpoint, where users with operator-level privileges can issue an HTTP request to retrieve SMTP credentials, including plaintext passwords.
+</code>
+
 - [0xsu3ks/CVE-2025-29557](https://github.com/0xsu3ks/CVE-2025-29557)
 
 ### CVE-2025-29602 (2025-05-07)
@@ -2645,6 +2662,7 @@
 </code>
 
 - [W01fh4cker/CVE-2025-30406](https://github.com/W01fh4cker/CVE-2025-30406)
+- [mchklt/CVE-2025-30406](https://github.com/mchklt/CVE-2025-30406)
 
 ### CVE-2025-30567 (2025-03-25)
 
@@ -3831,6 +3849,12 @@
 ### CVE-2025-50000
 - [adiivascu/CVE-2025-50000](https://github.com/adiivascu/CVE-2025-50000)
 
+### CVE-2025-50340
+- [millad7/SOGo_web_mail-vulnerability-CVE-2025-50340](https://github.com/millad7/SOGo_web_mail-vulnerability-CVE-2025-50340)
+
+### CVE-2025-50341
+- [millad7/Axelor-vulnerability-CVE-2025-50341](https://github.com/millad7/Axelor-vulnerability-CVE-2025-50341)
+
 ### CVE-2025-50363
 - [1h3ll/CVE-2025-50363_BXSS_CVE](https://github.com/1h3ll/CVE-2025-50363_BXSS_CVE)
 
@@ -3856,6 +3880,9 @@
 ### CVE-2025-50716
 - [MooseLoveti/realestate-php-cve-report](https://github.com/MooseLoveti/realestate-php-cve-report)
 
+### CVE-2025-50754
+- [furk4nyildiz/CVE-2025-50754-PoC](https://github.com/furk4nyildiz/CVE-2025-50754-PoC)
+
 ### CVE-2025-50777 (2025-07-30)
 
 <code>The firmware of the AZIOT 2MP Full HD Smart Wi-Fi CCTV Home Security Camera (version V1.00.02) contains an Incorrect Access Control vulnerability that allows local attackers to gain root shell access. Once accessed, the device exposes critical data including Wi-Fi credentials and ONVIF service credentials stored in plaintext, enabling further compromise of the network and connected systems.
@@ -3863,16 +3890,28 @@
 
 - [veereshgadige/aziot-cctv-cve-2025-50777](https://github.com/veereshgadige/aziot-cctv-cve-2025-50777)
 
-### CVE-2025-50866
+### CVE-2025-50866 (2025-07-31)
+
+<code>CloudClassroom-PHP-Project 1.0 contains a reflected Cross-site Scripting (XSS) vulnerability in the email parameter of the postquerypublic endpoint. Improper sanitization allows an attacker to inject arbitrary JavaScript code that executes in the context of the user s browser, potentially leading to session hijacking or phishing attacks.
+</code>
+
 - [SacX-7/CVE-2025-50866](https://github.com/SacX-7/CVE-2025-50866)
 
-### CVE-2025-50867
+### CVE-2025-50867 (2025-07-31)
+
+<code>A SQL Injection vulnerability exists in the takeassessment2.php endpoint of the CloudClassroom-PHP-Project 1.0, where the Q5 POST parameter is directly embedded in SQL statements without sanitization.
+</code>
+
 - [SacX-7/CVE-2025-50867](https://github.com/SacX-7/CVE-2025-50867)
 
 ### CVE-2025-51046
 - [0xMesh-X/CVE-2025-51046](https://github.com/0xMesh-X/CVE-2025-51046)
 
-### CVE-2025-51385
+### CVE-2025-51385 (2025-07-31)
+
+<code>D-LINK DI-8200 16.07.26A1 is vulnerable to Buffer Overflow in the yyxz_dlink_asp function via the id parameter.
+</code>
+
 - [saarcastified/CVE-2023-51385---OpenSSH-ProxyCommand-Injection-PoC](https://github.com/saarcastified/CVE-2023-51385---OpenSSH-ProxyCommand-Injection-PoC)
 
 ### CVE-2025-51396 (2025-07-21)
@@ -3923,6 +3962,16 @@
 </code>
 
 - [tansique-17/CVE-2025-51411](https://github.com/tansique-17/CVE-2025-51411)
+
+### CVE-2025-51482 (2025-07-22)
+
+<code>Remote Code Execution in letta.server.rest_api.routers.v1.tools.run_tool_from_source in letta-ai Letta 0.7.12 allows remote attackers to execute arbitrary Python code and system commands via crafted payloads to the /v1/tools/run endpoint, bypassing intended sandbox restrictions.
+</code>
+
+- [Kai-One001/Letta-CVE-2025-51482-RCE](https://github.com/Kai-One001/Letta-CVE-2025-51482-RCE)
+
+### CVE-2025-51726
+- [meisterlos/CVE-2025-51726](https://github.com/meisterlos/CVE-2025-51726)
 
 ### CVE-2025-51858 (2025-07-22)
 
@@ -4004,7 +4053,12 @@
 ### CVE-2025-52097
 - [rwilsonecs/CVE-2025-52097](https://github.com/rwilsonecs/CVE-2025-52097)
 
-### CVE-2025-52289
+### CVE-2025-52289 (2025-07-31)
+
+<code>A Broken Access Control vulnerability in MagnusBilling v7.8.5.3 allows newly registered users to gain escalated privileges by sending a crafted request to /mbilling/index.php/user/save to set their account status fom &quot;pending&quot; to &quot;active&quot; without requiring administrator approval.
+</code>
+
+- [Whit3-d3viL-hacker/CVE-2025-52289](https://github.com/Whit3-d3viL-hacker/CVE-2025-52289)
 - [Madhav-Bhardwaj/CVE-2025-52289](https://github.com/Madhav-Bhardwaj/CVE-2025-52289)
 
 ### CVE-2025-52357 (2025-07-09)
@@ -4153,6 +4207,13 @@
 
 ### CVE-2025-54554
 - [Aman-Parmar/CVE-2025-54554](https://github.com/Aman-Parmar/CVE-2025-54554)
+
+### CVE-2025-54589 (2025-07-31)
+
+<code>Copyparty is a portable file server. In versions 1.18.6 and below, when accessing the recent uploads page at `/?ru`, users can filter the results using an input field at the top. This field appends a filter parameter to the URL, which reflects its value directly into a `&lt;script&gt;` block without proper escaping, allowing for reflected Cross-Site Scripting (XSS) and can be exploited against both authenticated and unauthenticated users. This is fixed in version 1.18.7.
+</code>
+
+- [byteReaper77/CVE-2025-54589](https://github.com/byteReaper77/CVE-2025-54589)
 
 ### CVE-2025-54769 (2025-07-28)
 
@@ -5092,6 +5153,7 @@
 
 - [truonghuuphuc/CVE-2024-3552-Poc](https://github.com/truonghuuphuc/CVE-2024-3552-Poc)
 - [KiPhuong/cve-2024-3552](https://github.com/KiPhuong/cve-2024-3552)
+- [KiPhuong/challenge-cve-2024-3552](https://github.com/KiPhuong/challenge-cve-2024-3552)
 
 ### CVE-2024-3568 (2024-04-10)
 
@@ -10360,10 +10422,18 @@
 
 - [vincentscode/CVE-2024-34313](https://github.com/vincentscode/CVE-2024-34313)
 
-### CVE-2024-34327
+### CVE-2024-34327 (2025-07-31)
+
+<code>Sielox AnyWare v2.1.2 was discovered to contain a SQL injection vulnerability via the email address field of the password reset form.
+</code>
+
 - [0xsu3ks/CVE-2024-34327](https://github.com/0xsu3ks/CVE-2024-34327)
 
-### CVE-2024-34328
+### CVE-2024-34328 (2025-07-31)
+
+<code>An open redirect in Sielox AnyWare v2.1.2 allows attackers to execute a man-in-the-middle attack via a crafted URL.
+</code>
+
 - [0xsu3ks/CVE-2024-34328](https://github.com/0xsu3ks/CVE-2024-34328)
 
 ### CVE-2024-34329 (2024-07-22)
@@ -13957,6 +14027,13 @@
 
 - [nikosecurity/CVE-2024-55511](https://github.com/nikosecurity/CVE-2024-55511)
 
+### CVE-2024-55555 (2025-01-07)
+
+<code>Invoice Ninja before 5.10.43 allows remote code execution from a pre-authenticated route when an attacker knows the APP_KEY. This is exacerbated by .env files, available from the product's repository, that have default APP_KEY values. The route/{hash} route defined in the invoiceninja/routes/client.php file can be accessed without authentication. The parameter {hash} is passed to the function decrypt that expects a Laravel ciphered value containing a serialized object. (Furthermore, Laravel contains several gadget chains usable to trigger remote command execution from arbitrary deserialization.) Therefore, an attacker in possession of the APP_KEY is able to fully control a string passed to an unserialize function.
+</code>
+
+- [Yucaerin/CVE-2024-55555](https://github.com/Yucaerin/CVE-2024-55555)
+
 ### CVE-2024-55557 (2024-12-16)
 
 <code>ui/pref/ProxyPrefView.java in weasis-core in Weasis 4.5.1 has a hardcoded key for symmetric encryption of proxy credentials.
@@ -14484,6 +14561,7 @@
 </code>
 
 - [im-hanzou/EVCer](https://github.com/im-hanzou/EVCer)
+- [Sn20393873/Extensive](https://github.com/Sn20393873/Extensive)
 
 ### CVE-2023-0179 (2023-03-27)
 
@@ -16904,6 +16982,7 @@
 </code>
 
 - [Saboor-Hakimi/CVE-2023-22894](https://github.com/Saboor-Hakimi/CVE-2023-22894)
+- [maxntv24/CVE-2023-22894-PoC](https://github.com/maxntv24/CVE-2023-22894-PoC)
 
 ### CVE-2023-22906 (2023-07-03)
 
@@ -17101,6 +17180,7 @@
 - [h3x0v3rl0rd/CVE-2023-23752](https://github.com/h3x0v3rl0rd/CVE-2023-23752)
 - [revkami/CVE-2023-23752-Joomla-v4.2.8](https://github.com/revkami/CVE-2023-23752-Joomla-v4.2.8)
 - [Aureum01/CVE-2023-23752](https://github.com/Aureum01/CVE-2023-23752)
+- [0xVoodoo/CVE-2023-23752](https://github.com/0xVoodoo/CVE-2023-23752)
 
 ### CVE-2023-23924 (2023-01-31)
 
@@ -22295,6 +22375,7 @@
 - [engranaabubakar/CVE-2023-46818](https://github.com/engranaabubakar/CVE-2023-46818)
 - [hunntr/CVE-2023-46818](https://github.com/hunntr/CVE-2023-46818)
 - [SyFi/CVE-2023-46818](https://github.com/SyFi/CVE-2023-46818)
+- [vulnerk0/CVE-2023-46818](https://github.com/vulnerk0/CVE-2023-46818)
 
 ### CVE-2023-46865 (2023-10-30)
 
@@ -23855,7 +23936,7 @@
 - [im-hanzou/fubucker](https://github.com/im-hanzou/fubucker)
 - [zycoder0day/CVE-2022-1386-Mass_Vulnerability](https://github.com/zycoder0day/CVE-2022-1386-Mass_Vulnerability)
 - [satyasai1460/CVE-2022-1386](https://github.com/satyasai1460/CVE-2022-1386)
-- [cur1y-dev/CVE-2022-1386](https://github.com/cur1y-dev/CVE-2022-1386)
+- [ptrgits/CVE-2022-1386](https://github.com/ptrgits/CVE-2022-1386)
 - [fayassgit/CVE-2022-1386-FusionBuilder-SSRF](https://github.com/fayassgit/CVE-2022-1386-FusionBuilder-SSRF)
 
 ### CVE-2022-1388 (2022-05-05)
@@ -27136,7 +27217,7 @@
 <code>ZoneMinder before 1.36.13 allows remote code execution via an invalid language. Ability to create a debug log file at an arbitrary pathname contributes to exploitability.
 </code>
 
-- [OP3R4T0R/CVE-2022-29806](https://github.com/OP3R4T0R/CVE-2022-29806)
+- [Sigm0n/CVE-2022-29806](https://github.com/Sigm0n/CVE-2022-29806)
 
 ### CVE-2022-29856 (2022-04-29)
 
@@ -28000,6 +28081,13 @@
 </code>
 
 - [sorabug/bug_report](https://github.com/sorabug/bug_report)
+
+### CVE-2022-34155 (2023-07-18)
+
+<code>Improper Authentication vulnerability in miniOrange OAuth Single Sign On – SSO (OAuth Client) plugin allows Authentication Bypass.This issue affects OAuth Single Sign On – SSO (OAuth Client): from n/a through 6.23.3.\n\n
+</code>
+
+- [vanh-88/CVE-2022-34155](https://github.com/vanh-88/CVE-2022-34155)
 
 ### CVE-2022-34169 (2022-07-19)
 
@@ -29568,6 +29656,7 @@
 - [katseyres2/CVE-2022-44268-pilgrimage](https://github.com/katseyres2/CVE-2022-44268-pilgrimage)
 - [J0ey17/Automate_Exploit_CVE-2022-44268](https://github.com/J0ey17/Automate_Exploit_CVE-2022-44268)
 - [jkobierczynski/cve-2022-44268](https://github.com/jkobierczynski/cve-2022-44268)
+- [mouftan/CVE-2022-44268](https://github.com/mouftan/CVE-2022-44268)
 
 ### CVE-2022-44276 (2023-06-28)
 
@@ -31465,7 +31554,6 @@
 - [ayoub-elbouzi/CVE-2021-4034-Pwnkit](https://github.com/ayoub-elbouzi/CVE-2021-4034-Pwnkit)
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [glowbase/PwnKit-CVE-2021-4034](https://github.com/glowbase/PwnKit-CVE-2021-4034)
-- [codiobert/pwnkit-scanner](https://github.com/codiobert/pwnkit-scanner)
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
 - [teelrabbit/Polkit-pkexec-exploit-for-Linux](https://github.com/teelrabbit/Polkit-pkexec-exploit-for-Linux)
 - [scent2d/PoC-CVE-2021-4034](https://github.com/scent2d/PoC-CVE-2021-4034)
@@ -35423,6 +35511,7 @@
 - [psibot/apache-vulnerable](https://github.com/psibot/apache-vulnerable)
 - [blu3ming/PoC-CVE-2021-41773](https://github.com/blu3ming/PoC-CVE-2021-41773)
 - [r0otk3r/CVE-2021-41773](https://github.com/r0otk3r/CVE-2021-41773)
+- [rajaabdullahnasir/CVE-2021-41773_exploitation](https://github.com/rajaabdullahnasir/CVE-2021-41773_exploitation)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -51140,7 +51229,7 @@
 
 ### CVE-2017-6736 (2017-07-17)
 
-<code>The Simple Network Management Protocol (SNMP) subsystem of Cisco IOS 12.0 through 12.4 and 15.0 through 15.6 and IOS XE 2.2 through 3.17 contains multiple vulnerabilities that could allow an authenticated, remote attacker to remotely execute code on an affected system or cause an affected system to reload. An attacker could exploit these vulnerabilities by sending a crafted SNMP packet to an affected system via IPv4 or IPv6. Only traffic directed to an affected system can be used to exploit these vulnerabilities. The vulnerabilities are due to a buffer overflow condition in the SNMP subsystem of the affected software. The vulnerabilities affect all versions of SNMP: Versions 1, 2c, and 3. To exploit these vulnerabilities via SNMP Version 2c or earlier, the attacker must know the SNMP read-only community string for the affected system. To exploit these vulnerabilities via SNMP Version 3, the attacker must have user credentials for the affected system. All devices that have enabled SNMP and have not explicitly excluded the affected MIBs or OIDs should be considered vulnerable. Cisco Bug IDs: CSCve57697.
+<code>The Simple Network Management Protocol (SNMP) subsystem of Cisco IOS and IOS XE Software contains multiple vulnerabilities that could allow an authenticated, remote attacker to remotely execute code on an affected system or cause an affected system to reload. An attacker could exploit these vulnerabilities by sending a crafted SNMP packet to an affected system via IPv4 or IPv6. Only traffic directed to an affected system can be used to exploit these vulnerabilities.\r\n\r The vulnerabilities are due to a buffer overflow condition in the SNMP subsystem of the affected software. The vulnerabilities affect all versions of SNMP - Versions 1, 2c, and 3. To exploit these vulnerabilities via SNMP Version 2c or earlier, the attacker must know the SNMP read-only community string for the affected system. To exploit these vulnerabilities via SNMP Version 3, the attacker must have user credentials for the affected system. A successful exploit could allow the attacker to execute arbitrary code and obtain full control of the affected system or cause the affected system to reload.\r\n\r Customers are advised to apply the workaround as contained in the Workarounds section below. Fixed software information is available via the Cisco IOS Software Checker. All devices that have enabled SNMP and have not explicitly excluded the affected MIBs or OIDs should be considered vulnerable.\r\n\r   There are workarounds that address these vulnerabilities.
 </code>
 
 - [garnetsunset/CiscoSpectreTakeover](https://github.com/garnetsunset/CiscoSpectreTakeover)
@@ -53445,6 +53534,7 @@
 </code>
 
 - [hansnielsen/tiffdisabler](https://github.com/hansnielsen/tiffdisabler)
+- [l3onkers/FuxiOS](https://github.com/l3onkers/FuxiOS)
 
 ### CVE-2016-4655 (2016-08-25)
 
@@ -53576,6 +53666,7 @@
 - [LiEnby/PSSRoot](https://github.com/LiEnby/PSSRoot)
 - [0x3n19m4/CVE-2016-5195](https://github.com/0x3n19m4/CVE-2016-5195)
 - [Samuel-G3/Escalamiento-de-Privilegios-usando-el-Kernel-Exploit-Dirty-Cow](https://github.com/Samuel-G3/Escalamiento-de-Privilegios-usando-el-Kernel-Exploit-Dirty-Cow)
+- [mohammadamin382/dirtycow-lab](https://github.com/mohammadamin382/dirtycow-lab)
 
 ### CVE-2016-5345 (2018-01-23)
 
