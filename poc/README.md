@@ -695,6 +695,13 @@
 
 - [d0n601/CVE-2025-4603](https://github.com/d0n601/CVE-2025-4603)
 
+### CVE-2025-4606 (2025-07-09)
+
+<code>The Sala - Startup &amp; SaaS WordPress Theme theme for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 1.1.4. This is due to the theme not properly validating a user's identity prior to updating their details like password. This makes it possible for unauthenticated attackers to change arbitrary user's passwords, including administrators, and leverage that to gain access to their account.
+</code>
+
+- [Yucaerin/CVE-2025-4606](https://github.com/Yucaerin/CVE-2025-4606)
+
 ### CVE-2025-4611 (2025-05-21)
 
 <code>The Slim SEO – Fast &amp; Automated WordPress SEO Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's slim_seo_breadcrumbs shortcode in all versions up to, and including, 4.5.3 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
@@ -837,6 +844,8 @@
 </code>
 
 - [fokda-prodz/CVE-2025-5394](https://github.com/fokda-prodz/CVE-2025-5394)
+- [Nxploited/CVE-2025-5394](https://github.com/Nxploited/CVE-2025-5394)
+- [Yucaerin/CVE-2025-5394](https://github.com/Yucaerin/CVE-2025-5394)
 
 ### CVE-2025-5419 (2025-06-02)
 
@@ -1140,6 +1149,13 @@
 </code>
 
 - [byteReaper77/CVE-2025-7840](https://github.com/byteReaper77/CVE-2025-7840)
+
+### CVE-2025-7847 (2025-07-31)
+
+<code>The AI Engine plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the rest_simpleFileUpload() function in versions 2.9.3 and 2.9.4. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server when the REST API is enabled, which may make remote code execution possible.
+</code>
+
+- [EricArdiansa/CVE-2025-7847-POC](https://github.com/EricArdiansa/CVE-2025-7847-POC)
 
 ### CVE-2025-8018 (2025-07-22)
 
@@ -1708,6 +1724,8 @@
 
 - [iSee857/CVE-2025-24893-PoC](https://github.com/iSee857/CVE-2025-24893-PoC)
 - [Artemir7/CVE-2025-24893-EXP](https://github.com/Artemir7/CVE-2025-24893-EXP)
+- [nopgadget/CVE-2025-24893](https://github.com/nopgadget/CVE-2025-24893)
+- [Kai7788/CVE-2025-24893-RCE-PoC](https://github.com/Kai7788/CVE-2025-24893-RCE-PoC)
 
 ### CVE-2025-24963 (2025-02-04)
 
@@ -2562,6 +2580,7 @@
 - [B1ack4sh/Blackash-CVE-2025-29927](https://github.com/B1ack4sh/Blackash-CVE-2025-29927)
 - [amitlttwo/Next.JS-CVE-2025-29927](https://github.com/amitlttwo/Next.JS-CVE-2025-29927)
 - [KamalideenAK/poc-cve-2025-29927](https://github.com/KamalideenAK/poc-cve-2025-29927)
+- [aayush256-sys/next-js-auth-bypass](https://github.com/aayush256-sys/next-js-auth-bypass)
 - [mickhacking/Thank-u-Next](https://github.com/mickhacking/Thank-u-Next)
 - [Kamal-Hegazi/CVE-2025-29927-Next.js-Middleware-Authorization-Bypass](https://github.com/Kamal-Hegazi/CVE-2025-29927-Next.js-Middleware-Authorization-Bypass)
 - [sahbaazansari/CVE-2025-29927](https://github.com/sahbaazansari/CVE-2025-29927)
@@ -3706,6 +3725,8 @@
 - [IK-20211125/CVE-2025-48384](https://github.com/IK-20211125/CVE-2025-48384)
 - [elprogramadorgt/CVE-2025-48384](https://github.com/elprogramadorgt/CVE-2025-48384)
 - [f1shh/CVE-2025-48384](https://github.com/f1shh/CVE-2025-48384)
+- [fluoworite/CVE-2025-48384_sub](https://github.com/fluoworite/CVE-2025-48384_sub)
+- [fluoworite/CVE-2025-48384](https://github.com/fluoworite/CVE-2025-48384)
 
 ### CVE-2025-48461 (2025-06-24)
 
@@ -4195,6 +4216,7 @@
 - [daryllundy/CVE-2025-53770](https://github.com/daryllundy/CVE-2025-53770)
 - [0x-crypt/CVE-2025-53770-Scanner](https://github.com/0x-crypt/CVE-2025-53770-Scanner)
 - [Immersive-Labs-Sec/SharePoint-CVE-2025-53770-POC](https://github.com/Immersive-Labs-Sec/SharePoint-CVE-2025-53770-POC)
+- [harryhaxor/CVE-2025-53770-SharePoint-Deserialization-RCE-PoC](https://github.com/harryhaxor/CVE-2025-53770-SharePoint-Deserialization-RCE-PoC)
 
 ### CVE-2025-53833 (2025-07-14)
 
@@ -4209,6 +4231,9 @@
 </code>
 
 - [tigr78/CVE-2025-53964](https://github.com/tigr78/CVE-2025-53964)
+
+### CVE-2025-54135
+- [allinsthon/CVE-2025-54135](https://github.com/allinsthon/CVE-2025-54135)
 
 ### CVE-2025-54309 (2025-07-18)
 
@@ -7785,6 +7810,7 @@
 - [FlojBoj/CVE-2024-21626](https://github.com/FlojBoj/CVE-2024-21626)
 - [Sk3pper/CVE-2024-21626-old-docker-versions](https://github.com/Sk3pper/CVE-2024-21626-old-docker-versions)
 - [adaammmeeee/little-joke](https://github.com/adaammmeeee/little-joke)
+- [R4mbb/CVE-2024-21626-PoC](https://github.com/R4mbb/CVE-2024-21626-PoC)
 
 ### CVE-2024-21633 (2024-01-03)
 
@@ -12046,6 +12072,7 @@
 - [RedTeamPentesting/moodle-rce-calculatedquestions](https://github.com/RedTeamPentesting/moodle-rce-calculatedquestions)
 - [Snizi/Moodle-CVE-2024-43425-Exploit](https://github.com/Snizi/Moodle-CVE-2024-43425-Exploit)
 - [aninfosec/CVE-2024-43425-Poc](https://github.com/aninfosec/CVE-2024-43425-Poc)
+- [aayush256-sys/Moodle-authenticated-RCE](https://github.com/aayush256-sys/Moodle-authenticated-RCE)
 
 ### CVE-2024-43451 (2024-11-12)
 
@@ -22123,7 +22150,7 @@
 - [nrazv/CVE-2023-45878](https://github.com/nrazv/CVE-2023-45878)
 - [PaulDHaes/CVE-2023-45878-POC](https://github.com/PaulDHaes/CVE-2023-45878-POC)
 - [killercd/CVE-2023-45878](https://github.com/killercd/CVE-2023-45878)
-- [0xyy66/CVE-2023-45878_to_RCE](https://github.com/0xyy66/CVE-2023-45878_to_RCE)
+- [byt3loss/CVE-2023-45878_to_RCE](https://github.com/byt3loss/CVE-2023-45878_to_RCE)
 - [davidzzo23/CVE-2023-45878](https://github.com/davidzzo23/CVE-2023-45878)
 - [Can0I0Ever0Enter/CVE-2023-45878](https://github.com/Can0I0Ever0Enter/CVE-2023-45878)
 - [ulricvbs/gibbonlms-filewrite_rce](https://github.com/ulricvbs/gibbonlms-filewrite_rce)
@@ -37882,7 +37909,7 @@
 - [z3ena/Exploiting-and-Mitigating-CVE-2020-0796-SMBGhost-and-Print-Spooler-Vulnerabilities](https://github.com/z3ena/Exploiting-and-Mitigating-CVE-2020-0796-SMBGhost-and-Print-Spooler-Vulnerabilities)
 - [Kaizzzo1/CVE-2020-0796](https://github.com/Kaizzzo1/CVE-2020-0796)
 - [monjheta/CVE-2020-0796](https://github.com/monjheta/CVE-2020-0796)
-- [madanokr001/CVE-2020-0796](https://github.com/madanokr001/CVE-2020-0796)
+- [cybermads/CVE-2020-0796](https://github.com/cybermads/CVE-2020-0796)
 - [DannyRavi/nmap-scripts](https://github.com/DannyRavi/nmap-scripts)
 - [tdevworks/CVE-2020-0796-SMBGhost-Exploit-Demo](https://github.com/tdevworks/CVE-2020-0796-SMBGhost-Exploit-Demo)
 - [maqeel-git/CVE-2020-0796](https://github.com/maqeel-git/CVE-2020-0796)
@@ -38962,7 +38989,7 @@
 </code>
 
 - [3ndG4me/liferay-xss-7.2.1GA2-poc-report-CVE-2020-7934](https://github.com/3ndG4me/liferay-xss-7.2.1GA2-poc-report-CVE-2020-7934)
-- [Sergio235705/audit-xss-cve-2020-7934](https://github.com/Sergio235705/audit-xss-cve-2020-7934)
+- [giardinas-dev/audit-xss-cve-2020-7934](https://github.com/giardinas-dev/audit-xss-cve-2020-7934)
 
 ### CVE-2020-7961 (2020-03-20)
 
@@ -57060,7 +57087,7 @@
 - [NullBrunk/CVE-2011-2523](https://github.com/NullBrunk/CVE-2011-2523)
 - [Lychi3/vsftpd-backdoor](https://github.com/Lychi3/vsftpd-backdoor)
 - [vedpakhare/vsftpd-234-vuln-report](https://github.com/vedpakhare/vsftpd-234-vuln-report)
-- [madanokr001/CVE-2011-2523](https://github.com/madanokr001/CVE-2011-2523)
+- [cybermads/CVE-2011-2523](https://github.com/cybermads/CVE-2011-2523)
 - [sug4r-wr41th/CVE-2011-2523](https://github.com/sug4r-wr41th/CVE-2011-2523)
 - [JohanMV/explotacion-vsftpd-nmap_Laboratorio_1](https://github.com/JohanMV/explotacion-vsftpd-nmap_Laboratorio_1)
 - [lghost256/vsftpd234-exploit](https://github.com/lghost256/vsftpd234-exploit)
