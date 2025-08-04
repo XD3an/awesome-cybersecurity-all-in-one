@@ -1009,7 +1009,7 @@
 <code>Type confusion in V8 in Google Chrome prior to 138.0.7204.96 allowed a remote attacker to perform arbitrary read/write via a crafted HTML page. (Chromium security severity: High)
 </code>
 
-- [windz3r0day/CVE-2025-6554](https://github.com/windz3r0day/CVE-2025-6554)
+- [gmh5225/CVE-2025-6554](https://github.com/gmh5225/CVE-2025-6554)
 - [gmh5225/CVE-2025-6554-2](https://github.com/gmh5225/CVE-2025-6554-2)
 - [PwnToday/CVE-2025-6554](https://github.com/PwnToday/CVE-2025-6554)
 - [ghostn4444/POC-CVE-2025-6554](https://github.com/ghostn4444/POC-CVE-2025-6554)
@@ -1173,10 +1173,17 @@
 
 ### CVE-2025-8220 (2025-07-27)
 
-<code>Es wurde eine kritische Schwachstelle in Engeman Web bis 12.0.0.1 entdeckt. Dabei betrifft es einen unbekannter Codeteil der Datei /Login/RecoveryPass der Komponente Password Recovery Page. Durch das Manipulieren des Arguments LanguageCombobox mit unbekannten Daten kann eine sql injection-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei über das Netzwerk erfolgen. Der Exploit steht zur öffentlichen Verfügung.
+<code>Es wurde eine kritische Schwachstelle in Engeman Web bis 12.0.0.1 entdeckt. Dabei betrifft es einen unbekannter Codeteil der Datei /Login/RecoveryPass der Komponente Password Recovery Page. Durch das Manipulieren des Arguments LanguageCombobox durch Cookie kann eine sql injection-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei über das Netzwerk erfolgen. Der Exploit steht zur öffentlichen Verfügung.
 </code>
 
 - [m3m0o/engeman-web-language-combobox-sqli](https://github.com/m3m0o/engeman-web-language-combobox-sqli)
+
+### CVE-2025-8471 (2025-08-02)
+
+<code>Eine Schwachstelle wurde in projectworlds Online Admission System 1.0 entdeckt. Sie wurde als kritisch eingestuft. Es geht hierbei um eine nicht näher spezifizierte Funktion der Datei /adminlogin.php. Mittels dem Manipulieren des Arguments a_id mit unbekannten Daten kann eine sql injection-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk angegangen werden. Der Exploit steht zur öffentlichen Verfügung.
+</code>
+
+- [byteReaper77/CVE-2025-8471](https://github.com/byteReaper77/CVE-2025-8471)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -1726,6 +1733,10 @@
 - [Artemir7/CVE-2025-24893-EXP](https://github.com/Artemir7/CVE-2025-24893-EXP)
 - [nopgadget/CVE-2025-24893](https://github.com/nopgadget/CVE-2025-24893)
 - [Kai7788/CVE-2025-24893-RCE-PoC](https://github.com/Kai7788/CVE-2025-24893-RCE-PoC)
+- [AliElKhatteb/CVE-2024-32019-POC](https://github.com/AliElKhatteb/CVE-2024-32019-POC)
+- [dhiaZnaidi/CVE-2025-24893-PoC](https://github.com/dhiaZnaidi/CVE-2025-24893-PoC)
+- [hackersonsteroids/cve-2025-24893](https://github.com/hackersonsteroids/cve-2025-24893)
+- [Infinit3i/CVE-2025-24893](https://github.com/Infinit3i/CVE-2025-24893)
 
 ### CVE-2025-24963 (2025-02-04)
 
@@ -3727,6 +3738,7 @@
 - [f1shh/CVE-2025-48384](https://github.com/f1shh/CVE-2025-48384)
 - [fluoworite/CVE-2025-48384](https://github.com/fluoworite/CVE-2025-48384)
 - [fluoworite/CVE-2025-48384-sub](https://github.com/fluoworite/CVE-2025-48384-sub)
+- [beishanxueyuan/CVE-2025-48384](https://github.com/beishanxueyuan/CVE-2025-48384)
 
 ### CVE-2025-48461 (2025-06-24)
 
@@ -5417,6 +5429,8 @@
 - [Bhavyakcwestern/Hacking-pdf.js-vulnerability](https://github.com/Bhavyakcwestern/Hacking-pdf.js-vulnerability)
 - [PenguinCabinet/CVE-2024-4367-hands-on](https://github.com/PenguinCabinet/CVE-2024-4367-hands-on)
 - [pS3ud0RAnD0m/cve-2024-4367-poc](https://github.com/pS3ud0RAnD0m/cve-2024-4367-poc)
+- [MihranGIT/POC_CVE-2024-4367](https://github.com/MihranGIT/POC_CVE-2024-4367)
+- [MihranGIT/CVE-2024-4367](https://github.com/MihranGIT/CVE-2024-4367)
 
 ### CVE-2024-4406 (2024-05-02)
 
@@ -6745,13 +6759,6 @@
 
 - [0Nightsedge0/CVE-2024-9950-PoC](https://github.com/0Nightsedge0/CVE-2024-9950-PoC)
 
-### CVE-2024-10015 (2024-11-16)
-
-<code>The ConvertCalculator for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'id' and 'type' parameters in all versions up to, and including, 1.1.1 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
-</code>
-
-- [windz3r0day/CVE-2024-10015](https://github.com/windz3r0day/CVE-2024-10015)
-
 ### CVE-2024-10124 (2024-12-12)
 
 <code>The Vayu Blocks – Gutenberg Blocks for WordPress &amp; WooCommerce plugin for WordPress is vulnerable to unauthorized arbitrary plugin installation and activation due to a missing capability check on the tp_install() function in all versions up to, and including, 1.1.1. This makes it possible for unauthenticated attackers to install and activate arbitrary plugins which can be leveraged to achieve remote code execution if another vulnerable plugin is installed and activated. This vulnerability was partially patched in version 1.1.1.
@@ -6901,13 +6908,6 @@
 - [RandomRobbieBF/CVE-2024-10586](https://github.com/RandomRobbieBF/CVE-2024-10586)
 - [Nxploited/CVE-2024-10586-Poc](https://github.com/Nxploited/CVE-2024-10586-Poc)
 
-### CVE-2024-10592 (2024-11-16)
-
-<code>The Mapster WP Maps plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the popup class parameter in all versions up to, and including, 1.6.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
-</code>
-
-- [windz3r0day/CVE-2024-10592](https://github.com/windz3r0day/CVE-2024-10592)
-
 ### CVE-2024-10605 (2024-10-31)
 
 <code>Es wurde eine Schwachstelle in code-projects Blood Bank Management System 1.0 ausgemacht. Sie wurde als problematisch eingestuft. Es betrifft eine unbekannte Funktion der Datei /file/request.php. Durch die Manipulation mit unbekannten Daten kann eine cross-site request forgery-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk erfolgen. Der Exploit steht zur öffentlichen Verfügung.
@@ -6956,7 +6956,7 @@
 <code>The WP Activity Log plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the user_id parameter in all versions up to, and including, 5.2.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever an administrative user accesses an injected page.
 </code>
 
-- [windz3r0day/CVE-2024-10793](https://github.com/windz3r0day/CVE-2024-10793)
+- [djayaGit/CVE-2024-10793](https://github.com/djayaGit/CVE-2024-10793)
 - [MAHajian/CVE-2024-10793](https://github.com/MAHajian/CVE-2024-10793)
 
 ### CVE-2024-10858 (2024-12-25)
@@ -7047,13 +7047,6 @@
 
 - [gothburz/CVE-2024-11042](https://github.com/gothburz/CVE-2024-11042)
 
-### CVE-2024-11199 (2024-11-23)
-
-<code>The Rescue Shortcodes plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's rescue_progressbar shortcode in all versions up to, and including, 2.9 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
-</code>
-
-- [windz3r0day/CVE-2024-11199](https://github.com/windz3r0day/CVE-2024-11199)
-
 ### CVE-2024-11201 (2024-12-06)
 
 <code>The myCred – Loyalty Points and Rewards plugin for WordPress and WooCommerce – Give Points, Ranks, Badges, Cashback, WooCommerce rewards, and WooCommerce credits for Gamification plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's mycred_send shortcode in all versions up to, and including, 2.7.5.2 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
@@ -7081,27 +7074,6 @@
 </code>
 
 - [mhaskar/CVE-2024-11320](https://github.com/mhaskar/CVE-2024-11320)
-
-### CVE-2024-11381 (2024-11-22)
-
-<code>The Control horas plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'ch_registro' shortcode in all versions up to, and including, 1.0.1 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
-</code>
-
-- [windz3r0day/CVE-2024-11381](https://github.com/windz3r0day/CVE-2024-11381)
-
-### CVE-2024-11387 (2024-11-23)
-
-<code>The Easy Liveblogs plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'elb_liveblog' shortcode in all versions up to, and including, 2.3.5 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
-</code>
-
-- [windz3r0day/CVE-2024-11387](https://github.com/windz3r0day/CVE-2024-11387)
-
-### CVE-2024-11388 (2024-11-21)
-
-<code>The Dino Game – Embed Google Chrome Dinosaur Game in WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'dino-game' shortcode in all versions up to, and including, 1.1.0 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
-</code>
-
-- [windz3r0day/CVE-2024-11388](https://github.com/windz3r0day/CVE-2024-11388)
 
 ### CVE-2024-11392 (2024-11-22)
 
@@ -7131,33 +7103,12 @@
 
 - [RandomRobbieBF/CVE-2024-11396](https://github.com/RandomRobbieBF/CVE-2024-11396)
 
-### CVE-2024-11412 (2024-11-21)
-
-<code>The Shine PDF Embeder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'shinepdf' shortcode in all versions up to, and including, 1.0 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
-</code>
-
-- [windz3r0day/CVE-2024-11412](https://github.com/windz3r0day/CVE-2024-11412)
-
 ### CVE-2024-11423 (2025-01-08)
 
 <code>The Ultimate Gift Cards for WooCommerce – Create WooCommerce Gift Cards, Gift Vouchers, Redeem &amp; Manage Digital Gift Coupons. Offer Gift Certificates, Schedule Gift Cards, and Use Advance Coupons With Personalized Templates plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on several REST API endpoints such as /wp-json/gifting/recharge-giftcard in all versions up to, and including, 3.0.6. This makes it possible for unauthenticated attackers to recharge a gift card balance, without making a payment along with reducing gift card balances without purchasing anything.
 </code>
 
 - [RandomRobbieBF/CVE-2024-11423](https://github.com/RandomRobbieBF/CVE-2024-11423)
-
-### CVE-2024-11428 (2024-11-21)
-
-<code>The Lazy load videos and sticky control plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'lazy-load-videos-and-sticky-control' shortcode in all versions up to, and including, 3.0.0 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
-</code>
-
-- [windz3r0day/CVE-2024-11428](https://github.com/windz3r0day/CVE-2024-11428)
-
-### CVE-2024-11432 (2024-11-21)
-
-<code>The SuevaFree Essential Kit plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'counter' shortcode in all versions up to, and including, 1.1.3 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
-</code>
-
-- [windz3r0day/CVE-2024-11432](https://github.com/windz3r0day/CVE-2024-11432)
 
 ### CVE-2024-11477 (2024-11-22)
 
@@ -7680,7 +7631,7 @@
 
 - [hakaioffsec/CVE-2024-21338](https://github.com/hakaioffsec/CVE-2024-21338)
 - [UMU618/CVE-2024-21338](https://github.com/UMU618/CVE-2024-21338)
-- [varwara/CVE-2024-21338](https://github.com/varwara/CVE-2024-21338)
+- [wusijie/CVE-2024-21338-1](https://github.com/wusijie/CVE-2024-21338-1)
 - [Zombie-Kaiser/CVE-2024-21338-x64-build-](https://github.com/Zombie-Kaiser/CVE-2024-21338-x64-build-)
 - [tykawaii98/CVE-2024-21338_PoC](https://github.com/tykawaii98/CVE-2024-21338_PoC)
 - [Crowdfense/CVE-2024-21338](https://github.com/Crowdfense/CVE-2024-21338)
@@ -9073,7 +9024,7 @@
 <code>Windows CSC Service Elevation of Privilege Vulnerability
 </code>
 
-- [varwara/CVE-2024-26229](https://github.com/varwara/CVE-2024-26229)
+- [dkstar11q/CVE-2024-26229-lpe](https://github.com/dkstar11q/CVE-2024-26229-lpe)
 - [RalfHacker/CVE-2024-26229-exploit](https://github.com/RalfHacker/CVE-2024-26229-exploit)
 - [apkc/CVE-2024-26229-BOF](https://github.com/apkc/CVE-2024-26229-BOF)
 - [team-MineDEV/CVE-2024-26229](https://github.com/team-MineDEV/CVE-2024-26229)
@@ -10133,6 +10084,7 @@
 </code>
 
 - [AzureADTrent/CVE-2024-32019-POC](https://github.com/AzureADTrent/CVE-2024-32019-POC)
+- [AliElKhatteb/CVE-2024-32019-POC](https://github.com/AliElKhatteb/CVE-2024-32019-POC)
 
 ### CVE-2024-32030 (2024-06-19)
 
@@ -10715,7 +10667,7 @@
 <code>Windows Kernel-Mode Driver Elevation of Privilege Vulnerability
 </code>
 
-- [varwara/CVE-2024-35250](https://github.com/varwara/CVE-2024-35250)
+- [CrackerCat/CVE-2024-35250](https://github.com/CrackerCat/CVE-2024-35250)
 - [ro0tmylove/CVE-2024-35250-BOF](https://github.com/ro0tmylove/CVE-2024-35250-BOF)
 - [yinsel/CVE-2024-35250-BOF](https://github.com/yinsel/CVE-2024-35250-BOF)
 - [0xROOTPLS/GiveMeKernel](https://github.com/0xROOTPLS/GiveMeKernel)
@@ -11086,7 +11038,7 @@
 <code>Windows Kernel Information Disclosure Vulnerability
 </code>
 
-- [varwara/CVE-2024-38041](https://github.com/varwara/CVE-2024-38041)
+- [dgkim-dong/CVE-2024-38041](https://github.com/dgkim-dong/CVE-2024-38041)
 
 ### CVE-2024-38063 (2024-08-13)
 
@@ -14712,6 +14664,13 @@
 </code>
 
 - [pinpinsec/CVE-2023-0400](https://github.com/pinpinsec/CVE-2023-0400)
+
+### CVE-2023-0461 (2023-02-28)
+
+<code>There is a use-after-free vulnerability in the Linux Kernel which can be exploited to achieve local privilege escalation. To reach the vulnerability kernel configuration flag CONFIG_TLS or CONFIG_XFRM_ESPINTCP has to be configured, but the operation does not require any privilege.\n\nThere is a use-after-free bug of icsk_ulp_data of a struct inet_connection_sock.\n\nWhen CONFIG_TLS is enabled, user can install a tls context (struct tls_context) on a connected tcp socket. The context is not cleared if this socket is disconnected and reused as a listener. If a new socket is created from the listener, the context is inherited and vulnerable.\n\nThe setsockopt TCP_ULP operation does not require any privilege.\n\nWe recommend upgrading past commit 2c02d41d71f90a5168391b6a5f2954112ba2307c
+</code>
+
+- [b1nhack/CVE-2023-0461](https://github.com/b1nhack/CVE-2023-0461)
 
 ### CVE-2023-0464 (2023-03-22)
 
@@ -20635,6 +20594,7 @@
 - [RonF98/CVE-2023-38831-POC](https://github.com/RonF98/CVE-2023-38831-POC)
 - [VictoriousKnight/CVE-2023-38831_Exploit](https://github.com/VictoriousKnight/CVE-2023-38831_Exploit)
 - [kuyrathdaro/winrar-cve-2023-38831](https://github.com/kuyrathdaro/winrar-cve-2023-38831)
+- [Tolu12wani/Demonstration-of-CVE-2023-38831-via-Reverse-Shell-Execution](https://github.com/Tolu12wani/Demonstration-of-CVE-2023-38831-via-Reverse-Shell-Execution)
 
 ### CVE-2023-38836 (2023-08-21)
 
@@ -21439,13 +21399,6 @@
 
 - [d0rb/CVE-2023-42931](https://github.com/d0rb/CVE-2023-42931)
 - [tageniu/CVE-2023-42931](https://github.com/tageniu/CVE-2023-42931)
-
-### CVE-2023-42961 (2025-04-11)
-
-<code>A path handling issue was addressed with improved validation. This issue is fixed in iOS 17 and iPadOS 17, iOS 16.7 and iPadOS 16.7, macOS Sonoma 14, macOS Ventura 13.6, macOS Monterey 12.7. A sandboxed process may be able to circumvent sandbox restrictions.
-</code>
-
-- [windz3r0day/CVE-2023-42961](https://github.com/windz3r0day/CVE-2023-42961)
 
 ### CVE-2023-43040 (2024-05-13)
 
@@ -31645,7 +31598,6 @@
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [glowbase/PwnKit-CVE-2021-4034](https://github.com/glowbase/PwnKit-CVE-2021-4034)
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
-- [teelrabbit/Polkit-pkexec-exploit-for-Linux](https://github.com/teelrabbit/Polkit-pkexec-exploit-for-Linux)
 - [scent2d/PoC-CVE-2021-4034](https://github.com/scent2d/PoC-CVE-2021-4034)
 - [HrishitJoshi/CVE-2021-4034](https://github.com/HrishitJoshi/CVE-2021-4034)
 - [Ankit-Ojha16/CVE-2021-4034](https://github.com/Ankit-Ojha16/CVE-2021-4034)
@@ -36747,6 +36699,7 @@
 - [fabioeletto/hka-seminar-log4shell](https://github.com/fabioeletto/hka-seminar-log4shell)
 - [cuijiung/log4j-CVE-2021-44228](https://github.com/cuijiung/log4j-CVE-2021-44228)
 - [Alan-coder-eng/log4j-cve-2021-44228-](https://github.com/Alan-coder-eng/log4j-cve-2021-44228-)
+- [Sorrence/CVE-2021-44228](https://github.com/Sorrence/CVE-2021-44228)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -56848,6 +56801,7 @@
 - [elliotosama/CVE-2012-2982](https://github.com/elliotosama/CVE-2012-2982)
 - [SieGer05/CVE-2012-2982-Webmin-Exploit](https://github.com/SieGer05/CVE-2012-2982-Webmin-Exploit)
 - [lpuv/CVE-2012-2982](https://github.com/lpuv/CVE-2012-2982)
+- [SincIDK/CVE-2012-2982-Exploit-Script](https://github.com/SincIDK/CVE-2012-2982-Exploit-Script)
 
 ### CVE-2012-3137 (2012-09-21)
 
