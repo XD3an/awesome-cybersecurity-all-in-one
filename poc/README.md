@@ -1086,6 +1086,7 @@
 </code>
 
 - [Nxploited/CVE-2025-7340](https://github.com/Nxploited/CVE-2025-7340)
+- [Kai-One001/WordPress-HT-Contact-CVE-2025-7340-RCE](https://github.com/Kai-One001/WordPress-HT-Contact-CVE-2025-7340-RCE)
 
 ### CVE-2025-7404 (2025-07-24)
 
@@ -1184,6 +1185,13 @@
 </code>
 
 - [byteReaper77/CVE-2025-8471](https://github.com/byteReaper77/CVE-2025-8471)
+
+### CVE-2025-8517 (2025-08-04)
+
+<code>In givanz Vvveb 1.0.6.1 wurde eine kritische Schwachstelle ausgemacht. Dabei geht es um eine nicht genauer bekannte Funktion. Mittels Manipulieren mit unbekannten Daten kann eine session fixiation-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei über das Netzwerk erfolgen. Der Exploit steht zur öffentlichen Verfügung. Ein Aktualisieren auf die Version 1.0.7 vermag dieses Problem zu lösen. Der Patch wird als d4b1e030066417b77d15b4ac505eed5ae7bf2c5e bezeichnet. Als bestmögliche Massnahme wird das Einspielen eines Upgrades empfohlen.
+</code>
+
+- [helloandrewpaul/Session-Fixation-in-Vvveb-CMS-v1.0.6.1](https://github.com/helloandrewpaul/Session-Fixation-in-Vvveb-CMS-v1.0.6.1)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -1738,6 +1746,7 @@
 - [hackersonsteroids/cve-2025-24893](https://github.com/hackersonsteroids/cve-2025-24893)
 - [Infinit3i/CVE-2025-24893](https://github.com/Infinit3i/CVE-2025-24893)
 - [gunzf0x/CVE-2025-24893](https://github.com/gunzf0x/CVE-2025-24893)
+- [dollarboysushil/CVE-2025-24893-XWiki-Unauthenticated-RCE-Exploit-POC](https://github.com/dollarboysushil/CVE-2025-24893-XWiki-Unauthenticated-RCE-Exploit-POC)
 
 ### CVE-2025-24963 (2025-02-04)
 
@@ -2543,7 +2552,6 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [AventurineJun/CVE-2025-29927-Research](https://github.com/AventurineJun/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -3532,7 +3540,11 @@
 
 - [spbavarva/CVE-2025-46204](https://github.com/spbavarva/CVE-2025-46204)
 
-### CVE-2025-46206
+### CVE-2025-46206 (2025-08-04)
+
+<code>An issue in Artifex mupdf 1.25.6, 1.25.5 allows a remote attacker to cause a denial of service via an infinite recursion in the `mutool clean` utility. When processing a crafted PDF file containing cyclic /Next references in the outline structure, the `strip_outline()` function enters infinite recursion
+</code>
+
 - [Landw-hub/CVE-2025-46206](https://github.com/Landw-hub/CVE-2025-46206)
 
 ### CVE-2025-46271 (2025-04-24)
@@ -3860,7 +3872,6 @@
 - [Vr00mm/CVE-2025-49144](https://github.com/Vr00mm/CVE-2025-49144)
 - [TheTorjanCaptain/CVE-2025-49144_PoC](https://github.com/TheTorjanCaptain/CVE-2025-49144_PoC)
 - [assad12341/notepad-v8.8.1-LPE-CVE-](https://github.com/assad12341/notepad-v8.8.1-LPE-CVE-)
-- [tristanvandermeer/CVE-2025-49144-Test](https://github.com/tristanvandermeer/CVE-2025-49144-Test)
 - [b0ySie7e/Notepad-8.8.1_CVE-2025-49144](https://github.com/b0ySie7e/Notepad-8.8.1_CVE-2025-49144)
 - [timsonner/CVE-2025-49144-Research](https://github.com/timsonner/CVE-2025-49144-Research)
 - [0xCZR1/cve-2025-49144](https://github.com/0xCZR1/cve-2025-49144)
@@ -3904,10 +3915,18 @@
 ### CVE-2025-50000
 - [adiivascu/CVE-2025-50000](https://github.com/adiivascu/CVE-2025-50000)
 
-### CVE-2025-50340
+### CVE-2025-50340 (2025-08-04)
+
+<code>An Insecure Direct Object Reference (IDOR) vulnerability was discovered in SOGo Webmail thru 5.6.0, allowing an authenticated user to send emails on behalf of other users by manipulating a user-controlled identifier in the email-sending request. The server fails to verify whether the authenticated user is authorized to use the specified sender identity, resulting in unauthorized message delivery as another user. This can lead to impersonation, phishing, or unauthorized communication within the system.
+</code>
+
 - [millad7/SOGo_web_mail-vulnerability-CVE-2025-50340](https://github.com/millad7/SOGo_web_mail-vulnerability-CVE-2025-50340)
 
-### CVE-2025-50341
+### CVE-2025-50341 (2025-08-04)
+
+<code>A Boolean-based SQL injection vulnerability was discovered in Axelor 5.2.4 via the _domain parameter. An attacker can manipulate the SQL query logic and determine true/false conditions, potentially leading to data exposure or further exploitation.
+</code>
+
 - [millad7/Axelor-vulnerability-CVE-2025-50341](https://github.com/millad7/Axelor-vulnerability-CVE-2025-50341)
 
 ### CVE-2025-50363
@@ -3919,10 +3938,18 @@
 ### CVE-2025-50365
 - [1h3ll/CVE-2025-50365_CSRF_DELETE_CATEGORY-phpgurukul-CVE](https://github.com/1h3ll/CVE-2025-50365_CSRF_DELETE_CATEGORY-phpgurukul-CVE)
 
-### CVE-2025-50420
+### CVE-2025-50420 (2025-08-04)
+
+<code>An issue in the pdfseparate utility of freedesktop poppler v25.04.0 allows attackers to cause an infinite recursion via supplying a crafted PDF file. This can lead to a Denial of Service (DoS).
+</code>
+
 - [Landw-hub/CVE-2025-50420](https://github.com/Landw-hub/CVE-2025-50420)
 
-### CVE-2025-50422
+### CVE-2025-50422 (2025-08-04)
+
+<code>An issue was discovered in freedesktop poppler v25.04.0. The heap memory containing PDF stream objects is not cleared upon program exit, allowing attackers to obtain sensitive PDF content via a memory dump.
+</code>
+
 - [Landw-hub/CVE-2025-50422](https://github.com/Landw-hub/CVE-2025-50422)
 
 ### CVE-2025-50460 (2025-08-01)
@@ -3946,10 +3973,17 @@
 
 - [kevinpdicks/Mezzanine-CMS-6.1.0-XSS](https://github.com/kevinpdicks/Mezzanine-CMS-6.1.0-XSS)
 
+### CVE-2025-50592
+- [1515601525/CVE-2025-50592](https://github.com/1515601525/CVE-2025-50592)
+
 ### CVE-2025-50716
 - [MooseLoveti/realestate-php-cve-report](https://github.com/MooseLoveti/realestate-php-cve-report)
 
-### CVE-2025-50754
+### CVE-2025-50754 (2025-08-04)
+
+<code>Unisite CMS version 5.0 contains a stored Cross-Site Scripting (XSS) vulnerability in the &quot;Report&quot; functionality. A malicious script submitted by an attacker is rendered in the admin panel when viewed by an administrator. This allows attackers to hijack the admin session and, by leveraging the template editor, upload and execute a PHP web shell on the server, leading to full remote code execution.
+</code>
+
 - [furk4nyildiz/CVE-2025-50754-PoC](https://github.com/furk4nyildiz/CVE-2025-50754-PoC)
 
 ### CVE-2025-50777 (2025-07-30)
@@ -4039,7 +4073,11 @@
 
 - [Kai-One001/Letta-CVE-2025-51482-RCE](https://github.com/Kai-One001/Letta-CVE-2025-51482-RCE)
 
-### CVE-2025-51726
+### CVE-2025-51726 (2025-08-04)
+
+<code>CyberGhostVPNSetup.exe (Windows installer) is signed using the weak cryptographic hash algorithm SHA-1, which is vulnerable to collision attacks. This allows a malicious actor to craft a fake installer with a forged SHA-1 certificate that may still be accepted by Windows signature verification mechanisms, particularly on systems without strict SmartScreen or trust policy enforcement. Additionally, the installer lacks High Entropy Address Space Layout Randomization (ASLR), as confirmed by BinSkim (BA2015 rule) and repeated WinDbg analysis. The binary consistently loads into predictable memory ranges, increasing the success rate of memory corruption exploits. These two misconfigurations, when combined, significantly lower the bar for successful supply-chain style attacks or privilege escalation through fake installers.
+</code>
+
 - [meisterlos/CVE-2025-51726](https://github.com/meisterlos/CVE-2025-51726)
 
 ### CVE-2025-51820
@@ -4280,9 +4318,28 @@
 </code>
 
 - [rockmelodies/bentoml_CVE-2025-54381](https://github.com/rockmelodies/bentoml_CVE-2025-54381)
+- [B1ack4sh/Blackash-CVE-2025-54381](https://github.com/B1ack4sh/Blackash-CVE-2025-54381)
 
-### CVE-2025-54554
+### CVE-2025-54424 (2025-08-01)
+
+<code>1Panel is a web interface and MCP Server that manages websites, files, containers, databases, and LLMs on a Linux server. In versions 2.0.5 and below, the HTTPS protocol used for communication between the Core and Agent endpoints has incomplete certificate verification during certificate validation, leading to unauthorized interface access. Due to the presence of numerous command execution or high-privilege interfaces in 1Panel, this results in Remote Code Execution (RCE). This is fixed in version 2.0.6. The CVE has been translated from Simplified Chinese using GitHub Copilot.
+</code>
+
+- [Mr-xn/CVE-2025-54424](https://github.com/Mr-xn/CVE-2025-54424)
+
+### CVE-2025-54554 (2025-08-04)
+
+<code>tiaudit in Tera Insights tiCrypt before 2025-07-17 allows unauthenticated REST API requests that reveal sensitive information about the underlying SQL queries and database structure.
+</code>
+
 - [Aman-Parmar/CVE-2025-54554](https://github.com/Aman-Parmar/CVE-2025-54554)
+
+### CVE-2025-54574 (2025-08-01)
+
+<code>Squid is a caching proxy for the Web. In versions 6.3 and below, Squid is vulnerable to a heap buffer overflow and possible remote code execution attack when processing URN due to incorrect buffer management. This has been fixed in version 6.4. To work around this issue, disable URN access permissions.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-54574](https://github.com/B1ack4sh/Blackash-CVE-2025-54574)
 
 ### CVE-2025-54589 (2025-07-31)
 
@@ -4297,6 +4354,13 @@
 </code>
 
 - [byteReaper77/CVE-2025-54769](https://github.com/byteReaper77/CVE-2025-54769)
+
+### CVE-2025-54962 (2025-08-04)
+
+<code>/edit-user in webserver in OpenPLC Runtime 3 through 9cd8f1b allows authenticated users to upload arbitrary files (such as .html or .svg), and these are then publicly accessible under the /static URI.
+</code>
+
+- [Eyodav/CVE-2025-54962](https://github.com/Eyodav/CVE-2025-54962)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -16852,6 +16916,13 @@
 
 - [emad-almousa/CVE-2023-22074](https://github.com/emad-almousa/CVE-2023-22074)
 
+### CVE-2023-22077 (2023-10-17)
+
+<code>Vulnerability in the Oracle Database Recovery Manager component of Oracle Database Server.  Supported versions that are affected are 19.3-19.20 and  21.3-21.11. Easily exploitable vulnerability allows high privileged attacker having DBA account privilege with network access via Oracle Net to compromise Oracle Database Recovery Manager.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of Oracle Database Recovery Manager. CVSS 3.1 Base Score 4.9 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H).
+</code>
+
+- [emad-almousa/CVE-2023-22077](https://github.com/emad-almousa/CVE-2023-22077)
+
 ### CVE-2023-22098 (2023-10-17)
 
 <code>Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core).  Supported versions that are affected are Prior to 7.0.12. Easily exploitable vulnerability allows high privileged attacker with logon to the infrastructure where Oracle VM VirtualBox executes to compromise Oracle VM VirtualBox.  While the vulnerability is in Oracle VM VirtualBox, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle VM VirtualBox. Note: Only applicable to 7.0.x platform. CVSS 3.1 Base Score 8.2 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H).
@@ -28876,7 +28947,6 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [AventurineJun/CVE-2022-39299-Research](https://github.com/AventurineJun/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -30096,6 +30166,7 @@
 - [nu0l/CVE-2022-46463](https://github.com/nu0l/CVE-2022-46463)
 - [404tk/CVE-2022-46463](https://github.com/404tk/CVE-2022-46463)
 - [CodeSecurityTeam/harbor](https://github.com/CodeSecurityTeam/harbor)
+- [sevbandonmez/harbor-stalker](https://github.com/sevbandonmez/harbor-stalker)
 
 ### CVE-2022-46484 (2023-08-02)
 
@@ -37778,6 +37849,7 @@
 - [1337-llama/CVE-2020-0688-Python3](https://github.com/1337-llama/CVE-2020-0688-Python3)
 - [chudamax/CVE-2020-0688-Exchange2010](https://github.com/chudamax/CVE-2020-0688-Exchange2010)
 - [W01fh4cker/CVE-2020-0688-GUI](https://github.com/W01fh4cker/CVE-2020-0688-GUI)
+- [tvdat20004/CVE-2020-0688](https://github.com/tvdat20004/CVE-2020-0688)
 
 ### CVE-2020-0728 (2020-02-11)
 
@@ -48157,6 +48229,7 @@
 - [raytran54/CVE-2018-7600](https://github.com/raytran54/CVE-2018-7600)
 - [tpdlshdmlrkfmcla/CVE-2018-7600.](https://github.com/tpdlshdmlrkfmcla/CVE-2018-7600.)
 - [Dowonkwon/drupal-cve-2018-7600-poc](https://github.com/Dowonkwon/drupal-cve-2018-7600-poc)
+- [M-Abid34/CVE-2018-7600](https://github.com/M-Abid34/CVE-2018-7600)
 
 ### CVE-2018-7602 (2018-07-19)
 
@@ -56496,6 +56569,7 @@
 - [piranhap/CVE-2013-3900_Remediation_PowerShell](https://github.com/piranhap/CVE-2013-3900_Remediation_PowerShell)
 - [pkblanks/Remediating-CVE-2013-3900-EnableCertPaddingCheck-](https://github.com/pkblanks/Remediating-CVE-2013-3900-EnableCertPaddingCheck-)
 - [malaya-m/cve-2013-3900-remediation-report](https://github.com/malaya-m/cve-2013-3900-remediation-report)
+- [Sabecomoeh/CVE-2013-3900](https://github.com/Sabecomoeh/CVE-2013-3900)
 
 ### CVE-2013-4002 (2013-07-23)
 
@@ -57062,7 +57136,7 @@
 - [0xSojalSec/CVE-2011-2523](https://github.com/0xSojalSec/CVE-2011-2523)
 - [XiangSi-Howard/CTF---CVE-2011-2523](https://github.com/XiangSi-Howard/CTF---CVE-2011-2523)
 - [cowsecurity/CVE-2011-2523](https://github.com/cowsecurity/CVE-2011-2523)
-- [Lynk4/CVE-2011-2523](https://github.com/Lynk4/CVE-2011-2523)
+- [LOCK-0N/CVE-2011-2523](https://github.com/LOCK-0N/CVE-2011-2523)
 - [vaishnavucv/CVE-2011-2523](https://github.com/vaishnavucv/CVE-2011-2523)
 - [4m3rr0r/CVE-2011-2523-poc](https://github.com/4m3rr0r/CVE-2011-2523-poc)
 - [Shubham-2k1/Exploit-CVE-2011-2523](https://github.com/Shubham-2k1/Exploit-CVE-2011-2523)
@@ -58115,7 +58189,7 @@
 <code>Directory traversal vulnerability in UnZip 5.50 allows attackers to overwrite arbitrary files via invalid characters between two . (dot) characters, which are filtered and result in a &quot;..&quot; sequence.
 </code>
 
-- [angus-cx/cve-2003-0282](https://github.com/angus-cx/cve-2003-0282)
+- [sion-codin/cve-2003-0282](https://github.com/sion-codin/cve-2003-0282)
 
 ### CVE-2003-0358 (2003-05-30)
 
