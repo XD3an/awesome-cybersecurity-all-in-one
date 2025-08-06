@@ -1193,6 +1193,13 @@
 
 - [helloandrewpaul/Session-Fixation-in-Vvveb-CMS-v1.0.6.1](https://github.com/helloandrewpaul/Session-Fixation-in-Vvveb-CMS-v1.0.6.1)
 
+### CVE-2025-8550 (2025-08-05)
+
+<code>In atjiu pybbs bis 6.0.0 wurde eine problematische Schwachstelle ausgemacht. Hierbei betrifft es unbekannten Programmcode der Datei /admin/topic/list. Durch das Beeinflussen des Arguments Username mit unbekannten Daten kann eine cross site scripting-Schwachstelle ausgenutzt werden. Umgesetzt werden kann der Angriff über das Netzwerk. Der Exploit steht zur öffentlichen Verfügung. Der Patch wird als 2fe4a51afbce0068c291bc1818bbc8f7f3b01a22 bezeichnet. Als bestmögliche Massnahme wird Patching empfohlen.
+</code>
+
+- [byteReaper77/CVE-2025-8550](https://github.com/byteReaper77/CVE-2025-8550)
+
 ### CVE-2025-20029 (2025-02-05)
 
 <code>Command injection vulnerability exists in iControl REST and BIG-IP TMOS Shell (tmsh) save command, which may allow an authenticated attacker to execute arbitrary system commands.\n\n \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
@@ -1747,6 +1754,8 @@
 - [Infinit3i/CVE-2025-24893](https://github.com/Infinit3i/CVE-2025-24893)
 - [gunzf0x/CVE-2025-24893](https://github.com/gunzf0x/CVE-2025-24893)
 - [dollarboysushil/CVE-2025-24893-XWiki-Unauthenticated-RCE-Exploit-POC](https://github.com/dollarboysushil/CVE-2025-24893-XWiki-Unauthenticated-RCE-Exploit-POC)
+- [zs1n/CVE-2025-24893](https://github.com/zs1n/CVE-2025-24893)
+- [investigato/cve-2025-24893-poc](https://github.com/investigato/cve-2025-24893-poc)
 
 ### CVE-2025-24963 (2025-02-04)
 
@@ -3078,6 +3087,8 @@
 - [KaiHT-Ladiant/CVE-2025-32463](https://github.com/KaiHT-Ladiant/CVE-2025-32463)
 - [y4ney/CVE-2025-32463-lab](https://github.com/y4ney/CVE-2025-32463-lab)
 - [Dlodlos/CVE-2025-32463-lab](https://github.com/Dlodlos/CVE-2025-32463-lab)
+- [aldoClau98/CVE-2025-32463](https://github.com/aldoClau98/CVE-2025-32463)
+- [painoob/CVE-2025-32463](https://github.com/painoob/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -3417,7 +3428,11 @@
 
 - [zgsnj123/CVE-2025-45467](https://github.com/zgsnj123/CVE-2025-45467)
 
-### CVE-2025-45512
+### CVE-2025-45512 (2025-08-05)
+
+<code>A lack of signature verification in the bootloader of DENX Software Engineering Das U-Boot (U-Boot) v1.1.3 allows attackers to install crafted firmware files, leading to arbitrary code execution.
+</code>
+
 - [AzhariRamadhan/CVE-2025-45512](https://github.com/AzhariRamadhan/CVE-2025-45512)
 
 ### CVE-2025-45619 (2025-07-30)
@@ -3786,6 +3801,7 @@
 </code>
 
 - [Wh04m1001/CVE-2025-48799](https://github.com/Wh04m1001/CVE-2025-48799)
+- [painoob/CVE-2025-48799](https://github.com/painoob/CVE-2025-48799)
 
 ### CVE-2025-48827 (2025-05-27)
 
@@ -3976,8 +3992,15 @@
 
 - [kevinpdicks/Mezzanine-CMS-6.1.0-XSS](https://github.com/kevinpdicks/Mezzanine-CMS-6.1.0-XSS)
 
-### CVE-2025-50592
+### CVE-2025-50592 (2025-08-05)
+
+<code>Cross site scripting vulnerability in seacms before 13.2 via the vid parameter to Upload/js/player/dmplayer/player.
+</code>
+
 - [1515601525/CVE-2025-50592](https://github.com/1515601525/CVE-2025-50592)
+
+### CVE-2025-50675
+- [LukeSec/CVE-2025-50675-GPMAW-Permissions](https://github.com/LukeSec/CVE-2025-50675-GPMAW-Permissions)
 
 ### CVE-2025-50716
 - [MooseLoveti/realestate-php-cve-report](https://github.com/MooseLoveti/realestate-php-cve-report)
@@ -4163,6 +4186,13 @@
 
 - [M4xIq/CVE-2025-51970](https://github.com/M4xIq/CVE-2025-51970)
 
+### CVE-2025-52078 (2025-08-05)
+
+<code>File upload vulnerability in Writebot AI Content Generator SaaS React Template thru 4.0.0, allowing remote attackers to gain escalated privileges via a crafted POST request to the /file-upload endpoint.
+</code>
+
+- [Yucaerin/CVE-2025-52078](https://github.com/Yucaerin/CVE-2025-52078)
+
 ### CVE-2025-52097
 - [rwilsonecs/CVE-2025-52097](https://github.com/rwilsonecs/CVE-2025-52097)
 
@@ -4275,6 +4305,7 @@
 - [0x-crypt/CVE-2025-53770-Scanner](https://github.com/0x-crypt/CVE-2025-53770-Scanner)
 - [Immersive-Labs-Sec/SharePoint-CVE-2025-53770-POC](https://github.com/Immersive-Labs-Sec/SharePoint-CVE-2025-53770-POC)
 - [harryhaxor/CVE-2025-53770-SharePoint-Deserialization-RCE-PoC](https://github.com/harryhaxor/CVE-2025-53770-SharePoint-Deserialization-RCE-PoC)
+- [SDX442/CVE-2025-53770](https://github.com/SDX442/CVE-2025-53770)
 
 ### CVE-2025-53833 (2025-07-14)
 
@@ -10162,6 +10193,8 @@
 
 - [AzureADTrent/CVE-2024-32019-POC](https://github.com/AzureADTrent/CVE-2024-32019-POC)
 - [AliElKhatteb/CVE-2024-32019-POC](https://github.com/AliElKhatteb/CVE-2024-32019-POC)
+- [dollarboysushil/CVE-2024-32019-Netdata-ndsudo-PATH-Vulnerability-Privilege-Escalation](https://github.com/dollarboysushil/CVE-2024-32019-Netdata-ndsudo-PATH-Vulnerability-Privilege-Escalation)
+- [juanbelin/CVE-2024-32019-POC](https://github.com/juanbelin/CVE-2024-32019-POC)
 
 ### CVE-2024-32030 (2024-06-19)
 
@@ -16334,6 +16367,7 @@
 - [sariamubeen/CVE-2023-7028](https://github.com/sariamubeen/CVE-2023-7028)
 - [Sornphut/CVE-2023-7028-GitLab](https://github.com/Sornphut/CVE-2023-7028-GitLab)
 - [szybnev/CVE-2023-7028](https://github.com/szybnev/CVE-2023-7028)
+- [KameliaZaman/Exploiting-GitLab-CVE-2023-7028](https://github.com/KameliaZaman/Exploiting-GitLab-CVE-2023-7028)
 
 ### CVE-2023-7172 (2023-12-30)
 
@@ -23731,6 +23765,7 @@
 - [honypot/CVE-2022-0824](https://github.com/honypot/CVE-2022-0824)
 - [pizza-power/golang-webmin-CVE-2022-0824-revshell](https://github.com/pizza-power/golang-webmin-CVE-2022-0824-revshell)
 - [gokul-ramesh/WebminRCE-exploit](https://github.com/gokul-ramesh/WebminRCE-exploit)
+- [NUDTTAN91/Webmin-CVE-2022-0824-Enhanced-Exploit](https://github.com/NUDTTAN91/Webmin-CVE-2022-0824-Enhanced-Exploit)
 
 ### CVE-2022-0847 (2022-03-07)
 
@@ -24597,6 +24632,13 @@
 </code>
 
 - [sunichi/cve-2022-4543-wrapper](https://github.com/sunichi/cve-2022-4543-wrapper)
+
+### CVE-2022-4556 (2022-12-16)
+
+<code>A vulnerability was found in Alinto SOGo up to 5.7.1 and classified as problematic. Affected by this issue is the function _migrateMailIdentities of the file SoObjects/SOGo/SOGoUserDefaults.m of the component Identity Handler. The manipulation of the argument fullName leads to cross site scripting. The attack may be launched remotely. Upgrading to version 5.8.0 is able to address this issue. The name of the patch is efac49ae91a4a325df9931e78e543f707a0f8e5e. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-215960.
+</code>
+
+- [AshkanRafiee/CVE-2022-4556](https://github.com/AshkanRafiee/CVE-2022-4556)
 
 ### CVE-2022-4611 (2022-12-19)
 
@@ -30235,9 +30277,9 @@
 - [straight-tamago/NoHomeBar](https://github.com/straight-tamago/NoHomeBar)
 - [straight-tamago/DockTransparent](https://github.com/straight-tamago/DockTransparent)
 - [straight-tamago/FileSwitcherX](https://github.com/straight-tamago/FileSwitcherX)
-- [BomberFish/Mandela-Legacy](https://github.com/BomberFish/Mandela-Legacy)
-- [BomberFish/JailedCement](https://github.com/BomberFish/JailedCement)
-- [BomberFish/Mandela-Classic](https://github.com/BomberFish/Mandela-Classic)
+- [bomberfish/Mandela-Legacy](https://github.com/bomberfish/Mandela-Legacy)
+- [bomberfish/JailedCement](https://github.com/bomberfish/JailedCement)
+- [bomberfish/Mandela-Classic](https://github.com/bomberfish/Mandela-Classic)
 - [enty8080/MacDirtyCow](https://github.com/enty8080/MacDirtyCow)
 - [tdquang266/MDC](https://github.com/tdquang266/MDC)
 - [69camau/sw1tch](https://github.com/69camau/sw1tch)
@@ -31018,6 +31060,7 @@
 - [Sp4ceDogy/NPE-CS-V-CVE-2021-1675](https://github.com/Sp4ceDogy/NPE-CS-V-CVE-2021-1675)
 - [CameraShutterBug/PrintNightmare](https://github.com/CameraShutterBug/PrintNightmare)
 - [DLL00P/CVE-2021-1675](https://github.com/DLL00P/CVE-2021-1675)
+- [GlacierGossip/PrintNightmare](https://github.com/GlacierGossip/PrintNightmare)
 
 ### CVE-2021-1678 (2021-01-12)
 
@@ -36715,7 +36758,6 @@
 - [mr-vill4in/log4j-fuzzer](https://github.com/mr-vill4in/log4j-fuzzer)
 - [mebibite/log4jhound](https://github.com/mebibite/log4jhound)
 - [aajuvonen/log4stdin](https://github.com/aajuvonen/log4stdin)
-- [y-security/yLog4j](https://github.com/y-security/yLog4j)
 - [FeryaelJustice/Log4Shell](https://github.com/FeryaelJustice/Log4Shell)
 - [hotpotcookie/CVE-2021-44228-white-box](https://github.com/hotpotcookie/CVE-2021-44228-white-box)
 - [s-retlaw/l4srs](https://github.com/s-retlaw/l4srs)
@@ -55503,6 +55545,7 @@
 - [yashfren/CVE-2014-0160-HeartBleed](https://github.com/yashfren/CVE-2014-0160-HeartBleed)
 - [Shayhha/HeartbleedAttack](https://github.com/Shayhha/HeartbleedAttack)
 - [ArtemCyberLab/Project-Field-Analysis-and-Memory-Leak-Demonstration](https://github.com/ArtemCyberLab/Project-Field-Analysis-and-Memory-Leak-Demonstration)
+- [0x00-V/heartbleed-poc](https://github.com/0x00-V/heartbleed-poc)
 
 ### CVE-2014-0166 (2014-04-09)
 
