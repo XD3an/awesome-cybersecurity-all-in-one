@@ -410,7 +410,6 @@
 - [WOOOOONG/CVE-2025-2825](https://github.com/WOOOOONG/CVE-2025-2825)
 - [punitdarji/crushftp-CVE-2025-2825](https://github.com/punitdarji/crushftp-CVE-2025-2825)
 - [ghostsec420/ShatteredFTP](https://github.com/ghostsec420/ShatteredFTP)
-- [Shivshantp/CVE-2025-2825-CrushFTP-AuthBypass](https://github.com/Shivshantp/CVE-2025-2825-CrushFTP-AuthBypass)
 
 ### CVE-2025-2828 (2025-06-23)
 
@@ -895,7 +894,6 @@
 - [SleepNotF0und/CVE-2025-5777](https://github.com/SleepNotF0und/CVE-2025-5777)
 - [cyberleelawat/ExploitVeer](https://github.com/cyberleelawat/ExploitVeer)
 - [B1ack4sh/Blackash-CVE-2025-5777](https://github.com/B1ack4sh/Blackash-CVE-2025-5777)
-- [Shivshantp/CVE-2025-5777-TrendMicro-ApexCentral-RCE](https://github.com/Shivshantp/CVE-2025-5777-TrendMicro-ApexCentral-RCE)
 - [rob0tstxt/POC-CVE-2025-5777](https://github.com/rob0tstxt/POC-CVE-2025-5777)
 - [below0day/Honeypot-Logs-CVE-2025-5777](https://github.com/below0day/Honeypot-Logs-CVE-2025-5777)
 
@@ -1737,7 +1735,7 @@
 - [GongWook/CVE-2025-24813](https://github.com/GongWook/CVE-2025-24813)
 - [sentilaso1/CVE-2025-24813-Apache-Tomcat-RCE-PoC](https://github.com/sentilaso1/CVE-2025-24813-Apache-Tomcat-RCE-PoC)
 - [x00byte/PutScanner](https://github.com/x00byte/PutScanner)
-- [Shivshantp/CVE-2025-24813](https://github.com/Shivshantp/CVE-2025-24813)
+- [cyglegit/CVE-2025-24813](https://github.com/cyglegit/CVE-2025-24813)
 
 ### CVE-2025-24893 (2025-02-20)
 
@@ -1756,6 +1754,7 @@
 - [dollarboysushil/CVE-2025-24893-XWiki-Unauthenticated-RCE-Exploit-POC](https://github.com/dollarboysushil/CVE-2025-24893-XWiki-Unauthenticated-RCE-Exploit-POC)
 - [zs1n/CVE-2025-24893](https://github.com/zs1n/CVE-2025-24893)
 - [investigato/cve-2025-24893-poc](https://github.com/investigato/cve-2025-24893-poc)
+- [570RMBR3AK3R/xwiki-cve-2025-24893-poc](https://github.com/570RMBR3AK3R/xwiki-cve-2025-24893-poc)
 
 ### CVE-2025-24963 (2025-02-04)
 
@@ -3086,7 +3085,6 @@
 - [ChetanKomal/sudo_exploit](https://github.com/ChetanKomal/sudo_exploit)
 - [KaiHT-Ladiant/CVE-2025-32463](https://github.com/KaiHT-Ladiant/CVE-2025-32463)
 - [y4ney/CVE-2025-32463-lab](https://github.com/y4ney/CVE-2025-32463-lab)
-- [Dlodlos/CVE-2025-32463-lab](https://github.com/Dlodlos/CVE-2025-32463-lab)
 - [aldoClau98/CVE-2025-32463](https://github.com/aldoClau98/CVE-2025-32463)
 - [painoob/CVE-2025-32463](https://github.com/painoob/CVE-2025-32463)
 
@@ -3783,6 +3781,9 @@
 
 - [shipcod3/CVE-2025-48466](https://github.com/shipcod3/CVE-2025-48466)
 
+### CVE-2025-48621
+- [Layer1-Artist/POC-CVE-2025-48621](https://github.com/Layer1-Artist/POC-CVE-2025-48621)
+
 ### CVE-2025-48703
 - [trh4ckn0n/CVE-2025-48703](https://github.com/trh4ckn0n/CVE-2025-48703)
 - [Skynoxk/CVE-2025-48703](https://github.com/Skynoxk/CVE-2025-48703)
@@ -3931,7 +3932,11 @@
 ### CVE-2025-50000
 - [adiivascu/CVE-2025-50000](https://github.com/adiivascu/CVE-2025-50000)
 
-### CVE-2025-50286
+### CVE-2025-50286 (2025-08-06)
+
+<code>A Remote Code Execution (RCE) vulnerability in Grav CMS v1.7.48 allows an authenticated admin to upload a malicious plugin via the /admin/tools/direct-install interface. Once uploaded, the plugin is automatically extracted and loaded, allowing arbitrary PHP code execution and reverse shell access.
+</code>
+
 - [binneko/CVE-2025-50286](https://github.com/binneko/CVE-2025-50286)
 
 ### CVE-2025-50340 (2025-08-04)
@@ -4328,6 +4333,13 @@
 
 - [allinsthon/CVE-2025-54135](https://github.com/allinsthon/CVE-2025-54135)
 
+### CVE-2025-54253 (2025-08-05)
+
+<code>Adobe Experience Manager versions 6.5.23 and earlier are affected by a Misconfiguration vulnerability that could result in arbitrary code execution. An attacker could leverage this vulnerability to bypass security mechanisms and execute code. Exploitation of this issue does not require user interaction and scope is changed.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-54253](https://github.com/B1ack4sh/Blackash-CVE-2025-54253)
+
 ### CVE-2025-54309 (2025-07-18)
 
 <code>CrushFTP 10 before 10.8.5 and 11 before 11.3.4_23, when the DMZ proxy feature is not used, mishandles AS2 validation and consequently allows remote attackers to obtain admin access via HTTPS, as exploited in the wild in July 2025.
@@ -4392,6 +4404,13 @@
 </code>
 
 - [byteReaper77/CVE-2025-54769](https://github.com/byteReaper77/CVE-2025-54769)
+
+### CVE-2025-54794 (2025-08-05)
+
+<code>Claude Code is an agentic coding tool. In versions below 0.2.111, a path validation flaw using prefix matching instead of canonical path comparison, makes it possible to bypass directory restrictions and access files outside the CWD. Successful exploitation depends on the presence of (or ability to create) a directory with the same prefix as the CWD and the ability to add untrusted content into a Claude Code context window. This is fixed in version 0.2.111.
+</code>
+
+- [AdityaBhatt3010/CVE-2025-54794-Hijacking-Claude-AI-with-a-Prompt-Injection-The-Jailbreak-That-Talked-Back](https://github.com/AdityaBhatt3010/CVE-2025-54794-Hijacking-Claude-AI-with-a-Prompt-Injection-The-Jailbreak-That-Talked-Back)
 
 ### CVE-2025-54962 (2025-08-04)
 
@@ -10195,6 +10214,7 @@
 - [AliElKhatteb/CVE-2024-32019-POC](https://github.com/AliElKhatteb/CVE-2024-32019-POC)
 - [dollarboysushil/CVE-2024-32019-Netdata-ndsudo-PATH-Vulnerability-Privilege-Escalation](https://github.com/dollarboysushil/CVE-2024-32019-Netdata-ndsudo-PATH-Vulnerability-Privilege-Escalation)
 - [juanbelin/CVE-2024-32019-POC](https://github.com/juanbelin/CVE-2024-32019-POC)
+- [C0deInBlack/CVE-2024-32019-poc](https://github.com/C0deInBlack/CVE-2024-32019-poc)
 
 ### CVE-2024-32030 (2024-06-19)
 
@@ -10226,6 +10246,13 @@
 </code>
 
 - [xbz0n/CVE-2024-32136](https://github.com/xbz0n/CVE-2024-32136)
+
+### CVE-2024-32167 (2024-06-10)
+
+<code>Sourcecodester Online Medicine Ordering System 1.0 is vulnerable to Arbitrary file deletion vulnerability as the backend settings have the function of deleting pictures to delete any files.
+</code>
+
+- [Narsimhareddy28/CVE-2024-32167](https://github.com/Narsimhareddy28/CVE-2024-32167)
 
 ### CVE-2024-32205
 - [Lucky-lm/CVE-2024-32205](https://github.com/Lucky-lm/CVE-2024-32205)
@@ -20152,7 +20179,6 @@
 - [4zur-0312/CVE-2023-36802](https://github.com/4zur-0312/CVE-2023-36802)
 - [x0rb3l/CVE-2023-36802-MSKSSRV-LPE](https://github.com/x0rb3l/CVE-2023-36802-MSKSSRV-LPE)
 - [Nero22k/cve-2023-36802](https://github.com/Nero22k/cve-2023-36802)
-- [ISH2YU/CVE-2023-36802](https://github.com/ISH2YU/CVE-2023-36802)
 
 ### CVE-2023-36812 (2023-06-30)
 
@@ -25582,6 +25608,7 @@
 - [ZapcoMan/spring4shell-vulnerable-application](https://github.com/ZapcoMan/spring4shell-vulnerable-application)
 - [osungjinwoo/CVE-2022-22965](https://github.com/osungjinwoo/CVE-2022-22965)
 - [Nosie12/fire-wall-server](https://github.com/Nosie12/fire-wall-server)
+- [salo-404/firewall](https://github.com/salo-404/firewall)
 
 ### CVE-2022-22966 (2022-04-14)
 
@@ -27049,21 +27076,21 @@
 <code>Red Planet Laundry Management System 1.0 is vulnerable to SQL Injection.
 </code>
 
-- [YavuzSahbaz/Red-Planet-Laundry-Management-System-1.0-is-vulnerable-to-SQL](https://github.com/YavuzSahbaz/Red-Planet-Laundry-Management-System-1.0-is-vulnerable-to-SQL)
+- [YSah44/Red-Planet-Laundry-Management-System-1.0-is-vulnerable-to-SQL](https://github.com/YSah44/Red-Planet-Laundry-Management-System-1.0-is-vulnerable-to-SQL)
 
 ### CVE-2022-28454 (2022-04-28)
 
 <code>Limbas 4.3.36.1319 is vulnerable to Cross Site Scripting (XSS).
 </code>
 
-- [YavuzSahbaz/Limbas-4.3.36.1319-is-vulnerable-to-Cross-Site-Scripting-XSS-](https://github.com/YavuzSahbaz/Limbas-4.3.36.1319-is-vulnerable-to-Cross-Site-Scripting-XSS-)
+- [YSah44/Limbas-4.3.36.1319-is-vulnerable-to-Cross-Site-Scripting-XSS-](https://github.com/YSah44/Limbas-4.3.36.1319-is-vulnerable-to-Cross-Site-Scripting-XSS-)
 
 ### CVE-2022-28508 (2022-05-04)
 
 <code>An XSS issue was discovered in browser_search_plugin.php in MantisBT before 2.25.2. Unescaped output of the return parameter allows an attacker to inject code into a hidden input field.
 </code>
 
-- [YavuzSahbaz/CVE-2022-28508](https://github.com/YavuzSahbaz/CVE-2022-28508)
+- [YSah44/CVE-2022-28508](https://github.com/YSah44/CVE-2022-28508)
 
 ### CVE-2022-28590 (2022-05-03)
 
@@ -27866,7 +27893,7 @@
 <code>ITOP v3.0.1 was discovered to contain a cross-site scripting (XSS) vulnerability via /itop/webservices/export-v2.php.
 </code>
 
-- [YavuzSahbaz/CVE-2022-31402](https://github.com/YavuzSahbaz/CVE-2022-31402)
+- [YSah44/CVE-2022-31402](https://github.com/YSah44/CVE-2022-31402)
 
 ### CVE-2022-31403 (2022-06-14)
 
@@ -31572,6 +31599,13 @@
 </code>
 
 - [dja2TaqkGEEfA45/CVE-2021-3516](https://github.com/dja2TaqkGEEfA45/CVE-2021-3516)
+
+### CVE-2021-3544 (2021-06-02)
+
+<code>Several memory leaks were found in the virtio vhost-user GPU device (vhost-user-gpu) of QEMU in versions up to and including 6.0. They exist in contrib/vhost-user-gpu/vhost-user-gpu.c and contrib/vhost-user-gpu/virgl.c due to improper release of memory (i.e., free) after effective lifetime.
+</code>
+
+- [Goultarde/CVE-2021-3544_RemoteMouse-3.008-RCE](https://github.com/Goultarde/CVE-2021-3544_RemoteMouse-3.008-RCE)
 
 ### CVE-2021-3560 (2022-02-16)
 
@@ -37066,13 +37100,6 @@
 
 - [plsanu/Bludit-3.13.1-About-Plugin-Stored-Cross-Site-Scripting-XSS](https://github.com/plsanu/Bludit-3.13.1-About-Plugin-Stored-Cross-Site-Scripting-XSS)
 
-### CVE-2021-45897 (2022-01-28)
-
-<code>SuiteCRM before 7.12.3 and 8.x before 8.0.2 allows remote code execution.
-</code>
-
-- [manuelz120/CVE-2021-45897](https://github.com/manuelz120/CVE-2021-45897)
-
 ### CVE-2021-45901 (2022-02-10)
 
 <code>The password-reset form in ServiceNow Orlando provides different responses to invalid authentication attempts depending on whether the username exists.
@@ -38014,6 +38041,7 @@
 - [DannyRavi/nmap-scripts](https://github.com/DannyRavi/nmap-scripts)
 - [tdevworks/CVE-2020-0796-SMBGhost-Exploit-Demo](https://github.com/tdevworks/CVE-2020-0796-SMBGhost-Exploit-Demo)
 - [maqeel-git/CVE-2020-0796](https://github.com/maqeel-git/CVE-2020-0796)
+- [esmwaSpyware/DoS-PoC-for-CVE-2020-0796-SMBGhost-](https://github.com/esmwaSpyware/DoS-PoC-for-CVE-2020-0796-SMBGhost-)
 
 ### CVE-2020-0887 (2020-03-12)
 
@@ -52507,6 +52535,7 @@
 - [tea9/CVE-2017-13156-Janus](https://github.com/tea9/CVE-2017-13156-Janus)
 - [M507/CVE-2017-13156](https://github.com/M507/CVE-2017-13156)
 - [nahid0x1/Janus-Vulnerability-CVE-2017-13156-Exploit](https://github.com/nahid0x1/Janus-Vulnerability-CVE-2017-13156-Exploit)
+- [nictjh/threatDemos](https://github.com/nictjh/threatDemos)
 
 ### CVE-2017-13208 (2018-01-12)
 
