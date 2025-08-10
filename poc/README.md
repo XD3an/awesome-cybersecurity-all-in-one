@@ -652,6 +652,13 @@
 - [Yucaerin/CVE-2025-4403](https://github.com/Yucaerin/CVE-2025-4403)
 - [B1ack4sh/Blackash-CVE-2025-4403](https://github.com/B1ack4sh/Blackash-CVE-2025-4403)
 
+### CVE-2025-4404 (2025-06-17)
+
+<code>A privilege escalation from host to domain vulnerability was found in the FreeIPA project. The FreeIPA package fails to validate the uniqueness of the `krbCanonicalName` for the admin account by default, allowing users to create services with the same canonical name as the REALM admin. When a successful attack happens, the user can retrieve a Kerberos ticket in the name of this service, containing the admin@REALM credential. This flaw allows an attacker to perform administrative tasks over the REALM, leading to access to sensitive data and sensitive data exfiltration.
+</code>
+
+- [Cyxow/CVE-2025-4404-POC](https://github.com/Cyxow/CVE-2025-4404-POC)
+
 ### CVE-2025-4427 (2025-05-13)
 
 <code>An authentication bypass in the API component of Ivanti Endpoint Manager Mobile 12.5.0.0 and prior allows attackers to access protected resources without proper credentials via the API.
@@ -1276,6 +1283,7 @@
 - [Dit-Developers/CVE-2025-21298](https://github.com/Dit-Developers/CVE-2025-21298)
 - [Denyningbow/rtf-ctf-cve-2025-21298](https://github.com/Denyningbow/rtf-ctf-cve-2025-21298)
 - [mr-big-leach/CVE-2025-21298](https://github.com/mr-big-leach/CVE-2025-21298)
+- [B1ack4sh/Blackash-CVE-2025-21298](https://github.com/B1ack4sh/Blackash-CVE-2025-21298)
 
 ### CVE-2025-21307 (2025-01-14)
 
@@ -1786,6 +1794,8 @@
 - [Hex00-0x4/CVE-2025-24893-XWiki-RCE](https://github.com/Hex00-0x4/CVE-2025-24893-XWiki-RCE)
 - [The-Red-Serpent/CVE-2025-24893](https://github.com/The-Red-Serpent/CVE-2025-24893)
 - [alaxar/CVE-2025-24893](https://github.com/alaxar/CVE-2025-24893)
+- [D3Ext/CVE-2025-24893](https://github.com/D3Ext/CVE-2025-24893)
+- [Retro023/CVE-2025-24893-POC](https://github.com/Retro023/CVE-2025-24893-POC)
 
 ### CVE-2025-24963 (2025-02-04)
 
@@ -2591,6 +2601,7 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
+- [AventurineJun/CVE-2025-29927-Research](https://github.com/AventurineJun/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -4539,6 +4550,9 @@
 
 
 ## 2024
+### CVE-2024-0000
+- [nullsquirtle/CVE-2024-0000-PoC](https://github.com/nullsquirtle/CVE-2024-0000-PoC)
+
 ### CVE-2024-0012 (2024-11-18)
 
 <code>An authentication bypass in Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to gain PAN-OS administrator privileges to perform administrative actions, tamper with the configuration, or exploit other authenticated privilege escalation vulnerabilities like  CVE-2024-9474 https://security.paloaltonetworks.com/CVE-2024-9474 .\n\nThe risk of this issue is greatly reduced if you secure access to the management web interface by restricting access to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\nThis issue is applicable only to PAN-OS 10.2, PAN-OS 11.0, PAN-OS 11.1, and PAN-OS 11.2 software.\n\nCloud NGFW and Prisma Access are not impacted by this vulnerability.
@@ -29098,6 +29112,7 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
+- [AventurineJun/CVE-2022-39299-Research](https://github.com/AventurineJun/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -33844,6 +33859,13 @@
 - [jsherman212/iomfb-exploit](https://github.com/jsherman212/iomfb-exploit)
 - [30440r/gex](https://github.com/30440r/gex)
 
+### CVE-2021-30809 (2021-10-28)
+
+<code>A use after free issue was addressed with improved memory management. This issue is fixed in Safari 15, tvOS 15, watchOS 8, iOS 15 and iPadOS 15. Processing maliciously crafted web content may lead to arbitrary code execution.
+</code>
+
+- [seregonwar/CVE-2021-30809-UAF](https://github.com/seregonwar/CVE-2021-30809-UAF)
+
 ### CVE-2021-30858 (2021-08-24)
 
 <code>A use after free issue was addressed with improved memory management. This issue is fixed in iOS 14.8 and iPadOS 14.8, macOS Big Sur 11.6. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited.
@@ -37172,13 +37194,6 @@
 </code>
 
 - [plsanu/Bludit-3.13.1-About-Plugin-Stored-Cross-Site-Scripting-XSS](https://github.com/plsanu/Bludit-3.13.1-About-Plugin-Stored-Cross-Site-Scripting-XSS)
-
-### CVE-2021-45897 (2022-01-28)
-
-<code>SuiteCRM before 7.12.3 and 8.x before 8.0.2 allows remote code execution.
-</code>
-
-- [manuelz120/CVE-2021-45897](https://github.com/manuelz120/CVE-2021-45897)
 
 ### CVE-2021-45901 (2022-02-10)
 
@@ -56203,6 +56218,7 @@
 - [moften/CVE-2014-6271](https://github.com/moften/CVE-2014-6271)
 - [knightc0de/Shellshock_vuln_Exploit](https://github.com/knightc0de/Shellshock_vuln_Exploit)
 - [rsherstnev/CVE-2014-6271](https://github.com/rsherstnev/CVE-2014-6271)
+- [RAJMadhusankha/Shellshock-CVE-2014-6271-Exploitation-and-Analysis](https://github.com/RAJMadhusankha/Shellshock-CVE-2014-6271-Exploitation-and-Analysis)
 
 ### CVE-2014-6287 (2014-10-07)
 
@@ -57018,7 +57034,7 @@
 - [Gvmyz/CVE-2012-2982_Python](https://github.com/Gvmyz/CVE-2012-2982_Python)
 - [Ari-Weinberg/CVE-2012-2982](https://github.com/Ari-Weinberg/CVE-2012-2982)
 - [JohnHammond/CVE-2012-2982](https://github.com/JohnHammond/CVE-2012-2982)
-- [SpoofIMEI/CVE-2012-2982](https://github.com/SpoofIMEI/CVE-2012-2982)
+- [varppi/CVE-2012-2982](https://github.com/varppi/CVE-2012-2982)
 - [blu3ming/CVE-2012-2982](https://github.com/blu3ming/CVE-2012-2982)
 - [0xF331-D3AD/CVE-2012-2982](https://github.com/0xF331-D3AD/CVE-2012-2982)
 - [0xTas/CVE-2012-2982](https://github.com/0xTas/CVE-2012-2982)
