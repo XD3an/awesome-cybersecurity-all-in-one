@@ -270,6 +270,7 @@
 - [Rickerd12/exploit-cve-2025-1974](https://github.com/Rickerd12/exploit-cve-2025-1974)
 - [B1ack4sh/Blackash-CVE-2025-1974](https://github.com/B1ack4sh/Blackash-CVE-2025-1974)
 - [Armand2002/Exploit-CVE-2025-1974-Lab](https://github.com/Armand2002/Exploit-CVE-2025-1974-Lab)
+- [BiiTts/POC-IngressNightmare-CVE-2025-1974](https://github.com/BiiTts/POC-IngressNightmare-CVE-2025-1974)
 
 ### CVE-2025-2005 (2025-04-02)
 
@@ -3681,6 +3682,13 @@
 </code>
 
 - [mahyarx/CVE-2025-47176](https://github.com/mahyarx/CVE-2025-47176)
+
+### CVE-2025-47178 (2025-07-08)
+
+<code>Improper neutralization of special elements used in an sql command ('sql injection') in Microsoft Configuration Manager allows an authorized attacker to execute code over an adjacent network.
+</code>
+
+- [synacktiv/CVE-2025-47178](https://github.com/synacktiv/CVE-2025-47178)
 
 ### CVE-2025-47181 (2025-05-22)
 
@@ -11157,6 +11165,13 @@
 
 - [bartfroklage/CVE-2024-37383-POC](https://github.com/bartfroklage/CVE-2024-37383-POC)
 - [amirzargham/CVE-2024-37383-exploit](https://github.com/amirzargham/CVE-2024-37383-exploit)
+
+### CVE-2024-37388 (2024-06-07)
+
+<code>An XML External Entity (XXE) vulnerability in the ebookmeta.get_metadata function of lxml before v4.9.1 allows attackers to access sensitive information or cause a Denial of Service (DoS) via crafted XML input.
+</code>
+
+- [Narsimhareddy28/cve-2024-37388](https://github.com/Narsimhareddy28/cve-2024-37388)
 
 ### CVE-2024-37393 (2024-06-10)
 
@@ -30333,7 +30348,6 @@
 - [nu0l/CVE-2022-46463](https://github.com/nu0l/CVE-2022-46463)
 - [404tk/CVE-2022-46463](https://github.com/404tk/CVE-2022-46463)
 - [CodeSecurityTeam/harbor](https://github.com/CodeSecurityTeam/harbor)
-- [sevbandonmez/harbor-stalker](https://github.com/sevbandonmez/harbor-stalker)
 
 ### CVE-2022-46484 (2023-08-02)
 
@@ -34927,13 +34941,6 @@
 
 - [Captain-v-hook/PoC-for-CVE-2021-38540-](https://github.com/Captain-v-hook/PoC-for-CVE-2021-38540-)
 
-### CVE-2021-38560 (2022-02-01)
-
-<code>Ivanti Service Manager 2021.1 allows reflected XSS via the appName parameter associated with ConfigDB calls, such as in RelocateAttachments.aspx.
-</code>
-
-- [os909/iVANTI-CVE-2021-38560](https://github.com/os909/iVANTI-CVE-2021-38560)
-
 ### CVE-2021-38583 (2021-08-13)
 
 <code>openBaraza HCM 3.1.6 does not properly neutralize user-controllable input, which allows reflected cross-site scripting (XSS) on multiple pages: hr/subscription.jsp and hr/application.jsp and and hr/index.jsp (with view= and data=).
@@ -35806,6 +35813,7 @@
 - [javaamo/CVE-2021-41773](https://github.com/javaamo/CVE-2021-41773)
 - [ashique-thaha/CVE-2021-41773-POC](https://github.com/ashique-thaha/CVE-2021-41773-POC)
 - [khaidtraivch/CVE-2021-41773-Apache-2.4.49-](https://github.com/khaidtraivch/CVE-2021-41773-Apache-2.4.49-)
+- [JIYUN02/cve-2021-41773](https://github.com/JIYUN02/cve-2021-41773)
 - [AzK-os-dev/CVE-2021-41773](https://github.com/AzK-os-dev/CVE-2021-41773)
 - [CyberQuestor-infosec/CVE-2021-41773-Apache_2.4.49-Path-traversal-to-RCE](https://github.com/CyberQuestor-infosec/CVE-2021-41773-Apache_2.4.49-Path-traversal-to-RCE)
 - [psibot/apache-vulnerable](https://github.com/psibot/apache-vulnerable)
@@ -51451,6 +51459,7 @@
 - [turnernator1/Node.js-CVE-2017-5941](https://github.com/turnernator1/Node.js-CVE-2017-5941)
 - [Cr4zyD14m0nd137/Lab-for-cve-2018-15133](https://github.com/Cr4zyD14m0nd137/Lab-for-cve-2018-15133)
 - [uartu0/nodejshell](https://github.com/uartu0/nodejshell)
+- [kylew1004/cve-2017-5941-poc-docker-lab](https://github.com/kylew1004/cve-2017-5941-poc-docker-lab)
 
 ### CVE-2017-6008 (2017-09-13)
 
