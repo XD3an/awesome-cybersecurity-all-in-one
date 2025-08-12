@@ -913,6 +913,7 @@
 - [rob0tstxt/POC-CVE-2025-5777](https://github.com/rob0tstxt/POC-CVE-2025-5777)
 - [below0day/Honeypot-Logs-CVE-2025-5777](https://github.com/below0day/Honeypot-Logs-CVE-2025-5777)
 - [soltanali0/CVE-2025-5777-Exploit](https://github.com/soltanali0/CVE-2025-5777-Exploit)
+- [rootxsushant/Citrix-NetScaler-Memory-Leak-CVE-2025-5777](https://github.com/rootxsushant/Citrix-NetScaler-Memory-Leak-CVE-2025-5777)
 
 ### CVE-2025-5815 (2025-06-13)
 
@@ -1200,6 +1201,7 @@
 </code>
 
 - [jordan922/CVE-2025-8088](https://github.com/jordan922/CVE-2025-8088)
+- [travisbgreen/cve-2025-8088](https://github.com/travisbgreen/cve-2025-8088)
 
 ### CVE-2025-8191 (2025-07-26)
 
@@ -1777,6 +1779,7 @@
 - [x00byte/PutScanner](https://github.com/x00byte/PutScanner)
 - [Shivshantp/CVE-2025-24813](https://github.com/Shivshantp/CVE-2025-24813)
 - [cyglegit/CVE-2025-24813](https://github.com/cyglegit/CVE-2025-24813)
+- [137f/PoC-CVE-2025-24813](https://github.com/137f/PoC-CVE-2025-24813)
 
 ### CVE-2025-24893 (2025-02-20)
 
@@ -3352,7 +3355,7 @@
 <code>An unauthorized remote attacker can bypass the authentication of the affected software package by misusing an incorrect type conversion. This leads to full compromise of the device
 </code>
 
-- [GreenForceNetwork/CVE-2025-41646---Critical-Authentication-Bypass-](https://github.com/GreenForceNetwork/CVE-2025-41646---Critical-Authentication-Bypass-)
+- [GreenForceNetworks/CVE-2025-41646---Critical-Authentication-Bypass-](https://github.com/GreenForceNetworks/CVE-2025-41646---Critical-Authentication-Bypass-)
 - [r0otk3r/CVE-2025-41646](https://github.com/r0otk3r/CVE-2025-41646)
 
 ### CVE-2025-43864 (2025-04-25)
@@ -4187,6 +4190,9 @@
 
 - [Kai-One001/Letta-CVE-2025-51482-RCE](https://github.com/Kai-One001/Letta-CVE-2025-51482-RCE)
 
+### CVE-2025-51643
+- [NastyCrow/CVE-2025-51643](https://github.com/NastyCrow/CVE-2025-51643)
+
 ### CVE-2025-51726 (2025-08-04)
 
 <code>CyberGhostVPNSetup.exe (Windows installer) is signed using the weak cryptographic hash algorithm SHA-1, which is vulnerable to collision attacks. This allows a malicious actor to craft a fake installer with a forged SHA-1 certificate that may still be accepted by Windows signature verification mechanisms, particularly on systems without strict SmartScreen or trust policy enforcement. Additionally, the installer lacks High Entropy Address Space Layout Randomization (ASLR), as confirmed by BinSkim (BA2015 rule) and repeated WinDbg analysis. The binary consistently loads into predictable memory ranges, increasing the success rate of memory corruption exploits. These two misconfigurations, when combined, significantly lower the bar for successful supply-chain style attacks or privilege escalation through fake installers.
@@ -4376,7 +4382,7 @@
 - [grupooruss/CVE-2025-53770-Checker](https://github.com/grupooruss/CVE-2025-53770-Checker)
 - [tripoloski1337/CVE-2025-53770-scanner](https://github.com/tripoloski1337/CVE-2025-53770-scanner)
 - [AdityaBhatt3010/CVE-2025-53770-SharePoint-Zero-Day-Variant-Exploited-for-Full-RCE](https://github.com/AdityaBhatt3010/CVE-2025-53770-SharePoint-Zero-Day-Variant-Exploited-for-Full-RCE)
-- [GreenForceNetwork/Toolshell_CVE-2025-53770](https://github.com/GreenForceNetwork/Toolshell_CVE-2025-53770)
+- [GreenForceNetworks/Toolshell_CVE-2025-53770](https://github.com/GreenForceNetworks/Toolshell_CVE-2025-53770)
 - [a-hydrae/ToolShell-Honeypot](https://github.com/a-hydrae/ToolShell-Honeypot)
 - [imbas007/CVE-2025-53770-Vulnerable-Scanner](https://github.com/imbas007/CVE-2025-53770-Vulnerable-Scanner)
 - [Sec-Dan/CVE-2025-53770-Scanner](https://github.com/Sec-Dan/CVE-2025-53770-Scanner)
@@ -4523,6 +4529,14 @@
 </code>
 
 - [Eyodav/CVE-2025-54962](https://github.com/Eyodav/CVE-2025-54962)
+
+### CVE-2025-55188 (2025-08-08)
+
+<code>7-Zip before 25.01 does not always properly handle symbolic links during extraction.
+</code>
+
+- [hunters-sec/CVE-2025-55188-7z-exploit](https://github.com/hunters-sec/CVE-2025-55188-7z-exploit)
+- [san8383/CVE-2025-55188-7z-POC](https://github.com/san8383/CVE-2025-55188-7z-POC)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -6382,6 +6396,13 @@
 </code>
 
 - [RandomRobbieBF/CVE-2024-7514](https://github.com/RandomRobbieBF/CVE-2024-7514)
+
+### CVE-2024-7591 (2024-09-05)
+
+<code>Improper Input Validation vulnerability in Progress LoadMaster allows OS Command Injection.This issue affects:\n\n* LoadMaster: 7.2.40.0 and above\n\n* ECS: All versions\n\n* Multi-Tenancy: 7.1.35.4 and above
+</code>
+
+- [butyraldehyde/CVE-2024-7591-PoC](https://github.com/butyraldehyde/CVE-2024-7591-PoC)
 
 ### CVE-2024-7593 (2024-08-13)
 
@@ -10426,7 +10447,11 @@
 
 - [truonghuuphuc/CVE-2024-32523-Poc](https://github.com/truonghuuphuc/CVE-2024-32523-Poc)
 
-### CVE-2024-32640
+### CVE-2024-32640 (2025-08-11)
+
+<code>MASA CMS is an Enterprise Content Management platform based on open source technology. Versions prior to 7.4.6, 7.3.13, and 7.2.8 contain a SQL injection vulnerability in the `processAsyncObject` method that can result in remote code execution. Versions 7.4.6, 7.3.13, and 7.2.8 contain a fix for the issue.
+</code>
+
 - [Stuub/CVE-2024-32640-SQLI-MuraCMS](https://github.com/Stuub/CVE-2024-32640-SQLI-MuraCMS)
 - [0xYumeko/CVE-2024-32640-SQLI-MuraCMS](https://github.com/0xYumeko/CVE-2024-32640-SQLI-MuraCMS)
 - [sammings/CVE-2024-32640](https://github.com/sammings/CVE-2024-32640)
@@ -12883,6 +12908,13 @@
 
 ### CVE-2024-47177
 - [referefref/cupspot-2024-47177](https://github.com/referefref/cupspot-2024-47177)
+
+### CVE-2024-47533 (2024-11-18)
+
+<code>Cobbler, a Linux installation server that allows for rapid setup of network installation environments, has an improper authentication vulnerability starting in version 3.0.0 and prior to versions 3.2.3 and 3.3.7. `utils.get_shared_secret()` always returns `-1`, which allows anyone to connect to cobbler XML-RPC as user `''` password `-1` and make any changes. This gives anyone with network access to a cobbler server full control of the server. Versions 3.2.3 and 3.3.7 fix the issue.
+</code>
+
+- [baph00met/CVE-2024-47533](https://github.com/baph00met/CVE-2024-47533)
 
 ### CVE-2024-47575 (2024-10-23)
 
@@ -16727,6 +16759,13 @@
 
 - [Trinadh465/frameworks_av_CVE-2023-20933](https://github.com/Trinadh465/frameworks_av_CVE-2023-20933)
 
+### CVE-2023-20938 (2023-02-28)
+
+<code>In binder_transaction_buffer_release of binder.c, there is a possible use after free due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-257685302References: Upstream kernel
+</code>
+
+- [anansi2safe/CVE-2023-20938](https://github.com/anansi2safe/CVE-2023-20938)
+
 ### CVE-2023-20943 (2023-02-28)
 
 <code>In clearApplicationUserData of ActivityManagerService.java, there is a possible way to remove system files due to a path traversal error. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-12L Android-13Android ID: A-240267890
@@ -17257,7 +17296,7 @@
 - [AntiVlad/CVE-2023-22809](https://github.com/AntiVlad/CVE-2023-22809)
 - [laxmiyamkolu/SUDO-privilege-escalation](https://github.com/laxmiyamkolu/SUDO-privilege-escalation)
 - [D0rDa4aN919/CVE-2023-22809-Exploiter](https://github.com/D0rDa4aN919/CVE-2023-22809-Exploiter)
-- [spidoman/CVE-2023-22809-automated-python-exploits](https://github.com/spidoman/CVE-2023-22809-automated-python-exploits)
+- [Spydomain/CVE-2023-22809-automated-python-exploits](https://github.com/Spydomain/CVE-2023-22809-automated-python-exploits)
 
 ### CVE-2023-22855 (2023-02-15)
 
@@ -28760,6 +28799,7 @@
 
 - [rootDR/CVE-2022-36779](https://github.com/rootDR/CVE-2022-36779)
 - [EmadYaY/CVE-2022-36779](https://github.com/EmadYaY/CVE-2022-36779)
+- [rootdr-backup/exploit-CVE-2022-36779](https://github.com/rootdr-backup/exploit-CVE-2022-36779)
 
 ### CVE-2022-36804 (2022-08-25)
 
@@ -31870,7 +31910,6 @@
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [glowbase/PwnKit-CVE-2021-4034](https://github.com/glowbase/PwnKit-CVE-2021-4034)
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
-- [scent2d/PoC-CVE-2021-4034](https://github.com/scent2d/PoC-CVE-2021-4034)
 - [HrishitJoshi/CVE-2021-4034](https://github.com/HrishitJoshi/CVE-2021-4034)
 - [Ankit-Ojha16/CVE-2021-4034](https://github.com/Ankit-Ojha16/CVE-2021-4034)
 - [G01d3nW01f/CVE-2021-4034](https://github.com/G01d3nW01f/CVE-2021-4034)
@@ -31949,13 +31988,6 @@
 - [Milad-Rafie/PwnKit-Local-Privilege-Escalation-Vulnerability-Discovered-in-polkit-s-pkexec-CVE-2021-4034](https://github.com/Milad-Rafie/PwnKit-Local-Privilege-Escalation-Vulnerability-Discovered-in-polkit-s-pkexec-CVE-2021-4034)
 - [kali-guru/Pwnkit-CVE-2021-4034](https://github.com/kali-guru/Pwnkit-CVE-2021-4034)
 - [BugVex/Poison-HTB-Report](https://github.com/BugVex/Poison-HTB-Report)
-
-### CVE-2021-4043 (2022-02-04)
-
-<code>NULL Pointer Dereference in GitHub repository gpac/gpac prior to 1.1.0.
-</code>
-
-- [cyberark/PwnKit-Hunter](https://github.com/cyberark/PwnKit-Hunter)
 
 ### CVE-2021-4044 (2021-12-14)
 
@@ -32909,6 +32941,13 @@
 </code>
 
 - [S1lkys/CVE-2021-24884](https://github.com/S1lkys/CVE-2021-24884)
+
+### CVE-2021-24891 (2021-11-23)
+
+<code>The Elementor Website Builder WordPress plugin before 3.4.8 does not sanitise or escape user input appended to the DOM via a malicious hash, resulting in a DOM Cross-Site Scripting issue.
+</code>
+
+- [hackmelocal/CVE-2021-24891-Simulation](https://github.com/hackmelocal/CVE-2021-24891-Simulation)
 
 ### CVE-2021-24917 (2021-12-06)
 
@@ -35826,6 +35865,7 @@
 - [psibot/apache-vulnerable](https://github.com/psibot/apache-vulnerable)
 - [blu3ming/PoC-CVE-2021-41773](https://github.com/blu3ming/PoC-CVE-2021-41773)
 - [r0otk3r/CVE-2021-41773](https://github.com/r0otk3r/CVE-2021-41773)
+- [mah4nzfr/CVE-2021-41773](https://github.com/mah4nzfr/CVE-2021-41773)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -38605,6 +38645,13 @@
 - [FancyDoesSecurity/CVE-2020-2883](https://github.com/FancyDoesSecurity/CVE-2020-2883)
 - [Al1ex/CVE-2020-2883](https://github.com/Al1ex/CVE-2020-2883)
 - [Qynklee/POC_CVE-2020-2883](https://github.com/Qynklee/POC_CVE-2020-2883)
+
+### CVE-2020-2950 (2020-04-15)
+
+<code>Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Fusion Middleware (component: Analytics Web General). Supported versions that are affected are 5.5.0.0.0, 11.1.1.9.0, 12.2.1.3.0 and 12.2.1.4.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Business Intelligence Enterprise Edition. Successful attacks of this vulnerability can result in takeover of Oracle Business Intelligence Enterprise Edition. CVSS 3.0 Base Score 9.8 (Confidentiality, Integrity and Availability impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
+</code>
+
+- [tuo4n8/CVE-2020-2950](https://github.com/tuo4n8/CVE-2020-2950)
 
 ### CVE-2020-2969 (2020-07-15)
 
@@ -54438,6 +54485,7 @@
 - [ElnurBDa/CVE-2016-10033](https://github.com/ElnurBDa/CVE-2016-10033)
 - [Astrowmist/POC-CVE-2016-10033](https://github.com/Astrowmist/POC-CVE-2016-10033)
 - [sealldeveloper/CVE-2016-10033-PoC](https://github.com/sealldeveloper/CVE-2016-10033-PoC)
+- [alexander47777/CVE-2016-10033](https://github.com/alexander47777/CVE-2016-10033)
 
 ### CVE-2016-10034 (2016-12-30)
 
@@ -55109,6 +55157,7 @@
 <code>Unrestricted file upload vulnerability in admin/scripts/FileUploader/php.php in the ReFlex Gallery plugin before 3.1.4 for WordPress allows remote attackers to execute arbitrary PHP code by uploading a file with a PHP extension, then accessing it via a direct request to the file in uploads/ directory.
 </code>
 
+- [D3Ext/CVE-2015-4133](https://github.com/D3Ext/CVE-2015-4133)
 - [sug4r-wr41th/CVE-2015-4133](https://github.com/sug4r-wr41th/CVE-2015-4133)
 
 ### CVE-2015-4495 (2015-08-08)
@@ -55544,6 +55593,13 @@
 </code>
 
 - [Kai-One001/-CVE-2015-10137-WordPress-N-Media-Website-Contact-Form-with-File-Upload-1.3.4](https://github.com/Kai-One001/-CVE-2015-10137-WordPress-N-Media-Website-Contact-Form-with-File-Upload-1.3.4)
+
+### CVE-2015-10141 (2025-07-23)
+
+<code>An unauthenticated OS command injection vulnerability exists within Xdebug versions 2.5.5 and earlier, a PHP debugging extension developed by Derick Rethans. When remote debugging is enabled, Xdebug listens on port 9000 and accepts debugger protocol commands without authentication. An attacker can send a crafted eval command over this interface to execute arbitrary PHP code, which may invoke system-level functions such as system() or passthru(). This results in full compromise of the host under the privileges of the web server user.
+</code>
+
+- [D3Ext/CVE-2015-10141](https://github.com/D3Ext/CVE-2015-10141)
 
 ### CVE-2015-20107 (2022-04-13)
 
