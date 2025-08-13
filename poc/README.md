@@ -1024,7 +1024,7 @@
 </code>
 
 - [grupooruss/Citrix-cve-2025-6543](https://github.com/grupooruss/Citrix-cve-2025-6543)
-- [seabed-atavism/CVE-2025-6543](https://github.com/seabed-atavism/CVE-2025-6543)
+- [lex1010/CVE-2025-6543](https://github.com/lex1010/CVE-2025-6543)
 - [abrewer251/CVE-2025-6543_CitrixNetScaler_PoC](https://github.com/abrewer251/CVE-2025-6543_CitrixNetScaler_PoC)
 
 ### CVE-2025-6554 (2025-06-30)
@@ -1202,6 +1202,7 @@
 
 - [jordan922/CVE-2025-8088](https://github.com/jordan922/CVE-2025-8088)
 - [travisbgreen/cve-2025-8088](https://github.com/travisbgreen/cve-2025-8088)
+- [knight0x07/WinRAR-CVE-2025-8088-PoC-RAR](https://github.com/knight0x07/WinRAR-CVE-2025-8088-PoC-RAR)
 
 ### CVE-2025-8191 (2025-07-26)
 
@@ -1259,6 +1260,7 @@
 </code>
 
 - [Yuri08loveElaina/CVE-2025-20124_and_CVE-2025-20125](https://github.com/Yuri08loveElaina/CVE-2025-20124_and_CVE-2025-20125)
+- [137f/Cisco-ISE-3.0---Remote-Code-Execution-RCE-](https://github.com/137f/Cisco-ISE-3.0---Remote-Code-Execution-RCE-)
 
 ### CVE-2025-20281 (2025-06-25)
 
@@ -1865,6 +1867,13 @@
 
 - [RandomRobbieBF/CVE-2025-25163](https://github.com/RandomRobbieBF/CVE-2025-25163)
 - [RootHarpy/CVE-2025-25163-Nuclei-Template](https://github.com/RootHarpy/CVE-2025-25163-Nuclei-Template)
+
+### CVE-2025-25231 (2025-08-11)
+
+<code>Omnissa Workspace ONE UEM contains a Secondary Context Path Traversal Vulnerability. A malicious actor may be able to gain access to sensitive information by sending crafted GET requests (read-only) to restricted API endpoints.
+</code>
+
+- [ashkan-pu/CVE-CVE-2025-25231](https://github.com/ashkan-pu/CVE-CVE-2025-25231)
 
 ### CVE-2025-25257 (2025-07-17)
 
@@ -2770,7 +2779,6 @@
 
 - [W01fh4cker/CVE-2025-30406](https://github.com/W01fh4cker/CVE-2025-30406)
 - [mchklt/CVE-2025-30406](https://github.com/mchklt/CVE-2025-30406)
-- [Gersonaze/CVE-2025-30406](https://github.com/Gersonaze/CVE-2025-30406)
 
 ### CVE-2025-30567 (2025-03-25)
 
@@ -3333,7 +3341,11 @@
 
 - [hacefresko/CVE-2025-40634](https://github.com/hacefresko/CVE-2025-40634)
 
-### CVE-2025-40766
+### CVE-2025-40766 (2025-08-12)
+
+<code>A vulnerability has been identified in SINEC Traffic Analyzer (6GK8822-1BG01-0BA0) (All versions &lt; V3.0). The affected application runs docker containers without adequate resource and security limitations. This could allow an attacker to perform a denial-of-service (DoS) attack.
+</code>
+
 - [FurkanKAYAPINAR/ecs_checker](https://github.com/FurkanKAYAPINAR/ecs_checker)
 
 ### CVE-2025-40775 (2025-05-21)
@@ -4190,6 +4202,9 @@
 
 - [Kai-One001/Letta-CVE-2025-51482-RCE](https://github.com/Kai-One001/Letta-CVE-2025-51482-RCE)
 
+### CVE-2025-51529
+- [piotrmaciejbednarski/CVE-2025-51529](https://github.com/piotrmaciejbednarski/CVE-2025-51529)
+
 ### CVE-2025-51643
 - [NastyCrow/CVE-2025-51643](https://github.com/NastyCrow/CVE-2025-51643)
 
@@ -4290,6 +4305,9 @@
 ### CVE-2025-52097
 - [rwilsonecs/CVE-2025-52097](https://github.com/rwilsonecs/CVE-2025-52097)
 
+### CVE-2025-52216
+- [Arbatinis1/coolermaster-masterctrl-vuln](https://github.com/Arbatinis1/coolermaster-masterctrl-vuln)
+
 ### CVE-2025-52289 (2025-07-31)
 
 <code>A Broken Access Control vulnerability in MagnusBilling v7.8.5.3 allows newly registered users to gain escalated privileges by sending a crafted request to /mbilling/index.php/user/save to set their account status fom &quot;pending&quot; to &quot;active&quot; without requiring administrator approval.
@@ -4304,6 +4322,9 @@
 </code>
 
 - [wrathfulDiety/CVE-2025-52357](https://github.com/wrathfulDiety/CVE-2025-52357)
+
+### CVE-2025-52385
+- [Kov404/CVE-2025-52385](https://github.com/Kov404/CVE-2025-52385)
 
 ### CVE-2025-52399
 - [gmh5225/CVE-2025-52399-SQLi-Institute-of-Current-Students](https://github.com/gmh5225/CVE-2025-52399-SQLi-Institute-of-Current-Students)
@@ -4405,6 +4426,13 @@
 - [harryhaxor/CVE-2025-53770-SharePoint-Deserialization-RCE-PoC](https://github.com/harryhaxor/CVE-2025-53770-SharePoint-Deserialization-RCE-PoC)
 - [SDX442/CVE-2025-53770](https://github.com/SDX442/CVE-2025-53770)
 - [Agampreet-Singh/CVE-2025-53770](https://github.com/Agampreet-Singh/CVE-2025-53770)
+
+### CVE-2025-53778 (2025-08-12)
+
+<code>Improper authentication in Windows NTLM allows an authorized attacker to elevate privileges over a network.
+</code>
+
+- [OxPloited/CVE-2025-53778-Exploit](https://github.com/OxPloited/CVE-2025-53778-Exploit)
 
 ### CVE-2025-53786 (2025-08-06)
 
@@ -4580,9 +4608,6 @@
 
 
 ## 2024
-### CVE-2024-0000
-- [nullsquirtle/CVE-2024-0000-PoC](https://github.com/nullsquirtle/CVE-2024-0000-PoC)
-
 ### CVE-2024-0012 (2024-11-18)
 
 <code>An authentication bypass in Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to gain PAN-OS administrator privileges to perform administrative actions, tamper with the configuration, or exploit other authenticated privilege escalation vulnerabilities like  CVE-2024-9474 https://security.paloaltonetworks.com/CVE-2024-9474 .\n\nThe risk of this issue is greatly reduced if you secure access to the management web interface by restricting access to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\nThis issue is applicable only to PAN-OS 10.2, PAN-OS 11.0, PAN-OS 11.1, and PAN-OS 11.2 software.\n\nCloud NGFW and Prisma Access are not impacted by this vulnerability.
@@ -10372,13 +10397,6 @@
 
 - [xbz0n/CVE-2024-32136](https://github.com/xbz0n/CVE-2024-32136)
 
-### CVE-2024-32167 (2024-06-10)
-
-<code>Sourcecodester Online Medicine Ordering System 1.0 is vulnerable to Arbitrary file deletion vulnerability as the backend settings have the function of deleting pictures to delete any files.
-</code>
-
-- [Narsimhareddy28/CVE-2024-32167](https://github.com/Narsimhareddy28/CVE-2024-32167)
-
 ### CVE-2024-32205
 - [Lucky-lm/CVE-2024-32205](https://github.com/Lucky-lm/CVE-2024-32205)
 
@@ -11199,13 +11217,6 @@
 
 - [bartfroklage/CVE-2024-37383-POC](https://github.com/bartfroklage/CVE-2024-37383-POC)
 - [amirzargham/CVE-2024-37383-exploit](https://github.com/amirzargham/CVE-2024-37383-exploit)
-
-### CVE-2024-37388 (2024-06-07)
-
-<code>An XML External Entity (XXE) vulnerability in the ebookmeta.get_metadata function of lxml before v4.9.1 allows attackers to access sensitive information or cause a Denial of Service (DoS) via crafted XML input.
-</code>
-
-- [Narsimhareddy28/cve-2024-37388](https://github.com/Narsimhareddy28/cve-2024-37388)
 
 ### CVE-2024-37393 (2024-06-10)
 
@@ -12917,6 +12928,8 @@
 </code>
 
 - [baph00met/CVE-2024-47533](https://github.com/baph00met/CVE-2024-47533)
+- [dollarboysushil/CVE-2024-47533-Cobbler-XMLRPC-Authentication-Bypass-RCE-Exploit-POC](https://github.com/dollarboysushil/CVE-2024-47533-Cobbler-XMLRPC-Authentication-Bypass-RCE-Exploit-POC)
+- [00xCanelo/CVE-2024-47533-PoC](https://github.com/00xCanelo/CVE-2024-47533-PoC)
 
 ### CVE-2024-47575 (2024-10-23)
 
@@ -48469,6 +48482,8 @@
 - [Dowonkwon/drupal-cve-2018-7600-poc](https://github.com/Dowonkwon/drupal-cve-2018-7600-poc)
 - [M-Abid34/CVE-2018-7600](https://github.com/M-Abid34/CVE-2018-7600)
 - [rajaabdullahnasir/CVE-2018-7600-Remote-Code-Execution](https://github.com/rajaabdullahnasir/CVE-2018-7600-Remote-Code-Execution)
+- [xxxTectationxxx/CVE-2018-7600](https://github.com/xxxTectationxxx/CVE-2018-7600)
+- [muhammedkayag/CVE-2018-7600](https://github.com/muhammedkayag/CVE-2018-7600)
 
 ### CVE-2018-7602 (2018-07-19)
 
@@ -51506,6 +51521,13 @@
 
 - [scanfsec/HPE-iMC-7.3-RMI-Java-Deserialization](https://github.com/scanfsec/HPE-iMC-7.3-RMI-Java-Deserialization)
 
+### CVE-2017-5871 (2019-05-22)
+
+<code>Odoo Version &lt;= 8.0-20160726 and Version 9 is affected by: CWE-601: Open redirection. The impact is: obtain sensitive information (remote).
+</code>
+
+- [1337rokudenashi/CVE-2017-5871](https://github.com/1337rokudenashi/CVE-2017-5871)
+
 ### CVE-2017-5941 (2017-02-09)
 
 <code>An issue was discovered in the node-serialize package 0.0.4 for Node.js. Untrusted data passed into the unserialize() function can be exploited to achieve arbitrary code execution by passing a JavaScript Object with an Immediately Invoked Function Expression (IIFE).
@@ -53011,6 +53033,7 @@
 - [anldori/CVE-2017-16995](https://github.com/anldori/CVE-2017-16995)
 - [mareks1007/cve-2017-16995](https://github.com/mareks1007/cve-2017-16995)
 - [ZhiQiAnSecFork/cve-2017-16995](https://github.com/ZhiQiAnSecFork/cve-2017-16995)
+- [xxxTectationxxx/CVE-2017-16995](https://github.com/xxxTectationxxx/CVE-2017-16995)
 
 ### CVE-2017-16997 (2017-12-18)
 
