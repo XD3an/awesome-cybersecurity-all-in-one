@@ -867,6 +867,7 @@
 </code>
 
 - [itsShotgun/chrome_v8_cve_checker](https://github.com/itsShotgun/chrome_v8_cve_checker)
+- [riemannj/CVE-2025-5419](https://github.com/riemannj/CVE-2025-5419)
 
 ### CVE-2025-5640 (2025-06-05)
 
@@ -1203,6 +1204,8 @@
 - [jordan922/CVE-2025-8088](https://github.com/jordan922/CVE-2025-8088)
 - [travisbgreen/cve-2025-8088](https://github.com/travisbgreen/cve-2025-8088)
 - [knight0x07/WinRAR-CVE-2025-8088-PoC-RAR](https://github.com/knight0x07/WinRAR-CVE-2025-8088-PoC-RAR)
+- [sxyrxyy/CVE-2025-8088-WinRAR-Proof-of-Concept-PoC-Exploit-](https://github.com/sxyrxyy/CVE-2025-8088-WinRAR-Proof-of-Concept-PoC-Exploit-)
+- [onlytoxi/CVE-2025-8088-Winrar-Tool](https://github.com/onlytoxi/CVE-2025-8088-Winrar-Tool)
 
 ### CVE-2025-8191 (2025-07-26)
 
@@ -1809,6 +1812,7 @@
 - [alaxar/CVE-2025-24893](https://github.com/alaxar/CVE-2025-24893)
 - [D3Ext/CVE-2025-24893](https://github.com/D3Ext/CVE-2025-24893)
 - [Retro023/CVE-2025-24893-POC](https://github.com/Retro023/CVE-2025-24893-POC)
+- [CMassa/CVE-2025-24893](https://github.com/CMassa/CVE-2025-24893)
 
 ### CVE-2025-24963 (2025-02-04)
 
@@ -1874,6 +1878,13 @@
 </code>
 
 - [ashkan-pu/CVE-CVE-2025-25231](https://github.com/ashkan-pu/CVE-CVE-2025-25231)
+
+### CVE-2025-25256 (2025-08-12)
+
+<code>An improper neutralization of special elements used in an OS command ('OS Command Injection') vulnerability [CWE-78] in Fortinet FortiSIEM version 7.3.0 through 7.3.1, 7.2.0 through 7.2.5, 7.1.0 through 7.1.7, 7.0.0 through 7.0.3 and before 6.7.9 allows an unauthenticated attacker to execute unauthorized code or commands via crafted CLI requests.
+</code>
+
+- [barbaraeivyu/CVE-2025-25256](https://github.com/barbaraeivyu/CVE-2025-25256)
 
 ### CVE-2025-25257 (2025-07-17)
 
@@ -3864,6 +3875,7 @@
 - [beishanxueyuan/CVE-2025-48384](https://github.com/beishanxueyuan/CVE-2025-48384)
 - [beishanxueyuan/CVE-2025-48384-test](https://github.com/beishanxueyuan/CVE-2025-48384-test)
 - [jideasn/cve-2025-48384](https://github.com/jideasn/cve-2025-48384)
+- [testtianmaaaa/CVE-2025-48384](https://github.com/testtianmaaaa/CVE-2025-48384)
 
 ### CVE-2025-48461 (2025-06-24)
 
@@ -4033,6 +4045,7 @@
 </code>
 
 - [zenzue/CVE-2025-50154](https://github.com/zenzue/CVE-2025-50154)
+- [rubenformation/CVE-2025-50154](https://github.com/rubenformation/CVE-2025-50154)
 
 ### CVE-2025-50286 (2025-08-06)
 
@@ -4054,6 +4067,12 @@
 </code>
 
 - [millad7/Axelor-vulnerability-CVE-2025-50341](https://github.com/millad7/Axelor-vulnerability-CVE-2025-50341)
+
+### CVE-2025-50360
+- [Ch1keen/CVE-2025-50360](https://github.com/Ch1keen/CVE-2025-50360)
+
+### CVE-2025-50361
+- [Ch1keen/CVE-2025-50361](https://github.com/Ch1keen/CVE-2025-50361)
 
 ### CVE-2025-50363
 - [1h3ll/CVE-2025-50363_BXSS_CVE](https://github.com/1h3ll/CVE-2025-50363_BXSS_CVE)
@@ -4077,6 +4096,9 @@
 </code>
 
 - [Landw-hub/CVE-2025-50422](https://github.com/Landw-hub/CVE-2025-50422)
+
+### CVE-2025-50428
+- [security-smarttecs/cve-2025-50428](https://github.com/security-smarttecs/cve-2025-50428)
 
 ### CVE-2025-50460 (2025-08-01)
 
@@ -4338,7 +4360,11 @@
 
 - [wrathfulDiety/CVE-2025-52357](https://github.com/wrathfulDiety/CVE-2025-52357)
 
-### CVE-2025-52385
+### CVE-2025-52385 (2025-08-13)
+
+<code>An issue in Studio 3T v.2025.1.0 and before allows a remote attacker to execute arbitrary code via a crafted payload to the child_process module
+</code>
+
 - [Kov404/CVE-2025-52385](https://github.com/Kov404/CVE-2025-52385)
 
 ### CVE-2025-52399
@@ -4441,6 +4467,14 @@
 - [harryhaxor/CVE-2025-53770-SharePoint-Deserialization-RCE-PoC](https://github.com/harryhaxor/CVE-2025-53770-SharePoint-Deserialization-RCE-PoC)
 - [SDX442/CVE-2025-53770](https://github.com/SDX442/CVE-2025-53770)
 - [Agampreet-Singh/CVE-2025-53770](https://github.com/Agampreet-Singh/CVE-2025-53770)
+- [CyprianAtsyor/ToolShell-CVE-2025-53770-SharePoint-Exploit-Lab-LetsDefend](https://github.com/CyprianAtsyor/ToolShell-CVE-2025-53770-SharePoint-Exploit-Lab-LetsDefend)
+
+### CVE-2025-53773 (2025-08-12)
+
+<code>Improper neutralization of special elements used in a command ('command injection') in GitHub Copilot and Visual Studio allows an unauthorized attacker to execute code locally.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-53773](https://github.com/B1ack4sh/Blackash-CVE-2025-53773)
 
 ### CVE-2025-53778 (2025-08-12)
 
@@ -4475,7 +4509,7 @@
 <code>Cursor is a code editor built for programming with AI. Cursor allows writing in-workspace files with no user approval in versions below 1.3.9, If the file is a dotfile, editing it requires approval but creating a new one doesn't. Hence, if sensitive MCP files, such as the .cursor/mcp.json file don't already exist in the workspace, an attacker can chain a indirect prompt injection vulnerability to hijack the context to write to the settings file and trigger RCE on the victim without user approval. This is fixed in version 1.3.9.
 </code>
 
-- [allinsthon/CVE-2025-54135](https://github.com/allinsthon/CVE-2025-54135)
+- [anntsmart/CVE-2025-54135](https://github.com/anntsmart/CVE-2025-54135)
 - [Cbdlll/test-mcp](https://github.com/Cbdlll/test-mcp)
 
 ### CVE-2025-54253 (2025-08-05)
@@ -4559,12 +4593,12 @@
 
 - [AdityaBhatt3010/CVE-2025-54794-Hijacking-Claude-AI-with-a-Prompt-Injection-The-Jailbreak-That-Talked-Back](https://github.com/AdityaBhatt3010/CVE-2025-54794-Hijacking-Claude-AI-with-a-Prompt-Injection-The-Jailbreak-That-Talked-Back)
 
-### CVE-2025-54948 (2025-08-05)
+### CVE-2025-54887 (2025-08-08)
 
-<code>A vulnerability in Trend Micro Apex One (on-premise) management console could allow a pre-authenticated remote attacker to upload malicious code and execute commands on affected installations.
+<code>jwe is a Ruby implementation of the RFC 7516 JSON Web Encryption (JWE) standard. In versions 1.1.0 and below, authentication tags of encrypted JWEs can be brute forced, which may result in loss of confidentiality for those JWEs and provide ways to craft arbitrary JWEs. This puts users at risk because JWEs can be modified to decrypt to an arbitrary value, decrypted by observing parsing differences and the GCM internal GHASH key can be recovered. Users are affected by this vulnerability even if they do not use an AES-GCM encryption algorithm for their JWEs. As the GHASH key may have been leaked, users must rotate the encryption keys after upgrading. This issue is fixed in version 1.1.1.
 </code>
 
-- [allinsthon/CVE-2025-54948](https://github.com/allinsthon/CVE-2025-54948)
+- [shinigami-777/PoC_CVE-2025-54887](https://github.com/shinigami-777/PoC_CVE-2025-54887)
 
 ### CVE-2025-54962 (2025-08-04)
 
@@ -4581,6 +4615,13 @@
 - [hunters-sec/CVE-2025-55188-7z-exploit](https://github.com/hunters-sec/CVE-2025-55188-7z-exploit)
 - [san8383/CVE-2025-55188-7z-POC](https://github.com/san8383/CVE-2025-55188-7z-POC)
 - [vadim-belous/CVE-2025-55188-PoC](https://github.com/vadim-belous/CVE-2025-55188-PoC)
+
+### CVE-2025-55668 (2025-08-13)
+
+<code>Session Fixation vulnerability in Apache Tomcat via rewrite valve.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.7, from 10.1.0-M1 through 10.1.41, from 9.0.0.M1 through 9.0.105.\nOlder, EOL versions may also be affected.\n\nUsers are recommended to upgrade to version 11.0.8, 10.1.42 or 9.0.106, which fix the issue.
+</code>
+
+- [gregk4sec/CVE-2025-55668](https://github.com/gregk4sec/CVE-2025-55668)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -9280,6 +9321,12 @@
 </code>
 
 - [i-100-user/CVE-2024-25897](https://github.com/i-100-user/CVE-2024-25897)
+
+### CVE-2024-26009 (2025-08-12)
+
+<code>An authentication bypass using an alternate path or channel [CWE-288] vulnerability in Fortinet FortiOS version 6.4.0 through 6.4.15</code>
+
+- [allinsthon/CVE-2024-26009](https://github.com/allinsthon/CVE-2024-26009)
 
 ### CVE-2024-26026 (2024-05-08)
 
@@ -15345,13 +15392,6 @@
 - [Any3ite/CVE-2023-2523](https://github.com/Any3ite/CVE-2023-2523)
 - [werwolfz/cve-2023-2523-and-cve-2023-2648](https://github.com/werwolfz/cve-2023-2523-and-cve-2023-2648)
 
-### CVE-2023-2533 (2023-06-20)
-
-<code>A Cross-Site Request Forgery (CSRF) vulnerability has been identified in\nPaperCut NG/MF, which, under specific conditions, could potentially enable\nan attacker to alter security settings or execute arbitrary code. This could\nbe exploited if the target is an admin with a current login session. Exploiting\nthis would typically involve the possibility of deceiving an admin into clicking\na specially crafted malicious link, potentially leading to unauthorized changes.\n
-</code>
-
-- [allinsthon/CVE-2023-2533](https://github.com/allinsthon/CVE-2023-2533)
-
 ### CVE-2023-2579 (2023-07-17)
 
 <code>The InventoryPress WordPress plugin through 1.7 does not sanitise and escape some of its settings, which could allow users with the role of author and above to perform Stored Cross-Site Scripting attacks.
@@ -19350,6 +19390,7 @@
 </code>
 
 - [alfiecg24/Trigon](https://github.com/alfiecg24/Trigon)
+- [rkrakesh524/oob_entry](https://github.com/rkrakesh524/oob_entry)
 
 ### CVE-2023-32560 (2023-08-10)
 
@@ -26156,7 +26197,7 @@
 </code>
 
 - [ColdFusionX/CVE-2022-24124](https://github.com/ColdFusionX/CVE-2022-24124)
-- [0xAbbarhSF/CVE-2022-24124](https://github.com/0xAbbarhSF/CVE-2022-24124)
+- [ar2o3/CVE-2022-24124](https://github.com/ar2o3/CVE-2022-24124)
 - [b1gdog/CVE-2022-24124](https://github.com/b1gdog/CVE-2022-24124)
 
 ### CVE-2022-24125 (2022-03-20)
@@ -26735,7 +26776,7 @@
 </code>
 
 - [Pear1y/CVE-2022-26133](https://github.com/Pear1y/CVE-2022-26133)
-- [0xAbbarhSF/CVE-2022-26133](https://github.com/0xAbbarhSF/CVE-2022-26133)
+- [ar2o3/CVE-2022-26133](https://github.com/ar2o3/CVE-2022-26133)
 
 ### CVE-2022-26134 (2022-06-03)
 
@@ -27747,7 +27788,7 @@
 - [winstxnhdw/CVE-2022-30190](https://github.com/winstxnhdw/CVE-2022-30190)
 - [Imeneallouche/Follina-attack-CVE-2022-30190-](https://github.com/Imeneallouche/Follina-attack-CVE-2022-30190-)
 - [mattjmillner/CVE-Smackdown](https://github.com/mattjmillner/CVE-Smackdown)
-- [0xAbbarhSF/FollinaXploit](https://github.com/0xAbbarhSF/FollinaXploit)
+- [ar2o3/FollinaXploit](https://github.com/ar2o3/FollinaXploit)
 - [Nyx2022/Follina-CVE-2022-30190-Sample](https://github.com/Nyx2022/Follina-CVE-2022-30190-Sample)
 - [michealadams30/Cve-2022-30190](https://github.com/michealadams30/Cve-2022-30190)
 - [melting0256/Enterprise-Cybersecurity](https://github.com/melting0256/Enterprise-Cybersecurity)
@@ -31260,8 +31301,8 @@
 - [eversinc33/NimNightmare](https://github.com/eversinc33/NimNightmare)
 - [TheJoyOfHacking/cube0x0-CVE-2021-1675](https://github.com/TheJoyOfHacking/cube0x0-CVE-2021-1675)
 - [TheJoyOfHacking/calebstewart-CVE-2021-1675](https://github.com/TheJoyOfHacking/calebstewart-CVE-2021-1675)
-- [jj4152/cve-2021-1675](https://github.com/jj4152/cve-2021-1675)
 - [r1skkam/PrintNightmare](https://github.com/r1skkam/PrintNightmare)
+- [000Tonio/cve-2021-1675](https://github.com/000Tonio/cve-2021-1675)
 - [peckre/PNCVE-Win10-20H2-Exploit](https://github.com/peckre/PNCVE-Win10-20H2-Exploit)
 - [whoami-chmod777/CVE-2021-1675-CVE-2021-34527](https://github.com/whoami-chmod777/CVE-2021-1675-CVE-2021-34527)
 - [whoami-chmod777/CVE-2021-1675---PrintNightmare-LPE-PowerShell-](https://github.com/whoami-chmod777/CVE-2021-1675---PrintNightmare-LPE-PowerShell-)
@@ -33014,7 +33055,7 @@
 <code>The WP User Frontend WordPress plugin before 3.5.26 does not validate and escape the status parameter before using it in a SQL statement in the Subscribers dashboard, leading to an SQL injection. Due to the lack of sanitisation and escaping, this could also lead to Reflected Cross-Site Scripting
 </code>
 
-- [0xAbbarhSF/CVE-2021-25076](https://github.com/0xAbbarhSF/CVE-2021-25076)
+- [ar2o3/CVE-2021-25076](https://github.com/ar2o3/CVE-2021-25076)
 
 ### CVE-2021-25094 (2022-04-25)
 
@@ -38637,7 +38678,7 @@
 - [Dido1960/Weblogic-CVE-2020-2551-To-Internet](https://github.com/Dido1960/Weblogic-CVE-2020-2551-To-Internet)
 - [DaMinGshidashi/CVE-2020-2551](https://github.com/DaMinGshidashi/CVE-2020-2551)
 - [LTiDi2000/CVE-2020-2551](https://github.com/LTiDi2000/CVE-2020-2551)
-- [0xAbbarhSF/CVE-Exploit](https://github.com/0xAbbarhSF/CVE-Exploit)
+- [ar2o3/CVE-Exploit](https://github.com/ar2o3/CVE-Exploit)
 
 ### CVE-2020-2555 (2020-01-15)
 
@@ -42713,7 +42754,7 @@
 <code>A file upload restriction bypass vulnerability in Pluck CMS before 4.7.13 allows an admin privileged user to gain access in the host through the &quot;manage files&quot; functionality, which may result in remote code execution.
 </code>
 
-- [0xAbbarhSF/CVE-2020-29607](https://github.com/0xAbbarhSF/CVE-2020-29607)
+- [ar2o3/CVE-2020-29607](https://github.com/ar2o3/CVE-2020-29607)
 - [0xN7y/CVE-2020-29607](https://github.com/0xN7y/CVE-2020-29607)
 - [Alienfader/CVE-2020-29607](https://github.com/Alienfader/CVE-2020-29607)
 
@@ -50891,6 +50932,7 @@
 - [h3x0v3rl0rd/MS17-010](https://github.com/h3x0v3rl0rd/MS17-010)
 - [Mafiosohack/offensive-security-lab-1](https://github.com/Mafiosohack/offensive-security-lab-1)
 - [Cedric-Martz/EthernalBlue_report](https://github.com/Cedric-Martz/EthernalBlue_report)
+- [benguelmas/cve-2017-0143](https://github.com/benguelmas/cve-2017-0143)
 
 ### CVE-2017-0144 (2017-03-17)
 
@@ -52546,6 +52588,7 @@
 - [jadeapar/Dragonfish-s-Malware-Cyber-Analysis](https://github.com/jadeapar/Dragonfish-s-Malware-Cyber-Analysis)
 - [yaseenibnakhtar/001-Malware-Analysis-CVE-2017-11882](https://github.com/yaseenibnakhtar/001-Malware-Analysis-CVE-2017-11882)
 - [xdrake1010/CVE-2017-11882-Preventer](https://github.com/xdrake1010/CVE-2017-11882-Preventer)
+- [imkidz0/CVE-2017-11882](https://github.com/imkidz0/CVE-2017-11882)
 
 ### CVE-2017-11907 (2017-12-12)
 
