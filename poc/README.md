@@ -4468,6 +4468,7 @@
 - [SDX442/CVE-2025-53770](https://github.com/SDX442/CVE-2025-53770)
 - [Agampreet-Singh/CVE-2025-53770](https://github.com/Agampreet-Singh/CVE-2025-53770)
 - [CyprianAtsyor/ToolShell-CVE-2025-53770-SharePoint-Exploit-Lab-LetsDefend](https://github.com/CyprianAtsyor/ToolShell-CVE-2025-53770-SharePoint-Exploit-Lab-LetsDefend)
+- [ghostn4444/CVE-2025-53770](https://github.com/ghostn4444/CVE-2025-53770)
 
 ### CVE-2025-53773 (2025-08-12)
 
@@ -13289,7 +13290,7 @@
 - [DeividasTerechovas/SOC335-CVE-2024-49138-Exploitation-Detected](https://github.com/DeividasTerechovas/SOC335-CVE-2024-49138-Exploitation-Detected)
 - [CyprianAtsyor/letsdefend-cve-2024-49138-investigation](https://github.com/CyprianAtsyor/letsdefend-cve-2024-49138-investigation)
 - [Glitch-ao/SOC335-CVE-2024-49138-Exploitation-Detected](https://github.com/Glitch-ao/SOC335-CVE-2024-49138-Exploitation-Detected)
-- [1rhino2/DLang-file-encryptor](https://github.com/1rhino2/DLang-file-encryptor)
+- [1rhino2/SCRAPPED](https://github.com/1rhino2/SCRAPPED)
 - [onixgod/SOC335-Event-ID-313-CVE-2024-49138-Exploitation-Detected--Lest-Defend-Writeup](https://github.com/onixgod/SOC335-Event-ID-313-CVE-2024-49138-Exploitation-Detected--Lest-Defend-Writeup)
 
 ### CVE-2024-49328 (2024-10-20)
@@ -30532,7 +30533,7 @@
 - [straight-tamago/DockTransparent](https://github.com/straight-tamago/DockTransparent)
 - [straight-tamago/FileSwitcherX](https://github.com/straight-tamago/FileSwitcherX)
 - [bomberfish/Mandela-Legacy](https://github.com/bomberfish/Mandela-Legacy)
-- [bomberfish/JailedCement](https://github.com/bomberfish/JailedCement)
+- [iswaxan/JailedCement](https://github.com/iswaxan/JailedCement)
 - [bomberfish/Mandela-Classic](https://github.com/bomberfish/Mandela-Classic)
 - [enty8080/MacDirtyCow](https://github.com/enty8080/MacDirtyCow)
 - [tdquang266/MDC](https://github.com/tdquang266/MDC)
@@ -44921,6 +44922,13 @@
 
 - [ignis-sec/CVE-2019-10008](https://github.com/ignis-sec/CVE-2019-10008)
 
+### CVE-2019-10077 (2019-05-20)
+
+<code>A carefully crafted InterWiki link could trigger an XSS vulnerability on Apache JSPWiki 2.9.0 to 2.11.0.M3, which could lead to session hijacking.
+</code>
+
+- [shoucheng3/apache__jspwiki_CVE-2019-10077_2.11.0.M3](https://github.com/shoucheng3/apache__jspwiki_CVE-2019-10077_2.11.0.M3)
+
 ### CVE-2019-10086 (2019-08-20)
 
 <code>In Apache Commons Beanutils 1.9.2, a special BeanIntrospector class was added which allows suppressing the ability for an attacker to access the classloader via the class property available on all Java objects. We, however were not using this by default characteristic of the PropertyUtilsBean.
@@ -48344,6 +48352,7 @@
 - [Saboor-Hakimi/CVE-2018-6574](https://github.com/Saboor-Hakimi/CVE-2018-6574)
 - [elw0od/PentesterLab](https://github.com/elw0od/PentesterLab)
 - [paulogmota/CVE-2018-6574](https://github.com/paulogmota/CVE-2018-6574)
+- [solovvway/CVE-2018-6574](https://github.com/solovvway/CVE-2018-6574)
 
 ### CVE-2018-6622 (2018-08-17)
 
