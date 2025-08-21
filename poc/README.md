@@ -916,6 +916,7 @@
 - [below0day/Honeypot-Logs-CVE-2025-5777](https://github.com/below0day/Honeypot-Logs-CVE-2025-5777)
 - [soltanali0/CVE-2025-5777-Exploit](https://github.com/soltanali0/CVE-2025-5777-Exploit)
 - [rootxsushant/Citrix-NetScaler-Memory-Leak-CVE-2025-5777](https://github.com/rootxsushant/Citrix-NetScaler-Memory-Leak-CVE-2025-5777)
+- [ndr-repo/CVE-2025-5777](https://github.com/ndr-repo/CVE-2025-5777)
 
 ### CVE-2025-5815 (2025-06-13)
 
@@ -1218,6 +1219,7 @@
 - [0xAbolfazl/CVE-2025-8088-WinRAR-PathTraversal-PoC](https://github.com/0xAbolfazl/CVE-2025-8088-WinRAR-PathTraversal-PoC)
 - [pentestfunctions/CVE-2025-8088-Multi-Document](https://github.com/pentestfunctions/CVE-2025-8088-Multi-Document)
 - [pexlexity/WinRAR-CVE-2025-8088-Path-Traversal-PoC](https://github.com/pexlexity/WinRAR-CVE-2025-8088-Path-Traversal-PoC)
+- [Syrins/CVE-2025-8088-Winrar-Tool-Gui](https://github.com/Syrins/CVE-2025-8088-Winrar-Tool-Gui)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1288,6 +1290,9 @@
 </code>
 
 - [rxerium/CVE-2025-8875-CVE-2025-8876](https://github.com/rxerium/CVE-2025-8875-CVE-2025-8876)
+
+### CVE-2025-8889
+- [siberkampus/CVE-2025-8889](https://github.com/siberkampus/CVE-2025-8889)
 
 ### CVE-2025-8971 (2025-08-14)
 
@@ -3073,6 +3078,13 @@
 - [B1ack4sh/Blackash-CVE-2025-32023](https://github.com/B1ack4sh/Blackash-CVE-2025-32023)
 - [LordBheem/CVE-2025-32023](https://github.com/LordBheem/CVE-2025-32023)
 
+### CVE-2025-32094 (2025-08-07)
+
+<code>An issue was discovered in Akamai Ghost, as used for the Akamai CDN platform before 2025-03-26. Under certain circumstances, a client making an HTTP/1.x OPTIONS request with an &quot;Expect: 100-continue&quot; header, and using obsolete line folding, can lead to a discrepancy in how two in-path Akamai servers interpret the request, allowing an attacker to smuggle a second request in the original request body.
+</code>
+
+- [perplext/echteeteepee](https://github.com/perplext/echteeteepee)
+
 ### CVE-2025-32118 (2025-04-04)
 
 <code>Unrestricted Upload of File with Dangerous Type vulnerability in NiteoThemes CMP – Coming Soon &amp; Maintenance allows Using Malicious Files. This issue affects CMP – Coming Soon &amp; Maintenance: from n/a through 4.1.13.
@@ -3342,6 +3354,13 @@
 - [tinkerlev/commvault-cve2025-34028-check](https://github.com/tinkerlev/commvault-cve2025-34028-check)
 - [becrevex/Commvault-CVE-2025-34028](https://github.com/becrevex/Commvault-CVE-2025-34028)
 - [Mattb709/CVE-2025-34028-PoC-Commvault-RCE](https://github.com/Mattb709/CVE-2025-34028-PoC-Commvault-RCE)
+
+### CVE-2025-34036 (2025-06-24)
+
+<code>An OS command injection vulnerability exists in white-labeled DVRs manufactured by TVT, affecting a custom HTTP service called &quot;Cross Web Server&quot; that listens on TCP ports 81 and 82. The web interface fails to sanitize input in the URI path passed to the language extraction functionality. When the server processes a request to /language/[lang]/index.html, it uses the [lang] input unsafely in a tar extraction command without proper escaping. This allows an unauthenticated remote attacker to inject shell commands and achieve arbitrary command execution as root.
+</code>
+
+- [Prabhukiran161/cve-2025-34036](https://github.com/Prabhukiran161/cve-2025-34036)
 
 ### CVE-2025-34077 (2025-07-09)
 
@@ -3966,6 +3985,8 @@
 - [beishanxueyuan/CVE-2025-48384-test](https://github.com/beishanxueyuan/CVE-2025-48384-test)
 - [jideasn/cve-2025-48384](https://github.com/jideasn/cve-2025-48384)
 - [testtianmaaaa/CVE-2025-48384](https://github.com/testtianmaaaa/CVE-2025-48384)
+- [replicatorbot/CVE-2025-48384](https://github.com/replicatorbot/CVE-2025-48384)
+- [replicatorbot/CVE-2025-48384-POC](https://github.com/replicatorbot/CVE-2025-48384-POC)
 
 ### CVE-2025-48461 (2025-06-24)
 
@@ -4464,6 +4485,9 @@
 ### CVE-2025-52097
 - [rwilsonecs/CVE-2025-52097](https://github.com/rwilsonecs/CVE-2025-52097)
 
+### CVE-2025-52122
+- [TimTrademark/CVE-2025-52122](https://github.com/TimTrademark/CVE-2025-52122)
+
 ### CVE-2025-52216
 - [Arbatinis1/coolermaster-masterctrl-vuln](https://github.com/Arbatinis1/coolermaster-masterctrl-vuln)
 
@@ -4488,6 +4512,13 @@
 </code>
 
 - [Kov404/CVE-2025-52385](https://github.com/Kov404/CVE-2025-52385)
+
+### CVE-2025-52392 (2025-08-13)
+
+<code>Soosyze CMS 2.0 allows brute-force login attacks via the /user/login endpoint due to missing rate-limiting and lockout mechanisms. An attacker can repeatedly submit login attempts without restrictions, potentially gaining unauthorized administrative access. This vulnerability corresponds to CWE-307: Improper Restriction of Excessive Authentication Attempts.
+</code>
+
+- [137f/Soosyze-CMS-2.0---CVE-2025-52392](https://github.com/137f/Soosyze-CMS-2.0---CVE-2025-52392)
 
 ### CVE-2025-52399
 - [gmh5225/CVE-2025-52399-SQLi-Institute-of-Current-Students](https://github.com/gmh5225/CVE-2025-52399-SQLi-Institute-of-Current-Students)
@@ -4703,6 +4734,13 @@
 
 - [byteReaper77/CVE-2025-54769](https://github.com/byteReaper77/CVE-2025-54769)
 
+### CVE-2025-54782 (2025-08-01)
+
+<code>Nest is a framework for building scalable Node.js server-side applications. In versions 0.2.0 and below, a critical Remote Code Execution (RCE) vulnerability was discovered in the @nestjs/devtools-integration package. When enabled, the package exposes a local development HTTP server with an API endpoint that uses an unsafe JavaScript sandbox (safe-eval-like implementation). Due to improper sandboxing and missing cross-origin protections, any malicious website visited by a developer can execute arbitrary code on their local machine. The package adds HTTP endpoints to a locally running NestJS development server. One of these endpoints, /inspector/graph/interact, accepts JSON input containing a code field and executes the provided code in a Node.js vm.runInNewContext sandbox. This is fixed in version 0.2.1.
+</code>
+
+- [nitrixog/CVE-2025-54782](https://github.com/nitrixog/CVE-2025-54782)
+
 ### CVE-2025-54794 (2025-08-05)
 
 <code>Claude Code is an agentic coding tool. In versions below 0.2.111, a path validation flaw using prefix matching instead of canonical path comparison, makes it possible to bypass directory restrictions and access files outside the CWD. Successful exploitation depends on the presence of (or ability to create) a directory with the same prefix as the CWD and the ability to add untrusted content into a Claude Code context window. This is fixed in version 0.2.111.
@@ -4732,6 +4770,7 @@
 - [hunters-sec/CVE-2025-55188-7z-exploit](https://github.com/hunters-sec/CVE-2025-55188-7z-exploit)
 - [san8383/CVE-2025-55188-7z-POC](https://github.com/san8383/CVE-2025-55188-7z-POC)
 - [vadim-belous/CVE-2025-55188-PoC](https://github.com/vadim-belous/CVE-2025-55188-PoC)
+- [rhllsingh/CVE-2025-55188-7z-exploit](https://github.com/rhllsingh/CVE-2025-55188-7z-exploit)
 
 ### CVE-2025-55668 (2025-08-13)
 
@@ -6002,6 +6041,7 @@
 - [Skycritch/CVE-2024-4577](https://github.com/Skycritch/CVE-2024-4577)
 - [CirqueiraDev/MassExploit-CVE-2024-4577](https://github.com/CirqueiraDev/MassExploit-CVE-2024-4577)
 - [xAL6/cve-2024-4577-scanner](https://github.com/xAL6/cve-2024-4577-scanner)
+- [Ianthinus/CVE-2024-4577](https://github.com/Ianthinus/CVE-2024-4577)
 
 ### CVE-2024-4701 (2024-05-10)
 
@@ -18864,6 +18904,13 @@
 - [md-thalal/CVE-2023-29489](https://github.com/md-thalal/CVE-2023-29489)
 - [Thuankobtcode/CVE-2023-29489](https://github.com/Thuankobtcode/CVE-2023-29489)
 
+### CVE-2023-29528 (2023-04-20)
+
+<code>XWiki Commons are technical libraries common to several other top level XWiki projects. The &quot;restricted&quot; mode of the HTML cleaner in XWiki, introduced in version 4.2-milestone-1 and massively improved in version 14.6-rc-1, allowed the injection of arbitrary HTML code and thus cross-site scripting via invalid HTML comments. As a consequence, any code relying on this &quot;restricted&quot; mode for security is vulnerable to JavaScript injection (&quot;cross-site scripting&quot;/XSS). When a privileged user with programming rights visits such a comment in XWiki, the malicious JavaScript code is executed in the context of the user session. This allows server-side code execution with programming rights, impacting the confidentiality, integrity and availability of the XWiki instance. This problem has been patched in XWiki 14.10, HTML comments are now removed in restricted mode and a check has been introduced that ensures that comments don't start with `&gt;`. There are no known workarounds apart from upgrading to a version including the fix.\n
+</code>
+
+- [shoucheng3/xwiki__xwiki-commons_CVE-2023-29528_14-9-rc-1](https://github.com/shoucheng3/xwiki__xwiki-commons_CVE-2023-29528_14-9-rc-1)
+
 ### CVE-2023-29808 (2023-05-12)
 
 <code>Cross Site Scripting (XSS) vulnerability in vogtmh cmaps (companymaps) 8.0 allows attackers to execute arbitrary code.
@@ -19153,6 +19200,14 @@
 
 ### CVE-2023-31070
 - [bugprove/cve-2023-31070](https://github.com/bugprove/cve-2023-31070)
+
+### CVE-2023-31126 (2023-05-09)
+
+<code>`org.xwiki.commons:xwiki-commons-xml` is an XML library used by the open-source wiki platform XWiki. The HTML sanitizer, introduced in version 14.6-rc-1, allows the injection of arbitrary HTML code and thus cross-site scripting via invalid data attributes. This vulnerability does not affect restricted cleaning in HTMLCleaner as there attributes are cleaned and thus characters like `/` and `&gt;` are removed in all attribute names. This problem has been patched in XWiki 14.10.4 and 15.0 RC1 by making sure that data attributes only contain allowed characters. There are no known workarounds apart from upgrading to a version including the fix.
+</code>
+
+- [shoucheng3/xwiki__xwiki-commons_CVE-2023-31126_14-10-3](https://github.com/shoucheng3/xwiki__xwiki-commons_CVE-2023-31126_14-10-3)
+- [shoucheng3/cov-int](https://github.com/shoucheng3/cov-int)
 
 ### CVE-2023-31290 (2023-04-27)
 
@@ -20561,6 +20616,13 @@
 </code>
 
 - [RandomRobbieBF/CVE-2023-36531](https://github.com/RandomRobbieBF/CVE-2023-36531)
+
+### CVE-2023-36542 (2023-07-29)
+
+<code>Apache NiFi 0.0.2 through 1.22.0 include Processors and Controller Services that support HTTP URL references for retrieving drivers, which allows an authenticated and authorized user to configure a location that enables custom code execution. The resolution introduces a new Required Permission for referencing remote resources, restricting configuration of these components to privileged users. The permission prevents unprivileged users from configuring Processors and Controller Services annotated with the new Reference Remote Resources restriction. Upgrading to Apache NiFi 1.23.0 is the recommended mitigation.
+</code>
+
+- [shoucheng3/asf__nifi_CVE-2023-36542_1-22-0](https://github.com/shoucheng3/asf__nifi_CVE-2023-36542_1-22-0)
 
 ### CVE-2023-36643 (2024-04-04)
 
@@ -22997,6 +23059,13 @@
 - [rainbowhatrkn/CVE-2023-46747-RCE](https://github.com/rainbowhatrkn/CVE-2023-46747-RCE)
 - [cediegreyhat/BigFinger](https://github.com/cediegreyhat/BigFinger)
 
+### CVE-2023-46749 (2024-01-15)
+
+<code>Apache Shiro before 1.13.0 or 2.0.0-alpha-4, may be susceptible to a path traversal attack that results in an authentication bypass when used together with path rewriting \n\nMitigation: Update to Apache Shiro 1.13.0+ or 2.0.0-alpha-4+, or ensure `blockSemicolon` is enabled (this is the default).\n\n
+</code>
+
+- [shoucheng3/apache__shiro_CVE-2023-46749_1-12-0](https://github.com/shoucheng3/apache__shiro_CVE-2023-46749_1-12-0)
+
 ### CVE-2023-46805 (2024-01-12)
 
 <code>An authentication bypass vulnerability in the web component of Ivanti ICS 9.x, 22.x and Ivanti Policy Secure allows a remote attacker to access restricted resources by bypassing control checks.
@@ -23975,6 +24044,13 @@
 - [d4op/CVE-2023-51764-POC](https://github.com/d4op/CVE-2023-51764-POC)
 - [Double-q1015/CVE-2023-51764](https://github.com/Double-q1015/CVE-2023-51764)
 
+### CVE-2023-51770 (2024-02-20)
+
+<code>Arbitrary File Read Vulnerability in Apache Dolphinscheduler.\n\nThis issue affects Apache DolphinScheduler: before 3.2.1. \n\nWe recommend users to upgrade Apache DolphinScheduler to version 3.2.1, which fixes the issue.
+</code>
+
+- [shoucheng3/apache__dolphinscheduler_CVE-2023-51770_3-2-0](https://github.com/shoucheng3/apache__dolphinscheduler_CVE-2023-51770_3-2-0)
+
 ### CVE-2023-51800 (2024-02-29)
 
 <code>Cross Site Scripting (XSS) vulnerability in School Fees Management System v.1.0 allows a remote attacker to execute arbitrary code via a crafted payload to the main_settings component in the phone, address, bank, acc_name, acc_number parameters, new_class and cname parameter, add_new_parent function in the name email parameters, new_term function in the tname parameter, and the edit_student function in the name parameter.
@@ -24880,6 +24956,13 @@
 - [EkamSinghWalia/Detection-and-Mitigation-for-CVE-2022-2639](https://github.com/EkamSinghWalia/Detection-and-Mitigation-for-CVE-2022-2639)
 - [letsr00t/-2022-LOCALROOT-CVE-2022-2639](https://github.com/letsr00t/-2022-LOCALROOT-CVE-2022-2639)
 - [devetop/CVE-2022-2639-PipeVersion](https://github.com/devetop/CVE-2022-2639-PipeVersion)
+
+### CVE-2022-2712 (2023-01-27)
+
+<code>In Eclipse GlassFish versions 5.1.0 to 6.2.5, there is a vulnerability in relative path traversal because it does not filter request path starting with './'. Successful exploitation could allow an remote unauthenticated attacker to access critical data, such as configuration files and deployed application source code.
+</code>
+
+- [shoucheng3/eclipse-ee4j__glassfish_CVE-2022-2712_6-2-5](https://github.com/shoucheng3/eclipse-ee4j__glassfish_CVE-2022-2712_6-2-5)
 
 ### CVE-2022-2884 (2022-10-17)
 
@@ -25984,6 +26067,7 @@
 - [Sumitpathania03/CVE-2022-22947](https://github.com/Sumitpathania03/CVE-2022-22947)
 - [cc3305/CVE-2022-22947](https://github.com/cc3305/CVE-2022-22947)
 - [skysliently/CVE-2022-22947-pb-ai](https://github.com/skysliently/CVE-2022-22947-pb-ai)
+- [shoucheng3/spring-cloud__spring-cloud-gateway_CVE-2022-22947_3-0-6](https://github.com/shoucheng3/spring-cloud__spring-cloud-gateway_CVE-2022-22947_3-0-6)
 
 ### CVE-2022-22948 (2022-03-29)
 
@@ -26148,6 +26232,7 @@
 - [osungjinwoo/CVE-2022-22965](https://github.com/osungjinwoo/CVE-2022-22965)
 - [Nosie12/fire-wall-server](https://github.com/Nosie12/fire-wall-server)
 - [salo-404/firewall](https://github.com/salo-404/firewall)
+- [shoucheng3/spring-projects__spring-framework_CVE-2022-22965_5-2-19-RELEASE](https://github.com/shoucheng3/spring-projects__spring-framework_CVE-2022-22965_5-2-19-RELEASE)
 
 ### CVE-2022-22966 (2022-04-14)
 
@@ -26940,6 +27025,13 @@
 </code>
 
 - [shoucheng3/jenkinsci__workflow-cps-global-lib-plugin_CVE-2022-25174_544-vff04fa68714d](https://github.com/shoucheng3/jenkinsci__workflow-cps-global-lib-plugin_CVE-2022-25174_544-vff04fa68714d)
+
+### CVE-2022-25175 (2022-02-15)
+
+<code>Jenkins Pipeline: Multibranch Plugin 706.vd43c65dec013 and earlier uses the same checkout directories for distinct SCMs for the readTrusted step, allowing attackers with Item/Configure permission to invoke arbitrary OS commands on the controller through crafted SCM contents.
+</code>
+
+- [shoucheng3/jenkinsci__workflow-multibranch-plugin_CVE-2022-25175_706-vd43c65dec013](https://github.com/shoucheng3/jenkinsci__workflow-multibranch-plugin_CVE-2022-25175_706-vd43c65dec013)
 
 ### CVE-2022-25226 (2022-04-18)
 
@@ -28452,6 +28544,13 @@
 
 - [shoucheng3/DSpace__DSpace_CVE-2022-31194_5-10](https://github.com/shoucheng3/DSpace__DSpace_CVE-2022-31194_5-10)
 
+### CVE-2022-31195 (2022-08-01)
+
+<code>DSpace open source software is a repository application which provides durable access to digital resources. In affected versions the ItemImportServiceImpl is vulnerable to a path traversal vulnerability. This means a malicious SAF (simple archive format) package could cause a file/directory to be created anywhere the Tomcat/DSpace user can write to on the server. However, this path traversal vulnerability is only possible by a user with special privileges (either Administrators or someone with command-line access to the server). This vulnerability impacts the XMLUI, JSPUI and command-line. Users are advised to upgrade. As a basic workaround, users may block all access to the following URL paths: If you are using the XMLUI, block all access to /admin/batchimport path (this is the URL of the Admin Batch Import tool). Keep in mind, if your site uses the path &quot;/xmlui&quot;, then you'd need to block access to /xmlui/admin/batchimport. If you are using the JSPUI, block all access to /dspace-admin/batchimport path (this is the URL of the Admin Batch Import tool). Keep in mind, if your site uses the path &quot;/jspui&quot;, then you'd need to block access to /jspui/dspace-admin/batchimport. Keep in mind, only an Administrative user or a user with command-line access to the server is able to import/upload SAF packages. Therefore, assuming those users do not blindly upload untrusted SAF packages, then it is unlikely your site could be impacted by this vulnerability.
+</code>
+
+- [shoucheng3/DSpace__DSpace_CVE-2022-31195_5-10](https://github.com/shoucheng3/DSpace__DSpace_CVE-2022-31195_5-10)
+
 ### CVE-2022-31245 (2022-05-20)
 
 <code>mailcow before 2022-05d allows a remote authenticated user to inject OS commands and escalate privileges to domain admin via the --debug option in conjunction with the ---PIPEMESS option in Sync Jobs.
@@ -28977,6 +29076,13 @@
 
 - [Halcy0nic/CVE-2022-34556](https://github.com/Halcy0nic/CVE-2022-34556)
 
+### CVE-2022-34662 (2022-11-01)
+
+<code>When users add resources to the resource center with a relation path will cause path traversal issues and only for logged-in users. You could upgrade to version 3.0.0 or higher
+</code>
+
+- [shoucheng3/apache__dolphinscheduler_CVE-2022-34662_2-0-9](https://github.com/shoucheng3/apache__dolphinscheduler_CVE-2022-34662_2-0-9)
+
 ### CVE-2022-34683 (2022-12-30)
 
 <code>NVIDIA GPU Display Driver for Windows contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape, where a null-pointer dereference occurs, which may lead to denial of service.
@@ -29171,6 +29277,13 @@
 </code>
 
 - [CanVo/CVE-2022-35978-POC](https://github.com/CanVo/CVE-2022-35978-POC)
+
+### CVE-2022-36007 (2022-08-14)
+
+<code>Venice is a Clojure inspired sandboxed Lisp dialect with excellent Java interoperability. A partial path traversal issue exists within the functions `load-file` and `load-resource`. These functions can be limited to load files from a list of load paths. Assuming Venice has been configured with the load paths: `[ &quot;/Users/foo/resources&quot; ]` When passing **relative** paths to these two vulnerable functions everything is fine: `(load-resource &quot;test.png&quot;)` =&gt; loads the file &quot;/Users/foo/resources/test.png&quot; `(load-resource &quot;../resources-alt/test.png&quot;)` =&gt; rejected, outside the load path When passing **absolute** paths to these two vulnerable functions Venice may return files outside the configured load paths: `(load-resource &quot;/Users/foo/resources/test.png&quot;)` =&gt; loads the file &quot;/Users/foo/resources/test.png&quot; `(load-resource &quot;/Users/foo/resources-alt/test.png&quot;)` =&gt; loads the file &quot;/Users/foo/resources-alt/test.png&quot; !!! The latter call suffers from the _Partial Path Traversal_ vulnerability. This issue’s scope is limited to absolute paths whose name prefix matches a load path. E.g. for a load-path `&quot;/Users/foo/resources&quot;`, the actor can cause loading a resource also from `&quot;/Users/foo/resources-alt&quot;`, but not from `&quot;/Users/foo/images&quot;`. Versions of Venice before and including v1.10.17 are affected by this issue. Upgrade to Venice &gt;= 1.10.18, if you are on a version &lt; 1.10.18. There are currently no known workarounds.
+</code>
+
+- [shoucheng3/jlangch__venice_CVE-2022-36007_1-10-16](https://github.com/shoucheng3/jlangch__venice_CVE-2022-36007_1-10-16)
 
 ### CVE-2022-36067 (2022-09-06)
 
@@ -30323,6 +30436,7 @@
 - [MendDemo-josh/cve-2022-42889-text4shell](https://github.com/MendDemo-josh/cve-2022-42889-text4shell)
 - [Syndicate27/text4shell-exploit](https://github.com/Syndicate27/text4shell-exploit)
 - [ifconfig-me/Log4Shell-Payloads](https://github.com/ifconfig-me/Log4Shell-Payloads)
+- [shoucheng3/asf__commons-text_CVE-2022-42889_1-9](https://github.com/shoucheng3/asf__commons-text_CVE-2022-42889_1-9)
 
 ### CVE-2022-42896 (2022-11-23)
 
@@ -30484,6 +30598,13 @@
 </code>
 
 - [JBalanza/CVE-2022-44215](https://github.com/JBalanza/CVE-2022-44215)
+
+### CVE-2022-44262 (2022-12-01)
+
+<code>ff4j 1.8.1 is vulnerable to Remote Code Execution (RCE).
+</code>
+
+- [shoucheng3/ff4j__ff4j_CVE-2022-44262_1-8-13](https://github.com/shoucheng3/ff4j__ff4j_CVE-2022-44262_1-8-13)
 
 ### CVE-2022-44268 (2023-02-06)
 
@@ -32423,7 +32544,6 @@
 - [evdenis/lsm_bpf_check_argc0](https://github.com/evdenis/lsm_bpf_check_argc0)
 - [tahaafarooq/poppy](https://github.com/tahaafarooq/poppy)
 - [PwnFunction/CVE-2021-4034](https://github.com/PwnFunction/CVE-2021-4034)
-- [deoxykev/CVE-2021-4034-Rust](https://github.com/deoxykev/CVE-2021-4034-Rust)
 - [c3c/CVE-2021-4034](https://github.com/c3c/CVE-2021-4034)
 - [EstamelGG/CVE-2021-4034-NoGCC](https://github.com/EstamelGG/CVE-2021-4034-NoGCC)
 - [galoget/PwnKit-CVE-2021-4034](https://github.com/galoget/PwnKit-CVE-2021-4034)
@@ -32431,7 +32551,6 @@
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [glowbase/PwnKit-CVE-2021-4034](https://github.com/glowbase/PwnKit-CVE-2021-4034)
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
-- [G01d3nW01f/CVE-2021-4034](https://github.com/G01d3nW01f/CVE-2021-4034)
 - [drapl0n/pwnKit](https://github.com/drapl0n/pwnKit)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
 - [Joffr3y/Polkit-CVE-2021-4034-HLP](https://github.com/Joffr3y/Polkit-CVE-2021-4034-HLP)
@@ -34316,6 +34435,7 @@
 - [specializzazione-cyber-security/demo-CVE-2021-29447-lezione](https://github.com/specializzazione-cyber-security/demo-CVE-2021-29447-lezione)
 - [magicrc/CVE-2021-29447](https://github.com/magicrc/CVE-2021-29447)
 - [Tea-On/CVE-2021-29447-Authenticated-XXE-WordPress-5.6-5.7](https://github.com/Tea-On/CVE-2021-29447-Authenticated-XXE-WordPress-5.6-5.7)
+- [ArtemCyberLab/Project-Project-Chimera-Exploiting-a-Modern-WordPress-XXE-to-Pillage-Secrets-](https://github.com/ArtemCyberLab/Project-Project-Chimera-Exploiting-a-Modern-WordPress-XXE-to-Pillage-Secrets-)
 
 ### CVE-2021-29505 (2021-05-28)
 
@@ -36141,6 +36261,13 @@
 </code>
 
 - [gabrielolivra/Exploit-Medium-CVE-2021-41184](https://github.com/gabrielolivra/Exploit-Medium-CVE-2021-41184)
+
+### CVE-2021-41269 (2021-11-15)
+
+<code>cron-utils is a Java library to define, parse, validate, migrate crons as well as get human readable descriptions for them. In affected versions A template Injection was identified in cron-utils enabling attackers to inject arbitrary Java EL expressions, leading to unauthenticated Remote Code Execution (RCE) vulnerability. Versions up to 9.1.2 are susceptible to this vulnerability. Please note, that only projects using the @Cron annotation to validate untrusted Cron expressions are affected. The issue was patched and a new version was released. Please upgrade to version 9.1.6. There are no known workarounds known.
+</code>
+
+- [shoucheng3/jmrozanec__cron-utils_CVE-2021-41269_9-1-5](https://github.com/shoucheng3/jmrozanec__cron-utils_CVE-2021-41269_9-1-5)
 
 ### CVE-2021-41277 (2021-11-17)
 
@@ -39435,6 +39562,13 @@
 
 - [motikan2010/CVE-2020-5398](https://github.com/motikan2010/CVE-2020-5398)
 
+### CVE-2020-5405 (2020-03-05)
+
+<code>Spring Cloud Config, versions 2.2.x prior to 2.2.2, versions 2.1.x prior to 2.1.7, and older unsupported versions allow applications to serve arbitrary configuration files through the spring-cloud-config-server module. A malicious user, or attacker, can send a request using a specially crafted URL that can lead a directory traversal attack.
+</code>
+
+- [shoucheng3/spring-cloud__spring-cloud-config_CVE-2020-5405_2-1-6-RELEASE](https://github.com/shoucheng3/spring-cloud__spring-cloud-config_CVE-2020-5405_2-1-6-RELEASE)
+
 ### CVE-2020-5410 (2020-06-02)
 
 <code>Spring Cloud Config, versions 2.2.x prior to 2.2.3, versions 2.1.x prior to 2.1.9, and older unsupported versions allow applications to serve arbitrary configuration files through the spring-cloud-config-server module. A malicious user, or attacker, can send a request using a specially crafted URL that can lead to a directory traversal attack.
@@ -42090,6 +42224,7 @@
 - [MrCl0wnLab/SimplesApachePathTraversal](https://github.com/MrCl0wnLab/SimplesApachePathTraversal)
 - [zhangweijie11/CVE-2020-17519](https://github.com/zhangweijie11/CVE-2020-17519)
 - [GazettEl/CVE-2020-17519](https://github.com/GazettEl/CVE-2020-17519)
+- [shoucheng3/apache__flink_CVE-2020-17519_1-11-2](https://github.com/shoucheng3/apache__flink_CVE-2020-17519_1-11-2)
 
 ### CVE-2020-17523 (2021-02-03)
 
@@ -43211,6 +43346,13 @@
 </code>
 
 - [Ko-kn3t/CVE-2020-29156](https://github.com/Ko-kn3t/CVE-2020-29156)
+
+### CVE-2020-29204 (2020-12-27)
+
+<code>XXL-JOB 2.2.0 allows Stored XSS (in Add User) to bypass the 20-character limit via xxl-job-admin/src/main/java/com/xxl/job/admin/controller/UserController.java.
+</code>
+
+- [shoucheng3/xuxueli__xxl-job_CVE-2020-29204_2-2-0](https://github.com/shoucheng3/xuxueli__xxl-job_CVE-2020-29204_2-2-0)
 
 ### CVE-2020-29254 (2020-12-11)
 
@@ -47285,6 +47427,13 @@
 
 - [forse01/CVE-2019-17638-Jetty](https://github.com/forse01/CVE-2019-17638-Jetty)
 
+### CVE-2019-17640 (2020-10-15)
+
+<code>In Eclipse Vert.x 3.4.x up to 3.9.4, 4.0.0.milestone1, 4.0.0.milestone2, 4.0.0.milestone3, 4.0.0.milestone4, 4.0.0.milestone5, 4.0.0.Beta1, 4.0.0.Beta2, and 4.0.0.Beta3, StaticHandler doesn't correctly processes back slashes on Windows Operating systems, allowing, escape the webroot folder to the current working directory.
+</code>
+
+- [shoucheng3/vert-x3__vertx-web_CVE-2019-17640_3-9-3](https://github.com/shoucheng3/vert-x3__vertx-web_CVE-2019-17640_3-9-3)
+
 ### CVE-2019-17658 (2020-03-12)
 
 <code>An unquoted service path vulnerability in the FortiClient FortiTray component of FortiClientWindows v6.2.2 and prior allow an attacker to gain elevated privileges via the FortiClientConsole executable service path.
@@ -49149,6 +49298,7 @@
 - [rajaabdullahnasir/CVE-2018-7600-Remote-Code-Execution](https://github.com/rajaabdullahnasir/CVE-2018-7600-Remote-Code-Execution)
 - [xxxTectationxxx/CVE-2018-7600](https://github.com/xxxTectationxxx/CVE-2018-7600)
 - [muhammedkayag/CVE-2018-7600](https://github.com/muhammedkayag/CVE-2018-7600)
+- [SyedGhufranRaza/CVE-2018-7600-Remote-Code-Execution](https://github.com/SyedGhufranRaza/CVE-2018-7600-Remote-Code-Execution)
 
 ### CVE-2018-7602 (2018-07-19)
 
@@ -49606,6 +49756,13 @@
 </code>
 
 - [beverlymiller818/cve-2018-9075](https://github.com/beverlymiller818/cve-2018-9075)
+
+### CVE-2018-9159 (2018-03-31)
+
+<code>In Spark before 2.7.2, a remote attacker can read unintended static files via various representations of absolute or relative pathnames, as demonstrated by file: URLs and directory traversal sequences. NOTE: this product is unrelated to Ignite Realtime Spark.
+</code>
+
+- [shoucheng3/perwendel__spark_CVE-2018-9159_2-7-1](https://github.com/shoucheng3/perwendel__spark_CVE-2018-9159_2-7-1)
 
 ### CVE-2018-9160 (2018-03-31)
 
@@ -50079,6 +50236,13 @@
 </code>
 
 - [EmreOvunc/Eaton-Intelligent-Power-Manager-Local-File-Inclusion](https://github.com/EmreOvunc/Eaton-Intelligent-Power-Manager-Local-File-Inclusion)
+
+### CVE-2018-12036 (2018-06-07)
+
+<code>OWASP Dependency-Check before 3.2.0 allows attackers to write to arbitrary files via a crafted archive that holds directory traversal filenames.
+</code>
+
+- [shoucheng3/jeremylong__DependencyCheck_CVE-2018-12036_3-1-2](https://github.com/shoucheng3/jeremylong__DependencyCheck_CVE-2018-12036_3-1-2)
 
 ### CVE-2018-12038 (2018-11-20)
 
@@ -51453,6 +51617,13 @@
 </code>
 
 - [epicosy/Retrofit-1](https://github.com/epicosy/Retrofit-1)
+
+### CVE-2018-1000850 (2018-12-20)
+
+<code>Square Retrofit version versions from (including) 2.0 and 2.5.0 (excluding) contains a Directory Traversal vulnerability in RequestBuilder class, method addPathParameter that can result in By manipulating the URL an attacker could add or delete resources otherwise unavailable to her.. This attack appear to be exploitable via An attacker should have access to an encoded path parameter on POST, PUT or DELETE request.. This vulnerability appears to have been fixed in 2.5.0 and later.
+</code>
+
+- [shoucheng3/square__retrofit_CVE-2018-1000850_2-4-0](https://github.com/shoucheng3/square__retrofit_CVE-2018-1000850_2-4-0)
 
 ### CVE-2018-1000861 (2018-12-10)
 
@@ -53517,6 +53688,13 @@
 
 - [PalmTreeForest/CodePath_Week_7-8](https://github.com/PalmTreeForest/CodePath_Week_7-8)
 
+### CVE-2017-14735 (2017-09-25)
+
+<code>OWASP AntiSamy before 1.5.7 allows XSS via HTML5 entities, as demonstrated by use of &amp;colon; to construct a javascript: URL.
+</code>
+
+- [shoucheng3/nahsra__antisamy_CVE-2017-14735_1-5-6](https://github.com/shoucheng3/nahsra__antisamy_CVE-2017-14735_1-5-6)
+
 ### CVE-2017-14948 (2019-10-14)
 
 <code>Certain D-Link products are affected by: Buffer Overflow. This affects DIR-880L 1.08B04 and DIR-895 L/R 1.13b03. The impact is: execute arbitrary code (remote). The component is: htdocs/fileaccess.cgi. The attack vector is: A crafted HTTP request handled by fileacces.cgi could allow an attacker to mount a ROP attack: if the HTTP header field CONTENT_TYPE starts with ''boundary=' followed by more than 256 characters, a buffer overflow would be triggered, potentially causing code execution.
@@ -53868,13 +54046,6 @@
 </code>
 
 - [h0cksr/Fastjson--CVE-2017-18349-](https://github.com/h0cksr/Fastjson--CVE-2017-18349-)
-
-### CVE-2017-18362 (2019-02-05)
-
-<code>ConnectWise ManagedITSync integration through 2017 for Kaseya VSA is vulnerable to unauthenticated remote commands that allow full direct access to the Kaseya VSA database. In February 2019, attackers have actively exploited this in the wild to download and execute ransomware payloads on all endpoints managed by the VSA server. If the ManagedIT.asmx page is available via the Kaseya VSA web interface, anyone with access to the page is able to run arbitrary SQL queries, both read and write, without authentication.
-</code>
-
-- [yawningmoney/CVE-2017-18362-LAB](https://github.com/yawningmoney/CVE-2017-18362-LAB)
 
 ### CVE-2017-18486 (2019-08-09)
 
@@ -54945,6 +55116,7 @@
 - [boompig/cve-2016-6662](https://github.com/boompig/cve-2016-6662)
 - [MAYASEVEN/CVE-2016-6662](https://github.com/MAYASEVEN/CVE-2016-6662)
 - [LSQUARE14/SQL_to_RCE_Lab](https://github.com/LSQUARE14/SQL_to_RCE_Lab)
+- [kanyaars/CVE-2016-6662](https://github.com/kanyaars/CVE-2016-6662)
 
 ### CVE-2016-6663 (2016-12-13)
 
@@ -56972,7 +57144,7 @@
 <code>The MailPoet Newsletters (wysija-newsletters) plugin before 2.6.7 for WordPress allows remote attackers to bypass authentication and execute arbitrary PHP code by uploading a crafted theme using wp-admin/admin-post.php and accessing the theme in wp-content/uploads/wysija/themes/mailp/.
 </code>
 
-- [Pwdnx1337/CVE-2014-4725](https://github.com/Pwdnx1337/CVE-2014-4725)
+- [pwdnx337/CVE-2014-4725](https://github.com/pwdnx337/CVE-2014-4725)
 
 ### CVE-2014-4936 (2014-12-16)
 
@@ -57166,6 +57338,13 @@
 </code>
 
 - [m0nad/CVE-2014-7236_Exploit](https://github.com/m0nad/CVE-2014-7236_Exploit)
+
+### CVE-2014-7816 (2014-12-01)
+
+<code>Directory traversal vulnerability in JBoss Undertow 1.0.x before 1.0.17, 1.1.x before 1.1.0.CR5, and 1.2.x before 1.2.0.Beta3, when running on Windows, allows remote attackers to read arbitrary files via a .. (dot dot) in a resource URI.
+</code>
+
+- [shoucheng3/undertow-io__undertow_CVE-2014-7816_1-0-16-Final](https://github.com/shoucheng3/undertow-io__undertow_CVE-2014-7816_1-0-16-Final)
 
 ### CVE-2014-7911 (2014-12-15)
 
@@ -58211,6 +58390,7 @@
 - [krill-x7/CVE-2011-2523](https://github.com/krill-x7/CVE-2011-2523)
 - [As9xm/BrokenDoor-CVE-2011-2523-](https://github.com/As9xm/BrokenDoor-CVE-2011-2523-)
 - [BolivarJ/CVE-2011-2523](https://github.com/BolivarJ/CVE-2011-2523)
+- [seerat-fatima21/vsftpd-exploit](https://github.com/seerat-fatima21/vsftpd-exploit)
 
 ### CVE-2011-2732 (2012-12-05)
 
