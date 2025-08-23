@@ -1129,6 +1129,13 @@
 
 - [mind2hex/CVE-2025-7404-CalibreWeb-0.6.24-BlindCommandInjection](https://github.com/mind2hex/CVE-2025-7404-CalibreWeb-0.6.24-BlindCommandInjection)
 
+### CVE-2025-7431 (2025-07-18)
+
+<code>The Knowledge Base plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin slug setting in all versions up to, and including, 2.3.1 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level access, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.
+</code>
+
+- [NagisaYumaa/CVE-2025-7431](https://github.com/NagisaYumaa/CVE-2025-7431)
+
 ### CVE-2025-7461 (2025-07-12)
 
 <code>Eine Schwachstelle wurde in code-projects Modern Bag 1.0 gefunden. Sie wurde als kritisch eingestuft. Dies betrifft einen unbekannten Teil der Datei /action.php. Mittels dem Manipulieren des Arguments proId mit unbekannten Daten kann eine sql injection-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk passieren. Der Exploit steht zur öffentlichen Verfügung.
@@ -1251,6 +1258,13 @@
 
 - [m3m0o/engeman-web-language-combobox-sqli](https://github.com/m3m0o/engeman-web-language-combobox-sqli)
 
+### CVE-2025-8418 (2025-08-12)
+
+<code>The B Slider- Gutenberg Slider Block for WP plugin for WordPress is vulnerable to Arbitrary Plugin Installation in all versions up to, and including, 1.1.30. This is due to missing capability checks on the activated_plugin function. This makes it possible for authenticated attackers, with subscriber-level access and above, to install arbitrary plugins on the server which can make remote code execution possible.
+</code>
+
+- [LitBot123/CVE.py](https://github.com/LitBot123/CVE.py)
+
 ### CVE-2025-8471 (2025-08-02)
 
 <code>Eine Schwachstelle wurde in projectworlds Online Admission System 1.0 entdeckt. Sie wurde als kritisch eingestuft. Es geht hierbei um eine nicht näher spezifizierte Funktion der Datei /adminlogin.php. Mittels dem Manipulieren des Arguments a_id mit unbekannten Daten kann eine sql injection-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk angegangen werden. Der Exploit steht zur öffentlichen Verfügung.
@@ -1324,13 +1338,6 @@
 </code>
 
 - [byteReaper77/CVE-2025-9090](https://github.com/byteReaper77/CVE-2025-9090)
-
-### CVE-2025-9132 (2025-08-20)
-
-<code>Out of bounds write in V8 in Google Chrome prior to 139.0.7258.138 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
-</code>
-
-- [barbaraeivyu/CVE-2025-9132](https://github.com/barbaraeivyu/CVE-2025-9132)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -1903,6 +1910,7 @@
 - [D3Ext/CVE-2025-24893](https://github.com/D3Ext/CVE-2025-24893)
 - [Retro023/CVE-2025-24893-POC](https://github.com/Retro023/CVE-2025-24893-POC)
 - [CMassa/CVE-2025-24893](https://github.com/CMassa/CVE-2025-24893)
+- [x0da6h/POC-for-CVE-2025-24893](https://github.com/x0da6h/POC-for-CVE-2025-24893)
 
 ### CVE-2025-24963 (2025-02-04)
 
@@ -2366,6 +2374,13 @@
 
 - [jiseoung/CVE-2025-27415-PoC](https://github.com/jiseoung/CVE-2025-27415-PoC)
 
+### CVE-2025-27519 (2025-03-07)
+
+<code>Cognita is a RAG (Retrieval Augmented Generation) Framework for building modular, open source applications for production by TrueFoundry. A path traversal issue exists at /v1/internal/upload-to-local-directory which is enabled when the Local env variable is set to true, such as when Cognita is setup using Docker. Because the docker environment sets up the backend uvicorn server with auto reload enabled, when an attacker overwrites the /app/backend/__init__.py file, the file will automatically be reloaded and executed. This allows an attacker to get remote code execution in the context of the Docker container. This vulnerability is fixed in commit a78bd065e05a1b30a53a3386cc02e08c317d2243.
+</code>
+
+- [Diabl0xE/CVE-2025-27519](https://github.com/Diabl0xE/CVE-2025-27519)
+
 ### CVE-2025-27533 (2025-05-07)
 
 <code>Memory Allocation with Excessive Size Value vulnerability in Apache ActiveMQ.\n\nDuring unmarshalling of OpenWire commands the size value of buffers was not properly validated which could lead to excessive memory allocation and be exploited to cause a denial of service (DoS) by depleting process memory, thereby affecting applications and services that rely on the availability of the ActiveMQ broker when not using mutual TLS connections.\nThis issue affects Apache ActiveMQ: from 6.0.0 before 6.1.6, from 5.18.0 before 5.18.7, from 5.17.0 before 5.17.7, before 5.16.8. ActiveMQ 5.19.0 is not affected.\n\nUsers are recommended to upgrade to version 6.1.6+, 5.19.0+,  5.18.7+, 5.17.7, or 5.16.8 or which fixes the issue.\n\nExisting users may implement mutual TLS to mitigate the risk on affected brokers.
@@ -2728,7 +2743,7 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [AventurineJun/CVE-2025-29927-Research](https://github.com/AventurineJun/CVE-2025-29927-Research)
+- [Haruaventure/CVE-2025-29927-Research](https://github.com/Haruaventure/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -3513,7 +3528,8 @@
 <code>An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in macOS Sonoma 14.7.8, macOS Ventura 13.7.8, iPadOS 17.7.10, macOS Sequoia 15.6.1, iOS 18.6.2 and iPadOS 18.6.2. Processing a malicious image file may result in memory corruption. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals.
 </code>
 
-- [h4xnz/CVE-2025-43300](https://github.com/h4xnz/CVE-2025-43300)
+- [h4xnz/CVE-2025-43300-Exploit](https://github.com/h4xnz/CVE-2025-43300-Exploit)
+- [XiaomingX/CVE-2025-43300-exp](https://github.com/XiaomingX/CVE-2025-43300-exp)
 
 ### CVE-2025-43864 (2025-04-25)
 
@@ -4596,6 +4612,13 @@
 
 - [DVKunion/CVE-2025-53547-POC](https://github.com/DVKunion/CVE-2025-53547-POC)
 
+### CVE-2025-53632 (2025-07-10)
+
+<code>Chall-Manager is a platform-agnostic system able to start Challenges on Demand of a player. When decoding a scenario (i.e. a zip archive), the path of the file to write is not checked, potentially leading to zip slips. Exploitation does not require authentication nor authorization, so anyone can exploit it. It should nonetheless not be exploitable as it is highly recommended to bury Chall-Manager deep within the infrastructure due to its large capabilities, so no users could reach the system. Patch has been implemented by commit 47d188f and shipped in v0.1.4.
+</code>
+
+- [pandatix/CVE-2025-53632](https://github.com/pandatix/CVE-2025-53632)
+
 ### CVE-2025-53640 (2025-07-14)
 
 <code>Indico is an event management system that uses Flask-Multipass, a multi-backend authentication system for Flask. Starting in version 2.2 and prior to version 3.3.7, an endpoint used to display details of users listed in certain fields (such as ACLs) could be misused to dump basic user details (such as name, affiliation and email) in bulk. Version 3.3.7 fixes the issue. Owners of instances that allow everyone to create a user account, who wish to truly restrict access to these user details, should consider restricting user search to managers. As a workaround, it is possible to restrict access to the affected endpoints (e.g. in the webserver config), but doing so would break certain form fields which could no longer show the details of the users listed in those fields, so upgrading instead is highly recommended.
@@ -4803,12 +4826,22 @@
 - [vadim-belous/CVE-2025-55188-PoC](https://github.com/vadim-belous/CVE-2025-55188-PoC)
 - [rhllsingh/CVE-2025-55188-7z-exploit](https://github.com/rhllsingh/CVE-2025-55188-7z-exploit)
 
+### CVE-2025-55230 (2025-08-21)
+
+<code>Untrusted pointer dereference in Windows MBT Transport driver allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [barbaraeivyu/CVE-2025-55230-Exploit](https://github.com/barbaraeivyu/CVE-2025-55230-Exploit)
+
 ### CVE-2025-55287 (2025-08-18)
 
 <code>Genealogy is a family tree PHP application. Prior to 4.4.0, Authenticated Stored Cross-Site Scripting (XSS) vulnerability was identified in the Genealogy application. Authenticated attackers could run arbitrary JavaScript in another user’s session, leading to session hijacking, data theft, and UI manipulation. This vulnerability is fixed in 4.4.0.
 </code>
 
 - [Eternalvalhalla/CVE-2025-55287-POC](https://github.com/Eternalvalhalla/CVE-2025-55287-POC)
+
+### CVE-2025-55575
+- [Aether-0/CVE-2025-55575](https://github.com/Aether-0/CVE-2025-55575)
 
 ### CVE-2025-55668 (2025-08-13)
 
@@ -11473,6 +11506,13 @@
 - [LeadroyaL/CVE-2024-37051-EXP](https://github.com/LeadroyaL/CVE-2024-37051-EXP)
 - [mrblackstar26/CVE-2024-37051](https://github.com/mrblackstar26/CVE-2024-37051)
 
+### CVE-2024-37054 (2024-06-04)
+
+<code>Deserialization of untrusted data can occur in versions of the MLflow platform running version 0.9.0 or newer, enabling a maliciously uploaded PyFunc model to run arbitrary code on an end user’s system when interacted with.
+</code>
+
+- [NiteeshPujari/CVE-2024-37054-MLflow-RCE](https://github.com/NiteeshPujari/CVE-2024-37054-MLflow-RCE)
+
 ### CVE-2024-37081 (2024-06-18)
 
 <code>The vCenter Server contains multiple local privilege escalation vulnerabilities due to misconfiguration of sudo. An authenticated local user with non-administrative privileges may exploit these issues to elevate privileges to root on vCenter Server Appliance.
@@ -14478,13 +14518,6 @@
 </code>
 
 - [jprx/CVE-2024-54507](https://github.com/jprx/CVE-2024-54507)
-
-### CVE-2024-54525 (2025-03-17)
-
-<code>A logic issue was addressed with improved file handling. This issue is fixed in visionOS 2.2, watchOS 11.2, tvOS 18.2, macOS Sequoia 15.2, iOS 18.2 and iPadOS 18.2. Restoring a maliciously crafted backup file may lead to modification of protected system files.
-</code>
-
-- [skadz108/MyBallsItch](https://github.com/skadz108/MyBallsItch)
 
 ### CVE-2024-54679 (2024-12-05)
 
@@ -28528,6 +28561,13 @@
 
 - [shoucheng3/aws__aws-sdk-java_CVE-2022-31159_1-12-260](https://github.com/shoucheng3/aws__aws-sdk-java_CVE-2022-31159_1-12-260)
 
+### CVE-2022-31160 (2022-07-20)
+
+<code>jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of jQuery. Versions prior to 1.13.2 are potentially vulnerable to cross-site scripting. Initializing a checkboxradio widget on an input enclosed within a label makes that parent label contents considered as the input label. Calling `.checkboxradio( &quot;refresh&quot; )` on such a widget and the initial HTML contained encoded HTML entities will make them erroneously get decoded. This can lead to potentially executing JavaScript code. The bug has been patched in jQuery UI 1.13.2. To remediate the issue, someone who can change the initial HTML can wrap all the non-input contents of the `label` in a `span`.
+</code>
+
+- [CyberOne-TeamARES/jquery-cve-2022-31160](https://github.com/CyberOne-TeamARES/jquery-cve-2022-31160)
+
 ### CVE-2022-31181 (2022-08-01)
 
 <code>PrestaShop is an Open Source e-commerce platform. In versions from 1.6.0.10 and before 1.7.8.7 PrestaShop is subject to an SQL injection vulnerability which can be chained to call PHP's Eval function on attacker input. The problem is fixed in version 1.7.8.7. Users are advised to upgrade. Users unable to upgrade may delete the MySQL Smarty cache feature.
@@ -28658,7 +28698,11 @@
 
 - [realyme/CVE-2022-31479-test](https://github.com/realyme/CVE-2022-31479-test)
 
-### CVE-2022-31491
+### CVE-2022-31491 (2025-08-22)
+
+<code>Voltronic Power ViewPower through 1.04-24215, ViewPower Pro through 2.0-22165, and PowerShield Netguard before 1.04-23292 allows a remote attacker to run arbitrary code via an unspecified web interface related to detection of a managed UPS shutting down. An unauthenticated attacker can use this to run arbitrary code immediately regardless of any managed UPS state or presence.
+</code>
+
 - [ready2disclose/CVE-2022-31491](https://github.com/ready2disclose/CVE-2022-31491)
 
 ### CVE-2022-31499 (2022-08-25)
@@ -29817,7 +29861,7 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [AventurineJun/CVE-2022-39299-Research](https://github.com/AventurineJun/CVE-2022-39299-Research)
+- [Haruaventure/CVE-2022-39299-Research](https://github.com/Haruaventure/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -30481,7 +30525,11 @@
 
 - [nibin-m/CVE-2022-43097](https://github.com/nibin-m/CVE-2022-43097)
 
-### CVE-2022-43110
+### CVE-2022-43110 (2025-08-22)
+
+<code>Voltronic Power ViewPower through 1.04-21353 and PowerShield Netguard before 1.04-23292 allows a remote attacker to configure the system via an unspecified web interface. An unauthenticated remote attacker can make changes to the system including: changing the web interface admin password, view/change system configuration, enumerate connected UPS devices and shut down connected UPS devices. This extends to being able to configure operating system commands that should run if the system detects a connected UPS shutting down.
+</code>
+
 - [ready2disclose/CVE-2022-43110](https://github.com/ready2disclose/CVE-2022-43110)
 
 ### CVE-2022-43117 (2022-11-21)
@@ -47609,6 +47657,7 @@
 - [dust-life/CVE-2019-18935-memShell](https://github.com/dust-life/CVE-2019-18935-memShell)
 - [clarkvoss/telerik](https://github.com/clarkvoss/telerik)
 - [ekkoo-z/CVE-2019-18935-bypasswaf](https://github.com/ekkoo-z/CVE-2019-18935-bypasswaf)
+- [0xsharz/telerik-scanner-CVE-2019-18935](https://github.com/0xsharz/telerik-scanner-CVE-2019-18935)
 
 ### CVE-2019-18988 (2020-02-07)
 
@@ -54976,6 +55025,7 @@
 - [0x3n19m4/CVE-2016-5195](https://github.com/0x3n19m4/CVE-2016-5195)
 - [Samuel-G3/Escalamiento-de-Privilegios-usando-el-Kernel-Exploit-Dirty-Cow](https://github.com/Samuel-G3/Escalamiento-de-Privilegios-usando-el-Kernel-Exploit-Dirty-Cow)
 - [mohammadamin382/dirtycow-lab](https://github.com/mohammadamin382/dirtycow-lab)
+- [MarioAlejos-Cs/dirtycow-lab](https://github.com/MarioAlejos-Cs/dirtycow-lab)
 
 ### CVE-2016-5345 (2018-01-23)
 
@@ -58935,6 +58985,13 @@
 </code>
 
 - [SpiderLabs/TWSL2011-007_iOS_code_workaround](https://github.com/SpiderLabs/TWSL2011-007_iOS_code_workaround)
+
+### CVE-2008-1447 (2008-07-08)
+
+<code>The DNS protocol, as implemented in (1) BIND 8 and 9 before 9.5.0-P1, 9.4.2-P1, and 9.3.5-P1; (2) Microsoft DNS in Windows 2000 SP4, XP SP2 and SP3, and Server 2003 SP1 and SP2; and other implementations allow remote attackers to spoof DNS traffic via a birthday attack that uses in-bailiwick referrals to conduct cache poisoning against recursive resolvers, related to insufficient randomness of DNS transaction IDs and source ports, aka &quot;DNS Insufficient Socket Entropy Vulnerability&quot; or &quot;the Kaminsky bug.&quot;
+</code>
+
+- [hamlasiraj/metasploit-bailiwicked_domain-fix](https://github.com/hamlasiraj/metasploit-bailiwicked_domain-fix)
 
 ### CVE-2008-1611 (2008-04-01)
 
