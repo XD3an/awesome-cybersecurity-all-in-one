@@ -1063,6 +1063,13 @@
 
 - [d0n601/CVE-2025-6586](https://github.com/d0n601/CVE-2025-6586)
 
+### CVE-2025-6713 (2025-07-07)
+
+<code>An unauthorized user may leverage a specially crafted aggregation pipeline to access data without proper authorization due to improper handling of the $mergeCursors stage in MongoDB Server. This may lead to access to data without further authorisation. This issue affects MongoDB Server MongoDB Server v8.0 versions prior to 8.0.7, MongoDB Server v7.0 versions prior to 7.0.19 and MongoDB Server v6.0 versions prior to 6.0.22
+</code>
+
+- [c137req/CVE-2025-6713](https://github.com/c137req/CVE-2025-6713)
+
 ### CVE-2025-6759 (2025-07-08)
 
 <code>Local Privilege escalation allows a low-privileged user to gain SYSTEM privileges in Windows Virtual Delivery Agent for CVAD and Citrix DaaS
@@ -1293,6 +1300,7 @@
 
 - [moften/CVE-2025-8671-MadeYouReset-HTTP-2-DDoS](https://github.com/moften/CVE-2025-8671-MadeYouReset-HTTP-2-DDoS)
 - [mateusm1403/PoC-CVE-2025-8671-MadeYouReset-HTTP-2](https://github.com/mateusm1403/PoC-CVE-2025-8671-MadeYouReset-HTTP-2)
+- [abiyeenzo/CVE-2025-8671](https://github.com/abiyeenzo/CVE-2025-8671)
 
 ### CVE-2025-8723 (2025-08-19)
 
@@ -1889,6 +1897,7 @@
 - [cyglegit/CVE-2025-24813](https://github.com/cyglegit/CVE-2025-24813)
 - [137f/PoC-CVE-2025-24813](https://github.com/137f/PoC-CVE-2025-24813)
 - [thebringerofdeath789/CVE-2025-24813](https://github.com/thebringerofdeath789/CVE-2025-24813)
+- [threadpoolx/CVE-2025-24813-Remote-Code-Execution-in-Apache-Tomcat](https://github.com/threadpoolx/CVE-2025-24813-Remote-Code-Execution-in-Apache-Tomcat)
 
 ### CVE-2025-24893 (2025-02-20)
 
@@ -2909,6 +2918,7 @@
 
 - [W01fh4cker/CVE-2025-30406](https://github.com/W01fh4cker/CVE-2025-30406)
 - [mchklt/CVE-2025-30406](https://github.com/mchklt/CVE-2025-30406)
+- [threadpoolx/CVE-2025-30406-CentreStack-Triofox-Deserialization-RCE](https://github.com/threadpoolx/CVE-2025-30406-CentreStack-Triofox-Deserialization-RCE)
 
 ### CVE-2025-30567 (2025-03-25)
 
@@ -3581,6 +3591,9 @@
 </code>
 
 - [0xBenCantCode/CVE-2025-43929](https://github.com/0xBenCantCode/CVE-2025-43929)
+
+### CVE-2025-43960
+- [far00t01/CVE-2025-43960](https://github.com/far00t01/CVE-2025-43960)
 
 ### CVE-2025-44039 (2025-05-13)
 
@@ -4605,6 +4618,13 @@
 </code>
 
 - [rxerium/CVE-2025-52914](https://github.com/rxerium/CVE-2025-52914)
+
+### CVE-2025-52970 (2025-08-12)
+
+<code>A improper handling of parameters in Fortinet FortiWeb versions 7.6.3 and below, versions 7.4.7 and below, versions 7.2.10 and below, and 7.0.10 and below may allow an unauthenticated remote attacker with non-public information pertaining to the device and targeted user to gain admin privileges on the device via a specially crafted request.
+</code>
+
+- [Hex00-0x4/FortiWeb-CVE-2025-52970-Authentication-Bypass](https://github.com/Hex00-0x4/FortiWeb-CVE-2025-52970-Authentication-Bypass)
 
 ### CVE-2025-53367 (2025-07-03)
 
@@ -6130,6 +6150,7 @@
 - [CirqueiraDev/MassExploit-CVE-2024-4577](https://github.com/CirqueiraDev/MassExploit-CVE-2024-4577)
 - [xAL6/cve-2024-4577-scanner](https://github.com/xAL6/cve-2024-4577-scanner)
 - [Ianthinus/CVE-2024-4577](https://github.com/Ianthinus/CVE-2024-4577)
+- [InfoSec-DB/PHPCGIScanner](https://github.com/InfoSec-DB/PHPCGIScanner)
 
 ### CVE-2024-4701 (2024-05-10)
 
@@ -31844,9 +31865,6 @@
 ### CVE-2021-22
 - [LingerANR/CVE-2021-22-555](https://github.com/LingerANR/CVE-2021-22-555)
 
-### CVE-2021-403
-- [rhysmcneill/CVE-2021-403](https://github.com/rhysmcneill/CVE-2021-403)
-
 ### CVE-2021-521
 - [NagendraPittu/CVE-2021-521-Exploit](https://github.com/NagendraPittu/CVE-2021-521-Exploit)
 
@@ -32962,6 +32980,13 @@
 
 - [s-index/CVE-2021-21341](https://github.com/s-index/CVE-2021-21341)
 - [Mani1325/ka-cve-2021-21341](https://github.com/Mani1325/ka-cve-2021-21341)
+
+### CVE-2021-21345 (2021-03-22)
+
+<code>XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker who has sufficient rights to execute commands of the host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.
+</code>
+
+- [shoucheng3/x-stream__xstream_CVE-2021-21345_1-4-15](https://github.com/shoucheng3/x-stream__xstream_CVE-2021-21345_1-4-15)
 
 ### CVE-2021-21349 (2021-03-22)
 
@@ -42973,6 +42998,7 @@
 - [Al1ex/CVE-2020-26217](https://github.com/Al1ex/CVE-2020-26217)
 - [epicosy/XStream-1](https://github.com/epicosy/XStream-1)
 - [cuijiung/xstream-CVE-2020-26217](https://github.com/cuijiung/xstream-CVE-2020-26217)
+- [shoucheng3/x-stream__xstream_CVE-2020-26217_1-4-14-java7](https://github.com/shoucheng3/x-stream__xstream_CVE-2020-26217_1-4-14-java7)
 
 ### CVE-2020-26233 (2020-12-08)
 
@@ -56124,6 +56150,7 @@
 - [jptr218/proftpd_bypass](https://github.com/jptr218/proftpd_bypass)
 - [JoseLRC97/ProFTPd-1.3.5-mod_copy-Remote-Command-Execution](https://github.com/JoseLRC97/ProFTPd-1.3.5-mod_copy-Remote-Command-Execution)
 - [Z3R0-0x30/CVE-2015-3306](https://github.com/Z3R0-0x30/CVE-2015-3306)
+- [donmedfor/CVE-2015-3306](https://github.com/donmedfor/CVE-2015-3306)
 
 ### CVE-2015-3337 (2015-05-01)
 
@@ -58193,7 +58220,6 @@
 - [blu3ming/CVE-2012-2982](https://github.com/blu3ming/CVE-2012-2982)
 - [0xF331-D3AD/CVE-2012-2982](https://github.com/0xF331-D3AD/CVE-2012-2982)
 - [0xTas/CVE-2012-2982](https://github.com/0xTas/CVE-2012-2982)
-- [LeDucKhiem/CVE-2012-2982](https://github.com/LeDucKhiem/CVE-2012-2982)
 - [CpyRe/CVE-2012-2982](https://github.com/CpyRe/CVE-2012-2982)
 - [Shadow-Spinner/CVE-2012-2982_python](https://github.com/Shadow-Spinner/CVE-2012-2982_python)
 - [elliotosama/CVE-2012-2982](https://github.com/elliotosama/CVE-2012-2982)
