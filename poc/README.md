@@ -876,6 +876,7 @@
 
 - [itsShotgun/chrome_v8_cve_checker](https://github.com/itsShotgun/chrome_v8_cve_checker)
 - [riemannj/CVE-2025-5419](https://github.com/riemannj/CVE-2025-5419)
+- [mistymntncop/CVE-2025-5419](https://github.com/mistymntncop/CVE-2025-5419)
 
 ### CVE-2025-5640 (2025-06-05)
 
@@ -1339,6 +1340,13 @@
 </code>
 
 - [Tiger3080/CVE-2025-9043](https://github.com/Tiger3080/CVE-2025-9043)
+
+### CVE-2025-9074 (2025-08-20)
+
+<code>A vulnerability was identified in Docker Desktop that allows local running Linux containers to access the Docker Engine API via the configured Docker subnet, at 192.168.65.7:2375 by default. This vulnerability occurs with or without Enhanced Container Isolation (ECI) enabled, and with or without the &quot;Expose daemon on tcp://localhost:2375 without TLS&quot; option enabled.\nThis can lead to execution of a wide range of privileged commands to the engine API, including controlling other containers, creating new ones, managing images etc. In some circumstances (e.g. Docker Desktop for Windows with WSL backend) it also allows mounting the host drive with the same privileges as the user running Docker Desktop.
+</code>
+
+- [zenzue/CVE-2025-9074](https://github.com/zenzue/CVE-2025-9074)
 
 ### CVE-2025-9090 (2025-08-17)
 
@@ -3469,6 +3477,7 @@
 </code>
 
 - [0xdevil/CVE-2025-38001](https://github.com/0xdevil/CVE-2025-38001)
+- [khoatran107/cve-2025-38001](https://github.com/khoatran107/cve-2025-38001)
 
 ### CVE-2025-38089 (2025-06-30)
 
@@ -3593,7 +3602,11 @@
 
 - [0xBenCantCode/CVE-2025-43929](https://github.com/0xBenCantCode/CVE-2025-43929)
 
-### CVE-2025-43960
+### CVE-2025-43960 (2025-08-25)
+
+<code>Adminer 4.8.1, when using Monolog for logging, allows a Denial of Service (memory consumption) via a crafted serialized payload (e.g., using s:1000000000), leading to a PHP Object Injection issue. Remote, unauthenticated attackers can trigger this by sending a malicious serialized object, which forces excessive memory usage, rendering Adminer’s interface unresponsive and causing a server-level DoS. While the server may recover after several minutes, multiple simultaneous requests can cause a complete crash requiring manual intervention.
+</code>
+
 - [far00t01/CVE-2025-43960](https://github.com/far00t01/CVE-2025-43960)
 
 ### CVE-2025-44039 (2025-05-13)
@@ -4056,6 +4069,7 @@
 - [testtianmaaaa/CVE-2025-48384](https://github.com/testtianmaaaa/CVE-2025-48384)
 - [replicatorbot/CVE-2025-48384](https://github.com/replicatorbot/CVE-2025-48384)
 - [replicatorbot/CVE-2025-48384-POC](https://github.com/replicatorbot/CVE-2025-48384-POC)
+- [eliox01/CVE-2025-48384](https://github.com/eliox01/CVE-2025-48384)
 
 ### CVE-2025-48461 (2025-06-24)
 
@@ -4282,7 +4296,11 @@
 ### CVE-2025-50365
 - [1h3ll/CVE-2025-50365_CSRF_DELETE_CATEGORY-phpgurukul-CVE](https://github.com/1h3ll/CVE-2025-50365_CSRF_DELETE_CATEGORY-phpgurukul-CVE)
 
-### CVE-2025-50383
+### CVE-2025-50383 (2025-08-25)
+
+<code>alextselegidis Easy!Appointments v1.5.1 was discovered to contain a SQL injection vulnerability via the order_by parameter.
+</code>
+
 - [Abdullah4eb/CVE-2025-50383](https://github.com/Abdullah4eb/CVE-2025-50383)
 
 ### CVE-2025-50420 (2025-08-04)
@@ -4870,7 +4888,11 @@
 
 - [Eternalvalhalla/CVE-2025-55287-POC](https://github.com/Eternalvalhalla/CVE-2025-55287-POC)
 
-### CVE-2025-55575
+### CVE-2025-55575 (2025-08-25)
+
+<code>SQL Injection vulnerability in SMM Panel 3.1 allowing remote attackers to gain sensitive information via a crafted HTTP request with action=service_detail.
+</code>
+
 - [Aether-0/CVE-2025-55575](https://github.com/Aether-0/CVE-2025-55575)
 
 ### CVE-2025-55668 (2025-08-13)
@@ -6049,6 +6071,7 @@
 - [MihranGIT/POC_CVE-2024-4367](https://github.com/MihranGIT/POC_CVE-2024-4367)
 - [MihranGIT/CVE-2024-4367](https://github.com/MihranGIT/CVE-2024-4367)
 - [0xr2r/CVE-2024-4367](https://github.com/0xr2r/CVE-2024-4367)
+- [1337rokudenashi/Odoo_PDFjs_CVE-2024-4367.pdf](https://github.com/1337rokudenashi/Odoo_PDFjs_CVE-2024-4367.pdf)
 
 ### CVE-2024-4406 (2024-05-02)
 
@@ -6153,6 +6176,7 @@
 - [xAL6/cve-2024-4577-scanner](https://github.com/xAL6/cve-2024-4577-scanner)
 - [Ianthinus/CVE-2024-4577](https://github.com/Ianthinus/CVE-2024-4577)
 - [InfoSec-DB/PHPCGIScanner](https://github.com/InfoSec-DB/PHPCGIScanner)
+- [a1ex-var1amov/ctf-cve-2024-4577](https://github.com/a1ex-var1amov/ctf-cve-2024-4577)
 
 ### CVE-2024-4701 (2024-05-10)
 
@@ -16707,6 +16731,7 @@
 </code>
 
 - [erickfernandox/CVE-2023-6275](https://github.com/erickfernandox/CVE-2023-6275)
+- [LelioCosta/FLUIG-Vulnerabilidade-CVE-2023-6275](https://github.com/LelioCosta/FLUIG-Vulnerabilidade-CVE-2023-6275)
 
 ### CVE-2023-6289 (2023-12-18)
 
@@ -17432,6 +17457,7 @@
 - [ldrx30/CVE-2023-21768](https://github.com/ldrx30/CVE-2023-21768)
 - [xboxoneresearch/CVE-2023-21768-dotnet](https://github.com/xboxoneresearch/CVE-2023-21768-dotnet)
 - [IlanDudnik/CVE-2023-21768](https://github.com/IlanDudnik/CVE-2023-21768)
+- [radoi-teodor/CVE-2023-21768](https://github.com/radoi-teodor/CVE-2023-21768)
 
 ### CVE-2023-21823 (2023-02-14)
 
@@ -22579,6 +22605,7 @@
 - [BMG-Black-Magic/CVE-2023-44487](https://github.com/BMG-Black-Magic/CVE-2023-44487)
 - [moften/CVE-2023-44487-HTTP-2-Rapid-Reset-Attack](https://github.com/moften/CVE-2023-44487-HTTP-2-Rapid-Reset-Attack)
 - [zanks08/cve-2023-44487-demo](https://github.com/zanks08/cve-2023-44487-demo)
+- [madhusudhan-in/CVE_2023_44487-Rapid_Reset](https://github.com/madhusudhan-in/CVE_2023_44487-Rapid_Reset)
 
 ### CVE-2023-44758 (2023-10-06)
 
@@ -32331,6 +32358,7 @@
 - [Superliverbun/cve-2021-3156-](https://github.com/Superliverbun/cve-2021-3156-)
 - [TopskiyPavelQwertyGang/Review.CVE-2021-3156](https://github.com/TopskiyPavelQwertyGang/Review.CVE-2021-3156)
 - [Maalfer/Sudo-CVE-2021-3156](https://github.com/Maalfer/Sudo-CVE-2021-3156)
+- [HuzaifaTariqAfzalKhan/CVE-Exploit-Research-Development-ITSOLERA](https://github.com/HuzaifaTariqAfzalKhan/CVE-Exploit-Research-Development-ITSOLERA)
 
 ### CVE-2021-3157
 - [CrackerCat/cve-2021-3157](https://github.com/CrackerCat/cve-2021-3157)
@@ -38038,13 +38066,6 @@
 
 - [nanopathi/external_expat_AOSP10_r33_CVE-2021-45960](https://github.com/nanopathi/external_expat_AOSP10_r33_CVE-2021-45960)
 - [Trinadh465/external_lib_AOSP10_r33_CVE-2021-45960_CVE-2021-46143-](https://github.com/Trinadh465/external_lib_AOSP10_r33_CVE-2021-45960_CVE-2021-46143-)
-
-### CVE-2021-46005 (2022-01-18)
-
-<code>Sourcecodester Car Rental Management System 1.0 is vulnerable to Cross Site Scripting (XSS) via vehicalorcview parameter.
-</code>
-
-- [nawed20002/CVE-2021-46005](https://github.com/nawed20002/CVE-2021-46005)
 
 ### CVE-2021-46063 (2022-02-18)
 
@@ -52453,6 +52474,7 @@
 - [haxerr9/CVE-2017-5638](https://github.com/haxerr9/CVE-2017-5638)
 - [QHxDr-dz/CVE-2017-5638](https://github.com/QHxDr-dz/CVE-2017-5638)
 - [joidiego/Detection-struts-cve-2017-5638-detector](https://github.com/joidiego/Detection-struts-cve-2017-5638-detector)
+- [iampetru/PoC-CVE-2017-5638](https://github.com/iampetru/PoC-CVE-2017-5638)
 
 ### CVE-2017-5645 (2017-04-17)
 
@@ -52973,6 +52995,13 @@
 </code>
 
 - [nghiadt1098/CVE-2017-8465](https://github.com/nghiadt1098/CVE-2017-8465)
+
+### CVE-2017-8481 (2017-06-15)
+
+<code>The kernel in Microsoft Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an authenticated attacker to obtain information via a specially crafted application. aka &quot;Windows Kernel Information Disclosure Vulnerability,&quot; a different vulnerability than CVE-2017-8491, CVE-2017-8490, CVE-2017-8489, CVE-2017-8488, CVE-2017-8485, CVE-2017-8483, CVE-2017-8482, CVE-2017-8480, CVE-2017-8479, CVE-2017-8478, CVE-2017-8476, CVE-2017-8474, CVE-2017-8469, CVE-2017-8462, CVE-2017-0300, CVE-2017-0299, and CVE-2017-0297.
+</code>
+
+- [TamatahYT/CVE-2017-8481](https://github.com/TamatahYT/CVE-2017-8481)
 
 ### CVE-2017-8529 (2017-06-15)
 
