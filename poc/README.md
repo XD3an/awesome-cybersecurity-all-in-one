@@ -1245,6 +1245,8 @@
 - [ghostn4444/CVE-2025-8088](https://github.com/ghostn4444/CVE-2025-8088)
 - [DeepBlue-dot/CVE-2025-8088-WinRAR-Startup-PoC](https://github.com/DeepBlue-dot/CVE-2025-8088-WinRAR-Startup-PoC)
 - [pescada-dev/-CVE-2025-8088](https://github.com/pescada-dev/-CVE-2025-8088)
+- [AdityaBhatt3010/CVE-2025-8088-WinRAR-Zero-Day-Path-Traversal](https://github.com/AdityaBhatt3010/CVE-2025-8088-WinRAR-Zero-Day-Path-Traversal)
+- [pentestfunctions/best-CVE-2025-8088](https://github.com/pentestfunctions/best-CVE-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1921,6 +1923,7 @@
 - [dhiaZnaidi/CVE-2025-24893-PoC](https://github.com/dhiaZnaidi/CVE-2025-24893-PoC)
 - [hackersonsteroids/cve-2025-24893](https://github.com/hackersonsteroids/cve-2025-24893)
 - [Infinit3i/CVE-2025-24893](https://github.com/Infinit3i/CVE-2025-24893)
+- [AzureADTrent/CVE-2025-24893-Reverse-Shell](https://github.com/AzureADTrent/CVE-2025-24893-Reverse-Shell)
 - [gunzf0x/CVE-2025-24893](https://github.com/gunzf0x/CVE-2025-24893)
 - [dollarboysushil/CVE-2025-24893-XWiki-Unauthenticated-RCE-Exploit-POC](https://github.com/dollarboysushil/CVE-2025-24893-XWiki-Unauthenticated-RCE-Exploit-POC)
 - [zs1n/CVE-2025-24893](https://github.com/zs1n/CVE-2025-24893)
@@ -1937,6 +1940,7 @@
 - [CMassa/CVE-2025-24893](https://github.com/CMassa/CVE-2025-24893)
 - [x0da6h/POC-for-CVE-2025-24893](https://github.com/x0da6h/POC-for-CVE-2025-24893)
 - [ibadovulfat/CVE-2025-24893_HackTheBox-Editor-Writeup](https://github.com/ibadovulfat/CVE-2025-24893_HackTheBox-Editor-Writeup)
+- [torjan0/xwiki_solrsearch-rce-exploit](https://github.com/torjan0/xwiki_solrsearch-rce-exploit)
 
 ### CVE-2025-24963 (2025-02-04)
 
@@ -2289,7 +2293,11 @@
 
 - [azurejoga/CVE-2025-26326](https://github.com/azurejoga/CVE-2025-26326)
 
-### CVE-2025-26417
+### CVE-2025-26417 (2025-08-26)
+
+<code>In checkWhetherCallingAppHasAccess of DownloadProvider.java, there is a possible bypass of user consent when opening files in shared storage due to a confused deputy. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.
+</code>
+
 - [uthrasri/CVE-2025-26417](https://github.com/uthrasri/CVE-2025-26417)
 
 ### CVE-2025-26443
@@ -3496,6 +3504,13 @@
 
 - [keymaker-arch/NFSundown](https://github.com/keymaker-arch/NFSundown)
 
+### CVE-2025-38676 (2025-08-26)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\niommu/amd: Avoid stack buffer overflow from kernel cmdline\n\nWhile the kernel command line is considered trusted in most environments,\navoid writing 1 byte past the end of &quot;acpiid&quot; if the &quot;str&quot; argument is\nmaximum length.
+</code>
+
+- [14mb1v45h/CVE-2025-38676](https://github.com/14mb1v45h/CVE-2025-38676)
+
 ### CVE-2025-39436 (2025-04-17)
 
 <code>Unrestricted Upload of File with Dangerous Type vulnerability in aidraw I Draw allows Using Malicious Files. This issue affects I Draw: from n/a through 1.0.
@@ -4079,8 +4094,8 @@
 - [replicatorbot/CVE-2025-48384](https://github.com/replicatorbot/CVE-2025-48384)
 - [replicatorbot/CVE-2025-48384-POC](https://github.com/replicatorbot/CVE-2025-48384-POC)
 - [eliox01/CVE-2025-48384](https://github.com/eliox01/CVE-2025-48384)
-- [sahar042/CVE-2025-48384-submodule](https://github.com/sahar042/CVE-2025-48384-submodule)
-- [sahar042/CVE-2025-48384](https://github.com/sahar042/CVE-2025-48384)
+- [wzx5002/CVE-2025-48384](https://github.com/wzx5002/CVE-2025-48384)
+- [wzx5002/totallynotsuspicious](https://github.com/wzx5002/totallynotsuspicious)
 
 ### CVE-2025-48461 (2025-06-24)
 
@@ -4787,6 +4802,7 @@
 </code>
 
 - [issamjr/CVE-2025-54309-EXPLOIT](https://github.com/issamjr/CVE-2025-54309-EXPLOIT)
+- [watchtowrlabs/watchTowr-vs-CrushFTP-Authentication-Bypass-CVE-2025-54309](https://github.com/watchtowrlabs/watchTowr-vs-CrushFTP-Authentication-Bypass-CVE-2025-54309)
 
 ### CVE-2025-54313 (2025-07-19)
 
@@ -17271,7 +17287,11 @@
 - [Trinadh465/frameworks_native_AOSP-10_r33_CVE-2023-21118](https://github.com/Trinadh465/frameworks_native_AOSP-10_r33_CVE-2023-21118)
 - [Satheesh575555/frameworks_native_AOSP10_r33_CVE-2023-21118](https://github.com/Satheesh575555/frameworks_native_AOSP10_r33_CVE-2023-21118)
 
-### CVE-2023-21125
+### CVE-2023-21125 (2025-08-26)
+
+<code>In btif_hh_hsdata_rpt_copy_cb of bta_hh.cc, there is a possible way to corrupt memory due to a use after free. This could lead to local escalation of privilege over Bluetooth with no additional execution privileges needed. User interaction is not needed for exploitation.
+</code>
+
 - [761669642/Mahesh-970-CVE-2023-21125_bluedriod_repo](https://github.com/761669642/Mahesh-970-CVE-2023-21125_bluedriod_repo)
 
 ### CVE-2023-21173 (2023-06-28)
@@ -22829,6 +22849,13 @@
 </code>
 
 - [ally-petitt/CVE-2023-45503](https://github.com/ally-petitt/CVE-2023-45503)
+
+### CVE-2023-45539 (2023-11-28)
+
+<code>HAProxy before 2.8.2 accepts # as part of the URI component, which might allow remote attackers to obtain sensitive information or have unspecified other impact upon misinterpretation of a path_end rule, such as routing index.html#.png to a static server.
+</code>
+
+- [slicingmelon/HAProxy-CVE-2023-45539-PoC](https://github.com/slicingmelon/HAProxy-CVE-2023-45539-PoC)
 
 ### CVE-2023-45540 (2023-10-16)
 
