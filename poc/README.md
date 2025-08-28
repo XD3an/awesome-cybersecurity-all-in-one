@@ -366,7 +366,7 @@
 
 ### CVE-2025-2594 (2025-04-22)
 
-<code>The User Registration &amp; Membership  WordPress plugin before 4.1.3 does not properly validate data in an AJAX action when the Membership Addon is enabled, allowing attackers to authenticate as any user, including administrators, by simply using the target account's user ID.
+<code>The User Registration &amp; Membership WordPress plugin before 4.1.3 does not properly validate data in an AJAX action when the Membership Addon is enabled, allowing attackers to authenticate as any user, including administrators, by simply using the target account's user ID.
 </code>
 
 - [ubaydev/CVE-2025-2594](https://github.com/ubaydev/CVE-2025-2594)
@@ -1107,6 +1107,7 @@
 - [Nxploited/CVE-2025-6934](https://github.com/Nxploited/CVE-2025-6934)
 - [MrjHaxcore/CVE-2025-6934](https://github.com/MrjHaxcore/CVE-2025-6934)
 - [0xgh057r3c0n/CVE-2025-6934](https://github.com/0xgh057r3c0n/CVE-2025-6934)
+- [yukinime/CVE-2025-6934](https://github.com/yukinime/CVE-2025-6934)
 
 ### CVE-2025-6970 (2025-07-09)
 
@@ -1247,6 +1248,9 @@
 - [pescada-dev/-CVE-2025-8088](https://github.com/pescada-dev/-CVE-2025-8088)
 - [AdityaBhatt3010/CVE-2025-8088-WinRAR-Zero-Day-Path-Traversal](https://github.com/AdityaBhatt3010/CVE-2025-8088-WinRAR-Zero-Day-Path-Traversal)
 - [pentestfunctions/best-CVE-2025-8088](https://github.com/pentestfunctions/best-CVE-2025-8088)
+- [nyra-workspace/CVE-2025-8088](https://github.com/nyra-workspace/CVE-2025-8088)
+- [kitsuneshade/WinRAR-Exploit-Tool---Rust-Edition](https://github.com/kitsuneshade/WinRAR-Exploit-Tool---Rust-Edition)
+- [walidpyh/CVE-2025-8088](https://github.com/walidpyh/CVE-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1268,13 +1272,6 @@
 </code>
 
 - [m3m0o/engeman-web-language-combobox-sqli](https://github.com/m3m0o/engeman-web-language-combobox-sqli)
-
-### CVE-2025-8418 (2025-08-12)
-
-<code>The B Slider- Gutenberg Slider Block for WP plugin for WordPress is vulnerable to Arbitrary Plugin Installation in all versions up to, and including, 1.1.30. This is due to missing capability checks on the activated_plugin function. This makes it possible for authenticated attackers, with subscriber-level access and above, to install arbitrary plugins on the server which can make remote code execution possible.
-</code>
-
-- [LitBot123/CVE.py](https://github.com/LitBot123/CVE.py)
 
 ### CVE-2025-8471 (2025-08-02)
 
@@ -1336,13 +1333,6 @@
 </code>
 
 - [byteReaper77/CVE-2025-8971](https://github.com/byteReaper77/CVE-2025-8971)
-
-### CVE-2025-9043 (2025-08-14)
-
-<code>The service executable path in Seagate Toolkit on Versions prior to 2.34.0.33 on Windows allows an attacker with Admin privileges to exploit a vulnerability as classified under CWE-428: Unquoted Search Path or Element. An attacker with write permissions to the root could place a malicious Program.exe file, which would execute with SYSTEM privileges.
-</code>
-
-- [Tiger3080/CVE-2025-9043](https://github.com/Tiger3080/CVE-2025-9043)
 
 ### CVE-2025-9074 (2025-08-20)
 
@@ -2400,6 +2390,7 @@
 
 - [zhuowei/CVE-2025-27363-proof-of-concept](https://github.com/zhuowei/CVE-2025-27363-proof-of-concept)
 - [ov3rf1ow/CVE-2025-27363](https://github.com/ov3rf1ow/CVE-2025-27363)
+- [tin-z/CVE-2025-27363](https://github.com/tin-z/CVE-2025-27363)
 
 ### CVE-2025-27415 (2025-03-19)
 
@@ -3256,6 +3247,7 @@
 - [B1ack4sh/Blackash-CVE-2025-32433](https://github.com/B1ack4sh/Blackash-CVE-2025-32433)
 - [Yuri08loveElaina/CVE-2025-32433-Erlang-OTP-SSH-Pre-Auth-RCE-exploit](https://github.com/Yuri08loveElaina/CVE-2025-32433-Erlang-OTP-SSH-Pre-Auth-RCE-exploit)
 - [NiteeshPujari/CVE-2025-32433-PoC](https://github.com/NiteeshPujari/CVE-2025-32433-PoC)
+- [te0rwx/CVE-2025-32433-Detection](https://github.com/te0rwx/CVE-2025-32433-Detection)
 
 ### CVE-2025-32462 (2025-06-30)
 
@@ -3325,6 +3317,8 @@
 - [aldoClau98/CVE-2025-32463](https://github.com/aldoClau98/CVE-2025-32463)
 - [painoob/CVE-2025-32463](https://github.com/painoob/CVE-2025-32463)
 - [Nowafen/CVE-2025-32463](https://github.com/Nowafen/CVE-2025-32463)
+- [Yuy0ung/CVE-2025-32463_chwoot](https://github.com/Yuy0ung/CVE-2025-32463_chwoot)
+- [hacieda/CVE-2025-32463](https://github.com/hacieda/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -3473,6 +3467,27 @@
 </code>
 
 - [Chocapikk/CVE-2025-34152](https://github.com/Chocapikk/CVE-2025-34152)
+
+### CVE-2025-34157 (2025-08-27)
+
+<code>Coolify versions prior to v4.0.0-beta.420.6 are vulnerable to a stored cross-site scripting (XSS) attack in the project creation workflow. An authenticated user with low privileges can create a project with a maliciously crafted name containing embedded JavaScript. When an administrator attempts to delete the project or its associated resource, the payload executes in the admin’s browser context. This results in full compromise of the Coolify instance, including theft of API tokens, session cookies, and access to WebSocket-based terminal sessions on managed servers.
+</code>
+
+- [Eyodav/CVE-2025-34157](https://github.com/Eyodav/CVE-2025-34157)
+
+### CVE-2025-34159 (2025-08-27)
+
+<code>Coolify versions prior to v4.0.0-beta.420.6 are vulnerable to a remote code execution vulnerability in the application deployment workflow. The platform allows authenticated users, with low-level member privileges, to inject arbitrary Docker Compose directives during project creation. By crafting a malicious service definition that mounts the host root filesystem, an attacker can gain full root access to the underlying server.
+</code>
+
+- [Eyodav/CVE-2025-34159](https://github.com/Eyodav/CVE-2025-34159)
+
+### CVE-2025-34161 (2025-08-27)
+
+<code>Coolify versions prior to v4.0.0-beta.420.7 are vulnerable to a remote code execution vulnerability in the project deployment workflow. The platform allows authenticated users, with low-level member privileges, to inject arbitrary shell commands via the Git Repository field during project creation. By submitting a crafted repository string containing command injection syntax, an attacker can execute arbitrary commands on the underlying host system, resulting in full server compromise.
+</code>
+
+- [Eyodav/CVE-2025-34161](https://github.com/Eyodav/CVE-2025-34161)
 
 ### CVE-2025-36041 (2025-06-15)
 
@@ -4343,7 +4358,11 @@
 
 - [Landw-hub/CVE-2025-50422](https://github.com/Landw-hub/CVE-2025-50422)
 
-### CVE-2025-50428
+### CVE-2025-50428 (2025-08-27)
+
+<code>In RaspAP raspap-webgui 3.3.2 and earlier, a command injection vulnerability exists in the includes/hostapd.php script. The vulnerability is due to improper sanitizing of user input passed via the interface parameter.
+</code>
+
 - [security-smarttecs/cve-2025-50428](https://github.com/security-smarttecs/cve-2025-50428)
 
 ### CVE-2025-50460 (2025-08-01)
@@ -4599,7 +4618,11 @@
 ### CVE-2025-52097
 - [rwilsonecs/CVE-2025-52097](https://github.com/rwilsonecs/CVE-2025-52097)
 
-### CVE-2025-52122
+### CVE-2025-52122 (2025-08-27)
+
+<code>Freeform 5.0.0 to before 5.10.16, a plugin for CraftCMS, contains an Server-side template injection (SSTI) vulnerability, resulting in arbitrary code injection for all users that have access to editing a form (submission title).
+</code>
+
 - [TimTrademark/CVE-2025-52122](https://github.com/TimTrademark/CVE-2025-52122)
 
 ### CVE-2025-52216
@@ -4757,13 +4780,6 @@
 </code>
 
 - [B1ack4sh/Blackash-CVE-2025-53773](https://github.com/B1ack4sh/Blackash-CVE-2025-53773)
-
-### CVE-2025-53786 (2025-08-06)
-
-<code>On April 18th 2025, Microsoft announced Exchange Server Security Changes for Hybrid Deployments and accompanying non-security Hot Fix. Microsoft made these changes in the general interest of improving the security of hybrid Exchange deployments. Following further investigation, Microsoft identified specific security implications tied to the guidance and configuration steps outlined in the April announcement. Microsoft is issuing CVE-2025-53786 to document a vulnerability that is addressed by taking the steps documented with the April 18th announcement. Microsoft strongly recommends reading the information, installing the April 2025 (or later) Hot Fix and implementing the changes in your Exchange Server and hybrid environment.
-</code>
-
-- [vincentdthe/CVE-2025-53786](https://github.com/vincentdthe/CVE-2025-53786)
 
 ### CVE-2025-53833 (2025-07-14)
 
@@ -6307,6 +6323,13 @@
 
 - [sinsinology/CVE-2024-5009](https://github.com/sinsinology/CVE-2024-5009)
 - [th3gokul/CVE-2024-5009](https://github.com/th3gokul/CVE-2024-5009)
+
+### CVE-2024-5083 (2024-11-14)
+
+<code>A stored Cross-site Scripting vulnerability has been discovered in Sonatype Nexus Repository 2\n\nThis issue affects Nexus Repository 2 OSS/Pro versions up to and including 2.15.1.
+</code>
+
+- [Roronoawjd/CVE-2024-5083](https://github.com/Roronoawjd/CVE-2024-5083)
 
 ### CVE-2024-5084 (2024-05-23)
 
@@ -16067,6 +16090,13 @@
 - [Chocapikk/CVE-2023-3519](https://github.com/Chocapikk/CVE-2023-3519)
 - [JonaNeidhart/CVE-2023-3519-BackdoorCheck](https://github.com/JonaNeidhart/CVE-2023-3519-BackdoorCheck)
 - [Mohammaddvd/CVE-2023-3519](https://github.com/Mohammaddvd/CVE-2023-3519)
+
+### CVE-2023-3609 (2023-07-21)
+
+<code>A use-after-free vulnerability in the Linux kernel's net/sched: cls_u32 component can be exploited to achieve local privilege escalation.\n\nIf tcf_change_indev() fails, u32_set_parms() will immediately return an error after incrementing or decrementing the reference counter in tcf_bind_filter(). If an attacker can control the reference counter and set it to zero, they can cause the reference to be freed, leading to a use-after-free vulnerability.\n\nWe recommend upgrading past commit 04c55383fa5689357bcdd2c8036725a55ed632bc.
+</code>
+
+- [Jturnxd/CVE-2023-3609](https://github.com/Jturnxd/CVE-2023-3609)
 
 ### CVE-2023-3640 (2023-07-24)
 
@@ -51454,6 +51484,13 @@
 - [nanabingies/Driver-RW](https://github.com/nanabingies/Driver-RW)
 - [nanabingies/CVE-2018-19321](https://github.com/nanabingies/CVE-2018-19321)
 
+### CVE-2018-19323 (2018-12-21)
+
+<code>The GDrv low-level driver in GIGABYTE APP Center v1.05.21 and earlier, AORUS GRAPHICS ENGINE before 1.57, XTREME GAMING ENGINE before 1.26, and OC GURU II v2.08 exposes functionality to read and write Machine Specific Registers (MSRs).
+</code>
+
+- [blueisbeautiful/CVE-2018-19323](https://github.com/blueisbeautiful/CVE-2018-19323)
+
 ### CVE-2018-19410 (2018-11-21)
 
 <code>PRTG Network Monitor before 18.2.40.1683 allows remote unauthenticated attackers to create users with read-write privileges (including administrator). A remote unauthenticated user can craft an HTTP request and override attributes of the 'include' directive in /public/login.htm and perform a Local File Inclusion attack, by including /api/addusers and executing it. By providing the 'id' and 'users' parameters, an unauthenticated attacker can create a user with read-write privileges (including administrator).
@@ -55314,7 +55351,6 @@
 - [boompig/cve-2016-6662](https://github.com/boompig/cve-2016-6662)
 - [MAYASEVEN/CVE-2016-6662](https://github.com/MAYASEVEN/CVE-2016-6662)
 - [LSQUARE14/SQL_to_RCE_Lab](https://github.com/LSQUARE14/SQL_to_RCE_Lab)
-- [kanyaars/CVE-2016-6662](https://github.com/kanyaars/CVE-2016-6662)
 
 ### CVE-2016-6663 (2016-12-13)
 
@@ -59304,6 +59340,7 @@
 - [elphon/CVE-2007-2447-Exploit](https://github.com/elphon/CVE-2007-2447-Exploit)
 - [DevinLiggins14/SMB-PenTest-Exploiting-CVE-2007-2447-on-Metasploitable-2](https://github.com/DevinLiggins14/SMB-PenTest-Exploiting-CVE-2007-2447-on-Metasploitable-2)
 - [MrRoma577/exploit_cve-2007-2447_again](https://github.com/MrRoma577/exploit_cve-2007-2447_again)
+- [nika0x38/CVE-2007-2447](https://github.com/nika0x38/CVE-2007-2447)
 
 ### CVE-2007-3280 (2007-06-19)
 
