@@ -373,6 +373,13 @@
 ### CVE-2025-2404
 - [sahici/CVE-2025-2404](https://github.com/sahici/CVE-2025-2404)
 
+### CVE-2025-2502 (2025-05-30)
+
+<code>An improper default permissions vulnerability was reported in Lenovo PC Manager that could allow a local attacker to elevate privileges.
+</code>
+
+- [IHK-ONE/CVE-2025-2502](https://github.com/IHK-ONE/CVE-2025-2502)
+
 ### CVE-2025-2539 (2025-03-20)
 
 <code>The File Away plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the ajax() function in all versions up to, and including, 3.9.9.0.1. This makes it possible for unauthenticated attackers, leveraging the use of a reversible weak algorithm,  to read the contents of arbitrary files on the server, which can contain sensitive information.
@@ -2076,6 +2083,7 @@
 - [ibadovulfat/CVE-2025-24893_HackTheBox-Editor-Writeup](https://github.com/ibadovulfat/CVE-2025-24893_HackTheBox-Editor-Writeup)
 - [torjan0/xwiki_solrsearch-rce-exploit](https://github.com/torjan0/xwiki_solrsearch-rce-exploit)
 - [b0ySie7e/CVE-2025-24893](https://github.com/b0ySie7e/CVE-2025-24893)
+- [andwati/CVE-2025-24893](https://github.com/andwati/CVE-2025-24893)
 
 ### CVE-2025-24963 (2025-02-04)
 
@@ -2933,7 +2941,6 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [AventurineJ/CVE-2025-29927-Research](https://github.com/AventurineJ/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -3487,6 +3494,7 @@
 - [Nowafen/CVE-2025-32463](https://github.com/Nowafen/CVE-2025-32463)
 - [Yuy0ung/CVE-2025-32463_chwoot](https://github.com/Yuy0ung/CVE-2025-32463_chwoot)
 - [hacieda/CVE-2025-32463](https://github.com/hacieda/CVE-2025-32463)
+- [blackcat4347/CVE-2025-32463_PoC](https://github.com/blackcat4347/CVE-2025-32463_PoC)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -4456,6 +4464,13 @@
 
 - [louay-075/CVE-2025-49223-BillboardJS-PoC](https://github.com/louay-075/CVE-2025-49223-BillboardJS-PoC)
 
+### CVE-2025-49388 (2025-08-28)
+
+<code>Incorrect Privilege Assignment vulnerability in kamleshyadav Miraculous Core Plugin allows Privilege Escalation. This issue affects Miraculous Core Plugin: from n/a through 2.0.7.
+</code>
+
+- [Nxploited/CVE-2025-49388](https://github.com/Nxploited/CVE-2025-49388)
+
 ### CVE-2025-49493 (2025-06-30)
 
 <code>Akamai CloudTest before 60 2025.06.02 (12988) allows file inclusion via XML External Entity (XXE) injection.
@@ -4967,6 +4982,7 @@
 </code>
 
 - [rxerium/CVE-2025-53690](https://github.com/rxerium/CVE-2025-53690)
+- [B1ack4sh/Blackash-CVE-2025-53690](https://github.com/B1ack4sh/Blackash-CVE-2025-53690)
 
 ### CVE-2025-53691 (2025-09-03)
 
@@ -5305,6 +5321,13 @@
 
 ### CVE-2025-58440
 - [ph-hitachi/CVE-2025-58440](https://github.com/ph-hitachi/CVE-2025-58440)
+
+### CVE-2025-58780 (2025-09-05)
+
+<code>index.em7 in ScienceLogic SL1 before 12.1.1 allows SQL Injection via a parameter in a request.
+</code>
+
+- [SexyShoelessGodofWar/CVE-2025-58780](https://github.com/SexyShoelessGodofWar/CVE-2025-58780)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -6467,7 +6490,7 @@
 - [m0d0ri205/PDFJS](https://github.com/m0d0ri205/PDFJS)
 - [pedrochalegre7/CVE-2024-4367-pdf-sample](https://github.com/pedrochalegre7/CVE-2024-4367-pdf-sample)
 - [exfil0/WEAPONIZING-CVE-2024-4367](https://github.com/exfil0/WEAPONIZING-CVE-2024-4367)
-- [ahmad-kabiri/CVE-2024-4367-PoC](https://github.com/ahmad-kabiri/CVE-2024-4367-PoC)
+- [kabiri-labs/CVE-2024-4367-PoC](https://github.com/kabiri-labs/CVE-2024-4367-PoC)
 - [elamani-drawing/CVE-2024-4367-POC-PDFJS](https://github.com/elamani-drawing/CVE-2024-4367-POC-PDFJS)
 - [VVeakee/CVE-2024-4367](https://github.com/VVeakee/CVE-2024-4367)
 - [BektiHandoyo/cve-pdf-host](https://github.com/BektiHandoyo/cve-pdf-host)
@@ -9120,6 +9143,13 @@
 </code>
 
 - [zunak/CVE-2024-22641](https://github.com/zunak/CVE-2024-22641)
+
+### CVE-2024-22722 (2024-04-11)
+
+<code>Server Side Template Injection (SSTI) vulnerability in Form Tools 3.1.1 allows attackers to run arbitrary commands via the Group Name field under the add forms section of the application.
+</code>
+
+- [terribledactyl/Form-Tools-3.1.1-RCE](https://github.com/terribledactyl/Form-Tools-3.1.1-RCE)
 
 ### CVE-2024-22734 (2024-04-12)
 
@@ -12581,7 +12611,7 @@
 <code>GraphQL Java (aka graphql-java) before 21.5 does not properly consider ExecutableNormalizedFields (ENFs) as part of preventing denial of service via introspection queries. 20.9 and 19.11 are also fixed versions.
 </code>
 
-- [ahmad-kabiri/CVE-2024-40094](https://github.com/ahmad-kabiri/CVE-2024-40094)
+- [kabiri-labs/CVE-2024-40094](https://github.com/kabiri-labs/CVE-2024-40094)
 
 ### CVE-2024-40110 (2024-07-12)
 
@@ -25499,6 +25529,13 @@
 - [CsEnox/CVE-2022-2992](https://github.com/CsEnox/CVE-2022-2992)
 - [Malwareman007/CVE-2022-2992](https://github.com/Malwareman007/CVE-2022-2992)
 
+### CVE-2022-3141 (2022-09-19)
+
+<code>The Translate Multilingual sites WordPress plugin before 2.3.3 is vulnerable to an authenticated SQL injection. By adding a new language (via the settings page) containing specific special characters, the backticks in the SQL query can be surpassed and a time-based blind payload can be injected.
+</code>
+
+- [Tomoe-12/CVE_2022_3141](https://github.com/Tomoe-12/CVE_2022_3141)
+
 ### CVE-2022-3168
 - [irsl/CVE-2022-3168-adb-unexpected-reverse-forwards](https://github.com/irsl/CVE-2022-3168-adb-unexpected-reverse-forwards)
 
@@ -27447,7 +27484,7 @@
 <code>A vulnerability in the component process.php of QR Code Generator v5.2.7 allows attackers to perform directory traversal.
 </code>
 
-- [n0lsecurity/CVE-2022-24992](https://github.com/n0lsecurity/CVE-2022-24992)
+- [n0lsec1337/CVE-2022-24992](https://github.com/n0lsec1337/CVE-2022-24992)
 
 ### CVE-2022-24999 (2022-11-26)
 
@@ -27924,7 +27961,6 @@
 </code>
 
 - [scopion/CVE-2022-26629](https://github.com/scopion/CVE-2022-26629)
-- [sysenter-eip/CVE-2022-26629](https://github.com/sysenter-eip/CVE-2022-26629)
 
 ### CVE-2022-26671 (2022-04-07)
 
@@ -30350,7 +30386,6 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [AventurineJ/CVE-2022-39299-Research](https://github.com/AventurineJ/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -37148,6 +37183,7 @@
 - [dream434/cve-2021-42013-apache](https://github.com/dream434/cve-2021-42013-apache)
 - [bananoname/cve-2021-42013](https://github.com/bananoname/cve-2021-42013)
 - [asepsaepdin/CVE-2021-42013](https://github.com/asepsaepdin/CVE-2021-42013)
+- [Makavellik/POC-CVE-2021-42013-EXPLOIT](https://github.com/Makavellik/POC-CVE-2021-42013-EXPLOIT)
 
 ### CVE-2021-42056 (2022-06-24)
 
@@ -38481,13 +38517,6 @@
 - [nanopathi/external_expat_AOSP10_r33_CVE-2021-45960](https://github.com/nanopathi/external_expat_AOSP10_r33_CVE-2021-45960)
 - [Trinadh465/external_lib_AOSP10_r33_CVE-2021-45960_CVE-2021-46143-](https://github.com/Trinadh465/external_lib_AOSP10_r33_CVE-2021-45960_CVE-2021-46143-)
 
-### CVE-2021-46005 (2022-01-18)
-
-<code>Sourcecodester Car Rental Management System 1.0 is vulnerable to Cross Site Scripting (XSS) via vehicalorcview parameter.
-</code>
-
-- [nawed20002/CVE-2021-46005](https://github.com/nawed20002/CVE-2021-46005)
-
 ### CVE-2021-46067 (2022-01-06)
 
 <code>In Vehicle Service Management System 1.0 an attacker can steal the cookies leading to Full Account Takeover.
@@ -38764,7 +38793,7 @@
 - [0xf15h/mtk_su](https://github.com/0xf15h/mtk_su)
 
 ### CVE-2020-00796
-- [Kaizzzo1/cve-2020-00796](https://github.com/Kaizzzo1/cve-2020-00796)
+- [bsec404/cve-2020-00796](https://github.com/bsec404/cve-2020-00796)
 
 ### CVE-2020-0082 (2020-04-17)
 
@@ -39400,7 +39429,7 @@
 - [hungdnvp/POC-CVE-2020-0796](https://github.com/hungdnvp/POC-CVE-2020-0796)
 - [AdamSonov/smbGhostCVE-2020-0796](https://github.com/AdamSonov/smbGhostCVE-2020-0796)
 - [z3ena/Exploiting-and-Mitigating-CVE-2020-0796-SMBGhost-and-Print-Spooler-Vulnerabilities](https://github.com/z3ena/Exploiting-and-Mitigating-CVE-2020-0796-SMBGhost-and-Print-Spooler-Vulnerabilities)
-- [Kaizzzo1/CVE-2020-0796](https://github.com/Kaizzzo1/CVE-2020-0796)
+- [bsec404/CVE-2020-0796](https://github.com/bsec404/CVE-2020-0796)
 - [monjheta/CVE-2020-0796](https://github.com/monjheta/CVE-2020-0796)
 - [cybermads/CVE-2020-0796](https://github.com/cybermads/CVE-2020-0796)
 - [DannyRavi/nmap-scripts](https://github.com/DannyRavi/nmap-scripts)
