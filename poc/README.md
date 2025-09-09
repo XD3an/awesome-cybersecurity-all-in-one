@@ -1169,6 +1169,7 @@
 - [0xgh057r3c0n/CVE-2025-6934](https://github.com/0xgh057r3c0n/CVE-2025-6934)
 - [yukinime/CVE-2025-6934](https://github.com/yukinime/CVE-2025-6934)
 - [Pwdnx1337/CVE-2025-6934](https://github.com/Pwdnx1337/CVE-2025-6934)
+- [Rosemary1337/CVE-2025-6934](https://github.com/Rosemary1337/CVE-2025-6934)
 
 ### CVE-2025-6970 (2025-07-09)
 
@@ -1459,13 +1460,6 @@
 
 - [Kamgreen50/STIG-Edge-RCE-CVE2025-9478](https://github.com/Kamgreen50/STIG-Edge-RCE-CVE2025-9478)
 
-### CVE-2025-9491 (2025-08-26)
-
-<code>Microsoft Windows LNK File UI Misrepresentation Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Microsoft Windows. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of .LNK files. Crafted data in an .LNK file can cause hazardous content in the file to be invisible to a user who inspects the file via the Windows-provided user interface. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-25373.
-</code>
-
-- [barbaraeivyu/CVE-2025-9491](https://github.com/barbaraeivyu/CVE-2025-9491)
-
 ### CVE-2025-9728 (2025-08-31)
 
 <code>Es wurde eine Schwachstelle in givanz Vvveb 1.0.7.2 entdeckt. Betroffen ist eine unbekannte Funktion der Datei app/template/user/login.tpl. Durch die Manipulation des Arguments Email/Password mit unbekannten Daten kann eine cross site scripting-Schwachstelle ausgenutzt werden. Ein Angriff ist aus der Distanz möglich. Der Patch trägt den Namen bbd4c42c66ab818142240348173a669d1d2537fe. Es wird geraten, einen Patch zu installieren, um dieses Problem zu lösen.
@@ -1559,6 +1553,7 @@
 - [MrAle98/CVE-2025-21333-POC](https://github.com/MrAle98/CVE-2025-21333-POC)
 - [aleongx/KQL_sentinel_CVE-2025-21333](https://github.com/aleongx/KQL_sentinel_CVE-2025-21333)
 - [B1ack4sh/Blackash-CVE-2025-21333](https://github.com/B1ack4sh/Blackash-CVE-2025-21333)
+- [pradip022/CVE-2025-21333-POC](https://github.com/pradip022/CVE-2025-21333-POC)
 
 ### CVE-2025-21385 (2025-01-09)
 
@@ -2001,6 +1996,7 @@
 - [nak000/CVE-2025-24799-sqli](https://github.com/nak000/CVE-2025-24799-sqli)
 - [MatheuZSecurity/Exploit-CVE-2025-24799](https://github.com/MatheuZSecurity/Exploit-CVE-2025-24799)
 - [galletitaconpate/CVE-2025-24799](https://github.com/galletitaconpate/CVE-2025-24799)
+- [Rosemary1337/CVE-2025-24799](https://github.com/Rosemary1337/CVE-2025-24799)
 
 ### CVE-2025-24801 (2025-03-18)
 
@@ -2062,6 +2058,7 @@
 - [threadpoolx/CVE-2025-24813-Remote-Code-Execution-in-Apache-Tomcat](https://github.com/threadpoolx/CVE-2025-24813-Remote-Code-Execution-in-Apache-Tomcat)
 - [drcrypterdotru/Apache-GOExploiter](https://github.com/drcrypterdotru/Apache-GOExploiter)
 - [CEAlbez/CVE-2025-24813-PoC](https://github.com/CEAlbez/CVE-2025-24813-PoC)
+- [Makavellik/POC-CVE-2025-24813-Apache-Tomcat-Remote-Code-Execution](https://github.com/Makavellik/POC-CVE-2025-24813-Apache-Tomcat-Remote-Code-Execution)
 
 ### CVE-2025-24893 (2025-02-20)
 
@@ -3075,6 +3072,7 @@
 - [ThemeHackers/CVE-2025-30208](https://github.com/ThemeHackers/CVE-2025-30208)
 - [TH-SecForge/CVE-2025-30208](https://github.com/TH-SecForge/CVE-2025-30208)
 - [gonn4cry/CVE-2025-30208](https://github.com/gonn4cry/CVE-2025-30208)
+- [Dany60-98/CVE-2025-30208-EXP](https://github.com/Dany60-98/CVE-2025-30208-EXP)
 
 ### CVE-2025-30216 (2025-03-25)
 
@@ -3801,6 +3799,13 @@
 
 - [GreenForceNetworks/CVE-2025-41646---Critical-Authentication-Bypass-](https://github.com/GreenForceNetworks/CVE-2025-41646---Critical-Authentication-Bypass-)
 - [r0otk3r/CVE-2025-41646](https://github.com/r0otk3r/CVE-2025-41646)
+
+### CVE-2025-42957 (2025-08-12)
+
+<code>SAP S/4HANA allows an attacker with user privileges to exploit a vulnerability in the function module exposed via RFC. This flaw enables the injection of arbitrary ABAP code into the system, bypassing essential authorization checks. This vulnerability effectively functions as a backdoor, creating the risk of full system compromise, undermining the confidentiality, integrity and availability of the system.
+</code>
+
+- [callinston/CVE-2025-42957](https://github.com/callinston/CVE-2025-42957)
 
 ### CVE-2025-43300 (2025-08-21)
 
@@ -4905,7 +4910,11 @@
 
 - [Kov404/CVE-2025-52385](https://github.com/Kov404/CVE-2025-52385)
 
-### CVE-2025-52389
+### CVE-2025-52389 (2025-09-08)
+
+<code>An Insecure Direct Object Reference (IDOR) in Envasadora H2O Eireli - Soda Cristal v40.20.4 allows authenticated attackers to access sensitive data for other users via a crafted HTTP request.
+</code>
+
 - [milamrk/CVE-2025-52389](https://github.com/milamrk/CVE-2025-52389)
 - [ktr4ck3r/CVE-2025-52389](https://github.com/ktr4ck3r/CVE-2025-52389)
 
@@ -5294,7 +5303,11 @@
 
 - [krispybyte/CVE-2025-55763](https://github.com/krispybyte/CVE-2025-55763)
 
-### CVE-2025-55998
+### CVE-2025-55998 (2025-09-08)
+
+<code>A cross-site scripting (XSS) vulnerability in Smart Search &amp; Filter Shopify App 1.0 allows a remote attacker to execute arbitrary JavaScript in the web browser of a user, by including a malicious payload into the color filter parameter.
+</code>
+
 - [Ocmenog/CVE-2025-55998](https://github.com/Ocmenog/CVE-2025-55998)
 
 ### CVE-2025-56435 (2025-09-03)
@@ -5313,10 +5326,13 @@
 
 ### CVE-2025-56803 (2025-09-03)
 
-<code>Figma Desktop for Windows version 125.6.5 contains a command injection vulnerability in the local plugin loader. An attacker can execute arbitrary OS commands by setting a crafted build field in the plugin's manifest.json. This field is passed to child_process.exec without validation, leading to possible RCE.
+<code>Figma Desktop for Windows version 125.6.5 contains a command injection vulnerability in the local plugin loader. An attacker can execute arbitrary OS commands by setting a crafted build field in the plugin's manifest.json. This field is passed to child_process.exec without validation, leading to possible RCE. NOTE: this is disputed by the Supplier because the behavior only allows a local user to attack himself via a local plugin. The local build procedure, which is essential to the attack, is not executed for plugins shared to the Figma Community.
 </code>
 
 - [shinyColumn/CVE-2025-56803](https://github.com/shinyColumn/CVE-2025-56803)
+
+### CVE-2025-57055
+- [thawphone/CVE-2025-57055](https://github.com/thawphone/CVE-2025-57055)
 
 ### CVE-2025-57576 (2025-09-04)
 
@@ -5342,6 +5358,7 @@
 - [blueisbeautiful/CVE-2025-57819](https://github.com/blueisbeautiful/CVE-2025-57819)
 - [net-hex/CVE-2025-57819](https://github.com/net-hex/CVE-2025-57819)
 - [ImBIOS/lab-cve-2025-57819](https://github.com/ImBIOS/lab-cve-2025-57819)
+- [B1ack4sh/Blackash-CVE-2025-57819](https://github.com/B1ack4sh/Blackash-CVE-2025-57819)
 
 ### CVE-2025-57833 (2025-09-03)
 
@@ -5362,7 +5379,7 @@
 
 ### CVE-2025-58780 (2025-09-05)
 
-<code>index.em7 in ScienceLogic SL1 before 12.1.1 allows SQL Injection via a parameter in a request.
+<code>index.em7 in ScienceLogic SL1 before 12.1.1 allows SQL Injection via a parameter in a request. NOTE: this is disputed by the Supplier because it &quot;inaccurately describes the vulnerability.&quot;
 </code>
 
 - [SexyShoelessGodofWar/CVE-2025-58780](https://github.com/SexyShoelessGodofWar/CVE-2025-58780)
@@ -5727,6 +5744,9 @@
 
 ### CVE-2024-436
 - [Julian-gmz/CVE-2024-436_Exploit](https://github.com/Julian-gmz/CVE-2024-436_Exploit)
+
+### CVE-2024-835
+- [melmathari/dockerCVE-2024-835](https://github.com/melmathari/dockerCVE-2024-835)
 
 ### CVE-2024-1071 (2024-03-13)
 
@@ -7078,6 +7098,7 @@
 - [YassDEV221608/CVE-2024-6387_PoC](https://github.com/YassDEV221608/CVE-2024-6387_PoC)
 - [AzrDll/CVE-2024-6387](https://github.com/AzrDll/CVE-2024-6387)
 - [xiw1ll/CVE-2024-6387_Checker](https://github.com/xiw1ll/CVE-2024-6387_Checker)
+- [moften/regreSSHion-CVE-2024-6387](https://github.com/moften/regreSSHion-CVE-2024-6387)
 
 ### CVE-2024-6460 (2024-08-16)
 
@@ -11933,9 +11954,9 @@
 - [punitdarji/GeoServer-CVE-2024-36401](https://github.com/punitdarji/GeoServer-CVE-2024-36401)
 - [netuseradministrator/CVE-2024-36401](https://github.com/netuseradministrator/CVE-2024-36401)
 - [kkhackz0013/CVE-2024-36401](https://github.com/kkhackz0013/CVE-2024-36401)
-- [thestar0/CVE-2024-36401-WoodpeckerPlugin](https://github.com/thestar0/CVE-2024-36401-WoodpeckerPlugin)
 - [XiaomingX/cve-2024-36401-poc](https://github.com/XiaomingX/cve-2024-36401-poc)
 - [0x0d3ad/CVE-2024-36401](https://github.com/0x0d3ad/CVE-2024-36401)
+- [funnyDog896/CVE-2024-36401-WoodpeckerPlugin](https://github.com/funnyDog896/CVE-2024-36401-WoodpeckerPlugin)
 - [whitebear-ch/GeoServerExploit](https://github.com/whitebear-ch/GeoServerExploit)
 - [bmth666/GeoServer-Tools-CVE-2024-36401](https://github.com/bmth666/GeoServer-Tools-CVE-2024-36401)
 - [amoy6228/CVE-2024-36401_Geoserver_RCE_POC](https://github.com/amoy6228/CVE-2024-36401_Geoserver_RCE_POC)
@@ -18769,7 +18790,7 @@
 - [bde574786/Sequelize-1day-CVE-2023-25813](https://github.com/bde574786/Sequelize-1day-CVE-2023-25813)
 - [White-BAO/CVE-2023-25813](https://github.com/White-BAO/CVE-2023-25813)
 - [pbj2647/CVE-2023-25813](https://github.com/pbj2647/CVE-2023-25813)
-- [wxuycea/CVE-2023-25813](https://github.com/wxuycea/CVE-2023-25813)
+- [numbbvi/CVE-2023-25813](https://github.com/numbbvi/CVE-2023-25813)
 - [sea-middle/cve-2023-25813](https://github.com/sea-middle/cve-2023-25813)
 
 ### CVE-2023-25950 (2023-04-11)
@@ -23614,6 +23635,7 @@
 - [cuanh2333/CVE-2023-46604](https://github.com/cuanh2333/CVE-2023-46604)
 - [skrkcb2/CVE-2023-46604](https://github.com/skrkcb2/CVE-2023-46604)
 - [CCIEVoice2009/CVE-2023-46604](https://github.com/CCIEVoice2009/CVE-2023-46604)
+- [vaishnavucv/Project-Vuln-Detection-N-Mitigation_101](https://github.com/vaishnavucv/Project-Vuln-Detection-N-Mitigation_101)
 
 ### CVE-2023-46615 (2024-02-12)
 
@@ -26422,6 +26444,13 @@
 </code>
 
 - [msm8916-mainline/CVE-2022-22063](https://github.com/msm8916-mainline/CVE-2022-22063)
+
+### CVE-2022-22077 (2022-10-12)
+
+<code>Memory corruption in graphics due to use-after-free in graphics dispatcher logic in Snapdragon Mobile
+</code>
+
+- [grisuno/CVE-2022-22077](https://github.com/grisuno/CVE-2022-22077)
 
 ### CVE-2022-22274 (2022-03-25)
 
@@ -33597,6 +33626,13 @@
 - [IlanDudnik/CVE-2021-21551](https://github.com/IlanDudnik/CVE-2021-21551)
 - [luke0x90/CVE-2021-21551](https://github.com/luke0x90/CVE-2021-21551)
 
+### CVE-2021-21707 (2021-11-29)
+
+<code>In PHP versions 7.3.x below 7.3.33, 7.4.x below 7.4.26 and 8.0.x below 8.0.13, certain XML parsing functions, like simplexml_load_file(), URL-decode the filename passed to them. If that filename contains URL-encoded NUL character, this may cause the function to interpret this as the end of the filename, thus interpreting the filename differently from what the user intended, which may lead it to reading a different file than intended.
+</code>
+
+- [useru1k/php-8.1.0-dev-exploit](https://github.com/useru1k/php-8.1.0-dev-exploit)
+
 ### CVE-2021-21716
 - [MojithaR/CVE-2023-21716-EXPLOIT.py](https://github.com/MojithaR/CVE-2023-21716-EXPLOIT.py)
 
@@ -38553,13 +38589,6 @@
 
 - [nanopathi/external_expat_AOSP10_r33_CVE-2021-45960](https://github.com/nanopathi/external_expat_AOSP10_r33_CVE-2021-45960)
 - [Trinadh465/external_lib_AOSP10_r33_CVE-2021-45960_CVE-2021-46143-](https://github.com/Trinadh465/external_lib_AOSP10_r33_CVE-2021-45960_CVE-2021-46143-)
-
-### CVE-2021-46005 (2022-01-18)
-
-<code>Sourcecodester Car Rental Management System 1.0 is vulnerable to Cross Site Scripting (XSS) via vehicalorcview parameter.
-</code>
-
-- [nawed20002/CVE-2021-46005](https://github.com/nawed20002/CVE-2021-46005)
 
 ### CVE-2021-46067 (2022-01-06)
 
@@ -51719,13 +51748,6 @@
 
 - [Luct0r/CVE-2018-17873](https://github.com/Luct0r/CVE-2018-17873)
 
-### CVE-2018-17924 (2018-12-07)
-
-<code>Rockwell Automation MicroLogix 1400 Controllers and 1756 ControlLogix Communications Modules An unauthenticated, remote threat actor could send a CIP connection request to an affected device, and upon successful connection, send a new IP configuration to the affected device even if the controller in the system is set to Hard RUN mode. When the affected device accepts this new IP configuration, a loss of communication occurs between the device and the rest of the system as the system traffic is still attempting to communicate with the device via the overwritten IP address.
-</code>
-
-- [g0dd0ghd/CVE-2018-17924-PoC](https://github.com/g0dd0ghd/CVE-2018-17924-PoC)
-
 ### CVE-2018-17961 (2018-10-15)
 
 <code>Artifex Ghostscript 9.25 and earlier allows attackers to bypass a sandbox protection mechanism via vectors involving errorhandler setup. NOTE: this issue exists because of an incomplete fix for CVE-2018-17183.
@@ -58774,6 +58796,7 @@
 - [SieGer05/CVE-2012-2982-Webmin-Exploit](https://github.com/SieGer05/CVE-2012-2982-Webmin-Exploit)
 - [lpuv/CVE-2012-2982](https://github.com/lpuv/CVE-2012-2982)
 - [SincIDK/CVE-2012-2982-Exploit-Script](https://github.com/SincIDK/CVE-2012-2982-Exploit-Script)
+- [boritopalito/CVE-2012-2982](https://github.com/boritopalito/CVE-2012-2982)
 
 ### CVE-2012-3137 (2012-09-21)
 
