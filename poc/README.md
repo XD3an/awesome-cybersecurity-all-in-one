@@ -854,6 +854,13 @@
 
 - [d0n601/CVE-2025-5058](https://github.com/d0n601/CVE-2025-5058)
 
+### CVE-2025-5095 (2025-08-08)
+
+<code>Burk Technology ARC Solo's password change mechanism can be utilized without proper \nauthentication procedures, allowing an attacker to take over the device.\n A password change request can be sent directly to the device's HTTP \nendpoint without providing valid credentials. The system does not \nenforce proper authentication or session validation, allowing the \npassword change to proceed without verifying the request's legitimacy.
+</code>
+
+- [TeteuXD2/CVE-2025-5095-POC](https://github.com/TeteuXD2/CVE-2025-5095-POC)
+
 ### CVE-2025-5196 (2025-05-26)
 
 <code>In Wing FTP Server bis 7.4.3 wurde eine Schwachstelle gefunden. Sie wurde als kritisch eingestuft. Hierbei betrifft es unbekannten Programmcode der Komponente Lua Admin Console. Mit der Manipulation mit unbekannten Daten kann eine execution with unnecessary privileges-Schwachstelle ausgenutzt werden. Umgesetzt werden kann der Angriff über das Netzwerk. Die Komplexität eines Angriffs ist eher hoch. Sie gilt als schwierig ausnutzbar. Ein Aktualisieren auf die Version 7.4.4 vermag dieses Problem zu lösen. Als bestmögliche Massnahme wird das Einspielen eines Upgrades empfohlen.
@@ -1421,7 +1428,11 @@
 
 - [rxerium/CVE-2025-8875-CVE-2025-8876](https://github.com/rxerium/CVE-2025-8875-CVE-2025-8876)
 
-### CVE-2025-8889
+### CVE-2025-8889 (2025-09-09)
+
+<code>The Compress &amp; Upload WordPress plugin before 1.0.5 does not properly validate uploaded files, allowing high privilege users such as admin to upload arbitrary files on the server even when they should not be allowed to (for example in multisite setup)
+</code>
+
 - [siberkampus/CVE-2025-8889](https://github.com/siberkampus/CVE-2025-8889)
 
 ### CVE-2025-8971 (2025-08-14)
@@ -3208,6 +3219,7 @@
 - [B1ack4sh/Blackash-CVE-2025-31161](https://github.com/B1ack4sh/Blackash-CVE-2025-31161)
 - [ibrahmsql/CVE-2025-31161](https://github.com/ibrahmsql/CVE-2025-31161)
 - [r0otk3r/CVE-2025-31161](https://github.com/r0otk3r/CVE-2025-31161)
+- [f4dee-backup/CVE-2025-31161](https://github.com/f4dee-backup/CVE-2025-31161)
 
 ### CVE-2025-31200 (2025-04-16)
 
@@ -4959,7 +4971,11 @@
 
 - [rxerium/CVE-2025-52914](https://github.com/rxerium/CVE-2025-52914)
 
-### CVE-2025-52915
+### CVE-2025-52915 (2025-09-09)
+
+<code>K7RKScan.sys 23.0.0.10, part of the K7 Security Anti-Malware suite, allows an admin-privileged user to send crafted IOCTL requests to terminate processes that are protected through a third-party implementation. This is caused by insufficient caller validation in the driver's IOCTL handler, enabling unauthorized processes to perform those actions in kernel space. Successful exploitation can lead to denial of service by disrupting critical third-party services or applications.
+</code>
+
 - [BlackSnufkin/BYOVD](https://github.com/BlackSnufkin/BYOVD)
 
 ### CVE-2025-52970 (2025-08-12)
@@ -5075,7 +5091,6 @@
 - [0x-crypt/CVE-2025-53770-Scanner](https://github.com/0x-crypt/CVE-2025-53770-Scanner)
 - [Immersive-Labs-Sec/SharePoint-CVE-2025-53770-POC](https://github.com/Immersive-Labs-Sec/SharePoint-CVE-2025-53770-POC)
 - [harryhaxor/CVE-2025-53770-SharePoint-Deserialization-RCE-PoC](https://github.com/harryhaxor/CVE-2025-53770-SharePoint-Deserialization-RCE-PoC)
-- [SDX442/CVE-2025-53770](https://github.com/SDX442/CVE-2025-53770)
 - [Agampreet-Singh/CVE-2025-53770](https://github.com/Agampreet-Singh/CVE-2025-53770)
 - [CyprianAtsyor/ToolShell-CVE-2025-53770-SharePoint-Exploit-Lab-LetsDefend](https://github.com/CyprianAtsyor/ToolShell-CVE-2025-53770-SharePoint-Exploit-Lab-LetsDefend)
 - [ghostn4444/CVE-2025-53770](https://github.com/ghostn4444/CVE-2025-53770)
@@ -5333,6 +5348,9 @@
 ### CVE-2025-57055
 - [thawphone/CVE-2025-57055](https://github.com/thawphone/CVE-2025-57055)
 
+### CVE-2025-57392
+- [meisterlos/CVE-2025-57392](https://github.com/meisterlos/CVE-2025-57392)
+
 ### CVE-2025-57576 (2025-09-04)
 
 <code>PHPGurukul Online Shopping Portal 2.1 is vulnerable to Cross Site Scripting (XSS) in /admin/updateorder.php.
@@ -5365,6 +5383,14 @@
 </code>
 
 - [Mkway/CVE-2025-57833](https://github.com/Mkway/CVE-2025-57833)
+- [loic-houchi/Django-faille-CVE-2025-57833_test](https://github.com/loic-houchi/Django-faille-CVE-2025-57833_test)
+
+### CVE-2025-58180 (2025-09-09)
+
+<code>OctoPrint provides a web interface for controlling consumer 3D printers. OctoPrint versions up until and including 1.11.2 contain a vulnerability that allows an authenticated attacker to upload a file under a specially crafted filename that will allow arbitrary command execution if said filename becomes included in a command defined in a system event handler and said event gets triggered. If no event handlers executing system commands with uploaded filenames as parameters have been configured, this vulnerability does not have an impact. The vulnerability is patched in version 1.11.3. As a workaround, OctoPrint administrators who have event handlers configured that include any kind of filename based placeholders should disable those by setting their `enabled` property to `False` or unchecking the &quot;Enabled&quot; checkbox in the GUI based Event Manager. Alternatively, OctoPrint administrators should set `feature.enforceReallyUniversalFilenames` to `true` in `config.yaml` and restart OctoPrint, then vet the existing uploads and make sure to delete any suspicious looking files. As always, OctoPrint administrators are advised to not expose OctoPrint on hostile networks like the public internet, and to vet who has access to their instance.
+</code>
+
+- [prabhatverma47/CVE-2025-58180](https://github.com/prabhatverma47/CVE-2025-58180)
 
 ### CVE-2025-58440
 - [ph-hitachi/CVE-2025-58440](https://github.com/ph-hitachi/CVE-2025-58440)
@@ -10596,6 +10622,7 @@
 - [harutomo-jp/CVE-2024-28397-RCE](https://github.com/harutomo-jp/CVE-2024-28397-RCE)
 - [Naved124/CVE-2024-28397-js2py-Sandbox-Escape](https://github.com/Naved124/CVE-2024-28397-js2py-Sandbox-Escape)
 - [ExtremeUday/Remote-Code-Execution-CVE-2024-28397-pyload-ng-js2py-](https://github.com/ExtremeUday/Remote-Code-Execution-CVE-2024-28397-pyload-ng-js2py-)
+- [naclapor/CVE-2024-28397](https://github.com/naclapor/CVE-2024-28397)
 
 ### CVE-2024-28515 (2024-04-03)
 
@@ -18237,7 +18264,6 @@
 - [pashayogi/CVE-2023-22809](https://github.com/pashayogi/CVE-2023-22809)
 - [asepsaepdin/CVE-2023-22809](https://github.com/asepsaepdin/CVE-2023-22809)
 - [Toothless5143/CVE-2023-22809](https://github.com/Toothless5143/CVE-2023-22809)
-- [AntiVlad/CVE-2023-22809](https://github.com/AntiVlad/CVE-2023-22809)
 - [laxmiyamkolu/SUDO-privilege-escalation](https://github.com/laxmiyamkolu/SUDO-privilege-escalation)
 - [D0rDa4aN919/CVE-2023-22809-Exploiter](https://github.com/D0rDa4aN919/CVE-2023-22809-Exploiter)
 - [Spydomain/CVE-2023-22809-automated-python-exploits](https://github.com/Spydomain/CVE-2023-22809-automated-python-exploits)
@@ -26888,7 +26914,7 @@
 </code>
 
 - [horizon3ai/CVE-2022-22972](https://github.com/horizon3ai/CVE-2022-22972)
-- [Dghpi9/CVE-2022-22972](https://github.com/Dghpi9/CVE-2022-22972)
+- [xK0ng/CVE-2022-22972](https://github.com/xK0ng/CVE-2022-22972)
 - [bengisugun/CVE-2022-22972-](https://github.com/bengisugun/CVE-2022-22972-)
 
 ### CVE-2022-22976 (2022-05-19)
@@ -33188,7 +33214,6 @@
 - [galoget/PwnKit-CVE-2021-4034](https://github.com/galoget/PwnKit-CVE-2021-4034)
 - [ayoub-elbouzi/CVE-2021-4034-Pwnkit](https://github.com/ayoub-elbouzi/CVE-2021-4034-Pwnkit)
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
-- [glowbase/PwnKit-CVE-2021-4034](https://github.com/glowbase/PwnKit-CVE-2021-4034)
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
 - [drapl0n/pwnKit](https://github.com/drapl0n/pwnKit)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
@@ -35997,6 +36022,13 @@
 
 - [T0X1Cx/CVE-2021-36396-Exploit](https://github.com/T0X1Cx/CVE-2021-36396-Exploit)
 
+### CVE-2021-36440 (2021-09-08)
+
+<code>Unrestricted File Upload in ShowDoc v2.9.5 allows remote attackers to execute arbitrary code via the 'file_url' parameter in the component AdminUpdateController.class.php'.
+</code>
+
+- [forget-dl/CVE-2021-36440-poc-test](https://github.com/forget-dl/CVE-2021-36440-poc-test)
+
 ### CVE-2021-36460 (2022-04-25)
 
 <code>VeryFitPro (com.veryfit2hr.second) 3.2.8 hashes the account's password locally on the device and uses the hash to authenticate in all communication with the backend API, including login, registration and changing of passwords. This allows an attacker in possession of a hash to takeover a user's account, rendering the benefits of storing hashed passwords in the database useless.
@@ -37818,13 +37850,6 @@
 
 - [Jackey0/opencast-CVE-2021-43821-env](https://github.com/Jackey0/opencast-CVE-2021-43821-env)
 
-### CVE-2021-43848 (2022-02-01)
-
-<code>h2o is an open source http server. In code prior to the `8c0eca3` commit h2o may attempt to access uninitialized memory. When receiving QUIC frames in certain order, HTTP/3 server-side implementation of h2o can be misguided to treat uninitialized memory as HTTP/3 frames that have been received. When h2o is used as a reverse proxy, an attacker can abuse this vulnerability to send internal state of h2o to backend servers controlled by the attacker or third party. Also, if there is an HTTP endpoint that reflects the traffic sent from the client, an attacker can use that reflector to obtain internal state of h2o. This internal state includes traffic of other connections in unencrypted form and TLS session tickets. This vulnerability exists in h2o server with HTTP/3 support, between commit 93af138 and d1f0f65. None of the released versions of h2o are affected by this vulnerability. There are no known workarounds. Users of unreleased versions of h2o using HTTP/3 are advised to upgrade immediately.
-</code>
-
-- [neex/hui2ochko](https://github.com/neex/hui2ochko)
-
 ### CVE-2021-43857 (2021-12-27)
 
 <code>Gerapy is a distributed crawler management framework. Gerapy prior to version 0.9.8 is vulnerable to remote code execution, and this issue is patched in version 0.9.8.
@@ -38328,6 +38353,7 @@
 - [cuijiung/log4j-CVE-2021-44228](https://github.com/cuijiung/log4j-CVE-2021-44228)
 - [Alan-coder-eng/log4j-cve-2021-44228-](https://github.com/Alan-coder-eng/log4j-cve-2021-44228-)
 - [Sorrence/CVE-2021-44228](https://github.com/Sorrence/CVE-2021-44228)
+- [moften/Log4Shell](https://github.com/moften/Log4Shell)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -46027,6 +46053,7 @@
 - [Hackheart-tech/-exploit-lab](https://github.com/Hackheart-tech/-exploit-lab)
 - [Kalidas-7/CVE-2019-9053](https://github.com/Kalidas-7/CVE-2019-9053)
 - [noob-hacker572/CMS-Made-Simple-2.2.9-CVE-2019-9053](https://github.com/noob-hacker572/CMS-Made-Simple-2.2.9-CVE-2019-9053)
+- [Slayerma/-CVE-2019-9053](https://github.com/Slayerma/-CVE-2019-9053)
 
 ### CVE-2019-9081
 - [nth347/CVE-2019-9081_PoC](https://github.com/nth347/CVE-2019-9081_PoC)
@@ -50856,6 +50883,7 @@
 - [arlyone/Apache-Struts-0Day-Exploit](https://github.com/arlyone/Apache-Struts-0Day-Exploit)
 - [freshdemo/ApacheStruts-CVE-2018-11776](https://github.com/freshdemo/ApacheStruts-CVE-2018-11776)
 - [sonpt-afk/CVE-2018-11776-FIS](https://github.com/sonpt-afk/CVE-2018-11776-FIS)
+- [m4sk0ff/CVE-2018-11776](https://github.com/m4sk0ff/CVE-2018-11776)
 
 ### CVE-2018-11784 (2018-10-04)
 
@@ -51328,6 +51356,7 @@
 - [0xNehru/ssh_Enum_vaild](https://github.com/0xNehru/ssh_Enum_vaild)
 - [moften/cve-2018-15473-poc](https://github.com/moften/cve-2018-15473-poc)
 - [makmour/open-ssh-user-enumeration](https://github.com/makmour/open-ssh-user-enumeration)
+- [Alph4Sec/ssh_enum_py](https://github.com/Alph4Sec/ssh_enum_py)
 
 ### CVE-2018-15499 (2018-08-24)
 
@@ -51559,6 +51588,7 @@
 - [saccles/CVE_2018_16763_Proof_of_Concept](https://github.com/saccles/CVE_2018_16763_Proof_of_Concept)
 - [altsun/CVE-2018-16763-FuelCMS-1.4.1-RCE](https://github.com/altsun/CVE-2018-16763-FuelCMS-1.4.1-RCE)
 - [ArtemCyberLab/Project-Exploiting-a-Vulnerability-in-Fuel-CMS-CVE-2018-16763-](https://github.com/ArtemCyberLab/Project-Exploiting-a-Vulnerability-in-Fuel-CMS-CVE-2018-16763-)
+- [B7T3/CVE-2018-16763_FuelCMS-1.4.1_RCE](https://github.com/B7T3/CVE-2018-16763_FuelCMS-1.4.1_RCE)
 
 ### CVE-2018-16809 (2019-03-07)
 
@@ -58795,7 +58825,7 @@
 - [SieGer05/CVE-2012-2982-Webmin-Exploit](https://github.com/SieGer05/CVE-2012-2982-Webmin-Exploit)
 - [lpuv/CVE-2012-2982](https://github.com/lpuv/CVE-2012-2982)
 - [SincIDK/CVE-2012-2982-Exploit-Script](https://github.com/SincIDK/CVE-2012-2982-Exploit-Script)
-- [boritopalito/CVE-2012-2982](https://github.com/boritopalito/CVE-2012-2982)
+- [boriitoo/CVE-2012-2982](https://github.com/boriitoo/CVE-2012-2982)
 
 ### CVE-2012-3137 (2012-09-21)
 
