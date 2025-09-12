@@ -1391,6 +1391,13 @@
 
 - [byteReaper77/CVE-2025-8550](https://github.com/byteReaper77/CVE-2025-8550)
 
+### CVE-2025-8570 (2025-09-11)
+
+<code>The BeyondCart Connector plugin for WordPress is vulnerable to Privilege Escalation due to improper JWT secret management and authorization within the determine_current_user filter in versions 1.4.2 through 2.1.0. This makes it possible for unauthenticated attackers to craft valid tokens and assume any user’s identity.
+</code>
+
+- [Nxploited/CVE-2025-8570](https://github.com/Nxploited/CVE-2025-8570)
+
 ### CVE-2025-8671 (2025-08-13)
 
 <code>A mismatch caused by client-triggered server-sent stream resets between HTTP/2 specifications and the internal architectures of some HTTP/2 implementations may result in excessive server resource consumption leading to denial-of-service (DoS).  By opening streams and then rapidly triggering the server to reset them—using malformed frames or flow control errors—an attacker can exploit incorrect stream accounting. Streams reset by the server are considered closed at the protocol level, even though backend processing continues. This allows a client to cause the server to handle an unbounded number of concurrent streams on a single connection. This CVE will be updated as affected product details are released.
@@ -3026,6 +3033,7 @@
 - [rgvillanueva28/vulnbox-easy-CVE-2025-29927](https://github.com/rgvillanueva28/vulnbox-easy-CVE-2025-29927)
 - [R3verseIN/Nextjs-middleware-vulnerable-appdemo-CVE-2025-29927](https://github.com/R3verseIN/Nextjs-middleware-vulnerable-appdemo-CVE-2025-29927)
 - [zs1n/CVE-2025-29927](https://github.com/zs1n/CVE-2025-29927)
+- [MKIRAHMET/CVE-2025-29927-PoC](https://github.com/MKIRAHMET/CVE-2025-29927-PoC)
 
 ### CVE-2025-29972 (2025-05-08)
 
@@ -3822,6 +3830,13 @@
 
 - [GreenForceNetworks/CVE-2025-41646---Critical-Authentication-Bypass-](https://github.com/GreenForceNetworks/CVE-2025-41646---Critical-Authentication-Bypass-)
 - [r0otk3r/CVE-2025-41646](https://github.com/r0otk3r/CVE-2025-41646)
+
+### CVE-2025-42944 (2025-09-09)
+
+<code>Due to a deserialization vulnerability in SAP NetWeaver, an unauthenticated attacker could exploit the system through the RMI-P4 module by submitting malicious payload to an open port. The deserialization of such untrusted Java objects could lead to arbitrary OS command execution, posing a high impact to the application's confidentiality, integrity, and availability.
+</code>
+
+- [rxerium/CVE-2025-42944](https://github.com/rxerium/CVE-2025-42944)
 
 ### CVE-2025-42957 (2025-08-12)
 
@@ -5342,6 +5357,9 @@
 </code>
 
 - [krispybyte/CVE-2025-55763](https://github.com/krispybyte/CVE-2025-55763)
+
+### CVE-2025-55891
+- [terribledactyl/CVE-2025-55891](https://github.com/terribledactyl/CVE-2025-55891)
 
 ### CVE-2025-55998 (2025-09-08)
 
@@ -25114,6 +25132,7 @@
 - [byteReaper77/Dirty-Pipe](https://github.com/byteReaper77/Dirty-Pipe)
 - [morgenm/dirtypipe](https://github.com/morgenm/dirtypipe)
 - [Scouserr/cve-2022-0847-poc-dockerimage](https://github.com/Scouserr/cve-2022-0847-poc-dockerimage)
+- [Shadow-Spinner/CVE-2022-0847](https://github.com/Shadow-Spinner/CVE-2022-0847)
 
 ### CVE-2022-0848 (2022-03-04)
 
@@ -26215,7 +26234,7 @@
 
 - [Audiobahn/CVE-2022-20699](https://github.com/Audiobahn/CVE-2022-20699)
 - [puckiestyle/CVE-2022-20699](https://github.com/puckiestyle/CVE-2022-20699)
-- [rohankumardubey/CVE-2022-20699](https://github.com/rohankumardubey/CVE-2022-20699)
+- [Rohan-flutterint/CVE-2022-20699](https://github.com/Rohan-flutterint/CVE-2022-20699)
 
 ### CVE-2022-20818 (2022-09-30)
 
@@ -26946,7 +26965,7 @@
 </code>
 
 - [horizon3ai/CVE-2022-22972](https://github.com/horizon3ai/CVE-2022-22972)
-- [xK0ng/CVE-2022-22972](https://github.com/xK0ng/CVE-2022-22972)
+- [xk4ng/CVE-2022-22972](https://github.com/xk4ng/CVE-2022-22972)
 - [bengisugun/CVE-2022-22972-](https://github.com/bengisugun/CVE-2022-22972-)
 
 ### CVE-2022-22976 (2022-05-19)
@@ -33243,7 +33262,6 @@
 - [galoget/PwnKit-CVE-2021-4034](https://github.com/galoget/PwnKit-CVE-2021-4034)
 - [ayoub-elbouzi/CVE-2021-4034-Pwnkit](https://github.com/ayoub-elbouzi/CVE-2021-4034-Pwnkit)
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
-- [glowbase/PwnKit-CVE-2021-4034](https://github.com/glowbase/PwnKit-CVE-2021-4034)
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
 - [drapl0n/pwnKit](https://github.com/drapl0n/pwnKit)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
@@ -33319,6 +33337,7 @@
 - [kali-guru/Pwnkit-CVE-2021-4034](https://github.com/kali-guru/Pwnkit-CVE-2021-4034)
 - [BugVex/Poison-HTB-Report](https://github.com/BugVex/Poison-HTB-Report)
 - [radzek15/Python-Pwnkit-CVE-2021-4034-exploit](https://github.com/radzek15/Python-Pwnkit-CVE-2021-4034-exploit)
+- [dr4xp/pwnkit-helper](https://github.com/dr4xp/pwnkit-helper)
 
 ### CVE-2021-4044 (2021-12-14)
 
@@ -38245,7 +38264,7 @@
 - [obscuritylabs/log4shell-poc-lab](https://github.com/obscuritylabs/log4shell-poc-lab)
 - [Fazmin/vCenter-Server-Workaround-Script-CVE-2021-44228](https://github.com/Fazmin/vCenter-Server-Workaround-Script-CVE-2021-44228)
 - [Grupo-Kapa-7/CVE-2021-44228-Log4j-PoC-RCE](https://github.com/Grupo-Kapa-7/CVE-2021-44228-Log4j-PoC-RCE)
-- [rohankumardubey/CVE-2021-44228_scanner](https://github.com/rohankumardubey/CVE-2021-44228_scanner)
+- [Rohan-flutterint/CVE-2021-44228_scanner](https://github.com/Rohan-flutterint/CVE-2021-44228_scanner)
 - [sysadmin0815/Fix-Log4j-PowershellScript](https://github.com/sysadmin0815/Fix-Log4j-PowershellScript)
 - [RenYuH/log4j-lookups-vulnerability](https://github.com/RenYuH/log4j-lookups-vulnerability)
 - [scheibling/py-log4shellscanner](https://github.com/scheibling/py-log4shellscanner)
@@ -48315,6 +48334,7 @@
 - [clarkvoss/telerik](https://github.com/clarkvoss/telerik)
 - [ekkoo-z/CVE-2019-18935-bypasswaf](https://github.com/ekkoo-z/CVE-2019-18935-bypasswaf)
 - [0xsharz/telerik-scanner-CVE-2019-18935](https://github.com/0xsharz/telerik-scanner-CVE-2019-18935)
+- [quyt0/CVE-2019-18935-exploit-study](https://github.com/quyt0/CVE-2019-18935-exploit-study)
 
 ### CVE-2019-18988 (2020-02-07)
 
@@ -53073,6 +53093,7 @@
 - [joidiego/Detection-struts-cve-2017-5638-detector](https://github.com/joidiego/Detection-struts-cve-2017-5638-detector)
 - [iampetru/PoC-CVE-2017-5638](https://github.com/iampetru/PoC-CVE-2017-5638)
 - [MuhammadAbdullah192/CVE-2017-5638-Remote-Code-Execution-Apache-Struts2-EXPLOITATION](https://github.com/MuhammadAbdullah192/CVE-2017-5638-Remote-Code-Execution-Apache-Struts2-EXPLOITATION)
+- [kaylertee/Computer-Security-Equifax-2017](https://github.com/kaylertee/Computer-Security-Equifax-2017)
 
 ### CVE-2017-5645 (2017-04-17)
 
@@ -53437,7 +53458,7 @@
 - [cyberharsh/nginx-CVE-2017-7529](https://github.com/cyberharsh/nginx-CVE-2017-7529)
 - [daehee/nginx-overflow](https://github.com/daehee/nginx-overflow)
 - [gemboxteam/exploit-nginx-1.10.3](https://github.com/gemboxteam/exploit-nginx-1.10.3)
-- [fardeen-ahmed/Remote-Integer-Overflow-Vulnerability](https://github.com/fardeen-ahmed/Remote-Integer-Overflow-Vulnerability)
+- [insecrez/Remote-Integer-Overflow-Vulnerability](https://github.com/insecrez/Remote-Integer-Overflow-Vulnerability)
 - [mo3zj/Nginx-Remote-Integer-Overflow-Vulnerability](https://github.com/mo3zj/Nginx-Remote-Integer-Overflow-Vulnerability)
 - [fu2x2000/CVE-2017-7529-Nginx---Remote-Integer-Overflow-Exploit](https://github.com/fu2x2000/CVE-2017-7529-Nginx---Remote-Integer-Overflow-Exploit)
 - [Shehzadcyber/CVE-2017-7529](https://github.com/Shehzadcyber/CVE-2017-7529)
@@ -54879,7 +54900,7 @@
 - [nkoneko/CVE-2017-1000117](https://github.com/nkoneko/CVE-2017-1000117)
 - [chenzhuo0618/test](https://github.com/chenzhuo0618/test)
 - [siling2017/CVE-2017-1000117](https://github.com/siling2017/CVE-2017-1000117)
-- [Q2h1Cg/CVE-2017-1000117](https://github.com/Q2h1Cg/CVE-2017-1000117)
+- [chu1337/CVE-2017-1000117](https://github.com/chu1337/CVE-2017-1000117)
 - [cved-sources/cve-2017-1000117](https://github.com/cved-sources/cve-2017-1000117)
 - [leezp/CVE-2017-1000117](https://github.com/leezp/CVE-2017-1000117)
 - [AnonymKing/CVE-2017-1000117](https://github.com/AnonymKing/CVE-2017-1000117)
@@ -57444,7 +57465,7 @@
 - [cved-sources/cve-2014-0160](https://github.com/cved-sources/cve-2014-0160)
 - [cheese-hub/heartbleed](https://github.com/cheese-hub/heartbleed)
 - [artofscripting-zz/cmty-ssl-heartbleed-CVE-2014-0160-HTTP-HTTPS](https://github.com/artofscripting-zz/cmty-ssl-heartbleed-CVE-2014-0160-HTTP-HTTPS)
-- [cldme/heartbleed-bug](https://github.com/cldme/heartbleed-bug)
+- [tomdevman/heartbleed-bug](https://github.com/tomdevman/heartbleed-bug)
 - [ThanHuuTuan/Heartexploit](https://github.com/ThanHuuTuan/Heartexploit)
 - [rouze-d/heartbleed](https://github.com/rouze-d/heartbleed)
 - [WildfootW/CVE-2014-0160_OpenSSL_1.0.1f_Heartbleed](https://github.com/WildfootW/CVE-2014-0160_OpenSSL_1.0.1f_Heartbleed)
