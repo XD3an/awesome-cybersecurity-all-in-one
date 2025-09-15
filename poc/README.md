@@ -1191,6 +1191,7 @@
 - [walidpyh/CVE-2025-8088](https://github.com/walidpyh/CVE-2025-8088)
 - [hexsecteam/CVE-2025-8088-Winrar-Tool](https://github.com/hexsecteam/CVE-2025-8088-Winrar-Tool)
 - [tartalu/CVE-2025-8088](https://github.com/tartalu/CVE-2025-8088)
+- [techcorp/CVE-2025-8088-Exploit](https://github.com/techcorp/CVE-2025-8088-Exploit)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1357,6 +1358,9 @@
 
 - [MooseLoveti/PagSeguro-Connect-Para-WooCommerce-CVE-Report](https://github.com/MooseLoveti/PagSeguro-Connect-Para-WooCommerce-CVE-Report)
 
+### CVE-2025-12654
+- [Walekmw/Anydesk-Exploit-CVE-2025-12654-RCE-Builder](https://github.com/Walekmw/Anydesk-Exploit-CVE-2025-12654-RCE-Builder)
+
 ### CVE-2025-20029 (2025-02-05)
 
 <code>Command injection vulnerability exists in iControl REST and BIG-IP TMOS Shell (tmsh) save command, which may allow an authenticated attacker to execute arbitrary system commands.\n\n \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
@@ -1438,6 +1442,13 @@
 - [Network-Sec/CVE-2025-21420-PoC](https://github.com/Network-Sec/CVE-2025-21420-PoC)
 - [toxy4ny/edge-maradeur](https://github.com/toxy4ny/edge-maradeur)
 
+### CVE-2025-21479 (2025-06-03)
+
+<code>Memory corruption due to unauthorized command execution in GPU micronode while executing specific sequence of commands.
+</code>
+
+- [zhuowei/cheese](https://github.com/zhuowei/cheese)
+
 ### CVE-2025-21497 (2025-01-21)
 
 <code>Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB).  Supported versions that are affected are 8.0.40 and prior, 8.4.3 and prior and  9.1.0 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as  unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 5.5 (Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H).
@@ -1451,6 +1462,13 @@
 </code>
 
 - [mdriaz009/CVE-2025-21574-Exploit](https://github.com/mdriaz009/CVE-2025-21574-Exploit)
+
+### CVE-2025-21692 (2025-02-10)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nnet: sched: fix ets qdisc OOB Indexing\n\nHaowei Yan &lt;g1042620637@gmail.com&gt; found that ets_class_from_arg() can\nindex an Out-Of-Bound class in ets_class_from_arg() when passed clid of\n0. The overflow may cause local privilege escalation.\n\n [   18.852298] ------------[ cut here ]------------\n [   18.853271] UBSAN: array-index-out-of-bounds in net/sched/sch_ets.c:93:20\n [   18.853743] index 18446744073709551615 is out of range for type 'ets_class [16]'\n [   18.854254] CPU: 0 UID: 0 PID: 1275 Comm: poc Not tainted 6.12.6-dirty #17\n [   18.854821] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014\n [   18.856532] Call Trace:\n [   18.857441]  &lt;TASK&gt;\n [   18.858227]  dump_stack_lvl+0xc2/0xf0\n [   18.859607]  dump_stack+0x10/0x20\n [   18.860908]  __ubsan_handle_out_of_bounds+0xa7/0xf0\n [   18.864022]  ets_class_change+0x3d6/0x3f0\n [   18.864322]  tc_ctl_tclass+0x251/0x910\n [   18.864587]  ? lock_acquire+0x5e/0x140\n [   18.865113]  ? __mutex_lock+0x9c/0xe70\n [   18.866009]  ? __mutex_lock+0xa34/0xe70\n [   18.866401]  rtnetlink_rcv_msg+0x170/0x6f0\n [   18.866806]  ? __lock_acquire+0x578/0xc10\n [   18.867184]  ? __pfx_rtnetlink_rcv_msg+0x10/0x10\n [   18.867503]  netlink_rcv_skb+0x59/0x110\n [   18.867776]  rtnetlink_rcv+0x15/0x30\n [   18.868159]  netlink_unicast+0x1c3/0x2b0\n [   18.868440]  netlink_sendmsg+0x239/0x4b0\n [   18.868721]  ____sys_sendmsg+0x3e2/0x410\n [   18.869012]  ___sys_sendmsg+0x88/0xe0\n [   18.869276]  ? rseq_ip_fixup+0x198/0x260\n [   18.869563]  ? rseq_update_cpu_node_id+0x10a/0x190\n [   18.869900]  ? trace_hardirqs_off+0x5a/0xd0\n [   18.870196]  ? syscall_exit_to_user_mode+0xcc/0x220\n [   18.870547]  ? do_syscall_64+0x93/0x150\n [   18.870821]  ? __memcg_slab_free_hook+0x69/0x290\n [   18.871157]  __sys_sendmsg+0x69/0xd0\n [   18.871416]  __x64_sys_sendmsg+0x1d/0x30\n [   18.871699]  x64_sys_call+0x9e2/0x2670\n [   18.871979]  do_syscall_64+0x87/0x150\n [   18.873280]  ? do_syscall_64+0x93/0x150\n [   18.874742]  ? lock_release+0x7b/0x160\n [   18.876157]  ? do_user_addr_fault+0x5ce/0x8f0\n [   18.877833]  ? irqentry_exit_to_user_mode+0xc2/0x210\n [   18.879608]  ? irqentry_exit+0x77/0xb0\n [   18.879808]  ? clear_bhb_loop+0x15/0x70\n [   18.880023]  ? clear_bhb_loop+0x15/0x70\n [   18.880223]  ? clear_bhb_loop+0x15/0x70\n [   18.880426]  entry_SYSCALL_64_after_hwframe+0x76/0x7e\n [   18.880683] RIP: 0033:0x44a957\n [   18.880851] Code: ff ff e8 fc 00 00 00 66 2e 0f 1f 84 00 00 00 00 00 66 90 f3 0f 1e fa 64 8b 04 25 18 00 00 00 85 c0 75 10 b8 2e 00 00 00 0f 05 &lt;48&gt; 3d 00 f0 ff ff 77 51 c3 48 83 ec 28 89 54 24 1c 48 8974 24 10\n [   18.881766] RSP: 002b:00007ffcdd00fad8 EFLAGS: 00000246 ORIG_RAX: 000000000000002e\n [   18.882149] RAX: ffffffffffffffda RBX: 00007ffcdd010db8 RCX: 000000000044a957\n [   18.882507] RDX: 0000000000000000 RSI: 00007ffcdd00fb70 RDI: 0000000000000003\n [   18.885037] RBP: 00007ffcdd010bc0 R08: 000000000703c770 R09: 000000000703c7c0\n [   18.887203] R10: 0000000000000080 R11: 0000000000000246 R12: 0000000000000001\n [   18.888026] R13: 00007ffcdd010da8 R14: 00000000004ca7d0 R15: 0000000000000001\n [   18.888395]  &lt;/TASK&gt;\n [   18.888610] ---[ end trace ]---
+</code>
+
+- [volticks/CVE-2025-21692-poc](https://github.com/volticks/CVE-2025-21692-poc)
 
 ### CVE-2025-21756 (2025-02-27)
 
@@ -1888,6 +1906,7 @@
 - [drcrypterdotru/Apache-GOExploiter](https://github.com/drcrypterdotru/Apache-GOExploiter)
 - [CEAlbez/CVE-2025-24813-PoC](https://github.com/CEAlbez/CVE-2025-24813-PoC)
 - [Makavellik/POC-CVE-2025-24813-Apache-Tomcat-Remote-Code-Execution](https://github.com/Makavellik/POC-CVE-2025-24813-Apache-Tomcat-Remote-Code-Execution)
+- [brs6412/CVE-2025-24813](https://github.com/brs6412/CVE-2025-24813)
 
 ### CVE-2025-24893 (2025-02-20)
 
@@ -2721,7 +2740,6 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [AventurineJ/CVE-2025-29927-Research](https://github.com/AventurineJ/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -3643,6 +3661,10 @@
 
 - [barisbaydur/CVE-2025-44148](https://github.com/barisbaydur/CVE-2025-44148)
 
+### CVE-2025-44228
+- [Waletow/Office-Exploit-Cve2025-Xml-Doc-Docx-Rce-Builder-Fud](https://github.com/Waletow/Office-Exploit-Cve2025-Xml-Doc-Docx-Rce-Builder-Fud)
+- [Waletow/Lnk-Exploit-FileBinder-Certificate-Spoofer-Reg-Doc-Cve-Rce](https://github.com/Waletow/Lnk-Exploit-FileBinder-Certificate-Spoofer-Reg-Doc-Cve-Rce)
+
 ### CVE-2025-44603
 - [Moulish2004/CVE-2025-44603-CSRF-Leads_to_Create_FakeUsers](https://github.com/Moulish2004/CVE-2025-44603-CSRF-Leads_to_Create_FakeUsers)
 
@@ -3999,6 +4021,13 @@
 - [EdwardYeIntrix/CVE-2025-48384-Scanner](https://github.com/EdwardYeIntrix/CVE-2025-48384-Scanner)
 - [airkewld/cve-2025-48384](https://github.com/airkewld/cve-2025-48384)
 - [airkewld/cve-2025-48384-submodule](https://github.com/airkewld/cve-2025-48384-submodule)
+
+### CVE-2025-48543 (2025-09-04)
+
+<code>In multiple locations, there is a possible way to escape chrome sandbox to attack android system_server due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
+</code>
+
+- [gamesarchive/CVE-2025-48543](https://github.com/gamesarchive/CVE-2025-48543)
 
 ### CVE-2025-48703
 - [itstarsec/CVE-2025-48703](https://github.com/itstarsec/CVE-2025-48703)
@@ -4992,6 +5021,7 @@
 - [B1ack4sh/Blackash-CVE-2025-57819](https://github.com/B1ack4sh/Blackash-CVE-2025-57819)
 - [watchtowrlabs/watchTowr-vs-FreePBX-CVE-2025-57819](https://github.com/watchtowrlabs/watchTowr-vs-FreePBX-CVE-2025-57819)
 - [MuhammadWaseem29/SQL-Injection-and-RCE_CVE-2025-57819](https://github.com/MuhammadWaseem29/SQL-Injection-and-RCE_CVE-2025-57819)
+- [xV4nd3Rx/CVE-2025-57819_FreePBX-PoC](https://github.com/xV4nd3Rx/CVE-2025-57819_FreePBX-PoC)
 
 ### CVE-2025-57833 (2025-09-03)
 
@@ -5126,7 +5156,7 @@
 - [Kai2er/CVE-2024-0044-EXP](https://github.com/Kai2er/CVE-2024-0044-EXP)
 - [hunter24x24/cve_2024_0044](https://github.com/hunter24x24/cve_2024_0044)
 - [sridhar-sec/EvilDroid](https://github.com/sridhar-sec/EvilDroid)
-- [nishan0x1/CVE-2024-0044](https://github.com/nishan0x1/CVE-2024-0044)
+- [l1ackernishan/CVE-2024-0044](https://github.com/l1ackernishan/CVE-2024-0044)
 - [MrW0l05zyn/cve-2024-0044](https://github.com/MrW0l05zyn/cve-2024-0044)
 - [canyie/CVE-2024-0044](https://github.com/canyie/CVE-2024-0044)
 - [Dit-Developers/CVE-2024-0044-](https://github.com/Dit-Developers/CVE-2024-0044-)
@@ -12673,6 +12703,7 @@
 - [0xbassiouny1337/CVE-2024-42009](https://github.com/0xbassiouny1337/CVE-2024-42009)
 - [Bhanunamikaze/CVE-2024-42009](https://github.com/Bhanunamikaze/CVE-2024-42009)
 - [DaniTheHack3r/CVE-2024-42009-PoC](https://github.com/DaniTheHack3r/CVE-2024-42009-PoC)
+- [Shubhankargupta691/CVE-2024-42009](https://github.com/Shubhankargupta691/CVE-2024-42009)
 
 ### CVE-2024-42327 (2024-11-27)
 
@@ -18826,13 +18857,6 @@
 - [byt3n33dl3/CLFS](https://github.com/byt3n33dl3/CLFS)
 - [Vulmatch/CVE-2023-28252](https://github.com/Vulmatch/CVE-2023-28252)
 
-### CVE-2023-28293 (2023-04-11)
-
-<code>Windows Kernel Elevation of Privilege Vulnerability
-</code>
-
-- [HexilionLabs/CVE-2023-28293](https://github.com/HexilionLabs/CVE-2023-28293)
-
 ### CVE-2023-28303 (2023-06-13)
 
 <code>Windows Snipping Tool Information Disclosure Vulnerability
@@ -23595,6 +23619,7 @@
 </code>
 
 - [shoucheng3/apache__dolphinscheduler_CVE-2023-49109_3-2-0](https://github.com/shoucheng3/apache__dolphinscheduler_CVE-2023-49109_3-2-0)
+- [shoucheng3/apache__dolphinscheduler_CVE-2023-49109_3_2_1_fixed](https://github.com/shoucheng3/apache__dolphinscheduler_CVE-2023-49109_3_2_1_fixed)
 
 ### CVE-2023-49313 (2023-11-28)
 
@@ -24204,6 +24229,13 @@
 </code>
 
 - [squ1dw3rm/CVE-2023-52268](https://github.com/squ1dw3rm/CVE-2023-52268)
+
+### CVE-2023-52440 (2024-02-21)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix slub overflow in ksmbd_decode_ntlmssp_auth_blob()\n\nIf authblob-&gt;SessionKey.Length is bigger than session key\nsize(CIFS_KEY_SIZE), slub overflow can happen in key exchange codes.\ncifs_arc4_crypt copy to session key array from SessionKey from client.
+</code>
+
+- [BitsByWill/ksmbd-n-day](https://github.com/BitsByWill/ksmbd-n-day)
 
 ### CVE-2023-52654 (2024-05-09)
 
@@ -29926,7 +29958,6 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [AventurineJ/CVE-2022-39299-Research](https://github.com/AventurineJ/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -32672,7 +32703,6 @@
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [glowbase/PwnKit-CVE-2021-4034](https://github.com/glowbase/PwnKit-CVE-2021-4034)
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
-- [scent2d/PoC-CVE-2021-4034](https://github.com/scent2d/PoC-CVE-2021-4034)
 - [HrishitJoshi/CVE-2021-4034](https://github.com/HrishitJoshi/CVE-2021-4034)
 - [Ankit-Ojha16/CVE-2021-4034](https://github.com/Ankit-Ojha16/CVE-2021-4034)
 - [G01d3nW01f/CVE-2021-4034](https://github.com/G01d3nW01f/CVE-2021-4034)
@@ -36656,6 +36686,7 @@
 - [mah4nzfr/CVE-2021-41773](https://github.com/mah4nzfr/CVE-2021-41773)
 - [charanvoonna/CVE-2021-41773](https://github.com/charanvoonna/CVE-2021-41773)
 - [hackedrishi/CTF_WRITEUPS-TryHackMe-CVE-2021-41773-](https://github.com/hackedrishi/CTF_WRITEUPS-TryHackMe-CVE-2021-41773-)
+- [MuhammadHuzaifaAsif/security-lab](https://github.com/MuhammadHuzaifaAsif/security-lab)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -38363,7 +38394,7 @@
 - [wyu0hop/CVE-2020-0096](https://github.com/wyu0hop/CVE-2020-0096)
 - [liuyun201990/StrandHogg2](https://github.com/liuyun201990/StrandHogg2)
 - [tea9/CVE-2020-0096-StrandHogg2](https://github.com/tea9/CVE-2020-0096-StrandHogg2)
-- [nishan0x1/CVE-2020-0096-strandhogg-exploit-p0c](https://github.com/nishan0x1/CVE-2020-0096-strandhogg-exploit-p0c)
+- [l1ackernishan/CVE-2020-0096-strandhogg-exploit-p0c](https://github.com/l1ackernishan/CVE-2020-0096-strandhogg-exploit-p0c)
 
 ### CVE-2020-0108 (2020-08-11)
 
@@ -41144,13 +41175,6 @@
 
 - [Fans0n-Fan/Treck20-Related](https://github.com/Fans0n-Fan/Treck20-Related)
 - [0xkol/ripple20-digi-connect-exploit](https://github.com/0xkol/ripple20-digi-connect-exploit)
-
-### CVE-2020-11898 (2020-06-17)
-
-<code>The Treck TCP/IP stack before 6.0.1.66 improperly handles an IPv4/ICMPv4 Length Parameter Inconsistency, which might allow remote attackers to trigger an information leak.
-</code>
-
-- [scamwork/POC_CVE-2020-11898](https://github.com/scamwork/POC_CVE-2020-11898)
 
 ### CVE-2020-11932 (2020-05-13)
 
@@ -45748,6 +45772,7 @@
 </code>
 
 - [shoucheng3/apache__jspwiki_CVE-2019-10089_2-11-0-M4](https://github.com/shoucheng3/apache__jspwiki_CVE-2019-10089_2-11-0-M4)
+- [shoucheng3/apache__jspwiki_CVE-2019-10089_2_11_0_M5_fixed](https://github.com/shoucheng3/apache__jspwiki_CVE-2019-10089_2_11_0_M5_fixed)
 
 ### CVE-2019-10092 (2019-09-26)
 
@@ -47549,6 +47574,7 @@
 </code>
 
 - [shoucheng3/vert-x3__vertx-web_CVE-2019-17640_3-9-3](https://github.com/shoucheng3/vert-x3__vertx-web_CVE-2019-17640_3-9-3)
+- [shoucheng3/vert-x3__vertx-web_CVE-2019-17640_3_9_4_fixed](https://github.com/shoucheng3/vert-x3__vertx-web_CVE-2019-17640_3_9_4_fixed)
 
 ### CVE-2019-17658 (2020-03-12)
 
@@ -53723,7 +53749,7 @@
 - [giacomoferretti/janus-toolkit](https://github.com/giacomoferretti/janus-toolkit)
 - [tea9/CVE-2017-13156-Janus](https://github.com/tea9/CVE-2017-13156-Janus)
 - [M507/CVE-2017-13156](https://github.com/M507/CVE-2017-13156)
-- [nishan0x1/Janus-Vulnerability-CVE-2017-13156-Exploit](https://github.com/nishan0x1/Janus-Vulnerability-CVE-2017-13156-Exploit)
+- [l1ackernishan/Janus-Vulnerability-CVE-2017-13156-Exploit](https://github.com/l1ackernishan/Janus-Vulnerability-CVE-2017-13156-Exploit)
 - [nictjh/threatDemos](https://github.com/nictjh/threatDemos)
 
 ### CVE-2017-13208 (2018-01-12)
