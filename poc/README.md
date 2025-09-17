@@ -339,7 +339,11 @@
 
 - [sahici/CVE-2025-2301](https://github.com/sahici/CVE-2025-2301)
 
-### CVE-2025-2404
+### CVE-2025-2404 (2025-09-16)
+
+<code>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Ubit Information Technologies STOYS allows Cross-Site Scripting (XSS).This issue affects STOYS: from 2 through 20250916. \n\nNOTE: The vendor did not inform about the completion of the fixing process within the specified time. The CVE will be updated when new information becomes available.
+</code>
+
 - [sahici/CVE-2025-2404](https://github.com/sahici/CVE-2025-2404)
 
 ### CVE-2025-2502 (2025-05-30)
@@ -761,7 +765,11 @@
 ### CVE-2025-4686
 - [sahici/CVE-2025-4686](https://github.com/sahici/CVE-2025-4686)
 
-### CVE-2025-4688
+### CVE-2025-4688 (2025-09-16)
+
+<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in BGS Interactive SINAV.LINK Exam Result Module allows SQL Injection.This issue affects SINAV.LINK Exam Result Module: before 1.2.
+</code>
+
 - [sahici/CVE-2025-4688](https://github.com/sahici/CVE-2025-4688)
 
 ### CVE-2025-4784 (2025-07-24)
@@ -945,6 +953,7 @@
 <code>RARLAB WinRAR Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of RARLAB WinRAR. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of file paths within archive files. A crafted file path can cause the process to traverse to unintended directories. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-27198.
 </code>
 
+- [speinador/CVE-2025-6218_WinRAR](https://github.com/speinador/CVE-2025-6218_WinRAR)
 - [ignis-sec/CVE-2025-6218](https://github.com/ignis-sec/CVE-2025-6218)
 - [skimask1690/CVE-2025-6218-POC](https://github.com/skimask1690/CVE-2025-6218-POC)
 - [mulwareX/CVE-2025-6218-POC](https://github.com/mulwareX/CVE-2025-6218-POC)
@@ -1327,6 +1336,12 @@
 
 - [byteReaper77/CVE-2025-9090](https://github.com/byteReaper77/CVE-2025-9090)
 
+### CVE-2025-9215
+- [d0n601/CVE-2025-9215](https://github.com/d0n601/CVE-2025-9215)
+
+### CVE-2025-9216
+- [d0n601/CVE-2025-9216](https://github.com/d0n601/CVE-2025-9216)
+
 ### CVE-2025-9345 (2025-08-28)
 
 <code>The File Manager, Code Editor, and Backup by Managefy plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 1.4.8 via the ajax_downloadfile() function. This makes it possible for authenticated attackers, with Subscriber-level access and above, to perform actions on files outside of the originally intended directory.
@@ -1368,6 +1383,13 @@
 </code>
 
 - [MooseLoveti/PagSeguro-Connect-Para-WooCommerce-CVE-Report](https://github.com/MooseLoveti/PagSeguro-Connect-Para-WooCommerce-CVE-Report)
+
+### CVE-2025-10533 (2025-09-16)
+
+<code>This vulnerability affects Firefox &lt; 143, Firefox ESR &lt; 115.28, Firefox ESR &lt; 140.3, Thunderbird &lt; 143, and Thunderbird &lt; 140.3.
+</code>
+
+- [h4xnz/CVE-2025-10533-Exploit](https://github.com/h4xnz/CVE-2025-10533-Exploit)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -1710,7 +1732,6 @@
 <code>External control of file name or path in Windows NTLM allows an unauthorized attacker to perform spoofing over a network.
 </code>
 
-- [yum1ra/CVE-2025-24054_CVE-2025-24071-PoC](https://github.com/yum1ra/CVE-2025-24054_CVE-2025-24071-PoC)
 - [basekilll/CVE-2025-24054_PoC](https://github.com/basekilll/CVE-2025-24054_PoC)
 - [helidem/CVE-2025-24054_CVE-2025-24071-PoC](https://github.com/helidem/CVE-2025-24054_CVE-2025-24071-PoC)
 - [S4mma3l/CVE-2025-24054](https://github.com/S4mma3l/CVE-2025-24054)
@@ -1854,6 +1875,7 @@
 - [MatheuZSecurity/Exploit-CVE-2025-24799](https://github.com/MatheuZSecurity/Exploit-CVE-2025-24799)
 - [galletitaconpate/CVE-2025-24799](https://github.com/galletitaconpate/CVE-2025-24799)
 - [Rosemary1337/CVE-2025-24799](https://github.com/Rosemary1337/CVE-2025-24799)
+- [airbus-cert/CVE-2025-24799-scanner](https://github.com/airbus-cert/CVE-2025-24799-scanner)
 
 ### CVE-2025-24801 (2025-03-18)
 
@@ -2375,6 +2397,7 @@
 
 - [absholi7ly/CVE-2025-27210_NodeJS_Path_Traversal_Exploit](https://github.com/absholi7ly/CVE-2025-27210_NodeJS_Path_Traversal_Exploit)
 - [B1ack4sh/Blackash-CVE-2025-27210](https://github.com/B1ack4sh/Blackash-CVE-2025-27210)
+- [mindeddu/Vulnerable-CVE-2025-27210](https://github.com/mindeddu/Vulnerable-CVE-2025-27210)
 
 ### CVE-2025-27363 (2025-03-11)
 
@@ -3587,7 +3610,6 @@
 <code>SAP S/4HANA allows an attacker with user privileges to exploit a vulnerability in the function module exposed via RFC. This flaw enables the injection of arbitrary ABAP code into the system, bypassing essential authorization checks. This vulnerability effectively functions as a backdoor, creating the risk of full system compromise, undermining the confidentiality, integrity and availability of the system.
 </code>
 
-- [callinston/CVE-2025-42957](https://github.com/callinston/CVE-2025-42957)
 - [mrk336/CVE-2025-42957-SAP-S-4HANA-Under-Siege](https://github.com/mrk336/CVE-2025-42957-SAP-S-4HANA-Under-Siege)
 
 ### CVE-2025-43300 (2025-08-21)
@@ -4041,7 +4063,6 @@
 - [jacobholtz/CVE-2025-48384-submodule](https://github.com/jacobholtz/CVE-2025-48384-submodule)
 - [butyraldehyde/CVE-2025-48384-PoC-Part2](https://github.com/butyraldehyde/CVE-2025-48384-PoC-Part2)
 - [arun1033/CVE-2025-48384](https://github.com/arun1033/CVE-2025-48384)
-- [EdwardYeIntrix/CVE-2025-48384-Scanner](https://github.com/EdwardYeIntrix/CVE-2025-48384-Scanner)
 - [s41r4j/CVE-2025-48384](https://github.com/s41r4j/CVE-2025-48384)
 - [s41r4j/CVE-2025-48384-submodule](https://github.com/s41r4j/CVE-2025-48384-submodule)
 
@@ -4562,7 +4583,6 @@
 </code>
 
 - [milamrk/CVE-2025-52389](https://github.com/milamrk/CVE-2025-52389)
-- [ktr4ck3r/CVE-2025-52389](https://github.com/ktr4ck3r/CVE-2025-52389)
 
 ### CVE-2025-52392 (2025-08-13)
 
@@ -4760,6 +4780,13 @@
 
 - [tigr78/CVE-2025-53964](https://github.com/tigr78/CVE-2025-53964)
 
+### CVE-2025-54106 (2025-09-09)
+
+<code>Integer overflow or wraparound in Windows Routing and Remote Access Service (RRAS) allows an unauthorized attacker to execute code over a network.
+</code>
+
+- [callinston/CVE-2025-54106](https://github.com/callinston/CVE-2025-54106)
+
 ### CVE-2025-54135 (2025-08-05)
 
 <code>Cursor is a code editor built for programming with AI. Cursor allows writing in-workspace files with no user approval in versions below 1.3.9, If the file is a dotfile, editing it requires approval but creating a new one doesn't. Hence, if sensitive MCP files, such as the .cursor/mcp.json file don't already exist in the workspace, an attacker can chain a indirect prompt injection vulnerability to hijack the context to write to the settings file and trigger RCE on the victim without user approval. This is fixed in version 1.3.9.
@@ -4905,13 +4932,6 @@
 - [hunters-sec/CVE-2025-55188-7z-exploit](https://github.com/hunters-sec/CVE-2025-55188-7z-exploit)
 - [san8383/CVE-2025-55188-7z-POC](https://github.com/san8383/CVE-2025-55188-7z-POC)
 - [lunbun/CVE-2025-55188](https://github.com/lunbun/CVE-2025-55188)
-
-### CVE-2025-55232 (2025-09-09)
-
-<code>Deserialization of untrusted data in Microsoft High Performance Compute Pack (HPC) allows an unauthorized attacker to execute code over a network.
-</code>
-
-- [h4xnz/CVE-2025-55232-Exploit](https://github.com/h4xnz/CVE-2025-55232-Exploit)
 
 ### CVE-2025-55234 (2025-09-09)
 
@@ -5202,7 +5222,7 @@
 - [Kai2er/CVE-2024-0044-EXP](https://github.com/Kai2er/CVE-2024-0044-EXP)
 - [hunter24x24/cve_2024_0044](https://github.com/hunter24x24/cve_2024_0044)
 - [sridhar-sec/EvilDroid](https://github.com/sridhar-sec/EvilDroid)
-- [nishan0x1/CVE-2024-0044](https://github.com/nishan0x1/CVE-2024-0044)
+- [l1ackernishan/CVE-2024-0044](https://github.com/l1ackernishan/CVE-2024-0044)
 - [MrW0l05zyn/cve-2024-0044](https://github.com/MrW0l05zyn/cve-2024-0044)
 - [canyie/CVE-2024-0044](https://github.com/canyie/CVE-2024-0044)
 - [Dit-Developers/CVE-2024-0044-](https://github.com/Dit-Developers/CVE-2024-0044-)
@@ -5648,6 +5668,7 @@
 - [sxyrxyy/CVE-2024-1709-ConnectWise-ScreenConnect-Authentication-Bypass](https://github.com/sxyrxyy/CVE-2024-1709-ConnectWise-ScreenConnect-Authentication-Bypass)
 - [cjybao/CVE-2024-1709-and-CVE-2024-1708](https://github.com/cjybao/CVE-2024-1709-and-CVE-2024-1708)
 - [AMRICHASFUCK/Mass-CVE-2024-1709](https://github.com/AMRICHASFUCK/Mass-CVE-2024-1709)
+- [Teexo/ScreenConnect-CVE-2024-1709-Exploit](https://github.com/Teexo/ScreenConnect-CVE-2024-1709-Exploit)
 
 ### CVE-2024-1728 (2024-04-10)
 
@@ -6175,6 +6196,13 @@
 - [rahisec/CVE-2024-4040](https://github.com/rahisec/CVE-2024-4040)
 - [ill-deed/CrushFTP-CVE-2024-4040-illdeed](https://github.com/ill-deed/CrushFTP-CVE-2024-4040-illdeed)
 
+### CVE-2024-4157 (2024-05-22)
+
+<code>The Contact Form Plugin by Fluent Forms for Quiz, Survey, and Drag &amp; Drop WP Form Builder plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 5.1.15 via deserialization of untrusted input in the extractDynamicValues function. This makes it possible for authenticated attackers, with contributor-level access and above, to inject a PHP Object. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code. Successful exploitation requires the attacker to have &quot;View Form&quot; and &quot;Manage Form&quot; permissions, which must be explicitly set by an administrator. However, this requirement can be bypassed when this vulnerability is chained with CVE-2024-2771.
+</code>
+
+- [Ch4os1/CVE-2024-4157-SSRF-RCE](https://github.com/Ch4os1/CVE-2024-4157-SSRF-RCE)
+
 ### CVE-2024-4231 (2024-05-10)
 
 <code>This vulnerability exists in Digisol Router (DG-GR1321: Hardware version 3.7L;  Firmware version : v3.2.02) due to presence of root terminal access on a serial interface without proper access control. An attacker with physical access could exploit this by identifying UART pins and accessing the root shell on the vulnerable system.\n\nSuccessful exploitation of this vulnerability could allow the attacker to access the sensitive information on the targeted system.
@@ -6458,6 +6486,7 @@
 - [XiaomingX/cve-2024-4956](https://github.com/XiaomingX/cve-2024-4956)
 - [art-of-defence/CVE-2024-4956](https://github.com/art-of-defence/CVE-2024-4956)
 - [Buff3st-0v3rfl0w/CVE-2024-4956](https://github.com/Buff3st-0v3rfl0w/CVE-2024-4956)
+- [amalpvatayam67/day04-nexus-4956](https://github.com/amalpvatayam67/day04-nexus-4956)
 
 ### CVE-2024-5009 (2024-06-25)
 
@@ -7823,7 +7852,7 @@
 - [redspy-sec/D-Link](https://github.com/redspy-sec/D-Link)
 - [dragonXZH/CVE-2024-10914](https://github.com/dragonXZH/CVE-2024-10914)
 - [yenyangmjaze/cve-2024-10914](https://github.com/yenyangmjaze/cve-2024-10914)
-- [silverxpymaster/CVE-2024-10914-Exploit](https://github.com/silverxpymaster/CVE-2024-10914-Exploit)
+- [Tamirido30/CVE-2024-10914-Exploit](https://github.com/Tamirido30/CVE-2024-10914-Exploit)
 
 ### CVE-2024-10915 (2024-11-06)
 
@@ -13332,6 +13361,13 @@
 
 - [ooooooo-q/puma_header_normalization-CVE-2024-45614](https://github.com/ooooooo-q/puma_header_normalization-CVE-2024-45614)
 
+### CVE-2024-45712 (2025-04-15)
+
+<code>SolarWinds Serv-U is vulnerable to a client-side cross-site scripting (XSS) vulnerability. The vulnerability can only be performed by an authenticated account, on the local machine, from the local browser session. Therefore the risk is very low.
+</code>
+
+- [Teexo/woocommerce_scanner](https://github.com/Teexo/woocommerce_scanner)
+
 ### CVE-2024-45870 (2024-10-03)
 
 <code>Bandisoft BandiView 7.05 is vulnerable to Incorrect Access Control in sub_0x3d80fc via a crafted POC file.
@@ -16793,6 +16829,7 @@
 </code>
 
 - [TopskiyPavelQwertyGang/Review.CVE-2023-5612](https://github.com/TopskiyPavelQwertyGang/Review.CVE-2023-5612)
+- [mad3E7cat/CVE-2023-5612](https://github.com/mad3E7cat/CVE-2023-5612)
 
 ### CVE-2023-5717 (2023-10-25)
 
@@ -17308,6 +17345,13 @@
 </code>
 
 - [Trinadh465/frameworks_av_CVE-2023-20933](https://github.com/Trinadh465/frameworks_av_CVE-2023-20933)
+
+### CVE-2023-20938 (2023-02-28)
+
+<code>In binder_transaction_buffer_release of binder.c, there is a possible use after free due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-257685302References: Upstream kernel
+</code>
+
+- [anansi2safe/CVE-2023-20938](https://github.com/anansi2safe/CVE-2023-20938)
 
 ### CVE-2023-20943 (2023-02-28)
 
@@ -38441,7 +38485,7 @@
 - [wyu0hop/CVE-2020-0096](https://github.com/wyu0hop/CVE-2020-0096)
 - [liuyun201990/StrandHogg2](https://github.com/liuyun201990/StrandHogg2)
 - [tea9/CVE-2020-0096-StrandHogg2](https://github.com/tea9/CVE-2020-0096-StrandHogg2)
-- [nishan0x1/CVE-2020-0096-strandhogg-exploit-p0c](https://github.com/nishan0x1/CVE-2020-0096-strandhogg-exploit-p0c)
+- [l1ackernishan/CVE-2020-0096-strandhogg-exploit-p0c](https://github.com/l1ackernishan/CVE-2020-0096-strandhogg-exploit-p0c)
 
 ### CVE-2020-0108 (2020-08-11)
 
@@ -43930,6 +43974,7 @@
 </code>
 
 - [shoucheng3/asf__tapestry-5_CVE-2019-0207_5-4-4](https://github.com/shoucheng3/asf__tapestry-5_CVE-2019-0207_5-4-4)
+- [shoucheng3/asf__tapestry-5_CVE-2019-0207_5_4_5_fixed](https://github.com/shoucheng3/asf__tapestry-5_CVE-2019-0207_5_4_5_fixed)
 
 ### CVE-2019-0211 (2019-04-08)
 
@@ -53802,7 +53847,7 @@
 - [giacomoferretti/janus-toolkit](https://github.com/giacomoferretti/janus-toolkit)
 - [tea9/CVE-2017-13156-Janus](https://github.com/tea9/CVE-2017-13156-Janus)
 - [M507/CVE-2017-13156](https://github.com/M507/CVE-2017-13156)
-- [nishan0x1/Janus-Vulnerability-CVE-2017-13156-Exploit](https://github.com/nishan0x1/Janus-Vulnerability-CVE-2017-13156-Exploit)
+- [l1ackernishan/Janus-Vulnerability-CVE-2017-13156-Exploit](https://github.com/l1ackernishan/Janus-Vulnerability-CVE-2017-13156-Exploit)
 - [nictjh/threatDemos](https://github.com/nictjh/threatDemos)
 
 ### CVE-2017-13208 (2018-01-12)
@@ -55912,7 +55957,6 @@
 - [elit3pwner/CVE-2015-1328-GoldenEye](https://github.com/elit3pwner/CVE-2015-1328-GoldenEye)
 - [BlackFrog-hub/cve-2015-1328](https://github.com/BlackFrog-hub/cve-2015-1328)
 - [YastrebX/CVE-2015-1328](https://github.com/YastrebX/CVE-2015-1328)
-- [devtz007/overlayfs_CVE-2015-1328](https://github.com/devtz007/overlayfs_CVE-2015-1328)
 - [1mgR00T/CVE-2015-1328](https://github.com/1mgR00T/CVE-2015-1328)
 
 ### CVE-2015-1397 (2015-04-29)
@@ -57497,6 +57541,7 @@
 - [10cks/CVE-2014-6287](https://github.com/10cks/CVE-2014-6287)
 - [francescobrina/hfs-cve-2014-6287-exploit](https://github.com/francescobrina/hfs-cve-2014-6287-exploit)
 - [rahisec/rejetto-http-file-server-2.3.x-RCE-exploit-CVE-2014-6287](https://github.com/rahisec/rejetto-http-file-server-2.3.x-RCE-exploit-CVE-2014-6287)
+- [nika0x38/CVE-2014-6287](https://github.com/nika0x38/CVE-2014-6287)
 
 ### CVE-2014-6332 (2014-11-11)
 
