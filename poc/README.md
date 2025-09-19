@@ -1221,6 +1221,7 @@
 - [tartalu/CVE-2025-8088](https://github.com/tartalu/CVE-2025-8088)
 - [techcorp/CVE-2025-8088-Exploit](https://github.com/techcorp/CVE-2025-8088-Exploit)
 - [Shinkirou789/Cve-2025-8088-WinRar-vulnerability](https://github.com/Shinkirou789/Cve-2025-8088-WinRar-vulnerability)
+- [hbesljx/CVE-2025-8088-EXP](https://github.com/hbesljx/CVE-2025-8088-EXP)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -2797,7 +2798,6 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [AventurineJ/CVE-2025-29927-Research](https://github.com/AventurineJ/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -3268,6 +3268,7 @@
 - [Mdusmandasthaheer/CVE-2025-32433](https://github.com/Mdusmandasthaheer/CVE-2025-32433)
 - [dollarboysushil/CVE-2025-32433-Erlang-OTP-SSH-Unauthenticated-RCE](https://github.com/dollarboysushil/CVE-2025-32433-Erlang-OTP-SSH-Unauthenticated-RCE)
 - [scandijamjam1/CVE-2025-32433](https://github.com/scandijamjam1/CVE-2025-32433)
+- [iteride/CVE-2025-32433](https://github.com/iteride/CVE-2025-32433)
 
 ### CVE-2025-32462 (2025-06-30)
 
@@ -3433,6 +3434,7 @@
 <code>Improper access control in Windows SMB allows an authorized attacker to elevate privileges over a network.
 </code>
 
+- [sleepasleepzzz/CVE-2025-33073](https://github.com/sleepasleepzzz/CVE-2025-33073)
 - [mverschu/CVE-2025-33073](https://github.com/mverschu/CVE-2025-33073)
 - [obscura-cert/CVE-2025-33073](https://github.com/obscura-cert/CVE-2025-33073)
 - [matejsmycka/CVE-2025-33073-checker](https://github.com/matejsmycka/CVE-2025-33073-checker)
@@ -3642,6 +3644,7 @@
 - [XiaomingX/CVE-2025-43300-exp](https://github.com/XiaomingX/CVE-2025-43300-exp)
 - [hunters-sec/CVE-2025-43300](https://github.com/hunters-sec/CVE-2025-43300)
 - [PwnToday/CVE-2025-43300](https://github.com/PwnToday/CVE-2025-43300)
+- [veniversum/cve-2025-43300](https://github.com/veniversum/cve-2025-43300)
 
 ### CVE-2025-43864 (2025-04-25)
 
@@ -4780,6 +4783,7 @@
 </code>
 
 - [Momollax/CVE-2025-53772-IIS-WebDeploy-RCE](https://github.com/Momollax/CVE-2025-53772-IIS-WebDeploy-RCE)
+- [go-bi/CVE-2025-53772-](https://github.com/go-bi/CVE-2025-53772-)
 
 ### CVE-2025-53773 (2025-08-12)
 
@@ -5120,6 +5124,7 @@
 - [watchtowrlabs/watchTowr-vs-FreePBX-CVE-2025-57819](https://github.com/watchtowrlabs/watchTowr-vs-FreePBX-CVE-2025-57819)
 - [MuhammadWaseem29/SQL-Injection-and-RCE_CVE-2025-57819](https://github.com/MuhammadWaseem29/SQL-Injection-and-RCE_CVE-2025-57819)
 - [xV4nd3Rx/CVE-2025-57819_FreePBX-PoC](https://github.com/xV4nd3Rx/CVE-2025-57819_FreePBX-PoC)
+- [orange0Mint/CVE-2025-57819_FreePBX](https://github.com/orange0Mint/CVE-2025-57819_FreePBX)
 
 ### CVE-2025-57833 (2025-09-03)
 
@@ -5152,6 +5157,13 @@
 </code>
 
 - [SexyShoelessGodofWar/CVE-2025-58780](https://github.com/SexyShoelessGodofWar/CVE-2025-58780)
+
+### CVE-2025-59342 (2025-09-17)
+
+<code>esm.sh is a nobuild content delivery network(CDN) for modern web development. In 136 and earlier, a path-traversal flaw in the handling of the X-Zone-Id HTTP header allows an attacker to cause the application to write files outside the intended storage location. The header value is used to build a filesystem path but is not properly canonicalized or restricted to the application’s storage base directory. As a result, supplying ../ sequences in X-Zone-Id causes files to be written to arbitrary directories.
+</code>
+
+- [byteReaper77/CVE-2025-59342](https://github.com/byteReaper77/CVE-2025-59342)
 
 ### CVE-2025-59359 (2025-09-15)
 
@@ -8762,7 +8774,7 @@
 
 ### CVE-2024-21793 (2024-05-08)
 
-<code>\nAn OData injection vulnerability exists in the BIG-IP Next Central Manager API (URI).  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
+<code>An OData injection vulnerability exists in the BIG-IP Next Central Manager API (URI).  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
 </code>
 
 - [FeatherStark/CVE-2024-21793](https://github.com/FeatherStark/CVE-2024-21793)
@@ -9918,7 +9930,7 @@
 
 ### CVE-2024-26026 (2024-05-08)
 
-<code>\n\n\nAn SQL injection vulnerability exists in the BIG-IP Next Central Manager API (URI).  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated\n\n
+<code>An SQL injection vulnerability exists in the BIG-IP Next Central Manager API (URI).  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated
 </code>
 
 - [passwa11/CVE-2024-26026](https://github.com/passwa11/CVE-2024-26026)
@@ -18460,7 +18472,7 @@
 <code>HAProxy before 2.7.3 may allow a bypass of access control because HTTP/1 headers are inadvertently lost in some situations, aka &quot;request smuggling.&quot; The HTTP header parsers in HAProxy may accept empty header field names, which could be used to truncate the list of HTTP headers and thus make some headers disappear after being parsed and processed for HTTP/1.0 and HTTP/1.1. For HTTP/2 and HTTP/3, the impact is limited because the headers disappear before being parsed and processed, as if they had not been sent by the client. The fixed versions are 2.7.3, 2.6.9, 2.5.12, 2.4.22, 2.2.29, and 2.0.31.
 </code>
 
-- [sgwgsw/LAB-CVE-2023-25725](https://github.com/sgwgsw/LAB-CVE-2023-25725)
+- [krillingws/LAB-CVE-2023-25725](https://github.com/krillingws/LAB-CVE-2023-25725)
 
 ### CVE-2023-25813 (2023-02-22)
 
@@ -19422,6 +19434,7 @@
 - [Chocapikk/CVE-2023-30258](https://github.com/Chocapikk/CVE-2023-30258)
 - [n00o00b/CVE-2023-30258-RCE-POC](https://github.com/n00o00b/CVE-2023-30258-RCE-POC)
 - [AdityaBhatt3010/TryHackMe-Room-Walkthrough-Billing](https://github.com/AdityaBhatt3010/TryHackMe-Room-Walkthrough-Billing)
+- [abdullohqurbon0v/CVE-2023-30258-Exploit-For-Magnus-Billing-System](https://github.com/abdullohqurbon0v/CVE-2023-30258-Exploit-For-Magnus-Billing-System)
 
 ### CVE-2023-30347 (2023-06-22)
 
@@ -23767,6 +23780,13 @@
 </code>
 
 - [3zizme/CVE-2023-49339](https://github.com/3zizme/CVE-2023-49339)
+
+### CVE-2023-49367 (2025-09-18)
+
+<code>An issue in user interface in Kyocera Command Center RX EXOSYS M5521cdn allows remote to obtain sensitive information via inspecting sent packages by user.
+</code>
+
+- [barisbaydur/CVE-2023-49367](https://github.com/barisbaydur/CVE-2023-49367)
 
 ### CVE-2023-49438 (2023-12-26)
 
@@ -30084,7 +30104,6 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [AventurineJ/CVE-2022-39299-Research](https://github.com/AventurineJ/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -53478,7 +53497,6 @@
 - [joelindra/Argus](https://github.com/joelindra/Argus)
 - [drcrypterdotru/PHPUnit-GoScan](https://github.com/drcrypterdotru/PHPUnit-GoScan)
 - [Pwdnx1337/CVE-2017-9841](https://github.com/Pwdnx1337/CVE-2017-9841)
-- [Habibullah1101/PHPUnit-GoScan](https://github.com/Habibullah1101/PHPUnit-GoScan)
 
 ### CVE-2017-9934 (2017-07-17)
 
