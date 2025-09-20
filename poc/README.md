@@ -37,6 +37,8 @@
 </code>
 
 - [dodiorne/cve-2025-0133](https://github.com/dodiorne/cve-2025-0133)
+- [ynsmroztas/-CVE-2025-0133-GlobalProtect-XSS](https://github.com/ynsmroztas/-CVE-2025-0133-GlobalProtect-XSS)
+- [INTELEON404/CVE-2025-0133](https://github.com/INTELEON404/CVE-2025-0133)
 - [shawarkhanethicalhacker/CVE-2025-0133-exploit](https://github.com/shawarkhanethicalhacker/CVE-2025-0133-exploit)
 
 ### CVE-2025-0282 (2025-01-08)
@@ -341,7 +343,7 @@
 
 ### CVE-2025-2404 (2025-09-16)
 
-<code>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Ubit Information Technologies STOYS allows Cross-Site Scripting (XSS).This issue affects STOYS: from 2 through 20250916. \n\nNOTE: The vendor did not inform about the completion of the fixing process within the specified time. The CVE will be updated when new information becomes available.
+<code>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Ubit Information Technologies STOYS allows Cross-Site Scripting (XSS).This issue affects STOYS: from 2 before 20250916.
 </code>
 
 - [sahici/CVE-2025-2404](https://github.com/sahici/CVE-2025-2404)
@@ -1388,6 +1390,13 @@
 
 - [drackyjr/CVE-2025-9784](https://github.com/drackyjr/CVE-2025-9784)
 
+### CVE-2025-10035 (2025-09-18)
+
+<code>A deserialization vulnerability in the License Servlet of Fortra's GoAnywhere MFT allows an actor with a validly forged license response signature to deserialize an arbitrary actor-controlled object, possibly leading to command injection.
+</code>
+
+- [h4xnz/CVE-2025-10035-Exploit](https://github.com/h4xnz/CVE-2025-10035-Exploit)
+
 ### CVE-2025-10046 (2025-09-06)
 
 <code>The ELEX WooCommerce Google Shopping (Google Product Feed) plugin for WordPress is vulnerable to SQL Injection via the 'file_to_delete' parameter in all versions up to, and including, 1.4.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for authenticated attackers, with Administrator-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.
@@ -1402,12 +1411,8 @@
 
 - [MooseLoveti/PagSeguro-Connect-Para-WooCommerce-CVE-Report](https://github.com/MooseLoveti/PagSeguro-Connect-Para-WooCommerce-CVE-Report)
 
-### CVE-2025-10533 (2025-09-16)
-
-<code>This vulnerability affects Firefox &lt; 143, Firefox ESR &lt; 115.28, Firefox ESR &lt; 140.3, Thunderbird &lt; 143, and Thunderbird &lt; 140.3.
-</code>
-
-- [h4xnz/CVE-2025-10533-Exploit](https://github.com/h4xnz/CVE-2025-10533-Exploit)
+### CVE-2025-10585
+- [AdityaBhatt3010/CVE-2025-10585-The-Chrome-V8-Zero-Day](https://github.com/AdityaBhatt3010/CVE-2025-10585-The-Chrome-V8-Zero-Day)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -4097,7 +4102,11 @@
 
 - [gamesarchive/CVE-2025-48543](https://github.com/gamesarchive/CVE-2025-48543)
 
-### CVE-2025-48703
+### CVE-2025-48703 (2025-09-19)
+
+<code>CWP (aka Control Web Panel or CentOS Web Panel) before 0.9.8.1205 allows unauthenticated remote code execution via shell metacharacters in the t_total parameter in a filemanager changePerm request. A valid non-root username must be known.
+</code>
+
 - [itstarsec/CVE-2025-48703](https://github.com/itstarsec/CVE-2025-48703)
 
 ### CVE-2025-48708 (2025-05-23)
@@ -4115,7 +4124,6 @@
 - [Wh04m1001/CVE-2025-48799](https://github.com/Wh04m1001/CVE-2025-48799)
 - [painoob/CVE-2025-48799](https://github.com/painoob/CVE-2025-48799)
 - [mrk336/CVE-2025-48799](https://github.com/mrk336/CVE-2025-48799)
-- [mrk336/Header-Havoc-Cracking-CVE-2025-48799-in-Apache-Tomcat](https://github.com/mrk336/Header-Havoc-Cracking-CVE-2025-48799-in-Apache-Tomcat)
 
 ### CVE-2025-48827 (2025-05-27)
 
@@ -4151,7 +4159,7 @@
 - [AC8999/CVE-2025-49113](https://github.com/AC8999/CVE-2025-49113)
 - [LeakForge/CVE-2025-49113](https://github.com/LeakForge/CVE-2025-49113)
 - [Zuack55/Roundcube-1.6.10-Post-Auth-RCE-CVE-2025-49113-](https://github.com/Zuack55/Roundcube-1.6.10-Post-Auth-RCE-CVE-2025-49113-)
-- [l4f2s4/CVE-2025-49113-exploit.php](https://github.com/l4f2s4/CVE-2025-49113-exploit.php)
+- [l4f2s4/CVE-2025-49113_exploit_cookies](https://github.com/l4f2s4/CVE-2025-49113_exploit_cookies)
 
 ### CVE-2025-49125 (2025-06-16)
 
@@ -4178,6 +4186,7 @@
 - [timsonner/CVE-2025-49144-Research](https://github.com/timsonner/CVE-2025-49144-Research)
 - [0xCZR1/cve-2025-49144](https://github.com/0xCZR1/cve-2025-49144)
 - [onniio/CVE-2025-49144](https://github.com/onniio/CVE-2025-49144)
+- [ammarm0010/CVE-2025-49144_PoC](https://github.com/ammarm0010/CVE-2025-49144_PoC)
 
 ### CVE-2025-49223 (2025-06-04)
 
@@ -4975,6 +4984,13 @@
 
 - [mrk336/Patch-the-Path-CVE-2025-55234-Detection-Defense](https://github.com/mrk336/Patch-the-Path-CVE-2025-55234-Detection-Defense)
 
+### CVE-2025-55241 (2025-09-04)
+
+<code>Azure Entra Elevation of Privilege Vulnerability
+</code>
+
+- [Spanky-McSpank/CVE-2025-55241-Internal-Audit](https://github.com/Spanky-McSpank/CVE-2025-55241-Internal-Audit)
+
 ### CVE-2025-55287 (2025-08-18)
 
 <code>Genealogy is a family tree PHP application. Prior to 4.4.0, Authenticated Stored Cross-Site Scripting (XSS) vulnerability was identified in the Genealogy application. Authenticated attackers could run arbitrary JavaScript in another user’s session, leading to session hijacking, data theft, and UI manipulation. This vulnerability is fixed in 4.4.0.
@@ -5063,6 +5079,13 @@
 </code>
 
 - [anonaninda/Aninda-security-advisories](https://github.com/anonaninda/Aninda-security-advisories)
+
+### CVE-2025-56762 (2025-09-19)
+
+<code>Paracrawl KeOPs v2 is vulnerable to Cross Site Scripting (XSS) in error.php.
+</code>
+
+- [Shaunak-Chatterjee/CVE-2025-56762](https://github.com/Shaunak-Chatterjee/CVE-2025-56762)
 
 ### CVE-2025-56771
 - [RRespxwnss/CVE-2025-56771](https://github.com/RRespxwnss/CVE-2025-56771)
@@ -15382,6 +15405,9 @@
 </code>
 
 - [woshidaheike/CVE-2024-57241](https://github.com/woshidaheike/CVE-2024-57241)
+
+### CVE-2024-57366
+- [h4ckusaur/CVE-2024-57366](https://github.com/h4ckusaur/CVE-2024-57366)
 
 ### CVE-2024-57373 (2025-01-27)
 
@@ -52717,7 +52743,7 @@
 <code>Odoo Version &lt;= 8.0-20160726 and Version 9 is affected by: CWE-601: Open redirection. The impact is: obtain sensitive information (remote).
 </code>
 
-- [1337rokudenashi/CVE-2017-5871](https://github.com/1337rokudenashi/CVE-2017-5871)
+- [1337rokudenashi/Odoo-leq-8.0-20160726-and-9.0-Open-Redirect](https://github.com/1337rokudenashi/Odoo-leq-8.0-20160726-and-9.0-Open-Redirect)
 
 ### CVE-2017-5941 (2017-02-09)
 
