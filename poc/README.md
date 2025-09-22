@@ -1219,10 +1219,11 @@
 - [kitsuneshade/WinRAR-Exploit-Tool---Rust-Edition](https://github.com/kitsuneshade/WinRAR-Exploit-Tool---Rust-Edition)
 - [walidpyh/CVE-2025-8088](https://github.com/walidpyh/CVE-2025-8088)
 - [hexsecteam/CVE-2025-8088-Winrar-Tool](https://github.com/hexsecteam/CVE-2025-8088-Winrar-Tool)
-- [tartalu/CVE-2025-8088](https://github.com/tartalu/CVE-2025-8088)
 - [techcorp/CVE-2025-8088-Exploit](https://github.com/techcorp/CVE-2025-8088-Exploit)
 - [Shinkirou789/Cve-2025-8088-WinRar-vulnerability](https://github.com/Shinkirou789/Cve-2025-8088-WinRar-vulnerability)
+- [Osinskitito499/CVE-2025-8088](https://github.com/Osinskitito499/CVE-2025-8088)
 - [hbesljx/CVE-2025-8088-EXP](https://github.com/hbesljx/CVE-2025-8088-EXP)
+- [m4nbun/CVE-2025-8088](https://github.com/m4nbun/CVE-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1397,6 +1398,7 @@
 
 - [h4xnz/CVE-2025-10035-Exploit](https://github.com/h4xnz/CVE-2025-10035-Exploit)
 - [rxerium/CVE-2025-10035](https://github.com/rxerium/CVE-2025-10035)
+- [ThemeHackers/CVE-2025-10035](https://github.com/ThemeHackers/CVE-2025-10035)
 
 ### CVE-2025-10046 (2025-09-06)
 
@@ -2085,6 +2087,7 @@
 - [0xgh057r3c0n/CVE-2025-25257](https://github.com/0xgh057r3c0n/CVE-2025-25257)
 - [mrmtwoj/CVE-2025-25257](https://github.com/mrmtwoj/CVE-2025-25257)
 - [TheStingR/CVE-2025-25257](https://github.com/TheStingR/CVE-2025-25257)
+- [segfault-it/CVE-2025-25257](https://github.com/segfault-it/CVE-2025-25257)
 
 ### CVE-2025-25279 (2025-02-24)
 
@@ -2818,7 +2821,7 @@
 - [dedibagus/cve-2025-29927-poc](https://github.com/dedibagus/cve-2025-29927-poc)
 - [alastair66/CVE-2025-29927](https://github.com/alastair66/CVE-2025-29927)
 - [BilalGns/CVE-2025-29927](https://github.com/BilalGns/CVE-2025-29927)
-- [nyctophile0969/CVE-2025-29927](https://github.com/nyctophile0969/CVE-2025-29927)
+- [JOOJIII/CVE-2025-29927](https://github.com/JOOJIII/CVE-2025-29927)
 - [Naveen-005/Next.Js-middleware-bypass-vulnerability-CVE-2025-29927](https://github.com/Naveen-005/Next.Js-middleware-bypass-vulnerability-CVE-2025-29927)
 - [Gokul-Krishnan-V-R/cve-2025-29927](https://github.com/Gokul-Krishnan-V-R/cve-2025-29927)
 - [fahimalshihab/NextBypass](https://github.com/fahimalshihab/NextBypass)
@@ -2862,6 +2865,7 @@
 - [MKIRAHMET/CVE-2025-29927-PoC](https://github.com/MKIRAHMET/CVE-2025-29927-PoC)
 - [adjscent/vulnerable-nextjs-14-CVE-2025-29927](https://github.com/adjscent/vulnerable-nextjs-14-CVE-2025-29927)
 - [sdrtba/CVE-2025-29927](https://github.com/sdrtba/CVE-2025-29927)
+- [iteride/CVE-2025-29927](https://github.com/iteride/CVE-2025-29927)
 
 ### CVE-2025-29972 (2025-05-08)
 
@@ -3511,6 +3515,7 @@
 </code>
 
 - [Chocapikk/CVE-2025-34152](https://github.com/Chocapikk/CVE-2025-34152)
+- [kh4sh3i/CVE-2025-34152](https://github.com/kh4sh3i/CVE-2025-34152)
 
 ### CVE-2025-34157 (2025-08-27)
 
@@ -4189,6 +4194,7 @@
 <code>Notepad++ is a free and open-source source code editor. In versions 8.8.1 and prior, a privilege escalation vulnerability exists in the Notepad++ v8.8.1 installer that allows unprivileged users to gain SYSTEM-level privileges through insecure executable search paths. An attacker could use social engineering or clickjacking to trick users into downloading both the legitimate installer and a malicious executable to the same directory (typically Downloads folder - which is known as Vulnerable directory). Upon running the installer, the attack executes automatically with SYSTEM privileges. This issue has been fixed and will be released in version 8.8.2.
 </code>
 
+- [TheTorjanCaptain/CVE-2025-49144_PoC](https://github.com/TheTorjanCaptain/CVE-2025-49144_PoC)
 - [b0ySie7e/Notepad-8.8.1_CVE-2025-49144](https://github.com/b0ySie7e/Notepad-8.8.1_CVE-2025-49144)
 - [timsonner/CVE-2025-49144-Research](https://github.com/timsonner/CVE-2025-49144-Research)
 - [0xCZR1/cve-2025-49144](https://github.com/0xCZR1/cve-2025-49144)
@@ -13609,6 +13615,7 @@
 
 - [CodePontiff/next_js_poisoning](https://github.com/CodePontiff/next_js_poisoning)
 - [Lercas/CVE-2024-46982](https://github.com/Lercas/CVE-2024-46982)
+- [melmathari/CVE-2024-46982-NUCLEI](https://github.com/melmathari/CVE-2024-46982-NUCLEI)
 
 ### CVE-2024-46986 (2024-09-18)
 
@@ -39224,6 +39231,7 @@
 - [DannyRavi/nmap-scripts](https://github.com/DannyRavi/nmap-scripts)
 - [tdevworks/CVE-2020-0796-SMBGhost-Exploit-Demo](https://github.com/tdevworks/CVE-2020-0796-SMBGhost-Exploit-Demo)
 - [esmwaSpyware/DoS-PoC-for-CVE-2020-0796-SMBGhost-](https://github.com/esmwaSpyware/DoS-PoC-for-CVE-2020-0796-SMBGhost-)
+- [Jagadeesh7532/-CVE-2020-0796-SMBGhost-Windows-10-SMBv3-Remote-Code-Execution-Vulnerability](https://github.com/Jagadeesh7532/-CVE-2020-0796-SMBGhost-Windows-10-SMBv3-Remote-Code-Execution-Vulnerability)
 
 ### CVE-2020-0887 (2020-03-12)
 
@@ -49658,6 +49666,7 @@
 - [xxxTectationxxx/CVE-2018-7600](https://github.com/xxxTectationxxx/CVE-2018-7600)
 - [muhammedkayag/CVE-2018-7600](https://github.com/muhammedkayag/CVE-2018-7600)
 - [SyedGhufranRaza/CVE-2018-7600-Remote-Code-Execution](https://github.com/SyedGhufranRaza/CVE-2018-7600-Remote-Code-Execution)
+- [nika0x38/CVE-2018-7600](https://github.com/nika0x38/CVE-2018-7600)
 
 ### CVE-2018-7602 (2018-07-19)
 
@@ -50755,6 +50764,7 @@
 - [Zeop-CyberSec/fortios_vpnssl_traversal_leak](https://github.com/Zeop-CyberSec/fortios_vpnssl_traversal_leak)
 - [B1anda0/CVE-2018-13379](https://github.com/B1anda0/CVE-2018-13379)
 - [nivdolgin/CVE-2018-13379](https://github.com/nivdolgin/CVE-2018-13379)
+- [kh4sh3i/CVE-2018-13379](https://github.com/kh4sh3i/CVE-2018-13379)
 
 ### CVE-2018-13382 (2019-06-04)
 
