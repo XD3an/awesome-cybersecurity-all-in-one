@@ -365,6 +365,7 @@
 - [Yucaerin/CVE-2025-2294](https://github.com/Yucaerin/CVE-2025-2294)
 - [0xWhoami35/CVE-2025-2294](https://github.com/0xWhoami35/CVE-2025-2294)
 - [r0otk3r/CVE-2025-2294](https://github.com/r0otk3r/CVE-2025-2294)
+- [iteride/CVE-2025-2294](https://github.com/iteride/CVE-2025-2294)
 
 ### CVE-2025-2301 (2025-07-21)
 
@@ -652,7 +653,6 @@
 - [imbas007/CVE-2025-4123-template](https://github.com/imbas007/CVE-2025-4123-template)
 - [ynsmroztas/CVE-2025-4123-Exploit-Tool-Grafana-](https://github.com/ynsmroztas/CVE-2025-4123-Exploit-Tool-Grafana-)
 - [B1ack4sh/Blackash-CVE-2025-4123](https://github.com/B1ack4sh/Blackash-CVE-2025-4123)
-- [DesDoTvl/CVE-2025-4123grafana](https://github.com/DesDoTvl/CVE-2025-4123grafana)
 - [punitdarji/Grafana-cve-2025-4123](https://github.com/punitdarji/Grafana-cve-2025-4123)
 - [ItsNee/Grafana-CVE-2025-4123-POC](https://github.com/ItsNee/Grafana-CVE-2025-4123-POC)
 
@@ -1572,7 +1572,19 @@
 
 - [MooseLoveti/PagSeguro-Connect-Para-WooCommerce-CVE-Report](https://github.com/MooseLoveti/PagSeguro-Connect-Para-WooCommerce-CVE-Report)
 
-### CVE-2025-10585
+### CVE-2025-10184 (2025-09-23)
+
+<code>The vulnerability allows any application installed on the device to read SMS/MMS data and metadata from the system-provided Telephony provider without permission, user interaction, or consent. The user is also not notified that SMS data is being accessed. This could lead to sensitive information disclosure and could effectively break the security provided by SMS-based Multi-Factor Authentication (MFA) checks. \n\nThe root cause is a combination of missing permissions for write operations in several content providers (com.android.providers.telephony.PushMessageProvider, com.android.providers.telephony.PushShopProvider, com.android.providers.telephony.ServiceNumberProvider), and a blind SQL injection in the update method of those providers.
+</code>
+
+- [People-11/CVE-2025-10184_PoC](https://github.com/People-11/CVE-2025-10184_PoC)
+- [yuuouu/ColorOS-CVE-2025-10184](https://github.com/yuuouu/ColorOS-CVE-2025-10184)
+
+### CVE-2025-10585 (2025-09-24)
+
+<code>Type confusion in V8 in Google Chrome prior to 140.0.7339.185 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+</code>
+
 - [AdityaBhatt3010/CVE-2025-10585-The-Chrome-V8-Zero-Day](https://github.com/AdityaBhatt3010/CVE-2025-10585-The-Chrome-V8-Zero-Day)
 - [callinston/CVE-2025-10585](https://github.com/callinston/CVE-2025-10585)
 
@@ -2093,7 +2105,6 @@
 
 - [MuhammadWaseem29/CVE-2025-24799](https://github.com/MuhammadWaseem29/CVE-2025-24799)
 - [nak000/CVE-2025-24799-sqli](https://github.com/nak000/CVE-2025-24799-sqli)
-- [MatheuZSecurity/Exploit-CVE-2025-24799](https://github.com/MatheuZSecurity/Exploit-CVE-2025-24799)
 - [galletitaconpate/CVE-2025-24799](https://github.com/galletitaconpate/CVE-2025-24799)
 - [Rosemary1337/CVE-2025-24799](https://github.com/Rosemary1337/CVE-2025-24799)
 - [airbus-cert/CVE-2025-24799-scanner](https://github.com/airbus-cert/CVE-2025-24799-scanner)
@@ -3128,7 +3139,7 @@
 - [amitlttwo/Next.JS-CVE-2025-29927](https://github.com/amitlttwo/Next.JS-CVE-2025-29927)
 - [aayush256-sys/next-js-auth-bypass](https://github.com/aayush256-sys/next-js-auth-bypass)
 - [mickhacking/Thank-u-Next](https://github.com/mickhacking/Thank-u-Next)
-- [Kamal-Hegazi/CVE-2025-29927-Next.js-Middleware-Authorization-Bypass](https://github.com/Kamal-Hegazi/CVE-2025-29927-Next.js-Middleware-Authorization-Bypass)
+- [0xh3g4z1/CVE-2025-29927-Next.js-Middleware-Authorization-Bypass](https://github.com/0xh3g4z1/CVE-2025-29927-Next.js-Middleware-Authorization-Bypass)
 - [sahbaazansari/CVE-2025-29927](https://github.com/sahbaazansari/CVE-2025-29927)
 - [b4sh0xf/PoC-CVE-2025-29927](https://github.com/b4sh0xf/PoC-CVE-2025-29927)
 - [rgvillanueva28/vulnbox-easy-CVE-2025-29927](https://github.com/rgvillanueva28/vulnbox-easy-CVE-2025-29927)
@@ -3576,6 +3587,7 @@
 - [dollarboysushil/CVE-2025-32433-Erlang-OTP-SSH-Unauthenticated-RCE](https://github.com/dollarboysushil/CVE-2025-32433-Erlang-OTP-SSH-Unauthenticated-RCE)
 - [scandijamjam1/CVE-2025-32433](https://github.com/scandijamjam1/CVE-2025-32433)
 - [iteride/CVE-2025-32433](https://github.com/iteride/CVE-2025-32433)
+- [mirmeweu/cve-2025-32433](https://github.com/mirmeweu/cve-2025-32433)
 
 ### CVE-2025-32462 (2025-06-30)
 
@@ -5296,7 +5308,7 @@
 - [bharath-cyber-root/sharepoint-toolshell-cve-2025-53770](https://github.com/bharath-cyber-root/sharepoint-toolshell-cve-2025-53770)
 - [Rabbitbong/OurSharePoint-CVE-2025-53770](https://github.com/Rabbitbong/OurSharePoint-CVE-2025-53770)
 - [Udyz/CVE-2025-53770-Exploit](https://github.com/Udyz/CVE-2025-53770-Exploit)
-- [Kamal-Hegazi/CVE-2025-53770-SharePoint-RCE](https://github.com/Kamal-Hegazi/CVE-2025-53770-SharePoint-RCE)
+- [0xh3g4z1/CVE-2025-53770-SharePoint-RCE](https://github.com/0xh3g4z1/CVE-2025-53770-SharePoint-RCE)
 - [BirdsAreFlyingCameras/CVE-2025-53770_Raw-HTTP-Request-Generator](https://github.com/BirdsAreFlyingCameras/CVE-2025-53770_Raw-HTTP-Request-Generator)
 - [bossnick98/-SOC342---CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-and-RCE](https://github.com/bossnick98/-SOC342---CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-and-RCE)
 - [3a7/CVE-2025-53770](https://github.com/3a7/CVE-2025-53770)
@@ -5408,7 +5420,6 @@
 <code>1Panel is a web interface and MCP Server that manages websites, files, containers, databases, and LLMs on a Linux server. In versions 2.0.5 and below, the HTTPS protocol used for communication between the Core and Agent endpoints has incomplete certificate verification during certificate validation, leading to unauthorized interface access. Due to the presence of numerous command execution or high-privilege interfaces in 1Panel, this results in Remote Code Execution (RCE). This is fixed in version 2.0.6. The CVE has been translated from Simplified Chinese using GitHub Copilot.
 </code>
 
-- [bejbitoilet5125521/CVE-2025-54424](https://github.com/bejbitoilet5125521/CVE-2025-54424)
 - [Mr-xn/CVE-2025-54424](https://github.com/Mr-xn/CVE-2025-54424)
 - [hophtien/CVE-2025-54424](https://github.com/hophtien/CVE-2025-54424)
 
@@ -5510,7 +5521,7 @@
 
 ### CVE-2025-55241 (2025-09-04)
 
-<code>Azure Entra Elevation of Privilege Vulnerability
+<code>Azure Entra ID Elevation of Privilege Vulnerability
 </code>
 
 - [Spanky-McSpank/CVE-2025-55241-Internal-Audit](https://github.com/Spanky-McSpank/CVE-2025-55241-Internal-Audit)
@@ -5669,12 +5680,40 @@
 
 - [shinyColumn/CVE-2025-56803](https://github.com/shinyColumn/CVE-2025-56803)
 
+### CVE-2025-56815 (2025-09-24)
+
+<code>Datart 1.0.0-rc.3 is vulnerable to Directory Traversal in the POST /viz/image interface, since the server directly uses MultipartFile.transferTo() to save the uploaded file to a path controllable by the user, and lacks strict verification of the file name.
+</code>
+
+- [xiaoxiaoranxxx/CVE-2025-56815](https://github.com/xiaoxiaoranxxx/CVE-2025-56815)
+
+### CVE-2025-56819 (2025-09-24)
+
+<code>An issue in Datart v.1.0.0-rc.3 allows a remote attacker to execute arbitrary code via the INIT connection parameter.
+</code>
+
+- [xyyzxc/CVE-2025-56819](https://github.com/xyyzxc/CVE-2025-56819)
+
 ### CVE-2025-57055 (2025-09-17)
 
 <code>WonderCMS 3.5.0 is vulnerable to Server-Side Request Forgery (SSRF) in the custom module installation functionality. An authenticated administrator can supply a malicious URL via the pluginThemeUrl POST parameter. The server fetches the provided URL using curl_exec() without sufficient validation, allowing the attacker to force internal or external HTTP requests.
 </code>
 
 - [thawphone/CVE-2025-57055](https://github.com/thawphone/CVE-2025-57055)
+
+### CVE-2025-57174 (2025-09-15)
+
+<code>An issue was discovered in Siklu Communications Etherhaul 8010TX and 1200FX devices, Firmware 7.4.0 through 10.7.3 and possibly other previous versions. The rfpiped service listening on TCP port 555 which uses static AES encryption keys hardcoded in the binary. These keys are identical across all devices, allowing attackers to craft encrypted packets that execute arbitrary commands without authentication. This is a failed patch for CVE-2017-7318. This issue may affect other Etherhaul series devices with shared firmware.
+</code>
+
+- [semaja22/CVE-2025-57174](https://github.com/semaja22/CVE-2025-57174)
+
+### CVE-2025-57176 (2025-09-15)
+
+<code>The rfpiped service on TCP port 555 in Ceragon Networks / Siklu Communication EtherHaul series (8010TX and 1200FX tested) Firmware 7.4.0 through 10.7.3 allows unauthenticated file uploads to any writable location on the device. File upload packets use weak encryption (metadata only) with file contents transmitted in cleartext. No authentication or path validation is performed.
+</code>
+
+- [semaja22/CVE-2025-57176](https://github.com/semaja22/CVE-2025-57176)
 
 ### CVE-2025-57392 (2025-09-10)
 
@@ -6816,13 +6855,6 @@
 </code>
 
 - [taeseongk/CVE-2024-3690](https://github.com/taeseongk/CVE-2024-3690)
-
-### CVE-2024-3721 (2024-04-13)
-
-<code>Eine kritische Schwachstelle wurde in TBK DVR-4104 and DVR-4216 bis 20240412 gefunden. Betroffen davon ist ein unbekannter Prozess der Datei /device.rsp?opt=sys&amp;cmd=___S_O_S_T_R_E_A_MAX___. Mittels dem Manipulieren des Arguments mdb/mdc mit unbekannten Daten kann eine os command injection-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei über das Netzwerk erfolgen. Der Exploit steht zur öffentlichen Verfügung.
-</code>
-
-- [qalvynn/CVE-2024-3721---POC](https://github.com/qalvynn/CVE-2024-3721---POC)
 
 ### CVE-2024-3806 (2024-05-09)
 
@@ -11654,6 +11686,7 @@
 - [ashutosh0408/CVE-2024-32002](https://github.com/ashutosh0408/CVE-2024-32002)
 - [ashutosh0408/Cve-2024-32002-poc](https://github.com/ashutosh0408/Cve-2024-32002-poc)
 - [Dre4m017/fuzzy](https://github.com/Dre4m017/fuzzy)
+- [JoaoLeonello/cve-2024-32002-poc](https://github.com/JoaoLeonello/cve-2024-32002-poc)
 
 ### CVE-2024-32004 (2024-05-14)
 
@@ -18133,13 +18166,6 @@
 
 - [Trinadh465/frameworks_base_CVE-2023-20944](https://github.com/Trinadh465/frameworks_base_CVE-2023-20944)
 
-### CVE-2023-20945 (2023-02-28)
-
-<code>In phNciNfc_MfCreateXchgDataHdr of phNxpExtns_MifareStd.cpp, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10Android ID: A-246932269
-</code>
-
-- [Ailenchick/CVE-2023-20945](https://github.com/Ailenchick/CVE-2023-20945)
-
 ### CVE-2023-20955 (2023-03-24)
 
 <code>In onPrepareOptionsMenu of AppInfoDashboardFragment.java, there is a possible way to bypass admin restrictions and uninstall applications for all users due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-258653813
@@ -18154,7 +18180,6 @@
 
 - [pwnipc/BadParcel](https://github.com/pwnipc/BadParcel)
 - [Trinadh465/frameworks_base_AOSP10_r33_CVE-2023-20963](https://github.com/Trinadh465/frameworks_base_AOSP10_r33_CVE-2023-20963)
-- [Ailenchick/CVE-2023-20963](https://github.com/Ailenchick/CVE-2023-20963)
 - [black7024/BadParcel](https://github.com/black7024/BadParcel)
 
 ### CVE-2023-21036 (2023-03-24)
@@ -21151,6 +21176,13 @@
 </code>
 
 - [mbadanoiu/CVE-2023-34212](https://github.com/mbadanoiu/CVE-2023-34212)
+
+### CVE-2023-34233 (2023-06-08)
+
+<code>The Snowflake Connector for Python provides an interface for developing Python applications that can connect to Snowflake and perform all standard operations. Versions prior to 3.0.2 are vulnerable to command injection via single sign-on(SSO) browser URL authentication. In order to exploit the potential for command injection, an attacker would need to be successful in (1) establishing a malicious resource and (2) redirecting users to utilize the resource. The attacker could set up a malicious, publicly accessible server which responds to the SSO URL with an attack payload. If the attacker then tricked a user into visiting the maliciously crafted connection URL, the user’s local machine would render the malicious payload, leading to a remote code execution. This attack scenario can be mitigated through URL whitelisting as well as common anti-phishing resources. Version 3.0.2 contains a patch for this issue.
+</code>
+
+- [nayankadamm/CVE-2023-34233_Proof_OF_Concept](https://github.com/nayankadamm/CVE-2023-34233_Proof_OF_Concept)
 
 ### CVE-2023-34312 (2023-06-01)
 
@@ -27693,6 +27725,13 @@
 </code>
 
 - [jkroepke/CVE-2022-24348-2](https://github.com/jkroepke/CVE-2022-24348-2)
+
+### CVE-2022-24434 (2022-05-20)
+
+<code>This affects all versions of package dicer. A malicious attacker can send a modified form to server, and crash the nodejs service. An attacker could sent the payload again and again so that the service continuously crashes.
+</code>
+
+- [nayankadamm/CVE-2022-24434_POC](https://github.com/nayankadamm/CVE-2022-24434_POC)
 
 ### CVE-2022-24439 (2022-12-12)
 
@@ -50394,6 +50433,7 @@
 - [muhammedkayag/CVE-2018-7600](https://github.com/muhammedkayag/CVE-2018-7600)
 - [SyedGhufranRaza/CVE-2018-7600-Remote-Code-Execution](https://github.com/SyedGhufranRaza/CVE-2018-7600-Remote-Code-Execution)
 - [nika0x38/CVE-2018-7600](https://github.com/nika0x38/CVE-2018-7600)
+- [tea-celikik/Drupal-Exploit-Lab](https://github.com/tea-celikik/Drupal-Exploit-Lab)
 
 ### CVE-2018-7602 (2018-07-19)
 
@@ -54592,6 +54632,7 @@
 
 - [brianwrf/S2-053-CVE-2017-12611](https://github.com/brianwrf/S2-053-CVE-2017-12611)
 - [tcetin704/CVE-2017-12611](https://github.com/tcetin704/CVE-2017-12611)
+- [zeynepsilao/CVE-2017-12611_Exploit](https://github.com/zeynepsilao/CVE-2017-12611_Exploit)
 
 ### CVE-2017-12615 (2017-09-19)
 
