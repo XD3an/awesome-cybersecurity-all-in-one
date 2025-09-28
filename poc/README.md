@@ -1584,6 +1584,13 @@
 
 - [balajigund/Research-on-CVE-2025-9998](https://github.com/balajigund/Research-on-CVE-2025-9998)
 
+### CVE-2025-9999 (2025-09-05)
+
+<code>Some payload elements of the messages sent between two stations in a networking architecture are not properly checked on the receiving station allowing an attacker to execute unauthorized commands in the application.
+</code>
+
+- [umxr286/ExploitScript](https://github.com/umxr286/ExploitScript)
+
 ### CVE-2025-10035 (2025-09-18)
 
 <code>A deserialization vulnerability in the License Servlet of Fortra's GoAnywhere MFT allows an actor with a validly forged license response signature to deserialize an arbitrary actor-controlled object, possibly leading to command injection.
@@ -1591,6 +1598,7 @@
 
 - [rxerium/CVE-2025-10035](https://github.com/rxerium/CVE-2025-10035)
 - [ThemeHackers/CVE-2025-10035](https://github.com/ThemeHackers/CVE-2025-10035)
+- [orange0Mint/CVE-2025-10035_GoAnywhere](https://github.com/orange0Mint/CVE-2025-10035_GoAnywhere)
 
 ### CVE-2025-10046 (2025-09-06)
 
@@ -1620,7 +1628,6 @@
 </code>
 
 - [AdityaBhatt3010/CVE-2025-10585-The-Chrome-V8-Zero-Day](https://github.com/AdityaBhatt3010/CVE-2025-10585-The-Chrome-V8-Zero-Day)
-- [callinston/CVE-2025-10585](https://github.com/callinston/CVE-2025-10585)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -1656,6 +1663,13 @@
 - [grupooruss/CVE-2025-20281-Cisco](https://github.com/grupooruss/CVE-2025-20281-Cisco)
 - [ill-deed/Cisco-CVE-2025-20281-illdeed](https://github.com/ill-deed/Cisco-CVE-2025-20281-illdeed)
 - [B1ack4sh/Blackash-CVE-2025-20281](https://github.com/B1ack4sh/Blackash-CVE-2025-20281)
+
+### CVE-2025-20333 (2025-09-25)
+
+<code>A vulnerability in the VPN web server of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an authenticated, remote attacker to execute arbitrary code on an affected device.\r\n\r This vulnerability is due to improper validation of user-supplied input in HTTP(S) requests. An attacker with valid VPN user credentials could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful exploit could allow the attacker to execute arbitrary code as root, possibly resulting in the complete compromise of the affected device.
+</code>
+
+- [callinston/CVE-2025-20333](https://github.com/callinston/CVE-2025-20333)
 
 ### CVE-2025-20352 (2025-09-24)
 
@@ -3980,6 +3994,13 @@
 
 - [Nxploited/CVE-2025-39538](https://github.com/Nxploited/CVE-2025-39538)
 
+### CVE-2025-39596 (2025-04-17)
+
+<code>Weak Authentication vulnerability in Quentn.com GmbH Quentn WP allows Privilege Escalation. This issue affects Quentn WP: from n/a through 1.2.8.
+</code>
+
+- [Nxploited/CVE-2025-39596](https://github.com/Nxploited/CVE-2025-39596)
+
 ### CVE-2025-39601 (2025-04-16)
 
 <code>Cross-Site Request Forgery (CSRF) vulnerability in WPFactory Custom CSS, JS &amp; PHP allows Remote Code Inclusion. This issue affects Custom CSS, JS &amp; PHP: from n/a through 2.4.1.
@@ -5754,6 +5775,9 @@
 </code>
 
 - [Shaunak-Chatterjee/CVE-2025-56762](https://github.com/Shaunak-Chatterjee/CVE-2025-56762)
+
+### CVE-2025-56764
+- [Remenis/CVE-2025-56764-trivision-nc227wf](https://github.com/Remenis/CVE-2025-56764-trivision-nc227wf)
 
 ### CVE-2025-56771
 - [RRespxwnss/CVE-2025-56771](https://github.com/RRespxwnss/CVE-2025-56771)
@@ -22282,6 +22306,7 @@
 - [mrtacojr/CVE-2023-38408](https://github.com/mrtacojr/CVE-2023-38408)
 - [fazilbaig1/cve_2023_38408_scanner](https://github.com/fazilbaig1/cve_2023_38408_scanner)
 - [TX-One/CVE-2023-38408](https://github.com/TX-One/CVE-2023-38408)
+- [Adel2411/cve-2023-38408](https://github.com/Adel2411/cve-2023-38408)
 
 ### CVE-2023-38434 (2023-07-18)
 
@@ -33786,7 +33811,6 @@
 - [ayoub-elbouzi/CVE-2021-4034-Pwnkit](https://github.com/ayoub-elbouzi/CVE-2021-4034-Pwnkit)
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
-- [drapl0n/pwnKit](https://github.com/drapl0n/pwnKit)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
 - [Joffr3y/Polkit-CVE-2021-4034-HLP](https://github.com/Joffr3y/Polkit-CVE-2021-4034-HLP)
 - [ziadsaleemi/polkit_CVE-2021-4034](https://github.com/ziadsaleemi/polkit_CVE-2021-4034)
@@ -38926,6 +38950,7 @@
 - [Alan-coder-eng/log4j-cve-2021-44228-](https://github.com/Alan-coder-eng/log4j-cve-2021-44228-)
 - [Sorrence/CVE-2021-44228](https://github.com/Sorrence/CVE-2021-44228)
 - [moften/Log4Shell](https://github.com/moften/Log4Shell)
+- [KamalideenAK/Microsoft-Defender-for-Endpoint-Deployment-on-Windows-10-11-device](https://github.com/KamalideenAK/Microsoft-Defender-for-Endpoint-Deployment-on-Windows-10-11-device)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -51721,7 +51746,6 @@
 </code>
 
 - [hidog123/Codiad-CVE-2018-14009](https://github.com/hidog123/Codiad-CVE-2018-14009)
-- [pablocaraballofernandez/IDE-TryHackME-Spanish-Walkthrough-](https://github.com/pablocaraballofernandez/IDE-TryHackME-Spanish-Walkthrough-)
 
 ### CVE-2018-14040 (2018-07-13)
 
@@ -60131,6 +60155,7 @@
 - [h3x0v3rl0rd/CVE-2009-2265](https://github.com/h3x0v3rl0rd/CVE-2009-2265)
 - [p1ckzi/CVE-2009-2265](https://github.com/p1ckzi/CVE-2009-2265)
 - [0xDTC/Adobe-ColdFusion-8-RCE-CVE-2009-2265](https://github.com/0xDTC/Adobe-ColdFusion-8-RCE-CVE-2009-2265)
+- [nika0x38/CVE-2009-2265](https://github.com/nika0x38/CVE-2009-2265)
 
 ### CVE-2009-2692 (2009-08-14)
 
