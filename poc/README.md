@@ -3220,6 +3220,7 @@
 - [iteride/CVE-2025-29927](https://github.com/iteride/CVE-2025-29927)
 - [sermikr0/nextjs-middleware-auth-bypass](https://github.com/sermikr0/nextjs-middleware-auth-bypass)
 - [amalpvatayam67/day10-nextjs-middleware-lab](https://github.com/amalpvatayam67/day10-nextjs-middleware-lab)
+- [kuyrathdaro/cve-2025-29927](https://github.com/kuyrathdaro/cve-2025-29927)
 
 ### CVE-2025-29972 (2025-05-08)
 
@@ -3683,7 +3684,7 @@
 - [4f-kira/CVE-2025-32463](https://github.com/4f-kira/CVE-2025-32463)
 - [K1tt3h/CVE-2025-32463-POC](https://github.com/K1tt3h/CVE-2025-32463-POC)
 - [IC3-512/linux-root-kit](https://github.com/IC3-512/linux-root-kit)
-- [Adonijah01/cve-2025-32463-lab](https://github.com/Adonijah01/cve-2025-32463-lab)
+- [7r00t/cve-2025-32463-lab](https://github.com/7r00t/cve-2025-32463-lab)
 - [SysMancer/CVE-2025-32463](https://github.com/SysMancer/CVE-2025-32463)
 - [kh4sh3i/CVE-2025-32463](https://github.com/kh4sh3i/CVE-2025-32463)
 - [neko205-mx/CVE-2025-32463_Exploit](https://github.com/neko205-mx/CVE-2025-32463_Exploit)
@@ -4082,13 +4083,6 @@
 - [hunters-sec/CVE-2025-43300](https://github.com/hunters-sec/CVE-2025-43300)
 - [PwnToday/CVE-2025-43300](https://github.com/PwnToday/CVE-2025-43300)
 - [veniversum/cve-2025-43300](https://github.com/veniversum/cve-2025-43300)
-
-### CVE-2025-43372 (2025-09-15)
-
-<code>The issue was addressed with improved input validation. This issue is fixed in tvOS 26, watchOS 26, visionOS 26, macOS Tahoe 26, iOS 26 and iPadOS 26. Processing a maliciously crafted media file may lead to unexpected app termination or corrupt process memory.
-</code>
-
-- [allinsthon/CVE-2025-43372](https://github.com/allinsthon/CVE-2025-43372)
 
 ### CVE-2025-43864 (2025-04-25)
 
@@ -5769,6 +5763,9 @@
 
 - [anonaninda/Aninda-security-advisories](https://github.com/anonaninda/Aninda-security-advisories)
 
+### CVE-2025-56708
+- [xkaneiki/rtty_CVE-2025-56708-CVE-2025-56709](https://github.com/xkaneiki/rtty_CVE-2025-56708-CVE-2025-56709)
+
 ### CVE-2025-56762 (2025-09-19)
 
 <code>Paracrawl KeOPs v2 is vulnerable to Cross Site Scripting (XSS) in error.php.
@@ -5917,6 +5914,13 @@
 </code>
 
 - [SexyShoelessGodofWar/CVE-2025-58780](https://github.com/SexyShoelessGodofWar/CVE-2025-58780)
+
+### CVE-2025-59251 (2025-09-24)
+
+<code>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability
+</code>
+
+- [allinsthon/CVE-2025-59251](https://github.com/allinsthon/CVE-2025-59251)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -30259,6 +30263,7 @@
 - [Blyth0He/CVE-2022-33679](https://github.com/Blyth0He/CVE-2022-33679)
 - [Amulab/CVE-2022-33679](https://github.com/Amulab/CVE-2022-33679)
 - [notareaperbutDR34P3r/Kerberos_CVE-2022-33679](https://github.com/notareaperbutDR34P3r/Kerberos_CVE-2022-33679)
+- [soy-oreocato/CVE-2022-33679_Checker](https://github.com/soy-oreocato/CVE-2022-33679_Checker)
 
 ### CVE-2022-33891 (2022-07-18)
 
@@ -52436,6 +52441,13 @@
 </code>
 
 - [TheeBlind/CVE-2018-18387](https://github.com/TheeBlind/CVE-2018-18387)
+
+### CVE-2018-18441 (2018-12-20)
+
+<code>D-Link DCS series Wi-Fi cameras expose sensitive information regarding the device configuration. The affected devices include many of DCS series, such as: DCS-936L, DCS-942L, DCS-8000LH, DCS-942LB1, DCS-5222L, DCS-825L, DCS-2630L, DCS-820L, DCS-855L, DCS-2121, DCS-5222LB1, DCS-5020L, and many more. There are many affected firmware versions starting from 1.00 and above. The configuration file can be accessed remotely through: &lt;Camera-IP&gt;/common/info.cgi, with no authentication. The configuration file include the following fields: model, product, brand, version, build, hw_version, nipca version, device name, location, MAC address, IP address, gateway IP address, wireless status, input/output settings, speaker, and sensor settings.
+</code>
+
+- [bayazid-bit/CVE-2018-18441-exploit](https://github.com/bayazid-bit/CVE-2018-18441-exploit)
 
 ### CVE-2018-18500 (2019-02-05)
 
