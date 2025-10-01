@@ -1600,13 +1600,6 @@
 
 - [balajigund/Research-on-CVE-2025-9998](https://github.com/balajigund/Research-on-CVE-2025-9998)
 
-### CVE-2025-9999 (2025-09-05)
-
-<code>Some payload elements of the messages sent between two stations in a networking architecture are not properly checked on the receiving station allowing an attacker to execute unauthorized commands in the application.
-</code>
-
-- [umxr286/ExploitScript](https://github.com/umxr286/ExploitScript)
-
 ### CVE-2025-10035 (2025-09-18)
 
 <code>A deserialization vulnerability in the License Servlet of Fortra's GoAnywhere MFT allows an actor with a validly forged license response signature to deserialize an arbitrary actor-controlled object, possibly leading to command injection.
@@ -1637,6 +1630,13 @@
 
 - [People-11/CVE-2025-10184_PoC](https://github.com/People-11/CVE-2025-10184_PoC)
 - [yuuouu/ColorOS-CVE-2025-10184](https://github.com/yuuouu/ColorOS-CVE-2025-10184)
+
+### CVE-2025-10492 (2025-09-16)
+
+<code>A Java deserialisation vulnerability has been discovered in Jaspersoft Library. Improper handling of externally supplied data may allow attackers to execute arbitrary code remotely on systems that use the affected library
+</code>
+
+- [dovezp/CVE-2025-10492-POC](https://github.com/dovezp/CVE-2025-10492-POC)
 
 ### CVE-2025-10585 (2025-09-24)
 
@@ -1696,7 +1696,7 @@
 
 ### CVE-2025-20352 (2025-09-24)
 
-<code>A vulnerability in the Simple Network Management Protocol (SNMP) subsystem of Cisco IOS Software and Cisco IOS XE Software could allow the following:\r\n\r \r An authenticated, remote attacker with low privileges could cause a denial of service (DoS) condition on an affected device that is running Cisco IOS Software or Cisco IOS XE Software. To cause the DoS, the attacker must have the SNMPv2c or earlier read-only community string or valid SNMPv3 user credentials.\r An authenticated, remote attacker with high privileges could execute code as the root user on an affected device that is running Cisco IOS XE Software. To execute code as the root user, the attacker must have the SNMPv1 or v2c read-only community string or valid SNMPv3 user credentials and administrative or privilege 15 credentials on the affected device. \r \r An attacker could exploit this vulnerability by sending a crafted SNMP packet to an affected device over IPv4 or IPv6 networks. \r\n\r This vulnerability is due to a stack overflow condition in the SNMP subsystem of the affected software. A successful exploit could allow a low-privileged attacker to cause the affected system to reload, resulting in a DoS condition, or allow a high-privileged attacker to execute arbitrary code as the root user and obtain full control of the affected system.\r\n\r Note: This vulnerability affects all versions of SNMP.
+<code>A vulnerability in the Simple Network Management Protocol (SNMP) subsystem of Cisco IOS Software and Cisco IOS XE Software could allow the following:\r\n\r \r An authenticated, remote attacker with low privileges could cause a denial of service (DoS) condition on an affected device that is running Cisco IOS Software or Cisco IOS XE Software. To cause the DoS, the attacker must have the SNMPv2c or earlier read-only community string or valid SNMPv3 user credentials. \r An authenticated, remote attacker with high privileges could execute code as the root user on an affected device that is running Cisco IOS XE Software. To execute code as the root user, the attacker must have the SNMPv1 or v2c read-only community string or valid SNMPv3 user credentials and administrative or privilege 15 credentials on the affected device. \r \r An attacker could exploit this vulnerability by sending a crafted SNMP packet to an affected device over IPv4 or IPv6 networks. \r\n\r This vulnerability is due to a stack overflow condition in the SNMP subsystem of the affected software. A successful exploit could allow a low-privileged attacker to cause the affected system to reload, resulting in a DoS condition, or allow a high-privileged attacker to execute arbitrary code as the root user and obtain full control of the affected system.\r\n\r Note: This vulnerability affects all versions of SNMP.
 </code>
 
 - [scadastrangelove/CVE-2025-20352](https://github.com/scadastrangelove/CVE-2025-20352)
@@ -4075,6 +4075,13 @@
 
 - [AlexSvobo/nhi-zero-trust-bypass](https://github.com/AlexSvobo/nhi-zero-trust-bypass)
 
+### CVE-2025-41244 (2025-09-29)
+
+<code>VMware Aria Operations and VMware Tools contain a local privilege escalation vulnerability. A malicious local actor with non-administrative privileges having access to a VM with VMware Tools installed and managed by Aria Operations with SDMP enabled may exploit this vulnerability to escalate privileges to root on the same VM.
+</code>
+
+- [rxerium/CVE-2025-41244](https://github.com/rxerium/CVE-2025-41244)
+
 ### CVE-2025-41373 (2025-08-01)
 
 <code>A SQL injection vulnerability has been found in Gandia Integra Total of TESI from version 2.1.2217.3 to v4.4.2236.1. The vulnerability allows an authenticated attacker to retrieve, create, update and delete databases through the 'idestudio' parameter in /encuestas/integraweb[_v4]/integra/html/view/hislistadoacciones.php.
@@ -4114,6 +4121,8 @@
 - [hunters-sec/CVE-2025-43300](https://github.com/hunters-sec/CVE-2025-43300)
 - [PwnToday/CVE-2025-43300](https://github.com/PwnToday/CVE-2025-43300)
 - [veniversum/cve-2025-43300](https://github.com/veniversum/cve-2025-43300)
+- [ticofookfook/CVE-2025-43300](https://github.com/ticofookfook/CVE-2025-43300)
+- [Dark-life944/CVE-2025](https://github.com/Dark-life944/CVE-2025)
 
 ### CVE-2025-43864 (2025-04-25)
 
@@ -5579,13 +5588,6 @@
 
 - [byteReaper77/CVE-2025-54769](https://github.com/byteReaper77/CVE-2025-54769)
 
-### CVE-2025-54782 (2025-08-01)
-
-<code>Nest is a framework for building scalable Node.js server-side applications. In versions 0.2.0 and below, a critical Remote Code Execution (RCE) vulnerability was discovered in the @nestjs/devtools-integration package. When enabled, the package exposes a local development HTTP server with an API endpoint that uses an unsafe JavaScript sandbox (safe-eval-like implementation). Due to improper sandboxing and missing cross-origin protections, any malicious website visited by a developer can execute arbitrary code on their local machine. The package adds HTTP endpoints to a locally running NestJS development server. One of these endpoints, /inspector/graph/interact, accepts JSON input containing a code field and executes the provided code in a Node.js vm.runInNewContext sandbox. This is fixed in version 0.2.1.
-</code>
-
-- [nitrixog/CVE-2025-54782](https://github.com/nitrixog/CVE-2025-54782)
-
 ### CVE-2025-54794 (2025-08-05)
 
 <code>Claude Code is an agentic coding tool. In versions below 0.2.111, a path validation flaw using prefix matching instead of canonical path comparison, makes it possible to bypass directory restrictions and access files outside the CWD. Successful exploitation depends on the presence of (or ability to create) a directory with the same prefix as the CWD and the ability to add untrusted content into a Claude Code context window. This is fixed in version 0.2.111.
@@ -5788,6 +5790,15 @@
 
 - [Jingyi-u/-CVE-2025-56435](https://github.com/Jingyi-u/-CVE-2025-56435)
 
+### CVE-2025-56514
+- [Kov404/CVE-2025-56514](https://github.com/Kov404/CVE-2025-56514)
+
+### CVE-2025-56515
+- [Kov404/CVE-2025-56515](https://github.com/Kov404/CVE-2025-56515)
+
+### CVE-2025-56588
+- [PhDg1410/CVE-2025-56588](https://github.com/PhDg1410/CVE-2025-56588)
+
 ### CVE-2025-56605
 - [Userr404/CVE-2025-56605](https://github.com/Userr404/CVE-2025-56605)
 
@@ -5823,7 +5834,7 @@
 
 ### CVE-2025-56795 (2025-09-29)
 
-<code>Mealie 3.0.1 and earlier is vulnerable to Cross-Site Scripting (XSS) in the recipe creation functionality. Unsanitized user input in the &quot;note&quot; and &quot;text&quot; fields of the &quot;/api/recipes/{recipe_name}&quot; endpoint is rendered in the frontend without proper escaping leading to persistent XSS.
+<code>Mealie 3.0.1 and earlier is vulnerable to Stored Cross-Site Scripting (XSS) in the recipe creation functionality. Unsanitized user input in the &quot;note&quot; and &quot;text&quot; fields of the &quot;/api/recipes/{recipe_name}&quot; endpoint is rendered in the frontend without proper escaping leading to persistent XSS.
 </code>
 
 - [B1tBreaker/CVE-2025-56795](https://github.com/B1tBreaker/CVE-2025-56795)
@@ -5876,6 +5887,9 @@
 </code>
 
 - [semaja22/CVE-2025-57176](https://github.com/semaja22/CVE-2025-57176)
+
+### CVE-2025-57389
+- [amalcew/CVE-2025-57389](https://github.com/amalcew/CVE-2025-57389)
 
 ### CVE-2025-57392 (2025-09-10)
 
@@ -11878,6 +11892,7 @@
 - [sPhyos/cve-2024-32019-PoC](https://github.com/sPhyos/cve-2024-32019-PoC)
 - [x0da6h/POC-for-CVE-2024-32019](https://github.com/x0da6h/POC-for-CVE-2024-32019)
 - [T1erno/CVE-2024-32019-Netdata-ndsudo-Privilege-Escalation-PoC](https://github.com/T1erno/CVE-2024-32019-Netdata-ndsudo-Privilege-Escalation-PoC)
+- [hexared/CVE-2024-32019_poc](https://github.com/hexared/CVE-2024-32019_poc)
 
 ### CVE-2024-32022 (2024-04-16)
 
@@ -16279,7 +16294,7 @@
 <code>Dedecms 5.71sp1 and earlier is vulnerable to URL redirect. In the web application, a logic error does not judge the input GET request resulting in URL redirection.
 </code>
 
-- [woshidaheike/CVE-2024-57241](https://github.com/woshidaheike/CVE-2024-57241)
+- [hkl1x/CVE-2024-57241](https://github.com/hkl1x/CVE-2024-57241)
 
 ### CVE-2024-57366
 - [h4ckusaur/CVE-2024-57366](https://github.com/h4ckusaur/CVE-2024-57366)
@@ -53968,6 +53983,7 @@
 - [Cappricio-Securities/CVE-2017-7269](https://github.com/Cappricio-Securities/CVE-2017-7269)
 - [VanishedPeople/CVE-2017-7269](https://github.com/VanishedPeople/CVE-2017-7269)
 - [geniuszly/CVE-2017-7269](https://github.com/geniuszly/CVE-2017-7269)
+- [nika0x38/CVE-2017-7269](https://github.com/nika0x38/CVE-2017-7269)
 
 ### CVE-2017-7308 (2017-03-29)
 
