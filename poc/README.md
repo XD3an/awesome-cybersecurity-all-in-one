@@ -1130,7 +1130,6 @@
 </code>
 
 - [mbadanoiu/CVE-2025-6384](https://github.com/mbadanoiu/CVE-2025-6384)
-- [maestro-ant/CrafterCMS-CVE-2025-6384](https://github.com/maestro-ant/CrafterCMS-CVE-2025-6384)
 
 ### CVE-2025-6514 (2025-07-09)
 
@@ -1419,6 +1418,13 @@
 </code>
 
 - [m3m0o/engeman-web-language-combobox-sqli](https://github.com/m3m0o/engeman-web-language-combobox-sqli)
+
+### CVE-2025-8359 (2025-09-06)
+
+<code>The AdForest theme for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 6.0.9. This is due to the plugin not properly verifying a user's identity prior to authenticating them. This makes it possible for unauthenticated attackers to log in as other users, including administrators, without access to a password.
+</code>
+
+- [Nxploited/CVE-2025-8359](https://github.com/Nxploited/CVE-2025-8359)
 
 ### CVE-2025-8422 (2025-09-11)
 
@@ -2298,6 +2304,8 @@
 - [b0ySie7e/CVE-2025-24893](https://github.com/b0ySie7e/CVE-2025-24893)
 - [andwati/CVE-2025-24893](https://github.com/andwati/CVE-2025-24893)
 - [Bishben/xwiki-15.10.8-reverse-shell-cve-2025-24893](https://github.com/Bishben/xwiki-15.10.8-reverse-shell-cve-2025-24893)
+- [gotr00t0day/CVE-2025-24893](https://github.com/gotr00t0day/CVE-2025-24893)
+- [ibrahmsql/CVE-2025-24893](https://github.com/ibrahmsql/CVE-2025-24893)
 
 ### CVE-2025-24963 (2025-02-04)
 
@@ -3773,6 +3781,7 @@
 - [nelissandro/CVE-2025-32463-Sudo-Chroot-Escape](https://github.com/nelissandro/CVE-2025-32463-Sudo-Chroot-Escape)
 - [AC8999/CVE-2025-32463](https://github.com/AC8999/CVE-2025-32463)
 - [onniio/CVE-2025-32463](https://github.com/onniio/CVE-2025-32463)
+- [khoazero123/CVE-2025-32463](https://github.com/khoazero123/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -5766,6 +5775,12 @@
 ### CVE-2025-55891
 - [terribledactyl/CVE-2025-55891](https://github.com/terribledactyl/CVE-2025-55891)
 
+### CVE-2025-55971
+- [Szym0n13k/CVE-2025-55971-Blind-Unauthenticated-SSRF-in-TCL-Smart-TV-UPnP-DLNA-AVTransport](https://github.com/Szym0n13k/CVE-2025-55971-Blind-Unauthenticated-SSRF-in-TCL-Smart-TV-UPnP-DLNA-AVTransport)
+
+### CVE-2025-55972
+- [Szym0n13k/CVE-2025-55972-Remote-Unauthenticated-Denial-of-Service-DoS-in-TCL-Smart-TV-UPnP-DLNA-AVTransport](https://github.com/Szym0n13k/CVE-2025-55972-Remote-Unauthenticated-Denial-of-Service-DoS-in-TCL-Smart-TV-UPnP-DLNA-AVTransport)
+
 ### CVE-2025-55996 (2025-09-12)
 
 <code>Viber Desktop 25.6.0 is vulnerable to HTML Injection via the text parameter of the message compose/forward interface
@@ -5780,7 +5795,11 @@
 
 - [Ocmenog/CVE-2025-55998](https://github.com/Ocmenog/CVE-2025-55998)
 
-### CVE-2025-56019
+### CVE-2025-56019 (2025-10-02)
+
+<code>An insecure permission vulnerability exists in the Agasta Easytouch+ version 9.3.97 The device allows unauthorized mobile applications to connect via Bluetooth Low Energy (BLE) without authentication. Once an unauthorized connection is established, legitimate applications are unable to connect, causing a denial of service. The attack requires proximity to the device, making it exploitable from an adjacent network location.
+</code>
+
 - [Yashodhanvivek/Agatsa-EasyTouch-Plus---CVE-2025-56019](https://github.com/Yashodhanvivek/Agatsa-EasyTouch-Plus---CVE-2025-56019)
 
 ### CVE-2025-56311 (2025-09-23)
@@ -5790,13 +5809,25 @@
 
 - [wrathfulDiety/CVE-2025-56311](https://github.com/wrathfulDiety/CVE-2025-56311)
 
-### CVE-2025-56379
+### CVE-2025-56379 (2025-10-02)
+
+<code>A stored cross-site scripting (XSS) vulnerability in the blog post feature of ERPNEXT v15.67.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the content field.
+</code>
+
 - [MoAlali/CVE-2025-56379](https://github.com/MoAlali/CVE-2025-56379)
 
-### CVE-2025-56380
+### CVE-2025-56380 (2025-10-02)
+
+<code>Frappe Framework v15.72.4 was discovered to contain a SQL injection vulnerability via the fieldname parameter in the frappe.client.get_value API endpoint and a crafted script to the fieldname parameter
+</code>
+
 - [MoAlali/CVE-2025-56380](https://github.com/MoAlali/CVE-2025-56380)
 
-### CVE-2025-56381
+### CVE-2025-56381 (2025-10-02)
+
+<code>ERPNEXT v15.67.0 was discovered to contain multiple SQL injection vulnerabilities in the /api/method/frappe.desk.reportview.get endpoint via the order_by and group_by parameters.
+</code>
+
 - [MoAlali/CVE-2025-56381](https://github.com/MoAlali/CVE-2025-56381)
 
 ### CVE-2025-56383 (2025-09-26)
@@ -5936,6 +5967,9 @@
 </code>
 
 - [5ulfur/CVE-2025-57428](https://github.com/5ulfur/CVE-2025-57428)
+
+### CVE-2025-57457
+- [restdone/CVE-2025-57457](https://github.com/restdone/CVE-2025-57457)
 
 ### CVE-2025-57483 (2025-09-29)
 
@@ -6077,6 +6111,13 @@
 </code>
 
 - [JOOJIII/CVE-2025-59424](https://github.com/JOOJIII/CVE-2025-59424)
+
+### CVE-2025-59712 (2025-09-19)
+
+<code>Snipe-IT before 8.1.18 allows XSS.
+</code>
+
+- [synacktiv/CVE-2025-59712_CVE-2025-59713](https://github.com/synacktiv/CVE-2025-59712_CVE-2025-59713)
 
 ### CVE-2025-59843 (2025-09-26)
 
@@ -6636,6 +6677,7 @@
 - [HussainFathy/CVE-2024-1709](https://github.com/HussainFathy/CVE-2024-1709)
 - [sxyrxyy/CVE-2024-1709-ConnectWise-ScreenConnect-Authentication-Bypass](https://github.com/sxyrxyy/CVE-2024-1709-ConnectWise-ScreenConnect-Authentication-Bypass)
 - [cjybao/CVE-2024-1709-and-CVE-2024-1708](https://github.com/cjybao/CVE-2024-1709-and-CVE-2024-1708)
+- [AhmedMansour93/Event-ID-229-Rule-Name-SOC262-CVE-2024-1709-](https://github.com/AhmedMansour93/Event-ID-229-Rule-Name-SOC262-CVE-2024-1709-)
 - [AMRICHASFUCK/Mass-CVE-2024-1709](https://github.com/AMRICHASFUCK/Mass-CVE-2024-1709)
 - [Teexo/ScreenConnect-CVE-2024-1709-Exploit](https://github.com/Teexo/ScreenConnect-CVE-2024-1709-Exploit)
 
@@ -7334,6 +7376,7 @@
 - [bughuntar/CVE-2024-4577](https://github.com/bughuntar/CVE-2024-4577)
 - [gh-ost00/CVE-2024-4577-RCE](https://github.com/gh-ost00/CVE-2024-4577-RCE)
 - [ywChen-NTUST/PHP-CGI-RCE-Scanner](https://github.com/ywChen-NTUST/PHP-CGI-RCE-Scanner)
+- [AhmedMansour93/Event-ID-268-Rule-Name-SOC292-Possible-PHP-Injection-Detected-CVE-2024-4577-](https://github.com/AhmedMansour93/Event-ID-268-Rule-Name-SOC292-Possible-PHP-Injection-Detected-CVE-2024-4577-)
 - [phirojshah/CVE-2024-4577](https://github.com/phirojshah/CVE-2024-4577)
 - [JeninSutradhar/CVE-2024-4577-checker](https://github.com/JeninSutradhar/CVE-2024-4577-checker)
 - [longhoangth18/CVE-2024-4577](https://github.com/longhoangth18/CVE-2024-4577)
@@ -10617,6 +10660,7 @@
 - [H3KEY/CVE-2024-24919](https://github.com/H3KEY/CVE-2024-24919)
 - [Jutrm/cve-2024-24919](https://github.com/Jutrm/cve-2024-24919)
 - [LuisMateo1/Arbitrary-File-Read-CVE-2024-24919](https://github.com/LuisMateo1/Arbitrary-File-Read-CVE-2024-24919)
+- [AhmedMansour93/Event-ID-263-Rule-Name-SOC287---Arbitrary-File-Read-on-Checkpoint-Security-Gateway-CVE-2024-24919-](https://github.com/AhmedMansour93/Event-ID-263-Rule-Name-SOC287---Arbitrary-File-Read-on-Checkpoint-Security-Gateway-CVE-2024-24919-)
 - [geniuszly/CVE-2024-24919](https://github.com/geniuszly/CVE-2024-24919)
 - [zxcod3/CVE-2024-24919](https://github.com/zxcod3/CVE-2024-24919)
 - [sar-3mar/CVE-2024-24919_POC](https://github.com/sar-3mar/CVE-2024-24919_POC)
@@ -18286,6 +18330,7 @@
 - [Vulnmachines/Cisco_CVE-2023-20198](https://github.com/Vulnmachines/Cisco_CVE-2023-20198)
 - [W01fh4cker/CVE-2023-20198-RCE](https://github.com/W01fh4cker/CVE-2023-20198-RCE)
 - [sanan2004/CVE-2023-20198](https://github.com/sanan2004/CVE-2023-20198)
+- [AhmedMansour93/Event-ID-193-Rule-Name-SOC231-Cisco-IOS-XE-Web-UI-ZeroDay-CVE-2023-20198-](https://github.com/AhmedMansour93/Event-ID-193-Rule-Name-SOC231-Cisco-IOS-XE-Web-UI-ZeroDay-CVE-2023-20198-)
 - [XiaomingX/cve-2023-20198-poc](https://github.com/XiaomingX/cve-2023-20198-poc)
 - [G4sul1n/Cisco-IOS-XE-CVE-2023-20198](https://github.com/G4sul1n/Cisco-IOS-XE-CVE-2023-20198)
 - [Arshit01/CVE-2023-20198](https://github.com/Arshit01/CVE-2023-20198)
@@ -20199,6 +20244,7 @@
 - [KeyStrOke95/CVE-2023-29357-ExE](https://github.com/KeyStrOke95/CVE-2023-29357-ExE)
 - [Guillaume-Risch/cve-2023-29357-Sharepoint](https://github.com/Guillaume-Risch/cve-2023-29357-Sharepoint)
 - [Jev1337/CVE-2023-29357-Check](https://github.com/Jev1337/CVE-2023-29357-Check)
+- [AhmedMansour93/Event-ID-189-Rule-Name-SOC227-CVE-2023-29357](https://github.com/AhmedMansour93/Event-ID-189-Rule-Name-SOC227-CVE-2023-29357)
 - [DeividasTerechovas/SOC227-Microsoft-SharePoint-Server-Elevation-of-Privilege-Possible-CVE-2023-29357-Exploitation](https://github.com/DeividasTerechovas/SOC227-Microsoft-SharePoint-Server-Elevation-of-Privilege-Possible-CVE-2023-29357-Exploitation)
 
 ### CVE-2023-29360 (2023-06-13)
@@ -25344,6 +25390,7 @@
 - [ImuSpirit/CVE-2023-51467-Exploit](https://github.com/ImuSpirit/CVE-2023-51467-Exploit)
 - [vulncheck-oss/cve-2023-51467](https://github.com/vulncheck-oss/cve-2023-51467)
 - [jakeotte/BadBizness-CVE-2023-51467](https://github.com/jakeotte/BadBizness-CVE-2023-51467)
+- [AhmedMansour93/Event-ID-217-Rule-Name-SOC254-Apache-OFBiz-Auth-Bypass-and-Code-Injection-0Day-CVE-2023-51467-](https://github.com/AhmedMansour93/Event-ID-217-Rule-Name-SOC254-Apache-OFBiz-Auth-Bypass-and-Code-Injection-0Day-CVE-2023-51467-)
 
 ### CVE-2023-51504 (2024-02-05)
 
@@ -33916,7 +33963,6 @@
 - [tahaafarooq/poppy](https://github.com/tahaafarooq/poppy)
 - [PwnFunction/CVE-2021-4034](https://github.com/PwnFunction/CVE-2021-4034)
 - [c3c/CVE-2021-4034](https://github.com/c3c/CVE-2021-4034)
-- [EstamelGG/CVE-2021-4034-NoGCC](https://github.com/EstamelGG/CVE-2021-4034-NoGCC)
 - [galoget/PwnKit-CVE-2021-4034](https://github.com/galoget/PwnKit-CVE-2021-4034)
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
@@ -39050,6 +39096,7 @@
 - [OtisSymbos/CVE-2021-44228-Log4Shell-](https://github.com/OtisSymbos/CVE-2021-44228-Log4Shell-)
 - [safeer-accuknox/log4j-shell-poc](https://github.com/safeer-accuknox/log4j-shell-poc)
 - [Carlos-Mesquita/TPASLog4ShellPoC](https://github.com/Carlos-Mesquita/TPASLog4ShellPoC)
+- [AhmedMansour93/-Unveiling-the-Lessons-from-Log4Shell-A-Wake-Up-Call-for-Cybersecurity-](https://github.com/AhmedMansour93/-Unveiling-the-Lessons-from-Log4Shell-A-Wake-Up-Call-for-Cybersecurity-)
 - [Super-Binary/cve-2021-44228](https://github.com/Super-Binary/cve-2021-44228)
 - [ZacharyZcR/CVE-2021-44228](https://github.com/ZacharyZcR/CVE-2021-44228)
 - [qw3rtyou/CVE-2021-44228_dockernize](https://github.com/qw3rtyou/CVE-2021-44228_dockernize)
