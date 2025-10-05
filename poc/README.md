@@ -229,6 +229,13 @@
 
 - [ada-z3r0/CVE-2025-1337-PoC](https://github.com/ada-z3r0/CVE-2025-1337-PoC)
 
+### CVE-2025-1338 (2025-02-16)
+
+<code>In NUUO Camera bis 20250203 wurde eine Schwachstelle ausgemacht. Sie wurde als kritisch eingestuft. Hierbei betrifft es die Funktion print_file der Datei /handle_config.php. Durch Beeinflussen des Arguments log mit unbekannten Daten kann eine command injection-Schwachstelle ausgenutzt werden. Umgesetzt werden kann der Angriff über das Netzwerk. Der Exploit steht zur öffentlichen Verfügung.
+</code>
+
+- [jxcaxtc/CVE-2025-1338](https://github.com/jxcaxtc/CVE-2025-1338)
+
 ### CVE-2025-1461 (2025-05-28)
 
 <code>Improper neutralization of the value of the 'eventMoreText' property of the 'VCalendar' component in Vuetify allows unsanitized HTML to be inserted into the page. This can lead to a  Cross-Site Scripting (XSS) https://owasp.org/www-community/attacks/xss  attack. The vulnerability occurs because the default Vuetify translator will return the translation key as the translation, if it can't find an actual translation.\n\nThis issue affects Vuetify versions greater than or equal to 2.0.0 and less than 3.0.0.\n\nNote:\nVersion 2.x of Vuetify is End-of-Life and will not receive any updates to address this issue. For more information see  here https://v2.vuetifyjs.com/en/about/eol/ .
@@ -1665,6 +1672,7 @@
 
 - [People-11/CVE-2025-10184_PoC](https://github.com/People-11/CVE-2025-10184_PoC)
 - [yuuouu/ColorOS-CVE-2025-10184](https://github.com/yuuouu/ColorOS-CVE-2025-10184)
+- [Webpage-gh/CVE-2025-10184-PoC](https://github.com/Webpage-gh/CVE-2025-10184-PoC)
 
 ### CVE-2025-10492 (2025-09-16)
 
@@ -3217,6 +3225,7 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
+- [KaztoJun/CVE-2025-29927-Research](https://github.com/KaztoJun/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -4106,6 +4115,13 @@
 </code>
 
 - [byteReaper77/CVE-2025-39866](https://github.com/byteReaper77/CVE-2025-39866)
+
+### CVE-2025-39946 (2025-10-04)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\ntls: make sure to abort the stream if headers are bogus\n\nNormally we wait for the socket to buffer up the whole record\nbefore we service it. If the socket has a tiny buffer, however,\nwe read out the data sooner, to prevent connection stalls.\nMake sure that we abort the connection when we find out late\nthat the record is actually invalid. Retrying the parsing is\nfine in itself but since we copy some more data each time\nbefore we parse we can overflow the allocated skb space.\n\nConstructing a scenario in which we're under pressure without\nenough data in the socket to parse the length upfront is quite\nhard. syzbot figured out a way to do this by serving us the header\nin small OOB sends, and then filling in the recvbuf with a large\nnormal send.\n\nMake sure that tls_rx_msg_size() aborts strp, if we reach\nan invalid record there's really no way to recover.
+</code>
+
+- [farazsth98/exploit-CVE-2025-39946](https://github.com/farazsth98/exploit-CVE-2025-39946)
 
 ### CVE-2025-40634 (2025-05-20)
 
@@ -6075,6 +6091,7 @@
 - [MuhammadWaseem29/SQL-Injection-and-RCE_CVE-2025-57819](https://github.com/MuhammadWaseem29/SQL-Injection-and-RCE_CVE-2025-57819)
 - [xV4nd3Rx/CVE-2025-57819_FreePBX-PoC](https://github.com/xV4nd3Rx/CVE-2025-57819_FreePBX-PoC)
 - [orange0Mint/CVE-2025-57819_FreePBX](https://github.com/orange0Mint/CVE-2025-57819_FreePBX)
+- [JakovBis/CVE-2025-57819_FreePBX-PoC](https://github.com/JakovBis/CVE-2025-57819_FreePBX-PoC)
 
 ### CVE-2025-57833 (2025-09-03)
 
@@ -8133,6 +8150,7 @@
 </code>
 
 - [siunam321/CVE-2024-7627-PoC](https://github.com/siunam321/CVE-2024-7627-PoC)
+- [lkmn1/CVE-2024-7627](https://github.com/lkmn1/CVE-2024-7627)
 
 ### CVE-2024-7646 (2024-08-16)
 
@@ -12773,6 +12791,7 @@
 - [bmth666/GeoServer-Tools-CVE-2024-36401](https://github.com/bmth666/GeoServer-Tools-CVE-2024-36401)
 - [amoy6228/CVE-2024-36401_Geoserver_RCE_POC](https://github.com/amoy6228/CVE-2024-36401_Geoserver_RCE_POC)
 - [holokitty/Exploit-CVE-2024-36401](https://github.com/holokitty/Exploit-CVE-2024-36401)
+- [URJACK2025/CVE-2024-36401](https://github.com/URJACK2025/CVE-2024-36401)
 
 ### CVE-2024-36416 (2024-06-10)
 
@@ -31309,6 +31328,7 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
+- [KaztoJun/CVE-2022-39299-Research](https://github.com/KaztoJun/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -40604,6 +40624,7 @@
 - [TuanCui22/ZerologonWithImpacket-CVE2020-1472](https://github.com/TuanCui22/ZerologonWithImpacket-CVE2020-1472)
 - [PakwanSK/Simulating-and-preventing-Zerologon-CVE-2020-1472-vulnerability-attacks.](https://github.com/PakwanSK/Simulating-and-preventing-Zerologon-CVE-2020-1472-vulnerability-attacks.)
 - [tdevworks/CVE-2020-1472-ZeroLogon-Demo-Detection-Mitigation](https://github.com/tdevworks/CVE-2020-1472-ZeroLogon-Demo-Detection-Mitigation)
+- [100HnoMeuNome/ZeroLogon-CVE-2020-1472-lab](https://github.com/100HnoMeuNome/ZeroLogon-CVE-2020-1472-lab)
 
 ### CVE-2020-1493 (2020-08-17)
 
@@ -53332,6 +53353,7 @@
 - [pelagornisandersi/WIndows-7-automated-exploitation-using-metasploit-framework-](https://github.com/pelagornisandersi/WIndows-7-automated-exploitation-using-metasploit-framework-)
 - [luckyman2907/SMB-Protocol-Vulnerability_CVE-2017-0144](https://github.com/luckyman2907/SMB-Protocol-Vulnerability_CVE-2017-0144)
 - [AdityaBhatt3010/VAPT-Report-on-SMB-Exploitation-in-Windows-10-Finance-Endpoint](https://github.com/AdityaBhatt3010/VAPT-Report-on-SMB-Exploitation-in-Windows-10-Finance-Endpoint)
+- [nivedh-j/EternalBlue-Explained](https://github.com/nivedh-j/EternalBlue-Explained)
 
 ### CVE-2017-0145 (2017-03-17)
 
@@ -53795,6 +53817,13 @@
 - [dream434/CVE-2017-5487](https://github.com/dream434/CVE-2017-5487)
 - [tpdlshdmlrkfmcla/cve-2017-5487](https://github.com/tpdlshdmlrkfmcla/cve-2017-5487)
 - [ndr-repo/CVE-2017-5487](https://github.com/ndr-repo/CVE-2017-5487)
+
+### CVE-2017-5618 (2017-03-20)
+
+<code>GNU screen before 4.5.1 allows local users to modify arbitrary files and consequently gain root privileges by leveraging improper checking of logfile permissions.
+</code>
+
+- [RXDarkee/CVE-2017-5618-Screen-4.5.0-Root](https://github.com/RXDarkee/CVE-2017-5618-Screen-4.5.0-Root)
 
 ### CVE-2017-5633 (2017-03-06)
 
