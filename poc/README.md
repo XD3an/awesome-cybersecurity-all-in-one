@@ -412,6 +412,13 @@
 
 - [ubaydev/CVE-2025-2563](https://github.com/ubaydev/CVE-2025-2563)
 
+### CVE-2025-2568 (2025-04-08)
+
+<code>The Vayu Blocks – Gutenberg Blocks for WordPress &amp; WooCommerce plugin for WordPress is vulnerable to unauthorized access and modification of data due to missing capability checks on the 'vayu_blocks_get_toggle_switch_values_callback' and 'vayu_blocks_save_toggle_switch_callback' function in versions 1.0.4 to 1.2.1. This makes it possible for unauthenticated attackers to read plugin options and update any option with a key name ending in '_value'.
+</code>
+
+- [shinigami-777/PoC_CVE-2025-2568](https://github.com/shinigami-777/PoC_CVE-2025-2568)
+
 ### CVE-2025-2594 (2025-04-22)
 
 <code>The User Registration &amp; Membership WordPress plugin before 4.1.3 does not properly validate data in an AJAX action when the Membership Addon is enabled, allowing attackers to authenticate as any user, including administrators, by simply using the target account's user ID.
@@ -3227,7 +3234,6 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [KaztoJun/CVE-2025-29927-Research](https://github.com/KaztoJun/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -5418,6 +5424,7 @@
 
 - [Hex00-0x4/FortiWeb-CVE-2025-52970-Authentication-Bypass](https://github.com/Hex00-0x4/FortiWeb-CVE-2025-52970-Authentication-Bypass)
 - [34zY/CVE-2025-52970](https://github.com/34zY/CVE-2025-52970)
+- [imbas007/POC-CVE-2025-52970](https://github.com/imbas007/POC-CVE-2025-52970)
 
 ### CVE-2025-53367 (2025-07-03)
 
@@ -5534,6 +5541,7 @@
 - [fentnttntnt/CVE-2025-53770](https://github.com/fentnttntnt/CVE-2025-53770)
 - [ziisenpai/CVE-2025-53770-Scanner](https://github.com/ziisenpai/CVE-2025-53770-Scanner)
 - [Michaael01/LetsDefend--SOC-342-CVE-2025-53770-SharePoint-Exploit-ToolShell](https://github.com/Michaael01/LetsDefend--SOC-342-CVE-2025-53770-SharePoint-Exploit-ToolShell)
+- [victormbogu1/LetsDefend-SOC342-CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-andRCE-EventID-320](https://github.com/victormbogu1/LetsDefend-SOC342-CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-andRCE-EventID-320)
 
 ### CVE-2025-53772 (2025-08-12)
 
@@ -5775,6 +5783,9 @@
 
 - [ddobrev25/CVE-2025-55580](https://github.com/ddobrev25/CVE-2025-55580)
 
+### CVE-2025-55616
+- [livepwn/CVE-2025-55616](https://github.com/livepwn/CVE-2025-55616)
+
 ### CVE-2025-55668 (2025-08-13)
 
 <code>Session Fixation vulnerability in Apache Tomcat via rewrite valve.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.7, from 10.1.0-M1 through 10.1.41, from 9.0.0.M1 through 9.0.105.\nOlder, EOL versions may also be affected.\n\nUsers are recommended to upgrade to version 11.0.8, 10.1.42 or 9.0.106, which fix the issue.
@@ -5871,6 +5882,13 @@
 </code>
 
 - [Yashodhanvivek/Agatsa-EasyTouch-Plus---CVE-2025-56019](https://github.com/Yashodhanvivek/Agatsa-EasyTouch-Plus---CVE-2025-56019)
+
+### CVE-2025-56132 (2025-09-30)
+
+<code>LiquidFiles filetransfer server is vulnerable to a user enumeration issue in its password reset functionality. The application returns distinguishable responses for valid and invalid email addresses, allowing unauthenticated attackers to determine the existence of user accounts. Version 4.2 introduces user-based lockout mechanisms to mitigate brute-force attacks, user enumeration remains possible by default. In versions prior to 4.2, no such user-level protection is in place, only basic IP-based rate limiting is enforced. This IP-based protection can be bypassed by distributing requests across multiple IPs (e.g., rotating IP or proxies). Effectively bypassing both login and password reset security controls. Successful exploitation allows an attacker to enumerate valid email addresses registered for the application, increasing the risk of follow-up attacks such as password spraying.
+</code>
+
+- [fredericgoossens/CVE-2025-56132-Liquidfiles](https://github.com/fredericgoossens/CVE-2025-56132-Liquidfiles)
 
 ### CVE-2025-56311 (2025-09-23)
 
@@ -6220,6 +6238,13 @@
 </code>
 
 - [fa1consec/cve_2025_61622_poc](https://github.com/fa1consec/cve_2025_61622_poc)
+
+### CVE-2025-61882 (2025-10-05)
+
+<code>Vulnerability in the Oracle Concurrent Processing product of Oracle E-Business Suite (component: BI Publisher Integration).  Supported versions that are affected are 12.2.3-12.2.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Concurrent Processing.  Successful attacks of this vulnerability can result in takeover of Oracle Concurrent Processing. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
+</code>
+
+- [rxerium/CVE-2025-61882](https://github.com/rxerium/CVE-2025-61882)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -7004,8 +7029,8 @@
 - [mightysai1997/CVE-2024-3094-info](https://github.com/mightysai1997/CVE-2024-3094-info)
 - [mightysai1997/CVE-2024-3094](https://github.com/mightysai1997/CVE-2024-3094)
 - [mesutgungor/xz-backdoor-vulnerability](https://github.com/mesutgungor/xz-backdoor-vulnerability)
-- [reuteras/CVE-2024-3094](https://github.com/reuteras/CVE-2024-3094)
 - [amlweems/xzbot](https://github.com/amlweems/xzbot)
+- [zpxlz/CVE-2024-3094](https://github.com/zpxlz/CVE-2024-3094)
 - [gustavorobertux/CVE-2024-3094](https://github.com/gustavorobertux/CVE-2024-3094)
 - [ackemed/detectar_cve-2024-3094](https://github.com/ackemed/detectar_cve-2024-3094)
 - [0xlane/xz-cve-2024-3094](https://github.com/0xlane/xz-cve-2024-3094)
@@ -11403,6 +11428,13 @@
 - [akabe1/Graver](https://github.com/akabe1/Graver)
 - [gunzf0x/Grav-CMS-RCE-Authenticated](https://github.com/gunzf0x/Grav-CMS-RCE-Authenticated)
 - [geniuszly/GenGravSSTIExploit](https://github.com/geniuszly/GenGravSSTIExploit)
+
+### CVE-2024-28157 (2024-03-06)
+
+<code>Jenkins GitBucket Plugin 0.8 and earlier does not sanitize Gitbucket URLs on build views, resulting in a stored cross-site scripting (XSS) vulnerability exploitable by attackers able to configure jobs.
+</code>
+
+- [shinigami-777/PoC_CVE-2024-28157](https://github.com/shinigami-777/PoC_CVE-2024-28157)
 
 ### CVE-2024-28247 (2024-03-27)
 
@@ -18042,14 +18074,14 @@
 <code>An authenticated privileged attacker could upload a specially crafted zip to the EspoCRM server in version 7.2.5, via the update form, which could lead to arbitrary PHP code execution.
 </code>
 
-- [pedrojosenavasperez/cve-2023-5965](https://github.com/pedrojosenavasperez/cve-2023-5965)
+- [josemlwdf/CVE-2023-5965](https://github.com/josemlwdf/CVE-2023-5965)
 
 ### CVE-2023-5966 (2023-11-30)
 
 <code>An authenticated privileged attacker could upload a specially crafted zip to the EspoCRM server in version 7.2.5, via the extension deployment form, which could lead to arbitrary PHP code execution.
 </code>
 
-- [pedrojosenavasperez/cve-2023-5966](https://github.com/pedrojosenavasperez/cve-2023-5966)
+- [ll104567/cve-2023-5966](https://github.com/ll104567/cve-2023-5966)
 
 ### CVE-2023-6000 (2024-01-01)
 
@@ -19336,7 +19368,7 @@
 <code>HL7 (Health Level 7) FHIR Core Libraries before 5.6.92 allow attackers to extract files into arbitrary directories via directory traversal from a crafted ZIP or TGZ archive (for a prepackaged terminology cache, NPM package, or comparison archive).
 </code>
 
-- [shoucheng3/hapifhir__org_hl7_fhir_core_CVE-2023-24057_5-6-91](https://github.com/shoucheng3/hapifhir__org_hl7_fhir_core_CVE-2023-24057_5-6-91)
+- [shoucheng3/hapifhir__org_hl7_fhir_core_CVE-2023-24057_5-6-911](https://github.com/shoucheng3/hapifhir__org_hl7_fhir_core_CVE-2023-24057_5-6-911)
 
 ### CVE-2023-24059 (2023-01-22)
 
@@ -21614,7 +21646,7 @@
 </code>
 
 - [mbadanoiu/CVE-2023-34468](https://github.com/mbadanoiu/CVE-2023-34468)
-- [shoucheng3/asf__nifi_CVE-2023-34468_1-21-0](https://github.com/shoucheng3/asf__nifi_CVE-2023-34468_1-21-0)
+- [shoucheng3/asf__nifi_CVE-2023-34468_1-21-00](https://github.com/shoucheng3/asf__nifi_CVE-2023-34468_1-21-00)
 
 ### CVE-2023-34478 (2023-07-24)
 
@@ -25518,7 +25550,7 @@
 <code>Arbitrary File Read Vulnerability in Apache Dolphinscheduler.\n\nThis issue affects Apache DolphinScheduler: before 3.2.1. \n\nWe recommend users to upgrade Apache DolphinScheduler to version 3.2.1, which fixes the issue.
 </code>
 
-- [shoucheng3/apache__dolphinscheduler_CVE-2023-51770_3-2-0](https://github.com/shoucheng3/apache__dolphinscheduler_CVE-2023-51770_3-2-0)
+- [shoucheng3/apache__dolphinscheduler_CVE-2023-51770_3-2-00](https://github.com/shoucheng3/apache__dolphinscheduler_CVE-2023-51770_3-2-00)
 - [shoucheng3/apache__dolphinscheduler_CVE-2023-51770_3_2_1_fixed](https://github.com/shoucheng3/apache__dolphinscheduler_CVE-2023-51770_3_2_1_fixed)
 
 ### CVE-2023-51800 (2024-02-29)
@@ -30018,7 +30050,7 @@
 <code>The AWS SDK for Java enables Java developers to work with Amazon Web Services. A partial-path traversal issue exists within the `downloadDirectory` method in the AWS S3 TransferManager component of the AWS SDK for Java v1 prior to version 1.12.261. Applications using the SDK control the `destinationDirectory` argument, but S3 object keys are determined by the application that uploaded the objects. The `downloadDirectory` method allows the caller to pass a filesystem object in the object key but contained an issue in the validation logic for the key name. A knowledgeable actor could bypass the validation logic by including a UNIX double-dot in the bucket key. Under certain conditions, this could permit them to retrieve a directory from their S3 bucket that is one level up in the filesystem from their working directory. This issue’s scope is limited to directories whose name prefix matches the destinationDirectory. E.g. for destination directory`/tmp/foo`, the actor can cause a download to `/tmp/foo-bar`, but not `/tmp/bar`. If `com.amazonaws.services.s3.transfer.TransferManager::downloadDirectory` is used to download an untrusted buckets contents, the contents of that bucket can be written outside of the intended destination directory. Version 1.12.261 contains a patch for this issue. As a workaround, when calling `com.amazonaws.services.s3.transfer.TransferManager::downloadDirectory`, pass a `KeyFilter` that forbids `S3ObjectSummary` objects that `getKey` method return a string containing the substring `..` .
 </code>
 
-- [shoucheng3/aws__aws-sdk-java_CVE-2022-31159_1-12-260](https://github.com/shoucheng3/aws__aws-sdk-java_CVE-2022-31159_1-12-260)
+- [shoucheng3/aws__aws-sdk-java_CVE-2022-31159_1-12-2600](https://github.com/shoucheng3/aws__aws-sdk-java_CVE-2022-31159_1-12-2600)
 
 ### CVE-2022-31160 (2022-07-20)
 
@@ -30491,7 +30523,7 @@
 <code>The optional ShellUserGroupProvider in Apache NiFi 1.10.0 to 1.16.2 and Apache NiFi Registry 0.6.0 to 1.16.2 does not neutralize arguments for group resolution commands, allowing injection of operating system commands on Linux and macOS platforms. The ShellUserGroupProvider is not included in the default configuration. Command injection requires ShellUserGroupProvider to be one of the enabled User Group Providers in the Authorizers configuration. Command injection also requires an authenticated user with elevated privileges. Apache NiFi requires an authenticated user with authorization to modify access policies in order to execute the command. Apache NiFi Registry requires an authenticated user with authorization to read user groups in order to execute the command. The resolution removes command formatting based on user-provided arguments.
 </code>
 
-- [shoucheng3/apache__nifi_CVE-2022-33140_1-16-2](https://github.com/shoucheng3/apache__nifi_CVE-2022-33140_1-16-2)
+- [shoucheng3/apache__nifi_CVE-2022-33140_1-16-22](https://github.com/shoucheng3/apache__nifi_CVE-2022-33140_1-16-22)
 
 ### CVE-2022-33174 (2022-06-13)
 
@@ -31330,7 +31362,6 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [KaztoJun/CVE-2022-39299-Research](https://github.com/KaztoJun/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -39134,7 +39165,6 @@
 - [mr-vill4in/log4j-fuzzer](https://github.com/mr-vill4in/log4j-fuzzer)
 - [mebibite/log4jhound](https://github.com/mebibite/log4jhound)
 - [aajuvonen/log4stdin](https://github.com/aajuvonen/log4stdin)
-- [FeryaelJustice/Log4Shell](https://github.com/FeryaelJustice/Log4Shell)
 - [hotpotcookie/CVE-2021-44228-white-box](https://github.com/hotpotcookie/CVE-2021-44228-white-box)
 - [s-retlaw/l4srs](https://github.com/s-retlaw/l4srs)
 - [Ananya-0306/Log-4j-scanner](https://github.com/Ananya-0306/Log-4j-scanner)
@@ -39205,6 +39235,7 @@
 - [moften/Log4Shell](https://github.com/moften/Log4Shell)
 - [KamalideenAK/Microsoft-Defender-for-Endpoint-Deployment-on-Windows-10-11-device](https://github.com/KamalideenAK/Microsoft-Defender-for-Endpoint-Deployment-on-Windows-10-11-device)
 - [arabindadora/log4shell](https://github.com/arabindadora/log4shell)
+- [d4ngkh04w/CVE-2021-44228-Apache-Log4j](https://github.com/d4ngkh04w/CVE-2021-44228-Apache-Log4j)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -43772,6 +43803,7 @@
 - [keyuan15/CVE-2020-17530](https://github.com/keyuan15/CVE-2020-17530)
 - [nth347/CVE-2020-17530](https://github.com/nth347/CVE-2020-17530)
 - [fatkz/CVE-2020-17530](https://github.com/fatkz/CVE-2020-17530)
+- [shoucheng3/apache__struts_CVE-2020-17530_2-5-25](https://github.com/shoucheng3/apache__struts_CVE-2020-17530_2-5-25)
 
 ### CVE-2020-17531 (2020-12-08)
 
@@ -44419,7 +44451,7 @@
 - [Al1ex/CVE-2020-26217](https://github.com/Al1ex/CVE-2020-26217)
 - [epicosy/XStream-1](https://github.com/epicosy/XStream-1)
 - [cuijiung/xstream-CVE-2020-26217](https://github.com/cuijiung/xstream-CVE-2020-26217)
-- [shoucheng3/x-stream__xstream_CVE-2020-26217_1-4-14-java7](https://github.com/shoucheng3/x-stream__xstream_CVE-2020-26217_1-4-14-java7)
+- [shoucheng3/x-stream__xstream_CVE-2020-26217_1-4-14-java77](https://github.com/shoucheng3/x-stream__xstream_CVE-2020-26217_1-4-14-java77)
 
 ### CVE-2020-26233 (2020-12-08)
 
@@ -45257,7 +45289,7 @@
 <code>Apache Camel's File is vulnerable to directory traversal. Camel 2.21.0 to 2.21.3, 2.22.0 to 2.22.2, 2.23.0 and the unsupported Camel 2.x (2.19 and earlier) versions may be also affected.
 </code>
 
-- [shoucheng3/apache__camel_CVE-2019-0194_2-21-4](https://github.com/shoucheng3/apache__camel_CVE-2019-0194_2-21-4)
+- [shoucheng3/apache__camel_CVE-2019-0194_2-21-44](https://github.com/shoucheng3/apache__camel_CVE-2019-0194_2-21-44)
 
 ### CVE-2019-0207 (2019-09-16)
 
@@ -46880,7 +46912,6 @@
 - [e-renna/CVE-2019-9053](https://github.com/e-renna/CVE-2019-9053)
 - [zmiddle/Simple_CMS_SQLi](https://github.com/zmiddle/Simple_CMS_SQLi)
 - [ELIZEUOPAIN/CVE-2019-9053-CMS-Made-Simple-2.2.10---SQL-Injection-Exploit](https://github.com/ELIZEUOPAIN/CVE-2019-9053-CMS-Made-Simple-2.2.10---SQL-Injection-Exploit)
-- [pedrojosenavasperez/CVE-2019-9053-Python3](https://github.com/pedrojosenavasperez/CVE-2019-9053-Python3)
 - [Mahamedm/CVE-2019-9053-Exploit-Python-3](https://github.com/Mahamedm/CVE-2019-9053-Exploit-Python-3)
 - [im-suman-roy/CVE-2019-9053](https://github.com/im-suman-roy/CVE-2019-9053)
 - [bthnrml/guncel-cve-2019-9053.py](https://github.com/bthnrml/guncel-cve-2019-9053.py)
@@ -48185,7 +48216,7 @@
 - [Sindayifu/CVE-2019-14287-CVE-2014-6271](https://github.com/Sindayifu/CVE-2019-14287-CVE-2014-6271)
 - [CMNatic/Dockerized-CVE-2019-14287](https://github.com/CMNatic/Dockerized-CVE-2019-14287)
 - [axax002/sudo-vulnerability-CVE-2019-14287](https://github.com/axax002/sudo-vulnerability-CVE-2019-14287)
-- [SachinthaDeSilva-cmd/Exploit-CVE-2019-14287](https://github.com/SachinthaDeSilva-cmd/Exploit-CVE-2019-14287)
+- [sachinthadesilva/Exploit-CVE-2019-14287](https://github.com/sachinthadesilva/Exploit-CVE-2019-14287)
 - [HussyCool/CVE-2019-14287-IT18030372-](https://github.com/HussyCool/CVE-2019-14287-IT18030372-)
 - [ShianTrish/sudo-Security-Bypass-vulnerability-CVE-2019-14287](https://github.com/ShianTrish/sudo-Security-Bypass-vulnerability-CVE-2019-14287)
 - [ejlevin99/Sudo-Security-Bypass-Vulnerability](https://github.com/ejlevin99/Sudo-Security-Bypass-Vulnerability)
@@ -52466,6 +52497,7 @@
 - [altsun/CVE-2018-16763-FuelCMS-1.4.1-RCE](https://github.com/altsun/CVE-2018-16763-FuelCMS-1.4.1-RCE)
 - [ArtemCyberLab/Project-Exploiting-a-Vulnerability-in-Fuel-CMS-CVE-2018-16763-](https://github.com/ArtemCyberLab/Project-Exploiting-a-Vulnerability-in-Fuel-CMS-CVE-2018-16763-)
 - [B7T3/CVE-2018-16763_FuelCMS-1.4.1_RCE](https://github.com/B7T3/CVE-2018-16763_FuelCMS-1.4.1_RCE)
+- [Cyberuser-hash/CVE-2018-16763](https://github.com/Cyberuser-hash/CVE-2018-16763)
 
 ### CVE-2018-16809 (2019-03-07)
 
@@ -52596,7 +52628,7 @@
 <code>The unzip function in ZipUtil.java in Hutool before 4.1.12 allows remote attackers to overwrite arbitrary files via directory traversal sequences in a filename within a ZIP archive.
 </code>
 
-- [shoucheng3/dromara__hutool_CVE-2018-17297_4-1-11](https://github.com/shoucheng3/dromara__hutool_CVE-2018-17297_4-1-11)
+- [shoucheng3/dromara__hutool_CVE-2018-17297_4-1-1111](https://github.com/shoucheng3/dromara__hutool_CVE-2018-17297_4-1-1111)
 
 ### CVE-2018-17418 (2019-03-07)
 
