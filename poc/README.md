@@ -1383,6 +1383,13 @@
 
 - [drackyjr/CVE-2025-8018](https://github.com/drackyjr/CVE-2025-8018)
 
+### CVE-2025-8061 (2025-09-11)
+
+<code>A potential insufficient access control vulnerability was reported in the Lenovo Dispatcher 3.0 and Dispatcher 3.1 drivers used by some Lenovo consumer notebooks that could allow an authenticated local user to execute code with elevated privileges. The Lenovo Dispatcher 3.2 driver is not affected. This vulnerability does not affect systems when the Windows feature Core Isolation Memory Integrity is enabled. Lenovo systems preloaded with Windows 11 have this feature enabled by default.
+</code>
+
+- [symeonp/Lenovo-CVE-2025-8061](https://github.com/symeonp/Lenovo-CVE-2025-8061)
+
 ### CVE-2025-8067 (2025-08-28)
 
 <code>A flaw was found in the Udisks daemon, where it allows unprivileged users to create loop devices using the D-BUS system. This is achieved via the loop device handler, which handles requests sent through the D-BUS interface. As two of the parameters of this handle, it receives the file descriptor list and index specifying the file where the loop device should be backed. The function itself validates the index value to ensure it isn't bigger than the maximum value allowed. However, it fails to validate the lower bound, allowing the index parameter to be a negative value. Under these circumstances, an attacker can cause the UDisks daemon to crash or perform a local privilege escalation by gaining access to files owned by privileged users.
@@ -1420,7 +1427,6 @@
 - [pablo388/WinRAR-CVE-2025-8088-PoC-RAR](https://github.com/pablo388/WinRAR-CVE-2025-8088-PoC-RAR)
 - [lucyna77/winrar-exploit](https://github.com/lucyna77/winrar-exploit)
 - [Fathi-MO/POC-CVE-2025-8088](https://github.com/Fathi-MO/POC-CVE-2025-8088)
-- [haspread/CVE-2025-8088](https://github.com/haspread/CVE-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1506,6 +1512,7 @@
 </code>
 
 - [Nxploited/CVE-2025-8625](https://github.com/Nxploited/CVE-2025-8625)
+- [ret0x2A/CVE-2025-8625](https://github.com/ret0x2A/CVE-2025-8625)
 
 ### CVE-2025-8671 (2025-08-13)
 
@@ -1566,6 +1573,7 @@
 - [zenzue/CVE-2025-9074](https://github.com/zenzue/CVE-2025-9074)
 - [j3r1ch0123/CVE-2025-9074](https://github.com/j3r1ch0123/CVE-2025-9074)
 - [pucagit/CVE-2025-9074](https://github.com/pucagit/CVE-2025-9074)
+- [OilSeller2001/PoC-for-CVE-2025-9074](https://github.com/OilSeller2001/PoC-for-CVE-2025-9074)
 
 ### CVE-2025-9090 (2025-08-17)
 
@@ -3234,6 +3242,7 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
+- [KaztoRay/CVE-2025-29927-Research](https://github.com/KaztoRay/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -3749,7 +3758,7 @@
 <code>vLLM is a high-throughput and memory-efficient inference and serving engine for LLMs. Versions starting from 0.6.5 and prior to 0.8.5, having vLLM integration with mooncake, are vulnerable to remote code execution due to using pickle based serialization over unsecured ZeroMQ sockets. The vulnerable sockets were set to listen on all network interfaces, increasing the likelihood that an attacker is able to reach the vulnerable ZeroMQ sockets to carry out an attack. vLLM instances that do not make use of the mooncake integration are not vulnerable. This issue has been patched in version 0.8.5.
 </code>
 
-- [stuxbench/vLLM-CVE-2025-32444](https://github.com/stuxbench/vLLM-CVE-2025-32444)
+- [stuxbench/vllm-cve-2025-32444](https://github.com/stuxbench/vllm-cve-2025-32444)
 
 ### CVE-2025-32462 (2025-06-30)
 
@@ -3829,6 +3838,7 @@
 - [AC8999/CVE-2025-32463](https://github.com/AC8999/CVE-2025-32463)
 - [onniio/CVE-2025-32463](https://github.com/onniio/CVE-2025-32463)
 - [khoazero123/CVE-2025-32463](https://github.com/khoazero123/CVE-2025-32463)
+- [r3dBust3r/CVE-2025-32463](https://github.com/r3dBust3r/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -5056,6 +5066,9 @@
 
 - [kevinpdicks/Mezzanine-CMS-6.1.0-XSS](https://github.com/kevinpdicks/Mezzanine-CMS-6.1.0-XSS)
 
+### CVE-2025-50505
+- [bron1e/CVE-2025-50505](https://github.com/bron1e/CVE-2025-50505)
+
 ### CVE-2025-50565 (2025-09-02)
 
 <code>Doubo ERP 1.0 has an SQL injection vulnerability due to a lack of filtering of user input, which can be remotely initiated by an attacker.
@@ -5215,6 +5228,13 @@
 </code>
 
 - [piotrmaciejbednarski/CVE-2025-51529](https://github.com/piotrmaciejbednarski/CVE-2025-51529)
+
+### CVE-2025-51586 (2025-09-08)
+
+<code>An issue was discoverd in file controllers/admin/AdminLoginController.php in PrestaShop before 8.2.1 allowing attackers to gain sensitive information via the reset password feature.
+</code>
+
+- [7h30th3r0n3/CVE-2025-51586-PrestaShop-PoC](https://github.com/7h30th3r0n3/CVE-2025-51586-PrestaShop-PoC)
 
 ### CVE-2025-51591 (2025-07-11)
 
@@ -6067,7 +6087,11 @@
 
 - [Jainil-89/CVE](https://github.com/Jainil-89/CVE)
 
-### CVE-2025-57515
+### CVE-2025-57515 (2025-10-06)
+
+<code>A SQL injection vulnerability has been identified in Uniclare Student Portal v2. This flaw allows remote attackers to inject arbitrary SQL commands via vulnerable input fields, enabling the execution of time-delay functions to infer database responses.
+</code>
+
 - [sanchitsahni/CVE-2025-57515](https://github.com/sanchitsahni/CVE-2025-57515)
 
 ### CVE-2025-57520 (2025-09-10)
@@ -6167,13 +6191,6 @@
 
 - [quetuan03/CVE-2025-58789](https://github.com/quetuan03/CVE-2025-58789)
 
-### CVE-2025-59251 (2025-09-24)
-
-<code>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability
-</code>
-
-- [allinsthon/CVE-2025-59251](https://github.com/allinsthon/CVE-2025-59251)
-
 ### CVE-2025-59342 (2025-09-17)
 
 <code>esm.sh is a nobuild content delivery network(CDN) for modern web development. In 136 and earlier, a path-traversal flaw in the handling of the X-Zone-Id HTTP header allows an attacker to cause the application to write files outside the intended storage location. The header value is used to build a filesystem path but is not properly canonicalized or restricted to the application’s storage base directory. As a result, supplying ../ sequences in X-Zone-Id causes files to be written to arbitrary directories.
@@ -6247,6 +6264,9 @@
 </code>
 
 - [rxerium/CVE-2025-61882](https://github.com/rxerium/CVE-2025-61882)
+- [allinsthon/CVE-2025-61882](https://github.com/allinsthon/CVE-2025-61882)
+- [watchtowrlabs/watchTowr-vs-Oracle-E-Business-Suite-CVE-2025-61882](https://github.com/watchtowrlabs/watchTowr-vs-Oracle-E-Business-Suite-CVE-2025-61882)
+- [Sachinart/CVE-2025-61882](https://github.com/Sachinart/CVE-2025-61882)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -10471,6 +10491,7 @@
 - [tvasari/CVE-2024-23897](https://github.com/tvasari/CVE-2024-23897)
 - [Fineken/Jenkins-CVE-2024-23897-Lab](https://github.com/Fineken/Jenkins-CVE-2024-23897-Lab)
 - [amalpvatayam67/day03-jenkins-23897](https://github.com/amalpvatayam67/day03-jenkins-23897)
+- [hybinn/CVE-2024-23897](https://github.com/hybinn/CVE-2024-23897)
 
 ### CVE-2024-23898 (2024-01-24)
 
@@ -13308,6 +13329,13 @@
 - [GhostS3c/CVE-2024-38819](https://github.com/GhostS3c/CVE-2024-38819)
 - [skrkcb2/cve-2024-38819](https://github.com/skrkcb2/cve-2024-38819)
 - [vishalnoza/CVE-2024-38819-POC2](https://github.com/vishalnoza/CVE-2024-38819-POC2)
+
+### CVE-2024-38820 (2024-10-18)
+
+<code>The fix for CVE-2022-22968 made disallowedFields patterns in DataBinder case insensitive. However, String.toLowerCase() has some Locale dependent exceptions that could potentially result in fields not protected as expected.
+</code>
+
+- [kadamnayan/POC-CVE-2024-38820](https://github.com/kadamnayan/POC-CVE-2024-38820)
 
 ### CVE-2024-38821 (2024-10-28)
 
@@ -24219,6 +24247,7 @@
 </code>
 
 - [bbugdigger/ktor-xxe-poc](https://github.com/bbugdigger/ktor-xxe-poc)
+- [infernosalex/CVE-2023-45612-PoC](https://github.com/infernosalex/CVE-2023-45612-PoC)
 
 ### CVE-2023-45657 (2023-11-06)
 
@@ -28343,10 +28372,10 @@
 </code>
 
 - [JacobEbben/CVE-2022-24716](https://github.com/JacobEbben/CVE-2022-24716)
-- [joaoviictorti/CVE-2022-24716](https://github.com/joaoviictorti/CVE-2022-24716)
 - [pumpkinpiteam/CVE-2022-24716](https://github.com/pumpkinpiteam/CVE-2022-24716)
 - [doosec101/CVE-2022-24716](https://github.com/doosec101/CVE-2022-24716)
 - [antisecc/CVE-2022-24716](https://github.com/antisecc/CVE-2022-24716)
+- [gmh5225/CVE-2022-24716-2](https://github.com/gmh5225/CVE-2022-24716-2)
 
 ### CVE-2022-24734 (2022-03-09)
 
@@ -31365,6 +31394,7 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
+- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -36248,7 +36278,6 @@
 - [hev0x/CVE-2021-31630-OpenPLC_RCE](https://github.com/hev0x/CVE-2021-31630-OpenPLC_RCE)
 - [Hunt3r0x/CVE-2021-31630-HTB](https://github.com/Hunt3r0x/CVE-2021-31630-HTB)
 - [thewhiteh4t/cve-2021-31630](https://github.com/thewhiteh4t/cve-2021-31630)
-- [UserB1ank/CVE-2021-31630](https://github.com/UserB1ank/CVE-2021-31630)
 - [behindsecurity/htb-wifinetictwo-exploit](https://github.com/behindsecurity/htb-wifinetictwo-exploit)
 - [mind2hex/CVE-2021-31630-OpenPLC-3-Authenticated-RCE](https://github.com/mind2hex/CVE-2021-31630-OpenPLC-3-Authenticated-RCE)
 - [sealldeveloper/CVE-2021-31630-PoC](https://github.com/sealldeveloper/CVE-2021-31630-PoC)
@@ -36257,6 +36286,7 @@
 - [manuelsantosiglesias/CVE-2021-31630](https://github.com/manuelsantosiglesias/CVE-2021-31630)
 - [FlojBoj/CVE-2021-31630](https://github.com/FlojBoj/CVE-2021-31630)
 - [machevalia/OpenPLC-CVE-2021-31630-RCE](https://github.com/machevalia/OpenPLC-CVE-2021-31630-RCE)
+- [UserB1ank/CVE-2021-31630](https://github.com/UserB1ank/CVE-2021-31630)
 
 ### CVE-2021-31728 (2021-05-17)
 
