@@ -538,7 +538,7 @@
 - [SUPRAAA-1337/CVE-2025-3102](https://github.com/SUPRAAA-1337/CVE-2025-3102)
 - [SUPRAAA-1337/CVE-2025-3102_v2](https://github.com/SUPRAAA-1337/CVE-2025-3102_v2)
 - [SUPRAAA-1337/CVE-2025-3102-exploit](https://github.com/SUPRAAA-1337/CVE-2025-3102-exploit)
-- [0xgh057r3c0n/CVE-2025-3102](https://github.com/0xgh057r3c0n/CVE-2025-3102)
+- [zr1p3r/CVE-2025-3102](https://github.com/zr1p3r/CVE-2025-3102)
 - [baribut/CVE-2025-3102](https://github.com/baribut/CVE-2025-3102)
 
 ### CVE-2025-3243 (2025-04-04)
@@ -562,7 +562,7 @@
 - [tiemio/RCE-CVE-2025-3248](https://github.com/tiemio/RCE-CVE-2025-3248)
 - [ynsmroztas/CVE-2025-3248-Langflow-RCE](https://github.com/ynsmroztas/CVE-2025-3248-Langflow-RCE)
 - [imbas007/CVE-2025-3248](https://github.com/imbas007/CVE-2025-3248)
-- [0xgh057r3c0n/CVE-2025-3248](https://github.com/0xgh057r3c0n/CVE-2025-3248)
+- [zr1p3r/CVE-2025-3248](https://github.com/zr1p3r/CVE-2025-3248)
 - [zapstiko/CVE-2025-3248](https://github.com/zapstiko/CVE-2025-3248)
 - [B1ack4sh/Blackash-CVE-2025-3248](https://github.com/B1ack4sh/Blackash-CVE-2025-3248)
 - [issamjr/CVE-2025-3248-Scanner](https://github.com/issamjr/CVE-2025-3248-Scanner)
@@ -709,7 +709,7 @@
 </code>
 
 - [Nxploited/CVE-2025-4334](https://github.com/Nxploited/CVE-2025-4334)
-- [0xgh057r3c0n/CVE-2025-4334](https://github.com/0xgh057r3c0n/CVE-2025-4334)
+- [zr1p3r/CVE-2025-4334](https://github.com/zr1p3r/CVE-2025-4334)
 
 ### CVE-2025-4336 (2025-05-24)
 
@@ -1030,7 +1030,7 @@
 - [win3zz/CVE-2025-5777](https://github.com/win3zz/CVE-2025-5777)
 - [FrenzisRed/CVE-2025-5777](https://github.com/FrenzisRed/CVE-2025-5777)
 - [bughuntar/CVE-2025-5777](https://github.com/bughuntar/CVE-2025-5777)
-- [0xgh057r3c0n/CVE-2025-5777](https://github.com/0xgh057r3c0n/CVE-2025-5777)
+- [zr1p3r/CVE-2025-5777](https://github.com/zr1p3r/CVE-2025-5777)
 - [SleepNotF0und/CVE-2025-5777](https://github.com/SleepNotF0und/CVE-2025-5777)
 - [cyberleelawat/ExploitVeer](https://github.com/cyberleelawat/ExploitVeer)
 - [B1ack4sh/Blackash-CVE-2025-5777](https://github.com/B1ack4sh/Blackash-CVE-2025-5777)
@@ -1097,7 +1097,7 @@
 
 - [Nxploited/CVE-2025-6058](https://github.com/Nxploited/CVE-2025-6058)
 - [JayVillain/Scan-CVE-2025-6058](https://github.com/JayVillain/Scan-CVE-2025-6058)
-- [0xgh057r3c0n/CVE-2025-6058](https://github.com/0xgh057r3c0n/CVE-2025-6058)
+- [zr1p3r/CVE-2025-6058](https://github.com/zr1p3r/CVE-2025-6058)
 
 ### CVE-2025-6082 (2025-07-22)
 
@@ -1231,7 +1231,7 @@
 
 - [Nxploited/CVE-2025-6934](https://github.com/Nxploited/CVE-2025-6934)
 - [MrjHaxcore/CVE-2025-6934](https://github.com/MrjHaxcore/CVE-2025-6934)
-- [0xgh057r3c0n/CVE-2025-6934](https://github.com/0xgh057r3c0n/CVE-2025-6934)
+- [zr1p3r/CVE-2025-6934](https://github.com/zr1p3r/CVE-2025-6934)
 - [yukinime/CVE-2025-6934](https://github.com/yukinime/CVE-2025-6934)
 - [Pwdnx1337/CVE-2025-6934](https://github.com/Pwdnx1337/CVE-2025-6934)
 - [Rosemary1337/CVE-2025-6934](https://github.com/Rosemary1337/CVE-2025-6934)
@@ -1259,6 +1259,13 @@
 - [Nxploited/CVE-2025-7340](https://github.com/Nxploited/CVE-2025-7340)
 - [Kai-One001/WordPress-HT-Contact-CVE-2025-7340-RCE](https://github.com/Kai-One001/WordPress-HT-Contact-CVE-2025-7340-RCE)
 
+### CVE-2025-7401 (2025-07-11)
+
+<code>The Premium Age Verification / Restriction for WordPress plugin for WordPress is vulnerable to arbitrary file read and write due to the existence of an insufficiently protected remote support functionality in remote_tunnel.php in all versions up to, and including, 3.0.2. This makes it possible for unauthenticated attackers to read from or write to arbitrary files on the affected site's server which may make the exposure of sensitive information or remote code execution possible.
+</code>
+
+- [Nxploited/CVE-2025-7401](https://github.com/Nxploited/CVE-2025-7401)
+
 ### CVE-2025-7404 (2025-07-24)
 
 <code>Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Calibre Web, Autocaliweb allows Blind OS Command Injection.This issue affects Calibre Web: 0.6.24 (Nicolette); Autocaliweb: from 0.7.0 before 0.7.1.
@@ -1272,6 +1279,13 @@
 </code>
 
 - [NagisaYumaa/CVE-2025-7431](https://github.com/NagisaYumaa/CVE-2025-7431)
+
+### CVE-2025-7441 (2025-08-16)
+
+<code>The StoryChief plugin for WordPress is vulnerable to arbitrary file uploads in all versions up to, and including, 1.0.42. This vulnerability occurs through the /wp-json/storychief/webhook REST-API endpoint that does not have sufficient filetype validation. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
+</code>
+
+- [Nxploited/CVE-2025-7441](https://github.com/Nxploited/CVE-2025-7441)
 
 ### CVE-2025-7461 (2025-07-12)
 
@@ -2444,7 +2458,7 @@
 - [adilburaksen/CVE-2025-25257-Exploit-Tool](https://github.com/adilburaksen/CVE-2025-25257-Exploit-Tool)
 - [imbas007/CVE-2025-25257](https://github.com/imbas007/CVE-2025-25257)
 - [B1ack4sh/Blackash-CVE-2025-25257](https://github.com/B1ack4sh/Blackash-CVE-2025-25257)
-- [0xgh057r3c0n/CVE-2025-25257](https://github.com/0xgh057r3c0n/CVE-2025-25257)
+- [zr1p3r/CVE-2025-25257](https://github.com/zr1p3r/CVE-2025-25257)
 - [mrmtwoj/CVE-2025-25257](https://github.com/mrmtwoj/CVE-2025-25257)
 - [TheStingR/CVE-2025-25257](https://github.com/TheStingR/CVE-2025-25257)
 - [segfault-it/CVE-2025-25257](https://github.com/segfault-it/CVE-2025-25257)
@@ -3471,7 +3485,7 @@
 - [sunhuiHi666/CVE-2025-31125](https://github.com/sunhuiHi666/CVE-2025-31125)
 - [MuhammadWaseem29/Vitejs-exploit](https://github.com/MuhammadWaseem29/Vitejs-exploit)
 - [nak000/Vitejs-exploit-CVE-2025-31125-rce](https://github.com/nak000/Vitejs-exploit-CVE-2025-31125-rce)
-- [0xgh057r3c0n/CVE-2025-31125](https://github.com/0xgh057r3c0n/CVE-2025-31125)
+- [zr1p3r/CVE-2025-31125](https://github.com/zr1p3r/CVE-2025-31125)
 - [harshgupptaa/Path-Transversal-CVE-2025-31125-](https://github.com/harshgupptaa/Path-Transversal-CVE-2025-31125-)
 
 ### CVE-2025-31129 (2025-03-31)
@@ -3506,7 +3520,7 @@
 - [TX-One/CVE-2025-31161](https://github.com/TX-One/CVE-2025-31161)
 - [SUPRAAA-1337/Nuclei_CVE-2025-31161_CVE-2025-2825](https://github.com/SUPRAAA-1337/Nuclei_CVE-2025-31161_CVE-2025-2825)
 - [SUPRAAA-1337/CVE-2025-31161_exploit](https://github.com/SUPRAAA-1337/CVE-2025-31161_exploit)
-- [0xgh057r3c0n/CVE-2025-31161](https://github.com/0xgh057r3c0n/CVE-2025-31161)
+- [zr1p3r/CVE-2025-31161](https://github.com/zr1p3r/CVE-2025-31161)
 - [B1ack4sh/Blackash-CVE-2025-31161](https://github.com/B1ack4sh/Blackash-CVE-2025-31161)
 - [ibrahmsql/CVE-2025-31161](https://github.com/ibrahmsql/CVE-2025-31161)
 - [r0otk3r/CVE-2025-31161](https://github.com/r0otk3r/CVE-2025-31161)
@@ -3775,6 +3789,7 @@
 - [MAAYTHM/CVE-2025-32462_32463-Lab](https://github.com/MAAYTHM/CVE-2025-32462_32463-Lab)
 - [toohau/CVE-2025-32462-32463-Detection-Script-](https://github.com/toohau/CVE-2025-32462-32463-Detection-Script-)
 - [j3r1ch0123/CVE-2025-32462](https://github.com/j3r1ch0123/CVE-2025-32462)
+- [harsh1verma/CVE-Analysis](https://github.com/harsh1verma/CVE-Analysis)
 
 ### CVE-2025-32463 (2025-06-30)
 
@@ -3982,12 +3997,12 @@
 </code>
 
 - [MrjHaxcore/CVE-2025-34077](https://github.com/MrjHaxcore/CVE-2025-34077)
-- [0xgh057r3c0n/CVE-2025-34077](https://github.com/0xgh057r3c0n/CVE-2025-34077)
+- [zr1p3r/CVE-2025-34077](https://github.com/zr1p3r/CVE-2025-34077)
 
 ### CVE-2025-34085
 - [MrjHaxcore/CVE-2025-34085](https://github.com/MrjHaxcore/CVE-2025-34085)
 - [ill-deed/CVE-2025-34085-Multi-target](https://github.com/ill-deed/CVE-2025-34085-Multi-target)
-- [0xgh057r3c0n/CVE-2025-34085](https://github.com/0xgh057r3c0n/CVE-2025-34085)
+- [zr1p3r/CVE-2025-34085](https://github.com/zr1p3r/CVE-2025-34085)
 - [yukinime/CVE-2025-34085](https://github.com/yukinime/CVE-2025-34085)
 - [B1ack4sh/Blackash-CVE-2025-34085](https://github.com/B1ack4sh/Blackash-CVE-2025-34085)
 
@@ -4321,6 +4336,13 @@
 </code>
 
 - [mr-xmen786/CVE-2025-44608](https://github.com/mr-xmen786/CVE-2025-44608)
+
+### CVE-2025-44823 (2025-10-07)
+
+<code>Nagios Log Server before 2024R1.3.2 allows authenticated users to retrieve cleartext administrative API keys via a /nagioslogserver/index.php/api/system/get_users call. This is GL:NLS#475.
+</code>
+
+- [skraft9/CVE-2025-44823](https://github.com/skraft9/CVE-2025-44823)
 
 ### CVE-2025-44998 (2025-05-23)
 
@@ -4701,7 +4723,7 @@
 
 - [4m3rr0r/CVE-2025-47812-poc](https://github.com/4m3rr0r/CVE-2025-47812-poc)
 - [0xcan1337/CVE-2025-47812-poC](https://github.com/0xcan1337/CVE-2025-47812-poC)
-- [0xgh057r3c0n/CVE-2025-47812](https://github.com/0xgh057r3c0n/CVE-2025-47812)
+- [zr1p3r/CVE-2025-47812](https://github.com/zr1p3r/CVE-2025-47812)
 - [ill-deed/WingFTP-CVE-2025-47812-illdeed](https://github.com/ill-deed/WingFTP-CVE-2025-47812-illdeed)
 - [pevinkumar10/CVE-2025-47812](https://github.com/pevinkumar10/CVE-2025-47812)
 - [rxerium/CVE-2025-47812](https://github.com/rxerium/CVE-2025-47812)
@@ -4831,7 +4853,7 @@
 <code>vBulletin 5.0.0 through 5.7.5 and 6.0.0 through 6.0.3 allows unauthenticated users to invoke protected API controllers' methods when running on PHP 8.1 or later, as demonstrated by the /api.php?method=protectedMethod pattern, as exploited in the wild in May 2025.
 </code>
 
-- [0xgh057r3c0n/CVE-2025-48827](https://github.com/0xgh057r3c0n/CVE-2025-48827)
+- [zr1p3r/CVE-2025-48827](https://github.com/zr1p3r/CVE-2025-48827)
 - [wiseep/CVE-2025-48827](https://github.com/wiseep/CVE-2025-48827)
 - [SystemVll/CVE-2025-48827](https://github.com/SystemVll/CVE-2025-48827)
 
@@ -4984,6 +5006,7 @@
 
 - [gopinaath/CVE-2025-49844-discovery](https://github.com/gopinaath/CVE-2025-49844-discovery)
 - [dwisiswant0/CVE-2025-49844](https://github.com/dwisiswant0/CVE-2025-49844)
+- [lastvocher/redis-CVE-2025-49844](https://github.com/lastvocher/redis-CVE-2025-49844)
 
 ### CVE-2025-50000
 - [adiivascu/CVE-2025-50000](https://github.com/adiivascu/CVE-2025-50000)
@@ -5096,7 +5119,11 @@
 
 - [kevinpdicks/Mezzanine-CMS-6.1.0-XSS](https://github.com/kevinpdicks/Mezzanine-CMS-6.1.0-XSS)
 
-### CVE-2025-50505
+### CVE-2025-50505 (2025-10-07)
+
+<code>Clash Verge Rev thru 2.2.3 forces the installation of system services(clash-verge-service) by default and exposes key functions through the unauthorized HTTP API `/start_clash`, allowing local users to submit arbitrary bin_path parameters and pass them directly to the service process for execution, resulting in local privilege escalation.
+</code>
+
 - [bron1e/CVE-2025-50505](https://github.com/bron1e/CVE-2025-50505)
 
 ### CVE-2025-50565 (2025-09-02)
@@ -5367,6 +5394,13 @@
 
 - [M4xIq/CVE-2025-51970](https://github.com/M4xIq/CVE-2025-51970)
 
+### CVE-2025-52021 (2025-10-07)
+
+<code>A SQL Injection vulnerability exists in the edit_product.php file of PuneethReddyHC Online Shopping System Advanced 1.0. The product_id GET parameter is unsafely passed to a SQL query without proper validation or parameterization.
+</code>
+
+- [hafizgemilang/CVE-2025-52021](https://github.com/hafizgemilang/CVE-2025-52021)
+
 ### CVE-2025-52078 (2025-08-05)
 
 <code>File upload vulnerability in Writebot AI Content Generator SaaS React Template thru 4.0.0, allowing remote attackers to gain escalated privileges via a crafted POST request to the /file-upload endpoint.
@@ -5608,6 +5642,13 @@
 </code>
 
 - [B1ack4sh/Blackash-CVE-2025-53773](https://github.com/B1ack4sh/Blackash-CVE-2025-53773)
+
+### CVE-2025-53786 (2025-08-06)
+
+<code>On April 18th 2025, Microsoft announced Exchange Server Security Changes for Hybrid Deployments and accompanying non-security Hot Fix. Microsoft made these changes in the general interest of improving the security of hybrid Exchange deployments. Following further investigation, Microsoft identified specific security implications tied to the guidance and configuration steps outlined in the April announcement. Microsoft is issuing CVE-2025-53786 to document a vulnerability that is addressed by taking the steps documented with the April 18th announcement. Microsoft strongly recommends reading the information, installing the April 2025 (or later) Hot Fix and implementing the changes in your Exchange Server and hybrid environment.
+</code>
+
+- [vincentdthe/CVE-2025-53786](https://github.com/vincentdthe/CVE-2025-53786)
 
 ### CVE-2025-53833 (2025-07-14)
 
@@ -5940,6 +5981,13 @@
 </code>
 
 - [fredericgoossens/CVE-2025-56132-Liquidfiles](https://github.com/fredericgoossens/CVE-2025-56132-Liquidfiles)
+
+### CVE-2025-56243 (2025-10-07)
+
+<code>A Cross-Site Scripting (XSS) vulnerability was found in the register.php page of PuneethReddyHC Event Management System 1.0, where the event_id GET parameter is improperly handled. An attacker can craft a malicious URL to execute arbitrary JavaScript in the victim s browser by injecting code into this parameter.
+</code>
+
+- [hafizgemilang/CVE-2025-56243](https://github.com/hafizgemilang/CVE-2025-56243)
 
 ### CVE-2025-56311 (2025-09-23)
 
@@ -6303,6 +6351,7 @@
 - [rxerium/CVE-2025-61882](https://github.com/rxerium/CVE-2025-61882)
 - [watchtowrlabs/watchTowr-vs-Oracle-E-Business-Suite-CVE-2025-61882](https://github.com/watchtowrlabs/watchTowr-vs-Oracle-E-Business-Suite-CVE-2025-61882)
 - [Sachinart/CVE-2025-61882](https://github.com/Sachinart/CVE-2025-61882)
+- [B1ack4sh/Blackash-CVE-2025-61882](https://github.com/B1ack4sh/Blackash-CVE-2025-61882)
 
 ### CVE-2025-61984 (2025-10-06)
 
@@ -13372,6 +13421,7 @@
 - [GhostS3c/CVE-2024-38819](https://github.com/GhostS3c/CVE-2024-38819)
 - [skrkcb2/cve-2024-38819](https://github.com/skrkcb2/cve-2024-38819)
 - [vishalnoza/CVE-2024-38819-POC2](https://github.com/vishalnoza/CVE-2024-38819-POC2)
+- [Nandavardhan8/spring-poc-CVE-2024-38819](https://github.com/Nandavardhan8/spring-poc-CVE-2024-38819)
 
 ### CVE-2024-38820 (2024-10-18)
 
@@ -13505,6 +13555,13 @@
 
 ### CVE-2024-39306
 - [apena-ba/CVE-2024-39306](https://github.com/apena-ba/CVE-2024-39306)
+
+### CVE-2024-39309 (2024-07-01)
+
+<code>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. A vulnerability in versions prior to 6.5.7 and 7.1.0 allows SQL injection when Parse Server is configured to use the PostgreSQL database. The algorithm to detect SQL injection has been improved in versions 6.5.7 and 7.1.0. No known workarounds are available.
+</code>
+
+- [HeavyGhost-le/POC_SQL_injection_in_Parse_Server_prior_6.5.7_-_7.1.0](https://github.com/HeavyGhost-le/POC_SQL_injection_in_Parse_Server_prior_6.5.7_-_7.1.0)
 
 ### CVE-2024-39614 (2024-07-10)
 
@@ -34166,7 +34223,6 @@
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
 - [cspshivam/cve-2021-4034](https://github.com/cspshivam/cve-2021-4034)
-- [an0n7os/CVE-2021-4034](https://github.com/an0n7os/CVE-2021-4034)
 - [DanaEpp/pwncat_pwnkit](https://github.com/DanaEpp/pwncat_pwnkit)
 - [x04000/CVE-2021-4034](https://github.com/x04000/CVE-2021-4034)
 - [x04000/AutoPwnkit](https://github.com/x04000/AutoPwnkit)
@@ -38171,6 +38227,7 @@
 - [charanvoonna/CVE-2021-41773](https://github.com/charanvoonna/CVE-2021-41773)
 - [hackedrishi/CTF_WRITEUPS-TryHackMe-CVE-2021-41773-](https://github.com/hackedrishi/CTF_WRITEUPS-TryHackMe-CVE-2021-41773-)
 - [MuhammadHuzaifaAsif/security-lab](https://github.com/MuhammadHuzaifaAsif/security-lab)
+- [gunzf0x/CVE-2021-41773](https://github.com/gunzf0x/CVE-2021-41773)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -39311,7 +39368,7 @@
 - [moften/Log4Shell](https://github.com/moften/Log4Shell)
 - [KamalideenAK/Microsoft-Defender-for-Endpoint-Deployment-on-Windows-10-11-device](https://github.com/KamalideenAK/Microsoft-Defender-for-Endpoint-Deployment-on-Windows-10-11-device)
 - [arabindadora/log4shell](https://github.com/arabindadora/log4shell)
-- [d4ngkh04w/CVE-2021-44228-Apache-Log4j](https://github.com/d4ngkh04w/CVE-2021-44228-Apache-Log4j)
+- [d4ngkh04w/CVE-2021-44228-Apache-Log4j2](https://github.com/d4ngkh04w/CVE-2021-44228-Apache-Log4j2)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -50753,7 +50810,6 @@
 - [paulogmota/CVE-2018-6574](https://github.com/paulogmota/CVE-2018-6574)
 - [solovvway/CVE-2018-6574](https://github.com/solovvway/CVE-2018-6574)
 - [memmas/CVE-2018-6574](https://github.com/memmas/CVE-2018-6574)
-- [adendarys/CVE-2018-6574](https://github.com/adendarys/CVE-2018-6574)
 
 ### CVE-2018-6622 (2018-08-17)
 
