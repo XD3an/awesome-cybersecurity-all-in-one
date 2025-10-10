@@ -404,6 +404,7 @@
 - [RootHarpy/CVE-2025-2539](https://github.com/RootHarpy/CVE-2025-2539)
 - [Yucaerin/CVE-2025-2539](https://github.com/Yucaerin/CVE-2025-2539)
 - [d4rkh0rse/CVE-2025-2539](https://github.com/d4rkh0rse/CVE-2025-2539)
+- [AlvaXPloit/CVE-2025-2539](https://github.com/AlvaXPloit/CVE-2025-2539)
 
 ### CVE-2025-2563 (2025-04-14)
 
@@ -761,6 +762,13 @@
 </code>
 
 - [xie-22/CVE-2025-4428](https://github.com/xie-22/CVE-2025-4428)
+
+### CVE-2025-4476 (2025-05-16)
+
+<code>A denial-of-service vulnerability has been identified in the libsoup HTTP client library. This flaw can be triggered when a libsoup client receives a 401 (Unauthorized) HTTP response containing a specifically crafted domain parameter within the WWW-Authenticate header. Processing this malformed header can lead to a crash of the client application using libsoup. An attacker could exploit this by setting up a malicious HTTP server. If a user's application using the vulnerable libsoup library connects to this malicious server, it could result in a denial-of-service. Successful exploitation requires tricking a user's client application into connecting to the attacker's malicious server.
+</code>
+
+- [soltanali0/CVE-2025-4476-Exploit](https://github.com/soltanali0/CVE-2025-4476-Exploit)
 
 ### CVE-2025-4524 (2025-05-21)
 
@@ -1442,6 +1450,7 @@
 - [pablo388/WinRAR-CVE-2025-8088-PoC-RAR](https://github.com/pablo388/WinRAR-CVE-2025-8088-PoC-RAR)
 - [lucyna77/winrar-exploit](https://github.com/lucyna77/winrar-exploit)
 - [Fathi-MO/POC-CVE-2025-8088](https://github.com/Fathi-MO/POC-CVE-2025-8088)
+- [tookATE/CVE-2025-8088](https://github.com/tookATE/CVE-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1726,13 +1735,6 @@
 </code>
 
 - [ivansmc00/CVE-2025-10353-POC](https://github.com/ivansmc00/CVE-2025-10353-POC)
-
-### CVE-2025-10492 (2025-09-16)
-
-<code>A Java deserialisation vulnerability has been discovered in Jaspersoft Library. Improper handling of externally supplied data may allow attackers to execute arbitrary code remotely on systems that use the affected library
-</code>
-
-- [dovezp/CVE-2025-10492-POC](https://github.com/dovezp/CVE-2025-10492-POC)
 
 ### CVE-2025-10585 (2025-09-24)
 
@@ -3279,7 +3281,6 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [KaztoRay/CVE-2025-29927-Research](https://github.com/KaztoRay/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -3320,7 +3321,7 @@
 - [HoumanPashaei/CVE-2025-29927](https://github.com/HoumanPashaei/CVE-2025-29927)
 - [rubbxalc/CVE-2025-29927](https://github.com/rubbxalc/CVE-2025-29927)
 - [olimpiofreitas/CVE-2025-29927-scanner](https://github.com/olimpiofreitas/CVE-2025-29927-scanner)
-- [moften/CVE-2025-29927](https://github.com/moften/CVE-2025-29927)
+- [moften/CVE-2025-29927_Next.js_Auth_Bypass](https://github.com/moften/CVE-2025-29927_Next.js_Auth_Bypass)
 - [EarthAngel666/x-middleware-exploit](https://github.com/EarthAngel666/x-middleware-exploit)
 - [enochgitgamefied/NextJS-CVE-2025-29927-Docker-Lab](https://github.com/enochgitgamefied/NextJS-CVE-2025-29927-Docker-Lab)
 - [sagsooz/CVE-2025-29927](https://github.com/sagsooz/CVE-2025-29927)
@@ -3880,6 +3881,7 @@
 - [r3dBust3r/CVE-2025-32463](https://github.com/r3dBust3r/CVE-2025-32463)
 - [0x3c4dfa1/CVE-2025-32463](https://github.com/0x3c4dfa1/CVE-2025-32463)
 - [ricardomaia/CVE-2025-32463](https://github.com/ricardomaia/CVE-2025-32463)
+- [shazed-x/CVE-2025-32463](https://github.com/shazed-x/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -4574,13 +4576,6 @@
 
 - [1Altruist/CVE-2025-46271-Reverse-Shell-PoC](https://github.com/1Altruist/CVE-2025-46271-Reverse-Shell-PoC)
 
-### CVE-2025-46408 (2025-09-15)
-
-<code>An issue was discovered in the methods push.lite.avtech.com.AvtechLib.GetHttpsResponse and push.lite.avtech.com.Push_HttpService.getNewHttpClient in AVTECH EagleEyes 2.0.0. The methods set ALLOW_ALL_HOSTNAME_VERIFIER, bypassing domain validation.
-</code>
-
-- [shinyColumn/CVE-2025-46408](https://github.com/shinyColumn/CVE-2025-46408)
-
 ### CVE-2025-46657 (2025-04-27)
 
 <code>Karaz Karazal through 2025-04-14 allows reflected XSS via the lang parameter to the default URI.
@@ -5050,16 +5045,11 @@
 - [srozb/reditrap](https://github.com/srozb/reditrap)
 - [pedrorichil/CVE-2025-49844](https://github.com/pedrorichil/CVE-2025-49844)
 - [Yuri08loveElaina/CVE-2025-49844](https://github.com/Yuri08loveElaina/CVE-2025-49844)
+- [YuanBenSir/CVE-2025-49844_POC](https://github.com/YuanBenSir/CVE-2025-49844_POC)
+- [Mufti22/CVE-2025-49844-RediShell-Vulnerability-Scanner](https://github.com/Mufti22/CVE-2025-49844-RediShell-Vulnerability-Scanner)
 
 ### CVE-2025-50000
 - [adiivascu/CVE-2025-50000](https://github.com/adiivascu/CVE-2025-50000)
-
-### CVE-2025-50110 (2025-09-15)
-
-<code>An issue was discovered in the method push.lite.avtech.com.AvtechLib.GetHttpsResponse in AVTECH EagleEyes Lite 2.0.0, the GetHttpsResponse method transmits sensitive information - including internal server URLs, account IDs, passwords, and device tokens - as plaintext query parameters over HTTPS
-</code>
-
-- [shinyColumn/CVE-2025-50110](https://github.com/shinyColumn/CVE-2025-50110)
 
 ### CVE-2025-50154 (2025-08-12)
 
@@ -5220,13 +5210,6 @@
 </code>
 
 - [SacX-7/CVE-2025-50867](https://github.com/SacX-7/CVE-2025-50867)
-
-### CVE-2025-50944 (2025-09-15)
-
-<code>An issue was discovered in the method push.lite.avtech.com.MySSLSocketFactoryNew.checkServerTrusted in AVTECH EagleEyes 2.0.0. The custom X509TrustManager used in checkServerTrusted only checks the certificate's expiration date, skipping proper TLS chain validation.
-</code>
-
-- [shinyColumn/CVE-2025-50944](https://github.com/shinyColumn/CVE-2025-50944)
 
 ### CVE-2025-51005 (2025-09-23)
 
@@ -5713,7 +5696,7 @@
 </code>
 
 - [anntsmart/CVE-2025-54135](https://github.com/anntsmart/CVE-2025-54135)
-- [Cbdlll/test-mcp](https://github.com/Cbdlll/test-mcp)
+- [hn1e13/test-mcp](https://github.com/hn1e13/test-mcp)
 
 ### CVE-2025-54236 (2025-09-09)
 
@@ -5984,6 +5967,9 @@
 ### CVE-2025-55891
 - [terribledactyl/CVE-2025-55891](https://github.com/terribledactyl/CVE-2025-55891)
 
+### CVE-2025-55903
+- [ajansha/CVE-2025-55903](https://github.com/ajansha/CVE-2025-55903)
+
 ### CVE-2025-55971 (2025-10-03)
 
 <code>TCL 65C655 Smart TV, running firmware version V8-R75PT01-LF1V269.001116 (Android TV, Kernel 5.4.242+), is vulnerable to a blind, unauthenticated Server-Side Request Forgery (SSRF) vulnerability via the UPnP MediaRenderer service (AVTransport:1). The device accepts unauthenticated SetAVTransportURI SOAP requests over TCP/16398 and attempts to retrieve externally referenced URIs, including attacker-controlled payloads. The blind SSRF allows for sending requests on behalf of the TV, which can be leveraged to probe for other internal or external services accessible by the device (e.g., 127.0.0.1:16XXX, LAN services, or internet targets), potentially enabling additional exploit chains.
@@ -6128,13 +6114,6 @@
 </code>
 
 - [B1tBreaker/CVE-2025-56795](https://github.com/B1tBreaker/CVE-2025-56795)
-
-### CVE-2025-56803 (2025-09-03)
-
-<code>Figma Desktop for Windows version 125.6.5 contains a command injection vulnerability in the local plugin loader. An attacker can execute arbitrary OS commands by setting a crafted build field in the plugin's manifest.json. This field is passed to child_process.exec without validation, leading to possible RCE. NOTE: this is disputed by the Supplier because the behavior only allows a local user to attack himself via a local plugin. The local build procedure, which is essential to the attack, is not executed for plugins shared to the Figma Community.
-</code>
-
-- [shinyColumn/CVE-2025-56803](https://github.com/shinyColumn/CVE-2025-56803)
 
 ### CVE-2025-56807 (2025-09-29)
 
@@ -6375,6 +6354,16 @@
 
 - [suriryuk/cve-2025-59934](https://github.com/suriryuk/cve-2025-59934)
 
+### CVE-2025-60375 (2025-10-09)
+
+<code>The authentication mechanism in Perfex CRM before 3.3.1 allows attackers to bypass login credentials due to insufficient server-side validation. By sending empty username and password parameters in the login request, an attacker can gain unauthorized access to user accounts, including administrative accounts, without providing valid credentials.
+</code>
+
+- [AhamedYaseen03/CVE-2025-60375](https://github.com/AhamedYaseen03/CVE-2025-60375)
+
+### CVE-2025-60378
+- [ajansha/CVE-2025-60378](https://github.com/ajansha/CVE-2025-60378)
+
 ### CVE-2025-60736
 - [WinDyAlphA/CVE-2025-60736](https://github.com/WinDyAlphA/CVE-2025-60736)
 
@@ -6391,6 +6380,9 @@
 </code>
 
 - [thawphone/CVE-2025-61183](https://github.com/thawphone/CVE-2025-61183)
+
+### CVE-2025-61319
+- [AmalJafarzade/CVE-2025-61319](https://github.com/AmalJafarzade/CVE-2025-61319)
 
 ### CVE-2025-61622 (2025-10-01)
 
@@ -6520,7 +6512,7 @@
 - [Kai2er/CVE-2024-0044-EXP](https://github.com/Kai2er/CVE-2024-0044-EXP)
 - [hunter24x24/cve_2024_0044](https://github.com/hunter24x24/cve_2024_0044)
 - [sridhar-sec/EvilDroid](https://github.com/sridhar-sec/EvilDroid)
-- [l1ackernishan/CVE-2024-0044](https://github.com/l1ackernishan/CVE-2024-0044)
+- [l1ackerronin/CVE-2024-0044](https://github.com/l1ackerronin/CVE-2024-0044)
 - [MrW0l05zyn/cve-2024-0044](https://github.com/MrW0l05zyn/cve-2024-0044)
 - [canyie/CVE-2024-0044](https://github.com/canyie/CVE-2024-0044)
 - [Dit-Developers/CVE-2024-0044-](https://github.com/Dit-Developers/CVE-2024-0044-)
@@ -12323,6 +12315,7 @@
 - [Mr-xn/CVE-2024-32113](https://github.com/Mr-xn/CVE-2024-32113)
 - [YongYe-Security/CVE-2024-32113](https://github.com/YongYe-Security/CVE-2024-32113)
 - [guinea-offensive-security/Ofbiz-RCE](https://github.com/guinea-offensive-security/Ofbiz-RCE)
+- [luizgaf/CVE-2024-32113-Exploit](https://github.com/luizgaf/CVE-2024-32113-Exploit)
 
 ### CVE-2024-32136 (2024-04-15)
 
@@ -18968,6 +18961,7 @@
 - [3tternp/CVE-2023-21554](https://github.com/3tternp/CVE-2023-21554)
 - [Rahul-Thakur7/CVE-2023-21554](https://github.com/Rahul-Thakur7/CVE-2023-21554)
 - [leongxudong/MSMQ-Vulnerability](https://github.com/leongxudong/MSMQ-Vulnerability)
+- [shootweb/CVE-2023-21554](https://github.com/shootweb/CVE-2023-21554)
 
 ### CVE-2023-21560 (2023-01-10)
 
@@ -23717,6 +23711,7 @@
 - [becrevex/CVE-2023-42793](https://github.com/becrevex/CVE-2023-42793)
 - [jakehomb/cve-2023-42793](https://github.com/jakehomb/cve-2023-42793)
 - [syaifulandy/Nuclei-Template-CVE-2023-42793.yaml](https://github.com/syaifulandy/Nuclei-Template-CVE-2023-42793.yaml)
+- [syorik/CVE-2023-42793](https://github.com/syorik/CVE-2023-42793)
 
 ### CVE-2023-42819 (2023-09-26)
 
@@ -25521,6 +25516,7 @@
 - [Trackflaw/CVE-2024-10924-Wordpress-Docker](https://github.com/Trackflaw/CVE-2024-10924-Wordpress-Docker)
 - [Pixel-DefaultBR/CVE-2023-50164](https://github.com/Pixel-DefaultBR/CVE-2023-50164)
 - [MKIRAHMET/CVE-2023-50164-HTB-strutted](https://github.com/MKIRAHMET/CVE-2023-50164-HTB-strutted)
+- [hybinn/CVE-2023-50164](https://github.com/hybinn/CVE-2023-50164)
 
 ### CVE-2023-50226 (2024-05-03)
 
@@ -27861,6 +27857,7 @@
 - [gunzf0x/CVE-2022-22963](https://github.com/gunzf0x/CVE-2022-22963)
 - [nikn0laty/RCE-in-Spring-Cloud-CVE-2022-22963](https://github.com/nikn0laty/RCE-in-Spring-Cloud-CVE-2022-22963)
 - [BearClaw96/CVE-2022-22963-Poc-Bearcules](https://github.com/BearClaw96/CVE-2022-22963-Poc-Bearcules)
+- [xmqaq/CVE-2022-22963](https://github.com/xmqaq/CVE-2022-22963)
 - [jrbH4CK/CVE-2022-22963](https://github.com/jrbH4CK/CVE-2022-22963)
 - [Shayz614/CVE-2022-22963](https://github.com/Shayz614/CVE-2022-22963)
 
@@ -31561,7 +31558,6 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -39990,7 +39986,7 @@
 - [wyu0hop/CVE-2020-0096](https://github.com/wyu0hop/CVE-2020-0096)
 - [liuyun201990/StrandHogg2](https://github.com/liuyun201990/StrandHogg2)
 - [tea9/CVE-2020-0096-StrandHogg2](https://github.com/tea9/CVE-2020-0096-StrandHogg2)
-- [l1ackernishan/CVE-2020-0096-strandhogg-exploit-p0c](https://github.com/l1ackernishan/CVE-2020-0096-strandhogg-exploit-p0c)
+- [l1ackerronin/CVE-2020-0096-strandhogg-exploit-p0c](https://github.com/l1ackerronin/CVE-2020-0096-strandhogg-exploit-p0c)
 
 ### CVE-2020-0108 (2020-08-11)
 
@@ -55432,7 +55428,7 @@
 - [giacomoferretti/janus-toolkit](https://github.com/giacomoferretti/janus-toolkit)
 - [tea9/CVE-2017-13156-Janus](https://github.com/tea9/CVE-2017-13156-Janus)
 - [M507/CVE-2017-13156](https://github.com/M507/CVE-2017-13156)
-- [l1ackernishan/Janus-Vulnerability-CVE-2017-13156-Exploit](https://github.com/l1ackernishan/Janus-Vulnerability-CVE-2017-13156-Exploit)
+- [l1ackerronin/Janus-Vulnerability-CVE-2017-13156-Exploit](https://github.com/l1ackerronin/Janus-Vulnerability-CVE-2017-13156-Exploit)
 - [nictjh/threatDemos](https://github.com/nictjh/threatDemos)
 
 ### CVE-2017-13208 (2018-01-12)
