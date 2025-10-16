@@ -1077,6 +1077,7 @@
 </code>
 
 - [M4rgs/CVE-2025-5947_Exploit](https://github.com/M4rgs/CVE-2025-5947_Exploit)
+- [NightlyAudit/CVE-2025-5947](https://github.com/NightlyAudit/CVE-2025-5947)
 
 ### CVE-2025-5961 (2025-07-03)
 
@@ -1457,6 +1458,7 @@
 - [0xAbolfazl/CVE-2025-8088-WinRAR-PathTraversal-PoC](https://github.com/0xAbolfazl/CVE-2025-8088-WinRAR-PathTraversal-PoC)
 - [pentestfunctions/CVE-2025-8088-Multi-Document](https://github.com/pentestfunctions/CVE-2025-8088-Multi-Document)
 - [pexlexity/WinRAR-CVE-2025-8088-Path-Traversal-PoC](https://github.com/pexlexity/WinRAR-CVE-2025-8088-Path-Traversal-PoC)
+- [Snorx-cyber/CVE-2025-8088-builder](https://github.com/Snorx-cyber/CVE-2025-8088-builder)
 - [nhattanhh/CVE-2025-8088](https://github.com/nhattanhh/CVE-2025-8088)
 - [Syrins/CVE-2025-8088-Winrar-Tool-Gui](https://github.com/Syrins/CVE-2025-8088-Winrar-Tool-Gui)
 - [ghostn4444/CVE-2025-8088](https://github.com/ghostn4444/CVE-2025-8088)
@@ -1708,6 +1710,13 @@
 
 - [MooseLoveti/Trinity-Audio-CVE-Report2](https://github.com/MooseLoveti/Trinity-Audio-CVE-Report2)
 
+### CVE-2025-9967 (2025-10-15)
+
+<code>The Orion SMS OTP Verification plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 1.1.7. This is due to the plugin not properly validating a user's identity prior to updating their password. This makes it possible for unauthenticated attackers to change arbitrary user's password to a one-time password if the attacker knows the user's phone number
+</code>
+
+- [OraclePatch/CVE-2025-9967](https://github.com/OraclePatch/CVE-2025-9967)
+
 ### CVE-2025-9998 (2025-09-05)
 
 <code>The sequence of packets received by a Networking server are not correctly checked.\n\nAn attacker could exploit this vulnerability to send specially crafted messages to force the application to stop.
@@ -1723,6 +1732,14 @@
 - [rxerium/CVE-2025-10035](https://github.com/rxerium/CVE-2025-10035)
 - [ThemeHackers/CVE-2025-10035](https://github.com/ThemeHackers/CVE-2025-10035)
 - [orange0Mint/CVE-2025-10035_GoAnywhere](https://github.com/orange0Mint/CVE-2025-10035_GoAnywhere)
+
+### CVE-2025-10041 (2025-10-15)
+
+<code>The Flex QR Code Generator plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in thesave_qr_code_to_db() function in all versions up to, and including, 1.2.5. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
+</code>
+
+- [Nxploited/CVE-2025-10041](https://github.com/Nxploited/CVE-2025-10041)
+- [AlloyRecon/CVE-2025-10041](https://github.com/AlloyRecon/CVE-2025-10041)
 
 ### CVE-2025-10046 (2025-09-06)
 
@@ -1754,6 +1771,13 @@
 - [People-11/CVE-2025-10184_PoC](https://github.com/People-11/CVE-2025-10184_PoC)
 - [yuuouu/ColorOS-CVE-2025-10184](https://github.com/yuuouu/ColorOS-CVE-2025-10184)
 - [Webpage-gh/CVE-2025-10184-PoC](https://github.com/Webpage-gh/CVE-2025-10184-PoC)
+
+### CVE-2025-10294 (2025-10-15)
+
+<code>The OwnID Passwordless Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 1.3.4. This is due to the plugin not properly checking if the ownid_shared_secret value is empty prior to authenticating a user via JWT. This makes it possible for unauthenticated attackers to log in as other users, including administrators, on instances where the plugin has not been fully configured yet.
+</code>
+
+- [h4xnz/CVE-2025-10294-POC](https://github.com/h4xnz/CVE-2025-10294-POC)
 
 ### CVE-2025-10351 (2025-10-08)
 
@@ -1792,6 +1816,7 @@
 
 ### CVE-2025-11001
 - [shalevo13/Se7enSlip](https://github.com/shalevo13/Se7enSlip)
+- [pacbypass/CVE-2025-11001](https://github.com/pacbypass/CVE-2025-11001)
 
 ### CVE-2025-11077 (2025-09-27)
 
@@ -1814,6 +1839,7 @@
 
 - [rxerium/CVE-2025-11371](https://github.com/rxerium/CVE-2025-11371)
 - [callinston/CVE-2025-11371](https://github.com/callinston/CVE-2025-11371)
+- [NetVanguard-cmd/CVE-2025-11371](https://github.com/NetVanguard-cmd/CVE-2025-11371)
 
 ### CVE-2025-11449 (2025-10-10)
 
@@ -1828,6 +1854,13 @@
 </code>
 
 - [m3m0o/portabilis-ieducar-user-type-privilege-escalation](https://github.com/m3m0o/portabilis-ieducar-user-type-privilege-escalation)
+
+### CVE-2025-11832 (2025-10-15)
+
+<code>Allocation of Resources Without Limits or Throttling vulnerability in Azure Access Technology BLU-IC2, Azure Access Technology BLU-IC4 allows Flooding.This issue affects BLU-IC2: through 1.19.5; BLU-IC4: through 1.19.5.
+</code>
+
+- [SilentPacket-cmd/CVE-2025-11832](https://github.com/SilentPacket-cmd/CVE-2025-11832)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -2844,7 +2877,6 @@
 </code>
 
 - [rxerium/CVE-2025-26399](https://github.com/rxerium/CVE-2025-26399)
-- [h4xnz/CVE-2025-26399-Exploit](https://github.com/h4xnz/CVE-2025-26399-Exploit)
 
 ### CVE-2025-26417 (2025-08-26)
 
@@ -3434,6 +3466,7 @@
 - [kuyrathdaro/cve-2025-29927](https://github.com/kuyrathdaro/cve-2025-29927)
 - [diogolourencodev/middleforce](https://github.com/diogolourencodev/middleforce)
 - [Bongni/CVE-2025-29927](https://github.com/Bongni/CVE-2025-29927)
+- [NS-Projects-Unina/CTF_CVE_DSP_1](https://github.com/NS-Projects-Unina/CTF_CVE_DSP_1)
 
 ### CVE-2025-29972 (2025-05-08)
 
@@ -5761,7 +5794,6 @@
 <code>Deserialization of untrusted data in on-premises Microsoft SharePoint Server allows an unauthorized attacker to execute code over a network.\nMicrosoft is aware that an exploit for CVE-2025-53770 exists in the wild.\nMicrosoft is preparing and fully testing a comprehensive update to address this vulnerability.  In the meantime, please make sure that the mitigation provided in this CVE documentation is in place so that you are protected from exploitation.
 </code>
 
-- [taqiaferdianshah/CVE-2025-53770](https://github.com/taqiaferdianshah/CVE-2025-53770)
 - [yashz0007/CVE-2025-53770-Exploit](https://github.com/yashz0007/CVE-2025-53770-Exploit)
 - [B1ack4sh/Blackash-CVE-2025-53770](https://github.com/B1ack4sh/Blackash-CVE-2025-53770)
 - [RukshanaAlikhan/CVE-2025-53770](https://github.com/RukshanaAlikhan/CVE-2025-53770)
@@ -6233,6 +6265,9 @@
 
 - [Jingyi-u/-CVE-2025-56435](https://github.com/Jingyi-u/-CVE-2025-56435)
 
+### CVE-2025-56503
+- [secxplorers/CVE-2025-56503](https://github.com/secxplorers/CVE-2025-56503)
+
 ### CVE-2025-56514 (2025-10-01)
 
 <code>Cross Site Scripting (XSS) vulnerability in Fiora chat application 1.0.0 allows executes arbitrary JavaScript when malicious SVG files are rendered by other users.
@@ -6519,7 +6554,6 @@
 <code>Unity Runtime before 2025-10-02 on Android, Windows, macOS, and Linux allows argument injection that can result in loading of library code from an unintended location. If an application was built with a version of Unity Editor that had the vulnerable Unity Runtime code, then an adversary may be able to execute code on, and exfiltrate confidential information from, the machine on which that application is running. NOTE: product status is provided for Unity Editor because that is the information available from the Supplier. However, updating Unity Editor typically does not address the effects of the vulnerability; instead, it is necessary to rebuild and redeploy all affected applications.
 </code>
 
-- [RealtekDotSys/Meteor](https://github.com/RealtekDotSys/Meteor)
 - [GithubKillsMyOpsec/CVE-2025-59489-POC](https://github.com/GithubKillsMyOpsec/CVE-2025-59489-POC)
 - [taptap/cve-2025-59489](https://github.com/taptap/cve-2025-59489)
 - [AdriianFdz/Exploit-CVE-2025-59489](https://github.com/AdriianFdz/Exploit-CVE-2025-59489)
@@ -6591,6 +6625,12 @@
 
 - [thawphone/CVE-2025-61183](https://github.com/thawphone/CVE-2025-61183)
 
+### CVE-2025-61301
+- [eGkritsis/CVE-2025-61301](https://github.com/eGkritsis/CVE-2025-61301)
+
+### CVE-2025-61303
+- [eGkritsis/CVE-2025-61303](https://github.com/eGkritsis/CVE-2025-61303)
+
 ### CVE-2025-61319 (2025-10-10)
 
 <code>ReNgine thru 2.2.0 is vulnerable to a Stored Cross-Site Scripting (XSS) vulnerability in the Vulnerabilities module. When scanning a target with an XSS payload, the unsanitized payload is rendered in the ReNgine web UI, resulting in arbitrary JavaScript execution in the victim's browser. This can be abused to steal session cookies, perform unauthorized actions, or compromise the ReNgine administrator's account.
@@ -6631,6 +6671,7 @@
 - [Sachinart/CVE-2025-61882](https://github.com/Sachinart/CVE-2025-61882)
 - [B1ack4sh/Blackash-CVE-2025-61882](https://github.com/B1ack4sh/Blackash-CVE-2025-61882)
 - [zerozenxlabs/CVE-2025-61882-Oracle-EBS](https://github.com/zerozenxlabs/CVE-2025-61882-Oracle-EBS)
+- [RootAid/CVE-2025-61882](https://github.com/RootAid/CVE-2025-61882)
 
 ### CVE-2025-61884 (2025-10-12)
 
@@ -11846,6 +11887,13 @@
 
 - [shinigami-777/PoC_CVE-2024-28157](https://github.com/shinigami-777/PoC_CVE-2024-28157)
 
+### CVE-2024-28231 (2024-03-20)
+
+<code>eprosima Fast DDS is a C++ implementation of the Data Distribution Service standard of the Object Management Group. Prior to versions 2.14.0, 2.13.4, 2.12.3, 2.10.4, and 2.6.8, manipulated DATA Submessage can cause a heap overflow error in the Fast-DDS process, causing the process to be terminated remotely. Additionally, the payload_size in the DATA Submessage packet is declared as uint32_t. When a negative number, such as -1, is input into this variable, it results in an Integer Overflow (for example, -1 gets converted to 0xFFFFFFFF). This eventually leads to a heap-buffer-overflow, causing the program to terminate. Versions 2.14.0, 2.13.4, 2.12.3, 2.10.4, and 2.6.8 contain a fix for this issue.
+</code>
+
+- [grimmmbo/ros2_CVE-2024-28231](https://github.com/grimmmbo/ros2_CVE-2024-28231)
+
 ### CVE-2024-28247 (2024-03-27)
 
 <code>The Pi-hole is a DNS sinkhole that protects your devices from unwanted content without installing any client-side software. A vulnerability has been discovered in Pihole that allows an authenticated user on the platform to read internal server files arbitrarily, and because the application runs from behind, reading files is done as a privileged user.If the URL that is in the list of &quot;Adslists&quot; begins with &quot;file*&quot; it is understood that it is updating from a local file, on the other hand if it does not begin with &quot;file*&quot; depending on the state of the response it does one thing or another. The problem resides in the update through local files. When updating from a file which contains non-domain lines, 5 of the non-domain lines are printed on the screen, so if you provide it with any file on the server which contains non-domain lines it will print them on the screen. This vulnerability is fixed by 5.18.
@@ -16307,6 +16355,7 @@
 - [BuludX/CVE-2024-53677](https://github.com/BuludX/CVE-2024-53677)
 - [r007sec/CVE-2024-53677](https://github.com/r007sec/CVE-2024-53677)
 - [Cythonic1/CVE-2024-53677-POC](https://github.com/Cythonic1/CVE-2024-53677-POC)
+- [seoyoung-kang/CVE-2024-53677](https://github.com/seoyoung-kang/CVE-2024-53677)
 
 ### CVE-2024-53691 (2024-12-06)
 
@@ -24678,6 +24727,7 @@
 
 - [bbugdigger/ktor-xxe-poc](https://github.com/bbugdigger/ktor-xxe-poc)
 - [infernosalex/CVE-2023-45612-PoC](https://github.com/infernosalex/CVE-2023-45612-PoC)
+- [aecelen/ktor-xxe-poc](https://github.com/aecelen/ktor-xxe-poc)
 
 ### CVE-2023-45657 (2023-11-06)
 
@@ -30889,6 +30939,7 @@
 - [seadragnol/CVE-2022-32250](https://github.com/seadragnol/CVE-2022-32250)
 - [KuanKuanQAQ/cve-testing](https://github.com/KuanKuanQAQ/cve-testing)
 - [g3un/cve-2022-32250](https://github.com/g3un/cve-2022-32250)
+- [rem0t3/CVE-2022-32250-Compiled](https://github.com/rem0t3/CVE-2022-32250-Compiled)
 
 ### CVE-2022-32287 (2022-11-03)
 
@@ -35604,6 +35655,13 @@
 
 - [dldygnl/CVE-2021-24741](https://github.com/dldygnl/CVE-2021-24741)
 
+### CVE-2021-24762 (2022-02-01)
+
+<code>The Perfect Survey WordPress plugin before 1.5.2 does not validate and escape the question_id GET parameter before using it in a SQL statement in the get_question AJAX action, allowing unauthenticated users to perform SQL injection.
+</code>
+
+- [c4cnm/Exploit_CVE-2021-24762](https://github.com/c4cnm/Exploit_CVE-2021-24762)
+
 ### CVE-2021-24807 (2021-11-08)
 
 <code>The Support Board WordPress plugin before 3.3.5 allows Authenticated (Agent+) users to perform Cross-Site Scripting attacks by placing a payload in the notes field, when an administrator or any authenticated user go to the chat the XSS will be automatically executed.
@@ -39637,7 +39695,6 @@
 - [mr-vill4in/log4j-fuzzer](https://github.com/mr-vill4in/log4j-fuzzer)
 - [mebibite/log4jhound](https://github.com/mebibite/log4jhound)
 - [aajuvonen/log4stdin](https://github.com/aajuvonen/log4stdin)
-- [FeryaelJustice/Log4Shell](https://github.com/FeryaelJustice/Log4Shell)
 - [hotpotcookie/CVE-2021-44228-white-box](https://github.com/hotpotcookie/CVE-2021-44228-white-box)
 - [s-retlaw/l4srs](https://github.com/s-retlaw/l4srs)
 - [Ananya-0306/Log-4j-scanner](https://github.com/Ananya-0306/Log-4j-scanner)
@@ -45542,6 +45599,13 @@
 </code>
 
 - [anasbousselham/webminscan](https://github.com/anasbousselham/webminscan)
+
+### CVE-2020-35667 (2021-02-03)
+
+<code>JetBrains TeamCity Plugin before 2020.2.85695 SSRF. Vulnerability that could potentially expose user credentials.
+</code>
+
+- [Diekgbbtt/CVE-2020-35667-PoC](https://github.com/Diekgbbtt/CVE-2020-35667-PoC)
 
 ### CVE-2020-35669 (2020-12-24)
 
@@ -55345,6 +55409,7 @@
 - [Al1ex/CVE-2017-10271](https://github.com/Al1ex/CVE-2017-10271)
 - [pizza-power/weblogic-CVE-2019-2729-POC](https://github.com/pizza-power/weblogic-CVE-2019-2729-POC)
 - [KKsdall/7kbstormq](https://github.com/KKsdall/7kbstormq)
+- [seoyoung-kang/CVE-2017-10271](https://github.com/seoyoung-kang/CVE-2017-10271)
 
 ### CVE-2017-10352 (2017-10-19)
 
