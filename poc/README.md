@@ -1450,6 +1450,7 @@
 <code>A path traversal vulnerability affecting the Windows version of WinRAR allows the attackers to execute arbitrary code by crafting malicious archive files. This vulnerability was exploited in the wild and was discovered by Anton Cherepanov, Peter Košinár, and Peter Strýček\n     from ESET.
 </code>
 
+- [aldisakti2/CVE-2025-8088-BUILDER-Winrar-Tool](https://github.com/aldisakti2/CVE-2025-8088-BUILDER-Winrar-Tool)
 - [jordan922/CVE-2025-8088](https://github.com/jordan922/CVE-2025-8088)
 - [travisbgreen/cve-2025-8088](https://github.com/travisbgreen/cve-2025-8088)
 - [knight0x07/WinRAR-CVE-2025-8088-PoC-RAR](https://github.com/knight0x07/WinRAR-CVE-2025-8088-PoC-RAR)
@@ -1458,7 +1459,6 @@
 - [0xAbolfazl/CVE-2025-8088-WinRAR-PathTraversal-PoC](https://github.com/0xAbolfazl/CVE-2025-8088-WinRAR-PathTraversal-PoC)
 - [pentestfunctions/CVE-2025-8088-Multi-Document](https://github.com/pentestfunctions/CVE-2025-8088-Multi-Document)
 - [pexlexity/WinRAR-CVE-2025-8088-Path-Traversal-PoC](https://github.com/pexlexity/WinRAR-CVE-2025-8088-Path-Traversal-PoC)
-- [Snorx-cyber/CVE-2025-8088-builder](https://github.com/Snorx-cyber/CVE-2025-8088-builder)
 - [nhattanhh/CVE-2025-8088](https://github.com/nhattanhh/CVE-2025-8088)
 - [Syrins/CVE-2025-8088-Winrar-Tool-Gui](https://github.com/Syrins/CVE-2025-8088-Winrar-Tool-Gui)
 - [ghostn4444/CVE-2025-8088](https://github.com/ghostn4444/CVE-2025-8088)
@@ -1473,10 +1473,8 @@
 - [Shinkirou789/Cve-2025-8088-WinRar-vulnerability](https://github.com/Shinkirou789/Cve-2025-8088-WinRar-vulnerability)
 - [Osinskitito499/CVE-2025-8088](https://github.com/Osinskitito499/CVE-2025-8088)
 - [hbesljx/CVE-2025-8088-EXP](https://github.com/hbesljx/CVE-2025-8088-EXP)
-- [pablo388/WinRAR-CVE-2025-8088-PoC-RAR](https://github.com/pablo388/WinRAR-CVE-2025-8088-PoC-RAR)
 - [lucyna77/winrar-exploit](https://github.com/lucyna77/winrar-exploit)
 - [Fathi-MO/POC-CVE-2025-8088](https://github.com/Fathi-MO/POC-CVE-2025-8088)
-- [tookATE/CVE-2025-8088](https://github.com/tookATE/CVE-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1654,6 +1652,13 @@
 
 - [d0n601/CVE-2025-9216](https://github.com/d0n601/CVE-2025-9216)
 
+### CVE-2025-9242 (2025-09-17)
+
+<code>An Out-of-bounds Write vulnerability in WatchGuard Fireware OS may allow a remote unauthenticated attacker to execute arbitrary code. This vulnerability affects both the Mobile User VPN with IKEv2 and the Branch Office VPN using IKEv2 when configured with a dynamic gateway peer.This vulnerability affects Fireware OS 11.10.2 up to and including 11.12.4_Update1, 12.0 up to and including 12.11.3 and 2025.1.
+</code>
+
+- [watchtowrlabs/watchTowr-vs-WatchGuard-CVE-2025-9242](https://github.com/watchtowrlabs/watchTowr-vs-WatchGuard-CVE-2025-9242)
+
 ### CVE-2025-9267 (2025-09-26)
 
 <code>In Seagate Toolkit on Windows a vulnerability exists in the Toolkit Installer prior to versions 2.35.0.6 where it attempts to load DLLs from the current working directory without validating their origin or integrity. This behavior can be exploited by placing a malicious DLL in the same directory as the installer executable, leading to arbitrary code execution with the privileges of the user running the installer. The issue stems from the use of insecure DLL loading practices, such as relying on relative paths or failing to specify fully qualified paths when invoking system libraries.
@@ -1710,13 +1715,6 @@
 
 - [MooseLoveti/Trinity-Audio-CVE-Report2](https://github.com/MooseLoveti/Trinity-Audio-CVE-Report2)
 
-### CVE-2025-9967 (2025-10-15)
-
-<code>The Orion SMS OTP Verification plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 1.1.7. This is due to the plugin not properly validating a user's identity prior to updating their password. This makes it possible for unauthenticated attackers to change arbitrary user's password to a one-time password if the attacker knows the user's phone number
-</code>
-
-- [OraclePatch/CVE-2025-9967](https://github.com/OraclePatch/CVE-2025-9967)
-
 ### CVE-2025-9998 (2025-09-05)
 
 <code>The sequence of packets received by a Networking server are not correctly checked.\n\nAn attacker could exploit this vulnerability to send specially crafted messages to force the application to stop.
@@ -1739,7 +1737,6 @@
 </code>
 
 - [Nxploited/CVE-2025-10041](https://github.com/Nxploited/CVE-2025-10041)
-- [AlloyRecon/CVE-2025-10041](https://github.com/AlloyRecon/CVE-2025-10041)
 
 ### CVE-2025-10046 (2025-09-06)
 
@@ -1767,7 +1764,6 @@
 <code>The vulnerability allows any application installed on the device to read SMS/MMS data and metadata from the system-provided Telephony provider without permission, user interaction, or consent. The user is also not notified that SMS data is being accessed. This could lead to sensitive information disclosure and could effectively break the security provided by SMS-based Multi-Factor Authentication (MFA) checks. \n\nThe root cause is a combination of missing permissions for write operations in several content providers (com.android.providers.telephony.PushMessageProvider, com.android.providers.telephony.PushShopProvider, com.android.providers.telephony.ServiceNumberProvider), and a blind SQL injection in the update method of those providers.
 </code>
 
-- [ENGWes/ColorOS-CVE-2025-10184](https://github.com/ENGWes/ColorOS-CVE-2025-10184)
 - [People-11/CVE-2025-10184_PoC](https://github.com/People-11/CVE-2025-10184_PoC)
 - [yuuouu/ColorOS-CVE-2025-10184](https://github.com/yuuouu/ColorOS-CVE-2025-10184)
 - [Webpage-gh/CVE-2025-10184-PoC](https://github.com/Webpage-gh/CVE-2025-10184-PoC)
@@ -1813,6 +1809,13 @@
 </code>
 
 - [lorenzocamilli/CVE-2025-10720-PoC](https://github.com/lorenzocamilli/CVE-2025-10720-PoC)
+
+### CVE-2025-10850 (2025-10-16)
+
+<code>The Felan Framework plugin for WordPress is vulnerable to improper authentication in versions up to, and including, 1.1.4. This is due to the hardcoded password in the 'fb_ajax_login_or_register' function and in the 'google_ajax_login_or_register' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, if they registered with facebook or google social login and did not change their password.
+</code>
+
+- [pulsecipher/CVE-2025-10850](https://github.com/pulsecipher/CVE-2025-10850)
 
 ### CVE-2025-11001
 - [shalevo13/Se7enSlip](https://github.com/shalevo13/Se7enSlip)
@@ -1896,6 +1899,13 @@
 - [grupooruss/CVE-2025-20281-Cisco](https://github.com/grupooruss/CVE-2025-20281-Cisco)
 - [ill-deed/Cisco-CVE-2025-20281-illdeed](https://github.com/ill-deed/Cisco-CVE-2025-20281-illdeed)
 - [B1ack4sh/Blackash-CVE-2025-20281](https://github.com/B1ack4sh/Blackash-CVE-2025-20281)
+
+### CVE-2025-20282 (2025-06-25)
+
+<code>A vulnerability in an internal API of Cisco ISE and Cisco ISE-PIC could allow an unauthenticated, remote attacker to upload arbitrary files to an affected device and then execute those files on the underlying operating system as root.\r\n\r\nThis vulnerability is due a lack of file validation checks that would prevent uploaded files from being placed in privileged directories on an affected system. An attacker could exploit this vulnerability by uploading a crafted file to the affected device. A successful exploit could allow the attacker to store malicious files on the affected system and then execute arbitrary code or obtain root privileges on the system.
+</code>
+
+- [skadevare/CiscoISE-CVE-2025-20282-POC](https://github.com/skadevare/CiscoISE-CVE-2025-20282-POC)
 
 ### CVE-2025-20352 (2025-09-24)
 
@@ -3837,6 +3847,13 @@
 
 - [HossamEAhmed/wp-ulike-cve-2025-32259-poc](https://github.com/HossamEAhmed/wp-ulike-cve-2025-32259-poc)
 
+### CVE-2025-32324 (2025-09-04)
+
+<code>In onCommand of ActivityManagerShellCommand.java, there is a possible arbitrary activity launch due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
+</code>
+
+- [rifting/UnrestrictedUserCreator](https://github.com/rifting/UnrestrictedUserCreator)
+
 ### CVE-2025-32375 (2025-04-09)
 
 <code>BentoML is a Python library for building online serving systems optimized for AI apps and model inference. Prior to 1.4.8, there was an insecure deserialization in BentoML's runner server. By setting specific headers and parameters in the POST request, it is possible to execute any unauthorized arbitrary code on the server, which will grant the attackers to have the initial access and information disclosure on the server. This vulnerability is fixed in 1.4.8.
@@ -5182,6 +5199,13 @@
 - [SystemVll/CVE-2025-49493](https://github.com/SystemVll/CVE-2025-49493)
 - [Soham-id/2025hvv](https://github.com/Soham-id/2025hvv)
 
+### CVE-2025-49553 (2025-10-14)
+
+<code>Adobe Connect versions 12.9 and earlier are affected by a DOM-based Cross-Site Scripting (XSS) vulnerability that could be exploited by an attacker to execute malicious scripts in a victim's browser. Exploitation of this issue requires user interaction in that a victim must navigate to a crafted web page. A successful attacker can abuse this to achieve session takeover, increasing the confidentiality and integrity impact as high. Scope is changed.
+</code>
+
+- [silentexploitexe/CVE-2025-49553](https://github.com/silentexploitexe/CVE-2025-49553)
+
 ### CVE-2025-49596 (2025-06-13)
 
 <code>The MCP inspector is a developer tool for testing and debugging MCP servers. Versions of MCP Inspector below 0.14.1 are vulnerable to remote code execution due to lack of authentication between the Inspector client and proxy, allowing unauthenticated requests to launch MCP commands over stdio. Users should immediately upgrade to version 0.14.1 or later to address these vulnerabilities.
@@ -6067,6 +6091,15 @@
 
 - [Eternalvalhalla/CVE-2025-55287-POC](https://github.com/Eternalvalhalla/CVE-2025-55287-POC)
 
+### CVE-2025-55315 (2025-10-14)
+
+<code>Inconsistent interpretation of http requests ('http request/response smuggling') in ASP.NET Core allows an authorized attacker to bypass a security feature over a network.
+</code>
+
+- [nickcopi/CVE-2025-55315-detection-playground](https://github.com/nickcopi/CVE-2025-55315-detection-playground)
+- [sirredbeard/CVE-2025-55315-repro](https://github.com/sirredbeard/CVE-2025-55315-repro)
+- [snowcrashlord/CVE-2025-55315](https://github.com/snowcrashlord/CVE-2025-55315)
+
 ### CVE-2025-55349
 - [GoldenTicketLabs/CVE-2025-55349](https://github.com/GoldenTicketLabs/CVE-2025-55349)
 
@@ -6272,6 +6305,9 @@
 
 - [Jingyi-u/-CVE-2025-56435](https://github.com/Jingyi-u/-CVE-2025-56435)
 
+### CVE-2025-56450
+- [apboss123/CVE-2025-56450](https://github.com/apboss123/CVE-2025-56450)
+
 ### CVE-2025-56503
 - [secxplorers/CVE-2025-56503](https://github.com/secxplorers/CVE-2025-56503)
 
@@ -6465,7 +6501,6 @@
 - [MuhammadWaseem29/SQL-Injection-and-RCE_CVE-2025-57819](https://github.com/MuhammadWaseem29/SQL-Injection-and-RCE_CVE-2025-57819)
 - [xV4nd3Rx/CVE-2025-57819_FreePBX-PoC](https://github.com/xV4nd3Rx/CVE-2025-57819_FreePBX-PoC)
 - [orange0Mint/CVE-2025-57819_FreePBX](https://github.com/orange0Mint/CVE-2025-57819_FreePBX)
-- [JakovBis/CVE-2025-57819_FreePBX-PoC](https://github.com/JakovBis/CVE-2025-57819_FreePBX-PoC)
 
 ### CVE-2025-57833 (2025-09-03)
 
@@ -6611,6 +6646,12 @@
 ### CVE-2025-60736
 - [WinDyAlphA/CVE-2025-60736](https://github.com/WinDyAlphA/CVE-2025-60736)
 
+### CVE-2025-60751
+- [zer0matt/CVE-2025-60751](https://github.com/zer0matt/CVE-2025-60751)
+
+### CVE-2025-60752
+- [zer0matt/CVE-2025-60752](https://github.com/zer0matt/CVE-2025-60752)
+
 ### CVE-2025-60787 (2025-10-03)
 
 <code>MotionEye v0.43.1b4 and before is vulnerable to OS Command Injection in configuration parameters such as image_file_name. Unsanitized user input is written to Motion configuration files, allowing remote authenticated attackers with admin access to achieve code execution when Motion is restarted.
@@ -6680,6 +6721,7 @@
 - [zerozenxlabs/CVE-2025-61882-Oracle-EBS](https://github.com/zerozenxlabs/CVE-2025-61882-Oracle-EBS)
 - [RootAid/CVE-2025-61882](https://github.com/RootAid/CVE-2025-61882)
 - [MindflareX/CVE-2025-61882-POC](https://github.com/MindflareX/CVE-2025-61882-POC)
+- [AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit](https://github.com/AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit)
 
 ### CVE-2025-61884 (2025-10-12)
 
@@ -6695,6 +6737,20 @@
 
 - [dgl/cve-2025-61984-poc](https://github.com/dgl/cve-2025-61984-poc)
 - [ThanhCT-CyX/Test-CVE-2025-61984](https://github.com/ThanhCT-CyX/Test-CVE-2025-61984)
+
+### CVE-2025-62376 (2025-10-14)
+
+<code>pwn.college DOJO is an education platform for learning cybersecurity. In versions up to and including commit 781d91157cfc234a434d0bab45cbcf97894c642e, the /workspace endpoint contains an improper authentication vulnerability that allows an attacker to access any active Windows VM without proper authorization. The vulnerability occurs in the view_desktop function where the user is retrieved via a URL parameter without verifying that the requester has administrative privileges. An attacker can supply any user ID and arbitrary password in the request parameters to impersonate another user. When requesting a Windows desktop service, the function does not validate the supplied password before generating access credentials, allowing the attacker to obtain an iframe source URL that grants full access to the target user's Windows VM. This impacts all users with active Windows VMs, as an attacker can access and modify data on the Windows machine and in the home directory of the associated Linux machine via the Z: drive. This issue has been patched in commit 467db0b9ea0d9a929dc89b41f6eb59f7cfc68bef. No known workarounds exist.
+</code>
+
+- [digitalsnemesis/CVE-2025-62376](https://github.com/digitalsnemesis/CVE-2025-62376)
+
+### CVE-2025-62410 (2025-10-15)
+
+<code>In versions before 20.0.2, it was found that --disallow-code-generation-from-strings is not sufficient for isolating untrusted JavaScript in happy-dom. The untrusted script and the rest of the application still run in the same Isolate/process, so attackers can deploy prototype pollution payloads to hijack important references like &quot;process&quot; in the example below, or to hijack control flow via flipping checks of undefined property. This vulnerability is due to an incomplete fix for CVE-2025-61927. The vulnerability is fixed in 20.0.2.
+</code>
+
+- [SubZeroHackerz/CVE-2025-62410](https://github.com/SubZeroHackerz/CVE-2025-62410)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -7518,6 +7574,7 @@
 - [Ikram124/CVE-2024-3094-analysis](https://github.com/Ikram124/CVE-2024-3094-analysis)
 - [mrk336/CVE-2024-3094](https://github.com/mrk336/CVE-2024-3094)
 - [Titus-soc/-CVE-2024-3094-Vulnerability-Checker-Fixer-Public](https://github.com/Titus-soc/-CVE-2024-3094-Vulnerability-Checker-Fixer-Public)
+- [M1lo25/CS50FinalProject](https://github.com/M1lo25/CS50FinalProject)
 
 ### CVE-2024-3105 (2024-06-15)
 
@@ -12408,6 +12465,7 @@
 - [sh1k4ku/CVE-2024-31497](https://github.com/sh1k4ku/CVE-2024-31497)
 - [edutko/cve-2024-31497](https://github.com/edutko/cve-2024-31497)
 - [HugoBond/CVE-2024-31497-POC](https://github.com/HugoBond/CVE-2024-31497-POC)
+- [LukaWynants/Onderzoek_CVE-2024-31497-POC](https://github.com/LukaWynants/Onderzoek_CVE-2024-31497-POC)
 
 ### CVE-2024-31666 (2024-04-22)
 
@@ -24510,6 +24568,7 @@
 - [BMG-Black-Magic/CVE-2023-44487](https://github.com/BMG-Black-Magic/CVE-2023-44487)
 - [moften/CVE-2023-44487-HTTP-2-Rapid-Reset-Attack](https://github.com/moften/CVE-2023-44487-HTTP-2-Rapid-Reset-Attack)
 - [zanks08/cve-2023-44487-demo](https://github.com/zanks08/cve-2023-44487-demo)
+- [madhusudhan-in/CVE_2023_44487-Rapid_Reset](https://github.com/madhusudhan-in/CVE_2023_44487-Rapid_Reset)
 
 ### CVE-2023-44758 (2023-10-06)
 
@@ -26702,6 +26761,7 @@
 </code>
 
 - [A1Lin/cve-2022-1364](https://github.com/A1Lin/cve-2022-1364)
+- [interruptlabs/uc_browser_poc_CVE-2022-1364](https://github.com/interruptlabs/uc_browser_poc_CVE-2022-1364)
 
 ### CVE-2022-1386 (2022-05-16)
 
@@ -30601,7 +30661,7 @@
 <code>DSpace open source software is a repository application which provides durable access to digital resources. dspace-jspui is a UI component for DSpace. The JSPUI &quot;Request a Copy&quot; feature does not properly escape values submitted and stored from the &quot;Request a Copy&quot; form. This means that item requests could be vulnerable to XSS attacks. This vulnerability only impacts the JSPUI. Users are advised to upgrade. There are no known workarounds for this vulnerability.
 </code>
 
-- [shoucheng3/DSpace__DSpace_CVE-2022-31192_5-10](https://github.com/shoucheng3/DSpace__DSpace_CVE-2022-31192_5-10)
+- [shoucheng3/DSpace__DSpace_CVE-2022-31192_5-100](https://github.com/shoucheng3/DSpace__DSpace_CVE-2022-31192_5-100)
 
 ### CVE-2022-31194 (2022-08-01)
 
@@ -46813,6 +46873,13 @@
 - [HynekPetrak/CVE-2019-5544_CVE-2020-3992](https://github.com/HynekPetrak/CVE-2019-5544_CVE-2020-3992)
 - [dgh05t/VMware_ESXI_OpenSLP_PoCs](https://github.com/dgh05t/VMware_ESXI_OpenSLP_PoCs)
 
+### CVE-2019-5591 (2020-08-14)
+
+<code>A Default Configuration vulnerability in FortiOS may allow an unauthenticated attacker on the same subnet to intercept sensitive information by impersonating the LDAP server.
+</code>
+
+- [ayewo/fortios-ldap-mitm-poc-CVE-2019-5591](https://github.com/ayewo/fortios-ldap-mitm-poc-CVE-2019-5591)
+
 ### CVE-2019-5596 (2019-02-12)
 
 <code>In FreeBSD 11.2-STABLE after r338618 and before r343786, 12.0-STABLE before r343781, and 12.0-RELEASE before 12.0-RELEASE-p3, a bug in the reference count implementation for UNIX domain sockets can cause a file structure to be incorrectly released potentially allowing a malicious local user to gain root privileges or escape from a jail.
@@ -55361,6 +55428,7 @@
 - [joelindra/Argus](https://github.com/joelindra/Argus)
 - [K3ysTr0K3R/CVE-2017-9841-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2017-9841-EXPLOIT)
 - [drcrypterdotru/PHPUnit-GoScan](https://github.com/drcrypterdotru/PHPUnit-GoScan)
+- [Pwdnx1337/CVE-2017-9841](https://github.com/Pwdnx1337/CVE-2017-9841)
 
 ### CVE-2017-9934 (2017-07-17)
 
