@@ -599,7 +599,6 @@
 - [Professor6T9/CVE-2025-3515](https://github.com/Professor6T9/CVE-2025-3515)
 - [brokendreamsclub/CVE-2025-3515](https://github.com/brokendreamsclub/CVE-2025-3515)
 - [ImBIOS/lab-cve-2025-3515](https://github.com/ImBIOS/lab-cve-2025-3515)
-- [MrSoules/lab-cve-2025-3515](https://github.com/MrSoules/lab-cve-2025-3515)
 - [robertskimengote/lab-cve-2025-3515](https://github.com/robertskimengote/lab-cve-2025-3515)
 
 ### CVE-2025-3568 (2025-04-14)
@@ -1666,6 +1665,7 @@
 </code>
 
 - [watchtowrlabs/watchTowr-vs-WatchGuard-CVE-2025-9242](https://github.com/watchtowrlabs/watchTowr-vs-WatchGuard-CVE-2025-9242)
+- [pulsecipher/CVE-2025-9242](https://github.com/pulsecipher/CVE-2025-9242)
 
 ### CVE-2025-9267 (2025-09-26)
 
@@ -1819,6 +1819,13 @@
 
 - [lorenzocamilli/CVE-2025-10720-PoC](https://github.com/lorenzocamilli/CVE-2025-10720-PoC)
 
+### CVE-2025-10742 (2025-10-16)
+
+<code>The Truelysell Core plugin for WordPress is vulnerable to Arbitrary User Password Change in versions up to, and including, 1.8.6. This is due to the plugin providing user-controlled access to objects, letting a user bypass authorization and access system resources. This makes it possible for unauthenticated attackers to change user passwords and potentially take over administrator accounts. Note: This can only be exploited unauthenticated if the attacker knows which page contains the 'truelysell_edit_staff' shortcode.
+</code>
+
+- [netspecters/CVE-2025-10742](https://github.com/netspecters/CVE-2025-10742)
+
 ### CVE-2025-10850 (2025-10-16)
 
 <code>The Felan Framework plugin for WordPress is vulnerable to improper authentication in versions up to, and including, 1.1.4. This is due to the hardcoded password in the 'fb_ajax_login_or_register' function and in the 'google_ajax_login_or_register' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, if they registered with facebook or google social login and did not change their password.
@@ -1957,7 +1964,6 @@
 - [MrAle98/CVE-2025-21333-POC](https://github.com/MrAle98/CVE-2025-21333-POC)
 - [aleongx/KQL_sentinel_CVE-2025-21333](https://github.com/aleongx/KQL_sentinel_CVE-2025-21333)
 - [B1ack4sh/Blackash-CVE-2025-21333](https://github.com/B1ack4sh/Blackash-CVE-2025-21333)
-- [pradip022/CVE-2025-21333-POC](https://github.com/pradip022/CVE-2025-21333-POC)
 
 ### CVE-2025-21385 (2025-01-09)
 
@@ -2443,7 +2449,6 @@
 <code>Path Equivalence: 'file.Name' (Internal Dot) leading to Remote Code Execution and/or Information disclosure and/or malicious content added to uploaded files via write enabled Default Servlet in Apache Tomcat.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.2, from 10.1.0-M1 through 10.1.34, from 9.0.0.M1 through 9.0.98.\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: 8.5.0 though 8.5.100. Other, older, EOL versions \nmay also be affected.\n\n\nIf all of the following were true, a malicious user was able to view       security sensitive files and/or inject content into those files:\n- writes enabled for the default servlet (disabled by default)\n- support for partial PUT (enabled by default)\n- a target URL for security sensitive uploads that was a sub-directory of a target URL for public uploads\n- attacker knowledge of the names of security sensitive files being uploaded\n- the security sensitive files also being uploaded via partial PUT\n\nIf all of the following were true, a malicious user was able to       perform remote code execution:\n- writes enabled for the default servlet (disabled by default)\n- support for partial PUT (enabled by default)\n- application was using Tomcat's file based session persistence with the default storage location\n- application included a library that may be leveraged in a deserialization attack\n\nUsers are recommended to upgrade to version 11.0.3, 10.1.35 or 9.0.99, which fixes the issue.
 </code>
 
-- [Olabanji10/Apache-GOExploiter](https://github.com/Olabanji10/Apache-GOExploiter)
 - [iSee857/CVE-2025-24813-PoC](https://github.com/iSee857/CVE-2025-24813-PoC)
 - [N0c1or/CVE-2025-24813_POC](https://github.com/N0c1or/CVE-2025-24813_POC)
 - [gregk4sec/CVE-2025-24813](https://github.com/gregk4sec/CVE-2025-24813)
@@ -6126,6 +6131,7 @@
 - [sirredbeard/CVE-2025-55315-repro](https://github.com/sirredbeard/CVE-2025-55315-repro)
 - [snowcrashlord/CVE-2025-55315](https://github.com/snowcrashlord/CVE-2025-55315)
 - [RootAid/CVE-2025-55315](https://github.com/RootAid/CVE-2025-55315)
+- [digitalsnemesis/CVE-2025-55315](https://github.com/digitalsnemesis/CVE-2025-55315)
 
 ### CVE-2025-55349
 - [GoldenTicketLabs/CVE-2025-55349](https://github.com/GoldenTicketLabs/CVE-2025-55349)
@@ -6268,13 +6274,21 @@
 
 - [fredericgoossens/CVE-2025-56132-Liquidfiles](https://github.com/fredericgoossens/CVE-2025-56132-Liquidfiles)
 
-### CVE-2025-56218
+### CVE-2025-56218 (2025-10-17)
+
+<code>An arbitrary file upload vulnerability in SigningHub v8.6.8 allows attackers to execute arbitrary code via uploading a crafted PDF file.
+</code>
+
 - [saykino/CVE-2025-56218](https://github.com/saykino/CVE-2025-56218)
 
 ### CVE-2025-56219
 - [saykino/CVE-2025-56219](https://github.com/saykino/CVE-2025-56219)
 
-### CVE-2025-56221
+### CVE-2025-56221 (2025-10-17)
+
+<code>A lack of rate limiting in the login mechanism of SigningHub v8.6.8 allows attackers to bypass authentication via a brute force attack.
+</code>
+
 - [saykino/CVE-2025-56221](https://github.com/saykino/CVE-2025-56221)
 
 ### CVE-2025-56223
@@ -9981,6 +9995,7 @@
 </code>
 
 - [KTN1990/CVE-2024-13513](https://github.com/KTN1990/CVE-2024-13513)
+- [0axz-tools/CVE-2024-13513.py](https://github.com/0axz-tools/CVE-2024-13513.py)
 
 ### CVE-2024-13800 (2025-02-12)
 
@@ -10381,6 +10396,7 @@
 </code>
 
 - [CyberSecuritist/CVE-2024-21754-Forti-RCE](https://github.com/CyberSecuritist/CVE-2024-21754-Forti-RCE)
+- [hacktidexp/CVE-2024-21754-FORTI-RCE](https://github.com/hacktidexp/CVE-2024-21754-FORTI-RCE)
 
 ### CVE-2024-21762 (2024-02-09)
 
@@ -26054,14 +26070,14 @@
 
 ### CVE-2023-51126 (2024-01-10)
 
-<code>Command injection vulnerability in /usr/www/res.php in FLIR AX8 up to 1.46.16 allows attackers to run arbitrary commands via the value parameter.
+<code>Command injection vulnerability in /usr/www/res.php in FLIR AX8 up to 1.46.16 allows attackers to run arbitrary commands via the value parameter. NOTE: The vendor has stated that with the introduction of firmware version 1.49.16 (Jan 2023) the FLIR AX8 should no longer be affected by the vulnerability reported. Latest firmware version (as of Oct 2025, was released Jun 2024) is 1.55.16.
 </code>
 
 - [risuxx/CVE-2023-51126](https://github.com/risuxx/CVE-2023-51126)
 
 ### CVE-2023-51127 (2024-01-10)
 
-<code>FLIR AX8 thermal sensor cameras up to and including 1.46.16 are vulnerable to Directory Traversal due to improper access restriction. This vulnerability allows an unauthenticated, remote attacker to obtain arbitrary sensitive file contents by uploading a specially crafted symbolic link file.
+<code>FLIR AX8 thermal sensor cameras up to and including 1.46.16 are vulnerable to Directory Traversal due to improper access restriction. This vulnerability allows an unauthenticated, remote attacker to obtain arbitrary sensitive file contents by uploading a specially crafted symbolic link file. NOTE: The vendor has stated that with the introduction of firmware version 1.49.16 (Jan 2023) the FLIR AX8 should no longer be affected by the vulnerability reported. Latest firmware version (as of Oct 2025, was released Jun 2024) is 1.55.16.
 </code>
 
 - [risuxx/CVE-2023-51127](https://github.com/risuxx/CVE-2023-51127)
