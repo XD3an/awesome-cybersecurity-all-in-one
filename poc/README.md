@@ -1445,6 +1445,13 @@
 
 - [born0monday/CVE-2025-8067](https://github.com/born0monday/CVE-2025-8067)
 
+### CVE-2025-8081 (2025-08-12)
+
+<code>The Elementor plugin for WordPress is vulnerable to Arbitrary File Read in all versions up to, and including, 3.30.2 via the Import_Images::import() function due to insufficient controls on the filename specified. This makes it possible for authenticated attackers, with administrator-level access and above, to read the contents of arbitrary files on the server, which can contain sensitive information.
+</code>
+
+- [LyesH4ck/CVE-2025-8081-Elementor](https://github.com/LyesH4ck/CVE-2025-8081-Elementor)
+
 ### CVE-2025-8088 (2025-08-08)
 
 <code>A path traversal vulnerability affecting the Windows version of WinRAR allows the attackers to execute arbitrary code by crafting malicious archive files. This vulnerability was exploited in the wild and was discovered by Anton Cherepanov, Peter Košinár, and Peter Strýček\n     from ESET.
@@ -1475,6 +1482,7 @@
 - [hbesljx/CVE-2025-8088-EXP](https://github.com/hbesljx/CVE-2025-8088-EXP)
 - [lucyna77/winrar-exploit](https://github.com/lucyna77/winrar-exploit)
 - [Fathi-MO/POC-CVE-2025-8088](https://github.com/Fathi-MO/POC-CVE-2025-8088)
+- [blowrrr/cve-2025-8088](https://github.com/blowrrr/cve-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1737,6 +1745,7 @@
 </code>
 
 - [Nxploited/CVE-2025-10041](https://github.com/Nxploited/CVE-2025-10041)
+- [Kai-One001/WordPress-Flex-QR-Code-Generator---CVE-2025-10041](https://github.com/Kai-One001/WordPress-Flex-QR-Code-Generator---CVE-2025-10041)
 
 ### CVE-2025-10046 (2025-09-06)
 
@@ -1841,7 +1850,7 @@
 </code>
 
 - [rxerium/CVE-2025-11371](https://github.com/rxerium/CVE-2025-11371)
-- [callinston/CVE-2025-11371](https://github.com/callinston/CVE-2025-11371)
+- [lap1nou/CVE-2025-11371](https://github.com/lap1nou/CVE-2025-11371)
 - [NetVanguard-cmd/CVE-2025-11371](https://github.com/NetVanguard-cmd/CVE-2025-11371)
 
 ### CVE-2025-11449 (2025-10-10)
@@ -4038,6 +4047,8 @@
 - [shazed-x/CVE-2025-32463](https://github.com/shazed-x/CVE-2025-32463)
 - [cybershaolin47/CVE-2025-32463_POC](https://github.com/cybershaolin47/CVE-2025-32463_POC)
 - [cyberajju/CVE-2025-32463](https://github.com/cyberajju/CVE-2025-32463)
+- [dr4x-c0d3r/sudo-chroot](https://github.com/dr4x-c0d3r/sudo-chroot)
+- [dr4xp/sudo-chroot](https://github.com/dr4xp/sudo-chroot)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -5271,6 +5282,13 @@
 - [rubenformation/CVE-2025-50154](https://github.com/rubenformation/CVE-2025-50154)
 - [Ash1996x/CVE-2025-50154-Aggressor-Script](https://github.com/Ash1996x/CVE-2025-50154-Aggressor-Script)
 
+### CVE-2025-50165 (2025-08-12)
+
+<code>Untrusted pointer dereference in Microsoft Graphics Component allows an unauthorized attacker to execute code over a network.
+</code>
+
+- [allinsthon/CVE-2025-50165](https://github.com/allinsthon/CVE-2025-50165)
+
 ### CVE-2025-50286 (2025-08-06)
 
 <code>A Remote Code Execution (RCE) vulnerability in Grav CMS v1.7.48 allows an authenticated admin to upload a malicious plugin via the /admin/tools/direct-install interface. Once uploaded, the plugin is automatically extracted and loaded, allowing arbitrary PHP code execution and reverse shell access.
@@ -6107,6 +6125,7 @@
 - [nickcopi/CVE-2025-55315-detection-playground](https://github.com/nickcopi/CVE-2025-55315-detection-playground)
 - [sirredbeard/CVE-2025-55315-repro](https://github.com/sirredbeard/CVE-2025-55315-repro)
 - [snowcrashlord/CVE-2025-55315](https://github.com/snowcrashlord/CVE-2025-55315)
+- [RootAid/CVE-2025-55315](https://github.com/RootAid/CVE-2025-55315)
 
 ### CVE-2025-55349
 - [GoldenTicketLabs/CVE-2025-55349](https://github.com/GoldenTicketLabs/CVE-2025-55349)
@@ -6427,7 +6446,7 @@
 
 ### CVE-2025-57389 (2025-10-01)
 
-<code>A reflected cross-site scripted (XSS) vulnerability in the /admin/system/packages endpoint of Luci OpenWRT v18.06.2 allows attackers to execute arbitrary Javascript in the context of a user's browser via a crafted payload.
+<code>A reflected cross-site scripting (XSS) vulnerability in the /admin/system/packages endpoint of Luci OpenWRT v18.06.2 allows attackers to execute arbitrary Javascript in the context of a user's browser via a crafted payload. This vulnerability was fixed in OpenWRT v19.07.0.
 </code>
 
 - [amalcew/CVE-2025-57389](https://github.com/amalcew/CVE-2025-57389)
@@ -6543,6 +6562,13 @@
 
 - [casp3r0x0/CVE-2025-58443](https://github.com/casp3r0x0/CVE-2025-58443)
 
+### CVE-2025-58718 (2025-10-14)
+
+<code>Use after free in Remote Desktop Client allows an unauthorized attacker to execute code over a network.
+</code>
+
+- [callinston/CVE-2025-58718](https://github.com/callinston/CVE-2025-58718)
+
 ### CVE-2025-58780 (2025-09-05)
 
 <code>index.em7 in ScienceLogic SL1 before 12.1.1 allows SQL Injection via a parameter in a request. NOTE: this is disputed by the Supplier because it &quot;inaccurately describes the vulnerability.&quot;
@@ -6563,13 +6589,6 @@
 </code>
 
 - [quetuan03/CVE-2025-58789](https://github.com/quetuan03/CVE-2025-58789)
-
-### CVE-2025-59246 (2025-10-09)
-
-<code>Azure Entra ID Elevation of Privilege Vulnerability
-</code>
-
-- [callinston/CVE-2025-59246](https://github.com/callinston/CVE-2025-59246)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -6650,6 +6669,9 @@
 </code>
 
 - [ajansha/CVE-2025-60378](https://github.com/ajansha/CVE-2025-60378)
+
+### CVE-2025-60500
+- [H4zaz/CVE-2025-60500](https://github.com/H4zaz/CVE-2025-60500)
 
 ### CVE-2025-60736
 - [WinDyAlphA/CVE-2025-60736](https://github.com/WinDyAlphA/CVE-2025-60736)
@@ -11910,6 +11932,7 @@
 - [7aRanchi/CVE-2024-27956-for-fscan](https://github.com/7aRanchi/CVE-2024-27956-for-fscan)
 - [m4nInTh3mIdDle/wordpress-CVE-2024-27956](https://github.com/m4nInTh3mIdDle/wordpress-CVE-2024-27956)
 - [devsec23/CVE-2024-27956](https://github.com/devsec23/CVE-2024-27956)
+- [0axz-tools/CVE-2024-27956](https://github.com/0axz-tools/CVE-2024-27956)
 
 ### CVE-2024-27983 (2024-04-09)
 
@@ -15948,14 +15971,14 @@
 <code>An XML External Entity (XXE) vulnerability in the Import object and Translation Memory import functionalities of WorldServer v11.8.2 to access sensitive information and execute arbitrary commands via supplying a crafted .tmx file.
 </code>
 
-- [Wh1teSnak3/CVE-2024-50848](https://github.com/Wh1teSnak3/CVE-2024-50848)
+- [1mhr4b/CVE-2024-50848](https://github.com/1mhr4b/CVE-2024-50848)
 
 ### CVE-2024-50849 (2024-11-18)
 
 <code>A Stored Cross-Site Scripting (XSS) vulnerability in the &quot;Rules&quot; functionality of WorldServer v11.8.2 allows a remote authenticated attacker to execute arbitrary JavaScript code.
 </code>
 
-- [Wh1teSnak3/CVE-2024-50849](https://github.com/Wh1teSnak3/CVE-2024-50849)
+- [1mhr4b/CVE-2024-50849](https://github.com/1mhr4b/CVE-2024-50849)
 
 ### CVE-2024-50944 (2024-12-27)
 
@@ -16154,6 +16177,7 @@
 
 - [Nxploited/CVE-2024-51793](https://github.com/Nxploited/CVE-2024-51793)
 - [KTN1990/CVE-2024-51793](https://github.com/KTN1990/CVE-2024-51793)
+- [0axz-tools/CVE-2024-51793](https://github.com/0axz-tools/CVE-2024-51793)
 
 ### CVE-2024-51818 (2025-01-21)
 
@@ -22287,6 +22311,9 @@
 
 - [saykino/CVE-2023-34732](https://github.com/saykino/CVE-2023-34732)
 
+### CVE-2023-34804
+- [Shahibakes/Cve-2023-34804](https://github.com/Shahibakes/Cve-2023-34804)
+
 ### CVE-2023-34830 (2023-06-27)
 
 <code>i-doit Open v24 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the timeout parameter on the login page.
@@ -26780,7 +26807,7 @@
 - [im-hanzou/fubucker](https://github.com/im-hanzou/fubucker)
 - [zycoder0day/CVE-2022-1386-Mass_Vulnerability](https://github.com/zycoder0day/CVE-2022-1386-Mass_Vulnerability)
 - [satyasai1460/CVE-2022-1386](https://github.com/satyasai1460/CVE-2022-1386)
-- [ptrgits/CVE-2022-1386](https://github.com/ptrgits/CVE-2022-1386)
+- [kreeksec/CVE-2022-1386](https://github.com/kreeksec/CVE-2022-1386)
 - [fayassgit/CVE-2022-1386-FusionBuilder-SSRF](https://github.com/fayassgit/CVE-2022-1386-FusionBuilder-SSRF)
 
 ### CVE-2022-1388 (2022-05-05)
@@ -34054,7 +34081,7 @@
 </code>
 
 - [KaLendsi/CVE-2021-1732-Exploit](https://github.com/KaLendsi/CVE-2021-1732-Exploit)
-- [k-k-k-k-k/CVE-2021-1732](https://github.com/k-k-k-k-k/CVE-2021-1732)
+- [flyinbedxyz/CVE-2021-1732](https://github.com/flyinbedxyz/CVE-2021-1732)
 - [oneoy/CVE-2021-1732-Exploit](https://github.com/oneoy/CVE-2021-1732-Exploit)
 - [linuxdy/CVE-2021-1732_exp](https://github.com/linuxdy/CVE-2021-1732_exp)
 - [Pai-Po/CVE-2021-1732](https://github.com/Pai-Po/CVE-2021-1732)
@@ -56434,6 +56461,7 @@
 - [c0d3z3r0/sudo-CVE-2017-1000367](https://github.com/c0d3z3r0/sudo-CVE-2017-1000367)
 - [homjxi0e/CVE-2017-1000367](https://github.com/homjxi0e/CVE-2017-1000367)
 - [pucerpocok/sudo_exploit](https://github.com/pucerpocok/sudo_exploit)
+- [letsr00t/CVE-2017-1000367](https://github.com/letsr00t/CVE-2017-1000367)
 
 ### CVE-2017-1000371 (2017-06-19)
 
