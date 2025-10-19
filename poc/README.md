@@ -1777,13 +1777,6 @@
 - [yuuouu/ColorOS-CVE-2025-10184](https://github.com/yuuouu/ColorOS-CVE-2025-10184)
 - [Webpage-gh/CVE-2025-10184-PoC](https://github.com/Webpage-gh/CVE-2025-10184-PoC)
 
-### CVE-2025-10294 (2025-10-15)
-
-<code>The OwnID Passwordless Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 1.3.4. This is due to the plugin not properly checking if the ownid_shared_secret value is empty prior to authenticating a user via JWT. This makes it possible for unauthenticated attackers to log in as other users, including administrators, on instances where the plugin has not been fully configured yet.
-</code>
-
-- [h4xnz/CVE-2025-10294-POC](https://github.com/h4xnz/CVE-2025-10294-POC)
-
 ### CVE-2025-10351 (2025-10-08)
 
 <code>SQL injection vulnerability based on the melis-cms module of the Melis platform from Melis Technology. This vulnerability allows an attacker to retrieve, create, update, and delete databases through the 'idPage' parameter in the '/melis/MelisCms/PageEdition/getTinyTemplates' endpoint.
@@ -2639,6 +2632,7 @@
 - [TheStingR/CVE-2025-25257](https://github.com/TheStingR/CVE-2025-25257)
 - [segfault-it/CVE-2025-25257](https://github.com/segfault-it/CVE-2025-25257)
 - [kityzed2003/CVE-2025-25257](https://github.com/kityzed2003/CVE-2025-25257)
+- [silentexploitexe/CVE-2025-25257](https://github.com/silentexploitexe/CVE-2025-25257)
 
 ### CVE-2025-25279 (2025-02-24)
 
@@ -3120,6 +3114,7 @@
 - [umutcamliyurt/CVE-2025-27591](https://github.com/umutcamliyurt/CVE-2025-27591)
 - [danil-koltsov/below-log-race-poc](https://github.com/danil-koltsov/below-log-race-poc)
 - [HOEUN-Visai/CVE-2025-27591-below-](https://github.com/HOEUN-Visai/CVE-2025-27591-below-)
+- [krn966/CVE-2025-27591](https://github.com/krn966/CVE-2025-27591)
 
 ### CVE-2025-27607 (2025-03-07)
 
@@ -4158,6 +4153,7 @@
 - [obscura-cert/CVE-2025-33073](https://github.com/obscura-cert/CVE-2025-33073)
 - [matejsmycka/CVE-2025-33073-checker](https://github.com/matejsmycka/CVE-2025-33073-checker)
 - [cve-2025-33073/cve-2025-33073](https://github.com/cve-2025-33073/cve-2025-33073)
+- [SellMeFish/windows-smb-vulnerability-framework-cve-2025-33073](https://github.com/SellMeFish/windows-smb-vulnerability-framework-cve-2025-33073)
 
 ### CVE-2025-34028 (2025-04-22)
 
@@ -5960,6 +5956,8 @@
 - [B1ack4sh/Blackash-CVE-2025-54253](https://github.com/B1ack4sh/Blackash-CVE-2025-54253)
 - [Shivshantp/CVE-2025-54253-Exploit-Demo](https://github.com/Shivshantp/CVE-2025-54253-Exploit-Demo)
 - [jm7knz/CVE-2025-54253-Exploit-Demo](https://github.com/jm7knz/CVE-2025-54253-Exploit-Demo)
+- [25145hg654511135gfhfkr8488r8r8r8r8r/test](https://github.com/25145hg654511135gfhfkr8488r8r8r8r8r/test)
+- [25145hg654511135gfhfkr8488r8r8r8r8r/test2](https://github.com/25145hg654511135gfhfkr8488r8r8r8r8r/test2)
 
 ### CVE-2025-54309 (2025-07-18)
 
@@ -6405,6 +6403,18 @@
 </code>
 
 - [B1tBreaker/CVE-2025-56795](https://github.com/B1tBreaker/CVE-2025-56795)
+
+### CVE-2025-56799
+- [shinyColumn/CVE-2025-56799](https://github.com/shinyColumn/CVE-2025-56799)
+
+### CVE-2025-56800
+- [shinyColumn/CVE-2025-56800](https://github.com/shinyColumn/CVE-2025-56800)
+
+### CVE-2025-56801
+- [shinyColumn/CVE-2025-56801](https://github.com/shinyColumn/CVE-2025-56801)
+
+### CVE-2025-56802
+- [shinyColumn/CVE-2025-56802](https://github.com/shinyColumn/CVE-2025-56802)
 
 ### CVE-2025-56803 (2025-09-03)
 
@@ -9629,6 +9639,7 @@
 </code>
 
 - [Piyush-Bhor/CVE-2024-11392](https://github.com/Piyush-Bhor/CVE-2024-11392)
+- [stuxbench/vllm-cve-2024-11392](https://github.com/stuxbench/vllm-cve-2024-11392)
 
 ### CVE-2024-11393 (2024-11-22)
 
@@ -30454,6 +30465,7 @@
 - [yeep1115/ICT287_CVE-2022-30190_Exploit](https://github.com/yeep1115/ICT287_CVE-2022-30190_Exploit)
 - [RathoreAbhiii/Folina-Vulnerability-Exploitation-Detection-and-Mitigation](https://github.com/RathoreAbhiii/Folina-Vulnerability-Exploitation-Detection-and-Mitigation)
 - [seinab-ibrahim/Follina-Vulnerability-CVE-2022-30190-Exploit-Analysis](https://github.com/seinab-ibrahim/Follina-Vulnerability-CVE-2022-30190-Exploit-Analysis)
+- [Arkha-Corvus/LetsDefend-SOC173-Follina-0-Day-Detected](https://github.com/Arkha-Corvus/LetsDefend-SOC173-Follina-0-Day-Detected)
 
 ### CVE-2022-30203 (2022-07-12)
 
@@ -34733,7 +34745,6 @@
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
 - [cspshivam/cve-2021-4034](https://github.com/cspshivam/cve-2021-4034)
-- [an0n7os/CVE-2021-4034](https://github.com/an0n7os/CVE-2021-4034)
 - [DanaEpp/pwncat_pwnkit](https://github.com/DanaEpp/pwncat_pwnkit)
 - [x04000/CVE-2021-4034](https://github.com/x04000/CVE-2021-4034)
 - [x04000/AutoPwnkit](https://github.com/x04000/AutoPwnkit)
@@ -36421,6 +36432,7 @@
 - [W2Ning/Solr-SSRF](https://github.com/W2Ning/Solr-SSRF)
 - [murataydemir/CVE-2021-27905](https://github.com/murataydemir/CVE-2021-27905)
 - [pdelteil/CVE-2021-27905.POC](https://github.com/pdelteil/CVE-2021-27905.POC)
+- [RIZZZIOM/CVE-2021-27905](https://github.com/RIZZZIOM/CVE-2021-27905)
 
 ### CVE-2021-27928 (2021-03-19)
 
@@ -41305,6 +41317,7 @@
 - [PakwanSK/Simulating-and-preventing-Zerologon-CVE-2020-1472-vulnerability-attacks.](https://github.com/PakwanSK/Simulating-and-preventing-Zerologon-CVE-2020-1472-vulnerability-attacks.)
 - [tdevworks/CVE-2020-1472-ZeroLogon-Demo-Detection-Mitigation](https://github.com/tdevworks/CVE-2020-1472-ZeroLogon-Demo-Detection-Mitigation)
 - [100HnoMeuNome/ZeroLogon-CVE-2020-1472-lab](https://github.com/100HnoMeuNome/ZeroLogon-CVE-2020-1472-lab)
+- [nyambiblaise/Domain-Controller-DC-Exploitation-with-Metasploit-Impacket](https://github.com/nyambiblaise/Domain-Controller-DC-Exploitation-with-Metasploit-Impacket)
 
 ### CVE-2020-1493 (2020-08-17)
 
@@ -58017,6 +58030,7 @@
 - [BlackFrog-hub/cve-2015-1328](https://github.com/BlackFrog-hub/cve-2015-1328)
 - [YastrebX/CVE-2015-1328](https://github.com/YastrebX/CVE-2015-1328)
 - [1mgR00T/CVE-2015-1328](https://github.com/1mgR00T/CVE-2015-1328)
+- [thieveshkar/RootQuest-CTF-Box-Multi-Stage-Exploitation-VM](https://github.com/thieveshkar/RootQuest-CTF-Box-Multi-Stage-Exploitation-VM)
 
 ### CVE-2015-1397 (2015-04-29)
 
