@@ -1826,6 +1826,9 @@
 
 - [pulsecipher/CVE-2025-10850](https://github.com/pulsecipher/CVE-2025-10850)
 
+### CVE-2025-10874
+- [ryanmroth/Orbit-Fox_SSRF_CVE-2025-10874](https://github.com/ryanmroth/Orbit-Fox_SSRF_CVE-2025-10874)
+
 ### CVE-2025-11001
 - [shalevo13/Se7enSlip](https://github.com/shalevo13/Se7enSlip)
 - [pacbypass/CVE-2025-11001](https://github.com/pacbypass/CVE-2025-11001)
@@ -6130,6 +6133,7 @@
 - [snowcrashlord/CVE-2025-55315](https://github.com/snowcrashlord/CVE-2025-55315)
 - [RootAid/CVE-2025-55315](https://github.com/RootAid/CVE-2025-55315)
 - [digitalsnemesis/CVE-2025-55315](https://github.com/digitalsnemesis/CVE-2025-55315)
+- [7huukdlnkjkjba/CVE-2025-55315-](https://github.com/7huukdlnkjkjba/CVE-2025-55315-)
 
 ### CVE-2025-55349
 - [GoldenTicketLabs/CVE-2025-55349](https://github.com/GoldenTicketLabs/CVE-2025-55349)
@@ -6783,6 +6787,7 @@
 </code>
 
 - [B1ack4sh/Blackash-CVE-2025-61884](https://github.com/B1ack4sh/Blackash-CVE-2025-61884)
+- [shinyhunterz/CVE-2025-61884-61882](https://github.com/shinyhunterz/CVE-2025-61884-61882)
 
 ### CVE-2025-61984 (2025-10-06)
 
@@ -21329,6 +21334,13 @@
 </code>
 
 - [Alucard0x1/CVE-2023-30777](https://github.com/Alucard0x1/CVE-2023-30777)
+
+### CVE-2023-30799 (2023-07-19)
+
+<code>MikroTik RouterOS stable before 6.49.7 and long-term through 6.48.6 are vulnerable to a privilege escalation issue. A remote and authenticated attacker can escalate privileges from admin to super-admin on the Winbox or HTTP interface. The attacker can abuse this vulnerability to execute arbitrary code on the system.\n\n
+</code>
+
+- [alzeer711/MikroTik-RouterOS-6.49.18-Exploit-Kit](https://github.com/alzeer711/MikroTik-RouterOS-6.49.18-Exploit-Kit)
 
 ### CVE-2023-30800 (2023-09-07)
 
