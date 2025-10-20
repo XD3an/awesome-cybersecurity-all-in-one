@@ -170,6 +170,7 @@
 - [ishwardeepp/CVE-2025-1094-PoC-Postgre-SQLi](https://github.com/ishwardeepp/CVE-2025-1094-PoC-Postgre-SQLi)
 - [aninfosec/CVE-2025-1094](https://github.com/aninfosec/CVE-2025-1094)
 - [B1ack4sh/Blackash-CVE-2025-1094](https://github.com/B1ack4sh/Blackash-CVE-2025-1094)
+- [PinkArmor/CVE-2025-1094-Lab-Setup](https://github.com/PinkArmor/CVE-2025-1094-Lab-Setup)
 
 ### CVE-2025-1097 (2025-03-24)
 
@@ -1777,6 +1778,16 @@
 - [yuuouu/ColorOS-CVE-2025-10184](https://github.com/yuuouu/ColorOS-CVE-2025-10184)
 - [Webpage-gh/CVE-2025-10184-PoC](https://github.com/Webpage-gh/CVE-2025-10184-PoC)
 
+### CVE-2025-10230
+- [dptsec/CVE-2025-10230](https://github.com/dptsec/CVE-2025-10230)
+
+### CVE-2025-10294 (2025-10-15)
+
+<code>The OwnID Passwordless Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 1.3.4. This is due to the plugin not properly checking if the ownid_shared_secret value is empty prior to authenticating a user via JWT. This makes it possible for unauthenticated attackers to log in as other users, including administrators, on instances where the plugin has not been fully configured yet.
+</code>
+
+- [RedFoxNxploits/CVE-2025-10294-Poc](https://github.com/RedFoxNxploits/CVE-2025-10294-Poc)
+
 ### CVE-2025-10351 (2025-10-08)
 
 <code>SQL injection vulnerability based on the melis-cms module of the Melis platform from Melis Technology. This vulnerability allows an attacker to retrieve, create, update, and delete databases through the 'idPage' parameter in the '/melis/MelisCms/PageEdition/getTinyTemplates' endpoint.
@@ -1869,6 +1880,13 @@
 </code>
 
 - [m3m0o/portabilis-ieducar-user-type-privilege-escalation](https://github.com/m3m0o/portabilis-ieducar-user-type-privilege-escalation)
+
+### CVE-2025-11579 (2025-10-10)
+
+<code>github.com/nwaples/rardecode versions &lt;=2.1.1 fail to restrict the dictionary size when reading large RAR dictionary sizes, which allows an attacker to provide a specially crafted RAR file and cause Denial of Service via an Out Of Memory Crash.
+</code>
+
+- [shinigami-777/PoC_CVE-2025-11579](https://github.com/shinigami-777/PoC_CVE-2025-11579)
 
 ### CVE-2025-11832 (2025-10-15)
 
@@ -3543,7 +3561,7 @@
 - [ThumpBo/CVE-2025-30208-EXP](https://github.com/ThumpBo/CVE-2025-30208-EXP)
 - [xaitx/CVE-2025-30208](https://github.com/xaitx/CVE-2025-30208)
 - [kk12-30/CVE-2025-30208](https://github.com/kk12-30/CVE-2025-30208)
-- [YuanBenSir/CVE-2025-30208_POC](https://github.com/YuanBenSir/CVE-2025-30208_POC)
+- [MiclelsonCN/CVE-2025-30208_POC](https://github.com/MiclelsonCN/CVE-2025-30208_POC)
 - [marino-admin/Vite-CVE-2025-30208-Scanner](https://github.com/marino-admin/Vite-CVE-2025-30208-Scanner)
 - [iSee857/CVE-2025-30208-PoC](https://github.com/iSee857/CVE-2025-30208-PoC)
 - [On1onss/CVE-2025-30208-LFI](https://github.com/On1onss/CVE-2025-30208-LFI)
@@ -3950,6 +3968,7 @@
 - [scandijamjam1/CVE-2025-32433](https://github.com/scandijamjam1/CVE-2025-32433)
 - [iteride/CVE-2025-32433](https://github.com/iteride/CVE-2025-32433)
 - [mirmeweu/cve-2025-32433](https://github.com/mirmeweu/cve-2025-32433)
+- [Batman529/PoC-CVE-2025-32433](https://github.com/Batman529/PoC-CVE-2025-32433)
 
 ### CVE-2025-32434 (2025-04-18)
 
@@ -4052,6 +4071,7 @@
 - [cyberajju/CVE-2025-32463](https://github.com/cyberajju/CVE-2025-32463)
 - [dr4x-c0d3r/sudo-chroot](https://github.com/dr4x-c0d3r/sudo-chroot)
 - [dr4xp/sudo-chroot](https://github.com/dr4xp/sudo-chroot)
+- [robbin0919/CVE-2025-32463](https://github.com/robbin0919/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -4383,6 +4403,13 @@
 </code>
 
 - [farazsth98/exploit-CVE-2025-39946](https://github.com/farazsth98/exploit-CVE-2025-39946)
+
+### CVE-2025-39965 (2025-10-13)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nxfrm: xfrm_alloc_spi shouldn't use 0 as SPI\n\nx-&gt;id.spi == 0 means &quot;no SPI assigned&quot;, but since commit\n94f39804d891 (&quot;xfrm: Duplicate SPI Handling&quot;), we now create states\nand add them to the byspi list with this value.\n\n__xfrm_state_delete doesn't remove those states from the byspi list,\nsince they shouldn't be there, and this shows up as a UAF the next\ntime we go through the byspi list.
+</code>
+
+- [Shreyas-Penkar/CVE-2025-39965](https://github.com/Shreyas-Penkar/CVE-2025-39965)
 
 ### CVE-2025-40634 (2025-05-20)
 
@@ -5262,7 +5289,7 @@
 - [srozb/reditrap](https://github.com/srozb/reditrap)
 - [pedrorichil/CVE-2025-49844](https://github.com/pedrorichil/CVE-2025-49844)
 - [Yuri08loveElaina/CVE-2025-49844](https://github.com/Yuri08loveElaina/CVE-2025-49844)
-- [YuanBenSir/CVE-2025-49844_POC](https://github.com/YuanBenSir/CVE-2025-49844_POC)
+- [MiclelsonCN/CVE-2025-49844_POC](https://github.com/MiclelsonCN/CVE-2025-49844_POC)
 - [Mufti22/CVE-2025-49844-RediShell-Vulnerability-Scanner](https://github.com/Mufti22/CVE-2025-49844-RediShell-Vulnerability-Scanner)
 - [imbas007/CVE-2025-49844-Vulnerability-Scanner](https://github.com/imbas007/CVE-2025-49844-Vulnerability-Scanner)
 - [angelusrivera/CVE-2025-49844](https://github.com/angelusrivera/CVE-2025-49844)
@@ -5285,13 +5312,6 @@
 - [zenzue/CVE-2025-50154](https://github.com/zenzue/CVE-2025-50154)
 - [rubenformation/CVE-2025-50154](https://github.com/rubenformation/CVE-2025-50154)
 - [Ash1996x/CVE-2025-50154-Aggressor-Script](https://github.com/Ash1996x/CVE-2025-50154-Aggressor-Script)
-
-### CVE-2025-50165 (2025-08-12)
-
-<code>Untrusted pointer dereference in Microsoft Graphics Component allows an unauthorized attacker to execute code over a network.
-</code>
-
-- [allinsthon/CVE-2025-50165](https://github.com/allinsthon/CVE-2025-50165)
 
 ### CVE-2025-50286 (2025-08-06)
 
@@ -5950,6 +5970,7 @@
 </code>
 
 - [amalpvatayam67/day01-sessionreaper-lab](https://github.com/amalpvatayam67/day01-sessionreaper-lab)
+- [wubinworks/magento2-session-reaper-patch](https://github.com/wubinworks/magento2-session-reaper-patch)
 
 ### CVE-2025-54253 (2025-08-05)
 
@@ -6061,6 +6082,13 @@
 </code>
 
 - [AdityaBhatt3010/CVE-2025-54794-Hijacking-Claude-AI-with-a-Prompt-Injection-The-Jailbreak-That-Talked-Back](https://github.com/AdityaBhatt3010/CVE-2025-54794-Hijacking-Claude-AI-with-a-Prompt-Injection-The-Jailbreak-That-Talked-Back)
+
+### CVE-2025-54874 (2025-08-05)
+
+<code>OpenJPEG is an open-source JPEG 2000 codec. In OpenJPEG from 2.5.1 through 2.5.3, a call to opj_jp2_read_header may lead to OOB heap memory write when the data stream p_stream is too short and p_image is not initialized.
+</code>
+
+- [cyhe50/cve-2025-54874-poc](https://github.com/cyhe50/cve-2025-54874-poc)
 
 ### CVE-2025-54887 (2025-08-08)
 
@@ -6618,6 +6646,20 @@
 
 - [quetuan03/CVE-2025-58789](https://github.com/quetuan03/CVE-2025-58789)
 
+### CVE-2025-59285 (2025-10-14)
+
+<code>Deserialization of untrusted data in Azure Monitor Agent allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [allinsthon/CVE-2025-59285](https://github.com/allinsthon/CVE-2025-59285)
+
+### CVE-2025-59295 (2025-10-14)
+
+<code>Heap-based buffer overflow in Internet Explorer allows an unauthorized attacker to execute code over a network.
+</code>
+
+- [usjnx72726w/CVE-2025-59295](https://github.com/usjnx72726w/CVE-2025-59295)
+
 ### CVE-2025-59342 (2025-09-17)
 
 <code>esm.sh is a nobuild content delivery network(CDN) for modern web development. In 136 and earlier, a path-traversal flaw in the handling of the X-Zone-Id HTTP header allows an attacker to cause the application to write files outside the intended storage location. The header value is used to build a filesystem path but is not properly canonicalized or restricted to the application’s storage base directory. As a result, supplying ../ sequences in X-Zone-Id causes files to be written to arbitrary directories.
@@ -6787,7 +6829,6 @@
 </code>
 
 - [B1ack4sh/Blackash-CVE-2025-61884](https://github.com/B1ack4sh/Blackash-CVE-2025-61884)
-- [shinyhunterz/CVE-2025-61884-61882](https://github.com/shinyhunterz/CVE-2025-61884-61882)
 
 ### CVE-2025-61984 (2025-10-06)
 
@@ -10068,14 +10109,14 @@
 <code>A vulnerability in the web-based management interface of Cisco Finesse could allow an unauthenticated, remote attacker to conduct an SSRF attack on an affected system.\r\n\r This vulnerability is due to insufficient validation of user-supplied input for specific HTTP requests that are sent to an affected system. An attacker could exploit this vulnerability by sending a crafted HTTP request to the affected device. A successful exploit could allow the attacker to obtain limited sensitive information for services that are associated to the affected device.
 </code>
 
-- [AbdElRahmanEzzat1995/CVE-2024-20404](https://github.com/AbdElRahmanEzzat1995/CVE-2024-20404)
+- [3zz4t/CVE-2024-20404](https://github.com/3zz4t/CVE-2024-20404)
 
 ### CVE-2024-20405 (2024-06-05)
 
 <code>A vulnerability in the web-based management interface of Cisco Finesse could allow an unauthenticated, remote attacker to conduct a stored XSS attack by exploiting an RFI vulnerability. \r\n\r This vulnerability is due to insufficient validation of user-supplied input for specific HTTP requests that are sent to an affected device. An attacker could exploit this vulnerability by persuading a user to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive information on the affected device.
 </code>
 
-- [AbdElRahmanEzzat1995/CVE-2024-20405](https://github.com/AbdElRahmanEzzat1995/CVE-2024-20405)
+- [3zz4t/CVE-2024-20405](https://github.com/3zz4t/CVE-2024-20405)
 
 ### CVE-2024-20467 (2024-09-25)
 
@@ -15254,13 +15295,6 @@
 - [EQSTLab/CVE-2024-46538](https://github.com/EQSTLab/CVE-2024-46538)
 - [LauLeysen/CVE-2024-46538](https://github.com/LauLeysen/CVE-2024-46538)
 
-### CVE-2024-46542 (2024-12-30)
-
-<code>Veritas / Arctera Data Insight before 7.1.1 allows Application Administrators to conduct SQL injection attacks.
-</code>
-
-- [MarioTesoro/CVE-2024-46542](https://github.com/MarioTesoro/CVE-2024-46542)
-
 ### CVE-2024-46627 (2024-09-26)
 
 <code>Incorrect access control in BECN DATAGERRY v2.2 allows attackers to execute arbitrary commands via crafted web requests.
@@ -15385,13 +15419,6 @@
 </code>
 
 - [ibrahmsql/CVE-2024-47773](https://github.com/ibrahmsql/CVE-2024-47773)
-
-### CVE-2024-47854 (2024-10-04)
-
-<code>An XSS vulnerability was discovered in Veritas Data Insight before 7.1. It allows a remote attacker to inject an arbitrary web script into an HTTP request that could reflect back to an authenticated user without sanitization if executed by that user.
-</code>
-
-- [MarioTesoro/CVE-2024-47854](https://github.com/MarioTesoro/CVE-2024-47854)
 
 ### CVE-2024-47875 (2024-10-11)
 
@@ -15522,13 +15549,6 @@
 </code>
 
 - [vighneshnair7/CVE-2024-48427](https://github.com/vighneshnair7/CVE-2024-48427)
-
-### CVE-2024-48569 (2024-10-30)
-
-<code>Proactive Risk Manager version 9.1.1.0 is affected by multiple Cross-Site Scripting (XSS) vulnerabilities in the add/edit form fields, at the urls starting with the subpaths: /ar/config/configuation/ and /ar/config/risk-strategy-control/
-</code>
-
-- [MarioTesoro/CVE-2024-48569](https://github.com/MarioTesoro/CVE-2024-48569)
 
 ### CVE-2024-48589 (2025-02-06)
 
@@ -16667,27 +16687,6 @@
 - [deauther890/CVE-2024-54772](https://github.com/deauther890/CVE-2024-54772)
 - [Seven11Eleven/CVE-2024-54772](https://github.com/Seven11Eleven/CVE-2024-54772)
 
-### CVE-2024-54792 (2025-01-21)
-
-<code>A Cross-Site Request Forgery (CSRF) vulnerability has been found in SpagoBI v3.5.1 in the user administration panel. An authenticated user can lead another user into executing unwanted actions inside the application they are logged in, like adding, editing or deleting users.
-</code>
-
-- [MarioTesoro/CVE-2024-54792](https://github.com/MarioTesoro/CVE-2024-54792)
-
-### CVE-2024-54794 (2025-01-21)
-
-<code>The script input feature of SpagoBI 3.5.1 allows arbitrary code execution.
-</code>
-
-- [MarioTesoro/CVE-2024-54794](https://github.com/MarioTesoro/CVE-2024-54794)
-
-### CVE-2024-54795 (2025-01-21)
-
-<code>SpagoBI v3.5.1 contains multiple Stored Cross-Site Scripting (XSS) vulnerabilities in the create/edit forms of the worksheet designer function.
-</code>
-
-- [MarioTesoro/CVE-2024-54795](https://github.com/MarioTesoro/CVE-2024-54795)
-
 ### CVE-2024-54819 (2025-01-07)
 
 <code>I, Librarian before and including 5.11.1 is vulnerable to Server-Side Request Forgery (SSRF) due to improper input validation in classes/security/validation.php
@@ -17024,13 +17023,6 @@
 </code>
 
 - [griisemine/CVE-2024-56331](https://github.com/griisemine/CVE-2024-56331)
-
-### CVE-2024-56340 (2025-02-28)
-
-<code>IBM Cognos Analytics 11.2.0 through 11.2.4 FP5 is vulnerable to local file inclusion vulnerability, allowing an attacker to access sensitive files by inserting path traversal payloads inside the deficon parameter.
-</code>
-
-- [MarioTesoro/CVE-2024-56340](https://github.com/MarioTesoro/CVE-2024-56340)
 
 ### CVE-2024-56428 (2025-05-21)
 
@@ -20741,6 +20733,7 @@
 - [Jenderal92/WP-CVE-2023-28121](https://github.com/Jenderal92/WP-CVE-2023-28121)
 - [1337nemojj/CVE-2023-28121](https://github.com/1337nemojj/CVE-2023-28121)
 - [sug4r-wr41th/CVE-2023-28121](https://github.com/sug4r-wr41th/CVE-2023-28121)
+- [0axz-tools/CVE-2023-28121](https://github.com/0axz-tools/CVE-2023-28121)
 
 ### CVE-2023-28197 (2024-01-10)
 
@@ -28413,6 +28406,7 @@
 - [salo-404/firewall](https://github.com/salo-404/firewall)
 - [shoucheng3/spring-projects__spring-framework_CVE-2022-22965_5-2-19-RELEASE](https://github.com/shoucheng3/spring-projects__spring-framework_CVE-2022-22965_5-2-19-RELEASE)
 - [Toph404/telstra-cyber-analyst-job-simulation](https://github.com/Toph404/telstra-cyber-analyst-job-simulation)
+- [NickoPS87/Spring4Shell-Python-Firewall-POC](https://github.com/NickoPS87/Spring4Shell-Python-Firewall-POC)
 
 ### CVE-2022-22966 (2022-04-14)
 
@@ -28829,7 +28823,7 @@
 <code>Argo CD before 2.1.9 and 2.2.x before 2.2.4 allows directory traversal related to Helm charts because of an error in helmTemplate in repository.go. For example, an attacker may be able to discover credentials stored in a YAML file.
 </code>
 
-- [jkroepke/CVE-2022-24348-2](https://github.com/jkroepke/CVE-2022-24348-2)
+- [DeveloperOl/CVE-2022-24348-2](https://github.com/DeveloperOl/CVE-2022-24348-2)
 
 ### CVE-2022-24434 (2022-05-20)
 
@@ -34318,7 +34312,6 @@
 - [shadowabi/Laravel-CVE-2021-3129](https://github.com/shadowabi/Laravel-CVE-2021-3129)
 - [JacobEbben/CVE-2021-3129](https://github.com/JacobEbben/CVE-2021-3129)
 - [hupe1980/CVE-2021-3129](https://github.com/hupe1980/CVE-2021-3129)
-- [0nion1/CVE-2021-3129](https://github.com/0nion1/CVE-2021-3129)
 - [MadExploits/Laravel-debug-Checker](https://github.com/MadExploits/Laravel-debug-Checker)
 - [ajisai-babu/CVE-2021-3129-exp](https://github.com/ajisai-babu/CVE-2021-3129-exp)
 - [keyuan15/CVE-2021-3129](https://github.com/keyuan15/CVE-2021-3129)
@@ -34757,6 +34750,7 @@
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
 - [cspshivam/cve-2021-4034](https://github.com/cspshivam/cve-2021-4034)
+- [an0n7os/CVE-2021-4034](https://github.com/an0n7os/CVE-2021-4034)
 - [DanaEpp/pwncat_pwnkit](https://github.com/DanaEpp/pwncat_pwnkit)
 - [x04000/CVE-2021-4034](https://github.com/x04000/CVE-2021-4034)
 - [x04000/AutoPwnkit](https://github.com/x04000/AutoPwnkit)
@@ -47622,6 +47616,7 @@
 - [Kalidas-7/CVE-2019-9053](https://github.com/Kalidas-7/CVE-2019-9053)
 - [noob-hacker572/CMS-Made-Simple-2.2.9-CVE-2019-9053](https://github.com/noob-hacker572/CMS-Made-Simple-2.2.9-CVE-2019-9053)
 - [Slayerma/-CVE-2019-9053](https://github.com/Slayerma/-CVE-2019-9053)
+- [CaelumIsMe/CVE-2019-9053-POC](https://github.com/CaelumIsMe/CVE-2019-9053-POC)
 
 ### CVE-2019-9081
 - [nth347/CVE-2019-9081_PoC](https://github.com/nth347/CVE-2019-9081_PoC)
@@ -57021,6 +57016,13 @@
 </code>
 
 - [BabyTeam1024/CVE-2016-3510](https://github.com/BabyTeam1024/CVE-2016-3510)
+
+### CVE-2016-3627 (2016-05-17)
+
+<code>The xmlStringGetNodeList function in tree.c in libxml2 2.9.3 and earlier, when used in recovery mode, allows context-dependent attackers to cause a denial of service (infinite recursion, stack consumption, and application crash) via a crafted XML document.
+</code>
+
+- [Oneton429/CVE-2016-3627](https://github.com/Oneton429/CVE-2016-3627)
 
 ### CVE-2016-3714 (2016-05-05)
 
