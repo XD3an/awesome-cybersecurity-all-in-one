@@ -3559,10 +3559,10 @@
 
 - [xuemian168/CVE-2025-30208](https://github.com/xuemian168/CVE-2025-30208)
 - [ThumpBo/CVE-2025-30208-EXP](https://github.com/ThumpBo/CVE-2025-30208-EXP)
-- [xaitx/CVE-2025-30208](https://github.com/xaitx/CVE-2025-30208)
 - [kk12-30/CVE-2025-30208](https://github.com/kk12-30/CVE-2025-30208)
 - [MiclelsonCN/CVE-2025-30208_POC](https://github.com/MiclelsonCN/CVE-2025-30208_POC)
 - [marino-admin/Vite-CVE-2025-30208-Scanner](https://github.com/marino-admin/Vite-CVE-2025-30208-Scanner)
+- [Lusensec/CVE-2025-30208](https://github.com/Lusensec/CVE-2025-30208)
 - [iSee857/CVE-2025-30208-PoC](https://github.com/iSee857/CVE-2025-30208-PoC)
 - [On1onss/CVE-2025-30208-LFI](https://github.com/On1onss/CVE-2025-30208-LFI)
 - [4xura/CVE-2025-30208](https://github.com/4xura/CVE-2025-30208)
@@ -3969,6 +3969,7 @@
 - [iteride/CVE-2025-32433](https://github.com/iteride/CVE-2025-32433)
 - [mirmeweu/cve-2025-32433](https://github.com/mirmeweu/cve-2025-32433)
 - [Batman529/PoC-CVE-2025-32433](https://github.com/Batman529/PoC-CVE-2025-32433)
+- [toshithh/CVE-2025-32433](https://github.com/toshithh/CVE-2025-32433)
 
 ### CVE-2025-32434 (2025-04-18)
 
