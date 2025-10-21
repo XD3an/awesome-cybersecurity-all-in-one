@@ -600,7 +600,6 @@
 - [Professor6T9/CVE-2025-3515](https://github.com/Professor6T9/CVE-2025-3515)
 - [brokendreamsclub/CVE-2025-3515](https://github.com/brokendreamsclub/CVE-2025-3515)
 - [ImBIOS/lab-cve-2025-3515](https://github.com/ImBIOS/lab-cve-2025-3515)
-- [robertskimengote/lab-cve-2025-3515](https://github.com/robertskimengote/lab-cve-2025-3515)
 
 ### CVE-2025-3568 (2025-04-14)
 
@@ -1003,7 +1002,6 @@
 <code>Out of bounds read and write in V8 in Google Chrome prior to 137.0.7151.68 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
 </code>
 
-- [somprasong-tukman/CVE-2025-5419](https://github.com/somprasong-tukman/CVE-2025-5419)
 - [itsShotgun/chrome_v8_cve_checker](https://github.com/itsShotgun/chrome_v8_cve_checker)
 - [riemannj/CVE-2025-5419](https://github.com/riemannj/CVE-2025-5419)
 - [mistymntncop/CVE-2025-5419](https://github.com/mistymntncop/CVE-2025-5419)
@@ -1035,7 +1033,6 @@
 <code>Insufficient input validation leading to memory overread when the NetScaler is configured as a Gateway (VPN virtual server, ICA Proxy, CVPN, RDP Proxy) OR AAA virtual server
 </code>
 
-- [Lakiya673/CVE-2025-5777](https://github.com/Lakiya673/CVE-2025-5777)
 - [mingshenhk/CitrixBleed-2-CVE-2025-5777-PoC-](https://github.com/mingshenhk/CitrixBleed-2-CVE-2025-5777-PoC-)
 - [RickGeex/CVE-2025-5777-CitrixBleed](https://github.com/RickGeex/CVE-2025-5777-CitrixBleed)
 - [idobarel/CVE-2025-5777](https://github.com/idobarel/CVE-2025-5777)
@@ -1482,7 +1479,6 @@
 - [hbesljx/CVE-2025-8088-EXP](https://github.com/hbesljx/CVE-2025-8088-EXP)
 - [lucyna77/winrar-exploit](https://github.com/lucyna77/winrar-exploit)
 - [Fathi-MO/POC-CVE-2025-8088](https://github.com/Fathi-MO/POC-CVE-2025-8088)
-- [blowrrr/cve-2025-8088](https://github.com/blowrrr/cve-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1703,6 +1699,13 @@
 
 - [kwerty138/Reflected-XSS-in-Vvveb-CMS-v1.0.7.2](https://github.com/kwerty138/Reflected-XSS-in-Vvveb-CMS-v1.0.7.2)
 
+### CVE-2025-9744 (2025-08-31)
+
+<code>In Campcodes Online Loan Management System 1.0 ist eine Schwachstelle entdeckt worden. Davon betroffen ist unbekannter Code der Datei /ajax.php?action=login. Dank Manipulation des Arguments Username mit unbekannten Daten kann eine sql injection-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei über das Netzwerk erfolgen. Der Exploit ist öffentlich verfügbar und könnte genutzt werden.
+</code>
+
+- [godfatherofexps/CVE-2025-9744-PoC](https://github.com/godfatherofexps/CVE-2025-9744-PoC)
+
 ### CVE-2025-9776 (2025-09-11)
 
 <code>The CatFolders – Tame Your WordPress Media Library by Category plugin for WordPress is vulnerable to time-based SQL Injection via the CSV Import contents in all versions up to, and including, 2.5.2 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for authenticated attackers, with Author-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.
@@ -1747,6 +1750,7 @@
 
 - [Nxploited/CVE-2025-10041](https://github.com/Nxploited/CVE-2025-10041)
 - [Kai-One001/WordPress-Flex-QR-Code-Generator---CVE-2025-10041](https://github.com/Kai-One001/WordPress-Flex-QR-Code-Generator---CVE-2025-10041)
+- [DExplo1ted/CVE-2025-10041-POC](https://github.com/DExplo1ted/CVE-2025-10041-POC)
 
 ### CVE-2025-10046 (2025-09-06)
 
@@ -1866,6 +1870,13 @@
 - [rxerium/CVE-2025-11371](https://github.com/rxerium/CVE-2025-11371)
 - [lap1nou/CVE-2025-11371](https://github.com/lap1nou/CVE-2025-11371)
 - [NetVanguard-cmd/CVE-2025-11371](https://github.com/NetVanguard-cmd/CVE-2025-11371)
+
+### CVE-2025-11391 (2025-10-18)
+
+<code>The PPOM – Product Addons &amp; Custom Fields for WooCommerce plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the image cropper functionality in all versions up to, and including, 33.0.15. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible. While the vulnerable code is in the free version, this only affected users with the paid version of the software installed and activated.
+</code>
+
+- [aritlhq/CVE-2025-11391](https://github.com/aritlhq/CVE-2025-11391)
 
 ### CVE-2025-11449 (2025-10-10)
 
@@ -2510,7 +2521,7 @@
 - [drcrypterdotru/Apache-GOExploiter](https://github.com/drcrypterdotru/Apache-GOExploiter)
 - [CEAlbez/CVE-2025-24813-PoC](https://github.com/CEAlbez/CVE-2025-24813-PoC)
 - [Makavellik/POC-CVE-2025-24813-Apache-Tomcat-Remote-Code-Execution](https://github.com/Makavellik/POC-CVE-2025-24813-Apache-Tomcat-Remote-Code-Execution)
-- [brs6412/CVE-2025-24813](https://github.com/brs6412/CVE-2025-24813)
+- [pirenga/CVE-2025-24813](https://github.com/pirenga/CVE-2025-24813)
 
 ### CVE-2025-24893 (2025-02-20)
 
@@ -2652,7 +2663,6 @@
 - [mrmtwoj/CVE-2025-25257](https://github.com/mrmtwoj/CVE-2025-25257)
 - [TheStingR/CVE-2025-25257](https://github.com/TheStingR/CVE-2025-25257)
 - [segfault-it/CVE-2025-25257](https://github.com/segfault-it/CVE-2025-25257)
-- [kityzed2003/CVE-2025-25257](https://github.com/kityzed2003/CVE-2025-25257)
 - [silentexploitexe/CVE-2025-25257](https://github.com/silentexploitexe/CVE-2025-25257)
 
 ### CVE-2025-25279 (2025-02-24)
@@ -3581,7 +3591,6 @@
 - [ThemeHackers/CVE-2025-30208](https://github.com/ThemeHackers/CVE-2025-30208)
 - [TH-SecForge/CVE-2025-30208](https://github.com/TH-SecForge/CVE-2025-30208)
 - [bugdotexe/CVE-2025-30208](https://github.com/bugdotexe/CVE-2025-30208)
-- [Dany60-98/CVE-2025-30208-EXP](https://github.com/Dany60-98/CVE-2025-30208-EXP)
 - [qodo-dev/CVE-2025-30208](https://github.com/qodo-dev/CVE-2025-30208)
 
 ### CVE-2025-30216 (2025-03-25)
@@ -3740,7 +3749,6 @@
 
 - [sureshkumarsat/CVE-2025-31258-PoC](https://github.com/sureshkumarsat/CVE-2025-31258-PoC)
 - [wh1te4ever/CVE-2025-31258-PoC](https://github.com/wh1te4ever/CVE-2025-31258-PoC)
-- [BODE987/CVE-2025-31258-PoC](https://github.com/BODE987/CVE-2025-31258-PoC)
 
 ### CVE-2025-31324 (2025-04-24)
 
@@ -3965,7 +3973,6 @@
 - [te0rwx/CVE-2025-32433-Detection](https://github.com/te0rwx/CVE-2025-32433-Detection)
 - [Mdusmandasthaheer/CVE-2025-32433](https://github.com/Mdusmandasthaheer/CVE-2025-32433)
 - [dollarboysushil/CVE-2025-32433-Erlang-OTP-SSH-Unauthenticated-RCE](https://github.com/dollarboysushil/CVE-2025-32433-Erlang-OTP-SSH-Unauthenticated-RCE)
-- [scandijamjam1/CVE-2025-32433](https://github.com/scandijamjam1/CVE-2025-32433)
 - [iteride/CVE-2025-32433](https://github.com/iteride/CVE-2025-32433)
 - [mirmeweu/cve-2025-32433](https://github.com/mirmeweu/cve-2025-32433)
 - [Batman529/PoC-CVE-2025-32433](https://github.com/Batman529/PoC-CVE-2025-32433)
@@ -4028,7 +4035,6 @@
 - [yeremeu/CVE-2025-32463_chwoot](https://github.com/yeremeu/CVE-2025-32463_chwoot)
 - [cyberpoul/CVE-2025-32463-POC](https://github.com/cyberpoul/CVE-2025-32463-POC)
 - [B1ack4sh/Blackash-CVE-2025-32463](https://github.com/B1ack4sh/Blackash-CVE-2025-32463)
-- [SkylerMC/CVE-2025-32463](https://github.com/SkylerMC/CVE-2025-32463)
 - [junxian428/CVE-2025-32463](https://github.com/junxian428/CVE-2025-32463)
 - [FreeDurok/CVE-2025-32463-PoC](https://github.com/FreeDurok/CVE-2025-32463-PoC)
 - [Chocapikk/CVE-2025-32463-lab](https://github.com/Chocapikk/CVE-2025-32463-lab)
@@ -4059,7 +4065,6 @@
 - [blackcat4347/CVE-2025-32463_PoC](https://github.com/blackcat4347/CVE-2025-32463_PoC)
 - [ashardev002/CVE-2025-32463_chwoot](https://github.com/ashardev002/CVE-2025-32463_chwoot)
 - [mihnasdsad/CVE-2025-32463](https://github.com/mihnasdsad/CVE-2025-32463)
-- [no-speech-to-text/CVE-2025-32463](https://github.com/no-speech-to-text/CVE-2025-32463)
 - [nelissandro/CVE-2025-32463-Sudo-Chroot-Escape](https://github.com/nelissandro/CVE-2025-32463-Sudo-Chroot-Escape)
 - [AC8999/CVE-2025-32463](https://github.com/AC8999/CVE-2025-32463)
 - [onniio/CVE-2025-32463](https://github.com/onniio/CVE-2025-32463)
@@ -5117,7 +5122,6 @@
 - [Wh04m1001/CVE-2025-48799](https://github.com/Wh04m1001/CVE-2025-48799)
 - [painoob/CVE-2025-48799](https://github.com/painoob/CVE-2025-48799)
 - [gmh5225/CVE-2025-48799-](https://github.com/gmh5225/CVE-2025-48799-)
-- [ukisshinaah/CVE-2025-48799](https://github.com/ukisshinaah/CVE-2025-48799)
 
 ### CVE-2025-48827 (2025-05-27)
 
@@ -5876,7 +5880,6 @@
 <code>Deserialization of untrusted data in on-premises Microsoft SharePoint Server allows an unauthorized attacker to execute code over a network.\nMicrosoft is aware that an exploit for CVE-2025-53770 exists in the wild.\nMicrosoft is preparing and fully testing a comprehensive update to address this vulnerability.  In the meantime, please make sure that the mitigation provided in this CVE documentation is in place so that you are protected from exploitation.
 </code>
 
-- [yashz0007/CVE-2025-53770-Exploit](https://github.com/yashz0007/CVE-2025-53770-Exploit)
 - [B1ack4sh/Blackash-CVE-2025-53770](https://github.com/B1ack4sh/Blackash-CVE-2025-53770)
 - [RukshanaAlikhan/CVE-2025-53770](https://github.com/RukshanaAlikhan/CVE-2025-53770)
 - [Bluefire-Redteam-Cybersecurity/bluefire-sharepoint-cve-2025-53770](https://github.com/Bluefire-Redteam-Cybersecurity/bluefire-sharepoint-cve-2025-53770)
@@ -5917,7 +5920,6 @@
 - [saladin0x1/CVE-2025-53770](https://github.com/saladin0x1/CVE-2025-53770)
 - [go-bi/sharepoint-CVE-2025-53770](https://github.com/go-bi/sharepoint-CVE-2025-53770)
 - [fentnttntnt/CVE-2025-53770](https://github.com/fentnttntnt/CVE-2025-53770)
-- [ziisenpai/CVE-2025-53770-Scanner](https://github.com/ziisenpai/CVE-2025-53770-Scanner)
 - [Michaael01/LetsDefend--SOC-342-CVE-2025-53770-SharePoint-Exploit-ToolShell](https://github.com/Michaael01/LetsDefend--SOC-342-CVE-2025-53770-SharePoint-Exploit-ToolShell)
 - [victormbogu1/LetsDefend-SOC342-CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-andRCE-EventID-320](https://github.com/victormbogu1/LetsDefend-SOC342-CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-andRCE-EventID-320)
 
@@ -6135,7 +6137,6 @@
 - [hunters-sec/CVE-2025-55188-7z-exploit](https://github.com/hunters-sec/CVE-2025-55188-7z-exploit)
 - [san8383/CVE-2025-55188-7z-POC](https://github.com/san8383/CVE-2025-55188-7z-POC)
 - [lunbun/CVE-2025-55188](https://github.com/lunbun/CVE-2025-55188)
-- [Sh3ruman/CVE-2025-55188-7z-exploit](https://github.com/Sh3ruman/CVE-2025-55188-7z-exploit)
 
 ### CVE-2025-55234 (2025-09-09)
 
@@ -6312,7 +6313,11 @@
 
 - [saykino/CVE-2025-56218](https://github.com/saykino/CVE-2025-56218)
 
-### CVE-2025-56219
+### CVE-2025-56219 (2025-10-20)
+
+<code>Incorrect access control in SigningHub v8.6.8 allows attackers to arbitrarily add user accounts without any rate limiting. This can lead to a resource exhaustion and a Denial of Service (DoS) when an excessively large number of user accounts are created.
+</code>
+
 - [saykino/CVE-2025-56219](https://github.com/saykino/CVE-2025-56219)
 
 ### CVE-2025-56221 (2025-10-17)
@@ -6322,10 +6327,18 @@
 
 - [saykino/CVE-2025-56221](https://github.com/saykino/CVE-2025-56221)
 
-### CVE-2025-56223
+### CVE-2025-56223 (2025-10-20)
+
+<code>A lack of rate limiting in the component /Home/UploadStreamDocument of SigningHub v8.6.8 allows attackers to cause a Denial of Service (DoS) via uploading an excessive number of files.
+</code>
+
 - [saykino/CVE-2025-56223](https://github.com/saykino/CVE-2025-56223)
 
-### CVE-2025-56224
+### CVE-2025-56224 (2025-10-20)
+
+<code>A lack of rate limiting in the One-Time Password (OTP) verification endpoint of SigningHub v8.6.8 allows attackers to bypass verification via a bruteforce attack.
+</code>
+
 - [saykino/CVE-2025-56224](https://github.com/saykino/CVE-2025-56224)
 
 ### CVE-2025-56243 (2025-10-07)
@@ -6647,12 +6660,26 @@
 
 - [quetuan03/CVE-2025-58789](https://github.com/quetuan03/CVE-2025-58789)
 
+### CVE-2025-59230 (2025-10-14)
+
+<code>Improper access control in Windows Remote Access Connection Manager allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [moegameka/CVE-2025-59230](https://github.com/moegameka/CVE-2025-59230)
+
 ### CVE-2025-59285 (2025-10-14)
 
 <code>Deserialization of untrusted data in Azure Monitor Agent allows an authorized attacker to elevate privileges locally.
 </code>
 
 - [allinsthon/CVE-2025-59285](https://github.com/allinsthon/CVE-2025-59285)
+
+### CVE-2025-59287 (2025-10-14)
+
+<code>Deserialization of untrusted data in Windows Server Update Service allows an unauthorized attacker to execute code over a network.
+</code>
+
+- [keeganparr1/CVE-2025-59287-hawktrace](https://github.com/keeganparr1/CVE-2025-59287-hawktrace)
 
 ### CVE-2025-59295 (2025-10-14)
 
@@ -6774,10 +6801,18 @@
 
 - [thawphone/CVE-2025-61183](https://github.com/thawphone/CVE-2025-61183)
 
-### CVE-2025-61301
+### CVE-2025-61301 (2025-10-20)
+
+<code>Denial-of-analysis in reporting/mongodb.py and reporting/jsondump.py in CAPEv2 (commit 52e4b43, on 2025-05-17) allows attackers who can submit samples to cause incomplete or missing behavioral analysis reports by generating deeply nested or oversized behavior data that trigger MongoDB BSON limits or orjson recursion errors when the sample executes in the sandbox.
+</code>
+
 - [eGkritsis/CVE-2025-61301](https://github.com/eGkritsis/CVE-2025-61301)
 
-### CVE-2025-61303
+### CVE-2025-61303 (2025-10-20)
+
+<code>Hatching Triage Sandbox Windows 10 build 2004 (2025-08-14) and Windows 10 LTSC 2021(2025-08-14) contains a vulnerability in its Windows behavioral analysis engine that allows a submitted malware sample to evade detection and cause denial-of-analysis. The vulnerability is triggered when a sample recursively spawns a large number of child processes, generating high log volume and exhausting system resources. As a result, key malicious behavior, including PowerShell execution and reverse shell activity, may not be recorded or reported, misleading analysts and compromising the integrity and availability of sandboxed analysis results.
+</code>
+
 - [eGkritsis/CVE-2025-61303](https://github.com/eGkritsis/CVE-2025-61303)
 
 ### CVE-2025-61319 (2025-10-10)
@@ -6787,13 +6822,25 @@
 
 - [AmalJafarzade/CVE-2025-61319](https://github.com/AmalJafarzade/CVE-2025-61319)
 
-### CVE-2025-61454
+### CVE-2025-61454 (2025-10-20)
+
+<code>A Cross-Site Scripting (XSS) vulnerability exists in Bhabishya-123 E-commerce 1.0, specifically within the search endpoint. Unsanitized input in the /search parameter is directly reflected back into the response HTML, allowing attackers to execute arbitrary JavaScript in the browser of a user who visits a malicious link or submits a crafted request.
+</code>
+
 - [tansique-17/CVE-2025-61454](https://github.com/tansique-17/CVE-2025-61454)
 
-### CVE-2025-61455
+### CVE-2025-61455 (2025-10-20)
+
+<code>SQL Injection vulnerability exists in Bhabishya-123 E-commerce 1.0, specifically within the signup.inc.php endpoint. The application directly incorporates unsanitized user inputs into SQL queries, allowing unauthenticated attackers to bypass authentication and gain full access.
+</code>
+
 - [tansique-17/CVE-2025-61455](https://github.com/tansique-17/CVE-2025-61455)
 
-### CVE-2025-61456
+### CVE-2025-61456 (2025-10-20)
+
+<code>A Cross-Site Scripting (XSS) vulnerability exists in Bhabishya-123 E-commerce 1.0, specifically within the index endpoint. Unsanitized input in the /index parameter is directly reflected back into the response HTML, allowing attackers to execute arbitrary JavaScript in the browser of a user who visits a malicious link or submits a crafted request.
+</code>
+
 - [tansique-17/CVE-2025-61456](https://github.com/tansique-17/CVE-2025-61456)
 
 ### CVE-2025-61622 (2025-10-01)
@@ -13478,6 +13525,13 @@
 </code>
 
 - [secunnix/CVE-2024-36424](https://github.com/secunnix/CVE-2024-36424)
+
+### CVE-2024-36437 (2025-02-03)
+
+<code>The com.enflick.android.TextNow (aka TextNow: Call + Text Unlimited) application 24.17.0.2 for Android enables any installed application (with no permissions) to place phone calls without user interaction by sending a crafted intent via the com.enflick.android.TextNow.activities.DialerActivity component.
+</code>
+
+- [actuator/com.enflick.android.TextNow](https://github.com/actuator/com.enflick.android.TextNow)
 
 ### CVE-2024-36527 (2024-06-17)
 
@@ -23448,6 +23502,13 @@
 
 - [markuta/bw-dump](https://github.com/markuta/bw-dump)
 
+### CVE-2023-38873 (2023-09-28)
+
+<code>The commit 3730880 (April 2023) and v.0.9-beta1 of gugoan Economizzer is vulnerable to Clickjacking. Clickjacking, also known as a &quot;UI redress attack&quot;, is when an attacker uses multiple transparent or opaque layers to trick a user into clicking on a button or link on another page when they were intending to click on the top-level page. Thus, the attacker is &quot;hijacking&quot; clicks meant for their page and routing them to another page, most likely owned by another application, domain, or both.
+</code>
+
+- [K9-Modz/CVE-2023-38873-G1](https://github.com/K9-Modz/CVE-2023-38873-G1)
+
 ### CVE-2023-38890 (2023-08-18)
 
 <code>Online Shopping Portal Project 3.1 allows remote attackers to execute arbitrary SQL commands/queries via the login form, leading to unauthorized access and potential data manipulation. This vulnerability arises due to insufficient validation of user-supplied input in the username field, enabling SQL Injection attacks.
@@ -24020,7 +24081,7 @@
 <code>A certificate validation issue was addressed. This issue is fixed in macOS Ventura 13.6, iOS 16.7 and iPadOS 16.7. A malicious app may be able to bypass signature validation. Apple is aware of a report that this issue may have been actively exploited against versions of iOS before iOS 16.7.
 </code>
 
-- [Zenyith/CVE-2023-41991](https://github.com/Zenyith/CVE-2023-41991)
+- [itsgiddd/CVE-2023-41991](https://github.com/itsgiddd/CVE-2023-41991)
 - [dmytrozykov/appsign](https://github.com/dmytrozykov/appsign)
 
 ### CVE-2023-41992 (2023-09-21)
@@ -55053,7 +55114,6 @@
 - [b3pwn3d/CVE-2017-7921](https://github.com/b3pwn3d/CVE-2017-7921)
 - [yousouf-Tasfin/cve-2017-7921-Mass-Exploit](https://github.com/yousouf-Tasfin/cve-2017-7921-Mass-Exploit)
 - [kooroshsanaei/HikVision-CVE-2017-7921](https://github.com/kooroshsanaei/HikVision-CVE-2017-7921)
-- [initon/Hikvision---CVE-2017-7921](https://github.com/initon/Hikvision---CVE-2017-7921)
 - [aengussong/hikvision_probe](https://github.com/aengussong/hikvision_probe)
 - [GabrielAvls/CVE-2017-7921](https://github.com/GabrielAvls/CVE-2017-7921)
 - [lastvocher/Hikvision-CVE-2017-7921-decryptor](https://github.com/lastvocher/Hikvision-CVE-2017-7921-decryptor)
@@ -56489,6 +56549,7 @@
 
 - [vulhub/CVE-2017-1000353](https://github.com/vulhub/CVE-2017-1000353)
 - [r00t4dm/Jenkins-CVE-2017-1000353](https://github.com/r00t4dm/Jenkins-CVE-2017-1000353)
+- [Jelc0Doesbruf/CVE-2017-1000353](https://github.com/Jelc0Doesbruf/CVE-2017-1000353)
 
 ### CVE-2017-1000367 (2017-06-05)
 
@@ -58143,6 +58204,7 @@
 - [w01ke/CVE-2015-1635-POC](https://github.com/w01ke/CVE-2015-1635-POC)
 - [SkinAir/ms15-034-Scan](https://github.com/SkinAir/ms15-034-Scan)
 - [Cappricio-Securities/CVE-2015-1635](https://github.com/Cappricio-Securities/CVE-2015-1635)
+- [moeinmiadi/CVE-2015-1635_PoC](https://github.com/moeinmiadi/CVE-2015-1635_PoC)
 
 ### CVE-2015-1641 (2015-04-14)
 
@@ -58999,7 +59061,7 @@
 - [a0726h77/heartbleed-test](https://github.com/a0726h77/heartbleed-test)
 - [pblittle/aws-suture](https://github.com/pblittle/aws-suture)
 - [hreese/heartbleed-dtls](https://github.com/hreese/heartbleed-dtls)
-- [wwwiretap/bleeding_onions](https://github.com/wwwiretap/bleeding_onions)
+- [0xinf0/bleeding_onions](https://github.com/0xinf0/bleeding_onions)
 - [idkqh7/heatbleeding](https://github.com/idkqh7/heatbleeding)
 - [GeeksXtreme/ssl-heartbleed.nse](https://github.com/GeeksXtreme/ssl-heartbleed.nse)
 - [xlucas/heartbleed](https://github.com/xlucas/heartbleed)
@@ -59840,6 +59902,9 @@
 
 ### CVE-2014-91371
 - [jamaal001/CVE-2014-91371-Wordpress-](https://github.com/jamaal001/CVE-2014-91371-Wordpress-)
+
+### CVE-2014-1106691
+- [dejkfirt0n66/kneedTanstack](https://github.com/dejkfirt0n66/kneedTanstack)
 
 
 ## 2013
