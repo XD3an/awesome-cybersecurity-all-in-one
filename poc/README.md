@@ -1225,6 +1225,13 @@
 
 - [c137req/CVE-2025-6713](https://github.com/c137req/CVE-2025-6713)
 
+### CVE-2025-6758 (2025-08-19)
+
+<code>The Real Spaces - WordPress Properties Directory Theme theme for WordPress is vulnerable to privilege escalation via the 'imic_agent_register' function in all versions up to, and including, 3.6. This is due to a lack of restriction in the registration role. This makes it possible for unauthenticated attackers to arbitrarily choose their role, including the Administrator role, during user registration.
+</code>
+
+- [Nxploited/CVE-2025-6758](https://github.com/Nxploited/CVE-2025-6758)
+
 ### CVE-2025-6759 (2025-07-08)
 
 <code>Local Privilege escalation allows a low-privileged user to gain SYSTEM privileges in Windows Virtual Delivery Agent for CVAD and Citrix DaaS
@@ -3469,7 +3476,6 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [KaztoRay/CVE-2025-29927-Research](https://github.com/KaztoRay/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -4611,10 +4617,6 @@
 </code>
 
 - [IvanT7D3/CVE-2025-44203](https://github.com/IvanT7D3/CVE-2025-44203)
-
-### CVE-2025-44228
-- [Kartiowmn/Lnk-Exploit-FileBinder-Certificate-Spoofer-Reg-Doc-Cve-Rce](https://github.com/Kartiowmn/Lnk-Exploit-FileBinder-Certificate-Spoofer-Reg-Doc-Cve-Rce)
-- [Kartiowmn/Office-Exploit-Cve2025-Xml-Doc-Docx-Rce-Builder-Fud](https://github.com/Kartiowmn/Office-Exploit-Cve2025-Xml-Doc-Docx-Rce-Builder-Fud)
 
 ### CVE-2025-44603
 - [Moulish2004/CVE-2025-44603-CSRF-Leads_to_Create_FakeUsers](https://github.com/Moulish2004/CVE-2025-44603-CSRF-Leads_to_Create_FakeUsers)
@@ -5832,6 +5834,14 @@
 - [34zY/CVE-2025-52970](https://github.com/34zY/CVE-2025-52970)
 - [imbas007/POC-CVE-2025-52970](https://github.com/imbas007/POC-CVE-2025-52970)
 
+### CVE-2025-53072 (2025-10-21)
+
+<code>Vulnerability in the Oracle Marketing product of Oracle E-Business Suite (component: Marketing Administration).  Supported versions that are affected are 12.2.3-12.2.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Marketing.  Successful attacks of this vulnerability can result in takeover of Oracle Marketing. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
+</code>
+
+- [rxerium/CVE-2025-53072-CVE-2025-62481](https://github.com/rxerium/CVE-2025-53072-CVE-2025-62481)
+- [RedFoxNxploits/CVE-2025-53072](https://github.com/RedFoxNxploits/CVE-2025-53072)
+
 ### CVE-2025-53367 (2025-07-03)
 
 <code>DjVuLibre is a GPL implementation of DjVu, a web-centric format for distributing documents and images. Prior to version 3.5.29, the MMRDecoder::scanruns method is affected by an OOB-write vulnerability, because it does not check that the xr pointer stays within the bounds of the allocated buffer. This can lead to writes beyond the allocated memory, resulting in a heap corruption condition. An out-of-bounds read with pr is also possible for the same reason. This issue has been patched in version 3.5.29.
@@ -6094,6 +6104,13 @@
 </code>
 
 - [byteReaper77/CVE-2025-54769](https://github.com/byteReaper77/CVE-2025-54769)
+
+### CVE-2025-54782 (2025-08-01)
+
+<code>Nest is a framework for building scalable Node.js server-side applications. In versions 0.2.0 and below, a critical Remote Code Execution (RCE) vulnerability was discovered in the @nestjs/devtools-integration package. When enabled, the package exposes a local development HTTP server with an API endpoint that uses an unsafe JavaScript sandbox (safe-eval-like implementation). Due to improper sandboxing and missing cross-origin protections, any malicious website visited by a developer can execute arbitrary code on their local machine. The package adds HTTP endpoints to a locally running NestJS development server. One of these endpoints, /inspector/graph/interact, accepts JSON input containing a code field and executes the provided code in a Node.js vm.runInNewContext sandbox. This is fixed in version 0.2.1.
+</code>
+
+- [vxaretra/CVE-2025-54782](https://github.com/vxaretra/CVE-2025-54782)
 
 ### CVE-2025-54793 (2025-08-08)
 
@@ -6477,28 +6494,28 @@
 
 ### CVE-2025-56799 (2025-10-21)
 
-<code>Reolink desktop application 8.18.12 contains a command injection vulnerability in its scheduled cache-clearing mechanism via a crafted folder name.
+<code>Reolink desktop application 8.18.12 contains a command injection vulnerability in its scheduled cache-clearing mechanism via a crafted folder name. NOTE: this is disputed by the Supplier because a crafted folder name would arise only if the local user were attacking himself.
 </code>
 
 - [shinyColumn/CVE-2025-56799](https://github.com/shinyColumn/CVE-2025-56799)
 
 ### CVE-2025-56800 (2025-10-21)
 
-<code>Reolink desktop application 8.18.12 contains a vulnerability in its local authentication mechanism. The application implements lock screen password logic entirely on the client side using JavaScript within an Electron resource file. Because the password is stored and returned via a modifiable JavaScript property(a.settingsManager.lockScreenPassword), an attacker can patch the return value to bypass authentication.
+<code>Reolink desktop application 8.18.12 contains a vulnerability in its local authentication mechanism. The application implements lock screen password logic entirely on the client side using JavaScript within an Electron resource file. Because the password is stored and returned via a modifiable JavaScript property(a.settingsManager.lockScreenPassword), an attacker can patch the return value to bypass authentication. NOTE: this is disputed by the Supplier because the lock-screen bypass would only occur if the local user modified his own instance of the application.
 </code>
 
 - [shinyColumn/CVE-2025-56800](https://github.com/shinyColumn/CVE-2025-56800)
 
 ### CVE-2025-56801 (2025-10-21)
 
-<code>The Reolink Desktop Application 8.18.12 contains hardcoded credentials as the Initialization Vector (IV) in its AES-CFB encryption implementation allowing attackers with access to the application environment to reliably decrypt encrypted configuration data.
+<code>The Reolink Desktop Application 8.18.12 contains hardcoded credentials as the Initialization Vector (IV) in its AES-CFB encryption implementation allowing attackers with access to the application environment to reliably decrypt encrypted configuration data. NOTE: the Supplier's position is that material is not hardcoded and is instead randomly generated on each installation of the application.
 </code>
 
 - [shinyColumn/CVE-2025-56801](https://github.com/shinyColumn/CVE-2025-56801)
 
 ### CVE-2025-56802 (2025-10-21)
 
-<code>The Reolink desktop application uses a hard-coded and predictable AES encryption key to encrypt user configuration files allowing attackers with local access to decrypt sensitive application data stored in %APPDATA%. A different vulnerability than CVE-2025-56802.
+<code>The Reolink desktop application uses a hard-coded and predictable AES encryption key to encrypt user configuration files allowing attackers with local access to decrypt sensitive application data stored in %APPDATA%. A different vulnerability than CVE-2025-56801. NOTE: the Supplier's position is that material is not hardcoded and is instead randomly generated on each installation of the application.
 </code>
 
 - [shinyColumn/CVE-2025-56802](https://github.com/shinyColumn/CVE-2025-56802)
@@ -6648,6 +6665,13 @@
 - [Mkway/CVE-2025-57833](https://github.com/Mkway/CVE-2025-57833)
 - [loic-houchi/Django-faille-CVE-2025-57833_test](https://github.com/loic-houchi/Django-faille-CVE-2025-57833_test)
 - [ianoboyle/CVE-2025-57833](https://github.com/ianoboyle/CVE-2025-57833)
+
+### CVE-2025-57870 (2025-10-22)
+
+<code>A SQL Injection vulnerability exists in Esri ArcGIS Server versions 11.3, 11.4 and 11.5 on Windows, Linux and Kubernetes. This vulnerability allows a remote, unauthenticated attacker to execute arbitrary SQL commands via a specific ArcGIS Feature Service operation. Successful exploitation can potentially result in unauthorized access, modification, or deletion of data from the underlying Enterprise Geodatabase.
+</code>
+
+- [ByteHawkSec/CVE-2025-57870-POC](https://github.com/ByteHawkSec/CVE-2025-57870-POC)
 
 ### CVE-2025-57926 (2025-09-22)
 
@@ -6828,6 +6852,9 @@
 </code>
 
 - [prabhatverma47/CVE-2025-60787](https://github.com/prabhatverma47/CVE-2025-60787)
+
+### CVE-2025-60791
+- [Smarttfoxx/CVE-2025-60791](https://github.com/Smarttfoxx/CVE-2025-60791)
 
 ### CVE-2025-60880 (2025-10-10)
 
@@ -7772,6 +7799,7 @@
 - [mrk336/CVE-2024-3094](https://github.com/mrk336/CVE-2024-3094)
 - [Titus-soc/-CVE-2024-3094-Vulnerability-Checker-Fixer-Public](https://github.com/Titus-soc/-CVE-2024-3094-Vulnerability-Checker-Fixer-Public)
 - [M1lo25/CS50FinalProject](https://github.com/M1lo25/CS50FinalProject)
+- [ThomRgn/xzutils_backdoor_obfuscation](https://github.com/ThomRgn/xzutils_backdoor_obfuscation)
 
 ### CVE-2024-3105 (2024-06-15)
 
@@ -8816,6 +8844,13 @@
 </code>
 
 - [RevoltSecurities/CVE-2024-7339](https://github.com/RevoltSecurities/CVE-2024-7339)
+
+### CVE-2024-7387 (2024-09-16)
+
+<code>A flaw was found in openshift/builder. This vulnerability allows command injection via path traversal, where a malicious user can execute arbitrary commands on the OpenShift node running the builder container. When using the “Docker” strategy, executable files inside the privileged build container can be overridden using the `spec.source.secrets.secret.destinationDir` attribute of the `BuildConfig` definition. An attacker running code in a privileged container could escalate their permissions on the node running the container.
+</code>
+
+- [tevelsho/cve-2024-7387](https://github.com/tevelsho/cve-2024-7387)
 
 ### CVE-2024-7399 (2024-08-09)
 
@@ -18001,6 +18036,13 @@
 
 - [pashayogi/CVE-2023-2744](https://github.com/pashayogi/CVE-2023-2744)
 
+### CVE-2023-2745 (2023-05-17)
+
+<code>WordPress Core is vulnerable to Directory Traversal in versions up to, and including, 6.2, via the ‘wp_lang’ parameter. This allows unauthenticated attackers to access and load arbitrary translation files. In cases where an attacker is able to upload a crafted translation file onto the site, such as via an upload form, this could be also used to perform a Cross-Site Scripting attack.
+</code>
+
+- [fofovicfof-ai/cve-2023-2745](https://github.com/fofovicfof-ai/cve-2023-2745)
+
 ### CVE-2023-2822 (2023-05-20)
 
 <code>Es wurde eine problematische Schwachstelle in Ellucian Ethos Identity bis 5.10.5 ausgemacht. Hiervon betroffen ist ein unbekannter Codeblock der Datei /cas/logout. Durch Manipulation des Arguments url mit unbekannten Daten kann eine cross site scripting-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk angegangen werden. Der Exploit steht zur öffentlichen Verfügung. Ein Aktualisieren auf die Version 5.10.6 vermag dieses Problem zu lösen. Als bestmögliche Massnahme wird das Einspielen eines Upgrades empfohlen.
@@ -24995,6 +25037,7 @@
 - [bbugdigger/ktor-xxe-poc](https://github.com/bbugdigger/ktor-xxe-poc)
 - [infernosalex/CVE-2023-45612-PoC](https://github.com/infernosalex/CVE-2023-45612-PoC)
 - [aecelen/ktor-xxe-poc](https://github.com/aecelen/ktor-xxe-poc)
+- [clemfavre/cve-2023-45612_exploit](https://github.com/clemfavre/cve-2023-45612_exploit)
 
 ### CVE-2023-45657 (2023-11-06)
 
@@ -26167,6 +26210,7 @@
 - [Mrterrestrial/CVE-2023-50564](https://github.com/Mrterrestrial/CVE-2023-50564)
 - [0xDTC/Pluck-CMS-v4.7.18-Remote-Code-Execution-CVE-2023-50564](https://github.com/0xDTC/Pluck-CMS-v4.7.18-Remote-Code-Execution-CVE-2023-50564)
 - [xpltive/CVE-2023-50564](https://github.com/xpltive/CVE-2023-50564)
+- [glynzr/CVE-2023-50564](https://github.com/glynzr/CVE-2023-50564)
 
 ### CVE-2023-50596
 - [chandraprarikraj/CVE-2023-50596](https://github.com/chandraprarikraj/CVE-2023-50596)
@@ -26408,6 +26452,13 @@
 
 
 ## 2022
+### CVE-2022-0001 (2022-03-11)
+
+<code>Non-transparent sharing of branch predictor selectors between contexts in some Intel(R) Processors may allow an authorized user to potentially enable information disclosure via local access.
+</code>
+
+- [Sabecomoeh/CVE-2022-0001](https://github.com/Sabecomoeh/CVE-2022-0001)
+
 ### CVE-2022-0155 (2022-01-10)
 
 <code>follow-redirects is vulnerable to Exposure of Private Personal Information to an Unauthorized Actor
@@ -32153,7 +32204,6 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -34719,6 +34769,7 @@
 - [fathallah17/OverlayFS-CVE-2021-3493](https://github.com/fathallah17/OverlayFS-CVE-2021-3493)
 - [Sornphut/OverlayFS---CVE-2021-3493](https://github.com/Sornphut/OverlayFS---CVE-2021-3493)
 - [spideyctf/UbuntuTouchSecurityVAPTReport](https://github.com/spideyctf/UbuntuTouchSecurityVAPTReport)
+- [cyberx-1/OverlayFS-CVE-2021-3493](https://github.com/cyberx-1/OverlayFS-CVE-2021-3493)
 
 ### CVE-2021-3516 (2021-06-01)
 
@@ -34881,7 +34932,6 @@
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
 - [cspshivam/cve-2021-4034](https://github.com/cspshivam/cve-2021-4034)
-- [an0n7os/CVE-2021-4034](https://github.com/an0n7os/CVE-2021-4034)
 - [DanaEpp/pwncat_pwnkit](https://github.com/DanaEpp/pwncat_pwnkit)
 - [x04000/CVE-2021-4034](https://github.com/x04000/CVE-2021-4034)
 - [x04000/AutoPwnkit](https://github.com/x04000/AutoPwnkit)
@@ -46797,7 +46847,6 @@
 - [leerina/CVE-2019-2725](https://github.com/leerina/CVE-2019-2725)
 - [zhusx110/cve-2019-2725](https://github.com/zhusx110/cve-2019-2725)
 - [lufeirider/CVE-2019-2725](https://github.com/lufeirider/CVE-2019-2725)
-- [TopScrew/CVE-2019-2725](https://github.com/TopScrew/CVE-2019-2725)
 - [welove88888/CVE-2019-2725](https://github.com/welove88888/CVE-2019-2725)
 - [jiansiting/CVE-2019-2725](https://github.com/jiansiting/CVE-2019-2725)
 - [kerlingcode/CVE-2019-2725](https://github.com/kerlingcode/CVE-2019-2725)
@@ -47390,6 +47439,13 @@
 </code>
 
 - [adhammedhat111/Magento-CVE-2019-7139-SQLi-PoC](https://github.com/adhammedhat111/Magento-CVE-2019-7139-SQLi-PoC)
+
+### CVE-2019-7164 (2019-02-20)
+
+<code>SQLAlchemy through 1.2.17 and 1.3.x through 1.3.0b2 allows SQL Injection via the order_by parameter.
+</code>
+
+- [stuxbench/mlflow-cve-2019-7164](https://github.com/stuxbench/mlflow-cve-2019-7164)
 
 ### CVE-2019-7192 (2019-12-05)
 
@@ -52302,7 +52358,6 @@
 - [LeQuocKhanh2K/Tool_Exploit_Password_Camera_CVE-2018-9995](https://github.com/LeQuocKhanh2K/Tool_Exploit_Password_Camera_CVE-2018-9995)
 - [ST0PL/DVRFaultNET](https://github.com/ST0PL/DVRFaultNET)
 - [K3ysTr0K3R/CVE-2018-9995-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2018-9995-EXPLOIT)
-- [Pab450/CVE-2018-9995](https://github.com/Pab450/CVE-2018-9995)
 - [arminarab1999/CVE-2018-9995](https://github.com/arminarab1999/CVE-2018-9995)
 - [X3RX3SSec/DVR_Sploit](https://github.com/X3RX3SSec/DVR_Sploit)
 - [batmoshka55/CVE-2018-9995_dvr_credentials](https://github.com/batmoshka55/CVE-2018-9995_dvr_credentials)
@@ -61081,6 +61136,13 @@
 </code>
 
 - [Sunqiz/cve-2010-2553-reproduction](https://github.com/Sunqiz/cve-2010-2553-reproduction)
+
+### CVE-2010-2861 (2010-08-11)
+
+<code>Multiple directory traversal vulnerabilities in the administrator console in Adobe ColdFusion 9.0.1 and earlier allow remote attackers to read arbitrary files via the locale parameter to (1) CFIDE/administrator/settings/mappings.cfm, (2) logging/settings.cfm, (3) datasources/index.cfm, (4) j2eepackaging/editarchive.cfm, and (5) enter.cfm in CFIDE/administrator/.
+</code>
+
+- [greysneakthief/14641-v2](https://github.com/greysneakthief/14641-v2)
 
 ### CVE-2010-2883 (2010-09-09)
 
