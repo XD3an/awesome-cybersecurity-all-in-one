@@ -6838,6 +6838,9 @@
 ### CVE-2025-60736
 - [WinDyAlphA/CVE-2025-60736](https://github.com/WinDyAlphA/CVE-2025-60736)
 
+### CVE-2025-60749
+- [yawataa/CVE-2025-60749](https://github.com/yawataa/CVE-2025-60749)
+
 ### CVE-2025-60751 (2025-10-21)
 
 <code>GeographicLib 2.5 is vulnerable to Buffer Overflow in GeoConvert DMS::InternalDecode.
@@ -6972,6 +6975,7 @@
 
 - [dgl/cve-2025-61984-poc](https://github.com/dgl/cve-2025-61984-poc)
 - [ThanhCT-CyX/Test-CVE-2025-61984](https://github.com/ThanhCT-CyX/Test-CVE-2025-61984)
+- [flyskyfire/cve-2025-61984-poc](https://github.com/flyskyfire/cve-2025-61984-poc)
 
 ### CVE-2025-62168 (2025-10-17)
 
@@ -12903,6 +12907,8 @@
 - [ashutosh0408/Cve-2024-32002-poc](https://github.com/ashutosh0408/Cve-2024-32002-poc)
 - [Dre4m017/fuzzy](https://github.com/Dre4m017/fuzzy)
 - [JoaoLeonello/cve-2024-32002-poc](https://github.com/JoaoLeonello/cve-2024-32002-poc)
+- [srakkk/cve-2024-32002-demo](https://github.com/srakkk/cve-2024-32002-demo)
+- [srakkk/cve-2024-32002-hook](https://github.com/srakkk/cve-2024-32002-hook)
 - [mystxcal/cve-2024-32002-demo](https://github.com/mystxcal/cve-2024-32002-demo)
 
 ### CVE-2024-32004 (2024-05-14)
@@ -17243,6 +17249,13 @@
 </code>
 
 - [absholi7ly/CVE-2024-56512-Apache-NiFi-Exploit](https://github.com/absholi7ly/CVE-2024-56512-Apache-NiFi-Exploit)
+
+### CVE-2024-56800 (2024-12-30)
+
+<code>Firecrawl is a web scraper that allows users to extract the content of a webpage for a large language model. Versions prior to 1.1.1 contain a server-side request forgery (SSRF) vulnerability. The scraping engine could be exploited by crafting a malicious site that redirects to a local IP address. This allowed exfiltration of local network resources through the API. The cloud service was patched on December 27th, 2024, and the maintainers have checked that no user data was exposed by this vulnerability. Scraping engines used in the open sourced version of Firecrawl were patched on December 29th, 2024, except for the playwright services which the maintainers have determined to be un-patchable. All users of open-source software (OSS) Firecrawl should upgrade to v1.1.1. As a workaround, OSS Firecrawl users should supply the playwright services with a secure proxy. A proxy can be specified through the `PROXY_SERVER` env in the environment variables. Please refer to the documentation for instructions. Ensure that the proxy server one is using is setup to block all traffic going to link-local IP addresses.
+</code>
+
+- [cyhe50/cve-2024-56800-poc](https://github.com/cyhe50/cve-2024-56800-poc)
 
 ### CVE-2024-56801 (2024-12-30)
 
@@ -50072,6 +50085,7 @@
 - [ekkoo-z/CVE-2019-18935-bypasswaf](https://github.com/ekkoo-z/CVE-2019-18935-bypasswaf)
 - [0xsharz/telerik-scanner-CVE-2019-18935](https://github.com/0xsharz/telerik-scanner-CVE-2019-18935)
 - [quyt0/CVE-2019-18935-exploit-study](https://github.com/quyt0/CVE-2019-18935-exploit-study)
+- [menashe12346/CVE-2019-18935](https://github.com/menashe12346/CVE-2019-18935)
 
 ### CVE-2019-18988 (2020-02-07)
 
