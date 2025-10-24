@@ -1486,7 +1486,7 @@
 - [lucyna77/winrar-exploit](https://github.com/lucyna77/winrar-exploit)
 - [Fathi-MO/POC-CVE-2025-8088](https://github.com/Fathi-MO/POC-CVE-2025-8088)
 - [papcaii2004/CVE-2025-8088-WinRAR-builder](https://github.com/papcaii2004/CVE-2025-8088-WinRAR-builder)
-- [kaucent/CVE-2025-8088](https://github.com/kaucent/CVE-2025-8088)
+- [mocred/cve-2025-8088](https://github.com/mocred/cve-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1892,6 +1892,13 @@
 
 - [DanielMadsenDK/ServiceNow-CVE-2025-11449-CVE-2025-11450-Mitigation-Script](https://github.com/DanielMadsenDK/ServiceNow-CVE-2025-11449-CVE-2025-11450-Mitigation-Script)
 
+### CVE-2025-11534 (2025-10-21)
+
+<code>The affected Raisecom devices allow SSH sessions to be established without completing user authentication. This could allow attackers to gain shell access without valid credentials.
+</code>
+
+- [DExplo1ted/CVE-2025-11534-POC](https://github.com/DExplo1ted/CVE-2025-11534-POC)
+
 ### CVE-2025-11554 (2025-10-09)
 
 <code>In Portabilis i-Educar up to 2.9.10 wurde eine Schwachstelle gefunden. Hiervon betroffen ist ein unbekannter Codeblock der Datei app/Http/Controllers/AccessLevelController.php der Komponente User Type Handler. Mit der Manipulation mit unbekannten Daten kann eine insecure inherited permissions-Schwachstelle ausgenutzt werden. Ein Angriff ist aus der Distanz möglich. Die Ausnutzung wurde veröffentlicht und kann verwendet werden.
@@ -1905,16 +1912,6 @@
 </code>
 
 - [shinigami-777/PoC_CVE-2025-11579](https://github.com/shinigami-777/PoC_CVE-2025-11579)
-
-### CVE-2025-11832 (2025-10-15)
-
-<code>Allocation of Resources Without Limits or Throttling vulnerability in Azure Access Technology BLU-IC2, Azure Access Technology BLU-IC4 allows Flooding.This issue affects BLU-IC2: through 1.19.5; BLU-IC4: through 1.19.5.
-</code>
-
-- [SilentPacket-cmd/CVE-2025-11832](https://github.com/SilentPacket-cmd/CVE-2025-11832)
-
-### CVE-2025-12654
-- [Tarimaow/Anydesk-Exploit-CVE-2025-12654-RCE-Builder](https://github.com/Tarimaow/Anydesk-Exploit-CVE-2025-12654-RCE-Builder)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -2495,7 +2492,7 @@
 - [N0c1or/CVE-2025-24813_POC](https://github.com/N0c1or/CVE-2025-24813_POC)
 - [gregk4sec/CVE-2025-24813](https://github.com/gregk4sec/CVE-2025-24813)
 - [absholi7ly/POC-CVE-2025-24813](https://github.com/absholi7ly/POC-CVE-2025-24813)
-- [FY036/cve-2025-24813_poc](https://github.com/FY036/cve-2025-24813_poc)
+- [qzy0x/cve-2025-24813_poc](https://github.com/qzy0x/cve-2025-24813_poc)
 - [charis3306/CVE-2025-24813](https://github.com/charis3306/CVE-2025-24813)
 - [issamjr/CVE-2025-24813-Scanner](https://github.com/issamjr/CVE-2025-24813-Scanner)
 - [imbas007/CVE-2025-24813-apache-tomcat](https://github.com/imbas007/CVE-2025-24813-apache-tomcat)
@@ -3427,6 +3424,13 @@
 
 - [encrypter15/CVE-2025-29824](https://github.com/encrypter15/CVE-2025-29824)
 - [AfanPan/CVE-2025-29824-Exploit](https://github.com/AfanPan/CVE-2025-29824-Exploit)
+
+### CVE-2025-29891 (2025-03-12)
+
+<code>Bypass/Injection vulnerability in Apache Camel.\n\nThis issue affects Apache Camel: from 4.10.0 before 4.10.2, from 4.8.0 before 4.8.5, from 3.10.0 before 3.22.4.\n\nUsers are recommended to upgrade to version 4.10.2 for 4.10.x LTS, 4.8.5 for 4.8.x LTS and 3.22.4 for 3.x releases.\n\nThis vulnerability is present in Camel's default incoming header filter, that allows an attacker to include Camel specific headers that for some Camel components can alter the behaviours such as the camel-bean component, or the camel-exec component.\n\nIf you have Camel applications that are directly connected to the internet via HTTP, then an attacker could include parameters in the HTTP requests that are sent to the Camel application that get translated into headers. \n\nThe headers could be both provided as request parameters for an HTTP methods invocation or as part of the payload of the HTTP methods invocation.\n\nAll the known Camel HTTP component such as camel-servlet, camel-jetty, camel-undertow, camel-platform-http, and camel-netty-http would be vulnerable out of the box.\n\nThis CVE is related to the CVE-2025-27636: while they have the same root cause and are fixed with the same fix, CVE-2025-27636 was assumed to only be exploitable if an attacker could add malicious HTTP headers, while we have now determined that it is also exploitable via HTTP parameters. Like in CVE-2025-27636, exploitation is only possible if the Camel route uses particular vulnerable components.
+</code>
+
+- [Crystallen1/CVE-2025-29891-demo](https://github.com/Crystallen1/CVE-2025-29891-demo)
 
 ### CVE-2025-29927 (2025-03-21)
 
@@ -5051,6 +5055,13 @@
 
 - [Nxploited/CVE-2025-48129](https://github.com/Nxploited/CVE-2025-48129)
 
+### CVE-2025-48148 (2025-08-20)
+
+<code>Unrestricted Upload of File with Dangerous Type vulnerability in StoreKeeper B.V. StoreKeeper for WooCommerce allows Using Malicious Files. This issue affects StoreKeeper for WooCommerce: from n/a through 14.4.4.
+</code>
+
+- [Nxploited/CVE-2025-48148](https://github.com/Nxploited/CVE-2025-48148)
+
 ### CVE-2025-48384 (2025-07-08)
 
 <code>Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals. When reading a config value, Git strips any trailing carriage return and line feed (CRLF). When writing a config entry, values with a trailing CR are not quoted, causing the CR to be lost when the config is later read. When initializing a submodule, if the submodule path contains a trailing CR, the altered path is read resulting in the submodule being checked out to an incorrect location. If a symlink exists that points the altered path to the submodule hooks directory, and the submodule contains an executable post-checkout hook, the script may be unintentionally executed after checkout. This vulnerability is fixed in v2.43.7, v2.44.4, v2.45.4, v2.46.4, v2.47.3, v2.48.2, v2.49.1, and v2.50.1.
@@ -5840,7 +5851,6 @@
 </code>
 
 - [rxerium/CVE-2025-53072-CVE-2025-62481](https://github.com/rxerium/CVE-2025-53072-CVE-2025-62481)
-- [RedFoxNxploits/CVE-2025-53072](https://github.com/RedFoxNxploits/CVE-2025-53072)
 
 ### CVE-2025-53367 (2025-07-03)
 
@@ -6697,13 +6707,6 @@
 
 - [casp3r0x0/CVE-2025-58443](https://github.com/casp3r0x0/CVE-2025-58443)
 
-### CVE-2025-58718 (2025-10-14)
-
-<code>Use after free in Remote Desktop Client allows an unauthorized attacker to execute code over a network.
-</code>
-
-- [callinston/CVE-2025-58718](https://github.com/callinston/CVE-2025-58718)
-
 ### CVE-2025-58780 (2025-09-05)
 
 <code>index.em7 in ScienceLogic SL1 before 12.1.1 allows SQL Injection via a parameter in a request. NOTE: this is disputed by the Supplier because it &quot;inaccurately describes the vulnerability.&quot;
@@ -6731,13 +6734,6 @@
 </code>
 
 - [stalker110119/CVE-2025-59230](https://github.com/stalker110119/CVE-2025-59230)
-
-### CVE-2025-59285 (2025-10-14)
-
-<code>Deserialization of untrusted data in Azure Monitor Agent allows an authorized attacker to elevate privileges locally.
-</code>
-
-- [allinsthon/CVE-2025-59285](https://github.com/allinsthon/CVE-2025-59285)
 
 ### CVE-2025-59287 (2025-10-14)
 
@@ -6826,6 +6822,12 @@
 
 - [ajansha/CVE-2025-60378](https://github.com/ajansha/CVE-2025-60378)
 
+### CVE-2025-60424
+- [aakashtyal/2FA-Bypass-using-a-Brute-Force-Attack-CVE-2025-60424](https://github.com/aakashtyal/2FA-Bypass-using-a-Brute-Force-Attack-CVE-2025-60424)
+
+### CVE-2025-60425
+- [aakashtyal/Session-Persistence-After-Enabling-2FA-CVE-2025-60425](https://github.com/aakashtyal/Session-Persistence-After-Enabling-2FA-CVE-2025-60425)
+
 ### CVE-2025-60500 (2025-10-21)
 
 <code>QDocs Smart School Management System 7.1 allows authenticated users with roles such as &quot;accountant&quot; or &quot;admin&quot; to bypass file type restrictions in the media upload feature by abusing the alternate YouTube URL option. This logic flaw permits uploading of arbitrary PHP files, which are stored in a web-accessible directory.
@@ -6855,6 +6857,13 @@
 
 ### CVE-2025-60791
 - [Smarttfoxx/CVE-2025-60791](https://github.com/Smarttfoxx/CVE-2025-60791)
+
+### CVE-2025-60852 (2025-10-23)
+
+<code>A CSV Injection vulnerability existed in Instant Developer Foundation versions prior to 25.0.9600. Applications built with affected versions of the framework did not properly sanitize user-controlled input before including it in CSV exports. This issue could lead to code execution on the system where the exported CSV file is opened.
+</code>
+
+- [valeriocassoni/CSV-Injection-in-Instant-Developer-Foundation-25.0-PoC](https://github.com/valeriocassoni/CSV-Injection-in-Instant-Developer-Foundation-25.0-PoC)
 
 ### CVE-2025-60880 (2025-10-10)
 
@@ -6939,6 +6948,8 @@
 - [RootAid/CVE-2025-61882](https://github.com/RootAid/CVE-2025-61882)
 - [MindflareX/CVE-2025-61882-POC](https://github.com/MindflareX/CVE-2025-61882-POC)
 - [AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit](https://github.com/AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit)
+- [BattalionX/http-oracle-ebs-cve-2025-61882.nse](https://github.com/BattalionX/http-oracle-ebs-cve-2025-61882.nse)
+- [godnish/CVE-2025-61882](https://github.com/godnish/CVE-2025-61882)
 
 ### CVE-2025-61884 (2025-10-12)
 
@@ -6946,6 +6957,13 @@
 </code>
 
 - [B1ack4sh/Blackash-CVE-2025-61884](https://github.com/B1ack4sh/Blackash-CVE-2025-61884)
+
+### CVE-2025-61932 (2025-10-20)
+
+<code>Lanscope Endpoint Manager (On-Premises) (Client program (MR) and Detection agent (DA)) improperly verifies the origin of incoming requests, allowing an attacker to execute arbitrary code by sending specially crafted packets.
+</code>
+
+- [allinsthon/CVE-2025-61932](https://github.com/allinsthon/CVE-2025-61932)
 
 ### CVE-2025-61984 (2025-10-06)
 
@@ -6968,6 +6986,20 @@
 </code>
 
 - [SubZeroHackerz/CVE-2025-62410](https://github.com/SubZeroHackerz/CVE-2025-62410)
+
+### CVE-2025-62481 (2025-10-21)
+
+<code>Vulnerability in the Oracle Marketing product of Oracle E-Business Suite (component: Marketing Administration).  Supported versions that are affected are 12.2.3-12.2.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Marketing.  Successful attacks of this vulnerability can result in takeover of Oracle Marketing. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
+</code>
+
+- [callinston/CVE-2025-62481](https://github.com/callinston/CVE-2025-62481)
+
+### CVE-2025-62506 (2025-10-16)
+
+<code>MinIO is a high-performance object storage system. In all versions prior to RELEASE.2025-10-15T17-29-55Z, a privilege escalation vulnerability allows service accounts and STS (Security Token Service) accounts with restricted session policies to bypass their inline policy restrictions when performing operations on their own account, specifically when creating new service accounts for the same user. The vulnerability exists in the IAM policy validation logic where the code incorrectly relied on the DenyOnly argument when validating session policies for restricted accounts. When a session policy is present, the system should validate that the action is allowed by the session policy, not just that it is not denied. An attacker with valid credentials for a restricted service or STS account can create a new service account for itself without policy restrictions, resulting in a new service account with full parent privileges instead of being restricted by the inline policy. This allows the attacker to access buckets and objects beyond their intended restrictions and modify, delete, or create objects outside their authorized scope. The vulnerability is fixed in version RELEASE.2025-10-15T17-29-55Z.
+</code>
+
+- [yoshino-s/CVE-2025-62506](https://github.com/yoshino-s/CVE-2025-62506)
 
 ### CVE-2025-62518 (2025-10-21)
 
@@ -11198,7 +11230,6 @@
 - [10T4/PoC-Fix-jenkins-rce_CVE-2024-23897](https://github.com/10T4/PoC-Fix-jenkins-rce_CVE-2024-23897)
 - [wjlin0/CVE-2024-23897](https://github.com/wjlin0/CVE-2024-23897)
 - [Vozec/CVE-2024-23897](https://github.com/Vozec/CVE-2024-23897)
-- [R0XDEADBEEF/CVE-2024-23897](https://github.com/R0XDEADBEEF/CVE-2024-23897)
 - [viszsec/CVE-2024-23897](https://github.com/viszsec/CVE-2024-23897)
 - [jopraveen/CVE-2024-23897](https://github.com/jopraveen/CVE-2024-23897)
 - [AbraXa5/Jenkins-CVE-2024-23897](https://github.com/AbraXa5/Jenkins-CVE-2024-23897)
@@ -12872,6 +12903,7 @@
 - [ashutosh0408/Cve-2024-32002-poc](https://github.com/ashutosh0408/Cve-2024-32002-poc)
 - [Dre4m017/fuzzy](https://github.com/Dre4m017/fuzzy)
 - [JoaoLeonello/cve-2024-32002-poc](https://github.com/JoaoLeonello/cve-2024-32002-poc)
+- [mystxcal/cve-2024-32002-demo](https://github.com/mystxcal/cve-2024-32002-demo)
 
 ### CVE-2024-32004 (2024-05-14)
 
@@ -13935,6 +13967,7 @@
 - [fredagsguf/Windows-CVE-2024-38063](https://github.com/fredagsguf/Windows-CVE-2024-38063)
 - [jip-0-0-0-0-0/CVE-2024-38063-scanner](https://github.com/jip-0-0-0-0-0/CVE-2024-38063-scanner)
 - [Skac44/CVE-2024-38063](https://github.com/Skac44/CVE-2024-38063)
+- [akozsentre/CVE-2024-38063](https://github.com/akozsentre/CVE-2024-38063)
 
 ### CVE-2024-38077 (2024-07-09)
 
@@ -15787,7 +15820,6 @@
 - [Cyb3rFr0g/CVE-2024-48990-PoC](https://github.com/Cyb3rFr0g/CVE-2024-48990-PoC)
 - [pentestfunctions/CVE-2024-48990-PoC-Testing](https://github.com/pentestfunctions/CVE-2024-48990-PoC-Testing)
 - [ally-petitt/CVE-2024-48990-Exploit](https://github.com/ally-petitt/CVE-2024-48990-Exploit)
-- [R0XDEADBEEF/CVE-2024-48990](https://github.com/R0XDEADBEEF/CVE-2024-48990)
 - [CyberCrowCC/CVE-2024-48990](https://github.com/CyberCrowCC/CVE-2024-48990)
 - [NullByte-7w7/CVE-2024-48990](https://github.com/NullByte-7w7/CVE-2024-48990)
 - [ten-ops/CVE-2024-48990_needrestart](https://github.com/ten-ops/CVE-2024-48990_needrestart)
@@ -36373,7 +36405,7 @@
 - [srvaccount/CVE-2021-26855-PoC](https://github.com/srvaccount/CVE-2021-26855-PoC)
 - [h4x0r-dz/CVE-2021-26855](https://github.com/h4x0r-dz/CVE-2021-26855)
 - [alt3kx/CVE-2021-26855_PoC](https://github.com/alt3kx/CVE-2021-26855_PoC)
-- [R0XDEADBEEF/CVE-2021-26855](https://github.com/R0XDEADBEEF/CVE-2021-26855)
+- [r0xDB/CVE-2021-26855](https://github.com/r0xDB/CVE-2021-26855)
 - [hackerschoice/CVE-2021-26855](https://github.com/hackerschoice/CVE-2021-26855)
 - [SCS-Labs/HAFNIUM-Microsoft-Exchange-0day](https://github.com/SCS-Labs/HAFNIUM-Microsoft-Exchange-0day)
 - [KotSec/CVE-2021-26855-Scanner](https://github.com/KotSec/CVE-2021-26855-Scanner)
@@ -43205,6 +43237,13 @@
 - [liath/CVE-2020-10977](https://github.com/liath/CVE-2020-10977)
 - [lisp3r/cve-2020-10977-read-and-execute](https://github.com/lisp3r/cve-2020-10977-read-and-execute)
 - [vandycknick/gitlab-cve-2020-10977](https://github.com/vandycknick/gitlab-cve-2020-10977)
+
+### CVE-2020-10987 (2020-07-13)
+
+<code>The goform/setUsbUnload endpoint of Tenda AC15 AC1900 version 15.03.05.19 allows remote attackers to execute arbitrary system commands via the deviceName POST parameter.
+</code>
+
+- [Jaden-Bowers/Tenda-Router-VR-and-Exploit](https://github.com/Jaden-Bowers/Tenda-Router-VR-and-Exploit)
 
 ### CVE-2020-11019 (2020-05-29)
 
