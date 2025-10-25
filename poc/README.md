@@ -251,6 +251,13 @@
 
 - [neverendingsupport/nes-vuetify-cve-2025-1461](https://github.com/neverendingsupport/nes-vuetify-cve-2025-1461)
 
+### CVE-2025-1550 (2025-03-11)
+
+<code>The Keras Model.load_model function permits arbitrary code execution, even with safe_mode=True, through a manually constructed, malicious .keras archive. By altering the config.json file within the archive, an attacker can specify arbitrary Python modules and functions, along with their arguments, to be loaded and executed during model loading.
+</code>
+
+- [ChCh0i/cve-2025-1550](https://github.com/ChCh0i/cve-2025-1550)
+
 ### CVE-2025-1562 (2025-06-18)
 
 <code>The Recover WooCommerce Cart Abandonment, Newsletter, Email Marketing, Marketing Automation By FunnelKit plugin for WordPress is vulnerable to unauthorized arbitrary plugin installation due to a missing capability check on the install_or_activate_addon_plugins() function and a weak nonce hash in all versions up to, and including, 3.5.3. This makes it possible for unauthenticated attackers to install arbitrary plugins on the site that can be leveraged to further infect a vulnerable site.
@@ -584,6 +591,7 @@
 - [EQSTLab/CVE-2025-3248](https://github.com/EQSTLab/CVE-2025-3248)
 - [wand3rlust/CVE-2025-3248](https://github.com/wand3rlust/CVE-2025-3248)
 - [Kiraly07/Demo_CVE-2025-3248](https://github.com/Kiraly07/Demo_CVE-2025-3248)
+- [bambooqj/cve-2025-3248](https://github.com/bambooqj/cve-2025-3248)
 
 ### CVE-2025-3419 (2025-05-08)
 
@@ -1481,7 +1489,6 @@
 - [hexsecteam/CVE-2025-8088-Winrar-Tool](https://github.com/hexsecteam/CVE-2025-8088-Winrar-Tool)
 - [techcorp/CVE-2025-8088-Exploit](https://github.com/techcorp/CVE-2025-8088-Exploit)
 - [Shinkirou789/Cve-2025-8088-WinRar-vulnerability](https://github.com/Shinkirou789/Cve-2025-8088-WinRar-vulnerability)
-- [Osinskitito499/CVE-2025-8088](https://github.com/Osinskitito499/CVE-2025-8088)
 - [hbesljx/CVE-2025-8088-EXP](https://github.com/hbesljx/CVE-2025-8088-EXP)
 - [lucyna77/winrar-exploit](https://github.com/lucyna77/winrar-exploit)
 - [Fathi-MO/POC-CVE-2025-8088](https://github.com/Fathi-MO/POC-CVE-2025-8088)
@@ -1848,7 +1855,11 @@
 
 - [pulsecipher/CVE-2025-10850](https://github.com/pulsecipher/CVE-2025-10850)
 
-### CVE-2025-10874
+### CVE-2025-10874 (2025-10-24)
+
+<code>The Orbit Fox: Duplicate Page, Menu Icons, SVG Support, Cookie Notice, Custom Fonts &amp; More WordPress plugin before 3.0.2 does not limit URLs which may be used for the stock photo import feature, allowing the user to specify arbitrary URLs. This leads to a server-side request forgery as the user may force the server to access any URL of their choosing.
+</code>
+
 - [ryanmroth/Orbit-Fox_SSRF_CVE-2025-10874](https://github.com/ryanmroth/Orbit-Fox_SSRF_CVE-2025-10874)
 
 ### CVE-2025-11001
@@ -3175,6 +3186,7 @@
 
 - [akamai/CVE-2025-27636-Apache-Camel-PoC](https://github.com/akamai/CVE-2025-27636-Apache-Camel-PoC)
 - [enochgitgamefied/CVE-2025-27636-Practical-Lab](https://github.com/enochgitgamefied/CVE-2025-27636-Practical-Lab)
+- [Crystallen1/CVE-2025-27636-demo](https://github.com/Crystallen1/CVE-2025-27636-demo)
 
 ### CVE-2025-27817 (2025-06-10)
 
@@ -3424,13 +3436,6 @@
 
 - [encrypter15/CVE-2025-29824](https://github.com/encrypter15/CVE-2025-29824)
 - [AfanPan/CVE-2025-29824-Exploit](https://github.com/AfanPan/CVE-2025-29824-Exploit)
-
-### CVE-2025-29891 (2025-03-12)
-
-<code>Bypass/Injection vulnerability in Apache Camel.\n\nThis issue affects Apache Camel: from 4.10.0 before 4.10.2, from 4.8.0 before 4.8.5, from 3.10.0 before 3.22.4.\n\nUsers are recommended to upgrade to version 4.10.2 for 4.10.x LTS, 4.8.5 for 4.8.x LTS and 3.22.4 for 3.x releases.\n\nThis vulnerability is present in Camel's default incoming header filter, that allows an attacker to include Camel specific headers that for some Camel components can alter the behaviours such as the camel-bean component, or the camel-exec component.\n\nIf you have Camel applications that are directly connected to the internet via HTTP, then an attacker could include parameters in the HTTP requests that are sent to the Camel application that get translated into headers. \n\nThe headers could be both provided as request parameters for an HTTP methods invocation or as part of the payload of the HTTP methods invocation.\n\nAll the known Camel HTTP component such as camel-servlet, camel-jetty, camel-undertow, camel-platform-http, and camel-netty-http would be vulnerable out of the box.\n\nThis CVE is related to the CVE-2025-27636: while they have the same root cause and are fixed with the same fix, CVE-2025-27636 was assumed to only be exploitable if an attacker could add malicious HTTP headers, while we have now determined that it is also exploitable via HTTP parameters. Like in CVE-2025-27636, exploitation is only possible if the Camel route uses particular vulnerable components.
-</code>
-
-- [Crystallen1/CVE-2025-29891-demo](https://github.com/Crystallen1/CVE-2025-29891-demo)
 
 ### CVE-2025-29927 (2025-03-21)
 
@@ -5106,6 +5111,13 @@
 - [mukesh-610/cve-2025-48384-exploit](https://github.com/mukesh-610/cve-2025-48384-exploit)
 - [mukesh-610/cve-2025-48384](https://github.com/mukesh-610/cve-2025-48384)
 
+### CVE-2025-48385 (2025-07-08)
+
+<code>Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals. When cloning a repository Git knows to optionally fetch a bundle advertised by the remote server, which allows the server-side to offload parts of the clone to a CDN. The Git client does not perform sufficient validation of the advertised bundles, which allows the remote side to perform protocol injection. This protocol injection can cause the client to write the fetched bundle to a location controlled by the adversary. The fetched content is fully controlled by the server, which can in the worst case lead to arbitrary code execution. The use of bundle URIs is not enabled by default and can be controlled by the bundle.heuristic config option. Some cases of the vulnerability require that the adversary is in control of where a repository will be cloned to. This either requires social engineering or a recursive clone with submodules. These cases can thus be avoided by disabling recursive clones. This vulnerability is fixed in v2.43.7, v2.44.4, v2.45.4, v2.46.4, v2.47.3, v2.48.2, v2.49.1, and v2.50.1.
+</code>
+
+- [Nimisha17/Git-clone-CVE-2025-48385](https://github.com/Nimisha17/Git-clone-CVE-2025-48385)
+
 ### CVE-2025-48461 (2025-06-24)
 
 <code>Successful exploitation of the vulnerability could allow an unauthenticated attacker to conduct brute force guessing and account takeover as the session cookies are predictable, potentially allowing the attackers to gain root, admin or user access and reset passwords.
@@ -5738,6 +5750,13 @@
 ### CVE-2025-52097
 - [rwilsonecs/CVE-2025-52097](https://github.com/rwilsonecs/CVE-2025-52097)
 
+### CVE-2025-52099 (2025-10-24)
+
+<code>Integer Overflow vulnerability in SQLite SQLite3 v.3.50.0 allows a remote attacker to cause a denial of service via the setupLookaside function
+</code>
+
+- [SCREAMBBY/CVE-2025-52099](https://github.com/SCREAMBBY/CVE-2025-52099)
+
 ### CVE-2025-52100
 - [changyaoyou/CVE-2025-52100](https://github.com/changyaoyou/CVE-2025-52100)
 
@@ -6212,6 +6231,7 @@
 - [sirredbeard/CVE-2025-55315-repro](https://github.com/sirredbeard/CVE-2025-55315-repro)
 - [RootAid/CVE-2025-55315](https://github.com/RootAid/CVE-2025-55315)
 - [7huukdlnkjkjba/CVE-2025-55315-](https://github.com/7huukdlnkjkjba/CVE-2025-55315-)
+- [jlinebau/CVE-2025-55315-Scanner-Monitor](https://github.com/jlinebau/CVE-2025-55315-Scanner-Monitor)
 
 ### CVE-2025-55349
 - [GoldenTicketLabs/CVE-2025-55349](https://github.com/GoldenTicketLabs/CVE-2025-55349)
@@ -6430,6 +6450,9 @@
 </code>
 
 - [zer0t0/CVE-2025-56383-Proof-of-Concept](https://github.com/zer0t0/CVE-2025-56383-Proof-of-Concept)
+
+### CVE-2025-56399
+- [Theethat-Thamwasin/CVE-2025-56399](https://github.com/Theethat-Thamwasin/CVE-2025-56399)
 
 ### CVE-2025-56435 (2025-09-03)
 
@@ -6800,6 +6823,9 @@
 
 - [suriryuk/cve-2025-59934](https://github.com/suriryuk/cve-2025-59934)
 
+### CVE-2025-60349
+- [djackreuter/CVE-2025-60349](https://github.com/djackreuter/CVE-2025-60349)
+
 ### CVE-2025-60374 (2025-10-14)
 
 <code>Stored Cross-Site Scripting (XSS) in Perfex CRM chatbot before 3.3.1 allows attackers to inject arbitrary HTML/JavaScript. The payload is executed in the browsers of users viewing the chat, resulting in client-side code execution, potential session token theft, and other malicious actions. A different vulnerability than CVE-2024-8867.
@@ -6874,6 +6900,9 @@
 </code>
 
 - [Shenal01/CVE-2025-60880](https://github.com/Shenal01/CVE-2025-60880)
+
+### CVE-2025-61155
+- [pollotherunner/CVE-2025-61155](https://github.com/pollotherunner/CVE-2025-61155)
 
 ### CVE-2025-61183 (2025-10-08)
 
@@ -8886,7 +8915,7 @@
 <code>A flaw was found in openshift/builder. This vulnerability allows command injection via path traversal, where a malicious user can execute arbitrary commands on the OpenShift node running the builder container. When using the “Docker” strategy, executable files inside the privileged build container can be overridden using the `spec.source.secrets.secret.destinationDir` attribute of the `BuildConfig` definition. An attacker running code in a privileged container could escalate their permissions on the node running the container.
 </code>
 
-- [tevelsho/cve-2024-7387](https://github.com/tevelsho/cve-2024-7387)
+- [0xSigSegv0x00/cve-2024-7387](https://github.com/0xSigSegv0x00/cve-2024-7387)
 
 ### CVE-2024-7399 (2024-08-09)
 
@@ -9347,13 +9376,6 @@
 </code>
 
 - [ghostwirez/CVE-2024-9326-PoC](https://github.com/ghostwirez/CVE-2024-9326-PoC)
-
-### CVE-2024-9348 (2024-10-16)
-
-<code>Docker Desktop before v4.34.3 allows RCE via unsanitized GitHub source link in Build view.
-</code>
-
-- [Nimisha17/CVE-2024-9348-poc](https://github.com/Nimisha17/CVE-2024-9348-poc)
 
 ### CVE-2024-9441 (2024-10-02)
 
@@ -15882,7 +15904,6 @@
 - [Glitch-ao/SOC335-CVE-2024-49138-Exploitation-Detected](https://github.com/Glitch-ao/SOC335-CVE-2024-49138-Exploitation-Detected)
 - [1rhino2/SCRAPPED](https://github.com/1rhino2/SCRAPPED)
 - [onixgod/SOC335-Event-ID-313-CVE-2024-49138-Exploitation-Detected--Lest-Defend-Writeup](https://github.com/onixgod/SOC335-Event-ID-313-CVE-2024-49138-Exploitation-Detected--Lest-Defend-Writeup)
-- [codetronik/CVE-2024-49138](https://github.com/codetronik/CVE-2024-49138)
 
 ### CVE-2024-49328 (2024-10-20)
 
@@ -19845,6 +19866,7 @@
 - [Onedy1703/CVE-2023-22515-Confluence](https://github.com/Onedy1703/CVE-2023-22515-Confluence)
 - [killvxk/CVE-2023-22515-joaoviictorti](https://github.com/killvxk/CVE-2023-22515-joaoviictorti)
 - [vivigotnotime/CVE-2023-22515-Exploit-Script](https://github.com/vivigotnotime/CVE-2023-22515-Exploit-Script)
+- [Arkha-Corvus/LetsDefend-SOC235-Atlassian-Confluence-Broken-Access-Control-0-Day-CVE-2023-22515-EventID-197](https://github.com/Arkha-Corvus/LetsDefend-SOC235-Atlassian-Confluence-Broken-Access-Control-0-Day-CVE-2023-22515-EventID-197)
 
 ### CVE-2023-22518 (2023-10-31)
 
@@ -43508,6 +43530,7 @@
 </code>
 
 - [pberba/CVE-2020-11978](https://github.com/pberba/CVE-2020-11978)
+- [stuxbench/mlflow-cve-2020-11978](https://github.com/stuxbench/mlflow-cve-2020-11978)
 
 ### CVE-2020-11984 (2020-08-07)
 
@@ -48315,6 +48338,7 @@
 - [jas9reet/CVE-2019-11043](https://github.com/jas9reet/CVE-2019-11043)
 - [bayazid-bit/CVE-2019-11043-](https://github.com/bayazid-bit/CVE-2019-11043-)
 - [a1ex-var1amov/ctf-cve-2019-11043](https://github.com/a1ex-var1amov/ctf-cve-2019-11043)
+- [CodeHex083/phuip-fpizdam](https://github.com/CodeHex083/phuip-fpizdam)
 
 ### CVE-2019-11061 (2019-08-29)
 
