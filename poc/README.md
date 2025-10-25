@@ -882,6 +882,13 @@
 
 - [sahici/CVE-2025-4784](https://github.com/sahici/CVE-2025-4784)
 
+### CVE-2025-4796 (2025-08-08)
+
+<code>The Eventin plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 4.0.34. This is due to the plugin not properly validating a user's identity or capability prior to updating their details like email in the 'Eventin\Speaker\Api\SpeakerController::update_item' function. This makes it possible for unauthenticated attackers with contributor-level and above permissions to change arbitrary user's email addresses, including administrators, and leverage that to reset the user's password and gain access to their account.
+</code>
+
+- [Nxploited/CVE-2025-4796](https://github.com/Nxploited/CVE-2025-4796)
+
 ### CVE-2025-4822 (2025-07-24)
 
 <code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Bayraktar Solar Energies ScadaWatt Otopilot allows SQL Injection.This issue affects ScadaWatt Otopilot: before 27.05.2025.
@@ -5117,6 +5124,7 @@
 </code>
 
 - [Nimisha17/Git-clone-CVE-2025-48385](https://github.com/Nimisha17/Git-clone-CVE-2025-48385)
+- [Mitchellzhou1/CVE-2025-48385-PoC](https://github.com/Mitchellzhou1/CVE-2025-48385-PoC)
 
 ### CVE-2025-48461 (2025-06-24)
 
@@ -6764,6 +6772,7 @@
 </code>
 
 - [keeganparr1/CVE-2025-59287-hawktrace](https://github.com/keeganparr1/CVE-2025-59287-hawktrace)
+- [jiansiting/CVE-2025-59287](https://github.com/jiansiting/CVE-2025-59287)
 
 ### CVE-2025-59342 (2025-09-17)
 
