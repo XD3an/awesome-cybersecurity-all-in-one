@@ -726,6 +726,7 @@
 
 - [Nxploited/CVE-2025-4334](https://github.com/Nxploited/CVE-2025-4334)
 - [0xgh057r3c0n/CVE-2025-4334](https://github.com/0xgh057r3c0n/CVE-2025-4334)
+- [vinodwick/CVE-2025-4334](https://github.com/vinodwick/CVE-2025-4334)
 
 ### CVE-2025-4336 (2025-05-24)
 
@@ -1749,6 +1750,13 @@
 
 - [MooseLoveti/Trinity-Audio-CVE-Report2](https://github.com/MooseLoveti/Trinity-Audio-CVE-Report2)
 
+### CVE-2025-9983 (2025-09-22)
+
+<code>GALAYOU G2 cameras stream video output via RTSP streams. By default these streams are protected by randomly generated credentials. However these credentials are not required to access the stream. Changing these values does not change camera's behavior.\n\nThe vendor did not respond in any way. Only version 11.100001.01.28 was tested, other versions might also be vulnerable.
+</code>
+
+- [sohaibeb/CVE-2025-9983](https://github.com/sohaibeb/CVE-2025-9983)
+
 ### CVE-2025-9998 (2025-09-05)
 
 <code>The sequence of packets received by a Networking server are not correctly checked.\n\nAn attacker could exploit this vulnerability to send specially crafted messages to force the application to stop.
@@ -2592,6 +2600,7 @@
 - [gotr00t0day/CVE-2025-24893](https://github.com/gotr00t0day/CVE-2025-24893)
 - [ibrahmsql/CVE-2025-24893](https://github.com/ibrahmsql/CVE-2025-24893)
 - [Yukik4z3/CVE-2025-24893](https://github.com/Yukik4z3/CVE-2025-24893)
+- [rvizx/CVE-2025-24893](https://github.com/rvizx/CVE-2025-24893)
 
 ### CVE-2025-24963 (2025-02-04)
 
@@ -4111,6 +4120,7 @@
 - [dr4x-c0d3r/sudo-chroot](https://github.com/dr4x-c0d3r/sudo-chroot)
 - [dr4xp/sudo-chroot](https://github.com/dr4xp/sudo-chroot)
 - [robbin0919/CVE-2025-32463](https://github.com/robbin0919/CVE-2025-32463)
+- [DensuLabs/CVE-2025-32463](https://github.com/DensuLabs/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -6773,6 +6783,7 @@
 
 - [keeganparr1/CVE-2025-59287-hawktrace](https://github.com/keeganparr1/CVE-2025-59287-hawktrace)
 - [jiansiting/CVE-2025-59287](https://github.com/jiansiting/CVE-2025-59287)
+- [garvitv14/CVE-2025-59287](https://github.com/garvitv14/CVE-2025-59287)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -6934,6 +6945,9 @@
 
 - [eGkritsis/CVE-2025-61303](https://github.com/eGkritsis/CVE-2025-61303)
 
+### CVE-2025-61304
+- [pentastic-be/CVE-2025-61304](https://github.com/pentastic-be/CVE-2025-61304)
+
 ### CVE-2025-61319 (2025-10-10)
 
 <code>ReNgine thru 2.2.0 is vulnerable to a Stored Cross-Site Scripting (XSS) vulnerability in the Vulnerabilities module. When scanning a target with an XSS payload, the unsanitized payload is rendered in the ReNgine web UI, resulting in arbitrary JavaScript execution in the victim's browser. This can be abused to steal session cookies, perform unauthorized actions, or compromise the ReNgine administrator's account.
@@ -6981,6 +6995,7 @@
 <code>Vulnerability in the Oracle Concurrent Processing product of Oracle E-Business Suite (component: BI Publisher Integration).  Supported versions that are affected are 12.2.3-12.2.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Concurrent Processing.  Successful attacks of this vulnerability can result in takeover of Oracle Concurrent Processing. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
 </code>
 
+- [siddu7575/CVE-2025-61882-CVE-2025-61884](https://github.com/siddu7575/CVE-2025-61882-CVE-2025-61884)
 - [rxerium/CVE-2025-61882-CVE-2025-61884](https://github.com/rxerium/CVE-2025-61882-CVE-2025-61884)
 - [watchtowrlabs/watchTowr-vs-Oracle-E-Business-Suite-CVE-2025-61882](https://github.com/watchtowrlabs/watchTowr-vs-Oracle-E-Business-Suite-CVE-2025-61882)
 - [Sachinart/CVE-2025-61882](https://github.com/Sachinart/CVE-2025-61882)
@@ -10000,6 +10015,7 @@
 
 - [themirze/cve-2024-12084](https://github.com/themirze/cve-2024-12084)
 - [rxerium/CVE-2024-12084](https://github.com/rxerium/CVE-2024-12084)
+- [0xSigSegv0x00/cve-2024-12084](https://github.com/0xSigSegv0x00/cve-2024-12084)
 
 ### CVE-2024-12085 (2025-01-14)
 
@@ -11265,6 +11281,7 @@
 - [10T4/PoC-Fix-jenkins-rce_CVE-2024-23897](https://github.com/10T4/PoC-Fix-jenkins-rce_CVE-2024-23897)
 - [wjlin0/CVE-2024-23897](https://github.com/wjlin0/CVE-2024-23897)
 - [Vozec/CVE-2024-23897](https://github.com/Vozec/CVE-2024-23897)
+- [r0xDB/CVE-2024-23897](https://github.com/r0xDB/CVE-2024-23897)
 - [viszsec/CVE-2024-23897](https://github.com/viszsec/CVE-2024-23897)
 - [jopraveen/CVE-2024-23897](https://github.com/jopraveen/CVE-2024-23897)
 - [AbraXa5/Jenkins-CVE-2024-23897](https://github.com/AbraXa5/Jenkins-CVE-2024-23897)
@@ -14738,7 +14755,7 @@
 - [HimmeL-Byte/CVE-2024-41570-SSRF-RCE](https://github.com/HimmeL-Byte/CVE-2024-41570-SSRF-RCE)
 - [thisisveryfunny/CVE-2024-41570-Havoc-C2-RCE](https://github.com/thisisveryfunny/CVE-2024-41570-Havoc-C2-RCE)
 - [sebr-dev/Havoc-C2-SSRF-to-RCE](https://github.com/sebr-dev/Havoc-C2-SSRF-to-RCE)
-- [kit4py/CVE-2024-41570](https://github.com/kit4py/CVE-2024-41570)
+- [diemoeve/CVE-2024-41570](https://github.com/diemoeve/CVE-2024-41570)
 
 ### CVE-2024-41628 (2024-07-26)
 
@@ -39627,7 +39644,7 @@
 - [hxlxmj/Grafxploit](https://github.com/hxlxmj/Grafxploit)
 - [0xSAZZAD/Grafana-CVE-2021-43798](https://github.com/0xSAZZAD/Grafana-CVE-2021-43798)
 - [wezoomagency/GrafXploit](https://github.com/wezoomagency/GrafXploit)
-- [dav1dsec/Grafana-8.3-Directory-Traversal](https://github.com/dav1dsec/Grafana-8.3-Directory-Traversal)
+- [davidrxchester/Grafana-8.3-Directory-Traversal](https://github.com/davidrxchester/Grafana-8.3-Directory-Traversal)
 - [ravi5hanka/CVE-2021-43798-Exploit-for-Windows-and-Linux](https://github.com/ravi5hanka/CVE-2021-43798-Exploit-for-Windows-and-Linux)
 - [monke443/CVE-2021-43798](https://github.com/monke443/CVE-2021-43798)
 - [suljov/Grafana-LFI-exploit](https://github.com/suljov/Grafana-LFI-exploit)
@@ -47516,6 +47533,13 @@
 
 - [random-robbie/cve-2019-6715](https://github.com/random-robbie/cve-2019-6715)
 - [spyata123/W3TotalChache](https://github.com/spyata123/W3TotalChache)
+
+### CVE-2019-7069 (2019-05-24)
+
+<code>Adobe Acrobat and Reader versions 2019.010.20069 and earlier, 2019.010.20069 and earlier, 2017.011.30113 and earlier version, and 2015.006.30464 and earlier have a type confusion vulnerability. Successful exploitation could lead to arbitrary code execution .
+</code>
+
+- [CaelumIsMe/CVE-2019-7069-POC](https://github.com/CaelumIsMe/CVE-2019-7069-POC)
 
 ### CVE-2019-7139 (2019-04-10)
 
