@@ -535,6 +535,13 @@
 
 - [murataydemir/AWS-SAM-CLI-Vulnerabilities](https://github.com/murataydemir/AWS-SAM-CLI-Vulnerabilities)
 
+### CVE-2025-3052 (2025-06-10)
+
+<code>An arbitrary write vulnerability in Microsoft signed UEFI firmware allows for code execution of untrusted software. This allows an attacker to control its value, leading to arbitrary memory writes, including modification of critical firmware settings stored in NVRAM. Exploiting this vulnerability could enable security bypasses, persistence mechanisms, or full system compromise.
+</code>
+
+- [yonatanasd232132/talkingBen](https://github.com/yonatanasd232132/talkingBen)
+
 ### CVE-2025-3054 (2025-06-05)
 
 <code>The WP User Frontend Pro plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the upload_files() function in all versions up to, and including, 4.1.3. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. Please note that this requires the 'Private Message' module to be enabled and the Business version of the PRO software to be in use.
@@ -1196,6 +1203,7 @@
 </code>
 
 - [ChaseHCS/CVE-2025-6514](https://github.com/ChaseHCS/CVE-2025-6514)
+- [Cyberency/CVE-2025-6514](https://github.com/Cyberency/CVE-2025-6514)
 
 ### CVE-2025-6543 (2025-06-25)
 
@@ -1750,6 +1758,13 @@
 
 - [MooseLoveti/Trinity-Audio-CVE-Report2](https://github.com/MooseLoveti/Trinity-Audio-CVE-Report2)
 
+### CVE-2025-9967 (2025-10-15)
+
+<code>The Orion SMS OTP Verification plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 1.1.7. This is due to the plugin not properly validating a user's identity prior to updating their password. This makes it possible for unauthenticated attackers to change arbitrary user's password to a one-time password if the attacker knows the user's phone number
+</code>
+
+- [glitchhawks/CVE-2025-9967](https://github.com/glitchhawks/CVE-2025-9967)
+
 ### CVE-2025-9983 (2025-09-22)
 
 <code>GALAYOU G2 cameras stream video output via RTSP streams. By default these streams are protected by randomly generated credentials. However these credentials are not required to access the stream. Changing these values does not change camera's behavior.\n\nThe vendor did not respond in any way. Only version 11.100001.01.28 was tested, other versions might also be vulnerable.
@@ -1938,6 +1953,13 @@
 </code>
 
 - [shinigami-777/PoC_CVE-2025-11579](https://github.com/shinigami-777/PoC_CVE-2025-11579)
+
+### CVE-2025-11832 (2025-10-15)
+
+<code>Allocation of Resources Without Limits or Throttling vulnerability in Azure Access Technology BLU-IC2, Azure Access Technology BLU-IC4 allows Flooding.This issue affects BLU-IC2: through 1.19.5; BLU-IC4: through 1.19.5.
+</code>
+
+- [blackhatlegend/CVE-2025-11832](https://github.com/blackhatlegend/CVE-2025-11832)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -5320,6 +5342,7 @@
 </code>
 
 - [silentexploitexe/CVE-2025-49553](https://github.com/silentexploitexe/CVE-2025-49553)
+- [glitchhawks/CVE-2025-49553](https://github.com/glitchhawks/CVE-2025-49553)
 
 ### CVE-2025-49596 (2025-06-13)
 
@@ -5898,6 +5921,9 @@
 
 - [kevinbackhouse/DjVuLibre-poc-CVE-2025-53367](https://github.com/kevinbackhouse/DjVuLibre-poc-CVE-2025-53367)
 
+### CVE-2025-53533
+- [moezbouzayani9/Pi-hole-XSS-CVE-2025-53533](https://github.com/moezbouzayani9/Pi-hole-XSS-CVE-2025-53533)
+
 ### CVE-2025-53547 (2025-07-08)
 
 <code>Helm is a package manager for Charts for Kubernetes. Prior to 3.18.4, a specially crafted Chart.yaml file along with a specially linked Chart.lock file can lead to local code execution when dependencies are updated. Fields in a Chart.yaml file, that are carried over to a Chart.lock file when dependencies are updated and this file is written, can be crafted in a way that can cause execution if that same content were in a file that is executed (e.g., a bash.rc file or shell script). If the Chart.lock file is symlinked to one of these files updating dependencies will write the lock file content to the symlinked file. This can lead to unwanted execution. Helm warns of the symlinked file but did not stop execution due to symlinking. This issue has been resolved in Helm v3.18.4.
@@ -6224,7 +6250,6 @@
 </code>
 
 - [hunters-sec/CVE-2025-55188-7z-exploit](https://github.com/hunters-sec/CVE-2025-55188-7z-exploit)
-- [san8383/CVE-2025-55188-7z-POC](https://github.com/san8383/CVE-2025-55188-7z-POC)
 - [lunbun/CVE-2025-55188](https://github.com/lunbun/CVE-2025-55188)
 
 ### CVE-2025-55234 (2025-09-09)
@@ -6252,6 +6277,7 @@
 - [RootAid/CVE-2025-55315](https://github.com/RootAid/CVE-2025-55315)
 - [7huukdlnkjkjba/CVE-2025-55315-](https://github.com/7huukdlnkjkjba/CVE-2025-55315-)
 - [jlinebau/CVE-2025-55315-Scanner-Monitor](https://github.com/jlinebau/CVE-2025-55315-Scanner-Monitor)
+- [blackquantas/CVE-2025-55315](https://github.com/blackquantas/CVE-2025-55315)
 
 ### CVE-2025-55349
 - [GoldenTicketLabs/CVE-2025-55349](https://github.com/GoldenTicketLabs/CVE-2025-55349)
@@ -7015,6 +7041,7 @@
 </code>
 
 - [B1ack4sh/Blackash-CVE-2025-61884](https://github.com/B1ack4sh/Blackash-CVE-2025-61884)
+- [shinyhunt/CVE-2025-61884](https://github.com/shinyhunt/CVE-2025-61884)
 
 ### CVE-2025-61932 (2025-10-20)
 
@@ -7038,6 +7065,13 @@
 </code>
 
 - [monzaviman/CVE-2025-62168](https://github.com/monzaviman/CVE-2025-62168)
+
+### CVE-2025-62376 (2025-10-14)
+
+<code>pwn.college DOJO is an education platform for learning cybersecurity. In versions up to and including commit 781d91157cfc234a434d0bab45cbcf97894c642e, the /workspace endpoint contains an improper authentication vulnerability that allows an attacker to access any active Windows VM without proper authorization. The vulnerability occurs in the view_desktop function where the user is retrieved via a URL parameter without verifying that the requester has administrative privileges. An attacker can supply any user ID and arbitrary password in the request parameters to impersonate another user. When requesting a Windows desktop service, the function does not validate the supplied password before generating access credentials, allowing the attacker to obtain an iframe source URL that grants full access to the target user's Windows VM. This impacts all users with active Windows VMs, as an attacker can access and modify data on the Windows machine and in the home directory of the associated Linux machine via the Z: drive. This issue has been patched in commit 467db0b9ea0d9a929dc89b41f6eb59f7cfc68bef. No known workarounds exist.
+</code>
+
+- [ghostroots/CVE-2025-62376](https://github.com/ghostroots/CVE-2025-62376)
 
 ### CVE-2025-62410 (2025-10-15)
 
@@ -11312,6 +11346,7 @@
 - [Fineken/Jenkins-CVE-2024-23897-Lab](https://github.com/Fineken/Jenkins-CVE-2024-23897-Lab)
 - [amalpvatayam67/day03-jenkins-23897](https://github.com/amalpvatayam67/day03-jenkins-23897)
 - [hybinn/CVE-2024-23897](https://github.com/hybinn/CVE-2024-23897)
+- [aadi0258/Exploit-CVE-2024-23897](https://github.com/aadi0258/Exploit-CVE-2024-23897)
 
 ### CVE-2024-23898 (2024-01-24)
 
@@ -12762,6 +12797,7 @@
 - [agg23/cve-2024-31317](https://github.com/agg23/cve-2024-31317)
 - [WebLDix/CVE-2024-31317-PoC-Deployer](https://github.com/WebLDix/CVE-2024-31317-PoC-Deployer)
 - [rifting/Zygotroller](https://github.com/rifting/Zygotroller)
+- [wqry085/PoC-Deployer-System](https://github.com/wqry085/PoC-Deployer-System)
 
 ### CVE-2024-31319 (2024-07-09)
 
@@ -25937,6 +25973,9 @@
 
 - [brandon-t-elliott/CVE-2023-49438](https://github.com/brandon-t-elliott/CVE-2023-49438)
 
+### CVE-2023-49440
+- [KernelCipher/CVE-2023-49440-POC](https://github.com/KernelCipher/CVE-2023-49440-POC)
+
 ### CVE-2023-49471 (2024-01-10)
 
 <code>Blind Server-Side Request Forgery (SSRF) vulnerability in karlomikus Bar Assistant before version 3.2.0 does not validate a parameter before making a request through Image::make(), which could allow authenticated remote attackers to execute arbitrary code.
@@ -35028,7 +35067,6 @@
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
 - [cspshivam/cve-2021-4034](https://github.com/cspshivam/cve-2021-4034)
-- [DanaEpp/pwncat_pwnkit](https://github.com/DanaEpp/pwncat_pwnkit)
 - [x04000/CVE-2021-4034](https://github.com/x04000/CVE-2021-4034)
 - [x04000/AutoPwnkit](https://github.com/x04000/AutoPwnkit)
 - [hohn/codeql-sample-polkit](https://github.com/hohn/codeql-sample-polkit)
@@ -40167,6 +40205,7 @@
 - [qw3rtyou/CVE-2021-44228_dockernize](https://github.com/qw3rtyou/CVE-2021-44228_dockernize)
 - [yadavmukesh/Log4Shell-vulnerability-CVE-2021-44228-](https://github.com/yadavmukesh/Log4Shell-vulnerability-CVE-2021-44228-)
 - [tpdlshdmlrkfmcla/Log4shell](https://github.com/tpdlshdmlrkfmcla/Log4shell)
+- [timothyjxhn/DeliberatelyVulnerableWebApp](https://github.com/timothyjxhn/DeliberatelyVulnerableWebApp)
 - [khaidtraivch/CVE-2021-44228-Log4Shell-](https://github.com/khaidtraivch/CVE-2021-44228-Log4Shell-)
 - [Fauzan-Aldi/Log4j-_Vulnerability](https://github.com/Fauzan-Aldi/Log4j-_Vulnerability)
 - [SerpilRivas/log4shell-homework9](https://github.com/SerpilRivas/log4shell-homework9)
@@ -53245,6 +53284,7 @@
 - [makmour/open-ssh-user-enumeration](https://github.com/makmour/open-ssh-user-enumeration)
 - [Alph4Sec/ssh_enum_py](https://github.com/Alph4Sec/ssh_enum_py)
 - [anonymous121029034720384234234/py-network-scanner](https://github.com/anonymous121029034720384234234/py-network-scanner)
+- [jubeenshah/CVE-2018-15473-Exploit](https://github.com/jubeenshah/CVE-2018-15473-Exploit)
 
 ### CVE-2018-15499 (2018-08-24)
 
@@ -54921,6 +54961,7 @@
 - [Nithylesh/web-application-firewall-](https://github.com/Nithylesh/web-application-firewall-)
 - [kloutkake/CVE-2017-5638-PoC](https://github.com/kloutkake/CVE-2017-5638-PoC)
 - [Xernary/CVE-2017-5638-POC](https://github.com/Xernary/CVE-2017-5638-POC)
+- [timothyjxhn/DeliberatelyVulnerableWebApp](https://github.com/timothyjxhn/DeliberatelyVulnerableWebApp)
 - [toothbrushsoapflannelbiscuits/cve-2017-5638](https://github.com/toothbrushsoapflannelbiscuits/cve-2017-5638)
 - [haxerr9/CVE-2017-5638](https://github.com/haxerr9/CVE-2017-5638)
 - [QHxDr-dz/CVE-2017-5638](https://github.com/QHxDr-dz/CVE-2017-5638)
