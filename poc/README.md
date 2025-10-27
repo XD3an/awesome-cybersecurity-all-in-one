@@ -2106,6 +2106,13 @@
 - [ZzN1NJ4/CVE-2025-22131-PoC](https://github.com/ZzN1NJ4/CVE-2025-22131-PoC)
 - [s0ck37/CVE-2025-22131-POC](https://github.com/s0ck37/CVE-2025-22131-POC)
 
+### CVE-2025-22167 (2025-10-22)
+
+<code>This High severity Path Traversal (Arbitrary Write) vulnerability was introduced in versions: 9.12.0, 10.3.0 and remain present in 11.0.0 of Jira Software Data Center and Server. This Path Traversal (Arbitrary Write) vulnerability, with a CVSS Score of 8.7, allows an attacker to modify any filesystem path writable by the Jira JVM process. Atlassian recommends that Jira Software Data Center and Server customers upgrade to the latest version; if you are unable to do so, upgrade your instance to one of the specified supported fixed versions:\r\n Jira Software Data Center and Server 9.12: Upgrade to a release greater than or equal to 9.12.28\r\n Jira Software Data Center and Server 10.3: Upgrade to a release greater than or equal to 10.3.12\r\n Jira Software Data Center and Server 11.0: Upgrade to a release greater than or equal to 11.1.0\r\n\r\nSee the release notes. You can download the latest version of Jira Software Data Center and Server from the download center. This vulnerability was reported via our Atlassian (Internal) program.
+</code>
+
+- [issamjr/CVE-2025-22167](https://github.com/issamjr/CVE-2025-22167)
+
 ### CVE-2025-22223 (2025-03-24)
 
 <code>Spring Security 6.4.0 - 6.4.3 may not correctly locate method security annotations on parameterized types or methods. This may cause an authorization bypass. \n\nYou are not affected if you are not using @EnableMethodSecurity, or\nyou do not have method security annotations on parameterized types or methods, or all method security annotations are attached to target methods
@@ -6531,6 +6538,9 @@
 
 - [Kov404/CVE-2025-56515](https://github.com/Kov404/CVE-2025-56515)
 
+### CVE-2025-56521
+- [Dong-hui-li/CVE-2025-56521andCVE-2025-56522](https://github.com/Dong-hui-li/CVE-2025-56521andCVE-2025-56522)
+
 ### CVE-2025-56605
 - [Userr404/CVE-2025-56605](https://github.com/Userr404/CVE-2025-56605)
 
@@ -6812,6 +6822,7 @@
 - [keeganparr1/CVE-2025-59287-hawktrace](https://github.com/keeganparr1/CVE-2025-59287-hawktrace)
 - [jiansiting/CVE-2025-59287](https://github.com/jiansiting/CVE-2025-59287)
 - [garvitv14/CVE-2025-59287](https://github.com/garvitv14/CVE-2025-59287)
+- [0xBruno/WSUSploit.NET](https://github.com/0xBruno/WSUSploit.NET)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -39067,7 +39078,7 @@
 - [ashique-thaha/CVE-2021-41773-POC](https://github.com/ashique-thaha/CVE-2021-41773-POC)
 - [khaidtraivch/CVE-2021-41773-Apache-2.4.49-](https://github.com/khaidtraivch/CVE-2021-41773-Apache-2.4.49-)
 - [JIYUN02/cve-2021-41773](https://github.com/JIYUN02/cve-2021-41773)
-- [AzK-os-dev/CVE-2021-41773](https://github.com/AzK-os-dev/CVE-2021-41773)
+- [AzkOsDev/CVE-2021-41773](https://github.com/AzkOsDev/CVE-2021-41773)
 - [CyberQuestor-infosec/CVE-2021-41773-Apache_2.4.49-Path-traversal-to-RCE](https://github.com/CyberQuestor-infosec/CVE-2021-41773-Apache_2.4.49-Path-traversal-to-RCE)
 - [psibot/apache-vulnerable](https://github.com/psibot/apache-vulnerable)
 - [blu3ming/PoC-CVE-2021-41773](https://github.com/blu3ming/PoC-CVE-2021-41773)
@@ -45935,6 +45946,7 @@
 - [ar2o3/CVE-2020-29607](https://github.com/ar2o3/CVE-2020-29607)
 - [0xN7y/CVE-2020-29607](https://github.com/0xN7y/CVE-2020-29607)
 - [Alienfader/CVE-2020-29607](https://github.com/Alienfader/CVE-2020-29607)
+- [CaelumIsMe/CVE-2020-29607-POC](https://github.com/CaelumIsMe/CVE-2020-29607-POC)
 
 ### CVE-2020-29661 (2020-12-09)
 
