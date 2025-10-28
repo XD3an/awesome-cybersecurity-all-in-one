@@ -1223,7 +1223,7 @@
 - [gmh5225/CVE-2025-6554-2](https://github.com/gmh5225/CVE-2025-6554-2)
 - [PwnToday/CVE-2025-6554](https://github.com/PwnToday/CVE-2025-6554)
 - [ghostn4444/POC-CVE-2025-6554](https://github.com/ghostn4444/POC-CVE-2025-6554)
-- [9Insomnie/CVE-2025-6554](https://github.com/9Insomnie/CVE-2025-6554)
+- [LordBheem/CVE-2025-6554](https://github.com/LordBheem/CVE-2025-6554)
 - [mistymntncop/CVE-2025-6554](https://github.com/mistymntncop/CVE-2025-6554)
 - [jopraveen/CVE-2025-6554](https://github.com/jopraveen/CVE-2025-6554)
 
@@ -4128,7 +4128,6 @@
 - [morgenm/sudo-chroot-CVE-2025-32463](https://github.com/morgenm/sudo-chroot-CVE-2025-32463)
 - [MohamedKarrab/CVE-2025-32463](https://github.com/MohamedKarrab/CVE-2025-32463)
 - [dbarquero/cve-2025-32463-lab](https://github.com/dbarquero/cve-2025-32463-lab)
-- [9Insomnie/CVE-2025-32463](https://github.com/9Insomnie/CVE-2025-32463)
 - [krypton-0x00/CVE-2025-32463-Chwoot-POC](https://github.com/krypton-0x00/CVE-2025-32463-Chwoot-POC)
 - [Floodnut/CVE-2025-32463](https://github.com/Floodnut/CVE-2025-32463)
 - [Rajneeshkarya/CVE-2025-32463](https://github.com/Rajneeshkarya/CVE-2025-32463)
@@ -6843,6 +6842,7 @@
 - [tecxx/CVE-2025-59287-WSUS](https://github.com/tecxx/CVE-2025-59287-WSUS)
 - [RadzaRr/WSUSResponder](https://github.com/RadzaRr/WSUSResponder)
 - [mubix/Find-WSUS](https://github.com/mubix/Find-WSUS)
+- [mrk336/Breaking-the-Update-Chain-Inside-CVE-2025-59287-and-the-WSUS-RCE-Threat](https://github.com/mrk336/Breaking-the-Update-Chain-Inside-CVE-2025-59287-and-the-WSUS-RCE-Threat)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -7082,8 +7082,8 @@
 - [MindflareX/CVE-2025-61882-POC](https://github.com/MindflareX/CVE-2025-61882-POC)
 - [AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit](https://github.com/AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit)
 - [BattalionX/http-oracle-ebs-cve-2025-61882.nse](https://github.com/BattalionX/http-oracle-ebs-cve-2025-61882.nse)
-- [godnish/CVE-2025-61882](https://github.com/godnish/CVE-2025-61882)
 - [AshrafZaryouh/CVE-2025-61882-Executive-Summary](https://github.com/AshrafZaryouh/CVE-2025-61882-Executive-Summary)
+- [GhoStZA-debug/CVE-2025-61882](https://github.com/GhoStZA-debug/CVE-2025-61882)
 
 ### CVE-2025-61884 (2025-10-12)
 
@@ -20763,6 +20763,7 @@
 - [jakabakos/CVE-2023-26360-adobe-coldfusion-rce-exploit](https://github.com/jakabakos/CVE-2023-26360-adobe-coldfusion-rce-exploit)
 - [CuriousLearnerDev/ColdFusion_EXp](https://github.com/CuriousLearnerDev/ColdFusion_EXp)
 - [issamjr/CVE-2023-26360](https://github.com/issamjr/CVE-2023-26360)
+- [H3rm1tR3b0rn/CVE-2023-26360-RCE](https://github.com/H3rm1tR3b0rn/CVE-2023-26360-RCE)
 
 ### CVE-2023-26469 (2023-08-17)
 
