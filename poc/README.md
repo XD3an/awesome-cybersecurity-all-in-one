@@ -1723,6 +1723,13 @@
 
 - [Kamgreen50/STIG-Edge-RCE-CVE2025-9478](https://github.com/Kamgreen50/STIG-Edge-RCE-CVE2025-9478)
 
+### CVE-2025-9519 (2025-09-04)
+
+<code>The Easy Timer plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 4.2.1 via the plugin's shortcodes. This is due to insufficient restriction of shortcode attributes. This makes it possible for authenticated attackers, with Editor-level access and above, to execute code on the server.
+</code>
+
+- [Nimisha17/Poc-CVE-2025-9519](https://github.com/Nimisha17/Poc-CVE-2025-9519)
+
 ### CVE-2025-9728 (2025-08-31)
 
 <code>Es wurde eine Schwachstelle in givanz Vvveb 1.0.7.2 entdeckt. Betroffen ist eine unbekannte Funktion der Datei app/template/user/login.tpl. Durch die Manipulation des Arguments Email/Password mit unbekannten Daten kann eine cross site scripting-Schwachstelle ausgenutzt werden. Ein Angriff ist aus der Distanz möglich. Der Patch trägt den Namen bbd4c42c66ab818142240348173a669d1d2537fe. Es wird geraten, einen Patch zu installieren, um dieses Problem zu lösen.
@@ -1939,6 +1946,7 @@
 </code>
 
 - [DExplo1ted/CVE-2025-11534-POC](https://github.com/DExplo1ted/CVE-2025-11534-POC)
+- [ZeroByte8/CVE-2025-11534](https://github.com/ZeroByte8/CVE-2025-11534)
 
 ### CVE-2025-11554 (2025-10-09)
 
@@ -3481,6 +3489,7 @@
 
 - [encrypter15/CVE-2025-29824](https://github.com/encrypter15/CVE-2025-29824)
 - [AfanPan/CVE-2025-29824-Exploit](https://github.com/AfanPan/CVE-2025-29824-Exploit)
+- [zmkeh/CVE-2025-29824-CLFS-Local-privilege-escalation](https://github.com/zmkeh/CVE-2025-29824-CLFS-Local-privilege-escalation)
 
 ### CVE-2025-29927 (2025-03-21)
 
@@ -3596,6 +3605,7 @@
 - [diogolourencodev/middleforce](https://github.com/diogolourencodev/middleforce)
 - [Bongni/CVE-2025-29927](https://github.com/Bongni/CVE-2025-29927)
 - [NS-Projects-Unina/CTF_CVE_DSP_1](https://github.com/NS-Projects-Unina/CTF_CVE_DSP_1)
+- [lucaschanzx/CVE-2025-29927-PoC](https://github.com/lucaschanzx/CVE-2025-29927-PoC)
 
 ### CVE-2025-29972 (2025-05-08)
 
@@ -4137,7 +4147,7 @@
 - [blackcat4347/CVE-2025-32463_PoC](https://github.com/blackcat4347/CVE-2025-32463_PoC)
 - [ashardev002/CVE-2025-32463_chwoot](https://github.com/ashardev002/CVE-2025-32463_chwoot)
 - [mihnasdsad/CVE-2025-32463](https://github.com/mihnasdsad/CVE-2025-32463)
-- [nelissandro/CVE-2025-32463-Sudo-Chroot-Escape](https://github.com/nelissandro/CVE-2025-32463-Sudo-Chroot-Escape)
+- [D3ltaFormation/CVE-2025-32463-Sudo-Chroot-Escape](https://github.com/D3ltaFormation/CVE-2025-32463-Sudo-Chroot-Escape)
 - [AC8999/CVE-2025-32463](https://github.com/AC8999/CVE-2025-32463)
 - [onniio/CVE-2025-32463](https://github.com/onniio/CVE-2025-32463)
 - [khoazero123/CVE-2025-32463](https://github.com/khoazero123/CVE-2025-32463)
@@ -4937,6 +4947,7 @@
 </code>
 
 - [dwisiswant0/CVE-2025-46817](https://github.com/dwisiswant0/CVE-2025-46817)
+- [slayerkkkk/CVE-2025-46817-PoC](https://github.com/slayerkkkk/CVE-2025-46817-PoC)
 
 ### CVE-2025-46818 (2025-10-03)
 
@@ -5158,14 +5169,6 @@
 - [mukesh-610/cve-2025-48384-exploit](https://github.com/mukesh-610/cve-2025-48384-exploit)
 - [mukesh-610/cve-2025-48384](https://github.com/mukesh-610/cve-2025-48384)
 
-### CVE-2025-48385 (2025-07-08)
-
-<code>Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals. When cloning a repository Git knows to optionally fetch a bundle advertised by the remote server, which allows the server-side to offload parts of the clone to a CDN. The Git client does not perform sufficient validation of the advertised bundles, which allows the remote side to perform protocol injection. This protocol injection can cause the client to write the fetched bundle to a location controlled by the adversary. The fetched content is fully controlled by the server, which can in the worst case lead to arbitrary code execution. The use of bundle URIs is not enabled by default and can be controlled by the bundle.heuristic config option. Some cases of the vulnerability require that the adversary is in control of where a repository will be cloned to. This either requires social engineering or a recursive clone with submodules. These cases can thus be avoided by disabling recursive clones. This vulnerability is fixed in v2.43.7, v2.44.4, v2.45.4, v2.46.4, v2.47.3, v2.48.2, v2.49.1, and v2.50.1.
-</code>
-
-- [Nimisha17/Git-clone-CVE-2025-48385](https://github.com/Nimisha17/Git-clone-CVE-2025-48385)
-- [Mitchellzhou1/CVE-2025-48385-PoC](https://github.com/Mitchellzhou1/CVE-2025-48385-PoC)
-
 ### CVE-2025-48461 (2025-06-24)
 
 <code>Successful exploitation of the vulnerability could allow an unauthenticated attacker to conduct brute force guessing and account takeover as the session cookies are predictable, potentially allowing the attackers to gain root, admin or user access and reset passwords.
@@ -5186,6 +5189,13 @@
 </code>
 
 - [gamesarchive/CVE-2025-48543](https://github.com/gamesarchive/CVE-2025-48543)
+
+### CVE-2025-48561 (2025-09-04)
+
+<code>In multiple locations, there is a possible way to access data displayed on the screen due to side channel information disclosure. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.
+</code>
+
+- [demining/Pixnapping-Attack-on-Android](https://github.com/demining/Pixnapping-Attack-on-Android)
 
 ### CVE-2025-48703 (2025-09-19)
 
@@ -5385,6 +5395,7 @@
 </code>
 
 - [ksnnd32/redis_exploit](https://github.com/ksnnd32/redis_exploit)
+- [Zain3311/CVE-2025-49844](https://github.com/Zain3311/CVE-2025-49844)
 - [gopinaath/CVE-2025-49844-discovery](https://github.com/gopinaath/CVE-2025-49844-discovery)
 - [dwisiswant0/CVE-2025-49844](https://github.com/dwisiswant0/CVE-2025-49844)
 - [raminfp/redis_exploit](https://github.com/raminfp/redis_exploit)
@@ -5920,6 +5931,7 @@
 </code>
 
 - [rxerium/CVE-2025-53072-CVE-2025-62481](https://github.com/rxerium/CVE-2025-53072-CVE-2025-62481)
+- [AshrafZaryouh/CVE-2025-53072-CVE-2025-62481](https://github.com/AshrafZaryouh/CVE-2025-53072-CVE-2025-62481)
 
 ### CVE-2025-53367 (2025-07-03)
 
@@ -5928,7 +5940,11 @@
 
 - [kevinbackhouse/DjVuLibre-poc-CVE-2025-53367](https://github.com/kevinbackhouse/DjVuLibre-poc-CVE-2025-53367)
 
-### CVE-2025-53533
+### CVE-2025-53533 (2025-10-27)
+
+<code>Pi-hole Admin Interface is a web interface for managing Pi-hole, a network-level advertisement and internet tracker blocking application. Pi-hole Admin Interface versions 6.2.1 and earlier are vulnerable to reflected cross-site scripting (XSS) via a malformed URL path. The 404 error page includes the requested path in the class attribute of the body tag without proper sanitization or escaping. An attacker can craft a URL containing an onload attribute that will execute arbitrary JavaScript code in the browser when a victim visits the malicious link. If an attacker sends a crafted pi-hole link to a victim and the victim visits it, attacker-controlled JavaScript code is executed in the browser of the victim. This has been patched in version 6.3.
+</code>
+
 - [moezbouzayani9/Pi-hole-XSS-CVE-2025-53533](https://github.com/moezbouzayani9/Pi-hole-XSS-CVE-2025-53533)
 
 ### CVE-2025-53547 (2025-07-08)
@@ -6823,6 +6839,10 @@
 - [jiansiting/CVE-2025-59287](https://github.com/jiansiting/CVE-2025-59287)
 - [garvitv14/CVE-2025-59287](https://github.com/garvitv14/CVE-2025-59287)
 - [0xBruno/WSUSploit.NET](https://github.com/0xBruno/WSUSploit.NET)
+- [Lupovis/Honeypot-for-CVE-2025-59287-WSUS](https://github.com/Lupovis/Honeypot-for-CVE-2025-59287-WSUS)
+- [tecxx/CVE-2025-59287-WSUS](https://github.com/tecxx/CVE-2025-59287-WSUS)
+- [RadzaRr/WSUSResponder](https://github.com/RadzaRr/WSUSResponder)
+- [mubix/Find-WSUS](https://github.com/mubix/Find-WSUS)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -6907,10 +6927,18 @@
 
 - [ajansha/CVE-2025-60378](https://github.com/ajansha/CVE-2025-60378)
 
-### CVE-2025-60424
+### CVE-2025-60424 (2025-10-27)
+
+<code>A lack of rate limiting in the OTP verification component of Nagios Fusion v2024R1.2 and v2024R2 allows attackers to bypass authentication via a bruteforce attack.
+</code>
+
 - [aakashtyal/2FA-Bypass-using-a-Brute-Force-Attack-CVE-2025-60424](https://github.com/aakashtyal/2FA-Bypass-using-a-Brute-Force-Attack-CVE-2025-60424)
 
-### CVE-2025-60425
+### CVE-2025-60425 (2025-10-27)
+
+<code>Nagios Fusion v2024R1.2 and v2024R2 does not invalidate already existing session tokens when the two-factor authentication mechanism is enabled, allowing attackers to perform a session hijacking attack.
+</code>
+
 - [aakashtyal/Session-Persistence-After-Enabling-2FA-CVE-2025-60425](https://github.com/aakashtyal/Session-Persistence-After-Enabling-2FA-CVE-2025-60425)
 
 ### CVE-2025-60500 (2025-10-21)
@@ -6943,7 +6971,11 @@
 
 - [prabhatverma47/CVE-2025-60787](https://github.com/prabhatverma47/CVE-2025-60787)
 
-### CVE-2025-60791
+### CVE-2025-60791 (2025-10-27)
+
+<code>Easywork Enterprise 2.1.3.354 is vulnerable to Cleartext Storage of Sensitive Information in Memory. The application leaves valid device-bound license keys in process memory after a failed activation attempt. The keys can be obtained by attaching a debugger or analyzing the process/memory dump and then they can be used to activate the software on the same machine without purchasing.
+</code>
+
 - [Smarttfoxx/CVE-2025-60791](https://github.com/Smarttfoxx/CVE-2025-60791)
 
 ### CVE-2025-60852 (2025-10-23)
@@ -6960,8 +6992,14 @@
 
 - [Shenal01/CVE-2025-60880](https://github.com/Shenal01/CVE-2025-60880)
 
+### CVE-2025-60910
+- [Mp-97/CVE-2025-60910](https://github.com/Mp-97/CVE-2025-60910)
+
 ### CVE-2025-61155
 - [pollotherunner/CVE-2025-61155](https://github.com/pollotherunner/CVE-2025-61155)
+
+### CVE-2025-61156
+- [D7EAD/CVE-2025-61156](https://github.com/D7EAD/CVE-2025-61156)
 
 ### CVE-2025-61183 (2025-10-08)
 
@@ -7045,6 +7083,7 @@
 - [AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit](https://github.com/AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit)
 - [BattalionX/http-oracle-ebs-cve-2025-61882.nse](https://github.com/BattalionX/http-oracle-ebs-cve-2025-61882.nse)
 - [godnish/CVE-2025-61882](https://github.com/godnish/CVE-2025-61882)
+- [AshrafZaryouh/CVE-2025-61882-Executive-Summary](https://github.com/AshrafZaryouh/CVE-2025-61882-Executive-Summary)
 
 ### CVE-2025-61884 (2025-10-12)
 
@@ -7053,6 +7092,7 @@
 
 - [B1ack4sh/Blackash-CVE-2025-61884](https://github.com/B1ack4sh/Blackash-CVE-2025-61884)
 - [shinyhunt/CVE-2025-61884](https://github.com/shinyhunt/CVE-2025-61884)
+- [AshrafZaryouh/CVE-2025-61884-At-a-Glance](https://github.com/AshrafZaryouh/CVE-2025-61884-At-a-Glance)
 
 ### CVE-2025-61932 (2025-10-20)
 
@@ -12367,7 +12407,7 @@
 - [ExtremeUday/Remote-Code-Execution-CVE-2024-28397-pyload-ng-js2py-](https://github.com/ExtremeUday/Remote-Code-Execution-CVE-2024-28397-pyload-ng-js2py-)
 - [naclapor/CVE-2024-28397](https://github.com/naclapor/CVE-2024-28397)
 - [0xDTC/js2py-Sandbox-Escape-CVE-2024-28397-RCE](https://github.com/0xDTC/js2py-Sandbox-Escape-CVE-2024-28397-RCE)
-- [nelissandro/CVE-2024-28397-Js2Py-RCE](https://github.com/nelissandro/CVE-2024-28397-Js2Py-RCE)
+- [D3ltaFormation/CVE-2024-28397-Js2Py-RCE](https://github.com/D3ltaFormation/CVE-2024-28397-Js2Py-RCE)
 - [vitaciminIPI/CVE-2024-28397-RCE](https://github.com/vitaciminIPI/CVE-2024-28397-RCE)
 - [0xPadme/CVE-2024-28397-Reverse-Shell](https://github.com/0xPadme/CVE-2024-28397-Reverse-Shell)
 
@@ -13733,7 +13773,6 @@
 - [justin-p/geoexplorer](https://github.com/justin-p/geoexplorer)
 - [daniellowrie/CVE-2024-36401-PoC](https://github.com/daniellowrie/CVE-2024-36401-PoC)
 - [punitdarji/GeoServer-CVE-2024-36401](https://github.com/punitdarji/GeoServer-CVE-2024-36401)
-- [netuseradministrator/CVE-2024-36401](https://github.com/netuseradministrator/CVE-2024-36401)
 - [kkhackz0013/CVE-2024-36401](https://github.com/kkhackz0013/CVE-2024-36401)
 - [XiaomingX/cve-2024-36401-poc](https://github.com/XiaomingX/cve-2024-36401-poc)
 - [0x0d3ad/CVE-2024-36401](https://github.com/0x0d3ad/CVE-2024-36401)
@@ -13870,6 +13909,7 @@
 - [Bi0x/CVE-2024-37032](https://github.com/Bi0x/CVE-2024-37032)
 - [ahboon/CVE-2024-37032-scanner](https://github.com/ahboon/CVE-2024-37032-scanner)
 - [pankass/CVE-2024-37032_CVE-2024-45436](https://github.com/pankass/CVE-2024-37032_CVE-2024-45436)
+- [stuxbench/vllm-cve-2024-37032](https://github.com/stuxbench/vllm-cve-2024-37032)
 
 ### CVE-2024-37051 (2024-06-10)
 
@@ -14428,6 +14468,13 @@
 </code>
 
 - [srcx404/CVE-2024-39722](https://github.com/srcx404/CVE-2024-39722)
+
+### CVE-2024-39840 (2024-06-29)
+
+<code>Factorio before 1.1.101 allows a crafted server to execute arbitrary code on clients via a custom map that leverages the ability of certain Lua base module functions to execute bytecode and generate fake objects.
+</code>
+
+- [writegsqword/CVE-2024-39840-POC](https://github.com/writegsqword/CVE-2024-39840-POC)
 
 ### CVE-2024-39844 (2024-07-03)
 
@@ -25984,7 +26031,11 @@
 
 - [brandon-t-elliott/CVE-2023-49438](https://github.com/brandon-t-elliott/CVE-2023-49438)
 
-### CVE-2023-49440
+### CVE-2023-49440 (2025-10-27)
+
+<code>AhnLab EPP 1.0.15 is vulnerable to SQL Injection via the &quot;preview parameter.&quot;
+</code>
+
 - [KernelCipher/CVE-2023-49440-POC](https://github.com/KernelCipher/CVE-2023-49440-POC)
 
 ### CVE-2023-49471 (2024-01-10)
@@ -28638,7 +28689,6 @@
 - [gunzf0x/CVE-2022-22963](https://github.com/gunzf0x/CVE-2022-22963)
 - [nikn0laty/RCE-in-Spring-Cloud-CVE-2022-22963](https://github.com/nikn0laty/RCE-in-Spring-Cloud-CVE-2022-22963)
 - [BearClaw96/CVE-2022-22963-Poc-Bearcules](https://github.com/BearClaw96/CVE-2022-22963-Poc-Bearcules)
-- [xmqaq/CVE-2022-22963](https://github.com/xmqaq/CVE-2022-22963)
 - [jrbH4CK/CVE-2022-22963](https://github.com/jrbH4CK/CVE-2022-22963)
 - [Shayz614/CVE-2022-22963](https://github.com/Shayz614/CVE-2022-22963)
 
@@ -34949,7 +34999,6 @@
 - [0dayNinja/CVE-2021-3560](https://github.com/0dayNinja/CVE-2021-3560)
 - [admin-079/CVE-2021-3560](https://github.com/admin-079/CVE-2021-3560)
 - [chenaotian/CVE-2021-3560](https://github.com/chenaotian/CVE-2021-3560)
-- [f4T1H21/CVE-2021-3560-Polkit-DBus](https://github.com/f4T1H21/CVE-2021-3560-Polkit-DBus)
 - [RicterZ/CVE-2021-3560-Authentication-Agent](https://github.com/RicterZ/CVE-2021-3560-Authentication-Agent)
 - [WinMin/CVE-2021-3560](https://github.com/WinMin/CVE-2021-3560)
 - [UNICORDev/exploit-CVE-2021-3560](https://github.com/UNICORDev/exploit-CVE-2021-3560)
@@ -35079,7 +35128,6 @@
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
 - [cspshivam/cve-2021-4034](https://github.com/cspshivam/cve-2021-4034)
 - [x04000/CVE-2021-4034](https://github.com/x04000/CVE-2021-4034)
-- [x04000/AutoPwnkit](https://github.com/x04000/AutoPwnkit)
 - [hohn/codeql-sample-polkit](https://github.com/hohn/codeql-sample-polkit)
 - [ck00004/CVE-2021-4034](https://github.com/ck00004/CVE-2021-4034)
 - [LJP-TW/CVE-2021-4034](https://github.com/LJP-TW/CVE-2021-4034)
@@ -35746,6 +35794,7 @@
 - [battleofthebots/dejavu](https://github.com/battleofthebots/dejavu)
 - [cc3305/CVE-2021-22204](https://github.com/cc3305/CVE-2021-22204)
 - [sameep0/CVE-2021-22204](https://github.com/sameep0/CVE-2021-22204)
+- [Roronoawjd/CVE-2021-22204](https://github.com/Roronoawjd/CVE-2021-22204)
 
 ### CVE-2021-22205 (2021-04-23)
 
@@ -37205,6 +37254,7 @@
 - [imikoYa/CVE-2021-31166-exploit](https://github.com/imikoYa/CVE-2021-31166-exploit)
 - [mauricelambert/CVE-2021-31166](https://github.com/mauricelambert/CVE-2021-31166)
 - [0xmaximus/Home-Demolisher](https://github.com/0xmaximus/Home-Demolisher)
+- [qazbnme/CVE-2021](https://github.com/qazbnme/CVE-2021)
 
 ### CVE-2021-31184 (2021-05-11)
 
@@ -39753,13 +39803,6 @@
 
 - [parsiya/code-wsl-rce](https://github.com/parsiya/code-wsl-rce)
 
-### CVE-2021-43893 (2021-12-15)
-
-<code>Windows Encrypting File System (EFS) Elevation of Privilege Vulnerability
-</code>
-
-- [jbaines-r7/blankspace](https://github.com/jbaines-r7/blankspace)
-
 ### CVE-2021-43908 (2021-12-15)
 
 <code>Visual Studio Code Spoofing Vulnerability
@@ -39815,6 +39858,7 @@
 - [hrsman/Samba-CVE-2021-44142](https://github.com/hrsman/Samba-CVE-2021-44142)
 - [horizon3ai/CVE-2021-44142](https://github.com/horizon3ai/CVE-2021-44142)
 - [gudyrmik/CVE-2021-44142](https://github.com/gudyrmik/CVE-2021-44142)
+- [WinDyAlphA/CVE-2021-44142-vulnerable-lab](https://github.com/WinDyAlphA/CVE-2021-44142-vulnerable-lab)
 
 ### CVE-2021-44168 (2022-01-04)
 
@@ -45714,6 +45758,7 @@
 - [userxfan/cve-2020-27955](https://github.com/userxfan/cve-2020-27955)
 - [z50913/CVE-2020-27955](https://github.com/z50913/CVE-2020-27955)
 - [Kimorea/CVE-2020-27955-LFS](https://github.com/Kimorea/CVE-2020-27955-LFS)
+- [the-chivalrousZ/cve-2020-27955](https://github.com/the-chivalrousZ/cve-2020-27955)
 
 ### CVE-2020-27976 (2020-10-28)
 
@@ -54907,7 +54952,7 @@
 - [Flyteas/Struts2-045-Exp](https://github.com/Flyteas/Struts2-045-Exp)
 - [bongbongco/cve-2017-5638](https://github.com/bongbongco/cve-2017-5638)
 - [jas502n/S2-045-EXP-POC-TOOLS](https://github.com/jas502n/S2-045-EXP-POC-TOOLS)
-- [mthbernardes/strutszeiro](https://github.com/mthbernardes/strutszeiro)
+- [btamburi/strutszeiro](https://github.com/btamburi/strutszeiro)
 - [xsscx/cve-2017-5638](https://github.com/xsscx/cve-2017-5638)
 - [immunio/apache-struts2-CVE-2017-5638](https://github.com/immunio/apache-struts2-CVE-2017-5638)
 - [Masahiro-Yamada/OgnlContentTypeRejectorValve](https://github.com/Masahiro-Yamada/OgnlContentTypeRejectorValve)
