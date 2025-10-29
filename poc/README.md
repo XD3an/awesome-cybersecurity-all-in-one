@@ -1693,7 +1693,6 @@
 </code>
 
 - [watchtowrlabs/watchTowr-vs-WatchGuard-CVE-2025-9242](https://github.com/watchtowrlabs/watchTowr-vs-WatchGuard-CVE-2025-9242)
-- [pulsecipher/CVE-2025-9242](https://github.com/pulsecipher/CVE-2025-9242)
 
 ### CVE-2025-9267 (2025-09-26)
 
@@ -1885,13 +1884,6 @@
 
 - [netspecters/CVE-2025-10742](https://github.com/netspecters/CVE-2025-10742)
 
-### CVE-2025-10850 (2025-10-16)
-
-<code>The Felan Framework plugin for WordPress is vulnerable to improper authentication in versions up to, and including, 1.1.4. This is due to the hardcoded password in the 'fb_ajax_login_or_register' function and in the 'google_ajax_login_or_register' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, if they registered with facebook or google social login and did not change their password.
-</code>
-
-- [pulsecipher/CVE-2025-10850](https://github.com/pulsecipher/CVE-2025-10850)
-
 ### CVE-2025-10874 (2025-10-24)
 
 <code>The Orbit Fox: Duplicate Page, Menu Icons, SVG Support, Cookie Notice, Custom Fonts &amp; More WordPress plugin before 3.0.2 does not limit URLs which may be used for the stock photo import feature, allowing the user to specify arbitrary URLs. This leads to a server-side request forgery as the user may force the server to access any URL of their choosing.
@@ -1946,7 +1938,6 @@
 </code>
 
 - [DExplo1ted/CVE-2025-11534-POC](https://github.com/DExplo1ted/CVE-2025-11534-POC)
-- [ZeroByte8/CVE-2025-11534](https://github.com/ZeroByte8/CVE-2025-11534)
 
 ### CVE-2025-11554 (2025-10-09)
 
@@ -6299,7 +6290,6 @@
 - [RootAid/CVE-2025-55315](https://github.com/RootAid/CVE-2025-55315)
 - [7huukdlnkjkjba/CVE-2025-55315-](https://github.com/7huukdlnkjkjba/CVE-2025-55315-)
 - [jlinebau/CVE-2025-55315-Scanner-Monitor](https://github.com/jlinebau/CVE-2025-55315-Scanner-Monitor)
-- [blackquantas/CVE-2025-55315](https://github.com/blackquantas/CVE-2025-55315)
 
 ### CVE-2025-55349
 - [GoldenTicketLabs/CVE-2025-55349](https://github.com/GoldenTicketLabs/CVE-2025-55349)
@@ -6842,7 +6832,6 @@
 </code>
 
 - [stalker110119/CVE-2025-59230](https://github.com/stalker110119/CVE-2025-59230)
-- [moegameka/CVE-2025-59230-LPE](https://github.com/moegameka/CVE-2025-59230-LPE)
 
 ### CVE-2025-59287 (2025-10-14)
 
@@ -7120,7 +7109,6 @@
 </code>
 
 - [B1ack4sh/Blackash-CVE-2025-61884](https://github.com/B1ack4sh/Blackash-CVE-2025-61884)
-- [shinyhunt/CVE-2025-61884](https://github.com/shinyhunt/CVE-2025-61884)
 - [AshrafZaryouh/CVE-2025-61884-At-a-Glance](https://github.com/AshrafZaryouh/CVE-2025-61884-At-a-Glance)
 
 ### CVE-2025-61932 (2025-10-20)
@@ -10798,7 +10786,6 @@
 </code>
 
 - [CyberSecuritist/CVE-2024-21754-Forti-RCE](https://github.com/CyberSecuritist/CVE-2024-21754-Forti-RCE)
-- [hacktidexp/CVE-2024-21754-FORTI-RCE](https://github.com/hacktidexp/CVE-2024-21754-FORTI-RCE)
 
 ### CVE-2024-21762 (2024-02-09)
 
@@ -15539,6 +15526,13 @@
 </code>
 
 - [w0r1i0g1ht/CVE-2024-45440](https://github.com/w0r1i0g1ht/CVE-2024-45440)
+
+### CVE-2024-45496 (2024-09-16)
+
+<code>A flaw was found in OpenShift. This issue occurs due to the misuse of elevated privileges in the OpenShift Container Platform's build process. During the build initialization step, the git-clone container is run with a privileged security context, allowing unrestricted access to the node. An attacker with developer-level access can provide a crafted .gitconfig file containing commands executed during the cloning process, leading to arbitrary command execution on the worker node. An attacker running code in a privileged container could escalate their permissions on the node running the container.
+</code>
+
+- [0xSigSegv0x00/cve-2024-45496](https://github.com/0xSigSegv0x00/cve-2024-45496)
 
 ### CVE-2024-45507 (2024-09-04)
 
@@ -37293,7 +37287,6 @@
 - [imikoYa/CVE-2021-31166-exploit](https://github.com/imikoYa/CVE-2021-31166-exploit)
 - [mauricelambert/CVE-2021-31166](https://github.com/mauricelambert/CVE-2021-31166)
 - [0xmaximus/Home-Demolisher](https://github.com/0xmaximus/Home-Demolisher)
-- [qazbnme/CVE-2021](https://github.com/qazbnme/CVE-2021)
 
 ### CVE-2021-31184 (2021-05-11)
 
