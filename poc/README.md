@@ -6345,6 +6345,13 @@
 
 - [r4bbit-r4/directus-preso](https://github.com/r4bbit-r4/directus-preso)
 
+### CVE-2025-55752 (2025-10-27)
+
+<code>Relative Path Traversal vulnerability in Apache Tomcat.\n\nThe fix for bug 60013 introduced a regression where the       rewritten URL was normalized before it was decoded. This introduced the       possibility that, for rewrite rules that rewrite query parameters to the       URL, an attacker could manipulate the request URI to bypass security       constraints including the protection for /WEB-INF/ and /META-INF/. If PUT requests were also enabled then malicious files could be uploaded leading to remote code execution. PUT requests are normally limited to trusted users and it is considered unlikely that PUT requests would be enabled in conjunction with a rewrite that manipulated the URI.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.10, from 10.1.0-M1 through 10.1.44, from 9.0.0.M11 through 9.0.108.\n\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: 8.5.6 though 8.5.100. Other, older, EOL versions may also be affected.\nUsers are recommended to upgrade to version 11.0.11 or later, 10.1.45 or later or 9.0.109 or later, which fix the issue.
+</code>
+
+- [TAM-K592/CVE-2025-55752](https://github.com/TAM-K592/CVE-2025-55752)
+
 ### CVE-2025-55763 (2025-08-29)
 
 <code>Buffer Overflow in the URI parser of CivetWeb 1.14 through 1.16 (latest) allows a remote attacker to achieve remote code execution via a crafted HTTP request. This vulnerability is triggered during request processing and may allow an attacker to corrupt heap memory, potentially leading to denial of service or arbitrary code execution.
@@ -6361,6 +6368,9 @@
 
 ### CVE-2025-55817
 - [5qu1n7/CVE-2025-55817](https://github.com/5qu1n7/CVE-2025-55817)
+
+### CVE-2025-55854
+- [PushkarAyengar/CVE-2025-55854-PoC](https://github.com/PushkarAyengar/CVE-2025-55854-PoC)
 
 ### CVE-2025-55885 (2025-09-22)
 
@@ -6519,7 +6529,11 @@
 
 - [zer0t0/CVE-2025-56383-Proof-of-Concept](https://github.com/zer0t0/CVE-2025-56383-Proof-of-Concept)
 
-### CVE-2025-56399
+### CVE-2025-56399 (2025-10-28)
+
+<code>alexusmai laravel-file-manager 3.3.1 and before allows an authenticated attacker to achieve Remote Code Execution (RCE) through a crafted file upload. A file with a '.png` extension containing PHP code can be uploaded via the file manager interface. Although the upload appears to fail client-side validation, the file is still saved on the server. The attacker can then use the rename API to change the file extension to `.php`, and upon accessing it via a public URL, the server executes the embedded code.
+</code>
+
 - [Theethat-Thamwasin/CVE-2025-56399](https://github.com/Theethat-Thamwasin/CVE-2025-56399)
 
 ### CVE-2025-56435 (2025-09-03)
@@ -6828,6 +6842,7 @@
 </code>
 
 - [stalker110119/CVE-2025-59230](https://github.com/stalker110119/CVE-2025-59230)
+- [moegameka/CVE-2025-59230-LPE](https://github.com/moegameka/CVE-2025-59230-LPE)
 
 ### CVE-2025-59287 (2025-10-14)
 
@@ -6839,10 +6854,13 @@
 - [garvitv14/CVE-2025-59287](https://github.com/garvitv14/CVE-2025-59287)
 - [0xBruno/WSUSploit.NET](https://github.com/0xBruno/WSUSploit.NET)
 - [Lupovis/Honeypot-for-CVE-2025-59287-WSUS](https://github.com/Lupovis/Honeypot-for-CVE-2025-59287-WSUS)
+- [FurkanKAYAPINAR/CVE-2025-59287](https://github.com/FurkanKAYAPINAR/CVE-2025-59287)
 - [tecxx/CVE-2025-59287-WSUS](https://github.com/tecxx/CVE-2025-59287-WSUS)
 - [RadzaRr/WSUSResponder](https://github.com/RadzaRr/WSUSResponder)
 - [mubix/Find-WSUS](https://github.com/mubix/Find-WSUS)
 - [mrk336/Breaking-the-Update-Chain-Inside-CVE-2025-59287-and-the-WSUS-RCE-Threat](https://github.com/mrk336/Breaking-the-Update-Chain-Inside-CVE-2025-59287-and-the-WSUS-RCE-Threat)
+- [AdityaBhatt3010/CVE-2025-59287-When-your-patch-server-becomes-the-attack-vector](https://github.com/AdityaBhatt3010/CVE-2025-59287-When-your-patch-server-becomes-the-attack-vector)
+- [esteban11121/WSUS-RCE-Mitigation-59287](https://github.com/esteban11121/WSUS-RCE-Mitigation-59287)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -6902,7 +6920,11 @@
 
 - [suriryuk/cve-2025-59934](https://github.com/suriryuk/cve-2025-59934)
 
-### CVE-2025-60349
+### CVE-2025-60349 (2025-10-28)
+
+<code>An issue was discovered in Prevx v3.0.5.220 allowing attackers to cause a denial of service via sending IOCTL code 0x22E044 to the pxscan.sys driver. Any processes listed under registry key HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\pxscan\Files will be terminated.
+</code>
+
 - [djackreuter/CVE-2025-60349](https://github.com/djackreuter/CVE-2025-60349)
 
 ### CVE-2025-60374 (2025-10-14)
@@ -6947,6 +6969,9 @@
 </code>
 
 - [H4zaz/CVE-2025-60500](https://github.com/H4zaz/CVE-2025-60500)
+
+### CVE-2025-60595
+- [Clicksafeae/CVE-2025-60595](https://github.com/Clicksafeae/CVE-2025-60595)
 
 ### CVE-2025-60736
 - [WinDyAlphA/CVE-2025-60736](https://github.com/WinDyAlphA/CVE-2025-60736)
@@ -6995,7 +7020,11 @@
 ### CVE-2025-60910
 - [Mp-97/CVE-2025-60910](https://github.com/Mp-97/CVE-2025-60910)
 
-### CVE-2025-61155
+### CVE-2025-61155 (2025-10-28)
+
+<code>Hotta Studio GameDriverX64.sys 7.23.4.7, a signed kernel-mode anti-cheat driver, allows local attackers to cause a denial of service by crashing arbitrary processes via sending crafted IOCTL requests.
+</code>
+
 - [pollotherunner/CVE-2025-61155](https://github.com/pollotherunner/CVE-2025-61155)
 
 ### CVE-2025-61156
@@ -7151,6 +7180,13 @@
 </code>
 
 - [edera-dev/cve-tarmageddon](https://github.com/edera-dev/cve-tarmageddon)
+
+### CVE-2025-62727 (2025-10-28)
+
+<code>Starlette is a lightweight ASGI framework/toolkit. Prior to 0.49.1 , an unauthenticated attacker can send a crafted HTTP Range header that triggers quadratic-time processing in Starlette's FileResponse Range parsing/merging logic. This enables CPU exhaustion per request, causing denial‑of‑service for endpoints serving files (e.g., StaticFiles or any use of FileResponse). This vulnerability is fixed in 0.49.1.
+</code>
+
+- [ch4n3-yoon/CVE-2025-62727-Demo](https://github.com/ch4n3-yoon/CVE-2025-62727-Demo)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -15973,6 +16009,8 @@
 - [CyberCrowCC/CVE-2024-48990](https://github.com/CyberCrowCC/CVE-2024-48990)
 - [NullByte-7w7/CVE-2024-48990](https://github.com/NullByte-7w7/CVE-2024-48990)
 - [ten-ops/CVE-2024-48990_needrestart](https://github.com/ten-ops/CVE-2024-48990_needrestart)
+- [Serner77/CVE-2024-48990-Automatic-Exploit](https://github.com/Serner77/CVE-2024-48990-Automatic-Exploit)
+- [mladicstefan/CVE-2024-48990](https://github.com/mladicstefan/CVE-2024-48990)
 
 ### CVE-2024-49019 (2024-11-12)
 
@@ -19070,6 +19108,7 @@
 
 - [FireWolfWang/CVE-2023-6019](https://github.com/FireWolfWang/CVE-2023-6019)
 - [Clydeston/CVE-2023-6019](https://github.com/Clydeston/CVE-2023-6019)
+- [Zohaibkhan1472/cve-2023-6019](https://github.com/Zohaibkhan1472/cve-2023-6019)
 
 ### CVE-2023-6036 (2024-02-12)
 
@@ -23783,6 +23822,7 @@
 - [VictoriousKnight/CVE-2023-38831_Exploit](https://github.com/VictoriousKnight/CVE-2023-38831_Exploit)
 - [kuyrathdaro/winrar-cve-2023-38831](https://github.com/kuyrathdaro/winrar-cve-2023-38831)
 - [Tolu12wani/Demonstration-of-CVE-2023-38831-via-Reverse-Shell-Execution](https://github.com/Tolu12wani/Demonstration-of-CVE-2023-38831-via-Reverse-Shell-Execution)
+- [yangdayyy/cve-2023-38831](https://github.com/yangdayyy/cve-2023-38831)
 
 ### CVE-2023-38836 (2023-08-21)
 
@@ -25680,7 +25720,7 @@
 
 ### CVE-2023-47108 (2023-11-10)
 
-<code>OpenTelemetry-Go Contrib is a collection of third-party packages for OpenTelemetry-Go. Prior to version 0.46.0, the grpc Unary Server Interceptor out of the box adds labels `net.peer.sock.addr` and `net.peer.sock.port` that have unbound cardinality. It leads to the server's potential memory exhaustion when many malicious requests are sent. An attacker can easily flood the peer address and port for requests. Version 0.46.0 contains a fix for this issue. As a workaround to stop being affected, a view removing the attributes can be used. The other possibility is to disable grpc metrics instrumentation by passing `otelgrpc.WithMeterProvider` option with `noop.NewMeterProvider`.
+<code>OpenTelemetry-Go Contrib is a collection of third-party packages for OpenTelemetry-Go. Starting in version 0.37.0 and prior to version 0.46.0, the grpc Unary Server Interceptor out of the box adds labels `net.peer.sock.addr` and `net.peer.sock.port` that have unbound cardinality. It leads to the server's potential memory exhaustion when many malicious requests are sent. An attacker can easily flood the peer address and port for requests. Version 0.46.0 contains a fix for this issue. As a workaround to stop being affected, a view removing the attributes can be used. The other possibility is to disable grpc metrics instrumentation by passing `otelgrpc.WithMeterProvider` option with `noop.NewMeterProvider`.
 </code>
 
 - [bahe-msft/govuln-CVE-2023-47108](https://github.com/bahe-msft/govuln-CVE-2023-47108)
@@ -35127,10 +35167,8 @@
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
-- [cspshivam/cve-2021-4034](https://github.com/cspshivam/cve-2021-4034)
 - [x04000/CVE-2021-4034](https://github.com/x04000/CVE-2021-4034)
 - [hohn/codeql-sample-polkit](https://github.com/hohn/codeql-sample-polkit)
-- [ck00004/CVE-2021-4034](https://github.com/ck00004/CVE-2021-4034)
 - [LJP-TW/CVE-2021-4034](https://github.com/LJP-TW/CVE-2021-4034)
 - [fnknda/CVE-2021-4034_POC](https://github.com/fnknda/CVE-2021-4034_POC)
 - [Tanmay-N/CVE-2021-4034](https://github.com/Tanmay-N/CVE-2021-4034)
@@ -35438,13 +35476,13 @@
 - [henry861010/Network_Security_NYCU](https://github.com/henry861010/Network_Security_NYCU)
 - [Saboor-Hakimi-23/CVE-2021-21300](https://github.com/Saboor-Hakimi-23/CVE-2021-21300)
 - [Sizvy/CVE-2021-21300](https://github.com/Sizvy/CVE-2021-21300)
+- [the-chivalrousZ/cve-2021-21300](https://github.com/the-chivalrousZ/cve-2021-21300)
 
 ### CVE-2021-21311 (2021-02-11)
 
 <code>Adminer is an open-source database management in a single PHP file. In adminer from version 4.0.0 and before 4.7.9 there is a server-side request forgery vulnerability. Users of Adminer versions bundling all drivers (e.g. `adminer.php`) are affected. This is fixed in version 4.7.9.
 </code>
 
-- [llhala/CVE-2021-21311](https://github.com/llhala/CVE-2021-21311)
 - [omoknooni/CVE-2021-21311](https://github.com/omoknooni/CVE-2021-21311)
 
 ### CVE-2021-21315 (2021-02-16)
@@ -39213,6 +39251,7 @@
 - [bananoname/cve-2021-42013](https://github.com/bananoname/cve-2021-42013)
 - [asepsaepdin/CVE-2021-42013](https://github.com/asepsaepdin/CVE-2021-42013)
 - [Makavellik/POC-CVE-2021-42013-EXPLOIT](https://github.com/Makavellik/POC-CVE-2021-42013-EXPLOIT)
+- [FakhriCRD/Apache-CVE-2021-42013-RCE-Exploit](https://github.com/FakhriCRD/Apache-CVE-2021-42013-RCE-Exploit)
 
 ### CVE-2021-42056 (2022-06-24)
 
@@ -40274,6 +40313,7 @@
 - [KamalideenAK/Microsoft-Defender-for-Endpoint-Deployment-on-Windows-10-11-device](https://github.com/KamalideenAK/Microsoft-Defender-for-Endpoint-Deployment-on-Windows-10-11-device)
 - [arabindadora/log4shell](https://github.com/arabindadora/log4shell)
 - [d4ngkh04w/CVE-2021-44228-Apache-Log4j2](https://github.com/d4ngkh04w/CVE-2021-44228-Apache-Log4j2)
+- [Mintimate/log4j2-bugmaker](https://github.com/Mintimate/log4j2-bugmaker)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -52575,6 +52615,7 @@
 - [A-Alabdoo/CVE-DVr](https://github.com/A-Alabdoo/CVE-DVr)
 - [its-anya/DVR_Credential_Scanner](https://github.com/its-anya/DVR_Credential_Scanner)
 - [jameseyes/DVRC](https://github.com/jameseyes/DVRC)
+- [0xDamian/CVE-2018-9995-rs](https://github.com/0xDamian/CVE-2018-9995-rs)
 
 ### CVE-2018-10097 (2018-04-13)
 
