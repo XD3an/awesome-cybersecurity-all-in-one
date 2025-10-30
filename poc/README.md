@@ -2303,6 +2303,13 @@
 - [Mindasy/cve-2025-23266-migration-bypass](https://github.com/Mindasy/cve-2025-23266-migration-bypass)
 - [mrk336/CVE-2025-23266](https://github.com/mrk336/CVE-2025-23266)
 
+### CVE-2025-23320 (2025-08-06)
+
+<code>NVIDIA Triton Inference Server for Windows and Linux contains a vulnerability in the Python backend, where an attacker could cause the shared memory limit to be exceeded by sending a very large request. A successful exploit of this vulnerability might lead to information disclosure.
+</code>
+
+- [There-was-a-bird/triton-cve-2025-23320](https://github.com/There-was-a-bird/triton-cve-2025-23320)
+
 ### CVE-2025-23369 (2025-01-21)
 
 <code>An improper verification of cryptographic signature vulnerability was identified in GitHub Enterprise Server that allowed signature spoofing for unauthorized internal users.  Instances not utilizing SAML single sign-on or where the attacker is not already an existing user were not impacted. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.12.14, 3.13.10, 3.14.7, 3.15.2, and 3.16.0. This vulnerability was reported via the GitHub Bug Bounty program.
@@ -2525,7 +2532,6 @@
 - [MuhammadWaseem29/CVE-2025-24799](https://github.com/MuhammadWaseem29/CVE-2025-24799)
 - [nak000/CVE-2025-24799-sqli](https://github.com/nak000/CVE-2025-24799-sqli)
 - [MatheuZSecurity/Exploit-CVE-2025-24799](https://github.com/MatheuZSecurity/Exploit-CVE-2025-24799)
-- [galletitaconpate/CVE-2025-24799](https://github.com/galletitaconpate/CVE-2025-24799)
 - [Rosemary1337/CVE-2025-24799](https://github.com/Rosemary1337/CVE-2025-24799)
 - [airbus-cert/CVE-2025-24799-scanner](https://github.com/airbus-cert/CVE-2025-24799-scanner)
 
@@ -3887,6 +3893,13 @@
 
 - [gregk4sec/CVE-2025-31651](https://github.com/gregk4sec/CVE-2025-31651)
 
+### CVE-2025-31702 (2025-10-15)
+
+<code>A vulnerability exists in certain Dahua embedded products. Third-party malicious attacker with obtained normal user credentials could exploit the vulnerability to access certain data which are restricted to admin privileges, such as system-sensitive files through specific HTTP request. This may cause tampering with admin password, leading to privilege escalation. Systems with only admin account are not affected.
+</code>
+
+- [purpleghosts/CVE-2025-31702](https://github.com/purpleghosts/CVE-2025-31702)
+
 ### CVE-2025-31710 (2025-06-03)
 
 <code>In engineermode service, there is a possible command injection due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed.
@@ -4518,6 +4531,13 @@
 
 - [AlexSvobo/nhi-zero-trust-bypass](https://github.com/AlexSvobo/nhi-zero-trust-bypass)
 
+### CVE-2025-40778 (2025-10-22)
+
+<code>Under certain circumstances, BIND is too lenient when accepting records from answers, allowing an attacker to inject forged data into the cache.\nThis issue affects BIND 9 versions 9.11.0 through 9.16.50, 9.18.0 through 9.18.39, 9.20.0 through 9.20.13, 9.21.0 through 9.21.12, 9.11.3-S1 through 9.16.50-S1, 9.18.11-S1 through 9.18.39-S1, and 9.20.9-S1 through 9.20.13-S1.
+</code>
+
+- [nehkark/CVE-2025-40778](https://github.com/nehkark/CVE-2025-40778)
+
 ### CVE-2025-41088 (2025-10-10)
 
 <code>Stored Cross-Site Scripting (XSS) in Xibo Signage's Xibo CMS v4.1.2, due to a lack of proper validation of user input. To exploit the vulnerability, the attacker must create a template in the 'Templates' section, then add a text element in the 'Global Elements' section, and finally modify the 'Text' field in the section with the malicious payload.
@@ -4531,6 +4551,13 @@
 </code>
 
 - [Marinafabregat/CVE-2025-41089](https://github.com/Marinafabregat/CVE-2025-41089)
+
+### CVE-2025-41090 (2025-10-28)
+
+<code>microCLAUDIA in v3.2.0 and prior has an improper access control vulnerability.\n\nThis flaw allows an authenticated user to perform unauthorized actions on other organizations' systems by sending direct API requests. To do so, the attacker can use organization identifiers obtained through a compromised endpoint or deduced manually.\n\nThis vulnerability allows access between tenants, enabling an attacker to list and manage remote assets, uninstall agents, and even delete vaccines configurations.
+</code>
+
+- [TheMalwareGuardian/brokeCLAUDIA](https://github.com/TheMalwareGuardian/brokeCLAUDIA)
 
 ### CVE-2025-41244 (2025-09-29)
 
@@ -4554,6 +4581,13 @@
 
 - [GreenForceNetworks/CVE-2025-41646---Critical-Authentication-Bypass-](https://github.com/GreenForceNetworks/CVE-2025-41646---Critical-Authentication-Bypass-)
 - [r0otk3r/CVE-2025-41646](https://github.com/r0otk3r/CVE-2025-41646)
+
+### CVE-2025-41656 (2025-07-01)
+
+<code>An unauthenticated remote attacker can run arbitrary commands on the affected devices with high privileges because the authentication for the Node_RED server is not configured by default.
+</code>
+
+- [wallyschag/CVE-2025-41656](https://github.com/wallyschag/CVE-2025-41656)
 
 ### CVE-2025-42944 (2025-09-09)
 
@@ -5397,6 +5431,7 @@
 - [Mufti22/CVE-2025-49844-RediShell-Vulnerability-Scanner](https://github.com/Mufti22/CVE-2025-49844-RediShell-Vulnerability-Scanner)
 - [imbas007/CVE-2025-49844-Vulnerability-Scanner](https://github.com/imbas007/CVE-2025-49844-Vulnerability-Scanner)
 - [angelusrivera/CVE-2025-49844](https://github.com/angelusrivera/CVE-2025-49844)
+- [elyasbassir/CVE-2025-49844](https://github.com/elyasbassir/CVE-2025-49844)
 
 ### CVE-2025-50000
 - [adiivascu/CVE-2025-50000](https://github.com/adiivascu/CVE-2025-50000)
@@ -6341,6 +6376,7 @@
 </code>
 
 - [TAM-K592/CVE-2025-55752](https://github.com/TAM-K592/CVE-2025-55752)
+- [masahiro331/CVE-2025-55752](https://github.com/masahiro331/CVE-2025-55752)
 
 ### CVE-2025-55763 (2025-08-29)
 
@@ -6850,6 +6886,7 @@
 - [mrk336/Breaking-the-Update-Chain-Inside-CVE-2025-59287-and-the-WSUS-RCE-Threat](https://github.com/mrk336/Breaking-the-Update-Chain-Inside-CVE-2025-59287-and-the-WSUS-RCE-Threat)
 - [AdityaBhatt3010/CVE-2025-59287-When-your-patch-server-becomes-the-attack-vector](https://github.com/AdityaBhatt3010/CVE-2025-59287-When-your-patch-server-becomes-the-attack-vector)
 - [esteban11121/WSUS-RCE-Mitigation-59287](https://github.com/esteban11121/WSUS-RCE-Mitigation-59287)
+- [fsanzmoya/wsus_CVE-2025-59287](https://github.com/fsanzmoya/wsus_CVE-2025-59287)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -6959,7 +6996,11 @@
 
 - [H4zaz/CVE-2025-60500](https://github.com/H4zaz/CVE-2025-60500)
 
-### CVE-2025-60595
+### CVE-2025-60595 (2025-10-29)
+
+<code>SPH Engineering UgCS 5.13.0 is vulnerable to Arbitary code execution.
+</code>
+
 - [Clicksafeae/CVE-2025-60595](https://github.com/Clicksafeae/CVE-2025-60595)
 
 ### CVE-2025-60736
@@ -7016,7 +7057,11 @@
 
 - [pollotherunner/CVE-2025-61155](https://github.com/pollotherunner/CVE-2025-61155)
 
-### CVE-2025-61156
+### CVE-2025-61156 (2025-10-29)
+
+<code>Incorrect access control in the kernel driver of ThreatFire System Monitor v4.7.0.53 allows attackers to escalate privileges and execute arbitrary commands via an insecure IOCTL.
+</code>
+
 - [D7EAD/CVE-2025-61156](https://github.com/D7EAD/CVE-2025-61156)
 
 ### CVE-2025-61183 (2025-10-08)
@@ -7025,6 +7070,9 @@
 </code>
 
 - [thawphone/CVE-2025-61183](https://github.com/thawphone/CVE-2025-61183)
+
+### CVE-2025-61196
+- [zsamamah/CVE-2025-61196](https://github.com/zsamamah/CVE-2025-61196)
 
 ### CVE-2025-61301 (2025-10-20)
 
@@ -7070,6 +7118,9 @@
 </code>
 
 - [tansique-17/CVE-2025-61456](https://github.com/tansique-17/CVE-2025-61456)
+
+### CVE-2025-61498
+- [sakshi-garg02/CVE-2025-61498](https://github.com/sakshi-garg02/CVE-2025-61498)
 
 ### CVE-2025-61622 (2025-10-01)
 
@@ -7148,13 +7199,6 @@
 
 - [SubZeroHackerz/CVE-2025-62410](https://github.com/SubZeroHackerz/CVE-2025-62410)
 
-### CVE-2025-62481 (2025-10-21)
-
-<code>Vulnerability in the Oracle Marketing product of Oracle E-Business Suite (component: Marketing Administration).  Supported versions that are affected are 12.2.3-12.2.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Marketing.  Successful attacks of this vulnerability can result in takeover of Oracle Marketing. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
-</code>
-
-- [callinston/CVE-2025-62481](https://github.com/callinston/CVE-2025-62481)
-
 ### CVE-2025-62506 (2025-10-16)
 
 <code>MinIO is a high-performance object storage system. In all versions prior to RELEASE.2025-10-15T17-29-55Z, a privilege escalation vulnerability allows service accounts and STS (Security Token Service) accounts with restricted session policies to bypass their inline policy restrictions when performing operations on their own account, specifically when creating new service accounts for the same user. The vulnerability exists in the IAM policy validation logic where the code incorrectly relied on the DenyOnly argument when validating session policies for restricted accounts. When a session policy is present, the system should validate that the action is allowed by the session policy, not just that it is not denied. An attacker with valid credentials for a restricted service or STS account can create a new service account for itself without policy restrictions, resulting in a new service account with full parent privileges instead of being restricted by the inline policy. This allows the attacker to access buckets and objects beyond their intended restrictions and modify, delete, or create objects outside their authorized scope. The vulnerability is fixed in version RELEASE.2025-10-15T17-29-55Z.
@@ -7175,6 +7219,16 @@
 </code>
 
 - [ch4n3-yoon/CVE-2025-62727-Demo](https://github.com/ch4n3-yoon/CVE-2025-62727-Demo)
+
+### CVE-2025-63298
+- [z3rObyte/CVE-2025-63298](https://github.com/z3rObyte/CVE-2025-63298)
+
+### CVE-2025-64095 (2025-10-28)
+
+<code>DNN (formerly DotNetNuke) is an open-source web content management platform (CMS) in the Microsoft ecosystem. Prior to 10.1.1, the default HTML editor provider allows unauthenticated file uploads and images can overwrite existing files. An unauthenticated user can upload and replace existing files allowing defacing a website and combined with other issue, injection XSS payloads. This vulnerability is fixed in 10.1.1.
+</code>
+
+- [callinston/CVE-2025-64095](https://github.com/callinston/CVE-2025-64095)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -10775,7 +10829,7 @@
 
 ### CVE-2024-21733 (2024-01-19)
 
-<code>Generation of Error Message Containing Sensitive Information vulnerability in Apache Tomcat.This issue affects Apache Tomcat: from 8.5.7 through 8.5.63, from 9.0.0-M11 through 9.0.43.\n\nUsers are recommended to upgrade to version 8.5.64 onwards or 9.0.44 onwards, which contain a fix for the issue.
+<code>Generation of Error Message Containing Sensitive Information vulnerability in Apache Tomcat.This issue affects Apache Tomcat: from 8.5.7 through 8.5.63, from 9.0.0-M11 through 9.0.43. Other, EOL versions may also be affected.\n\nUsers are recommended to upgrade to version 8.5.64 onwards or 9.0.44 onwards, which contain a fix for the issue.
 </code>
 
 - [LtmThink/CVE-2024-21733](https://github.com/LtmThink/CVE-2024-21733)
@@ -11591,7 +11645,7 @@
 
 ### CVE-2024-24549 (2024-03-13)
 
-<code>Denial of Service due to improper input validation vulnerability for HTTP/2 requests in Apache Tomcat. When processing an HTTP/2 request, if the request exceeded any of the configured limits for headers, the associated HTTP/2 stream was not reset until after all of the headers had been processed.This issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M16, from 10.1.0-M1 through 10.1.18, from 9.0.0-M1 through 9.0.85, from 8.5.0 through 8.5.98.\n\nUsers are recommended to upgrade to version 11.0.0-M17, 10.1.19, 9.0.86 or 8.5.99 which fix the issue.
+<code>Denial of Service due to improper input validation vulnerability for HTTP/2 requests in Apache Tomcat. When processing an HTTP/2 request, if the request exceeded any of the configured limits for headers, the associated HTTP/2 stream was not reset until after all of the headers had been processed.This issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M16, from 10.1.0-M1 through 10.1.18, from 9.0.0-M1 through 9.0.85, from 8.5.0 through 8.5.98. Other, older, EOL versions may also be affected.\n\nUsers are recommended to upgrade to version 11.0.0-M17, 10.1.19, 9.0.86 or 8.5.99 which fix the issue.
 </code>
 
 - [Abdurahmon3236/CVE-2024-24549](https://github.com/Abdurahmon3236/CVE-2024-24549)
@@ -15599,6 +15653,7 @@
 </code>
 
 - [barttran2k/POC_CVE-2024-46256](https://github.com/barttran2k/POC_CVE-2024-46256)
+- [TranDongA3/Simulation_CVE-2024-46256](https://github.com/TranDongA3/Simulation_CVE-2024-46256)
 
 ### CVE-2024-46278 (2024-10-07)
 
@@ -16643,7 +16698,7 @@
 
 ### CVE-2024-52316 (2024-11-18)
 
-<code>Unchecked Error Condition vulnerability in Apache Tomcat. If Tomcat is configured to use a custom Jakarta Authentication (formerly JASPIC) ServerAuthContext component which may throw an exception during the authentication process without explicitly setting an HTTP status to indicate failure, the authentication may not fail, allowing the user to bypass the authentication process. There are no known Jakarta Authentication components that behave in this way.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M26, from 10.1.0-M1 through 10.1.30, from 9.0.0-M1 through 9.0.95.\n\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: 8.5.0 though 8.5.100.\n\n\nUsers are recommended to upgrade to version 11.0.0, 10.1.31 or 9.0.96, which fix the issue.
+<code>Unchecked Error Condition vulnerability in Apache Tomcat. If Tomcat is configured to use a custom Jakarta Authentication (formerly JASPIC) ServerAuthContext component which may throw an exception during the authentication process without explicitly setting an HTTP status to indicate failure, the authentication may not fail, allowing the user to bypass the authentication process. There are no known Jakarta Authentication components that behave in this way.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M26, from 10.1.0-M1 through 10.1.30, from 9.0.0-M1 through 9.0.95.\n\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: 8.5.0 though 8.5.100. Other EOL versions may also be affected.\n\n\nUsers are recommended to upgrade to version 11.0.0, 10.1.31 or 9.0.96, which fix the issue.
 </code>
 
 - [TAM-K592/CVE-2024-52316](https://github.com/TAM-K592/CVE-2024-52316)
@@ -34534,7 +34589,6 @@
 - [exploitblizzard/Windows-Privilege-Escalation-CVE-2021-1732](https://github.com/exploitblizzard/Windows-Privilege-Escalation-CVE-2021-1732)
 - [BeneficialCode/CVE-2021-1732](https://github.com/BeneficialCode/CVE-2021-1732)
 - [ExploitCN/CVE-2021-1732-EXP-](https://github.com/ExploitCN/CVE-2021-1732-EXP-)
-- [r1l4-i3pur1l4/CVE-2021-1732](https://github.com/r1l4-i3pur1l4/CVE-2021-1732)
 - [fenalik/CVE-2021-1732](https://github.com/fenalik/CVE-2021-1732)
 - [4dp/CVE-2021-1732](https://github.com/4dp/CVE-2021-1732)
 - [yangshifan-git/CVE-2021-1732](https://github.com/yangshifan-git/CVE-2021-1732)
@@ -37409,6 +37463,7 @@
 </code>
 
 - [freeide/CVE-2021-31955-POC](https://github.com/freeide/CVE-2021-31955-POC)
+- [ApexPredator-InfoSec/forti_shield](https://github.com/ApexPredator-InfoSec/forti_shield)
 
 ### CVE-2021-31956 (2021-06-08)
 
@@ -44390,6 +44445,7 @@
 - [zesnd/CVE-2020-14882-POC](https://github.com/zesnd/CVE-2020-14882-POC)
 - [AleksaZatezalo/CVE-2020-14882](https://github.com/AleksaZatezalo/CVE-2020-14882)
 - [KKC73/weblogic-cve-2020-14882](https://github.com/KKC73/weblogic-cve-2020-14882)
+- [AshrafZaryouh/CVE-2020-14882](https://github.com/AshrafZaryouh/CVE-2020-14882)
 
 ### CVE-2020-14883 (2020-10-21)
 
@@ -58884,6 +58940,13 @@
 </code>
 
 - [fatlan/HAProxy-Keepalived-Sec-HighLoads](https://github.com/fatlan/HAProxy-Keepalived-Sec-HighLoads)
+
+### CVE-2015-4077 (2015-09-03)
+
+<code>The (1) mdare64_48.sys, (2) mdare32_48.sys, (3) mdare32_52.sys, and (4) mdare64_52.sys drivers in Fortinet FortiClient before 5.2.4 allow local users to read arbitrary kernel memory via a 0x22608C ioctl call.
+</code>
+
+- [ApexPredator-InfoSec/forti_shield](https://github.com/ApexPredator-InfoSec/forti_shield)
 
 ### CVE-2015-4133 (2015-05-28)
 
