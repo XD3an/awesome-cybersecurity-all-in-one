@@ -6322,7 +6322,6 @@
 
 - [nickcopi/CVE-2025-55315-detection-playground](https://github.com/nickcopi/CVE-2025-55315-detection-playground)
 - [sirredbeard/CVE-2025-55315-repro](https://github.com/sirredbeard/CVE-2025-55315-repro)
-- [RootAid/CVE-2025-55315](https://github.com/RootAid/CVE-2025-55315)
 - [7huukdlnkjkjba/CVE-2025-55315-](https://github.com/7huukdlnkjkjba/CVE-2025-55315-)
 - [jlinebau/CVE-2025-55315-Scanner-Monitor](https://github.com/jlinebau/CVE-2025-55315-Scanner-Monitor)
 
@@ -7119,9 +7118,6 @@
 
 - [tansique-17/CVE-2025-61456](https://github.com/tansique-17/CVE-2025-61456)
 
-### CVE-2025-61498
-- [sakshi-garg02/CVE-2025-61498](https://github.com/sakshi-garg02/CVE-2025-61498)
-
 ### CVE-2025-61622 (2025-10-01)
 
 <code>Deserialization of untrusted data in python in pyfory versions 0.12.0 through 0.12.2, or the legacy pyfury versions from 0.1.0 through 0.10.3: allows arbitrary code execution. An application is vulnerable if it reads pyfory serialized data from untrusted sources. An attacker can craft a data stream that selects pickle-fallback serializer during deserialization, leading to the execution of `pickle.loads`, which is vulnerable to remote code execution.\n\nUsers are recommended to upgrade to pyfory version 0.12.3 or later, which has removed pickle fallback serializer and thus fixes this issue.
@@ -7147,7 +7143,6 @@
 - [Sachinart/CVE-2025-61882](https://github.com/Sachinart/CVE-2025-61882)
 - [B1ack4sh/Blackash-CVE-2025-61882](https://github.com/B1ack4sh/Blackash-CVE-2025-61882)
 - [zerozenxlabs/CVE-2025-61882-Oracle-EBS](https://github.com/zerozenxlabs/CVE-2025-61882-Oracle-EBS)
-- [RootAid/CVE-2025-61882](https://github.com/RootAid/CVE-2025-61882)
 - [MindflareX/CVE-2025-61882-POC](https://github.com/MindflareX/CVE-2025-61882-POC)
 - [AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit](https://github.com/AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit)
 - [BattalionX/http-oracle-ebs-cve-2025-61882.nse](https://github.com/BattalionX/http-oracle-ebs-cve-2025-61882.nse)
@@ -28669,7 +28664,7 @@
 - [nanaao/CVE-2022-22947-POC](https://github.com/nanaao/CVE-2022-22947-POC)
 - [hunzi0/CVE-2022-22947-Rce_POC](https://github.com/hunzi0/CVE-2022-22947-Rce_POC)
 - [22ke/CVE-2022-22947](https://github.com/22ke/CVE-2022-22947)
-- [M0ge/CVE-2022-22947-Spring-Cloud-Gateway-SpelRCE](https://github.com/M0ge/CVE-2022-22947-Spring-Cloud-Gateway-SpelRCE)
+- [MoCh3n/CVE-2022-22947-Spring-Cloud-Gateway-SpelRCE](https://github.com/MoCh3n/CVE-2022-22947-Spring-Cloud-Gateway-SpelRCE)
 - [YutuSec/SpEL](https://github.com/YutuSec/SpEL)
 - [Jun-5heng/CVE-2022-22947](https://github.com/Jun-5heng/CVE-2022-22947)
 - [darkb1rd/cve-2022-22947](https://github.com/darkb1rd/cve-2022-22947)
