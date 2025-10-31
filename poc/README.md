@@ -1197,6 +1197,13 @@
 - [mbadanoiu/CVE-2025-6384](https://github.com/mbadanoiu/CVE-2025-6384)
 - [maestro-ant/CrafterCMS-CVE-2025-6384](https://github.com/maestro-ant/CrafterCMS-CVE-2025-6384)
 
+### CVE-2025-6440 (2025-10-24)
+
+<code>The WooCommerce Designer Pro plugin for WordPress, used by the Pricom - Printing Company &amp; Design Services WordPress theme, is vulnerable to arbitrary file uploads due to missing file type validation in the 'wcdp_save_canvas_design_ajax' function in all versions up to, and including, 1.9.26. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
+</code>
+
+- [Pwdnx1337/CVE-2025-6440](https://github.com/Pwdnx1337/CVE-2025-6440)
+
 ### CVE-2025-6514 (2025-07-09)
 
 <code>mcp-remote is exposed to OS command injection when connecting to untrusted MCP servers due to crafted input from the authorization_endpoint response URL
@@ -1793,6 +1800,7 @@
 - [rxerium/CVE-2025-10035](https://github.com/rxerium/CVE-2025-10035)
 - [ThemeHackers/CVE-2025-10035](https://github.com/ThemeHackers/CVE-2025-10035)
 - [orange0Mint/CVE-2025-10035_GoAnywhere](https://github.com/orange0Mint/CVE-2025-10035_GoAnywhere)
+- [B1ack4sh/Blackash-CVE-2025-10035](https://github.com/B1ack4sh/Blackash-CVE-2025-10035)
 
 ### CVE-2025-10041 (2025-10-15)
 
@@ -2488,6 +2496,13 @@
 
 - [Admin9961/CVE-2025-24354-PoC](https://github.com/Admin9961/CVE-2025-24354-PoC)
 
+### CVE-2025-24367 (2025-01-27)
+
+<code>Cacti is an open source performance and fault management framework. An authenticated Cacti user can abuse graph creation and graph template functionality to create arbitrary PHP scripts in the web root of the application, leading to remote code execution on the server. This vulnerability is fixed in 1.2.29.
+</code>
+
+- [TheCyberGeek/CVE-2025-24367-Cacti-PoC](https://github.com/TheCyberGeek/CVE-2025-24367-Cacti-PoC)
+
 ### CVE-2025-24514 (2025-03-24)
 
 <code>A security issue was discovered in  ingress-nginx https://github.com/kubernetes/ingress-nginx  where the `auth-url` Ingress annotation can be used to inject configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)
@@ -3047,6 +3062,13 @@
 
 - [NightBloodz/moodleTestingEnv](https://github.com/NightBloodz/moodleTestingEnv)
 - [Astroo18/PoC-CVE-2025-26529](https://github.com/Astroo18/PoC-CVE-2025-26529)
+
+### CVE-2025-26625 (2025-10-17)
+
+<code>Git LFS is a Git extension for versioning large files. In Git LFS versions 0.5.2 through 3.7.0, when populating a Git repository's working tree with the contents of Git LFS objects, certain Git LFS commands may write to files visible outside the current Git working tree if symbolic or hard links exist which collide with the paths of files tracked by Git LFS. The git lfs checkout and git lfs pull commands do not check for symbolic links before writing to files in the working tree, allowing an attacker to craft a repository containing symbolic or hard links that cause Git LFS to write to arbitrary file system locations accessible to the user running these commands. As well, when the git lfs checkout and git lfs pull commands are run in a bare repository, they could write to files visible outside the repository. The vulnerability is fixed in version 3.7.1. As a workaround, support for symlinks in Git may be disabled by setting the core.symlinks configuration option to false, after which further clones and fetches will not create symbolic links. However, any symbolic or hard links in existing repositories will still provide the opportunity for Git LFS to write to their targets.
+</code>
+
+- [Mitchellzhou1/CVE_2025_26625](https://github.com/Mitchellzhou1/CVE_2025_26625)
 
 ### CVE-2025-26633 (2025-03-11)
 
@@ -4164,6 +4186,7 @@
 - [dr4xp/sudo-chroot](https://github.com/dr4xp/sudo-chroot)
 - [robbin0919/CVE-2025-32463](https://github.com/robbin0919/CVE-2025-32463)
 - [DensuLabs/CVE-2025-32463](https://github.com/DensuLabs/CVE-2025-32463)
+- [muhammedkayag/CVE-2025-32463](https://github.com/muhammedkayag/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -4296,7 +4319,7 @@
 
 ### CVE-2025-34040 (2025-06-24)
 
-<code>An arbitrary file upload vulnerability exists in the Zhiyuan OA platform 5.0, 5.1 - 5.6sp1, 6.0 - 6.1sp2, 7.0, 7.0sp1 - 7.1, 7.1sp1, and 8.0 - 8.0sp2 via the wpsAssistServlet interface. The realFileType and fileId parameters are improperly validated during multipart file uploads, allowing unauthenticated attackers to upload crafted JSP files outside of intended directories using path traversal. Successful exploitation enables remote code execution as the uploaded file can be accessed and executed through the web server.
+<code>An arbitrary file upload vulnerability exists in the Zhiyuan OA platform via the wpsAssistServlet interface. The realFileType and fileId parameters are improperly validated during multipart file uploads, allowing unauthenticated attackers to upload crafted JSP files outside of intended directories using path traversal. Successful exploitation enables remote code execution as the uploaded file can be accessed and executed through the web server.
 </code>
 
 - [jisi-001/CVE-2025-34040Exp](https://github.com/jisi-001/CVE-2025-34040Exp)
@@ -5432,6 +5455,7 @@
 - [imbas007/CVE-2025-49844-Vulnerability-Scanner](https://github.com/imbas007/CVE-2025-49844-Vulnerability-Scanner)
 - [angelusrivera/CVE-2025-49844](https://github.com/angelusrivera/CVE-2025-49844)
 - [elyasbassir/CVE-2025-49844](https://github.com/elyasbassir/CVE-2025-49844)
+- [B1ack4sh/Blackash-CVE-2025-49844](https://github.com/B1ack4sh/Blackash-CVE-2025-49844)
 
 ### CVE-2025-50000
 - [adiivascu/CVE-2025-50000](https://github.com/adiivascu/CVE-2025-50000)
@@ -6278,6 +6302,13 @@
 
 - [mrk336/From-Foothold-to-Domain-Admin-Weaponizing-CVE-2025-54918-in-Real-World-DevOps](https://github.com/mrk336/From-Foothold-to-Domain-Admin-Weaponizing-CVE-2025-54918-in-Real-World-DevOps)
 
+### CVE-2025-54957 (2025-10-20)
+
+<code>An issue was discovered in Dolby UDC 4.5 through 4.13. A crash of the DD+ decoder process can occur when a malformed DD+ bitstream is processed. When Evolution data is processed by evo_priv.c from the DD+ bitstream, the decoder writes that data into a buffer. The length calculation for a write can overflow due to an integer wraparound. This can lead to the allocated buffer being too small, and the out-of-bounds check of the subsequent write to be ineffective, leading to an out-of-bounds write.
+</code>
+
+- [AlphabugX/CVE-2025-54957](https://github.com/AlphabugX/CVE-2025-54957)
+
 ### CVE-2025-54962 (2025-08-04)
 
 <code>/edit-user in webserver in OpenPLC Runtime 3 through 9cd8f1b allows authenticated users to upload arbitrary files (such as .html or .svg), and these are then publicly accessible under the /static URI.
@@ -6376,6 +6407,7 @@
 
 - [TAM-K592/CVE-2025-55752](https://github.com/TAM-K592/CVE-2025-55752)
 - [masahiro331/CVE-2025-55752](https://github.com/masahiro331/CVE-2025-55752)
+- [B1ack4sh/Blackash-CVE-2025-55752](https://github.com/B1ack4sh/Blackash-CVE-2025-55752)
 
 ### CVE-2025-55763 (2025-08-29)
 
@@ -6886,6 +6918,7 @@
 - [AdityaBhatt3010/CVE-2025-59287-When-your-patch-server-becomes-the-attack-vector](https://github.com/AdityaBhatt3010/CVE-2025-59287-When-your-patch-server-becomes-the-attack-vector)
 - [esteban11121/WSUS-RCE-Mitigation-59287](https://github.com/esteban11121/WSUS-RCE-Mitigation-59287)
 - [fsanzmoya/wsus_CVE-2025-59287](https://github.com/fsanzmoya/wsus_CVE-2025-59287)
+- [0x7556/CVE-2025-59287](https://github.com/0x7556/CVE-2025-59287)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -6995,6 +7028,9 @@
 
 - [H4zaz/CVE-2025-60500](https://github.com/H4zaz/CVE-2025-60500)
 
+### CVE-2025-60503
+- [H4zaz/CVE-2025-60503](https://github.com/H4zaz/CVE-2025-60503)
+
 ### CVE-2025-60595 (2025-10-29)
 
 <code>SPH Engineering UgCS 5.13.0 is vulnerable to Arbitary code execution.
@@ -7070,7 +7106,11 @@
 
 - [thawphone/CVE-2025-61183](https://github.com/thawphone/CVE-2025-61183)
 
-### CVE-2025-61196
+### CVE-2025-61196 (2025-10-30)
+
+<code>An issue in BusinessNext CRMnext v.10.8.3.0 allows a remote attacker to execute arbitrary code via the comments unput parameter
+</code>
+
 - [zsamamah/CVE-2025-61196](https://github.com/zsamamah/CVE-2025-61196)
 
 ### CVE-2025-61301 (2025-10-20)
@@ -7117,6 +7157,13 @@
 </code>
 
 - [tansique-17/CVE-2025-61456](https://github.com/tansique-17/CVE-2025-61456)
+
+### CVE-2025-61481 (2025-10-27)
+
+<code>An issue in MikroTik RouterOS v.7.14.2 and SwOS v.2.18 exposes the WebFig management interface over cleartext HTTP by default, allowing an on-path attacker to execute injected JavaScript in the administrator’s browser and intercept credentials.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-61481](https://github.com/B1ack4sh/Blackash-CVE-2025-61481)
 
 ### CVE-2025-61622 (2025-10-01)
 
@@ -7215,7 +7262,11 @@
 
 - [ch4n3-yoon/CVE-2025-62727-Demo](https://github.com/ch4n3-yoon/CVE-2025-62727-Demo)
 
-### CVE-2025-63298
+### CVE-2025-63298 (2025-10-30)
+
+<code>A path traversal vulnerability was identified in SourceCodester Pet Grooming Management System 1.0, affecting the admin/manage_website.php component. An authenticated user with administrative privileges can leverage this flaw by submitting a specially crafted POST request, enabling the deletion of arbitrary files on the web server or underlying operating system.
+</code>
+
 - [z3rObyte/CVE-2025-63298](https://github.com/z3rObyte/CVE-2025-63298)
 
 ### CVE-2025-64095 (2025-10-28)
@@ -9099,7 +9150,7 @@
 <code>A flaw was found in openshift/builder. This vulnerability allows command injection via path traversal, where a malicious user can execute arbitrary commands on the OpenShift node running the builder container. When using the “Docker” strategy, executable files inside the privileged build container can be overridden using the `spec.source.secrets.secret.destinationDir` attribute of the `BuildConfig` definition. An attacker running code in a privileged container could escalate their permissions on the node running the container.
 </code>
 
-- [0xSigSegv0x00/cve-2024-7387](https://github.com/0xSigSegv0x00/cve-2024-7387)
+- [fatcatresearch/cve-2024-7387](https://github.com/fatcatresearch/cve-2024-7387)
 
 ### CVE-2024-7399 (2024-08-09)
 
@@ -10175,7 +10226,7 @@
 
 - [themirze/cve-2024-12084](https://github.com/themirze/cve-2024-12084)
 - [rxerium/CVE-2024-12084](https://github.com/rxerium/CVE-2024-12084)
-- [0xSigSegv0x00/cve-2024-12084](https://github.com/0xSigSegv0x00/cve-2024-12084)
+- [fatcatresearch/cve-2024-12084](https://github.com/fatcatresearch/cve-2024-12084)
 
 ### CVE-2024-12085 (2025-01-14)
 
@@ -13766,6 +13817,13 @@
 
 - [momo1239/CVE-2024-35333](https://github.com/momo1239/CVE-2024-35333)
 
+### CVE-2024-35374 (2024-05-24)
+
+<code>Mocodo Mocodo Online 4.2.6 and below does not properly sanitize the sql_case input field in /web/generate.php, allowing remote attackers to execute arbitrary commands and potentially command injection, leading to remote code execution (RCE) under certain conditions.
+</code>
+
+- [Rikoot/CVE-2024-35374](https://github.com/Rikoot/CVE-2024-35374)
+
 ### CVE-2024-35468 (2024-05-30)
 
 <code>A SQL injection vulnerability in /hrm/index.php in SourceCodester Human Resource Management System 1.0 allows attackers to execute arbitrary SQL commands via the password parameter.
@@ -13968,7 +14026,7 @@
 - [jaytiwari05/CVE-2024-36991](https://github.com/jaytiwari05/CVE-2024-36991)
 - [TheStingR/CVE-2024-36991-Tool](https://github.com/TheStingR/CVE-2024-36991-Tool)
 - [gunzf0x/CVE-2024-36991](https://github.com/gunzf0x/CVE-2024-36991)
-- [Zin0D/CVE-2024-36991](https://github.com/Zin0D/CVE-2024-36991)
+- [0xFZin/CVE-2024-36991](https://github.com/0xFZin/CVE-2024-36991)
 
 ### CVE-2024-37010
 - [SarpantKeltiek/CVE-2024-37010](https://github.com/SarpantKeltiek/CVE-2024-37010)
@@ -15581,7 +15639,7 @@
 <code>A flaw was found in OpenShift. This issue occurs due to the misuse of elevated privileges in the OpenShift Container Platform's build process. During the build initialization step, the git-clone container is run with a privileged security context, allowing unrestricted access to the node. An attacker with developer-level access can provide a crafted .gitconfig file containing commands executed during the cloning process, leading to arbitrary command execution on the worker node. An attacker running code in a privileged container could escalate their permissions on the node running the container.
 </code>
 
-- [0xSigSegv0x00/cve-2024-45496](https://github.com/0xSigSegv0x00/cve-2024-45496)
+- [fatcatresearch/cve-2024-45496](https://github.com/fatcatresearch/cve-2024-45496)
 
 ### CVE-2024-45507 (2024-09-04)
 
@@ -16055,6 +16113,7 @@
 - [ten-ops/CVE-2024-48990_needrestart](https://github.com/ten-ops/CVE-2024-48990_needrestart)
 - [Serner77/CVE-2024-48990-Automatic-Exploit](https://github.com/Serner77/CVE-2024-48990-Automatic-Exploit)
 - [mladicstefan/CVE-2024-48990](https://github.com/mladicstefan/CVE-2024-48990)
+- [Mr-DJ/CVE-2024-48990](https://github.com/Mr-DJ/CVE-2024-48990)
 
 ### CVE-2024-49019 (2024-11-12)
 
@@ -39799,7 +39858,7 @@
 - [asaotomo/CVE-2021-43798-Grafana-Exp](https://github.com/asaotomo/CVE-2021-43798-Grafana-Exp)
 - [A-D-Team/grafanaExp](https://github.com/A-D-Team/grafanaExp)
 - [kenuosec/grafanaExp](https://github.com/kenuosec/grafanaExp)
-- [M0ge/CVE-2021-43798-grafana_fileread](https://github.com/M0ge/CVE-2021-43798-grafana_fileread)
+- [MoCh3n/CVE-2021-43798-grafana_fileread](https://github.com/MoCh3n/CVE-2021-43798-grafana_fileread)
 - [JiuBanSec/Grafana-CVE-2021-43798](https://github.com/JiuBanSec/Grafana-CVE-2021-43798)
 - [lfz97/CVE-2021-43798-Grafana-File-Read](https://github.com/lfz97/CVE-2021-43798-Grafana-File-Read)
 - [s1gh/CVE-2021-43798](https://github.com/s1gh/CVE-2021-43798)
@@ -59047,7 +59106,7 @@
 </code>
 
 - [xpgdgit/CVE-2015-5531](https://github.com/xpgdgit/CVE-2015-5531)
-- [M0ge/CVE-2015-5531-POC](https://github.com/M0ge/CVE-2015-5531-POC)
+- [MoCh3n/CVE-2015-5531-POC](https://github.com/MoCh3n/CVE-2015-5531-POC)
 
 ### CVE-2015-5602 (2015-11-17)
 
