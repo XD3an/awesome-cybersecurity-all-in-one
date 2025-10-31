@@ -3063,13 +3063,6 @@
 - [NightBloodz/moodleTestingEnv](https://github.com/NightBloodz/moodleTestingEnv)
 - [Astroo18/PoC-CVE-2025-26529](https://github.com/Astroo18/PoC-CVE-2025-26529)
 
-### CVE-2025-26625 (2025-10-17)
-
-<code>Git LFS is a Git extension for versioning large files. In Git LFS versions 0.5.2 through 3.7.0, when populating a Git repository's working tree with the contents of Git LFS objects, certain Git LFS commands may write to files visible outside the current Git working tree if symbolic or hard links exist which collide with the paths of files tracked by Git LFS. The git lfs checkout and git lfs pull commands do not check for symbolic links before writing to files in the working tree, allowing an attacker to craft a repository containing symbolic or hard links that cause Git LFS to write to arbitrary file system locations accessible to the user running these commands. As well, when the git lfs checkout and git lfs pull commands are run in a bare repository, they could write to files visible outside the repository. The vulnerability is fixed in version 3.7.1. As a workaround, support for symlinks in Git may be disabled by setting the core.symlinks configuration option to false, after which further clones and fetches will not create symbolic links. However, any symbolic or hard links in existing repositories will still provide the opportunity for Git LFS to write to their targets.
-</code>
-
-- [Mitchellzhou1/CVE_2025_26625](https://github.com/Mitchellzhou1/CVE_2025_26625)
-
 ### CVE-2025-26633 (2025-03-11)
 
 <code>Improper neutralization in Microsoft Management Console allows an unauthorized attacker to bypass a security feature locally.
@@ -3098,6 +3091,7 @@
 
 - [OscarBataille/CVE-2025-26794](https://github.com/OscarBataille/CVE-2025-26794)
 - [ishwardeepp/CVE-2025-26794-Exim-Mail-SQLi](https://github.com/ishwardeepp/CVE-2025-26794-Exim-Mail-SQLi)
+- [XploitGh0st/CVE-2025-26794-exploit](https://github.com/XploitGh0st/CVE-2025-26794-exploit)
 
 ### CVE-2025-26865 (2025-03-10)
 
@@ -5456,6 +5450,7 @@
 - [angelusrivera/CVE-2025-49844](https://github.com/angelusrivera/CVE-2025-49844)
 - [elyasbassir/CVE-2025-49844](https://github.com/elyasbassir/CVE-2025-49844)
 - [B1ack4sh/Blackash-CVE-2025-49844](https://github.com/B1ack4sh/Blackash-CVE-2025-49844)
+- [saneki/cve-2025-49844](https://github.com/saneki/cve-2025-49844)
 
 ### CVE-2025-50000
 - [adiivascu/CVE-2025-50000](https://github.com/adiivascu/CVE-2025-50000)
@@ -14577,6 +14572,7 @@
 </code>
 
 - [typical-pashochek/CVE-2024-39713](https://github.com/typical-pashochek/CVE-2024-39713)
+- [blackcodersec/exploit-cve](https://github.com/blackcodersec/exploit-cve)
 
 ### CVE-2024-39717 (2024-08-22)
 
@@ -16114,6 +16110,7 @@
 - [Serner77/CVE-2024-48990-Automatic-Exploit](https://github.com/Serner77/CVE-2024-48990-Automatic-Exploit)
 - [mladicstefan/CVE-2024-48990](https://github.com/mladicstefan/CVE-2024-48990)
 - [Mr-DJ/CVE-2024-48990](https://github.com/Mr-DJ/CVE-2024-48990)
+- [Loaxert/CVE-2024-48990-PoC](https://github.com/Loaxert/CVE-2024-48990-PoC)
 
 ### CVE-2024-49019 (2024-11-12)
 
@@ -39279,6 +39276,7 @@
 - [hackedrishi/CTF_WRITEUPS-TryHackMe-CVE-2021-41773-](https://github.com/hackedrishi/CTF_WRITEUPS-TryHackMe-CVE-2021-41773-)
 - [MuhammadHuzaifaAsif/security-lab](https://github.com/MuhammadHuzaifaAsif/security-lab)
 - [gunzf0x/CVE-2021-41773](https://github.com/gunzf0x/CVE-2021-41773)
+- [Mahfujurjust/CVE-2021-41773](https://github.com/Mahfujurjust/CVE-2021-41773)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -40619,13 +40617,6 @@
 - [dskho/CVE-2021-45232](https://github.com/dskho/CVE-2021-45232)
 - [fany0r/CVE-2021-45232-RCE](https://github.com/fany0r/CVE-2021-45232-RCE)
 - [YutuSec/Apisix_Crack](https://github.com/YutuSec/Apisix_Crack)
-
-### CVE-2021-45416 (2022-02-01)
-
-<code>Reflected Cross-site scripting (XSS) vulnerability in RosarioSIS 8.2.1 allows attackers to inject arbitrary HTML via the search_term parameter in the modules/Scheduling/Courses.php script.
-</code>
-
-- [dnr6419/CVE-2021-45416](https://github.com/dnr6419/CVE-2021-45416)
 
 ### CVE-2021-45428 (2022-01-03)
 
