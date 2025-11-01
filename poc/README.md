@@ -896,7 +896,6 @@
 </code>
 
 - [Nxploited/CVE-2025-4796](https://github.com/Nxploited/CVE-2025-4796)
-- [Pwdnx1337/CVE-2025-4796](https://github.com/Pwdnx1337/CVE-2025-4796)
 
 ### CVE-2025-4822 (2025-07-24)
 
@@ -9548,6 +9547,7 @@
 - [verylazytech/CVE-2024-9047](https://github.com/verylazytech/CVE-2024-9047)
 - [Nxploited/CVE-2024-9047-Exploit](https://github.com/Nxploited/CVE-2024-9047-Exploit)
 - [tpdlshdmlrkfmcla/CVE-2024-9047](https://github.com/tpdlshdmlrkfmcla/CVE-2024-9047)
+- [amirqusairy99/WordPress-File-Upload-4.24.11---Unauthenticated-Path-Traversal](https://github.com/amirqusairy99/WordPress-File-Upload-4.24.11---Unauthenticated-Path-Traversal)
 
 ### CVE-2024-9061 (2024-10-16)
 
