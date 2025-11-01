@@ -896,6 +896,7 @@
 </code>
 
 - [Nxploited/CVE-2025-4796](https://github.com/Nxploited/CVE-2025-4796)
+- [Pwdnx1337/CVE-2025-4796](https://github.com/Pwdnx1337/CVE-2025-4796)
 
 ### CVE-2025-4822 (2025-07-24)
 
@@ -1900,6 +1901,7 @@
 - [ryanmroth/Orbit-Fox_SSRF_CVE-2025-10874](https://github.com/ryanmroth/Orbit-Fox_SSRF_CVE-2025-10874)
 
 ### CVE-2025-11001
+- [litolito54/CVE-2025-11001](https://github.com/litolito54/CVE-2025-11001)
 - [shalevo13/Se7enSlip](https://github.com/shalevo13/Se7enSlip)
 - [pacbypass/CVE-2025-11001](https://github.com/pacbypass/CVE-2025-11001)
 
@@ -2650,6 +2652,7 @@
 - [ibrahmsql/CVE-2025-24893](https://github.com/ibrahmsql/CVE-2025-24893)
 - [Yukik4z3/CVE-2025-24893](https://github.com/Yukik4z3/CVE-2025-24893)
 - [rvizx/CVE-2025-24893](https://github.com/rvizx/CVE-2025-24893)
+- [Y2F05p2w/CVE-2025-24893](https://github.com/Y2F05p2w/CVE-2025-24893)
 
 ### CVE-2025-24963 (2025-02-04)
 
@@ -5209,6 +5212,7 @@
 - [s41r4j/CVE-2025-48384-submodule](https://github.com/s41r4j/CVE-2025-48384-submodule)
 - [mukesh-610/cve-2025-48384-exploit](https://github.com/mukesh-610/cve-2025-48384-exploit)
 - [mukesh-610/cve-2025-48384](https://github.com/mukesh-610/cve-2025-48384)
+- [MarcoTondolo/cve-2025-48384-poc](https://github.com/MarcoTondolo/cve-2025-48384-poc)
 
 ### CVE-2025-48461 (2025-06-24)
 
@@ -5277,6 +5281,13 @@
 </code>
 
 - [ill-deed/vBulletin-CVE-2025-48828-Multi-target](https://github.com/ill-deed/vBulletin-CVE-2025-48828-Multi-target)
+
+### CVE-2025-48924 (2025-07-11)
+
+<code>Uncontrolled Recursion vulnerability in Apache Commons Lang.\n\nThis issue affects Apache Commons Lang: Starting with commons-lang:commons-lang 2.0 to 2.6, and, from org.apache.commons:commons-lang3 3.0 before 3.18.0.\n\nThe methods ClassUtils.getClass(...) can throw StackOverflowError on very long inputs. Because an Error is usually not handled by applications and libraries, a \nStackOverflowError could cause an application to stop.\n\nUsers are recommended to upgrade to version 3.18.0, which fixes the issue.
+</code>
+
+- [njawalkar/apache-commons-lang2](https://github.com/njawalkar/apache-commons-lang2)
 
 ### CVE-2025-48976 (2025-06-16)
 
@@ -7036,7 +7047,11 @@
 ### CVE-2025-60736
 - [WinDyAlphA/CVE-2025-60736](https://github.com/WinDyAlphA/CVE-2025-60736)
 
-### CVE-2025-60749
+### CVE-2025-60749 (2025-10-31)
+
+<code>DLL Hijacking vulnerability in Trimble SketchUp desktop 2025 via crafted libcef.dll used by sketchup_webhelper.exe.
+</code>
+
 - [yawataa/CVE-2025-60749](https://github.com/yawataa/CVE-2025-60749)
 
 ### CVE-2025-60751 (2025-10-21)
@@ -7103,7 +7118,7 @@
 
 ### CVE-2025-61196 (2025-10-30)
 
-<code>An issue in BusinessNext CRMnext v.10.8.3.0 allows a remote attacker to execute arbitrary code via the comments unput parameter
+<code>An issue in BusinessNext CRMnext v.10.8.3.0 allows a remote attacker to execute arbitrary code via the comments input parameter.
 </code>
 
 - [zsamamah/CVE-2025-61196](https://github.com/zsamamah/CVE-2025-61196)
@@ -7263,6 +7278,9 @@
 </code>
 
 - [z3rObyte/CVE-2025-63298](https://github.com/z3rObyte/CVE-2025-63298)
+
+### CVE-2025-63498
+- [xryptoh/CVE-2025-63498](https://github.com/xryptoh/CVE-2025-63498)
 
 ### CVE-2025-64095 (2025-10-28)
 
@@ -10221,7 +10239,6 @@
 
 - [themirze/cve-2024-12084](https://github.com/themirze/cve-2024-12084)
 - [rxerium/CVE-2024-12084](https://github.com/rxerium/CVE-2024-12084)
-- [fatcatresearch/cve-2024-12084](https://github.com/fatcatresearch/cve-2024-12084)
 
 ### CVE-2024-12085 (2025-01-14)
 
@@ -21737,13 +21754,6 @@
 - [AdityaBhatt3010/TryHackMe-Room-Walkthrough-Billing](https://github.com/AdityaBhatt3010/TryHackMe-Room-Walkthrough-Billing)
 - [abdullohqurbon0v/CVE-2023-30258-Exploit-For-Magnus-Billing-System](https://github.com/abdullohqurbon0v/CVE-2023-30258-Exploit-For-Magnus-Billing-System)
 
-### CVE-2023-30333 (2023-05-18)
-
-<code>An arbitrary file upload vulnerability in the component /admin/ThemeController.java of PerfreeBlog v3.1.2 allows attackers to execute arbitrary code via a crafted file.
-</code>
-
-- [tuaandatt/CVE-2023-30333---Zimbra-UnRAR](https://github.com/tuaandatt/CVE-2023-30333---Zimbra-UnRAR)
-
 ### CVE-2023-30347 (2023-06-22)
 
 <code>Cross Site Scripting (XSS) vulnerability in Neox Contact Center 2.3.9, via the serach_sms_api_name parameter to the SMA API search.
@@ -28547,6 +28557,7 @@
 - [ZZ-SOCMAP/CVE-2022-22536](https://github.com/ZZ-SOCMAP/CVE-2022-22536)
 - [tess-ss/SAP-memory-pipes-desynchronization-vulnerability-MPI-CVE-2022-22536](https://github.com/tess-ss/SAP-memory-pipes-desynchronization-vulnerability-MPI-CVE-2022-22536)
 - [BecodoExploit-mrCAT/SAPGateBreaker-Exploit](https://github.com/BecodoExploit-mrCAT/SAPGateBreaker-Exploit)
+- [abrewer251/CVE-2022-22536_SAP_Request_Smuggling_Scanner](https://github.com/abrewer251/CVE-2022-22536_SAP_Request_Smuggling_Scanner)
 
 ### CVE-2022-22555 (2022-07-20)
 
@@ -31030,7 +31041,6 @@
 - [J0hnbX/CVE-2022-30333](https://github.com/J0hnbX/CVE-2022-30333)
 - [aslitsecurity/Zimbra-CVE-2022-30333](https://github.com/aslitsecurity/Zimbra-CVE-2022-30333)
 - [paradox0909/cve-2022-30333_online_rar_extracor](https://github.com/paradox0909/cve-2022-30333_online_rar_extracor)
-- [tuaandatt/CVE-2022-30333---UnRAR](https://github.com/tuaandatt/CVE-2022-30333---UnRAR)
 
 ### CVE-2022-30489 (2022-05-13)
 
@@ -35152,6 +35162,7 @@
 - [titusG85/SideWinder-Exploit](https://github.com/titusG85/SideWinder-Exploit)
 - [MandipJoshi/CVE-2021-3560](https://github.com/MandipJoshi/CVE-2021-3560)
 - [Antoine-MANTIS/POC-Bash-CVE-2021-3560](https://github.com/Antoine-MANTIS/POC-Bash-CVE-2021-3560)
+- [SeimuPVE/CVE-2021-3560_Polkit](https://github.com/SeimuPVE/CVE-2021-3560_Polkit)
 
 ### CVE-2021-3572 (2021-11-10)
 
@@ -35258,7 +35269,6 @@
 - [artemis-mike/cve-2021-4034](https://github.com/artemis-mike/cve-2021-4034)
 - [dadvlingd/CVE-2021-4034](https://github.com/dadvlingd/CVE-2021-4034)
 - [nobelh/CVE-2021-4034](https://github.com/nobelh/CVE-2021-4034)
-- [evdenis/lsm_bpf_check_argc0](https://github.com/evdenis/lsm_bpf_check_argc0)
 - [tahaafarooq/poppy](https://github.com/tahaafarooq/poppy)
 - [PwnFunction/CVE-2021-4034](https://github.com/PwnFunction/CVE-2021-4034)
 - [c3c/CVE-2021-4034](https://github.com/c3c/CVE-2021-4034)
@@ -35266,7 +35276,6 @@
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
-- [x04000/CVE-2021-4034](https://github.com/x04000/CVE-2021-4034)
 - [hohn/codeql-sample-polkit](https://github.com/hohn/codeql-sample-polkit)
 - [LJP-TW/CVE-2021-4034](https://github.com/LJP-TW/CVE-2021-4034)
 - [fnknda/CVE-2021-4034_POC](https://github.com/fnknda/CVE-2021-4034_POC)
@@ -37168,6 +37177,7 @@
 - [magicrc/CVE-2021-29447](https://github.com/magicrc/CVE-2021-29447)
 - [Tea-On/CVE-2021-29447-Authenticated-XXE-WordPress-5.6-5.7](https://github.com/Tea-On/CVE-2021-29447-Authenticated-XXE-WordPress-5.6-5.7)
 - [ArtemCyberLab/Project-Project-Chimera-Exploiting-a-Modern-WordPress-XXE-to-Pillage-Secrets-](https://github.com/ArtemCyberLab/Project-Project-Chimera-Exploiting-a-Modern-WordPress-XXE-to-Pillage-Secrets-)
+- [0xricksanchez/CVE-2021-29447](https://github.com/0xricksanchez/CVE-2021-29447)
 
 ### CVE-2021-29505 (2021-05-28)
 
@@ -39277,6 +39287,7 @@
 - [MuhammadHuzaifaAsif/security-lab](https://github.com/MuhammadHuzaifaAsif/security-lab)
 - [gunzf0x/CVE-2021-41773](https://github.com/gunzf0x/CVE-2021-41773)
 - [Mahfujurjust/CVE-2021-41773](https://github.com/Mahfujurjust/CVE-2021-41773)
+- [adrianmafandy/CVE-2021-41773](https://github.com/adrianmafandy/CVE-2021-41773)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -39435,7 +39446,6 @@
 
 - [cube0x0/noPac](https://github.com/cube0x0/noPac)
 - [ricardojba/Invoke-noPac](https://github.com/ricardojba/Invoke-noPac)
-- [knightswd/NoPacScan](https://github.com/knightswd/NoPacScan)
 - [XiaoliChan/Invoke-sAMSpoofing](https://github.com/XiaoliChan/Invoke-sAMSpoofing)
 - [TryA9ain/noPac](https://github.com/TryA9ain/noPac)
 - [DanielFEXKEX/CVE-Scanner](https://github.com/DanielFEXKEX/CVE-Scanner)
@@ -43185,7 +43195,6 @@
 
 - [shanika04/apache_skywalking](https://github.com/shanika04/apache_skywalking)
 - [Neko-chanQwQ/CVE-2020-9483](https://github.com/Neko-chanQwQ/CVE-2020-9483)
-- [tuaandatt/CVE-2020-9483---Apache-Skywalking-8.3.0](https://github.com/tuaandatt/CVE-2020-9483---Apache-Skywalking-8.3.0)
 
 ### CVE-2020-9484 (2020-05-20)
 
@@ -61548,6 +61557,13 @@
 </code>
 
 - [magisterquis/cve-2010-3847](https://github.com/magisterquis/cve-2010-3847)
+
+### CVE-2010-3863 (2010-11-05)
+
+<code>Apache Shiro before 1.1.0, and JSecurity 0.9.x, does not canonicalize URI paths before comparing them to entries in the shiro.ini file, which allows remote attackers to bypass intended access restrictions via a crafted request, as demonstrated by the /./account/index.jsp URI.
+</code>
+
+- [sh1inroot-alt/shiro-cve-2010-3863](https://github.com/sh1inroot-alt/shiro-cve-2010-3863)
 
 ### CVE-2010-3904 (2010-12-06)
 
