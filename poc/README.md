@@ -1941,12 +1941,14 @@
 
 - [DanielMadsenDK/ServiceNow-CVE-2025-11449-CVE-2025-11450-Mitigation-Script](https://github.com/DanielMadsenDK/ServiceNow-CVE-2025-11449-CVE-2025-11450-Mitigation-Script)
 
-### CVE-2025-11534 (2025-10-21)
+### CVE-2025-11499 (2025-11-01)
 
-<code>The affected Raisecom devices allow SSH sessions to be established without completing user authentication. This could allow attackers to gain shell access without valid credentials.
+<code>The Tablesome Table – Contact Form DB – WPForms, CF7, Gravity, Forminator, Fluent plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the set_featured_image_from_external_url() function in all versions up to, and including, 1.1.32. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible in configurations where unauthenticated users have been provided with a method for adding featured images, and the workflow trigger is created.
 </code>
 
-- [DExplo1ted/CVE-2025-11534-POC](https://github.com/DExplo1ted/CVE-2025-11534-POC)
+- [Hazelooks/CVE-2025-11499-Exploit](https://github.com/Hazelooks/CVE-2025-11499-Exploit)
+- [rootreapers/CVE-2025-11499](https://github.com/rootreapers/CVE-2025-11499)
+- [usjnx72726w/CVE-2025-11499-LAB](https://github.com/usjnx72726w/CVE-2025-11499-LAB)
 
 ### CVE-2025-11554 (2025-10-09)
 
@@ -1968,6 +1970,13 @@
 </code>
 
 - [blackhatlegend/CVE-2025-11832](https://github.com/blackhatlegend/CVE-2025-11832)
+
+### CVE-2025-11833 (2025-11-01)
+
+<code>The Post SMTP – Complete SMTP Solution with Logs, Alerts, Backup SMTP &amp; Mobile App plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the __construct function in all versions up to, and including, 3.6.0. This makes it possible for unauthenticated attackers to read arbitrary logged emails sent through the Post SMTP plugin, including password reset emails containing password reset links, which can lead to account takeover.
+</code>
+
+- [modhopmarrow1973/CVE-2025-11833-LAB](https://github.com/modhopmarrow1973/CVE-2025-11833-LAB)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -5510,6 +5519,7 @@
 
 ### CVE-2025-50363
 - [1h3ll/CVE-2025-50363_BXSS_CVE](https://github.com/1h3ll/CVE-2025-50363_BXSS_CVE)
+- [Adar5h16/My-CVE](https://github.com/Adar5h16/My-CVE)
 
 ### CVE-2025-50364
 - [1h3ll/CVE-2025-50364_CSRF_ADD_CATEGORY-phpgurukul-CVE](https://github.com/1h3ll/CVE-2025-50364_CSRF_ADD_CATEGORY-phpgurukul-CVE)
@@ -6144,6 +6154,20 @@
 
 - [tigr78/CVE-2025-53964](https://github.com/tigr78/CVE-2025-53964)
 
+### CVE-2025-54106 (2025-09-09)
+
+<code>Integer overflow or wraparound in Windows Routing and Remote Access Service (RRAS) allows an unauthorized attacker to execute code over a network.
+</code>
+
+- [DExplo1ted/CVE-2025-54106-POC](https://github.com/DExplo1ted/CVE-2025-54106-POC)
+
+### CVE-2025-54110 (2025-09-09)
+
+<code>Integer overflow or wraparound in Windows Kernel allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [ByteHawkSec/CVE-2025-54110-POC](https://github.com/ByteHawkSec/CVE-2025-54110-POC)
+
 ### CVE-2025-54135 (2025-08-05)
 
 <code>Cursor is a code editor built for programming with AI. Cursor allows writing in-workspace files with no user approval in versions below 1.3.9, If the file is a dotfile, editing it requires approval but creating a new one doesn't. Hence, if sensitive MCP files, such as the .cursor/mcp.json file don't already exist in the workspace, an attacker can chain a indirect prompt injection vulnerability to hijack the context to write to the settings file and trigger RCE on the victim without user approval. This is fixed in version 1.3.9.
@@ -6292,6 +6316,13 @@
 
 - [shinigami-777/PoC_CVE-2025-54887](https://github.com/shinigami-777/PoC_CVE-2025-54887)
 
+### CVE-2025-54897 (2025-09-09)
+
+<code>Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.
+</code>
+
+- [themaxlpalfaboy/CVE-2025-54897-LAB](https://github.com/themaxlpalfaboy/CVE-2025-54897-LAB)
+
 ### CVE-2025-54914 (2025-09-04)
 
 <code>Azure Networking Elevation of Privilege Vulnerability
@@ -6343,6 +6374,7 @@
 
 - [mrk336/CVE-2025-55234](https://github.com/mrk336/CVE-2025-55234)
 - [mrk336/Patch-the-Path-CVE-2025-55234-Detection-Defense](https://github.com/mrk336/Patch-the-Path-CVE-2025-55234-Detection-Defense)
+- [h4xnz/CVE-2025-55234-POC](https://github.com/h4xnz/CVE-2025-55234-POC)
 
 ### CVE-2025-55287 (2025-08-18)
 
@@ -6846,13 +6878,6 @@
 - [loic-houchi/Django-faille-CVE-2025-57833_test](https://github.com/loic-houchi/Django-faille-CVE-2025-57833_test)
 - [ianoboyle/CVE-2025-57833](https://github.com/ianoboyle/CVE-2025-57833)
 
-### CVE-2025-57870 (2025-10-22)
-
-<code>A SQL Injection vulnerability exists in Esri ArcGIS Server versions 11.3, 11.4 and 11.5 on Windows, Linux and Kubernetes. This vulnerability allows a remote, unauthenticated attacker to execute arbitrary SQL commands via a specific ArcGIS Feature Service operation. Successful exploitation can potentially result in unauthorized access, modification, or deletion of data from the underlying Enterprise Geodatabase.
-</code>
-
-- [ByteHawkSec/CVE-2025-57870-POC](https://github.com/ByteHawkSec/CVE-2025-57870-POC)
-
 ### CVE-2025-57926 (2025-09-22)
 
 <code>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in WP Chill Passster allows Stored XSS. This issue affects Passster: from n/a through 4.2.18.
@@ -6924,6 +6949,7 @@
 - [esteban11121/WSUS-RCE-Mitigation-59287](https://github.com/esteban11121/WSUS-RCE-Mitigation-59287)
 - [fsanzmoya/wsus_CVE-2025-59287](https://github.com/fsanzmoya/wsus_CVE-2025-59287)
 - [0x7556/CVE-2025-59287](https://github.com/0x7556/CVE-2025-59287)
+- [QurtiDev/WSUS-CVE-2025-59287-RCE](https://github.com/QurtiDev/WSUS-CVE-2025-59287-RCE)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -7011,6 +7037,9 @@
 </code>
 
 - [ajansha/CVE-2025-60378](https://github.com/ajansha/CVE-2025-60378)
+
+### CVE-2025-60423
+- [Zephyr1ng/CVE-2025-60423](https://github.com/Zephyr1ng/CVE-2025-60423)
 
 ### CVE-2025-60424 (2025-10-27)
 
@@ -7173,6 +7202,7 @@
 </code>
 
 - [B1ack4sh/Blackash-CVE-2025-61481](https://github.com/B1ack4sh/Blackash-CVE-2025-61481)
+- [codetombs/CVE-2025-61481](https://github.com/codetombs/CVE-2025-61481)
 
 ### CVE-2025-61622 (2025-10-01)
 
@@ -7287,6 +7317,7 @@
 </code>
 
 - [callinston/CVE-2025-64095](https://github.com/callinston/CVE-2025-64095)
+- [h4x0r-dz/CVE-2025-64095---DNN-Unauthenticated-arbitrary-file-upload](https://github.com/h4x0r-dz/CVE-2025-64095---DNN-Unauthenticated-arbitrary-file-upload)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -51723,9 +51754,9 @@
 
 - [DavidBuchanan314/NXLoader](https://github.com/DavidBuchanan314/NXLoader)
 - [reswitched/rcm-modchips](https://github.com/reswitched/rcm-modchips)
-- [ChrisFigura/react-tegra-payload-launcher](https://github.com/ChrisFigura/react-tegra-payload-launcher)
 - [austinhartzheim/fusee-gelee](https://github.com/austinhartzheim/fusee-gelee)
 - [Swiftloke/fusee-toy](https://github.com/Swiftloke/fusee-toy)
+- [nikameru/nxboot](https://github.com/nikameru/nxboot)
 
 ### CVE-2018-6341 (2018-12-31)
 
@@ -58588,6 +58619,7 @@
 - [YastrebX/CVE-2015-1328](https://github.com/YastrebX/CVE-2015-1328)
 - [1mgR00T/CVE-2015-1328](https://github.com/1mgR00T/CVE-2015-1328)
 - [thieveshkar/RootQuest-CTF-Box-Multi-Stage-Exploitation-VM](https://github.com/thieveshkar/RootQuest-CTF-Box-Multi-Stage-Exploitation-VM)
+- [0xf1d0/CVE-2015-1328](https://github.com/0xf1d0/CVE-2015-1328)
 
 ### CVE-2015-1397 (2015-04-29)
 
