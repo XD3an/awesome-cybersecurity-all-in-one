@@ -344,6 +344,7 @@
 </code>
 
 - [datagoboom/CVE-2025-2011](https://github.com/datagoboom/CVE-2025-2011)
+- [X3RX3SSec/CVE-2025-2011](https://github.com/X3RX3SSec/CVE-2025-2011)
 
 ### CVE-2025-2082 (2025-04-30)
 
@@ -1517,6 +1518,7 @@
 - [Fathi-MO/POC-CVE-2025-8088](https://github.com/Fathi-MO/POC-CVE-2025-8088)
 - [papcaii2004/CVE-2025-8088-WinRAR-builder](https://github.com/papcaii2004/CVE-2025-8088-WinRAR-builder)
 - [mocred/cve-2025-8088](https://github.com/mocred/cve-2025-8088)
+- [B1ack4sh/Blackash-CVE-2025-8088](https://github.com/B1ack4sh/Blackash-CVE-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1916,7 +1918,14 @@
 <code>The Chartify – WordPress Chart Plugin for WordPress is vulnerable to Missing Authentication for Critical Function in all versions up to, and including, 3.5.9. This is due to the plugin registering an unauthenticated AJAX action that dispatches to admin-class methods based on a request parameter, without any nonce or capability checks. This makes it possible for unauthenticated attackers to execute administrative functions via the wp-admin/admin-ajax.php endpoint granted they can identify callable method names.
 </code>
 
-- [SnailSploit/CVE-2025-11171---GitHub-Security-Advisory](https://github.com/SnailSploit/CVE-2025-11171---GitHub-Security-Advisory)
+- [SnailSploit/CVE-2025-11171](https://github.com/SnailSploit/CVE-2025-11171)
+
+### CVE-2025-11174 (2025-11-01)
+
+<code>The Document Library Lite plugin for WordPress is vulnerable to Improper Authorization in all versions up to, and including, 1.1.6. This is due to the plugin exposing an unauthenticated AJAX action dll_load_posts which returns a JSON table of document data without performing nonce or capability checks. The handler accepts an attacker-controlled args array where the status option explicitly allows draft, pending, future, and any. This makes it possible for unauthenticated attackers to retrieve unpublished document titles and content via the AJAX endpoint.
+</code>
+
+- [SnailSploit/CVE-2025-11174](https://github.com/SnailSploit/CVE-2025-11174)
 
 ### CVE-2025-11371 (2025-10-09)
 
@@ -1977,6 +1986,23 @@
 </code>
 
 - [modhopmarrow1973/CVE-2025-11833-LAB](https://github.com/modhopmarrow1973/CVE-2025-11833-LAB)
+
+### CVE-2025-12437
+- [callinston/CVE-2025-12437](https://github.com/callinston/CVE-2025-12437)
+
+### CVE-2025-12595 (2025-11-02)
+
+<code>In Tenda AC23 16.03.07.52 wurde eine Schwachstelle gefunden. Hierbei geht es um die Funktion formSetVirtualSer der Datei /goform/SetVirtualServerCfg. Dank der Manipulation des Arguments list mit unbekannten Daten kann eine buffer overflow-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei über das Netzwerk erfolgen. Der Exploit steht zur öffentlichen Verfügung.
+</code>
+
+- [lagerhaker539/CVE-2025-12595-POC](https://github.com/lagerhaker539/CVE-2025-12595-POC)
+
+### CVE-2025-12596 (2025-11-02)
+
+<code>In Tenda AC23 16.03.07.52 ist eine Schwachstelle entdeckt worden. Betroffen ist die Funktion saveParentControlInfo der Datei /goform/saveParentControlInfo. Dank Manipulation des Arguments Time mit unbekannten Daten kann eine buffer overflow-Schwachstelle ausgenutzt werden. Ein Angriff ist aus der Distanz möglich. Der Exploit wurde der Öffentlichkeit bekannt gemacht und könnte verwendet werden.
+</code>
+
+- [DebugFrag/CVE-2025-12596-Exploit](https://github.com/DebugFrag/CVE-2025-12596-Exploit)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -4882,9 +4908,6 @@
 
 - [0xC4J/CVE-Lists](https://github.com/0xC4J/CVE-Lists)
 
-### CVE-2025-46142
-- [AugustusSploits/CVE-2025-46142](https://github.com/AugustusSploits/CVE-2025-46142)
-
 ### CVE-2025-46157 (2025-06-18)
 
 <code>An issue in EfroTech Time Trax v.1.0 allows a remote attacker to execute arbitrary code via the file attachment function in the leave request form
@@ -6877,6 +6900,7 @@
 - [Mkway/CVE-2025-57833](https://github.com/Mkway/CVE-2025-57833)
 - [loic-houchi/Django-faille-CVE-2025-57833_test](https://github.com/loic-houchi/Django-faille-CVE-2025-57833_test)
 - [ianoboyle/CVE-2025-57833](https://github.com/ianoboyle/CVE-2025-57833)
+- [sw0rd1ight/CVE-2025-57833](https://github.com/sw0rd1ight/CVE-2025-57833)
 
 ### CVE-2025-57926 (2025-09-22)
 
@@ -6950,6 +6974,7 @@
 - [fsanzmoya/wsus_CVE-2025-59287](https://github.com/fsanzmoya/wsus_CVE-2025-59287)
 - [0x7556/CVE-2025-59287](https://github.com/0x7556/CVE-2025-59287)
 - [QurtiDev/WSUS-CVE-2025-59287-RCE](https://github.com/QurtiDev/WSUS-CVE-2025-59287-RCE)
+- [Sid6Effect/CVE-2025-59287](https://github.com/Sid6Effect/CVE-2025-59287)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -6987,6 +7012,13 @@
 - [GithubKillsMyOpsec/CVE-2025-59489-POC](https://github.com/GithubKillsMyOpsec/CVE-2025-59489-POC)
 - [taptap/cve-2025-59489](https://github.com/taptap/cve-2025-59489)
 - [AdriianFdz/Exploit-CVE-2025-59489](https://github.com/AdriianFdz/Exploit-CVE-2025-59489)
+
+### CVE-2025-59528 (2025-09-22)
+
+<code>Flowise is a drag &amp; drop user interface to build a customized large language model flow. In version 3.0.5, Flowise is vulnerable to remote code execution. The CustomMCP node allows users to input configuration settings for connecting to an external MCP server. This node parses the user-provided mcpServerConfig string to build the MCP server configuration. However, during this process, it executes JavaScript code without any security validation. Specifically, inside the convertToValidJSONString function, user input is directly passed to the Function() constructor, which evaluates and executes the input as JavaScript code. Since this runs with full Node.js runtime privileges, it can access dangerous modules such as child_process and fs. This issue has been patched in version 3.0.6.
+</code>
+
+- [zimshk/CVE-2025-59528.yaml](https://github.com/zimshk/CVE-2025-59528.yaml)
 
 ### CVE-2025-59712 (2025-09-19)
 
@@ -7144,13 +7176,6 @@
 
 - [thawphone/CVE-2025-61183](https://github.com/thawphone/CVE-2025-61183)
 
-### CVE-2025-61196 (2025-10-30)
-
-<code>An issue in BusinessNext CRMnext v.10.8.3.0 allows a remote attacker to execute arbitrary code via the comments input parameter.
-</code>
-
-- [zsamamah/CVE-2025-61196](https://github.com/zsamamah/CVE-2025-61196)
-
 ### CVE-2025-61301 (2025-10-20)
 
 <code>Denial-of-analysis in reporting/mongodb.py and reporting/jsondump.py in CAPEv2 (commit 52e4b43, on 2025-05-17) allows attackers who can submit samples to cause incomplete or missing behavioral analysis reports by generating deeply nested or oversized behavior data that trigger MongoDB BSON limits or orjson recursion errors when the sample executes in the sandbox.
@@ -7265,6 +7290,7 @@
 </code>
 
 - [monzaviman/CVE-2025-62168](https://github.com/monzaviman/CVE-2025-62168)
+- [shahroodcert/CVE-2025-62168](https://github.com/shahroodcert/CVE-2025-62168)
 
 ### CVE-2025-62376 (2025-10-14)
 
@@ -7316,7 +7342,6 @@
 <code>DNN (formerly DotNetNuke) is an open-source web content management platform (CMS) in the Microsoft ecosystem. Prior to 10.1.1, the default HTML editor provider allows unauthenticated file uploads and images can overwrite existing files. An unauthenticated user can upload and replace existing files allowing defacing a website and combined with other issue, injection XSS payloads. This vulnerability is fixed in 10.1.1.
 </code>
 
-- [callinston/CVE-2025-64095](https://github.com/callinston/CVE-2025-64095)
 - [h4x0r-dz/CVE-2025-64095---DNN-Unauthenticated-arbitrary-file-upload](https://github.com/h4x0r-dz/CVE-2025-64095---DNN-Unauthenticated-arbitrary-file-upload)
 
 ### CVE-2025-492025
@@ -58956,6 +58981,7 @@
 - [JoseLRC97/ProFTPd-1.3.5-mod_copy-Remote-Command-Execution](https://github.com/JoseLRC97/ProFTPd-1.3.5-mod_copy-Remote-Command-Execution)
 - [Z3R0-0x30/CVE-2015-3306](https://github.com/Z3R0-0x30/CVE-2015-3306)
 - [donmedfor/CVE-2015-3306](https://github.com/donmedfor/CVE-2015-3306)
+- [cybersensei-EH/hackviser_labs_CVE-2015-3306](https://github.com/cybersensei-EH/hackviser_labs_CVE-2015-3306)
 
 ### CVE-2015-3337 (2015-05-01)
 
