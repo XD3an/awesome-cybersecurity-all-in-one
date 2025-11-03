@@ -5513,6 +5513,13 @@
 - [rubenformation/CVE-2025-50154](https://github.com/rubenformation/CVE-2025-50154)
 - [Ash1996x/CVE-2025-50154-Aggressor-Script](https://github.com/Ash1996x/CVE-2025-50154-Aggressor-Script)
 
+### CVE-2025-50168 (2025-08-12)
+
+<code>Access of resource using incompatible type ('type confusion') in Windows Win32K - ICOMP allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [D4m0n/CVE-2025-50168-pwn2own-berlin-2025](https://github.com/D4m0n/CVE-2025-50168-pwn2own-berlin-2025)
+
 ### CVE-2025-50286 (2025-08-06)
 
 <code>A Remote Code Execution (RCE) vulnerability in Grav CMS v1.7.48 allows an authenticated admin to upload a malicious plugin via the /admin/tools/direct-install interface. Once uploaded, the plugin is automatically extracted and loaded, allowing arbitrary PHP code execution and reverse shell access.
@@ -7220,6 +7227,9 @@
 </code>
 
 - [tansique-17/CVE-2025-61456](https://github.com/tansique-17/CVE-2025-61456)
+
+### CVE-2025-61472
+- [flywithjoey/CVE-2025-61472](https://github.com/flywithjoey/CVE-2025-61472)
 
 ### CVE-2025-61481 (2025-10-27)
 
@@ -15702,6 +15712,13 @@
 </code>
 
 - [w0r1i0g1ht/CVE-2024-45440](https://github.com/w0r1i0g1ht/CVE-2024-45440)
+
+### CVE-2024-45496 (2024-09-16)
+
+<code>A flaw was found in OpenShift. This issue occurs due to the misuse of elevated privileges in the OpenShift Container Platform's build process. During the build initialization step, the git-clone container is run with a privileged security context, allowing unrestricted access to the node. An attacker with developer-level access can provide a crafted .gitconfig file containing commands executed during the cloning process, leading to arbitrary command execution on the worker node. An attacker running code in a privileged container could escalate their permissions on the node running the container.
+</code>
+
+- [fatcatresearch/cve-2024-45496](https://github.com/fatcatresearch/cve-2024-45496)
 
 ### CVE-2024-45507 (2024-09-04)
 
@@ -28817,6 +28834,7 @@
 - [Zh0um1/CVE-2022-22947](https://github.com/Zh0um1/CVE-2022-22947)
 - [Le1a/CVE-2022-22947](https://github.com/Le1a/CVE-2022-22947)
 - [Sumitpathania03/CVE-2022-22947](https://github.com/Sumitpathania03/CVE-2022-22947)
+- [superneilcn/SpringExploitGUI](https://github.com/superneilcn/SpringExploitGUI)
 - [cc3305/CVE-2022-22947](https://github.com/cc3305/CVE-2022-22947)
 - [skysliently/CVE-2022-22947-pb-ai](https://github.com/skysliently/CVE-2022-22947-pb-ai)
 - [shoucheng3/spring-cloud__spring-cloud-gateway_CVE-2022-22947_3-0-6](https://github.com/shoucheng3/spring-cloud__spring-cloud-gateway_CVE-2022-22947_3-0-6)
@@ -30372,6 +30390,13 @@
 </code>
 
 - [puneetbehl/grails3-cve-2022-27772](https://github.com/puneetbehl/grails3-cve-2022-27772)
+
+### CVE-2022-27913 (2022-10-25)
+
+<code>An issue was discovered in Joomla! 4.2.0 through 4.2.3. Inadequate filtering of potentially malicious user input leads to reflected XSS vulnerabilities in various components.
+</code>
+
+- [CamTechCoaching/Joomla-CVE-Detector-CVE-2022-27913-](https://github.com/CamTechCoaching/Joomla-CVE-Detector-CVE-2022-27913-)
 
 ### CVE-2022-27925 (2022-04-20)
 
@@ -37304,7 +37329,7 @@
 
 ### CVE-2021-30481 (2021-04-10)
 
-<code>Valve Steam through 2021-04-10, when a Source engine game is installed, allows remote authenticated users to execute arbitrary code because of a buffer overflow that occurs for a Steam invite after one click.
+<code>Valve Steam before 2021-04-17, when a Source engine game is installed, allows remote authenticated users to execute arbitrary code because of a buffer overflow that occurs for a Steam invite after one click.
 </code>
 
 - [floesen/CVE-2021-30481](https://github.com/floesen/CVE-2021-30481)
