@@ -3623,7 +3623,6 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [KaztoRay/CVE-2025-29927-Research](https://github.com/KaztoRay/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -7378,14 +7377,6 @@
 </code>
 
 - [edera-dev/cve-tarmageddon](https://github.com/edera-dev/cve-tarmageddon)
-
-### CVE-2025-62726 (2025-10-30)
-
-<code>n8n is an open source workflow automation platform. Prior to 1.113.0, a remote code execution vulnerability exists in the Git Node component available in both Cloud and Self-Hosted versions of n8n. When a malicious actor clones a remote repository containing a pre-commit hook, the subsequent use of the Commit operation in the Git Node can inadvertently trigger the hook’s execution. This allows attackers to execute arbitrary code within the n8n environment, potentially compromising the system and any connected credentials or workflows. This vulnerability is fixed in 1.113.0.
-</code>
-
-- [Malayke/CVE-2025-62726-payload-repo](https://github.com/Malayke/CVE-2025-62726-payload-repo)
-- [Malayke/n8n-remote-code-execution-cve-2025-62726-exploit](https://github.com/Malayke/n8n-remote-code-execution-cve-2025-62726-exploit)
 
 ### CVE-2025-62727 (2025-10-28)
 
@@ -32682,7 +32673,6 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
