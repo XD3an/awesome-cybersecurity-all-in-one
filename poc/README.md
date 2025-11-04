@@ -1519,6 +1519,7 @@
 - [papcaii2004/CVE-2025-8088-WinRAR-builder](https://github.com/papcaii2004/CVE-2025-8088-WinRAR-builder)
 - [mocred/cve-2025-8088](https://github.com/mocred/cve-2025-8088)
 - [B1ack4sh/Blackash-CVE-2025-8088](https://github.com/B1ack4sh/Blackash-CVE-2025-8088)
+- [nuky-alt/CVE-2025-8088](https://github.com/nuky-alt/CVE-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1873,6 +1874,13 @@
 
 - [NagisaYumaa/CVE-2025-10377](https://github.com/NagisaYumaa/CVE-2025-10377)
 
+### CVE-2025-10576 (2025-10-15)
+
+<code>Potential vulnerabilities have been identified in the audio package for certain HP PC products using the Sound Research SECOMN64 driver, which might allow escalation of privilege. HP is releasing updated audio packages to mitigate the potential vulnerabilities.
+</code>
+
+- [R41N3RZUF477/CVE-2025-10576](https://github.com/R41N3RZUF477/CVE-2025-10576)
+
 ### CVE-2025-10585 (2025-09-24)
 
 <code>Type confusion in V8 in Google Chrome prior to 140.0.7339.185 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
@@ -1986,6 +1994,10 @@
 </code>
 
 - [modhopmarrow1973/CVE-2025-11833-LAB](https://github.com/modhopmarrow1973/CVE-2025-11833-LAB)
+- [nullstatics/CVE-2025-11833](https://github.com/nullstatics/CVE-2025-11833)
+
+### CVE-2025-12428
+- [dexterm300/cve-2025-12428-exploit-poc](https://github.com/dexterm300/cve-2025-12428-exploit-poc)
 
 ### CVE-2025-12437
 - [callinston/CVE-2025-12437](https://github.com/callinston/CVE-2025-12437)
@@ -2687,6 +2699,7 @@
 - [Yukik4z3/CVE-2025-24893](https://github.com/Yukik4z3/CVE-2025-24893)
 - [rvizx/CVE-2025-24893](https://github.com/rvizx/CVE-2025-24893)
 - [Y2F05p2w/CVE-2025-24893](https://github.com/Y2F05p2w/CVE-2025-24893)
+- [80Ottanta80/CVE-2025-24893-PoC](https://github.com/80Ottanta80/CVE-2025-24893-PoC)
 
 ### CVE-2025-24963 (2025-02-04)
 
@@ -2767,6 +2780,27 @@
 </code>
 
 - [ashkan-pu/CVE-CVE-2025-25231](https://github.com/ashkan-pu/CVE-CVE-2025-25231)
+
+### CVE-2025-25252 (2025-10-14)
+
+<code>An Insufficient Session Expiration vulnerability [CWE-613] in FortiOS SSL VPN 7.6.0 through 7.6.2, 7.4.0 through 7.4.6, 7.2.0 through 7.2.10, 7.0.0 through 7.0.16, 6.4 all versions may allow a remote attacker (e.g. a former admin whose account was removed and whose session was terminated) in possession of the SAML record of a user session to access or re-open that session via re-use of SAML record.
+</code>
+
+- [iptables6cv/CVE-2025-25252-POC](https://github.com/iptables6cv/CVE-2025-25252-POC)
+
+### CVE-2025-25253 (2025-10-14)
+
+<code>An Improper Validation of Certificate with Host Mismatch vulnerability [CWE-297] in FortiProxy version 7.6.1 and below, version 7.4.8 and below, 7.2 all versions, 7.0 all versions and FortiOS version 7.6.2 and below, version 7.4.8 and below, 7.2 all versions, 7.0 all versions ZTNA proxy may allow an unauthenticated attacker in a man-in-the middle position to intercept and tamper with connections to the ZTNA proxy
+</code>
+
+- [onelittlectfer/CVE-2025-25253](https://github.com/onelittlectfer/CVE-2025-25253)
+
+### CVE-2025-25254 (2025-04-08)
+
+<code>An Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability [CWE-22] in FortiWeb version 7.6.2 and below, version 7.4.6 and below, 7.2 all versions, 7.0 all versions endpoint may allow an authenticated admin to access and modify the filesystem via crafted requests.
+</code>
+
+- [JackMicalli/CVE-2025-25254](https://github.com/JackMicalli/CVE-2025-25254)
 
 ### CVE-2025-25256 (2025-08-12)
 
@@ -4218,6 +4252,7 @@
 - [robbin0919/CVE-2025-32463](https://github.com/robbin0919/CVE-2025-32463)
 - [DensuLabs/CVE-2025-32463](https://github.com/DensuLabs/CVE-2025-32463)
 - [muhammedkayag/CVE-2025-32463](https://github.com/muhammedkayag/CVE-2025-32463)
+- [NewComrade12211/CVE-2025-32463](https://github.com/NewComrade12211/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -5547,7 +5582,11 @@
 ### CVE-2025-50361
 - [Ch1keen/CVE-2025-50361](https://github.com/Ch1keen/CVE-2025-50361)
 
-### CVE-2025-50363
+### CVE-2025-50363 (2025-11-03)
+
+<code>Phpgurukul Maid Hiring Management System 1.0 is vulnerable to Cross Site Scripting (XSS) in /maid-hiring.php va the name field.
+</code>
+
 - [1h3ll/CVE-2025-50363_BXSS_CVE](https://github.com/1h3ll/CVE-2025-50363_BXSS_CVE)
 - [Adar5h16/My-CVE](https://github.com/Adar5h16/My-CVE)
 
@@ -6026,6 +6065,7 @@
 
 - [rxerium/CVE-2025-53072-CVE-2025-62481](https://github.com/rxerium/CVE-2025-53072-CVE-2025-62481)
 - [AshrafZaryouh/CVE-2025-53072-CVE-2025-62481](https://github.com/AshrafZaryouh/CVE-2025-53072-CVE-2025-62481)
+- [B1ack4sh/Blackash-CVE-2025-53072](https://github.com/B1ack4sh/Blackash-CVE-2025-53072)
 
 ### CVE-2025-53367 (2025-07-03)
 
@@ -6475,6 +6515,7 @@
 - [TAM-K592/CVE-2025-55752](https://github.com/TAM-K592/CVE-2025-55752)
 - [masahiro331/CVE-2025-55752](https://github.com/masahiro331/CVE-2025-55752)
 - [B1ack4sh/Blackash-CVE-2025-55752](https://github.com/B1ack4sh/Blackash-CVE-2025-55752)
+- [keepshard/CVE-2025-55752](https://github.com/keepshard/CVE-2025-55752)
 
 ### CVE-2025-55763 (2025-08-29)
 
@@ -6666,13 +6707,6 @@
 </code>
 
 - [Jingyi-u/-CVE-2025-56435](https://github.com/Jingyi-u/-CVE-2025-56435)
-
-### CVE-2025-56450 (2025-10-21)
-
-<code>Log2Space Subscriber Management Software 1.1 is vulnerable to unauthenticated SQL injection via the `lead_id` parameter in the `/l2s/api/selfcareLeadHistory` endpoint. A remote attacker can exploit this by sending a specially crafted POST request, resulting in the execution of arbitrary SQL queries. The backend fails to sanitize the user input, allowing enumeration of database schemas, table names, and potentially leading to full database compromise.
-</code>
-
-- [apboss123/CVE-2025-56450](https://github.com/apboss123/CVE-2025-56450)
 
 ### CVE-2025-56503
 - [secxplorers/CVE-2025-56503](https://github.com/secxplorers/CVE-2025-56503)
@@ -6982,6 +7016,7 @@
 - [0x7556/CVE-2025-59287](https://github.com/0x7556/CVE-2025-59287)
 - [QurtiDev/WSUS-CVE-2025-59287-RCE](https://github.com/QurtiDev/WSUS-CVE-2025-59287-RCE)
 - [Sid6Effect/CVE-2025-59287](https://github.com/Sid6Effect/CVE-2025-59287)
+- [dexterm300/cve-2025-59287-exploit-poc](https://github.com/dexterm300/cve-2025-59287-exploit-poc)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -7003,6 +7038,9 @@
 </code>
 
 - [william31212/CVE-Requests-1896609](https://github.com/william31212/CVE-Requests-1896609)
+
+### CVE-2025-59396
+- [cyberbyte000/CVE-2025-59396](https://github.com/cyberbyte000/CVE-2025-59396)
 
 ### CVE-2025-59424 (2025-09-18)
 
@@ -7101,7 +7139,11 @@
 
 - [H4zaz/CVE-2025-60500](https://github.com/H4zaz/CVE-2025-60500)
 
-### CVE-2025-60503
+### CVE-2025-60503 (2025-11-03)
+
+<code>A cross-site scripting (XSS) vulnerability exists in the administrative interface of ultimatefosters UltimatePOS 4.8 where input submitted in the purchase functionality is reflected without proper escaping in the admin log panel page in the 'reference No.' field. This flaw allows an authenticated attacker to execute arbitrary JavaScript in the context of an administrator's browser session, which could lead to session hijacking or other malicious actions.
+</code>
+
 - [H4zaz/CVE-2025-60503](https://github.com/H4zaz/CVE-2025-60503)
 
 ### CVE-2025-60595 (2025-10-29)
@@ -7316,6 +7358,13 @@
 
 - [SubZeroHackerz/CVE-2025-62410](https://github.com/SubZeroHackerz/CVE-2025-62410)
 
+### CVE-2025-62481 (2025-10-21)
+
+<code>Vulnerability in the Oracle Marketing product of Oracle E-Business Suite (component: Marketing Administration).  Supported versions that are affected are 12.2.3-12.2.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Marketing.  Successful attacks of this vulnerability can result in takeover of Oracle Marketing. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-62481](https://github.com/B1ack4sh/Blackash-CVE-2025-62481)
+
 ### CVE-2025-62506 (2025-10-16)
 
 <code>MinIO is a high-performance object storage system. In all versions prior to RELEASE.2025-10-15T17-29-55Z, a privilege escalation vulnerability allows service accounts and STS (Security Token Service) accounts with restricted session policies to bypass their inline policy restrictions when performing operations on their own account, specifically when creating new service accounts for the same user. The vulnerability exists in the IAM policy validation logic where the code incorrectly relied on the DenyOnly argument when validating session policies for restricted accounts. When a session policy is present, the system should validate that the action is allowed by the session policy, not just that it is not denied. An attacker with valid credentials for a restricted service or STS account can create a new service account for itself without policy restrictions, resulting in a new service account with full parent privileges instead of being restricted by the inline policy. This allows the attacker to access buckets and objects beyond their intended restrictions and modify, delete, or create objects outside their authorized scope. The vulnerability is fixed in version RELEASE.2025-10-15T17-29-55Z.
@@ -7329,6 +7378,14 @@
 </code>
 
 - [edera-dev/cve-tarmageddon](https://github.com/edera-dev/cve-tarmageddon)
+
+### CVE-2025-62726 (2025-10-30)
+
+<code>n8n is an open source workflow automation platform. Prior to 1.113.0, a remote code execution vulnerability exists in the Git Node component available in both Cloud and Self-Hosted versions of n8n. When a malicious actor clones a remote repository containing a pre-commit hook, the subsequent use of the Commit operation in the Git Node can inadvertently trigger the hook’s execution. This allows attackers to execute arbitrary code within the n8n environment, potentially compromising the system and any connected credentials or workflows. This vulnerability is fixed in 1.113.0.
+</code>
+
+- [Malayke/CVE-2025-62726-payload-repo](https://github.com/Malayke/CVE-2025-62726-payload-repo)
+- [Malayke/n8n-remote-code-execution-cve-2025-62726-exploit](https://github.com/Malayke/n8n-remote-code-execution-cve-2025-62726-exploit)
 
 ### CVE-2025-62727 (2025-10-28)
 
@@ -13271,6 +13328,7 @@
 - [x0da6h/POC-for-CVE-2024-32019](https://github.com/x0da6h/POC-for-CVE-2024-32019)
 - [T1erno/CVE-2024-32019-Netdata-ndsudo-Privilege-Escalation-PoC](https://github.com/T1erno/CVE-2024-32019-Netdata-ndsudo-Privilege-Escalation-PoC)
 - [hexared/CVE-2024-32019_poc](https://github.com/hexared/CVE-2024-32019_poc)
+- [80Ottanta80/CVE-2024-32019-PoC](https://github.com/80Ottanta80/CVE-2024-32019-PoC)
 
 ### CVE-2024-32022 (2024-04-16)
 
@@ -30396,7 +30454,7 @@
 <code>An issue was discovered in Joomla! 4.2.0 through 4.2.3. Inadequate filtering of potentially malicious user input leads to reflected XSS vulnerabilities in various components.
 </code>
 
-- [CamTechCoaching/Joomla-CVE-Detector-CVE-2022-27913-](https://github.com/CamTechCoaching/Joomla-CVE-Detector-CVE-2022-27913-)
+- [cameron-coding-projects/Joomla-CVE-Detector-CVE-2022-27913-](https://github.com/cameron-coding-projects/Joomla-CVE-Detector-CVE-2022-27913-)
 
 ### CVE-2022-27925 (2022-04-20)
 
@@ -50047,7 +50105,7 @@
 <code>Liferay Portal CE 6.2.5 allows remote command execution because of deserialization of a JSON payload.
 </code>
 
-- [hrxknight/CVE-2019-16891-Liferay-deserialization-RCE](https://github.com/hrxknight/CVE-2019-16891-Liferay-deserialization-RCE)
+- [rai0ffs3c/CVE-2019-16891-Liferay-deserialization-RCE](https://github.com/rai0ffs3c/CVE-2019-16891-Liferay-deserialization-RCE)
 
 ### CVE-2019-16920 (2019-09-27)
 
@@ -60420,6 +60478,13 @@
 
 - [c0r3dump3d/wp_drupal_timing_attack](https://github.com/c0r3dump3d/wp_drupal_timing_attack)
 - [Primus27/WordPress-Long-Password-Denial-of-Service](https://github.com/Primus27/WordPress-Long-Password-Denial-of-Service)
+
+### CVE-2014-9219 (2014-12-08)
+
+<code>Cross-site scripting (XSS) vulnerability in the redirection feature in url.php in phpMyAdmin 4.2.x before 4.2.13.1 allows remote attackers to inject arbitrary web script or HTML via the url parameter.
+</code>
+
+- [MohmadHafiz/CVE-2014-9219](https://github.com/MohmadHafiz/CVE-2014-9219)
 
 ### CVE-2014-9222 (2014-12-24)
 
