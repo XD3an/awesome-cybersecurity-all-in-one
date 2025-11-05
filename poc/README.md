@@ -1599,6 +1599,13 @@
 
 - [chimdi2700/CVE-2025-8571](https://github.com/chimdi2700/CVE-2025-8571)
 
+### CVE-2025-8573 (2025-08-05)
+
+<code>Concrete CMS versions 9 through 9.4.2 are vulnerable to Stored XSS from Home Folder on Members Dashboard page.  Version 8 was not affected. A rogue admin could set up a malicious folder containing XSS to which users could be directed upon login. The Concrete CMS security team gave this vulnerability a CVSS v.4.0 score of 2.0 with vector CVSS:4.0/AV:N/AC:H/AT:N/PR:H/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N. Thanks sealldev  (Noah Cooper) for reporting via HackerOne.
+</code>
+
+- [iamFredNi/poc-cve-2025-8573](https://github.com/iamFredNi/poc-cve-2025-8573)
+
 ### CVE-2025-8625 (2025-09-30)
 
 <code>The Copypress Rest API plugin for WordPress is vulnerable to Remote Code Execution via copyreap_handle_image() Function in versions 1.1 to 1.2. The plugin falls back to a hard-coded JWT signing key when no secret is defined and does not restrict which file types can be fetched and saved as attachments. As a result, unauthenticated attackers can forge a valid token to gain elevated privileges and upload an arbitrary file (e.g. a PHP script) through the image handler, leading to remote code execution.
@@ -1964,7 +1971,6 @@
 </code>
 
 - [Hazelooks/CVE-2025-11499-Exploit](https://github.com/Hazelooks/CVE-2025-11499-Exploit)
-- [rootreapers/CVE-2025-11499](https://github.com/rootreapers/CVE-2025-11499)
 - [usjnx72726w/CVE-2025-11499-LAB](https://github.com/usjnx72726w/CVE-2025-11499-LAB)
 
 ### CVE-2025-11554 (2025-10-09)
@@ -1988,13 +1994,12 @@
 
 - [blackhatlegend/CVE-2025-11832](https://github.com/blackhatlegend/CVE-2025-11832)
 
-### CVE-2025-11833 (2025-11-01)
+### CVE-2025-11953 (2025-11-03)
 
-<code>The Post SMTP – Complete SMTP Solution with Logs, Alerts, Backup SMTP &amp; Mobile App plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the __construct function in all versions up to, and including, 3.6.0. This makes it possible for unauthenticated attackers to read arbitrary logged emails sent through the Post SMTP plugin, including password reset emails containing password reset links, which can lead to account takeover.
+<code>The Metro Development Server, which is opened by the React Native Community CLI, binds to external interfaces by default. The server exposes an endpoint that is vulnerable to OS command injection. This allows unauthenticated network attackers to send a POST request to the server and run arbitrary executables. On Windows, the attackers can also execute arbitrary shell commands with fully controlled arguments.
 </code>
 
-- [modhopmarrow1973/CVE-2025-11833-LAB](https://github.com/modhopmarrow1973/CVE-2025-11833-LAB)
-- [nullstatics/CVE-2025-11833](https://github.com/nullstatics/CVE-2025-11833)
+- [SaidBenaissa/cve-2025-11953-vulnerability-demo](https://github.com/SaidBenaissa/cve-2025-11953-vulnerability-demo)
 
 ### CVE-2025-12428
 - [dexterm300/cve-2025-12428-exploit-poc](https://github.com/dexterm300/cve-2025-12428-exploit-poc)
@@ -3402,6 +3407,13 @@
 
 - [Nxploited/CVE-2025-28915](https://github.com/Nxploited/CVE-2025-28915)
 - [Pei4AN/CVE-2025-28915](https://github.com/Pei4AN/CVE-2025-28915)
+
+### CVE-2025-29009 (2025-07-16)
+
+<code>Unrestricted Upload of File with Dangerous Type vulnerability in Webkul Medical Prescription Attachment Plugin for WooCommerce allows Upload a Web Shell to a Web Server. This issue affects Medical Prescription Attachment Plugin for WooCommerce: from n/a through 1.2.3.
+</code>
+
+- [joshs-code/CVE-2025-29009-POC](https://github.com/joshs-code/CVE-2025-29009-POC)
 
 ### CVE-2025-29015 (2025-04-17)
 
@@ -5307,6 +5319,9 @@
 
 - [demining/Pixnapping-Attack-on-Android](https://github.com/demining/Pixnapping-Attack-on-Android)
 
+### CVE-2025-48593
+- [B1ack4sh/Blackash-CVE-2025-48593](https://github.com/B1ack4sh/Blackash-CVE-2025-48593)
+
 ### CVE-2025-48703 (2025-09-19)
 
 <code>CWP (aka Control Web Panel or CentOS Web Panel) before 0.9.8.1205 allows unauthenticated remote code execution via shell metacharacters in the t_total parameter in a filemanager changePerm request. A valid non-root username must be known.
@@ -5446,6 +5461,7 @@
 - [0xCZR1/cve-2025-49144](https://github.com/0xCZR1/cve-2025-49144)
 - [onniio/CVE-2025-49144](https://github.com/onniio/CVE-2025-49144)
 - [ammarm0010/CVE-2025-49144_PoC](https://github.com/ammarm0010/CVE-2025-49144_PoC)
+- [havertz2110/CVE-2025-49144](https://github.com/havertz2110/CVE-2025-49144)
 
 ### CVE-2025-49223 (2025-06-04)
 
@@ -6263,6 +6279,7 @@
 - [jm7knz/CVE-2025-54253-Exploit-Demo](https://github.com/jm7knz/CVE-2025-54253-Exploit-Demo)
 - [25145hg654511135gfhfkr8488r8r8r8r8r/test](https://github.com/25145hg654511135gfhfkr8488r8r8r8r8r/test)
 - [25145hg654511135gfhfkr8488r8r8r8r8r/test2](https://github.com/25145hg654511135gfhfkr8488r8r8r8r8r/test2)
+- [AdityaBhatt3010/CVE-2025-54253-Inside-the-Adobe-AEM-Forms-Zero-Day](https://github.com/AdityaBhatt3010/CVE-2025-54253-Inside-the-Adobe-AEM-Forms-Zero-Day)
 
 ### CVE-2025-54309 (2025-07-18)
 
@@ -6514,7 +6531,7 @@
 - [TAM-K592/CVE-2025-55752](https://github.com/TAM-K592/CVE-2025-55752)
 - [masahiro331/CVE-2025-55752](https://github.com/masahiro331/CVE-2025-55752)
 - [B1ack4sh/Blackash-CVE-2025-55752](https://github.com/B1ack4sh/Blackash-CVE-2025-55752)
-- [keepshard/CVE-2025-55752](https://github.com/keepshard/CVE-2025-55752)
+- [AuroraSec-Pivot/CVE-2025-55752](https://github.com/AuroraSec-Pivot/CVE-2025-55752)
 
 ### CVE-2025-55763 (2025-08-29)
 
@@ -7014,8 +7031,8 @@
 - [fsanzmoya/wsus_CVE-2025-59287](https://github.com/fsanzmoya/wsus_CVE-2025-59287)
 - [0x7556/CVE-2025-59287](https://github.com/0x7556/CVE-2025-59287)
 - [QurtiDev/WSUS-CVE-2025-59287-RCE](https://github.com/QurtiDev/WSUS-CVE-2025-59287-RCE)
-- [Sid6Effect/CVE-2025-59287](https://github.com/Sid6Effect/CVE-2025-59287)
 - [dexterm300/cve-2025-59287-exploit-poc](https://github.com/dexterm300/cve-2025-59287-exploit-poc)
+- [th1n0/CVE-2025-59287](https://github.com/th1n0/CVE-2025-59287)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -7278,7 +7295,6 @@
 </code>
 
 - [B1ack4sh/Blackash-CVE-2025-61481](https://github.com/B1ack4sh/Blackash-CVE-2025-61481)
-- [codetombs/CVE-2025-61481](https://github.com/codetombs/CVE-2025-61481)
 
 ### CVE-2025-61622 (2025-10-01)
 
@@ -7380,7 +7396,7 @@
 
 ### CVE-2025-62727 (2025-10-28)
 
-<code>Starlette is a lightweight ASGI framework/toolkit. Prior to 0.49.1 , an unauthenticated attacker can send a crafted HTTP Range header that triggers quadratic-time processing in Starlette's FileResponse Range parsing/merging logic. This enables CPU exhaustion per request, causing denial‑of‑service for endpoints serving files (e.g., StaticFiles or any use of FileResponse). This vulnerability is fixed in 0.49.1.
+<code>Starlette is a lightweight ASGI framework/toolkit. Starting in version 0.39.0 and prior to version 0.49.1 , an unauthenticated attacker can send a crafted HTTP Range header that triggers quadratic-time processing in Starlette's FileResponse Range parsing/merging logic. This enables CPU exhaustion per request, causing denial‑of‑service for endpoints serving files (e.g., StaticFiles or any use of FileResponse). This vulnerability is fixed in 0.49.1.
 </code>
 
 - [ch4n3-yoon/CVE-2025-62727-Demo](https://github.com/ch4n3-yoon/CVE-2025-62727-Demo)
@@ -8931,6 +8947,7 @@
 - [EQSTLab/CVE-2024-5932](https://github.com/EQSTLab/CVE-2024-5932)
 - [OxLmahdi/cve-2024-5932](https://github.com/OxLmahdi/cve-2024-5932)
 - [hlc23/CVE-2024-5932-web-ui](https://github.com/hlc23/CVE-2024-5932-web-ui)
+- [autom4il/CVE-2024-5932](https://github.com/autom4il/CVE-2024-5932)
 
 ### CVE-2024-5947 (2024-06-13)
 
@@ -9276,7 +9293,7 @@
 <code>A flaw was found in openshift/builder. This vulnerability allows command injection via path traversal, where a malicious user can execute arbitrary commands on the OpenShift node running the builder container. When using the “Docker” strategy, executable files inside the privileged build container can be overridden using the `spec.source.secrets.secret.destinationDir` attribute of the `BuildConfig` definition. An attacker running code in a privileged container could escalate their permissions on the node running the container.
 </code>
 
-- [fatcatresearch/cve-2024-7387](https://github.com/fatcatresearch/cve-2024-7387)
+- [pwnc4t/cve-2024-7387](https://github.com/pwnc4t/cve-2024-7387)
 
 ### CVE-2024-7399 (2024-08-09)
 
@@ -15767,7 +15784,7 @@
 <code>A flaw was found in OpenShift. This issue occurs due to the misuse of elevated privileges in the OpenShift Container Platform's build process. During the build initialization step, the git-clone container is run with a privileged security context, allowing unrestricted access to the node. An attacker with developer-level access can provide a crafted .gitconfig file containing commands executed during the cloning process, leading to arbitrary command execution on the worker node. An attacker running code in a privileged container could escalate their permissions on the node running the container.
 </code>
 
-- [fatcatresearch/cve-2024-45496](https://github.com/fatcatresearch/cve-2024-45496)
+- [pwnc4t/cve-2024-45496](https://github.com/pwnc4t/cve-2024-45496)
 
 ### CVE-2024-45507 (2024-09-04)
 
@@ -25493,6 +25510,7 @@
 - [infernosalex/CVE-2023-45612-PoC](https://github.com/infernosalex/CVE-2023-45612-PoC)
 - [aecelen/ktor-xxe-poc](https://github.com/aecelen/ktor-xxe-poc)
 - [clemfavre/cve-2023-45612_exploit](https://github.com/clemfavre/cve-2023-45612_exploit)
+- [seraphimi/ktor-xxe](https://github.com/seraphimi/ktor-xxe)
 
 ### CVE-2023-45657 (2023-11-06)
 
@@ -26303,6 +26321,7 @@
 </code>
 
 - [KernelCipher/CVE-2023-49440-POC](https://github.com/KernelCipher/CVE-2023-49440-POC)
+- [NyaMeeEain/CVE-2023-49440](https://github.com/NyaMeeEain/CVE-2023-49440)
 
 ### CVE-2023-49471 (2024-01-10)
 
@@ -30847,7 +30866,6 @@
 - [SystemVll/CVE-2022-29464-loader](https://github.com/SystemVll/CVE-2022-29464-loader)
 - [Chocapikk/CVE-2022-29464](https://github.com/Chocapikk/CVE-2022-29464)
 - [jimidk/Better-CVE-2022-29464](https://github.com/jimidk/Better-CVE-2022-29464)
-- [g0dxing/CVE-2022-29464](https://github.com/g0dxing/CVE-2022-29464)
 - [hxlxmj/Mass-exploit-CVE-2022-29464](https://github.com/hxlxmj/Mass-exploit-CVE-2022-29464)
 - [Pasch0/WSO2RCE](https://github.com/Pasch0/WSO2RCE)
 - [r4x0r1337/-CVE-2022-29464](https://github.com/r4x0r1337/-CVE-2022-29464)
@@ -36079,7 +36097,6 @@
 - [findneo/GitLab-preauth-RCE_CVE-2021-22205](https://github.com/findneo/GitLab-preauth-RCE_CVE-2021-22205)
 - [c0okB/CVE-2021-22205](https://github.com/c0okB/CVE-2021-22205)
 - [shang159/CVE-2021-22205-getshell](https://github.com/shang159/CVE-2021-22205-getshell)
-- [devdanqtuan/CVE-2021-22205](https://github.com/devdanqtuan/CVE-2021-22205)
 - [hh-hunter/cve-2021-22205](https://github.com/hh-hunter/cve-2021-22205)
 - [runsel/GitLab-CVE-2021-22205-](https://github.com/runsel/GitLab-CVE-2021-22205-)
 - [faisalfs10x/GitLab-CVE-2021-22205-scanner](https://github.com/faisalfs10x/GitLab-CVE-2021-22205-scanner)
@@ -41043,7 +41060,6 @@
 - [Polo35/CVE-2020-0022](https://github.com/Polo35/CVE-2020-0022)
 - [5k1l/cve-2020-0022](https://github.com/5k1l/cve-2020-0022)
 - [lsw29475/CVE-2020-0022](https://github.com/lsw29475/CVE-2020-0022)
-- [devdanqtuan/poc-for-cve-2020-0022](https://github.com/devdanqtuan/poc-for-cve-2020-0022)
 - [themmokhtar/CVE-2020-0022](https://github.com/themmokhtar/CVE-2020-0022)
 
 ### CVE-2020-0023 (2020-02-13)
@@ -44622,6 +44638,7 @@
 - [AleksaZatezalo/CVE-2020-14882](https://github.com/AleksaZatezalo/CVE-2020-14882)
 - [KKC73/weblogic-cve-2020-14882](https://github.com/KKC73/weblogic-cve-2020-14882)
 - [AshrafZaryouh/CVE-2020-14882](https://github.com/AshrafZaryouh/CVE-2020-14882)
+- [B1ack4sh/Blackash-CVE-2020-14882](https://github.com/B1ack4sh/Blackash-CVE-2020-14882)
 
 ### CVE-2020-14883 (2020-10-21)
 
@@ -52021,6 +52038,7 @@
 - [paulogmota/CVE-2018-6574](https://github.com/paulogmota/CVE-2018-6574)
 - [solovvway/CVE-2018-6574](https://github.com/solovvway/CVE-2018-6574)
 - [memmas/CVE-2018-6574](https://github.com/memmas/CVE-2018-6574)
+- [YoussefSalama1/CVE-2018-6574](https://github.com/YoussefSalama1/CVE-2018-6574)
 
 ### CVE-2018-6622 (2018-08-17)
 
