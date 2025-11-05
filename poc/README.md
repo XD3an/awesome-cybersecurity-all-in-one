@@ -7286,9 +7286,6 @@
 
 - [tansique-17/CVE-2025-61456](https://github.com/tansique-17/CVE-2025-61456)
 
-### CVE-2025-61472
-- [flywithjoey/CVE-2025-61472](https://github.com/flywithjoey/CVE-2025-61472)
-
 ### CVE-2025-61481 (2025-10-27)
 
 <code>An issue in MikroTik RouterOS v.7.14.2 and SwOS v.2.18 exposes the WebFig management interface over cleartext HTTP by default, allowing an on-path attacker to execute injected JavaScript in the administrator’s browser and intercept credentials.
@@ -35545,6 +35542,9 @@
 
 - [CERT-hr/Log4Shell](https://github.com/CERT-hr/Log4Shell)
 
+### CVE-2021-4773
+- [Alexs18/CVE-2021-4773](https://github.com/Alexs18/CVE-2021-4773)
+
 ### CVE-2021-6857
 - [zi0n8/CVE-2021-6857](https://github.com/zi0n8/CVE-2021-6857)
 
@@ -36153,13 +36153,6 @@
 - [pashayogi/CVE-2021-22555](https://github.com/pashayogi/CVE-2021-22555)
 - [letsr00t/-2021-LOCALROOT-CVE-2021-22555](https://github.com/letsr00t/-2021-LOCALROOT-CVE-2021-22555)
 - [letsr00t/CVE-2021-22555](https://github.com/letsr00t/CVE-2021-22555)
-
-### CVE-2021-22569 (2022-01-07)
-
-<code>An issue in protobuf-java allowed the interleaving of com.google.protobuf.UnknownFieldSet fields in such a way that would be processed out of order. A small malicious payload can occupy the parser for several minutes by creating large numbers of short-lived objects that cause frequent, repeated pauses. We recommend upgrading libraries beyond the vulnerable versions.
-</code>
-
-- [Mario-Kart-Felix/A-potential-Denial-of-Service-issue-in-protobuf-java](https://github.com/Mario-Kart-Felix/A-potential-Denial-of-Service-issue-in-protobuf-java)
 
 ### CVE-2021-22600 (2022-01-26)
 
