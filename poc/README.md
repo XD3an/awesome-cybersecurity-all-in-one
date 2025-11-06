@@ -1204,6 +1204,7 @@
 </code>
 
 - [Pwdnx1337/CVE-2025-6440](https://github.com/Pwdnx1337/CVE-2025-6440)
+- [xxoprt/CVE-2025-6440](https://github.com/xxoprt/CVE-2025-6440)
 
 ### CVE-2025-6514 (2025-07-09)
 
@@ -1690,6 +1691,13 @@
 - [MooseLoveti/Trinity-Audio-CVE-Report](https://github.com/MooseLoveti/Trinity-Audio-CVE-Report)
 - [godfatherofexps/CVE-2025-9196-PoC](https://github.com/godfatherofexps/CVE-2025-9196-PoC)
 
+### CVE-2025-9209 (2025-10-03)
+
+<code>The RestroPress – Online Food Ordering System plugin for WordPress is vulnerable to Authentication Bypass in versions 3.0.0 to 3.1.9.2. This is due to the plugin exposing user private tokens and API data via the /wp-json/wp/v2/users REST API endpoint. This makes it possible for unauthenticated attackers to forge JWT tokens for other users, including administrators, and authenticate as them.
+</code>
+
+- [Nxploited/CVE-2025-9209](https://github.com/Nxploited/CVE-2025-9209)
+
 ### CVE-2025-9215 (2025-09-17)
 
 <code>The StoreEngine – Powerful WordPress eCommerce Plugin for Payments, Memberships, Affiliates, Sales &amp; More plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 1.5.0 via the file_download() function. This makes it possible for authenticated attackers, with Subscriber-level access and above, to read the contents of arbitrary files on the server, which can contain sensitive information.
@@ -2000,12 +2008,10 @@
 </code>
 
 - [SaidBenaissa/cve-2025-11953-vulnerability-demo](https://github.com/SaidBenaissa/cve-2025-11953-vulnerability-demo)
+- [B1ack4sh/Blackash-CVE-2025-11953](https://github.com/B1ack4sh/Blackash-CVE-2025-11953)
 
 ### CVE-2025-12428
 - [dexterm300/cve-2025-12428-exploit-poc](https://github.com/dexterm300/cve-2025-12428-exploit-poc)
-
-### CVE-2025-12437
-- [callinston/CVE-2025-12437](https://github.com/callinston/CVE-2025-12437)
 
 ### CVE-2025-12595 (2025-11-02)
 
@@ -2511,7 +2517,7 @@
 
 ### CVE-2025-24203 (2025-03-31)
 
-<code>The issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.7.5, iPadOS 17.7.6, macOS Sequoia 15.4, macOS Sonoma 14.7.5. An app may be able to modify protected parts of the file system.
+<code>The issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.7.5, iPadOS 17.7.6, macOS Sequoia 15.4, macOS Sonoma 14.7.5, iOS 18.4 and iPadOS 18.4, tvOS 18.4, visionOS 2.4, watchOS 11.4. An app may be able to modify protected parts of the file system.
 </code>
 
 - [jailbreakdotparty/dirtyZero](https://github.com/jailbreakdotparty/dirtyZero)
@@ -2701,6 +2707,7 @@
 - [Bishben/xwiki-15.10.8-reverse-shell-cve-2025-24893](https://github.com/Bishben/xwiki-15.10.8-reverse-shell-cve-2025-24893)
 - [gotr00t0day/CVE-2025-24893](https://github.com/gotr00t0day/CVE-2025-24893)
 - [ibrahmsql/CVE-2025-24893](https://github.com/ibrahmsql/CVE-2025-24893)
+- [kimtangker/CVE-2025-24893](https://github.com/kimtangker/CVE-2025-24893)
 - [Yukik4z3/CVE-2025-24893](https://github.com/Yukik4z3/CVE-2025-24893)
 - [rvizx/CVE-2025-24893](https://github.com/rvizx/CVE-2025-24893)
 - [Y2F05p2w/CVE-2025-24893](https://github.com/Y2F05p2w/CVE-2025-24893)
@@ -3701,6 +3708,7 @@
 - [Bongni/CVE-2025-29927](https://github.com/Bongni/CVE-2025-29927)
 - [NS-Projects-Unina/CTF_CVE_DSP_1](https://github.com/NS-Projects-Unina/CTF_CVE_DSP_1)
 - [lucaschanzx/CVE-2025-29927-PoC](https://github.com/lucaschanzx/CVE-2025-29927-PoC)
+- [BugHawak/CVE-2025-29927](https://github.com/BugHawak/CVE-2025-29927)
 
 ### CVE-2025-29972 (2025-05-08)
 
@@ -5321,6 +5329,7 @@
 
 ### CVE-2025-48593
 - [B1ack4sh/Blackash-CVE-2025-48593](https://github.com/B1ack4sh/Blackash-CVE-2025-48593)
+- [daiens/CVE-2025-48593](https://github.com/daiens/CVE-2025-48593)
 
 ### CVE-2025-48703 (2025-09-19)
 
@@ -6036,6 +6045,13 @@
 
 - [SystemVll/CVE-2025-52488](https://github.com/SystemVll/CVE-2025-52488)
 
+### CVE-2025-52665 (2025-10-30)
+
+<code>A malicious actor with access to the management network could exploit a misconfiguration in UniFi’s door access application, UniFi Access, that exposed a management API without proper authentication. This vulnerability was introduced in Version 3.3.22 and was fixed in Version 4.0.21 and later. \n \nAffected Products:\nUniFi Access Application (Version 3.3.22 through 3.4.31).   \n\nMitigation:\nUpdate your UniFi Access Application to Version 4.0.21 or later.
+</code>
+
+- [callinston/CVE-2025-52665](https://github.com/callinston/CVE-2025-52665)
+
 ### CVE-2025-52688 (2025-07-16)
 
 <code>Successful exploitation of the vulnerability could allow an attacker to inject commands with root privileges on the access point, potentially leading to the loss of confidentiality, integrity, availability, and full control of the access point.
@@ -6132,6 +6148,7 @@
 - [rxerium/CVE-2025-53690](https://github.com/rxerium/CVE-2025-53690)
 - [B1ack4sh/Blackash-CVE-2025-53690](https://github.com/B1ack4sh/Blackash-CVE-2025-53690)
 - [m0d0ri205/CVE-2025-53690-Analysis](https://github.com/m0d0ri205/CVE-2025-53690-Analysis)
+- [ErikLearningSec/CVE-2025-53690-POC](https://github.com/ErikLearningSec/CVE-2025-53690-POC)
 
 ### CVE-2025-53691 (2025-09-03)
 
@@ -6709,6 +6726,7 @@
 </code>
 
 - [zer0t0/CVE-2025-56383-Proof-of-Concept](https://github.com/zer0t0/CVE-2025-56383-Proof-of-Concept)
+- [NewComrade12211/CVE-2025-56383](https://github.com/NewComrade12211/CVE-2025-56383)
 
 ### CVE-2025-56399 (2025-10-28)
 
@@ -7255,7 +7273,11 @@
 
 - [eGkritsis/CVE-2025-61303](https://github.com/eGkritsis/CVE-2025-61303)
 
-### CVE-2025-61304
+### CVE-2025-61304 (2025-11-05)
+
+<code>OS command injection vulnerability in Dynatrace ActiveGate ping extension up to 1.016 via crafted ip address.
+</code>
+
 - [pentastic-be/CVE-2025-61304](https://github.com/pentastic-be/CVE-2025-61304)
 
 ### CVE-2025-61319 (2025-10-10)
@@ -7405,8 +7427,23 @@
 
 - [z3rObyte/CVE-2025-63298](https://github.com/z3rObyte/CVE-2025-63298)
 
+### CVE-2025-63307
+- [Theethat-Thamwasin/CVE-2025-63307](https://github.com/Theethat-Thamwasin/CVE-2025-63307)
+
 ### CVE-2025-63498
 - [xryptoh/CVE-2025-63498](https://github.com/xryptoh/CVE-2025-63498)
+
+### CVE-2025-63571
+- [RRespxwnss/CVE-2025-63571](https://github.com/RRespxwnss/CVE-2025-63571)
+
+### CVE-2025-63572
+- [RRespxwnss/CVE-2025-63572](https://github.com/RRespxwnss/CVE-2025-63572)
+
+### CVE-2025-63588
+- [cybercrewinc/CVE-2025-63588](https://github.com/cybercrewinc/CVE-2025-63588)
+
+### CVE-2025-63589
+- [cybercrewinc/CVE-2025-63589](https://github.com/cybercrewinc/CVE-2025-63589)
 
 ### CVE-2025-64095 (2025-10-28)
 
@@ -8239,6 +8276,7 @@
 - [Titus-soc/-CVE-2024-3094-Vulnerability-Checker-Fixer-Public](https://github.com/Titus-soc/-CVE-2024-3094-Vulnerability-Checker-Fixer-Public)
 - [M1lo25/CS50FinalProject](https://github.com/M1lo25/CS50FinalProject)
 - [ThomRgn/xzutils_backdoor_obfuscation](https://github.com/ThomRgn/xzutils_backdoor_obfuscation)
+- [B1ack4sh/Blackash-CVE-2024-3094](https://github.com/B1ack4sh/Blackash-CVE-2024-3094)
 
 ### CVE-2024-3105 (2024-06-15)
 
@@ -8487,6 +8525,7 @@
 - [geniuszly/GenCrushSSTIExploit](https://github.com/geniuszly/GenCrushSSTIExploit)
 - [rahisec/CVE-2024-4040](https://github.com/rahisec/CVE-2024-4040)
 - [ill-deed/CrushFTP-CVE-2024-4040-illdeed](https://github.com/ill-deed/CrushFTP-CVE-2024-4040-illdeed)
+- [juanorts/CrushFTP10-Docker-CVE-2024-4040](https://github.com/juanorts/CrushFTP10-Docker-CVE-2024-4040)
 
 ### CVE-2024-4157 (2024-05-22)
 
@@ -15011,6 +15050,7 @@
 
 - [TAM-K592/CVE-2024-40725-CVE-2024-40898](https://github.com/TAM-K592/CVE-2024-40725-CVE-2024-40898)
 - [soltanali0/CVE-2024-40725](https://github.com/soltanali0/CVE-2024-40725)
+- [YassineOUAHMANE/CVE-2024-40725](https://github.com/YassineOUAHMANE/CVE-2024-40725)
 
 ### CVE-2024-40815 (2024-07-29)
 
@@ -15848,6 +15888,7 @@
 </code>
 
 - [barttran2k/POC_CVE-2024-46256](https://github.com/barttran2k/POC_CVE-2024-46256)
+- [kimtangker/CVE-2024-46256](https://github.com/kimtangker/CVE-2024-46256)
 - [TranDongA3/Simulation_CVE-2024-46256](https://github.com/TranDongA3/Simulation_CVE-2024-46256)
 
 ### CVE-2024-46278 (2024-10-07)
@@ -21882,6 +21923,7 @@
 - [n00o00b/CVE-2023-30258-RCE-POC](https://github.com/n00o00b/CVE-2023-30258-RCE-POC)
 - [AdityaBhatt3010/TryHackMe-Room-Walkthrough-Billing](https://github.com/AdityaBhatt3010/TryHackMe-Room-Walkthrough-Billing)
 - [abdullohqurbon0v/CVE-2023-30258-Exploit-For-Magnus-Billing-System](https://github.com/abdullohqurbon0v/CVE-2023-30258-Exploit-For-Magnus-Billing-System)
+- [CankunWang/Tryhackme_Billing](https://github.com/CankunWang/Tryhackme_Billing)
 
 ### CVE-2023-30347 (2023-06-22)
 
@@ -35414,7 +35456,6 @@
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
 - [hohn/codeql-sample-polkit](https://github.com/hohn/codeql-sample-polkit)
-- [LJP-TW/CVE-2021-4034](https://github.com/LJP-TW/CVE-2021-4034)
 - [fnknda/CVE-2021-4034_POC](https://github.com/fnknda/CVE-2021-4034_POC)
 - [Tanmay-N/CVE-2021-4034](https://github.com/Tanmay-N/CVE-2021-4034)
 - [hahaleyile/CVE-2021-4034](https://github.com/hahaleyile/CVE-2021-4034)
@@ -40556,6 +40597,7 @@
 - [arabindadora/log4shell](https://github.com/arabindadora/log4shell)
 - [d4ngkh04w/CVE-2021-44228-Apache-Log4j2](https://github.com/d4ngkh04w/CVE-2021-44228-Apache-Log4j2)
 - [Mintimate/log4j2-bugmaker](https://github.com/Mintimate/log4j2-bugmaker)
+- [B1ack4sh/Blackash-CVE-2021-44228](https://github.com/B1ack4sh/Blackash-CVE-2021-44228)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -42152,6 +42194,7 @@
 - [DaMinGshidashi/CVE-2020-2551](https://github.com/DaMinGshidashi/CVE-2020-2551)
 - [LTiDi2000/CVE-2020-2551](https://github.com/LTiDi2000/CVE-2020-2551)
 - [ar2o3/CVE-Exploit](https://github.com/ar2o3/CVE-Exploit)
+- [B1ack4sh/Blackash-CVE-2020-2551](https://github.com/B1ack4sh/Blackash-CVE-2020-2551)
 
 ### CVE-2020-2555 (2020-01-15)
 
@@ -44644,6 +44687,7 @@
 - [Osyanina/westone-CVE-2020-14883-scanner](https://github.com/Osyanina/westone-CVE-2020-14883-scanner)
 - [1n7erface/PocList](https://github.com/1n7erface/PocList)
 - [amacloudobia/CVE-2020-14883](https://github.com/amacloudobia/CVE-2020-14883)
+- [B1ack4sh/Blackash-CVE-2020-14883](https://github.com/B1ack4sh/Blackash-CVE-2020-14883)
 
 ### CVE-2020-14947 (2020-06-30)
 
@@ -46401,6 +46445,7 @@
 </code>
 
 - [Diekgbbtt/CVE-2020-35667-PoC](https://github.com/Diekgbbtt/CVE-2020-35667-PoC)
+- [stefan-500/teamcity-idea-cve-2020-35667-poc](https://github.com/stefan-500/teamcity-idea-cve-2020-35667-poc)
 
 ### CVE-2020-35669 (2020-12-24)
 
@@ -46863,7 +46908,7 @@
 - [tranqtruong/Detect-BlueKeep](https://github.com/tranqtruong/Detect-BlueKeep)
 - [rasan2001/Microsoft-Remote-Desktop-Services-Remote-Code-Execution-Vulnerability-CVE-2019-0708](https://github.com/rasan2001/Microsoft-Remote-Desktop-Services-Remote-Code-Execution-Vulnerability-CVE-2019-0708)
 - [adyanamul/Remote-Code-Execution-RCE-Exploit-BlueKeep-CVE-2019-0708-PoC](https://github.com/adyanamul/Remote-Code-Execution-RCE-Exploit-BlueKeep-CVE-2019-0708-PoC)
-- [DenuwanJayasekara/CVE-Exploitation-Reports](https://github.com/DenuwanJayasekara/CVE-Exploitation-Reports)
+- [denuwanjayasekara/CVE-Exploitation-Reports](https://github.com/denuwanjayasekara/CVE-Exploitation-Reports)
 - [hualy13/CVE-2019-0708-Check](https://github.com/hualy13/CVE-2019-0708-Check)
 - [isabelacostaz/CVE-2019-0708-POC](https://github.com/isabelacostaz/CVE-2019-0708-POC)
 
@@ -54735,7 +54780,7 @@
 - [quynhold/Detect-CVE-2017-0144-attack](https://github.com/quynhold/Detect-CVE-2017-0144-attack)
 - [ducanh2oo3/Vulnerability-Research-CVE-2017-0144](https://github.com/ducanh2oo3/Vulnerability-Research-CVE-2017-0144)
 - [AnugiArrawwala/CVE-Research](https://github.com/AnugiArrawwala/CVE-Research)
-- [DenuwanJayasekara/CVE-Exploitation-Reports](https://github.com/DenuwanJayasekara/CVE-Exploitation-Reports)
+- [denuwanjayasekara/CVE-Exploitation-Reports](https://github.com/denuwanjayasekara/CVE-Exploitation-Reports)
 - [sethwhy/BlueDoor](https://github.com/sethwhy/BlueDoor)
 - [AtithKhawas/autoblue](https://github.com/AtithKhawas/autoblue)
 - [MedX267/EternalBlue-Vulnerability-Scanner](https://github.com/MedX267/EternalBlue-Vulnerability-Scanner)
@@ -54743,6 +54788,7 @@
 - [luckyman2907/SMB-Protocol-Vulnerability_CVE-2017-0144](https://github.com/luckyman2907/SMB-Protocol-Vulnerability_CVE-2017-0144)
 - [AdityaBhatt3010/VAPT-Report-on-SMB-Exploitation-in-Windows-10-Finance-Endpoint](https://github.com/AdityaBhatt3010/VAPT-Report-on-SMB-Exploitation-in-Windows-10-Finance-Endpoint)
 - [nivedh-j/EternalBlue-Explained](https://github.com/nivedh-j/EternalBlue-Explained)
+- [B1ack4sh/Blackash-CVE-2017-0144](https://github.com/B1ack4sh/Blackash-CVE-2017-0144)
 
 ### CVE-2017-0145 (2017-03-17)
 
@@ -62193,7 +62239,7 @@
 <code>The Database Link library (dblink) in PostgreSQL 8.1 implements functions via CREATE statements that map to arbitrary libraries based on the C programming language, which allows remote authenticated superusers to map and execute a function from any library, as demonstrated by using the system function in libc.so.6 to gain shell access.
 </code>
 
-- [DenuwanJayasekara/CVE-Exploitation-Reports](https://github.com/DenuwanJayasekara/CVE-Exploitation-Reports)
+- [denuwanjayasekara/CVE-Exploitation-Reports](https://github.com/denuwanjayasekara/CVE-Exploitation-Reports)
 
 ### CVE-2007-3830 (2007-07-17)
 
