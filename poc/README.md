@@ -7277,6 +7277,9 @@
 
 - [thawphone/CVE-2025-61183](https://github.com/thawphone/CVE-2025-61183)
 
+### CVE-2025-61299
+- [GovindPalakkal/CVE-2025-61299_POC](https://github.com/GovindPalakkal/CVE-2025-61299_POC)
+
 ### CVE-2025-61301 (2025-10-20)
 
 <code>Denial-of-analysis in reporting/mongodb.py and reporting/jsondump.py in CAPEv2 (commit 52e4b43, on 2025-05-17) allows attackers who can submit samples to cause incomplete or missing behavioral analysis reports by generating deeply nested or oversized behavior data that trigger MongoDB BSON limits or orjson recursion errors when the sample executes in the sandbox.
@@ -7385,7 +7388,6 @@
 </code>
 
 - [dgl/cve-2025-61984-poc](https://github.com/dgl/cve-2025-61984-poc)
-- [ThanhCT-CyX/Test-CVE-2025-61984](https://github.com/ThanhCT-CyX/Test-CVE-2025-61984)
 - [flyskyfire/cve-2025-61984-poc](https://github.com/flyskyfire/cve-2025-61984-poc)
 
 ### CVE-2025-62168 (2025-10-17)
@@ -7462,6 +7464,13 @@
 ### CVE-2025-63353
 - [hanianis/CVE-2025-63353](https://github.com/hanianis/CVE-2025-63353)
 
+### CVE-2025-63441 (2025-11-03)
+
+<code>Open Source Social Network (OSSN) 8.6 is vulnerable to Cross Site Scripting (XSS) via the parameter param` at endpoint u/administrator/friends.
+</code>
+
+- [Kgan0509/CVE-2025-63441](https://github.com/Kgan0509/CVE-2025-63441)
+
 ### CVE-2025-63498
 - [xryptoh/CVE-2025-63498](https://github.com/xryptoh/CVE-2025-63498)
 
@@ -7470,6 +7479,13 @@
 
 ### CVE-2025-63572
 - [RRespxwnss/CVE-2025-63572](https://github.com/RRespxwnss/CVE-2025-63572)
+
+### CVE-2025-63585 (2025-11-05)
+
+<code>OSSN (Open Source Social Network) 8.6 is vulnerable to SQL Injection in /action/rtcomments/status via the timestamp parameter.
+</code>
+
+- [Kgan0509/CVE-2025-63585](https://github.com/Kgan0509/CVE-2025-63585)
 
 ### CVE-2025-63588 (2025-11-06)
 
@@ -7491,7 +7507,6 @@
 </code>
 
 - [h4x0r-dz/CVE-2025-64095---DNN-Unauthenticated-arbitrary-file-upload](https://github.com/h4x0r-dz/CVE-2025-64095---DNN-Unauthenticated-arbitrary-file-upload)
-- [NationalServices/CVE-2025-64095-DotNetNuke-DNN_PoC](https://github.com/NationalServices/CVE-2025-64095-DotNetNuke-DNN_PoC)
 
 ### CVE-2025-64458 (2025-11-05)
 
@@ -19681,6 +19696,14 @@
 </code>
 
 - [ewilded/CVE-2023-7016-POC](https://github.com/ewilded/CVE-2023-7016-POC)
+
+### CVE-2023-7024 (2023-12-21)
+
+<code>Heap buffer overflow in WebRTC in Google Chrome prior to 120.0.6099.129 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+</code>
+
+- [aka76bm/chrome-emergency-update](https://github.com/aka76bm/chrome-emergency-update)
+- [aka76bm/google-chrome-emergency-update](https://github.com/aka76bm/google-chrome-emergency-update)
 
 ### CVE-2023-7028 (2024-01-12)
 
