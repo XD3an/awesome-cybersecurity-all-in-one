@@ -2020,13 +2020,6 @@
 
 - [lagerhaker539/CVE-2025-12595-POC](https://github.com/lagerhaker539/CVE-2025-12595-POC)
 
-### CVE-2025-12596 (2025-11-02)
-
-<code>In Tenda AC23 16.03.07.52 ist eine Schwachstelle entdeckt worden. Betroffen ist die Funktion saveParentControlInfo der Datei /goform/saveParentControlInfo. Dank Manipulation des Arguments Time mit unbekannten Daten kann eine buffer overflow-Schwachstelle ausgenutzt werden. Ein Angriff ist aus der Distanz möglich. Der Exploit wurde der Öffentlichkeit bekannt gemacht und könnte verwendet werden.
-</code>
-
-- [DebugFrag/CVE-2025-12596-Exploit](https://github.com/DebugFrag/CVE-2025-12596-Exploit)
-
 ### CVE-2025-20029 (2025-02-05)
 
 <code>Command injection vulnerability exists in iControl REST and BIG-IP TMOS Shell (tmsh) save command, which may allow an authenticated attacker to execute arbitrary system commands.\n\n \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
@@ -2075,6 +2068,14 @@
 </code>
 
 - [scadastrangelove/CVE-2025-20352](https://github.com/scadastrangelove/CVE-2025-20352)
+
+### CVE-2025-20354 (2025-11-05)
+
+<code>A vulnerability in the Java Remote Method Invocation (RMI) process of Cisco Unified CCX could allow an unauthenticated, remote attacker to upload arbitrary files and execute arbitrary commands with root permissions on an affected system.\r\n\r\nThis vulnerability is due to improper authentication mechanisms that are associated to specific Cisco Unified CCX features. An attacker could exploit this vulnerability by uploading a crafted file to an affected system through the Java RMI process. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system and elevate privileges to root.
+</code>
+
+- [allinsthon/CVE-2025-20354](https://github.com/allinsthon/CVE-2025-20354)
+- [B1ack4sh/Blackash-CVE-2025-20354](https://github.com/B1ack4sh/Blackash-CVE-2025-20354)
 
 ### CVE-2025-21204 (2025-04-08)
 
@@ -2517,7 +2518,7 @@
 
 ### CVE-2025-24203 (2025-03-31)
 
-<code>The issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.7.5, iPadOS 17.7.6, macOS Sequoia 15.4, macOS Sonoma 14.7.5, iOS 18.4 and iPadOS 18.4, tvOS 18.4, visionOS 2.4, watchOS 11.4. An app may be able to modify protected parts of the file system.
+<code>The issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.7.5, iPadOS 17.7.6, macOS Sequoia 15.4, macOS Sonoma 14.7.5. An app may be able to modify protected parts of the file system.
 </code>
 
 - [jailbreakdotparty/dirtyZero](https://github.com/jailbreakdotparty/dirtyZero)
@@ -3890,6 +3891,13 @@
 - [MuhammadWaseem29/CVE-2025-31131](https://github.com/MuhammadWaseem29/CVE-2025-31131)
 - [nak000/CVE-2025-31131-RCE](https://github.com/nak000/CVE-2025-31131-RCE)
 - [B1ack4sh/Blackash-CVE-2025-31131](https://github.com/B1ack4sh/Blackash-CVE-2025-31131)
+
+### CVE-2025-31133 (2025-11-06)
+
+<code>runc is a CLI tool for spawning and running containers according to the OCI specification. In versions 1.2.7 and below, 1.3.0-rc.1 through 1.3.1, 1.4.0-rc.1 and 1.4.0-rc.2 files, runc would not perform sufficient verification that the source of the bind-mount (i.e., the container's /dev/null) was actually a real /dev/null inode when using the container's /dev/null to mask. This exposes two methods of attack:  an arbitrary mount gadget, leading to host information disclosure, host denial of service, container escape, or a bypassing of maskedPaths. This issue is fixed in versions 1.2.8, 1.3.3 and 1.4.0-rc.3.
+</code>
+
+- [sahar042/CVE-2025-31133](https://github.com/sahar042/CVE-2025-31133)
 
 ### CVE-2025-31137 (2025-04-01)
 
@@ -5329,7 +5337,7 @@
 
 ### CVE-2025-48593
 - [B1ack4sh/Blackash-CVE-2025-48593](https://github.com/B1ack4sh/Blackash-CVE-2025-48593)
-- [daiens/CVE-2025-48593](https://github.com/daiens/CVE-2025-48593)
+- [skolepc/CVE-2025-48593](https://github.com/skolepc/CVE-2025-48593)
 
 ### CVE-2025-48703 (2025-09-19)
 
@@ -6285,6 +6293,7 @@
 
 - [amalpvatayam67/day01-sessionreaper-lab](https://github.com/amalpvatayam67/day01-sessionreaper-lab)
 - [wubinworks/magento2-session-reaper-patch](https://github.com/wubinworks/magento2-session-reaper-patch)
+- [crondenice/CVE-2025-54236](https://github.com/crondenice/CVE-2025-54236)
 
 ### CVE-2025-54253 (2025-08-05)
 
@@ -6390,6 +6399,7 @@
 </code>
 
 - [vxaretra/CVE-2025-54782](https://github.com/vxaretra/CVE-2025-54782)
+- [DDestinys/CVE-2025-54782](https://github.com/DDestinys/CVE-2025-54782)
 
 ### CVE-2025-54793 (2025-08-08)
 
@@ -6772,6 +6782,9 @@
 
 - [anonaninda/Aninda-security-advisories](https://github.com/anonaninda/Aninda-security-advisories)
 
+### CVE-2025-56643
+- [0xBS0D27/CVE-2025-56643](https://github.com/0xBS0D27/CVE-2025-56643)
+
 ### CVE-2025-56708
 - [xkaneiki/rtty_CVE-2025-56708-CVE-2025-56709](https://github.com/xkaneiki/rtty_CVE-2025-56708-CVE-2025-56709)
 
@@ -7051,6 +7064,7 @@
 - [QurtiDev/WSUS-CVE-2025-59287-RCE](https://github.com/QurtiDev/WSUS-CVE-2025-59287-RCE)
 - [dexterm300/cve-2025-59287-exploit-poc](https://github.com/dexterm300/cve-2025-59287-exploit-poc)
 - [th1n0/CVE-2025-59287](https://github.com/th1n0/CVE-2025-59287)
+- [crondenice/CVE-2025-59287](https://github.com/crondenice/CVE-2025-59287)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -7073,7 +7087,11 @@
 
 - [william31212/CVE-Requests-1896609](https://github.com/william31212/CVE-Requests-1896609)
 
-### CVE-2025-59396
+### CVE-2025-59396 (2025-11-06)
+
+<code>The default configuration of WatchGuard Firebox devices through 2025-09-10 allows administrative access via SSH on port 4118 with the readwrite password for the admin account.
+</code>
+
 - [cyberbyte000/CVE-2025-59396](https://github.com/cyberbyte000/CVE-2025-59396)
 
 ### CVE-2025-59424 (2025-09-18)
@@ -7427,8 +7445,22 @@
 
 - [z3rObyte/CVE-2025-63298](https://github.com/z3rObyte/CVE-2025-63298)
 
-### CVE-2025-63307
+### CVE-2025-63307 (2025-11-06)
+
+<code>alexusmai laravel-file-manager 3.3.1 is vulnerable to Cross Site Scripting (XSS). The application permits user-controlled upload, create, and rename of files to HTML and SVG types and serves those files inline without adequate content-type validation or output sanitization.
+</code>
+
 - [Theethat-Thamwasin/CVE-2025-63307](https://github.com/Theethat-Thamwasin/CVE-2025-63307)
+
+### CVE-2025-63334 (2025-11-05)
+
+<code>PocketVJ CP PocketVJ-CP-v3 pvj version 3.9.1 contains an unauthenticated remote code execution vulnerability in the submit_opacity.php component. The application fails to sanitize user input in the opacityValue POST parameter before passing it to a shell command, allowing remote attackers to execute arbitrary commands with root privileges on the underlying system.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-63334](https://github.com/B1ack4sh/Blackash-CVE-2025-63334)
+
+### CVE-2025-63353
+- [hanianis/CVE-2025-63353](https://github.com/hanianis/CVE-2025-63353)
 
 ### CVE-2025-63498
 - [xryptoh/CVE-2025-63498](https://github.com/xryptoh/CVE-2025-63498)
@@ -7439,10 +7471,18 @@
 ### CVE-2025-63572
 - [RRespxwnss/CVE-2025-63572](https://github.com/RRespxwnss/CVE-2025-63572)
 
-### CVE-2025-63588
+### CVE-2025-63588 (2025-11-06)
+
+<code>An unauthenticated reflected cross-site scripting vulnerability in the query handling of CMSimpleXH allows remote attackers to inject and execute arbitrary JavaScript in a victim's browser via a crafted request (e.g., a maliciously crafted POST login). Successful exploitation may lead to theft of session cookies, credential disclosure, or other client-side impacts.
+</code>
+
 - [cybercrewinc/CVE-2025-63588](https://github.com/cybercrewinc/CVE-2025-63588)
 
-### CVE-2025-63589
+### CVE-2025-63589 (2025-11-06)
+
+<code>A reflected XSS vulnerability exists in CMSimple_XH 1.8's index.php router when attacker-controlled path segments are not sanitized or encoded before being inserted into the generated HTML (navigation links, breadcrumbs, search form action, footer links). An attacker-controlled string placed in the URL path is reflected into multiple HTML elements, allowing execution of arbitrary JavaScript in victims' browsers visiting a crafted URL.
+</code>
+
 - [cybercrewinc/CVE-2025-63589](https://github.com/cybercrewinc/CVE-2025-63589)
 
 ### CVE-2025-64095 (2025-10-28)
@@ -7451,6 +7491,7 @@
 </code>
 
 - [h4x0r-dz/CVE-2025-64095---DNN-Unauthenticated-arbitrary-file-upload](https://github.com/h4x0r-dz/CVE-2025-64095---DNN-Unauthenticated-arbitrary-file-upload)
+- [NationalServices/CVE-2025-64095-DotNetNuke-DNN_PoC](https://github.com/NationalServices/CVE-2025-64095-DotNetNuke-DNN_PoC)
 
 ### CVE-2025-64458 (2025-11-05)
 
@@ -7458,6 +7499,13 @@
 </code>
 
 - [ch4n3-yoon/CVE-2025-64458-Demo](https://github.com/ch4n3-yoon/CVE-2025-64458-Demo)
+
+### CVE-2025-64459 (2025-11-05)
+
+<code>An issue was discovered in 5.1 before 5.1.14, 4.2 before 4.2.26, and 5.2 before 5.2.8.\nThe methods `QuerySet.filter()`, `QuerySet.exclude()`, and `QuerySet.get()`, and the class `Q()`, are subject to SQL injection when using a suitably crafted dictionary, with dictionary expansion, as the `_connector` argument.\nEarlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.\nDjango would like to thank cyberstan for reporting this issue.
+</code>
+
+- [rockmelodies/django_sqli_target_CVE-2025-64459](https://github.com/rockmelodies/django_sqli_target_CVE-2025-64459)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -9764,7 +9812,6 @@
 </code>
 
 - [RandomRobbieBF/CVE-2024-9234](https://github.com/RandomRobbieBF/CVE-2024-9234)
-- [CallMeBatosay/CVE-2024-9234](https://github.com/CallMeBatosay/CVE-2024-9234)
 - [Nxploited/CVE-2024-9234](https://github.com/Nxploited/CVE-2024-9234)
 
 ### CVE-2024-9264 (2024-10-18)
@@ -10945,6 +10992,7 @@
 - [PolarisXSec/CVE-2024-21413](https://github.com/PolarisXSec/CVE-2024-21413)
 - [MQKGitHub/Moniker-Link-CVE-2024-21413](https://github.com/MQKGitHub/Moniker-Link-CVE-2024-21413)
 - [yass2400012/Email-exploit-Moniker-Link-CVE-2024-21413-](https://github.com/yass2400012/Email-exploit-Moniker-Link-CVE-2024-21413-)
+- [gurleen-147/CVE-2024-21413-Microsoft-Outlook-Remote-Code-Execution-Vulnerability-PoC](https://github.com/gurleen-147/CVE-2024-21413-Microsoft-Outlook-Remote-Code-Execution-Vulnerability-PoC)
 
 ### CVE-2024-21513 (2024-07-15)
 
@@ -20439,7 +20487,7 @@
 </code>
 
 - [Saboor-Hakimi/CVE-2023-22894](https://github.com/Saboor-Hakimi/CVE-2023-22894)
-- [maxntv24/CVE-2023-22894-PoC](https://github.com/maxntv24/CVE-2023-22894-PoC)
+- [maxntv/CVE-2023-22894-PoC](https://github.com/maxntv/CVE-2023-22894-PoC)
 
 ### CVE-2023-22906 (2023-07-03)
 
@@ -26702,6 +26750,13 @@
 
 - [Jminis/CVE-2023-50257](https://github.com/Jminis/CVE-2023-50257)
 
+### CVE-2023-50290 (2024-01-15)
+
+<code>Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Apache Solr.\nThe Solr Metrics API publishes all unprotected environment variables available to each Apache Solr instance. Users are able to specify which environment variables to hide, however, the default list is designed to work for known secret Java system properties. Environment variables cannot be strictly defined in Solr, like Java system properties can be, and may be set for the entire host, unlike Java system properties which are set per-Java-proccess.\n\nThe Solr Metrics API is protected by the &quot;metrics-read&quot; permission.\nTherefore, Solr Clouds with Authorization setup will only be vulnerable via users with the &quot;metrics-read&quot; permission.\nThis issue affects Apache Solr: from 9.0.0 before 9.3.0.\n\nUsers are recommended to upgrade to version 9.3.0 or later, in which environment variables are not published via the Metrics API.\n\n
+</code>
+
+- [desaivinayak449/bug-bounty-reports-desai-vinayak](https://github.com/desaivinayak449/bug-bounty-reports-desai-vinayak)
+
 ### CVE-2023-50386 (2024-02-09)
 
 <code>Improper Control of Dynamically-Managed Code Resources, Unrestricted Upload of File with Dangerous Type, Inclusion of Functionality from Untrusted Control Sphere vulnerability in Apache Solr.This issue affects Apache Solr: from 6.0.0 through 8.11.2, from 9.0.0 before 9.4.1.\n\nIn the affected versions, Solr ConfigSets accepted Java jar and class files to be uploaded through the ConfigSets API.\nWhen backing up Solr Collections, these configSet files would be saved to disk when using the LocalFileSystemRepository (the default for backups).\nIf the backup was saved to a directory that Solr uses in its ClassPath/ClassLoaders, then the jar and class files would be available to use with any ConfigSet, trusted or untrusted.\n\nWhen Solr is run in a secure way (Authorization enabled), as is strongly suggested, this vulnerability is limited to extending the Backup permissions with the ability to add libraries.\nUsers are recommended to upgrade to version 8.11.3 or 9.4.1, which fix the issue.\nIn these versions, the following protections have been added:\n\n  *  Users are no longer able to upload files to a configSet that could be executed via a Java ClassLoader.\n  *  The Backup API restricts saving backups to directories that are used in the ClassLoader.
@@ -28526,6 +28581,7 @@
 - [hieuminhnv/CVE-2022-21587-POC](https://github.com/hieuminhnv/CVE-2022-21587-POC)
 - [rockmelodies/Oracle-E-BS-CVE-2022-21587-Exploit](https://github.com/rockmelodies/Oracle-E-BS-CVE-2022-21587-Exploit)
 - [sahabrifki/CVE-2022-21587-Oracle-EBS-](https://github.com/sahabrifki/CVE-2022-21587-Oracle-EBS-)
+- [B1ack4sh/Blackash-CVE-2022-21587](https://github.com/B1ack4sh/Blackash-CVE-2022-21587)
 
 ### CVE-2022-21658 (2022-01-20)
 
@@ -34884,7 +34940,6 @@
 <code>Possible buffer overflow due to lack of parameter length check during MBSSID scan IE parse in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Mobile, Snapdragon Wired Infrastructure and Networking
 </code>
 
-- [sqrtrev/CVE-2021-1965](https://github.com/sqrtrev/CVE-2021-1965)
 - [foxtrot/CVE-2021-1965](https://github.com/foxtrot/CVE-2021-1965)
 
 ### CVE-2021-1994 (2021-01-20)
@@ -37623,6 +37678,7 @@
 - [FlojBoj/CVE-2021-31630](https://github.com/FlojBoj/CVE-2021-31630)
 - [machevalia/OpenPLC-CVE-2021-31630-RCE](https://github.com/machevalia/OpenPLC-CVE-2021-31630-RCE)
 - [UserB1ank/CVE-2021-31630](https://github.com/UserB1ank/CVE-2021-31630)
+- [tranquac/OpenPLC_v3](https://github.com/tranquac/OpenPLC_v3)
 
 ### CVE-2021-31728 (2021-05-17)
 
@@ -47326,6 +47382,7 @@
 - [llccd/TempRoot-Huawei](https://github.com/llccd/TempRoot-Huawei)
 - [0xbinder/android-kernel-exploitation-lab](https://github.com/0xbinder/android-kernel-exploitation-lab)
 - [mouseos/cve-2019-2215_SH-M08](https://github.com/mouseos/cve-2019-2215_SH-M08)
+- [i-redbyte/android-badbinder-demo](https://github.com/i-redbyte/android-badbinder-demo)
 
 ### CVE-2019-2525 (2019-01-16)
 
@@ -58018,6 +58075,7 @@
 - [mohammadamin382/dirtycow-lab](https://github.com/mohammadamin382/dirtycow-lab)
 - [MarioAlejos-Cs/dirtycow-lab](https://github.com/MarioAlejos-Cs/dirtycow-lab)
 - [pardhu045/linux-privilege-escalation](https://github.com/pardhu045/linux-privilege-escalation)
+- [arturomartinvegue/escalada-privilegios-kernel-exploit-dirty-cow](https://github.com/arturomartinvegue/escalada-privilegios-kernel-exploit-dirty-cow)
 
 ### CVE-2016-5345 (2018-01-23)
 
@@ -59626,7 +59684,6 @@
 - [moften/CVE-2015-9251](https://github.com/moften/CVE-2015-9251)
 - [hackgiver/CVE-2015-9251](https://github.com/hackgiver/CVE-2015-9251)
 - [rox-11/xss](https://github.com/rox-11/xss)
-- [wakefulblock262/CVE-2015-9251](https://github.com/wakefulblock262/CVE-2015-9251)
 
 ### CVE-2015-10034 (2023-01-09)
 
