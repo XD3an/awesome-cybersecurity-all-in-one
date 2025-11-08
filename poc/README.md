@@ -1518,7 +1518,6 @@
 - [lucyna77/winrar-exploit](https://github.com/lucyna77/winrar-exploit)
 - [Fathi-MO/POC-CVE-2025-8088](https://github.com/Fathi-MO/POC-CVE-2025-8088)
 - [papcaii2004/CVE-2025-8088-WinRAR-builder](https://github.com/papcaii2004/CVE-2025-8088-WinRAR-builder)
-- [mocred/cve-2025-8088](https://github.com/mocred/cve-2025-8088)
 - [B1ack4sh/Blackash-CVE-2025-8088](https://github.com/B1ack4sh/Blackash-CVE-2025-8088)
 - [nuky-alt/CVE-2025-8088](https://github.com/nuky-alt/CVE-2025-8088)
 
@@ -1747,6 +1746,13 @@
 
 - [Kamgreen50/STIG-Edge-RCE-CVE2025-9478](https://github.com/Kamgreen50/STIG-Edge-RCE-CVE2025-9478)
 
+### CVE-2025-9491 (2025-08-26)
+
+<code>Microsoft Windows LNK File UI Misrepresentation Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Microsoft Windows. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of .LNK files. Crafted data in an .LNK file can cause hazardous content in the file to be invisible to a user who inspects the file via the Windows-provided user interface. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-25373.
+</code>
+
+- [Amperclock/CVE-2025-9491_POC](https://github.com/Amperclock/CVE-2025-9491_POC)
+
 ### CVE-2025-9519 (2025-09-04)
 
 <code>The Easy Timer plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 4.2.1 via the plugin's shortcodes. This is due to insufficient restriction of shortcode attributes. This makes it possible for authenticated attackers, with Editor-level access and above, to execute code on the server.
@@ -1858,7 +1864,11 @@
 - [yuuouu/ColorOS-CVE-2025-10184](https://github.com/yuuouu/ColorOS-CVE-2025-10184)
 - [Webpage-gh/CVE-2025-10184-PoC](https://github.com/Webpage-gh/CVE-2025-10184-PoC)
 
-### CVE-2025-10230
+### CVE-2025-10230 (2025-11-07)
+
+<code>A flaw was found in Samba, in the front-end WINS hook handling: NetBIOS names from registration packets are passed to a shell without proper validation or escaping. Unsanitized NetBIOS name data from WINS registration packets are inserted into a shell command and executed by the Samba Active Directory Domain Controller’s wins hook, allowing an unauthenticated network attacker to achieve remote command execution as the Samba process.
+</code>
+
 - [dptsec/CVE-2025-10230](https://github.com/dptsec/CVE-2025-10230)
 
 ### CVE-2025-10351 (2025-10-08)
@@ -1979,7 +1989,6 @@
 </code>
 
 - [Hazelooks/CVE-2025-11499-Exploit](https://github.com/Hazelooks/CVE-2025-11499-Exploit)
-- [usjnx72726w/CVE-2025-11499-LAB](https://github.com/usjnx72726w/CVE-2025-11499-LAB)
 
 ### CVE-2025-11554 (2025-10-09)
 
@@ -2009,6 +2018,9 @@
 
 - [SaidBenaissa/cve-2025-11953-vulnerability-demo](https://github.com/SaidBenaissa/cve-2025-11953-vulnerability-demo)
 - [B1ack4sh/Blackash-CVE-2025-11953](https://github.com/B1ack4sh/Blackash-CVE-2025-11953)
+
+### CVE-2025-12399
+- [d0n601/CVE-2025-12399](https://github.com/d0n601/CVE-2025-12399)
 
 ### CVE-2025-12428
 - [dexterm300/cve-2025-12428-exploit-poc](https://github.com/dexterm300/cve-2025-12428-exploit-poc)
@@ -2061,6 +2073,13 @@
 </code>
 
 - [skadevare/CiscoISE-CVE-2025-20282-POC](https://github.com/skadevare/CiscoISE-CVE-2025-20282-POC)
+
+### CVE-2025-20343 (2025-11-05)
+
+<code>A vulnerability in the RADIUS setting Reject RADIUS requests from clients with repeated failures on Cisco Identity Services Engine (ISE) could allow an unauthenticated, remote attacker to cause Cisco ISE to restart unexpectedly.\r\n\r\nThis vulnerability is due to a logic error when processing a RADIUS access request for a MAC address that is already a rejected endpoint. An attacker could exploit this vulnerability by sending a specific sequence of multiple crafted RADIUS access request messages to Cisco ISE. A successful exploit could allow the attacker to cause a denial of service (DoS) condition when Cisco ISE restarts.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-20343](https://github.com/B1ack4sh/Blackash-CVE-2025-20343)
 
 ### CVE-2025-20352 (2025-09-24)
 
@@ -7198,6 +7217,13 @@
 
 - [H4zaz/CVE-2025-60503](https://github.com/H4zaz/CVE-2025-60503)
 
+### CVE-2025-60574 (2025-11-07)
+
+<code>A Local File Inclusion (LFI) vulnerability has been identified in tQuadra CMS 4.2.1117. The issue exists in the &quot;/styles/&quot; path, which fails to properly sanitize user-supplied input. An attacker can exploit this by sending a crafted GET request to retrieve arbitrary files from the underlying system.
+</code>
+
+- [jacopoaugelli/CVE-2025-60574](https://github.com/jacopoaugelli/CVE-2025-60574)
+
 ### CVE-2025-60595 (2025-10-29)
 
 <code>SPH Engineering UgCS 5.13.0 is vulnerable to Arbitary code execution.
@@ -7463,6 +7489,13 @@
 
 ### CVE-2025-63353
 - [hanianis/CVE-2025-63353](https://github.com/hanianis/CVE-2025-63353)
+
+### CVE-2025-63420 (2025-11-07)
+
+<code>A stored cross-site scripting (XSS) vulnerability in the CrushFTP 11.3.7_50 Admin Panel (Reports / 'Who Created Folder') allows authenticated attackers with permissions to create folders to inject malicious HTML/JavaScript.
+</code>
+
+- [MMAKINGDOM/CVE-2025-63420](https://github.com/MMAKINGDOM/CVE-2025-63420)
 
 ### CVE-2025-63441 (2025-11-03)
 
@@ -19342,6 +19375,7 @@
 </code>
 
 - [spyata123/Cleartext-Storage-vulnerability-CVE-2023-5359-in-W3-Total-Cache](https://github.com/spyata123/Cleartext-Storage-vulnerability-CVE-2023-5359-in-W3-Total-Cache)
+- [enzocipher/CVE-2023-5359](https://github.com/enzocipher/CVE-2023-5359)
 
 ### CVE-2023-5360 (2023-10-31)
 
@@ -25628,6 +25662,8 @@
 - [aecelen/ktor-xxe-poc](https://github.com/aecelen/ktor-xxe-poc)
 - [clemfavre/cve-2023-45612_exploit](https://github.com/clemfavre/cve-2023-45612_exploit)
 - [seraphimi/ktor-xxe](https://github.com/seraphimi/ktor-xxe)
+- [stefan-500/ktor-cve-2023-45612-poc](https://github.com/stefan-500/ktor-cve-2023-45612-poc)
+- [ksaweryr/CVE-2023-45612-PoC](https://github.com/ksaweryr/CVE-2023-45612-PoC)
 
 ### CVE-2023-45657 (2023-11-06)
 
@@ -28637,7 +28673,6 @@
 - [p4ncontomat3/CVE-2022-21661](https://github.com/p4ncontomat3/CVE-2022-21661)
 - [CharonDefalt/WordPress--CVE-2022-21661](https://github.com/CharonDefalt/WordPress--CVE-2022-21661)
 - [w0r1i0g1ht/CVE-2022-21661](https://github.com/w0r1i0g1ht/CVE-2022-21661)
-- [kittypurrnaz/cve-2022-21661](https://github.com/kittypurrnaz/cve-2022-21661)
 - [Fauzan-Aldi/CVE-2022-21661](https://github.com/Fauzan-Aldi/CVE-2022-21661)
 
 ### CVE-2022-21668 (2022-01-10)
@@ -42682,6 +42717,7 @@
 - [z3n70/CVE-2020-5902](https://github.com/z3n70/CVE-2020-5902)
 - [34zY/APT-Backpack](https://github.com/34zY/APT-Backpack)
 - [amitlttwo/CVE-2020-5902](https://github.com/amitlttwo/CVE-2020-5902)
+- [B1ack4sh/Blackash-CVE-2020-5902](https://github.com/B1ack4sh/Blackash-CVE-2020-5902)
 
 ### CVE-2020-5903 (2020-07-01)
 
@@ -56615,6 +56651,7 @@
 - [lizhianyuguangming/TomcatScanPro](https://github.com/lizhianyuguangming/TomcatScanPro)
 - [wudidwo/CVE-2017-12615-poc](https://github.com/wudidwo/CVE-2017-12615-poc)
 - [edyekomu/CVE-2017-12615-PoC](https://github.com/edyekomu/CVE-2017-12615-PoC)
+- [Fa1c0n35/CVE-2017-12615](https://github.com/Fa1c0n35/CVE-2017-12615)
 
 ### CVE-2017-12617 (2017-10-03)
 
