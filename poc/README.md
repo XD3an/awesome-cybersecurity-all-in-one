@@ -2004,6 +2004,13 @@
 
 - [shinigami-777/PoC_CVE-2025-11579](https://github.com/shinigami-777/PoC_CVE-2025-11579)
 
+### CVE-2025-11749 (2025-11-05)
+
+<code>The AI Engine plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.1.3 via the /mcp/v1/ REST API endpoint that exposes the 'Bearer Token' value when 'No-Auth URL' is enabled. This makes it possible for unauthenticated attackers to extract the bearer token, which can be used to gain access to a valid session and perform many actions like creating a new administrator account, leading to privilege escalation.
+</code>
+
+- [Nxploited/CVE-2025-11749](https://github.com/Nxploited/CVE-2025-11749)
+
 ### CVE-2025-11832 (2025-10-15)
 
 <code>Allocation of Resources Without Limits or Throttling vulnerability in Azure Access Technology BLU-IC2, Azure Access Technology BLU-IC4 allows Flooding.This issue affects BLU-IC2: through 1.19.5; BLU-IC4: through 1.19.5.
