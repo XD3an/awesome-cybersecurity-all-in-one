@@ -1520,6 +1520,7 @@
 - [papcaii2004/CVE-2025-8088-WinRAR-builder](https://github.com/papcaii2004/CVE-2025-8088-WinRAR-builder)
 - [B1ack4sh/Blackash-CVE-2025-8088](https://github.com/B1ack4sh/Blackash-CVE-2025-8088)
 - [nuky-alt/CVE-2025-8088](https://github.com/nuky-alt/CVE-2025-8088)
+- [shourout/CVE-2025-8088](https://github.com/shourout/CVE-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -2026,18 +2027,22 @@
 - [SaidBenaissa/cve-2025-11953-vulnerability-demo](https://github.com/SaidBenaissa/cve-2025-11953-vulnerability-demo)
 - [B1ack4sh/Blackash-CVE-2025-11953](https://github.com/B1ack4sh/Blackash-CVE-2025-11953)
 
-### CVE-2025-12399
+### CVE-2025-12399 (2025-11-08)
+
+<code>The Alex Reservations: Smart Restaurant Booking plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the /wp-json/srr/v1/app/upload/file REST endpoint in all versions up to, and including, 2.2.3. This makes it possible for authenticated attackers, with Administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.
+</code>
+
 - [d0n601/CVE-2025-12399](https://github.com/d0n601/CVE-2025-12399)
 
 ### CVE-2025-12428
 - [dexterm300/cve-2025-12428-exploit-poc](https://github.com/dexterm300/cve-2025-12428-exploit-poc)
 
-### CVE-2025-12595 (2025-11-02)
+### CVE-2025-12907 (2025-11-07)
 
-<code>In Tenda AC23 16.03.07.52 wurde eine Schwachstelle gefunden. Hierbei geht es um die Funktion formSetVirtualSer der Datei /goform/SetVirtualServerCfg. Dank der Manipulation des Arguments list mit unbekannten Daten kann eine buffer overflow-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei über das Netzwerk erfolgen. Der Exploit steht zur öffentlichen Verfügung.
+<code>Insufficient validation of untrusted input in Devtools in Google Chrome prior to 140.0.7339.80 allowed a remote attacker to execute arbitrary code via user action in Devtools. (Chromium security severity: Low)
 </code>
 
-- [lagerhaker539/CVE-2025-12595-POC](https://github.com/lagerhaker539/CVE-2025-12595-POC)
+- [DExplo1ted/CVE-2025-12907-Exploit](https://github.com/DExplo1ted/CVE-2025-12907-Exploit)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -2102,6 +2107,14 @@
 
 - [allinsthon/CVE-2025-20354](https://github.com/allinsthon/CVE-2025-20354)
 - [B1ack4sh/Blackash-CVE-2025-20354](https://github.com/B1ack4sh/Blackash-CVE-2025-20354)
+
+### CVE-2025-21042 (2025-09-12)
+
+<code>Out-of-bounds write in libimagecodec.quram.so prior to SMR Apr-2025 Release 1 allows remote attackers to execute arbitrary code.
+</code>
+
+- [usjnx72726w/CVE-2025-21042](https://github.com/usjnx72726w/CVE-2025-21042)
+- [B1ack4sh/Blackash-CVE-2025-21042](https://github.com/B1ack4sh/Blackash-CVE-2025-21042)
 
 ### CVE-2025-21204 (2025-04-08)
 
@@ -3669,6 +3682,7 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
+- [KaztoRay/CVE-2025-29927-Research](https://github.com/KaztoRay/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -4203,6 +4217,7 @@
 - [mirmeweu/cve-2025-32433](https://github.com/mirmeweu/cve-2025-32433)
 - [Batman529/PoC-CVE-2025-32433](https://github.com/Batman529/PoC-CVE-2025-32433)
 - [toshithh/CVE-2025-32433](https://github.com/toshithh/CVE-2025-32433)
+- [l1nuxkid/CVE-2025-32433-exploit](https://github.com/l1nuxkid/CVE-2025-32433-exploit)
 
 ### CVE-2025-32434 (2025-04-18)
 
@@ -5332,6 +5347,8 @@
 - [mukesh-610/cve-2025-48384-exploit](https://github.com/mukesh-610/cve-2025-48384-exploit)
 - [mukesh-610/cve-2025-48384](https://github.com/mukesh-610/cve-2025-48384)
 - [MarcoTondolo/cve-2025-48384-poc](https://github.com/MarcoTondolo/cve-2025-48384-poc)
+- [bummie/CVE-2025-48384](https://github.com/bummie/CVE-2025-48384)
+- [bummie/CVE-2025-48384-submodule](https://github.com/bummie/CVE-2025-48384-submodule)
 
 ### CVE-2025-48461 (2025-06-24)
 
@@ -5364,6 +5381,7 @@
 ### CVE-2025-48593
 - [B1ack4sh/Blackash-CVE-2025-48593](https://github.com/B1ack4sh/Blackash-CVE-2025-48593)
 - [skolepc/CVE-2025-48593](https://github.com/skolepc/CVE-2025-48593)
+- [logesh-GIT001/CVE-2025-48593](https://github.com/logesh-GIT001/CVE-2025-48593)
 
 ### CVE-2025-48703 (2025-09-19)
 
@@ -6290,13 +6308,6 @@
 
 - [tigr78/CVE-2025-53964](https://github.com/tigr78/CVE-2025-53964)
 
-### CVE-2025-54106 (2025-09-09)
-
-<code>Integer overflow or wraparound in Windows Routing and Remote Access Service (RRAS) allows an unauthorized attacker to execute code over a network.
-</code>
-
-- [DExplo1ted/CVE-2025-54106-POC](https://github.com/DExplo1ted/CVE-2025-54106-POC)
-
 ### CVE-2025-54110 (2025-09-09)
 
 <code>Integer overflow or wraparound in Windows Kernel allows an authorized attacker to elevate privileges locally.
@@ -6771,13 +6782,6 @@
 
 - [Theethat-Thamwasin/CVE-2025-56399](https://github.com/Theethat-Thamwasin/CVE-2025-56399)
 
-### CVE-2025-56435 (2025-09-03)
-
-<code>SQL Injection vulnerability in FoxCMS v1.2.6 and before allows a remote attacker to execute arbitrary code via the. file /DataBackup.php and the operation on the parameter id.
-</code>
-
-- [Jingyi-u/-CVE-2025-56435](https://github.com/Jingyi-u/-CVE-2025-56435)
-
 ### CVE-2025-56503
 - [secxplorers/CVE-2025-56503](https://github.com/secxplorers/CVE-2025-56503)
 
@@ -6920,6 +6924,9 @@
 
 ### CVE-2025-57199
 - [xchg-rax-rax/AvTech-PoCs](https://github.com/xchg-rax-rax/AvTech-PoCs)
+
+### CVE-2025-57310
+- [MMAKINGDOM/CVE-2025-57310](https://github.com/MMAKINGDOM/CVE-2025-57310)
 
 ### CVE-2025-57389 (2025-10-01)
 
@@ -7407,6 +7414,13 @@
 
 - [B1ack4sh/Blackash-CVE-2025-61884](https://github.com/B1ack4sh/Blackash-CVE-2025-61884)
 - [AshrafZaryouh/CVE-2025-61884-At-a-Glance](https://github.com/AshrafZaryouh/CVE-2025-61884-At-a-Glance)
+
+### CVE-2025-61922 (2025-10-16)
+
+<code>PrestaShop Checkout is the PrestaShop official payment module in partnership with PayPal. Starting in version 1.3.0 and prior to versions 4.4.1 and 5.0.5, missing validation on the Express Checkout feature allows silent login, enabling account takeover via email. The vulnerability is fixed in versions 4.4.1 and 5.0.5. No known workarounds exist.
+</code>
+
+- [captaincookie34/Vulnerability-Playground-CVE-2025-61922](https://github.com/captaincookie34/Vulnerability-Playground-CVE-2025-61922)
 
 ### CVE-2025-61932 (2025-10-20)
 
@@ -25668,6 +25682,7 @@
 - [infernosalex/CVE-2023-45612-PoC](https://github.com/infernosalex/CVE-2023-45612-PoC)
 - [aecelen/ktor-xxe-poc](https://github.com/aecelen/ktor-xxe-poc)
 - [clemfavre/cve-2023-45612_exploit](https://github.com/clemfavre/cve-2023-45612_exploit)
+- [razvanclaudiu/Ktor-XXE-PoC](https://github.com/razvanclaudiu/Ktor-XXE-PoC)
 - [seraphimi/ktor-xxe](https://github.com/seraphimi/ktor-xxe)
 - [stefan-500/ktor-cve-2023-45612-poc](https://github.com/stefan-500/ktor-cve-2023-45612-poc)
 - [ksaweryr/CVE-2023-45612-PoC](https://github.com/ksaweryr/CVE-2023-45612-PoC)
@@ -32858,6 +32873,7 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
+- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -50617,6 +50633,7 @@
 - [chanbakjsd/CVE-2019-18634](https://github.com/chanbakjsd/CVE-2019-18634)
 - [l0w3/CVE-2019-18634](https://github.com/l0w3/CVE-2019-18634)
 - [ngyinkit/cve-2019-18634](https://github.com/ngyinkit/cve-2019-18634)
+- [letsr00t/-CVE-2019-18634-sudo-pwfeedback](https://github.com/letsr00t/-CVE-2019-18634-sudo-pwfeedback)
 
 ### CVE-2019-18655 (2019-11-12)
 
@@ -60699,6 +60716,13 @@
 </code>
 
 - [hakatashi/CVE-2014-9390](https://github.com/hakatashi/CVE-2014-9390)
+
+### CVE-2014-9495 (2015-01-10)
+
+<code>Heap-based buffer overflow in the png_combine_row function in libpng before 1.5.21 and 1.6.x before 1.6.16, when running on 64-bit systems, might allow context-dependent attackers to execute arbitrary code via a &quot;very wide interlaced&quot; PNG image.
+</code>
+
+- [Enessar/LibPNG_OSS-Fuzz](https://github.com/Enessar/LibPNG_OSS-Fuzz)
 
 ### CVE-2014-10069 (2018-01-07)
 
