@@ -27186,6 +27186,13 @@
 
 - [KTN1990/CVE-2022-0316_wordpress_multiple_themes_exploit](https://github.com/KTN1990/CVE-2022-0316_wordpress_multiple_themes_exploit)
 
+### CVE-2022-0324 (2022-11-14)
+
+<code>There is a vulnerability in DHCPv6 packet parsing code that could be explored by remote attacker to craft a packet that could cause buffer overflow in a memcpy call, leading to out-of-bounds memory write that would cause dhcp6relay to crash. Dhcp6relay is a critical process and could cause dhcp relay docker to shutdown.\n\nDiscovered by Eugene Lim of GovTech Singapore.\n
+</code>
+
+- [ngtuonghung/cve-2022-0324](https://github.com/ngtuonghung/cve-2022-0324)
+
 ### CVE-2022-0332 (2022-01-25)
 
 <code>A flaw was found in Moodle in versions 3.11 to 3.11.4. An SQL injection risk was identified in the h5p activity web service responsible for fetching user attempt data.
@@ -35161,6 +35168,7 @@
 - [shadowabi/Laravel-CVE-2021-3129](https://github.com/shadowabi/Laravel-CVE-2021-3129)
 - [JacobEbben/CVE-2021-3129](https://github.com/JacobEbben/CVE-2021-3129)
 - [hupe1980/CVE-2021-3129](https://github.com/hupe1980/CVE-2021-3129)
+- [0nion1/CVE-2021-3129](https://github.com/0nion1/CVE-2021-3129)
 - [MadExploits/Laravel-debug-Checker](https://github.com/MadExploits/Laravel-debug-Checker)
 - [ajisai-babu/CVE-2021-3129-exp](https://github.com/ajisai-babu/CVE-2021-3129-exp)
 - [keyuan15/CVE-2021-3129](https://github.com/keyuan15/CVE-2021-3129)
@@ -39050,6 +39058,7 @@
 - [sergiovks/CVE-2021-40438-Apache-2.4.48-SSRF-exploit](https://github.com/sergiovks/CVE-2021-40438-Apache-2.4.48-SSRF-exploit)
 - [Cappricio-Securities/CVE-2021-40438](https://github.com/Cappricio-Securities/CVE-2021-40438)
 - [yakir2b/check-point-gateways-rce](https://github.com/yakir2b/check-point-gateways-rce)
+- [n0m-d/CVE-2021-40438-POC](https://github.com/n0m-d/CVE-2021-40438-POC)
 
 ### CVE-2021-40444 (2021-09-15)
 
@@ -39980,20 +39989,6 @@
 </code>
 
 - [kernel-cyber/CVE-2021-42913](https://github.com/kernel-cyber/CVE-2021-42913)
-
-### CVE-2021-42948 (2022-09-16)
-
-<code>HotelDruid Hotel Management Software v3.0.3 and below was discovered to have exposed session tokens in multiple links via GET parameters, allowing attackers to access user session id's.
-</code>
-
-- [dhammon/HotelDruid-CVE-2021-42948](https://github.com/dhammon/HotelDruid-CVE-2021-42948)
-
-### CVE-2021-42949 (2022-09-16)
-
-<code>The component controlla_login function in HotelDruid Hotel Management Software v3.0.3 generates a predictable session token, allowing attackers to bypass authentication via bruteforce attacks.
-</code>
-
-- [dhammon/HotelDruid-CVE-2021-42949](https://github.com/dhammon/HotelDruid-CVE-2021-42949)
 
 ### CVE-2021-43008 (2022-04-05)
 
