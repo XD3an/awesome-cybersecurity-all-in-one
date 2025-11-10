@@ -1,9 +1,6 @@
 # PoC in GitHub
 
 ## 2025
-### CVE-2025-0002
-- [valentinuuiuiu/mina-sc-dualdefense-audit-cve-2025-0002](https://github.com/valentinuuiuiu/mina-sc-dualdefense-audit-cve-2025-0002)
-
 ### CVE-2025-0054 (2025-02-11)
 
 <code>SAP NetWeaver Application Server Java does not sufficiently handle user input, resulting in a stored cross-site scripting vulnerability. The application allows attackers with basic user privileges to store a Javascript payload on the server, which could be later executed in the victim's web browser. With this the attacker might be able to read or modify information associated with the vulnerable web page.
@@ -1645,6 +1642,13 @@
 </code>
 
 - [byteReaper77/CVE-2025-8730](https://github.com/byteReaper77/CVE-2025-8730)
+
+### CVE-2025-8760 (2025-08-13)
+
+<code>Dabei betrifft es die Funktion base64_decode der Komponente fcgi_server. Mittels dem Manipulieren des Arguments Authorization mit unbekannten Daten kann eine buffer overflow-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei über das Netzwerk erfolgen.
+</code>
+
+- [born0monday/CVE-2025-8760](https://github.com/born0monday/CVE-2025-8760)
 
 ### CVE-2025-8875 (2025-08-14)
 
@@ -4331,6 +4335,7 @@
 - [DensuLabs/CVE-2025-32463](https://github.com/DensuLabs/CVE-2025-32463)
 - [muhammedkayag/CVE-2025-32463](https://github.com/muhammedkayag/CVE-2025-32463)
 - [NewComrade12211/CVE-2025-32463](https://github.com/NewComrade12211/CVE-2025-32463)
+- [Ghstxz/CVE-2025-32463](https://github.com/Ghstxz/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
