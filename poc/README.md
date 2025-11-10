@@ -1235,6 +1235,7 @@
 - [LordBheem/CVE-2025-6554](https://github.com/LordBheem/CVE-2025-6554)
 - [mistymntncop/CVE-2025-6554](https://github.com/mistymntncop/CVE-2025-6554)
 - [jopraveen/CVE-2025-6554](https://github.com/jopraveen/CVE-2025-6554)
+- [Muhammednihalmp/Google-chrome-zero-day](https://github.com/Muhammednihalmp/Google-chrome-zero-day)
 
 ### CVE-2025-6558 (2025-07-15)
 
@@ -2044,6 +2045,13 @@
 
 - [DExplo1ted/CVE-2025-12907-Exploit](https://github.com/DExplo1ted/CVE-2025-12907-Exploit)
 
+### CVE-2025-12917 (2025-11-09)
+
+<code>In TOZED ZLT T10 T10PLUS_3.04.15 ist eine Schwachstelle entdeckt worden. Dabei betrifft es einen unbekannter Codeteil der Datei /reqproc/proc_post der Komponente Reboot Handler. Durch die Manipulation mit unbekannten Daten kann eine denial of service-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei im lokalen Netzwerk erfolgen. Der Exploit steht zur öffentlichen Verfügung.
+</code>
+
+- [0xcucumbersalad/CVE-2025-12917-PoC](https://github.com/0xcucumbersalad/CVE-2025-12917-PoC)
+
 ### CVE-2025-20029 (2025-02-05)
 
 <code>Command injection vulnerability exists in iControl REST and BIG-IP TMOS Shell (tmsh) save command, which may allow an authenticated attacker to execute arbitrary system commands.\n\n \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
@@ -2485,6 +2493,7 @@
 - [S4mma3l/CVE-2025-24054](https://github.com/S4mma3l/CVE-2025-24054)
 - [moften/CVE-2025-24054](https://github.com/moften/CVE-2025-24054)
 - [Yuri08loveElaina/CVE-2025-24054_POC](https://github.com/Yuri08loveElaina/CVE-2025-24054_POC)
+- [Wind010/CVE-2025-24054_PoC](https://github.com/Wind010/CVE-2025-24054_PoC)
 
 ### CVE-2025-24071 (2025-03-11)
 
@@ -4218,6 +4227,7 @@
 - [Batman529/PoC-CVE-2025-32433](https://github.com/Batman529/PoC-CVE-2025-32433)
 - [toshithh/CVE-2025-32433](https://github.com/toshithh/CVE-2025-32433)
 - [l1nuxkid/CVE-2025-32433-exploit](https://github.com/l1nuxkid/CVE-2025-32433-exploit)
+- [radzek15/CVE-2025-32433](https://github.com/radzek15/CVE-2025-32433)
 
 ### CVE-2025-32434 (2025-04-18)
 
@@ -4694,6 +4704,13 @@
 </code>
 
 - [nehkark/CVE-2025-40778](https://github.com/nehkark/CVE-2025-40778)
+
+### CVE-2025-41067 (2025-10-27)
+
+<code>Reachable Assertion vulnerability in Open5GS up to version 2.7.6 allows attackers with connectivity to the NRF to cause a denial of service. An SBI request that deletes the NRF's own registry causes a check that ends up crashing the NRF process and renders the discovery service unavailable.
+</code>
+
+- [xvk1t1/Open5GS-CVE-2025-41067-CVE-2025-41068-PoC](https://github.com/xvk1t1/Open5GS-CVE-2025-41067-CVE-2025-41068-PoC)
 
 ### CVE-2025-41088 (2025-10-10)
 
@@ -5382,6 +5399,8 @@
 - [B1ack4sh/Blackash-CVE-2025-48593](https://github.com/B1ack4sh/Blackash-CVE-2025-48593)
 - [skolepc/CVE-2025-48593](https://github.com/skolepc/CVE-2025-48593)
 - [logesh-GIT001/CVE-2025-48593](https://github.com/logesh-GIT001/CVE-2025-48593)
+- [callinston/CVE-2025-48593](https://github.com/callinston/CVE-2025-48593)
+- [letchupkt/CVE-2025-48593](https://github.com/letchupkt/CVE-2025-48593)
 
 ### CVE-2025-48703 (2025-09-19)
 
@@ -6096,13 +6115,6 @@
 </code>
 
 - [SystemVll/CVE-2025-52488](https://github.com/SystemVll/CVE-2025-52488)
-
-### CVE-2025-52665 (2025-10-30)
-
-<code>A malicious actor with access to the management network could exploit a misconfiguration in UniFi’s door access application, UniFi Access, that exposed a management API without proper authentication. This vulnerability was introduced in Version 3.3.22 and was fixed in Version 4.0.21 and later. \n \nAffected Products:\nUniFi Access Application (Version 3.3.22 through 3.4.31).   \n\nMitigation:\nUpdate your UniFi Access Application to Version 4.0.21 or later.
-</code>
-
-- [callinston/CVE-2025-52665](https://github.com/callinston/CVE-2025-52665)
 
 ### CVE-2025-52688 (2025-07-16)
 
@@ -7486,6 +7498,9 @@
 </code>
 
 - [ch4n3-yoon/CVE-2025-62727-Demo](https://github.com/ch4n3-yoon/CVE-2025-62727-Demo)
+
+### CVE-2025-63296
+- [t4e-3/CVE-2025-63296](https://github.com/t4e-3/CVE-2025-63296)
 
 ### CVE-2025-63298 (2025-10-30)
 
@@ -31155,6 +31170,13 @@
 
 - [TyeYeah/DIR-890L-1.20-RCE](https://github.com/TyeYeah/DIR-890L-1.20-RCE)
 
+### CVE-2022-29800 (2022-09-21)
+
+<code>A time-of-check-time-of-use (TOCTOU) race condition vulnerability was found in networkd-dispatcher. This flaw exists because there is a certain time between the scripts being discovered and them being run. An attacker can abuse this vulnerability to replace scripts that networkd-dispatcher believes to be owned by root with ones that are not.
+</code>
+
+- [ngtuonghung/nimbuspwn-CVE-2022-29800-CVE-2022-29799](https://github.com/ngtuonghung/nimbuspwn-CVE-2022-29800-CVE-2022-29799)
+
 ### CVE-2022-29806 (2022-04-26)
 
 <code>ZoneMinder before 1.36.13 allows remote code execution via an invalid language. Ability to create a debug log file at an arbitrary pathname contributes to exploitability.
@@ -35023,13 +35045,6 @@
 
 - [tamirzb/CVE-2021-1961](https://github.com/tamirzb/CVE-2021-1961)
 
-### CVE-2021-1965 (2021-07-13)
-
-<code>Possible buffer overflow due to lack of parameter length check during MBSSID scan IE parse in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Mobile, Snapdragon Wired Infrastructure and Networking
-</code>
-
-- [foxtrot/CVE-2021-1965](https://github.com/foxtrot/CVE-2021-1965)
-
 ### CVE-2021-1994 (2021-01-20)
 
 <code>Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Web Services). Supported versions that are affected are 10.3.6.0.0 and 12.1.3.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebLogic Server. Successful attacks of this vulnerability can result in takeover of Oracle WebLogic Server. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
@@ -35726,6 +35741,13 @@
 </code>
 
 - [tr3ee/CVE-2021-4204](https://github.com/tr3ee/CVE-2021-4204)
+
+### CVE-2021-4374 (2023-06-07)
+
+<code>The WordPress Automatic Plugin for WordPress is vulnerable to arbitrary options updates in versions up to, and including, 3.53.2. This is due to missing authorization and option validation in the process_form.php file. This makes it possible for unauthenticated attackers to arbitrarily update the settings of a vulnerable site and ultimately compromise the entire site.
+</code>
+
+- [Pranjal6955/cve-2021-4374-test](https://github.com/Pranjal6955/cve-2021-4374-test)
 
 ### CVE-2021-4428 (2023-07-18)
 
