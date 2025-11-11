@@ -325,6 +325,7 @@
 - [Armand2002/Exploit-CVE-2025-1974-Lab](https://github.com/Armand2002/Exploit-CVE-2025-1974-Lab)
 - [BiiTts/POC-IngressNightmare-CVE-2025-1974](https://github.com/BiiTts/POC-IngressNightmare-CVE-2025-1974)
 - [iteride/CVE-2025-1974](https://github.com/iteride/CVE-2025-1974)
+- [I3r1h0n/IngressNightterror](https://github.com/I3r1h0n/IngressNightterror)
 
 ### CVE-2025-2005 (2025-04-02)
 
@@ -1202,6 +1203,7 @@
 
 - [Pwdnx1337/CVE-2025-6440](https://github.com/Pwdnx1337/CVE-2025-6440)
 - [xxoprt/CVE-2025-6440](https://github.com/xxoprt/CVE-2025-6440)
+- [Nxploited/CVE-2025-6440](https://github.com/Nxploited/CVE-2025-6440)
 
 ### CVE-2025-6514 (2025-07-09)
 
@@ -1518,7 +1520,7 @@
 - [papcaii2004/CVE-2025-8088-WinRAR-builder](https://github.com/papcaii2004/CVE-2025-8088-WinRAR-builder)
 - [B1ack4sh/Blackash-CVE-2025-8088](https://github.com/B1ack4sh/Blackash-CVE-2025-8088)
 - [nuky-alt/CVE-2025-8088](https://github.com/nuky-alt/CVE-2025-8088)
-- [shourout/CVE-2025-8088](https://github.com/shourout/CVE-2025-8088)
+- [kredscript/cve-2025-8088](https://github.com/kredscript/cve-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1941,7 +1943,6 @@
 - [ryanmroth/Orbit-Fox_SSRF_CVE-2025-10874](https://github.com/ryanmroth/Orbit-Fox_SSRF_CVE-2025-10874)
 
 ### CVE-2025-11001
-- [litolito54/CVE-2025-11001](https://github.com/litolito54/CVE-2025-11001)
 - [shalevo13/Se7enSlip](https://github.com/shalevo13/Se7enSlip)
 - [pacbypass/CVE-2025-11001](https://github.com/pacbypass/CVE-2025-11001)
 
@@ -2031,6 +2032,7 @@
 
 - [SaidBenaissa/cve-2025-11953-vulnerability-demo](https://github.com/SaidBenaissa/cve-2025-11953-vulnerability-demo)
 - [B1ack4sh/Blackash-CVE-2025-11953](https://github.com/B1ack4sh/Blackash-CVE-2025-11953)
+- [N3k0t-dev/PoC-CVE-collection](https://github.com/N3k0t-dev/PoC-CVE-collection)
 
 ### CVE-2025-12399 (2025-11-08)
 
@@ -2039,15 +2041,12 @@
 
 - [d0n601/CVE-2025-12399](https://github.com/d0n601/CVE-2025-12399)
 
-### CVE-2025-12428
-- [dexterm300/cve-2025-12428-exploit-poc](https://github.com/dexterm300/cve-2025-12428-exploit-poc)
+### CVE-2025-12428 (2025-11-10)
 
-### CVE-2025-12907 (2025-11-07)
-
-<code>Insufficient validation of untrusted input in Devtools in Google Chrome prior to 140.0.7339.80 allowed a remote attacker to execute arbitrary code via user action in Devtools. (Chromium security severity: Low)
+<code>Type Confusion in V8 in Google Chrome prior to 142.0.7444.59 allowed a remote attacker to perform arbitrary read/write via a crafted HTML page. (Chromium security severity: High)
 </code>
 
-- [DExplo1ted/CVE-2025-12907-Exploit](https://github.com/DExplo1ted/CVE-2025-12907-Exploit)
+- [dexterm300/cve-2025-12428-exploit-poc](https://github.com/dexterm300/cve-2025-12428-exploit-poc)
 
 ### CVE-2025-12917 (2025-11-09)
 
@@ -2117,7 +2116,6 @@
 <code>A vulnerability in the Java Remote Method Invocation (RMI) process of Cisco Unified CCX could allow an unauthenticated, remote attacker to upload arbitrary files and execute arbitrary commands with root permissions on an affected system.\r\n\r\nThis vulnerability is due to improper authentication mechanisms that are associated to specific Cisco Unified CCX features. An attacker could exploit this vulnerability by uploading a crafted file to an affected system through the Java RMI process. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system and elevate privileges to root.
 </code>
 
-- [allinsthon/CVE-2025-20354](https://github.com/allinsthon/CVE-2025-20354)
 - [B1ack4sh/Blackash-CVE-2025-20354](https://github.com/B1ack4sh/Blackash-CVE-2025-20354)
 
 ### CVE-2025-21042 (2025-09-12)
@@ -3950,6 +3948,7 @@
 <code>runc is a CLI tool for spawning and running containers according to the OCI specification. In versions 1.2.7 and below, 1.3.0-rc.1 through 1.3.1, 1.4.0-rc.1 and 1.4.0-rc.2 files, runc would not perform sufficient verification that the source of the bind-mount (i.e., the container's /dev/null) was actually a real /dev/null inode when using the container's /dev/null to mask. This exposes two methods of attack:  an arbitrary mount gadget, leading to host information disclosure, host denial of service, container escape, or a bypassing of maskedPaths. This issue is fixed in versions 1.2.8, 1.3.3 and 1.4.0-rc.3.
 </code>
 
+- [omne-earth/arca](https://github.com/omne-earth/arca)
 - [sahar042/CVE-2025-31133](https://github.com/sahar042/CVE-2025-31133)
 
 ### CVE-2025-31137 (2025-04-01)
@@ -4531,6 +4530,13 @@
 </code>
 
 - [Eyodav/CVE-2025-34226](https://github.com/Eyodav/CVE-2025-34226)
+
+### CVE-2025-34299 (2025-11-07)
+
+<code>Monsta FTP versions 2.11 and earlier contain a vulnerability that allows unauthenticated arbitrary file uploads. This flaw enables attackers to execute arbitrary code by uploading a specially crafted file from a malicious (S)FTP server.
+</code>
+
+- [crondenice/CVE-2025-34299](https://github.com/crondenice/CVE-2025-34299)
 
 ### CVE-2025-34300 (2025-07-16)
 
@@ -5628,9 +5634,6 @@
 - [elyasbassir/CVE-2025-49844](https://github.com/elyasbassir/CVE-2025-49844)
 - [B1ack4sh/Blackash-CVE-2025-49844](https://github.com/B1ack4sh/Blackash-CVE-2025-49844)
 - [saneki/cve-2025-49844](https://github.com/saneki/cve-2025-49844)
-
-### CVE-2025-50000
-- [adiivascu/CVE-2025-50000](https://github.com/adiivascu/CVE-2025-50000)
 
 ### CVE-2025-50110 (2025-09-15)
 
@@ -6799,7 +6802,11 @@
 
 - [Theethat-Thamwasin/CVE-2025-56399](https://github.com/Theethat-Thamwasin/CVE-2025-56399)
 
-### CVE-2025-56503
+### CVE-2025-56503 (2025-11-10)
+
+<code>An issue in Sublime HQ Pty Ltd Sublime Text 4 4200 allows authenticated attackers with low-level privileges to escalate privileges to Administrator via replacing the uninstall file with a crafted binary in the installation folder.
+</code>
+
 - [secxplorers/CVE-2025-56503](https://github.com/secxplorers/CVE-2025-56503)
 
 ### CVE-2025-56514 (2025-10-01)
@@ -7137,11 +7144,7 @@
 
 - [william31212/CVE-Requests-1896609](https://github.com/william31212/CVE-Requests-1896609)
 
-### CVE-2025-59396 (2025-11-06)
-
-<code>The default configuration of WatchGuard Firebox devices through 2025-09-10 allows administrative access via SSH on port 4118 with the readwrite password for the admin account.
-</code>
-
+### CVE-2025-59396
 - [cyberbyte000/CVE-2025-59396](https://github.com/cyberbyte000/CVE-2025-59396)
 
 ### CVE-2025-59424 (2025-09-18)
@@ -7444,7 +7447,7 @@
 <code>Lanscope Endpoint Manager (On-Premises) (Client program (MR) and Detection agent (DA)) improperly verifies the origin of incoming requests, allowing an attacker to execute arbitrary code by sending specially crafted packets.
 </code>
 
-- [allinsthon/CVE-2025-61932](https://github.com/allinsthon/CVE-2025-61932)
+- [godfatherofexps/CVE-2025-61932-PoC](https://github.com/godfatherofexps/CVE-2025-61932-PoC)
 
 ### CVE-2025-61984 (2025-10-06)
 
@@ -7504,7 +7507,11 @@
 
 - [ch4n3-yoon/CVE-2025-62727-Demo](https://github.com/ch4n3-yoon/CVE-2025-62727-Demo)
 
-### CVE-2025-63296
+### CVE-2025-63296 (2025-11-10)
+
+<code>KERUI K259 5MP Wi-Fi / Tuya Smart Security Camera firmware v33.53.87 contains a code execution vulnerability in its boot/update logic: during startup /usr/sbin/anyka_service.sh scans mounted TF/SD cards and, if /mnt/update.nor.sh is present, copies it to /tmp/net.sh and executes it as root.
+</code>
+
 - [t4e-3/CVE-2025-63296](https://github.com/t4e-3/CVE-2025-63296)
 
 ### CVE-2025-63298 (2025-10-30)
@@ -7531,9 +7538,12 @@
 ### CVE-2025-63353
 - [hanianis/CVE-2025-63353](https://github.com/hanianis/CVE-2025-63353)
 
+### CVE-2025-63419
+- [MMAKINGDOM/CVE-2025-63419](https://github.com/MMAKINGDOM/CVE-2025-63419)
+
 ### CVE-2025-63420 (2025-11-07)
 
-<code>A stored cross-site scripting (XSS) vulnerability in the CrushFTP 11.3.7_50 Admin Panel (Reports / 'Who Created Folder') allows authenticated attackers with permissions to create folders to inject malicious HTML/JavaScript.
+<code>CrushFTP11 before 11.3.7_57 is vulnerable to stored HTML injection in the CrushFTP Admin Panel (Reports / &quot;Who Created Folder&quot;), enabling persistent HTML execution in admin sessions.
 </code>
 
 - [MMAKINGDOM/CVE-2025-63420](https://github.com/MMAKINGDOM/CVE-2025-63420)
@@ -7595,6 +7605,15 @@
 </code>
 
 - [rockmelodies/django_sqli_target_CVE-2025-64459](https://github.com/rockmelodies/django_sqli_target_CVE-2025-64459)
+- [nunpa/CVE-2025-64459](https://github.com/nunpa/CVE-2025-64459)
+
+### CVE-2025-64495 (2025-11-08)
+
+<code>Open WebUI is a self-hosted artificial intelligence platform designed to operate entirely offline. In versions 0.6.34 and below, the functionality that inserts custom prompts into the chat window is vulnerable to DOM XSS when 'Insert Prompt as Rich Text' is enabled, since the prompt body is assigned to the DOM sink .innerHtml without sanitisation. Any user with permissions to create prompts can abuse this to plant a payload that could be triggered by other users if they run the corresponding / command to insert the prompt. This issue is fixed in version 0.6.35.
+</code>
+
+- [AlphabugX/CVE-2025-64495-POC](https://github.com/AlphabugX/CVE-2025-64495-POC)
+- [B1ack4sh/Blackash-CVE-2025-64495](https://github.com/B1ack4sh/Blackash-CVE-2025-64495)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -15194,7 +15213,6 @@
 
 - [TAM-K592/CVE-2024-40725-CVE-2024-40898](https://github.com/TAM-K592/CVE-2024-40725-CVE-2024-40898)
 - [soltanali0/CVE-2024-40725](https://github.com/soltanali0/CVE-2024-40725)
-- [YassineOUAHMANE/CVE-2024-40725](https://github.com/YassineOUAHMANE/CVE-2024-40725)
 
 ### CVE-2024-40815 (2024-07-29)
 
@@ -27005,6 +27023,13 @@
 - [RandomRobbieBF/CVE-2023-51409](https://github.com/RandomRobbieBF/CVE-2023-51409)
 - [Nxploited/CVE-2023-51409](https://github.com/Nxploited/CVE-2023-51409)
 
+### CVE-2023-51444 (2024-03-20)
+
+<code>GeoServer is an open source software server written in Java that allows users to share and edit geospatial data. An arbitrary file upload vulnerability exists in versions prior to 2.23.4 and 2.24.1 that enables an authenticated administrator with permissions to modify coverage stores through the REST Coverage Store API to upload arbitrary file contents to arbitrary file locations which can lead to remote code execution. Coverage stores that are configured using relative paths use a GeoServer Resource implementation that has validation to prevent path traversal but coverage stores that are configured using absolute paths use a different Resource implementation that does not prevent path traversal. This vulnerability can lead to executing arbitrary code. An administrator with limited privileges could also potentially exploit this to overwrite GeoServer security files and obtain full administrator privileges. Versions 2.23.4 and 2.24.1 contain a fix for this issue.
+</code>
+
+- [iPlayForSG/CVE-2023-51444](https://github.com/iPlayForSG/CVE-2023-51444)
+
 ### CVE-2023-51448 (2023-12-22)
 
 <code>Cacti provides an operational monitoring and fault management framework. Version 1.2.25 has a Blind SQL Injection (SQLi) vulnerability within the SNMP Notification Receivers feature in the file `‘managers.php’`. An authenticated attacker with the “Settings/Utilities” permission can send a crafted HTTP GET request to the endpoint `‘/cacti/managers.php’` with an SQLi payload in the `‘selected_graphs_array’` HTTP GET parameter. As of time of publication, no patched versions exist.
@@ -28274,6 +28299,7 @@
 </code>
 
 - [shoucheng3/keycloak__keycloak_CVE-2022-4361_21-1-1](https://github.com/shoucheng3/keycloak__keycloak_CVE-2022-4361_21-1-1)
+- [faccimatteo/CVE-2022-4361](https://github.com/faccimatteo/CVE-2022-4361)
 
 ### CVE-2022-4395 (2023-01-30)
 
@@ -35752,7 +35778,7 @@
 <code>The WordPress Automatic Plugin for WordPress is vulnerable to arbitrary options updates in versions up to, and including, 3.53.2. This is due to missing authorization and option validation in the process_form.php file. This makes it possible for unauthenticated attackers to arbitrarily update the settings of a vulnerable site and ultimately compromise the entire site.
 </code>
 
-- [Pranjal6955/cve-2021-4374-test](https://github.com/Pranjal6955/cve-2021-4374-test)
+- [Pranjal6955/CVE-2021-4374-Testing-Package](https://github.com/Pranjal6955/CVE-2021-4374-Testing-Package)
 
 ### CVE-2021-4428 (2023-07-18)
 
@@ -36316,6 +36342,7 @@
 - [findneo/GitLab-preauth-RCE_CVE-2021-22205](https://github.com/findneo/GitLab-preauth-RCE_CVE-2021-22205)
 - [c0okB/CVE-2021-22205](https://github.com/c0okB/CVE-2021-22205)
 - [shang159/CVE-2021-22205-getshell](https://github.com/shang159/CVE-2021-22205-getshell)
+- [devdanqtuan/CVE-2021-22205](https://github.com/devdanqtuan/CVE-2021-22205)
 - [hh-hunter/cve-2021-22205](https://github.com/hh-hunter/cve-2021-22205)
 - [runsel/GitLab-CVE-2021-22205-](https://github.com/runsel/GitLab-CVE-2021-22205-)
 - [faisalfs10x/GitLab-CVE-2021-22205-scanner](https://github.com/faisalfs10x/GitLab-CVE-2021-22205-scanner)
@@ -41261,6 +41288,7 @@
 - [Polo35/CVE-2020-0022](https://github.com/Polo35/CVE-2020-0022)
 - [5k1l/cve-2020-0022](https://github.com/5k1l/cve-2020-0022)
 - [lsw29475/CVE-2020-0022](https://github.com/lsw29475/CVE-2020-0022)
+- [devdanqtuan/poc-for-cve-2020-0022](https://github.com/devdanqtuan/poc-for-cve-2020-0022)
 - [themmokhtar/CVE-2020-0022](https://github.com/themmokhtar/CVE-2020-0022)
 
 ### CVE-2020-0023 (2020-02-13)
@@ -53989,7 +54017,7 @@
 <code>admin/admin/adminsave.html in YFCMF v3.0 allows CSRF to add an administrator account.
 </code>
 
-- [RHYru9/CVE-2018-16431](https://github.com/RHYru9/CVE-2018-16431)
+- [Rhyru9/CVE-2018-16431](https://github.com/Rhyru9/CVE-2018-16431)
 
 ### CVE-2018-16492 (2019-02-01)
 
@@ -54669,6 +54697,7 @@
 - [h4ckt0m/CVE-2018-25031-test](https://github.com/h4ckt0m/CVE-2018-25031-test)
 - [rasinfosec/CVE-2018-25031](https://github.com/rasinfosec/CVE-2018-25031)
 - [RelicHunt3r/swagger-ui](https://github.com/RelicHunt3r/swagger-ui)
+- [labeebSabbah/CVE-2018-25031](https://github.com/labeebSabbah/CVE-2018-25031)
 
 ### CVE-2018-25032 (2022-03-25)
 
