@@ -519,6 +519,7 @@
 
 - [abrewer251/CVE-2025-2945_PgAdmin_PoC](https://github.com/abrewer251/CVE-2025-2945_PgAdmin_PoC)
 - [Cycloctane/cve-2025-2945-poc](https://github.com/Cycloctane/cve-2025-2945-poc)
+- [I3r1h0n/pgAdminOpendoor](https://github.com/I3r1h0n/pgAdminOpendoor)
 
 ### CVE-2025-2995 (2025-03-31)
 
@@ -1719,6 +1720,13 @@
 
 - [d0n601/CVE-2025-9216](https://github.com/d0n601/CVE-2025-9216)
 
+### CVE-2025-9223 (2025-11-11)
+
+<code>Zohocorp ManageEngine Applications Manager versions 178100 and below are vulnerable to authenticated command injection vulnerability due to the improper configuration in the execute program action feature.
+</code>
+
+- [networkkiller/CVE-2025-9223](https://github.com/networkkiller/CVE-2025-9223)
+
 ### CVE-2025-9242 (2025-09-17)
 
 <code>An Out-of-bounds Write vulnerability in WatchGuard Fireware OS may allow a remote unauthenticated attacker to execute arbitrary code. This vulnerability affects both the Mobile User VPN with IKEv2 and the Branch Office VPN using IKEv2 when configured with a dynamic gateway peer.This vulnerability affects Fireware OS 11.10.2 up to and including 11.12.4_Update1, 12.0 up to and including 12.11.3 and 2025.1.
@@ -1856,6 +1864,13 @@
 
 - [MooseLoveti/PagSeguro-Connect-Para-WooCommerce-CVE-Report](https://github.com/MooseLoveti/PagSeguro-Connect-Para-WooCommerce-CVE-Report)
 
+### CVE-2025-10161 (2025-11-11)
+
+<code>Improper Restriction of Excessive Authentication Attempts, Client-Side Enforcement of Server-Side Security, Reliance on Untrusted Inputs in a Security Decision vulnerability in Turkguven Software Technologies Inc. Perfektive allows Brute Force, Authentication Bypass, Functionality Bypass.This issue affects Perfektive: before Version: 12574 Build: 2701.
+</code>
+
+- [FeZqq/CVE-2025-10161](https://github.com/FeZqq/CVE-2025-10161)
+
 ### CVE-2025-10175 (2025-10-11)
 
 <code>The WP Links Page plugin for WordPress is vulnerable to SQL Injection via the 'id' parameter in all versions up to, and including, 4.9.6 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for authenticated attackers, with Subscriber-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.
@@ -1953,6 +1968,13 @@
 
 - [byteReaper77/CVE-2025-11077](https://github.com/byteReaper77/CVE-2025-11077)
 
+### CVE-2025-11170 (2025-11-11)
+
+<code>The WP移行専用プラグイン for CPI plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the Cpiwm_Import_Controller::import function in all versions up to, and including, 1.0.2. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
+</code>
+
+- [Nxploited/CVE-2025-11170](https://github.com/Nxploited/CVE-2025-11170)
+
 ### CVE-2025-11171 (2025-10-08)
 
 <code>The Chartify – WordPress Chart Plugin for WordPress is vulnerable to Missing Authentication for Critical Function in all versions up to, and including, 3.5.9. This is due to the plugin registering an unauthenticated AJAX action that dispatches to admin-class methods based on a request parameter, without any nonce or capability checks. This makes it possible for unauthenticated attackers to execute administrative functions via the wp-admin/admin-ajax.php endpoint granted they can identify callable method names.
@@ -2048,6 +2070,13 @@
 
 - [dexterm300/cve-2025-12428-exploit-poc](https://github.com/dexterm300/cve-2025-12428-exploit-poc)
 
+### CVE-2025-12539 (2025-11-11)
+
+<code>The TNC Toolbox: Web Performance plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.4.2. This is due to the plugin storing cPanel API credentials (hostname, username, and API key) in files within the web-accessible wp-content directory without adequate protection in the &quot;Tnc_Wp_Toolbox_Settings::save_settings&quot; function. This makes it possible for unauthenticated attackers to retrieve these credentials and use them to interact with the cPanel API, which can lead to arbitrary file uploads, remote code execution, and full compromise of the hosting environment.
+</code>
+
+- [Nxploited/CVE-2025-12539](https://github.com/Nxploited/CVE-2025-12539)
+
 ### CVE-2025-12917 (2025-11-09)
 
 <code>In TOZED ZLT T10 T10PLUS_3.04.15 ist eine Schwachstelle entdeckt worden. Dabei betrifft es einen unbekannter Codeteil der Datei /reqproc/proc_post der Komponente Reboot Handler. Durch die Manipulation mit unbekannten Daten kann eine denial of service-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei im lokalen Netzwerk erfolgen. Der Exploit steht zur öffentlichen Verfügung.
@@ -2123,7 +2152,6 @@
 <code>Out-of-bounds write in libimagecodec.quram.so prior to SMR Apr-2025 Release 1 allows remote attackers to execute arbitrary code.
 </code>
 
-- [usjnx72726w/CVE-2025-21042](https://github.com/usjnx72726w/CVE-2025-21042)
 - [B1ack4sh/Blackash-CVE-2025-21042](https://github.com/B1ack4sh/Blackash-CVE-2025-21042)
 
 ### CVE-2025-21204 (2025-04-08)
@@ -2888,6 +2916,7 @@
 - [TheStingR/CVE-2025-25257](https://github.com/TheStingR/CVE-2025-25257)
 - [segfault-it/CVE-2025-25257](https://github.com/segfault-it/CVE-2025-25257)
 - [silentexploitexe/CVE-2025-25257](https://github.com/silentexploitexe/CVE-2025-25257)
+- [mr-r3b00t/CVE-2025-25257](https://github.com/mr-r3b00t/CVE-2025-25257)
 
 ### CVE-2025-25279 (2025-02-24)
 
@@ -3605,9 +3634,6 @@
 
 - [yxzrw/CVE-2025-29705](https://github.com/yxzrw/CVE-2025-29705)
 
-### CVE-2025-29711
-- [SteamPunk424/CVE-2025-29711-TAKASHI-Wireless-Instant-Router-And-Repeater-WebApp-Incorrect-Access-Control](https://github.com/SteamPunk424/CVE-2025-29711-TAKASHI-Wireless-Instant-Router-And-Repeater-WebApp-Incorrect-Access-Control)
-
 ### CVE-2025-29722 (2025-04-17)
 
 <code>A CSRF vulnerability in Commercify v1.0 allows remote attackers to perform unauthorized actions on behalf of authenticated users. The issue exists due to missing CSRF protection on sensitive endpoints.
@@ -4087,6 +4113,13 @@
 
 - [DoTTak/CVE-2025-31864](https://github.com/DoTTak/CVE-2025-31864)
 
+### CVE-2025-31931 (2025-11-11)
+
+<code>Uncontrolled search path for the Instrumentation and Tracing Technology API (ITT API) software before version 3.25.4 within Ring 3: User Applications may allow an escalation of privilege. Unprivileged software adversary with an authenticated user combined with a high complexity attack may enable escalation of privilege. This result may potentially occur via local access when attack requirements are present without special internal knowledge and requires active user interaction. The potential vulnerability may impact the confidentiality (high), integrity (high) and availability (high) of the vulnerable system, resulting in subsequent system confidentiality (none), integrity (none) and availability (none) impacts.
+</code>
+
+- [yohanes/POC-CVE-2025-31931](https://github.com/yohanes/POC-CVE-2025-31931)
+
 ### CVE-2025-32013 (2025-04-06)
 
 <code>LNbits is a Lightning wallet and accounts system. A Server-Side Request Forgery (SSRF) vulnerability has been discovered in LNbits' LNURL authentication handling functionality. When processing LNURL authentication requests, the application accepts a callback URL parameter and makes an HTTP request to that URL using the httpx library with redirect following enabled. The application doesn't properly validate the callback URL, allowing attackers to specify internal network addresses and access internal resources.
@@ -4537,6 +4570,7 @@
 </code>
 
 - [crondenice/CVE-2025-34299](https://github.com/crondenice/CVE-2025-34299)
+- [rxerium/CVE-2025-34299](https://github.com/rxerium/CVE-2025-34299)
 
 ### CVE-2025-34300 (2025-07-16)
 
@@ -4751,6 +4785,7 @@
 
 - [rxerium/CVE-2025-41244](https://github.com/rxerium/CVE-2025-41244)
 - [haspiranti/CVE-2025-41244-PoC](https://github.com/haspiranti/CVE-2025-41244-PoC)
+- [IBO-ATTACKS/CVE-2025-41244](https://github.com/IBO-ATTACKS/CVE-2025-41244)
 
 ### CVE-2025-41373 (2025-08-01)
 
@@ -5412,6 +5447,7 @@
 - [logesh-GIT001/CVE-2025-48593](https://github.com/logesh-GIT001/CVE-2025-48593)
 - [callinston/CVE-2025-48593](https://github.com/callinston/CVE-2025-48593)
 - [letchupkt/CVE-2025-48593](https://github.com/letchupkt/CVE-2025-48593)
+- [GiladLeef/CVE-2025-48593](https://github.com/GiladLeef/CVE-2025-48593)
 
 ### CVE-2025-48703 (2025-09-19)
 
@@ -5420,6 +5456,7 @@
 
 - [Skynoxk/CVE-2025-48703](https://github.com/Skynoxk/CVE-2025-48703)
 - [itstarsec/CVE-2025-48703](https://github.com/itstarsec/CVE-2025-48703)
+- [137f/PoC-CVE-2025-48703](https://github.com/137f/PoC-CVE-2025-48703)
 
 ### CVE-2025-48708 (2025-05-23)
 
@@ -5634,6 +5671,7 @@
 - [elyasbassir/CVE-2025-49844](https://github.com/elyasbassir/CVE-2025-49844)
 - [B1ack4sh/Blackash-CVE-2025-49844](https://github.com/B1ack4sh/Blackash-CVE-2025-49844)
 - [saneki/cve-2025-49844](https://github.com/saneki/cve-2025-49844)
+- [Network-Sec/CVE-2025-49844-RediShell-AI-made-Revshell](https://github.com/Network-Sec/CVE-2025-49844-RediShell-AI-made-Revshell)
 
 ### CVE-2025-50110 (2025-09-15)
 
@@ -6138,6 +6176,13 @@
 
 - [UltimateHG/CVE-2025-52689-PoC](https://github.com/UltimateHG/CVE-2025-52689-PoC)
 
+### CVE-2025-52881 (2025-11-06)
+
+<code>runc is a CLI tool for spawning and running containers according to the OCI specification. In versions 1.2.7, 1.3.2 and 1.4.0-rc.2, an attacker can trick runc into misdirecting writes to /proc to other procfs files through the use of a racing container with shared mounts (we have also verified this attack is possible to exploit using a standard Dockerfile with docker buildx build as that also permits triggering parallel execution of containers with custom shared mounts configured). This redirect could be through symbolic links in a tmpfs or theoretically other methods such as regular bind-mounts. While similar, the mitigation applied for the related CVE, CVE-2019-19921, was fairly limited and effectively only caused runc to verify that when LSM labels are written they are actually procfs files. This issue is fixed in versions 1.2.8, 1.3.3, and 1.4.0-rc.3.
+</code>
+
+- [jq6l43d1/proxmox-lxc-docker-fix](https://github.com/jq6l43d1/proxmox-lxc-docker-fix)
+
 ### CVE-2025-52914 (2025-08-08)
 
 <code>A vulnerability in the Suite Applications Services component of Mitel MiCollab 10.0 through SP1 FP1 (10.0.1.101) could allow an authenticated attacker to conduct a SQL Injection attack due to insufficient validation of user input. A successful exploit could allow an attacker to execute arbitrary SQL database commands.
@@ -6288,7 +6333,6 @@
 - [ghostn4444/CVE-2025-53770](https://github.com/ghostn4444/CVE-2025-53770)
 - [saladin0x1/CVE-2025-53770](https://github.com/saladin0x1/CVE-2025-53770)
 - [go-bi/sharepoint-CVE-2025-53770](https://github.com/go-bi/sharepoint-CVE-2025-53770)
-- [fentnttntnt/CVE-2025-53770](https://github.com/fentnttntnt/CVE-2025-53770)
 - [Michaael01/LetsDefend--SOC-342-CVE-2025-53770-SharePoint-Exploit-ToolShell](https://github.com/Michaael01/LetsDefend--SOC-342-CVE-2025-53770-SharePoint-Exploit-ToolShell)
 - [victormbogu1/LetsDefend-SOC342-CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-andRCE-EventID-320](https://github.com/victormbogu1/LetsDefend-SOC342-CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-andRCE-EventID-320)
 
@@ -6562,9 +6606,13 @@
 - [sirredbeard/CVE-2025-55315-repro](https://github.com/sirredbeard/CVE-2025-55315-repro)
 - [7huukdlnkjkjba/CVE-2025-55315-](https://github.com/7huukdlnkjkjba/CVE-2025-55315-)
 - [jlinebau/CVE-2025-55315-Scanner-Monitor](https://github.com/jlinebau/CVE-2025-55315-Scanner-Monitor)
+- [ZemarKhos/CVE-2025-55315-PoC-Exploit](https://github.com/ZemarKhos/CVE-2025-55315-PoC-Exploit)
 
 ### CVE-2025-55349
 - [GoldenTicketLabs/CVE-2025-55349](https://github.com/GoldenTicketLabs/CVE-2025-55349)
+
+### CVE-2025-55449
+- [Marven11/CVE-2025-55449-AstrBot-RCE](https://github.com/Marven11/CVE-2025-55449-AstrBot-RCE)
 
 ### CVE-2025-55555
 - [aydin5245/CVE-2025-55555-CVE](https://github.com/aydin5245/CVE-2025-55555-CVE)
@@ -6854,7 +6902,7 @@
 <code>Trivision NC-227WF firmware 5.80 (build 20141010) login mechanism reveals whether a username exists or not by returning different error messages (&quot;Unknown user&quot; vs. &quot;Wrong password&quot;), allowing an attacker to enumerate valid usernames.
 </code>
 
-- [Remenis/CVE-2025-56764-trivision-nc227wf](https://github.com/Remenis/CVE-2025-56764-trivision-nc227wf)
+- [Remenis/CVE-2025-56764](https://github.com/Remenis/CVE-2025-56764)
 
 ### CVE-2025-56771
 - [RRespxwnss/CVE-2025-56771](https://github.com/RRespxwnss/CVE-2025-56771)
@@ -7053,6 +7101,13 @@
 </code>
 
 - [quetuan03/CVE-2025-57926](https://github.com/quetuan03/CVE-2025-57926)
+
+### CVE-2025-58179 (2025-09-04)
+
+<code>Astro is a web framework for content-driven websites. Versions 11.0.3 through 12.6.5 are vulnerable to SSRF when using Astro's Cloudflare adapter. When configured with output: 'server' while using the default imageService: 'compile', the generated image optimization endpoint doesn't check the URLs it receives, allowing content from unauthorized third-party domains to be served. a A bug in impacted versions of the @astrojs/cloudflare adapter for deployment on Cloudflare’s infrastructure, allows an attacker to bypass the third-party domain restrictions and serve any content from the vulnerable origin. This issue is fixed in version 12.6.6.
+</code>
+
+- [shitodcy/CVE-2025-58179-Check](https://github.com/shitodcy/CVE-2025-58179-Check)
 
 ### CVE-2025-58180 (2025-09-09)
 
@@ -7584,6 +7639,12 @@
 </code>
 
 - [cybercrewinc/CVE-2025-63589](https://github.com/cybercrewinc/CVE-2025-63589)
+
+### CVE-2025-63666
+- [Remenis/CVE-2025-63666](https://github.com/Remenis/CVE-2025-63666)
+
+### CVE-2025-63667
+- [Remenis/CVE-2025-63667](https://github.com/Remenis/CVE-2025-63667)
 
 ### CVE-2025-64095 (2025-10-28)
 
@@ -8840,7 +8901,7 @@
 - [K3ysTr0K3R/CVE-2024-4577-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2024-4577-EXPLOIT)
 - [bl4cksku11/CVE-2024-4577](https://github.com/bl4cksku11/CVE-2024-4577)
 - [nemu1k5ma/CVE-2024-4577](https://github.com/nemu1k5ma/CVE-2024-4577)
-- [aaddmin1122345/cve-2024-4577](https://github.com/aaddmin1122345/cve-2024-4577)
+- [aavamin/cve-2024-4577](https://github.com/aavamin/cve-2024-4577)
 - [d3ck4/Shodan-CVE-2024-4577](https://github.com/d3ck4/Shodan-CVE-2024-4577)
 - [Entropt/CVE-2024-4577_Analysis](https://github.com/Entropt/CVE-2024-4577_Analysis)
 - [0XFFFF-XD/CVE-2024-4577-PHP-CGI-RCE](https://github.com/0XFFFF-XD/CVE-2024-4577-PHP-CGI-RCE)
@@ -11863,6 +11924,7 @@
 - [amalpvatayam67/day03-jenkins-23897](https://github.com/amalpvatayam67/day03-jenkins-23897)
 - [hybinn/CVE-2024-23897](https://github.com/hybinn/CVE-2024-23897)
 - [aadi0258/Exploit-CVE-2024-23897](https://github.com/aadi0258/Exploit-CVE-2024-23897)
+- [harekrishnarai/CVE-2024-23897-test-windows](https://github.com/harekrishnarai/CVE-2024-23897-test-windows)
 
 ### CVE-2024-23898 (2024-01-24)
 
@@ -12639,13 +12701,6 @@
 
 ### CVE-2024-27462
 - [Alaatk/CVE-2024-27462](https://github.com/Alaatk/CVE-2024-27462)
-
-### CVE-2024-27474 (2024-04-10)
-
-<code>Leantime 3.0.6 is vulnerable to Cross Site Request Forgery (CSRF). This vulnerability allows malicious actors to perform unauthorized actions on behalf of authenticated users, specifically administrators.
-</code>
-
-- [dead1nfluence/Leantime-POC](https://github.com/dead1nfluence/Leantime-POC)
 
 ### CVE-2024-27518 (2024-04-29)
 
@@ -13431,6 +13486,7 @@
 - [NanoWraith/CVE-2024-31982](https://github.com/NanoWraith/CVE-2024-31982)
 - [th3gokul/CVE-2024-31982](https://github.com/th3gokul/CVE-2024-31982)
 - [bigb0x/CVE-2024-31982](https://github.com/bigb0x/CVE-2024-31982)
+- [raishin1/CVE-2024-31982](https://github.com/raishin1/CVE-2024-31982)
 
 ### CVE-2024-31989 (2024-05-21)
 
@@ -16988,6 +17044,7 @@
 
 - [refr4g/CVE-2024-51378](https://github.com/refr4g/CVE-2024-51378)
 - [qnole000/CVE-2024-51378](https://github.com/qnole000/CVE-2024-51378)
+- [rimbadirgantara/CVE-2024-51378](https://github.com/rimbadirgantara/CVE-2024-51378)
 
 ### CVE-2024-51430 (2024-10-31)
 
@@ -23429,6 +23486,7 @@
 
 - [aalexpereira/CVE-2023-35813](https://github.com/aalexpereira/CVE-2023-35813)
 - [BagheeraAltered/CVE-2023-35813-PoC](https://github.com/BagheeraAltered/CVE-2023-35813-PoC)
+- [her3ticAVI/CVE-2023-35813](https://github.com/her3ticAVI/CVE-2023-35813)
 
 ### CVE-2023-35828 (2023-06-18)
 
@@ -35794,6 +35852,13 @@
 
 - [CERT-hr/Log4Shell](https://github.com/CERT-hr/Log4Shell)
 
+### CVE-2021-4449 (2024-10-16)
+
+<code>The ZoomSounds plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'savepng.php' file in versions up to, and including, 5.96. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
+</code>
+
+- [0xnemian/CVE-2021-4449](https://github.com/0xnemian/CVE-2021-4449)
+
 ### CVE-2021-4773
 - [Alexs18/CVE-2021-4773](https://github.com/Alexs18/CVE-2021-4773)
 
@@ -39173,7 +39238,6 @@
 - [hakivvi/CVE-2021-40449](https://github.com/hakivvi/CVE-2021-40449)
 - [Kristal-g/CVE-2021-40449_poc](https://github.com/Kristal-g/CVE-2021-40449_poc)
 - [CppXL/cve-2021-40449-poc](https://github.com/CppXL/cve-2021-40449-poc)
-- [BL0odz/CVE-2021-40449-NtGdiResetDC-UAF](https://github.com/BL0odz/CVE-2021-40449-NtGdiResetDC-UAF)
 - [SamuelTulach/voidmap](https://github.com/SamuelTulach/voidmap)
 - [toanthang1842002/CVE-2021-40449](https://github.com/toanthang1842002/CVE-2021-40449)
 
@@ -53666,6 +53730,13 @@
 
 - [pudding2/CVE-2018-14083](https://github.com/pudding2/CVE-2018-14083)
 
+### CVE-2018-14324 (2018-07-16)
+
+<code>The demo feature in Oracle GlassFish Open Source Edition 5.0 has TCP port 7676 open by default with a password of admin for the admin account. This allows remote attackers to obtain potentially sensitive information, perform database operations, or manipulate the demo via a JMX RMI session, aka a &quot;jmx_rmi remote monitoring and control problem.&quot; NOTE: this is not an Oracle supported product.
+</code>
+
+- [matejsmycka/CVE-2018-14324-Exploit](https://github.com/matejsmycka/CVE-2018-14324-Exploit)
+
 ### CVE-2018-14442 (2018-07-20)
 
 <code>Foxit Reader before 9.2 and PhantomPDF before 9.2 have a Use-After-Free that leads to Remote Code Execution, aka V-88f4smlocs.
@@ -54433,7 +54504,6 @@
 
 - [aeroot/WP-GDPR-Compliance-Plugin-Exploit](https://github.com/aeroot/WP-GDPR-Compliance-Plugin-Exploit)
 - [cved-sources/cve-2018-19207](https://github.com/cved-sources/cve-2018-19207)
-- [Pwdnx1337/CVE-2018-19207](https://github.com/Pwdnx1337/CVE-2018-19207)
 
 ### CVE-2018-19246 (2018-11-13)
 
@@ -56426,7 +56496,6 @@
 - [joelindra/Argus](https://github.com/joelindra/Argus)
 - [K3ysTr0K3R/CVE-2017-9841-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2017-9841-EXPLOIT)
 - [drcrypterdotru/PHPUnit-GoScan](https://github.com/drcrypterdotru/PHPUnit-GoScan)
-- [Pwdnx1337/CVE-2017-9841](https://github.com/Pwdnx1337/CVE-2017-9841)
 
 ### CVE-2017-9934 (2017-07-17)
 
@@ -57588,6 +57657,13 @@
 
 - [forced-request/rails-rce-cve-2016-0752](https://github.com/forced-request/rails-rce-cve-2016-0752)
 - [dachidahu/CVE-2016-0752](https://github.com/dachidahu/CVE-2016-0752)
+
+### CVE-2016-0777 (2016-01-14)
+
+<code>The resend_bytes function in roaming_common.c in the client in OpenSSH 5.x, 6.x, and 7.x before 7.1p2 allows remote servers to obtain sensitive information from process memory by requesting transmission of an entire buffer, as demonstrated by reading a private key.
+</code>
+
+- [Abdirisaq-ali-aynab/openssh-vulnerability-assessment](https://github.com/Abdirisaq-ali-aynab/openssh-vulnerability-assessment)
 
 ### CVE-2016-0792 (2016-04-07)
 
@@ -59502,6 +59578,13 @@
 
 - [xpgdgit/CVE-2015-5531](https://github.com/xpgdgit/CVE-2015-5531)
 - [MoCh3n/CVE-2015-5531-POC](https://github.com/MoCh3n/CVE-2015-5531-POC)
+
+### CVE-2015-5600 (2015-08-03)
+
+<code>The kbdint_next_device function in auth2-chall.c in sshd in OpenSSH through 6.9 does not properly restrict the processing of keyboard-interactive devices within a single connection, which makes it easier for remote attackers to conduct brute-force attacks or cause a denial of service (CPU consumption) via a long and duplicative list in the ssh -oKbdInteractiveDevices option, as demonstrated by a modified client that provides a different password for each pam element on this list.
+</code>
+
+- [Abdirisaq-ali-aynab/openssh-vulnerability-assessment](https://github.com/Abdirisaq-ali-aynab/openssh-vulnerability-assessment)
 
 ### CVE-2015-5602 (2015-11-17)
 
