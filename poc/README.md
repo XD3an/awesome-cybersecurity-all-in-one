@@ -2596,7 +2596,7 @@
 
 ### CVE-2025-24203 (2025-03-31)
 
-<code>The issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.7.5, iPadOS 17.7.6, macOS Sequoia 15.4, macOS Sonoma 14.7.5. An app may be able to modify protected parts of the file system.
+<code>The issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.7.5, iPadOS 17.7.6, macOS Sequoia 15.4, macOS Sonoma 14.7.5, iOS 18.4 and iPadOS 18.4, tvOS 18.4, visionOS 2.4, watchOS 11.4. An app may be able to modify protected parts of the file system.
 </code>
 
 - [jailbreakdotparty/dirtyZero](https://github.com/jailbreakdotparty/dirtyZero)
@@ -5447,7 +5447,6 @@
 - [logesh-GIT001/CVE-2025-48593](https://github.com/logesh-GIT001/CVE-2025-48593)
 - [callinston/CVE-2025-48593](https://github.com/callinston/CVE-2025-48593)
 - [letchupkt/CVE-2025-48593](https://github.com/letchupkt/CVE-2025-48593)
-- [GiladLeef/CVE-2025-48593](https://github.com/GiladLeef/CVE-2025-48593)
 
 ### CVE-2025-48703 (2025-09-19)
 
@@ -16243,6 +16242,13 @@
 </code>
 
 - [mutkus/CVE-2024-47076](https://github.com/mutkus/CVE-2024-47076)
+
+### CVE-2024-47167 (2024-10-10)
+
+<code>Gradio is an open-source Python package designed for quick prototyping. This vulnerability relates to **Server-Side Request Forgery (SSRF)** in the `/queue/join` endpoint. Gradio’s `async_save_url_to_cache` function allows attackers to force the Gradio server to send HTTP requests to user-controlled URLs. This could enable attackers to target internal servers or services within a local network and possibly exfiltrate data or cause unwanted internal requests. Additionally, the content from these URLs is stored locally, making it easier for attackers to upload potentially malicious files to the server. This impacts users deploying Gradio servers that use components like the Video component which involve URL fetching. Users are advised to upgrade to `gradio&gt;=5` to address this issue.  As a workaround, users can disable or heavily restrict URL-based inputs in their Gradio applications to trusted domains only. Additionally, implementing stricter URL validation (such as allowinglist-based validation) and ensuring that local or internal network addresses cannot be requested via the `/queue/join` endpoint can help mitigate the risk of SSRF attacks.
+</code>
+
+- [alexan011/CVE-2024-47167-Environment-Setup](https://github.com/alexan011/CVE-2024-47167-Environment-Setup)
 
 ### CVE-2024-47176 (2024-09-26)
 
