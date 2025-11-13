@@ -896,6 +896,7 @@
 </code>
 
 - [Nxploited/CVE-2025-4796](https://github.com/Nxploited/CVE-2025-4796)
+- [Pwdnx1337/CVE-2025-4796](https://github.com/Pwdnx1337/CVE-2025-4796)
 
 ### CVE-2025-4822 (2025-07-24)
 
@@ -2056,6 +2057,13 @@
 - [B1ack4sh/Blackash-CVE-2025-11953](https://github.com/B1ack4sh/Blackash-CVE-2025-11953)
 - [N3k0t-dev/PoC-CVE-collection](https://github.com/N3k0t-dev/PoC-CVE-collection)
 
+### CVE-2025-12101 (2025-11-11)
+
+<code>Cross-Site Scripting (XSS) in NetScaler ADC and NetScaler Gateway when the appliance is configured as a Gateway (VPN virtual server, ICA Proxy, CVPN, RDP Proxy) OR AAA virtual server
+</code>
+
+- [6h4ack/CVE-2025-12101-checker](https://github.com/6h4ack/CVE-2025-12101-checker)
+
 ### CVE-2025-12399 (2025-11-08)
 
 <code>The Alex Reservations: Smart Restaurant Booking plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the /wp-json/srr/v1/app/upload/file REST endpoint in all versions up to, and including, 2.2.3. This makes it possible for authenticated attackers, with Administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.
@@ -2077,12 +2085,26 @@
 
 - [Nxploited/CVE-2025-12539](https://github.com/Nxploited/CVE-2025-12539)
 
+### CVE-2025-12748 (2025-11-11)
+
+<code>A flaw was discovered in libvirt in the XML file processing. More specifically, the parsing of user provided XML files was performed before the ACL checks. A malicious user with limited permissions could exploit this flaw by submitting a specially crafted XML file, causing libvirt to allocate too much memory on the host. The excessive memory consumption could lead to a libvirt process crash on the host, resulting in a denial-of-service condition.
+</code>
+
+- [TERESH1/CVE-2025-12748](https://github.com/TERESH1/CVE-2025-12748)
+
 ### CVE-2025-12917 (2025-11-09)
 
 <code>In TOZED ZLT T10 T10PLUS_3.04.15 ist eine Schwachstelle entdeckt worden. Dabei betrifft es einen unbekannter Codeteil der Datei /reqproc/proc_post der Komponente Reboot Handler. Durch die Manipulation mit unbekannten Daten kann eine denial of service-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei im lokalen Netzwerk erfolgen. Der Exploit steht zur öffentlichen Verfügung.
 </code>
 
 - [0xcucumbersalad/CVE-2025-12917-PoC](https://github.com/0xcucumbersalad/CVE-2025-12917-PoC)
+
+### CVE-2025-13027 (2025-11-11)
+
+<code>Memory safety bugs present in Firefox 144 and Thunderbird 144. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox &lt; 145.
+</code>
+
+- [yourluckyday3-art/CVE-2025-13027-Exploit](https://github.com/yourluckyday3-art/CVE-2025-13027-Exploit)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -2099,6 +2121,13 @@
 
 - [Yuri08loveElaina/CVE-2025-20124_and_CVE-2025-20125](https://github.com/Yuri08loveElaina/CVE-2025-20124_and_CVE-2025-20125)
 - [137f/Cisco-ISE-3.0---Remote-Code-Execution-RCE-](https://github.com/137f/Cisco-ISE-3.0---Remote-Code-Execution-RCE-)
+
+### CVE-2025-20260 (2025-06-18)
+
+<code>A vulnerability in the PDF scanning processes of ClamAV could allow an unauthenticated, remote attacker to cause a buffer overflow condition, cause a denial of service (DoS) condition, or execute arbitrary code on an affected device.\r\n\r\nThis vulnerability exists because memory buffers are allocated incorrectly when PDF files are processed. An attacker could exploit this vulnerability by submitting a crafted PDF file to be scanned by ClamAV on an affected device. A successful exploit could allow the attacker to trigger a buffer overflow, likely resulting in the termination of the ClamAV scanning process and a DoS condition on the affected software. Although unproven, there is also a possibility that an attacker could leverage the buffer overflow to execute arbitrary code with the privileges of the ClamAV process.
+</code>
+
+- [keyuraghao/CVE-2025-20260](https://github.com/keyuraghao/CVE-2025-20260)
 
 ### CVE-2025-20265 (2025-08-14)
 
@@ -2211,13 +2240,6 @@
 </code>
 
 - [zhuowei/cheese](https://github.com/zhuowei/cheese)
-
-### CVE-2025-21497 (2025-01-21)
-
-<code>Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB).  Supported versions that are affected are 8.0.40 and prior, 8.4.3 and prior and  9.1.0 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as  unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 5.5 (Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H).
-</code>
-
-- [Urbank-61/cve-2025-21497-lab](https://github.com/Urbank-61/cve-2025-21497-lab)
 
 ### CVE-2025-21574 (2025-04-15)
 
@@ -3767,7 +3789,7 @@
 - [SugiB3o/vulnerable-nextjs-14-CVE-2025-29927](https://github.com/SugiB3o/vulnerable-nextjs-14-CVE-2025-29927)
 - [B1ack4sh/Blackash-CVE-2025-29927](https://github.com/B1ack4sh/Blackash-CVE-2025-29927)
 - [amitlttwo/Next.JS-CVE-2025-29927](https://github.com/amitlttwo/Next.JS-CVE-2025-29927)
-- [aayush256-sys/next-js-auth-bypass](https://github.com/aayush256-sys/next-js-auth-bypass)
+- [kazuya256/next-js-auth-bypass](https://github.com/kazuya256/next-js-auth-bypass)
 - [mickhacking/Thank-u-Next](https://github.com/mickhacking/Thank-u-Next)
 - [0xh3g4z1/CVE-2025-29927-Next.js-Middleware-Authorization-Bypass](https://github.com/0xh3g4z1/CVE-2025-29927-Next.js-Middleware-Authorization-Bypass)
 - [sahbaazansari/CVE-2025-29927](https://github.com/sahbaazansari/CVE-2025-29927)
@@ -3976,6 +3998,7 @@
 
 - [omne-earth/arca](https://github.com/omne-earth/arca)
 - [sahar042/CVE-2025-31133](https://github.com/sahar042/CVE-2025-31133)
+- [skynet-f-nvidia/CVE-2025-31133](https://github.com/skynet-f-nvidia/CVE-2025-31133)
 
 ### CVE-2025-31137 (2025-04-01)
 
@@ -4569,7 +4592,6 @@
 <code>Monsta FTP versions 2.11 and earlier contain a vulnerability that allows unauthenticated arbitrary file uploads. This flaw enables attackers to execute arbitrary code by uploading a specially crafted file from a malicious (S)FTP server.
 </code>
 
-- [crondenice/CVE-2025-34299](https://github.com/crondenice/CVE-2025-34299)
 - [rxerium/CVE-2025-34299](https://github.com/rxerium/CVE-2025-34299)
 
 ### CVE-2025-34300 (2025-07-16)
@@ -5410,8 +5432,6 @@
 - [mukesh-610/cve-2025-48384-exploit](https://github.com/mukesh-610/cve-2025-48384-exploit)
 - [mukesh-610/cve-2025-48384](https://github.com/mukesh-610/cve-2025-48384)
 - [MarcoTondolo/cve-2025-48384-poc](https://github.com/MarcoTondolo/cve-2025-48384-poc)
-- [bummie/CVE-2025-48384](https://github.com/bummie/CVE-2025-48384)
-- [bummie/CVE-2025-48384-submodule](https://github.com/bummie/CVE-2025-48384-submodule)
 
 ### CVE-2025-48461 (2025-06-24)
 
@@ -6393,7 +6413,6 @@
 
 - [amalpvatayam67/day01-sessionreaper-lab](https://github.com/amalpvatayam67/day01-sessionreaper-lab)
 - [wubinworks/magento2-session-reaper-patch](https://github.com/wubinworks/magento2-session-reaper-patch)
-- [crondenice/CVE-2025-54236](https://github.com/crondenice/CVE-2025-54236)
 
 ### CVE-2025-54253 (2025-08-05)
 
@@ -6849,6 +6868,9 @@
 
 - [Theethat-Thamwasin/CVE-2025-56399](https://github.com/Theethat-Thamwasin/CVE-2025-56399)
 
+### CVE-2025-56499
+- [Cherrling/CVE-2025-56499](https://github.com/Cherrling/CVE-2025-56499)
+
 ### CVE-2025-56503 (2025-11-10)
 
 <code>An issue in Sublime HQ Pty Ltd Sublime Text 4 4200 allows authenticated attackers with low-level privileges to escalate privileges to Administrator via replacing the uninstall file with a crafted binary in the installation folder.
@@ -6996,7 +7018,11 @@
 ### CVE-2025-57199
 - [xchg-rax-rax/AvTech-PoCs](https://github.com/xchg-rax-rax/AvTech-PoCs)
 
-### CVE-2025-57310
+### CVE-2025-57310 (2025-11-12)
+
+<code>A Cross-Site Request Forgery (CSRF) vulnerability in Salmen2/Simple-Faucet-Script v1.07 via crafted POST request to admin.php?p=ads&amp;c=1 allowing attackers to execute arbitrary code.
+</code>
+
 - [MMAKINGDOM/CVE-2025-57310](https://github.com/MMAKINGDOM/CVE-2025-57310)
 
 ### CVE-2025-57389 (2025-10-01)
@@ -7153,6 +7179,13 @@
 
 - [stalker110119/CVE-2025-59230](https://github.com/stalker110119/CVE-2025-59230)
 
+### CVE-2025-59253 (2025-10-14)
+
+<code>Improper access control in Microsoft Windows Search Component allows an authorized attacker to deny service locally.
+</code>
+
+- [zigzagymym1986/CVE-2025-59253](https://github.com/zigzagymym1986/CVE-2025-59253)
+
 ### CVE-2025-59287 (2025-10-14)
 
 <code>Deserialization of untrusted data in Windows Server Update Service allows an unauthorized attacker to execute code over a network.
@@ -7175,7 +7208,6 @@
 - [QurtiDev/WSUS-CVE-2025-59287-RCE](https://github.com/QurtiDev/WSUS-CVE-2025-59287-RCE)
 - [dexterm300/cve-2025-59287-exploit-poc](https://github.com/dexterm300/cve-2025-59287-exploit-poc)
 - [th1n0/CVE-2025-59287](https://github.com/th1n0/CVE-2025-59287)
-- [crondenice/CVE-2025-59287](https://github.com/crondenice/CVE-2025-59287)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -7318,6 +7350,20 @@
 </code>
 
 - [Clicksafeae/CVE-2025-60595](https://github.com/Clicksafeae/CVE-2025-60595)
+
+### CVE-2025-60710 (2025-11-11)
+
+<code>Improper link resolution before file access ('link following') in Host Process for Windows Tasks allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [Wh04m1001/CVE-2025-60710](https://github.com/Wh04m1001/CVE-2025-60710)
+
+### CVE-2025-60724 (2025-11-11)
+
+<code>Heap-based buffer overflow in Microsoft Graphics Component allows an unauthorized attacker to execute code over a network.
+</code>
+
+- [Iomarlto/CVE-2025-60724](https://github.com/Iomarlto/CVE-2025-60724)
 
 ### CVE-2025-60736
 - [WinDyAlphA/CVE-2025-60736](https://github.com/WinDyAlphA/CVE-2025-60736)
@@ -7519,6 +7565,13 @@
 - [monzaviman/CVE-2025-62168](https://github.com/monzaviman/CVE-2025-62168)
 - [shahroodcert/CVE-2025-62168](https://github.com/shahroodcert/CVE-2025-62168)
 
+### CVE-2025-62215 (2025-11-11)
+
+<code>Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Kernel allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [fordeant/CVE-2025-62215](https://github.com/fordeant/CVE-2025-62215)
+
 ### CVE-2025-62376 (2025-10-14)
 
 <code>pwn.college DOJO is an education platform for learning cybersecurity. In versions up to and including commit 781d91157cfc234a434d0bab45cbcf97894c642e, the /workspace endpoint contains an improper authentication vulnerability that allows an attacker to access any active Windows VM without proper authorization. The vulnerability occurs in the view_desktop function where the user is retrieved via a URL parameter without verifying that the requester has administrative privileges. An attacker can supply any user ID and arbitrary password in the request parameters to impersonate another user. When requesting a Windows desktop service, the function does not validate the supplied password before generating access credentials, allowing the attacker to obtain an iframe source URL that grants full access to the target user's Windows VM. This impacts all users with active Windows VMs, as an attacker can access and modify data on the Windows machine and in the home directory of the associated Linux machine via the Z: drive. This issue has been patched in commit 467db0b9ea0d9a929dc89b41f6eb59f7cfc68bef. No known workarounds exist.
@@ -7589,10 +7642,18 @@
 
 - [B1ack4sh/Blackash-CVE-2025-63334](https://github.com/B1ack4sh/Blackash-CVE-2025-63334)
 
-### CVE-2025-63353
+### CVE-2025-63353 (2025-11-12)
+
+<code>A vulnerability in FiberHome GPON ONU HG6145F1 RP4423 allows the device's factory default Wi-Fi password (WPA/WPA2 pre-shared key) to be predicted from the SSID. The device generates default passwords using a deterministic algorithm that derives the router passphrase from the SSID, enabling an attacker who can observe the SSID to predict the default password without authentication or user interaction.
+</code>
+
 - [hanianis/CVE-2025-63353](https://github.com/hanianis/CVE-2025-63353)
 
-### CVE-2025-63419
+### CVE-2025-63419 (2025-11-12)
+
+<code>Cross Site Scripting (XSS) vulnerability in CrushFTP 11.3.6_48. The Web-Based Server has a feature where users can share files, the feature reflects the filename to an emailbody field with no sanitations leading to HTML Injection.
+</code>
+
 - [MMAKINGDOM/CVE-2025-63419](https://github.com/MMAKINGDOM/CVE-2025-63419)
 
 ### CVE-2025-63420 (2025-11-07)
@@ -7639,11 +7700,22 @@
 
 - [cybercrewinc/CVE-2025-63589](https://github.com/cybercrewinc/CVE-2025-63589)
 
-### CVE-2025-63666
+### CVE-2025-63666 (2025-11-12)
+
+<code>Tenda AC15 v15.03.05.18_multi) issues an authentication cookie that exposes the account password hash to the client and uses a short, low-entropy suffix as the session identifier. An attacker with network access or the ability to run JS in a victim browser can steal the cookie and replay it to access protected resources.
+</code>
+
 - [Remenis/CVE-2025-63666](https://github.com/Remenis/CVE-2025-63666)
 
-### CVE-2025-63667
+### CVE-2025-63667 (2025-11-12)
+
+<code>Incorrect access control in SIMICAM v1.16.41-20250725, KEVIEW v1.14.92-20241120, ASECAM v1.14.10-20240725 allows attackers to access sensitive API endpoints without authentication.
+</code>
+
 - [Remenis/CVE-2025-63667](https://github.com/Remenis/CVE-2025-63667)
+
+### CVE-2025-63830
+- [Shubham03007/CVE-2025-63830](https://github.com/Shubham03007/CVE-2025-63830)
 
 ### CVE-2025-64095 (2025-10-28)
 
@@ -7651,6 +7723,13 @@
 </code>
 
 - [h4x0r-dz/CVE-2025-64095---DNN-Unauthenticated-arbitrary-file-upload](https://github.com/h4x0r-dz/CVE-2025-64095---DNN-Unauthenticated-arbitrary-file-upload)
+
+### CVE-2025-64403 (2025-11-12)
+
+<code>Apache OpenOffice Calc spreadsheet can contain links to other files, in the form of &quot;external data sources&quot;. A missing Authorization vulnerability in Apache OpenOffice allowed an attacker to craft a document that would cause such links \nto be loaded without prompt.\n\nThis issue affects Apache OpenOffice: through 4.1.15.\n\nUsers are recommended to upgrade to version 4.1.16, which fixes the issue.
+</code>
+
+- [makaroonbourne/CVE-2025-64403-Exploit](https://github.com/makaroonbourne/CVE-2025-64403-Exploit)
 
 ### CVE-2025-64458 (2025-11-05)
 
@@ -8997,6 +9076,13 @@
 </code>
 
 - [sinsinology/CVE-2024-4885](https://github.com/sinsinology/CVE-2024-4885)
+
+### CVE-2024-4890 (2024-06-06)
+
+<code>A blind SQL injection vulnerability exists in the berriai/litellm application, specifically within the '/team/update' process. The vulnerability arises due to the improper handling of the 'user_id' parameter in the raw SQL query used for deleting users. An attacker can exploit this vulnerability by injecting malicious SQL commands through the 'user_id' parameter, leading to potential unauthorized access to sensitive information such as API keys, user information, and tokens stored in the database. The affected version is 1.27.14.
+</code>
+
+- [nekr0ff/needrestart-sudo-escalate-cve-2024-4890](https://github.com/nekr0ff/needrestart-sudo-escalate-cve-2024-4890)
 
 ### CVE-2024-4898 (2024-06-12)
 
@@ -15651,7 +15737,7 @@
 - [RedTeamPentesting/moodle-rce-calculatedquestions](https://github.com/RedTeamPentesting/moodle-rce-calculatedquestions)
 - [Snizi/Moodle-CVE-2024-43425-Exploit](https://github.com/Snizi/Moodle-CVE-2024-43425-Exploit)
 - [aninfosec/CVE-2024-43425-Poc](https://github.com/aninfosec/CVE-2024-43425-Poc)
-- [aayush256-sys/Moodle-authenticated-RCE](https://github.com/aayush256-sys/Moodle-authenticated-RCE)
+- [kazuya256/Moodle-authenticated-RCE](https://github.com/kazuya256/Moodle-authenticated-RCE)
 - [Tnot123/cve-2024-43425](https://github.com/Tnot123/cve-2024-43425)
 
 ### CVE-2024-43451 (2024-11-12)
@@ -16496,6 +16582,7 @@
 </code>
 
 - [Mitchellzhou1/CVE-2024-48910-PoC](https://github.com/Mitchellzhou1/CVE-2024-48910-PoC)
+- [Alex-Acero-Security/CVE-2024-48910-POC](https://github.com/Alex-Acero-Security/CVE-2024-48910-POC)
 
 ### CVE-2024-48914 (2024-10-15)
 
@@ -18646,13 +18733,6 @@
 </code>
 
 - [tpdlshdmlrkfmcla/2023-2245](https://github.com/tpdlshdmlrkfmcla/2023-2245)
-
-### CVE-2023-2249 (2023-06-09)
-
-<code>The wpForo Forum plugin for WordPress is vulnerable to Local File Include, Server-Side Request Forgery, and PHAR Deserialization in versions up to, and including, 2.1.7. This is due to the insecure use of file_get_contents without appropriate verification of the data being supplied to the function. This makes it possible for authenticated attackers, with minimal permissions such as a subscriber, to retrieve the contents of files like wp-config.php hosted on the system, perform a deserialization attack and possibly achieve remote code execution, and make requests to internal services.
-</code>
-
-- [ixiacom/CVE-2023-2249](https://github.com/ixiacom/CVE-2023-2249)
 
 ### CVE-2023-2255 (2023-05-25)
 
@@ -35858,13 +35938,6 @@
 
 - [CERT-hr/Log4Shell](https://github.com/CERT-hr/Log4Shell)
 
-### CVE-2021-4449 (2024-10-16)
-
-<code>The ZoomSounds plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'savepng.php' file in versions up to, and including, 5.96. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
-</code>
-
-- [0xnemian/CVE-2021-4449](https://github.com/0xnemian/CVE-2021-4449)
-
 ### CVE-2021-4773
 - [Alexs18/CVE-2021-4773](https://github.com/Alexs18/CVE-2021-4773)
 
@@ -39244,6 +39317,7 @@
 - [hakivvi/CVE-2021-40449](https://github.com/hakivvi/CVE-2021-40449)
 - [Kristal-g/CVE-2021-40449_poc](https://github.com/Kristal-g/CVE-2021-40449_poc)
 - [CppXL/cve-2021-40449-poc](https://github.com/CppXL/cve-2021-40449-poc)
+- [BL0odz/CVE-2021-40449-NtGdiResetDC-UAF](https://github.com/BL0odz/CVE-2021-40449-NtGdiResetDC-UAF)
 - [SamuelTulach/voidmap](https://github.com/SamuelTulach/voidmap)
 - [toanthang1842002/CVE-2021-40449](https://github.com/toanthang1842002/CVE-2021-40449)
 
@@ -41504,6 +41578,13 @@
 - [ShaikUsaf/ShaikUsaf-packages_apps_settings_AOSP10_r33_CVE-2020-0188](https://github.com/ShaikUsaf/ShaikUsaf-packages_apps_settings_AOSP10_r33_CVE-2020-0188)
 - [Trinadh465/packages_apps_Settings_AOSP10_r33_CVE-2020-0188_CVE-0219](https://github.com/Trinadh465/packages_apps_Settings_AOSP10_r33_CVE-2020-0188_CVE-0219)
 
+### CVE-2020-0192 (2020-06-11)
+
+<code>In ih264d_decode_slice_thread of ih264d_thread_parse_decode.c, there is a possible out of bounds read due to improper input validation. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-10Android ID: A-144687080
+</code>
+
+- [himanshu67111/CVE-2020-0192](https://github.com/himanshu67111/CVE-2020-0192)
+
 ### CVE-2020-0198 (2020-06-11)
 
 <code>In exif_data_load_data_content of exif-data.c, there is a possible UBSAN abort due to an integer overflow. This could lead to remote denial of service with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-10Android ID: A-146428941
@@ -43743,6 +43824,7 @@
 </code>
 
 - [khcujw/CVE-2020-9802](https://github.com/khcujw/CVE-2020-9802)
+- [Billy-Ellis/jitsploitation](https://github.com/Billy-Ellis/jitsploitation)
 
 ### CVE-2020-9922 (2020-12-08)
 
@@ -48605,6 +48687,7 @@
 - [noob-hacker572/CMS-Made-Simple-2.2.9-CVE-2019-9053](https://github.com/noob-hacker572/CMS-Made-Simple-2.2.9-CVE-2019-9053)
 - [Slayerma/-CVE-2019-9053](https://github.com/Slayerma/-CVE-2019-9053)
 - [CaelumIsMe/CVE-2019-9053-POC](https://github.com/CaelumIsMe/CVE-2019-9053-POC)
+- [6iroc/CVE-2019-9053](https://github.com/6iroc/CVE-2019-9053)
 
 ### CVE-2019-9081
 - [nth347/CVE-2019-9081_PoC](https://github.com/nth347/CVE-2019-9081_PoC)
@@ -54510,6 +54593,7 @@
 
 - [aeroot/WP-GDPR-Compliance-Plugin-Exploit](https://github.com/aeroot/WP-GDPR-Compliance-Plugin-Exploit)
 - [cved-sources/cve-2018-19207](https://github.com/cved-sources/cve-2018-19207)
+- [Pwdnx1337/CVE-2018-19207](https://github.com/Pwdnx1337/CVE-2018-19207)
 
 ### CVE-2018-19246 (2018-11-13)
 
