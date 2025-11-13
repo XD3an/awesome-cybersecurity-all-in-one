@@ -2013,6 +2013,13 @@
 
 - [DanielMadsenDK/ServiceNow-CVE-2025-11449-CVE-2025-11450-Mitigation-Script](https://github.com/DanielMadsenDK/ServiceNow-CVE-2025-11449-CVE-2025-11450-Mitigation-Script)
 
+### CVE-2025-11492 (2025-10-16)
+
+<code>In the ConnectWise Automate Agent, communications could be configured to use HTTP instead of HTTPS. In such cases, an on-path threat actor with a man-in-the-middle network position could intercept, modify, or replay agent-server traffic. Additionally, the encryption method used to obfuscate some communications over the HTTP channel is updated in the Automate 2025.9 patch to enforce HTTPS for all agent communications.
+</code>
+
+- [synap5e/connectwise-automate-AiTM-rce](https://github.com/synap5e/connectwise-automate-AiTM-rce)
+
 ### CVE-2025-11499 (2025-11-01)
 
 <code>The Tablesome Table – Contact Form DB – WPForms, CF7, Gravity, Forminator, Fluent plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the set_featured_image_from_external_url() function in all versions up to, and including, 1.1.32. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible in configurations where unauthenticated users have been provided with a method for adding featured images, and the workflow trigger is created.
@@ -4294,6 +4301,7 @@
 </code>
 
 - [Camier/VOIXCODER](https://github.com/Camier/VOIXCODER)
+- [cyhe50/cve-2025-32434-poc](https://github.com/cyhe50/cve-2025-32434-poc)
 
 ### CVE-2025-32444 (2025-04-30)
 
@@ -7754,6 +7762,9 @@
 - [AlphabugX/CVE-2025-64495-POC](https://github.com/AlphabugX/CVE-2025-64495-POC)
 - [B1ack4sh/Blackash-CVE-2025-64495](https://github.com/B1ack4sh/Blackash-CVE-2025-64495)
 
+### CVE-2025-64708
+- [DylanDavis1/CVE-2025-64708](https://github.com/DylanDavis1/CVE-2025-64708)
+
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
 
@@ -7863,6 +7874,7 @@
 - [canyie/CVE-2024-0044](https://github.com/canyie/CVE-2024-0044)
 - [Dit-Developers/CVE-2024-0044-](https://github.com/Dit-Developers/CVE-2024-0044-)
 - [Athexhacker/EXPLOITER](https://github.com/Athexhacker/EXPLOITER)
+- [HoyoenKim/CVE-2024-0044_PoC](https://github.com/HoyoenKim/CVE-2024-0044_PoC)
 
 ### CVE-2024-0132 (2024-09-26)
 
