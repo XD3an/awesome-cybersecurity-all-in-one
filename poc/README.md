@@ -2098,6 +2098,13 @@
 
 - [TERESH1/CVE-2025-12748](https://github.com/TERESH1/CVE-2025-12748)
 
+### CVE-2025-12904 (2025-11-14)
+
+<code>The SNORDIAN's H5PxAPIkatchu plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'insert_data' AJAX endpoint in all versions up to, and including, 0.4.17 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+</code>
+
+- [MooseLoveti/SNORDIAN-s-H5PxAPIkatchu-CVE-Report](https://github.com/MooseLoveti/SNORDIAN-s-H5PxAPIkatchu-CVE-Report)
+
 ### CVE-2025-12917 (2025-11-09)
 
 <code>In TOZED ZLT T10 T10PLUS_3.04.15 ist eine Schwachstelle entdeckt worden. Dabei betrifft es einen unbekannter Codeteil der Datei /reqproc/proc_post der Komponente Reboot Handler. Durch die Manipulation mit unbekannten Daten kann eine denial of service-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei im lokalen Netzwerk erfolgen. Der Exploit steht zur öffentlichen Verfügung.
@@ -5484,6 +5491,7 @@
 - [logesh-GIT001/CVE-2025-48593](https://github.com/logesh-GIT001/CVE-2025-48593)
 - [callinston/CVE-2025-48593](https://github.com/callinston/CVE-2025-48593)
 - [letchupkt/CVE-2025-48593](https://github.com/letchupkt/CVE-2025-48593)
+- [zhuowei/blueshrimp](https://github.com/zhuowei/blueshrimp)
 
 ### CVE-2025-48703 (2025-09-19)
 
@@ -5532,6 +5540,9 @@
 </code>
 
 - [njawalkar/apache-commons-lang2](https://github.com/njawalkar/apache-commons-lang2)
+
+### CVE-2025-48932
+- [XploitGh0st/CVE-2025-48932---exploit](https://github.com/XploitGh0st/CVE-2025-48932---exploit)
 
 ### CVE-2025-48976 (2025-06-16)
 
@@ -7575,6 +7586,13 @@
 - [monzaviman/CVE-2025-62168](https://github.com/monzaviman/CVE-2025-62168)
 - [shahroodcert/CVE-2025-62168](https://github.com/shahroodcert/CVE-2025-62168)
 
+### CVE-2025-62215 (2025-11-11)
+
+<code>Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Kernel allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [dexterm300/CVE-2025-62215-exploit-poc](https://github.com/dexterm300/CVE-2025-62215-exploit-poc)
+
 ### CVE-2025-62376 (2025-10-14)
 
 <code>pwn.college DOJO is an education platform for learning cybersecurity. In versions up to and including commit 781d91157cfc234a434d0bab45cbcf97894c642e, the /workspace endpoint contains an improper authentication vulnerability that allows an attacker to access any active Windows VM without proper authorization. The vulnerability occurs in the view_desktop function where the user is retrieved via a URL parameter without verifying that the requester has administrative privileges. An attacker can supply any user ID and arbitrary password in the request parameters to impersonate another user. When requesting a Windows desktop service, the function does not validate the supplied password before generating access credentials, allowing the attacker to obtain an iframe source URL that grants full access to the target user's Windows VM. This impacts all users with active Windows VMs, as an attacker can access and modify data on the Windows machine and in the home directory of the associated Linux machine via the Z: drive. This issue has been patched in commit 467db0b9ea0d9a929dc89b41f6eb59f7cfc68bef. No known workarounds exist.
@@ -7702,6 +7720,9 @@
 </code>
 
 - [cybercrewinc/CVE-2025-63589](https://github.com/cybercrewinc/CVE-2025-63589)
+
+### CVE-2025-63602
+- [D7EAD/CVE-2025-63602](https://github.com/D7EAD/CVE-2025-63602)
 
 ### CVE-2025-63666 (2025-11-12)
 
@@ -49377,7 +49398,7 @@
 - [fastmo/CVE-2019-11932](https://github.com/fastmo/CVE-2019-11932)
 - [mRanonyMousTZ/CVE-2019-11932-whatsApp-exploit](https://github.com/mRanonyMousTZ/CVE-2019-11932-whatsApp-exploit)
 - [SmoZy92/CVE-2019-11932](https://github.com/SmoZy92/CVE-2019-11932)
-- [dashtic172/https-github.com-awakened171](https://github.com/dashtic172/https-github.com-awakened171)
+- [OrdaraatSite/https-github.com-awakened171](https://github.com/OrdaraatSite/https-github.com-awakened171)
 - [Err0r-ICA/WhatsPayloadRCE](https://github.com/Err0r-ICA/WhatsPayloadRCE)
 - [starling021/CVE-2019-11932-SupportApp](https://github.com/starling021/CVE-2019-11932-SupportApp)
 - [primebeast/CVE-2019-11932](https://github.com/primebeast/CVE-2019-11932)
