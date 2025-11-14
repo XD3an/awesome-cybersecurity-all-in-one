@@ -1417,6 +1417,7 @@
 - [fxrstor/ThrottleStopPoC](https://github.com/fxrstor/ThrottleStopPoC)
 - [Demoo1337/ThrottleStop](https://github.com/Demoo1337/ThrottleStop)
 - [Gabriel-Lacorte/CVE-2025-7771](https://github.com/Gabriel-Lacorte/CVE-2025-7771)
+- [AmrHuss/throttlestop-exploit-rw](https://github.com/AmrHuss/throttlestop-exploit-rw)
 
 ### CVE-2025-7775 (2025-08-26)
 
@@ -1513,7 +1514,6 @@
 - [pentestfunctions/best-CVE-2025-8088](https://github.com/pentestfunctions/best-CVE-2025-8088)
 - [kitsuneshade/WinRAR-Exploit-Tool---Rust-Edition](https://github.com/kitsuneshade/WinRAR-Exploit-Tool---Rust-Edition)
 - [walidpyh/CVE-2025-8088](https://github.com/walidpyh/CVE-2025-8088)
-- [hexsecteam/CVE-2025-8088-Winrar-Tool](https://github.com/hexsecteam/CVE-2025-8088-Winrar-Tool)
 - [techcorp/CVE-2025-8088-Exploit](https://github.com/techcorp/CVE-2025-8088-Exploit)
 - [Shinkirou789/Cve-2025-8088-WinRar-vulnerability](https://github.com/Shinkirou789/Cve-2025-8088-WinRar-vulnerability)
 - [hbesljx/CVE-2025-8088-EXP](https://github.com/hbesljx/CVE-2025-8088-EXP)
@@ -1522,7 +1522,7 @@
 - [papcaii2004/CVE-2025-8088-WinRAR-builder](https://github.com/papcaii2004/CVE-2025-8088-WinRAR-builder)
 - [B1ack4sh/Blackash-CVE-2025-8088](https://github.com/B1ack4sh/Blackash-CVE-2025-8088)
 - [nuky-alt/CVE-2025-8088](https://github.com/nuky-alt/CVE-2025-8088)
-- [kredscript/cve-2025-8088](https://github.com/kredscript/cve-2025-8088)
+- [WezRyan/CVE-2025-8088](https://github.com/WezRyan/CVE-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1601,13 +1601,6 @@
 </code>
 
 - [chimdi2700/CVE-2025-8571](https://github.com/chimdi2700/CVE-2025-8571)
-
-### CVE-2025-8573 (2025-08-05)
-
-<code>Concrete CMS versions 9 through 9.4.2 are vulnerable to Stored XSS from Home Folder on Members Dashboard page.  Version 8 was not affected. A rogue admin could set up a malicious folder containing XSS to which users could be directed upon login. The Concrete CMS security team gave this vulnerability a CVSS v.4.0 score of 2.0 with vector CVSS:4.0/AV:N/AC:H/AT:N/PR:H/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N. Thanks sealldev  (Noah Cooper) for reporting via HackerOne.
-</code>
-
-- [iamFredNi/poc-cve-2025-8573](https://github.com/iamFredNi/poc-cve-2025-8573)
 
 ### CVE-2025-8625 (2025-09-30)
 
@@ -1698,7 +1691,6 @@
 </code>
 
 - [MooseLoveti/Trinity-Audio-CVE-Report](https://github.com/MooseLoveti/Trinity-Audio-CVE-Report)
-- [godfatherofexps/CVE-2025-9196-PoC](https://github.com/godfatherofexps/CVE-2025-9196-PoC)
 
 ### CVE-2025-9209 (2025-10-03)
 
@@ -1784,13 +1776,6 @@
 
 - [kwerty138/Reflected-XSS-in-Vvveb-CMS-v1.0.7.2](https://github.com/kwerty138/Reflected-XSS-in-Vvveb-CMS-v1.0.7.2)
 
-### CVE-2025-9744 (2025-08-31)
-
-<code>In Campcodes Online Loan Management System 1.0 ist eine Schwachstelle entdeckt worden. Davon betroffen ist unbekannter Code der Datei /ajax.php?action=login. Dank Manipulation des Arguments Username mit unbekannten Daten kann eine sql injection-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei über das Netzwerk erfolgen. Der Exploit ist öffentlich verfügbar und könnte genutzt werden.
-</code>
-
-- [godfatherofexps/CVE-2025-9744-PoC](https://github.com/godfatherofexps/CVE-2025-9744-PoC)
-
 ### CVE-2025-9776 (2025-09-11)
 
 <code>The CatFolders – Tame Your WordPress Media Library by Category plugin for WordPress is vulnerable to time-based SQL Injection via the CSV Import contents in all versions up to, and including, 2.5.2 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for authenticated attackers, with Author-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.
@@ -1804,6 +1789,13 @@
 </code>
 
 - [drackyjr/CVE-2025-9784](https://github.com/drackyjr/CVE-2025-9784)
+
+### CVE-2025-9816 (2025-09-27)
+
+<code>The WP Statistics – The Most Popular Privacy-Friendly Analytics Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the User-Agent Header in all versions up to, and including, 14.5.4 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+</code>
+
+- [monzaviman/CVE-2025-9816](https://github.com/monzaviman/CVE-2025-9816)
 
 ### CVE-2025-9886 (2025-10-04)
 
@@ -2085,6 +2077,13 @@
 
 - [dexterm300/cve-2025-12428-exploit-poc](https://github.com/dexterm300/cve-2025-12428-exploit-poc)
 
+### CVE-2025-12480 (2025-11-10)
+
+<code>Triofox versions prior to 16.7.10368.56560, are vulnerable to an Improper Access Control flaw that allows access to initial setup pages even after setup is complete.
+</code>
+
+- [velmetrac/CVE-2025-12480](https://github.com/velmetrac/CVE-2025-12480)
+
 ### CVE-2025-12539 (2025-11-11)
 
 <code>The TNC Toolbox: Web Performance plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.4.2. This is due to the plugin storing cPanel API credentials (hostname, username, and API key) in files within the web-accessible wp-content directory without adequate protection in the &quot;Tnc_Wp_Toolbox_Settings::save_settings&quot; function. This makes it possible for unauthenticated attackers to retrieve these credentials and use them to interact with the cPanel API, which can lead to arbitrary file uploads, remote code execution, and full compromise of the hosting environment.
@@ -2105,13 +2104,6 @@
 </code>
 
 - [0xcucumbersalad/CVE-2025-12917-PoC](https://github.com/0xcucumbersalad/CVE-2025-12917-PoC)
-
-### CVE-2025-13027 (2025-11-11)
-
-<code>Memory safety bugs present in Firefox 144 and Thunderbird 144. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox &lt; 145.
-</code>
-
-- [yourluckyday3-art/CVE-2025-13027-Exploit](https://github.com/yourluckyday3-art/CVE-2025-13027-Exploit)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -2161,6 +2153,13 @@
 </code>
 
 - [skadevare/CiscoISE-CVE-2025-20282-POC](https://github.com/skadevare/CiscoISE-CVE-2025-20282-POC)
+
+### CVE-2025-20337 (2025-07-16)
+
+<code>A vulnerability in a specific API of Cisco ISE and Cisco ISE-PIC could allow an unauthenticated, remote attacker to execute arbitrary code on the underlying operating system as root. The attacker does not require any valid credentials to exploit this vulnerability.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by submitting a crafted API request. A successful exploit could allow the attacker to obtain root privileges on an affected device.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-20337](https://github.com/B1ack4sh/Blackash-CVE-2025-20337)
 
 ### CVE-2025-20343 (2025-11-05)
 
@@ -3268,6 +3267,7 @@
 </code>
 
 - [mrk336/CVE-2025-26686-The-TCP-IP-Flaw-That-Opens-the-Gates](https://github.com/mrk336/CVE-2025-26686-The-TCP-IP-Flaw-That-Opens-the-Gates)
+- [alifaraj5723/CVE-2025-26686-poc](https://github.com/alifaraj5723/CVE-2025-26686-poc)
 
 ### CVE-2025-26788 (2025-02-14)
 
@@ -3429,6 +3429,7 @@
 - [danil-koltsov/below-log-race-poc](https://github.com/danil-koltsov/below-log-race-poc)
 - [HOEUN-Visai/CVE-2025-27591-below-](https://github.com/HOEUN-Visai/CVE-2025-27591-below-)
 - [krn966/CVE-2025-27591](https://github.com/krn966/CVE-2025-27591)
+- [0xDTC/Below-Logger-Symlink-Attack_CVE-2025-27591](https://github.com/0xDTC/Below-Logger-Symlink-Attack_CVE-2025-27591)
 
 ### CVE-2025-27607 (2025-03-07)
 
@@ -4590,7 +4591,7 @@
 
 ### CVE-2025-34226 (2025-10-03)
 
-<code>OpenPLC Runtime v3 contains an input validation flaw in the /upload-program-action endpoint: the epoch_time field supplied during program uploads is not validated and can be crafted to induce corruption of the programs database. After a successful malformed upload the runtime continues to operate until a restart; on restart the runtime can fail to start because of corrupted database entries, resulting in persistent denial of service requiring complete rebase of the product to recover. This vulnerability was remediated by commit 095ee09623dd229b64ad3a1db38a901a3772f6fc.
+<code>OpenPLC Runtime v3 contains an input validation flaw in the /upload-program-action endpoint: the epoch_time field supplied during program uploads is not validated and can be crafted to induce corruption of the programs database. After a successful malformed upload the runtime continues to operate until a restart; on restart the runtime can fail to start because of corrupted database entries, resulting in persistent denial of service requiring complete rebase of the product to recover. This vulnerability was remediated by commit 095ee09.
 </code>
 
 - [Eyodav/CVE-2025-34226](https://github.com/Eyodav/CVE-2025-34226)
@@ -4601,6 +4602,7 @@
 </code>
 
 - [rxerium/CVE-2025-34299](https://github.com/rxerium/CVE-2025-34299)
+- [B1ack4sh/Blackash-CVE-2025-34299](https://github.com/B1ack4sh/Blackash-CVE-2025-34299)
 
 ### CVE-2025-34300 (2025-07-16)
 
@@ -4737,6 +4739,13 @@
 </code>
 
 - [farazsth98/exploit-CVE-2025-39946](https://github.com/farazsth98/exploit-CVE-2025-39946)
+
+### CVE-2025-39964 (2025-10-13)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: af_alg - Disallow concurrent writes in af_alg_sendmsg\n\nIssuing two writes to the same af_alg socket is bogus as the\ndata will be interleaved in an unpredictable fashion.  Furthermore,\nconcurrent writes may create inconsistencies in the internal\nsocket state.\n\nDisallow this by adding a new ctx-&gt;write field that indiciates\nexclusive ownership for writing.
+</code>
+
+- [n1k0oowang/CVE-2025-39964_EXP](https://github.com/n1k0oowang/CVE-2025-39964_EXP)
 
 ### CVE-2025-39965 (2025-10-13)
 
@@ -7180,6 +7189,13 @@
 
 - [quetuan03/CVE-2025-58789](https://github.com/quetuan03/CVE-2025-58789)
 
+### CVE-2025-59118 (2025-11-12)
+
+<code>Unrestricted Upload of File with Dangerous Type vulnerability in Apache OFBiz.\n\nThis issue affects Apache OFBiz: before 24.09.03.\n\nUsers are recommended to upgrade to version 24.09.03, which fixes the issue.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-59118](https://github.com/B1ack4sh/Blackash-CVE-2025-59118)
+
 ### CVE-2025-59230 (2025-10-14)
 
 <code>Improper access control in Windows Remote Access Connection Manager allows an authorized attacker to elevate privileges locally.
@@ -7364,14 +7380,7 @@
 <code>Improper link resolution before file access ('link following') in Host Process for Windows Tasks allows an authorized attacker to elevate privileges locally.
 </code>
 
-- [Wh04m1001/CVE-2025-60710](https://github.com/Wh04m1001/CVE-2025-60710)
-
-### CVE-2025-60724 (2025-11-11)
-
-<code>Heap-based buffer overflow in Microsoft Graphics Component allows an unauthorized attacker to execute code over a network.
-</code>
-
-- [Iomarlto/CVE-2025-60724](https://github.com/Iomarlto/CVE-2025-60724)
+- [mitjakolsek/CVE-2025-60710](https://github.com/mitjakolsek/CVE-2025-60710)
 
 ### CVE-2025-60736
 - [WinDyAlphA/CVE-2025-60736](https://github.com/WinDyAlphA/CVE-2025-60736)
@@ -7550,13 +7559,6 @@
 
 - [captaincookie34/Vulnerability-Playground-CVE-2025-61922](https://github.com/captaincookie34/Vulnerability-Playground-CVE-2025-61922)
 
-### CVE-2025-61932 (2025-10-20)
-
-<code>Lanscope Endpoint Manager (On-Premises) (Client program (MR) and Detection agent (DA)) improperly verifies the origin of incoming requests, allowing an attacker to execute arbitrary code by sending specially crafted packets.
-</code>
-
-- [godfatherofexps/CVE-2025-61932-PoC](https://github.com/godfatherofexps/CVE-2025-61932-PoC)
-
 ### CVE-2025-61984 (2025-10-06)
 
 <code>ssh in OpenSSH before 10.1 allows control characters in usernames that originate from certain possibly untrusted sources, potentially leading to code execution when a ProxyCommand is used. The untrusted sources are the command line and %-sequence expansion of a configuration file. (A configuration file that provides a complete literal username is not categorized as an untrusted source.)
@@ -7572,13 +7574,6 @@
 
 - [monzaviman/CVE-2025-62168](https://github.com/monzaviman/CVE-2025-62168)
 - [shahroodcert/CVE-2025-62168](https://github.com/shahroodcert/CVE-2025-62168)
-
-### CVE-2025-62215 (2025-11-11)
-
-<code>Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Kernel allows an authorized attacker to elevate privileges locally.
-</code>
-
-- [fordeant/CVE-2025-62215](https://github.com/fordeant/CVE-2025-62215)
 
 ### CVE-2025-62376 (2025-10-14)
 
@@ -7725,19 +7720,15 @@
 ### CVE-2025-63830
 - [Shubham03007/CVE-2025-63830](https://github.com/Shubham03007/CVE-2025-63830)
 
+### CVE-2025-63892
+- [minhajultaivin/security-advisories](https://github.com/minhajultaivin/security-advisories)
+
 ### CVE-2025-64095 (2025-10-28)
 
 <code>DNN (formerly DotNetNuke) is an open-source web content management platform (CMS) in the Microsoft ecosystem. Prior to 10.1.1, the default HTML editor provider allows unauthenticated file uploads and images can overwrite existing files. An unauthenticated user can upload and replace existing files allowing defacing a website and combined with other issue, injection XSS payloads. This vulnerability is fixed in 10.1.1.
 </code>
 
 - [h4x0r-dz/CVE-2025-64095---DNN-Unauthenticated-arbitrary-file-upload](https://github.com/h4x0r-dz/CVE-2025-64095---DNN-Unauthenticated-arbitrary-file-upload)
-
-### CVE-2025-64403 (2025-11-12)
-
-<code>Apache OpenOffice Calc spreadsheet can contain links to other files, in the form of &quot;external data sources&quot;. A missing Authorization vulnerability in Apache OpenOffice allowed an attacker to craft a document that would cause such links \nto be loaded without prompt.\n\nThis issue affects Apache OpenOffice: through 4.1.15.\n\nUsers are recommended to upgrade to version 4.1.16, which fixes the issue.
-</code>
-
-- [makaroonbourne/CVE-2025-64403-Exploit](https://github.com/makaroonbourne/CVE-2025-64403-Exploit)
 
 ### CVE-2025-64458 (2025-11-05)
 
@@ -7761,6 +7752,20 @@
 
 - [AlphabugX/CVE-2025-64495-POC](https://github.com/AlphabugX/CVE-2025-64495-POC)
 - [B1ack4sh/Blackash-CVE-2025-64495](https://github.com/B1ack4sh/Blackash-CVE-2025-64495)
+
+### CVE-2025-64500 (2025-11-12)
+
+<code>Symfony is a PHP framework for web and console applications and a set of reusable PHP components. Symfony's HttpFoundation component defines an object-oriented layer for the HTTP specification. Starting in version 2.0.0 and prior to version 5.4.50, 6.4.29, and 7.3.7, the `Request` class improperly interprets some `PATH_INFO` in a way that leads to representing some URLs with a path that doesn't start with a `/`. This can allow bypassing some access control rules that are built with this `/`-prefix assumption. Starting in versions 5.4.50, 6.4.29, and 7.3.7, the `Request` class now ensures that URL paths always start with a `/`.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-64500](https://github.com/B1ack4sh/Blackash-CVE-2025-64500)
+
+### CVE-2025-64513 (2025-11-10)
+
+<code>Milvus is an open-source vector database built for generative AI applications. An unauthenticated attacker can exploit a vulnerability in versions prior to 2.4.24, 2.5.21, and 2.6.5 to bypass all authentication mechanisms in the Milvus Proxy component, gaining full administrative access to the Milvus cluster. This grants the attacker the ability to read, modify, or delete data, and to perform privileged administrative operations such as database or collection management. This issue has been fixed in Milvus 2.4.24, 2.5.21, and 2.6.5. If immediate upgrade is not possible, a temporary mitigation can be applied by removing the sourceID header from all incoming requests at the gateway, API gateway, or load balancer level before they reach the Milvus Proxy. This prevents attackers from exploiting the authentication bypass behavior.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-64513](https://github.com/B1ack4sh/Blackash-CVE-2025-64513)
 
 ### CVE-2025-64708
 - [DylanDavis1/CVE-2025-64708](https://github.com/DylanDavis1/CVE-2025-64708)
@@ -35239,6 +35244,13 @@
 
 - [tamirzb/CVE-2021-1961](https://github.com/tamirzb/CVE-2021-1961)
 
+### CVE-2021-1965 (2021-07-13)
+
+<code>Possible buffer overflow due to lack of parameter length check during MBSSID scan IE parse in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Mobile, Snapdragon Wired Infrastructure and Networking
+</code>
+
+- [foxtrot/CVE-2021-1965](https://github.com/foxtrot/CVE-2021-1965)
+
 ### CVE-2021-1994 (2021-01-20)
 
 <code>Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Web Services). Supported versions that are affected are 10.3.6.0.0 and 12.1.3.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebLogic Server. Successful attacks of this vulnerability can result in takeover of Oracle WebLogic Server. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
@@ -40951,7 +40963,6 @@
 - [moften/Log4Shell](https://github.com/moften/Log4Shell)
 - [KamalideenAK/Microsoft-Defender-for-Endpoint-Deployment-on-Windows-10-11-device](https://github.com/KamalideenAK/Microsoft-Defender-for-Endpoint-Deployment-on-Windows-10-11-device)
 - [arabindadora/log4shell](https://github.com/arabindadora/log4shell)
-- [d4ngkh04w/CVE-2021-44228-Apache-Log4j2](https://github.com/d4ngkh04w/CVE-2021-44228-Apache-Log4j2)
 - [Mintimate/log4j2-bugmaker](https://github.com/Mintimate/log4j2-bugmaker)
 - [B1ack4sh/Blackash-CVE-2021-44228](https://github.com/B1ack4sh/Blackash-CVE-2021-44228)
 
@@ -51592,7 +51603,7 @@
 </code>
 
 - [mgargiullo/cve-2018-1207](https://github.com/mgargiullo/cve-2018-1207)
-- [SYNKTeam/CVE-2018-1207](https://github.com/SYNKTeam/CVE-2018-1207)
+- [hironull/CVE-2018-1207-better](https://github.com/hironull/CVE-2018-1207-better)
 
 ### CVE-2018-1235 (2018-05-29)
 
@@ -52313,6 +52324,7 @@
 - [vineetkia/Wordpress-DOS-Attack-CVE-2018-6389](https://github.com/vineetkia/Wordpress-DOS-Attack-CVE-2018-6389)
 - [ianxtianxt/CVE-2018-6389](https://github.com/ianxtianxt/CVE-2018-6389)
 - [amit-pathak009/CVE-2018-6389-FIX](https://github.com/amit-pathak009/CVE-2018-6389-FIX)
+- [omidsec/CVE-2018-6389](https://github.com/omidsec/CVE-2018-6389)
 
 ### CVE-2018-6396 (2018-02-17)
 
