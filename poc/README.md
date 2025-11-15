@@ -27465,7 +27465,7 @@
 <code>There is a vulnerability in DHCPv6 packet parsing code that could be explored by remote attacker to craft a packet that could cause buffer overflow in a memcpy call, leading to out-of-bounds memory write that would cause dhcp6relay to crash. Dhcp6relay is a critical process and could cause dhcp relay docker to shutdown.\n\nDiscovered by Eugene Lim of GovTech Singapore.\n
 </code>
 
-- [ngtuonghung/cve-2022-0324](https://github.com/ngtuonghung/cve-2022-0324)
+- [ngtuonghung/CVE-2022-0324](https://github.com/ngtuonghung/CVE-2022-0324)
 
 ### CVE-2022-0332 (2022-01-25)
 
