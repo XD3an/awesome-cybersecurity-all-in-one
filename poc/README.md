@@ -2196,6 +2196,13 @@
 
 - [B1ack4sh/Blackash-CVE-2025-21042](https://github.com/B1ack4sh/Blackash-CVE-2025-21042)
 
+### CVE-2025-21202 (2025-01-14)
+
+<code>Windows Recovery Environment Agent Elevation of Privilege Vulnerability
+</code>
+
+- [7amzahard/CVE-2025-21202-exploit](https://github.com/7amzahard/CVE-2025-21202-exploit)
+
 ### CVE-2025-21204 (2025-04-08)
 
 <code>Improper link resolution before file access ('link following') in Windows Update Stack allows an authorized attacker to elevate privileges locally.
@@ -4512,6 +4519,7 @@
 - [matejsmycka/CVE-2025-33073-checker](https://github.com/matejsmycka/CVE-2025-33073-checker)
 - [cve-2025-33073/cve-2025-33073](https://github.com/cve-2025-33073/cve-2025-33073)
 - [SellMeFish/windows-smb-vulnerability-framework-cve-2025-33073](https://github.com/SellMeFish/windows-smb-vulnerability-framework-cve-2025-33073)
+- [uziii2208/CVE-2025-33073](https://github.com/uziii2208/CVE-2025-33073)
 
 ### CVE-2025-34028 (2025-04-22)
 
@@ -6923,6 +6931,9 @@
 ### CVE-2025-56521
 - [Dong-hui-li/CVE-2025-56521andCVE-2025-56522](https://github.com/Dong-hui-li/CVE-2025-56521andCVE-2025-56522)
 
+### CVE-2025-56526
+- [HanTul/Kotaemon-CVE-2025-56526-56527-disclosure](https://github.com/HanTul/Kotaemon-CVE-2025-56526-56527-disclosure)
+
 ### CVE-2025-56605
 - [Userr404/CVE-2025-56605](https://github.com/Userr404/CVE-2025-56605)
 
@@ -7207,13 +7218,6 @@
 
 - [B1ack4sh/Blackash-CVE-2025-59118](https://github.com/B1ack4sh/Blackash-CVE-2025-59118)
 
-### CVE-2025-59230 (2025-10-14)
-
-<code>Improper access control in Windows Remote Access Connection Manager allows an authorized attacker to elevate privileges locally.
-</code>
-
-- [stalker110119/CVE-2025-59230](https://github.com/stalker110119/CVE-2025-59230)
-
 ### CVE-2025-59253 (2025-10-14)
 
 <code>Improper access control in Microsoft Windows Search Component allows an authorized attacker to deny service locally.
@@ -7243,6 +7247,7 @@
 - [QurtiDev/WSUS-CVE-2025-59287-RCE](https://github.com/QurtiDev/WSUS-CVE-2025-59287-RCE)
 - [dexterm300/cve-2025-59287-exploit-poc](https://github.com/dexterm300/cve-2025-59287-exploit-poc)
 - [th1n0/CVE-2025-59287](https://github.com/th1n0/CVE-2025-59287)
+- [Twodimensionalitylevelcrossing817/CVE-2025-59287](https://github.com/Twodimensionalitylevelcrossing817/CVE-2025-59287)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -7257,6 +7262,13 @@
 </code>
 
 - [mrk336/Cluster-Chaos-Exploiting-CVE-2025-59359-for-Kubernetes-Takeover](https://github.com/mrk336/Cluster-Chaos-Exploiting-CVE-2025-59359-for-Kubernetes-Takeover)
+
+### CVE-2025-59367 (2025-11-13)
+
+<code>An authentication bypass vulnerability has been identified in certain DSL series routers, may allow remote attackers to gain unauthorized access into the affected system. Refer to the 'Security Update for DSL Series Router' section on the ASUS Security Advisory for more information.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-59367](https://github.com/B1ack4sh/Blackash-CVE-2025-59367)
 
 ### CVE-2025-59376 (2025-09-15)
 
@@ -7391,7 +7403,14 @@
 <code>Improper link resolution before file access ('link following') in Host Process for Windows Tasks allows an authorized attacker to elevate privileges locally.
 </code>
 
-- [mitjakolsek/CVE-2025-60710](https://github.com/mitjakolsek/CVE-2025-60710)
+- [redpack-kr/CVE-2025-60710](https://github.com/redpack-kr/CVE-2025-60710)
+
+### CVE-2025-60724 (2025-11-11)
+
+<code>Heap-based buffer overflow in Microsoft Graphics Component allows an unauthorized attacker to execute code over a network.
+</code>
+
+- [callinston/CVE-2025-60724](https://github.com/callinston/CVE-2025-60724)
 
 ### CVE-2025-60736
 - [WinDyAlphA/CVE-2025-60736](https://github.com/WinDyAlphA/CVE-2025-60736)
@@ -7738,11 +7757,18 @@
 
 - [Remenis/CVE-2025-63667](https://github.com/Remenis/CVE-2025-63667)
 
-### CVE-2025-63830
+### CVE-2025-63830 (2025-11-14)
+
+<code>CKFinder 1.4.3 is vulnerable to Cross Site Scripting (XSS) in the File Upload function. An attacker can upload a crafted SVG containing active content.
+</code>
+
 - [Shubham03007/CVE-2025-63830](https://github.com/Shubham03007/CVE-2025-63830)
 
 ### CVE-2025-63892
 - [minhajultaivin/security-advisories](https://github.com/minhajultaivin/security-advisories)
+
+### CVE-2025-63943
+- [RedOpsX/CVE-2025-63943](https://github.com/RedOpsX/CVE-2025-63943)
 
 ### CVE-2025-64095 (2025-10-28)
 
@@ -7750,6 +7776,14 @@
 </code>
 
 - [h4x0r-dz/CVE-2025-64095---DNN-Unauthenticated-arbitrary-file-upload](https://github.com/h4x0r-dz/CVE-2025-64095---DNN-Unauthenticated-arbitrary-file-upload)
+
+### CVE-2025-64446 (2025-11-14)
+
+<code>A relative path traversal vulnerability in Fortinet FortiWeb 8.0.0 through 8.0.1, FortiWeb 7.6.0 through 7.6.4, FortiWeb 7.4.0 through 7.4.9, FortiWeb 7.2.0 through 7.2.11, FortiWeb 7.0.0 through 7.0.11 may allow an attacker to execute administrative commands on the system via crafted HTTP or HTTPS requests.
+</code>
+
+- [fevar54/CVE-2025-64446-PoC---FortiWeb-Path-Traversal](https://github.com/fevar54/CVE-2025-64446-PoC---FortiWeb-Path-Traversal)
+- [sxyrxyy/CVE-2025-64446-FortiWeb-CGI-Bypass-PoC](https://github.com/sxyrxyy/CVE-2025-64446-FortiWeb-CGI-Bypass-PoC)
 
 ### CVE-2025-64458 (2025-11-05)
 
@@ -7787,6 +7821,7 @@
 </code>
 
 - [B1ack4sh/Blackash-CVE-2025-64513](https://github.com/B1ack4sh/Blackash-CVE-2025-64513)
+- [shinyseam/CVE-2025-64513](https://github.com/shinyseam/CVE-2025-64513)
 
 ### CVE-2025-64708
 - [DylanDavis1/CVE-2025-64708](https://github.com/DylanDavis1/CVE-2025-64708)
@@ -11444,7 +11479,6 @@
 - [Chocapikk/CVE-2024-21887](https://github.com/Chocapikk/CVE-2024-21887)
 - [raminkarimkhani1996/CVE-2023-46805_CVE-2024-21887](https://github.com/raminkarimkhani1996/CVE-2023-46805_CVE-2024-21887)
 - [seajaysec/Ivanti-Connect-Around-Scan](https://github.com/seajaysec/Ivanti-Connect-Around-Scan)
-- [mickdec/CVE-2023-46805_CVE-2024-21887_scan_grouped](https://github.com/mickdec/CVE-2023-46805_CVE-2024-21887_scan_grouped)
 - [tucommenceapousser/CVE-2024-21887](https://github.com/tucommenceapousser/CVE-2024-21887)
 - [rxwx/pulse-meter](https://github.com/rxwx/pulse-meter)
 - [Hexastrike/Ivanti-Connect-Secure-Logs-Parser](https://github.com/Hexastrike/Ivanti-Connect-Secure-Logs-Parser)
@@ -23539,6 +23573,13 @@
 
 - [tin-z/CVE-2023-35086-POC](https://github.com/tin-z/CVE-2023-35086-POC)
 
+### CVE-2023-35317 (2023-07-11)
+
+<code>Windows Server Update Service (WSUS) Elevation of Privilege Vulnerability
+</code>
+
+- [M507/CVE-2023-35317-PoC](https://github.com/M507/CVE-2023-35317-PoC)
+
 ### CVE-2023-35636 (2023-12-12)
 
 <code>Microsoft Outlook Information Disclosure Vulnerability
@@ -26265,7 +26306,6 @@
 - [raminkarimkhani1996/CVE-2023-46805_CVE-2024-21887](https://github.com/raminkarimkhani1996/CVE-2023-46805_CVE-2024-21887)
 - [seajaysec/Ivanti-Connect-Around-Scan](https://github.com/seajaysec/Ivanti-Connect-Around-Scan)
 - [Chocapikk/CVE-2023-46805](https://github.com/Chocapikk/CVE-2023-46805)
-- [mickdec/CVE-2023-46805_CVE-2024-21887_scan_grouped](https://github.com/mickdec/CVE-2023-46805_CVE-2024-21887_scan_grouped)
 - [w2xim3/CVE-2023-46805](https://github.com/w2xim3/CVE-2023-46805)
 - [rxwx/pulse-meter](https://github.com/rxwx/pulse-meter)
 - [Hexastrike/Ivanti-Connect-Secure-Logs-Parser](https://github.com/Hexastrike/Ivanti-Connect-Secure-Logs-Parser)
@@ -29495,6 +29535,7 @@
 - [salo-404/firewall](https://github.com/salo-404/firewall)
 - [shoucheng3/spring-projects__spring-framework_CVE-2022-22965_5-2-19-RELEASE](https://github.com/shoucheng3/spring-projects__spring-framework_CVE-2022-22965_5-2-19-RELEASE)
 - [NickoPS87/Spring4Shell-Python-Firewall-POC](https://github.com/NickoPS87/Spring4Shell-Python-Firewall-POC)
+- [xenosf/CS4239-Spring4Shell-POC](https://github.com/xenosf/CS4239-Spring4Shell-POC)
 
 ### CVE-2022-22966 (2022-04-14)
 
@@ -35548,13 +35589,6 @@
 </code>
 
 - [kaisersource/CVE-2021-3166](https://github.com/kaisersource/CVE-2021-3166)
-
-### CVE-2021-3229 (2021-02-05)
-
-<code>Denial of service in ASUSWRT ASUS RT-AX3000 firmware versions 3.0.0.4.384_10177 and earlier versions allows an attacker to disrupt the use of device setup services via continuous login error.
-</code>
-
-- [fullbbadda1208/CVE-2021-3229](https://github.com/fullbbadda1208/CVE-2021-3229)
 
 ### CVE-2021-3279 (2021-07-19)
 
@@ -59028,7 +59062,7 @@
 <code>OpenSSH through 8.7 allows remote attackers, who have a suspicion that a certain combination of username and public key is known to an SSH server, to test whether this suspicion is correct. This occurs because a challenge is sent only when that combination could be valid for a login session. NOTE: the vendor does not recognize user enumeration as a vulnerability for this product
 </code>
 
-- [aztec-eagle/cve-2016-20012](https://github.com/aztec-eagle/cve-2016-20012)
+- [arturo-b-cmu/cve-2016-20012](https://github.com/arturo-b-cmu/cve-2016-20012)
 
 ### CVE-2016-1000027 (2020-01-02)
 
