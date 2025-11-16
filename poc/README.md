@@ -872,6 +872,7 @@
 - [speinador/CVE-2025-4664](https://github.com/speinador/CVE-2025-4664)
 - [Leviticus-Triage/ChromSploit-Framework](https://github.com/Leviticus-Triage/ChromSploit-Framework)
 - [amalmurali47/cve-2025-4664](https://github.com/amalmurali47/cve-2025-4664)
+- [mingijunggrape/CVE-2025-4664](https://github.com/mingijunggrape/CVE-2025-4664)
 
 ### CVE-2025-4686
 - [sahici/CVE-2025-4686](https://github.com/sahici/CVE-2025-4686)
@@ -2062,6 +2063,7 @@
 </code>
 
 - [6h4ack/CVE-2025-12101-checker](https://github.com/6h4ack/CVE-2025-12101-checker)
+- [boneys/CVE-2025-12101-Scanner-PoC](https://github.com/boneys/CVE-2025-12101-Scanner-PoC)
 
 ### CVE-2025-12399 (2025-11-08)
 
@@ -4520,6 +4522,7 @@
 - [cve-2025-33073/cve-2025-33073](https://github.com/cve-2025-33073/cve-2025-33073)
 - [SellMeFish/windows-smb-vulnerability-framework-cve-2025-33073](https://github.com/SellMeFish/windows-smb-vulnerability-framework-cve-2025-33073)
 - [uziii2208/CVE-2025-33073](https://github.com/uziii2208/CVE-2025-33073)
+- [B1ack4sh/Blackash-CVE-2025-33073](https://github.com/B1ack4sh/Blackash-CVE-2025-33073)
 
 ### CVE-2025-34028 (2025-04-22)
 
@@ -4610,6 +4613,13 @@
 </code>
 
 - [Eyodav/CVE-2025-34226](https://github.com/Eyodav/CVE-2025-34226)
+
+### CVE-2025-34227 (2025-09-25)
+
+<code>Nagios XI &lt; 2026R1 is vulnerable to an authenticated command injection vulnerability within the MongoDB Database, MySQL Query, MySQL Server, Postgres Server, and Postgres Query wizards. It is possible to inject shell characters into arguments provided to the service and execute arbitrary system commands on the underlying host as the `nagios` user.
+</code>
+
+- [mcorybillington/CVE-2025-34227_Nagios-XI-Command-Injection-Configuration-Wizard](https://github.com/mcorybillington/CVE-2025-34227_Nagios-XI-Command-Injection-Configuration-Wizard)
 
 ### CVE-2025-34299 (2025-11-07)
 
@@ -5478,6 +5488,9 @@
 </code>
 
 - [shipcod3/CVE-2025-48466](https://github.com/shipcod3/CVE-2025-48466)
+
+### CVE-2025-48507
+- [jdbonfils/PoC_CVE-2025-48507](https://github.com/jdbonfils/PoC_CVE-2025-48507)
 
 ### CVE-2025-48543 (2025-09-04)
 
@@ -7612,6 +7625,13 @@
 
 - [dexterm300/CVE-2025-62215-exploit-poc](https://github.com/dexterm300/CVE-2025-62215-exploit-poc)
 
+### CVE-2025-62369 (2025-11-04)
+
+<code>Xibo is an open source digital signage platform with a web content management system (CMS). Versions 4.3.0 and below contain a Remote Code Execution vulnerability in the CMS Developer menu's Module Templating functionality, allowing authenticated users with &quot;System -&gt; Add/Edit custom modules and templates&quot; permissions to manipulate Twig filters and execute arbitrary server-side functions as the web server user. This issue is fixed in version 4.3.1. To workaround this issue, use the 4.1 and 4.2 patch commits.
+</code>
+
+- [cristibtz/CVE-2025-62369](https://github.com/cristibtz/CVE-2025-62369)
+
 ### CVE-2025-62376 (2025-10-14)
 
 <code>pwn.college DOJO is an education platform for learning cybersecurity. In versions up to and including commit 781d91157cfc234a434d0bab45cbcf97894c642e, the /workspace endpoint contains an improper authentication vulnerability that allows an attacker to access any active Windows VM without proper authorization. The vulnerability occurs in the view_desktop function where the user is retrieved via a URL parameter without verifying that the requester has administrative privileges. An attacker can supply any user ID and arbitrary password in the request parameters to impersonate another user. When requesting a Windows desktop service, the function does not validate the supplied password before generating access credentials, allowing the attacker to obtain an iframe source URL that grants full access to the target user's Windows VM. This impacts all users with active Windows VMs, as an attacker can access and modify data on the Windows machine and in the home directory of the associated Linux machine via the Z: drive. This issue has been patched in commit 467db0b9ea0d9a929dc89b41f6eb59f7cfc68bef. No known workarounds exist.
@@ -7639,6 +7659,13 @@
 </code>
 
 - [yoshino-s/CVE-2025-62506](https://github.com/yoshino-s/CVE-2025-62506)
+
+### CVE-2025-62507 (2025-11-04)
+
+<code>Redis is an open source, in-memory database that persists on disk. In versions 8.2.0 and above, a user can run the XACKDEL command with multiple ID's and trigger a stack buffer overflow, which may potentially lead to remote code execution. This issue is fixed in version 8.2.3. To workaround this issue without patching the redis-server executable is to prevent users from executing XACKDEL operation. This can be done using ACL to restrict XACKDEL command.
+</code>
+
+- [Network-Sec/CVE-2025-62507-Buffer-Overflow_PoC](https://github.com/Network-Sec/CVE-2025-62507-Buffer-Overflow_PoC)
 
 ### CVE-2025-62518 (2025-10-21)
 
@@ -7777,6 +7804,13 @@
 
 - [h4x0r-dz/CVE-2025-64095---DNN-Unauthenticated-arbitrary-file-upload](https://github.com/h4x0r-dz/CVE-2025-64095---DNN-Unauthenticated-arbitrary-file-upload)
 
+### CVE-2025-64328 (2025-11-07)
+
+<code>FreePBX Endpoint Manager is a module for managing telephony endpoints in FreePBX systems. In versions 17.0.2.36 and above before 17.0.3, the filestore module within the Administrative interface is vulnerable to a post-authentication command injection by an authenticated known user via the testconnection -&gt; check_ssh_connect() function. An attacker can leverage this vulnerability to obtain remote access to the system as an asterisk user. This issue is fixed in version 17.0.3.
+</code>
+
+- [mcorybillington/CVE-2025-64328_FreePBX-framework-Command-Injection](https://github.com/mcorybillington/CVE-2025-64328_FreePBX-framework-Command-Injection)
+
 ### CVE-2025-64446 (2025-11-14)
 
 <code>A relative path traversal vulnerability in Fortinet FortiWeb 8.0.0 through 8.0.1, FortiWeb 7.6.0 through 7.6.4, FortiWeb 7.4.0 through 7.4.9, FortiWeb 7.2.0 through 7.2.11, FortiWeb 7.0.0 through 7.0.11 may allow an attacker to execute administrative commands on the system via crafted HTTP or HTTPS requests.
@@ -7784,6 +7818,8 @@
 
 - [fevar54/CVE-2025-64446-PoC---FortiWeb-Path-Traversal](https://github.com/fevar54/CVE-2025-64446-PoC---FortiWeb-Path-Traversal)
 - [sxyrxyy/CVE-2025-64446-FortiWeb-CGI-Bypass-PoC](https://github.com/sxyrxyy/CVE-2025-64446-FortiWeb-CGI-Bypass-PoC)
+- [B1ack4sh/Blackash-CVE-2025-64446](https://github.com/B1ack4sh/Blackash-CVE-2025-64446)
+- [soltanali0/CVE-2025-64446-Exploit](https://github.com/soltanali0/CVE-2025-64446-Exploit)
 
 ### CVE-2025-64458 (2025-11-05)
 
@@ -8112,6 +8148,13 @@
 </code>
 
 - [kodaichodai/CVE-2024-0624](https://github.com/kodaichodai/CVE-2024-0624)
+
+### CVE-2024-0670 (2024-03-11)
+
+<code>Privilege escalation in windows agent plugin in Checkmk before 2.2.0p23, 2.1.0p40 and 2.0.0 (EOL) allows local user to escalate privileges
+</code>
+
+- [zhulin837/checkmk_cve-2024-0670](https://github.com/zhulin837/checkmk_cve-2024-0670)
 
 ### CVE-2024-0679 (2024-01-20)
 
@@ -23573,13 +23616,6 @@
 
 - [tin-z/CVE-2023-35086-POC](https://github.com/tin-z/CVE-2023-35086-POC)
 
-### CVE-2023-35317 (2023-07-11)
-
-<code>Windows Server Update Service (WSUS) Elevation of Privilege Vulnerability
-</code>
-
-- [M507/CVE-2023-35317-PoC](https://github.com/M507/CVE-2023-35317-PoC)
-
 ### CVE-2023-35636 (2023-12-12)
 
 <code>Microsoft Outlook Information Disclosure Vulnerability
@@ -26259,6 +26295,7 @@
 - [skrkcb2/CVE-2023-46604](https://github.com/skrkcb2/CVE-2023-46604)
 - [CCIEVoice2009/CVE-2023-46604](https://github.com/CCIEVoice2009/CVE-2023-46604)
 - [vaishnavucv/Project-Vuln-Detection-N-Mitigation_101](https://github.com/vaishnavucv/Project-Vuln-Detection-N-Mitigation_101)
+- [pavanaa4k/CVE-2023-46604-LAB](https://github.com/pavanaa4k/CVE-2023-46604-LAB)
 
 ### CVE-2023-46615 (2024-02-12)
 
@@ -48766,6 +48803,7 @@
 - [Slayerma/-CVE-2019-9053](https://github.com/Slayerma/-CVE-2019-9053)
 - [CaelumIsMe/CVE-2019-9053-POC](https://github.com/CaelumIsMe/CVE-2019-9053-POC)
 - [6iroc/CVE-2019-9053](https://github.com/6iroc/CVE-2019-9053)
+- [JagdeepSinghCeh/cms-made-simple-python3](https://github.com/JagdeepSinghCeh/cms-made-simple-python3)
 
 ### CVE-2019-9081
 - [nth347/CVE-2019-9081_PoC](https://github.com/nth347/CVE-2019-9081_PoC)
