@@ -4416,6 +4416,7 @@
 - [muhammedkayag/CVE-2025-32463](https://github.com/muhammedkayag/CVE-2025-32463)
 - [NewComrade12211/CVE-2025-32463](https://github.com/NewComrade12211/CVE-2025-32463)
 - [Ghstxz/CVE-2025-32463](https://github.com/Ghstxz/CVE-2025-32463)
+- [ankitpandey383/CVE-2025-32463-Sudo-Privilege-Escalation](https://github.com/ankitpandey383/CVE-2025-32463-Sudo-Privilege-Escalation)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -7465,6 +7466,9 @@
 </code>
 
 - [valeriocassoni/CSV-Injection-in-Instant-Developer-Foundation-25.0-PoC](https://github.com/valeriocassoni/CSV-Injection-in-Instant-Developer-Foundation-25.0-PoC)
+
+### CVE-2025-60854
+- [K0n9-log/CVE-2025-60854](https://github.com/K0n9-log/CVE-2025-60854)
 
 ### CVE-2025-60880 (2025-10-10)
 
