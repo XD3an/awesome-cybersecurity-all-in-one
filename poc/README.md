@@ -5644,6 +5644,7 @@
 - [LeakForge/CVE-2025-49113](https://github.com/LeakForge/CVE-2025-49113)
 - [Zuack55/Roundcube-1.6.10-Post-Auth-RCE-CVE-2025-49113-](https://github.com/Zuack55/Roundcube-1.6.10-Post-Auth-RCE-CVE-2025-49113-)
 - [l4f2s4/CVE-2025-49113_exploit_cookies](https://github.com/l4f2s4/CVE-2025-49113_exploit_cookies)
+- [ankitpandey383/roundcube-cve-2025-49113-lab](https://github.com/ankitpandey383/roundcube-cve-2025-49113-lab)
 
 ### CVE-2025-49125 (2025-06-16)
 
@@ -7365,6 +7366,13 @@
 </code>
 
 - [suriryuk/cve-2025-59934](https://github.com/suriryuk/cve-2025-59934)
+
+### CVE-2025-60013 (2025-10-15)
+
+<code>When a user attempts to initialize the rSeries FIPS module using a password with special shell metacharacters, the FIPS hardware security module (HSM) may fail to initialize.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
+</code>
+
+- [demining/Scalar-Venom-Attack](https://github.com/demining/Scalar-Venom-Attack)
 
 ### CVE-2025-60349 (2025-10-28)
 
@@ -29046,6 +29054,7 @@
 - [rockmelodies/Oracle-E-BS-CVE-2022-21587-Exploit](https://github.com/rockmelodies/Oracle-E-BS-CVE-2022-21587-Exploit)
 - [sahabrifki/CVE-2022-21587-Oracle-EBS-](https://github.com/sahabrifki/CVE-2022-21587-Oracle-EBS-)
 - [B1ack4sh/Blackash-CVE-2022-21587](https://github.com/B1ack4sh/Blackash-CVE-2022-21587)
+- [merlyn-1/CVE-2022-21587-Oracle-EBS](https://github.com/merlyn-1/CVE-2022-21587-Oracle-EBS)
 
 ### CVE-2022-21658 (2022-01-20)
 
@@ -33264,7 +33273,6 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
