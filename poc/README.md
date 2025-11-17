@@ -1078,6 +1078,7 @@
 - [soltanali0/CVE-2025-5777-Exploit](https://github.com/soltanali0/CVE-2025-5777-Exploit)
 - [rootxsushant/Citrix-NetScaler-Memory-Leak-CVE-2025-5777](https://github.com/rootxsushant/Citrix-NetScaler-Memory-Leak-CVE-2025-5777)
 - [ndr-repo/CVE-2025-5777](https://github.com/ndr-repo/CVE-2025-5777)
+- [mr-r3b00t/CVE-2025-5777](https://github.com/mr-r3b00t/CVE-2025-5777)
 
 ### CVE-2025-5815 (2025-06-13)
 
@@ -2114,6 +2115,13 @@
 
 - [0xcucumbersalad/CVE-2025-12917-PoC](https://github.com/0xcucumbersalad/CVE-2025-12917-PoC)
 
+### CVE-2025-13188 (2025-11-14)
+
+<code>Eine Schwachstelle wurde in D-Link DIR-816L 2_06_b09_beta gefunden. Es ist betroffen die Funktion authenticationcgi_main der Datei /authentication.cgi. Durch Manipulation des Arguments Password mit unbekannten Daten kann eine stack-based buffer overflow-Schwachstelle ausgenutzt werden. Es ist möglich, den Angriff aus der Ferne durchzuführen. Der Exploit wurde der Öffentlichkeit bekannt gemacht und könnte verwendet werden.
+</code>
+
+- [degeneration1973/CVE-2025-13188-Exploit](https://github.com/degeneration1973/CVE-2025-13188-Exploit)
+
 ### CVE-2025-20029 (2025-02-05)
 
 <code>Command injection vulnerability exists in iControl REST and BIG-IP TMOS Shell (tmsh) save command, which may allow an authenticated attacker to execute arbitrary system commands.\n\n \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
@@ -2262,6 +2270,7 @@
 </code>
 
 - [zhuowei/cheese](https://github.com/zhuowei/cheese)
+- [sarabpal-dev/cheese-cake](https://github.com/sarabpal-dev/cheese-cake)
 
 ### CVE-2025-21574 (2025-04-15)
 
@@ -3765,7 +3774,6 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [KaztoRay/CVE-2025-29927-Research](https://github.com/KaztoRay/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -4780,6 +4788,13 @@
 
 - [Shreyas-Penkar/CVE-2025-39965](https://github.com/Shreyas-Penkar/CVE-2025-39965)
 
+### CVE-2025-40019 (2025-10-24)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: essiv - Check ssize for decryption and in-place encryption\n\nMove the ssize check to the start in essiv_aead_crypt so that\nit's also checked for decryption and in-place encryption.
+</code>
+
+- [guard-wait/CVE-2025-40019_POC](https://github.com/guard-wait/CVE-2025-40019_POC)
+
 ### CVE-2025-40634 (2025-05-20)
 
 <code>Stack-based buffer overflow vulnerability in the 'conn-indicator' binary running as root on the TP-Link Archer AX50 router, in firmware versions prior to 1.0.15 build 241203 rel61480. This vulnerability allows an attacker to execute arbitrary code on the device over LAN and WAN networks.
@@ -5417,6 +5432,13 @@
 
 - [Kryptoenix/CVE-2025-47987_PoC](https://github.com/Kryptoenix/CVE-2025-47987_PoC)
 
+### CVE-2025-48060 (2025-05-21)
+
+<code>jq is a command-line JSON processor. In versions up to and including 1.7.1, a heap-buffer-overflow is present in function `jv_string_vfmt` in the jq_fuzz_execute harness from oss-fuzz. This crash happens on file jv.c, line 1456 `void* p = malloc(sz);`. As of time of publication, no patched versions are available.
+</code>
+
+- [leorivass/jq-els-backport-cve-2025-48060](https://github.com/leorivass/jq-els-backport-cve-2025-48060)
+
 ### CVE-2025-48129 (2025-06-09)
 
 <code>Incorrect Privilege Assignment vulnerability in Holest Engineering Spreadsheet Price Changer for WooCommerce and WP E-commerce – Light allows Privilege Escalation. This issue affects Spreadsheet Price Changer for WooCommerce and WP E-commerce – Light: from n/a through 2.4.37.
@@ -5511,9 +5533,9 @@
 - [B1ack4sh/Blackash-CVE-2025-48593](https://github.com/B1ack4sh/Blackash-CVE-2025-48593)
 - [skolepc/CVE-2025-48593](https://github.com/skolepc/CVE-2025-48593)
 - [logesh-GIT001/CVE-2025-48593](https://github.com/logesh-GIT001/CVE-2025-48593)
-- [callinston/CVE-2025-48593](https://github.com/callinston/CVE-2025-48593)
 - [letchupkt/CVE-2025-48593](https://github.com/letchupkt/CVE-2025-48593)
 - [zhuowei/blueshrimp](https://github.com/zhuowei/blueshrimp)
+- [rana3333s/CVE-2025-48593](https://github.com/rana3333s/CVE-2025-48593)
 
 ### CVE-2025-48703 (2025-09-19)
 
@@ -6496,6 +6518,12 @@
 - [nihilor/cve-2025-54313](https://github.com/nihilor/cve-2025-54313)
 - [ShinP451/scavenger_scanner](https://github.com/ShinP451/scavenger_scanner)
 
+### CVE-2025-54320
+- [saykino/CVE-2025-54320](https://github.com/saykino/CVE-2025-54320)
+
+### CVE-2025-54321
+- [saykino/CVE-2025-54321](https://github.com/saykino/CVE-2025-54321)
+
 ### CVE-2025-54352 (2025-07-21)
 
 <code>WordPress 3.5 through 6.8.2 allows remote attackers to guess titles of private and draft posts via pingback.ping XML-RPC requests. NOTE: the Supplier is not changing this behavior.
@@ -7262,6 +7290,7 @@
 - [dexterm300/cve-2025-59287-exploit-poc](https://github.com/dexterm300/cve-2025-59287-exploit-poc)
 - [th1n0/CVE-2025-59287](https://github.com/th1n0/CVE-2025-59287)
 - [Twodimensionalitylevelcrossing817/CVE-2025-59287](https://github.com/Twodimensionalitylevelcrossing817/CVE-2025-59287)
+- [M507/CVE-2025-59287-PoC](https://github.com/M507/CVE-2025-59287-PoC)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -7308,7 +7337,6 @@
 
 - [GithubKillsMyOpsec/CVE-2025-59489-POC](https://github.com/GithubKillsMyOpsec/CVE-2025-59489-POC)
 - [taptap/cve-2025-59489](https://github.com/taptap/cve-2025-59489)
-- [AdriianFdz/Exploit-CVE-2025-59489](https://github.com/AdriianFdz/Exploit-CVE-2025-59489)
 
 ### CVE-2025-59528 (2025-09-22)
 
@@ -7418,13 +7446,6 @@
 </code>
 
 - [redpack-kr/CVE-2025-60710](https://github.com/redpack-kr/CVE-2025-60710)
-
-### CVE-2025-60724 (2025-11-11)
-
-<code>Heap-based buffer overflow in Microsoft Graphics Component allows an unauthorized attacker to execute code over a network.
-</code>
-
-- [callinston/CVE-2025-60724](https://github.com/callinston/CVE-2025-60724)
 
 ### CVE-2025-60736
 - [WinDyAlphA/CVE-2025-60736](https://github.com/WinDyAlphA/CVE-2025-60736)
@@ -7629,6 +7650,13 @@
 
 - [dexterm300/CVE-2025-62215-exploit-poc](https://github.com/dexterm300/CVE-2025-62215-exploit-poc)
 
+### CVE-2025-62220 (2025-11-11)
+
+<code>Heap-based buffer overflow in Windows Subsystem for Linux GUI allows an unauthorized attacker to execute code over a network.
+</code>
+
+- [callinston/CVE-2025-62220](https://github.com/callinston/CVE-2025-62220)
+
 ### CVE-2025-62369 (2025-11-04)
 
 <code>Xibo is an open source digital signage platform with a web content management system (CMS). Versions 4.3.0 and below contain a Remote Code Execution vulnerability in the CMS Developer menu's Module Templating functionality, allowing authenticated users with &quot;System -&gt; Add/Edit custom modules and templates&quot; permissions to manipulate Twig filters and execute arbitrary server-side functions as the web server user. This issue is fixed in version 4.3.1. To workaround this issue, use the 4.1 and 4.2 patch commits.
@@ -7684,6 +7712,13 @@
 </code>
 
 - [ch4n3-yoon/CVE-2025-62727-Demo](https://github.com/ch4n3-yoon/CVE-2025-62727-Demo)
+
+### CVE-2025-62950 (2025-11-06)
+
+<code>Cross-Site Request Forgery (CSRF) vulnerability in Wasiliy Strecker / ContestGallery developer Contest Gallery contest-gallery allows Cross Site Request Forgery.This issue affects Contest Gallery: from n/a through &lt;= 28.0.0.
+</code>
+
+- [lorenzocamilli/CVE-2025-62950-PoC](https://github.com/lorenzocamilli/CVE-2025-62950-PoC)
 
 ### CVE-2025-63296 (2025-11-10)
 
@@ -7839,6 +7874,13 @@
 
 - [rockmelodies/django_sqli_target_CVE-2025-64459](https://github.com/rockmelodies/django_sqli_target_CVE-2025-64459)
 - [nunpa/CVE-2025-64459](https://github.com/nunpa/CVE-2025-64459)
+
+### CVE-2025-64484 (2025-11-10)
+
+<code>OAuth2-Proxy is an open-source tool that can act as either a standalone reverse proxy or a middleware component integrated into existing reverse proxy or load balancer setups. In versions prior to 7.13.0, all deployments of OAuth2 Proxy in front of applications that normalize underscores to dashes in HTTP headers (e.g., WSGI-based frameworks such as Django, Flask, FastAPI, and PHP applications). Authenticated users can inject underscore variants of X-Forwarded-* headers that bypass the proxy’s filtering logic, potentially escalating privileges in the upstream app. OAuth2 Proxy authentication/authorization itself is not compromised. The problem has been patched with v7.13.0. By default all specified headers will now be normalized, meaning that both capitalization and the use of underscores (_) versus dashes (-) will be ignored when matching headers to be stripped. For example, both `X-Forwarded-For` and `X_Forwarded-for` will now be treated as equivalent and stripped away. For those who have a rational that requires keeping a similar looking header and not stripping it, the maintainers introduced a new configuration field for Headers managed through the AlphaConfig called `InsecureSkipHeaderNormalization`. As a workaround, ensure filtering and processing logic in upstream services don't treat underscores and hyphens in Headers the same way.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-64484](https://github.com/B1ack4sh/Blackash-CVE-2025-64484)
 
 ### CVE-2025-64495 (2025-11-08)
 
@@ -8159,6 +8201,8 @@
 </code>
 
 - [zhulin837/checkmk_cve-2024-0670](https://github.com/zhulin837/checkmk_cve-2024-0670)
+- [magicrc/CVE-2024-0670](https://github.com/magicrc/CVE-2024-0670)
+- [elsevar11/CVE-2024-0670-CheckMK-Agent-Local-Privilege-Escalation-Exploit](https://github.com/elsevar11/CVE-2024-0670-CheckMK-Agent-Local-Privilege-Escalation-Exploit)
 
 ### CVE-2024-0679 (2024-01-20)
 
@@ -8564,6 +8608,13 @@
 </code>
 
 - [whale93/CVE-2024-2782-PoC](https://github.com/whale93/CVE-2024-2782-PoC)
+
+### CVE-2024-2873 (2024-03-25)
+
+<code>A vulnerability was found in wolfSSH's server-side state machine before versions 1.4.17. A malicious client could create channels without first performing user authentication, resulting in unauthorized access.\n
+</code>
+
+- [stuxbench/dropbear-cve-2024-2873](https://github.com/stuxbench/dropbear-cve-2024-2873)
 
 ### CVE-2024-2876 (2024-05-02)
 
@@ -18921,6 +18972,7 @@
 - [cainiao159357/CVE-2023-2598](https://github.com/cainiao159357/CVE-2023-2598)
 - [LLfam/CVE-2023-2598](https://github.com/LLfam/CVE-2023-2598)
 - [SpongeBob-369/CVE-2023-2598](https://github.com/SpongeBob-369/CVE-2023-2598)
+- [guard-wait/CVE-2023-2598_EXP](https://github.com/guard-wait/CVE-2023-2598_EXP)
 
 ### CVE-2023-2603 (2023-06-06)
 
@@ -23620,6 +23672,13 @@
 
 - [tin-z/CVE-2023-35086-POC](https://github.com/tin-z/CVE-2023-35086-POC)
 
+### CVE-2023-35317 (2023-07-11)
+
+<code>Windows Server Update Service (WSUS) Elevation of Privilege Vulnerability
+</code>
+
+- [M507/CVE-2025-59287-PoC](https://github.com/M507/CVE-2025-59287-PoC)
+
 ### CVE-2023-35636 (2023-12-12)
 
 <code>Microsoft Outlook Information Disclosure Vulnerability
@@ -27775,6 +27834,7 @@
 - [morgenm/dirtypipe](https://github.com/morgenm/dirtypipe)
 - [Scouserr/cve-2022-0847-poc-dockerimage](https://github.com/Scouserr/cve-2022-0847-poc-dockerimage)
 - [Shadow-Spinner/CVE-2022-0847](https://github.com/Shadow-Spinner/CVE-2022-0847)
+- [honeyvig/CVE-2022-0847-DirtyPipe-Exploit](https://github.com/honeyvig/CVE-2022-0847-DirtyPipe-Exploit)
 
 ### CVE-2022-0848 (2022-03-04)
 
@@ -39891,7 +39951,6 @@
 - [Habib0x0/CVE-2021-41773](https://github.com/Habib0x0/CVE-2021-41773)
 - [pwn3z/CVE-2021-41773-Apache-RCE](https://github.com/pwn3z/CVE-2021-41773-Apache-RCE)
 - [EkamSinghWalia/Mitigation-Apache-CVE-2021-41773-](https://github.com/EkamSinghWalia/Mitigation-Apache-CVE-2021-41773-)
-- [Plunder283/CVE-2021-41773](https://github.com/Plunder283/CVE-2021-41773)
 - [mightysai1997/cve-2021-41773](https://github.com/mightysai1997/cve-2021-41773)
 - [mightysai1997/CVE-2021-41773h](https://github.com/mightysai1997/CVE-2021-41773h)
 - [mightysai1997/cve-2021-41773-v-](https://github.com/mightysai1997/cve-2021-41773-v-)
@@ -41061,6 +41120,7 @@
 - [arabindadora/log4shell](https://github.com/arabindadora/log4shell)
 - [Mintimate/log4j2-bugmaker](https://github.com/Mintimate/log4j2-bugmaker)
 - [B1ack4sh/Blackash-CVE-2021-44228](https://github.com/B1ack4sh/Blackash-CVE-2021-44228)
+- [mgueye3/Log4Shell](https://github.com/mgueye3/Log4Shell)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -48808,6 +48868,7 @@
 - [CaelumIsMe/CVE-2019-9053-POC](https://github.com/CaelumIsMe/CVE-2019-9053-POC)
 - [6iroc/CVE-2019-9053](https://github.com/6iroc/CVE-2019-9053)
 - [JagdeepSinghCeh/cms-made-simple-python3](https://github.com/JagdeepSinghCeh/cms-made-simple-python3)
+- [Perseus99999/CVE-2019-9053-working-](https://github.com/Perseus99999/CVE-2019-9053-working-)
 
 ### CVE-2019-9081
 - [nth347/CVE-2019-9081_PoC](https://github.com/nth347/CVE-2019-9081_PoC)
@@ -52187,7 +52248,6 @@
 - [r3dxpl0it/CVE-2018-4407](https://github.com/r3dxpl0it/CVE-2018-4407)
 - [lucagiovagnoli/CVE-2018-4407](https://github.com/lucagiovagnoli/CVE-2018-4407)
 - [anonymouz4/Apple-Remote-Crash-Tool-CVE-2018-4407](https://github.com/anonymouz4/Apple-Remote-Crash-Tool-CVE-2018-4407)
-- [soccercab/wifi](https://github.com/soccercab/wifi)
 - [zeng9t/CVE-2018-4407-iOS-exploit](https://github.com/zeng9t/CVE-2018-4407-iOS-exploit)
 - [5431/CVE-2018-4407](https://github.com/5431/CVE-2018-4407)
 - [pwnhacker0x18/iOS-Kernel-Crash](https://github.com/pwnhacker0x18/iOS-Kernel-Crash)
@@ -61996,6 +62056,7 @@
 - [BolivarJ/CVE-2011-2523](https://github.com/BolivarJ/CVE-2011-2523)
 - [seerat-fatima21/vsftpd-exploit](https://github.com/seerat-fatima21/vsftpd-exploit)
 - [hajisthabegum/Exploiting-vsFTPd-2.3.4-Backdoor-Vulnerability-Ethical-Hacking-Lab-with-Metasploitable-2-Metasploit](https://github.com/hajisthabegum/Exploiting-vsFTPd-2.3.4-Backdoor-Vulnerability-Ethical-Hacking-Lab-with-Metasploitable-2-Metasploit)
+- [avivyap/CVE-2011-2523](https://github.com/avivyap/CVE-2011-2523)
 
 ### CVE-2011-2553
 - [carlosrpastrana/cve-2011-2553](https://github.com/carlosrpastrana/cve-2011-2553)
