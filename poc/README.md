@@ -3782,7 +3782,6 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [KaztoRay/CVE-2025-29927-Research](https://github.com/KaztoRay/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -5544,7 +5543,11 @@
 
 - [demining/Pixnapping-Attack-on-Android](https://github.com/demining/Pixnapping-Attack-on-Android)
 
-### CVE-2025-48593
+### CVE-2025-48593 (2025-11-18)
+
+<code>In bta_hf_client_cb_init of bta_hf_client_main.cc, there is a possible remote code execution due to a use after free. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.
+</code>
+
 - [B1ack4sh/Blackash-CVE-2025-48593](https://github.com/B1ack4sh/Blackash-CVE-2025-48593)
 - [skolepc/CVE-2025-48593](https://github.com/skolepc/CVE-2025-48593)
 - [logesh-GIT001/CVE-2025-48593](https://github.com/logesh-GIT001/CVE-2025-48593)
@@ -7511,9 +7514,6 @@
 
 - [valeriocassoni/CSV-Injection-in-Instant-Developer-Foundation-25.0-PoC](https://github.com/valeriocassoni/CSV-Injection-in-Instant-Developer-Foundation-25.0-PoC)
 
-### CVE-2025-60854
-- [K0n9-log/CVE-2025-60854](https://github.com/K0n9-log/CVE-2025-60854)
-
 ### CVE-2025-60880 (2025-10-10)
 
 <code>An authenticated stored XSS vulnerability exists in the Bagisto 2.3.6 admin panel's product creation path, allowing an attacker to upload a crafted SVG file containing malicious JavaScript code. This vulnerability can be exploited by an authenticated admin user to execute arbitrary JavaScript in the browser, potentially leading to session hijacking, data theft, or unauthorized actions.
@@ -7672,6 +7672,7 @@
 </code>
 
 - [dexterm300/CVE-2025-62215-exploit-poc](https://github.com/dexterm300/CVE-2025-62215-exploit-poc)
+- [mrk336/Kernel-Chaos-Weaponizing-CVE-2025-62215-for-SYSTEM-Privilege-Escalation](https://github.com/mrk336/Kernel-Chaos-Weaponizing-CVE-2025-62215-for-SYSTEM-Privilege-Escalation)
 
 ### CVE-2025-62220 (2025-11-11)
 
@@ -7846,6 +7847,9 @@
 
 - [Remenis/CVE-2025-63667](https://github.com/Remenis/CVE-2025-63667)
 
+### CVE-2025-63700
+- [itsnishat08/CVE-2025-63700](https://github.com/itsnishat08/CVE-2025-63700)
+
 ### CVE-2025-63820
 - [Xernary/CVE-2025-63820](https://github.com/Xernary/CVE-2025-63820)
 
@@ -7858,6 +7862,9 @@
 </code>
 
 - [Shubham03007/CVE-2025-63830](https://github.com/Shubham03007/CVE-2025-63830)
+
+### CVE-2025-63848
+- [coderMohammed1/CVE-2025-63848](https://github.com/coderMohammed1/CVE-2025-63848)
 
 ### CVE-2025-63892
 - [minhajultaivin/security-advisories](https://github.com/minhajultaivin/security-advisories)
@@ -24613,6 +24620,7 @@
 - [ahmed-fa7im/CVE-2023-38831-winrar-expoit-simple-Poc](https://github.com/ahmed-fa7im/CVE-2023-38831-winrar-expoit-simple-Poc)
 - [thegr1ffyn/CVE-2023-38831](https://github.com/thegr1ffyn/CVE-2023-38831)
 - [ML-K-eng/CVE-2023-38831-Exploit-and-Detection](https://github.com/ML-K-eng/CVE-2023-38831-Exploit-and-Detection)
+- [sudo-py-dev/CVE-2023-38831](https://github.com/sudo-py-dev/CVE-2023-38831)
 - [z3r0sw0rd/CVE-2023-38831-PoC](https://github.com/z3r0sw0rd/CVE-2023-38831-PoC)
 - [sh770/CVE-2023-38831](https://github.com/sh770/CVE-2023-38831)
 - [Ben1B3astt/CVE-2023-38831_ReverseShell_Winrar](https://github.com/Ben1B3astt/CVE-2023-38831_ReverseShell_Winrar)
@@ -33322,7 +33330,6 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
