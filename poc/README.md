@@ -6463,6 +6463,13 @@
 
 - [B1ack4sh/Blackash-CVE-2025-53773](https://github.com/B1ack4sh/Blackash-CVE-2025-53773)
 
+### CVE-2025-53779 (2025-08-12)
+
+<code>Relative path traversal in Windows Kerberos allows an authorized attacker to elevate privileges over a network.
+</code>
+
+- [b5null/Invoke-BadSuccessor.ps1](https://github.com/b5null/Invoke-BadSuccessor.ps1)
+
 ### CVE-2025-53786 (2025-08-06)
 
 <code>On April 18th 2025, Microsoft announced Exchange Server Security Changes for Hybrid Deployments and accompanying non-security Hot Fix. Microsoft made these changes in the general interest of improving the security of hybrid Exchange deployments. Following further investigation, Microsoft identified specific security implications tied to the guidance and configuration steps outlined in the April announcement. Microsoft is issuing CVE-2025-53786 to document a vulnerability that is addressed by taking the steps documented with the April 18th announcement. Microsoft strongly recommends reading the information, installing the April 2025 (or later) Hot Fix and implementing the changes in your Exchange Server and hybrid environment.
@@ -27767,6 +27774,7 @@
 - [z92g/CVE-2022-0543](https://github.com/z92g/CVE-2022-0543)
 - [JacobEbben/CVE-2022-0543](https://github.com/JacobEbben/CVE-2022-0543)
 - [SiennaSkies/redisHack](https://github.com/SiennaSkies/redisHack)
+- [netw0rk7/CVE-2022-0543-Home-Lab](https://github.com/netw0rk7/CVE-2022-0543-Home-Lab)
 
 ### CVE-2022-0591 (2022-03-21)
 
@@ -56441,6 +56449,7 @@
 - [aengussong/hikvision_probe](https://github.com/aengussong/hikvision_probe)
 - [GabrielAvls/CVE-2017-7921](https://github.com/GabrielAvls/CVE-2017-7921)
 - [lastvocher/Hikvision-CVE-2017-7921-decryptor](https://github.com/lastvocher/Hikvision-CVE-2017-7921-decryptor)
+- [voidsshadows/Hikvision-City-Hunter](https://github.com/voidsshadows/Hikvision-City-Hunter)
 
 ### CVE-2017-7998 (2018-01-08)
 
