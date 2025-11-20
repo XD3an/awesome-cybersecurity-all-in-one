@@ -599,6 +599,7 @@
 - [wand3rlust/CVE-2025-3248](https://github.com/wand3rlust/CVE-2025-3248)
 - [Kiraly07/Demo_CVE-2025-3248](https://github.com/Kiraly07/Demo_CVE-2025-3248)
 - [bambooqj/cve-2025-3248](https://github.com/bambooqj/cve-2025-3248)
+- [drackyjr/cve-2025-3248-exploit](https://github.com/drackyjr/cve-2025-3248-exploit)
 
 ### CVE-2025-3419 (2025-05-08)
 
@@ -872,7 +873,6 @@
 - [speinador/CVE-2025-4664](https://github.com/speinador/CVE-2025-4664)
 - [Leviticus-Triage/ChromSploit-Framework](https://github.com/Leviticus-Triage/ChromSploit-Framework)
 - [amalmurali47/cve-2025-4664](https://github.com/amalmurali47/cve-2025-4664)
-- [mingijunggrape/CVE-2025-4664](https://github.com/mingijunggrape/CVE-2025-4664)
 
 ### CVE-2025-4686
 - [sahici/CVE-2025-4686](https://github.com/sahici/CVE-2025-4686)
@@ -1974,6 +1974,7 @@
 
 - [shalevo13/Se7enSlip](https://github.com/shalevo13/Se7enSlip)
 - [pacbypass/CVE-2025-11001](https://github.com/pacbypass/CVE-2025-11001)
+- [lastvocher/7zip-CVE-2025-11001](https://github.com/lastvocher/7zip-CVE-2025-11001)
 
 ### CVE-2025-11077 (2025-09-27)
 
@@ -7948,6 +7949,9 @@
 
 - [minhajultaivin/security-advisories](https://github.com/minhajultaivin/security-advisories)
 
+### CVE-2025-63914
+- [WxDou/CVE-2025-63914](https://github.com/WxDou/CVE-2025-63914)
+
 ### CVE-2025-63943
 - [RedOpsX/CVE-2025-63943](https://github.com/RedOpsX/CVE-2025-63943)
 
@@ -7981,7 +7985,7 @@
 - [sensepost/CVE-2025-64446](https://github.com/sensepost/CVE-2025-64446)
 - [D3crypT0r/CVE-2025-64446](https://github.com/D3crypT0r/CVE-2025-64446)
 - [verylazytech/CVE-2025-64446](https://github.com/verylazytech/CVE-2025-64446)
-- [lincemorado97/CVE-2025-64446](https://github.com/lincemorado97/CVE-2025-64446)
+- [lincemorado97/CVE-2025-64446_CVE-2025-58034](https://github.com/lincemorado97/CVE-2025-64446_CVE-2025-58034)
 - [Death112233/CVE-2025-64446-](https://github.com/Death112233/CVE-2025-64446-)
 
 ### CVE-2025-64458 (2025-11-05)
@@ -11547,6 +11551,7 @@
 - [MQKGitHub/Moniker-Link-CVE-2024-21413](https://github.com/MQKGitHub/Moniker-Link-CVE-2024-21413)
 - [yass2400012/Email-exploit-Moniker-Link-CVE-2024-21413-](https://github.com/yass2400012/Email-exploit-Moniker-Link-CVE-2024-21413-)
 - [gurleen-147/CVE-2024-21413-Microsoft-Outlook-Remote-Code-Execution-Vulnerability-PoC](https://github.com/gurleen-147/CVE-2024-21413-Microsoft-Outlook-Remote-Code-Execution-Vulnerability-PoC)
+- [hau2212/Moniker-Link-CVE-2024-21413-](https://github.com/hau2212/Moniker-Link-CVE-2024-21413-)
 
 ### CVE-2024-21513 (2024-07-15)
 
