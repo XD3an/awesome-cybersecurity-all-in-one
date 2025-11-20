@@ -1895,6 +1895,7 @@
 </code>
 
 - [dptsec/CVE-2025-10230](https://github.com/dptsec/CVE-2025-10230)
+- [B1ack4sh/Blackash-CVE-2025-10230](https://github.com/B1ack4sh/Blackash-CVE-2025-10230)
 
 ### CVE-2025-10351 (2025-10-08)
 
@@ -1923,6 +1924,13 @@
 </code>
 
 - [NagisaYumaa/CVE-2025-10377](https://github.com/NagisaYumaa/CVE-2025-10377)
+
+### CVE-2025-10492 (2025-09-16)
+
+<code>A Java deserialisation vulnerability has been discovered in Jaspersoft Library. Improper handling of externally supplied data may allow attackers to execute arbitrary code remotely on systems that use the affected library
+</code>
+
+- [dovezp/CVE-2025-10492-POC](https://github.com/dovezp/CVE-2025-10492-POC)
 
 ### CVE-2025-10576 (2025-10-15)
 
@@ -1959,7 +1967,11 @@
 
 - [ryanmroth/Orbit-Fox_SSRF_CVE-2025-10874](https://github.com/ryanmroth/Orbit-Fox_SSRF_CVE-2025-10874)
 
-### CVE-2025-11001
+### CVE-2025-11001 (2025-11-19)
+
+<code>7-Zip ZIP File Parsing Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. Interaction with this product is required to exploit this vulnerability but attack vectors may vary depending on the implementation.\n\nThe specific flaw exists within the handling of symbolic links in ZIP files. Crafted data in a ZIP file can cause the process to traverse to unintended directories. An attacker can leverage this vulnerability to execute code in the context of a service account. Was ZDI-CAN-26753.
+</code>
+
 - [shalevo13/Se7enSlip](https://github.com/shalevo13/Se7enSlip)
 - [pacbypass/CVE-2025-11001](https://github.com/pacbypass/CVE-2025-11001)
 
@@ -2753,7 +2765,7 @@
 <code>GLPI is a free asset and IT management software package. An authenticated user can upload and force the execution of *.php files located on the GLPI server. This vulnerability is fixed in 10.0.18.
 </code>
 
-- [r1beirin/CVE-2025-24801](https://github.com/r1beirin/CVE-2025-24801)
+- [r1beirin/Exploit-CVE-2025-24801](https://github.com/r1beirin/Exploit-CVE-2025-24801)
 - [fatkz/CVE-2025-24801](https://github.com/fatkz/CVE-2025-24801)
 
 ### CVE-2025-24813 (2025-03-10)
@@ -2953,6 +2965,13 @@
 </code>
 
 - [JackMicalli/CVE-2025-25254](https://github.com/JackMicalli/CVE-2025-25254)
+
+### CVE-2025-25255 (2025-10-14)
+
+<code>An Improperly Implemented Security Check for Standard vulnerability [CWE-358] in FortiProxy 7.6.0 through 7.6.3, 7.4 all versions, 7.2 all versions, 7.0.1 through 7.0.21, and FortiOS 7.6.0 through 7.6.3 explicit web proxy may allow an authenticated proxy user to bypass the domain fronting protection feature via crafted HTTP requests.
+</code>
+
+- [chjkfbvmvff/CVE-2025-25255](https://github.com/chjkfbvmvff/CVE-2025-25255)
 
 ### CVE-2025-25256 (2025-08-12)
 
@@ -3463,6 +3482,7 @@
 - [HOEUN-Visai/CVE-2025-27591-below-](https://github.com/HOEUN-Visai/CVE-2025-27591-below-)
 - [krn966/CVE-2025-27591](https://github.com/krn966/CVE-2025-27591)
 - [0xDTC/Below-Logger-Symlink-Attack_CVE-2025-27591](https://github.com/0xDTC/Below-Logger-Symlink-Attack_CVE-2025-27591)
+- [0x00Jeff/CVE-2025-27591](https://github.com/0x00Jeff/CVE-2025-27591)
 
 ### CVE-2025-27607 (2025-03-07)
 
@@ -4554,7 +4574,7 @@
 
 ### CVE-2025-34030 (2025-06-20)
 
-<code>An OS command injection vulnerability exists in sar2html version 3.2.2 and prior via the plot parameter in index.php. The application fails to sanitize user-supplied input before using it in a system-level context. Remote, unauthenticated attackers can inject shell commands by appending them to the plot parameter (e.g., ?plot=;id) in a crafted GET request. The output of the command is displayed in the application's interface after interacting with the host selection UI. Successful exploitation leads to arbitrary command execution on the underlying system.
+<code>An OS command injection vulnerability exists in sar2html version 3.2.2 and prior via the plot parameter in index.php. The application fails to sanitize user-supplied input before using it in a system-level context. Remote, unauthenticated attackers can inject shell commands by appending them to the plot parameter (e.g., ?plot=;id) in a crafted GET request. The output of the command is displayed in the application's interface after interacting with the host selection UI. Successful exploitation leads to arbitrary command execution on the underlying system. Exploitation evidence was observed by the Shadowserver Foundation on 2025-10-07 UTC.
 </code>
 
 - [HackerTyperAbuser/CVE-2025-34030-PoC](https://github.com/HackerTyperAbuser/CVE-2025-34030-PoC)
@@ -4811,6 +4831,13 @@
 </code>
 
 - [guard-wait/CVE-2025-40019_POC](https://github.com/guard-wait/CVE-2025-40019_POC)
+
+### CVE-2025-40629 (2025-05-16)
+
+<code>PNETLab 4.2.10 does not properly sanitize user inputs in its file access mechanisms. This allows attackers to perform directory traversal by manipulating file paths in HTTP requests. Specifically, the application is vulnerable to requests that access sensitive files outside the intended directory.
+</code>
+
+- [omr00t/CVE-2025-40629](https://github.com/omr00t/CVE-2025-40629)
 
 ### CVE-2025-40634 (2025-05-20)
 
@@ -6491,6 +6518,13 @@
 
 - [tigr78/CVE-2025-53964](https://github.com/tigr78/CVE-2025-53964)
 
+### CVE-2025-54110 (2025-09-09)
+
+<code>Integer overflow or wraparound in Windows Kernel allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [canomer/CVE-2025-54110-Kernel-EoP-PoC](https://github.com/canomer/CVE-2025-54110-Kernel-EoP-PoC)
+
 ### CVE-2025-54135 (2025-08-05)
 
 <code>Cursor is a code editor built for programming with AI. Cursor allows writing in-workspace files with no user approval in versions below 1.3.9, If the file is a dotfile, editing it requires approval but creating a new one doesn't. Hence, if sensitive MCP files, such as the .cursor/mcp.json file don't already exist in the workspace, an attacker can chain a indirect prompt injection vulnerability to hijack the context to write to the settings file and trigger RCE on the victim without user approval. This is fixed in version 1.3.9.
@@ -7249,6 +7283,13 @@
 
 - [quetuan03/CVE-2025-57926](https://github.com/quetuan03/CVE-2025-57926)
 
+### CVE-2025-58034 (2025-11-18)
+
+<code>An Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability [CWE-78] in Fortinet FortiWeb 8.0.0 through 8.0.1, FortiWeb 7.6.0 through 7.6.5, FortiWeb 7.4.0 through 7.4.10, FortiWeb 7.2.0 through 7.2.11, FortiWeb 7.0.0 through 7.0.11 may allow an authenticated attacker to execute unauthorized code on the underlying system via crafted HTTP requests or CLI commands.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-58034](https://github.com/B1ack4sh/Blackash-CVE-2025-58034)
+
 ### CVE-2025-58179 (2025-09-04)
 
 <code>Astro is a web framework for content-driven websites. Versions 11.0.3 through 12.6.5 are vulnerable to SSRF when using Astro's Cloudflare adapter. When configured with output: 'server' while using the default imageService: 'compile', the generated image optimization endpoint doesn't check the URLs it receives, allowing content from unauthorized third-party domains to be served. a A bug in impacted versions of the @astrojs/cloudflare adapter for deployment on Cloudflare’s infrastructure, allows an attacker to bypass the third-party domain restrictions and serve any content from the vulnerable origin. This issue is fixed in version 12.6.6.
@@ -7941,6 +7982,7 @@
 - [D3crypT0r/CVE-2025-64446](https://github.com/D3crypT0r/CVE-2025-64446)
 - [verylazytech/CVE-2025-64446](https://github.com/verylazytech/CVE-2025-64446)
 - [lincemorado97/CVE-2025-64446](https://github.com/lincemorado97/CVE-2025-64446)
+- [Death112233/CVE-2025-64446-](https://github.com/Death112233/CVE-2025-64446-)
 
 ### CVE-2025-64458 (2025-11-05)
 
@@ -7988,7 +8030,11 @@
 - [B1ack4sh/Blackash-CVE-2025-64513](https://github.com/B1ack4sh/Blackash-CVE-2025-64513)
 - [shinyseam/CVE-2025-64513](https://github.com/shinyseam/CVE-2025-64513)
 
-### CVE-2025-64708
+### CVE-2025-64708 (2025-11-19)
+
+<code>authentik is an open-source Identity Provider. Prior to versions 2025.8.5 and 2025.10.2, in previous authentik versions, invitations were considered valid regardless if they are expired or not, thus relying on background tasks to clean up expired ones. In a normal scenario this can take up to 5 minutes because the cleanup of expired objects is scheduled to run every 5 minutes. However, with a large amount of tasks in the backlog, this might take longer. authentik versions 2025.8.5 and 2025.10.2 fix this issue. A workaround involves creating a policy that explicitly checks whether the invitation is still valid, and then bind it to the invitation stage on the invitation flow, and denying access if the invitation is not valid.
+</code>
+
 - [DylanDavis1/CVE-2025-64708](https://github.com/DylanDavis1/CVE-2025-64708)
 
 ### CVE-2025-492025
@@ -19135,7 +19181,6 @@
 </code>
 
 - [fofovicfof-ai/cve-2023-2745](https://github.com/fofovicfof-ai/cve-2023-2745)
-- [spyizxa0day/WordPress-CVE-2023-2745](https://github.com/spyizxa0day/WordPress-CVE-2023-2745)
 
 ### CVE-2023-2822 (2023-05-20)
 
@@ -33588,6 +33633,7 @@
 - [XalfiE/Fortigate-Belsen-Leak-Dump-CVE-2022-40684-](https://github.com/XalfiE/Fortigate-Belsen-Leak-Dump-CVE-2022-40684-)
 - [niklasmato/fortileak-01-2025-Be](https://github.com/niklasmato/fortileak-01-2025-Be)
 - [Yami0x777/Belsen_Group-et-exploitation-de-la-CVE-2022-40684](https://github.com/Yami0x777/Belsen_Group-et-exploitation-de-la-CVE-2022-40684)
+- [ccordeiro/CVE-2022-40684](https://github.com/ccordeiro/CVE-2022-40684)
 
 ### CVE-2022-40769 (2022-09-18)
 
@@ -33595,13 +33641,6 @@
 </code>
 
 - [PLSRcoin/CVE-2022-40769](https://github.com/PLSRcoin/CVE-2022-40769)
-
-### CVE-2022-40799 (2022-11-29)
-
-<code>Data Integrity Failure in 'Backup Config' in D-Link DNR-322L &lt;= 2.60B15 allows an authenticated attacker to execute OS level commands on the device.
-</code>
-
-- [rtfmkiesel/CVE-2022-40799](https://github.com/rtfmkiesel/CVE-2022-40799)
 
 ### CVE-2022-40881 (2022-11-17)
 
@@ -35459,6 +35498,7 @@
 - [DLL00P/CVE-2021-1675](https://github.com/DLL00P/CVE-2021-1675)
 - [GlacierGossip/PrintNightmare](https://github.com/GlacierGossip/PrintNightmare)
 - [VoiidByte/Impacket](https://github.com/VoiidByte/Impacket)
+- [ccordeiro/CVE-2021-1675](https://github.com/ccordeiro/CVE-2021-1675)
 
 ### CVE-2021-1678 (2021-01-12)
 
@@ -36100,8 +36140,6 @@
 - [OXDBXKXO/ez-pwnkit](https://github.com/OXDBXKXO/ez-pwnkit)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
 - [hohn/codeql-sample-polkit](https://github.com/hohn/codeql-sample-polkit)
-- [fnknda/CVE-2021-4034_POC](https://github.com/fnknda/CVE-2021-4034_POC)
-- [Tanmay-N/CVE-2021-4034](https://github.com/Tanmay-N/CVE-2021-4034)
 - [hahaleyile/CVE-2021-4034](https://github.com/hahaleyile/CVE-2021-4034)
 - [movvamrocks/PwnKit-CVE-2021-4034](https://github.com/movvamrocks/PwnKit-CVE-2021-4034)
 - [Squirre17/CVE-2021-4034](https://github.com/Squirre17/CVE-2021-4034)
@@ -36767,7 +36805,6 @@
 - [ph-arm/CVE-2021-22204-Gitlab](https://github.com/ph-arm/CVE-2021-22204-Gitlab)
 - [Asaad27/CVE-2021-22204-RSE](https://github.com/Asaad27/CVE-2021-22204-RSE)
 - [trganda/CVE-2021-22204](https://github.com/trganda/CVE-2021-22204)
-- [mr-tuhin/CVE-2021-22204-exiftool](https://github.com/mr-tuhin/CVE-2021-22204-exiftool)
 - [UNICORDev/exploit-CVE-2021-22204](https://github.com/UNICORDev/exploit-CVE-2021-22204)
 - [Akash7350/CVE-2021-22204](https://github.com/Akash7350/CVE-2021-22204)
 - [battleofthebots/dejavu](https://github.com/battleofthebots/dejavu)
@@ -36807,6 +36844,7 @@
 - [Hikikan/CVE-2021-22205](https://github.com/Hikikan/CVE-2021-22205)
 - [NukingDragons/gitlab-cve-2021-22205](https://github.com/NukingDragons/gitlab-cve-2021-22205)
 - [cc3305/CVE-2021-22205](https://github.com/cc3305/CVE-2021-22205)
+- [ccordeiro/CVE-2021-22205](https://github.com/ccordeiro/CVE-2021-22205)
 
 ### CVE-2021-22206 (2021-05-06)
 
@@ -39613,7 +39651,6 @@
 - [hakivvi/CVE-2021-40449](https://github.com/hakivvi/CVE-2021-40449)
 - [Kristal-g/CVE-2021-40449_poc](https://github.com/Kristal-g/CVE-2021-40449_poc)
 - [CppXL/cve-2021-40449-poc](https://github.com/CppXL/cve-2021-40449-poc)
-- [BL0odz/CVE-2021-40449-NtGdiResetDC-UAF](https://github.com/BL0odz/CVE-2021-40449-NtGdiResetDC-UAF)
 - [SamuelTulach/voidmap](https://github.com/SamuelTulach/voidmap)
 - [toanthang1842002/CVE-2021-40449](https://github.com/toanthang1842002/CVE-2021-40449)
 
@@ -40189,6 +40226,7 @@
 - [asepsaepdin/CVE-2021-42013](https://github.com/asepsaepdin/CVE-2021-42013)
 - [Makavellik/POC-CVE-2021-42013-EXPLOIT](https://github.com/Makavellik/POC-CVE-2021-42013-EXPLOIT)
 - [FakhriCRD/Apache-CVE-2021-42013-RCE-Exploit](https://github.com/FakhriCRD/Apache-CVE-2021-42013-RCE-Exploit)
+- [drackyjr/CVE-2021-42013](https://github.com/drackyjr/CVE-2021-42013)
 
 ### CVE-2021-42056 (2022-06-24)
 
@@ -40496,6 +40534,7 @@
 </code>
 
 - [p0dalirius/CVE-2021-43008-AdminerRead](https://github.com/p0dalirius/CVE-2021-43008-AdminerRead)
+- [DaturaSaturated/Adminer-CVE-2021-43008](https://github.com/DaturaSaturated/Adminer-CVE-2021-43008)
 
 ### CVE-2021-43032 (2021-11-03)
 
@@ -48993,6 +49032,7 @@
 - [6iroc/CVE-2019-9053](https://github.com/6iroc/CVE-2019-9053)
 - [JagdeepSinghCeh/cms-made-simple-python3](https://github.com/JagdeepSinghCeh/cms-made-simple-python3)
 - [Perseus99999/CVE-2019-9053-working-](https://github.com/Perseus99999/CVE-2019-9053-working-)
+- [Praditha29/Simple-CTF-THM-Writeup](https://github.com/Praditha29/Simple-CTF-THM-Writeup)
 
 ### CVE-2019-9081
 - [nth347/CVE-2019-9081_PoC](https://github.com/nth347/CVE-2019-9081_PoC)
@@ -54276,6 +54316,7 @@
 - [Cr4zyD14m0nd137/Lab-for-cve-2018-15133](https://github.com/Cr4zyD14m0nd137/Lab-for-cve-2018-15133)
 - [0xSalle/cve-2018-15133](https://github.com/0xSalle/cve-2018-15133)
 - [yeahhbean/Laravel-CVE-2018-15133](https://github.com/yeahhbean/Laravel-CVE-2018-15133)
+- [Loaxert/CVE-2018-15133-PoC](https://github.com/Loaxert/CVE-2018-15133-PoC)
 
 ### CVE-2018-15139 (2018-08-13)
 
