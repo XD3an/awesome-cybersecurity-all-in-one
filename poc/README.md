@@ -2153,6 +2153,13 @@
 
 - [MooseLoveti/SNORDIAN-s-H5PxAPIkatchu-CVE-Report](https://github.com/MooseLoveti/SNORDIAN-s-H5PxAPIkatchu-CVE-Report)
 
+### CVE-2025-12916 (2025-11-08)
+
+<code>In Sangfor Operation and Maintenance Security Management System 3.0 wurde eine Schwachstelle gefunden. Dies betrifft einen unbekannten Teil der Datei /fort/portal_login der Komponente Frontend. Mit der Manipulation des Arguments loginUrl mit unbekannten Daten kann eine command injection-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk erfolgen. Die Ausnutzung wurde veröffentlicht und kann verwendet werden. Das Problem kann durch ein Upgrade auf Version 3.0.11 and 3.0.12 adressiert werden. Die Aktualisierung der betroffenen Komponente wird empfohlen.
+</code>
+
+- [Jinxia62/Sangfor-CVE-2025-12916](https://github.com/Jinxia62/Sangfor-CVE-2025-12916)
+
 ### CVE-2025-12917 (2025-11-09)
 
 <code>In TOZED ZLT T10 T10PLUS_3.04.15 ist eine Schwachstelle entdeckt worden. Dabei betrifft es einen unbekannter Codeteil der Datei /reqproc/proc_post der Komponente Reboot Handler. Durch die Manipulation mit unbekannten Daten kann eine denial of service-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei im lokalen Netzwerk erfolgen. Der Exploit steht zur öffentlichen Verfügung.
@@ -2162,6 +2169,12 @@
 
 ### CVE-2025-12973
 - [d0n601/CVE-2025-12973](https://github.com/d0n601/CVE-2025-12973)
+
+### CVE-2025-13156
+- [MooseLoveti/Vitepos-CVE-Report](https://github.com/MooseLoveti/Vitepos-CVE-Report)
+
+### CVE-2025-13159
+- [MooseLoveti/Flo-Forms-CVE-Report](https://github.com/MooseLoveti/Flo-Forms-CVE-Report)
 
 ### CVE-2025-13425 (2025-11-20)
 
@@ -6517,6 +6530,7 @@
 
 - [Momollax/CVE-2025-53772-IIS-WebDeploy-RCE](https://github.com/Momollax/CVE-2025-53772-IIS-WebDeploy-RCE)
 - [go-bi/CVE-2025-53772-](https://github.com/go-bi/CVE-2025-53772-)
+- [SleepNotF0und/CVE-2025-53772-IIS-WebDeploy-RCE-POC](https://github.com/SleepNotF0und/CVE-2025-53772-IIS-WebDeploy-RCE-POC)
 
 ### CVE-2025-53773 (2025-08-12)
 
@@ -7408,6 +7422,7 @@
 - [th1n0/CVE-2025-59287](https://github.com/th1n0/CVE-2025-59287)
 - [Twodimensionalitylevelcrossing817/CVE-2025-59287](https://github.com/Twodimensionalitylevelcrossing817/CVE-2025-59287)
 - [M507/CVE-2025-59287-PoC](https://github.com/M507/CVE-2025-59287-PoC)
+- [Adel-kaka-dz/cve-2025-59287](https://github.com/Adel-kaka-dz/cve-2025-59287)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -7994,6 +8009,9 @@
 </code>
 
 - [DylanDavis1/CVE-2025-63708](https://github.com/DylanDavis1/CVE-2025-63708)
+
+### CVE-2025-63729
+- [Yashodhanvivek/CVE-2025-63729-Syrotech-SY-GPON-1110-](https://github.com/Yashodhanvivek/CVE-2025-63729-Syrotech-SY-GPON-1110-)
 
 ### CVE-2025-63820
 - [Xernary/CVE-2025-63820](https://github.com/Xernary/CVE-2025-63820)
