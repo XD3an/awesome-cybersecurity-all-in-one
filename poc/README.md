@@ -1735,6 +1735,7 @@
 </code>
 
 - [watchtowrlabs/watchTowr-vs-WatchGuard-CVE-2025-9242](https://github.com/watchtowrlabs/watchTowr-vs-WatchGuard-CVE-2025-9242)
+- [B1ack4sh/Blackash-CVE-2025-9242](https://github.com/B1ack4sh/Blackash-CVE-2025-9242)
 
 ### CVE-2025-9267 (2025-09-26)
 
@@ -1953,6 +1954,13 @@
 
 - [AdityaBhatt3010/CVE-2025-10585-The-Chrome-V8-Zero-Day](https://github.com/AdityaBhatt3010/CVE-2025-10585-The-Chrome-V8-Zero-Day)
 
+### CVE-2025-10680 (2025-10-24)
+
+<code>OpenVPN 2.7_alpha1 through 2.7_beta1 on POSIX based platforms allows a remote authenticated server to inject shell commands via DNS variables when --dns-updown is in use
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-10680](https://github.com/B1ack4sh/Blackash-CVE-2025-10680)
+
 ### CVE-2025-10720 (2025-10-13)
 
 <code>The WP Private Content Plus through 3.6.2 provides a global content protection feature that requires a password. However, the access control check is based only on the presence of an unprotected client-side cookie. As a result, an unauthenticated attacker can completely bypass the password protection by manually setting the cookie value in their browser.
@@ -2100,7 +2108,11 @@
 - [6h4ack/CVE-2025-12101-checker](https://github.com/6h4ack/CVE-2025-12101-checker)
 - [boneys/CVE-2025-12101-Scanner-PoC](https://github.com/boneys/CVE-2025-12101-Scanner-PoC)
 
-### CVE-2025-12135
+### CVE-2025-12135 (2025-11-21)
+
+<code>The WPBookit plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'css_code' parameter in all versions up to, and including, 1.0.6 due to a missing capability check on the save_custome_code() function. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+</code>
+
 - [d0n601/CVE-2025-12135](https://github.com/d0n601/CVE-2025-12135)
 
 ### CVE-2025-12399 (2025-11-08)
@@ -2167,13 +2179,25 @@
 
 - [0xcucumbersalad/CVE-2025-12917-PoC](https://github.com/0xcucumbersalad/CVE-2025-12917-PoC)
 
-### CVE-2025-12973
+### CVE-2025-12973 (2025-11-21)
+
+<code>The S2B AI Assistant – ChatBot, ChatGPT, OpenAI, Content &amp; Image Generator plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the storeFile() function in all versions up to, and including, 1.7.8. This makes it possible for authenticated attackers, with Editor-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.
+</code>
+
 - [d0n601/CVE-2025-12973](https://github.com/d0n601/CVE-2025-12973)
 
-### CVE-2025-13156
+### CVE-2025-13156 (2025-11-21)
+
+<code>The Vitepos – Point of Sale (POS) for WooCommerce plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the insert_media_attachment() function in all versions up to, and including, 3.3.0. This is due to the save_update_category_img() function accepting user-supplied file types without validation when processing category images. This makes it possible for authenticated attackers, with subscriber level access and above, to upload arbitrary files on the affected site's server which makes remote code execution possible.
+</code>
+
 - [MooseLoveti/Vitepos-CVE-Report](https://github.com/MooseLoveti/Vitepos-CVE-Report)
 
-### CVE-2025-13159
+### CVE-2025-13159 (2025-11-21)
+
+<code>The Flo Forms – Easy Drag &amp; Drop Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via SVG file uploads in all versions up to, and including, 1.0.43. This is due to the plugin allowing SVG file uploads via an unauthenticated AJAX endpoint (`flo_form_submit`) without proper file content validation. This makes it possible for unauthenticated attackers to upload malicious SVG files containing JavaScript that executes when an administrator views the uploaded file in the WordPress admin interface, leading to potential full site compromise.
+</code>
+
 - [MooseLoveti/Flo-Forms-CVE-Report](https://github.com/MooseLoveti/Flo-Forms-CVE-Report)
 
 ### CVE-2025-13425 (2025-11-20)
@@ -4880,6 +4904,14 @@
 
 - [guard-wait/CVE-2025-40019_POC](https://github.com/guard-wait/CVE-2025-40019_POC)
 
+### CVE-2025-40547 (2025-11-18)
+
+<code>A logic error vulnerability exists in Serv-U which when abused could give a malicious actor with access to admin privileges the ability to execute code. \n\nThis issue requires administrative privileges to abuse. On Windows deployments, the risk is scored as a medium because services frequently run under less-privileged service accounts by default.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-40547](https://github.com/B1ack4sh/Blackash-CVE-2025-40547)
+- [zigzagymym1986/CVE-2025-40547](https://github.com/zigzagymym1986/CVE-2025-40547)
+
 ### CVE-2025-40629 (2025-05-16)
 
 <code>PNETLab 4.2.10 does not properly sanitize user inputs in its file access mechanisms. This allows attackers to perform directory traversal by manipulating file paths in HTTP requests. Specifically, the application is vulnerable to requests that access sensitive files outside the intended directory.
@@ -4949,6 +4981,13 @@
 </code>
 
 - [TheMalwareGuardian/brokeCLAUDIA](https://github.com/TheMalwareGuardian/brokeCLAUDIA)
+
+### CVE-2025-41115 (2025-11-21)
+
+<code>SCIM provisioning was introduced in Grafana Enterprise and Grafana Cloud in April to improve how organizations manage users and teams in Grafana by introducing automated user lifecycle management.\n\nIn Grafana versions 12.x where SCIM provisioning is enabled and configured, a vulnerability in user identity handling allows a malicious or compromised SCIM client to provision a user with a numeric externalId, which in turn could allow to override internal user IDs and lead to impersonation or privilege escalation.\n\nThis vulnerability applies only if all of the following conditions are met:\n- `enableSCIM` feature flag set to true\n- `user_sync_enabled` config option in the `[auth.scim]` block set to true
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-41115](https://github.com/B1ack4sh/Blackash-CVE-2025-41115)
 
 ### CVE-2025-41244 (2025-09-29)
 
@@ -5509,6 +5548,13 @@
 
 - [Zedeldi/CVE-2025-47827](https://github.com/Zedeldi/CVE-2025-47827)
 
+### CVE-2025-47916 (2025-05-16)
+
+<code>Invision Community 5.0.0 before 5.0.7 allows remote code execution via crafted template strings to themeeditor.php. The issue lies within the themeeditor controller (file: /applications/core/modules/front/system/themeeditor.php), where a protected method named customCss can be invoked by unauthenticated users. This method passes the value of the content parameter to the Theme::makeProcessFunction() method; hence it is evaluated by the template engine. Accordingly, this can be exploited by unauthenticated attackers to inject and execute arbitrary PHP code by providing crafted template strings.
+</code>
+
+- [Web3-Serializer/CVE-2025-47916](https://github.com/Web3-Serializer/CVE-2025-47916)
+
 ### CVE-2025-47917 (2025-07-20)
 
 <code>Mbed TLS before 3.6.4 allows a use-after-free in certain situations of applications that are developed in accordance with the documentation. The function mbedtls_x509_string_to_names() takes a head argument that is documented as an output argument. The documentation does not suggest that the function will free that pointer; however, the function does call mbedtls_asn1_free_named_data_list() on that argument, which performs a deep free(). As a result, application code that uses this function (relying only on documented behavior) is likely to still hold pointers to the memory blocks that were freed, resulting in a high risk of use-after-free or double-free. In particular, the two sample programs x509/cert_write and x509/cert_req are affected (use-after-free if the san string contains more than one DN).
@@ -5630,7 +5676,7 @@
 - [logesh-GIT001/CVE-2025-48593](https://github.com/logesh-GIT001/CVE-2025-48593)
 - [letchupkt/CVE-2025-48593](https://github.com/letchupkt/CVE-2025-48593)
 - [zhuowei/blueshrimp](https://github.com/zhuowei/blueshrimp)
-- [rana3333s/CVE-2025-48593](https://github.com/rana3333s/CVE-2025-48593)
+- [ranasen-rat/CVE-2025-48593](https://github.com/ranasen-rat/CVE-2025-48593)
 
 ### CVE-2025-48703 (2025-09-19)
 
@@ -5836,6 +5882,13 @@
 </code>
 
 - [AdityaBhatt3010/CVE-2025-49706-SharePoint-Spoofing-Vulnerability-Under-Active-Exploitation](https://github.com/AdityaBhatt3010/CVE-2025-49706-SharePoint-Spoofing-Vulnerability-Under-Active-Exploitation)
+
+### CVE-2025-49752 (2025-11-20)
+
+<code>Azure Bastion Elevation of Privilege Vulnerability
+</code>
+
+- [skipdurex661/cve-2025-49752-Exploit](https://github.com/skipdurex661/cve-2025-49752-Exploit)
 
 ### CVE-2025-49844 (2025-10-03)
 
@@ -6522,6 +6575,7 @@
 - [go-bi/sharepoint-CVE-2025-53770](https://github.com/go-bi/sharepoint-CVE-2025-53770)
 - [Michaael01/LetsDefend--SOC-342-CVE-2025-53770-SharePoint-Exploit-ToolShell](https://github.com/Michaael01/LetsDefend--SOC-342-CVE-2025-53770-SharePoint-Exploit-ToolShell)
 - [victormbogu1/LetsDefend-SOC342-CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-andRCE-EventID-320](https://github.com/victormbogu1/LetsDefend-SOC342-CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-andRCE-EventID-320)
+- [Cameloo1/sharepoint-toolshell-micro-postmortem](https://github.com/Cameloo1/sharepoint-toolshell-micro-postmortem)
 
 ### CVE-2025-53772 (2025-08-12)
 
@@ -6530,7 +6584,6 @@
 
 - [Momollax/CVE-2025-53772-IIS-WebDeploy-RCE](https://github.com/Momollax/CVE-2025-53772-IIS-WebDeploy-RCE)
 - [go-bi/CVE-2025-53772-](https://github.com/go-bi/CVE-2025-53772-)
-- [SleepNotF0und/CVE-2025-53772-IIS-WebDeploy-RCE-POC](https://github.com/SleepNotF0und/CVE-2025-53772-IIS-WebDeploy-RCE-POC)
 
 ### CVE-2025-53773 (2025-08-12)
 
@@ -7391,13 +7444,6 @@
 
 - [B1ack4sh/Blackash-CVE-2025-59118](https://github.com/B1ack4sh/Blackash-CVE-2025-59118)
 
-### CVE-2025-59253 (2025-10-14)
-
-<code>Improper access control in Microsoft Windows Search Component allows an authorized attacker to deny service locally.
-</code>
-
-- [zigzagymym1986/CVE-2025-59253](https://github.com/zigzagymym1986/CVE-2025-59253)
-
 ### CVE-2025-59287 (2025-10-14)
 
 <code>Deserialization of untrusted data in Windows Server Update Service allows an unauthorized attacker to execute code over a network.
@@ -7737,6 +7783,7 @@
 </code>
 
 - [B1ack4sh/Blackash-CVE-2025-61757](https://github.com/B1ack4sh/Blackash-CVE-2025-61757)
+- [Jinxia62/Oracle-Identity-Manager-CVE-2025-61757](https://github.com/Jinxia62/Oracle-Identity-Manager-CVE-2025-61757)
 
 ### CVE-2025-61765 (2025-10-06)
 
@@ -7768,6 +7815,7 @@
 - [BattalionX/http-oracle-ebs-cve-2025-61882.nse](https://github.com/BattalionX/http-oracle-ebs-cve-2025-61882.nse)
 - [AshrafZaryouh/CVE-2025-61882-Executive-Summary](https://github.com/AshrafZaryouh/CVE-2025-61882-Executive-Summary)
 - [GhoStZA-debug/CVE-2025-61882](https://github.com/GhoStZA-debug/CVE-2025-61882)
+- [Zhert-lab/CVE-2025-61882-CVE-2025-61884](https://github.com/Zhert-lab/CVE-2025-61882-CVE-2025-61884)
 
 ### CVE-2025-61884 (2025-10-12)
 
@@ -7808,13 +7856,6 @@
 - [dexterm300/CVE-2025-62215-exploit-poc](https://github.com/dexterm300/CVE-2025-62215-exploit-poc)
 - [mrk336/Kernel-Chaos-Weaponizing-CVE-2025-62215-for-SYSTEM-Privilege-Escalation](https://github.com/mrk336/Kernel-Chaos-Weaponizing-CVE-2025-62215-for-SYSTEM-Privilege-Escalation)
 - [abrewer251/CVE-2025-62215_Windows_Kernel_PE](https://github.com/abrewer251/CVE-2025-62215_Windows_Kernel_PE)
-
-### CVE-2025-62220 (2025-11-11)
-
-<code>Heap-based buffer overflow in Windows Subsystem for Linux GUI allows an unauthorized attacker to execute code over a network.
-</code>
-
-- [callinston/CVE-2025-62220](https://github.com/callinston/CVE-2025-62220)
 
 ### CVE-2025-62369 (2025-11-04)
 
@@ -7920,6 +7961,7 @@
 </code>
 
 - [WinDyAlphA/CVE-2025-63406-PoC](https://github.com/WinDyAlphA/CVE-2025-63406-PoC)
+- [richard-natan/PoC-CVE-2025-63406](https://github.com/richard-natan/PoC-CVE-2025-63406)
 
 ### CVE-2025-63419 (2025-11-12)
 
@@ -8106,6 +8148,7 @@
 - [rockmelodies/django_sqli_target_CVE-2025-64459](https://github.com/rockmelodies/django_sqli_target_CVE-2025-64459)
 - [nunpa/CVE-2025-64459](https://github.com/nunpa/CVE-2025-64459)
 - [B1ack4sh/Blackash-CVE-2025-64459](https://github.com/B1ack4sh/Blackash-CVE-2025-64459)
+- [omarkurt/django-connector-CVE-2025-64459-testbed](https://github.com/omarkurt/django-connector-CVE-2025-64459-testbed)
 
 ### CVE-2025-64484 (2025-11-10)
 
@@ -11878,6 +11921,13 @@
 - [isPique/CVE-2024-22120-RCE-with-gopher](https://github.com/isPique/CVE-2024-22120-RCE-with-gopher)
 - [g4nkd/CVE-2024-22120-RCE-with-gopher](https://github.com/g4nkd/CVE-2024-22120-RCE-with-gopher)
 
+### CVE-2024-22127 (2024-03-12)
+
+<code>SAP NetWeaver Administrator AS Java (Administrator Log Viewer plug-in) - version 7.50, allows an attacker with high privileges to upload potentially dangerous files which leads to command injection vulnerability. This would enable the attacker to run commands which can cause high impact on confidentiality, integrity and availability of the application.
+</code>
+
+- [mylo-2001/SAPSlayer](https://github.com/mylo-2001/SAPSlayer)
+
 ### CVE-2024-22145 (2024-05-17)
 
 <code>Improper Privilege Management vulnerability in InstaWP Team InstaWP Connect allows Privilege Escalation.This issue affects InstaWP Connect: from n/a through 0.1.0.8.
@@ -13869,6 +13919,7 @@
 - [WebLDix/CVE-2024-31317-PoC-Deployer](https://github.com/WebLDix/CVE-2024-31317-PoC-Deployer)
 - [rifting/Zygotroller](https://github.com/rifting/Zygotroller)
 - [wqry085/PoC-Deployer-System](https://github.com/wqry085/PoC-Deployer-System)
+- [CleoV2/Debuggable-App-Exploit](https://github.com/CleoV2/Debuggable-App-Exploit)
 
 ### CVE-2024-31319 (2024-07-09)
 
@@ -18710,6 +18761,13 @@
 - [khoatran107/cve-2024-58239](https://github.com/khoatran107/cve-2024-58239)
 - [khoatran107/cve-2025-39682](https://github.com/khoatran107/cve-2025-39682)
 
+### CVE-2024-58258 (2025-07-13)
+
+<code>SugarCRM before 13.0.4 and 14.x before 14.0.1 allows SSRF in the API module because a limited type of code injection can occur.
+</code>
+
+- [Web3-Serializer/CVE-2024-58258](https://github.com/Web3-Serializer/CVE-2024-58258)
+
 ### CVE-2024-415770
 - [muhmad-umair/CVE-2024-415770-ssrf-rce](https://github.com/muhmad-umair/CVE-2024-415770-ssrf-rce)
 
@@ -21065,6 +21123,8 @@
 - [killvxk/CVE-2023-22515-joaoviictorti](https://github.com/killvxk/CVE-2023-22515-joaoviictorti)
 - [vivigotnotime/CVE-2023-22515-Exploit-Script](https://github.com/vivigotnotime/CVE-2023-22515-Exploit-Script)
 - [Arkha-Corvus/LetsDefend-SOC235-Atlassian-Confluence-Broken-Access-Control-0-Day-CVE-2023-22515-EventID-197](https://github.com/Arkha-Corvus/LetsDefend-SOC235-Atlassian-Confluence-Broken-Access-Control-0-Day-CVE-2023-22515-EventID-197)
+- [CyberSentinel321/cve-2023-22515-lab](https://github.com/CyberSentinel321/cve-2023-22515-lab)
+- [radzek15/CVE-2023-22515](https://github.com/radzek15/CVE-2023-22515)
 
 ### CVE-2023-22518 (2023-10-31)
 
@@ -21116,6 +21176,7 @@
 - [BBD-YZZ/Confluence-RCE](https://github.com/BBD-YZZ/Confluence-RCE)
 - [kh4sh3i/CVE-2023-22527](https://github.com/kh4sh3i/CVE-2023-22527)
 - [thompson005/CVE-2023-22527](https://github.com/thompson005/CVE-2023-22527)
+- [mylo-2001/AtlassianPwn](https://github.com/mylo-2001/AtlassianPwn)
 
 ### CVE-2023-22551 (2023-01-01)
 
@@ -22751,14 +22812,14 @@
 
 ### CVE-2023-30799 (2023-07-19)
 
-<code>MikroTik RouterOS stable before 6.49.7 and long-term through 6.48.6 are vulnerable to a privilege escalation issue. A remote and authenticated attacker can escalate privileges from admin to super-admin on the Winbox or HTTP interface. The attacker can abuse this vulnerability to execute arbitrary code on the system.\n\n
+<code>MikroTik RouterOS stable before 6.49.7 and long-term through 6.48.6 are vulnerable to a privilege escalation issue. A remote and authenticated attacker can escalate privileges from admin to super-admin on the Winbox or HTTP interface. The attacker can abuse this vulnerability to execute arbitrary code on the system.
 </code>
 
 - [alzeer711/MikroTik-RouterOS-6.49.18-Exploit-Kit](https://github.com/alzeer711/MikroTik-RouterOS-6.49.18-Exploit-Kit)
 
 ### CVE-2023-30800 (2023-09-07)
 
-<code>The web server used by MikroTik RouterOS version 6 is affected by a heap memory corruption issue. A remote and unauthenticated attacker can corrupt the server's heap memory by sending a crafted HTTP request. As a result, the web interface crashes and is immediately restarted. The issue was fixed in RouterOS 6.49.10 stable. RouterOS version 7 is not affected.\n
+<code>The web server used by MikroTik RouterOS version 6 is affected by a heap memory corruption issue. A remote and unauthenticated attacker can corrupt the server's heap memory by sending a crafted HTTP request. As a result, the web interface crashes and is immediately restarted. The issue was fixed in RouterOS 6.49.10 stable. RouterOS version 7 is not affected.
 </code>
 
 - [griffinsectio/CVE-2023-30800_PoC](https://github.com/griffinsectio/CVE-2023-30800_PoC)
@@ -30469,6 +30530,7 @@
 </code>
 
 - [Altelus1/CVE-2022-24707](https://github.com/Altelus1/CVE-2022-24707)
+- [thepiyushkumarshukla/CVE-2022-24707_AnukoTimeTracker_Version-1.20.0_POC](https://github.com/thepiyushkumarshukla/CVE-2022-24707_AnukoTimeTracker_Version-1.20.0_POC)
 
 ### CVE-2022-24713 (2022-03-08)
 
@@ -36308,7 +36370,7 @@
 - [Milad-Rafie/PwnKit-Local-Privilege-Escalation-Vulnerability-Discovered-in-polkit-s-pkexec-CVE-2021-4034](https://github.com/Milad-Rafie/PwnKit-Local-Privilege-Escalation-Vulnerability-Discovered-in-polkit-s-pkexec-CVE-2021-4034)
 - [kali-guru/Pwnkit-CVE-2021-4034](https://github.com/kali-guru/Pwnkit-CVE-2021-4034)
 - [BugVex/Poison-HTB-Report](https://github.com/BugVex/Poison-HTB-Report)
-- [radzek15/Python-Pwnkit-CVE-2021-4034-exploit](https://github.com/radzek15/Python-Pwnkit-CVE-2021-4034-exploit)
+- [radzek15/CVE-2021-4034](https://github.com/radzek15/CVE-2021-4034)
 - [dr4xp/pwnkit-helper](https://github.com/dr4xp/pwnkit-helper)
 - [kaisen-bot/pwnkit-helper](https://github.com/kaisen-bot/pwnkit-helper)
 - [zaaraZiof0/pkexec-exploit-CVE](https://github.com/zaaraZiof0/pkexec-exploit-CVE)
