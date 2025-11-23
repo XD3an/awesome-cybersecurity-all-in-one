@@ -1904,6 +1904,7 @@
 
 - [dptsec/CVE-2025-10230](https://github.com/dptsec/CVE-2025-10230)
 - [B1ack4sh/Blackash-CVE-2025-10230](https://github.com/B1ack4sh/Blackash-CVE-2025-10230)
+- [nehkark/CVE-2025-10230](https://github.com/nehkark/CVE-2025-10230)
 
 ### CVE-2025-10351 (2025-10-08)
 
@@ -1990,6 +1991,8 @@
 - [shalevo13/Se7enSlip](https://github.com/shalevo13/Se7enSlip)
 - [pacbypass/CVE-2025-11001](https://github.com/pacbypass/CVE-2025-11001)
 - [lastvocher/7zip-CVE-2025-11001](https://github.com/lastvocher/7zip-CVE-2025-11001)
+- [mbanyamer/CVE-2025-11001---7-Zip](https://github.com/mbanyamer/CVE-2025-11001---7-Zip)
+- [ranasen-rat/CVE-2025-11001](https://github.com/ranasen-rat/CVE-2025-11001)
 
 ### CVE-2025-11077 (2025-09-27)
 
@@ -3384,6 +3387,7 @@
 </code>
 
 - [sandsoncosta/CVE-2025-26633](https://github.com/sandsoncosta/CVE-2025-26633)
+- [mbanyamer/MSC-EvilTwin-Local-Privilege-Escalation](https://github.com/mbanyamer/MSC-EvilTwin-Local-Privilege-Escalation)
 
 ### CVE-2025-26686 (2025-04-08)
 
@@ -3874,7 +3878,6 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [KaztoRay/CVE-2025-29927-Research](https://github.com/KaztoRay/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -8566,7 +8569,7 @@
 - [Matrexdz/CVE-2024-1071](https://github.com/Matrexdz/CVE-2024-1071)
 - [Matrexdz/CVE-2024-1071-Docker](https://github.com/Matrexdz/CVE-2024-1071-Docker)
 - [gh-ost00/CVE-2024-1071-SQL-Injection](https://github.com/gh-ost00/CVE-2024-1071-SQL-Injection)
-- [Dogu589/WordPress-Exploit-CVE-2024-1071](https://github.com/Dogu589/WordPress-Exploit-CVE-2024-1071)
+- [dogucyber/WordPress-Exploit-CVE-2024-1071](https://github.com/dogucyber/WordPress-Exploit-CVE-2024-1071)
 - [Spid3heX/CVE-2024-1071-PoC-Script](https://github.com/Spid3heX/CVE-2024-1071-PoC-Script)
 
 ### CVE-2024-1086 (2024-01-31)
@@ -33604,7 +33607,6 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -56568,6 +56570,7 @@
 - [adjaliya/-CVE-2017-7494-Samba-Exploit-POC](https://github.com/adjaliya/-CVE-2017-7494-Samba-Exploit-POC)
 - [00mjk/exploit-CVE-2017-7494](https://github.com/00mjk/exploit-CVE-2017-7494)
 - [d3fudd/CVE-2017-7494_SambaCry](https://github.com/d3fudd/CVE-2017-7494_SambaCry)
+- [FelipeR-UFBA/cve-2017-7494-fixed](https://github.com/FelipeR-UFBA/cve-2017-7494-fixed)
 
 ### CVE-2017-7504 (2017-05-19)
 
