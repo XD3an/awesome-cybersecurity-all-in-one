@@ -441,6 +441,13 @@
 
 - [ubaydev/CVE-2025-2594](https://github.com/ubaydev/CVE-2025-2594)
 
+### CVE-2025-2598 (2025-03-21)
+
+<code>When the AWS Cloud Development Kit (AWS CDK) Command Line Interface (AWS CDK CLI) is used with a credential plugin which returns an expiration property with the retrieved AWS credentials, the credentials are printed to the console output. To mitigate this issue, users should upgrade to version 2.178.2 or later and ensure any forked or derivative code is patched to incorporate the new fixes.
+</code>
+
+- [Catnip-Express-Maxim/AWSTESTEXPLOIT](https://github.com/Catnip-Express-Maxim/AWSTESTEXPLOIT)
+
 ### CVE-2025-2620 (2025-03-22)
 
 <code>In D-Link DAP-1620 1.03 wurde eine kritische Schwachstelle gefunden. Betroffen ist die Funktion mod_graph_auth_uri_handler der Datei /storage der Komponente Authentication Handler. Durch die Manipulation mit unbekannten Daten kann eine stack-based buffer overflow-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk passieren. Der Exploit steht zur öffentlichen Verfügung.
@@ -1079,6 +1086,7 @@
 - [rootxsushant/Citrix-NetScaler-Memory-Leak-CVE-2025-5777](https://github.com/rootxsushant/Citrix-NetScaler-Memory-Leak-CVE-2025-5777)
 - [ndr-repo/CVE-2025-5777](https://github.com/ndr-repo/CVE-2025-5777)
 - [mr-r3b00t/CVE-2025-5777](https://github.com/mr-r3b00t/CVE-2025-5777)
+- [rashedhasan090/CVE-2025-5777](https://github.com/rashedhasan090/CVE-2025-5777)
 
 ### CVE-2025-5815 (2025-06-13)
 
@@ -1532,6 +1540,7 @@
 - [papcaii2004/CVE-2025-8088-WinRAR-builder](https://github.com/papcaii2004/CVE-2025-8088-WinRAR-builder)
 - [B1ack4sh/Blackash-CVE-2025-8088](https://github.com/B1ack4sh/Blackash-CVE-2025-8088)
 - [nuky-alt/CVE-2025-8088](https://github.com/nuky-alt/CVE-2025-8088)
+- [h0melike/cve-2025-8088](https://github.com/h0melike/cve-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1669,6 +1678,13 @@
 </code>
 
 - [siberkampus/CVE-2025-8889](https://github.com/siberkampus/CVE-2025-8889)
+
+### CVE-2025-8943 (2025-08-14)
+
+<code>The Custom MCPs feature is designed to execute OS commands, for instance, using tools like `npx` to spin up local MCP Servers. However, Flowise's inherent authentication and authorization model is minimal and lacks role-based access controls (RBAC). Furthermore, in Flowise versions before 3.0.1 the default installation operates without authentication unless explicitly configured. This combination allows unauthenticated network attackers to execute unsandboxed OS commands.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-8943](https://github.com/B1ack4sh/Blackash-CVE-2025-8943)
 
 ### CVE-2025-8971 (2025-08-14)
 
@@ -2672,6 +2688,7 @@
 - [moften/CVE-2025-24054](https://github.com/moften/CVE-2025-24054)
 - [Yuri08loveElaina/CVE-2025-24054_POC](https://github.com/Yuri08loveElaina/CVE-2025-24054_POC)
 - [Wind010/CVE-2025-24054_PoC](https://github.com/Wind010/CVE-2025-24054_PoC)
+- [Untouchable17/CVE-2025-24054](https://github.com/Untouchable17/CVE-2025-24054)
 
 ### CVE-2025-24071 (2025-03-11)
 
@@ -3923,7 +3940,6 @@
 - [Bongni/CVE-2025-29927](https://github.com/Bongni/CVE-2025-29927)
 - [NS-Projects-Unina/CTF_CVE_DSP_1](https://github.com/NS-Projects-Unina/CTF_CVE_DSP_1)
 - [lucaschanzx/CVE-2025-29927-PoC](https://github.com/lucaschanzx/CVE-2025-29927-PoC)
-- [BugHawak/CVE-2025-29927](https://github.com/BugHawak/CVE-2025-29927)
 
 ### CVE-2025-29972 (2025-05-08)
 
@@ -5638,7 +5654,11 @@
 
 - [shipcod3/CVE-2025-48466](https://github.com/shipcod3/CVE-2025-48466)
 
-### CVE-2025-48507
+### CVE-2025-48507 (2025-11-23)
+
+<code>The security state of the calling processor into Arm® Trusted Firmware (TF-A) is not used and could potentially allow non-secure processors access to secure memories, access to crypto operations, and the ability to turn on and off subsystems within the SOC.
+</code>
+
 - [jdbonfils/PoC_CVE-2025-48507](https://github.com/jdbonfils/PoC_CVE-2025-48507)
 
 ### CVE-2025-48543 (2025-09-04)
@@ -5917,6 +5937,14 @@
 - [zenzue/CVE-2025-50154](https://github.com/zenzue/CVE-2025-50154)
 - [rubenformation/CVE-2025-50154](https://github.com/rubenformation/CVE-2025-50154)
 - [Ash1996x/CVE-2025-50154-Aggressor-Script](https://github.com/Ash1996x/CVE-2025-50154-Aggressor-Script)
+
+### CVE-2025-50165 (2025-08-12)
+
+<code>Untrusted pointer dereference in Microsoft Graphics Component allows an unauthorized attacker to execute code over a network.
+</code>
+
+- [callinston/CVE-2025-50165](https://github.com/callinston/CVE-2025-50165)
+- [blintray/CVE-2025-50165](https://github.com/blintray/CVE-2025-50165)
 
 ### CVE-2025-50168 (2025-08-12)
 
@@ -8172,6 +8200,9 @@
 - [B1ack4sh/Blackash-CVE-2025-64513](https://github.com/B1ack4sh/Blackash-CVE-2025-64513)
 - [shinyseam/CVE-2025-64513](https://github.com/shinyseam/CVE-2025-64513)
 
+### CVE-2025-65018
+- [Neo-Neo6/CVE-2025-65018-Heap-buffer-overflow-in-libpng-ps4-ps5-](https://github.com/Neo-Neo6/CVE-2025-65018-Heap-buffer-overflow-in-libpng-ps4-ps5-)
+
 ### CVE-2025-65482
 - [AT190510-Cuong/CVE-2025-65482-XXE-](https://github.com/AT190510-Cuong/CVE-2025-65482-XXE-)
 
@@ -8804,13 +8835,6 @@
 </code>
 
 - [renancesarr/G3-Loop-DoS](https://github.com/renancesarr/G3-Loop-DoS)
-
-### CVE-2024-2188 (2024-03-05)
-
-<code>Cross-Site Scripting (XSS) vulnerability stored in TP-Link Archer AX50 affecting firmware version 1.0.11 build 2022052. This vulnerability could allow an unauthenticated attacker to create a port mapping rule via a SOAP request and store a malicious JavaScript payload within that rule, which could result in an execution of the JavaScript payload when the rule is loaded.
-</code>
-
-- [hacefresko/CVE-2024-2188](https://github.com/hacefresko/CVE-2024-2188)
 
 ### CVE-2024-2193 (2024-03-15)
 
@@ -10754,6 +10778,7 @@
 - [candranapits/poc-CVE-2024-10220](https://github.com/candranapits/poc-CVE-2024-10220)
 - [orgC/CVE-2024-10220-demo](https://github.com/orgC/CVE-2024-10220-demo)
 - [mrk336/CVE-2024-10220-Kubernetes-gitRepo-Volume-Vulnerability](https://github.com/mrk336/CVE-2024-10220-Kubernetes-gitRepo-Volume-Vulnerability)
+- [saleha-muzammil/cve-2024-10220-git-on-git](https://github.com/saleha-muzammil/cve-2024-10220-git-on-git)
 
 ### CVE-2024-10245 (2024-11-12)
 
@@ -25111,6 +25136,7 @@
 </code>
 
 - [z1ph1us/MilkSad-Mnemonic-Generator](https://github.com/z1ph1us/MilkSad-Mnemonic-Generator)
+- [zoeir/BTCDetect-Scientific-Methodology](https://github.com/zoeir/BTCDetect-Scientific-Methodology)
 
 ### CVE-2023-40000 (2024-04-16)
 
@@ -55667,6 +55693,7 @@
 - [AdityaBhatt3010/VAPT-Report-on-SMB-Exploitation-in-Windows-10-Finance-Endpoint](https://github.com/AdityaBhatt3010/VAPT-Report-on-SMB-Exploitation-in-Windows-10-Finance-Endpoint)
 - [nivedh-j/EternalBlue-Explained](https://github.com/nivedh-j/EternalBlue-Explained)
 - [B1ack4sh/Blackash-CVE-2017-0144](https://github.com/B1ack4sh/Blackash-CVE-2017-0144)
+- [AbbeAlthany/Windows-7_och_CVE-2017-0144_Exploit](https://github.com/AbbeAlthany/Windows-7_och_CVE-2017-0144_Exploit)
 
 ### CVE-2017-0145 (2017-03-17)
 
