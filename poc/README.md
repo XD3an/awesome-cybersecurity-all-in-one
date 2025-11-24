@@ -8072,6 +8072,9 @@
 ### CVE-2025-63729
 - [Yashodhanvivek/CVE-2025-63729-Syrotech-SY-GPON-1110-](https://github.com/Yashodhanvivek/CVE-2025-63729-Syrotech-SY-GPON-1110-)
 
+### CVE-2025-63735
+- [huthx/CVE-2025-63735-Ruckus-Unleashed-Reflected-XSS](https://github.com/huthx/CVE-2025-63735-Ruckus-Unleashed-Reflected-XSS)
+
 ### CVE-2025-63820
 - [Xernary/CVE-2025-63820](https://github.com/Xernary/CVE-2025-63820)
 
