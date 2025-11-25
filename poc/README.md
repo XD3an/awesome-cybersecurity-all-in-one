@@ -447,6 +447,7 @@
 </code>
 
 - [Catnip-Express-Maxim/AWSTESTEXPLOIT](https://github.com/Catnip-Express-Maxim/AWSTESTEXPLOIT)
+- [SallyXVIII/Final-Proj](https://github.com/SallyXVIII/Final-Proj)
 
 ### CVE-2025-2620 (2025-03-22)
 
@@ -1540,7 +1541,6 @@
 - [papcaii2004/CVE-2025-8088-WinRAR-builder](https://github.com/papcaii2004/CVE-2025-8088-WinRAR-builder)
 - [B1ack4sh/Blackash-CVE-2025-8088](https://github.com/B1ack4sh/Blackash-CVE-2025-8088)
 - [nuky-alt/CVE-2025-8088](https://github.com/nuky-alt/CVE-2025-8088)
-- [h0melike/cve-2025-8088](https://github.com/h0melike/cve-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -2009,6 +2009,7 @@
 - [lastvocher/7zip-CVE-2025-11001](https://github.com/lastvocher/7zip-CVE-2025-11001)
 - [mbanyamer/CVE-2025-11001---7-Zip](https://github.com/mbanyamer/CVE-2025-11001---7-Zip)
 - [ranasen-rat/CVE-2025-11001](https://github.com/ranasen-rat/CVE-2025-11001)
+- [B1ack4sh/Blackash-CVE-2025-11001](https://github.com/B1ack4sh/Blackash-CVE-2025-11001)
 
 ### CVE-2025-11077 (2025-09-27)
 
@@ -2218,6 +2219,16 @@
 </code>
 
 - [MooseLoveti/Flo-Forms-CVE-Report](https://github.com/MooseLoveti/Flo-Forms-CVE-Report)
+
+### CVE-2025-13223 (2025-11-17)
+
+<code>Type Confusion in V8 in Google Chrome prior to 142.0.7444.175 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+</code>
+
+- [Darwin72820/CVE-2025-13223](https://github.com/Darwin72820/CVE-2025-13223)
+
+### CVE-2025-13380
+- [d0n601/CVE-2025-13380](https://github.com/d0n601/CVE-2025-13380)
 
 ### CVE-2025-13425 (2025-11-20)
 
@@ -4825,6 +4836,13 @@
 
 - [14mb1v45h/CVE-2025-38676](https://github.com/14mb1v45h/CVE-2025-38676)
 
+### CVE-2025-38678 (2025-09-03)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_tables: reject duplicate device on updates\n\nA chain/flowtable update with duplicated devices in the same batch is\npossible. Unfortunately, netdev event path only removes the first\ndevice that is found, leaving unregistered the hook of the duplicated\ndevice.\n\nCheck if a duplicated device exists in the transaction batch, bail out\nwith EEXIST in such case.\n\nWARNING is hit when unregistering the hook:\n\n [49042.221275] WARNING: CPU: 4 PID: 8425 at net/netfilter/core.c:340 nf_hook_entry_head+0xaa/0x150\n [49042.221375] CPU: 4 UID: 0 PID: 8425 Comm: nft Tainted: G S                  6.16.0+ #170 PREEMPT(full)\n [...]\n [49042.221382] RIP: 0010:nf_hook_entry_head+0xaa/0x150
+</code>
+
+- [guard-wait/CVE-2025-38678_POC](https://github.com/guard-wait/CVE-2025-38678_POC)
+
 ### CVE-2025-39436 (2025-04-17)
 
 <code>Unrestricted Upload of File with Dangerous Type vulnerability in aidraw I Draw allows Using Malicious Files. This issue affects I Draw: from n/a through 1.0.
@@ -5897,7 +5915,7 @@
 <code>Azure Bastion Elevation of Privilege Vulnerability
 </code>
 
-- [skipdurex661/cve-2025-49752-Exploit](https://github.com/skipdurex661/cve-2025-49752-Exploit)
+- [boogabearbombernub/cve-2025-49752-lab](https://github.com/boogabearbombernub/cve-2025-49752-lab)
 
 ### CVE-2025-49844 (2025-10-03)
 
@@ -5944,7 +5962,7 @@
 </code>
 
 - [callinston/CVE-2025-50165](https://github.com/callinston/CVE-2025-50165)
-- [blintray/CVE-2025-50165](https://github.com/blintray/CVE-2025-50165)
+- [fluxmoth/CVE-2025-50165](https://github.com/fluxmoth/CVE-2025-50165)
 
 ### CVE-2025-50168 (2025-08-12)
 
@@ -6226,7 +6244,7 @@
 
 ### CVE-2025-51591 (2025-07-11)
 
-<code>A Server-Side Request Forgery (SSRF) in JGM Pandoc v3.6.4 allows attackers to gain access to and compromise the whole infrastructure via injecting a crafted iframe.
+<code>A Server-Side Request Forgery (SSRF) in JGM Pandoc v3.6.4 allows attackers to gain access to and compromise the whole infrastructure via injecting a crafted iframe. Note: Some users have stated that Pandoc by default can retrieve and parse untrusted HTML content which can enable SSRF vulnerabilities. Using the ‘--sandbox’ option or ‘pandoc-server’ can mitigate such vulnerabilities. Using pandoc with an external ‘--pdf-engine’ can also enable SSRF vulnerabilities, such as CVE-2022-35583 in wkhtmltopdf.
 </code>
 
 - [Malayke/CVE-2025-51591-Pandoc-SSRF-POC](https://github.com/Malayke/CVE-2025-51591-Pandoc-SSRF-POC)
@@ -6721,6 +6739,7 @@
 
 - [rockmelodies/bentoml_CVE-2025-54381](https://github.com/rockmelodies/bentoml_CVE-2025-54381)
 - [B1ack4sh/Blackash-CVE-2025-54381](https://github.com/B1ack4sh/Blackash-CVE-2025-54381)
+- [IS8123/CVE-2025-54381](https://github.com/IS8123/CVE-2025-54381)
 
 ### CVE-2025-54424 (2025-08-01)
 
@@ -7408,6 +7427,7 @@
 </code>
 
 - [B1ack4sh/Blackash-CVE-2025-58034](https://github.com/B1ack4sh/Blackash-CVE-2025-58034)
+- [fluxmoth/CVE-2025-58034](https://github.com/fluxmoth/CVE-2025-58034)
 
 ### CVE-2025-58179 (2025-09-04)
 
@@ -7923,6 +7943,16 @@
 
 - [edera-dev/cve-tarmageddon](https://github.com/edera-dev/cve-tarmageddon)
 
+### CVE-2025-62726 (2025-10-30)
+
+<code>n8n is an open source workflow automation platform. Prior to 1.113.0, a remote code execution vulnerability exists in the Git Node component available in both Cloud and Self-Hosted versions of n8n. When a malicious actor clones a remote repository containing a pre-commit hook, the subsequent use of the Commit operation in the Git Node can inadvertently trigger the hook’s execution. This allows attackers to execute arbitrary code within the n8n environment, potentially compromising the system and any connected credentials or workflows. This vulnerability is fixed in 1.113.0.
+</code>
+
+- [baktistr/CVE-2025-62726-POC---n8n-Git-Node-RCE](https://github.com/baktistr/CVE-2025-62726-POC---n8n-Git-Node-RCE)
+- [baktistr/cve-2025-62726-malicious-repo](https://github.com/baktistr/cve-2025-62726-malicious-repo)
+- [baktistr/cve-2025-62726-poc](https://github.com/baktistr/cve-2025-62726-poc)
+- [baktistr/cve-2025-62726-legit-repo](https://github.com/baktistr/cve-2025-62726-legit-repo)
+
 ### CVE-2025-62727 (2025-10-28)
 
 <code>Starlette is a lightweight ASGI framework/toolkit. Starting in version 0.39.0 and prior to version 0.49.1 , an unauthenticated attacker can send a crafted HTTP Range header that triggers quadratic-time processing in Starlette's FileResponse Range parsing/merging logic. This enables CPU exhaustion per request, causing denial‑of‑service for endpoints serving files (e.g., StaticFiles or any use of FileResponse). This vulnerability is fixed in 0.49.1.
@@ -8001,7 +8031,11 @@
 
 - [Kgan0509/CVE-2025-63441](https://github.com/Kgan0509/CVE-2025-63441)
 
-### CVE-2025-63498
+### CVE-2025-63498 (2025-11-24)
+
+<code>alinto SOGo 5.12.3 is vulnerable to Cross Site Scripting (XSS) via the &quot;userName&quot; parameter.
+</code>
+
 - [xryptoh/CVE-2025-63498](https://github.com/xryptoh/CVE-2025-63498)
 
 ### CVE-2025-63499
@@ -8109,8 +8143,15 @@
 
 - [minhajultaivin/security-advisories](https://github.com/minhajultaivin/security-advisories)
 
-### CVE-2025-63914
+### CVE-2025-63914 (2025-11-24)
+
+<code>An issue was discovered in Cinnamon kotaemon 0.11.0. The _may_extract_zip function in the \libs\ktem\ktem\index\file\ui.py file does not check the contents of uploaded ZIP files. Although the contents are extracted into a temporary folder that is cleared before each extraction, successfully uploading a ZIP bomb could still cause the server to consume excessive resources during decompression. Moreover, if no further files are uploaded afterward, the extracted data could occupy disk space and potentially render the system unavailable. Anyone with permission to upload files can carry out this attack.
+</code>
+
 - [WxDou/CVE-2025-63914](https://github.com/WxDou/CVE-2025-63914)
+
+### CVE-2025-63915
+- [zero-day348/CVE-2025-63915-There-is-a-Reflected-xss-vulnerability-exists-in-DoraCMS](https://github.com/zero-day348/CVE-2025-63915-There-is-a-Reflected-xss-vulnerability-exists-in-DoraCMS)
 
 ### CVE-2025-63943
 - [RedOpsX/CVE-2025-63943](https://github.com/RedOpsX/CVE-2025-63943)
@@ -8203,11 +8244,40 @@
 - [B1ack4sh/Blackash-CVE-2025-64513](https://github.com/B1ack4sh/Blackash-CVE-2025-64513)
 - [shinyseam/CVE-2025-64513](https://github.com/shinyseam/CVE-2025-64513)
 
-### CVE-2025-65018
+### CVE-2025-64720 (2025-11-24)
+
+<code>LIBPNG is a reference library for use in applications that read, create, and manipulate PNG (Portable Network Graphics) raster image files. From version 1.6.0 to before 1.6.51, an out-of-bounds read vulnerability exists in png_image_read_composite when processing palette images with PNG_FLAG_OPTIMIZE_ALPHA enabled. The palette compositing code in png_init_read_transformations incorrectly applies background compositing during premultiplication, violating the invariant component ≤ alpha × 257 required by the simplified PNG API. This issue has been patched in version 1.6.51.
+</code>
+
+- [truediogo/CVE-2025-64720](https://github.com/truediogo/CVE-2025-64720)
+
+### CVE-2025-65018 (2025-11-24)
+
+<code>LIBPNG is a reference library for use in applications that read, create, and manipulate PNG (Portable Network Graphics) raster image files. From version 1.6.0 to before 1.6.51, there is a heap buffer overflow vulnerability in the libpng simplified API function png_image_finish_read when processing 16-bit interlaced PNGs with 8-bit output format. Attacker-crafted interlaced PNG files cause heap writes beyond allocated buffer bounds. This issue has been patched in version 1.6.51.
+</code>
+
 - [Neo-Neo6/CVE-2025-65018-Heap-buffer-overflow-in-libpng-ps4-ps5-](https://github.com/Neo-Neo6/CVE-2025-65018-Heap-buffer-overflow-in-libpng-ps4-ps5-)
 
 ### CVE-2025-65482
 - [AT190510-Cuong/CVE-2025-65482-XXE-](https://github.com/AT190510-Cuong/CVE-2025-65482-XXE-)
+
+### CVE-2025-65669
+- [Rivek619/CVE-2025-65669](https://github.com/Rivek619/CVE-2025-65669)
+
+### CVE-2025-65670
+- [Rivek619/CVE-2025-65670](https://github.com/Rivek619/CVE-2025-65670)
+
+### CVE-2025-65672
+- [Rivek619/CVE-2025-65672](https://github.com/Rivek619/CVE-2025-65672)
+
+### CVE-2025-65675
+- [Rivek619/CVE-2025-65675](https://github.com/Rivek619/CVE-2025-65675)
+
+### CVE-2025-65676
+- [Rivek619/CVE-2025-65676](https://github.com/Rivek619/CVE-2025-65676)
+
+### CVE-2025-65681
+- [Rivek619/CVE-2025-65681](https://github.com/Rivek619/CVE-2025-65681)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -11187,6 +11257,7 @@
 
 - [themirze/cve-2024-12084](https://github.com/themirze/cve-2024-12084)
 - [rxerium/CVE-2024-12084](https://github.com/rxerium/CVE-2024-12084)
+- [InkeyP/CVE-2024-12084](https://github.com/InkeyP/CVE-2024-12084)
 
 ### CVE-2024-12085 (2025-01-14)
 
@@ -12672,7 +12743,7 @@
 <code>Rust is a programming language. The Rust Security Response WG was notified that the Rust standard library prior to version 1.77.2 did not properly escape arguments when invoking batch files (with the `bat` and `cmd` extensions) on Windows using the `Command`. An attacker able to control the arguments passed to the spawned process could execute arbitrary shell commands by bypassing the escaping. The severity of this vulnerability is critical for those who invoke batch files on Windows with untrusted arguments. No other platform or use is affected.\n\nThe `Command::arg` and `Command::args` APIs state in their documentation that the arguments will be passed to the spawned process as-is, regardless of the content of the arguments, and will not be evaluated by a shell. This means it should be safe to pass untrusted input as an argument.\n\nOn Windows, the implementation of this is more complex than other platforms, because the Windows API only provides a single string containing all the arguments to the spawned process, and it's up to the spawned process to split them. Most programs use the standard C run-time argv, which in practice results in a mostly consistent way arguments are splitted.\n\nOne exception though is `cmd.exe` (used among other things to execute batch files), which has its own argument splitting logic. That forces the standard library to implement custom escaping for arguments passed to batch files. Unfortunately it was reported that our escaping logic was not thorough enough, and it was possible to pass malicious arguments that would result in arbitrary shell execution.\n\nDue to the complexity of `cmd.exe`, we didn't identify a solution that would correctly escape arguments in all cases. To maintain our API guarantees, we improved the robustness of the escaping code, and changed the `Command` API to return an `InvalidInput` error when it cannot safely escape an argument. This error will be emitted when spawning the process.\n\nThe fix is included in Rust 1.77.2. Note that the new escaping logic for batch files errs on the conservative side, and could reject valid arguments. Those who implement the escaping themselves or only handle trusted inputs on Windows can also use the `CommandExt::raw_arg` method to bypass the standard library's escaping logic.
 </code>
 
-- [frostb1ten/CVE-2024-24576-PoC](https://github.com/frostb1ten/CVE-2024-24576-PoC)
+- [nasa-frostb1te/CVE-2024-24576-PoC](https://github.com/nasa-frostb1te/CVE-2024-24576-PoC)
 - [brains93/CVE-2024-24576-PoC-Python](https://github.com/brains93/CVE-2024-24576-PoC-Python)
 - [aydinnyunus/CVE-2024-24576-Exploit](https://github.com/aydinnyunus/CVE-2024-24576-Exploit)
 - [foxoman/CVE-2024-24576-PoC---Nim](https://github.com/foxoman/CVE-2024-24576-PoC---Nim)
@@ -24419,6 +24490,7 @@
 - [ifconfig-me/CVE-2023-36845](https://github.com/ifconfig-me/CVE-2023-36845)
 - [e11i0t4lders0n/CVE-2023-36845](https://github.com/e11i0t4lders0n/CVE-2023-36845)
 - [Vignesh2712/Automation-for-Juniper-cve-2023-36845](https://github.com/Vignesh2712/Automation-for-Juniper-cve-2023-36845)
+- [kopfjager007/CVE-2023-36845](https://github.com/kopfjager007/CVE-2023-36845)
 
 ### CVE-2023-36846 (2023-08-17)
 
@@ -49045,6 +49117,7 @@
 - [ianxtianxt/CVE-2019-8451](https://github.com/ianxtianxt/CVE-2019-8451)
 - [jas502n/CVE-2019-8451](https://github.com/jas502n/CVE-2019-8451)
 - [h0ffayyy/Jira-CVE-2019-8451](https://github.com/h0ffayyy/Jira-CVE-2019-8451)
+- [b0ul1/CVE-2019-8451](https://github.com/b0ul1/CVE-2019-8451)
 
 ### CVE-2019-8540 (2019-12-18)
 
@@ -54188,6 +54261,7 @@
 - [llamaonsecurity/CVE-2018-12533](https://github.com/llamaonsecurity/CVE-2018-12533)
 - [Pastea/CVE-2018-12533](https://github.com/Pastea/CVE-2018-12533)
 - [mhagnumdw/richfaces-vulnerability-cve-2018-12533-rf-14310](https://github.com/mhagnumdw/richfaces-vulnerability-cve-2018-12533-rf-14310)
+- [LucasKatashi/paint2die](https://github.com/LucasKatashi/paint2die)
 
 ### CVE-2018-12537 (2018-08-14)
 
