@@ -1209,6 +1209,13 @@
 - [mbadanoiu/CVE-2025-6384](https://github.com/mbadanoiu/CVE-2025-6384)
 - [maestro-ant/CrafterCMS-CVE-2025-6384](https://github.com/maestro-ant/CrafterCMS-CVE-2025-6384)
 
+### CVE-2025-6389 (2025-11-25)
+
+<code>The Sneeit Framework plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 8.3 via the sneeit_articles_pagination_callback() function. This is due to the function accepting user input and then passing that through call_user_func(). This makes it possible for unauthenticated attackers to execute code on the server which can be leveraged to inject backdoors or, for example, create new administrative user accounts.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-6389](https://github.com/B1ack4sh/Blackash-CVE-2025-6389)
+
 ### CVE-2025-6440 (2025-10-24)
 
 <code>The WooCommerce Designer Pro plugin for WordPress, used by the Pricom - Printing Company &amp; Design Services WordPress theme, is vulnerable to arbitrary file uploads due to missing file type validation in the 'wcdp_save_canvas_design_ajax' function in all versions up to, and including, 1.9.26. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
@@ -1248,6 +1255,7 @@
 - [mistymntncop/CVE-2025-6554](https://github.com/mistymntncop/CVE-2025-6554)
 - [jopraveen/CVE-2025-6554](https://github.com/jopraveen/CVE-2025-6554)
 - [Muhammednihalmp/Google-chrome-zero-day](https://github.com/Muhammednihalmp/Google-chrome-zero-day)
+- [aklnjakln/CVE-2025-6554](https://github.com/aklnjakln/CVE-2025-6554)
 
 ### CVE-2025-6558 (2025-07-15)
 
@@ -2220,14 +2228,11 @@
 
 - [MooseLoveti/Flo-Forms-CVE-Report](https://github.com/MooseLoveti/Flo-Forms-CVE-Report)
 
-### CVE-2025-13223 (2025-11-17)
+### CVE-2025-13380 (2025-11-25)
 
-<code>Type Confusion in V8 in Google Chrome prior to 142.0.7444.175 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+<code>The AI Engine for WordPress: ChatGPT, GPT Content Generator plugin for WordPress is vulnerable to Arbitrary File Read in all versions up to, and including, 1.0.1. This is due to insufficient validation of user-supplied file paths in the 'lqdai_update_post' AJAX endpoint and the use of file_get_contents() with user-controlled URLs without protocol restrictions in the insert_image() function. This makes it possible for authenticated attackers, with Contributor-level access and above, to read the contents of arbitrary files on the server, which can contain sensitive information.
 </code>
 
-- [Darwin72820/CVE-2025-13223](https://github.com/Darwin72820/CVE-2025-13223)
-
-### CVE-2025-13380
 - [d0n601/CVE-2025-13380](https://github.com/d0n601/CVE-2025-13380)
 
 ### CVE-2025-13425 (2025-11-20)
@@ -2236,6 +2241,20 @@
 </code>
 
 - [0xXA/google-poc](https://github.com/0xXA/google-poc)
+
+### CVE-2025-13595 (2025-11-25)
+
+<code>The CIBELES AI plugin for WordPress is vulnerable to arbitrary file uploads due to missing capability check in the 'actualizador_git.php' file in all versions up to, and including, 1.10.8. This makes it possible for unauthenticated attackers to download arbitrary GitHub repositories and overwrite plugin files on the affected site's server which may make remote code execution possible.
+</code>
+
+- [d0n601/CVE-2025-13595](https://github.com/d0n601/CVE-2025-13595)
+
+### CVE-2025-13597 (2025-11-25)
+
+<code>The AI Feeds plugin for WordPress is vulnerable to arbitrary file uploads due to missing capability check in the 'actualizador_git.php' file in all versions up to, and including, 1.0.11. This makes it possible for unauthenticated attackers to download arbitrary GitHub repositories and overwrite plugin files on the affected site's server which may make remote code execution possible.
+</code>
+
+- [d0n601/CVE-2025-13597](https://github.com/d0n601/CVE-2025-13597)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -4640,7 +4659,7 @@
 - [obscura-cert/CVE-2025-33073](https://github.com/obscura-cert/CVE-2025-33073)
 - [matejsmycka/CVE-2025-33073-checker](https://github.com/matejsmycka/CVE-2025-33073-checker)
 - [cve-2025-33073/cve-2025-33073](https://github.com/cve-2025-33073/cve-2025-33073)
-- [SellMeFish/windows-smb-vulnerability-framework-cve-2025-33073](https://github.com/SellMeFish/windows-smb-vulnerability-framework-cve-2025-33073)
+- [SFRDevelopment/windows-smb-vulnerability-framework-cve-2025-33073](https://github.com/SFRDevelopment/windows-smb-vulnerability-framework-cve-2025-33073)
 - [uziii2208/CVE-2025-33073](https://github.com/uziii2208/CVE-2025-33073)
 - [B1ack4sh/Blackash-CVE-2025-33073](https://github.com/B1ack4sh/Blackash-CVE-2025-33073)
 
@@ -4756,6 +4775,13 @@
 </code>
 
 - [jisi-001/CVE-2025-34300POC](https://github.com/jisi-001/CVE-2025-34300POC)
+
+### CVE-2025-34322 (2025-11-17)
+
+<code>Nagios Log Server versions prior to 2026R1.0.1 contain an authenticated command injection vulnerability in the experimental 'Natural Language Queries' feature. When this feature is configured, certain user-controlled settings—including model selection and connection parameters—are read from the global configuration and concatenated into a shell command that is executed via shell_exec() without proper input handling or command-line argument sanitation. An authenticated user with access to the 'Global Settings' page can supply crafted values in these fields to inject additional shell commands, resulting in arbitrary command execution as the 'www-data' user and compromise of the Log Server host.
+</code>
+
+- [mcorybillington/CVE-2025-34322_CVE-2025-34323_Nagios_Log_Server](https://github.com/mcorybillington/CVE-2025-34322_CVE-2025-34323_Nagios_Log_Server)
 
 ### CVE-2025-36041 (2025-06-15)
 
@@ -4927,7 +4953,6 @@
 </code>
 
 - [B1ack4sh/Blackash-CVE-2025-40547](https://github.com/B1ack4sh/Blackash-CVE-2025-40547)
-- [zigzagymym1986/CVE-2025-40547](https://github.com/zigzagymym1986/CVE-2025-40547)
 
 ### CVE-2025-40629 (2025-05-16)
 
@@ -5062,6 +5087,13 @@
 - [veniversum/cve-2025-43300](https://github.com/veniversum/cve-2025-43300)
 - [ticofookfook/CVE-2025-43300](https://github.com/ticofookfook/CVE-2025-43300)
 - [Dark-life944/CVE-2025](https://github.com/Dark-life944/CVE-2025)
+
+### CVE-2025-43504 (2025-11-04)
+
+<code>A buffer overflow was addressed with improved bounds checking. This issue is fixed in Xcode 26.1. A user in a privileged network position may be able to cause a denial-of-service.
+</code>
+
+- [calysteon/CVE-2025-43504](https://github.com/calysteon/CVE-2025-43504)
 
 ### CVE-2025-43864 (2025-04-25)
 
@@ -5904,13 +5936,6 @@
 
 - [AdityaBhatt3010/CVE-2025-49706-SharePoint-Spoofing-Vulnerability-Under-Active-Exploitation](https://github.com/AdityaBhatt3010/CVE-2025-49706-SharePoint-Spoofing-Vulnerability-Under-Active-Exploitation)
 
-### CVE-2025-49752 (2025-11-20)
-
-<code>Azure Bastion Elevation of Privilege Vulnerability
-</code>
-
-- [boogabearbombernub/cve-2025-49752-lab](https://github.com/boogabearbombernub/cve-2025-49752-lab)
-
 ### CVE-2025-49844 (2025-10-03)
 
 <code>Redis is an open source, in-memory database that persists on disk. Versions 8.2.1 and below allow an authenticated user to use a specially crafted Lua script to manipulate the garbage collector, trigger a use-after-free and potentially lead to remote code execution. The problem exists in all versions of Redis with Lua scripting. This issue is fixed in version 8.2.2. To workaround this issue without patching the redis-server executable is to prevent users from executing Lua scripts. This can be done using ACL to restrict EVAL and EVALSHA commands.
@@ -5956,7 +5981,7 @@
 </code>
 
 - [callinston/CVE-2025-50165](https://github.com/callinston/CVE-2025-50165)
-- [fluxmoth/CVE-2025-50165](https://github.com/fluxmoth/CVE-2025-50165)
+- [glitchurn/CVE-2025-50165](https://github.com/glitchurn/CVE-2025-50165)
 
 ### CVE-2025-50168 (2025-08-12)
 
@@ -7421,7 +7446,6 @@
 </code>
 
 - [B1ack4sh/Blackash-CVE-2025-58034](https://github.com/B1ack4sh/Blackash-CVE-2025-58034)
-- [fluxmoth/CVE-2025-58034](https://github.com/fluxmoth/CVE-2025-58034)
 
 ### CVE-2025-58179 (2025-09-04)
 
@@ -7878,6 +7902,7 @@
 
 - [monzaviman/CVE-2025-62168](https://github.com/monzaviman/CVE-2025-62168)
 - [shahroodcert/CVE-2025-62168](https://github.com/shahroodcert/CVE-2025-62168)
+- [nehkark/CVE-2025-62168](https://github.com/nehkark/CVE-2025-62168)
 
 ### CVE-2025-62215 (2025-11-11)
 
@@ -8097,10 +8122,18 @@
 
 - [DylanDavis1/CVE-2025-63708](https://github.com/DylanDavis1/CVE-2025-63708)
 
-### CVE-2025-63729
+### CVE-2025-63729 (2025-11-25)
+
+<code>An issue was discovered in Syrotech SY-GPON-1110-WDONT SYRO_3.7L_3.1.02-240517 allowing attackers to exctract the SSL Private Key, CA Certificate, SSL Certificate, and Client Certificates in .pem format in firmware in etc folder.
+</code>
+
 - [Yashodhanvivek/CVE-2025-63729-Syrotech-SY-GPON-1110-](https://github.com/Yashodhanvivek/CVE-2025-63729-Syrotech-SY-GPON-1110-)
 
-### CVE-2025-63735
+### CVE-2025-63735 (2025-11-25)
+
+<code>A reflected Cross site scripting (XSS) vulnerability in Ruckus Unleashed 200.13.6.1.319 via the name parameter to the the captive-portal endpoint selfguestpass/guestAccessSubmit.jsp.
+</code>
+
 - [huthx/CVE-2025-63735-Ruckus-Unleashed-Reflected-XSS](https://github.com/huthx/CVE-2025-63735-Ruckus-Unleashed-Reflected-XSS)
 
 ### CVE-2025-63820
@@ -10010,6 +10043,7 @@
 - [xiw1ll/CVE-2024-6387_Checker](https://github.com/xiw1ll/CVE-2024-6387_Checker)
 - [moften/regreSSHion-CVE-2024-6387](https://github.com/moften/regreSSHion-CVE-2024-6387)
 - [OhDamnn/Noregressh](https://github.com/OhDamnn/Noregressh)
+- [arielrbrdev/redteamlab1](https://github.com/arielrbrdev/redteamlab1)
 
 ### CVE-2024-6460 (2024-08-16)
 
@@ -14231,6 +14265,7 @@
 - [T1erno/CVE-2024-32019-Netdata-ndsudo-Privilege-Escalation-PoC](https://github.com/T1erno/CVE-2024-32019-Netdata-ndsudo-Privilege-Escalation-PoC)
 - [hexared/CVE-2024-32019_poc](https://github.com/hexared/CVE-2024-32019_poc)
 - [80Ottanta80/CVE-2024-32019-PoC](https://github.com/80Ottanta80/CVE-2024-32019-PoC)
+- [julichaan/CVE-2024-32019-ndsudo-local-privilege-escalation-NetData](https://github.com/julichaan/CVE-2024-32019-ndsudo-local-privilege-escalation-NetData)
 
 ### CVE-2024-32022 (2024-04-16)
 
@@ -33523,6 +33558,7 @@
 - [fortra/CVE-2022-37969](https://github.com/fortra/CVE-2022-37969)
 - [grass341/CVE-2022-37969](https://github.com/grass341/CVE-2022-37969)
 - [NoobCat2000/CVE-2022-37969](https://github.com/NoobCat2000/CVE-2022-37969)
+- [EmilC3978/CVE-2022-37969PoC](https://github.com/EmilC3978/CVE-2022-37969PoC)
 
 ### CVE-2022-38029 (2022-10-11)
 
@@ -35747,7 +35783,6 @@
 - [Wra7h/SharpPN](https://github.com/Wra7h/SharpPN)
 - [OppressionBreedsResistance/CVE-2021-1675-PrintNightmare](https://github.com/OppressionBreedsResistance/CVE-2021-1675-PrintNightmare)
 - [eversinc33/NimNightmare](https://github.com/eversinc33/NimNightmare)
-- [TheJoyOfHacking/cube0x0-CVE-2021-1675](https://github.com/TheJoyOfHacking/cube0x0-CVE-2021-1675)
 - [TheJoyOfHacking/calebstewart-CVE-2021-1675](https://github.com/TheJoyOfHacking/calebstewart-CVE-2021-1675)
 - [r1skkam/PrintNightmare](https://github.com/r1skkam/PrintNightmare)
 - [000Tonio/cve-2021-1675](https://github.com/000Tonio/cve-2021-1675)
@@ -36533,6 +36568,13 @@
 </code>
 
 - [CERT-hr/Log4Shell](https://github.com/CERT-hr/Log4Shell)
+
+### CVE-2021-4462 (2025-11-10)
+
+<code>Employee Records System version 1.0 contains an unrestricted file upload vulnerability that allows a remote unauthenticated attacker to upload arbitrary files via the uploadID.php endpoint; uploaded files can be executed because the application does not perform proper server-side validation. Exploitation evidence was observed by the Shadowserver Foundation on 2025-02-06 UTC.
+</code>
+
+- [Pranjal6955/CVE-2021-4462](https://github.com/Pranjal6955/CVE-2021-4462)
 
 ### CVE-2021-4773
 - [Alexs18/CVE-2021-4773](https://github.com/Alexs18/CVE-2021-4773)
@@ -55816,6 +55858,7 @@
 - [Sunqiz/CVE-2017-0199-reprofuction](https://github.com/Sunqiz/CVE-2017-0199-reprofuction)
 - [TheCyberWatchers/CVE-2017-0199-v5.0](https://github.com/TheCyberWatchers/CVE-2017-0199-v5.0)
 - [kash-123/CVE-2017-0199](https://github.com/kash-123/CVE-2017-0199)
+- [BlueShield-CyberDefense/Phishing-Analysis](https://github.com/BlueShield-CyberDefense/Phishing-Analysis)
 
 ### CVE-2017-0204 (2017-04-12)
 
@@ -62682,7 +62725,6 @@
 - [chancej715/UnrealIRCd-3.2.8.1-Backdoor-Command-Execution](https://github.com/chancej715/UnrealIRCd-3.2.8.1-Backdoor-Command-Execution)
 - [FredBrave/CVE-2010-2075-UnrealIRCd-3.2.8.1](https://github.com/FredBrave/CVE-2010-2075-UnrealIRCd-3.2.8.1)
 - [JoseLRC97/UnrealIRCd-3.2.8.1-Backdoor-Command-Execution](https://github.com/JoseLRC97/UnrealIRCd-3.2.8.1-Backdoor-Command-Execution)
-- [abhinavsinghx/PenTest-Lab](https://github.com/abhinavsinghx/PenTest-Lab)
 
 ### CVE-2010-2387 (2012-12-21)
 
