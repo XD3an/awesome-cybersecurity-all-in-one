@@ -4390,6 +4390,7 @@
 </code>
 
 - [hidesec/CVE-2025-32421](https://github.com/hidesec/CVE-2025-32421)
+- [Delfaster/CVE-2025-32421---Race-Condition-Vulnerability---Next.js](https://github.com/Delfaster/CVE-2025-32421---Race-Condition-Vulnerability---Next.js)
 
 ### CVE-2025-32429 (2025-07-24)
 
@@ -27316,7 +27317,6 @@
 <code>AhnLab EPP 1.0.15 is vulnerable to SQL Injection via the &quot;preview parameter.&quot;
 </code>
 
-- [KernelCipher/CVE-2023-49440-POC](https://github.com/KernelCipher/CVE-2023-49440-POC)
 - [NyaMeeEain/CVE-2023-49440](https://github.com/NyaMeeEain/CVE-2023-49440)
 
 ### CVE-2023-49471 (2024-01-10)
@@ -59549,7 +59549,7 @@
 <code>SQL injection vulnerability in Zoneminder 1.30 and earlier allows remote attackers to execute arbitrary SQL commands via the limit parameter in a log query request to index.php.
 </code>
 
-- [dc-333-666/CVE-2016-10204_Webshell](https://github.com/dc-333-666/CVE-2016-10204_Webshell)
+- [0xNullComet/CVE-2016-10204_Webshell](https://github.com/0xNullComet/CVE-2016-10204_Webshell)
 
 ### CVE-2016-10277 (2017-05-12)
 
