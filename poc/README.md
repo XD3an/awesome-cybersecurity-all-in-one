@@ -528,6 +528,7 @@
 - [abrewer251/CVE-2025-2945_PgAdmin_PoC](https://github.com/abrewer251/CVE-2025-2945_PgAdmin_PoC)
 - [Cycloctane/cve-2025-2945-poc](https://github.com/Cycloctane/cve-2025-2945-poc)
 - [I3r1h0n/pgAdminOpendoor](https://github.com/I3r1h0n/pgAdminOpendoor)
+- [ExtremeUday/CVE-2025-2945-pgAdmin4-Authenticated-RCE-PoC-](https://github.com/ExtremeUday/CVE-2025-2945-pgAdmin4-Authenticated-RCE-PoC-)
 
 ### CVE-2025-2995 (2025-03-31)
 
@@ -1549,6 +1550,7 @@
 - [papcaii2004/CVE-2025-8088-WinRAR-builder](https://github.com/papcaii2004/CVE-2025-8088-WinRAR-builder)
 - [B1ack4sh/Blackash-CVE-2025-8088](https://github.com/B1ack4sh/Blackash-CVE-2025-8088)
 - [nuky-alt/CVE-2025-8088](https://github.com/nuky-alt/CVE-2025-8088)
+- [h4vier/cve-2025-8088](https://github.com/h4vier/cve-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1929,6 +1931,7 @@
 - [dptsec/CVE-2025-10230](https://github.com/dptsec/CVE-2025-10230)
 - [B1ack4sh/Blackash-CVE-2025-10230](https://github.com/B1ack4sh/Blackash-CVE-2025-10230)
 - [nehkark/CVE-2025-10230](https://github.com/nehkark/CVE-2025-10230)
+- [marcostolosa/CVE-2025-10230](https://github.com/marcostolosa/CVE-2025-10230)
 
 ### CVE-2025-10351 (2025-10-08)
 
@@ -3741,6 +3744,7 @@
 - [Mattb709/CVE-2025-29306-PoC-FoxCMS-RCE](https://github.com/Mattb709/CVE-2025-29306-PoC-FoxCMS-RCE)
 - [congdong007/CVE-2025-29306_poc](https://github.com/congdong007/CVE-2025-29306_poc)
 - [amalpvatayam67/day06-foxcms-rce](https://github.com/amalpvatayam67/day06-foxcms-rce)
+- [B1ack4sh/Blackash-CVE-2025-29306](https://github.com/B1ack4sh/Blackash-CVE-2025-29306)
 
 ### CVE-2025-29384 (2025-03-14)
 
@@ -5982,7 +5986,6 @@
 </code>
 
 - [callinston/CVE-2025-50165](https://github.com/callinston/CVE-2025-50165)
-- [glitchurn/CVE-2025-50165](https://github.com/glitchurn/CVE-2025-50165)
 
 ### CVE-2025-50168 (2025-08-12)
 
@@ -7462,6 +7465,13 @@
 
 - [prabhatverma47/CVE-2025-58180](https://github.com/prabhatverma47/CVE-2025-58180)
 
+### CVE-2025-58360 (2025-11-25)
+
+<code>GeoServer is an open source server that allows users to share and edit geospatial data. From version 2.26.0 to before 2.26.2 and before 2.25.6, an XML External Entity (XXE) vulnerability was identified. The application accepts XML input through a specific endpoint /geoserver/wms operation GetMap. However, this input is not sufficiently sanitized or restricted, allowing an attacker to define external entities within the XML request. This issue has been patched in GeoServer 2.25.6, GeoServer 2.26.3, and GeoServer 2.27.0.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-58360](https://github.com/B1ack4sh/Blackash-CVE-2025-58360)
+
 ### CVE-2025-58440
 - [ph-hitachi/CVE-2025-58440](https://github.com/ph-hitachi/CVE-2025-58440)
 
@@ -7905,6 +7915,13 @@
 - [shahroodcert/CVE-2025-62168](https://github.com/shahroodcert/CVE-2025-62168)
 - [nehkark/CVE-2025-62168](https://github.com/nehkark/CVE-2025-62168)
 
+### CVE-2025-62207 (2025-11-20)
+
+<code>Azure Monitor Elevation of Privilege Vulnerability
+</code>
+
+- [stankobra853/CVE-2025-62207](https://github.com/stankobra853/CVE-2025-62207)
+
 ### CVE-2025-62215 (2025-11-11)
 
 <code>Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Kernel allows an authorized attacker to elevate privileges locally.
@@ -8186,7 +8203,7 @@
 
 ### CVE-2025-64027 (2025-11-20)
 
-<code>Snipe-IT v8.3.4 (build 20218) contains a reflected cross-site scripting (XSS) vulnerability in the CSV Import workflow. When an invalid CSV file is uploaded, the application returns a progress_message value that is rendered as raw HTML in the admin interface. An attacker can intercept and modify the POST /livewire/update request to inject arbitrary HTML or JavaScript into the progress_message. Because the server accepts the modified input without sanitization and reflects it back to the user, arbitrary JavaScript executes in the browser of any authenticated admin who views the import page.
+<code>Snipe-IT v8.3.4 (build 20218) contains a reflected cross-site scripting (XSS) vulnerability in the CSV Import workflow. When an invalid CSV file is uploaded, the application returns a progress_message value that is rendered as raw HTML in the admin interface. An attacker can intercept and modify the POST /livewire/update request to inject arbitrary HTML or JavaScript into the progress_message. Because the server accepts the modified input without sanitization and reflects it back to the user, arbitrary JavaScript executes in the browser of any authenticated admin who views the import page. NOTE: this is disputed by the Supplier because the report only demonstrates that an authenticated user can choose to conduct a man-in-the-middle attack against himself.
 </code>
 
 - [cybercrewinc/CVE-2025-64027](https://github.com/cybercrewinc/CVE-2025-64027)
@@ -8289,22 +8306,46 @@
 ### CVE-2025-65482
 - [AT190510-Cuong/CVE-2025-65482-XXE-](https://github.com/AT190510-Cuong/CVE-2025-65482-XXE-)
 
-### CVE-2025-65669
+### CVE-2025-65669 (2025-11-26)
+
+<code>An issue was discovered in classroomio 0.1.13. Student accounts are able to delete courses from the Explore page without any authorization or authentication checks, bypassing the expected admin-only deletion restriction.
+</code>
+
 - [Rivek619/CVE-2025-65669](https://github.com/Rivek619/CVE-2025-65669)
 
-### CVE-2025-65670
+### CVE-2025-65670 (2025-11-26)
+
+<code>An Insecure Direct Object Reference (IDOR) in classroomio 0.1.13 allows students to access sensitive admin/teacher endpoints by manipulating course IDs in URLs, resulting in unauthorized disclosure of sensitive course, admin, and student data. The leak occurs momentarily before the system reverts to a normal state restricting access.
+</code>
+
 - [Rivek619/CVE-2025-65670](https://github.com/Rivek619/CVE-2025-65670)
 
-### CVE-2025-65672
+### CVE-2025-65672 (2025-11-26)
+
+<code>Insecure Direct Object Reference (IDOR) in classroomio 0.1.13 allows unauthorized share and invite access to course settings.
+</code>
+
 - [Rivek619/CVE-2025-65672](https://github.com/Rivek619/CVE-2025-65672)
 
-### CVE-2025-65675
+### CVE-2025-65675 (2025-11-26)
+
+<code>Stored Cross site scripting (XSS) vulnerability in Classroomio LMS 0.1.13 allows authenticated attackers to execute arbitrary code via crafted SVG profile pictures.
+</code>
+
 - [Rivek619/CVE-2025-65675](https://github.com/Rivek619/CVE-2025-65675)
 
-### CVE-2025-65676
+### CVE-2025-65676 (2025-11-26)
+
+<code>Stored Cross site scripting (XSS) vulnerability in Classroomio LMS 0.1.13 allows authenticated attackers to execute arbitrary code via crafted SVG cover images.
+</code>
+
 - [Rivek619/CVE-2025-65676](https://github.com/Rivek619/CVE-2025-65676)
 
-### CVE-2025-65681
+### CVE-2025-65681 (2025-11-26)
+
+<code>An issue was discovered in Overhang.IO (tutor-open-edx) (overhangio/tutor) 20.0.2 allowing local unauthorized attackers to gain access to sensitive information due to the absence of proper cache-control HTTP headers and client-side session checks.
+</code>
+
 - [Rivek619/CVE-2025-65681](https://github.com/Rivek619/CVE-2025-65681)
 
 ### CVE-2025-492025
@@ -19095,6 +19136,13 @@
 - [charlesgargasson/CVE-2023-1177](https://github.com/charlesgargasson/CVE-2023-1177)
 - [paultheal1en/CVE-2023-1177-PoC-reproduce](https://github.com/paultheal1en/CVE-2023-1177-PoC-reproduce)
 
+### CVE-2023-1189 (2023-03-06)
+
+<code>In WiseCleaner Wise Folder Hider 4.4.3.202 wurde eine problematische Schwachstelle ausgemacht. Das betrifft die Funktion 0x222400/0x222404/0x222410 in der Bibliothek WiseFs64.sys der Komponente IoControlCode Handler. Durch das Manipulieren mit unbekannten Daten kann eine denial of service-Schwachstelle ausgenutzt werden. Der Angriff muss lokal angegangen werden. Der Exploit steht zur öffentlichen Verfügung.
+</code>
+
+- [le0s1mba/CVE-2023-1189](https://github.com/le0s1mba/CVE-2023-1189)
+
 ### CVE-2023-1234 (2023-03-07)
 
 <code>Inappropriate implementation in Intents in Google Chrome on Android prior to 111.0.5563.64 allowed a remote attacker to perform domain spoofing via a crafted HTML page. (Chromium security severity: Low)
@@ -22259,6 +22307,7 @@
 - [horizon3ai/CVE-2023-27532](https://github.com/horizon3ai/CVE-2023-27532)
 - [sfewer-r7/CVE-2023-27532](https://github.com/sfewer-r7/CVE-2023-27532)
 - [puckiestyle/CVE-2023-27532-RCE-Only](https://github.com/puckiestyle/CVE-2023-27532-RCE-Only)
+- [yunus-a1i/veeam-cve-2023-27532-mock](https://github.com/yunus-a1i/veeam-cve-2023-27532-mock)
 
 ### CVE-2023-27564 (2023-05-10)
 
@@ -29501,7 +29550,6 @@
 - [rockmelodies/Oracle-E-BS-CVE-2022-21587-Exploit](https://github.com/rockmelodies/Oracle-E-BS-CVE-2022-21587-Exploit)
 - [sahabrifki/CVE-2022-21587-Oracle-EBS-](https://github.com/sahabrifki/CVE-2022-21587-Oracle-EBS-)
 - [B1ack4sh/Blackash-CVE-2022-21587](https://github.com/B1ack4sh/Blackash-CVE-2022-21587)
-- [merlyn-1/CVE-2022-21587-Oracle-EBS](https://github.com/merlyn-1/CVE-2022-21587-Oracle-EBS)
 
 ### CVE-2022-21658 (2022-01-20)
 
@@ -35783,7 +35831,6 @@
 - [Wra7h/SharpPN](https://github.com/Wra7h/SharpPN)
 - [OppressionBreedsResistance/CVE-2021-1675-PrintNightmare](https://github.com/OppressionBreedsResistance/CVE-2021-1675-PrintNightmare)
 - [eversinc33/NimNightmare](https://github.com/eversinc33/NimNightmare)
-- [TheJoyOfHacking/calebstewart-CVE-2021-1675](https://github.com/TheJoyOfHacking/calebstewart-CVE-2021-1675)
 - [r1skkam/PrintNightmare](https://github.com/r1skkam/PrintNightmare)
 - [000Tonio/cve-2021-1675](https://github.com/000Tonio/cve-2021-1675)
 - [peckre/PNCVE-Win10-20H2-Exploit](https://github.com/peckre/PNCVE-Win10-20H2-Exploit)
@@ -40454,6 +40501,7 @@
 - [gunzf0x/CVE-2021-41773](https://github.com/gunzf0x/CVE-2021-41773)
 - [Mahfujurjust/CVE-2021-41773](https://github.com/Mahfujurjust/CVE-2021-41773)
 - [adrianmafandy/CVE-2021-41773](https://github.com/adrianmafandy/CVE-2021-41773)
+- [faizdotid/CVE-2021-41773](https://github.com/faizdotid/CVE-2021-41773)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -49085,6 +49133,7 @@
 - [Cr4ckC4t/cve-2019-7609](https://github.com/Cr4ckC4t/cve-2019-7609)
 - [OliveiraaX/CVE-2019-7609-KibanaRCE](https://github.com/OliveiraaX/CVE-2019-7609-KibanaRCE)
 - [Akshay15-png/CVE-2019-7609](https://github.com/Akshay15-png/CVE-2019-7609)
+- [aleister1102/kibana-prototype-pollusion](https://github.com/aleister1102/kibana-prototype-pollusion)
 
 ### CVE-2019-7616 (2019-07-30)
 
@@ -50971,6 +51020,13 @@
 
 - [RandomRobbieBF/CVE-2019-15896](https://github.com/RandomRobbieBF/CVE-2019-15896)
 
+### CVE-2019-15949 (2019-09-05)
+
+<code>Nagios XI before 5.6.6 allows remote command execution as root. The exploit requires access to the server as the nagios user, or access as the admin user via the web interface. The getprofile.sh script, invoked by downloading a system profile (profile.php?cmd=download), is executed as root via a passwordless sudo entry; the script executes check_plugin, which is owned by the nagios user. A user logged into Nagios XI with permissions to modify plugins, or the nagios user on the server, can modify the check_plugin executable and insert malicious commands to execute as root.
+</code>
+
+- [0xla1n/Nagios-CVE-2019-15949-RCE-Poc](https://github.com/0xla1n/Nagios-CVE-2019-15949-RCE-Poc)
+
 ### CVE-2019-15972 (2019-11-26)
 
 <code>A vulnerability in the web-based management interface of Cisco Unified Communications Manager could allow an authenticated, remote attacker to conduct SQL injection attacks on an affected system. The vulnerability exists because the web-based management interface improperly validates SQL values. An attacker could exploit this vulnerability by authenticating to the application and sending malicious requests to an affected system. A successful exploit could allow the attacker to modify values on or return values from the underlying database.
@@ -51047,6 +51103,7 @@
 - [FredBrave/CVE-2019-16278-Nostromo-1.9.6-RCE](https://github.com/FredBrave/CVE-2019-16278-Nostromo-1.9.6-RCE)
 - [cancela24/CVE-2019-16278-Nostromo-1.9.6-RCE](https://github.com/cancela24/CVE-2019-16278-Nostromo-1.9.6-RCE)
 - [CybermonkX/CVE-2019-16278_Nostromo-1.9.6---Remote-Code-Execution](https://github.com/CybermonkX/CVE-2019-16278_Nostromo-1.9.6---Remote-Code-Execution)
+- [andknownmaly/CVE-2019-16278](https://github.com/andknownmaly/CVE-2019-16278)
 
 ### CVE-2019-16279 (2019-10-14)
 
@@ -57239,7 +57296,7 @@
 - [MadExploits/PHPunit-Exploit](https://github.com/MadExploits/PHPunit-Exploit)
 - [MrG3P5/CVE-2017-9841](https://github.com/MrG3P5/CVE-2017-9841)
 - [Chocapikk/CVE-2017-9841](https://github.com/Chocapikk/CVE-2017-9841)
-- [joelindra/Argus](https://github.com/joelindra/Argus)
+- [joelindra/CVE-2017-9841](https://github.com/joelindra/CVE-2017-9841)
 - [K3ysTr0K3R/CVE-2017-9841-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2017-9841-EXPLOIT)
 - [drcrypterdotru/PHPUnit-GoScan](https://github.com/drcrypterdotru/PHPUnit-GoScan)
 
