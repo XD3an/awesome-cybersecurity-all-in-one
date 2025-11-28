@@ -292,13 +292,6 @@
 
 - [issamjr/CVE-2025-1718-Scanner](https://github.com/issamjr/CVE-2025-1718-Scanner)
 
-### CVE-2025-1793 (2025-06-05)
-
-<code>Multiple vector store integrations in run-llama/llama_index version v0.12.21 have SQL injection vulnerabilities. These vulnerabilities allow an attacker to read and write data using SQL, potentially leading to unauthorized access to data of other users depending on the usage of the llama-index library in a web application.
-</code>
-
-- [Usama-Figueira/-CVE-2025-1793-poc](https://github.com/Usama-Figueira/-CVE-2025-1793-poc)
-
 ### CVE-2025-1974 (2025-03-24)
 
 <code>A security issue was discovered in Kubernetes where under certain conditions, an unauthenticated attacker with access to the pod network can achieve arbitrary code execution in the context of the ingress-nginx controller. This can lead to disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)
@@ -1550,7 +1543,7 @@
 - [papcaii2004/CVE-2025-8088-WinRAR-builder](https://github.com/papcaii2004/CVE-2025-8088-WinRAR-builder)
 - [B1ack4sh/Blackash-CVE-2025-8088](https://github.com/B1ack4sh/Blackash-CVE-2025-8088)
 - [nuky-alt/CVE-2025-8088](https://github.com/nuky-alt/CVE-2025-8088)
-- [h4vier/cve-2025-8088](https://github.com/h4vier/cve-2025-8088)
+- [4daysday/cve-2025-8088](https://github.com/4daysday/cve-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -2096,7 +2089,7 @@
 
 ### CVE-2025-11579 (2025-10-10)
 
-<code>github.com/nwaples/rardecode versions &lt;=2.1.1 fail to restrict the dictionary size when reading large RAR dictionary sizes, which allows an attacker to provide a specially crafted RAR file and cause Denial of Service via an Out Of Memory Crash.
+<code>Mattermost versions 10.11.x &lt;= 10.11.4, 10.5.x &lt;= 10.5.12 fail to validate the user permission when accessing the files and subscribing to the block in Boards, which allows an authenticated user to access other board files and was able to subscribe to the block from other boards that the user does not have access to
 </code>
 
 - [shinigami-777/PoC_CVE-2025-11579](https://github.com/shinigami-777/PoC_CVE-2025-11579)
@@ -2174,6 +2167,7 @@
 
 - [alnashawatirohwederb2167-max/cve-2025-12735-expr-eval-rce](https://github.com/alnashawatirohwederb2167-max/cve-2025-12735-expr-eval-rce)
 - [AN5I/cve-2025-12735-expr-eval-rce](https://github.com/AN5I/cve-2025-12735-expr-eval-rce)
+- [alecasg555/safe-expr-eval](https://github.com/alecasg555/safe-expr-eval)
 
 ### CVE-2025-12748 (2025-11-11)
 
@@ -4454,6 +4448,7 @@
 - [toshithh/CVE-2025-32433](https://github.com/toshithh/CVE-2025-32433)
 - [l1nuxkid/CVE-2025-32433-exploit](https://github.com/l1nuxkid/CVE-2025-32433-exploit)
 - [radzek15/CVE-2025-32433](https://github.com/radzek15/CVE-2025-32433)
+- [soltanali0/CVE-2025-32433-Eploit](https://github.com/soltanali0/CVE-2025-32433-Eploit)
 
 ### CVE-2025-32434 (2025-04-18)
 
@@ -4560,6 +4555,7 @@
 - [NewComrade12211/CVE-2025-32463](https://github.com/NewComrade12211/CVE-2025-32463)
 - [Ghstxz/CVE-2025-32463](https://github.com/Ghstxz/CVE-2025-32463)
 - [ankitpandey383/CVE-2025-32463-Sudo-Privilege-Escalation](https://github.com/ankitpandey383/CVE-2025-32463-Sudo-Privilege-Escalation)
+- [justjoeyking/CVE-2025-32463](https://github.com/justjoeyking/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -4867,6 +4863,13 @@
 </code>
 
 - [guard-wait/CVE-2025-38678_POC](https://github.com/guard-wait/CVE-2025-38678_POC)
+
+### CVE-2025-39401 (2025-05-19)
+
+<code>Unrestricted Upload of File with Dangerous Type vulnerability in mojoomla WPAMS allows Upload a Web Shell to a Web Server.This issue affects WPAMS: from n/a through 44.0 (17-08-2023).
+</code>
+
+- [Nxploited/CVE-2025-39401](https://github.com/Nxploited/CVE-2025-39401)
 
 ### CVE-2025-39436 (2025-04-17)
 
@@ -6063,6 +6066,13 @@
 
 - [security-smarttecs/cve-2025-50428](https://github.com/security-smarttecs/cve-2025-50428)
 
+### CVE-2025-50433 (2025-11-26)
+
+<code>An issue was discovered in imonnit.com (2025-04-24) allowing malicious actors to gain escalated privileges via crafted password reset to take over arbitrary user accounts.
+</code>
+
+- [0xMandor/CVE-2025-50433](https://github.com/0xMandor/CVE-2025-50433)
+
 ### CVE-2025-50460 (2025-08-01)
 
 <code>A remote code execution (RCE) vulnerability exists in the ms-swift project version 3.3.0 due to unsafe deserialization in tests/run.py using yaml.load() from the PyYAML library (versions = 5.3.1). If an attacker can control the content of the YAML configuration file passed to the --run_config parameter, arbitrary code can be executed during deserialization. This can lead to full system compromise. The vulnerability is triggered when a malicious YAML file is loaded, allowing the execution of arbitrary Python commands such as os.system(). It is recommended to upgrade PyYAML to version 5.4 or higher, and to use yaml.safe_load() to mitigate the issue.
@@ -6519,6 +6529,7 @@
 </code>
 
 - [kevinbackhouse/DjVuLibre-poc-CVE-2025-53367](https://github.com/kevinbackhouse/DjVuLibre-poc-CVE-2025-53367)
+- [ThePhykon/CVE-2025-53367-POC](https://github.com/ThePhykon/CVE-2025-53367-POC)
 
 ### CVE-2025-53533 (2025-10-27)
 
@@ -7341,6 +7352,7 @@
 </code>
 
 - [MMAKINGDOM/CVE-2025-57310](https://github.com/MMAKINGDOM/CVE-2025-57310)
+- [hossainshadat/CVE-2025-57310](https://github.com/hossainshadat/CVE-2025-57310)
 
 ### CVE-2025-57389 (2025-10-01)
 
@@ -7436,6 +7448,7 @@
 - [loic-houchi/Django-faille-CVE-2025-57833_test](https://github.com/loic-houchi/Django-faille-CVE-2025-57833_test)
 - [ianoboyle/CVE-2025-57833](https://github.com/ianoboyle/CVE-2025-57833)
 - [sw0rd1ight/CVE-2025-57833](https://github.com/sw0rd1ight/CVE-2025-57833)
+- [Gayang2902/CVE-2025-57833](https://github.com/Gayang2902/CVE-2025-57833)
 
 ### CVE-2025-57926 (2025-09-22)
 
@@ -7471,6 +7484,7 @@
 </code>
 
 - [B1ack4sh/Blackash-CVE-2025-58360](https://github.com/B1ack4sh/Blackash-CVE-2025-58360)
+- [quyenheu/CVE-2025-58360](https://github.com/quyenheu/CVE-2025-58360)
 
 ### CVE-2025-58440
 - [ph-hitachi/CVE-2025-58440](https://github.com/ph-hitachi/CVE-2025-58440)
@@ -7595,6 +7609,7 @@
 </code>
 
 - [zimshk/CVE-2025-59528.yaml](https://github.com/zimshk/CVE-2025-59528.yaml)
+- [B1ack4sh/Blackash-CVE-2025-59528](https://github.com/B1ack4sh/Blackash-CVE-2025-59528)
 
 ### CVE-2025-59712 (2025-09-19)
 
@@ -7980,6 +7995,13 @@
 
 - [edera-dev/cve-tarmageddon](https://github.com/edera-dev/cve-tarmageddon)
 
+### CVE-2025-62593 (2025-11-26)
+
+<code>Ray is an AI compute engine. Prior to version 2.52.0, developers working with Ray as a development tool can be exploited via a critical RCE vulnerability exploitable via Firefox and Safari. This vulnerability is due to an insufficient guard against browser-based attacks, as the current defense uses the User-Agent header starting with the string &quot;Mozilla&quot; as a defense mechanism. This defense is insufficient as the fetch specification allows the User-Agent header to be modified. Combined with a DNS rebinding attack against the browser, and this vulnerability is exploitable against a developer running Ray who inadvertently visits a malicious website, or is served a malicious advertisement (malvertising). This issue has been patched in version 2.52.0.
+</code>
+
+- [B1ack4sh/Blackash-CVE-2025-62593](https://github.com/B1ack4sh/Blackash-CVE-2025-62593)
+
 ### CVE-2025-62726 (2025-10-30)
 
 <code>n8n is an open source workflow automation platform. Prior to 1.113.0, a remote code execution vulnerability exists in the Git Node component available in both Cloud and Self-Hosted versions of n8n. When a malicious actor clones a remote repository containing a pre-commit hook, the subsequent use of the Commit operation in the Git Node can inadvertently trigger the hook’s execution. This allows attackers to execute arbitrary code within the n8n environment, potentially compromising the system and any connected credentials or workflows. This vulnerability is fixed in 1.113.0.
@@ -8053,6 +8075,7 @@
 </code>
 
 - [MMAKINGDOM/CVE-2025-63419](https://github.com/MMAKINGDOM/CVE-2025-63419)
+- [hossainshadat/CVE-2025-63419](https://github.com/hossainshadat/CVE-2025-63419)
 
 ### CVE-2025-63420 (2025-11-07)
 
@@ -8060,6 +8083,7 @@
 </code>
 
 - [MMAKINGDOM/CVE-2025-63420](https://github.com/MMAKINGDOM/CVE-2025-63420)
+- [hossainshadat/CVE-2025-63420](https://github.com/hossainshadat/CVE-2025-63420)
 
 ### CVE-2025-63441 (2025-11-03)
 
@@ -9379,6 +9403,7 @@
 </code>
 
 - [Roundthe-clock/CVE-2024-3661VPN](https://github.com/Roundthe-clock/CVE-2024-3661VPN)
+- [YardenFadida/CVE-2024-3661_Demo](https://github.com/YardenFadida/CVE-2024-3661_Demo)
 
 ### CVE-2024-3673 (2024-08-30)
 
@@ -13421,6 +13446,13 @@
 
 ### CVE-2024-27462
 - [Alaatk/CVE-2024-27462](https://github.com/Alaatk/CVE-2024-27462)
+
+### CVE-2024-27474 (2024-04-10)
+
+<code>Leantime 3.0.6 is vulnerable to Cross Site Request Forgery (CSRF). This vulnerability allows malicious actors to perform unauthorized actions on behalf of authenticated users, specifically administrators.
+</code>
+
+- [dead1nfluence/Leantime-POC](https://github.com/dead1nfluence/Leantime-POC)
 
 ### CVE-2024-27518 (2024-04-29)
 
@@ -25859,6 +25891,7 @@
 - [jakehomb/cve-2023-42793](https://github.com/jakehomb/cve-2023-42793)
 - [syaifulandy/Nuclei-Template-CVE-2023-42793.yaml](https://github.com/syaifulandy/Nuclei-Template-CVE-2023-42793.yaml)
 - [syorik/CVE-2023-42793](https://github.com/syorik/CVE-2023-42793)
+- [cxdxnt/CVE-2023-42793](https://github.com/cxdxnt/CVE-2023-42793)
 
 ### CVE-2023-42819 (2023-09-26)
 
@@ -40893,6 +40926,7 @@
 
 - [p0dalirius/CVE-2021-43008-AdminerRead](https://github.com/p0dalirius/CVE-2021-43008-AdminerRead)
 - [DaturaSaturated/Adminer-CVE-2021-43008](https://github.com/DaturaSaturated/Adminer-CVE-2021-43008)
+- [Bamolitho/adminer_CVE-2021-43008](https://github.com/Bamolitho/adminer_CVE-2021-43008)
 
 ### CVE-2021-43032 (2021-11-03)
 
@@ -41110,6 +41144,7 @@
 - [monke443/CVE-2021-43798](https://github.com/monke443/CVE-2021-43798)
 - [suljov/Grafana-LFI-exploit](https://github.com/suljov/Grafana-LFI-exploit)
 - [abuyazeen/CVE-2021-43798-Grafana-path-traversal-tester](https://github.com/abuyazeen/CVE-2021-43798-Grafana-path-traversal-tester)
+- [f3d0rq/CVE-2021-43798](https://github.com/f3d0rq/CVE-2021-43798)
 
 ### CVE-2021-43799 (2022-01-25)
 
@@ -41201,13 +41236,6 @@
 </code>
 
 - [warmachine-57/CVE-2021-44117](https://github.com/warmachine-57/CVE-2021-44117)
-
-### CVE-2021-44132 (2022-02-25)
-
-<code>A command injection vulnerability in the function formImportOMCIShell of C-DATA ONU4FERW V2.1.13_X139 allows attackers to execute arbitrary commands via a crafted file.
-</code>
-
-- [exploitwritter/CVE-2021-44132](https://github.com/exploitwritter/CVE-2021-44132)
 
 ### CVE-2021-44142 (2022-02-21)
 
@@ -42075,13 +42103,6 @@
 - [polerstar/CVE-2021-46422-poc](https://github.com/polerstar/CVE-2021-46422-poc)
 - [kailing0220/CVE-2021-46422](https://github.com/kailing0220/CVE-2021-46422)
 - [tucommenceapousser/CVE-2021-46422](https://github.com/tucommenceapousser/CVE-2021-46422)
-
-### CVE-2021-46702 (2022-02-26)
-
-<code>Tor Browser 9.0.7 on Windows 10 build 10586 is vulnerable to information disclosure. This could allow local attackers to bypass the intended anonymity feature and obtain information regarding the onion services visited by a local user. This can be accomplished by analyzing RAM memory even several hours after the local user used the product. This occurs because the product doesn't properly free memory.
-</code>
-
-- [Exmak-s/CVE-2021-46702](https://github.com/Exmak-s/CVE-2021-46702)
 
 ### CVE-2021-46703 (2022-03-06)
 
@@ -45600,6 +45621,7 @@
 </code>
 
 - [j4k0m/loader-CVE-2020-14343](https://github.com/j4k0m/loader-CVE-2020-14343)
+- [Kairo-one/CVE-2020-14343](https://github.com/Kairo-one/CVE-2020-14343)
 
 ### CVE-2020-14356 (2020-08-19)
 
@@ -56860,6 +56882,7 @@
 - [GabrielAvls/CVE-2017-7921](https://github.com/GabrielAvls/CVE-2017-7921)
 - [lastvocher/Hikvision-CVE-2017-7921-decryptor](https://github.com/lastvocher/Hikvision-CVE-2017-7921-decryptor)
 - [voidsshadows/Hikvision-City-Hunter](https://github.com/voidsshadows/Hikvision-City-Hunter)
+- [f3d0rq/CVE-2017-7921](https://github.com/f3d0rq/CVE-2017-7921)
 
 ### CVE-2017-7998 (2018-01-08)
 
@@ -60709,13 +60732,6 @@
 - [aalex954/jwt-key-confusion-poc](https://github.com/aalex954/jwt-key-confusion-poc)
 - [WinDyAlphA/CVE-2015-9235_JWT_key_confusion](https://github.com/WinDyAlphA/CVE-2015-9235_JWT_key_confusion)
 - [z-bool/Venom-JWT](https://github.com/z-bool/Venom-JWT)
-
-### CVE-2015-9238 (2018-05-31)
-
-<code>secure-compare 3.0.0 and below do not actually compare two strings properly. compare was actually comparing the first argument with itself, meaning the check passed for any two strings of the same length.
-</code>
-
-- [m0d0ri205/wargame-turkey_in_2](https://github.com/m0d0ri205/wargame-turkey_in_2)
 
 ### CVE-2015-9251 (2018-01-18)
 
