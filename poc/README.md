@@ -27,7 +27,7 @@
 - [barcrange/CVE-2025-0108-Authentication-Bypass-checker](https://github.com/barcrange/CVE-2025-0108-Authentication-Bypass-checker)
 - [sohaibeb/CVE-2025-0108](https://github.com/sohaibeb/CVE-2025-0108)
 - [becrevex/CVE-2025-0108](https://github.com/becrevex/CVE-2025-0108)
-- [B1ack4sh/Blackash-CVE-2025-0108](https://github.com/B1ack4sh/Blackash-CVE-2025-0108)
+- [Ashwesker/Blackash-CVE-2025-0108](https://github.com/Ashwesker/Blackash-CVE-2025-0108)
 
 ### CVE-2025-0133 (2025-05-14)
 
@@ -56,7 +56,7 @@
 - [AdaniKamal/CVE-2025-0282](https://github.com/AdaniKamal/CVE-2025-0282)
 - [44xo/CVE-2025-0282](https://github.com/44xo/CVE-2025-0282)
 - [punitdarji/Ivanti-CVE-2025-0282](https://github.com/punitdarji/Ivanti-CVE-2025-0282)
-- [B1ack4sh/Blackash-CVE-2025-0282](https://github.com/B1ack4sh/Blackash-CVE-2025-0282)
+- [Ashwesker/Blackash-CVE-2025-0282](https://github.com/Ashwesker/Blackash-CVE-2025-0282)
 
 ### CVE-2025-0288 (2025-03-03)
 
@@ -106,7 +106,7 @@
 - [dpextreme/7-Zip-CVE-2025-0411-POC](https://github.com/dpextreme/7-Zip-CVE-2025-0411-POC)
 - [betulssahin/CVE-2025-0411-7-Zip-Mark-of-the-Web-Bypass](https://github.com/betulssahin/CVE-2025-0411-7-Zip-Mark-of-the-Web-Bypass)
 - [RustMacrosRecoil/7-Zip-CVE-2025-0411-POC](https://github.com/RustMacrosRecoil/7-Zip-CVE-2025-0411-POC)
-- [B1ack4sh/Blackash-CVE-2025-0411](https://github.com/B1ack4sh/Blackash-CVE-2025-0411)
+- [Ashwesker/Blackash-CVE-2025-0411](https://github.com/Ashwesker/Blackash-CVE-2025-0411)
 
 ### CVE-2025-0851 (2025-01-29)
 
@@ -166,7 +166,7 @@
 - [shacojx/CVE-2025-1094-Exploit](https://github.com/shacojx/CVE-2025-1094-Exploit)
 - [ishwardeepp/CVE-2025-1094-PoC-Postgre-SQLi](https://github.com/ishwardeepp/CVE-2025-1094-PoC-Postgre-SQLi)
 - [aninfosec/CVE-2025-1094](https://github.com/aninfosec/CVE-2025-1094)
-- [B1ack4sh/Blackash-CVE-2025-1094](https://github.com/B1ack4sh/Blackash-CVE-2025-1094)
+- [Ashwesker/Blackash-CVE-2025-1094](https://github.com/Ashwesker/Blackash-CVE-2025-1094)
 - [PinkArmor/CVE-2025-1094-Lab-Setup](https://github.com/PinkArmor/CVE-2025-1094-Lab-Setup)
 
 ### CVE-2025-1097 (2025-03-24)
@@ -314,7 +314,7 @@
 - [salt318/CVE-2025-1974](https://github.com/salt318/CVE-2025-1974)
 - [abrewer251/CVE-2025-1974_IngressNightmare_PoC](https://github.com/abrewer251/CVE-2025-1974_IngressNightmare_PoC)
 - [Rickerd12/exploit-cve-2025-1974](https://github.com/Rickerd12/exploit-cve-2025-1974)
-- [B1ack4sh/Blackash-CVE-2025-1974](https://github.com/B1ack4sh/Blackash-CVE-2025-1974)
+- [Ashwesker/Blackash-CVE-2025-1974](https://github.com/Ashwesker/Blackash-CVE-2025-1974)
 - [Armand2002/Exploit-CVE-2025-1974-Lab](https://github.com/Armand2002/Exploit-CVE-2025-1974-Lab)
 - [BiiTts/POC-IngressNightmare-CVE-2025-1974](https://github.com/BiiTts/POC-IngressNightmare-CVE-2025-1974)
 - [iteride/CVE-2025-1974](https://github.com/iteride/CVE-2025-1974)
@@ -336,6 +336,7 @@
 
 - [datagoboom/CVE-2025-2011](https://github.com/datagoboom/CVE-2025-2011)
 - [X3RX3SSec/CVE-2025-2011](https://github.com/X3RX3SSec/CVE-2025-2011)
+- [Ashwesker/Blackash-CVE-2025-2011](https://github.com/Ashwesker/Blackash-CVE-2025-2011)
 
 ### CVE-2025-2082 (2025-04-30)
 
@@ -504,7 +505,7 @@
 <code>A Server-Side Request Forgery (SSRF) vulnerability exists in the RequestsToolkit component of the langchain-community package (specifically, langchain_community.agent_toolkits.openapi.toolkit.RequestsToolkit) in langchain-ai/langchain version 0.0.27. This vulnerability occurs because the toolkit does not enforce restrictions on requests to remote internet addresses, allowing it to also access local addresses. As a result, an attacker could exploit this flaw to perform port scans, access local services, retrieve instance metadata from cloud environments (e.g., Azure, AWS), and interact with servers on the local network. This issue has been fixed in version 0.0.28.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-2828](https://github.com/B1ack4sh/Blackash-CVE-2025-2828)
+- [Ashwesker/Blackash-CVE-2025-2828](https://github.com/Ashwesker/Blackash-CVE-2025-2828)
 
 ### CVE-2025-2907 (2025-04-26)
 
@@ -589,7 +590,7 @@
 - [imbas007/CVE-2025-3248](https://github.com/imbas007/CVE-2025-3248)
 - [0xgh057r3c0n/CVE-2025-3248](https://github.com/0xgh057r3c0n/CVE-2025-3248)
 - [zapstiko/CVE-2025-3248](https://github.com/zapstiko/CVE-2025-3248)
-- [B1ack4sh/Blackash-CVE-2025-3248](https://github.com/B1ack4sh/Blackash-CVE-2025-3248)
+- [Ashwesker/Blackash-CVE-2025-3248](https://github.com/Ashwesker/Blackash-CVE-2025-3248)
 - [issamjr/CVE-2025-3248-Scanner](https://github.com/issamjr/CVE-2025-3248-Scanner)
 - [0-d3y/langflow-rce-exploit](https://github.com/0-d3y/langflow-rce-exploit)
 - [dennisec/CVE-2025-3248](https://github.com/dennisec/CVE-2025-3248)
@@ -693,7 +694,7 @@
 - [kk12-30/CVE-2025-4123](https://github.com/kk12-30/CVE-2025-4123)
 - [imbas007/CVE-2025-4123-template](https://github.com/imbas007/CVE-2025-4123-template)
 - [ynsmroztas/CVE-2025-4123-Exploit-Tool-Grafana-](https://github.com/ynsmroztas/CVE-2025-4123-Exploit-Tool-Grafana-)
-- [B1ack4sh/Blackash-CVE-2025-4123](https://github.com/B1ack4sh/Blackash-CVE-2025-4123)
+- [Ashwesker/Blackash-CVE-2025-4123](https://github.com/Ashwesker/Blackash-CVE-2025-4123)
 - [punitdarji/Grafana-cve-2025-4123](https://github.com/punitdarji/Grafana-cve-2025-4123)
 - [ItsNee/Grafana-CVE-2025-4123-POC](https://github.com/ItsNee/Grafana-CVE-2025-4123-POC)
 - [MorphyKutay/CVE-2025-4123-Exploit](https://github.com/MorphyKutay/CVE-2025-4123-Exploit)
@@ -727,7 +728,7 @@
 
 - [IndominusRexes/CVE-2025-4322-Exploit](https://github.com/IndominusRexes/CVE-2025-4322-Exploit)
 - [Yucaerin/CVE-2025-4322](https://github.com/Yucaerin/CVE-2025-4322)
-- [B1ack4sh/Blackash-CVE-2025-4322](https://github.com/B1ack4sh/Blackash-CVE-2025-4322)
+- [Ashwesker/Blackash-CVE-2025-4322](https://github.com/Ashwesker/Blackash-CVE-2025-4322)
 
 ### CVE-2025-4334 (2025-06-26)
 
@@ -765,7 +766,7 @@
 </code>
 
 - [Yucaerin/CVE-2025-4403](https://github.com/Yucaerin/CVE-2025-4403)
-- [B1ack4sh/Blackash-CVE-2025-4403](https://github.com/B1ack4sh/Blackash-CVE-2025-4403)
+- [Ashwesker/Blackash-CVE-2025-4403](https://github.com/Ashwesker/Blackash-CVE-2025-4403)
 
 ### CVE-2025-4404 (2025-06-17)
 
@@ -1073,7 +1074,7 @@
 - [0xgh057r3c0n/CVE-2025-5777](https://github.com/0xgh057r3c0n/CVE-2025-5777)
 - [SleepNotF0und/CVE-2025-5777](https://github.com/SleepNotF0und/CVE-2025-5777)
 - [cyberleelawat/ExploitVeer](https://github.com/cyberleelawat/ExploitVeer)
-- [B1ack4sh/Blackash-CVE-2025-5777](https://github.com/B1ack4sh/Blackash-CVE-2025-5777)
+- [Ashwesker/Blackash-CVE-2025-5777](https://github.com/Ashwesker/Blackash-CVE-2025-5777)
 - [Shivshantp/CVE-2025-5777-TrendMicro-ApexCentral-RCE](https://github.com/Shivshantp/CVE-2025-5777-TrendMicro-ApexCentral-RCE)
 - [rob0tstxt/POC-CVE-2025-5777](https://github.com/rob0tstxt/POC-CVE-2025-5777)
 - [below0day/Honeypot-Logs-CVE-2025-5777](https://github.com/below0day/Honeypot-Logs-CVE-2025-5777)
@@ -1128,7 +1129,7 @@
 - [iamgithubber/CVE-2025-6018-19-exploit](https://github.com/iamgithubber/CVE-2025-6018-19-exploit)
 - [dreysanox/CVE-2025-6018_Poc](https://github.com/dreysanox/CVE-2025-6018_Poc)
 - [ibrahmsql/CVE-2025-6018](https://github.com/ibrahmsql/CVE-2025-6018)
-- [B1ack4sh/Blackash-CVE-2025-6018](https://github.com/B1ack4sh/Blackash-CVE-2025-6018)
+- [Ashwesker/Blackash-CVE-2025-6018](https://github.com/Ashwesker/Blackash-CVE-2025-6018)
 
 ### CVE-2025-6019 (2025-06-19)
 
@@ -1208,7 +1209,7 @@
 <code>The Sneeit Framework plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 8.3 via the sneeit_articles_pagination_callback() function. This is due to the function accepting user input and then passing that through call_user_func(). This makes it possible for unauthenticated attackers to execute code on the server which can be leveraged to inject backdoors or, for example, create new administrative user accounts.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-6389](https://github.com/B1ack4sh/Blackash-CVE-2025-6389)
+- [Ashwesker/Blackash-CVE-2025-6389](https://github.com/Ashwesker/Blackash-CVE-2025-6389)
 
 ### CVE-2025-6440 (2025-10-24)
 
@@ -1541,7 +1542,7 @@
 - [hbesljx/CVE-2025-8088-EXP](https://github.com/hbesljx/CVE-2025-8088-EXP)
 - [lucyna77/winrar-exploit](https://github.com/lucyna77/winrar-exploit)
 - [papcaii2004/CVE-2025-8088-WinRAR-builder](https://github.com/papcaii2004/CVE-2025-8088-WinRAR-builder)
-- [B1ack4sh/Blackash-CVE-2025-8088](https://github.com/B1ack4sh/Blackash-CVE-2025-8088)
+- [Ashwesker/Blackash-CVE-2025-8088](https://github.com/Ashwesker/Blackash-CVE-2025-8088)
 - [nuky-alt/CVE-2025-8088](https://github.com/nuky-alt/CVE-2025-8088)
 - [4daysday/cve-2025-8088](https://github.com/4daysday/cve-2025-8088)
 
@@ -1687,7 +1688,7 @@
 <code>The Custom MCPs feature is designed to execute OS commands, for instance, using tools like `npx` to spin up local MCP Servers. However, Flowise's inherent authentication and authorization model is minimal and lacks role-based access controls (RBAC). Furthermore, in Flowise versions before 3.0.1 the default installation operates without authentication unless explicitly configured. This combination allows unauthenticated network attackers to execute unsandboxed OS commands.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-8943](https://github.com/B1ack4sh/Blackash-CVE-2025-8943)
+- [Ashwesker/Blackash-CVE-2025-8943](https://github.com/Ashwesker/Blackash-CVE-2025-8943)
 
 ### CVE-2025-8971 (2025-08-14)
 
@@ -1754,7 +1755,7 @@
 </code>
 
 - [watchtowrlabs/watchTowr-vs-WatchGuard-CVE-2025-9242](https://github.com/watchtowrlabs/watchTowr-vs-WatchGuard-CVE-2025-9242)
-- [B1ack4sh/Blackash-CVE-2025-9242](https://github.com/B1ack4sh/Blackash-CVE-2025-9242)
+- [Ashwesker/Blackash-CVE-2025-9242](https://github.com/Ashwesker/Blackash-CVE-2025-9242)
 
 ### CVE-2025-9267 (2025-09-26)
 
@@ -1869,7 +1870,7 @@
 - [rxerium/CVE-2025-10035](https://github.com/rxerium/CVE-2025-10035)
 - [ThemeHackers/CVE-2025-10035](https://github.com/ThemeHackers/CVE-2025-10035)
 - [orange0Mint/CVE-2025-10035_GoAnywhere](https://github.com/orange0Mint/CVE-2025-10035_GoAnywhere)
-- [B1ack4sh/Blackash-CVE-2025-10035](https://github.com/B1ack4sh/Blackash-CVE-2025-10035)
+- [Ashwesker/Blackash-CVE-2025-10035](https://github.com/Ashwesker/Blackash-CVE-2025-10035)
 
 ### CVE-2025-10041 (2025-10-15)
 
@@ -1922,7 +1923,7 @@
 </code>
 
 - [dptsec/CVE-2025-10230](https://github.com/dptsec/CVE-2025-10230)
-- [B1ack4sh/Blackash-CVE-2025-10230](https://github.com/B1ack4sh/Blackash-CVE-2025-10230)
+- [Ashwesker/Blackash-CVE-2025-10230](https://github.com/Ashwesker/Blackash-CVE-2025-10230)
 - [nehkark/CVE-2025-10230](https://github.com/nehkark/CVE-2025-10230)
 - [marcostolosa/CVE-2025-10230](https://github.com/marcostolosa/CVE-2025-10230)
 
@@ -1980,7 +1981,7 @@
 <code>OpenVPN 2.7_alpha1 through 2.7_beta1 on POSIX based platforms allows a remote authenticated server to inject shell commands via DNS variables when --dns-updown is in use
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-10680](https://github.com/B1ack4sh/Blackash-CVE-2025-10680)
+- [Ashwesker/Blackash-CVE-2025-10680](https://github.com/Ashwesker/Blackash-CVE-2025-10680)
 
 ### CVE-2025-10720 (2025-10-13)
 
@@ -2013,7 +2014,7 @@
 - [lastvocher/7zip-CVE-2025-11001](https://github.com/lastvocher/7zip-CVE-2025-11001)
 - [mbanyamer/CVE-2025-11001---7-Zip](https://github.com/mbanyamer/CVE-2025-11001---7-Zip)
 - [ranasen-rat/CVE-2025-11001](https://github.com/ranasen-rat/CVE-2025-11001)
-- [B1ack4sh/Blackash-CVE-2025-11001](https://github.com/B1ack4sh/Blackash-CVE-2025-11001)
+- [Ashwesker/Blackash-CVE-2025-11001](https://github.com/Ashwesker/Blackash-CVE-2025-11001)
 
 ### CVE-2025-11077 (2025-09-27)
 
@@ -2121,7 +2122,7 @@
 </code>
 
 - [SaidBenaissa/cve-2025-11953-vulnerability-demo](https://github.com/SaidBenaissa/cve-2025-11953-vulnerability-demo)
-- [B1ack4sh/Blackash-CVE-2025-11953](https://github.com/B1ack4sh/Blackash-CVE-2025-11953)
+- [Ashwesker/Blackash-CVE-2025-11953](https://github.com/Ashwesker/Blackash-CVE-2025-11953)
 - [N3k0t-dev/PoC-CVE-collection](https://github.com/N3k0t-dev/PoC-CVE-collection)
 
 ### CVE-2025-12101 (2025-11-11)
@@ -2181,7 +2182,7 @@
 <code>pgAdmin versions up to 9.9 are affected by a Remote Code Execution (RCE) vulnerability that occurs when running in server mode and performing restores from PLAIN-format dump files. This issue allows attackers to inject and execute arbitrary commands on the server hosting pgAdmin, posing a critical risk to the integrity and security of the database management system and underlying data.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-12762](https://github.com/B1ack4sh/Blackash-CVE-2025-12762)
+- [Ashwesker/Blackash-CVE-2025-12762](https://github.com/Ashwesker/Blackash-CVE-2025-12762)
 
 ### CVE-2025-12904 (2025-11-14)
 
@@ -2224,6 +2225,13 @@
 </code>
 
 - [MooseLoveti/Flo-Forms-CVE-Report](https://github.com/MooseLoveti/Flo-Forms-CVE-Report)
+
+### CVE-2025-13315 (2025-11-19)
+
+<code>Twonky Server 8.5.2 on Linux and Windows is vulnerable to an access control flaw. An unauthenticated attacker can bypass web service API authentication controls to leak a log file and read the administrator's username and encrypted password.
+</code>
+
+- [Ashwesker/Blackash-CVE-2025-13315](https://github.com/Ashwesker/Blackash-CVE-2025-13315)
 
 ### CVE-2025-13380 (2025-11-25)
 
@@ -2293,7 +2301,7 @@
 - [abrewer251/CVE-2025-20281-2-Cisco-ISE-RCE](https://github.com/abrewer251/CVE-2025-20281-2-Cisco-ISE-RCE)
 - [grupooruss/CVE-2025-20281-Cisco](https://github.com/grupooruss/CVE-2025-20281-Cisco)
 - [ill-deed/Cisco-CVE-2025-20281-illdeed](https://github.com/ill-deed/Cisco-CVE-2025-20281-illdeed)
-- [B1ack4sh/Blackash-CVE-2025-20281](https://github.com/B1ack4sh/Blackash-CVE-2025-20281)
+- [Ashwesker/Blackash-CVE-2025-20281](https://github.com/Ashwesker/Blackash-CVE-2025-20281)
 
 ### CVE-2025-20282 (2025-06-25)
 
@@ -2307,14 +2315,14 @@
 <code>A vulnerability in a specific API of Cisco ISE and Cisco ISE-PIC could allow an unauthenticated, remote attacker to execute arbitrary code on the underlying operating system as root. The attacker does not require any valid credentials to exploit this vulnerability.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by submitting a crafted API request. A successful exploit could allow the attacker to obtain root privileges on an affected device.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-20337](https://github.com/B1ack4sh/Blackash-CVE-2025-20337)
+- [Ashwesker/Blackash-CVE-2025-20337](https://github.com/Ashwesker/Blackash-CVE-2025-20337)
 
 ### CVE-2025-20343 (2025-11-05)
 
 <code>A vulnerability in the RADIUS setting Reject RADIUS requests from clients with repeated failures on Cisco Identity Services Engine (ISE) could allow an unauthenticated, remote attacker to cause Cisco ISE to restart unexpectedly.\r\n\r\nThis vulnerability is due to a logic error when processing a RADIUS access request for a MAC address that is already a rejected endpoint. An attacker could exploit this vulnerability by sending a specific sequence of multiple crafted RADIUS access request messages to Cisco ISE. A successful exploit could allow the attacker to cause a denial of service (DoS) condition when Cisco ISE restarts.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-20343](https://github.com/B1ack4sh/Blackash-CVE-2025-20343)
+- [Ashwesker/Blackash-CVE-2025-20343](https://github.com/Ashwesker/Blackash-CVE-2025-20343)
 
 ### CVE-2025-20352 (2025-09-24)
 
@@ -2328,14 +2336,14 @@
 <code>A vulnerability in the Java Remote Method Invocation (RMI) process of Cisco Unified CCX could allow an unauthenticated, remote attacker to upload arbitrary files and execute arbitrary commands with root permissions on an affected system.\r\n\r\nThis vulnerability is due to improper authentication mechanisms that are associated to specific Cisco Unified CCX features. An attacker could exploit this vulnerability by uploading a crafted file to an affected system through the Java RMI process. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system and elevate privileges to root.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-20354](https://github.com/B1ack4sh/Blackash-CVE-2025-20354)
+- [Ashwesker/Blackash-CVE-2025-20354](https://github.com/Ashwesker/Blackash-CVE-2025-20354)
 
 ### CVE-2025-21042 (2025-09-12)
 
 <code>Out-of-bounds write in libimagecodec.quram.so prior to SMR Apr-2025 Release 1 allows remote attackers to execute arbitrary code.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-21042](https://github.com/B1ack4sh/Blackash-CVE-2025-21042)
+- [Ashwesker/Blackash-CVE-2025-21042](https://github.com/Ashwesker/Blackash-CVE-2025-21042)
 
 ### CVE-2025-21202 (2025-01-14)
 
@@ -2366,7 +2374,7 @@
 - [ynwarcs/CVE-2025-21298](https://github.com/ynwarcs/CVE-2025-21298)
 - [Dit-Developers/CVE-2025-21298](https://github.com/Dit-Developers/CVE-2025-21298)
 - [Denyningbow/rtf-ctf-cve-2025-21298](https://github.com/Denyningbow/rtf-ctf-cve-2025-21298)
-- [B1ack4sh/Blackash-CVE-2025-21298](https://github.com/B1ack4sh/Blackash-CVE-2025-21298)
+- [Ashwesker/Blackash-CVE-2025-21298](https://github.com/Ashwesker/Blackash-CVE-2025-21298)
 - [fy-poc/full-poc-CVE-2025_21298](https://github.com/fy-poc/full-poc-CVE-2025_21298)
 - [Arkha-Corvus/LetsDefend-SOC336-Windows-OLE-Zero-Click-RCE-Exploitation-Detected-CVE-2025-21298-](https://github.com/Arkha-Corvus/LetsDefend-SOC336-Windows-OLE-Zero-Click-RCE-Exploitation-Detected-CVE-2025-21298-)
 
@@ -2377,7 +2385,7 @@
 
 - [MrAle98/CVE-2025-21333-POC](https://github.com/MrAle98/CVE-2025-21333-POC)
 - [aleongx/KQL_sentinel_CVE-2025-21333](https://github.com/aleongx/KQL_sentinel_CVE-2025-21333)
-- [B1ack4sh/Blackash-CVE-2025-21333](https://github.com/B1ack4sh/Blackash-CVE-2025-21333)
+- [Ashwesker/Blackash-CVE-2025-21333](https://github.com/Ashwesker/Blackash-CVE-2025-21333)
 
 ### CVE-2025-21385 (2025-01-09)
 
@@ -2485,7 +2493,7 @@
 - [sfewer-r7/CVE-2025-22457](https://github.com/sfewer-r7/CVE-2025-22457)
 - [securekomodo/CVE-2025-22457](https://github.com/securekomodo/CVE-2025-22457)
 - [TRone-ux/CVE-2025-22457](https://github.com/TRone-ux/CVE-2025-22457)
-- [B1ack4sh/Blackash-CVE-2025-22457](https://github.com/B1ack4sh/Blackash-CVE-2025-22457)
+- [Ashwesker/Blackash-CVE-2025-22457](https://github.com/Ashwesker/Blackash-CVE-2025-22457)
 
 ### CVE-2025-22510 (2025-01-09)
 
@@ -2556,7 +2564,7 @@
 </code>
 
 - [JoshuaProvoste/CVE-2025-22870](https://github.com/JoshuaProvoste/CVE-2025-22870)
-- [B1ack4sh/Blackash-CVE-2025-22870](https://github.com/B1ack4sh/Blackash-CVE-2025-22870)
+- [Ashwesker/Blackash-CVE-2025-22870](https://github.com/Ashwesker/Blackash-CVE-2025-22870)
 
 ### CVE-2025-22912 (2025-01-16)
 
@@ -2694,7 +2702,7 @@
 - [celsius026/poc_CVE-2025-24016](https://github.com/celsius026/poc_CVE-2025-24016)
 - [cybersecplayground/CVE-2025-24016-Wazuh-Remote-Code-Execution-RCE-PoC](https://github.com/cybersecplayground/CVE-2025-24016-Wazuh-Remote-Code-Execution-RCE-PoC)
 - [rxerium/CVE-2025-24016](https://github.com/rxerium/CVE-2025-24016)
-- [B1ack4sh/Blackash-CVE-2025-24016](https://github.com/B1ack4sh/Blackash-CVE-2025-24016)
+- [Ashwesker/Blackash-CVE-2025-24016](https://github.com/Ashwesker/Blackash-CVE-2025-24016)
 - [guinea-offensive-security/Wazuh-RCE](https://github.com/guinea-offensive-security/Wazuh-RCE)
 
 ### CVE-2025-24035 (2025-03-11)
@@ -2736,7 +2744,7 @@
 - [LOOKY243/CVE-2025-24071-PoC](https://github.com/LOOKY243/CVE-2025-24071-PoC)
 - [ex-cal1bur/SMB_CVE-2025-24071](https://github.com/ex-cal1bur/SMB_CVE-2025-24071)
 - [TH-SecForge/CVE-2025-24071](https://github.com/TH-SecForge/CVE-2025-24071)
-- [B1ack4sh/Blackash-CVE-2025-24071](https://github.com/B1ack4sh/Blackash-CVE-2025-24071)
+- [Ashwesker/Blackash-CVE-2025-24071](https://github.com/Ashwesker/Blackash-CVE-2025-24071)
 - [DeshanFer94/CVE-2025-24071-POC-NTLMHashDisclosure-](https://github.com/DeshanFer94/CVE-2025-24071-POC-NTLMHashDisclosure-)
 - [Royall-Researchers/CVE-2025-24071](https://github.com/Royall-Researchers/CVE-2025-24071)
 - [AC8999/CVE-2025-24071](https://github.com/AC8999/CVE-2025-24071)
@@ -2810,7 +2818,7 @@
 
 - [ekomsSavior/AirBorne-PoC](https://github.com/ekomsSavior/AirBorne-PoC)
 - [cakescats/airborn-IOS-CVE-2025-24252](https://github.com/cakescats/airborn-IOS-CVE-2025-24252)
-- [B1ack4sh/Blackash-CVE-2025-24252](https://github.com/B1ack4sh/Blackash-CVE-2025-24252)
+- [Ashwesker/Blackash-CVE-2025-24252](https://github.com/Ashwesker/Blackash-CVE-2025-24252)
 
 ### CVE-2025-24271 (2025-04-29)
 
@@ -2982,7 +2990,7 @@
 - [rvizx/CVE-2025-24893](https://github.com/rvizx/CVE-2025-24893)
 - [Y2F05p2w/CVE-2025-24893](https://github.com/Y2F05p2w/CVE-2025-24893)
 - [80Ottanta80/CVE-2025-24893-PoC](https://github.com/80Ottanta80/CVE-2025-24893-PoC)
-- [B1ack4sh/Blackash-CVE-2025-24893](https://github.com/B1ack4sh/Blackash-CVE-2025-24893)
+- [Ashwesker/Blackash-CVE-2025-24893](https://github.com/Ashwesker/Blackash-CVE-2025-24893)
 
 ### CVE-2025-24963 (2025-02-04)
 
@@ -3018,7 +3026,7 @@
 </code>
 
 - [davidxbors/CVE-2025-25014](https://github.com/davidxbors/CVE-2025-25014)
-- [B1ack4sh/Blackash-CVE-2025-25014](https://github.com/B1ack4sh/Blackash-CVE-2025-25014)
+- [Ashwesker/Blackash-CVE-2025-25014](https://github.com/Ashwesker/Blackash-CVE-2025-25014)
 
 ### CVE-2025-25062 (2025-02-03)
 
@@ -3081,7 +3089,7 @@
 - [aitorfirm/CVE-2025-25257](https://github.com/aitorfirm/CVE-2025-25257)
 - [adilburaksen/CVE-2025-25257-Exploit-Tool](https://github.com/adilburaksen/CVE-2025-25257-Exploit-Tool)
 - [imbas007/CVE-2025-25257](https://github.com/imbas007/CVE-2025-25257)
-- [B1ack4sh/Blackash-CVE-2025-25257](https://github.com/B1ack4sh/Blackash-CVE-2025-25257)
+- [Ashwesker/Blackash-CVE-2025-25257](https://github.com/Ashwesker/Blackash-CVE-2025-25257)
 - [0xgh057r3c0n/CVE-2025-25257](https://github.com/0xgh057r3c0n/CVE-2025-25257)
 - [mrmtwoj/CVE-2025-25257](https://github.com/mrmtwoj/CVE-2025-25257)
 - [TheStingR/CVE-2025-25257](https://github.com/TheStingR/CVE-2025-25257)
@@ -3471,7 +3479,7 @@
 </code>
 
 - [absholi7ly/CVE-2025-27210_NodeJS_Path_Traversal_Exploit](https://github.com/absholi7ly/CVE-2025-27210_NodeJS_Path_Traversal_Exploit)
-- [B1ack4sh/Blackash-CVE-2025-27210](https://github.com/B1ack4sh/Blackash-CVE-2025-27210)
+- [Ashwesker/Blackash-CVE-2025-27210](https://github.com/Ashwesker/Blackash-CVE-2025-27210)
 - [mindeddu/Vulnerable-CVE-2025-27210](https://github.com/mindeddu/Vulnerable-CVE-2025-27210)
 
 ### CVE-2025-27363 (2025-03-11)
@@ -3738,7 +3746,7 @@
 - [Mattb709/CVE-2025-29306-PoC-FoxCMS-RCE](https://github.com/Mattb709/CVE-2025-29306-PoC-FoxCMS-RCE)
 - [congdong007/CVE-2025-29306_poc](https://github.com/congdong007/CVE-2025-29306_poc)
 - [amalpvatayam67/day06-foxcms-rce](https://github.com/amalpvatayam67/day06-foxcms-rce)
-- [B1ack4sh/Blackash-CVE-2025-29306](https://github.com/B1ack4sh/Blackash-CVE-2025-29306)
+- [Ashwesker/Blackash-CVE-2025-29306](https://github.com/Ashwesker/Blackash-CVE-2025-29306)
 
 ### CVE-2025-29384 (2025-03-14)
 
@@ -3941,7 +3949,7 @@
 - [enochgitgamefied/NextJS-CVE-2025-29927-Docker-Lab](https://github.com/enochgitgamefied/NextJS-CVE-2025-29927-Docker-Lab)
 - [sagsooz/CVE-2025-29927](https://github.com/sagsooz/CVE-2025-29927)
 - [SugiB3o/vulnerable-nextjs-14-CVE-2025-29927](https://github.com/SugiB3o/vulnerable-nextjs-14-CVE-2025-29927)
-- [B1ack4sh/Blackash-CVE-2025-29927](https://github.com/B1ack4sh/Blackash-CVE-2025-29927)
+- [Ashwesker/Blackash-CVE-2025-29927](https://github.com/Ashwesker/Blackash-CVE-2025-29927)
 - [amitlttwo/Next.JS-CVE-2025-29927](https://github.com/amitlttwo/Next.JS-CVE-2025-29927)
 - [kazuya256/next-js-auth-bypass](https://github.com/kazuya256/next-js-auth-bypass)
 - [mickhacking/Thank-u-Next](https://github.com/mickhacking/Thank-u-Next)
@@ -3982,7 +3990,7 @@
 - [mouadk/parquet-rce-poc-CVE-2025-30065](https://github.com/mouadk/parquet-rce-poc-CVE-2025-30065)
 - [ThreatRadarAI/TRAI-001-Critical-RCE-Vulnerability-in-Apache-Parquet-CVE-2025-30065-Simulation](https://github.com/ThreatRadarAI/TRAI-001-Critical-RCE-Vulnerability-in-Apache-Parquet-CVE-2025-30065-Simulation)
 - [F5-Labs/parquet-canary-exploit-rce-poc-CVE-2025-30065](https://github.com/F5-Labs/parquet-canary-exploit-rce-poc-CVE-2025-30065)
-- [B1ack4sh/Blackash-CVE-2025-30065](https://github.com/B1ack4sh/Blackash-CVE-2025-30065)
+- [Ashwesker/Blackash-CVE-2025-30065](https://github.com/Ashwesker/Blackash-CVE-2025-30065)
 
 ### CVE-2025-30066 (2025-03-15)
 
@@ -4024,7 +4032,7 @@
 - [r0ngy40/CVE-2025-30208-Series](https://github.com/r0ngy40/CVE-2025-30208-Series)
 - [nkuty/CVE-2025-30208-31125-31486-32395](https://github.com/nkuty/CVE-2025-30208-31125-31486-32395)
 - [HaGsec/CVE-2025-30208](https://github.com/HaGsec/CVE-2025-30208)
-- [B1ack4sh/Blackash-CVE-2025-30208](https://github.com/B1ack4sh/Blackash-CVE-2025-30208)
+- [Ashwesker/Blackash-CVE-2025-30208](https://github.com/Ashwesker/Blackash-CVE-2025-30208)
 - [ThemeHackers/CVE-2025-30208](https://github.com/ThemeHackers/CVE-2025-30208)
 - [TH-SecForge/CVE-2025-30208](https://github.com/TH-SecForge/CVE-2025-30208)
 - [bugdotexe/CVE-2025-30208](https://github.com/bugdotexe/CVE-2025-30208)
@@ -4050,7 +4058,7 @@
 </code>
 
 - [mbanyamer/CVE-2025-30397---Windows-Server-2025-JScript-RCE-Use-After-Free-](https://github.com/mbanyamer/CVE-2025-30397---Windows-Server-2025-JScript-RCE-Use-After-Free-)
-- [B1ack4sh/Blackash-CVE-2025-30397](https://github.com/B1ack4sh/Blackash-CVE-2025-30397)
+- [Ashwesker/Blackash-CVE-2025-30397](https://github.com/Ashwesker/Blackash-CVE-2025-30397)
 
 ### CVE-2025-30400 (2025-05-13)
 
@@ -4149,7 +4157,7 @@
 
 - [MuhammadWaseem29/CVE-2025-31131](https://github.com/MuhammadWaseem29/CVE-2025-31131)
 - [nak000/CVE-2025-31131-RCE](https://github.com/nak000/CVE-2025-31131-RCE)
-- [B1ack4sh/Blackash-CVE-2025-31131](https://github.com/B1ack4sh/Blackash-CVE-2025-31131)
+- [Ashwesker/Blackash-CVE-2025-31131](https://github.com/Ashwesker/Blackash-CVE-2025-31131)
 
 ### CVE-2025-31133 (2025-11-06)
 
@@ -4177,7 +4185,7 @@
 - [SUPRAAA-1337/Nuclei_CVE-2025-31161_CVE-2025-2825](https://github.com/SUPRAAA-1337/Nuclei_CVE-2025-31161_CVE-2025-2825)
 - [SUPRAAA-1337/CVE-2025-31161_exploit](https://github.com/SUPRAAA-1337/CVE-2025-31161_exploit)
 - [0xgh057r3c0n/CVE-2025-31161](https://github.com/0xgh057r3c0n/CVE-2025-31161)
-- [B1ack4sh/Blackash-CVE-2025-31161](https://github.com/B1ack4sh/Blackash-CVE-2025-31161)
+- [Ashwesker/Blackash-CVE-2025-31161](https://github.com/Ashwesker/Blackash-CVE-2025-31161)
 - [ibrahmsql/CVE-2025-31161](https://github.com/ibrahmsql/CVE-2025-31161)
 - [r0otk3r/CVE-2025-31161](https://github.com/r0otk3r/CVE-2025-31161)
 - [f4dee-backup/CVE-2025-31161](https://github.com/f4dee-backup/CVE-2025-31161)
@@ -4316,7 +4324,7 @@
 </code>
 
 - [leesh3288/CVE-2025-32023](https://github.com/leesh3288/CVE-2025-32023)
-- [B1ack4sh/Blackash-CVE-2025-32023](https://github.com/B1ack4sh/Blackash-CVE-2025-32023)
+- [Ashwesker/Blackash-CVE-2025-32023](https://github.com/Ashwesker/Blackash-CVE-2025-32023)
 - [LordBheem/CVE-2025-32023](https://github.com/LordBheem/CVE-2025-32023)
 
 ### CVE-2025-32094 (2025-08-07)
@@ -4407,7 +4415,7 @@
 - [Chocapikk/CVE-2025-32432](https://github.com/Chocapikk/CVE-2025-32432)
 - [Sachinart/CVE-2025-32432](https://github.com/Sachinart/CVE-2025-32432)
 - [CTY-Research-1/CVE-2025-32432-PoC](https://github.com/CTY-Research-1/CVE-2025-32432-PoC)
-- [B1ack4sh/Blackash-CVE-2025-32432](https://github.com/B1ack4sh/Blackash-CVE-2025-32432)
+- [Ashwesker/Blackash-CVE-2025-32432](https://github.com/Ashwesker/Blackash-CVE-2025-32432)
 - [bambooqj/CVE-2025-32432](https://github.com/bambooqj/CVE-2025-32432)
 
 ### CVE-2025-32433 (2025-04-16)
@@ -4436,7 +4444,7 @@
 - [C9b3rD3vi1/Erlang-OTP-SSH-CVE-2025-32433](https://github.com/C9b3rD3vi1/Erlang-OTP-SSH-CVE-2025-32433)
 - [bilalz5-github/Erlang-OTP-SSH-CVE-2025-32433](https://github.com/bilalz5-github/Erlang-OTP-SSH-CVE-2025-32433)
 - [vigilante-1337/CVE-2025-32433](https://github.com/vigilante-1337/CVE-2025-32433)
-- [B1ack4sh/Blackash-CVE-2025-32433](https://github.com/B1ack4sh/Blackash-CVE-2025-32433)
+- [Ashwesker/Blackash-CVE-2025-32433](https://github.com/Ashwesker/Blackash-CVE-2025-32433)
 - [Yuri08loveElaina/CVE-2025-32433-Erlang-OTP-SSH-Pre-Auth-RCE-exploit](https://github.com/Yuri08loveElaina/CVE-2025-32433-Erlang-OTP-SSH-Pre-Auth-RCE-exploit)
 - [NiteeshPujari/CVE-2025-32433-PoC](https://github.com/NiteeshPujari/CVE-2025-32433-PoC)
 - [te0rwx/CVE-2025-32433-Detection](https://github.com/te0rwx/CVE-2025-32433-Detection)
@@ -4507,7 +4515,7 @@
 - [zinzloun/CVE-2025-32463](https://github.com/zinzloun/CVE-2025-32463)
 - [yeremeu/CVE-2025-32463_chwoot](https://github.com/yeremeu/CVE-2025-32463_chwoot)
 - [cyberpoul/CVE-2025-32463-POC](https://github.com/cyberpoul/CVE-2025-32463-POC)
-- [B1ack4sh/Blackash-CVE-2025-32463](https://github.com/B1ack4sh/Blackash-CVE-2025-32463)
+- [Ashwesker/Blackash-CVE-2025-32463](https://github.com/Ashwesker/Blackash-CVE-2025-32463)
 - [junxian428/CVE-2025-32463](https://github.com/junxian428/CVE-2025-32463)
 - [FreeDurok/CVE-2025-32463-PoC](https://github.com/FreeDurok/CVE-2025-32463-PoC)
 - [Chocapikk/CVE-2025-32463-lab](https://github.com/Chocapikk/CVE-2025-32463-lab)
@@ -4614,7 +4622,7 @@
 
 - [exfil0/CVE-2025-32756-POC](https://github.com/exfil0/CVE-2025-32756-POC)
 - [kn0x0x/CVE-2025-32756-POC](https://github.com/kn0x0x/CVE-2025-32756-POC)
-- [B1ack4sh/Blackash-CVE-2025-32756](https://github.com/B1ack4sh/Blackash-CVE-2025-32756)
+- [Ashwesker/Blackash-CVE-2025-32756](https://github.com/Ashwesker/Blackash-CVE-2025-32756)
 - [alm6no5/CVE-2025-32756-POC](https://github.com/alm6no5/CVE-2025-32756-POC)
 - [becrevex/CVE-2025-32756](https://github.com/becrevex/CVE-2025-32756)
 - [shan0ar/cve-2025-32756](https://github.com/shan0ar/cve-2025-32756)
@@ -4662,7 +4670,7 @@
 - [cve-2025-33073/cve-2025-33073](https://github.com/cve-2025-33073/cve-2025-33073)
 - [SFRDevelopment/windows-smb-vulnerability-framework-cve-2025-33073](https://github.com/SFRDevelopment/windows-smb-vulnerability-framework-cve-2025-33073)
 - [uziii2208/CVE-2025-33073](https://github.com/uziii2208/CVE-2025-33073)
-- [B1ack4sh/Blackash-CVE-2025-33073](https://github.com/B1ack4sh/Blackash-CVE-2025-33073)
+- [Ashwesker/Blackash-CVE-2025-33073](https://github.com/Ashwesker/Blackash-CVE-2025-33073)
 
 ### CVE-2025-34028 (2025-04-22)
 
@@ -4708,7 +4716,7 @@
 - [ill-deed/CVE-2025-34085-Multi-target](https://github.com/ill-deed/CVE-2025-34085-Multi-target)
 - [0xgh057r3c0n/CVE-2025-34085](https://github.com/0xgh057r3c0n/CVE-2025-34085)
 - [yukinime/CVE-2025-34085](https://github.com/yukinime/CVE-2025-34085)
-- [B1ack4sh/Blackash-CVE-2025-34085](https://github.com/B1ack4sh/Blackash-CVE-2025-34085)
+- [Ashwesker/Blackash-CVE-2025-34085](https://github.com/Ashwesker/Blackash-CVE-2025-34085)
 
 ### CVE-2025-34100 (2025-07-10)
 
@@ -4767,7 +4775,7 @@
 </code>
 
 - [rxerium/CVE-2025-34299](https://github.com/rxerium/CVE-2025-34299)
-- [B1ack4sh/Blackash-CVE-2025-34299](https://github.com/B1ack4sh/Blackash-CVE-2025-34299)
+- [Ashwesker/Blackash-CVE-2025-34299](https://github.com/Ashwesker/Blackash-CVE-2025-34299)
 - [Chocapikk/CVE-2025-34299](https://github.com/Chocapikk/CVE-2025-34299)
 
 ### CVE-2025-34300 (2025-07-16)
@@ -4796,7 +4804,7 @@
 <code>IBM AIX 7.2, and 7.3 and IBM VIOS 3.1, and 4.1 NIM server (formerly known as NIM master) service (nimesis) could allow a remote attacker to execute arbitrary commands due to improper process controls.  This addresses additional attack vectors for a vulnerability that was previously addressed in CVE-2024-56346.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-36250](https://github.com/B1ack4sh/Blackash-CVE-2025-36250)
+- [Ashwesker/Blackash-CVE-2025-36250](https://github.com/Ashwesker/Blackash-CVE-2025-36250)
 
 ### CVE-2025-36604 (2025-08-04)
 
@@ -4960,7 +4968,7 @@
 <code>A logic error vulnerability exists in Serv-U which when abused could give a malicious actor with access to admin privileges the ability to execute code. \n\nThis issue requires administrative privileges to abuse. On Windows deployments, the risk is scored as a medium because services frequently run under less-privileged service accounts by default.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-40547](https://github.com/B1ack4sh/Blackash-CVE-2025-40547)
+- [Ashwesker/Blackash-CVE-2025-40547](https://github.com/Ashwesker/Blackash-CVE-2025-40547)
 
 ### CVE-2025-40629 (2025-05-16)
 
@@ -5037,7 +5045,7 @@
 <code>SCIM provisioning was introduced in Grafana Enterprise and Grafana Cloud in April to improve how organizations manage users and teams in Grafana by introducing automated user lifecycle management.\n\nIn Grafana versions 12.x where SCIM provisioning is enabled and configured, a vulnerability in user identity handling allows a malicious or compromised SCIM client to provision a user with a numeric externalId, which in turn could allow to override internal user IDs and lead to impersonation or privilege escalation.\n\nThis vulnerability applies only if all of the following conditions are met:\n- `enableSCIM` feature flag set to true\n- `user_sync_enabled` config option in the `[auth.scim]` block set to true
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-41115](https://github.com/B1ack4sh/Blackash-CVE-2025-41115)
+- [Ashwesker/Blackash-CVE-2025-41115](https://github.com/Ashwesker/Blackash-CVE-2025-41115)
 
 ### CVE-2025-41244 (2025-09-29)
 
@@ -5519,7 +5527,7 @@
 </code>
 
 - [synacktiv/CVE-2025-47227_CVE-2025-47228](https://github.com/synacktiv/CVE-2025-47227_CVE-2025-47228)
-- [B1ack4sh/Blackash-CVE-2025-47227](https://github.com/B1ack4sh/Blackash-CVE-2025-47227)
+- [Ashwesker/Blackash-CVE-2025-47227](https://github.com/Ashwesker/Blackash-CVE-2025-47227)
 
 ### CVE-2025-47256 (2025-05-06)
 
@@ -5594,7 +5602,7 @@
 - [pevinkumar10/CVE-2025-47812](https://github.com/pevinkumar10/CVE-2025-47812)
 - [rxerium/CVE-2025-47812](https://github.com/rxerium/CVE-2025-47812)
 - [blindma1den/CVE-2025-47812](https://github.com/blindma1den/CVE-2025-47812)
-- [B1ack4sh/Blackash-CVE-2025-47812](https://github.com/B1ack4sh/Blackash-CVE-2025-47812)
+- [Ashwesker/Blackash-CVE-2025-47812](https://github.com/Ashwesker/Blackash-CVE-2025-47812)
 - [r0otk3r/CVE-2025-47812](https://github.com/r0otk3r/CVE-2025-47812)
 - [CTY-Research-1/CVE-2025-47812_Lab_environment](https://github.com/CTY-Research-1/CVE-2025-47812_Lab_environment)
 
@@ -5732,7 +5740,7 @@
 <code>In bta_hf_client_cb_init of bta_hf_client_main.cc, there is a possible remote code execution due to a use after free. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-48593](https://github.com/B1ack4sh/Blackash-CVE-2025-48593)
+- [Ashwesker/Blackash-CVE-2025-48593](https://github.com/Ashwesker/Blackash-CVE-2025-48593)
 - [skolepc/CVE-2025-48593](https://github.com/skolepc/CVE-2025-48593)
 - [logesh-GIT001/CVE-2025-48593](https://github.com/logesh-GIT001/CVE-2025-48593)
 - [letchupkt/CVE-2025-48593](https://github.com/letchupkt/CVE-2025-48593)
@@ -5832,7 +5840,7 @@
 - [hakaioffsec/CVE-2025-49113-exploit](https://github.com/hakaioffsec/CVE-2025-49113-exploit)
 - [BiiTts/Roundcube-CVE-2025-49113](https://github.com/BiiTts/Roundcube-CVE-2025-49113)
 - [Yuri08loveElaina/CVE-2025-49113](https://github.com/Yuri08loveElaina/CVE-2025-49113)
-- [B1ack4sh/Blackash-CVE-2025-49113](https://github.com/B1ack4sh/Blackash-CVE-2025-49113)
+- [Ashwesker/Blackash-CVE-2025-49113](https://github.com/Ashwesker/Blackash-CVE-2025-49113)
 - [5kr1pt/Roundcube_CVE-2025-49113](https://github.com/5kr1pt/Roundcube_CVE-2025-49113)
 - [punitdarji/roundcube-cve-2025-49113](https://github.com/punitdarji/roundcube-cve-2025-49113)
 - [issamjr/CVE-2025-49113-Scanner](https://github.com/issamjr/CVE-2025-49113-Scanner)
@@ -5904,7 +5912,7 @@
 <code>Akamai CloudTest before 60 2025.06.02 (12988) allows file inclusion via XML External Entity (XXE) injection.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-49493](https://github.com/B1ack4sh/Blackash-CVE-2025-49493)
+- [Ashwesker/Blackash-CVE-2025-49493](https://github.com/Ashwesker/Blackash-CVE-2025-49493)
 - [SystemVll/CVE-2025-49493](https://github.com/SystemVll/CVE-2025-49493)
 - [Soham-id/2025hvv](https://github.com/Soham-id/2025hvv)
 
@@ -5963,7 +5971,7 @@
 - [imbas007/CVE-2025-49844-Vulnerability-Scanner](https://github.com/imbas007/CVE-2025-49844-Vulnerability-Scanner)
 - [angelusrivera/CVE-2025-49844](https://github.com/angelusrivera/CVE-2025-49844)
 - [elyasbassir/CVE-2025-49844](https://github.com/elyasbassir/CVE-2025-49844)
-- [B1ack4sh/Blackash-CVE-2025-49844](https://github.com/B1ack4sh/Blackash-CVE-2025-49844)
+- [Ashwesker/Blackash-CVE-2025-49844](https://github.com/Ashwesker/Blackash-CVE-2025-49844)
 - [saneki/cve-2025-49844](https://github.com/saneki/cve-2025-49844)
 - [Network-Sec/CVE-2025-49844-RediShell-AI-made-Revshell](https://github.com/Network-Sec/CVE-2025-49844-RediShell-AI-made-Revshell)
 
@@ -6521,7 +6529,7 @@
 
 - [rxerium/CVE-2025-53072-CVE-2025-62481](https://github.com/rxerium/CVE-2025-53072-CVE-2025-62481)
 - [AshrafZaryouh/CVE-2025-53072-CVE-2025-62481](https://github.com/AshrafZaryouh/CVE-2025-53072-CVE-2025-62481)
-- [B1ack4sh/Blackash-CVE-2025-53072](https://github.com/B1ack4sh/Blackash-CVE-2025-53072)
+- [Ashwesker/Blackash-CVE-2025-53072](https://github.com/Ashwesker/Blackash-CVE-2025-53072)
 
 ### CVE-2025-53367 (2025-07-03)
 
@@ -6572,7 +6580,7 @@
 </code>
 
 - [rxerium/CVE-2025-53690](https://github.com/rxerium/CVE-2025-53690)
-- [B1ack4sh/Blackash-CVE-2025-53690](https://github.com/B1ack4sh/Blackash-CVE-2025-53690)
+- [Ashwesker/Blackash-CVE-2025-53690](https://github.com/Ashwesker/Blackash-CVE-2025-53690)
 - [m0d0ri205/CVE-2025-53690-Analysis](https://github.com/m0d0ri205/CVE-2025-53690-Analysis)
 - [ErikLearningSec/CVE-2025-53690-POC](https://github.com/ErikLearningSec/CVE-2025-53690-POC)
 
@@ -6603,7 +6611,7 @@
 <code>Deserialization of untrusted data in on-premises Microsoft SharePoint Server allows an unauthorized attacker to execute code over a network.\nMicrosoft is aware that an exploit for CVE-2025-53770 exists in the wild.\nMicrosoft is preparing and fully testing a comprehensive update to address this vulnerability.  In the meantime, please make sure that the mitigation provided in this CVE documentation is in place so that you are protected from exploitation.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-53770](https://github.com/B1ack4sh/Blackash-CVE-2025-53770)
+- [Ashwesker/Blackash-CVE-2025-53770](https://github.com/Ashwesker/Blackash-CVE-2025-53770)
 - [RukshanaAlikhan/CVE-2025-53770](https://github.com/RukshanaAlikhan/CVE-2025-53770)
 - [Bluefire-Redteam-Cybersecurity/bluefire-sharepoint-cve-2025-53770](https://github.com/Bluefire-Redteam-Cybersecurity/bluefire-sharepoint-cve-2025-53770)
 - [n1chr0x/ZeroPoint](https://github.com/n1chr0x/ZeroPoint)
@@ -6659,7 +6667,7 @@
 <code>Improper neutralization of special elements used in a command ('command injection') in GitHub Copilot and Visual Studio allows an unauthorized attacker to execute code locally.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-53773](https://github.com/B1ack4sh/Blackash-CVE-2025-53773)
+- [Ashwesker/Blackash-CVE-2025-53773](https://github.com/Ashwesker/Blackash-CVE-2025-53773)
 
 ### CVE-2025-53779 (2025-08-12)
 
@@ -6680,7 +6688,7 @@
 <code>LaRecipe is an application that allows users to create documentation with Markdown inside a Laravel app. Versions prior to 2.8.1 are vulnerable to Server-Side Template Injection (SSTI), which could potentially lead to Remote Code Execution (RCE) in vulnerable configurations. Attackers could execute arbitrary commands on the server, access sensitive environment variables, and/or escalate access depending on server configuration. Users are strongly advised to upgrade to version v2.8.1 or later to receive a patch.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-53833](https://github.com/B1ack4sh/Blackash-CVE-2025-53833)
+- [Ashwesker/Blackash-CVE-2025-53833](https://github.com/Ashwesker/Blackash-CVE-2025-53833)
 
 ### CVE-2025-53964 (2025-07-17)
 
@@ -6717,7 +6725,7 @@
 <code>Adobe Experience Manager versions 6.5.23 and earlier are affected by a Misconfiguration vulnerability that could result in arbitrary code execution. An attacker could leverage this vulnerability to bypass security mechanisms and execute code. Exploitation of this issue does not require user interaction and scope is changed.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-54253](https://github.com/B1ack4sh/Blackash-CVE-2025-54253)
+- [Ashwesker/Blackash-CVE-2025-54253](https://github.com/Ashwesker/Blackash-CVE-2025-54253)
 - [Shivshantp/CVE-2025-54253-Exploit-Demo](https://github.com/Shivshantp/CVE-2025-54253-Exploit-Demo)
 - [jm7knz/CVE-2025-54253-Exploit-Demo](https://github.com/jm7knz/CVE-2025-54253-Exploit-Demo)
 - [25145hg654511135gfhfkr8488r8r8r8r8r/test](https://github.com/25145hg654511135gfhfkr8488r8r8r8r8r/test)
@@ -6772,7 +6780,7 @@
 </code>
 
 - [rockmelodies/bentoml_CVE-2025-54381](https://github.com/rockmelodies/bentoml_CVE-2025-54381)
-- [B1ack4sh/Blackash-CVE-2025-54381](https://github.com/B1ack4sh/Blackash-CVE-2025-54381)
+- [Ashwesker/Blackash-CVE-2025-54381](https://github.com/Ashwesker/Blackash-CVE-2025-54381)
 - [IS8123/CVE-2025-54381](https://github.com/IS8123/CVE-2025-54381)
 
 ### CVE-2025-54424 (2025-08-01)
@@ -6795,7 +6803,7 @@
 <code>Squid is a caching proxy for the Web. In versions 6.3 and below, Squid is vulnerable to a heap buffer overflow and possible remote code execution attack when processing URN due to incorrect buffer management. This has been fixed in version 6.4. To work around this issue, disable URN access permissions.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-54574](https://github.com/B1ack4sh/Blackash-CVE-2025-54574)
+- [Ashwesker/Blackash-CVE-2025-54574](https://github.com/Ashwesker/Blackash-CVE-2025-54574)
 - [starrynightsecurity/CVE-2025-54574-Squid-Heap-Buffer-Overflow](https://github.com/starrynightsecurity/CVE-2025-54574-Squid-Heap-Buffer-Overflow)
 
 ### CVE-2025-54589 (2025-07-31)
@@ -6938,6 +6946,7 @@
 - [7huukdlnkjkjba/CVE-2025-55315-](https://github.com/7huukdlnkjkjba/CVE-2025-55315-)
 - [jlinebau/CVE-2025-55315-Scanner-Monitor](https://github.com/jlinebau/CVE-2025-55315-Scanner-Monitor)
 - [ZemarKhos/CVE-2025-55315-PoC-Exploit](https://github.com/ZemarKhos/CVE-2025-55315-PoC-Exploit)
+- [MartinFabianIonut/CVE-2025-55315](https://github.com/MartinFabianIonut/CVE-2025-55315)
 
 ### CVE-2025-55349
 - [GoldenTicketLabs/CVE-2025-55349](https://github.com/GoldenTicketLabs/CVE-2025-55349)
@@ -6993,7 +7002,7 @@
 
 - [TAM-K592/CVE-2025-55752](https://github.com/TAM-K592/CVE-2025-55752)
 - [masahiro331/CVE-2025-55752](https://github.com/masahiro331/CVE-2025-55752)
-- [B1ack4sh/Blackash-CVE-2025-55752](https://github.com/B1ack4sh/Blackash-CVE-2025-55752)
+- [Ashwesker/Blackash-CVE-2025-55752](https://github.com/Ashwesker/Blackash-CVE-2025-55752)
 - [AuroraSec-Pivot/CVE-2025-55752](https://github.com/AuroraSec-Pivot/CVE-2025-55752)
 
 ### CVE-2025-55763 (2025-08-29)
@@ -7421,7 +7430,7 @@
 <code>DataEase is an open source business intelligence and data visualization tool. Prior to version 2.10.12, because DB2 parameters are not filtered, a JNDI injection attack can be directly launched. JNDI triggers an AspectJWeaver deserialization attack, writing to various files. This vulnerability requires commons-collections 4.x and aspectjweaver-1.9.22.jar. The vulnerability has been fixed in version 2.10.12.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-57773](https://github.com/B1ack4sh/Blackash-CVE-2025-57773)
+- [Ashwesker/Blackash-CVE-2025-57773](https://github.com/Ashwesker/Blackash-CVE-2025-57773)
 
 ### CVE-2025-57819 (2025-08-28)
 
@@ -7433,7 +7442,7 @@
 - [brokendreamsclub/CVE-2025-57819](https://github.com/brokendreamsclub/CVE-2025-57819)
 - [net-hex/CVE-2025-57819](https://github.com/net-hex/CVE-2025-57819)
 - [ImBIOS/lab-cve-2025-57819](https://github.com/ImBIOS/lab-cve-2025-57819)
-- [B1ack4sh/Blackash-CVE-2025-57819](https://github.com/B1ack4sh/Blackash-CVE-2025-57819)
+- [Ashwesker/Blackash-CVE-2025-57819](https://github.com/Ashwesker/Blackash-CVE-2025-57819)
 - [watchtowrlabs/watchTowr-vs-FreePBX-CVE-2025-57819](https://github.com/watchtowrlabs/watchTowr-vs-FreePBX-CVE-2025-57819)
 - [MuhammadWaseem29/SQL-Injection-and-RCE_CVE-2025-57819](https://github.com/MuhammadWaseem29/SQL-Injection-and-RCE_CVE-2025-57819)
 - [xV4nd3Rx/CVE-2025-57819_FreePBX-PoC](https://github.com/xV4nd3Rx/CVE-2025-57819_FreePBX-PoC)
@@ -7462,7 +7471,7 @@
 <code>An Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability [CWE-78] vulnerability in Fortinet FortiWeb 8.0.0 through 8.0.1, FortiWeb 7.6.0 through 7.6.5, FortiWeb 7.4.0 through 7.4.10, FortiWeb 7.2.0 through 7.2.11, FortiWeb 7.0.0 through 7.0.11 may allow an authenticated attacker to execute unauthorized code on the underlying system via crafted HTTP requests or CLI commands.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-58034](https://github.com/B1ack4sh/Blackash-CVE-2025-58034)
+- [Ashwesker/Blackash-CVE-2025-58034](https://github.com/Ashwesker/Blackash-CVE-2025-58034)
 
 ### CVE-2025-58179 (2025-09-04)
 
@@ -7483,7 +7492,7 @@
 <code>GeoServer is an open source server that allows users to share and edit geospatial data. From version 2.26.0 to before 2.26.2 and before 2.25.6, an XML External Entity (XXE) vulnerability was identified. The application accepts XML input through a specific endpoint /geoserver/wms operation GetMap. However, this input is not sufficiently sanitized or restricted, allowing an attacker to define external entities within the XML request. This issue has been patched in GeoServer 2.25.6, GeoServer 2.26.3, and GeoServer 2.27.0.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-58360](https://github.com/B1ack4sh/Blackash-CVE-2025-58360)
+- [Ashwesker/Blackash-CVE-2025-58360](https://github.com/Ashwesker/Blackash-CVE-2025-58360)
 - [quyenheu/CVE-2025-58360](https://github.com/quyenheu/CVE-2025-58360)
 
 ### CVE-2025-58440
@@ -7522,7 +7531,7 @@
 <code>Unrestricted Upload of File with Dangerous Type vulnerability in Apache OFBiz.\n\nThis issue affects Apache OFBiz: before 24.09.03.\n\nUsers are recommended to upgrade to version 24.09.03, which fixes the issue.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-59118](https://github.com/B1ack4sh/Blackash-CVE-2025-59118)
+- [Ashwesker/Blackash-CVE-2025-59118](https://github.com/Ashwesker/Blackash-CVE-2025-59118)
 
 ### CVE-2025-59287 (2025-10-14)
 
@@ -7569,7 +7578,7 @@
 <code>An authentication bypass vulnerability has been identified in certain DSL series routers, may allow remote attackers to gain unauthorized access into the affected system. Refer to the 'Security Update for DSL Series Router' section on the ASUS Security Advisory for more information.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-59367](https://github.com/B1ack4sh/Blackash-CVE-2025-59367)
+- [Ashwesker/Blackash-CVE-2025-59367](https://github.com/Ashwesker/Blackash-CVE-2025-59367)
 
 ### CVE-2025-59376 (2025-09-15)
 
@@ -7577,6 +7586,13 @@
 </code>
 
 - [william31212/CVE-Requests-1896609](https://github.com/william31212/CVE-Requests-1896609)
+
+### CVE-2025-59390 (2025-11-26)
+
+<code>Apache Druid’s Kerberos authenticator uses a weak fallback secret when the `druid.auth.authenticator.kerberos.cookieSignatureSecret` configuration is not explicitly set. In this case, the secret is generated using `ThreadLocalRandom`,\n which is not a crypto-graphically secure random number generator. This \nmay allow an attacker to predict or brute force the secret used to sign \nauthentication cookies, potentially enabling token forgery or \nauthentication bypass. Additionally, each process generates its own \nfallback secret, resulting in inconsistent secrets across nodes. This \ncauses authentication failures in distributed or multi-broker \ndeployments, effectively leading to a incorrectly configured clusters. Users are \nadvised to configure a strong `druid.auth.authenticator.kerberos.cookieSignatureSecret`\n\n\n\nThis issue affects Apache Druid: through 34.0.0.\n\nUsers are recommended to upgrade to version 35.0.0, which fixes the issue making it mandatory to set `druid.auth.authenticator.kerberos.cookieSignatureSecret` when using the Kerberos authenticator. Services will fail to come up if the secret is not set.
+</code>
+
+- [Daeda1usUK/CVE-2025-59390-](https://github.com/Daeda1usUK/CVE-2025-59390-)
 
 ### CVE-2025-59396
 - [cyberbyte000/CVE-2025-59396](https://github.com/cyberbyte000/CVE-2025-59396)
@@ -7609,7 +7625,7 @@
 </code>
 
 - [zimshk/CVE-2025-59528.yaml](https://github.com/zimshk/CVE-2025-59528.yaml)
-- [B1ack4sh/Blackash-CVE-2025-59528](https://github.com/B1ack4sh/Blackash-CVE-2025-59528)
+- [Ashwesker/Blackash-CVE-2025-59528](https://github.com/Ashwesker/Blackash-CVE-2025-59528)
 
 ### CVE-2025-59712 (2025-09-19)
 
@@ -7849,7 +7865,7 @@
 <code>An issue in MikroTik RouterOS v.7.14.2 and SwOS v.2.18 exposes the WebFig management interface over cleartext HTTP by default, allowing an on-path attacker to execute injected JavaScript in the administrator’s browser and intercept credentials.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-61481](https://github.com/B1ack4sh/Blackash-CVE-2025-61481)
+- [Ashwesker/Blackash-CVE-2025-61481](https://github.com/Ashwesker/Blackash-CVE-2025-61481)
 
 ### CVE-2025-61622 (2025-10-01)
 
@@ -7863,7 +7879,7 @@
 <code>Vulnerability in the Identity Manager product of Oracle Fusion Middleware (component: REST WebServices).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Identity Manager.  Successful attacks of this vulnerability can result in takeover of Identity Manager. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-61757](https://github.com/B1ack4sh/Blackash-CVE-2025-61757)
+- [Ashwesker/Blackash-CVE-2025-61757](https://github.com/Ashwesker/Blackash-CVE-2025-61757)
 - [Jinxia62/Oracle-Identity-Manager-CVE-2025-61757](https://github.com/Jinxia62/Oracle-Identity-Manager-CVE-2025-61757)
 
 ### CVE-2025-61765 (2025-10-06)
@@ -7889,7 +7905,7 @@
 - [rxerium/CVE-2025-61882-CVE-2025-61884](https://github.com/rxerium/CVE-2025-61882-CVE-2025-61884)
 - [watchtowrlabs/watchTowr-vs-Oracle-E-Business-Suite-CVE-2025-61882](https://github.com/watchtowrlabs/watchTowr-vs-Oracle-E-Business-Suite-CVE-2025-61882)
 - [Sachinart/CVE-2025-61882](https://github.com/Sachinart/CVE-2025-61882)
-- [B1ack4sh/Blackash-CVE-2025-61882](https://github.com/B1ack4sh/Blackash-CVE-2025-61882)
+- [Ashwesker/Blackash-CVE-2025-61882](https://github.com/Ashwesker/Blackash-CVE-2025-61882)
 - [zerozenxlabs/CVE-2025-61882-Oracle-EBS](https://github.com/zerozenxlabs/CVE-2025-61882-Oracle-EBS)
 - [MindflareX/CVE-2025-61882-POC](https://github.com/MindflareX/CVE-2025-61882-POC)
 - [AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit](https://github.com/AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit)
@@ -7903,7 +7919,7 @@
 <code>Vulnerability in the Oracle Configurator product of Oracle E-Business Suite (component: Runtime UI).  Supported versions that are affected are 12.2.3-12.2.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Configurator.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Configurator accessible data. CVSS 3.1 Base Score 7.5 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N).
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-61884](https://github.com/B1ack4sh/Blackash-CVE-2025-61884)
+- [Ashwesker/Blackash-CVE-2025-61884](https://github.com/Ashwesker/Blackash-CVE-2025-61884)
 - [AshrafZaryouh/CVE-2025-61884-At-a-Glance](https://github.com/AshrafZaryouh/CVE-2025-61884-At-a-Glance)
 
 ### CVE-2025-61922 (2025-10-16)
@@ -7972,7 +7988,7 @@
 <code>Vulnerability in the Oracle Marketing product of Oracle E-Business Suite (component: Marketing Administration).  Supported versions that are affected are 12.2.3-12.2.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Marketing.  Successful attacks of this vulnerability can result in takeover of Oracle Marketing. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-62481](https://github.com/B1ack4sh/Blackash-CVE-2025-62481)
+- [Ashwesker/Blackash-CVE-2025-62481](https://github.com/Ashwesker/Blackash-CVE-2025-62481)
 
 ### CVE-2025-62506 (2025-10-16)
 
@@ -8000,7 +8016,7 @@
 <code>Ray is an AI compute engine. Prior to version 2.52.0, developers working with Ray as a development tool can be exploited via a critical RCE vulnerability exploitable via Firefox and Safari. This vulnerability is due to an insufficient guard against browser-based attacks, as the current defense uses the User-Agent header starting with the string &quot;Mozilla&quot; as a defense mechanism. This defense is insufficient as the fetch specification allows the User-Agent header to be modified. Combined with a DNS rebinding attack against the browser, and this vulnerability is exploitable against a developer running Ray who inadvertently visits a malicious website, or is served a malicious advertisement (malvertising). This issue has been patched in version 2.52.0.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-62593](https://github.com/B1ack4sh/Blackash-CVE-2025-62593)
+- [Ashwesker/Blackash-CVE-2025-62593](https://github.com/Ashwesker/Blackash-CVE-2025-62593)
 
 ### CVE-2025-62726 (2025-10-30)
 
@@ -8052,7 +8068,7 @@
 <code>PocketVJ CP PocketVJ-CP-v3 pvj version 3.9.1 contains an unauthenticated remote code execution vulnerability in the submit_opacity.php component. The application fails to sanitize user input in the opacityValue POST parameter before passing it to a shell command, allowing remote attackers to execute arbitrary commands with root privileges on the underlying system.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-63334](https://github.com/B1ack4sh/Blackash-CVE-2025-63334)
+- [Ashwesker/Blackash-CVE-2025-63334](https://github.com/Ashwesker/Blackash-CVE-2025-63334)
 
 ### CVE-2025-63353 (2025-11-12)
 
@@ -8257,7 +8273,7 @@
 
 - [fevar54/CVE-2025-64446-PoC---FortiWeb-Path-Traversal](https://github.com/fevar54/CVE-2025-64446-PoC---FortiWeb-Path-Traversal)
 - [sxyrxyy/CVE-2025-64446-FortiWeb-CGI-Bypass-PoC](https://github.com/sxyrxyy/CVE-2025-64446-FortiWeb-CGI-Bypass-PoC)
-- [B1ack4sh/Blackash-CVE-2025-64446](https://github.com/B1ack4sh/Blackash-CVE-2025-64446)
+- [Ashwesker/Blackash-CVE-2025-64446](https://github.com/Ashwesker/Blackash-CVE-2025-64446)
 - [soltanali0/CVE-2025-64446-Exploit](https://github.com/soltanali0/CVE-2025-64446-Exploit)
 - [sensepost/CVE-2025-64446](https://github.com/sensepost/CVE-2025-64446)
 - [D3crypT0r/CVE-2025-64446](https://github.com/D3crypT0r/CVE-2025-64446)
@@ -8280,7 +8296,7 @@
 
 - [rockmelodies/django_sqli_target_CVE-2025-64459](https://github.com/rockmelodies/django_sqli_target_CVE-2025-64459)
 - [nunpa/CVE-2025-64459](https://github.com/nunpa/CVE-2025-64459)
-- [B1ack4sh/Blackash-CVE-2025-64459](https://github.com/B1ack4sh/Blackash-CVE-2025-64459)
+- [Ashwesker/Blackash-CVE-2025-64459](https://github.com/Ashwesker/Blackash-CVE-2025-64459)
 - [omarkurt/django-connector-CVE-2025-64459-testbed](https://github.com/omarkurt/django-connector-CVE-2025-64459-testbed)
 
 ### CVE-2025-64484 (2025-11-10)
@@ -8288,7 +8304,7 @@
 <code>OAuth2-Proxy is an open-source tool that can act as either a standalone reverse proxy or a middleware component integrated into existing reverse proxy or load balancer setups. In versions prior to 7.13.0, all deployments of OAuth2 Proxy in front of applications that normalize underscores to dashes in HTTP headers (e.g., WSGI-based frameworks such as Django, Flask, FastAPI, and PHP applications). Authenticated users can inject underscore variants of X-Forwarded-* headers that bypass the proxy’s filtering logic, potentially escalating privileges in the upstream app. OAuth2 Proxy authentication/authorization itself is not compromised. The problem has been patched with v7.13.0. By default all specified headers will now be normalized, meaning that both capitalization and the use of underscores (_) versus dashes (-) will be ignored when matching headers to be stripped. For example, both `X-Forwarded-For` and `X_Forwarded-for` will now be treated as equivalent and stripped away. For those who have a rational that requires keeping a similar looking header and not stripping it, the maintainers introduced a new configuration field for Headers managed through the AlphaConfig called `InsecureSkipHeaderNormalization`. As a workaround, ensure filtering and processing logic in upstream services don't treat underscores and hyphens in Headers the same way.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-64484](https://github.com/B1ack4sh/Blackash-CVE-2025-64484)
+- [Ashwesker/Blackash-CVE-2025-64484](https://github.com/Ashwesker/Blackash-CVE-2025-64484)
 
 ### CVE-2025-64495 (2025-11-08)
 
@@ -8296,21 +8312,21 @@
 </code>
 
 - [AlphabugX/CVE-2025-64495-POC](https://github.com/AlphabugX/CVE-2025-64495-POC)
-- [B1ack4sh/Blackash-CVE-2025-64495](https://github.com/B1ack4sh/Blackash-CVE-2025-64495)
+- [Ashwesker/Blackash-CVE-2025-64495](https://github.com/Ashwesker/Blackash-CVE-2025-64495)
 
 ### CVE-2025-64500 (2025-11-12)
 
 <code>Symfony is a PHP framework for web and console applications and a set of reusable PHP components. Symfony's HttpFoundation component defines an object-oriented layer for the HTTP specification. Starting in version 2.0.0 and prior to version 5.4.50, 6.4.29, and 7.3.7, the `Request` class improperly interprets some `PATH_INFO` in a way that leads to representing some URLs with a path that doesn't start with a `/`. This can allow bypassing some access control rules that are built with this `/`-prefix assumption. Starting in versions 5.4.50, 6.4.29, and 7.3.7, the `Request` class now ensures that URL paths always start with a `/`.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-64500](https://github.com/B1ack4sh/Blackash-CVE-2025-64500)
+- [Ashwesker/Blackash-CVE-2025-64500](https://github.com/Ashwesker/Blackash-CVE-2025-64500)
 
 ### CVE-2025-64513 (2025-11-10)
 
 <code>Milvus is an open-source vector database built for generative AI applications. An unauthenticated attacker can exploit a vulnerability in versions prior to 2.4.24, 2.5.21, and 2.6.5 to bypass all authentication mechanisms in the Milvus Proxy component, gaining full administrative access to the Milvus cluster. This grants the attacker the ability to read, modify, or delete data, and to perform privileged administrative operations such as database or collection management. This issue has been fixed in Milvus 2.4.24, 2.5.21, and 2.6.5. If immediate upgrade is not possible, a temporary mitigation can be applied by removing the sourceID header from all incoming requests at the gateway, API gateway, or load balancer level before they reach the Milvus Proxy. This prevents attackers from exploiting the authentication bypass behavior.
 </code>
 
-- [B1ack4sh/Blackash-CVE-2025-64513](https://github.com/B1ack4sh/Blackash-CVE-2025-64513)
+- [Ashwesker/Blackash-CVE-2025-64513](https://github.com/Ashwesker/Blackash-CVE-2025-64513)
 - [shinyseam/CVE-2025-64513](https://github.com/shinyseam/CVE-2025-64513)
 
 ### CVE-2025-64720 (2025-11-24)
@@ -8377,6 +8393,16 @@
 
 ### CVE-2025-65862
 - [rimbadirgantara/opac-fast-automation](https://github.com/rimbadirgantara/opac-fast-automation)
+
+### CVE-2025-65881
+- [MMAKINGDOM/CVE-2025-65881](https://github.com/MMAKINGDOM/CVE-2025-65881)
+
+### CVE-2025-66022 (2025-11-26)
+
+<code>FACTION is a PenTesting Report Generation and Collaboration Framework. Prior to version 1.7.1, an extension execution path in Faction’s extension framework permits untrusted extension code to execute arbitrary system commands on the server when a lifecycle hook is invoked, resulting in remote code execution (RCE) on the host running Faction. Due to a missing authentication check on the /portal/AppStoreDashboard endpoint, an attacker can access the extension management UI and upload a malicious extension without any authentication, making this vulnerability exploitable by unauthenticated users. This issue has been patched in version 1.7.1.
+</code>
+
+- [wasfyelbaz/CVE-2025-66022](https://github.com/wasfyelbaz/CVE-2025-66022)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -9212,7 +9238,7 @@
 - [Titus-soc/-CVE-2024-3094-Vulnerability-Checker-Fixer-Public](https://github.com/Titus-soc/-CVE-2024-3094-Vulnerability-Checker-Fixer-Public)
 - [M1lo25/CS50FinalProject](https://github.com/M1lo25/CS50FinalProject)
 - [ThomRgn/xzutils_backdoor_obfuscation](https://github.com/ThomRgn/xzutils_backdoor_obfuscation)
-- [B1ack4sh/Blackash-CVE-2024-3094](https://github.com/B1ack4sh/Blackash-CVE-2024-3094)
+- [Ashwesker/Blackash-CVE-2024-3094](https://github.com/Ashwesker/Blackash-CVE-2024-3094)
 
 ### CVE-2024-3105 (2024-06-15)
 
@@ -11704,6 +11730,7 @@
 
 - [nnotwen/Script-For-CVE-2024-20666](https://github.com/nnotwen/Script-For-CVE-2024-20666)
 - [invaderslabs/CVE-2024-20666](https://github.com/invaderslabs/CVE-2024-20666)
+- [tazxtazxedu/WinRE-Fix](https://github.com/tazxtazxedu/WinRE-Fix)
 
 ### CVE-2024-20674 (2024-01-09)
 
@@ -13168,6 +13195,7 @@
 - [ivanbg2004/ODH-BricksBuilder-CVE-2024-25600-THM](https://github.com/ivanbg2004/ODH-BricksBuilder-CVE-2024-25600-THM)
 - [DedsecTeam-BlackHat/Poleposph](https://github.com/DedsecTeam-BlackHat/Poleposph)
 - [r0otk3r/CVE-2024-25600](https://github.com/r0otk3r/CVE-2024-25600)
+- [ranjithxploit/CVE-2024-25600](https://github.com/ranjithxploit/CVE-2024-25600)
 
 ### CVE-2024-25641 (2024-05-13)
 
@@ -14320,7 +14348,6 @@
 - [JoaoLeonello/cve-2024-32002-poc](https://github.com/JoaoLeonello/cve-2024-32002-poc)
 - [srakkk/cve-2024-32002-demo](https://github.com/srakkk/cve-2024-32002-demo)
 - [srakkk/cve-2024-32002-hook](https://github.com/srakkk/cve-2024-32002-hook)
-- [mystxcal/cve-2024-32002-demo](https://github.com/mystxcal/cve-2024-32002-demo)
 
 ### CVE-2024-32004 (2024-05-14)
 
@@ -15559,7 +15586,6 @@
 - [GhostS3c/CVE-2024-38819](https://github.com/GhostS3c/CVE-2024-38819)
 - [skrkcb2/cve-2024-38819](https://github.com/skrkcb2/cve-2024-38819)
 - [vishalnoza/CVE-2024-38819-POC2](https://github.com/vishalnoza/CVE-2024-38819-POC2)
-- [Nandavardhan8/spring-poc-CVE-2024-38819](https://github.com/Nandavardhan8/spring-poc-CVE-2024-38819)
 
 ### CVE-2024-38820 (2024-10-18)
 
@@ -22112,6 +22138,7 @@
 - [CuriousLearnerDev/ColdFusion_EXp](https://github.com/CuriousLearnerDev/ColdFusion_EXp)
 - [issamjr/CVE-2023-26360](https://github.com/issamjr/CVE-2023-26360)
 - [H3rm1tR3b0rn/CVE-2023-26360-RCE](https://github.com/H3rm1tR3b0rn/CVE-2023-26360-RCE)
+- [RyanRodrigues880/CVE-2023-26360](https://github.com/RyanRodrigues880/CVE-2023-26360)
 
 ### CVE-2023-26469 (2023-08-17)
 
@@ -29588,7 +29615,7 @@
 - [hieuminhnv/CVE-2022-21587-POC](https://github.com/hieuminhnv/CVE-2022-21587-POC)
 - [rockmelodies/Oracle-E-BS-CVE-2022-21587-Exploit](https://github.com/rockmelodies/Oracle-E-BS-CVE-2022-21587-Exploit)
 - [sahabrifki/CVE-2022-21587-Oracle-EBS-](https://github.com/sahabrifki/CVE-2022-21587-Oracle-EBS-)
-- [B1ack4sh/Blackash-CVE-2022-21587](https://github.com/B1ack4sh/Blackash-CVE-2022-21587)
+- [Ashwesker/Blackash-CVE-2022-21587](https://github.com/Ashwesker/Blackash-CVE-2022-21587)
 
 ### CVE-2022-21658 (2022-01-20)
 
@@ -41659,7 +41686,7 @@
 - [KamalideenAK/Microsoft-Defender-for-Endpoint-Deployment-on-Windows-10-11-device](https://github.com/KamalideenAK/Microsoft-Defender-for-Endpoint-Deployment-on-Windows-10-11-device)
 - [arabindadora/log4shell](https://github.com/arabindadora/log4shell)
 - [Mintimate/log4j2-bugmaker](https://github.com/Mintimate/log4j2-bugmaker)
-- [B1ack4sh/Blackash-CVE-2021-44228](https://github.com/B1ack4sh/Blackash-CVE-2021-44228)
+- [Ashwesker/Blackash-CVE-2021-44228](https://github.com/Ashwesker/Blackash-CVE-2021-44228)
 - [mgueye3/Log4Shell](https://github.com/mgueye3/Log4Shell)
 - [PCMKUIT/CVE-2021-44228---Log4Shell-Analysis](https://github.com/PCMKUIT/CVE-2021-44228---Log4Shell-Analysis)
 
@@ -43258,7 +43285,7 @@
 - [DaMinGshidashi/CVE-2020-2551](https://github.com/DaMinGshidashi/CVE-2020-2551)
 - [LTiDi2000/CVE-2020-2551](https://github.com/LTiDi2000/CVE-2020-2551)
 - [ar2o3/CVE-Exploit](https://github.com/ar2o3/CVE-Exploit)
-- [B1ack4sh/Blackash-CVE-2020-2551](https://github.com/B1ack4sh/Blackash-CVE-2020-2551)
+- [Ashwesker/Blackash-CVE-2020-2551](https://github.com/Ashwesker/Blackash-CVE-2020-2551)
 
 ### CVE-2020-2555 (2020-01-15)
 
@@ -43660,7 +43687,7 @@
 - [z3n70/CVE-2020-5902](https://github.com/z3n70/CVE-2020-5902)
 - [34zY/APT-Backpack](https://github.com/34zY/APT-Backpack)
 - [amitlttwo/CVE-2020-5902](https://github.com/amitlttwo/CVE-2020-5902)
-- [B1ack4sh/Blackash-CVE-2020-5902](https://github.com/B1ack4sh/Blackash-CVE-2020-5902)
+- [Ashwesker/Blackash-CVE-2020-5902](https://github.com/Ashwesker/Blackash-CVE-2020-5902)
 
 ### CVE-2020-5903 (2020-07-01)
 
@@ -45748,7 +45775,7 @@
 - [AleksaZatezalo/CVE-2020-14882](https://github.com/AleksaZatezalo/CVE-2020-14882)
 - [KKC73/weblogic-cve-2020-14882](https://github.com/KKC73/weblogic-cve-2020-14882)
 - [AshrafZaryouh/CVE-2020-14882](https://github.com/AshrafZaryouh/CVE-2020-14882)
-- [B1ack4sh/Blackash-CVE-2020-14882](https://github.com/B1ack4sh/Blackash-CVE-2020-14882)
+- [Ashwesker/Blackash-CVE-2020-14882](https://github.com/Ashwesker/Blackash-CVE-2020-14882)
 
 ### CVE-2020-14883 (2020-10-21)
 
@@ -45761,7 +45788,7 @@
 - [Osyanina/westone-CVE-2020-14883-scanner](https://github.com/Osyanina/westone-CVE-2020-14883-scanner)
 - [1n7erface/PocList](https://github.com/1n7erface/PocList)
 - [amacloudobia/CVE-2020-14883](https://github.com/amacloudobia/CVE-2020-14883)
-- [B1ack4sh/Blackash-CVE-2020-14883](https://github.com/B1ack4sh/Blackash-CVE-2020-14883)
+- [Ashwesker/Blackash-CVE-2020-14883](https://github.com/Ashwesker/Blackash-CVE-2020-14883)
 
 ### CVE-2020-14947 (2020-06-30)
 
@@ -49874,6 +49901,7 @@
 - [bayazid-bit/CVE-2019-11043-](https://github.com/bayazid-bit/CVE-2019-11043-)
 - [a1ex-var1amov/ctf-cve-2019-11043](https://github.com/a1ex-var1amov/ctf-cve-2019-11043)
 - [CodeHex083/phuip-fpizdam](https://github.com/CodeHex083/phuip-fpizdam)
+- [AndrewMas99/CVE-2019-11043-Vulnerability](https://github.com/AndrewMas99/CVE-2019-11043-Vulnerability)
 
 ### CVE-2019-11061 (2019-08-29)
 
@@ -55890,7 +55918,7 @@
 - [luckyman2907/SMB-Protocol-Vulnerability_CVE-2017-0144](https://github.com/luckyman2907/SMB-Protocol-Vulnerability_CVE-2017-0144)
 - [AdityaBhatt3010/VAPT-Report-on-SMB-Exploitation-in-Windows-10-Finance-Endpoint](https://github.com/AdityaBhatt3010/VAPT-Report-on-SMB-Exploitation-in-Windows-10-Finance-Endpoint)
 - [nivedh-j/EternalBlue-Explained](https://github.com/nivedh-j/EternalBlue-Explained)
-- [B1ack4sh/Blackash-CVE-2017-0144](https://github.com/B1ack4sh/Blackash-CVE-2017-0144)
+- [Ashwesker/Blackash-CVE-2017-0144](https://github.com/Ashwesker/Blackash-CVE-2017-0144)
 - [AbbeAlthany/Windows-7_och_CVE-2017-0144_Exploit](https://github.com/AbbeAlthany/Windows-7_och_CVE-2017-0144_Exploit)
 
 ### CVE-2017-0145 (2017-03-17)
