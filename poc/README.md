@@ -36562,7 +36562,6 @@
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
 - [hohn/codeql-sample-polkit](https://github.com/hohn/codeql-sample-polkit)
-- [movvamrocks/PwnKit-CVE-2021-4034](https://github.com/movvamrocks/PwnKit-CVE-2021-4034)
 - [Squirre17/CVE-2021-4034](https://github.com/Squirre17/CVE-2021-4034)
 - [Jesrat/make_me_root](https://github.com/Jesrat/make_me_root)
 - [defhacks/cve-2021-4034](https://github.com/defhacks/cve-2021-4034)
@@ -37440,6 +37439,13 @@
 
 - [dn9uy3n/Check-CVE-2021-23383](https://github.com/dn9uy3n/Check-CVE-2021-23383)
 - [fazilbaig1/CVE-2021-23383](https://github.com/fazilbaig1/CVE-2021-23383)
+
+### CVE-2021-23394 (2021-06-13)
+
+<code>The package studio-42/elfinder before 2.1.58 are vulnerable to Remote Code Execution (RCE) via execution of PHP code in a .phar file. NOTE: This only applies if the server parses .phar files as PHP.
+</code>
+
+- [0xnemian/CVE-2021-23394](https://github.com/0xnemian/CVE-2021-23394)
 
 ### CVE-2021-23410
 - [azu/msgpack-CVE-2021-23410-test](https://github.com/azu/msgpack-CVE-2021-23410-test)
@@ -61509,7 +61515,7 @@
 - [FilipStudeny/-CVE-2014-6271-Shellshock-Remote-Command-Injection-](https://github.com/FilipStudeny/-CVE-2014-6271-Shellshock-Remote-Command-Injection-)
 - [mritunjay-k/CVE-2014-6271](https://github.com/mritunjay-k/CVE-2014-6271)
 - [Brandaoo/CVE-2014-6271](https://github.com/Brandaoo/CVE-2014-6271)
-- [Jsmoreira02/CVE-2014-6271](https://github.com/Jsmoreira02/CVE-2014-6271)
+- [J0hnTh3Kn1ght/CVE-2014-6271](https://github.com/J0hnTh3Kn1ght/CVE-2014-6271)
 - [hanmin0512/CVE-2014-6271_pwnable](https://github.com/hanmin0512/CVE-2014-6271_pwnable)
 - [0xN7y/CVE-2014-6271](https://github.com/0xN7y/CVE-2014-6271)
 - [AlissonFaoli/Shellshock](https://github.com/AlissonFaoli/Shellshock)
