@@ -284,6 +284,7 @@
 </code>
 
 - [shybu9/poc_CVE-2025-1716](https://github.com/shybu9/poc_CVE-2025-1716)
+- [0xDaeras/POC_CVE-2025-1716](https://github.com/0xDaeras/POC_CVE-2025-1716)
 
 ### CVE-2025-1718 (2025-06-24)
 
@@ -1219,6 +1220,7 @@
 - [Pwdnx1337/CVE-2025-6440](https://github.com/Pwdnx1337/CVE-2025-6440)
 - [xxoprt/CVE-2025-6440](https://github.com/xxoprt/CVE-2025-6440)
 - [Nxploited/CVE-2025-6440](https://github.com/Nxploited/CVE-2025-6440)
+- [m2hcz/CVE-2025-6440-Poc-Exploit](https://github.com/m2hcz/CVE-2025-6440-Poc-Exploit)
 
 ### CVE-2025-6514 (2025-07-09)
 
@@ -1545,6 +1547,7 @@
 - [Ashwesker/Blackash-CVE-2025-8088](https://github.com/Ashwesker/Blackash-CVE-2025-8088)
 - [nuky-alt/CVE-2025-8088](https://github.com/nuky-alt/CVE-2025-8088)
 - [4daysday/cve-2025-8088](https://github.com/4daysday/cve-2025-8088)
+- [xi0onamdev/WinRAR-CVE-2025-8088-Exploitation-Toolkit](https://github.com/xi0onamdev/WinRAR-CVE-2025-8088-Exploitation-Toolkit)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1784,6 +1787,9 @@
 </code>
 
 - [NagisaYumaa/CVE-2025-9345](https://github.com/NagisaYumaa/CVE-2025-9345)
+
+### CVE-2025-9435
+- [passtheticket/CVE-2025-9435](https://github.com/passtheticket/CVE-2025-9435)
 
 ### CVE-2025-9478 (2025-08-26)
 
@@ -13009,7 +13015,7 @@
 - [NingXin2002/Check-Point_poc](https://github.com/NingXin2002/Check-Point_poc)
 - [hashdr1ft/SOC_287](https://github.com/hashdr1ft/SOC_287)
 - [funixone/CVE-2024-24919---Exploit-Script](https://github.com/funixone/CVE-2024-24919---Exploit-Script)
-- [spider00009/CVE-2024-24919-POC](https://github.com/spider00009/CVE-2024-24919-POC)
+- [SpiX-7/CVE-2024-24919-POC](https://github.com/SpiX-7/CVE-2024-24919-POC)
 - [ejaboz/cve-2024-24919](https://github.com/ejaboz/cve-2024-24919)
 - [CyprianAtsyor/CVE-2024-24919-Incident-Report.md](https://github.com/CyprianAtsyor/CVE-2024-24919-Incident-Report.md)
 - [CyberBibs/Event-ID-263-Arbitrary-File-Read-on-Checkpoint-Security-Gateway-CVE-2024-24919-](https://github.com/CyberBibs/Event-ID-263-Arbitrary-File-Read-on-Checkpoint-Security-Gateway-CVE-2024-24919-)
@@ -26795,6 +26801,13 @@
 </code>
 
 - [ersinerenler/CVE-2023-46022-Code-Projects-Blood-Bank-1.0-OOB-SQL-Injection-Vulnerability](https://github.com/ersinerenler/CVE-2023-46022-Code-Projects-Blood-Bank-1.0-OOB-SQL-Injection-Vulnerability)
+
+### CVE-2023-46136 (2023-10-24)
+
+<code>Werkzeug is a comprehensive WSGI web application library. If an upload of a file that starts with CR or LF and then is followed by megabytes of data without these characters: all of these bytes are appended chunk by chunk into internal bytearray and lookup for boundary is performed on growing buffer. This allows an attacker to cause a denial of service by sending crafted multipart data to an endpoint that will parse it. The amount of CPU time required can block worker processes from handling legitimate requests. This vulnerability has been patched in version 3.0.1.
+</code>
+
+- [JawadPy/WerkGhost](https://github.com/JawadPy/WerkGhost)
 
 ### CVE-2023-46197 (2024-05-17)
 
@@ -45648,7 +45661,7 @@
 </code>
 
 - [j4k0m/loader-CVE-2020-14343](https://github.com/j4k0m/loader-CVE-2020-14343)
-- [Kairo-one/CVE-2020-14343](https://github.com/Kairo-one/CVE-2020-14343)
+- [Kairo-one/CVE-2020-14343-PyYAML](https://github.com/Kairo-one/CVE-2020-14343-PyYAML)
 
 ### CVE-2020-14356 (2020-08-19)
 
@@ -46553,6 +46566,7 @@
 - [Sakura-501/CVE-2020-24186-exploit](https://github.com/Sakura-501/CVE-2020-24186-exploit)
 - [substing/CVE-2020-24186_reverse_shell_upload](https://github.com/substing/CVE-2020-24186_reverse_shell_upload)
 - [GazettEl/CVE-2020-24186](https://github.com/GazettEl/CVE-2020-24186)
+- [sec-dojo-com/CVE-2020-24186](https://github.com/sec-dojo-com/CVE-2020-24186)
 
 ### CVE-2020-24227 (2020-11-23)
 
@@ -48333,6 +48347,7 @@
 
 - [StealYourCode/CVE-2019-1663](https://github.com/StealYourCode/CVE-2019-1663)
 - [WolffCorentin/CVE-2019-1663-Binary-Analysis](https://github.com/WolffCorentin/CVE-2019-1663-Binary-Analysis)
+- [KylVGoi/cve-2019-1663](https://github.com/KylVGoi/cve-2019-1663)
 
 ### CVE-2019-1698 (2019-02-21)
 
@@ -54148,6 +54163,7 @@
 - [SilasSpringer/CVE-2018-10933](https://github.com/SilasSpringer/CVE-2018-10933)
 - [HSw109/CVE-2018-10933](https://github.com/HSw109/CVE-2018-10933)
 - [bidaoui4905/CVE-2018-10933](https://github.com/bidaoui4905/CVE-2018-10933)
+- [opsifiz/CVE-2018-10933](https://github.com/opsifiz/CVE-2018-10933)
 
 ### CVE-2018-10936 (2018-08-30)
 
@@ -55151,6 +55167,7 @@
 
 - [Nickguitar/Joomla-JCK-Editor-6.4.4-SQL-Injection](https://github.com/Nickguitar/Joomla-JCK-Editor-6.4.4-SQL-Injection)
 - [MataKucing-OFC/CVE-2018-17254](https://github.com/MataKucing-OFC/CVE-2018-17254)
+- [7amzahard/script-python-to-detect-CVE-2018-17254](https://github.com/7amzahard/script-python-to-detect-CVE-2018-17254)
 
 ### CVE-2018-17297 (2018-09-21)
 
@@ -62323,6 +62340,7 @@
 - [Avinza/CVE-2012-2122-scanner](https://github.com/Avinza/CVE-2012-2122-scanner)
 - [cyberharsh/Oracle-mysql-CVE-2012-2122](https://github.com/cyberharsh/Oracle-mysql-CVE-2012-2122)
 - [zhangkaibin0921/CVE-2012-2122](https://github.com/zhangkaibin0921/CVE-2012-2122)
+- [netw0rk7/CVE-2012-2122-Home-Lab](https://github.com/netw0rk7/CVE-2012-2122-Home-Lab)
 
 ### CVE-2012-2593 (2020-02-06)
 
