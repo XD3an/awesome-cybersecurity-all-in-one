@@ -1229,6 +1229,7 @@
 - [xxoprt/CVE-2025-6440](https://github.com/xxoprt/CVE-2025-6440)
 - [Nxploited/CVE-2025-6440](https://github.com/Nxploited/CVE-2025-6440)
 - [m2hcz/CVE-2025-6440-Poc-Exploit](https://github.com/m2hcz/CVE-2025-6440-Poc-Exploit)
+- [smuft1707/CVE-2025-6440](https://github.com/smuft1707/CVE-2025-6440)
 
 ### CVE-2025-6514 (2025-07-09)
 
@@ -8329,6 +8330,7 @@
 - [nunpa/CVE-2025-64459](https://github.com/nunpa/CVE-2025-64459)
 - [Ashwesker/Blackash-CVE-2025-64459](https://github.com/Ashwesker/Blackash-CVE-2025-64459)
 - [omarkurt/django-connector-CVE-2025-64459-testbed](https://github.com/omarkurt/django-connector-CVE-2025-64459-testbed)
+- [stanly363/CVE-2025-64459-Poc](https://github.com/stanly363/CVE-2025-64459-Poc)
 
 ### CVE-2025-64484 (2025-11-10)
 
@@ -46988,6 +46990,7 @@
 - [epicosy/XStream-1](https://github.com/epicosy/XStream-1)
 - [cuijiung/xstream-CVE-2020-26217](https://github.com/cuijiung/xstream-CVE-2020-26217)
 - [shoucheng3/x-stream__xstream_CVE-2020-26217_1-4-14-java77](https://github.com/shoucheng3/x-stream__xstream_CVE-2020-26217_1-4-14-java77)
+- [Kairo-one/CVE-2020-26217-XStream](https://github.com/Kairo-one/CVE-2020-26217-XStream)
 
 ### CVE-2020-26233 (2020-12-08)
 
@@ -49545,6 +49548,7 @@
 - [jhnhnck/CVE-2019-9193](https://github.com/jhnhnck/CVE-2019-9193)
 - [corsisechero/CVE-2019-9193byVulHub](https://github.com/corsisechero/CVE-2019-9193byVulHub)
 - [netw0rk7/CVE-2019-9193-Home-Lab](https://github.com/netw0rk7/CVE-2019-9193-Home-Lab)
+- [Cheryanika/CVE-2019-9193---Postgresql---RCE](https://github.com/Cheryanika/CVE-2019-9193---Postgresql---RCE)
 
 ### CVE-2019-9194 (2019-02-26)
 
