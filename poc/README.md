@@ -862,6 +862,13 @@
 
 - [MantisToboggan-git/CVE-2025-4632-POC](https://github.com/MantisToboggan-git/CVE-2025-4632-POC)
 
+### CVE-2025-4658 (2025-05-13)
+
+<code>Versions of OpenPubkey library prior to 0.10.0  contained a vulnerability that would allow a specially crafted JWS to bypass signature verification. As OPKSSH depends on the OpenPubkey library for authentication, this vulnerability in OpenPubkey also applies to OPKSSH versions prior to 0.5.0 and would allow an attacker to bypass OPKSSH authentication.
+</code>
+
+- [stuxbench/dropbear-cve-2025-4658](https://github.com/stuxbench/dropbear-cve-2025-4658)
+
 ### CVE-2025-4660 (2025-05-13)
 
 <code>A remote code execution vulnerability exists in the Windows agent component of SecureConnector due to improper access controls on a named pipe. The pipe is accessible to the Everyone group and does not restrict remote connections, allowing any network-based attacker to connect without authentication. By interacting with this pipe, an attacker can redirect the agent to communicate with a rogue server that can issue commands via the SecureConnector Agent. \n\n\n\nThis does not impact Linux or OSX Secure Connector.
@@ -1131,6 +1138,7 @@
 - [dreysanox/CVE-2025-6018_Poc](https://github.com/dreysanox/CVE-2025-6018_Poc)
 - [ibrahmsql/CVE-2025-6018](https://github.com/ibrahmsql/CVE-2025-6018)
 - [Ashwesker/Blackash-CVE-2025-6018](https://github.com/Ashwesker/Blackash-CVE-2025-6018)
+- [euxem/Analyse-faille-de-s-curit-CVE-2025-6018-CVE-2025-6019](https://github.com/euxem/Analyse-faille-de-s-curit-CVE-2025-6018-CVE-2025-6019)
 
 ### CVE-2025-6019 (2025-06-19)
 
@@ -1596,7 +1604,7 @@
 <code>In givanz Vvveb 1.0.6.1 ist eine Schwachstelle entdeckt worden. Betroffen ist eine unbekannte Verarbeitung. Durch die Manipulation mit unbekannten Daten kann eine session fixiation-Schwachstelle ausgenutzt werden. Es ist möglich, den Angriff aus der Ferne durchzuführen. Der Exploit ist öffentlich verfügbar und könnte genutzt werden. Das Aktualisieren auf Version 1.0.7 kann dieses Problem lösen. Der Patch wird als d4b1e030066417b77d15b4ac505eed5ae7bf2c5e bezeichnet. Ein Upgrade der betroffenen Komponente wird empfohlen.
 </code>
 
-- [kwerty138/Session-Fixation-in-Vvveb-CMS-v1.0.6.1](https://github.com/kwerty138/Session-Fixation-in-Vvveb-CMS-v1.0.6.1)
+- [helloandrewpaul/Session-Fixation-in-Vvveb-CMS-v1.0.6.1](https://github.com/helloandrewpaul/Session-Fixation-in-Vvveb-CMS-v1.0.6.1)
 
 ### CVE-2025-8518 (2025-08-04)
 
@@ -1817,7 +1825,7 @@
 <code>Es wurde eine Schwachstelle in givanz Vvveb 1.0.7.2 entdeckt. Betroffen ist eine unbekannte Funktion der Datei app/template/user/login.tpl. Durch die Manipulation des Arguments Email/Password mit unbekannten Daten kann eine cross site scripting-Schwachstelle ausgenutzt werden. Ein Angriff ist aus der Distanz möglich. Der Patch trägt den Namen bbd4c42c66ab818142240348173a669d1d2537fe. Es wird geraten, einen Patch zu installieren, um dieses Problem zu lösen.
 </code>
 
-- [kwerty138/Reflected-XSS-in-Vvveb-CMS-v1.0.7.2](https://github.com/kwerty138/Reflected-XSS-in-Vvveb-CMS-v1.0.7.2)
+- [helloandrewpaul/Reflected-XSS-in-Vvveb-CMS-v1.0.7.2](https://github.com/helloandrewpaul/Reflected-XSS-in-Vvveb-CMS-v1.0.7.2)
 
 ### CVE-2025-9776 (2025-09-11)
 
@@ -2266,6 +2274,13 @@
 </code>
 
 - [d0n601/CVE-2025-13597](https://github.com/d0n601/CVE-2025-13597)
+
+### CVE-2025-13796 (2025-11-30)
+
+<code>A security vulnerability has been detected in deco-cx apps up to 0.120.1. Affected by this vulnerability is the function AnalyticsScript of the file website/loaders/analyticsScript.ts of the component Parameter Handler. Such manipulation of the argument url leads to server-side request forgery. The attack can be executed remotely. The exploit has been disclosed publicly and may be used. Upgrading to version 0.120.2 addresses this issue. It is suggested to upgrade the affected component.
+</code>
+
+- [0xcucumbersalad/CVE-2025-13796-PoC](https://github.com/0xcucumbersalad/CVE-2025-13796-PoC)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -5883,6 +5898,7 @@
 - [0xtensho/CVE-2025-49132-poc](https://github.com/0xtensho/CVE-2025-49132-poc)
 - [GRodolphe/CVE-2025-49132_poc](https://github.com/GRodolphe/CVE-2025-49132_poc)
 - [WebSafety-2tina/CVE-2025-49132](https://github.com/WebSafety-2tina/CVE-2025-49132)
+- [f3d0rq/CVE-2025-49132](https://github.com/f3d0rq/CVE-2025-49132)
 
 ### CVE-2025-49144 (2025-06-23)
 
@@ -7565,6 +7581,13 @@
 - [M507/CVE-2025-59287-PoC](https://github.com/M507/CVE-2025-59287-PoC)
 - [Adel-kaka-dz/cve-2025-59287](https://github.com/Adel-kaka-dz/cve-2025-59287)
 
+### CVE-2025-59302 (2025-11-27)
+
+<code>In  Apache CloudStack improper control of generation of code ('Code Injection') vulnerability is found in the following APIs which are accessible only to admins.\n\n  *  quotaTariffCreate\n  *  quotaTariffUpdate\n  *  createSecondaryStorageSelector\n  *  updateSecondaryStorageSelector\n  *  updateHost\n  *  updateStorage\n\n\nThis issue affects Apache CloudStack: from 4.18.0 before 4.20.2, from 4.21.0 before 4.22.0. Users are recommended to upgrade to versions 4.20.2 or 4.22.0, which contain the fix.\n\nThe fix introduces a new global configuration flag, js.interpretation.enabled, allowing administrators to control the interpretation of JavaScript expressions in these APIs, thereby mitigating the code injection risk.
+</code>
+
+- [B1gh0rnn/CVE-2025-59302](https://github.com/B1gh0rnn/CVE-2025-59302)
+
 ### CVE-2025-59342 (2025-09-17)
 
 <code>esm.sh is a nobuild content delivery network(CDN) for modern web development. In 136 and earlier, a path-traversal flaw in the handling of the X-Zone-Id HTTP header allows an attacker to cause the application to write files outside the intended storage location. The header value is used to build a filesystem path but is not properly canonicalized or restricted to the application’s storage base directory. As a result, supplying ../ sequences in X-Zone-Id causes files to be written to arbitrary directories.
@@ -7734,6 +7757,15 @@
 </code>
 
 - [Clicksafeae/CVE-2025-60595](https://github.com/Clicksafeae/CVE-2025-60595)
+
+### CVE-2025-60654
+- [DotAdrien/CVE-2025-60654](https://github.com/DotAdrien/CVE-2025-60654)
+
+### CVE-2025-60655
+- [DotAdrien/CVE-2025-60655](https://github.com/DotAdrien/CVE-2025-60655)
+
+### CVE-2025-60656
+- [DotAdrien/CVE-2025-60656](https://github.com/DotAdrien/CVE-2025-60656)
 
 ### CVE-2025-60710 (2025-11-11)
 
@@ -7951,13 +7983,6 @@
 - [monzaviman/CVE-2025-62168](https://github.com/monzaviman/CVE-2025-62168)
 - [shahroodcert/CVE-2025-62168](https://github.com/shahroodcert/CVE-2025-62168)
 - [nehkark/CVE-2025-62168](https://github.com/nehkark/CVE-2025-62168)
-
-### CVE-2025-62207 (2025-11-20)
-
-<code>Azure Monitor Elevation of Privilege Vulnerability
-</code>
-
-- [stankobra853/CVE-2025-62207](https://github.com/stankobra853/CVE-2025-62207)
 
 ### CVE-2025-62215 (2025-11-11)
 
@@ -8352,6 +8377,9 @@
 ### CVE-2025-65320
 - [Smarttfoxx/CVE-2025-65320](https://github.com/Smarttfoxx/CVE-2025-65320)
 
+### CVE-2025-65345
+- [Theethat-Thamwasin/CVE-2025-65345](https://github.com/Theethat-Thamwasin/CVE-2025-65345)
+
 ### CVE-2025-65482
 - [AT190510-Cuong/CVE-2025-65482-XXE-](https://github.com/AT190510-Cuong/CVE-2025-65482-XXE-)
 
@@ -8402,6 +8430,12 @@
 
 ### CVE-2025-65881
 - [MMAKINGDOM/CVE-2025-65881](https://github.com/MMAKINGDOM/CVE-2025-65881)
+
+### CVE-2025-65899
+- [Noxurge/CVE-2025-65899](https://github.com/Noxurge/CVE-2025-65899)
+
+### CVE-2025-65900
+- [Noxurge/CVE-2025-65900](https://github.com/Noxurge/CVE-2025-65900)
 
 ### CVE-2025-66022 (2025-11-26)
 
@@ -8975,13 +9009,6 @@
 - [AhmedMansour93/Event-ID-229-Rule-Name-SOC262-CVE-2024-1709-](https://github.com/AhmedMansour93/Event-ID-229-Rule-Name-SOC262-CVE-2024-1709-)
 - [AMRICHASFUCK/Mass-CVE-2024-1709](https://github.com/AMRICHASFUCK/Mass-CVE-2024-1709)
 - [Teexo/ScreenConnect-CVE-2024-1709-Exploit](https://github.com/Teexo/ScreenConnect-CVE-2024-1709-Exploit)
-
-### CVE-2024-1728 (2024-04-10)
-
-<code>gradio-app/gradio is vulnerable to a local file inclusion vulnerability due to improper validation of user-supplied input in the UploadButton component. Attackers can exploit this vulnerability to read arbitrary files on the filesystem, such as private SSH keys, by manipulating the file path in the request to the `/queue/join` endpoint. This issue could potentially lead to remote code execution. The vulnerability is present in the handling of file upload paths, allowing attackers to redirect file uploads to unintended locations on the server.
-</code>
-
-- [yuanmeng-MINGI/CVE-2024-1728](https://github.com/yuanmeng-MINGI/CVE-2024-1728)
 
 ### CVE-2024-1781 (2024-02-23)
 
@@ -10985,6 +11012,7 @@
 - [orgC/CVE-2024-10220-demo](https://github.com/orgC/CVE-2024-10220-demo)
 - [mrk336/CVE-2024-10220-Kubernetes-gitRepo-Volume-Vulnerability](https://github.com/mrk336/CVE-2024-10220-Kubernetes-gitRepo-Volume-Vulnerability)
 - [saleha-muzammil/cve-2024-10220-git-on-git](https://github.com/saleha-muzammil/cve-2024-10220-git-on-git)
+- [imohammed28/cve-2024-10220-test](https://github.com/imohammed28/cve-2024-10220-test)
 
 ### CVE-2024-10245 (2024-11-12)
 
@@ -11926,6 +11954,7 @@
 - [yass2400012/Email-exploit-Moniker-Link-CVE-2024-21413-](https://github.com/yass2400012/Email-exploit-Moniker-Link-CVE-2024-21413-)
 - [gurleen-147/CVE-2024-21413-Microsoft-Outlook-Remote-Code-Execution-Vulnerability-PoC](https://github.com/gurleen-147/CVE-2024-21413-Microsoft-Outlook-Remote-Code-Execution-Vulnerability-PoC)
 - [hau2212/Moniker-Link-CVE-2024-21413-](https://github.com/hau2212/Moniker-Link-CVE-2024-21413-)
+- [mmathivanan17/CVE-2024-21413](https://github.com/mmathivanan17/CVE-2024-21413)
 
 ### CVE-2024-21513 (2024-07-15)
 
@@ -11978,6 +12007,13 @@
 </code>
 
 - [L3ster1337/Poc-CVE-2024-21542](https://github.com/L3ster1337/Poc-CVE-2024-21542)
+
+### CVE-2024-21545 (2024-09-24)
+
+<code>Proxmox Virtual Environment is an open-source server management platform for enterprise virtualization. Insufficient safeguards against malicious API response values allow authenticated attackers with 'Sys.Audit' or 'VM.Monitor' privileges to download arbitrary host files via the API.\nWhen handling the result from a request handler before returning it to the user, the handle_api2_request function will check for the ‘download’ or ‘data’-&gt;’download’ objects inside the request handler call response object. If present, handle_api2_request will read a local file defined by this object and return it to the user.\nTwo endpoints were identified which can control the object returned by a request handler sufficiently that the ’download’ object is defined and user controlled. This results in arbitrary file read.\nThe privileges of this file read can result in full compromise of the system by various impacts such as disclosing sensitive files allowing for privileged session forgery.
+</code>
+
+- [SpiralBL0CK/CVE-2024-21545-PoC](https://github.com/SpiralBL0CK/CVE-2024-21545-PoC)
 
 ### CVE-2024-21546 (2024-12-18)
 
@@ -12877,7 +12913,7 @@
 <code>Rust is a programming language. The Rust Security Response WG was notified that the Rust standard library prior to version 1.77.2 did not properly escape arguments when invoking batch files (with the `bat` and `cmd` extensions) on Windows using the `Command`. An attacker able to control the arguments passed to the spawned process could execute arbitrary shell commands by bypassing the escaping. The severity of this vulnerability is critical for those who invoke batch files on Windows with untrusted arguments. No other platform or use is affected.\n\nThe `Command::arg` and `Command::args` APIs state in their documentation that the arguments will be passed to the spawned process as-is, regardless of the content of the arguments, and will not be evaluated by a shell. This means it should be safe to pass untrusted input as an argument.\n\nOn Windows, the implementation of this is more complex than other platforms, because the Windows API only provides a single string containing all the arguments to the spawned process, and it's up to the spawned process to split them. Most programs use the standard C run-time argv, which in practice results in a mostly consistent way arguments are splitted.\n\nOne exception though is `cmd.exe` (used among other things to execute batch files), which has its own argument splitting logic. That forces the standard library to implement custom escaping for arguments passed to batch files. Unfortunately it was reported that our escaping logic was not thorough enough, and it was possible to pass malicious arguments that would result in arbitrary shell execution.\n\nDue to the complexity of `cmd.exe`, we didn't identify a solution that would correctly escape arguments in all cases. To maintain our API guarantees, we improved the robustness of the escaping code, and changed the `Command` API to return an `InvalidInput` error when it cannot safely escape an argument. This error will be emitted when spawning the process.\n\nThe fix is included in Rust 1.77.2. Note that the new escaping logic for batch files errs on the conservative side, and could reject valid arguments. Those who implement the escaping themselves or only handle trusted inputs on Windows can also use the `CommandExt::raw_arg` method to bypass the standard library's escaping logic.
 </code>
 
-- [nasa-frostb1te/CVE-2024-24576-PoC](https://github.com/nasa-frostb1te/CVE-2024-24576-PoC)
+- [frostb1ten/CVE-2024-24576-PoC](https://github.com/frostb1ten/CVE-2024-24576-PoC)
 - [brains93/CVE-2024-24576-PoC-Python](https://github.com/brains93/CVE-2024-24576-PoC-Python)
 - [aydinnyunus/CVE-2024-24576-Exploit](https://github.com/aydinnyunus/CVE-2024-24576-Exploit)
 - [foxoman/CVE-2024-24576-PoC---Nim](https://github.com/foxoman/CVE-2024-24576-PoC---Nim)
@@ -14802,7 +14838,7 @@
 <code>Pi-hole is a DNS sinkhole that protects devices from unwanted content without installing any client-side software. A vulnerability in versions prior to 5.18.3 allows an authenticated user to make internal requests to the server via the `gravity_DownloadBlocklistFromUrl()` function. Depending on some circumstances, the vulnerability could lead to remote command execution. Version 5.18.3 contains a patch for this issue.
 </code>
 
-- [T0X1Cx/CVE-2024-34361-PiHole-SSRF-to-RCE](https://github.com/T0X1Cx/CVE-2024-34361-PiHole-SSRF-to-RCE)
+- [T0X1Cx/CVE-2024-34361-Pi-Hole-SSRF-to-RCE](https://github.com/T0X1Cx/CVE-2024-34361-Pi-Hole-SSRF-to-RCE)
 
 ### CVE-2024-34370 (2024-05-17)
 
@@ -17659,6 +17695,13 @@
 - [verylazytech/CVE-2024-50623](https://github.com/verylazytech/CVE-2024-50623)
 - [iSee857/Cleo-CVE-2024-50623-PoC](https://github.com/iSee857/Cleo-CVE-2024-50623-PoC)
 - [congdong007/CVE-2024-50623-poc](https://github.com/congdong007/CVE-2024-50623-poc)
+
+### CVE-2024-50629 (2025-03-19)
+
+<code>Improper encoding or escaping of output vulnerability in the webapi component in Synology BeeStation OS (BSM) before 1.1-65374 and Synology DiskStation Manager (DSM) before 7.1.1-42962-7, 7.2-64570-4, 7.2.1-69057-6 and 7.2.2-72806-1 allow remote attackers to read limited files via unspecified vectors.
+</code>
+
+- [kiddo-pwn/CVE-2024-50629_50631](https://github.com/kiddo-pwn/CVE-2024-50629_50631)
 
 ### CVE-2024-50633 (2025-01-16)
 
@@ -24322,6 +24365,7 @@
 - [aalexpereira/CVE-2023-35813](https://github.com/aalexpereira/CVE-2023-35813)
 - [BagheeraAltered/CVE-2023-35813-PoC](https://github.com/BagheeraAltered/CVE-2023-35813-PoC)
 - [her3ticAVI/CVE-2023-35813](https://github.com/her3ticAVI/CVE-2023-35813)
+- [Rezy-Dev/CVE-2023-35813](https://github.com/Rezy-Dev/CVE-2023-35813)
 
 ### CVE-2023-35828 (2023-06-18)
 
@@ -25361,7 +25405,6 @@
 </code>
 
 - [z1ph1us/MilkSad-Mnemonic-Generator](https://github.com/z1ph1us/MilkSad-Mnemonic-Generator)
-- [zoeir/BTCDetect-Scientific-Methodology](https://github.com/zoeir/BTCDetect-Scientific-Methodology)
 
 ### CVE-2023-40000 (2024-04-16)
 
@@ -34952,6 +34995,13 @@
 - [p0dalirius/CVE-2022-45771-Pwndoc-LFI-to-RCE](https://github.com/p0dalirius/CVE-2022-45771-Pwndoc-LFI-to-RCE)
 - [yuriisanin/CVE-2022-45771](https://github.com/yuriisanin/CVE-2022-45771)
 
+### CVE-2022-45782 (2023-02-01)
+
+<code>An issue was discovered in dotCMS core 5.3.8.5 through 5.3.8.15 and 21.03 through 22.10.1. A cryptographically insecure random generation algorithm for password-reset token generation leads to account takeover.
+</code>
+
+- [ninajafli/DotCMS-CVE-2022-45782](https://github.com/ninajafli/DotCMS-CVE-2022-45782)
+
 ### CVE-2022-45808 (2023-01-24)
 
 <code>SQL Injection vulnerability in LearnPress – WordPress LMS Plugin &lt;= 4.1.7.3.2 versions.
@@ -39390,7 +39440,7 @@
 <code>In Moodle, insufficient redirect handling made it possible to blindly bypass cURL blocked hosts/allowed ports restrictions, resulting in a blind SSRF risk.
 </code>
 
-- [T0X1Cx/CVE-2021-36396-Exploit](https://github.com/T0X1Cx/CVE-2021-36396-Exploit)
+- [T0X1Cx/CVE-2021-36396-Moodle-Time-Based-SQLi-Exploit](https://github.com/T0X1Cx/CVE-2021-36396-Moodle-Time-Based-SQLi-Exploit)
 
 ### CVE-2021-36460 (2022-04-25)
 
@@ -41384,7 +41434,7 @@
 - [uint0/cve-2021-44228-helpers](https://github.com/uint0/cve-2021-44228-helpers)
 - [sud0x00/log4j-CVE-2021-44228](https://github.com/sud0x00/log4j-CVE-2021-44228)
 - [DiCanio/CVE-2021-44228-docker-example](https://github.com/DiCanio/CVE-2021-44228-docker-example)
-- [myyxl/cve-2021-44228-minecraft-poc](https://github.com/myyxl/cve-2021-44228-minecraft-poc)
+- [mrlnstk/cve-2021-44228-minecraft-poc](https://github.com/mrlnstk/cve-2021-44228-minecraft-poc)
 - [RrUZi/Awesome-CVE-2021-44228](https://github.com/RrUZi/Awesome-CVE-2021-44228)
 - [future-client/CVE-2021-44228](https://github.com/future-client/CVE-2021-44228)
 - [CodeShield-Security/Log4JShell-Bytecode-Detector](https://github.com/CodeShield-Security/Log4JShell-Bytecode-Detector)
