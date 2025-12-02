@@ -2870,6 +2870,9 @@
 
 - [moften/CVE-2025-24271](https://github.com/moften/CVE-2025-24271)
 
+### CVE-2025-24293
+- [usutani/study-turbolinks-link](https://github.com/usutani/study-turbolinks-link)
+
 ### CVE-2025-24354 (2025-01-27)
 
 <code>imgproxy is server for resizing, processing, and converting images. Imgproxy does not block the 0.0.0.0 address, even with IMGPROXY_ALLOW_LOOPBACK_SOURCE_ADDRESSES set to false. This can expose services on the local host. This vulnerability is fixed in 3.27.2.
@@ -8415,6 +8418,9 @@
 ### CVE-2025-65320
 - [Smarttfoxx/CVE-2025-65320](https://github.com/Smarttfoxx/CVE-2025-65320)
 
+### CVE-2025-65321
+- [Smarttfoxx/CVE-2025-65321](https://github.com/Smarttfoxx/CVE-2025-65321)
+
 ### CVE-2025-65345
 - [Theethat-Thamwasin/CVE-2025-65345](https://github.com/Theethat-Thamwasin/CVE-2025-65345)
 - [tlekrean/CVE-2025-65345](https://github.com/tlekrean/CVE-2025-65345)
@@ -13338,6 +13344,7 @@
 <code>Rails is a web-application framework. Starting with version 5.2.0, there is a possible sensitive session information leak in Active Storage. By default, Active Storage sends a Set-Cookie header along with the user's session cookie when serving blobs. It also sets Cache-Control to public. Certain proxies may cache the Set-Cookie, leading to an information leak. The vulnerability is fixed in 7.0.8.1 and 6.1.7.7.
 </code>
 
+- [usutani/study-turbolinks-link](https://github.com/usutani/study-turbolinks-link)
 - [gmo-ierae/CVE-2024-26144-test](https://github.com/gmo-ierae/CVE-2024-26144-test)
 
 ### CVE-2024-26160 (2024-03-12)
@@ -16975,13 +16982,6 @@
 </code>
 
 - [ayato-shitomi/CVE-2024-46278-teedy_1.11_account-takeover](https://github.com/ayato-shitomi/CVE-2024-46278-teedy_1.11_account-takeover)
-
-### CVE-2024-46310 (2025-01-13)
-
-<code>Incorrect Access Control in Cfx.re FXServer v9601 and earlier allows unauthenticated users to modify and read arbitrary user data via exposed API endpoint
-</code>
-
-- [PRX5Y/CVE-2024-46310](https://github.com/PRX5Y/CVE-2024-46310)
 
 ### CVE-2024-46377 (2024-09-18)
 
@@ -29774,6 +29774,13 @@
 
 - [docfate111/CVE-2022-21789](https://github.com/docfate111/CVE-2022-21789)
 
+### CVE-2022-21831 (2022-05-26)
+
+<code>A code injection vulnerability exists in the Active Storage &gt;= v5.2.0 that could allow an attacker to execute code via image_processing arguments.
+</code>
+
+- [usutani/study-turbolinks-link](https://github.com/usutani/study-turbolinks-link)
+
 ### CVE-2022-21839 (2022-01-11)
 
 <code>Windows Event Tracing Discretionary Access Control List Denial of Service Vulnerability
@@ -37471,6 +37478,7 @@
 </code>
 
 - [hoav18/CVE-2021-22941](https://github.com/hoav18/CVE-2021-22941)
+- [pratikjojode/citrix-cve-2021-22941-lab](https://github.com/pratikjojode/citrix-cve-2021-22941-lab)
 
 ### CVE-2021-22986 (2021-03-31)
 
@@ -38762,7 +38770,6 @@
 <code>A race condition was addressed with improved state handling. This issue is fixed in macOS Monterey 12.1, watchOS 8.3, iOS 15.2 and iPadOS 15.2, tvOS 15.2. A malicious application may be able to execute arbitrary code with kernel privileges.
 </code>
 
-- [timb-machine-mirrors/jakeajames-CVE-2021-30955](https://github.com/timb-machine-mirrors/jakeajames-CVE-2021-30955)
 - [nickorlow/CVE-2021-30955-POC](https://github.com/nickorlow/CVE-2021-30955-POC)
 - [verygenericname/CVE-2021-30955-POC-IPA](https://github.com/verygenericname/CVE-2021-30955-POC-IPA)
 - [b1n4r1b01/desc_race](https://github.com/b1n4r1b01/desc_race)
@@ -44129,6 +44136,13 @@
 
 - [RedyOpsResearchLabs/-CVE-2020-8103-Bitdefender-Antivirus-Free-EoP](https://github.com/RedyOpsResearchLabs/-CVE-2020-8103-Bitdefender-Antivirus-Free-EoP)
 
+### CVE-2020-8162 (2020-06-19)
+
+<code>A client side enforcement of server side security vulnerability exists in rails &lt; 5.2.4.2 and rails &lt; 6.0.3.1 ActiveStorage's S3 adapter that allows the Content-Length of a direct file upload to be modified by an end user bypassing upload limits.
+</code>
+
+- [usutani/study-turbolinks-link](https://github.com/usutani/study-turbolinks-link)
+
 ### CVE-2020-8163 (2020-07-02)
 
 <code>The is a code injection vulnerability in versions of Rails prior to 5.0.1 that wouldallow an attacker who controlled the `locals` argument of a `render` call to perform a RCE.
@@ -47954,6 +47968,7 @@
 - [xsxtw/CVE-2019-0232](https://github.com/xsxtw/CVE-2019-0232)
 - [Dharan10/CVE-2019-0232](https://github.com/Dharan10/CVE-2019-0232)
 - [x3m1Sec/CVE-2019-0232_tomcat_cgi_exploit](https://github.com/x3m1Sec/CVE-2019-0232_tomcat_cgi_exploit)
+- [Jorge2Rubio/CVE-2019-0232](https://github.com/Jorge2Rubio/CVE-2019-0232)
 
 ### CVE-2019-0539 (2019-01-08)
 
