@@ -612,6 +612,13 @@
 
 - [Yucaerin/CVE-2025-3419](https://github.com/Yucaerin/CVE-2025-3419)
 
+### CVE-2025-3500 (2025-12-01)
+
+<code>Integer Overflow or Wraparound vulnerability in Avast Antivirus (25.1.981.6) on Windows allows Privilege Escalation.This issue affects Antivirus: from 25.1.981.6 before 25.3.
+</code>
+
+- [chicken3962/CVE-2025-3500-Poc](https://github.com/chicken3962/CVE-2025-3500-Poc)
+
 ### CVE-2025-3515 (2025-06-17)
 
 <code>The Drag and Drop Multiple File Upload for Contact Form 7 plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient file type validation in all versions up to, and including, 1.3.8.9. This makes it possible for unauthenticated attackers to bypass the plugin's blacklist and upload .phar or other dangerous file types on the affected site's server, which may make remote code execution possible on the servers that are configured to handle .phar files as executable PHP scripts, particularly in default Apache+mod_php configurations where the file extension is not strictly validated before being passed to the PHP interpreter.
@@ -884,6 +891,13 @@
 - [speinador/CVE-2025-4664](https://github.com/speinador/CVE-2025-4664)
 - [Leviticus-Triage/ChromSploit-Framework](https://github.com/Leviticus-Triage/ChromSploit-Framework)
 - [amalmurali47/cve-2025-4664](https://github.com/amalmurali47/cve-2025-4664)
+
+### CVE-2025-4679 (2025-05-16)
+
+<code>A vulnerability in Synology Active Backup for Microsoft 365 allows remote authenticated attackers to obtain sensitive information via unspecified vectors.
+</code>
+
+- [fevar54/CVE-2025-4679-SecureOAuth-Demo---Enfoque-educativo](https://github.com/fevar54/CVE-2025-4679-SecureOAuth-Demo---Enfoque-educativo)
 
 ### CVE-2025-4686
 - [sahici/CVE-2025-4686](https://github.com/sahici/CVE-2025-4686)
@@ -2275,6 +2289,13 @@
 </code>
 
 - [d0n601/CVE-2025-13597](https://github.com/d0n601/CVE-2025-13597)
+
+### CVE-2025-13615 (2025-11-30)
+
+<code>The StreamTube Core plugin for WordPress is vulnerable to Arbitrary User Password Change in versions up to, and including, 4.78. This is due to the plugin providing user-controlled access to objects, letting a user bypass authorization and access system resources. This makes it possible for unauthenticated attackers to change user passwords and potentially take over administrator accounts. Note: This can only be exploited if the 'registration password fields' enabled in theme options.
+</code>
+
+- [blossombutt4063/CVE-2025-13615](https://github.com/blossombutt4063/CVE-2025-13615)
 
 ### CVE-2025-13796 (2025-11-30)
 
@@ -4985,6 +5006,13 @@
 
 - [guard-wait/CVE-2025-40019_POC](https://github.com/guard-wait/CVE-2025-40019_POC)
 
+### CVE-2025-40040 (2025-10-28)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nmm/ksm: fix flag-dropping behavior in ksm_madvise\n\nsyzkaller discovered the following crash: (kernel BUG)\n\n[   44.607039] ------------[ cut here ]------------\n[   44.607422] kernel BUG at mm/userfaultfd.c:2067!\n[   44.608148] Oops: invalid opcode: 0000 [#1] SMP DEBUG_PAGEALLOC KASAN NOPTI\n[   44.608814] CPU: 1 UID: 0 PID: 2475 Comm: reproducer Not tainted 6.16.0-rc6 #1 PREEMPT(none)\n[   44.609635] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014\n[   44.610695] RIP: 0010:userfaultfd_release_all+0x3a8/0x460\n\n&lt;snip other registers, drop unreliable trace&gt;\n\n[   44.617726] Call Trace:\n[   44.617926]  &lt;TASK&gt;\n[   44.619284]  userfaultfd_release+0xef/0x1b0\n[   44.620976]  __fput+0x3f9/0xb60\n[   44.621240]  fput_close_sync+0x110/0x210\n[   44.622222]  __x64_sys_close+0x8f/0x120\n[   44.622530]  do_syscall_64+0x5b/0x2f0\n[   44.622840]  entry_SYSCALL_64_after_hwframe+0x76/0x7e\n[   44.623244] RIP: 0033:0x7f365bb3f227\n\nKernel panics because it detects UFFD inconsistency during\nuserfaultfd_release_all().  Specifically, a VMA which has a valid pointer\nto vma-&gt;vm_userfaultfd_ctx, but no UFFD flags in vma-&gt;vm_flags.\n\nThe inconsistency is caused in ksm_madvise(): when user calls madvise()\nwith MADV_UNMEARGEABLE on a VMA that is registered for UFFD in MINOR mode,\nit accidentally clears all flags stored in the upper 32 bits of\nvma-&gt;vm_flags.\n\nAssuming x86_64 kernel build, unsigned long is 64-bit and unsigned int and\nint are 32-bit wide.  This setup causes the following mishap during the &amp;=\n~VM_MERGEABLE assignment.\n\nVM_MERGEABLE is a 32-bit constant of type unsigned int, 0x8000'0000. \nAfter ~ is applied, it becomes 0x7fff'ffff unsigned int, which is then\npromoted to unsigned long before the &amp; operation.  This promotion fills\nupper 32 bits with leading 0s, as we're doing unsigned conversion (and\neven for a signed conversion, this wouldn't help as the leading bit is 0).\n&amp; operation thus ends up AND-ing vm_flags with 0x0000'0000'7fff'ffff\ninstead of intended 0xffff'ffff'7fff'ffff and hence accidentally clears\nthe upper 32-bits of its value.\n\nFix it by changing `VM_MERGEABLE` constant to unsigned long, using the\nBIT() macro.\n\nNote: other VM_* flags are not affected: This only happens to the\nVM_MERGEABLE flag, as the other VM_* flags are all constants of type int\nand after ~ operation, they end up with leading 1 and are thus converted\nto unsigned long with leading 1s.\n\nNote 2:\nAfter commit 31defc3b01d9 (&quot;userfaultfd: remove (VM_)BUG_ON()s&quot;), this is\nno longer a kernel BUG, but a WARNING at the same place:\n\n[   45.595973] WARNING: CPU: 1 PID: 2474 at mm/userfaultfd.c:2067\n\nbut the root-cause (flag-drop) remains the same.\n\n[akpm@linux-foundation.org: rust bindgen wasn't able to handle BIT(), from Miguel]
+</code>
+
+- [SpiralBL0CK/CVE-2023-1206-CVE-2025-40040-CVE-2024-49882](https://github.com/SpiralBL0CK/CVE-2023-1206-CVE-2025-40040-CVE-2024-49882)
+
 ### CVE-2025-40547 (2025-11-18)
 
 <code>A logic error vulnerability exists in Serv-U which when abused could give a malicious actor with access to admin privileges the ability to execute code. \n\nThis issue requires administrative privileges to abuse. On Windows deployments, the risk is scored as a medium because services frequently run under less-privileged service accounts by default.
@@ -6754,6 +6782,7 @@
 - [25145hg654511135gfhfkr8488r8r8r8r8r/test](https://github.com/25145hg654511135gfhfkr8488r8r8r8r8r/test)
 - [25145hg654511135gfhfkr8488r8r8r8r8r/test2](https://github.com/25145hg654511135gfhfkr8488r8r8r8r8r/test2)
 - [AdityaBhatt3010/CVE-2025-54253-Inside-the-Adobe-AEM-Forms-Zero-Day](https://github.com/AdityaBhatt3010/CVE-2025-54253-Inside-the-Adobe-AEM-Forms-Zero-Day)
+- [netmatthew3771/CVE-2025-54253](https://github.com/netmatthew3771/CVE-2025-54253)
 
 ### CVE-2025-54309 (2025-07-18)
 
@@ -8050,6 +8079,13 @@
 
 - [Ashwesker/Blackash-CVE-2025-62593](https://github.com/Ashwesker/Blackash-CVE-2025-62593)
 
+### CVE-2025-62641 (2025-10-21)
+
+<code>Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core).  Supported versions that are affected are 7.1.12 and  7.2.2. Easily exploitable vulnerability allows high privileged attacker with logon to the infrastructure where Oracle VM VirtualBox executes to compromise Oracle VM VirtualBox.  While the vulnerability is in Oracle VM VirtualBox, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle VM VirtualBox. CVSS 3.1 Base Score 8.2 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H).
+</code>
+
+- [Al-Lord0x/CVE-2025-62641](https://github.com/Al-Lord0x/CVE-2025-62641)
+
 ### CVE-2025-62726 (2025-10-30)
 
 <code>n8n is an open source workflow automation platform. Prior to 1.113.0, a remote code execution vulnerability exists in the Git Node component available in both Cloud and Self-Hosted versions of n8n. When a malicious actor clones a remote repository containing a pre-commit hook, the subsequent use of the Commit operation in the Git Node can inadvertently trigger the hook’s execution. This allows attackers to execute arbitrary code within the n8n environment, potentially compromising the system and any connected credentials or workflows. This vulnerability is fixed in 1.113.0.
@@ -8381,6 +8417,7 @@
 
 ### CVE-2025-65345
 - [Theethat-Thamwasin/CVE-2025-65345](https://github.com/Theethat-Thamwasin/CVE-2025-65345)
+- [tlekrean/CVE-2025-65345](https://github.com/tlekrean/CVE-2025-65345)
 
 ### CVE-2025-65482
 - [AT190510-Cuong/CVE-2025-65482-XXE-](https://github.com/AT190510-Cuong/CVE-2025-65482-XXE-)
@@ -17354,6 +17391,7 @@
 - [mladicstefan/CVE-2024-48990](https://github.com/mladicstefan/CVE-2024-48990)
 - [Mr-DJ/CVE-2024-48990](https://github.com/Mr-DJ/CVE-2024-48990)
 - [Loaxert/CVE-2024-48990-PoC](https://github.com/Loaxert/CVE-2024-48990-PoC)
+- [0x3bs/CVE-2024-48990](https://github.com/0x3bs/CVE-2024-48990)
 
 ### CVE-2024-49019 (2024-11-12)
 
@@ -17474,6 +17512,13 @@
 
 ### CVE-2024-49746
 - [michalbednarski/ThisSeemsWrong](https://github.com/michalbednarski/ThisSeemsWrong)
+
+### CVE-2024-49882 (2024-10-21)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\next4: fix double brelse() the buffer of the extents path\n\nIn ext4_ext_try_to_merge_up(), set path[1].p_bh to NULL after it has been\nreleased, otherwise it may be released twice. An example of what triggers\nthis is as follows:\n\n  split2    map    split1\n|--------|-------|--------|\n\next4_ext_map_blocks\n ext4_ext_handle_unwritten_extents\n  ext4_split_convert_extents\n   // path-&gt;p_depth == 0\n   ext4_split_extent\n     // 1. do split1\n     ext4_split_extent_at\n       |ext4_ext_insert_extent\n       |  ext4_ext_create_new_leaf\n       |    ext4_ext_grow_indepth\n       |      le16_add_cpu(&amp;neh-&gt;eh_depth, 1)\n       |    ext4_find_extent\n       |      // return -ENOMEM\n       |// get error and try zeroout\n       |path = ext4_find_extent\n       |  path-&gt;p_depth = 1\n       |ext4_ext_try_to_merge\n       |  ext4_ext_try_to_merge_up\n       |    path-&gt;p_depth = 0\n       |    brelse(path[1].p_bh)  ---&gt; not set to NULL here\n       |// zeroout success\n     // 2. update path\n     ext4_find_extent\n     // 3. do split2\n     ext4_split_extent_at\n       ext4_ext_insert_extent\n         ext4_ext_create_new_leaf\n           ext4_ext_grow_indepth\n             le16_add_cpu(&amp;neh-&gt;eh_depth, 1)\n           ext4_find_extent\n             path[0].p_bh = NULL;\n             path-&gt;p_depth = 1\n             read_extent_tree_block  ---&gt; return err\n             // path[1].p_bh is still the old value\n             ext4_free_ext_path\n               ext4_ext_drop_refs\n                 // path-&gt;p_depth == 1\n                 brelse(path[1].p_bh)  ---&gt; brelse a buffer twice\n\nFinally got the following WARRNING when removing the buffer from lru:\n\n============================================\nVFS: brelse: Trying to free free buffer\nWARNING: CPU: 2 PID: 72 at fs/buffer.c:1241 __brelse+0x58/0x90\nCPU: 2 PID: 72 Comm: kworker/u19:1 Not tainted 6.9.0-dirty #716\nRIP: 0010:__brelse+0x58/0x90\nCall Trace:\n &lt;TASK&gt;\n __find_get_block+0x6e7/0x810\n bdev_getblk+0x2b/0x480\n __ext4_get_inode_loc+0x48a/0x1240\n ext4_get_inode_loc+0xb2/0x150\n ext4_reserve_inode_write+0xb7/0x230\n __ext4_mark_inode_dirty+0x144/0x6a0\n ext4_ext_insert_extent+0x9c8/0x3230\n ext4_ext_map_blocks+0xf45/0x2dc0\n ext4_map_blocks+0x724/0x1700\n ext4_do_writepages+0x12d6/0x2a70\n[...]\n============================================
+</code>
+
+- [SpiralBL0CK/CVE-2023-1206-CVE-2025-40040-CVE-2024-49882](https://github.com/SpiralBL0CK/CVE-2023-1206-CVE-2025-40040-CVE-2024-49882)
 
 ### CVE-2024-50251 (2024-11-09)
 
@@ -19251,12 +19296,12 @@
 - [charlesgargasson/CVE-2023-1177](https://github.com/charlesgargasson/CVE-2023-1177)
 - [paultheal1en/CVE-2023-1177-PoC-reproduce](https://github.com/paultheal1en/CVE-2023-1177-PoC-reproduce)
 
-### CVE-2023-1189 (2023-03-06)
+### CVE-2023-1206 (2023-06-30)
 
-<code>In WiseCleaner Wise Folder Hider 4.4.3.202 wurde eine problematische Schwachstelle ausgemacht. Das betrifft die Funktion 0x222400/0x222404/0x222410 in der Bibliothek WiseFs64.sys der Komponente IoControlCode Handler. Durch das Manipulieren mit unbekannten Daten kann eine denial of service-Schwachstelle ausgenutzt werden. Der Angriff muss lokal angegangen werden. Der Exploit steht zur öffentlichen Verfügung.
+<code>A hash collision flaw was found in the IPv6 connection lookup table in the Linux kernel’s IPv6 functionality when a user makes a new kind of SYN flood attack. A user located in the local network or with a high bandwidth connection can increase the CPU usage of the server that accepts IPV6 connections up to 95%.
 </code>
 
-- [le0s1mba/CVE-2023-1189](https://github.com/le0s1mba/CVE-2023-1189)
+- [SpiralBL0CK/CVE-2023-1206-CVE-2025-40040-CVE-2024-49882](https://github.com/SpiralBL0CK/CVE-2023-1206-CVE-2025-40040-CVE-2024-49882)
 
 ### CVE-2023-1234 (2023-03-07)
 
@@ -37161,6 +37206,7 @@
 - [pkxk5pr6m2-web/cve-2021-21980-nuclei-poc](https://github.com/pkxk5pr6m2-web/cve-2021-21980-nuclei-poc)
 - [gui2000guix-ui/cve-2021-21980-nuclei-poc](https://github.com/gui2000guix-ui/cve-2021-21980-nuclei-poc)
 - [gui2000guix-ui/cve-2021-21980-mock-server](https://github.com/gui2000guix-ui/cve-2021-21980-mock-server)
+- [pratikjojode/vcenter-cve-2021-21980-lab](https://github.com/pratikjojode/vcenter-cve-2021-21980-lab)
 
 ### CVE-2021-21983 (2021-03-31)
 
@@ -40235,7 +40281,6 @@
 </code>
 
 - [SakuraSamuraii/derailed](https://github.com/SakuraSamuraii/derailed)
-- [Lul/TestRail-files.md5-IAC-scanner](https://github.com/Lul/TestRail-files.md5-IAC-scanner)
 
 ### CVE-2021-40903 (2022-06-17)
 
@@ -49507,7 +49552,7 @@
 - [kaizoku73/CVE-2019-9053](https://github.com/kaizoku73/CVE-2019-9053)
 - [Hackheart-tech/-exploit-lab](https://github.com/Hackheart-tech/-exploit-lab)
 - [Kalidas-7/CVE-2019-9053](https://github.com/Kalidas-7/CVE-2019-9053)
-- [noob-hacker572/CMS-Made-Simple-2.2.9-CVE-2019-9053](https://github.com/noob-hacker572/CMS-Made-Simple-2.2.9-CVE-2019-9053)
+- [Boon-Rekcah/CMS-Made-Simple-2.2.9-CVE-2019-9053](https://github.com/Boon-Rekcah/CMS-Made-Simple-2.2.9-CVE-2019-9053)
 - [Slayerma/-CVE-2019-9053](https://github.com/Slayerma/-CVE-2019-9053)
 - [CaelumIsMe/CVE-2019-9053-POC](https://github.com/CaelumIsMe/CVE-2019-9053-POC)
 - [6iroc/CVE-2019-9053](https://github.com/6iroc/CVE-2019-9053)
@@ -61978,6 +62023,7 @@
 - [tarunyadav/fix-cve-2013-2094](https://github.com/tarunyadav/fix-cve-2013-2094)
 - [timhsutw/cve-2013-2094](https://github.com/timhsutw/cve-2013-2094)
 - [vnik5287/CVE-2013-2094](https://github.com/vnik5287/CVE-2013-2094)
+- [letsr00t/CVE-2013-2094](https://github.com/letsr00t/CVE-2013-2094)
 
 ### CVE-2013-2165 (2013-07-22)
 
