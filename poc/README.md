@@ -2191,7 +2191,11 @@
 
 - [Nxploited/CVE-2025-12539](https://github.com/Nxploited/CVE-2025-12539)
 
-### CVE-2025-12585
+### CVE-2025-12585 (2025-12-03)
+
+<code>The MxChat – AI Chatbot for WordPress plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.5.5 via upload filenames. This makes it possible for unauthenticated attackers to extract session values that can subsequently be used to access conversation data.
+</code>
+
 - [d0n601/CVE-2025-12585](https://github.com/d0n601/CVE-2025-12585)
 
 ### CVE-2025-12735 (2025-11-05)
@@ -2272,6 +2276,9 @@
 </code>
 
 - [d0n601/CVE-2025-13380](https://github.com/d0n601/CVE-2025-13380)
+
+### CVE-2025-13390
+- [d0n601/CVE-2025-13390](https://github.com/d0n601/CVE-2025-13390)
 
 ### CVE-2025-13425 (2025-11-20)
 
@@ -7674,6 +7681,13 @@
 
 - [JOOJIII/CVE-2025-59424](https://github.com/JOOJIII/CVE-2025-59424)
 
+### CVE-2025-59427 (2025-09-19)
+
+<code>The Cloudflare Vite plugin enables a full-featured integration between Vite and the Workers runtime. When utilising the Cloudflare Vite plugin in its default configuration, all files are exposed by the local dev server, including files in the root directory that contain secret information such as .env and .dev.vars. This vulnerability is fixed in 1.6.0.
+</code>
+
+- [ibnurusdianto/CVE-2025-59427](https://github.com/ibnurusdianto/CVE-2025-59427)
+
 ### CVE-2025-59489 (2025-10-03)
 
 <code>Unity Runtime before 2025-10-02 on Android, Windows, macOS, and Linux allows argument injection that can result in loading of library code from an unintended location. If an application was built with a version of Unity Editor that had the vulnerable Unity Runtime code, then an adversary may be able to execute code on, and exfiltrate confidential information from, the machine on which that application is running. NOTE: product status is provided for Unity Editor because that is the information available from the Supplier. However, updating Unity Editor typically does not address the effects of the vulnerability; instead, it is necessary to rebuild and redeploy all affected applications.
@@ -7869,6 +7883,9 @@
 
 ### CVE-2025-60910
 - [Mp-97/CVE-2025-60910](https://github.com/Mp-97/CVE-2025-60910)
+
+### CVE-2025-61148
+- [sharma19d/CVE-2025-61148](https://github.com/sharma19d/CVE-2025-61148)
 
 ### CVE-2025-61155 (2025-10-28)
 
@@ -8323,6 +8340,9 @@
 
 ### CVE-2025-63943
 - [RedOpsX/CVE-2025-63943](https://github.com/RedOpsX/CVE-2025-63943)
+
+### CVE-2025-63945
+- [alexlee820/CVE-2025-63945](https://github.com/alexlee820/CVE-2025-63945)
 
 ### CVE-2025-64027 (2025-11-20)
 
