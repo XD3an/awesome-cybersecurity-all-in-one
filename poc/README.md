@@ -233,6 +233,7 @@
 </code>
 
 - [ada-z3r0/CVE-2025-1337-PoC](https://github.com/ada-z3r0/CVE-2025-1337-PoC)
+- [Zwique/CVE-2025-1337-PoC](https://github.com/Zwique/CVE-2025-1337-PoC)
 
 ### CVE-2025-1338 (2025-02-16)
 
@@ -2119,7 +2120,7 @@
 
 ### CVE-2025-11579 (2025-10-10)
 
-<code>Mattermost versions 10.11.x &lt;= 10.11.4, 10.5.x &lt;= 10.5.12 fail to validate the user permission when accessing the files and subscribing to the block in Boards, which allows an authenticated user to access other board files and was able to subscribe to the block from other boards that the user does not have access to
+<code>github.com/nwaples/rardecode versions &lt;=2.1.1 fail to restrict the dictionary size when reading large RAR dictionary sizes, which allows an attacker to provide a specially crafted RAR file and cause Denial of Service via an Out Of Memory Crash.
 </code>
 
 - [shinigami-777/PoC_CVE-2025-11579](https://github.com/shinigami-777/PoC_CVE-2025-11579)
@@ -2189,6 +2190,9 @@
 </code>
 
 - [Nxploited/CVE-2025-12539](https://github.com/Nxploited/CVE-2025-12539)
+
+### CVE-2025-12585
+- [d0n601/CVE-2025-12585](https://github.com/d0n601/CVE-2025-12585)
 
 ### CVE-2025-12735 (2025-11-05)
 
@@ -4016,6 +4020,7 @@
 - [Bongni/CVE-2025-29927](https://github.com/Bongni/CVE-2025-29927)
 - [NS-Projects-Unina/CTF_CVE_DSP_1](https://github.com/NS-Projects-Unina/CTF_CVE_DSP_1)
 - [lucaschanzx/CVE-2025-29927-PoC](https://github.com/lucaschanzx/CVE-2025-29927-PoC)
+- [liamromanis101/CVE-2025-29927-NextJS](https://github.com/liamromanis101/CVE-2025-29927-NextJS)
 
 ### CVE-2025-29972 (2025-05-08)
 
@@ -5156,6 +5161,7 @@
 - [veniversum/cve-2025-43300](https://github.com/veniversum/cve-2025-43300)
 - [ticofookfook/CVE-2025-43300](https://github.com/ticofookfook/CVE-2025-43300)
 - [Dark-life944/CVE-2025](https://github.com/Dark-life944/CVE-2025)
+- [7amzahard/CVE-2025-43300](https://github.com/7amzahard/CVE-2025-43300)
 
 ### CVE-2025-43504 (2025-11-04)
 
@@ -5799,6 +5805,9 @@
 - [letchupkt/CVE-2025-48593](https://github.com/letchupkt/CVE-2025-48593)
 - [zhuowei/blueshrimp](https://github.com/zhuowei/blueshrimp)
 - [ranasen-rat/CVE-2025-48593](https://github.com/ranasen-rat/CVE-2025-48593)
+
+### CVE-2025-48633
+- [Ashwesker/Blackash-CVE-2025-48633](https://github.com/Ashwesker/Blackash-CVE-2025-48633)
 
 ### CVE-2025-48703 (2025-09-19)
 
@@ -6785,7 +6794,6 @@
 - [25145hg654511135gfhfkr8488r8r8r8r8r/test](https://github.com/25145hg654511135gfhfkr8488r8r8r8r8r/test)
 - [25145hg654511135gfhfkr8488r8r8r8r8r/test2](https://github.com/25145hg654511135gfhfkr8488r8r8r8r8r/test2)
 - [AdityaBhatt3010/CVE-2025-54253-Inside-the-Adobe-AEM-Forms-Zero-Day](https://github.com/AdityaBhatt3010/CVE-2025-54253-Inside-the-Adobe-AEM-Forms-Zero-Day)
-- [netmatthew3771/CVE-2025-54253](https://github.com/netmatthew3771/CVE-2025-54253)
 
 ### CVE-2025-54309 (2025-07-18)
 
@@ -7807,7 +7815,11 @@
 
 - [redpack-kr/CVE-2025-60710](https://github.com/redpack-kr/CVE-2025-60710)
 
-### CVE-2025-60736
+### CVE-2025-60736 (2025-12-02)
+
+<code>code-projects Online Medicine Guide 1.0 is vulnerable to SQL Injection in /login.php via the upass parameter.
+</code>
+
 - [WinDyAlphA/CVE-2025-60736](https://github.com/WinDyAlphA/CVE-2025-60736)
 
 ### CVE-2025-60749 (2025-10-31)
@@ -8187,7 +8199,7 @@
 - [xryptoh/CVE-2025-63498](https://github.com/xryptoh/CVE-2025-63498)
 
 ### CVE-2025-63499
-- [xryptoh/CVE-2025-63499](https://github.com/xryptoh/CVE-2025-63499)
+- [poblaguev-tot/CVE-2025-63499](https://github.com/poblaguev-tot/CVE-2025-63499)
 
 ### CVE-2025-63571
 - [RRespxwnss/CVE-2025-63571](https://github.com/RRespxwnss/CVE-2025-63571)
@@ -8428,6 +8440,9 @@
 ### CVE-2025-65482
 - [AT190510-Cuong/CVE-2025-65482-XXE-](https://github.com/AT190510-Cuong/CVE-2025-65482-XXE-)
 
+### CVE-2025-65637
+- [mjuanxd/logrus-dos-poc](https://github.com/mjuanxd/logrus-dos-poc)
+
 ### CVE-2025-65669 (2025-11-26)
 
 <code>An issue was discovered in classroomio 0.1.13. Student accounts are able to delete courses from the Explore page without any authorization or authentication checks, bypassing the expected admin-only deletion restriction.
@@ -8470,10 +8485,24 @@
 
 - [Rivek619/CVE-2025-65681](https://github.com/Rivek619/CVE-2025-65681)
 
+### CVE-2025-65806
+- [Bidon47/CVE-2025-65806](https://github.com/Bidon47/CVE-2025-65806)
+
+### CVE-2025-65858 (2025-12-02)
+
+<code>A Stored Cross-Site Scripting (XSS) vulnerability in Calibre-Web v0.6.25 allows attackers to inject malicious JavaScript into the 'username' field during user creation. The payload is stored unsanitized and later executed when the /ajax/listusers endpoint is accessed.
+</code>
+
+- [KhanhDuy155/calibre-web-CVE-2025-65858](https://github.com/KhanhDuy155/calibre-web-CVE-2025-65858)
+
 ### CVE-2025-65862
 - [rimbadirgantara/opac-fast-automation](https://github.com/rimbadirgantara/opac-fast-automation)
 
-### CVE-2025-65881
+### CVE-2025-65881 (2025-12-02)
+
+<code>Sourcecodester Zoo Management System v1.0 is vulnerable to Cross Site Scripting (XSS) in /classes/Login.php.
+</code>
+
 - [MMAKINGDOM/CVE-2025-65881](https://github.com/MMAKINGDOM/CVE-2025-65881)
 
 ### CVE-2025-65899
@@ -10216,7 +10245,7 @@
 - [YassDEV221608/CVE-2024-6387](https://github.com/YassDEV221608/CVE-2024-6387)
 - [awusan125/test_for6387](https://github.com/awusan125/test_for6387)
 - [YassDEV221608/CVE-2024-6387_PoC](https://github.com/YassDEV221608/CVE-2024-6387_PoC)
-- [AzrDll/CVE-2024-6387](https://github.com/AzrDll/CVE-2024-6387)
+- [kinu404/CVE-2024-6387](https://github.com/kinu404/CVE-2024-6387)
 - [xiw1ll/CVE-2024-6387_Checker](https://github.com/xiw1ll/CVE-2024-6387_Checker)
 - [moften/regreSSHion-CVE-2024-6387](https://github.com/moften/regreSSHion-CVE-2024-6387)
 - [OhDamnn/Noregressh](https://github.com/OhDamnn/Noregressh)
@@ -36235,7 +36264,6 @@
 - [shadowabi/Laravel-CVE-2021-3129](https://github.com/shadowabi/Laravel-CVE-2021-3129)
 - [JacobEbben/CVE-2021-3129](https://github.com/JacobEbben/CVE-2021-3129)
 - [hupe1980/CVE-2021-3129](https://github.com/hupe1980/CVE-2021-3129)
-- [0nion1/CVE-2021-3129](https://github.com/0nion1/CVE-2021-3129)
 - [MadExploits/Laravel-debug-Checker](https://github.com/MadExploits/Laravel-debug-Checker)
 - [ajisai-babu/CVE-2021-3129-exp](https://github.com/ajisai-babu/CVE-2021-3129-exp)
 - [keyuan15/CVE-2021-3129](https://github.com/keyuan15/CVE-2021-3129)
@@ -37104,6 +37132,7 @@
 - [Eap2468/CVE-2021-21551](https://github.com/Eap2468/CVE-2021-21551)
 - [IlanDudnik/CVE-2021-21551](https://github.com/IlanDudnik/CVE-2021-21551)
 - [luke0x90/CVE-2021-21551](https://github.com/luke0x90/CVE-2021-21551)
+- [bengabay1994/cve-2021-21551-PoC](https://github.com/bengabay1994/cve-2021-21551-PoC)
 
 ### CVE-2021-21707 (2021-11-29)
 
@@ -44967,6 +44996,7 @@
 - [Cybernegro/CVE-2020-11023](https://github.com/Cybernegro/CVE-2020-11023)
 - [andreassundstrom/cve-2020-11023-demonstration](https://github.com/andreassundstrom/cve-2020-11023-demonstration)
 - [honeyb33z/cve-2020-11023-scanner](https://github.com/honeyb33z/cve-2020-11023-scanner)
+- [towaos/towaos-lab-cve-2020-11023](https://github.com/towaos/towaos-lab-cve-2020-11023)
 
 ### CVE-2020-11060 (2020-05-12)
 
@@ -56954,6 +56984,7 @@
 - [00mjk/exploit-CVE-2017-7494](https://github.com/00mjk/exploit-CVE-2017-7494)
 - [d3fudd/CVE-2017-7494_SambaCry](https://github.com/d3fudd/CVE-2017-7494_SambaCry)
 - [FelipeR-UFBA/cve-2017-7494-fixed](https://github.com/FelipeR-UFBA/cve-2017-7494-fixed)
+- [sudlit/CVE-2017-7494](https://github.com/sudlit/CVE-2017-7494)
 
 ### CVE-2017-7504 (2017-05-19)
 
