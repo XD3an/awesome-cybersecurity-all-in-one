@@ -2207,6 +2207,13 @@
 - [AN5I/cve-2025-12735-expr-eval-rce](https://github.com/AN5I/cve-2025-12735-expr-eval-rce)
 - [alecasg555/safe-expr-eval](https://github.com/alecasg555/safe-expr-eval)
 
+### CVE-2025-12744 (2025-12-03)
+
+<code>A flaw was found in the ABRT daemon’s handling of user-supplied mount information.ABRT copies up to 12 characters from an untrusted input and places them directly into a shell command (docker inspect %s) without proper validation. An unprivileged local user can craft a payload that injects shell metacharacters, causing the root-running ABRT process to execute attacker-controlled commands and ultimately gain full root privileges.
+</code>
+
+- [initstring/abrt_root](https://github.com/initstring/abrt_root)
+
 ### CVE-2025-12748 (2025-11-11)
 
 <code>A flaw was discovered in libvirt in the XML file processing. More specifically, the parsing of user provided XML files was performed before the ACL checks. A malicious user with limited permissions could exploit this flaw by submitting a specially crafted XML file, causing libvirt to allocate too much memory on the host. The excessive memory consumption could lead to a libvirt process crash on the host, resulting in a denial-of-service condition.
@@ -2305,6 +2312,7 @@
 </code>
 
 - [lasthero-887/CVE-2025-13486---Poc](https://github.com/lasthero-887/CVE-2025-13486---Poc)
+- [0xnemian/CVE-2025-13486.-CVE-2025-13486](https://github.com/0xnemian/CVE-2025-13486.-CVE-2025-13486)
 
 ### CVE-2025-13595 (2025-11-25)
 
@@ -7030,6 +7038,21 @@
 - [Ashwesker/Blackash-CVE-2025-55182](https://github.com/Ashwesker/Blackash-CVE-2025-55182)
 - [santihabib/CVE-2025-55182-analysis](https://github.com/santihabib/CVE-2025-55182-analysis)
 - [sherlocksecurity/CVE-2025-55182-Scanner-Exploit](https://github.com/sherlocksecurity/CVE-2025-55182-Scanner-Exploit)
+- [xkillbit/cve-2025-55182-scanner](https://github.com/xkillbit/cve-2025-55182-scanner)
+- [rpjboyarski/java4script](https://github.com/rpjboyarski/java4script)
+- [pyroxenites/CVE-2025-55182](https://github.com/pyroxenites/CVE-2025-55182)
+- [whiteov3rflow/CVE-2025-55182-poc](https://github.com/whiteov3rflow/CVE-2025-55182-poc)
+- [rauschecker/CVE-2025-55182](https://github.com/rauschecker/CVE-2025-55182)
+- [Pa2sw0rd/exploit-CVE-2025-55182-poc](https://github.com/Pa2sw0rd/exploit-CVE-2025-55182-poc)
+- [kk12-30/CVE-2025-55182](https://github.com/kk12-30/CVE-2025-55182)
+- [heiheishushu/rsc_detect_CVE-2025-55182](https://github.com/heiheishushu/rsc_detect_CVE-2025-55182)
+- [M0onPu15e/next.js-scanner](https://github.com/M0onPu15e/next.js-scanner)
+- [ThemeHackers/CVE-2025-55182](https://github.com/ThemeHackers/CVE-2025-55182)
+- [yiyihuohuo/CVE-2025-55182scan](https://github.com/yiyihuohuo/CVE-2025-55182scan)
+- [joshterrill/CVE-2025-55182-realistic-poc](https://github.com/joshterrill/CVE-2025-55182-realistic-poc)
+- [mingyisecurity-lab/CVE-2025-55182-TOOLS](https://github.com/mingyisecurity-lab/CVE-2025-55182-TOOLS)
+- [joaonevess/rust-flight](https://github.com/joaonevess/rust-flight)
+- [7ealvivek/CVE-2025-55182-by-realvivek](https://github.com/7ealvivek/CVE-2025-55182-by-realvivek)
 
 ### CVE-2025-55188 (2025-08-08)
 
@@ -11056,6 +11079,7 @@
 
 - [tdonaworth/Firefox-CVE-2024-9680](https://github.com/tdonaworth/Firefox-CVE-2024-9680)
 - [PraiseImafidon/Version_Vulnerability_Scanner](https://github.com/PraiseImafidon/Version_Vulnerability_Scanner)
+- [moscovium-mc/Tor-0day-JavaScript-Exploit](https://github.com/moscovium-mc/Tor-0day-JavaScript-Exploit)
 
 ### CVE-2024-9698 (2024-12-14)
 
