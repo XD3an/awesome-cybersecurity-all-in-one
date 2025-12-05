@@ -2174,7 +2174,11 @@
 
 - [d0n601/CVE-2025-12135](https://github.com/d0n601/CVE-2025-12135)
 
-### CVE-2025-12189
+### CVE-2025-12189 (2025-12-05)
+
+<code>The Bread &amp; Butter: Gate content + Capture leads + Collect first-party data + Nurture with Ai agents plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 7.10.1321. This is due to missing or incorrect nonce validation on the uploadImage() function. This makes it possible for unauthenticated attackers to upload arbitrary files that make remote code execution possible via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.
+</code>
+
 - [d0n601/CVE-2025-12189](https://github.com/d0n601/CVE-2025-12189)
 
 ### CVE-2025-12399 (2025-11-08)
@@ -7025,7 +7029,6 @@
 - [atastycookie/CVE-2025-55182](https://github.com/atastycookie/CVE-2025-55182)
 - [santihabib/CVE-2025-55182-analysis](https://github.com/santihabib/CVE-2025-55182-analysis)
 - [xkillbit/cve-2025-55182-scanner](https://github.com/xkillbit/cve-2025-55182-scanner)
-- [rpjboyarski/java4script](https://github.com/rpjboyarski/java4script)
 - [whiteov3rflow/CVE-2025-55182-poc](https://github.com/whiteov3rflow/CVE-2025-55182-poc)
 - [Pa2sw0rd/exploit-CVE-2025-55182-poc](https://github.com/Pa2sw0rd/exploit-CVE-2025-55182-poc)
 - [kk12-30/CVE-2025-55182](https://github.com/kk12-30/CVE-2025-55182)
@@ -7065,10 +7068,22 @@
 - [aquinn-r7/CVE-2025-55182-VulnCheckPOC](https://github.com/aquinn-r7/CVE-2025-55182-VulnCheckPOC)
 - [MedusaSH/POC-CVE-2025-55182](https://github.com/MedusaSH/POC-CVE-2025-55182)
 - [marginaldeer/CVE-2025-55182_scanner](https://github.com/marginaldeer/CVE-2025-55182_scanner)
-- [nxgn-kd01/cve-2025-55182-scanner](https://github.com/nxgn-kd01/cve-2025-55182-scanner)
+- [nxgn-kd01/react2shell-scanner](https://github.com/nxgn-kd01/react2shell-scanner)
 - [clevernyyyy/CVE-2025-55182-Dockerized](https://github.com/clevernyyyy/CVE-2025-55182-Dockerized)
 - [Cillian-Collins/CVE-2025-55182](https://github.com/Cillian-Collins/CVE-2025-55182)
 - [ZihxS/check-react-rce-cve-2025-55182](https://github.com/ZihxS/check-react-rce-cve-2025-55182)
+- [tlfyyds/cve-2025-55182-getshell](https://github.com/tlfyyds/cve-2025-55182-getshell)
+- [ZemarKhos/CVE-2025-55182-Exploit-PoC-Scanner](https://github.com/ZemarKhos/CVE-2025-55182-Exploit-PoC-Scanner)
+- [Darker-Ink/react-ssr-vulnerability](https://github.com/Darker-Ink/react-ssr-vulnerability)
+- [emadshanab/POC-for-CVE-2025-55182](https://github.com/emadshanab/POC-for-CVE-2025-55182)
+- [topstar88/CVE-2025-55182](https://github.com/topstar88/CVE-2025-55182)
+- [selectarget/CVE-2025-55182-Exploit](https://github.com/selectarget/CVE-2025-55182-Exploit)
+- [onlylovetx/CVE-2025-55182-CVE-2025-66478-Exploit-GUI](https://github.com/onlylovetx/CVE-2025-55182-CVE-2025-66478-Exploit-GUI)
+- [pyroxenites/Nextjs_RCE_Exploit_Tool](https://github.com/pyroxenites/Nextjs_RCE_Exploit_Tool)
+- [TH-SecForge/CVE-2025-55182](https://github.com/TH-SecForge/CVE-2025-55182)
+- [Chocapikk/CVE-2025-55182](https://github.com/Chocapikk/CVE-2025-55182)
+- [mrknow001/RSC_Detector](https://github.com/mrknow001/RSC_Detector)
+- [Spritualkb/CVE-2025-55182-exp](https://github.com/Spritualkb/CVE-2025-55182-exp)
 
 ### CVE-2025-55188 (2025-08-08)
 
@@ -8508,6 +8523,7 @@
 - [Ashwesker/Blackash-CVE-2025-64459](https://github.com/Ashwesker/Blackash-CVE-2025-64459)
 - [omarkurt/django-connector-CVE-2025-64459-testbed](https://github.com/omarkurt/django-connector-CVE-2025-64459-testbed)
 - [stanly363/CVE-2025-64459-Poc](https://github.com/stanly363/CVE-2025-64459-Poc)
+- [ZeYrOXxXxXxX/CVE-2025-64459](https://github.com/ZeYrOXxXxXxX/CVE-2025-64459)
 
 ### CVE-2025-64484 (2025-11-10)
 
@@ -11778,6 +11794,13 @@
 </code>
 
 - [Jimmy01240397/CVE-2024-12641_12642_12645](https://github.com/Jimmy01240397/CVE-2024-12641_12642_12645)
+
+### CVE-2024-12828 (2024-12-30)
+
+<code>Webmin CGI Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Webmin. Authentication is required to exploit this vulnerability. \n\nThe specific flaw exists within the handling of CGI requests. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-22346.
+</code>
+
+- [fanjm2025-jeremy/CVE-2024-12828-PoC](https://github.com/fanjm2025-jeremy/CVE-2024-12828-PoC)
 
 ### CVE-2024-12849 (2025-01-07)
 
@@ -15365,6 +15388,7 @@
 - [amoy6228/CVE-2024-36401_Geoserver_RCE_POC](https://github.com/amoy6228/CVE-2024-36401_Geoserver_RCE_POC)
 - [holokitty/Exploit-CVE-2024-36401](https://github.com/holokitty/Exploit-CVE-2024-36401)
 - [URJACK2025/CVE-2024-36401](https://github.com/URJACK2025/CVE-2024-36401)
+- [mantanhacker/CVE-2024-36401-MASS](https://github.com/mantanhacker/CVE-2024-36401-MASS)
 
 ### CVE-2024-36416 (2024-06-10)
 
