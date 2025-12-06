@@ -2223,13 +2223,25 @@
 
 - [d0n601/CVE-2025-12585](https://github.com/d0n601/CVE-2025-12585)
 
-### CVE-2025-12673
+### CVE-2025-12673 (2025-12-06)
+
+<code>The Flex QR Code Generator plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the update_qr_code() function in all versions up to, and including, 1.2.6. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
+</code>
+
 - [d0n601/CVE-2025-12673](https://github.com/d0n601/CVE-2025-12673)
 
-### CVE-2025-12720
+### CVE-2025-12720 (2025-12-06)
+
+<code>The g-FFL Cockpit plugin for WordPress is vulnerable to unauthorized modification of data due to IP-based authorization that can be spoofed in the handle_enqueue_only() function in all versions up to, and including, 1.7.1. This makes it possible for unauthenticated attackers to delete arbitrary products.
+</code>
+
 - [d0n601/CVE-2025-12720](https://github.com/d0n601/CVE-2025-12720)
 
-### CVE-2025-12721
+### CVE-2025-12721 (2025-12-06)
+
+<code>The g-FFL Cockpit plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.7.1 via the /server_status REST API endpoint due to a lack of capability checks. This makes it possible for unauthenticated attackers to extract information about the server.
+</code>
+
 - [d0n601/CVE-2025-12721](https://github.com/d0n601/CVE-2025-12721)
 
 ### CVE-2025-12735 (2025-11-05)
@@ -7071,7 +7083,6 @@
 - [ThemeHackers/CVE-2025-55182](https://github.com/ThemeHackers/CVE-2025-55182)
 - [joshterrill/CVE-2025-55182-realistic-poc](https://github.com/joshterrill/CVE-2025-55182-realistic-poc)
 - [mingyisecurity-lab/CVE-2025-55182-TOOLS](https://github.com/mingyisecurity-lab/CVE-2025-55182-TOOLS)
-- [joaonevess/rust-flight](https://github.com/joaonevess/rust-flight)
 - [gensecaihq/react2shell-scanner](https://github.com/gensecaihq/react2shell-scanner)
 - [sudo-Yangziran/CVE-2025-55182POC](https://github.com/sudo-Yangziran/CVE-2025-55182POC)
 - [Rsatan/CVE-2025-55182-Tools](https://github.com/Rsatan/CVE-2025-55182-Tools)
@@ -7136,6 +7147,7 @@
 - [Airis101/CVE-2025-55182-analysis](https://github.com/Airis101/CVE-2025-55182-analysis)
 - [GelukCrab/React-Server-Components-RCE](https://github.com/GelukCrab/React-Server-Components-RCE)
 - [Golden-Secure/CVE-2025-55182](https://github.com/Golden-Secure/CVE-2025-55182)
+- [grp-ops/react2shell](https://github.com/grp-ops/react2shell)
 - [XiaomingX/CVE-2025-55182-poc](https://github.com/XiaomingX/CVE-2025-55182-poc)
 - [alexandre-briongos-wavestone/react-cve-2025-55182-lab](https://github.com/alexandre-briongos-wavestone/react-cve-2025-55182-lab)
 - [Rat5ak/CVE-2025-55182-React2Shell-RCE-POC](https://github.com/Rat5ak/CVE-2025-55182-React2Shell-RCE-POC)
@@ -7159,8 +7171,11 @@
 - [alsaut1/react2shell-lab](https://github.com/alsaut1/react2shell-lab)
 - [pax-k/react2shell-CVE-2025-55182-full-rce-script](https://github.com/pax-k/react2shell-CVE-2025-55182-full-rce-script)
 - [kOaDT/poc-cve-2025-55182](https://github.com/kOaDT/poc-cve-2025-55182)
+- [mohit121312/CVE-2025-55182_full_exploit](https://github.com/mohit121312/CVE-2025-55182_full_exploit)
 - [StealthMoud/CVE-2025-55182-Scanner](https://github.com/StealthMoud/CVE-2025-55182-Scanner)
 - [yanoshercohen/CVE-2025-55182](https://github.com/yanoshercohen/CVE-2025-55182)
+- [emredavut/CVE-2025-55182](https://github.com/emredavut/CVE-2025-55182)
+- [fankh/CVE-2025-55182-docker-test](https://github.com/fankh/CVE-2025-55182-docker-test)
 
 ### CVE-2025-55188 (2025-08-08)
 
