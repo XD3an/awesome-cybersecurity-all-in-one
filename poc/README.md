@@ -7179,6 +7179,7 @@
 - [StealthMoud/CVE-2025-55182-Scanner](https://github.com/StealthMoud/CVE-2025-55182-Scanner)
 - [yanoshercohen/React2Shell_CVE-2025-55182](https://github.com/yanoshercohen/React2Shell_CVE-2025-55182)
 - [emredavut/CVE-2025-55182](https://github.com/emredavut/CVE-2025-55182)
+- [rapticore/ore_react2shell_scanner](https://github.com/rapticore/ore_react2shell_scanner)
 - [fankh/cve-2025-55182-test-lab-windows](https://github.com/fankh/cve-2025-55182-test-lab-windows)
 - [cypholab/evilact](https://github.com/cypholab/evilact)
 - [shren207/CVE-2025-55182](https://github.com/shren207/CVE-2025-55182)
@@ -7208,13 +7209,19 @@
 - [AdityaBhatt3010/React2Shell-CVE-2025-55182-The-Deserialization-Bug-That-Broke-the-Web](https://github.com/AdityaBhatt3010/React2Shell-CVE-2025-55182-The-Deserialization-Bug-That-Broke-the-Web)
 - [0xN7y/CVE-2025-55182](https://github.com/0xN7y/CVE-2025-55182)
 - [MuhammadWaseem29/React2Shell_Rce-cve-2025-55182](https://github.com/MuhammadWaseem29/React2Shell_Rce-cve-2025-55182)
-- [l0n3m4n/CVE-2025-55182](https://github.com/l0n3m4n/CVE-2025-55182)
+- [l0n3m4n/CVE-2025-55182-Clean](https://github.com/l0n3m4n/CVE-2025-55182-Clean)
 - [ynsmroztas/NextRce](https://github.com/ynsmroztas/NextRce)
 - [shreyas-malhotra/React2Shell-CVE-2025-55182](https://github.com/shreyas-malhotra/React2Shell-CVE-2025-55182)
 - [sohaibeb/CVE-2025-55182](https://github.com/sohaibeb/CVE-2025-55182)
 - [hlsitechio/cve-2025-55182-tools](https://github.com/hlsitechio/cve-2025-55182-tools)
 - [vyvivekyadav04/RSC-Infra-Scanner](https://github.com/vyvivekyadav04/RSC-Infra-Scanner)
 - [MikeTheHash/CVE-2025-55182](https://github.com/MikeTheHash/CVE-2025-55182)
+- [Qixinlee/CVE-2025-55182-Scanner](https://github.com/Qixinlee/CVE-2025-55182-Scanner)
+- [DelvyGonzalez/react2shell-security-toolkit](https://github.com/DelvyGonzalez/react2shell-security-toolkit)
+- [jumodada/react-cve-2025-55182-demo](https://github.com/jumodada/react-cve-2025-55182-demo)
+- [ahmedshamsddin/CVE-2025-55182](https://github.com/ahmedshamsddin/CVE-2025-55182)
+- [LemonTeatw1/CVE-2025-55182-exploit](https://github.com/LemonTeatw1/CVE-2025-55182-exploit)
+- [mil4ne/CVE-2025-55182-React2Shell-](https://github.com/mil4ne/CVE-2025-55182-React2Shell-)
 
 ### CVE-2025-55188 (2025-08-08)
 
@@ -8850,6 +8857,7 @@
 - [namest504/CVE-2025-66478-Exploit-Poc](https://github.com/namest504/CVE-2025-66478-Exploit-Poc)
 - [aiexz/CVE-2025-66478-kinda-waf](https://github.com/aiexz/CVE-2025-66478-kinda-waf)
 - [Rhyru9/CVE-2025-66478](https://github.com/Rhyru9/CVE-2025-66478)
+- [Jibaru/CVE-2025-66478-github-patcher](https://github.com/Jibaru/CVE-2025-66478-github-patcher)
 
 ### CVE-2025-66516 (2025-12-04)
 
@@ -62022,6 +62030,7 @@
 - [Z3R0-0x30/CVE-2014-6287](https://github.com/Z3R0-0x30/CVE-2014-6287)
 - [rahisec/rejetto-http-file-server-2.3.x-RCE-exploit-CVE-2014-6287](https://github.com/rahisec/rejetto-http-file-server-2.3.x-RCE-exploit-CVE-2014-6287)
 - [nika0x38/CVE-2014-6287](https://github.com/nika0x38/CVE-2014-6287)
+- [JoaZ94/rejjeto_hfs-rce-exploit-cve-2014-6287](https://github.com/JoaZ94/rejjeto_hfs-rce-exploit-cve-2014-6287)
 
 ### CVE-2014-6332 (2014-11-11)
 
