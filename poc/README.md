@@ -699,7 +699,7 @@
 <code>A cross-site scripting (XSS) vulnerability exists in Grafana caused by combining a client path traversal and open redirect. This allows attackers to redirect users to a website that hosts a frontend plugin that will execute arbitrary JavaScript. This vulnerability does not require editor permissions and if anonymous access is enabled, the XSS will work. If the Grafana Image Renderer plugin is installed, it is possible to exploit the open redirect to achieve a full read SSRF.\n\nThe default Content-Security-Policy (CSP) in Grafana will block the XSS though the `connect-src` directive.
 </code>
 
-- [NightBloodz/CVE-2025-4123](https://github.com/NightBloodz/CVE-2025-4123)
+- [NightBlood0/CVE-2025-4123](https://github.com/NightBlood0/CVE-2025-4123)
 - [kk12-30/CVE-2025-4123](https://github.com/kk12-30/CVE-2025-4123)
 - [imbas007/CVE-2025-4123-template](https://github.com/imbas007/CVE-2025-4123-template)
 - [ynsmroztas/CVE-2025-4123-Exploit-Tool-Grafana-](https://github.com/ynsmroztas/CVE-2025-4123-Exploit-Tool-Grafana-)
@@ -1751,6 +1751,7 @@
 - [j3r1ch0123/CVE-2025-9074](https://github.com/j3r1ch0123/CVE-2025-9074)
 - [pucagit/CVE-2025-9074](https://github.com/pucagit/CVE-2025-9074)
 - [OilSeller2001/PoC-for-CVE-2025-9074](https://github.com/OilSeller2001/PoC-for-CVE-2025-9074)
+- [BridgerAlderson/CVE-2025-9074-PoC](https://github.com/BridgerAlderson/CVE-2025-9074-PoC)
 
 ### CVE-2025-9090 (2025-08-17)
 
@@ -2360,6 +2361,7 @@
 - [0xanis/CVE-2025-13486-POC](https://github.com/0xanis/CVE-2025-13486-POC)
 - [KrE80r/cve-2025-13486-vuln-setup](https://github.com/KrE80r/cve-2025-13486-vuln-setup)
 - [MataKucing-OFC/CVE-2025-13486](https://github.com/MataKucing-OFC/CVE-2025-13486)
+- [0xgh057r3c0n/CVE-2025-13486](https://github.com/0xgh057r3c0n/CVE-2025-13486)
 
 ### CVE-2025-13595 (2025-11-25)
 
@@ -3534,7 +3536,6 @@
 <code>Description information displayed in the site administration live log \nrequired additional sanitizing to prevent a stored XSS risk.
 </code>
 
-- [NightBloodz/moodleTestingEnv](https://github.com/NightBloodz/moodleTestingEnv)
 - [Astroo18/PoC-CVE-2025-26529](https://github.com/Astroo18/PoC-CVE-2025-26529)
 
 ### CVE-2025-26633 (2025-03-11)
@@ -6890,6 +6891,7 @@
 - [foregenix/CVE-2025-54309](https://github.com/foregenix/CVE-2025-54309)
 - [whisperer1290/CVE-2025-54309__Enhanced_exploit](https://github.com/whisperer1290/CVE-2025-54309__Enhanced_exploit)
 - [chin-tech/CrushFTP_CVE-2025-54309](https://github.com/chin-tech/CrushFTP_CVE-2025-54309)
+- [Smileyface101/CrushFTP-AS2-Bypass-Research-CVE-2025-54309](https://github.com/Smileyface101/CrushFTP-AS2-Bypass-Research-CVE-2025-54309)
 
 ### CVE-2025-54313 (2025-07-19)
 
@@ -7106,6 +7108,7 @@
 - [shamo0/react2shell-PoC](https://github.com/shamo0/react2shell-PoC)
 - [EynaExp/CVE-2025-55182-POC](https://github.com/EynaExp/CVE-2025-55182-POC)
 - [im-hanzou/CVE-2025-55182-POC-SCANNER](https://github.com/im-hanzou/CVE-2025-55182-POC-SCANNER)
+- [klassiker/CVE-2025-55182](https://github.com/klassiker/CVE-2025-55182)
 - [MrR0b0t19/CVE-2025-55182-shellinteractive](https://github.com/MrR0b0t19/CVE-2025-55182-shellinteractive)
 - [ps-interactive/cve-2025-55182](https://github.com/ps-interactive/cve-2025-55182)
 - [tobiasGuta/Next.js-RSC-RCE-Scanner-Burp-Suite-Extension](https://github.com/tobiasGuta/Next.js-RSC-RCE-Scanner-Burp-Suite-Extension)
@@ -7163,19 +7166,55 @@
 - [f0xyx/CVE-2025-55182-Scanner](https://github.com/f0xyx/CVE-2025-55182-Scanner)
 - [Cr4at0r/Next.js-RCE-Scanner-BurpSuite-Extension-](https://github.com/Cr4at0r/Next.js-RCE-Scanner-BurpSuite-Extension-)
 - [ceortiz33/CVE-2025-55182](https://github.com/ceortiz33/CVE-2025-55182)
-- [sh1ro8/react2shell](https://github.com/sh1ro8/react2shell)
+- [xkey8/react2shell](https://github.com/xkey8/react2shell)
 - [zessu/CVE-2025-55182-Typescript](https://github.com/zessu/CVE-2025-55182-Typescript)
 - [mxm0z/r2s](https://github.com/mxm0z/r2s)
 - [NathanJ60/react2shell-interactive](https://github.com/NathanJ60/react2shell-interactive)
 - [GarethMSheldon/React2Shell-CVE-2025-55182-Detector](https://github.com/GarethMSheldon/React2Shell-CVE-2025-55182-Detector)
+- [kindone09/CVE-2025-55182](https://github.com/kindone09/CVE-2025-55182)
 - [alsaut1/react2shell-lab](https://github.com/alsaut1/react2shell-lab)
 - [pax-k/react2shell-CVE-2025-55182-full-rce-script](https://github.com/pax-k/react2shell-CVE-2025-55182-full-rce-script)
 - [kOaDT/poc-cve-2025-55182](https://github.com/kOaDT/poc-cve-2025-55182)
 - [mohit121312/CVE-2025-55182_full_exploit](https://github.com/mohit121312/CVE-2025-55182_full_exploit)
 - [StealthMoud/CVE-2025-55182-Scanner](https://github.com/StealthMoud/CVE-2025-55182-Scanner)
-- [yanoshercohen/CVE-2025-55182](https://github.com/yanoshercohen/CVE-2025-55182)
+- [yanoshercohen/React2Shell_CVE-2025-55182](https://github.com/yanoshercohen/React2Shell_CVE-2025-55182)
 - [emredavut/CVE-2025-55182](https://github.com/emredavut/CVE-2025-55182)
-- [fankh/CVE-2025-55182-docker-test](https://github.com/fankh/CVE-2025-55182-docker-test)
+- [fankh/cve-2025-55182-test-lab-windows](https://github.com/fankh/cve-2025-55182-test-lab-windows)
+- [cypholab/evilact](https://github.com/cypholab/evilact)
+- [shren207/CVE-2025-55182](https://github.com/shren207/CVE-2025-55182)
+- [sumanrox/rschunter](https://github.com/sumanrox/rschunter)
+- [ayoub-intigriti/react2shell-cve](https://github.com/ayoub-intigriti/react2shell-cve)
+- [zorejt/Rust_CVE-2025-55182](https://github.com/zorejt/Rust_CVE-2025-55182)
+- [StillSoul/CVE-2025-55182](https://github.com/StillSoul/CVE-2025-55182)
+- [MaxK9999/CVE-2025-55182](https://github.com/MaxK9999/CVE-2025-55182)
+- [Archerkong/CVE-2025-55182](https://github.com/Archerkong/CVE-2025-55182)
+- [philparzer/nextjs-react2shell-detect](https://github.com/philparzer/nextjs-react2shell-detect)
+- [Kryptopacy/Next.js-RCE-Patcher--CVE-2025-55182-](https://github.com/Kryptopacy/Next.js-RCE-Patcher--CVE-2025-55182-)
+- [yunaranyancat/CVE-2025-55182-NSE](https://github.com/yunaranyancat/CVE-2025-55182-NSE)
+- [MrSol0/CVE-2025-55182-Terminal](https://github.com/MrSol0/CVE-2025-55182-Terminal)
+- [fullhunt/react2shell-test-server](https://github.com/fullhunt/react2shell-test-server)
+- [zack0x01/vuln-app-CVE-2025-55182](https://github.com/zack0x01/vuln-app-CVE-2025-55182)
+- [zack0x01/CVE-2025-55182-advanced-scanner-](https://github.com/zack0x01/CVE-2025-55182-advanced-scanner-)
+- [rocklambros/React2Shell_Hunter](https://github.com/rocklambros/React2Shell_Hunter)
+- [alessiodos/react2shell-scanner](https://github.com/alessiodos/react2shell-scanner)
+- [Bashamega/react-CVE-2025-55182-fixer](https://github.com/Bashamega/react-CVE-2025-55182-fixer)
+- [orgito1015/CVE-2025-55182-RCE-Exploit](https://github.com/orgito1015/CVE-2025-55182-RCE-Exploit)
+- [keklick1337/CVE-2025-55182-golang-PoC](https://github.com/keklick1337/CVE-2025-55182-golang-PoC)
+- [rubensuxo-eh/react2shell-exploit](https://github.com/rubensuxo-eh/react2shell-exploit)
+- [CirqueiraDev/MassExploit-CVE-2025-55182](https://github.com/CirqueiraDev/MassExploit-CVE-2025-55182)
+- [w3irdo21/CVE-2025-55182-react2shell](https://github.com/w3irdo21/CVE-2025-55182-react2shell)
+- [Hghost0x00/CVE-2025-55182](https://github.com/Hghost0x00/CVE-2025-55182)
+- [zamdevio/r2s](https://github.com/zamdevio/r2s)
+- [AdityaBhatt3010/React2Shell-CVE-2025-55182-The-Deserialization-Bug-That-Broke-the-Web](https://github.com/AdityaBhatt3010/React2Shell-CVE-2025-55182-The-Deserialization-Bug-That-Broke-the-Web)
+- [0xN7y/CVE-2025-55182](https://github.com/0xN7y/CVE-2025-55182)
+- [MuhammadWaseem29/React2Shell_Rce-cve-2025-55182](https://github.com/MuhammadWaseem29/React2Shell_Rce-cve-2025-55182)
+- [l0n3m4n/CVE-2025-55182](https://github.com/l0n3m4n/CVE-2025-55182)
+- [ynsmroztas/NextRce](https://github.com/ynsmroztas/NextRce)
+- [shreyas-malhotra/React2Shell-CVE-2025-55182](https://github.com/shreyas-malhotra/React2Shell-CVE-2025-55182)
+- [sohaibeb/CVE-2025-55182](https://github.com/sohaibeb/CVE-2025-55182)
+- [hlsitechio/cve-2025-55182-tools](https://github.com/hlsitechio/cve-2025-55182-tools)
+- [vyvivekyadav04/RSC-Infra-Scanner](https://github.com/vyvivekyadav04/RSC-Infra-Scanner)
+- [MikeTheHash/CVE-2025-55182](https://github.com/MikeTheHash/CVE-2025-55182)
 
 ### CVE-2025-55188 (2025-08-08)
 
@@ -7184,6 +7223,13 @@
 
 - [hunters-sec/CVE-2025-55188-7z-exploit](https://github.com/hunters-sec/CVE-2025-55188-7z-exploit)
 - [lunbun/CVE-2025-55188](https://github.com/lunbun/CVE-2025-55188)
+
+### CVE-2025-55226 (2025-09-09)
+
+<code>Concurrent execution using shared resource with improper synchronization ('race condition') in Graphics Kernel allows an authorized attacker to execute code locally.
+</code>
+
+- [Network-Sec/CVE-2025-55226-Corrected-Patch-Check](https://github.com/Network-Sec/CVE-2025-55226-Corrected-Patch-Check)
 
 ### CVE-2025-55234 (2025-09-09)
 
@@ -7833,6 +7879,7 @@
 - [Twodimensionalitylevelcrossing817/CVE-2025-59287](https://github.com/Twodimensionalitylevelcrossing817/CVE-2025-59287)
 - [M507/CVE-2025-59287-PoC](https://github.com/M507/CVE-2025-59287-PoC)
 - [Adel-kaka-dz/cve-2025-59287](https://github.com/Adel-kaka-dz/cve-2025-59287)
+- [17patmaks/CVE-2025-59287-Sigma-Rule](https://github.com/17patmaks/CVE-2025-59287-Sigma-Rule)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -8668,6 +8715,9 @@
 
 - [Neo-Neo6/CVE-2025-65018-Heap-buffer-overflow-in-libpng-ps4-ps5-](https://github.com/Neo-Neo6/CVE-2025-65018-Heap-buffer-overflow-in-libpng-ps4-ps5-)
 
+### CVE-2025-65300
+- [garux-sec/CVE-2025-65300](https://github.com/garux-sec/CVE-2025-65300)
+
 ### CVE-2025-65320 (2025-12-03)
 
 <code>Abacre Restaurant Point of Sale (POS) up to 15.0.0.1656 are vulnerable to Cleartext Storage of Sensitive Information in Memory. The application leaves valid device-bound license keys in process memory during an activation attempt.
@@ -8796,6 +8846,17 @@
 - [mattcbarrett/check-cve-2025-66478](https://github.com/mattcbarrett/check-cve-2025-66478)
 - [imbas007/POC-CVE-2025-66478](https://github.com/imbas007/POC-CVE-2025-66478)
 - [hackersatyamrastogi/react2shell-ultimate](https://github.com/hackersatyamrastogi/react2shell-ultimate)
+- [vercel-labs/fix-react2shell-next](https://github.com/vercel-labs/fix-react2shell-next)
+- [namest504/CVE-2025-66478-Exploit-Poc](https://github.com/namest504/CVE-2025-66478-Exploit-Poc)
+- [aiexz/CVE-2025-66478-kinda-waf](https://github.com/aiexz/CVE-2025-66478-kinda-waf)
+- [Rhyru9/CVE-2025-66478](https://github.com/Rhyru9/CVE-2025-66478)
+
+### CVE-2025-66516 (2025-12-04)
+
+<code>Critical XXE in Apache Tika tika-core (1.13-3.2.1), tika-pdf-module (2.0.0-3.2.1) and tika-parsers (1.13-1.28.5) modules on all platforms allows an attacker to carry out XML External Entity injection via a crafted XFA file inside of a PDF. \n\nThis CVE covers the same vulnerability as in CVE-2025-54988. However, this CVE expands the scope of affected packages in two ways. \n\nFirst, while the entrypoint for the vulnerability was the tika-parser-pdf-module as reported in CVE-2025-54988, the vulnerability and its fix were in tika-core. Users who upgraded the tika-parser-pdf-module but did not upgrade tika-core to &gt;= 3.2.2 would still be vulnerable. \n\nSecond, the original report failed to mention that in the 1.x Tika releases, the PDFParser was in the &quot;org.apache.tika:tika-parsers&quot; module.
+</code>
+
+- [B1gh0rnn/CVE-2025-66516](https://github.com/B1gh0rnn/CVE-2025-66516)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -14105,6 +14166,7 @@
 - [D3ltaFormation/CVE-2024-28397-Js2Py-RCE](https://github.com/D3ltaFormation/CVE-2024-28397-Js2Py-RCE)
 - [vitaciminIPI/CVE-2024-28397-RCE](https://github.com/vitaciminIPI/CVE-2024-28397-RCE)
 - [0xPadme/CVE-2024-28397-Reverse-Shell](https://github.com/0xPadme/CVE-2024-28397-Reverse-Shell)
+- [L1337Xi/CVE-2024-28397-Exploit-Automation](https://github.com/L1337Xi/CVE-2024-28397-Exploit-Automation)
 
 ### CVE-2024-28515 (2024-04-03)
 
@@ -35707,6 +35769,13 @@
 
 - [Einstein2150/CVE-2022-48565-POC](https://github.com/Einstein2150/CVE-2022-48565-POC)
 
+### CVE-2022-49186 (2025-02-26)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nclk: visconti: prevent array overflow in visconti_clk_register_gates()\n\nThis code was using -1 to represent that there was no reset function.\nUnfortunately, the -1 was stored in u8 so the if (clks[i].rs_id &gt;= 0)\ncondition was always true.  This lead to an out of bounds access in\nvisconti_clk_register_gates().
+</code>
+
+- [iamdarshana/cve-2022-49186-research](https://github.com/iamdarshana/cve-2022-49186-research)
+
 ### CVE-2022-218882
 - [Sausageinforest/CVE-2022-218882](https://github.com/Sausageinforest/CVE-2022-218882)
 
@@ -39455,6 +39524,13 @@
 - [bhdresh/CVE-2021-33766](https://github.com/bhdresh/CVE-2021-33766)
 - [demossl/CVE-2021-33766-ProxyToken](https://github.com/demossl/CVE-2021-33766-ProxyToken)
 
+### CVE-2021-33813 (2021-06-16)
+
+<code>An XXE issue in SAXBuilder in JDOM through 2.0.6 allows attackers to cause a denial of service via a crafted HTTP request.
+</code>
+
+- [aalsanie/zap-api-java](https://github.com/aalsanie/zap-api-java)
+
 ### CVE-2021-33831 (2021-09-07)
 
 <code>api/account/register in the TH Wildau COVID-19 Contact Tracing application through 2021-09-01 has Incorrect Access Control. An attacker can interfere with tracing of infection chains by creating 500 random users within 2500 seconds.
@@ -41543,7 +41619,6 @@
 - [k3rwin/CVE-2021-43798-Grafana](https://github.com/k3rwin/CVE-2021-43798-Grafana)
 - [halencarjunior/grafana-CVE-2021-43798](https://github.com/halencarjunior/grafana-CVE-2021-43798)
 - [Jroo1053/GrafanaDirInclusion](https://github.com/Jroo1053/GrafanaDirInclusion)
-- [yasindce1998/grafana-cve-2021-43798](https://github.com/yasindce1998/grafana-cve-2021-43798)
 - [hupe1980/CVE-2021-43798](https://github.com/hupe1980/CVE-2021-43798)
 - [G01d3nW01f/CVE-2021-43798](https://github.com/G01d3nW01f/CVE-2021-43798)
 - [mauricelambert/LabAutomationCVE-2021-43798](https://github.com/mauricelambert/LabAutomationCVE-2021-43798)
@@ -43497,6 +43572,7 @@
 - [tdevworks/CVE-2020-1472-ZeroLogon-Demo-Detection-Mitigation](https://github.com/tdevworks/CVE-2020-1472-ZeroLogon-Demo-Detection-Mitigation)
 - [100HnoMeuNome/ZeroLogon-CVE-2020-1472-lab](https://github.com/100HnoMeuNome/ZeroLogon-CVE-2020-1472-lab)
 - [nyambiblaise/Domain-Controller-DC-Exploitation-with-Metasploit-Impacket](https://github.com/nyambiblaise/Domain-Controller-DC-Exploitation-with-Metasploit-Impacket)
+- [mods20hh/ZeroLogon-PoC-DC-Pwn](https://github.com/mods20hh/ZeroLogon-PoC-DC-Pwn)
 
 ### CVE-2020-1493 (2020-08-17)
 
@@ -45788,6 +45864,13 @@
 </code>
 
 - [Dilshan-Eranda/CVE-2020-13699](https://github.com/Dilshan-Eranda/CVE-2020-13699)
+
+### CVE-2020-13756 (2020-06-03)
+
+<code>Sabberworm PHP CSS Parser before 8.3.1 calls eval on uncontrolled data, possibly leading to remote code execution if the function allSelectors() or getSelectorsBySpecificity() is called with input from an attacker.
+</code>
+
+- [KrE80r/CVE-2020-13756-env](https://github.com/KrE80r/CVE-2020-13756-env)
 
 ### CVE-2020-13777 (2020-06-04)
 
@@ -48519,6 +48602,7 @@
 - [lazaars/UltraRealy_with_CVE-2019-1040](https://github.com/lazaars/UltraRealy_with_CVE-2019-1040)
 - [fox-it/cve-2019-1040-scanner](https://github.com/fox-it/cve-2019-1040-scanner)
 - [QAX-A-Team/dcpwn](https://github.com/QAX-A-Team/dcpwn)
+- [JonyFilc/PrintSpoofer-ReflectiveDLL](https://github.com/JonyFilc/PrintSpoofer-ReflectiveDLL)
 
 ### CVE-2019-1064 (2019-06-12)
 
@@ -52841,6 +52925,7 @@
 </code>
 
 - [JJSO12/Apache-Pluto-3.0.0--CVE-2018-1306](https://github.com/JJSO12/Apache-Pluto-3.0.0--CVE-2018-1306)
+- [Imsol0/APACHE-CVE-2018-1306-Lab-project](https://github.com/Imsol0/APACHE-CVE-2018-1306-Lab-project)
 
 ### CVE-2018-1311 (2019-12-18)
 
@@ -61918,6 +62003,7 @@
 - [rsherstnev/CVE-2014-6271](https://github.com/rsherstnev/CVE-2014-6271)
 - [RAJMadhusankha/Shellshock-CVE-2014-6271-Exploitation-and-Analysis](https://github.com/RAJMadhusankha/Shellshock-CVE-2014-6271-Exploitation-and-Analysis)
 - [DrHaitham/CVE-2014-6271-Shellshock-](https://github.com/DrHaitham/CVE-2014-6271-Shellshock-)
+- [mtaha-sec/bash-apocalypse](https://github.com/mtaha-sec/bash-apocalypse)
 
 ### CVE-2014-6287 (2014-10-07)
 
