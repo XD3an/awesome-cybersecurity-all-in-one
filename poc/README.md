@@ -1084,7 +1084,7 @@
 <code>Es wurde eine kritische Schwachstelle in SourceCodester Open Source Clinic Management System 1.0 ausgemacht. Dabei betrifft es einen unbekannter Codeteil der Datei /email_config.php. Durch das Beeinflussen des Arguments email mit unbekannten Daten kann eine sql injection-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei über das Netzwerk erfolgen. Der Exploit steht zur öffentlichen Verfügung.
 </code>
 
-- [cyberajju/cve-2025-5755](https://github.com/cyberajju/cve-2025-5755)
+- [cybertechajju/cve-2025-5755](https://github.com/cybertechajju/cve-2025-5755)
 
 ### CVE-2025-5777 (2025-06-17)
 
@@ -1728,6 +1728,13 @@
 
 - [siberkampus/CVE-2025-8889](https://github.com/siberkampus/CVE-2025-8889)
 
+### CVE-2025-8924 (2025-08-13)
+
+<code>Betroffen davon ist ein unbekannter Prozess der Datei /viewbill.php. Durch die Manipulation des Arguments ID mit unbekannten Daten kann eine sql injection-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei über das Netzwerk erfolgen. Der Exploit steht zur öffentlichen Verfügung.
+</code>
+
+- [encrypter15/CVE-2025-8924](https://github.com/encrypter15/CVE-2025-8924)
+
 ### CVE-2025-8943 (2025-08-14)
 
 <code>The Custom MCPs feature is designed to execute OS commands, for instance, using tools like `npx` to spin up local MCP Servers. However, Flowise's inherent authentication and authorization model is minimal and lacks role-based access controls (RBAC). Furthermore, in Flowise versions before 3.0.1 the default installation operates without authentication unless explicitly configured. This combination allows unauthenticated network attackers to execute unsandboxed OS commands.
@@ -1752,6 +1759,7 @@
 - [pucagit/CVE-2025-9074](https://github.com/pucagit/CVE-2025-9074)
 - [OilSeller2001/PoC-for-CVE-2025-9074](https://github.com/OilSeller2001/PoC-for-CVE-2025-9074)
 - [BridgerAlderson/CVE-2025-9074-PoC](https://github.com/BridgerAlderson/CVE-2025-9074-PoC)
+- [xwpdx0/poc-2025-9074](https://github.com/xwpdx0/poc-2025-9074)
 
 ### CVE-2025-9090 (2025-08-17)
 
@@ -2363,6 +2371,13 @@
 - [MataKucing-OFC/CVE-2025-13486](https://github.com/MataKucing-OFC/CVE-2025-13486)
 - [0xgh057r3c0n/CVE-2025-13486](https://github.com/0xgh057r3c0n/CVE-2025-13486)
 
+### CVE-2025-13543 (2025-12-04)
+
+<code>The PostGallery plugin for WordPress is vulnerable to arbitrary file uploads due to incorrect file type validation in the 'PostGalleryUploader' class functions in all versions up to, and including, 1.12.5. This makes it possible for authenticated attackers, with subscriber-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible.
+</code>
+
+- [MooseLoveti/PostGallery-CVE-Report](https://github.com/MooseLoveti/PostGallery-CVE-Report)
+
 ### CVE-2025-13595 (2025-11-25)
 
 <code>The CIBELES AI plugin for WordPress is vulnerable to arbitrary file uploads due to missing capability check in the 'actualizador_git.php' file in all versions up to, and including, 1.10.8. This makes it possible for unauthenticated attackers to download arbitrary GitHub repositories and overwrite plugin files on the affected site's server which may make remote code execution possible.
@@ -2460,6 +2475,13 @@
 </code>
 
 - [Ashwesker/Blackash-CVE-2025-20354](https://github.com/Ashwesker/Blackash-CVE-2025-20354)
+
+### CVE-2025-20384 (2025-12-03)
+
+<code>In Splunk Enterprise versions below 10.0.1, 9.4.6, 9.3.8, and 9.2.10, and Splunk Cloud Platform versions below 10.1.2507.4, 10.0.2503.6, and 9.3.2411.117.125, an unauthenticated attacker can inject American National Standards Institute (ANSI) escape codes into Splunk log files due to improper validation at the /en-US/static/ web endpoint. This may allow them to poison, forge, or obfuscate sensitive log data through specially crafted HTTP requests, potentially impacting log integrity and detection capabilities.
+</code>
+
+- [Axselll/CVE-2025-20384](https://github.com/Axselll/CVE-2025-20384)
 
 ### CVE-2025-21042 (2025-09-12)
 
@@ -4104,6 +4126,7 @@
 - [NS-Projects-Unina/CTF_CVE_DSP_1](https://github.com/NS-Projects-Unina/CTF_CVE_DSP_1)
 - [lucaschanzx/CVE-2025-29927-PoC](https://github.com/lucaschanzx/CVE-2025-29927-PoC)
 - [liamromanis101/CVE-2025-29927-NextJS](https://github.com/liamromanis101/CVE-2025-29927-NextJS)
+- [radzek15/CVE-2025-29927-Next.js-middleware](https://github.com/radzek15/CVE-2025-29927-Next.js-middleware)
 
 ### CVE-2025-29972 (2025-05-08)
 
@@ -4688,7 +4711,7 @@
 - [ricardomaia/CVE-2025-32463](https://github.com/ricardomaia/CVE-2025-32463)
 - [shazed-x/CVE-2025-32463](https://github.com/shazed-x/CVE-2025-32463)
 - [cybershaolin47/CVE-2025-32463_POC](https://github.com/cybershaolin47/CVE-2025-32463_POC)
-- [cyberajju/CVE-2025-32463](https://github.com/cyberajju/CVE-2025-32463)
+- [cybertechajju/CVE-2025-32463](https://github.com/cybertechajju/CVE-2025-32463)
 - [dr4x-c0d3r/sudo-chroot](https://github.com/dr4x-c0d3r/sudo-chroot)
 - [dr4xp/sudo-chroot](https://github.com/dr4xp/sudo-chroot)
 - [robbin0919/CVE-2025-32463](https://github.com/robbin0919/CVE-2025-32463)
@@ -6143,6 +6166,13 @@
 - [rubenformation/CVE-2025-50154](https://github.com/rubenformation/CVE-2025-50154)
 - [Ash1996x/CVE-2025-50154-Aggressor-Script](https://github.com/Ash1996x/CVE-2025-50154-Aggressor-Script)
 
+### CVE-2025-50165 (2025-08-12)
+
+<code>Untrusted pointer dereference in Microsoft Graphics Component allows an unauthorized attacker to execute code over a network.
+</code>
+
+- [encrypter15/CVE-2025-50165-x64-Exploit](https://github.com/encrypter15/CVE-2025-50165-x64-Exploit)
+
 ### CVE-2025-50168 (2025-08-12)
 
 <code>Access of resource using incompatible type ('type confusion') in Windows Win32K - ICOMP allows an authorized attacker to elevate privileges locally.
@@ -7067,6 +7097,7 @@
 <code>A pre-authentication remote code execution vulnerability exists in React Server Components versions 19.0.0, 19.1.0, 19.1.1, and 19.2.0 including the following packages: react-server-dom-parcel, react-server-dom-turbopack, and react-server-dom-webpack. The vulnerable code unsafely deserializes payloads from HTTP requests to Server Function endpoints.
 </code>
 
+- [Pantheon-Security/medusa](https://github.com/Pantheon-Security/medusa)
 - [BankkRoll/Quickcheck-CVE-2025-55182-React-and-CVE-2025-66478-Next.js](https://github.com/BankkRoll/Quickcheck-CVE-2025-55182-React-and-CVE-2025-66478-Next.js)
 - [ejpir/CVE-2025-55182-research](https://github.com/ejpir/CVE-2025-55182-research)
 - [sickwell/CVE-2025-55182](https://github.com/sickwell/CVE-2025-55182)
@@ -7222,6 +7253,30 @@
 - [ahmedshamsddin/CVE-2025-55182](https://github.com/ahmedshamsddin/CVE-2025-55182)
 - [LemonTeatw1/CVE-2025-55182-exploit](https://github.com/LemonTeatw1/CVE-2025-55182-exploit)
 - [mil4ne/CVE-2025-55182-React2Shell-](https://github.com/mil4ne/CVE-2025-55182-React2Shell-)
+- [ethicalrohitt/React2Shell_cve-2025-55182](https://github.com/ethicalrohitt/React2Shell_cve-2025-55182)
+- [ihhgimhana/React2Shell-CVE-2025-55182-PoC-Reverse-Shell](https://github.com/ihhgimhana/React2Shell-CVE-2025-55182-PoC-Reverse-Shell)
+- [shakilkhatri/scanner-for-CVE-2025-55182-vulnerability](https://github.com/shakilkhatri/scanner-for-CVE-2025-55182-vulnerability)
+- [UmmItKin/CVE-2025-55182-PoC](https://github.com/UmmItKin/CVE-2025-55182-PoC)
+- [robbin0919/CVE-2025-55182](https://github.com/robbin0919/CVE-2025-55182)
+- [zxz3650/CVE-2025-55182-POC](https://github.com/zxz3650/CVE-2025-55182-POC)
+- [AliHzSec/CVE-2025-55182](https://github.com/AliHzSec/CVE-2025-55182)
+- [zr0n/react2shell](https://github.com/zr0n/react2shell)
+- [hunter24x24/CVE-2025-55182-mass](https://github.com/hunter24x24/CVE-2025-55182-mass)
+- [andressuarezmonk/CVE-2025-55182](https://github.com/andressuarezmonk/CVE-2025-55182)
+- [cybertechajju/R2C-CVE-2025-55182-66478](https://github.com/cybertechajju/R2C-CVE-2025-55182-66478)
+- [Dh4v4l8/CVE-2025-55182-poc-tool](https://github.com/Dh4v4l8/CVE-2025-55182-poc-tool)
+- [M4xSec/CVE-2025-55182-React2Shell-RCE-Shell](https://github.com/M4xSec/CVE-2025-55182-React2Shell-RCE-Shell)
+- [SainiONHacks/CVE-2025-55182-Scanner](https://github.com/SainiONHacks/CVE-2025-55182-Scanner)
+- [umairahmadh/react-vuln-scanner](https://github.com/umairahmadh/react-vuln-scanner)
+- [ToritoIO/Torito-R2S](https://github.com/ToritoIO/Torito-R2S)
+- [surajhacx/react2shellpoc](https://github.com/surajhacx/react2shellpoc)
+- [kavienanj/CVE-2025-55182](https://github.com/kavienanj/CVE-2025-55182)
+- [websecuritylabs/React2Shell-Library](https://github.com/websecuritylabs/React2Shell-Library)
+- [cyberleelawat/CVE-2025-55182](https://github.com/cyberleelawat/CVE-2025-55182)
+- [satriarizka/CVE-2025-55182-Simple-Scanner](https://github.com/satriarizka/CVE-2025-55182-Simple-Scanner)
+- [xcanwin/CVE-2025-55182-React-RCE](https://github.com/xcanwin/CVE-2025-55182-React-RCE)
+- [CharlesTheGreat77/CVE-2025-55182-Test-Server](https://github.com/CharlesTheGreat77/CVE-2025-55182-Test-Server)
+- [ihsansencan/React2Shell-CVE-2025-55182](https://github.com/ihsansencan/React2Shell-CVE-2025-55182)
 
 ### CVE-2025-55188 (2025-08-08)
 
@@ -7767,6 +7822,7 @@
 
 - [rxerium/CVE-2025-57819](https://github.com/rxerium/CVE-2025-57819)
 - [Sucuri-Labs/CVE-2025-57819-ioc-check](https://github.com/Sucuri-Labs/CVE-2025-57819-ioc-check)
+- [cybertechajju/cve-2025-57819](https://github.com/cybertechajju/cve-2025-57819)
 - [brokendreamsclub/CVE-2025-57819](https://github.com/brokendreamsclub/CVE-2025-57819)
 - [net-hex/CVE-2025-57819](https://github.com/net-hex/CVE-2025-57819)
 - [ImBIOS/lab-cve-2025-57819](https://github.com/ImBIOS/lab-cve-2025-57819)
@@ -8132,6 +8188,13 @@
 </code>
 
 - [valeriocassoni/CSV-Injection-in-Instant-Developer-Foundation-25.0-PoC](https://github.com/valeriocassoni/CSV-Injection-in-Instant-Developer-Foundation-25.0-PoC)
+
+### CVE-2025-60854 (2025-12-02)
+
+<code>A vulnerability has been found in D-Link R15 (AX1500) 1.20.01 and below. By manipulating the model name parameter during a password change request in the web administrator page, it is possible to trigger a command injection in httpd.
+</code>
+
+- [K0n9-log/CVE-2025-60854](https://github.com/K0n9-log/CVE-2025-60854)
 
 ### CVE-2025-60880 (2025-10-10)
 
@@ -8721,6 +8784,9 @@
 </code>
 
 - [Neo-Neo6/CVE-2025-65018-Heap-buffer-overflow-in-libpng-ps4-ps5-](https://github.com/Neo-Neo6/CVE-2025-65018-Heap-buffer-overflow-in-libpng-ps4-ps5-)
+
+### CVE-2025-65271
+- [1337Skid/CVE-2025-65271](https://github.com/1337Skid/CVE-2025-65271)
 
 ### CVE-2025-65300
 - [garux-sec/CVE-2025-65300](https://github.com/garux-sec/CVE-2025-65300)
@@ -23436,6 +23502,7 @@
 - [AdityaBhatt3010/TryHackMe-Room-Walkthrough-Billing](https://github.com/AdityaBhatt3010/TryHackMe-Room-Walkthrough-Billing)
 - [abdullohqurbon0v/CVE-2023-30258-Exploit-For-Magnus-Billing-System](https://github.com/abdullohqurbon0v/CVE-2023-30258-Exploit-For-Magnus-Billing-System)
 - [CankunWang/Tryhackme_Billing](https://github.com/CankunWang/Tryhackme_Billing)
+- [kayl22/magnus_billing_7.3.0_RCE_CVE-2023-30258](https://github.com/kayl22/magnus_billing_7.3.0_RCE_CVE-2023-30258)
 
 ### CVE-2023-30347 (2023-06-22)
 
@@ -28379,7 +28446,6 @@
 - [GroundCTL2MajorTom/CVE-2023-51385POC](https://github.com/GroundCTL2MajorTom/CVE-2023-51385POC)
 - [GroundCTL2MajorTom/CVE-2023-51385P-POC](https://github.com/GroundCTL2MajorTom/CVE-2023-51385P-POC)
 - [saarcastified/CVE-2023-51385---OpenSSH-ProxyCommand-Injection-PoC](https://github.com/saarcastified/CVE-2023-51385---OpenSSH-ProxyCommand-Injection-PoC)
-- [runooovb/CVE-2023-51385test](https://github.com/runooovb/CVE-2023-51385test)
 
 ### CVE-2023-51409 (2024-04-12)
 
@@ -33437,7 +33503,7 @@
 <code>The issue was addressed with improved memory handling. This issue is fixed in iOS 16.1 and iPadOS 16, macOS Ventura 13, watchOS 9.1. An app may be able to execute arbitrary code with kernel privileges.
 </code>
 
-- [asahilina/agx-exploit](https://github.com/asahilina/agx-exploit)
+- [hoshinolina/agx-exploit](https://github.com/hoshinolina/agx-exploit)
 
 ### CVE-2022-32981 (2022-06-10)
 
@@ -43581,6 +43647,7 @@
 - [100HnoMeuNome/ZeroLogon-CVE-2020-1472-lab](https://github.com/100HnoMeuNome/ZeroLogon-CVE-2020-1472-lab)
 - [nyambiblaise/Domain-Controller-DC-Exploitation-with-Metasploit-Impacket](https://github.com/nyambiblaise/Domain-Controller-DC-Exploitation-with-Metasploit-Impacket)
 - [mods20hh/ZeroLogon-PoC-DC-Pwn](https://github.com/mods20hh/ZeroLogon-PoC-DC-Pwn)
+- [commit2main/zerologon-lab](https://github.com/commit2main/zerologon-lab)
 
 ### CVE-2020-1493 (2020-08-17)
 
@@ -63942,6 +64009,7 @@
 </code>
 
 - [0x1sac/ClamAV-Milter-Sendmail-0.91.2-Remote-Code-Execution](https://github.com/0x1sac/ClamAV-Milter-Sendmail-0.91.2-Remote-Code-Execution)
+- [strikoder/sendmail-clamav-exploit-CVE-2007-4560](https://github.com/strikoder/sendmail-clamav-exploit-CVE-2007-4560)
 
 ### CVE-2007-4607 (2007-08-31)
 
