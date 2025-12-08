@@ -234,6 +234,7 @@
 
 - [ada-z3r0/CVE-2025-1337-PoC](https://github.com/ada-z3r0/CVE-2025-1337-PoC)
 - [Zwique/CVE-2025-1337-PoC](https://github.com/Zwique/CVE-2025-1337-PoC)
+- [ShantyPrime/CVE-2025-1337-Poc](https://github.com/ShantyPrime/CVE-2025-1337-Poc)
 
 ### CVE-2025-1338 (2025-02-16)
 
@@ -7169,7 +7170,6 @@
 - [Saturate/CVE-2025-55182-Scanner](https://github.com/Saturate/CVE-2025-55182-Scanner)
 - [hoosin/CVE-2025-55182](https://github.com/hoosin/CVE-2025-55182)
 - [Pizz33/CVE-2025-55182-burpscanner](https://github.com/Pizz33/CVE-2025-55182-burpscanner)
-- [Sotatek-KhaiNguyen3/CVE-2025-55182](https://github.com/Sotatek-KhaiNguyen3/CVE-2025-55182)
 - [ngvcanh/CVE-2025-55182-Attack-Analysis](https://github.com/ngvcanh/CVE-2025-55182-Attack-Analysis)
 - [aliclub0x00/CVE-2025-55182-POC-NEXTJS](https://github.com/aliclub0x00/CVE-2025-55182-POC-NEXTJS)
 - [logesh-GIT001/CVE-2025-55182](https://github.com/logesh-GIT001/CVE-2025-55182)
@@ -7276,7 +7276,16 @@
 - [satriarizka/CVE-2025-55182-Simple-Scanner](https://github.com/satriarizka/CVE-2025-55182-Simple-Scanner)
 - [xcanwin/CVE-2025-55182-React-RCE](https://github.com/xcanwin/CVE-2025-55182-React-RCE)
 - [CharlesTheGreat77/CVE-2025-55182-Test-Server](https://github.com/CharlesTheGreat77/CVE-2025-55182-Test-Server)
+- [timsonner/React2Shell-CVE-2025-55182](https://github.com/timsonner/React2Shell-CVE-2025-55182)
 - [ihsansencan/React2Shell-CVE-2025-55182](https://github.com/ihsansencan/React2Shell-CVE-2025-55182)
+- [xiaoxiunique/CVE-2025-55182-scanner](https://github.com/xiaoxiunique/CVE-2025-55182-scanner)
+- [lalaterry/CVE-2025-55182-React2Shell-lab](https://github.com/lalaterry/CVE-2025-55182-React2Shell-lab)
+- [arashiyans/CVE-2025-55182-CVE-2025-66478](https://github.com/arashiyans/CVE-2025-55182-CVE-2025-66478)
+- [faizdotid/rust-cve-2025-55182](https://github.com/faizdotid/rust-cve-2025-55182)
+- [lincemorado97/CVE-2025-55182_CVE-2025-66478](https://github.com/lincemorado97/CVE-2025-55182_CVE-2025-66478)
+- [LucasPDiniz/CVE-2025-55182](https://github.com/LucasPDiniz/CVE-2025-55182)
+- [wangzhengquan/CVE-2025-55182](https://github.com/wangzhengquan/CVE-2025-55182)
+- [lee191/CVE-2025-55182](https://github.com/lee191/CVE-2025-55182)
 
 ### CVE-2025-55188 (2025-08-08)
 
@@ -8924,6 +8933,8 @@
 - [aiexz/CVE-2025-66478-kinda-waf](https://github.com/aiexz/CVE-2025-66478-kinda-waf)
 - [Rhyru9/CVE-2025-66478](https://github.com/Rhyru9/CVE-2025-66478)
 - [Jibaru/CVE-2025-66478-github-patcher](https://github.com/Jibaru/CVE-2025-66478-github-patcher)
+- [ExpTechTW/CVE-2025-66478](https://github.com/ExpTechTW/CVE-2025-66478)
+- [abhirajranjan/cve-2025-66478](https://github.com/abhirajranjan/cve-2025-66478)
 
 ### CVE-2025-66516 (2025-12-04)
 
@@ -53965,6 +53976,7 @@
 - [SyedGhufranRaza/CVE-2018-7600-Remote-Code-Execution](https://github.com/SyedGhufranRaza/CVE-2018-7600-Remote-Code-Execution)
 - [nika0x38/CVE-2018-7600](https://github.com/nika0x38/CVE-2018-7600)
 - [tea-celikik/Drupal-Exploit-Lab](https://github.com/tea-celikik/Drupal-Exploit-Lab)
+- [4l13n-DN/POC-CVE-2018-7600](https://github.com/4l13n-DN/POC-CVE-2018-7600)
 
 ### CVE-2018-7602 (2018-07-19)
 
@@ -58395,6 +58407,13 @@
 </code>
 
 - [theguly/CVE-2017-14105](https://github.com/theguly/CVE-2017-14105)
+
+### CVE-2017-14187 (2018-05-24)
+
+<code>A local privilege escalation and local code execution vulnerability in Fortinet FortiOS 5.6.0 to 5.6.2, 5.4.0 to 5.4.8, and 5.2 and below versions allows attacker to execute unauthorized binary program contained on an USB drive plugged into a FortiGate via linking the aforementioned binary program to a command that is allowed to be run by the fnsysctl CLI command.
+</code>
+
+- [snmpudp/CVE-2017-14187_PoC_ARMv7](https://github.com/snmpudp/CVE-2017-14187_PoC_ARMv7)
 
 ### CVE-2017-14262 (2017-09-11)
 
