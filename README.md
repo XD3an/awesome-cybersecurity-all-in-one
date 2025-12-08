@@ -59,6 +59,10 @@ This repository contains a curated collection of cybersecurity resources organiz
 - **[OpenSSL](https://www.openssl.org/)** - Robust toolkit for Transport Layer Security (TLS)
 - **[GnuPG](https://www.gnupg.org/)** - Complete implementation of OpenPGP standard
 
+### 🔐 Password & Credential Security
+- **[PassLord](https://github.com/navnee1h/passlord)** – Smart wordlist generator for ethical hacking and credential security testing.
+
+
 ### 🌐 Network Security
 
 - **[Wireshark](https://www.wireshark.org/)** - Network protocol analyzer
