@@ -7204,6 +7204,7 @@
 - [XiaomingX/CVE-2025-55182-poc](https://github.com/XiaomingX/CVE-2025-55182-poc)
 - [alexandre-briongos-wavestone/react-cve-2025-55182-lab](https://github.com/alexandre-briongos-wavestone/react-cve-2025-55182-lab)
 - [Rat5ak/CVE-2025-55182-React2Shell-RCE-POC](https://github.com/Rat5ak/CVE-2025-55182-React2Shell-RCE-POC)
+- [imbas007/POC-CVE-2025-55182](https://github.com/imbas007/POC-CVE-2025-55182)
 - [RajChowdhury240/React2Shell-CVE-2025-55182](https://github.com/RajChowdhury240/React2Shell-CVE-2025-55182)
 - [nehkark/CVE-2025-55182](https://github.com/nehkark/CVE-2025-55182)
 - [prestonhashworth/cve-2025-55182](https://github.com/prestonhashworth/cve-2025-55182)
@@ -7335,6 +7336,12 @@
 - [xiaopeng-ye/react2shell-detector](https://github.com/xiaopeng-ye/react2shell-detector)
 - [vulncheck-oss/cve-2025-55182](https://github.com/vulncheck-oss/cve-2025-55182)
 - [Shield-Cyber/react2shell-scanner](https://github.com/Shield-Cyber/react2shell-scanner)
+- [foodmen2111/test-cve-2025-55182](https://github.com/foodmen2111/test-cve-2025-55182)
+- [sun977/CVE-2025-55182](https://github.com/sun977/CVE-2025-55182)
+- [garux-sec/PoC-react2shell-CVE-2025-55182](https://github.com/garux-sec/PoC-react2shell-CVE-2025-55182)
+- [ancs21/react2shell-scanner-rust](https://github.com/ancs21/react2shell-scanner-rust)
+- [MoisesTapia/http-react2shell](https://github.com/MoisesTapia/http-react2shell)
+- [hadipra5/CVE-2025-55182-Advanced-Auto-Exploit-Toolkit](https://github.com/hadipra5/CVE-2025-55182-Advanced-Auto-Exploit-Toolkit)
 
 ### CVE-2025-55188 (2025-08-08)
 
@@ -8845,6 +8852,7 @@
 </code>
 
 - [Neo-Neo6/CVE-2025-65018-Heap-buffer-overflow-in-libpng-ps4-ps5-](https://github.com/Neo-Neo6/CVE-2025-65018-Heap-buffer-overflow-in-libpng-ps4-ps5-)
+- [bohemian-miser/CVE-2025-65018_Exploit_Challenge](https://github.com/bohemian-miser/CVE-2025-65018_Exploit_Challenge)
 
 ### CVE-2025-65271 (2025-12-08)
 
@@ -8985,7 +8993,6 @@
 - [wangxso/CVE-2025-66478-POC](https://github.com/wangxso/CVE-2025-66478-POC)
 - [Malayke/Next.js-RSC-RCE-Scanner-CVE-2025-66478](https://github.com/Malayke/Next.js-RSC-RCE-Scanner-CVE-2025-66478)
 - [mattcbarrett/check-cve-2025-66478](https://github.com/mattcbarrett/check-cve-2025-66478)
-- [imbas007/POC-CVE-2025-66478](https://github.com/imbas007/POC-CVE-2025-66478)
 - [hackersatyamrastogi/react2shell-ultimate](https://github.com/hackersatyamrastogi/react2shell-ultimate)
 - [vercel-labs/fix-react2shell-next](https://github.com/vercel-labs/fix-react2shell-next)
 - [namest504/CVE-2025-66478-Exploit-Poc](https://github.com/namest504/CVE-2025-66478-Exploit-Poc)
@@ -8997,6 +9004,7 @@
 - [Letalandroid/cve-2025-66478_rce_vulnerable](https://github.com/Letalandroid/cve-2025-66478_rce_vulnerable)
 - [adrianhazgarcia/React4Shell](https://github.com/adrianhazgarcia/React4Shell)
 - [strainxx/react2shell-honeypot](https://github.com/strainxx/react2shell-honeypot)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm)
 
 ### CVE-2025-66516 (2025-12-04)
 
