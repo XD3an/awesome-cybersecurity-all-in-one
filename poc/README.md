@@ -234,7 +234,6 @@
 
 - [ada-z3r0/CVE-2025-1337-PoC](https://github.com/ada-z3r0/CVE-2025-1337-PoC)
 - [Zwique/CVE-2025-1337-PoC](https://github.com/Zwique/CVE-2025-1337-PoC)
-- [ShantyPrime/CVE-2025-1337-Poc](https://github.com/ShantyPrime/CVE-2025-1337-Poc)
 
 ### CVE-2025-1338 (2025-02-16)
 
@@ -1772,6 +1771,7 @@
 - [OilSeller2001/PoC-for-CVE-2025-9074](https://github.com/OilSeller2001/PoC-for-CVE-2025-9074)
 - [BridgerAlderson/CVE-2025-9074-PoC](https://github.com/BridgerAlderson/CVE-2025-9074-PoC)
 - [xwpdx0/poc-2025-9074](https://github.com/xwpdx0/poc-2025-9074)
+- [PtechAmanja/CVE-2025-9074-Docker-Desktop-Container-Escape](https://github.com/PtechAmanja/CVE-2025-9074-Docker-Desktop-Container-Escape)
 
 ### CVE-2025-9090 (2025-08-17)
 
@@ -2344,6 +2344,16 @@
 
 - [Ashwesker/Blackash-CVE-2025-13315](https://github.com/Ashwesker/Blackash-CVE-2025-13315)
 
+### CVE-2025-13339
+- [MooseLoveti/Hippoo-Mobile-App-For-WooCommerce-CVE-Report](https://github.com/MooseLoveti/Hippoo-Mobile-App-For-WooCommerce-CVE-Report)
+
+### CVE-2025-13342 (2025-12-03)
+
+<code>The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to unauthorized modification of arbitrary WordPress options in all versions up to, and including, 3.28.20. This is due to insufficient capability checks and input validation in the ActionOptions::run() save handler. This makes it possible for unauthenticated attackers to modify critical WordPress options such as users_can_register, default_role, and admin_email via submitting crafted form data to public frontend forms.
+</code>
+
+- [Altelus1/CVE-2025-13342](https://github.com/Altelus1/CVE-2025-13342)
+
 ### CVE-2025-13372 (2025-12-02)
 
 <code>An issue was discovered in 5.2 before 5.2.9, 5.1 before 5.1.15, and 4.2 before 4.2.27.\n`FilteredRelation` is subject to SQL injection in column aliases, using a suitably crafted dictionary, with dictionary expansion, as the `**kwargs` passed to `QuerySet.annotate()` or `QuerySet.alias()` on PostgreSQL.\nEarlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.\nDjango would like to thank Stackered for reporting this issue.
@@ -2382,7 +2392,6 @@
 - [KrE80r/cve-2025-13486-vuln-setup](https://github.com/KrE80r/cve-2025-13486-vuln-setup)
 - [MataKucing-OFC/CVE-2025-13486](https://github.com/MataKucing-OFC/CVE-2025-13486)
 - [0xgh057r3c0n/CVE-2025-13486](https://github.com/0xgh057r3c0n/CVE-2025-13486)
-- [pukixploit/CVE-2025-13486](https://github.com/pukixploit/CVE-2025-13486)
 
 ### CVE-2025-13543 (2025-12-04)
 
@@ -6896,6 +6905,13 @@
 
 - [tigr78/CVE-2025-53964](https://github.com/tigr78/CVE-2025-53964)
 
+### CVE-2025-54100 (2025-12-09)
+
+<code>Improper neutralization of special elements used in a command ('command injection') in Windows PowerShell allows an unauthorized attacker to execute code locally.
+</code>
+
+- [osman1337-security/CVE-2025-54100](https://github.com/osman1337-security/CVE-2025-54100)
+
 ### CVE-2025-54110 (2025-09-09)
 
 <code>Integer overflow or wraparound in Windows Kernel allows an authorized attacker to elevate privileges locally.
@@ -7298,7 +7314,6 @@
 - [xcanwin/CVE-2025-55182-React-RCE](https://github.com/xcanwin/CVE-2025-55182-React-RCE)
 - [CharlesTheGreat77/CVE-2025-55182-Test-Server](https://github.com/CharlesTheGreat77/CVE-2025-55182-Test-Server)
 - [timsonner/React2Shell-CVE-2025-55182](https://github.com/timsonner/React2Shell-CVE-2025-55182)
-- [ihsansencan/React2Shell-CVE-2025-55182](https://github.com/ihsansencan/React2Shell-CVE-2025-55182)
 - [xiaoxiunique/CVE-2025-55182-scanner](https://github.com/xiaoxiunique/CVE-2025-55182-scanner)
 - [lalaterry/CVE-2025-55182-React2Shell-lab](https://github.com/lalaterry/CVE-2025-55182-React2Shell-lab)
 - [arashiyans/CVE-2025-55182-CVE-2025-66478](https://github.com/arashiyans/CVE-2025-55182-CVE-2025-66478)
@@ -7308,6 +7323,7 @@
 - [wangzhengquan/CVE-2025-55182](https://github.com/wangzhengquan/CVE-2025-55182)
 - [lee191/CVE-2025-55182](https://github.com/lee191/CVE-2025-55182)
 - [TH-SecForge/CVE-2025-55182](https://github.com/TH-SecForge/CVE-2025-55182)
+- [chitoz1300/React2Shell-CVE-2025-55182](https://github.com/chitoz1300/React2Shell-CVE-2025-55182)
 - [Night-have-dreams/CVE-2025-55182-PoC](https://github.com/Night-have-dreams/CVE-2025-55182-PoC)
 - [C00LN3T/React2Shell](https://github.com/C00LN3T/React2Shell)
 - [thekamran/CVE-2025-55182-Proof-of-Concept](https://github.com/thekamran/CVE-2025-55182-Proof-of-Concept)
@@ -7341,7 +7357,32 @@
 - [garux-sec/PoC-react2shell-CVE-2025-55182](https://github.com/garux-sec/PoC-react2shell-CVE-2025-55182)
 - [ancs21/react2shell-scanner-rust](https://github.com/ancs21/react2shell-scanner-rust)
 - [MoisesTapia/http-react2shell](https://github.com/MoisesTapia/http-react2shell)
-- [hadipra5/CVE-2025-55182-Advanced-Auto-Exploit-Toolkit](https://github.com/hadipra5/CVE-2025-55182-Advanced-Auto-Exploit-Toolkit)
+- [hadipra5/CVE-2025-55182-Auto-Exploit-Toolkit](https://github.com/hadipra5/CVE-2025-55182-Auto-Exploit-Toolkit)
+- [techgaun/cve-2025-55182-scanner](https://github.com/techgaun/cve-2025-55182-scanner)
+- [rsch-io/CVE-2025-55182-React2Shell](https://github.com/rsch-io/CVE-2025-55182-React2Shell)
+- [ilixm/PoC-RCE-CVE-2025-55182](https://github.com/ilixm/PoC-RCE-CVE-2025-55182)
+- [iamblacksolo2-BugBounty/POC-CVE-2025-55182](https://github.com/iamblacksolo2-BugBounty/POC-CVE-2025-55182)
+- [joelvaiju/react2shell-CVE-2025-55182-poc](https://github.com/joelvaiju/react2shell-CVE-2025-55182-poc)
+- [DevVaibhav07/POC-CVE-2025-55182](https://github.com/DevVaibhav07/POC-CVE-2025-55182)
+- [liamromanis101/cve-2025-55182](https://github.com/liamromanis101/cve-2025-55182)
+- [ysfcndgr/React2Shell-CVE-2025-55182-Advanced-Scanner](https://github.com/ysfcndgr/React2Shell-CVE-2025-55182-Advanced-Scanner)
+- [alfazhossain/CVE-2025-55182-Exploiter](https://github.com/alfazhossain/CVE-2025-55182-Exploiter)
+- [keshavyaduvans/cve-2025-55182](https://github.com/keshavyaduvans/cve-2025-55182)
+- [byte16384/CVE-2025-55182](https://github.com/byte16384/CVE-2025-55182)
+- [kondukto-io/vulnerable-next-js-poc](https://github.com/kondukto-io/vulnerable-next-js-poc)
+- [react2shell-repo-menagerie/CVE-2025-55182-single-nextjs-npm-rsc-webpack](https://github.com/react2shell-repo-menagerie/CVE-2025-55182-single-nextjs-npm-rsc-webpack)
+- [react2shell-repo-menagerie/CVE-2025-55182-single-nextjs-npm-rsc-parcel](https://github.com/react2shell-repo-menagerie/CVE-2025-55182-single-nextjs-npm-rsc-parcel)
+- [react2shell-repo-menagerie/CVE-2025-55182-single-nextjs-npm-rsc-turbopack](https://github.com/react2shell-repo-menagerie/CVE-2025-55182-single-nextjs-npm-rsc-turbopack)
+- [eytannatye/R2S_CVE-2025-55182](https://github.com/eytannatye/R2S_CVE-2025-55182)
+- [Jaycelation/CVE-2025-55182](https://github.com/Jaycelation/CVE-2025-55182)
+- [shyambhanushali/React2Shell](https://github.com/shyambhanushali/React2Shell)
+- [amir-malek/react-cve-2025-55182](https://github.com/amir-malek/react-cve-2025-55182)
+- [Ankitspandey07/React2Shell](https://github.com/Ankitspandey07/React2Shell)
+- [Stonelinks/react-cve-2025-55182](https://github.com/Stonelinks/react-cve-2025-55182)
+- [ihsansencan/React2Shell-CVE-2025-55182](https://github.com/ihsansencan/React2Shell-CVE-2025-55182)
+- [dr4xp/react2shell](https://github.com/dr4xp/react2shell)
+- [trax69/cve-2025-55182-poc](https://github.com/trax69/cve-2025-55182-poc)
+- [osman-butt/CVE-2025-55182-demo](https://github.com/osman-butt/CVE-2025-55182-demo)
 
 ### CVE-2025-55188 (2025-08-08)
 
@@ -8007,7 +8048,6 @@
 - [Twodimensionalitylevelcrossing817/CVE-2025-59287](https://github.com/Twodimensionalitylevelcrossing817/CVE-2025-59287)
 - [M507/CVE-2025-59287-PoC](https://github.com/M507/CVE-2025-59287-PoC)
 - [Adel-kaka-dz/cve-2025-59287](https://github.com/Adel-kaka-dz/cve-2025-59287)
-- [17patmaks/CVE-2025-59287-Sigma-Rule](https://github.com/17patmaks/CVE-2025-59287-Sigma-Rule)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -8861,7 +8901,11 @@
 
 - [1337Skid/CVE-2025-65271](https://github.com/1337Skid/CVE-2025-65271)
 
-### CVE-2025-65300
+### CVE-2025-65300 (2025-12-09)
+
+<code>A stored Cross-Site Scripting (XSS) vulnerability exists in the Coohom SaaS Platform feVersion=1760060603897 (2025-10-28) in the Account Settings module, where unsanitized user input in Address fields (City, State, Country/Region) is rendered back to the page. Attackers can inject arbitrary JavaScript code, which executes when the affected profile page is viewed. This can lead to session hijacking, cookie theft, or arbitrary script execution in the victim's browser.
+</code>
+
 - [garux-sec/CVE-2025-65300](https://github.com/garux-sec/CVE-2025-65300)
 
 ### CVE-2025-65320 (2025-12-03)
@@ -8940,8 +8984,15 @@
 
 - [Rivek619/CVE-2025-65681](https://github.com/Rivek619/CVE-2025-65681)
 
-### CVE-2025-65741
+### CVE-2025-65741 (2025-12-09)
+
+<code>Sublime Text 3 Build 3208 or prior for MacOS is vulnerable to Dylib Injection. An attacker could compile a .dylib file and force the execution of this library in the context of the Sublime Text application.
+</code>
+
 - [vinicius-batistella/CVE-2025-65741](https://github.com/vinicius-batistella/CVE-2025-65741)
+
+### CVE-2025-65754
+- [Bnyt7/CVE-2025-65754](https://github.com/Bnyt7/CVE-2025-65754)
 
 ### CVE-2025-65806 (2025-12-04)
 
@@ -8981,6 +9032,14 @@
 
 - [Noxurge/CVE-2025-65900](https://github.com/Noxurge/CVE-2025-65900)
 
+### CVE-2025-65964 (2025-12-08)
+
+<code>n8n is an open source workflow automation platform. Versions 0.123.1 through 1.119.1 do not have adequate protections to prevent RCE through the project's pre-commit hooks. The Add Config operation allows workflows to set arbitrary Git configuration values, including core.hooksPath, which can point to a malicious Git hook that executes arbitrary commands on the n8n host during subsequent Git operations. Exploitation requires the ability to create or modify an n8n workflow using the Git node. This issue is fixed in version 1.119.2. Workarounds include excluding the Git Node (Docs) and avoiding cloning or interacting with untrusted repositories using the Git Node.
+</code>
+
+- [Anthony558238/CVE-2025-65964-poc](https://github.com/Anthony558238/CVE-2025-65964-poc)
+- [Syzygy-K/CVE-2025-65964-POC](https://github.com/Syzygy-K/CVE-2025-65964-POC)
+
 ### CVE-2025-66022 (2025-11-26)
 
 <code>FACTION is a PenTesting Report Generation and Collaboration Framework. Prior to version 1.7.1, an extension execution path in Faction’s extension framework permits untrusted extension code to execute arbitrary system commands on the server when a lifecycle hook is invoked, resulting in remote code execution (RCE) on the host running Faction. Due to a missing authentication check on the /portal/AppStoreDashboard endpoint, an attacker can access the extension management UI and upload a malicious extension without any authentication, making this vulnerability exploitable by unauthenticated users. This issue has been patched in version 1.7.1.
@@ -9005,14 +9064,60 @@
 - [adrianhazgarcia/React4Shell](https://github.com/adrianhazgarcia/React4Shell)
 - [strainxx/react2shell-honeypot](https://github.com/strainxx/react2shell-honeypot)
 - [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm)
+- [react2shell-repo-menagerie/CVE-2025-66478-monorepo-nextjs-pnpm](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-monorepo-nextjs-pnpm)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-caret](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-caret)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-transitive](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-transitive)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-devdeps](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-devdeps)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-bun](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-bun)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-canary-15x](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-canary-15x)
+- [react2shell-repo-menagerie/CVE-2025-66478-monorepo-nextjs-npm-workspaces](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-monorepo-nextjs-npm-workspaces)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-range](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-range)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-alias](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-alias)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-rsc-webpack](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-rsc-webpack)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-lockfile-mismatch](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-lockfile-mismatch)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-shrinkwrap](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-shrinkwrap)
+- [react2shell-repo-menagerie/CVE-2025-66478-monorepo-nextjs-npm-nested-versions](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-monorepo-nextjs-npm-nested-versions)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-yarn-pnp](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-yarn-pnp)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-yarn-zero-installs](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-yarn-zero-installs)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-build-metadata](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-build-metadata)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-canary-14x](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-canary-14x)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-canary-16x](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-canary-16x)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-git-dep](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-git-dep)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-no-lockfile](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-no-lockfile)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-optional-deps](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-optional-deps)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-overrides](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-overrides)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-packagemanager-field](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-packagemanager-field)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-patch-package](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-patch-package)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-peer-conflict](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-peer-conflict)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-tag-latest](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-tag-latest)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-tilde](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-tilde)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-v-prefix](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-npm-v-prefix)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-yarn](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-yarn)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-yarn-berry](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-yarn-berry)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-yarn-resolutions](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-yarn-resolutions)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-pnpm-catalog](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-pnpm-catalog)
+- [react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-pnpm-overrides](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-single-nextjs-pnpm-overrides)
+- [react2shell-repo-menagerie/CVE-2025-66478-monorepo-nextjs-npm-hoisting](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-monorepo-nextjs-npm-hoisting)
+- [react2shell-repo-menagerie/CVE-2025-66478-monorepo-nextjs-pnpm-symlinks](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-monorepo-nextjs-pnpm-symlinks)
+- [react2shell-repo-menagerie/CVE-2025-66478-monorepo-nextjs-turborepo](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-monorepo-nextjs-turborepo)
+- [react2shell-repo-menagerie/CVE-2025-66478-monorepo-nextjs-yarn-workspaces](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-monorepo-nextjs-yarn-workspaces)
+- [react2shell-repo-menagerie/CVE-2025-66478-realworld-calcom-yarn-monorepo](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-realworld-calcom-yarn-monorepo)
+- [react2shell-repo-menagerie/CVE-2025-66478-realworld-dub-pnpm-monorepo](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-realworld-dub-pnpm-monorepo)
+- [react2shell-repo-menagerie/CVE-2025-66478-realworld-supabase-pnpm-monorepo](https://github.com/react2shell-repo-menagerie/CVE-2025-66478-realworld-supabase-pnpm-monorepo)
 
 ### CVE-2025-66516 (2025-12-04)
 
 <code>Critical XXE in Apache Tika tika-core (1.13-3.2.1), tika-pdf-module (2.0.0-3.2.1) and tika-parsers (1.13-1.28.5) modules on all platforms allows an attacker to carry out XML External Entity injection via a crafted XFA file inside of a PDF. \n\nThis CVE covers the same vulnerability as in CVE-2025-54988. However, this CVE expands the scope of affected packages in two ways. \n\nFirst, while the entrypoint for the vulnerability was the tika-parser-pdf-module as reported in CVE-2025-54988, the vulnerability and its fix were in tika-core. Users who upgraded the tika-parser-pdf-module but did not upgrade tika-core to &gt;= 3.2.2 would still be vulnerable. \n\nSecond, the original report failed to mention that in the 1.x Tika releases, the PDFParser was in the &quot;org.apache.tika:tika-parsers&quot; module.
 </code>
 
-- [B1gh0rnn/CVE-2025-66516](https://github.com/B1gh0rnn/CVE-2025-66516)
 - [Ashwesker/Blackash-CVE-2025-66516](https://github.com/Ashwesker/Blackash-CVE-2025-66516)
+
+### CVE-2025-66644 (2025-12-05)
+
+<code>Array Networks ArrayOS AG before 9.4.5.9 allows command injection, as exploited in the wild in August through December 2025.
+</code>
+
+- [Ashwesker/Blackash-CVE-2025-66644](https://github.com/Ashwesker/Blackash-CVE-2025-66644)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -9416,6 +9521,7 @@
 - [xzx482/CVE-2024-1086](https://github.com/xzx482/CVE-2024-1086)
 - [LLfam/CVE-2024-1086](https://github.com/LLfam/CVE-2024-1086)
 - [karim4353/CVE-2024-1086-Exploit](https://github.com/karim4353/CVE-2024-1086-Exploit)
+- [ndt2111200203/CVE-2024-1086](https://github.com/ndt2111200203/CVE-2024-1086)
 
 ### CVE-2024-1112 (2024-01-31)
 
@@ -14323,7 +14429,7 @@
 
 - [Marven11/CVE-2024-28397-js2py-Sandbox-Escape](https://github.com/Marven11/CVE-2024-28397-js2py-Sandbox-Escape)
 - [CYBER-WARRIOR-SEC/CVE-2024-28397-js2py-Sandbox-Escape](https://github.com/CYBER-WARRIOR-SEC/CVE-2024-28397-js2py-Sandbox-Escape)
-- [Ghost-Overflow/CVE-2024-28397-command-execution-poc](https://github.com/Ghost-Overflow/CVE-2024-28397-command-execution-poc)
+- [GhostOverflow/CVE-2024-28397-command-execution-poc](https://github.com/GhostOverflow/CVE-2024-28397-command-execution-poc)
 - [harutomo-jp/CVE-2024-28397-RCE](https://github.com/harutomo-jp/CVE-2024-28397-RCE)
 - [Naved124/CVE-2024-28397-js2py-Sandbox-Escape](https://github.com/Naved124/CVE-2024-28397-js2py-Sandbox-Escape)
 - [ExtremeUday/Remote-Code-Execution-CVE-2024-28397-pyload-ng-js2py-](https://github.com/ExtremeUday/Remote-Code-Execution-CVE-2024-28397-pyload-ng-js2py-)
@@ -27598,7 +27704,7 @@
 - [vidura2/cve-2023-46747](https://github.com/vidura2/cve-2023-46747)
 - [rainbowhatrkn/CVE-2023-46747-RCE](https://github.com/rainbowhatrkn/CVE-2023-46747-RCE)
 - [cediegreyhat/BigFinger](https://github.com/cediegreyhat/BigFinger)
-- [Razzlemouse/F5-BIG-IP-CVE-2023-46747---Unauthenticated-RCE-Reverse-Shell-Nuclei-Template-Modified-](https://github.com/Razzlemouse/F5-BIG-IP-CVE-2023-46747---Unauthenticated-RCE-Reverse-Shell-Nuclei-Template-Modified-)
+- [Razzlemouse/F5-BIG-IP-SmuggleShell-CVE-2023-46747-Exploit](https://github.com/Razzlemouse/F5-BIG-IP-SmuggleShell-CVE-2023-46747-Exploit)
 
 ### CVE-2023-46749 (2024-01-15)
 
@@ -43841,7 +43947,6 @@
 - [streghstreek/CVE-2020-1938](https://github.com/streghstreek/CVE-2020-1938)
 - [Neko-chanQwQ/CVE-2020-1938](https://github.com/Neko-chanQwQ/CVE-2020-1938)
 - [jptr218/ghostcat](https://github.com/jptr218/ghostcat)
-- [einzbernnn/CVE-2020-1938Scan](https://github.com/einzbernnn/CVE-2020-1938Scan)
 - [YounesTasra-R4z3rSw0rd/CVE-2020-1938](https://github.com/YounesTasra-R4z3rSw0rd/CVE-2020-1938)
 - [tpt11fb/AttackTomcat](https://github.com/tpt11fb/AttackTomcat)
 - [Warelock/cve-2020-1938](https://github.com/Warelock/cve-2020-1938)
