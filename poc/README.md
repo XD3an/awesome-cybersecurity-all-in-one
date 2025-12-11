@@ -2278,6 +2278,13 @@
 
 - [TERESH1/CVE-2025-12748](https://github.com/TERESH1/CVE-2025-12748)
 
+### CVE-2025-12758 (2025-11-27)
+
+<code>Versions of the package validator before 13.15.22 are vulnerable to Incomplete Filtering of One or More Instances of Special Elements in the isLength() function that does not take into account Unicode variation selectors (\uFE0F, \uFE0E) appearing in a sequence which lead to improper string length calculation. This can lead to an application using isLength for input validation accepting strings significantly longer than intended, resulting in issues like data truncation in databases, buffer overflows in other system components, or denial-of-service.
+</code>
+
+- [dajneem23/CVE-2025-12758](https://github.com/dajneem23/CVE-2025-12758)
+
 ### CVE-2025-12762 (2025-11-13)
 
 <code>pgAdmin versions up to 9.9 are affected by a Remote Code Execution (RCE) vulnerability that occurs when running in server mode and performing restores from PLAIN-format dump files. This issue allows attackers to inject and execute arbitrary commands on the server hosting pgAdmin, posing a critical risk to the integrity and security of the database management system and underlying data.
@@ -4937,6 +4944,7 @@
 - [rxerium/CVE-2025-34299](https://github.com/rxerium/CVE-2025-34299)
 - [Ashwesker/Blackash-CVE-2025-34299](https://github.com/Ashwesker/Blackash-CVE-2025-34299)
 - [Chocapikk/CVE-2025-34299](https://github.com/Chocapikk/CVE-2025-34299)
+- [KrE80r/CVE-2025-34299-lab](https://github.com/KrE80r/CVE-2025-34299-lab)
 
 ### CVE-2025-34300 (2025-07-16)
 
@@ -6121,7 +6129,7 @@
 <code>Heap-based buffer overflow in Windows Kernel allows an authorized attacker to execute code over a network.
 </code>
 
-- [17patmaks/CVE-2025-49666-Sigma-Rule](https://github.com/17patmaks/CVE-2025-49666-Sigma-Rule)
+- [17patmaks/My-Sigma-Rule-Collection](https://github.com/17patmaks/My-Sigma-Rule-Collection)
 
 ### CVE-2025-49667 (2025-07-08)
 
@@ -7295,7 +7303,6 @@
 - [xcanwin/CVE-2025-55182-React-RCE](https://github.com/xcanwin/CVE-2025-55182-React-RCE)
 - [CharlesTheGreat77/CVE-2025-55182-Test-Server](https://github.com/CharlesTheGreat77/CVE-2025-55182-Test-Server)
 - [timsonner/React2Shell-CVE-2025-55182](https://github.com/timsonner/React2Shell-CVE-2025-55182)
-- [xiaoxiunique/CVE-2025-55182-scanner](https://github.com/xiaoxiunique/CVE-2025-55182-scanner)
 - [lalaterry/CVE-2025-55182-React2Shell-lab](https://github.com/lalaterry/CVE-2025-55182-React2Shell-lab)
 - [arashiyans/CVE-2025-55182-CVE-2025-66478](https://github.com/arashiyans/CVE-2025-55182-CVE-2025-66478)
 - [faizdotid/rust-cve-2025-55182](https://github.com/faizdotid/rust-cve-2025-55182)
@@ -7384,6 +7391,11 @@
 - [J4ck3LSyN-Gen2/CVE-2025-55182](https://github.com/J4ck3LSyN-Gen2/CVE-2025-55182)
 - [pkrasulia/CVE-2025-55182-NextJS-RCE-PoC](https://github.com/pkrasulia/CVE-2025-55182-NextJS-RCE-PoC)
 - [oscarmine/R2SAE](https://github.com/oscarmine/R2SAE)
+- [min8282/CVE-2025-55182](https://github.com/min8282/CVE-2025-55182)
+- [Machine-farmer/PunchingBag-for-React2Shell](https://github.com/Machine-farmer/PunchingBag-for-React2Shell)
+- [exrienz/CVE-2025-55182-NextJS-Scanner-React2Shell-PoC](https://github.com/exrienz/CVE-2025-55182-NextJS-Scanner-React2Shell-PoC)
+- [mrmtwoj/React2Shell-CVE-2025-55182](https://github.com/mrmtwoj/React2Shell-CVE-2025-55182)
+- [xalgord1/CVE-2025-55182-POC](https://github.com/xalgord1/CVE-2025-55182-POC)
 
 ### CVE-2025-55188 (2025-08-08)
 
@@ -8162,6 +8174,7 @@
 </code>
 
 - [demining/Scalar-Venom-Attack](https://github.com/demining/Scalar-Venom-Attack)
+- [Mwete404/Scalar-Venom-Attack](https://github.com/Mwete404/Scalar-Venom-Attack)
 
 ### CVE-2025-60349 (2025-10-28)
 
@@ -8510,6 +8523,13 @@
 - [dexterm300/CVE-2025-62215-exploit-poc](https://github.com/dexterm300/CVE-2025-62215-exploit-poc)
 - [mrk336/Kernel-Chaos-Weaponizing-CVE-2025-62215-for-SYSTEM-Privilege-Escalation](https://github.com/mrk336/Kernel-Chaos-Weaponizing-CVE-2025-62215-for-SYSTEM-Privilege-Escalation)
 - [abrewer251/CVE-2025-62215_Windows_Kernel_PE](https://github.com/abrewer251/CVE-2025-62215_Windows_Kernel_PE)
+
+### CVE-2025-62221 (2025-12-09)
+
+<code>Use after free in Windows Cloud Files Mini Filter Driver allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [LoKinii/CVE-2025-62221-Exploit](https://github.com/LoKinii/CVE-2025-62221-Exploit)
 
 ### CVE-2025-62369 (2025-11-04)
 
@@ -9101,6 +9121,7 @@
 - [Letalandroid/cve-2025-66478_rce_vulnerable](https://github.com/Letalandroid/cve-2025-66478_rce_vulnerable)
 - [adrianhazgarcia/React4Shell](https://github.com/adrianhazgarcia/React4Shell)
 - [strainxx/react2shell-honeypot](https://github.com/strainxx/react2shell-honeypot)
+- [changgun-lee/Next.js-RSC-RCE-Scanner-CVE-2025-66478](https://github.com/changgun-lee/Next.js-RSC-RCE-Scanner-CVE-2025-66478)
 
 ### CVE-2025-66516 (2025-12-04)
 
@@ -9108,6 +9129,13 @@
 </code>
 
 - [Ashwesker/Blackash-CVE-2025-66516](https://github.com/Ashwesker/Blackash-CVE-2025-66516)
+
+### CVE-2025-66628 (2025-12-10)
+
+<code>ImageMagick is a software suite to create, edit, compose, or convert bitmap images. In versions 7.1.2-9 and prior, the TIM (PSX TIM) image parser contains a critical integer overflow vulnerability in its ReadTIMImage function (coders/tim.c). The code reads width and height (16-bit values) from the file header and calculates image_size = 2 * width * height without checking for overflow. On 32-bit systems (or where size_t is 32-bit), this calculation can overflow if width and height are large (e.g., 65535), wrapping around to a small value. This results in a small heap allocation via AcquireQuantumMemory and later operations relying on the dimensions can trigger an out of bounds read. This issue is fixed in version 7.1.2-10.
+</code>
+
+- [Sumitshah00/CVE-2025-66628](https://github.com/Sumitshah00/CVE-2025-66628)
 
 ### CVE-2025-66644 (2025-12-05)
 
@@ -50368,7 +50396,6 @@
 - [attackgithub/Zimbra-RCE](https://github.com/attackgithub/Zimbra-RCE)
 - [Phuong39/zaber](https://github.com/Phuong39/zaber)
 - [Cappricio-Securities/CVE-2019-9670](https://github.com/Cappricio-Securities/CVE-2019-9670)
-- [OracleNep/CVE-2019-9670-DtdFilegeneration](https://github.com/OracleNep/CVE-2019-9670-DtdFilegeneration)
 
 ### CVE-2019-9673 (2019-06-05)
 
