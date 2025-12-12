@@ -234,13 +234,6 @@
 
 - [ada-z3r0/CVE-2025-1337-PoC](https://github.com/ada-z3r0/CVE-2025-1337-PoC)
 
-### CVE-2025-1338 (2025-02-16)
-
-<code>In NUUO Camera bis 20250203 wurde eine Schwachstelle ausgemacht. Sie wurde als kritisch eingestuft. Hierbei betrifft es die Funktion print_file der Datei /handle_config.php. Durch Beeinflussen des Arguments log mit unbekannten Daten kann eine command injection-Schwachstelle ausgenutzt werden. Umgesetzt werden kann der Angriff über das Netzwerk. Der Exploit steht zur öffentlichen Verfügung.
-</code>
-
-- [jxcaxtc/CVE-2025-1338](https://github.com/jxcaxtc/CVE-2025-1338)
-
 ### CVE-2025-1461 (2025-05-28)
 
 <code>Improper neutralization of the value of the 'eventMoreText' property of the 'VCalendar' component in Vuetify allows unsanitized HTML to be inserted into the page. This can lead to a  Cross-Site Scripting (XSS) https://owasp.org/www-community/attacks/xss  attack. The vulnerability occurs because the default Vuetify translator will return the translation key as the translation, if it can't find an actual translation.\n\nThis issue affects Vuetify versions greater than or equal to 2.0.0 and less than 3.0.0.\n\nNote:\nVersion 2.x of Vuetify is End-of-Life and will not receive any updates to address this issue. For more information see  here https://v2.vuetifyjs.com/en/about/eol/ .
@@ -1347,7 +1340,6 @@
 - [yukinime/CVE-2025-6934](https://github.com/yukinime/CVE-2025-6934)
 - [Pwdnx1337/CVE-2025-6934](https://github.com/Pwdnx1337/CVE-2025-6934)
 - [Rosemary1337/CVE-2025-6934](https://github.com/Rosemary1337/CVE-2025-6934)
-- [Jenderal92/WP-CVE-2025-6934](https://github.com/Jenderal92/WP-CVE-2025-6934)
 
 ### CVE-2025-6970 (2025-07-09)
 
@@ -1420,13 +1412,6 @@
 </code>
 
 - [bx33661/CVE-2025-7461](https://github.com/bx33661/CVE-2025-7461)
-
-### CVE-2025-7558 (2025-07-14)
-
-<code>Eine Schwachstelle wurde in code-projects Voting System 1.0 gefunden. Sie wurde als kritisch eingestuft. Es geht hierbei um eine nicht näher spezifizierte Funktion der Datei /admin/positions_add.php. Mittels Manipulieren des Arguments description mit unbekannten Daten kann eine sql injection-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk angegangen werden. Der Exploit steht zur öffentlichen Verfügung.
-</code>
-
-- [rundas-r00t/CVE-2025-7558-PoC](https://github.com/rundas-r00t/CVE-2025-7558-PoC)
 
 ### CVE-2025-7605 (2025-07-14)
 
@@ -1674,7 +1659,6 @@
 <code>The Copypress Rest API plugin for WordPress is vulnerable to Remote Code Execution via copyreap_handle_image() Function in versions 1.1 to 1.2. The plugin falls back to a hard-coded JWT signing key when no secret is defined and does not restrict which file types can be fetched and saved as attachments. As a result, unauthenticated attackers can forge a valid token to gain elevated privileges and upload an arbitrary file (e.g. a PHP script) through the image handler, leading to remote code execution.
 </code>
 
-- [Nxploited/CVE-2025-8625](https://github.com/Nxploited/CVE-2025-8625)
 - [ret0x2A/CVE-2025-8625](https://github.com/ret0x2A/CVE-2025-8625)
 
 ### CVE-2025-8671 (2025-08-13)
@@ -1960,7 +1944,6 @@
 
 - [People-11/CVE-2025-10184_PoC](https://github.com/People-11/CVE-2025-10184_PoC)
 - [yuuouu/ColorOS-CVE-2025-10184](https://github.com/yuuouu/ColorOS-CVE-2025-10184)
-- [Webpage-gh/CVE-2025-10184-PoC](https://github.com/Webpage-gh/CVE-2025-10184-PoC)
 
 ### CVE-2025-10230 (2025-11-07)
 
@@ -4144,7 +4127,6 @@
 - [sermikr0/nextjs-middleware-auth-bypass](https://github.com/sermikr0/nextjs-middleware-auth-bypass)
 - [amalpvatayam67/day10-nextjs-middleware-lab](https://github.com/amalpvatayam67/day10-nextjs-middleware-lab)
 - [kuyrathdaro/cve-2025-29927](https://github.com/kuyrathdaro/cve-2025-29927)
-- [diogolourencodev/middleforce](https://github.com/diogolourencodev/middleforce)
 - [Bongni/CVE-2025-29927](https://github.com/Bongni/CVE-2025-29927)
 - [NS-Projects-Unina/CTF_CVE_DSP_1](https://github.com/NS-Projects-Unina/CTF_CVE_DSP_1)
 - [lucaschanzx/CVE-2025-29927-PoC](https://github.com/lucaschanzx/CVE-2025-29927-PoC)
@@ -4216,7 +4198,6 @@
 - [ThemeHackers/CVE-2025-30208](https://github.com/ThemeHackers/CVE-2025-30208)
 - [TH-SecForge/CVE-2025-30208](https://github.com/TH-SecForge/CVE-2025-30208)
 - [bugdotexe/CVE-2025-30208](https://github.com/bugdotexe/CVE-2025-30208)
-- [qodo-dev/CVE-2025-30208](https://github.com/qodo-dev/CVE-2025-30208)
 
 ### CVE-2025-30216 (2025-03-25)
 
@@ -7395,7 +7376,7 @@
 - [JahazielLem/NSE_CVE-2025-55182](https://github.com/JahazielLem/NSE_CVE-2025-55182)
 - [CerberusMrX/Cerberus-React2Shell-Scanner-Exploit](https://github.com/CerberusMrX/Cerberus-React2Shell-Scanner-Exploit)
 - [Saad-Ayady/react2shellNSE](https://github.com/Saad-Ayady/react2shellNSE)
-- [VeilVulp/RscScan](https://github.com/VeilVulp/RscScan)
+- [VeilVulp/RscScan-cve-2025-55182](https://github.com/VeilVulp/RscScan-cve-2025-55182)
 - [yz9yt/React2Shell-CTF](https://github.com/yz9yt/React2Shell-CTF)
 - [Gymnott1/CVE-2025-55182](https://github.com/Gymnott1/CVE-2025-55182)
 - [J4ck3LSyN-Gen2/CVE-2025-55182](https://github.com/J4ck3LSyN-Gen2/CVE-2025-55182)
@@ -7415,6 +7396,9 @@
 - [Nkwenti-Severian-Ndongtsop/POC_react2shell_CVE-2025-55182](https://github.com/Nkwenti-Severian-Ndongtsop/POC_react2shell_CVE-2025-55182)
 - [4nuxd/React2Shell](https://github.com/4nuxd/React2Shell)
 - [j0lt-github/react2shell-burp](https://github.com/j0lt-github/react2shell-burp)
+- [IrsyadSEC/CVE-2025-55182-MassPayloadAttack](https://github.com/IrsyadSEC/CVE-2025-55182-MassPayloadAttack)
+- [Shadowroot97/React2Shell-CVE-2025-55182](https://github.com/Shadowroot97/React2Shell-CVE-2025-55182)
+- [yuta3003/CVE-2025-55182](https://github.com/yuta3003/CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -7422,6 +7406,16 @@
 </code>
 
 - [Saturate/CVE-2025-55183](https://github.com/Saturate/CVE-2025-55183)
+- [kimtruth/CVE-2025-55183-poc](https://github.com/kimtruth/CVE-2025-55183-poc)
+- [williavs/nextjs-security-update](https://github.com/williavs/nextjs-security-update)
+
+### CVE-2025-55184 (2025-12-11)
+
+<code>A pre-authentication denial of service vulnerability exists in React Server Components versions 19.0.0, 19.0.1 19.1.0, 19.1.1, 19.1.2, 19.2.0 and 19.2.1, including the following packages: react-server-dom-parcel, react-server-dom-turbopack, and react-server-dom-webpack. The vulnerable code unsafely deserializes payloads from HTTP requests to Server Function endpoints, which can cause an infinite loop that hangs the server process and may prevent future HTTP requests from being served.
+</code>
+
+- [hans362/CVE-2025-55184-poc](https://github.com/hans362/CVE-2025-55184-poc)
+- [ejpir/CVE-2025-55184](https://github.com/ejpir/CVE-2025-55184)
 
 ### CVE-2025-55188 (2025-08-08)
 
@@ -7995,6 +7989,7 @@
 
 - [Ashwesker/Blackash-CVE-2025-58360](https://github.com/Ashwesker/Blackash-CVE-2025-58360)
 - [quyenheu/CVE-2025-58360](https://github.com/quyenheu/CVE-2025-58360)
+- [rxerium/CVE-2025-58360](https://github.com/rxerium/CVE-2025-58360)
 
 ### CVE-2025-58440
 - [ph-hitachi/CVE-2025-58440](https://github.com/ph-hitachi/CVE-2025-58440)
@@ -8247,13 +8242,6 @@
 
 - [akamai/CVE-2025-60719-AFD.SYS](https://github.com/akamai/CVE-2025-60719-AFD.SYS)
 
-### CVE-2025-60736 (2025-12-02)
-
-<code>code-projects Online Medicine Guide 1.0 is vulnerable to SQL Injection in /login.php via the upass parameter.
-</code>
-
-- [WinDyAlphA/CVE-2025-60736](https://github.com/WinDyAlphA/CVE-2025-60736)
-
 ### CVE-2025-60749 (2025-10-31)
 
 <code>DLL Hijacking vulnerability in Trimble SketchUp desktop 2025 via crafted libcef.dll used by sketchup_webhelper.exe.
@@ -8402,13 +8390,6 @@
 </code>
 
 - [Ashwesker/Blackash-CVE-2025-61481](https://github.com/Ashwesker/Blackash-CVE-2025-61481)
-
-### CVE-2025-61622 (2025-10-01)
-
-<code>Deserialization of untrusted data in python in pyfory versions 0.12.0 through 0.12.2, or the legacy pyfury versions from 0.1.0 through 0.10.3: allows arbitrary code execution. An application is vulnerable if it reads pyfory serialized data from untrusted sources. An attacker can craft a data stream that selects pickle-fallback serializer during deserialization, leading to the execution of `pickle.loads`, which is vulnerable to remote code execution.\n\nUsers are recommended to upgrade to pyfory version 0.12.3 or later, which has removed pickle fallback serializer and thus fixes this issue.
-</code>
-
-- [fa1consec/cve_2025_61622_poc](https://github.com/fa1consec/cve_2025_61622_poc)
 
 ### CVE-2025-61757 (2025-10-21)
 
@@ -9109,6 +9090,7 @@
 </code>
 
 - [Ashwesker/Blackash-CVE-2025-66516](https://github.com/Ashwesker/Blackash-CVE-2025-66516)
+- [chasingimpact/CVE-2025-66516-Writeup-POC](https://github.com/chasingimpact/CVE-2025-66516-Writeup-POC)
 
 ### CVE-2025-66628 (2025-12-10)
 
@@ -42953,6 +42935,7 @@
 </code>
 
 - [tea9/CVE-2020-0014-Toast](https://github.com/tea9/CVE-2020-0014-Toast)
+- [doudoudedi/CVE-2020-0014_Toast](https://github.com/doudoudedi/CVE-2020-0014_Toast)
 
 ### CVE-2020-0022 (2020-02-13)
 
@@ -50719,6 +50702,7 @@
 - [a1ex-var1amov/ctf-cve-2019-11043](https://github.com/a1ex-var1amov/ctf-cve-2019-11043)
 - [CodeHex083/phuip-fpizdam](https://github.com/CodeHex083/phuip-fpizdam)
 - [AndrewMas99/CVE-2019-11043-Vulnerability](https://github.com/AndrewMas99/CVE-2019-11043-Vulnerability)
+- [gon905332-jpg/cve-2019-11043.py](https://github.com/gon905332-jpg/cve-2019-11043.py)
 
 ### CVE-2019-11061 (2019-08-29)
 
