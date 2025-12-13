@@ -408,6 +408,7 @@
 - [Yucaerin/CVE-2025-2539](https://github.com/Yucaerin/CVE-2025-2539)
 - [d4rkh0rse/CVE-2025-2539](https://github.com/d4rkh0rse/CVE-2025-2539)
 - [AlvaXPloit/CVE-2025-2539](https://github.com/AlvaXPloit/CVE-2025-2539)
+- [fazaroot/CVE-2025-2539---File-Away-WordPress-Plugin-Arbitrary-File-Read](https://github.com/fazaroot/CVE-2025-2539---File-Away-WordPress-Plugin-Arbitrary-File-Read)
 
 ### CVE-2025-2563 (2025-04-14)
 
@@ -1396,7 +1397,6 @@
 <code>The StoryChief plugin for WordPress is vulnerable to arbitrary file uploads in all versions up to, and including, 1.0.42. This vulnerability occurs through the /wp-json/storychief/webhook REST-API endpoint that does not have sufficient filetype validation. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
 </code>
 
-- [Nxploited/CVE-2025-7441](https://github.com/Nxploited/CVE-2025-7441)
 - [AnotherSec/CVE-2025-7441](https://github.com/AnotherSec/CVE-2025-7441)
 
 ### CVE-2025-7461 (2025-07-12)
@@ -4626,7 +4626,6 @@
 - [MAAYTHM/CVE-2025-32462_32463-Lab](https://github.com/MAAYTHM/CVE-2025-32462_32463-Lab)
 - [toohau/CVE-2025-32462-32463-Detection-Script-](https://github.com/toohau/CVE-2025-32462-32463-Detection-Script-)
 - [j3r1ch0123/CVE-2025-32462](https://github.com/j3r1ch0123/CVE-2025-32462)
-- [harsh1verma/CVE-Analysis](https://github.com/harsh1verma/CVE-Analysis)
 
 ### CVE-2025-32463 (2025-06-30)
 
@@ -6120,7 +6119,6 @@
 
 - [ksnnd32/redis_exploit](https://github.com/ksnnd32/redis_exploit)
 - [Zain3311/CVE-2025-49844](https://github.com/Zain3311/CVE-2025-49844)
-- [lastvocher/redis-CVE-2025-49844](https://github.com/lastvocher/redis-CVE-2025-49844)
 - [srozb/reditrap](https://github.com/srozb/reditrap)
 - [pedrorichil/CVE-2025-49844](https://github.com/pedrorichil/CVE-2025-49844)
 - [Yuri08loveElaina/CVE-2025-49844](https://github.com/Yuri08loveElaina/CVE-2025-49844)
@@ -6872,6 +6870,7 @@
 </code>
 
 - [osman1337-security/CVE-2025-54100](https://github.com/osman1337-security/CVE-2025-54100)
+- [ThemeHackers/CVE-2025-54100](https://github.com/ThemeHackers/CVE-2025-54100)
 
 ### CVE-2025-54110 (2025-09-09)
 
@@ -7385,6 +7384,7 @@
 - [gagaltotal/tot-react-rce-CVE-2025-55182](https://github.com/gagaltotal/tot-react-rce-CVE-2025-55182)
 - [eaizy/react2hulud-scan](https://github.com/eaizy/react2hulud-scan)
 - [sho-luv/React2Shell](https://github.com/sho-luv/React2Shell)
+- [TheStingR/ReactOOPS-WriteUp](https://github.com/TheStingR/ReactOOPS-WriteUp)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -7624,13 +7624,6 @@
 </code>
 
 - [saykino/CVE-2025-56224](https://github.com/saykino/CVE-2025-56224)
-
-### CVE-2025-56243 (2025-10-07)
-
-<code>A Cross-Site Scripting (XSS) vulnerability was found in the register.php page of PuneethReddyHC Event Management System 1.0, where the event_id GET parameter is improperly handled. An attacker can craft a malicious URL to execute arbitrary JavaScript in the victim s browser by injecting code into this parameter.
-</code>
-
-- [hafizgemilang/CVE-2025-56243](https://github.com/hafizgemilang/CVE-2025-56243)
 
 ### CVE-2025-56311 (2025-09-23)
 
@@ -8384,7 +8377,6 @@
 
 - [siddu7575/CVE-2025-61882-CVE-2025-61884](https://github.com/siddu7575/CVE-2025-61882-CVE-2025-61884)
 - [rxerium/CVE-2025-61882-CVE-2025-61884](https://github.com/rxerium/CVE-2025-61882-CVE-2025-61884)
-- [Ashwesker/Blackash-CVE-2025-61882](https://github.com/Ashwesker/Blackash-CVE-2025-61882)
 - [zerozenxlabs/CVE-2025-61882-Oracle-EBS](https://github.com/zerozenxlabs/CVE-2025-61882-Oracle-EBS)
 - [MindflareX/CVE-2025-61882-POC](https://github.com/MindflareX/CVE-2025-61882-POC)
 - [AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit](https://github.com/AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit)
@@ -9016,6 +9008,7 @@
 - [Syzygy-K/CVE-2025-65964-Exploit](https://github.com/Syzygy-K/CVE-2025-65964-Exploit)
 - [Geekby/n8n-CVE-2025-65964](https://github.com/Geekby/n8n-CVE-2025-65964)
 - [Ashwesker/Blackash-CVE-2025-65964](https://github.com/Ashwesker/Blackash-CVE-2025-65964)
+- [Saboor-Hakimi-23/CVE-2025-65964](https://github.com/Saboor-Hakimi-23/CVE-2025-65964)
 
 ### CVE-2025-66022 (2025-11-26)
 
@@ -9073,6 +9066,9 @@
 </code>
 
 - [Ashwesker/Blackash-CVE-2025-66644](https://github.com/Ashwesker/Blackash-CVE-2025-66644)
+
+### CVE-2025-66947
+- [kabir0104k/CVE-2025-66947](https://github.com/kabir0104k/CVE-2025-66947)
 
 ### CVE-2025-67494 (2025-12-09)
 
@@ -14127,6 +14123,7 @@
 - [kljunowsky/CVE-2024-27348](https://github.com/kljunowsky/CVE-2024-27348)
 - [jakabakos/CVE-2024-27348-Apache-HugeGraph-RCE](https://github.com/jakabakos/CVE-2024-27348-Apache-HugeGraph-RCE)
 - [p0et08/CVE-2024-27348](https://github.com/p0et08/CVE-2024-27348)
+- [wqfh/MasterOfTheIndestry](https://github.com/wqfh/MasterOfTheIndestry)
 
 ### CVE-2024-27398 (2024-05-13)
 
@@ -47604,6 +47601,14 @@
 
 - [brahmiboudjema/CVE-2020-25637-libvirt-double-free](https://github.com/brahmiboudjema/CVE-2020-25637-libvirt-double-free)
 
+### CVE-2020-25681 (2021-01-20)
+
+<code>A flaw was found in dnsmasq before version 2.83. A heap-based buffer overflow was discovered in the way RRSets are sorted before validating with DNSSEC data. An attacker on the network, who can forge DNS replies such as that they are accepted as valid, could use this flaw to cause a buffer overflow with arbitrary data in a heap memory segment, possibly executing code on the machine. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.
+</code>
+
+- [nuliljj/kimocoder-CVE-2020-25681](https://github.com/nuliljj/kimocoder-CVE-2020-25681)
+- [nuliljj/CVE-2020-25681](https://github.com/nuliljj/CVE-2020-25681)
+
 ### CVE-2020-25686 (2021-01-20)
 
 <code>A flaw was found in dnsmasq before version 2.83. When receiving a query, dnsmasq does not check for an existing pending request for the same name and forwards a new request. By default, a maximum of 150 pending queries can be sent to upstream servers, so there can be at most 150 queries for the same name. This flaw allows an off-path attacker on the network to substantially reduce the number of attempts that it would have to perform to forge a reply and have it accepted by dnsmasq. This issue is mentioned in the &quot;Birthday Attacks&quot; section of RFC5452. If chained with CVE-2020-25684, the attack complexity of a successful attack is reduced. The highest threat from this vulnerability is to data integrity.
@@ -59519,6 +59524,13 @@
 </code>
 
 - [HaToan/CVE-2016-2173](https://github.com/HaToan/CVE-2016-2173)
+
+### CVE-2016-2183 (2016-09-01)
+
+<code>The DES and Triple DES ciphers, as used in the TLS, SSH, and IPSec protocols and other protocols and products, have a birthday bound of approximately four billion blocks, which makes it easier for remote attackers to obtain cleartext data via a birthday attack against a long-duration encrypted session, as demonstrated by an HTTPS session using Triple DES in CBC mode, aka a &quot;Sweet32&quot; attack.
+</code>
+
+- [ZakyHermawan/Simple-Sweet32](https://github.com/ZakyHermawan/Simple-Sweet32)
 
 ### CVE-2016-2233 (2017-01-18)
 
