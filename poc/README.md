@@ -416,13 +416,6 @@
 
 - [ubaydev/CVE-2025-2563](https://github.com/ubaydev/CVE-2025-2563)
 
-### CVE-2025-2568 (2025-04-08)
-
-<code>The Vayu Blocks – Gutenberg Blocks for WordPress &amp; WooCommerce plugin for WordPress is vulnerable to unauthorized access and modification of data due to missing capability checks on the 'vayu_blocks_get_toggle_switch_values_callback' and 'vayu_blocks_save_toggle_switch_callback' function in versions 1.0.4 to 1.2.1. This makes it possible for unauthenticated attackers to read plugin options and update any option with a key name ending in '_value'.
-</code>
-
-- [shinigami-777/PoC_CVE-2025-2568](https://github.com/shinigami-777/PoC_CVE-2025-2568)
-
 ### CVE-2025-2594 (2025-04-22)
 
 <code>The User Registration &amp; Membership WordPress plugin before 4.1.3 does not properly validate data in an AJAX action when the Membership Addon is enabled, allowing attackers to authenticate as any user, including administrators, by simply using the target account's user ID.
@@ -915,7 +908,6 @@
 </code>
 
 - [Nxploited/CVE-2025-4796](https://github.com/Nxploited/CVE-2025-4796)
-- [Pwdnx1337/CVE-2025-4796](https://github.com/Pwdnx1337/CVE-2025-4796)
 
 ### CVE-2025-4822 (2025-07-24)
 
@@ -1198,6 +1190,7 @@
 - [skimask1690/CVE-2025-6218-POC](https://github.com/skimask1690/CVE-2025-6218-POC)
 - [mulwareX/CVE-2025-6218-POC](https://github.com/mulwareX/CVE-2025-6218-POC)
 - [absholi7ly/CVE-2025-6218-WinRAR-Directory-Traversal-RCE](https://github.com/absholi7ly/CVE-2025-6218-WinRAR-Directory-Traversal-RCE)
+- [hatchepsoout/sigma-rules](https://github.com/hatchepsoout/sigma-rules)
 
 ### CVE-2025-6220 (2025-06-18)
 
@@ -1234,7 +1227,7 @@
 <code>The WooCommerce Designer Pro plugin for WordPress, used by the Pricom - Printing Company &amp; Design Services WordPress theme, is vulnerable to arbitrary file uploads due to missing file type validation in the 'wcdp_save_canvas_design_ajax' function in all versions up to, and including, 1.9.26. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
 </code>
 
-- [Pwdnx1337/CVE-2025-6440](https://github.com/Pwdnx1337/CVE-2025-6440)
+- [AnotherSec/CVE-2025-6440](https://github.com/AnotherSec/CVE-2025-6440)
 - [xxoprt/CVE-2025-6440](https://github.com/xxoprt/CVE-2025-6440)
 - [Nxploited/CVE-2025-6440](https://github.com/Nxploited/CVE-2025-6440)
 - [m2hcz/CVE-2025-6440-Poc-Exploit](https://github.com/m2hcz/CVE-2025-6440-Poc-Exploit)
@@ -1338,7 +1331,7 @@
 - [MrjHaxcore/CVE-2025-6934](https://github.com/MrjHaxcore/CVE-2025-6934)
 - [0xgh057r3c0n/CVE-2025-6934](https://github.com/0xgh057r3c0n/CVE-2025-6934)
 - [yukinime/CVE-2025-6934](https://github.com/yukinime/CVE-2025-6934)
-- [Pwdnx1337/CVE-2025-6934](https://github.com/Pwdnx1337/CVE-2025-6934)
+- [AnotherSec/CVE-2025-6934](https://github.com/AnotherSec/CVE-2025-6934)
 - [Rosemary1337/CVE-2025-6934](https://github.com/Rosemary1337/CVE-2025-6934)
 
 ### CVE-2025-6970 (2025-07-09)
@@ -1404,7 +1397,7 @@
 </code>
 
 - [Nxploited/CVE-2025-7441](https://github.com/Nxploited/CVE-2025-7441)
-- [Pwdnx1337/CVE-2025-7441](https://github.com/Pwdnx1337/CVE-2025-7441)
+- [AnotherSec/CVE-2025-7441](https://github.com/AnotherSec/CVE-2025-7441)
 
 ### CVE-2025-7461 (2025-07-12)
 
@@ -1523,7 +1516,6 @@
 <code>A potential insufficient access control vulnerability was reported in the Lenovo Dispatcher 3.0 and Dispatcher 3.1 drivers used by some Lenovo consumer notebooks that could allow an authenticated local user to execute code with elevated privileges. The Lenovo Dispatcher 3.2 driver is not affected. This vulnerability does not affect systems when the Windows feature Core Isolation Memory Integrity is enabled. Lenovo systems preloaded with Windows 11 have this feature enabled by default.
 </code>
 
-- [symeonp/Lenovo-CVE-2025-8061](https://github.com/symeonp/Lenovo-CVE-2025-8061)
 - [segura2010/lenovo-dispatcher-poc](https://github.com/segura2010/lenovo-dispatcher-poc)
 - [spawn451/CVE-2025-8061-Exploit](https://github.com/spawn451/CVE-2025-8061-Exploit)
 
@@ -1654,13 +1646,6 @@
 
 - [chimdi2700/CVE-2025-8571](https://github.com/chimdi2700/CVE-2025-8571)
 
-### CVE-2025-8625 (2025-09-30)
-
-<code>The Copypress Rest API plugin for WordPress is vulnerable to Remote Code Execution via copyreap_handle_image() Function in versions 1.1 to 1.2. The plugin falls back to a hard-coded JWT signing key when no secret is defined and does not restrict which file types can be fetched and saved as attachments. As a result, unauthenticated attackers can forge a valid token to gain elevated privileges and upload an arbitrary file (e.g. a PHP script) through the image handler, leading to remote code execution.
-</code>
-
-- [ret0x2A/CVE-2025-8625](https://github.com/ret0x2A/CVE-2025-8625)
-
 ### CVE-2025-8671 (2025-08-13)
 
 <code>A mismatch caused by client-triggered server-sent stream resets between HTTP/2 specifications and the internal architectures of some HTTP/2 implementations may result in excessive server resource consumption leading to denial-of-service (DoS).  By opening streams and then rapidly triggering the server to reset them—using malformed frames or flow control errors—an attacker can exploit incorrect stream accounting. Streams reset by the server are considered closed at the protocol level, even though backend processing continues. This allows a client to cause the server to handle an unbounded number of concurrent streams on a single connection. This CVE will be updated as affected product details are released.
@@ -1741,7 +1726,6 @@
 - [zenzue/CVE-2025-9074](https://github.com/zenzue/CVE-2025-9074)
 - [j3r1ch0123/CVE-2025-9074](https://github.com/j3r1ch0123/CVE-2025-9074)
 - [pucagit/CVE-2025-9074](https://github.com/pucagit/CVE-2025-9074)
-- [OilSeller2001/PoC-for-CVE-2025-9074](https://github.com/OilSeller2001/PoC-for-CVE-2025-9074)
 - [BridgerAlderson/CVE-2025-9074-PoC](https://github.com/BridgerAlderson/CVE-2025-9074-PoC)
 - [xwpdx0/poc-2025-9074](https://github.com/xwpdx0/poc-2025-9074)
 - [PtechAmanja/CVE-2025-9074-Docker-Desktop-Container-Escape](https://github.com/PtechAmanja/CVE-2025-9074-Docker-Desktop-Container-Escape)
@@ -2025,13 +2009,6 @@
 
 - [netspecters/CVE-2025-10742](https://github.com/netspecters/CVE-2025-10742)
 
-### CVE-2025-10874 (2025-10-24)
-
-<code>The Orbit Fox: Duplicate Page, Menu Icons, SVG Support, Cookie Notice, Custom Fonts &amp; More WordPress plugin before 3.0.2 does not limit URLs which may be used for the stock photo import feature, allowing the user to specify arbitrary URLs. This leads to a server-side request forgery as the user may force the server to access any URL of their choosing.
-</code>
-
-- [ryanmroth/Orbit-Fox_SSRF_CVE-2025-10874](https://github.com/ryanmroth/Orbit-Fox_SSRF_CVE-2025-10874)
-
 ### CVE-2025-11001 (2025-11-19)
 
 <code>7-Zip ZIP File Parsing Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. Interaction with this product is required to exploit this vulnerability but attack vectors may vary depending on the implementation.\n\nThe specific flaw exists within the handling of symbolic links in ZIP files. Crafted data in a ZIP file can cause the process to traverse to unintended directories. An attacker can leverage this vulnerability to execute code in the context of a service account. Was ZDI-CAN-26753.
@@ -2043,6 +2020,7 @@
 - [mbanyamer/CVE-2025-11001---7-Zip](https://github.com/mbanyamer/CVE-2025-11001---7-Zip)
 - [ranasen-rat/CVE-2025-11001](https://github.com/ranasen-rat/CVE-2025-11001)
 - [Ashwesker/Blackash-CVE-2025-11001](https://github.com/Ashwesker/Blackash-CVE-2025-11001)
+- [I3r1h0n/7Ziprowler](https://github.com/I3r1h0n/7Ziprowler)
 
 ### CVE-2025-11077 (2025-09-27)
 
@@ -2404,6 +2382,7 @@
 </code>
 
 - [zeropwn/pgadmin4-9.10-CVE-2025-13780](https://github.com/zeropwn/pgadmin4-9.10-CVE-2025-13780)
+- [meenakshisl/PoC-CVE-2025-13780](https://github.com/meenakshisl/PoC-CVE-2025-13780)
 
 ### CVE-2025-13796 (2025-11-30)
 
@@ -3009,6 +2988,7 @@
 </code>
 
 - [TheCyberGeek/CVE-2025-24367-Cacti-PoC](https://github.com/TheCyberGeek/CVE-2025-24367-Cacti-PoC)
+- [r0tn3x/CVE-2025-24367](https://github.com/r0tn3x/CVE-2025-24367)
 
 ### CVE-2025-24514 (2025-03-24)
 
@@ -4706,7 +4686,6 @@
 - [mihnasdsad/CVE-2025-32463](https://github.com/mihnasdsad/CVE-2025-32463)
 - [D3ltaFormation/CVE-2025-32463-Sudo-Chroot-Escape](https://github.com/D3ltaFormation/CVE-2025-32463-Sudo-Chroot-Escape)
 - [AC8999/CVE-2025-32463](https://github.com/AC8999/CVE-2025-32463)
-- [r3dBust3r/CVE-2025-32463](https://github.com/r3dBust3r/CVE-2025-32463)
 - [0x3c4dfa1/CVE-2025-32463](https://github.com/0x3c4dfa1/CVE-2025-32463)
 - [ricardomaia/CVE-2025-32463](https://github.com/ricardomaia/CVE-2025-32463)
 - [shazed-x/CVE-2025-32463](https://github.com/shazed-x/CVE-2025-32463)
@@ -4972,6 +4951,13 @@
 
 - [watchtowrlabs/watchTowr-vs-Dell-UnityVSA-PreAuth-CVE-2025-36604](https://github.com/watchtowrlabs/watchTowr-vs-Dell-UnityVSA-PreAuth-CVE-2025-36604)
 
+### CVE-2025-36924 (2025-12-11)
+
+<code>In ss_DecodeLcsAssistDataReqMsg(void) of ss_LcsManagement.c, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote (proximal/adjacent) escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
+</code>
+
+- [margaretegpid/CVE-2025-36924](https://github.com/margaretegpid/CVE-2025-36924)
+
 ### CVE-2025-37899 (2025-05-20)
 
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix use-after-free in session logoff\n\nThe sess-&gt;user object can currently be in use by another thread, for\nexample if another connection has sent a session setup request to\nbind to the session being free'd. The handler for that connection could\nbe in the smb2_sess_setup function which makes use of sess-&gt;user.
@@ -5095,13 +5081,6 @@
 
 - [byteReaper77/CVE-2025-39913](https://github.com/byteReaper77/CVE-2025-39913)
 
-### CVE-2025-39946 (2025-10-04)
-
-<code>In the Linux kernel, the following vulnerability has been resolved:\n\ntls: make sure to abort the stream if headers are bogus\n\nNormally we wait for the socket to buffer up the whole record\nbefore we service it. If the socket has a tiny buffer, however,\nwe read out the data sooner, to prevent connection stalls.\nMake sure that we abort the connection when we find out late\nthat the record is actually invalid. Retrying the parsing is\nfine in itself but since we copy some more data each time\nbefore we parse we can overflow the allocated skb space.\n\nConstructing a scenario in which we're under pressure without\nenough data in the socket to parse the length upfront is quite\nhard. syzbot figured out a way to do this by serving us the header\nin small OOB sends, and then filling in the recvbuf with a large\nnormal send.\n\nMake sure that tls_rx_msg_size() aborts strp, if we reach\nan invalid record there's really no way to recover.
-</code>
-
-- [farazsth98/exploit-CVE-2025-39946](https://github.com/farazsth98/exploit-CVE-2025-39946)
-
 ### CVE-2025-39964 (2025-10-13)
 
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: af_alg - Disallow concurrent writes in af_alg_sendmsg\n\nIssuing two writes to the same af_alg socket is bogus as the\ndata will be interleaved in an unpredictable fashion.  Furthermore,\nconcurrent writes may create inconsistencies in the internal\nsocket state.\n\nDisallow this by adding a new ctx-&gt;write field that indiciates\nexclusive ownership for writing.
@@ -5221,7 +5200,6 @@
 </code>
 
 - [rxerium/CVE-2025-41244](https://github.com/rxerium/CVE-2025-41244)
-- [haspiranti/CVE-2025-41244-PoC](https://github.com/haspiranti/CVE-2025-41244-PoC)
 - [NULL200OK/CVE-2025-41244](https://github.com/NULL200OK/CVE-2025-41244)
 
 ### CVE-2025-41373 (2025-08-01)
@@ -5272,6 +5250,20 @@
 - [ticofookfook/CVE-2025-43300](https://github.com/ticofookfook/CVE-2025-43300)
 - [Dark-life944/CVE-2025](https://github.com/Dark-life944/CVE-2025)
 - [7amzahard/CVE-2025-43300](https://github.com/7amzahard/CVE-2025-43300)
+
+### CVE-2025-43400 (2025-09-29)
+
+<code>An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in watchOS 26.1, tvOS 26.1. Processing a maliciously crafted font may lead to unexpected app termination or corrupt process memory.
+</code>
+
+- [csrXamfi/CVE-2025-43400](https://github.com/csrXamfi/CVE-2025-43400)
+
+### CVE-2025-43426 (2025-11-04)
+
+<code>A logging issue was addressed with improved data redaction. This issue is fixed in iOS 26.1 and iPadOS 26.1. An app may be able to access sensitive user data.
+</code>
+
+- [csrXamfi/CVE-2025-43426](https://github.com/csrXamfi/CVE-2025-43426)
 
 ### CVE-2025-43504 (2025-11-04)
 
@@ -5628,22 +5620,7 @@
 <code>Redis is an open source, in-memory database that persists on disk. Versions 8.2.1 and below allow an authenticated user to use a specially crafted Lua script to cause an integer overflow and potentially lead to remote code execution The problem exists in all versions of Redis with Lua scripting. This issue is fixed in version 8.2.2.
 </code>
 
-- [dwisiswant0/CVE-2025-46817](https://github.com/dwisiswant0/CVE-2025-46817)
 - [slayerkkkk/CVE-2025-46817-PoC](https://github.com/slayerkkkk/CVE-2025-46817-PoC)
-
-### CVE-2025-46818 (2025-10-03)
-
-<code>Redis is an open source, in-memory database that persists on disk. Versions 8.2.1 and below allow an authenticated user to use a specially crafted Lua script to manipulate different LUA objects and potentially run their own code in the context of another user. The problem exists in all versions of Redis with LUA scripting. This issue is fixed in version 8.2.2. A workaround to mitigate the problem without patching the redis-server executable is to prevent users from executing LUA scripts. This can be done using ACL to block a script by restricting both the EVAL and FUNCTION command families.
-</code>
-
-- [dwisiswant0/CVE-2025-46818](https://github.com/dwisiswant0/CVE-2025-46818)
-
-### CVE-2025-46819 (2025-10-03)
-
-<code>Redis is an open source, in-memory database that persists on disk. Versions 8.2.1 and below allow an authenticated user to use a specially crafted LUA script to read out-of-bound data or crash the server and subsequent denial of service. The problem exists in all versions of Redis with Lua scripting. This issue is fixed in version 8.2.2. To workaround this issue without patching the redis-server executable is to prevent users from executing Lua scripts. This can be done using ACL to block a script by restricting both the EVAL and FUNCTION command families.
-</code>
-
-- [dwisiswant0/CVE-2025-46819](https://github.com/dwisiswant0/CVE-2025-46819)
 
 ### CVE-2025-46822 (2025-05-21)
 
@@ -6143,9 +6120,6 @@
 
 - [ksnnd32/redis_exploit](https://github.com/ksnnd32/redis_exploit)
 - [Zain3311/CVE-2025-49844](https://github.com/Zain3311/CVE-2025-49844)
-- [gopinaath/CVE-2025-49844-discovery](https://github.com/gopinaath/CVE-2025-49844-discovery)
-- [dwisiswant0/CVE-2025-49844](https://github.com/dwisiswant0/CVE-2025-49844)
-- [raminfp/redis_exploit](https://github.com/raminfp/redis_exploit)
 - [lastvocher/redis-CVE-2025-49844](https://github.com/lastvocher/redis-CVE-2025-49844)
 - [srozb/reditrap](https://github.com/srozb/reditrap)
 - [pedrorichil/CVE-2025-49844](https://github.com/pedrorichil/CVE-2025-49844)
@@ -6708,7 +6682,6 @@
 
 - [Hex00-0x4/FortiWeb-CVE-2025-52970-Authentication-Bypass](https://github.com/Hex00-0x4/FortiWeb-CVE-2025-52970-Authentication-Bypass)
 - [34zY/CVE-2025-52970](https://github.com/34zY/CVE-2025-52970)
-- [imbas007/POC-CVE-2025-52970](https://github.com/imbas007/POC-CVE-2025-52970)
 
 ### CVE-2025-53072 (2025-10-21)
 
@@ -7399,6 +7372,19 @@
 - [IrsyadSEC/CVE-2025-55182-MassPayloadAttack](https://github.com/IrsyadSEC/CVE-2025-55182-MassPayloadAttack)
 - [Shadowroot97/React2Shell-CVE-2025-55182](https://github.com/Shadowroot97/React2Shell-CVE-2025-55182)
 - [yuta3003/CVE-2025-55182](https://github.com/yuta3003/CVE-2025-55182)
+- [securifyai/React2Shell-CVE-2025-55182](https://github.com/securifyai/React2Shell-CVE-2025-55182)
+- [W41T3D3V1L/COMPLETE-CVE-2025-55182](https://github.com/W41T3D3V1L/COMPLETE-CVE-2025-55182)
+- [0x5k/rs_CVE-2025-55182_React2Shell](https://github.com/0x5k/rs_CVE-2025-55182_React2Shell)
+- [raivenLockdown/RCE_React2Shell_ButCooler-SomeUselessUsefulThingsLMAO-](https://github.com/raivenLockdown/RCE_React2Shell_ButCooler-SomeUselessUsefulThingsLMAO-)
+- [oguri-souhei/CVE-2025-55182](https://github.com/oguri-souhei/CVE-2025-55182)
+- [xalgord/React2Shell](https://github.com/xalgord/React2Shell)
+- [caohungphu/react2shell](https://github.com/caohungphu/react2shell)
+- [ryanhafid/PoC_CVE-2025-55182](https://github.com/ryanhafid/PoC_CVE-2025-55182)
+- [ryanhafid/Scan_CVE-2025-55182](https://github.com/ryanhafid/Scan_CVE-2025-55182)
+- [0xLutfifakee/CVE-2025-55182-React2Shell](https://github.com/0xLutfifakee/CVE-2025-55182-React2Shell)
+- [gagaltotal/tot-react-rce-CVE-2025-55182](https://github.com/gagaltotal/tot-react-rce-CVE-2025-55182)
+- [eaizy/react2hulud-scan](https://github.com/eaizy/react2hulud-scan)
+- [sho-luv/React2Shell](https://github.com/sho-luv/React2Shell)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -7408,6 +7394,9 @@
 - [Saturate/CVE-2025-55183](https://github.com/Saturate/CVE-2025-55183)
 - [kimtruth/CVE-2025-55183-poc](https://github.com/kimtruth/CVE-2025-55183-poc)
 - [williavs/nextjs-security-update](https://github.com/williavs/nextjs-security-update)
+- [X-Cotang/CVE-2025-55183_POC](https://github.com/X-Cotang/CVE-2025-55183_POC)
+- [omaidnebari/RSC-Scanner-POC](https://github.com/omaidnebari/RSC-Scanner-POC)
+- [StealthMoud/react-server-cve-lab](https://github.com/StealthMoud/react-server-cve-lab)
 
 ### CVE-2025-55184 (2025-12-11)
 
@@ -7416,6 +7405,7 @@
 
 - [hans362/CVE-2025-55184-poc](https://github.com/hans362/CVE-2025-55184-poc)
 - [ejpir/CVE-2025-55184](https://github.com/ejpir/CVE-2025-55184)
+- [BakhodiribnYashinibnMansur/CVE-2025-55184](https://github.com/BakhodiribnYashinibnMansur/CVE-2025-55184)
 
 ### CVE-2025-55188 (2025-08-08)
 
@@ -7489,9 +7479,6 @@
 </code>
 
 - [ddobrev25/CVE-2025-55580](https://github.com/ddobrev25/CVE-2025-55580)
-
-### CVE-2025-55616
-- [livepwn/CVE-2025-55616](https://github.com/livepwn/CVE-2025-55616)
 
 ### CVE-2025-55668 (2025-08-13)
 
@@ -7602,13 +7589,6 @@
 </code>
 
 - [Yashodhanvivek/Agatsa-EasyTouch-Plus---CVE-2025-56019](https://github.com/Yashodhanvivek/Agatsa-EasyTouch-Plus---CVE-2025-56019)
-
-### CVE-2025-56132 (2025-09-30)
-
-<code>LiquidFiles filetransfer server is vulnerable to a user enumeration issue in its password reset functionality. The application returns distinguishable responses for valid and invalid email addresses, allowing unauthenticated attackers to determine the existence of user accounts. Version 4.2 introduces user-based lockout mechanisms to mitigate brute-force attacks, user enumeration remains possible by default. In versions prior to 4.2, no such user-level protection is in place, only basic IP-based rate limiting is enforced. This IP-based protection can be bypassed by distributing requests across multiple IPs (e.g., rotating IP or proxies). Effectively bypassing both login and password reset security controls. Successful exploitation allows an attacker to enumerate valid email addresses registered for the application, increasing the risk of follow-up attacks such as password spraying.
-</code>
-
-- [fredericgoossens/CVE-2025-56132-Liquidfiles](https://github.com/fredericgoossens/CVE-2025-56132-Liquidfiles)
 
 ### CVE-2025-56218 (2025-10-17)
 
@@ -7990,6 +7970,7 @@
 - [Ashwesker/Blackash-CVE-2025-58360](https://github.com/Ashwesker/Blackash-CVE-2025-58360)
 - [quyenheu/CVE-2025-58360](https://github.com/quyenheu/CVE-2025-58360)
 - [rxerium/CVE-2025-58360](https://github.com/rxerium/CVE-2025-58360)
+- [Joker-Wiggin/CVE-2025-58360-GeoServer-XXE](https://github.com/Joker-Wiggin/CVE-2025-58360-GeoServer-XXE)
 
 ### CVE-2025-58440
 - [ph-hitachi/CVE-2025-58440](https://github.com/ph-hitachi/CVE-2025-58440)
@@ -8098,7 +8079,6 @@
 <code>Unity Runtime before 2025-10-02 on Android, Windows, macOS, and Linux allows argument injection that can result in loading of library code from an unintended location. If an application was built with a version of Unity Editor that had the vulnerable Unity Runtime code, then an adversary may be able to execute code on, and exfiltrate confidential information from, the machine on which that application is running. NOTE: product status is provided for Unity Editor because that is the information available from the Supplier. However, updating Unity Editor typically does not address the effects of the vulnerability; instead, it is necessary to rebuild and redeploy all affected applications.
 </code>
 
-- [GithubKillsMyOpsec/CVE-2025-59489-POC](https://github.com/GithubKillsMyOpsec/CVE-2025-59489-POC)
 - [taptap/cve-2025-59489](https://github.com/taptap/cve-2025-59489)
 
 ### CVE-2025-59501 (2025-10-31)
@@ -8129,13 +8109,6 @@
 </code>
 
 - [At0mXploit/CVE-2025-59843-CVE-2025-59932](https://github.com/At0mXploit/CVE-2025-59843-CVE-2025-59932)
-
-### CVE-2025-59934 (2025-09-26)
-
-<code>Formbricks is an open source qualtrics alternative. Prior to version 4.0.1, Formbricks is missing JWT signature verification. This vulnerability stems from a token validation routine that only decodes JWTs (jwt.decode) without verifying their signatures. Both the email verification token login path and the password reset server action use the same validator, which does not check the token’s signature, expiration, issuer, or audience. If an attacker learns the victim’s actual user.id, they can craft an arbitrary JWT with an alg: &quot;none&quot; header and use it to authenticate and reset the victim’s password. This issue has been patched in version 4.0.1.
-</code>
-
-- [suriryuk/cve-2025-59934](https://github.com/suriryuk/cve-2025-59934)
 
 ### CVE-2025-60013 (2025-10-15)
 
@@ -8218,15 +8191,6 @@
 </code>
 
 - [Clicksafeae/CVE-2025-60595](https://github.com/Clicksafeae/CVE-2025-60595)
-
-### CVE-2025-60654
-- [DotAdrien/CVE-2025-60654](https://github.com/DotAdrien/CVE-2025-60654)
-
-### CVE-2025-60655
-- [DotAdrien/CVE-2025-60655](https://github.com/DotAdrien/CVE-2025-60655)
-
-### CVE-2025-60656
-- [DotAdrien/CVE-2025-60656](https://github.com/DotAdrien/CVE-2025-60656)
 
 ### CVE-2025-60710 (2025-11-11)
 
@@ -8420,8 +8384,6 @@
 
 - [siddu7575/CVE-2025-61882-CVE-2025-61884](https://github.com/siddu7575/CVE-2025-61882-CVE-2025-61884)
 - [rxerium/CVE-2025-61882-CVE-2025-61884](https://github.com/rxerium/CVE-2025-61882-CVE-2025-61884)
-- [watchtowrlabs/watchTowr-vs-Oracle-E-Business-Suite-CVE-2025-61882](https://github.com/watchtowrlabs/watchTowr-vs-Oracle-E-Business-Suite-CVE-2025-61882)
-- [Sachinart/CVE-2025-61882](https://github.com/Sachinart/CVE-2025-61882)
 - [Ashwesker/Blackash-CVE-2025-61882](https://github.com/Ashwesker/Blackash-CVE-2025-61882)
 - [zerozenxlabs/CVE-2025-61882-Oracle-EBS](https://github.com/zerozenxlabs/CVE-2025-61882-Oracle-EBS)
 - [MindflareX/CVE-2025-61882-POC](https://github.com/MindflareX/CVE-2025-61882-POC)
@@ -8451,7 +8413,6 @@
 <code>ssh in OpenSSH before 10.1 allows control characters in usernames that originate from certain possibly untrusted sources, potentially leading to code execution when a ProxyCommand is used. The untrusted sources are the command line and %-sequence expansion of a configuration file. (A configuration file that provides a complete literal username is not categorized as an untrusted source.)
 </code>
 
-- [dgl/cve-2025-61984-poc](https://github.com/dgl/cve-2025-61984-poc)
 - [flyskyfire/cve-2025-61984-poc](https://github.com/flyskyfire/cve-2025-61984-poc)
 
 ### CVE-2025-62168 (2025-10-17)
@@ -8845,8 +8806,6 @@
 - [omarkurt/django-connector-CVE-2025-64459-testbed](https://github.com/omarkurt/django-connector-CVE-2025-64459-testbed)
 - [stanly363/CVE-2025-64459-Poc](https://github.com/stanly363/CVE-2025-64459-Poc)
 - [ZeYrOXxXxXxX/CVE-2025-64459](https://github.com/ZeYrOXxXxXxX/CVE-2025-64459)
-- [ALPYAHYA/CVE-2025-64459-Exploit-Fix](https://github.com/ALPYAHYA/CVE-2025-64459-Exploit-Fix)
-- [ALPYAHYA/CVE-2025-64459-Exploit-PoC](https://github.com/ALPYAHYA/CVE-2025-64459-Exploit-PoC)
 
 ### CVE-2025-64484 (2025-11-10)
 
@@ -8869,6 +8828,13 @@
 </code>
 
 - [Ashwesker/Blackash-CVE-2025-64500](https://github.com/Ashwesker/Blackash-CVE-2025-64500)
+
+### CVE-2025-64512 (2025-11-10)
+
+<code>Pdfminer.six is a community maintained fork of the original PDFMiner, a tool for extracting information from PDF documents. Prior to version 20251107, pdfminer.six will execute arbitrary code from a malicious pickle file if provided with a malicious PDF file. The `CMapDB._load_data()` function in pdfminer.six uses `pickle.loads()` to deserialize pickle files. These pickle files are supposed to be part of the pdfminer.six distribution stored in the `cmap/` directory, but a malicious PDF can specify an alternative directory and filename as long as the filename ends in `.pickle.gz`. A malicious, zipped pickle file can then contain code which will automatically execute when the PDF is processed. Version 20251107 fixes the issue.
+</code>
+
+- [luigigubello/CVE-2025-64512-Polyglot-PoC](https://github.com/luigigubello/CVE-2025-64512-Polyglot-PoC)
 
 ### CVE-2025-64513 (2025-11-10)
 
@@ -9083,6 +9049,8 @@
 - [strainxx/react2shell-honeypot](https://github.com/strainxx/react2shell-honeypot)
 - [changgun-lee/Next.js-RSC-RCE-Scanner-CVE-2025-66478](https://github.com/changgun-lee/Next.js-RSC-RCE-Scanner-CVE-2025-66478)
 - [Code42Cate/nexts-cve-2025-66478-exploit](https://github.com/Code42Cate/nexts-cve-2025-66478-exploit)
+- [viperh/poc-cve-next](https://github.com/viperh/poc-cve-next)
+- [abdozkaya/rsc-security-auditor](https://github.com/abdozkaya/rsc-security-auditor)
 
 ### CVE-2025-66516 (2025-12-04)
 
@@ -17047,6 +17015,13 @@
 </code>
 
 - [baroi-ai/CVE-2024-42658](https://github.com/baroi-ai/CVE-2024-42658)
+
+### CVE-2024-42758 (2024-08-16)
+
+<code>A Cross-site Scripting (XSS) vulnerability exists in version v2024-01-05 of the indexmenu plugin when is used and enabled in Dokuwiki (Open Source Wiki Engine). A malicious attacker can input XSS payloads for example when creating or editing existing page, to trigger the XSS on Dokuwiki, which is then stored in .txt file (due to nature of how Dokuwiki is designed), which presents stored XSS.
+</code>
+
+- [1s1ldur/CVE-2024-42758](https://github.com/1s1ldur/CVE-2024-42758)
 
 ### CVE-2024-42834 (2024-11-13)
 
@@ -36875,6 +36850,7 @@
 - [shadowabi/Laravel-CVE-2021-3129](https://github.com/shadowabi/Laravel-CVE-2021-3129)
 - [JacobEbben/CVE-2021-3129](https://github.com/JacobEbben/CVE-2021-3129)
 - [hupe1980/CVE-2021-3129](https://github.com/hupe1980/CVE-2021-3129)
+- [0nion1/CVE-2021-3129](https://github.com/0nion1/CVE-2021-3129)
 - [MadExploits/Laravel-debug-Checker](https://github.com/MadExploits/Laravel-debug-Checker)
 - [ajisai-babu/CVE-2021-3129-exp](https://github.com/ajisai-babu/CVE-2021-3129-exp)
 - [keyuan15/CVE-2021-3129](https://github.com/keyuan15/CVE-2021-3129)
@@ -37297,7 +37273,6 @@
 - [xcanwin/CVE-2021-4034-UniontechOS](https://github.com/xcanwin/CVE-2021-4034-UniontechOS)
 - [artemis-mike/cve-2021-4034](https://github.com/artemis-mike/cve-2021-4034)
 - [dadvlingd/CVE-2021-4034](https://github.com/dadvlingd/CVE-2021-4034)
-- [nobelh/CVE-2021-4034](https://github.com/nobelh/CVE-2021-4034)
 - [tahaafarooq/poppy](https://github.com/tahaafarooq/poppy)
 - [PwnFunction/CVE-2021-4034](https://github.com/PwnFunction/CVE-2021-4034)
 - [c3c/CVE-2021-4034](https://github.com/c3c/CVE-2021-4034)
@@ -56163,7 +56138,7 @@
 
 - [aeroot/WP-GDPR-Compliance-Plugin-Exploit](https://github.com/aeroot/WP-GDPR-Compliance-Plugin-Exploit)
 - [cved-sources/cve-2018-19207](https://github.com/cved-sources/cve-2018-19207)
-- [Pwdnx1337/CVE-2018-19207](https://github.com/Pwdnx1337/CVE-2018-19207)
+- [AnotherSec/CVE-2018-19207](https://github.com/AnotherSec/CVE-2018-19207)
 
 ### CVE-2018-19246 (2018-11-13)
 
@@ -57948,6 +57923,7 @@
 - [BaptisteContreras/CVE-2017-8917-Joomla](https://github.com/BaptisteContreras/CVE-2017-8917-Joomla)
 - [gloliveira1701/Joomblah](https://github.com/gloliveira1701/Joomblah)
 - [xcalts/CVE-2017-8917](https://github.com/xcalts/CVE-2017-8917)
+- [yayateayayatea/cve-2017-8917](https://github.com/yayateayayatea/cve-2017-8917)
 
 ### CVE-2017-9096 (2017-11-08)
 
@@ -62204,7 +62180,7 @@
 <code>The MailPoet Newsletters (wysija-newsletters) plugin before 2.6.7 for WordPress allows remote attackers to bypass authentication and execute arbitrary PHP code by uploading a crafted theme using wp-admin/admin-post.php and accessing the theme in wp-content/uploads/wysija/themes/mailp/.
 </code>
 
-- [Pwdnx1337/CVE-2014-4725](https://github.com/Pwdnx1337/CVE-2014-4725)
+- [AnotherSec/CVE-2014-4725](https://github.com/AnotherSec/CVE-2014-4725)
 
 ### CVE-2014-4936 (2014-12-16)
 
@@ -63977,7 +63953,7 @@
 
 - [hupe1980/CVE-2009-4623](https://github.com/hupe1980/CVE-2009-4623)
 - [kernel-cyber/CVE-2009-4623](https://github.com/kernel-cyber/CVE-2009-4623)
-- [MonsempesSamuel/CVE-2009-4623](https://github.com/MonsempesSamuel/CVE-2009-4623)
+- [sammonsempes/CVE-2009-4623](https://github.com/sammonsempes/CVE-2009-4623)
 
 ### CVE-2009-4660 (2010-03-03)
 
@@ -64752,13 +64728,6 @@
 </code>
 
 - [alt3kx/CVE-2001-1442](https://github.com/alt3kx/CVE-2001-1442)
-
-### CVE-2001-1473 (2005-04-21)
-
-<code>The SSH-1 protocol allows remote servers to conduct man-in-the-middle attacks and replay a client challenge response to a target server by creating a Session ID that matches the Session ID of the target, but which uses a public key pair that is weaker than the target's public key, which allows the attacker to compute the corresponding private key and use the target's Session ID with the compromised key pair to masquerade as the target.
-</code>
-
-- [alexandermoro/cve-2001-1473](https://github.com/alexandermoro/cve-2001-1473)
 
 ### CVE-2001-3389
 - [becrevex/Gaston](https://github.com/becrevex/Gaston)
