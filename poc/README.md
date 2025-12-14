@@ -856,13 +856,6 @@
 
 - [MantisToboggan-git/CVE-2025-4632-POC](https://github.com/MantisToboggan-git/CVE-2025-4632-POC)
 
-### CVE-2025-4658 (2025-05-13)
-
-<code>Versions of OpenPubkey library prior to 0.10.0  contained a vulnerability that would allow a specially crafted JWS to bypass signature verification. As OPKSSH depends on the OpenPubkey library for authentication, this vulnerability in OpenPubkey also applies to OPKSSH versions prior to 0.5.0 and would allow an attacker to bypass OPKSSH authentication.
-</code>
-
-- [stuxbench/dropbear-cve-2025-4658](https://github.com/stuxbench/dropbear-cve-2025-4658)
-
 ### CVE-2025-4660 (2025-05-13)
 
 <code>A remote code execution vulnerability exists in the Windows agent component of SecureConnector due to improper access controls on a named pipe. The pipe is accessible to the Everyone group and does not restrict remote connections, allowing any network-based attacker to connect without authentication. By interacting with this pipe, an attacker can redirect the agent to communicate with a rogue server that can issue commands via the SecureConnector Agent. \n\n\n\nThis does not impact Linux or OSX Secure Connector.
@@ -1370,13 +1363,6 @@
 
 - [Nxploited/CVE-2025-7340](https://github.com/Nxploited/CVE-2025-7340)
 - [Kai-One001/WordPress-HT-Contact-CVE-2025-7340-RCE](https://github.com/Kai-One001/WordPress-HT-Contact-CVE-2025-7340-RCE)
-
-### CVE-2025-7401 (2025-07-11)
-
-<code>The Premium Age Verification / Restriction for WordPress plugin for WordPress is vulnerable to arbitrary file read and write due to the existence of an insufficiently protected remote support functionality in remote_tunnel.php in all versions up to, and including, 3.0.2. This makes it possible for unauthenticated attackers to read from or write to arbitrary files on the affected site's server which may make the exposure of sensitive information or remote code execution possible.
-</code>
-
-- [Nxploited/CVE-2025-7401](https://github.com/Nxploited/CVE-2025-7401)
 
 ### CVE-2025-7404 (2025-07-24)
 
@@ -1946,20 +1932,6 @@
 
 - [ivansmc00/CVE-2025-10351-POC](https://github.com/ivansmc00/CVE-2025-10351-POC)
 
-### CVE-2025-10352 (2025-10-08)
-
-<code>Vulnerability in the melis-core module of Melis Technology's Melis Platform, which, if exploited, allows an unauthenticated attacker to create an administrator account via a request to '/melis/MelisCore/ToolUser/addNewUser'.
-</code>
-
-- [ivansmc00/CVE-2025-10352-POC](https://github.com/ivansmc00/CVE-2025-10352-POC)
-
-### CVE-2025-10353 (2025-10-08)
-
-<code>File upload leading to remote code execution (RCE) in the “melis-cms-slider” module of Melis Technology's Melis Platform. This vulnerability allows an attacker to upload a malicious file via a POST request to '/melis/MelisCmsSlider/MelisCmsSliderDetails/saveDetailsForm' using the 'mcsdetail_img' parameter.
-</code>
-
-- [ivansmc00/CVE-2025-10353-POC](https://github.com/ivansmc00/CVE-2025-10353-POC)
-
 ### CVE-2025-10377 (2025-09-26)
 
 <code>The System Dashboard plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 2.8.20. This is due to missing nonce validation on the sd_toggle_logs() function. This makes it possible for unauthenticated attackers to toggle critical logging settings including Page Access Logs, Error Logs, and Email Delivery Logs via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.
@@ -2391,6 +2363,13 @@
 
 - [0xcucumbersalad/CVE-2025-13796-PoC](https://github.com/0xcucumbersalad/CVE-2025-13796-PoC)
 
+### CVE-2025-14221 (2025-12-08)
+
+<code>A vulnerability was detected in SourceCodester Online Banking System 1.0. This impacts an unknown function of the file /?page=user. The manipulation of the argument First Name/Last Name results in cross site scripting. The attack can be launched remotely. The exploit is now public and may be used.
+</code>
+
+- [fatmatrabelsi17/CVE-2025-14221](https://github.com/fatmatrabelsi17/CVE-2025-14221)
+
 ### CVE-2025-20029 (2025-02-05)
 
 <code>Command injection vulnerability exists in iControl REST and BIG-IP TMOS Shell (tmsh) save command, which may allow an authenticated attacker to execute arbitrary system commands.\n\n \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
@@ -2405,7 +2384,7 @@
 </code>
 
 - [Yuri08loveElaina/CVE-2025-20124_and_CVE-2025-20125](https://github.com/Yuri08loveElaina/CVE-2025-20124_and_CVE-2025-20125)
-- [137f/Cisco-ISE-3.0---Remote-Code-Execution-RCE-](https://github.com/137f/Cisco-ISE-3.0---Remote-Code-Execution-RCE-)
+- [ftz7/Cisco-ISE-3.0---Remote-Code-Execution-RCE-](https://github.com/ftz7/Cisco-ISE-3.0---Remote-Code-Execution-RCE-)
 
 ### CVE-2025-20260 (2025-06-18)
 
@@ -2606,13 +2585,6 @@
 </code>
 
 - [DoTTak/CVE-2025-22352](https://github.com/DoTTak/CVE-2025-22352)
-
-### CVE-2025-22441 (2025-09-04)
-
-<code>In getContextForResourcesEnsuringCorrectCachedApkPaths of RemoteViews.java, there is a possible way to load arbitrary java code in a privileged context due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.
-</code>
-
-- [michalbednarski/ResourcePoison](https://github.com/michalbednarski/ResourcePoison)
 
 ### CVE-2025-22457 (2025-04-03)
 
@@ -3089,7 +3061,7 @@
 - [x00byte/PutScanner](https://github.com/x00byte/PutScanner)
 - [Shivshantp/CVE-2025-24813](https://github.com/Shivshantp/CVE-2025-24813)
 - [cyglegit/CVE-2025-24813](https://github.com/cyglegit/CVE-2025-24813)
-- [137f/PoC-CVE-2025-24813](https://github.com/137f/PoC-CVE-2025-24813)
+- [ftz7/PoC-CVE-2025-24813](https://github.com/ftz7/PoC-CVE-2025-24813)
 - [thebringerofdeath789/CVE-2025-24813](https://github.com/thebringerofdeath789/CVE-2025-24813)
 - [threadpoolx/CVE-2025-24813-Remote-Code-Execution-in-Apache-Tomcat](https://github.com/threadpoolx/CVE-2025-24813-Remote-Code-Execution-in-Apache-Tomcat)
 - [drcrypterdotru/Apache-GOExploiter](https://github.com/drcrypterdotru/Apache-GOExploiter)
@@ -4605,13 +4577,6 @@
 
 - [cyhe50/cve-2025-32434-poc](https://github.com/cyhe50/cve-2025-32434-poc)
 
-### CVE-2025-32444 (2025-04-30)
-
-<code>vLLM is a high-throughput and memory-efficient inference and serving engine for LLMs. Versions starting from 0.6.5 and prior to 0.8.5, having vLLM integration with mooncake, are vulnerable to remote code execution due to using pickle based serialization over unsecured ZeroMQ sockets. The vulnerable sockets were set to listen on all network interfaces, increasing the likelihood that an attacker is able to reach the vulnerable ZeroMQ sockets to carry out an attack. vLLM instances that do not make use of the mooncake integration are not vulnerable. This issue has been patched in version 0.8.5.
-</code>
-
-- [stuxbench/vllm-cve-2025-32444](https://github.com/stuxbench/vllm-cve-2025-32444)
-
 ### CVE-2025-32462 (2025-06-30)
 
 <code>Sudo before 1.9.17p1, when used with a sudoers file that specifies a host that is neither the current host nor ALL, allows listed users to execute commands on unintended machines.
@@ -4685,9 +4650,7 @@
 - [mihnasdsad/CVE-2025-32463](https://github.com/mihnasdsad/CVE-2025-32463)
 - [D3ltaFormation/CVE-2025-32463-Sudo-Chroot-Escape](https://github.com/D3ltaFormation/CVE-2025-32463-Sudo-Chroot-Escape)
 - [AC8999/CVE-2025-32463](https://github.com/AC8999/CVE-2025-32463)
-- [0x3c4dfa1/CVE-2025-32463](https://github.com/0x3c4dfa1/CVE-2025-32463)
 - [ricardomaia/CVE-2025-32463](https://github.com/ricardomaia/CVE-2025-32463)
-- [shazed-x/CVE-2025-32463](https://github.com/shazed-x/CVE-2025-32463)
 - [cybershaolin47/CVE-2025-32463_POC](https://github.com/cybershaolin47/CVE-2025-32463_POC)
 - [cybertechajju/CVE-2025-32463](https://github.com/cybertechajju/CVE-2025-32463)
 - [dr4x-c0d3r/sudo-chroot](https://github.com/dr4x-c0d3r/sudo-chroot)
@@ -4964,13 +4927,6 @@
 
 - [SeanHeelan/o3_finds_cve-2025-37899](https://github.com/SeanHeelan/o3_finds_cve-2025-37899)
 - [vett3x/SMB-LINUX-CVE-2025-37899](https://github.com/vett3x/SMB-LINUX-CVE-2025-37899)
-
-### CVE-2025-37947 (2025-05-20)
-
-<code>In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: prevent out-of-bounds stream writes by validating *pos\n\nksmbd_vfs_stream_write() did not validate whether the write offset\n(*pos) was within the bounds of the existing stream data length (v_len).\nIf *pos was greater than or equal to v_len, this could lead to an\nout-of-bounds memory write.\n\nThis patch adds a check to ensure *pos is less than v_len before\nproceeding. If the condition fails, -EINVAL is returned.
-</code>
-
-- [doyensec/KSMBD-CVE-2025-37947](https://github.com/doyensec/KSMBD-CVE-2025-37947)
 
 ### CVE-2025-38001 (2025-06-06)
 
@@ -5904,7 +5860,7 @@
 
 - [Skynoxk/CVE-2025-48703](https://github.com/Skynoxk/CVE-2025-48703)
 - [itstarsec/CVE-2025-48703](https://github.com/itstarsec/CVE-2025-48703)
-- [137f/PoC-CVE-2025-48703](https://github.com/137f/PoC-CVE-2025-48703)
+- [ftz7/PoC-CVE-2025-48703](https://github.com/ftz7/PoC-CVE-2025-48703)
 
 ### CVE-2025-48708 (2025-05-23)
 
@@ -6119,10 +6075,7 @@
 
 - [ksnnd32/redis_exploit](https://github.com/ksnnd32/redis_exploit)
 - [Zain3311/CVE-2025-49844](https://github.com/Zain3311/CVE-2025-49844)
-- [srozb/reditrap](https://github.com/srozb/reditrap)
-- [pedrorichil/CVE-2025-49844](https://github.com/pedrorichil/CVE-2025-49844)
 - [Yuri08loveElaina/CVE-2025-49844](https://github.com/Yuri08loveElaina/CVE-2025-49844)
-- [MiclelsonCN/CVE-2025-49844_POC](https://github.com/MiclelsonCN/CVE-2025-49844_POC)
 - [Mufti22/CVE-2025-49844-RediShell-Vulnerability-Scanner](https://github.com/Mufti22/CVE-2025-49844-RediShell-Vulnerability-Scanner)
 - [imbas007/CVE-2025-49844-Vulnerability-Scanner](https://github.com/imbas007/CVE-2025-49844-Vulnerability-Scanner)
 - [angelusrivera/CVE-2025-49844](https://github.com/angelusrivera/CVE-2025-49844)
@@ -6548,13 +6501,6 @@
 
 - [M4xIq/CVE-2025-51970](https://github.com/M4xIq/CVE-2025-51970)
 
-### CVE-2025-52021 (2025-10-07)
-
-<code>A SQL Injection vulnerability exists in the edit_product.php file of PuneethReddyHC Online Shopping System Advanced 1.0. The product_id GET parameter is unsafely passed to a SQL query without proper validation or parameterization.
-</code>
-
-- [hafizgemilang/CVE-2025-52021](https://github.com/hafizgemilang/CVE-2025-52021)
-
 ### CVE-2025-52078 (2025-08-05)
 
 <code>File upload vulnerability in Writebot AI Content Generator SaaS React Template thru 4.0.0, allowing remote attackers to gain escalated privileges via a crafted POST request to the /file-upload endpoint.
@@ -6622,7 +6568,7 @@
 <code>Soosyze CMS 2.0 allows brute-force login attacks via the /user/login endpoint due to missing rate-limiting and lockout mechanisms. An attacker can repeatedly submit login attempts without restrictions, potentially gaining unauthorized administrative access. This vulnerability corresponds to CWE-307: Improper Restriction of Excessive Authentication Attempts.
 </code>
 
-- [137f/Soosyze-CMS-2.0---CVE-2025-52392](https://github.com/137f/Soosyze-CMS-2.0---CVE-2025-52392)
+- [ftz7/Soosyze-CMS-2.0---CVE-2025-52392](https://github.com/ftz7/Soosyze-CMS-2.0---CVE-2025-52392)
 
 ### CVE-2025-52399
 - [Userr404/CVE-2025-52399-SQLi-Institute-of-Current-Students](https://github.com/Userr404/CVE-2025-52399-SQLi-Institute-of-Current-Students)
@@ -6947,7 +6893,6 @@
 </code>
 
 - [yohannslm/CVE-2025-54352](https://github.com/yohannslm/CVE-2025-54352)
-- [limmmw/CVE-2025-54352](https://github.com/limmmw/CVE-2025-54352)
 
 ### CVE-2025-54381 (2025-07-29)
 
@@ -7384,7 +7329,19 @@
 - [gagaltotal/tot-react-rce-CVE-2025-55182](https://github.com/gagaltotal/tot-react-rce-CVE-2025-55182)
 - [eaizy/react2hulud-scan](https://github.com/eaizy/react2hulud-scan)
 - [sho-luv/React2Shell](https://github.com/sho-luv/React2Shell)
+- [h0tak88r/next88](https://github.com/h0tak88r/next88)
 - [TheStingR/ReactOOPS-WriteUp](https://github.com/TheStingR/ReactOOPS-WriteUp)
+- [mantvmass/react2shell](https://github.com/mantvmass/react2shell)
+- [MoLeft/React2Shell-Toolbox](https://github.com/MoLeft/React2Shell-Toolbox)
+- [Ya0h4cker/CVE-2025-55182](https://github.com/Ya0h4cker/CVE-2025-55182)
+- [Kugelbyte/React2Shell-Analysis](https://github.com/Kugelbyte/React2Shell-Analysis)
+- [dhananjayakumarn/CVE-2025-55182-Lab](https://github.com/dhananjayakumarn/CVE-2025-55182-Lab)
+- [ZorvithonLeo-Null/CVE-2025-55182-exploit](https://github.com/ZorvithonLeo-Null/CVE-2025-55182-exploit)
+- [sangleshubham/React-Security-CVE-2025-55182-Exploit](https://github.com/sangleshubham/React-Security-CVE-2025-55182-Exploit)
+- [TrixSec/CVE-2025-55182-Scanner](https://github.com/TrixSec/CVE-2025-55182-Scanner)
+- [mounta11n/CHECK-CVE-2025-55182-AND-CVE-2025-66478](https://github.com/mounta11n/CHECK-CVE-2025-55182-AND-CVE-2025-66478)
+- [grejh0t/CVE-2025-55182](https://github.com/grejh0t/CVE-2025-55182)
+- [hidden-investigations/react2shell-vulnlab](https://github.com/hidden-investigations/react2shell-vulnlab)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -7406,6 +7363,7 @@
 - [hans362/CVE-2025-55184-poc](https://github.com/hans362/CVE-2025-55184-poc)
 - [ejpir/CVE-2025-55184](https://github.com/ejpir/CVE-2025-55184)
 - [BakhodiribnYashinibnMansur/CVE-2025-55184](https://github.com/BakhodiribnYashinibnMansur/CVE-2025-55184)
+- [Kajal5414/CVE-2025-55184_Testing](https://github.com/Kajal5414/CVE-2025-55184_Testing)
 
 ### CVE-2025-55188 (2025-08-08)
 
@@ -7930,7 +7888,6 @@
 
 - [Mkway/CVE-2025-57833](https://github.com/Mkway/CVE-2025-57833)
 - [loic-houchi/Django-faille-CVE-2025-57833_test](https://github.com/loic-houchi/Django-faille-CVE-2025-57833_test)
-- [ianoboyle/CVE-2025-57833](https://github.com/ianoboyle/CVE-2025-57833)
 - [sw0rd1ight/CVE-2025-57833](https://github.com/sw0rd1ight/CVE-2025-57833)
 - [Gayang2902/CVE-2025-57833](https://github.com/Gayang2902/CVE-2025-57833)
 
@@ -8267,13 +8224,6 @@
 </code>
 
 - [D7EAD/CVE-2025-61156](https://github.com/D7EAD/CVE-2025-61156)
-
-### CVE-2025-61183 (2025-10-08)
-
-<code>Cross Site Scripting in vaahcms v.2.3.1 allows a remote attacker to execute arbitrary code via upload method in the storeAvatar() method of UserBase.php
-</code>
-
-- [thawphone/CVE-2025-61183](https://github.com/thawphone/CVE-2025-61183)
 
 ### CVE-2025-61228 (2025-12-01)
 
@@ -9763,13 +9713,6 @@
 </code>
 
 - [whale93/CVE-2024-2782-PoC](https://github.com/whale93/CVE-2024-2782-PoC)
-
-### CVE-2024-2873 (2024-03-25)
-
-<code>A vulnerability was found in wolfSSH's server-side state machine before versions 1.4.17. A malicious client could create channels without first performing user authentication, resulting in unauthorized access.\n
-</code>
-
-- [stuxbench/dropbear-cve-2024-2873](https://github.com/stuxbench/dropbear-cve-2024-2873)
 
 ### CVE-2024-2876 (2024-05-02)
 
@@ -11837,6 +11780,7 @@
 - [yenyangmjaze/cve-2024-10914](https://github.com/yenyangmjaze/cve-2024-10914)
 - [Tamirido30/CVE-2024-10914-Exploit](https://github.com/Tamirido30/CVE-2024-10914-Exploit)
 - [TH-SecForge/CVE-2024-10914](https://github.com/TH-SecForge/CVE-2024-10914)
+- [0xSS3K/CVE-2024-10914__POC](https://github.com/0xSS3K/CVE-2024-10914__POC)
 
 ### CVE-2024-10915 (2024-11-06)
 
@@ -11934,7 +11878,6 @@
 </code>
 
 - [Piyush-Bhor/CVE-2024-11392](https://github.com/Piyush-Bhor/CVE-2024-11392)
-- [stuxbench/vllm-cve-2024-11392](https://github.com/stuxbench/vllm-cve-2024-11392)
 
 ### CVE-2024-11393 (2024-11-22)
 
@@ -15898,7 +15841,6 @@
 - [Bi0x/CVE-2024-37032](https://github.com/Bi0x/CVE-2024-37032)
 - [ahboon/CVE-2024-37032-scanner](https://github.com/ahboon/CVE-2024-37032-scanner)
 - [pankass/CVE-2024-37032_CVE-2024-45436](https://github.com/pankass/CVE-2024-37032_CVE-2024-45436)
-- [stuxbench/vllm-cve-2024-37032](https://github.com/stuxbench/vllm-cve-2024-37032)
 
 ### CVE-2024-37051 (2024-06-10)
 
@@ -22054,6 +21996,7 @@
 - [Onedy1703/CVE-2023-22515-Confluence](https://github.com/Onedy1703/CVE-2023-22515-Confluence)
 - [killvxk/CVE-2023-22515-joaoviictorti](https://github.com/killvxk/CVE-2023-22515-joaoviictorti)
 - [vivigotnotime/CVE-2023-22515-Exploit-Script](https://github.com/vivigotnotime/CVE-2023-22515-Exploit-Script)
+- [tranphuc2005/CVE-2023-22515](https://github.com/tranphuc2005/CVE-2023-22515)
 - [Arkha-Corvus/LetsDefend-SOC235-Atlassian-Confluence-Broken-Access-Control-0-Day-CVE-2023-22515-EventID-197](https://github.com/Arkha-Corvus/LetsDefend-SOC235-Atlassian-Confluence-Broken-Access-Control-0-Day-CVE-2023-22515-EventID-197)
 - [CyberSentinel321/cve-2023-22515-lab](https://github.com/CyberSentinel321/cve-2023-22515-lab)
 - [radzek15/CVE-2023-22515](https://github.com/radzek15/CVE-2023-22515)
@@ -30919,6 +30862,7 @@
 - [NickoPS87/Spring4Shell-Python-Firewall-POC](https://github.com/NickoPS87/Spring4Shell-Python-Firewall-POC)
 - [xenosf/CS4239-Spring4Shell-POC](https://github.com/xenosf/CS4239-Spring4Shell-POC)
 - [mylo-2001/GhostStrike](https://github.com/mylo-2001/GhostStrike)
+- [Hghost0x00/CVE-2022-22965](https://github.com/Hghost0x00/CVE-2022-22965)
 
 ### CVE-2022-22966 (2022-04-14)
 
@@ -45821,7 +45765,6 @@
 </code>
 
 - [pberba/CVE-2020-11978](https://github.com/pberba/CVE-2020-11978)
-- [stuxbench/mlflow-cve-2020-11978](https://github.com/stuxbench/mlflow-cve-2020-11978)
 
 ### CVE-2020-11984 (2020-08-07)
 
@@ -48494,7 +48437,7 @@
 <code>The Simple-File-List Plugin for WordPress is vulnerable to Remote Code Execution in versions up to, and including, 4.2.2 via the rename function which can be used to rename uploaded PHP code with a png extension to use a php extension. This allows unauthenticated attackers to execute code on the server.
 </code>
 
-- [137f/PoC-CVE-2020-36847-WordPress-Plugin-4.2.2-RCE](https://github.com/137f/PoC-CVE-2020-36847-WordPress-Plugin-4.2.2-RCE)
+- [ftz7/PoC-CVE-2020-36847-WordPress-Plugin-4.2.2-RCE](https://github.com/ftz7/PoC-CVE-2020-36847-WordPress-Plugin-4.2.2-RCE)
 
 ### CVE-2020-72381
 - [jdordonezn/CVE-2020-72381](https://github.com/jdordonezn/CVE-2020-72381)
@@ -49330,6 +49273,7 @@
 - [46o60/CVE-2019-3396_Confluence](https://github.com/46o60/CVE-2019-3396_Confluence)
 - [PetrusViet/cve-2019-3396](https://github.com/PetrusViet/cve-2019-3396)
 - [Avento/CVE-2019-3396-Memshell-for-Behinder](https://github.com/Avento/CVE-2019-3396-Memshell-for-Behinder)
+- [tranphuc2005/CVE-2019-3396](https://github.com/tranphuc2005/CVE-2019-3396)
 - [kh4sh3i/CVE-2019-3396](https://github.com/kh4sh3i/CVE-2019-3396)
 - [HK4zCzi/CVE-2019-3396-Velocity-Server-Side-Template-Injection](https://github.com/HK4zCzi/CVE-2019-3396-Velocity-Server-Side-Template-Injection)
 - [tno01/cve-2019-3396](https://github.com/tno01/cve-2019-3396)
@@ -49849,13 +49793,6 @@
 </code>
 
 - [adhammedhat111/Magento-CVE-2019-7139-SQLi-PoC](https://github.com/adhammedhat111/Magento-CVE-2019-7139-SQLi-PoC)
-
-### CVE-2019-7164 (2019-02-20)
-
-<code>SQLAlchemy through 1.2.17 and 1.3.x through 1.3.0b2 allows SQL Injection via the order_by parameter.
-</code>
-
-- [stuxbench/mlflow-cve-2019-7164](https://github.com/stuxbench/mlflow-cve-2019-7164)
 
 ### CVE-2019-7192 (2019-12-05)
 
@@ -58099,6 +58036,7 @@
 - [z3bd/CVE-2017-9805](https://github.com/z3bd/CVE-2017-9805)
 - [0xd3vil/CVE-2017-9805-Exploit](https://github.com/0xd3vil/CVE-2017-9805-Exploit)
 - [Shakun8/CVE-2017-9805](https://github.com/Shakun8/CVE-2017-9805)
+- [NoSpaceAvailable/CVE-2017-9805_example_build](https://github.com/NoSpaceAvailable/CVE-2017-9805_example_build)
 
 ### CVE-2017-9822 (2017-07-20)
 
@@ -58106,6 +58044,7 @@
 </code>
 
 - [murataydemir/CVE-2017-9822](https://github.com/murataydemir/CVE-2017-9822)
+- [tranphuc2005/CVE-2017-9822](https://github.com/tranphuc2005/CVE-2017-9822)
 - [Tnot123/cve-2017-9822](https://github.com/Tnot123/cve-2017-9822)
 
 ### CVE-2017-9830 (2017-06-27)
@@ -64569,13 +64508,6 @@
 </code>
 
 - [ratiros01/CVE-2002-0082](https://github.com/ratiros01/CVE-2002-0082)
-
-### CVE-2002-0083 (2002-06-25)
-
-<code>Off-by-one error in the channel code of OpenSSH 2.0 through 3.0.2 allows local users or remote malicious servers to gain privileges.
-</code>
-
-- [stuxbench/dropbear-cve-2002-0083](https://github.com/stuxbench/dropbear-cve-2002-0083)
 
 ### CVE-2002-0200 (2002-05-03)
 
