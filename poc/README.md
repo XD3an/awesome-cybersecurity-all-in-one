@@ -7318,7 +7318,6 @@
 - [yuta3003/CVE-2025-55182](https://github.com/yuta3003/CVE-2025-55182)
 - [securifyai/React2Shell-CVE-2025-55182](https://github.com/securifyai/React2Shell-CVE-2025-55182)
 - [W41T3D3V1L/COMPLETE-CVE-2025-55182](https://github.com/W41T3D3V1L/COMPLETE-CVE-2025-55182)
-- [0x5k/rs_CVE-2025-55182_React2Shell](https://github.com/0x5k/rs_CVE-2025-55182_React2Shell)
 - [raivenLockdown/RCE_React2Shell_ButCooler-SomeUselessUsefulThingsLMAO-](https://github.com/raivenLockdown/RCE_React2Shell_ButCooler-SomeUselessUsefulThingsLMAO-)
 - [oguri-souhei/CVE-2025-55182](https://github.com/oguri-souhei/CVE-2025-55182)
 - [xalgord/React2Shell](https://github.com/xalgord/React2Shell)
@@ -7342,6 +7341,7 @@
 - [mounta11n/CHECK-CVE-2025-55182-AND-CVE-2025-66478](https://github.com/mounta11n/CHECK-CVE-2025-55182-AND-CVE-2025-66478)
 - [grejh0t/CVE-2025-55182](https://github.com/grejh0t/CVE-2025-55182)
 - [hidden-investigations/react2shell-vulnlab](https://github.com/hidden-investigations/react2shell-vulnlab)
+- [MammaniNelsonD/React2P4IM0Nshell](https://github.com/MammaniNelsonD/React2P4IM0Nshell)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -16059,6 +16059,7 @@
 - [Destiny0991/check_38077](https://github.com/Destiny0991/check_38077)
 - [mrmtwoj/CVE-2024-38077](https://github.com/mrmtwoj/CVE-2024-38077)
 - [Accord96/CVE-2024-38077-POC](https://github.com/Accord96/CVE-2024-38077-POC)
+- [Ermensonx/CVE-2024-38077-MadLicense-exploit](https://github.com/Ermensonx/CVE-2024-38077-MadLicense-exploit)
 
 ### CVE-2024-38080 (2024-07-09)
 
