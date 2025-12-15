@@ -6929,13 +6929,6 @@
 - [vxaretra/CVE-2025-54782](https://github.com/vxaretra/CVE-2025-54782)
 - [DDestinys/CVE-2025-54782](https://github.com/DDestinys/CVE-2025-54782)
 
-### CVE-2025-54793 (2025-08-08)
-
-<code>Astro is a web framework for content-driven websites. In versions 5.2.0 through 5.12.7, there is an Open Redirect vulnerability in the trailing slash redirection logic when handling paths with double slashes. This allows an attacker to redirect users to arbitrary external domains by crafting URLs such as https://mydomain.com//malicious-site.com/. This increases the risk of phishing and other social engineering attacks. This affects sites that use on-demand rendering (SSR) with the Node or Cloudflare adapters. It does not affect static sites, or sites deployed to Netlify or Vercel. This issue is fixed in version 5.12.8. To work around this issue at the network level, block outgoing redirect responses with a Location header value that starts with `//`.
-</code>
-
-- [Bhuvanesh-Murdoch2005/ict279-cve-2025-54793](https://github.com/Bhuvanesh-Murdoch2005/ict279-cve-2025-54793)
-
 ### CVE-2025-54794 (2025-08-05)
 
 <code>Claude Code is an agentic coding tool. In versions below 0.2.111, a path validation flaw using prefix matching instead of canonical path comparison, makes it possible to bypass directory restrictions and access files outside the CWD. Successful exploitation depends on the presence of (or ability to create) a directory with the same prefix as the CWD and the ability to add untrusted content into a Claude Code context window. This is fixed in version 0.2.111.
@@ -8948,6 +8941,7 @@
 - [abdozkaya/rsc-security-auditor](https://github.com/abdozkaya/rsc-security-auditor)
 - [DavionGowie/-vercel-prod.yml-application-is-vulnerable-to-CVE-2025-66478.](https://github.com/DavionGowie/-vercel-prod.yml-application-is-vulnerable-to-CVE-2025-66478.)
 - [DavionGowie/-vercel-application-is-vulnerable-to-CVE-2025-66478.](https://github.com/DavionGowie/-vercel-application-is-vulnerable-to-CVE-2025-66478.)
+- [zhixiangyao/CVE-2025-66478-Exploit-PoC](https://github.com/zhixiangyao/CVE-2025-66478-Exploit-PoC)
 
 ### CVE-2025-66516 (2025-12-04)
 
@@ -59160,6 +59154,13 @@
 - [theori-io/cve-2016-0189](https://github.com/theori-io/cve-2016-0189)
 - [deamwork/MS16-051-poc](https://github.com/deamwork/MS16-051-poc)
 
+### CVE-2016-0199 (2016-06-16)
+
+<code>Microsoft Internet Explorer 9 through 11 allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka &quot;Internet Explorer Memory Corruption Vulnerability,&quot; a different vulnerability than CVE-2016-0200 and CVE-2016-3211.
+</code>
+
+- [LeoonZHANG/CVE-2016-0199](https://github.com/LeoonZHANG/CVE-2016-0199)
+
 ### CVE-2016-0451 (2016-01-21)
 
 <code>Unspecified vulnerability in the Oracle GoldenGate component in Oracle GoldenGate 11.2 and 12.1.2 allows remote attackers to affect confidentiality, integrity, and availability via unknown vectors, a different vulnerability than CVE-2016-0452.
@@ -59723,6 +59724,7 @@
 <code>The kernel in Apple iOS before 9.3.5 allows attackers to obtain sensitive information from memory via a crafted app.
 </code>
 
+- [jndok/PegasusX](https://github.com/jndok/PegasusX)
 - [Cryptiiiic/skybreak](https://github.com/Cryptiiiic/skybreak)
 - [liangle1986126z/jndok](https://github.com/liangle1986126z/jndok)
 
@@ -59794,11 +59796,20 @@
 <code>Race condition in mm/gup.c in the Linux kernel 2.x through 4.x before 4.8.3 allows local users to gain privileges by leveraging incorrect handling of a copy-on-write (COW) feature to write to a read-only memory mapping, as exploited in the wild in October 2016, aka &quot;Dirty COW.&quot;
 </code>
 
+- [KosukeShimofuji/CVE-2016-5195](https://github.com/KosukeShimofuji/CVE-2016-5195)
+- [ASRTeam/CVE-2016-5195](https://github.com/ASRTeam/CVE-2016-5195)
 - [timwr/CVE-2016-5195](https://github.com/timwr/CVE-2016-5195)
+- [xlucas/dirtycow.cr](https://github.com/xlucas/dirtycow.cr)
+- [istenrot/centos-dirty-cow-ansible](https://github.com/istenrot/centos-dirty-cow-ansible)
+- [pgporada/ansible-role-cve](https://github.com/pgporada/ansible-role-cve)
 - [sideeffect42/DirtyCOWTester](https://github.com/sideeffect42/DirtyCOWTester)
 - [scumjr/dirtycow-vdso](https://github.com/scumjr/dirtycow-vdso)
 - [gbonacini/CVE-2016-5195](https://github.com/gbonacini/CVE-2016-5195)
+- [DavidBuchanan314/cowroot](https://github.com/DavidBuchanan314/cowroot)
+- [aishee/scan-dirtycow](https://github.com/aishee/scan-dirtycow)
 - [oleg-fiksel/ansible_CVE-2016-5195_check](https://github.com/oleg-fiksel/ansible_CVE-2016-5195_check)
+- [ldenevi/CVE-2016-5195](https://github.com/ldenevi/CVE-2016-5195)
+- [whu-enjoy/CVE-2016-5195](https://github.com/whu-enjoy/CVE-2016-5195)
 - [firefart/dirtycow](https://github.com/firefart/dirtycow)
 - [ndobson/inspec_CVE-2016-5195](https://github.com/ndobson/inspec_CVE-2016-5195)
 - [sribaba/android-CVE-2016-5195](https://github.com/sribaba/android-CVE-2016-5195)
@@ -60002,6 +60013,13 @@
 - [MAYASEVEN/CVE-2016-6662](https://github.com/MAYASEVEN/CVE-2016-6662)
 - [LSQUARE14/SQL_to_RCE_Lab](https://github.com/LSQUARE14/SQL_to_RCE_Lab)
 
+### CVE-2016-6663 (2016-12-13)
+
+<code>Race condition in Oracle MySQL before 5.5.52, 5.6.x before 5.6.33, 5.7.x before 5.7.15, and 8.x before 8.0.1; MariaDB before 5.5.52, 10.0.x before 10.0.28, and 10.1.x before 10.1.18; Percona Server before 5.5.51-38.2, 5.6.x before 5.6.32-78-1, and 5.7.x before 5.7.14-8; and Percona XtraDB Cluster before 5.5.41-37.0, 5.6.x before 5.6.32-25.17, and 5.7.x before 5.7.14-26.17 allows local users with certain permissions to gain privileges by leveraging use of my_copystat by REPAIR TABLE to repair a MyISAM table.
+</code>
+
+- [firebroo/CVE-2016-6663](https://github.com/firebroo/CVE-2016-6663)
+
 ### CVE-2016-6754 (2016-11-25)
 
 <code>A remote code execution vulnerability in Webview in Android 5.0.x before 5.0.2, 5.1.x before 5.1.1, and 6.x before 2016-11-05 could enable a remote attacker to execute arbitrary code when the user is navigating to a website. This issue is rated as High due to the possibility of remote code execution in an unprivileged process. Android ID: A-31217937.
@@ -60036,6 +60054,13 @@
 </code>
 
 - [CybermonkX/CVE-2016-6914-UniFiVideo-LPE](https://github.com/CybermonkX/CVE-2016-6914-UniFiVideo-LPE)
+
+### CVE-2016-7117 (2016-10-10)
+
+<code>Use-after-free vulnerability in the __sys_recvmmsg function in net/socket.c in the Linux kernel before 4.5.2 allows remote attackers to execute arbitrary code via vectors involving a recvmmsg system call that is mishandled during error processing.
+</code>
+
+- [KosukeShimofuji/CVE-2016-7117](https://github.com/KosukeShimofuji/CVE-2016-7117)
 
 ### CVE-2016-7190 (2016-10-14)
 
@@ -60078,6 +60103,13 @@
 
 - [bazad/IOFireWireFamily-overflow](https://github.com/bazad/IOFireWireFamily-overflow)
 
+### CVE-2016-7855 (2016-11-01)
+
+<code>Use-after-free vulnerability in Adobe Flash Player before 23.0.0.205 on Windows and OS X and before 11.2.202.643 on Linux allows remote attackers to execute arbitrary code via unspecified vectors, as exploited in the wild in October 2016.
+</code>
+
+- [swagatbora90/CheckFlashPlayerVersion](https://github.com/swagatbora90/CheckFlashPlayerVersion)
+
 ### CVE-2016-8007 (2017-03-14)
 
 <code>Authentication bypass vulnerability in McAfee Host Intrusion Prevention Services (HIPS) 8.0 Patch 7 and earlier allows authenticated users to manipulate the product's registry keys via specific conditions.
@@ -60091,6 +60123,13 @@
 </code>
 
 - [opsxcq/exploit-CVE-2016-8016-25](https://github.com/opsxcq/exploit-CVE-2016-8016-25)
+
+### CVE-2016-8367 (2017-02-13)
+
+<code>An issue was discovered in Schneider Electric Magelis HMI Magelis GTO Advanced Optimum Panels, all versions, Magelis GTU Universal Panel, all versions, Magelis STO5xx and STU Small panels, all versions, Magelis XBT GH Advanced Hand-held Panels, all versions, Magelis XBT GK Advanced Touchscreen Panels with Keyboard, all versions, Magelis XBT GT Advanced Touchscreen Panels, all versions, and Magelis XBT GTW Advanced Open Touchscreen Panels (Windows XPe). An attacker can open multiple connections to a targeted web server and keep connections open preventing new connections from being made, rendering the web server unavailable during an attack.
+</code>
+
+- [0xICF/PanelShock](https://github.com/0xICF/PanelShock)
 
 ### CVE-2016-8462 (2017-01-12)
 
@@ -60179,6 +60218,8 @@
 <code>The register method in the UsersModelRegistration class in controllers/user.php in the Users component in Joomla! before 3.6.4 allows remote attackers to gain privileges by leveraging incorrect use of unfiltered data when registering on a site.
 </code>
 
+- [zugetor/Joomla-3.4.4-3.6.4_CVE-2016-8869_and_CVE-2016-8870](https://github.com/zugetor/Joomla-3.4.4-3.6.4_CVE-2016-8869_and_CVE-2016-8870)
+- [rustyJ4ck/JoomlaCVE20168869](https://github.com/rustyJ4ck/JoomlaCVE20168869)
 - [cved-sources/cve-2016-8869](https://github.com/cved-sources/cve-2016-8869)
 
 ### CVE-2016-8870 (2016-11-04)
