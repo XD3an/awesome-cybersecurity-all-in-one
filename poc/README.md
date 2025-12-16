@@ -123,13 +123,6 @@
 
 - [aidana-gift/CVE-2025-0868](https://github.com/aidana-gift/CVE-2025-0868)
 
-### CVE-2025-0886 (2025-07-17)
-
-<code>An incorrect permissions vulnerability was reported in Elliptic Labs Virtual Lock Sensor that could allow a local, authenticated user to escalate privileges.
-</code>
-
-- [JNDataRT/VirtualLockSensorLPE](https://github.com/JNDataRT/VirtualLockSensorLPE)
-
 ### CVE-2025-0924 (2025-02-17)
 
 <code>The WP Activity Log plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘message’ parameter in all versions up to, and including, 5.2.2 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
@@ -6023,7 +6016,6 @@
 
 - [ksnnd32/redis_exploit](https://github.com/ksnnd32/redis_exploit)
 - [Zain3311/CVE-2025-49844](https://github.com/Zain3311/CVE-2025-49844)
-- [angelusrivera/CVE-2025-49844](https://github.com/angelusrivera/CVE-2025-49844)
 - [elyasbassir/CVE-2025-49844](https://github.com/elyasbassir/CVE-2025-49844)
 - [Ashwesker/Blackash-CVE-2025-49844](https://github.com/Ashwesker/Blackash-CVE-2025-49844)
 - [saneki/cve-2025-49844](https://github.com/saneki/cve-2025-49844)
@@ -6835,6 +6827,7 @@
 </code>
 
 - [yohannslm/CVE-2025-54352](https://github.com/yohannslm/CVE-2025-54352)
+- [crypcky/XML-RPC-Pingback-Vulnerability](https://github.com/crypcky/XML-RPC-Pingback-Vulnerability)
 
 ### CVE-2025-54381 (2025-07-29)
 
@@ -7188,7 +7181,6 @@
 - [garux-sec/PoC-react2shell-CVE-2025-55182](https://github.com/garux-sec/PoC-react2shell-CVE-2025-55182)
 - [ancs21/react2shell-scanner-rust](https://github.com/ancs21/react2shell-scanner-rust)
 - [MoisesTapia/http-react2shell](https://github.com/MoisesTapia/http-react2shell)
-- [hadipra5/CVE-2025-55182-Auto-Exploit-Toolkit](https://github.com/hadipra5/CVE-2025-55182-Auto-Exploit-Toolkit)
 - [techgaun/cve-2025-55182-scanner](https://github.com/techgaun/cve-2025-55182-scanner)
 - [rsch-io/CVE-2025-55182-React2Shell](https://github.com/rsch-io/CVE-2025-55182-React2Shell)
 - [ilixm/PoC-RCE-CVE-2025-55182](https://github.com/ilixm/PoC-RCE-CVE-2025-55182)
@@ -7288,6 +7280,7 @@
 - [hulh122/CVE-2025-55182](https://github.com/hulh122/CVE-2025-55182)
 - [simantchaudhari/CVE-2025-55182](https://github.com/simantchaudhari/CVE-2025-55182)
 - [premdanav/react2shelldemo](https://github.com/premdanav/react2shelldemo)
+- [itumo-arigatone/study-CVE-2025-55182](https://github.com/itumo-arigatone/study-CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -7489,40 +7482,12 @@
 
 - [Yashodhanvivek/Agatsa-EasyTouch-Plus---CVE-2025-56019](https://github.com/Yashodhanvivek/Agatsa-EasyTouch-Plus---CVE-2025-56019)
 
-### CVE-2025-56218 (2025-10-17)
-
-<code>An arbitrary file upload vulnerability in SigningHub v8.6.8 allows attackers to execute arbitrary code via uploading a crafted PDF file.
-</code>
-
-- [saykino/CVE-2025-56218](https://github.com/saykino/CVE-2025-56218)
-
-### CVE-2025-56219 (2025-10-20)
-
-<code>Incorrect access control in SigningHub v8.6.8 allows attackers to arbitrarily add user accounts without any rate limiting. This can lead to a resource exhaustion and a Denial of Service (DoS) when an excessively large number of user accounts are created.
-</code>
-
-- [saykino/CVE-2025-56219](https://github.com/saykino/CVE-2025-56219)
-
-### CVE-2025-56221 (2025-10-17)
-
-<code>A lack of rate limiting in the login mechanism of SigningHub v8.6.8 allows attackers to bypass authentication via a brute force attack.
-</code>
-
-- [saykino/CVE-2025-56221](https://github.com/saykino/CVE-2025-56221)
-
 ### CVE-2025-56223 (2025-10-20)
 
 <code>A lack of rate limiting in the component /Home/UploadStreamDocument of SigningHub v8.6.8 allows attackers to cause a Denial of Service (DoS) via uploading an excessive number of files.
 </code>
 
 - [saykino/CVE-2025-56223](https://github.com/saykino/CVE-2025-56223)
-
-### CVE-2025-56224 (2025-10-20)
-
-<code>A lack of rate limiting in the One-Time Password (OTP) verification endpoint of SigningHub v8.6.8 allows attackers to bypass verification via a bruteforce attack.
-</code>
-
-- [saykino/CVE-2025-56224](https://github.com/saykino/CVE-2025-56224)
 
 ### CVE-2025-56311 (2025-09-23)
 
@@ -8727,6 +8692,9 @@
 - [Neo-Neo6/CVE-2025-65018-Heap-buffer-overflow-in-libpng-ps4-ps5-](https://github.com/Neo-Neo6/CVE-2025-65018-Heap-buffer-overflow-in-libpng-ps4-ps5-)
 - [bohemian-miser/CVE-2025-65018_Exploit_Challenge](https://github.com/bohemian-miser/CVE-2025-65018_Exploit_Challenge)
 
+### CVE-2025-65270
+- [xh4vm/CVE-2025-65270](https://github.com/xh4vm/CVE-2025-65270)
+
 ### CVE-2025-65271 (2025-12-08)
 
 <code>Client-side template injection (CSTI) in Azuriom CMS admin dashboard allows a low-privilege user to execute arbitrary template code in the context of an administrator's session. This can occur via plugins or dashboard components that render untrusted user input, potentially enabling privilege escalation to an administrative account. Fixed in Azuriom 1.2.7.
@@ -8767,6 +8735,9 @@
 </code>
 
 - [Theethat-Thamwasin/CVE-2025-65346](https://github.com/Theethat-Thamwasin/CVE-2025-65346)
+
+### CVE-2025-65427
+- [kirubel-cve/CVE-2025-65427](https://github.com/kirubel-cve/CVE-2025-65427)
 
 ### CVE-2025-65482
 - [AT190510-Cuong/CVE-2025-65482-XXE-](https://github.com/AT190510-Cuong/CVE-2025-65482-XXE-)
@@ -8906,6 +8877,7 @@
 </code>
 
 - [BimBoxH4/CVE-2025-66039_CVE-2025-61675_CVE-2025-61678_reePBX](https://github.com/BimBoxH4/CVE-2025-66039_CVE-2025-61675_CVE-2025-61678_reePBX)
+- [cyberleelawat/FreePBX-Multiple-CVEs-2025](https://github.com/cyberleelawat/FreePBX-Multiple-CVEs-2025)
 
 ### CVE-2025-66470 (2025-12-09)
 
@@ -8975,6 +8947,9 @@
 </code>
 
 - [franckferman/CVE-2025-67906](https://github.com/franckferman/CVE-2025-67906)
+
+### CVE-2025-68116
+- [x0root/CVE-2025-68116](https://github.com/x0root/CVE-2025-68116)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -12598,7 +12573,6 @@
 - [W01fh4cker/CVE-2024-21683-RCE](https://github.com/W01fh4cker/CVE-2024-21683-RCE)
 - [absholi7ly/-CVE-2024-21683-RCE-in-Confluence-Data-Center-and-Server](https://github.com/absholi7ly/-CVE-2024-21683-RCE-in-Confluence-Data-Center-and-Server)
 - [phucrio/CVE-2024-21683-RCE](https://github.com/phucrio/CVE-2024-21683-RCE)
-- [xh4vm/CVE-2024-21683](https://github.com/xh4vm/CVE-2024-21683)
 - [XiaomingX/cve-2024-21683-rce](https://github.com/XiaomingX/cve-2024-21683-rce)
 
 ### CVE-2024-21689 (2024-08-20)
@@ -18458,13 +18432,6 @@
 </code>
 
 - [mselbrede/CVE-2024-51442](https://github.com/mselbrede/CVE-2024-51442)
-
-### CVE-2024-51479 (2024-12-17)
-
-<code>Next.js is a React framework for building full-stack web applications. In affected versions if a Next.js application is performing authorization in middleware based on pathname, it was possible for this authorization to be bypassed for pages directly under the application's root directory. For example: * [Not affected] `https://example.com/` * [Affected] `https://example.com/foo` * [Not affected] `https://example.com/foo/bar`. This issue is patched in Next.js `14.2.15` and later. If your Next.js application is hosted on Vercel, this vulnerability has been automatically mitigated, regardless of Next.js version. There are no official workarounds for this vulnerability.
-</code>
-
-- [doc0null/nextjs-CVE-2025-55182](https://github.com/doc0null/nextjs-CVE-2025-55182)
 
 ### CVE-2024-51482 (2024-10-31)
 
@@ -32963,8 +32930,8 @@
 
 - [TheL1ghtVn/CVE-2022-30333-PoC](https://github.com/TheL1ghtVn/CVE-2022-30333-PoC)
 - [rbowes-r7/unrar-cve-2022-30333-poc](https://github.com/rbowes-r7/unrar-cve-2022-30333-poc)
-- [J0hnbX/CVE-2022-30333](https://github.com/J0hnbX/CVE-2022-30333)
 - [aslitsecurity/Zimbra-CVE-2022-30333](https://github.com/aslitsecurity/Zimbra-CVE-2022-30333)
+- [RakhithJK/CVE-2022-30333](https://github.com/RakhithJK/CVE-2022-30333)
 - [paradox0909/cve-2022-30333_online_rar_extracor](https://github.com/paradox0909/cve-2022-30333_online_rar_extracor)
 
 ### CVE-2022-30489 (2022-05-13)
@@ -56162,6 +56129,13 @@
 </code>
 
 - [BradyDonovan/CVE-2018-19592](https://github.com/BradyDonovan/CVE-2018-19592)
+
+### CVE-2018-19629 (2019-07-16)
+
+<code>A Denial of Service vulnerability in the ImageNow Server service in Hyland Perceptive Content Server before 7.1.5 allows an attacker to crash the service via a TCP connection.
+</code>
+
+- [Excellencedev/CVE-2018-19629](https://github.com/Excellencedev/CVE-2018-19629)
 
 ### CVE-2018-19788 (2018-12-03)
 
