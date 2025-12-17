@@ -2315,6 +2315,7 @@
 - [zeropwn/pgadmin4-9.10-CVE-2025-13780](https://github.com/zeropwn/pgadmin4-9.10-CVE-2025-13780)
 - [meenakshisl/PoC-CVE-2025-13780](https://github.com/meenakshisl/PoC-CVE-2025-13780)
 - [Ashwesker/Blackash-CVE-2025-13780](https://github.com/Ashwesker/Blackash-CVE-2025-13780)
+- [ThemeHackers/CVE-2025-13780](https://github.com/ThemeHackers/CVE-2025-13780)
 
 ### CVE-2025-13796 (2025-11-30)
 
@@ -4056,7 +4057,6 @@
 - [amalpvatayam67/day10-nextjs-middleware-lab](https://github.com/amalpvatayam67/day10-nextjs-middleware-lab)
 - [kuyrathdaro/cve-2025-29927](https://github.com/kuyrathdaro/cve-2025-29927)
 - [Bongni/CVE-2025-29927](https://github.com/Bongni/CVE-2025-29927)
-- [NS-Projects-Unina/CTF_CVE_DSP_1](https://github.com/NS-Projects-Unina/CTF_CVE_DSP_1)
 - [lucaschanzx/CVE-2025-29927-PoC](https://github.com/lucaschanzx/CVE-2025-29927-PoC)
 - [liamromanis101/CVE-2025-29927-NextJS](https://github.com/liamromanis101/CVE-2025-29927-NextJS)
 - [radzek15/CVE-2025-29927-Next.js-middleware](https://github.com/radzek15/CVE-2025-29927-Next.js-middleware)
@@ -7307,6 +7307,7 @@
 - [cybertechajju/CVE-2025-55184-POC-Expolit](https://github.com/cybertechajju/CVE-2025-55184-POC-Expolit)
 - [Kajal5414/CVE-2025-55184_Testing](https://github.com/Kajal5414/CVE-2025-55184_Testing)
 - [KingHacker353/CVE-2025-55184](https://github.com/KingHacker353/CVE-2025-55184)
+- [Tarekhshaikh13/CVE-2025-55184](https://github.com/Tarekhshaikh13/CVE-2025-55184)
 
 ### CVE-2025-55188 (2025-08-08)
 
@@ -8176,7 +8177,6 @@
 </code>
 
 - [siddu7575/CVE-2025-61882-CVE-2025-61884](https://github.com/siddu7575/CVE-2025-61882-CVE-2025-61884)
-- [MindflareX/CVE-2025-61882-POC](https://github.com/MindflareX/CVE-2025-61882-POC)
 - [AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit](https://github.com/AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit)
 - [BattalionX/http-oracle-ebs-cve-2025-61882.nse](https://github.com/BattalionX/http-oracle-ebs-cve-2025-61882.nse)
 - [AshrafZaryouh/CVE-2025-61882-Executive-Summary](https://github.com/AshrafZaryouh/CVE-2025-61882-Executive-Summary)
@@ -8243,13 +8243,6 @@
 </code>
 
 - [ghostroots/CVE-2025-62376](https://github.com/ghostroots/CVE-2025-62376)
-
-### CVE-2025-62410 (2025-10-15)
-
-<code>In versions before 20.0.2, it was found that --disallow-code-generation-from-strings is not sufficient for isolating untrusted JavaScript in happy-dom. The untrusted script and the rest of the application still run in the same Isolate/process, so attackers can deploy prototype pollution payloads to hijack important references like &quot;process&quot; in the example below, or to hijack control flow via flipping checks of undefined property. This vulnerability is due to an incomplete fix for CVE-2025-61927. The vulnerability is fixed in 20.0.2.
-</code>
-
-- [SubZeroHackerz/CVE-2025-62410](https://github.com/SubZeroHackerz/CVE-2025-62410)
 
 ### CVE-2025-62481 (2025-10-21)
 
@@ -8849,6 +8842,13 @@
 
 - [BimBoxH4/CVE-2025-66039_CVE-2025-61675_CVE-2025-61678_reePBX](https://github.com/BimBoxH4/CVE-2025-66039_CVE-2025-61675_CVE-2025-61678_reePBX)
 - [cyberleelawat/FreePBX-Multiple-CVEs-2025](https://github.com/cyberleelawat/FreePBX-Multiple-CVEs-2025)
+
+### CVE-2025-66224 (2025-11-29)
+
+<code>OrangeHRM is a comprehensive human resource management (HRM) system. From version 5.0 to 5.7, the application contains an input-neutralization flaw in its mail configuration and delivery workflow that allows user-controlled values to flow directly into the system’s sendmail command. Because these values are not sanitized or constrained before being incorporated into the command execution path, certain sendmail behaviors can be unintentionally invoked during email processing. This makes it possible for the application to write files on the server as part of the mail-handling routine, and in deployments where those files end up in web-accessible locations, the behavior can be leveraged to achieve execution of attacker-controlled content. The issue stems entirely from constructing OS-level command strings using unsanitized input within the mail-sending logic. This issue has been patched in version 5.8.
+</code>
+
+- [richard-natan/PoC-CVE-2025-66224](https://github.com/richard-natan/PoC-CVE-2025-66224)
 
 ### CVE-2025-66470 (2025-12-09)
 
@@ -14609,6 +14609,13 @@
 </code>
 
 - [Yashodhanvivek/Firebolt-wristphone-vulnerability](https://github.com/Yashodhanvivek/Firebolt-wristphone-vulnerability)
+
+### CVE-2024-30804 (2024-04-26)
+
+<code>An issue discovered in the DeviceIoControl component in ASUS Fan_Xpert before v.10013 allows an attacker to execute arbitrary code via crafted IOCTL requests.
+</code>
+
+- [ekfkawl/CVE-2024-30804](https://github.com/ekfkawl/CVE-2024-30804)
 
 ### CVE-2024-30850 (2024-04-12)
 
@@ -56759,6 +56766,7 @@
 - [Joanmei/CVE-2017-0785](https://github.com/Joanmei/CVE-2017-0785)
 - [CyberKimathi/Py3-CVE-2017-0785](https://github.com/CyberKimathi/Py3-CVE-2017-0785)
 - [MasterCode112/Upgraded_BlueBourne-CVE-2017-0785-](https://github.com/MasterCode112/Upgraded_BlueBourne-CVE-2017-0785-)
+- [Richard1031/CVE-2017-0785-PoC](https://github.com/Richard1031/CVE-2017-0785-PoC)
 
 ### CVE-2017-0806 (2017-10-03)
 
