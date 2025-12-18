@@ -6764,7 +6764,6 @@
 - [Ashwesker/Blackash-CVE-2025-54253](https://github.com/Ashwesker/Blackash-CVE-2025-54253)
 - [Shivshantp/CVE-2025-54253-Exploit-Demo](https://github.com/Shivshantp/CVE-2025-54253-Exploit-Demo)
 - [jm7knz/CVE-2025-54253-Exploit-Demo](https://github.com/jm7knz/CVE-2025-54253-Exploit-Demo)
-- [25145hg654511135gfhfkr8488r8r8r8r8r/test2](https://github.com/25145hg654511135gfhfkr8488r8r8r8r8r/test2)
 - [AdityaBhatt3010/CVE-2025-54253-Inside-the-Adobe-AEM-Forms-Zero-Day](https://github.com/AdityaBhatt3010/CVE-2025-54253-Inside-the-Adobe-AEM-Forms-Zero-Day)
 
 ### CVE-2025-54309 (2025-07-18)
@@ -7271,6 +7270,7 @@
 - [nulltrace1336/CVE-2025-55182-Metasploit-exploit-skeleton-real-flow-](https://github.com/nulltrace1336/CVE-2025-55182-Metasploit-exploit-skeleton-real-flow-)
 - [pwnxpl0it/react2shell-lab](https://github.com/pwnxpl0it/react2shell-lab)
 - [ceh-aditya-raj/CVE-2025-55182](https://github.com/ceh-aditya-raj/CVE-2025-55182)
+- [aleksandrova834/react2shell-bypasswaf](https://github.com/aleksandrova834/react2shell-bypasswaf)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -29546,6 +29546,13 @@
 
 - [UgOrange/CVE-2022-3172](https://github.com/UgOrange/CVE-2022-3172)
 
+### CVE-2022-3218 (2022-09-19)
+
+<code>Due to a reliance on client-side authentication, the WiFi Mouse (Mouse Server) from Necta LLC's authentication mechanism is trivially bypassed, which can result in remote code execution.
+</code>
+
+- [MoisesTapia/cve-2022-3218](https://github.com/MoisesTapia/cve-2022-3218)
+
 ### CVE-2022-3317 (2022-11-01)
 
 <code>Insufficient validation of untrusted input in Intents in Google Chrome on Android prior to 106.0.5249.62 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page. (Chromium security severity: Low)
@@ -39077,6 +39084,7 @@
 - [Tea-On/CVE-2021-29447-Authenticated-XXE-WordPress-5.6-5.7](https://github.com/Tea-On/CVE-2021-29447-Authenticated-XXE-WordPress-5.6-5.7)
 - [ArtemCyberLab/Project-Project-Chimera-Exploiting-a-Modern-WordPress-XXE-to-Pillage-Secrets-](https://github.com/ArtemCyberLab/Project-Project-Chimera-Exploiting-a-Modern-WordPress-XXE-to-Pillage-Secrets-)
 - [0xricksanchez/CVE-2021-29447](https://github.com/0xricksanchez/CVE-2021-29447)
+- [davids52/cve-2021-29447_auto-script](https://github.com/davids52/cve-2021-29447_auto-script)
 
 ### CVE-2021-29505 (2021-05-28)
 
@@ -42237,7 +42245,6 @@
 - [IAmNewbieZ/CVE-2021-44228](https://github.com/IAmNewbieZ/CVE-2021-44228)
 - [hotpotcookie/CVE-2021-44228-white-box](https://github.com/hotpotcookie/CVE-2021-44228-white-box)
 - [s-retlaw/l4srs](https://github.com/s-retlaw/l4srs)
-- [Ananya-0306/Log-4j-scanner](https://github.com/Ananya-0306/Log-4j-scanner)
 - [paulvkitor/log4shellwithlog4j2_13_3](https://github.com/paulvkitor/log4shellwithlog4j2_13_3)
 - [MiguelM001/vulescanjndilookup](https://github.com/MiguelM001/vulescanjndilookup)
 - [Jun-5heng/CVE-2021-44228](https://github.com/Jun-5heng/CVE-2021-44228)
