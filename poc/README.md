@@ -1481,13 +1481,6 @@
 
 - [born0monday/CVE-2025-8067](https://github.com/born0monday/CVE-2025-8067)
 
-### CVE-2025-8081 (2025-08-12)
-
-<code>The Elementor plugin for WordPress is vulnerable to Arbitrary File Read in all versions up to, and including, 3.30.2 via the Import_Images::import() function due to insufficient controls on the filename specified. This makes it possible for authenticated attackers, with administrator-level access and above, to read the contents of arbitrary files on the server, which can contain sensitive information.
-</code>
-
-- [LyesH4ck/CVE-2025-8081-Elementor](https://github.com/LyesH4ck/CVE-2025-8081-Elementor)
-
 ### CVE-2025-8088 (2025-08-08)
 
 <code>A path traversal vulnerability affecting the Windows version of WinRAR allows the attackers to execute arbitrary code by crafting malicious archive files. This vulnerability was exploited in the wild and was discovered by Anton Cherepanov, Peter Košinár, and Peter Strýček\n     from ESET.
@@ -1848,13 +1841,6 @@
 - [orange0Mint/CVE-2025-10035_GoAnywhere](https://github.com/orange0Mint/CVE-2025-10035_GoAnywhere)
 - [Ashwesker/Blackash-CVE-2025-10035](https://github.com/Ashwesker/Blackash-CVE-2025-10035)
 
-### CVE-2025-10041 (2025-10-15)
-
-<code>The Flex QR Code Generator plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in thesave_qr_code_to_db() function in all versions up to, and including, 1.2.5. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
-</code>
-
-- [Kai-One001/WordPress-Flex-QR-Code-Generator---CVE-2025-10041](https://github.com/Kai-One001/WordPress-Flex-QR-Code-Generator---CVE-2025-10041)
-
 ### CVE-2025-10046 (2025-09-06)
 
 <code>The ELEX WooCommerce Google Shopping (Google Product Feed) plugin for WordPress is vulnerable to SQL Injection via the 'file_to_delete' parameter in all versions up to, and including, 1.4.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for authenticated attackers, with Administrator-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.
@@ -1943,13 +1929,6 @@
 
 - [lorenzocamilli/CVE-2025-10720-PoC](https://github.com/lorenzocamilli/CVE-2025-10720-PoC)
 
-### CVE-2025-10742 (2025-10-16)
-
-<code>The Truelysell Core plugin for WordPress is vulnerable to Arbitrary User Password Change in versions up to, and including, 1.8.6. This is due to the plugin providing user-controlled access to objects, letting a user bypass authorization and access system resources. This makes it possible for unauthenticated attackers to change user passwords and potentially take over administrator accounts. Note: This can only be exploited unauthenticated if the attacker knows which page contains the 'truelysell_edit_staff' shortcode.
-</code>
-
-- [netspecters/CVE-2025-10742](https://github.com/netspecters/CVE-2025-10742)
-
 ### CVE-2025-11001 (2025-11-19)
 
 <code>7-Zip ZIP File Parsing Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. Interaction with this product is required to exploit this vulnerability but attack vectors may vary depending on the implementation.\n\nThe specific flaw exists within the handling of symbolic links in ZIP files. Crafted data in a ZIP file can cause the process to traverse to unintended directories. An attacker can leverage this vulnerability to execute code in the context of a service account. Was ZDI-CAN-26753.
@@ -1989,13 +1968,6 @@
 </code>
 
 - [SnailSploit/CVE-2025-11174](https://github.com/SnailSploit/CVE-2025-11174)
-
-### CVE-2025-11371 (2025-10-09)
-
-<code>In the default installation and configuration of Gladinet CentreStack and TrioFox, there is an unauthenticated Local File Inclusion Flaw that allows unintended disclosure of system files. Exploitation of this vulnerability has been observed in the wild. \n\nThis issue impacts Gladinet CentreStack and Triofox: All versions prior to and including 16.7.10368.56560
-</code>
-
-- [lap1nou/CVE-2025-11371](https://github.com/lap1nou/CVE-2025-11371)
 
 ### CVE-2025-11391 (2025-10-18)
 
@@ -2331,12 +2303,22 @@
 
 - [fatmatrabelsi17/CVE-2025-14221](https://github.com/fatmatrabelsi17/CVE-2025-14221)
 
+### CVE-2025-14269
+- [r0binak/CVE-2025-14269](https://github.com/r0binak/CVE-2025-14269)
+
 ### CVE-2025-14696 (2025-12-15)
 
 <code>A vulnerability was identified in Shenzhen Sixun Software Sixun Shanghui Group Business Management System 4.10.24.3. Affected by this vulnerability is an unknown functionality of the file /api/GylOperator/UpdatePasswordBatch. The manipulation leads to weak password recovery. The attack may be initiated remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.
 </code>
 
 - [b1gchoi/CVE-2025-14696](https://github.com/b1gchoi/CVE-2025-14696)
+
+### CVE-2025-14700 (2025-12-17)
+
+<code>An input neutralization vulnerability in the Webhook Template component of Crafty Controller allows a remote, authenticated attacker to perform remote code execution via Server Side Template Injection.
+</code>
+
+- [Nosiume/CVE-2025-14700-poc](https://github.com/Nosiume/CVE-2025-14700-poc)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -2500,6 +2482,13 @@
 </code>
 
 - [mdriaz009/CVE-2025-21574-Exploit](https://github.com/mdriaz009/CVE-2025-21574-Exploit)
+
+### CVE-2025-21628 (2025-01-09)
+
+<code>Chatwoot is a customer engagement suite. Prior to 3.16.0, conversation and contact filters endpoints did not sanitize the input of query_operator passed from the frontend or the API. This provided any actor who is authenticated, an attack vector to run arbitrary SQL within the filter query by adding a tautological WHERE clause. This issue is patched with v3.16.0.
+</code>
+
+- [elahehasanpour/chatwoot-cve-2025-21628](https://github.com/elahehasanpour/chatwoot-cve-2025-21628)
 
 ### CVE-2025-21692 (2025-02-10)
 
@@ -2744,6 +2733,13 @@
 
 - [hakivvi/CVE-2025-23369](https://github.com/hakivvi/CVE-2025-23369)
 - [Arian91/CVE-2025-23369_SAML_bypass](https://github.com/Arian91/CVE-2025-23369_SAML_bypass)
+
+### CVE-2025-23419 (2025-02-05)
+
+<code>When multiple server blocks are configured to share the same IP address and port, an attacker can use session resumption to bypass client certificate authentication requirements on these servers. This vulnerability arises when  TLS Session Tickets https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_ticket_key  are used and/or the  SSL session cache https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache  are used in the default server and the default server is performing client certificate authentication.  \n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
+</code>
+
+- [harley-ghostie/safe-check-CVE-2025-23419](https://github.com/harley-ghostie/safe-check-CVE-2025-23419)
 
 ### CVE-2025-23922 (2025-01-16)
 
@@ -3082,7 +3078,6 @@
 - [andwati/CVE-2025-24893](https://github.com/andwati/CVE-2025-24893)
 - [Bishben/xwiki-15.10.8-reverse-shell-cve-2025-24893](https://github.com/Bishben/xwiki-15.10.8-reverse-shell-cve-2025-24893)
 - [kimtangker/CVE-2025-24893](https://github.com/kimtangker/CVE-2025-24893)
-- [Yukik4z3/CVE-2025-24893](https://github.com/Yukik4z3/CVE-2025-24893)
 - [rvizx/CVE-2025-24893](https://github.com/rvizx/CVE-2025-24893)
 - [Y2F05p2w/CVE-2025-24893](https://github.com/Y2F05p2w/CVE-2025-24893)
 - [80Ottanta80/CVE-2025-24893-PoC](https://github.com/80Ottanta80/CVE-2025-24893-PoC)
@@ -3161,7 +3156,6 @@
 </code>
 
 - [Groppoxx/CVE-2025-25198-PoC](https://github.com/Groppoxx/CVE-2025-25198-PoC)
-- [enzocipher/CVE-2025-25198](https://github.com/enzocipher/CVE-2025-25198)
 
 ### CVE-2025-25231 (2025-08-11)
 
@@ -4626,7 +4620,6 @@
 - [mihnasdsad/CVE-2025-32463](https://github.com/mihnasdsad/CVE-2025-32463)
 - [D3ltaFormation/CVE-2025-32463-Sudo-Chroot-Escape](https://github.com/D3ltaFormation/CVE-2025-32463-Sudo-Chroot-Escape)
 - [AC8999/CVE-2025-32463](https://github.com/AC8999/CVE-2025-32463)
-- [dr4x-c0d3r/sudo-chroot](https://github.com/dr4x-c0d3r/sudo-chroot)
 - [dr4xp/sudo-chroot](https://github.com/dr4xp/sudo-chroot)
 - [robbin0919/CVE-2025-32463](https://github.com/robbin0919/CVE-2025-32463)
 - [DensuLabs/CVE-2025-32463](https://github.com/DensuLabs/CVE-2025-32463)
@@ -5152,7 +5145,7 @@
 
 ### CVE-2025-43426 (2025-11-04)
 
-<code>A logging issue was addressed with improved data redaction. This issue is fixed in iOS 26.1 and iPadOS 26.1. An app may be able to access sensitive user data.
+<code>A logging issue was addressed with improved data redaction. This issue is fixed in macOS Tahoe 26.1, iOS 26.1 and iPadOS 26.1. An app may be able to access sensitive user data.
 </code>
 
 - [csrXamfi/CVE-2025-43426](https://github.com/csrXamfi/CVE-2025-43426)
@@ -5967,7 +5960,6 @@
 <code>Adobe Connect versions 12.9 and earlier are affected by a DOM-based Cross-Site Scripting (XSS) vulnerability that could be exploited by an attacker to execute malicious scripts in a victim's browser. Exploitation of this issue requires user interaction in that a victim must navigate to a crafted web page. A successful attacker can abuse this to achieve session takeover, increasing the confidentiality and integrity impact as high. Scope is changed.
 </code>
 
-- [silentexploitexe/CVE-2025-49553](https://github.com/silentexploitexe/CVE-2025-49553)
 - [glitchhawks/CVE-2025-49553](https://github.com/glitchhawks/CVE-2025-49553)
 
 ### CVE-2025-49596 (2025-06-13)
@@ -6454,13 +6446,6 @@
 
 - [TimTrademark/CVE-2025-52122](https://github.com/TimTrademark/CVE-2025-52122)
 
-### CVE-2025-52136 (2025-08-10)
-
-<code>In EMQX before 5.8.6, administrators can install arbitrary novel plugins via the Dashboard web interface. NOTE: the Supplier's position is that this is the intended behavior; however, 5.8.6 adds a defense-in-depth feature in which a plugin's acceptability (for later Dashboard installation) is set by the &quot;emqx ctl plugins allow&quot; CLI command.
-</code>
-
-- [f1r3K0/CVE-2025-52136](https://github.com/f1r3K0/CVE-2025-52136)
-
 ### CVE-2025-52216
 - [Arbatinis1/coolermaster-masterctrl-vuln](https://github.com/Arbatinis1/coolermaster-masterctrl-vuln)
 
@@ -6779,7 +6764,6 @@
 - [Ashwesker/Blackash-CVE-2025-54253](https://github.com/Ashwesker/Blackash-CVE-2025-54253)
 - [Shivshantp/CVE-2025-54253-Exploit-Demo](https://github.com/Shivshantp/CVE-2025-54253-Exploit-Demo)
 - [jm7knz/CVE-2025-54253-Exploit-Demo](https://github.com/jm7knz/CVE-2025-54253-Exploit-Demo)
-- [25145hg654511135gfhfkr8488r8r8r8r8r/test](https://github.com/25145hg654511135gfhfkr8488r8r8r8r8r/test)
 - [25145hg654511135gfhfkr8488r8r8r8r8r/test2](https://github.com/25145hg654511135gfhfkr8488r8r8r8r8r/test2)
 - [AdityaBhatt3010/CVE-2025-54253-Inside-the-Adobe-AEM-Forms-Zero-Day](https://github.com/AdityaBhatt3010/CVE-2025-54253-Inside-the-Adobe-AEM-Forms-Zero-Day)
 
@@ -6949,6 +6933,7 @@
 </code>
 
 - [mgthuramoemyint/POC-CVE-2025-54988](https://github.com/mgthuramoemyint/POC-CVE-2025-54988)
+- [galoryber/cve-2025-54988-VulnTikaProject](https://github.com/galoryber/cve-2025-54988-VulnTikaProject)
 
 ### CVE-2025-55182 (2025-12-03)
 
@@ -7153,6 +7138,7 @@
 - [7amzahard/React2shell](https://github.com/7amzahard/React2shell)
 - [randarts/react-rce](https://github.com/randarts/react-rce)
 - [hamm0nz/react2shell-audit](https://github.com/hamm0nz/react2shell-audit)
+- [0xSalm0n/CVE-2025-55182](https://github.com/0xSalm0n/CVE-2025-55182)
 - [Macaroniwdcheese/CVE-2025-55182-Lab](https://github.com/Macaroniwdcheese/CVE-2025-55182-Lab)
 - [LvMalware/CVE-2025-55182](https://github.com/LvMalware/CVE-2025-55182)
 - [HUAHUAI23/CVE-2025-55182-POC](https://github.com/HUAHUAI23/CVE-2025-55182-POC)
@@ -7283,6 +7269,8 @@
 - [Mustafa1p/Next.js-RCE-Scanner---CVE-2025-55182-CVE-2025-66478](https://github.com/Mustafa1p/Next.js-RCE-Scanner---CVE-2025-55182-CVE-2025-66478)
 - [M4rgs/CVE-2025-55182-React2Shell-Exploit](https://github.com/M4rgs/CVE-2025-55182-React2Shell-Exploit)
 - [nulltrace1336/CVE-2025-55182-Metasploit-exploit-skeleton-real-flow-](https://github.com/nulltrace1336/CVE-2025-55182-Metasploit-exploit-skeleton-real-flow-)
+- [pwnxpl0it/react2shell-lab](https://github.com/pwnxpl0it/react2shell-lab)
+- [ceh-aditya-raj/CVE-2025-55182](https://github.com/ceh-aditya-raj/CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -7344,7 +7332,6 @@
 <code>Inconsistent interpretation of http requests ('http request/response smuggling') in ASP.NET Core allows an authorized attacker to bypass a security feature over a network.
 </code>
 
-- [nickcopi/CVE-2025-55315-detection-playground](https://github.com/nickcopi/CVE-2025-55315-detection-playground)
 - [sirredbeard/CVE-2025-55315-repro](https://github.com/sirredbeard/CVE-2025-55315-repro)
 - [7huukdlnkjkjba/CVE-2025-55315-](https://github.com/7huukdlnkjkjba/CVE-2025-55315-)
 - [jlinebau/CVE-2025-55315-Scanner-Monitor](https://github.com/jlinebau/CVE-2025-55315-Scanner-Monitor)
@@ -7953,6 +7940,7 @@
 </code>
 
 - [Ashwesker/Blackash-CVE-2025-59718](https://github.com/Ashwesker/Blackash-CVE-2025-59718)
+- [exfil0/CVE-2025-59718-PoC](https://github.com/exfil0/CVE-2025-59718-PoC)
 
 ### CVE-2025-59843 (2025-09-26)
 
@@ -7992,13 +7980,6 @@
 </code>
 
 - [aakashtyal/Session-Persistence-After-Enabling-2FA-CVE-2025-60425](https://github.com/aakashtyal/Session-Persistence-After-Enabling-2FA-CVE-2025-60425)
-
-### CVE-2025-60500 (2025-10-21)
-
-<code>QDocs Smart School Management System 7.1 allows authenticated users with roles such as &quot;accountant&quot; or &quot;admin&quot; to bypass file type restrictions in the media upload feature by abusing the alternate YouTube URL option. This logic flaw permits uploading of arbitrary PHP files, which are stored in a web-accessible directory.
-</code>
-
-- [H4zaz/CVE-2025-60500](https://github.com/H4zaz/CVE-2025-60500)
 
 ### CVE-2025-60503 (2025-11-03)
 
@@ -8164,20 +8145,12 @@
 
 - [locus-x64/CVE-2025-61765_PoC](https://github.com/locus-x64/CVE-2025-61765_PoC)
 
-### CVE-2025-61777 (2025-10-06)
-
-<code>Flag Forge is a Capture The Flag (CTF) platform. Starting in version 2.0.0 and prior to version 2.3.2, the `/api/admin/badge-templates` (GET) and `/api/admin/badge-templates/create` (POST) endpoints previously allowed access without authentication or authorization. This could have enabled unauthorized users to retrieve all badge templates and sensitive metadata (createdBy, createdAt, updatedAt) and/or create arbitrary badge templates in the database. This could lead to data exposure, database pollution, or abuse of the badge system. The issue has been fixed in FlagForge v2.3.2. GET, POST, UPDATE, and DELETE endpoints now require authentication. Authorization checks ensure only admins can access and modify badge templates. No reliable workarounds are available.
-</code>
-
-- [0x0w1z/CVE-2025-61777](https://github.com/0x0w1z/CVE-2025-61777)
-
 ### CVE-2025-61882 (2025-10-05)
 
 <code>Vulnerability in the Oracle Concurrent Processing product of Oracle E-Business Suite (component: BI Publisher Integration).  Supported versions that are affected are 12.2.3-12.2.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Concurrent Processing.  Successful attacks of this vulnerability can result in takeover of Oracle Concurrent Processing. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
 </code>
 
 - [siddu7575/CVE-2025-61882-CVE-2025-61884](https://github.com/siddu7575/CVE-2025-61882-CVE-2025-61884)
-- [AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit](https://github.com/AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit)
 - [BattalionX/http-oracle-ebs-cve-2025-61882.nse](https://github.com/BattalionX/http-oracle-ebs-cve-2025-61882.nse)
 - [AshrafZaryouh/CVE-2025-61882-Executive-Summary](https://github.com/AshrafZaryouh/CVE-2025-61882-Executive-Summary)
 - [GhoStZA-debug/CVE-2025-61882](https://github.com/GhoStZA-debug/CVE-2025-61882)
@@ -8783,8 +8756,18 @@
 
 - [Bidon47/CVE-2025-65806](https://github.com/Bidon47/CVE-2025-65806)
 
-### CVE-2025-65855
+### CVE-2025-65855 (2025-12-17)
+
+<code>The OTA firmware update mechanism in Netun Solutions HelpFlash IoT (firmware v18_178_221102_ASCII_PRO_1R5_50) uses hard-coded WiFi credentials identical across all devices and does not authenticate update servers or validate firmware signatures. An attacker with brief physical access can activate OTA mode (8-second button press), create a malicious WiFi AP using the known credentials, and serve malicious firmware via unauthenticated HTTP to achieve arbitrary code execution on this safety-critical emergency signaling device.
+</code>
+
 - [LuisMirandaAcebedo/CVE-2025-65855](https://github.com/LuisMirandaAcebedo/CVE-2025-65855)
+
+### CVE-2025-65856
+- [LuisMirandaAcebedo/CVE-2025-65856](https://github.com/LuisMirandaAcebedo/CVE-2025-65856)
+
+### CVE-2025-65857
+- [LuisMirandaAcebedo/CVE-2025-65857](https://github.com/LuisMirandaAcebedo/CVE-2025-65857)
 
 ### CVE-2025-65858 (2025-12-02)
 
@@ -8816,6 +8799,13 @@
 </code>
 
 - [Noxurge/CVE-2025-65900](https://github.com/Noxurge/CVE-2025-65900)
+
+### CVE-2025-65945 (2025-12-04)
+
+<code>auth0/node-jws is a JSON Web Signature implementation for Node.js. In versions 3.2.2 and earlier and version 4.0.0, auth0/node-jws has an improper signature verification vulnerability when using the HS256 algorithm under specific conditions. Applications are affected when they use the jws.createVerify() function for HMAC algorithms and use user-provided data from the JSON Web Signature protected header or payload in HMAC secret lookup routines, which can allow attackers to bypass signature verification. This issue has been patched in versions 3.2.3 and 4.0.1.
+</code>
+
+- [jedisct1/CVE-2025-65945-poc](https://github.com/jedisct1/CVE-2025-65945-poc)
 
 ### CVE-2025-65964 (2025-12-08)
 
@@ -8879,6 +8869,7 @@
 - [DavionGowie/-vercel-prod.yml-application-is-vulnerable-to-CVE-2025-66478.](https://github.com/DavionGowie/-vercel-prod.yml-application-is-vulnerable-to-CVE-2025-66478.)
 - [DavionGowie/-vercel-application-is-vulnerable-to-CVE-2025-66478.](https://github.com/DavionGowie/-vercel-application-is-vulnerable-to-CVE-2025-66478.)
 - [zhixiangyao/CVE-2025-66478-Exploit-PoC](https://github.com/zhixiangyao/CVE-2025-66478-Exploit-PoC)
+- [mio-qwq/nextjs-cve-2025-66478-ctf](https://github.com/mio-qwq/nextjs-cve-2025-66478-ctf)
 
 ### CVE-2025-66516 (2025-12-04)
 
@@ -8887,6 +8878,7 @@
 
 - [Ashwesker/Blackash-CVE-2025-66516](https://github.com/Ashwesker/Blackash-CVE-2025-66516)
 - [chasingimpact/CVE-2025-66516-Writeup-POC](https://github.com/chasingimpact/CVE-2025-66516-Writeup-POC)
+- [sid6224/CVE-2025-66516-POC](https://github.com/sid6224/CVE-2025-66516-POC)
 
 ### CVE-2025-66628 (2025-12-10)
 
@@ -8932,6 +8924,20 @@
 </code>
 
 - [x0root/CVE-2025-68116](https://github.com/x0root/CVE-2025-68116)
+
+### CVE-2025-68147 (2025-12-17)
+
+<code>Open Source Point of Sale (opensourcepos) is a web based point of sale application written in PHP using CodeIgniter framework. Starting in version 3.4.0 and prior to version 3.4.2, a Stored Cross-Site Scripting (XSS) vulnerability exists in the &quot;Return Policy&quot; configuration field. The application does not properly sanitize user input before saving it to the database or displaying it on receipts. An attacker with access to the &quot;Store Configuration&quot; (such as a rogue administrator or an account compromised via the separate CSRF vulnerability) can inject malicious JavaScript payloads into this field. These payloads are executed in the browser of any user (including other administrators and sales staff) whenever they view a receipt or complete a transaction. This can lead to session hijacking, theft of sensitive data, or unauthorized actions performed on behalf of the victim. The vulnerability has been patched in version 3.4.2 by ensuring the output is escaped using the `esc()` function in the receipt template. As a temporary mitigation, administrators should ensure the &quot;Return Policy&quot; field contains only plain text and strictly avoid entering any HTML tags. There is no code-based workaround other than applying the patch.
+</code>
+
+- [Nixon-H/CVE-2025-68147-OSPOS-Stored-XSS](https://github.com/Nixon-H/CVE-2025-68147-OSPOS-Stored-XSS)
+
+### CVE-2025-68434 (2025-12-17)
+
+<code>Open Source Point of Sale (opensourcepos) is a web based point of sale application written in PHP using CodeIgniter framework. Starting in version 3.4.0 and prior to version 3.4.2, a Cross-Site Request Forgery (CSRF) vulnerability exists in the application's filter configuration. The CSRF protection mechanism was **explicitly disabled**, allowing the application to process state-changing requests (POST) without verifying a valid CSRF token. An unauthenticated remote attacker can exploit this by hosting a malicious web page. If a logged-in administrator visits this page, their browser is forced to send unauthorized requests to the application. A successful exploit allows the attacker to silently create a new Administrator account with full privileges, leading to a complete takeover of the system and loss of confidentiality, integrity, and availability. The vulnerability has been patched in version 3.4.2. The fix re-enables the CSRF filter in `app/Config/Filters.php` and resolves associated AJAX race conditions by adjusting token regeneration settings. As a workaround, administrators can manually re-enable the CSRF filter in `app/Config/Filters.php` by uncommenting the protection line. However, this is not recommended without applying the full patch, as it may cause functionality breakage in the Sales module due to token synchronization issues.
+</code>
+
+- [Nixon-H/CVE-2025-68434-OSPOS-CSRF-Unauthorized-Administrator-Creation](https://github.com/Nixon-H/CVE-2025-68434-OSPOS-CSRF-Unauthorized-Administrator-Creation)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -9628,7 +9634,7 @@
 - [c0d3zilla/CVE-2024-2876](https://github.com/c0d3zilla/CVE-2024-2876)
 - [chsxthwik/CVE-2024-2876](https://github.com/chsxthwik/CVE-2024-2876)
 - [0xAgun/CVE-2024-2876](https://github.com/0xAgun/CVE-2024-2876)
-- [zxcod3/CVE-2024-2876](https://github.com/zxcod3/CVE-2024-2876)
+- [0zerobyte/CVE-2024-2876](https://github.com/0zerobyte/CVE-2024-2876)
 
 ### CVE-2024-2879 (2024-04-03)
 
@@ -10868,7 +10874,7 @@
 
 - [rxerium/CVE-2024-7593](https://github.com/rxerium/CVE-2024-7593)
 - [D3N14LD15K/CVE-2024-7593_PoC_Exploit](https://github.com/D3N14LD15K/CVE-2024-7593_PoC_Exploit)
-- [zxcod3/CVE-2024-7593](https://github.com/zxcod3/CVE-2024-7593)
+- [0zerobyte/CVE-2024-7593](https://github.com/0zerobyte/CVE-2024-7593)
 
 ### CVE-2024-7595 (2025-02-05)
 
@@ -13406,7 +13412,6 @@
 - [aydinnyunus/CVE-2024-24576-Exploit](https://github.com/aydinnyunus/CVE-2024-24576-Exploit)
 - [foxoman/CVE-2024-24576-PoC---Nim](https://github.com/foxoman/CVE-2024-24576-PoC---Nim)
 - [corysabol/batbadbut-demo](https://github.com/corysabol/batbadbut-demo)
-- [mishl-dev/CVE-2024-24576-PoC-Python](https://github.com/mishl-dev/CVE-2024-24576-PoC-Python)
 - [lpn/CVE-2024-24576.jl](https://github.com/lpn/CVE-2024-24576.jl)
 - [Gaurav1020/CVE-2024-24576-PoC-Rust](https://github.com/Gaurav1020/CVE-2024-24576-PoC-Rust)
 - [SheL3G/CVE-2024-24576-PoC-BatBadBut](https://github.com/SheL3G/CVE-2024-24576-PoC-BatBadBut)
@@ -13534,7 +13539,7 @@
 - [LuisMateo1/Arbitrary-File-Read-CVE-2024-24919](https://github.com/LuisMateo1/Arbitrary-File-Read-CVE-2024-24919)
 - [AhmedMansour93/Event-ID-263-Rule-Name-SOC287---Arbitrary-File-Read-on-Checkpoint-Security-Gateway-CVE-2024-24919-](https://github.com/AhmedMansour93/Event-ID-263-Rule-Name-SOC287---Arbitrary-File-Read-on-Checkpoint-Security-Gateway-CVE-2024-24919-)
 - [geniuszly/CVE-2024-24919](https://github.com/geniuszly/CVE-2024-24919)
-- [zxcod3/CVE-2024-24919](https://github.com/zxcod3/CVE-2024-24919)
+- [0zerobyte/CVE-2024-24919](https://github.com/0zerobyte/CVE-2024-24919)
 - [sar-3mar/CVE-2024-24919_POC](https://github.com/sar-3mar/CVE-2024-24919_POC)
 - [NingXin2002/Check-Point_poc](https://github.com/NingXin2002/Check-Point_poc)
 - [hashdr1ft/SOC_287](https://github.com/hashdr1ft/SOC_287)
@@ -13946,6 +13951,7 @@
 - [geniuszly/CVE-2024-27198](https://github.com/geniuszly/CVE-2024-27198)
 - [Cythonic1/CVE-2024-27198_POC](https://github.com/Cythonic1/CVE-2024-27198_POC)
 - [ArtemCyberLab/Project-Exploiting-CVE-2024-27198-RCE-Vulnerability](https://github.com/ArtemCyberLab/Project-Exploiting-CVE-2024-27198-RCE-Vulnerability)
+- [EynaExp/CVE-2024-27198-POC](https://github.com/EynaExp/CVE-2024-27198-POC)
 
 ### CVE-2024-27292 (2024-02-29)
 
@@ -14503,7 +14509,7 @@
 - [NanoWraith/CVE-2024-29973](https://github.com/NanoWraith/CVE-2024-29973)
 - [p0et08/CVE-2024-29973](https://github.com/p0et08/CVE-2024-29973)
 - [RevoltSecurities/CVE-2024-29973](https://github.com/RevoltSecurities/CVE-2024-29973)
-- [zxcod3/CVE-2024-29973](https://github.com/zxcod3/CVE-2024-29973)
+- [0zerobyte/CVE-2024-29973](https://github.com/0zerobyte/CVE-2024-29973)
 
 ### CVE-2024-29988 (2024-04-09)
 
@@ -27813,7 +27819,7 @@
 
 ### CVE-2023-48022 (2023-11-28)
 
-<code>Anyscale Ray 2.6.3 and 2.8.0 allows a remote attacker to execute arbitrary code via the job submission API. NOTE: the vendor's position is that this report is irrelevant because Ray, as stated in its documentation, is not intended for use outside of a strictly controlled network environment
+<code>Anyscale Ray 2.6.3 and 2.8.0 allows a remote attacker to execute arbitrary code via the job submission API. NOTE: the vendor's position is that this report is irrelevant because Ray, as stated in its documentation, is not intended for use outside of a strictly controlled network environment. (Also, within that environment, customers at version 2.52.0 and later can choose to use token authentication.)
 </code>
 
 - [0x656565/CVE-2023-48022](https://github.com/0x656565/CVE-2023-48022)
@@ -36816,7 +36822,6 @@
 - [sharkmoos/Baron-Samedit](https://github.com/sharkmoos/Baron-Samedit)
 - [chenaotian/CVE-2021-3156](https://github.com/chenaotian/CVE-2021-3156)
 - [ret2basic/SudoScience](https://github.com/ret2basic/SudoScience)
-- [puckiestyle/CVE-2021-3156](https://github.com/puckiestyle/CVE-2021-3156)
 - [RodricBr/CVE-2021-3156](https://github.com/RodricBr/CVE-2021-3156)
 - [ypl6/heaplens](https://github.com/ypl6/heaplens)
 - [q77190858/CVE-2021-3156](https://github.com/q77190858/CVE-2021-3156)
@@ -37040,6 +37045,7 @@
 - [MandipJoshi/CVE-2021-3560](https://github.com/MandipJoshi/CVE-2021-3560)
 - [Antoine-MANTIS/POC-Bash-CVE-2021-3560](https://github.com/Antoine-MANTIS/POC-Bash-CVE-2021-3560)
 - [SeimuPVE/CVE-2021-3560_Polkit](https://github.com/SeimuPVE/CVE-2021-3560_Polkit)
+- [m4lk3rnel/CVE-2021-3560](https://github.com/m4lk3rnel/CVE-2021-3560)
 
 ### CVE-2021-3572 (2021-11-10)
 
@@ -61441,6 +61447,13 @@
 - [aalex954/jwt-key-confusion-poc](https://github.com/aalex954/jwt-key-confusion-poc)
 - [WinDyAlphA/CVE-2015-9235_JWT_key_confusion](https://github.com/WinDyAlphA/CVE-2015-9235_JWT_key_confusion)
 - [z-bool/Venom-JWT](https://github.com/z-bool/Venom-JWT)
+
+### CVE-2015-9238 (2018-05-31)
+
+<code>secure-compare 3.0.0 and below do not actually compare two strings properly. compare was actually comparing the first argument with itself, meaning the check passed for any two strings of the same length.
+</code>
+
+- [m0d0ri205/wargame-turkey_in_2](https://github.com/m0d0ri205/wargame-turkey_in_2)
 
 ### CVE-2015-9251 (2018-01-18)
 
