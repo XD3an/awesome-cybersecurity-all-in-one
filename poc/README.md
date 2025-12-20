@@ -8026,13 +8026,6 @@
 
 - [eGkritsis/CVE-2025-61303](https://github.com/eGkritsis/CVE-2025-61303)
 
-### CVE-2025-61304 (2025-11-05)
-
-<code>OS command injection vulnerability in Dynatrace ActiveGate ping extension up to 1.016 via crafted ip address.
-</code>
-
-- [pentastic-be/CVE-2025-61304](https://github.com/pentastic-be/CVE-2025-61304)
-
 ### CVE-2025-61481 (2025-10-27)
 
 <code>An issue in MikroTik RouterOS v.7.14.2 and SwOS v.2.18 exposes the WebFig management interface over cleartext HTTP by default, allowing an on-path attacker to execute injected JavaScript in the administrator’s browser and intercept credentials.
@@ -8833,6 +8826,13 @@
 </code>
 
 - [Chocapikk/CVE-2025-67494](https://github.com/Chocapikk/CVE-2025-67494)
+
+### CVE-2025-67586 (2025-12-09)
+
+<code>Missing Authorization vulnerability in Ronald Huereca Highlight and Share highlight-and-share allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Highlight and Share: from n/a through &lt;= 5.2.0.
+</code>
+
+- [r0xtsec/CVE](https://github.com/r0xtsec/CVE)
 
 ### CVE-2025-67780 (2025-12-11)
 
@@ -10348,7 +10348,6 @@
 </code>
 
 - [gh-ost00/CVE-2024-5420-XSS](https://github.com/gh-ost00/CVE-2024-5420-XSS)
-- [K4yd0/CVE-2024-5420_XSS](https://github.com/K4yd0/CVE-2024-5420_XSS)
 
 ### CVE-2024-5452 (2024-06-06)
 
