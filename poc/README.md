@@ -9181,6 +9181,7 @@
 - [zhulin837/checkmk_cve-2024-0670](https://github.com/zhulin837/checkmk_cve-2024-0670)
 - [magicrc/CVE-2024-0670](https://github.com/magicrc/CVE-2024-0670)
 - [elsevar11/CVE-2024-0670-CheckMK-Agent-Local-Privilege-Escalation-Exploit](https://github.com/elsevar11/CVE-2024-0670-CheckMK-Agent-Local-Privilege-Escalation-Exploit)
+- [fsoc-ghost-0x/Fsociety-CVE-2024-0670-CheckMK-LPE](https://github.com/fsoc-ghost-0x/Fsociety-CVE-2024-0670-CheckMK-LPE)
 
 ### CVE-2024-0679 (2024-01-20)
 
@@ -17828,6 +17829,7 @@
 - [0x3bs/CVE-2024-48990](https://github.com/0x3bs/CVE-2024-48990)
 - [o-sec/CVE-2024-48990](https://github.com/o-sec/CVE-2024-48990)
 - [tahsinunluturk/needrestart-privesc-cve-2024-48990](https://github.com/tahsinunluturk/needrestart-privesc-cve-2024-48990)
+- [sobbing333/CVE-2024-48990-POC](https://github.com/sobbing333/CVE-2024-48990-POC)
 
 ### CVE-2024-49019 (2024-11-12)
 
@@ -24031,6 +24033,7 @@
 - [bryanqb07/CVE-2023-32315](https://github.com/bryanqb07/CVE-2023-32315)
 - [asepsaepdin/CVE-2023-32315](https://github.com/asepsaepdin/CVE-2023-32315)
 - [pulentoski/Explotacion-CVE-2023-32315-Openfire](https://github.com/pulentoski/Explotacion-CVE-2023-32315-Openfire)
+- [shiyingzhencai/CVE-2023-32315-java7-](https://github.com/shiyingzhencai/CVE-2023-32315-java7-)
 
 ### CVE-2023-32353 (2023-06-23)
 
@@ -54880,6 +54883,13 @@
 </code>
 
 - [mikelkarma/cve-2018-11714_POC](https://github.com/mikelkarma/cve-2018-11714_POC)
+
+### CVE-2018-11736 (2018-06-05)
+
+<code>An issue was discovered in Pluck before 4.7.7-dev2. /data/inc/images.php allows remote attackers to upload and execute arbitrary PHP code by using the image/jpeg content type for a .htaccess file.
+</code>
+
+- [purgemebaby/CVE-2018-11736](https://github.com/purgemebaby/CVE-2018-11736)
 
 ### CVE-2018-11759 (2018-10-31)
 
