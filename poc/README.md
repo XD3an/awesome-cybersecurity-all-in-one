@@ -28,7 +28,6 @@
 - [sohaibeb/CVE-2025-0108](https://github.com/sohaibeb/CVE-2025-0108)
 - [becrevex/CVE-2025-0108](https://github.com/becrevex/CVE-2025-0108)
 - [Ashwesker/Blackash-CVE-2025-0108](https://github.com/Ashwesker/Blackash-CVE-2025-0108)
-- [kso4more/CVE-2025-0108](https://github.com/kso4more/CVE-2025-0108)
 
 ### CVE-2025-0133 (2025-05-14)
 
@@ -714,7 +713,6 @@
 
 - [Nxploited/CVE-2025-4334](https://github.com/Nxploited/CVE-2025-4334)
 - [0xgh057r3c0n/CVE-2025-4334](https://github.com/0xgh057r3c0n/CVE-2025-4334)
-- [vinodwick/CVE-2025-4334](https://github.com/vinodwick/CVE-2025-4334)
 
 ### CVE-2025-4336 (2025-05-24)
 
@@ -1490,6 +1488,7 @@
 - [nuky-alt/CVE-2025-8088](https://github.com/nuky-alt/CVE-2025-8088)
 - [4daysday/cve-2025-8088](https://github.com/4daysday/cve-2025-8088)
 - [xi0onamdev/WinRAR-CVE-2025-8088-Exploitation-Toolkit](https://github.com/xi0onamdev/WinRAR-CVE-2025-8088-Exploitation-Toolkit)
+- [Markusino488/cve-2025-8088](https://github.com/Markusino488/cve-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1505,6 +1504,7 @@
 
 - [rxerium/CVE-2025-8110](https://github.com/rxerium/CVE-2025-8110)
 - [Ashwesker/Blackash-CVE-2025-8110](https://github.com/Ashwesker/Blackash-CVE-2025-8110)
+- [zAbuQasem/gogs-CVE-2025-8110](https://github.com/zAbuQasem/gogs-CVE-2025-8110)
 
 ### CVE-2025-8191 (2025-07-26)
 
@@ -1794,13 +1794,6 @@
 
 - [glitchhawks/CVE-2025-9967](https://github.com/glitchhawks/CVE-2025-9967)
 
-### CVE-2025-9983 (2025-09-22)
-
-<code>GALAYOU G2 cameras stream video output via RTSP streams. By default these streams are protected by randomly generated credentials. However these credentials are not required to access the stream. Changing these values does not change camera's behavior.\n\nThe vendor did not respond in any way. Only version 11.100001.01.28 was tested, other versions might also be vulnerable.
-</code>
-
-- [sohaibeb/CVE-2025-9983](https://github.com/sohaibeb/CVE-2025-9983)
-
 ### CVE-2025-9998 (2025-09-05)
 
 <code>The sequence of packets received by a Networking server are not correctly checked.\n\nAn attacker could exploit this vulnerability to send specially crafted messages to force the application to stop.
@@ -2004,26 +1997,12 @@
 - [6h4ack/CVE-2025-12101-checker](https://github.com/6h4ack/CVE-2025-12101-checker)
 - [boneys/CVE-2025-12101-Scanner-PoC](https://github.com/boneys/CVE-2025-12101-Scanner-PoC)
 
-### CVE-2025-12135 (2025-11-21)
-
-<code>The WPBookit plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'css_code' parameter in all versions up to, and including, 1.0.6 due to a missing capability check on the save_custome_code() function. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
-</code>
-
-- [d0n601/CVE-2025-12135](https://github.com/d0n601/CVE-2025-12135)
-
 ### CVE-2025-12163 (2025-12-05)
 
 <code>The Omnipress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via SVG File uploads in all versions up to, and including, 1.6.3 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses the SVG file.
 </code>
 
 - [SnailSploit/CVE-2025-12163](https://github.com/SnailSploit/CVE-2025-12163)
-
-### CVE-2025-12189 (2025-12-05)
-
-<code>The Bread &amp; Butter: Gate content + Capture leads + Collect first-party data + Nurture with Ai agents plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 7.10.1321. This is due to missing or incorrect nonce validation on the uploadImage() function. This makes it possible for unauthenticated attackers to upload arbitrary files that make remote code execution possible via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.
-</code>
-
-- [d0n601/CVE-2025-12189](https://github.com/d0n601/CVE-2025-12189)
 
 ### CVE-2025-12399 (2025-11-08)
 
@@ -2289,6 +2268,9 @@
 </code>
 
 - [Nxploited/CVE-2025-14440](https://github.com/Nxploited/CVE-2025-14440)
+
+### CVE-2025-14558
+- [JohannesLks/CVE-2025-14558](https://github.com/JohannesLks/CVE-2025-14558)
 
 ### CVE-2025-14700 (2025-12-17)
 
@@ -3068,7 +3050,6 @@
 - [andwati/CVE-2025-24893](https://github.com/andwati/CVE-2025-24893)
 - [Bishben/xwiki-15.10.8-reverse-shell-cve-2025-24893](https://github.com/Bishben/xwiki-15.10.8-reverse-shell-cve-2025-24893)
 - [kimtangker/CVE-2025-24893](https://github.com/kimtangker/CVE-2025-24893)
-- [rvizx/CVE-2025-24893](https://github.com/rvizx/CVE-2025-24893)
 - [Y2F05p2w/CVE-2025-24893](https://github.com/Y2F05p2w/CVE-2025-24893)
 - [80Ottanta80/CVE-2025-24893-PoC](https://github.com/80Ottanta80/CVE-2025-24893-PoC)
 - [Ashwesker/Blackash-CVE-2025-24893](https://github.com/Ashwesker/Blackash-CVE-2025-24893)
@@ -4599,8 +4580,6 @@
 - [D3ltaFormation/CVE-2025-32463-Sudo-Chroot-Escape](https://github.com/D3ltaFormation/CVE-2025-32463-Sudo-Chroot-Escape)
 - [AC8999/CVE-2025-32463](https://github.com/AC8999/CVE-2025-32463)
 - [dr4xp/sudo-chroot](https://github.com/dr4xp/sudo-chroot)
-- [robbin0919/CVE-2025-32463](https://github.com/robbin0919/CVE-2025-32463)
-- [DensuLabs/CVE-2025-32463](https://github.com/DensuLabs/CVE-2025-32463)
 - [muhammedkayag/CVE-2025-32463](https://github.com/muhammedkayag/CVE-2025-32463)
 - [NewComrade12211/CVE-2025-32463](https://github.com/NewComrade12211/CVE-2025-32463)
 - [Ghstxz/CVE-2025-32463](https://github.com/Ghstxz/CVE-2025-32463)
@@ -7239,6 +7218,11 @@
 - [lamaper/CVE-2025-55182-Toolbox](https://github.com/lamaper/CVE-2025-55182-Toolbox)
 - [mahaveer-choudhary/CVE-2025-55182](https://github.com/mahaveer-choudhary/CVE-2025-55182)
 - [MeGaNeKoS/secure-by-default-rce-demo](https://github.com/MeGaNeKoS/secure-by-default-rce-demo)
+- [TamaGorengs/react2shell-poc-CVE-2025-55182](https://github.com/TamaGorengs/react2shell-poc-CVE-2025-55182)
+- [dbwlsdnr95/CVE-2025-55182-React2Shell-Nextjs-RSC-Analysis](https://github.com/dbwlsdnr95/CVE-2025-55182-React2Shell-Nextjs-RSC-Analysis)
+- [xxxTectationxxx/React2Shell-CVE-Lab](https://github.com/xxxTectationxxx/React2Shell-CVE-Lab)
+- [vijay-shirhatti/RSC-Detect-CVE-2025-55182](https://github.com/vijay-shirhatti/RSC-Detect-CVE-2025-55182)
+- [p3ta00/react2shell-poc](https://github.com/p3ta00/react2shell-poc)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -7780,7 +7764,6 @@
 </code>
 
 - [jiansiting/CVE-2025-59287](https://github.com/jiansiting/CVE-2025-59287)
-- [garvitv14/CVE-2025-59287](https://github.com/garvitv14/CVE-2025-59287)
 - [0xBruno/WSUSploit.NET](https://github.com/0xBruno/WSUSploit.NET)
 - [Lupovis/Honeypot-for-CVE-2025-59287-WSUS](https://github.com/Lupovis/Honeypot-for-CVE-2025-59287-WSUS)
 - [FurkanKAYAPINAR/CVE-2025-59287](https://github.com/FurkanKAYAPINAR/CVE-2025-59287)
@@ -7842,13 +7825,6 @@
 </code>
 
 - [JOOJIII/CVE-2025-59424](https://github.com/JOOJIII/CVE-2025-59424)
-
-### CVE-2025-59427 (2025-09-19)
-
-<code>The Cloudflare Vite plugin enables a full-featured integration between Vite and the Workers runtime. When utilising the Cloudflare Vite plugin in its default configuration, all files are exposed by the local dev server, including files in the root directory that contain secret information such as .env and .dev.vars. This vulnerability is fixed in 1.6.0.
-</code>
-
-- [ibnurusdianto/CVE-2025-59427](https://github.com/ibnurusdianto/CVE-2025-59427)
 
 ### CVE-2025-59501 (2025-10-31)
 
@@ -8820,6 +8796,9 @@
 ### CVE-2025-67294
 - [0xthem7/CVE-2025-67294](https://github.com/0xthem7/CVE-2025-67294)
 
+### CVE-2025-67435
+- [RajChowdhury240/CVE-2025-67435](https://github.com/RajChowdhury240/CVE-2025-67435)
+
 ### CVE-2025-67494 (2025-12-09)
 
 <code>ZITADEL is an open-source identity infrastructure tool. Versions 4.7.0 and below are vulnerable to an unauthenticated, full-read SSRF vulnerability. The ZITADEL Login UI (V2) treats the x-zitadel-forward-host header as a trusted fallback for all deployments, including self-hosted instances. This allows an unauthenticated attacker to force the server to make HTTP requests to arbitrary domains, such as internal addresses, and read the responses, enabling data exfiltration and bypassing network-segmentation controls. This issue is fixed in version 4.7.1.
@@ -8878,6 +8857,13 @@
 </code>
 
 - [Nixon-H/CVE-2025-68147-OSPOS-Stored-XSS](https://github.com/Nixon-H/CVE-2025-68147-OSPOS-Stored-XSS)
+
+### CVE-2025-68325 (2025-12-18)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: sch_cake: Fix incorrect qlen reduction in cake_drop\n\nIn cake_drop(), qdisc_tree_reduce_backlog() is used to update the qlen\nand backlog of the qdisc hierarchy. Its caller, cake_enqueue(), assumes\nthat the parent qdisc will enqueue the current packet. However, this\nassumption breaks when cake_enqueue() returns NET_XMIT_CN: the parent\nqdisc stops enqueuing current packet, leaving the tree qlen/backlog\naccounting inconsistent. This mismatch can lead to a NULL dereference\n(e.g., when the parent Qdisc is qfq_qdisc).\n\nThis patch computes the qlen/backlog delta in a more robust way by\nobserving the difference before and after the series of cake_drop()\ncalls, and then compensates the qdisc tree accounting if cake_enqueue()\nreturns NET_XMIT_CN.\n\nTo ensure correct compensation when ACK thinning is enabled, a new\nvariable is introduced to keep qlen unchanged.
+</code>
+
+- [n132/CVE-2025-68325](https://github.com/n132/CVE-2025-68325)
 
 ### CVE-2025-68434 (2025-12-17)
 
@@ -9124,6 +9110,13 @@
 </code>
 
 - [kodaichodai/CVE-2024-0509](https://github.com/kodaichodai/CVE-2024-0509)
+
+### CVE-2024-0519 (2024-01-16)
+
+<code>Out of bounds memory access in V8 in Google Chrome prior to 120.0.6099.224 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+</code>
+
+- [dbwlsdnr95/CVE-2024-0519-chrome-v8](https://github.com/dbwlsdnr95/CVE-2024-0519-chrome-v8)
 
 ### CVE-2024-0520 (2024-06-06)
 
@@ -10115,7 +10108,7 @@
 - [Wh02m1/CVE-2024-4577](https://github.com/Wh02m1/CVE-2024-4577)
 - [Sysc4ll3r/CVE-2024-4577](https://github.com/Sysc4ll3r/CVE-2024-4577)
 - [WanLiChangChengWanLiChang/CVE-2024-4577-RCE-EXP](https://github.com/WanLiChangChengWanLiChang/CVE-2024-4577-RCE-EXP)
-- [pararam-org/CVE-2024-4577](https://github.com/pararam-org/CVE-2024-4577)
+- [graphite-org/CVE-2024-4577](https://github.com/graphite-org/CVE-2024-4577)
 - [0x20c/CVE-2024-4577-nuclei](https://github.com/0x20c/CVE-2024-4577-nuclei)
 - [manuelinfosec/CVE-2024-4577](https://github.com/manuelinfosec/CVE-2024-4577)
 - [zomasec/CVE-2024-4577](https://github.com/zomasec/CVE-2024-4577)
@@ -30783,6 +30776,7 @@
 - [NickoPS87/Spring4Shell-Python-Firewall-POC](https://github.com/NickoPS87/Spring4Shell-Python-Firewall-POC)
 - [xenosf/CS4239-Spring4Shell-POC](https://github.com/xenosf/CS4239-Spring4Shell-POC)
 - [mylo-2001/GhostStrike](https://github.com/mylo-2001/GhostStrike)
+- [dbwlsdnr95/CVE-2022-22965-spring4shell](https://github.com/dbwlsdnr95/CVE-2022-22965-spring4shell)
 
 ### CVE-2022-22966 (2022-04-14)
 
@@ -39413,7 +39407,6 @@
 <code>A SQL injection vulnerability in the pandora_console component of Artica Pandora FMS 742 allows an unauthenticated attacker to upgrade his unprivileged session via the /include/chart_generator.php session_id parameter, leading to a login bypass.
 </code>
 
-- [akr3ch/CVE-2021-32099](https://github.com/akr3ch/CVE-2021-32099)
 - [magicrc/CVE-2021-32099](https://github.com/magicrc/CVE-2021-32099)
 
 ### CVE-2021-32156 (2022-04-11)
@@ -42286,6 +42279,7 @@
 - [PCMKUIT/CVE-2021-44228---Log4Shell-Analysis](https://github.com/PCMKUIT/CVE-2021-44228---Log4Shell-Analysis)
 - [DrHaitham/Log4Shell-CVE-2021-44228](https://github.com/DrHaitham/Log4Shell-CVE-2021-44228)
 - [Loliverte/Log4j-Vulnerability](https://github.com/Loliverte/Log4j-Vulnerability)
+- [dbwlsdnr95/CVE-2021-44228-log4shell](https://github.com/dbwlsdnr95/CVE-2021-44228-log4shell)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -50124,6 +50118,7 @@
 </code>
 
 - [francozappa/knob](https://github.com/francozappa/knob)
+- [coffeeesd/knob](https://github.com/coffeeesd/knob)
 
 ### CVE-2019-9511 (2019-08-13)
 
@@ -50558,6 +50553,13 @@
 </code>
 
 - [Insecurities/CVE-2019-11224](https://github.com/Insecurities/CVE-2019-11224)
+
+### CVE-2019-11231 (2019-05-22)
+
+<code>An issue was discovered in GetSimple CMS through 3.3.15. insufficient input sanitation in the theme-edit.php file allows upload of files with arbitrary content (PHP code, for example). This vulnerability is triggered by an authenticated user; however, authentication can be bypassed. According to the official documentation for installation step 10, an admin is required to upload all the files, including the .htaccess files, and run a health check. However, what is overlooked is that the Apache HTTP Server by default no longer enables the AllowOverride directive, leading to data/users/admin.xml password exposure. The passwords are hashed but this can be bypassed by starting with the data/other/authorization.xml API key. This allows one to target the session state, since they decided to roll their own implementation. The cookie_name is crafted information that can be leaked from the frontend (site name and version). If a someone leaks the API key and the admin username, then they can bypass authentication. To do so, they need to supply a cookie based on an SHA-1 computation of this known information. The vulnerability exists in the admin/theme-edit.php file. This file checks for forms submissions via POST requests, and for the csrf nonce. If the nonce sent is correct, then the file provided by the user is uploaded. There is a path traversal allowing write access outside the jailed themes directory root. Exploiting the traversal is not necessary because the .htaccess file is ignored. A contributing factor is that there isn't another check on the extension before saving the file, with the assumption that the parameter content is safe. This allows the creation of web accessible and executable files with arbitrary content.
+</code>
+
+- [akincibor/CVE-2019-11231-PoC](https://github.com/akincibor/CVE-2019-11231-PoC)
 
 ### CVE-2019-11287 (2019-11-22)
 
@@ -58707,13 +58709,6 @@
 </code>
 
 - [rickoooooo/ulteriusExploit](https://github.com/rickoooooo/ulteriusExploit)
-
-### CVE-2017-16894 (2017-11-20)
-
-<code>In Laravel framework through 5.5.21, remote attackers can obtain sensitive information (such as externally usable passwords) via a direct request for the /.env URI. NOTE: this CVE is only about Laravel framework's writeNewEnvironmentFileWith function in src/Illuminate/Foundation/Console/KeyGenerateCommand.php, which uses file_put_contents without restricting the .env permissions. The .env filename is not used exclusively by Laravel framework.
-</code>
-
-- [ibnurusdianto/CVE-2017-16894](https://github.com/ibnurusdianto/CVE-2017-16894)
 
 ### CVE-2017-16921 (2017-12-08)
 
