@@ -18165,6 +18165,7 @@
 
 - [newlinesec/CVE-2024-50603](https://github.com/newlinesec/CVE-2024-50603)
 - [th3gokul/CVE-2024-50603](https://github.com/th3gokul/CVE-2024-50603)
+- [h0w1tzxr/CVE-2024-50603](https://github.com/h0w1tzxr/CVE-2024-50603)
 
 ### CVE-2024-50623 (2024-10-27)
 
@@ -62339,7 +62340,7 @@
 - [nihal1306/gogs](https://github.com/nihal1306/gogs)
 
 ### CVE-2014-8729
-- [inso-/TORQUE-Resource-Manager-2.5.x-2.5.13-stack-based-buffer-overflow-exploit-CVE-2014-8729-CVE-2014-878](https://github.com/inso-/TORQUE-Resource-Manager-2.5.x-2.5.13-stack-based-buffer-overflow-exploit-CVE-2014-8729-CVE-2014-878)
+- [inso1337/TORQUE-Resource-Manager-2.5.x-2.5.13-stack-based-buffer-overflow-exploit-CVE-2014-8729-CVE-2014-878](https://github.com/inso1337/TORQUE-Resource-Manager-2.5.x-2.5.13-stack-based-buffer-overflow-exploit-CVE-2014-8729-CVE-2014-878)
 
 ### CVE-2014-8731 (2017-03-23)
 
