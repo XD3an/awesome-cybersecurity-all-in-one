@@ -1185,7 +1185,6 @@
 </code>
 
 - [ChaseHCS/CVE-2025-6514](https://github.com/ChaseHCS/CVE-2025-6514)
-- [Cyberency/CVE-2025-6514](https://github.com/Cyberency/CVE-2025-6514)
 
 ### CVE-2025-6543 (2025-06-25)
 
@@ -1787,13 +1786,6 @@
 
 - [MooseLoveti/Trinity-Audio-CVE-Report2](https://github.com/MooseLoveti/Trinity-Audio-CVE-Report2)
 
-### CVE-2025-9967 (2025-10-15)
-
-<code>The Orion SMS OTP Verification plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 1.1.7. This is due to the plugin not properly validating a user's identity prior to updating their password. This makes it possible for unauthenticated attackers to change arbitrary user's password to a one-time password if the attacker knows the user's phone number
-</code>
-
-- [glitchhawks/CVE-2025-9967](https://github.com/glitchhawks/CVE-2025-9967)
-
 ### CVE-2025-9998 (2025-09-05)
 
 <code>The sequence of packets received by a Networking server are not correctly checked.\n\nAn attacker could exploit this vulnerability to send specially crafted messages to force the application to stop.
@@ -1959,13 +1951,6 @@
 
 - [Nxploited/CVE-2025-11749](https://github.com/Nxploited/CVE-2025-11749)
 
-### CVE-2025-11832 (2025-10-15)
-
-<code>Allocation of Resources Without Limits or Throttling vulnerability in Azure Access Technology BLU-IC2, Azure Access Technology BLU-IC4 allows Flooding.This issue affects BLU-IC2: through 1.19.5; BLU-IC4: through 1.19.5.
-</code>
-
-- [blackhatlegend/CVE-2025-11832](https://github.com/blackhatlegend/CVE-2025-11832)
-
 ### CVE-2025-11833 (2025-11-01)
 
 <code>The Post SMTP – Complete SMTP Solution with Logs, Alerts, Backup SMTP &amp; Mobile App plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the __construct function in all versions up to, and including, 3.6.0. This makes it possible for unauthenticated attackers to read arbitrary logged emails sent through the Post SMTP plugin, including password reset emails containing password reset links, which can lead to account takeover.
@@ -1996,6 +1981,13 @@
 
 - [6h4ack/CVE-2025-12101-checker](https://github.com/6h4ack/CVE-2025-12101-checker)
 - [boneys/CVE-2025-12101-Scanner-PoC](https://github.com/boneys/CVE-2025-12101-Scanner-PoC)
+
+### CVE-2025-12139 (2025-11-05)
+
+<code>The File Manager for Google Drive – Integrate Google Drive with WordPress plugin for WordPress is vulnerable to sensitive information exposure in all versions up to, and including, 1.5.3 via the &quot;get_localize_data&quot; function. This makes it possible for unauthenticated attackers to extract sensitive data including Google OAuth credentials (client_id and client_secret) and Google account email addresses.
+</code>
+
+- [Galaxy-sc/CVE-2025-12139-WordPress-Integrate-Google-Drive-Exploit](https://github.com/Galaxy-sc/CVE-2025-12139-WordPress-Integrate-Google-Drive-Exploit)
 
 ### CVE-2025-12163 (2025-12-05)
 
@@ -2801,6 +2793,7 @@
 - [Royall-Researchers/CVE-2025-24071](https://github.com/Royall-Researchers/CVE-2025-24071)
 - [AC8999/CVE-2025-24071](https://github.com/AC8999/CVE-2025-24071)
 - [Abdelrahman0Sayed/CVE-2025-24071](https://github.com/Abdelrahman0Sayed/CVE-2025-24071)
+- [fsoc-ghost-0x/Fsociety-CVE-2025-24071-NTLM-Coercion](https://github.com/fsoc-ghost-0x/Fsociety-CVE-2025-24071-NTLM-Coercion)
 
 ### CVE-2025-24076 (2025-03-11)
 
@@ -3628,7 +3621,7 @@
 - [Cythonic1/CVE-2025-27591](https://github.com/Cythonic1/CVE-2025-27591)
 - [umutcamliyurt/CVE-2025-27591](https://github.com/umutcamliyurt/CVE-2025-27591)
 - [danil-koltsov/below-log-race-poc](https://github.com/danil-koltsov/below-log-race-poc)
-- [HOEUN-Visai/CVE-2025-27591-below-](https://github.com/HOEUN-Visai/CVE-2025-27591-below-)
+- [VisaiCyber/CVE-2025-27591-below-](https://github.com/VisaiCyber/CVE-2025-27591-below-)
 - [0xDTC/Below-Logger-Symlink-Attack_CVE-2025-27591](https://github.com/0xDTC/Below-Logger-Symlink-Attack_CVE-2025-27591)
 - [0x00Jeff/CVE-2025-27591](https://github.com/0x00Jeff/CVE-2025-27591)
 
@@ -4868,6 +4861,13 @@
 
 - [keymaker-arch/NFSundown](https://github.com/keymaker-arch/NFSundown)
 
+### CVE-2025-38352 (2025-07-22)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nposix-cpu-timers: fix race between handle_posix_cpu_timers() and posix_cpu_timer_del()\n\nIf an exiting non-autoreaping task has already passed exit_notify() and\ncalls handle_posix_cpu_timers() from IRQ, it can be reaped by its parent\nor debugger right after unlock_task_sighand().\n\nIf a concurrent posix_cpu_timer_del() runs at that moment, it won't be\nable to detect timer-&gt;it.cpu.firing != 0: cpu_timer_task_rcu() and/or\nlock_task_sighand() will fail.\n\nAdd the tsk-&gt;exit_state check into run_posix_cpu_timers() to fix this.\n\nThis fix is not needed if CONFIG_POSIX_CPU_TIMERS_TASK_WORK=y, because\nexit_task_work() is called before exit_notify(). But the check still\nmakes sense, task_work_add(&amp;tsk-&gt;posix_cputimers_work.work) will fail\nanyway in this case.
+</code>
+
+- [farazsth98/poc-CVE-2025-38352](https://github.com/farazsth98/poc-CVE-2025-38352)
+
 ### CVE-2025-38501 (2025-08-16)
 
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: limit repeated connections from clients with the same IP\n\nRepeated connections from clients with the same IP address may exhaust\nthe max connections and prevent other normal client connections.\nThis patch limit repeated connections from clients with the same IP.
@@ -5122,6 +5122,13 @@
 </code>
 
 - [calysteon/CVE-2025-43504](https://github.com/calysteon/CVE-2025-43504)
+
+### CVE-2025-43541 (2025-12-17)
+
+<code>A type confusion issue was addressed with improved state handling. This issue is fixed in Safari 26.2, iOS 18.7.3 and iPadOS 18.7.3, iOS 26.2 and iPadOS 26.2, macOS Tahoe 26.2, visionOS 26.2. Processing maliciously crafted web content may lead to an unexpected Safari crash.
+</code>
+
+- [crypt0bit/CVE-2025-43541](https://github.com/crypt0bit/CVE-2025-43541)
 
 ### CVE-2025-43864 (2025-04-25)
 
@@ -5906,13 +5913,6 @@
 - [SystemVll/CVE-2025-49493](https://github.com/SystemVll/CVE-2025-49493)
 - [Soham-id/2025hvv](https://github.com/Soham-id/2025hvv)
 
-### CVE-2025-49553 (2025-10-14)
-
-<code>Adobe Connect versions 12.9 and earlier are affected by a DOM-based Cross-Site Scripting (XSS) vulnerability that could be exploited by an attacker to execute malicious scripts in a victim's browser. Exploitation of this issue requires user interaction in that a victim must navigate to a crafted web page. A successful attacker can abuse this to achieve session takeover, increasing the confidentiality and integrity impact as high. Scope is changed.
-</code>
-
-- [glitchhawks/CVE-2025-49553](https://github.com/glitchhawks/CVE-2025-49553)
-
 ### CVE-2025-49596 (2025-06-13)
 
 <code>The MCP inspector is a developer tool for testing and debugging MCP servers. Versions of MCP Inspector below 0.14.1 are vulnerable to remote code execution due to lack of authentication between the Inspector client and proxy, allowing unauthenticated requests to launch MCP commands over stdio. Users should immediately upgrade to version 0.14.1 or later to address these vulnerabilities.
@@ -6505,13 +6505,6 @@
 
 - [kevinbackhouse/DjVuLibre-poc-CVE-2025-53367](https://github.com/kevinbackhouse/DjVuLibre-poc-CVE-2025-53367)
 - [ThePhykon/CVE-2025-53367-POC](https://github.com/ThePhykon/CVE-2025-53367-POC)
-
-### CVE-2025-53533 (2025-10-27)
-
-<code>Pi-hole Admin Interface is a web interface for managing Pi-hole, a network-level advertisement and internet tracker blocking application. Pi-hole Admin Interface versions 6.2.1 and earlier are vulnerable to reflected cross-site scripting (XSS) via a malformed URL path. The 404 error page includes the requested path in the class attribute of the body tag without proper sanitization or escaping. An attacker can craft a URL containing an onload attribute that will execute arbitrary JavaScript code in the browser when a victim visits the malicious link. If an attacker sends a crafted pi-hole link to a victim and the victim visits it, attacker-controlled JavaScript code is executed in the browser of the victim. This has been patched in version 6.3.
-</code>
-
-- [moezbouzayani9/Pi-hole-XSS-CVE-2025-53533](https://github.com/moezbouzayani9/Pi-hole-XSS-CVE-2025-53533)
 
 ### CVE-2025-53547 (2025-07-08)
 
@@ -7223,6 +7216,7 @@
 - [xxxTectationxxx/React2Shell-CVE-Lab](https://github.com/xxxTectationxxx/React2Shell-CVE-Lab)
 - [vijay-shirhatti/RSC-Detect-CVE-2025-55182](https://github.com/vijay-shirhatti/RSC-Detect-CVE-2025-55182)
 - [p3ta00/react2shell-poc](https://github.com/p3ta00/react2shell-poc)
+- [niokagi/react-cve-2025-55182](https://github.com/niokagi/react-cve-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -7479,9 +7473,6 @@
 </code>
 
 - [Kov404/CVE-2025-56515](https://github.com/Kov404/CVE-2025-56515)
-
-### CVE-2025-56521
-- [Dong-hui-li/CVE-2025-56521andCVE-2025-56522](https://github.com/Dong-hui-li/CVE-2025-56521andCVE-2025-56522)
 
 ### CVE-2025-56526 (2025-11-18)
 
@@ -8087,13 +8078,6 @@
 
 - [cristibtz/CVE-2025-62369](https://github.com/cristibtz/CVE-2025-62369)
 
-### CVE-2025-62376 (2025-10-14)
-
-<code>pwn.college DOJO is an education platform for learning cybersecurity. Prior to commit 467db0b9ea0d9a929dc89b41f6eb59f7cfc68bef, the /workspace endpoint contains an improper authentication vulnerability that allows an attacker to access any active Windows VM without proper authorization. The vulnerability occurs in the view_desktop function where the user is retrieved via a URL parameter without verifying that the requester has administrative privileges. An attacker can supply any user ID and arbitrary password in the request parameters to impersonate another user. When requesting a Windows desktop service, the function does not validate the supplied password before generating access credentials, allowing the attacker to obtain an iframe source URL that grants full access to the target user's Windows VM. This impacts all users with active Windows VMs, as an attacker can access and modify data on the Windows machine and in the home directory of the associated Linux machine via the Z: drive. This issue has been patched in commit 467db0b9ea0d9a929dc89b41f6eb59f7cfc68bef. No known workarounds exist.
-</code>
-
-- [ghostroots/CVE-2025-62376](https://github.com/ghostroots/CVE-2025-62376)
-
 ### CVE-2025-62454 (2025-12-09)
 
 <code>Heap-based buffer overflow in Windows Cloud Files Mini Filter Driver allows an authorized attacker to elevate privileges locally.
@@ -8428,6 +8412,7 @@
 - [lincemorado97/CVE-2025-64446_CVE-2025-58034](https://github.com/lincemorado97/CVE-2025-64446_CVE-2025-58034)
 - [Death112233/CVE-2025-64446-](https://github.com/Death112233/CVE-2025-64446-)
 - [AN5I/cve-2025-64446-fortiweb-exploit](https://github.com/AN5I/cve-2025-64446-fortiweb-exploit)
+- [lequoca/fortinet-fortiweb-cve-2025-64446-58034](https://github.com/lequoca/fortinet-fortiweb-cve-2025-64446-58034)
 
 ### CVE-2025-64458 (2025-11-05)
 
@@ -8641,6 +8626,9 @@
 
 - [Bnyt7/CVE-2025-65754](https://github.com/Bnyt7/CVE-2025-65754)
 
+### CVE-2025-65790
+- [hunterxxx/FuguHub-8.1-Reflected-SVG-XSS-CVE-2025-65790](https://github.com/hunterxxx/FuguHub-8.1-Reflected-SVG-XSS-CVE-2025-65790)
+
 ### CVE-2025-65806 (2025-12-04)
 
 <code>The E-POINT CMS eagle.gsam-1169.1 file upload feature improperly handles nested archive files. An attacker can upload a nested ZIP (a ZIP containing another ZIP) where the inner archive contains an executable file (e.g. webshell.php). When the application extracts the uploaded archives, the executable may be extracted into a web-accessible directory. This can lead to remote code execution (RCE), data disclosure, account compromise, or further system compromise depending on the web server/process privileges. The issue arises from insufficient validation of archive contents and inadequate restrictions on extraction targets.
@@ -8764,7 +8752,13 @@
 - [DavionGowie/-vercel-prod.yml-application-is-vulnerable-to-CVE-2025-66478.](https://github.com/DavionGowie/-vercel-prod.yml-application-is-vulnerable-to-CVE-2025-66478.)
 - [DavionGowie/-vercel-application-is-vulnerable-to-CVE-2025-66478.](https://github.com/DavionGowie/-vercel-application-is-vulnerable-to-CVE-2025-66478.)
 - [zhixiangyao/CVE-2025-66478-Exploit-PoC](https://github.com/zhixiangyao/CVE-2025-66478-Exploit-PoC)
-- [mio-qwq/nextjs-cve-2025-66478-ctf](https://github.com/mio-qwq/nextjs-cve-2025-66478-ctf)
+
+### CVE-2025-66489 (2025-12-03)
+
+<code>Cal.com is open-source scheduling software. Prior to 5.9.8, A flaw in the login credentials provider allows an attacker to bypass password verification when a TOTP code is provided, potentially gaining unauthorized access to user accounts. This issue exists due to problematic conditional logic in the authentication flow. This vulnerability is fixed in 5.9.8.
+</code>
+
+- [Ashwesker/Blackash-CVE-2025-66489](https://github.com/Ashwesker/Blackash-CVE-2025-66489)
 
 ### CVE-2025-66516 (2025-12-04)
 
@@ -14649,6 +14643,7 @@
 - [rifting/Zygotroller](https://github.com/rifting/Zygotroller)
 - [wqry085/PoC-Deployer-System](https://github.com/wqry085/PoC-Deployer-System)
 - [CleoV2/Debuggable-App-Exploit](https://github.com/CleoV2/Debuggable-App-Exploit)
+- [fcy10012/CVE-2024-31317-Deployer](https://github.com/fcy10012/CVE-2024-31317-Deployer)
 
 ### CVE-2024-31319 (2024-07-09)
 
@@ -19744,6 +19739,13 @@
 - [charlesgargasson/CVE-2023-1177](https://github.com/charlesgargasson/CVE-2023-1177)
 - [paultheal1en/CVE-2023-1177-PoC-reproduce](https://github.com/paultheal1en/CVE-2023-1177-PoC-reproduce)
 
+### CVE-2023-1189 (2023-03-06)
+
+<code>In WiseCleaner Wise Folder Hider 4.4.3.202 wurde eine problematische Schwachstelle ausgemacht. Das betrifft die Funktion 0x222400/0x222404/0x222410 in der Bibliothek WiseFs64.sys der Komponente IoControlCode Handler. Durch das Manipulieren mit unbekannten Daten kann eine denial of service-Schwachstelle ausgenutzt werden. Der Angriff muss lokal angegangen werden. Der Exploit steht zur öffentlichen Verfügung.
+</code>
+
+- [le0s1mba/CVE-2023-1189](https://github.com/le0s1mba/CVE-2023-1189)
+
 ### CVE-2023-1206 (2023-06-30)
 
 <code>A hash collision flaw was found in the IPv6 connection lookup table in the Linux kernel’s IPv6 functionality when a user makes a new kind of SYN flood attack. A user located in the local network or with a high bandwidth connection can increase the CPU usage of the server that accepts IPV6 connections up to 95%.
@@ -22550,7 +22552,6 @@
 - [bde574786/Sequelize-1day-CVE-2023-25813](https://github.com/bde574786/Sequelize-1day-CVE-2023-25813)
 - [White-BAO/CVE-2023-25813](https://github.com/White-BAO/CVE-2023-25813)
 - [pbj2647/CVE-2023-25813](https://github.com/pbj2647/CVE-2023-25813)
-- [numbbvi/CVE-2023-25813](https://github.com/numbbvi/CVE-2023-25813)
 - [sea-middle/cve-2023-25813](https://github.com/sea-middle/cve-2023-25813)
 
 ### CVE-2023-25950 (2023-04-11)
@@ -49306,6 +49307,14 @@
 
 - [forse01/CVE-2019-5413-NetBeans](https://github.com/forse01/CVE-2019-5413-NetBeans)
 - [forse01/CVE-2019-5413-NetBeans-NoJson](https://github.com/forse01/CVE-2019-5413-NetBeans-NoJson)
+- [crstaicu/CVE-2019-5413](https://github.com/crstaicu/CVE-2019-5413)
+
+### CVE-2019-5414 (2019-03-17)
+
+<code>If an attacker can control the port, which in itself is a very sensitive value, they can inject arbitrary OS commands due to the usage of the exec function in a third-party module kill-port &lt; 1.3.2.
+</code>
+
+- [crstaicu/CVE-2019-5414](https://github.com/crstaicu/CVE-2019-5414)
 
 ### CVE-2019-5418 (2019-03-27)
 
@@ -53649,6 +53658,7 @@
 - [austinhartzheim/fusee-gelee](https://github.com/austinhartzheim/fusee-gelee)
 - [Swiftloke/fusee-toy](https://github.com/Swiftloke/fusee-toy)
 - [nikameru/nxboot](https://github.com/nikameru/nxboot)
+- [Resi-le/NXLoader](https://github.com/Resi-le/NXLoader)
 
 ### CVE-2018-6341 (2018-12-31)
 
@@ -63786,6 +63796,7 @@
 - [sooklalad/ms09050](https://github.com/sooklalad/ms09050)
 - [sec13b/ms09-050_CVE-2009-3103](https://github.com/sec13b/ms09-050_CVE-2009-3103)
 - [Sic4rio/CVE-2009-3103---srv2.sys-SMB-Code-Execution-Python-MS09-050-](https://github.com/Sic4rio/CVE-2009-3103---srv2.sys-SMB-Code-Execution-Python-MS09-050-)
+- [nicolasdamians/ms09-050-CVE-2009-3103-exploit](https://github.com/nicolasdamians/ms09-050-CVE-2009-3103-exploit)
 
 ### CVE-2009-3555 (2009-11-09)
 
