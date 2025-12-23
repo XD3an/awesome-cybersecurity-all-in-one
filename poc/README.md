@@ -3885,7 +3885,6 @@
 
 - [encrypter15/CVE-2025-29824](https://github.com/encrypter15/CVE-2025-29824)
 - [AfanPan/CVE-2025-29824-Exploit](https://github.com/AfanPan/CVE-2025-29824-Exploit)
-- [zmkeh/CVE-2025-29824-CLFS-Local-privilege-escalation](https://github.com/zmkeh/CVE-2025-29824-CLFS-Local-privilege-escalation)
 
 ### CVE-2025-29927 (2025-03-21)
 
@@ -5465,13 +5464,6 @@
 </code>
 
 - [Guilhem7/CVE-2025-46816](https://github.com/Guilhem7/CVE-2025-46816)
-
-### CVE-2025-46817 (2025-10-03)
-
-<code>Redis is an open source, in-memory database that persists on disk. Versions 8.2.1 and below allow an authenticated user to use a specially crafted Lua script to cause an integer overflow and potentially lead to remote code execution The problem exists in all versions of Redis with Lua scripting. This issue is fixed in version 8.2.2.
-</code>
-
-- [slayerkkkk/CVE-2025-46817-PoC](https://github.com/slayerkkkk/CVE-2025-46817-PoC)
 
 ### CVE-2025-46822 (2025-05-21)
 
@@ -7205,6 +7197,7 @@
 - [knightwolf01/React2Shell](https://github.com/knightwolf01/React2Shell)
 - [BlackTechX011/React2Shell](https://github.com/BlackTechX011/React2Shell)
 - [S3cr3t-SDN/React4Shell](https://github.com/S3cr3t-SDN/React4Shell)
+- [ckex/test-vuln](https://github.com/ckex/test-vuln)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -8712,6 +8705,9 @@
 
 - [BimBoxH4/CVE-2025-66039_CVE-2025-61675_CVE-2025-61678_reePBX](https://github.com/BimBoxH4/CVE-2025-66039_CVE-2025-61675_CVE-2025-61678_reePBX)
 - [cyberleelawat/FreePBX-Multiple-CVEs-2025](https://github.com/cyberleelawat/FreePBX-Multiple-CVEs-2025)
+
+### CVE-2025-66209
+- [0xrakan/coolify-cve-2025-66209-66213](https://github.com/0xrakan/coolify-cve-2025-66209-66213)
 
 ### CVE-2025-66224 (2025-11-29)
 
@@ -19453,6 +19449,9 @@
 </code>
 
 - [rvizx/CVE-2024-57514](https://github.com/rvizx/CVE-2024-57514)
+
+### CVE-2024-57521
+- [mrlihd/CVE-2024-57521-SQL-Injection-PoC](https://github.com/mrlihd/CVE-2024-57521-SQL-Injection-PoC)
 
 ### CVE-2024-57522 (2025-02-03)
 
@@ -32589,7 +32588,7 @@
 - [hev0x/CVE-2022-29464](https://github.com/hev0x/CVE-2022-29464)
 - [gpiechnik2/nmap-CVE-2022-29464](https://github.com/gpiechnik2/nmap-CVE-2022-29464)
 - [0xAgun/CVE-2022-29464](https://github.com/0xAgun/CVE-2022-29464)
-- [000pp/WSOB](https://github.com/000pp/WSOB)
+- [0xdsm/WSOB](https://github.com/0xdsm/WSOB)
 - [h3x0v3rl0rd/CVE-2022-29464](https://github.com/h3x0v3rl0rd/CVE-2022-29464)
 - [lowkey0808/cve-2022-29464](https://github.com/lowkey0808/cve-2022-29464)
 - [superzerosec/CVE-2022-29464](https://github.com/superzerosec/CVE-2022-29464)
@@ -59069,7 +59068,7 @@
 - [mogwailabs/CVE-2017-1000486](https://github.com/mogwailabs/CVE-2017-1000486)
 - [cved-sources/cve-2017-1000486](https://github.com/cved-sources/cve-2017-1000486)
 - [Pastea/CVE-2017-1000486](https://github.com/Pastea/CVE-2017-1000486)
-- [000pp/pwnfaces](https://github.com/000pp/pwnfaces)
+- [0xdsm/pwnfaces](https://github.com/0xdsm/pwnfaces)
 - [LongWayHomie/CVE-2017-1000486](https://github.com/LongWayHomie/CVE-2017-1000486)
 - [jam620/primefaces](https://github.com/jam620/primefaces)
 
