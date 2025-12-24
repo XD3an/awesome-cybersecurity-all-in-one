@@ -1503,6 +1503,8 @@
 - [rxerium/CVE-2025-8110](https://github.com/rxerium/CVE-2025-8110)
 - [Ashwesker/Blackash-CVE-2025-8110](https://github.com/Ashwesker/Blackash-CVE-2025-8110)
 - [zAbuQasem/gogs-CVE-2025-8110](https://github.com/zAbuQasem/gogs-CVE-2025-8110)
+- [111ddea/goga-cve-2025-8110](https://github.com/111ddea/goga-cve-2025-8110)
+- [tovd-go/CVE-2025-8110](https://github.com/tovd-go/CVE-2025-8110)
 
 ### CVE-2025-8191 (2025-07-26)
 
@@ -5927,7 +5929,6 @@
 
 - [ksnnd32/redis_exploit](https://github.com/ksnnd32/redis_exploit)
 - [Zain3311/CVE-2025-49844](https://github.com/Zain3311/CVE-2025-49844)
-- [elyasbassir/CVE-2025-49844](https://github.com/elyasbassir/CVE-2025-49844)
 - [Ashwesker/Blackash-CVE-2025-49844](https://github.com/Ashwesker/Blackash-CVE-2025-49844)
 - [saneki/cve-2025-49844](https://github.com/saneki/cve-2025-49844)
 - [Network-Sec/CVE-2025-49844-RediShell-AI-made-Revshell](https://github.com/Network-Sec/CVE-2025-49844-RediShell-AI-made-Revshell)
@@ -7200,6 +7201,7 @@
 - [S3cr3t-SDN/React4Shell](https://github.com/S3cr3t-SDN/React4Shell)
 - [ckex/test-vuln](https://github.com/ckex/test-vuln)
 - [Anon2Fear/CVE-2025-55182](https://github.com/Anon2Fear/CVE-2025-55182)
+- [d01ki/react2shell-lab](https://github.com/d01ki/react2shell-lab)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -7316,7 +7318,6 @@
 <code>Relative Path Traversal vulnerability in Apache Tomcat.\n\nThe fix for bug 60013 introduced a regression where the       rewritten URL was normalized before it was decoded. This introduced the       possibility that, for rewrite rules that rewrite query parameters to the       URL, an attacker could manipulate the request URI to bypass security       constraints including the protection for /WEB-INF/ and /META-INF/. If PUT requests were also enabled then malicious files could be uploaded leading to remote code execution. PUT requests are normally limited to trusted users and it is considered unlikely that PUT requests would be enabled in conjunction with a rewrite that manipulated the URI.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.10, from 10.1.0-M1 through 10.1.44, from 9.0.0.M11 through 9.0.108.\n\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: 8.5.6 though 8.5.100. Other, older, EOL versions may also be affected.\nUsers are recommended to upgrade to version 11.0.11 or later, 10.1.45 or later or 9.0.109 or later, which fix the issue.
 </code>
 
-- [TAM-K592/CVE-2025-55752](https://github.com/TAM-K592/CVE-2025-55752)
 - [masahiro331/CVE-2025-55752](https://github.com/masahiro331/CVE-2025-55752)
 - [Ashwesker/Blackash-CVE-2025-55752](https://github.com/Ashwesker/Blackash-CVE-2025-55752)
 - [AuroraSec-Pivot/CVE-2025-55752](https://github.com/AuroraSec-Pivot/CVE-2025-55752)
@@ -7344,9 +7345,6 @@
 
 ### CVE-2025-55817
 - [5qu1n7/CVE-2025-55817](https://github.com/5qu1n7/CVE-2025-55817)
-
-### CVE-2025-55854
-- [PushkarAyengar/CVE-2025-55854-PoC](https://github.com/PushkarAyengar/CVE-2025-55854-PoC)
 
 ### CVE-2025-55885 (2025-09-22)
 
@@ -7738,7 +7736,6 @@
 </code>
 
 - [0xBruno/WSUSploit.NET](https://github.com/0xBruno/WSUSploit.NET)
-- [FurkanKAYAPINAR/CVE-2025-59287](https://github.com/FurkanKAYAPINAR/CVE-2025-59287)
 - [esteban11121/WSUS-RCE-Mitigation-59287](https://github.com/esteban11121/WSUS-RCE-Mitigation-59287)
 - [fsanzmoya/wsus_CVE-2025-59287](https://github.com/fsanzmoya/wsus_CVE-2025-59287)
 - [0x7556/CVE-2025-59287](https://github.com/0x7556/CVE-2025-59287)
@@ -8304,6 +8301,9 @@
 ### CVE-2025-63945
 - [alexlee820/CVE-2025-63945-Tencent-iOA-EoP](https://github.com/alexlee820/CVE-2025-63945-Tencent-iOA-EoP)
 
+### CVE-2025-63946
+- [alexlee820/CVE-2025-63946-Tencent-PC-Manager-EoP](https://github.com/alexlee820/CVE-2025-63946-Tencent-PC-Manager-EoP)
+
 ### CVE-2025-64027 (2025-11-20)
 
 <code>Snipe-IT v8.3.4 (build 20218) contains a reflected cross-site scripting (XSS) vulnerability in the CSV Import workflow. When an invalid CSV file is uploaded, the application returns a progress_message value that is rendered as raw HTML in the admin interface. An attacker can intercept and modify the POST /livewire/update request to inject arbitrary HTML or JavaScript into the progress_message. Because the server accepts the modified input without sanitization and reflects it back to the user, arbitrary JavaScript executes in the browser of any authenticated admin who views the import page. NOTE: this is disputed by the Supplier because the report only demonstrates that an authenticated user can choose to conduct a man-in-the-middle attack against himself.
@@ -8864,6 +8864,7 @@
 - [ali-py3/Exploit-CVE-2025-68613](https://github.com/ali-py3/Exploit-CVE-2025-68613)
 - [nehkark/CVE-2025-68613](https://github.com/nehkark/CVE-2025-68613)
 - [GnuTLam/POC-CVE-2025-68613](https://github.com/GnuTLam/POC-CVE-2025-68613)
+- [111ddea/CVE-2025-68613](https://github.com/111ddea/CVE-2025-68613)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -58925,6 +58926,13 @@
 
 - [fastify/send](https://github.com/fastify/send)
 
+### CVE-2017-20192 (2024-10-16)
+
+<code>The Formidable Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via multiple parameters submitted during form entries like 'after_html' in versions before 2.05.03 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts that execute in a victim's browser.
+</code>
+
+- [flame-11/CVE-2017-20192-formidable-forms](https://github.com/flame-11/CVE-2017-20192-formidable-forms)
+
 ### CVE-2017-98505
 - [mike-williams/Struts2Vuln](https://github.com/mike-williams/Struts2Vuln)
 
@@ -62990,6 +62998,7 @@
 - [0xl0k1/CVE-2012-1823](https://github.com/0xl0k1/CVE-2012-1823)
 - [Jimmy01240397/CVE-2012-1823-Analyze](https://github.com/Jimmy01240397/CVE-2012-1823-Analyze)
 - [Dmitri131313/CVE-2012-1823-exploit-for-https-user-password-web](https://github.com/Dmitri131313/CVE-2012-1823-exploit-for-https-user-password-web)
+- [nulltrace1336/PHP-CGI-Argument-Injection-Exploit](https://github.com/nulltrace1336/PHP-CGI-Argument-Injection-Exploit)
 
 ### CVE-2012-1831 (2012-07-05)
 
