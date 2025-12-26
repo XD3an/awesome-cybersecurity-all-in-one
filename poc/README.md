@@ -1323,13 +1323,6 @@
 
 - [NagisaYumaa/CVE-2025-7431](https://github.com/NagisaYumaa/CVE-2025-7431)
 
-### CVE-2025-7441 (2025-08-16)
-
-<code>The StoryChief plugin for WordPress is vulnerable to arbitrary file uploads in all versions up to, and including, 1.0.42. This vulnerability occurs through the /wp-json/storychief/webhook REST-API endpoint that does not have sufficient filetype validation. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
-</code>
-
-- [AnotherSec/CVE-2025-7441](https://github.com/AnotherSec/CVE-2025-7441)
-
 ### CVE-2025-7461 (2025-07-12)
 
 <code>Eine Schwachstelle wurde in code-projects Modern Bag 1.0 gefunden. Sie wurde als kritisch eingestuft. Dies betrifft einen unbekannten Teil der Datei /action.php. Mittels dem Manipulieren des Arguments proId mit unbekannten Daten kann eine sql injection-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk passieren. Der Exploit steht zur öffentlichen Verfügung.
@@ -2256,6 +2249,13 @@
 </code>
 
 - [InfoSecAntara/CVE-2025-14765-and-CVE-2025-14766](https://github.com/InfoSecAntara/CVE-2025-14765-and-CVE-2025-14766)
+
+### CVE-2025-14847 (2025-12-19)
+
+<code>Mismatched length fields in Zlib compressed protocol headers may allow a read of uninitialized heap memory by an unauthenticated client. This issue affects all MongoDB Server v7.0 prior to 7.0.28 versions, MongoDB Server v8.0 versions prior to 8.0.17, MongoDB Server v8.2 versions prior to 8.2.3, MongoDB Server v6.0 versions prior to 6.0.27, MongoDB Server v5.0 versions prior to 5.0.32, MongoDB Server v4.4 versions prior to 4.4.30, MongoDB Server v4.2 versions greater than or equal to 4.2.0, MongoDB Server v4.0 versions greater than or equal to 4.0.0, and MongoDB Server v3.6 versions greater than or equal to 3.6.0.
+</code>
+
+- [onewinner/CVE-2025-14847](https://github.com/onewinner/CVE-2025-14847)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -7806,9 +7806,6 @@
 - [demining/Scalar-Venom-Attack](https://github.com/demining/Scalar-Venom-Attack)
 - [Mwete404/Scalar-Venom-Attack](https://github.com/Mwete404/Scalar-Venom-Attack)
 
-### CVE-2025-60423
-- [Zephyr1ng/CVE-2025-60423](https://github.com/Zephyr1ng/CVE-2025-60423)
-
 ### CVE-2025-60424 (2025-10-27)
 
 <code>A lack of rate limiting in the OTP verification component of Nagios Fusion v2024R1.2 and v2024R2 allows attackers to bypass authentication via a bruteforce attack.
@@ -8820,6 +8817,7 @@
 - [JohannesLks/CVE-2025-68613-Python-Exploit](https://github.com/JohannesLks/CVE-2025-68613-Python-Exploit)
 - [hackersatyamrastogi/n8n-exploit-CVE-2025-68613-n8n-God-Mode-Ultimate](https://github.com/hackersatyamrastogi/n8n-exploit-CVE-2025-68613-n8n-God-Mode-Ultimate)
 - [mbanyamer/n8n-Authenticated-Expression-Injection-RCE-CVE-2025-68613](https://github.com/mbanyamer/n8n-Authenticated-Expression-Injection-RCE-CVE-2025-68613)
+- [releaseown/Analysis-n8n-CVE-2025-68613](https://github.com/releaseown/Analysis-n8n-CVE-2025-68613)
 
 ### CVE-2025-68645 (2025-12-22)
 
@@ -14142,6 +14140,7 @@
 - [Marven11/CVE-2024-28397-js2py-Sandbox-Escape](https://github.com/Marven11/CVE-2024-28397-js2py-Sandbox-Escape)
 - [CYBER-WARRIOR-SEC/CVE-2024-28397-js2py-Sandbox-Escape](https://github.com/CYBER-WARRIOR-SEC/CVE-2024-28397-js2py-Sandbox-Escape)
 - [GhostOverflow/CVE-2024-28397-command-execution-poc](https://github.com/GhostOverflow/CVE-2024-28397-command-execution-poc)
+- [releaseown/exploit-js2py](https://github.com/releaseown/exploit-js2py)
 - [harutomo-jp/CVE-2024-28397-RCE](https://github.com/harutomo-jp/CVE-2024-28397-RCE)
 - [Naved124/CVE-2024-28397-js2py-Sandbox-Escape](https://github.com/Naved124/CVE-2024-28397-js2py-Sandbox-Escape)
 - [ExtremeUday/Remote-Code-Execution-CVE-2024-28397-pyload-ng-js2py-](https://github.com/ExtremeUday/Remote-Code-Execution-CVE-2024-28397-pyload-ng-js2py-)
@@ -22856,6 +22855,7 @@
 - [1amthebest1/CVE-2023-27372](https://github.com/1amthebest1/CVE-2023-27372)
 - [1Ronkkeli/spip-cve-2023-27372-rce](https://github.com/1Ronkkeli/spip-cve-2023-27372-rce)
 - [G01d3nW01f/cve-2023-27372](https://github.com/G01d3nW01f/cve-2023-27372)
+- [KirolosKhairy/CVE-2023-27372](https://github.com/KirolosKhairy/CVE-2023-27372)
 
 ### CVE-2023-27470 (2023-09-11)
 
