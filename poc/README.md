@@ -1477,7 +1477,6 @@
 - [Shinkirou789/Cve-2025-8088-WinRar-vulnerability](https://github.com/Shinkirou789/Cve-2025-8088-WinRar-vulnerability)
 - [hbesljx/CVE-2025-8088-EXP](https://github.com/hbesljx/CVE-2025-8088-EXP)
 - [lucyna77/winrar-exploit](https://github.com/lucyna77/winrar-exploit)
-- [Ashwesker/Blackash-CVE-2025-8088](https://github.com/Ashwesker/Blackash-CVE-2025-8088)
 - [nuky-alt/CVE-2025-8088](https://github.com/nuky-alt/CVE-2025-8088)
 - [4daysday/cve-2025-8088](https://github.com/4daysday/cve-2025-8088)
 - [xi0onamdev/WinRAR-CVE-2025-8088-Exploitation-Toolkit](https://github.com/xi0onamdev/WinRAR-CVE-2025-8088-Exploitation-Toolkit)
@@ -1646,6 +1645,7 @@
 - [3rendil/CVE-2025-9074-POC](https://github.com/3rendil/CVE-2025-9074-POC)
 - [fsoc-ghost-0x/CVE-2025-9074_DAEMON_KILLER](https://github.com/fsoc-ghost-0x/CVE-2025-9074_DAEMON_KILLER)
 - [zaydbf/CVE-2025-9074-Poc](https://github.com/zaydbf/CVE-2025-9074-Poc)
+- [Shaoshi17/CVE-2025-9074-Docker-Exploit](https://github.com/Shaoshi17/CVE-2025-9074-Docker-Exploit)
 
 ### CVE-2025-9090 (2025-08-17)
 
@@ -1898,20 +1898,6 @@
 
 - [Nxploited/CVE-2025-11170](https://github.com/Nxploited/CVE-2025-11170)
 
-### CVE-2025-11171 (2025-10-08)
-
-<code>The Chartify – WordPress Chart Plugin for WordPress is vulnerable to Missing Authentication for Critical Function in all versions up to, and including, 3.5.9. This is due to the plugin registering an unauthenticated AJAX action that dispatches to admin-class methods based on a request parameter, without any nonce or capability checks. This makes it possible for unauthenticated attackers to execute administrative functions via the wp-admin/admin-ajax.php endpoint granted they can identify callable method names.
-</code>
-
-- [SnailSploit/CVE-2025-11171](https://github.com/SnailSploit/CVE-2025-11171)
-
-### CVE-2025-11174 (2025-11-01)
-
-<code>The Document Library Lite plugin for WordPress is vulnerable to Improper Authorization in all versions up to, and including, 1.1.6. This is due to the plugin exposing an unauthenticated AJAX action dll_load_posts which returns a JSON table of document data without performing nonce or capability checks. The handler accepts an attacker-controlled args array where the status option explicitly allows draft, pending, future, and any. This makes it possible for unauthenticated attackers to retrieve unpublished document titles and content via the AJAX endpoint.
-</code>
-
-- [SnailSploit/CVE-2025-11174](https://github.com/SnailSploit/CVE-2025-11174)
-
 ### CVE-2025-11492 (2025-10-16)
 
 <code>In the ConnectWise Automate Agent, communications could be configured to use HTTP instead of HTTPS. In such cases, an on-path threat actor with a man-in-the-middle network position could intercept, modify, or replay agent-server traffic. Additionally, the encryption method used to obfuscate some communications over the HTTP channel is updated in the Automate 2025.9 patch to enforce HTTPS for all agent communications.
@@ -1970,13 +1956,6 @@
 </code>
 
 - [SnailSploit/CVE-2025-12163](https://github.com/SnailSploit/CVE-2025-12163)
-
-### CVE-2025-12428 (2025-11-10)
-
-<code>Type Confusion in V8 in Google Chrome prior to 142.0.7444.59 allowed a remote attacker to perform arbitrary read/write via a crafted HTML page. (Chromium security severity: High)
-</code>
-
-- [dexterm300/cve-2025-12428-exploit-poc](https://github.com/dexterm300/cve-2025-12428-exploit-poc)
 
 ### CVE-2025-12539 (2025-11-11)
 
@@ -2256,6 +2235,7 @@
 </code>
 
 - [onewinner/CVE-2025-14847](https://github.com/onewinner/CVE-2025-14847)
+- [ProbiusOfficial/CVE-2025-14847](https://github.com/ProbiusOfficial/CVE-2025-14847)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -4034,7 +4014,6 @@
 - [ThemeHackers/CVE-2025-30208](https://github.com/ThemeHackers/CVE-2025-30208)
 - [TH-SecForge/CVE-2025-30208](https://github.com/TH-SecForge/CVE-2025-30208)
 - [bugdotexe/CVE-2025-30208](https://github.com/bugdotexe/CVE-2025-30208)
-- [layanOd/CVE-2025-30208-Arbitrary-File-Read-in-Vite-servers](https://github.com/layanOd/CVE-2025-30208-Arbitrary-File-Read-in-Vite-servers)
 
 ### CVE-2025-30216 (2025-03-25)
 
@@ -4528,7 +4507,6 @@
 - [D3ltaFormation/CVE-2025-32463-Sudo-Chroot-Escape](https://github.com/D3ltaFormation/CVE-2025-32463-Sudo-Chroot-Escape)
 - [AC8999/CVE-2025-32463](https://github.com/AC8999/CVE-2025-32463)
 - [dr4xp/sudo-chroot](https://github.com/dr4xp/sudo-chroot)
-- [NewComrade12211/CVE-2025-32463](https://github.com/NewComrade12211/CVE-2025-32463)
 - [Ghstxz/CVE-2025-32463](https://github.com/Ghstxz/CVE-2025-32463)
 - [ankitpandey383/CVE-2025-32463-Sudo-Privilege-Escalation](https://github.com/ankitpandey383/CVE-2025-32463-Sudo-Privilege-Escalation)
 - [justjoeyking/CVE-2025-32463](https://github.com/justjoeyking/CVE-2025-32463)
@@ -5634,7 +5612,6 @@
 - [arun1033/CVE-2025-48384](https://github.com/arun1033/CVE-2025-48384)
 - [s41r4j/CVE-2025-48384](https://github.com/s41r4j/CVE-2025-48384)
 - [s41r4j/CVE-2025-48384-submodule](https://github.com/s41r4j/CVE-2025-48384-submodule)
-- [MarcoTondolo/cve-2025-48384-poc](https://github.com/MarcoTondolo/cve-2025-48384-poc)
 - [zr0n/CVE-2025-48384-sub](https://github.com/zr0n/CVE-2025-48384-sub)
 - [zr0n/CVE-2025-48384-main](https://github.com/zr0n/CVE-2025-48384-main)
 - [vignesh21-git/CVE-2025-48384](https://github.com/vignesh21-git/CVE-2025-48384)
@@ -5918,13 +5895,6 @@
 
 - [encrypter15/CVE-2025-50165-x64-Exploit](https://github.com/encrypter15/CVE-2025-50165-x64-Exploit)
 
-### CVE-2025-50168 (2025-08-12)
-
-<code>Access of resource using incompatible type ('type confusion') in Windows Win32K - ICOMP allows an authorized attacker to elevate privileges locally.
-</code>
-
-- [D4m0n/CVE-2025-50168-pwn2own-berlin-2025](https://github.com/D4m0n/CVE-2025-50168-pwn2own-berlin-2025)
-
 ### CVE-2025-50286 (2025-08-06)
 
 <code>A Remote Code Execution (RCE) vulnerability in Grav CMS v1.7.48 allows an authenticated admin to upload a malicious plugin via the /admin/tools/direct-install interface. Once uploaded, the plugin is automatically extracted and loaded, allowing arbitrary PHP code execution and reverse shell access.
@@ -5966,7 +5936,6 @@
 </code>
 
 - [1h3ll/CVE-2025-50363_BXSS_CVE](https://github.com/1h3ll/CVE-2025-50363_BXSS_CVE)
-- [Adar5h16/My-CVE](https://github.com/Adar5h16/My-CVE)
 
 ### CVE-2025-50364
 - [1h3ll/CVE-2025-50364_CSRF_ADD_CATEGORY-phpgurukul-CVE](https://github.com/1h3ll/CVE-2025-50364_CSRF_ADD_CATEGORY-phpgurukul-CVE)
@@ -6207,13 +6176,6 @@
 </code>
 
 - [piotrmaciejbednarski/CVE-2025-51529](https://github.com/piotrmaciejbednarski/CVE-2025-51529)
-
-### CVE-2025-51586 (2025-09-08)
-
-<code>An issue was discoverd in file controllers/admin/AdminLoginController.php in PrestaShop before 8.2.1 allowing attackers to gain sensitive information via the reset password feature.
-</code>
-
-- [7h30th3r0n3/CVE-2025-51586-PrestaShop-PoC](https://github.com/7h30th3r0n3/CVE-2025-51586-PrestaShop-PoC)
 
 ### CVE-2025-51591 (2025-07-11)
 
@@ -6688,6 +6650,9 @@
 
 - [saykino/CVE-2025-54321](https://github.com/saykino/CVE-2025-54321)
 
+### CVE-2025-54322
+- [Sachinart/CVE-2025-54322](https://github.com/Sachinart/CVE-2025-54322)
+
 ### CVE-2025-54352 (2025-07-21)
 
 <code>WordPress 3.5 through 6.8.2 allows remote attackers to guess titles of private and draft posts via pingback.ping XML-RPC requests. NOTE: the Supplier is not changing this behavior.
@@ -6769,13 +6734,6 @@
 </code>
 
 - [shinigami-777/PoC_CVE-2025-54887](https://github.com/shinigami-777/PoC_CVE-2025-54887)
-
-### CVE-2025-54897 (2025-09-09)
-
-<code>Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.
-</code>
-
-- [themaxlpalfaboy/CVE-2025-54897-LAB](https://github.com/themaxlpalfaboy/CVE-2025-54897-LAB)
 
 ### CVE-2025-54914 (2025-09-04)
 
@@ -7179,6 +7137,12 @@
 - [guiimoraes/react2shell-evolved](https://github.com/guiimoraes/react2shell-evolved)
 - [sobuj0007/Nextjs_RCE_Exploit_Tool](https://github.com/sobuj0007/Nextjs_RCE_Exploit_Tool)
 - [Jakelife/HACKVISER-CVE-2025-55182-LAB](https://github.com/Jakelife/HACKVISER-CVE-2025-55182-LAB)
+- [thqxploit666/CVE-2025-55182](https://github.com/thqxploit666/CVE-2025-55182)
+- [itsismarcos/Bot-exploit-CVE-2025-55182](https://github.com/itsismarcos/Bot-exploit-CVE-2025-55182)
+- [0xROI/CVE-2025-55182](https://github.com/0xROI/CVE-2025-55182)
+- [Updatelap/CVE-2025-55182](https://github.com/Updatelap/CVE-2025-55182)
+- [9988700/CVE-2025-55182-POC-NEXTJS](https://github.com/9988700/CVE-2025-55182-POC-NEXTJS)
+- [kanyokoo/React-Server-Components-Remote-Code-Execution-CVE-2025-55182-](https://github.com/kanyokoo/React-Server-Components-Remote-Code-Execution-CVE-2025-55182-)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -7569,9 +7533,6 @@
 
 - [5ulfur/CVE-2025-57428](https://github.com/5ulfur/CVE-2025-57428)
 
-### CVE-2025-57459
-- [aljoharasubaie/CVE-2025-57459](https://github.com/aljoharasubaie/CVE-2025-57459)
-
 ### CVE-2025-57460
 - [aljoharasubaie/CVE-2025-57460](https://github.com/aljoharasubaie/CVE-2025-57460)
 
@@ -7711,10 +7672,10 @@
 </code>
 
 - [QurtiDev/WSUS-CVE-2025-59287-RCE](https://github.com/QurtiDev/WSUS-CVE-2025-59287-RCE)
-- [dexterm300/cve-2025-59287-exploit-poc](https://github.com/dexterm300/cve-2025-59287-exploit-poc)
 - [Twodimensionalitylevelcrossing817/CVE-2025-59287](https://github.com/Twodimensionalitylevelcrossing817/CVE-2025-59287)
 - [M507/CVE-2025-59287-PoC](https://github.com/M507/CVE-2025-59287-PoC)
 - [Adel-kaka-dz/cve-2025-59287](https://github.com/Adel-kaka-dz/cve-2025-59287)
+- [gud425/gud425.github.io](https://github.com/gud425/gud425.github.io)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -7773,7 +7734,6 @@
 <code>Flowise is a drag &amp; drop user interface to build a customized large language model flow. In version 3.0.5, Flowise is vulnerable to remote code execution. The CustomMCP node allows users to input configuration settings for connecting to an external MCP server. This node parses the user-provided mcpServerConfig string to build the MCP server configuration. However, during this process, it executes JavaScript code without any security validation. Specifically, inside the convertToValidJSONString function, user input is directly passed to the Function() constructor, which evaluates and executes the input as JavaScript code. Since this runs with full Node.js runtime privileges, it can access dangerous modules such as child_process and fs. This issue has been patched in version 3.0.6.
 </code>
 
-- [zimshk/CVE-2025-59528.yaml](https://github.com/zimshk/CVE-2025-59528.yaml)
 - [Ashwesker/Blackash-CVE-2025-59528](https://github.com/Ashwesker/Blackash-CVE-2025-59528)
 
 ### CVE-2025-59532 (2025-09-22)
@@ -7952,7 +7912,6 @@
 <code>Squid is a caching proxy for the Web. In Squid versions prior to 7.2, a failure to redact HTTP authentication credentials in error handling allows information disclosure. The vulnerability allows a script to bypass browser security protections and learn the credentials a trusted client uses to authenticate. This potentially allows a remote client to identify security tokens or credentials used internally by a web application using Squid for backend load balancing. These attacks do not require Squid to be configured with HTTP authentication. The vulnerability is fixed in version 7.2. As a workaround, disable debug information in administrator mailto links generated by Squid by configuring squid.conf with email_err_data off.
 </code>
 
-- [shahroodcert/CVE-2025-62168](https://github.com/shahroodcert/CVE-2025-62168)
 - [nehkark/CVE-2025-62168](https://github.com/nehkark/CVE-2025-62168)
 
 ### CVE-2025-62215 (2025-11-11)
@@ -8444,9 +8403,6 @@
 
 - [kirubel-cve/CVE-2025-65427](https://github.com/kirubel-cve/CVE-2025-65427)
 
-### CVE-2025-65442
-- [zero-day348/CVE-2025-65442-DOM-based-Cross-Site-Scripting-XSS-Vulnerability-in-novel-V3.5.0-CWE-79-](https://github.com/zero-day348/CVE-2025-65442-DOM-based-Cross-Site-Scripting-XSS-Vulnerability-in-novel-V3.5.0-CWE-79-)
-
 ### CVE-2025-65482
 - [AT190510-Cuong/CVE-2025-65482-XXE-](https://github.com/AT190510-Cuong/CVE-2025-65482-XXE-)
 
@@ -8706,7 +8662,11 @@
 
 - [Ashwesker/Blackash-CVE-2025-66644](https://github.com/Ashwesker/Blackash-CVE-2025-66644)
 
-### CVE-2025-66947
+### CVE-2025-66947 (2025-12-26)
+
+<code>SQL injection vulnerability in krishanmuraiji SMS v.1.0, within the /studentms/admin/edit-class-detail.php via the editid GET parameter. An attacker can trigger controlled delays using SQL SLEEP() to infer database contents. Successful exploitation may lead to full database compromise, especially within an administrative module.
+</code>
+
 - [kabir0104k/CVE-2025-66947](https://github.com/kabir0104k/CVE-2025-66947)
 
 ### CVE-2025-67294
@@ -8818,6 +8778,11 @@
 - [hackersatyamrastogi/n8n-exploit-CVE-2025-68613-n8n-God-Mode-Ultimate](https://github.com/hackersatyamrastogi/n8n-exploit-CVE-2025-68613-n8n-God-Mode-Ultimate)
 - [mbanyamer/n8n-Authenticated-Expression-Injection-RCE-CVE-2025-68613](https://github.com/mbanyamer/n8n-Authenticated-Expression-Injection-RCE-CVE-2025-68613)
 - [releaseown/Analysis-n8n-CVE-2025-68613](https://github.com/releaseown/Analysis-n8n-CVE-2025-68613)
+- [Dlanang/homelab-CVE-2025-68613](https://github.com/Dlanang/homelab-CVE-2025-68613)
+- [Khin-96/n8n-cve-2025-68613-thm](https://github.com/Khin-96/n8n-cve-2025-68613-thm)
+- [J4ck3LSyN-Gen2/n8n-CVE-2025-68613-TryHackMe](https://github.com/J4ck3LSyN-Gen2/n8n-CVE-2025-68613-TryHackMe)
+- [Ak-cybe/CVE-2025-68613-n8n-rce-analysis](https://github.com/Ak-cybe/CVE-2025-68613-n8n-rce-analysis)
+- [LingerANR/n8n-CVE-2025-68613](https://github.com/LingerANR/n8n-CVE-2025-68613)
 
 ### CVE-2025-68645 (2025-12-22)
 
@@ -8834,6 +8799,9 @@
 
 ### CVE-2025-492030
 - [ImTheCopilotNow/CVE-2025-492030](https://github.com/ImTheCopilotNow/CVE-2025-492030)
+
+### CVE-2025-505050
+- [aljoharasubaie/CVE-2025-505050](https://github.com/aljoharasubaie/CVE-2025-505050)
 
 ### CVE-2025-4102025
 - [ImTheCopilotNow/CVE-2025-4102025](https://github.com/ImTheCopilotNow/CVE-2025-4102025)
@@ -9803,6 +9771,13 @@
 
 - [KiPhuong/cve-2024-3552](https://github.com/KiPhuong/cve-2024-3552)
 - [KiPhuong/challenge-cve-2024-3552](https://github.com/KiPhuong/challenge-cve-2024-3552)
+
+### CVE-2024-3553 (2024-05-02)
+
+<code>The Tutor LMS – eLearning and online course solution plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the hide_notices function in all versions up to, and including, 2.6.2. This makes it possible for unauthenticated attackers to enable user registration on sites that may have it disabled.
+</code>
+
+- [RandomRobbieBF/CVE-2024-3553](https://github.com/RandomRobbieBF/CVE-2024-3553)
 
 ### CVE-2024-3568 (2024-04-10)
 
@@ -19655,13 +19630,6 @@
 - [yosef0x01/CVE-2023-0669-Analysis](https://github.com/yosef0x01/CVE-2023-0669-Analysis)
 - [Avento/CVE-2023-0669](https://github.com/Avento/CVE-2023-0669)
 - [zakaria-laouani/cve-2023-0669-simulation](https://github.com/zakaria-laouani/cve-2023-0669-simulation)
-
-### CVE-2023-0704 (2023-02-07)
-
-<code>Insufficient policy enforcement in DevTools in Google Chrome prior to 110.0.5481.77 allowed a remote attacker to bypass same origin policy and proxy settings via a crafted HTML page. (Chromium security severity: Low)
-</code>
-
-- [hex01e/exploit-CVE-2023-0704](https://github.com/hex01e/exploit-CVE-2023-0704)
 
 ### CVE-2023-0748 (2023-02-08)
 
