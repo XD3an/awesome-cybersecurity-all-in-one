@@ -1477,7 +1477,6 @@
 - [Shinkirou789/Cve-2025-8088-WinRar-vulnerability](https://github.com/Shinkirou789/Cve-2025-8088-WinRar-vulnerability)
 - [hbesljx/CVE-2025-8088-EXP](https://github.com/hbesljx/CVE-2025-8088-EXP)
 - [lucyna77/winrar-exploit](https://github.com/lucyna77/winrar-exploit)
-- [nuky-alt/CVE-2025-8088](https://github.com/nuky-alt/CVE-2025-8088)
 - [4daysday/cve-2025-8088](https://github.com/4daysday/cve-2025-8088)
 - [xi0onamdev/WinRAR-CVE-2025-8088-Exploitation-Toolkit](https://github.com/xi0onamdev/WinRAR-CVE-2025-8088-Exploitation-Toolkit)
 - [Markusino488/cve-2025-8088](https://github.com/Markusino488/cve-2025-8088)
@@ -6394,13 +6393,6 @@
 - [Hex00-0x4/FortiWeb-CVE-2025-52970-Authentication-Bypass](https://github.com/Hex00-0x4/FortiWeb-CVE-2025-52970-Authentication-Bypass)
 - [34zY/CVE-2025-52970](https://github.com/34zY/CVE-2025-52970)
 
-### CVE-2025-53072 (2025-10-21)
-
-<code>Vulnerability in the Oracle Marketing product of Oracle E-Business Suite (component: Marketing Administration).  Supported versions that are affected are 12.2.3-12.2.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Marketing.  Successful attacks of this vulnerability can result in takeover of Oracle Marketing. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
-</code>
-
-- [Ashwesker/Blackash-CVE-2025-53072](https://github.com/Ashwesker/Blackash-CVE-2025-53072)
-
 ### CVE-2025-53367 (2025-07-03)
 
 <code>DjVuLibre is a GPL implementation of DjVu, a web-centric format for distributing documents and images. Prior to version 3.5.29, the MMRDecoder::scanruns method is affected by an OOB-write vulnerability, because it does not check that the xr pointer stays within the bounds of the allocated buffer. This can lead to writes beyond the allocated memory, resulting in a heap corruption condition. An out-of-bounds read with pr is also possible for the same reason. This issue has been patched in version 3.5.29.
@@ -6773,10 +6765,13 @@
 - [wiixx44/CVE-2025-55182](https://github.com/wiixx44/CVE-2025-55182)
 - [Huzii11/React2Shell-CVE-2025-55182-original-poc](https://github.com/Huzii11/React2Shell-CVE-2025-55182-original-poc)
 - [mayank729/CVE-2025-55182-scanner](https://github.com/mayank729/CVE-2025-55182-scanner)
+- [ahmedtouzani/CVE-2025-55182](https://github.com/ahmedtouzani/CVE-2025-55182)
 - [meneim99/react2shell-scanner](https://github.com/meneim99/react2shell-scanner)
+- [iksanwkk/CVE-2025-55182-exp](https://github.com/iksanwkk/CVE-2025-55182-exp)
 - [phornnato/CVE-2025-55182](https://github.com/phornnato/CVE-2025-55182)
 - [alyaapm/CVE-2025-55182-shellinteractive](https://github.com/alyaapm/CVE-2025-55182-shellinteractive)
 - [Mayca369/CVE-2025-55182](https://github.com/Mayca369/CVE-2025-55182)
+- [ahmed-dev-op/CVE-2025-55182](https://github.com/ahmed-dev-op/CVE-2025-55182)
 - [Pantheon-Security/medusa](https://github.com/Pantheon-Security/medusa)
 - [BankkRoll/Quickcheck-CVE-2025-55182-React-and-CVE-2025-66478-Next.js](https://github.com/BankkRoll/Quickcheck-CVE-2025-55182-React-and-CVE-2025-66478-Next.js)
 - [ejpir/CVE-2025-55182-research](https://github.com/ejpir/CVE-2025-55182-research)
@@ -7750,6 +7745,7 @@
 
 - [Ashwesker/Blackash-CVE-2025-59718](https://github.com/Ashwesker/Blackash-CVE-2025-59718)
 - [exfil0/CVE-2025-59718-PoC](https://github.com/exfil0/CVE-2025-59718-PoC)
+- [moften/CVE-2025-59718-Fortinet-Poc](https://github.com/moften/CVE-2025-59718-Fortinet-Poc)
 
 ### CVE-2025-59843 (2025-09-26)
 
@@ -7951,13 +7947,6 @@
 </code>
 
 - [96613686/CVE-2025-62470](https://github.com/96613686/CVE-2025-62470)
-
-### CVE-2025-62481 (2025-10-21)
-
-<code>Vulnerability in the Oracle Marketing product of Oracle E-Business Suite (component: Marketing Administration).  Supported versions that are affected are 12.2.3-12.2.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Marketing.  Successful attacks of this vulnerability can result in takeover of Oracle Marketing. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
-</code>
-
-- [Ashwesker/Blackash-CVE-2025-62481](https://github.com/Ashwesker/Blackash-CVE-2025-62481)
 
 ### CVE-2025-62507 (2025-11-04)
 
@@ -8608,6 +8597,7 @@
 - [Jmehta10/CVE-2025-66470](https://github.com/Jmehta10/CVE-2025-66470)
 
 ### CVE-2025-66478
+- [Saied25/fix-react2shell-next](https://github.com/Saied25/fix-react2shell-next)
 - [abtonc/next-cve-2025-66478](https://github.com/abtonc/next-cve-2025-66478)
 - [wangxso/CVE-2025-66478-POC](https://github.com/wangxso/CVE-2025-66478-POC)
 - [Malayke/Next.js-RSC-RCE-Scanner-CVE-2025-66478](https://github.com/Malayke/Next.js-RSC-RCE-Scanner-CVE-2025-66478)
@@ -8765,6 +8755,7 @@
 - [Ashwesker/Blackash-CVE-2025-68613](https://github.com/Ashwesker/Blackash-CVE-2025-68613)
 - [TheStingR/CVE-2025-68613-POC](https://github.com/TheStingR/CVE-2025-68613-POC)
 - [wioui/n8n-CVE-2025-68613-exploit](https://github.com/wioui/n8n-CVE-2025-68613-exploit)
+- [reem-012/poc_CVE-2025-68613](https://github.com/reem-012/poc_CVE-2025-68613)
 - [intbjw/CVE-2025-68613-poc-via-copilot](https://github.com/intbjw/CVE-2025-68613-poc-via-copilot)
 - [ali-py3/Exploit-CVE-2025-68613](https://github.com/ali-py3/Exploit-CVE-2025-68613)
 - [nehkark/CVE-2025-68613](https://github.com/nehkark/CVE-2025-68613)
@@ -8777,7 +8768,7 @@
 - [JohannesLks/CVE-2025-68613-Python-Exploit](https://github.com/JohannesLks/CVE-2025-68613-Python-Exploit)
 - [hackersatyamrastogi/n8n-exploit-CVE-2025-68613-n8n-God-Mode-Ultimate](https://github.com/hackersatyamrastogi/n8n-exploit-CVE-2025-68613-n8n-God-Mode-Ultimate)
 - [mbanyamer/n8n-Authenticated-Expression-Injection-RCE-CVE-2025-68613](https://github.com/mbanyamer/n8n-Authenticated-Expression-Injection-RCE-CVE-2025-68613)
-- [releaseown/Analysis-n8n-CVE-2025-68613](https://github.com/releaseown/Analysis-n8n-CVE-2025-68613)
+- [releaseown/analysis-and-poc-n8n-CVE-2025-68613](https://github.com/releaseown/analysis-and-poc-n8n-CVE-2025-68613)
 - [Dlanang/homelab-CVE-2025-68613](https://github.com/Dlanang/homelab-CVE-2025-68613)
 - [Khin-96/n8n-cve-2025-68613-thm](https://github.com/Khin-96/n8n-cve-2025-68613-thm)
 - [J4ck3LSyN-Gen2/n8n-CVE-2025-68613-TryHackMe](https://github.com/J4ck3LSyN-Gen2/n8n-CVE-2025-68613-TryHackMe)
@@ -54479,6 +54470,7 @@
 - [cved-sources/cve-2018-9206](https://github.com/cved-sources/cve-2018-9206)
 - [mi-hood/CVE-2018-9206](https://github.com/mi-hood/CVE-2018-9206)
 - [liemkaka/CVE-2018-9206](https://github.com/liemkaka/CVE-2018-9206)
+- [flame-11/CVE-2018-9206-jquery-file-upload](https://github.com/flame-11/CVE-2018-9206-jquery-file-upload)
 
 ### CVE-2018-9207 (2018-11-19)
 
