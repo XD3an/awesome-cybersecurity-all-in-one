@@ -6753,6 +6753,7 @@
 - [Huzii11/React2Shell-CVE-2025-55182-original-poc](https://github.com/Huzii11/React2Shell-CVE-2025-55182-original-poc)
 - [mayank729/CVE-2025-55182-scanner](https://github.com/mayank729/CVE-2025-55182-scanner)
 - [ahmedtouzani/CVE-2025-55182](https://github.com/ahmedtouzani/CVE-2025-55182)
+- [MysticalHearts/CVE-2025-55182-React2Shell-RCE-Shell](https://github.com/MysticalHearts/CVE-2025-55182-React2Shell-RCE-Shell)
 - [meneim99/react2shell-scanner](https://github.com/meneim99/react2shell-scanner)
 - [iksanwkk/CVE-2025-55182-exp](https://github.com/iksanwkk/CVE-2025-55182-exp)
 - [phornnato/CVE-2025-55182](https://github.com/phornnato/CVE-2025-55182)
@@ -7126,6 +7127,7 @@
 - [kanyokoo/React-Server-Components-Remote-Code-Execution-CVE-2025-55182-](https://github.com/kanyokoo/React-Server-Components-Remote-Code-Execution-CVE-2025-55182-)
 - [haftomgu/CVE-2025-55182-advanced-scanner-](https://github.com/haftomgu/CVE-2025-55182-advanced-scanner-)
 - [KingHacker353/R2C-CVE-2025-55182-66478](https://github.com/KingHacker353/R2C-CVE-2025-55182-66478)
+- [MysticalHearts/mysticalhearts.github.io](https://github.com/MysticalHearts/mysticalhearts.github.io)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -7882,13 +7884,6 @@
 
 - [siddu7575/CVE-2025-61882-CVE-2025-61884](https://github.com/siddu7575/CVE-2025-61882-CVE-2025-61884)
 - [Zhert-lab/CVE-2025-61882-CVE-2025-61884](https://github.com/Zhert-lab/CVE-2025-61882-CVE-2025-61884)
-
-### CVE-2025-61884 (2025-10-12)
-
-<code>Vulnerability in the Oracle Configurator product of Oracle E-Business Suite (component: Runtime UI).  Supported versions that are affected are 12.2.3-12.2.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Configurator.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Configurator accessible data. CVSS 3.1 Base Score 7.5 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N).
-</code>
-
-- [Ashwesker/Blackash-CVE-2025-61884](https://github.com/Ashwesker/Blackash-CVE-2025-61884)
 
 ### CVE-2025-61922 (2025-10-16)
 
