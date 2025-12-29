@@ -1658,13 +1658,6 @@
 
 - [MooseLoveti/Trinity-Audio-CVE-Report](https://github.com/MooseLoveti/Trinity-Audio-CVE-Report)
 
-### CVE-2025-9209 (2025-10-03)
-
-<code>The RestroPress – Online Food Ordering System plugin for WordPress is vulnerable to Authentication Bypass in versions 3.0.0 to 3.1.9.2. This is due to the plugin exposing user private tokens and API data via the /wp-json/wp/v2/users REST API endpoint. This makes it possible for unauthenticated attackers to forge JWT tokens for other users, including administrators, and authenticate as them.
-</code>
-
-- [Nxploited/CVE-2025-9209](https://github.com/Nxploited/CVE-2025-9209)
-
 ### CVE-2025-9215 (2025-09-17)
 
 <code>The StoreEngine – Powerful WordPress eCommerce Plugin for Payments, Memberships, Affiliates, Sales &amp; More plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 1.5.0 via the file_download() function. This makes it possible for authenticated attackers, with Subscriber-level access and above, to read the contents of arbitrary files on the server, which can contain sensitive information.
@@ -2231,6 +2224,7 @@
 - [saereya/CVE-2025-14847---MongoBleed](https://github.com/saereya/CVE-2025-14847---MongoBleed)
 - [JemHadar/MongoBleed-DFIR-Triage-Script-CVE-2025-14847](https://github.com/JemHadar/MongoBleed-DFIR-Triage-Script-CVE-2025-14847)
 - [franksec42/mongobleed-exploit-CVE-2025-14847](https://github.com/franksec42/mongobleed-exploit-CVE-2025-14847)
+- [lincemorado97/CVE-2025-14847](https://github.com/lincemorado97/CVE-2025-14847)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -6431,7 +6425,6 @@
 - [rxerium/CVE-2025-53690](https://github.com/rxerium/CVE-2025-53690)
 - [Ashwesker/Blackash-CVE-2025-53690](https://github.com/Ashwesker/Blackash-CVE-2025-53690)
 - [m0d0ri205/CVE-2025-53690-Analysis](https://github.com/m0d0ri205/CVE-2025-53690-Analysis)
-- [ErikLearningSec/CVE-2025-53690-POC](https://github.com/ErikLearningSec/CVE-2025-53690-POC)
 
 ### CVE-2025-53691 (2025-09-03)
 
@@ -7768,6 +7761,9 @@
 
 - [aakashtyal/Session-Persistence-After-Enabling-2FA-CVE-2025-60425](https://github.com/aakashtyal/Session-Persistence-After-Enabling-2FA-CVE-2025-60425)
 
+### CVE-2025-60458
+- [0pepsi/CVE-2025-60458](https://github.com/0pepsi/CVE-2025-60458)
+
 ### CVE-2025-60574 (2025-11-07)
 
 <code>A Local File Inclusion (LFI) vulnerability has been identified in tQuadra CMS 4.2.1117. The issue exists in the &quot;/styles/&quot; path, which fails to properly sanitize user-supplied input. An attacker can exploit this by sending a crafted GET request to retrieve arbitrary files from the underlying system.
@@ -7982,13 +7978,6 @@
 </code>
 
 - [t4e-3/CVE-2025-63296](https://github.com/t4e-3/CVE-2025-63296)
-
-### CVE-2025-63307 (2025-11-06)
-
-<code>alexusmai laravel-file-manager 3.3.1 is vulnerable to Cross Site Scripting (XSS). The application permits user-controlled upload, create, and rename of files to HTML and SVG types and serves those files inline without adequate content-type validation or output sanitization.
-</code>
-
-- [Theethat-Thamwasin/CVE-2025-63307](https://github.com/Theethat-Thamwasin/CVE-2025-63307)
 
 ### CVE-2025-63334 (2025-11-05)
 
@@ -8229,13 +8218,6 @@
 - [Death112233/CVE-2025-64446-](https://github.com/Death112233/CVE-2025-64446-)
 - [AN5I/cve-2025-64446-fortiweb-exploit](https://github.com/AN5I/cve-2025-64446-fortiweb-exploit)
 - [lequoca/fortinet-fortiweb-cve-2025-64446-58034](https://github.com/lequoca/fortinet-fortiweb-cve-2025-64446-58034)
-
-### CVE-2025-64458 (2025-11-05)
-
-<code>An issue was discovered in 5.1 before 5.1.14, 4.2 before 4.2.26, and 5.2 before 5.2.8.\nNFKC normalization in Python is slow on Windows. As a consequence, `django.http.HttpResponseRedirect`, `django.http.HttpResponsePermanentRedirect`, and the shortcut `django.shortcuts.redirect`  were subject to a potential  denial-of-service attack via certain inputs with a very large number of Unicode characters.\nEarlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.\nDjango would like to thank Seokchan Yoon for reporting this issue.
-</code>
-
-- [ch4n3-yoon/CVE-2025-64458-Demo](https://github.com/ch4n3-yoon/CVE-2025-64458-Demo)
 
 ### CVE-2025-64459 (2025-11-05)
 
@@ -8580,6 +8562,13 @@
 
 - [richard-natan/PoC-CVE-2025-66224](https://github.com/richard-natan/PoC-CVE-2025-66224)
 
+### CVE-2025-66429 (2025-12-11)
+
+<code>An issue was discovered in cPanel 110 through 132. A directory traversal vulnerability within the Team Manager API allows for overwrite of an arbitrary file. This can allow for privilege escalation to the root user.
+</code>
+
+- [baseng1337/CVE-2025-66429](https://github.com/baseng1337/CVE-2025-66429)
+
 ### CVE-2025-66470 (2025-12-09)
 
 <code>NiceGUI is a Python-based UI framework. Versions 3.3.1 and below are subject to a XSS vulnerability through the ui.interactive_image component of NiceGUI. The component renders SVG content using Vue's v-html directive without any sanitization. This allows attackers to inject malicious HTML or JavaScript via the SVG &lt;foreignObject&gt; tag whenever the image component is rendered or updated. This is particularly dangerous for dashboards or multi-user applications displaying user-generated content or annotations. This issue is fixed in version 3.4.0.
@@ -8642,6 +8631,9 @@
 </code>
 
 - [Ashwesker/Blackash-CVE-2025-66644](https://github.com/Ashwesker/Blackash-CVE-2025-66644)
+
+### CVE-2025-66723
+- [audiopump/cve-2025-66723](https://github.com/audiopump/cve-2025-66723)
 
 ### CVE-2025-66947 (2025-12-26)
 
@@ -18416,6 +18408,13 @@
 </code>
 
 - [Harshit-Mashru/iTop-CVEs-exploit](https://github.com/Harshit-Mashru/iTop-CVEs-exploit)
+
+### CVE-2024-52005 (2025-01-15)
+
+<code>Git is a source code management tool. When cloning from a server (or fetching, or pushing), informational or error messages are transported from the remote Git process to the client via the so-called &quot;sideband channel&quot;. These messages will be prefixed with &quot;remote:&quot; and printed directly to the standard error output. Typically, this standard error output is connected to a terminal that understands ANSI escape sequences, which Git did not protect against. Most modern terminals support control sequences that can be used by a malicious actor to hide and misrepresent information, or to mislead the user into executing untrusted scripts. As requested on the git-security mailing list, the patches are under discussion on the public mailing list. Users are advised to update as soon as possible. Users unable to upgrade should avoid recursive clones unless they are from trusted sources.
+</code>
+
+- [andrewd-cg/cve-2024-52005-poc](https://github.com/andrewd-cg/cve-2024-52005-poc)
 
 ### CVE-2024-52010 (2024-11-12)
 
@@ -29768,6 +29767,13 @@
 </code>
 
 - [sunichi/cve-2022-4543-wrapper](https://github.com/sunichi/cve-2022-4543-wrapper)
+
+### CVE-2022-4556 (2022-12-16)
+
+<code>A vulnerability was found in Alinto SOGo up to 5.7.1 and classified as problematic. Affected by this issue is the function _migrateMailIdentities of the file SoObjects/SOGo/SOGoUserDefaults.m of the component Identity Handler. The manipulation of the argument fullName leads to cross site scripting. The attack may be launched remotely. Upgrading to version 5.8.0 is able to address this issue. The name of the patch is efac49ae91a4a325df9931e78e543f707a0f8e5e. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-215960.
+</code>
+
+- [AshkanRafiee/CVE-2022-4556](https://github.com/AshkanRafiee/CVE-2022-4556)
 
 ### CVE-2022-4611 (2022-12-19)
 
@@ -50110,6 +50116,7 @@
 
 - [francozappa/knob](https://github.com/francozappa/knob)
 - [coffeeesd/knob](https://github.com/coffeeesd/knob)
+- [BrainsBook/knob](https://github.com/BrainsBook/knob)
 
 ### CVE-2019-9511 (2019-08-13)
 
@@ -55361,6 +55368,7 @@
 - [0xSalle/cve-2018-15133](https://github.com/0xSalle/cve-2018-15133)
 - [yeahhbean/Laravel-CVE-2018-15133](https://github.com/yeahhbean/Laravel-CVE-2018-15133)
 - [Loaxert/CVE-2018-15133-PoC](https://github.com/Loaxert/CVE-2018-15133-PoC)
+- [flame-11/CVE-2018-15133-laravel-framework](https://github.com/flame-11/CVE-2018-15133-laravel-framework)
 
 ### CVE-2018-15139 (2018-08-13)
 
