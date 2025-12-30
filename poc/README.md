@@ -1716,13 +1716,6 @@
 
 - [Kamgreen50/STIG-Edge-RCE-CVE2025-9478](https://github.com/Kamgreen50/STIG-Edge-RCE-CVE2025-9478)
 
-### CVE-2025-9491 (2025-08-26)
-
-<code>Microsoft Windows LNK File UI Misrepresentation Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Microsoft Windows. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of .LNK files. Crafted data in an .LNK file can cause hazardous content in the file to be invisible to a user who inspects the file via the Windows-provided user interface. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-25373.
-</code>
-
-- [Amperclock/CVE-2025-9491_POC](https://github.com/Amperclock/CVE-2025-9491_POC)
-
 ### CVE-2025-9728 (2025-08-31)
 
 <code>Es wurde eine Schwachstelle in givanz Vvveb 1.0.7.2 entdeckt. Betroffen ist eine unbekannte Funktion der Datei app/template/user/login.tpl. Durch die Manipulation des Arguments Email/Password mit unbekannten Daten kann eine cross site scripting-Schwachstelle ausgenutzt werden. Ein Angriff ist aus der Distanz möglich. Der Patch trägt den Namen bbd4c42c66ab818142240348173a669d1d2537fe. Es wird geraten, einen Patch zu installieren, um dieses Problem zu lösen.
@@ -1893,13 +1886,6 @@
 
 - [synap5e/connectwise-automate-AiTM-rce](https://github.com/synap5e/connectwise-automate-AiTM-rce)
 
-### CVE-2025-11749 (2025-11-05)
-
-<code>The AI Engine plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.1.3 via the /mcp/v1/ REST API endpoint that exposes the 'Bearer Token' value when 'No-Auth URL' is enabled. This makes it possible for unauthenticated attackers to extract the bearer token, which can be used to gain access to a valid session and perform many actions like creating a new administrator account, leading to privilege escalation.
-</code>
-
-- [Nxploited/CVE-2025-11749](https://github.com/Nxploited/CVE-2025-11749)
-
 ### CVE-2025-11833 (2025-11-01)
 
 <code>The Post SMTP – Complete SMTP Solution with Logs, Alerts, Backup SMTP &amp; Mobile App plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the __construct function in all versions up to, and including, 3.6.0. This makes it possible for unauthenticated attackers to read arbitrary logged emails sent through the Post SMTP plugin, including password reset emails containing password reset links, which can lead to account takeover.
@@ -1965,13 +1951,6 @@
 </code>
 
 - [initstring/abrt_root](https://github.com/initstring/abrt_root)
-
-### CVE-2025-12748 (2025-11-11)
-
-<code>A flaw was discovered in libvirt in the XML file processing. More specifically, the parsing of user provided XML files was performed before the ACL checks. A malicious user with limited permissions could exploit this flaw by submitting a specially crafted XML file, causing libvirt to allocate too much memory on the host. The excessive memory consumption could lead to a libvirt process crash on the host, resulting in a denial-of-service condition.
-</code>
-
-- [TERESH1/CVE-2025-12748](https://github.com/TERESH1/CVE-2025-12748)
 
 ### CVE-2025-12758 (2025-11-27)
 
@@ -2223,6 +2202,7 @@
 - [ob1sec/mongobleeder](https://github.com/ob1sec/mongobleeder)
 - [joshuavanderpoll/CVE-2025-14847](https://github.com/joshuavanderpoll/CVE-2025-14847)
 - [tunahantekeoglu/MongoDeepDive](https://github.com/tunahantekeoglu/MongoDeepDive)
+- [vfa-tuannt/CVE-2025-14847](https://github.com/vfa-tuannt/CVE-2025-14847)
 
 ### CVE-2025-15177 (2025-12-29)
 
@@ -3478,6 +3458,13 @@
 - [mrk336/CVE-2025-27480-The-Silent-Gateway-Risk](https://github.com/mrk336/CVE-2025-27480-The-Silent-Gateway-Risk)
 - [mrk336/CVE-2025-27480](https://github.com/mrk336/CVE-2025-27480)
 
+### CVE-2025-27515 (2025-03-05)
+
+<code>Laravel is a web application framework. When using wildcard validation to validate a given file or image field (`files.*`), a user-crafted malicious request could potentially bypass the validation rules. This vulnerability is fixed in 11.44.1 and 12.1.1.
+</code>
+
+- [joaovicdev/POC-CVE-2025-27515](https://github.com/joaovicdev/POC-CVE-2025-27515)
+
 ### CVE-2025-27519 (2025-03-07)
 
 <code>Cognita is a RAG (Retrieval Augmented Generation) Framework for building modular, open source applications for production by TrueFoundry. A path traversal issue exists at /v1/internal/upload-to-local-directory which is enabled when the Local env variable is set to true, such as when Cognita is setup using Docker. Because the docker environment sets up the backend uvicorn server with auto reload enabled, when an attacker overwrites the /app/backend/__init__.py file, the file will automatically be reloaded and executed. This allows an attacker to get remote code execution in the context of the Docker container. This vulnerability is fixed in commit a78bd065e05a1b30a53a3386cc02e08c317d2243.
@@ -4392,7 +4379,6 @@
 - [dollarboysushil/CVE-2025-32433-Erlang-OTP-SSH-Unauthenticated-RCE](https://github.com/dollarboysushil/CVE-2025-32433-Erlang-OTP-SSH-Unauthenticated-RCE)
 - [iteride/CVE-2025-32433](https://github.com/iteride/CVE-2025-32433)
 - [mirmeweu/cve-2025-32433](https://github.com/mirmeweu/cve-2025-32433)
-- [l1nuxkid/CVE-2025-32433-exploit](https://github.com/l1nuxkid/CVE-2025-32433-exploit)
 - [radzek15/CVE-2025-32433](https://github.com/radzek15/CVE-2025-32433)
 - [soltanali0/CVE-2025-32433-Eploit](https://github.com/soltanali0/CVE-2025-32433-Eploit)
 - [giriaryan694-a11y/cve-2025-32433_rce_exploit](https://github.com/giriaryan694-a11y/cve-2025-32433_rce_exploit)
@@ -5743,6 +5729,13 @@
 
 - [gregk4sec/CVE-2025-49125](https://github.com/gregk4sec/CVE-2025-49125)
 
+### CVE-2025-49131 (2025-06-09)
+
+<code>FastGPT is an open-source project that provides a platform for building, deploying, and operating AI-driven workflows and conversational agents. The Sandbox container (fastgpt-sandbox) is a specialized, isolated environment used by FastGPT to safely execute user-submitted or dynamically generated code in isolation. The sandbox before version 4.9.11 has insufficient isolation and inadequate restrictions on code execution by allowing overly permissive syscalls, which allows attackers to escape the intended sandbox boundaries. Attackers could exploit this to read and overwrite arbitrary files and bypass Python module import restrictions. This is patched in version 4.9.11 by restricting the allowed system calls to a safer subset and additional descriptive error messaging.
+</code>
+
+- [Wenura17125/cve-2025-49131-poc](https://github.com/Wenura17125/cve-2025-49131-poc)
+
 ### CVE-2025-49132 (2025-06-20)
 
 <code>Pterodactyl is a free, open-source game server management panel. Prior to version 1.11.11, using the /locales/locale.json with the locale and namespace query parameters, a malicious actor is able to execute arbitrary code without being authenticated. With the ability to execute arbitrary code it could be used to gain access to the Panel's server, read credentials from the Panel's config, extract sensitive information from the database, access files of servers managed by the panel, etc. This issue has been patched in version 1.11.11. There are no software workarounds for this vulnerability, but use of an external Web Application Firewall (WAF) could help mitigate this attack.
@@ -6343,6 +6336,7 @@
 </code>
 
 - [yt2w/CVE-2025-52691](https://github.com/yt2w/CVE-2025-52691)
+- [rxerium/CVE-2025-52691](https://github.com/rxerium/CVE-2025-52691)
 
 ### CVE-2025-52692 (2025-12-19)
 
@@ -6584,6 +6578,7 @@
 
 - [amalpvatayam67/day01-sessionreaper-lab](https://github.com/amalpvatayam67/day01-sessionreaper-lab)
 - [wubinworks/magento2-session-reaper-patch](https://github.com/wubinworks/magento2-session-reaper-patch)
+- [Baba01hacker666/cve-2025-54236](https://github.com/Baba01hacker666/cve-2025-54236)
 
 ### CVE-2025-54253 (2025-08-05)
 
@@ -7777,13 +7772,6 @@
 </code>
 
 - [0pepsi/CVE-2025-60458](https://github.com/0pepsi/CVE-2025-60458)
-
-### CVE-2025-60574 (2025-11-07)
-
-<code>A Local File Inclusion (LFI) vulnerability has been identified in tQuadra CMS 4.2.1117. The issue exists in the &quot;/styles/&quot; path, which fails to properly sanitize user-supplied input. An attacker can exploit this by sending a crafted GET request to retrieve arbitrary files from the underlying system.
-</code>
-
-- [jacopoaugelli/CVE-2025-60574](https://github.com/jacopoaugelli/CVE-2025-60574)
 
 ### CVE-2025-60710 (2025-11-11)
 
@@ -27028,7 +27016,7 @@
 <code>An OS command injection vulnerability exists in web2py 2.24.1 and earlier. When the product is configured to use notifySendHandler for logging (not the default configuration), a crafted web request may execute an arbitrary OS command on the web server using the product.
 </code>
 
-- [Evan-Zhangyf/CVE-2023-45158](https://github.com/Evan-Zhangyf/CVE-2023-45158)
+- [yifanzhg/CVE-2023-45158](https://github.com/yifanzhg/CVE-2023-45158)
 
 ### CVE-2023-45182 (2023-12-14)
 
@@ -36579,7 +36567,7 @@
 <code>Vulnerability in the PeopleSoft Enterprise SCM eProcurement product of Oracle PeopleSoft (component: Manage Requisition Status). The supported version that is affected is 9.2. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise PeopleSoft Enterprise SCM eProcurement. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of PeopleSoft Enterprise SCM eProcurement accessible data as well as unauthorized read access to a subset of PeopleSoft Enterprise SCM eProcurement accessible data. CVSS 3.1 Base Score 5.4 (Confidentiality and Integrity impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N).
 </code>
 
-- [nyambiblaise/Walkthrough---Subrion-CMS-Web-Shell-Upload-to-Cron-Based-Privilege-Escalation-CVE-2021-2220-](https://github.com/nyambiblaise/Walkthrough---Subrion-CMS-Web-Shell-Upload-to-Cron-Based-Privilege-Escalation-CVE-2021-2220-)
+- [nyambiblaise/Exfiltrated-Machine-Walkthrough---Subrion-CMS-CVE-2021-2220-](https://github.com/nyambiblaise/Exfiltrated-Machine-Walkthrough---Subrion-CMS-CVE-2021-2220-)
 
 ### CVE-2021-2302 (2021-04-22)
 
@@ -46551,7 +46539,7 @@
 
 - [cpandya2909/CVE-2020-15778](https://github.com/cpandya2909/CVE-2020-15778)
 - [Neko-chanQwQ/CVE-2020-15778-Exploit](https://github.com/Neko-chanQwQ/CVE-2020-15778-Exploit)
-- [Evan-Zhangyf/CVE-2020-15778](https://github.com/Evan-Zhangyf/CVE-2020-15778)
+- [yifanzhg/CVE-2020-15778](https://github.com/yifanzhg/CVE-2020-15778)
 - [drackyjr/CVE-2020-15778-SCP-Command-Injection-Check](https://github.com/drackyjr/CVE-2020-15778-SCP-Command-Injection-Check)
 
 ### CVE-2020-15780 (2020-07-15)
