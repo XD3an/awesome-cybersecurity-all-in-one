@@ -1371,6 +1371,7 @@
 - [Demoo1337/ThrottleStop](https://github.com/Demoo1337/ThrottleStop)
 - [Gabriel-Lacorte/CVE-2025-7771](https://github.com/Gabriel-Lacorte/CVE-2025-7771)
 - [AmrHuss/throttlestop-exploit-rw](https://github.com/AmrHuss/throttlestop-exploit-rw)
+- [v31l0x1/ThrottleStopPPL](https://github.com/v31l0x1/ThrottleStopPPL)
 
 ### CVE-2025-7775 (2025-08-26)
 
@@ -1979,13 +1980,6 @@
 </code>
 
 - [Jinxia62/Sangfor-CVE-2025-12916](https://github.com/Jinxia62/Sangfor-CVE-2025-12916)
-
-### CVE-2025-12973 (2025-11-21)
-
-<code>The S2B AI Assistant – ChatBot, ChatGPT, OpenAI, Content &amp; Image Generator plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the storeFile() function in all versions up to, and including, 1.7.8. This makes it possible for authenticated attackers, with Editor-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.
-</code>
-
-- [d0n601/CVE-2025-12973](https://github.com/d0n601/CVE-2025-12973)
 
 ### CVE-2025-13156 (2025-11-21)
 
@@ -7620,6 +7614,7 @@
 - [quyenheu/CVE-2025-58360](https://github.com/quyenheu/CVE-2025-58360)
 - [rxerium/CVE-2025-58360](https://github.com/rxerium/CVE-2025-58360)
 - [Joker-Wiggin/CVE-2025-58360-GeoServer-XXE](https://github.com/Joker-Wiggin/CVE-2025-58360-GeoServer-XXE)
+- [quyenheu/Bypass-CVE-2025-58360](https://github.com/quyenheu/Bypass-CVE-2025-58360)
 
 ### CVE-2025-58440
 - [ph-hitachi/CVE-2025-58440](https://github.com/ph-hitachi/CVE-2025-58440)
@@ -7979,7 +7974,6 @@
 <code>CrushFTP11 before 11.3.7_57 is vulnerable to stored HTML injection in the CrushFTP Admin Panel (Reports / &quot;Who Created Folder&quot;), enabling persistent HTML execution in admin sessions.
 </code>
 
-- [MMAKINGDOM/CVE-2025-63420](https://github.com/MMAKINGDOM/CVE-2025-63420)
 - [hossainshadat/CVE-2025-63420](https://github.com/hossainshadat/CVE-2025-63420)
 
 ### CVE-2025-63498 (2025-11-24)
@@ -8172,14 +8166,6 @@
 </code>
 
 - [Ashwesker/Ashwesker-CVE-2025-64484](https://github.com/Ashwesker/Ashwesker-CVE-2025-64484)
-
-### CVE-2025-64495 (2025-11-08)
-
-<code>Open WebUI is a self-hosted artificial intelligence platform designed to operate entirely offline. In versions 0.6.34 and below, the functionality that inserts custom prompts into the chat window is vulnerable to DOM XSS when 'Insert Prompt as Rich Text' is enabled, since the prompt body is assigned to the DOM sink .innerHtml without sanitisation. Any user with permissions to create prompts can abuse this to plant a payload that could be triggered by other users if they run the corresponding / command to insert the prompt. This issue is fixed in version 0.6.35.
-</code>
-
-- [AlphabugX/CVE-2025-64495-POC](https://github.com/AlphabugX/CVE-2025-64495-POC)
-- [Ashwesker/Ashwesker-CVE-2025-64495](https://github.com/Ashwesker/Ashwesker-CVE-2025-64495)
 
 ### CVE-2025-64500 (2025-11-12)
 
@@ -8550,6 +8536,7 @@
 - [DavionGowie/-vercel-application-is-vulnerable-to-CVE-2025-66478.](https://github.com/DavionGowie/-vercel-application-is-vulnerable-to-CVE-2025-66478.)
 - [zhixiangyao/CVE-2025-66478-Exploit-PoC](https://github.com/zhixiangyao/CVE-2025-66478-Exploit-PoC)
 - [thedarckpassenger/Next.js-RSC-RCE-Scanner-CVE-2025-66478](https://github.com/thedarckpassenger/Next.js-RSC-RCE-Scanner-CVE-2025-66478)
+- [NAYLINNU/CVE-2025-66478](https://github.com/NAYLINNU/CVE-2025-66478)
 
 ### CVE-2025-66489 (2025-12-03)
 
@@ -34370,7 +34357,6 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
