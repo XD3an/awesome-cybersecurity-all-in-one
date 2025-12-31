@@ -1203,7 +1203,6 @@
 - [ghostn4444/POC-CVE-2025-6554](https://github.com/ghostn4444/POC-CVE-2025-6554)
 - [LordBheem/CVE-2025-6554](https://github.com/LordBheem/CVE-2025-6554)
 - [juccoblak/CVE-2025-6554](https://github.com/juccoblak/CVE-2025-6554)
-- [Muhammednihalmp/Google-chrome-zero-day](https://github.com/Muhammednihalmp/Google-chrome-zero-day)
 - [aklnjakln/CVE-2025-6554](https://github.com/aklnjakln/CVE-2025-6554)
 
 ### CVE-2025-6558 (2025-07-15)
@@ -1503,6 +1502,7 @@
 
 - [mayank-s16/Swagger-HTML-Injection-CVE-2025-8191](https://github.com/mayank-s16/Swagger-HTML-Injection-CVE-2025-8191)
 - [byteReaper77/CVE-2025-8191](https://github.com/byteReaper77/CVE-2025-8191)
+- [YanC1e/CVE-2025-8191](https://github.com/YanC1e/CVE-2025-8191)
 
 ### CVE-2025-8220 (2025-07-27)
 
@@ -1980,13 +1980,6 @@
 
 - [Jinxia62/Sangfor-CVE-2025-12916](https://github.com/Jinxia62/Sangfor-CVE-2025-12916)
 
-### CVE-2025-12917 (2025-11-09)
-
-<code>In TOZED ZLT T10 T10PLUS_3.04.15 ist eine Schwachstelle entdeckt worden. Dabei betrifft es einen unbekannter Codeteil der Datei /reqproc/proc_post der Komponente Reboot Handler. Durch die Manipulation mit unbekannten Daten kann eine denial of service-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei im lokalen Netzwerk erfolgen. Der Exploit steht zur öffentlichen Verfügung.
-</code>
-
-- [0xcucumbersalad/CVE-2025-12917-PoC](https://github.com/0xcucumbersalad/CVE-2025-12917-PoC)
-
 ### CVE-2025-12973 (2025-11-21)
 
 <code>The S2B AI Assistant – ChatBot, ChatGPT, OpenAI, Content &amp; Image Generator plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the storeFile() function in all versions up to, and including, 1.7.8. This makes it possible for authenticated attackers, with Editor-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.
@@ -2203,6 +2196,9 @@
 - [joshuavanderpoll/CVE-2025-14847](https://github.com/joshuavanderpoll/CVE-2025-14847)
 - [tunahantekeoglu/MongoDeepDive](https://github.com/tunahantekeoglu/MongoDeepDive)
 - [vfa-tuannt/CVE-2025-14847](https://github.com/vfa-tuannt/CVE-2025-14847)
+- [j0lt-github/mongobleedburp](https://github.com/j0lt-github/mongobleedburp)
+- [FurkanKAYAPINAR/CVE-2025-14847-MongoBleed-Exploit](https://github.com/FurkanKAYAPINAR/CVE-2025-14847-MongoBleed-Exploit)
+- [NoNameError/MongoBLEED---CVE-2025-14847-POC-](https://github.com/NoNameError/MongoBLEED---CVE-2025-14847-POC-)
 
 ### CVE-2025-15177 (2025-12-29)
 
@@ -2290,13 +2286,6 @@
 - [KingHacker353/CVE-2025-20393](https://github.com/KingHacker353/CVE-2025-20393)
 - [StasonJatham/cisco-sa-sma-attack-N9bf4](https://github.com/StasonJatham/cisco-sa-sma-attack-N9bf4)
 - [Ashwesker/Ashwesker-CVE-2025-20393](https://github.com/Ashwesker/Ashwesker-CVE-2025-20393)
-
-### CVE-2025-21042 (2025-09-12)
-
-<code>Out-of-bounds write in libimagecodec.quram.so prior to SMR Apr-2025 Release 1 allows remote attackers to execute arbitrary code.
-</code>
-
-- [Ashwesker/Ashwesker-CVE-2025-21042](https://github.com/Ashwesker/Ashwesker-CVE-2025-21042)
 
 ### CVE-2025-21202 (2025-01-14)
 
@@ -2675,7 +2664,6 @@
 - [S4mma3l/CVE-2025-24054](https://github.com/S4mma3l/CVE-2025-24054)
 - [moften/CVE-2025-24054](https://github.com/moften/CVE-2025-24054)
 - [Yuri08loveElaina/CVE-2025-24054_POC](https://github.com/Yuri08loveElaina/CVE-2025-24054_POC)
-- [Wind010/CVE-2025-24054_PoC](https://github.com/Wind010/CVE-2025-24054_PoC)
 - [Untouchable17/CVE-2025-24054](https://github.com/Untouchable17/CVE-2025-24054)
 - [WhiteDominion/CVE-2025-24054_CVE-2025-24071-PoC](https://github.com/WhiteDominion/CVE-2025-24054_CVE-2025-24071-PoC)
 
@@ -4379,7 +4367,6 @@
 - [dollarboysushil/CVE-2025-32433-Erlang-OTP-SSH-Unauthenticated-RCE](https://github.com/dollarboysushil/CVE-2025-32433-Erlang-OTP-SSH-Unauthenticated-RCE)
 - [iteride/CVE-2025-32433](https://github.com/iteride/CVE-2025-32433)
 - [mirmeweu/cve-2025-32433](https://github.com/mirmeweu/cve-2025-32433)
-- [radzek15/CVE-2025-32433](https://github.com/radzek15/CVE-2025-32433)
 - [soltanali0/CVE-2025-32433-Eploit](https://github.com/soltanali0/CVE-2025-32433-Eploit)
 - [giriaryan694-a11y/cve-2025-32433_rce_exploit](https://github.com/giriaryan694-a11y/cve-2025-32433_rce_exploit)
 - [AntonieSoga/Erlang-OTP-PoC_CVE-2025-32433](https://github.com/AntonieSoga/Erlang-OTP-PoC_CVE-2025-32433)
@@ -4467,7 +4454,6 @@
 - [D3ltaFormation/CVE-2025-32463-Sudo-Chroot-Escape](https://github.com/D3ltaFormation/CVE-2025-32463-Sudo-Chroot-Escape)
 - [AC8999/CVE-2025-32463](https://github.com/AC8999/CVE-2025-32463)
 - [dr4xp/sudo-chroot](https://github.com/dr4xp/sudo-chroot)
-- [Ghstxz/CVE-2025-32463](https://github.com/Ghstxz/CVE-2025-32463)
 - [ankitpandey383/CVE-2025-32463-Sudo-Privilege-Escalation](https://github.com/ankitpandey383/CVE-2025-32463-Sudo-Privilege-Escalation)
 - [justjoeyking/CVE-2025-32463](https://github.com/justjoeyking/CVE-2025-32463)
 - [Mr-Alperen/CVE-2025-32463](https://github.com/Mr-Alperen/CVE-2025-32463)
@@ -4848,6 +4834,7 @@
 </code>
 
 - [guard-wait/CVE-2025-40019_POC](https://github.com/guard-wait/CVE-2025-40019_POC)
+- [xooxo/CVE-2025-40019-Essiv](https://github.com/xooxo/CVE-2025-40019-Essiv)
 
 ### CVE-2025-40040 (2025-10-28)
 
@@ -4905,13 +4892,6 @@
 </code>
 
 - [AlexSvobo/nhi-zero-trust-bypass](https://github.com/AlexSvobo/nhi-zero-trust-bypass)
-
-### CVE-2025-41067 (2025-10-27)
-
-<code>Reachable Assertion vulnerability in Open5GS up to version 2.7.6 allows attackers with connectivity to the NRF to cause a denial of service. An SBI request that deletes the NRF's own registry causes a check that ends up crashing the NRF process and renders the discovery service unavailable.
-</code>
-
-- [xvk1t1/Open5GS-CVE-2025-41067-CVE-2025-41068-PoC](https://github.com/xvk1t1/Open5GS-CVE-2025-41067-CVE-2025-41068-PoC)
 
 ### CVE-2025-41088 (2025-10-10)
 
@@ -5518,6 +5498,13 @@
 
 - [byteReaper77/CVE-2025-47917](https://github.com/byteReaper77/CVE-2025-47917)
 
+### CVE-2025-47962 (2025-06-10)
+
+<code>Improper access control in Windows SDK allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [q1uf3ng/CVE-2025-47962-POC](https://github.com/q1uf3ng/CVE-2025-47962-POC)
+
 ### CVE-2025-47987 (2025-07-08)
 
 <code>Heap-based buffer overflow in Windows Cred SSProvider Protocol allows an authorized attacker to elevate privileges locally.
@@ -5618,7 +5605,6 @@
 <code>In bta_hf_client_cb_init of bta_hf_client_main.cc, there is a possible remote code execution due to a use after free. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.
 </code>
 
-- [logesh-GIT001/CVE-2025-48593](https://github.com/logesh-GIT001/CVE-2025-48593)
 - [zhuowei/blueshrimp](https://github.com/zhuowei/blueshrimp)
 - [ranasen-rat/CVE-2025-48593](https://github.com/ranasen-rat/CVE-2025-48593)
 
@@ -6337,6 +6323,10 @@
 
 - [yt2w/CVE-2025-52691](https://github.com/yt2w/CVE-2025-52691)
 - [rxerium/CVE-2025-52691](https://github.com/rxerium/CVE-2025-52691)
+- [Ashwesker/Ashwesker-CVE-2025-52691](https://github.com/Ashwesker/Ashwesker-CVE-2025-52691)
+- [you-ssef9/CVE-2025-52691](https://github.com/you-ssef9/CVE-2025-52691)
+- [DeathShotXD/CVE-2025-52691-APT-PoC](https://github.com/DeathShotXD/CVE-2025-52691-APT-PoC)
+- [sajjadsiam/CVE-2025-52691-poc](https://github.com/sajjadsiam/CVE-2025-52691-poc)
 
 ### CVE-2025-52692 (2025-12-19)
 
@@ -6577,7 +6567,6 @@
 </code>
 
 - [amalpvatayam67/day01-sessionreaper-lab](https://github.com/amalpvatayam67/day01-sessionreaper-lab)
-- [wubinworks/magento2-session-reaper-patch](https://github.com/wubinworks/magento2-session-reaper-patch)
 - [Baba01hacker666/cve-2025-54236](https://github.com/Baba01hacker666/cve-2025-54236)
 
 ### CVE-2025-54253 (2025-08-05)
@@ -7125,6 +7114,8 @@
 - [KingHacker353/R2C-CVE-2025-55182-66478](https://github.com/KingHacker353/R2C-CVE-2025-55182-66478)
 - [MysticalHearts/mysticalhearts.github.io](https://github.com/MysticalHearts/mysticalhearts.github.io)
 - [amirali-ramezani/react2shell-CVE-2025-55182-](https://github.com/amirali-ramezani/react2shell-CVE-2025-55182-)
+- [git0xLai/React2ShellPoC](https://github.com/git0xLai/React2ShellPoC)
+- [hndko/react2shell-rce-autobot](https://github.com/hndko/react2shell-rce-autobot)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -7490,7 +7481,6 @@
 <code>A Cross-Site Request Forgery (CSRF) vulnerability in Salmen2/Simple-Faucet-Script v1.07 via crafted POST request to admin.php?p=ads&amp;c=1 allowing attackers to execute arbitrary code.
 </code>
 
-- [MMAKINGDOM/CVE-2025-57310](https://github.com/MMAKINGDOM/CVE-2025-57310)
 - [hossainshadat/CVE-2025-57310](https://github.com/hossainshadat/CVE-2025-57310)
 
 ### CVE-2025-57389 (2025-10-01)
@@ -7523,7 +7513,7 @@
 
 ### CVE-2025-57462 (2025-12-29)
 
-<code>Reflected Cross site scripting (xss) in machsol machpanel 8.0.32 allows attackers to execute arbitrary web scripts or HTML via a crafted PDF file.
+<code>Stored cross-site scripting (xss) in machsol machpanel 8.0.32 allows attackers to execute arbitrary web scripts or HTML via a crafted PDF file.
 </code>
 
 - [aljoharasubaie/CVE-2025-57462](https://github.com/aljoharasubaie/CVE-2025-57462)
@@ -7873,13 +7863,6 @@
 - [siddu7575/CVE-2025-61882-CVE-2025-61884](https://github.com/siddu7575/CVE-2025-61882-CVE-2025-61884)
 - [Zhert-lab/CVE-2025-61882-CVE-2025-61884](https://github.com/Zhert-lab/CVE-2025-61882-CVE-2025-61884)
 
-### CVE-2025-61922 (2025-10-16)
-
-<code>PrestaShop Checkout is the PrestaShop official payment module in partnership with PayPal. Starting in version 1.3.0 and prior to versions 4.4.1 and 5.0.5, missing validation on the Express Checkout feature allows silent login, enabling account takeover via email. The vulnerability is fixed in versions 4.4.1 and 5.0.5. No known workarounds exist.
-</code>
-
-- [captaincookie34/Vulnerability-Playground-CVE-2025-61922](https://github.com/captaincookie34/Vulnerability-Playground-CVE-2025-61922)
-
 ### CVE-2025-62168 (2025-10-17)
 
 <code>Squid is a caching proxy for the Web. In Squid versions prior to 7.2, a failure to redact HTTP authentication credentials in error handling allows information disclosure. The vulnerability allows a script to bypass browser security protections and learn the credentials a trusted client uses to authenticate. This potentially allows a remote client to identify security tokens or credentials used internally by a web application using Squid for backend load balancing. These attacks do not require Squid to be configured with HTTP authentication. The vulnerability is fixed in version 7.2. As a workaround, disable debug information in administrator mailto links generated by Squid by configuring squid.conf with email_err_data off.
@@ -7968,13 +7951,6 @@
 
 - [lorenzocamilli/CVE-2025-62950-PoC](https://github.com/lorenzocamilli/CVE-2025-62950-PoC)
 
-### CVE-2025-63296 (2025-11-10)
-
-<code>KERUI K259 5MP Wi-Fi / Tuya Smart Security Camera firmware v33.53.87 contains a code execution vulnerability in its boot/update logic: during startup /usr/sbin/anyka_service.sh scans mounted TF/SD cards and, if /mnt/update.nor.sh is present, copies it to /tmp/net.sh and executes it as root.
-</code>
-
-- [t4e-3/CVE-2025-63296](https://github.com/t4e-3/CVE-2025-63296)
-
 ### CVE-2025-63353 (2025-11-12)
 
 <code>A vulnerability in FiberHome GPON ONU HG6145F1 RP4423 allows the device's factory default Wi-Fi password (WPA/WPA2 pre-shared key) to be predicted from the SSID. The device generates default passwords using a deterministic algorithm that derives the router passphrase from the SSID, enabling an attacker who can observe the SSID to predict the default password without authentication or user interaction.
@@ -8025,13 +8001,6 @@
 
 ### CVE-2025-63572
 - [RRespxwnss/CVE-2025-63572](https://github.com/RRespxwnss/CVE-2025-63572)
-
-### CVE-2025-63588 (2025-11-06)
-
-<code>An unauthenticated reflected cross-site scripting vulnerability in the query handling of CMSimpleXH allows remote attackers to inject and execute arbitrary JavaScript in a victim's browser via a crafted request (e.g., a maliciously crafted POST login). Successful exploitation may lead to theft of session cookies, credential disclosure, or other client-side impacts.
-</code>
-
-- [cybercrewinc/CVE-2025-63588](https://github.com/cybercrewinc/CVE-2025-63588)
 
 ### CVE-2025-63602 (2025-11-18)
 
@@ -8251,6 +8220,13 @@
 
 - [Neo-Neo6/CVE-2025-65018-Heap-buffer-overflow-in-libpng-ps4-ps5-](https://github.com/Neo-Neo6/CVE-2025-65018-Heap-buffer-overflow-in-libpng-ps4-ps5-)
 - [bohemian-miser/CVE-2025-65018_Exploit_Challenge](https://github.com/bohemian-miser/CVE-2025-65018_Exploit_Challenge)
+
+### CVE-2025-65037 (2025-12-18)
+
+<code>Improper control of generation of code ('code injection') in Azure Container Apps allows an unauthorized attacker to execute code over a network.
+</code>
+
+- [b1gchoi/CVE-2025-65037](https://github.com/b1gchoi/CVE-2025-65037)
 
 ### CVE-2025-65099 (2025-11-19)
 
@@ -8481,7 +8457,11 @@
 
 - [Noxurge/CVE-2025-65900](https://github.com/Noxurge/CVE-2025-65900)
 
-### CVE-2025-65925
+### CVE-2025-65925 (2025-12-30)
+
+<code>An issue was discovered in Zeroheight (SaaS) prior to 2025-06-13. A legacy user creation API pathway allowed accounts to be created without completing the intended email verification step. While unverified accounts could not access product functionality, the behavior bypassed intended verification controls and allowed unintended account creation. This could have enabled spam/fake account creation or resource usage impact. No data exposure or unauthorized access to existing accounts was reported.
+</code>
+
 - [Sneden/zeroheight-account-verification-bypass-CVE-2025-65925](https://github.com/Sneden/zeroheight-account-verification-bypass-CVE-2025-65925)
 
 ### CVE-2025-65945 (2025-12-04)
@@ -8602,7 +8582,11 @@
 
 - [Ashwesker/Ashwesker-CVE-2025-66644](https://github.com/Ashwesker/Ashwesker-CVE-2025-66644)
 
-### CVE-2025-66723
+### CVE-2025-66723 (2025-12-30)
+
+<code>inMusic Brands Engine DJ 4.3.0 suffers from Insecure Permissions due to exposed HTTP service in the Remote Library, which allows attackers to access all files and network paths.
+</code>
+
 - [audiopump/cve-2025-66723](https://github.com/audiopump/cve-2025-66723)
 
 ### CVE-2025-66947 (2025-12-26)
@@ -8735,7 +8719,6 @@
 <code>net-snmp is a SNMP application library, tools and daemon. Prior to versions 5.9.5 and 5.10.pre2, a specially crafted packet to an net-snmp snmptrapd daemon can cause a buffer overflow and the daemon to crash. This issue has been patched in versions 5.9.5 and 5.10.pre2.
 </code>
 
-- [b1gchoi/CVE-2025-68615](https://github.com/b1gchoi/CVE-2025-68615)
 - [yt2w/CVE-2025-68615](https://github.com/yt2w/CVE-2025-68615)
 
 ### CVE-2025-68645 (2025-12-22)
@@ -8744,6 +8727,7 @@
 </code>
 
 - [Ashwesker/Ashwesker-CVE-2025-68645](https://github.com/Ashwesker/Ashwesker-CVE-2025-68645)
+- [chinaxploiter/CVE-2025-68645-PoC](https://github.com/chinaxploiter/CVE-2025-68645-PoC)
 
 ### CVE-2025-68664 (2025-12-23)
 
@@ -8862,7 +8846,7 @@
 - [l1ackerronin/CVE-2024-0044](https://github.com/l1ackerronin/CVE-2024-0044)
 - [MrW0l05zyn/cve-2024-0044](https://github.com/MrW0l05zyn/cve-2024-0044)
 - [canyie/CVE-2024-0044](https://github.com/canyie/CVE-2024-0044)
-- [Dit-Developers/CVE-2024-0044-](https://github.com/Dit-Developers/CVE-2024-0044-)
+- [Dit-Developers/CVE-2024-0044](https://github.com/Dit-Developers/CVE-2024-0044)
 - [Athexhacker/EXPLOITER](https://github.com/Athexhacker/EXPLOITER)
 - [HoyoenKim/CVE-2024-0044_PoC](https://github.com/HoyoenKim/CVE-2024-0044_PoC)
 
@@ -10054,6 +10038,7 @@
 - [Ianthinus/CVE-2024-4577](https://github.com/Ianthinus/CVE-2024-4577)
 - [InfoSec-DB/PHPCGIScanner](https://github.com/InfoSec-DB/PHPCGIScanner)
 - [a1ex-var1amov/ctf-cve-2024-4577](https://github.com/a1ex-var1amov/ctf-cve-2024-4577)
+- [rayngnpc/CVE-2024-4577-rayng](https://github.com/rayngnpc/CVE-2024-4577-rayng)
 
 ### CVE-2024-4701 (2024-05-10)
 
@@ -23408,7 +23393,7 @@
 - [libas7994/Exploit-the-CVE-2023-30212-vulnerability](https://github.com/libas7994/Exploit-the-CVE-2023-30212-vulnerability)
 - [libasv/Exploite-CVE-2023-30212-vulnerability](https://github.com/libasv/Exploite-CVE-2023-30212-vulnerability)
 - [kai-iszz/CVE-2023-30212](https://github.com/kai-iszz/CVE-2023-30212)
-- [MaThEw-ViNcEnT/CVE-2023-30212-OURPHP-Vulnerability](https://github.com/MaThEw-ViNcEnT/CVE-2023-30212-OURPHP-Vulnerability)
+- [imathewvincent/CVE-2023-30212-OURPHP-Vulnerability](https://github.com/imathewvincent/CVE-2023-30212-OURPHP-Vulnerability)
 - [arunsnap/CVE-2023-30212-POC](https://github.com/arunsnap/CVE-2023-30212-POC)
 - [VisDev23/Vulnerable-Docker--CVE-2023-30212-](https://github.com/VisDev23/Vulnerable-Docker--CVE-2023-30212-)
 - [AAsh035/CVE-2023-30212](https://github.com/AAsh035/CVE-2023-30212)
@@ -34385,6 +34370,7 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
+- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -34523,6 +34509,7 @@
 </code>
 
 - [RashidKhanPathan/CVE-2022-40471](https://github.com/RashidKhanPathan/CVE-2022-40471)
+- [Dharan10/CVE-2022-40471](https://github.com/Dharan10/CVE-2022-40471)
 
 ### CVE-2022-40490 (2025-02-06)
 
@@ -41011,7 +40998,6 @@
 - [Hattan515/POC-CVE-2021-41773](https://github.com/Hattan515/POC-CVE-2021-41773)
 - [twseptian/cve-2021-41773](https://github.com/twseptian/cve-2021-41773)
 - [noflowpls/CVE-2021-41773](https://github.com/noflowpls/CVE-2021-41773)
-- [RizqiSec/CVE-2021-41773](https://github.com/RizqiSec/CVE-2021-41773)
 - [shiomiyan/CVE-2021-41773](https://github.com/shiomiyan/CVE-2021-41773)
 - [justakazh/mass_cve-2021-41773](https://github.com/justakazh/mass_cve-2021-41773)
 - [shellreaper/CVE-2021-41773](https://github.com/shellreaper/CVE-2021-41773)
