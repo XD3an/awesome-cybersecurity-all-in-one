@@ -3958,7 +3958,6 @@
 - [ThemeHackers/CVE-2025-30208](https://github.com/ThemeHackers/CVE-2025-30208)
 - [TH-SecForge/CVE-2025-30208](https://github.com/TH-SecForge/CVE-2025-30208)
 - [bugdotexe/CVE-2025-30208](https://github.com/bugdotexe/CVE-2025-30208)
-- [yanxxir/yanxxir](https://github.com/yanxxir/yanxxir)
 
 ### CVE-2025-30216 (2025-03-25)
 
@@ -8186,6 +8185,7 @@
 </code>
 
 - [Ashwesker/Ashwesker-CVE-2025-64513](https://github.com/Ashwesker/Ashwesker-CVE-2025-64513)
+- [shinyseam/CVE-2025-64513](https://github.com/shinyseam/CVE-2025-64513)
 
 ### CVE-2025-64516
 - [lem0naids/CVE-2025-64516-POC](https://github.com/lem0naids/CVE-2025-64516-POC)
@@ -8593,6 +8593,13 @@
 </code>
 
 - [r0xtsec/CVE](https://github.com/r0xtsec/CVE)
+
+### CVE-2025-67730 (2025-12-12)
+
+<code>Frappe Learning Management System (LMS) is a learning system that helps users structure their content. Versions prior to 2.42.0 allow authenticated users to add malicious HTML and JavaScript through description fields in the Job, Course and Batch forms. This issue is fixed in version 2.42.0.
+</code>
+
+- [Dharan10/CVE-2025-67730](https://github.com/Dharan10/CVE-2025-67730)
 
 ### CVE-2025-67780 (2025-12-11)
 
@@ -16591,6 +16598,13 @@
 </code>
 
 - [fj016/CVE-2024-41992-PoC](https://github.com/fj016/CVE-2024-41992-PoC)
+
+### CVE-2024-41997 (2024-10-14)
+
+<code>An issue was discovered in version of Warp Terminal prior to 2024.07.18 (v0.2024.07.16.08.02). A command injection vulnerability exists in the Docker integration functionality. An attacker can create a specially crafted hyperlink using the `warp://action/docker/open_subshell` intent that when clicked by the victim results in command execution on the victim's machine.
+</code>
+
+- [xpcmdshell/CVE-2024-41997](https://github.com/xpcmdshell/CVE-2024-41997)
 
 ### CVE-2024-42007 (2024-07-26)
 
