@@ -1,5 +1,13 @@
 # PoC in GitHub
 
+## 2026
+### CVE-2026-00001
+- [sufnir/POC-CVE-2026-00001](https://github.com/sufnir/POC-CVE-2026-00001)
+
+### CVE-2026-5000
+- [Perl-Code/CVE-2026-5000](https://github.com/Perl-Code/CVE-2026-5000)
+
+
 ## 2025
 ### CVE-2025-0054 (2025-02-11)
 
@@ -916,6 +924,13 @@
 
 - [TeteuXD2/CVE-2025-5095-POC](https://github.com/TeteuXD2/CVE-2025-5095-POC)
 
+### CVE-2025-5182 (2025-05-26)
+
+<code>In Summer Pearl Group Vacation Rental Management Platform bis 1.0.1 wurde eine kritische Schwachstelle gefunden. Es geht um eine nicht näher bekannte Funktion der Komponente Listing Handler. Durch Manipulation mit unbekannten Daten kann eine authorization bypass-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk erfolgen. Ein Aktualisieren auf die Version 1.0.2 vermag dieses Problem zu lösen. Als bestmögliche Massnahme wird das Einspielen eines Upgrades empfohlen.
+</code>
+
+- [vulnvault/react2shell](https://github.com/vulnvault/react2shell)
+
 ### CVE-2025-5196 (2025-05-26)
 
 <code>In Wing FTP Server bis 7.4.3 wurde eine Schwachstelle gefunden. Sie wurde als kritisch eingestuft. Hierbei betrifft es unbekannten Programmcode der Komponente Lua Admin Console. Mit der Manipulation mit unbekannten Daten kann eine execution with unnecessary privileges-Schwachstelle ausgenutzt werden. Umgesetzt werden kann der Angriff über das Netzwerk. Die Komplexität eines Angriffs ist eher hoch. Sie gilt als schwierig ausnutzbar. Ein Aktualisieren auf die Version 7.4.4 vermag dieses Problem zu lösen. Als bestmögliche Massnahme wird das Einspielen eines Upgrades empfohlen.
@@ -1172,7 +1187,6 @@
 </code>
 
 - [AnotherSec/CVE-2025-6440](https://github.com/AnotherSec/CVE-2025-6440)
-- [Nxploited/CVE-2025-6440](https://github.com/Nxploited/CVE-2025-6440)
 - [m2hcz/CVE-2025-6440-Poc-Exploit](https://github.com/m2hcz/CVE-2025-6440-Poc-Exploit)
 - [smuft1707/CVE-2025-6440](https://github.com/smuft1707/CVE-2025-6440)
 
@@ -1495,6 +1509,7 @@
 - [zAbuQasem/gogs-CVE-2025-8110](https://github.com/zAbuQasem/gogs-CVE-2025-8110)
 - [111ddea/goga-cve-2025-8110](https://github.com/111ddea/goga-cve-2025-8110)
 - [tovd-go/CVE-2025-8110](https://github.com/tovd-go/CVE-2025-8110)
+- [freiwi/CVE-2025-8110](https://github.com/freiwi/CVE-2025-8110)
 
 ### CVE-2025-8191 (2025-07-26)
 
@@ -1671,13 +1686,6 @@
 </code>
 
 - [d0n601/CVE-2025-9216](https://github.com/d0n601/CVE-2025-9216)
-
-### CVE-2025-9223 (2025-11-11)
-
-<code>Zohocorp ManageEngine Applications Manager versions 178100 and below are vulnerable to authenticated command injection vulnerability due to the improper configuration in the execute program action feature.
-</code>
-
-- [networkkiller/CVE-2025-9223](https://github.com/networkkiller/CVE-2025-9223)
 
 ### CVE-2025-9242 (2025-09-17)
 
@@ -1894,13 +1902,6 @@
 
 - [halilkirazkaya/CVE-2025-11833](https://github.com/halilkirazkaya/CVE-2025-11833)
 
-### CVE-2025-11953 (2025-11-03)
-
-<code>The Metro Development Server, which is opened by the React Native Community CLI, binds to external interfaces by default. The server exposes an endpoint that is vulnerable to OS command injection. This allows unauthenticated network attackers to send a POST request to the server and run arbitrary executables. On Windows, the attackers can also execute arbitrary shell commands with fully controlled arguments.
-</code>
-
-- [N3k0t-dev/PoC-CVE-collection](https://github.com/N3k0t-dev/PoC-CVE-collection)
-
 ### CVE-2025-12097 (2025-12-04)
 
 <code>There is a relative path traversal vulnerability in the NI System Web Server that may result in information disclosure.  Successful exploitation requires an attacker to send a specially crafted request to the NI System Web Server, allowing the attacker to read arbitrary files.  This vulnerability existed in the NI System Web Server 2012 and prior versions.  It was fixed in 2013.
@@ -1929,13 +1930,6 @@
 </code>
 
 - [SnailSploit/CVE-2025-12163](https://github.com/SnailSploit/CVE-2025-12163)
-
-### CVE-2025-12539 (2025-11-11)
-
-<code>The TNC Toolbox: Web Performance plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.4.2. This is due to the plugin storing cPanel API credentials (hostname, username, and API key) in files within the web-accessible wp-content directory without adequate protection in the &quot;Tnc_Wp_Toolbox_Settings::save_settings&quot; function. This makes it possible for unauthenticated attackers to retrieve these credentials and use them to interact with the cPanel API, which can lead to arbitrary file uploads, remote code execution, and full compromise of the hosting environment.
-</code>
-
-- [Nxploited/CVE-2025-12539](https://github.com/Nxploited/CVE-2025-12539)
 
 ### CVE-2025-12735 (2025-11-05)
 
@@ -2115,6 +2109,13 @@
 
 - [Satirush/CVE-2025-14174-Poc](https://github.com/Satirush/CVE-2025-14174-Poc)
 
+### CVE-2025-14175 (2025-12-29)
+
+<code>A vulnerability in the SSH server of TP-Link TL-WR820N v2.80 allows the use of a weak cryptographic algorithm, enabling an adjacent attacker to intercept and decrypt SSH traffic. Exploitation may expose sensitive information and compromise confidentiality.
+</code>
+
+- [CyberVinner/TP-Link-TL-WR820N-CVE-2025-14175](https://github.com/CyberVinner/TP-Link-TL-WR820N-CVE-2025-14175)
+
 ### CVE-2025-14221 (2025-12-08)
 
 <code>A vulnerability was detected in SourceCodester Online Banking System 1.0. This impacts an unknown function of the file /?page=user. The manipulation of the argument First Name/Last Name results in cross site scripting. The attack can be launched remotely. The exploit is now public and may be used.
@@ -2193,6 +2194,7 @@
 - [j0lt-github/mongobleedburp](https://github.com/j0lt-github/mongobleedburp)
 - [FurkanKAYAPINAR/CVE-2025-14847-MongoBleed-Exploit](https://github.com/FurkanKAYAPINAR/CVE-2025-14847-MongoBleed-Exploit)
 - [NoNameError/MongoBLEED---CVE-2025-14847-POC-](https://github.com/NoNameError/MongoBLEED---CVE-2025-14847-POC-)
+- [Rishi-kaul/CVE-2025-14847-MongoBleed](https://github.com/Rishi-kaul/CVE-2025-14847-MongoBleed)
 
 ### CVE-2025-15177 (2025-12-29)
 
@@ -3029,7 +3031,6 @@
 - [mrmtwoj/CVE-2025-25257](https://github.com/mrmtwoj/CVE-2025-25257)
 - [TheStingR/CVE-2025-25257](https://github.com/TheStingR/CVE-2025-25257)
 - [segfault-it/CVE-2025-25257](https://github.com/segfault-it/CVE-2025-25257)
-- [mr-r3b00t/CVE-2025-25257](https://github.com/mr-r3b00t/CVE-2025-25257)
 - [lytianahkone-boop/cve-2025-25257](https://github.com/lytianahkone-boop/cve-2025-25257)
 
 ### CVE-2025-25279 (2025-02-24)
@@ -3957,6 +3958,7 @@
 - [ThemeHackers/CVE-2025-30208](https://github.com/ThemeHackers/CVE-2025-30208)
 - [TH-SecForge/CVE-2025-30208](https://github.com/TH-SecForge/CVE-2025-30208)
 - [bugdotexe/CVE-2025-30208](https://github.com/bugdotexe/CVE-2025-30208)
+- [yanxxir/yanxxir](https://github.com/yanxxir/yanxxir)
 
 ### CVE-2025-30216 (2025-03-25)
 
@@ -4663,7 +4665,6 @@
 <code>Monsta FTP versions 2.11 and earlier contain a vulnerability that allows unauthenticated arbitrary file uploads. This flaw enables attackers to execute arbitrary code by uploading a specially crafted file from a malicious (S)FTP server.
 </code>
 
-- [rxerium/CVE-2025-34299](https://github.com/rxerium/CVE-2025-34299)
 - [Ashwesker/Ashwesker-CVE-2025-34299](https://github.com/Ashwesker/Ashwesker-CVE-2025-34299)
 - [Chocapikk/CVE-2025-34299](https://github.com/Chocapikk/CVE-2025-34299)
 - [KrE80r/CVE-2025-34299-lab](https://github.com/KrE80r/CVE-2025-34299-lab)
@@ -5625,6 +5626,9 @@
 
 - [B1tBreaker/CVE-2025-48708](https://github.com/B1tBreaker/CVE-2025-48708)
 
+### CVE-2025-48769
+- [b1gchoi/CVE-2025-48769](https://github.com/b1gchoi/CVE-2025-48769)
+
 ### CVE-2025-48799 (2025-07-08)
 
 <code>Improper link resolution before file access ('link following') in Windows Update Service allows an authorized attacker to elevate privileges locally.
@@ -6321,6 +6325,7 @@
 - [you-ssef9/CVE-2025-52691](https://github.com/you-ssef9/CVE-2025-52691)
 - [DeathShotXD/CVE-2025-52691-APT-PoC](https://github.com/DeathShotXD/CVE-2025-52691-APT-PoC)
 - [sajjadsiam/CVE-2025-52691-poc](https://github.com/sajjadsiam/CVE-2025-52691-poc)
+- [hilwa24/CVE-2025-52691](https://github.com/hilwa24/CVE-2025-52691)
 
 ### CVE-2025-52692 (2025-12-19)
 
@@ -6612,6 +6617,7 @@
 </code>
 
 - [Sachinart/CVE-2025-54322](https://github.com/Sachinart/CVE-2025-54322)
+- [nkuty/CVE-2025-54322-exploit](https://github.com/nkuty/CVE-2025-54322-exploit)
 
 ### CVE-2025-54352 (2025-07-21)
 
@@ -6946,6 +6952,7 @@
 - [jandelima/cve-2025-55182-poc-test](https://github.com/jandelima/cve-2025-55182-poc-test)
 - [im-ezboy/CVE-2025-55182-zoomeye](https://github.com/im-ezboy/CVE-2025-55182-zoomeye)
 - [Ibonok/CVE-2025-55182-Burp-Passive-Extension](https://github.com/Ibonok/CVE-2025-55182-Burp-Passive-Extension)
+- [FurkanKAYAPINAR/React-Next-Scanner](https://github.com/FurkanKAYAPINAR/React-Next-Scanner)
 - [lowercasenumbers/CVE-2025-55182](https://github.com/lowercasenumbers/CVE-2025-55182)
 - [AggressiveUser/React2Hell](https://github.com/AggressiveUser/React2Hell)
 - [racall/cve-2025-55182-node](https://github.com/racall/cve-2025-55182-node)
@@ -7110,6 +7117,7 @@
 - [amirali-ramezani/react2shell-CVE-2025-55182-](https://github.com/amirali-ramezani/react2shell-CVE-2025-55182-)
 - [git0xLai/React2ShellPoC](https://github.com/git0xLai/React2ShellPoC)
 - [hndko/react2shell-rce-autobot](https://github.com/hndko/react2shell-rce-autobot)
+- [Goultarde/CVE-2025-55182-React2Shell-Lab](https://github.com/Goultarde/CVE-2025-55182-React2Shell-Lab)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -7173,14 +7181,12 @@
 </code>
 
 - [sirredbeard/CVE-2025-55315-repro](https://github.com/sirredbeard/CVE-2025-55315-repro)
-- [ZemarKhos/CVE-2025-55315-PoC-Exploit](https://github.com/ZemarKhos/CVE-2025-55315-PoC-Exploit)
 - [MartinFabianIonut/CVE-2025-55315](https://github.com/MartinFabianIonut/CVE-2025-55315)
 
 ### CVE-2025-55349
 - [GoldenTicketLabs/CVE-2025-55349](https://github.com/GoldenTicketLabs/CVE-2025-55349)
 
 ### CVE-2025-55449
-- [Marven11/CVE-2025-55449-AstrBot-RCE](https://github.com/Marven11/CVE-2025-55449-AstrBot-RCE)
 - [xhh1h/CVE-2025-55449](https://github.com/xhh1h/CVE-2025-55449)
 
 ### CVE-2025-55555
@@ -7590,13 +7596,6 @@
 </code>
 
 - [Ashwesker/Ashwesker-CVE-2025-58034](https://github.com/Ashwesker/Ashwesker-CVE-2025-58034)
-
-### CVE-2025-58179 (2025-09-04)
-
-<code>Astro is a web framework for content-driven websites. Versions 11.0.3 through 12.6.5 are vulnerable to SSRF when using Astro's Cloudflare adapter. When configured with output: 'server' while using the default imageService: 'compile', the generated image optimization endpoint doesn't check the URLs it receives, allowing content from unauthorized third-party domains to be served. a A bug in impacted versions of the @astrojs/cloudflare adapter for deployment on Cloudflare’s infrastructure, allows an attacker to bypass the third-party domain restrictions and serve any content from the vulnerable origin. This issue is fixed in version 12.6.6.
-</code>
-
-- [shitodcy/CVE-2025-58179-Check](https://github.com/shitodcy/CVE-2025-58179-Check)
 
 ### CVE-2025-58180 (2025-09-09)
 
@@ -8187,7 +8186,6 @@
 </code>
 
 - [Ashwesker/Ashwesker-CVE-2025-64513](https://github.com/Ashwesker/Ashwesker-CVE-2025-64513)
-- [shinyseam/CVE-2025-64513](https://github.com/shinyseam/CVE-2025-64513)
 
 ### CVE-2025-64516
 - [lem0naids/CVE-2025-64516-POC](https://github.com/lem0naids/CVE-2025-64516-POC)
@@ -8206,13 +8204,6 @@
 
 - [Neo-Neo6/CVE-2025-65018-Heap-buffer-overflow-in-libpng-ps4-ps5-](https://github.com/Neo-Neo6/CVE-2025-65018-Heap-buffer-overflow-in-libpng-ps4-ps5-)
 - [bohemian-miser/CVE-2025-65018_Exploit_Challenge](https://github.com/bohemian-miser/CVE-2025-65018_Exploit_Challenge)
-
-### CVE-2025-65037 (2025-12-18)
-
-<code>Improper control of generation of code ('code injection') in Azure Container Apps allows an unauthorized attacker to execute code over a network.
-</code>
-
-- [b1gchoi/CVE-2025-65037](https://github.com/b1gchoi/CVE-2025-65037)
 
 ### CVE-2025-65099 (2025-11-19)
 
@@ -8722,6 +8713,13 @@
 </code>
 
 - [Ak-cybe/CVE-2025-68664-LangGrinch-PoC](https://github.com/Ak-cybe/CVE-2025-68664-LangGrinch-PoC)
+
+### CVE-2025-68860 (2025-12-29)
+
+<code>Authentication Bypass Using an Alternate Path or Channel vulnerability in Mobile Builder Mobile builder allows Authentication Abuse.This issue affects Mobile builder: from n/a through 1.4.2.
+</code>
+
+- [Nxploited/CVE-2025-68860](https://github.com/Nxploited/CVE-2025-68860)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -10896,6 +10894,13 @@
 </code>
 
 - [KTN1990/CVE-2024-8425](https://github.com/KTN1990/CVE-2024-8425)
+
+### CVE-2024-8465 (2024-09-05)
+
+<code>SQL injection vulnerability, by which an attacker could send a specially designed query through user_id parameter in /jobportal/admin/user/controller.php, and retrieve all the information stored in it.
+</code>
+
+- [19melek19/TheMisfits-CVE-2024-8465-SQLi](https://github.com/19melek19/TheMisfits-CVE-2024-8465-SQLi)
 
 ### CVE-2024-8484 (2024-09-25)
 
@@ -18888,6 +18893,9 @@
 ### CVE-2024-55347
 - [sahil3276/CVE-2024-55347](https://github.com/sahil3276/CVE-2024-55347)
 
+### CVE-2024-55374
+- [T3slaa/CVE-2024-55374](https://github.com/T3slaa/CVE-2024-55374)
+
 ### CVE-2024-55457 (2025-02-20)
 
 <code>MasterSAM Star Gate 11 is vulnerable to directory traversal via /adama/adama/downloadService. An attacker can exploit this vulnerability by manipulating the file parameter to access arbitrary files on the server, potentially exposing sensitive information.
@@ -24981,13 +24989,6 @@
 </code>
 
 - [shoucheng3/xwiki__xwiki-commons_CVE-2023-36471_14-10-5](https://github.com/shoucheng3/xwiki__xwiki-commons_CVE-2023-36471_14-10-5)
-
-### CVE-2023-36482 (2023-08-08)
-
-<code>An issue was discovered in Samsung NFC S3NRN4V, S3NSN4V, S3NSEN4, SEN82AB, and S3NRN82. A buffer copy without checking its input size can cause an NFC service restart.
-</code>
-
-- [qazianwar222/Samsung_S3NRN82_Research](https://github.com/qazianwar222/Samsung_S3NRN82_Research)
 
 ### CVE-2023-36531 (2024-12-13)
 
@@ -55039,6 +55040,13 @@
 - [ivanitlearning/CVE-2018-12613](https://github.com/ivanitlearning/CVE-2018-12613)
 - [eastmountyxz/CVE-2018-12613-phpMyAdmin](https://github.com/eastmountyxz/CVE-2018-12613-phpMyAdmin)
 
+### CVE-2018-12633 (2018-06-22)
+
+<code>An issue was discovered in the Linux kernel through 4.17.2. vbg_misc_device_ioctl() in drivers/virt/vboxguest/vboxguest_linux.c reads the same user data twice with copy_from_user. The header part of the user data is double-fetched, and a malicious user thread can tamper with the critical variables (hdr.size_in and hdr.size_out) in the header between the two fetches because of a race condition, leading to severe kernel errors, such as buffer over-accesses. This bug can cause a local denial of service and information leakage.
+</code>
+
+- [wiliam227user/CVE-2018-12633-TPLink-Auth-Bypass](https://github.com/wiliam227user/CVE-2018-12633-TPLink-Auth-Bypass)
+
 ### CVE-2018-12636 (2018-06-22)
 
 <code>The iThemes Security (better-wp-security) plugin before 7.0.3 for WordPress allows SQL Injection (by attackers with Admin privileges) via the logs page.
@@ -58740,13 +58748,6 @@
 ### CVE-2017-17275
 - [kd992102/CVE-2017-17275](https://github.com/kd992102/CVE-2017-17275)
 
-### CVE-2017-17309 (2018-06-14)
-
-<code>Huawei HG255s-10 V100R001C163B025SP02 has a path traversal vulnerability due to insufficient validation of the received HTTP requests, a remote attacker may access the local files on the device without authentication.
-</code>
-
-- [exploit-labs/huawei_hg255s_exploit](https://github.com/exploit-labs/huawei_hg255s_exploit)
-
 ### CVE-2017-17485 (2018-01-10)
 
 <code>FasterXML jackson-databind through 2.8.10 and 2.9.x through 2.9.3 allows unauthenticated remote code execution because of an incomplete fix for the CVE-2017-7525 deserialization flaw. This is exploitable by sending maliciously crafted JSON input to the readValue method of the ObjectMapper, bypassing a blacklist that is ineffective if the Spring libraries are available in the classpath.
@@ -61844,7 +61845,6 @@
 </code>
 
 - [mikesplain/CVE-2014-3566-poodle-cookbook](https://github.com/mikesplain/CVE-2014-3566-poodle-cookbook)
-- [stdevel/poodle_protector](https://github.com/stdevel/poodle_protector)
 - [cloudpassage/mangy-beast](https://github.com/cloudpassage/mangy-beast)
 - [mpgn/poodle-PoC](https://github.com/mpgn/poodle-PoC)
 - [uthrasri/openssl_g2.5_CVE-2014-3566](https://github.com/uthrasri/openssl_g2.5_CVE-2014-3566)
@@ -61891,6 +61891,7 @@
 - [AleDiBen/Drupalgeddon](https://github.com/AleDiBen/Drupalgeddon)
 - [Neldeborg/Drupalgeddon-Python3](https://github.com/Neldeborg/Drupalgeddon-Python3)
 - [joaomorenorf/CVE-2014-3704](https://github.com/joaomorenorf/CVE-2014-3704)
+- [fbm31/Audit-BlackBox-Web-to-Root](https://github.com/fbm31/Audit-BlackBox-Web-to-Root)
 
 ### CVE-2014-4014 (2014-06-23)
 
