@@ -4,8 +4,18 @@
 ### CVE-2026-00001
 - [sufnir/POC-CVE-2026-00001](https://github.com/sufnir/POC-CVE-2026-00001)
 
+### CVE-2026-0547
+- [rsecroot/CVE-2026-0547](https://github.com/rsecroot/CVE-2026-0547)
+
 ### CVE-2026-5000
 - [Perl-Code/CVE-2026-5000](https://github.com/Perl-Code/CVE-2026-5000)
+
+### CVE-2026-21437 (2026-01-01)
+
+<code>eopkg is a Solus package manager implemented in python3. In versions prior to 4.4.0, a malicious package could include files that are not tracked by `eopkg`. This requires the installation of a package from a malicious or compromised source. Files in such packages would not be shown by `lseopkg` and related tools. The issue has been fixed in v4.4.0. Users only installing packages from the Solus repositories are not affected.
+</code>
+
+- [osmancanvural/CVE-2026-21437](https://github.com/osmancanvural/CVE-2026-21437)
 
 
 ## 2025
@@ -72,6 +82,7 @@
 </code>
 
 - [barhen12/CVE-2025-0288](https://github.com/barhen12/CVE-2025-0288)
+- [MeisamEb/CVE-2025-0288](https://github.com/MeisamEb/CVE-2025-0288)
 
 ### CVE-2025-0309 (2025-08-14)
 
@@ -2167,6 +2178,13 @@
 
 - [InfoSecAntara/CVE-2025-14765-and-CVE-2025-14766](https://github.com/InfoSecAntara/CVE-2025-14765-and-CVE-2025-14766)
 
+### CVE-2025-14783 (2025-12-31)
+
+<code>The Easy Digital Downloads plugin for WordPress is vulnerable to Unvalidated Redirect in all versions up to, and including, 3.6.2. This is due to insufficient validation on the redirect url supplied via the 'edd_redirect' parameter. This makes it possible for unauthenticated attackers to redirect users with the password reset email to potentially malicious sites if they can successfully trick them into performing an action.
+</code>
+
+- [ZeroEthical/CVE-2025-14783-POC](https://github.com/ZeroEthical/CVE-2025-14783-POC)
+
 ### CVE-2025-14847 (2025-12-19)
 
 <code>Mismatched length fields in Zlib compressed protocol headers may allow a read of uninitialized heap memory by an unauthenticated client. This issue affects all MongoDB Server v7.0 prior to 7.0.28 versions, MongoDB Server v8.0 versions prior to 8.0.17, MongoDB Server v8.2 versions prior to 8.2.3, MongoDB Server v6.0 versions prior to 6.0.27, MongoDB Server v5.0 versions prior to 5.0.32, MongoDB Server v4.4 versions prior to 4.4.30, MongoDB Server v4.2 versions greater than or equal to 4.2.0, MongoDB Server v4.0 versions greater than or equal to 4.0.0, and MongoDB Server v3.6 versions greater than or equal to 3.6.0.
@@ -2195,6 +2213,7 @@
 - [FurkanKAYAPINAR/CVE-2025-14847-MongoBleed-Exploit](https://github.com/FurkanKAYAPINAR/CVE-2025-14847-MongoBleed-Exploit)
 - [NoNameError/MongoBLEED---CVE-2025-14847-POC-](https://github.com/NoNameError/MongoBLEED---CVE-2025-14847-POC-)
 - [Rishi-kaul/CVE-2025-14847-MongoBleed](https://github.com/Rishi-kaul/CVE-2025-14847-MongoBleed)
+- [Systemhaus-Schulz/MongoBleed-CVE-2025-14847](https://github.com/Systemhaus-Schulz/MongoBleed-CVE-2025-14847)
 
 ### CVE-2025-15177 (2025-12-29)
 
@@ -2202,6 +2221,20 @@
 </code>
 
 - [yt2w/CVE-2025-15177](https://github.com/yt2w/CVE-2025-15177)
+
+### CVE-2025-15390 (2025-12-31)
+
+<code>A security flaw has been discovered in PHPGurukul Small CRM 4.0. This impacts an unknown function of the file /admin/edit-user.php. The manipulation results in missing authorization. It is possible to launch the attack remotely. The exploit has been released to the public and may be exploited.
+</code>
+
+- [rsecroot/CVE-2025-15390](https://github.com/rsecroot/CVE-2025-15390)
+
+### CVE-2025-15406 (2026-01-01)
+
+<code>A flaw has been found in PHPGurukul Online Course Registration up to 3.1. This affects an unknown function. This manipulation causes missing authorization. Remote exploitation of the attack is possible. The exploit has been published and may be used.
+</code>
+
+- [rsecroot/CVE-2025-15406](https://github.com/rsecroot/CVE-2025-15406)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -3827,6 +3860,7 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
+- [KaztoRay/CVE-2025-29927-Research](https://github.com/KaztoRay/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -5625,7 +5659,11 @@
 
 - [B1tBreaker/CVE-2025-48708](https://github.com/B1tBreaker/CVE-2025-48708)
 
-### CVE-2025-48769
+### CVE-2025-48769 (2026-01-01)
+
+<code>Use After Free vulnerability was discovered in fs/vfs/fs_rename code of the Apache NuttX RTOS, that due recursive implementation and single buffer use by two different pointer variables allowed arbitrary user provided size buffer reallocation and write to the previously freed heap chunk, that in specific cases could cause unintended virtual filesystem rename/move operation results.\n\nThis issue affects Apache NuttX RTOS: from 7.20 before 12.11.0.\n\nUsers of virtual filesystem based services with write access especially when exposed over the network (i.e. FTP) are affected and recommended to upgrade to version 12.11.0 that fixes the issue.
+</code>
+
 - [b1gchoi/CVE-2025-48769](https://github.com/b1gchoi/CVE-2025-48769)
 
 ### CVE-2025-48799 (2025-07-08)
@@ -6534,6 +6572,7 @@
 </code>
 
 - [synacktiv/Livepyre](https://github.com/synacktiv/Livepyre)
+- [z0d131482700x/Livewire2025CVE](https://github.com/z0d131482700x/Livewire2025CVE)
 
 ### CVE-2025-54100 (2025-12-09)
 
@@ -7117,6 +7156,7 @@
 - [git0xLai/React2ShellPoC](https://github.com/git0xLai/React2ShellPoC)
 - [hndko/react2shell-rce-autobot](https://github.com/hndko/react2shell-rce-autobot)
 - [Goultarde/CVE-2025-55182-React2Shell-Lab](https://github.com/Goultarde/CVE-2025-55182-React2Shell-Lab)
+- [xiaoLvChen/CVE-2025-55182](https://github.com/xiaoLvChen/CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -8574,6 +8614,15 @@
 
 - [kabir0104k/CVE-2025-66947](https://github.com/kabir0104k/CVE-2025-66947)
 
+### CVE-2025-67158
+- [Remenis/CVE-2025-67158](https://github.com/Remenis/CVE-2025-67158)
+
+### CVE-2025-67159
+- [Remenis/CVE-2025-67159](https://github.com/Remenis/CVE-2025-67159)
+
+### CVE-2025-67160
+- [Remenis/CVE-2025-67160](https://github.com/Remenis/CVE-2025-67160)
+
 ### CVE-2025-67294
 - [0xthem7/CVE-2025-67294](https://github.com/0xthem7/CVE-2025-67294)
 
@@ -8713,6 +8762,7 @@
 
 - [Ashwesker/Ashwesker-CVE-2025-68645](https://github.com/Ashwesker/Ashwesker-CVE-2025-68645)
 - [chinaxploiter/CVE-2025-68645-PoC](https://github.com/chinaxploiter/CVE-2025-68645-PoC)
+- [MaxMnMl/zimbramail-CVE-2025-68645-poc](https://github.com/MaxMnMl/zimbramail-CVE-2025-68645-poc)
 
 ### CVE-2025-68664 (2025-12-23)
 
@@ -9496,7 +9546,7 @@
 - [lypd0/CVE-2024-3094-Vulnerabity-Checker](https://github.com/lypd0/CVE-2024-3094-Vulnerabity-Checker)
 - [OpensourceICTSolutions/xz_utils-CVE-2024-3094](https://github.com/OpensourceICTSolutions/xz_utils-CVE-2024-3094)
 - [bioless/xz_cve-2024-3094_detection](https://github.com/bioless/xz_cve-2024-3094_detection)
-- [Hacker-Hermanos/CVE-2024-3094_xz_check](https://github.com/Hacker-Hermanos/CVE-2024-3094_xz_check)
+- [HackerHermanos/CVE-2024-3094_xz_check](https://github.com/HackerHermanos/CVE-2024-3094_xz_check)
 - [Fractal-Tess/CVE-2024-3094](https://github.com/Fractal-Tess/CVE-2024-3094)
 - [wgetnz/CVE-2024-3094-check](https://github.com/wgetnz/CVE-2024-3094-check)
 - [emirkmo/xz-backdoor-github](https://github.com/emirkmo/xz-backdoor-github)
@@ -12272,6 +12322,7 @@
 - [gurleen-147/CVE-2024-21413-Microsoft-Outlook-Remote-Code-Execution-Vulnerability-PoC](https://github.com/gurleen-147/CVE-2024-21413-Microsoft-Outlook-Remote-Code-Execution-Vulnerability-PoC)
 - [hau2212/Moniker-Link-CVE-2024-21413-](https://github.com/hau2212/Moniker-Link-CVE-2024-21413-)
 - [mmathivanan17/CVE-2024-21413](https://github.com/mmathivanan17/CVE-2024-21413)
+- [eylommaayan/THM---CVE-2024-21413-Moniker-Link-Microsoft-Outlook-](https://github.com/eylommaayan/THM---CVE-2024-21413-Moniker-Link-Microsoft-Outlook-)
 
 ### CVE-2024-21513 (2024-07-15)
 
@@ -13566,6 +13617,7 @@
 - [XiaomingX/cve-2024-25641-poc](https://github.com/XiaomingX/cve-2024-25641-poc)
 - [D3Ext/CVE-2024-25641](https://github.com/D3Ext/CVE-2024-25641)
 - [regantemudo/CVE-2024-25641-Exploit-for-Cacti-1.2.26](https://github.com/regantemudo/CVE-2024-25641-Exploit-for-Cacti-1.2.26)
+- [declanmiddleton/thorndrop](https://github.com/declanmiddleton/thorndrop)
 
 ### CVE-2024-25723 (2024-02-27)
 
@@ -31910,6 +31962,13 @@
 
 - [DefensiveOrigins/POC-CVE-2022-26671](https://github.com/DefensiveOrigins/POC-CVE-2022-26671)
 
+### CVE-2022-26711 (2022-05-26)
+
+<code>An integer overflow issue was addressed with improved input validation. This issue is fixed in tvOS 15.5, iTunes 12.12.4 for Windows, iOS 15.5 and iPadOS 15.5, watchOS 8.6, macOS Monterey 12.4. A remote attacker may be able to cause unexpected application termination or arbitrary code execution.
+</code>
+
+- [xpcmdshell/CVE-2022-26711](https://github.com/xpcmdshell/CVE-2022-26711)
+
 ### CVE-2022-26717 (2022-11-01)
 
 <code>A use after free issue was addressed with improved memory management. This issue is fixed in tvOS 15.5, watchOS 8.6, iOS 15.5 and iPadOS 15.5, macOS Monterey 12.4, Safari 15.5, iTunes 12.12.4 for Windows. Processing maliciously crafted web content may lead to arbitrary code execution.
@@ -34372,6 +34431,7 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
+- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -50229,6 +50289,7 @@
 - [echoosso/CVE-2019-9978](https://github.com/echoosso/CVE-2019-9978)
 - [Housma/CVE-2019-9978-Social-Warfare-WordPress-Plugin-RCE](https://github.com/Housma/CVE-2019-9978-Social-Warfare-WordPress-Plugin-RCE)
 - [xxoprt/payloadCVE-2019-9978](https://github.com/xxoprt/payloadCVE-2019-9978)
+- [Vaidehim55/CVE-2019-9978-RCE-PoC](https://github.com/Vaidehim55/CVE-2019-9978-RCE-PoC)
 
 ### CVE-2019-10008 (2019-04-24)
 
@@ -51373,6 +51434,13 @@
 </code>
 
 - [securifera/CVE-2019-14450](https://github.com/securifera/CVE-2019-14450)
+
+### CVE-2019-14462 (2019-07-31)
+
+<code>An issue was discovered in libmodbus before 3.0.7 and 3.1.x before 3.1.5. There is an out-of-bounds read for the MODBUS_FC_WRITE_MULTIPLE_COILS case, aka VD-1302.
+</code>
+
+- [spanwich/sel4-ics-gateway-demo](https://github.com/spanwich/sel4-ics-gateway-demo)
 
 ### CVE-2019-14514 (2020-02-10)
 
@@ -58227,6 +58295,7 @@
 - [MrE-Fog/jboss-_CVE-2017-12149](https://github.com/MrE-Fog/jboss-_CVE-2017-12149)
 - [JesseClarkND/CVE-2017-12149](https://github.com/JesseClarkND/CVE-2017-12149)
 - [zesnd/cve-2017-12149](https://github.com/zesnd/cve-2017-12149)
+- [galois17/cve-2017-12149-playground](https://github.com/galois17/cve-2017-12149-playground)
 
 ### CVE-2017-12426 (2017-08-14)
 
@@ -60382,6 +60451,13 @@
 
 - [Aditya43621/lab-cve-2016-15042](https://github.com/Aditya43621/lab-cve-2016-15042)
 - [ImBIOS/lab-cve-2016-15042](https://github.com/ImBIOS/lab-cve-2016-15042)
+
+### CVE-2016-15048 (2025-10-22)
+
+<code>AMTT Hotel Broadband Operation System (HiBOS) contains an unauthenticated command injection vulnerability in the /manager/radius/server_ping.php endpoint. The application constructs a shell command that includes the user-supplied ip parameter and executes it without proper validation or escaping. An attacker can insert shell metacharacters into the ip parameter to inject and execute arbitrary system commands as the web server user. The initial third-party disclosure in 2016 recommended contacting the vendor for remediation guidance. Additionally, this product may have been rebranded under a different name. VulnCheck has observed this vulnerability being exploited in the wild as of 2025-10-14 at 04:45:53.510819 UTC.
+</code>
+
+- [Pranjal6955/test_CVE-2016-15048](https://github.com/Pranjal6955/test_CVE-2016-15048)
 
 ### CVE-2016-20012 (2021-09-15)
 
