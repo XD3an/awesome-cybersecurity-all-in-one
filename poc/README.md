@@ -1,12 +1,6 @@
 # PoC in GitHub
 
 ## 2026
-### CVE-2026-00001
-- [sufnir/POC-CVE-2026-00001](https://github.com/sufnir/POC-CVE-2026-00001)
-
-### CVE-2026-0547
-- [rsecroot/CVE-2026-0547](https://github.com/rsecroot/CVE-2026-0547)
-
 ### CVE-2026-5000
 - [Perl-Code/CVE-2026-5000](https://github.com/Perl-Code/CVE-2026-5000)
 
@@ -1509,6 +1503,7 @@
 - [4daysday/cve-2025-8088](https://github.com/4daysday/cve-2025-8088)
 - [xi0onamdev/WinRAR-CVE-2025-8088-Exploitation-Toolkit](https://github.com/xi0onamdev/WinRAR-CVE-2025-8088-Exploitation-Toolkit)
 - [Markusino488/cve-2025-8088](https://github.com/Markusino488/cve-2025-8088)
+- [vitalichkaa/CVE-2025-8088](https://github.com/vitalichkaa/CVE-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -1704,13 +1699,6 @@
 </code>
 
 - [d0n601/CVE-2025-9216](https://github.com/d0n601/CVE-2025-9216)
-
-### CVE-2025-9223 (2025-11-11)
-
-<code>Zohocorp ManageEngine Applications Manager versions 178100 and below are vulnerable to authenticated command injection vulnerability due to the improper configuration in the execute program action feature.
-</code>
-
-- [networkkiller/CVE-2025-9223](https://github.com/networkkiller/CVE-2025-9223)
 
 ### CVE-2025-9242 (2025-09-17)
 
@@ -2133,6 +2121,7 @@
 </code>
 
 - [Satirush/CVE-2025-14174-Poc](https://github.com/Satirush/CVE-2025-14174-Poc)
+- [zeroxjf/CVE-2025-14174-analysis](https://github.com/zeroxjf/CVE-2025-14174-analysis)
 
 ### CVE-2025-14175 (2025-12-29)
 
@@ -2227,6 +2216,8 @@
 - [NoNameError/MongoBLEED---CVE-2025-14847-POC-](https://github.com/NoNameError/MongoBLEED---CVE-2025-14847-POC-)
 - [Rishi-kaul/CVE-2025-14847-MongoBleed](https://github.com/Rishi-kaul/CVE-2025-14847-MongoBleed)
 - [Systemhaus-Schulz/MongoBleed-CVE-2025-14847](https://github.com/Systemhaus-Schulz/MongoBleed-CVE-2025-14847)
+- [demetriusford/mongobleed](https://github.com/demetriusford/mongobleed)
+- [ElJoamy/MongoBleed-exploit](https://github.com/ElJoamy/MongoBleed-exploit)
 
 ### CVE-2025-15177 (2025-12-29)
 
@@ -2234,20 +2225,6 @@
 </code>
 
 - [yt2w/CVE-2025-15177](https://github.com/yt2w/CVE-2025-15177)
-
-### CVE-2025-15390 (2025-12-31)
-
-<code>A security flaw has been discovered in PHPGurukul Small CRM 4.0. This impacts an unknown function of the file /admin/edit-user.php. The manipulation results in missing authorization. It is possible to launch the attack remotely. The exploit has been released to the public and may be exploited.
-</code>
-
-- [rsecroot/CVE-2025-15390](https://github.com/rsecroot/CVE-2025-15390)
-
-### CVE-2025-15406 (2026-01-01)
-
-<code>A flaw has been found in PHPGurukul Online Course Registration up to 3.1. This affects an unknown function. This manipulation causes missing authorization. Remote exploitation of the attack is possible. The exploit has been published and may be used.
-</code>
-
-- [rsecroot/CVE-2025-15406](https://github.com/rsecroot/CVE-2025-15406)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -3563,6 +3540,7 @@
 - [VisaiCyber/CVE-2025-27591-below-](https://github.com/VisaiCyber/CVE-2025-27591-below-)
 - [0xDTC/Below-Logger-Symlink-Attack_CVE-2025-27591](https://github.com/0xDTC/Below-Logger-Symlink-Attack_CVE-2025-27591)
 - [0x00Jeff/CVE-2025-27591](https://github.com/0x00Jeff/CVE-2025-27591)
+- [Stp1t/CVE-2025-27591](https://github.com/Stp1t/CVE-2025-27591)
 
 ### CVE-2025-27607 (2025-03-07)
 
@@ -7173,6 +7151,8 @@
 - [captain4554/CVE-2025-55182-Scanner](https://github.com/captain4554/CVE-2025-55182-Scanner)
 - [captain4554/captain4554.github.io](https://github.com/captain4554/captain4554.github.io)
 - [ghostn4444/CVE-2025-55182](https://github.com/ghostn4444/CVE-2025-55182)
+- [HackIndex-io/React2Shell-CVE-2025-55182](https://github.com/HackIndex-io/React2Shell-CVE-2025-55182)
+- [vrx7men2/RSC-Detect-CVE-2025-55182](https://github.com/vrx7men2/RSC-Detect-CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -7705,6 +7685,7 @@
 - [M507/CVE-2025-59287-PoC](https://github.com/M507/CVE-2025-59287-PoC)
 - [Adel-kaka-dz/cve-2025-59287](https://github.com/Adel-kaka-dz/cve-2025-59287)
 - [gud425/gud425.github.io](https://github.com/gud425/gud425.github.io)
+- [vtntkmfyyftrem/CVE-2025-59287](https://github.com/vtntkmfyyftrem/CVE-2025-59287)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -7913,6 +7894,13 @@
 
 - [siddu7575/CVE-2025-61882-CVE-2025-61884](https://github.com/siddu7575/CVE-2025-61882-CVE-2025-61884)
 - [Zhert-lab/CVE-2025-61882-CVE-2025-61884](https://github.com/Zhert-lab/CVE-2025-61882-CVE-2025-61884)
+
+### CVE-2025-61922 (2025-10-16)
+
+<code>PrestaShop Checkout is the PrestaShop official payment module in partnership with PayPal. Starting in version 1.3.0 and prior to versions 4.4.1 and 5.0.5, missing validation on the Express Checkout feature allows silent login, enabling account takeover via email. The vulnerability is fixed in versions 4.4.1 and 5.0.5. No known workarounds exist.
+</code>
+
+- [g0vguy/CVE-2025-61922-PoC](https://github.com/g0vguy/CVE-2025-61922-PoC)
 
 ### CVE-2025-62168 (2025-10-17)
 
@@ -8585,6 +8573,7 @@
 - [DavionGowie/-vercel-application-is-vulnerable-to-CVE-2025-66478.](https://github.com/DavionGowie/-vercel-application-is-vulnerable-to-CVE-2025-66478.)
 - [zhixiangyao/CVE-2025-66478-Exploit-PoC](https://github.com/zhixiangyao/CVE-2025-66478-Exploit-PoC)
 - [thedarckpassenger/Next.js-RSC-RCE-Scanner-CVE-2025-66478](https://github.com/thedarckpassenger/Next.js-RSC-RCE-Scanner-CVE-2025-66478)
+- [khadafigans/React2Shell](https://github.com/khadafigans/React2Shell)
 - [NAYLINNU/CVE-2025-66478](https://github.com/NAYLINNU/CVE-2025-66478)
 
 ### CVE-2025-66489 (2025-12-03)
@@ -8632,17 +8621,32 @@
 
 - [kabir0104k/CVE-2025-66947](https://github.com/kabir0104k/CVE-2025-66947)
 
-### CVE-2025-67158
+### CVE-2025-67158 (2026-01-02)
+
+<code>An authentication bypass in the /cgi-bin/jvsweb.cgi endpoint of Revotech I6032W-FHW v1.0.0014 - 20210517 allows attackers to access sensitive information and escalate privileges via a crafted HTTP request.
+</code>
+
 - [Remenis/CVE-2025-67158](https://github.com/Remenis/CVE-2025-67158)
 
-### CVE-2025-67159
+### CVE-2025-67159 (2026-01-02)
+
+<code>Vatilon v1.12.37-20240124 was discovered to transmit user credentials in plaintext.
+</code>
+
 - [Remenis/CVE-2025-67159](https://github.com/Remenis/CVE-2025-67159)
 
-### CVE-2025-67160
+### CVE-2025-67160 (2026-01-02)
+
+<code>An issue in Vatilon v1.12.37-20240124 allows attackers to access sensitive directories and files via a directory traversal.
+</code>
+
 - [Remenis/CVE-2025-67160](https://github.com/Remenis/CVE-2025-67160)
 
 ### CVE-2025-67294
 - [0xthem7/CVE-2025-67294](https://github.com/0xthem7/CVE-2025-67294)
+
+### CVE-2025-67315
+- [r-pradyun/CVE-2025-67315](https://github.com/r-pradyun/CVE-2025-67315)
 
 ### CVE-2025-67435
 - [RajChowdhury240/CVE-2025-67435](https://github.com/RajChowdhury240/CVE-2025-67435)
@@ -8765,6 +8769,7 @@
 - [LingerANR/n8n-CVE-2025-68613](https://github.com/LingerANR/n8n-CVE-2025-68613)
 - [gagaltotal/n8n-cve-2025-68613](https://github.com/gagaltotal/n8n-cve-2025-68613)
 - [cv-sai-kamesh/n8n-CVE-2025-68613](https://github.com/cv-sai-kamesh/n8n-CVE-2025-68613)
+- [ahmedshamsddin/n8n-RCE-CVE-2025-68613](https://github.com/ahmedshamsddin/n8n-RCE-CVE-2025-68613)
 
 ### CVE-2025-68615 (2025-12-22)
 
@@ -15535,7 +15540,7 @@
 - [whitebear-ch/GeoServerExploit](https://github.com/whitebear-ch/GeoServerExploit)
 - [bmth666/GeoServer-Tools-CVE-2024-36401](https://github.com/bmth666/GeoServer-Tools-CVE-2024-36401)
 - [amoy6228/CVE-2024-36401_Geoserver_RCE_POC](https://github.com/amoy6228/CVE-2024-36401_Geoserver_RCE_POC)
-- [holokitty/Exploit-CVE-2024-36401](https://github.com/holokitty/Exploit-CVE-2024-36401)
+- [reveravip/Exploit-CVE-2024-36401](https://github.com/reveravip/Exploit-CVE-2024-36401)
 - [URJACK2025/CVE-2024-36401](https://github.com/URJACK2025/CVE-2024-36401)
 - [mantanhacker/CVE-2024-36401-MASS](https://github.com/mantanhacker/CVE-2024-36401-MASS)
 
@@ -18703,6 +18708,7 @@
 - [r007sec/CVE-2024-53677](https://github.com/r007sec/CVE-2024-53677)
 - [Cythonic1/CVE-2024-53677-POC](https://github.com/Cythonic1/CVE-2024-53677-POC)
 - [seoyoung-kang/CVE-2024-53677](https://github.com/seoyoung-kang/CVE-2024-53677)
+- [MartinxMax/CVE-2024-53677](https://github.com/MartinxMax/CVE-2024-53677)
 
 ### CVE-2024-53691 (2024-12-06)
 
@@ -18977,7 +18983,11 @@
 ### CVE-2024-55347
 - [sahil3276/CVE-2024-55347](https://github.com/sahil3276/CVE-2024-55347)
 
-### CVE-2024-55374
+### CVE-2024-55374 (2026-01-02)
+
+<code>REDCap 14.3.13 allows an attacker to enumerate usernames due to an observable discrepancy between login attempts.
+</code>
+
 - [T3slaa/CVE-2024-55374](https://github.com/T3slaa/CVE-2024-55374)
 
 ### CVE-2024-55457 (2025-02-20)
@@ -34730,8 +34740,8 @@
 <code>BitLocker Security Feature Bypass Vulnerability
 </code>
 
-- [halsey51013/UpdateWindowsRE-CVE-2022-41099](https://github.com/halsey51013/UpdateWindowsRE-CVE-2022-41099)
 - [o0MattE0o/CVE-2022-41099-Fix](https://github.com/o0MattE0o/CVE-2022-41099-Fix)
+- [tylermontneyacc/UpdateWindowsRE-CVE-2022-41099](https://github.com/tylermontneyacc/UpdateWindowsRE-CVE-2022-41099)
 - [g-gill24/WinRE-Patch](https://github.com/g-gill24/WinRE-Patch)
 - [dsn1321/KB5025175-CVE-2022-41099](https://github.com/dsn1321/KB5025175-CVE-2022-41099)
 
@@ -42110,7 +42120,6 @@
 - [KeysAU/Get-log4j-Windows.ps1](https://github.com/KeysAU/Get-log4j-Windows.ps1)
 - [kubearmor/log4j-CVE-2021-44228](https://github.com/kubearmor/log4j-CVE-2021-44228)
 - [jyotisahu98/logpresso-CVE-2021-44228-Scanner](https://github.com/jyotisahu98/logpresso-CVE-2021-44228-Scanner)
-- [gitlab-de/log4j-resources](https://github.com/gitlab-de/log4j-resources)
 - [redhuntlabs/Log4JHunt](https://github.com/redhuntlabs/Log4JHunt)
 - [mss/log4shell-hotfix-side-effect](https://github.com/mss/log4shell-hotfix-side-effect)
 - [MeterianHQ/log4j-vuln-coverage-check](https://github.com/MeterianHQ/log4j-vuln-coverage-check)
@@ -46413,7 +46422,6 @@
 - [zesnd/CVE-2020-14882-POC](https://github.com/zesnd/CVE-2020-14882-POC)
 - [AleksaZatezalo/CVE-2020-14882](https://github.com/AleksaZatezalo/CVE-2020-14882)
 - [KKC73/weblogic-cve-2020-14882](https://github.com/KKC73/weblogic-cve-2020-14882)
-- [AshrafZaryouh/CVE-2020-14882](https://github.com/AshrafZaryouh/CVE-2020-14882)
 - [b1g-b33f/CVE-2020-14882](https://github.com/b1g-b33f/CVE-2020-14882)
 
 ### CVE-2020-14883 (2020-10-21)
@@ -63035,6 +63043,7 @@
 - [Jimmy01240397/CVE-2012-1823-Analyze](https://github.com/Jimmy01240397/CVE-2012-1823-Analyze)
 - [Dmitri131313/CVE-2012-1823-exploit-for-https-user-password-web](https://github.com/Dmitri131313/CVE-2012-1823-exploit-for-https-user-password-web)
 - [nulltrace1336/PHP-CGI-Argument-Injection-Exploit](https://github.com/nulltrace1336/PHP-CGI-Argument-Injection-Exploit)
+- [waburig/Open-Worldwide-Application-Security-Project-OWASP-](https://github.com/waburig/Open-Worldwide-Application-Security-Project-OWASP-)
 
 ### CVE-2012-1831 (2012-07-05)
 
