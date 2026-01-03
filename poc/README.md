@@ -1660,6 +1660,7 @@
 <code>A vulnerability was identified in Docker Desktop that allows local running Linux containers to access the Docker Engine API via the configured Docker subnet, at 192.168.65.7:2375 by default. This vulnerability occurs with or without Enhanced Container Isolation (ECI) enabled, and with or without the &quot;Expose daemon on tcp://localhost:2375 without TLS&quot; option enabled.\nThis can lead to execution of a wide range of privileged commands to the engine API, including controlling other containers, creating new ones, managing images etc. In some circumstances (e.g. Docker Desktop for Windows with WSL backend) it also allows mounting the host drive with the same privileges as the user running Docker Desktop.
 </code>
 
+- [KvzinNcpx7/CVE-2025-9074_DAEMON_KILLER](https://github.com/KvzinNcpx7/CVE-2025-9074_DAEMON_KILLER)
 - [zenzue/CVE-2025-9074](https://github.com/zenzue/CVE-2025-9074)
 - [j3r1ch0123/CVE-2025-9074](https://github.com/j3r1ch0123/CVE-2025-9074)
 - [pucagit/CVE-2025-9074](https://github.com/pucagit/CVE-2025-9074)
@@ -1671,6 +1672,7 @@
 - [fsoc-ghost-0x/CVE-2025-9074_DAEMON_KILLER](https://github.com/fsoc-ghost-0x/CVE-2025-9074_DAEMON_KILLER)
 - [zaydbf/CVE-2025-9074-Poc](https://github.com/zaydbf/CVE-2025-9074-Poc)
 - [Shaoshi17/CVE-2025-9074-Docker-Exploit](https://github.com/Shaoshi17/CVE-2025-9074-Docker-Exploit)
+- [KvzinNcpx7/kvzinncpx7.github.io](https://github.com/KvzinNcpx7/kvzinncpx7.github.io)
 
 ### CVE-2025-9090 (2025-08-17)
 
@@ -5011,6 +5013,13 @@
 </code>
 
 - [calysteon/CVE-2025-43504](https://github.com/calysteon/CVE-2025-43504)
+
+### CVE-2025-43529 (2025-12-17)
+
+<code>A use-after-free issue was addressed with improved memory management. This issue is fixed in watchOS 26.2, Safari 26.2, iOS 18.7.3 and iPadOS 18.7.3, iOS 26.2 and iPadOS 26.2, macOS Tahoe 26.2, visionOS 26.2, tvOS 26.2. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 26. CVE-2025-14174 was also issued in response to this report.
+</code>
+
+- [zeroxjf/CVE-2025-43529-analysis](https://github.com/zeroxjf/CVE-2025-43529-analysis)
 
 ### CVE-2025-43541 (2025-12-17)
 
@@ -28080,6 +28089,13 @@
 </code>
 
 - [d0rb/CVE-2023-49606](https://github.com/d0rb/CVE-2023-49606)
+
+### CVE-2023-49785 (2024-03-11)
+
+<code>NextChat, also known as ChatGPT-Next-Web, is a cross-platform chat user interface for use with ChatGPT. Versions 2.11.2 and prior are vulnerable to server-side request forgery and cross-site scripting. This vulnerability enables read access to internal HTTP endpoints but also write access using HTTP POST, PUT, and other methods. Attackers can also use this vulnerability to mask their source IP by forwarding malicious traffic intended for other Internet targets through these open proxies. As of time of publication, no patch is available, but other mitigation strategies are available. Users may avoid exposing the application to the public internet or, if exposing the application to the internet, ensure it is an isolated network with no access to any other internal resources.\n
+</code>
+
+- [hyunnna/NextChat_SSRF_CVE-2023-49785](https://github.com/hyunnna/NextChat_SSRF_CVE-2023-49785)
 
 ### CVE-2023-49950 (2024-02-03)
 
