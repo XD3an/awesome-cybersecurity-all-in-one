@@ -18,6 +18,13 @@
 
 - [osmancanvural/CVE-2026-21437](https://github.com/osmancanvural/CVE-2026-21437)
 
+### CVE-2026-21450 (2026-01-02)
+
+<code>Bagisto is an open source laravel eCommerce platform. Versions prior to 2.3.10 are vulnerable to server-side template injection via type parameter, which can lead to remote code execution or another exploitation. Version 2.3.10 fixes the issue.
+</code>
+
+- [Ashwesker/Ashwesker-CVE-2026-21450](https://github.com/Ashwesker/Ashwesker-CVE-2026-21450)
+
 
 ## 2025
 ### CVE-2025-0054 (2025-02-11)
@@ -59,6 +66,13 @@
 - [INTELEON404/CVE-2025-0133](https://github.com/INTELEON404/CVE-2025-0133)
 - [shawarkhanethicalhacker/CVE-2025-0133-exploit](https://github.com/shawarkhanethicalhacker/CVE-2025-0133-exploit)
 - [adhamelhansye/CVE-2025-0133](https://github.com/adhamelhansye/CVE-2025-0133)
+
+### CVE-2025-0184 (2025-03-20)
+
+<code>A Server-Side Request Forgery (SSRF) vulnerability was identified in langgenius/dify version 0.10.2. The vulnerability occurs in the 'Create Knowledge' section when uploading DOCX files. If an external relationship exists in the DOCX file, the reltype value is requested as a URL using the 'requests' module instead of the 'ssrf_proxy', leading to an SSRF vulnerability. This issue was fixed in version 0.11.0.
+</code>
+
+- [m0d0ri205/wargame_Re-LS](https://github.com/m0d0ri205/wargame_Re-LS)
 
 ### CVE-2025-0282 (2025-01-08)
 
@@ -281,6 +295,13 @@
 
 - [shybu9/poc_CVE-2025-1716](https://github.com/shybu9/poc_CVE-2025-1716)
 - [0xDaeras/POC_CVE-2025-1716](https://github.com/0xDaeras/POC_CVE-2025-1716)
+
+### CVE-2025-1868 (2025-03-03)
+
+<code>Vulnerability of unauthorized exposure of confidential information affecting Advanced IP Scanner and Advanced Port Scanner. It occurs when these applications initiate a network scan, inadvertently sending the NTLM hash of the user performing the scan. This vulnerability can be exploited by intercepting network traffic to a legitimate server or by setting up a fake server, in both local and remote scenarios. This exposure is relevant for both HTTP/HTTPS and SMB protocols.
+</code>
+
+- [itres-labs/CVE-2025-1868](https://github.com/itres-labs/CVE-2025-1868)
 
 ### CVE-2025-1913 (2025-03-26)
 
@@ -1201,6 +1222,7 @@
 - [AnotherSec/CVE-2025-6440](https://github.com/AnotherSec/CVE-2025-6440)
 - [m2hcz/CVE-2025-6440-Poc-Exploit](https://github.com/m2hcz/CVE-2025-6440-Poc-Exploit)
 - [smuft1707/CVE-2025-6440](https://github.com/smuft1707/CVE-2025-6440)
+- [rimbadirgantara/CVE-2025-6440](https://github.com/rimbadirgantara/CVE-2025-6440)
 
 ### CVE-2025-6514 (2025-07-09)
 
@@ -1292,8 +1314,6 @@
 - [yukinime/CVE-2025-6934](https://github.com/yukinime/CVE-2025-6934)
 - [AnotherSec/CVE-2025-6934](https://github.com/AnotherSec/CVE-2025-6934)
 - [Rosemary1337/CVE-2025-6934](https://github.com/Rosemary1337/CVE-2025-6934)
-- [luxzy28/CVE-2025-6934](https://github.com/luxzy28/CVE-2025-6934)
-- [luxzy28/CVE-2025-6934.yaml](https://github.com/luxzy28/CVE-2025-6934.yaml)
 
 ### CVE-2025-6970 (2025-07-09)
 
@@ -4771,6 +4791,7 @@
 </code>
 
 - [farazsth98/poc-CVE-2025-38352](https://github.com/farazsth98/poc-CVE-2025-38352)
+- [farazsth98/chronomaly](https://github.com/farazsth98/chronomaly)
 
 ### CVE-2025-38501 (2025-08-16)
 
@@ -6726,6 +6747,13 @@
 
 - [AdityaBhatt3010/CVE-2025-54794-Hijacking-Claude-AI-with-a-Prompt-Injection-The-Jailbreak-That-Talked-Back](https://github.com/AdityaBhatt3010/CVE-2025-54794-Hijacking-Claude-AI-with-a-Prompt-Injection-The-Jailbreak-That-Talked-Back)
 
+### CVE-2025-54795 (2025-08-05)
+
+<code>Claude Code is an agentic coding tool. In versions below 1.0.20, an error in command parsing makes it possible to bypass the Claude Code confirmation prompt to trigger execution of an untrusted command. Reliably exploiting this requires the ability to add untrusted content into a Claude Code context window. This is fixed in version 1.0.20.
+</code>
+
+- [dial481/ralph](https://github.com/dial481/ralph)
+
 ### CVE-2025-54887 (2025-08-08)
 
 <code>jwe is a Ruby implementation of the RFC 7516 JSON Web Encryption (JWE) standard. In versions 1.1.0 and below, authentication tags of encrypted JWEs can be brute forced, which may result in loss of confidentiality for those JWEs and provide ways to craft arbitrary JWEs. This puts users at risk because JWEs can be modified to decrypt to an arbitrary value, decrypted by observing parsing differences and the GCM internal GHASH key can be recovered. Users are affected by this vulnerability even if they do not use an AES-GCM encryption algorithm for their JWEs. As the GHASH key may have been leaked, users must rotate the encryption keys after upgrading. This issue is fixed in version 1.1.1.
@@ -7162,6 +7190,8 @@
 - [ghostn4444/CVE-2025-55182](https://github.com/ghostn4444/CVE-2025-55182)
 - [HackIndex-io/React2Shell-CVE-2025-55182](https://github.com/HackIndex-io/React2Shell-CVE-2025-55182)
 - [vrx7men2/RSC-Detect-CVE-2025-55182](https://github.com/vrx7men2/RSC-Detect-CVE-2025-55182)
+- [rahuulmiishra/react2shell-CVE-2025-55182](https://github.com/rahuulmiishra/react2shell-CVE-2025-55182)
+- [m3ngx1ng/CVE-2025-55182-GUI](https://github.com/m3ngx1ng/CVE-2025-55182-GUI)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -7879,7 +7909,9 @@
 <code>FreePBX Endpoint Manager is a module for managing telephony endpoints in FreePBX systems. In versions prior to 16.0.92 for FreePBX 16 and versions prior to 17.0.6 for FreePBX 17, the Endpoint Manager module contains authenticated SQL injection vulnerabilities affecting multiple parameters in the basestation, model, firmware, and custom extension configuration functionality areas. Authentication with a known username is required to exploit these vulnerabilities. Successful exploitation allows authenticated users to execute arbitrary SQL queries against the database, potentially enabling access to sensitive data or modification of database contents. This issue has been patched in version 16.0.92 for FreePBX 16 and version 17.0.6 for FreePBX 17.
 </code>
 
+- [jhow019/FreePBX-Vulns-December-25](https://github.com/jhow019/FreePBX-Vulns-December-25)
 - [rxerium/FreePBX-Vulns-December-25](https://github.com/rxerium/FreePBX-Vulns-December-25)
+- [jhow019/jhow019.github.io](https://github.com/jhow019/jhow019.github.io)
 
 ### CVE-2025-61757 (2025-10-21)
 
@@ -8779,6 +8811,7 @@
 - [gagaltotal/n8n-cve-2025-68613](https://github.com/gagaltotal/n8n-cve-2025-68613)
 - [cv-sai-kamesh/n8n-CVE-2025-68613](https://github.com/cv-sai-kamesh/n8n-CVE-2025-68613)
 - [ahmedshamsddin/n8n-RCE-CVE-2025-68613](https://github.com/ahmedshamsddin/n8n-RCE-CVE-2025-68613)
+- [TheInterception/n8n_CVE-2025-68613_exploit_payloads](https://github.com/TheInterception/n8n_CVE-2025-68613_exploit_payloads)
 
 ### CVE-2025-68615 (2025-12-22)
 
@@ -15477,13 +15510,6 @@
 
 - [dovankha/CVE-2024-35469](https://github.com/dovankha/CVE-2024-35469)
 
-### CVE-2024-35475 (2024-05-22)
-
-<code>A Cross-Site Request Forgery (CSRF) vulnerability was discovered in OpenKM Community Edition on or before version 6.3.12. The vulnerability exists in /admin/DatabaseQuery, which allows an attacker to manipulate a victim with administrative privileges to execute arbitrary SQL commands.
-</code>
-
-- [carsonchan12345/CVE-2024-35475](https://github.com/carsonchan12345/CVE-2024-35475)
-
 ### CVE-2024-35511 (2024-05-28)
 
 <code>phpgurukul Men Salon Management System v2.0 is vulnerable to SQL Injection via the &quot;username&quot; parameter of /msms/admin/index.php.
@@ -16315,6 +16341,7 @@
 
 - [Abdurahmon3236/CVE-2024-40110](https://github.com/Abdurahmon3236/CVE-2024-40110)
 - [thiagosmith/CVE-2024-40110](https://github.com/thiagosmith/CVE-2024-40110)
+- [AnGrY-Althaf/CVE-2024-40110](https://github.com/AnGrY-Althaf/CVE-2024-40110)
 
 ### CVE-2024-40111 (2024-08-23)
 
@@ -39261,7 +39288,7 @@
 <code>A use after free issue was addressed with improved memory management. This issue is fixed in Safari 15, tvOS 15, watchOS 8, iOS 15 and iPadOS 15. Processing maliciously crafted web content may lead to arbitrary code execution.
 </code>
 
-- [seregonwar/CVE-2021-30809-UAF](https://github.com/seregonwar/CVE-2021-30809-UAF)
+- [seregonwar/CVE-2021-30809-OOM](https://github.com/seregonwar/CVE-2021-30809-OOM)
 
 ### CVE-2021-30858 (2021-08-24)
 
@@ -50114,7 +50141,6 @@
 - [Boon-Rekcah/CMS-Made-Simple-2.2.9-CVE-2019-9053](https://github.com/Boon-Rekcah/CMS-Made-Simple-2.2.9-CVE-2019-9053)
 - [Slayerma/-CVE-2019-9053](https://github.com/Slayerma/-CVE-2019-9053)
 - [CaelumIsMe/CVE-2019-9053-POC](https://github.com/CaelumIsMe/CVE-2019-9053-POC)
-- [6iroc/CVE-2019-9053](https://github.com/6iroc/CVE-2019-9053)
 - [JagdeepSinghCeh/cms-made-simple-python3](https://github.com/JagdeepSinghCeh/cms-made-simple-python3)
 - [Perseus99999/CVE-2019-9053-working-](https://github.com/Perseus99999/CVE-2019-9053-working-)
 - [Praditha29/Simple-CTF-THM-Writeup](https://github.com/Praditha29/Simple-CTF-THM-Writeup)
@@ -50181,7 +50207,6 @@
 
 - [francozappa/knob](https://github.com/francozappa/knob)
 - [coffeeesd/knob](https://github.com/coffeeesd/knob)
-- [BrainsBook/knob](https://github.com/BrainsBook/knob)
 
 ### CVE-2019-9511 (2019-08-13)
 
@@ -55551,7 +55576,7 @@
 <code>upc.exe in Ubisoft Uplay Desktop Client versions 63.0.5699.0 allows remote attackers to execute arbitrary code. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the processing of URI handlers. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code under the context of the current process.
 </code>
 
-- [JacksonKuo/ubisoft-uplay-desktop-client-63.0.5699.0](https://github.com/JacksonKuo/ubisoft-uplay-desktop-client-63.0.5699.0)
+- [anon135792408/Ubisoft-Uplay-Desktop-Client-63.0.5699.0](https://github.com/anon135792408/Ubisoft-Uplay-Desktop-Client-63.0.5699.0)
 
 ### CVE-2018-15835 (2018-11-30)
 
