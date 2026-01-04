@@ -18,6 +18,13 @@
 
 - [osmancanvural/CVE-2026-21437](https://github.com/osmancanvural/CVE-2026-21437)
 
+### CVE-2026-21445 (2026-01-02)
+
+<code>Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to version 1.7.0.dev45, multiple critical API endpoints in Langflow are missing authentication controls. The issue allows any unauthenticated user to access sensitive user conversation data, transaction histories, and perform destructive operations including message deletion. This affects endpoints handling personal data and system operations that should require proper authorization. Version 1.7.0.dev45 contains a patch.
+</code>
+
+- [chinaxploiter/CVE-2026-21445-PoC](https://github.com/chinaxploiter/CVE-2026-21445-PoC)
+
 ### CVE-2026-21450 (2026-01-02)
 
 <code>Bagisto is an open source laravel eCommerce platform. Versions prior to 2.3.10 are vulnerable to server-side template injection via type parameter, which can lead to remote code execution or another exploitation. Version 2.3.10 fixes the issue.
@@ -3491,7 +3498,7 @@
 <code>Laravel is a web application framework. When using wildcard validation to validate a given file or image field (`files.*`), a user-crafted malicious request could potentially bypass the validation rules. This vulnerability is fixed in 11.44.1 and 12.1.1.
 </code>
 
-- [joaovicdev/POC-CVE-2025-27515](https://github.com/joaovicdev/POC-CVE-2025-27515)
+- [joaovicdev/EXPLOIT-CVE-2025-27515](https://github.com/joaovicdev/EXPLOIT-CVE-2025-27515)
 
 ### CVE-2025-27519 (2025-03-07)
 
@@ -7192,6 +7199,7 @@
 - [vrx7men2/RSC-Detect-CVE-2025-55182](https://github.com/vrx7men2/RSC-Detect-CVE-2025-55182)
 - [rahuulmiishra/react2shell-CVE-2025-55182](https://github.com/rahuulmiishra/react2shell-CVE-2025-55182)
 - [m3ngx1ng/CVE-2025-55182-GUI](https://github.com/m3ngx1ng/CVE-2025-55182-GUI)
+- [joaovicdev/EXPLOIT-CVE-2025-55182](https://github.com/joaovicdev/EXPLOIT-CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -19891,7 +19899,6 @@
 - [zer0-dave/CVE-2023-1545-POC](https://github.com/zer0-dave/CVE-2023-1545-POC)
 - [sternstundes/CVE-2023-1545-POC-python](https://github.com/sternstundes/CVE-2023-1545-POC-python)
 - [gunzf0x/CVE-2023-1545](https://github.com/gunzf0x/CVE-2023-1545)
-- [lineeralgebra/CVE-2023-1545-POC](https://github.com/lineeralgebra/CVE-2023-1545-POC)
 
 ### CVE-2023-1665 (2023-03-27)
 
@@ -64212,6 +64219,7 @@
 - [nika0x38/CVE-2007-2447](https://github.com/nika0x38/CVE-2007-2447)
 - [SeifEldienAhmad/Penetration-Testing-on-Metasploitable2](https://github.com/SeifEldienAhmad/Penetration-Testing-on-Metasploitable2)
 - [nulltrace1336/Samba-Exploit-CVE-2007-2447](https://github.com/nulltrace1336/Samba-Exploit-CVE-2007-2447)
+- [abdulsaabir/CVE-2007-2447](https://github.com/abdulsaabir/CVE-2007-2447)
 
 ### CVE-2007-3280 (2007-06-19)
 
