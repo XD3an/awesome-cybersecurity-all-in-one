@@ -32,6 +32,13 @@
 
 - [Ashwesker/Ashwesker-CVE-2026-21450](https://github.com/Ashwesker/Ashwesker-CVE-2026-21450)
 
+### CVE-2026-21451 (2026-01-02)
+
+<code>Bagisto is an open source laravel eCommerce platform. A stored Cross-Site Scripting (XSS) vulnerability exists in Bagisto prior to version 2.3.10 within the CMS page editor. Although the platform normally attempts to sanitize `&lt;script&gt;` tags, the filtering can be bypassed by manipulating the raw HTTP POST request before submission. As a result, arbitrary JavaScript can be stored in the CMS content and executed whenever the page is viewed or edited. This exposes administrators to a high-severity risk, including complete account takeover, backend hijacking, and malicious script execution. Version 2.3.10 fixes the issue.
+</code>
+
+- [Ashwesker/Ashwesker-CVE-2026-21451](https://github.com/Ashwesker/Ashwesker-CVE-2026-21451)
+
 
 ## 2025
 ### CVE-2025-0054 (2025-02-11)
@@ -362,6 +369,7 @@
 - [datagoboom/CVE-2025-2011](https://github.com/datagoboom/CVE-2025-2011)
 - [X3RX3SSec/CVE-2025-2011](https://github.com/X3RX3SSec/CVE-2025-2011)
 - [Ashwesker/Ashwesker-CVE-2025-2011](https://github.com/Ashwesker/Ashwesker-CVE-2025-2011)
+- [zsy107u/CVE-2025-2011-poc](https://github.com/zsy107u/CVE-2025-2011-poc)
 
 ### CVE-2025-2082 (2025-04-30)
 
@@ -1700,6 +1708,7 @@
 - [zaydbf/CVE-2025-9074-Poc](https://github.com/zaydbf/CVE-2025-9074-Poc)
 - [Shaoshi17/CVE-2025-9074-Docker-Exploit](https://github.com/Shaoshi17/CVE-2025-9074-Docker-Exploit)
 - [KvzinNcpx7/kvzinncpx7.github.io](https://github.com/KvzinNcpx7/kvzinncpx7.github.io)
+- [x0da6h/POC-for-CVE-2025-9074](https://github.com/x0da6h/POC-for-CVE-2025-9074)
 
 ### CVE-2025-9090 (2025-08-17)
 
@@ -2247,6 +2256,10 @@
 - [Systemhaus-Schulz/MongoBleed-CVE-2025-14847](https://github.com/Systemhaus-Schulz/MongoBleed-CVE-2025-14847)
 - [demetriusford/mongobleed](https://github.com/demetriusford/mongobleed)
 - [ElJoamy/MongoBleed-exploit](https://github.com/ElJoamy/MongoBleed-exploit)
+- [keraattin/Mongobleed-Detector-CVE-2025-14847](https://github.com/keraattin/Mongobleed-Detector-CVE-2025-14847)
+
+### CVE-2025-14857
+- [Ermensonx/CVE-2025-14857-MongoBleed](https://github.com/Ermensonx/CVE-2025-14857-MongoBleed)
 
 ### CVE-2025-15177 (2025-12-29)
 
@@ -7200,6 +7213,8 @@
 - [rahuulmiishra/react2shell-CVE-2025-55182](https://github.com/rahuulmiishra/react2shell-CVE-2025-55182)
 - [m3ngx1ng/CVE-2025-55182-GUI](https://github.com/m3ngx1ng/CVE-2025-55182-GUI)
 - [joaovicdev/EXPLOIT-CVE-2025-55182](https://github.com/joaovicdev/EXPLOIT-CVE-2025-55182)
+- [AdityaBhatt3010/React2Shell-CVE-2025-55182](https://github.com/AdityaBhatt3010/React2Shell-CVE-2025-55182)
+- [gahoole77/gahoole77.github.io](https://github.com/gahoole77/gahoole77.github.io)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -8851,6 +8866,13 @@
 
 - [Nxploited/CVE-2025-68860](https://github.com/Nxploited/CVE-2025-68860)
 
+### CVE-2025-68926 (2025-12-30)
+
+<code>RustFS is a distributed object storage system built in Rust. In versions prior to 1.0.0-alpha.77, RustFS implements gRPC authentication using a hardcoded static token `&quot;rustfs rpc&quot;` that is publicly exposed in the source code repository, hardcoded on both client and server sides, non-configurable with no mechanism for token rotation, and universally valid across all RustFS deployments. Any attacker with network access to the gRPC port can authenticate using this publicly known token and execute privileged operations including data destruction, policy manipulation, and cluster configuration changes. Version 1.0.0-alpha.77 contains a fix for the issue.
+</code>
+
+- [Chocapikk/CVE-2025-68926](https://github.com/Chocapikk/CVE-2025-68926)
+
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
 
@@ -9963,13 +9985,6 @@
 
 - [Ch4os1/CVE-2024-4157-SSRF-RCE-Reverse-Shell](https://github.com/Ch4os1/CVE-2024-4157-SSRF-RCE-Reverse-Shell)
 
-### CVE-2024-4231 (2024-05-10)
-
-<code>This vulnerability exists in Digisol Router (DG-GR1321: Hardware version 3.7L;  Firmware version : v3.2.02) due to presence of root terminal access on a serial interface without proper access control. An attacker with physical access could exploit this by identifying UART pins and accessing the root shell on the vulnerable system.\n\nSuccessful exploitation of this vulnerability could allow the attacker to access the sensitive information on the targeted system.
-</code>
-
-- [Redfox-Security/Digisol-DG-GR1321-s-Improper-Access-Control-CVE-2024-4231](https://github.com/Redfox-Security/Digisol-DG-GR1321-s-Improper-Access-Control-CVE-2024-4231)
-
 ### CVE-2024-4232 (2024-05-10)
 
 <code>This vulnerability exists in Digisol Router (DG-GR1321: Hardware version 3.7L;  Firmware version : v3.2.02) due to lack of encryption or hashing in storing of passwords within the router's firmware/ database. An attacker with physical access could exploit this by extracting the firmware and reverse engineer the binary data to access the plaintext passwords on the vulnerable system.\n\nSuccessful exploitation of this vulnerability could allow the attacker to gain unauthorized access to the targeted system.
@@ -10766,7 +10781,7 @@
 <code>A flaw was found in openshift/builder. This vulnerability allows command injection via path traversal, where a malicious user can execute arbitrary commands on the OpenShift node running the builder container. When using the “Docker” strategy, executable files inside the privileged build container can be overridden using the `spec.source.secrets.secret.destinationDir` attribute of the `BuildConfig` definition. An attacker running code in a privileged container could escalate their permissions on the node running the container.
 </code>
 
-- [pwnc4t/cve-2024-7387](https://github.com/pwnc4t/cve-2024-7387)
+- [tevsho/cve-2024-7387](https://github.com/tevsho/cve-2024-7387)
 
 ### CVE-2024-7399 (2024-08-09)
 
@@ -13472,7 +13487,6 @@
 - [Rug4lo/CVE-2024-24919-Exploit](https://github.com/Rug4lo/CVE-2024-24919-Exploit)
 - [0nin0hanz0/CVE-2024-24919-PoC](https://github.com/0nin0hanz0/CVE-2024-24919-PoC)
 - [GuayoyoCyber/CVE-2024-24919](https://github.com/GuayoyoCyber/CVE-2024-24919)
-- [0xans/CVE-2024-24919](https://github.com/0xans/CVE-2024-24919)
 - [Tim-Hoekstra/CVE-2024-24919](https://github.com/Tim-Hoekstra/CVE-2024-24919)
 - [starlox0/CVE-2024-24919-POC](https://github.com/starlox0/CVE-2024-24919-POC)
 - [nullcult/CVE-2024-24919-Exploit](https://github.com/nullcult/CVE-2024-24919-Exploit)
@@ -13677,6 +13691,7 @@
 - [DedsecTeam-BlackHat/Poleposph](https://github.com/DedsecTeam-BlackHat/Poleposph)
 - [r0otk3r/CVE-2024-25600](https://github.com/r0otk3r/CVE-2024-25600)
 - [ranjithxploit/CVE-2024-25600](https://github.com/ranjithxploit/CVE-2024-25600)
+- [h0w1tzxr/TryHack3M-Bricks-Heist](https://github.com/h0w1tzxr/TryHack3M-Bricks-Heist)
 
 ### CVE-2024-25641 (2024-05-13)
 
@@ -15687,6 +15702,13 @@
 
 - [Kronk-imp/CVE-2024-36971](https://github.com/Kronk-imp/CVE-2024-36971)
 
+### CVE-2024-36985 (2024-07-01)
+
+<code>In Splunk Enterprise versions below 9.2.2, 9.1.5, and 9.0.10, a low-privileged user that does not hold the admin or power Splunk roles could cause a Remote Code Execution through an external lookup that references the “splunk_archiver“ application.
+</code>
+
+- [LittleSuRii/CVE-2024-36985](https://github.com/LittleSuRii/CVE-2024-36985)
+
 ### CVE-2024-36991 (2024-07-01)
 
 <code>In Splunk Enterprise on Windows versions below 9.2.2, 9.1.5, and 9.0.10, an attacker could perform a path traversal on the /modules/messaging/ endpoint in Splunk Enterprise on Windows. This vulnerability should only affect Splunk Enterprise on Windows.
@@ -17351,7 +17373,7 @@
 <code>A flaw was found in OpenShift. This issue occurs due to the misuse of elevated privileges in the OpenShift Container Platform's build process. During the build initialization step, the git-clone container is run with a privileged security context, allowing unrestricted access to the node. An attacker with developer-level access can provide a crafted .gitconfig file containing commands executed during the cloning process, leading to arbitrary command execution on the worker node. An attacker running code in a privileged container could escalate their permissions on the node running the container.
 </code>
 
-- [pwnc4t/cve-2024-45496](https://github.com/pwnc4t/cve-2024-45496)
+- [tevsho/cve-2024-45496](https://github.com/tevsho/cve-2024-45496)
 
 ### CVE-2024-45507 (2024-09-04)
 
@@ -23072,6 +23094,7 @@
 </code>
 
 - [ntfargo/uaf-2023-28205](https://github.com/ntfargo/uaf-2023-28205)
+- [seregonwar/uaf-2023-28205](https://github.com/seregonwar/uaf-2023-28205)
 
 ### CVE-2023-28206 (2023-04-10)
 
@@ -27538,6 +27561,7 @@
 - [CCIEVoice2009/CVE-2023-46604](https://github.com/CCIEVoice2009/CVE-2023-46604)
 - [vaishnavucv/Project-Vuln-Detection-N-Mitigation_101](https://github.com/vaishnavucv/Project-Vuln-Detection-N-Mitigation_101)
 - [pavanaa4k/CVE-2023-46604-LAB](https://github.com/pavanaa4k/CVE-2023-46604-LAB)
+- [RockyDesigne/SSP-Assignment-3-RCEYouLater](https://github.com/RockyDesigne/SSP-Assignment-3-RCEYouLater)
 
 ### CVE-2023-46615 (2024-02-12)
 
@@ -51378,6 +51402,13 @@
 
 - [parallelbeings/CVE-2019-14079](https://github.com/parallelbeings/CVE-2019-14079)
 
+### CVE-2019-14206 (2019-07-21)
+
+<code>An Arbitrary File Deletion vulnerability in the Nevma Adaptive Images plugin before 0.6.67 for WordPress allows remote attackers to delete arbitrary files via the $REQUEST['adaptive-images-settings'] parameter in adaptive-images-script.php.
+</code>
+
+- [developerfred/cve-2019-14206-poc](https://github.com/developerfred/cve-2019-14206-poc)
+
 ### CVE-2019-14220 (2019-09-24)
 
 <code>An issue was discovered in BlueStacks 4.110 and below on macOS and on 4.120 and below on Windows. BlueStacks employs Android running in a virtual machine (VM) to enable Android apps to run on Windows or MacOS. Bug is in a local arbitrary file read through a system service call. The impacted method runs with System admin privilege and if given the file name as parameter returns you the content of file. A malicious app using the affected method can then read the content of any system file which it is not authorized to read
@@ -57248,6 +57279,7 @@
 - [kaylertee/Computer-Security-Equifax-2017](https://github.com/kaylertee/Computer-Security-Equifax-2017)
 - [FozilCV/Apache-Struts2-CVE-2017-5638](https://github.com/FozilCV/Apache-Struts2-CVE-2017-5638)
 - [ACharaf06/CVE-2017-5638-Attack-and-Defense](https://github.com/ACharaf06/CVE-2017-5638-Attack-and-Defense)
+- [louislafosse/CVE-2017-5638-assignement](https://github.com/louislafosse/CVE-2017-5638-assignement)
 
 ### CVE-2017-5645 (2017-04-17)
 
@@ -58073,6 +58105,7 @@
 - [0xd3vil/CVE-2017-9805-Exploit](https://github.com/0xd3vil/CVE-2017-9805-Exploit)
 - [Shakun8/CVE-2017-9805](https://github.com/Shakun8/CVE-2017-9805)
 - [NoSpaceAvailable/CVE-2017-9805_example_build](https://github.com/NoSpaceAvailable/CVE-2017-9805_example_build)
+- [Fl5xia/CVE-2017-9805](https://github.com/Fl5xia/CVE-2017-9805)
 
 ### CVE-2017-9822 (2017-07-20)
 
