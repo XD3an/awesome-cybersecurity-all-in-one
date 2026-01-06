@@ -18,6 +18,14 @@
 
 - [osmancanvural/CVE-2026-21437](https://github.com/osmancanvural/CVE-2026-21437)
 
+### CVE-2026-21440 (2026-01-02)
+
+<code>AdonisJS is a TypeScript-first web framework. A Path Traversal vulnerability in AdonisJS multipart file handling may allow a remote attacker to write arbitrary files to arbitrary locations on the server filesystem. This impacts @adonisjs/bodyparser through version 10.1.1 and 11.x prerelease versions prior to 11.0.0-next.6. This issue has been patched in @adonisjs/bodyparser versions 10.1.2 and 11.0.0-next.6.
+</code>
+
+- [Ashwesker/Ashwesker-CVE-2026-21440](https://github.com/Ashwesker/Ashwesker-CVE-2026-21440)
+- [you-ssef9/CVE-2026-21440](https://github.com/you-ssef9/CVE-2026-21440)
+
 ### CVE-2026-21445 (2026-01-02)
 
 <code>Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to version 1.7.0.dev45, multiple critical API endpoints in Langflow are missing authentication controls. The issue allows any unauthenticated user to access sensitive user conversation data, transaction histories, and perform destructive operations including message deletion. This affects endpoints handling personal data and system operations that should require proper authorization. Version 1.7.0.dev45 contains a patch.
@@ -1982,6 +1990,13 @@
 
 - [SnailSploit/CVE-2025-12163](https://github.com/SnailSploit/CVE-2025-12163)
 
+### CVE-2025-12674 (2025-11-05)
+
+<code>The KiotViet Sync plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the create_media() function in all versions up to, and including, 1.8.5. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
+</code>
+
+- [Nxploited/CVE-2025-12674](https://github.com/Nxploited/CVE-2025-12674)
+
 ### CVE-2025-12735 (2025-11-05)
 
 <code>The expr-eval library is a JavaScript expression parser and evaluator designed to safely evaluate mathematical expressions with user-defined variables. However, due to insufficient input validation, an attacker can pass a crafted context object or use MEMBER of the context object into the evaluate() function and trigger arbitrary code execution.
@@ -2081,6 +2096,7 @@
 </code>
 
 - [d0n601/CVE-2025-13390](https://github.com/d0n601/CVE-2025-13390)
+- [Nxploited/CVE-2025-13390](https://github.com/Nxploited/CVE-2025-13390)
 
 ### CVE-2025-13401 (2025-12-03)
 
@@ -4184,7 +4200,7 @@
 - [acan0007/CVE-2025-31161](https://github.com/acan0007/CVE-2025-31161)
 - [Teexo/CVE-2025-31161](https://github.com/Teexo/CVE-2025-31161)
 - [0xDTC/CrushFTP-auth-bypass-CVE-2025-31161](https://github.com/0xDTC/CrushFTP-auth-bypass-CVE-2025-31161)
-- [ch3m1calspain/CVE-2025-31161](https://github.com/ch3m1calspain/CVE-2025-31161)
+- [ch3m1cl/CVE-2025-31161](https://github.com/ch3m1cl/CVE-2025-31161)
 
 ### CVE-2025-31200 (2025-04-16)
 
@@ -4990,7 +5006,6 @@
 </code>
 
 - [rxerium/CVE-2025-41244](https://github.com/rxerium/CVE-2025-41244)
-- [NULL200OK/CVE-2025-41244](https://github.com/NULL200OK/CVE-2025-41244)
 
 ### CVE-2025-41373 (2025-08-01)
 
@@ -5068,6 +5083,7 @@
 </code>
 
 - [zeroxjf/CVE-2025-43529-analysis](https://github.com/zeroxjf/CVE-2025-43529-analysis)
+- [jir4vv1t/CVE-2025-43529](https://github.com/jir4vv1t/CVE-2025-43529)
 
 ### CVE-2025-43541 (2025-12-17)
 
@@ -6411,6 +6427,7 @@
 - [DeathShotXD/CVE-2025-52691-APT-PoC](https://github.com/DeathShotXD/CVE-2025-52691-APT-PoC)
 - [sajjadsiam/CVE-2025-52691-poc](https://github.com/sajjadsiam/CVE-2025-52691-poc)
 - [hilwa24/CVE-2025-52691](https://github.com/hilwa24/CVE-2025-52691)
+- [nxgn-kd01/smartermail-cve-scanner](https://github.com/nxgn-kd01/smartermail-cve-scanner)
 
 ### CVE-2025-52692 (2025-12-19)
 
@@ -6945,6 +6962,7 @@
 - [alsaut1/react2shell-lab](https://github.com/alsaut1/react2shell-lab)
 - [pax-k/react2shell-CVE-2025-55182-full-rce-script](https://github.com/pax-k/react2shell-CVE-2025-55182-full-rce-script)
 - [kOaDT/poc-cve-2025-55182](https://github.com/kOaDT/poc-cve-2025-55182)
+- [mohit121312/CVE-2025-55182_full_exploit](https://github.com/mohit121312/CVE-2025-55182_full_exploit)
 - [ejpir/CVE-2025-55182-bypass](https://github.com/ejpir/CVE-2025-55182-bypass)
 - [StealthMoud/CVE-2025-55182-Scanner](https://github.com/StealthMoud/CVE-2025-55182-Scanner)
 - [yanoshercohen/React2Shell_CVE-2025-55182](https://github.com/yanoshercohen/React2Shell_CVE-2025-55182)
@@ -7222,6 +7240,8 @@
 - [joaovicdev/EXPLOIT-CVE-2025-55182](https://github.com/joaovicdev/EXPLOIT-CVE-2025-55182)
 - [AdityaBhatt3010/React2Shell-CVE-2025-55182](https://github.com/AdityaBhatt3010/React2Shell-CVE-2025-55182)
 - [gahoole77/gahoole77.github.io](https://github.com/gahoole77/gahoole77.github.io)
+- [lucyz1125/CVE-2025-55182-Next.js-RCE](https://github.com/lucyz1125/CVE-2025-55182-Next.js-RCE)
+- [hyan0116/Next.js-RCE-CVE-2025-55182](https://github.com/hyan0116/Next.js-RCE-CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -7919,6 +7939,9 @@
 </code>
 
 - [graypixel2121/CVE-2025-61229](https://github.com/graypixel2121/CVE-2025-61229)
+
+### CVE-2025-61246
+- [hackergovind/CVE-2025-61246](https://github.com/hackergovind/CVE-2025-61246)
 
 ### CVE-2025-61301 (2025-10-20)
 
@@ -8680,7 +8703,7 @@
 
 ### CVE-2025-66723 (2025-12-30)
 
-<code>inMusic Brands Engine DJ 4.3.0 suffers from Insecure Permissions due to exposed HTTP service in the Remote Library, which allows attackers to access all files and network paths.
+<code>inMusic Brands Engine DJ before 4.3.4 suffers from Insecure Permissions due to exposed HTTP service in the Remote Library, which allows attackers to access all files and network paths.
 </code>
 
 - [audiopump/cve-2025-66723](https://github.com/audiopump/cve-2025-66723)
@@ -8716,7 +8739,11 @@
 ### CVE-2025-67294
 - [0xthem7/CVE-2025-67294](https://github.com/0xthem7/CVE-2025-67294)
 
-### CVE-2025-67315
+### CVE-2025-67315 (2026-01-05)
+
+<code>Cross Site Request Forgery vulnerability in Employee Leave Management System v.2.1 allows a remote attacker to escalate privileges via the manage-employee.php component
+</code>
+
 - [r-pradyun/CVE-2025-67315](https://github.com/r-pradyun/CVE-2025-67315)
 
 ### CVE-2025-67435
@@ -8875,10 +8902,11 @@
 
 ### CVE-2025-68926 (2025-12-30)
 
-<code>RustFS is a distributed object storage system built in Rust. In versions prior to 1.0.0-alpha.77, RustFS implements gRPC authentication using a hardcoded static token `&quot;rustfs rpc&quot;` that is publicly exposed in the source code repository, hardcoded on both client and server sides, non-configurable with no mechanism for token rotation, and universally valid across all RustFS deployments. Any attacker with network access to the gRPC port can authenticate using this publicly known token and execute privileged operations including data destruction, policy manipulation, and cluster configuration changes. Version 1.0.0-alpha.77 contains a fix for the issue.
+<code>RustFS is a distributed object storage system built in Rust. In versions prior to 1.0.0-alpha.78, RustFS implements gRPC authentication using a hardcoded static token `&quot;rustfs rpc&quot;` that is publicly exposed in the source code repository, hardcoded on both client and server sides, non-configurable with no mechanism for token rotation, and universally valid across all RustFS deployments. Any attacker with network access to the gRPC port can authenticate using this publicly known token and execute privileged operations including data destruction, policy manipulation, and cluster configuration changes. Version 1.0.0-alpha.78 contains a fix for the issue.
 </code>
 
 - [Chocapikk/CVE-2025-68926](https://github.com/Chocapikk/CVE-2025-68926)
+- [Arcueld/CVE-2025-68926](https://github.com/Arcueld/CVE-2025-68926)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -27032,6 +27060,7 @@
 - [zanks08/cve-2023-44487-demo](https://github.com/zanks08/cve-2023-44487-demo)
 - [madhusudhan-in/CVE_2023_44487-Rapid_Reset](https://github.com/madhusudhan-in/CVE_2023_44487-Rapid_Reset)
 - [tpirate/cve-2023-44487-POC](https://github.com/tpirate/cve-2023-44487-POC)
+- [ReGeLePuMa/HTTP-2-Rapid-Reset-DDos](https://github.com/ReGeLePuMa/HTTP-2-Rapid-Reset-DDos)
 
 ### CVE-2023-44758 (2023-10-06)
 
@@ -63230,6 +63259,7 @@
 - [lpuv/CVE-2012-2982](https://github.com/lpuv/CVE-2012-2982)
 - [SincIDK/CVE-2012-2982-Exploit-Script](https://github.com/SincIDK/CVE-2012-2982-Exploit-Script)
 - [boriitoo/CVE-2012-2982](https://github.com/boriitoo/CVE-2012-2982)
+- [JRrooot/CVE-2012-2982-Webmin-RCE](https://github.com/JRrooot/CVE-2012-2982-Webmin-RCE)
 
 ### CVE-2012-3137 (2012-09-21)
 
