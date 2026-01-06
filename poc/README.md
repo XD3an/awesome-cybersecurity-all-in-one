@@ -26586,6 +26586,7 @@
 - [syaifulandy/Nuclei-Template-CVE-2023-42793.yaml](https://github.com/syaifulandy/Nuclei-Template-CVE-2023-42793.yaml)
 - [syorik/CVE-2023-42793](https://github.com/syorik/CVE-2023-42793)
 - [cxdxnt/CVE-2023-42793](https://github.com/cxdxnt/CVE-2023-42793)
+- [DDestinys/CVE-2023-42793](https://github.com/DDestinys/CVE-2023-42793)
 
 ### CVE-2023-42819 (2023-09-26)
 
