@@ -1961,6 +1961,9 @@
 
 - [halilkirazkaya/CVE-2025-11833](https://github.com/halilkirazkaya/CVE-2025-11833)
 
+### CVE-2025-12030
+- [SnailSploit/CVE-2025-12030](https://github.com/SnailSploit/CVE-2025-12030)
+
 ### CVE-2025-12097 (2025-12-04)
 
 <code>There is a relative path traversal vulnerability in the NI System Web Server that may result in information disclosure.  Successful exploitation requires an attacker to send a specially crafted request to the NI System Web Server, allowing the attacker to read arbitrary files.  This vulnerability existed in the NI System Web Server 2012 and prior versions.  It was fixed in 2013.
@@ -2273,6 +2276,7 @@
 - [demetriusford/mongobleed](https://github.com/demetriusford/mongobleed)
 - [ElJoamy/MongoBleed-exploit](https://github.com/ElJoamy/MongoBleed-exploit)
 - [keraattin/Mongobleed-Detector-CVE-2025-14847](https://github.com/keraattin/Mongobleed-Detector-CVE-2025-14847)
+- [waheeb71/CVE-2025-14847](https://github.com/waheeb71/CVE-2025-14847)
 
 ### CVE-2025-14857
 - [Ermensonx/CVE-2025-14857-MongoBleed](https://github.com/Ermensonx/CVE-2025-14857-MongoBleed)
@@ -2370,6 +2374,7 @@
 - [KingHacker353/CVE-2025-20393](https://github.com/KingHacker353/CVE-2025-20393)
 - [StasonJatham/cisco-sa-sma-attack-N9bf4](https://github.com/StasonJatham/cisco-sa-sma-attack-N9bf4)
 - [Ashwesker/Ashwesker-CVE-2025-20393](https://github.com/Ashwesker/Ashwesker-CVE-2025-20393)
+- [MRH701/mrh701.github.io](https://github.com/MRH701/mrh701.github.io)
 
 ### CVE-2025-21202 (2025-01-14)
 
@@ -2966,6 +2971,7 @@
 - [GadaLuBau1337/CVE-2025-24813](https://github.com/GadaLuBau1337/CVE-2025-24813)
 - [f8l124/CVE-2025-24813-POC](https://github.com/f8l124/CVE-2025-24813-POC)
 - [Franconyu/Poc_for_CVE-2025-24813](https://github.com/Franconyu/Poc_for_CVE-2025-24813)
+- [cchopin/CVE-Arsenal-Lab](https://github.com/cchopin/CVE-Arsenal-Lab)
 - [Mattb709/CVE-2025-24813-PoC-Apache-Tomcat-RCE](https://github.com/Mattb709/CVE-2025-24813-PoC-Apache-Tomcat-RCE)
 - [Mattb709/CVE-2025-24813-Scanner](https://github.com/Mattb709/CVE-2025-24813-Scanner)
 - [Erosion2020/CVE-2025-24813-vulhub](https://github.com/Erosion2020/CVE-2025-24813-vulhub)
@@ -4803,6 +4809,7 @@
 
 - [rxerium/CVE-2025-37164](https://github.com/rxerium/CVE-2025-37164)
 - [g0vguy/CVE-2025-37164-PoC](https://github.com/g0vguy/CVE-2025-37164-PoC)
+- [LACHHAB-Anas/Exploit_CVE-2025-37164](https://github.com/LACHHAB-Anas/Exploit_CVE-2025-37164)
 
 ### CVE-2025-37899 (2025-05-20)
 
@@ -7242,6 +7249,9 @@
 - [gahoole77/gahoole77.github.io](https://github.com/gahoole77/gahoole77.github.io)
 - [lucyz1125/CVE-2025-55182-Next.js-RCE](https://github.com/lucyz1125/CVE-2025-55182-Next.js-RCE)
 - [hyan0116/Next.js-RCE-CVE-2025-55182](https://github.com/hyan0116/Next.js-RCE-CVE-2025-55182)
+- [MyCompanyOrganization/React2Shell-Kingdom](https://github.com/MyCompanyOrganization/React2Shell-Kingdom)
+- [shibaaa204/React2Shell](https://github.com/shibaaa204/React2Shell)
+- [B1TC0R3/CVE-2025-55182](https://github.com/B1TC0R3/CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -10476,6 +10486,7 @@
 - [OxLmahdi/cve-2024-5932](https://github.com/OxLmahdi/cve-2024-5932)
 - [hlc23/CVE-2024-5932-web-ui](https://github.com/hlc23/CVE-2024-5932-web-ui)
 - [autom4il/CVE-2024-5932](https://github.com/autom4il/CVE-2024-5932)
+- [nishant-kumar-5173/CVE-2024-5932](https://github.com/nishant-kumar-5173/CVE-2024-5932)
 
 ### CVE-2024-5947 (2024-06-13)
 
@@ -20590,7 +20601,7 @@
 - [Rai2en/CVE-2023-4220-Chamilo-LMS](https://github.com/Rai2en/CVE-2023-4220-Chamilo-LMS)
 - [Ziad-Sakr/Chamilo-CVE-2023-4220-Exploit](https://github.com/Ziad-Sakr/Chamilo-CVE-2023-4220-Exploit)
 - [HO4XXX/cve-2023-4220-poc](https://github.com/HO4XXX/cve-2023-4220-poc)
-- [B1TC0R3/CVE-2023-4220-PoC](https://github.com/B1TC0R3/CVE-2023-4220-PoC)
+- [B1TC0R3/CVE-2023-4220](https://github.com/B1TC0R3/CVE-2023-4220)
 - [nr4x4/CVE-2023-4220](https://github.com/nr4x4/CVE-2023-4220)
 - [Al3xGD/CVE-2023-4220-Exploit](https://github.com/Al3xGD/CVE-2023-4220-Exploit)
 - [gmh5225/CVE-2023-4220](https://github.com/gmh5225/CVE-2023-4220)
@@ -60627,6 +60638,7 @@
 - [artem-smotrakov/cve-2016-1000027-poc](https://github.com/artem-smotrakov/cve-2016-1000027-poc)
 - [tina94happy/Spring-Web-5xx-Mitigated-version](https://github.com/tina94happy/Spring-Web-5xx-Mitigated-version)
 - [yihtserns/spring-web-without-remoting](https://github.com/yihtserns/spring-web-without-remoting)
+- [aim-sec/CVE-2016-1000027-with-c3p0](https://github.com/aim-sec/CVE-2016-1000027-with-c3p0)
 
 ### CVE-2016-1000229 (2019-12-20)
 
