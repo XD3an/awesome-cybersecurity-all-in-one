@@ -600,6 +600,7 @@
 </code>
 
 - [TeneBrae93/CVE-2025-3243](https://github.com/TeneBrae93/CVE-2025-3243)
+- [ladosudeste/CVE-2025-3243](https://github.com/ladosudeste/CVE-2025-3243)
 
 ### CVE-2025-3248 (2025-04-07)
 
@@ -2277,6 +2278,7 @@
 - [ElJoamy/MongoBleed-exploit](https://github.com/ElJoamy/MongoBleed-exploit)
 - [keraattin/Mongobleed-Detector-CVE-2025-14847](https://github.com/keraattin/Mongobleed-Detector-CVE-2025-14847)
 - [waheeb71/CVE-2025-14847](https://github.com/waheeb71/CVE-2025-14847)
+- [CadGoose/MongoBleed-CVE-2025-14847-Fully-Automated-scanner](https://github.com/CadGoose/MongoBleed-CVE-2025-14847-Fully-Automated-scanner)
 
 ### CVE-2025-14857
 - [Ermensonx/CVE-2025-14857-MongoBleed](https://github.com/Ermensonx/CVE-2025-14857-MongoBleed)
@@ -3767,6 +3769,7 @@
 - [congdong007/CVE-2025-29306_poc](https://github.com/congdong007/CVE-2025-29306_poc)
 - [amalpvatayam67/day06-foxcms-rce](https://github.com/amalpvatayam67/day06-foxcms-rce)
 - [Ashwesker/Ashwesker-CVE-2025-29306](https://github.com/Ashwesker/Ashwesker-CVE-2025-29306)
+- [mantanhacker/Mass-CVE-2025-29306](https://github.com/mantanhacker/Mass-CVE-2025-29306)
 
 ### CVE-2025-29384 (2025-03-14)
 
@@ -8420,6 +8423,7 @@
 </code>
 
 - [amaansiddd787/CVE-2025-65354](https://github.com/amaansiddd787/CVE-2025-65354)
+- [EarthAngel666/CVE-2025-65354](https://github.com/EarthAngel666/CVE-2025-65354)
 
 ### CVE-2025-65427 (2025-12-16)
 
@@ -8917,6 +8921,9 @@
 
 - [Chocapikk/CVE-2025-68926](https://github.com/Chocapikk/CVE-2025-68926)
 - [Arcueld/CVE-2025-68926](https://github.com/Arcueld/CVE-2025-68926)
+
+### CVE-2025-69194
+- [secdongle/POC_CVE-2025-69194](https://github.com/secdongle/POC_CVE-2025-69194)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -60638,7 +60645,6 @@
 - [artem-smotrakov/cve-2016-1000027-poc](https://github.com/artem-smotrakov/cve-2016-1000027-poc)
 - [tina94happy/Spring-Web-5xx-Mitigated-version](https://github.com/tina94happy/Spring-Web-5xx-Mitigated-version)
 - [yihtserns/spring-web-without-remoting](https://github.com/yihtserns/spring-web-without-remoting)
-- [aim-sec/CVE-2016-1000027-with-c3p0](https://github.com/aim-sec/CVE-2016-1000027-with-c3p0)
 
 ### CVE-2016-1000229 (2019-12-20)
 
