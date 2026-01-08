@@ -1,6 +1,13 @@
 # PoC in GitHub
 
 ## 2026
+### CVE-2026-0628 (2026-01-06)
+
+<code>Insufficient policy enforcement in WebView tag in Google Chrome prior to 143.0.7499.192 allowed an attacker who convinced a user to install a malicious extension to inject scripts or HTML into a privileged page via a crafted Chrome Extension. (Chromium security severity: High)
+</code>
+
+- [fevar54/CVE-2026-0628-POC](https://github.com/fevar54/CVE-2026-0628-POC)
+
 ### CVE-2026-5000
 - [Perl-Code/CVE-2026-5000](https://github.com/Perl-Code/CVE-2026-5000)
 
@@ -46,6 +53,18 @@
 </code>
 
 - [Ashwesker/Ashwesker-CVE-2026-21451](https://github.com/Ashwesker/Ashwesker-CVE-2026-21451)
+
+### CVE-2026-21858 (2026-01-07)
+
+<code>n8n is an open source workflow automation platform. Versions below 1.121.0 enable an attacker to access files on the underlying server through execution of certain form-based workflows. A vulnerable workflow could grant access to an unauthenticated remote attacker, resulting in exposure of sensitive information stored on the system and may enable further compromise depending on deployment configuration and workflow usage. This issue is fixed in version 1.121.0.
+</code>
+
+- [eduardorossi84/CVE-2026-21858-POC](https://github.com/eduardorossi84/CVE-2026-21858-POC)
+- [Chocapikk/CVE-2026-21858](https://github.com/Chocapikk/CVE-2026-21858)
+- [Ashwesker/Ashwesker-CVE-2026-21858](https://github.com/Ashwesker/Ashwesker-CVE-2026-21858)
+
+### CVE-2026-21876
+- [daytriftnewgen/CVE-2026-21876](https://github.com/daytriftnewgen/CVE-2026-21876)
 
 
 ## 2025
@@ -325,6 +344,13 @@
 
 - [itres-labs/CVE-2025-1868](https://github.com/itres-labs/CVE-2025-1868)
 
+### CVE-2025-1910 (2025-12-04)
+
+<code>The WatchGuard Mobile VPN with SSL Client on Windows allows a locally \nauthenticated non-administrative Windows user to escalate their \nprivileges to NT AUTHORITY/SYSTEM on the Windows machine where the VPN \nClient is installed.This issue affects the Mobile VPN with SSL Client 12.0 up to and including 12.11.2.
+</code>
+
+- [lutrasecurity/CVE-2025-1910-WatchGuard-Privilege-Escalation](https://github.com/lutrasecurity/CVE-2025-1910-WatchGuard-Privilege-Escalation)
+
 ### CVE-2025-1913 (2025-03-26)
 
 <code>The Product Import Export for WooCommerce – Import Export Product CSV Suite plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.5.0 via deserialization of untrusted input from the 'form_data' parameter This makes it possible for authenticated attackers, with Administrator-level access and above, to inject a PHP Object. No known POP chain is present in the vulnerable software, which means this vulnerability has no impact unless another plugin or theme containing a POP chain is installed on the site. If a POP chain is present via an additional plugin or theme installed on the target system, it may allow the attacker to perform actions like delete arbitrary files, retrieve sensitive data, or execute code depending on the POP chain present.
@@ -359,6 +385,7 @@
 - [BiiTts/POC-IngressNightmare-CVE-2025-1974](https://github.com/BiiTts/POC-IngressNightmare-CVE-2025-1974)
 - [iteride/CVE-2025-1974](https://github.com/iteride/CVE-2025-1974)
 - [gunyakit/CVE-2025-1974-PoC-exploit](https://github.com/gunyakit/CVE-2025-1974-PoC-exploit)
+- [BoianEduard/CVE-2025-1974](https://github.com/BoianEduard/CVE-2025-1974)
 
 ### CVE-2025-2005 (2025-04-02)
 
@@ -1962,7 +1989,11 @@
 
 - [halilkirazkaya/CVE-2025-11833](https://github.com/halilkirazkaya/CVE-2025-11833)
 
-### CVE-2025-12030
+### CVE-2025-12030 (2026-01-07)
+
+<code>The ACF to REST API plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 3.3.4. This is due to insufficient capability checks in the update_item_permissions_check() method, which only verifies that the current user has the edit_posts capability without checking object-specific permissions (e.g., edit_post($id), edit_user($id), manage_options). This makes it possible for authenticated attackers, with Contributor-level access and above, to modify ACF fields on posts they do not own, any user account, comments, taxonomy terms, and even the global options page via the /wp-json/acf/v3/{type}/{id} endpoints, granted they can authenticate to the site.
+</code>
+
 - [SnailSploit/CVE-2025-12030](https://github.com/SnailSploit/CVE-2025-12030)
 
 ### CVE-2025-12097 (2025-12-04)
@@ -4552,6 +4583,7 @@
 - [justjoeyking/CVE-2025-32463](https://github.com/justjoeyking/CVE-2025-32463)
 - [Mr-Alperen/CVE-2025-32463](https://github.com/Mr-Alperen/CVE-2025-32463)
 - [aexdyhaxor/CVE-2025-32463](https://github.com/aexdyhaxor/CVE-2025-32463)
+- [wvverez/CVE-2025-32463](https://github.com/wvverez/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -5016,6 +5048,7 @@
 </code>
 
 - [rxerium/CVE-2025-41244](https://github.com/rxerium/CVE-2025-41244)
+- [NULL200OK/CVE-2025-41244](https://github.com/NULL200OK/CVE-2025-41244)
 
 ### CVE-2025-41373 (2025-08-01)
 
@@ -5788,6 +5821,13 @@
 </code>
 
 - [Nxploited/CVE-2025-49029](https://github.com/Nxploited/CVE-2025-49029)
+
+### CVE-2025-49071 (2025-06-17)
+
+<code>Unrestricted Upload of File with Dangerous Type vulnerability in NasaTheme Flozen allows Upload a Web Shell to a Web Server. This issue affects Flozen: from n/a through n/a.
+</code>
+
+- [xShadow-Here/CVE-2025-49071](https://github.com/xShadow-Here/CVE-2025-49071)
 
 ### CVE-2025-49113 (2025-06-02)
 
@@ -7072,7 +7112,6 @@
 - [yaupunal/CVE-2025-55182-scanner](https://github.com/yaupunal/CVE-2025-55182-scanner)
 - [jandelima/cve-2025-55182-poc-test](https://github.com/jandelima/cve-2025-55182-poc-test)
 - [im-ezboy/CVE-2025-55182-zoomeye](https://github.com/im-ezboy/CVE-2025-55182-zoomeye)
-- [Ibonok/CVE-2025-55182-Burp-Passive-Extension](https://github.com/Ibonok/CVE-2025-55182-Burp-Passive-Extension)
 - [FurkanKAYAPINAR/React-Next-Scanner](https://github.com/FurkanKAYAPINAR/React-Next-Scanner)
 - [lowercasenumbers/CVE-2025-55182](https://github.com/lowercasenumbers/CVE-2025-55182)
 - [AggressiveUser/React2Hell](https://github.com/AggressiveUser/React2Hell)
@@ -7255,6 +7294,7 @@
 - [MyCompanyOrganization/React2Shell-Kingdom](https://github.com/MyCompanyOrganization/React2Shell-Kingdom)
 - [shibaaa204/React2Shell](https://github.com/shibaaa204/React2Shell)
 - [B1TC0R3/CVE-2025-55182](https://github.com/B1TC0R3/CVE-2025-55182)
+- [en0f/CVE-2025-55182-poc-json](https://github.com/en0f/CVE-2025-55182-poc-json)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -7875,6 +7915,13 @@
 
 - [demining/Scalar-Venom-Attack](https://github.com/demining/Scalar-Venom-Attack)
 - [Mwete404/Scalar-Venom-Attack](https://github.com/Mwete404/Scalar-Venom-Attack)
+
+### CVE-2025-60188 (2025-11-06)
+
+<code>Insertion of Sensitive Information Into Sent Data vulnerability in Vito Peleg Atarim atarim-visual-collaboration allows Retrieve Embedded Sensitive Data.This issue affects Atarim: from n/a through &lt;= 4.2.
+</code>
+
+- [m4sh-wacker/CVE-2025-60188-Atarim-Plugin-Exploit](https://github.com/m4sh-wacker/CVE-2025-60188-Atarim-Plugin-Exploit)
 
 ### CVE-2025-60424 (2025-10-27)
 
@@ -8722,6 +8769,20 @@
 
 - [audiopump/cve-2025-66723](https://github.com/audiopump/cve-2025-66723)
 
+### CVE-2025-66837 (2026-01-07)
+
+<code>A file upload vulnerability in ARIS 10.0.23.0.3587512 allows attackers to execute arbitrary code via uploading a crafted PDF file/Malware
+</code>
+
+- [saykino/CVE-2025-66837](https://github.com/saykino/CVE-2025-66837)
+
+### CVE-2025-66838 (2026-01-07)
+
+<code>In Aris v10.0.23.0.3587512 and before, the file upload functionality does not enforce any rate limiting or throttling, allowing users to upload files at an unrestricted rate. An attacker can exploit this behavior to rapidly upload a large volume of files, potentially leading to resource exhaustion such as disk space depletion, increased server load, or degraded performance
+</code>
+
+- [saykino/CVE-2025-66838](https://github.com/saykino/CVE-2025-66838)
+
 ### CVE-2025-66947 (2025-12-26)
 
 <code>SQL injection vulnerability in krishanmuraiji SMS v.1.0, within the /studentms/admin/edit-class-detail.php via the editid GET parameter. An attacker can trigger controlled delays using SQL SLEEP() to infer database contents. Successful exploitation may lead to full database compromise, especially within an administrative module.
@@ -8883,6 +8944,7 @@
 - [cv-sai-kamesh/n8n-CVE-2025-68613](https://github.com/cv-sai-kamesh/n8n-CVE-2025-68613)
 - [ahmedshamsddin/n8n-RCE-CVE-2025-68613](https://github.com/ahmedshamsddin/n8n-RCE-CVE-2025-68613)
 - [TheInterception/n8n_CVE-2025-68613_exploit_payloads](https://github.com/TheInterception/n8n_CVE-2025-68613_exploit_payloads)
+- [shibaaa204/CVE-2025-68613](https://github.com/shibaaa204/CVE-2025-68613)
 
 ### CVE-2025-68615 (2025-12-22)
 
@@ -17413,6 +17475,9 @@
 </code>
 
 - [jphetphoumy/traefik-CVE-2024-45410-poc](https://github.com/jphetphoumy/traefik-CVE-2024-45410-poc)
+
+### CVE-2024-45427
+- [MHamdy24/CVE-2024-45427-Exploit](https://github.com/MHamdy24/CVE-2024-45427-Exploit)
 
 ### CVE-2024-45436 (2024-08-29)
 
@@ -26041,6 +26106,8 @@
 </code>
 
 - [z1ph1us/MilkSad-Mnemonic-Generator](https://github.com/z1ph1us/MilkSad-Mnemonic-Generator)
+- [Hitplus/RingSide-Replay-Attack](https://github.com/Hitplus/RingSide-Replay-Attack)
+- [Hitplus/hitplus.github.io](https://github.com/Hitplus/hitplus.github.io)
 
 ### CVE-2023-40000 (2024-04-16)
 
@@ -29117,6 +29184,7 @@
 - [Shadow-Spinner/CVE-2022-0847](https://github.com/Shadow-Spinner/CVE-2022-0847)
 - [honeyvig/CVE-2022-0847-DirtyPipe-Exploit](https://github.com/honeyvig/CVE-2022-0847-DirtyPipe-Exploit)
 - [gladiator-07/CVE-2022-0847](https://github.com/gladiator-07/CVE-2022-0847)
+- [xiaoLvChen/CVE-2022-0847](https://github.com/xiaoLvChen/CVE-2022-0847)
 
 ### CVE-2022-0848 (2022-03-04)
 
@@ -37313,8 +37381,6 @@
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
 - [hohn/codeql-sample-polkit](https://github.com/hohn/codeql-sample-polkit)
-- [ITMarcin2211/Polkit-s-Pkexec-CVE-2021-4034](https://github.com/ITMarcin2211/Polkit-s-Pkexec-CVE-2021-4034)
-- [edsonjt81/CVE-2021-4034-Linux](https://github.com/edsonjt81/CVE-2021-4034-Linux)
 - [nel0x/pwnkit-vulnerability](https://github.com/nel0x/pwnkit-vulnerability)
 - [TomSgn/CVE-2021-4034](https://github.com/TomSgn/CVE-2021-4034)
 - [TheJoyOfHacking/berdav-CVE-2021-4034](https://github.com/TheJoyOfHacking/berdav-CVE-2021-4034)
@@ -37371,6 +37437,7 @@
 - [dr4xp/pwnkit-helper](https://github.com/dr4xp/pwnkit-helper)
 - [kaisen-bot/pwnkit-helper](https://github.com/kaisen-bot/pwnkit-helper)
 - [zaaraZiof0/pkexec-exploit-CVE](https://github.com/zaaraZiof0/pkexec-exploit-CVE)
+- [boro03/CVE-2021-4034](https://github.com/boro03/CVE-2021-4034)
 
 ### CVE-2021-4044 (2021-12-14)
 
@@ -41329,6 +41396,7 @@
 - [Mahfujurjust/CVE-2021-41773](https://github.com/Mahfujurjust/CVE-2021-41773)
 - [adrianmafandy/CVE-2021-41773](https://github.com/adrianmafandy/CVE-2021-41773)
 - [faizdotid/CVE-2021-41773](https://github.com/faizdotid/CVE-2021-41773)
+- [rikdek/CVE-2021-41773](https://github.com/rikdek/CVE-2021-41773)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -48807,6 +48875,7 @@
 - [denuwanjayasekara/CVE-Exploitation-Reports](https://github.com/denuwanjayasekara/CVE-Exploitation-Reports)
 - [hualy13/CVE-2019-0708-Check](https://github.com/hualy13/CVE-2019-0708-Check)
 - [isabelacostaz/CVE-2019-0708-POC](https://github.com/isabelacostaz/CVE-2019-0708-POC)
+- [GopeshKachhadiya/Windows-2](https://github.com/GopeshKachhadiya/Windows-2)
 
 ### CVE-2019-0709 (2019-06-12)
 
@@ -52427,6 +52496,7 @@
 - [l0w3/CVE-2019-18634](https://github.com/l0w3/CVE-2019-18634)
 - [ngyinkit/cve-2019-18634](https://github.com/ngyinkit/cve-2019-18634)
 - [letsr00t/-CVE-2019-18634-sudo-pwfeedback](https://github.com/letsr00t/-CVE-2019-18634-sudo-pwfeedback)
+- [CyrusRazavi/CVE-2019-18634-](https://github.com/CyrusRazavi/CVE-2019-18634-)
 
 ### CVE-2019-18655 (2019-11-12)
 
@@ -53342,6 +53412,7 @@
 - [seethen/cve-2018-2628](https://github.com/seethen/cve-2018-2628)
 - [BabyTeam1024/cve-2018-2628](https://github.com/BabyTeam1024/cve-2018-2628)
 - [cscadoge/weblogic-cve-2018-2628](https://github.com/cscadoge/weblogic-cve-2018-2628)
+- [herantong/CVE-2018-2628](https://github.com/herantong/CVE-2018-2628)
 
 ### CVE-2018-2636 (2018-01-18)
 
@@ -60629,6 +60700,9 @@
 </code>
 
 - [Pranjal6955/test_CVE-2016-15048](https://github.com/Pranjal6955/test_CVE-2016-15048)
+
+### CVE-2016-16113
+- [d3vn0mi/cve-2016-16113](https://github.com/d3vn0mi/cve-2016-16113)
 
 ### CVE-2016-20012 (2021-09-15)
 
