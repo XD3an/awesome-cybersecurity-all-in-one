@@ -32,6 +32,7 @@
 
 - [Ashwesker/Ashwesker-CVE-2026-21440](https://github.com/Ashwesker/Ashwesker-CVE-2026-21440)
 - [you-ssef9/CVE-2026-21440](https://github.com/you-ssef9/CVE-2026-21440)
+- [k0nnect/cve-2026-21440-writeup](https://github.com/k0nnect/cve-2026-21440-writeup)
 
 ### CVE-2026-21445 (2026-01-02)
 
@@ -3956,7 +3957,6 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [KaztoRay/CVE-2025-29927-Research](https://github.com/KaztoRay/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -4006,7 +4006,6 @@
 - [amitlttwo/Next.JS-CVE-2025-29927](https://github.com/amitlttwo/Next.JS-CVE-2025-29927)
 - [kazuya256/next-js-auth-bypass](https://github.com/kazuya256/next-js-auth-bypass)
 - [mickhacking/Thank-u-Next](https://github.com/mickhacking/Thank-u-Next)
-- [0xh3g4z1/CVE-2025-29927-Next.js-Middleware-Authorization-Bypass](https://github.com/0xh3g4z1/CVE-2025-29927-Next.js-Middleware-Authorization-Bypass)
 - [sahbaazansari/CVE-2025-29927](https://github.com/sahbaazansari/CVE-2025-29927)
 - [b4sh0xf/PoC-CVE-2025-29927](https://github.com/b4sh0xf/PoC-CVE-2025-29927)
 - [rgvillanueva28/vulnbox-easy-CVE-2025-29927](https://github.com/rgvillanueva28/vulnbox-easy-CVE-2025-29927)
@@ -5048,7 +5047,6 @@
 </code>
 
 - [rxerium/CVE-2025-41244](https://github.com/rxerium/CVE-2025-41244)
-- [NULL200OK/CVE-2025-41244](https://github.com/NULL200OK/CVE-2025-41244)
 
 ### CVE-2025-41373 (2025-08-01)
 
@@ -6619,7 +6617,6 @@
 - [Rabbitbong/OurSharePoint-CVE-2025-53770](https://github.com/Rabbitbong/OurSharePoint-CVE-2025-53770)
 - [Udyz/CVE-2025-53770-Exploit](https://github.com/Udyz/CVE-2025-53770-Exploit)
 - [bitsalv/ToolShell-Honeypot](https://github.com/bitsalv/ToolShell-Honeypot)
-- [0xh3g4z1/CVE-2025-53770-SharePoint-RCE](https://github.com/0xh3g4z1/CVE-2025-53770-SharePoint-RCE)
 - [BirdsAreFlyingCameras/CVE-2025-53770_Raw-HTTP-Request-Generator](https://github.com/BirdsAreFlyingCameras/CVE-2025-53770_Raw-HTTP-Request-Generator)
 - [bossnick98/-SOC342---CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-and-RCE](https://github.com/bossnick98/-SOC342---CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-and-RCE)
 - [3a7/CVE-2025-53770](https://github.com/3a7/CVE-2025-53770)
@@ -6688,6 +6685,7 @@
 
 - [synacktiv/Livepyre](https://github.com/synacktiv/Livepyre)
 - [z0d131482700x/Livewire2025CVE](https://github.com/z0d131482700x/Livewire2025CVE)
+- [flame-11/CVE-2025-54068-livewire](https://github.com/flame-11/CVE-2025-54068-livewire)
 
 ### CVE-2025-54100 (2025-12-09)
 
@@ -8821,6 +8819,9 @@
 
 - [r-pradyun/CVE-2025-67315](https://github.com/r-pradyun/CVE-2025-67315)
 
+### CVE-2025-67325
+- [mr7s3d0/CVE-2025-67325](https://github.com/mr7s3d0/CVE-2025-67325)
+
 ### CVE-2025-67435
 - [RajChowdhury240/CVE-2025-67435](https://github.com/RajChowdhury240/CVE-2025-67435)
 
@@ -8968,6 +8969,13 @@
 </code>
 
 - [Ak-cybe/CVE-2025-68664-LangGrinch-PoC](https://github.com/Ak-cybe/CVE-2025-68664-LangGrinch-PoC)
+
+### CVE-2025-68705 (2026-01-07)
+
+<code>RustFS is a distributed object storage system built in Rust. In versions 1.0.0-alpha.13 to 1.0.0-alpha.78, RustFS contains a path traversal vulnerability in the /rustfs/rpc/read_file_stream endpoint. This issue has been patched in version 1.0.0-alpha.79.
+</code>
+
+- [imjdl/CVE-2025-68705-RustFS-Path-Traversal-Vulnerability-Check](https://github.com/imjdl/CVE-2025-68705-RustFS-Path-Traversal-Vulnerability-Check)
 
 ### CVE-2025-68860 (2025-12-29)
 
@@ -9293,6 +9301,8 @@
 - [magicrc/CVE-2024-0670](https://github.com/magicrc/CVE-2024-0670)
 - [elsevar11/CVE-2024-0670-CheckMK-Agent-Local-Privilege-Escalation-Exploit](https://github.com/elsevar11/CVE-2024-0670-CheckMK-Agent-Local-Privilege-Escalation-Exploit)
 - [fsoc-ghost-0x/Fsociety-CVE-2024-0670-CheckMK-LPE](https://github.com/fsoc-ghost-0x/Fsociety-CVE-2024-0670-CheckMK-LPE)
+- [Nikopmpm/Fsociety-CVE-2024-0670-CheckMK-LPE](https://github.com/Nikopmpm/Fsociety-CVE-2024-0670-CheckMK-LPE)
+- [Nikopmpm/nikopmpm.github.io](https://github.com/Nikopmpm/nikopmpm.github.io)
 
 ### CVE-2024-0679 (2024-01-20)
 
@@ -13441,6 +13451,7 @@
 </code>
 
 - [MAWK0235/CVE-2024-24401](https://github.com/MAWK0235/CVE-2024-24401)
+- [JIBEG-UNIX/CVE-2024-24401](https://github.com/JIBEG-UNIX/CVE-2024-24401)
 
 ### CVE-2024-24402 (2024-02-26)
 
