@@ -418,6 +418,13 @@
 - [Ashwesker/Ashwesker-CVE-2025-2011](https://github.com/Ashwesker/Ashwesker-CVE-2025-2011)
 - [zsy107u/CVE-2025-2011-poc](https://github.com/zsy107u/CVE-2025-2011-poc)
 
+### CVE-2025-2025 (2025-03-15)
+
+<code>The GiveWP – Donation Plugin and Fundraising Platform plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the give_reports_earnings() function in all versions up to, and including, 3.22.0. This makes it possible for unauthenticated attackers to disclose sensitive information included within earnings reports.
+</code>
+
+- [SuJing-cy/CVE-2025-2025-52691-SmarterMail-Exp](https://github.com/SuJing-cy/CVE-2025-2025-52691-SmarterMail-Exp)
+
 ### CVE-2025-2082 (2025-04-30)
 
 <code>Tesla Model 3 VCSEC Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected Tesla Model 3 vehicles. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the VCSEC module. By manipulating the certificate response sent from the Tire Pressure Monitoring System (TPMS), an attacker can trigger an integer overflow before writing to memory. An attacker can leverage this vulnerability to execute code in the context of the VCSEC module and send arbitrary messages to the vehicle CAN bus. Was ZDI-CAN-23800.
@@ -431,7 +438,6 @@
 <code>Type Confusion in V8 in Google Chrome prior to 134.0.6998.88 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
 </code>
 
-- [Wa1nut4/CVE-2025-2135](https://github.com/Wa1nut4/CVE-2025-2135)
 - [sangnguyenthien/CVE-2025-2135](https://github.com/sangnguyenthien/CVE-2025-2135)
 
 ### CVE-2025-2249 (2025-03-29)
@@ -1793,6 +1799,13 @@
 
 - [d0n601/CVE-2025-9216](https://github.com/d0n601/CVE-2025-9216)
 
+### CVE-2025-9223 (2025-11-11)
+
+<code>Zohocorp ManageEngine Applications Manager versions 178100 and below are vulnerable to authenticated command injection vulnerability due to the improper configuration in the execute program action feature.
+</code>
+
+- [networkkiller/CVE-2025-9223](https://github.com/networkkiller/CVE-2025-9223)
+
 ### CVE-2025-9242 (2025-09-17)
 
 <code>An Out-of-bounds Write vulnerability in WatchGuard Fireware OS may allow a remote unauthenticated attacker to execute arbitrary code. This vulnerability affects both the Mobile User VPN with IKEv2 and the Branch Office VPN using IKEv2 when configured with a dynamic gateway peer.This vulnerability affects Fireware OS 11.10.2 up to and including 11.12.4_Update1, 12.0 up to and including 12.11.3 and 2025.1.
@@ -2216,6 +2229,13 @@
 
 - [0xcucumbersalad/CVE-2025-13796-PoC](https://github.com/0xcucumbersalad/CVE-2025-13796-PoC)
 
+### CVE-2025-14124 (2026-01-05)
+
+<code>The Team  WordPress plugin before 5.0.11 does not properly sanitize and escape a parameter before using it in a SQL statement via an AJAX action available to unauthenticated users, leading to a SQL injection.
+</code>
+
+- [hyunchiya/CVE-2025-14124](https://github.com/hyunchiya/CVE-2025-14124)
+
 ### CVE-2025-14156 (2025-12-15)
 
 <code>The Fox LMS – WordPress LMS Plugin plugin for WordPress is vulnerable to privilege escalation in all versions up to, and including, 1.0.5.1. This is due to the plugin not properly validating the 'role' parameter when creating new users via the `/fox-lms/v1/payments/create-order` REST API endpoint. This makes it possible for unauthenticated attackers to create new user accounts with arbitrary roles, including administrator, leading to complete site compromise.
@@ -2259,7 +2279,11 @@
 - [JohannesLks/CVE-2025-14558](https://github.com/JohannesLks/CVE-2025-14558)
 - [Ashwesker/Ashwesker-CVE-2025-14558](https://github.com/Ashwesker/Ashwesker-CVE-2025-14558)
 
-### CVE-2025-14598
+### CVE-2025-14598 (2026-01-09)
+
+<code>BeeS Software Solutions BET Portal contains an SQL injection vulnerability in the login functionality of affected sites. The vulnerability enables arbitrary SQL commands to be executed on the backend database.
+</code>
+
 - [Afnaan-Ahmed/CVE-2025-14598](https://github.com/Afnaan-Ahmed/CVE-2025-14598)
 
 ### CVE-2025-14611 (2025-12-12)
@@ -2284,6 +2308,13 @@
 
 - [Ashwesker/Ashwesker-CVE-2025-14733](https://github.com/Ashwesker/Ashwesker-CVE-2025-14733)
 - [machevalia/CVE-2025-14733](https://github.com/machevalia/CVE-2025-14733)
+
+### CVE-2025-14736 (2026-01-09)
+
+<code>The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.28.25. This is due to insufficient validation of user-supplied role values in the 'validate_value', 'pre_update_value', and 'get_fields_display' functions. This makes it possible for unauthenticated attackers to register as administrators and gain complete control of the site, granted they can access a user registration form containing a Role field.
+</code>
+
+- [hyunchiya/CVE-2025-14736](https://github.com/hyunchiya/CVE-2025-14736)
 
 ### CVE-2025-14765 (2025-12-16)
 
@@ -3093,6 +3124,7 @@
 - [o0wo0o/CVE-2025-24893_Shell](https://github.com/o0wo0o/CVE-2025-24893_Shell)
 - [WhiteDominion/CVE-2025-24893](https://github.com/WhiteDominion/CVE-2025-24893)
 - [BreakingRohit/CVE-2025-24893-PoC](https://github.com/BreakingRohit/CVE-2025-24893-PoC)
+- [TomKingori/xwiki-cve-2025-24893-exploit](https://github.com/TomKingori/xwiki-cve-2025-24893-exploit)
 
 ### CVE-2025-24963 (2025-02-04)
 
@@ -4016,7 +4048,6 @@
 - [kh4sh3i/CVE-2025-29927](https://github.com/kh4sh3i/CVE-2025-29927)
 - [EQSTLab/CVE-2025-29927](https://github.com/EQSTLab/CVE-2025-29927)
 - [Hirainsingadia/CVE-2025-29927](https://github.com/Hirainsingadia/CVE-2025-29927)
-- [hed1ad/CVE-2025-29927](https://github.com/hed1ad/CVE-2025-29927)
 - [HoumanPashaei/CVE-2025-29927](https://github.com/HoumanPashaei/CVE-2025-29927)
 - [rubbxalc/CVE-2025-29927](https://github.com/rubbxalc/CVE-2025-29927)
 - [olimpiofreitas/CVE-2025-29927-scanner](https://github.com/olimpiofreitas/CVE-2025-29927-scanner)
@@ -5043,6 +5074,13 @@
 
 - [AlexSvobo/nhi-zero-trust-bypass](https://github.com/AlexSvobo/nhi-zero-trust-bypass)
 
+### CVE-2025-41067 (2025-10-27)
+
+<code>Reachable Assertion vulnerability in Open5GS up to version 2.7.6 allows attackers with connectivity to the NRF to cause a denial of service. An SBI request that deletes the NRF's own registry causes a check that ends up crashing the NRF process and renders the discovery service unavailable.
+</code>
+
+- [xvk1t1/Open5GS-CVE-2025-41067-CVE-2025-41068-PoC](https://github.com/xvk1t1/Open5GS-CVE-2025-41067-CVE-2025-41068-PoC)
+
 ### CVE-2025-41088 (2025-10-10)
 
 <code>Stored Cross-Site Scripting (XSS) in Xibo Signage's Xibo CMS v4.1.2, due to a lack of proper validation of user input. To exploit the vulnerability, the attacker must create a template in the 'Templates' section, then add a text element in the 'Global Elements' section, and finally modify the 'Text' field in the section with the malicious payload.
@@ -5071,6 +5109,7 @@
 </code>
 
 - [rxerium/CVE-2025-41244](https://github.com/rxerium/CVE-2025-41244)
+- [NULL200OK/CVE-2025-41244](https://github.com/NULL200OK/CVE-2025-41244)
 
 ### CVE-2025-41373 (2025-08-01)
 
@@ -6924,7 +6963,6 @@
 - [Mayca369/CVE-2025-55182](https://github.com/Mayca369/CVE-2025-55182)
 - [ahmed-dev-op/CVE-2025-55182](https://github.com/ahmed-dev-op/CVE-2025-55182)
 - [vick333-peniel/vick333-peniel.github.io](https://github.com/vick333-peniel/vick333-peniel.github.io)
-- [Pantheon-Security/medusa](https://github.com/Pantheon-Security/medusa)
 - [BankkRoll/Quickcheck-CVE-2025-55182-React-and-CVE-2025-66478-Next.js](https://github.com/BankkRoll/Quickcheck-CVE-2025-55182-React-and-CVE-2025-66478-Next.js)
 - [ejpir/CVE-2025-55182-research](https://github.com/ejpir/CVE-2025-55182-research)
 - [sickwell/CVE-2025-55182](https://github.com/sickwell/CVE-2025-55182)
@@ -6999,7 +7037,6 @@
 - [aliclub0x00/CVE-2025-55182-POC-NEXTJS](https://github.com/aliclub0x00/CVE-2025-55182-POC-NEXTJS)
 - [logesh-GIT001/CVE-2025-55182](https://github.com/logesh-GIT001/CVE-2025-55182)
 - [freeqaz/react2shell](https://github.com/freeqaz/react2shell)
-- [m3m0ryc0rrupt/CVE-2025-55182-PoC](https://github.com/m3m0ryc0rrupt/CVE-2025-55182-PoC)
 - [ABCFabian/React2Shell-CVE-2025-55182-Testing-Environment](https://github.com/ABCFabian/React2Shell-CVE-2025-55182-Testing-Environment)
 - [nanwinata/CVE-2025-55182-Scanner](https://github.com/nanwinata/CVE-2025-55182-Scanner)
 - [l4rm4nd/CVE-2025-55182](https://github.com/l4rm4nd/CVE-2025-55182)
@@ -7160,7 +7197,6 @@
 - [byte16384/CVE-2025-55182](https://github.com/byte16384/CVE-2025-55182)
 - [kondukto-io/vulnerable-next-js-poc](https://github.com/kondukto-io/vulnerable-next-js-poc)
 - [eytannatye/R2S_CVE-2025-55182](https://github.com/eytannatye/R2S_CVE-2025-55182)
-- [Jaycelation/CVE-2025-55182](https://github.com/Jaycelation/CVE-2025-55182)
 - [shyambhanushali/React2Shell](https://github.com/shyambhanushali/React2Shell)
 - [amir-malek/react-cve-2025-55182](https://github.com/amir-malek/react-cve-2025-55182)
 - [Yyax13/CVE-2025-55182](https://github.com/Yyax13/CVE-2025-55182)
@@ -7389,6 +7425,9 @@
 
 ### CVE-2025-55449
 - [xhh1h/CVE-2025-55449](https://github.com/xhh1h/CVE-2025-55449)
+
+### CVE-2025-55462
+- [sibikrish001/CVE-2025-55462](https://github.com/sibikrish001/CVE-2025-55462)
 
 ### CVE-2025-55555
 - [aydin5245/CVE-2025-55555-CVE](https://github.com/aydin5245/CVE-2025-55555-CVE)
@@ -7849,7 +7888,6 @@
 - [M507/CVE-2025-59287-PoC](https://github.com/M507/CVE-2025-59287-PoC)
 - [Adel-kaka-dz/cve-2025-59287](https://github.com/Adel-kaka-dz/cve-2025-59287)
 - [gud425/gud425.github.io](https://github.com/gud425/gud425.github.io)
-- [vtntkmfyyftrem/CVE-2025-59287](https://github.com/vtntkmfyyftrem/CVE-2025-59287)
 
 ### CVE-2025-59342 (2025-09-17)
 
@@ -8705,6 +8743,7 @@
 - [Ashwesker/Ashwesker-CVE-2025-65964](https://github.com/Ashwesker/Ashwesker-CVE-2025-65964)
 - [Saboor-Hakimi-23/CVE-2025-65964](https://github.com/Saboor-Hakimi-23/CVE-2025-65964)
 - [Pinus97/CVE-2025-65964-POC](https://github.com/Pinus97/CVE-2025-65964-POC)
+- [nn0nkey/repo](https://github.com/nn0nkey/repo)
 
 ### CVE-2025-66022 (2025-11-26)
 
@@ -8835,7 +8874,11 @@
 
 - [kabir0104k/CVE-2025-66947](https://github.com/kabir0104k/CVE-2025-66947)
 
-### CVE-2025-67070
+### CVE-2025-67070 (2026-01-09)
+
+<code>A vulnerability exists in Intelbras CFTV IP NVD 9032 R Ftd V2.800.00IB00C.0.T, which allows an unauthenticated attacker to bypass the multi-factor authentication (MFA) mechanism during the password recovery process. This results in the ability to change the admin password and gain full access to the administrative panel.
+</code>
+
 - [teteco/CVE-2025-67070-Intelbras-CFTV-MFA-Bypass](https://github.com/teteco/CVE-2025-67070-Intelbras-CFTV-MFA-Bypass)
 
 ### CVE-2025-67158 (2026-01-02)
@@ -8861,6 +8904,13 @@
 
 ### CVE-2025-67294
 - [0xthem7/CVE-2025-67294](https://github.com/0xthem7/CVE-2025-67294)
+
+### CVE-2025-67303 (2026-01-05)
+
+<code>An issue in ComfyUI-Manager prior to version 3.38 allowed remote attackers to potentially manipulate its configuration and critical data. This was due to the application storing its files in an insufficiently protected location that was accessible via the web interface
+</code>
+
+- [joker-xiaoyan/CVE-2025-67303](https://github.com/joker-xiaoyan/CVE-2025-67303)
 
 ### CVE-2025-67315 (2026-01-05)
 
@@ -9053,7 +9103,11 @@
 - [Chocapikk/CVE-2025-68926](https://github.com/Chocapikk/CVE-2025-68926)
 - [Arcueld/CVE-2025-68926](https://github.com/Arcueld/CVE-2025-68926)
 
-### CVE-2025-69194
+### CVE-2025-69194 (2026-01-09)
+
+<code>A security issue was discovered in GNU Wget2 when handling Metalink documents. The application fails to properly validate file paths provided in Metalink &lt;file name&gt; elements. An attacker can abuse this behavior to write files to unintended locations on the system. This can lead to data loss or potentially allow further compromise of the user’s environment.
+</code>
+
 - [secdongle/POC_CVE-2025-69194](https://github.com/secdongle/POC_CVE-2025-69194)
 
 ### CVE-2025-492025
@@ -9169,6 +9223,7 @@
 - [Dit-Developers/CVE-2024-0044](https://github.com/Dit-Developers/CVE-2024-0044)
 - [Athexhacker/EXPLOITER](https://github.com/Athexhacker/EXPLOITER)
 - [HoyoenKim/CVE-2024-0044_PoC](https://github.com/HoyoenKim/CVE-2024-0044_PoC)
+- [JackTekno/Chrome-Forensic_CVE-2024-0044](https://github.com/JackTekno/Chrome-Forensic_CVE-2024-0044)
 
 ### CVE-2024-0132 (2024-09-26)
 
@@ -13997,7 +14052,6 @@
 </code>
 
 - [kiwids0220/CVE-2024-26230](https://github.com/kiwids0220/CVE-2024-26230)
-- [Wa1nut4/CVE-2024-26230](https://github.com/Wa1nut4/CVE-2024-26230)
 
 ### CVE-2024-26304 (2024-05-01)
 
@@ -19812,7 +19866,7 @@
 - [Web3-Serializer/CVE-2024-58258](https://github.com/Web3-Serializer/CVE-2024-58258)
 
 ### CVE-2024-415770
-- [muhmad-umair/CVE-2024-415770-ssrf-rce](https://github.com/muhmad-umair/CVE-2024-415770-ssrf-rce)
+- [0dinox/CVE-2024-415770-ssrf-rce](https://github.com/0dinox/CVE-2024-415770-ssrf-rce)
 
 ### CVE-2024-1642470
 - [Symbolexe/CVE-2024-1642470](https://github.com/Symbolexe/CVE-2024-1642470)
@@ -23637,6 +23691,13 @@
 
 - [shoucheng3/xwiki__xwiki-commons_CVE-2023-29528_14-9-rc-1](https://github.com/shoucheng3/xwiki__xwiki-commons_CVE-2023-29528_14-9-rc-1)
 
+### CVE-2023-29689 (2023-08-04)
+
+<code>PyroCMS 3.9 contains a remote code execution (RCE) vulnerability that can be exploited through a server-side template injection (SSTI) flaw. This vulnerability allows a malicious attacker to send customized commands to the server and execute arbitrary code on the affected system.
+</code>
+
+- [YSaxon/pyrocms-ssti-fix](https://github.com/YSaxon/pyrocms-ssti-fix)
+
 ### CVE-2023-29808 (2023-05-12)
 
 <code>Cross Site Scripting (XSS) vulnerability in vogtmh cmaps (companymaps) 8.0 allows attackers to execute arbitrary code.
@@ -26001,6 +26062,7 @@
 - [yangdayyy/cve-2023-38831](https://github.com/yangdayyy/cve-2023-38831)
 - [ouoxii/Software-Testing-Final-Project](https://github.com/ouoxii/Software-Testing-Final-Project)
 - [anelya0333/Exploiting-CVE-2023-38831](https://github.com/anelya0333/Exploiting-CVE-2023-38831)
+- [mishra0230/CVE-2023-38831](https://github.com/mishra0230/CVE-2023-38831)
 
 ### CVE-2023-38836 (2023-08-21)
 
@@ -29906,6 +29968,13 @@
 - [corelight/CVE-2022-3602](https://github.com/corelight/CVE-2022-3602)
 - [cybersecurityworks553/CVE-2022-3602-and-CVE-2022-3786](https://github.com/cybersecurityworks553/CVE-2022-3602-and-CVE-2022-3786)
 
+### CVE-2022-3653 (2022-11-01)
+
+<code>Heap buffer overflow in Vulkan in Google Chrome prior to 107.0.5304.62 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+</code>
+
+- [SpiralBL0CK/CVE-2022-3653](https://github.com/SpiralBL0CK/CVE-2022-3653)
+
 ### CVE-2022-3656 (2022-11-01)
 
 <code>Insufficient data validation in File System in Google Chrome prior to 107.0.5304.62 allowed a remote attacker to bypass file system restrictions via a crafted HTML page. (Chromium security severity: Medium)
@@ -33183,7 +33252,6 @@
 - [RathoreAbhiii/Folina-Vulnerability-Exploitation-Detection-and-Mitigation](https://github.com/RathoreAbhiii/Folina-Vulnerability-Exploitation-Detection-and-Mitigation)
 - [seinab-ibrahim/Follina-Vulnerability-CVE-2022-30190-Exploit-Analysis](https://github.com/seinab-ibrahim/Follina-Vulnerability-CVE-2022-30190-Exploit-Analysis)
 - [Arkha-Corvus/LetsDefend-SOC173-Follina-0-Day-Detected](https://github.com/Arkha-Corvus/LetsDefend-SOC173-Follina-0-Day-Detected)
-- [mishra0230/CVE-2022-30190-Follina](https://github.com/mishra0230/CVE-2022-30190-Follina)
 
 ### CVE-2022-30203 (2022-07-12)
 
@@ -39600,7 +39668,7 @@
 - [bgsilvait/WIn-CVE-2021-31166](https://github.com/bgsilvait/WIn-CVE-2021-31166)
 - [y0g3sh-99/CVE-2021-31166-Exploit](https://github.com/y0g3sh-99/CVE-2021-31166-Exploit)
 - [ZZ-SOCMAP/CVE-2021-31166](https://github.com/ZZ-SOCMAP/CVE-2021-31166)
-- [imikoYa/CVE-2021-31166-exploit](https://github.com/imikoYa/CVE-2021-31166-exploit)
+- [iranzai/CVE-2021-31166-exploit](https://github.com/iranzai/CVE-2021-31166-exploit)
 - [mauricelambert/CVE-2021-31166](https://github.com/mauricelambert/CVE-2021-31166)
 - [0xmaximus/Home-Demolisher](https://github.com/0xmaximus/Home-Demolisher)
 
@@ -40265,7 +40333,6 @@
 - [TaroballzChen/CVE-2021-36260-metasploit](https://github.com/TaroballzChen/CVE-2021-36260-metasploit)
 - [tuntin9x/CheckHKRCE](https://github.com/tuntin9x/CheckHKRCE)
 - [Cuerz/CVE-2021-36260](https://github.com/Cuerz/CVE-2021-36260)
-- [TakenoSite/Simple-CVE-2021-36260](https://github.com/TakenoSite/Simple-CVE-2021-36260)
 - [haingn/HIK-CVE-2021-36260-Exploit](https://github.com/haingn/HIK-CVE-2021-36260-Exploit)
 - [NanoTrash/hikvision_brute](https://github.com/NanoTrash/hikvision_brute)
 - [tamim1089/HikvisionExploiter](https://github.com/tamim1089/HikvisionExploiter)
@@ -40883,6 +40950,7 @@
 - [donky16/CVE-2021-40346-POC](https://github.com/donky16/CVE-2021-40346-POC)
 - [alikarimi999/CVE-2021-40346](https://github.com/alikarimi999/CVE-2021-40346)
 - [Vulnmachines/HAProxy_CVE-2021-40346](https://github.com/Vulnmachines/HAProxy_CVE-2021-40346)
+- [BoianEduard/CVE-2021-40346](https://github.com/BoianEduard/CVE-2021-40346)
 
 ### CVE-2021-40352 (2021-09-01)
 
@@ -44021,7 +44089,6 @@
 - [nyambiblaise/Domain-Controller-DC-Exploitation-with-Metasploit-Impacket](https://github.com/nyambiblaise/Domain-Controller-DC-Exploitation-with-Metasploit-Impacket)
 - [mods20hh/ZeroLogon-PoC-DC-Pwn](https://github.com/mods20hh/ZeroLogon-PoC-DC-Pwn)
 - [commit2main/zerologon-lab](https://github.com/commit2main/zerologon-lab)
-- [JeNilSE/CVE-2020-1472-ZeroLogon-Analysis](https://github.com/JeNilSE/CVE-2020-1472-ZeroLogon-Analysis)
 
 ### CVE-2020-1493 (2020-08-17)
 
@@ -57503,7 +57570,6 @@
 - [MuhammadAbdullah192/CVE-2017-5638-Remote-Code-Execution-Apache-Struts2-EXPLOITATION](https://github.com/MuhammadAbdullah192/CVE-2017-5638-Remote-Code-Execution-Apache-Struts2-EXPLOITATION)
 - [kaylertee/Computer-Security-Equifax-2017](https://github.com/kaylertee/Computer-Security-Equifax-2017)
 - [FozilCV/Apache-Struts2-CVE-2017-5638](https://github.com/FozilCV/Apache-Struts2-CVE-2017-5638)
-- [ACharaf06/CVE-2017-5638-Attack-and-Defense](https://github.com/ACharaf06/CVE-2017-5638-Attack-and-Defense)
 - [louislafosse/CVE-2017-5638-assignement](https://github.com/louislafosse/CVE-2017-5638-assignement)
 
 ### CVE-2017-5645 (2017-04-17)
@@ -61279,6 +61345,7 @@
 - [0xEval/cve-2015-3224](https://github.com/0xEval/cve-2015-3224)
 - [n000xy/CVE-2015-3224-](https://github.com/n000xy/CVE-2015-3224-)
 - [Sic4rio/CVE-2015-3224](https://github.com/Sic4rio/CVE-2015-3224)
+- [SQU4NCH/CVE-2015-3224](https://github.com/SQU4NCH/CVE-2015-3224)
 
 ### CVE-2015-3239 (2015-08-26)
 
@@ -63725,6 +63792,7 @@
 - [hajisthabegum/Exploiting-vsFTPd-2.3.4-Backdoor-Vulnerability-Ethical-Hacking-Lab-with-Metasploitable-2-Metasploit](https://github.com/hajisthabegum/Exploiting-vsFTPd-2.3.4-Backdoor-Vulnerability-Ethical-Hacking-Lab-with-Metasploitable-2-Metasploit)
 - [avivyap/CVE-2011-2523](https://github.com/avivyap/CVE-2011-2523)
 - [KlyneZyro/Metasploitable2-VAPT-Report](https://github.com/KlyneZyro/Metasploitable2-VAPT-Report)
+- [Mirza-22144/Vulnerability-Assessment-Exploitation-Lab](https://github.com/Mirza-22144/Vulnerability-Assessment-Exploitation-Lab)
 
 ### CVE-2011-2553
 - [carlosrpastrana/cve-2011-2553](https://github.com/carlosrpastrana/cve-2011-2553)
