@@ -7353,6 +7353,7 @@
 - [momika233/CVE-2025-55182-bypass](https://github.com/momika233/CVE-2025-55182-bypass)
 - [Asder10/React2Shell](https://github.com/Asder10/React2Shell)
 - [Asder10/asder10.github.io](https://github.com/Asder10/asder10.github.io)
+- [mooowu/cve-2025-55182-poc](https://github.com/mooowu/cve-2025-55182-poc)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -20227,6 +20228,7 @@
 </code>
 
 - [CRONUS-Security/xinhu-v2.3.2](https://github.com/CRONUS-Security/xinhu-v2.3.2)
+- [C1oudfL0w0/CVE-2023-1773-Exploit](https://github.com/C1oudfL0w0/CVE-2023-1773-Exploit)
 
 ### CVE-2023-1829 (2023-04-12)
 
@@ -31407,6 +31409,7 @@
 
 - [fbusr/CVE-2022-23779](https://github.com/fbusr/CVE-2022-23779)
 - [Vulnmachines/Zoho_CVE-2022-23779](https://github.com/Vulnmachines/Zoho_CVE-2022-23779)
+- [Rishi-kaul/CVE-2022-23779](https://github.com/Rishi-kaul/CVE-2022-23779)
 
 ### CVE-2022-23808 (2022-01-22)
 
