@@ -8,6 +8,9 @@
 
 - [fevar54/CVE-2026-0628-POC](https://github.com/fevar54/CVE-2026-0628-POC)
 
+### CVE-2026-0842
+- [davidrxchester/smart-sketcher-upload](https://github.com/davidrxchester/smart-sketcher-upload)
+
 ### CVE-2026-5000
 - [Perl-Code/CVE-2026-5000](https://github.com/Perl-Code/CVE-2026-5000)
 
@@ -1306,6 +1309,7 @@
 </code>
 
 - [ChaseHCS/CVE-2025-6514](https://github.com/ChaseHCS/CVE-2025-6514)
+- [dotsetlabs/overwatch](https://github.com/dotsetlabs/overwatch)
 
 ### CVE-2025-6543 (2025-06-25)
 
@@ -1798,13 +1802,6 @@
 </code>
 
 - [d0n601/CVE-2025-9216](https://github.com/d0n601/CVE-2025-9216)
-
-### CVE-2025-9223 (2025-11-11)
-
-<code>Zohocorp ManageEngine Applications Manager versions 178100 and below are vulnerable to authenticated command injection vulnerability due to the improper configuration in the execute program action feature.
-</code>
-
-- [networkkiller/CVE-2025-9223](https://github.com/networkkiller/CVE-2025-9223)
 
 ### CVE-2025-9242 (2025-09-17)
 
@@ -2381,6 +2378,13 @@
 </code>
 
 - [yt2w/CVE-2025-15177](https://github.com/yt2w/CVE-2025-15177)
+
+### CVE-2025-15495 (2026-01-09)
+
+<code>A vulnerability was found in BiggiDroid Simple PHP CMS 1.0. This impacts an unknown function of the file /admin/editsite.php. The manipulation of the argument image results in unrestricted upload. The attack can be launched remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.
+</code>
+
+- [Asim-QAZi/RCE-Simplephpblog-biggiedroid](https://github.com/Asim-QAZi/RCE-Simplephpblog-biggiedroid)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -5109,7 +5113,6 @@
 </code>
 
 - [rxerium/CVE-2025-41244](https://github.com/rxerium/CVE-2025-41244)
-- [NULL200OK/CVE-2025-41244](https://github.com/NULL200OK/CVE-2025-41244)
 
 ### CVE-2025-41373 (2025-08-01)
 
@@ -7197,6 +7200,7 @@
 - [byte16384/CVE-2025-55182](https://github.com/byte16384/CVE-2025-55182)
 - [kondukto-io/vulnerable-next-js-poc](https://github.com/kondukto-io/vulnerable-next-js-poc)
 - [eytannatye/R2S_CVE-2025-55182](https://github.com/eytannatye/R2S_CVE-2025-55182)
+- [Jaycelation/CVE-2025-55182](https://github.com/Jaycelation/CVE-2025-55182)
 - [shyambhanushali/React2Shell](https://github.com/shyambhanushali/React2Shell)
 - [amir-malek/react-cve-2025-55182](https://github.com/amir-malek/react-cve-2025-55182)
 - [Yyax13/CVE-2025-55182](https://github.com/Yyax13/CVE-2025-55182)
@@ -8216,6 +8220,9 @@
 
 - [lorenzocamilli/CVE-2025-62950-PoC](https://github.com/lorenzocamilli/CVE-2025-62950-PoC)
 
+### CVE-2025-63314
+- [padayali-JD/CVE-2025-63314](https://github.com/padayali-JD/CVE-2025-63314)
+
 ### CVE-2025-63353 (2025-11-12)
 
 <code>A vulnerability in FiberHome GPON ONU HG6145F1 RP4423 allows the device's factory default Wi-Fi password (WPA/WPA2 pre-shared key) to be predicted from the SSID. The device generates default passwords using a deterministic algorithm that derives the router passphrase from the SSID, enabling an attacker who can observe the SSID to predict the default password without authentication or user interaction.
@@ -8854,6 +8861,9 @@
 
 - [audiopump/cve-2025-66723](https://github.com/audiopump/cve-2025-66723)
 
+### CVE-2025-66802
+- [mtgsjr/CVE-2025-66802](https://github.com/mtgsjr/CVE-2025-66802)
+
 ### CVE-2025-66837 (2026-01-07)
 
 <code>A file upload vulnerability in ARIS 10.0.23.0.3587512 allows attackers to execute arbitrary code via uploading a crafted PDF file/Malware
@@ -9081,6 +9091,7 @@
 </code>
 
 - [Ak-cybe/CVE-2025-68664-LangGrinch-PoC](https://github.com/Ak-cybe/CVE-2025-68664-LangGrinch-PoC)
+- [comerc/CVE-2025-68664](https://github.com/comerc/CVE-2025-68664)
 
 ### CVE-2025-68705 (2026-01-07)
 
@@ -9905,6 +9916,7 @@
 - [Yuma-Tsushima07/CVE-2024-3094](https://github.com/Yuma-Tsushima07/CVE-2024-3094)
 - [jfrog/cve-2024-3094-tools](https://github.com/jfrog/cve-2024-3094-tools)
 - [Simplifi-ED/CVE-2024-3094-patcher](https://github.com/Simplifi-ED/CVE-2024-3094-patcher)
+- [gayatriracha/CVE-2024-3094-Nmap-NSE-script](https://github.com/gayatriracha/CVE-2024-3094-Nmap-NSE-script)
 - [Mustafa1986/CVE-2024-3094](https://github.com/Mustafa1986/CVE-2024-3094)
 - [MrBUGLF/XZ-Utils_CVE-2024-3094](https://github.com/MrBUGLF/XZ-Utils_CVE-2024-3094)
 - [galacticquest/cve-2024-3094-detect](https://github.com/galacticquest/cve-2024-3094-detect)
@@ -10554,6 +10566,13 @@
 
 - [gogo2464/CVE-2024-5124](https://github.com/gogo2464/CVE-2024-5124)
 - [XiaomingX/cve-2024-5124-poc](https://github.com/XiaomingX/cve-2024-5124-poc)
+
+### CVE-2024-5153 (2024-06-06)
+
+<code>The Startklar Elementor Addons plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 1.7.15 via the 'dropzone_hash' parameter. This makes it possible for unauthenticated attackers to copy the contents of arbitrary files on the server, which can contain sensitive information, and to delete arbitrary directories, including the root WordPress directory.
+</code>
+
+- [Sudo-WP/sudowp-dropzone-elementor](https://github.com/Sudo-WP/sudowp-dropzone-elementor)
 
 ### CVE-2024-5246 (2024-05-23)
 
@@ -30195,7 +30214,7 @@
 <code>The ClickFunnels WordPress plugin through 3.1.1 does not validate and escape one of its shortcode attributes, which could allow users with a role as low as contributor to perform Stored Cross-Site Scripting attack.
 </code>
 
-- [makmour/clickfunnels-zurich](https://github.com/makmour/clickfunnels-zurich)
+- [Sudo-WP/clickfunnels-zurich](https://github.com/Sudo-WP/clickfunnels-zurich)
 
 ### CVE-2022-4896 (2023-09-12)
 
@@ -57573,6 +57592,7 @@
 - [MuhammadAbdullah192/CVE-2017-5638-Remote-Code-Execution-Apache-Struts2-EXPLOITATION](https://github.com/MuhammadAbdullah192/CVE-2017-5638-Remote-Code-Execution-Apache-Struts2-EXPLOITATION)
 - [kaylertee/Computer-Security-Equifax-2017](https://github.com/kaylertee/Computer-Security-Equifax-2017)
 - [FozilCV/Apache-Struts2-CVE-2017-5638](https://github.com/FozilCV/Apache-Struts2-CVE-2017-5638)
+- [ACharaf06/CVE-2017-5638-Attack-and-Defense](https://github.com/ACharaf06/CVE-2017-5638-Attack-and-Defense)
 - [louislafosse/CVE-2017-5638-assignement](https://github.com/louislafosse/CVE-2017-5638-assignement)
 
 ### CVE-2017-5645 (2017-04-17)
@@ -61981,6 +62001,9 @@
 
 - [omarkurt/cve-2014-0130](https://github.com/omarkurt/cve-2014-0130)
 
+### CVE-2014-016
+- [louislafosse/CVE-2014-016-assignement](https://github.com/louislafosse/CVE-2014-016-assignement)
+
 ### CVE-2014-0160 (2014-04-07)
 
 <code>The (1) TLS and (2) DTLS implementations in OpenSSL 1.0.1 before 1.0.1g do not properly handle Heartbeat Extension packets, which allows remote attackers to obtain sensitive information from process memory via crafted packets that trigger a buffer over-read, as demonstrated by reading private keys, related to d1_both.c and t1_lib.c, aka the Heartbleed bug.
@@ -64008,13 +64031,6 @@
 </code>
 
 - [greysneakthief/14641-v2](https://github.com/greysneakthief/14641-v2)
-
-### CVE-2010-2883 (2010-09-09)
-
-<code>Stack-based buffer overflow in CoolType.dll in Adobe Reader and Acrobat 9.x before 9.4, and 8.x before 8.2.5 on Windows and Mac OS X, allows remote attackers to execute arbitrary code or cause a denial of service (application crash) via a PDF document with a long field in a Smart INdependent Glyphlets (SING) table in a TTF font, as exploited in the wild in September 2010. NOTE: some of these details are obtained from third party information.
-</code>
-
-- [avielzecharia/CVE-2010-2883](https://github.com/avielzecharia/CVE-2010-2883)
 
 ### CVE-2010-3124 (2010-08-26)
 
