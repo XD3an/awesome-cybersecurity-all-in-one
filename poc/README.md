@@ -4833,6 +4833,13 @@
 
 - [Eyodav/CVE-2025-34161](https://github.com/Eyodav/CVE-2025-34161)
 
+### CVE-2025-34171 (2026-01-03)
+
+<code>CasaOS versions up to and including 0.4.15 expose multiple unauthenticated endpoints that allow remote attackers to retrieve sensitive configuration files and system debug information. The /v1/users/image endpoint can be abused with a user-controlled path parameter to access files under /var/lib/casaos/1/, which reveals installed applications and configuration details. Additionally, /v1/sys/debug discloses host operating system, kernel, hardware, and storage information. The endpoints also return distinct error messages, enabling file existence enumeration of arbitrary paths on the underlying host filesystem. This information disclosure can be used for reconnaissance and to facilitate targeted follow-up attacks against services deployed on the host.
+</code>
+
+- [Eyodav/CVE-2025-34171](https://github.com/Eyodav/CVE-2025-34171)
+
 ### CVE-2025-34226 (2025-10-03)
 
 <code>OpenPLC Runtime v3 contains an input validation flaw in the /upload-program-action endpoint: the epoch_time field supplied during program uploads is not validated and can be crafted to induce corruption of the programs database. After a successful malformed upload the runtime continues to operate until a restart; on restart the runtime can fail to start because of corrupted database entries, resulting in persistent denial of service requiring complete rebase of the product to recover. This vulnerability was remediated by commit 095ee09.
@@ -8853,6 +8860,9 @@
 </code>
 
 - [Ashwesker/Ashwesker-CVE-2025-66644](https://github.com/Ashwesker/Ashwesker-CVE-2025-66644)
+
+### CVE-2025-66683
+- [scap3sh4rk/CVE-2025-66683](https://github.com/scap3sh4rk/CVE-2025-66683)
 
 ### CVE-2025-66723 (2025-12-30)
 
