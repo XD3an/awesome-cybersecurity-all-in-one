@@ -8,7 +8,11 @@
 
 - [fevar54/CVE-2026-0628-POC](https://github.com/fevar54/CVE-2026-0628-POC)
 
-### CVE-2026-0842
+### CVE-2026-0842 (2026-01-11)
+
+<code>A flaw has been found in Flycatcher Toys smART Sketcher up to 2.0. This affects an unknown part of the component Bluetooth Low Energy Interface. This manipulation causes missing authentication. The attack can only be done within the local network. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.
+</code>
+
 - [davidrxchester/smart-sketcher-upload](https://github.com/davidrxchester/smart-sketcher-upload)
 
 ### CVE-2026-5000
@@ -35,7 +39,7 @@
 
 - [Ashwesker/Ashwesker-CVE-2026-21440](https://github.com/Ashwesker/Ashwesker-CVE-2026-21440)
 - [you-ssef9/CVE-2026-21440](https://github.com/you-ssef9/CVE-2026-21440)
-- [k0nnect/cve-2026-21440-writeup](https://github.com/k0nnect/cve-2026-21440-writeup)
+- [k0nnect/cve-2026-21440-writeup-poc](https://github.com/k0nnect/cve-2026-21440-writeup-poc)
 
 ### CVE-2026-21445 (2026-01-02)
 
@@ -1604,6 +1608,7 @@
 - [xi0onamdev/WinRAR-CVE-2025-8088-Exploitation-Toolkit](https://github.com/xi0onamdev/WinRAR-CVE-2025-8088-Exploitation-Toolkit)
 - [Markusino488/cve-2025-8088](https://github.com/Markusino488/cve-2025-8088)
 - [vitalichkaa/CVE-2025-8088](https://github.com/vitalichkaa/CVE-2025-8088)
+- [ilhamrzr/RAR-Anomaly-Inspector](https://github.com/ilhamrzr/RAR-Anomaly-Inspector)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -2361,6 +2366,7 @@
 - [waheeb71/CVE-2025-14847](https://github.com/waheeb71/CVE-2025-14847)
 - [CadGoose/MongoBleed-CVE-2025-14847-Fully-Automated-scanner](https://github.com/CadGoose/MongoBleed-CVE-2025-14847-Fully-Automated-scanner)
 - [AdolfBharath/mongobleed](https://github.com/AdolfBharath/mongobleed)
+- [sahar042/CVE-2025-14847](https://github.com/sahar042/CVE-2025-14847)
 
 ### CVE-2025-14857
 - [Ermensonx/CVE-2025-14857-MongoBleed](https://github.com/Ermensonx/CVE-2025-14857-MongoBleed)
@@ -3418,6 +3424,7 @@
 </code>
 
 - [tansique-17/CVE-2025-26198](https://github.com/tansique-17/CVE-2025-26198)
+- [WailYacoubi9/CVE-2025-26198](https://github.com/WailYacoubi9/CVE-2025-26198)
 
 ### CVE-2025-26199 (2025-06-18)
 
@@ -4298,6 +4305,7 @@
 - [Teexo/CVE-2025-31161](https://github.com/Teexo/CVE-2025-31161)
 - [0xDTC/CrushFTP-auth-bypass-CVE-2025-31161](https://github.com/0xDTC/CrushFTP-auth-bypass-CVE-2025-31161)
 - [ch3m1cl/CVE-2025-31161](https://github.com/ch3m1cl/CVE-2025-31161)
+- [Dairrow/CVE-2025-31161](https://github.com/Dairrow/CVE-2025-31161)
 
 ### CVE-2025-31200 (2025-04-16)
 
@@ -7365,6 +7373,7 @@
 - [Asder10/React2Shell](https://github.com/Asder10/React2Shell)
 - [Asder10/asder10.github.io](https://github.com/Asder10/asder10.github.io)
 - [mooowu/cve-2025-55182-poc](https://github.com/mooowu/cve-2025-55182-poc)
+- [Faithtiannn/CVE-2025-55182](https://github.com/Faithtiannn/CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -9008,6 +9017,13 @@
 </code>
 
 - [x0root/CVE-2025-68116](https://github.com/x0root/CVE-2025-68116)
+
+### CVE-2025-68120 (2025-12-29)
+
+<code>To prevent unexpected untrusted code execution, the Visual Studio Code Go extension is now disabled in Restricted Mode.
+</code>
+
+- [choewonwoo1817/CVE-2025-68120](https://github.com/choewonwoo1817/CVE-2025-68120)
 
 ### CVE-2025-68147 (2025-12-17)
 
@@ -14496,6 +14512,7 @@
 - [vitaciminIPI/CVE-2024-28397-RCE](https://github.com/vitaciminIPI/CVE-2024-28397-RCE)
 - [0xPadme/CVE-2024-28397-Reverse-Shell](https://github.com/0xPadme/CVE-2024-28397-Reverse-Shell)
 - [L1337Xi/CVE-2024-28397-Exploit-Automation](https://github.com/L1337Xi/CVE-2024-28397-Exploit-Automation)
+- [3z-p0wn/CVE-2024-28397-exploit](https://github.com/3z-p0wn/CVE-2024-28397-exploit)
 
 ### CVE-2024-28515 (2024-04-03)
 
@@ -30224,7 +30241,7 @@
 <code>The ClickFunnels WordPress plugin through 3.1.1 does not validate and escape one of its shortcode attributes, which could allow users with a role as low as contributor to perform Stored Cross-Site Scripting attack.
 </code>
 
-- [Sudo-WP/clickfunnels-zurich](https://github.com/Sudo-WP/clickfunnels-zurich)
+- [Sudo-WP/sudowp-clickfunnels-zurich](https://github.com/Sudo-WP/sudowp-clickfunnels-zurich)
 
 ### CVE-2022-4896 (2023-09-12)
 
