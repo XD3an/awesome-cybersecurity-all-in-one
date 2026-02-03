@@ -114,7 +114,6 @@ This repository contains a curated collection of cybersecurity resources organiz
 - **[Awesome Hacking](https://github.com/Hack-with-Github/Awesome-Hacking)** - Collection of various awesome lists for hackers and pentesters
 - **[h4cker](https://github.com/The-Art-of-Hacking/h4cker)** - Thousands of cybersecurity-related references and resources
 - **[Personal Security Checklist](https://github.com/Lissy93/personal-security-checklist)** - 300+ tips for protecting digital security and privacy
-- **[Infostealers by Hudson Rock](https://infostealers.com/)** - A hub for news and research specifically about Infostealer malware threats
 
 ### 🎓 Training Platforms
 
