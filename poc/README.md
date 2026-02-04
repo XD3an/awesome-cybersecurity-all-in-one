@@ -33,6 +33,7 @@
 
 ### CVE-2026-0828
 - [KOSEC-LLC/BYOVD-Research](https://github.com/KOSEC-LLC/BYOVD-Research)
+- [DeathShotXD/0xKern3lCrush-Foreverday-BYOVD-CVE-2026-0828](https://github.com/DeathShotXD/0xKern3lCrush-Foreverday-BYOVD-CVE-2026-0828)
 
 ### CVE-2026-0834 (2026-01-21)
 
@@ -904,6 +905,7 @@
 - [lil0xplorer/CVE-2025-2304-PoC](https://github.com/lil0xplorer/CVE-2025-2304-PoC)
 - [predyy/CVE-2025-2304](https://github.com/predyy/CVE-2025-2304)
 - [7acini/CVE-2025-2304-CamaleonCMS-PoC](https://github.com/7acini/CVE-2025-2304-CamaleonCMS-PoC)
+- [Alien0ne/CVE-2025-2304](https://github.com/Alien0ne/CVE-2025-2304)
 
 ### CVE-2025-2404 (2025-09-16)
 
@@ -1954,6 +1956,7 @@
 - [v31l0x1/ThrottleStopPPL](https://github.com/v31l0x1/ThrottleStopPPL)
 - [xM0kht4r/CVE-2025-7771](https://github.com/xM0kht4r/CVE-2025-7771)
 - [lzty/CVE-2025-7771](https://github.com/lzty/CVE-2025-7771)
+- [DeathShotXD/0xKern3lCrush-Foreverday-BYOVD-CVE-2026-0828](https://github.com/DeathShotXD/0xKern3lCrush-Foreverday-BYOVD-CVE-2026-0828)
 
 ### CVE-2025-7775 (2025-08-26)
 
@@ -8031,7 +8034,6 @@
 - [HackIndex-io/React2Shell-CVE-2025-55182](https://github.com/HackIndex-io/React2Shell-CVE-2025-55182)
 - [rahuulmiishra/react2shell-CVE-2025-55182](https://github.com/rahuulmiishra/react2shell-CVE-2025-55182)
 - [m3ngx1ng/CVE-2025-55182-GUI](https://github.com/m3ngx1ng/CVE-2025-55182-GUI)
-- [tiago4lexandre/React2Shell](https://github.com/tiago4lexandre/React2Shell)
 - [joaovicdev/EXPLOIT-CVE-2025-55182](https://github.com/joaovicdev/EXPLOIT-CVE-2025-55182)
 - [AdityaBhatt3010/React2Shell-CVE-2025-55182](https://github.com/AdityaBhatt3010/React2Shell-CVE-2025-55182)
 - [gahoole77/gahoole77.github.io](https://github.com/gahoole77/gahoole77.github.io)
@@ -9911,6 +9913,13 @@
 
 - [ExploreUnknowed/CVE-2025-68472](https://github.com/ExploreUnknowed/CVE-2025-68472)
 
+### CVE-2025-68493 (2026-01-11)
+
+<code>Missing XML Validation vulnerability in Apache Struts, Apache Struts.\n\nThis issue affects Apache Struts: from 2.0.0 before 2.2.1; Apache Struts: from 2.2.1 through 6.1.0.\n\nUsers are recommended to upgrade to version 6.1.1, which fixes the issue.
+</code>
+
+- [hsltz/CVE-2025-68493](https://github.com/hsltz/CVE-2025-68493)
+
 ### CVE-2025-68613 (2025-12-19)
 
 <code>n8n is an open source workflow automation platform. Versions starting with 0.211.0 and prior to 1.120.4, 1.121.1, and 1.122.0 contain a critical Remote Code Execution (RCE) vulnerability in their workflow expression evaluation system. Under certain conditions, expressions supplied by authenticated users during workflow configuration may be evaluated in an execution context that is not sufficiently isolated from the underlying runtime. An authenticated attacker could abuse this behavior to execute arbitrary code with the privileges of the n8n process. Successful exploitation may lead to full compromise of the affected instance, including unauthorized access to sensitive data, modification of workflows, and execution of system-level operations. This issue has been fixed in versions 1.120.4, 1.121.1, and 1.122.0. Users are strongly advised to upgrade to a patched version, which introduces additional safeguards to restrict expression evaluation. If upgrading is not immediately possible, administrators should consider the following temporary mitigations: Limit workflow creation and editing permissions to fully trusted users only; and/or deploy n8n in a hardened environment with restricted operating system privileges and network access to reduce the impact of potential exploitation. These workarounds do not fully eliminate the risk and should only be used as short-term measures.
@@ -10068,13 +10077,6 @@
 </code>
 
 - [alkimcoskun/security-advisories](https://github.com/alkimcoskun/security-advisories)
-
-### CVE-2025-70311 (2026-02-03)
-
-<code>JEEWMS 1.0 is vulnerable to SQL Injection. Attackers can inject malicious SQL statements through the id1 and id2 parameters in the /systemControl.do interface for attack.
-</code>
-
-- [mewb12/CVE-2025-70311-JEEWMS](https://github.com/mewb12/CVE-2025-70311-JEEWMS)
 
 ### CVE-2025-70368 (2026-01-26)
 
@@ -15948,6 +15950,7 @@
 - [wqry085/PoC-Deployer-System](https://github.com/wqry085/PoC-Deployer-System)
 - [CleoV2/Debuggable-App-Exploit](https://github.com/CleoV2/Debuggable-App-Exploit)
 - [fcy10012/CVE-2024-31317-Deployer](https://github.com/fcy10012/CVE-2024-31317-Deployer)
+- [kalibb/CVE-2024-31317-Deployer](https://github.com/kalibb/CVE-2024-31317-Deployer)
 
 ### CVE-2024-31319 (2024-07-09)
 
@@ -44293,6 +44296,7 @@
 - [lsw29475/CVE-2020-0022](https://github.com/lsw29475/CVE-2020-0022)
 - [devdanqtuan/poc-for-cve-2020-0022](https://github.com/devdanqtuan/poc-for-cve-2020-0022)
 - [themmokhtar/CVE-2020-0022](https://github.com/themmokhtar/CVE-2020-0022)
+- [kalibb/CVE-2020-0022](https://github.com/kalibb/CVE-2020-0022)
 
 ### CVE-2020-0023 (2020-02-13)
 
