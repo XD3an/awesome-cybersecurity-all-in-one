@@ -165,6 +165,13 @@
 - [SimoesCTT/SCTT-2026-33-0007-The-OLE-Vortex-Laminar-Bypass-](https://github.com/SimoesCTT/SCTT-2026-33-0007-The-OLE-Vortex-Laminar-Bypass-)
 - [SimoesCTT/CTT-MICROSOFT-OFFICE-OLE-MANIFOLD-BYPASS-CVE-2026-21509](https://github.com/SimoesCTT/CTT-MICROSOFT-OFFICE-OLE-MANIFOLD-BYPASS-CVE-2026-21509)
 
+### CVE-2026-21721 (2026-01-27)
+
+<code>The dashboard permissions API does not verify the target dashboard scope and only checks the dashboards.permissions:* action. As a result, a user who has permission management rights on one dashboard can read and modify permissions on other dashboards. This is an organization‑internal privilege escalation.
+</code>
+
+- [Leonideath/Exploit-LPE-CVE-2026-21721](https://github.com/Leonideath/Exploit-LPE-CVE-2026-21721)
+
 ### CVE-2026-21858 (2026-01-07)
 
 <code>n8n is an open source workflow automation platform. Versions starting with 1.65.0 and below 1.121.0 enable an attacker to access files on the underlying server through execution of certain form-based workflows. A vulnerable workflow could grant access to an unauthenticated remote attacker, resulting in exposure of sensitive information stored on the system and may enable further compromise depending on deployment configuration and workflow usage. This issue is fixed in version 1.121.0.
@@ -388,6 +395,8 @@
 - [Good123321-bot/good123321-bot.github.io](https://github.com/Good123321-bot/good123321-bot.github.io)
 - [Moxxic1/Tell-Me-Root](https://github.com/Moxxic1/Tell-Me-Root)
 - [Moxxic1/moxxic1.github.io](https://github.com/Moxxic1/moxxic1.github.io)
+- [obrunolima1910/CVE-2026-24061](https://github.com/obrunolima1910/CVE-2026-24061)
+- [obrunolima1910/obrunolima1910.github.io](https://github.com/obrunolima1910/obrunolima1910.github.io)
 
 ### CVE-2026-24102
 - [SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition](https://github.com/SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition)
@@ -427,6 +436,13 @@
 
 - [otakuliu/CVE-2026-24841_Range](https://github.com/otakuliu/CVE-2026-24841_Range)
 
+### CVE-2026-24854 (2026-01-30)
+
+<code>ChurchCRM is an open-source church management system. A SQL Injection vulnerability exists in endpoint `/PaddleNumEditor.php` in ChurchCRM prior to version 6.7.2. Any authenticated user, including one with zero assigned permissions, can exploit SQL injection through the `PerID` parameter. Version 6.7.2 contains a patch for the issue.
+</code>
+
+- [mbanyamer/CVE-2026-24854-ChurchCRM-6.7.2-Authenticated-Numeric-SQL-Injection](https://github.com/mbanyamer/CVE-2026-24854-ChurchCRM-6.7.2-Authenticated-Numeric-SQL-Injection)
+
 ### CVE-2026-24858 (2026-01-27)
 
 <code>An Authentication Bypass Using an Alternate Path or Channel vulnerability [CWE-288] vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.5, FortiAnalyzer 7.4.0 through 7.4.9, FortiAnalyzer 7.2.0 through 7.2.11, FortiAnalyzer 7.0.0 through 7.0.15, FortiManager 7.6.0 through 7.6.5, FortiManager 7.4.0 through 7.4.9, FortiManager 7.2.0 through 7.2.11, FortiManager 7.0.0 through 7.0.15, FortiOS 7.6.0 through 7.6.5, FortiOS 7.4.0 through 7.4.10, FortiOS 7.2.0 through 7.2.12, FortiOS 7.0.0 through 7.0.18, FortiProxy 7.6.0 through 7.6.4, FortiProxy 7.4.0 through 7.4.12, FortiProxy 7.2.0 through 7.2.15, FortiProxy 7.0.0 through 7.0.22, FortiWeb 8.0.0 through 8.0.3, FortiWeb 7.6.0 through 7.6.6, FortiWeb 7.4.0 through 7.4.11 may allow an attacker with a FortiCloud account and a registered device to log into other devices registered to other accounts, if FortiCloud SSO authentication is enabled on those devices.
@@ -451,6 +467,13 @@
 </code>
 
 - [Jvr2022/CVE-2026-25126](https://github.com/Jvr2022/CVE-2026-25126)
+
+### CVE-2026-25130 (2026-01-30)
+
+<code>Cybersecurity AI (CAI) is a framework for AI Security. In versions up to and including 0.5.10, the CAI (Cybersecurity AI) framework contains multiple argument injection vulnerabilities in its function tools. User-controlled input is passed directly to shell commands via `subprocess.Popen()` with `shell=True`, allowing attackers to execute arbitrary commands on the host system. The `find_file()` tool executes without requiring user approval because find is considered a &quot;safe&quot; pre-approved command. This means an attacker can achieve Remote Code Execution (RCE) by injecting malicious arguments (like -exec) into the args parameter, completely bypassing any human-in-the-loop safety mechanisms. Commit e22a1220f764e2d7cf9da6d6144926f53ca01cde contains a fix.
+</code>
+
+- [mbanyamer/CVE-2026-25130-Cybersecurity-AI-CAI-Framework-0.5.10](https://github.com/mbanyamer/CVE-2026-25130-Cybersecurity-AI-CAI-Framework-0.5.10)
 
 ### CVE-2026-25211 (2026-01-30)
 
@@ -1500,7 +1523,11 @@
 
 - [Nxploited/CVE-2025-5304](https://github.com/Nxploited/CVE-2025-5304)
 
-### CVE-2025-5319
+### CVE-2025-5319 (2026-02-03)
+
+<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Emit Information and Communication Technologies Industry and Trade Ltd. Co. Efficiency Management System allows SQL Injection.This issue affects Efficiency Management System: through 03022026.\n\nNOTE: The vendor was contacted early about this disclosure but did not respond in any way.
+</code>
+
 - [sahici/CVE-2025-5319](https://github.com/sahici/CVE-2025-5319)
 
 ### CVE-2025-5329
@@ -2429,7 +2456,11 @@
 
 - [lorenzocamilli/CVE-2025-10720-PoC](https://github.com/lorenzocamilli/CVE-2025-10720-PoC)
 
-### CVE-2025-10878
+### CVE-2025-10878 (2026-02-03)
+
+<code>A SQL injection vulnerability exists in the login functionality of Fikir Odalari AdminPando 1.0.1 before 2026-01-26. The username and password parameters are vulnerable to SQL injection, allowing unauthenticated attackers to bypass authentication completely. Successful exploitation grants full administrative access to the application, including the ability to manipulate the public-facing website content (HTML/DOM manipulation).
+</code>
+
 - [onurcangnc/CVE-2025-10878-AdminPandov1.0.1-SQLi](https://github.com/onurcangnc/CVE-2025-10878-AdminPandov1.0.1-SQLi)
 
 ### CVE-2025-11001 (2025-11-19)
@@ -8028,6 +8059,7 @@
 - [deepankarkumar1/CVE-2025-55182_Vulnerable-Application](https://github.com/deepankarkumar1/CVE-2025-55182_Vulnerable-Application)
 - [wnaspy/CVE-2025-55182](https://github.com/wnaspy/CVE-2025-55182)
 - [woorifisa-service-dev-6th/tech-seminar-React2Shell](https://github.com/woorifisa-service-dev-6th/tech-seminar-React2Shell)
+- [MuhammadUwais/React2Shell](https://github.com/MuhammadUwais/React2Shell)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -8487,7 +8519,11 @@
 
 - [onurcangnc/CVE-2025-57520-Stored-XSS-in-Decap-CMS-3.8.3-](https://github.com/onurcangnc/CVE-2025-57520-Stored-XSS-in-Decap-CMS-3.8.3-)
 
-### CVE-2025-57529
+### CVE-2025-57529 (2026-02-03)
+
+<code>YouDataSum CPAS Audit Management System &lt;=v4.9 is vulnerable to SQL Injection in /cpasList/findArchiveReportByDah due to insufficient input validation. This allows remote unauthenticated attackers to execute arbitrary SQL commands via crafted input to the parameter. Successful exploitation could lead to unauthorized data access
+</code>
+
 - [songqb-xx/CVE-2025-57529](https://github.com/songqb-xx/CVE-2025-57529)
 
 ### CVE-2025-57576 (2025-09-04)
@@ -8824,7 +8860,11 @@
 
 - [pescada-dev/CVE-2025-61505](https://github.com/pescada-dev/CVE-2025-61505)
 
-### CVE-2025-61506
+### CVE-2025-61506 (2026-02-03)
+
+<code>An issue was discovered in MediaCrush thru 1.0.1 allowing remote unauthenticated attackers to upload arbitrary files of any size to the /upload endpoint.
+</code>
+
 - [pescada-dev/CVE-2025-61506](https://github.com/pescada-dev/CVE-2025-61506)
 
 ### CVE-2025-61675 (2025-10-14)
@@ -10022,10 +10062,18 @@
 
 - [CipherX1802/CVE-2025-69822-Atomberg_Erica_SmatFan_Security_Assessment](https://github.com/CipherX1802/CVE-2025-69822-Atomberg_Erica_SmatFan_Security_Assessment)
 
-### CVE-2025-69848
+### CVE-2025-69848 (2026-02-03)
+
+<code>NetBox is an open-source infrastructure resource modeling and IP address management platform. A reflected cross-site scripting (XSS) vulnerability exists in versions 2.11.0 through 3.7.x in the ProtectedError handling logic, where object names are included in HTML error messages without proper escaping. This allows user-controlled content to be rendered in the web interface when a delete operation fails due to protected relationships, potentially enabling execution of arbitrary client-side code in the context of a privileged user.
+</code>
+
 - [alkimcoskun/security-advisories](https://github.com/alkimcoskun/security-advisories)
 
-### CVE-2025-70311
+### CVE-2025-70311 (2026-02-03)
+
+<code>JEEWMS 1.0 is vulnerable to SQL Injection. Attackers can inject malicious SQL statements through the id1 and id2 parameters in the /systemControl.do interface for attack.
+</code>
+
 - [mewb12/CVE-2025-70311-JEEWMS](https://github.com/mewb12/CVE-2025-70311-JEEWMS)
 
 ### CVE-2025-70368 (2026-01-26)
@@ -10041,7 +10089,11 @@
 ### CVE-2025-70600
 - [gpheheise/CVE-2025-70600---Urve-Smart-Office---Stored-XSS-in-iOS-App](https://github.com/gpheheise/CVE-2025-70600---Urve-Smart-Office---Stored-XSS-in-iOS-App)
 
-### CVE-2025-70849
+### CVE-2025-70849 (2026-02-03)
+
+<code>Arbitrary File Upload in podinfo thru 6.9.0 allows unauthenticated attackers to upload arbitrary files via crafted POST request to the /store endpoint. The application renders uploaded content without a restrictive Content-Security-Policy (CSP) or adequate Content-Type validation, leading to Stored Cross-Site Scripting (XSS).
+</code>
+
 - [kazisabu/CVE-2025-70849-Podinfo](https://github.com/kazisabu/CVE-2025-70849-Podinfo)
 
 ### CVE-2025-70899 (2026-01-22)
@@ -13509,7 +13561,7 @@
 - [momika233/CVE-2024-21006](https://github.com/momika233/CVE-2024-21006)
 - [lightr3d/CVE-2024-21006_jar](https://github.com/lightr3d/CVE-2024-21006_jar)
 - [dadvlingd/CVE-2024-21006](https://github.com/dadvlingd/CVE-2024-21006)
-- [d3fudd/CVE-2024-21006_POC](https://github.com/d3fudd/CVE-2024-21006_POC)
+- [d3fudd/CVE-2024-21006_PoC](https://github.com/d3fudd/CVE-2024-21006_PoC)
 
 ### CVE-2024-21107 (2024-04-16)
 
@@ -18804,6 +18856,7 @@
 </code>
 
 - [Goultarde/CVE-2024-46987](https://github.com/Goultarde/CVE-2024-46987)
+- [L1337Xi/CVE-2024-46987](https://github.com/L1337Xi/CVE-2024-46987)
 
 ### CVE-2024-47051 (2025-02-26)
 
@@ -24183,6 +24236,8 @@
 - [lukehebe/CVE-2023-27163-POC](https://github.com/lukehebe/CVE-2023-27163-POC)
 - [J0ey17/Exploit_CVE-2023-27163](https://github.com/J0ey17/Exploit_CVE-2023-27163)
 - [theopaid/CVE-2023-27163-Request-Baskets-Local-Ports-Bruteforcer](https://github.com/theopaid/CVE-2023-27163-Request-Baskets-Local-Ports-Bruteforcer)
+- [thealchimist86/CVE-2023-27163---SSRF-Baskets-Requests](https://github.com/thealchimist86/CVE-2023-27163---SSRF-Baskets-Requests)
+- [thealchimist86/CVE-2023-27163---Maltrail-0.53---RCE](https://github.com/thealchimist86/CVE-2023-27163---Maltrail-0.53---RCE)
 
 ### CVE-2023-27216 (2023-04-12)
 
@@ -32222,6 +32277,7 @@
 - [nhattanhh/CVE-2022-22965](https://github.com/nhattanhh/CVE-2022-22965)
 - [Shakur1314/CVE-2022-22965-Spring4Shell-Security-Operations-Analysis](https://github.com/Shakur1314/CVE-2022-22965-Spring4Shell-Security-Operations-Analysis)
 - [suyash-R-K/dfir-malware-investigation](https://github.com/suyash-R-K/dfir-malware-investigation)
+- [aditidutta696-dev/Spring4Shell-CVE-2022-22965-Exploitation-Attempt](https://github.com/aditidutta696-dev/Spring4Shell-CVE-2022-22965-Exploitation-Attempt)
 
 ### CVE-2022-22966 (2022-04-14)
 
@@ -55260,7 +55316,7 @@
 <code>A buffer overflow vulnerability in the control protocol of Flexense SyncBreeze Enterprise v10.4.18 allows remote attackers to execute arbitrary code by sending a crafted packet to TCP port 9121.
 </code>
 
-- [exploiteur/CVE-2018-6537](https://github.com/exploiteur/CVE-2018-6537)
+- [exploitant/CVE-2018-6537](https://github.com/exploitant/CVE-2018-6537)
 
 ### CVE-2018-6546 (2018-04-13)
 
@@ -60122,7 +60178,7 @@
 - [TheDarthMole/CVE-2017-14980](https://github.com/TheDarthMole/CVE-2017-14980)
 - [xn0kkx/Exploit_Sync_Breeze_v10.0.28_CVE-2017-14980](https://github.com/xn0kkx/Exploit_Sync_Breeze_v10.0.28_CVE-2017-14980)
 - [LipeOzyy/CVE-2017-14980_syncbreeze_10.0.28_bof](https://github.com/LipeOzyy/CVE-2017-14980_syncbreeze_10.0.28_bof)
-- [exploiteur/CVE-2017-14980](https://github.com/exploiteur/CVE-2017-14980)
+- [exploitant/CVE-2017-14980](https://github.com/exploitant/CVE-2017-14980)
 - [DaviGSantana/Exploit-CVE-2017-14980](https://github.com/DaviGSantana/Exploit-CVE-2017-14980)
 
 ### CVE-2017-15099 (2017-11-22)
