@@ -165,6 +165,7 @@
 - [SimoesCTT/CTT-NFS-Vortex-RCE](https://github.com/SimoesCTT/CTT-NFS-Vortex-RCE)
 - [SimoesCTT/SCTT-2026-33-0007-The-OLE-Vortex-Laminar-Bypass-](https://github.com/SimoesCTT/SCTT-2026-33-0007-The-OLE-Vortex-Laminar-Bypass-)
 - [SimoesCTT/CTT-MICROSOFT-OFFICE-OLE-MANIFOLD-BYPASS-CVE-2026-21509](https://github.com/SimoesCTT/CTT-MICROSOFT-OFFICE-OLE-MANIFOLD-BYPASS-CVE-2026-21509)
+- [decalage2/detect_CVE-2026-21509](https://github.com/decalage2/detect_CVE-2026-21509)
 
 ### CVE-2026-21721 (2026-01-27)
 
@@ -398,6 +399,8 @@
 - [Moxxic1/moxxic1.github.io](https://github.com/Moxxic1/moxxic1.github.io)
 - [obrunolima1910/CVE-2026-24061](https://github.com/obrunolima1910/CVE-2026-24061)
 - [obrunolima1910/obrunolima1910.github.io](https://github.com/obrunolima1910/obrunolima1910.github.io)
+- [lavabyte/telnet-CVE-2026-24061](https://github.com/lavabyte/telnet-CVE-2026-24061)
+- [canpilayda/inetutils-telnetd-cve-2026-24061](https://github.com/canpilayda/inetutils-telnetd-cve-2026-24061)
 
 ### CVE-2026-24102
 - [SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition](https://github.com/SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition)
@@ -489,6 +492,21 @@
 </code>
 
 - [ethiack/moltbot-1click-rce](https://github.com/ethiack/moltbot-1click-rce)
+
+### CVE-2026-25512 (2026-02-04)
+
+<code>Group-Office is an enterprise customer relationship management and groupware tool. Prior to versions 6.8.150, 25.0.82, and 26.0.5, there is a remote code execution (RCE) vulnerability in Group-Office. The endpoint email/message/tnefAttachmentFromTempFile directly concatenates the user-controlled parameter tmp_file into an exec() call. By injecting shell metacharacters into tmp_file, an authenticated attacker can execute arbitrary system commands on the server. This issue has been patched in versions 6.8.150, 25.0.82, and 26.0.5.
+</code>
+
+- [NumberOreo1/CVE-2026-25512](https://github.com/NumberOreo1/CVE-2026-25512)
+- [mbanyamer/CVE-2026-25512-PoC-Group-Office-Authenticated-RCE](https://github.com/mbanyamer/CVE-2026-25512-PoC-Group-Office-Authenticated-RCE)
+
+### CVE-2026-25546 (2026-02-04)
+
+<code>Godot MCP is a Model Context Protocol (MCP) server for interacting with the Godot game engine. Prior to version 0.1.1, a command injection vulnerability in godot-mcp allows remote code execution. The executeOperation function passed user-controlled input (e.g., projectPath) directly to exec(), which spawns a shell. An attacker could inject shell metacharacters like $(command) or &amp;calc to execute arbitrary commands with the privileges of the MCP server process. This affects any tool that accepts projectPath, including create_scene, add_node, load_sprite, and others. This issue has been patched in version 0.1.1.
+</code>
+
+- [mbanyamer/CVE-2026-25546-godot-mcp-0.1.1-OS-Command-Injection](https://github.com/mbanyamer/CVE-2026-25546-godot-mcp-0.1.1-OS-Command-Injection)
 
 
 ## 2025
@@ -906,6 +924,7 @@
 - [predyy/CVE-2025-2304](https://github.com/predyy/CVE-2025-2304)
 - [7acini/CVE-2025-2304-CamaleonCMS-PoC](https://github.com/7acini/CVE-2025-2304-CamaleonCMS-PoC)
 - [Alien0ne/CVE-2025-2304](https://github.com/Alien0ne/CVE-2025-2304)
+- [PwnManjaro/CVE-2025-2304](https://github.com/PwnManjaro/CVE-2025-2304)
 
 ### CVE-2025-2404 (2025-09-16)
 
@@ -1527,12 +1546,16 @@
 
 ### CVE-2025-5319 (2026-02-03)
 
-<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Emit Information and Communication Technologies Industry and Trade Ltd. Co. Efficiency Management System allows SQL Injection.This issue affects Efficiency Management System: through 03022026.\n\nNOTE: The vendor was contacted early about this disclosure but did not respond in any way.
+<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Emit Informatics and Communication Technologies Industry and Trade Ltd. Co. DIGITA Efficiency Management System allows SQL Injection.This issue affects DIGITA Efficiency Management System: through 03022026. \nNOTE: The vendor was contacted early about this disclosure but did not respond in any way.
 </code>
 
 - [sahici/CVE-2025-5319](https://github.com/sahici/CVE-2025-5319)
 
-### CVE-2025-5329
+### CVE-2025-5329 (2026-02-04)
+
+<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Martcode Software Inc. Delta Course Automation allows SQL Injection.This issue affects Delta Course Automation: through 04022026.\n\nNOTE: The vendor was contacted early about this disclosure but did not respond in any way.
+</code>
+
 - [sahici/CVE-2025-5329](https://github.com/sahici/CVE-2025-5329)
 
 ### CVE-2025-5349 (2025-06-17)
@@ -2046,6 +2069,7 @@
 - [pentestfunctions/CVE-2025-8088-Multi-Document](https://github.com/pentestfunctions/CVE-2025-8088-Multi-Document)
 - [pexlexity/WinRAR-CVE-2025-8088-Path-Traversal-PoC](https://github.com/pexlexity/WinRAR-CVE-2025-8088-Path-Traversal-PoC)
 - [nhattanhh/CVE-2025-8088](https://github.com/nhattanhh/CVE-2025-8088)
+- [Syrins/CVE-2025-8088-Winrar-Tool-Gui](https://github.com/Syrins/CVE-2025-8088-Winrar-Tool-Gui)
 - [ghostn4444/CVE-2025-8088](https://github.com/ghostn4444/CVE-2025-8088)
 - [DeepBlue-dot/CVE-2025-8088-WinRAR-Startup-PoC](https://github.com/DeepBlue-dot/CVE-2025-8088-WinRAR-Startup-PoC)
 - [pescada-dev/-CVE-2025-8088](https://github.com/pescada-dev/-CVE-2025-8088)
@@ -2471,7 +2495,6 @@
 <code>7-Zip ZIP File Parsing Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. Interaction with this product is required to exploit this vulnerability but attack vectors may vary depending on the implementation.\n\nThe specific flaw exists within the handling of symbolic links in ZIP files. Crafted data in a ZIP file can cause the process to traverse to unintended directories. An attacker can leverage this vulnerability to execute code in the context of a service account. Was ZDI-CAN-26753.
 </code>
 
-- [pacbypass/CVE-2025-11001](https://github.com/pacbypass/CVE-2025-11001)
 - [lastvocher/7zip-CVE-2025-11001](https://github.com/lastvocher/7zip-CVE-2025-11001)
 - [mbanyamer/CVE-2025-11001---7-Zip](https://github.com/mbanyamer/CVE-2025-11001---7-Zip)
 - [ranasen-rat/CVE-2025-11001](https://github.com/ranasen-rat/CVE-2025-11001)
@@ -4258,6 +4281,7 @@
 </code>
 
 - [amalpvatayam67/day09-bentoml-deser-lab](https://github.com/amalpvatayam67/day09-bentoml-deser-lab)
+- [Evillm/CVE-2025-27520-PoC](https://github.com/Evillm/CVE-2025-27520-PoC)
 
 ### CVE-2025-27533 (2025-05-07)
 
@@ -5734,6 +5758,7 @@
 </code>
 
 - [sirbuvladste/BIND-9-Cache-Poisoning-PoC---CVE-2025-40778](https://github.com/sirbuvladste/BIND-9-Cache-Poisoning-PoC---CVE-2025-40778)
+- [nicholasC03/DNS-Poisoning-Triage-Lab](https://github.com/nicholasC03/DNS-Poisoning-Triage-Lab)
 
 ### CVE-2025-41067 (2025-10-27)
 
@@ -6286,6 +6311,13 @@
 
 - [Haluka92/CVE-2025-47423](https://github.com/Haluka92/CVE-2025-47423)
 
+### CVE-2025-47445 (2025-05-14)
+
+<code>Relative Path Traversal vulnerability in Themewinter Eventin allows Path Traversal.This issue affects Eventin: from n/a through 4.0.26.
+</code>
+
+- [inverterad/CVE-2025-47445-PoC](https://github.com/inverterad/CVE-2025-47445-PoC)
+
 ### CVE-2025-47533 (2025-05-07)
 
 <code>Cross-Site Request Forgery (CSRF) vulnerability in Iqonic Design Graphina allows PHP Local File Inclusion. This issue affects Graphina: from n/a through 3.0.4.
@@ -6580,6 +6612,7 @@
 - [Zuack55/Roundcube-1.6.10-Post-Auth-RCE-CVE-2025-49113-](https://github.com/Zuack55/Roundcube-1.6.10-Post-Auth-RCE-CVE-2025-49113-)
 - [l4f2s4/CVE-2025-49113_exploit_cookies](https://github.com/l4f2s4/CVE-2025-49113_exploit_cookies)
 - [ankitpandey383/roundcube-cve-2025-49113-lab](https://github.com/ankitpandey383/roundcube-cve-2025-49113-lab)
+- [Evillm/CVE-2025-49113-PoC](https://github.com/Evillm/CVE-2025-49113-PoC)
 
 ### CVE-2025-49125 (2025-06-16)
 
@@ -7853,6 +7886,7 @@
 - [Night-have-dreams/CVE-2025-55182-PoC](https://github.com/Night-have-dreams/CVE-2025-55182-PoC)
 - [C00LN3T/React2Shell](https://github.com/C00LN3T/React2Shell)
 - [thekamran/CVE-2025-55182-Proof-of-Concept](https://github.com/thekamran/CVE-2025-55182-Proof-of-Concept)
+- [Syrins/CVE-2025-55182-React2Shell-RCE](https://github.com/Syrins/CVE-2025-55182-React2Shell-RCE)
 - [0xsj/CVE-2025-55182](https://github.com/0xsj/CVE-2025-55182)
 - [Security-Phoenix-demo/react2shell-scanner-CVE-2025-55182](https://github.com/Security-Phoenix-demo/react2shell-scanner-CVE-2025-55182)
 - [Benrich127N/react2shell_analyzer](https://github.com/Benrich127N/react2shell_analyzer)
@@ -8062,6 +8096,7 @@
 - [wnaspy/CVE-2025-55182](https://github.com/wnaspy/CVE-2025-55182)
 - [woorifisa-service-dev-6th/tech-seminar-React2Shell](https://github.com/woorifisa-service-dev-6th/tech-seminar-React2Shell)
 - [MuhammadUwais/React2Shell](https://github.com/MuhammadUwais/React2Shell)
+- [Evillm/CVE-2025-55182-PoC](https://github.com/Evillm/CVE-2025-55182-PoC)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -10078,6 +10113,9 @@
 
 - [alkimcoskun/security-advisories](https://github.com/alkimcoskun/security-advisories)
 
+### CVE-2025-69906
+- [cypherdavy/CVE-2025-69906-Monstra-CMS-3.0.4-Arbitrary-File-Upload-to-RCE](https://github.com/cypherdavy/CVE-2025-69906-Monstra-CMS-3.0.4-Arbitrary-File-Upload-to-RCE)
+
 ### CVE-2025-70368 (2026-01-26)
 
 <code>Worklenz version 2.1.5 contains a Stored Cross-Site Scripting (XSS) vulnerability in the Project Updates feature. An attacker can submit a malicious payload in the Updates text field which is then rendered in the reporting view without proper sanitization. Malicious JavaScript may be executed in a victim's browser when they browse to the page containing the vulnerable field.
@@ -10085,7 +10123,11 @@
 
 - [Stolichnayer/CVE-2025-70368](https://github.com/Stolichnayer/CVE-2025-70368)
 
-### CVE-2025-70545
+### CVE-2025-70545 (2026-02-04)
+
+<code>A stored cross-site scripting (XSS) vulnerability exists in the web management interface of the PPC (Belden) ONT 2K05X router running firmware v1.1.9_206L. The Common Gateway Interface (CGI) component improperly handles user-supplied input, allowing a remote, unauthenticated attacker to inject arbitrary JavaScript that is persistently stored and executed when the affected interface is accessed.
+</code>
+
 - [jeyabalaji711/CVE-2025-70545](https://github.com/jeyabalaji711/CVE-2025-70545)
 
 ### CVE-2025-70600
@@ -11564,6 +11606,13 @@
 
 - [Sudo-WP/sudowp-dropzone-elementor](https://github.com/Sudo-WP/sudowp-dropzone-elementor)
 
+### CVE-2024-5243 (2024-05-23)
+
+<code>TP-Link Omada ER605 Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of TP-Link Omada ER605 routers. Authentication is not required to exploit this vulnerability. However, devices are vulnerable only if configured to use the Comexe DDNS service.\n\nThe specific flaw exists within the handling of DNS names. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a buffer. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-22523.
+</code>
+
+- [yi-barrack/CVE-2024-5243-pwn2own-toronto-2023](https://github.com/yi-barrack/CVE-2024-5243-pwn2own-toronto-2023)
+
 ### CVE-2024-5246 (2024-05-23)
 
 <code>NETGEAR ProSAFE Network Management System Tomcat Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NETGEAR ProSAFE Network Management System. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the product installer. The issue results from the use of a vulnerable version of Apache Tomcat. An attacker can leverage this vulnerability to execute code in the context of SYSTEM. Was ZDI-CAN-22868.
@@ -12411,6 +12460,7 @@
 
 - [ubaydev/CVE-2024-8856](https://github.com/ubaydev/CVE-2024-8856)
 - [Jenderal92/CVE-2024-8856](https://github.com/Jenderal92/CVE-2024-8856)
+- [Evillm/CVE-2024-8856-PoC](https://github.com/Evillm/CVE-2024-8856-PoC)
 
 ### CVE-2024-8868 (2024-09-15)
 
@@ -18142,7 +18192,7 @@
 
 ### CVE-2024-42642 (2024-09-04)
 
-<code>Micron Crucial MX500 Series Solid State Drives M3CR046 is vulnerable to Buffer Overflow, which can be triggered by sending specially crafted ATA packets from the host to the drive controller.
+<code>Micron Crucial MX500 Series Solid State Drives M3CR046 is vulnerable to Buffer Overflow, which can be triggered by sending specially crafted ATA packets from the host to the drive controller. NOTE: The supplier states that this vulnerability was fully remediated in December 2024 and that updated firmware is available through Crucial’s official support page.
 </code>
 
 - [VL4DR/CVE-2024-42642](https://github.com/VL4DR/CVE-2024-42642)
@@ -18708,6 +18758,7 @@
 </code>
 
 - [dhruvik-git/CVE-2024-45590](https://github.com/dhruvik-git/CVE-2024-45590)
+- [Evillm/CVE-2024-45590-PoC](https://github.com/Evillm/CVE-2024-45590-PoC)
 
 ### CVE-2024-45614 (2024-09-19)
 
@@ -18860,6 +18911,7 @@
 
 - [Goultarde/CVE-2024-46987](https://github.com/Goultarde/CVE-2024-46987)
 - [L1337Xi/CVE-2024-46987](https://github.com/L1337Xi/CVE-2024-46987)
+- [Ik0nw/CVE-2024-46987](https://github.com/Ik0nw/CVE-2024-46987)
 
 ### CVE-2024-47051 (2025-02-26)
 
@@ -22048,6 +22100,7 @@
 </code>
 
 - [Patrowl/CVE-2023-4634](https://github.com/Patrowl/CVE-2023-4634)
+- [Evillm/CVE-2023-4634-PoC](https://github.com/Evillm/CVE-2023-4634-PoC)
 
 ### CVE-2023-4636 (2023-09-05)
 
@@ -44980,6 +45033,7 @@
 - [esmwaSpyware/DoS-PoC-for-CVE-2020-0796-SMBGhost-](https://github.com/esmwaSpyware/DoS-PoC-for-CVE-2020-0796-SMBGhost-)
 - [Jagadeesh7532/-CVE-2020-0796-SMBGhost-Windows-10-SMBv3-Remote-Code-Execution-Vulnerability](https://github.com/Jagadeesh7532/-CVE-2020-0796-SMBGhost-Windows-10-SMBv3-Remote-Code-Execution-Vulnerability)
 - [nyambiblaise/Microsoft-Windows-SMBGhost-Vulnerability-Checker---CVE-2020-0796---SMBv3-RCE](https://github.com/nyambiblaise/Microsoft-Windows-SMBGhost-Vulnerability-Checker---CVE-2020-0796---SMBv3-RCE)
+- [thai1012/cve-2020-0796](https://github.com/thai1012/cve-2020-0796)
 
 ### CVE-2020-0887 (2020-03-12)
 
@@ -45151,7 +45205,7 @@
 </code>
 
 - [Tobey123/CVE-2020-1472-visualizer](https://github.com/Tobey123/CVE-2020-1472-visualizer)
-- [SecuraBV/CVE-2020-1472](https://github.com/SecuraBV/CVE-2020-1472)
+- [bvcyber/CVE-2020-1472](https://github.com/bvcyber/CVE-2020-1472)
 - [cube0x0/CVE-2020-1472](https://github.com/cube0x0/CVE-2020-1472)
 - [dirkjanm/CVE-2020-1472](https://github.com/dirkjanm/CVE-2020-1472)
 - [VoidSec/CVE-2020-1472](https://github.com/VoidSec/CVE-2020-1472)
@@ -47199,6 +47253,13 @@
 </code>
 
 - [pberba/CVE-2020-11978](https://github.com/pberba/CVE-2020-11978)
+
+### CVE-2020-11981 (2020-07-16)
+
+<code>An issue was found in Apache Airflow versions 1.10.10 and below. When using CeleryExecutor, if an attacker can connect to the broker (Redis, RabbitMQ) directly, it is possible to inject commands, resulting in the celery worker running arbitrary commands.
+</code>
+
+- [Evillm/CVE-2020-11981-PoC](https://github.com/Evillm/CVE-2020-11981-PoC)
 
 ### CVE-2020-11984 (2020-08-07)
 
@@ -58839,7 +58900,7 @@
 - [Cr4zyD14m0nd137/Lab-for-cve-2018-15133](https://github.com/Cr4zyD14m0nd137/Lab-for-cve-2018-15133)
 - [uartu0/nodejshell](https://github.com/uartu0/nodejshell)
 - [kylew1004/cve-2017-5941-poc-docker-lab](https://github.com/kylew1004/cve-2017-5941-poc-docker-lab)
-- [cybersploit-tech/RCE-NodeJs](https://github.com/cybersploit-tech/RCE-NodeJs)
+- [f41k0n/RCE-NodeJs](https://github.com/f41k0n/RCE-NodeJs)
 
 ### CVE-2017-6008 (2017-09-13)
 
