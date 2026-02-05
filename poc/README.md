@@ -89,6 +89,9 @@
 
 - [ii4gsp/CVE-2026-1457](https://github.com/ii4gsp/CVE-2026-1457)
 
+### CVE-2026-1953
+- [carlosbudiman/CVE-2026-1953-Disclosure](https://github.com/carlosbudiman/CVE-2026-1953-Disclosure)
+
 ### CVE-2026-2395
 - [dajneem23/CVE-2026-2395](https://github.com/dajneem23/CVE-2026-2395)
 
@@ -340,6 +343,13 @@
 </code>
 
 - [boroeurnprach/CVE-2026-23947-PoC](https://github.com/boroeurnprach/CVE-2026-23947-PoC)
+
+### CVE-2026-24049 (2026-01-22)
+
+<code>wheel is a command line tool for manipulating Python wheel files, as defined in PEP 427. In versions 0.40.0 through 0.46.1, the unpack function is vulnerable to file permission modification through mishandling of file permissions after extraction. The logic blindly trusts the filename from the archive header for the chmod operation, even though the extraction process itself might have sanitized the path. Attackers can craft a malicious wheel file that, when unpacked, changes the permissions of critical system files (e.g., /etc/passwd, SSH keys, config files), allowing for Privilege Escalation or arbitrary code execution by modifying now-writable scripts. This issue has been fixed in version 0.46.2.
+</code>
+
+- [kriskimmerle/wheelaudit](https://github.com/kriskimmerle/wheelaudit)
 
 ### CVE-2026-24061 (2026-01-21)
 
@@ -2495,6 +2505,7 @@
 <code>7-Zip ZIP File Parsing Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. Interaction with this product is required to exploit this vulnerability but attack vectors may vary depending on the implementation.\n\nThe specific flaw exists within the handling of symbolic links in ZIP files. Crafted data in a ZIP file can cause the process to traverse to unintended directories. An attacker can leverage this vulnerability to execute code in the context of a service account. Was ZDI-CAN-26753.
 </code>
 
+- [pacbypass/CVE-2025-11001](https://github.com/pacbypass/CVE-2025-11001)
 - [lastvocher/7zip-CVE-2025-11001](https://github.com/lastvocher/7zip-CVE-2025-11001)
 - [mbanyamer/CVE-2025-11001---7-Zip](https://github.com/mbanyamer/CVE-2025-11001---7-Zip)
 - [ranasen-rat/CVE-2025-11001](https://github.com/ranasen-rat/CVE-2025-11001)
@@ -5251,7 +5262,6 @@
 - [yeremeu/CVE-2025-32463_chwoot](https://github.com/yeremeu/CVE-2025-32463_chwoot)
 - [cyberpoul/CVE-2025-32463-POC](https://github.com/cyberpoul/CVE-2025-32463-POC)
 - [gmh5225/Blackash-CVE-2025-32463](https://github.com/gmh5225/Blackash-CVE-2025-32463)
-- [junxian428/CVE-2025-32463](https://github.com/junxian428/CVE-2025-32463)
 - [FreeDurok/CVE-2025-32463-PoC](https://github.com/FreeDurok/CVE-2025-32463-PoC)
 - [Chocapikk/CVE-2025-32463-lab](https://github.com/Chocapikk/CVE-2025-32463-lab)
 - [K3ysTr0K3R/CVE-2025-32463-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2025-32463-EXPLOIT)
@@ -7985,7 +7995,6 @@
 - [xalgord/React2Shell](https://github.com/xalgord/React2Shell)
 - [ryanhafid/PoC_CVE-2025-55182](https://github.com/ryanhafid/PoC_CVE-2025-55182)
 - [ryanhafid/Scan_CVE-2025-55182](https://github.com/ryanhafid/Scan_CVE-2025-55182)
-- [0xLutfifakee/CVE-2025-55182-React2Shell](https://github.com/0xLutfifakee/CVE-2025-55182-React2Shell)
 - [gagaltotal/tot-react-rce-CVE-2025-55182](https://github.com/gagaltotal/tot-react-rce-CVE-2025-55182)
 - [sho-luv/React2Shell](https://github.com/sho-luv/React2Shell)
 - [h0tak88r/next88](https://github.com/h0tak88r/next88)
@@ -38833,26 +38842,12 @@
 
 - [tr3ee/CVE-2021-4204](https://github.com/tr3ee/CVE-2021-4204)
 
-### CVE-2021-4374 (2023-06-07)
-
-<code>The WordPress Automatic Plugin for WordPress is vulnerable to arbitrary options updates in versions up to, and including, 3.53.2. This is due to missing authorization and option validation in the process_form.php file. This makes it possible for unauthenticated attackers to arbitrarily update the settings of a vulnerable site and ultimately compromise the entire site.
-</code>
-
-- [Pranjal6955/CVE-2021-4374-Testing-Package](https://github.com/Pranjal6955/CVE-2021-4374-Testing-Package)
-
 ### CVE-2021-4428 (2023-07-18)
 
 <code>In what3words Autosuggest Plugin bis 4.0.0 für WordPress wurde eine Schwachstelle gefunden. Sie wurde als problematisch eingestuft. Betroffen ist die Funktion enqueue_scripts der Datei w3w-autosuggest/public/class-w3w-autosuggest-public.php der Komponente Setting Handler. Mit der Manipulation mit unbekannten Daten kann eine information disclosure-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk passieren. Ein Aktualisieren auf die Version 4.0.1 vermag dieses Problem zu lösen. Der Patch wird als dd59cbac5f86057d6a73b87007c08b8bfa0c32ac bezeichnet. Als bestmögliche Massnahme wird das Einspielen eines Upgrades empfohlen.
 </code>
 
 - [CERT-hr/Log4Shell](https://github.com/CERT-hr/Log4Shell)
-
-### CVE-2021-4462 (2025-11-10)
-
-<code>Employee Records System version 1.0 contains an unrestricted file upload vulnerability that allows a remote unauthenticated attacker to upload arbitrary files via the uploadID.php endpoint; uploaded files can be executed because the application does not perform proper server-side validation. Exploitation evidence was observed by the Shadowserver Foundation on 2025-02-06 UTC.
-</code>
-
-- [Pranjal6955/CVE-2021-4462](https://github.com/Pranjal6955/CVE-2021-4462)
 
 ### CVE-2021-4773
 - [Alexs18/CVE-2021-4773](https://github.com/Alexs18/CVE-2021-4773)
@@ -40604,6 +40599,7 @@
 </code>
 
 - [hh-hunter/nacos-cve-2021-29441](https://github.com/hh-hunter/nacos-cve-2021-29441)
+- [bysinks/CVE-2021-29441](https://github.com/bysinks/CVE-2021-29441)
 - [azhao1981/CVE-2021-29441](https://github.com/azhao1981/CVE-2021-29441)
 
 ### CVE-2021-29442 (2021-04-27)
@@ -40828,6 +40824,7 @@
 </code>
 
 - [GeoSn0w/Pentagram-exploit-tester](https://github.com/GeoSn0w/Pentagram-exploit-tester)
+- [st-rnd/desc_race-1](https://github.com/st-rnd/desc_race-1)
 
 ### CVE-2021-30956 (2021-08-24)
 
@@ -61359,7 +61356,6 @@
 <code>WebKit in Apple iOS before 9.3.3, Safari before 9.1.2, and tvOS before 9.2.2 allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, a different vulnerability than CVE-2016-4589, CVE-2016-4623, and CVE-2016-4624.
 </code>
 
-- [saelo/jscpwn](https://github.com/saelo/jscpwn)
 - [hdbreaker/WebKit-CVE-2016-4622](https://github.com/hdbreaker/WebKit-CVE-2016-4622)
 
 ### CVE-2016-4631 (2016-07-22)
@@ -61790,13 +61786,6 @@
 
 - [0xICF/PanelShock](https://github.com/0xICF/PanelShock)
 
-### CVE-2016-8462 (2017-01-12)
-
-<code>An information disclosure vulnerability in the bootloader could enable a local attacker to access data outside of its permission level. This issue is rated as High because it could be used to access sensitive data. Product: Android. Versions: N/A. Android ID: A-32510383.
-</code>
-
-- [CunningLogic/PixelDump_CVE-2016-8462](https://github.com/CunningLogic/PixelDump_CVE-2016-8462)
-
 ### CVE-2016-8467 (2017-01-13)
 
 <code>An elevation of privilege vulnerability in the bootloader could enable a local attacker to execute arbitrary modem commands on the device. This issue is rated as High because it is a local permanent denial of service (device interoperability: completely permanent or requiring re-flashing the entire operating system). Product: Android. Versions: N/A. Android ID: A-30308784.
@@ -62104,7 +62093,6 @@
 </code>
 
 - [flame-11/CVE-2016-15041-mainwp-dashboard](https://github.com/flame-11/CVE-2016-15041-mainwp-dashboard)
-- [Pranjal6955/CVE-2016-15041-testing](https://github.com/Pranjal6955/CVE-2016-15041-testing)
 
 ### CVE-2016-15042 (2024-10-16)
 
