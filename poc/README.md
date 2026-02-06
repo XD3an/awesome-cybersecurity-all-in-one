@@ -417,6 +417,7 @@
 - [lavabyte/telnet-CVE-2026-24061](https://github.com/lavabyte/telnet-CVE-2026-24061)
 - [canpilayda/inetutils-telnetd-cve-2026-24061](https://github.com/canpilayda/inetutils-telnetd-cve-2026-24061)
 - [killsystema/scan-cve-2026-24061](https://github.com/killsystema/scan-cve-2026-24061)
+- [nrnw/CVE-2026-24061-GNU-inetutils-Telnet-Detector](https://github.com/nrnw/CVE-2026-24061-GNU-inetutils-Telnet-Detector)
 
 ### CVE-2026-24102
 - [SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition](https://github.com/SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition)
@@ -2962,11 +2963,11 @@
 - [NoNameError/MongoBLEED---CVE-2025-14847-POC-](https://github.com/NoNameError/MongoBLEED---CVE-2025-14847-POC-)
 - [Rishi-kaul/CVE-2025-14847-MongoBleed](https://github.com/Rishi-kaul/CVE-2025-14847-MongoBleed)
 - [Systemhaus-Schulz/MongoBleed-CVE-2025-14847](https://github.com/Systemhaus-Schulz/MongoBleed-CVE-2025-14847)
-- [demetriusford/mongobleed](https://github.com/demetriusford/mongobleed)
 - [ElJoamy/MongoBleed-exploit](https://github.com/ElJoamy/MongoBleed-exploit)
 - [keraattin/Mongobleed-Detector-CVE-2025-14847](https://github.com/keraattin/Mongobleed-Detector-CVE-2025-14847)
 - [waheeb71/CVE-2025-14847](https://github.com/waheeb71/CVE-2025-14847)
 - [CadGoose/MongoBleed-CVE-2025-14847-Fully-Automated-scanner](https://github.com/CadGoose/MongoBleed-CVE-2025-14847-Fully-Automated-scanner)
+- [im-hanzou/mongobleed](https://github.com/im-hanzou/mongobleed)
 - [AdolfBharath/mongobleed](https://github.com/AdolfBharath/mongobleed)
 - [sahar042/CVE-2025-14847](https://github.com/sahar042/CVE-2025-14847)
 - [peakcyber-security/CVE-2025-14847](https://github.com/peakcyber-security/CVE-2025-14847)
@@ -10190,6 +10191,9 @@
 
 - [kazisabu/CVE-2025-70849-Podinfo](https://github.com/kazisabu/CVE-2025-70849-Podinfo)
 
+### CVE-2025-70886
+- [HowieHz/CVE-2025-70886](https://github.com/HowieHz/CVE-2025-70886)
+
 ### CVE-2025-70899 (2026-01-22)
 
 <code>PHPgurukul Online Course Registration v3.1 lacks Cross-Site Request Forgery (CSRF) protection on all administrative forms. An attacker can perform unauthorized actions on behalf of authenticated administrators by tricking them into visiting a malicious webpage.
@@ -16431,6 +16435,13 @@
 
 - [absholi7ly/Poc-CVE-2024-32962-xml-crypto](https://github.com/absholi7ly/Poc-CVE-2024-32962-xml-crypto)
 
+### CVE-2024-32964 (2024-05-10)
+
+<code>Lobe Chat is a chatbot framework that supports speech synthesis, multimodal, and extensible Function Call plugin system. Prior to 0.150.6, lobe-chat had an unauthorized Server-Side Request Forgery vulnerability in the /api/proxy endpoint. An attacker can construct malicious requests to cause Server-Side Request Forgery without logging in, attack intranet services, and leak sensitive information.
+</code>
+
+- [StephenQSstarThomas/aaa-agentxploit-example](https://github.com/StephenQSstarThomas/aaa-agentxploit-example)
+
 ### CVE-2024-33111 (2024-05-06)
 
 <code>D-Link DIR-845L router &lt;=v1.01KRb03 is vulnerable to Cross Site Scripting (XSS) via /htdocs/webinc/js/bsc_sms_inbox.php.
@@ -18965,6 +18976,7 @@
 - [Ik0nw/CVE-2024-46987](https://github.com/Ik0nw/CVE-2024-46987)
 - [sparrowhawk1113/Exploit-for-CVE-2024-46987](https://github.com/sparrowhawk1113/Exploit-for-CVE-2024-46987)
 - [Rival420/CVE-2024-46987](https://github.com/Rival420/CVE-2024-46987)
+- [advaitpathak21/CVE-2024-46987](https://github.com/advaitpathak21/CVE-2024-46987)
 
 ### CVE-2024-47051 (2025-02-26)
 
