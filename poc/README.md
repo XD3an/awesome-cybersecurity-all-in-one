@@ -89,7 +89,11 @@
 
 - [ii4gsp/CVE-2026-1457](https://github.com/ii4gsp/CVE-2026-1457)
 
-### CVE-2026-1953
+### CVE-2026-1953 (2026-02-05)
+
+<code>Nukegraphic CMS v3.1.2 contains a stored cross-site scripting (XSS) vulnerability in the user profile edit functionality at /ngc-cms/user-edit-profile.php. The application fails to properly sanitize user input in the name field before storing it in the database and rendering it across multiple CMS pages. An authenticated attacker with low privileges can inject malicious JavaScript payloads through the profile edit request, which are then executed site-wide whenever the affected user's name is displayed. This allows the attacker to execute arbitrary JavaScript in the context of other users' sessions, potentially leading to session hijacking, credential theft, or unauthorized actions performed on behalf of victims.
+</code>
+
 - [carlosbudiman/CVE-2026-1953-Disclosure](https://github.com/carlosbudiman/CVE-2026-1953-Disclosure)
 
 ### CVE-2026-2395
@@ -169,6 +173,7 @@
 - [SimoesCTT/SCTT-2026-33-0007-The-OLE-Vortex-Laminar-Bypass-](https://github.com/SimoesCTT/SCTT-2026-33-0007-The-OLE-Vortex-Laminar-Bypass-)
 - [SimoesCTT/CTT-MICROSOFT-OFFICE-OLE-MANIFOLD-BYPASS-CVE-2026-21509](https://github.com/SimoesCTT/CTT-MICROSOFT-OFFICE-OLE-MANIFOLD-BYPASS-CVE-2026-21509)
 - [decalage2/detect_CVE-2026-21509](https://github.com/decalage2/detect_CVE-2026-21509)
+- [kaizensecurity/CVE-2026-21509](https://github.com/kaizensecurity/CVE-2026-21509)
 
 ### CVE-2026-21721 (2026-01-27)
 
@@ -411,6 +416,7 @@
 - [obrunolima1910/obrunolima1910.github.io](https://github.com/obrunolima1910/obrunolima1910.github.io)
 - [lavabyte/telnet-CVE-2026-24061](https://github.com/lavabyte/telnet-CVE-2026-24061)
 - [canpilayda/inetutils-telnetd-cve-2026-24061](https://github.com/canpilayda/inetutils-telnetd-cve-2026-24061)
+- [killsystema/scan-cve-2026-24061](https://github.com/killsystema/scan-cve-2026-24061)
 
 ### CVE-2026-24102
 - [SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition](https://github.com/SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition)
@@ -502,6 +508,7 @@
 </code>
 
 - [ethiack/moltbot-1click-rce](https://github.com/ethiack/moltbot-1click-rce)
+- [adibirzu/openclaw-security-monitor](https://github.com/adibirzu/openclaw-security-monitor)
 
 ### CVE-2026-25512 (2026-02-04)
 
@@ -517,6 +524,9 @@
 </code>
 
 - [mbanyamer/CVE-2026-25546-godot-mcp-0.1.1-OS-Command-Injection](https://github.com/mbanyamer/CVE-2026-25546-godot-mcp-0.1.1-OS-Command-Injection)
+
+### CVE-2026-25643
+- [jduardo2704/CVE-2026-25643-Frigate-RCE](https://github.com/jduardo2704/CVE-2026-25643-Frigate-RCE)
 
 
 ## 2025
@@ -935,6 +945,7 @@
 - [7acini/CVE-2025-2304-CamaleonCMS-PoC](https://github.com/7acini/CVE-2025-2304-CamaleonCMS-PoC)
 - [Alien0ne/CVE-2025-2304](https://github.com/Alien0ne/CVE-2025-2304)
 - [PwnManjaro/CVE-2025-2304](https://github.com/PwnManjaro/CVE-2025-2304)
+- [sparrowhawk1113/Exploit-for-CVE-2025-2304](https://github.com/sparrowhawk1113/Exploit-for-CVE-2025-2304)
 
 ### CVE-2025-2404 (2025-09-16)
 
@@ -2413,6 +2424,7 @@
 </code>
 
 - [fumioryoto/Quiz-Maker-SQL-Injection-CVE-2025-10042](https://github.com/fumioryoto/Quiz-Maker-SQL-Injection-CVE-2025-10042)
+- [Tifa-dev/WordPress-Quiz-Maker-SQLi-Exploit-CVE-2025-10042-](https://github.com/Tifa-dev/WordPress-Quiz-Maker-SQLi-Exploit-CVE-2025-10042-)
 
 ### CVE-2025-10046 (2025-09-06)
 
@@ -3482,6 +3494,7 @@
 - [Yuri08loveElaina/CVE-2025-24054_POC](https://github.com/Yuri08loveElaina/CVE-2025-24054_POC)
 - [Wind010/CVE-2025-24054_PoC](https://github.com/Wind010/CVE-2025-24054_PoC)
 - [Untouchable17/CVE-2025-24054](https://github.com/Untouchable17/CVE-2025-24054)
+- [DukeSec97/CVE-2025-24054](https://github.com/DukeSec97/CVE-2025-24054)
 
 ### CVE-2025-24071 (2025-03-11)
 
@@ -5299,6 +5312,7 @@
 - [Mr-Alperen/CVE-2025-32463](https://github.com/Mr-Alperen/CVE-2025-32463)
 - [aexdyhaxor/CVE-2025-32463](https://github.com/aexdyhaxor/CVE-2025-32463)
 - [wvverez/CVE-2025-32463](https://github.com/wvverez/CVE-2025-32463)
+- [SpycioKon/CVE-2025-32463](https://github.com/SpycioKon/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -6088,7 +6102,6 @@
 <code>In phpgurukul Doctor Appointment Management System 1.0, an authenticated doctor user can inject arbitrary JavaScript code into their profile name. This payload is subsequently rendered without proper sanitization, when a user visits the website and selects the doctor to book an appointment.
 </code>
 
-- [mhsinj/CVE-2025-45805](https://github.com/mhsinj/CVE-2025-45805)
 - [mohammed-alsaqqaf/CVE-2025-45805](https://github.com/mohammed-alsaqqaf/CVE-2025-45805)
 
 ### CVE-2025-45955
@@ -8251,6 +8264,9 @@
 ### CVE-2025-55817
 - [5qu1n7/CVE-2025-55817](https://github.com/5qu1n7/CVE-2025-55817)
 
+### CVE-2025-55853
+- [Vivz13/CVE-2025-55853](https://github.com/Vivz13/CVE-2025-55853)
+
 ### CVE-2025-55885 (2025-09-22)
 
 <code>SQL Injection vulnerability in Alpes Recherche et Developpement ARD GEC en Lign before v.2025-04-23 allows a remote attacker to escalate privileges via the GET parameters in index.php
@@ -10030,6 +10046,27 @@
 
 - [imjdl/CVE-2025-68705](https://github.com/imjdl/CVE-2025-68705)
 
+### CVE-2025-68721 (2026-02-05)
+
+<code>Axigen Mail Server before 10.5.57 contains an improper access control vulnerability in the WebAdmin interface. A delegated admin account with zero permissions can bypass access control checks and gain unauthorized access to the SSL Certificates management endpoint (page=sslcerts). This allows the attacker to view, download, upload, and delete SSL certificate files, despite lacking the necessary privileges to access the Security &amp; Filtering section.
+</code>
+
+- [osmancanvural/CVE-2025-68721](https://github.com/osmancanvural/CVE-2025-68721)
+
+### CVE-2025-68722 (2026-02-05)
+
+<code>Axigen Mail Server before 10.5.57 and 10.6.x before 10.6.26 contains a Cross-Site Request Forgery (CSRF) vulnerability in the WebAdmin interface through improper handling of the _s (breadcrumb) parameter. The application accepts state-changing requests via the GET method and automatically processes base64-encoded commands queued in the _s parameter immediately after administrator authentication. Attackers can craft malicious URLs that, when clicked by administrators, execute arbitrary administrative actions upon login without further user interaction, including creating rogue administrator accounts or modifying critical server configurations.
+</code>
+
+- [osmancanvural/CVE-2025-68722](https://github.com/osmancanvural/CVE-2025-68722)
+
+### CVE-2025-68723 (2026-02-05)
+
+<code>Axigen Mail Server before 10.5.57 contains multiple stored Cross-Site Scripting (XSS) vulnerabilities in the WebAdmin interface. Three instances exist: (1) the log file name parameter in the Local Services Log page, (2) certificate file content in the SSL Certificates View Usage feature, and (3) the Certificate File name parameter in the WebMail Listeners SSL settings. Attackers can inject malicious JavaScript payloads that execute in administrators' browsers when they access affected pages or features, enabling privilege escalation attacks where low-privileged admins can force high-privileged admins to perform unauthorized actions.
+</code>
+
+- [osmancanvural/CVE-2025-68723](https://github.com/osmancanvural/CVE-2025-68723)
+
 ### CVE-2025-68860 (2025-12-29)
 
 <code>Authentication Bypass Using an Alternate Path or Channel vulnerability in Mobile Builder Mobile builder allows Authentication Abuse.This issue affects Mobile builder: from n/a through 1.4.2.
@@ -10122,7 +10159,11 @@
 
 - [alkimcoskun/security-advisories](https://github.com/alkimcoskun/security-advisories)
 
-### CVE-2025-69906
+### CVE-2025-69906 (2026-02-05)
+
+<code>Monstra CMS v3.0.4 contains an arbitrary file upload vulnerability in the Files Manager plugin. The application relies on blacklist-based file extension validation and stores uploaded files directly in a web-accessible directory. Under typical server configurations, this can allow an attacker to upload files that are interpreted as executable code, resulting in remote code execution.
+</code>
+
 - [cypherdavy/CVE-2025-69906-Monstra-CMS-3.0.4-Arbitrary-File-Upload-to-RCE](https://github.com/cypherdavy/CVE-2025-69906-Monstra-CMS-3.0.4-Arbitrary-File-Upload-to-RCE)
 
 ### CVE-2025-70368 (2026-01-26)
@@ -11600,6 +11641,7 @@
 - [WOOOOONG/CVE-2024-5084](https://github.com/WOOOOONG/CVE-2024-5084)
 - [Raeezrbr/CVE-2024-5084](https://github.com/Raeezrbr/CVE-2024-5084)
 - [ModeBrutal/CVE-2024-5084-Auto-Exploit](https://github.com/ModeBrutal/CVE-2024-5084-Auto-Exploit)
+- [RedTeamBlueTeam/CVE-2024-5084-Red-Team](https://github.com/RedTeamBlueTeam/CVE-2024-5084-Red-Team)
 
 ### CVE-2024-5124 (2024-06-06)
 
@@ -18921,6 +18963,8 @@
 - [Goultarde/CVE-2024-46987](https://github.com/Goultarde/CVE-2024-46987)
 - [L1337Xi/CVE-2024-46987](https://github.com/L1337Xi/CVE-2024-46987)
 - [Ik0nw/CVE-2024-46987](https://github.com/Ik0nw/CVE-2024-46987)
+- [sparrowhawk1113/Exploit-for-CVE-2024-46987](https://github.com/sparrowhawk1113/Exploit-for-CVE-2024-46987)
+- [Rival420/CVE-2024-46987](https://github.com/Rival420/CVE-2024-46987)
 
 ### CVE-2024-47051 (2025-02-26)
 
@@ -25673,6 +25717,13 @@
 
 - [D3adP3nguin/CVE-2023-33105-Transient-DOS-in-WLAN-Host-and-Firmware](https://github.com/D3adP3nguin/CVE-2023-33105-Transient-DOS-in-WLAN-Host-and-Firmware)
 
+### CVE-2023-33107 (2023-12-05)
+
+<code>Memory corruption in Graphics Linux while assigning shared virtual memory region during IOCTL call.
+</code>
+
+- [keto0422/CVE-2023-33107](https://github.com/keto0422/CVE-2023-33107)
+
 ### CVE-2023-33177 (2023-05-30)
 
 <code>Xibo is a content management system (CMS). A path traversal vulnerability exists in the Xibo CMS whereby a specially crafted zip file can be uploaded to the CMS via the layout import function by an authenticated user which would allow creation of files outside of the CMS library directory as the webserver user. This can be used to upload a PHP webshell inside the web root directory and achieve remote code execution as the webserver user. Users should upgrade to version 2.3.17 or 3.3.5, which fix this issue. Customers who host their CMS with Xibo Signage have already received an upgrade or patch to resolve this issue regardless of the CMS version that they are running.
@@ -30829,6 +30880,7 @@
 
 - [1fabunicorn/SnakeYAML-CVE-2022-1471-POC](https://github.com/1fabunicorn/SnakeYAML-CVE-2022-1471-POC)
 - [falconkei/snakeyaml_cve_poc](https://github.com/falconkei/snakeyaml_cve_poc)
+- [seal-sec-demo-2/yaml-payload](https://github.com/seal-sec-demo-2/yaml-payload)
 
 ### CVE-2022-1565 (2022-07-18)
 
@@ -33262,6 +33314,13 @@
 </code>
 
 - [wooluo/CVE-2022-25581](https://github.com/wooluo/CVE-2022-25581)
+
+### CVE-2022-25584 (2022-04-05)
+
+<code>Seyeon Tech Co., Ltd FlexWATCH FW3170-PS-E Network Video System 4.23-3000_GY allows attackers to access sensitive information.
+</code>
+
+- [yichenC1c/CVE-2022-25584](https://github.com/yichenC1c/CVE-2022-25584)
 
 ### CVE-2022-25636 (2022-02-22)
 
@@ -40599,7 +40658,6 @@
 </code>
 
 - [hh-hunter/nacos-cve-2021-29441](https://github.com/hh-hunter/nacos-cve-2021-29441)
-- [bysinks/CVE-2021-29441](https://github.com/bysinks/CVE-2021-29441)
 - [azhao1981/CVE-2021-29441](https://github.com/azhao1981/CVE-2021-29441)
 
 ### CVE-2021-29442 (2021-04-27)
@@ -43854,6 +43912,7 @@
 - [Loliverte/Log4j-Vulnerability](https://github.com/Loliverte/Log4j-Vulnerability)
 - [dbwlsdnr95/CVE-2021-44228-log4shell](https://github.com/dbwlsdnr95/CVE-2021-44228-log4shell)
 - [JoseMariaMicoli/Log4Shell-PoC](https://github.com/JoseMariaMicoli/Log4Shell-PoC)
+- [agylabs/log4shell-remediation](https://github.com/agylabs/log4shell-remediation)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -45835,7 +45894,7 @@
 - [dnerzker/CVE-2020-5902](https://github.com/dnerzker/CVE-2020-5902)
 - [renanhsilva/checkvulnCVE20205902](https://github.com/renanhsilva/checkvulnCVE20205902)
 - [halencarjunior/f5scan](https://github.com/halencarjunior/f5scan)
-- [deepsecurity-pe/GoF5-CVE-2020-5902](https://github.com/deepsecurity-pe/GoF5-CVE-2020-5902)
+- [DeepSecurity-Pe/GoF5-CVE-2020-5902](https://github.com/DeepSecurity-Pe/GoF5-CVE-2020-5902)
 - [Shu1L/CVE-2020-5902-fofa-scan](https://github.com/Shu1L/CVE-2020-5902-fofa-scan)
 - [d4rk007/F5-Big-IP-CVE-2020-5902-mass-exploiter](https://github.com/d4rk007/F5-Big-IP-CVE-2020-5902-mass-exploiter)
 - [TheCyberViking/CVE-2020-5902-Vuln-Checker](https://github.com/TheCyberViking/CVE-2020-5902-Vuln-Checker)
@@ -55378,7 +55437,7 @@
 <code>A buffer overflow vulnerability in the control protocol of Flexense SyncBreeze Enterprise v10.4.18 allows remote attackers to execute arbitrary code by sending a crafted packet to TCP port 9121.
 </code>
 
-- [exploitant/CVE-2018-6537](https://github.com/exploitant/CVE-2018-6537)
+- [exploitontwikkelaar/CVE-2018-6537](https://github.com/exploitontwikkelaar/CVE-2018-6537)
 
 ### CVE-2018-6546 (2018-04-13)
 
@@ -56815,6 +56874,7 @@
 - [B1anda0/CVE-2018-13379](https://github.com/B1anda0/CVE-2018-13379)
 - [nivdolgin/CVE-2018-13379](https://github.com/nivdolgin/CVE-2018-13379)
 - [kh4sh3i/CVE-2018-13379](https://github.com/kh4sh3i/CVE-2018-13379)
+- [Zierax/CVE-2018-13379](https://github.com/Zierax/CVE-2018-13379)
 
 ### CVE-2018-13382 (2019-06-04)
 
@@ -60240,7 +60300,7 @@
 - [TheDarthMole/CVE-2017-14980](https://github.com/TheDarthMole/CVE-2017-14980)
 - [xn0kkx/Exploit_Sync_Breeze_v10.0.28_CVE-2017-14980](https://github.com/xn0kkx/Exploit_Sync_Breeze_v10.0.28_CVE-2017-14980)
 - [LipeOzyy/CVE-2017-14980_syncbreeze_10.0.28_bof](https://github.com/LipeOzyy/CVE-2017-14980_syncbreeze_10.0.28_bof)
-- [exploitant/CVE-2017-14980](https://github.com/exploitant/CVE-2017-14980)
+- [exploitontwikkelaar/CVE-2017-14980](https://github.com/exploitontwikkelaar/CVE-2017-14980)
 - [DaviGSantana/Exploit-CVE-2017-14980](https://github.com/DaviGSantana/Exploit-CVE-2017-14980)
 
 ### CVE-2017-15099 (2017-11-22)
@@ -61356,6 +61416,7 @@
 <code>WebKit in Apple iOS before 9.3.3, Safari before 9.1.2, and tvOS before 9.2.2 allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, a different vulnerability than CVE-2016-4589, CVE-2016-4623, and CVE-2016-4624.
 </code>
 
+- [saelo/jscpwn](https://github.com/saelo/jscpwn)
 - [hdbreaker/WebKit-CVE-2016-4622](https://github.com/hdbreaker/WebKit-CVE-2016-4622)
 
 ### CVE-2016-4631 (2016-07-22)
@@ -61785,6 +61846,13 @@
 </code>
 
 - [0xICF/PanelShock](https://github.com/0xICF/PanelShock)
+
+### CVE-2016-8462 (2017-01-12)
+
+<code>An information disclosure vulnerability in the bootloader could enable a local attacker to access data outside of its permission level. This issue is rated as High because it could be used to access sensitive data. Product: Android. Versions: N/A. Android ID: A-32510383.
+</code>
+
+- [CunningLogic/PixelDump_CVE-2016-8462](https://github.com/CunningLogic/PixelDump_CVE-2016-8462)
 
 ### CVE-2016-8467 (2017-01-13)
 
