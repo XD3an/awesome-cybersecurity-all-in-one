@@ -3035,6 +3035,7 @@
 - [sakthivel10q/sakthivel10q.github.io](https://github.com/sakthivel10q/sakthivel10q.github.io)
 - [amnnrth/CVE-2025-14847](https://github.com/amnnrth/CVE-2025-14847)
 - [InfoSecAntara/CVE-2025-14847-MongoDB](https://github.com/InfoSecAntara/CVE-2025-14847-MongoDB)
+- [sho-luv/MongoBleed](https://github.com/sho-luv/MongoBleed)
 
 ### CVE-2025-14855 (2025-12-21)
 
@@ -3553,7 +3554,6 @@
 - [Yuri08loveElaina/CVE-2025-24054_POC](https://github.com/Yuri08loveElaina/CVE-2025-24054_POC)
 - [Wind010/CVE-2025-24054_PoC](https://github.com/Wind010/CVE-2025-24054_PoC)
 - [Untouchable17/CVE-2025-24054](https://github.com/Untouchable17/CVE-2025-24054)
-- [DukeSec97/CVE-2025-24054](https://github.com/DukeSec97/CVE-2025-24054)
 
 ### CVE-2025-24071 (2025-03-11)
 
@@ -11025,7 +11025,6 @@
 - [4wayhandshake/CVE-2024-2961](https://github.com/4wayhandshake/CVE-2024-2961)
 - [omarelshopky/exploit_cve-2023-26326_using_cve-2024-2961](https://github.com/omarelshopky/exploit_cve-2023-26326_using_cve-2024-2961)
 - [suce0155/CVE-2024-2961_buddyforms_2.7.7](https://github.com/suce0155/CVE-2024-2961_buddyforms_2.7.7)
-- [regantemudo/PHP-file-read-to-RCE-CVE-2024-2961-](https://github.com/regantemudo/PHP-file-read-to-RCE-CVE-2024-2961-)
 - [scriptSails/glibcs](https://github.com/scriptSails/glibcs)
 
 ### CVE-2024-2997 (2024-03-27)
@@ -13861,6 +13860,7 @@
 - [eylommaayan/THM---CVE-2024-21413-Moniker-Link-Microsoft-Outlook-](https://github.com/eylommaayan/THM---CVE-2024-21413-Moniker-Link-Microsoft-Outlook-)
 - [ViniciusFariasDev/cve-2024-21413-outlook-monikerlink-lab](https://github.com/ViniciusFariasDev/cve-2024-21413-outlook-monikerlink-lab)
 - [dionissh/CVE-2024-21413](https://github.com/dionissh/CVE-2024-21413)
+- [securenetexpert/CVE-2024-21413-Moniker-Link-Writeup](https://github.com/securenetexpert/CVE-2024-21413-Moniker-Link-Writeup)
 
 ### CVE-2024-21513 (2024-07-15)
 
@@ -59278,6 +59278,8 @@
 - [d3fudd/CVE-2017-7494_SambaCry](https://github.com/d3fudd/CVE-2017-7494_SambaCry)
 - [FelipeR-UFBA/cve-2017-7494-fixed](https://github.com/FelipeR-UFBA/cve-2017-7494-fixed)
 - [sudlit/CVE-2017-7494](https://github.com/sudlit/CVE-2017-7494)
+- [Zanex360/cdt-samba-deploy](https://github.com/Zanex360/cdt-samba-deploy)
+- [Zanex360/cdt-vulnsamba-deploy](https://github.com/Zanex360/cdt-vulnsamba-deploy)
 
 ### CVE-2017-7504 (2017-05-19)
 
