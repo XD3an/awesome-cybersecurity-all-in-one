@@ -599,6 +599,13 @@
 ### CVE-2026-25854
 - [gregk4sec/CVE-2026-25854](https://github.com/gregk4sec/CVE-2026-25854)
 
+### CVE-2026-25857 (2026-02-07)
+
+<code>Tenda G300-F router firmware versio 16.01.14.2 and prior contain an OS command injection vulnerability in the WAN diagnostic functionality (formSetWanDiag). The implementation constructs a shell command that invokes curl and incorporates attacker-controlled input into the command line without adequate neutralization. As a result, a remote attacker with access to the affected management interface can inject additional shell syntax and execute arbitrary commands on the device with the privileges of the management process.
+</code>
+
+- [eeeeeeeeeevan/CVE-2026-25857](https://github.com/eeeeeeeeeevan/CVE-2026-25857)
+
 
 ## 2025
 ### CVE-2025-0054 (2025-02-11)
