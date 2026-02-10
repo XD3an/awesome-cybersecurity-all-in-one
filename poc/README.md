@@ -147,6 +147,13 @@
 
 - [dkstar11q/Ashwesker-CVE-2026-20045](https://github.com/dkstar11q/Ashwesker-CVE-2026-20045)
 
+### CVE-2026-20404 (2026-02-02)
+
+<code>In Modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01689248; Issue ID: MSV-4837.
+</code>
+
+- [George0Papasotiriou/CVE-2026-20404-MediaTek-modem-remote-DoS-rogue-base-station-scenario-](https://github.com/George0Papasotiriou/CVE-2026-20404-MediaTek-modem-remote-DoS-rogue-base-station-scenario-)
+
 ### CVE-2026-20805 (2026-01-13)
 
 <code>Exposure of sensitive information to an unauthorized actor in Desktop Windows Manager allows an authorized attacker to disclose information locally.
@@ -249,6 +256,14 @@
 - [boroeurnprach/Ashwesker-CVE-2026-21962](https://github.com/boroeurnprach/Ashwesker-CVE-2026-21962)
 - [ThumpBo/CVE-2026-21962](https://github.com/ThumpBo/CVE-2026-21962)
 - [gregk4sec/CVE-2026-21962](https://github.com/gregk4sec/CVE-2026-21962)
+- [George0Papasotiriou/CVE-2026-21962-Oracle-HTTP-Server-WebLogic-Proxy-Plug-in-Critical-](https://github.com/George0Papasotiriou/CVE-2026-21962-Oracle-HTTP-Server-WebLogic-Proxy-Plug-in-Critical-)
+
+### CVE-2026-22187 (2026-01-07)
+
+<code>Bio-Formats versions up to and including 8.3.0 perform unsafe Java deserialization of attacker-controlled memoization cache files (.bfmemo) during image processing. The loci.formats.Memoizer class automatically loads and deserializes memo files associated with images without validation, integrity checks, or trust enforcement. An attacker who can supply a crafted .bfmemo file alongside an image can trigger deserialization of untrusted data, which may result in denial of service, logic manipulation, or potentially remote code execution in environments where suitable gadget chains are present on the classpath.
+</code>
+
+- [George0Papasotiriou/CVE-2026-22187-Bio-Formats-unsafe-Java-deserialization-via-.bfmemo](https://github.com/George0Papasotiriou/CVE-2026-22187-Bio-Formats-unsafe-Java-deserialization-via-.bfmemo)
 
 ### CVE-2026-22200 (2026-01-12)
 
@@ -540,6 +555,13 @@
 
 - [mbanyamer/deephas-1.0.7-Prototype-Pollution-PoC-CVE-2026-25047-](https://github.com/mbanyamer/deephas-1.0.7-Prototype-Pollution-PoC-CVE-2026-25047-)
 
+### CVE-2026-25049 (2026-02-04)
+
+<code>n8n is an open source workflow automation platform. Prior to versions 1.123.17 and 2.5.2, an authenticated user with permission to create or modify workflows could abuse crafted expressions in workflow parameters to trigger unintended system command execution on the host running n8n. This issue has been patched in versions 1.123.17 and 2.5.2.
+</code>
+
+- [otakuliu/Expression-Sandbox-Escape-Simulation-Lab](https://github.com/otakuliu/Expression-Sandbox-Escape-Simulation-Lab)
+
 ### CVE-2026-25050 (2026-01-30)
 
 <code>Vendure is an open-source headless commerce platform. Prior to version 3.5.3, the `NativeAuthenticationStrategy.authenticate()` method is vulnerable to a timing attack that allows attackers to enumerate valid usernames (email addresses). In `packages/core/src/config/auth/native-authentication-strategy.ts`, the authenticate method returns immediately if a user is not found. The significant timing difference (~200-400ms for bcrypt vs ~1-5ms for DB miss) allows attackers to reliably distinguish between existing and non-existing accounts. Version 3.5.3 fixes the issue.
@@ -626,6 +648,13 @@
 </code>
 
 - [eeeeeeeeeevan/CVE-2026-25857](https://github.com/eeeeeeeeeevan/CVE-2026-25857)
+
+### CVE-2026-25916 (2026-02-09)
+
+<code>Roundcube Webmail before 1.5.13 and 1.6 before 1.6.13, when &quot;Block remote images&quot; is used, does not block SVG feImage.
+</code>
+
+- [mbanyamer/CVE-2026-25916-Roundcube-Webmail-DOM-based-XSS-Exploit-via-SVG-href-Attribute](https://github.com/mbanyamer/CVE-2026-25916-Roundcube-Webmail-DOM-based-XSS-Exploit-via-SVG-href-Attribute)
 
 
 ## 2025
@@ -1800,6 +1829,9 @@
 - [ibrahmsql/CVE-2025-6018](https://github.com/ibrahmsql/CVE-2025-6018)
 - [euxem/Analyse-faille-de-s-curit-CVE-2025-6018-CVE-2025-6019](https://github.com/euxem/Analyse-faille-de-s-curit-CVE-2025-6018-CVE-2025-6019)
 - [AzureADTrent/CVE-2025-6018-and-CVE-2025-6019-Privilege-Escalation](https://github.com/AzureADTrent/CVE-2025-6018-and-CVE-2025-6019-Privilege-Escalation)
+- [muyuanlove/CVE-2025-6018-CVE-2025-6019-Privilege-Escalation-Exploit](https://github.com/muyuanlove/CVE-2025-6018-CVE-2025-6019-Privilege-Escalation-Exploit)
+- [0rionCollector/Exploit-Chain-CVE-2025-6018-6019](https://github.com/0rionCollector/Exploit-Chain-CVE-2025-6018-6019)
+- [MichaelVenturella/CVE-2025-6018-6019-PoC](https://github.com/MichaelVenturella/CVE-2025-6018-6019-PoC)
 
 ### CVE-2025-6019 (2025-06-19)
 
@@ -1812,6 +1844,7 @@
 - [harshitvarma05/CVE-2025-6019](https://github.com/harshitvarma05/CVE-2025-6019)
 - [robbin0919/CVE-2025-6019](https://github.com/robbin0919/CVE-2025-6019)
 - [phamdinhquy2512/CVE-2025-6019-Exploitation](https://github.com/phamdinhquy2512/CVE-2025-6019-Exploitation)
+- [0x5chltz/CVE-2025-6019](https://github.com/0x5chltz/CVE-2025-6019)
 
 ### CVE-2025-6058 (2025-07-12)
 
@@ -2232,6 +2265,7 @@
 - [111ddea/goga-cve-2025-8110](https://github.com/111ddea/goga-cve-2025-8110)
 - [tovd-go/CVE-2025-8110](https://github.com/tovd-go/CVE-2025-8110)
 - [freiwi/CVE-2025-8110](https://github.com/freiwi/CVE-2025-8110)
+- [George0Papasotiriou/CVE-2025-8110-Gogs-Remote-Code-Execution](https://github.com/George0Papasotiriou/CVE-2025-8110-Gogs-Remote-Code-Execution)
 
 ### CVE-2025-8191 (2025-07-26)
 
@@ -2307,6 +2341,7 @@
 - [moften/CVE-2025-8671-MadeYouReset-HTTP-2-DDoS](https://github.com/moften/CVE-2025-8671-MadeYouReset-HTTP-2-DDoS)
 - [mateusm1403/PoC-CVE-2025-8671-MadeYouReset-HTTP-2](https://github.com/mateusm1403/PoC-CVE-2025-8671-MadeYouReset-HTTP-2)
 - [abiyeenzo/CVE-2025-8671](https://github.com/abiyeenzo/CVE-2025-8671)
+- [mysara2022/CVE-2025-8671-vulnerability-POC-](https://github.com/mysara2022/CVE-2025-8671-vulnerability-POC-)
 
 ### CVE-2025-8714 (2025-08-14)
 
@@ -2376,6 +2411,7 @@
 - [Shaoshi17/CVE-2025-9074-Docker-Exploit](https://github.com/Shaoshi17/CVE-2025-9074-Docker-Exploit)
 - [KvzinNcpx7/kvzinncpx7.github.io](https://github.com/KvzinNcpx7/kvzinncpx7.github.io)
 - [x0da6h/POC-for-CVE-2025-9074](https://github.com/x0da6h/POC-for-CVE-2025-9074)
+- [matesz44/CVE-2025-9074](https://github.com/matesz44/CVE-2025-9074)
 
 ### CVE-2025-9090 (2025-08-17)
 
@@ -2955,6 +2991,7 @@
 
 - [Satirush/CVE-2025-14174-Poc](https://github.com/Satirush/CVE-2025-14174-Poc)
 - [typeconfused/CVE-2025-14174-analysis](https://github.com/typeconfused/CVE-2025-14174-analysis)
+- [George0Papasotiriou/CVE-2025-14174-Chrome-Zero-Day](https://github.com/George0Papasotiriou/CVE-2025-14174-Chrome-Zero-Day)
 
 ### CVE-2025-14175 (2025-12-29)
 
@@ -3139,6 +3176,14 @@
 </code>
 
 - [Xernary/CVE-2025-15545](https://github.com/Xernary/CVE-2025-15545)
+
+### CVE-2025-15556 (2026-02-03)
+
+<code>Notepad++ versions prior to 8.8.9, when using the WinGUp updater, contain an update integrity verification vulnerability where downloaded update metadata and installers are not cryptographically verified. An attacker able to intercept or redirect update traffic can cause the updater to download and execute an attacker-controlled installer, resulting in arbitrary code execution with the privileges of the user.
+</code>
+
+- [renat0z3r0/notepadpp-supply-chain-iocs](https://github.com/renat0z3r0/notepadpp-supply-chain-iocs)
+- [George0Papasotiriou/CVE-2025-15556-Notepad-WinGUp-Updater-RCE](https://github.com/George0Papasotiriou/CVE-2025-15556-Notepad-WinGUp-Updater-RCE)
 
 ### CVE-2025-20029 (2025-02-05)
 
@@ -4170,6 +4215,13 @@
 </code>
 
 - [ZeroMemoryEx/CVE-2025-26125](https://github.com/ZeroMemoryEx/CVE-2025-26125)
+
+### CVE-2025-26153 (2025-04-16)
+
+<code>A Stored XSS vulnerability exists in the message compose feature of Chamilo LMS 1.11.28. Attackers can inject malicious scripts into messages, which execute when victims, such as administrators, reply to the message.
+</code>
+
+- [mexeck88/CSRF-via-stored-XSS-for-PrivEsc](https://github.com/mexeck88/CSRF-via-stored-XSS-for-PrivEsc)
 
 ### CVE-2025-26159 (2025-04-22)
 
@@ -8239,6 +8291,7 @@
 - [MuhammadUwais/React2Shell](https://github.com/MuhammadUwais/React2Shell)
 - [Evillm/CVE-2025-55182-PoC](https://github.com/Evillm/CVE-2025-55182-PoC)
 - [BrianLopezM99/react2shell-CVE-2025-55182](https://github.com/BrianLopezM99/react2shell-CVE-2025-55182)
+- [George0Papasotiriou/CVE-2025-55182-React2Shell-CVSS-10.0-](https://github.com/George0Papasotiriou/CVE-2025-55182-React2Shell-CVSS-10.0-)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -8798,13 +8851,6 @@
 
 - [boroeurnprach/CVE-2025-59057-PoC](https://github.com/boroeurnprach/CVE-2025-59057-PoC)
 
-### CVE-2025-59194 (2025-10-14)
-
-<code>Use of uninitialized resource in Windows Kernel allows an authorized attacker to elevate privileges locally.
-</code>
-
-- [kawaii-ghost/CVE-2025-59194](https://github.com/kawaii-ghost/CVE-2025-59194)
-
 ### CVE-2025-59287 (2025-10-14)
 
 <code>Deserialization of untrusted data in Windows Server Update Service allows an unauthorized attacker to execute code over a network.
@@ -8855,6 +8901,13 @@
 </code>
 
 - [JOOJIII/CVE-2025-59424](https://github.com/JOOJIII/CVE-2025-59424)
+
+### CVE-2025-59470 (2026-01-08)
+
+<code>This vulnerability allows a Backup Operator to perform remote code execution (RCE) as the postgres user by sending a malicious interval or order parameter.
+</code>
+
+- [George0Papasotiriou/CVE-2025-59470-PostgreSQL-Command-Injection](https://github.com/George0Papasotiriou/CVE-2025-59470-PostgreSQL-Command-Injection)
 
 ### CVE-2025-59501 (2025-10-31)
 
@@ -9087,6 +9140,7 @@
 
 - [siddu7575/CVE-2025-61882-CVE-2025-61884](https://github.com/siddu7575/CVE-2025-61882-CVE-2025-61884)
 - [Zhert-lab/CVE-2025-61882-CVE-2025-61884](https://github.com/Zhert-lab/CVE-2025-61882-CVE-2025-61884)
+- [George0Papasotiriou/CVE-2025-61882-Oracle-BI-Publisher-RCE](https://github.com/George0Papasotiriou/CVE-2025-61882-Oracle-BI-Publisher-RCE)
 
 ### CVE-2025-61922 (2025-10-16)
 
@@ -9694,6 +9748,7 @@
 </code>
 
 - [LuisMirandaAcebedo/CVE-2025-65856](https://github.com/LuisMirandaAcebedo/CVE-2025-65856)
+- [KostasEreksonas/XM_ONVIF_auth_bypass](https://github.com/KostasEreksonas/XM_ONVIF_auth_bypass)
 
 ### CVE-2025-65857 (2025-12-22)
 
@@ -12739,6 +12794,7 @@
 - [rvizx/CVE-2024-9264](https://github.com/rvizx/CVE-2024-9264)
 - [patrickpichler/grafana-CVE-2024-9264](https://github.com/patrickpichler/grafana-CVE-2024-9264)
 - [amalpvatayam67/day05-grafana-sqlexpr-lab](https://github.com/amalpvatayam67/day05-grafana-sqlexpr-lab)
+- [ISabbiI/PoC---Implementation-Plan---Grafana-CVE-2024-9264-SQL-Injection-](https://github.com/ISabbiI/PoC---Implementation-Plan---Grafana-CVE-2024-9264-SQL-Injection-)
 
 ### CVE-2024-9290 (2024-12-13)
 
@@ -23836,7 +23892,7 @@
 <code>A deserialization vulnerability existed when dubbo generic invoke, which could lead to malicious code execution. \n\nThis issue affects Apache Dubbo 2.7.x version 2.7.21 and prior versions; Apache Dubbo 3.0.x version 3.0.13 and prior versions; Apache Dubbo 3.1.x version 3.1.5 and prior versions. 
 </code>
 
-- [X1r0z/Dubbo-RCE](https://github.com/X1r0z/Dubbo-RCE)
+- [X1r0z/dubbo-rce](https://github.com/X1r0z/dubbo-rce)
 - [YYHYlh/Apache-Dubbo-CVE-2023-23638-exp](https://github.com/YYHYlh/Apache-Dubbo-CVE-2023-23638-exp)
 - [P4x1s/CVE-2023-23638-Tools](https://github.com/P4x1s/CVE-2023-23638-Tools)
 - [cuijiung/dubbo-CVE-2023-23638](https://github.com/cuijiung/dubbo-CVE-2023-23638)
@@ -26295,6 +26351,9 @@
 </code>
 
 - [costacoco/Adiscon](https://github.com/costacoco/Adiscon)
+
+### CVE-2023-34632
+- [ssophiz/CVE-2023-34632](https://github.com/ssophiz/CVE-2023-34632)
 
 ### CVE-2023-34634 (2023-08-01)
 
@@ -29158,7 +29217,6 @@
 </code>
 
 - [trganda/ActiveMQ-RCE](https://github.com/trganda/ActiveMQ-RCE)
-- [X1r0z/ActiveMQ-RCE](https://github.com/X1r0z/ActiveMQ-RCE)
 - [ImuSpirit/ActiveMQ_RCE_Pro_Max](https://github.com/ImuSpirit/ActiveMQ_RCE_Pro_Max)
 - [SaumyajeetDas/CVE-2023-46604-RCE-Reverse-Shell-Apache-ActiveMQ](https://github.com/SaumyajeetDas/CVE-2023-46604-RCE-Reverse-Shell-Apache-ActiveMQ)
 - [evkl1d/CVE-2023-46604](https://github.com/evkl1d/CVE-2023-46604)
@@ -31823,7 +31881,6 @@
 
 - [Audiobahn/CVE-2022-20699](https://github.com/Audiobahn/CVE-2022-20699)
 - [puckiestyle/CVE-2022-20699](https://github.com/puckiestyle/CVE-2022-20699)
-- [Rohan-flutterint/CVE-2022-20699](https://github.com/Rohan-flutterint/CVE-2022-20699)
 
 ### CVE-2022-20818 (2022-09-30)
 
@@ -32938,6 +32995,13 @@
 </code>
 
 - [Cyber-Wo0dy/CVE-2022-24227-updated](https://github.com/Cyber-Wo0dy/CVE-2022-24227-updated)
+
+### CVE-2022-24251 (2022-03-01)
+
+<code>Extensis Portfolio v4.0 was discovered to contain an authenticated unrestricted file upload vulnerability via the Catalog Asset Upload function.
+</code>
+
+- [talilama/extensis_portfolio_rce_CVE-2022-24251](https://github.com/talilama/extensis_portfolio_rce_CVE-2022-24251)
 
 ### CVE-2022-24342 (2022-02-25)
 
@@ -43907,7 +43971,6 @@
 - [obscuritylabs/log4shell-poc-lab](https://github.com/obscuritylabs/log4shell-poc-lab)
 - [Fazmin/vCenter-Server-Workaround-Script-CVE-2021-44228](https://github.com/Fazmin/vCenter-Server-Workaround-Script-CVE-2021-44228)
 - [Grupo-Kapa-7/CVE-2021-44228-Log4j-PoC-RCE](https://github.com/Grupo-Kapa-7/CVE-2021-44228-Log4j-PoC-RCE)
-- [Rohan-flutterint/CVE-2021-44228_scanner](https://github.com/Rohan-flutterint/CVE-2021-44228_scanner)
 - [sysadmin0815/Fix-Log4j-PowershellScript](https://github.com/sysadmin0815/Fix-Log4j-PowershellScript)
 - [RenYuH/log4j-lookups-vulnerability](https://github.com/RenYuH/log4j-lookups-vulnerability)
 - [scheibling/py-log4shellscanner](https://github.com/scheibling/py-log4shellscanner)
@@ -59920,6 +59983,7 @@
 - [0xf3d0rq/CVE-2017-7921](https://github.com/0xf3d0rq/CVE-2017-7921)
 - [saaydmr/hikvision-exploiter](https://github.com/saaydmr/hikvision-exploiter)
 - [Wyl-cmd/CVE-2017-7921-Research-Toolkit](https://github.com/Wyl-cmd/CVE-2017-7921-Research-Toolkit)
+- [mverschu/CVE-2017-7921](https://github.com/mverschu/CVE-2017-7921)
 
 ### CVE-2017-7998 (2018-01-08)
 
