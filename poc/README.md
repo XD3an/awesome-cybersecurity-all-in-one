@@ -569,6 +569,13 @@
 
 - [Christbowel/CVE-2026-25050](https://github.com/Christbowel/CVE-2026-25050)
 
+### CVE-2026-25053 (2026-02-04)
+
+<code>n8n is an open source workflow automation platform. Prior to versions 1.123.10 and 2.5.0, vulnerabilities in the Git node allowed authenticated users with permission to create or modify workflows to execute arbitrary system commands or read arbitrary files on the n8n host. This issue has been patched in versions 1.123.10 and 2.5.0.
+</code>
+
+- [yadhukrishnam/CVE-2026-25053](https://github.com/yadhukrishnam/CVE-2026-25053)
+
 ### CVE-2026-25126 (2026-01-29)
 
 <code>PolarLearn is a free and open-source learning program. Prior to version 0-PRERELEASE-15, the vote API route (`POST /api/v1/forum/vote`) trusts the JSON body’s `direction` value without runtime validation. TypeScript types are not enforced at runtime, so an attacker can send arbitrary strings (e.g., `&quot;x&quot;`) as `direction`. Downstream (`VoteServer`) treats any non-`&quot;up&quot;` and non-`null` value as a downvote and persists the invalid value in `votes_data`. This can be exploited to bypass intended business logic. Version 0-PRERELEASE-15 fixes the vulnerability.
@@ -635,6 +642,13 @@
 </code>
 
 - [mbanyamer/CVE-2026-25732-NiceGUI-3.6.1](https://github.com/mbanyamer/CVE-2026-25732-NiceGUI-3.6.1)
+
+### CVE-2026-25807 (2026-02-09)
+
+<code>ZAI Shell is an autonomous SysOps agent designed to navigate, repair, and secure complex environments. Prior to 9.0.3, the P2P terminal sharing feature (share start) opens a TCP socket on port 5757 without any authentication mechanism. Any remote attacker can connect to this port using a simple socket script. An attacker who connects to a ZAI-Shell P2P session running in --no-ai mode can send arbitrary system commands. If the host user approves the command without reviewing its contents, the command executes directly with the user's privileges, bypassing all Sentinel safety checks. This vulnerability is fixed in 9.0.3.
+</code>
+
+- [ibrahmsql/CVE-2026-25807-Exploit](https://github.com/ibrahmsql/CVE-2026-25807-Exploit)
 
 ### CVE-2026-25828
 - [cardosource/CVE-2026-25828](https://github.com/cardosource/CVE-2026-25828)
@@ -10206,6 +10220,7 @@
 
 - [chinaxploiter/CVE-2025-68645-PoC](https://github.com/chinaxploiter/CVE-2025-68645-PoC)
 - [MaxMnMl/zimbramail-CVE-2025-68645-poc](https://github.com/MaxMnMl/zimbramail-CVE-2025-68645-poc)
+- [faysalferdous/CVE-2025-68645-Exploiting-Zimbra-Webmail-LFI-Vulnerability](https://github.com/faysalferdous/CVE-2025-68645-Exploiting-Zimbra-Webmail-LFI-Vulnerability)
 
 ### CVE-2025-68664 (2025-12-23)
 
@@ -10300,6 +10315,13 @@
 
 ### CVE-2025-69460
 - [Tagoletta/CVE-2025-69460](https://github.com/Tagoletta/CVE-2025-69460)
+
+### CVE-2025-69516 (2026-01-29)
+
+<code>A Server-Side Template Injection (SSTI) vulnerability in the /reporting/templates/preview/ endpoint of Amidaware Tactical RMM, affecting versions equal to or earlier than v1.3.1, allows low-privileged users with Report Viewer or Report Manager permissions to achieve remote command execution on the server. This occurs due to improper sanitization of the template_md parameter, enabling direct injection of Jinja2 templates. This occurs due to misuse of the generate_html() function, the user-controlled value is inserted into `env.from_string`, a function that processes Jinja2 templates arbitrarily, making an SSTI possible.
+</code>
+
+- [NtGabrielGomes/CVE-2025-69516](https://github.com/NtGabrielGomes/CVE-2025-69516)
 
 ### CVE-2025-69581 (2026-01-16)
 
@@ -12071,6 +12093,7 @@
 </code>
 
 - [argendo/CVE-2024-6386](https://github.com/argendo/CVE-2024-6386)
+- [bananoname/CVE-2024-6386-WPML-SSTI](https://github.com/bananoname/CVE-2024-6386-WPML-SSTI)
 
 ### CVE-2024-6387 (2024-07-01)
 
@@ -28702,6 +28725,7 @@
 - [tpirate/cve-2023-44487-POC](https://github.com/tpirate/cve-2023-44487-POC)
 - [ReGeLePuMa/HTTP-2-Rapid-Reset-DDos](https://github.com/ReGeLePuMa/HTTP-2-Rapid-Reset-DDos)
 - [sastraadiwiguna-purpleeliteteaming/DDoS-Purple-Teaming-Offensive-Multi-Vector-7-Tier-Defensive-Holistic-Blueprint-](https://github.com/sastraadiwiguna-purpleeliteteaming/DDoS-Purple-Teaming-Offensive-Multi-Vector-7-Tier-Defensive-Holistic-Blueprint-)
+- [Syn2Much/Slayer-L7](https://github.com/Syn2Much/Slayer-L7)
 
 ### CVE-2023-44758 (2023-10-06)
 
@@ -45297,6 +45321,7 @@
 - [Jagadeesh7532/-CVE-2020-0796-SMBGhost-Windows-10-SMBv3-Remote-Code-Execution-Vulnerability](https://github.com/Jagadeesh7532/-CVE-2020-0796-SMBGhost-Windows-10-SMBv3-Remote-Code-Execution-Vulnerability)
 - [nyambiblaise/Microsoft-Windows-SMBGhost-Vulnerability-Checker---CVE-2020-0796---SMBv3-RCE](https://github.com/nyambiblaise/Microsoft-Windows-SMBGhost-Vulnerability-Checker---CVE-2020-0796---SMBv3-RCE)
 - [thai1012/cve-2020-0796](https://github.com/thai1012/cve-2020-0796)
+- [harrymaguire1878/CVE-2020-0796](https://github.com/harrymaguire1878/CVE-2020-0796)
 
 ### CVE-2020-0887 (2020-03-12)
 
