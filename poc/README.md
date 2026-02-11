@@ -103,7 +103,11 @@
 
 - [JoakimBulow/CVE-2026-1337](https://github.com/JoakimBulow/CVE-2026-1337)
 
-### CVE-2026-1357
+### CVE-2026-1357 (2026-02-11)
+
+<code>The Migration, Backup, Staging – WPvivid Backup &amp; Migration plugin for WordPress is vulnerable to Unauthenticated Arbitrary File Upload in versions up to and including 0.9.123. This is due to improper error handling in the RSA decryption process combined with a lack of path sanitization when writing uploaded files. When the plugin fails to decrypt a session key using openssl_private_decrypt(), it does not terminate execution and instead passes the boolean false value to the phpseclib library's AES cipher initialization. The library treats this false value as a string of null bytes, allowing an attacker to encrypt a malicious payload using a predictable null-byte key. Additionally, the plugin accepts filenames from the decrypted payload without sanitization, enabling directory traversal to escape the protected backup directory. This makes it possible for unauthenticated attackers to upload arbitrary PHP files to publicly accessible directories and achieve Remote Code Execution via the wpvivid_action=send_to_site parameter.
+</code>
+
 - [itsismarcos/Exploit-CVE-2026-1357](https://github.com/itsismarcos/Exploit-CVE-2026-1357)
 
 ### CVE-2026-1457 (2026-01-29)
@@ -119,6 +123,7 @@
 </code>
 
 - [ninjazan420/CVE-2026-1529-PoC-keycloak-unauthorized-registration-via-improper-invitation-token-validation](https://github.com/ninjazan420/CVE-2026-1529-PoC-keycloak-unauthorized-registration-via-improper-invitation-token-validation)
+- [0x240x23elu/CVE-2026-1529](https://github.com/0x240x23elu/CVE-2026-1529)
 
 ### CVE-2026-1560
 - [Z3YR0xX/CVE-2026-1560-Authenticated-Remote-Code-Execution-in-Lazy-Blocks-4.2.0](https://github.com/Z3YR0xX/CVE-2026-1560-Authenticated-Remote-Code-Execution-in-Lazy-Blocks-4.2.0)
@@ -191,6 +196,13 @@
 - [mrk336/Inside-CVE-2026-20805-How-a-Windows-DWM-Flaw-Exposed-Sensitive-Data](https://github.com/mrk336/Inside-CVE-2026-20805-How-a-Windows-DWM-Flaw-Exposed-Sensitive-Data)
 - [SimoesCTT/-SCTT-2026-33-0002-DWM-Visual-Field-Singularity](https://github.com/SimoesCTT/-SCTT-2026-33-0002-DWM-Visual-Field-Singularity)
 - [SimoesCTT/SCTT-2026-33-0002-DWM-Visual-Field-Singularity](https://github.com/SimoesCTT/SCTT-2026-33-0002-DWM-Visual-Field-Singularity)
+
+### CVE-2026-20841 (2026-02-10)
+
+<code>Improper neutralization of special elements used in a command ('command injection') in Windows Notepad App allows an unauthorized attacker to execute code over a network.
+</code>
+
+- [BTtea/CVE-2026-20841-PoC](https://github.com/BTtea/CVE-2026-20841-PoC)
 
 ### CVE-2026-21436 (2026-01-01)
 
@@ -265,6 +277,7 @@
 - [MOGMUNI/mogmuni.github.io](https://github.com/MOGMUNI/mogmuni.github.io)
 - [bgarz929/Ashwesker-CVE-2026-21858](https://github.com/bgarz929/Ashwesker-CVE-2026-21858)
 - [Alhakim88/CVE-2026-21858](https://github.com/Alhakim88/CVE-2026-21858)
+- [EQSTLab/CVE-2026-21858](https://github.com/EQSTLab/CVE-2026-21858)
 
 ### CVE-2026-21876 (2026-01-08)
 
@@ -1883,6 +1896,7 @@
 - [muyuanlove/CVE-2025-6018-CVE-2025-6019-Privilege-Escalation-Exploit](https://github.com/muyuanlove/CVE-2025-6018-CVE-2025-6019-Privilege-Escalation-Exploit)
 - [0rionCollector/Exploit-Chain-CVE-2025-6018-6019](https://github.com/0rionCollector/Exploit-Chain-CVE-2025-6018-6019)
 - [MichaelVenturella/CVE-2025-6018-6019-PoC](https://github.com/MichaelVenturella/CVE-2025-6018-6019-PoC)
+- [matesz44/CVE-2025-6018-19](https://github.com/matesz44/CVE-2025-6018-19)
 
 ### CVE-2025-6019 (2025-06-19)
 
@@ -34784,7 +34798,6 @@
 - [seinab-ibrahim/Follina-Vulnerability-CVE-2022-30190-Exploit-Analysis](https://github.com/seinab-ibrahim/Follina-Vulnerability-CVE-2022-30190-Exploit-Analysis)
 - [Arkha-Corvus/LetsDefend-SOC173-Follina-0-Day-Detected](https://github.com/Arkha-Corvus/LetsDefend-SOC173-Follina-0-Day-Detected)
 - [nimesh895/Malware-Analysis-Follina-CVE-2022-30190](https://github.com/nimesh895/Malware-Analysis-Follina-CVE-2022-30190)
-- [imankasthuri/follina-rce-cve-2022-30190](https://github.com/imankasthuri/follina-rce-cve-2022-30190)
 
 ### CVE-2022-30203 (2022-07-12)
 
@@ -59793,8 +59806,8 @@
 <code>The Simple Network Management Protocol (SNMP) subsystem of Cisco IOS and IOS XE Software contains multiple vulnerabilities that could allow an authenticated, remote attacker to remotely execute code on an affected system or cause an affected system to reload. An attacker could exploit these vulnerabilities by sending a crafted SNMP packet to an affected system via IPv4 or IPv6. Only traffic directed to an affected system can be used to exploit these vulnerabilities.\r\n\r The vulnerabilities are due to a buffer overflow condition in the SNMP subsystem of the affected software. The vulnerabilities affect all versions of SNMP - Versions 1, 2c, and 3. To exploit these vulnerabilities via SNMP Version 2c or earlier, the attacker must know the SNMP read-only community string for the affected system. To exploit these vulnerabilities via SNMP Version 3, the attacker must have user credentials for the affected system. A successful exploit could allow the attacker to execute arbitrary code and obtain full control of the affected system or cause the affected system to reload.\r\n\r Customers are advised to apply the workaround as contained in the Workarounds section below. Fixed software information is available via the Cisco IOS Software Checker. All devices that have enabled SNMP and have not explicitly excluded the affected MIBs or OIDs should be considered vulnerable.\r\n\r   There are workarounds that address these vulnerabilities.
 </code>
 
-- [plyrthn/CiscoSpectreTakeover](https://github.com/plyrthn/CiscoSpectreTakeover)
-- [plyrthn/CiscoIOSSNMPToolkit](https://github.com/plyrthn/CiscoIOSSNMPToolkit)
+- [ISTALKMILK/CiscoSpectreTakeover](https://github.com/ISTALKMILK/CiscoSpectreTakeover)
+- [ISTALKMILK/CiscoIOSSNMPToolkit](https://github.com/ISTALKMILK/CiscoIOSSNMPToolkit)
 
 ### CVE-2017-6742 (2017-07-17)
 
