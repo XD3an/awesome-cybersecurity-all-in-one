@@ -109,6 +109,8 @@
 </code>
 
 - [itsismarcos/Exploit-CVE-2026-1357](https://github.com/itsismarcos/Exploit-CVE-2026-1357)
+- [LucasM0ntes/POC-CVE-2026-1357](https://github.com/LucasM0ntes/POC-CVE-2026-1357)
+- [microcyberr/CVE-2026-1357](https://github.com/microcyberr/CVE-2026-1357)
 
 ### CVE-2026-1457 (2026-01-29)
 
@@ -125,7 +127,11 @@
 - [ninjazan420/CVE-2026-1529-PoC-keycloak-unauthorized-registration-via-improper-invitation-token-validation](https://github.com/ninjazan420/CVE-2026-1529-PoC-keycloak-unauthorized-registration-via-improper-invitation-token-validation)
 - [0x240x23elu/CVE-2026-1529](https://github.com/0x240x23elu/CVE-2026-1529)
 
-### CVE-2026-1560
+### CVE-2026-1560 (2026-02-11)
+
+<code>The Custom Block Builder – Lazy Blocks plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 4.2.0 via multiple functions in the 'LazyBlocks_Blocks' class. This makes it possible for authenticated attackers, with Contributor-level access and above, to execute code on the server.
+</code>
+
 - [Z3YR0xX/CVE-2026-1560-Authenticated-Remote-Code-Execution-in-Lazy-Blocks-4.2.0](https://github.com/Z3YR0xX/CVE-2026-1560-Authenticated-Remote-Code-Execution-in-Lazy-Blocks-4.2.0)
 
 ### CVE-2026-1731 (2026-02-06)
@@ -134,6 +140,8 @@
 </code>
 
 - [z3r0h3ro/CVE-2026-1731-exp](https://github.com/z3r0h3ro/CVE-2026-1731-exp)
+- [win3zz/CVE-2026-1731](https://github.com/win3zz/CVE-2026-1731)
+- [bytehazard/CVE-2026-1731](https://github.com/bytehazard/CVE-2026-1731)
 
 ### CVE-2026-1862 (2026-02-03)
 
@@ -155,6 +163,20 @@
 </code>
 
 - [MaxMnMl/tpadmin-CVE-2026-2113-poc](https://github.com/MaxMnMl/tpadmin-CVE-2026-2113-poc)
+
+### CVE-2026-2248 (2026-02-11)
+
+<code>METIS WIC devices (versions &lt;= oscore 2.1.234-r18) expose a web-based shell at the /console endpoint that does not require authentication. Accessing this endpoint allows a remote attacker to execute arbitrary operating system commands with root (UID 0) privileges. This results in full system compromise, allowing unauthorized access to modify system configuration, read sensitive data, or disrupt device operations
+</code>
+
+- [netspecters/CVE-2026-2248](https://github.com/netspecters/CVE-2026-2248)
+
+### CVE-2026-2249 (2026-02-11)
+
+<code>METIS DFS devices (versions &lt;= oscore 2.1.234-r18) expose a web-based shell at the /console endpoint that does not require authentication. Accessing this endpoint allows a remote attacker to execute arbitrary operating system commands with 'daemon' privileges. This results in the compromise of the software, granting unauthorized access to modify configuration, read and alter sensitive data, or disrupt services.
+</code>
+
+- [NightlyAudit/CVE-2026-2249](https://github.com/NightlyAudit/CVE-2026-2249)
 
 ### CVE-2026-2395
 - [dajneem23/CVE-2026-2395](https://github.com/dajneem23/CVE-2026-2395)
@@ -203,6 +225,8 @@
 </code>
 
 - [BTtea/CVE-2026-20841-PoC](https://github.com/BTtea/CVE-2026-20841-PoC)
+- [RajaUzairAbdullah/CVE-2026-20841](https://github.com/RajaUzairAbdullah/CVE-2026-20841)
+- [tangent65536/CVE-2026-20841](https://github.com/tangent65536/CVE-2026-20841)
 
 ### CVE-2026-21436 (2026-01-01)
 
@@ -235,6 +259,13 @@
 
 - [chinaxploiter/CVE-2026-21445-PoC](https://github.com/chinaxploiter/CVE-2026-21445-PoC)
 
+### CVE-2026-21508 (2026-02-10)
+
+<code>Improper authentication in Windows Storage allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [0xc4r/CVE-2026-21508_POC](https://github.com/0xc4r/CVE-2026-21508_POC)
+
 ### CVE-2026-21509 (2026-01-26)
 
 <code>Reliance on untrusted inputs in a security decision in Microsoft Office allows an unauthorized attacker to bypass a security feature locally.
@@ -248,13 +279,29 @@
 - [SimoesCTT/CTT-MICROSOFT-OFFICE-OLE-MANIFOLD-BYPASS-CVE-2026-21509](https://github.com/SimoesCTT/CTT-MICROSOFT-OFFICE-OLE-MANIFOLD-BYPASS-CVE-2026-21509)
 - [decalage2/detect_CVE-2026-21509](https://github.com/decalage2/detect_CVE-2026-21509)
 - [kaizensecurity/CVE-2026-21509](https://github.com/kaizensecurity/CVE-2026-21509)
+- [planetoid/cve-2026-21509-mitigation](https://github.com/planetoid/cve-2026-21509-mitigation)
 
-### CVE-2026-21643 (2026-02-06)
+### CVE-2026-21510 (2026-02-10)
 
-<code>An improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiClientEMS 7.4.4 may allow an unauthenticated attacker to execute unauthorized code or commands via specifically crafted HTTP requests.
+<code>Protection mechanism failure in Windows Shell allows an unauthorized attacker to bypass a security feature over a network.
 </code>
 
-- [DarkSploits/CVE-2026-21643-Exploit](https://github.com/DarkSploits/CVE-2026-21643-Exploit)
+- [andreassudo/CVE-2026-21510-CVSS-8.8-Important-Windows-Shell-security-feature-bypass](https://github.com/andreassudo/CVE-2026-21510-CVSS-8.8-Important-Windows-Shell-security-feature-bypass)
+
+### CVE-2026-21531 (2026-02-10)
+
+<code>Deserialization of untrusted data in Azure SDK allows an unauthorized attacker to execute code over a network.
+</code>
+
+- [NetVanguard-cmd/CVE-2026-21531](https://github.com/NetVanguard-cmd/CVE-2026-21531)
+
+### CVE-2026-21533 (2026-02-10)
+
+<code>Improper privilege management in Windows Remote Desktop allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [Pairs34/RDPVulnarableCheck](https://github.com/Pairs34/RDPVulnarableCheck)
+- [ghostroots/CVE-2026-21533](https://github.com/ghostroots/CVE-2026-21533)
 
 ### CVE-2026-21721 (2026-01-27)
 
@@ -1575,6 +1622,7 @@
 
 - [Yucaerin/CVE-2025-4606](https://github.com/Yucaerin/CVE-2025-4606)
 - [UcenHaxor07/CVE-2025-4606](https://github.com/UcenHaxor07/CVE-2025-4606)
+- [Yetazyyy/CVE-2025-4606](https://github.com/Yetazyyy/CVE-2025-4606)
 
 ### CVE-2025-4611 (2025-05-21)
 
@@ -1792,6 +1840,7 @@
 - [fokda-prodz/CVE-2025-5394](https://github.com/fokda-prodz/CVE-2025-5394)
 - [Nxploited/CVE-2025-5394](https://github.com/Nxploited/CVE-2025-5394)
 - [Yucaerin/CVE-2025-5394](https://github.com/Yucaerin/CVE-2025-5394)
+- [qalesyaSN/CVE-2025-5394](https://github.com/qalesyaSN/CVE-2025-5394)
 
 ### CVE-2025-5419 (2025-06-02)
 
@@ -1819,6 +1868,7 @@
 
 - [Nxploited/CVE-2025-5701](https://github.com/Nxploited/CVE-2025-5701)
 - [RandomRobbieBF/CVE-2025-5701](https://github.com/RandomRobbieBF/CVE-2025-5701)
+- [qalesyaSN/CVE-2025-5701](https://github.com/qalesyaSN/CVE-2025-5701)
 
 ### CVE-2025-5755 (2025-06-06)
 
@@ -2687,13 +2737,6 @@
 
 - [NagisaYumaa/CVE-2025-10377](https://github.com/NagisaYumaa/CVE-2025-10377)
 
-### CVE-2025-10484 (2026-01-17)
-
-<code>The Registration &amp; Login with Mobile Phone Number for WooCommerce plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 1.3.1. This is due to the plugin not properly verifying a users identity prior to authenticating them via the fma_lwp_set_session_php_fun() function. This makes it possible for unauthenticated attackers to authenticate as any user on the site, including administrators, without a valid password.
-</code>
-
-- [microcyberr/CVE-2025-10484](https://github.com/microcyberr/CVE-2025-10484)
-
 ### CVE-2025-10492 (2025-09-16)
 
 <code>A Java deserialisation vulnerability has been discovered in Jaspersoft Library. Improper handling of externally supplied data may allow attackers to execute arbitrary code remotely on systems that use the affected library
@@ -2840,13 +2883,6 @@
 </code>
 
 - [Nxploited/CVE-2025-12674](https://github.com/Nxploited/CVE-2025-12674)
-
-### CVE-2025-12720 (2025-12-06)
-
-<code>The g-FFL Cockpit plugin for WordPress is vulnerable to unauthorized modification of data due to IP-based authorization that can be spoofed in the handle_enqueue_only() function in all versions up to, and including, 1.7.1. This makes it possible for unauthenticated attackers to delete arbitrary products.
-</code>
-
-- [d0n601/CVE-2025-12720](https://github.com/d0n601/CVE-2025-12720)
 
 ### CVE-2025-12735 (2025-11-05)
 
@@ -5429,7 +5465,7 @@
 <code>Erlang/OTP is a set of libraries for the Erlang programming language. Prior to versions OTP-27.3.3, OTP-26.2.5.11, and OTP-25.3.2.20, a SSH server may allow an attacker to perform unauthenticated remote code execution (RCE). By exploiting a flaw in SSH protocol message handling, a malicious actor could gain unauthorized access to affected systems and execute arbitrary commands without valid credentials. This issue is patched in versions OTP-27.3.3, OTP-26.2.5.11, and OTP-25.3.2.20. A temporary workaround involves disabling the SSH server or to prevent access via firewall rules.
 </code>
 
-- [platsecurity/CVE-2025-32433](https://github.com/platsecurity/CVE-2025-32433)
+- [ProDefense/CVE-2025-32433](https://github.com/ProDefense/CVE-2025-32433)
 - [ekomsSavior/POC_CVE-2025-32433](https://github.com/ekomsSavior/POC_CVE-2025-32433)
 - [Epivalent/CVE-2025-32433-detection](https://github.com/Epivalent/CVE-2025-32433-detection)
 - [darses/CVE-2025-32433](https://github.com/darses/CVE-2025-32433)
@@ -6913,8 +6949,10 @@
 - [YoyoChaud/CVE-2025-49132](https://github.com/YoyoChaud/CVE-2025-49132)
 - [ramzihafiz/CVE-2025-49132](https://github.com/ramzihafiz/CVE-2025-49132)
 - [kerburenthusiasm/CVE-2025-49132-PoC](https://github.com/kerburenthusiasm/CVE-2025-49132-PoC)
-- [Ahmedf000/-CVE-2025-49132_Pterodactyl-_HTB-Season-10](https://github.com/Ahmedf000/-CVE-2025-49132_Pterodactyl-_HTB-Season-10)
 - [matesz44/CVE-2025-49132](https://github.com/matesz44/CVE-2025-49132)
+- [Ahmedf000/CVE-2025-49132_HTB_SEASON10](https://github.com/Ahmedf000/CVE-2025-49132_HTB_SEASON10)
+- [Pwndalf/CVE-2025-49132-PoC](https://github.com/Pwndalf/CVE-2025-49132-PoC)
+- [dollarboysushil/CVE-2025-49132-Pterodactyl-Panel-Unauthenticated-Remote-Code-Execution-RCE-](https://github.com/dollarboysushil/CVE-2025-49132-Pterodactyl-Panel-Unauthenticated-Remote-Code-Execution-RCE-)
 
 ### CVE-2025-49144 (2025-06-23)
 
@@ -7686,6 +7724,7 @@
 - [victormbogu1/LetsDefend-SOC342-CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-andRCE-EventID-320](https://github.com/victormbogu1/LetsDefend-SOC342-CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-andRCE-EventID-320)
 - [Cameloo1/sharepoint-toolshell-micro-postmortem](https://github.com/Cameloo1/sharepoint-toolshell-micro-postmortem)
 - [anwakub/CVE-2025-53770](https://github.com/anwakub/CVE-2025-53770)
+- [rbctee/CVE-2025-53770](https://github.com/rbctee/CVE-2025-53770)
 
 ### CVE-2025-53772 (2025-08-12)
 
@@ -8253,6 +8292,7 @@
 - [yuta3003/CVE-2025-55182](https://github.com/yuta3003/CVE-2025-55182)
 - [rahul-securify/React2Shell-CVE-2025-55182](https://github.com/rahul-securify/React2Shell-CVE-2025-55182)
 - [W41T3D3V1L/COMPLETE-CVE-2025-55182](https://github.com/W41T3D3V1L/COMPLETE-CVE-2025-55182)
+- [raivenLockdown/RCE_React2Shell_ButCooler-SomeUselessUsefulThingsLMAO-](https://github.com/raivenLockdown/RCE_React2Shell_ButCooler-SomeUselessUsefulThingsLMAO-)
 - [oguri-souhei/CVE-2025-55182](https://github.com/oguri-souhei/CVE-2025-55182)
 - [xalgord/React2Shell](https://github.com/xalgord/React2Shell)
 - [ryanhafid/PoC_CVE-2025-55182](https://github.com/ryanhafid/PoC_CVE-2025-55182)
@@ -8940,7 +8980,6 @@
 - [Adel-kaka-dz/cve-2025-59287](https://github.com/Adel-kaka-dz/cve-2025-59287)
 - [gud425/gud425.github.io](https://github.com/gud425/gud425.github.io)
 - [LuemmelSec/CVE-2025-59287---WSUS-SCCM-RCE](https://github.com/LuemmelSec/CVE-2025-59287---WSUS-SCCM-RCE)
-- [you-dream-1hall/CVE-2025-59287](https://github.com/you-dream-1hall/CVE-2025-59287)
 - [salman5230/CVE-2025-59287](https://github.com/salman5230/CVE-2025-59287)
 
 ### CVE-2025-59342 (2025-09-17)
@@ -9245,6 +9284,7 @@
 - [mrk336/Kernel-Chaos-Weaponizing-CVE-2025-62215-for-SYSTEM-Privilege-Escalation](https://github.com/mrk336/Kernel-Chaos-Weaponizing-CVE-2025-62215-for-SYSTEM-Privilege-Escalation)
 - [abrewer251/CVE-2025-62215_Windows_Kernel_PE](https://github.com/abrewer251/CVE-2025-62215_Windows_Kernel_PE)
 - [theman001/CVE-2025-62215](https://github.com/theman001/CVE-2025-62215)
+- [uky007/CVE-2025-62215_analysis](https://github.com/uky007/CVE-2025-62215_analysis)
 
 ### CVE-2025-62221 (2025-12-09)
 
@@ -9601,7 +9641,7 @@
 <code>GLPI is a free asset and IT management software package. Prior to 10.0.21 and 11.0.3, an unauthorized user can access GLPI documents attached to any item (ticket, asset, ...). If the public FAQ is enabled, this unauthorized access can be performed by an anonymous user. This vulnerability is fixed in 10.0.21 and 11.0.3.
 </code>
 
-- [ArdNoir/CVE-2025-64516](https://github.com/ArdNoir/CVE-2025-64516)
+- [ArdNoir/CVE-2025-64516-POC](https://github.com/ArdNoir/CVE-2025-64516-POC)
 
 ### CVE-2025-64720 (2025-11-24)
 
@@ -19938,7 +19978,6 @@
 
 - [newlinesec/CVE-2024-50603](https://github.com/newlinesec/CVE-2024-50603)
 - [th3gokul/CVE-2024-50603](https://github.com/th3gokul/CVE-2024-50603)
-- [h0w1tzxr/CVE-2024-50603](https://github.com/h0w1tzxr/CVE-2024-50603)
 
 ### CVE-2024-50623 (2024-10-27)
 
@@ -37127,6 +37166,7 @@
 </code>
 
 - [IgorDuino/CVE-2022-44136-exploit](https://github.com/IgorDuino/CVE-2022-44136-exploit)
+- [Ch35h1r3c47/CVE-2022-44136-poc](https://github.com/Ch35h1r3c47/CVE-2022-44136-poc)
 
 ### CVE-2022-44149 (2023-01-06)
 
@@ -38270,7 +38310,6 @@
 <code>In lockAllProfileTasks of RootWindowContainer.java, there is a possible way to access the work profile without the profile PIN, after logging in. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-9 Android-10 Android-11 Android-8.1Android ID: A-177457096
 </code>
 
-- [pazhanivel07/Settings-CVE-2021-0595](https://github.com/pazhanivel07/Settings-CVE-2021-0595)
 - [pazhanivel07/frameworks_base_Aosp10_r33_CVE-2021-0595](https://github.com/pazhanivel07/frameworks_base_Aosp10_r33_CVE-2021-0595)
 
 ### CVE-2021-0600 (2021-07-14)
@@ -41219,13 +41258,6 @@
 
 - [waleedassar/CVE-2021-31184](https://github.com/waleedassar/CVE-2021-31184)
 
-### CVE-2021-31233 (2023-05-31)
-
-<code>SQL Injection vulnerability found in Fighting Cock Information System v.1.0 allows a remote attacker to obtain sensitive information via the edit_breed.php parameter.
-</code>
-
-- [gabesolomon/CVE-2021-31233](https://github.com/gabesolomon/CVE-2021-31233)
-
 ### CVE-2021-31290
 - [qaisarafridi/cve-2021-31290](https://github.com/qaisarafridi/cve-2021-31290)
 
@@ -43095,6 +43127,8 @@
 - [ChanaPCN/CVE-2021-41773-Analysis](https://github.com/ChanaPCN/CVE-2021-41773-Analysis)
 - [sudo0xksh/cve-2021-41773-checker](https://github.com/sudo0xksh/cve-2021-41773-checker)
 - [dserdyk3-arch/Serdyuk-DO-homework-CVE-2021-41773](https://github.com/dserdyk3-arch/Serdyuk-DO-homework-CVE-2021-41773)
+- [ISabbiI/PoC-Apache-CVE-2021-41773-Infrastructure-LAB](https://github.com/ISabbiI/PoC-Apache-CVE-2021-41773-Infrastructure-LAB)
+- [RevShellXD/LFI-Destruction](https://github.com/RevShellXD/LFI-Destruction)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -45395,7 +45429,6 @@
 - [Jagadeesh7532/-CVE-2020-0796-SMBGhost-Windows-10-SMBv3-Remote-Code-Execution-Vulnerability](https://github.com/Jagadeesh7532/-CVE-2020-0796-SMBGhost-Windows-10-SMBv3-Remote-Code-Execution-Vulnerability)
 - [nyambiblaise/Microsoft-Windows-SMBGhost-Vulnerability-Checker---CVE-2020-0796---SMBv3-RCE](https://github.com/nyambiblaise/Microsoft-Windows-SMBGhost-Vulnerability-Checker---CVE-2020-0796---SMBv3-RCE)
 - [thai1012/cve-2020-0796](https://github.com/thai1012/cve-2020-0796)
-- [harrymaguire1878/CVE-2020-0796](https://github.com/harrymaguire1878/CVE-2020-0796)
 
 ### CVE-2020-0887 (2020-03-12)
 
@@ -52170,6 +52203,7 @@
 - [Perseus99999/CVE-2019-9053-working-](https://github.com/Perseus99999/CVE-2019-9053-working-)
 - [Praditha29/Simple-CTF-THM-Writeup](https://github.com/Praditha29/Simple-CTF-THM-Writeup)
 - [tim-karov/cmsms-sqli](https://github.com/tim-karov/cmsms-sqli)
+- [pasan2002/CVE-2019-9053---CMS-Made-Simple-SQL-Injection-Exploit-Modified-](https://github.com/pasan2002/CVE-2019-9053---CMS-Made-Simple-SQL-Injection-Exploit-Modified-)
 
 ### CVE-2019-9081
 - [nth347/CVE-2019-9081_PoC](https://github.com/nth347/CVE-2019-9081_PoC)
@@ -65463,6 +65497,7 @@
 - [PREN0MEN/CVE-2013-3900-PowerShell-PoC](https://github.com/PREN0MEN/CVE-2013-3900-PowerShell-PoC)
 - [oukridrig772/-WinVerifyTrust-Signature-Validation-CVE-2013-3900-Mitigation](https://github.com/oukridrig772/-WinVerifyTrust-Signature-Validation-CVE-2013-3900-Mitigation)
 - [ksgassama-lab/vulnerability-remediation-cve-2013-3900](https://github.com/ksgassama-lab/vulnerability-remediation-cve-2013-3900)
+- [SDimitri05/cve-2013-3900-winverifytrust-mitigation](https://github.com/SDimitri05/cve-2013-3900-winverifytrust-mitigation)
 
 ### CVE-2013-4002 (2013-07-23)
 
