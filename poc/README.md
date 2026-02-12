@@ -227,6 +227,8 @@
 - [BTtea/CVE-2026-20841-PoC](https://github.com/BTtea/CVE-2026-20841-PoC)
 - [RajaUzairAbdullah/CVE-2026-20841](https://github.com/RajaUzairAbdullah/CVE-2026-20841)
 - [tangent65536/CVE-2026-20841](https://github.com/tangent65536/CVE-2026-20841)
+- [patchpoint/CVE-2026-20841](https://github.com/patchpoint/CVE-2026-20841)
+- [uky007/CVE-2026-20841_notepad_analysis](https://github.com/uky007/CVE-2026-20841_notepad_analysis)
 
 ### CVE-2026-21436 (2026-01-01)
 
@@ -771,6 +773,13 @@
 </code>
 
 - [mbanyamer/CVE-2026-25961-SumatraPDF-3.5.0---3.5.2-RCE](https://github.com/mbanyamer/CVE-2026-25961-SumatraPDF-3.5.0---3.5.2-RCE)
+
+### CVE-2026-26215 (2026-02-11)
+
+<code>manga-image-translator version beta-0.3 and prior in shared API mode contains an unsafe deserialization vulnerability that can lead to unauthenticated remote code execution. The FastAPI endpoints /simple_execute/{method} and /execute/{method} deserialize attacker-controlled request bodies using pickle.loads() without validation. Although a nonce-based authorization check is intended to restrict access, the nonce defaults to an empty string and the check is skipped, allowing remote attackers to execute arbitrary code in the server context by sending a crafted pickle payload.
+</code>
+
+- [mbanyamer/-CVE-2026-26215-manga-image-translator-RCE](https://github.com/mbanyamer/-CVE-2026-26215-manga-image-translator-RCE)
 
 
 ## 2025
@@ -2770,7 +2779,6 @@
 <code>7-Zip ZIP File Parsing Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. Interaction with this product is required to exploit this vulnerability but attack vectors may vary depending on the implementation.\n\nThe specific flaw exists within the handling of symbolic links in ZIP files. Crafted data in a ZIP file can cause the process to traverse to unintended directories. An attacker can leverage this vulnerability to execute code in the context of a service account. Was ZDI-CAN-26753.
 </code>
 
-- [pacbypass/CVE-2025-11001](https://github.com/pacbypass/CVE-2025-11001)
 - [lastvocher/7zip-CVE-2025-11001](https://github.com/lastvocher/7zip-CVE-2025-11001)
 - [mbanyamer/CVE-2025-11001---7-Zip](https://github.com/mbanyamer/CVE-2025-11001---7-Zip)
 - [ranasen-rat/CVE-2025-11001](https://github.com/ranasen-rat/CVE-2025-11001)
@@ -8199,6 +8207,7 @@
 - [C00LN3T/React2Shell](https://github.com/C00LN3T/React2Shell)
 - [thekamran/CVE-2025-55182-Proof-of-Concept](https://github.com/thekamran/CVE-2025-55182-Proof-of-Concept)
 - [Syrins/CVE-2025-55182-React2Shell-RCE](https://github.com/Syrins/CVE-2025-55182-React2Shell-RCE)
+- [0xsj/CVE-2025-55182](https://github.com/0xsj/CVE-2025-55182)
 - [Security-Phoenix-demo/react2shell-scanner-CVE-2025-55182](https://github.com/Security-Phoenix-demo/react2shell-scanner-CVE-2025-55182)
 - [Benrich127N/react2shell_analyzer](https://github.com/Benrich127N/react2shell_analyzer)
 - [7amzahard/React2shell](https://github.com/7amzahard/React2shell)
@@ -8411,6 +8420,7 @@
 - [BrianLopezM99/react2shell-CVE-2025-55182](https://github.com/BrianLopezM99/react2shell-CVE-2025-55182)
 - [George0Papasotiriou/CVE-2025-55182-React2Shell-CVSS-10.0-](https://github.com/George0Papasotiriou/CVE-2025-55182-React2Shell-CVSS-10.0-)
 - [atiilla/CVE-2025-55182](https://github.com/atiilla/CVE-2025-55182)
+- [snipevx/React2Shell-POC](https://github.com/snipevx/React2Shell-POC)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -9350,6 +9360,9 @@
 
 - [baktistr/cve-2025-62726-poc](https://github.com/baktistr/cve-2025-62726-poc)
 - [Muzyli/cve-2025-62726-malicious-repo](https://github.com/Muzyli/cve-2025-62726-malicious-repo)
+
+### CVE-2025-62878
+- [kinokopio/CVE-2025-62878](https://github.com/kinokopio/CVE-2025-62878)
 
 ### CVE-2025-62950 (2025-11-06)
 
@@ -11248,6 +11261,7 @@
 - [PumpkinBridge/Chrome-CVE-2024-2887-RCE-POC](https://github.com/PumpkinBridge/Chrome-CVE-2024-2887-RCE-POC)
 - [rycbar77/CVE-2024-2887](https://github.com/rycbar77/CVE-2024-2887)
 - [jjyuorg/reproduce-cve-2024-2887](https://github.com/jjyuorg/reproduce-cve-2024-2887)
+- [junfuture1103/CVE-2024-2887](https://github.com/junfuture1103/CVE-2024-2887)
 
 ### CVE-2024-2928 (2024-06-06)
 
@@ -25528,6 +25542,7 @@
 </code>
 
 - [silentsignal/CVE-2023-30990](https://github.com/silentsignal/CVE-2023-30990)
+- [cyn8/cve-2023-30990](https://github.com/cyn8/cve-2023-30990)
 
 ### CVE-2023-31070
 - [bugprove/cve-2023-31070](https://github.com/bugprove/cve-2023-31070)
@@ -39661,13 +39676,6 @@
 - [gui2000guix-ui/cve-2021-21980-mock-server](https://github.com/gui2000guix-ui/cve-2021-21980-mock-server)
 - [pratikjojode/vcenter-cve-2021-21980-lab](https://github.com/pratikjojode/vcenter-cve-2021-21980-lab)
 
-### CVE-2021-21983 (2021-03-31)
-
-<code>Arbitrary file write vulnerability in vRealize Operations Manager API (CVE-2021-21983) prior to 8.4 may allow an authenticated malicious actor with network access to the vRealize Operations Manager API can write files to arbitrary locations on the underlying photon operating system.
-</code>
-
-- [murataydemir/CVE-2021-21983](https://github.com/murataydemir/CVE-2021-21983)
-
 ### CVE-2021-21985 (2021-05-26)
 
 <code>The vSphere Client (HTML5) contains a remote code execution vulnerability due to lack of input validation in the Virtual SAN Health Check plug-in which is enabled by default in vCenter Server. A malicious actor with network access to port 443 may exploit this issue to execute commands with unrestricted privileges on the underlying operating system that hosts vCenter Server.
@@ -42908,6 +42916,13 @@
 </code>
 
 - [Nickguitar/RevCAT](https://github.com/Nickguitar/RevCAT)
+
+### CVE-2021-41579 (2021-10-04)
+
+<code>LCDS LAquis SCADA through 4.3.1.1085 is vulnerable to a control bypass and path traversal. If an attacker can get a victim to load a malicious els project file and use the play feature, then the attacker can bypass a consent popup and write arbitrary files to OS locations where the user has permission, leading to code execution.
+</code>
+
+- [mbanyamer/CVE-2021-41579-LCDS-LAquis-SCADA-4.3.1.1085-Arbitrary-File-Write](https://github.com/mbanyamer/CVE-2021-41579-LCDS-LAquis-SCADA-4.3.1.1085-Arbitrary-File-Write)
 
 ### CVE-2021-41617 (2021-09-26)
 
