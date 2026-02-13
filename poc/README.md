@@ -11311,7 +11311,6 @@
 - [PumpkinBridge/Chrome-CVE-2024-2887-RCE-POC](https://github.com/PumpkinBridge/Chrome-CVE-2024-2887-RCE-POC)
 - [rycbar77/CVE-2024-2887](https://github.com/rycbar77/CVE-2024-2887)
 - [jjyuorg/reproduce-cve-2024-2887](https://github.com/jjyuorg/reproduce-cve-2024-2887)
-- [junfuture1103/CVE-2024-2887](https://github.com/junfuture1103/CVE-2024-2887)
 
 ### CVE-2024-2928 (2024-06-06)
 
@@ -59908,6 +59907,8 @@
 
 - [ISTALKMILK/CiscoSpectreTakeover](https://github.com/ISTALKMILK/CiscoSpectreTakeover)
 - [ISTALKMILK/CiscoIOSSNMPToolkit](https://github.com/ISTALKMILK/CiscoIOSSNMPToolkit)
+- [plyrthn/CiscoIOSSNMPToolkit](https://github.com/plyrthn/CiscoIOSSNMPToolkit)
+- [plyrthn/CiscoSpectreTakeover](https://github.com/plyrthn/CiscoSpectreTakeover)
 
 ### CVE-2017-6742 (2017-07-17)
 
