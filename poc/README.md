@@ -134,6 +134,13 @@
 
 - [Z3YR0xX/CVE-2026-1560-Authenticated-Remote-Code-Execution-in-Lazy-Blocks-4.2.0](https://github.com/Z3YR0xX/CVE-2026-1560-Authenticated-Remote-Code-Execution-in-Lazy-Blocks-4.2.0)
 
+### CVE-2026-1729 (2026-02-12)
+
+<code>The AdForest theme for WordPress is vulnerable to authentication bypass in all versions up to, and including, 6.0.12. This is due to the plugin not properly verifying a user's identity prior to authenticating them through the 'sb_login_user_with_otp_fun' function. This makes it possible for unauthenticated attackers to log in as arbitrary users, including administrators.
+</code>
+
+- [ninjazan420/CVE-2026-1729-PoC-AdForest-WordPress-Authentication-Bypass](https://github.com/ninjazan420/CVE-2026-1729-PoC-AdForest-WordPress-Authentication-Bypass)
+
 ### CVE-2026-1731 (2026-02-06)
 
 <code>BeyondTrust Remote Support (RS) and certain older versions of Privileged Remote Access (PRA) contain a critical pre-authentication remote code execution vulnerability. By sending specially crafted requests, an unauthenticated remote attacker may be able to execute operating system commands in the context of the site user.
@@ -164,26 +171,21 @@
 
 - [MaxMnMl/tpadmin-CVE-2026-2113-poc](https://github.com/MaxMnMl/tpadmin-CVE-2026-2113-poc)
 
-### CVE-2026-2248 (2026-02-11)
-
-<code>METIS WIC devices (versions &lt;= oscore 2.1.234-r18) expose a web-based shell at the /console endpoint that does not require authentication. Accessing this endpoint allows a remote attacker to execute arbitrary operating system commands with root (UID 0) privileges. This results in full system compromise, allowing unauthorized access to modify system configuration, read sensitive data, or disrupt device operations
-</code>
-
-- [netspecters/CVE-2026-2248](https://github.com/netspecters/CVE-2026-2248)
-
 ### CVE-2026-2249 (2026-02-11)
 
 <code>METIS DFS devices (versions &lt;= oscore 2.1.234-r18) expose a web-based shell at the /console endpoint that does not require authentication. Accessing this endpoint allows a remote attacker to execute arbitrary operating system commands with 'daemon' privileges. This results in the compromise of the software, granting unauthorized access to modify configuration, read and alter sensitive data, or disrupt services.
 </code>
 
-- [NightlyAudit/CVE-2026-2249](https://github.com/NightlyAudit/CVE-2026-2249)
+- [taylorwerno/CVE-2026-2249](https://github.com/taylorwerno/CVE-2026-2249)
 
 ### CVE-2026-2395
 - [dajneem23/CVE-2026-2395](https://github.com/dajneem23/CVE-2026-2395)
 
 ### CVE-2026-2406
+- [hyu164/Terrminus-CVE-2026-2406](https://github.com/hyu164/Terrminus-CVE-2026-2406)
 - [ridpath/Terrminus-CVE-2026-2406](https://github.com/ridpath/Terrminus-CVE-2026-2406)
 - [SimoesCTT/CTT-Sovereign-Vortex](https://github.com/SimoesCTT/CTT-Sovereign-Vortex)
+- [hyu164/hyu164.github.io](https://github.com/hyu164/hyu164.github.io)
 
 ### CVE-2026-2461
 - [destiny-creates/CVE-2026-2461-poc](https://github.com/destiny-creates/CVE-2026-2461-poc)
@@ -221,7 +223,7 @@
 
 ### CVE-2026-20841 (2026-02-10)
 
-<code>Improper neutralization of special elements used in a command ('command injection') in Windows Notepad App allows an unauthorized attacker to execute code over a network.
+<code>Improper neutralization of special elements used in a command ('command injection') in Windows Notepad App allows an unauthorized attacker to execute code locally.
 </code>
 
 - [BTtea/CVE-2026-20841-PoC](https://github.com/BTtea/CVE-2026-20841-PoC)
@@ -229,6 +231,10 @@
 - [tangent65536/CVE-2026-20841](https://github.com/tangent65536/CVE-2026-20841)
 - [patchpoint/CVE-2026-20841](https://github.com/patchpoint/CVE-2026-20841)
 - [uky007/CVE-2026-20841_notepad_analysis](https://github.com/uky007/CVE-2026-20841_notepad_analysis)
+- [atiilla/CVE-2026-20841](https://github.com/atiilla/CVE-2026-20841)
+- [dogukankurnaz/CVE-2026-20841-PoC](https://github.com/dogukankurnaz/CVE-2026-20841-PoC)
+- [SecureWithUmer/CVE-2026-20841](https://github.com/SecureWithUmer/CVE-2026-20841)
+- [hackfaiz/CVE-2026-20841-PoC](https://github.com/hackfaiz/CVE-2026-20841-PoC)
 
 ### CVE-2026-21436 (2026-01-01)
 
@@ -303,7 +309,6 @@
 </code>
 
 - [Pairs34/RDPVulnarableCheck](https://github.com/Pairs34/RDPVulnarableCheck)
-- [ghostroots/CVE-2026-21533](https://github.com/ghostroots/CVE-2026-21533)
 
 ### CVE-2026-21721 (2026-01-27)
 
@@ -317,13 +322,11 @@
 <code>n8n is an open source workflow automation platform. Versions starting with 1.65.0 and below 1.121.0 enable an attacker to access files on the underlying server through execution of certain form-based workflows. A vulnerable workflow could grant access to an unauthenticated remote attacker, resulting in exposure of sensitive information stored on the system and may enable further compromise depending on deployment configuration and workflow usage. This issue is fixed in version 1.121.0.
 </code>
 
-- [MOGMUNI/CVE-2026-21858](https://github.com/MOGMUNI/CVE-2026-21858)
 - [Chocapikk/CVE-2026-21858](https://github.com/Chocapikk/CVE-2026-21858)
 - [cropnet/Ni8mare](https://github.com/cropnet/Ni8mare)
 - [sastraadiwiguna-purpleeliteteaming/SASTRA-ADI-WIGUNA-CVE-2026-21858-Holistic-Audit](https://github.com/sastraadiwiguna-purpleeliteteaming/SASTRA-ADI-WIGUNA-CVE-2026-21858-Holistic-Audit)
 - [sec-dojo-com/CVE-2026-21858](https://github.com/sec-dojo-com/CVE-2026-21858)
 - [SystemVll/CVE-2026-21858](https://github.com/SystemVll/CVE-2026-21858)
-- [MOGMUNI/mogmuni.github.io](https://github.com/MOGMUNI/mogmuni.github.io)
 - [bgarz929/Ashwesker-CVE-2026-21858](https://github.com/bgarz929/Ashwesker-CVE-2026-21858)
 - [Alhakim88/CVE-2026-21858](https://github.com/Alhakim88/CVE-2026-21858)
 - [EQSTLab/CVE-2026-21858](https://github.com/EQSTLab/CVE-2026-21858)
@@ -345,6 +348,14 @@
 - [ThumpBo/CVE-2026-21962](https://github.com/ThumpBo/CVE-2026-21962)
 - [gregk4sec/CVE-2026-21962](https://github.com/gregk4sec/CVE-2026-21962)
 - [George0Papasotiriou/CVE-2026-21962-Oracle-HTTP-Server-WebLogic-Proxy-Plug-in-Critical-](https://github.com/George0Papasotiriou/CVE-2026-21962-Oracle-HTTP-Server-WebLogic-Proxy-Plug-in-Critical-)
+
+### CVE-2026-22153 (2026-02-10)
+
+<code>An Authentication Bypass by Primary Weakness vulnerability [CWE-305] vulnerability in Fortinet FortiOS 7.6.0 through 7.6.4 may allow an unauthenticated attacker to bypass LDAP authentication of Agentless VPN or FSSO policy, when the remote LDAP server is configured in a specific way.
+</code>
+
+- [washingtonmaister/CVE-2026-22153-exp](https://github.com/washingtonmaister/CVE-2026-22153-exp)
+- [glitchhawks/CVE-2026-22153](https://github.com/glitchhawks/CVE-2026-22153)
 
 ### CVE-2026-22187 (2026-01-07)
 
@@ -483,6 +494,13 @@
 
 - [SimoesCTT/CTT-Mailpit-RCE-v1.0---Temporal-Resonance-Mail-Server-Takeover](https://github.com/SimoesCTT/CTT-Mailpit-RCE-v1.0---Temporal-Resonance-Mail-Server-Takeover)
 
+### CVE-2026-23830 (2026-01-27)
+
+<code>SandboxJS is a JavaScript sandboxing library. Versions prior to 0.8.26 have a sandbox escape vulnerability due to `AsyncFunction` not being isolated in `SandboxFunction`. The library attempts to sandbox code execution by replacing the global `Function` constructor with a safe, sandboxed version (`SandboxFunction`). This is handled in `utils.ts` by mapping `Function` to `sandboxFunction` within a map used for lookups. However, before version 0.8.26, the library did not include mappings for `AsyncFunction`, `GeneratorFunction`, and `AsyncGeneratorFunction`. These constructors are not global properties but can be accessed via the `.constructor` property of an instance (e.g., `(async () =&gt; {}).constructor`). In `executor.ts`, property access is handled. When code running inside the sandbox accesses `.constructor` on an async function (which the sandbox allows creating), the `executor` retrieves the property value. Since `AsyncFunction` was not in the safe-replacement map, the `executor` returns the actual native host `AsyncFunction` constructor. Constructors for functions in JavaScript (like `Function`, `AsyncFunction`) create functions that execute in the global scope. By obtaining the host `AsyncFunction` constructor, an attacker can create a new async function that executes entirely outside the sandbox context, bypassing all restrictions and gaining full access to the host environment (Remote Code Execution). Version 0.8.26 patches this vulnerability.
+</code>
+
+- [Galaxy-sc/CVE-2026-23830-SandBreak](https://github.com/Galaxy-sc/CVE-2026-23830-SandBreak)
+
 ### CVE-2026-23885 (2026-01-19)
 
 <code>Alchemy is an open source content management system engine written in Ruby on Rails. Prior to versions 7.4.12 and 8.0.3, the application uses the Ruby `eval()` function to dynamically execute a string provided by the `resource_handler.engine_name` attribute in `Alchemy::ResourcesHelper#resource_url_proxy`. The vulnerability exists in `app/helpers/alchemy/resources_helper.rb` at line 28. The code explicitly bypasses security linting with `# rubocop:disable Security/Eval`, indicating that the use of a dangerous function was known but not properly mitigated. Since `engine_name` is sourced from module definitions that can be influenced by administrative configurations, it allows an authenticated attacker to escape the Ruby sandbox and execute arbitrary system commands on the host OS. Versions 7.4.12 and 8.0.3 fix the issue by replacing `eval()` with `send()`.
@@ -509,7 +527,6 @@
 <code>telnetd in GNU Inetutils through 2.7 allows remote authentication bypass via a &quot;-f root&quot; value for the USER environment variable.
 </code>
 
-- [Good123321-bot/CVE-2026-24061-POC](https://github.com/Good123321-bot/CVE-2026-24061-POC)
 - [leonjza/inetutils-telnetd-auth-bypass](https://github.com/leonjza/inetutils-telnetd-auth-bypass)
 - [duy-31/CVE-2026-24061---telnetd](https://github.com/duy-31/CVE-2026-24061---telnetd)
 - [TryA9ain/CVE-2026-24061](https://github.com/TryA9ain/CVE-2026-24061)
@@ -557,11 +574,7 @@
 - [franckferman/CVE_2026_24061_PoC](https://github.com/franckferman/CVE_2026_24061_PoC)
 - [SeptembersEND/CVE--2026-24061](https://github.com/SeptembersEND/CVE--2026-24061)
 - [ibrahmsql/CVE-2026-24061-PoC](https://github.com/ibrahmsql/CVE-2026-24061-PoC)
-- [Good123321-bot/good123321-bot.github.io](https://github.com/Good123321-bot/good123321-bot.github.io)
-- [Moxxic1/Tell-Me-Root](https://github.com/Moxxic1/Tell-Me-Root)
-- [Moxxic1/moxxic1.github.io](https://github.com/Moxxic1/moxxic1.github.io)
 - [obrunolima1910/CVE-2026-24061](https://github.com/obrunolima1910/CVE-2026-24061)
-- [obrunolima1910/obrunolima1910.github.io](https://github.com/obrunolima1910/obrunolima1910.github.io)
 - [lavabyte/telnet-CVE-2026-24061](https://github.com/lavabyte/telnet-CVE-2026-24061)
 - [canpilayda/inetutils-telnetd-cve-2026-24061](https://github.com/canpilayda/inetutils-telnetd-cve-2026-24061)
 - [killsystema/scan-cve-2026-24061](https://github.com/killsystema/scan-cve-2026-24061)
@@ -740,7 +753,11 @@
 
 - [ibrahmsql/CVE-2026-25807-Exploit](https://github.com/ibrahmsql/CVE-2026-25807-Exploit)
 
-### CVE-2026-25828
+### CVE-2026-25828 (2026-02-12)
+
+<code>grub-btrfs through 2026-01-31 (on Arch Linux and derivative distributions) allows initramfs OS command injection because it does not sanitize the $root parameter to resolve_device().
+</code>
+
 - [cardosource/CVE-2026-25828](https://github.com/cardosource/CVE-2026-25828)
 
 ### CVE-2026-25854
@@ -780,6 +797,13 @@
 </code>
 
 - [mbanyamer/-CVE-2026-26215-manga-image-translator-RCE](https://github.com/mbanyamer/-CVE-2026-26215-manga-image-translator-RCE)
+
+### CVE-2026-26235 (2026-02-12)
+
+<code>JUNG Smart Visu Server 1.1.1050 contains a denial of service vulnerability that allows unauthenticated attackers to remotely shutdown or reboot the server. Attackers can send a single POST request to trigger the server reboot without requiring any authentication.
+</code>
+
+- [mbanyamer/CVE-2026-26235-JUNG-Smart-Visu-Server-Unauthenticated-Reboot-Shutdown](https://github.com/mbanyamer/CVE-2026-26235-JUNG-Smart-Visu-Server-Unauthenticated-Reboot-Shutdown)
 
 
 ## 2025
@@ -1956,6 +1980,7 @@
 - [0rionCollector/Exploit-Chain-CVE-2025-6018-6019](https://github.com/0rionCollector/Exploit-Chain-CVE-2025-6018-6019)
 - [MichaelVenturella/CVE-2025-6018-6019-PoC](https://github.com/MichaelVenturella/CVE-2025-6018-6019-PoC)
 - [matesz44/CVE-2025-6018-19](https://github.com/matesz44/CVE-2025-6018-19)
+- [DesertDemons/CVE-2025-6018-6019](https://github.com/DesertDemons/CVE-2025-6018-6019)
 
 ### CVE-2025-6019 (2025-06-19)
 
@@ -1970,6 +1995,7 @@
 - [phamdinhquy2512/CVE-2025-6019-Exploitation](https://github.com/phamdinhquy2512/CVE-2025-6019-Exploitation)
 - [0x5chltz/CVE-2025-6019](https://github.com/0x5chltz/CVE-2025-6019)
 - [symphony2colour/CVE-2025-6019-udisks-lpe-no-image](https://github.com/symphony2colour/CVE-2025-6019-udisks-lpe-no-image)
+- [boboaung1337/CVE-2025-6019](https://github.com/boboaung1337/CVE-2025-6019)
 
 ### CVE-2025-6058 (2025-07-12)
 
@@ -3381,7 +3407,6 @@
 - [KingHacker353/CVE-2025-20393](https://github.com/KingHacker353/CVE-2025-20393)
 - [StasonJatham/cisco-sa-sma-attack-N9bf4](https://github.com/StasonJatham/cisco-sa-sma-attack-N9bf4)
 - [redpack-kr/Blackash-CVE-2025-20393](https://github.com/redpack-kr/Blackash-CVE-2025-20393)
-- [MRH701/mrh701.github.io](https://github.com/MRH701/mrh701.github.io)
 - [cyberdudebivash/CYBERDUDEBIVASH-Cisco-AsyncOS-CVE-2025-20393-Scanner](https://github.com/cyberdudebivash/CYBERDUDEBIVASH-Cisco-AsyncOS-CVE-2025-20393-Scanner)
 
 ### CVE-2025-21042 (2025-09-12)
@@ -6961,6 +6986,9 @@
 - [Ahmedf000/CVE-2025-49132_HTB_SEASON10](https://github.com/Ahmedf000/CVE-2025-49132_HTB_SEASON10)
 - [Pwndalf/CVE-2025-49132-PoC](https://github.com/Pwndalf/CVE-2025-49132-PoC)
 - [dollarboysushil/CVE-2025-49132-Pterodactyl-Panel-Unauthenticated-Remote-Code-Execution-RCE-](https://github.com/dollarboysushil/CVE-2025-49132-Pterodactyl-Panel-Unauthenticated-Remote-Code-Execution-RCE-)
+- [thealchimist86/CVE-2025-49132-Pterodactyl-Panel-RCE](https://github.com/thealchimist86/CVE-2025-49132-Pterodactyl-Panel-RCE)
+- [scroollocker/CVE-2025-49132](https://github.com/scroollocker/CVE-2025-49132)
+- [xffsec/CVE-2025-49132](https://github.com/xffsec/CVE-2025-49132)
 
 ### CVE-2025-49144 (2025-06-23)
 
@@ -8352,7 +8380,7 @@
 - [mahaveer-choudhary/CVE-2025-55182](https://github.com/mahaveer-choudhary/CVE-2025-55182)
 - [MeGaNeKoS/secure-by-default-rce-demo](https://github.com/MeGaNeKoS/secure-by-default-rce-demo)
 - [TamaGorengs/react2shell-poc-CVE-2025-55182](https://github.com/TamaGorengs/react2shell-poc-CVE-2025-55182)
-- [dbwlsdnr95/CVE-2025-55182-React2Shell-Nextjs-RSC-Analysis](https://github.com/dbwlsdnr95/CVE-2025-55182-React2Shell-Nextjs-RSC-Analysis)
+- [dbwlsdnr95/CVE-2025-55182](https://github.com/dbwlsdnr95/CVE-2025-55182)
 - [xxxTectationxxx/React2Shell-CVE-Lab](https://github.com/xxxTectationxxx/React2Shell-CVE-Lab)
 - [vijay-shirhatti/RSC-Detect-CVE-2025-55182](https://github.com/vijay-shirhatti/RSC-Detect-CVE-2025-55182)
 - [p3ta00/react2shell-poc](https://github.com/p3ta00/react2shell-poc)
@@ -8980,6 +9008,13 @@
 
 - [boroeurnprach/CVE-2025-59057-PoC](https://github.com/boroeurnprach/CVE-2025-59057-PoC)
 
+### CVE-2025-59194 (2025-10-14)
+
+<code>Use of uninitialized resource in Windows Kernel allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [kawaii-ghost/CVE-2025-59194](https://github.com/kawaii-ghost/CVE-2025-59194)
+
 ### CVE-2025-59287 (2025-10-14)
 
 <code>Deserialization of untrusted data in Windows Server Update Service allows an unauthorized attacker to execute code over a network.
@@ -9269,6 +9304,7 @@
 - [siddu7575/CVE-2025-61882-CVE-2025-61884](https://github.com/siddu7575/CVE-2025-61882-CVE-2025-61884)
 - [Zhert-lab/CVE-2025-61882-CVE-2025-61884](https://github.com/Zhert-lab/CVE-2025-61882-CVE-2025-61884)
 - [George0Papasotiriou/CVE-2025-61882-Oracle-BI-Publisher-RCE](https://github.com/George0Papasotiriou/CVE-2025-61882-Oracle-BI-Publisher-RCE)
+- [sid-203/Enterprise-Information-Security-Risk-Assessment-Oracle-E-Business-Suite-Case-Study](https://github.com/sid-203/Enterprise-Information-Security-Risk-Assessment-Oracle-E-Business-Suite-Case-Study)
 
 ### CVE-2025-61922 (2025-10-16)
 
@@ -10033,6 +10069,9 @@
 
 - [Sumitshah00/CVE-2025-66628](https://github.com/Sumitshah00/CVE-2025-66628)
 
+### CVE-2025-66676
+- [cwjchoi01/CVE-2025-66676](https://github.com/cwjchoi01/CVE-2025-66676)
+
 ### CVE-2025-66683
 - [scap3sh4rk/CVE-2025-66683](https://github.com/scap3sh4rk/CVE-2025-66683)
 
@@ -10448,6 +10487,13 @@
 
 - [Rivek619/CVE-2025-69581](https://github.com/Rivek619/CVE-2025-69581)
 
+### CVE-2025-69604 (2026-01-29)
+
+<code>An issue in Shirt Pocket's SuperDuper! 3.11 and earlier allow a local attacker to modify the default task template to install an arbitrary package that can run shell scripts with root privileges and Full Disk Access, thus bypassing macOS privacy controls.
+</code>
+
+- [graypixel2121/CVE-2025-69604](https://github.com/graypixel2121/CVE-2025-69604)
+
 ### CVE-2025-69612 (2026-01-22)
 
 <code>A path traversal vulnerability exists in TMS Management Console (version 6.3.7.27386.20250818) from TMS Global Software. The &quot;Download Template&quot; function in the profile dashboard does not neutralize directory traversal sequences (../) in the filePath parameter, allowing authenticated users to read arbitrary files, such as the server's Web.config.
@@ -10507,7 +10553,11 @@
 
 - [kazisabu/CVE-2025-70849-Podinfo](https://github.com/kazisabu/CVE-2025-70849-Podinfo)
 
-### CVE-2025-70886
+### CVE-2025-70886 (2026-02-12)
+
+<code>An issue in halo v.2.22.4 and before allows a remote attacker to cause a denial of service via a crafted payload to the public comment submission endpoint
+</code>
+
 - [HowieHz/CVE-2025-70886](https://github.com/HowieHz/CVE-2025-70886)
 
 ### CVE-2025-70899 (2026-01-22)
@@ -10768,7 +10818,7 @@
 <code>Out of bounds memory access in V8 in Google Chrome prior to 120.0.6099.224 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
 </code>
 
-- [dbwlsdnr95/CVE-2024-0519-chrome-v8](https://github.com/dbwlsdnr95/CVE-2024-0519-chrome-v8)
+- [dbwlsdnr95/CVE-2024-0519](https://github.com/dbwlsdnr95/CVE-2024-0519)
 
 ### CVE-2024-0520 (2024-06-06)
 
@@ -13409,6 +13459,7 @@
 </code>
 
 - [unknown-user-from/CVE-2024-11003-PoC](https://github.com/unknown-user-from/CVE-2024-11003-PoC)
+- [sychikov/CVE-2024-11003-POC](https://github.com/sychikov/CVE-2024-11003-POC)
 
 ### CVE-2024-11040
 - [gothburz/CVE-2024-11040](https://github.com/gothburz/CVE-2024-11040)
@@ -22355,6 +22406,7 @@
 - [Pr1or95/CVE-2023-4220-exploit](https://github.com/Pr1or95/CVE-2023-4220-exploit)
 - [zora-beep/CVE-2023-4220](https://github.com/zora-beep/CVE-2023-4220)
 - [Least-Significant-Bit/CVE-2023-4220](https://github.com/Least-Significant-Bit/CVE-2023-4220)
+- [Sn0wBaall/CVE-2023-4220-PoC](https://github.com/Sn0wBaall/CVE-2023-4220-PoC)
 
 ### CVE-2023-4226 (2023-11-28)
 
@@ -32738,7 +32790,7 @@
 - [NickoPS87/Spring4Shell-Python-Firewall-POC](https://github.com/NickoPS87/Spring4Shell-Python-Firewall-POC)
 - [xenosf/CS4239-Spring4Shell-POC](https://github.com/xenosf/CS4239-Spring4Shell-POC)
 - [mylo-2001/GhostStrike](https://github.com/mylo-2001/GhostStrike)
-- [dbwlsdnr95/CVE-2022-22965-spring4shell](https://github.com/dbwlsdnr95/CVE-2022-22965-spring4shell)
+- [dbwlsdnr95/CVE-2022-22965](https://github.com/dbwlsdnr95/CVE-2022-22965)
 - [nhattanhh/CVE-2022-22965](https://github.com/nhattanhh/CVE-2022-22965)
 - [Shakur1314/CVE-2022-22965-Spring4Shell-Security-Operations-Analysis](https://github.com/Shakur1314/CVE-2022-22965-Spring4Shell-Security-Operations-Analysis)
 - [suyash-R-K/dfir-malware-investigation](https://github.com/suyash-R-K/dfir-malware-investigation)
@@ -34852,6 +34904,7 @@
 - [seinab-ibrahim/Follina-Vulnerability-CVE-2022-30190-Exploit-Analysis](https://github.com/seinab-ibrahim/Follina-Vulnerability-CVE-2022-30190-Exploit-Analysis)
 - [Arkha-Corvus/LetsDefend-SOC173-Follina-0-Day-Detected](https://github.com/Arkha-Corvus/LetsDefend-SOC173-Follina-0-Day-Detected)
 - [nimesh895/Malware-Analysis-Follina-CVE-2022-30190](https://github.com/nimesh895/Malware-Analysis-Follina-CVE-2022-30190)
+- [imankasthuri/follina-rce-cve-2022-30190](https://github.com/imankasthuri/follina-rce-cve-2022-30190)
 
 ### CVE-2022-30203 (2022-07-12)
 
@@ -44264,7 +44317,7 @@
 - [PCMKUIT/CVE-2021-44228---Log4Shell-Analysis](https://github.com/PCMKUIT/CVE-2021-44228---Log4Shell-Analysis)
 - [DrHaitham/Log4Shell-CVE-2021-44228](https://github.com/DrHaitham/Log4Shell-CVE-2021-44228)
 - [Loliverte/Log4j-Vulnerability](https://github.com/Loliverte/Log4j-Vulnerability)
-- [dbwlsdnr95/CVE-2021-44228-log4shell](https://github.com/dbwlsdnr95/CVE-2021-44228-log4shell)
+- [dbwlsdnr95/CVE-2021-44228](https://github.com/dbwlsdnr95/CVE-2021-44228)
 - [JoseMariaMicoli/Log4Shell-PoC](https://github.com/JoseMariaMicoli/Log4Shell-PoC)
 - [agylabs/log4shell-remediation](https://github.com/agylabs/log4shell-remediation)
 
@@ -58513,7 +58566,6 @@
 
 - [aeroot/WP-GDPR-Compliance-Plugin-Exploit](https://github.com/aeroot/WP-GDPR-Compliance-Plugin-Exploit)
 - [cved-sources/cve-2018-19207](https://github.com/cved-sources/cve-2018-19207)
-- [AnotherSec/CVE-2018-19207](https://github.com/AnotherSec/CVE-2018-19207)
 
 ### CVE-2018-19246 (2018-11-13)
 
@@ -59695,7 +59747,6 @@
 - [kaylertee/Computer-Security-Equifax-2017](https://github.com/kaylertee/Computer-Security-Equifax-2017)
 - [FozilCV/Apache-Struts2-CVE-2017-5638](https://github.com/FozilCV/Apache-Struts2-CVE-2017-5638)
 - [ACharaf06/CVE-2017-5638-Attack-and-Defense](https://github.com/ACharaf06/CVE-2017-5638-Attack-and-Defense)
-- [louislafosse/CVE-2017-5638-assignement](https://github.com/louislafosse/CVE-2017-5638-assignement)
 
 ### CVE-2017-5645 (2017-04-17)
 
