@@ -112,6 +112,7 @@
 - [LucasM0ntes/POC-CVE-2026-1357](https://github.com/LucasM0ntes/POC-CVE-2026-1357)
 - [microcyberr/CVE-2026-1357](https://github.com/microcyberr/CVE-2026-1357)
 - [halilkirazkaya/CVE-2026-1357](https://github.com/halilkirazkaya/CVE-2026-1357)
+- [cybertechajju/CVE-2026-1357-POC](https://github.com/cybertechajju/CVE-2026-1357-POC)
 
 ### CVE-2026-1457 (2026-01-29)
 
@@ -733,6 +734,13 @@
 </code>
 
 - [jduardo2704/CVE-2026-25643-Frigate-RCE](https://github.com/jduardo2704/CVE-2026-25643-Frigate-RCE)
+
+### CVE-2026-25676 (2026-02-12)
+
+<code>The installer of M-Track Duo HD version 1.0.0 contains an issue with the DLL search path, which may lead to insecurely loading Dynamic Link Libraries. As a result, arbitrary code may be executed with administrator privileges.
+</code>
+
+- [Nexxus67/cve-2026-25676](https://github.com/Nexxus67/cve-2026-25676)
 
 ### CVE-2026-25731 (2026-02-06)
 
@@ -2410,6 +2418,7 @@
 - [Markusino488/cve-2025-8088](https://github.com/Markusino488/cve-2025-8088)
 - [ilhamrzr/RAR-Anomaly-Inspector](https://github.com/ilhamrzr/RAR-Anomaly-Inspector)
 - [Ismael-20223/CVE-2025-8088](https://github.com/Ismael-20223/CVE-2025-8088)
+- [undefined-name12/CVE-2025-8088-Winrar](https://github.com/undefined-name12/CVE-2025-8088-Winrar)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -10562,6 +10571,15 @@
 
 ### CVE-2025-70600
 - [gpheheise/CVE-2025-70600---Urve-Smart-Office---Stored-XSS-in-iOS-App](https://github.com/gpheheise/CVE-2025-70600---Urve-Smart-Office---Stored-XSS-in-iOS-App)
+
+### CVE-2025-70828
+- [xiaoxiaoranxxx/CVE-2025-70828](https://github.com/xiaoxiaoranxxx/CVE-2025-70828)
+
+### CVE-2025-70829
+- [xiaoxiaoranxxx/CVE-2025-70829](https://github.com/xiaoxiaoranxxx/CVE-2025-70829)
+
+### CVE-2025-70830
+- [xiaoxiaoranxxx/CVE-2025-70830](https://github.com/xiaoxiaoranxxx/CVE-2025-70830)
 
 ### CVE-2025-70849 (2026-02-03)
 
@@ -34537,6 +34555,7 @@
 - [shurochka1396/expluatation_CVE-2022-29078](https://github.com/shurochka1396/expluatation_CVE-2022-29078)
 - [l0n3m4n/CVE-2022-29078](https://github.com/l0n3m4n/CVE-2022-29078)
 - [chuckdu21/CVE-2022-29078](https://github.com/chuckdu21/CVE-2022-29078)
+- [seal-sec-demo-2/npm-demo](https://github.com/seal-sec-demo-2/npm-demo)
 
 ### CVE-2022-29154 (2022-08-02)
 
