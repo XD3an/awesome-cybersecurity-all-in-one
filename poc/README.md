@@ -111,6 +111,7 @@
 - [itsismarcos/Exploit-CVE-2026-1357](https://github.com/itsismarcos/Exploit-CVE-2026-1357)
 - [LucasM0ntes/POC-CVE-2026-1357](https://github.com/LucasM0ntes/POC-CVE-2026-1357)
 - [microcyberr/CVE-2026-1357](https://github.com/microcyberr/CVE-2026-1357)
+- [halilkirazkaya/CVE-2026-1357](https://github.com/halilkirazkaya/CVE-2026-1357)
 
 ### CVE-2026-1457 (2026-01-29)
 
@@ -149,6 +150,7 @@
 - [z3r0h3ro/CVE-2026-1731-exp](https://github.com/z3r0h3ro/CVE-2026-1731-exp)
 - [win3zz/CVE-2026-1731](https://github.com/win3zz/CVE-2026-1731)
 - [bytehazard/CVE-2026-1731](https://github.com/bytehazard/CVE-2026-1731)
+- [cybrdude/cve-2026-1731-scanner](https://github.com/cybrdude/cve-2026-1731-scanner)
 
 ### CVE-2026-1862 (2026-02-03)
 
@@ -198,7 +200,7 @@
 
 ### CVE-2026-20045 (2026-01-21)
 
-<code>A vulnerability in Cisco Unified Communications Manager (Unified CM), Cisco Unified Communications Manager Session Management Edition (Unified CM SME), Cisco Unified Communications Manager IM &amp;amp; Presence Service (Unified CM IM&amp;amp;P), Cisco Unity Connection, and Cisco Webex Calling Dedicated Instance could allow an unauthenticated, remote attacker&amp;nbsp;to execute arbitrary commands on the underlying operating system of an affected device.&amp;nbsp;\r\n\r\nThis vulnerability is due to improper validation of user-supplied input in HTTP requests. An attacker could exploit this vulnerability by sending a sequence of crafted HTTP requests to the web-based management interface of an affected device. A successful exploit could allow the attacker to obtain user-level access to the underlying operating system and then elevate privileges to root.\r\nNote: Cisco has assigned this security advisory a Security Impact Rating (SIR) of Critical rather than High as the score indicates. The reason is that exploitation of this vulnerability could result in an attacker elevating privileges to root.
+<code>A vulnerability in Cisco Unified Communications Manager (Unified CM), Cisco Unified Communications Manager Session Management Edition (Unified CM SME), Cisco Unified Communications Manager IM &amp;amp; Presence Service (Unified CM IM&amp;amp;P), Cisco Unity Connection, and Cisco Webex Calling Dedicated Instance could allow an unauthenticated, remote attacker to execute arbitrary commands on the underlying operating system of an affected device.&amp;nbsp;\r\n\r\nThis vulnerability is due to improper validation of user-supplied input in HTTP requests. An attacker could exploit this vulnerability by sending a sequence of crafted HTTP requests to the web-based management interface of an affected device. A successful exploit could allow the attacker to obtain user-level access to the underlying operating system and then elevate privileges to root.&amp;nbsp;\r\nNote: Cisco has assigned this security advisory a Security Impact Rating (SIR) of Critical rather than High as the score indicates. The reason is that exploitation of this vulnerability could result in an attacker elevating privileges to root.
 </code>
 
 - [dkstar11q/Ashwesker-CVE-2026-20045](https://github.com/dkstar11q/Ashwesker-CVE-2026-20045)
@@ -776,6 +778,13 @@
 </code>
 
 - [mbanyamer/CVE-2026-25916-Roundcube-Webmail-DOM-based-XSS-Exploit-via-SVG-href-Attribute](https://github.com/mbanyamer/CVE-2026-25916-Roundcube-Webmail-DOM-based-XSS-Exploit-via-SVG-href-Attribute)
+
+### CVE-2026-25924 (2026-02-11)
+
+<code>Kanboard is project management software focused on Kanban methodology. Prior to 1.2.50, a security control bypass vulnerability in Kanboard allows an authenticated administrator to achieve full Remote Code Execution (RCE). Although the application correctly hides the plugin installation interface when the PLUGIN_INSTALLER configuration is set to false, the underlying backend endpoint fails to verify this security setting. An attacker can exploit this oversight to force the server to download and install a malicious plugin, leading to arbitrary code execution. This vulnerability is fixed in 1.2.50.
+</code>
+
+- [drkim-dev/CVE-2026-25924](https://github.com/drkim-dev/CVE-2026-25924)
 
 ### CVE-2026-25939 (2026-02-09)
 
@@ -1981,6 +1990,7 @@
 - [MichaelVenturella/CVE-2025-6018-6019-PoC](https://github.com/MichaelVenturella/CVE-2025-6018-6019-PoC)
 - [matesz44/CVE-2025-6018-19](https://github.com/matesz44/CVE-2025-6018-19)
 - [DesertDemons/CVE-2025-6018-6019](https://github.com/DesertDemons/CVE-2025-6018-6019)
+- [localh0ste/CVE-2025-6018-and-CVE-2025-6019](https://github.com/localh0ste/CVE-2025-6018-and-CVE-2025-6019)
 
 ### CVE-2025-6019 (2025-06-19)
 
@@ -1996,6 +2006,7 @@
 - [0x5chltz/CVE-2025-6019](https://github.com/0x5chltz/CVE-2025-6019)
 - [symphony2colour/CVE-2025-6019-udisks-lpe-no-image](https://github.com/symphony2colour/CVE-2025-6019-udisks-lpe-no-image)
 - [boboaung1337/CVE-2025-6019](https://github.com/boboaung1337/CVE-2025-6019)
+- [HexRazor/CVE-2025-6019](https://github.com/HexRazor/CVE-2025-6019)
 
 ### CVE-2025-6058 (2025-07-12)
 
@@ -5061,7 +5072,7 @@
 
 ### CVE-2025-29972 (2025-05-08)
 
-<code>Server-Side Request Forgery (SSRF) in Azure allows an authorized attacker to perform spoofing over a network.
+<code>Server-side request forgery (ssrf) in Azure Storage Resource Provider allows an authorized attacker to perform spoofing over a network.
 </code>
 
 - [ThemeHackers/CVE-2025-29972](https://github.com/ThemeHackers/CVE-2025-29972)
@@ -5655,7 +5666,7 @@
 
 ### CVE-2025-32709 (2025-05-13)
 
-<code>Use after free in Windows Ancillary Function Driver for WinSock allows an authorized attacker to elevate privileges locally.
+<code>Null pointer dereference in Windows Ancillary Function Driver for WinSock allows an authorized attacker to elevate privileges locally.
 </code>
 
 - [AdnanSiyat/How-to-Patch-CVE-2025-32709](https://github.com/AdnanSiyat/How-to-Patch-CVE-2025-32709)
@@ -8449,6 +8460,8 @@
 - [George0Papasotiriou/CVE-2025-55182-React2Shell-CVSS-10.0-](https://github.com/George0Papasotiriou/CVE-2025-55182-React2Shell-CVSS-10.0-)
 - [atiilla/CVE-2025-55182](https://github.com/atiilla/CVE-2025-55182)
 - [snipevx/React2Shell-POC](https://github.com/snipevx/React2Shell-POC)
+- [BIG02-bot/React2Shell-CVE-2025-55182-An-lise-T-cnica](https://github.com/BIG02-bot/React2Shell-CVE-2025-55182-An-lise-T-cnica)
+- [Wyl-cmd/CVE-2025-55182](https://github.com/Wyl-cmd/CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -10069,7 +10082,11 @@
 
 - [Sumitshah00/CVE-2025-66628](https://github.com/Sumitshah00/CVE-2025-66628)
 
-### CVE-2025-66676
+### CVE-2025-66676 (2026-02-13)
+
+<code>An issue in IObit Unlocker v1.3.0.11 allows attackers to cause a Denial of Service (DoS) via a crafted request.
+</code>
+
 - [cwjchoi01/CVE-2025-66676](https://github.com/cwjchoi01/CVE-2025-66676)
 
 ### CVE-2025-66683
@@ -16971,6 +16988,7 @@
 - [mksundaram69/CVE-2024-34102](https://github.com/mksundaram69/CVE-2024-34102)
 - [Koray123-debug/CVE-2024-34102](https://github.com/Koray123-debug/CVE-2024-34102)
 - [Kento-Sec/CVE-2024-34102](https://github.com/Kento-Sec/CVE-2024-34102)
+- [nmmorette/CVE-2024-34102](https://github.com/nmmorette/CVE-2024-34102)
 
 ### CVE-2024-34144 (2024-05-02)
 
@@ -19679,6 +19697,7 @@
 - [tahsinunluturk/needrestart-privesc-cve-2024-48990](https://github.com/tahsinunluturk/needrestart-privesc-cve-2024-48990)
 - [sobbing333/CVE-2024-48990-POC](https://github.com/sobbing333/CVE-2024-48990-POC)
 - [grecosamuel/CVE-2024-48990](https://github.com/grecosamuel/CVE-2024-48990)
+- [BLUEBERRYP1LL/CVE-2024-48990](https://github.com/BLUEBERRYP1LL/CVE-2024-48990)
 
 ### CVE-2024-49019 (2024-11-12)
 
@@ -28904,7 +28923,6 @@
 - [tpirate/cve-2023-44487-POC](https://github.com/tpirate/cve-2023-44487-POC)
 - [ReGeLePuMa/HTTP-2-Rapid-Reset-DDos](https://github.com/ReGeLePuMa/HTTP-2-Rapid-Reset-DDos)
 - [sastraadiwiguna-purpleeliteteaming/DDoS-Purple-Teaming-Offensive-Multi-Vector-7-Tier-Defensive-Holistic-Blueprint-](https://github.com/sastraadiwiguna-purpleeliteteaming/DDoS-Purple-Teaming-Offensive-Multi-Vector-7-Tier-Defensive-Holistic-Blueprint-)
-- [Syn2Much/Slayer-L7](https://github.com/Syn2Much/Slayer-L7)
 
 ### CVE-2023-44758 (2023-10-06)
 
@@ -59907,8 +59925,6 @@
 
 - [ISTALKMILK/CiscoSpectreTakeover](https://github.com/ISTALKMILK/CiscoSpectreTakeover)
 - [ISTALKMILK/CiscoIOSSNMPToolkit](https://github.com/ISTALKMILK/CiscoIOSSNMPToolkit)
-- [plyrthn/CiscoIOSSNMPToolkit](https://github.com/plyrthn/CiscoIOSSNMPToolkit)
-- [plyrthn/CiscoSpectreTakeover](https://github.com/plyrthn/CiscoSpectreTakeover)
 
 ### CVE-2017-6742 (2017-07-17)
 
@@ -62594,6 +62610,7 @@
 - [mohammadamin382/dirtycow-lab](https://github.com/mohammadamin382/dirtycow-lab)
 - [MarioAlejos-Cs/dirtycow-lab](https://github.com/MarioAlejos-Cs/dirtycow-lab)
 - [pardhu045/linux-privilege-escalation](https://github.com/pardhu045/linux-privilege-escalation)
+- [Nathanloupy/42adv_boot2root](https://github.com/Nathanloupy/42adv_boot2root)
 - [ramahmdr/dirtycow](https://github.com/ramahmdr/dirtycow)
 - [elhaddadalaa788-alt/kernel-exploit-dirtycow-project-subm](https://github.com/elhaddadalaa788-alt/kernel-exploit-dirtycow-project-subm)
 - [theo543/OSDS_Paper_CVE-2016-5195](https://github.com/theo543/OSDS_Paper_CVE-2016-5195)
@@ -63223,6 +63240,7 @@
 - [artem-smotrakov/cve-2016-1000027-poc](https://github.com/artem-smotrakov/cve-2016-1000027-poc)
 - [tina94happy/Spring-Web-5xx-Mitigated-version](https://github.com/tina94happy/Spring-Web-5xx-Mitigated-version)
 - [yihtserns/spring-web-without-remoting](https://github.com/yihtserns/spring-web-without-remoting)
+- [Ragatzino/test-cve-2016-1000027](https://github.com/Ragatzino/test-cve-2016-1000027)
 
 ### CVE-2016-1000229 (2019-12-20)
 
@@ -63464,9 +63482,9 @@
 <code>HTTP.sys in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8, Windows 8.1, and Windows Server 2012 Gold and R2 allows remote attackers to execute arbitrary code via crafted HTTP requests, aka &quot;HTTP.sys Remote Code Execution Vulnerability.&quot;
 </code>
 
-- [xPaw/HTTPsys](https://github.com/xPaw/HTTPsys)
 - [Zx7ffa4512-Python/Project-CVE-2015-1635](https://github.com/Zx7ffa4512-Python/Project-CVE-2015-1635)
 - [technion/erlvulnscan](https://github.com/technion/erlvulnscan)
+- [hedgecore/HTTPsys](https://github.com/hedgecore/HTTPsys)
 - [wiredaem0n/chk-ms15-034](https://github.com/wiredaem0n/chk-ms15-034)
 - [u0pattern/Remove-IIS-RIIS](https://github.com/u0pattern/Remove-IIS-RIIS)
 - [bongbongco/MS15-034](https://github.com/bongbongco/MS15-034)
@@ -64336,9 +64354,6 @@
 </code>
 
 - [omarkurt/cve-2014-0130](https://github.com/omarkurt/cve-2014-0130)
-
-### CVE-2014-016
-- [louislafosse/CVE-2014-016-assignement](https://github.com/louislafosse/CVE-2014-016-assignement)
 
 ### CVE-2014-0160 (2014-04-07)
 
