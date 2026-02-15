@@ -1659,6 +1659,13 @@
 
 - [xie-22/CVE-2025-4428](https://github.com/xie-22/CVE-2025-4428)
 
+### CVE-2025-4517 (2025-06-03)
+
+<code>Allows arbitrary filesystem writes outside the extraction directory during extraction with filter=&quot;data&quot;.\n\n\nYou are affected by this vulnerability if using the tarfile module to extract untrusted tar archives using TarFile.extractall() or TarFile.extract() using the filter= parameter with a value of &quot;data&quot; or &quot;tar&quot;. See the tarfile  extraction filters documentation https://docs.python.org/3/library/tarfile.html#tarfile-extraction-filter  for more information.\n\nNote that for Python 3.14 or later the default value of filter= changed from &quot;no filtering&quot; to `&quot;data&quot;, so if you are relying on this new default behavior then your usage is also affected.\n\nNote that none of these vulnerabilities significantly affect the installation of source distributions which are tar archives as source distributions already allow arbitrary code execution during the build process. However when evaluating source distributions it's important to avoid installing source distributions with suspicious links.
+</code>
+
+- [AnimePrincess420/CVE-2025-4517-PoC](https://github.com/AnimePrincess420/CVE-2025-4517-PoC)
+
 ### CVE-2025-4524 (2025-05-21)
 
 <code>The Madara – Responsive and modern WordPress theme for manga sites theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.2.2 via the 'template' parameter. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.
@@ -6772,6 +6779,7 @@
 - [r0otk3r/CVE-2025-47812](https://github.com/r0otk3r/CVE-2025-47812)
 - [CTY-Research-1/CVE-2025-47812_Lab_environment](https://github.com/CTY-Research-1/CVE-2025-47812_Lab_environment)
 - [dkstar11q/Blackash-CVE-2025-47812](https://github.com/dkstar11q/Blackash-CVE-2025-47812)
+- [matesz44/CVE-2025-47812](https://github.com/matesz44/CVE-2025-47812)
 
 ### CVE-2025-47827 (2025-06-05)
 
