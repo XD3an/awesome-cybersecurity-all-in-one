@@ -96,6 +96,13 @@
 
 - [MehdiLeDeaut/CVE-2026-1281-Ivanti-EPMM-RCE](https://github.com/MehdiLeDeaut/CVE-2026-1281-Ivanti-EPMM-RCE)
 
+### CVE-2026-1306 (2026-02-14)
+
+<code>The midi-Synth plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type and file extension validation in the 'export' AJAX action in all versions up to, and including, 1.1.0. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible granted the attacker can obtain a valid nonce. The nonce is exposed in frontend JavaScript making it trivially accessible to unauthenticated attackers.
+</code>
+
+- [richardpaimu34/CVE-2026-1306](https://github.com/richardpaimu34/CVE-2026-1306)
+
 ### CVE-2026-1337 (2026-02-06)
 
 <code>Insufficient escaping of unicode characters in query log in Neo4j Enterprise and Community editions prior to 2026.01 can lead to XSS if the user opens the logs in a tool that treats them as HTML. There is no security impact on Neo4j products, but this advisory is released as a precaution to treat the logs as plain text if using versions prior to 2026.01.\n\nProof of concept exploit:  https://github.com/JoakimBulow/CVE-2026-1337
@@ -213,6 +220,13 @@
 
 - [George0Papasotiriou/CVE-2026-20404-MediaTek-modem-remote-DoS-rogue-base-station-scenario-](https://github.com/George0Papasotiriou/CVE-2026-20404-MediaTek-modem-remote-DoS-rogue-base-station-scenario-)
 
+### CVE-2026-20700 (2026-02-11)
+
+<code>A memory corruption issue was addressed with improved state management. This issue is fixed in watchOS 26.3, tvOS 26.3, macOS Tahoe 26.3, visionOS 26.3, iOS 26.3 and iPadOS 26.3. An attacker with memory write capability may be able to execute arbitrary code. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 26. CVE-2025-14174 and CVE-2025-43529 were also issued in response to this report.
+</code>
+
+- [kimblehardwoods/CVE-2026-20700](https://github.com/kimblehardwoods/CVE-2026-20700)
+
 ### CVE-2026-20805 (2026-01-13)
 
 <code>Exposure of sensitive information to an unauthorized actor in Desktop Windows Manager allows an authorized attacker to disclose information locally.
@@ -312,6 +326,8 @@
 </code>
 
 - [Pairs34/RDPVulnarableCheck](https://github.com/Pairs34/RDPVulnarableCheck)
+- [elvin31thai/CVE-2026-21533](https://github.com/elvin31thai/CVE-2026-21533)
+- [jenniferreire26/CVE-2026-21533](https://github.com/jenniferreire26/CVE-2026-21533)
 
 ### CVE-2026-21721 (2026-01-27)
 
@@ -583,6 +599,7 @@
 - [killsystema/scan-cve-2026-24061](https://github.com/killsystema/scan-cve-2026-24061)
 - [nrnw/CVE-2026-24061-GNU-inetutils-Telnet-Detector](https://github.com/nrnw/CVE-2026-24061-GNU-inetutils-Telnet-Detector)
 - [scumfrog/cve-2026-24061](https://github.com/scumfrog/cve-2026-24061)
+- [tiborscholtz/CVE-2026-24061](https://github.com/tiborscholtz/CVE-2026-24061)
 
 ### CVE-2026-24102
 - [SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition](https://github.com/SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition)
@@ -822,6 +839,13 @@
 
 - [mbanyamer/CVE-2026-26235-JUNG-Smart-Visu-Server-Unauthenticated-Reboot-Shutdown](https://github.com/mbanyamer/CVE-2026-26235-JUNG-Smart-Visu-Server-Unauthenticated-Reboot-Shutdown)
 
+### CVE-2026-26335 (2026-02-13)
+
+<code>Calero VeraSMART versions prior to 2022 R1 use static ASP.NET/IIS machineKey values configured for the VeraSMART web application and stored in C:\\Program Files (x86)\\Veramark\\VeraSMART\\WebRoot\\web.config. An attacker who obtains these keys can craft a valid ASP.NET ViewState payload that passes integrity validation and is accepted by the application, resulting in server-side deserialization and remote code execution in the context of the IIS application.
+</code>
+
+- [mbanyamer/CVE-2026-26335-Calero-VeraSMART-RCE](https://github.com/mbanyamer/CVE-2026-26335-Calero-VeraSMART-RCE)
+
 
 ## 2025
 ### CVE-2025-0054 (2025-02-11)
@@ -1015,6 +1039,9 @@
 </code>
 
 - [BreadSquad/ediop3PHP](https://github.com/BreadSquad/ediop3PHP)
+
+### CVE-2025-1234
+- [SimoesCTT/CVE-2025-1234-RSA-Key-Validation-Bypass](https://github.com/SimoesCTT/CVE-2025-1234-RSA-Key-Validation-Bypass)
 
 ### CVE-2025-1302 (2025-02-15)
 
@@ -1234,6 +1261,8 @@
 - [PwnManjaro/CVE-2025-2304](https://github.com/PwnManjaro/CVE-2025-2304)
 - [sparrowhawk1113/Exploit-for-CVE-2025-2304](https://github.com/sparrowhawk1113/Exploit-for-CVE-2025-2304)
 - [CsuriBird/CVE-2025-2304](https://github.com/CsuriBird/CVE-2025-2304)
+- [MAEN1-prog/CVE-2025-2304](https://github.com/MAEN1-prog/CVE-2025-2304)
+- [MAEN1-prog/maen1-prog.github.io](https://github.com/MAEN1-prog/maen1-prog.github.io)
 
 ### CVE-2025-2404 (2025-09-16)
 
@@ -1999,6 +2028,7 @@
 - [matesz44/CVE-2025-6018-19](https://github.com/matesz44/CVE-2025-6018-19)
 - [DesertDemons/CVE-2025-6018-6019](https://github.com/DesertDemons/CVE-2025-6018-6019)
 - [localh0ste/CVE-2025-6018-and-CVE-2025-6019](https://github.com/localh0ste/CVE-2025-6018-and-CVE-2025-6019)
+- [MaxKappa/opensuse-leap-privesc-exploit](https://github.com/MaxKappa/opensuse-leap-privesc-exploit)
 
 ### CVE-2025-6019 (2025-06-19)
 
@@ -2015,6 +2045,7 @@
 - [symphony2colour/CVE-2025-6019-udisks-lpe-no-image](https://github.com/symphony2colour/CVE-2025-6019-udisks-lpe-no-image)
 - [boboaung1337/CVE-2025-6019](https://github.com/boboaung1337/CVE-2025-6019)
 - [HexRazor/CVE-2025-6019](https://github.com/HexRazor/CVE-2025-6019)
+- [JM00NJ/CVE-2025-6019-udisks2-XFS-Resize-TOCTOU-Privilege-Escalation](https://github.com/JM00NJ/CVE-2025-6019-udisks2-XFS-Resize-TOCTOU-Privilege-Escalation)
 
 ### CVE-2025-6058 (2025-07-12)
 
@@ -2504,6 +2535,13 @@
 </code>
 
 - [chimdi2700/CVE-2025-8571](https://github.com/chimdi2700/CVE-2025-8571)
+
+### CVE-2025-8572 (2026-02-14)
+
+<code>The Truelysell Core plugin for WordPress is vulnerable to privilege escalation in versions less than, or equal to, 1.8.7. This is due to insufficient validation of the user_role parameter during user registration. This makes it possible for unauthenticated attackers to create accounts with elevated privileges, including administrator access.
+</code>
+
+- [richardpaimu34/CVE-2025-8572](https://github.com/richardpaimu34/CVE-2025-8572)
 
 ### CVE-2025-8671 (2025-08-13)
 
@@ -6998,7 +7036,7 @@
 - [WebSafety-2tina/CVE-2025-49132](https://github.com/WebSafety-2tina/CVE-2025-49132)
 - [0xf3d0rq/CVE-2025-49132](https://github.com/0xf3d0rq/CVE-2025-49132)
 - [str1keboo/CVE-2025-49132](https://github.com/str1keboo/CVE-2025-49132)
-- [malw0re/CVE-2025-49132---Pterodactyl-RCE-HTB-Season-10-](https://github.com/malw0re/CVE-2025-49132---Pterodactyl-RCE-HTB-Season-10-)
+- [malw0re/CVE-2025-49132-Mods](https://github.com/malw0re/CVE-2025-49132-Mods)
 - [YoyoChaud/CVE-2025-49132](https://github.com/YoyoChaud/CVE-2025-49132)
 - [ramzihafiz/CVE-2025-49132](https://github.com/ramzihafiz/CVE-2025-49132)
 - [kerburenthusiasm/CVE-2025-49132-PoC](https://github.com/kerburenthusiasm/CVE-2025-49132-PoC)
@@ -8759,13 +8797,6 @@
 
 - [anonaninda/Aninda-security-advisories](https://github.com/anonaninda/Aninda-security-advisories)
 
-### CVE-2025-56643 (2025-11-18)
-
-<code>Requarks Wiki.js 2.5.307 does not properly revoke or invalidate active JWT tokens when a user logs out. As a result, previously issued tokens remain valid and can be reused to access the system, even after logout. This behavior affects session integrity and may allow unauthorized access if a token is compromised. The issue is present in the authentication resolver logic and affects both the GraphQL endpoint and the logout mechanism.
-</code>
-
-- [0xBS0D27/CVE-2025-56643](https://github.com/0xBS0D27/CVE-2025-56643)
-
 ### CVE-2025-56708
 - [xkaneiki/rtty_CVE-2025-56708-CVE-2025-56709](https://github.com/xkaneiki/rtty_CVE-2025-56708-CVE-2025-56709)
 
@@ -9286,6 +9317,13 @@
 </code>
 
 - [pescada-dev/CVE-2025-61506](https://github.com/pescada-dev/CVE-2025-61506)
+
+### CVE-2025-61638 (2026-02-02)
+
+<code>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation MediaWiki, Wikimedia Foundation Parsoid. This vulnerability is associated with program files includes/parser/Sanitizer.Php, src/Core/Sanitizer.Php.\n\nThis issue affects MediaWiki: from * before 1.39.14, 1.43.4, 1.44.1; Parsoid: from * before 0.16.6, 0.20.4, 0.21.1.
+</code>
+
+- [gui-ying233/CVE-2025-61638](https://github.com/gui-ying233/CVE-2025-61638)
 
 ### CVE-2025-61675 (2025-10-14)
 
@@ -9893,6 +9931,9 @@
 </code>
 
 - [CBx216/CVE-Newgen-Software-Advisories](https://github.com/CBx216/CVE-Newgen-Software-Advisories)
+
+### CVE-2025-65753
+- [diegovargasj/CVE-2025-65753](https://github.com/diegovargasj/CVE-2025-65753)
 
 ### CVE-2025-65754 (2025-12-10)
 
@@ -10571,6 +10612,9 @@
 
 ### CVE-2025-70600
 - [gpheheise/CVE-2025-70600---Urve-Smart-Office---Stored-XSS-in-iOS-App](https://github.com/gpheheise/CVE-2025-70600---Urve-Smart-Office---Stored-XSS-in-iOS-App)
+
+### CVE-2025-70795
+- [ANYLNK/STProcessMonitorBYOVD](https://github.com/ANYLNK/STProcessMonitorBYOVD)
 
 ### CVE-2025-70828
 - [xiaoxiaoranxxx/CVE-2025-70828](https://github.com/xiaoxiaoranxxx/CVE-2025-70828)
@@ -17609,6 +17653,7 @@
 
 - [bartfroklage/CVE-2024-37383-POC](https://github.com/bartfroklage/CVE-2024-37383-POC)
 - [amirzargham/CVE-2024-37383-exploit](https://github.com/amirzargham/CVE-2024-37383-exploit)
+- [hyungin0505/CVE-2024-37383_PoC](https://github.com/hyungin0505/CVE-2024-37383_PoC)
 
 ### CVE-2024-37393 (2024-06-10)
 
@@ -23240,6 +23285,7 @@
 
 - [nokn0wthing/CVE-2023-20052](https://github.com/nokn0wthing/CVE-2023-20052)
 - [cY83rR0H1t/CVE-2023-20052](https://github.com/cY83rR0H1t/CVE-2023-20052)
+- [MOHITSINGHPAPOLA/CVE-2023-20052](https://github.com/MOHITSINGHPAPOLA/CVE-2023-20052)
 
 ### CVE-2023-20073 (2023-04-05)
 
@@ -28480,6 +28526,13 @@
 
 - [C1ph3rX13/CVE-2023-42820](https://github.com/C1ph3rX13/CVE-2023-42820)
 - [Startr4ck/cve-2023-42820](https://github.com/Startr4ck/cve-2023-42820)
+
+### CVE-2023-42824 (2023-10-04)
+
+<code>The issue was addressed with improved checks. This issue is fixed in iOS 16.7.1 and iPadOS 16.7.1. A local attacker may be able to elevate their privileges. Apple is aware of a report that this issue may have been actively exploited against versions of iOS before iOS 16.6.
+</code>
+
+- [619555798/cve-2023-42824](https://github.com/619555798/cve-2023-42824)
 
 ### CVE-2023-42829 (2024-01-10)
 
@@ -47604,6 +47657,7 @@
 
 - [0xAJ2K/CVE-2020-11022-CVE-2020-11023](https://github.com/0xAJ2K/CVE-2020-11022-CVE-2020-11023)
 - [Snorlyd/https-nj.gov---CVE-2020-11022](https://github.com/Snorlyd/https-nj.gov---CVE-2020-11022)
+- [okni2k/HW-Pyton-10](https://github.com/okni2k/HW-Pyton-10)
 
 ### CVE-2020-11023 (2020-04-29)
 
@@ -48364,6 +48418,7 @@
 </code>
 
 - [p0dalirius/CVE-2020-14144-GiTea-git-hooks-rce](https://github.com/p0dalirius/CVE-2020-14144-GiTea-git-hooks-rce)
+- [Mohnad-AL-saif/Gitea-Git-Hooks-RCE-CVE-2020-14144-](https://github.com/Mohnad-AL-saif/Gitea-Git-Hooks-RCE-CVE-2020-14144-)
 
 ### CVE-2020-14179 (2020-09-21)
 
@@ -59942,8 +59997,9 @@
 <code>The Simple Network Management Protocol (SNMP) subsystem of Cisco IOS and IOS XE Software contains multiple vulnerabilities that could allow an authenticated, remote attacker to remotely execute code on an affected system or cause an affected system to reload. An attacker could exploit these vulnerabilities by sending a crafted SNMP packet to an affected system via IPv4 or IPv6. Only traffic directed to an affected system can be used to exploit these vulnerabilities.\r\n\r The vulnerabilities are due to a buffer overflow condition in the SNMP subsystem of the affected software. The vulnerabilities affect all versions of SNMP - Versions 1, 2c, and 3. To exploit these vulnerabilities via SNMP Version 2c or earlier, the attacker must know the SNMP read-only community string for the affected system. To exploit these vulnerabilities via SNMP Version 3, the attacker must have user credentials for the affected system. A successful exploit could allow the attacker to execute arbitrary code and obtain full control of the affected system or cause the affected system to reload.\r\n\r Customers are advised to apply the workaround as contained in the Workarounds section below. Fixed software information is available via the Cisco IOS Software Checker. All devices that have enabled SNMP and have not explicitly excluded the affected MIBs or OIDs should be considered vulnerable.\r\n\r   There are workarounds that address these vulnerabilities.
 </code>
 
-- [ISTALKMILK/CiscoSpectreTakeover](https://github.com/ISTALKMILK/CiscoSpectreTakeover)
-- [ISTALKMILK/CiscoIOSSNMPToolkit](https://github.com/ISTALKMILK/CiscoIOSSNMPToolkit)
+- [msztankowski/CiscoIOSSNMPToolkit](https://github.com/msztankowski/CiscoIOSSNMPToolkit)
+- [plyrthn/CiscoIOSSNMPToolkit](https://github.com/plyrthn/CiscoIOSSNMPToolkit)
+- [plyrthn/CiscoSpectreTakeover](https://github.com/plyrthn/CiscoSpectreTakeover)
 
 ### CVE-2017-6742 (2017-07-17)
 
@@ -66966,6 +67022,7 @@
 - [SeifEldienAhmad/Penetration-Testing-on-Metasploitable2](https://github.com/SeifEldienAhmad/Penetration-Testing-on-Metasploitable2)
 - [nulltrace1336/Samba-Exploit-CVE-2007-2447](https://github.com/nulltrace1336/Samba-Exploit-CVE-2007-2447)
 - [abdulsaabir/CVE-2007-2447](https://github.com/abdulsaabir/CVE-2007-2447)
+- [r0tn3x/CVE-2007-2447](https://github.com/r0tn3x/CVE-2007-2447)
 
 ### CVE-2007-3280 (2007-06-19)
 
