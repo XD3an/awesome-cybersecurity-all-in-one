@@ -172,6 +172,7 @@
 - [win3zz/CVE-2026-1731](https://github.com/win3zz/CVE-2026-1731)
 - [bytehazard/CVE-2026-1731](https://github.com/bytehazard/CVE-2026-1731)
 - [cybrdude/cve-2026-1731-scanner](https://github.com/cybrdude/cve-2026-1731-scanner)
+- [jakubie07/CVE-2026-1731](https://github.com/jakubie07/CVE-2026-1731)
 
 ### CVE-2026-1844 (2026-02-13)
 
@@ -33443,13 +33444,6 @@
 
 - [Cyber-Wo0dy/CVE-2022-24227-updated](https://github.com/Cyber-Wo0dy/CVE-2022-24227-updated)
 
-### CVE-2022-24251 (2022-03-01)
-
-<code>Extensis Portfolio v4.0 was discovered to contain an authenticated unrestricted file upload vulnerability via the Catalog Asset Upload function.
-</code>
-
-- [talilama/extensis_portfolio_rce_CVE-2022-24251](https://github.com/talilama/extensis_portfolio_rce_CVE-2022-24251)
-
 ### CVE-2022-24342 (2022-02-25)
 
 <code>In JetBrains TeamCity before 2021.2.1, URL injection leading to CSRF was possible.
@@ -52659,6 +52653,7 @@
 </code>
 
 - [cved-sources/cve-2019-9194](https://github.com/cved-sources/cve-2019-9194)
+- [estebanzarate/CVE-2019-9194-elFinder-Command-Injection-PoC](https://github.com/estebanzarate/CVE-2019-9194-elFinder-Command-Injection-PoC)
 
 ### CVE-2019-9202 (2019-03-28)
 
