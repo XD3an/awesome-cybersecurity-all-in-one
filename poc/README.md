@@ -576,6 +576,7 @@
 </code>
 
 - [SimoesCTT/CTT-Mailpit-RCE-v1.0---Temporal-Resonance-Mail-Server-Takeover](https://github.com/SimoesCTT/CTT-Mailpit-RCE-v1.0---Temporal-Resonance-Mail-Server-Takeover)
+- [SimoesCTT/-CVE-2026-23829-CTT-Mailpit-phase-reconstruction-](https://github.com/SimoesCTT/-CVE-2026-23829-CTT-Mailpit-phase-reconstruction-)
 
 ### CVE-2026-23830 (2026-01-27)
 
@@ -8761,6 +8762,13 @@
 </code>
 
 - [r4bbit-r4/directus-preso](https://github.com/r4bbit-r4/directus-preso)
+
+### CVE-2025-55752 (2025-10-27)
+
+<code>Relative Path Traversal vulnerability in Apache Tomcat.\n\nThe fix for bug 60013 introduced a regression where the       rewritten URL was normalized before it was decoded. This introduced the       possibility that, for rewrite rules that rewrite query parameters to the       URL, an attacker could manipulate the request URI to bypass security       constraints including the protection for /WEB-INF/ and /META-INF/. If PUT requests were also enabled then malicious files could be uploaded leading to remote code execution. PUT requests are normally limited to trusted users and it is considered unlikely that PUT requests would be enabled in conjunction with a rewrite that manipulated the URI.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.10, from 10.1.0-M1 through 10.1.44, from 9.0.0.M11 through 9.0.108.\n\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: 8.5.6 though 8.5.100. Other, older, EOL versions may also be affected.\nUsers are recommended to upgrade to version 11.0.11 or later, 10.1.45 or later or 9.0.109 or later, which fix the issue.
+</code>
+
+- [Jimmy01240397/CVE-2025-55752](https://github.com/Jimmy01240397/CVE-2025-55752)
 
 ### CVE-2025-55763 (2025-08-29)
 
@@ -33594,6 +33602,13 @@
 
 - [0x7n6/CVE-2022-24500](https://github.com/0x7n6/CVE-2022-24500)
 
+### CVE-2022-24521 (2022-04-15)
+
+<code>Windows Common Log File System Driver Elevation of Privilege Vulnerability
+</code>
+
+- [uname1able/CVE-2022-24521](https://github.com/uname1able/CVE-2022-24521)
+
 ### CVE-2022-24611 (2022-05-17)
 
 <code>Denial of Service (DoS) in the Z-Wave S0 NonceGet protocol specification in Silicon Labs Z-Wave 500 series allows local attackers to block S0/S2 protected Z-Wave network via crafted S0 NonceGet Z-Wave packages, utilizing included but absent NodeIDs.
@@ -37210,6 +37225,13 @@
 </code>
 
 - [murataydemir/CVE-2022-41828](https://github.com/murataydemir/CVE-2022-41828)
+
+### CVE-2022-41840 (2022-11-18)
+
+<code>Unauth. Directory Traversal vulnerability in Welcart eCommerce plugin &lt;= 2.7.7 on WordPress.
+</code>
+
+- [PrinceAikinsBaidoo/CVE-2022-41840-PoC](https://github.com/PrinceAikinsBaidoo/CVE-2022-41840-PoC)
 
 ### CVE-2022-41852
 - [Warxim/CVE-2022-41852](https://github.com/Warxim/CVE-2022-41852)
@@ -62755,6 +62777,7 @@
 - [4nth0ny1130/shisoserial](https://github.com/4nth0ny1130/shisoserial)
 - [pizza-power/CVE-2016-4437](https://github.com/pizza-power/CVE-2016-4437)
 - [xk-mt/CVE-2016-4437](https://github.com/xk-mt/CVE-2016-4437)
+- [35789-gh/cve-2016-4437](https://github.com/35789-gh/cve-2016-4437)
 
 ### CVE-2016-4438 (2016-07-04)
 
