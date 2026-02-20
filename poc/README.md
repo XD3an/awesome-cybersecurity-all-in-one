@@ -1,6 +1,9 @@
 # PoC in GitHub
 
 ## 2026
+### CVE-2026-0006
+- [aydin5245/cve-2026-0006](https://github.com/aydin5245/cve-2026-0006)
+
 ### CVE-2026-0227 (2026-01-15)
 
 <code>A vulnerability in Palo Alto Networks PAN-OS software enables an unauthenticated attacker to cause a denial of service (DoS) to the firewall. Repeated attempts to trigger this issue results in the firewall entering into maintenance mode.
@@ -110,6 +113,7 @@
 </code>
 
 - [MehdiLeDeaut/CVE-2026-1281-Ivanti-EPMM-RCE](https://github.com/MehdiLeDeaut/CVE-2026-1281-Ivanti-EPMM-RCE)
+- [YunfeiGE18/CVE-2026-1281-CVE-2026-1340-Ivanti-EPMM-RCE](https://github.com/YunfeiGE18/CVE-2026-1281-CVE-2026-1340-Ivanti-EPMM-RCE)
 
 ### CVE-2026-1306 (2026-02-14)
 
@@ -177,7 +181,6 @@
 </code>
 
 - [win3zz/CVE-2026-1731](https://github.com/win3zz/CVE-2026-1731)
-- [bytehazard/CVE-2026-1731](https://github.com/bytehazard/CVE-2026-1731)
 - [cybrdude/cve-2026-1731-scanner](https://github.com/cybrdude/cve-2026-1731-scanner)
 - [jakubie07/CVE-2026-1731](https://github.com/jakubie07/CVE-2026-1731)
 
@@ -187,7 +190,6 @@
 </code>
 
 - [adamshaikhma/CVE-2026-1844](https://github.com/adamshaikhma/CVE-2026-1844)
-- [tingvoshage22/CVE-2026-1844-exploit](https://github.com/tingvoshage22/CVE-2026-1844-exploit)
 
 ### CVE-2026-1862 (2026-02-03)
 
@@ -210,13 +212,6 @@
 
 - [MaxMnMl/tpadmin-CVE-2026-2113-poc](https://github.com/MaxMnMl/tpadmin-CVE-2026-2113-poc)
 
-### CVE-2026-2144 (2026-02-14)
-
-<code>The Magic Login Mail or QR Code plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.05. This is due to the plugin storing the magic login QR code image with a predictable, static filename (QR_Code.png) in the publicly accessible WordPress uploads directory during the email sending process. The file is only deleted after wp_mail() completes, creating an exploitable race condition window. This makes it possible for unauthenticated attackers to trigger a login link request for any user, including administrators, and then exploit the race condition between QR code file creation and deletion to obtain the login URL encoded in the QR code, thereby gaining unauthorized access to the targeted user's account.
-</code>
-
-- [jermaine22sei/CVE-2026-2144-exploit](https://github.com/jermaine22sei/CVE-2026-2144-exploit)
-
 ### CVE-2026-2395
 - [dajneem23/CVE-2026-2395](https://github.com/dajneem23/CVE-2026-2395)
 
@@ -233,7 +228,7 @@
 
 - [b1gchoi/CVE-2026-2441_POC](https://github.com/b1gchoi/CVE-2026-2441_POC)
 - [huseyinstif/CVE-2026-2441-PoC](https://github.com/huseyinstif/CVE-2026-2441-PoC)
-- [jermaine22sei/CVE-2026-2441](https://github.com/jermaine22sei/CVE-2026-2441)
+- [theemperorspath/CVE-2026-2441-PoC](https://github.com/theemperorspath/CVE-2026-2441-PoC)
 
 ### CVE-2026-2461
 - [destiny-creates/CVE-2026-2461-poc](https://github.com/destiny-creates/CVE-2026-2461-poc)
@@ -246,6 +241,9 @@
 
 ### CVE-2026-5000
 - [Perl-Code/CVE-2026-5000](https://github.com/Perl-Code/CVE-2026-5000)
+
+### CVE-2026-5252
+- [aydin5245/CVE-2026-5252-CVE-POC-ivanti](https://github.com/aydin5245/CVE-2026-5252-CVE-POC-ivanti)
 
 ### CVE-2026-7731
 - [SimoesCTT/CTT-Refraction-Vortex-CVE-2026-7731-](https://github.com/SimoesCTT/CTT-Refraction-Vortex-CVE-2026-7731-)
@@ -269,7 +267,6 @@
 <code>A memory corruption issue was addressed with improved state management. This issue is fixed in watchOS 26.3, tvOS 26.3, macOS Tahoe 26.3, visionOS 26.3, iOS 26.3 and iPadOS 26.3. An attacker with memory write capability may be able to execute arbitrary code. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 26. CVE-2025-14174 and CVE-2025-43529 were also issued in response to this report.
 </code>
 
-- [bytehazard/CVE-2026-20700](https://github.com/bytehazard/CVE-2026-20700)
 - [sundenovak/CVE-2026-20700-An-analysis-WIP](https://github.com/sundenovak/CVE-2026-20700-An-analysis-WIP)
 
 ### CVE-2026-20805 (2026-01-13)
@@ -409,13 +406,6 @@
 </code>
 
 - [daytriftnewgen/CVE-2026-21876](https://github.com/daytriftnewgen/CVE-2026-21876)
-
-### CVE-2026-21957 (2026-01-20)
-
-<code>Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core).  Supported versions that are affected are 7.1.14 and  7.2.4. Difficult to exploit vulnerability allows high privileged attacker with logon to the infrastructure where Oracle VM VirtualBox executes to compromise Oracle VM VirtualBox.  While the vulnerability is in Oracle VM VirtualBox, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle VM VirtualBox. CVSS 3.1 Base Score 7.5 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H).
-</code>
-
-- [jermaine22sei/CVE-2026-21957-exp](https://github.com/jermaine22sei/CVE-2026-21957-exp)
 
 ### CVE-2026-21962 (2026-01-20)
 
@@ -779,6 +769,13 @@
 
 - [mbanyamer/Llama-Stack-0.4.0rc3-local-CVE-2026-25211](https://github.com/mbanyamer/Llama-Stack-0.4.0rc3-local-CVE-2026-25211)
 
+### CVE-2026-25242 (2026-02-19)
+
+<code>Gogs is an open source self-hosted Git service. Versions 0.13.4 and below expose unauthenticated file upload endpoints by default. When the global RequireSigninView setting is disabled (default), any remote user can upload arbitrary files to the server via /releases/attachments and /issues/attachments. This enables the instance to be abused as a public file host, potentially leading to disk exhaustion, content hosting, or delivery of malware. CSRF tokens do not mitigate this attack due to same-origin cookie issuance. This issue has been fixed in version 0.14.1.
+</code>
+
+- [mindkernel/CVE-2026-25242](https://github.com/mindkernel/CVE-2026-25242)
+
 ### CVE-2026-25253 (2026-02-01)
 
 <code>OpenClaw (aka clawdbot or Moltbot) before 2026.1.29 obtains a gatewayUrl value from a query string and automatically makes a WebSocket connection without prompting, sending a token value.
@@ -866,6 +863,13 @@
 
 - [eeeeeeeeeevan/CVE-2026-25857](https://github.com/eeeeeeeeeevan/CVE-2026-25857)
 
+### CVE-2026-25890 (2026-02-09)
+
+<code>File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit files. Prior to 2.57.1, an authenticated user can bypass the application's &quot;Disallow&quot; file path rules by modifying the request URL. By adding multiple slashes (e.g., //private/) to the path, the authorization check fails to match the rule, while the underlying filesystem resolves the path correctly, granting unauthorized access to restricted files. This vulnerability is fixed in 2.57.1.
+</code>
+
+- [mbanyamer/CVE-2026-25890-FileBrowser-Access-Control-Bypass](https://github.com/mbanyamer/CVE-2026-25890-FileBrowser-Access-Control-Bypass)
+
 ### CVE-2026-25916 (2026-02-09)
 
 <code>Roundcube Webmail before 1.5.13 and 1.6 before 1.6.13, when &quot;Block remote images&quot; is used, does not block SVG feImage.
@@ -943,6 +947,20 @@
 </code>
 
 - [mbanyamer/CVE-2026-26335-Calero-VeraSMART-RCE](https://github.com/mbanyamer/CVE-2026-26335-Calero-VeraSMART-RCE)
+
+### CVE-2026-26744 (2026-02-19)
+
+<code>A user enumeration vulnerability exists in FormaLMS 4.1.18 and below in the password recovery functionality accessible via the /lostpwd endpoint. The application returns different error messages for valid and invalid usernames allowing an unauthenticated attacker to determine which usernames are registered in the system through observable response discrepancy.
+</code>
+
+- [lorenzobruno7/CVE-2026-26744](https://github.com/lorenzobruno7/CVE-2026-26744)
+
+### CVE-2026-27180 (2026-02-18)
+
+<code>MajorDoMo (aka Major Domestic Module) is vulnerable to unauthenticated remote code execution through supply chain compromise via update URL poisoning. The saverestore module exposes its admin() method through the /objects/?module=saverestore endpoint without authentication because it uses gr('mode') (which reads directly from $_REQUEST) instead of the framework's $this-&gt;mode. An attacker can poison the system update URL via the auto_update_settings mode handler, then trigger the force_update handler to initiate the update chain. The autoUpdateSystem() method fetches an Atom feed from the attacker-controlled URL with trivial validation, downloads a tarball via curl with TLS verification disabled (CURLOPT_SSL_VERIFYPEER set to FALSE), extracts it using exec('tar xzvf ...'), and copies all extracted files to the document root using copyTree(). This allows an attacker to deploy arbitrary PHP files, including webshells, to the webroot with two GET requests.
+</code>
+
+- [mbanyamer/CVE-2026-27180-MajorDoMo-unauthenticated-RCE](https://github.com/mbanyamer/CVE-2026-27180-MajorDoMo-unauthenticated-RCE)
 
 
 ## 2025
@@ -4730,6 +4748,7 @@
 
 - [andreglock/axios-ssrf](https://github.com/andreglock/axios-ssrf)
 - [davidblakecoe/axios-CVE-2025-27152-PoC](https://github.com/davidblakecoe/axios-CVE-2025-27152-PoC)
+- [WillFortMadeTech/axiosVulnExample](https://github.com/WillFortMadeTech/axiosVulnExample)
 
 ### CVE-2025-27210 (2025-07-18)
 
@@ -5167,7 +5186,6 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [KaztoRay/CVE-2025-29927-Research](https://github.com/KaztoRay/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -5240,6 +5258,13 @@
 </code>
 
 - [fevar54/POC_CVE-2025-29943_Write-what-where-Condition](https://github.com/fevar54/POC_CVE-2025-29943_Write-what-where-Condition)
+
+### CVE-2025-29969 (2025-05-13)
+
+<code>Time-of-check time-of-use (toctou) race condition in Windows Fundamentals allows an authorized attacker to execute code over a network.
+</code>
+
+- [SafeBreach-Labs/EventLogin-CVE-2025-29969](https://github.com/SafeBreach-Labs/EventLogin-CVE-2025-29969)
 
 ### CVE-2025-29972 (2025-05-08)
 
@@ -6070,6 +6095,7 @@
 - [PentHertz/CVE-2025-36911-exploit](https://github.com/PentHertz/CVE-2025-36911-exploit)
 - [fa1sa1142/wpair-app](https://github.com/fa1sa1142/wpair-app)
 - [fa1sa1142/fa1sa1142.github.io](https://github.com/fa1sa1142/fa1sa1142.github.io)
+- [Athexhacker/BLUE-SPY](https://github.com/Athexhacker/BLUE-SPY)
 
 ### CVE-2025-37164 (2025-12-16)
 
@@ -6897,6 +6923,7 @@
 - [matesz44/CVE-2025-47812](https://github.com/matesz44/CVE-2025-47812)
 - [shadowgit30/CVE-2025-47812](https://github.com/shadowgit30/CVE-2025-47812)
 - [Nara-sakurai/CVE-2025-47812-PoC](https://github.com/Nara-sakurai/CVE-2025-47812-PoC)
+- [estebanzarate/CVE-2025-47812-Wing-FTP-Server-7.4.3-Unauthenticated-RCE-PoC](https://github.com/estebanzarate/CVE-2025-47812-Wing-FTP-Server-7.4.3-Unauthenticated-RCE-PoC)
 
 ### CVE-2025-47827 (2025-06-05)
 
@@ -8165,7 +8192,7 @@
 <code>Claude Code is an agentic coding tool. In versions below 1.0.20, an error in command parsing makes it possible to bypass the Claude Code confirmation prompt to trigger execution of an untrusted command. Reliably exploiting this requires the ability to add untrusted content into a Claude Code context window. This is fixed in version 1.0.20.
 </code>
 
-- [dial481/ralph](https://github.com/dial481/ralph)
+- [alonisser/ralph](https://github.com/alonisser/ralph)
 
 ### CVE-2025-54887 (2025-08-08)
 
@@ -8348,7 +8375,7 @@
 - [rapticore/ore_react2shell_scanner](https://github.com/rapticore/ore_react2shell_scanner)
 - [fankh/cve-2025-55182-test-lab-windows](https://github.com/fankh/cve-2025-55182-test-lab-windows)
 - [cypholab/evilact](https://github.com/cypholab/evilact)
-- [shren207/CVE-2025-55182](https://github.com/shren207/CVE-2025-55182)
+- [greenheadHQ/CVE-2025-55182](https://github.com/greenheadHQ/CVE-2025-55182)
 - [sumanrox/rschunter](https://github.com/sumanrox/rschunter)
 - [I3r1h0n/React2Shell](https://github.com/I3r1h0n/React2Shell)
 - [zorejt/Rust_CVE-2025-55182](https://github.com/zorejt/Rust_CVE-2025-55182)
@@ -8794,7 +8821,11 @@
 ### CVE-2025-55817
 - [5qu1n7/CVE-2025-55817](https://github.com/5qu1n7/CVE-2025-55817)
 
-### CVE-2025-55853
+### CVE-2025-55853 (2026-02-19)
+
+<code>SoftVision webPDF before 10.0.2 is vulnerable to Server-Side Request Forgery (SSRF). The PDF converter function does not check if internal or external resources are requested in the uploaded files and allows for protocols such as http:// and file:///. This allows an attacker to upload an XML or HTML file in the application, which when rendered to a PDF allows for internal port scanning and Local File Inclusion (LFI).
+</code>
+
 - [Vivz13/CVE-2025-55853](https://github.com/Vivz13/CVE-2025-55853)
 
 ### CVE-2025-55885 (2025-09-22)
@@ -8936,13 +8967,6 @@
 </code>
 
 - [anonaninda/Aninda-security-advisories](https://github.com/anonaninda/Aninda-security-advisories)
-
-### CVE-2025-56643 (2025-11-18)
-
-<code>Requarks Wiki.js 2.5.307 does not properly revoke or invalidate active JWT tokens when a user logs out. As a result, previously issued tokens remain valid and can be reused to access the system, even after logout. This behavior affects session integrity and may allow unauthorized access if a token is compromised. The issue is present in the authentication resolver logic and affects both the GraphQL endpoint and the logout mechanism.
-</code>
-
-- [0xBS0D27/CVE-2025-56643](https://github.com/0xBS0D27/CVE-2025-56643)
 
 ### CVE-2025-56708
 - [xkaneiki/rtty_CVE-2025-56708-CVE-2025-56709](https://github.com/xkaneiki/rtty_CVE-2025-56708-CVE-2025-56709)
@@ -10059,6 +10083,13 @@
 
 - [Rivek619/CVE-2025-65681](https://github.com/Rivek619/CVE-2025-65681)
 
+### CVE-2025-65717 (2026-02-16)
+
+<code>An issue in Visual Studio Code Extensions Live Server v5.7.9 allows attackers to exfiltrate files via user interaction with a crafted HTML page.
+</code>
+
+- [natsuki-engr/live-server-evil-crawler](https://github.com/natsuki-engr/live-server-evil-crawler)
+
 ### CVE-2025-65731 (2026-01-08)
 
 <code>An issue was discovered in D-Link Router DIR-605L (Hardware version F1; Firmware version: V6.02CN02) allowing an attacker with physical access to the UART pins to execute arbitrary commands due to presence of root terminal access on a serial interface without proper access control.
@@ -10270,6 +10301,7 @@
 - [thedarckpassenger/Next.js-RSC-RCE-Scanner-CVE-2025-66478](https://github.com/thedarckpassenger/Next.js-RSC-RCE-Scanner-CVE-2025-66478)
 - [khadafigans/React2Shell](https://github.com/khadafigans/React2Shell)
 - [NAYLINNU/CVE-2025-66478](https://github.com/NAYLINNU/CVE-2025-66478)
+- [imad457/NextJS-RCE-Root-Takeover](https://github.com/imad457/NextJS-RCE-Root-Takeover)
 
 ### CVE-2025-66516 (2025-12-04)
 
@@ -10663,6 +10695,13 @@
 - [Chocapikk/CVE-2025-68926](https://github.com/Chocapikk/CVE-2025-68926)
 - [Arcueld/CVE-2025-68926](https://github.com/Arcueld/CVE-2025-68926)
 
+### CVE-2025-68937 (2025-12-25)
+
+<code>Forgejo before 13.0.2 allows attackers to write to unintended files, and possibly obtain server shell access, because of mishandling of out-of-repository symlink destinations for template repositories. This is also fixed for 11 LTS in 11.0.7 and later.
+</code>
+
+- [ClemaX/Gitea-Forgejo-CVE-2025-68937](https://github.com/ClemaX/Gitea-Forgejo-CVE-2025-68937)
+
 ### CVE-2025-69015 (2025-12-30)
 
 <code>Missing Authorization vulnerability in Automattic Crowdsignal Forms crowdsignal-forms allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Crowdsignal Forms: from n/a through &lt;= 1.7.2.
@@ -10822,6 +10861,13 @@
 </code>
 
 - [mathavamoorthi/CVE-2025-70899](https://github.com/mathavamoorthi/CVE-2025-70899)
+
+### CVE-2025-71243 (2026-02-19)
+
+<code>The 'Saisies pour formulaire' (Saisies) plugin for SPIP versions 5.4.0 through 5.11.0 contains a critical Remote Code Execution (RCE) vulnerability. An attacker can exploit this vulnerability to execute arbitrary code on the server. Users should immediately update to version 5.11.1 or later.
+</code>
+
+- [Chocapikk/CVE-2025-71243](https://github.com/Chocapikk/CVE-2025-71243)
 
 ### CVE-2025-492025
 - [ImTheCopilotNow/CVE-2025-492025](https://github.com/ImTheCopilotNow/CVE-2025-492025)
@@ -12297,7 +12343,7 @@
 <code>TP-Link Omada ER605 Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of TP-Link Omada ER605 routers. Authentication is not required to exploit this vulnerability. However, devices are vulnerable only if configured to use the Comexe DDNS service.\n\nThe specific flaw exists within the handling of DNS names. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a buffer. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-22523.
 </code>
 
-- [yi-barrack/CVE-2024-5243-pwn2own-toronto-2023](https://github.com/yi-barrack/CVE-2024-5243-pwn2own-toronto-2023)
+- [redpack-kr/CVE-2024-5243-pwn2own-toronto-2023](https://github.com/redpack-kr/CVE-2024-5243-pwn2own-toronto-2023)
 
 ### CVE-2024-5246 (2024-05-23)
 
@@ -14736,6 +14782,13 @@
 </code>
 
 - [mbadanoiu/CVE-2024-22275](https://github.com/mbadanoiu/CVE-2024-22275)
+
+### CVE-2024-22363 (2024-04-05)
+
+<code>SheetJS Community Edition before 0.20.2 is vulnerable.to Regular Expression Denial of Service (ReDoS).
+</code>
+
+- [weareu/xlsx](https://github.com/weareu/xlsx)
 
 ### CVE-2024-22369 (2024-02-20)
 
@@ -25812,6 +25865,7 @@
 </code>
 
 - [BenEdridge/CVE-2023-30533](https://github.com/BenEdridge/CVE-2023-30533)
+- [weareu/xlsx](https://github.com/weareu/xlsx)
 
 ### CVE-2023-30547 (2023-04-17)
 
@@ -36795,7 +36849,6 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -44473,7 +44526,6 @@
 - [didoatanasov/cve-2021-44228](https://github.com/didoatanasov/cve-2021-44228)
 - [ShaneKingBlog/org.shaneking.demo.cve.y2021.s44228](https://github.com/ShaneKingBlog/org.shaneking.demo.cve.y2021.s44228)
 - [wortell/log4j](https://github.com/wortell/log4j)
-- [ZiedJabnoune/log4shell-vulnerable-app](https://github.com/ZiedJabnoune/log4shell-vulnerable-app)
 - [municipalparkingservices/CVE-2021-44228-Scanner](https://github.com/municipalparkingservices/CVE-2021-44228-Scanner)
 - [BinaryDefense/log4j-honeypot-flask](https://github.com/BinaryDefense/log4j-honeypot-flask)
 - [MalwareTech/Log4jTools](https://github.com/MalwareTech/Log4jTools)
@@ -65683,8 +65735,8 @@
 <code>AllegroSoft RomPager 4.34 and earlier, as used in Huawei Home Gateway products and other vendors and products, allows remote attackers to gain privileges via a crafted cookie that triggers memory corruption, aka the &quot;Misfortune Cookie&quot; vulnerability.
 </code>
 
-- [BenChaliah/MIPS-CVE-2014-9222](https://github.com/BenChaliah/MIPS-CVE-2014-9222)
 - [donfanning/MIPS-CVE-2014-9222](https://github.com/donfanning/MIPS-CVE-2014-9222)
+- [mercul1ninna/MIPS-CVE-2014-9222](https://github.com/mercul1ninna/MIPS-CVE-2014-9222)
 
 ### CVE-2014-9295 (2014-12-20)
 
@@ -66784,7 +66836,7 @@
 
 - [hdbreaker/GO-CVE-2011-4862](https://github.com/hdbreaker/GO-CVE-2011-4862)
 - [lol-fi/cve-2011-4862](https://github.com/lol-fi/cve-2011-4862)
-- [kpawar2410/CVE-2011-4862](https://github.com/kpawar2410/CVE-2011-4862)
+- [appsecrani/CVE-2011-4862](https://github.com/appsecrani/CVE-2011-4862)
 
 ### CVE-2011-4919 (2019-11-19)
 
