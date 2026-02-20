@@ -233,6 +233,13 @@
 ### CVE-2026-2461
 - [destiny-creates/CVE-2026-2461-poc](https://github.com/destiny-creates/CVE-2026-2461-poc)
 
+### CVE-2026-2670 (2026-02-18)
+
+<code>A vulnerability was identified in Advantech WISE-6610 1.2.1_20251110. Affected is an unknown function of the file /cgi-bin/luci/admin/openvpn_apply of the component Background Management. Such manipulation of the argument delete_file leads to os command injection. The attack can be executed remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.
+</code>
+
+- [ali-py3/exploi-CVE-2026-2670](https://github.com/ali-py3/exploi-CVE-2026-2670)
+
 ### CVE-2026-3098
 - [George0Papasotiriou/LLM-Jailbreak-via-Chain-of-Logic-Injection-CVE-2026-3098](https://github.com/George0Papasotiriou/LLM-Jailbreak-via-Chain-of-Logic-Injection-CVE-2026-3098)
 
@@ -687,6 +694,13 @@
 </code>
 
 - [aavamin/CVE-2026-24423](https://github.com/aavamin/CVE-2026-24423)
+
+### CVE-2026-24514 (2026-02-03)
+
+<code>A security issue was discovered in ingress-nginx where the validating admission controller feature is subject to a denial of service condition. By sending large requests to the validating admission controller, an attacker can cause memory consumption, which may result in the ingress-nginx controller pod being killed or the node running out of memory.
+</code>
+
+- [mbanyamer/cve-2026-24514-Kubernetes-Dos](https://github.com/mbanyamer/cve-2026-24514-Kubernetes-Dos)
 
 ### CVE-2026-24688 (2026-01-27)
 
@@ -1799,6 +1813,7 @@
 - [kerburenthusiasm/CVE-2025-4517-PoC](https://github.com/kerburenthusiasm/CVE-2025-4517-PoC)
 - [bgutowski/CVE-2025-4517-POC-Sudoers](https://github.com/bgutowski/CVE-2025-4517-POC-Sudoers)
 - [ben-slates/CVE-2025-4517-POC-HTB-WINGDATA](https://github.com/ben-slates/CVE-2025-4517-POC-HTB-WINGDATA)
+- [estebanzarate/CVE-2025-4517-Python-tarfile-filter-data-Bypass-PoC](https://github.com/estebanzarate/CVE-2025-4517-Python-tarfile-filter-data-Bypass-PoC)
 
 ### CVE-2025-4524 (2025-05-21)
 
@@ -9717,6 +9732,9 @@
 </code>
 
 - [Kgan0509/CVE-2025-63585](https://github.com/Kgan0509/CVE-2025-63585)
+
+### CVE-2025-63587
+- [NRTLOX/CVE-2025-63587](https://github.com/NRTLOX/CVE-2025-63587)
 
 ### CVE-2025-63588 (2025-11-06)
 
@@ -36676,6 +36694,7 @@
 - [grass341/CVE-2022-37969](https://github.com/grass341/CVE-2022-37969)
 - [NoobCat2000/CVE-2022-37969](https://github.com/NoobCat2000/CVE-2022-37969)
 - [EmilC3978/CVE-2022-37969PoC](https://github.com/EmilC3978/CVE-2022-37969PoC)
+- [uname1able/CVE-2022-37969](https://github.com/uname1able/CVE-2022-37969)
 
 ### CVE-2022-38029 (2022-10-11)
 
@@ -60177,6 +60196,7 @@
 - [kaylertee/Computer-Security-Equifax-2017](https://github.com/kaylertee/Computer-Security-Equifax-2017)
 - [FozilCV/Apache-Struts2-CVE-2017-5638](https://github.com/FozilCV/Apache-Struts2-CVE-2017-5638)
 - [ACharaf06/CVE-2017-5638-Attack-and-Defense](https://github.com/ACharaf06/CVE-2017-5638-Attack-and-Defense)
+- [soufiane-benchahyd/vulhub-struts2](https://github.com/soufiane-benchahyd/vulhub-struts2)
 
 ### CVE-2017-5645 (2017-04-17)
 
