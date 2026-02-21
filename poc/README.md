@@ -1002,7 +1002,11 @@
 
 - [mbanyamer/CVE-2026-27180-MajorDoMo-unauthenticated-RCE](https://github.com/mbanyamer/CVE-2026-27180-MajorDoMo-unauthenticated-RCE)
 
-### CVE-2026-27199
+### CVE-2026-27199 (2026-02-21)
+
+<code>Werkzeug is a comprehensive WSGI web application library. Versions 3.1.5 and below, the safe_join function allows Windows device names as filenames if preceded by other path segments. This was previously reported as GHSA-hgf8-39gv-g3f2, but the added filtering failed to account for the fact that safe_join accepts paths with multiple segments, such as example/NUL. The function send_from_directory uses safe_join to safely serve files at user-specified paths under a directory. If the application is running on Windows, and the requested path ends with a special device name, the file will be opened successfully, but reading will hang indefinitely. This issue has been fixed in version 3.1.6.
+</code>
+
 - [alimezar/CVE-2026-27199-werkzeug-safe-join-bypass-PoC](https://github.com/alimezar/CVE-2026-27199-werkzeug-safe-join-bypass-PoC)
 
 
