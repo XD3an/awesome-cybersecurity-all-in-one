@@ -249,6 +249,13 @@
 
 - [ali-py3/exploit-CVE-2026-2670](https://github.com/ali-py3/exploit-CVE-2026-2670)
 
+### CVE-2026-2848 (2026-02-20)
+
+<code>A flaw has been found in SourceCodester Simple Responsive Tourism Website 1.0. Affected by this vulnerability is an unknown functionality of the file /classes/Master.php?f=register of the component Registration. This manipulation of the argument Username causes sql injection. The attack may be initiated remotely. The exploit has been published and may be used.
+</code>
+
+- [richardpaimu34/CVE-2026-2848](https://github.com/richardpaimu34/CVE-2026-2848)
+
 ### CVE-2026-3098
 - [George0Papasotiriou/LLM-Jailbreak-via-Chain-of-Logic-Injection-CVE-2026-3098](https://github.com/George0Papasotiriou/LLM-Jailbreak-via-Chain-of-Logic-Injection-CVE-2026-3098)
 
@@ -811,6 +818,7 @@
 - [Joseph19820124/openclaw-vuln-report](https://github.com/Joseph19820124/openclaw-vuln-report)
 - [al4n4n/CVE-2026-25253-research](https://github.com/al4n4n/CVE-2026-25253-research)
 - [Ckokoski/moatbot-security](https://github.com/Ckokoski/moatbot-security)
+- [FrigateCaptain/openclaw_vulnerabilities_and_solutions](https://github.com/FrigateCaptain/openclaw_vulnerabilities_and_solutions)
 
 ### CVE-2026-25512 (2026-02-04)
 
@@ -1008,6 +1016,20 @@
 </code>
 
 - [alimezar/CVE-2026-27199-werkzeug-safe-join-bypass-PoC](https://github.com/alimezar/CVE-2026-27199-werkzeug-safe-join-bypass-PoC)
+
+### CVE-2026-27470 (2026-02-21)
+
+<code>ZoneMinder is a free, open source closed-circuit television software application. In versions 1.36.37 and below and 1.37.61 through 1.38.0, there is a second-order SQL Injection vulnerability in the web/ajax/status.php file within the getNearEvents() function. Event field values (specifically Name and Cause) are stored safely via parameterized queries but are later retrieved and concatenated directly into SQL WHERE clauses without escaping. An authenticated user with Events edit and view permissions can exploit this to execute arbitrary SQL queries.
+</code>
+
+- [kocaemre/CVE-2026-27470](https://github.com/kocaemre/CVE-2026-27470)
+
+### CVE-2026-27574 (2026-02-21)
+
+<code>OneUptime is a solution for monitoring and managing online services. In versions 9.5.13 and below, custom JavaScript monitor feature uses Node.js's node:vm module (explicitly documented as not a security mechanism) to execute user-supplied code, allowing trivial sandbox escape via a well-known one-liner that grants full access to the underlying process. Because the probe runs with host networking and holds all cluster credentials (ONEUPTIME_SECRET, DATABASE_PASSWORD, REDIS_PASSWORD, CLICKHOUSE_PASSWORD) in its environment variables, and monitor creation is available to the lowest role (ProjectMember) with open registration enabled by default, any anonymous user can achieve full cluster compromise in about 30 seconds. This issue has been fixed in version 10.0.5.
+</code>
+
+- [mbanyamer/CVE-2026-27574-OneUptime-RCE](https://github.com/mbanyamer/CVE-2026-27574-OneUptime-RCE)
 
 
 ## 2025
@@ -1333,7 +1355,6 @@
 - [Armand2002/Exploit-CVE-2025-1974-Lab](https://github.com/Armand2002/Exploit-CVE-2025-1974-Lab)
 - [BiiTts/POC-IngressNightmare-CVE-2025-1974](https://github.com/BiiTts/POC-IngressNightmare-CVE-2025-1974)
 - [iteride/CVE-2025-1974](https://github.com/iteride/CVE-2025-1974)
-- [I3r1h0n/IngressNightterror](https://github.com/I3r1h0n/IngressNightterror)
 - [gunyakit/CVE-2025-1974-PoC-exploit](https://github.com/gunyakit/CVE-2025-1974-PoC-exploit)
 - [BoianEduard/CVE-2025-1974](https://github.com/BoianEduard/CVE-2025-1974)
 
@@ -5277,6 +5298,7 @@
 - [olimpiofreitas/CVE-2025-29927-scanner](https://github.com/olimpiofreitas/CVE-2025-29927-scanner)
 - [moften/CVE-2025-29927_Next.js_Auth_Bypass](https://github.com/moften/CVE-2025-29927_Next.js_Auth_Bypass)
 - [EarthAngel666/x-middleware-exploit](https://github.com/EarthAngel666/x-middleware-exploit)
+- [lstudlo/nextjs-cve-demo](https://github.com/lstudlo/nextjs-cve-demo)
 - [enochgitgamefied/NextJS-CVE-2025-29927-Docker-Lab](https://github.com/enochgitgamefied/NextJS-CVE-2025-29927-Docker-Lab)
 - [sagsooz/CVE-2025-29927](https://github.com/sagsooz/CVE-2025-29927)
 - [SugiB3o/vulnerable-nextjs-14-CVE-2025-29927](https://github.com/SugiB3o/vulnerable-nextjs-14-CVE-2025-29927)
@@ -5882,6 +5904,7 @@
 - [wvverez/CVE-2025-32463](https://github.com/wvverez/CVE-2025-32463)
 - [SpycioKon/CVE-2025-32463](https://github.com/SpycioKon/CVE-2025-32463)
 - [vpr-labs/CVE-2025-32463](https://github.com/vpr-labs/CVE-2025-32463)
+- [danilo1992-sys/CVE-2025-32463](https://github.com/danilo1992-sys/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -7252,6 +7275,7 @@
 - [scroollocker/CVE-2025-49132](https://github.com/scroollocker/CVE-2025-49132)
 - [rippsec/CVE-2025-49132](https://github.com/rippsec/CVE-2025-49132)
 - [popyue/CVE-2025-49132](https://github.com/popyue/CVE-2025-49132)
+- [4nuxd/CVE-2025-49132](https://github.com/4nuxd/CVE-2025-49132)
 
 ### CVE-2025-49144 (2025-06-23)
 
@@ -9491,6 +9515,13 @@
 
 - [pollotherunner/CVE-2025-61155](https://github.com/pollotherunner/CVE-2025-61155)
 
+### CVE-2025-61183 (2025-10-08)
+
+<code>Cross Site Scripting in vaahcms v.2.3.1 allows a remote attacker to execute arbitrary code via upload method in the storeAvatar() method of UserBase.php
+</code>
+
+- [thawphone/CVE-2025-61183](https://github.com/thawphone/CVE-2025-61183)
+
 ### CVE-2025-61228 (2025-12-01)
 
 <code>An issue in Shirt Pocket SuperDuper! V.3.10 and before allows a local attacker to execute arbitrary code via the software update mechanism
@@ -10689,6 +10720,7 @@
 - [chinaxploiter/CVE-2025-68645-PoC](https://github.com/chinaxploiter/CVE-2025-68645-PoC)
 - [MaxMnMl/zimbramail-CVE-2025-68645-poc](https://github.com/MaxMnMl/zimbramail-CVE-2025-68645-poc)
 - [faysalferdous/CVE-2025-68645-Exploiting-Zimbra-Webmail-LFI-Vulnerability](https://github.com/faysalferdous/CVE-2025-68645-Exploiting-Zimbra-Webmail-LFI-Vulnerability)
+- [CMEGh0stX47/CVE-2025-68645](https://github.com/CMEGh0stX47/CVE-2025-68645)
 
 ### CVE-2025-68664 (2025-12-23)
 
@@ -34511,6 +34543,7 @@
 - [Gh-Badr/CVE-2022-26923](https://github.com/Gh-Badr/CVE-2022-26923)
 - [Yowise/CVE-2022-26923](https://github.com/Yowise/CVE-2022-26923)
 - [rayngnpc/CVE-2022-26923-rayng](https://github.com/rayngnpc/CVE-2022-26923-rayng)
+- [Eliasdekiniweek/CVE-2022-26923](https://github.com/Eliasdekiniweek/CVE-2022-26923)
 
 ### CVE-2022-26927 (2022-05-10)
 
@@ -65594,6 +65627,7 @@
 - [DrHaitham/CVE-2014-6271-Shellshock-](https://github.com/DrHaitham/CVE-2014-6271-Shellshock-)
 - [mtaha-sec/bash-apocalypse](https://github.com/mtaha-sec/bash-apocalypse)
 - [andres101c/Shellshock-CVE-2014-6271](https://github.com/andres101c/Shellshock-CVE-2014-6271)
+- [Industri4l-H3ll-Xpl0it3rs/CVE-2014-6271-Shellshock](https://github.com/Industri4l-H3ll-Xpl0it3rs/CVE-2014-6271-Shellshock)
 
 ### CVE-2014-6287 (2014-10-07)
 
