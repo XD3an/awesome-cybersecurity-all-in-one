@@ -191,6 +191,7 @@
 - [cybrdude/cve-2026-1731-scanner](https://github.com/cybrdude/cve-2026-1731-scanner)
 - [jakubie07/CVE-2026-1731](https://github.com/jakubie07/CVE-2026-1731)
 - [richardpaimu34/CVE-2026-1731](https://github.com/richardpaimu34/CVE-2026-1731)
+- [hexissam/CVE-2026-1731](https://github.com/hexissam/CVE-2026-1731)
 
 ### CVE-2026-1844 (2026-02-13)
 
@@ -471,6 +472,7 @@
 </code>
 
 - [Ashifcoder/CVE-2026-22241](https://github.com/Ashifcoder/CVE-2026-22241)
+- [CVEs-Labs/CVE-2026-22241](https://github.com/CVEs-Labs/CVE-2026-22241)
 
 ### CVE-2026-22444 (2026-01-21)
 
@@ -880,13 +882,6 @@
 
 - [ibrahmsql/CVE-2026-25807-Exploit](https://github.com/ibrahmsql/CVE-2026-25807-Exploit)
 
-### CVE-2026-25828 (2026-02-12)
-
-<code>grub-btrfs through 2026-01-31 (on Arch Linux and derivative distributions) allows initramfs OS command injection because it does not sanitize the $root parameter to resolve_device().
-</code>
-
-- [cardosource/CVE-2026-25828](https://github.com/cardosource/CVE-2026-25828)
-
 ### CVE-2026-25854
 - [gregk4sec/CVE-2026-25854](https://github.com/gregk4sec/CVE-2026-25854)
 
@@ -975,6 +970,9 @@
 
 - [mbanyamer/CVE-2026-26235-JUNG-Smart-Visu-Server-Unauthenticated-Reboot-Shutdown](https://github.com/mbanyamer/CVE-2026-26235-JUNG-Smart-Visu-Server-Unauthenticated-Reboot-Shutdown)
 
+### CVE-2026-26331
+- [dxlerYT/CVE-2026-26331](https://github.com/dxlerYT/CVE-2026-26331)
+
 ### CVE-2026-26335 (2026-02-13)
 
 <code>Calero VeraSMART versions prior to 2022 R1 use static ASP.NET/IIS machineKey values configured for the VeraSMART web application and stored in C:\\Program Files (x86)\\Veramark\\VeraSMART\\WebRoot\\web.config. An attacker who obtains these keys can craft a valid ASP.NET ViewState payload that passes integrity validation and is accepted by the application, resulting in server-side deserialization and remote code execution in the context of the IIS application.
@@ -1030,6 +1028,13 @@
 </code>
 
 - [mbanyamer/CVE-2026-27574-OneUptime-RCE](https://github.com/mbanyamer/CVE-2026-27574-OneUptime-RCE)
+
+### CVE-2026-27579 (2026-02-21)
+
+<code>CollabPlatform is a full-stack, real-time doc collaboration platform. In all versions of CollabPlatform, the Appwrite project used by the application is misconfigured to allow arbitrary origins in CORS responses while also permitting credentialed requests. An attacker-controlled domain can issue authenticated cross-origin requests and read sensitive user account information, including email address, account identifiers, and MFA status. The issue did not have a fix at the time of publication.
+</code>
+
+- [mbanyamer/CVE-2026-27579-CollabPlatform-Appwrite-CORS-Misconfiguration](https://github.com/mbanyamer/CVE-2026-27579-CollabPlatform-Appwrite-CORS-Misconfiguration)
 
 
 ## 2025
@@ -2248,6 +2253,7 @@
 - [DesertDemons/CVE-2025-6018-6019](https://github.com/DesertDemons/CVE-2025-6018-6019)
 - [localh0ste/CVE-2025-6018-and-CVE-2025-6019](https://github.com/localh0ste/CVE-2025-6018-and-CVE-2025-6019)
 - [MaxKappa/opensuse-leap-privesc-exploit](https://github.com/MaxKappa/opensuse-leap-privesc-exploit)
+- [iOxsec/CVE-2025-6018-CVE-2025-6019-Privilege-Escalation-Exploit](https://github.com/iOxsec/CVE-2025-6018-CVE-2025-6019-Privilege-Escalation-Exploit)
 
 ### CVE-2025-6019 (2025-06-19)
 
@@ -3048,13 +3054,6 @@
 </code>
 
 - [NagisaYumaa/CVE-2025-10377](https://github.com/NagisaYumaa/CVE-2025-10377)
-
-### CVE-2025-10492 (2025-09-16)
-
-<code>A Java deserialisation vulnerability has been discovered in Jaspersoft Library. Improper handling of externally supplied data may allow attackers to execute arbitrary code remotely on systems that use the affected library
-</code>
-
-- [dovezp/CVE-2025-10492-POC](https://github.com/dovezp/CVE-2025-10492-POC)
 
 ### CVE-2025-10585 (2025-09-24)
 
@@ -5263,7 +5262,6 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [KaztoRay/CVE-2025-29927-Research](https://github.com/KaztoRay/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -5563,6 +5561,7 @@
 - [ch3m1cl/CVE-2025-31161](https://github.com/ch3m1cl/CVE-2025-31161)
 - [Dairrow/CVE-2025-31161](https://github.com/Dairrow/CVE-2025-31161)
 - [Shisones/CVE-2025-31161](https://github.com/Shisones/CVE-2025-31161)
+- [eserror/CVE-2025-31161](https://github.com/eserror/CVE-2025-31161)
 
 ### CVE-2025-31200 (2025-04-16)
 
@@ -7006,6 +7005,7 @@
 - [shadowgit30/CVE-2025-47812](https://github.com/shadowgit30/CVE-2025-47812)
 - [Nara-sakurai/CVE-2025-47812-PoC](https://github.com/Nara-sakurai/CVE-2025-47812-PoC)
 - [estebanzarate/CVE-2025-47812-Wing-FTP-Server-7.4.3-Unauthenticated-RCE-PoC](https://github.com/estebanzarate/CVE-2025-47812-Wing-FTP-Server-7.4.3-Unauthenticated-RCE-PoC)
+- [popyue/CVE-2025-47812](https://github.com/popyue/CVE-2025-47812)
 
 ### CVE-2025-47827 (2025-06-05)
 
@@ -7530,6 +7530,13 @@
 
 - [LukeSec/CVE-2025-50675-GPMAW-Permissions](https://github.com/LukeSec/CVE-2025-50675-GPMAW-Permissions)
 
+### CVE-2025-50738 (2025-07-29)
+
+<code>The Memos application, up to version v0.24.3, allows for the embedding of markdown images with arbitrary URLs. When a user views a memo containing such an image, their browser automatically fetches the image URL without explicit user consent or interaction beyond viewing the memo. This can be exploited by an attacker to disclose the viewing user's IP address, browser User-Agent string, and potentially other request-specific information to the attacker-controlled server, leading to information disclosure and user tracking.
+</code>
+
+- [tiemio/CVE-2025-50738-PoC](https://github.com/tiemio/CVE-2025-50738-PoC)
+
 ### CVE-2025-50754 (2025-08-04)
 
 <code>Unisite CMS version 5.0 contains a stored Cross-Site Scripting (XSS) vulnerability in the &quot;Report&quot; functionality. A malicious script submitted by an attacker is rendered in the admin panel when viewed by an administrator. This allows attackers to hijack the admin session and, by leveraging the template editor, upload and execute a PHP web shell on the server, leading to full remote code execution.
@@ -7585,9 +7592,6 @@
 </code>
 
 - [p0et08/Electrolink-FM-DAB-TV](https://github.com/p0et08/Electrolink-FM-DAB-TV)
-
-### CVE-2025-51046
-- [0xMesh-X/CVE-2025-51046](https://github.com/0xMesh-X/CVE-2025-51046)
 
 ### CVE-2025-51385 (2025-07-31)
 
@@ -10573,6 +10577,13 @@
 
 - [r0xtsec/CVE](https://github.com/r0xtsec/CVE)
 
+### CVE-2025-67644 (2025-12-10)
+
+<code>LangGraph SQLite Checkpoint is an implementation of LangGraph CheckpointSaver that uses SQLite DB (both sync and async, via aiosqlite). Versions 3.0.0 and below are vulnerable to SQL injection through the checkpoint implementation. Checkpoint allows attackers to manipulate SQL queries through metadata filter keys, affecting applications that accept untrusted metadata filter keys (not just filter values) in checkpoint search operations. The _metadata_predicate() function constructs SQL queries by interpolating filter keys directly into f-strings without validation. This issue is fixed in version 3.0.1.
+</code>
+
+- [mbanyamer/CVE-2025-67644-LangGraph-3.0.1-SQLite-Checkpoint-SQL-Injection](https://github.com/mbanyamer/CVE-2025-67644-LangGraph-3.0.1-SQLite-Checkpoint-SQL-Injection)
+
 ### CVE-2025-67730 (2025-12-12)
 
 <code>Frappe Learning Management System (LMS) is a learning system that helps users structure their content. Versions prior to 2.42.0 allow authenticated users to add malicious HTML and JavaScript through description fields in the Job, Course and Batch forms. This issue is fixed in version 2.42.0.
@@ -10737,6 +10748,13 @@
 - [Ak-cybe/CVE-2025-68664-LangGrinch-PoC](https://github.com/Ak-cybe/CVE-2025-68664-LangGrinch-PoC)
 - [comerc/CVE-2025-68664](https://github.com/comerc/CVE-2025-68664)
 
+### CVE-2025-68668 (2025-12-26)
+
+<code>n8n is an open source workflow automation platform. From version 1.0.0 to before 2.0.0, a sandbox bypass vulnerability exists in the Python Code Node that uses Pyodide. An authenticated user with permission to create or modify workflows can exploit this vulnerability to execute arbitrary commands on the host system running n8n, using the same privileges as the n8n process. This issue has been patched in version 2.0.0. Workarounds for this issue involve disabling the Code Node by setting the environment variable NODES_EXCLUDE: &quot;[\&quot;n8n-nodes-base.code\&quot;]&quot;, disabling Python support in the Code node by setting the environment variable N8N_PYTHON_ENABLED=false, which was introduced in n8n version 1.104.0, and configuring n8n to use the task runner based Python sandbox via the N8N_RUNNERS_ENABLED and N8N_NATIVE_PYTHON_RUNNER environment variables.
+</code>
+
+- [eshan014/Internship_project_02](https://github.com/eshan014/Internship_project_02)
+
 ### CVE-2025-68705 (2026-01-07)
 
 <code>RustFS is a distributed object storage system built in Rust. In versions 1.0.0-alpha.13 to 1.0.0-alpha.78, RustFS contains a path traversal vulnerability in the /rustfs/rpc/read_file_stream endpoint. This issue has been patched in version 1.0.0-alpha.79.
@@ -10817,6 +10835,13 @@
 </code>
 
 - [SimoesCTT/CTT-Serverless-RCE-v1.0---Convergent-Time-Theory-Enhanced-MCP-Exploit](https://github.com/SimoesCTT/CTT-Serverless-RCE-v1.0---Convergent-Time-Theory-Enhanced-MCP-Exploit)
+
+### CVE-2025-69295 (2026-02-20)
+
+<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in TeconceTheme Coven Core coven-core allows Blind SQL Injection.This issue affects Coven Core: from n/a through &lt;= 1.3.
+</code>
+
+- [hexissam/CVE-2025-69295](https://github.com/hexissam/CVE-2025-69295)
 
 ### CVE-2025-69457
 - [Tagoletta/CVE-2025-69457](https://github.com/Tagoletta/CVE-2025-69457)
@@ -19793,6 +19818,7 @@
 - [Rival420/CVE-2024-46987](https://github.com/Rival420/CVE-2024-46987)
 - [advaitpathak21/CVE-2024-46987](https://github.com/advaitpathak21/CVE-2024-46987)
 - [rabouzia/CVE-2024-46987](https://github.com/rabouzia/CVE-2024-46987)
+- [BLUEBERRYP1LL/CVE-2024-46987](https://github.com/BLUEBERRYP1LL/CVE-2024-46987)
 
 ### CVE-2024-47051 (2025-02-26)
 
@@ -28997,6 +29023,8 @@
 - [jakabakos/CVE-2023-43208-mirth-connect-rce-poc](https://github.com/jakabakos/CVE-2023-43208-mirth-connect-rce-poc)
 - [J4F9S5D2Q7/CVE-2023-43208-MIRTHCONNECT](https://github.com/J4F9S5D2Q7/CVE-2023-43208-MIRTHCONNECT)
 - [Avento/CVE-2023-43208_Detection_PoC](https://github.com/Avento/CVE-2023-43208_Detection_PoC)
+- [kyakei/CVE-2023-43208](https://github.com/kyakei/CVE-2023-43208)
+- [Pegasus0xx/CVE-2023-43208](https://github.com/Pegasus0xx/CVE-2023-43208)
 
 ### CVE-2023-43261 (2023-10-04)
 
@@ -36946,7 +36974,6 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -39673,7 +39700,6 @@
 - [galoget/PwnKit-CVE-2021-4034](https://github.com/galoget/PwnKit-CVE-2021-4034)
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
-- [TheJoyOfHacking/berdav-CVE-2021-4034](https://github.com/TheJoyOfHacking/berdav-CVE-2021-4034)
 - [tzwlhack/CVE-2021-4034](https://github.com/tzwlhack/CVE-2021-4034)
 - [jcatala/f_poc_cve-2021-4034](https://github.com/jcatala/f_poc_cve-2021-4034)
 - [Nosferatuvjr/PwnKit](https://github.com/Nosferatuvjr/PwnKit)
@@ -42621,6 +42647,7 @@
 - [OlivierLaflamme/CVE-2021-36934-export-shadow-volume-POC](https://github.com/OlivierLaflamme/CVE-2021-36934-export-shadow-volume-POC)
 - [chron1k/oxide_hive](https://github.com/chron1k/oxide_hive)
 - [P1rat3R00t/Why-so-Serious-SAM](https://github.com/P1rat3R00t/Why-so-Serious-SAM)
+- [d4yon/CVE-2021-36934-HiveNightmare-Lab](https://github.com/d4yon/CVE-2021-36934-HiveNightmare-Lab)
 
 ### CVE-2021-36949 (2021-08-12)
 
