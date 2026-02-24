@@ -153,13 +153,6 @@
 
 - [ii4gsp/CVE-2026-1457](https://github.com/ii4gsp/CVE-2026-1457)
 
-### CVE-2026-1490 (2026-02-15)
-
-<code>The Spam protection, Anti-Spam, FireWall by CleanTalk plugin for WordPress is vulnerable to unauthorized Arbitrary Plugin Installation due to an authorization bypass via reverse DNS (PTR record) spoofing on the 'checkWithoutToken' function in all versions up to, and including, 6.71. This makes it possible for unauthenticated attackers to install and activate arbitrary plugins which can be leveraged to achieve remote code execution if another vulnerable plugin is installed and activated. Note: This is only exploitable on sites with an invalid API key.
-</code>
-
-- [comthompson30/CVE-2026-1490](https://github.com/comthompson30/CVE-2026-1490)
-
 ### CVE-2026-1529 (2026-02-09)
 
 <code>A flaw was found in Keycloak. An attacker can exploit this vulnerability by modifying the organization ID and target email within a legitimate invitation token's JSON Web Token (JWT) payload. This lack of cryptographic signature verification allows the attacker to successfully self-register into an unauthorized organization, leading to unauthorized access.
@@ -239,6 +232,7 @@
 - [huseyinstif/CVE-2026-2441-PoC](https://github.com/huseyinstif/CVE-2026-2441-PoC)
 - [theemperorspath/CVE-2026-2441-PoC](https://github.com/theemperorspath/CVE-2026-2441-PoC)
 - [washingtonmaister/CVE-2026-2441](https://github.com/washingtonmaister/CVE-2026-2441)
+- [atiilla/CVE-2026-2441_PoC](https://github.com/atiilla/CVE-2026-2441_PoC)
 
 ### CVE-2026-2461
 - [destiny-creates/CVE-2026-2461-poc](https://github.com/destiny-creates/CVE-2026-2461-poc)
@@ -278,6 +272,7 @@
 </code>
 
 - [dkstar11q/Ashwesker-CVE-2026-20045](https://github.com/dkstar11q/Ashwesker-CVE-2026-20045)
+- [zaryouhashraf/CVE-2026-20045](https://github.com/zaryouhashraf/CVE-2026-20045)
 
 ### CVE-2026-20404 (2026-02-02)
 
@@ -425,6 +420,7 @@
 - [bgarz929/Ashwesker-CVE-2026-21858](https://github.com/bgarz929/Ashwesker-CVE-2026-21858)
 - [Alhakim88/CVE-2026-21858](https://github.com/Alhakim88/CVE-2026-21858)
 - [EQSTLab/CVE-2026-21858](https://github.com/EQSTLab/CVE-2026-21858)
+- [zaryouhashraf/CVE-2026-21858](https://github.com/zaryouhashraf/CVE-2026-21858)
 
 ### CVE-2026-21876 (2026-01-08)
 
@@ -554,7 +550,11 @@
 - [dzmind2312/Mass-CVE-2026-23550-Exploit](https://github.com/dzmind2312/Mass-CVE-2026-23550-Exploit)
 - [epsilonpoint88-glitch/EpSiLoNPoInT-](https://github.com/epsilonpoint88-glitch/EpSiLoNPoInT-)
 
-### CVE-2026-23552
+### CVE-2026-23552 (2026-02-23)
+
+<code>Cross-Realm Token Acceptance Bypass in KeycloakSecurityPolicy Apache Camel Keycloak component. \n\nThe Camel-Keycloak KeycloakSecurityPolicy does not validate the iss (issuer) claim of JWT tokens against the configured realm. A token issued by one Keycloak realm is silently accepted by a policy configured for a completely different realm, breaking tenant isolation.\nThis issue affects Apache Camel: from 4.15.0 before 4.18.0.\n\nUsers are recommended to upgrade to version 4.18.0, which fixes the issue.
+</code>
+
 - [oscerd/CVE-2026-23552](https://github.com/oscerd/CVE-2026-23552)
 
 ### CVE-2026-23723 (2026-01-16)
@@ -872,7 +872,11 @@
 
 - [mbanyamer/CVE-2026-25732-NiceGUI-3.6.1](https://github.com/mbanyamer/CVE-2026-25732-NiceGUI-3.6.1)
 
-### CVE-2026-25747
+### CVE-2026-25747 (2026-02-23)
+
+<code>Deserialization of Untrusted Data vulnerability in Apache Camel LevelDB component.\n\nThe Camel-LevelDB DefaultLevelDBSerializer class deserializes data read from the LevelDB aggregation repository using java.io.ObjectInputStream without applying any ObjectInputFilter or class-loading restrictions. An attacker who can write to the LevelDB database files used by a Camel application can inject a crafted serialized Java object that, when deserialized during normal aggregation repository operations, results in arbitrary code execution in the context of the application.\nThis issue affects Apache Camel: from 4.10.0 before 4.10.8, from 4.14.0 before 4.14.5, from 4.15.0 before 4.18.0.\n\nUsers are recommended to upgrade to version 4.18.0, which fixes the issue. For the 4.10.x LTS releases, users are recommended to upgrade to 4.10.9, while for 4.14.x LTS releases, users are recommended to upgrade to 4.14.5
+</code>
+
 - [oscerd/CVE-2026-25747](https://github.com/oscerd/CVE-2026-25747)
 
 ### CVE-2026-25807 (2026-02-09)
@@ -1879,7 +1883,7 @@
 - [Rohitberiwala/PyPath-Escape-CVE-2025-4517-Exploit-Research](https://github.com/Rohitberiwala/PyPath-Escape-CVE-2025-4517-Exploit-Research)
 - [kerburenthusiasm/CVE-2025-4517-PoC](https://github.com/kerburenthusiasm/CVE-2025-4517-PoC)
 - [bgutowski/CVE-2025-4517-POC-Sudoers](https://github.com/bgutowski/CVE-2025-4517-POC-Sudoers)
-- [ben-slates/CVE-2025-4517-POC-HTB-WINGDATA](https://github.com/ben-slates/CVE-2025-4517-POC-HTB-WINGDATA)
+- [ben-slates/CVE-2025-4517-POC](https://github.com/ben-slates/CVE-2025-4517-POC)
 - [estebanzarate/CVE-2025-4517-Python-tarfile-filter-data-Bypass-PoC](https://github.com/estebanzarate/CVE-2025-4517-Python-tarfile-filter-data-Bypass-PoC)
 
 ### CVE-2025-4524 (2025-05-21)
@@ -3048,6 +3052,13 @@
 
 - [ivansmc00/CVE-2025-10351-POC](https://github.com/ivansmc00/CVE-2025-10351-POC)
 
+### CVE-2025-10353 (2025-10-08)
+
+<code>File upload leading to remote code execution (RCE) in the “melis-cms-slider” module of Melis Technology's Melis Platform. This vulnerability allows an attacker to upload a malicious file via a POST request to '/melis/MelisCmsSlider/MelisCmsSliderDetails/saveDetailsForm' using the 'mcsdetail_img' parameter.
+</code>
+
+- [tempiltin/CVE-2025-10353-POC](https://github.com/tempiltin/CVE-2025-10353-POC)
+
 ### CVE-2025-10377 (2025-09-26)
 
 <code>The System Dashboard plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 2.8.20. This is due to missing nonce validation on the sd_toggle_logs() function. This makes it possible for unauthenticated attackers to toggle critical logging settings including Page Access Logs, Error Logs, and Email Delivery Logs via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.
@@ -3541,6 +3552,7 @@
 - [amnnrth/CVE-2025-14847](https://github.com/amnnrth/CVE-2025-14847)
 - [InfoSecAntara/CVE-2025-14847-MongoDB](https://github.com/InfoSecAntara/CVE-2025-14847-MongoDB)
 - [sho-luv/MongoBleed](https://github.com/sho-luv/MongoBleed)
+- [zaryouhashraf/CVE-2025-14847](https://github.com/zaryouhashraf/CVE-2025-14847)
 
 ### CVE-2025-14855 (2025-12-21)
 
@@ -5262,6 +5274,7 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
+- [KaztoRay/CVE-2025-29927-Research](https://github.com/KaztoRay/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -5368,7 +5381,6 @@
 <code>tj-actions changed-files before 46 allows remote attackers to discover secrets by reading actions logs. (The tags v1 through v45.0.7 were affected on 2025-03-14 and 2025-03-15 because they were modified by a threat actor to point at commit 0e58ed8, which contained malicious updateFeatures code.)
 </code>
 
-- [OS-pedrogustavobilro/test-changed-files](https://github.com/OS-pedrogustavobilro/test-changed-files)
 - [Checkmarx/Checkmarx-CVE-2025-30066-Detection-Tool](https://github.com/Checkmarx/Checkmarx-CVE-2025-30066-Detection-Tool)
 
 ### CVE-2025-30144 (2025-03-19)
@@ -6952,6 +6964,7 @@
 </code>
 
 - [Nxploited/CVE-2025-47539](https://github.com/Nxploited/CVE-2025-47539)
+- [snapdowgg/CVE-2025-47539](https://github.com/snapdowgg/CVE-2025-47539)
 
 ### CVE-2025-47549 (2025-05-07)
 
@@ -7280,7 +7293,7 @@
 - [dollarboysushil/CVE-2025-49132-Pterodactyl-Panel-Unauthenticated-Remote-Code-Execution-RCE-](https://github.com/dollarboysushil/CVE-2025-49132-Pterodactyl-Panel-Unauthenticated-Remote-Code-Execution-RCE-)
 - [thealchimist86/CVE-2025-49132-Pterodactyl-Panel-RCE](https://github.com/thealchimist86/CVE-2025-49132-Pterodactyl-Panel-RCE)
 - [scroollocker/CVE-2025-49132](https://github.com/scroollocker/CVE-2025-49132)
-- [rippsec/CVE-2025-49132](https://github.com/rippsec/CVE-2025-49132)
+- [rippxsec/CVE-2025-49132](https://github.com/rippxsec/CVE-2025-49132)
 - [popyue/CVE-2025-49132](https://github.com/popyue/CVE-2025-49132)
 - [4nuxd/CVE-2025-49132](https://github.com/4nuxd/CVE-2025-49132)
 
@@ -8122,6 +8135,7 @@
 - [osman1337-security/CVE-2025-54100](https://github.com/osman1337-security/CVE-2025-54100)
 - [ThemeHackers/CVE-2025-54100](https://github.com/ThemeHackers/CVE-2025-54100)
 - [xiaoLvChen/CVE-2025-54100](https://github.com/xiaoLvChen/CVE-2025-54100)
+- [R3lva/CVE-2025-54100-BYPASS-](https://github.com/R3lva/CVE-2025-54100-BYPASS-)
 
 ### CVE-2025-54110 (2025-09-09)
 
@@ -8212,7 +8226,7 @@
 </code>
 
 - [yohannslm/CVE-2025-54352](https://github.com/yohannslm/CVE-2025-54352)
-- [crypcky/XML-RPC-Pingback-Vulnerability](https://github.com/crypcky/XML-RPC-Pingback-Vulnerability)
+- [mufasa4o4/XML-RPC-Pingback-Vulnerability](https://github.com/mufasa4o4/XML-RPC-Pingback-Vulnerability)
 
 ### CVE-2025-54381 (2025-07-29)
 
@@ -8756,6 +8770,7 @@
 - [Wyl-cmd/CVE-2025-55182](https://github.com/Wyl-cmd/CVE-2025-55182)
 - [DeDnY/CVE-2025-55182-in-docker](https://github.com/DeDnY/CVE-2025-55182-in-docker)
 - [H4R335HR/reactshell](https://github.com/H4R335HR/reactshell)
+- [zaryouhashraf/CVE-2025-55182](https://github.com/zaryouhashraf/CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -9929,10 +9944,18 @@
 ### CVE-2025-63943
 - [RedOpsX/CVE-2025-63943](https://github.com/RedOpsX/CVE-2025-63943)
 
-### CVE-2025-63945
+### CVE-2025-63945 (2026-02-23)
+
+<code>A privilege escalation (PE) vulnerability in the Tencent iOA app thru 210.9.28693.621001 on Windows devices enables a local user to execute programs with elevated privileges. However, execution requires that the local user is able to successfully exploit a race condition.
+</code>
+
 - [alexlee820/CVE-2025-63945-Tencent-iOA-EoP](https://github.com/alexlee820/CVE-2025-63945-Tencent-iOA-EoP)
 
-### CVE-2025-63946
+### CVE-2025-63946 (2026-02-23)
+
+<code>A privilege escalation (PE) vulnerability in the Tencent PC Manager app thru 17.10.28554.205 on Windows devices enables a local user to execute programs with elevated privileges. However, execution requires that the local user is able to successfully exploit a race condition.
+</code>
+
 - [alexlee820/CVE-2025-63946-Tencent-PC-Manager-EoP](https://github.com/alexlee820/CVE-2025-63946-Tencent-PC-Manager-EoP)
 
 ### CVE-2025-64027 (2025-11-20)
@@ -10563,6 +10586,9 @@
 - [RajChowdhury240/CVE-2025-67435](https://github.com/RajChowdhury240/CVE-2025-67435)
 - [RajChowdhury240/CVE-2025-67435-PoC](https://github.com/RajChowdhury240/CVE-2025-67435-PoC)
 
+### CVE-2025-67445
+- [DaRkSpOoOk/CVE-2025-67445](https://github.com/DaRkSpOoOk/CVE-2025-67445)
+
 ### CVE-2025-67494 (2025-12-09)
 
 <code>ZITADEL is an open-source identity infrastructure tool. Versions 4.7.0 and below are vulnerable to an unauthenticated, full-read SSRF vulnerability. The ZITADEL Login UI (V2) treats the x-zitadel-forward-host header as a trusted fallback for all deployments, including self-hosted instances. This allows an unauthenticated attacker to force the server to make HTTP requests to arbitrary domains, such as internal addresses, and read the responses, enabling data exfiltration and bypassing network-segmentation controls. This issue is fixed in version 4.7.1.
@@ -10590,6 +10616,13 @@
 </code>
 
 - [Dharan10/CVE-2025-67730](https://github.com/Dharan10/CVE-2025-67730)
+
+### CVE-2025-67733 (2026-02-23)
+
+<code>Valkey is a distributed key-value database. Prior to versions 9.0.2, 8.1.6, 8.0.7, and 7.2.12, a malicious user can use scripting commands to inject arbitrary information into the response stream for the given client, potentially corrupting or returning tampered data to other users on the same connection. The error handling code for lua scripts does not properly handle null characters. Versions 9.0.2, 8.1.6, 8.0.7, and 7.2.12 fix the issue.
+</code>
+
+- [JYlab/CVE-2025-67733-RESP-Injection-PoC](https://github.com/JYlab/CVE-2025-67733-RESP-Injection-PoC)
 
 ### CVE-2025-67780 (2025-12-11)
 
@@ -15603,7 +15636,7 @@
 </code>
 
 - [OxyDeV2/ClearML-CVE-2024-24590](https://github.com/OxyDeV2/ClearML-CVE-2024-24590)
-- [rippsec/CVE-2024-24590-ClearML-RCE-Exploit](https://github.com/rippsec/CVE-2024-24590-ClearML-RCE-Exploit)
+- [rippxsec/CVE-2024-24590-ClearML-RCE-Exploit](https://github.com/rippxsec/CVE-2024-24590-ClearML-RCE-Exploit)
 - [diegogarciayala/CVE-2024-24590-ClearML-RCE-CMD-POC](https://github.com/diegogarciayala/CVE-2024-24590-ClearML-RCE-CMD-POC)
 - [junnythemarksman/CVE-2024-24590](https://github.com/junnythemarksman/CVE-2024-24590)
 - [sviim/ClearML-CVE-2024-24590-RCE](https://github.com/sviim/ClearML-CVE-2024-24590-RCE)
@@ -20317,6 +20350,7 @@
 - [thunww/CVE-2024-50379](https://github.com/thunww/CVE-2024-50379)
 - [Yuri08loveElaina/CVE-2024-50379-POC](https://github.com/Yuri08loveElaina/CVE-2024-50379-POC)
 - [Yuri08loveElaina/CVE-2024-50379](https://github.com/Yuri08loveElaina/CVE-2024-50379)
+- [radzek15/CVE-2024-50379-TOCTOU](https://github.com/radzek15/CVE-2024-50379-TOCTOU)
 
 ### CVE-2024-50395 (2024-11-22)
 
@@ -21090,6 +21124,7 @@
 
 - [sfewer-r7/SonicSessionLeak](https://github.com/sfewer-r7/SonicSessionLeak)
 - [istagmbh/CVE-2024-53704](https://github.com/istagmbh/CVE-2024-53704)
+- [anir0y/sonicwall-audit-toolkit](https://github.com/anir0y/sonicwall-audit-toolkit)
 
 ### CVE-2024-53900 (2024-12-02)
 
@@ -25292,6 +25327,7 @@
 - [1Ronkkeli/spip-cve-2023-27372-rce](https://github.com/1Ronkkeli/spip-cve-2023-27372-rce)
 - [G01d3nW01f/cve-2023-27372](https://github.com/G01d3nW01f/cve-2023-27372)
 - [KirolosKhairy/CVE-2023-27372](https://github.com/KirolosKhairy/CVE-2023-27372)
+- [estebanzarate/CVE-2023-27372-SPIP-4.2.1-Unauthenticated-RCE-PoC](https://github.com/estebanzarate/CVE-2023-27372-SPIP-4.2.1-Unauthenticated-RCE-PoC)
 
 ### CVE-2023-27470 (2023-09-11)
 
@@ -36974,6 +37010,7 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
+- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -39837,6 +39874,7 @@
 </code>
 
 - [vesperp/CVE-2021-20038-SonicWall-RCE](https://github.com/vesperp/CVE-2021-20038-SonicWall-RCE)
+- [anir0y/sonicwall-audit-toolkit](https://github.com/anir0y/sonicwall-audit-toolkit)
 
 ### CVE-2021-20138 (2021-12-09)
 
@@ -43737,7 +43775,6 @@
 - [Mahfujurjust/CVE-2021-41773](https://github.com/Mahfujurjust/CVE-2021-41773)
 - [adrianmafandy/CVE-2021-41773](https://github.com/adrianmafandy/CVE-2021-41773)
 - [faizdotid/CVE-2021-41773](https://github.com/faizdotid/CVE-2021-41773)
-- [rikdek/CVE-2021-41773](https://github.com/rikdek/CVE-2021-41773)
 - [ChanaPCN/CVE-2021-41773-Analysis](https://github.com/ChanaPCN/CVE-2021-41773-Analysis)
 - [sudo0xksh/cve-2021-41773-checker](https://github.com/sudo0xksh/cve-2021-41773-checker)
 - [dserdyk3-arch/Serdyuk-DO-homework-CVE-2021-41773](https://github.com/dserdyk3-arch/Serdyuk-DO-homework-CVE-2021-41773)
@@ -44543,7 +44580,7 @@
 - [uint0/cve-2021-44228-helpers](https://github.com/uint0/cve-2021-44228-helpers)
 - [sud0x00/log4j-CVE-2021-44228](https://github.com/sud0x00/log4j-CVE-2021-44228)
 - [DiCanio/CVE-2021-44228-docker-example](https://github.com/DiCanio/CVE-2021-44228-docker-example)
-- [myyxl/cve-2021-44228-minecraft-poc](https://github.com/myyxl/cve-2021-44228-minecraft-poc)
+- [mrlnstk/cve-2021-44228-minecraft-poc](https://github.com/mrlnstk/cve-2021-44228-minecraft-poc)
 - [RrUZi/Awesome-CVE-2021-44228](https://github.com/RrUZi/Awesome-CVE-2021-44228)
 - [future-client/CVE-2021-44228](https://github.com/future-client/CVE-2021-44228)
 - [CodeShield-Security/Log4JShell-Bytecode-Detector](https://github.com/CodeShield-Security/Log4JShell-Bytecode-Detector)
@@ -46035,7 +46072,7 @@
 
 ### CVE-2020-0890 (2020-09-11)
 
-<code>&lt;p&gt;A denial of service vulnerability exists when Microsoft Hyper-V on a host server fails to properly validate specific malicious data from a user on a guest operating system.&lt;/p&gt;\n&lt;p&gt;To exploit the vulnerability, an attacker who already has a privileged account on a guest operating system, running as a virtual machine, could run a specially crafted application.&lt;/p&gt;\n&lt;p&gt;The security update addresses the vulnerability by resolving the conditions where Hyper-V would fail to handle these requests.&lt;/p&gt;\n
+<code>&lt;p&gt;A denial of service vulnerability exists when Microsoft Hyper-V on a host server fails to properly validate specific malicious data from a user on a guest operating system.&lt;/p&gt;\n&lt;p&gt;To exploit the vulnerability, an attacker who already has a privileged account on a guest operating system, running as a virtual machine, could run a specially crafted application.&lt;/p&gt;\n&lt;p&gt;The security update addresses the vulnerability by resolving the conditions where Hyper-V would fail to handle these requests.&lt;/p&gt;
 </code>
 
 - [gerhart01/hyperv_local_dos_poc](https://github.com/gerhart01/hyperv_local_dos_poc)
@@ -46073,7 +46110,7 @@
 
 ### CVE-2020-1034 (2020-09-11)
 
-<code>&lt;p&gt;An elevation of privilege vulnerability exists in the way that the Windows Kernel handles objects in memory. An attacker who successfully exploited the vulnerability could execute code with elevated permissions.&lt;/p&gt;\n&lt;p&gt;To exploit the vulnerability, a locally authenticated attacker could run a specially crafted application.&lt;/p&gt;\n&lt;p&gt;The security update addresses the vulnerability by ensuring the Windows Kernel properly handles objects in memory.&lt;/p&gt;\n
+<code>&lt;p&gt;An elevation of privilege vulnerability exists in the way that the Windows Kernel handles objects in memory. An attacker who successfully exploited the vulnerability could execute code with elevated permissions.&lt;/p&gt;\n&lt;p&gt;To exploit the vulnerability, a locally authenticated attacker could run a specially crafted application.&lt;/p&gt;\n&lt;p&gt;The security update addresses the vulnerability by ensuring the Windows Kernel properly handles objects in memory.&lt;/p&gt;
 </code>
 
 - [yardenshafir/CVE-2020-1034](https://github.com/yardenshafir/CVE-2020-1034)
@@ -46148,7 +46185,7 @@
 
 ### CVE-2020-1337 (2020-08-17)
 
-<code>An elevation of privilege vulnerability exists when the Windows Print Spooler service improperly allows arbitrary writing to the file system. An attacker who successfully exploited this vulnerability could run arbitrary code with elevated system privileges. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.\nTo exploit this vulnerability, an attacker would have to log on to an affected system and run a specially crafted script or application.\nThe update addresses the vulnerability by correcting how the Windows Print Spooler Component writes to the file system.\n
+<code>An elevation of privilege vulnerability exists when the Windows Print Spooler service improperly allows arbitrary writing to the file system. An attacker who successfully exploited this vulnerability could run arbitrary code with elevated system privileges. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.\nTo exploit this vulnerability, an attacker would have to log on to an affected system and run a specially crafted script or application.\nThe update addresses the vulnerability by correcting how the Windows Print Spooler Component writes to the file system.
 </code>
 
 - [math1as/CVE-2020-1337-exploit](https://github.com/math1as/CVE-2020-1337-exploit)
@@ -46192,7 +46229,7 @@
 
 ### CVE-2020-1472 (2020-08-17)
 
-<code>An elevation of privilege vulnerability exists when an attacker establishes a vulnerable Netlogon secure channel connection to a domain controller, using the Netlogon Remote Protocol (MS-NRPC). An attacker who successfully exploited the vulnerability could run a specially crafted application on a device on the network.\nTo exploit the vulnerability, an unauthenticated attacker would be required to use MS-NRPC to connect to a domain controller to obtain domain administrator access.\nMicrosoft is addressing the vulnerability in a phased two-part rollout. These updates address the vulnerability by modifying how Netlogon handles the usage of Netlogon secure channels.\nFor guidelines on how to manage the changes required for this vulnerability and more information on the phased rollout, see  How to manage the changes in Netlogon secure channel connections associated with CVE-2020-1472 (updated September 28, 2020).\nWhen the second phase of Windows updates become available in Q1 2021, customers will be notified via a revision to this security vulnerability. If you wish to be notified when these updates are released, we recommend that you register for the security notifications mailer to be alerted of content changes to this advisory. See Microsoft Technical Security Notifications.\n
+<code>An elevation of privilege vulnerability exists when an attacker establishes a vulnerable Netlogon secure channel connection to a domain controller, using the Netlogon Remote Protocol (MS-NRPC). An attacker who successfully exploited the vulnerability could run a specially crafted application on a device on the network.\nTo exploit the vulnerability, an unauthenticated attacker would be required to use MS-NRPC to connect to a domain controller to obtain domain administrator access.\nMicrosoft is addressing the vulnerability in a phased two-part rollout. These updates address the vulnerability by modifying how Netlogon handles the usage of Netlogon secure channels.\nFor guidelines on how to manage the changes required for this vulnerability and more information on the phased rollout, see  How to manage the changes in Netlogon secure channel connections associated with CVE-2020-1472 (updated September 28, 2020).\nWhen the second phase of Windows updates become available in Q1 2021, customers will be notified via a revision to this security vulnerability. If you wish to be notified when these updates are released, we recommend that you register for the security notifications mailer to be alerted of content changes to this advisory. See Microsoft Technical Security Notifications.
 </code>
 
 - [Tobey123/CVE-2020-1472-visualizer](https://github.com/Tobey123/CVE-2020-1472-visualizer)
@@ -46271,7 +46308,7 @@
 
 ### CVE-2020-1493 (2020-08-17)
 
-<code>An information disclosure vulnerability exists when attaching files to Outlook messages. This vulnerability could potentially allow users to share attached files such that they are accessible by anonymous users where they should be restricted to specific users.\nTo exploit this vulnerability, an attacker would have to attach a file as a link to an email. The email could then be shared with individuals that should not have access to the files, ignoring the default organizational setting.\nThe security update addresses the vulnerability by correcting how Outlook handles file attachment links.\n
+<code>An information disclosure vulnerability exists when attaching files to Outlook messages. This vulnerability could potentially allow users to share attached files such that they are accessible by anonymous users where they should be restricted to specific users.\nTo exploit this vulnerability, an attacker would have to attach a file as a link to an email. The email could then be shared with individuals that should not have access to the files, ignoring the default organizational setting.\nThe security update addresses the vulnerability by correcting how Outlook handles file attachment links.
 </code>
 
 - [0neb1n/CVE-2020-1493](https://github.com/0neb1n/CVE-2020-1493)
@@ -49394,7 +49431,7 @@
 
 ### CVE-2020-16898 (2020-10-16)
 
-<code>&lt;p&gt;A remote code execution vulnerability exists when the Windows TCP/IP stack improperly handles ICMPv6 Router Advertisement packets. An attacker who successfully exploited this vulnerability could gain the ability to execute code on the target server or client.&lt;/p&gt;\n&lt;p&gt;To exploit this vulnerability, an attacker would have to send specially crafted ICMPv6 Router Advertisement packets to a remote Windows computer.&lt;/p&gt;\n&lt;p&gt;The update addresses the vulnerability by correcting how the Windows TCP/IP stack handles ICMPv6 Router Advertisement packets.&lt;/p&gt;\n
+<code>&lt;p&gt;A remote code execution vulnerability exists when the Windows TCP/IP stack improperly handles ICMPv6 Router Advertisement packets. An attacker who successfully exploited this vulnerability could gain the ability to execute code on the target server or client.&lt;/p&gt;\n&lt;p&gt;To exploit this vulnerability, an attacker would have to send specially crafted ICMPv6 Router Advertisement packets to a remote Windows computer.&lt;/p&gt;\n&lt;p&gt;The update addresses the vulnerability by correcting how the Windows TCP/IP stack handles ICMPv6 Router Advertisement packets.&lt;/p&gt;
 </code>
 
 - [advanced-threat-research/CVE-2020-16898](https://github.com/advanced-threat-research/CVE-2020-16898)
@@ -49414,28 +49451,28 @@
 
 ### CVE-2020-16899 (2020-10-16)
 
-<code>&lt;p&gt;A denial of service vulnerability exists when the Windows TCP/IP stack improperly handles ICMPv6 Router Advertisement packets. An attacker who successfully exploited this vulnerability could cause a target system to stop responding.&lt;/p&gt;\n&lt;p&gt;To exploit this vulnerability, an attacker would have to send specially crafted ICMPv6 Router Advertisement packets to a remote Windows computer. The vulnerability would not allow an attacker to execute code or to elevate user rights directly.&lt;/p&gt;\n&lt;p&gt;The update addresses the vulnerability by correcting how the Windows TCP/IP stack handles ICMPv6 Router Advertisement packets.&lt;/p&gt;\n
+<code>&lt;p&gt;A denial of service vulnerability exists when the Windows TCP/IP stack improperly handles ICMPv6 Router Advertisement packets. An attacker who successfully exploited this vulnerability could cause a target system to stop responding.&lt;/p&gt;\n&lt;p&gt;To exploit this vulnerability, an attacker would have to send specially crafted ICMPv6 Router Advertisement packets to a remote Windows computer. The vulnerability would not allow an attacker to execute code or to elevate user rights directly.&lt;/p&gt;\n&lt;p&gt;The update addresses the vulnerability by correcting how the Windows TCP/IP stack handles ICMPv6 Router Advertisement packets.&lt;/p&gt;
 </code>
 
 - [advanced-threat-research/CVE-2020-16899](https://github.com/advanced-threat-research/CVE-2020-16899)
 
 ### CVE-2020-16938 (2020-10-16)
 
-<code>&lt;p&gt;An information disclosure vulnerability exists when the Windows kernel improperly handles objects in memory. An attacker who successfully exploited this vulnerability could obtain information to further compromise the user’s system.&lt;/p&gt;\n&lt;p&gt;To exploit this vulnerability, an attacker would have to log on to an affected system and run a specially crafted application. The vulnerability would not allow an attacker to execute code or to elevate user rights directly, but it could be used to obtain information that could be used to try to further compromise the affected system.&lt;/p&gt;\n&lt;p&gt;The update addresses the vulnerability by correcting how the Windows kernel handles objects in memory.&lt;/p&gt;\n
+<code>&lt;p&gt;An information disclosure vulnerability exists when the Windows kernel improperly handles objects in memory. An attacker who successfully exploited this vulnerability could obtain information to further compromise the user’s system.&lt;/p&gt;\n&lt;p&gt;To exploit this vulnerability, an attacker would have to log on to an affected system and run a specially crafted application. The vulnerability would not allow an attacker to execute code or to elevate user rights directly, but it could be used to obtain information that could be used to try to further compromise the affected system.&lt;/p&gt;\n&lt;p&gt;The update addresses the vulnerability by correcting how the Windows kernel handles objects in memory.&lt;/p&gt;
 </code>
 
 - [ioncodes/CVE-2020-16938](https://github.com/ioncodes/CVE-2020-16938)
 
 ### CVE-2020-16939 (2020-10-16)
 
-<code>&lt;p&gt;An elevation of privilege vulnerability exists when Group Policy improperly checks access. An attacker who successfully exploited this vulnerability could run processes in an elevated context.&lt;/p&gt;\n&lt;p&gt;To exploit the vulnerability, an attacker would first have to log on to the system, and then run a specially crafted application to take control over the affected system.&lt;/p&gt;\n&lt;p&gt;The security update addresses the vulnerability by correcting how Group Policy checks access.&lt;/p&gt;\n
+<code>&lt;p&gt;An elevation of privilege vulnerability exists when Group Policy improperly checks access. An attacker who successfully exploited this vulnerability could run processes in an elevated context.&lt;/p&gt;\n&lt;p&gt;To exploit the vulnerability, an attacker would first have to log on to the system, and then run a specially crafted application to take control over the affected system.&lt;/p&gt;\n&lt;p&gt;The security update addresses the vulnerability by correcting how Group Policy checks access.&lt;/p&gt;
 </code>
 
 - [rogue-kdc/CVE-2020-16939](https://github.com/rogue-kdc/CVE-2020-16939)
 
 ### CVE-2020-16947 (2020-10-16)
 
-<code>&lt;p&gt;A remote code execution vulnerability exists in Microsoft Outlook software when the software fails to properly handle objects in memory. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the targeted user. If the targeted user is logged on with administrative user rights, an attacker could take control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. Users whose accounts are configured to have fewer user rights on the system could be less impacted than users who operate with administrative user rights.&lt;/p&gt;\n&lt;p&gt;Exploitation of the vulnerability requires that a user open a specially crafted file with an affected version of Microsoft Outlook software. In an email attack scenario, an attacker could exploit the vulnerability by sending the specially crafted file to the user and convincing the user to open the file. In a web-based attack scenario, an attacker could host a website (or leverage a compromised website that accepts or hosts user-provided content) that contains a specially crafted file designed to exploit the vulnerability. An attacker would have no way to force users to visit the website. Instead, an attacker would have to convince users to click a link, typically by way of an enticement in an email or instant message, and then convince them to open the specially crafted file.&lt;/p&gt;\n&lt;p&gt;Note that where severity is indicated as Critical in the Affected Products table, the Preview Pane is an attack vector.&lt;/p&gt;\n&lt;p&gt;The security update addresses the vulnerability by correcting how Outlook handles objects in memory.&lt;/p&gt;\n
+<code>&lt;p&gt;A remote code execution vulnerability exists in Microsoft Outlook software when the software fails to properly handle objects in memory. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the targeted user. If the targeted user is logged on with administrative user rights, an attacker could take control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. Users whose accounts are configured to have fewer user rights on the system could be less impacted than users who operate with administrative user rights.&lt;/p&gt;\n&lt;p&gt;Exploitation of the vulnerability requires that a user open a specially crafted file with an affected version of Microsoft Outlook software. In an email attack scenario, an attacker could exploit the vulnerability by sending the specially crafted file to the user and convincing the user to open the file. In a web-based attack scenario, an attacker could host a website (or leverage a compromised website that accepts or hosts user-provided content) that contains a specially crafted file designed to exploit the vulnerability. An attacker would have no way to force users to visit the website. Instead, an attacker would have to convince users to click a link, typically by way of an enticement in an email or instant message, and then convince them to open the specially crafted file.&lt;/p&gt;\n&lt;p&gt;Note that where severity is indicated as Critical in the Affected Products table, the Preview Pane is an attack vector.&lt;/p&gt;\n&lt;p&gt;The security update addresses the vulnerability by correcting how Outlook handles objects in memory.&lt;/p&gt;
 </code>
 
 - [0neb1n/CVE-2020-16947](https://github.com/0neb1n/CVE-2020-16947)
