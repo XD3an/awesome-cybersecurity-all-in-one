@@ -251,6 +251,13 @@
 
 - [richardpaimu34/CVE-2026-2848](https://github.com/richardpaimu34/CVE-2026-2848)
 
+### CVE-2026-2898 (2026-02-22)
+
+<code>A vulnerability was detected in funadmin up to 7.1.0-rc4. This issue affects the function getMember of the file app/common/service/AuthCloudService.php of the component Backend Endpoint. The manipulation of the argument cloud_account results in deserialization. The attack may be performed from remote. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.
+</code>
+
+- [aykhan32/CVE-2026-2898-FunAdmin-Deserialization](https://github.com/aykhan32/CVE-2026-2898-FunAdmin-Deserialization)
+
 ### CVE-2026-3098
 - [George0Papasotiriou/LLM-Jailbreak-via-Chain-of-Logic-Injection-CVE-2026-3098](https://github.com/George0Papasotiriou/LLM-Jailbreak-via-Chain-of-Logic-Injection-CVE-2026-3098)
 
@@ -421,6 +428,7 @@
 - [Alhakim88/CVE-2026-21858](https://github.com/Alhakim88/CVE-2026-21858)
 - [EQSTLab/CVE-2026-21858](https://github.com/EQSTLab/CVE-2026-21858)
 - [zaryouhashraf/CVE-2026-21858](https://github.com/zaryouhashraf/CVE-2026-21858)
+- [bamov970/CVE-2026-21858](https://github.com/bamov970/CVE-2026-21858)
 
 ### CVE-2026-21876 (2026-01-08)
 
@@ -974,7 +982,11 @@
 
 - [mbanyamer/CVE-2026-26235-JUNG-Smart-Visu-Server-Unauthenticated-Reboot-Shutdown](https://github.com/mbanyamer/CVE-2026-26235-JUNG-Smart-Visu-Server-Unauthenticated-Reboot-Shutdown)
 
-### CVE-2026-26331
+### CVE-2026-26331 (2026-02-24)
+
+<code>yt-dlp is a command-line audio/video downloader. Starting in version 2023.06.21 and prior to version 2026.02.21, when yt-dlp's `--netrc-cmd` command-line option (or `netrc_cmd` Python API parameter) is used, an attacker could achieve arbitrary command injection on the user's system with a maliciously crafted URL. yt-dlp maintainers assume the impact of this vulnerability to be high for anyone who uses `--netrc-cmd` in their command/configuration or `netrc_cmd` in their Python scripts. Even though the maliciously crafted URL itself will look very suspicious to many users, it would be trivial for a maliciously crafted webpage with an inconspicuous URL to covertly exploit this vulnerability via HTTP redirect. Users without `--netrc-cmd` in their arguments or `netrc_cmd` in their scripts are unaffected. No evidence has been found of this exploit being used in the wild. yt-dlp version 2026.02.21 fixes this issue by validating all netrc &quot;machine&quot; values and raising an error upon unexpected input. As a workaround, users who are unable to upgrade should avoid using the `--netrc-cmd` command-line option (or `netrc_cmd` Python API parameter), or they should at least not pass a placeholder (`{}`) in their `--netrc-cmd` argument.
+</code>
+
 - [dxlerYT/CVE-2026-26331](https://github.com/dxlerYT/CVE-2026-26331)
 
 ### CVE-2026-26335 (2026-02-13)
@@ -4322,7 +4334,6 @@
 - [Shivshantp/CVE-2025-24813](https://github.com/Shivshantp/CVE-2025-24813)
 - [cyglegit/CVE-2025-24813](https://github.com/cyglegit/CVE-2025-24813)
 - [ftz7/PoC-CVE-2025-24813](https://github.com/ftz7/PoC-CVE-2025-24813)
-- [thebringerofdeath789/CVE-2025-24813](https://github.com/thebringerofdeath789/CVE-2025-24813)
 - [threadpoolx/CVE-2025-24813-Remote-Code-Execution-in-Apache-Tomcat](https://github.com/threadpoolx/CVE-2025-24813-Remote-Code-Execution-in-Apache-Tomcat)
 - [drcrypterdotru/Apache-GOExploiter](https://github.com/drcrypterdotru/Apache-GOExploiter)
 - [CEAlbez/CVE-2025-24813-PoC](https://github.com/CEAlbez/CVE-2025-24813-PoC)
@@ -6241,6 +6252,7 @@
 - [farazsth98/chronomaly](https://github.com/farazsth98/chronomaly)
 - [Crime2/poc-CVE-2025-38352](https://github.com/Crime2/poc-CVE-2025-38352)
 - [Soikoth3010/soikoth3010.github.io](https://github.com/Soikoth3010/soikoth3010.github.io)
+- [jordelmir/Elysium-Vanguard-Sentinel-Audit](https://github.com/jordelmir/Elysium-Vanguard-Sentinel-Audit)
 
 ### CVE-2025-38501 (2025-08-16)
 
@@ -7019,6 +7031,7 @@
 - [Nara-sakurai/CVE-2025-47812-PoC](https://github.com/Nara-sakurai/CVE-2025-47812-PoC)
 - [estebanzarate/CVE-2025-47812-Wing-FTP-Server-7.4.3-Unauthenticated-RCE-PoC](https://github.com/estebanzarate/CVE-2025-47812-Wing-FTP-Server-7.4.3-Unauthenticated-RCE-PoC)
 - [popyue/CVE-2025-47812](https://github.com/popyue/CVE-2025-47812)
+- [0xjuarez/CVE-2025-47812](https://github.com/0xjuarez/CVE-2025-47812)
 
 ### CVE-2025-47827 (2025-06-05)
 
@@ -10622,7 +10635,7 @@
 <code>Valkey is a distributed key-value database. Prior to versions 9.0.2, 8.1.6, 8.0.7, and 7.2.12, a malicious user can use scripting commands to inject arbitrary information into the response stream for the given client, potentially corrupting or returning tampered data to other users on the same connection. The error handling code for lua scripts does not properly handle null characters. Versions 9.0.2, 8.1.6, 8.0.7, and 7.2.12 fix the issue.
 </code>
 
-- [JYlab/CVE-2025-67733-RESP-Injection-PoC](https://github.com/JYlab/CVE-2025-67733-RESP-Injection-PoC)
+- [JYlab/CVE-2025-67733](https://github.com/JYlab/CVE-2025-67733)
 
 ### CVE-2025-67780 (2025-12-11)
 
@@ -12827,7 +12840,6 @@
 - [xiw1ll/CVE-2024-6387_Checker](https://github.com/xiw1ll/CVE-2024-6387_Checker)
 - [moften/regreSSHion-CVE-2024-6387](https://github.com/moften/regreSSHion-CVE-2024-6387)
 - [OhDamnn/Noregressh](https://github.com/OhDamnn/Noregressh)
-- [arielrbrdev/redteamlab1](https://github.com/arielrbrdev/redteamlab1)
 - [Ngagne-Demba-Dia/CVE-2024-6387-corrigee](https://github.com/Ngagne-Demba-Dia/CVE-2024-6387-corrigee)
 
 ### CVE-2024-6460 (2024-08-16)
@@ -64384,7 +64396,7 @@
 <code>The mod_copy module in ProFTPD 1.3.5 allows remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands.
 </code>
 
-- [shk0x/cpx_proftpd](https://github.com/shk0x/cpx_proftpd)
+- [xyk0x/cpx_proftpd](https://github.com/xyk0x/cpx_proftpd)
 - [nootropics/propane](https://github.com/nootropics/propane)
 - [t0kx/exploit-CVE-2015-3306](https://github.com/t0kx/exploit-CVE-2015-3306)
 - [davidtavarez/CVE-2015-3306](https://github.com/davidtavarez/CVE-2015-3306)
