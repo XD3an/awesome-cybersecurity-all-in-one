@@ -139,6 +139,7 @@
 - [LucasM0ntes/POC-CVE-2026-1357](https://github.com/LucasM0ntes/POC-CVE-2026-1357)
 - [halilkirazkaya/CVE-2026-1357](https://github.com/halilkirazkaya/CVE-2026-1357)
 - [cybertechajju/CVE-2026-1357-POC](https://github.com/cybertechajju/CVE-2026-1357-POC)
+- [rootdirective-sec/CVE-2026-1357-Lab](https://github.com/rootdirective-sec/CVE-2026-1357-Lab)
 
 ### CVE-2026-1405 (2026-02-19)
 
@@ -23242,6 +23243,7 @@
 - [morganwdavis/overread](https://github.com/morganwdavis/overread)
 - [LucasOneZ/CVE-2023-4966](https://github.com/LucasOneZ/CVE-2023-4966)
 - [akshthejo/CVE-2023-4966-exploit](https://github.com/akshthejo/CVE-2023-4966-exploit)
+- [vignesh-hp/LockBit-Ransomware-Analysis](https://github.com/vignesh-hp/LockBit-Ransomware-Analysis)
 
 ### CVE-2023-5024 (2023-09-17)
 
@@ -26027,6 +26029,7 @@
 - [abdullohqurbon0v/CVE-2023-30258-Exploit-For-Magnus-Billing-System](https://github.com/abdullohqurbon0v/CVE-2023-30258-Exploit-For-Magnus-Billing-System)
 - [CankunWang/Tryhackme_Billing](https://github.com/CankunWang/Tryhackme_Billing)
 - [kayl22/magnus_billing_7.3.0_RCE_CVE-2023-30258](https://github.com/kayl22/magnus_billing_7.3.0_RCE_CVE-2023-30258)
+- [estebanzarate/CVE-2023-30258-Magnus-Billing-v7-Command-Injection-PoC](https://github.com/estebanzarate/CVE-2023-30258-Magnus-Billing-v7-Command-Injection-PoC)
 
 ### CVE-2023-30347 (2023-06-22)
 
@@ -29117,6 +29120,7 @@
 - [Pegasus0xx/CVE-2023-43208](https://github.com/Pegasus0xx/CVE-2023-43208)
 - [MKIRAHMET/PoC-2023-43208](https://github.com/MKIRAHMET/PoC-2023-43208)
 - [coreraw/Mirth-Connect-CVE-2023-43208](https://github.com/coreraw/Mirth-Connect-CVE-2023-43208)
+- [D3m0nicw0lf/CVE-2023-43208](https://github.com/D3m0nicw0lf/CVE-2023-43208)
 
 ### CVE-2023-43261 (2023-10-04)
 
@@ -33835,6 +33839,7 @@
 </code>
 
 - [fr4nkxixi/CVE-2022-24481-POC](https://github.com/fr4nkxixi/CVE-2022-24481-POC)
+- [uname1able/CVE-2022-24481](https://github.com/uname1able/CVE-2022-24481)
 
 ### CVE-2022-24483 (2022-04-15)
 
