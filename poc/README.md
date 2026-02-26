@@ -216,6 +216,9 @@
 
 - [MaxMnMl/tpadmin-CVE-2026-2113-poc](https://github.com/MaxMnMl/tpadmin-CVE-2026-2113-poc)
 
+### CVE-2026-2256
+- [Itamar-Yochpaz/CVE-2026-2256-PoC](https://github.com/Itamar-Yochpaz/CVE-2026-2256-PoC)
+
 ### CVE-2026-2395
 - [dajneem23/CVE-2026-2395](https://github.com/dajneem23/CVE-2026-2395)
 
@@ -890,6 +893,13 @@
 
 - [mbanyamer/CVE-2026-25732-NiceGUI-3.6.1](https://github.com/mbanyamer/CVE-2026-25732-NiceGUI-3.6.1)
 
+### CVE-2026-25746 (2026-02-25)
+
+<code>OpenEMR is a free and open source electronic health records and medical practice management application. Versions prior to 8.0.0 contain a SQL injection vulnerability in prescription that can be exploited by authenticated attackers. The vulnerability exists due to insufficient input validation in the prescription listing functionality. Version 8.0.0 fixes the vulnerability.
+</code>
+
+- [ChrisSub08/CVE-2026-25746_SqlInjectionVulnerabilityOpenEMR7.0.4](https://github.com/ChrisSub08/CVE-2026-25746_SqlInjectionVulnerabilityOpenEMR7.0.4)
+
 ### CVE-2026-25747 (2026-02-23)
 
 <code>Deserialization of Untrusted Data vulnerability in Apache Camel LevelDB component.\n\nThe Camel-LevelDB DefaultLevelDBSerializer class deserializes data read from the LevelDB aggregation repository using java.io.ObjectInputStream without applying any ObjectInputFilter or class-loading restrictions. An attacker who can write to the LevelDB database files used by a Camel application can inject a crafted serialized Java object that, when deserialized during normal aggregation repository operations, results in arbitrary code execution in the context of the application.\nThis issue affects Apache Camel: from 4.10.0 before 4.10.8, from 4.14.0 before 4.14.5, from 4.15.0 before 4.18.0.\n\nUsers are recommended to upgrade to version 4.18.0, which fixes the issue. For the 4.10.x LTS releases, users are recommended to upgrade to 4.10.9, while for 4.14.x LTS releases, users are recommended to upgrade to 4.14.5
@@ -1027,7 +1037,11 @@
 
 - [mbanyamer/CVE-2026-26335-Calero-VeraSMART-RCE](https://github.com/mbanyamer/CVE-2026-26335-Calero-VeraSMART-RCE)
 
-### CVE-2026-26717
+### CVE-2026-26717 (2026-02-25)
+
+<code>An issue in OpenFUN Richie (LMS) in src/richie/apps/courses/api.py. The application used the non-constant time == operator for HMAC signature verification in the sync_course_run_from_request function. This allows remote attackers to forge valid signatures and bypass authentication by measuring response time discrepancies
+</code>
+
 - [Rickidevs/CVE-2026-26717](https://github.com/Rickidevs/CVE-2026-26717)
 
 ### CVE-2026-26744 (2026-02-19)
@@ -1092,6 +1106,20 @@
 </code>
 
 - [mbanyamer/CVE-2026-27579-CollabPlatform-Appwrite-CORS-Misconfiguration](https://github.com/mbanyamer/CVE-2026-27579-CollabPlatform-Appwrite-CORS-Misconfiguration)
+
+### CVE-2026-27607 (2026-02-25)
+
+<code>RustFS is a distributed object storage system built in Rust. In versions 1.0.0-alpha.56 through 1.0.0-alpha.82, RustFS does not validate policy conditions in presigned POST uploads (PostObject), allowing attackers to bypass content-length-range, starts-with, and Content-Type constraints. This enables unauthorized file uploads exceeding size limits, uploads to arbitrary object keys, and content-type spoofing, potentially leading to storage exhaustion, unauthorized data access, and security bypasses. Version 1.0.0-alpha.83 fixes the issue.
+</code>
+
+- [nikeee/CVE-2026-27607](https://github.com/nikeee/CVE-2026-27607)
+
+### CVE-2026-27639 (2026-02-25)
+
+<code>Mercator is an open source web application designed to enable mapping of information systems. A stored Cross-Site Scripting (XSS) vulnerability exists in Mercator prior to version 2026.02.22 due to the use of unescaped Blade directives (`{!! !!}`) in display templates. An authenticated user with the User role can inject arbitrary JavaScript payloads into fields such as &quot;contact point&quot; when creating or editing entities. The payload is then executed in the browser of any user who views the affected page, including administrators. Version 2026.02.22 fixes the vulnerability.
+</code>
+
+- [hadhub/CVE-2026-27639-Mercator-XSS](https://github.com/hadhub/CVE-2026-27639-Mercator-XSS)
 
 
 ## 2025
@@ -1290,7 +1318,11 @@
 ### CVE-2025-1234
 - [SimoesCTT/CVE-2025-1234-RSA-Key-Validation-Bypass](https://github.com/SimoesCTT/CVE-2025-1234-RSA-Key-Validation-Bypass)
 
-### CVE-2025-1242
+### CVE-2025-1242 (2026-02-25)
+
+<code>The administrative credentials can be extracted through application API responses, mobile application reverse engineering, and device firmware reverse engineering. The exposure may result in an attacker gaining  full administrative access to the Gardyn IoT Hub exposing connected devices to malicious control.
+</code>
+
 - [MichaelAdamGroberman/ICSA-26-055-03](https://github.com/MichaelAdamGroberman/ICSA-26-055-03)
 
 ### CVE-2025-1302 (2025-02-15)
@@ -3644,7 +3676,7 @@
 
 ### CVE-2025-15467 (2026-01-27)
 
-<code>Issue summary: Parsing CMS AuthEnvelopedData message with maliciously\ncrafted AEAD parameters can trigger a stack buffer overflow.\n\nImpact summary: A stack buffer overflow may lead to a crash, causing Denial\nof Service, or potentially remote code execution.\n\nWhen parsing CMS AuthEnvelopedData structures that use AEAD ciphers such as\nAES-GCM, the IV (Initialization Vector) encoded in the ASN.1 parameters is\ncopied into a fixed-size stack buffer without verifying that its length fits\nthe destination. An attacker can supply a crafted CMS message with an\noversized IV, causing a stack-based out-of-bounds write before any\nauthentication or tag verification occurs.\n\nApplications and services that parse untrusted CMS or PKCS#7 content using\nAEAD ciphers (e.g., S/MIME AuthEnvelopedData with AES-GCM) are vulnerable.\nBecause the overflow occurs prior to authentication, no valid key material\nis required to trigger it. While exploitability to remote code execution\ndepends on platform and toolchain mitigations, the stack-based write\nprimitive represents a severe risk.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the CMS implementation is outside the OpenSSL FIPS module\nboundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3 and 3.0 are vulnerable to this issue.\n\nOpenSSL 1.1.1 and 1.0.2 are not affected by this issue.
+<code>Issue summary: Parsing CMS AuthEnvelopedData or EnvelopedData message with\nmaliciously crafted AEAD parameters can trigger a stack buffer overflow.\n\nImpact summary: A stack buffer overflow may lead to a crash, causing Denial\nof Service, or potentially remote code execution.\n\nWhen parsing CMS (Auth)EnvelopedData structures that use AEAD ciphers such as\nAES-GCM, the IV (Initialization Vector) encoded in the ASN.1 parameters is\ncopied into a fixed-size stack buffer without verifying that its length fits\nthe destination. An attacker can supply a crafted CMS message with an\noversized IV, causing a stack-based out-of-bounds write before any\nauthentication or tag verification occurs.\n\nApplications and services that parse untrusted CMS or PKCS#7 content using\nAEAD ciphers (e.g., S/MIME (Auth)EnvelopedData with AES-GCM) are vulnerable.\nBecause the overflow occurs prior to authentication, no valid key material\nis required to trigger it. While exploitability to remote code execution\ndepends on platform and toolchain mitigations, the stack-based write\nprimitive represents a severe risk.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the CMS implementation is outside the OpenSSL FIPS module\nboundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3 and 3.0 are vulnerable to this issue.\n\nOpenSSL 1.1.1 and 1.0.2 are not affected by this issue.
 </code>
 
 - [balgan/CVE-2025-15467](https://github.com/balgan/CVE-2025-15467)
@@ -5225,7 +5257,7 @@
 
 ### CVE-2025-29628 (2025-07-25)
 
-<code>An issue in Gardyn 4 allows a remote attacker to obtain sensitive information and execute arbitrary code via a request
+<code>A Gardyn Azure IoT Hub connection string is downloaded over an insecure HTTP connection in Gardyn Home Kit firmware before master.619, Home Kit Mobile Application before 2.11.0, and Home Kit Cloud API before 2.12.2026 leaving the string vulnerable to interception and modification through a Man-in-the-Middle attack. This may result in the attacker capturing device credentials or taking control of vulnerable home kits.
 </code>
 
 - [kristof-mattei/gardyn-hack](https://github.com/kristof-mattei/gardyn-hack)
@@ -6293,11 +6325,9 @@
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nposix-cpu-timers: fix race between handle_posix_cpu_timers() and posix_cpu_timer_del()\n\nIf an exiting non-autoreaping task has already passed exit_notify() and\ncalls handle_posix_cpu_timers() from IRQ, it can be reaped by its parent\nor debugger right after unlock_task_sighand().\n\nIf a concurrent posix_cpu_timer_del() runs at that moment, it won't be\nable to detect timer-&gt;it.cpu.firing != 0: cpu_timer_task_rcu() and/or\nlock_task_sighand() will fail.\n\nAdd the tsk-&gt;exit_state check into run_posix_cpu_timers() to fix this.\n\nThis fix is not needed if CONFIG_POSIX_CPU_TIMERS_TASK_WORK=y, because\nexit_task_work() is called before exit_notify(). But the check still\nmakes sense, task_work_add(&amp;tsk-&gt;posix_cputimers_work.work) will fail\nanyway in this case.
 </code>
 
-- [Soikoth3010/chronomaly](https://github.com/Soikoth3010/chronomaly)
 - [farazsth98/poc-CVE-2025-38352](https://github.com/farazsth98/poc-CVE-2025-38352)
 - [farazsth98/chronomaly](https://github.com/farazsth98/chronomaly)
 - [Crime2/poc-CVE-2025-38352](https://github.com/Crime2/poc-CVE-2025-38352)
-- [Soikoth3010/soikoth3010.github.io](https://github.com/Soikoth3010/soikoth3010.github.io)
 - [jordelmir/Elysium-Vanguard-Sentinel-Audit](https://github.com/jordelmir/Elysium-Vanguard-Sentinel-Audit)
 
 ### CVE-2025-38501 (2025-08-16)
@@ -6392,6 +6422,13 @@
 </code>
 
 - [SpiralBL0CK/CVE-2023-1206-CVE-2025-40040-CVE-2024-49882](https://github.com/SpiralBL0CK/CVE-2023-1206-CVE-2025-40040-CVE-2024-49882)
+
+### CVE-2025-40552 (2026-01-28)
+
+<code>SolarWinds Web Help Desk was found to be susceptible to an authentication bypass vulnerability that if exploited, would allow a malicious actor to execute actions and methods that should be protected by authentication.
+</code>
+
+- [watchtowrlabs/watchTowr-vs-SolarWinds-WebHelpDesk-CVE-2025-40552-CVE-2025-40553](https://github.com/watchtowrlabs/watchTowr-vs-SolarWinds-WebHelpDesk-CVE-2025-40552-CVE-2025-40553)
 
 ### CVE-2025-40554 (2026-01-28)
 
@@ -7340,7 +7377,6 @@
 - [0xtensho/CVE-2025-49132-poc](https://github.com/0xtensho/CVE-2025-49132-poc)
 - [GRodolphe/CVE-2025-49132_poc](https://github.com/GRodolphe/CVE-2025-49132_poc)
 - [WebSafety-2tina/CVE-2025-49132](https://github.com/WebSafety-2tina/CVE-2025-49132)
-- [0xf3d0rq/CVE-2025-49132](https://github.com/0xf3d0rq/CVE-2025-49132)
 - [str1keboo/CVE-2025-49132](https://github.com/str1keboo/CVE-2025-49132)
 - [malw0re/CVE-2025-49132-Mods](https://github.com/malw0re/CVE-2025-49132-Mods)
 - [YoyoChaud/CVE-2025-49132](https://github.com/YoyoChaud/CVE-2025-49132)
@@ -7355,6 +7391,7 @@
 - [rippxsec/CVE-2025-49132](https://github.com/rippxsec/CVE-2025-49132)
 - [popyue/CVE-2025-49132](https://github.com/popyue/CVE-2025-49132)
 - [4nuxd/CVE-2025-49132](https://github.com/4nuxd/CVE-2025-49132)
+- [revasec/CVE-2025-49132](https://github.com/revasec/CVE-2025-49132)
 
 ### CVE-2025-49144 (2025-06-23)
 
@@ -8641,6 +8678,7 @@
 - [garux-sec/PoC-react2shell-CVE-2025-55182](https://github.com/garux-sec/PoC-react2shell-CVE-2025-55182)
 - [ancs21/react2shell-scanner-rust](https://github.com/ancs21/react2shell-scanner-rust)
 - [MoisesTapia/http-react2shell](https://github.com/MoisesTapia/http-react2shell)
+- [solidevil14/Suricata-Rule-for-Detecting-CVE-2025-55182](https://github.com/solidevil14/Suricata-Rule-for-Detecting-CVE-2025-55182)
 - [techgaun/cve-2025-55182-scanner](https://github.com/techgaun/cve-2025-55182-scanner)
 - [rsch-io/CVE-2025-55182-React2Shell](https://github.com/rsch-io/CVE-2025-55182-React2Shell)
 - [ilixm/PoC-RCE-CVE-2025-55182](https://github.com/ilixm/PoC-RCE-CVE-2025-55182)
@@ -8809,7 +8847,6 @@
 - [termireum/react2shell](https://github.com/termireum/react2shell)
 - [Least-Significant-Bit/CVE-2025-55182](https://github.com/Least-Significant-Bit/CVE-2025-55182)
 - [faisha1311/React2Shell-CVE-2025-55182-TryHackMe](https://github.com/faisha1311/React2Shell-CVE-2025-55182-TryHackMe)
-- [fBUZk2BH/RSC-Detect-CVE-2025-55182](https://github.com/fBUZk2BH/RSC-Detect-CVE-2025-55182)
 - [BBD-YZZ/CVE-2025-55182](https://github.com/BBD-YZZ/CVE-2025-55182)
 - [Vladjrfhfg/React-site-CVE-2025-55182](https://github.com/Vladjrfhfg/React-site-CVE-2025-55182)
 - [Namsom007/CVE-2025-55182-Exploit](https://github.com/Namsom007/CVE-2025-55182-Exploit)
@@ -8830,6 +8867,9 @@
 - [DeDnY/CVE-2025-55182-in-docker](https://github.com/DeDnY/CVE-2025-55182-in-docker)
 - [H4R335HR/reactshell](https://github.com/H4R335HR/reactshell)
 - [zaryouhashraf/CVE-2025-55182](https://github.com/zaryouhashraf/CVE-2025-55182)
+- [Yusril-git/React2Shell-Wazuh-Detection](https://github.com/Yusril-git/React2Shell-Wazuh-Detection)
+- [alptexans/RSC-Detect-CVE-2025-55182](https://github.com/alptexans/RSC-Detect-CVE-2025-55182)
+- [revasec/CVE-2025-55182-Interactive-mode](https://github.com/revasec/CVE-2025-55182-Interactive-mode)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -9798,7 +9838,11 @@
 - [baktistr/cve-2025-62726-poc](https://github.com/baktistr/cve-2025-62726-poc)
 - [Muzyli/cve-2025-62726-malicious-repo](https://github.com/Muzyli/cve-2025-62726-malicious-repo)
 
-### CVE-2025-62878
+### CVE-2025-62878 (2026-02-25)
+
+<code>A malicious user can manipulate the parameters.pathPattern to create PersistentVolumes in arbitrary locations on the host node, potentially overwriting sensitive files or gaining access to unintended directories.
+</code>
+
 - [kinokopio/CVE-2025-62878](https://github.com/kinokopio/CVE-2025-62878)
 
 ### CVE-2025-62950 (2025-11-06)
@@ -10739,6 +10783,9 @@
 
 - [n132/CVE-2025-68325](https://github.com/n132/CVE-2025-68325)
 
+### CVE-2025-68413
+- [Marshall-Hallenbeck/CVE_2025_68413-4](https://github.com/Marshall-Hallenbeck/CVE_2025_68413-4)
+
 ### CVE-2025-68428 (2026-01-05)
 
 <code>jsPDF is a library to generate PDFs in JavaScript. Prior to version 4.0.0, user control of the first argument of the loadFile method in the node.js build allows local file inclusion/path traversal. If given the possibility to pass unsanitized paths to the loadFile method, a user can retrieve file contents of arbitrary files in the local file system the node process is running in. The file contents are included verbatim in the generated PDFs. Other affected methods are `addImage`, `html`, and `addFont`. Only the node.js builds of the library are affected, namely the `dist/jspdf.node.js` and `dist/jspdf.node.min.js` files. The vulnerability has been fixed in jsPDF@4.0.0. This version restricts file system access per default. This semver-major update does not introduce other breaking changes. Some workarounds areavailable. With recent node versions, jsPDF recommends using the `--permission` flag in production. The feature was introduced experimentally in v20.0.0 and is stable since v22.13.0/v23.5.0/v24.0.0. For older node versions, sanitize user-provided paths before passing them to jsPDF.
@@ -11008,6 +11055,13 @@
 </code>
 
 - [cypherdavy/CVE-2025-69906-Monstra-CMS-3.0.4-Arbitrary-File-Upload-to-RCE](https://github.com/cypherdavy/CVE-2025-69906-Monstra-CMS-3.0.4-Arbitrary-File-Upload-to-RCE)
+
+### CVE-2025-69985 (2026-02-24)
+
+<code>FUXA 1.2.8 and prior contains an Authentication Bypass vulnerability leading to Remote Code Execution (RCE). The vulnerability exists in the server/api/jwt-helper.js middleware, which improperly trusts the HTTP &quot;Referer&quot; header to validate internal requests. A remote unauthenticated attacker can bypass JWT authentication by spoofing the Referer header to match the server's host. Successful exploitation allows the attacker to access the protected /api/runscript endpoint and execute arbitrary Node.js code on the server.
+</code>
+
+- [joshuavanderpoll/CVE-2025-69985](https://github.com/joshuavanderpoll/CVE-2025-69985)
 
 ### CVE-2025-70368 (2026-01-26)
 
@@ -11545,7 +11599,7 @@
 
 ### CVE-2024-1212 (2024-02-21)
 
-<code>Unauthenticated remote attackers can access the system through the LoadMaster management interface, enabling arbitrary system command execution.\n\n\n
+<code>Unauthenticated remote attackers can access the system through the LoadMaster management interface, enabling arbitrary system command execution.
 </code>
 
 - [Chocapikk/CVE-2024-1212](https://github.com/Chocapikk/CVE-2024-1212)
@@ -11665,7 +11719,7 @@
 
 ### CVE-2024-1709 (2024-02-21)
 
-<code>ConnectWise ScreenConnect 23.9.7 and prior are affected by an Authentication Bypass Using an Alternate Path or Channel\n\n vulnerability, which may allow an attacker direct access to confidential information or \n\ncritical systems.\n\n
+<code>ConnectWise ScreenConnect 23.9.7 and prior are affected by an Authentication Bypass Using an Alternate Path or Channel\n\n vulnerability, which may allow an attacker direct access to confidential information or \n\ncritical systems.
 </code>
 
 - [W01fh4cker/ScreenConnect-AuthBypass-RCE](https://github.com/W01fh4cker/ScreenConnect-AuthBypass-RCE)
@@ -12183,7 +12237,7 @@
 
 ### CVE-2024-4040 (2024-04-22)
 
-<code>A server side template injection vulnerability in CrushFTP in all versions before 10.7.1 and 11.1.0 on all platforms allows unauthenticated remote attackers to read files from the filesystem outside of the VFS Sandbox, bypass authentication to gain administrative access, and perform remote code execution on the server.\n
+<code>A server side template injection vulnerability in CrushFTP in all versions before 10.7.1 and 11.1.0 on all platforms allows unauthenticated remote attackers to read files from the filesystem outside of the VFS Sandbox, bypass authentication to gain administrative access, and perform remote code execution on the server.
 </code>
 
 - [airbus-cert/CVE-2024-4040](https://github.com/airbus-cert/CVE-2024-4040)
@@ -16577,7 +16631,7 @@
 
 ### CVE-2024-28995 (2024-06-06)
 
-<code>\n\n\n\n\n\n\n\n\n\n\n\nSolarWinds Serv-U was susceptible to a directory transversal vulnerability that would allow access to read sensitive files on the host machine.    \n\n\n\n\n\n\n\n
+<code>SolarWinds Serv-U was susceptible to a directory transversal vulnerability that would allow access to read sensitive files on the host machine.
 </code>
 
 - [demoAlitalia/CVE-2024-28995](https://github.com/demoAlitalia/CVE-2024-28995)
@@ -24366,7 +24420,7 @@
 
 ### CVE-2023-22515 (2023-10-04)
 
-<code>Atlassian has been made aware of an issue reported by a handful of customers where external attackers may have exploited a previously unknown vulnerability in publicly accessible Confluence Data Center and Server instances to create unauthorized Confluence administrator accounts and access Confluence instances. \r\n\r\nAtlassian Cloud sites are not affected by this vulnerability. If your Confluence site is accessed via an atlassian.net domain, it is hosted by Atlassian and is not vulnerable to this issue. 
+<code>Atlassian has been made aware of an issue reported by a handful of customers where external attackers may have exploited a previously unknown vulnerability in publicly accessible Confluence Data Center and Server instances to create unauthorized Confluence administrator accounts and access Confluence instances. \r\n\r\nAtlassian Cloud sites are not affected by this vulnerability. If your Confluence site is accessed via an atlassian.net domain, it is hosted by Atlassian and is not vulnerable to this issue.
 </code>
 
 - [ErikWynter/CVE-2023-22515-Scan](https://github.com/ErikWynter/CVE-2023-22515-Scan)
@@ -24827,7 +24881,7 @@
 
 ### CVE-2023-24489 (2023-07-10)
 
-<code>\nA vulnerability has been discovered in the customer-managed ShareFile storage zones controller which, if exploited, could allow an unauthenticated attacker to remotely compromise the customer-managed ShareFile storage zones controller.
+<code>A vulnerability has been discovered in the customer-managed ShareFile storage zones controller which, if exploited, could allow an unauthenticated attacker to remotely compromise the customer-managed ShareFile storage zones controller.
 </code>
 
 - [adhikara13/CVE-2023-24489-ShareFile](https://github.com/adhikara13/CVE-2023-24489-ShareFile)
@@ -25394,7 +25448,7 @@
 
 ### CVE-2023-27524 (2023-04-24)
 
-<code>Session Validation attacks in Apache Superset versions up to and including 2.0.1. Installations that have not altered the default configured SECRET_KEY according to installation instructions allow for an attacker to authenticate and access unauthorized resources. This does not affect Superset administrators who have changed the default value for SECRET_KEY config.\n\nAll superset installations should always set a unique secure random SECRET_KEY. Your SECRET_KEY is used to securely sign all session cookies and encrypting sensitive information on the database.\nAdd a strong SECRET_KEY to your `superset_config.py` file like:\n\nSECRET_KEY = &lt;YOUR_OWN_RANDOM_GENERATED_SECRET_KEY&gt;\n\nAlternatively you can set it with `SUPERSET_SECRET_KEY` environment variable.\n
+<code>Session Validation attacks in Apache Superset versions up to and including 2.0.1. Installations that have not altered the default configured SECRET_KEY according to installation instructions allow for an attacker to authenticate and access unauthorized resources. This does not affect Superset administrators who have changed the default value for SECRET_KEY config.\n\nAll superset installations should always set a unique secure random SECRET_KEY. Your SECRET_KEY is used to securely sign all session cookies and encrypting sensitive information on the database.\nAdd a strong SECRET_KEY to your `superset_config.py` file like:\n\nSECRET_KEY = &lt;YOUR_OWN_RANDOM_GENERATED_SECRET_KEY&gt;\n\nAlternatively you can set it with `SUPERSET_SECRET_KEY` environment variable.
 </code>
 
 - [horizon3ai/CVE-2023-27524](https://github.com/horizon3ai/CVE-2023-27524)
@@ -25641,7 +25695,7 @@
 
 ### CVE-2023-28434 (2023-03-22)
 
-<code>Minio is a Multi-Cloud Object Storage framework. Prior to RELEASE.2023-03-20T20-16-18Z, an attacker can use crafted requests to bypass metadata bucket name checking and put an object into any bucket while processing `PostPolicyBucket`. To carry out this attack, the attacker requires credentials with `arn:aws:s3:::*` permission, as well as enabled Console API access. This issue has been patched in RELEASE.2023-03-20T20-16-18Z. As a workaround, enable browser API access and turn off `MINIO_BROWSER=off`. \n
+<code>Minio is a Multi-Cloud Object Storage framework. Prior to RELEASE.2023-03-20T20-16-18Z, an attacker can use crafted requests to bypass metadata bucket name checking and put an object into any bucket while processing `PostPolicyBucket`. To carry out this attack, the attacker requires credentials with `arn:aws:s3:::*` permission, as well as enabled Console API access. This issue has been patched in RELEASE.2023-03-20T20-16-18Z. As a workaround, enable browser API access and turn off `MINIO_BROWSER=off`.
 </code>
 
 - [AbelChe/evil_minio](https://github.com/AbelChe/evil_minio)
@@ -27716,7 +27770,7 @@
 
 ### CVE-2023-36846 (2023-08-17)
 
-<code>A Missing Authentication for Critical Function vulnerability in Juniper Networks Junos OS on SRX Series allows an unauthenticated, network-based attacker to cause limited impact to the file system integrity.\n\n\n\nWith a specific request to user.php that doesn't require authentication an attacker is able to upload arbitrary files via J-Web, leading to a loss of \n\nintegrity\n\nfor a certain \n\npart of the file system, which may allow chaining to other vulnerabilities.\n\n\nThis issue affects Juniper Networks Junos OS on SRX Series:\n\n\n\n  *  All versions prior to 20.4R3-S8;\n  *  21.1 versions 21.1R1 and later;\n  *  21.2 versions prior to 21.2R3-S6;\n  *  21.3 versions \n\nprior to \n\n 21.3R3-S5;\n  *  21.4 versions \n\nprior to \n\n21.4R3-S5;\n  *  22.1 versions \n\nprior to \n\n22.1R3-S3;\n  *  22.2 versions \n\nprior to \n\n22.2R3-S2;\n  *  22.3 versions \n\nprior to \n\n22.3R2-S2, 22.3R3;\n  *  22.4 versions \n\nprior to \n\n22.4R2-S1, 22.4R3.\n\n\n\n\n
+<code>A Missing Authentication for Critical Function vulnerability in Juniper Networks Junos OS on SRX Series allows an unauthenticated, network-based attacker to cause limited impact to the file system integrity.\n\n\n\nWith a specific request to user.php that doesn't require authentication an attacker is able to upload arbitrary files via J-Web, leading to a loss of \n\nintegrity\n\nfor a certain \n\npart of the file system, which may allow chaining to other vulnerabilities.\n\n\nThis issue affects Juniper Networks Junos OS on SRX Series:\n\n\n\n  *  All versions prior to 20.4R3-S8;\n  *  21.1 versions 21.1R1 and later;\n  *  21.2 versions prior to 21.2R3-S6;\n  *  21.3 versions \n\nprior to \n\n 21.3R3-S5;\n  *  21.4 versions \n\nprior to \n\n21.4R3-S5;\n  *  22.1 versions \n\nprior to \n\n22.1R3-S3;\n  *  22.2 versions \n\nprior to \n\n22.2R3-S2;\n  *  22.3 versions \n\nprior to \n\n22.3R2-S2, 22.3R3;\n  *  22.4 versions \n\nprior to \n\n22.4R2-S1, 22.4R3.
 </code>
 
 - [Chocapikk/CVE-2023-36846](https://github.com/Chocapikk/CVE-2023-36846)
@@ -29121,6 +29175,7 @@
 - [MKIRAHMET/PoC-2023-43208](https://github.com/MKIRAHMET/PoC-2023-43208)
 - [coreraw/Mirth-Connect-CVE-2023-43208](https://github.com/coreraw/Mirth-Connect-CVE-2023-43208)
 - [D3m0nicw0lf/CVE-2023-43208](https://github.com/D3m0nicw0lf/CVE-2023-43208)
+- [predyy/CVE-2023-43208](https://github.com/predyy/CVE-2023-43208)
 
 ### CVE-2023-43261 (2023-10-04)
 
@@ -31236,6 +31291,7 @@
 - [veritas501/CVE-2022-0185-PipeVersion](https://github.com/veritas501/CVE-2022-0185-PipeVersion)
 - [featherL/CVE-2022-0185-exploit](https://github.com/featherL/CVE-2022-0185-exploit)
 - [dcheng69/CVE-2022-0185-Case-Study](https://github.com/dcheng69/CVE-2022-0185-Case-Study)
+- [sandesh9978/CVE-2022-0185-Analysis-and-Exploit](https://github.com/sandesh9978/CVE-2022-0185-Analysis-and-Exploit)
 
 ### CVE-2022-0219 (2022-01-20)
 
@@ -39638,6 +39694,7 @@
 - [spideyctf/UbuntuTouchSecurityVAPTReport](https://github.com/spideyctf/UbuntuTouchSecurityVAPTReport)
 - [cyberx-1/OverlayFS-CVE-2021-3493](https://github.com/cyberx-1/OverlayFS-CVE-2021-3493)
 - [George-Yanni/DeepRoot](https://github.com/George-Yanni/DeepRoot)
+- [Psychopath-Traveler/CVE-2021-3493](https://github.com/Psychopath-Traveler/CVE-2021-3493)
 
 ### CVE-2021-3516 (2021-06-01)
 
@@ -39798,7 +39855,6 @@
 - [galoget/PwnKit-CVE-2021-4034](https://github.com/galoget/PwnKit-CVE-2021-4034)
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
-- [tzwlhack/CVE-2021-4034](https://github.com/tzwlhack/CVE-2021-4034)
 - [jcatala/f_poc_cve-2021-4034](https://github.com/jcatala/f_poc_cve-2021-4034)
 - [Nosferatuvjr/PwnKit](https://github.com/Nosferatuvjr/PwnKit)
 - [TotallyNotAHaxxer/CVE-2021-4034](https://github.com/TotallyNotAHaxxer/CVE-2021-4034)
@@ -40541,6 +40597,7 @@
 - [pashayogi/CVE-2021-22555](https://github.com/pashayogi/CVE-2021-22555)
 - [letsr00t/-2021-LOCALROOT-CVE-2021-22555](https://github.com/letsr00t/-2021-LOCALROOT-CVE-2021-22555)
 - [letsr00t/CVE-2021-22555](https://github.com/letsr00t/CVE-2021-22555)
+- [glutton-su/CVE-2021-22555](https://github.com/glutton-su/CVE-2021-22555)
 
 ### CVE-2021-22600 (2022-01-26)
 
@@ -40586,6 +40643,7 @@
 - [overgrowncarrot1/CVE-2021-22911](https://github.com/overgrowncarrot1/CVE-2021-22911)
 - [yoohhuu/Rocket-Chat-3.12.1-PoC-CVE-2021-22911-](https://github.com/yoohhuu/Rocket-Chat-3.12.1-PoC-CVE-2021-22911-)
 - [octodi/CVE-2021-22911](https://github.com/octodi/CVE-2021-22911)
+- [TeneBrae93/RocketChat-NoSQLi-Chain-CVE-2021-22911](https://github.com/TeneBrae93/RocketChat-NoSQLi-Chain-CVE-2021-22911)
 
 ### CVE-2021-22924 (2021-08-05)
 
@@ -44794,7 +44852,6 @@
 - [snow0715/log4j-Scan-Burpsuite](https://github.com/snow0715/log4j-Scan-Burpsuite)
 - [Joefreedy/Log4j-Windows-Scanner](https://github.com/Joefreedy/Log4j-Windows-Scanner)
 - [Nanitor/log4fix](https://github.com/Nanitor/log4fix)
-- [Gyrfalc0n/scanlist-log4j](https://github.com/Gyrfalc0n/scanlist-log4j)
 - [korteke/log4shell-demo](https://github.com/korteke/log4shell-demo)
 - [recanavar/vuln_spring_log4j2](https://github.com/recanavar/vuln_spring_log4j2)
 - [DXC-StrikeForce/Burp-Log4j-HammerTime](https://github.com/DXC-StrikeForce/Burp-Log4j-HammerTime)
@@ -44984,7 +45041,6 @@
 <code>A code injection vulnerability in the Ivanti EPM Cloud Services Appliance (CSA) allows an unauthenticated user to execute arbitrary code with limited permissions (nobody).
 </code>
 
-- [jkana/CVE-2021-44529](https://github.com/jkana/CVE-2021-44529)
 - [jax7sec/CVE-2021-44529](https://github.com/jax7sec/CVE-2021-44529)
 
 ### CVE-2021-44582 (2022-06-10)
