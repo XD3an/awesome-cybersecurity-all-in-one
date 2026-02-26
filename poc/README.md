@@ -155,6 +155,13 @@
 
 - [ii4gsp/CVE-2026-1457](https://github.com/ii4gsp/CVE-2026-1457)
 
+### CVE-2026-1512 (2026-02-14)
+
+<code>The Essential Addons for Elementor – Popular Elementor Templates &amp; Widgets plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's Info Box widget in all versions up to, and including, 6.5.9 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+</code>
+
+- [nestorwheelock/wordpress-vulnerability-fix](https://github.com/nestorwheelock/wordpress-vulnerability-fix)
+
 ### CVE-2026-1529 (2026-02-09)
 
 <code>A flaw was found in Keycloak. An attacker can exploit this vulnerability by modifying the organization ID and target email within a legitimate invitation token's JSON Web Token (JWT) payload. This lack of cryptographic signature verification allows the attacker to successfully self-register into an unauthorized organization, leading to unauthorized access.
@@ -340,6 +347,7 @@
 - [SecureWithUmer/CVE-2026-20841](https://github.com/SecureWithUmer/CVE-2026-20841)
 - [hackfaiz/CVE-2026-20841-PoC](https://github.com/hackfaiz/CVE-2026-20841-PoC)
 - [EleniChristopoulou/PoC-CVE-2026-20841](https://github.com/EleniChristopoulou/PoC-CVE-2026-20841)
+- [404godd/CVE-2026-20841-PoC](https://github.com/404godd/CVE-2026-20841-PoC)
 
 ### CVE-2026-21436 (2026-01-01)
 
@@ -1452,7 +1460,6 @@
 - [Armand2002/Exploit-CVE-2025-1974-Lab](https://github.com/Armand2002/Exploit-CVE-2025-1974-Lab)
 - [BiiTts/POC-IngressNightmare-CVE-2025-1974](https://github.com/BiiTts/POC-IngressNightmare-CVE-2025-1974)
 - [iteride/CVE-2025-1974](https://github.com/iteride/CVE-2025-1974)
-- [I3r1h0n/IngressNightterror](https://github.com/I3r1h0n/IngressNightterror)
 - [gunyakit/CVE-2025-1974-PoC-exploit](https://github.com/gunyakit/CVE-2025-1974-PoC-exploit)
 - [BoianEduard/CVE-2025-1974](https://github.com/BoianEduard/CVE-2025-1974)
 
@@ -8753,6 +8760,7 @@
 - [sho-luv/React2Shell](https://github.com/sho-luv/React2Shell)
 - [h0tak88r/next88](https://github.com/h0tak88r/next88)
 - [TheStingR/ReactOOPS-WriteUp](https://github.com/TheStingR/ReactOOPS-WriteUp)
+- [mantvmass/react2shell](https://github.com/mantvmass/react2shell)
 - [MoLeft/React2Shell-Toolbox](https://github.com/MoLeft/React2Shell-Toolbox)
 - [Ya0h4cker/CVE-2025-55182](https://github.com/Ya0h4cker/CVE-2025-55182)
 - [Kugelbyte/React2Shell-Analysis](https://github.com/Kugelbyte/React2Shell-Analysis)
@@ -15360,6 +15368,7 @@
 - [verylazytech/CVE-2024-23692](https://github.com/verylazytech/CVE-2024-23692)
 - [NingXin2002/HFS2.3_poc](https://github.com/NingXin2002/HFS2.3_poc)
 - [999gawkboyy/CVE-2024-23692_Exploit](https://github.com/999gawkboyy/CVE-2024-23692_Exploit)
+- [wgetnz/hfs2](https://github.com/wgetnz/hfs2)
 
 ### CVE-2024-23700
 - [canyie/CVE-2024-23700](https://github.com/canyie/CVE-2024-23700)
@@ -31926,6 +31935,7 @@
 - [1fabunicorn/SnakeYAML-CVE-2022-1471-POC](https://github.com/1fabunicorn/SnakeYAML-CVE-2022-1471-POC)
 - [falconkei/snakeyaml_cve_poc](https://github.com/falconkei/snakeyaml_cve_poc)
 - [seal-sec-demo-2/yaml-payload](https://github.com/seal-sec-demo-2/yaml-payload)
+- [jelee2555/CVE-2022-1471-attacker](https://github.com/jelee2555/CVE-2022-1471-attacker)
 
 ### CVE-2022-1565 (2022-07-18)
 
@@ -36486,7 +36496,7 @@
 <code>rpc.py through 0.6.0 allows Remote Code Execution because an unpickle occurs when the &quot;serializer: pickle&quot; HTTP header is sent. In other words, although JSON (not Pickle) is the default data format, an unauthenticated client can cause the data to be processed with unpickle.
 </code>
 
-- [fuzzlove/CVE-2022-35411](https://github.com/fuzzlove/CVE-2022-35411)
+- [Neo-okami/CVE-2022-35411](https://github.com/Neo-okami/CVE-2022-35411)
 - [CSpanias/rpc-rce.py](https://github.com/CSpanias/rpc-rce.py)
 
 ### CVE-2022-35416 (2022-07-11)
@@ -39694,7 +39704,6 @@
 - [spideyctf/UbuntuTouchSecurityVAPTReport](https://github.com/spideyctf/UbuntuTouchSecurityVAPTReport)
 - [cyberx-1/OverlayFS-CVE-2021-3493](https://github.com/cyberx-1/OverlayFS-CVE-2021-3493)
 - [George-Yanni/DeepRoot](https://github.com/George-Yanni/DeepRoot)
-- [Psychopath-Traveler/CVE-2021-3493](https://github.com/Psychopath-Traveler/CVE-2021-3493)
 
 ### CVE-2021-3516 (2021-06-01)
 
