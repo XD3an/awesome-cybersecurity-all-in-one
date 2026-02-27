@@ -457,6 +457,13 @@
 
 - [Leonideath/Exploit-LPE-CVE-2026-21721](https://github.com/Leonideath/Exploit-LPE-CVE-2026-21721)
 
+### CVE-2026-21852 (2026-01-21)
+
+<code>Claude Code is an agentic coding tool. Prior to version 2.0.65, vulnerability in Claude Code's project-load flow allowed malicious repositories to exfiltrate data including Anthropic API keys before users confirmed trust. An attacker-controlled repository could include a settings file that sets ANTHROPIC_BASE_URL to an attacker-controlled endpoint and when the repository was opened, Claude Code would read the configuration and immediately issue API requests before showing the trust prompt, potentially leaking the user's API keys. Users on standard Claude Code auto-update have received this fix already. Users performing manual updates are advised to update to version 2.0.65, which contains a patch, or to the latest version.
+</code>
+
+- [atiilla/CVE-2026-21852-PoC](https://github.com/atiilla/CVE-2026-21852-PoC)
+
 ### CVE-2026-21858 (2026-01-07)
 
 <code>n8n is an open source workflow automation platform. Versions starting with 1.65.0 and below 1.121.0 enable an attacker to access files on the underlying server through execution of certain form-based workflows. A vulnerable workflow could grant access to an unauthenticated remote attacker, resulting in exposure of sensitive information stored on the system and may enable further compromise depending on deployment configuration and workflow usage. This issue is fixed in version 1.121.0.
@@ -1388,6 +1395,7 @@
 
 - [EQSTLab/CVE-2025-1302](https://github.com/EQSTLab/CVE-2025-1302)
 - [abrewer251/CVE-2025-1302_jsonpath-plus_RCE](https://github.com/abrewer251/CVE-2025-1302_jsonpath-plus_RCE)
+- [dbwlsdnr95/CVE-2025-1302](https://github.com/dbwlsdnr95/CVE-2025-1302)
 
 ### CVE-2025-1304 (2025-05-01)
 
@@ -6427,6 +6435,13 @@
 </code>
 
 - [Nxploited/CVE-2025-39436](https://github.com/Nxploited/CVE-2025-39436)
+
+### CVE-2025-39459 (2025-05-19)
+
+<code>Incorrect Privilege Assignment vulnerability in Contempo Themes Real Estate 7 allows Privilege Escalation.This issue affects Real Estate 7: from n/a through 3.5.2.
+</code>
+
+- [Nxploited/CVE-2025-39459](https://github.com/Nxploited/CVE-2025-39459)
 
 ### CVE-2025-39507 (2025-05-16)
 
@@ -27078,6 +27093,13 @@
 
 - [rodolfomarianocy/Unauthenticated-RCE-FUXA-CVE-2023-33831](https://github.com/rodolfomarianocy/Unauthenticated-RCE-FUXA-CVE-2023-33831)
 - [btar1gan/exploit_CVE-2023-33831](https://github.com/btar1gan/exploit_CVE-2023-33831)
+
+### CVE-2023-33869 (2023-06-20)
+
+<code>\nEnphase Envoy versions D7.0.88 is vulnerable to a command injection exploit that may allow an attacker to execute root commands.\n\n\n\n\n
+</code>
+
+- [NAP3XD/CVE-2023-33869-RCE-PoC](https://github.com/NAP3XD/CVE-2023-33869-RCE-PoC)
 
 ### CVE-2023-33902 (2023-07-12)
 
