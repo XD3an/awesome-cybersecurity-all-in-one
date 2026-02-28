@@ -170,6 +170,13 @@
 
 - [Z3YR0xX/CVE-2026-1560-Authenticated-Remote-Code-Execution-in-Lazy-Blocks-4.2.0](https://github.com/Z3YR0xX/CVE-2026-1560-Authenticated-Remote-Code-Execution-in-Lazy-Blocks-4.2.0)
 
+### CVE-2026-1581 (2026-02-19)
+
+<code>The wpForo Forum plugin for WordPress is vulnerable to time-based SQL Injection via the 'wpfob' parameter in all versions up to, and including, 2.4.14 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.
+</code>
+
+- [rootdirective-sec/CVE-2026-1581-Analysis-Lab](https://github.com/rootdirective-sec/CVE-2026-1581-Analysis-Lab)
+
 ### CVE-2026-1729 (2026-02-12)
 
 <code>The AdForest theme for WordPress is vulnerable to authentication bypass in all versions up to, and including, 6.0.12. This is due to the plugin not properly verifying a user's identity prior to authenticating them through the 'sb_login_user_with_otp_fun' function. This makes it possible for unauthenticated attackers to log in as arbitrary users, including administrators.
@@ -242,6 +249,13 @@
 
 ### CVE-2026-2461
 - [destiny-creates/CVE-2026-2461-poc](https://github.com/destiny-creates/CVE-2026-2461-poc)
+
+### CVE-2026-2472 (2026-02-20)
+
+<code>Stored Cross-Site Scripting (XSS) in the _genai/_evals_visualization component of Google Cloud Vertex AI SDK (google-cloud-aiplatform) versions from 1.98.0 up to (but not including) 1.131.0 allows an unauthenticated remote attacker to execute arbitrary JavaScript in a victim's Jupyter or Colab environment via injecting script escape sequences into model evaluation results or dataset JSON data.
+</code>
+
+- [JoshuaProvoste/CVE-2026-2472-Vertex-AI-SDK-Google-Cloud](https://github.com/JoshuaProvoste/CVE-2026-2472-Vertex-AI-SDK-Google-Cloud)
 
 ### CVE-2026-2636 (2026-02-25)
 
@@ -463,6 +477,7 @@
 </code>
 
 - [atiilla/CVE-2026-21852-PoC](https://github.com/atiilla/CVE-2026-21852-PoC)
+- [M0broot/CVE-Archive](https://github.com/M0broot/CVE-Archive)
 
 ### CVE-2026-21858 (2026-01-07)
 
@@ -1090,6 +1105,9 @@
 
 - [Rickidevs/CVE-2026-26717](https://github.com/Rickidevs/CVE-2026-26717)
 
+### CVE-2026-26720
+- [dillonkirsch/CVE-2026-26720-Twenty-RCE](https://github.com/dillonkirsch/CVE-2026-26720-Twenty-RCE)
+
 ### CVE-2026-26744 (2026-02-19)
 
 <code>A user enumeration vulnerability exists in FormaLMS 4.1.18 and below in the password recovery functionality accessible via the /lostpwd endpoint. The application returns different error messages for valid and invalid usernames allowing an unauthenticated attacker to determine which usernames are registered in the system through observable response discrepancy.
@@ -1179,10 +1197,24 @@
 
 ### CVE-2026-27831 (2026-02-26)
 
-<code>rldns is an open source DNS server. Version 2.3 has a heap-based out-of-bounds read that leads to denial of service. Version 1.4 contains a patch for the issue.
+<code>rldns is an open source DNS server. Version 1.3 has a heap-based out-of-bounds read that leads to denial of service. Version 1.4 contains a patch for the issue.
 </code>
 
 - [bluedragonsecurity/CVE-2026-27831-POC](https://github.com/bluedragonsecurity/CVE-2026-27831-POC)
+
+### CVE-2026-28207 (2026-02-26)
+
+<code>Zen C is a systems programming language that compiles to human-readable GNU C/C11. Prior to version 0.4.2, a command injection vulnerability (CWE-78) in the Zen C compiler allows local attackers to execute arbitrary shell commands by providing a specially crafted output filename via the `-o` command-line argument. The vulnerability existed in the `main` application logic (specifically in `src/main.c`), where the compiler constructed a shell command string to invoke the backend C compiler. This command string was built by concatenating various arguments, including the user-controlled output filename, and was subsequently executed using the `system()` function. Because `system()` invokes a shell to parse and execute the command, shell metacharacters within the output filename were interpreted by the shell, leading to arbitrary command execution. An attacker who can influence the command-line arguments passed to the `zc` compiler (like through a build script or a CI/CD pipeline configuration) can execute arbitrary commands with the privileges of the user running the compiler. The vulnerability has been fixed in version 0.4.2 by removing `system()` calls, implementing `ArgList`, and internal argument handling. Users are advised to update to Zen C version v0.4.2 or later.
+</code>
+
+- [F0ndueSav0yarde/CVE-2026-28207](https://github.com/F0ndueSav0yarde/CVE-2026-28207)
+
+### CVE-2026-28372 (2026-02-27)
+
+<code>telnetd in GNU inetutils through 2.7 allows privilege escalation that can be exploited by abusing systemd service credentials support added to the login(1) implementation of util-linux in release 2.40. This is related to client control over the CREDENTIALS_DIRECTORY environment variable, and requires an unprivileged local user to create a login.noauth file.
+</code>
+
+- [mbanyamer/CVE-2026-28372-GNU-inetutils-telnetd-Privilege-Escalation](https://github.com/mbanyamer/CVE-2026-28372-GNU-inetutils-telnetd-Privilege-Escalation)
 
 
 ## 2025
@@ -1387,6 +1419,7 @@
 </code>
 
 - [MichaelAdamGroberman/ICSA-26-055-03](https://github.com/MichaelAdamGroberman/ICSA-26-055-03)
+- [MichaelAdamGroberman/CVE-2025-1242](https://github.com/MichaelAdamGroberman/CVE-2025-1242)
 
 ### CVE-2025-1302 (2025-02-15)
 
@@ -3232,6 +3265,9 @@
 </code>
 
 - [AdityaBhatt3010/CVE-2025-10585-The-Chrome-V8-Zero-Day](https://github.com/AdityaBhatt3010/CVE-2025-10585-The-Chrome-V8-Zero-Day)
+
+### CVE-2025-10681
+- [MichaelAdamGroberman/CVE-2025-10681](https://github.com/MichaelAdamGroberman/CVE-2025-10681)
 
 ### CVE-2025-10720 (2025-10-13)
 
@@ -11155,6 +11191,12 @@
 
 - [joshuavanderpoll/CVE-2025-69985](https://github.com/joshuavanderpoll/CVE-2025-69985)
 
+### CVE-2025-70341
+- [malvector/CVE-2025-70341](https://github.com/malvector/CVE-2025-70341)
+
+### CVE-2025-70342
+- [malvector/CVE-2025-70342](https://github.com/malvector/CVE-2025-70342)
+
 ### CVE-2025-70368 (2026-01-26)
 
 <code>Worklenz version 2.1.5 contains a Stored Cross-Site Scripting (XSS) vulnerability in the Project Updates feature. An attacker can submit a malicious payload in the Updates text field which is then rendered in the reporting view without proper sanitization. Malicious JavaScript may be executed in a victim's browser when they browse to the page containing the vulnerable field.
@@ -17957,6 +17999,7 @@
 - [ro0tmylove/CVE-2024-35250-BOF](https://github.com/ro0tmylove/CVE-2024-35250-BOF)
 - [yinsel/CVE-2024-35250-BOF](https://github.com/yinsel/CVE-2024-35250-BOF)
 - [0xROOTPLS/GiveMeKernel](https://github.com/0xROOTPLS/GiveMeKernel)
+- [xvalegendary/HVCIPwned](https://github.com/xvalegendary/HVCIPwned)
 
 ### CVE-2024-35286 (2024-10-21)
 
@@ -24868,6 +24911,13 @@
 
 - [bruno-1337/CVE-2023-23946-POC](https://github.com/bruno-1337/CVE-2023-23946-POC)
 
+### CVE-2023-24012 (2025-01-09)
+
+<code>An attacker can arbitrarily craft malicious DDS Participants (or ROS 2 Nodes) with valid certificates to compromise and get full control of the attacked secure DDS databus system by exploiting vulnerable attributes in the configuration of PKCS#7 certificate’s validation. This is caused by a non-compliant implementation of permission document verification used by some DDS vendors. Specifically, an improper use of the OpenSSL PKCS7_verify function used to validate S/MIME signatures.
+</code>
+
+- [SafeLock-D2E/Quiksand-CVE-2023-24012](https://github.com/SafeLock-D2E/Quiksand-CVE-2023-24012)
+
 ### CVE-2023-24044 (2023-01-22)
 
 <code>A Host Header Injection issue on the Login page of Plesk Obsidian through 18.0.49 allows attackers to redirect users to malicious websites via a Host request header. NOTE: the vendor's position is &quot;the ability to use arbitrary domain names to access the panel is an intended feature.&quot;
@@ -30064,6 +30114,13 @@
 
 - [RandomRobbieBF/CVE-2023-46197](https://github.com/RandomRobbieBF/CVE-2023-46197)
 
+### CVE-2023-46229 (2023-10-19)
+
+<code>LangChain before 0.0.317 allows SSRF via document_loaders/recursive_url_loader.py because crawling can proceed from an external server to an internal server.
+</code>
+
+- [JarvisDing-sdu/Yasa-CVE-2023-46229](https://github.com/JarvisDing-sdu/Yasa-CVE-2023-46229)
+
 ### CVE-2023-46304 (2024-04-30)
 
 <code>modules/Users/models/Module.php in Vtiger CRM 7.5.0 allows a remote authenticated attacker to run arbitrary PHP code because an unprotected endpoint allows them to write this code to the config.inc.php file (executed on every page load).
@@ -31418,6 +31475,13 @@
 </code>
 
 - [KTN1990/CVE-2022-0316_wordpress_multiple_themes_exploit](https://github.com/KTN1990/CVE-2022-0316_wordpress_multiple_themes_exploit)
+
+### CVE-2022-0324 (2022-11-14)
+
+<code>There is a vulnerability in DHCPv6 packet parsing code that could be explored by remote attacker to craft a packet that could cause buffer overflow in a memcpy call, leading to out-of-bounds memory write that would cause dhcp6relay to crash. Dhcp6relay is a critical process and could cause dhcp relay docker to shutdown.\n\nDiscovered by Eugene Lim of GovTech Singapore.\n
+</code>
+
+- [ngtuonghung/CVE-2022-0324](https://github.com/ngtuonghung/CVE-2022-0324)
 
 ### CVE-2022-0332 (2022-01-25)
 
@@ -32906,6 +32970,7 @@
 </code>
 
 - [hienkiet/CVE-2022-21445-for-12.2.1.3.0-Weblogic](https://github.com/hienkiet/CVE-2022-21445-for-12.2.1.3.0-Weblogic)
+- [NeCr00/CVE-2022-21445](https://github.com/NeCr00/CVE-2022-21445)
 
 ### CVE-2022-21449 (2022-04-19)
 
@@ -37793,6 +37858,7 @@
 - [P4x1s/CVE-2022-42475-RCE-POC](https://github.com/P4x1s/CVE-2022-42475-RCE-POC)
 - [natceil/cve-2022-42475](https://github.com/natceil/cve-2022-42475)
 - [0xhaggis/CVE-2022-42475](https://github.com/0xhaggis/CVE-2022-42475)
+- [ArthurHendrich/CVE-2022-42475-POC](https://github.com/ArthurHendrich/CVE-2022-42475-POC)
 
 ### CVE-2022-42703 (2022-10-09)
 
@@ -49263,7 +49329,6 @@
 - [ChenZIDu/CVE-2020-14645](https://github.com/ChenZIDu/CVE-2020-14645)
 - [HYWZ36/CVE-2020-14645-code](https://github.com/HYWZ36/CVE-2020-14645-code)
 - [Schira4396/CVE-2020-14645](https://github.com/Schira4396/CVE-2020-14645)
-- [NeCr00/CVE-2020-14645](https://github.com/NeCr00/CVE-2020-14645)
 
 ### CVE-2020-14750 (2020-11-01)
 
@@ -51017,6 +51082,7 @@
 - [0xN7y/CVE-2020-29607](https://github.com/0xN7y/CVE-2020-29607)
 - [Alienfader/CVE-2020-29607](https://github.com/Alienfader/CVE-2020-29607)
 - [CaelumIsMe/CVE-2020-29607-POC](https://github.com/CaelumIsMe/CVE-2020-29607-POC)
+- [estebanzarate/CVE-2020-29607-Pluck-CMS-4.7.13-Authenticated-File-Upload-RCE-PoC](https://github.com/estebanzarate/CVE-2020-29607-Pluck-CMS-4.7.13-Authenticated-File-Upload-RCE-PoC)
 
 ### CVE-2020-29661 (2020-12-09)
 
@@ -51506,7 +51572,6 @@
 - [ramoncjs3/CVE-2019-0230](https://github.com/ramoncjs3/CVE-2019-0230)
 - [f8al/CVE-2019-0230-PoC](https://github.com/f8al/CVE-2019-0230-PoC)
 - [Al1ex/CVE-2019-0230](https://github.com/Al1ex/CVE-2019-0230)
-- [tw-eason-tseng/CVE-2019-0230_Struts2S2-059](https://github.com/tw-eason-tseng/CVE-2019-0230_Struts2S2-059)
 
 ### CVE-2019-0232 (2019-04-15)
 
@@ -54285,6 +54350,7 @@
 - [gleaming0/CVE-2019-13288](https://github.com/gleaming0/CVE-2019-13288)
 - [Fineas/CVE-2019-13288-POC](https://github.com/Fineas/CVE-2019-13288-POC)
 - [WildWestCyberSecurity/CVE-2019-13288](https://github.com/WildWestCyberSecurity/CVE-2019-13288)
+- [ngtuonghung/CVE-2019-13288](https://github.com/ngtuonghung/CVE-2019-13288)
 
 ### CVE-2019-13292 (2019-07-04)
 
@@ -55817,6 +55883,13 @@
 - [AleDiBen/NVMS1000-Exploit](https://github.com/AleDiBen/NVMS1000-Exploit)
 - [0hmsec/NVMS-1000-Directory-Traversal-Bash](https://github.com/0hmsec/NVMS-1000-Directory-Traversal-Bash)
 - [Z3R0space/CVE-2019-20085](https://github.com/Z3R0space/CVE-2019-20085)
+
+### CVE-2019-20149 (2019-12-30)
+
+<code>ctorName in index.js in kind-of v6.0.2 allows external user input to overwrite certain internal attributes via a conflicting name, as demonstrated by 'constructor': {'name':'Symbol'}. Hence, a crafted payload can overwrite this builtin attribute to manipulate the type detection result.
+</code>
+
+- [mrknowledgshare/testing_cve-2019-20149](https://github.com/mrknowledgshare/testing_cve-2019-20149)
 
 ### CVE-2019-20197 (2019-12-31)
 
@@ -60039,7 +60112,7 @@
 - [Sunqiz/CVE-2017-0199-reprofuction](https://github.com/Sunqiz/CVE-2017-0199-reprofuction)
 - [TheCyberWatchers/CVE-2017-0199-v5.0](https://github.com/TheCyberWatchers/CVE-2017-0199-v5.0)
 - [kash-123/CVE-2017-0199](https://github.com/kash-123/CVE-2017-0199)
-- [BlueShield-CyberDefense/Phishing-Analysis](https://github.com/BlueShield-CyberDefense/Phishing-Analysis)
+- [BlueShield-CyberDefense/RCE-CVE-2017-0199-detection-analysis](https://github.com/BlueShield-CyberDefense/RCE-CVE-2017-0199-detection-analysis)
 
 ### CVE-2017-0204 (2017-04-12)
 
