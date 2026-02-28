@@ -1215,6 +1215,7 @@
 </code>
 
 - [mbanyamer/CVE-2026-28372-GNU-inetutils-telnetd-Privilege-Escalation](https://github.com/mbanyamer/CVE-2026-28372-GNU-inetutils-telnetd-Privilege-Escalation)
+- [kalibb/CVE-2026-28372-GNU-inetutils-telnetd-Privilege-Escalation-main](https://github.com/kalibb/CVE-2026-28372-GNU-inetutils-telnetd-Privilege-Escalation-main)
 
 
 ## 2025
@@ -3288,6 +3289,7 @@
 <code>7-Zip ZIP File Parsing Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. Interaction with this product is required to exploit this vulnerability but attack vectors may vary depending on the implementation.\n\nThe specific flaw exists within the handling of symbolic links in ZIP files. Crafted data in a ZIP file can cause the process to traverse to unintended directories. An attacker can leverage this vulnerability to execute code in the context of a service account. Was ZDI-CAN-26753.
 </code>
 
+- [pacbypass/CVE-2025-11001](https://github.com/pacbypass/CVE-2025-11001)
 - [lastvocher/7zip-CVE-2025-11001](https://github.com/lastvocher/7zip-CVE-2025-11001)
 - [mbanyamer/CVE-2025-11001---7-Zip](https://github.com/mbanyamer/CVE-2025-11001---7-Zip)
 - [ranasen-rat/CVE-2025-11001](https://github.com/ranasen-rat/CVE-2025-11001)
@@ -6478,6 +6480,7 @@
 </code>
 
 - [Nxploited/CVE-2025-39459](https://github.com/Nxploited/CVE-2025-39459)
+- [Dit-Developers/CVE-2025-39459](https://github.com/Dit-Developers/CVE-2025-39459)
 
 ### CVE-2025-39507 (2025-05-16)
 
@@ -8630,7 +8633,6 @@
 - [emadshanab/POC-for-CVE-2025-55182](https://github.com/emadshanab/POC-for-CVE-2025-55182)
 - [topstar88/CVE-2025-55182](https://github.com/topstar88/CVE-2025-55182)
 - [selectarget/CVE-2025-55182-Exploit](https://github.com/selectarget/CVE-2025-55182-Exploit)
-- [onlylovetx/CVE-2025-55182-CVE-2025-66478-Exploit-GUI](https://github.com/onlylovetx/CVE-2025-55182-CVE-2025-66478-Exploit-GUI)
 - [pyroxenites/Nextjs_RCE_Exploit_Tool](https://github.com/pyroxenites/Nextjs_RCE_Exploit_Tool)
 - [Chocapikk/CVE-2025-55182](https://github.com/Chocapikk/CVE-2025-55182)
 - [mrknow001/RSC_Detector](https://github.com/mrknow001/RSC_Detector)
@@ -8982,7 +8984,7 @@
 - [DeDnY/CVE-2025-55182-in-docker](https://github.com/DeDnY/CVE-2025-55182-in-docker)
 - [H4R335HR/reactshell](https://github.com/H4R335HR/reactshell)
 - [zaryouhashraf/CVE-2025-55182](https://github.com/zaryouhashraf/CVE-2025-55182)
-- [Yusril-git/React2Shell-Wazuh-Detection](https://github.com/Yusril-git/React2Shell-Wazuh-Detection)
+- [Yusril-git/OWASP-Detection-Lab](https://github.com/Yusril-git/OWASP-Detection-Lab)
 - [alptexans/RSC-Detect-CVE-2025-55182](https://github.com/alptexans/RSC-Detect-CVE-2025-55182)
 - [revasec/CVE-2025-55182-Interactive-mode](https://github.com/revasec/CVE-2025-55182-Interactive-mode)
 - [MrMahile/MassScanning-CVE-2025-55182](https://github.com/MrMahile/MassScanning-CVE-2025-55182)
