@@ -50,6 +50,7 @@
 - [0xgh057r3c0n/CVE-2026-0770](https://github.com/0xgh057r3c0n/CVE-2026-0770)
 
 ### CVE-2026-0828
+- [wutang700/STProcessMonitorBYOVD](https://github.com/wutang700/STProcessMonitorBYOVD)
 - [KOSEC-LLC/BYOVD-Research](https://github.com/KOSEC-LLC/BYOVD-Research)
 - [DeathShotXD/0xKern3lCrush-Foreverday-BYOVD-CVE-2026-0828](https://github.com/DeathShotXD/0xKern3lCrush-Foreverday-BYOVD-CVE-2026-0828)
 - [ANYLNK/STProcessMonitorBYOVD](https://github.com/ANYLNK/STProcessMonitorBYOVD)
@@ -284,13 +285,6 @@
 </code>
 
 - [aykhan32/CVE-2026-2898-FunAdmin-Deserialization](https://github.com/aykhan32/CVE-2026-2898-FunAdmin-Deserialization)
-
-### CVE-2026-3062 (2026-02-23)
-
-<code>Out of bounds read and write in Tint in Google Chrome on Mac prior to 145.0.7632.116 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)
-</code>
-
-- [z3r0h3ro/CVE-2026-3062-chain](https://github.com/z3r0h3ro/CVE-2026-3062-chain)
 
 ### CVE-2026-3098
 - [George0Papasotiriou/LLM-Jailbreak-via-Chain-of-Logic-Injection-CVE-2026-3098](https://github.com/George0Papasotiriou/LLM-Jailbreak-via-Chain-of-Logic-Injection-CVE-2026-3098)
@@ -1201,13 +1195,6 @@
 </code>
 
 - [bluedragonsecurity/CVE-2026-27831-POC](https://github.com/bluedragonsecurity/CVE-2026-27831-POC)
-
-### CVE-2026-28207 (2026-02-26)
-
-<code>Zen C is a systems programming language that compiles to human-readable GNU C/C11. Prior to version 0.4.2, a command injection vulnerability (CWE-78) in the Zen C compiler allows local attackers to execute arbitrary shell commands by providing a specially crafted output filename via the `-o` command-line argument. The vulnerability existed in the `main` application logic (specifically in `src/main.c`), where the compiler constructed a shell command string to invoke the backend C compiler. This command string was built by concatenating various arguments, including the user-controlled output filename, and was subsequently executed using the `system()` function. Because `system()` invokes a shell to parse and execute the command, shell metacharacters within the output filename were interpreted by the shell, leading to arbitrary command execution. An attacker who can influence the command-line arguments passed to the `zc` compiler (like through a build script or a CI/CD pipeline configuration) can execute arbitrary commands with the privileges of the user running the compiler. The vulnerability has been fixed in version 0.4.2 by removing `system()` calls, implementing `ArgList`, and internal argument handling. Users are advised to update to Zen C version v0.4.2 or later.
-</code>
-
-- [F0ndueSav0yarde/CVE-2026-28207](https://github.com/F0ndueSav0yarde/CVE-2026-28207)
 
 ### CVE-2026-28372 (2026-02-27)
 
@@ -3769,6 +3756,13 @@
 </code>
 
 - [KTN1990/CVE-2025-14998](https://github.com/KTN1990/CVE-2025-14998)
+
+### CVE-2025-15030 (2026-02-02)
+
+<code>The User Profile Builder  WordPress plugin before 3.15.2 does not have a proper password reset process, allowing a few unauthenticated requests to reset the password of any user by knowing their username, such as administrator ones, and therefore gain access to their account
+</code>
+
+- [haxorsecv1-netizen/CVE-2025-15030](https://github.com/haxorsecv1-netizen/CVE-2025-15030)
 
 ### CVE-2025-15177 (2025-12-29)
 
@@ -7622,6 +7616,7 @@
 </code>
 
 - [binneko/CVE-2025-50286](https://github.com/binneko/CVE-2025-50286)
+- [x1o3/CVE-2025-50286](https://github.com/x1o3/CVE-2025-50286)
 
 ### CVE-2025-50340 (2025-08-04)
 
@@ -8989,6 +8984,7 @@
 - [revasec/CVE-2025-55182-Interactive-mode](https://github.com/revasec/CVE-2025-55182-Interactive-mode)
 - [MrMahile/MassScanning-CVE-2025-55182](https://github.com/MrMahile/MassScanning-CVE-2025-55182)
 - [androidteacher/REACT-CVE-2025-55182-Lab](https://github.com/androidteacher/REACT-CVE-2025-55182-Lab)
+- [InferiorAK/CVE-2025-55182-React2Shell-Async-Scanner](https://github.com/InferiorAK/CVE-2025-55182-React2Shell-Async-Scanner)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -9741,6 +9737,13 @@
 
 ### CVE-2025-60752
 - [zer0matt/CVE-2025-60752](https://github.com/zer0matt/CVE-2025-60752)
+
+### CVE-2025-60787 (2025-10-03)
+
+<code>MotionEye v0.43.1b4 and before is vulnerable to OS Command Injection in configuration parameters such as image_file_name. Unsanitized user input is written to Motion configuration files, allowing remote authenticated attackers with admin access to achieve code execution when Motion is restarted.
+</code>
+
+- [GarethMSheldon/CVE-2025-60787-Detection-motionEye-RCE-via-Config-Injection](https://github.com/GarethMSheldon/CVE-2025-60787-Detection-motionEye-RCE-via-Config-Injection)
 
 ### CVE-2025-60852 (2025-10-23)
 
@@ -11217,6 +11220,7 @@
 - [gpheheise/CVE-2025-70600---Urve-Smart-Office---Stored-XSS-in-iOS-App](https://github.com/gpheheise/CVE-2025-70600---Urve-Smart-Office---Stored-XSS-in-iOS-App)
 
 ### CVE-2025-70795
+- [wutang700/STProcessMonitorBYOVD](https://github.com/wutang700/STProcessMonitorBYOVD)
 - [ANYLNK/STProcessMonitorBYOVD](https://github.com/ANYLNK/STProcessMonitorBYOVD)
 
 ### CVE-2025-70828 (2026-02-17)
@@ -14970,6 +14974,7 @@
 - [adaammmeeee/little-joke](https://github.com/adaammmeeee/little-joke)
 - [R4mbb/CVE-2024-21626-PoC](https://github.com/R4mbb/CVE-2024-21626-PoC)
 - [scherepiuk/container-escape-ebpf](https://github.com/scherepiuk/container-escape-ebpf)
+- [strikoder/cve-2024-21626-runc-1.1.11-escape](https://github.com/strikoder/cve-2024-21626-runc-1.1.11-escape)
 
 ### CVE-2024-21633 (2024-01-03)
 
@@ -35733,6 +35738,7 @@
 - [seinab-ibrahim/Follina-Vulnerability-CVE-2022-30190-Exploit-Analysis](https://github.com/seinab-ibrahim/Follina-Vulnerability-CVE-2022-30190-Exploit-Analysis)
 - [Arkha-Corvus/LetsDefend-SOC173-Follina-0-Day-Detected](https://github.com/Arkha-Corvus/LetsDefend-SOC173-Follina-0-Day-Detected)
 - [nimesh895/Malware-Analysis-Follina-CVE-2022-30190](https://github.com/nimesh895/Malware-Analysis-Follina-CVE-2022-30190)
+- [bcarrulo/Lab-CVE-2022-30190](https://github.com/bcarrulo/Lab-CVE-2022-30190)
 
 ### CVE-2022-30203 (2022-07-12)
 
@@ -53204,6 +53210,7 @@
 - [Praditha29/Simple-CTF-THM-Writeup](https://github.com/Praditha29/Simple-CTF-THM-Writeup)
 - [tim-karov/cmsms-sqli](https://github.com/tim-karov/cmsms-sqli)
 - [pasan2002/CVE-2019-9053---CMS-Made-Simple-SQL-Injection-Exploit-Modified-](https://github.com/pasan2002/CVE-2019-9053---CMS-Made-Simple-SQL-Injection-Exploit-Modified-)
+- [vadaysakiv/cve-2019-9053](https://github.com/vadaysakiv/cve-2019-9053)
 
 ### CVE-2019-9081
 - [nth347/CVE-2019-9081_PoC](https://github.com/nth347/CVE-2019-9081_PoC)
@@ -61530,6 +61537,7 @@
 - [Shakun8/CVE-2017-9805](https://github.com/Shakun8/CVE-2017-9805)
 - [NoSpaceAvailable/CVE-2017-9805_example_build](https://github.com/NoSpaceAvailable/CVE-2017-9805_example_build)
 - [Fl5xia/CVE-2017-9805](https://github.com/Fl5xia/CVE-2017-9805)
+- [7s26simon/CVE-2017-9805-S2-052](https://github.com/7s26simon/CVE-2017-9805-S2-052)
 
 ### CVE-2017-9822 (2017-07-20)
 
@@ -67213,6 +67221,7 @@
 - [Mirza-22144/Vulnerability-Assessment-Exploitation-Lab](https://github.com/Mirza-22144/Vulnerability-Assessment-Exploitation-Lab)
 - [tshaq17/vsftpd-2.3.4---Backdoor-Command-Execution](https://github.com/tshaq17/vsftpd-2.3.4---Backdoor-Command-Execution)
 - [Efehamzaa/Metasploit-Red-Pentest-Lab](https://github.com/Efehamzaa/Metasploit-Red-Pentest-Lab)
+- [yagnikkrish/metasploitable-penetration-testing-lab](https://github.com/yagnikkrish/metasploitable-penetration-testing-lab)
 
 ### CVE-2011-2553
 - [carlosrpastrana/cve-2011-2553](https://github.com/carlosrpastrana/cve-2011-2553)
