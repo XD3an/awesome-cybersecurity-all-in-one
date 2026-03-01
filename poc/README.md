@@ -3254,9 +3254,6 @@
 
 - [AdityaBhatt3010/CVE-2025-10585-The-Chrome-V8-Zero-Day](https://github.com/AdityaBhatt3010/CVE-2025-10585-The-Chrome-V8-Zero-Day)
 
-### CVE-2025-10681
-- [MichaelAdamGroberman/CVE-2025-10681](https://github.com/MichaelAdamGroberman/CVE-2025-10681)
-
 ### CVE-2025-10720 (2025-10-13)
 
 <code>The WP Private Content Plus through 3.6.2 provides a global content protection feature that requires a password. However, the access control check is based only on the presence of an unprotected client-side cookie. As a result, an unauthenticated attacker can completely bypass the password protection by manually setting the cookie value in their browser.
@@ -12346,6 +12343,7 @@
 </code>
 
 - [qalvynn/Mirai-Based-CVE-2024-3721-Selfrep](https://github.com/qalvynn/Mirai-Based-CVE-2024-3721-Selfrep)
+- [bytecategory/homeip](https://github.com/bytecategory/homeip)
 
 ### CVE-2024-3806 (2024-05-09)
 
@@ -16021,6 +16019,13 @@
 
 - [RandomRobbieBF/CVE-2024-25092](https://github.com/RandomRobbieBF/CVE-2024-25092)
 - [Nxploited/CVE-2024-25092](https://github.com/Nxploited/CVE-2024-25092)
+
+### CVE-2024-25096 (2024-04-03)
+
+<code>Improper Control of Generation of Code ('Code Injection') vulnerability in Canto Inc. Canto allows Code Injection.This issue affects Canto: from n/a through 3.0.7.\n\n
+</code>
+
+- [puppetma4ster/Metasploit-Wordpress-Canto-Exploit-RCE-CVE-2024-25096](https://github.com/puppetma4ster/Metasploit-Wordpress-Canto-Exploit-RCE-CVE-2024-25096)
 
 ### CVE-2024-25153 (2024-03-13)
 
@@ -40087,6 +40092,7 @@
 - [zaaraZiof0/pkexec-exploit-CVE](https://github.com/zaaraZiof0/pkexec-exploit-CVE)
 - [boro03/CVE-2021-4034](https://github.com/boro03/CVE-2021-4034)
 - [ramahmdr/PwnKit](https://github.com/ramahmdr/PwnKit)
+- [Abbykito/KERNELexploits](https://github.com/Abbykito/KERNELexploits)
 
 ### CVE-2021-4044 (2021-12-14)
 
@@ -44012,7 +44018,6 @@
 - [xMohamed0/CVE-2021-41773](https://github.com/xMohamed0/CVE-2021-41773)
 - [i6c/MASS_CVE-2021-41773](https://github.com/i6c/MASS_CVE-2021-41773)
 - [skentagon/CVE-2021-41773](https://github.com/skentagon/CVE-2021-41773)
-- [puckiestyle/CVE-2021-41773](https://github.com/puckiestyle/CVE-2021-41773)
 - [zer0qs/CVE-2021-41773](https://github.com/zer0qs/CVE-2021-41773)
 - [DoTuan1/Reserch-CVE-2021-41773](https://github.com/DoTuan1/Reserch-CVE-2021-41773)
 - [bernardas/netsec-polygon](https://github.com/bernardas/netsec-polygon)
