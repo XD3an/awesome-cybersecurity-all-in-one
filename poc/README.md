@@ -247,6 +247,7 @@
 - [washingtonmaister/CVE-2026-2441](https://github.com/washingtonmaister/CVE-2026-2441)
 - [atiilla/CVE-2026-2441_PoC](https://github.com/atiilla/CVE-2026-2441_PoC)
 - [NetVanguard-cmd/CVE-2026-2441](https://github.com/NetVanguard-cmd/CVE-2026-2441)
+- [D3b0j33t/CVE-2026-2441-PoC](https://github.com/D3b0j33t/CVE-2026-2441-PoC)
 
 ### CVE-2026-2461
 - [destiny-creates/CVE-2026-2461-poc](https://github.com/destiny-creates/CVE-2026-2461-poc)
@@ -295,6 +296,13 @@
 </code>
 
 - [archana1122m/CVE-disclosures](https://github.com/archana1122m/CVE-disclosures)
+
+### CVE-2026-3395 (2026-03-01)
+
+<code>A flaw has been found in MaxSite CMS up to 109.1. This impacts the function eval of the file application/maxsite/admin/plugins/editor_markitup/preview-ajax.php of the component MarkItUp Preview AJAX Endpoint. Executing a manipulation can lead to code injection. It is possible to launch the attack remotely. The exploit has been published and may be used. Upgrading to version 109.2 will fix this issue. This patch is called 08937a3c5d672a242d68f53e9fccf8a748820ef3. You should upgrade the affected component. The code maintainer was informed beforehand about the issues. He reacted very fast and highly professional.
+</code>
+
+- [mbanyamer/CVE-2026-3395-MaxSite-CMS-Unauthenticated-RCE](https://github.com/mbanyamer/CVE-2026-3395-MaxSite-CMS-Unauthenticated-RCE)
 
 ### CVE-2026-4821
 - [openexecution-coder/demo-cve-2026-4821](https://github.com/openexecution-coder/demo-cve-2026-4821)
@@ -425,6 +433,7 @@
 - [decalage2/detect_CVE-2026-21509](https://github.com/decalage2/detect_CVE-2026-21509)
 - [kaizensecurity/CVE-2026-21509](https://github.com/kaizensecurity/CVE-2026-21509)
 - [planetoid/cve-2026-21509-mitigation](https://github.com/planetoid/cve-2026-21509-mitigation)
+- [suuhm/CVE-2026-21509-handler](https://github.com/suuhm/CVE-2026-21509-handler)
 
 ### CVE-2026-21510 (2026-02-10)
 
@@ -669,6 +678,13 @@
 </code>
 
 - [Galaxy-sc/CVE-2026-23830-SandBreak](https://github.com/Galaxy-sc/CVE-2026-23830-SandBreak)
+
+### CVE-2026-23842 (2026-01-19)
+
+<code>ChatterBot is a machine learning, conversational dialog engine for creating chat bots. ChatterBot versions up to 1.2.10 are vulnerable to a denial-of-service condition caused by improper database session and connection pool management. Concurrent invocations of the get_response() method can exhaust the underlying SQLAlchemy connection pool, resulting in persistent service unavailability and requiring a manual restart to recover. Version 1.2.11 fixes the issue.
+</code>
+
+- [AdityaBhatt3010/CVE-2026-23842-Denial-of-Service-via-Database-Connection-Pool-Exhaustion-version-1.2.10](https://github.com/AdityaBhatt3010/CVE-2026-23842-Denial-of-Service-via-Database-Connection-Pool-Exhaustion-version-1.2.10)
 
 ### CVE-2026-23885 (2026-01-19)
 
@@ -1171,6 +1187,7 @@
 </code>
 
 - [mbanyamer/CVE-2026-27579-CollabPlatform-Appwrite-CORS-Misconfiguration](https://github.com/mbanyamer/CVE-2026-27579-CollabPlatform-Appwrite-CORS-Misconfiguration)
+- [AdityaBhatt3010/CVE-2026-27579-CORS-Misconfiguration-Leading-to-Authenticated-Data-Exposure](https://github.com/AdityaBhatt3010/CVE-2026-27579-CORS-Misconfiguration-Leading-to-Authenticated-Data-Exposure)
 
 ### CVE-2026-27607 (2026-02-25)
 
@@ -1490,6 +1507,7 @@
 
 - [xp3s/poc_CVE-2025-1716](https://github.com/xp3s/poc_CVE-2025-1716)
 - [0xDaeras/POC_CVE-2025-1716](https://github.com/0xDaeras/POC_CVE-2025-1716)
+- [danigil/cve-2025-1716](https://github.com/danigil/cve-2025-1716)
 
 ### CVE-2025-1868 (2025-03-03)
 
@@ -4649,6 +4667,7 @@
 - [segfault-it/CVE-2025-25257](https://github.com/segfault-it/CVE-2025-25257)
 - [mr-r3b00t/CVE-2025-25257](https://github.com/mr-r3b00t/CVE-2025-25257)
 - [lytianahkone-boop/cve-2025-25257](https://github.com/lytianahkone-boop/cve-2025-25257)
+- [GarethMSheldon/Fortinet-FortiWeb-Fabric-Connector-CVE-2025-25257-Detection](https://github.com/GarethMSheldon/Fortinet-FortiWeb-Fabric-Connector-CVE-2025-25257-Detection)
 
 ### CVE-2025-25279 (2025-02-24)
 
@@ -6217,6 +6236,7 @@
 - [cve-2025-33073/cve-2025-33073](https://github.com/cve-2025-33073/cve-2025-33073)
 - [uziii2208/CVE-2025-33073](https://github.com/uziii2208/CVE-2025-33073)
 - [irjfifndn-prog/Blackash-CVE-2025-33073](https://github.com/irjfifndn-prog/Blackash-CVE-2025-33073)
+- [pol4ir/CVE-2025-33073](https://github.com/pol4ir/CVE-2025-33073)
 
 ### CVE-2025-34028 (2025-04-22)
 
@@ -10222,6 +10242,13 @@
 
 - [mcorybillington/CVE-2025-64328_FreePBX-framework-Command-Injection](https://github.com/mcorybillington/CVE-2025-64328_FreePBX-framework-Command-Injection)
 
+### CVE-2025-64424 (2026-01-05)
+
+<code>Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. In Coolify versions up to and including v4.0.0-beta.434, a command injection vulnerability exists in the git source input fields of a resource, allowing a low privileged user (member) to execute system commands as root on the Coolify instance. As of time of publication, it is unclear if a patch is available.
+</code>
+
+- [androidteacher/CVE-2025-64424-Coolify-](https://github.com/androidteacher/CVE-2025-64424-Coolify-)
+
 ### CVE-2025-64446 (2025-11-14)
 
 <code>A relative path traversal vulnerability in Fortinet FortiWeb 8.0.0 through 8.0.1, FortiWeb 7.6.0 through 7.6.4, FortiWeb 7.4.0 through 7.4.9, FortiWeb 7.2.0 through 7.2.11, FortiWeb 7.0.0 through 7.0.11 may allow an attacker to execute administrative commands on the system via crafted HTTP or HTTPS requests.
@@ -10674,6 +10701,9 @@
 
 - [cwjchoi01/CVE-2025-66676](https://github.com/cwjchoi01/CVE-2025-66676)
 
+### CVE-2025-66678
+- [cwjchoi01/CVE-2025-66678](https://github.com/cwjchoi01/CVE-2025-66678)
+
 ### CVE-2025-66683
 - [scap3sh4rk/CVE-2025-66683](https://github.com/scap3sh4rk/CVE-2025-66683)
 
@@ -11055,6 +11085,7 @@
 </code>
 
 - [Nxploited/CVE-2025-68860](https://github.com/Nxploited/CVE-2025-68860)
+- [DedsecTeam-BlackHat/CVE-2025-68860](https://github.com/DedsecTeam-BlackHat/CVE-2025-68860)
 
 ### CVE-2025-68921 (2026-01-16)
 
@@ -31770,6 +31801,7 @@
 - [stfnw/reproducer-poc-CVE-2022-0847](https://github.com/stfnw/reproducer-poc-CVE-2022-0847)
 - [bluedragonsecurity/Linux-Kernel-Dirty-Pipe-Exploitation-Logic-Bug-](https://github.com/bluedragonsecurity/Linux-Kernel-Dirty-Pipe-Exploitation-Logic-Bug-)
 - [SimoesCTT/Chrono-Drip-Temporal-Viscosity-Exploitation-Framework-CVE-2022-0847](https://github.com/SimoesCTT/Chrono-Drip-Temporal-Viscosity-Exploitation-Framework-CVE-2022-0847)
+- [real-tim-johnston/megaquagga-pentest-report](https://github.com/real-tim-johnston/megaquagga-pentest-report)
 
 ### CVE-2022-0848 (2022-03-04)
 
@@ -33050,6 +33082,7 @@
 - [CharonDefalt/WordPress--CVE-2022-21661](https://github.com/CharonDefalt/WordPress--CVE-2022-21661)
 - [w0r1i0g1ht/CVE-2022-21661](https://github.com/w0r1i0g1ht/CVE-2022-21661)
 - [Fauzan-Aldi/CVE-2022-21661](https://github.com/Fauzan-Aldi/CVE-2022-21661)
+- [7rootsec/CVE-2022-21661-Technical-Analysis](https://github.com/7rootsec/CVE-2022-21661-Technical-Analysis)
 
 ### CVE-2022-21668 (2022-01-10)
 
@@ -33621,6 +33654,7 @@
 - [Shakur1314/CVE-2022-22965-Spring4Shell-Security-Operations-Analysis](https://github.com/Shakur1314/CVE-2022-22965-Spring4Shell-Security-Operations-Analysis)
 - [suyash-R-K/dfir-malware-investigation](https://github.com/suyash-R-K/dfir-malware-investigation)
 - [aditidutta696-dev/Spring4Shell-CVE-2022-22965-Exploitation-Attempt](https://github.com/aditidutta696-dev/Spring4Shell-CVE-2022-22965-Exploitation-Attempt)
+- [zaryouhashraf/CVE-2022-22965](https://github.com/zaryouhashraf/CVE-2022-22965)
 
 ### CVE-2022-22966 (2022-04-14)
 
@@ -40289,13 +40323,6 @@
 
 - [Grayhaxor/CVE-2021-21148](https://github.com/Grayhaxor/CVE-2021-21148)
 
-### CVE-2021-21193 (2021-03-16)
-
-<code>Use after free in Blink in Google Chrome prior to 89.0.4389.90 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
-</code>
-
-- [mehrzad1994/CVE-2021-21193](https://github.com/mehrzad1994/CVE-2021-21193)
-
 ### CVE-2021-21220 (2021-04-26)
 
 <code>Insufficient validation of untrusted input in V8 in Google Chrome prior to 89.0.4389.128 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
@@ -40887,6 +40914,13 @@
 </code>
 
 - [HoangKien1020/CVE-2021-23132](https://github.com/HoangKien1020/CVE-2021-23132)
+
+### CVE-2021-23337 (2021-02-15)
+
+<code>Lodash versions prior to 4.17.21 are vulnerable to Command Injection via the template function.
+</code>
+
+- [khayashi4337/lodash.template-fixed](https://github.com/khayashi4337/lodash.template-fixed)
 
 ### CVE-2021-23358 (2021-03-29)
 
@@ -48759,6 +48793,7 @@
 </code>
 
 - [enessakircolak/Windows-11-24h2-Kernel-Exploit](https://github.com/enessakircolak/Windows-11-24h2-Kernel-Exploit)
+- [S1lkys/Eneio64-LPE](https://github.com/S1lkys/Eneio64-LPE)
 
 ### CVE-2020-12593 (2020-11-18)
 
@@ -57060,6 +57095,7 @@
 </code>
 
 - [krnlcrow/CVE-2018-6537](https://github.com/krnlcrow/CVE-2018-6537)
+- [damariion/CVE-2018-6537](https://github.com/damariion/CVE-2018-6537)
 
 ### CVE-2018-6546 (2018-04-13)
 
@@ -61588,6 +61624,7 @@
 - [joelindra/CVE-2017-9841](https://github.com/joelindra/CVE-2017-9841)
 - [K3ysTr0K3R/CVE-2017-9841-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2017-9841-EXPLOIT)
 - [drcrypterdotru/PHPUnit-GoScan](https://github.com/drcrypterdotru/PHPUnit-GoScan)
+- [MR-LeonardoGomes/CVE-2017-9841](https://github.com/MR-LeonardoGomes/CVE-2017-9841)
 
 ### CVE-2017-9934 (2017-07-17)
 
@@ -62159,6 +62196,7 @@
 - [LipeOzyy/CVE-2017-14980_syncbreeze_10.0.28_bof](https://github.com/LipeOzyy/CVE-2017-14980_syncbreeze_10.0.28_bof)
 - [krnlcrow/CVE-2017-14980](https://github.com/krnlcrow/CVE-2017-14980)
 - [DaviGSantana/Exploit-CVE-2017-14980](https://github.com/DaviGSantana/Exploit-CVE-2017-14980)
+- [damariion/CVE-2017-14980](https://github.com/damariion/CVE-2017-14980)
 
 ### CVE-2017-15095 (2018-02-06)
 
@@ -64503,6 +64541,13 @@
 
 - [vpereira/CVE-2015-1855](https://github.com/vpereira/CVE-2015-1855)
 
+### CVE-2015-1925 (2015-06-30)
+
+<code>Stack-based buffer overflow in the server in IBM Tivoli Storage Manager FastBack 6.1 before 6.1.12 allows remote attackers to cause a denial of service (daemon crash) via unspecified vectors, a different vulnerability than CVE-2015-1924, CVE-2015-1929, CVE-2015-1930, CVE-2015-1948, CVE-2015-1953, CVE-2015-1954, CVE-2015-1962, CVE-2015-1963, CVE-2015-1964, and CVE-2015-1965.
+</code>
+
+- [damariion/CVE-2015-1925](https://github.com/damariion/CVE-2015-1925)
+
 ### CVE-2015-1986 (2015-06-30)
 
 <code>The server in IBM Tivoli Storage Manager FastBack 6.1 before 6.1.12 allows remote attackers to execute arbitrary commands via unspecified vectors, a different vulnerability than CVE-2015-1938.
@@ -65411,6 +65456,7 @@
 - [indrajeetmp11/Heartbleed-PoC-Exploit-Script](https://github.com/indrajeetmp11/Heartbleed-PoC-Exploit-Script)
 - [SimoesCTT/CTT-HEARTBLEED-Temporal-Resonance-Memory-Leak-Exploit-Heartbleed-CVE-2014-0160](https://github.com/SimoesCTT/CTT-HEARTBLEED-Temporal-Resonance-Memory-Leak-Exploit-Heartbleed-CVE-2014-0160)
 - [22imer/CVE-2014-0160](https://github.com/22imer/CVE-2014-0160)
+- [zaryouhashraf/CVE-2014-0160](https://github.com/zaryouhashraf/CVE-2014-0160)
 
 ### CVE-2014-0166 (2014-04-09)
 
