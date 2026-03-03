@@ -1,7 +1,11 @@
 # PoC in GitHub
 
 ## 2026
-### CVE-2026-0006
+### CVE-2026-0006 (2026-03-02)
+
+<code>In multiple locations, there is a possible out of bounds read and write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.
+</code>
+
 - [aydin5245/cve-2026-0006](https://github.com/aydin5245/cve-2026-0006)
 
 ### CVE-2026-0227 (2026-01-15)
@@ -224,7 +228,11 @@
 
 - [MaxMnMl/tpadmin-CVE-2026-2113-poc](https://github.com/MaxMnMl/tpadmin-CVE-2026-2113-poc)
 
-### CVE-2026-2256
+### CVE-2026-2256 (2026-03-02)
+
+<code>A command injection vulnerability in ModelScope's ms-agent versions v1.6.0rc1 and earlier exists, allowing an attacker to execute arbitrary operating system commands through crafted prompt-derived input.
+</code>
+
 - [Itamar-Yochpaz/CVE-2026-2256-PoC](https://github.com/Itamar-Yochpaz/CVE-2026-2256-PoC)
 
 ### CVE-2026-2395
@@ -273,6 +281,13 @@
 
 - [ali-py3/exploit-CVE-2026-2670](https://github.com/ali-py3/exploit-CVE-2026-2670)
 
+### CVE-2026-2749 (2026-02-27)
+
+<code>Vulnerability in Centreon Centreon Open Tickets on Central Server on Linux (Centroen Open Ticket modules).This issue affects Centreon Open Tickets on Central Server: from all before 25.10.3, 24.10.8, 24.04.7.
+</code>
+
+- [hakaioffsec/Centreon-Exploits-2026](https://github.com/hakaioffsec/Centreon-Exploits-2026)
+
 ### CVE-2026-2848 (2026-02-20)
 
 <code>A flaw has been found in SourceCodester Simple Responsive Tourism Website 1.0. Affected by this vulnerability is an unknown functionality of the file /classes/Master.php?f=register of the component Registration. This manipulation of the argument Username causes sql injection. The attack may be initiated remotely. The exploit has been published and may be used.
@@ -303,6 +318,7 @@
 </code>
 
 - [mbanyamer/CVE-2026-3395-MaxSite-CMS-Unauthenticated-RCE](https://github.com/mbanyamer/CVE-2026-3395-MaxSite-CMS-Unauthenticated-RCE)
+- [rootdirective-sec/CVE-2026-3395-Lab](https://github.com/rootdirective-sec/CVE-2026-3395-Lab)
 
 ### CVE-2026-4821
 - [openexecution-coder/demo-cve-2026-4821](https://github.com/openexecution-coder/demo-cve-2026-4821)
@@ -1122,7 +1138,11 @@
 
 - [Rickidevs/CVE-2026-26717](https://github.com/Rickidevs/CVE-2026-26717)
 
-### CVE-2026-26720
+### CVE-2026-26720 (2026-03-02)
+
+<code>An issue in Twenty CRM v1.15.0 and before allows a remote attacker to execute arbitrary code via the local.driver.ts module.
+</code>
+
 - [dillonkirsch/CVE-2026-26720-Twenty-RCE](https://github.com/dillonkirsch/CVE-2026-26720-Twenty-RCE)
 
 ### CVE-2026-26744 (2026-02-19)
@@ -1152,6 +1172,13 @@
 </code>
 
 - [MaxMnMl/majordomo-CVE-2026-27174-poc](https://github.com/MaxMnMl/majordomo-CVE-2026-27174-poc)
+
+### CVE-2026-27179 (2026-02-18)
+
+<code>MajorDoMo (aka Major Domestic Module) contains an unauthenticated SQL injection vulnerability in the commands module. The commands_search.inc.php file directly interpolates the $_GET['parent'] parameter into multiple SQL queries without sanitization or parameterized queries. The commands module is loadable without authentication via the /objects/?module=commands endpoint, which includes arbitrary modules by name and calls their usual() method. Time-based blind SQL injection is exploitable using UNION SELECT SLEEP() syntax. Because MajorDoMo stores admin passwords as unsalted MD5 hashes in the users table, successful exploitation enables extraction of credentials and subsequent admin panel access.
+</code>
+
+- [p3Nt3st3r-sTAr/MajorDoMo-CVE-2026-27179](https://github.com/p3Nt3st3r-sTAr/MajorDoMo-CVE-2026-27179)
 
 ### CVE-2026-27180 (2026-02-18)
 
@@ -2082,7 +2109,7 @@
 - [Rohitberiwala/PyPath-Escape-CVE-2025-4517-Exploit-Research](https://github.com/Rohitberiwala/PyPath-Escape-CVE-2025-4517-Exploit-Research)
 - [kerburenthusiasm/CVE-2025-4517-PoC](https://github.com/kerburenthusiasm/CVE-2025-4517-PoC)
 - [bgutowski/CVE-2025-4517-POC-Sudoers](https://github.com/bgutowski/CVE-2025-4517-POC-Sudoers)
-- [ben-slates/CVE-2025-4517-POC](https://github.com/ben-slates/CVE-2025-4517-POC)
+- [Gh0s7Ops/CVE-2025-4517-POC](https://github.com/Gh0s7Ops/CVE-2025-4517-POC)
 - [estebanzarate/CVE-2025-4517-Python-tarfile-filter-data-Bypass-PoC](https://github.com/estebanzarate/CVE-2025-4517-Python-tarfile-filter-data-Bypass-PoC)
 
 ### CVE-2025-4524 (2025-05-21)
@@ -2415,6 +2442,7 @@
 - [ndr-repo/CVE-2025-5777](https://github.com/ndr-repo/CVE-2025-5777)
 - [mr-r3b00t/CVE-2025-5777](https://github.com/mr-r3b00t/CVE-2025-5777)
 - [rashedhasan090/CVE-2025-5777](https://github.com/rashedhasan090/CVE-2025-5777)
+- [zaryouhashraf/CVE-2025-5777](https://github.com/zaryouhashraf/CVE-2025-5777)
 
 ### CVE-2025-5815 (2025-06-13)
 
@@ -5556,6 +5584,7 @@
 - [N3k0t-dev/bughunter-cyber-intel-dashboard](https://github.com/N3k0t-dev/bughunter-cyber-intel-dashboard)
 - [DanielHallbro/CVE-2025-29927-Nextjs-Bypass-PoC](https://github.com/DanielHallbro/CVE-2025-29927-Nextjs-Bypass-PoC)
 - [Si-Ni/CVE-2025-29927-Proof-of-Concept](https://github.com/Si-Ni/CVE-2025-29927-Proof-of-Concept)
+- [dbwlsdnr95/CVE-2025-29927](https://github.com/dbwlsdnr95/CVE-2025-29927)
 
 ### CVE-2025-29943 (2026-01-16)
 
@@ -6244,7 +6273,6 @@
 - [cve-2025-33073/cve-2025-33073](https://github.com/cve-2025-33073/cve-2025-33073)
 - [uziii2208/CVE-2025-33073](https://github.com/uziii2208/CVE-2025-33073)
 - [irjfifndn-prog/Blackash-CVE-2025-33073](https://github.com/irjfifndn-prog/Blackash-CVE-2025-33073)
-- [pol4ir/CVE-2025-33073](https://github.com/pol4ir/CVE-2025-33073)
 
 ### CVE-2025-34028 (2025-04-22)
 
@@ -8170,6 +8198,13 @@
 - [Hex00-0x4/FortiWeb-CVE-2025-52970-Authentication-Bypass](https://github.com/Hex00-0x4/FortiWeb-CVE-2025-52970-Authentication-Bypass)
 - [34zY/CVE-2025-52970](https://github.com/34zY/CVE-2025-52970)
 
+### CVE-2025-52999 (2025-06-25)
+
+<code>jackson-core contains core low-level incremental (&quot;streaming&quot;) parser and generator abstractions used by Jackson Data Processor. In versions prior to 2.15.0, if a user parses an input file and it has deeply nested data, Jackson could end up throwing a StackoverflowError if the depth is particularly large. jackson-core 2.15.0 contains a configurable limit for how deep Jackson will traverse in an input document, defaulting to an allowable depth of 1000. jackson-core will throw a StreamConstraintsException if the limit is reached. jackson-databind also benefits from this change because it uses jackson-core to parse JSON inputs. As a workaround, users should avoid parsing input files from untrusted sources.
+</code>
+
+- [sassoftware/jackson](https://github.com/sassoftware/jackson)
+
 ### CVE-2025-53020 (2025-07-10)
 
 <code>Late Release of Memory after Effective Lifetime vulnerability in Apache HTTP Server.\n\nThis issue affects Apache HTTP Server: from 2.4.17 up to 2.4.63.\n\nUsers are recommended to upgrade to version 2.4.64, which fixes the issue.
@@ -9931,6 +9966,7 @@
 - [abrewer251/CVE-2025-62215_Windows_Kernel_PE](https://github.com/abrewer251/CVE-2025-62215_Windows_Kernel_PE)
 - [theman001/CVE-2025-62215](https://github.com/theman001/CVE-2025-62215)
 - [uky007/CVE-2025-62215_analysis](https://github.com/uky007/CVE-2025-62215_analysis)
+- [gowonisgood/CVE-2025-62215-POC](https://github.com/gowonisgood/CVE-2025-62215-POC)
 
 ### CVE-2025-62221 (2025-12-09)
 
@@ -10273,6 +10309,7 @@
 - [Death112233/CVE-2025-64446-](https://github.com/Death112233/CVE-2025-64446-)
 - [AN5I/cve-2025-64446-fortiweb-exploit](https://github.com/AN5I/cve-2025-64446-fortiweb-exploit)
 - [lequoca/fortinet-fortiweb-cve-2025-64446-58034](https://github.com/lequoca/fortinet-fortiweb-cve-2025-64446-58034)
+- [BaoSec/CVE-2025-64446-CVE-2025-58034-Research-and-Analysis](https://github.com/BaoSec/CVE-2025-64446-CVE-2025-58034-Research-and-Analysis)
 
 ### CVE-2025-64459 (2025-11-05)
 
@@ -12079,6 +12116,7 @@
 </code>
 
 - [lfillaz/CVE-2024-2997](https://github.com/lfillaz/CVE-2024-2997)
+- [lfilharv/CVE-2024-2997](https://github.com/lfilharv/CVE-2024-2997)
 
 ### CVE-2024-3094 (2024-03-29)
 
@@ -23464,6 +23502,7 @@
 - [NishanthAnand21/CVE-2023-4911-PoC](https://github.com/NishanthAnand21/CVE-2023-4911-PoC)
 - [Billar42/CVE-2023-4911](https://github.com/Billar42/CVE-2023-4911)
 - [KillReal01/CVE-2023-4911](https://github.com/KillReal01/CVE-2023-4911)
+- [Aryan20057/CVE-2023-4911](https://github.com/Aryan20057/CVE-2023-4911)
 
 ### CVE-2023-4966 (2023-10-10)
 
@@ -25135,6 +25174,7 @@
 
 - [helleflo1312/Orchestrated-Powershell-for-CVE-2023-24932](https://github.com/helleflo1312/Orchestrated-Powershell-for-CVE-2023-24932)
 - [ajf8729/BlackLotus](https://github.com/ajf8729/BlackLotus)
+- [v1ckxy/Orchestrated-Powershell-for-CVE-2023-24932-en](https://github.com/v1ckxy/Orchestrated-Powershell-for-CVE-2023-24932-en)
 
 ### CVE-2023-24955 (2023-05-09)
 
@@ -40137,6 +40177,7 @@
 - [boro03/CVE-2021-4034](https://github.com/boro03/CVE-2021-4034)
 - [ramahmdr/PwnKit](https://github.com/ramahmdr/PwnKit)
 - [Abbykito/KERNELexploits](https://github.com/Abbykito/KERNELexploits)
+- [Allu-mette/cve-2021-4034](https://github.com/Allu-mette/cve-2021-4034)
 
 ### CVE-2021-4044 (2021-12-14)
 
@@ -43859,13 +43900,6 @@
 </code>
 
 - [FDlucifer/CVE-2021-41278](https://github.com/FDlucifer/CVE-2021-41278)
-
-### CVE-2021-41338 (2021-10-13)
-
-<code>Windows AppContainer Firewall Rules Security Feature Bypass Vulnerability
-</code>
-
-- [Mario-Kart-Felix/firewall-cve](https://github.com/Mario-Kart-Felix/firewall-cve)
 
 ### CVE-2021-41349 (2021-11-10)
 
