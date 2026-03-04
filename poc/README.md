@@ -256,6 +256,7 @@
 - [atiilla/CVE-2026-2441_PoC](https://github.com/atiilla/CVE-2026-2441_PoC)
 - [NetVanguard-cmd/CVE-2026-2441](https://github.com/NetVanguard-cmd/CVE-2026-2441)
 - [D3b0j33t/CVE-2026-2441-PoC](https://github.com/D3b0j33t/CVE-2026-2441-PoC)
+- [fartlover37/CVE-2026-2441-PoC](https://github.com/fartlover37/CVE-2026-2441-PoC)
 
 ### CVE-2026-2461
 - [destiny-creates/CVE-2026-2461-poc](https://github.com/destiny-creates/CVE-2026-2461-poc)
@@ -266,6 +267,13 @@
 </code>
 
 - [JoshuaProvoste/CVE-2026-2472-Vertex-AI-SDK-Google-Cloud](https://github.com/JoshuaProvoste/CVE-2026-2472-Vertex-AI-SDK-Google-Cloud)
+
+### CVE-2026-2628 (2026-03-03)
+
+<code>The All-in-One Microsoft 365 &amp; Entra ID / Azure AD SSO Login plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 2.2.5. This makes it possible for unauthenticated attackers to bypass authentication and log in as other users, including administrators.
+</code>
+
+- [b1gchoi/CVE-2026-2628-PoC](https://github.com/b1gchoi/CVE-2026-2628-PoC)
 
 ### CVE-2026-2636 (2026-02-25)
 
@@ -520,6 +528,13 @@
 </code>
 
 - [daytriftnewgen/CVE-2026-21876](https://github.com/daytriftnewgen/CVE-2026-21876)
+
+### CVE-2026-21902 (2026-02-25)
+
+<code>An Incorrect Permission Assignment for Critical Resource vulnerability in the On-Box Anomaly detection framework of Juniper Networks Junos OS Evolved on PTX Series allows an unauthenticated, network-based attacker to execute code as root.\n\nThe On-Box Anomaly detection framework should only be reachable by other internal processes over the internal routing instance, but not over an externally exposed port. With the ability to access and manipulate the service to execute code as root a remote attacker can take complete control of the device.\nPlease note that this service is enabled by default as no specific configuration is required.\n\nThis issue affects Junos OS Evolved on PTX Series:\n\n\n\n  *  25.4 versions before 25.4R1-S1-EVO, 25.4R2-EVO.\n\n\n\n\nThis issue does not affect Junos OS Evolved versions before 25.4R1-EVO.\n\nThis issue does not affect Junos OS.
+</code>
+
+- [watchtowrlabs/watchTowr-vs-JunosEvolved-CVE-2026-21902](https://github.com/watchtowrlabs/watchTowr-vs-JunosEvolved-CVE-2026-21902)
 
 ### CVE-2026-21962 (2026-01-20)
 
@@ -791,6 +806,7 @@
 - [tiborscholtz/CVE-2026-24061](https://github.com/tiborscholtz/CVE-2026-24061)
 - [mbanyamer/CVE-2026-24061-GNU-Inetutils-telnetd-Remote-Authentication-Bypass-Root-Shell-](https://github.com/mbanyamer/CVE-2026-24061-GNU-Inetutils-telnetd-Remote-Authentication-Bypass-Root-Shell-)
 - [setuju/telnetd](https://github.com/setuju/telnetd)
+- [Remnant-DB/CVE-2026-24061](https://github.com/Remnant-DB/CVE-2026-24061)
 
 ### CVE-2026-24102
 - [SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition](https://github.com/SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition)
@@ -1131,6 +1147,15 @@
 </code>
 
 - [mbanyamer/CVE-2026-26335-Calero-VeraSMART-RCE](https://github.com/mbanyamer/CVE-2026-26335-Calero-VeraSMART-RCE)
+
+### CVE-2026-26416
+- [aksalsalimi/CVE-2026-26416](https://github.com/aksalsalimi/CVE-2026-26416)
+
+### CVE-2026-26417
+- [aksalsalimi/CVE-2026-26417](https://github.com/aksalsalimi/CVE-2026-26417)
+
+### CVE-2026-26418
+- [aksalsalimi/CVE-2026-26418](https://github.com/aksalsalimi/CVE-2026-26418)
 
 ### CVE-2026-26717 (2026-02-25)
 
@@ -1586,7 +1611,6 @@
 - [chhhd/CVE-2025-1974](https://github.com/chhhd/CVE-2025-1974)
 - [salt318/CVE-2025-1974](https://github.com/salt318/CVE-2025-1974)
 - [abrewer251/CVE-2025-1974_IngressNightmare_PoC](https://github.com/abrewer251/CVE-2025-1974_IngressNightmare_PoC)
-- [Rickerd12/exploit-cve-2025-1974](https://github.com/Rickerd12/exploit-cve-2025-1974)
 - [Armand2002/Exploit-CVE-2025-1974-Lab](https://github.com/Armand2002/Exploit-CVE-2025-1974-Lab)
 - [BiiTts/POC-IngressNightmare-CVE-2025-1974](https://github.com/BiiTts/POC-IngressNightmare-CVE-2025-1974)
 - [iteride/CVE-2025-1974](https://github.com/iteride/CVE-2025-1974)
@@ -3123,6 +3147,13 @@
 
 - [networkkiller/CVE-2025-9223](https://github.com/networkkiller/CVE-2025-9223)
 
+### CVE-2025-9242 (2025-09-17)
+
+<code>An Out-of-bounds Write vulnerability in WatchGuard Fireware OS may allow a remote unauthenticated attacker to execute arbitrary code. This vulnerability affects both the Mobile User VPN with IKEv2 and the Branch Office VPN using IKEv2 when configured with a dynamic gateway peer.This vulnerability affects Fireware OS 11.10.2 up to and including 11.12.4_Update1, 12.0 up to and including 12.11.3 and 2025.1.
+</code>
+
+- [watchtowrlabs/watchTowr-vs-WatchGuard-CVE-2025-9242](https://github.com/watchtowrlabs/watchTowr-vs-WatchGuard-CVE-2025-9242)
+
 ### CVE-2025-9267 (2025-09-26)
 
 <code>In Seagate Toolkit on Windows a vulnerability exists in the Toolkit Installer prior to versions 2.35.0.6 where it attempts to load DLLs from the current working directory without validating their origin or integrity. This behavior can be exploited by placing a malicious DLL in the same directory as the installer executable, leading to arbitrary code execution with the privileges of the user running the installer. The issue stems from the use of insecure DLL loading practices, such as relying on relative paths or failing to specify fully qualified paths when invoking system libraries.
@@ -3329,7 +3360,6 @@
 <code>7-Zip ZIP File Parsing Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. Interaction with this product is required to exploit this vulnerability but attack vectors may vary depending on the implementation.\n\nThe specific flaw exists within the handling of symbolic links in ZIP files. Crafted data in a ZIP file can cause the process to traverse to unintended directories. An attacker can leverage this vulnerability to execute code in the context of a service account. Was ZDI-CAN-26753.
 </code>
 
-- [pacbypass/CVE-2025-11001](https://github.com/pacbypass/CVE-2025-11001)
 - [lastvocher/7zip-CVE-2025-11001](https://github.com/lastvocher/7zip-CVE-2025-11001)
 - [mbanyamer/CVE-2025-11001---7-Zip](https://github.com/mbanyamer/CVE-2025-11001---7-Zip)
 - [ranasen-rat/CVE-2025-11001](https://github.com/ranasen-rat/CVE-2025-11001)
@@ -5904,6 +5934,13 @@
 
 - [gregk4sec/CVE-2025-31651](https://github.com/gregk4sec/CVE-2025-31651)
 
+### CVE-2025-31700 (2025-07-23)
+
+<code>A vulnerability has been found in Dahua products.\n\nAttackers could exploit a buffer overflow vulnerability by sending specially crafted malicious packets, potentially causing service disruption (e.g., crashes) or remote code execution (RCE). Some devices may have deployed protection mechanisms such as Address Space Layout Randomization (ASLR), which reduces the likelihood of successful RCE exploitation. However, denial-of-service (DoS) attacks remain a concern.
+</code>
+
+- [umair-aziz025/dahua-cve-research](https://github.com/umair-aziz025/dahua-cve-research)
+
 ### CVE-2025-31702 (2025-10-15)
 
 <code>A vulnerability exists in certain Dahua embedded products. Third-party malicious attacker with obtained normal user credentials could exploit the vulnerability to access certain data which are restricted to admin privileges, such as system-sensitive files through specific HTTP request. This may cause tampering with admin password, leading to privilege escalation. Systems with only admin account are not affected.
@@ -6077,6 +6114,7 @@
 - [blackcat4347/CVE-2025-32433-available-for-windows](https://github.com/blackcat4347/CVE-2025-32433-available-for-windows)
 - [carlosalbertotuma/CVE-2025-32433](https://github.com/carlosalbertotuma/CVE-2025-32433)
 - [yonathanpy/CVE-2025-32433.py](https://github.com/yonathanpy/CVE-2025-32433.py)
+- [agustfricke/erlang-ssh-rce-CVE-2025-32433](https://github.com/agustfricke/erlang-ssh-rce-CVE-2025-32433)
 
 ### CVE-2025-32434 (2025-04-18)
 
@@ -6170,6 +6208,7 @@
 - [SpycioKon/CVE-2025-32463](https://github.com/SpycioKon/CVE-2025-32463)
 - [vpr-labs/CVE-2025-32463](https://github.com/vpr-labs/CVE-2025-32463)
 - [danilo1992-sys/CVE-2025-32463](https://github.com/danilo1992-sys/CVE-2025-32463)
+- [zaryouhashraf/CVE-2025-32463](https://github.com/zaryouhashraf/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -6530,6 +6569,7 @@
 
 - [Nxploited/CVE-2025-39459](https://github.com/Nxploited/CVE-2025-39459)
 - [Dit-Developers/CVE-2025-39459](https://github.com/Dit-Developers/CVE-2025-39459)
+- [RootHarpy/CVE-2025-39459-Nuclei-Template](https://github.com/RootHarpy/CVE-2025-39459-Nuclei-Template)
 
 ### CVE-2025-39507 (2025-05-16)
 
@@ -9039,7 +9079,6 @@
 - [snipevx/React2Shell-POC](https://github.com/snipevx/React2Shell-POC)
 - [BIG02-bot/React2Shell-CVE-2025-55182-An-lise-T-cnica](https://github.com/BIG02-bot/React2Shell-CVE-2025-55182-An-lise-T-cnica)
 - [Wyl-cmd/CVE-2025-55182](https://github.com/Wyl-cmd/CVE-2025-55182)
-- [DeDnY/CVE-2025-55182-in-docker](https://github.com/DeDnY/CVE-2025-55182-in-docker)
 - [H4R335HR/reactshell](https://github.com/H4R335HR/reactshell)
 - [zaryouhashraf/CVE-2025-55182](https://github.com/zaryouhashraf/CVE-2025-55182)
 - [Yusril-git/OWASP-Detection-Lab](https://github.com/Yusril-git/OWASP-Detection-Lab)
@@ -9048,6 +9087,7 @@
 - [MrMahile/MassScanning-CVE-2025-55182](https://github.com/MrMahile/MassScanning-CVE-2025-55182)
 - [androidteacher/REACT-CVE-2025-55182-Lab](https://github.com/androidteacher/REACT-CVE-2025-55182-Lab)
 - [InferiorAK/CVE-2025-55182-React2Shell-Async-Scanner](https://github.com/InferiorAK/CVE-2025-55182-React2Shell-Async-Scanner)
+- [DeDnY/CVE-2025-55182-in-docker](https://github.com/DeDnY/CVE-2025-55182-in-docker)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -10751,6 +10791,13 @@
 ### CVE-2025-66678
 - [cwjchoi01/CVE-2025-66678](https://github.com/cwjchoi01/CVE-2025-66678)
 
+### CVE-2025-66680 (2026-03-03)
+
+<code>An issue in the WiseDelfile64.sys component of WiseCleaner Wise Force Deleter 7.3.2 and earlier allows attackers to delete arbitrary files via a crafted request.
+</code>
+
+- [cwjchoi01/CVE-2025-66680](https://github.com/cwjchoi01/CVE-2025-66680)
+
 ### CVE-2025-66683
 - [scap3sh4rk/CVE-2025-66683](https://github.com/scap3sh4rk/CVE-2025-66683)
 
@@ -11065,6 +11112,7 @@
 - [TheInterception/n8n_CVE-2025-68613_exploit_payloads](https://github.com/TheInterception/n8n_CVE-2025-68613_exploit_payloads)
 - [shibaaa204/CVE-2025-68613](https://github.com/shibaaa204/CVE-2025-68613)
 - [Victorhugofariasvieir66/relatorio-n8n.md](https://github.com/Victorhugofariasvieir66/relatorio-n8n.md)
+- [h3raklez/CVE-2025-68613](https://github.com/h3raklez/CVE-2025-68613)
 
 ### CVE-2025-68615 (2025-12-22)
 
@@ -12110,6 +12158,7 @@
 - [omarelshopky/exploit_cve-2023-26326_using_cve-2024-2961](https://github.com/omarelshopky/exploit_cve-2023-26326_using_cve-2024-2961)
 - [suce0155/CVE-2024-2961_buddyforms_2.7.7](https://github.com/suce0155/CVE-2024-2961_buddyforms_2.7.7)
 - [scriptSails/glibcs](https://github.com/scriptSails/glibcs)
+- [Clarissss/osTicketFileReadIntoRCE](https://github.com/Clarissss/osTicketFileReadIntoRCE)
 
 ### CVE-2024-2997 (2024-03-27)
 
@@ -12195,6 +12244,7 @@
 - [encikayelwhitehat-glitch/CVE-2024-3094](https://github.com/encikayelwhitehat-glitch/CVE-2024-3094)
 - [BOSE122/CVE-2024-3094](https://github.com/BOSE122/CVE-2024-3094)
 - [hackura/xz-cve-2024-3094](https://github.com/hackura/xz-cve-2024-3094)
+- [zaryouhashraf/CVE-2024-3094](https://github.com/zaryouhashraf/CVE-2024-3094)
 
 ### CVE-2024-3105 (2024-06-15)
 
@@ -12305,7 +12355,7 @@
 - [0xr2r/CVE-2024-3400-Palo-Alto-OS-Command-Injection](https://github.com/0xr2r/CVE-2024-3400-Palo-Alto-OS-Command-Injection)
 - [marconesler/CVE-2024-3400](https://github.com/marconesler/CVE-2024-3400)
 - [andrelia-hacks/CVE-2024-3400](https://github.com/andrelia-hacks/CVE-2024-3400)
-- [iwallarm/cve-2024-3400](https://github.com/iwallarm/cve-2024-3400)
+- [ivan-n0v/cve-2024-3400](https://github.com/ivan-n0v/cve-2024-3400)
 - [workshop748/CVE-2024-3400](https://github.com/workshop748/CVE-2024-3400)
 - [nanwinata/CVE-2024-3400](https://github.com/nanwinata/CVE-2024-3400)
 - [hashdr1ft/SOC274-Palo-Alto-Networks-PAN-OS-Command-Injection-Vulnerability-Exploitation-CVE-2024-3400](https://github.com/hashdr1ft/SOC274-Palo-Alto-Networks-PAN-OS-Command-Injection-Vulnerability-Exploitation-CVE-2024-3400)
@@ -15760,6 +15810,7 @@
 - [aadi0258/Exploit-CVE-2024-23897](https://github.com/aadi0258/Exploit-CVE-2024-23897)
 - [harekrishnarai/CVE-2024-23897-test-windows](https://github.com/harekrishnarai/CVE-2024-23897-test-windows)
 - [wvverez/CVE-2024-23897](https://github.com/wvverez/CVE-2024-23897)
+- [vmc8ll/poc-CVE-2024-23897](https://github.com/vmc8ll/poc-CVE-2024-23897)
 
 ### CVE-2024-23898 (2024-01-24)
 
@@ -23082,6 +23133,7 @@
 </code>
 
 - [leoanggal1/CVE-2023-3452-PoC](https://github.com/leoanggal1/CVE-2023-3452-PoC)
+- [Alpastx/CVE-2023-3452---WordPress-Canto-Plugin-RCE](https://github.com/Alpastx/CVE-2023-3452---WordPress-Canto-Plugin-RCE)
 
 ### CVE-2023-3460 (2023-07-04)
 
@@ -29789,6 +29841,8 @@
 - [tpirate/cve-2023-44487-POC](https://github.com/tpirate/cve-2023-44487-POC)
 - [ReGeLePuMa/HTTP-2-Rapid-Reset-DDos](https://github.com/ReGeLePuMa/HTTP-2-Rapid-Reset-DDos)
 - [sastraadiwiguna-purpleeliteteaming/DDoS-Purple-Teaming-Offensive-Multi-Vector-7-Tier-Defensive-Holistic-Blueprint-](https://github.com/sastraadiwiguna-purpleeliteteaming/DDoS-Purple-Teaming-Offensive-Multi-Vector-7-Tier-Defensive-Holistic-Blueprint-)
+- [dryfryce/phoenix-h2](https://github.com/dryfryce/phoenix-h2)
+- [dryfryce/phoenix-http2](https://github.com/dryfryce/phoenix-http2)
 
 ### CVE-2023-44758 (2023-10-06)
 
@@ -39941,6 +39995,7 @@
 
 - [chompie1337/Linux_LPE_eBPF_CVE-2021-3490](https://github.com/chompie1337/Linux_LPE_eBPF_CVE-2021-3490)
 - [pivik271/CVE-2021-3490](https://github.com/pivik271/CVE-2021-3490)
+- [sandesh9978/cve-2021-3490-ebpf-analysis](https://github.com/sandesh9978/cve-2021-3490-ebpf-analysis)
 
 ### CVE-2021-3492 (2021-04-17)
 
@@ -40344,7 +40399,6 @@
 </code>
 
 - [ZeusBox/CVE-2021-21017](https://github.com/ZeusBox/CVE-2021-21017)
-- [tzwlhack/CVE-2021-21017](https://github.com/tzwlhack/CVE-2021-21017)
 
 ### CVE-2021-21042 (2021-02-11)
 
@@ -42559,6 +42613,7 @@
 - [Spy0x7/CVE-2021-33044](https://github.com/Spy0x7/CVE-2021-33044)
 - [haingn/LoHongCam-CVE-2021-33044](https://github.com/haingn/LoHongCam-CVE-2021-33044)
 - [Baza-NATO/CVE-2021-33044](https://github.com/Baza-NATO/CVE-2021-33044)
+- [umair-aziz025/dahua-cve-research](https://github.com/umair-aziz025/dahua-cve-research)
 
 ### CVE-2021-33045 (2021-09-15)
 
@@ -44873,7 +44928,6 @@
 <code>The Samba vfs_fruit module uses extended file attributes (EA, xattr) to provide &quot;...enhanced compatibility with Apple SMB clients and interoperability with a Netatalk 3 AFP fileserver.&quot; Samba versions prior to 4.13.17, 4.14.12 and 4.15.5 with vfs_fruit configured allow out-of-bounds heap read and write via specially crafted extended file attributes. A remote attacker with write access to extended file attributes can execute arbitrary code with the privileges of smbd, typically root.
 </code>
 
-- [hrsman/Samba-CVE-2021-44142](https://github.com/hrsman/Samba-CVE-2021-44142)
 - [horizon3ai/CVE-2021-44142](https://github.com/horizon3ai/CVE-2021-44142)
 - [gudyrmik/CVE-2021-44142](https://github.com/gudyrmik/CVE-2021-44142)
 - [WinDyAlphA/CVE-2021-44142-vulnerable-lab](https://github.com/WinDyAlphA/CVE-2021-44142-vulnerable-lab)
@@ -47285,6 +47339,7 @@
 - [z3n70/CVE-2020-5902](https://github.com/z3n70/CVE-2020-5902)
 - [34zY/APT-Backpack](https://github.com/34zY/APT-Backpack)
 - [amitlttwo/CVE-2020-5902](https://github.com/amitlttwo/CVE-2020-5902)
+- [zaryouhashraf/CVE-2020-5902](https://github.com/zaryouhashraf/CVE-2020-5902)
 
 ### CVE-2020-5903 (2020-07-01)
 
