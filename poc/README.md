@@ -354,6 +354,7 @@
 
 - [Dimchuk/CVE-2026-20127-chain](https://github.com/Dimchuk/CVE-2026-20127-chain)
 - [bluefalconink/cisa-ed-26-03-tracker](https://github.com/bluefalconink/cisa-ed-26-03-tracker)
+- [zerozenxlabs/CVE-2026-20127---Cisco-SD-WAN-Preauth-RCE](https://github.com/zerozenxlabs/CVE-2026-20127---Cisco-SD-WAN-Preauth-RCE)
 
 ### CVE-2026-20404 (2026-02-02)
 
@@ -404,6 +405,13 @@
 - [hackfaiz/CVE-2026-20841-PoC](https://github.com/hackfaiz/CVE-2026-20841-PoC)
 - [EleniChristopoulou/PoC-CVE-2026-20841](https://github.com/EleniChristopoulou/PoC-CVE-2026-20841)
 - [404godd/CVE-2026-20841-PoC](https://github.com/404godd/CVE-2026-20841-PoC)
+
+### CVE-2026-21385 (2026-03-02)
+
+<code>Memory corruption while using alignments for memory allocation.
+</code>
+
+- [automate-it0/qualcomm-vulnerability-scanner](https://github.com/automate-it0/qualcomm-vulnerability-scanner)
 
 ### CVE-2026-21436 (2026-01-01)
 
@@ -1255,6 +1263,13 @@
 </code>
 
 - [nikeee/CVE-2026-27607](https://github.com/nikeee/CVE-2026-27607)
+
+### CVE-2026-27636 (2026-02-25)
+
+<code>FreeScout is a free help desk and shared inbox built with PHP's Laravel framework. Prior to version 1.8.206, FreeScout's file upload restriction list in `app/Misc/Helper.php` does not include `.htaccess` or `.user.ini` files. On Apache servers with `AllowOverride All` (a common configuration), an authenticated user can upload a `.htaccess` file to redefine how files are processed, enabling Remote Code Execution. This vulnerability can be exploited on its own or in combination with CVE-2026-27637. Version 1.8.206 fixes both vulnerabilities.
+</code>
+
+- [rav1010/CVE-2026-27636](https://github.com/rav1010/CVE-2026-27636)
 
 ### CVE-2026-27639 (2026-02-25)
 
@@ -3755,7 +3770,6 @@
 </code>
 
 - [machevalia/CVE-2025-14733](https://github.com/machevalia/CVE-2025-14733)
-- [kooyaniks/CVE-2025-14733-analysis](https://github.com/kooyaniks/CVE-2025-14733-analysis)
 
 ### CVE-2025-14736 (2026-01-09)
 
@@ -11823,6 +11837,7 @@
 - [LLfam/CVE-2024-1086](https://github.com/LLfam/CVE-2024-1086)
 - [karim4353/CVE-2024-1086-Exploit](https://github.com/karim4353/CVE-2024-1086-Exploit)
 - [ndt2111200203/CVE-2024-1086](https://github.com/ndt2111200203/CVE-2024-1086)
+- [sandesh9978/cve-2024-1086-lpe](https://github.com/sandesh9978/cve-2024-1086-lpe)
 
 ### CVE-2024-1112 (2024-01-31)
 
@@ -14215,6 +14230,13 @@
 
 - [djayaGit/CVE-2024-10793](https://github.com/djayaGit/CVE-2024-10793)
 - [MAHajian/CVE-2024-10793](https://github.com/MAHajian/CVE-2024-10793)
+
+### CVE-2024-10835 (2025-03-20)
+
+<code>In eosphoros-ai/db-gpt version v0.6.0, the web API `POST /api/v1/editor/sql/run` allows execution of arbitrary SQL queries without any access control. This vulnerability can be exploited by attackers to perform Arbitrary File Write using DuckDB SQL, enabling them to write arbitrary files to the victim's file system. This can potentially lead to Remote Code Execution (RCE).
+</code>
+
+- [6jeffr3y/CNVD-2026-12436-and-CVE-2024-10835](https://github.com/6jeffr3y/CNVD-2026-12436-and-CVE-2024-10835)
 
 ### CVE-2024-10858 (2024-12-25)
 
@@ -37808,20 +37830,6 @@
 
 - [ixSly/CVE-2022-41401](https://github.com/ixSly/CVE-2022-41401)
 
-### CVE-2022-41412 (2022-11-30)
-
-<code>An issue in the graphData.cgi component of perfSONAR v4.4.5 and prior allows attackers to access sensitive data and execute Server-Side Request Forgery (SSRF) attacks.
-</code>
-
-- [renmizo/CVE-2022-41412](https://github.com/renmizo/CVE-2022-41412)
-
-### CVE-2022-41413 (2022-11-30)
-
-<code>perfSONAR v4.x &lt;= v4.4.5 was discovered to contain a Cross-Site Request Forgery (CSRF) which is triggered when an attacker injects crafted input into the Search function.
-</code>
-
-- [renmizo/CVE-2022-41413](https://github.com/renmizo/CVE-2022-41413)
-
 ### CVE-2022-41445 (2022-11-22)
 
 <code>A cross-site scripting (XSS) vulnerability in Record Management System using CodeIgniter 1.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Add Subject page.
@@ -51845,7 +51853,6 @@
 - [zjw88282740/CVE-2019-0708-win7](https://github.com/zjw88282740/CVE-2019-0708-win7)
 - [victor0013/CVE-2019-0708](https://github.com/victor0013/CVE-2019-0708)
 - [herhe/CVE-2019-0708poc](https://github.com/herhe/CVE-2019-0708poc)
-- [l9c/rdp0708scanner](https://github.com/l9c/rdp0708scanner)
 - [major203/cve-2019-0708-scan](https://github.com/major203/cve-2019-0708-scan)
 - [SugiB3o/Check-vuln-CVE-2019-0708](https://github.com/SugiB3o/Check-vuln-CVE-2019-0708)
 - [gobysec/CVE-2019-0708](https://github.com/gobysec/CVE-2019-0708)
@@ -51905,6 +51912,7 @@
 - [nochemax/bLuEkEeP-GUI](https://github.com/nochemax/bLuEkEeP-GUI)
 - [AaronCaiii/CVE-2019-0708-POC](https://github.com/AaronCaiii/CVE-2019-0708-POC)
 - [DeathStroke-source/Mass-scanner-for-CVE-2019-0708-RDP-RCE-Exploit](https://github.com/DeathStroke-source/Mass-scanner-for-CVE-2019-0708-RDP-RCE-Exploit)
+- [ryan-ally/rdp0708scanner](https://github.com/ryan-ally/rdp0708scanner)
 - [go-bi/CVE-2019-0708-EXP-Windows](https://github.com/go-bi/CVE-2019-0708-EXP-Windows)
 - [CircuitSoul/CVE-2019-0708](https://github.com/CircuitSoul/CVE-2019-0708)
 - [pywc/CVE-2019-0708](https://github.com/pywc/CVE-2019-0708)
