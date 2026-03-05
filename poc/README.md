@@ -362,6 +362,7 @@
 - [Dimchuk/CVE-2026-20127-chain](https://github.com/Dimchuk/CVE-2026-20127-chain)
 - [bluefalconink/cisa-ed-26-03-tracker](https://github.com/bluefalconink/cisa-ed-26-03-tracker)
 - [zerozenxlabs/CVE-2026-20127---Cisco-SD-WAN-Preauth-RCE](https://github.com/zerozenxlabs/CVE-2026-20127---Cisco-SD-WAN-Preauth-RCE)
+- [leemuun/CVE-2026-20127](https://github.com/leemuun/CVE-2026-20127)
 
 ### CVE-2026-20404 (2026-02-02)
 
@@ -613,6 +614,7 @@
 </code>
 
 - [amusedx/CVE-2026-22686](https://github.com/amusedx/CVE-2026-22686)
+- [moltengama/CVE-2026-22686-RemoteCodeExecution-RCE-PoC](https://github.com/moltengama/CVE-2026-22686-RemoteCodeExecution-RCE-PoC)
 
 ### CVE-2026-22785 (2026-01-12)
 
@@ -10377,7 +10379,6 @@
 - [Death112233/CVE-2025-64446-](https://github.com/Death112233/CVE-2025-64446-)
 - [AN5I/cve-2025-64446-fortiweb-exploit](https://github.com/AN5I/cve-2025-64446-fortiweb-exploit)
 - [lequoca/fortinet-fortiweb-cve-2025-64446-58034](https://github.com/lequoca/fortinet-fortiweb-cve-2025-64446-58034)
-- [BaoSec/FortiWeb-CVE](https://github.com/BaoSec/FortiWeb-CVE)
 
 ### CVE-2025-64459 (2025-11-05)
 
@@ -16207,13 +16208,6 @@
 
 - [RandomRobbieBF/CVE-2024-25092](https://github.com/RandomRobbieBF/CVE-2024-25092)
 - [Nxploited/CVE-2024-25092](https://github.com/Nxploited/CVE-2024-25092)
-
-### CVE-2024-25096 (2024-04-03)
-
-<code>Improper Control of Generation of Code ('Code Injection') vulnerability in Canto Inc. Canto allows Code Injection.This issue affects Canto: from n/a through 3.0.7.\n\n
-</code>
-
-- [puppetma4ster/Metasploit-Wordpress-Canto-Exploit-RCE-CVE-2024-25096](https://github.com/puppetma4ster/Metasploit-Wordpress-Canto-Exploit-RCE-CVE-2024-25096)
 
 ### CVE-2024-25153 (2024-03-13)
 
