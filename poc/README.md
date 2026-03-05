@@ -320,6 +320,13 @@
 
 - [archana1122m/CVE-disclosures](https://github.com/archana1122m/CVE-disclosures)
 
+### CVE-2026-3224 (2026-03-03)
+
+<code>Authentication bypass in the Microsoft Entra ID (Azure AD) authentication mode in Devolutions Server 2025.3.15.0 and earlier allows an unauthenticated user to authenticate as an arbitrary Entra ID user via a forged JSON Web Token (JWT).
+</code>
+
+- [HiZisec/CVE-2026-3224-Exploit](https://github.com/HiZisec/CVE-2026-3224-Exploit)
+
 ### CVE-2026-3395 (2026-03-01)
 
 <code>A flaw has been found in MaxSite CMS up to 109.1. This impacts the function eval of the file application/maxsite/admin/plugins/editor_markitup/preview-ajax.php of the component MarkItUp Preview AJAX Endpoint. Executing a manipulation can lead to code injection. It is possible to launch the attack remotely. The exploit has been published and may be used. Upgrading to version 109.2 will fix this issue. This patch is called 08937a3c5d672a242d68f53e9fccf8a748820ef3. You should upgrade the affected component. The code maintainer was informed beforehand about the issues. He reacted very fast and highly professional.
@@ -1295,6 +1302,9 @@
 
 - [mbanyamer/CVE-2026-28372-GNU-inetutils-telnetd-Privilege-Escalation](https://github.com/mbanyamer/CVE-2026-28372-GNU-inetutils-telnetd-Privilege-Escalation)
 - [kalibb/CVE-2026-28372-GNU-inetutils-telnetd-Privilege-Escalation-main](https://github.com/kalibb/CVE-2026-28372-GNU-inetutils-telnetd-Privilege-Escalation-main)
+
+### CVE-2026-29781
+- [skoveit/CVE-2026-29781](https://github.com/skoveit/CVE-2026-29781)
 
 
 ## 2025
@@ -3420,7 +3430,7 @@
 <code>The Post SMTP – Complete SMTP Solution with Logs, Alerts, Backup SMTP &amp; Mobile App plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the __construct function in all versions up to, and including, 3.6.0. This makes it possible for unauthenticated attackers to read arbitrary logged emails sent through the Post SMTP plugin, including password reset emails containing password reset links, which can lead to account takeover.
 </code>
 
-- [halilkirazkaya/CVE-2025-11833](https://github.com/halilkirazkaya/CVE-2025-11833)
+- [bocgoInfosec/CVE-2025-11833-PoC](https://github.com/bocgoInfosec/CVE-2025-11833-PoC)
 
 ### CVE-2025-11953 (2025-11-03)
 
@@ -4750,6 +4760,7 @@
 - [mr-r3b00t/CVE-2025-25257](https://github.com/mr-r3b00t/CVE-2025-25257)
 - [lytianahkone-boop/cve-2025-25257](https://github.com/lytianahkone-boop/cve-2025-25257)
 - [GarethMSheldon/Fortinet-FortiWeb-Fabric-Connector-CVE-2025-25257-Detection](https://github.com/GarethMSheldon/Fortinet-FortiWeb-Fabric-Connector-CVE-2025-25257-Detection)
+- [zaryouhashraf/CVE-2025-25257](https://github.com/zaryouhashraf/CVE-2025-25257)
 
 ### CVE-2025-25279 (2025-02-24)
 
@@ -5708,6 +5719,7 @@
 - [ThemeHackers/CVE-2025-30208](https://github.com/ThemeHackers/CVE-2025-30208)
 - [TH-SecForge/CVE-2025-30208](https://github.com/TH-SecForge/CVE-2025-30208)
 - [bugdotexe/CVE-2025-30208](https://github.com/bugdotexe/CVE-2025-30208)
+- [HazaVVIP/CVE-2025-30208](https://github.com/HazaVVIP/CVE-2025-30208)
 
 ### CVE-2025-30216 (2025-03-25)
 
@@ -9405,13 +9417,6 @@
 
 - [anonaninda/Aninda-security-advisories](https://github.com/anonaninda/Aninda-security-advisories)
 
-### CVE-2025-56643 (2025-11-18)
-
-<code>Requarks Wiki.js 2.5.307 does not properly revoke or invalidate active JWT tokens when a user logs out. As a result, previously issued tokens remain valid and can be reused to access the system, even after logout. This behavior affects session integrity and may allow unauthorized access if a token is compromised. The issue is present in the authentication resolver logic and affects both the GraphQL endpoint and the logout mechanism.
-</code>
-
-- [0xBS0D27/CVE-2025-56643](https://github.com/0xBS0D27/CVE-2025-56643)
-
 ### CVE-2025-56708
 - [xkaneiki/rtty_CVE-2025-56708-CVE-2025-56709](https://github.com/xkaneiki/rtty_CVE-2025-56708-CVE-2025-56709)
 
@@ -10319,6 +10324,13 @@
 
 - [cybercrewinc/CVE-2025-64027](https://github.com/cybercrewinc/CVE-2025-64027)
 
+### CVE-2025-64087 (2026-01-20)
+
+<code>A Server-Side Template Injection (SSTI) vulnerability in the FreeMarker component of opensagres XDocReport v1.0.0 to v2.1.0 allows attackers to execute arbitrary code via injecting crafted template expressions.
+</code>
+
+- [AT190510-Cuong/CVE-2025-64087-SSTI-](https://github.com/AT190510-Cuong/CVE-2025-64087-SSTI-)
+
 ### CVE-2025-64095 (2025-10-28)
 
 <code>DNN (formerly DotNetNuke) is an open-source web content management platform (CMS) in the Microsoft ecosystem. Prior to 10.1.1, the default HTML editor provider allows unauthenticated file uploads and images can overwrite existing files. An unauthenticated user can upload and replace existing files allowing defacing a website and combined with other issue, injection XSS payloads. This vulnerability is fixed in 10.1.1.
@@ -10365,6 +10377,7 @@
 - [Death112233/CVE-2025-64446-](https://github.com/Death112233/CVE-2025-64446-)
 - [AN5I/cve-2025-64446-fortiweb-exploit](https://github.com/AN5I/cve-2025-64446-fortiweb-exploit)
 - [lequoca/fortinet-fortiweb-cve-2025-64446-58034](https://github.com/lequoca/fortinet-fortiweb-cve-2025-64446-58034)
+- [BaoSec/FortiWeb-CVE](https://github.com/BaoSec/FortiWeb-CVE)
 
 ### CVE-2025-64459 (2025-11-05)
 
@@ -10508,6 +10521,13 @@
 </code>
 
 - [zero-day348/CVE-2025-65442-DOM-based-Cross-Site-Scripting-XSS-Vulnerability-in-novel-V3.5.0-CWE-79-](https://github.com/zero-day348/CVE-2025-65442-DOM-based-Cross-Site-Scripting-XSS-Vulnerability-in-novel-V3.5.0-CWE-79-)
+
+### CVE-2025-65482 (2026-01-20)
+
+<code>An XML External Entity (XXE) vulnerability in opensagres XDocReport v0.9.2 to v2.0.3 allows attackers to execute arbitrary code via uploading a crafted .docx file.
+</code>
+
+- [AT190510-Cuong/CVE-2025-65482-XXE-](https://github.com/AT190510-Cuong/CVE-2025-65482-XXE-)
 
 ### CVE-2025-65518 (2026-01-08)
 
@@ -10742,6 +10762,7 @@
 </code>
 
 - [lem0naids/CVE-2025-66417-POC](https://github.com/lem0naids/CVE-2025-66417-POC)
+- [nflatrea/CVE-2025-66417](https://github.com/nflatrea/CVE-2025-66417)
 
 ### CVE-2025-66470 (2025-12-09)
 
@@ -10802,7 +10823,11 @@
 
 - [cwjchoi01/CVE-2025-66676](https://github.com/cwjchoi01/CVE-2025-66676)
 
-### CVE-2025-66678
+### CVE-2025-66678 (2026-03-04)
+
+<code>An issue in the HwRwDrv.sys component of Nil Hardware Editor Hardware Read &amp; Write Utility v1.25.11.26 and earlier allows attackers to execute arbitrary read and write operations via a crafted request.
+</code>
+
 - [cwjchoi01/CVE-2025-66678](https://github.com/cwjchoi01/CVE-2025-66678)
 
 ### CVE-2025-66680 (2026-03-03)
@@ -11333,10 +11358,18 @@
 
 - [joshuavanderpoll/CVE-2025-69985](https://github.com/joshuavanderpoll/CVE-2025-69985)
 
-### CVE-2025-70341
+### CVE-2025-70341 (2026-03-04)
+
+<code>Insecure permissions in App-Auto-Patch v3.4.2 create a race condition which allows attackers to write arbitrary files.
+</code>
+
 - [malvector/CVE-2025-70341](https://github.com/malvector/CVE-2025-70341)
 
-### CVE-2025-70342
+### CVE-2025-70342 (2026-03-04)
+
+<code>erase-install prior to v40.4 commit 2c31239 writes swiftDialog credential output to a hardcoded path /var/tmp/dialog.json. This allows an unauthenticated attacker to intercept admin credentials entered during reinstall/erase operations via creating a named pipe.
+</code>
+
 - [malvector/CVE-2025-70342](https://github.com/malvector/CVE-2025-70342)
 
 ### CVE-2025-70368 (2026-01-26)
@@ -11401,6 +11434,9 @@
 </code>
 
 - [mathavamoorthi/CVE-2025-70899](https://github.com/mathavamoorthi/CVE-2025-70899)
+
+### CVE-2025-70995
+- [0xcronos/CVE](https://github.com/0xcronos/CVE)
 
 ### CVE-2025-71243 (2026-02-19)
 
@@ -12181,7 +12217,7 @@
 </code>
 
 - [lfillaz/CVE-2024-2997](https://github.com/lfillaz/CVE-2024-2997)
-- [lfilharv/CVE-2024-2997](https://github.com/lfilharv/CVE-2024-2997)
+- [NullEssa/CVE-2024-2997](https://github.com/NullEssa/CVE-2024-2997)
 
 ### CVE-2024-3094 (2024-03-29)
 
@@ -18609,6 +18645,7 @@
 - [akozsentre/CVE-2024-38063](https://github.com/akozsentre/CVE-2024-38063)
 - [thealice01/CVE-2024-38063](https://github.com/thealice01/CVE-2024-38063)
 - [Avidan1/CVE-2024-38063](https://github.com/Avidan1/CVE-2024-38063)
+- [arrhenius975/CVE-2024-38063-Exploit-Refactoring](https://github.com/arrhenius975/CVE-2024-38063-Exploit-Refactoring)
 
 ### CVE-2024-38077 (2024-07-09)
 
@@ -22415,6 +22452,7 @@
 
 - [TurtleARM/CVE-2023-0179-PoC](https://github.com/TurtleARM/CVE-2023-0179-PoC)
 - [H4K6/CVE-2023-0179-PoC](https://github.com/H4K6/CVE-2023-0179-PoC)
+- [prabeershakya/CVE-2023-0179-POC-](https://github.com/prabeershakya/CVE-2023-0179-POC-)
 
 ### CVE-2023-0214 (2023-01-18)
 
@@ -31622,6 +31660,7 @@
 - [featherL/CVE-2022-0185-exploit](https://github.com/featherL/CVE-2022-0185-exploit)
 - [dcheng69/CVE-2022-0185-Case-Study](https://github.com/dcheng69/CVE-2022-0185-Case-Study)
 - [sandesh9978/CVE-2022-0185-Analysis-and-Exploit](https://github.com/sandesh9978/CVE-2022-0185-Analysis-and-Exploit)
+- [prabeershakya/CVE-2022-0185-POC](https://github.com/prabeershakya/CVE-2022-0185-POC)
 
 ### CVE-2022-0219 (2022-01-20)
 
@@ -37380,6 +37419,8 @@
 - [Seriousattempts/Bootloader_Unlock_Retroid_Pocket_3Plus](https://github.com/Seriousattempts/Bootloader_Unlock_Retroid_Pocket_3Plus)
 - [Forbirdden/TigerSmash](https://github.com/Forbirdden/TigerSmash)
 - [xbxarchivr/UNISOCUnlocker](https://github.com/xbxarchivr/UNISOCUnlocker)
+- [AureliusIvanInvenioPTL/ubl-itel-s23](https://github.com/AureliusIvanInvenioPTL/ubl-itel-s23)
+- [AureliusIvan/ubl-itel-s23](https://github.com/AureliusIvan/ubl-itel-s23)
 
 ### CVE-2022-38725 (2023-01-23)
 
@@ -38387,7 +38428,6 @@
 - [ColdFusionX/CVE-2022-44877-CWP7](https://github.com/ColdFusionX/CVE-2022-44877-CWP7)
 - [Chocapikk/CVE-2022-44877](https://github.com/Chocapikk/CVE-2022-44877)
 - [hotpotcookie/CVE-2022-44877-white-box](https://github.com/hotpotcookie/CVE-2022-44877-white-box)
-- [RicYaben/CVE-2022-44877-LAB](https://github.com/RicYaben/CVE-2022-44877-LAB)
 - [dkstar11q/CVE-2022-44877](https://github.com/dkstar11q/CVE-2022-44877)
 - [rhymsc/CVE-2022-44877-RCE](https://github.com/rhymsc/CVE-2022-44877-RCE)
 - [G01d3nW01f/CVE-2022-44877](https://github.com/G01d3nW01f/CVE-2022-44877)
@@ -39638,7 +39678,6 @@
 - [rabbitsafe/CVE-2021-2109](https://github.com/rabbitsafe/CVE-2021-2109)
 - [yuaneuro/CVE-2021-2109_poc](https://github.com/yuaneuro/CVE-2021-2109_poc)
 - [dinosn/CVE-2021-2109](https://github.com/dinosn/CVE-2021-2109)
-- [lnwza0x0a/CVE-2021-2109](https://github.com/lnwza0x0a/CVE-2021-2109)
 - [Vulnmachines/oracle-weblogic-CVE-2021-2109](https://github.com/Vulnmachines/oracle-weblogic-CVE-2021-2109)
 
 ### CVE-2021-2119 (2021-01-20)
@@ -40004,6 +40043,7 @@
 - [chompie1337/Linux_LPE_eBPF_CVE-2021-3490](https://github.com/chompie1337/Linux_LPE_eBPF_CVE-2021-3490)
 - [pivik271/CVE-2021-3490](https://github.com/pivik271/CVE-2021-3490)
 - [sandesh9978/cve-2021-3490-ebpf-analysis](https://github.com/sandesh9978/cve-2021-3490-ebpf-analysis)
+- [prabeershakya/CVE-2021-3490-POC](https://github.com/prabeershakya/CVE-2021-3490-POC)
 
 ### CVE-2021-3492 (2021-04-17)
 
@@ -40977,6 +41017,7 @@
 - [yoohhuu/Rocket-Chat-3.12.1-PoC-CVE-2021-22911-](https://github.com/yoohhuu/Rocket-Chat-3.12.1-PoC-CVE-2021-22911-)
 - [octodi/CVE-2021-22911](https://github.com/octodi/CVE-2021-22911)
 - [TeneBrae93/RocketChat-NoSQLi-Chain-CVE-2021-22911](https://github.com/TeneBrae93/RocketChat-NoSQLi-Chain-CVE-2021-22911)
+- [Faridi-m/CVE-2021-22911-RocketChat-Improvised-](https://github.com/Faridi-m/CVE-2021-22911-RocketChat-Improvised-)
 
 ### CVE-2021-22924 (2021-08-05)
 
@@ -44936,7 +44977,6 @@
 <code>The Samba vfs_fruit module uses extended file attributes (EA, xattr) to provide &quot;...enhanced compatibility with Apple SMB clients and interoperability with a Netatalk 3 AFP fileserver.&quot; Samba versions prior to 4.13.17, 4.14.12 and 4.15.5 with vfs_fruit configured allow out-of-bounds heap read and write via specially crafted extended file attributes. A remote attacker with write access to extended file attributes can execute arbitrary code with the privileges of smbd, typically root.
 </code>
 
-- [horizon3ai/CVE-2021-44142](https://github.com/horizon3ai/CVE-2021-44142)
 - [gudyrmik/CVE-2021-44142](https://github.com/gudyrmik/CVE-2021-44142)
 - [WinDyAlphA/CVE-2021-44142-vulnerable-lab](https://github.com/WinDyAlphA/CVE-2021-44142-vulnerable-lab)
 
@@ -46741,11 +46781,11 @@
 - [guglia001/MassZeroLogon](https://github.com/guglia001/MassZeroLogon)
 - [likeww/MassZeroLogon](https://github.com/likeww/MassZeroLogon)
 - [dr4g0n23/CVE-2020-1472](https://github.com/dr4g0n23/CVE-2020-1472)
-- [RicYaben/CVE-2020-1472-LAB](https://github.com/RicYaben/CVE-2020-1472-LAB)
 - [Akash7350/CVE-2020-1472](https://github.com/Akash7350/CVE-2020-1472)
 - [c3rrberu5/ZeroLogon-to-Shell](https://github.com/c3rrberu5/ZeroLogon-to-Shell)
 - [logg-1/0logon](https://github.com/logg-1/0logon)
 - [whoami-chmod777/Zerologon-Attack-CVE-2020-1472-POC](https://github.com/whoami-chmod777/Zerologon-Attack-CVE-2020-1472-POC)
+- [metehangelgi/CVE-2020-1472-LAB](https://github.com/metehangelgi/CVE-2020-1472-LAB)
 - [JolynNgSC/Zerologon_CVE-2020-1472](https://github.com/JolynNgSC/Zerologon_CVE-2020-1472)
 - [blackh00d/zerologon-poc](https://github.com/blackh00d/zerologon-poc)
 - [TuanCui22/ZerologonWithImpacket-CVE2020-1472](https://github.com/TuanCui22/ZerologonWithImpacket-CVE2020-1472)
@@ -50292,7 +50332,6 @@
 </code>
 
 - [underprotection/CVE-2020-24028](https://github.com/underprotection/CVE-2020-24028)
-- [redteambrasil/CVE-2020-24028](https://github.com/redteambrasil/CVE-2020-24028)
 
 ### CVE-2020-24029 (2020-09-02)
 
@@ -50300,7 +50339,6 @@
 </code>
 
 - [underprotection/CVE-2020-24029](https://github.com/underprotection/CVE-2020-24029)
-- [redteambrasil/CVE-2020-24029](https://github.com/redteambrasil/CVE-2020-24029)
 
 ### CVE-2020-24030 (2020-09-02)
 
@@ -50308,7 +50346,6 @@
 </code>
 
 - [underprotection/CVE-2020-24030](https://github.com/underprotection/CVE-2020-24030)
-- [redteambrasil/CVE-2020-24030](https://github.com/redteambrasil/CVE-2020-24030)
 
 ### CVE-2020-24032 (2020-08-18)
 
@@ -55110,6 +55147,7 @@
 - [0xDivyanshu-new/CVE-2019-16098](https://github.com/0xDivyanshu-new/CVE-2019-16098)
 - [Offensive-Panda/NT-AUTHORITY-SYSTEM-CONTEXT-RTCORE](https://github.com/Offensive-Panda/NT-AUTHORITY-SYSTEM-CONTEXT-RTCORE)
 - [VortexCry-Organization/VortexCry-Ransomware-Release](https://github.com/VortexCry-Organization/VortexCry-Ransomware-Release)
+- [CrowTheArchfiend/RTCore64-probe](https://github.com/CrowTheArchfiend/RTCore64-probe)
 
 ### CVE-2019-16113 (2019-09-08)
 
@@ -55879,7 +55917,6 @@
 </code>
 
 - [underprotection/CVE-2019-19550](https://github.com/underprotection/CVE-2019-19550)
-- [redteambrasil/CVE-2019-19550](https://github.com/redteambrasil/CVE-2019-19550)
 
 ### CVE-2019-19576 (2019-12-04)
 
@@ -57209,7 +57246,6 @@
 <code>A buffer overflow vulnerability in the control protocol of Flexense SyncBreeze Enterprise v10.4.18 allows remote attackers to execute arbitrary code by sending a crafted packet to TCP port 9121.
 </code>
 
-- [krnlcrow/CVE-2018-6537](https://github.com/krnlcrow/CVE-2018-6537)
 - [damariion/CVE-2018-6537](https://github.com/damariion/CVE-2018-6537)
 
 ### CVE-2018-6546 (2018-04-13)
@@ -60277,7 +60313,7 @@
 - [Sunqiz/CVE-2017-0199-reprofuction](https://github.com/Sunqiz/CVE-2017-0199-reprofuction)
 - [TheCyberWatchers/CVE-2017-0199-v5.0](https://github.com/TheCyberWatchers/CVE-2017-0199-v5.0)
 - [kash-123/CVE-2017-0199](https://github.com/kash-123/CVE-2017-0199)
-- [BlueShield-CyberDefense/RCE-CVE-2017-0199-detection-analysis](https://github.com/BlueShield-CyberDefense/RCE-CVE-2017-0199-detection-analysis)
+- [ahmed-tarek22752/RCE-CVE-2017-0199-detection-analysis](https://github.com/ahmed-tarek22752/RCE-CVE-2017-0199-detection-analysis)
 
 ### CVE-2017-0204 (2017-04-12)
 
@@ -62309,7 +62345,6 @@
 - [TheDarthMole/CVE-2017-14980](https://github.com/TheDarthMole/CVE-2017-14980)
 - [xn0kkx/Exploit_Sync_Breeze_v10.0.28_CVE-2017-14980](https://github.com/xn0kkx/Exploit_Sync_Breeze_v10.0.28_CVE-2017-14980)
 - [LipeOzyy/CVE-2017-14980_syncbreeze_10.0.28_bof](https://github.com/LipeOzyy/CVE-2017-14980_syncbreeze_10.0.28_bof)
-- [krnlcrow/CVE-2017-14980](https://github.com/krnlcrow/CVE-2017-14980)
 - [DaviGSantana/Exploit-CVE-2017-14980](https://github.com/DaviGSantana/Exploit-CVE-2017-14980)
 - [damariion/CVE-2017-14980](https://github.com/damariion/CVE-2017-14980)
 
@@ -66745,7 +66780,7 @@
 - [pkblanks/Remediating-CVE-2013-3900-EnableCertPaddingCheck-](https://github.com/pkblanks/Remediating-CVE-2013-3900-EnableCertPaddingCheck-)
 - [malaya-m/cve-2013-3900-remediation-report](https://github.com/malaya-m/cve-2013-3900-remediation-report)
 - [Sabecomoeh/CVE-2013-3900](https://github.com/Sabecomoeh/CVE-2013-3900)
-- [PREN0MEN/CVE-2013-3900-PowerShell-PoC](https://github.com/PREN0MEN/CVE-2013-3900-PowerShell-PoC)
+- [norvethil/CVE-2013-3900-PowerShell-PoC](https://github.com/norvethil/CVE-2013-3900-PowerShell-PoC)
 - [oukridrig772/-WinVerifyTrust-Signature-Validation-CVE-2013-3900-Mitigation](https://github.com/oukridrig772/-WinVerifyTrust-Signature-Validation-CVE-2013-3900-Mitigation)
 - [ksgassama-lab/vulnerability-remediation-cve-2013-3900](https://github.com/ksgassama-lab/vulnerability-remediation-cve-2013-3900)
 - [SDimitri05/cve-2013-3900-winverifytrust-mitigation](https://github.com/SDimitri05/cve-2013-3900-winverifytrust-mitigation)
