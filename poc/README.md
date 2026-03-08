@@ -3978,7 +3978,7 @@
 <code>The User Profile Builder  WordPress plugin before 3.15.2 does not have a proper password reset process, allowing a few unauthenticated requests to reset the password of any user by knowing their username, such as administrator ones, and therefore gain access to their account
 </code>
 
-- [bastianhaxor1337/CVE-2025-15030](https://github.com/bastianhaxor1337/CVE-2025-15030)
+- [BastianXploited/CVE-2025-15030](https://github.com/BastianXploited/CVE-2025-15030)
 
 ### CVE-2025-15177 (2025-12-29)
 
@@ -9976,6 +9976,8 @@
 
 - [GarethMSheldon/CVE-2025-60787-Detection-motionEye-RCE-via-Config-Injection](https://github.com/GarethMSheldon/CVE-2025-60787-Detection-motionEye-RCE-via-Config-Injection)
 - [Rohitberiwala/CVE-2025-60787-MotionEye-RCE](https://github.com/Rohitberiwala/CVE-2025-60787-MotionEye-RCE)
+- [gunzf0x/CVE-2025-60787](https://github.com/gunzf0x/CVE-2025-60787)
+- [lil0xplorer/CVE-2025-60787_PoC](https://github.com/lil0xplorer/CVE-2025-60787_PoC)
 
 ### CVE-2025-60852 (2025-10-23)
 
@@ -11450,6 +11452,7 @@
 <code>FUXA 1.2.8 and prior contains an Authentication Bypass vulnerability leading to Remote Code Execution (RCE). The vulnerability exists in the server/api/jwt-helper.js middleware, which improperly trusts the HTTP &quot;Referer&quot; header to validate internal requests. A remote unauthenticated attacker can bypass JWT authentication by spoofing the Referer header to match the server's host. Successful exploitation allows the attacker to access the protected /api/runscript endpoint and execute arbitrary Node.js code on the server.
 </code>
 
+- [tianarsamm/CVE-2025-69985](https://github.com/tianarsamm/CVE-2025-69985)
 - [joshuavanderpoll/CVE-2025-69985](https://github.com/joshuavanderpoll/CVE-2025-69985)
 
 ### CVE-2025-70341 (2026-03-04)
@@ -13524,7 +13527,7 @@
 <code>A flaw was found in openshift/builder. This vulnerability allows command injection via path traversal, where a malicious user can execute arbitrary commands on the OpenShift node running the builder container. When using the “Docker” strategy, executable files inside the privileged build container can be overridden using the `spec.source.secrets.secret.destinationDir` attribute of the `BuildConfig` definition. An attacker running code in a privileged container could escalate their permissions on the node running the container.
 </code>
 
-- [tevsho/cve-2024-7387](https://github.com/tevsho/cve-2024-7387)
+- [pwnc4t/cve-2024-7387](https://github.com/pwnc4t/cve-2024-7387)
 
 ### CVE-2024-7399 (2024-08-09)
 
@@ -20202,7 +20205,7 @@
 <code>A flaw was found in OpenShift. This issue occurs due to the misuse of elevated privileges in the OpenShift Container Platform's build process. During the build initialization step, the git-clone container is run with a privileged security context, allowing unrestricted access to the node. An attacker with developer-level access can provide a crafted .gitconfig file containing commands executed during the cloning process, leading to arbitrary command execution on the worker node. An attacker running code in a privileged container could escalate their permissions on the node running the container.
 </code>
 
-- [tevsho/cve-2024-45496](https://github.com/tevsho/cve-2024-45496)
+- [pwnc4t/cve-2024-45496](https://github.com/pwnc4t/cve-2024-45496)
 
 ### CVE-2024-45507 (2024-09-04)
 
@@ -21300,6 +21303,7 @@
 - [BwithE/CVE-2024-51482](https://github.com/BwithE/CVE-2024-51482)
 - [Gh0s7Ops/CVE-2024-51482-Multi-Stage-Surveillance-System-Exploit](https://github.com/Gh0s7Ops/CVE-2024-51482-Multi-Stage-Surveillance-System-Exploit)
 - [plur1bu5/CVE-2024-51482-PoC](https://github.com/plur1bu5/CVE-2024-51482-PoC)
+- [BridgerAlderson/CVE-2024-51482](https://github.com/BridgerAlderson/CVE-2024-51482)
 
 ### CVE-2024-51567 (2024-10-29)
 
