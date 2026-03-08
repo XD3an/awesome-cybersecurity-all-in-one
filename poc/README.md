@@ -152,6 +152,7 @@
 - [halilkirazkaya/CVE-2026-1357](https://github.com/halilkirazkaya/CVE-2026-1357)
 - [cybertechajju/CVE-2026-1357-POC](https://github.com/cybertechajju/CVE-2026-1357-POC)
 - [rootdirective-sec/CVE-2026-1357-Lab](https://github.com/rootdirective-sec/CVE-2026-1357-Lab)
+- [CVEs-Labs/CVE-2026-1357](https://github.com/CVEs-Labs/CVE-2026-1357)
 
 ### CVE-2026-1405 (2026-02-19)
 
@@ -166,6 +167,13 @@
 </code>
 
 - [ii4gsp/CVE-2026-1457](https://github.com/ii4gsp/CVE-2026-1457)
+
+### CVE-2026-1492 (2026-03-03)
+
+<code>The User Registration &amp; Membership – Custom Registration Form Builder, Custom Login Form, User Profile, Content Restriction &amp; Membership Plugin plugin for WordPress is vulnerable to improper privilege management in all versions up to, and including, 5.1.2. This is due to the plugin accepting a user-supplied role during membership registration without properly enforcing a server-side allowlist. This makes it possible for unauthenticated attackers to create administrator accounts by supplying a role value during membership registration.
+</code>
+
+- [dreamboyim66-boop/CVE-2026-1492-POC](https://github.com/dreamboyim66-boop/CVE-2026-1492-POC)
 
 ### CVE-2026-1529 (2026-02-09)
 
@@ -386,6 +394,7 @@
 - [zerozenxlabs/CVE-2026-20127---Cisco-SD-WAN-Preauth-RCE](https://github.com/zerozenxlabs/CVE-2026-20127---Cisco-SD-WAN-Preauth-RCE)
 - [leemuun/CVE-2026-20127](https://github.com/leemuun/CVE-2026-20127)
 - [BugFor-Pings/CVE-2026-20127_EXP](https://github.com/BugFor-Pings/CVE-2026-20127_EXP)
+- [yonathanpy/CVE-2026-20127-Cisco-SD-WAN-Preauth-RCE](https://github.com/yonathanpy/CVE-2026-20127-Cisco-SD-WAN-Preauth-RCE)
 
 ### CVE-2026-20131 (2026-03-04)
 
@@ -1030,6 +1039,7 @@
 
 - [jduardo2704/CVE-2026-25643-Frigate-RCE](https://github.com/jduardo2704/CVE-2026-25643-Frigate-RCE)
 - [joshuavanderpoll/CVE-2026-25643](https://github.com/joshuavanderpoll/CVE-2026-25643)
+- [DyniePro/CVE-2026-25643](https://github.com/DyniePro/CVE-2026-25643)
 
 ### CVE-2026-25676 (2026-02-12)
 
@@ -1391,10 +1401,18 @@
 
 - [celeboy711-hue/CVE-2026-29041](https://github.com/celeboy711-hue/CVE-2026-29041)
 
-### CVE-2026-29781
+### CVE-2026-29781 (2026-03-07)
+
+<code>Sliver is a command and control framework that uses a custom Wireguard netstack. In versions from 1.7.3 and prior, a vulnerability exists in the Sliver C2 server's Protobuf unmarshalling logic due to a systemic lack of nil-pointer validation. By extracting valid implant credentials and omitting nested fields in a signed message, an authenticated actor can trigger an unhandled runtime panic. Because the mTLS, WireGuard, and DNS transport layers lack the panic recovery middleware present in the HTTP transport, this results in a global process termination. While requiring post-authentication access (a captured implant), this flaw effectively acts as an infrastructure &quot;kill-switch,&quot; instantly severing all active sessions across the entire fleet and requiring a manual server restart to restore operations. At time of publication, there are no publicly available patches.
+</code>
+
 - [skoveit/CVE-2026-29781](https://github.com/skoveit/CVE-2026-29781)
 
-### CVE-2026-29786
+### CVE-2026-29786 (2026-03-07)
+
+<code>node-tar is a full-featured Tar for Node.js. Prior to version 7.5.10, tar can be tricked into creating a hardlink that points outside the extraction directory by using a drive-relative link target such as C:../target.txt, which enables file overwrite outside cwd during normal tar.x() extraction. This issue has been patched in version 7.5.10.
+</code>
+
 - [Jvr2022/CVE-2026-29786](https://github.com/Jvr2022/CVE-2026-29786)
 
 
@@ -1495,7 +1513,7 @@
 <code>Es wurde eine kritische Schwachstelle in 1902756969 reggie 1.0 entdeckt. Hiervon betroffen ist die Funktion download der Datei src/main/java/com/itheima/reggie/controller/CommonController.java. Durch das Manipulieren des Arguments name mit unbekannten Daten kann eine path traversal-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk angegangen werden. Der Exploit steht zur öffentlichen Verfügung.
 </code>
 
-- [CyberSecurityUP/CVE-2025-0401](https://github.com/CyberSecurityUP/CVE-2025-0401)
+- [JoasASantos/CVE-2025-0401](https://github.com/JoasASantos/CVE-2025-0401)
 - [Darabium/Gombruc](https://github.com/Darabium/Gombruc)
 
 ### CVE-2025-0411 (2025-01-25)
@@ -3054,6 +3072,7 @@
 - [ilhamrzr/RAR-Anomaly-Inspector](https://github.com/ilhamrzr/RAR-Anomaly-Inspector)
 - [IsmaelCosma/CVE-2025-8088](https://github.com/IsmaelCosma/CVE-2025-8088)
 - [undefined-name12/CVE-2025-8088-Winrar](https://github.com/undefined-name12/CVE-2025-8088-Winrar)
+- [Jessica74016/CVE-2025-8088](https://github.com/Jessica74016/CVE-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -6229,6 +6248,7 @@
 - [carlosalbertotuma/CVE-2025-32433](https://github.com/carlosalbertotuma/CVE-2025-32433)
 - [yonathanpy/CVE-2025-32433.py](https://github.com/yonathanpy/CVE-2025-32433.py)
 - [agustfricke/erlang-ssh-rce-CVE-2025-32433](https://github.com/agustfricke/erlang-ssh-rce-CVE-2025-32433)
+- [joshuavanderpoll/cve-2025-32433](https://github.com/joshuavanderpoll/cve-2025-32433)
 
 ### CVE-2025-32434 (2025-04-18)
 
@@ -9955,6 +9975,7 @@
 </code>
 
 - [GarethMSheldon/CVE-2025-60787-Detection-motionEye-RCE-via-Config-Injection](https://github.com/GarethMSheldon/CVE-2025-60787-Detection-motionEye-RCE-via-Config-Injection)
+- [Rohitberiwala/CVE-2025-60787-MotionEye-RCE](https://github.com/Rohitberiwala/CVE-2025-60787-MotionEye-RCE)
 
 ### CVE-2025-60852 (2025-10-23)
 
@@ -11365,13 +11386,6 @@
 
 ### CVE-2025-69460
 - [Tagoletta/CVE-2025-69460](https://github.com/Tagoletta/CVE-2025-69460)
-
-### CVE-2025-69516 (2026-01-29)
-
-<code>A Server-Side Template Injection (SSTI) vulnerability in the /reporting/templates/preview/ endpoint of Amidaware Tactical RMM, affecting versions equal to or earlier than v1.3.1, allows low-privileged users with Report Viewer or Report Manager permissions to achieve remote command execution on the server. This occurs due to improper sanitization of the template_md parameter, enabling direct injection of Jinja2 templates. This occurs due to misuse of the generate_html() function, the user-controlled value is inserted into `env.from_string`, a function that processes Jinja2 templates arbitrarily, making an SSTI possible.
-</code>
-
-- [NtGabrielGomes/CVE-2025-69516](https://github.com/NtGabrielGomes/CVE-2025-69516)
 
 ### CVE-2025-69581 (2026-01-16)
 
@@ -14443,7 +14457,6 @@
 <code>Qualys discovered that needrestart, before version 3.8, passes unsanitized data to a library (Modules::ScanDeps) which expects safe input. This could allow a local attacker to execute arbitrary shell commands. Please see the related CVE-2024-10224 in Modules::ScanDeps.
 </code>
 
-- [unknown-user-from/CVE-2024-11003-PoC](https://github.com/unknown-user-from/CVE-2024-11003-PoC)
 - [sychikov/CVE-2024-11003-POC](https://github.com/sychikov/CVE-2024-11003-POC)
 
 ### CVE-2024-11040
@@ -17819,13 +17832,6 @@
 
 - [absholi7ly/Poc-CVE-2024-32962-xml-crypto](https://github.com/absholi7ly/Poc-CVE-2024-32962-xml-crypto)
 
-### CVE-2024-32964 (2024-05-10)
-
-<code>Lobe Chat is a chatbot framework that supports speech synthesis, multimodal, and extensible Function Call plugin system. Prior to 0.150.6, lobe-chat had an unauthorized Server-Side Request Forgery vulnerability in the /api/proxy endpoint. An attacker can construct malicious requests to cause Server-Side Request Forgery without logging in, attack intranet services, and leak sensitive information.
-</code>
-
-- [StephenQSstarThomas/aaa-agentxploit-example](https://github.com/StephenQSstarThomas/aaa-agentxploit-example)
-
 ### CVE-2024-33111 (2024-05-06)
 
 <code>D-Link DIR-845L router &lt;=v1.01KRb03 is vulnerable to Cross Site Scripting (XSS) via /htdocs/webinc/js/bsc_sms_inbox.php.
@@ -20386,6 +20392,7 @@
 - [advaitpathak21/CVE-2024-46987](https://github.com/advaitpathak21/CVE-2024-46987)
 - [rabouzia/CVE-2024-46987](https://github.com/rabouzia/CVE-2024-46987)
 - [BLUEBERRYP1LL/CVE-2024-46987](https://github.com/BLUEBERRYP1LL/CVE-2024-46987)
+- [bootstrapbool/msf-cve-2024-46987](https://github.com/bootstrapbool/msf-cve-2024-46987)
 
 ### CVE-2024-47051 (2025-02-26)
 
@@ -21291,6 +21298,8 @@
 </code>
 
 - [BwithE/CVE-2024-51482](https://github.com/BwithE/CVE-2024-51482)
+- [Gh0s7Ops/CVE-2024-51482-Multi-Stage-Surveillance-System-Exploit](https://github.com/Gh0s7Ops/CVE-2024-51482-Multi-Stage-Surveillance-System-Exploit)
+- [plur1bu5/CVE-2024-51482-PoC](https://github.com/plur1bu5/CVE-2024-51482-PoC)
 
 ### CVE-2024-51567 (2024-10-29)
 
@@ -22579,7 +22588,7 @@
 
 - [bAuh0lz/CVE-2023-0297_Pre-auth_RCE_in_pyLoad](https://github.com/bAuh0lz/CVE-2023-0297_Pre-auth_RCE_in_pyLoad)
 - [Small-ears/CVE-2023-0297](https://github.com/Small-ears/CVE-2023-0297)
-- [JacobEbben/CVE-2023-0297](https://github.com/JacobEbben/CVE-2023-0297)
+- [hazeyez/CVE-2023-0297](https://github.com/hazeyez/CVE-2023-0297)
 - [overgrowncarrot1/CVE-2023-0297](https://github.com/overgrowncarrot1/CVE-2023-0297)
 - [btar1gan/exploit_CVE-2023-0297](https://github.com/btar1gan/exploit_CVE-2023-0297)
 - [S4MY9/CVE-2023-0297](https://github.com/S4MY9/CVE-2023-0297)
@@ -31893,7 +31902,7 @@
 
 - [0x7eTeam/CVE-2022-0543](https://github.com/0x7eTeam/CVE-2022-0543)
 - [z92g/CVE-2022-0543](https://github.com/z92g/CVE-2022-0543)
-- [JacobEbben/CVE-2022-0543](https://github.com/JacobEbben/CVE-2022-0543)
+- [abramas/CVE-2022-0543](https://github.com/abramas/CVE-2022-0543)
 - [SiennaSkies/redisHack](https://github.com/SiennaSkies/redisHack)
 - [netw0rk7/CVE-2022-0543-Home-Lab](https://github.com/netw0rk7/CVE-2022-0543-Home-Lab)
 
@@ -34442,13 +34451,15 @@
 <code>Open Web Analytics (OWA) before 1.7.4 allows an unauthenticated remote attacker to obtain sensitive user information, which can be used to gain admin privileges by leveraging cache hashes. This occurs because files generated with '&lt;?php (instead of the intended &quot;&lt;?php sequence) aren't handled by the PHP interpreter.
 </code>
 
-- [JacobEbben/CVE-2022-24637](https://github.com/JacobEbben/CVE-2022-24637)
 - [Lay0us/CVE-2022-24637](https://github.com/Lay0us/CVE-2022-24637)
 - [hupe1980/CVE-2022-24637](https://github.com/hupe1980/CVE-2022-24637)
 - [icebreack/CVE-2022-24637](https://github.com/icebreack/CVE-2022-24637)
 - [Pflegusch/CVE-2022-24637](https://github.com/Pflegusch/CVE-2022-24637)
 - [0xM4hm0ud/CVE-2022-24637](https://github.com/0xM4hm0ud/CVE-2022-24637)
 - [0xRyuk/CVE-2022-24637](https://github.com/0xRyuk/CVE-2022-24637)
+
+### CVE-2022-24638
+- [726232111/CVE-2022-24638](https://github.com/726232111/CVE-2022-24638)
 
 ### CVE-2022-24644 (2022-03-07)
 
@@ -34516,7 +34527,7 @@
 <code>Icinga Web 2 is an open source monitoring web interface, framework and command-line interface. Authenticated users, with access to the configuration, can create SSH resource files in unintended directories, leading to the execution of arbitrary code. This issue has been resolved in versions 2.8.6, 2.9.6 and 2.10 of Icinga Web 2. Users unable to upgrade should limit access to the Icinga Web 2 configuration.
 </code>
 
-- [JacobEbben/CVE-2022-24715](https://github.com/JacobEbben/CVE-2022-24715)
+- [nimphtix/CVE-2022-24715](https://github.com/nimphtix/CVE-2022-24715)
 - [cxdxnt/CVE-2022-24715](https://github.com/cxdxnt/CVE-2022-24715)
 - [d4rkb0n3/CVE-2022-24715-go](https://github.com/d4rkb0n3/CVE-2022-24715-go)
 
@@ -34525,7 +34536,7 @@
 <code>Icinga Web 2 is an open source monitoring web interface, framework and command-line interface. Unauthenticated users can leak the contents of files of the local system accessible to the web-server user, including `icingaweb2` configuration files with database credentials. This issue has been resolved in versions 2.9.6 and 2.10 of Icinga Web 2. Database credentials should be rotated.
 </code>
 
-- [JacobEbben/CVE-2022-24716](https://github.com/JacobEbben/CVE-2022-24716)
+- [gmh5225/CVE-2022-24716](https://github.com/gmh5225/CVE-2022-24716)
 - [pumpkinpiteam/CVE-2022-24716](https://github.com/pumpkinpiteam/CVE-2022-24716)
 - [doosec101/CVE-2022-24716](https://github.com/doosec101/CVE-2022-24716)
 - [antisecc/CVE-2022-24716](https://github.com/antisecc/CVE-2022-24716)
@@ -38801,7 +38812,7 @@
 - [doosec101/CVE-2022-46169](https://github.com/doosec101/CVE-2022-46169)
 - [m3ssap0/cacti-rce-cve-2022-46169-vulnerable-application](https://github.com/m3ssap0/cacti-rce-cve-2022-46169-vulnerable-application)
 - [devAL3X/CVE-2022-46169_poc](https://github.com/devAL3X/CVE-2022-46169_poc)
-- [JacobEbben/CVE-2022-46169_unauth_remote_code_execution](https://github.com/JacobEbben/CVE-2022-46169_unauth_remote_code_execution)
+- [svchost9913/CVE-2022-46169_unauth_remote_code_execution](https://github.com/svchost9913/CVE-2022-46169_unauth_remote_code_execution)
 - [icebreack/CVE-2022-46169](https://github.com/icebreack/CVE-2022-46169)
 - [devilgothies/CVE-2022-46169](https://github.com/devilgothies/CVE-2022-46169)
 - [yassinebk/CVE-2022-46169](https://github.com/yassinebk/CVE-2022-46169)
@@ -38934,13 +38945,6 @@
 
 - [biscuitehh/cve-2022-46718-leaky-location](https://github.com/biscuitehh/cve-2022-46718-leaky-location)
 
-### CVE-2022-46836 (2023-02-20)
-
-<code>PHP code injection in watolib auth.php and hosttags.php in Tribe29's Checkmk &lt;= 2.1.0p10, Checkmk &lt;= 2.0.0p27, and Checkmk &lt;= 1.6.0p29 allows an attacker to inject and execute PHP code which will be executed upon request of the vulnerable component.
-</code>
-
-- [JacobEbben/CVE-2022-46836_remote_code_execution](https://github.com/JacobEbben/CVE-2022-46836_remote_code_execution)
-
 ### CVE-2022-46907 (2023-05-25)
 
 <code>A carefully crafted request on several JSPWiki plugins could trigger an XSS vulnerability on Apache JSPWiki, which could allow the attacker to execute javascript in the victim's browser and get some sensitive information about the victim.  Apache JSPWiki users should upgrade to 2.12.0 or later.
@@ -39024,13 +39028,6 @@
 </code>
 
 - [Cedric1314/CVE-2022-47872](https://github.com/Cedric1314/CVE-2022-47872)
-
-### CVE-2022-47909 (2023-02-20)
-
-<code>Livestatus Query Language (LQL) injection in the AuthUser HTTP query header of Tribe29's Checkmk &lt;= 2.1.0p11, Checkmk &lt;= 2.0.0p28, and all versions of Checkmk 1.6.0 (EOL) allows an attacker to perform direct queries to the application's core from localhost.
-</code>
-
-- [JacobEbben/CVE-2022-47909_unauth_arbitrary_file_deletion](https://github.com/JacobEbben/CVE-2022-47909_unauth_arbitrary_file_deletion)
 
 ### CVE-2022-47952 (2023-01-01)
 
@@ -39909,7 +39906,6 @@
 - [cuongtop4598/CVE-2021-3129-Script](https://github.com/cuongtop4598/CVE-2021-3129-Script)
 - [joshuavanderpoll/CVE-2021-3129](https://github.com/joshuavanderpoll/CVE-2021-3129)
 - [shadowabi/Laravel-CVE-2021-3129](https://github.com/shadowabi/Laravel-CVE-2021-3129)
-- [JacobEbben/CVE-2021-3129](https://github.com/JacobEbben/CVE-2021-3129)
 - [hupe1980/CVE-2021-3129](https://github.com/hupe1980/CVE-2021-3129)
 - [0nion1/CVE-2021-3129](https://github.com/0nion1/CVE-2021-3129)
 - [MadExploits/Laravel-debug-Checker](https://github.com/MadExploits/Laravel-debug-Checker)
@@ -39934,6 +39930,7 @@
 </code>
 
 - [jet-pentest/CVE-2021-3130](https://github.com/jet-pentest/CVE-2021-3130)
+- [lusterx/CVE-2021-3130](https://github.com/lusterx/CVE-2021-3130)
 
 ### CVE-2021-3131 (2021-01-13)
 
@@ -46820,6 +46817,7 @@
 - [CVEmaster/CVE-2020-1350](https://github.com/CVEmaster/CVE-2020-1350)
 - [gdwnet/cve-2020-1350](https://github.com/gdwnet/cve-2020-1350)
 - [simeononsecurity/CVE-2020-1350-Fix](https://github.com/simeononsecurity/CVE-2020-1350-Fix)
+- [sty886/CVE-2020-1350-SigRed](https://github.com/sty886/CVE-2020-1350-SigRed)
 
 ### CVE-2020-1362 (2020-07-14)
 
@@ -57591,7 +57589,6 @@
 </code>
 
 - [0x00-0x00/CVE-2018-7422](https://github.com/0x00-0x00/CVE-2018-7422)
-- [JacobEbben/CVE-2018-7422](https://github.com/JacobEbben/CVE-2018-7422)
 - [ndr-repo/CVE-2018-7422](https://github.com/ndr-repo/CVE-2018-7422)
 
 ### CVE-2018-7448 (2018-02-26)
@@ -68742,7 +68739,7 @@
 <code>The Java Server Pages (JSP) engine in Tomcat allows web page owners to cause a denial of service (engine crash) on the web server via a JSP page that calls WPrinterJob().pageSetup(null,null).
 </code>
 
-- [omarsallam2309-star/Full-Attack-Lifecycle-Simulation-on-Metasploitable](https://github.com/omarsallam2309-star/Full-Attack-Lifecycle-Simulation-on-Metasploitable)
+- [om4rsallam/Full-Attack-Lifecycle-Simulation-on-Metasploitable](https://github.com/om4rsallam/Full-Attack-Lifecycle-Simulation-on-Metasploitable)
 
 ### CVE-2002-0991 (2002-08-31)
 
