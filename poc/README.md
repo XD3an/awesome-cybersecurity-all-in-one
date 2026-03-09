@@ -59,6 +59,7 @@
 
 - [affix/CVE-2026-0770-PoC](https://github.com/affix/CVE-2026-0770-PoC)
 - [0xgh057r3c0n/CVE-2026-0770](https://github.com/0xgh057r3c0n/CVE-2026-0770)
+- [Yetazyyy/CVE-2026-0770](https://github.com/Yetazyyy/CVE-2026-0770)
 
 ### CVE-2026-0828
 - [wutang700/STProcessMonitorBYOVD](https://github.com/wutang700/STProcessMonitorBYOVD)
@@ -395,6 +396,7 @@
 - [leemuun/CVE-2026-20127](https://github.com/leemuun/CVE-2026-20127)
 - [BugFor-Pings/CVE-2026-20127_EXP](https://github.com/BugFor-Pings/CVE-2026-20127_EXP)
 - [yonathanpy/CVE-2026-20127-Cisco-SD-WAN-Preauth-RCE](https://github.com/yonathanpy/CVE-2026-20127-Cisco-SD-WAN-Preauth-RCE)
+- [abrahamsurf/sdwan-scanner-CVE-2026-20127](https://github.com/abrahamsurf/sdwan-scanner-CVE-2026-20127)
 
 ### CVE-2026-20131 (2026-03-04)
 
@@ -600,8 +602,9 @@
 - [samael0x4/CVE-2026-21962](https://github.com/samael0x4/CVE-2026-21962)
 - [boroeurnprach/Ashwesker-CVE-2026-21962](https://github.com/boroeurnprach/Ashwesker-CVE-2026-21962)
 - [ThumpBo/CVE-2026-21962](https://github.com/ThumpBo/CVE-2026-21962)
-- [gregk4sec/CVE-2026-21962](https://github.com/gregk4sec/CVE-2026-21962)
+- [gregk4sec/CVE-2026-21962-o](https://github.com/gregk4sec/CVE-2026-21962-o)
 - [George0Papasotiriou/CVE-2026-21962-Oracle-HTTP-Server-WebLogic-Proxy-Plug-in-Critical-](https://github.com/George0Papasotiriou/CVE-2026-21962-Oracle-HTTP-Server-WebLogic-Proxy-Plug-in-Critical-)
+- [gregk4sec/cve-2026-21962](https://github.com/gregk4sec/cve-2026-21962)
 
 ### CVE-2026-22153 (2026-02-10)
 
@@ -903,6 +906,13 @@
 
 - [aavamin/CVE-2026-24423](https://github.com/aavamin/CVE-2026-24423)
 
+### CVE-2026-24512 (2026-02-03)
+
+<code>A security issue was discovered in ingress-nginx cthe `rules.http.paths.path` Ingress field can be used to inject configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)
+</code>
+
+- [mghouse17/dependency-guardian-real-advisory-demo](https://github.com/mghouse17/dependency-guardian-real-advisory-demo)
+
 ### CVE-2026-24514 (2026-02-03)
 
 <code>A security issue was discovered in ingress-nginx where the validating admission controller feature is subject to a denial of service condition. By sending large requests to the validating admission controller, an attacker can cause memory consumption, which may result in the ingress-nginx controller pod being killed or the node running out of memory.
@@ -1089,9 +1099,6 @@
 </code>
 
 - [ibrahmsql/CVE-2026-25807-Exploit](https://github.com/ibrahmsql/CVE-2026-25807-Exploit)
-
-### CVE-2026-25854
-- [gregk4sec/CVE-2026-25854](https://github.com/gregk4sec/CVE-2026-25854)
 
 ### CVE-2026-25857 (2026-02-07)
 
@@ -1414,6 +1421,13 @@
 </code>
 
 - [Jvr2022/CVE-2026-29786](https://github.com/Jvr2022/CVE-2026-29786)
+
+### CVE-2026-30863 (2026-03-07)
+
+<code>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to versions 8.6.10 and 9.5.0-alpha.11, the Google, Apple, and Facebook authentication adapters use JWT verification to validate identity tokens. When the adapter's audience configuration option is not set (clientId for Google/Apple, appIds for Facebook), JWT verification silently skips audience claim validation. This allows an attacker to use a validly signed JWT issued for a different application to authenticate as any user on the target Parse Server. This issue has been patched in versions 8.6.10 and 9.5.0-alpha.11.
+</code>
+
+- [Worthes/CVE-2026-30863-Exploit](https://github.com/Worthes/CVE-2026-30863-Exploit)
 
 
 ## 2025
@@ -2750,6 +2764,7 @@
 - [Nxploited/CVE-2025-6440](https://github.com/Nxploited/CVE-2025-6440)
 - [m2hcz/CVE-2025-6440-Poc-Exploit](https://github.com/m2hcz/CVE-2025-6440-Poc-Exploit)
 - [rimbadirgantara/CVE-2025-6440](https://github.com/rimbadirgantara/CVE-2025-6440)
+- [0axz-tools/CVE-2025-6440](https://github.com/0axz-tools/CVE-2025-6440)
 
 ### CVE-2025-6514 (2025-07-09)
 
@@ -6257,6 +6272,7 @@
 
 - [cyhe50/cve-2025-32434-poc](https://github.com/cyhe50/cve-2025-32434-poc)
 - [B1tBit/CVE-2025-32434-exploit](https://github.com/B1tBit/CVE-2025-32434-exploit)
+- [Soildworks/Agentic-CLIP-Benchmark](https://github.com/Soildworks/Agentic-CLIP-Benchmark)
 
 ### CVE-2025-32462 (2025-06-30)
 
@@ -7729,7 +7745,7 @@
 - [dollarboysushil/CVE-2025-49132-Pterodactyl-Panel-Unauthenticated-Remote-Code-Execution-RCE-](https://github.com/dollarboysushil/CVE-2025-49132-Pterodactyl-Panel-Unauthenticated-Remote-Code-Execution-RCE-)
 - [thealchimist86/CVE-2025-49132-Pterodactyl-Panel-RCE](https://github.com/thealchimist86/CVE-2025-49132-Pterodactyl-Panel-RCE)
 - [scroollocker/CVE-2025-49132](https://github.com/scroollocker/CVE-2025-49132)
-- [rippxsec/CVE-2025-49132](https://github.com/rippxsec/CVE-2025-49132)
+- [rippxsec/CVE-2025-49132-PHP-PEAR](https://github.com/rippxsec/CVE-2025-49132-PHP-PEAR)
 - [popyue/CVE-2025-49132](https://github.com/popyue/CVE-2025-49132)
 - [4nuxd/CVE-2025-49132](https://github.com/4nuxd/CVE-2025-49132)
 - [revasec/CVE-2025-49132](https://github.com/revasec/CVE-2025-49132)
@@ -11052,6 +11068,7 @@
 - [maybe-O/CVE-2025-67303](https://github.com/maybe-O/CVE-2025-67303)
 - [ExploreUnknowed/CVE-2025-67303](https://github.com/ExploreUnknowed/CVE-2025-67303)
 - [materaj2/exploit_cve_2025_67303](https://github.com/materaj2/exploit_cve_2025_67303)
+- [Remnant-DB/CVE-2025-67303](https://github.com/Remnant-DB/CVE-2025-67303)
 
 ### CVE-2025-67315 (2026-01-05)
 
@@ -12188,6 +12205,13 @@
 
 - [yuziiiiiiiiii/CVE-2024-2074](https://github.com/yuziiiiiiiiii/CVE-2024-2074)
 
+### CVE-2024-2083 (2024-04-16)
+
+<code>A directory traversal vulnerability exists in the zenml-io/zenml repository, specifically within the /api/v1/steps endpoint. Attackers can exploit this vulnerability by manipulating the 'logs' URI path in the request to fetch arbitrary file content, bypassing intended access restrictions. The vulnerability arises due to the lack of validation for directory traversal patterns, allowing attackers to access files outside of the restricted directory.
+</code>
+
+- [Saptaktdk/zenml-CVE-2024-2083-POC](https://github.com/Saptaktdk/zenml-CVE-2024-2083-POC)
+
 ### CVE-2024-2169 (2024-03-19)
 
 <code>Implementations of UDP application protocol are vulnerable to network loops.   An unauthenticated attacker can use maliciously-crafted packets against a vulnerable implementation that can lead to Denial of Service (DOS) and/or abuse of resources.
@@ -12777,6 +12801,7 @@
 - [MihranGIT/CVE-2024-4367](https://github.com/MihranGIT/CVE-2024-4367)
 - [0xr2r/CVE-2024-4367](https://github.com/0xr2r/CVE-2024-4367)
 - [1337rokudenashi/Odoo_PDFjs_CVE-2024-4367.pdf](https://github.com/1337rokudenashi/Odoo_PDFjs_CVE-2024-4367.pdf)
+- [John-Popovici/CVE-2024-4367-pdfjs-exploit](https://github.com/John-Popovici/CVE-2024-4367-pdfjs-exploit)
 
 ### CVE-2024-4406 (2024-05-02)
 
@@ -15177,6 +15202,7 @@
 - [dionissh/CVE-2024-21413](https://github.com/dionissh/CVE-2024-21413)
 - [securenetexpert/CVE-2024-21413-Moniker-Link-Writeup](https://github.com/securenetexpert/CVE-2024-21413-Moniker-Link-Writeup)
 - [SallocinAvalcante/lab-SMB-responder-CVE-2024-21413](https://github.com/SallocinAvalcante/lab-SMB-responder-CVE-2024-21413)
+- [E-m-e-k-a/Moniker-Link-Lab-Setup](https://github.com/E-m-e-k-a/Moniker-Link-Lab-Setup)
 
 ### CVE-2024-21513 (2024-07-15)
 
@@ -21304,6 +21330,7 @@
 - [Gh0s7Ops/CVE-2024-51482-Multi-Stage-Surveillance-System-Exploit](https://github.com/Gh0s7Ops/CVE-2024-51482-Multi-Stage-Surveillance-System-Exploit)
 - [plur1bu5/CVE-2024-51482-PoC](https://github.com/plur1bu5/CVE-2024-51482-PoC)
 - [BridgerAlderson/CVE-2024-51482](https://github.com/BridgerAlderson/CVE-2024-51482)
+- [Ravi-lk/CVE-2024-51482-ZoneMinder-v1.37.-1.37.64-SQL-Injection-POC](https://github.com/Ravi-lk/CVE-2024-51482-ZoneMinder-v1.37.-1.37.64-SQL-Injection-POC)
 
 ### CVE-2024-51567 (2024-10-29)
 
@@ -22200,6 +22227,13 @@
 </code>
 
 - [griisemine/CVE-2024-56331](https://github.com/griisemine/CVE-2024-56331)
+
+### CVE-2024-56348 (2024-12-20)
+
+<code>In JetBrains TeamCity before 2024.12 improper access control allowed viewing details of unauthorized agents
+</code>
+
+- [joshuavanderpoll/cve-2024-56348](https://github.com/joshuavanderpoll/cve-2024-56348)
 
 ### CVE-2024-56428 (2025-05-21)
 
@@ -24337,6 +24371,7 @@
 - [G4sul1n/Cisco-IOS-XE-CVE-2023-20198](https://github.com/G4sul1n/Cisco-IOS-XE-CVE-2023-20198)
 - [Arshit01/CVE-2023-20198](https://github.com/Arshit01/CVE-2023-20198)
 - [Religan/CVE-2023-20198](https://github.com/Religan/CVE-2023-20198)
+- [gustavorobertux/cisco-cve-2023-20198-checker](https://github.com/gustavorobertux/cisco-cve-2023-20198-checker)
 
 ### CVE-2023-20209 (2023-08-16)
 
@@ -24676,6 +24711,13 @@
 </code>
 
 - [hd3s5aa/CVE-2023-21674](https://github.com/hd3s5aa/CVE-2023-21674)
+
+### CVE-2023-21688 (2023-02-14)
+
+<code>NT OS Kernel Elevation of Privilege Vulnerability
+</code>
+
+- [hyunjungg/CVE-2023-21688](https://github.com/hyunjungg/CVE-2023-21688)
 
 ### CVE-2023-21707 (2023-02-14)
 
@@ -28765,7 +28807,6 @@
 - [ra3edAJ/LAB-DFIR-cve-2023-38831](https://github.com/ra3edAJ/LAB-DFIR-cve-2023-38831)
 - [technicalcorp0/CVE-2023-38831-Exploit](https://github.com/technicalcorp0/CVE-2023-38831-Exploit)
 - [idkwastaken/CVE-2023-38831](https://github.com/idkwastaken/CVE-2023-38831)
-- [RonF98/CVE-2023-38831-POC](https://github.com/RonF98/CVE-2023-38831-POC)
 - [VictoriousKnight/CVE-2023-38831_Exploit](https://github.com/VictoriousKnight/CVE-2023-38831_Exploit)
 - [kuyrathdaro/cve-2023-38831](https://github.com/kuyrathdaro/cve-2023-38831)
 - [Tolu12wani/Demonstration-of-CVE-2023-38831-via-Reverse-Shell-Execution](https://github.com/Tolu12wani/Demonstration-of-CVE-2023-38831-via-Reverse-Shell-Execution)
@@ -28773,6 +28814,7 @@
 - [ouoxii/Software-Testing-Final-Project](https://github.com/ouoxii/Software-Testing-Final-Project)
 - [anelya0333/Exploiting-CVE-2023-38831](https://github.com/anelya0333/Exploiting-CVE-2023-38831)
 - [mishra0230/CVE-2023-38831](https://github.com/mishra0230/CVE-2023-38831)
+- [RonF98/CVE-2023-38831-POC](https://github.com/RonF98/CVE-2023-38831-POC)
 
 ### CVE-2023-38836 (2023-08-21)
 
@@ -68404,6 +68446,13 @@
 </code>
 
 - [Axua/CVE-2006-1236](https://github.com/Axua/CVE-2006-1236)
+
+### CVE-2006-2369 (2006-05-15)
+
+<code>RealVNC 4.1.1, and other products that use RealVNC such as AdderLink IP and Cisco CallManager, allows remote attackers to bypass authentication via a request in which the client specifies an insecure security type such as &quot;Type 1 - None&quot;, which is accepted even if it is not offered by the server, as originally demonstrated using a long password.
+</code>
+
+- [hacker1337itme/CVE-2006-2369](https://github.com/hacker1337itme/CVE-2006-2369)
 
 ### CVE-2006-2842 (2006-06-06)
 
