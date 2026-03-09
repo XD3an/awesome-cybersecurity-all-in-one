@@ -368,6 +368,9 @@
 ### CVE-2026-5252
 - [aydin5245/CVE-2026-5252-CVE-POC-ivanti](https://github.com/aydin5245/CVE-2026-5252-CVE-POC-ivanti)
 
+### CVE-2026-6111
+- [MonsterWsr-hub/CVE-2026-6111](https://github.com/MonsterWsr-hub/CVE-2026-6111)
+
 ### CVE-2026-7731
 - [SimoesCTT/CTT-Refraction-Vortex-CVE-2026-7731-](https://github.com/SimoesCTT/CTT-Refraction-Vortex-CVE-2026-7731-)
 
@@ -2020,6 +2023,13 @@
 - [SUPRAAA-1337/CVE-2025-3102-exploit](https://github.com/SUPRAAA-1337/CVE-2025-3102-exploit)
 - [0xgh057r3c0n/CVE-2025-3102](https://github.com/0xgh057r3c0n/CVE-2025-3102)
 - [baribut/CVE-2025-3102](https://github.com/baribut/CVE-2025-3102)
+
+### CVE-2025-3194 (2025-04-04)
+
+<code>Versions of the package bigint-buffer from 0.0.0 are vulnerable to Buffer Overflow in the toBigIntLE() function. Attackers can exploit this to crash the application.
+</code>
+
+- [LoserLab/bigint-buffer-safe](https://github.com/LoserLab/bigint-buffer-safe)
 
 ### CVE-2025-3243 (2025-04-04)
 
@@ -6080,7 +6090,8 @@
 <code>Improper Neutralization of Escape, Meta, or Control Sequences vulnerability in Apache Tomcat. For a subset of unlikely rewrite rule configurations, it was possible \nfor a specially crafted request to bypass some rewrite rules. If those \nrewrite rules effectively enforced security constraints, those \nconstraints could be bypassed.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.5, from 10.1.0-M1 through 10.1.39, from 9.0.0.M1 through 9.0.102.\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: 8.5.0 though 8.5.100. Other, older, EOL versions \nmay also be affected.\n\n\nUsers are recommended to upgrade to version [FIXED_VERSION], which fixes the issue.
 </code>
 
-- [gregk4sec/CVE-2025-31651](https://github.com/gregk4sec/CVE-2025-31651)
+- [gregk4sec/CVE-2025-31651-o](https://github.com/gregk4sec/CVE-2025-31651-o)
+- [gregk4sec/cve-2025-31651](https://github.com/gregk4sec/cve-2025-31651)
 
 ### CVE-2025-31700 (2025-07-23)
 
@@ -7303,7 +7314,7 @@
 <code>Improper Handling of Case Sensitivity vulnerability in Apache Tomcat's GCI servlet allows security constraint bypass of security constraints that apply to the pathInfo component of a URI mapped to the CGI servlet.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.6, from 10.1.0-M1 through 10.1.40, from 9.0.0.M1 through 9.0.104.\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: 8.5.0 though 8.5.100. Other, older, EOL versions \nmay also be affected.\n\n\nUsers are recommended to upgrade to version 11.0.7, 10.1.41 or 9.0.105, which fixes the issue.
 </code>
 
-- [gregk4sec/CVE-2025-46701](https://github.com/gregk4sec/CVE-2025-46701)
+- [gregk4sec/CVE-2025-46701-o](https://github.com/gregk4sec/CVE-2025-46701-o)
 
 ### CVE-2025-46721 (2025-05-13)
 
@@ -13381,6 +13392,7 @@
 - [moften/regreSSHion-CVE-2024-6387](https://github.com/moften/regreSSHion-CVE-2024-6387)
 - [OhDamnn/Noregressh](https://github.com/OhDamnn/Noregressh)
 - [Ngagne-Demba-Dia/CVE-2024-6387-corrigee](https://github.com/Ngagne-Demba-Dia/CVE-2024-6387-corrigee)
+- [Remnant-DB/CVE-2024-6387](https://github.com/Remnant-DB/CVE-2024-6387)
 
 ### CVE-2024-6460 (2024-08-16)
 
@@ -40384,7 +40396,6 @@
 - [dadvlingd/CVE-2021-4034](https://github.com/dadvlingd/CVE-2021-4034)
 - [tahaafarooq/poppy](https://github.com/tahaafarooq/poppy)
 - [PwnFunction/CVE-2021-4034](https://github.com/PwnFunction/CVE-2021-4034)
-- [c3c/CVE-2021-4034](https://github.com/c3c/CVE-2021-4034)
 - [galoget/PwnKit-CVE-2021-4034](https://github.com/galoget/PwnKit-CVE-2021-4034)
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
@@ -41442,6 +41453,7 @@
 </code>
 
 - [c4cnm/Exploit_CVE-2021-24762](https://github.com/c4cnm/Exploit_CVE-2021-24762)
+- [NT1410/CVE-2021-24762](https://github.com/NT1410/CVE-2021-24762)
 
 ### CVE-2021-24807 (2021-11-08)
 
@@ -58471,6 +58483,7 @@
 - [HSw109/CVE-2018-10933](https://github.com/HSw109/CVE-2018-10933)
 - [bidaoui4905/CVE-2018-10933](https://github.com/bidaoui4905/CVE-2018-10933)
 - [opsifiz/CVE-2018-10933](https://github.com/opsifiz/CVE-2018-10933)
+- [Remnant-DB/CVE-2018-10933](https://github.com/Remnant-DB/CVE-2018-10933)
 
 ### CVE-2018-10936 (2018-08-30)
 
@@ -59209,6 +59222,7 @@
 - [Alph4Sec/ssh_enum_py](https://github.com/Alph4Sec/ssh_enum_py)
 - [anonymous121029034720384234234/py-network-scanner](https://github.com/anonymous121029034720384234234/py-network-scanner)
 - [jubeenshah/CVE-2018-15473-Exploit](https://github.com/jubeenshah/CVE-2018-15473-Exploit)
+- [Remnant-DB/CVE-2018-15473](https://github.com/Remnant-DB/CVE-2018-15473)
 
 ### CVE-2018-15499 (2018-08-24)
 
@@ -59216,6 +59230,13 @@
 </code>
 
 - [DownWithUp/CVE-2018-15499](https://github.com/DownWithUp/CVE-2018-15499)
+
+### CVE-2018-15599 (2018-08-21)
+
+<code>The recv_msg_userauth_request function in svr-auth.c in Dropbear through 2018.76 is prone to a user enumeration vulnerability because username validity affects how fields in SSH_MSG_USERAUTH messages are handled, a similar issue to CVE-2018-15473 in an unrelated codebase.
+</code>
+
+- [Remnant-DB/CVE-2018-15599](https://github.com/Remnant-DB/CVE-2018-15599)
 
 ### CVE-2018-15686 (2018-10-26)
 
