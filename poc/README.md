@@ -38,6 +38,13 @@
 
 - [l0lsec/tapo-c260-rce](https://github.com/l0lsec/tapo-c260-rce)
 
+### CVE-2026-0709 (2026-01-30)
+
+<code>Some Hikvision Wireless Access Points are vulnerable to authenticated command execution due to insufficient input validation. Attackers with valid credentials can exploit this flaw by sending crafted packets containing malicious commands to affected devices, leading to arbitrary command execution.
+</code>
+
+- [SnipersMaster/CVE-2026-0709](https://github.com/SnipersMaster/CVE-2026-0709)
+
 ### CVE-2026-0745 (2026-02-14)
 
 <code>The User Language Switch plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 1.6.10 due to missing URL validation on the 'download_language()' function. This makes it possible for authenticated attackers, with Administrator-level access and above, to make web requests to arbitrary locations originating from the web application and can be used to query and modify information from internal services.
@@ -1396,7 +1403,7 @@
 
 - [mbanyamer/CVE-2026-28372-GNU-inetutils-telnetd-Privilege-Escalation](https://github.com/mbanyamer/CVE-2026-28372-GNU-inetutils-telnetd-Privilege-Escalation)
 - [kalibb/CVE-2026-28372-GNU-inetutils-telnetd-Privilege-Escalation-main](https://github.com/kalibb/CVE-2026-28372-GNU-inetutils-telnetd-Privilege-Escalation-main)
-- [Rohitberiwala/CVE-2026-28372](https://github.com/Rohitberiwala/CVE-2026-28372)
+- [Rohitberiwala/CVE-2026-28372-telnetd-Privilege-Escalation](https://github.com/Rohitberiwala/CVE-2026-28372-telnetd-Privilege-Escalation)
 
 ### CVE-2026-29000 (2026-03-04)
 
@@ -1412,6 +1419,13 @@
 
 - [celeboy711-hue/CVE-2026-29041](https://github.com/celeboy711-hue/CVE-2026-29041)
 
+### CVE-2026-29780 (2026-03-07)
+
+<code>eml_parser serves as a python module for parsing eml files and returning various information found in the e-mail as well as computed information. Prior to version 2.0.1, the official example script examples/recursively_extract_attachments.py contains a path traversal vulnerability that allows arbitrary file write outside the intended output directory. Attachment filenames extracted from parsed emails are directly used to construct output file paths without any sanitization, allowing an attacker-controlled filename to escape the target directory. This issue has been patched in version 2.0.1.
+</code>
+
+- [redyank/CVE-2026-29780](https://github.com/redyank/CVE-2026-29780)
+
 ### CVE-2026-29781 (2026-03-07)
 
 <code>Sliver is a command and control framework that uses a custom Wireguard netstack. In versions from 1.7.3 and prior, a vulnerability exists in the Sliver C2 server's Protobuf unmarshalling logic due to a systemic lack of nil-pointer validation. By extracting valid implant credentials and omitting nested fields in a signed message, an authenticated actor can trigger an unhandled runtime panic. Because the mTLS, WireGuard, and DNS transport layers lack the panic recovery middleware present in the HTTP transport, this results in a global process termination. While requiring post-authentication access (a captured implant), this flaw effectively acts as an infrastructure &quot;kill-switch,&quot; instantly severing all active sessions across the entire fleet and requiring a manual server restart to restore operations. At time of publication, there are no publicly available patches.
@@ -1425,6 +1439,7 @@
 </code>
 
 - [Jvr2022/CVE-2026-29786](https://github.com/Jvr2022/CVE-2026-29786)
+- [Rohitberiwala/NodeJS-Tar-Symlink-Exploit-CVE-2026-29786](https://github.com/Rohitberiwala/NodeJS-Tar-Symlink-Exploit-CVE-2026-29786)
 
 ### CVE-2026-30862 (2026-03-09)
 
@@ -9909,6 +9924,13 @@
 
 - [baktistr/cve-2025-59532-poc](https://github.com/baktistr/cve-2025-59532-poc)
 
+### CVE-2025-59536 (2025-10-03)
+
+<code>Claude Code is an agentic coding tool. Versions before 1.0.111 were vulnerable to Code Injection due to a bug in the startup trust dialog implementation. Claude Code could be tricked to execute code contained in a project before the user accepted the startup trust dialog. Exploiting this requires a user to start Claude Code in an untrusted directory. Users on standard Claude Code auto-update will have received this fix automatically. Users performing manual updates are advised to update to the latest version. This issue is fixed in version 1.0.111.
+</code>
+
+- [Rohitberiwala/Claude-Code-MCP-Injection-PoC](https://github.com/Rohitberiwala/Claude-Code-MCP-Injection-PoC)
+
 ### CVE-2025-59718 (2025-12-09)
 
 <code>A improper verification of cryptographic signature vulnerability in Fortinet FortiOS 7.6.0 through 7.6.3, FortiOS 7.4.0 through 7.4.8, FortiOS 7.2.0 through 7.2.11, FortiOS 7.0.0 through 7.0.17, FortiProxy 7.6.0 through 7.6.3, FortiProxy 7.4.0 through 7.4.10, FortiProxy 7.2.0 through 7.2.14, FortiProxy 7.0.0 through 7.0.21, FortiSwitchManager 7.2.0 through 7.2.6, FortiSwitchManager 7.0.0 through 7.0.5 allows an unauthenticated attacker to bypass the FortiCloud SSO login authentication via a crafted SAML response message.
@@ -10073,6 +10095,9 @@
 </code>
 
 - [hackergovind/CVE-2025-61246](https://github.com/hackergovind/CVE-2025-61246)
+
+### CVE-2025-61299
+- [GovindPalakkal/CVE-2025-61299_POC](https://github.com/GovindPalakkal/CVE-2025-61299_POC)
 
 ### CVE-2025-61301 (2025-10-20)
 
@@ -10301,6 +10326,13 @@
 - [MMAKINGDOM/CVE-2025-63420](https://github.com/MMAKINGDOM/CVE-2025-63420)
 - [hossainshadat/CVE-2025-63420](https://github.com/hossainshadat/CVE-2025-63420)
 
+### CVE-2025-63441 (2025-11-03)
+
+<code>Open Source Social Network (OSSN) 8.6 is vulnerable to Cross Site Scripting (XSS) via the parameter param` at endpoint u/administrator/friends.
+</code>
+
+- [Kgan0509/CVE-2025-63441](https://github.com/Kgan0509/CVE-2025-63441)
+
 ### CVE-2025-63498 (2025-11-24)
 
 <code>alinto SOGo 5.12.3 is vulnerable to Cross Site Scripting (XSS) via the &quot;userName&quot; parameter.
@@ -10457,13 +10489,6 @@
 </code>
 
 - [cybercrewinc/CVE-2025-64027](https://github.com/cybercrewinc/CVE-2025-64027)
-
-### CVE-2025-64087 (2026-01-20)
-
-<code>A Server-Side Template Injection (SSTI) vulnerability in the FreeMarker component of opensagres XDocReport v1.0.0 to v2.1.0 allows attackers to execute arbitrary code via injecting crafted template expressions.
-</code>
-
-- [AT190510-Cuong/CVE-2025-64087-SSTI-](https://github.com/AT190510-Cuong/CVE-2025-64087-SSTI-)
 
 ### CVE-2025-64095 (2025-10-28)
 
@@ -10656,13 +10681,6 @@
 </code>
 
 - [zero-day348/CVE-2025-65442-DOM-based-Cross-Site-Scripting-XSS-Vulnerability-in-novel-V3.5.0-CWE-79-](https://github.com/zero-day348/CVE-2025-65442-DOM-based-Cross-Site-Scripting-XSS-Vulnerability-in-novel-V3.5.0-CWE-79-)
-
-### CVE-2025-65482 (2026-01-20)
-
-<code>An XML External Entity (XXE) vulnerability in opensagres XDocReport v0.9.2 to v2.0.3 allows attackers to execute arbitrary code via uploading a crafted .docx file.
-</code>
-
-- [AT190510-Cuong/CVE-2025-65482-XXE-](https://github.com/AT190510-Cuong/CVE-2025-65482-XXE-)
 
 ### CVE-2025-65518 (2026-01-08)
 
@@ -11433,6 +11451,13 @@
 
 ### CVE-2025-69460
 - [Tagoletta/CVE-2025-69460](https://github.com/Tagoletta/CVE-2025-69460)
+
+### CVE-2025-69516 (2026-01-29)
+
+<code>A Server-Side Template Injection (SSTI) vulnerability in the /reporting/templates/preview/ endpoint of Amidaware Tactical RMM, affecting versions equal to or earlier than v1.3.1, allows low-privileged users with Report Viewer or Report Manager permissions to achieve remote command execution on the server. This occurs due to improper sanitization of the template_md parameter, enabling direct injection of Jinja2 templates. This occurs due to misuse of the generate_html() function, the user-controlled value is inserted into `env.from_string`, a function that processes Jinja2 templates arbitrarily, making an SSTI possible.
+</code>
+
+- [NtGabrielGomes/CVE-2025-69516](https://github.com/NtGabrielGomes/CVE-2025-69516)
 
 ### CVE-2025-69581 (2026-01-16)
 
@@ -15739,6 +15764,13 @@
 </code>
 
 - [hrtowii/CVE-2024-23208-test](https://github.com/hrtowii/CVE-2024-23208-test)
+
+### CVE-2024-23222 (2024-01-23)
+
+<code>A type confusion issue was addressed with improved checks. This issue is fixed in iOS 17.3 and iPadOS 17.3, macOS Sonoma 14.3, tvOS 17.3. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been exploited.
+</code>
+
+- [Rohitberiwala/CVE-2024-23222-Coruna-Exploit-Kit-Deobfuscated](https://github.com/Rohitberiwala/CVE-2024-23222-Coruna-Exploit-Kit-Deobfuscated)
 
 ### CVE-2024-23296 (2024-03-05)
 
@@ -34629,7 +34661,7 @@
 
 - [gmh5225/CVE-2022-24716](https://github.com/gmh5225/CVE-2022-24716)
 - [pumpkinpiteam/CVE-2022-24716](https://github.com/pumpkinpiteam/CVE-2022-24716)
-- [doosec101/CVE-2022-24716](https://github.com/doosec101/CVE-2022-24716)
+- [0x0Jackal/CVE-2022-24716](https://github.com/0x0Jackal/CVE-2022-24716)
 - [antisecc/CVE-2022-24716](https://github.com/antisecc/CVE-2022-24716)
 - [gmh5225/CVE-2022-24716-2](https://github.com/gmh5225/CVE-2022-24716-2)
 
@@ -38900,7 +38932,7 @@
 - [N1arut/CVE-2022-46169_POC](https://github.com/N1arut/CVE-2022-46169_POC)
 - [miko550/CVE-2022-46169](https://github.com/miko550/CVE-2022-46169)
 - [ariyaadinatha/cacti-cve-2022-46169-exploit](https://github.com/ariyaadinatha/cacti-cve-2022-46169-exploit)
-- [doosec101/CVE-2022-46169](https://github.com/doosec101/CVE-2022-46169)
+- [0x0Jackal/CVE-2022-46169](https://github.com/0x0Jackal/CVE-2022-46169)
 - [m3ssap0/cacti-rce-cve-2022-46169-vulnerable-application](https://github.com/m3ssap0/cacti-rce-cve-2022-46169-vulnerable-application)
 - [devAL3X/CVE-2022-46169_poc](https://github.com/devAL3X/CVE-2022-46169_poc)
 - [svchost9913/CVE-2022-46169_unauth_remote_code_execution](https://github.com/svchost9913/CVE-2022-46169_unauth_remote_code_execution)
