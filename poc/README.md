@@ -154,6 +154,7 @@
 - [cybertechajju/CVE-2026-1357-POC](https://github.com/cybertechajju/CVE-2026-1357-POC)
 - [rootdirective-sec/CVE-2026-1357-Lab](https://github.com/rootdirective-sec/CVE-2026-1357-Lab)
 - [CVEs-Labs/CVE-2026-1357](https://github.com/CVEs-Labs/CVE-2026-1357)
+- [Nxploited/CVE-2026-1357](https://github.com/Nxploited/CVE-2026-1357)
 
 ### CVE-2026-1405 (2026-02-19)
 
@@ -277,6 +278,7 @@
 </code>
 
 - [JoshuaProvoste/CVE-2026-2472-Vertex-AI-SDK-Google-Cloud](https://github.com/JoshuaProvoste/CVE-2026-2472-Vertex-AI-SDK-Google-Cloud)
+- [megafart1/CVE-2026-2472-Vertex-AI-SDK-Google-Cloud](https://github.com/megafart1/CVE-2026-2472-Vertex-AI-SDK-Google-Cloud)
 
 ### CVE-2026-2628 (2026-03-03)
 
@@ -338,12 +340,12 @@
 
 - [archana1122m/CVE-disclosures](https://github.com/archana1122m/CVE-disclosures)
 
-### CVE-2026-3224 (2026-03-03)
+### CVE-2026-3288 (2026-03-09)
 
-<code>Authentication bypass in the Microsoft Entra ID (Azure AD) authentication mode in Devolutions Server 2025.3.15.0 and earlier allows an unauthenticated user to authenticate as an arbitrary Entra ID user via a forged JSON Web Token (JWT).
+<code>A security issue was discovered in ingress-nginx where the `nginx.ingress.kubernetes.io/rewrite-target` Ingress annotation can be used to inject configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)
 </code>
 
-- [HiZisec/CVE-2026-3224-Exploit](https://github.com/HiZisec/CVE-2026-3224-Exploit)
+- [SnailSploit/CVE-2026-3288](https://github.com/SnailSploit/CVE-2026-3288)
 
 ### CVE-2026-3304 (2026-02-27)
 
@@ -543,6 +545,13 @@
 - [washingtonmaister/CVE-2026-21533](https://github.com/washingtonmaister/CVE-2026-21533)
 - [richardpaimu34/CVE-2026-21533](https://github.com/richardpaimu34/CVE-2026-21533)
 - [fevar54/CVE-2026-21533_Scanner.py](https://github.com/fevar54/CVE-2026-21533_Scanner.py)
+
+### CVE-2026-21536 (2026-03-05)
+
+<code>Microsoft Devices Pricing Program Remote Code Execution Vulnerability
+</code>
+
+- [b1gchoi/CVE-2026-21536-RCE](https://github.com/b1gchoi/CVE-2026-21536-RCE)
 
 ### CVE-2026-21627 (2026-02-20)
 
@@ -793,6 +802,13 @@
 
 - [TheDeepOpc/CVE-2026-23885](https://github.com/TheDeepOpc/CVE-2026-23885)
 
+### CVE-2026-23907 (2026-03-10)
+
+<code>This issue affects the \nExtractEmbeddedFiles example in Apache PDFBox: from 2.0.24 through 2.0.35, from 3.0.0 through 3.0.6.\n\n\nThe ExtractEmbeddedFiles example contains a path traversal vulnerability (CWE-22) because \nthe filename that is obtained from \nPDComplexFileSpecification.getFilename() is appended to the extraction path.\n\nUsers who have copied this example into their production code should \nreview it to ensure that the extraction path is acceptable. The example \nhas been changed accordingly, now the initial path and the extraction \npaths are converted into canonical paths and it is verified that \nextraction path contains the initial path. The documentation has also \nbeen adjusted.
+</code>
+
+- [JoakimBulow/CVE-2026-23907](https://github.com/JoakimBulow/CVE-2026-23907)
+
 ### CVE-2026-23947 (2026-01-20)
 
 <code>Orval generates type-safe JS clients (TypeScript) from any valid OpenAPI v3 or Swagger v2 specification. Versions prior to 7.19.0 until 8.0.2 are vulnerable to arbitrary code execution in environments consuming generated clients. This issue is similar in nature to CVE-2026-22785, but affects a different code path in @orval/core that was not addressed by CVE-2026-22785's fix. The vulnerability allows untrusted OpenAPI specifications to inject arbitrary TypeScript/JavaScript code into generated clients via the x-enumDescriptions field, which is embedded without proper escaping in getEnumImplementation(). I have confirmed that the injection occurs during const enum generation and results in executable code within the generated schema files. Orval 7.19.0 and 8.0.2 contain a fix for the issue.
@@ -907,7 +923,7 @@
 <code>SmarterTools SmarterMail versions prior to build 9511 contain an unauthenticated remote code execution vulnerability in the ConnectToHub API method. The attacker could point the SmarterMail to the malicious HTTP server, which serves the malicious OS command. This command will be executed by the vulnerable application.
 </code>
 
-- [aavamin/CVE-2026-24423](https://github.com/aavamin/CVE-2026-24423)
+- [aaddmin1122345/CVE-2026-24423](https://github.com/aaddmin1122345/CVE-2026-24423)
 
 ### CVE-2026-24512 (2026-02-03)
 
@@ -1365,7 +1381,11 @@
 
 - [hadhub/CVE-2026-27639-Mercator-XSS](https://github.com/hadhub/CVE-2026-27639-Mercator-XSS)
 
-### CVE-2026-27825
+### CVE-2026-27825 (2026-03-10)
+
+<code>MCP Atlassian is a Model Context Protocol (MCP) server for Atlassian products (Confluence and Jira). Prior to version 0.17.0, the `confluence_download_attachment` MCP tool accepts a `download_path` parameter that is written to without any directory boundary enforcement. An attacker who can call this tool and supply or access a Confluence attachment with malicious content can write arbitrary content to any path the server process has write access to. Because the attacker controls both the write destination and the written content (via an uploaded Confluence attachment), this constitutes for arbitrary code execution (for example, writing a valid cron entry to `/etc/cron.d/` achieves code execution within one scheduler cycle with no server restart required). Version 0.17.0 fixes the issue.
+</code>
+
 - [plutosecurity/MCPwnfluence](https://github.com/plutosecurity/MCPwnfluence)
 
 ### CVE-2026-27831 (2026-02-26)
@@ -1374,6 +1394,15 @@
 </code>
 
 - [bluedragonsecurity/CVE-2026-27831-POC](https://github.com/bluedragonsecurity/CVE-2026-27831-POC)
+
+### CVE-2026-27944 (2026-03-05)
+
+<code>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.3, the /api/backup endpoint is accessible without authentication and discloses the encryption keys required to decrypt the backup in the X-Backup-Security response header. This allows an unauthenticated attacker to download a full system backup containing sensitive data (user credentials, session tokens, SSL private keys, Nginx configurations) and decrypt it immediately. This issue has been patched in version 2.3.3.
+</code>
+
+- [weefunker/CVE-2026-27944-Lab](https://github.com/weefunker/CVE-2026-27944-Lab)
+- [NULL200OK/CVE-2026-27944](https://github.com/NULL200OK/CVE-2026-27944)
+- [NULL200OK/-nginxui_discover](https://github.com/NULL200OK/-nginxui_discover)
 
 ### CVE-2026-27959 (2026-02-26)
 
@@ -1440,6 +1469,9 @@
 
 - [Jvr2022/CVE-2026-29786](https://github.com/Jvr2022/CVE-2026-29786)
 - [Rohitberiwala/NodeJS-Tar-Symlink-Exploit-CVE-2026-29786](https://github.com/Rohitberiwala/NodeJS-Tar-Symlink-Exploit-CVE-2026-29786)
+
+### CVE-2026-30741
+- [Named1ess/CVE-2026-30741](https://github.com/Named1ess/CVE-2026-30741)
 
 ### CVE-2026-30862 (2026-03-09)
 
@@ -3785,6 +3817,13 @@
 
 - [0xXA/google-poc](https://github.com/0xXA/google-poc)
 
+### CVE-2025-13465 (2026-01-21)
+
+<code>Lodash versions 4.0.0 through 4.17.22 are vulnerable to prototype pollution in the _.unset and _.omit functions. An attacker can pass crafted paths which cause Lodash to delete methods from global prototypes.\n\nThe issue permits deletion of properties but does not allow overwriting their original behavior.\n\nThis issue is patched on 4.17.23
+</code>
+
+- [jaytarr-geo/nextjs-lodash-cve-2025-13465-repro](https://github.com/jaytarr-geo/nextjs-lodash-cve-2025-13465-repro)
+
 ### CVE-2025-13486 (2025-12-03)
 
 <code>The Advanced Custom Fields: Extended plugin for WordPress is vulnerable to Remote Code Execution in versions 0.9.0.5 through 0.9.1.1 via the prepare_form() function. This is due to the function accepting user input and then passing that through call_user_func_array(). This makes it possible for unauthenticated attackers to execute arbitrary code on the server, which can be leveraged to inject backdoors or create new administrative user accounts.
@@ -5291,6 +5330,13 @@
 
 - [absholi7ly/CVE-2025-27007-OttoKit-exploit](https://github.com/absholi7ly/CVE-2025-27007-OttoKit-exploit)
 
+### CVE-2025-27136 (2025-03-10)
+
+<code>LocalS3 is an Amazon S3 mock service for testing and local development. Prior to version 1.21, the LocalS3 service's bucket creation endpoint is vulnerable to XML External Entity (XXE) injection. When processing the CreateBucketConfiguration XML document during bucket creation, the service's XML parser is configured to resolve external entities. This allows an attacker to declare an external entity that references an internal URL, which the server will then attempt to fetch when parsing the XML. The vulnerability specifically occurs in the location constraint processing, where the XML parser resolves external entities without proper validation or restrictions. When the external entity is resolved, the server makes an HTTP request to the specified URL and includes the response content in the parsed XML document. This vulnerability can be exploited to perform server-side request forgery (SSRF) attacks, allowing an attacker to make requests to internal services or resources that should not be accessible from external networks. The server will include the responses from these internal requests in the resulting bucket configuration, effectively leaking sensitive information. The attacker only needs to be able to send HTTP requests to the LocalS3 service to exploit this vulnerability.
+</code>
+
+- [IssaBoudin/CVE-2025-27136](https://github.com/IssaBoudin/CVE-2025-27136)
+
 ### CVE-2025-27152 (2025-03-07)
 
 <code>axios is a promise based HTTP client for the browser and node.js. The issue occurs when passing absolute URLs rather than protocol-relative URLs to axios. Even if ⁠baseURL is set, axios sends the request to the specified absolute URL, potentially causing SSRF and credential leakage. This issue impacts both server-side and client-side usage of axios. This issue is fixed in 1.8.2.
@@ -6662,7 +6708,7 @@
 - [PentHertz/CVE-2025-36911-exploit](https://github.com/PentHertz/CVE-2025-36911-exploit)
 - [fa1sa1142/wpair-app](https://github.com/fa1sa1142/wpair-app)
 - [fa1sa1142/fa1sa1142.github.io](https://github.com/fa1sa1142/fa1sa1142.github.io)
-- [Athexhacker/BLUE-SPY](https://github.com/Athexhacker/BLUE-SPY)
+- [Athexblackhat/BLUE-SPY](https://github.com/Athexblackhat/BLUE-SPY)
 
 ### CVE-2025-37164 (2025-12-16)
 
@@ -10027,6 +10073,13 @@
 
 - [akamai/CVE-2025-60719-AFD.SYS](https://github.com/akamai/CVE-2025-60719-AFD.SYS)
 
+### CVE-2025-60739 (2025-11-25)
+
+<code>Cross Site Request Forgery (CSRF) vulnerability in Ilevia EVE X1 Server Firmware Version v4.7.18.0.eden and before, Logic Version v6.00 - 2025_07_21 allows a remote attacker to execute arbitrary code via the /bh_web_backend component
+</code>
+
+- [GadaLuBau1337/CVE-2025-60739](https://github.com/GadaLuBau1337/CVE-2025-60739)
+
 ### CVE-2025-60752
 - [zer0matt/CVE-2025-60752](https://github.com/zer0matt/CVE-2025-60752)
 
@@ -10909,6 +10962,13 @@
 
 - [richard-natan/PoC-CVE-2025-66224](https://github.com/richard-natan/PoC-CVE-2025-66224)
 
+### CVE-2025-66398 (2026-01-01)
+
+<code>Signal K Server is a server application that runs on a central hub in a boat. Prior to version 2.19.0, an unauthenticated attacker can pollute the internal state (`restoreFilePath`) of the server via the `/skServer/validateBackup` endpoint. This allows the attacker to hijack the administrator's &quot;Restore&quot; functionality to overwrite critical server configuration files (e.g., `security.json`, `package.json`), leading to account takeover and Remote Code Execution (RCE). Version 2.19.0 patches this vulnerability.
+</code>
+
+- [joshuavanderpoll/cve-2025-66398](https://github.com/joshuavanderpoll/cve-2025-66398)
+
 ### CVE-2025-66417 (2026-01-15)
 
 <code>GLPI is a free asset and IT management software package. From 11.0.0, &lt; 11.0.3, an unauthenticated user can perform a SQL injection through the inventory endpoint. This vulnerability is fixed in 11.0.3.
@@ -11730,7 +11790,7 @@
 - [MrW0l05zyn/cve-2024-0044](https://github.com/MrW0l05zyn/cve-2024-0044)
 - [canyie/CVE-2024-0044](https://github.com/canyie/CVE-2024-0044)
 - [Dit-Developers/CVE-2024-0044](https://github.com/Dit-Developers/CVE-2024-0044)
-- [Athexhacker/EXPLOITER](https://github.com/Athexhacker/EXPLOITER)
+- [Athexblackhat/EXPLOITER](https://github.com/Athexblackhat/EXPLOITER)
 - [HoyoenKim/CVE-2024-0044_PoC](https://github.com/HoyoenKim/CVE-2024-0044_PoC)
 - [JackTekno/Chrome-Forensic_CVE-2024-0044](https://github.com/JackTekno/Chrome-Forensic_CVE-2024-0044)
 
@@ -12914,7 +12974,7 @@
 - [Chocapikk/CVE-2024-4577](https://github.com/Chocapikk/CVE-2024-4577)
 - [K3ysTr0K3R/CVE-2024-4577-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2024-4577-EXPLOIT)
 - [bl4cksku11/CVE-2024-4577](https://github.com/bl4cksku11/CVE-2024-4577)
-- [aavamin/cve-2024-4577](https://github.com/aavamin/cve-2024-4577)
+- [aaddmin1122345/cve-2024-4577](https://github.com/aaddmin1122345/cve-2024-4577)
 - [d3ck4/Shodan-CVE-2024-4577](https://github.com/d3ck4/Shodan-CVE-2024-4577)
 - [Entropt/CVE-2024-4577_Analysis](https://github.com/Entropt/CVE-2024-4577_Analysis)
 - [0XFFFF-XD/CVE-2024-4577-PHP-CGI-RCE](https://github.com/0XFFFF-XD/CVE-2024-4577-PHP-CGI-RCE)
@@ -16801,6 +16861,7 @@
 - [Cythonic1/CVE-2024-27198_POC](https://github.com/Cythonic1/CVE-2024-27198_POC)
 - [ArtemCyberLab/Project-Exploiting-CVE-2024-27198-RCE-Vulnerability](https://github.com/ArtemCyberLab/Project-Exploiting-CVE-2024-27198-RCE-Vulnerability)
 - [EynaExp/CVE-2024-27198-POC](https://github.com/EynaExp/CVE-2024-27198-POC)
+- [dbwlsdnr95/CVE-2024-27198](https://github.com/dbwlsdnr95/CVE-2024-27198)
 
 ### CVE-2024-27292 (2024-02-29)
 
@@ -18066,6 +18127,8 @@
 - [SandBlastx/flask-vuln-baseline](https://github.com/SandBlastx/flask-vuln-baseline)
 - [SandBlastx/flask-vuln-v1](https://github.com/SandBlastx/flask-vuln-v1)
 - [SandBlastx/flask-vuln-v2](https://github.com/SandBlastx/flask-vuln-v2)
+- [SandBlastx/flask-vuln-v5](https://github.com/SandBlastx/flask-vuln-v5)
+- [SandBlastx/flask-vuln-v6](https://github.com/SandBlastx/flask-vuln-v6)
 
 ### CVE-2024-34102 (2024-06-13)
 
@@ -21380,6 +21443,13 @@
 - [refr4g/CVE-2024-51378](https://github.com/refr4g/CVE-2024-51378)
 - [qnole000/CVE-2024-51378](https://github.com/qnole000/CVE-2024-51378)
 - [rimbadirgantara/CVE-2024-51378](https://github.com/rimbadirgantara/CVE-2024-51378)
+
+### CVE-2024-51428 (2024-11-07)
+
+<code>An issue in Espressif Esp idf v5.3.0 allows attackers to cause a Denial of Service (DoS) via a crafted data channel packet.
+</code>
+
+- [D1se0/CVE-2024-51428-PoC](https://github.com/D1se0/CVE-2024-51428-PoC)
 
 ### CVE-2024-51430 (2024-10-31)
 
@@ -36691,6 +36761,7 @@
 </code>
 
 - [gigaryte/cve-2022-31898](https://github.com/gigaryte/cve-2022-31898)
+- [CryptoGhost1/MangoPunch-CVE-2022-31898](https://github.com/CryptoGhost1/MangoPunch-CVE-2022-31898)
 
 ### CVE-2022-31901 (2023-01-19)
 
@@ -38372,6 +38443,7 @@
 - [ifconfig-me/Log4Shell-Payloads](https://github.com/ifconfig-me/Log4Shell-Payloads)
 - [shoucheng3/asf__commons-text_CVE-2022-42889_1-9](https://github.com/shoucheng3/asf__commons-text_CVE-2022-42889_1-9)
 - [Goultarde/CVE-2022-42889-text4shell](https://github.com/Goultarde/CVE-2022-42889-text4shell)
+- [engranaabubakar/CVE-2022-42889](https://github.com/engranaabubakar/CVE-2022-42889)
 
 ### CVE-2022-42896 (2022-11-23)
 
@@ -66470,6 +66542,7 @@
 - [nika0x38/CVE-2014-6287](https://github.com/nika0x38/CVE-2014-6287)
 - [JoaZ94/rejjeto_hfs-rce-exploit-cve-2014-6287](https://github.com/JoaZ94/rejjeto_hfs-rce-exploit-cve-2014-6287)
 - [jagg3rsec/CVE-2014-6287](https://github.com/jagg3rsec/CVE-2014-6287)
+- [R3fr4kt/Optimum](https://github.com/R3fr4kt/Optimum)
 
 ### CVE-2014-6332 (2014-11-11)
 
