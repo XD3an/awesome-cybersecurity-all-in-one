@@ -176,7 +176,6 @@
 </code>
 
 - [dreamboyim66-boop/CVE-2026-1492-POC](https://github.com/dreamboyim66-boop/CVE-2026-1492-POC)
-- [DeadExpl0it/CVE-2026-1492](https://github.com/DeadExpl0it/CVE-2026-1492)
 
 ### CVE-2026-1529 (2026-02-09)
 
@@ -263,7 +262,6 @@
 - [b1gchoi/CVE-2026-2441_POC](https://github.com/b1gchoi/CVE-2026-2441_POC)
 - [huseyinstif/CVE-2026-2441-PoC](https://github.com/huseyinstif/CVE-2026-2441-PoC)
 - [theemperorspath/CVE-2026-2441-PoC](https://github.com/theemperorspath/CVE-2026-2441-PoC)
-- [washingtonmaister/CVE-2026-2441](https://github.com/washingtonmaister/CVE-2026-2441)
 - [atiilla/CVE-2026-2441_PoC](https://github.com/atiilla/CVE-2026-2441_PoC)
 - [NetVanguard-cmd/CVE-2026-2441](https://github.com/NetVanguard-cmd/CVE-2026-2441)
 - [D3b0j33t/CVE-2026-2441-PoC](https://github.com/D3b0j33t/CVE-2026-2441-PoC)
@@ -340,6 +338,13 @@
 
 - [archana1122m/CVE-disclosures](https://github.com/archana1122m/CVE-disclosures)
 
+### CVE-2026-3228 (2026-03-10)
+
+<code>The NextScripts: Social Networks Auto-Poster plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `[nxs_fbembed]` shortcode in all versions up to, and including, 4.4.6. This is due to insufficient input sanitization and output escaping on the `snapFB` post meta value. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+</code>
+
+- [NULL200OK/CVE-2026-3228](https://github.com/NULL200OK/CVE-2026-3228)
+
 ### CVE-2026-3288 (2026-03-09)
 
 <code>A security issue was discovered in ingress-nginx where the `nginx.ingress.kubernetes.io/rewrite-target` Ingress annotation can be used to inject configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)
@@ -361,6 +366,13 @@
 
 - [mbanyamer/CVE-2026-3395-MaxSite-CMS-Unauthenticated-RCE](https://github.com/mbanyamer/CVE-2026-3395-MaxSite-CMS-Unauthenticated-RCE)
 - [rootdirective-sec/CVE-2026-3395-Lab](https://github.com/rootdirective-sec/CVE-2026-3395-Lab)
+
+### CVE-2026-3786 (2026-03-08)
+
+<code>A security flaw has been discovered in EasyCMS up to 1.6. The impacted element is an unknown function of the file /RbacuserAction.class.php of the component Request Parameter Handler. The manipulation of the argument _order results in sql injection. The attack can be launched remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.
+</code>
+
+- [snapdowgg/CVE-2026-3786](https://github.com/snapdowgg/CVE-2026-3786)
 
 ### CVE-2026-4821
 - [openexecution-coder/demo-cve-2026-4821](https://github.com/openexecution-coder/demo-cve-2026-4821)
@@ -399,6 +411,7 @@
 - [BugFor-Pings/CVE-2026-20127_EXP](https://github.com/BugFor-Pings/CVE-2026-20127_EXP)
 - [yonathanpy/CVE-2026-20127-Cisco-SD-WAN-Preauth-RCE](https://github.com/yonathanpy/CVE-2026-20127-Cisco-SD-WAN-Preauth-RCE)
 - [abrahamsurf/sdwan-scanner-CVE-2026-20127](https://github.com/abrahamsurf/sdwan-scanner-CVE-2026-20127)
+- [sfewer-r7/CVE-2026-20127](https://github.com/sfewer-r7/CVE-2026-20127)
 
 ### CVE-2026-20131 (2026-03-04)
 
@@ -542,7 +555,6 @@
 - [Pairs34/RDPVulnarableCheck](https://github.com/Pairs34/RDPVulnarableCheck)
 - [elvin31thai/CVE-2026-21533](https://github.com/elvin31thai/CVE-2026-21533)
 - [jenniferreire26/CVE-2026-21533](https://github.com/jenniferreire26/CVE-2026-21533)
-- [washingtonmaister/CVE-2026-21533](https://github.com/washingtonmaister/CVE-2026-21533)
 - [richardpaimu34/CVE-2026-21533](https://github.com/richardpaimu34/CVE-2026-21533)
 - [fevar54/CVE-2026-21533_Scanner.py](https://github.com/fevar54/CVE-2026-21533_Scanner.py)
 
@@ -616,14 +628,6 @@
 - [gregk4sec/CVE-2026-21962-o](https://github.com/gregk4sec/CVE-2026-21962-o)
 - [George0Papasotiriou/CVE-2026-21962-Oracle-HTTP-Server-WebLogic-Proxy-Plug-in-Critical-](https://github.com/George0Papasotiriou/CVE-2026-21962-Oracle-HTTP-Server-WebLogic-Proxy-Plug-in-Critical-)
 - [gregk4sec/cve-2026-21962](https://github.com/gregk4sec/cve-2026-21962)
-
-### CVE-2026-22153 (2026-02-10)
-
-<code>An Authentication Bypass by Primary Weakness vulnerability [CWE-305] vulnerability in Fortinet FortiOS 7.6.0 through 7.6.4 may allow an unauthenticated attacker to bypass LDAP authentication of Agentless VPN or FSSO policy, when the remote LDAP server is configured in a specific way.
-</code>
-
-- [washingtonmaister/CVE-2026-22153-exp](https://github.com/washingtonmaister/CVE-2026-22153-exp)
-- [glitchhawks/CVE-2026-22153](https://github.com/glitchhawks/CVE-2026-22153)
 
 ### CVE-2026-22187 (2026-01-07)
 
@@ -1324,13 +1328,6 @@
 
 - [alimezar/CVE-2026-27199-werkzeug-safe-join-bypass-PoC](https://github.com/alimezar/CVE-2026-27199-werkzeug-safe-join-bypass-PoC)
 
-### CVE-2026-27211 (2026-02-21)
-
-<code>Cloud Hypervisor is a Virtual Machine Monitor for Cloud workloads. Versions 34.0 through 50.0 arevulnerable to arbitrary host file exfiltration (constrained by process privileges) when using virtio-block devices backed by raw images. A malicious guest can overwrite its disk header with a crafted QCOW2 structure pointing to a sensitive host path. Upon the next VM boot or disk scan, the image format auto-detection parses this header and serves the host file's contents to the guest. Guest-initiated VM reboots are sufficient to trigger a disk scan and do not cause the Cloud Hypervisor process to exit. Therefore, a single VM can perform this attack without needing interaction from the management stack. Successful exploitation requires the backing image to be either writable by the guest or sourced from an untrusted origin. Deployments utilizing only trusted, read-only images are not affected. This issue has been fixed in version 50.1. To workaround, enable land lock sandboxing and restrict process privileges and access.
-</code>
-
-- [glitchhawks/CVE-2026-27211](https://github.com/glitchhawks/CVE-2026-27211)
-
 ### CVE-2026-27470 (2026-02-21)
 
 <code>ZoneMinder is a free, open source closed-circuit television software application. In versions 1.36.37 and below and 1.37.61 through 1.38.0, there is a second-order SQL Injection vulnerability in the web/ajax/status.php file within the getNearEvents() function. Event field values (specifically Name and Cause) are stored safely via parameterized queries but are later retrieved and concatenated directly into SQL WHERE clauses without escaping. An authenticated user with Events edit and view permissions can exploit this to execute arbitrary SQL queries.
@@ -1450,6 +1447,7 @@
 </code>
 
 - [kernelzeroday/CVE-2026-29000](https://github.com/kernelzeroday/CVE-2026-29000)
+- [rootdirective-sec/CVE-2026-29000-Lab](https://github.com/rootdirective-sec/CVE-2026-29000-Lab)
 
 ### CVE-2026-29041 (2026-03-06)
 
@@ -1480,7 +1478,11 @@
 - [Jvr2022/CVE-2026-29786](https://github.com/Jvr2022/CVE-2026-29786)
 - [Rohitberiwala/NodeJS-Tar-Symlink-Exploit-CVE-2026-29786](https://github.com/Rohitberiwala/NodeJS-Tar-Symlink-Exploit-CVE-2026-29786)
 
-### CVE-2026-30741
+### CVE-2026-30741 (2026-03-11)
+
+<code>A remote code execution (RCE) vulnerability in OpenClaw Agent Platform v2026.2.6 allows attackers to execute arbitrary code via a Request-Side prompt injection attack.
+</code>
+
 - [Named1ess/CVE-2026-30741](https://github.com/Named1ess/CVE-2026-30741)
 
 ### CVE-2026-30862 (2026-03-09)
@@ -1503,6 +1505,34 @@
 </code>
 
 - [FilipeGaudard/CVE-2026-30944-PoC](https://github.com/FilipeGaudard/CVE-2026-30944-PoC)
+
+### CVE-2026-30945 (2026-03-10)
+
+<code>StudioCMS is a server-side-rendered, Astro native, headless content management system. Prior to 0.4.0, the DELETE /studiocms_api/dashboard/api-tokens endpoint allows any authenticated user with editor privileges or above to revoke API tokens belonging to any other user, including admin and owner accounts. The handler accepts tokenID and userID directly from the request payload without verifying token ownership, caller identity, or role hierarchy. This enables targeted denial of service against critical integrations and automations. This vulnerability is fixed in 0.4.0.
+</code>
+
+- [FilipeGaudard/CVE-2026-30945-PoC](https://github.com/FilipeGaudard/CVE-2026-30945-PoC)
+
+### CVE-2026-30952 (2026-03-10)
+
+<code>liquidjs is a Shopify / GitHub Pages compatible template engine in pure JavaScript. Prior to 10.25.0, the layout, render, and include tags allow arbitrary file access via absolute paths (either as string literals or through Liquid variables, the latter require dynamicPartials: true, which is the default). This poses a security risk when malicious users are allowed to control the template content or specify the filepath to be included as a Liquid variable. This vulnerability is fixed in 10.25.0.
+</code>
+
+- [MorielHarush/CVE-2026-30952-PoC](https://github.com/MorielHarush/CVE-2026-30952-PoC)
+
+### CVE-2026-31844 (2026-03-11)
+
+<code>An authenticated SQL Injection vulnerability (CWE-89) exists in the Koha staff interface in the /cgi-bin/koha/suggestion/suggestion.pl endpoint due to improper validation of the displayby parameter used by the GetDistinctValues functionality. A low-privileged staff user can inject arbitrary SQL queries via crafted requests to this parameter, allowing execution of unintended SQL statements and exposure of sensitive database information. Successful exploitation may lead to full compromise of the backend database, including disclosure or modification of stored data.
+</code>
+
+- [Mothra-1/CVE-2026-31844](https://github.com/Mothra-1/CVE-2026-31844)
+
+### CVE-2026-32127 (2026-03-11)
+
+<code>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to 8.0.0.1, OpenEMR contains a SQL injection vulnerability in the ajax graphs library that can be exploited by authenticated attackers. The vulnerability exists due to insufficient input validation in the ajax graphs library. This vulnerability is fixed in 8.0.0.1.
+</code>
+
+- [ChrisSub08/CVE-2026-32127_SqlInjectionVulnerabilityOpenEMR8.0.0](https://github.com/ChrisSub08/CVE-2026-32127_SqlInjectionVulnerabilityOpenEMR8.0.0)
 
 
 ## 2025
@@ -1952,6 +1982,13 @@
 </code>
 
 - [IHK-ONE/CVE-2025-2502](https://github.com/IHK-ONE/CVE-2025-2502)
+
+### CVE-2025-2512 (2025-03-19)
+
+<code>The File Away plugin for WordPress is vulnerable to arbitrary file uploads due to a missing capability check and missing file type validation in the upload() function in all versions up to, and including, 3.9.9.0.1. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
+</code>
+
+- [whattheslime/file-away-exploit](https://github.com/whattheslime/file-away-exploit)
 
 ### CVE-2025-2539 (2025-03-20)
 
@@ -5353,6 +5390,7 @@
 </code>
 
 - [IssaBoudin/CVE-2025-27136](https://github.com/IssaBoudin/CVE-2025-27136)
+- [ZaidMkh32/CVE-2025-27136-XXE-LocalS3](https://github.com/ZaidMkh32/CVE-2025-27136-XXE-LocalS3)
 
 ### CVE-2025-27152 (2025-03-07)
 
@@ -6565,6 +6603,7 @@
 - [cve-2025-33073/cve-2025-33073](https://github.com/cve-2025-33073/cve-2025-33073)
 - [uziii2208/CVE-2025-33073](https://github.com/uziii2208/CVE-2025-33073)
 - [irjfifndn-prog/Blackash-CVE-2025-33073](https://github.com/irjfifndn-prog/Blackash-CVE-2025-33073)
+- [IyarGross/SMB-CVE-2025-33073](https://github.com/IyarGross/SMB-CVE-2025-33073)
 
 ### CVE-2025-34028 (2025-04-22)
 
@@ -11123,7 +11162,11 @@
 ### CVE-2025-66955
 - [TheWoodenBench/CVE-2025-66955](https://github.com/TheWoodenBench/CVE-2025-66955)
 
-### CVE-2025-66956
+### CVE-2025-66956 (2026-03-11)
+
+<code>Insecure Access Control in Contact Plan, E-Mail, SMS and Fax components in Asseco SEE Live 2.0 allows remote attackers to access and execute attachments via a computable URL.
+</code>
+
 - [TheWoodenBench/CVE-2025-66956](https://github.com/TheWoodenBench/CVE-2025-66956)
 
 ### CVE-2025-67070 (2026-01-09)
@@ -11609,7 +11652,11 @@
 - [tianarsamm/CVE-2025-69985](https://github.com/tianarsamm/CVE-2025-69985)
 - [joshuavanderpoll/CVE-2025-69985](https://github.com/joshuavanderpoll/CVE-2025-69985)
 
-### CVE-2025-70330
+### CVE-2025-70330 (2026-03-11)
+
+<code>Easy Grade Pro 4.1.0.2 contains a file parsing logic flaw in the handling of proprietary .EGP gradebook files. By modifying specific fields at precise offsets within an otherwise valid .EGP file, an attacker can trigger an out-of-bounds memory read during parsing. This results in an unhandled access violation and application crash, leading to a local denial-of-service condition when the crafted file is opened by a user.
+</code>
+
 - [TheMalwareGuardian/CVE-2025-70330](https://github.com/TheMalwareGuardian/CVE-2025-70330)
 
 ### CVE-2025-70341 (2026-03-04)
@@ -12560,6 +12607,7 @@
 - [encikayelwhitehat-glitch/CVE-2024-3094](https://github.com/encikayelwhitehat-glitch/CVE-2024-3094)
 - [BOSE122/CVE-2024-3094](https://github.com/BOSE122/CVE-2024-3094)
 - [hackura/xz-cve-2024-3094](https://github.com/hackura/xz-cve-2024-3094)
+- [michalAshurov/writeup-CVE-2024-3094](https://github.com/michalAshurov/writeup-CVE-2024-3094)
 
 ### CVE-2024-3105 (2024-06-15)
 
@@ -15273,6 +15321,7 @@
 - [tykawaii98/CVE-2024-21338_PoC](https://github.com/tykawaii98/CVE-2024-21338_PoC)
 - [Crowdfense/CVE-2024-21338](https://github.com/Crowdfense/CVE-2024-21338)
 - [hackyboiz/kcfg-bypass](https://github.com/hackyboiz/kcfg-bypass)
+- [MistyFir/CVE-2024-21338-Exploit](https://github.com/MistyFir/CVE-2024-21338-Exploit)
 
 ### CVE-2024-21345 (2024-02-13)
 
@@ -24229,6 +24278,13 @@
 </code>
 
 - [illixion/root-my-webos-tv](https://github.com/illixion/root-my-webos-tv)
+
+### CVE-2023-6329 (2023-11-27)
+
+<code>An authentication bypass vulnerability exists in Control iD iDSecure v4.7.32.0. The login routine used by iDS-Core.dll contains a &quot;passwordCustom&quot; option that allows an unauthenticated attacker to compute valid credentials that can be used to bypass authentication and act as an administrative user.
+</code>
+
+- [itzvenom/CVE-2023-6329](https://github.com/itzvenom/CVE-2023-6329)
 
 ### CVE-2023-6350 (2023-11-29)
 
@@ -40242,6 +40298,7 @@
 - [Maalfer/Sudo-CVE-2021-3156](https://github.com/Maalfer/Sudo-CVE-2021-3156)
 - [HuzaifaTariqAfzalKhan/CVE-Exploit-Research-Development-ITSOLERA](https://github.com/HuzaifaTariqAfzalKhan/CVE-Exploit-Research-Development-ITSOLERA)
 - [VilmarTuminskii/cve-2021-3156-sudo-lab](https://github.com/VilmarTuminskii/cve-2021-3156-sudo-lab)
+- [TheLeopard65/CVE-2021-3156-Baron-Samedit](https://github.com/TheLeopard65/CVE-2021-3156-Baron-Samedit)
 
 ### CVE-2021-3157
 - [CrackerCat/cve-2021-3157](https://github.com/CrackerCat/cve-2021-3157)
@@ -40554,7 +40611,6 @@
 - [galoget/PwnKit-CVE-2021-4034](https://github.com/galoget/PwnKit-CVE-2021-4034)
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
-- [jcatala/f_poc_cve-2021-4034](https://github.com/jcatala/f_poc_cve-2021-4034)
 - [Nosferatuvjr/PwnKit](https://github.com/Nosferatuvjr/PwnKit)
 - [TotallyNotAHaxxer/CVE-2021-4034](https://github.com/TotallyNotAHaxxer/CVE-2021-4034)
 - [rhin0cer0s/CVE-2021-4034](https://github.com/rhin0cer0s/CVE-2021-4034)
