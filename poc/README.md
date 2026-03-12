@@ -231,6 +231,13 @@
 
 - [carlosbudiman/CVE-2026-1953-Disclosure](https://github.com/carlosbudiman/CVE-2026-1953-Disclosure)
 
+### CVE-2026-2058 (2026-02-06)
+
+<code>A flaw has been found in mathurvishal CloudClassroom-PHP-Project up to 5dadec098bfbbf3300d60c3494db3fb95b66e7be. This impacts an unknown function of the file /postquerypublic.php of the component Post Query Details Page. This manipulation of the argument gnamex causes sql injection. The attack is possible to be carried out remotely. The exploit has been published and may be used. This product adopts a rolling release strategy to maintain continuous delivery. Therefore, version details for affected or updated releases cannot be specified. The vendor was contacted early about this disclosure but did not respond in any way.
+</code>
+
+- [carlosalbertotuma/CVE-2026-2058-PoC](https://github.com/carlosalbertotuma/CVE-2026-2058-PoC)
+
 ### CVE-2026-2113 (2026-02-07)
 
 <code>A security vulnerability has been detected in yuan1994 tpadmin up to 1.3.12. This affects an unknown part in the library /public/static/admin/lib/webuploader/0.1.5/server/preview.php of the component WebUploader. The manipulation leads to deserialization. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used. This vulnerability only affects products that are no longer supported by the maintainer.
@@ -407,6 +414,7 @@
 </code>
 
 - [zerozenxlabs/CVE-2026-20127---Cisco-SD-WAN-Preauth-RCE](https://github.com/zerozenxlabs/CVE-2026-20127---Cisco-SD-WAN-Preauth-RCE)
+- [randeepajayasekara/CVE-2026-20127](https://github.com/randeepajayasekara/CVE-2026-20127)
 - [leemuun/CVE-2026-20127](https://github.com/leemuun/CVE-2026-20127)
 - [BugFor-Pings/CVE-2026-20127_EXP](https://github.com/BugFor-Pings/CVE-2026-20127_EXP)
 - [yonathanpy/CVE-2026-20127-Cisco-SD-WAN-Preauth-RCE](https://github.com/yonathanpy/CVE-2026-20127-Cisco-SD-WAN-Preauth-RCE)
@@ -15900,7 +15908,7 @@
 
 ### CVE-2024-23222 (2024-01-23)
 
-<code>A type confusion issue was addressed with improved checks. This issue is fixed in iOS 17.3 and iPadOS 17.3, macOS Sonoma 14.3, tvOS 17.3. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been exploited.
+<code>A type confusion issue was addressed with improved checks. This issue is fixed in iOS 17.3 and iPadOS 17.3, macOS Sonoma 14.3, tvOS 17.3, iOS 16.7.5 and iPadOS 16.7.5, iOS 15.8.7 and iPadOS 15.8.7. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been exploited.
 </code>
 
 - [Rohitberiwala/CVE-2024-23222-Coruna-Exploit-Kit-Deobfuscated](https://github.com/Rohitberiwala/CVE-2024-23222-Coruna-Exploit-Kit-Deobfuscated)
@@ -27459,7 +27467,6 @@
 - [LeDocteurDesBits/cve-2023-32784](https://github.com/LeDocteurDesBits/cve-2023-32784)
 - [hau-zy/KeePass-dump-py](https://github.com/hau-zy/KeePass-dump-py)
 - [dawnl3ss/CVE-2023-32784](https://github.com/dawnl3ss/CVE-2023-32784)
-- [le01s/poc-CVE-2023-32784](https://github.com/le01s/poc-CVE-2023-32784)
 - [mister-turtle/cve-2023-32784](https://github.com/mister-turtle/cve-2023-32784)
 - [Cmadhushanka/CVE-2023-32784-Exploitation](https://github.com/Cmadhushanka/CVE-2023-32784-Exploitation)
 - [dev0558/CVE-2023-32784-EXPLOIT-REPORT](https://github.com/dev0558/CVE-2023-32784-EXPLOIT-REPORT)
