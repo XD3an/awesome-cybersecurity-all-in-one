@@ -540,6 +540,7 @@
 - [kaizensecurity/CVE-2026-21509](https://github.com/kaizensecurity/CVE-2026-21509)
 - [planetoid/cve-2026-21509-mitigation](https://github.com/planetoid/cve-2026-21509-mitigation)
 - [suuhm/CVE-2026-21509-handler](https://github.com/suuhm/CVE-2026-21509-handler)
+- [DameDode/CVE-2026-21509-POC](https://github.com/DameDode/CVE-2026-21509-POC)
 
 ### CVE-2026-21510 (2026-02-10)
 
@@ -1410,6 +1411,13 @@
 
 - [bluedragonsecurity/CVE-2026-27831-POC](https://github.com/bluedragonsecurity/CVE-2026-27831-POC)
 
+### CVE-2026-27884 (2026-02-26)
+
+<code>NetExec is a network execution tool. Prior to version 1.5.1, the module spider_plus improperly creates the output file and folder path when saving files from SMB shares. It does not take into account that it is possible for Linux SMB shares to have path traversal characters such as `../` in them. An attacker can craft a filename in an SMB share that includes these characters, which when spider_plus crawls and downloads, can write or overwrite arbitrary files. The issue is patched in v1.5.1. As a workaround, do not run spider_plus with DOWNLOAD=true against targets.
+</code>
+
+- [RaynLight/CVE-2026-27884](https://github.com/RaynLight/CVE-2026-27884)
+
 ### CVE-2026-27944 (2026-03-05)
 
 <code>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.3, the /api/backup endpoint is accessible without authentication and discloses the encryption keys required to decrypt the backup in the X-Backup-Security response header. This allows an unauthenticated attacker to download a full system backup containing sensitive data (user credentials, session tokens, SSL private keys, Nginx configurations) and decrypt it immediately. This issue has been patched in version 2.3.3.
@@ -1463,6 +1471,13 @@
 </code>
 
 - [celeboy711-hue/CVE-2026-29041](https://github.com/celeboy711-hue/CVE-2026-29041)
+
+### CVE-2026-29053 (2026-03-05)
+
+<code>Ghost is a Node.js content management system. From version 0.7.2 to 6.19.0, specifically crafted malicious themes can execute arbitrary code on the server running Ghost. This issue has been patched in version 6.19.1.
+</code>
+
+- [rootxran/CVE-2026-29053](https://github.com/rootxran/CVE-2026-29053)
 
 ### CVE-2026-29780 (2026-03-07)
 
@@ -1527,6 +1542,13 @@
 </code>
 
 - [MorielHarush/CVE-2026-30952-PoC](https://github.com/MorielHarush/CVE-2026-30952-PoC)
+
+### CVE-2026-31816 (2026-03-09)
+
+<code>Budibase is a low code platform for creating internal tools, workflows, and admin panels. In 3.31.4 and earlier, the Budibase server's authorized() middleware that protects every server-side API endpoint can be completely bypassed by appending a webhook path pattern to the query string of any request. The isWebhookEndpoint() function uses an unanchored regex that tests against ctx.request.url, which in Koa includes the full URL with query parameters. When the regex matches, the authorized() middleware immediately calls return next(), skipping all authentication, authorization, role checks, and CSRF protection. This means a completely unauthenticated, remote attacker can access any server-side API endpoint by simply appending ?/webhooks/trigger (or any webhook pattern variant) to the URL.
+</code>
+
+- [imjdl/CVE-2026-31816-rshell](https://github.com/imjdl/CVE-2026-31816-rshell)
 
 ### CVE-2026-31844 (2026-03-11)
 
@@ -2685,6 +2707,7 @@
 </code>
 
 - [TheMalwareGuardian/CVE-2025-5548](https://github.com/TheMalwareGuardian/CVE-2025-5548)
+- [alanschmidt81/CVE-2025-5548](https://github.com/alanschmidt81/CVE-2025-5548)
 
 ### CVE-2025-5640 (2025-06-05)
 
@@ -2880,7 +2903,7 @@
 <code>The Sneeit Framework plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 8.3 via the sneeit_articles_pagination_callback() function. This is due to the function accepting user input and then passing that through call_user_func(). This makes it possible for unauthenticated attackers to execute code on the server which can be leveraged to inject backdoors or, for example, create new administrative user accounts.
 </code>
 
-- [aritlhq/Blackash-CVE-2025-6389](https://github.com/aritlhq/Blackash-CVE-2025-6389)
+- [shac1x/Blackash-CVE-2025-6389](https://github.com/shac1x/Blackash-CVE-2025-6389)
 - [itsismarcos/SneeitScanner-CVE-2025-6389](https://github.com/itsismarcos/SneeitScanner-CVE-2025-6389)
 
 ### CVE-2025-6440 (2025-10-24)
@@ -6801,6 +6824,7 @@
 - [khoatran107/cve-2025-38001](https://github.com/khoatran107/cve-2025-38001)
 - [ngobao2002/CVE-2025-38001-test](https://github.com/ngobao2002/CVE-2025-38001-test)
 - [boeseejykbtanke348/CVE-2025-38001](https://github.com/boeseejykbtanke348/CVE-2025-38001)
+- [aexdyhaxor/CVE-2025-38001](https://github.com/aexdyhaxor/CVE-2025-38001)
 
 ### CVE-2025-38089 (2025-06-30)
 
@@ -9388,6 +9412,7 @@
 - [InferiorAK/CVE-2025-55182-React2Shell-Async-Scanner](https://github.com/InferiorAK/CVE-2025-55182-React2Shell-Async-Scanner)
 - [DeDnY/CVE-2025-55182-in-docker](https://github.com/DeDnY/CVE-2025-55182-in-docker)
 - [luoqichen/CVE-2025-55182-POC](https://github.com/luoqichen/CVE-2025-55182-POC)
+- [lutraat/CVE-2025-55182-React-RSC-Exploit](https://github.com/lutraat/CVE-2025-55182-React-RSC-Exploit)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -11167,7 +11192,11 @@
 
 - [kabir0104k/CVE-2025-66947](https://github.com/kabir0104k/CVE-2025-66947)
 
-### CVE-2025-66955
+### CVE-2025-66955 (2026-03-12)
+
+<code>Local File Inclusion in Contact Plan, E-Mail, SMS and Fax components in Asseco SEE Live 2.0 allows remote authenticated users to access files on the host via &quot;path&quot; parameter in the downloadAttachment and downloadAttachmentFromPath API calls.
+</code>
+
 - [TheWoodenBench/CVE-2025-66955](https://github.com/TheWoodenBench/CVE-2025-66955)
 
 ### CVE-2025-66956 (2026-03-11)
@@ -11539,6 +11568,9 @@
 
 - [ClemaX/Gitea-Forgejo-CVE-2025-68937](https://github.com/ClemaX/Gitea-Forgejo-CVE-2025-68937)
 
+### CVE-2025-68971
+- [ChewKeanHo/research-cve-2025-68971](https://github.com/ChewKeanHo/research-cve-2025-68971)
+
 ### CVE-2025-69015 (2025-12-30)
 
 <code>Missing Authorization vulnerability in Automattic Crowdsignal Forms crowdsignal-forms allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Crowdsignal Forms: from n/a through &lt;= 1.7.2.
@@ -11623,6 +11655,9 @@
 
 ### CVE-2025-69690
 - [privlabs/CVE-2025-69690-CVE-2025-69691](https://github.com/privlabs/CVE-2025-69690-CVE-2025-69691)
+
+### CVE-2025-69727
+- [0xZeroSec/CVE-2025-69727](https://github.com/0xZeroSec/CVE-2025-69727)
 
 ### CVE-2025-69821 (2026-01-22)
 
@@ -13574,7 +13609,7 @@
 - [kinu404/CVE-2024-6387](https://github.com/kinu404/CVE-2024-6387)
 - [xiw1ll/CVE-2024-6387_Checker](https://github.com/xiw1ll/CVE-2024-6387_Checker)
 - [moften/regreSSHion-CVE-2024-6387](https://github.com/moften/regreSSHion-CVE-2024-6387)
-- [OhDamnn/Noregressh](https://github.com/OhDamnn/Noregressh)
+- [OHHDamnBRO/Noregressh](https://github.com/OHHDamnBRO/Noregressh)
 - [Ngagne-Demba-Dia/CVE-2024-6387-corrigee](https://github.com/Ngagne-Demba-Dia/CVE-2024-6387-corrigee)
 - [Remnant-DB/CVE-2024-6387](https://github.com/Remnant-DB/CVE-2024-6387)
 
@@ -15550,6 +15585,7 @@
 - [CrackerCat/cve-2024-21762-poc](https://github.com/CrackerCat/cve-2024-21762-poc)
 - [abrewer251/CVE-2024-21762_FortiNet_PoC](https://github.com/abrewer251/CVE-2024-21762_FortiNet_PoC)
 - [0x13-ByteZer0/CVE-2024-21762](https://github.com/0x13-ByteZer0/CVE-2024-21762)
+- [0x0asif/CVE-2024-21762](https://github.com/0x0asif/CVE-2024-21762)
 
 ### CVE-2024-21793 (2024-05-08)
 
@@ -17890,6 +17926,8 @@
 - [srakkk/cve-2024-32002-hook](https://github.com/srakkk/cve-2024-32002-hook)
 - [DayDayDayDreaming/backup-exec-hook](https://github.com/DayDayDayDreaming/backup-exec-hook)
 - [DayDayDayDreaming/backup-exec-cve-32002](https://github.com/DayDayDayDreaming/backup-exec-cve-32002)
+- [ControlO8/CVE-2024-32002](https://github.com/ControlO8/CVE-2024-32002)
+- [ControlO8/CVE-2024-32002-hook](https://github.com/ControlO8/CVE-2024-32002-hook)
 
 ### CVE-2024-32004 (2024-05-14)
 
@@ -29917,6 +29955,8 @@
 - [D3m0nicw0lf/CVE-2023-43208](https://github.com/D3m0nicw0lf/CVE-2023-43208)
 - [predyy/CVE-2023-43208](https://github.com/predyy/CVE-2023-43208)
 - [az4rvs/Mirth-Connect-CVE-2023-43208](https://github.com/az4rvs/Mirth-Connect-CVE-2023-43208)
+- [4nuxd/CVE-2023-43208](https://github.com/4nuxd/CVE-2023-43208)
+- [LunaLynx12/cve-2023-43208-poc](https://github.com/LunaLynx12/cve-2023-43208-poc)
 
 ### CVE-2023-43261 (2023-10-04)
 
@@ -37522,7 +37562,6 @@
 - [walnutsecurity/cve-2022-36804](https://github.com/walnutsecurity/cve-2022-36804)
 - [imbas007/Atlassian-Bitbucket-CVE-2022-36804](https://github.com/imbas007/Atlassian-Bitbucket-CVE-2022-36804)
 - [asepsaepdin/CVE-2022-36804](https://github.com/asepsaepdin/CVE-2022-36804)
-- [DanielHallbro/CVE-2022-36804-Bitbucket-RCE-Analysis](https://github.com/DanielHallbro/CVE-2022-36804-Bitbucket-RCE-Analysis)
 
 ### CVE-2022-36934 (2022-09-22)
 
@@ -39495,13 +39534,6 @@
 </code>
 
 - [ShaikUsaf/packages_apps_Bluetooth_AOSP10_r33_CVE-2021-0329](https://github.com/ShaikUsaf/packages_apps_Bluetooth_AOSP10_r33_CVE-2021-0329)
-
-### CVE-2021-0330 (2021-02-10)
-
-<code>In add_user_ce and remove_user_ce of storaged.cpp, there is a possible use-after-free due to improper locking. This could lead to local escalation of privilege in storaged with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-9 Android-10 Android-11Android ID: A-170732441
-</code>
-
-- [Satheesh575555/system_core_AOSP10_r33-CVE-2021-0330](https://github.com/Satheesh575555/system_core_AOSP10_r33-CVE-2021-0330)
 
 ### CVE-2021-0331 (2021-02-10)
 
@@ -44593,7 +44625,6 @@
 - [i6c/MASS_CVE-2021-41773](https://github.com/i6c/MASS_CVE-2021-41773)
 - [skentagon/CVE-2021-41773](https://github.com/skentagon/CVE-2021-41773)
 - [zer0qs/CVE-2021-41773](https://github.com/zer0qs/CVE-2021-41773)
-- [DoTuan1/Reserch-CVE-2021-41773](https://github.com/DoTuan1/Reserch-CVE-2021-41773)
 - [bernardas/netsec-polygon](https://github.com/bernardas/netsec-polygon)
 - [CalfCrusher/Path-traversal-RCE-Apache-2.4.49-2.4.50-Exploit](https://github.com/CalfCrusher/Path-traversal-RCE-Apache-2.4.49-2.4.50-Exploit)
 - [vuongnv3389-sec/cve-2021-41773](https://github.com/vuongnv3389-sec/cve-2021-41773)
@@ -44732,6 +44763,7 @@
 - [FakhriCRD/Apache-CVE-2021-42013-RCE-Exploit](https://github.com/FakhriCRD/Apache-CVE-2021-42013-RCE-Exploit)
 - [drackyjr/CVE-2021-42013](https://github.com/drackyjr/CVE-2021-42013)
 - [ranasen-rat/cve-2021-42013](https://github.com/ranasen-rat/cve-2021-42013)
+- [zeynepglygt/apache-cve-2021-42013-rce](https://github.com/zeynepglygt/apache-cve-2021-42013-rce)
 
 ### CVE-2021-42056 (2022-06-24)
 
@@ -45766,6 +45798,7 @@
 - [moften/Log4Shell](https://github.com/moften/Log4Shell)
 - [KamalideenAK/Microsoft-Defender-for-Endpoint-Deployment-on-Windows-10-11-device](https://github.com/KamalideenAK/Microsoft-Defender-for-Endpoint-Deployment-on-Windows-10-11-device)
 - [arabindadora/log4shell](https://github.com/arabindadora/log4shell)
+- [d4ngkh04w/CVE-2021-44228-Apache-Log4j2](https://github.com/d4ngkh04w/CVE-2021-44228-Apache-Log4j2)
 - [Mintimate/log4j2-bugmaker](https://github.com/Mintimate/log4j2-bugmaker)
 - [mgueye3/Log4Shell](https://github.com/mgueye3/Log4Shell)
 - [PCMKUIT/CVE-2021-44228---Log4Shell-Analysis](https://github.com/PCMKUIT/CVE-2021-44228---Log4Shell-Analysis)
@@ -52335,6 +52368,7 @@
 - [DeathStroke-source/Mass-scanner-for-CVE-2019-0708-RDP-RCE-Exploit](https://github.com/DeathStroke-source/Mass-scanner-for-CVE-2019-0708-RDP-RCE-Exploit)
 - [ryan-ally/rdp0708scanner](https://github.com/ryan-ally/rdp0708scanner)
 - [go-bi/CVE-2019-0708-EXP-Windows](https://github.com/go-bi/CVE-2019-0708-EXP-Windows)
+- [sezayi1972/CVE-2019-0708](https://github.com/sezayi1972/CVE-2019-0708)
 - [CircuitSoul/CVE-2019-0708](https://github.com/CircuitSoul/CVE-2019-0708)
 - [pywc/CVE-2019-0708](https://github.com/pywc/CVE-2019-0708)
 - [bibo318/kali-CVE-2019-0708-lab](https://github.com/bibo318/kali-CVE-2019-0708-lab)
@@ -52358,7 +52392,6 @@
 
 - [YHZX2013/CVE-2019-0709](https://github.com/YHZX2013/CVE-2019-0709)
 - [qq431169079/CVE-2019-0709](https://github.com/qq431169079/CVE-2019-0709)
-- [ciakim/CVE-2019-0709](https://github.com/ciakim/CVE-2019-0709)
 
 ### CVE-2019-0752 (2019-04-09)
 
@@ -56827,13 +56860,6 @@
 
 - [andikahilmy/CVE-2018-1114-undertow-vulnerable](https://github.com/andikahilmy/CVE-2018-1114-undertow-vulnerable)
 
-### CVE-2018-1123 (2018-05-23)
-
-<code>procps-ng before version 3.3.15 is vulnerable to a denial of service in ps via mmap buffer overflow. Inbuilt protection in ps maps a guard page at the end of the overflowed buffer, ensuring that the impact of this flaw is limited to a crash (temporary denial of service).
-</code>
-
-- [aravinddathd/CVE-2018-1123](https://github.com/aravinddathd/CVE-2018-1123)
-
 ### CVE-2018-1133 (2018-05-25)
 
 <code>An issue was discovered in Moodle 3.x. A Teacher creating a Calculated question can intentionally cause remote code execution on the server, aka eval injection.
@@ -57954,6 +57980,7 @@
 - [tea-celikik/Drupal-Exploit-Lab](https://github.com/tea-celikik/Drupal-Exploit-Lab)
 - [4l13n-DN/POC-CVE-2018-7600](https://github.com/4l13n-DN/POC-CVE-2018-7600)
 - [bixiPRO/Drupalgeddon2-CVE-2018-7600](https://github.com/bixiPRO/Drupalgeddon2-CVE-2018-7600)
+- [Meraj1312/cve-2018-7600-drupalgeddon2-lab](https://github.com/Meraj1312/cve-2018-7600-drupalgeddon2-lab)
 
 ### CVE-2018-7602 (2018-07-19)
 
@@ -60708,6 +60735,7 @@
 - [TheCyberWatchers/CVE-2017-0199-v5.0](https://github.com/TheCyberWatchers/CVE-2017-0199-v5.0)
 - [kash-123/CVE-2017-0199](https://github.com/kash-123/CVE-2017-0199)
 - [ahmed-tarek22752/RCE-CVE-2017-0199-detection-analysis](https://github.com/ahmed-tarek22752/RCE-CVE-2017-0199-detection-analysis)
+- [BlackOclock/XLS-to-DBatLoader-or-GuLoader-for-AgentTesla-variant](https://github.com/BlackOclock/XLS-to-DBatLoader-or-GuLoader-for-AgentTesla-variant)
 
 ### CVE-2017-0204 (2017-04-12)
 
