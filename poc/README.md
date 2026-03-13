@@ -1464,6 +1464,7 @@
 
 - [kernelzeroday/CVE-2026-29000](https://github.com/kernelzeroday/CVE-2026-29000)
 - [rootdirective-sec/CVE-2026-29000-Lab](https://github.com/rootdirective-sec/CVE-2026-29000-Lab)
+- [manbahadurthapa1248/CVE-2026-29000---pac4j-jwt-Authentication-Bypass-PoC](https://github.com/manbahadurthapa1248/CVE-2026-29000---pac4j-jwt-Authentication-Bypass-PoC)
 
 ### CVE-2026-29041 (2026-03-06)
 
@@ -3722,6 +3723,13 @@
 </code>
 
 - [SnailSploit/CVE-2025-12030](https://github.com/SnailSploit/CVE-2025-12030)
+
+### CVE-2025-12057 (2025-11-19)
+
+<code>The WavePlayer WordPress plugin before 3.8.0 does not have authorization in an AJAX action as well as does not validate the file to be copied locally, allowing unauthenticated users to upload arbitrary file on the server and lead to RCE
+</code>
+
+- [DeadExpl0it/CVE-2025-12057-WordPress-Exploit-PoC](https://github.com/DeadExpl0it/CVE-2025-12057-WordPress-Exploit-PoC)
 
 ### CVE-2025-12097 (2025-12-04)
 
