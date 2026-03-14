@@ -33,7 +33,7 @@
 
 ### CVE-2026-0651 (2026-02-10)
 
-<code>On TP-Link Tapo C260 v1, path traversal is possible due to improper handling of specific GET request paths via https, allowing local unauthenticated probing of filesystem paths. An attacker on the local network can determine whether certain files exists on the device, with no read, write or code execution possibilities.
+<code>On TP-Link Tapo C260 v1 and D235 v1, path traversal is possible due to improper handling of specific GET request paths via https, allowing local unauthenticated probing of filesystem paths. An attacker on the local network can determine whether certain files exists on the device, with no read, write or code execution possibilities.
 </code>
 
 - [l0lsec/tapo-c260-rce](https://github.com/l0lsec/tapo-c260-rce)
@@ -135,6 +135,13 @@
 </code>
 
 - [richardpaimu34/CVE-2026-1306](https://github.com/richardpaimu34/CVE-2026-1306)
+
+### CVE-2026-1311 (2026-02-26)
+
+<code>The Worry Proof Backup plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 0.2.4 via the backup upload functionality. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload a malicious ZIP archive with path traversal sequences to write arbitrary files anywhere on the server, including executable PHP files. This can lead to remote code execution.
+</code>
+
+- [hacker1337itme/CVE-2026-1311](https://github.com/hacker1337itme/CVE-2026-1311)
 
 ### CVE-2026-1337 (2026-02-06)
 
@@ -374,12 +381,22 @@
 - [mbanyamer/CVE-2026-3395-MaxSite-CMS-Unauthenticated-RCE](https://github.com/mbanyamer/CVE-2026-3395-MaxSite-CMS-Unauthenticated-RCE)
 - [rootdirective-sec/CVE-2026-3395-Lab](https://github.com/rootdirective-sec/CVE-2026-3395-Lab)
 
+### CVE-2026-3442
+- [hacker1337itme/CVE-2026-3442](https://github.com/hacker1337itme/CVE-2026-3442)
+
 ### CVE-2026-3786 (2026-03-08)
 
 <code>A security flaw has been discovered in EasyCMS up to 1.6. The impacted element is an unknown function of the file /RbacuserAction.class.php of the component Request Parameter Handler. The manipulation of the argument _order results in sql injection. The attack can be launched remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.
 </code>
 
 - [snapdowgg/CVE-2026-3786](https://github.com/snapdowgg/CVE-2026-3786)
+
+### CVE-2026-3891 (2026-03-13)
+
+<code>The Pix for WooCommerce plugin for WordPress is vulnerable to arbitrary file uploads due to missing capability check and missing file type validation in the 'lkn_pix_for_woocommerce_c6_save_settings' function in all versions up to, and including, 1.5.0. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
+</code>
+
+- [joshuavanderpoll/CVE-2026-3891](https://github.com/joshuavanderpoll/CVE-2026-3891)
 
 ### CVE-2026-4821
 - [openexecution-coder/demo-cve-2026-4821](https://github.com/openexecution-coder/demo-cve-2026-4821)
@@ -611,6 +628,7 @@
 - [EQSTLab/CVE-2026-21858](https://github.com/EQSTLab/CVE-2026-21858)
 - [0xAshwesker/CVE-2026-21858](https://github.com/0xAshwesker/CVE-2026-21858)
 - [bamov970/CVE-2026-21858](https://github.com/bamov970/CVE-2026-21858)
+- [Yati2/Ni8mare-CVE-2026-21858](https://github.com/Yati2/Ni8mare-CVE-2026-21858)
 
 ### CVE-2026-21876 (2026-01-08)
 
@@ -1309,6 +1327,13 @@
 
 - [mbanyamer/CVE-2026-26988-LibreNMS-SQLi](https://github.com/mbanyamer/CVE-2026-26988-LibreNMS-SQLi)
 
+### CVE-2026-27097 (2026-03-05)
+
+<code>Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in AncoraThemes CasaMia | Property Rental Real Estate WordPress Theme casamia allows PHP Local File Inclusion.This issue affects CasaMia | Property Rental Real Estate WordPress Theme: from n/a through &lt;= 1.1.2.
+</code>
+
+- [hacker1337itme/CVE-2026-27097](https://github.com/hacker1337itme/CVE-2026-27097)
+
 ### CVE-2026-27174 (2026-02-18)
 
 <code>MajorDoMo (aka Major Domestic Module) allows unauthenticated remote code execution via the admin panel's PHP console feature. An include order bug in modules/panel.class.php causes execution to continue past a redirect() call that lacks an exit statement, allowing unauthenticated requests to reach the ajax handler in inc_panel_ajax.php. The console handler within that file passes user-supplied input from GET parameters (via register_globals) directly to eval() without any authentication check. An attacker can execute arbitrary PHP code by sending a crafted GET request to /admin.php with ajax_panel, op, and command parameters.
@@ -1343,6 +1368,7 @@
 </code>
 
 - [kocaemre/CVE-2026-27470](https://github.com/kocaemre/CVE-2026-27470)
+- [d3vn0mi/CVE-2026-27470-POC](https://github.com/d3vn0mi/CVE-2026-27470-POC)
 
 ### CVE-2026-27483 (2026-02-24)
 
@@ -1465,6 +1491,9 @@
 - [kernelzeroday/CVE-2026-29000](https://github.com/kernelzeroday/CVE-2026-29000)
 - [rootdirective-sec/CVE-2026-29000-Lab](https://github.com/rootdirective-sec/CVE-2026-29000-Lab)
 - [manbahadurthapa1248/CVE-2026-29000---pac4j-jwt-Authentication-Bypass-PoC](https://github.com/manbahadurthapa1248/CVE-2026-29000---pac4j-jwt-Authentication-Bypass-PoC)
+- [Crims-on/CVE-2026-29000](https://github.com/Crims-on/CVE-2026-29000)
+- [alihussainzada/CVE-2026-29000-Python-PoC-pac4j-JWT-AuthenticationBypass-Poc](https://github.com/alihussainzada/CVE-2026-29000-Python-PoC-pac4j-JWT-AuthenticationBypass-Poc)
+- [otuva/CVE-2026-29000](https://github.com/otuva/CVE-2026-29000)
 
 ### CVE-2026-29041 (2026-03-06)
 
@@ -1899,6 +1928,7 @@
 - [Armand2002/Exploit-CVE-2025-1974-Lab](https://github.com/Armand2002/Exploit-CVE-2025-1974-Lab)
 - [BiiTts/POC-IngressNightmare-CVE-2025-1974](https://github.com/BiiTts/POC-IngressNightmare-CVE-2025-1974)
 - [iteride/CVE-2025-1974](https://github.com/iteride/CVE-2025-1974)
+- [I3r1h0n/IngressNightterror](https://github.com/I3r1h0n/IngressNightterror)
 - [gunyakit/CVE-2025-1974-PoC-exploit](https://github.com/gunyakit/CVE-2025-1974-PoC-exploit)
 - [BoianEduard/CVE-2025-1974](https://github.com/BoianEduard/CVE-2025-1974)
 
@@ -2709,6 +2739,7 @@
 
 - [TheMalwareGuardian/CVE-2025-5548](https://github.com/TheMalwareGuardian/CVE-2025-5548)
 - [alanschmidt81/CVE-2025-5548](https://github.com/alanschmidt81/CVE-2025-5548)
+- [LorenzoPorrasDuque/CVE-2025-5548-POC](https://github.com/LorenzoPorrasDuque/CVE-2025-5548-POC)
 
 ### CVE-2025-5640 (2025-06-05)
 
@@ -3011,6 +3042,7 @@
 - [Rosemary1337/CVE-2025-6934](https://github.com/Rosemary1337/CVE-2025-6934)
 - [qalesyaSN/CVE-2025-6934](https://github.com/qalesyaSN/CVE-2025-6934)
 - [1atakan1/CVE-2025-6934](https://github.com/1atakan1/CVE-2025-6934)
+- [0xTerror/CVE-2025-6934](https://github.com/0xTerror/CVE-2025-6934)
 
 ### CVE-2025-6970 (2025-07-09)
 
@@ -6287,6 +6319,7 @@
 </code>
 
 - [Nick6371/CVE-2025-31722](https://github.com/Nick6371/CVE-2025-31722)
+- [h3raklez/CVE-2025-31722](https://github.com/h3raklez/CVE-2025-31722)
 
 ### CVE-2025-31864 (2025-04-01)
 
@@ -8013,6 +8046,7 @@
 - [saneki/cve-2025-49844](https://github.com/saneki/cve-2025-49844)
 - [Network-Sec/CVE-2025-49844-RediShell-AI-made-Revshell](https://github.com/Network-Sec/CVE-2025-49844-RediShell-AI-made-Revshell)
 - [0xAshwesker/CVE-2025-49844](https://github.com/0xAshwesker/CVE-2025-49844)
+- [Cilectiy/CVE-2025-49844](https://github.com/Cilectiy/CVE-2025-49844)
 
 ### CVE-2025-50110 (2025-09-15)
 
@@ -9190,7 +9224,6 @@
 - [TH-SecForge/CVE-2025-55182](https://github.com/TH-SecForge/CVE-2025-55182)
 - [chitoz1300/React2Shell-CVE-2025-55182](https://github.com/chitoz1300/React2Shell-CVE-2025-55182)
 - [Night-have-dreams/CVE-2025-55182-PoC](https://github.com/Night-have-dreams/CVE-2025-55182-PoC)
-- [C00LN3T/React2Shell](https://github.com/C00LN3T/React2Shell)
 - [thekamran/CVE-2025-55182-Proof-of-Concept](https://github.com/thekamran/CVE-2025-55182-Proof-of-Concept)
 - [Syrins/CVE-2025-55182-React2Shell-RCE](https://github.com/Syrins/CVE-2025-55182-React2Shell-RCE)
 - [0xsj/CVE-2025-55182](https://github.com/0xsj/CVE-2025-55182)
@@ -9992,6 +10025,13 @@
 
 - [kawaii-ghost/CVE-2025-59194](https://github.com/kawaii-ghost/CVE-2025-59194)
 
+### CVE-2025-59284 (2025-10-14)
+
+<code>Exposure of sensitive information to an unauthorized actor in Windows NTLM allows an unauthorized attacker to perform spoofing locally.
+</code>
+
+- [lytnc/CVE-2025-59284-PoC](https://github.com/lytnc/CVE-2025-59284-PoC)
+
 ### CVE-2025-59287 (2025-10-14)
 
 <code>Deserialization of untrusted data in Windows Server Update Service allows an unauthorized attacker to execute code over a network.
@@ -10188,6 +10228,7 @@
 - [Rohitberiwala/CVE-2025-60787-MotionEye-RCE](https://github.com/Rohitberiwala/CVE-2025-60787-MotionEye-RCE)
 - [gunzf0x/CVE-2025-60787](https://github.com/gunzf0x/CVE-2025-60787)
 - [lil0xplorer/CVE-2025-60787_PoC](https://github.com/lil0xplorer/CVE-2025-60787_PoC)
+- [d3vn0mi/CVE-2025-60787-POC](https://github.com/d3vn0mi/CVE-2025-60787-POC)
 
 ### CVE-2025-60852 (2025-10-23)
 
@@ -11193,6 +11234,13 @@
 ### CVE-2025-66850
 - [joelatplay/CVE-2025-66850](https://github.com/joelatplay/CVE-2025-66850)
 
+### CVE-2025-66866 (2025-12-29)
+
+<code>An issue was discovered in function d_abi_tags in file cp-demangle.c in BinUtils 2.26 allows attackers to cause a denial of service via crafted PE file.
+</code>
+
+- [hacker1337itme/CVE-2025-66866](https://github.com/hacker1337itme/CVE-2025-66866)
+
 ### CVE-2025-66947 (2025-12-26)
 
 <code>SQL injection vulnerability in krishanmuraiji SMS v.1.0, within the /studentms/admin/edit-class-detail.php via the editid GET parameter. An attacker can trigger controlled delays using SQL SLEEP() to infer database contents. Successful exploitation may lead to full database compromise, especially within an administrative module.
@@ -11626,13 +11674,6 @@
 
 ### CVE-2025-69460
 - [Tagoletta/CVE-2025-69460](https://github.com/Tagoletta/CVE-2025-69460)
-
-### CVE-2025-69516 (2026-01-29)
-
-<code>A Server-Side Template Injection (SSTI) vulnerability in the /reporting/templates/preview/ endpoint of Amidaware Tactical RMM, affecting versions equal to or earlier than v1.3.1, allows low-privileged users with Report Viewer or Report Manager permissions to achieve remote command execution on the server. This occurs due to improper sanitization of the template_md parameter, enabling direct injection of Jinja2 templates. This occurs due to misuse of the generate_html() function, the user-controlled value is inserted into `env.from_string`, a function that processes Jinja2 templates arbitrarily, making an SSTI possible.
-</code>
-
-- [NtGabrielGomes/CVE-2025-69516](https://github.com/NtGabrielGomes/CVE-2025-69516)
 
 ### CVE-2025-69581 (2026-01-16)
 
@@ -12659,6 +12700,7 @@
 - [BOSE122/CVE-2024-3094](https://github.com/BOSE122/CVE-2024-3094)
 - [hackura/xz-cve-2024-3094](https://github.com/hackura/xz-cve-2024-3094)
 - [michalAshurov/writeup-CVE-2024-3094](https://github.com/michalAshurov/writeup-CVE-2024-3094)
+- [extracoding-dozen/CVE-2024-3094](https://github.com/extracoding-dozen/CVE-2024-3094)
 
 ### CVE-2024-3105 (2024-06-15)
 
@@ -15181,6 +15223,13 @@
 
 - [d0n601/CVE-2024-13869](https://github.com/d0n601/CVE-2024-13869)
 
+### CVE-2024-14027 (2026-03-09)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nfs/xattr: missing fdput() in fremovexattr error path\n\nIn the Linux kernel, the fremovexattr() syscall calls fdget() to acquire a\nfile reference but returns early without calling fdput() when\nstrncpy_from_user() fails on the name argument. In multi-threaded processes\nwhere fdget() takes the slow path, this permanently leaks one\nfile reference per call, pinning the struct file and associated kernel\nobjects in memory. An unprivileged local user can exploit this to cause\nkernel memory exhaustion. The issue was inadvertently fixed by commit\na71874379ec8 (&quot;xattr: switch to CLASS(fd)&quot;).
+</code>
+
+- [lcfr-eth/CVE-2024-14027_slop](https://github.com/lcfr-eth/CVE-2024-14027_slop)
+
 ### CVE-2024-20017 (2024-03-04)
 
 <code>In wlan service, there is a possible out of bounds write due to improper input validation. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation Patch ID: WCNCR00350938; Issue ID: MSV-1132.
@@ -15956,6 +16005,7 @@
 </code>
 
 - [Rohitberiwala/CVE-2024-23222-Coruna-Exploit-Kit-Deobfuscated](https://github.com/Rohitberiwala/CVE-2024-23222-Coruna-Exploit-Kit-Deobfuscated)
+- [FuzzySecurity/Cassowary-CVE-2024-23222-x86_64](https://github.com/FuzzySecurity/Cassowary-CVE-2024-23222-x86_64)
 
 ### CVE-2024-23296 (2024-03-05)
 
@@ -20100,7 +20150,6 @@
 - [aninfosec/CVE-2024-43425-Poc](https://github.com/aninfosec/CVE-2024-43425-Poc)
 - [kazuya256/Moodle-authenticated-RCE](https://github.com/kazuya256/Moodle-authenticated-RCE)
 - [Tnot123/cve-2024-43425](https://github.com/Tnot123/cve-2024-43425)
-- [wvverez/CVE-2024-43425](https://github.com/wvverez/CVE-2024-43425)
 
 ### CVE-2024-43451 (2024-11-12)
 
@@ -20743,6 +20792,7 @@
 - [MalwareTech/CVE-2024-47176-Scanner](https://github.com/MalwareTech/CVE-2024-47176-Scanner)
 - [gianlu111/CUPS-CVE-2024-47176](https://github.com/gianlu111/CUPS-CVE-2024-47176)
 - [0x7556/CVE-2024-47176](https://github.com/0x7556/CVE-2024-47176)
+- [deancooreman/CVE-2024-47176](https://github.com/deancooreman/CVE-2024-47176)
 
 ### CVE-2024-47177
 - [referefref/cupspot-2024-47177](https://github.com/referefref/cupspot-2024-47177)
@@ -29965,6 +30015,7 @@
 - [az4rvs/Mirth-Connect-CVE-2023-43208](https://github.com/az4rvs/Mirth-Connect-CVE-2023-43208)
 - [4nuxd/CVE-2023-43208](https://github.com/4nuxd/CVE-2023-43208)
 - [LunaLynx12/cve-2023-43208-poc](https://github.com/LunaLynx12/cve-2023-43208-poc)
+- [Criz117/CVE-2023-43208-PoC](https://github.com/Criz117/CVE-2023-43208-PoC)
 
 ### CVE-2023-43261 (2023-10-04)
 
@@ -60695,7 +60746,6 @@
 - [pelagornisandersi/WIndows-7-automated-exploitation-using-metasploit-framework-](https://github.com/pelagornisandersi/WIndows-7-automated-exploitation-using-metasploit-framework-)
 - [luckyman2907/SMB-Protocol-Vulnerability_CVE-2017-0144](https://github.com/luckyman2907/SMB-Protocol-Vulnerability_CVE-2017-0144)
 - [AdityaBhatt3010/VAPT-Report-on-SMB-Exploitation-in-Windows-10-Finance-Endpoint](https://github.com/AdityaBhatt3010/VAPT-Report-on-SMB-Exploitation-in-Windows-10-Finance-Endpoint)
-- [nivedh-j/EternalBlue-Explained](https://github.com/nivedh-j/EternalBlue-Explained)
 - [AbbeAlthany/Windows-7_och_CVE-2017-0144_Exploit](https://github.com/AbbeAlthany/Windows-7_och_CVE-2017-0144_Exploit)
 - [FireTemple/Blackash-CVE-2017-0144](https://github.com/FireTemple/Blackash-CVE-2017-0144)
 - [Mitsu-bis/Eternal-Blue-CVE-2017-0144-THM-Write-Up](https://github.com/Mitsu-bis/Eternal-Blue-CVE-2017-0144-THM-Write-Up)
