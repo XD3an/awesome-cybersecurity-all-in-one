@@ -81,6 +81,9 @@
 
 - [davidrxchester/smart-sketcher-upload](https://github.com/davidrxchester/smart-sketcher-upload)
 
+### CVE-2026-0866
+- [mdshoaibuddinchanda/ZOMBIE_GUARD](https://github.com/mdshoaibuddinchanda/ZOMBIE_GUARD)
+
 ### CVE-2026-0915 (2026-01-15)
 
 <code>Calling getnetbyaddr or getnetbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend for networks and queries for a zero-valued network in the GNU C Library version 2.0 to version 2.42 can leak stack contents to the configured DNS resolver.
@@ -142,6 +145,13 @@
 </code>
 
 - [hacker1337itme/CVE-2026-1311](https://github.com/hacker1337itme/CVE-2026-1311)
+
+### CVE-2026-1312 (2026-02-03)
+
+<code>An issue was discovered in 6.0 before 6.0.2, 5.2 before 5.2.11, and 4.2 before 4.2.28.\n`.QuerySet.order_by()` is subject to SQL injection in column aliases containing periods when the same alias is, using a suitably crafted dictionary, with dictionary expansion, used in `FilteredRelation`.\nEarlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.\nDjango would like to thank Solomon Kebede for reporting this issue.
+</code>
+
+- [sw0rd1ight/CVE-2026-1312](https://github.com/sw0rd1ight/CVE-2026-1312)
 
 ### CVE-2026-1337 (2026-02-06)
 
@@ -397,6 +407,13 @@
 </code>
 
 - [joshuavanderpoll/CVE-2026-3891](https://github.com/joshuavanderpoll/CVE-2026-3891)
+
+### CVE-2026-4092 (2026-03-13)
+
+<code>Path Traversal in Clasp impacting versions &lt; 3.2.0 allows a remote attacker to perform remote code execution via a malicious Google Apps Script project containing specially crafted filenames with directory traversal sequences.
+</code>
+
+- [g0w6y/CVE-2026-4092](https://github.com/g0w6y/CVE-2026-4092)
 
 ### CVE-2026-4821
 - [openexecution-coder/demo-cve-2026-4821](https://github.com/openexecution-coder/demo-cve-2026-4821)
@@ -1236,6 +1253,13 @@
 
 - [mbanyamer/CVE-2026-26030-Microsoft-Semantic-Kernel-1.39.4-RCE](https://github.com/mbanyamer/CVE-2026-26030-Microsoft-Semantic-Kernel-1.39.4-RCE)
 
+### CVE-2026-26117 (2026-03-10)
+
+<code>Authentication bypass using an alternate path or channel in Azure Windows Virtual Machine Agent allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [j-dahl7/arc-cloud-c2-sentinel](https://github.com/j-dahl7/arc-cloud-c2-sentinel)
+
 ### CVE-2026-26198 (2026-02-24)
 
 <code>Ormar is a async mini ORM for Python. In versions 0.9.9 through 0.22.0, when performing aggregate queries, Ormar ORM constructs SQL expressions by passing user-supplied column names directly into `sqlalchemy.text()` without any validation or sanitization. The `min()` and `max()` methods in the `QuerySet` class accept arbitrary string input as the column parameter. While `sum()` and `avg()` are partially protected by an `is_numeric` type check that rejects non-existent fields, `min()` and `max()` skip this validation entirely. As a result, an attacker-controlled string is embedded as raw SQL inside the aggregate function call. Any unauthorized user can exploit this vulnerability to read the entire database contents, including tables unrelated to the queried model, by injecting a subquery as the column parameter. Version 0.23.0 contains a patch.
@@ -1580,6 +1604,13 @@
 </code>
 
 - [MorielHarush/CVE-2026-30952-PoC](https://github.com/MorielHarush/CVE-2026-30952-PoC)
+
+### CVE-2026-31802 (2026-03-09)
+
+<code>node-tar is a full-featured Tar for Node.js. Prior to version 7.5.11, tar (npm) can be tricked into creating a symlink that points outside the extraction directory by using a drive-relative symlink target such as C:../../../target.txt, which enables file overwrite outside cwd during normal tar.x() extraction. This vulnerability is fixed in 7.5.11.
+</code>
+
+- [Jvr2022/CVE-2026-31802](https://github.com/Jvr2022/CVE-2026-31802)
 
 ### CVE-2026-31816 (2026-03-09)
 
@@ -2466,7 +2497,7 @@
 - [AnimePrincess420/CVE-2025-4517-PoC](https://github.com/AnimePrincess420/CVE-2025-4517-PoC)
 - [StealthByte0/CVE-2025-4517-poc](https://github.com/StealthByte0/CVE-2025-4517-poc)
 - [0xDTC/CVE-2025-4517-tarfile-PATH_MAX-bypass](https://github.com/0xDTC/CVE-2025-4517-tarfile-PATH_MAX-bypass)
-- [AzureADTrent/CVE-2025-4517-POC-HTB-WingData](https://github.com/AzureADTrent/CVE-2025-4517-POC-HTB-WingData)
+- [AzureADTrent/CVE-2025-4517-POC](https://github.com/AzureADTrent/CVE-2025-4517-POC)
 - [Rohitberiwala/PyPath-Escape-CVE-2025-4517-Exploit-Research](https://github.com/Rohitberiwala/PyPath-Escape-CVE-2025-4517-Exploit-Research)
 - [kerburenthusiasm/CVE-2025-4517-PoC](https://github.com/kerburenthusiasm/CVE-2025-4517-PoC)
 - [bgutowski/CVE-2025-4517-POC-Sudoers](https://github.com/bgutowski/CVE-2025-4517-POC-Sudoers)
@@ -2748,6 +2779,9 @@
 - [TheMalwareGuardian/CVE-2025-5548](https://github.com/TheMalwareGuardian/CVE-2025-5548)
 - [alanschmidt81/CVE-2025-5548](https://github.com/alanschmidt81/CVE-2025-5548)
 - [LorenzoPorrasDuque/CVE-2025-5548-POC](https://github.com/LorenzoPorrasDuque/CVE-2025-5548-POC)
+- [celiagomezserra/CVE-2025-5548](https://github.com/celiagomezserra/CVE-2025-5548)
+- [ZoneToolsCiber/Explotando-FreeFloatFTP-CVE-2025-5548](https://github.com/ZoneToolsCiber/Explotando-FreeFloatFTP-CVE-2025-5548)
+- [alfa8sa/CVE-2025-5548](https://github.com/alfa8sa/CVE-2025-5548)
 
 ### CVE-2025-5640 (2025-06-05)
 
@@ -4228,6 +4262,7 @@
 - [guiimoraes/CVE-2025-15467](https://github.com/guiimoraes/CVE-2025-15467)
 - [MAXI8594/CVE-2025-15467_Scan](https://github.com/MAXI8594/CVE-2025-15467_Scan)
 - [mr-r3b00t/CVE-2025-15467](https://github.com/mr-r3b00t/CVE-2025-15467)
+- [materaj2/cve-2025-15467](https://github.com/materaj2/cve-2025-15467)
 
 ### CVE-2025-15495 (2026-01-09)
 
@@ -9179,7 +9214,7 @@
 - [keklick1337/CVE-2025-55182-golang-PoC](https://github.com/keklick1337/CVE-2025-55182-golang-PoC)
 - [rubensuxo-eh/react2shell-exploit](https://github.com/rubensuxo-eh/react2shell-exploit)
 - [CirqueiraDev/MassExploit-CVE-2025-55182](https://github.com/CirqueiraDev/MassExploit-CVE-2025-55182)
-- [w3irdo21/CVE-2025-55182-react2shell](https://github.com/w3irdo21/CVE-2025-55182-react2shell)
+- [aastikgakhar/CVE-2025-55182-react2shell](https://github.com/aastikgakhar/CVE-2025-55182-react2shell)
 - [zamdevio/r2s](https://github.com/zamdevio/r2s)
 - [AdityaBhatt3010/React2Shell-CVE-2025-55182-The-Deserialization-Bug-That-Broke-the-Web](https://github.com/AdityaBhatt3010/React2Shell-CVE-2025-55182-The-Deserialization-Bug-That-Broke-the-Web)
 - [ogpourya/CVE-2025-55182](https://github.com/ogpourya/CVE-2025-55182)
@@ -9698,6 +9733,7 @@
 </code>
 
 - [Theethat-Thamwasin/CVE-2025-56399](https://github.com/Theethat-Thamwasin/CVE-2025-56399)
+- [im-hanzou/CVE-2025-56399](https://github.com/im-hanzou/CVE-2025-56399)
 
 ### CVE-2025-56450 (2025-10-21)
 
@@ -10237,6 +10273,7 @@
 - [gunzf0x/CVE-2025-60787](https://github.com/gunzf0x/CVE-2025-60787)
 - [lil0xplorer/CVE-2025-60787_PoC](https://github.com/lil0xplorer/CVE-2025-60787_PoC)
 - [d3vn0mi/CVE-2025-60787-POC](https://github.com/d3vn0mi/CVE-2025-60787-POC)
+- [agent-skywalker/CVE-2025-60787](https://github.com/agent-skywalker/CVE-2025-60787)
 
 ### CVE-2025-60852 (2025-10-23)
 
@@ -11624,6 +11661,7 @@
 
 - [Chocapikk/CVE-2025-68926](https://github.com/Chocapikk/CVE-2025-68926)
 - [Arcueld/CVE-2025-68926](https://github.com/Arcueld/CVE-2025-68926)
+- [materaj2/CVE-2025-68926-repo](https://github.com/materaj2/CVE-2025-68926-repo)
 
 ### CVE-2025-68937 (2025-12-25)
 
@@ -36855,6 +36893,14 @@
 
 - [silnex/CVE-2022-31629-poc](https://github.com/silnex/CVE-2022-31629-poc)
 
+### CVE-2022-31630 (2022-11-14)
+
+<code>In PHP versions prior to 7.4.33, 8.0.25 and 8.1.12, when using imageloadfont() function in gd extension, it is possible to supply a specially crafted font file, such as if the loaded font is used with imagechar() function, the read outside allocated buffer will be used. This can lead to crashes or disclosure of confidential information. 
+</code>
+
+- [sepkascurty-cpu/CVE-2022-31630---Proof-of-Concept-Exploit-untuk-PHP-7.4.33](https://github.com/sepkascurty-cpu/CVE-2022-31630---Proof-of-Concept-Exploit-untuk-PHP-7.4.33)
+- [sepkascurty-cpu/php-exploit_cve-2022-31630](https://github.com/sepkascurty-cpu/php-exploit_cve-2022-31630)
+
 ### CVE-2022-31691 (2022-11-04)
 
 <code>Spring Tools 4 for Eclipse version 4.16.0 and below as well as VSCode extensions such as Spring Boot Tools, Concourse CI Pipeline Editor, Bosh Editor and Cloudfoundry Manifest YML Support version 1.39.0 and below all use Snakeyaml library for YAML editing support. This library allows for some special syntax in the YAML that under certain circumstances allows for potentially harmful remote code execution by the attacker.
@@ -50164,6 +50210,13 @@
 </code>
 
 - [pratikshad19/CVE-2020-15053](https://github.com/pratikshad19/CVE-2020-15053)
+
+### CVE-2020-15099 (2020-07-29)
+
+<code>In TYPO3 CMS greater than or equal to 9.0.0 and less than 9.5.20, and greater than or equal to 10.0.0 and less than 10.4.6, in a case where an attacker manages to generate a valid cryptographic message authentication code (HMAC-SHA1) - either by using a different existing vulnerability or in case the internal encryptionKey was exposed - it is possible to retrieve arbitrary files of a TYPO3 installation. This includes the possibility to fetch typo3conf/LocalConfiguration.php, which again contains the encryptionKey as well as credentials of the database management system being used. In case a database server is directly accessible either via internet or in a shared hosting network, this allows the ability to completely retrieve, manipulate or delete database contents. This includes creating an administration user account - which can be used to trigger remote code execution by injecting custom extensions. This has been patched in versions 9.5.20 and 10.4.6.
+</code>
+
+- [StillSoul/CVE-2020-15099](https://github.com/StillSoul/CVE-2020-15099)
 
 ### CVE-2020-15148 (2020-09-15)
 
