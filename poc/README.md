@@ -82,7 +82,7 @@
 - [davidrxchester/smart-sketcher-upload](https://github.com/davidrxchester/smart-sketcher-upload)
 
 ### CVE-2026-0866
-- [mdshoaibuddinchanda/ZOMBIE_GUARD](https://github.com/mdshoaibuddinchanda/ZOMBIE_GUARD)
+- [mdshoaibuddinchanda/zombieguard](https://github.com/mdshoaibuddinchanda/zombieguard)
 
 ### CVE-2026-0915 (2026-01-15)
 
@@ -391,7 +391,11 @@
 - [mbanyamer/CVE-2026-3395-MaxSite-CMS-Unauthenticated-RCE](https://github.com/mbanyamer/CVE-2026-3395-MaxSite-CMS-Unauthenticated-RCE)
 - [rootdirective-sec/CVE-2026-3395-Lab](https://github.com/rootdirective-sec/CVE-2026-3395-Lab)
 
-### CVE-2026-3442
+### CVE-2026-3442 (2026-03-15)
+
+<code>A flaw was found in GNU Binutils. This vulnerability, a heap-based buffer overflow, specifically an out-of-bounds read, exists in the bfd linker component. An attacker could exploit this by convincing a user to process a specially crafted malicious XCOFF object file. Successful exploitation may lead to the disclosure of sensitive information or cause the application to crash, resulting in an application level denial of service.
+</code>
+
 - [hacker1337itme/CVE-2026-3442](https://github.com/hacker1337itme/CVE-2026-3442)
 
 ### CVE-2026-3786 (2026-03-08)
@@ -1259,6 +1263,13 @@
 </code>
 
 - [j-dahl7/arc-cloud-c2-sentinel](https://github.com/j-dahl7/arc-cloud-c2-sentinel)
+
+### CVE-2026-26118 (2026-03-10)
+
+<code>Server-side request forgery (ssrf) in Azure MCP Server allows an authorized attacker to elevate privileges over a network.
+</code>
+
+- [piiiico/mcp-check](https://github.com/piiiico/mcp-check)
 
 ### CVE-2026-26198 (2026-02-24)
 
@@ -9231,7 +9242,6 @@
 - [jumodada/react-cve-2025-55182-demo](https://github.com/jumodada/react-cve-2025-55182-demo)
 - [ahmedshamsddin/CVE-2025-55182](https://github.com/ahmedshamsddin/CVE-2025-55182)
 - [LemonTeatw1/CVE-2025-55182-exploit](https://github.com/LemonTeatw1/CVE-2025-55182-exploit)
-- [mil4ne/CVE-2025-55182-React2Shell](https://github.com/mil4ne/CVE-2025-55182-React2Shell)
 - [ethicalrohitt/React2Shell_cve-2025-55182](https://github.com/ethicalrohitt/React2Shell_cve-2025-55182)
 - [ihhgimhana/React2Shell-CVE-2025-55182-PoC-Reverse-Shell](https://github.com/ihhgimhana/React2Shell-CVE-2025-55182-PoC-Reverse-Shell)
 - [shakilkhatri/scanner-for-CVE-2025-55182-vulnerability](https://github.com/shakilkhatri/scanner-for-CVE-2025-55182-vulnerability)
@@ -16336,7 +16346,6 @@
 - [Nebian/CVE-2024-23897](https://github.com/Nebian/CVE-2024-23897)
 - [JAthulya/CVE-2024-23897](https://github.com/JAthulya/CVE-2024-23897)
 - [murataydemir/CVE-2024-23897](https://github.com/murataydemir/CVE-2024-23897)
-- [mil4ne/CVE-2024-23897-Jenkins-4.441](https://github.com/mil4ne/CVE-2024-23897-Jenkins-4.441)
 - [Maalfer/CVE-2024-23897](https://github.com/Maalfer/CVE-2024-23897)
 - [Surko888/Surko-Exploit-Jenkins-CVE-2024-23897](https://github.com/Surko888/Surko-Exploit-Jenkins-CVE-2024-23897)
 - [cc3305/CVE-2024-23897](https://github.com/cc3305/CVE-2024-23897)
@@ -16348,6 +16357,7 @@
 - [brandonhjh/Jenkins-CVE-2024-23897-Exploit-Demo](https://github.com/brandonhjh/Jenkins-CVE-2024-23897-Exploit-Demo)
 - [tvasari/CVE-2024-23897](https://github.com/tvasari/CVE-2024-23897)
 - [Fineken/Jenkins-CVE-2024-23897-Lab](https://github.com/Fineken/Jenkins-CVE-2024-23897-Lab)
+- [classic130/CVE-2024-23897-Jenkins-4.441](https://github.com/classic130/CVE-2024-23897-Jenkins-4.441)
 - [amalpvatayam67/day03-jenkins-23897](https://github.com/amalpvatayam67/day03-jenkins-23897)
 - [hybinn/CVE-2024-23897](https://github.com/hybinn/CVE-2024-23897)
 - [aadi0258/Exploit-CVE-2024-23897](https://github.com/aadi0258/Exploit-CVE-2024-23897)
@@ -25637,7 +25647,6 @@
 - [mariovata/CVE-2023-23752-Python](https://github.com/mariovata/CVE-2023-23752-Python)
 - [0xx01/CVE-2023-23752](https://github.com/0xx01/CVE-2023-23752)
 - [h3x0v3rl0rd/CVE-2023-23752](https://github.com/h3x0v3rl0rd/CVE-2023-23752)
-- [mil4ne/CVE-2023-23752-Joomla-v4.2.8](https://github.com/mil4ne/CVE-2023-23752-Joomla-v4.2.8)
 - [Aureum01/CVE-2023-23752](https://github.com/Aureum01/CVE-2023-23752)
 
 ### CVE-2023-23924 (2023-01-31)
@@ -30995,6 +31004,7 @@
 - [vaishnavucv/Project-Vuln-Detection-N-Mitigation_101](https://github.com/vaishnavucv/Project-Vuln-Detection-N-Mitigation_101)
 - [pavanaa4k/CVE-2023-46604-LAB](https://github.com/pavanaa4k/CVE-2023-46604-LAB)
 - [RockyDesigne/SSP-Assignment-3-RCEYouLater](https://github.com/RockyDesigne/SSP-Assignment-3-RCEYouLater)
+- [sangrok-jeon/CVE-2023-46604-Analysis](https://github.com/sangrok-jeon/CVE-2023-46604-Analysis)
 
 ### CVE-2023-46615 (2024-02-12)
 
@@ -39806,13 +39816,6 @@
 
 - [uthrasri/frameworks_opt_net_wifi_CVE-2021-0466](https://github.com/uthrasri/frameworks_opt_net_wifi_CVE-2021-0466)
 
-### CVE-2021-0472 (2021-06-11)
-
-<code>In shouldLockKeyguard of LockTaskController.java, there is a possible way to exit App Pinning without a PIN due to a permissions bypass. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-9 Android-10Android ID: A-176801033
-</code>
-
-- [nanopathi/framework_base_AOSP10_r33_CVE-2021-0472](https://github.com/nanopathi/framework_base_AOSP10_r33_CVE-2021-0472)
-
 ### CVE-2021-0474 (2021-06-11)
 
 <code>In avrc_msg_cback of avrc_api.cc, there is a possible out of bounds write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-8.1 Android-9 Android-10Android ID: A-177611958
@@ -45928,6 +45931,7 @@
 - [JoseMariaMicoli/Log4Shell-PoC](https://github.com/JoseMariaMicoli/Log4Shell-PoC)
 - [agylabs/log4shell-remediation](https://github.com/agylabs/log4shell-remediation)
 - [0xAshwesker/CVE-2021-44228](https://github.com/0xAshwesker/CVE-2021-44228)
+- [Codepumpking/log4shell-poc](https://github.com/Codepumpking/log4shell-poc)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -67975,7 +67979,6 @@
 - [hklabCR/CVE-2011-2523](https://github.com/hklabCR/CVE-2011-2523)
 - [krill-x7/CVE-2011-2523](https://github.com/krill-x7/CVE-2011-2523)
 - [BolivarJ/CVE-2011-2523](https://github.com/BolivarJ/CVE-2011-2523)
-- [seerat-fatima21/vsftpd-exploit](https://github.com/seerat-fatima21/vsftpd-exploit)
 - [hajisthabegum/Exploiting-vsFTPd-2.3.4-Backdoor-Vulnerability-Ethical-Hacking-Lab-with-Metasploitable-2-Metasploit](https://github.com/hajisthabegum/Exploiting-vsFTPd-2.3.4-Backdoor-Vulnerability-Ethical-Hacking-Lab-with-Metasploitable-2-Metasploit)
 - [avivyap/CVE-2011-2523](https://github.com/avivyap/CVE-2011-2523)
 - [KlyneZyro/Metasploitable2-VAPT-Report](https://github.com/KlyneZyro/Metasploitable2-VAPT-Report)
