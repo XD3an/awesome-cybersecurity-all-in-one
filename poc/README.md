@@ -489,6 +489,13 @@
 
 - [George0Papasotiriou/CVE-2026-20404-MediaTek-modem-remote-DoS-rogue-base-station-scenario-](https://github.com/George0Papasotiriou/CVE-2026-20404-MediaTek-modem-remote-DoS-rogue-base-station-scenario-)
 
+### CVE-2026-20660 (2026-02-11)
+
+<code>A path handling issue was addressed with improved logic. This issue is fixed in macOS Tahoe 26.3, macOS Sonoma 14.8.4, iOS 18.7.5 and iPadOS 18.7.5, visionOS 26.3, iOS 26.3 and iPadOS 26.3, Safari 26.3. A remote user may be able to write arbitrary files.
+</code>
+
+- [retX0/CVE-2026-20660](https://github.com/retX0/CVE-2026-20660)
+
 ### CVE-2026-20700 (2026-02-11)
 
 <code>A memory corruption issue was addressed with improved state management. This issue is fixed in watchOS 26.3, tvOS 26.3, macOS Tahoe 26.3, visionOS 26.3, iOS 26.3 and iPadOS 26.3. An attacker with memory write capability may be able to execute arbitrary code. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 26. CVE-2025-14174 and CVE-2025-43529 were also issued in response to this report.
@@ -1586,6 +1593,7 @@
 - [Crims-on/CVE-2026-29000](https://github.com/Crims-on/CVE-2026-29000)
 - [alihussainzada/CVE-2026-29000-Python-PoC-pac4j-JWT-AuthenticationBypass-Poc](https://github.com/alihussainzada/CVE-2026-29000-Python-PoC-pac4j-JWT-AuthenticationBypass-Poc)
 - [otuva/CVE-2026-29000](https://github.com/otuva/CVE-2026-29000)
+- [RootX111/cve-2026-29000](https://github.com/RootX111/cve-2026-29000)
 
 ### CVE-2026-29041 (2026-03-06)
 
@@ -16816,6 +16824,7 @@
 </code>
 
 - [AliElKhatteb/CVE-2024-25082_CVE-2024-25081](https://github.com/AliElKhatteb/CVE-2024-25082_CVE-2024-25081)
+- [moamenx8/CVE-2024-25082](https://github.com/moamenx8/CVE-2024-25082)
 
 ### CVE-2024-25092 (2024-06-09)
 
@@ -38815,6 +38824,7 @@
 - [shoucheng3/asf__commons-text_CVE-2022-42889_1-9](https://github.com/shoucheng3/asf__commons-text_CVE-2022-42889_1-9)
 - [Goultarde/CVE-2022-42889-text4shell](https://github.com/Goultarde/CVE-2022-42889-text4shell)
 - [engranaabubakar/CVE-2022-42889](https://github.com/engranaabubakar/CVE-2022-42889)
+- [sangrok-jeon/CVE-2022-42889-Analysis](https://github.com/sangrok-jeon/CVE-2022-42889-Analysis)
 
 ### CVE-2022-42896 (2022-11-23)
 
