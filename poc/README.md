@@ -500,13 +500,6 @@
 
 - [retX0/CVE-2026-20660](https://github.com/retX0/CVE-2026-20660)
 
-### CVE-2026-20700 (2026-02-11)
-
-<code>A memory corruption issue was addressed with improved state management. This issue is fixed in watchOS 26.3, tvOS 26.3, macOS Tahoe 26.3, visionOS 26.3, iOS 26.3 and iPadOS 26.3. An attacker with memory write capability may be able to execute arbitrary code. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 26. CVE-2025-14174 and CVE-2025-43529 were also issued in response to this report.
-</code>
-
-- [sundenovak/CVE-2026-20700-An-analysis-WIP](https://github.com/sundenovak/CVE-2026-20700-An-analysis-WIP)
-
 ### CVE-2026-20805 (2026-01-13)
 
 <code>Exposure of sensitive information to an unauthorized actor in Desktop Windows Manager allows an authorized attacker to disclose information locally.
@@ -6015,6 +6008,7 @@
 
 - [encrypter15/CVE-2025-29824](https://github.com/encrypter15/CVE-2025-29824)
 - [AfanPan/CVE-2025-29824-Exploit](https://github.com/AfanPan/CVE-2025-29824-Exploit)
+- [uname1able/CVE-2025-29824](https://github.com/uname1able/CVE-2025-29824)
 
 ### CVE-2025-29927 (2025-03-21)
 
@@ -9632,6 +9626,7 @@
 - [DeDnY/CVE-2025-55182-in-docker](https://github.com/DeDnY/CVE-2025-55182-in-docker)
 - [luoqichen/CVE-2025-55182-POC](https://github.com/luoqichen/CVE-2025-55182-POC)
 - [lutraat/CVE-2025-55182-React-RSC-Exploit](https://github.com/lutraat/CVE-2025-55182-React-RSC-Exploit)
+- [monarchfish/cve-2025-55182-poc](https://github.com/monarchfish/cve-2025-55182-poc)
 
 ### CVE-2025-55183 (2025-12-11)
 
