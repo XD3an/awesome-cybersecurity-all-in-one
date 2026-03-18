@@ -170,8 +170,8 @@
 - [halilkirazkaya/CVE-2026-1357](https://github.com/halilkirazkaya/CVE-2026-1357)
 - [cybertechajju/CVE-2026-1357-POC](https://github.com/cybertechajju/CVE-2026-1357-POC)
 - [rootdirective-sec/CVE-2026-1357-Lab](https://github.com/rootdirective-sec/CVE-2026-1357-Lab)
-- [CVEs-Labs/CVE-2026-1357](https://github.com/CVEs-Labs/CVE-2026-1357)
 - [Nxploited/CVE-2026-1357](https://github.com/Nxploited/CVE-2026-1357)
+- [0xAshwesker/CVE-2026-1357](https://github.com/0xAshwesker/CVE-2026-1357)
 
 ### CVE-2026-1405 (2026-02-19)
 
@@ -492,6 +492,13 @@
 </code>
 
 - [George0Papasotiriou/CVE-2026-20404-MediaTek-modem-remote-DoS-rogue-base-station-scenario-](https://github.com/George0Papasotiriou/CVE-2026-20404-MediaTek-modem-remote-DoS-rogue-base-station-scenario-)
+
+### CVE-2026-20643 (2026-03-17)
+
+<code>A cross-origin issue in the Navigation API was addressed with improved input validation. This issue is fixed in Background Security Improvements for iOS 26.3.1, iPadOS 26.3.1, macOS 26.3.1, and macOS 26.3.2. Processing maliciously crafted web content may bypass Same Origin Policy.
+</code>
+
+- [zeroxjf/WebKit-NavigationAPI-SOP-Bypass](https://github.com/zeroxjf/WebKit-NavigationAPI-SOP-Bypass)
 
 ### CVE-2026-20660 (2026-02-11)
 
@@ -1226,6 +1233,13 @@
 
 - [absholi7ly/jsPDF-Object-Injection](https://github.com/absholi7ly/jsPDF-Object-Injection)
 
+### CVE-2026-25769 (2026-03-17)
+
+<code>Wazuh is a free and open source platform used for threat prevention, detection, and response. Versions 4.0.0 through 4.14.2 have a Remote Code Execution (RCE) vulnerability due to Deserialization of Untrusted Data). All Wazuh deployments using cluster mode (master/worker architecture) and any organization with a compromised worker node (e.g., through initial access, insider threat, or supply chain attack) are impacted. An attacker who gains access to a worker node (through any means) can achieve full RCE on the master node with root privileges. Version 4.14.3 fixes the issue.
+</code>
+
+- [hakaioffsec/CVE-2026-25769](https://github.com/hakaioffsec/CVE-2026-25769)
+
 ### CVE-2026-25807 (2026-02-09)
 
 <code>ZAI Shell is an autonomous SysOps agent designed to navigate, repair, and secure complex environments. Prior to 9.0.3, the P2P terminal sharing feature (share start) opens a TCP socket on port 5757 without any authentication mechanism. Any remote attacker can connect to this port using a simple socket script. An attacker who connects to a ZAI-Shell P2P session running in --no-ai mode can send arbitrary system commands. If the host user approves the command without reviewing its contents, the command executes directly with the user's privileges, bypassing all Sentinel safety checks. This vulnerability is fixed in 9.0.3.
@@ -1311,19 +1325,13 @@
 
 - [mbanyamer/CVE-2026-26030-Microsoft-Semantic-Kernel-1.39.4-RCE](https://github.com/mbanyamer/CVE-2026-26030-Microsoft-Semantic-Kernel-1.39.4-RCE)
 
-### CVE-2026-26117 (2026-03-10)
-
-<code>Authentication bypass using an alternate path or channel in Azure Windows Virtual Machine Agent allows an authorized attacker to elevate privileges locally.
-</code>
-
-- [j-dahl7/arc-cloud-c2-sentinel](https://github.com/j-dahl7/arc-cloud-c2-sentinel)
-
 ### CVE-2026-26118 (2026-03-10)
 
 <code>Server-side request forgery (ssrf) in Azure MCP Server allows an authorized attacker to elevate privileges over a network.
 </code>
 
 - [piiiico/mcp-check](https://github.com/piiiico/mcp-check)
+- [j-dahl7/mcp-attack-detection-sentinel](https://github.com/j-dahl7/mcp-attack-detection-sentinel)
 
 ### CVE-2026-26198 (2026-02-24)
 
@@ -1629,6 +1637,15 @@
 - [Jvr2022/CVE-2026-29786](https://github.com/Jvr2022/CVE-2026-29786)
 - [Rohitberiwala/NodeJS-Tar-Symlink-Exploit-CVE-2026-29786](https://github.com/Rohitberiwala/NodeJS-Tar-Symlink-Exploit-CVE-2026-29786)
 
+### CVE-2026-30048
+- [0xN4no/CVE-2026-30048](https://github.com/0xN4no/CVE-2026-30048)
+
+### CVE-2026-30345
+- [syphonetic/CVE-2026-30345](https://github.com/syphonetic/CVE-2026-30345)
+
+### CVE-2026-30695
+- [iremnurylmz/CVE-2026-30695](https://github.com/iremnurylmz/CVE-2026-30695)
+
 ### CVE-2026-30741 (2026-03-11)
 
 <code>A remote code execution (RCE) vulnerability in OpenClaw Agent Platform v2026.2.6 allows attackers to execute arbitrary code via a Request-Side prompt injection attack.
@@ -1708,6 +1725,9 @@
 
 ### CVE-2026-32722
 - [0xmrma/CVE-2026-32722](https://github.com/0xmrma/CVE-2026-32722)
+
+### CVE-2026-32941
+- [skoveit/CVE-2026-32941](https://github.com/skoveit/CVE-2026-32941)
 
 
 ## 2025
@@ -2863,9 +2883,13 @@
 - [iamEscri/CVE-2025-5548-FreeFloat-FTP-Buffer-Overflow](https://github.com/iamEscri/CVE-2025-5548-FreeFloat-FTP-Buffer-Overflow)
 - [Victor875/CVE-2025-5548](https://github.com/Victor875/CVE-2025-5548)
 - [mk017-hk/CVE-2025-5548](https://github.com/mk017-hk/CVE-2025-5548)
+- [luisyapura/Analisis-y-Explotacion-de-CVE-2025-5548](https://github.com/luisyapura/Analisis-y-Explotacion-de-CVE-2025-5548)
 - [jgs-developer/CVE-2025-5548](https://github.com/jgs-developer/CVE-2025-5548)
 - [raulsineiro/CVE-2025-5548](https://github.com/raulsineiro/CVE-2025-5548)
 - [Diego57709/CVE-2025-5548](https://github.com/Diego57709/CVE-2025-5548)
+- [alberto-galindo/CVE-2025-5548](https://github.com/alberto-galindo/CVE-2025-5548)
+- [elrajiii/CVE-2025-5548](https://github.com/elrajiii/CVE-2025-5548)
+- [PopClom/CVE-2025-5548](https://github.com/PopClom/CVE-2025-5548)
 
 ### CVE-2025-5640 (2025-06-05)
 
@@ -3827,6 +3851,7 @@
 <code>7-Zip ZIP File Parsing Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. Interaction with this product is required to exploit this vulnerability but attack vectors may vary depending on the implementation.\n\nThe specific flaw exists within the handling of symbolic links in ZIP files. Crafted data in a ZIP file can cause the process to traverse to unintended directories. An attacker can leverage this vulnerability to execute code in the context of a service account. Was ZDI-CAN-26753.
 </code>
 
+- [pacbypass/CVE-2025-11001](https://github.com/pacbypass/CVE-2025-11001)
 - [lastvocher/7zip-CVE-2025-11001](https://github.com/lastvocher/7zip-CVE-2025-11001)
 - [mbanyamer/CVE-2025-11001---7-Zip](https://github.com/mbanyamer/CVE-2025-11001---7-Zip)
 - [ranasen-rat/CVE-2025-11001](https://github.com/ranasen-rat/CVE-2025-11001)
@@ -3953,6 +3978,13 @@
 </code>
 
 - [Nxploited/CVE-2025-12674](https://github.com/Nxploited/CVE-2025-12674)
+
+### CVE-2025-12720 (2025-12-06)
+
+<code>The g-FFL Cockpit plugin for WordPress is vulnerable to unauthorized modification of data due to IP-based authorization that can be spoofed in the handle_enqueue_only() function in all versions up to, and including, 1.7.1. This makes it possible for unauthenticated attackers to delete arbitrary products.
+</code>
+
+- [d0n601/CVE-2025-12720](https://github.com/d0n601/CVE-2025-12720)
 
 ### CVE-2025-12735 (2025-11-05)
 
@@ -5250,6 +5282,9 @@
 
 - [math-x-io/CVE-2025-25296-POC](https://github.com/math-x-io/CVE-2025-25296-POC)
 
+### CVE-2025-25347
+- [Yetazyyy/CVE-2025-25347](https://github.com/Yetazyyy/CVE-2025-25347)
+
 ### CVE-2025-25369
 - [lkasjkasj/CVE-2025-25369](https://github.com/lkasjkasj/CVE-2025-25369)
 
@@ -6124,6 +6159,8 @@
 - [DanielHallbro/CVE-2025-29927-Nextjs-Bypass-PoC](https://github.com/DanielHallbro/CVE-2025-29927-Nextjs-Bypass-PoC)
 - [Si-Ni/CVE-2025-29927-Proof-of-Concept](https://github.com/Si-Ni/CVE-2025-29927-Proof-of-Concept)
 - [dbwlsdnr95/CVE-2025-29927](https://github.com/dbwlsdnr95/CVE-2025-29927)
+- [sangrok-jeon/CVE-2025-29927-Nextjs-Analysis](https://github.com/sangrok-jeon/CVE-2025-29927-Nextjs-Analysis)
+- [Toddkk02/CVE-2025-29927](https://github.com/Toddkk02/CVE-2025-29927)
 
 ### CVE-2025-29943 (2026-01-16)
 
@@ -8735,13 +8772,6 @@
 - [rimbadirgantara/CVE-2025-52691-poc](https://github.com/rimbadirgantara/CVE-2025-52691-poc)
 - [ninjazan420/CVE-2025-52691-PoC-SmarterMail-authentication-bypass-exploit-WT-2026-0001](https://github.com/ninjazan420/CVE-2025-52691-PoC-SmarterMail-authentication-bypass-exploit-WT-2026-0001)
 
-### CVE-2025-52692 (2025-12-19)
-
-<code>Successful exploitation of the vulnerability could allow an attacker with local network access to send a specially crafted URL to access certain administration functions without login credentials.
-</code>
-
-- [yt2w/CVE-2025-52692](https://github.com/yt2w/CVE-2025-52692)
-
 ### CVE-2025-52694 (2026-01-12)
 
 <code>Successful exploitation of the SQL injection vulnerability could allow an unauthenticated remote attacker to execute arbitrary SQL commands on the vulnerable service when it is exposed to the Internet, potentially affecting data confidentiality, integrity, and availability. Users and administrators of affected product versions are advised to update to the latest versions immediately.
@@ -9627,6 +9657,7 @@
 - [luoqichen/CVE-2025-55182-POC](https://github.com/luoqichen/CVE-2025-55182-POC)
 - [lutraat/CVE-2025-55182-React-RSC-Exploit](https://github.com/lutraat/CVE-2025-55182-React-RSC-Exploit)
 - [monarchfish/cve-2025-55182-poc](https://github.com/monarchfish/cve-2025-55182-poc)
+- [nexxp90/CVE-2025-55182_RCE_Exploit](https://github.com/nexxp90/CVE-2025-55182_RCE_Exploit)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -9928,6 +9959,13 @@
 
 - [anonaninda/Aninda-security-advisories](https://github.com/anonaninda/Aninda-security-advisories)
 
+### CVE-2025-56643 (2025-11-18)
+
+<code>Requarks Wiki.js 2.5.307 does not properly revoke or invalidate active JWT tokens when a user logs out. As a result, previously issued tokens remain valid and can be reused to access the system, even after logout. This behavior affects session integrity and may allow unauthorized access if a token is compromised. The issue is present in the authentication resolver logic and affects both the GraphQL endpoint and the logout mechanism.
+</code>
+
+- [0xBS0D27/CVE-2025-56643](https://github.com/0xBS0D27/CVE-2025-56643)
+
 ### CVE-2025-56708
 - [xkaneiki/rtty_CVE-2025-56708-CVE-2025-56709](https://github.com/xkaneiki/rtty_CVE-2025-56708-CVE-2025-56709)
 
@@ -9992,13 +10030,6 @@
 </code>
 
 - [thawphone/CVE-2025-57055](https://github.com/thawphone/CVE-2025-57055)
-
-### CVE-2025-57105 (2025-08-22)
-
-<code>The DI-7400G+ router has a command injection vulnerability, which allows attackers to execute arbitrary commands on the device. The sub_478D28 function in in mng_platform.asp, and sub_4A12DC function in wayos_ac_server.asp of the jhttpd program, with the parameter ac_mng_srv_host.
-</code>
-
-- [yt2w/CVE-2025-57105](https://github.com/yt2w/CVE-2025-57105)
 
 ### CVE-2025-57174 (2025-09-15)
 
@@ -11729,13 +11760,6 @@
 - [Victorhugofariasvieir66/relatorio-n8n.md](https://github.com/Victorhugofariasvieir66/relatorio-n8n.md)
 - [h3raklez/CVE-2025-68613](https://github.com/h3raklez/CVE-2025-68613)
 
-### CVE-2025-68615 (2025-12-22)
-
-<code>net-snmp is a SNMP application library, tools and daemon. Prior to versions 5.9.5 and 5.10.pre2, a specially crafted packet to an net-snmp snmptrapd daemon can cause a buffer overflow and the daemon to crash. This issue has been patched in versions 5.9.5 and 5.10.pre2.
-</code>
-
-- [yt2w/CVE-2025-68615](https://github.com/yt2w/CVE-2025-68615)
-
 ### CVE-2025-68645 (2025-12-22)
 
 <code>A Local File Inclusion (LFI) vulnerability exists in the Webmail Classic UI of Zimbra Collaboration (ZCS) 10.0 and 10.1 because of improper handling of user-supplied request parameters in the RestFilter servlet. An unauthenticated remote attacker can craft requests to the /h/rest endpoint to influence internal request dispatching, allowing inclusion of arbitrary files from the WebRoot directory.
@@ -12044,7 +12068,7 @@
 
 ### CVE-2025-70995 (2026-03-05)
 
-<code>An issue in Aranda Service Desk Web Edition (ASDK API 8.6) allows authenticated attackers to achieve remote code execution due to improper validation of uploaded files. An authenticated user can upload a crafted web.config file by sending a crafted POST request to /ASDKAPI/api/v8.6/item/addfile, which is processed by the ASP.NET runtime. The uploaded configuration file alters the execution context of the upload directory, enabling compilation and execution of attacker-controlled code (e.g., generation of an .aspx webshell). This allows remote command execution on the server without user interaction beyond authentication, impacting both On-Premise and SaaS deployments.
+<code>An issue in Aranda Service Desk Web Edition (ASDK API 8.6) allows authenticated attackers to achieve remote code execution due to improper validation of uploaded files. An authenticated user can upload a crafted web.config file by sending a crafted POST request to /ASDKAPI/api/v8.6/item/addfile, which is processed by the ASP.NET runtime. The uploaded configuration file alters the execution context of the upload directory, enabling compilation and execution of attacker-controlled code (e.g., generation of an .aspx webshell). This allows remote command execution on the server without user interaction beyond authentication, impacting both On-Premise and SaaS deployments. The vendor has fixed the issue in Aranda Service Desk V8 8.30.6.
 </code>
 
 - [0xcronos/CVE](https://github.com/0xcronos/CVE)
@@ -28196,6 +28220,7 @@
 - [aditibv/MOVEit-CVE-2023-34362](https://github.com/aditibv/MOVEit-CVE-2023-34362)
 - [Naveenbana5250/CVE-2023-34362-Defense-Package](https://github.com/Naveenbana5250/CVE-2023-34362-Defense-Package)
 - [khengar9274-web/moveit-transfer-2023-breach](https://github.com/khengar9274-web/moveit-transfer-2023-breach)
+- [tubaaiftikhar-ui/MOVEit-Transfer-Data-Breach-Analysis.](https://github.com/tubaaiftikhar-ui/MOVEit-Transfer-Data-Breach-Analysis.)
 
 ### CVE-2023-34468 (2023-06-12)
 
@@ -32287,6 +32312,13 @@
 
 - [Helica-core/eap_pwn](https://github.com/Helica-core/eap_pwn)
 
+### CVE-2023-52235 (2024-04-05)
+
+<code>SpaceX Starlink Wi-Fi router GEN 2 before 2023.53.0 and Starlink Dish before 07dd2798-ff15-4722-a9ee-de28928aed34 allow CSRF (e.g., for a reboot) via a DNS Rebinding attack.
+</code>
+
+- [hackintoanetwork/CVE-2023-52235-PoC-SPACEX-STARLINK-DNS-Rebinding](https://github.com/hackintoanetwork/CVE-2023-52235-PoC-SPACEX-STARLINK-DNS-Rebinding)
+
 ### CVE-2023-52251 (2024-01-25)
 
 <code>An issue discovered in provectus kafka-ui 0.4.0 through 0.7.1 allows remote attackers to execute arbitrary code via the q parameter of /api/clusters/local/topics/{topic}/messages.
@@ -34541,6 +34573,7 @@
 - [suyash-R-K/dfir-malware-investigation](https://github.com/suyash-R-K/dfir-malware-investigation)
 - [aditidutta696-dev/Spring4Shell-CVE-2022-22965-Exploitation-Attempt](https://github.com/aditidutta696-dev/Spring4Shell-CVE-2022-22965-Exploitation-Attempt)
 - [0xAshwesker/CVE-2022-22965](https://github.com/0xAshwesker/CVE-2022-22965)
+- [glory903-devsecops/CVE-2022-22965](https://github.com/glory903-devsecops/CVE-2022-22965)
 
 ### CVE-2022-22966 (2022-04-14)
 
@@ -39852,13 +39885,6 @@
 
 - [Satheesh575555/packages_apps_Settings_AOSP10_r33_CVE-2021-0333](https://github.com/Satheesh575555/packages_apps_Settings_AOSP10_r33_CVE-2021-0333)
 
-### CVE-2021-0334 (2021-02-10)
-
-<code>In onTargetSelected of ResolverActivity.java, there is a possible settings bypass allowing an app to become the default handler for arbitrary domains. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-8.1 Android-9 Android-10 Android-11Android ID: A-163358811
-</code>
-
-- [ShaikUsaf/frameworks_base_AOSP10_r33_CVE-2021-0334](https://github.com/ShaikUsaf/frameworks_base_AOSP10_r33_CVE-2021-0334)
-
 ### CVE-2021-0336 (2021-02-10)
 
 <code>In onReceive of BluetoothPermissionRequest.java, there is a possible permissions bypass due to a mutable PendingIntent. This could lead to local escalation of privilege that bypasses a permission check, with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-9 Android-10 Android-11 Android-8.1Android ID: A-158219161
@@ -40878,13 +40904,6 @@
 </code>
 
 - [aratane/CVE-2021-3831](https://github.com/aratane/CVE-2021-3831)
-
-### CVE-2021-3864 (2022-08-26)
-
-<code>A flaw was found in the way the dumpable flag setting was handled when certain SUID binaries executed its descendants. The prerequisite is a SUID binary that sets real UID equal to effective UID, and real GID equal to effective GID. The descendant will then have a dumpable value set to 1. As a result, if the descendant process crashes and core_pattern is set to a relative value, its core dump is stored in the current directory with uid:gid permissions. An unprivileged local user with eligible root SUID binary could use this flaw to place core dumps into root-owned directories, potentially resulting in escalation of privileges.
-</code>
-
-- [walac/cve-2021-3864](https://github.com/walac/cve-2021-3864)
 
 ### CVE-2021-3899 (2024-06-03)
 
@@ -42133,6 +42152,7 @@
 </code>
 
 - [cdxiaodong/CVE-2021-25741](https://github.com/cdxiaodong/CVE-2021-25741)
+- [Glutenfree69/ZigRaceExploit](https://github.com/Glutenfree69/ZigRaceExploit)
 
 ### CVE-2021-25790 (2021-07-23)
 
@@ -46085,6 +46105,7 @@
 - [agylabs/log4shell-remediation](https://github.com/agylabs/log4shell-remediation)
 - [0xAshwesker/CVE-2021-44228](https://github.com/0xAshwesker/CVE-2021-44228)
 - [Codepumpking/log4shell-poc](https://github.com/Codepumpking/log4shell-poc)
+- [wmohamed2033/wmohamed2033.github.io](https://github.com/wmohamed2033/wmohamed2033.github.io)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -55830,6 +55851,13 @@
 
 - [RandomRobbieBF/CVE-2019-15896](https://github.com/RandomRobbieBF/CVE-2019-15896)
 
+### CVE-2019-15949 (2019-09-05)
+
+<code>Nagios XI before 5.6.6 allows remote command execution as root. The exploit requires access to the server as the nagios user, or access as the admin user via the web interface. The getprofile.sh script, invoked by downloading a system profile (profile.php?cmd=download), is executed as root via a passwordless sudo entry; the script executes check_plugin, which is owned by the nagios user. A user logged into Nagios XI with permissions to modify plugins, or the nagios user on the server, can modify the check_plugin executable and insert malicious commands to execute as root.
+</code>
+
+- [plur1bu5/Nagios-CVE-2019-15949-RCE](https://github.com/plur1bu5/Nagios-CVE-2019-15949-RCE)
+
 ### CVE-2019-15972 (2019-11-26)
 
 <code>A vulnerability in the web-based management interface of Cisco Unified Communications Manager could allow an authenticated, remote attacker to conduct SQL injection attacks on an affected system. The vulnerability exists because the web-based management interface improperly validates SQL values. An attacker could exploit this vulnerability by authenticating to the application and sending malicious requests to an affected system. A successful exploit could allow the attacker to modify values on or return values from the underlying database.
@@ -58059,6 +58087,13 @@
 - [YoussefSalama1/CVE-2018-6574](https://github.com/YoussefSalama1/CVE-2018-6574)
 - [Rezy-Dev/CVE-2018-6574](https://github.com/Rezy-Dev/CVE-2018-6574)
 - [hbxxv/CVE-2018-6574](https://github.com/hbxxv/CVE-2018-6574)
+
+### CVE-2018-6606 (2018-02-04)
+
+<code>An issue was discovered in MalwareFox AntiMalware 2.74.0.150. Improper access control in zam32.sys and zam64.sys allows a non-privileged process to register itself with the driver by sending IOCTL 0x80002010 and then using IOCTL 0x8000204C to \\.\ZemanaAntiMalware to elevate privileges.
+</code>
+
+- [bullhead-repo/CVE-2018-6606](https://github.com/bullhead-repo/CVE-2018-6606)
 
 ### CVE-2018-6622 (2018-08-17)
 
