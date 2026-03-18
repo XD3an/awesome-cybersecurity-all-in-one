@@ -525,6 +525,13 @@
 
 - [oxfemale/CVE-2026-20817](https://github.com/oxfemale/CVE-2026-20817)
 
+### CVE-2026-20820 (2026-01-13)
+
+<code>Heap-based buffer overflow in Windows Common Log File System Driver allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [uname1able/CVE-2026-20820](https://github.com/uname1able/CVE-2026-20820)
+
 ### CVE-2026-20833 (2026-01-13)
 
 <code>Use of a broken or risky cryptographic algorithm in Windows Kerberos allows an authorized attacker to disclose information locally.
@@ -947,7 +954,6 @@
 - [infat0x/CVE-2026-24061](https://github.com/infat0x/CVE-2026-24061)
 - [ms0x08-dev/CVE-2026-24061-POC](https://github.com/ms0x08-dev/CVE-2026-24061-POC)
 - [punitdarji/telnetd-cve-2026-24061](https://github.com/punitdarji/telnetd-cve-2026-24061)
-- [XsanFlip/CVE-2026-24061-Scanner](https://github.com/XsanFlip/CVE-2026-24061-Scanner)
 - [Lingzesec/CVE-2026-24061-GUI](https://github.com/Lingzesec/CVE-2026-24061-GUI)
 - [LucasPDiniz/CVE-2026-24061](https://github.com/LucasPDiniz/CVE-2026-24061)
 - [FurkanKAYAPINAR/CVE-2026-24061-telnet2root](https://github.com/FurkanKAYAPINAR/CVE-2026-24061-telnet2root)
@@ -6725,7 +6731,6 @@
 - [0xb0rn3/CVE-2025-32463-EXPLOIT](https://github.com/0xb0rn3/CVE-2025-32463-EXPLOIT)
 - [morgenm/sudo-chroot-CVE-2025-32463](https://github.com/morgenm/sudo-chroot-CVE-2025-32463)
 - [MohamedKarrab/CVE-2025-32463](https://github.com/MohamedKarrab/CVE-2025-32463)
-- [dbarquero/cve-2025-32463-lab](https://github.com/dbarquero/cve-2025-32463-lab)
 - [krypton-0x00/CVE-2025-32463-Chwoot-POC](https://github.com/krypton-0x00/CVE-2025-32463-Chwoot-POC)
 - [Floodnut/CVE-2025-32463](https://github.com/Floodnut/CVE-2025-32463)
 - [Rajneeshkarya/CVE-2025-32463](https://github.com/Rajneeshkarya/CVE-2025-32463)
