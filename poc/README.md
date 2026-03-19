@@ -443,6 +443,7 @@
 </code>
 
 - [fevar54/CVE-2026-3888-POC-all-from-the-Qualys-platform.](https://github.com/fevar54/CVE-2026-3888-POC-all-from-the-Qualys-platform.)
+- [Many-Hat-Group/Ubuntu-CVE-2026-3888-patcher](https://github.com/Many-Hat-Group/Ubuntu-CVE-2026-3888-patcher)
 
 ### CVE-2026-3891 (2026-03-13)
 
@@ -1531,7 +1532,11 @@
 
 - [thewhiteh4t/cve-2026-27483](https://github.com/thewhiteh4t/cve-2026-27483)
 
-### CVE-2026-27540
+### CVE-2026-27540 (2026-03-19)
+
+<code>Unrestricted Upload of File with Dangerous Type vulnerability in Rymera Web Co Pty Ltd. Woocommerce Wholesale Lead Capture allows Using Malicious Files.This issue affects Woocommerce Wholesale Lead Capture: from n/a through 2.0.3.1.
+</code>
+
 - [DeadExpl0it/CVE-2026-27540-WordPress-Exploit-PoC](https://github.com/DeadExpl0it/CVE-2026-27540-WordPress-Exploit-PoC)
 
 ### CVE-2026-27574 (2026-02-21)
@@ -1778,12 +1783,22 @@
 
 - [ChrisSub08/CVE-2026-32127_SqlInjectionVulnerabilityOpenEMR8.0.0](https://github.com/ChrisSub08/CVE-2026-32127_SqlInjectionVulnerabilityOpenEMR8.0.0)
 
+### CVE-2026-32238
+- [ChrisSub08/CVE-2026-32238_RemoteCodeExecutionOpenEMR8.0.0](https://github.com/ChrisSub08/CVE-2026-32238_RemoteCodeExecutionOpenEMR8.0.0)
+
 ### CVE-2026-32722 (2026-03-18)
 
 <code>Memray is a memory profiler for Python. Prior to Memray 1.19.2, Memray rendered the command line of the tracked process directly into generated HTML reports without escaping. Because there was no escaping, attacker-controlled command line arguments were inserted as raw HTML into the generated report. This allowed JavaScript execution when a victim opened the generated report in a browser. Version 1.19.2 fixes the issue.
 </code>
 
 - [0xmrma/CVE-2026-32722](https://github.com/0xmrma/CVE-2026-32722)
+
+### CVE-2026-32731 (2026-03-18)
+
+<code>ApostropheCMS is an open-source content management framework. Prior to version 3.5.3 of `@apostrophecms/import-export`,\nThe `extract()` function in `gzip.js` constructs file-write paths using `fs.createWriteStream(path.join(exportPath, header.name))`. `path.join()` does not resolve or sanitise traversal segments such as `../`. It concatenates them as-is, meaning a tar entry named `../../evil.js` resolves to a path outside the intended extraction directory. No canonical-path check is performed before the write stream is opened. This is a textbook Zip Slip vulnerability. Any user who has been granted the Global Content Modify permission — a role routinely assigned to content editors and site managers — can upload a crafted `.tar.gz` file through the standard CMS import UI and write attacker-controlled content to any path the Node.js process can reach on the host filesystem. Version 3.5.3 of `@apostrophecms/import-export` fixes the issue.
+</code>
+
+- [0xEr3n/CVE-2026-32731](https://github.com/0xEr3n/CVE-2026-32731)
 
 ### CVE-2026-32746 (2026-03-13)
 
@@ -4060,13 +4075,6 @@
 
 - [Nxploited/CVE-2025-12674](https://github.com/Nxploited/CVE-2025-12674)
 
-### CVE-2025-12720 (2025-12-06)
-
-<code>The g-FFL Cockpit plugin for WordPress is vulnerable to unauthorized modification of data due to IP-based authorization that can be spoofed in the handle_enqueue_only() function in all versions up to, and including, 1.7.1. This makes it possible for unauthenticated attackers to delete arbitrary products.
-</code>
-
-- [d0n601/CVE-2025-12720](https://github.com/d0n601/CVE-2025-12720)
-
 ### CVE-2025-12735 (2025-11-05)
 
 <code>The expr-eval library is a JavaScript expression parser and evaluator designed to safely evaluate mathematical expressions with user-defined variables. However, due to insufficient input validation, an attacker can pass a crafted context object or use MEMBER of the context object into the evaluate() function and trigger arbitrary code execution.
@@ -6171,7 +6179,6 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [KaztoRay/CVE-2025-29927-Research](https://github.com/KaztoRay/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -12016,6 +12023,9 @@
 
 ### CVE-2025-69690
 - [privlabs/CVE-2025-69690-CVE-2025-69691](https://github.com/privlabs/CVE-2025-69690-CVE-2025-69691)
+
+### CVE-2025-69720
+- [Cao-Wuhui/CVE-2025-69720](https://github.com/Cao-Wuhui/CVE-2025-69720)
 
 ### CVE-2025-69727 (2026-03-16)
 
@@ -38362,7 +38372,6 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
