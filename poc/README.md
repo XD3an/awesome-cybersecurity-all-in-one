@@ -233,6 +233,7 @@
 - [jakubie07/CVE-2026-1731](https://github.com/jakubie07/CVE-2026-1731)
 - [richardpaimu34/CVE-2026-1731](https://github.com/richardpaimu34/CVE-2026-1731)
 - [hexissam/CVE-2026-1731](https://github.com/hexissam/CVE-2026-1731)
+- [LutfifakeeXone/CVE-2026-1731](https://github.com/LutfifakeeXone/CVE-2026-1731)
 
 ### CVE-2026-1844 (2026-02-13)
 
@@ -521,6 +522,7 @@
 </code>
 
 - [zeroxjf/WebKit-NavigationAPI-SOP-Bypass](https://github.com/zeroxjf/WebKit-NavigationAPI-SOP-Bypass)
+- [Fliv/CVE-2026-20643](https://github.com/Fliv/CVE-2026-20643)
 
 ### CVE-2026-20660 (2026-02-11)
 
@@ -1833,8 +1835,13 @@
 
 - [jeffaf/cve-2026-32746](https://github.com/jeffaf/cve-2026-32746)
 - [watchtowrlabs/watchtowr-vs-telnetd-CVE-2026-32746](https://github.com/watchtowrlabs/watchtowr-vs-telnetd-CVE-2026-32746)
+- [danindiana/cve-2026-32746-mitigation](https://github.com/danindiana/cve-2026-32746-mitigation)
 
-### CVE-2026-32941
+### CVE-2026-32941 (2026-03-20)
+
+<code>Sliver is a command and control framework that uses a custom Wireguard netstack. Versions 1.7.3 and below contain a Remote OOM (Out-of-Memory) vulnerability in the Sliver C2 server's mTLS and WireGuard C2 transport layer. The socketReadEnvelope and socketWGReadEnvelope functions trust an attacker-controlled 4-byte length prefix to allocate memory, with ServerMaxMessageSize allowing single allocations of up to ~2 GiB. A compromised implant or an attacker with valid credentials can exploit this by sending fabricated length prefixes over concurrent yamux streams (up to 128 per connection), forcing the server to attempt allocating ~256 GiB of memory and triggering an OS OOM kill. This crashes the Sliver server, disrupts all active implant sessions, and may degrade or kill other processes sharing the same host. The same pattern also affects all implant-side readers, which have no upper-bound check at all. The issue was not fixed at the the time of publication.
+</code>
+
 - [skoveit/CVE-2026-32941](https://github.com/skoveit/CVE-2026-32941)
 
 
@@ -2093,6 +2100,13 @@
 </code>
 
 - [neverendingsupport/nes-vuetify-cve-2025-1461](https://github.com/neverendingsupport/nes-vuetify-cve-2025-1461)
+
+### CVE-2025-1489 (2025-02-21)
+
+<code>The WP-Appbox plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's appbox shortcode in all versions up to, and including, 4.5.4 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+</code>
+
+- [khaifunglee/reproducing-CVE-2025-1489](https://github.com/khaifunglee/reproducing-CVE-2025-1489)
 
 ### CVE-2025-1562 (2025-06-18)
 
@@ -3981,7 +3995,6 @@
 <code>7-Zip ZIP File Parsing Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. Interaction with this product is required to exploit this vulnerability but attack vectors may vary depending on the implementation.\n\nThe specific flaw exists within the handling of symbolic links in ZIP files. Crafted data in a ZIP file can cause the process to traverse to unintended directories. An attacker can leverage this vulnerability to execute code in the context of a service account. Was ZDI-CAN-26753.
 </code>
 
-- [pacbypass/CVE-2025-11001](https://github.com/pacbypass/CVE-2025-11001)
 - [lastvocher/7zip-CVE-2025-11001](https://github.com/lastvocher/7zip-CVE-2025-11001)
 - [mbanyamer/CVE-2025-11001---7-Zip](https://github.com/mbanyamer/CVE-2025-11001---7-Zip)
 - [ranasen-rat/CVE-2025-11001](https://github.com/ranasen-rat/CVE-2025-11001)
@@ -17005,6 +17018,13 @@
 
 - [moften/CVE-2024-24926](https://github.com/moften/CVE-2024-24926)
 
+### CVE-2024-25081 (2024-02-26)
+
+<code>Splinefont in FontForge through 20230101 allows command injection via crafted filenames.
+</code>
+
+- [InzegoSec/CVE-2024-25081_2025-47273](https://github.com/InzegoSec/CVE-2024-25081_2025-47273)
+
 ### CVE-2024-25082 (2024-02-26)
 
 <code>Splinefont in FontForge through 20230101 allows command injection via crafted archives or compressed files.
@@ -17433,6 +17453,7 @@
 </code>
 
 - [roaris/CVE-2024-27304-PoC](https://github.com/roaris/CVE-2024-27304-PoC)
+- [flying-owl/Go-PGX-Vulnerability-POC-Public-Mirror](https://github.com/flying-owl/Go-PGX-Vulnerability-POC-Public-Mirror)
 
 ### CVE-2024-27316 (2024-04-04)
 
@@ -56417,7 +56438,7 @@
 </code>
 
 - [r00t4dm/CVE-2019-17570](https://github.com/r00t4dm/CVE-2019-17570)
-- [slowmistio/xmlrpc-common-deserialization](https://github.com/slowmistio/xmlrpc-common-deserialization)
+- [im23pds/xmlrpc-common-deserialization](https://github.com/im23pds/xmlrpc-common-deserialization)
 
 ### CVE-2019-17571 (2019-12-20)
 
@@ -57076,7 +57097,7 @@
 
 - [wetw0rk/Exploit-Development](https://github.com/wetw0rk/Exploit-Development)
 - [adamyordan/cve-2019-1003000-jenkins-rce-poc](https://github.com/adamyordan/cve-2019-1003000-jenkins-rce-poc)
-- [slowmistio/CVE-2019-1003000-and-CVE-2018-1999002-Pre-Auth-RCE-Jenkins](https://github.com/slowmistio/CVE-2019-1003000-and-CVE-2018-1999002-Pre-Auth-RCE-Jenkins)
+- [im23pds/CVE-2019-1003000-and-CVE-2018-1999002-Pre-Auth-RCE-Jenkins](https://github.com/im23pds/CVE-2019-1003000-and-CVE-2018-1999002-Pre-Auth-RCE-Jenkins)
 - [1NTheKut/CVE-2019-1003000_RCE-DETECTION](https://github.com/1NTheKut/CVE-2019-1003000_RCE-DETECTION)
 - [purple-WL/Jenkins_CVE-2019-1003000](https://github.com/purple-WL/Jenkins_CVE-2019-1003000)
 - [dawetmaster/CVE-2019-1003000-script-security-plugin-vulnerable](https://github.com/dawetmaster/CVE-2019-1003000-script-security-plugin-vulnerable)
@@ -61052,7 +61073,7 @@
 </code>
 
 - [wetw0rk/Exploit-Development](https://github.com/wetw0rk/Exploit-Development)
-- [slowmistio/CVE-2019-1003000-and-CVE-2018-1999002-Pre-Auth-RCE-Jenkins](https://github.com/slowmistio/CVE-2019-1003000-and-CVE-2018-1999002-Pre-Auth-RCE-Jenkins)
+- [im23pds/CVE-2019-1003000-and-CVE-2018-1999002-Pre-Auth-RCE-Jenkins](https://github.com/im23pds/CVE-2019-1003000-and-CVE-2018-1999002-Pre-Auth-RCE-Jenkins)
 - [0x6b7966/CVE-2018-1999002](https://github.com/0x6b7966/CVE-2018-1999002)
 
 
