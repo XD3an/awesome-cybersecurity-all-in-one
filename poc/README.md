@@ -193,6 +193,7 @@
 </code>
 
 - [dreamboyim66-boop/CVE-2026-1492-POC](https://github.com/dreamboyim66-boop/CVE-2026-1492-POC)
+- [the8frust/CVE-2026-1492](https://github.com/the8frust/CVE-2026-1492)
 
 ### CVE-2026-1529 (2026-02-09)
 
@@ -298,7 +299,6 @@
 <code>Use after free in CSS in Google Chrome prior to 145.0.7632.75 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)
 </code>
 
-- [b1gchoi/CVE-2026-2441_POC](https://github.com/b1gchoi/CVE-2026-2441_POC)
 - [huseyinstif/CVE-2026-2441-PoC](https://github.com/huseyinstif/CVE-2026-2441-PoC)
 - [theemperorspath/CVE-2026-2441-PoC](https://github.com/theemperorspath/CVE-2026-2441-PoC)
 - [atiilla/CVE-2026-2441_PoC](https://github.com/atiilla/CVE-2026-2441_PoC)
@@ -321,12 +321,12 @@
 - [JoshuaProvoste/CVE-2026-2472-Vertex-AI-SDK-Google-Cloud](https://github.com/JoshuaProvoste/CVE-2026-2472-Vertex-AI-SDK-Google-Cloud)
 - [megafart1/CVE-2026-2472-Vertex-AI-SDK-Google-Cloud](https://github.com/megafart1/CVE-2026-2472-Vertex-AI-SDK-Google-Cloud)
 
-### CVE-2026-2628 (2026-03-03)
+### CVE-2026-2631 (2026-03-11)
 
-<code>The All-in-One Microsoft 365 &amp; Entra ID / Azure AD SSO Login plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 2.2.5. This makes it possible for unauthenticated attackers to bypass authentication and log in as other users, including administrators.
+<code>The Datalogics Ecommerce Delivery  WordPress plugin before 2.6.60 exposes an unauthenticated REST endpoint that allows any remote user to modify the option `datalogics_token` without verification. This token is subsequently used for authentication in a protected endpoint that allows users to perform arbitrary WordPress `update_option()` operations. Attackers can use this to enable registartion and to set the default role as Administrator.
 </code>
 
-- [b1gchoi/CVE-2026-2628-PoC](https://github.com/b1gchoi/CVE-2026-2628-PoC)
+- [Nxploited/CVE-2026-2631](https://github.com/Nxploited/CVE-2026-2631)
 
 ### CVE-2026-2636 (2026-02-25)
 
@@ -370,6 +370,13 @@
 </code>
 
 - [aykhan32/CVE-2026-2898-FunAdmin-Deserialization](https://github.com/aykhan32/CVE-2026-2898-FunAdmin-Deserialization)
+
+### CVE-2026-2964 (2026-02-23)
+
+<code>A vulnerability was identified in higuma web-audio-recorder-js 0.1/0.1.1. Impacted is the function extend in the library lib/WebAudioRecorder.js of the component Dynamic Config Handling. Such manipulation leads to improperly controlled modification of object prototype attributes. It is possible to launch the attack remotely. Attacks of this nature are highly complex. The exploitability is considered difficult. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.
+</code>
+
+- [thegenetic/CVE-2026-2964-Lab](https://github.com/thegenetic/CVE-2026-2964-Lab)
 
 ### CVE-2026-2991 (2026-03-18)
 
@@ -445,6 +452,7 @@
 
 - [fevar54/CVE-2026-3888-POC-all-from-the-Qualys-platform.](https://github.com/fevar54/CVE-2026-3888-POC-all-from-the-Qualys-platform.)
 - [Many-Hat-Group/Ubuntu-CVE-2026-3888-patcher](https://github.com/Many-Hat-Group/Ubuntu-CVE-2026-3888-patcher)
+- [netw0rk7/CVE-2026-3888-PoC](https://github.com/netw0rk7/CVE-2026-3888-PoC)
 
 ### CVE-2026-3891 (2026-03-13)
 
@@ -459,6 +467,13 @@
 </code>
 
 - [g0w6y/CVE-2026-4092](https://github.com/g0w6y/CVE-2026-4092)
+
+### CVE-2026-4342 (2026-03-19)
+
+<code>A security issue was discovered in ingress-nginx where a combination of Ingress annotations can be used to inject configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)
+</code>
+
+- [stuartMoorhouse/CVE-2026-4342](https://github.com/stuartMoorhouse/CVE-2026-4342)
 
 ### CVE-2026-4821
 - [openexecution-coder/demo-cve-2026-4821](https://github.com/openexecution-coder/demo-cve-2026-4821)
@@ -484,7 +499,6 @@
 <code>A vulnerability in the web interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to bypass authentication and execute script files on an affected device to obtain root access to the underlying operating system.\r\n\r This vulnerability is due to an improper system process that is created at boot time. An attacker could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful exploit could allow the attacker to execute a variety of scripts and commands that allow root access to the device.
 </code>
 
-- [b1gchoi/CVE-2026-20079](https://github.com/b1gchoi/CVE-2026-20079)
 - [Sushilsin/CVE-2026-20079](https://github.com/Sushilsin/CVE-2026-20079)
 
 ### CVE-2026-20127 (2026-02-25)
@@ -502,7 +516,7 @@
 
 ### CVE-2026-20131 (2026-03-04)
 
-<code>A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to execute arbitrary Java code as root on an affected device.\r\n\r This vulnerability is due to insecure deserialization of a user-supplied Java byte stream. An attacker could exploit this vulnerability by sending a crafted serialized Java object to the web-based management interface of an affected device. A successful exploit could allow the attacker to execute arbitrary code on the device and elevate privileges to root.\r\n\r Note: If the FMC management interface does not have public internet access, the attack surface that is associated with this vulnerability is reduced.
+<code>A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to execute arbitrary Java code as root on an affected device.\r\n\n This vulnerability is due to insecure deserialization of a user-supplied Java byte stream. An attacker could exploit this vulnerability by sending a crafted serialized Java object to the web-based management interface of an affected device. A successful exploit could allow the attacker to execute arbitrary code on the device and elevate privileges to root.\r\n\n Note: If the FMC management interface does not have public internet access, the attack surface that is associated with this vulnerability is reduced.
 </code>
 
 - [Sushilsin/CVE-2026-20131](https://github.com/Sushilsin/CVE-2026-20131)
@@ -668,13 +682,6 @@
 - [richardpaimu34/CVE-2026-21533](https://github.com/richardpaimu34/CVE-2026-21533)
 - [fevar54/CVE-2026-21533_Scanner.py](https://github.com/fevar54/CVE-2026-21533_Scanner.py)
 
-### CVE-2026-21536 (2026-03-05)
-
-<code>Microsoft Devices Pricing Program Remote Code Execution Vulnerability
-</code>
-
-- [b1gchoi/CVE-2026-21536-RCE](https://github.com/b1gchoi/CVE-2026-21536-RCE)
-
 ### CVE-2026-21627 (2026-02-20)
 
 <code>The vulnerability was rooted in how the Tassos Framework plugin handled specific AJAX requests through Joomla’s com_ajax entry point. Under certain conditions, internal framework functionality could be invoked without proper restriction.
@@ -740,12 +747,12 @@
 - [George0Papasotiriou/CVE-2026-21962-Oracle-HTTP-Server-WebLogic-Proxy-Plug-in-Critical-](https://github.com/George0Papasotiriou/CVE-2026-21962-Oracle-HTTP-Server-WebLogic-Proxy-Plug-in-Critical-)
 - [gregk4sec/cve-2026-21962](https://github.com/gregk4sec/cve-2026-21962)
 
-### CVE-2026-21994 (2026-03-17)
+### CVE-2026-21992 (2026-03-20)
 
-<code>Vulnerability in the Oracle Edge Cloud Infrastructure Designer and Visualisation Toolkit product of Oracle Open Source Projects (component: Desktop).   The supported version that is affected is 0.3.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Edge Cloud Infrastructure Designer and Visualisation Toolkit.  Successful attacks of this vulnerability can result in takeover of Oracle Edge Cloud Infrastructure Designer and Visualisation Toolkit. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
+<code>Vulnerability in the Oracle Identity Manager product of Oracle Fusion Middleware (component: REST WebServices) and Oracle Web Services Manager product of Oracle Fusion Middleware (component: Web Services Security).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Identity Manager and Oracle Web Services Manager.  Successful attacks of this vulnerability can result in takeover of Oracle Identity Manager and Oracle Web Services Manager. Note: Oracle Web Services Manager is installed with an Oracle Fusion Middleware Infrastructure. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
 </code>
 
-- [TEXploited/CVE-2026-21994](https://github.com/TEXploited/CVE-2026-21994)
+- [TEXploited/CVE-2026-21992](https://github.com/TEXploited/CVE-2026-21992)
 
 ### CVE-2026-22187 (2026-01-07)
 
@@ -798,6 +805,13 @@
 </code>
 
 - [D7EAD/CVE-2026-22722](https://github.com/D7EAD/CVE-2026-22722)
+
+### CVE-2026-22730 (2026-03-18)
+
+<code>A critical SQL injection vulnerability in Spring AI's MariaDBFilterExpressionConverter allows attackers to bypass metadata-based access controls and execute arbitrary SQL commands.\n\nThe vulnerability exists due to missing input sanitization.
+</code>
+
+- [NULL200OK/CVE-2026-22730-Scanner](https://github.com/NULL200OK/CVE-2026-22730-Scanner)
 
 ### CVE-2026-22785 (2026-01-12)
 
@@ -1836,6 +1850,7 @@
 - [jeffaf/cve-2026-32746](https://github.com/jeffaf/cve-2026-32746)
 - [watchtowrlabs/watchtowr-vs-telnetd-CVE-2026-32746](https://github.com/watchtowrlabs/watchtowr-vs-telnetd-CVE-2026-32746)
 - [danindiana/cve-2026-32746-mitigation](https://github.com/danindiana/cve-2026-32746-mitigation)
+- [chosenonehacks/CVE-2026-32746](https://github.com/chosenonehacks/CVE-2026-32746)
 
 ### CVE-2026-32941 (2026-03-20)
 
@@ -1843,6 +1858,9 @@
 </code>
 
 - [skoveit/CVE-2026-32941](https://github.com/skoveit/CVE-2026-32941)
+
+### CVE-2026-99999
+- [lasdjk/CVE-2026-99999-important-info](https://github.com/lasdjk/CVE-2026-99999-important-info)
 
 
 ## 2025
@@ -2494,6 +2512,7 @@
 - [wand3rlust/CVE-2025-3248](https://github.com/wand3rlust/CVE-2025-3248)
 - [drackyjr/cve-2025-3248-exploit](https://github.com/drackyjr/cve-2025-3248-exploit)
 - [b0ySie7e/CVE-2025-3248-POC](https://github.com/b0ySie7e/CVE-2025-3248-POC)
+- [nebari-playground/langflow-cve-2025-3248](https://github.com/nebari-playground/langflow-cve-2025-3248)
 
 ### CVE-2025-3419 (2025-05-08)
 
@@ -3338,6 +3357,7 @@
 - [qalesyaSN/CVE-2025-6934](https://github.com/qalesyaSN/CVE-2025-6934)
 - [1atakan1/CVE-2025-6934](https://github.com/1atakan1/CVE-2025-6934)
 - [0xTerror/CVE-2025-6934](https://github.com/0xTerror/CVE-2025-6934)
+- [MejbanKadir/CVE-2025-6934-PoC](https://github.com/MejbanKadir/CVE-2025-6934-PoC)
 
 ### CVE-2025-6970 (2025-07-09)
 
@@ -4048,6 +4068,13 @@
 </code>
 
 - [bocgoInfosec/CVE-2025-11833-PoC](https://github.com/bocgoInfosec/CVE-2025-11833-PoC)
+
+### CVE-2025-11926 (2025-10-18)
+
+<code>The Related Posts Lite plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all versions up to, and including, 1.12 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.
+</code>
+
+- [prabhatverma47/CVE-2025-11926](https://github.com/prabhatverma47/CVE-2025-11926)
 
 ### CVE-2025-11953 (2025-11-03)
 
@@ -6226,6 +6253,7 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
+- [KaztoRay/CVE-2025-29927-Research](https://github.com/KaztoRay/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -8107,6 +8135,7 @@
 - [vignesh21-git/CVE-2025-48384](https://github.com/vignesh21-git/CVE-2025-48384)
 - [vignesh21-git/CVE-2025-48384-submodule](https://github.com/vignesh21-git/CVE-2025-48384-submodule)
 - [DayDayDayDreaming/backup-exec-cve-48384](https://github.com/DayDayDayDreaming/backup-exec-cve-48384)
+- [anthonyc53/cve-2025-48384](https://github.com/anthonyc53/cve-2025-48384)
 
 ### CVE-2025-48461 (2025-06-24)
 
@@ -8167,6 +8196,13 @@
 </code>
 
 - [Farenhytee/supabase-sentinel](https://github.com/Farenhytee/supabase-sentinel)
+
+### CVE-2025-48784 (2025-06-06)
+
+<code>A missing authorization vulnerability in Soar Cloud HRD Human Resource Management System through version 7.3.2025.0408 allows remote attackers to modify system settings without prior authorization.
+</code>
+
+- [h3raklez/CVE-2025-48784](https://github.com/h3raklez/CVE-2025-48784)
 
 ### CVE-2025-48799 (2025-07-08)
 
@@ -8309,6 +8345,7 @@
 - [0xCZR1/cve-2025-49144](https://github.com/0xCZR1/cve-2025-49144)
 - [onniio/CVE-2025-49144](https://github.com/onniio/CVE-2025-49144)
 - [ammarm0010/CVE-2025-49144_PoC](https://github.com/ammarm0010/CVE-2025-49144_PoC)
+- [havertz2110/CVE-2025-49144-PoC](https://github.com/havertz2110/CVE-2025-49144-PoC)
 
 ### CVE-2025-49173
 - [aliyabuz25/cve-2025-49173-macos-mavericks-10.9-local-root-privesc-auth-services](https://github.com/aliyabuz25/cve-2025-49173-macos-mavericks-10.9-local-root-privesc-auth-services)
@@ -10091,13 +10128,6 @@
 </code>
 
 - [anonaninda/Aninda-security-advisories](https://github.com/anonaninda/Aninda-security-advisories)
-
-### CVE-2025-56643 (2025-11-18)
-
-<code>Requarks Wiki.js 2.5.307 does not properly revoke or invalidate active JWT tokens when a user logs out. As a result, previously issued tokens remain valid and can be reused to access the system, even after logout. This behavior affects session integrity and may allow unauthorized access if a token is compromised. The issue is present in the authentication resolver logic and affects both the GraphQL endpoint and the logout mechanism.
-</code>
-
-- [0xBS0D27/CVE-2025-56643](https://github.com/0xBS0D27/CVE-2025-56643)
 
 ### CVE-2025-56708
 - [xkaneiki/rtty_CVE-2025-56708-CVE-2025-56709](https://github.com/xkaneiki/rtty_CVE-2025-56708-CVE-2025-56709)
@@ -19277,6 +19307,7 @@
 - [TheStingR/CVE-2024-36991-Tool](https://github.com/TheStingR/CVE-2024-36991-Tool)
 - [gunzf0x/CVE-2024-36991](https://github.com/gunzf0x/CVE-2024-36991)
 - [0xFZin/CVE-2024-36991](https://github.com/0xFZin/CVE-2024-36991)
+- [jhurtadomi/CVE-2024-36991-Splunk](https://github.com/jhurtadomi/CVE-2024-36991-Splunk)
 
 ### CVE-2024-37010
 - [SarpantKeltiek/CVE-2024-37010](https://github.com/SarpantKeltiek/CVE-2024-37010)
@@ -38444,6 +38475,7 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
+- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -40262,7 +40294,6 @@
 <code>In several functions of MemoryFileSystem.cpp and related files, there is a possible use after free due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-10Android ID: A-176237595
 </code>
 
-- [nanopathi/frameworks_av_AOSP10_r33_CVE-2021-0520](https://github.com/nanopathi/frameworks_av_AOSP10_r33_CVE-2021-0520)
 - [ShaikUsaf/frameworks_av_AOSP10_r33_CVE-2021-0520](https://github.com/ShaikUsaf/frameworks_av_AOSP10_r33_CVE-2021-0520)
 
 ### CVE-2021-0522 (2021-06-21)
@@ -43017,6 +43048,7 @@
 - [0xricksanchez/CVE-2021-29447](https://github.com/0xricksanchez/CVE-2021-29447)
 - [davids52/cve-2021-29447_auto-script](https://github.com/davids52/cve-2021-29447_auto-script)
 - [rdana55/CVE-2021-29447-PoC](https://github.com/rdana55/CVE-2021-29447-PoC)
+- [danilo1992-sys/CVE-2021-29447](https://github.com/danilo1992-sys/CVE-2021-29447)
 
 ### CVE-2021-29505 (2021-05-28)
 
@@ -63929,7 +63961,6 @@
 - [hal0taso/CVE-2016-0728](https://github.com/hal0taso/CVE-2016-0728)
 - [sugarvillela/CVE](https://github.com/sugarvillela/CVE)
 - [th30d00r/Linux-Vulnerability-CVE-2016-0728-and-Exploit](https://github.com/th30d00r/Linux-Vulnerability-CVE-2016-0728-and-Exploit)
-- [tndud042713/cve](https://github.com/tndud042713/cve)
 - [sidrk01/cve-2016-0728](https://github.com/sidrk01/cve-2016-0728)
 
 ### CVE-2016-0752 (2016-02-16)
