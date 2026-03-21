@@ -746,6 +746,7 @@
 - [gregk4sec/CVE-2026-21962-o](https://github.com/gregk4sec/CVE-2026-21962-o)
 - [George0Papasotiriou/CVE-2026-21962-Oracle-HTTP-Server-WebLogic-Proxy-Plug-in-Critical-](https://github.com/George0Papasotiriou/CVE-2026-21962-Oracle-HTTP-Server-WebLogic-Proxy-Plug-in-Critical-)
 - [gregk4sec/cve-2026-21962](https://github.com/gregk4sec/cve-2026-21962)
+- [naozibuhao/CVE-2026-21962_Java_GUI_Exploit_Tool](https://github.com/naozibuhao/CVE-2026-21962_Java_GUI_Exploit_Tool)
 
 ### CVE-2026-21992 (2026-03-20)
 
@@ -1672,6 +1673,7 @@
 - [alihussainzada/CVE-2026-29000-Python-PoC-pac4j-JWT-AuthenticationBypass-Poc](https://github.com/alihussainzada/CVE-2026-29000-Python-PoC-pac4j-JWT-AuthenticationBypass-Poc)
 - [otuva/CVE-2026-29000](https://github.com/otuva/CVE-2026-29000)
 - [RootX111/cve-2026-29000](https://github.com/RootX111/cve-2026-29000)
+- [oil-lamp-cat/CVE-2026-29000-pac4j-PoC](https://github.com/oil-lamp-cat/CVE-2026-29000-pac4j-PoC)
 
 ### CVE-2026-29041 (2026-03-06)
 
@@ -9118,6 +9120,7 @@
 - [Cameloo1/sharepoint-toolshell-micro-postmortem](https://github.com/Cameloo1/sharepoint-toolshell-micro-postmortem)
 - [anwakub/CVE-2025-53770](https://github.com/anwakub/CVE-2025-53770)
 - [rbctee/CVE-2025-53770](https://github.com/rbctee/CVE-2025-53770)
+- [J4ck3LSyN-Gen2/CVE-2025-53770](https://github.com/J4ck3LSyN-Gen2/CVE-2025-53770)
 
 ### CVE-2025-53772 (2025-08-12)
 
@@ -11468,6 +11471,7 @@
 
 - [symphony2colour/varlib-cve-2025-66034](https://github.com/symphony2colour/varlib-cve-2025-66034)
 - [Liquid1998/Variatype.htb-CVE-2025-66034](https://github.com/Liquid1998/Variatype.htb-CVE-2025-66034)
+- [d0x-awrqxavc/CVE-2025-66034](https://github.com/d0x-awrqxavc/CVE-2025-66034)
 
 ### CVE-2025-66039 (2025-12-09)
 
@@ -15157,7 +15161,7 @@
 - [sariamubeen/CVE-2024-10924](https://github.com/sariamubeen/CVE-2024-10924)
 - [MaleeshaUdan/wordpress-CVE-2024-10924--exploit](https://github.com/MaleeshaUdan/wordpress-CVE-2024-10924--exploit)
 - [sharafu-sblsec/CVE-2024-10924](https://github.com/sharafu-sblsec/CVE-2024-10924)
-- [OliveiraaX/-CVE-2024-10924](https://github.com/OliveiraaX/-CVE-2024-10924)
+- [d0x-awrqxavc/-CVE-2024-10924](https://github.com/d0x-awrqxavc/-CVE-2024-10924)
 - [ademto/wordpress-cve-2024-10924-pentest](https://github.com/ademto/wordpress-cve-2024-10924-pentest)
 - [bodoinon/CVE-2024-10924](https://github.com/bodoinon/CVE-2024-10924)
 - [JoshuaProvoste/0-click-RCE-Exploit-for-CVE-2024-10924](https://github.com/JoshuaProvoste/0-click-RCE-Exploit-for-CVE-2024-10924)
@@ -40699,7 +40703,6 @@
 - [Y0s9/CVE-2021-3129](https://github.com/Y0s9/CVE-2021-3129)
 - [idea-oss/laravel-CVE-2021-3129-EXP](https://github.com/idea-oss/laravel-CVE-2021-3129-EXP)
 - [knqyf263/CVE-2021-3129](https://github.com/knqyf263/CVE-2021-3129)
-- [cuongtop4598/CVE-2021-3129-Script](https://github.com/cuongtop4598/CVE-2021-3129-Script)
 - [joshuavanderpoll/CVE-2021-3129](https://github.com/joshuavanderpoll/CVE-2021-3129)
 - [shadowabi/Laravel-CVE-2021-3129](https://github.com/shadowabi/Laravel-CVE-2021-3129)
 - [hupe1980/CVE-2021-3129](https://github.com/hupe1980/CVE-2021-3129)
@@ -45441,6 +45444,7 @@
 - [pierDipi/unicode-control-characters-action](https://github.com/pierDipi/unicode-control-characters-action)
 - [waseeld/CVE-2021-42574](https://github.com/waseeld/CVE-2021-42574)
 - [tin-z/solidity_CVE-2021-42574-POC](https://github.com/tin-z/solidity_CVE-2021-42574-POC)
+- [Moshe-ship/bidi-guard](https://github.com/Moshe-ship/bidi-guard)
 
 ### CVE-2021-42662 (2021-11-05)
 
