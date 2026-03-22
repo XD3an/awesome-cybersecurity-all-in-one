@@ -755,6 +755,13 @@
 
 - [TEXploited/CVE-2026-21992](https://github.com/TEXploited/CVE-2026-21992)
 
+### CVE-2026-21994 (2026-03-17)
+
+<code>Vulnerability in the Oracle Edge Cloud Infrastructure Designer and Visualisation Toolkit product of Oracle Open Source Projects (component: Desktop).   The supported version that is affected is 0.3.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Edge Cloud Infrastructure Designer and Visualisation Toolkit.  Successful attacks of this vulnerability can result in takeover of Oracle Edge Cloud Infrastructure Designer and Visualisation Toolkit. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
+</code>
+
+- [g0w6y/CVE-2026-21994](https://github.com/g0w6y/CVE-2026-21994)
+
 ### CVE-2026-22187 (2026-01-07)
 
 <code>Bio-Formats versions up to and including 8.3.0 perform unsafe Java deserialization of attacker-controlled memoization cache files (.bfmemo) during image processing. The loci.formats.Memoizer class automatically loads and deserializes memo files associated with images without validation, integrity checks, or trust enforcement. An attacker who can supply a crafted .bfmemo file alongside an image can trigger deserialization of untrusted data, which may result in denial of service, logic manipulation, or potentially remote code execution in environments where suitable gadget chains are present on the classpath.
@@ -861,6 +868,14 @@
 
 - [qzhodl/CVE-2026-22862](https://github.com/qzhodl/CVE-2026-22862)
 
+### CVE-2026-23520 (2026-01-15)
+
+<code>Arcane provides modern docker management. Prior to 1.13.0, Arcane has a command injection in the updater service. Arcane’s updater service supported lifecycle labels com.getarcaneapp.arcane.lifecycle.pre-update and com.getarcaneapp.arcane.lifecycle.post-update that allowed defining a command to run before or after a container update. The label value is passed directly to /bin/sh -c without sanitization or validation. Because any authenticated user (not limited to administrators) can create projects through the API, an attacker can create a project that specifies one of these lifecycle labels with a malicious command. When an administrator later triggers a container update (either manually or via scheduled update checks), Arcane reads the lifecycle label and executes its value as a shell command inside the container. This vulnerability is fixed in 1.13.0.
+</code>
+
+- [Augmaster/POC-CVE-2026-23520](https://github.com/Augmaster/POC-CVE-2026-23520)
+- [0xzap/CVE-2026-23520](https://github.com/0xzap/CVE-2026-23520)
+
 ### CVE-2026-23550 (2026-01-14)
 
 <code>Incorrect Privilege Assignment vulnerability in Modular DS allows Privilege Escalation.This issue affects Modular DS: from n/a through 2.5.1.
@@ -894,6 +909,7 @@
 
 - [boroeurnprach/CVE-2026-23744-PoC](https://github.com/boroeurnprach/CVE-2026-23744-PoC)
 - [rootdirective-sec/CVE-2026-23744-Lab](https://github.com/rootdirective-sec/CVE-2026-23744-Lab)
+- [suljov/CVE-2026-23744-Remote-Code-Execution-POC](https://github.com/suljov/CVE-2026-23744-Remote-Code-Execution-POC)
 
 ### CVE-2026-23745 (2026-01-16)
 
@@ -1301,6 +1317,7 @@
 </code>
 
 - [hakaioffsec/CVE-2026-25769](https://github.com/hakaioffsec/CVE-2026-25769)
+- [Samres27/CVE-2026-25769---CVE-2026-25770](https://github.com/Samres27/CVE-2026-25769---CVE-2026-25770)
 
 ### CVE-2026-25807 (2026-02-09)
 
@@ -1816,6 +1833,13 @@
 
 - [ChrisSub08/CVE-2026-32127_SqlInjectionVulnerabilityOpenEMR8.0.0](https://github.com/ChrisSub08/CVE-2026-32127_SqlInjectionVulnerabilityOpenEMR8.0.0)
 
+### CVE-2026-32194 (2026-03-19)
+
+<code>Improper neutralization of special elements used in a command ('command injection') in Microsoft Bing Images allows an unauthorized attacker to execute code over a network.
+</code>
+
+- [z3r0h3ro/CVE-2026-32194-POC](https://github.com/z3r0h3ro/CVE-2026-32194-POC)
+
 ### CVE-2026-32238 (2026-03-19)
 
 <code>OpenEMR is a free and open source electronic health records and medical practice management application. Versions prior to 8.0.0.2 contain a Command injection vulnerability in the backup functionality that can be exploited by authenticated attackers. The vulnerability exists due to insufficient input validation in the backup functionality. Version 8.0.0.2 fixes the issue.
@@ -1860,6 +1884,15 @@
 </code>
 
 - [skoveit/CVE-2026-32941](https://github.com/skoveit/CVE-2026-32941)
+
+### CVE-2026-33017 (2026-03-20)
+
+<code>Langflow is a tool for building and deploying AI-powered agents and workflows. In versions prior to 1.9.0, the POST /api/v1/build_public_tmp/{flow_id}/flow endpoint allows building public flows without requiring authentication. When the optional data parameter is supplied, the endpoint uses attacker-controlled flow data (containing arbitrary Python code in node definitions) instead of the stored flow data from the database. This code is passed to exec() with zero sandboxing, resulting in unauthenticated remote code execution. This is distinct from CVE-2025-3248, which fixed /api/v1/validate/code by adding authentication. The build_public_tmp endpoint is designed to be unauthenticated (for public flows) but incorrectly accepts attacker-supplied flow data containing arbitrary executable code. This issue has been fixed in version 1.9.0.
+</code>
+
+- [MaxMnMl/langflow-CVE-2026-33017-poc](https://github.com/MaxMnMl/langflow-CVE-2026-33017-poc)
+- [omer-efe-curkus/CVE-2026-33017-Langflow-RCE-PoC](https://github.com/omer-efe-curkus/CVE-2026-33017-Langflow-RCE-PoC)
+- [SimoesCTT/Sovereign-Echo-33017](https://github.com/SimoesCTT/Sovereign-Echo-33017)
 
 ### CVE-2026-99999
 - [lasdjk/CVE-2026-99999-important-info](https://github.com/lasdjk/CVE-2026-99999-important-info)
@@ -6884,7 +6917,7 @@
 - [SpongeBob-369/cve-2025-32463](https://github.com/SpongeBob-369/cve-2025-32463)
 - [lowercasenumbers/CVE-2025-32463_sudo_chroot](https://github.com/lowercasenumbers/CVE-2025-32463_sudo_chroot)
 - [abrewer251/CVE-2025-32463_Sudo_PoC](https://github.com/abrewer251/CVE-2025-32463_Sudo_PoC)
-- [0xb0rn3/CVE-2025-32463-EXPLOIT](https://github.com/0xb0rn3/CVE-2025-32463-EXPLOIT)
+- [oxborn3/CVE-2025-32463-EXPLOIT](https://github.com/oxborn3/CVE-2025-32463-EXPLOIT)
 - [morgenm/sudo-chroot-CVE-2025-32463](https://github.com/morgenm/sudo-chroot-CVE-2025-32463)
 - [MohamedKarrab/CVE-2025-32463](https://github.com/MohamedKarrab/CVE-2025-32463)
 - [krypton-0x00/CVE-2025-32463-Chwoot-POC](https://github.com/krypton-0x00/CVE-2025-32463-Chwoot-POC)
@@ -10527,7 +10560,6 @@
 <code>Remote command injection vulnerability in heap profiler builtin service in Apache bRPC ((all versions &lt; 1.15.0)) on all platforms allows attacker to inject remote command.\n\n\n\nRoot Cause: The bRPC heap profiler built-in service (/pprof/heap) does not validate the user-provided extra_options parameter and executes it as a command-line argument. Attackers can execute remote commands using the extra_options parameter..\n\nAffected scenarios: Use the built-in bRPC heap profiler service to perform jemalloc memory profiling.\n\nHow to Fix: we provide two methods, you can choose one of them:\n\n1. Upgrade bRPC to version 1.15.0.\n2. Apply this patch ( https://github.com/apache/brpc/pull/3101 ) manually.
 </code>
 
-- [ninjazan420/CVE-2025-60021-PoC-Apache-bRPC-Heap-Profiler-Command-Injection](https://github.com/ninjazan420/CVE-2025-60021-PoC-Apache-bRPC-Heap-Profiler-Command-Injection)
 - [Mefhika120/Ashwesker-CVE-2025-60021](https://github.com/Mefhika120/Ashwesker-CVE-2025-60021)
 
 ### CVE-2025-60188 (2025-11-06)
@@ -11471,7 +11503,9 @@
 
 - [symphony2colour/varlib-cve-2025-66034](https://github.com/symphony2colour/varlib-cve-2025-66034)
 - [Liquid1998/Variatype.htb-CVE-2025-66034](https://github.com/Liquid1998/Variatype.htb-CVE-2025-66034)
+- [tristanqtn/CVE-2025-66034](https://github.com/tristanqtn/CVE-2025-66034)
 - [d0x-awrqxavc/CVE-2025-66034](https://github.com/d0x-awrqxavc/CVE-2025-66034)
+- [v3cn4x00/POC-CVE-2025-66034](https://github.com/v3cn4x00/POC-CVE-2025-66034)
 
 ### CVE-2025-66039 (2025-12-09)
 
@@ -19525,6 +19559,7 @@
 - [thealice01/CVE-2024-38063](https://github.com/thealice01/CVE-2024-38063)
 - [Avidan1/CVE-2024-38063](https://github.com/Avidan1/CVE-2024-38063)
 - [arrhenius975/CVE-2024-38063-Exploit-Refactoring](https://github.com/arrhenius975/CVE-2024-38063-Exploit-Refactoring)
+- [SALMA-ESSAOUD/CVE-CVSS--CVE-2024-38063-IPv6-TCP-IP-Remote-Code-Execution-Analysis](https://github.com/SALMA-ESSAOUD/CVE-CVSS--CVE-2024-38063-IPv6-TCP-IP-Remote-Code-Execution-Analysis)
 
 ### CVE-2024-38077 (2024-07-09)
 
@@ -23003,6 +23038,7 @@
 <code>In JetBrains TeamCity before 2024.12 improper access control allowed viewing details of unauthorized agents
 </code>
 
+- [Msakhana68/cve-2024-56348](https://github.com/Msakhana68/cve-2024-56348)
 - [joshuavanderpoll/cve-2024-56348](https://github.com/joshuavanderpoll/cve-2024-56348)
 
 ### CVE-2024-56428 (2025-05-21)
@@ -54072,7 +54108,7 @@
 - [dnr6419/CVE-2019-7609](https://github.com/dnr6419/CVE-2019-7609)
 - [wolf1892/CVE-2019-7609](https://github.com/wolf1892/CVE-2019-7609)
 - [Cr4ckC4t/cve-2019-7609](https://github.com/Cr4ckC4t/cve-2019-7609)
-- [OliveiraaX/CVE-2019-7609-KibanaRCE](https://github.com/OliveiraaX/CVE-2019-7609-KibanaRCE)
+- [d0x-awrqxavc/CVE-2019-7609-KibanaRCE](https://github.com/d0x-awrqxavc/CVE-2019-7609-KibanaRCE)
 - [Akshay15-png/CVE-2019-7609](https://github.com/Akshay15-png/CVE-2019-7609)
 - [aleister1102/kibana-prototype-pollusion](https://github.com/aleister1102/kibana-prototype-pollusion)
 - [toxaker/CVE-2019-7609](https://github.com/toxaker/CVE-2019-7609)
@@ -68384,6 +68420,7 @@
 - [Efehamzaa/Metasploit-Red-Pentest-Lab](https://github.com/Efehamzaa/Metasploit-Red-Pentest-Lab)
 - [yagnikkrish/metasploitable-penetration-testing-lab](https://github.com/yagnikkrish/metasploitable-penetration-testing-lab)
 - [brettsm/vsftpd2.3.4-backdoor-exploit](https://github.com/brettsm/vsftpd2.3.4-backdoor-exploit)
+- [Tr00jan99/PwnTillDawn-Portal-Walkthrough](https://github.com/Tr00jan99/PwnTillDawn-Portal-Walkthrough)
 
 ### CVE-2011-2553
 - [carlosrpastrana/cve-2011-2553](https://github.com/carlosrpastrana/cve-2011-2553)
