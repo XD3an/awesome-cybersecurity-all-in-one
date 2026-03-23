@@ -920,6 +920,7 @@
 - [rootdirective-sec/CVE-2026-23744-Lab](https://github.com/rootdirective-sec/CVE-2026-23744-Lab)
 - [suljov/CVE-2026-23744-Remote-Code-Execution-POC](https://github.com/suljov/CVE-2026-23744-Remote-Code-Execution-POC)
 - [H1sok444/CVE-2026-23744-PoC](https://github.com/H1sok444/CVE-2026-23744-PoC)
+- [fckoo/mcpjaminspector-unauth-rce](https://github.com/fckoo/mcpjaminspector-unauth-rce)
 
 ### CVE-2026-23745 (2026-01-16)
 
@@ -58465,6 +58466,7 @@
 
 - [0x00-0x00/CVE-2018-7422](https://github.com/0x00-0x00/CVE-2018-7422)
 - [ndr-repo/CVE-2018-7422](https://github.com/ndr-repo/CVE-2018-7422)
+- [nguyenduytoi/CVE-2018-7422](https://github.com/nguyenduytoi/CVE-2018-7422)
 
 ### CVE-2018-7448 (2018-02-26)
 
