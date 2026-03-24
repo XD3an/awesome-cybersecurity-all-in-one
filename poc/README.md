@@ -132,13 +132,6 @@
 - [MehdiLeDeaut/CVE-2026-1281-Ivanti-EPMM-RCE](https://github.com/MehdiLeDeaut/CVE-2026-1281-Ivanti-EPMM-RCE)
 - [YunfeiGE18/CVE-2026-1281-CVE-2026-1340-Ivanti-EPMM-RCE](https://github.com/YunfeiGE18/CVE-2026-1281-CVE-2026-1340-Ivanti-EPMM-RCE)
 
-### CVE-2026-1306 (2026-02-14)
-
-<code>The midi-Synth plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type and file extension validation in the 'export' AJAX action in all versions up to, and including, 1.1.0. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible granted the attacker can obtain a valid nonce. The nonce is exposed in frontend JavaScript making it trivially accessible to unauthenticated attackers.
-</code>
-
-- [richardpaimu34/CVE-2026-1306](https://github.com/richardpaimu34/CVE-2026-1306)
-
 ### CVE-2026-1311 (2026-02-26)
 
 <code>The Worry Proof Backup plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 0.2.4 via the backup upload functionality. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload a malicious ZIP archive with path traversal sequences to write arbitrary files anywhere on the server, including executable PHP files. This can lead to remote code execution.
@@ -232,7 +225,6 @@
 - [win3zz/CVE-2026-1731](https://github.com/win3zz/CVE-2026-1731)
 - [cybrdude/cve-2026-1731-scanner](https://github.com/cybrdude/cve-2026-1731-scanner)
 - [jakubie07/CVE-2026-1731](https://github.com/jakubie07/CVE-2026-1731)
-- [richardpaimu34/CVE-2026-1731](https://github.com/richardpaimu34/CVE-2026-1731)
 - [hexissam/CVE-2026-1731](https://github.com/hexissam/CVE-2026-1731)
 - [LutfifakeeXone/CVE-2026-1731](https://github.com/LutfifakeeXone/CVE-2026-1731)
 - [zensheII/CVE-2026-1731-PoC](https://github.com/zensheII/CVE-2026-1731-PoC)
@@ -358,13 +350,6 @@
 
 - [ppwwiinn/CVE-2026-2763-POC](https://github.com/ppwwiinn/CVE-2026-2763-POC)
 
-### CVE-2026-2848 (2026-02-20)
-
-<code>A flaw has been found in SourceCodester Simple Responsive Tourism Website 1.0. Affected by this vulnerability is an unknown functionality of the file /classes/Master.php?f=register of the component Registration. This manipulation of the argument Username causes sql injection. The attack may be initiated remotely. The exploit has been published and may be used.
-</code>
-
-- [richardpaimu34/CVE-2026-2848](https://github.com/richardpaimu34/CVE-2026-2848)
-
 ### CVE-2026-2898 (2026-02-22)
 
 <code>A vulnerability was detected in funadmin up to 7.1.0-rc4. This issue affects the function getMember of the file app/common/service/AuthCloudService.php of the component Backend Endpoint. The manipulation of the argument cloud_account results in deserialization. The attack may be performed from remote. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.
@@ -432,6 +417,13 @@
 
 - [hacker1337itme/CVE-2026-3442](https://github.com/hacker1337itme/CVE-2026-3442)
 
+### CVE-2026-3587 (2026-03-23)
+
+<code>An unauthenticated remote attacker can exploit a hidden function in the CLI prompt to escape the restricted interface and gain root access to the underlying Linux based OS, leading to full compromise of the device.
+</code>
+
+- [z3r0h3ro/cve-2026-3587-poc](https://github.com/z3r0h3ro/cve-2026-3587-poc)
+
 ### CVE-2026-3786 (2026-03-08)
 
 <code>A security flaw has been discovered in EasyCMS up to 1.6. The impacted element is an unknown function of the file /RbacuserAction.class.php of the component Request Parameter Handler. The manipulation of the argument _order results in sql injection. The attack can be launched remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.
@@ -454,6 +446,7 @@
 - [fevar54/CVE-2026-3888-POC-all-from-the-Qualys-platform.](https://github.com/fevar54/CVE-2026-3888-POC-all-from-the-Qualys-platform.)
 - [Many-Hat-Group/Ubuntu-CVE-2026-3888-patcher](https://github.com/Many-Hat-Group/Ubuntu-CVE-2026-3888-patcher)
 - [netw0rk7/CVE-2026-3888-PoC](https://github.com/netw0rk7/CVE-2026-3888-PoC)
+- [TheCyberGeek/CVE-2026-3888-snap-confine-systemd-tmpfiles-LPE](https://github.com/TheCyberGeek/CVE-2026-3888-snap-confine-systemd-tmpfiles-LPE)
 
 ### CVE-2026-3891 (2026-03-13)
 
@@ -679,9 +672,7 @@
 </code>
 
 - [Pairs34/RDPVulnarableCheck](https://github.com/Pairs34/RDPVulnarableCheck)
-- [elvin31thai/CVE-2026-21533](https://github.com/elvin31thai/CVE-2026-21533)
 - [jenniferreire26/CVE-2026-21533](https://github.com/jenniferreire26/CVE-2026-21533)
-- [richardpaimu34/CVE-2026-21533](https://github.com/richardpaimu34/CVE-2026-21533)
 - [fevar54/CVE-2026-21533_Scanner.py](https://github.com/fevar54/CVE-2026-21533_Scanner.py)
 
 ### CVE-2026-21627 (2026-02-20)
@@ -884,6 +875,7 @@
 
 - [Augmaster/POC-CVE-2026-23520](https://github.com/Augmaster/POC-CVE-2026-23520)
 - [0xzap/CVE-2026-23520](https://github.com/0xzap/CVE-2026-23520)
+- [cypher-21/CVE-2026-23520](https://github.com/cypher-21/CVE-2026-23520)
 
 ### CVE-2026-23550 (2026-01-14)
 
@@ -921,6 +913,7 @@
 - [suljov/CVE-2026-23744-Remote-Code-Execution-POC](https://github.com/suljov/CVE-2026-23744-Remote-Code-Execution-POC)
 - [H1sok444/CVE-2026-23744-PoC](https://github.com/H1sok444/CVE-2026-23744-PoC)
 - [fckoo/mcpjaminspector-unauth-rce](https://github.com/fckoo/mcpjaminspector-unauth-rce)
+- [FrenzisRed/CVE-2026-23744](https://github.com/FrenzisRed/CVE-2026-23744)
 
 ### CVE-2026-23745 (2026-01-16)
 
@@ -1113,7 +1106,11 @@
 
 - [mbanyamer/cve-2026-24514-Kubernetes-Dos](https://github.com/mbanyamer/cve-2026-24514-Kubernetes-Dos)
 
-### CVE-2026-24516
+### CVE-2026-24516 (2026-03-23)
+
+<code>A command injection vulnerability exists in DigitalOcean Droplet Agent through 1.3.2. The troubleshooting actioner component (internal/troubleshooting/actioner/actioner.go) processes metadata from the metadata service endpoint and executes commands specified in the TroubleshootingAgent.Requesting array without adequate input validation. While the code validates that artifacts exist in the validInvestigationArtifacts map, it fails to sanitize the actual command content after the &quot;command:&quot; prefix. This allows an attacker who can control metadata responses to inject and execute arbitrary OS commands with root privileges. The attack is triggered by sending a TCP packet with specific sequence numbers to the SSH port, which causes the agent to fetch metadata from http://169.254.169.254/metadata/v1.json. The vulnerability affects the command execution flow in internal/troubleshooting/actioner/actioner.go (insufficient validation), internal/troubleshooting/command/exec.go (direct exec.CommandContext call), and internal/troubleshooting/command/command.go (command parsing without sanitization). This can lead to complete system compromise, data exfiltration, privilege escalation, and potential lateral movement across cloud infrastructure.
+</code>
+
 - [poxsky/CVE-2026-24516-DigitalOcean-RCE](https://github.com/poxsky/CVE-2026-24516-DigitalOcean-RCE)
 
 ### CVE-2026-24688 (2026-01-27)
@@ -1704,7 +1701,6 @@
 - [alihussainzada/CVE-2026-29000-Python-PoC-pac4j-JWT-AuthenticationBypass-Poc](https://github.com/alihussainzada/CVE-2026-29000-Python-PoC-pac4j-JWT-AuthenticationBypass-Poc)
 - [otuva/CVE-2026-29000](https://github.com/otuva/CVE-2026-29000)
 - [RootX111/cve-2026-29000](https://github.com/RootX111/cve-2026-29000)
-- [oil-lamp-cat/CVE-2026-29000-pac4j-PoC](https://github.com/oil-lamp-cat/CVE-2026-29000-pac4j-PoC)
 
 ### CVE-2026-29041 (2026-03-06)
 
@@ -1755,6 +1751,9 @@
 </code>
 
 - [syphonetic/CVE-2026-30345](https://github.com/syphonetic/CVE-2026-30345)
+
+### CVE-2026-30498
+- [Mehdi-Ben-Hamou/CVE-2026-30498](https://github.com/Mehdi-Ben-Hamou/CVE-2026-30498)
 
 ### CVE-2026-30695 (2026-03-18)
 
@@ -1846,13 +1845,6 @@
 </code>
 
 - [ChrisSub08/CVE-2026-32127_SqlInjectionVulnerabilityOpenEMR8.0.0](https://github.com/ChrisSub08/CVE-2026-32127_SqlInjectionVulnerabilityOpenEMR8.0.0)
-
-### CVE-2026-32194 (2026-03-19)
-
-<code>Improper neutralization of special elements used in a command ('command injection') in Microsoft Bing Images allows an unauthorized attacker to execute code over a network.
-</code>
-
-- [z3r0h3ro/CVE-2026-32194-POC](https://github.com/z3r0h3ro/CVE-2026-32194-POC)
 
 ### CVE-2026-32238 (2026-03-19)
 
@@ -3371,6 +3363,27 @@
 
 - [olljanat/TestCitrixException](https://github.com/olljanat/TestCitrixException)
 
+### CVE-2025-6782 (2025-07-04)
+
+<code>The GoZen Forms plugin for WordPress is vulnerable to SQL Injection via the 'forms-id' parameter of the dirGZActiveForm() function in all versions up to, and including, 1.1.5 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.
+</code>
+
+- [jFriedli/CVE-2025-6782](https://github.com/jFriedli/CVE-2025-6782)
+
+### CVE-2025-6783 (2025-07-04)
+
+<code>The GoZen Forms plugin for WordPress is vulnerable to SQL Injection via the 'forms-id' parameter of the emdedSc() function in all versions up to, and including, 1.1.5 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.
+</code>
+
+- [jFriedli/CVE-2025-6783](https://github.com/jFriedli/CVE-2025-6783)
+
+### CVE-2025-6792 (2026-02-14)
+
+<code>The One to one user Chat by WPGuppy plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the /wp-json/guppylite/v2/channel-authorize rest endpoint in all versions up to, and including, 1.1.4. This makes it possible for unauthenticated attackers to intercept and view private chat messages between users.
+</code>
+
+- [jFriedli/CVE-2025-6792](https://github.com/jFriedli/CVE-2025-6792)
+
 ### CVE-2025-6860 (2025-06-29)
 
 <code>In SourceCodester Best Salon Management System 1.0 wurde eine Schwachstelle ausgemacht. Sie wurde als kritisch eingestuft. Betroffen ist eine unbekannte Verarbeitung der Datei /panel/staff_commision.php. Durch das Manipulieren des Arguments fromdate/todate mit unbekannten Daten kann eine sql injection-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk passieren. Der Exploit steht zur öffentlichen Verfügung.
@@ -3722,13 +3735,6 @@
 
 - [chimdi2700/CVE-2025-8571](https://github.com/chimdi2700/CVE-2025-8571)
 
-### CVE-2025-8572 (2026-02-14)
-
-<code>The Truelysell Core plugin for WordPress is vulnerable to privilege escalation in versions less than, or equal to, 1.8.7. This is due to insufficient validation of the user_role parameter during user registration. This makes it possible for unauthenticated attackers to create accounts with elevated privileges, including administrator access.
-</code>
-
-- [richardpaimu34/CVE-2025-8572](https://github.com/richardpaimu34/CVE-2025-8572)
-
 ### CVE-2025-8671 (2025-08-13)
 
 <code>A mismatch caused by client-triggered server-sent stream resets between HTTP/2 specifications and the internal architectures of some HTTP/2 implementations may result in excessive server resource consumption leading to denial-of-service (DoS).  By opening streams and then rapidly triggering the server to reset them—using malformed frames or flow control errors—an attacker can exploit incorrect stream accounting. Streams reset by the server are considered closed at the protocol level, even though backend processing continues. This allows a client to cause the server to handle an unbounded number of concurrent streams on a single connection. This CVE will be updated as affected product details are released.
@@ -3808,6 +3814,7 @@
 - [KvzinNcpx7/kvzinncpx7.github.io](https://github.com/KvzinNcpx7/kvzinncpx7.github.io)
 - [x0da6h/POC-for-CVE-2025-9074](https://github.com/x0da6h/POC-for-CVE-2025-9074)
 - [matesz44/CVE-2025-9074](https://github.com/matesz44/CVE-2025-9074)
+- [rocket-panda/CVE-2025-9074](https://github.com/rocket-panda/CVE-2025-9074)
 
 ### CVE-2025-9090 (2025-08-17)
 
@@ -3815,6 +3822,13 @@
 </code>
 
 - [byteReaper77/CVE-2025-9090](https://github.com/byteReaper77/CVE-2025-9090)
+
+### CVE-2025-9172 (2025-08-26)
+
+<code>The Vibes plugin for WordPress is vulnerable to time-based SQL Injection via the ‘resource’ parameter in all versions up to, and including, 2.2.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.
+</code>
+
+- [jFriedli/CVE-2025-9172](https://github.com/jFriedli/CVE-2025-9172)
 
 ### CVE-2025-9196 (2025-10-11)
 
@@ -3887,6 +3901,13 @@
 
 - [Kamgreen50/STIG-Edge-RCE-CVE2025-9478](https://github.com/Kamgreen50/STIG-Edge-RCE-CVE2025-9478)
 
+### CVE-2025-9485 (2025-10-04)
+
+<code>The OAuth Single Sign On – SSO (OAuth Client) plugin for WordPress is vulnerable to Improper Verification of Cryptographic Signature in versions up to, and including, 6.26.12. This is due to the plugin performing unsafe JWT token processing without verification or validation in the `get_resource_owner_from_id_token` function. This makes it possible for unauthenticated attackers to bypass authentication and gain access to any existing user account - including administrators in certain configurations - or to create arbitrary subscriber-level accounts.
+</code>
+
+- [jFriedli/CVE-2025-9485](https://github.com/jFriedli/CVE-2025-9485)
+
 ### CVE-2025-9491 (2025-08-26)
 
 <code>Microsoft Windows LNK File UI Misrepresentation Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Microsoft Windows. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of .LNK files. Crafted data in an .LNK file can cause hazardous content in the file to be invisible to a user who inspects the file via the Windows-provided user interface. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-25373.
@@ -3949,6 +3970,13 @@
 </code>
 
 - [yt2w/CVE-2025-9961](https://github.com/yt2w/CVE-2025-9961)
+
+### CVE-2025-9967 (2025-10-15)
+
+<code>The Orion SMS OTP Verification plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 1.1.7. This is due to the plugin not properly validating a user's identity prior to updating their password. This makes it possible for unauthenticated attackers to change arbitrary user's password to a one-time password if the attacker knows the user's phone number
+</code>
+
+- [jFriedli/CVE-2025-9967](https://github.com/jFriedli/CVE-2025-9967)
 
 ### CVE-2025-9998 (2025-09-05)
 
@@ -4017,6 +4045,20 @@
 - [nehkark/CVE-2025-10230](https://github.com/nehkark/CVE-2025-10230)
 - [marcostolosa/CVE-2025-10230](https://github.com/marcostolosa/CVE-2025-10230)
 
+### CVE-2025-10294 (2025-10-15)
+
+<code>The OwnID Passwordless Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 1.3.4. This is due to the plugin not properly checking if the ownid_shared_secret value is empty prior to authenticating a user via JWT. This makes it possible for unauthenticated attackers to log in as other users, including administrators, on instances where the plugin has not been fully configured yet.
+</code>
+
+- [jFriedli/CVE-2025-10294](https://github.com/jFriedli/CVE-2025-10294)
+
+### CVE-2025-10307 (2025-09-26)
+
+<code>The Backuply – Backup, Restore, Migrate and Clone plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete backup functionality in all versions up to, and including, 1.4.8. This makes it possible for authenticated attackers, with Administrator-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).
+</code>
+
+- [jFriedli/CVE-2025-10307](https://github.com/jFriedli/CVE-2025-10307)
+
 ### CVE-2025-10351 (2025-10-08)
 
 <code>SQL injection vulnerability based on the melis-cms module of the Melis platform from Melis Technology. This vulnerability allows an attacker to retrieve, create, update, and delete databases through the 'idPage' parameter in the '/melis/MelisCms/PageEdition/getTinyTemplates' endpoint.
@@ -4044,6 +4086,13 @@
 </code>
 
 - [AdityaBhatt3010/CVE-2025-10585-The-Chrome-V8-Zero-Day](https://github.com/AdityaBhatt3010/CVE-2025-10585-The-Chrome-V8-Zero-Day)
+
+### CVE-2025-10658 (2025-09-20)
+
+<code>The SupportCandy – Helpdesk &amp; Customer Support Ticket System plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 3.3.7. This is due to missing rate limiting on the OTP verification for guest login. This makes it possible for unauthenticated attackers to bypass authentication and gain unauthorized access to customer support tickets by brute forcing the 6-digit OTP code.
+</code>
+
+- [jFriedli/CVE-2025-10658](https://github.com/jFriedli/CVE-2025-10658)
 
 ### CVE-2025-10720 (2025-10-13)
 
@@ -4083,6 +4132,13 @@
 
 - [Nxploited/CVE-2025-11170](https://github.com/Nxploited/CVE-2025-11170)
 
+### CVE-2025-11177 (2025-10-15)
+
+<code>The External Login plugin for WordPress is vulnerable to SQL Injection via the 'log' parameter in all versions up to, and including, 1.11.2 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database when a PostgreSQL or MSSQL database is configured as the external authentication database.
+</code>
+
+- [jFriedli/CVE-2025-11177](https://github.com/jFriedli/CVE-2025-11177)
+
 ### CVE-2025-11187 (2026-01-27)
 
 <code>Issue summary: PBMAC1 parameters in PKCS#12 files are missing validation\nwhich can trigger a stack-based buffer overflow, invalid pointer or NULL\npointer dereference during MAC verification.\n\nImpact summary: The stack buffer overflow or NULL pointer dereference may\ncause a crash leading to Denial of Service for an application that parses\nuntrusted PKCS#12 files. The buffer overflow may also potentially enable\ncode execution depending on platform mitigations.\n\nWhen verifying a PKCS#12 file that uses PBMAC1 for the MAC, the PBKDF2\nsalt and keylength parameters from the file are used without validation.\nIf the value of keylength exceeds the size of the fixed stack buffer used\nfor the derived key (64 bytes), the key derivation will overflow the buffer.\nThe overflow length is attacker-controlled. Also, if the salt parameter is\nnot an OCTET STRING type this can lead to invalid or NULL pointer\ndereference.\n\nExploiting this issue requires a user or application to process\na maliciously crafted PKCS#12 file. It is uncommon to accept untrusted\nPKCS#12 files in applications as they are usually used to store private\nkeys which are trusted by definition. For this reason the issue was assessed\nas Moderate severity.\n\nThe FIPS modules in 3.6, 3.5 and 3.4 are not affected by this issue, as\nPKCS#12 processing is outside the OpenSSL FIPS module boundary.\n\nOpenSSL 3.6, 3.5 and 3.4 are vulnerable to this issue.\n\nOpenSSL 3.3, 3.0, 1.1.1 and 1.0.2 are not affected by this issue as they do\nnot support PBMAC1 in PKCS#12.
@@ -4104,12 +4160,26 @@
 
 - [synap5e/connectwise-automate-AiTM-rce](https://github.com/synap5e/connectwise-automate-AiTM-rce)
 
+### CVE-2025-11627 (2025-10-30)
+
+<code>The Site Checkup Debug AI Troubleshooting with Wizard and Tips for Each Issue plugin for WordPress is vulnerable to log file poisoning in all versions up to, and including, 1.47. This makes it possible for unauthenticated attackers to insert arbitrary content into log files, and potentially cause denial of service via disk space exhaustion.
+</code>
+
+- [jFriedli/CVE-2025-11627](https://github.com/jFriedli/CVE-2025-11627)
+
 ### CVE-2025-11749 (2025-11-05)
 
 <code>The AI Engine plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.1.3 via the /mcp/v1/ REST API endpoint that exposes the 'Bearer Token' value when 'No-Auth URL' is enabled. This makes it possible for unauthenticated attackers to extract the bearer token, which can be used to gain access to a valid session and perform many actions like creating a new administrator account, leading to privilege escalation.
 </code>
 
 - [Nxploited/CVE-2025-11749](https://github.com/Nxploited/CVE-2025-11749)
+
+### CVE-2025-11771 (2025-11-21)
+
+<code>The Cryptocurrency (Token), Launchpad (Presale), ICO &amp; IDO, Airdrop by TokenICO plugin for WordPress is vulnerable to unauthenticated and unauthorized modification of data due to missing authentication and capability checks on the 'createSaleRecord' function in all versions up to, and including, 2.4.6. This makes it possible for unauthenticated attackers to manipulate presales counters.
+</code>
+
+- [jFriedli/CVE-2025-11771](https://github.com/jFriedli/CVE-2025-11771)
 
 ### CVE-2025-11833 (2025-11-01)
 
@@ -4133,6 +4203,34 @@
 - [GhoStZA-debug/PoC-CVE-collection](https://github.com/GhoStZA-debug/PoC-CVE-collection)
 - [Mr-In4inci3le/CVE-2025-11953-POC-](https://github.com/Mr-In4inci3le/CVE-2025-11953-POC-)
 - [boroeurnprach/CVE-2025-11953-PoC](https://github.com/boroeurnprach/CVE-2025-11953-PoC)
+
+### CVE-2025-11973 (2025-11-21)
+
+<code>The 简数采集器 plugin for WordPress is vulnerable to Arbitrary File Read in all versions up to, and including, 2.6.3 via the __kds_flag functionality that imports featured images. This makes it possible for authenticated attackers, with Adminstrator-level access and above, to read the contents of arbitrary files on the server, which can contain sensitive information.
+</code>
+
+- [jFriedli/CVE-2025-11973](https://github.com/jFriedli/CVE-2025-11973)
+
+### CVE-2025-11986 (2025-11-11)
+
+<code>The Crypto plugin for WordPress is vulnerable to Information exposure in all versions up to, and including, 2.22. This is due to the plugin registering an unauthenticated AJAX action (wp_ajax_nopriv_crypto_connect_ajax_process) that allows calling the register and savenft methods with only a publicly-available nonce check and no wallet signature verification. This makes it possible for unauthenticated attackers to set a site-wide global authentication state via a single transient, bypassing all access controls for ALL visitors to the site. The impact is complete bypass of [crypto-block] shortcode restrictions and page-level access controls, affecting all site visitors for one hour, plus the ability to inject arbitrary data into the plugin's custom_users table.
+</code>
+
+- [jFriedli/CVE-2025-11986](https://github.com/jFriedli/CVE-2025-11986)
+
+### CVE-2025-11988 (2025-11-11)
+
+<code>The Crypto plugin for WordPress is vulnerable to unauthorized manipulation of data in all versions up to, and including, 2.22. This is due to the plugin registering an unauthenticated AJAX action (wp_ajax_nopriv_crypto_connect_ajax_process) that allows calling the crypto_delete_json method with only a publicly-available nonce check. This makes it possible for unauthenticated attackers to delete specific JSON files matching the pattern *_pending.json within the wp-content/uploads/yak/ directory, causing data loss and denial of service for plugin workflows that rely on these artifacts.
+</code>
+
+- [jFriedli/CVE-2025-11988](https://github.com/jFriedli/CVE-2025-11988)
+
+### CVE-2025-12028 (2025-10-24)
+
+<code>The IndieAuth plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 4.5.4. This is due to missing nonce verification on the `login_form_indieauth()` function and the authorization endpoint at wp-login.php?action=indieauth. This makes it possible for unauthenticated attackers to force authenticated users to approve OAuth authorization requests for attacker-controlled applications via a forged request granted they can trick a user into performing an action such as clicking on a link or visiting a malicious page while logged in. The attacker can then exchange the stolen authorization code for an access token, effectively taking over the victim's account with the granted scopes (create, update, delete).
+</code>
+
+- [jFriedli/CVE-2025-12028](https://github.com/jFriedli/CVE-2025-12028)
 
 ### CVE-2025-12030 (2026-01-07)
 
@@ -4162,6 +4260,13 @@
 
 - [6h4ack/CVE-2025-12101-checker](https://github.com/6h4ack/CVE-2025-12101-checker)
 - [boneys/CVE-2025-12101-Scanner-PoC](https://github.com/boneys/CVE-2025-12101-Scanner-PoC)
+
+### CVE-2025-12137 (2025-11-01)
+
+<code>The Import WP – Export and Import CSV and XML files to WordPress plugin for WordPress is vulnerable to Arbitrary File Read in all versions up to, and including, 2.14.16. This is due to the plugin's REST API endpoint accepting arbitrary absolute file paths without proper validation in the 'attach_file()' function when handling 'file_local' actions. This makes it possible for authenticated attackers, with administrator-level access and above, to read arbitrary files on the server's filesystem, including sensitive configuration files and system files via the 'local_url' parameter.
+</code>
+
+- [jFriedli/CVE-2025-12137](https://github.com/jFriedli/CVE-2025-12137)
 
 ### CVE-2025-12139 (2025-11-05)
 
@@ -5359,12 +5464,12 @@
 - [iSee857/CVE-2025-24893-PoC](https://github.com/iSee857/CVE-2025-24893-PoC)
 - [Artemir7/CVE-2025-24893-EXP](https://github.com/Artemir7/CVE-2025-24893-EXP)
 - [nopgadget/CVE-2025-24893](https://github.com/nopgadget/CVE-2025-24893)
-- [Kai7788/CVE-2025-24893-RCE-PoC](https://github.com/Kai7788/CVE-2025-24893-RCE-PoC)
 - [AliElKhatteb/CVE-2024-32019-POC](https://github.com/AliElKhatteb/CVE-2024-32019-POC)
 - [dhiaZnaidi/CVE-2025-24893-PoC](https://github.com/dhiaZnaidi/CVE-2025-24893-PoC)
 - [hackersonsteroids/cve-2025-24893](https://github.com/hackersonsteroids/cve-2025-24893)
 - [Infinit3i/CVE-2025-24893](https://github.com/Infinit3i/CVE-2025-24893)
 - [AzureADTrent/CVE-2025-24893-Reverse-Shell](https://github.com/AzureADTrent/CVE-2025-24893-Reverse-Shell)
+- [gmh5225/CVE-2025-24893-RCE-PoC](https://github.com/gmh5225/CVE-2025-24893-RCE-PoC)
 - [gunzf0x/CVE-2025-24893](https://github.com/gunzf0x/CVE-2025-24893)
 - [dollarboysushil/CVE-2025-24893-XWiki-Unauthenticated-RCE-Exploit-POC](https://github.com/dollarboysushil/CVE-2025-24893-XWiki-Unauthenticated-RCE-Exploit-POC)
 - [zs1n/CVE-2025-24893](https://github.com/zs1n/CVE-2025-24893)
@@ -7119,6 +7224,13 @@
 - [yukinime/CVE-2025-34085](https://github.com/yukinime/CVE-2025-34085)
 - [0xGunrunner/CVE-2025-34085](https://github.com/0xGunrunner/CVE-2025-34085)
 
+### CVE-2025-34096 (2025-07-10)
+
+<code>A stack-based buffer overflow vulnerability exists in Easy File Sharing HTTP Server version 7.2. The flaw is triggered when a crafted POST request is sent to the /sendemail.ghp endpoint containing an overly long Email parameter. The application fails to properly validate the length of this field, resulting in a memory corruption condition. An unauthenticated remote attacker can exploit this to execute arbitrary code with the privileges of the server process.
+</code>
+
+- [TheMalwareGuardian/CVE-2025-34096](https://github.com/TheMalwareGuardian/CVE-2025-34096)
+
 ### CVE-2025-34100 (2025-07-10)
 
 <code>An unrestricted file upload vulnerability exists in BuilderEngine 3.5.0 via the integration of the elFinder 2.0 file manager and its use of the jQuery File Upload plugin. The plugin fails to properly validate or restrict file types or locations during upload operations, allowing an attacker to upload a malicious .php file and subsequently execute arbitrary PHP code on the server under the context of the web server process. While the root vulnerability lies within the jQuery File Upload component, BuilderEngine’s improper integration and lack of access controls expose this functionality to unauthenticated users, resulting in full remote code execution.
@@ -8185,7 +8297,6 @@
 - [vignesh21-git/CVE-2025-48384](https://github.com/vignesh21-git/CVE-2025-48384)
 - [vignesh21-git/CVE-2025-48384-submodule](https://github.com/vignesh21-git/CVE-2025-48384-submodule)
 - [DayDayDayDreaming/backup-exec-cve-48384](https://github.com/DayDayDayDreaming/backup-exec-cve-48384)
-- [anthonyc53/cve-2025-48384](https://github.com/anthonyc53/cve-2025-48384)
 
 ### CVE-2025-48461 (2025-06-24)
 
@@ -8907,6 +9018,9 @@
 
 - [TimTrademark/CVE-2025-52122](https://github.com/TimTrademark/CVE-2025-52122)
 
+### CVE-2025-52204
+- [j0qq3r/CVE-2025-52204](https://github.com/j0qq3r/CVE-2025-52204)
+
 ### CVE-2025-52216
 - [Arbatinis1/coolermaster-masterctrl-vuln](https://github.com/Arbatinis1/coolermaster-masterctrl-vuln)
 
@@ -9127,10 +9241,10 @@
 
 - [RukshanaAlikhan/CVE-2025-53770](https://github.com/RukshanaAlikhan/CVE-2025-53770)
 - [Bluefire-Redteam-Cybersecurity/bluefire-sharepoint-cve-2025-53770](https://github.com/Bluefire-Redteam-Cybersecurity/bluefire-sharepoint-cve-2025-53770)
-- [n1chr0x/ZeroPoint](https://github.com/n1chr0x/ZeroPoint)
 - [kaizensecurity/CVE-2025-53770](https://github.com/kaizensecurity/CVE-2025-53770)
 - [yosasasutsut/Blackash-CVE-2025-53770](https://github.com/yosasasutsut/Blackash-CVE-2025-53770)
 - [paolokappa/SharePointSecurityMonitor](https://github.com/paolokappa/SharePointSecurityMonitor)
+- [gmh5225/ZeroPoint](https://github.com/gmh5225/ZeroPoint)
 - [soltanali0/CVE-2025-53770-Exploit](https://github.com/soltanali0/CVE-2025-53770-Exploit)
 - [hazcod/CVE-2025-53770](https://github.com/hazcod/CVE-2025-53770)
 - [ZephrFish/CVE-2025-53770-Scanner](https://github.com/ZephrFish/CVE-2025-53770-Scanner)
@@ -9889,7 +10003,6 @@
 - [kimtruth/CVE-2025-55183-poc](https://github.com/kimtruth/CVE-2025-55183-poc)
 - [williavs/nextjs-security-update](https://github.com/williavs/nextjs-security-update)
 - [X-Cotang/CVE-2025-55183_POC](https://github.com/X-Cotang/CVE-2025-55183_POC)
-- [omaidnebari/RSC-Scanner-POC](https://github.com/omaidnebari/RSC-Scanner-POC)
 - [StealthMoud/react-server-cve-lab](https://github.com/StealthMoud/react-server-cve-lab)
 
 ### CVE-2025-55184 (2025-12-11)
@@ -10179,6 +10292,13 @@
 </code>
 
 - [anonaninda/Aninda-security-advisories](https://github.com/anonaninda/Aninda-security-advisories)
+
+### CVE-2025-56643 (2025-11-18)
+
+<code>Requarks Wiki.js 2.5.307 does not properly revoke or invalidate active JWT tokens when a user logs out. As a result, previously issued tokens remain valid and can be reused to access the system, even after logout. This behavior affects session integrity and may allow unauthorized access if a token is compromised. The issue is present in the authentication resolver logic and affects both the GraphQL endpoint and the logout mechanism.
+</code>
+
+- [0xBS0D27/CVE-2025-56643](https://github.com/0xBS0D27/CVE-2025-56643)
 
 ### CVE-2025-56708
 - [xkaneiki/rtty_CVE-2025-56708-CVE-2025-56709](https://github.com/xkaneiki/rtty_CVE-2025-56708-CVE-2025-56709)
@@ -11558,6 +11678,7 @@
 </code>
 
 - [joshuavanderpoll/cve-2025-66398](https://github.com/joshuavanderpoll/cve-2025-66398)
+- [showy-headteacher114/cve-2025-66398](https://github.com/showy-headteacher114/cve-2025-66398)
 
 ### CVE-2025-66417 (2026-01-15)
 
@@ -22099,6 +22220,15 @@
 
 - [Lakshmirnr/CVE-2024-51179](https://github.com/Lakshmirnr/CVE-2024-51179)
 
+### CVE-2024-51346
+- [victorGoeman/CVE-2024-51346](https://github.com/victorGoeman/CVE-2024-51346)
+
+### CVE-2024-51347
+- [victorGoeman/CVE-2024-51347](https://github.com/victorGoeman/CVE-2024-51347)
+
+### CVE-2024-51348
+- [victorGoeman/CVE-2024-51348](https://github.com/victorGoeman/CVE-2024-51348)
+
 ### CVE-2024-51358 (2024-11-05)
 
 <code>An issue in Linux Server Heimdall v.2.6.1 allows a remote attacker to execute arbitrary code via a crafted script to the Add new application.
@@ -31440,7 +31570,6 @@
 - [pavanaa4k/CVE-2023-46604-LAB](https://github.com/pavanaa4k/CVE-2023-46604-LAB)
 - [RockyDesigne/SSP-Assignment-3-RCEYouLater](https://github.com/RockyDesigne/SSP-Assignment-3-RCEYouLater)
 - [sangrok-jeon/CVE-2023-46604-Analysis](https://github.com/sangrok-jeon/CVE-2023-46604-Analysis)
-- [jbogdanov/activemq-cve-playground](https://github.com/jbogdanov/activemq-cve-playground)
 
 ### CVE-2023-46615 (2024-02-12)
 
@@ -40042,13 +40171,6 @@
 
 - [Satheesh575555/frameworks_minikin_AOSP10_r33_CVE-2021-0313](https://github.com/Satheesh575555/frameworks_minikin_AOSP10_r33_CVE-2021-0313)
 
-### CVE-2021-0314 (2021-02-10)
-
-<code>In onCreate of UninstallerActivity, there is a possible way to uninstall an all without informed user consent due to a tapjacking/overlay attack. This could lead to local escalation of privilege with User execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-8.1 Android-9Android ID: A-171221302
-</code>
-
-- [nanopathi/framework_base_AOSP10_r33_CVE-2021-0314](https://github.com/nanopathi/framework_base_AOSP10_r33_CVE-2021-0314)
-
 ### CVE-2021-0315 (2021-01-11)
 
 <code>In onCreate of GrantCredentialsPermissionActivity.java, there is a possible way to convince the user to grant an app access to an account due to a tapjacking/overlay attack. This could lead to local escalation of privilege with User execution privileges needed. User interaction is needed for exploitation. Product: Android; Versions: Android-8.1, Android-9, Android-10, Android-11, Android-8.0; Android ID: A-169763814.
@@ -46292,6 +46414,7 @@
 - [MrHarshvardhan/PY-Log4j-RCE-Scanner](https://github.com/MrHarshvardhan/PY-Log4j-RCE-Scanner)
 - [Muhammad-Ali007/Log4j_CVE-2021-44228](https://github.com/Muhammad-Ali007/Log4j_CVE-2021-44228)
 - [Tai-e/CVE-2021-44228](https://github.com/Tai-e/CVE-2021-44228)
+- [roshanshibu/Odysseus](https://github.com/roshanshibu/Odysseus)
 - [LucasPDiniz/CVE-2021-44228](https://github.com/LucasPDiniz/CVE-2021-44228)
 - [felixslama/log4shell-minecraft-demo](https://github.com/felixslama/log4shell-minecraft-demo)
 - [ShlomiRex/log4shell_lab](https://github.com/ShlomiRex/log4shell_lab)
@@ -50129,6 +50252,13 @@
 </code>
 
 - [KrE80r/CVE-2020-13756-env](https://github.com/KrE80r/CVE-2020-13756-env)
+
+### CVE-2020-13768 (2020-06-04)
+
+<code>In MiniShare before 1.4.2, there is a stack-based buffer overflow via an HTTP PUT request, which allows an attacker to achieve arbitrary code execution, a similar issue to CVE-2018-19861, CVE-2018-19862, and CVE-2019-17601. NOTE: this product is discontinued.
+</code>
+
+- [TheMalwareGuardian/CVE-2020-13768](https://github.com/TheMalwareGuardian/CVE-2020-13768)
 
 ### CVE-2020-13777 (2020-06-04)
 
@@ -57157,6 +57287,13 @@
 
 - [uthrasri/CVE-2019-25162](https://github.com/uthrasri/CVE-2019-25162)
 
+### CVE-2019-25485 (2026-03-11)
+
+<code>R 3.4.4 on Windows x64 contains a buffer overflow vulnerability in the GUI Preferences language menu field that allows local attackers to bypass DEP and ASLR protections. Attackers can inject a crafted payload through the Language for menus preference to trigger a structured exception handler chain pivot and execute arbitrary shellcode with application privileges.
+</code>
+
+- [TheMalwareGuardian/CVE-2019-25485](https://github.com/TheMalwareGuardian/CVE-2019-25485)
+
 ### CVE-2019-48814
 - [wucj001/cve-2019-48814](https://github.com/wucj001/cve-2019-48814)
 
@@ -63344,6 +63481,7 @@
 - [LipeOzyy/CVE-2017-14980_syncbreeze_10.0.28_bof](https://github.com/LipeOzyy/CVE-2017-14980_syncbreeze_10.0.28_bof)
 - [DaviGSantana/CVE-2017-14980](https://github.com/DaviGSantana/CVE-2017-14980)
 - [damariion/CVE-2017-14980](https://github.com/damariion/CVE-2017-14980)
+- [TheMalwareGuardian/CVE-2017-14980](https://github.com/TheMalwareGuardian/CVE-2017-14980)
 
 ### CVE-2017-15095 (2018-02-06)
 
@@ -64842,7 +64980,6 @@
 - [Ashrafdev/MySQL-Remote-Root-Code-Execution](https://github.com/Ashrafdev/MySQL-Remote-Root-Code-Execution)
 - [boompig/cve-2016-6662](https://github.com/boompig/cve-2016-6662)
 - [MAYASEVEN/CVE-2016-6662](https://github.com/MAYASEVEN/CVE-2016-6662)
-- [LSQUARE14/SQL_to_RCE_Lab](https://github.com/LSQUARE14/SQL_to_RCE_Lab)
 
 ### CVE-2016-6663 (2016-12-13)
 
@@ -66366,6 +66503,13 @@
 - [G01d3nW01f/CVE-2015-8351](https://github.com/G01d3nW01f/CVE-2015-8351)
 - [G4sp4rCS/exploit-CVE-2015-8351](https://github.com/G4sp4rCS/exploit-CVE-2015-8351)
 - [Philip-Otter/CVE-2015-8351_Otter_Remix](https://github.com/Philip-Otter/CVE-2015-8351_Otter_Remix)
+
+### CVE-2015-8522 (2016-04-04)
+
+<code>Buffer overflow in the server in IBM Tivoli Storage Manager FastBack 5.5.x and 6.x before 6.1.12.2 allows remote attackers to execute arbitrary code via a crafted command, a different vulnerability than CVE-2015-8519, CVE-2015-8520, and CVE-2015-8521.
+</code>
+
+- [damariion/CVE-2015-8522](https://github.com/damariion/CVE-2015-8522)
 
 ### CVE-2015-8543 (2015-12-28)
 
@@ -68273,6 +68417,7 @@
 </code>
 
 - [lochiiconnectivity/vulnupnp](https://github.com/lochiiconnectivity/vulnupnp)
+- [hmrumman777-beep/NetAudit-IoT](https://github.com/hmrumman777-beep/NetAudit-IoT)
 
 ### CVE-2012-5960 (2013-01-31)
 
@@ -69148,6 +69293,7 @@
 </code>
 
 - [war4uthor/CVE-2007-1567](https://github.com/war4uthor/CVE-2007-1567)
+- [TheMalwareGuardian/CVE-2007-1567](https://github.com/TheMalwareGuardian/CVE-2007-1567)
 
 ### CVE-2007-1858 (2007-05-09)
 
@@ -69542,6 +69688,7 @@
 - [pwncone/CVE-2003-0264-SLmail-5.5](https://github.com/pwncone/CVE-2003-0264-SLmail-5.5)
 - [vrikodar/CVE-2003-0264_EXPLOIT](https://github.com/vrikodar/CVE-2003-0264_EXPLOIT)
 - [nobodyatall648/CVE-2003-0264](https://github.com/nobodyatall648/CVE-2003-0264)
+- [TheMalwareGuardian/CVE-2003-0264](https://github.com/TheMalwareGuardian/CVE-2003-0264)
 
 ### CVE-2003-0282 (2003-05-14)
 
@@ -69650,6 +69797,13 @@
 </code>
 
 - [alt3kx/CVE-2002-0991](https://github.com/alt3kx/CVE-2002-0991)
+
+### CVE-2002-1120 (2002-09-12)
+
+<code>Buffer overflow in Savant Web Server 3.1 and earlier allows remote attackers to execute arbitrary code via a long HTTP GET request.
+</code>
+
+- [TheMalwareGuardian/CVE-2002-1120](https://github.com/TheMalwareGuardian/CVE-2002-1120)
 
 ### CVE-2002-1614 (2005-03-25)
 
