@@ -447,6 +447,7 @@
 - [Many-Hat-Group/Ubuntu-CVE-2026-3888-patcher](https://github.com/Many-Hat-Group/Ubuntu-CVE-2026-3888-patcher)
 - [netw0rk7/CVE-2026-3888-PoC](https://github.com/netw0rk7/CVE-2026-3888-PoC)
 - [TheCyberGeek/CVE-2026-3888-snap-confine-systemd-tmpfiles-LPE](https://github.com/TheCyberGeek/CVE-2026-3888-snap-confine-systemd-tmpfiles-LPE)
+- [nomaisthere/CVE-2026-3888](https://github.com/nomaisthere/CVE-2026-3888)
 
 ### CVE-2026-3891 (2026-03-13)
 
@@ -1755,6 +1756,9 @@
 ### CVE-2026-30498
 - [Mehdi-Ben-Hamou/CVE-2026-30498](https://github.com/Mehdi-Ben-Hamou/CVE-2026-30498)
 
+### CVE-2026-30655
+- [brynax/CVE-2026-30655](https://github.com/brynax/CVE-2026-30655)
+
 ### CVE-2026-30695 (2026-03-18)
 
 <code>A Cross-Site Scripting (XSS) vulnerability exists in the web-based configuration interface of Zucchetti Axess access control devices, including XA4, X3/X3BIO, X4, X7, and XIO / i-door / i-door+. The vulnerability is caused by improper sanitization of user-supplied input in the dirBrowse parameter of the /file_manager.cgi endpoint.
@@ -1884,6 +1888,12 @@
 - [danindiana/cve-2026-32746-mitigation](https://github.com/danindiana/cve-2026-32746-mitigation)
 - [chosenonehacks/CVE-2026-32746](https://github.com/chosenonehacks/CVE-2026-32746)
 
+### CVE-2026-32809
+- [SnailSploit/CVE-2026-32809](https://github.com/SnailSploit/CVE-2026-32809)
+
+### CVE-2026-32885
+- [SnailSploit/CVE-2026-32885](https://github.com/SnailSploit/CVE-2026-32885)
+
 ### CVE-2026-32941 (2026-03-20)
 
 <code>Sliver is a command and control framework that uses a custom Wireguard netstack. Versions 1.7.3 and below contain a Remote OOM (Out-of-Memory) vulnerability in the Sliver C2 server's mTLS and WireGuard C2 transport layer. The socketReadEnvelope and socketWGReadEnvelope functions trust an attacker-controlled 4-byte length prefix to allocate memory, with ServerMaxMessageSize allowing single allocations of up to ~2 GiB. A compromised implant or an attacker with valid credentials can exploit this by sending fabricated length prefixes over concurrent yamux streams (up to 128 per connection), forcing the server to attempt allocating ~256 GiB of memory and triggering an OS OOM kill. This crashes the Sliver server, disrupts all active implant sessions, and may degrade or kill other processes sharing the same host. The same pattern also affects all implant-side readers, which have no upper-bound check at all. The issue was not fixed at the the time of publication.
@@ -1900,8 +1910,8 @@
 - [omer-efe-curkus/CVE-2026-33017-Langflow-RCE-PoC](https://github.com/omer-efe-curkus/CVE-2026-33017-Langflow-RCE-PoC)
 - [SimoesCTT/Sovereign-Echo-33017](https://github.com/SimoesCTT/Sovereign-Echo-33017)
 
-### CVE-2026-99999
-- [lasdjk/CVE-2026-99999-important-info](https://github.com/lasdjk/CVE-2026-99999-important-info)
+### CVE-2026-33693
+- [SnailSploit/CVE-2026-33693](https://github.com/SnailSploit/CVE-2026-33693)
 
 
 ## 2025
@@ -3182,6 +3192,13 @@
 </code>
 
 - [byteReaper77/CVE-2025-5964-](https://github.com/byteReaper77/CVE-2025-5964-)
+
+### CVE-2025-6002 (2025-06-11)
+
+<code>An unrestricted file upload vulnerability exists in the Product Image section of the VirtueMart backend. Authenticated attackers can upload files with arbitrary extensions, including executable or malicious files, potentially leading to remote code execution or other security impacts depending on server configuration.
+</code>
+
+- [schn1tzelme1ster/CVE-2025-6002](https://github.com/schn1tzelme1ster/CVE-2025-6002)
 
 ### CVE-2025-6018 (2025-07-23)
 
@@ -4546,6 +4563,13 @@
 
 - [h3raklez/CVE-2025-14321](https://github.com/h3raklez/CVE-2025-14321)
 
+### CVE-2025-14340 (2026-02-18)
+
+<code>Cross-site scripting in REST Management Interface in Payara Server &lt;4.1.2.191.54, &lt;5.83.0, &lt;6.34.0, &lt;7.2026.1 allows an attacker to mislead the administrator to change the admin password via URL Payload.
+</code>
+
+- [DeepSecurityResearch/CVE-2025-14340](https://github.com/DeepSecurityResearch/CVE-2025-14340)
+
 ### CVE-2025-14440 (2025-12-13)
 
 <code>The JAY Login &amp; Register plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.4.01. This is due to incorrect authentication checking in the 'jay_login_register_process_switch_back' function with the 'jay_login_register_process_switch_back' cookie value. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the user id.
@@ -5553,6 +5577,13 @@
 
 - [RandomRobbieBF/CVE-2025-25163](https://github.com/RandomRobbieBF/CVE-2025-25163)
 - [RootHarpy/CVE-2025-25163-Nuclei-Template](https://github.com/RootHarpy/CVE-2025-25163-Nuclei-Template)
+
+### CVE-2025-25200 (2025-02-12)
+
+<code>Koa is expressive middleware for Node.js using ES2017 async functions. Prior to versions 0.21.2, 1.7.1, 2.15.4, and 3.0.0-alpha.3, Koa uses an evil regex to parse the `X-Forwarded-Proto` and `X-Forwarded-Host` HTTP headers. This can be exploited to carry out a Denial-of-Service attack. Versions 0.21.2, 1.7.1, 2.15.4, and 3.0.0-alpha.3 fix the issue.
+</code>
+
+- [dwictor0/PoC-CVE-2025-25200](https://github.com/dwictor0/PoC-CVE-2025-25200)
 
 ### CVE-2025-25231 (2025-08-11)
 
@@ -8483,12 +8514,12 @@
 - [ramzihafiz/CVE-2025-49132](https://github.com/ramzihafiz/CVE-2025-49132)
 - [kerburenthusiasm/CVE-2025-49132-PoC](https://github.com/kerburenthusiasm/CVE-2025-49132-PoC)
 - [matesz44/CVE-2025-49132](https://github.com/matesz44/CVE-2025-49132)
-- [Ahmedf000/CVE-2025-49132_HTB_SEASON10](https://github.com/Ahmedf000/CVE-2025-49132_HTB_SEASON10)
 - [Pwndalf/CVE-2025-49132-PoC](https://github.com/Pwndalf/CVE-2025-49132-PoC)
 - [dollarboysushil/CVE-2025-49132-Pterodactyl-Panel-Unauthenticated-Remote-Code-Execution-RCE-](https://github.com/dollarboysushil/CVE-2025-49132-Pterodactyl-Panel-Unauthenticated-Remote-Code-Execution-RCE-)
 - [thealchimist86/CVE-2025-49132-Pterodactyl-Panel-RCE](https://github.com/thealchimist86/CVE-2025-49132-Pterodactyl-Panel-RCE)
 - [scroollocker/CVE-2025-49132](https://github.com/scroollocker/CVE-2025-49132)
 - [rippsec/CVE-2025-49132-PHP-PEAR](https://github.com/rippsec/CVE-2025-49132-PHP-PEAR)
+- [nik123-py/CVE-2025-49132_HTB_SEASON10](https://github.com/nik123-py/CVE-2025-49132_HTB_SEASON10)
 - [popyue/CVE-2025-49132](https://github.com/popyue/CVE-2025-49132)
 - [4nuxd/CVE-2025-49132](https://github.com/4nuxd/CVE-2025-49132)
 - [revasec/CVE-2025-49132](https://github.com/revasec/CVE-2025-49132)
@@ -9018,7 +9049,11 @@
 
 - [TimTrademark/CVE-2025-52122](https://github.com/TimTrademark/CVE-2025-52122)
 
-### CVE-2025-52204
+### CVE-2025-52204 (2026-03-23)
+
+<code>A Cross-Site Scripting (XSS) vulnerability exists in Znuny::ITSM 6.5.x in the customer.pl endpoint via the OTRSCustomerInterface parameter
+</code>
+
 - [j0qq3r/CVE-2025-52204](https://github.com/j0qq3r/CVE-2025-52204)
 
 ### CVE-2025-52216
@@ -9993,6 +10028,7 @@
 - [monarchfish/cve-2025-55182-poc](https://github.com/monarchfish/cve-2025-55182-poc)
 - [nexxp90/CVE-2025-55182_RCE_Exploit](https://github.com/nexxp90/CVE-2025-55182_RCE_Exploit)
 - [luoluoqingge/CVE-2025-55182](https://github.com/luoluoqingge/CVE-2025-55182)
+- [RyosukeDTomita/CVE-2025-55182](https://github.com/RyosukeDTomita/CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -13130,6 +13166,13 @@
 
 - [Hagrid29/CVE-2024-2432-PaloAlto-GlobalProtect-EoP](https://github.com/Hagrid29/CVE-2024-2432-PaloAlto-GlobalProtect-EoP)
 
+### CVE-2024-2473 (2024-06-11)
+
+<code>The WPS Hide Login plugin for WordPress is vulnerable to Login Page Disclosure in all versions up to, and including, 1.9.15.2. This is due to a bypass that is created when the 'action=postpass' parameter is supplied. This makes it possible for attackers to easily discover any login page that may have been hidden by the plugin.
+</code>
+
+- [M4xSec/CVE-2024-2473](https://github.com/M4xSec/CVE-2024-2473)
+
 ### CVE-2024-2667 (2024-05-02)
 
 <code>The InstaWP Connect – 1-click WP Staging &amp; Migration plugin for WordPress is vulnerable to arbitrary file uploads due to  insufficient file validation in the /wp-json/instawp-connect/v1/config REST API endpoint in all versions up to, and including, 0.1.0.22. This makes it possible for unauthenticated attackers to upload arbitrary files.
@@ -13554,7 +13597,6 @@
 </code>
 
 - [airbus-cert/CVE-2024-4040](https://github.com/airbus-cert/CVE-2024-4040)
-- [tucommenceapousser/CVE-2024-4040-Scanner](https://github.com/tucommenceapousser/CVE-2024-4040-Scanner)
 - [rbih-boulanouar/CVE-2024-4040](https://github.com/rbih-boulanouar/CVE-2024-4040)
 - [Mufti22/CVE-2024-4040](https://github.com/Mufti22/CVE-2024-4040)
 - [Stuub/CVE-2024-4040-SSTI-LFI-PoC](https://github.com/Stuub/CVE-2024-4040-SSTI-LFI-PoC)
@@ -16250,7 +16292,6 @@
 - [Chocapikk/CVE-2024-21887](https://github.com/Chocapikk/CVE-2024-21887)
 - [raminkarimkhani1996/CVE-2023-46805_CVE-2024-21887](https://github.com/raminkarimkhani1996/CVE-2023-46805_CVE-2024-21887)
 - [seajaysec/Ivanti-Connect-Around-Scan](https://github.com/seajaysec/Ivanti-Connect-Around-Scan)
-- [tucommenceapousser/CVE-2024-21887](https://github.com/tucommenceapousser/CVE-2024-21887)
 - [pwniel/ivanti_shell](https://github.com/pwniel/ivanti_shell)
 - [rxwx/pulse-meter](https://github.com/rxwx/pulse-meter)
 - [Hexastrike/Ivanti-Connect-Secure-Logs-Parser](https://github.com/Hexastrike/Ivanti-Connect-Secure-Logs-Parser)
@@ -18724,13 +18765,6 @@
 </code>
 
 - [SpiralBL0CK/CVE-2024-32462](https://github.com/SpiralBL0CK/CVE-2024-32462)
-
-### CVE-2024-32523 (2024-05-17)
-
-<code>Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in EverPress Mailster allows PHP Local File Inclusion.This issue affects Mailster: from n/a through 4.0.6.
-</code>
-
-- [tucommenceapousser/CVE-2024-32523-Poc](https://github.com/tucommenceapousser/CVE-2024-32523-Poc)
 
 ### CVE-2024-32640 (2025-08-11)
 
@@ -21304,6 +21338,20 @@
 </code>
 
 - [jackalkarlos/CVE-2024-46658](https://github.com/jackalkarlos/CVE-2024-46658)
+
+### CVE-2024-46878 (2026-03-23)
+
+<code>A Cross-Site Scripting (XSS) vulnerability exists in the page parameter of tiki-editpage.php in Tiki version 26.3 and earlier. This vulnerability allows attackers to execute arbitrary JavaScript code via a crafted payload, leading to potential access to sensitive information or unauthorized actions.
+</code>
+
+- [ColdFusionX/CVE-2024-46878-TikiCMS-XSS](https://github.com/ColdFusionX/CVE-2024-46878-TikiCMS-XSS)
+
+### CVE-2024-46879 (2026-03-23)
+
+<code>A Reflected Cross-Site Scripting (XSS) vulnerability exists in the POST request data zipPath of tiki-admin_system.php in Tiki version 21.2. This vulnerability allows attackers to execute arbitrary JavaScript code via a crafted payload, leading to potential access to sensitive information or unauthorized actions.
+</code>
+
+- [ColdFusionX/CVE-2024-46879-TikiCMS-XSS](https://github.com/ColdFusionX/CVE-2024-46879-TikiCMS-XSS)
 
 ### CVE-2024-46981 (2025-01-06)
 
@@ -24831,7 +24879,6 @@
 - [phankz/Worpress-CVE-2023-5360](https://github.com/phankz/Worpress-CVE-2023-5360)
 - [nastar-id/CVE-2023-5360](https://github.com/nastar-id/CVE-2023-5360)
 - [Chocapikk/CVE-2023-5360](https://github.com/Chocapikk/CVE-2023-5360)
-- [tucommenceapousser/CVE-2023-5360](https://github.com/tucommenceapousser/CVE-2023-5360)
 - [Jenderal92/WP-CVE-2023-5360](https://github.com/Jenderal92/WP-CVE-2023-5360)
 - [Pushkarup/CVE-2023-5360](https://github.com/Pushkarup/CVE-2023-5360)
 - [X3RX3SSec/CVE-2023-5360](https://github.com/X3RX3SSec/CVE-2023-5360)
@@ -26502,7 +26549,6 @@
 </code>
 
 - [brainkok/CVE-2023-25292](https://github.com/brainkok/CVE-2023-25292)
-- [tucommenceapousser/CVE-2023-25292](https://github.com/tucommenceapousser/CVE-2023-25292)
 
 ### CVE-2023-25355 (2023-04-04)
 
@@ -26631,7 +26677,6 @@
 <code>An unauthenticated path traversal vulnerability affects the &quot;STAGIL Navigation for Jira - Menu &amp; Themes&quot; plugin before 2.0.52 for Jira. By modifying the fileName parameter to the snjCustomDesignConfig endpoint, it is possible to traverse and read the file system.
 </code>
 
-- [tucommenceapousser/CVE-2023-26255-Exp](https://github.com/tucommenceapousser/CVE-2023-26255-Exp)
 - [Nian-Stars/CVE-2023-26255-6](https://github.com/Nian-Stars/CVE-2023-26255-6)
 
 ### CVE-2023-26256 (2023-02-28)
@@ -27351,8 +27396,6 @@
 - [whalebone7/EagleEye](https://github.com/whalebone7/EagleEye)
 - [0-d3y/CVE-2023-29489](https://github.com/0-d3y/CVE-2023-29489)
 - [Abdullah7-ma/CVE-2023-29489](https://github.com/Abdullah7-ma/CVE-2023-29489)
-- [tucommenceapousser/CVE-2023-29489](https://github.com/tucommenceapousser/CVE-2023-29489)
-- [tucommenceapousser/CVE-2023-29489.py](https://github.com/tucommenceapousser/CVE-2023-29489.py)
 - [ViperM4sk/cpanel-xss-177](https://github.com/ViperM4sk/cpanel-xss-177)
 - [S4muraiMelayu1337/CVE-2023-29489](https://github.com/S4muraiMelayu1337/CVE-2023-29489)
 - [SynixCyberCrimeMy/CVE-2023-29489](https://github.com/SynixCyberCrimeMy/CVE-2023-29489)
@@ -28194,6 +28237,7 @@
 - [Cmadhushanka/CVE-2023-32784-Exploitation](https://github.com/Cmadhushanka/CVE-2023-32784-Exploitation)
 - [dev0558/CVE-2023-32784-EXPLOIT-REPORT](https://github.com/dev0558/CVE-2023-32784-EXPLOIT-REPORT)
 - [G4sp4rCS/CVE-2023-32784-password-combinator-fixer](https://github.com/G4sp4rCS/CVE-2023-32784-password-combinator-fixer)
+- [super-oof/keepass2-password-finder](https://github.com/super-oof/keepass2-password-finder)
 
 ### CVE-2023-32961 (2023-06-12)
 
@@ -28354,7 +28398,6 @@
 </code>
 
 - [Chocapikk/CVE-2023-33617](https://github.com/Chocapikk/CVE-2023-33617)
-- [tucommenceapousser/CVE-2023-33617](https://github.com/tucommenceapousser/CVE-2023-33617)
 
 ### CVE-2023-33668 (2023-07-12)
 
@@ -28765,7 +28808,6 @@
 - [YongYe-Security/CVE-2023-34960](https://github.com/YongYe-Security/CVE-2023-34960)
 - [ThatNotEasy/CVE-2023-34960](https://github.com/ThatNotEasy/CVE-2023-34960)
 - [Mantodkaz/CVE-2023-34960](https://github.com/Mantodkaz/CVE-2023-34960)
-- [tucommenceapousser/CVE-2023-34960-ex](https://github.com/tucommenceapousser/CVE-2023-34960-ex)
 - [tpdlshdmlrkfmcla/cve-2023-34960](https://github.com/tpdlshdmlrkfmcla/cve-2023-34960)
 
 ### CVE-2023-34965 (2023-06-13)
@@ -31765,7 +31807,6 @@
 
 - [W01fh4cker/CVE-2023-47246-EXP](https://github.com/W01fh4cker/CVE-2023-47246-EXP)
 - [rainbowhatrkn/CVE-2023-47246](https://github.com/rainbowhatrkn/CVE-2023-47246)
-- [tucommenceapousser/CVE-2023-47246](https://github.com/tucommenceapousser/CVE-2023-47246)
 
 ### CVE-2023-47248 (2023-11-09)
 
@@ -36765,8 +36806,6 @@
 - [akhilkoradiya/CVE-2022-29455](https://github.com/akhilkoradiya/CVE-2022-29455)
 - [yaudahbanh/CVE-2022-29455](https://github.com/yaudahbanh/CVE-2022-29455)
 - [0xc4t/CVE-2022-29455](https://github.com/0xc4t/CVE-2022-29455)
-- [tucommenceapousser/CVE-2022-29455](https://github.com/tucommenceapousser/CVE-2022-29455)
-- [tucommenceapousser/CVE-2022-29455-mass](https://github.com/tucommenceapousser/CVE-2022-29455-mass)
 
 ### CVE-2022-29464 (2022-04-18)
 
@@ -38711,7 +38750,6 @@
 </code>
 
 - [mind2hex/CVE-2022-39986-RaspAP-2.8.0-2.8.7-RCE](https://github.com/mind2hex/CVE-2022-39986-RaspAP-2.8.0-2.8.7-RCE)
-- [tucommenceapousser/RaspAP-CVE-2022-39986-PoC](https://github.com/tucommenceapousser/RaspAP-CVE-2022-39986-PoC)
 
 ### CVE-2022-40032 (2023-02-17)
 
@@ -43725,6 +43763,7 @@
 - [haingn/LoHongCam-CVE-2021-33044](https://github.com/haingn/LoHongCam-CVE-2021-33044)
 - [Baza-NATO/CVE-2021-33044](https://github.com/Baza-NATO/CVE-2021-33044)
 - [umair-aziz025/dahua-cve-research](https://github.com/umair-aziz025/dahua-cve-research)
+- [eagle-nett/DAHUA_AUTH-BYPASS-CVE-2021-33044](https://github.com/eagle-nett/DAHUA_AUTH-BYPASS-CVE-2021-33044)
 
 ### CVE-2021-33045 (2021-09-15)
 
@@ -46888,7 +46927,6 @@
 - [yyqxi/CVE-2021-46422](https://github.com/yyqxi/CVE-2021-46422)
 - [polerstar/CVE-2021-46422-poc](https://github.com/polerstar/CVE-2021-46422-poc)
 - [kailing0220/CVE-2021-46422](https://github.com/kailing0220/CVE-2021-46422)
-- [tucommenceapousser/CVE-2021-46422](https://github.com/tucommenceapousser/CVE-2021-46422)
 
 ### CVE-2021-46703 (2022-03-06)
 
@@ -55206,8 +55244,6 @@
 - [k3vinlusec/WhatsApp-Double-Free-Vulnerability_CVE-2019-11932](https://github.com/k3vinlusec/WhatsApp-Double-Free-Vulnerability_CVE-2019-11932)
 - [Tabni/https-github.com-awakened1712-CVE-2019-11932](https://github.com/Tabni/https-github.com-awakened1712-CVE-2019-11932)
 - [0759104103/cd-CVE-2019-11932](https://github.com/0759104103/cd-CVE-2019-11932)
-- [tucommenceapousser/CVE-2019-11932](https://github.com/tucommenceapousser/CVE-2019-11932)
-- [tucommenceapousser/CVE-2019-11932deta](https://github.com/tucommenceapousser/CVE-2019-11932deta)
 
 ### CVE-2019-11933 (2019-10-23)
 
@@ -57004,8 +57040,6 @@
 </code>
 
 - [Chocapikk/CVE-2019-19492](https://github.com/Chocapikk/CVE-2019-19492)
-- [tucommenceapousser/CVE-2019-19492](https://github.com/tucommenceapousser/CVE-2019-19492)
-- [tucommenceapousser/CVE-2019-19492-2](https://github.com/tucommenceapousser/CVE-2019-19492-2)
 
 ### CVE-2019-19511
 - [jra89/CVE-2019-19511](https://github.com/jra89/CVE-2019-19511)
