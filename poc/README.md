@@ -527,7 +527,7 @@
 
 ### CVE-2026-20643 (2026-03-17)
 
-<code>A cross-origin issue in the Navigation API was addressed with improved input validation. This issue is fixed in Background Security Improvements for iOS 26.3.1, iPadOS 26.3.1, macOS 26.3.1, and macOS 26.3.2. Processing maliciously crafted web content may bypass Same Origin Policy.
+<code>A cross-origin issue in the Navigation API was addressed with improved input validation. This issue is fixed in Background Security Improvements for iOS, iPadOS, and macOS, Safari 26.4, iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Tahoe 26.4, visionOS 26.4. Processing maliciously crafted web content may bypass Same Origin Policy.
 </code>
 
 - [zeroxjf/WebKit-NavigationAPI-SOP-Bypass](https://github.com/zeroxjf/WebKit-NavigationAPI-SOP-Bypass)
@@ -540,7 +540,11 @@
 
 - [retX0/CVE-2026-20660](https://github.com/retX0/CVE-2026-20660)
 
-### CVE-2026-20687
+### CVE-2026-20687 (2026-03-25)
+
+<code>A use after free issue was addressed with improved memory management. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Sequoia 15.7.5, macOS Tahoe 26.4, tvOS 26.4, watchOS 26.4. An app may be able to cause unexpected system termination or write kernel memory.
+</code>
+
 - [zeroxjf/CVE-2026-20687-AppleSEPKeyStore-UAF](https://github.com/zeroxjf/CVE-2026-20687-AppleSEPKeyStore-UAF)
 
 ### CVE-2026-20805 (2026-01-13)
@@ -911,6 +915,8 @@
 - [fckoo/mcpjaminspector-unauth-rce](https://github.com/fckoo/mcpjaminspector-unauth-rce)
 - [FrenzisRed/CVE-2026-23744](https://github.com/FrenzisRed/CVE-2026-23744)
 - [InzegoSec/CVE-2026-23744](https://github.com/InzegoSec/CVE-2026-23744)
+- [z4yd3/PoC-CVE-2026-23744](https://github.com/z4yd3/PoC-CVE-2026-23744)
+- [yassertioursi/htb-kobold-writeup](https://github.com/yassertioursi/htb-kobold-writeup)
 
 ### CVE-2026-23745 (2026-01-16)
 
@@ -1931,12 +1937,22 @@
 - [omer-efe-curkus/CVE-2026-33017-Langflow-RCE-PoC](https://github.com/omer-efe-curkus/CVE-2026-33017-Langflow-RCE-PoC)
 - [SimoesCTT/Sovereign-Echo-33017](https://github.com/SimoesCTT/Sovereign-Echo-33017)
 
+### CVE-2026-33150 (2026-03-20)
+
+<code>libfuse is the reference implementation of the Linux FUSE. From version 3.18.0 to before version 3.18.2, a use-after-free vulnerability in the io_uring subsystem of libfuse allows a local attacker to crash FUSE filesystem processes and potentially execute arbitrary code. When io_uring thread creation fails due to resource exhaustion (e.g., cgroup pids.max), fuse_uring_start() frees the ring pool structure but stores the dangling pointer in the session state, leading to a use-after-free when the session shuts down. The trigger is reliable in containerized environments where cgroup pids.max limits naturally constrain thread creation. This issue has been patched in version 3.18.2.
+</code>
+
+- [abhinavagarwal07/abhinavagarwal07.github.io](https://github.com/abhinavagarwal07/abhinavagarwal07.github.io)
+
 ### CVE-2026-33634 (2026-03-23)
 
 <code>Trivy is a security scanner. On March 19, 2026, a threat actor used compromised credentials to publish a malicious Trivy v0.69.4 release, force-push 76 of 77 version tags in `aquasecurity/trivy-action` to credential-stealing malware, and replace all 7 tags in `aquasecurity/setup-trivy` with malicious commits. This incident is a continuation of the supply chain attack that began in late February 2026. Following the initial disclosure on March 1, credential rotation was performed but was not atomic (not all credentials were revoked simultaneously). The attacker could have use a valid token to exfiltrate newly rotated secrets during the rotation window (which lasted a few days). This could have allowed the attacker to retain access and execute the March 19 attack. Affected components include the `aquasecurity/trivy` Go / Container image version 0.69.4, the `aquasecurity/trivy-action` GitHub Action versions 0.0.1 – 0.34.2 (76/77), and the`aquasecurity/setup-trivy` GitHub Action versions 0.2.0 – 0.2.6, prior to the recreation of 0.2.6 with a safe commit. Known safe versions include versions 0.69.2 and 0.69.3 of the Trivy binary, version 0.35.0 of trivy-action, and version 0.2.6 of setup-trivy. Additionally, take other mitigations to ensure the safety of secrets. If there is any possibility that a compromised version ran in one's environment, all secrets accessible to affected pipelines must be treated as exposed and rotated immediately. Check whether one's organization pulled or executed Trivy v0.69.4 from any source. Remove any affected artifacts immediately. Review all workflows using `aquasecurity/trivy-action` or `aquasecurity/setup-trivy`. Those who referenced a version tag rather than a full commit SHA should check workflow run logs from March 19–20, 2026 for signs of compromise. Look for repositories named `tpcp-docs` in one's GitHub organization. The presence of such a repository may indicate that the fallback exfiltration mechanism was triggered and secrets were successfully stolen. Pin GitHub Actions to full, immutable commit SHA hashes, don't use mutable version tags.
 </code>
 
 - [ugurrates/teampcp-supply-chain-attack](https://github.com/ugurrates/teampcp-supply-chain-attack)
+
+### CVE-2026-33656
+- [JivaSecurity/ESPOCRM-RCE-POC-CVE-2026-33656](https://github.com/JivaSecurity/ESPOCRM-RCE-POC-CVE-2026-33656)
 
 ### CVE-2026-33693
 - [SnailSploit/CVE-2026-33693](https://github.com/SnailSploit/CVE-2026-33693)
@@ -3846,6 +3862,7 @@
 </code>
 
 - [KvzinNcpx7/CVE-2025-9074_DAEMON_KILLER](https://github.com/KvzinNcpx7/CVE-2025-9074_DAEMON_KILLER)
+- [XRayZen/cve-2025-9074-poc](https://github.com/XRayZen/cve-2025-9074-poc)
 - [zenzue/CVE-2025-9074](https://github.com/zenzue/CVE-2025-9074)
 - [j3r1ch0123/CVE-2025-9074](https://github.com/j3r1ch0123/CVE-2025-9074)
 - [pucagit/CVE-2025-9074](https://github.com/pucagit/CVE-2025-9074)
@@ -8602,6 +8619,7 @@
 </code>
 
 - [ashiqrehan-21/MCP-Inspector-CVE-2025-49596](https://github.com/ashiqrehan-21/MCP-Inspector-CVE-2025-49596)
+- [pppxo/CVE-2025-49596-PoC](https://github.com/pppxo/CVE-2025-49596-PoC)
 
 ### CVE-2025-49619 (2025-06-07)
 
@@ -8770,7 +8788,7 @@
 <code>The modelscope/ms-swift library thru 2.6.1 is vulnerable to arbitrary code execution through deserialization of untrusted data within the `load_model_meta()` function of the `ModelFileSystemCache()` class. Attackers can execute arbitrary code and commands by crafting a malicious serialized `.mdl` payload, exploiting the use of `pickle.load()` on data from potentially untrusted sources. This vulnerability allows for remote code execution (RCE) by deceiving victims into loading a seemingly harmless checkpoint during a normal training process, thereby enabling attackers to execute arbitrary code on the targeted machine. Note that the payload file is a hidden file, making it difficult for the victim to detect tampering. More importantly, during the model training process, after the `.mdl` file is loaded and executes arbitrary code, the normal training process remains unaffected'meaning the user remains unaware of the arbitrary code execution.
 </code>
 
-- [xhjy2020/CVE-2025-50472](https://github.com/xhjy2020/CVE-2025-50472)
+- [Before-Rain/CVE-2025-50472](https://github.com/Before-Rain/CVE-2025-50472)
 
 ### CVE-2025-50481 (2025-07-23)
 
@@ -10056,6 +10074,7 @@
 - [luoluoqingge/CVE-2025-55182](https://github.com/luoluoqingge/CVE-2025-55182)
 - [RyosukeDTomita/CVE-2025-55182](https://github.com/RyosukeDTomita/CVE-2025-55182)
 - [eagle-nett/React2Shell-PoC-CVE-2025-55182](https://github.com/eagle-nett/React2Shell-PoC-CVE-2025-55182)
+- [devianntsec/CVE-2025-55182-React2Shell-Masters-Thesis](https://github.com/devianntsec/CVE-2025-55182-React2Shell-Masters-Thesis)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -18286,6 +18305,7 @@
 </code>
 
 - [fortra/CVE-2024-30051](https://github.com/fortra/CVE-2024-30051)
+- [devianntsec/CVE-2024-30051-DWMHeapOverflow-Masters-Thesis](https://github.com/devianntsec/CVE-2024-30051-DWMHeapOverflow-Masters-Thesis)
 
 ### CVE-2024-30052 (2024-06-11)
 
@@ -22294,6 +22314,13 @@
 </code>
 
 - [Lakshmirnr/CVE-2024-51179](https://github.com/Lakshmirnr/CVE-2024-51179)
+
+### CVE-2024-51324 (2025-02-11)
+
+<code>An issue in the BdApiUtil driver of Baidu Antivirus v5.2.3.116083 allows attackers to terminate arbitrary process via executing a BYOVD (Bring Your Own Vulnerable Driver) attack.
+</code>
+
+- [devianntsec/CVE-2024-51324-BYOVD-Masters-Thesis](https://github.com/devianntsec/CVE-2024-51324-BYOVD-Masters-Thesis)
 
 ### CVE-2024-51346
 - [victorGoeman/CVE-2024-51346](https://github.com/victorGoeman/CVE-2024-51346)
@@ -41408,6 +41435,7 @@
 - [ramahmdr/PwnKit](https://github.com/ramahmdr/PwnKit)
 - [Abbykito/KERNELexploits](https://github.com/Abbykito/KERNELexploits)
 - [Allu-mette/cve-2021-4034](https://github.com/Allu-mette/cve-2021-4034)
+- [devianntsec/CVE-2021-4034-PwnKit-Masters-Thesis](https://github.com/devianntsec/CVE-2021-4034-PwnKit-Masters-Thesis)
 
 ### CVE-2021-4044 (2021-12-14)
 
@@ -46759,7 +46787,6 @@
 <code>In Expat (aka libexpat) before 2.4.3, a left shift by 29 (or more) places in the storeAtts function in xmlparse.c can lead to realloc misbehavior (e.g., allocating too few bytes, or only freeing memory).
 </code>
 
-- [nanopathi/external_expat_AOSP10_r33_CVE-2021-45960](https://github.com/nanopathi/external_expat_AOSP10_r33_CVE-2021-45960)
 - [Trinadh465/external_lib_AOSP10_r33_CVE-2021-45960_CVE-2021-46143-](https://github.com/Trinadh465/external_lib_AOSP10_r33_CVE-2021-45960_CVE-2021-46143-)
 
 ### CVE-2021-46067 (2022-01-06)
@@ -62619,7 +62646,6 @@
 </code>
 
 - [sfitpro/cve-2017-8529](https://github.com/sfitpro/cve-2017-8529)
-- [kaddirov/windows2016fixCVE-2017-8529](https://github.com/kaddirov/windows2016fixCVE-2017-8529)
 
 ### CVE-2017-8543 (2017-06-15)
 
@@ -69960,6 +69986,13 @@
 - [Cappricio-Securities/CVE-2000-0114](https://github.com/Cappricio-Securities/CVE-2000-0114)
 - [Josekutty-K/frontpage-server-extensions-vulnerability-scanner](https://github.com/Josekutty-K/frontpage-server-extensions-vulnerability-scanner)
 - [adhamelhansye/CVE-2000-0114](https://github.com/adhamelhansye/CVE-2000-0114)
+
+### CVE-2000-0168 (2000-07-12)
+
+<code>Microsoft Windows 9x operating systems allow an attacker to cause a denial of service via a pathname that includes file device names, aka the &quot;DOS Device in Path Name&quot; vulnerability.
+</code>
+
+- [adk86/CVE-Vulnerability-Research-Exploit-Analysis](https://github.com/adk86/CVE-Vulnerability-Research-Exploit-Analysis)
 
 ### CVE-2000-0170 (2000-04-10)
 
