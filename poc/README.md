@@ -419,7 +419,7 @@
 
 ### CVE-2026-3587 (2026-03-23)
 
-<code>An unauthenticated remote attacker can exploit a hidden function in the CLI prompt to escape the restricted interface and gain root access to the underlying Linux based OS, leading to full compromise of the device.
+<code>An unauthenticated remote attacker can exploit a hidden function in the CLI prompt to escape the restricted interface, leading to full compromise of the device.
 </code>
 
 - [z3r0h3ro/cve-2026-3587-poc](https://github.com/z3r0h3ro/cve-2026-3587-poc)
@@ -539,6 +539,9 @@
 </code>
 
 - [retX0/CVE-2026-20660](https://github.com/retX0/CVE-2026-20660)
+
+### CVE-2026-20687
+- [zeroxjf/CVE-2026-20687-AppleSEPKeyStore-UAF](https://github.com/zeroxjf/CVE-2026-20687-AppleSEPKeyStore-UAF)
 
 ### CVE-2026-20805 (2026-01-13)
 
@@ -742,13 +745,6 @@
 - [gregk4sec/cve-2026-21962](https://github.com/gregk4sec/cve-2026-21962)
 - [naozibuhao/CVE-2026-21962_Java_GUI_Exploit_Tool](https://github.com/naozibuhao/CVE-2026-21962_Java_GUI_Exploit_Tool)
 
-### CVE-2026-21992 (2026-03-20)
-
-<code>Vulnerability in the Oracle Identity Manager product of Oracle Fusion Middleware (component: REST WebServices) and Oracle Web Services Manager product of Oracle Fusion Middleware (component: Web Services Security).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Identity Manager and Oracle Web Services Manager.  Successful attacks of this vulnerability can result in takeover of Oracle Identity Manager and Oracle Web Services Manager. Note: Oracle Web Services Manager is installed with an Oracle Fusion Middleware Infrastructure. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
-</code>
-
-- [TEXploited/CVE-2026-21992](https://github.com/TEXploited/CVE-2026-21992)
-
 ### CVE-2026-21994 (2026-03-17)
 
 <code>Vulnerability in the Oracle Edge Cloud Infrastructure Designer and Visualisation Toolkit product of Oracle Open Source Projects (component: Desktop).   The supported version that is affected is 0.3.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Edge Cloud Infrastructure Designer and Visualisation Toolkit.  Successful attacks of this vulnerability can result in takeover of Oracle Edge Cloud Infrastructure Designer and Visualisation Toolkit. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
@@ -875,7 +871,6 @@
 </code>
 
 - [Augmaster/POC-CVE-2026-23520](https://github.com/Augmaster/POC-CVE-2026-23520)
-- [0xzap/CVE-2026-23520](https://github.com/0xzap/CVE-2026-23520)
 - [cypher-21/CVE-2026-23520](https://github.com/cypher-21/CVE-2026-23520)
 
 ### CVE-2026-23550 (2026-01-14)
@@ -915,6 +910,7 @@
 - [H1sok444/CVE-2026-23744-PoC](https://github.com/H1sok444/CVE-2026-23744-PoC)
 - [fckoo/mcpjaminspector-unauth-rce](https://github.com/fckoo/mcpjaminspector-unauth-rce)
 - [FrenzisRed/CVE-2026-23744](https://github.com/FrenzisRed/CVE-2026-23744)
+- [InzegoSec/CVE-2026-23744](https://github.com/InzegoSec/CVE-2026-23744)
 
 ### CVE-2026-23745 (2026-01-16)
 
@@ -1221,6 +1217,7 @@
 - [Ckokoski/moatbot-security](https://github.com/Ckokoski/moatbot-security)
 - [FrigateCaptain/openclaw_vulnerabilities_and_solutions](https://github.com/FrigateCaptain/openclaw_vulnerabilities_and_solutions)
 - [EQSTLab/CVE-2026-25253](https://github.com/EQSTLab/CVE-2026-25253)
+- [ZhaoymOvO/openclaw-1click-rce-env](https://github.com/ZhaoymOvO/openclaw-1click-rce-env)
 
 ### CVE-2026-25512 (2026-02-04)
 
@@ -1522,6 +1519,19 @@
 
 - [mariopepe/CVE-2026-26801-pdfmake-ssrf](https://github.com/mariopepe/CVE-2026-26801-pdfmake-ssrf)
 
+### CVE-2026-26830
+- [zebbernCVE/npm-cve-2026-26830-26833](https://github.com/zebbernCVE/npm-cve-2026-26830-26833)
+- [zebbernCVE/CVE-2026-26830](https://github.com/zebbernCVE/CVE-2026-26830)
+
+### CVE-2026-26831
+- [zebbernCVE/CVE-2026-26831](https://github.com/zebbernCVE/CVE-2026-26831)
+
+### CVE-2026-26832
+- [zebbernCVE/CVE-2026-26832](https://github.com/zebbernCVE/CVE-2026-26832)
+
+### CVE-2026-26833
+- [zebbernCVE/CVE-2026-26833](https://github.com/zebbernCVE/CVE-2026-26833)
+
 ### CVE-2026-26988 (2026-02-20)
 
 <code>LibreNMS is an auto-discovering PHP/MySQL/SNMP based network monitoring tool. Versions 25.12.0 and below contain an SQL Injection vulnerability in the ajax_table.php endpoint. The application fails to properly sanitize or parameterize user input when processing IPv6 address searches. Specifically, the address parameter is split into an address and a prefix, and the prefix portion is directly concatenated into the SQL query string without validation. This allows an attacker to inject arbitrary SQL commands, potentially leading to unauthorized data access or database manipulation. This issue has been fixed in version 26.2.0.
@@ -1655,7 +1665,6 @@
 <code>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.3, the /api/backup endpoint is accessible without authentication and discloses the encryption keys required to decrypt the backup in the X-Backup-Security response header. This allows an unauthenticated attacker to download a full system backup containing sensitive data (user credentials, session tokens, SSL private keys, Nginx configurations) and decrypt it immediately. This issue has been patched in version 2.3.3.
 </code>
 
-- [weefunker/CVE-2026-27944-Lab](https://github.com/weefunker/CVE-2026-27944-Lab)
 - [NULL200OK/CVE-2026-27944](https://github.com/NULL200OK/CVE-2026-27944)
 - [NULL200OK/-nginxui_discover](https://github.com/NULL200OK/-nginxui_discover)
 - [Skynoxk/CVE-2026-27944](https://github.com/Skynoxk/CVE-2026-27944)
@@ -1702,6 +1711,7 @@
 - [alihussainzada/CVE-2026-29000-Python-PoC-pac4j-JWT-AuthenticationBypass-Poc](https://github.com/alihussainzada/CVE-2026-29000-Python-PoC-pac4j-JWT-AuthenticationBypass-Poc)
 - [otuva/CVE-2026-29000](https://github.com/otuva/CVE-2026-29000)
 - [RootX111/cve-2026-29000](https://github.com/RootX111/cve-2026-29000)
+- [PtechAmanja/CVE-2026-29000-pac4j-jwt-auth-bypass](https://github.com/PtechAmanja/CVE-2026-29000-pac4j-jwt-auth-bypass)
 
 ### CVE-2026-29041 (2026-03-06)
 
@@ -1756,7 +1766,11 @@
 ### CVE-2026-30498
 - [Mehdi-Ben-Hamou/CVE-2026-30498](https://github.com/Mehdi-Ben-Hamou/CVE-2026-30498)
 
-### CVE-2026-30655
+### CVE-2026-30655 (2026-03-24)
+
+<code>SQL injection in Solicitante::resetaSenha() in esiclivre/esiclivre v0.2.2 and earlier allows unauthenticated remote attackers to gain unauthorized access to sensitive information via the cpfcnpj parameter in /reset/index.php
+</code>
+
 - [brynax/CVE-2026-30655](https://github.com/brynax/CVE-2026-30655)
 
 ### CVE-2026-30695 (2026-03-18)
@@ -1894,6 +1908,13 @@
 ### CVE-2026-32885
 - [SnailSploit/CVE-2026-32885](https://github.com/SnailSploit/CVE-2026-32885)
 
+### CVE-2026-32913 (2026-03-23)
+
+<code>OpenClaw before 2026.3.7 contains an improper header validation vulnerability in fetchWithSsrFGuard that forwards custom authorization headers across cross-origin redirects. Attackers can trigger redirects to different origins to intercept sensitive headers like X-Api-Key and Private-Token intended for the original destination.
+</code>
+
+- [Rickidevs/CVE-2026-32913](https://github.com/Rickidevs/CVE-2026-32913)
+
 ### CVE-2026-32941 (2026-03-20)
 
 <code>Sliver is a command and control framework that uses a custom Wireguard netstack. Versions 1.7.3 and below contain a Remote OOM (Out-of-Memory) vulnerability in the Sliver C2 server's mTLS and WireGuard C2 transport layer. The socketReadEnvelope and socketWGReadEnvelope functions trust an attacker-controlled 4-byte length prefix to allocate memory, with ServerMaxMessageSize allowing single allocations of up to ~2 GiB. A compromised implant or an attacker with valid credentials can exploit this by sending fabricated length prefixes over concurrent yamux streams (up to 128 per connection), forcing the server to attempt allocating ~256 GiB of memory and triggering an OS OOM kill. This crashes the Sliver server, disrupts all active implant sessions, and may degrade or kill other processes sharing the same host. The same pattern also affects all implant-side readers, which have no upper-bound check at all. The issue was not fixed at the the time of publication.
@@ -1909,6 +1930,13 @@
 - [MaxMnMl/langflow-CVE-2026-33017-poc](https://github.com/MaxMnMl/langflow-CVE-2026-33017-poc)
 - [omer-efe-curkus/CVE-2026-33017-Langflow-RCE-PoC](https://github.com/omer-efe-curkus/CVE-2026-33017-Langflow-RCE-PoC)
 - [SimoesCTT/Sovereign-Echo-33017](https://github.com/SimoesCTT/Sovereign-Echo-33017)
+
+### CVE-2026-33634 (2026-03-23)
+
+<code>Trivy is a security scanner. On March 19, 2026, a threat actor used compromised credentials to publish a malicious Trivy v0.69.4 release, force-push 76 of 77 version tags in `aquasecurity/trivy-action` to credential-stealing malware, and replace all 7 tags in `aquasecurity/setup-trivy` with malicious commits. This incident is a continuation of the supply chain attack that began in late February 2026. Following the initial disclosure on March 1, credential rotation was performed but was not atomic (not all credentials were revoked simultaneously). The attacker could have use a valid token to exfiltrate newly rotated secrets during the rotation window (which lasted a few days). This could have allowed the attacker to retain access and execute the March 19 attack. Affected components include the `aquasecurity/trivy` Go / Container image version 0.69.4, the `aquasecurity/trivy-action` GitHub Action versions 0.0.1 – 0.34.2 (76/77), and the`aquasecurity/setup-trivy` GitHub Action versions 0.2.0 – 0.2.6, prior to the recreation of 0.2.6 with a safe commit. Known safe versions include versions 0.69.2 and 0.69.3 of the Trivy binary, version 0.35.0 of trivy-action, and version 0.2.6 of setup-trivy. Additionally, take other mitigations to ensure the safety of secrets. If there is any possibility that a compromised version ran in one's environment, all secrets accessible to affected pipelines must be treated as exposed and rotated immediately. Check whether one's organization pulled or executed Trivy v0.69.4 from any source. Remove any affected artifacts immediately. Review all workflows using `aquasecurity/trivy-action` or `aquasecurity/setup-trivy`. Those who referenced a version tag rather than a full commit SHA should check workflow run logs from March 19–20, 2026 for signs of compromise. Look for repositories named `tpcp-docs` in one's GitHub organization. The presence of such a repository may indicate that the fallback exfiltration mechanism was triggered and secrets were successfully stolen. Pin GitHub Actions to full, immutable commit SHA hashes, don't use mutable version tags.
+</code>
+
+- [ugurrates/teampcp-supply-chain-attack](https://github.com/ugurrates/teampcp-supply-chain-attack)
 
 ### CVE-2026-33693
 - [SnailSploit/CVE-2026-33693](https://github.com/SnailSploit/CVE-2026-33693)
@@ -2563,6 +2591,7 @@
 - [wand3rlust/CVE-2025-3248](https://github.com/wand3rlust/CVE-2025-3248)
 - [drackyjr/cve-2025-3248-exploit](https://github.com/drackyjr/cve-2025-3248-exploit)
 - [b0ySie7e/CVE-2025-3248-POC](https://github.com/b0ySie7e/CVE-2025-3248-POC)
+- [12-test-12/CVE-2025-3248](https://github.com/12-test-12/CVE-2025-3248)
 - [nebari-playground/langflow-cve-2025-3248](https://github.com/nebari-playground/langflow-cve-2025-3248)
 
 ### CVE-2025-3419 (2025-05-08)
@@ -4882,6 +4911,7 @@
 - [Dit-Developers/CVE-2025-21298](https://github.com/Dit-Developers/CVE-2025-21298)
 - [Denyningbow/rtf-ctf-cve-2025-21298](https://github.com/Denyningbow/rtf-ctf-cve-2025-21298)
 - [fy-poc/full-poc-CVE-2025_21298](https://github.com/fy-poc/full-poc-CVE-2025_21298)
+- [tarunbharathe/Zero-Click-RCE-Incident-Response-CVE-2025-21298](https://github.com/tarunbharathe/Zero-Click-RCE-Incident-Response-CVE-2025-21298)
 
 ### CVE-2025-21333 (2025-01-14)
 
@@ -5631,6 +5661,9 @@
 
 - [math-x-io/CVE-2025-25296-POC](https://github.com/math-x-io/CVE-2025-25296-POC)
 
+### CVE-2025-25347
+- [Yetazyyy/CVE-2025-25347](https://github.com/Yetazyyy/CVE-2025-25347)
+
 ### CVE-2025-25369
 - [lkasjkasj/CVE-2025-25369](https://github.com/lkasjkasj/CVE-2025-25369)
 
@@ -6120,7 +6153,7 @@
 - [00xCanelo/CVE-2025-27591](https://github.com/00xCanelo/CVE-2025-27591)
 - [Thekin-ctrl/CVE-2025-27591-Below](https://github.com/Thekin-ctrl/CVE-2025-27591-Below)
 - [Cythonic1/CVE-2025-27591](https://github.com/Cythonic1/CVE-2025-27591)
-- [umutcamliyurt/CVE-2025-27591](https://github.com/umutcamliyurt/CVE-2025-27591)
+- [umutatalar/CVE-2025-27591](https://github.com/umutatalar/CVE-2025-27591)
 - [danil-koltsov/below-log-race-poc](https://github.com/danil-koltsov/below-log-race-poc)
 - [VisaiCyber/CVE-2025-27591-below-](https://github.com/VisaiCyber/CVE-2025-27591-below-)
 - [0xDTC/Below-Logger-Symlink-Attack_CVE-2025-27591](https://github.com/0xDTC/Below-Logger-Symlink-Attack_CVE-2025-27591)
@@ -9049,13 +9082,6 @@
 
 - [TimTrademark/CVE-2025-52122](https://github.com/TimTrademark/CVE-2025-52122)
 
-### CVE-2025-52204 (2026-03-23)
-
-<code>A Cross-Site Scripting (XSS) vulnerability exists in Znuny::ITSM 6.5.x in the customer.pl endpoint via the OTRSCustomerInterface parameter
-</code>
-
-- [j0qq3r/CVE-2025-52204](https://github.com/j0qq3r/CVE-2025-52204)
-
 ### CVE-2025-52216
 - [Arbatinis1/coolermaster-masterctrl-vuln](https://github.com/Arbatinis1/coolermaster-masterctrl-vuln)
 
@@ -10029,6 +10055,7 @@
 - [nexxp90/CVE-2025-55182_RCE_Exploit](https://github.com/nexxp90/CVE-2025-55182_RCE_Exploit)
 - [luoluoqingge/CVE-2025-55182](https://github.com/luoluoqingge/CVE-2025-55182)
 - [RyosukeDTomita/CVE-2025-55182](https://github.com/RyosukeDTomita/CVE-2025-55182)
+- [eagle-nett/React2Shell-PoC-CVE-2025-55182](https://github.com/eagle-nett/React2Shell-PoC-CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -36229,13 +36256,6 @@
 - [acheong08/CVE-2022-26726-POC](https://github.com/acheong08/CVE-2022-26726-POC)
 - [acheong08/CVE-2022-26726-POC2](https://github.com/acheong08/CVE-2022-26726-POC2)
 
-### CVE-2022-26757 (2022-05-26)
-
-<code>A use after free issue was addressed with improved memory management. This issue is fixed in tvOS 15.5, iOS 15.5 and iPadOS 15.5, Security Update 2022-004 Catalina, watchOS 8.6, macOS Big Sur 11.6.6, macOS Monterey 12.4. An application may be able to execute arbitrary code with kernel privileges.
-</code>
-
-- [Dylbin/flow_divert](https://github.com/Dylbin/flow_divert)
-
 ### CVE-2022-26763 (2022-05-26)
 
 <code>An out-of-bounds access issue was addressed with improved bounds checking. This issue is fixed in tvOS 15.5, iOS 15.5 and iPadOS 15.5, Security Update 2022-004 Catalina, watchOS 8.6, macOS Big Sur 11.6.6, macOS Monterey 12.4. A malicious application may be able to execute arbitrary code with system privileges.
@@ -38312,6 +38332,7 @@
 - [walnutsecurity/cve-2022-36804](https://github.com/walnutsecurity/cve-2022-36804)
 - [imbas007/Atlassian-Bitbucket-CVE-2022-36804](https://github.com/imbas007/Atlassian-Bitbucket-CVE-2022-36804)
 - [asepsaepdin/CVE-2022-36804](https://github.com/asepsaepdin/CVE-2022-36804)
+- [JohanGabrielson/bitbucket-test](https://github.com/JohanGabrielson/bitbucket-test)
 
 ### CVE-2022-36934 (2022-09-22)
 
