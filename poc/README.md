@@ -417,6 +417,13 @@
 
 - [hacker1337itme/CVE-2026-3442](https://github.com/hacker1337itme/CVE-2026-3442)
 
+### CVE-2026-3584 (2026-03-20)
+
+<code>The Kali Forms plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.4.9 via the 'form_process' function. This is due to the 'prepare_post_data' function mapping user-supplied keys directly into internal placeholder storage, combined with the use of 'call_user_func' on these placeholder values. This makes it possible for unauthenticated attackers to execute code on the server.
+</code>
+
+- [Yucaerin/CVE-2026-3584](https://github.com/Yucaerin/CVE-2026-3584)
+
 ### CVE-2026-3587 (2026-03-23)
 
 <code>An unauthenticated remote attacker can exploit a hidden function in the CLI prompt to escape the restricted interface, leading to full compromise of the device.
@@ -511,7 +518,7 @@
 
 ### CVE-2026-20131 (2026-03-04)
 
-<code>A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to execute arbitrary Java code as root on an affected device.\r\n\n This vulnerability is due to insecure deserialization of a user-supplied Java byte stream. An attacker could exploit this vulnerability by sending a crafted serialized Java object to the web-based management interface of an affected device. A successful exploit could allow the attacker to execute arbitrary code on the device and elevate privileges to root.\r\n\n Note: If the FMC management interface does not have public internet access, the attack surface that is associated with this vulnerability is reduced.
+<code>A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to execute arbitrary Java code as root&amp;nbsp;on an affected device.\r\n\r\nThis vulnerability is due to insecure deserialization of a user-supplied Java byte stream. An attacker could exploit this vulnerability by sending a crafted serialized Java object to the web-based management interface of an affected device. A successful exploit could allow the attacker to execute arbitrary code on the device and elevate privileges to root.\r\nNote: If the FMC management interface does not have public internet access, the attack surface that is associated with this vulnerability is reduced.
 </code>
 
 - [Sushilsin/CVE-2026-20131](https://github.com/Sushilsin/CVE-2026-20131)
@@ -875,6 +882,7 @@
 </code>
 
 - [Augmaster/POC-CVE-2026-23520](https://github.com/Augmaster/POC-CVE-2026-23520)
+- [0xzap/CVE-2026-23520](https://github.com/0xzap/CVE-2026-23520)
 - [cypher-21/CVE-2026-23520](https://github.com/cypher-21/CVE-2026-23520)
 
 ### CVE-2026-23550 (2026-01-14)
@@ -1433,6 +1441,7 @@
 </code>
 
 - [blackhatlegend/CVE-2026-26198](https://github.com/blackhatlegend/CVE-2026-26198)
+- [sergicortesabadia/CVE-2026-26198-analysis](https://github.com/sergicortesabadia/CVE-2026-26198-analysis)
 
 ### CVE-2026-26215 (2026-02-11)
 
@@ -1525,17 +1534,33 @@
 
 - [mariopepe/CVE-2026-26801-pdfmake-ssrf](https://github.com/mariopepe/CVE-2026-26801-pdfmake-ssrf)
 
-### CVE-2026-26830
+### CVE-2026-26830 (2026-03-25)
+
+<code>pdf-image (npm package) through version 2.0.0 allows OS command injection via the pdfFilePath parameter. The constructGetInfoCommand and constructConvertCommandForPage functions use util.format() to interpolate user-controlled file paths into shell command strings that are executed via child_process.exec()
+</code>
+
 - [zebbernCVE/npm-cve-2026-26830-26833](https://github.com/zebbernCVE/npm-cve-2026-26830-26833)
 - [zebbernCVE/CVE-2026-26830](https://github.com/zebbernCVE/CVE-2026-26830)
 
-### CVE-2026-26831
+### CVE-2026-26831 (2026-03-25)
+
+<code>textract through 2.5.0 is vulnerable to OS Command Injection via the file path parameter in multiple extractors. When processing files with malicious filenames, the filePath is passed directly to child_process.exec() in lib/extractors/doc.js, rtf.js, dxf.js, images.js, and lib/util.js with inadequate sanitization
+</code>
+
 - [zebbernCVE/CVE-2026-26831](https://github.com/zebbernCVE/CVE-2026-26831)
 
-### CVE-2026-26832
+### CVE-2026-26832 (2026-03-25)
+
+<code>node-tesseract-ocr is an npm package that provides a Node.js wrapper for Tesseract OCR. In all versions through 2.2.1, the recognize() function in src/index.js is vulnerable to OS Command Injection. The file path parameter is concatenated into a shell command string and passed to child_process.exec() without proper sanitization
+</code>
+
 - [zebbernCVE/CVE-2026-26832](https://github.com/zebbernCVE/CVE-2026-26832)
 
-### CVE-2026-26833
+### CVE-2026-26833 (2026-03-25)
+
+<code>thumbler through 1.1.2 allows OS command injection via the input, output, time, or size parameter in the thumbnail() function because user input is concatenated into a shell command string passed to child_process.exec() without proper sanitization or escaping.
+</code>
+
 - [zebbernCVE/CVE-2026-26833](https://github.com/zebbernCVE/CVE-2026-26833)
 
 ### CVE-2026-26988 (2026-02-20)
@@ -3711,6 +3736,7 @@
 - [IsmaelCosma/CVE-2025-8088](https://github.com/IsmaelCosma/CVE-2025-8088)
 - [undefined-name12/CVE-2025-8088-Winrar](https://github.com/undefined-name12/CVE-2025-8088-Winrar)
 - [Jessica74016/CVE-2025-8088](https://github.com/Jessica74016/CVE-2025-8088)
+- [lennertdefauw/CVE-2025-8088](https://github.com/lennertdefauw/CVE-2025-8088)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -7152,6 +7178,7 @@
 - [vpr-labs/CVE-2025-32463](https://github.com/vpr-labs/CVE-2025-32463)
 - [danilo1992-sys/CVE-2025-32463](https://github.com/danilo1992-sys/CVE-2025-32463)
 - [0xAshwesker/CVE-2025-32463](https://github.com/0xAshwesker/CVE-2025-32463)
+- [0xzap/CVE-2025-32463](https://github.com/0xzap/CVE-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -9100,6 +9127,13 @@
 
 - [TimTrademark/CVE-2025-52122](https://github.com/TimTrademark/CVE-2025-52122)
 
+### CVE-2025-52204 (2026-03-23)
+
+<code>A Cross-Site Scripting (XSS) vulnerability exists in Znuny::ITSM 6.5.x in the customer.pl endpoint via the OTRSCustomerInterface parameter
+</code>
+
+- [j0qq3r/CVE-2025-52204](https://github.com/j0qq3r/CVE-2025-52204)
+
 ### CVE-2025-52216
 - [Arbatinis1/coolermaster-masterctrl-vuln](https://github.com/Arbatinis1/coolermaster-masterctrl-vuln)
 
@@ -10074,7 +10108,7 @@
 - [luoluoqingge/CVE-2025-55182](https://github.com/luoluoqingge/CVE-2025-55182)
 - [RyosukeDTomita/CVE-2025-55182](https://github.com/RyosukeDTomita/CVE-2025-55182)
 - [eagle-nett/React2Shell-PoC-CVE-2025-55182](https://github.com/eagle-nett/React2Shell-PoC-CVE-2025-55182)
-- [devianntsec/CVE-2025-55182-React2Shell-Masters-Thesis](https://github.com/devianntsec/CVE-2025-55182-React2Shell-Masters-Thesis)
+- [l0lsec/cve-2025-55182-lab](https://github.com/l0lsec/cve-2025-55182-lab)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -16169,6 +16203,7 @@
 - [securenetexpert/CVE-2024-21413-Moniker-Link-Writeup](https://github.com/securenetexpert/CVE-2024-21413-Moniker-Link-Writeup)
 - [SallocinAvalcante/lab-SMB-responder-CVE-2024-21413](https://github.com/SallocinAvalcante/lab-SMB-responder-CVE-2024-21413)
 - [E-m-e-k-a/Moniker-Link-Lab-Setup](https://github.com/E-m-e-k-a/Moniker-Link-Lab-Setup)
+- [TheMursalin/HTB-Mailing-A-Complete-Walkthrough](https://github.com/TheMursalin/HTB-Mailing-A-Complete-Walkthrough)
 
 ### CVE-2024-21513 (2024-07-15)
 
@@ -18305,7 +18340,6 @@
 </code>
 
 - [fortra/CVE-2024-30051](https://github.com/fortra/CVE-2024-30051)
-- [devianntsec/CVE-2024-30051-DWMHeapOverflow-Masters-Thesis](https://github.com/devianntsec/CVE-2024-30051-DWMHeapOverflow-Masters-Thesis)
 
 ### CVE-2024-30052 (2024-06-11)
 
@@ -22315,22 +22349,6 @@
 
 - [Lakshmirnr/CVE-2024-51179](https://github.com/Lakshmirnr/CVE-2024-51179)
 
-### CVE-2024-51324 (2025-02-11)
-
-<code>An issue in the BdApiUtil driver of Baidu Antivirus v5.2.3.116083 allows attackers to terminate arbitrary process via executing a BYOVD (Bring Your Own Vulnerable Driver) attack.
-</code>
-
-- [devianntsec/CVE-2024-51324-BYOVD-Masters-Thesis](https://github.com/devianntsec/CVE-2024-51324-BYOVD-Masters-Thesis)
-
-### CVE-2024-51346
-- [victorGoeman/CVE-2024-51346](https://github.com/victorGoeman/CVE-2024-51346)
-
-### CVE-2024-51347
-- [victorGoeman/CVE-2024-51347](https://github.com/victorGoeman/CVE-2024-51347)
-
-### CVE-2024-51348
-- [victorGoeman/CVE-2024-51348](https://github.com/victorGoeman/CVE-2024-51348)
-
 ### CVE-2024-51358 (2024-11-05)
 
 <code>An issue in Linux Server Heimdall v.2.6.1 allows a remote attacker to execute arbitrary code via a crafted script to the Add new application.
@@ -22494,6 +22512,7 @@
 </code>
 
 - [d3sca/CVE-2024-52302](https://github.com/d3sca/CVE-2024-52302)
+- [pream-totaram/CVE-2024-52302-reproduction](https://github.com/pream-totaram/CVE-2024-52302-reproduction)
 
 ### CVE-2024-52316 (2024-11-18)
 
@@ -24163,7 +24182,6 @@
 - [SanjayRagavendar/Ubuntu-GameOver-Lay](https://github.com/SanjayRagavendar/Ubuntu-GameOver-Lay)
 - [Nkipohcs/CVE-2023-2640-CVE-2023-32629](https://github.com/Nkipohcs/CVE-2023-2640-CVE-2023-32629)
 - [K5LK/CVE-2023-2640-32629](https://github.com/K5LK/CVE-2023-2640-32629)
-- [filippo-zullo98/phpMyAdmin-RCE-Exploit-Lab](https://github.com/filippo-zullo98/phpMyAdmin-RCE-Exploit-Lab)
 
 ### CVE-2023-2645 (2023-05-11)
 
@@ -25430,6 +25448,7 @@
 - [G4sul1n/Cisco-IOS-XE-CVE-2023-20198](https://github.com/G4sul1n/Cisco-IOS-XE-CVE-2023-20198)
 - [Arshit01/CVE-2023-20198](https://github.com/Arshit01/CVE-2023-20198)
 - [Religan/CVE-2023-20198](https://github.com/Religan/CVE-2023-20198)
+- [Gill-Singh-A/CVE-2023-20198-Exploit](https://github.com/Gill-Singh-A/CVE-2023-20198-Exploit)
 - [gustavorobertux/cisco-cve-2023-20198-checker](https://github.com/gustavorobertux/cisco-cve-2023-20198-checker)
 
 ### CVE-2023-20209 (2023-08-16)
@@ -33240,6 +33259,7 @@
 - [toneillcodes/CVE-2022-0944](https://github.com/toneillcodes/CVE-2022-0944)
 - [LipeOzyy/SQLPad-RCE-Exploit-CVE-2022-0944](https://github.com/LipeOzyy/SQLPad-RCE-Exploit-CVE-2022-0944)
 - [0xDTC/SQLPad-6.10.0-Exploit-CVE-2022-0944](https://github.com/0xDTC/SQLPad-6.10.0-Exploit-CVE-2022-0944)
+- [NeoArtemis37/OverlayFS-PrivEsc-CVE-2022-0944](https://github.com/NeoArtemis37/OverlayFS-PrivEsc-CVE-2022-0944)
 
 ### CVE-2022-0952 (2022-05-02)
 
@@ -37167,6 +37187,7 @@
 - [Arkha-Corvus/LetsDefend-SOC173-Follina-0-Day-Detected](https://github.com/Arkha-Corvus/LetsDefend-SOC173-Follina-0-Day-Detected)
 - [nimesh895/Malware-Analysis-Follina-CVE-2022-30190](https://github.com/nimesh895/Malware-Analysis-Follina-CVE-2022-30190)
 - [bcarrulo/Lab-CVE-2022-30190](https://github.com/bcarrulo/Lab-CVE-2022-30190)
+- [ImVihanga03/Static-Malware-Analysis-Follina-CVE-2022-30190](https://github.com/ImVihanga03/Static-Malware-Analysis-Follina-CVE-2022-30190)
 
 ### CVE-2022-30203 (2022-07-12)
 
@@ -37789,6 +37810,7 @@
 - [g3un/cve-2022-32250](https://github.com/g3un/cve-2022-32250)
 - [rem0t3/CVE-2022-32250-Compiled](https://github.com/rem0t3/CVE-2022-32250-Compiled)
 - [LSinus/CacheMeIfYouCan](https://github.com/LSinus/CacheMeIfYouCan)
+- [Noidolosity/CVE-2022-32250](https://github.com/Noidolosity/CVE-2022-32250)
 
 ### CVE-2022-32287 (2022-11-03)
 
@@ -38360,6 +38382,13 @@
 - [imbas007/Atlassian-Bitbucket-CVE-2022-36804](https://github.com/imbas007/Atlassian-Bitbucket-CVE-2022-36804)
 - [asepsaepdin/CVE-2022-36804](https://github.com/asepsaepdin/CVE-2022-36804)
 - [JohanGabrielson/bitbucket-test](https://github.com/JohanGabrielson/bitbucket-test)
+
+### CVE-2022-36883 (2022-07-27)
+
+<code>A missing permission check in Jenkins Git Plugin 4.11.3 and earlier allows unauthenticated attackers to trigger builds of jobs configured to use an attacker-specified Git repository and to cause them to check out an attacker-specified commit.
+</code>
+
+- [qoo7972365/CVE-2022-36883-Poc](https://github.com/qoo7972365/CVE-2022-36883-Poc)
 
 ### CVE-2022-36934 (2022-09-22)
 
@@ -41435,7 +41464,6 @@
 - [ramahmdr/PwnKit](https://github.com/ramahmdr/PwnKit)
 - [Abbykito/KERNELexploits](https://github.com/Abbykito/KERNELexploits)
 - [Allu-mette/cve-2021-4034](https://github.com/Allu-mette/cve-2021-4034)
-- [devianntsec/CVE-2021-4034-PwnKit-Masters-Thesis](https://github.com/devianntsec/CVE-2021-4034-PwnKit-Masters-Thesis)
 
 ### CVE-2021-4044 (2021-12-14)
 
@@ -42165,7 +42193,7 @@
 - [yoohhuu/Rocket-Chat-3.12.1-PoC-CVE-2021-22911-](https://github.com/yoohhuu/Rocket-Chat-3.12.1-PoC-CVE-2021-22911-)
 - [octodi/CVE-2021-22911](https://github.com/octodi/CVE-2021-22911)
 - [TeneBrae93/RocketChat-NoSQLi-Chain-CVE-2021-22911](https://github.com/TeneBrae93/RocketChat-NoSQLi-Chain-CVE-2021-22911)
-- [Faridi-m/CVE-2021-22911-RocketChat-Improvised-](https://github.com/Faridi-m/CVE-2021-22911-RocketChat-Improvised-)
+- [Faridi-m/CVE-2021-22911-RocketChat](https://github.com/Faridi-m/CVE-2021-22911-RocketChat)
 
 ### CVE-2021-22924 (2021-08-05)
 
@@ -46787,6 +46815,7 @@
 <code>In Expat (aka libexpat) before 2.4.3, a left shift by 29 (or more) places in the storeAtts function in xmlparse.c can lead to realloc misbehavior (e.g., allocating too few bytes, or only freeing memory).
 </code>
 
+- [nanopathi/external_expat_AOSP10_r33_CVE-2021-45960](https://github.com/nanopathi/external_expat_AOSP10_r33_CVE-2021-45960)
 - [Trinadh465/external_lib_AOSP10_r33_CVE-2021-45960_CVE-2021-46143-](https://github.com/Trinadh465/external_lib_AOSP10_r33_CVE-2021-45960_CVE-2021-46143-)
 
 ### CVE-2021-46067 (2022-01-06)
@@ -60262,6 +60291,7 @@
 - [anonymous121029034720384234234/py-network-scanner](https://github.com/anonymous121029034720384234234/py-network-scanner)
 - [jubeenshah/CVE-2018-15473-Exploit](https://github.com/jubeenshah/CVE-2018-15473-Exploit)
 - [Remnant-DB/CVE-2018-15473](https://github.com/Remnant-DB/CVE-2018-15473)
+- [K3rn3l-32/Threaded-CVE-2018-15473](https://github.com/K3rn3l-32/Threaded-CVE-2018-15473)
 
 ### CVE-2018-15499 (2018-08-24)
 
@@ -63274,6 +63304,7 @@
 - [skelsec/CVE-2017-12542](https://github.com/skelsec/CVE-2017-12542)
 - [sk1dish/ilo4-rce-vuln-scanner](https://github.com/sk1dish/ilo4-rce-vuln-scanner)
 - [VijayShankar22/CVE-2017-12542](https://github.com/VijayShankar22/CVE-2017-12542)
+- [Gill-Singh-A/CVE-2017-12542-Exploit](https://github.com/Gill-Singh-A/CVE-2017-12542-Exploit)
 
 ### CVE-2017-12561 (2018-02-15)
 
@@ -70050,6 +70081,7 @@
 
 - [websecnl/Bulk_CVE-1999-0532_Scanner](https://github.com/websecnl/Bulk_CVE-1999-0532_Scanner)
 - [Rodney-O-C-Melby/dns-zone-transfer-test](https://github.com/Rodney-O-C-Melby/dns-zone-transfer-test)
+- [SleepTheGod/dns-zone-audit](https://github.com/SleepTheGod/dns-zone-audit)
 
 ### CVE-1999-0678 (2000-03-22)
 
