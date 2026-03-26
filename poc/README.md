@@ -991,6 +991,13 @@
 
 - [BiranPeretz/docling-core-CVE-2026-24009](https://github.com/BiranPeretz/docling-core-CVE-2026-24009)
 
+### CVE-2026-24018 (2026-03-10)
+
+<code>A UNIX symbolic link (Symlink) following vulnerability in Fortinet FortiClientLinux 7.4.0 through 7.4.4, FortiClientLinux 7.2.2 through 7.2.12 may allow a local and unprivileged user to escalate their privileges to root.
+</code>
+
+- [febin0x10/Fortinet_FortiClient_Exploit_CVE-2026-24018](https://github.com/febin0x10/Fortinet_FortiClient_Exploit_CVE-2026-24018)
+
 ### CVE-2026-24049 (2026-01-22)
 
 <code>wheel is a command line tool for manipulating Python wheel files, as defined in PEP 427. In versions 0.40.0 through 0.46.1, the unpack function is vulnerable to file permission modification through mishandling of file permissions after extraction. The logic blindly trusts the filename from the archive header for the chmod operation, even though the extraction process itself might have sanitized the path. Attackers can craft a malicious wheel file that, when unpacked, changes the permissions of critical system files (e.g., /etc/passwd, SSH keys, config files), allowing for Privilege Escalation or arbitrary code execution by modifying now-writable scripts. This issue has been fixed in version 0.46.2.
@@ -1088,6 +1095,7 @@
 
 - [n0isegat3/RegPwnBRc4BOF](https://github.com/n0isegat3/RegPwnBRc4BOF)
 - [lennertdefauw/CVE-2026-24291](https://github.com/lennertdefauw/CVE-2026-24291)
+- [tracyliving606/RegPwn](https://github.com/tracyliving606/RegPwn)
 
 ### CVE-2026-24306 (2026-01-22)
 
@@ -1101,7 +1109,7 @@
 <code>SmarterTools SmarterMail versions prior to build 9511 contain an unauthenticated remote code execution vulnerability in the ConnectToHub API method. The attacker could point the SmarterMail to the malicious HTTP server, which serves the malicious OS command. This command will be executed by the vulnerable application.
 </code>
 
-- [aaddmin1122345/CVE-2026-24423](https://github.com/aaddmin1122345/CVE-2026-24423)
+- [aavamin/CVE-2026-24423](https://github.com/aavamin/CVE-2026-24423)
 
 ### CVE-2026-24512 (2026-02-03)
 
@@ -1780,6 +1788,9 @@
 - [Jvr2022/CVE-2026-29786](https://github.com/Jvr2022/CVE-2026-29786)
 - [Rohitberiwala/NodeJS-Tar-Symlink-Exploit-CVE-2026-29786](https://github.com/Rohitberiwala/NodeJS-Tar-Symlink-Exploit-CVE-2026-29786)
 
+### CVE-2026-30039
+- [bx33661/CVE-2026-30039](https://github.com/bx33661/CVE-2026-30039)
+
 ### CVE-2026-30048 (2026-03-18)
 
 <code>A stored cross-site scripting (XSS) vulnerability exists in the NotChatbot WebChat widget thru 1.4.4. User-supplied input is not properly sanitized before being stored and rendered in the chat conversation history. This allows an attacker to inject arbitrary JavaScript code which is executed when the chat history is reloaded. The issue is reproducible across multiple independent implementations of the widget, indicating that the vulnerability resides in the product itself rather than in a specific website configuration.
@@ -1961,6 +1972,7 @@
 - [MaxMnMl/langflow-CVE-2026-33017-poc](https://github.com/MaxMnMl/langflow-CVE-2026-33017-poc)
 - [omer-efe-curkus/CVE-2026-33017-Langflow-RCE-PoC](https://github.com/omer-efe-curkus/CVE-2026-33017-Langflow-RCE-PoC)
 - [SimoesCTT/Sovereign-Echo-33017](https://github.com/SimoesCTT/Sovereign-Echo-33017)
+- [rootdirective-sec/CVE-2026-33017-Lab](https://github.com/rootdirective-sec/CVE-2026-33017-Lab)
 
 ### CVE-2026-33150 (2026-03-20)
 
@@ -6753,6 +6765,13 @@
 </code>
 
 - [Nxploited/CVE-2025-31033](https://github.com/Nxploited/CVE-2025-31033)
+
+### CVE-2025-31115 (2025-04-03)
+
+<code>XZ Utils provide a general-purpose data-compression library plus command-line tools. In XZ Utils 5.3.3alpha to 5.8.0, the multithreaded .xz decoder in liblzma has a bug where invalid input can at least result in a crash. The effects include heap use after free and writing to an address based on the null pointer plus an offset. Applications and libraries that use the lzma_stream_decoder_mt function are affected. The bug has been fixed in XZ Utils 5.8.1, and the fix has been committed to the v5.4, v5.6, v5.8, and master branches in the xz Git repository. No new release packages will be made from the old stable branches, but a standalone patch is available that applies to all affected releases.
+</code>
+
+- [greydoubt/xz](https://github.com/greydoubt/xz)
 
 ### CVE-2025-31125 (2025-03-31)
 
@@ -13851,7 +13870,7 @@
 - [Chocapikk/CVE-2024-4577](https://github.com/Chocapikk/CVE-2024-4577)
 - [K3ysTr0K3R/CVE-2024-4577-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2024-4577-EXPLOIT)
 - [bl4cksku11/CVE-2024-4577](https://github.com/bl4cksku11/CVE-2024-4577)
-- [aaddmin1122345/cve-2024-4577](https://github.com/aaddmin1122345/cve-2024-4577)
+- [aavamin/cve-2024-4577](https://github.com/aavamin/cve-2024-4577)
 - [d3ck4/Shodan-CVE-2024-4577](https://github.com/d3ck4/Shodan-CVE-2024-4577)
 - [Entropt/CVE-2024-4577_Analysis](https://github.com/Entropt/CVE-2024-4577_Analysis)
 - [0XFFFF-XD/CVE-2024-4577-PHP-CGI-RCE](https://github.com/0XFFFF-XD/CVE-2024-4577-PHP-CGI-RCE)
@@ -21553,6 +21572,13 @@
 - [SkyGodling/exploit-cve-2024-47575](https://github.com/SkyGodling/exploit-cve-2024-47575)
 - [revanslbw/CVE-2024-47575-POC](https://github.com/revanslbw/CVE-2024-47575-POC)
 - [AnnnNix/CVE-2024-47575](https://github.com/AnnnNix/CVE-2024-47575)
+
+### CVE-2024-47611 (2024-10-02)
+
+<code>XZ Utils provide a general-purpose data-compression library plus command-line tools. When built for native Windows (MinGW-w64 or MSVC), the command line tools from XZ Utils 5.6.2 and older have a command line argument injection vulnerability. If a command line contains Unicode characters (for example, filenames) that don't exist in the current legacy code page, the characters are converted to similar-looking characters with best-fit mapping. Some best-fit mappings result in ASCII characters that change the meaning of the command line, which can be exploited with malicious filenames to do argument injection or directory traversal attacks. This vulnerability is fixed in 5.6.3. Command line tools built for Cygwin or MSYS2 are unaffected. liblzma is unaffected.
+</code>
+
+- [greydoubt/xz](https://github.com/greydoubt/xz)
 
 ### CVE-2024-47773 (2024-10-08)
 
@@ -33409,6 +33435,13 @@
 
 - [kayes817/CVE-2022-1257](https://github.com/kayes817/CVE-2022-1257)
 
+### CVE-2022-1271 (2022-08-31)
+
+<code>An arbitrary file write vulnerability was found in GNU gzip's zgrep utility. When zgrep is applied on the attacker's chosen file name (for example, a crafted file name), this can overwrite an attacker's content to an arbitrary attacker-selected file. This flaw occurs due to insufficient validation when processing filenames with two or more newlines where selected content and the target file names are embedded in crafted multi-line file names. This flaw allows a remote, low privileged attacker to force zgrep to write arbitrary files on the system.
+</code>
+
+- [greydoubt/xz](https://github.com/greydoubt/xz)
+
 ### CVE-2022-1274 (2023-03-29)
 
 <code>A flaw was found in Keycloak in the execute-actions-email endpoint. This issue allows arbitrary HTML to be injected into emails sent to Keycloak users and can be misused to perform phishing or other attacks against users.
@@ -36871,7 +36904,7 @@
 
 - [GULL2100/Wordpress_xss-CVE-2022-29455](https://github.com/GULL2100/Wordpress_xss-CVE-2022-29455)
 - [akhilkoradiya/CVE-2022-29455](https://github.com/akhilkoradiya/CVE-2022-29455)
-- [yaudahbanh/CVE-2022-29455](https://github.com/yaudahbanh/CVE-2022-29455)
+- [abdipranata/CVE-2022-29455](https://github.com/abdipranata/CVE-2022-29455)
 - [0xc4t/CVE-2022-29455](https://github.com/0xc4t/CVE-2022-29455)
 
 ### CVE-2022-29464 (2022-04-18)
@@ -38389,6 +38422,7 @@
 </code>
 
 - [qoo7972365/CVE-2022-36883-Poc](https://github.com/qoo7972365/CVE-2022-36883-Poc)
+- [superjimmygou/CVE-2022-36883](https://github.com/superjimmygou/CVE-2022-36883)
 
 ### CVE-2022-36934 (2022-09-22)
 
@@ -46581,6 +46615,7 @@
 - [Saru1718/THM---Solar-exploiting-Log-4j](https://github.com/Saru1718/THM---Solar-exploiting-Log-4j)
 - [lathika-3006/Solar-exploiting-log-4j](https://github.com/lathika-3006/Solar-exploiting-log-4j)
 - [Lavanya2085/solar-exploiting-log4j](https://github.com/Lavanya2085/solar-exploiting-log4j)
+- [danieljosmariyan7254/TryHackMe-Solar-exploiting-log4j-](https://github.com/danieljosmariyan7254/TryHackMe-Solar-exploiting-log4j-)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -46815,7 +46850,6 @@
 <code>In Expat (aka libexpat) before 2.4.3, a left shift by 29 (or more) places in the storeAtts function in xmlparse.c can lead to realloc misbehavior (e.g., allocating too few bytes, or only freeing memory).
 </code>
 
-- [nanopathi/external_expat_AOSP10_r33_CVE-2021-45960](https://github.com/nanopathi/external_expat_AOSP10_r33_CVE-2021-45960)
 - [Trinadh465/external_lib_AOSP10_r33_CVE-2021-45960_CVE-2021-46143-](https://github.com/Trinadh465/external_lib_AOSP10_r33_CVE-2021-45960_CVE-2021-46143-)
 
 ### CVE-2021-46067 (2022-01-06)
@@ -51396,6 +51430,13 @@
 </code>
 
 - [sukusec301/SeaCMS-v10.1](https://github.com/sukusec301/SeaCMS-v10.1)
+
+### CVE-2020-22916 (2023-08-22)
+
+<code>An issue discovered in XZ 5.2.5 allows attackers to cause a denial of service via decompression of a crafted file. NOTE: the vendor disputes the claims of &quot;endless output&quot; and &quot;denial of service&quot; because decompression of the 17,486 bytes always results in 114,881,179 bytes, which is often a reasonable size increase.
+</code>
+
+- [greydoubt/xz](https://github.com/greydoubt/xz)
 
 ### CVE-2020-23127 (2021-05-05)
 
