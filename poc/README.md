@@ -378,7 +378,11 @@
 
 - [joshuavanderpoll/CVE-2026-2991](https://github.com/joshuavanderpoll/CVE-2026-2991)
 
-### CVE-2026-3098
+### CVE-2026-3098 (2026-03-27)
+
+<code>The Smart Slider 3 plugin for WordPress is vulnerable to Arbitrary File Read in all versions up to, and including, 3.5.1.33 via the 'actionExportAll' function. This makes it possible for authenticated attackers, with Subscriber-level access and above, to read the contents of arbitrary files on the server, which can contain sensitive information.
+</code>
+
 - [George0Papasotiriou/LLM-Jailbreak-via-Chain-of-Logic-Injection-CVE-2026-3098](https://github.com/George0Papasotiriou/LLM-Jailbreak-via-Chain-of-Logic-Injection-CVE-2026-3098)
 
 ### CVE-2026-3171 (2026-02-25)
@@ -470,6 +474,7 @@
 
 - [joshuavanderpoll/CVE-2026-3891](https://github.com/joshuavanderpoll/CVE-2026-3891)
 - [vladimirmanylobed451/CVE-2026-3891](https://github.com/vladimirmanylobed451/CVE-2026-3891)
+- [Nxploited/CVE-2026-3891](https://github.com/Nxploited/CVE-2026-3891)
 
 ### CVE-2026-4092 (2026-03-13)
 
@@ -1838,6 +1843,12 @@
 ### CVE-2026-29909
 - [qflksheep/CVE-2026-29909-MRCMS-vulnerability](https://github.com/qflksheep/CVE-2026-29909-MRCMS-vulnerability)
 
+### CVE-2026-29954
+- [b0b0haha/CVE-2026-29954](https://github.com/b0b0haha/CVE-2026-29954)
+
+### CVE-2026-29955
+- [b0b0haha/CVE-2026-29955](https://github.com/b0b0haha/CVE-2026-29955)
+
 ### CVE-2026-29971
 - [tharunchidurala-cyber/BACkupCVE-2026-29971](https://github.com/tharunchidurala-cyber/BACkupCVE-2026-29971)
 - [Tharooon/CVE-2026-29971](https://github.com/Tharooon/CVE-2026-29971)
@@ -2045,7 +2056,11 @@
 ### CVE-2026-33656
 - [JivaSecurity/ESPOCRM-RCE-POC-CVE-2026-33656](https://github.com/JivaSecurity/ESPOCRM-RCE-POC-CVE-2026-33656)
 
-### CVE-2026-33693
+### CVE-2026-33693 (2026-03-27)
+
+<code>Lemmy is a link aggregator and forum for the fediverse. Prior to version 0.7.0-beta.9, the `v4_is_invalid()` function in `activitypub-federation-rust` (`src/utils.rs`) does not check for `Ipv4Addr::UNSPECIFIED` (0.0.0.0). An unauthenticated attacker controlling a remote domain can point it to 0.0.0.0, bypass the SSRF protection introduced by the fix for CVE-2025-25194 (GHSA-7723-35v7-qcxw), and reach localhost services on the target server. Version 0.7.0-beta.9 patches the issue.
+</code>
+
 - [SnailSploit/CVE-2026-33693](https://github.com/SnailSploit/CVE-2026-33693)
 
 ### CVE-2026-33910 (2026-03-25)
@@ -5648,7 +5663,6 @@
 - [Shivshantp/CVE-2025-24813](https://github.com/Shivshantp/CVE-2025-24813)
 - [cyglegit/CVE-2025-24813](https://github.com/cyglegit/CVE-2025-24813)
 - [ftz7/PoC-CVE-2025-24813](https://github.com/ftz7/PoC-CVE-2025-24813)
-- [threadpoolx/CVE-2025-24813-Remote-Code-Execution-in-Apache-Tomcat](https://github.com/threadpoolx/CVE-2025-24813-Remote-Code-Execution-in-Apache-Tomcat)
 - [drcrypterdotru/Apache-GOExploiter](https://github.com/drcrypterdotru/Apache-GOExploiter)
 - [CEAlbez/CVE-2025-24813-PoC](https://github.com/CEAlbez/CVE-2025-24813-PoC)
 - [Makavellik/POC-CVE-2025-24813-Apache-Tomcat-Remote-Code-Execution](https://github.com/Makavellik/POC-CVE-2025-24813-Apache-Tomcat-Remote-Code-Execution)
@@ -6801,7 +6815,6 @@
 
 - [W01fh4cker/CVE-2025-30406](https://github.com/W01fh4cker/CVE-2025-30406)
 - [mchklt/CVE-2025-30406](https://github.com/mchklt/CVE-2025-30406)
-- [threadpoolx/CVE-2025-30406-CentreStack-Triofox-Deserialization-RCE](https://github.com/threadpoolx/CVE-2025-30406-CentreStack-Triofox-Deserialization-RCE)
 
 ### CVE-2025-30567 (2025-03-25)
 
@@ -7676,6 +7689,7 @@
 - [Nxploited/CVE-2025-39459](https://github.com/Nxploited/CVE-2025-39459)
 - [Dit-Developers/CVE-2025-39459](https://github.com/Dit-Developers/CVE-2025-39459)
 - [RootHarpy/CVE-2025-39459-Nuclei-Template](https://github.com/RootHarpy/CVE-2025-39459-Nuclei-Template)
+- [qalesyaSN/CVE-2025-39459](https://github.com/qalesyaSN/CVE-2025-39459)
 
 ### CVE-2025-39507 (2025-05-16)
 
