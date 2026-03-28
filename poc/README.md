@@ -472,7 +472,6 @@
 </code>
 
 - [joshuavanderpoll/CVE-2026-3891](https://github.com/joshuavanderpoll/CVE-2026-3891)
-- [vladimirmanylobed451/CVE-2026-3891](https://github.com/vladimirmanylobed451/CVE-2026-3891)
 - [Nxploited/CVE-2026-3891](https://github.com/Nxploited/CVE-2026-3891)
 
 ### CVE-2026-4092 (2026-03-13)
@@ -19621,13 +19620,6 @@
 
 - [whwhwh96/CVE-2024-35584](https://github.com/whwhwh96/CVE-2024-35584)
 
-### CVE-2024-36039 (2024-05-21)
-
-<code>PyMySQL through 1.1.0 allows SQL injection if used with untrusted JSON input because keys are not escaped by escape_dict.
-</code>
-
-- [zenniskayy2k4/CVE-2024-36039_PoC](https://github.com/zenniskayy2k4/CVE-2024-36039_PoC)
-
 ### CVE-2024-36042 (2024-06-03)
 
 <code>Silverpeas before 6.3.5 allows authentication bypass by omitting the Password field to AuthenticationServlet, often providing an unauthenticated user with superadmin access.
@@ -20214,7 +20206,7 @@
 </code>
 
 - [First-Roman/sprig-mvc-demo-patch](https://github.com/First-Roman/sprig-mvc-demo-patch)
-- [topilov/axiom-jdk](https://github.com/topilov/axiom-jdk)
+- [topilov/axiom-jdk-test-task](https://github.com/topilov/axiom-jdk-test-task)
 - [funcid/CVE-2024-38828](https://github.com/funcid/CVE-2024-38828)
 
 ### CVE-2024-38856 (2024-08-05)
@@ -35274,7 +35266,6 @@
 - [suyash-R-K/dfir-malware-investigation](https://github.com/suyash-R-K/dfir-malware-investigation)
 - [aditidutta696-dev/Spring4Shell-CVE-2022-22965-Exploitation-Attempt](https://github.com/aditidutta696-dev/Spring4Shell-CVE-2022-22965-Exploitation-Attempt)
 - [0xBlackash/CVE-2022-22965](https://github.com/0xBlackash/CVE-2022-22965)
-- [glory903-devsecops/CVE-2022-22965](https://github.com/glory903-devsecops/CVE-2022-22965)
 
 ### CVE-2022-22966 (2022-04-14)
 
@@ -59783,7 +59774,6 @@
 - [knqyf263/CVE-2018-11235](https://github.com/knqyf263/CVE-2018-11235)
 - [ygouzerh/CVE-2018-11235](https://github.com/ygouzerh/CVE-2018-11235)
 - [qweraqq/CVE-2018-11235-Git-Submodule-CE](https://github.com/qweraqq/CVE-2018-11235-Git-Submodule-CE)
-- [jhswartz/CVE-2018-11235](https://github.com/jhswartz/CVE-2018-11235)
 - [AnonymKing/CVE-2018-11235](https://github.com/AnonymKing/CVE-2018-11235)
 - [0rx1/CVE-2018-11235](https://github.com/0rx1/CVE-2018-11235)
 - [cchang27/CVE-2018-11235-test](https://github.com/cchang27/CVE-2018-11235-test)
