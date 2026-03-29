@@ -240,7 +240,6 @@
 - [cybrdude/cve-2026-1731-scanner](https://github.com/cybrdude/cve-2026-1731-scanner)
 - [jakubie07/CVE-2026-1731](https://github.com/jakubie07/CVE-2026-1731)
 - [hexissam/CVE-2026-1731](https://github.com/hexissam/CVE-2026-1731)
-- [LutfifakeeXone/CVE-2026-1731](https://github.com/LutfifakeeXone/CVE-2026-1731)
 
 ### CVE-2026-1844 (2026-02-13)
 
@@ -2016,6 +2015,13 @@
 </code>
 
 - [SnailSploit/CVE-2026-31899](https://github.com/SnailSploit/CVE-2026-31899)
+
+### CVE-2026-32013 (2026-03-19)
+
+<code>OpenClaw versions prior to 2026.2.25 contain a symlink traversal vulnerability in the agents.files.get and agents.files.set methods that allows reading and writing files outside the agent workspace. Attackers can exploit symlinked allowlisted files to access arbitrary host files within gateway process permissions, potentially enabling code execution through file overwrite attacks.
+</code>
+
+- [hargabyte/cve-scanner](https://github.com/hargabyte/cve-scanner)
 
 ### CVE-2026-32127 (2026-03-11)
 
@@ -5457,6 +5463,7 @@
 </code>
 
 - [harley-ghostie/safe-check-CVE-2025-23419](https://github.com/harley-ghostie/safe-check-CVE-2025-23419)
+- [xitexploiter96-dot/CVE-2025-23419](https://github.com/xitexploiter96-dot/CVE-2025-23419)
 
 ### CVE-2025-23922 (2025-01-16)
 
@@ -6296,13 +6303,6 @@
 
 - [absholi7ly/CVE-2025-27210_NodeJS_Path_Traversal_Exploit](https://github.com/absholi7ly/CVE-2025-27210_NodeJS_Path_Traversal_Exploit)
 - [mindeddu/Vulnerable-CVE-2025-27210](https://github.com/mindeddu/Vulnerable-CVE-2025-27210)
-
-### CVE-2025-27237 (2025-10-03)
-
-<code>In Zabbix Agent and Agent 2 on Windows, the OpenSSL configuration file is loaded from a path writable by low-privileged users, allowing malicious modification and potential local privilege escalation by injecting a DLL.
-</code>
-
-- [HackingLZ/CVE-2025-27237](https://github.com/HackingLZ/CVE-2025-27237)
 
 ### CVE-2025-27363 (2025-03-11)
 
@@ -13757,7 +13757,6 @@
 - [Ravaan21/CVE-2024-3400](https://github.com/Ravaan21/CVE-2024-3400)
 - [tfrederick74656/cve-2024-3400-poc](https://github.com/tfrederick74656/cve-2024-3400-poc)
 - [pwnj0hn/CVE-2024-3400](https://github.com/pwnj0hn/CVE-2024-3400)
-- [HackingLZ/panrapidcheck](https://github.com/HackingLZ/panrapidcheck)
 - [Kr0ff/cve-2024-3400](https://github.com/Kr0ff/cve-2024-3400)
 - [zam89/CVE-2024-3400-pot](https://github.com/zam89/CVE-2024-3400-pot)
 - [terminalJunki3/CVE-2024-3400-Checker](https://github.com/terminalJunki3/CVE-2024-3400-Checker)
@@ -40248,6 +40247,7 @@
 </code>
 
 - [kasem545/CVE-2022-46364-Poc](https://github.com/kasem545/CVE-2022-46364-Poc)
+- [cybermaksxx/CVE-2022-46364-Proof-of-the-concept](https://github.com/cybermaksxx/CVE-2022-46364-Proof-of-the-concept)
 
 ### CVE-2022-46381 (2022-12-13)
 
@@ -53372,7 +53372,7 @@
 - [umarfarook882/CVE-2019-0708](https://github.com/umarfarook882/CVE-2019-0708)
 - [HynekPetrak/detect_bluekeep.py](https://github.com/HynekPetrak/detect_bluekeep.py)
 - [Pa55w0rd/CVE-2019-0708](https://github.com/Pa55w0rd/CVE-2019-0708)
-- [at0mik/CVE-2019-0708-PoC](https://github.com/at0mik/CVE-2019-0708-PoC)
+- [zoujialan/CVE-2019-0708-RCE](https://github.com/zoujialan/CVE-2019-0708-RCE)
 - [cream-sec/CVE-2019-0708-Msf--](https://github.com/cream-sec/CVE-2019-0708-Msf--)
 - [ZhaoYukai/CVE-2019-0708](https://github.com/ZhaoYukai/CVE-2019-0708)
 - [ZhaoYukai/CVE-2019-0708-Batch-Blue-Screen](https://github.com/ZhaoYukai/CVE-2019-0708-Batch-Blue-Screen)
