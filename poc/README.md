@@ -1937,6 +1937,9 @@
 
 - [0xN4no/CVE-2026-30048](https://github.com/0xN4no/CVE-2026-30048)
 
+### CVE-2026-30082
+- [Cr0wld3r/CVE-2026-30082](https://github.com/Cr0wld3r/CVE-2026-30082)
+
 ### CVE-2026-30345 (2026-03-18)
 
 <code>A zip slip vulnerability in the Admin import functionality of CTFd v3.8.1-18-gdb5a18c4 allows attackers to write arbitrary files outside the intended directories via supplying a crafted import.
@@ -2156,7 +2159,6 @@
 </code>
 
 - [ugurrates/teampcp-supply-chain-attack](https://github.com/ugurrates/teampcp-supply-chain-attack)
-- [Unit221B/teampcp-tools](https://github.com/Unit221B/teampcp-tools)
 
 ### CVE-2026-33656
 - [JivaSecurity/ESPOCRM-RCE-POC-CVE-2026-33656](https://github.com/JivaSecurity/ESPOCRM-RCE-POC-CVE-2026-33656)
@@ -11127,13 +11129,6 @@
 
 ### CVE-2025-60656
 - [DotAdrien/CVE-2025-60656](https://github.com/DotAdrien/CVE-2025-60656)
-
-### CVE-2025-60709 (2025-11-11)
-
-<code>Out-of-bounds read in Windows Common Log File System Driver allows an authorized attacker to elevate privileges locally.
-</code>
-
-- [ByteCodeSecure/CVE-2025-60709](https://github.com/ByteCodeSecure/CVE-2025-60709)
 
 ### CVE-2025-60710 (2025-11-11)
 
@@ -41948,6 +41943,13 @@
 
 - [Grayhaxor/CVE-2021-21148](https://github.com/Grayhaxor/CVE-2021-21148)
 
+### CVE-2021-21191 (2021-03-16)
+
+<code>Use after free in WebRTC in Google Chrome prior to 89.0.4389.90 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+</code>
+
+- [JacobTaylor3/CVE-2021-21191---CVE-2021-21192](https://github.com/JacobTaylor3/CVE-2021-21191---CVE-2021-21192)
+
 ### CVE-2021-21220 (2021-04-26)
 
 <code>Insufficient validation of untrusted input in V8 in Google Chrome prior to 89.0.4389.128 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
@@ -47198,13 +47200,6 @@
 </code>
 
 - [g-rubert/CVE-2021-46108](https://github.com/g-rubert/CVE-2021-46108)
-
-### CVE-2021-46143 (2022-01-06)
-
-<code>In doProlog in xmlparse.c in Expat (aka libexpat) before 2.4.3, an integer overflow exists for m_groupSize.
-</code>
-
-- [nanopathi/external_expat_AOSP10_r33_CVE-2021-46143](https://github.com/nanopathi/external_expat_AOSP10_r33_CVE-2021-46143)
 
 ### CVE-2021-46361 (2022-02-11)
 
@@ -67739,7 +67734,6 @@
 - [FilipStudeny/-CVE-2014-6271-Shellshock-Remote-Command-Injection-](https://github.com/FilipStudeny/-CVE-2014-6271-Shellshock-Remote-Command-Injection-)
 - [mritunjay-k/CVE-2014-6271](https://github.com/mritunjay-k/CVE-2014-6271)
 - [Brandaoo/CVE-2014-6271](https://github.com/Brandaoo/CVE-2014-6271)
-- [J0hnTh3Kn1ght/CVE-2014-6271](https://github.com/J0hnTh3Kn1ght/CVE-2014-6271)
 - [hanmin0512/CVE-2014-6271_pwnable](https://github.com/hanmin0512/CVE-2014-6271_pwnable)
 - [0xN7y/CVE-2014-6271](https://github.com/0xN7y/CVE-2014-6271)
 - [AlissonFaoli/Shellshock](https://github.com/AlissonFaoli/Shellshock)
