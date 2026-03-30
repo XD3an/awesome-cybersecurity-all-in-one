@@ -45,13 +45,6 @@
 
 - [SnipersMaster/CVE-2026-0709](https://github.com/SnipersMaster/CVE-2026-0709)
 
-### CVE-2026-0745 (2026-02-14)
-
-<code>The User Language Switch plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 1.6.10 due to missing URL validation on the 'download_language()' function. This makes it possible for authenticated attackers, with Administrator-level access and above, to make web requests to arbitrary locations originating from the web application and can be used to query and modify information from internal services.
-</code>
-
-- [blackhatlegend/CVE-2026-0745](https://github.com/blackhatlegend/CVE-2026-0745)
-
 ### CVE-2026-0766 (2026-01-23)
 
 <code>Open WebUI load_tool_module_by_id Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Open WebUI. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the load_tool_module_by_id function. The issue results from the lack of proper validation of a user-supplied string before using it to execute Python code. An attacker can leverage this vulnerability to execute code in the context of the service account. Was ZDI-CAN-28257.
@@ -88,8 +81,29 @@
 
 - [davidrxchester/smart-sketcher-upload](https://github.com/davidrxchester/smart-sketcher-upload)
 
+### CVE-2026-0847 (2026-03-04)
+
+<code>A vulnerability in NLTK versions up to and including 3.9.2 allows arbitrary file read via path traversal in multiple CorpusReader classes, including WordListCorpusReader, TaggedCorpusReader, and BracketParseCorpusReader. These classes fail to properly sanitize or validate file paths, enabling attackers to traverse directories and access sensitive files on the server. This issue is particularly critical in scenarios where user-controlled file inputs are processed, such as in machine learning APIs, chatbots, or NLP pipelines. Exploitation of this vulnerability can lead to unauthorized access to sensitive files, including system files, SSH private keys, and API tokens, and may potentially escalate to remote code execution when combined with other vulnerabilities.
+</code>
+
+- [HyperPS/CVE-2026-0847](https://github.com/HyperPS/CVE-2026-0847)
+
+### CVE-2026-0848 (2026-03-05)
+
+<code>NLTK versions &lt;=3.9.2 are vulnerable to arbitrary code execution due to improper input validation in the StanfordSegmenter module. The module dynamically loads external Java .jar files without verification or sandboxing. An attacker can supply or replace the JAR file, enabling the execution of arbitrary Java bytecode at import time. This vulnerability can be exploited through methods such as model poisoning, MITM attacks, or dependency poisoning, leading to remote code execution. The issue arises from the direct execution of the JAR file via subprocess with unvalidated classpath input, allowing malicious classes to execute when loaded by the JVM.
+</code>
+
+- [HyperPS/CVE-2026-0848](https://github.com/HyperPS/CVE-2026-0848)
+
 ### CVE-2026-0866
 - [mdshoaibuddinchanda/zombieguard](https://github.com/mdshoaibuddinchanda/zombieguard)
+
+### CVE-2026-0897 (2026-01-15)
+
+<code>Allocation of Resources Without Limits or Throttling in the HDF5 weight loading component in Google Keras 3.0.0 through 3.13.0 on all platforms allows a remote attacker to cause a Denial of Service (DoS) through memory exhaustion and a crash of the Python interpreter via a crafted .keras archive containing a valid model.weights.h5 file whose dataset declares an extremely large shape.
+</code>
+
+- [HyperPS/CVE-2026-0897](https://github.com/HyperPS/CVE-2026-0897)
 
 ### CVE-2026-0915 (2026-01-15)
 
@@ -390,6 +404,13 @@
 
 - [joshuavanderpoll/CVE-2026-2991](https://github.com/joshuavanderpoll/CVE-2026-2991)
 
+### CVE-2026-3055 (2026-03-23)
+
+<code>Insufficient input validation in NetScaler ADC and NetScaler Gateway when configured as a SAML IDP leading to memory overread
+</code>
+
+- [0xBlackash/CVE-2026-3055](https://github.com/0xBlackash/CVE-2026-3055)
+
 ### CVE-2026-3098 (2026-03-27)
 
 <code>The Smart Slider 3 plugin for WordPress is vulnerable to Arbitrary File Read in all versions up to, and including, 3.5.1.33 via the 'actionExportAll' function. This makes it possible for authenticated attackers, with Subscriber-level access and above, to read the contents of arbitrary files on the server, which can contain sensitive information.
@@ -500,13 +521,6 @@
 </code>
 
 - [stuartMoorhouse/CVE-2026-4342](https://github.com/stuartMoorhouse/CVE-2026-4342)
-
-### CVE-2026-4447 (2026-03-20)
-
-<code>Inappropriate implementation in V8 in Google Chrome prior to 146.0.7680.153 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)
-</code>
-
-- [blackhatlegend/CVE-2026-4447](https://github.com/blackhatlegend/CVE-2026-4447)
 
 ### CVE-2026-4821
 - [openexecution-coder/demo-cve-2026-4821](https://github.com/openexecution-coder/demo-cve-2026-4821)
@@ -918,6 +932,7 @@
 - [barrersoftware/opencode-secure](https://github.com/barrersoftware/opencode-secure)
 - [0xgh057r3c0n/CVE-2026-22812](https://github.com/0xgh057r3c0n/CVE-2026-22812)
 - [CayberMods/CVE-2026-22812-POC](https://github.com/CayberMods/CVE-2026-22812-POC)
+- [HodgeLuke/ai-agent-security-research](https://github.com/HodgeLuke/ai-agent-security-research)
 
 ### CVE-2026-22862 (2026-01-13)
 
@@ -973,6 +988,7 @@
 - [fckoo/mcpjaminspector-unauth-rce](https://github.com/fckoo/mcpjaminspector-unauth-rce)
 - [FrenzisRed/CVE-2026-23744](https://github.com/FrenzisRed/CVE-2026-23744)
 - [InzegoSec/CVE-2026-23744](https://github.com/InzegoSec/CVE-2026-23744)
+- [z4yd3/PoC-CVE-2026-23744](https://github.com/z4yd3/PoC-CVE-2026-23744)
 - [yassertioursi/htb-kobold-writeup](https://github.com/yassertioursi/htb-kobold-writeup)
 - [ctzisme/CVE-2026-23744](https://github.com/ctzisme/CVE-2026-23744)
 - [AhmadF77/CVE-2026-23744](https://github.com/AhmadF77/CVE-2026-23744)
@@ -980,6 +996,7 @@
 - [0xg00se/CVE-2026-23744-script](https://github.com/0xg00se/CVE-2026-23744-script)
 - [d3vn0mi/CVE-2026-23744-POC](https://github.com/d3vn0mi/CVE-2026-23744-POC)
 - [d0x-awrqxavc/CVE-2026-23744-HACKTHEBOX](https://github.com/d0x-awrqxavc/CVE-2026-23744-HACKTHEBOX)
+- [CyLock11/CVE-2026-23744](https://github.com/CyLock11/CVE-2026-23744)
 
 ### CVE-2026-23745 (2026-01-16)
 
@@ -1523,7 +1540,6 @@
 <code>Ormar is a async mini ORM for Python. In versions 0.9.9 through 0.22.0, when performing aggregate queries, Ormar ORM constructs SQL expressions by passing user-supplied column names directly into `sqlalchemy.text()` without any validation or sanitization. The `min()` and `max()` methods in the `QuerySet` class accept arbitrary string input as the column parameter. While `sum()` and `avg()` are partially protected by an `is_numeric` type check that rejects non-existent fields, `min()` and `max()` skip this validation entirely. As a result, an attacker-controlled string is embedded as raw SQL inside the aggregate function call. Any unauthorized user can exploit this vulnerability to read the entire database contents, including tables unrelated to the queried model, by injecting a subquery as the column parameter. Version 0.23.0 contains a patch.
 </code>
 
-- [blackhatlegend/CVE-2026-26198](https://github.com/blackhatlegend/CVE-2026-26198)
 - [sergicortesabadia/CVE-2026-26198-analysis](https://github.com/sergicortesabadia/CVE-2026-26198-analysis)
 
 ### CVE-2026-26215 (2026-02-11)
@@ -1645,6 +1661,13 @@
 </code>
 
 - [zebbernCVE/CVE-2026-26833](https://github.com/zebbernCVE/CVE-2026-26833)
+
+### CVE-2026-26980 (2026-02-20)
+
+<code>Ghost is a Node.js content management system. Versions 3.24.0 through 6.19.0 allow unauthenticated attackers to perform arbitrary reads from the database. This issue has been fixed in version 6.19.1.
+</code>
+
+- [vognik/CVE-2026-26980](https://github.com/vognik/CVE-2026-26980)
 
 ### CVE-2026-26988 (2026-02-20)
 
@@ -2106,6 +2129,13 @@
 
 - [abhinavagarwal07/abhinavagarwal07.github.io](https://github.com/abhinavagarwal07/abhinavagarwal07.github.io)
 
+### CVE-2026-33340 (2026-03-24)
+
+<code>LoLLMs WEBUI provides the Web user interface for Lord of Large Language and Multi modal Systems. A critical Server-Side Request Forgery (SSRF) vulnerability has been identified in all known existing versions of `lollms-webui`. The `@router.post(&quot;/api/proxy&quot;)` endpoint allows unauthenticated attackers to force the server into making arbitrary GET requests. This can be exploited to access internal services, scan local networks, or exfiltrate sensitive cloud metadata (e.g., AWS/GCP IAM tokens). As of time of publication, no known patched versions are available.
+</code>
+
+- [regaan/CVE-2026-33340](https://github.com/regaan/CVE-2026-33340)
+
 ### CVE-2026-33531 (2026-03-26)
 
 <code>InvenTree is an Open Source Inventory Management System. Prior to version 1.2.6, a path traversal vulnerability in the report template engine allows a staff-level user to read arbitrary files from the server filesystem via crafted template tags. Affected functions: `encode_svg_image()`, `asset()`, and `uploaded_image()` in `src/backend/InvenTree/report/templatetags/report.py`. This requires staff access (to upload / edit templates with maliciously crafted tags). If the InvenTree installation is configured with high access privileges on the host system, this path traversal may allow file access outside of the InvenTree source directory. This issue is patched in version 1.2.6, and 1.3.0 (or above). Users should update to the patched versions. No known workarounds are available.
@@ -2126,6 +2156,7 @@
 </code>
 
 - [ugurrates/teampcp-supply-chain-attack](https://github.com/ugurrates/teampcp-supply-chain-attack)
+- [Unit221B/teampcp-tools](https://github.com/Unit221B/teampcp-tools)
 
 ### CVE-2026-33656
 - [JivaSecurity/ESPOCRM-RCE-POC-CVE-2026-33656](https://github.com/JivaSecurity/ESPOCRM-RCE-POC-CVE-2026-33656)
@@ -2165,7 +2196,11 @@
 
 - [dinhvaren/cve-2026-33937](https://github.com/dinhvaren/cve-2026-33937)
 
-### CVE-2026-34005
+### CVE-2026-34005 (2026-03-29)
+
+<code>In Sofia on Xiongmai DVR/NVR (AHB7008T-MH-V2 and NBD7024H-P) 4.03.R11 devices, root OS command injection can occur via shell metacharacters in the HostName value via an authenticated DVRIP protocol (TCP port 34567) request to the NetWork.NetCommon configuration handler, because system() is used.
+</code>
+
 - [uky007/CVE-2026-34005](https://github.com/uky007/CVE-2026-34005)
 
 ### CVE-2026-34070
@@ -3309,13 +3344,6 @@
 </code>
 
 - [olimpiofreitas/CVE-2025-5349-Scanner](https://github.com/olimpiofreitas/CVE-2025-5349-Scanner)
-
-### CVE-2025-5352 (2025-08-23)
-
-<code>A critical stored Cross-Site Scripting (XSS) vulnerability exists in the Analytics component of lunary-ai/lunary versions up to 1.9.23, where the NEXT_PUBLIC_CUSTOM_SCRIPT environment variable is directly injected into the DOM using dangerouslySetInnerHTML without any sanitization or validation. This allows arbitrary JavaScript execution in all users' browsers if an attacker can control the environment variable during deployment or through server compromise. The vulnerability can lead to complete account takeover, data exfiltration, malware distribution, and persistent attacks affecting all users until the environment variable is cleaned. The issue is fixed in version 1.9.25.
-</code>
-
-- [sahiloj/CVE-2025-5352](https://github.com/sahiloj/CVE-2025-5352)
 
 ### CVE-2025-5394 (2025-07-15)
 
@@ -6400,7 +6428,6 @@
 - [obamalaolu/CVE-2025-27591](https://github.com/obamalaolu/CVE-2025-27591)
 - [rvizx/CVE-2025-27591](https://github.com/rvizx/CVE-2025-27591)
 - [BridgerAlderson/CVE-2025-27591-PoC](https://github.com/BridgerAlderson/CVE-2025-27591-PoC)
-- [DarksBlackSk/CVE-2025-27591](https://github.com/DarksBlackSk/CVE-2025-27591)
 - [dollarboysushil/Linux-Privilege-Escalation-CVE-2025-27591](https://github.com/dollarboysushil/Linux-Privilege-Escalation-CVE-2025-27591)
 - [alialucas7/CVE-2025-27591_PoC](https://github.com/alialucas7/CVE-2025-27591_PoC)
 - [incommatose/CVE-2025-27591-PoC](https://github.com/incommatose/CVE-2025-27591-PoC)
@@ -9716,6 +9743,7 @@
 
 - [kasem545/CVE-2025-54123-Poc](https://github.com/kasem545/CVE-2025-54123-Poc)
 - [0xzap/CVE-2025-54123](https://github.com/0xzap/CVE-2025-54123)
+- [tristanqtn/CVE-2025-54123](https://github.com/tristanqtn/CVE-2025-54123)
 
 ### CVE-2025-54135 (2025-08-05)
 
@@ -10358,6 +10386,7 @@
 - [RyosukeDTomita/CVE-2025-55182](https://github.com/RyosukeDTomita/CVE-2025-55182)
 - [eagle-nett/React2Shell-PoC-CVE-2025-55182](https://github.com/eagle-nett/React2Shell-PoC-CVE-2025-55182)
 - [l0lsec/cve-2025-55182-lab](https://github.com/l0lsec/cve-2025-55182-lab)
+- [0x0asif/CVE-2025-55182](https://github.com/0x0asif/CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -11099,6 +11128,13 @@
 ### CVE-2025-60656
 - [DotAdrien/CVE-2025-60656](https://github.com/DotAdrien/CVE-2025-60656)
 
+### CVE-2025-60709 (2025-11-11)
+
+<code>Out-of-bounds read in Windows Common Log File System Driver allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [ByteCodeSecure/CVE-2025-60709](https://github.com/ByteCodeSecure/CVE-2025-60709)
+
 ### CVE-2025-60710 (2025-11-11)
 
 <code>Improper link resolution before file access ('link following') in Host Process for Windows Tasks allows an authorized attacker to elevate privileges locally.
@@ -11388,6 +11424,7 @@
 <code>A vulnerability in FiberHome GPON ONU HG6145F1 RP4423 allows the device's factory default Wi-Fi password (WPA/WPA2 pre-shared key) to be predicted from the SSID. The device generates default passwords using a deterministic algorithm that derives the router passphrase from the SSID, enabling an attacker who can observe the SSID to predict the default password without authentication or user interaction.
 </code>
 
+- [hanianis/CVE-2025-63353](https://github.com/hanianis/CVE-2025-63353)
 - [0xA1M/CVE-2025-63353](https://github.com/0xA1M/CVE-2025-63353)
 
 ### CVE-2025-63406 (2025-11-13)
@@ -40248,6 +40285,7 @@
 
 - [kasem545/CVE-2022-46364-Poc](https://github.com/kasem545/CVE-2022-46364-Poc)
 - [cybermaksxx/CVE-2022-46364-Proof-of-the-concept](https://github.com/cybermaksxx/CVE-2022-46364-Proof-of-the-concept)
+- [Shashivanth009/CVE-2022-46364---Apache-CXF-XOP-Include-LFI-PoC](https://github.com/Shashivanth009/CVE-2022-46364---Apache-CXF-XOP-Include-LFI-PoC)
 
 ### CVE-2022-46381 (2022-12-13)
 
@@ -40514,9 +40552,6 @@
 </code>
 
 - [iamdarshana/cve-2022-49186-research](https://github.com/iamdarshana/cve-2022-49186-research)
-
-### CVE-2022-218882
-- [Sausageinforest/CVE-2022-218882](https://github.com/Sausageinforest/CVE-2022-218882)
 
 
 ## 2021
@@ -41056,7 +41091,6 @@
 - [4dp/CVE-2021-1732](https://github.com/4dp/CVE-2021-1732)
 - [yangshifan-git/CVE-2021-1732](https://github.com/yangshifan-git/CVE-2021-1732)
 - [asepsaepdin/CVE-2021-1732](https://github.com/asepsaepdin/CVE-2021-1732)
-- [Sausageinforest/CVE-2021-1732](https://github.com/Sausageinforest/CVE-2021-1732)
 
 ### CVE-2021-1748 (2021-04-02)
 
@@ -44090,6 +44124,7 @@
 - [Baza-NATO/CVE-2021-33044](https://github.com/Baza-NATO/CVE-2021-33044)
 - [umair-aziz025/dahua-cve-research](https://github.com/umair-aziz025/dahua-cve-research)
 - [eagle-nett/DAHUA_AUTH-BYPASS-CVE-2021-33044](https://github.com/eagle-nett/DAHUA_AUTH-BYPASS-CVE-2021-33044)
+- [Bd-Mutant7/DahuaLoginBypass](https://github.com/Bd-Mutant7/DahuaLoginBypass)
 
 ### CVE-2021-33045 (2021-09-15)
 
@@ -70335,7 +70370,6 @@
 
 - [websecnl/Bulk_CVE-1999-0532_Scanner](https://github.com/websecnl/Bulk_CVE-1999-0532_Scanner)
 - [Rodney-O-C-Melby/dns-zone-transfer-test](https://github.com/Rodney-O-C-Melby/dns-zone-transfer-test)
-- [SleepTheGod/dns-zone-audit](https://github.com/SleepTheGod/dns-zone-audit)
 
 ### CVE-1999-0678 (2000-03-22)
 
