@@ -771,6 +771,13 @@
 - [alirezac0/CVE-2026-21643](https://github.com/alirezac0/CVE-2026-21643)
 - [0xBlackash/CVE-2026-21643](https://github.com/0xBlackash/CVE-2026-21643)
 
+### CVE-2026-21717 (2026-03-30)
+
+<code>A flaw in V8's string hashing mechanism causes integer-like strings to be hashed to their numeric value, making hash collisions trivially predictable. By crafting a request that causes many such collisions in V8's internal string table, an attacker can significantly degrade performance of the Node.js process.\r\n\r\nThe most common trigger is any endpoint that calls `JSON.parse()` on attacker-controlled input, as JSON parsing automatically internalizes short strings into the affected hash table.\r\n\r\nThis vulnerability affects **20.x, 22.x, 24.x, and 25.x**.
+</code>
+
+- [dajneem23/CVE-2026-21717](https://github.com/dajneem23/CVE-2026-21717)
+
 ### CVE-2026-21721 (2026-01-27)
 
 <code>The dashboard permissions API does not verify the target dashboard scope and only checks the dashboards.permissions:* action. As a result, a user who has permission management rights on one dashboard can read and modify permissions on other dashboards. This is an organization‑internal privilege escalation.
@@ -902,6 +909,13 @@
 </code>
 
 - [NULL200OK/CVE-2026-22730-Scanner](https://github.com/NULL200OK/CVE-2026-22730-Scanner)
+
+### CVE-2026-22777 (2026-01-10)
+
+<code>ComfyUI-Manager is an extension designed to enhance the usability of ComfyUI. Prior to versions 3.39.2 and 4.0.5, an attacker can inject special characters into HTTP query parameters to add arbitrary configuration values to the config.ini file. This can lead to security setting tampering or modification of application behavior. This issue has been patched in versions 3.39.2 and 4.0.5.
+</code>
+
+- [wcnmwcis/CVE-2026-22777](https://github.com/wcnmwcis/CVE-2026-22777)
 
 ### CVE-2026-22785 (2026-01-12)
 
@@ -1909,6 +1923,9 @@
 
 - [padayali-JD/CVE-2026-29597](https://github.com/padayali-JD/CVE-2026-29597)
 
+### CVE-2026-29598
+- [padayali-JD/CVE-2026-29598](https://github.com/padayali-JD/CVE-2026-29598)
+
 ### CVE-2026-29780 (2026-03-07)
 
 <code>eml_parser serves as a python module for parsing eml files and returning various information found in the e-mail as well as computed information. Prior to version 2.0.1, the official example script examples/recursively_extract_attachments.py contains a path traversal vulnerability that allows arbitrary file write outside the intended output directory. Attachment filenames extracted from parsed emails are directly used to construct output file paths without any sanitization, allowing an attacker-controlled filename to escape the target directory. This issue has been patched in version 2.0.1.
@@ -1968,6 +1985,9 @@
 </code>
 
 - [0xN4no/CVE-2026-30048](https://github.com/0xN4no/CVE-2026-30048)
+
+### CVE-2026-30081
+- [rakeshelamaran98/CVE-2026-30081](https://github.com/rakeshelamaran98/CVE-2026-30081)
 
 ### CVE-2026-30082 (2026-03-30)
 
@@ -2137,11 +2157,12 @@
 - [danindiana/cve-2026-32746-mitigation](https://github.com/danindiana/cve-2026-32746-mitigation)
 - [chosenonehacks/CVE-2026-32746](https://github.com/chosenonehacks/CVE-2026-32746)
 
-### CVE-2026-32809
-- [SnailSploit/CVE-2026-32809](https://github.com/SnailSploit/CVE-2026-32809)
+### CVE-2026-32794 (2026-03-30)
 
-### CVE-2026-32885
-- [SnailSploit/CVE-2026-32885](https://github.com/SnailSploit/CVE-2026-32885)
+<code>Improper Certificate Validation vulnerability in Apache Airflow Provider for Databricks. Provider code did not validate certificates for connections to Databricks back-end which could result in a man-of-a-middle attack that traffic is intercepted and manipulated or credentials exfiltrated w/o notice.\n\nThis issue affects Apache Airflow Provider for Databricks: from 1.10.0 before 1.12.0.\n\nUsers are recommended to upgrade to version 1.12.0, which fixes the issue.
+</code>
+
+- [SnailSploit/CVE-2026-32794](https://github.com/SnailSploit/CVE-2026-32794)
 
 ### CVE-2026-32913 (2026-03-23)
 
@@ -2167,6 +2188,7 @@
 - [SimoesCTT/Sovereign-Echo-33017](https://github.com/SimoesCTT/Sovereign-Echo-33017)
 - [rootdirective-sec/CVE-2026-33017-Lab](https://github.com/rootdirective-sec/CVE-2026-33017-Lab)
 - [z4yd3/PoC-CVE-2026-33017](https://github.com/z4yd3/PoC-CVE-2026-33017)
+- [EQSTLab/CVE-2026-33017](https://github.com/EQSTLab/CVE-2026-33017)
 
 ### CVE-2026-33150 (2026-03-20)
 
@@ -2249,7 +2271,11 @@
 
 - [uky007/CVE-2026-34005](https://github.com/uky007/CVE-2026-34005)
 
-### CVE-2026-34070
+### CVE-2026-34070 (2026-03-31)
+
+<code>LangChain is a framework for building agents and LLM-powered applications. Prior to version 1.2.22, multiple functions in langchain_core.prompts.loading read files from paths embedded in deserialized config dicts without validating against directory traversal or absolute path injection. When an application passes user-influenced prompt configurations to load_prompt() or load_prompt_from_config(), an attacker can read arbitrary files on the host filesystem, constrained only by file-extension checks (.txt for templates, .json/.yaml for examples). This issue has been patched in version 1.2.22.
+</code>
+
 - [Rickidevs/CVE-2026-34070](https://github.com/Rickidevs/CVE-2026-34070)
 
 ### CVE-2026-34200
@@ -6806,6 +6832,7 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
+- [KaztoRay/CVE-2025-29927-Research](https://github.com/KaztoRay/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -9707,7 +9734,6 @@
 - [CyprianAtsyor/ToolShell-CVE-2025-53770-SharePoint-Exploit-Lab-LetsDefend](https://github.com/CyprianAtsyor/ToolShell-CVE-2025-53770-SharePoint-Exploit-Lab-LetsDefend)
 - [ghostn4444/CVE-2025-53770](https://github.com/ghostn4444/CVE-2025-53770)
 - [saladin0x1/CVE-2025-53770](https://github.com/saladin0x1/CVE-2025-53770)
-- [go-bi/sharepoint-CVE-2025-53770](https://github.com/go-bi/sharepoint-CVE-2025-53770)
 - [Michaael01/LetsDefend--SOC-342-CVE-2025-53770-SharePoint-Exploit-ToolShell](https://github.com/Michaael01/LetsDefend--SOC-342-CVE-2025-53770-SharePoint-Exploit-ToolShell)
 - [victormbogu1/LetsDefend-SOC342-CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-andRCE-EventID-320](https://github.com/victormbogu1/LetsDefend-SOC342-CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-andRCE-EventID-320)
 - [Cameloo1/sharepoint-toolshell-micro-postmortem](https://github.com/Cameloo1/sharepoint-toolshell-micro-postmortem)
@@ -9721,7 +9747,6 @@
 </code>
 
 - [Momollax/CVE-2025-53772-IIS-WebDeploy-RCE](https://github.com/Momollax/CVE-2025-53772-IIS-WebDeploy-RCE)
-- [go-bi/CVE-2025-53772-](https://github.com/go-bi/CVE-2025-53772-)
 - [sailay1996/CVE-2025-53772](https://github.com/sailay1996/CVE-2025-53772)
 
 ### CVE-2025-53779 (2025-08-12)
@@ -12329,6 +12354,7 @@
 - [ExploreUnknowed/CVE-2025-67303](https://github.com/ExploreUnknowed/CVE-2025-67303)
 - [materaj2/exploit_cve_2025_67303](https://github.com/materaj2/exploit_cve_2025_67303)
 - [Remnant-DB/CVE-2025-67303](https://github.com/Remnant-DB/CVE-2025-67303)
+- [wcnmwcis/CVE-2026-22777](https://github.com/wcnmwcis/CVE-2026-22777)
 
 ### CVE-2025-67315 (2026-01-05)
 
@@ -38997,7 +39023,6 @@
 - [TomKing062/CVE-2022-38694_unlock_bootloader](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader)
 - [TheGammaSqueeze/Bootloader_Unlock_Anbernic_T820](https://github.com/TheGammaSqueeze/Bootloader_Unlock_Anbernic_T820)
 - [Seriousattempts/Bootloader_Unlock_Retroid_Pocket_3Plus](https://github.com/Seriousattempts/Bootloader_Unlock_Retroid_Pocket_3Plus)
-- [Forbirdden/TigerSmash](https://github.com/Forbirdden/TigerSmash)
 - [xbxarchivr/UNISOCUnlocker](https://github.com/xbxarchivr/UNISOCUnlocker)
 - [AureliusIvanInvenioPTL/ubl-itel-s23](https://github.com/AureliusIvanInvenioPTL/ubl-itel-s23)
 - [AureliusIvan/ubl-itel-s23](https://github.com/AureliusIvan/ubl-itel-s23)
@@ -39101,6 +39126,7 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
+- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -40317,7 +40343,6 @@
 </code>
 
 - [kasem545/CVE-2022-46364-Poc](https://github.com/kasem545/CVE-2022-46364-Poc)
-- [cybermaksxx/CVE-2022-46364-Proof-of-the-concept](https://github.com/cybermaksxx/CVE-2022-46364-Proof-of-the-concept)
 - [Shashivanth009/CVE-2022-46364---Apache-CXF-XOP-Include-LFI-PoC](https://github.com/Shashivanth009/CVE-2022-46364---Apache-CXF-XOP-Include-LFI-PoC)
 
 ### CVE-2022-46381 (2022-12-13)
@@ -60172,6 +60197,7 @@
 - [jubeenshah/CVE-2018-15473-Exploit](https://github.com/jubeenshah/CVE-2018-15473-Exploit)
 - [Remnant-DB/CVE-2018-15473](https://github.com/Remnant-DB/CVE-2018-15473)
 - [K3rn3l-32/Threaded-CVE-2018-15473](https://github.com/K3rn3l-32/Threaded-CVE-2018-15473)
+- [wtbacon/cve-2018-15473](https://github.com/wtbacon/cve-2018-15473)
 
 ### CVE-2018-15499 (2018-08-24)
 
