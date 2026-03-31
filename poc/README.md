@@ -121,6 +121,9 @@
 - [O99099O/By-Poloss..-..CVE-2026-0920](https://github.com/O99099O/By-Poloss..-..CVE-2026-0920)
 - [John-doe-code-a11/CVE-2026-0920](https://github.com/John-doe-code-a11/CVE-2026-0920)
 
+### CVE-2026-30
+- [itsismarcos/ICS-MoxieManager-FileUpload-PoC](https://github.com/itsismarcos/ICS-MoxieManager-FileUpload-PoC)
+
 ### CVE-2026-666
 - [adriangigliotti/CVE-2026-666](https://github.com/adriangigliotti/CVE-2026-666)
 
@@ -214,8 +217,8 @@
 <code>A flaw was found in Keycloak. An attacker can exploit this vulnerability by modifying the organization ID and target email within a legitimate invitation token's JSON Web Token (JWT) payload. This lack of cryptographic signature verification allows the attacker to successfully self-register into an unauthorized organization, leading to unauthorized access.
 </code>
 
-- [ninjazan420/CVE-2026-1529-PoC-keycloak-unauthorized-registration-via-improper-invitation-token-validation](https://github.com/ninjazan420/CVE-2026-1529-PoC-keycloak-unauthorized-registration-via-improper-invitation-token-validation)
 - [0x240x23elu/CVE-2026-1529](https://github.com/0x240x23elu/CVE-2026-1529)
+- [ackemed/CVE-2026-1529-PoC-keycloak-unauthorized-registration-via-improper-invitation-token-validation](https://github.com/ackemed/CVE-2026-1529-PoC-keycloak-unauthorized-registration-via-improper-invitation-token-validation)
 
 ### CVE-2026-1560 (2026-02-11)
 
@@ -237,13 +240,6 @@
 </code>
 
 - [Vimash-Dilsara/-CVE-2026-1657](https://github.com/Vimash-Dilsara/-CVE-2026-1657)
-
-### CVE-2026-1729 (2026-02-12)
-
-<code>The AdForest theme for WordPress is vulnerable to authentication bypass in all versions up to, and including, 6.0.12. This is due to the plugin not properly verifying a user's identity prior to authenticating them through the 'sb_login_user_with_otp_fun' function. This makes it possible for unauthenticated attackers to log in as arbitrary users, including administrators.
-</code>
-
-- [ninjazan420/CVE-2026-1729-PoC-AdForest-WordPress-Authentication-Bypass](https://github.com/ninjazan420/CVE-2026-1729-PoC-AdForest-WordPress-Authentication-Bypass)
 
 ### CVE-2026-1731 (2026-02-06)
 
@@ -603,6 +599,13 @@
 
 - [zeroxjf/CVE-2026-20687-AppleSEPKeyStore-UAF](https://github.com/zeroxjf/CVE-2026-20687-AppleSEPKeyStore-UAF)
 
+### CVE-2026-20698 (2026-03-25)
+
+<code>The issue was addressed with improved memory handling. This issue is fixed in iOS 26.4 and iPadOS 26.4, macOS Tahoe 26.4, tvOS 26.4, visionOS 26.4, watchOS 26.4. An app may be able to cause unexpected system termination or corrupt kernel memory.
+</code>
+
+- [Somisomair/CVE-2026-20698-PF_ROUTE-Heap-Overflow](https://github.com/Somisomair/CVE-2026-20698-PF_ROUTE-Heap-Overflow)
+
 ### CVE-2026-20805 (2026-01-13)
 
 <code>Exposure of sensitive information to an unauthorized actor in Desktop Windows Manager allows an authorized attacker to disclose information locally.
@@ -659,6 +662,13 @@
 </code>
 
 - [jenniferreire26/CVE-2026-20963](https://github.com/jenniferreire26/CVE-2026-20963)
+
+### CVE-2026-20999 (2026-03-16)
+
+<code>Authentication bypass by replay in Smart Switch prior to version 3.7.69.15 allows remote attackers to trigger privileged functions.
+</code>
+
+- [lasdjk/CVE-2026-20999-my-thought](https://github.com/lasdjk/CVE-2026-20999-my-thought)
 
 ### CVE-2026-21385 (2026-03-02)
 
@@ -1790,6 +1800,13 @@
 
 - [bluedragonsecurity/CVE-2026-27831-POC](https://github.com/bluedragonsecurity/CVE-2026-27831-POC)
 
+### CVE-2026-27876 (2026-03-27)
+
+<code>A chained attack via SQL Expressions and a Grafana Enterprise plugin can lead to a remote arbitrary code execution impact (RCE). This is enabled by a feature in Grafana (OSS), so all users are always recommended to update to avoid future attack vectors going this path.\n\nOnly instances with the sqlExpressions feature toggle enabled are vulnerable.
+</code>
+
+- [0xBlackash/CVE-2026-27876](https://github.com/0xBlackash/CVE-2026-27876)
+
 ### CVE-2026-27884 (2026-02-26)
 
 <code>NetExec is a network execution tool. Prior to version 1.5.1, the module spider_plus improperly creates the output file and folder path when saving files from SMB shares. It does not take into account that it is possible for Linux SMB shares to have path traversal characters such as `../` in them. An attacker can craft a filename in an SMB share that includes these characters, which when spider_plus crawls and downloads, can write or overwrite arbitrary files. The issue is patched in v1.5.1. As a workaround, do not run spider_plus with DOWNLOAD=true against targets.
@@ -1885,6 +1902,13 @@
 
 - [ChrisSub08/CVE-2026-29187_SqlInjectionVulnerabilityOpenEMR7.0.4](https://github.com/ChrisSub08/CVE-2026-29187_SqlInjectionVulnerabilityOpenEMR7.0.4)
 
+### CVE-2026-29597 (2026-03-30)
+
+<code>Incorrect access control in the file_details.asp endpoint of DDSN Interactive Acora CMS v10.7.1 allows attackers with editor privileges to access sensitive files via crafted requests.
+</code>
+
+- [padayali-JD/CVE-2026-29597](https://github.com/padayali-JD/CVE-2026-29597)
+
 ### CVE-2026-29780 (2026-03-07)
 
 <code>eml_parser serves as a python module for parsing eml files and returning various information found in the e-mail as well as computed information. Prior to version 2.0.1, the official example script examples/recursively_extract_attachments.py contains a path traversal vulnerability that allows arbitrary file write outside the intended output directory. Attachment filenames extracted from parsed emails are directly used to construct output file paths without any sanitization, allowing an attacker-controlled filename to escape the target directory. This issue has been patched in version 2.0.1.
@@ -1914,10 +1938,18 @@
 
 - [Stalin-143/CVE-2026-29905](https://github.com/Stalin-143/CVE-2026-29905)
 
-### CVE-2026-29909
+### CVE-2026-29909 (2026-03-30)
+
+<code>MRCMS V3.1.2 contains an unauthenticated directory enumeration vulnerability in the file management module. The /admin/file/list.do endpoint lacks authentication controls and proper input validation, allowing remote attackers to enumerate directory contents on the server without any credentials.
+</code>
+
 - [qflksheep/CVE-2026-29909-MRCMS-vulnerability](https://github.com/qflksheep/CVE-2026-29909-MRCMS-vulnerability)
 
-### CVE-2026-29954
+### CVE-2026-29954 (2026-03-30)
+
+<code>In KubePlus 4.1.4, the mutating webhook and kubeconfiggenerator components have an SSRF vulnerability when processing the chartURL field of ResourceComposition resources. The field is only URL-encoded without validating the target address. More critically, when kubeconfiggenerator uses wget to download charts, the chartURL is directly concatenated into the command, allowing attackers to inject wget's `--header` option to achieve arbitrary HTTP header injection.
+</code>
+
 - [b0b0haha/CVE-2026-29954](https://github.com/b0b0haha/CVE-2026-29954)
 
 ### CVE-2026-29955
@@ -1937,7 +1969,11 @@
 
 - [0xN4no/CVE-2026-30048](https://github.com/0xN4no/CVE-2026-30048)
 
-### CVE-2026-30082
+### CVE-2026-30082 (2026-03-30)
+
+<code>Multiple stored cross-site scripting (XSS) vulnerabilities in the Edit feature of the Software Package List page of IngEstate Server v11.14.0 allow attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the About application, What's news, or Release note parameters.
+</code>
+
 - [Cr0wld3r/CVE-2026-30082](https://github.com/Cr0wld3r/CVE-2026-30082)
 
 ### CVE-2026-30345 (2026-03-18)
@@ -2070,6 +2106,13 @@
 
 - [kOaDT/poc-cve-2026-32255](https://github.com/kOaDT/poc-cve-2026-32255)
 
+### CVE-2026-32606 (2026-03-18)
+
+<code>IncusOS is an immutable OS image dedicated to running Incus. Prior to 202603142010, the default configuration of systemd-cryptenroll as used by IncusOS through mkosi allows for an attacker with physical access to the machine to access the encrypted data without requiring any interaction by the system's owner or any tampering of Secure Boot state or kernel (UKI) boot image. That's because in this configuration, the LUKS key is made available by the TPM so long as the system has the expected PCR7 value and the PCR11 policy matches. That default PCR11 policy importantly allows for the TPM to release the key to the booted system rather than just from the initrd part of the signed kernel image (UKI). The attack relies on the attacker being able to substitute the original encrypted root partition for one that they control. By doing so, the system will prompt for a recovery key on boot, which the attacker has defined and can provide, before booting the system using the attacker's root partition rather than the system's original one. The attacker only needs to put a systemd unit starting on system boot within their root partition to have the system run that logic on boot. That unit will then run in an environment where the TPM will allow for the retrieval of the encryption key of the real root disk, allowing the attacker to steal the LUKS volume key (immutable master key) and then use it against the real root disk, altering it or getting data out before putting the disk back the way it was and returning the system without a trace of this attack having happened. This is all possible because the system will have still booted with Secure Boot enabled, will have measured and ran the expected bootloader and kernel image (UKI). The initrd selects the root disk based on GPT partition identifiers making it possible to easily substitute the real root disk for an attacker controlled one. This doesn't lead to any change in the TPM state and therefore allows for retrieval of the LUKS key by the attacker through a boot time systemd unit on their alternative root partition. IncusOS version 202603142010 (2026/03/14 20:10 UTC)  includes the new PCR15 logic and will automatically update the TPM policy on boot. Anyone suspecting that their system may have been physically accessed while shut down should perform a full system wipe and reinstallation as only that will rotate the LUKS volume key and prevent subsequent access to the encrypted data should the system have been previously compromised. There are no known workarounds other than updating to a version with corrected logic which will automatically rebind the LUKS keys to the new set of TPM registers and prevent this from being exploited.
+</code>
+
+- [gibmat/CVE-2026-32606-POC](https://github.com/gibmat/CVE-2026-32606-POC)
+
 ### CVE-2026-32722 (2026-03-18)
 
 <code>Memray is a memory profiler for Python. Prior to Memray 1.19.2, Memray rendered the command line of the tracked process directly into generated HTML reports without escaping. Because there was no escaping, attacker-controlled command line arguments were inserted as raw HTML into the generated report. This allowed JavaScript execution when a victim opened the generated report in a browser. Version 1.19.2 fixes the issue.
@@ -2159,6 +2202,7 @@
 </code>
 
 - [ugurrates/teampcp-supply-chain-attack](https://github.com/ugurrates/teampcp-supply-chain-attack)
+- [fevar54/CVE-2026-33634-Scanner](https://github.com/fevar54/CVE-2026-33634-Scanner)
 
 ### CVE-2026-33656
 - [JivaSecurity/ESPOCRM-RCE-POC-CVE-2026-33656](https://github.com/JivaSecurity/ESPOCRM-RCE-POC-CVE-2026-33656)
@@ -2324,7 +2368,7 @@
 - [dhmosfunk/7-Zip-CVE-2025-0411-POC](https://github.com/dhmosfunk/7-Zip-CVE-2025-0411-POC)
 - [iSee857/CVE-2025-0411-PoC](https://github.com/iSee857/CVE-2025-0411-PoC)
 - [ishwardeepp/CVE-2025-0411-MoTW-PoC](https://github.com/ishwardeepp/CVE-2025-0411-MoTW-PoC)
-- [cesarbtakeda/7-Zip-CVE-2025-0411-POC](https://github.com/cesarbtakeda/7-Zip-CVE-2025-0411-POC)
+- [t0x1nsec/7-Zip-CVE-2025-0411-POC](https://github.com/t0x1nsec/7-Zip-CVE-2025-0411-POC)
 - [betulssahin/CVE-2025-0411-7-Zip-Mark-of-the-Web-Bypass](https://github.com/betulssahin/CVE-2025-0411-7-Zip-Mark-of-the-Web-Bypass)
 - [RustMacrosRecoil/7-Zip-CVE-2025-0411-POC](https://github.com/RustMacrosRecoil/7-Zip-CVE-2025-0411-POC)
 
@@ -5569,7 +5613,7 @@
 - [ThemeHackers/CVE-2025-24071](https://github.com/ThemeHackers/CVE-2025-24071)
 - [rubbxalc/CVE-2025-24071](https://github.com/rubbxalc/CVE-2025-24071)
 - [Marcejr117/CVE-2025-24071_PoC](https://github.com/Marcejr117/CVE-2025-24071_PoC)
-- [cesarbtakeda/Windows-Explorer-CVE-2025-24071](https://github.com/cesarbtakeda/Windows-Explorer-CVE-2025-24071)
+- [t0x1nsec/Windows-Explorer-CVE-2025-24071](https://github.com/t0x1nsec/Windows-Explorer-CVE-2025-24071)
 - [pswalia2u/CVE-2025-24071_POC](https://github.com/pswalia2u/CVE-2025-24071_POC)
 - [f4dee-backup/CVE-2025-24071](https://github.com/f4dee-backup/CVE-2025-24071)
 - [LOOKY243/CVE-2025-24071-PoC](https://github.com/LOOKY243/CVE-2025-24071-PoC)
@@ -6334,6 +6378,13 @@
 - [absholi7ly/CVE-2025-27210_NodeJS_Path_Traversal_Exploit](https://github.com/absholi7ly/CVE-2025-27210_NodeJS_Path_Traversal_Exploit)
 - [mindeddu/Vulnerable-CVE-2025-27210](https://github.com/mindeddu/Vulnerable-CVE-2025-27210)
 
+### CVE-2025-27237 (2025-10-03)
+
+<code>In Zabbix Agent and Agent 2 on Windows, the OpenSSL configuration file is loaded from a path writable by low-privileged users, allowing malicious modification and potential local privilege escalation by injecting a DLL.
+</code>
+
+- [HackingLZ/CVE-2025-27237](https://github.com/HackingLZ/CVE-2025-27237)
+
 ### CVE-2025-27363 (2025-03-11)
 
 <code>An out of bounds write exists in FreeType versions 2.13.0 and below (newer versions of FreeType are not vulnerable) when attempting to parse font subglyph structures related to TrueType GX and variable font files. The vulnerable code assigns a signed short value to an unsigned long and then adds a static value causing it to wrap around and allocate too small of a heap buffer. The code then writes up to 6 signed long integers out of bounds relative to this buffer. This may result in arbitrary code execution. This vulnerability may have been exploited in the wild.
@@ -6436,7 +6487,7 @@
 - [00xCanelo/CVE-2025-27591](https://github.com/00xCanelo/CVE-2025-27591)
 - [Thekin-ctrl/CVE-2025-27591-Below](https://github.com/Thekin-ctrl/CVE-2025-27591-Below)
 - [Cythonic1/CVE-2025-27591](https://github.com/Cythonic1/CVE-2025-27591)
-- [umutatalar/CVE-2025-27591](https://github.com/umutatalar/CVE-2025-27591)
+- [nikolas-trey/CVE-2025-27591](https://github.com/nikolas-trey/CVE-2025-27591)
 - [danil-koltsov/below-log-race-poc](https://github.com/danil-koltsov/below-log-race-poc)
 - [VisaiCyber/CVE-2025-27591-below-](https://github.com/VisaiCyber/CVE-2025-27591-below-)
 - [0xDTC/Below-Logger-Symlink-Attack_CVE-2025-27591](https://github.com/0xDTC/Below-Logger-Symlink-Attack_CVE-2025-27591)
@@ -6755,7 +6806,6 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [KaztoRay/CVE-2025-29927-Research](https://github.com/KaztoRay/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -8967,7 +9017,6 @@
 - [zenzue/CVE-2025-50154](https://github.com/zenzue/CVE-2025-50154)
 - [rubenformation/CVE-2025-50154](https://github.com/rubenformation/CVE-2025-50154)
 - [Ash1996x/CVE-2025-50154-Aggressor-Script](https://github.com/Ash1996x/CVE-2025-50154-Aggressor-Script)
-- [MartinxMax/CVE-2025-50154](https://github.com/MartinxMax/CVE-2025-50154)
 
 ### CVE-2025-50165 (2025-08-12)
 
@@ -9478,7 +9527,6 @@
 - [nxgn-kd01/smartermail-cve-scanner](https://github.com/nxgn-kd01/smartermail-cve-scanner)
 - [watchtowrlabs/watchTowr-vs-SmarterMail-CVE-2025-52691](https://github.com/watchtowrlabs/watchTowr-vs-SmarterMail-CVE-2025-52691)
 - [rimbadirgantara/CVE-2025-52691-poc](https://github.com/rimbadirgantara/CVE-2025-52691-poc)
-- [ninjazan420/CVE-2025-52691-PoC-SmarterMail-authentication-bypass-exploit-WT-2026-0001](https://github.com/ninjazan420/CVE-2025-52691-PoC-SmarterMail-authentication-bypass-exploit-WT-2026-0001)
 
 ### CVE-2025-52694 (2026-01-12)
 
@@ -9746,6 +9794,7 @@
 - [kasem545/CVE-2025-54123-Poc](https://github.com/kasem545/CVE-2025-54123-Poc)
 - [0xzap/CVE-2025-54123](https://github.com/0xzap/CVE-2025-54123)
 - [tristanqtn/CVE-2025-54123](https://github.com/tristanqtn/CVE-2025-54123)
+- [f4dee-backup/CVE-2025-54123](https://github.com/f4dee-backup/CVE-2025-54123)
 
 ### CVE-2025-54135 (2025-08-05)
 
@@ -10389,6 +10438,7 @@
 - [eagle-nett/React2Shell-PoC-CVE-2025-55182](https://github.com/eagle-nett/React2Shell-PoC-CVE-2025-55182)
 - [l0lsec/cve-2025-55182-lab](https://github.com/l0lsec/cve-2025-55182-lab)
 - [0x0asif/CVE-2025-55182](https://github.com/0x0asif/CVE-2025-55182)
+- [amikanev/CVE-2025-55182-LAB](https://github.com/amikanev/CVE-2025-55182-LAB)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -13249,6 +13299,7 @@
 - [karim4353/CVE-2024-1086-Exploit](https://github.com/karim4353/CVE-2024-1086-Exploit)
 - [ndt2111200203/CVE-2024-1086](https://github.com/ndt2111200203/CVE-2024-1086)
 - [sandesh9978/cve-2024-1086-lpe](https://github.com/sandesh9978/cve-2024-1086-lpe)
+- [vettrivel007/CVE-2024-1086](https://github.com/vettrivel007/CVE-2024-1086)
 
 ### CVE-2024-1112 (2024-01-31)
 
@@ -13789,6 +13840,7 @@
 - [Ravaan21/CVE-2024-3400](https://github.com/Ravaan21/CVE-2024-3400)
 - [tfrederick74656/cve-2024-3400-poc](https://github.com/tfrederick74656/cve-2024-3400-poc)
 - [pwnj0hn/CVE-2024-3400](https://github.com/pwnj0hn/CVE-2024-3400)
+- [HackingLZ/panrapidcheck](https://github.com/HackingLZ/panrapidcheck)
 - [Kr0ff/cve-2024-3400](https://github.com/Kr0ff/cve-2024-3400)
 - [zam89/CVE-2024-3400-pot](https://github.com/zam89/CVE-2024-3400-pot)
 - [terminalJunki3/CVE-2024-3400-Checker](https://github.com/terminalJunki3/CVE-2024-3400-Checker)
@@ -13911,7 +13963,6 @@
 <code>Eine kritische Schwachstelle wurde in TBK DVR-4104 and DVR-4216 bis 20240412 gefunden. Betroffen davon ist ein unbekannter Prozess der Datei /device.rsp?opt=sys&amp;cmd=___S_O_S_T_R_E_A_MAX___. Mittels dem Manipulieren des Arguments mdb/mdc mit unbekannten Daten kann eine os command injection-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei über das Netzwerk erfolgen. Der Exploit steht zur öffentlichen Verfügung.
 </code>
 
-- [qalvynn/Mirai-Based-CVE-2024-3721-Selfrep](https://github.com/qalvynn/Mirai-Based-CVE-2024-3721-Selfrep)
 - [bytecategory/homeip](https://github.com/bytecategory/homeip)
 
 ### CVE-2024-3806 (2024-05-09)
@@ -14644,6 +14695,7 @@
 - [OHHDamnBRO/Noregressh](https://github.com/OHHDamnBRO/Noregressh)
 - [Ngagne-Demba-Dia/CVE-2024-6387-corrigee](https://github.com/Ngagne-Demba-Dia/CVE-2024-6387-corrigee)
 - [Remnant-DB/CVE-2024-6387](https://github.com/Remnant-DB/CVE-2024-6387)
+- [Doux-x/CVE-2024-6387-analysis](https://github.com/Doux-x/CVE-2024-6387-analysis)
 
 ### CVE-2024-6460 (2024-08-16)
 
@@ -18079,6 +18131,7 @@
 - [jakabakos/CVE-2024-27348-Apache-HugeGraph-RCE](https://github.com/jakabakos/CVE-2024-27348-Apache-HugeGraph-RCE)
 - [p0et08/CVE-2024-27348](https://github.com/p0et08/CVE-2024-27348)
 - [wqfh/CVE-2024-27348](https://github.com/wqfh/CVE-2024-27348)
+- [akelaqe/CVE-2024-27348-HugeGraph-RCE](https://github.com/akelaqe/CVE-2024-27348-HugeGraph-RCE)
 
 ### CVE-2024-27398 (2024-05-13)
 
@@ -18782,7 +18835,6 @@
 - [fuhei/CVE-2024-31317](https://github.com/fuhei/CVE-2024-31317)
 - [jmywh1/CVE-2024-31317](https://github.com/jmywh1/CVE-2024-31317)
 - [Anonymous941/zygote-injection-toolkit](https://github.com/Anonymous941/zygote-injection-toolkit)
-- [mianliupindao/CVE-2024-31317-PoC-Deployer](https://github.com/mianliupindao/CVE-2024-31317-PoC-Deployer)
 - [agg23/cve-2024-31317](https://github.com/agg23/cve-2024-31317)
 - [WebLDix/CVE-2024-31317-PoC-Deployer](https://github.com/WebLDix/CVE-2024-31317-PoC-Deployer)
 - [rifting/Zygotroller](https://github.com/rifting/Zygotroller)
@@ -20314,7 +20366,7 @@
 
 ### CVE-2024-38998
 - [z3ldr1/PP_CVE-2024-38998](https://github.com/z3ldr1/PP_CVE-2024-38998)
-- [cesarbtakeda/PP_CVE-2024-38998](https://github.com/cesarbtakeda/PP_CVE-2024-38998)
+- [t0x1nsec/PP_CVE-2024-38998](https://github.com/t0x1nsec/PP_CVE-2024-38998)
 
 ### CVE-2024-39031 (2024-07-09)
 
@@ -23028,7 +23080,6 @@
 - [r007sec/CVE-2024-53677](https://github.com/r007sec/CVE-2024-53677)
 - [Cythonic1/CVE-2024-53677-POC](https://github.com/Cythonic1/CVE-2024-53677-POC)
 - [seoyoung-kang/CVE-2024-53677](https://github.com/seoyoung-kang/CVE-2024-53677)
-- [MartinxMax/CVE-2024-53677](https://github.com/MartinxMax/CVE-2024-53677)
 - [sangrok-jeon/CVE-2024-53677-Analysis](https://github.com/sangrok-jeon/CVE-2024-53677-Analysis)
 
 ### CVE-2024-53691 (2024-12-06)
@@ -31963,6 +32014,7 @@
 - [pavanaa4k/CVE-2023-46604-LAB](https://github.com/pavanaa4k/CVE-2023-46604-LAB)
 - [RockyDesigne/SSP-Assignment-3-RCEYouLater](https://github.com/RockyDesigne/SSP-Assignment-3-RCEYouLater)
 - [sangrok-jeon/CVE-2023-46604-Analysis](https://github.com/sangrok-jeon/CVE-2023-46604-Analysis)
+- [mkdemir/activemq-lockbit-analysis](https://github.com/mkdemir/activemq-lockbit-analysis)
 
 ### CVE-2023-46615 (2024-02-12)
 
@@ -32321,7 +32373,7 @@
 <code>fast-jwt provides fast JSON Web Token (JWT) implementation. Prior to version 3.3.2, the fast-jwt library does not properly prevent JWT algorithm confusion for all public key types. The 'publicKeyPemMatcher' in 'fast-jwt/src/crypto.js' does not properly match all common PEM formats for public keys. To exploit this vulnerability, an attacker needs to craft a malicious JWT token containing the HS256 algorithm, signed with the public RSA key of the victim application. This attack will only work if the victim application utilizes a public key containing the `BEGIN RSA PUBLIC KEY` header. Applications using the RS256 algorithm, a public key with a `BEGIN RSA PUBLIC KEY` header, and calling the verify function without explicitly providing an algorithm, are vulnerable to this algorithm confusion attack which allows attackers to sign arbitrary payloads which will be accepted by the verifier. Version 3.3.2 contains a patch for this issue. As a workaround, change line 29 of `blob/master/src/crypto.js` to include a regular expression.
 </code>
 
-- [lucas-tran05/CVE-2023-48223](https://github.com/lucas-tran05/CVE-2023-48223)
+- [lucastran05/CVE-2023-48223](https://github.com/lucastran05/CVE-2023-48223)
 
 ### CVE-2023-48777 (2024-03-26)
 
@@ -32764,13 +32816,6 @@
 </code>
 
 - [ahrixia/CVE-2023-50072](https://github.com/ahrixia/CVE-2023-50072)
-
-### CVE-2023-50094 (2024-01-01)
-
-<code>reNgine before 2.1.2 allows OS Command Injection if an adversary has a valid session ID. The attack places shell metacharacters in an api/tools/waf_detector/?url= string. The commands are executed as root via subprocess.check_output.
-</code>
-
-- [Zierax/CVE-2023-50094_POC](https://github.com/Zierax/CVE-2023-50094_POC)
 
 ### CVE-2023-50131
 - [sajaljat/CVE-2023-50131](https://github.com/sajaljat/CVE-2023-50131)
@@ -35182,6 +35227,7 @@
 - [cc3305/CVE-2022-22947](https://github.com/cc3305/CVE-2022-22947)
 - [skysliently/CVE-2022-22947-pb-ai](https://github.com/skysliently/CVE-2022-22947-pb-ai)
 - [shoucheng3/spring-cloud__spring-cloud-gateway_CVE-2022-22947_3-0-6](https://github.com/shoucheng3/spring-cloud__spring-cloud-gateway_CVE-2022-22947_3-0-6)
+- [SanderSchepers1993/CyberSec2026](https://github.com/SanderSchepers1993/CyberSec2026)
 
 ### CVE-2022-22948 (2022-03-29)
 
@@ -35556,7 +35602,6 @@
 </code>
 
 - [shoucheng3/ESAPI__esapi-java-legacy_CVE-2022-23457_2-2-3-1](https://github.com/shoucheng3/ESAPI__esapi-java-legacy_CVE-2022-23457_2-2-3-1)
-- [dawetmaster/CVE-2022-23457-esapi-java-legacy-vulnerable](https://github.com/dawetmaster/CVE-2022-23457-esapi-java-legacy-vulnerable)
 
 ### CVE-2022-23529
 - [daniel-marchi/CVE-2022-23529-Exploration](https://github.com/daniel-marchi/CVE-2022-23529-Exploration)
@@ -37265,13 +37310,6 @@
 </code>
 
 - [TheGetch/CVE-2022-29598](https://github.com/TheGetch/CVE-2022-29598)
-
-### CVE-2022-29599 (2022-05-23)
-
-<code>In Apache Maven maven-shared-utils prior to version 3.3.3, the Commandline class can emit double-quoted strings without proper escaping, allowing shell injection attacks.
-</code>
-
-- [dawetmaster/CVE-2022-29599-maven-shared-utils-vulnerable](https://github.com/dawetmaster/CVE-2022-29599-maven-shared-utils-vulnerable)
 
 ### CVE-2022-29622 (2022-05-16)
 
@@ -39063,7 +39101,6 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -39677,6 +39714,7 @@
 - [Goultarde/CVE-2022-42889-text4shell](https://github.com/Goultarde/CVE-2022-42889-text4shell)
 - [engranaabubakar/CVE-2022-42889](https://github.com/engranaabubakar/CVE-2022-42889)
 - [sangrok-jeon/CVE-2022-42889-Analysis](https://github.com/sangrok-jeon/CVE-2022-42889-Analysis)
+- [KosmicOwl045/ICT287-CVE-2022-42889](https://github.com/KosmicOwl045/ICT287-CVE-2022-42889)
 
 ### CVE-2022-42896 (2022-11-23)
 
@@ -40578,6 +40616,13 @@
 
 - [Satheesh575555/frameworks_minikin_AOSP10_r33_CVE-2021-0313](https://github.com/Satheesh575555/frameworks_minikin_AOSP10_r33_CVE-2021-0313)
 
+### CVE-2021-0314 (2021-02-10)
+
+<code>In onCreate of UninstallerActivity, there is a possible way to uninstall an all without informed user consent due to a tapjacking/overlay attack. This could lead to local escalation of privilege with User execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-8.1 Android-9Android ID: A-171221302
+</code>
+
+- [nanopathi/framework_base_AOSP10_r33_CVE-2021-0314](https://github.com/nanopathi/framework_base_AOSP10_r33_CVE-2021-0314)
+
 ### CVE-2021-0315 (2021-01-11)
 
 <code>In onCreate of GrantCredentialsPermissionActivity.java, there is a possible way to convince the user to grant an app access to an account due to a tapjacking/overlay attack. This could lead to local escalation of privilege with User execution privileges needed. User interaction is needed for exploitation. Product: Android; Versions: Android-8.1, Android-9, Android-10, Android-11, Android-8.0; Android ID: A-169763814.
@@ -40660,6 +40705,13 @@
 
 - [Satheesh575555/frameworks_native_AOSP10_r33_CVE-2021-0332](https://github.com/Satheesh575555/frameworks_native_AOSP10_r33_CVE-2021-0332)
 
+### CVE-2021-0333 (2021-02-10)
+
+<code>In onCreate of BluetoothPermissionActivity.java, there is a possible permissions bypass due to a tapjacking overlay that obscures the phonebook permissions dialog when a Bluetooth device is connecting. This could lead to local escalation of privilege with User execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-8.1 Android-9 Android-10 Android-11Android ID: A-168504491
+</code>
+
+- [Satheesh575555/packages_apps_Settings_AOSP10_r33_CVE-2021-0333](https://github.com/Satheesh575555/packages_apps_Settings_AOSP10_r33_CVE-2021-0333)
+
 ### CVE-2021-0336 (2021-02-10)
 
 <code>In onReceive of BluetoothPermissionRequest.java, there is a possible permissions bypass due to a mutable PendingIntent. This could lead to local escalation of privilege that bypasses a permission check, with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-9 Android-10 Android-11 Android-8.1Android ID: A-158219161
@@ -40695,6 +40747,13 @@
 </code>
 
 - [uthrasri/frameworks_opt_net_wifi_CVE-2021-0390](https://github.com/uthrasri/frameworks_opt_net_wifi_CVE-2021-0390)
+
+### CVE-2021-0391 (2021-03-10)
+
+<code>In onCreate() of ChooseTypeAndAccountActivity.java, there is a possible way to learn the existence of an account, without permissions, due to a tapjacking/overlay attack. This could lead to local escalation of privilege with User execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-11 Android-8.1 Android-9 Android-10Android ID: A-172841550
+</code>
+
+- [nanopathi/framework_base_AOSP10_r33_CVE-2021-0391](https://github.com/nanopathi/framework_base_AOSP10_r33_CVE-2021-0391)
 
 ### CVE-2021-0392 (2021-03-10)
 
@@ -40804,6 +40863,13 @@
 </code>
 
 - [Satheesh575555/packages_apps_Settings_AOSP10_r33_CVE-2021-0506](https://github.com/Satheesh575555/packages_apps_Settings_AOSP10_r33_CVE-2021-0506)
+
+### CVE-2021-0507 (2021-06-21)
+
+<code>In handle_rc_metamsg_cmd of btif_rc.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution over Bluetooth with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-8.1 Android-9 Android-10Android ID: A-181860042
+</code>
+
+- [nanopathi/system_bt_AOSP10_r33_CVE-2021-0507](https://github.com/nanopathi/system_bt_AOSP10_r33_CVE-2021-0507)
 
 ### CVE-2021-0508 (2021-06-21)
 
@@ -41263,6 +41329,7 @@
 - [Y0s9/CVE-2021-3129](https://github.com/Y0s9/CVE-2021-3129)
 - [idea-oss/laravel-CVE-2021-3129-EXP](https://github.com/idea-oss/laravel-CVE-2021-3129-EXP)
 - [knqyf263/CVE-2021-3129](https://github.com/knqyf263/CVE-2021-3129)
+- [cuongtop4598/CVE-2021-3129-Script](https://github.com/cuongtop4598/CVE-2021-3129-Script)
 - [joshuavanderpoll/CVE-2021-3129](https://github.com/joshuavanderpoll/CVE-2021-3129)
 - [shadowabi/Laravel-CVE-2021-3129](https://github.com/shadowabi/Laravel-CVE-2021-3129)
 - [hupe1980/CVE-2021-3129](https://github.com/hupe1980/CVE-2021-3129)
@@ -41360,6 +41427,7 @@
 - [halissha/CVE-2021-3156](https://github.com/halissha/CVE-2021-3156)
 - [sharkmoos/Baron-Samedit](https://github.com/sharkmoos/Baron-Samedit)
 - [chenaotian/CVE-2021-3156](https://github.com/chenaotian/CVE-2021-3156)
+- [ret2basic/SudoScience](https://github.com/ret2basic/SudoScience)
 - [RodricBr/CVE-2021-3156](https://github.com/RodricBr/CVE-2021-3156)
 - [ypl6/heaplens](https://github.com/ypl6/heaplens)
 - [q77190858/CVE-2021-3156](https://github.com/q77190858/CVE-2021-3156)
@@ -41696,6 +41764,7 @@
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
 - [Nosferatuvjr/PwnKit](https://github.com/Nosferatuvjr/PwnKit)
+- [TotallyNotAHaxxer/CVE-2021-4034](https://github.com/TotallyNotAHaxxer/CVE-2021-4034)
 - [rhin0cer0s/CVE-2021-4034](https://github.com/rhin0cer0s/CVE-2021-4034)
 - [0x4ndy/CVE-2021-4034-PoC](https://github.com/0x4ndy/CVE-2021-4034-PoC)
 - [antoinenguyen-09/CVE-2021-4034](https://github.com/antoinenguyen-09/CVE-2021-4034)
@@ -41838,13 +41907,6 @@
 </code>
 
 - [ShaikUsaf/frameworks_base_AOSP10_r33_CVE-2021-20138](https://github.com/ShaikUsaf/frameworks_base_AOSP10_r33_CVE-2021-20138)
-
-### CVE-2021-20190 (2021-01-19)
-
-<code>A flaw was found in jackson-databind before 2.9.10.7. FasterXML mishandles the interaction between serialization gadgets and typing. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.
-</code>
-
-- [dawetmaster/CVE-2021-20190-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2021-20190-jackson-databind-vulnerable)
 
 ### CVE-2021-20233 (2021-03-03)
 
@@ -42043,20 +42105,6 @@
 </code>
 
 - [jinsu9758/PUG-RCE-CVE-2021-21353-POC](https://github.com/jinsu9758/PUG-RCE-CVE-2021-21353-POC)
-
-### CVE-2021-21363 (2021-03-11)
-
-<code>swagger-codegen is an open-source project which contains a template-driven engine to generate documentation, API clients and server stubs in different languages by parsing your OpenAPI / Swagger definition. In swagger-codegen before version 2.4.19, on Unix like systems, the system's temporary directory is shared between all users on that system. A collocated user can observe the process of creating a temporary sub directory in the shared temporary directory and race to complete the creation of the temporary subdirectory. This vulnerability is local privilege escalation because the contents of the `outputFolder` can be appended to by an attacker. As such, code written to this directory, when executed can be attacker controlled. For more details refer to the referenced GitHub Security Advisory. This vulnerability is fixed in version 2.4.19. Note this is a distinct vulnerability from CVE-2021-21364.
-</code>
-
-- [dawetmaster/CVE-2021-21363-swagger-codegen-vulnerable](https://github.com/dawetmaster/CVE-2021-21363-swagger-codegen-vulnerable)
-
-### CVE-2021-21364 (2021-03-11)
-
-<code>swagger-codegen is an open-source project which contains a template-driven engine to generate documentation, API clients and server stubs in different languages by parsing your OpenAPI / Swagger definition. In swagger-codegen before version 2.4.19, on Unix-Like systems, the system temporary directory is shared between all local users. When files/directories are created, the default `umask` settings for the process are respected. As a result, by default, most processes/apis will create files/directories with the permissions `-rw-r--r--` and `drwxr-xr-x` respectively, unless an API that explicitly sets safe file permissions is used. Because this vulnerability impacts generated code, the generated code will remain vulnerable until fixed manually! This vulnerability is fixed in version 2.4.19. Note this is a distinct vulnerability from CVE-2021-21363.
-</code>
-
-- [dawetmaster/CVE-2021-21364-swagger-codegen-vulnerable](https://github.com/dawetmaster/CVE-2021-21364-swagger-codegen-vulnerable)
 
 ### CVE-2021-21380 (2021-03-23)
 
@@ -43864,13 +43912,6 @@
 - [UserB1ank/CVE-2021-31630](https://github.com/UserB1ank/CVE-2021-31630)
 - [tranquac/OpenPLC_v3](https://github.com/tranquac/OpenPLC_v3)
 
-### CVE-2021-31684 (2021-06-01)
-
-<code>A vulnerability was discovered in the indexOf function of JSONParserByteArray in JSON Smart versions 1.3 and 2.4 which causes a denial of service (DOS) via a crafted web request.
-</code>
-
-- [dawetmaster/CVE-2021-31684-json-smart-v2-vulnerable](https://github.com/dawetmaster/CVE-2021-31684-json-smart-v2-vulnerable)
-
 ### CVE-2021-31728 (2021-05-17)
 
 <code>Incorrect access control in zam64.sys, zam32.sys in MalwareFox AntiMalware 2.74.0.150 allows a non-privileged process to open a handle to \.\ZemanaAntiMalware, register itself with the driver by sending IOCTL 0x80002010, allocate executable memory using a flaw in IOCTL 0x80002040, install a hook with IOCTL 0x80002044 and execute the executable memory using this hook with IOCTL 0x80002014 or 0x80002018, this exposes ring 0 code execution in the context of the driver allowing the non-privileged process to elevate privileges.
@@ -44457,27 +44498,6 @@
 
 - [N4nj0/CVE-2021-35492](https://github.com/N4nj0/CVE-2021-35492)
 
-### CVE-2021-35515 (2021-07-13)
-
-<code>When reading a specially crafted 7Z archive, the construction of the list of codecs that decompress an entry can result in an infinite loop. This could be used to mount a denial of service attack against services that use Compress' sevenz package.
-</code>
-
-- [dawetmaster/CVE-2021-35515-commons-compress-vulnerable](https://github.com/dawetmaster/CVE-2021-35515-commons-compress-vulnerable)
-
-### CVE-2021-35516 (2021-07-13)
-
-<code>When reading a specially crafted 7Z archive, Compress can be made to allocate large amounts of memory that finally leads to an out of memory error even for very small inputs. This could be used to mount a denial of service attack against services that use Compress' sevenz package.
-</code>
-
-- [dawetmaster/CVE-2021-35516-commons-compress-vulnerable](https://github.com/dawetmaster/CVE-2021-35516-commons-compress-vulnerable)
-
-### CVE-2021-35517 (2021-07-13)
-
-<code>When reading a specially crafted TAR archive, Compress can be made to allocate large amounts of memory that finally leads to an out of memory error even for very small inputs. This could be used to mount a denial of service attack against services that use Compress' tar package.
-</code>
-
-- [dawetmaster/CVE-2021-35517-commons-compress-vulnerable](https://github.com/dawetmaster/CVE-2021-35517-commons-compress-vulnerable)
-
 ### CVE-2021-35576 (2021-10-20)
 
 <code>Vulnerability in the Oracle Database Enterprise Edition Unified Audit component of Oracle Database Server. Supported versions that are affected are 12.1.0.2, 12.2.0.1 and 19c. Easily exploitable vulnerability allows high privileged attacker having Local Logon privilege with network access via Oracle Net to compromise Oracle Database Enterprise Edition Unified Audit. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of Oracle Database Enterprise Edition Unified Audit accessible data. CVSS 3.1 Base Score 2.7 (Integrity impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N).
@@ -44498,13 +44518,6 @@
 </code>
 
 - [tcbutler320/CVE-2021-35956](https://github.com/tcbutler320/CVE-2021-35956)
-
-### CVE-2021-36090 (2021-07-13)
-
-<code>When reading a specially crafted ZIP archive, Compress can be made to allocate large amounts of memory that finally leads to an out of memory error even for very small inputs. This could be used to mount a denial of service attack against services that use Compress' zip package.
-</code>
-
-- [dawetmaster/CVE-2021-36090-commons-compress-vulnerable](https://github.com/dawetmaster/CVE-2021-36090-commons-compress-vulnerable)
 
 ### CVE-2021-36260 (2021-09-22)
 
@@ -45453,7 +45466,6 @@
 </code>
 
 - [shoucheng3/jmrozanec__cron-utils_CVE-2021-41269_9-1-5](https://github.com/shoucheng3/jmrozanec__cron-utils_CVE-2021-41269_9-1-5)
-- [dawetmaster/CVE-2021-41269-cron-utils-vulnerable](https://github.com/dawetmaster/CVE-2021-41269-cron-utils-vulnerable)
 
 ### CVE-2021-41277 (2021-11-17)
 
@@ -45674,6 +45686,7 @@
 - [skentagon/CVE-2021-41773](https://github.com/skentagon/CVE-2021-41773)
 - [zer0qs/CVE-2021-41773](https://github.com/zer0qs/CVE-2021-41773)
 - [bernardas/netsec-polygon](https://github.com/bernardas/netsec-polygon)
+- [CalfCrusher/Path-traversal-RCE-Apache-2.4.49-2.4.50-Exploit](https://github.com/CalfCrusher/Path-traversal-RCE-Apache-2.4.49-2.4.50-Exploit)
 - [Chocapikk/CVE-2021-41773](https://github.com/Chocapikk/CVE-2021-41773)
 - [wangfly-me/Apache_Penetration_Tool](https://github.com/wangfly-me/Apache_Penetration_Tool)
 - [anldori/CVE-2021-41773-Scanner](https://github.com/anldori/CVE-2021-41773-Scanner)
@@ -46380,13 +46393,6 @@
 </code>
 
 - [khuntor/CVE-2021-43858-MinIO](https://github.com/khuntor/CVE-2021-43858-MinIO)
-
-### CVE-2021-43859 (2022-02-01)
-
-<code>XStream is an open source java library to serialize objects to XML and back again. Versions prior to 1.4.19 may allow a remote attacker to allocate 100% CPU time on the target system depending on CPU type or parallel execution of such a payload resulting in a denial of service only by manipulating the processed input stream. XStream 1.4.19 monitors and accumulates the time it takes to add elements to collections and throws an exception if a set threshold is exceeded. Users are advised to upgrade as soon as possible. Users unable to upgrade may set the NO_REFERENCE mode to prevent recursion. See GHSA-rmr5-cpv2-vgjf for further details on a workaround if an upgrade is not possible.
-</code>
-
-- [dawetmaster/CVE-2021-43859-xstream-vulnerable](https://github.com/dawetmaster/CVE-2021-43859-xstream-vulnerable)
 
 ### CVE-2021-43883 (2021-12-15)
 
@@ -47101,6 +47107,7 @@
 <code>In Expat (aka libexpat) before 2.4.3, a left shift by 29 (or more) places in the storeAtts function in xmlparse.c can lead to realloc misbehavior (e.g., allocating too few bytes, or only freeing memory).
 </code>
 
+- [nanopathi/external_expat_AOSP10_r33_CVE-2021-45960](https://github.com/nanopathi/external_expat_AOSP10_r33_CVE-2021-45960)
 - [Trinadh465/external_lib_AOSP10_r33_CVE-2021-45960_CVE-2021-46143-](https://github.com/Trinadh465/external_lib_AOSP10_r33_CVE-2021-45960_CVE-2021-46143-)
 
 ### CVE-2021-46067 (2022-01-06)
@@ -47200,6 +47207,13 @@
 </code>
 
 - [g-rubert/CVE-2021-46108](https://github.com/g-rubert/CVE-2021-46108)
+
+### CVE-2021-46143 (2022-01-06)
+
+<code>In doProlog in xmlparse.c in Expat (aka libexpat) before 2.4.3, an integer overflow exists for m_groupSize.
+</code>
+
+- [nanopathi/external_expat_AOSP10_r33_CVE-2021-46143](https://github.com/nanopathi/external_expat_AOSP10_r33_CVE-2021-46143)
 
 ### CVE-2021-46361 (2022-02-11)
 
@@ -48279,13 +48293,6 @@
 
 - [Ibonok/CVE-2020-1611](https://github.com/Ibonok/CVE-2020-1611)
 
-### CVE-2020-1695 (2020-05-19)
-
-<code>A flaw was found in all resteasy 3.x.x versions prior to 3.12.0.Final and all resteasy 4.x.x versions prior to 4.6.0.Final, where an improper input validation results in returning an illegal header that integrates into the server's response. This flaw may result in an injection, which leads to unexpected behavior when the HTTP response is constructed.
-</code>
-
-- [dawetmaster/CVE-2020-1695-Resteasy-vulnerable](https://github.com/dawetmaster/CVE-2020-1695-Resteasy-vulnerable)
-
 ### CVE-2020-1764 (2020-03-26)
 
 <code>A hard-coded cryptographic key vulnerability in the default configuration file was found in Kiali, all versions prior to 1.15.1. A remote attacker could abuse this flaw by creating their own JWT signed tokens and bypass Kiali authentication mechanisms, possibly gaining privileges to view and alter the Istio configuration.
@@ -48336,7 +48343,6 @@
 - [RedTeam-Rediron/CVE-2020-1938](https://github.com/RedTeam-Rediron/CVE-2020-1938)
 - [lizhianyuguangming/TomcatScanPro](https://github.com/lizhianyuguangming/TomcatScanPro)
 - [hopsypopsy8/CVE-2020-1938-Exploitation](https://github.com/hopsypopsy8/CVE-2020-1938-Exploitation)
-- [Joshua8821/CNVD](https://github.com/Joshua8821/CNVD)
 - [abrewer251/CVE-2020-1938_Ghostcat-PoC](https://github.com/abrewer251/CVE-2020-1938_Ghostcat-PoC)
 
 ### CVE-2020-1947 (2020-03-11)
@@ -49082,13 +49088,6 @@
 
 - [spamscanner/url-regex-safe](https://github.com/spamscanner/url-regex-safe)
 
-### CVE-2020-7692 (2020-07-09)
-
-<code>PKCE support is not implemented in accordance with the RFC for OAuth 2.0 for Native Apps. Without the use of PKCE, the authorization code returned by an authorization server is not enough to guarantee that the client that issued the initial authorization request is the one that will be authorized. An attacker is able to obtain the authorization code using a malicious app on the client-side and use it to gain authorization to the protected resource. This affects the package com.google.oauth-client:google-oauth-client before 1.31.0.
-</code>
-
-- [dawetmaster/CVE-2020-7692-google-oauth-java-client-vulnerable](https://github.com/dawetmaster/CVE-2020-7692-google-oauth-java-client-vulnerable)
-
 ### CVE-2020-7693 (2020-07-09)
 
 <code>Incorrect handling of Upgrade header with the value websocket leads in crashing of containers hosting sockjs apps. This affects the package sockjs before 0.3.20.
@@ -49499,7 +49498,6 @@
 - [Blyth0He/CVE-2020-8840](https://github.com/Blyth0He/CVE-2020-8840)
 - [Veraxy00/CVE-2020-8840](https://github.com/Veraxy00/CVE-2020-8840)
 - [dpredrag/CVE-2020-8840](https://github.com/dpredrag/CVE-2020-8840)
-- [dawetmaster/CVE-2020-8840-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-8840-jackson-databind-vulnerable)
 
 ### CVE-2020-8888
 - [SnipJoe/CVE-2020-8888](https://github.com/SnipJoe/CVE-2020-8888)
@@ -49712,20 +49710,12 @@
 
 - [prisect/hichipreset](https://github.com/prisect/hichipreset)
 
-### CVE-2020-9546 (2020-03-02)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.4 mishandles the interaction between serialization gadgets and typing, related to org.apache.hadoop.shaded.com.zaxxer.hikari.HikariConfig (aka shaded hikari-config).
-</code>
-
-- [dawetmaster/CVE-2020-9546-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-9546-jackson-databind-vulnerable)
-
 ### CVE-2020-9547 (2020-03-02)
 
 <code>FasterXML jackson-databind 2.x before 2.9.10.4 mishandles the interaction between serialization gadgets and typing, related to com.ibatis.sqlmap.engine.transaction.jta.JtaTransactionConfig (aka ibatis-sqlmap).
 </code>
 
 - [fairyming/CVE-2020-9547](https://github.com/fairyming/CVE-2020-9547)
-- [dawetmaster/CVE-2020-9547-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-9547-jackson-databind-vulnerable)
 
 ### CVE-2020-9548 (2020-03-02)
 
@@ -49733,7 +49723,6 @@
 </code>
 
 - [fairyming/CVE-2020-9548](https://github.com/fairyming/CVE-2020-9548)
-- [dawetmaster/CVE-2020-9548-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-9548-jackson-databind-vulnerable)
 
 ### CVE-2020-9715 (2020-08-19)
 
@@ -49999,20 +49988,6 @@
 
 - [scopion/CVE-2020-10963](https://github.com/scopion/CVE-2020-10963)
 
-### CVE-2020-10968 (2020-03-26)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.4 mishandles the interaction between serialization gadgets and typing, related to org.aoju.bus.proxy.provider.remoting.RmiProvider (aka bus-proxy).
-</code>
-
-- [dawetmaster/CVE-2020-10968-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-10968-jackson-databind-vulnerable)
-
-### CVE-2020-10969 (2020-03-26)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.4 mishandles the interaction between serialization gadgets and typing, related to javax.swing.JEditorPane.
-</code>
-
-- [dawetmaster/CVE-2020-10969-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-10969-jackson-databind-vulnerable)
-
 ### CVE-2020-10977 (2020-04-08)
 
 <code>GitLab EE/CE 8.5 to 12.9 is vulnerable to a an path traversal when moving an issue between projects.
@@ -50104,27 +50079,12 @@
 
 - [AVE-Stoik/CVE-2020-11110-Proof-of-Concept](https://github.com/AVE-Stoik/CVE-2020-11110-Proof-of-Concept)
 
-### CVE-2020-11111 (2020-03-31)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.4 mishandles the interaction between serialization gadgets and typing, related to org.apache.activemq.* (aka activemq-jms, activemq-core, activemq-pool, and activemq-pool-jms).
-</code>
-
-- [dawetmaster/CVE-2020-11111-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-11111-jackson-databind-vulnerable)
-
-### CVE-2020-11112 (2020-03-31)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.4 mishandles the interaction between serialization gadgets and typing, related to org.apache.commons.proxy.provider.remoting.RmiProvider (aka apache/commons-proxy).
-</code>
-
-- [dawetmaster/CVE-2020-11112-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-11112-jackson-databind-vulnerable)
-
 ### CVE-2020-11113 (2020-03-31)
 
 <code>FasterXML jackson-databind 2.x before 2.9.10.4 mishandles the interaction between serialization gadgets and typing, related to org.apache.openjpa.ee.WASRegistryManagedRuntime (aka openjpa).
 </code>
 
 - [Al1ex/CVE-2020-11113](https://github.com/Al1ex/CVE-2020-11113)
-- [dawetmaster/CVE-2020-11113-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-11113-jackson-databind-vulnerable)
 
 ### CVE-2020-11179 (2021-01-21)
 
@@ -50190,20 +50150,6 @@
 </code>
 
 - [ShielderSec/CVE-2020-11579](https://github.com/ShielderSec/CVE-2020-11579)
-
-### CVE-2020-11619 (2020-04-07)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.4 mishandles the interaction between serialization gadgets and typing, related to org.springframework.aop.config.MethodLocatingFactoryBean (aka spring-aop).
-</code>
-
-- [dawetmaster/CVE-2020-11619-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-11619-jackson-databind-vulnerable)
-
-### CVE-2020-11620 (2020-04-07)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.4 mishandles the interaction between serialization gadgets and typing, related to org.apache.commons.jelly.impl.Embedded (aka commons-jelly).
-</code>
-
-- [dawetmaster/CVE-2020-11620-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-11620-jackson-databind-vulnerable)
 
 ### CVE-2020-11650 (2020-04-08)
 
@@ -50638,6 +50584,13 @@
 
 - [asterite3/CVE-2020-13640](https://github.com/asterite3/CVE-2020-13640)
 
+### CVE-2020-13654 (2020-12-31)
+
+<code>XWiki Platform before 12.8 mishandles escaping in the property displayer.
+</code>
+
+- [Astaruf/CVE-2020-13654](https://github.com/Astaruf/CVE-2020-13654)
+
 ### CVE-2020-13699 (2020-07-29)
 
 <code>TeamViewer Desktop for Windows before 15.8.3 does not properly quote its custom URI handlers. A malicious website could launch TeamViewer with arbitrary parameters, as demonstrated by a teamviewer10: --play URL. An attacker could force a victim to send an NTLM authentication request and either relay the request or capture the hash for offline password cracking. This affects teamviewer10, teamviewer8, teamviewerapi, tvchat1, tvcontrol1, tvfiletransfer1, tvjoinv8, tvpresent1, tvsendfile1, tvsqcustomer1, tvsqsupport1, tvvideocall1, and tvvpn1. The issue is fixed in 8.0.258861, 9.0.258860, 10.0.258873, 11.0.258870, 12.0.258869, 13.2.36220, 14.2.56676, 14.7.48350, and 15.8.3.
@@ -50779,13 +50732,6 @@
 
 - [Grey-Junior/CVE-2020-13958](https://github.com/Grey-Junior/CVE-2020-13958)
 
-### CVE-2020-13959 (2021-03-10)
-
-<code>The default error page for VelocityView in Apache Velocity Tools prior to 3.1 reflects back the vm file that was entered as part of the URL. An attacker can set an XSS payload file as this vm file in the URL which results in this payload being executed. XSS vulnerabilities allow attackers to execute arbitrary JavaScript in the context of the attacked website and the attacked user. This can be abused to steal session cookies, perform requests in the name of the victim or for phishing attacks.
-</code>
-
-- [dawetmaster/CVE-2020-13959-velocity-tools-vulnerable](https://github.com/dawetmaster/CVE-2020-13959-velocity-tools-vulnerable)
-
 ### CVE-2020-13965 (2020-06-09)
 
 <code>An issue was discovered in Roundcube Webmail before 1.3.12 and 1.4.x before 1.4.5. There is XSS via a malicious XML attachment because text/xml is among the allowed types for a preview.
@@ -50821,27 +50767,6 @@
 </code>
 
 - [JackHars/cve-2020-14008](https://github.com/JackHars/cve-2020-14008)
-
-### CVE-2020-14060 (2020-06-14)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.5 mishandles the interaction between serialization gadgets and typing, related to oadd.org.apache.xalan.lib.sql.JNDIConnectionPool (aka apache/drill).
-</code>
-
-- [dawetmaster/CVE-2020-14060-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-14060-jackson-databind-vulnerable)
-
-### CVE-2020-14061 (2020-06-14)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.5 mishandles the interaction between serialization gadgets and typing, related to oracle.jms.AQjmsQueueConnectionFactory, oracle.jms.AQjmsXATopicConnectionFactory, oracle.jms.AQjmsTopicConnectionFactory, oracle.jms.AQjmsXAQueueConnectionFactory, and oracle.jms.AQjmsXAConnectionFactory (aka weblogic/oracle-aqjms).
-</code>
-
-- [dawetmaster/CVE-2020-14061-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-14061-jackson-databind-vulnerable)
-
-### CVE-2020-14062 (2020-06-14)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.5 mishandles the interaction between serialization gadgets and typing, related to com.sun.org.apache.xalan.internal.lib.sql.JNDIConnectionPool (aka xalan2).
-</code>
-
-- [dawetmaster/CVE-2020-14062-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-14062-jackson-databind-vulnerable)
 
 ### CVE-2020-14064 (2020-07-15)
 
@@ -50897,7 +50822,6 @@
 </code>
 
 - [Al1ex/CVE-2020-14195](https://github.com/Al1ex/CVE-2020-14195)
-- [dawetmaster/CVE-2020-14195-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-14195-jackson-databind-vulnerable)
 
 ### CVE-2020-14210 (2020-06-16)
 
@@ -51199,13 +51123,6 @@
 </code>
 
 - [guettli/fix-CVE-2020-15228](https://github.com/guettli/fix-CVE-2020-15228)
-
-### CVE-2020-15250 (2020-10-12)
-
-<code>In JUnit4 from version 4.7 and before 4.13.1, the test rule TemporaryFolder contains a local information disclosure vulnerability. On Unix like systems, the system's temporary directory is shared between all users on that system. Because of this, when files and directories are written into this directory they are, by default, readable by other users on that same system. This vulnerability does not allow other users to overwrite the contents of these directories or files. This is purely an information disclosure vulnerability. This vulnerability impacts you if the JUnit tests write sensitive information, like API keys or passwords, into the temporary folder, and the JUnit tests execute in an environment where the OS has other untrusted users. Because certain JDK file system APIs were only added in JDK 1.7, this this fix is dependent upon the version of the JDK you are using. For Java 1.7 and higher users: this vulnerability is fixed in 4.13.1. For Java 1.6 and lower users: no patch is available, you must use the workaround below. If you are unable to patch, or are stuck running on Java 1.6, specifying the `java.io.tmpdir` system environment variable to a directory that is exclusively owned by the executing user will fix this vulnerability. For more information, including an example of vulnerable code, see the referenced GitHub Security Advisory.
-</code>
-
-- [dawetmaster/CVE-2020-15250-junit4-vulnerable](https://github.com/dawetmaster/CVE-2020-15250-junit4-vulnerable)
 
 ### CVE-2020-15257 (2020-12-01)
 
@@ -51922,7 +51839,6 @@
 </code>
 
 - [0xkami/cve-2020-24616-poc](https://github.com/0xkami/cve-2020-24616-poc)
-- [dawetmaster/CVE-2020-24616-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-24616-jackson-databind-vulnerable)
 
 ### CVE-2020-24656 (2020-08-26)
 
@@ -51937,7 +51853,6 @@
 </code>
 
 - [Al1ex/CVE-2020-24750](https://github.com/Al1ex/CVE-2020-24750)
-- [dawetmaster/CVE-2020-24750-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-24750-jackson-databind-vulnerable)
 
 ### CVE-2020-24815 (2020-11-24)
 
@@ -52164,13 +52079,6 @@
 
 - [brahmiboudjema/CVE-2020-25637-libvirt-double-free](https://github.com/brahmiboudjema/CVE-2020-25637-libvirt-double-free)
 
-### CVE-2020-25649 (2020-12-03)
-
-<code>A flaw was found in FasterXML Jackson Databind, where it did not have entity expansion secured properly. This flaw allows vulnerability to XML external entity (XXE) attacks. The highest threat from this vulnerability is data integrity.
-</code>
-
-- [dawetmaster/CVE-2020-25649-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-25649-jackson-databind-vulnerable)
-
 ### CVE-2020-25681 (2021-01-20)
 
 <code>A flaw was found in dnsmasq before version 2.83. A heap-based buffer overflow was discovered in the way RRSets are sorted before validating with DNSSEC data. An attacker on the network, who can forge DNS replies such as that they are accepted as valid, could use this flaw to cause a buffer overflow with arbitrary data in a heap memory segment, possibly executing code on the machine. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.
@@ -52264,7 +52172,6 @@
 - [cuijiung/xstream-CVE-2020-26217](https://github.com/cuijiung/xstream-CVE-2020-26217)
 - [shoucheng3/x-stream__xstream_CVE-2020-26217_1-4-14-java77](https://github.com/shoucheng3/x-stream__xstream_CVE-2020-26217_1-4-14-java77)
 - [Kairo-one/CVE-2020-26217-XStream](https://github.com/Kairo-one/CVE-2020-26217-XStream)
-- [dawetmaster/CVE-2020-26217-xstream-vulnerable](https://github.com/dawetmaster/CVE-2020-26217-xstream-vulnerable)
 
 ### CVE-2020-26233 (2020-12-08)
 
@@ -52281,7 +52188,6 @@
 
 - [Al1ex/CVE-2020-26258](https://github.com/Al1ex/CVE-2020-26258)
 - [cuijiung/xstream-CVE-2020-26258](https://github.com/cuijiung/xstream-CVE-2020-26258)
-- [dawetmaster/CVE-2020-26258-xstream-vulnerable](https://github.com/dawetmaster/CVE-2020-26258-xstream-vulnerable)
 
 ### CVE-2020-26259 (2020-12-16)
 
@@ -52291,7 +52197,6 @@
 - [jas502n/CVE-2020-26259](https://github.com/jas502n/CVE-2020-26259)
 - [Al1ex/CVE-2020-26259](https://github.com/Al1ex/CVE-2020-26259)
 - [cuijiung/xstream-CVE-2020-26259](https://github.com/cuijiung/xstream-CVE-2020-26259)
-- [dawetmaster/CVE-2020-26259-xstream-vulnerable](https://github.com/dawetmaster/CVE-2020-26259-xstream-vulnerable)
 
 ### CVE-2020-26413 (2020-12-11)
 
@@ -52644,13 +52549,6 @@
 ### CVE-2020-28488
 - [rafaelcintralopes/CVE-2020-28488](https://github.com/rafaelcintralopes/CVE-2020-28488)
 
-### CVE-2020-28491 (2021-02-18)
-
-<code>This affects the package com.fasterxml.jackson.dataformat:jackson-dataformat-cbor from 0 and before 2.11.4, from 2.12.0-rc1 and before 2.12.1. Unchecked allocation of byte buffer can cause a java.lang.OutOfMemoryError exception.
-</code>
-
-- [dawetmaster/CVE-2020-28491-jackson-dataformats-binary-vulnerable](https://github.com/dawetmaster/CVE-2020-28491-jackson-dataformats-binary-vulnerable)
-
 ### CVE-2020-28502 (2021-03-05)
 
 <code>This affects the package xmlhttprequest before 1.7.0; all versions of package xmlhttprequest-ssl. Provided requests are sent synchronously (async=False on xhr.open), malicious user input flowing into xhr.send could result in arbitrary code being injected and run.
@@ -52807,13 +52705,6 @@
 
 - [megadimenex/MegaHiDocker](https://github.com/megadimenex/MegaHiDocker)
 
-### CVE-2020-35217 (2021-01-20)
-
-<code>Vert.x-Web framework v4.0 milestone 1-4 does not perform a correct CSRF verification. Instead of comparing the CSRF token in the request with the CSRF token in the cookie, it compares the CSRF token in the cookie against a CSRF token that is stored in the session. An attacker does not even need to provide a CSRF token in the request because the framework does not consider it. The cookies are automatically sent by the browser and the verification will always succeed, leading to a successful CSRF attack.
-</code>
-
-- [dawetmaster/CVE-2020-35217-vertx-web-vulnerable](https://github.com/dawetmaster/CVE-2020-35217-vertx-web-vulnerable)
-
 ### CVE-2020-35262 (2021-01-06)
 
 <code>Cross Site Scripting (XSS) vulnerability in Digisol DG-HR3400 can be exploited via the NTP server name in Time and date module and &quot;Keyword&quot; in URL Filter.
@@ -52869,20 +52760,6 @@
 - [X0UCYB3R/Check-WP-CVE-2020-35489](https://github.com/X0UCYB3R/Check-WP-CVE-2020-35489)
 - [reneoliveirajr/wp_CVE-2020-35489_checker](https://github.com/reneoliveirajr/wp_CVE-2020-35489_checker)
 - [Cappricio-Securities/CVE-2020-35489](https://github.com/Cappricio-Securities/CVE-2020-35489)
-
-### CVE-2020-35490 (2020-12-17)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.commons.dbcp2.datasources.PerUserPoolDataSource.
-</code>
-
-- [dawetmaster/CVE-2020-35490-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-35490-jackson-databind-vulnerable)
-
-### CVE-2020-35491 (2020-12-17)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.commons.dbcp2.datasources.SharedPoolDataSource.
-</code>
-
-- [dawetmaster/CVE-2020-35491-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-35491-jackson-databind-vulnerable)
 
 ### CVE-2020-35498 (2021-02-11)
 
@@ -52962,7 +52839,6 @@
 </code>
 
 - [Al1ex/CVE-2020-35728](https://github.com/Al1ex/CVE-2020-35728)
-- [dawetmaster/CVE-2020-35728-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-35728-jackson-databind-vulnerable)
 
 ### CVE-2020-35729 (2020-12-27)
 
@@ -53028,7 +52904,6 @@
 </code>
 
 - [Al1ex/CVE-2020-36179](https://github.com/Al1ex/CVE-2020-36179)
-- [dawetmaster/CVE-2020-36179-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-36179-jackson-databind-vulnerable)
 
 ### CVE-2020-36180 (2021-01-06)
 
@@ -53036,28 +52911,6 @@
 </code>
 
 - [cuijiung/jackson-CVE-2020-36180](https://github.com/cuijiung/jackson-CVE-2020-36180)
-- [dawetmaster/CVE-2020-36180-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-36180-jackson-databind-vulnerable)
-
-### CVE-2020-36181 (2021-01-06)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp.cpdsadapter.DriverAdapterCPDS.
-</code>
-
-- [dawetmaster/CVE-2020-36181-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-36181-jackson-databind-vulnerable)
-
-### CVE-2020-36182 (2021-01-06)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp2.cpdsadapter.DriverAdapterCPDS.
-</code>
-
-- [dawetmaster/CVE-2020-36182-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-36182-jackson-databind-vulnerable)
-
-### CVE-2020-36183 (2021-01-06)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.docx4j.org.apache.xalan.lib.sql.JNDIConnectionPool.
-</code>
-
-- [dawetmaster/CVE-2020-36183-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-36183-jackson-databind-vulnerable)
 
 ### CVE-2020-36184 (2021-01-06)
 
@@ -53065,28 +52918,6 @@
 </code>
 
 - [Al1ex/CVE-2020-36184](https://github.com/Al1ex/CVE-2020-36184)
-- [dawetmaster/CVE-2020-36184-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-36184-jackson-databind-vulnerable)
-
-### CVE-2020-36185 (2021-01-06)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp2.datasources.SharedPoolDataSource.
-</code>
-
-- [dawetmaster/CVE-2020-36185-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-36185-jackson-databind-vulnerable)
-
-### CVE-2020-36186 (2021-01-06)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp.datasources.PerUserPoolDataSource.
-</code>
-
-- [dawetmaster/CVE-2020-36186-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-36186-jackson-databind-vulnerable)
-
-### CVE-2020-36187 (2021-01-06)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp.datasources.SharedPoolDataSource.
-</code>
-
-- [dawetmaster/CVE-2020-36187-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-36187-jackson-databind-vulnerable)
 
 ### CVE-2020-36188 (2021-01-06)
 
@@ -53094,14 +52925,6 @@
 </code>
 
 - [Al1ex/CVE-2020-36188](https://github.com/Al1ex/CVE-2020-36188)
-- [dawetmaster/CVE-2020-36188-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-36188-jackson-databind-vulnerable)
-
-### CVE-2020-36189 (2021-01-06)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to com.newrelic.agent.deps.ch.qos.logback.core.db.DriverManagerConnectionSource.
-</code>
-
-- [dawetmaster/CVE-2020-36189-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-36189-jackson-databind-vulnerable)
 
 ### CVE-2020-36287 (2021-04-09)
 
@@ -53116,7 +52939,6 @@
 </code>
 
 - [ghillert/boot-jackson-cve](https://github.com/ghillert/boot-jackson-cve)
-- [dawetmaster/CVE-2020-36518-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2020-36518-jackson-databind-vulnerable)
 
 ### CVE-2020-36603 (2022-09-14)
 
@@ -53200,13 +53022,6 @@
 </code>
 
 - [shoucheng3/apache__camel_CVE-2019-0194_2-21-44](https://github.com/shoucheng3/apache__camel_CVE-2019-0194_2-21-44)
-
-### CVE-2019-0201 (2019-05-23)
-
-<code>An issue is present in Apache ZooKeeper 1.0.0 to 3.4.13 and 3.5.0-alpha to 3.5.4-beta. ZooKeeper’s getACL() command doesn’t check any permission when retrieves the ACLs of the requested node and returns all information contained in the ACL Id field as plaintext string. DigestAuthenticationProvider overloads the Id field with the hash value that is used for user authentication. As a consequence, if Digest Authentication is in use, the unsalted hash value will be disclosed by getACL() request for unauthenticated or unprivileged users.
-</code>
-
-- [dawetmaster/CVE-2019-0201-zookeeper-vulnerable](https://github.com/dawetmaster/CVE-2019-0201-zookeeper-vulnerable)
 
 ### CVE-2019-0207 (2019-09-16)
 
@@ -55223,7 +55038,6 @@
 
 - [shoucheng3/hibernate__hibernate-validator_CVE-2019-10219_6-0-17-Final](https://github.com/shoucheng3/hibernate__hibernate-validator_CVE-2019-10219_6-0-17-Final)
 - [shoucheng3/hibernate__hibernate-validator_CVE-2019-10219_6_0_18_Final_fixed](https://github.com/shoucheng3/hibernate__hibernate-validator_CVE-2019-10219_6_0_18_Final_fixed)
-- [dawetmaster/CVE-2019-10219-hibernate-validator-vulnerable](https://github.com/dawetmaster/CVE-2019-10219-hibernate-validator-vulnerable)
 
 ### CVE-2019-10220 (2019-11-27)
 
@@ -55614,7 +55428,6 @@
 
 - [motoyasu-saburi/CVE-2019-12086-jackson-databind-file-read](https://github.com/motoyasu-saburi/CVE-2019-12086-jackson-databind-file-read)
 - [Al1ex/CVE-2019-12086](https://github.com/Al1ex/CVE-2019-12086)
-- [dawetmaster/CVE-2019-12086-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2019-12086-jackson-databind-vulnerable)
 
 ### CVE-2019-12102 (2019-05-22)
 
@@ -55695,14 +55508,6 @@
 
 - [jas502n/CVE-2019-12384](https://github.com/jas502n/CVE-2019-12384)
 - [MagicZer0/Jackson_RCE-CVE-2019-12384](https://github.com/MagicZer0/Jackson_RCE-CVE-2019-12384)
-- [dawetmaster/CVE-2019-12384-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2019-12384-jackson-databind-vulnerable)
-
-### CVE-2019-12400 (2019-08-23)
-
-<code>In version 2.0.3 Apache Santuario XML Security for Java, a caching mechanism was introduced to speed up creating new XML documents using a static pool of DocumentBuilders. However, if some untrusted code can register a malicious implementation with the thread context class loader first, then this implementation might be cached and re-used by Apache Santuario - XML Security for Java, leading to potential security flaws when validating signed documents, etc. The vulnerability affects Apache Santuario - XML Security for Java 2.0.x releases from 2.0.3 and all 2.1.x releases before 2.1.4.
-</code>
-
-- [dawetmaster/CVE-2019-12400-santuario-java-vulnerable](https://github.com/dawetmaster/CVE-2019-12400-santuario-java-vulnerable)
 
 ### CVE-2019-12401 (2019-09-10)
 
@@ -55710,13 +55515,6 @@
 </code>
 
 - [mbadanoiu/CVE-2019-12401](https://github.com/mbadanoiu/CVE-2019-12401)
-
-### CVE-2019-12402 (2019-08-29)
-
-<code>The file name encoding algorithm used internally in Apache Commons Compress 1.15 to 1.18 can get into an infinite loop when faced with specially crafted inputs. This can lead to a denial of service attack if an attacker can choose the file names inside of an archive created by Compress.
-</code>
-
-- [dawetmaster/CVE-2019-12402-commons-compress-vulnerable](https://github.com/dawetmaster/CVE-2019-12402-commons-compress-vulnerable)
 
 ### CVE-2019-12409 (2019-11-18)
 
@@ -55870,7 +55668,6 @@
 </code>
 
 - [Al1ex/CVE-2019-12814](https://github.com/Al1ex/CVE-2019-12814)
-- [dawetmaster/CVE-2019-12814-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2019-12814-jackson-databind-vulnerable)
 
 ### CVE-2019-12815 (2019-07-19)
 
@@ -56280,20 +56077,12 @@
 
 - [0x48piraj/CVE-2019-14339](https://github.com/0x48piraj/CVE-2019-14339)
 
-### CVE-2019-14379 (2019-07-29)
-
-<code>SubTypeValidator.java in FasterXML jackson-databind before 2.9.9.2 mishandles default typing when ehcache is used (because of net.sf.ehcache.transaction.manager.DefaultTransactionManagerLookup), leading to remote code execution.
-</code>
-
-- [dawetmaster/CVE-2019-14379-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2019-14379-jackson-databind-vulnerable)
-
 ### CVE-2019-14439 (2019-07-30)
 
 <code>A Polymorphic Typing issue was discovered in FasterXML jackson-databind 2.x before 2.9.9.2. This occurs when Default Typing is enabled (either globally or for a specific property) for an externally exposed JSON endpoint and the service has the logback jar in the classpath.
 </code>
 
 - [jas502n/CVE-2019-14439](https://github.com/jas502n/CVE-2019-14439)
-- [dawetmaster/CVE-2019-14439-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2019-14439-jackson-databind-vulnerable)
 
 ### CVE-2019-14450 (2019-10-28)
 
@@ -56344,7 +56133,6 @@
 </code>
 
 - [LeadroyaL/cve-2019-14540-exploit](https://github.com/LeadroyaL/cve-2019-14540-exploit)
-- [dawetmaster/CVE-2019-14540-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2019-14540-jackson-databind-vulnerable)
 
 ### CVE-2019-14615 (2020-01-17)
 
@@ -56387,20 +56175,6 @@
 </code>
 
 - [Fr3d-/moodle-token-stealer](https://github.com/Fr3d-/moodle-token-stealer)
-
-### CVE-2019-14892 (2020-03-02)
-
-<code>A flaw was discovered in jackson-databind in versions before 2.9.10, 2.8.11.5 and 2.6.7.3, where it would permit polymorphic deserialization of a malicious object using commons-configuration 1 and 2 JNDI classes. An attacker could use this flaw to execute arbitrary code.
-</code>
-
-- [dawetmaster/CVE-2019-14892-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2019-14892-jackson-databind-vulnerable)
-
-### CVE-2019-14893 (2020-03-02)
-
-<code>A flaw was discovered in FasterXML jackson-databind in all versions before 2.9.10 and 2.10.0, where it would permit polymorphic deserialization of malicious objects using the xalan JNDI gadget when used in conjunction with polymorphic type handling methods such as `enableDefaultTyping()` or when @JsonTypeInfo is using `Id.CLASS` or `Id.MINIMAL_CLASS` or in any other way which ObjectMapper.readValue might instantiate objects from unsafe sources. An attacker could use this flaw to execute arbitrary code.
-</code>
-
-- [dawetmaster/CVE-2019-14893-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2019-14893-jackson-databind-vulnerable)
 
 ### CVE-2019-14900 (2020-07-06)
 
@@ -56709,13 +56483,6 @@
 
 - [ianxtianxt/CVE-2019-16279](https://github.com/ianxtianxt/CVE-2019-16279)
 
-### CVE-2019-16335 (2019-09-15)
-
-<code>A Polymorphic Typing issue was discovered in FasterXML jackson-databind before 2.9.10. It is related to com.zaxxer.hikari.HikariDataSource. This is a different vulnerability than CVE-2019-14540.
-</code>
-
-- [dawetmaster/CVE-2019-16335-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2019-16335-jackson-databind-vulnerable)
-
 ### CVE-2019-16374 (2020-08-13)
 
 <code>Pega Platform 8.2.1 allows LDAP injection because a username can contain a * character and can be of unlimited length. An attacker can specify four characters of a username, followed by the * character, to bypass access control.
@@ -56834,20 +56601,6 @@
 
 - [purpleracc00n/CVE-2019-16941](https://github.com/purpleracc00n/CVE-2019-16941)
 
-### CVE-2019-16942 (2019-10-01)
-
-<code>A Polymorphic Typing issue was discovered in FasterXML jackson-databind 2.0.0 through 2.9.10. When Default Typing is enabled (either globally or for a specific property) for an externally exposed JSON endpoint and the service has the commons-dbcp (1.4) jar in the classpath, and an attacker can find an RMI service endpoint to access, it is possible to make the service execute a malicious payload. This issue exists because of org.apache.commons.dbcp.datasources.SharedPoolDataSource and org.apache.commons.dbcp.datasources.PerUserPoolDataSource mishandling.
-</code>
-
-- [dawetmaster/CVE-2019-16942-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2019-16942-jackson-databind-vulnerable)
-
-### CVE-2019-16943 (2019-10-01)
-
-<code>A Polymorphic Typing issue was discovered in FasterXML jackson-databind 2.0.0 through 2.9.10. When Default Typing is enabled (either globally or for a specific property) for an externally exposed JSON endpoint and the service has the p6spy (3.8.6) jar in the classpath, and an attacker can find an RMI service endpoint to access, it is possible to make the service execute a malicious payload. This issue exists because of com.p6spy.engine.spy.P6DataSource mishandling.
-</code>
-
-- [dawetmaster/CVE-2019-16943-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2019-16943-jackson-databind-vulnerable)
-
 ### CVE-2019-17026 (2020-03-02)
 
 <code>Incorrect alias information in IonMonkey JIT compiler for setting array elements could lead to a type confusion. We are aware of targeted attacks in the wild abusing this flaw. This vulnerability affects Firefox ESR &lt; 68.4.1, Thunderbird &lt; 68.4.1, and Firefox &lt; 72.0.1.
@@ -56936,13 +56689,6 @@
 - [mind2hex/CVE-2019-17240-Bludit-3.9.2-Auth-Bruteforce-Bypass](https://github.com/mind2hex/CVE-2019-17240-Bludit-3.9.2-Auth-Bruteforce-Bypass)
 - [0xDTC/Bludit-3.9.2-Auth-Bruteforce-Bypass-CVE-2019-17240](https://github.com/0xDTC/Bludit-3.9.2-Auth-Bruteforce-Bypass-CVE-2019-17240)
 
-### CVE-2019-17267 (2019-10-06)
-
-<code>A Polymorphic Typing issue was discovered in FasterXML jackson-databind before 2.9.10. It is related to net.sf.ehcache.hibernate.EhcacheJtaTransactionManagerLookup.
-</code>
-
-- [dawetmaster/CVE-2019-17267-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2019-17267-jackson-databind-vulnerable)
-
 ### CVE-2019-17382 (2019-10-09)
 
 <code>An issue was discovered in zabbix.php?action=dashboard.view&amp;dashboardid=1 in Zabbix through 4.4. An attacker can bypass the login page and access the dashboard page, and then create a Dashboard, Report, Screen, or Map without any Username/Password (i.e., anonymously). All created elements (Dashboard/Report/Screen/Map) are accessible by other users and by an admin.
@@ -56998,13 +56744,6 @@
 </code>
 
 - [huzaifahussain98/CVE-2019-17525](https://github.com/huzaifahussain98/CVE-2019-17525)
-
-### CVE-2019-17531 (2019-10-12)
-
-<code>A Polymorphic Typing issue was discovered in FasterXML jackson-databind 2.0.0 through 2.9.10. When Default Typing is enabled (either globally or for a specific property) for an externally exposed JSON endpoint and the service has the apache-log4j-extra (version 1.2.x) jar in the classpath, and an attacker can provide a JNDI service to access, it is possible to make the service execute a malicious payload.
-</code>
-
-- [dawetmaster/CVE-2019-17531-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2019-17531-jackson-databind-vulnerable)
 
 ### CVE-2019-17558 (2019-12-30)
 
@@ -57160,20 +56899,6 @@
 - [UltramanGaia/Xiaomi_Mi_WiFi_R3G_Vulnerability_POC](https://github.com/UltramanGaia/Xiaomi_Mi_WiFi_R3G_Vulnerability_POC)
 - [AjayMT6/UltramanGaia](https://github.com/AjayMT6/UltramanGaia)
 - [jsnhcuan1997/UltramanGaia](https://github.com/jsnhcuan1997/UltramanGaia)
-
-### CVE-2019-18393 (2019-10-24)
-
-<code>PluginServlet.java in Ignite Realtime Openfire through 4.4.2 does not ensure that retrieved files are located under the Openfire home directory, aka a directory traversal vulnerability.
-</code>
-
-- [dawetmaster/CVE-2019-18393-Openfire-vulnerable](https://github.com/dawetmaster/CVE-2019-18393-Openfire-vulnerable)
-
-### CVE-2019-18394 (2019-10-24)
-
-<code>A Server Side Request Forgery (SSRF) vulnerability in FaviconServlet.java in Ignite Realtime Openfire through 4.4.2 allows attackers to send arbitrary HTTP GET requests.
-</code>
-
-- [dawetmaster/CVE-2019-18394-Openfire-vulnerable](https://github.com/dawetmaster/CVE-2019-18394-Openfire-vulnerable)
 
 ### CVE-2019-18426 (2020-01-21)
 
@@ -57615,13 +57340,6 @@
 
 - [Fysac/CVE-2019-20326](https://github.com/Fysac/CVE-2019-20326)
 
-### CVE-2019-20330 (2020-01-03)
-
-<code>FasterXML jackson-databind 2.x before 2.9.10.2 lacks certain net.sf.ehcache blocking.
-</code>
-
-- [dawetmaster/CVE-2019-20330-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2019-20330-jackson-databind-vulnerable)
-
 ### CVE-2019-20361 (2020-01-08)
 
 <code>There was a flaw in the WordPress plugin, Email Subscribers &amp; Newsletters before 4.3.1, that allowed SQL statements to be passed to the database in the hash parameter (a blind SQL injection vulnerability).
@@ -57703,14 +57421,6 @@
 - [im23pds/CVE-2019-1003000-and-CVE-2018-1999002-Pre-Auth-RCE-Jenkins](https://github.com/im23pds/CVE-2019-1003000-and-CVE-2018-1999002-Pre-Auth-RCE-Jenkins)
 - [1NTheKut/CVE-2019-1003000_RCE-DETECTION](https://github.com/1NTheKut/CVE-2019-1003000_RCE-DETECTION)
 - [purple-WL/Jenkins_CVE-2019-1003000](https://github.com/purple-WL/Jenkins_CVE-2019-1003000)
-- [dawetmaster/CVE-2019-1003000-script-security-plugin-vulnerable](https://github.com/dawetmaster/CVE-2019-1003000-script-security-plugin-vulnerable)
-
-### CVE-2019-1003010 (2019-02-06)
-
-<code>A cross-site request forgery vulnerability exists in Jenkins Git Plugin 3.9.1 and earlier in src/main/java/hudson/plugins/git/GitTagAction.java that allows attackers to create a Git tag in a workspace and attach corresponding metadata to a build record.
-</code>
-
-- [dawetmaster/CVE-2019-1003010-Prasanna-vulnerable](https://github.com/dawetmaster/CVE-2019-1003010-Prasanna-vulnerable)
 
 ### CVE-2019-1003030 (2019-03-08)
 
@@ -57937,13 +57647,6 @@
 - [kkirsche/CVE-2018-1111](https://github.com/kkirsche/CVE-2018-1111)
 - [baldassarreFe/FEP3370-advanced-ethical-hacking](https://github.com/baldassarreFe/FEP3370-advanced-ethical-hacking)
 
-### CVE-2018-1114 (2018-09-11)
-
-<code>It was found that URLResource.getLastModified() in Undertow closes the file descriptors only when they are finalized which can cause file descriptors to exhaust. This leads to a file handler leak.
-</code>
-
-- [dawetmaster/CVE-2018-1114-undertow-vulnerable](https://github.com/dawetmaster/CVE-2018-1114-undertow-vulnerable)
-
 ### CVE-2018-1133 (2018-05-25)
 
 <code>An issue was discovered in Moodle 3.x. A Teacher creating a Calculated question can intentionally cause remote code execution on the server, aka eval injection.
@@ -58019,14 +57722,6 @@
 - [cved-sources/cve-2018-1273](https://github.com/cved-sources/cve-2018-1273)
 - [jas502n/cve-2018-1273](https://github.com/jas502n/cve-2018-1273)
 - [hdgokani/CVE-2018-1273](https://github.com/hdgokani/CVE-2018-1273)
-- [dawetmaster/CVE-2018-1273-spring-data-commons-vulnerable](https://github.com/dawetmaster/CVE-2018-1273-spring-data-commons-vulnerable)
-
-### CVE-2018-1274 (2018-04-18)
-
-<code>Spring Data Commons, versions 1.13 to 1.13.10, 2.0 to 2.0.5, and older unsupported versions, contain a property path parser vulnerability caused by unlimited resource allocation. An unauthenticated remote malicious user (or attacker) can issue requests against Spring Data REST endpoints or endpoints using property path parsing which can cause a denial of service (CPU and memory consumption).
-</code>
-
-- [dawetmaster/CVE-2018-1274-spring-data-commons-vulnerable](https://github.com/dawetmaster/CVE-2018-1274-spring-data-commons-vulnerable)
 
 ### CVE-2018-1285 (2020-05-11)
 
@@ -58072,7 +57767,6 @@
 
 - [JJSO12/Apache-Pluto-3.0.0--CVE-2018-1306](https://github.com/JJSO12/Apache-Pluto-3.0.0--CVE-2018-1306)
 - [Imsol0/APACHE-CVE-2018-1306-Lab-project](https://github.com/Imsol0/APACHE-CVE-2018-1306-Lab-project)
-- [dawetmaster/CVE-2018-1306-portals-pluto-vulnerable](https://github.com/dawetmaster/CVE-2018-1306-portals-pluto-vulnerable)
 
 ### CVE-2018-1311 (2019-12-18)
 
@@ -58094,7 +57788,6 @@
 </code>
 
 - [tafamace/CVE-2018-1324](https://github.com/tafamace/CVE-2018-1324)
-- [dawetmaster/CVE-2018-1324-commons-compress-vulnerable](https://github.com/dawetmaster/CVE-2018-1324-commons-compress-vulnerable)
 
 ### CVE-2018-1335 (2018-04-25)
 
@@ -58106,13 +57799,6 @@
 - [canumay/cve-2018-1335](https://github.com/canumay/cve-2018-1335)
 - [siramk/CVE-2018-1335](https://github.com/siramk/CVE-2018-1335)
 - [DigitalNinja00/CVE-2018-1335](https://github.com/DigitalNinja00/CVE-2018-1335)
-
-### CVE-2018-1337 (2018-07-10)
-
-<code>In Apache Directory LDAP API before 1.0.2, a bug in the way the SSL Filter was setup made it possible for another thread to use the connection before the TLS layer has been established, if the connection has already been used and put back in a pool of connections, leading to leaking any information contained in this request (including the credentials when sending a BIND request).
-</code>
-
-- [dawetmaster/CVE-2018-1337-directory-ldap-api-vulnerable](https://github.com/dawetmaster/CVE-2018-1337-directory-ldap-api-vulnerable)
 
 ### CVE-2018-1932 (2019-01-08)
 
@@ -58641,13 +58327,6 @@
 - [QianliZLP/GitStackRCE](https://github.com/QianliZLP/GitStackRCE)
 - [MikeTheHash/CVE-2018-5955](https://github.com/MikeTheHash/CVE-2018-5955)
 
-### CVE-2018-5968 (2018-01-22)
-
-<code>FasterXML jackson-databind through 2.8.11 and 2.9.x through 2.9.3 allows unauthenticated remote code execution because of an incomplete fix for the CVE-2017-7525 and CVE-2017-17485 deserialization flaws. This is exploitable via two different gadgets that bypass a blacklist.
-</code>
-
-- [dawetmaster/CVE-2018-5968-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2018-5968-jackson-databind-vulnerable)
-
 ### CVE-2018-6065 (2018-11-14)
 
 <code>Integer overflow in computing the required allocation size when instantiating a new javascript object in V8 in Google Chrome prior to 65.0.3325.146 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
@@ -59014,7 +58693,6 @@
 </code>
 
 - [tafamace/CVE-2018-7489](https://github.com/tafamace/CVE-2018-7489)
-- [dawetmaster/CVE-2018-7489-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2018-7489-jackson-databind-vulnerable)
 
 ### CVE-2018-7490 (2018-02-26)
 
@@ -59206,13 +58884,6 @@
 </code>
 
 - [r3dxpl0it/Apache-Superset-Remote-Code-Execution-PoC-CVE-2018-8021](https://github.com/r3dxpl0it/Apache-Superset-Remote-Code-Execution-PoC-CVE-2018-8021)
-
-### CVE-2018-8030 (2018-06-19)
-
-<code>A Denial of Service vulnerability was found in Apache Qpid Broker-J versions 7.0.0-7.0.4 when AMQP protocols 0-8, 0-9 or 0-91 are used to publish messages with size greater than allowed maximum message size limit (100MB by default). The broker crashes due to the defect. AMQP protocols 0-10 and 1.0 are not affected.
-</code>
-
-- [dawetmaster/CVE-2018-8030-qpid-broker-j-vulnerable](https://github.com/dawetmaster/CVE-2018-8030-qpid-broker-j-vulnerable)
 
 ### CVE-2018-8032 (2018-08-02)
 
@@ -59547,7 +59218,6 @@
 
 - [shoucheng3/perwendel__spark_CVE-2018-9159_2-7-1](https://github.com/shoucheng3/perwendel__spark_CVE-2018-9159_2-7-1)
 - [shoucheng3/perwendel__spark_CVE-2018-9159_2_7_2_fixed](https://github.com/shoucheng3/perwendel__spark_CVE-2018-9159_2_7_2_fixed)
-- [dawetmaster/CVE-2018-9159-perwendel-spark-vulnerable](https://github.com/dawetmaster/CVE-2018-9159-perwendel-spark-vulnerable)
 
 ### CVE-2018-9160 (2018-03-31)
 
@@ -59838,7 +59508,6 @@
 </code>
 
 - [tafamace/CVE-2018-10936](https://github.com/tafamace/CVE-2018-10936)
-- [dawetmaster/CVE-2018-10936-pgjdbc-vulnerable](https://github.com/dawetmaster/CVE-2018-10936-pgjdbc-vulnerable)
 
 ### CVE-2018-10949 (2018-05-10)
 
@@ -59876,13 +59545,6 @@
 - [EmaVirgRep/CVE-2018-11235](https://github.com/EmaVirgRep/CVE-2018-11235)
 - [theerachaich/lab](https://github.com/theerachaich/lab)
 - [Rezy-Dev/CVE-2018-11235](https://github.com/Rezy-Dev/CVE-2018-11235)
-
-### CVE-2018-11307 (2019-07-09)
-
-<code>An issue was discovered in FasterXML jackson-databind 2.0.0 through 2.9.5. Use of Jackson default typing along with a gadget class from iBatis allows exfiltration of content. Fixed in 2.7.9.4, 2.8.11.2, and 2.9.6.
-</code>
-
-- [dawetmaster/CVE-2018-11307-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2018-11307-jackson-databind-vulnerable)
 
 ### CVE-2018-11311 (2018-05-20)
 
@@ -59985,13 +59647,6 @@
 
 - [ivanitlearning/CVE-2018-11770](https://github.com/ivanitlearning/CVE-2018-11770)
 
-### CVE-2018-11771 (2018-08-16)
-
-<code>When reading a specially crafted ZIP archive, the read method of Apache Commons Compress 1.7 to 1.17's ZipArchiveInputStream can fail to return the correct EOF indication after the end of the stream has been reached. When combined with a java.io.InputStreamReader this can lead to an infinite stream, which can be used to mount a denial of service attack against services that use Compress' zip package.
-</code>
-
-- [dawetmaster/CVE-2018-11771-commons-compress-vulnerable](https://github.com/dawetmaster/CVE-2018-11771-commons-compress-vulnerable)
-
 ### CVE-2018-11776 (2018-08-22)
 
 <code>Apache Struts versions 2.3 to 2.3.34 and 2.5 to 2.5.16 suffer from possible Remote Code Execution when alwaysSelectFullNamespace is true (either by user or a plugin like Convention Plugin) and then: results are used with no namespace and in same time, its upper package have no or wildcard namespace and similar to results, same possibility when using url tag which doesn't have value and action set and in same time, its upper package have no or wildcard namespace.
@@ -60043,20 +59698,6 @@
 </code>
 
 - [k3v142/CVE-2018-12018](https://github.com/k3v142/CVE-2018-12018)
-
-### CVE-2018-12022 (2019-03-17)
-
-<code>An issue was discovered in FasterXML jackson-databind prior to 2.7.9.4, 2.8.11.2, and 2.9.6. When Default Typing is enabled (either globally or for a specific property), the service has the Jodd-db jar (for database access for the Jodd framework) in the classpath, and an attacker can provide an LDAP service to access, it is possible to make the service execute a malicious payload.
-</code>
-
-- [dawetmaster/CVE-2018-12022-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2018-12022-jackson-databind-vulnerable)
-
-### CVE-2018-12023 (2019-03-17)
-
-<code>An issue was discovered in FasterXML jackson-databind prior to 2.7.9.4, 2.8.11.2, and 2.9.6. When Default Typing is enabled (either globally or for a specific property), the service has the Oracle JDBC jar in the classpath, and an attacker can provide an LDAP service to access, it is possible to make the service execute a malicious payload.
-</code>
-
-- [dawetmaster/CVE-2018-12023-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2018-12023-jackson-databind-vulnerable)
 
 ### CVE-2018-12031 (2018-06-07)
 
@@ -60138,7 +59779,6 @@
 </code>
 
 - [tafamace/CVE-2018-12537](https://github.com/tafamace/CVE-2018-12537)
-- [dawetmaster/CVE-2018-12537-vert.x-vulnerable](https://github.com/dawetmaster/CVE-2018-12537-vert.x-vulnerable)
 
 ### CVE-2018-12540 (2018-07-12)
 
@@ -60147,14 +59787,6 @@
 
 - [bernard-wagner/vertx-web-xsrf](https://github.com/bernard-wagner/vertx-web-xsrf)
 - [tafamace/CVE-2018-12540](https://github.com/tafamace/CVE-2018-12540)
-- [dawetmaster/CVE-2018-12540-vertx-web-vulnerable](https://github.com/dawetmaster/CVE-2018-12540-vertx-web-vulnerable)
-
-### CVE-2018-12541 (2018-10-10)
-
-<code>In version from 3.0.0 to 3.5.3 of Eclipse Vert.x, the WebSocket HTTP upgrade implementation buffers the full http request before doing the handshake, holding the entire request body in memory. There should be a reasonnable limit (8192 bytes) above which the WebSocket gets an HTTP response with the 413 status code and the connection gets closed.
-</code>
-
-- [dawetmaster/CVE-2018-12541-vert.x-vulnerable](https://github.com/dawetmaster/CVE-2018-12541-vert.x-vulnerable)
 
 ### CVE-2018-12542 (2018-10-10)
 
@@ -60163,14 +59795,6 @@
 
 - [shoucheng3/vert-x3__vertx-web_CVE-2018-12542_3-5-3-CR1](https://github.com/shoucheng3/vert-x3__vertx-web_CVE-2018-12542_3-5-3-CR1)
 - [shoucheng3/vert-x3__vertx-web_CVE-2018-12542_3_5_4_fixed](https://github.com/shoucheng3/vert-x3__vertx-web_CVE-2018-12542_3_5_4_fixed)
-- [dawetmaster/CVE-2018-12542-vertx-web-vulnerable](https://github.com/dawetmaster/CVE-2018-12542-vertx-web-vulnerable)
-
-### CVE-2018-12544 (2018-10-10)
-
-<code>In version from 3.5.Beta1 to 3.5.3 of Eclipse Vert.x, the OpenAPI XML type validator creates XML parsers without taking appropriate defense against XML attacks. This mechanism is exclusively when the developer uses the Eclipse Vert.x OpenAPI XML type validator to validate a provided schema.
-</code>
-
-- [dawetmaster/CVE-2018-12544-vertx-web-vulnerable](https://github.com/dawetmaster/CVE-2018-12544-vertx-web-vulnerable)
 
 ### CVE-2018-12596 (2018-10-10)
 
@@ -60260,7 +59884,6 @@
 - [B1anda0/CVE-2018-13379](https://github.com/B1anda0/CVE-2018-13379)
 - [nivdolgin/CVE-2018-13379](https://github.com/nivdolgin/CVE-2018-13379)
 - [kh4sh3i/CVE-2018-13379](https://github.com/kh4sh3i/CVE-2018-13379)
-- [Zierax/CVE-2018-13379](https://github.com/Zierax/CVE-2018-13379)
 
 ### CVE-2018-13382 (2019-06-04)
 
@@ -60407,34 +60030,6 @@
 </code>
 
 - [0xB455/CVE-2018-14716](https://github.com/0xB455/CVE-2018-14716)
-
-### CVE-2018-14718 (2019-01-02)
-
-<code>FasterXML jackson-databind 2.x before 2.9.7 might allow remote attackers to execute arbitrary code by leveraging failure to block the slf4j-ext class from polymorphic deserialization.
-</code>
-
-- [dawetmaster/CVE-2018-14718-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2018-14718-jackson-databind-vulnerable)
-
-### CVE-2018-14719 (2019-01-02)
-
-<code>FasterXML jackson-databind 2.x before 2.9.7 might allow remote attackers to execute arbitrary code by leveraging failure to block the blaze-ds-opt and blaze-ds-core classes from polymorphic deserialization.
-</code>
-
-- [dawetmaster/CVE-2018-14719-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2018-14719-jackson-databind-vulnerable)
-
-### CVE-2018-14720 (2019-01-02)
-
-<code>FasterXML jackson-databind 2.x before 2.9.7 might allow attackers to conduct external XML entity (XXE) attacks by leveraging failure to block unspecified JDK classes from polymorphic deserialization.
-</code>
-
-- [dawetmaster/CVE-2018-14720-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2018-14720-jackson-databind-vulnerable)
-
-### CVE-2018-14721 (2019-01-02)
-
-<code>FasterXML jackson-databind 2.x before 2.9.7 might allow remote attackers to conduct server-side request forgery (SSRF) attacks by leveraging failure to block the axis2-jaxws class from polymorphic deserialization.
-</code>
-
-- [dawetmaster/CVE-2018-14721-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2018-14721-jackson-databind-vulnerable)
 
 ### CVE-2018-14729 (2019-05-22)
 
@@ -60903,13 +60498,6 @@
 - [likekabin/vmacache_CVE-2018-17182](https://github.com/likekabin/vmacache_CVE-2018-17182)
 - [jedai47/cve-2018-17182](https://github.com/jedai47/cve-2018-17182)
 
-### CVE-2018-17187 (2018-11-13)
-
-<code>The Apache Qpid Proton-J transport includes an optional wrapper layer to perform TLS, enabled by use of the 'transport.ssl(...)' methods. Unless a verification mode was explicitly configured, client and server modes previously defaulted as documented to not verifying a peer certificate, with options to configure this explicitly or select a certificate verification mode with or without hostname verification being performed. The latter hostname verifying mode was not implemented in Apache Qpid Proton-J versions 0.3 to 0.29.0, with attempts to use it resulting in an exception. This left only the option to verify the certificate is trusted, leaving such a client vulnerable to Man In The Middle (MITM) attack. Uses of the Proton-J protocol engine which do not utilise the optional transport TLS wrapper are not impacted, e.g. usage within Qpid JMS. Uses of Proton-J utilising the optional transport TLS wrapper layer that wish to enable hostname verification must be upgraded to version 0.30.0 or later and utilise the VerifyMode#VERIFY_PEER_NAME configuration, which is now the default for client mode usage unless configured otherwise.
-</code>
-
-- [dawetmaster/CVE-2018-17187-qpid-proton-j-vulnerable](https://github.com/dawetmaster/CVE-2018-17187-qpid-proton-j-vulnerable)
-
 ### CVE-2018-17207 (2018-09-19)
 
 <code>An issue was discovered in Snap Creek Duplicator before 1.2.42. By accessing leftover installer files (installer.php and installer-backup.php), an attacker can inject PHP code into wp-config.php during the database setup step, achieving arbitrary code execution.
@@ -61202,27 +60790,6 @@
 
 - [brokendreamsclub/CVE-2018-19323](https://github.com/brokendreamsclub/CVE-2018-19323)
 
-### CVE-2018-19360 (2019-01-02)
-
-<code>FasterXML jackson-databind 2.x before 2.9.8 might allow attackers to have unspecified impact by leveraging failure to block the axis2-transport-jms class from polymorphic deserialization.
-</code>
-
-- [dawetmaster/CVE-2018-19360-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2018-19360-jackson-databind-vulnerable)
-
-### CVE-2018-19361 (2019-01-02)
-
-<code>FasterXML jackson-databind 2.x before 2.9.8 might allow attackers to have unspecified impact by leveraging failure to block the openjpa class from polymorphic deserialization.
-</code>
-
-- [dawetmaster/CVE-2018-19361-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2018-19361-jackson-databind-vulnerable)
-
-### CVE-2018-19362 (2019-01-02)
-
-<code>FasterXML jackson-databind 2.x before 2.9.8 might allow attackers to have unspecified impact by leveraging failure to block the jboss-common-core class from polymorphic deserialization.
-</code>
-
-- [dawetmaster/CVE-2018-19362-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2018-19362-jackson-databind-vulnerable)
-
 ### CVE-2018-19410 (2018-11-21)
 
 <code>PRTG Network Monitor before 18.2.40.1683 allows remote unauthenticated attackers to create users with read-write privileges (including administrator). A remote unauthenticated user can craft an HTTP request and override attributes of the 'include' directive in /public/login.htm and perform a Local File Inclusion attack, by including /api/addusers and executing it. By providing the 'id' and 'users' parameters, an unauthenticated attacker can create a user with read-write privileges (including administrator).
@@ -61359,13 +60926,6 @@
 
 - [brabster/cve-2018-20225](https://github.com/brabster/cve-2018-20225)
 
-### CVE-2018-20227 (2018-12-19)
-
-<code>RDF4J 2.4.2 allows Directory Traversal via ../ in an entry in a ZIP archive.
-</code>
-
-- [dawetmaster/CVE-2018-20227-rdf4j-vulnerable](https://github.com/dawetmaster/CVE-2018-20227-rdf4j-vulnerable)
-
 ### CVE-2018-20250 (2019-02-05)
 
 <code>In WinRAR versions prior to and including 5.61, There is path traversal vulnerability when crafting the filename field of the ACE format (in UNACEV2.dll). When the filename field is manipulated with specific patterns, the destination (extraction) folder is ignored, thus treating the filename as an absolute path.
@@ -61390,13 +60950,6 @@
 - [tzwlhack/CVE-2018-20250](https://github.com/tzwlhack/CVE-2018-20250)
 - [tannlh/CVE-2018-20250](https://github.com/tannlh/CVE-2018-20250)
 - [LamSonBinh/CVE-2018-20250](https://github.com/LamSonBinh/CVE-2018-20250)
-
-### CVE-2018-20318 (2018-12-21)
-
-<code>An issue was discovered in weixin-java-tools v3.2.0. There is an XXE vulnerability in the getXmlDoc method of the BaseWxPayResult.java file.
-</code>
-
-- [dawetmaster/CVE-2018-20318-weixin-java-tools-vulnerable](https://github.com/dawetmaster/CVE-2018-20318-weixin-java-tools-vulnerable)
 
 ### CVE-2018-20343 (2020-03-02)
 
@@ -61535,13 +61088,6 @@
 
 - [u0pattern/CVE-2018-1000117-Exploit](https://github.com/u0pattern/CVE-2018-1000117-Exploit)
 
-### CVE-2018-1000125 (2018-03-13)
-
-<code>inversoft prime-jwt version prior to version 1.3.0 or prior to commit 0d94dcef0133d699f21d217e922564adbb83a227 contains an input validation vulnerability in JWTDecoder.decode that can result in a JWT that is decoded and thus implicitly validated even if it lacks a valid signature. This attack appear to be exploitable via an attacker crafting a token with a valid header and body and then requests it to be validated. This vulnerability appears to have been fixed in 1.3.0 and later or after commit 0d94dcef0133d699f21d217e922564adbb83a227.
-</code>
-
-- [dawetmaster/CVE-2018-1000125-prime-jwt-vulnerable](https://github.com/dawetmaster/CVE-2018-1000125-prime-jwt-vulnerable)
-
 ### CVE-2018-1000129 (2018-03-14)
 
 <code>An XSS vulnerability exists in the Jolokia agent version 1.3.7 in the HTTP servlet that allows an attacker to execute malicious javascript in the victim's browser.
@@ -61591,7 +61137,6 @@
 </code>
 
 - [realbatuhan/JWT-Bruteforcer](https://github.com/realbatuhan/JWT-Bruteforcer)
-- [dawetmaster/CVE-2018-1000531-prime-jwt-vulnerable](https://github.com/dawetmaster/CVE-2018-1000531-prime-jwt-vulnerable)
 
 ### CVE-2018-1000542 (2018-06-26)
 
@@ -61607,20 +61152,12 @@
 
 - [tna0y/CVE-2018-1000802-PoC](https://github.com/tna0y/CVE-2018-1000802-PoC)
 
-### CVE-2018-1000822 (2018-12-20)
-
-<code>codelibs fess version before commit faa265b contains a XML External Entity (XXE) vulnerability in GSA XML file parser that can result in Disclosure of confidential data, denial of service, SSRF, port scanning. This attack appear to be exploitable via specially crafted GSA XML files. This vulnerability appears to have been fixed in after commit faa265b.
-</code>
-
-- [dawetmaster/CVE-2018-1000822-fess-vulnerable](https://github.com/dawetmaster/CVE-2018-1000822-fess-vulnerable)
-
 ### CVE-2018-1000844 (2018-12-20)
 
 <code>Square Open Source Retrofit version Prior to commit 4a693c5aeeef2be6c7ecf80e7b5ec79f6ab59437 contains a XML External Entity (XXE) vulnerability in JAXB that can result in An attacker could use this to remotely read files from the file system or to perform SSRF.. This vulnerability appears to have been fixed in After commit 4a693c5aeeef2be6c7ecf80e7b5ec79f6ab59437.
 </code>
 
 - [epicosy/Retrofit-1](https://github.com/epicosy/Retrofit-1)
-- [dawetmaster/CVE-2018-1000844-retrofit-vulnerable](https://github.com/dawetmaster/CVE-2018-1000844-retrofit-vulnerable)
 
 ### CVE-2018-1000850 (2018-12-20)
 
@@ -61636,13 +61173,6 @@
 
 - [1NTheKut/CVE-2019-1003000_RCE-DETECTION](https://github.com/1NTheKut/CVE-2019-1003000_RCE-DETECTION)
 - [smokeintheshell/CVE-2018-1000861](https://github.com/smokeintheshell/CVE-2018-1000861)
-
-### CVE-2018-1000873 (2018-12-20)
-
-<code>Fasterxml Jackson version Before 2.9.8 contains a CWE-20: Improper Input Validation vulnerability in Jackson-Modules-Java8 that can result in Causes a denial-of-service (DoS). This attack appear to be exploitable via The victim deserializes malicious input, specifically very large values in the nanoseconds field of a time value. This vulnerability appears to have been fixed in 2.9.8.
-</code>
-
-- [dawetmaster/CVE-2018-1000873-jackson-modules-java8-vulnerable](https://github.com/dawetmaster/CVE-2018-1000873-jackson-modules-java8-vulnerable)
 
 ### CVE-2018-1002105 (2018-12-05)
 
@@ -61661,7 +61191,6 @@
 </code>
 
 - [shoucheng3/codehaus-plexus__plexus-archiver_CVE-2018-1002200_3-5](https://github.com/shoucheng3/codehaus-plexus__plexus-archiver_CVE-2018-1002200_3-5)
-- [dawetmaster/CVE-2018-1002200-plexus-archiver-vulnerable](https://github.com/dawetmaster/CVE-2018-1002200-plexus-archiver-vulnerable)
 
 ### CVE-2018-1002201 (2018-07-25)
 
@@ -61669,7 +61198,6 @@
 </code>
 
 - [shoucheng3/zeroturnaround__zt-zip_CVE-2018-1002201_1-12](https://github.com/shoucheng3/zeroturnaround__zt-zip_CVE-2018-1002201_1-12)
-- [dawetmaster/CVE-2018-1002201-zt-zip-vulnerable](https://github.com/dawetmaster/CVE-2018-1002201-zt-zip-vulnerable)
 
 ### CVE-2018-1002202 (2018-07-25)
 
@@ -62044,20 +61572,12 @@
 
 - [alexzorin/cve-2017-2636-el](https://github.com/alexzorin/cve-2017-2636-el)
 
-### CVE-2017-2649 (2018-07-27)
-
-<code>It was found that the Active Directory Plugin for Jenkins up to and including version 2.2 did not verify certificates of the Active Directory server, thereby enabling Man-in-the-Middle attacks.
-</code>
-
-- [dawetmaster/CVE-2017-2649-active-directory-plugin-vulnerable](https://github.com/dawetmaster/CVE-2017-2649-active-directory-plugin-vulnerable)
-
 ### CVE-2017-2666 (2018-07-27)
 
 <code>It was discovered in Undertow that the code that parsed the HTTP request line permitted invalid characters. This could be exploited, in conjunction with a proxy that also permitted the invalid characters but with a different interpretation, to inject data into the HTTP response. By manipulating the HTTP response the attacker could poison a web-cache, perform an XSS attack, or obtain sensitive information from requests other than their own.
 </code>
 
 - [tafamace/CVE-2017-2666](https://github.com/tafamace/CVE-2017-2666)
-- [dawetmaster/CVE-2017-2666-undertow-vulnerable](https://github.com/dawetmaster/CVE-2017-2666-undertow-vulnerable)
 
 ### CVE-2017-2671 (2017-04-05)
 
@@ -62443,13 +61963,6 @@
 
 - [scanfsec/HPE-iMC-7.3-RMI-Java-Deserialization](https://github.com/scanfsec/HPE-iMC-7.3-RMI-Java-Deserialization)
 
-### CVE-2017-5929 (2017-03-13)
-
-<code>QOS.ch Logback before 1.2.0 has a serialization vulnerability affecting the SocketServer and ServerSocketReceiver components.
-</code>
-
-- [dawetmaster/CVE-2017-5929-logback-vulnerable](https://github.com/dawetmaster/CVE-2017-5929-logback-vulnerable)
-
 ### CVE-2017-5941 (2017-02-09)
 
 <code>An issue was discovered in the node-serialize package 0.0.4 for Node.js. Untrusted data passed into the unserialize() function can be exploited to achieve arbitrary code execution by passing a JavaScript Object with an Immediately Invoked Function Expression (IIFE).
@@ -62756,20 +62269,6 @@
 - [youngmin0104/CVE-2017-7529-](https://github.com/youngmin0104/CVE-2017-7529-)
 - [portfolio10/nginx](https://github.com/portfolio10/nginx)
 
-### CVE-2017-7559 (2018-01-10)
-
-<code>In Undertow 2.x before 2.0.0.Alpha2, 1.4.x before 1.4.17.Final, and 1.3.x before 1.3.31.Final, it was found that the fix for CVE-2017-2666 was incomplete and invalid characters are still allowed in the query string and path parameters. This could be exploited, in conjunction with a proxy that also permitted the invalid characters but with a different interpretation, to inject data into the HTTP response. By manipulating the HTTP response the attacker could poison a web-cache, perform an XSS attack, or obtain sensitive information from requests other than their own.
-</code>
-
-- [dawetmaster/CVE-2017-7559-undertow-vulnerable](https://github.com/dawetmaster/CVE-2017-7559-undertow-vulnerable)
-
-### CVE-2017-7561 (2017-09-13)
-
-<code>Red Hat JBoss EAP version 3.0.7 through before 4.0.0.Beta1 is vulnerable to a server-side cache poisoning or CORS requests in the JAX-RS component resulting in a moderate impact.
-</code>
-
-- [dawetmaster/CVE-2017-7561-Resteasy-vulnerable](https://github.com/dawetmaster/CVE-2017-7561-Resteasy-vulnerable)
-
 ### CVE-2017-7648 (2017-04-10)
 
 <code>Foscam networked devices use the same hardcoded SSL private key across different customers' installations, which allows remote attackers to defeat cryptographic protection mechanisms by leveraging knowledge of this key from another installation.
@@ -62784,20 +62283,6 @@
 
 - [mukkul007/MqttAttack](https://github.com/mukkul007/MqttAttack)
 - [St3v3nsS/CVE-2017-7651](https://github.com/St3v3nsS/CVE-2017-7651)
-
-### CVE-2017-7661 (2017-05-16)
-
-<code>Apache CXF Fediz ships with a number of container-specific plugins to enable WS-Federation for applications. A CSRF (Cross Style Request Forgery) style vulnerability has been found in the Spring 2, Spring 3, Jetty 8 and Jetty 9 plugins in Apache CXF Fediz prior to 1.4.0, 1.3.2 and 1.2.4.
-</code>
-
-- [dawetmaster/CVE-2017-7661-cxf-fediz-vulnerable](https://github.com/dawetmaster/CVE-2017-7661-cxf-fediz-vulnerable)
-
-### CVE-2017-7662 (2017-05-16)
-
-<code>Apache CXF Fediz ships with an OpenId Connect (OIDC) service which has a Client Registration Service, which is a simple web application that allows clients to be created, deleted, etc. A CSRF (Cross Style Request Forgery) style vulnerability has been found in this web application in Apache CXF Fediz prior to 1.4.0 and 1.3.2, meaning that a malicious web application could create new clients, or reset secrets, etc, after the admin user has logged on to the client registration service and the session is still active.
-</code>
-
-- [dawetmaster/CVE-2017-7662-cxf-fediz-vulnerable](https://github.com/dawetmaster/CVE-2017-7662-cxf-fediz-vulnerable)
 
 ### CVE-2017-7679 (2017-06-20)
 
@@ -62841,13 +62326,6 @@
 - [Wyl-cmd/CVE-2017-7921-Research-Toolkit](https://github.com/Wyl-cmd/CVE-2017-7921-Research-Toolkit)
 - [mverschu/CVE-2017-7921](https://github.com/mverschu/CVE-2017-7921)
 - [KelvinWin10/CVE-2017-7921-rewrite](https://github.com/KelvinWin10/CVE-2017-7921-rewrite)
-
-### CVE-2017-7957 (2017-04-29)
-
-<code>XStream through 1.4.9, when a certain denyTypes workaround is not used, mishandles attempts to create an instance of the primitive type 'void' during unmarshalling, leading to a remote application crash, as demonstrated by an xstream.fromXML(&quot;&lt;void/&gt;&quot;) call.
-</code>
-
-- [dawetmaster/CVE-2017-7957-xstream-vulnerable](https://github.com/dawetmaster/CVE-2017-7957-xstream-vulnerable)
 
 ### CVE-2017-7998 (2018-01-08)
 
@@ -63228,13 +62706,6 @@
 - [l0n3rs/CVE-2017-9798](https://github.com/l0n3rs/CVE-2017-9798)
 - [brokensound77/OptionsBleed-POC-Scanner](https://github.com/brokensound77/OptionsBleed-POC-Scanner)
 
-### CVE-2017-9801 (2017-08-07)
-
-<code>When a call-site passes a subject for an email that contains line-breaks in Apache Commons Email 1.0 through 1.4, the caller can add arbitrary SMTP headers.
-</code>
-
-- [dawetmaster/CVE-2017-9801-commons-email-vulnerable](https://github.com/dawetmaster/CVE-2017-9801-commons-email-vulnerable)
-
 ### CVE-2017-9805 (2017-09-15)
 
 <code>The REST Plugin in Apache Struts 2.1.1 through 2.3.x before 2.3.34 and 2.5.x before 2.5.13 uses an XStreamHandler with an instance of XStream for deserialization without any type filtering, which can lead to Remote Code Execution when deserializing XML payloads.
@@ -63560,20 +63031,6 @@
 - [zesnd/cve-2017-12149](https://github.com/zesnd/cve-2017-12149)
 - [galois17/cve-2017-12149-playground](https://github.com/galois17/cve-2017-12149-playground)
 
-### CVE-2017-12165 (2018-07-27)
-
-<code>It was discovered that Undertow before 1.4.17, 1.3.31 and 2.0.0 processes http request headers with unusual whitespaces which can cause possible http request smuggling.
-</code>
-
-- [dawetmaster/CVE-2017-12165-undertow-vulnerable](https://github.com/dawetmaster/CVE-2017-12165-undertow-vulnerable)
-
-### CVE-2017-12197 (2018-01-18)
-
-<code>It was found that libpam4j up to and including 1.8 did not properly validate user accounts when authenticating. A user with a valid password for a disabled account would be able to bypass security restrictions and possibly access sensitive information.
-</code>
-
-- [dawetmaster/CVE-2017-12197-libpam4j-vulnerable](https://github.com/dawetmaster/CVE-2017-12197-libpam4j-vulnerable)
-
 ### CVE-2017-12426 (2017-08-14)
 
 <code>GitLab Community Edition (CE) and Enterprise Edition (EE) before 8.17.8, 9.0.x before 9.0.13, 9.1.x before 9.1.10, 9.2.x before 9.2.10, 9.3.x before 9.3.10, and 9.4.x before 9.4.4 might allow remote attackers to execute arbitrary code via a crafted SSH URL in a project import.
@@ -63784,13 +63241,6 @@
 
 - [giovannidispoto/CVE-2017-13872-Patch](https://github.com/giovannidispoto/CVE-2017-13872-Patch)
 
-### CVE-2017-14063 (2017-08-31)
-
-<code>Async Http Client (aka async-http-client) before 2.0.35 can be tricked into connecting to a host different from the one extracted by java.net.URI if a '?' character occurs in a fragment identifier. Similar bugs were previously identified in cURL (CVE-2016-8624) and Oracle Java 8 java.net.URL.
-</code>
-
-- [dawetmaster/CVE-2017-14063-async-http-client-vulnerable](https://github.com/dawetmaster/CVE-2017-14063-async-http-client-vulnerable)
-
 ### CVE-2017-14105 (2017-09-01)
 
 <code>HiveManager Classic through 8.1r1 allows arbitrary JSP code execution by modifying a backup archive before a restore, because the restore feature does not validate pathnames within the archive. An authenticated, local attacker - even restricted as a tenant - can add a jsp at HiveManager/tomcat/webapps/hm/domains/$yourtenant/maps (it will be exposed at the web interface).
@@ -63880,13 +63330,6 @@
 - [damariion/CVE-2017-14980](https://github.com/damariion/CVE-2017-14980)
 - [TheMalwareGuardian/CVE-2017-14980](https://github.com/TheMalwareGuardian/CVE-2017-14980)
 
-### CVE-2017-15095 (2018-02-06)
-
-<code>A deserialization flaw was discovered in the jackson-databind in versions before 2.8.10 and 2.9.1, which could allow an unauthenticated user to perform code execution by sending the maliciously crafted input to the readValue method of the ObjectMapper. This issue extends the previous flaw CVE-2017-7525 by blacklisting more classes that could be used maliciously.
-</code>
-
-- [dawetmaster/CVE-2017-15095-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2017-15095-jackson-databind-vulnerable)
-
 ### CVE-2017-15099 (2017-11-22)
 
 <code>INSERT ... ON CONFLICT DO UPDATE commands in PostgreSQL 10.x before 10.1, 9.6.x before 9.6.6, and 9.5.x before 9.5.10 disclose table contents that the invoker lacks privilege to read. These exploits affect only tables where the attacker lacks full read access but has both INSERT and UPDATE privileges. Exploits bypass row level security policies and lack of SELECT privilege.
@@ -63948,13 +63391,6 @@
 
 - [w1ldb1t/CVE-2017-15428](https://github.com/w1ldb1t/CVE-2017-15428)
 
-### CVE-2017-15700 (2017-12-18)
-
-<code>A flaw in the org.apache.sling.auth.core.AuthUtil#isRedirectValid method in Apache Sling Authentication Service 1.4.0 allows an attacker, through the Sling login form, to trick a victim to send over their credentials.
-</code>
-
-- [dawetmaster/CVE-2017-15700-sling-org-apache-sling-auth-core-vulnerable](https://github.com/dawetmaster/CVE-2017-15700-sling-org-apache-sling-auth-core-vulnerable)
-
 ### CVE-2017-15708 (2017-12-11)
 
 <code>In Apache Synapse, by default no authentication is required for Java Remote Method Invocation (RMI). So Apache Synapse 3.0.1 or all previous releases (3.0.0, 2.1.0, 2.0.0, 1.2, 1.1.2, 1.1.1) allows remote code execution attacks that can be performed by injecting specially crafted serialized objects. And the presence of Apache Commons Collections 3.2.1 (commons-collections-3.2.1.jar) or previous versions in Synapse distribution makes this exploitable. To mitigate the issue, we need to limit RMI access to trusted users only. Further upgrading to 3.0.1 version will eliminate the risk of having said Commons Collection version. In Synapse 3.0.1, Commons Collection has been updated to 3.2.2 version.
@@ -63968,13 +63404,6 @@
 </code>
 
 - [whisp1830/CVE-2017-15715](https://github.com/whisp1830/CVE-2017-15715)
-
-### CVE-2017-15717 (2018-01-10)
-
-<code>A flaw in the way URLs are escaped and encoded in the org.apache.sling.xss.impl.XSSAPIImpl#getValidHref and org.apache.sling.xss.impl.XSSFilterImpl#isValidHref allows special crafted URLs to pass as valid, although they carry XSS payloads. The affected versions are Apache Sling XSS Protection API 1.0.4 to 1.0.18, Apache Sling XSS Protection API Compat 1.1.0 and Apache Sling XSS Protection API 2.0.0.
-</code>
-
-- [dawetmaster/CVE-2017-15717-sling-org-apache-sling-xss-vulnerable](https://github.com/dawetmaster/CVE-2017-15717-sling-org-apache-sling-xss-vulnerable)
 
 ### CVE-2017-15944 (2017-12-11)
 
@@ -64155,7 +63584,6 @@
 - [tafamace/CVE-2017-17485](https://github.com/tafamace/CVE-2017-17485)
 - [x7iaob/cve-2017-17485](https://github.com/x7iaob/cve-2017-17485)
 - [Al1ex/CVE-2017-17485](https://github.com/Al1ex/CVE-2017-17485)
-- [dawetmaster/CVE-2017-17485-jackson-databind-vulnerable](https://github.com/dawetmaster/CVE-2017-17485-jackson-databind-vulnerable)
 
 ### CVE-2017-17562 (2017-12-12)
 
@@ -64238,13 +63666,6 @@
 
 - [ShielderSec/CVE-2017-18635](https://github.com/ShielderSec/CVE-2017-18635)
 
-### CVE-2017-18640 (2019-12-12)
-
-<code>The Alias feature in SnakeYAML before 1.26 allows entity expansion during a load operation, a related issue to CVE-2003-1564.
-</code>
-
-- [dawetmaster/CVE-2017-18640-snakeyaml-vulnerable](https://github.com/dawetmaster/CVE-2017-18640-snakeyaml-vulnerable)
-
 ### CVE-2017-20165 (2023-01-09)
 
 <code>Es wurde eine Schwachstelle in debug-js debug bis 3.0.x entdeckt. Sie wurde als problematisch eingestuft. Es betrifft die Funktion useColors der Datei src/node.js. Durch Manipulieren des Arguments str mit unbekannten Daten kann eine inefficient regular expression complexity-Schwachstelle ausgenutzt werden. Ein Aktualisieren auf die Version 3.1.0 vermag dieses Problem zu lösen. Der Patch wird als c38a0166c266a679c8de012d4eaccec3f944e685 bezeichnet. Als bestmögliche Massnahme wird das Einspielen eines Upgrades empfohlen.
@@ -64324,27 +63745,6 @@
 </code>
 
 - [Nickguitar/Jquery-File-Tree-1.6.6-Path-Traversal](https://github.com/Nickguitar/Jquery-File-Tree-1.6.6-Path-Traversal)
-
-### CVE-2017-1000207 (2017-11-27)
-
-<code>A vulnerability in Swagger-Parser's version &lt;= 1.0.30 and Swagger codegen version &lt;= 2.2.2 yaml parsing functionality results in arbitrary code being executed when a maliciously crafted yaml Open-API specification is parsed. This in particular, affects the 'generate' and 'validate' command in swagger-codegen (&lt;= 2.2.2) and can lead to arbitrary code being executed when these commands are used on a well-crafted yaml specification.
-</code>
-
-- [dawetmaster/CVE-2017-1000207-swagger-parser-vulnerable](https://github.com/dawetmaster/CVE-2017-1000207-swagger-parser-vulnerable)
-
-### CVE-2017-1000208 (2017-11-17)
-
-<code>A vulnerability in Swagger-Parser's (version &lt;= 1.0.30) yaml parsing functionality results in arbitrary code being executed when a maliciously crafted yaml Open-API specification is parsed. This in particular, affects the 'generate' and 'validate' command in swagger-codegen (&lt;= 2.2.2) and can lead to arbitrary code being executed when these commands are used on a well-crafted yaml specification.
-</code>
-
-- [dawetmaster/CVE-2017-1000208-swagger-parser-vulnerable](https://github.com/dawetmaster/CVE-2017-1000208-swagger-parser-vulnerable)
-
-### CVE-2017-1000209 (2017-11-17)
-
-<code>The Java WebSocket client nv-websocket-client does not verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL/TLS servers via an arbitrary valid certificate.
-</code>
-
-- [dawetmaster/CVE-2017-1000209-nv-websocket-client-vulnerable](https://github.com/dawetmaster/CVE-2017-1000209-nv-websocket-client-vulnerable)
 
 ### CVE-2017-1000250 (2017-09-12)
 
@@ -64430,7 +63830,6 @@
 </code>
 
 - [shoucheng3/codehaus-plexus__plexus-utils_CVE-2017-1000487_3-0-15](https://github.com/shoucheng3/codehaus-plexus__plexus-utils_CVE-2017-1000487_3-0-15)
-- [dawetmaster/CVE-2017-1000487-plexus-utils-vulnerable](https://github.com/dawetmaster/CVE-2017-1000487-plexus-utils-vulnerable)
 
 ### CVE-2017-1000499 (2018-01-03)
 
@@ -64872,13 +64271,6 @@
 - [YutuSec/ActiveMQ_Crack](https://github.com/YutuSec/ActiveMQ_Crack)
 - [HeArtE4t3r/CVE-2016-3088](https://github.com/HeArtE4t3r/CVE-2016-3088)
 
-### CVE-2016-3092 (2016-07-04)
-
-<code>The MultipartStream class in Apache Commons Fileupload before 1.3.2, as used in Apache Tomcat 7.x before 7.0.70, 8.x before 8.0.36, 8.5.x before 8.5.3, and 9.x before 9.0.0.M7 and other products, allows remote attackers to cause a denial of service (CPU consumption) via a long boundary string.
-</code>
-
-- [dawetmaster/CVE-2016-3092-commons-fileupload-vulnerable](https://github.com/dawetmaster/CVE-2016-3092-commons-fileupload-vulnerable)
-
 ### CVE-2016-3113 (2017-08-07)
 
 <code>Cross-site scripting (XSS) vulnerability in ovirt-engine allows remote attackers to inject arbitrary web script or HTML.
@@ -65045,13 +64437,6 @@
 
 - [arntsonl/CVE-2016-4463](https://github.com/arntsonl/CVE-2016-4463)
 
-### CVE-2016-4464 (2016-09-21)
-
-<code>The application plugins in Apache CXF Fediz 1.2.x before 1.2.3 and 1.3.x before 1.3.1 do not match SAML AudienceRestriction values against configured audience URIs, which might allow remote attackers to have bypass intended restrictions and have unspecified other impact via a crafted SAML token with a trusted signature.
-</code>
-
-- [dawetmaster/CVE-2016-4464-cxf-fediz-vulnerable](https://github.com/dawetmaster/CVE-2016-4464-cxf-fediz-vulnerable)
-
 ### CVE-2016-4468 (2017-04-11)
 
 <code>SQL injection vulnerability in Pivotal Cloud Foundry (PCF) before 238; UAA 2.x before 2.7.4.4, 3.x before 3.3.0.2, and 3.4.x before 3.4.1; UAA BOSH before 11.2 and 12.x before 12.2; Elastic Runtime before 1.6.29 and 1.7.x before 1.7.7; and Ops Manager 1.7.x before 1.7.8 allows remote authenticated users to execute arbitrary SQL commands via unspecified vectors.
@@ -65122,13 +64507,6 @@
 - [gitcollect/CVE-2016-4971](https://github.com/gitcollect/CVE-2016-4971)
 - [mbadanoiu/CVE-2016-4971](https://github.com/mbadanoiu/CVE-2016-4971)
 - [dinidhu96/IT19013756_-CVE-2016-4971-](https://github.com/dinidhu96/IT19013756_-CVE-2016-4971-)
-
-### CVE-2016-4974 (2016-07-13)
-
-<code>Apache Qpid AMQP 0-x JMS client before 6.0.4 and JMS (AMQP 1.0) before 0.10.0 does not restrict the use of classes available on the classpath, which might allow remote authenticated users with permission to send messages to deserialize arbitrary objects and execute arbitrary code by leveraging a crafted serialized object in a JMS ObjectMessage that is handled by the getObject function.
-</code>
-
-- [dawetmaster/CVE-2016-4974-qpid-broker-j-vulnerable](https://github.com/dawetmaster/CVE-2016-4974-qpid-broker-j-vulnerable)
 
 ### CVE-2016-4977 (2017-05-25)
 
@@ -65405,21 +64783,6 @@
 </code>
 
 - [TSNGL21/CVE-2016-6801](https://github.com/TSNGL21/CVE-2016-6801)
-- [dawetmaster/CVE-2016-6801-jackrabbit-vulnerable](https://github.com/dawetmaster/CVE-2016-6801-jackrabbit-vulnerable)
-
-### CVE-2016-6802 (2016-09-20)
-
-<code>Apache Shiro before 1.3.2 allows attackers to bypass intended servlet filters and gain access by leveraging use of a non-root servlet context path.
-</code>
-
-- [dawetmaster/CVE-2016-6802-shiro-vulnerable](https://github.com/dawetmaster/CVE-2016-6802-shiro-vulnerable)
-
-### CVE-2016-6809 (2017-04-06)
-
-<code>Apache Tika before 1.14 allows Java code execution for serialized objects embedded in MATLAB files. The issue exists because Tika invokes JMatIO to do native deserialization.
-</code>
-
-- [dawetmaster/CVE-2016-6809-tika-vulnerable](https://github.com/dawetmaster/CVE-2016-6809-tika-vulnerable)
 
 ### CVE-2016-6812 (2017-08-10)
 
@@ -65434,13 +64797,6 @@
 </code>
 
 - [CybermonkX/CVE-2016-6914-UniFiVideo-LPE](https://github.com/CybermonkX/CVE-2016-6914-UniFiVideo-LPE)
-
-### CVE-2016-7051 (2017-04-14)
-
-<code>XmlMapper in the Jackson XML dataformat component (aka jackson-dataformat-xml) before 2.7.8 and 2.8.x before 2.8.4 allows remote attackers to conduct server-side request forgery (SSRF) attacks via vectors related to a DTD.
-</code>
-
-- [dawetmaster/CVE-2016-7051-jackson-dataformat-xml-vulnerable](https://github.com/dawetmaster/CVE-2016-7051-jackson-dataformat-xml-vulnerable)
 
 ### CVE-2016-7117 (2016-10-10)
 
@@ -65579,20 +64935,6 @@
 - [lcfpadilha/mac0352-ep4](https://github.com/lcfpadilha/mac0352-ep4)
 - [jptr218/apachedos](https://github.com/jptr218/apachedos)
 
-### CVE-2016-8741 (2017-05-15)
-
-<code>The Apache Qpid Broker for Java can be configured to use different so called AuthenticationProviders to handle user authentication. Among the choices are the SCRAM-SHA-1 and SCRAM-SHA-256 AuthenticationProvider types. It was discovered that these AuthenticationProviders in Apache Qpid Broker for Java 6.0.x before 6.0.6 and 6.1.x before 6.1.1 prematurely terminate the SCRAM SASL negotiation if the provided user name does not exist thus allowing remote attacker to determine the existence of user accounts. The Vulnerability does not apply to AuthenticationProviders other than SCRAM-SHA-1 and SCRAM-SHA-256.
-</code>
-
-- [dawetmaster/CVE-2016-8741-qpid-broker-j-vulnerable](https://github.com/dawetmaster/CVE-2016-8741-qpid-broker-j-vulnerable)
-
-### CVE-2016-8744 (2017-09-13)
-
-<code>Apache Brooklyn uses the SnakeYAML library for parsing YAML inputs. SnakeYAML allows the use of YAML tags to indicate that SnakeYAML should unmarshal data to a Java type. In the default configuration in Brooklyn before 0.10.0, SnakeYAML will allow unmarshalling to any Java type available on the classpath. This could provide an authenticated user with a means to cause the JVM running Brooklyn to load and run Java code without detection by Brooklyn. Such code would have the privileges of the Java process running Brooklyn, including the ability to open files and network connections, and execute system commands. There is known to be a proof-of-concept exploit using this vulnerability.
-</code>
-
-- [dawetmaster/CVE-2016-8744-brooklyn-server-vulnerable](https://github.com/dawetmaster/CVE-2016-8744-brooklyn-server-vulnerable)
-
 ### CVE-2016-8776 (2017-04-02)
 
 <code>Huawei P9 phones with software EVA-AL10C00,EVA-CL10C00,EVA-DL10C00,EVA-TL10C00 and P9 Lite phones with software VNS-L21C185 allow attackers to bypass the factory reset protection (FRP) to enter some functional modules without authorization and perform operations to update the Google account.
@@ -65660,7 +65002,6 @@
 
 - [shoucheng3/perwendel__spark_CVE-2016-9177_2-5-1](https://github.com/shoucheng3/perwendel__spark_CVE-2016-9177_2-5-1)
 - [shoucheng3/perwendel__spark_CVE-2016-9177_2_5_2_fixed](https://github.com/shoucheng3/perwendel__spark_CVE-2016-9177_2_5_2_fixed)
-- [dawetmaster/CVE-2016-9177-perwendel-spark-vulnerable](https://github.com/dawetmaster/CVE-2016-9177-perwendel-spark-vulnerable)
 
 ### CVE-2016-9192 (2016-12-14)
 
@@ -65683,20 +65024,6 @@
 </code>
 
 - [r00t4dm/Jenkins-CVE-2016-9299](https://github.com/r00t4dm/Jenkins-CVE-2016-9299)
-
-### CVE-2016-9589 (2018-03-12)
-
-<code>Undertow in Red Hat wildfly before version 11.0.0.Beta1 is vulnerable to a resource exhaustion resulting in a denial of service. Undertow keeps a cache of seen HTTP headers in persistent connections. It was found that this cache can easily exploited to fill memory with garbage, up to &quot;max-headers&quot; (default 200) * &quot;max-header-size&quot; (default 1MB) per active TCP connection.
-</code>
-
-- [dawetmaster/CVE-2016-9589-undertow-vulnerable](https://github.com/dawetmaster/CVE-2016-9589-undertow-vulnerable)
-
-### CVE-2016-9606 (2018-03-09)
-
-<code>JBoss RESTEasy before version 3.1.2 could be forced into parsing a request with YamlProvider, resulting in unmarshalling of potentially untrusted data which could allow an attacker to execute arbitrary code with RESTEasy application permissions.
-</code>
-
-- [dawetmaster/CVE-2016-9606-Resteasy-vulnerable](https://github.com/dawetmaster/CVE-2016-9606-Resteasy-vulnerable)
 
 ### CVE-2016-9795 (2017-01-27)
 
@@ -65896,13 +65223,6 @@
 - [tina94happy/Spring-Web-5xx-Mitigated-version](https://github.com/tina94happy/Spring-Web-5xx-Mitigated-version)
 - [yihtserns/spring-web-without-remoting](https://github.com/yihtserns/spring-web-without-remoting)
 - [Ragatzino/test-cve-2016-1000027](https://github.com/Ragatzino/test-cve-2016-1000027)
-
-### CVE-2016-1000031 (2016-10-25)
-
-<code>Apache Commons FileUpload before 1.3.3 DiskFileItem File Manipulation Remote Code Execution
-</code>
-
-- [dawetmaster/CVE-2016-1000031-commons-fileupload-vulnerable](https://github.com/dawetmaster/CVE-2016-1000031-commons-fileupload-vulnerable)
 
 ### CVE-2016-1000229 (2019-12-20)
 
@@ -66247,13 +65567,6 @@
 
 - [arntsonl/CVE-2015-2153](https://github.com/arntsonl/CVE-2015-2153)
 
-### CVE-2015-2156 (2017-10-18)
-
-<code>Netty before 3.9.8.Final, 3.10.x before 3.10.3.Final, 4.0.x before 4.0.28.Final, and 4.1.x before 4.1.0.Beta5 and Play Framework 2.x before 2.3.9 might allow remote attackers to bypass the httpOnly flag on cookies and obtain sensitive information by leveraging improper validation of cookie name and value characters.
-</code>
-
-- [dawetmaster/CVE-2015-2156-netty-vulnerable](https://github.com/dawetmaster/CVE-2015-2156-netty-vulnerable)
-
 ### CVE-2015-2166 (2015-04-06)
 
 <code>Directory traversal vulnerability in the Instance Monitor in Ericsson Drutt Mobile Service Delivery Platform (MSDP) 4, 5, and 6 allows remote attackers to read arbitrary files via a ..%2f (dot dot encoded slash) in the default URI.
@@ -66316,20 +65629,6 @@
 </code>
 
 - [securifera/CVE-2015-2900-Exploit](https://github.com/securifera/CVE-2015-2900-Exploit)
-
-### CVE-2015-2912 (2015-12-31)
-
-<code>The JSONP endpoint in the Studio component in OrientDB Server Community Edition before 2.0.15 and 2.1.x before 2.1.1 does not properly restrict callback values, which allows remote attackers to conduct cross-site request forgery (CSRF) attacks, and obtain sensitive information, via a crafted HTTP request.
-</code>
-
-- [dawetmaster/CVE-2015-2912-orientdb-vulnerable](https://github.com/dawetmaster/CVE-2015-2912-orientdb-vulnerable)
-
-### CVE-2015-2913 (2015-12-31)
-
-<code>server/network/protocol/http/OHttpSessionManager.java in the Studio component in OrientDB Server Community Edition before 2.0.15 and 2.1.x before 2.1.1 improperly relies on the java.util.Random class for generation of random Session ID values, which makes it easier for remote attackers to predict a value by determining the internal state of the PRNG in this class.
-</code>
-
-- [dawetmaster/CVE-2015-2913-orientdb-vulnerable](https://github.com/dawetmaster/CVE-2015-2913-orientdb-vulnerable)
 
 ### CVE-2015-2925 (2015-11-16)
 
@@ -66413,13 +65712,6 @@
 - [RenukaSelvar/libunwind_CVE-2015-3239](https://github.com/RenukaSelvar/libunwind_CVE-2015-3239)
 - [RenukaSelvar/libunwind_CVE-2015-3239_AfterPatch](https://github.com/RenukaSelvar/libunwind_CVE-2015-3239_AfterPatch)
 - [RenukaSelvar/libunwind_CVE-2015-3239_After](https://github.com/RenukaSelvar/libunwind_CVE-2015-3239_After)
-
-### CVE-2015-3271 (2016-12-15)
-
-<code>Apache Tika server (aka tika-server) in Apache Tika 1.9 might allow remote attackers to read arbitrary files via the HTTP fileUrl header.
-</code>
-
-- [dawetmaster/CVE-2015-3271-tika-vulnerable](https://github.com/dawetmaster/CVE-2015-3271-tika-vulnerable)
 
 ### CVE-2015-3306 (2015-05-18)
 
@@ -66568,13 +65860,6 @@
 
 - [theglife214/CVE-2015-5195](https://github.com/theglife214/CVE-2015-5195)
 
-### CVE-2015-5253 (2015-11-18)
-
-<code>The SAML Web SSO module in Apache CXF before 2.7.18, 3.0.x before 3.0.7, and 3.1.x before 3.1.3 allows remote authenticated users to bypass authentication via a crafted SAML response with a valid signed assertion, related to a &quot;wrapping attack.&quot;
-</code>
-
-- [dawetmaster/CVE-2015-5253-cxf-vulnerable](https://github.com/dawetmaster/CVE-2015-5253-cxf-vulnerable)
-
 ### CVE-2015-5254 (2016-01-08)
 
 <code>Apache ActiveMQ 5.x before 5.13.0 does not restrict the classes that can be serialized in the broker, which allows remote attackers to execute arbitrary code via a crafted serialized Java Message Service (JMS) ObjectMessage object.
@@ -66683,13 +65968,6 @@
 
 - [hexx0r/CVE-2015-6132](https://github.com/hexx0r/CVE-2015-6132)
 
-### CVE-2015-6254 (2015-08-17)
-
-<code>The (1) Service Provider (SP) and (2) Identity Provider (IdP) in PicketLink before 2.7.0 does not ensure that the Destination attribute in a Response element in a SAML assertion matches the location from which the message was received, which allows remote attackers to have unspecified impact via unknown vectors.  NOTE: this identifier was SPLIT from CVE-2015-0277 per ADT2 due to different vulnerability types.
-</code>
-
-- [dawetmaster/CVE-2015-6254-picketlink-bindings-vulnerable](https://github.com/dawetmaster/CVE-2015-6254-picketlink-bindings-vulnerable)
-
 ### CVE-2015-6357 (2015-11-18)
 
 <code>The rule-update feature in Cisco FireSIGHT Management Center (MC) 5.2 through 5.4.0.1 does not verify the X.509 certificate of the support.sourcefire.com SSL server, which allows man-in-the-middle attackers to spoof this server and provide an invalid package, and consequently execute arbitrary code, via a crafted certificate, aka Bug ID CSCuw06444.
@@ -66773,7 +66051,6 @@
 </code>
 
 - [epicosy/VUL4J-59](https://github.com/epicosy/VUL4J-59)
-- [dawetmaster/CVE-2015-6748-jsoup-vulnerable](https://github.com/dawetmaster/CVE-2015-6748-jsoup-vulnerable)
 
 ### CVE-2015-6835 (2016-05-16)
 
@@ -67042,7 +66319,6 @@
 </code>
 
 - [jrrdev/cve-2014-0050](https://github.com/jrrdev/cve-2014-0050)
-- [dawetmaster/CVE-2014-0050-commons-fileupload-vulnerable](https://github.com/dawetmaster/CVE-2014-0050-commons-fileupload-vulnerable)
 
 ### CVE-2014-0075 (2014-05-31)
 
@@ -67410,13 +66686,6 @@
 
 - [azet/CVE-2014-3466_PoC](https://github.com/azet/CVE-2014-3466_PoC)
 
-### CVE-2014-3488 (2014-07-31)
-
-<code>The SslHandler in Netty before 3.9.2 allows remote attackers to cause a denial of service (infinite loop and CPU consumption) via a crafted SSLv2Hello message.
-</code>
-
-- [dawetmaster/CVE-2014-3488-netty-vulnerable](https://github.com/dawetmaster/CVE-2014-3488-netty-vulnerable)
-
 ### CVE-2014-3507 (2014-08-13)
 
 <code>Memory leak in d1_both.c in the DTLS implementation in OpenSSL 0.9.8 before 0.9.8zb, 1.0.0 before 1.0.0n, and 1.0.1 before 1.0.1i allows remote attackers to cause a denial of service (memory consumption) via zero-length DTLS fragments that trigger improper handling of the return value of a certain insert function.
@@ -67473,13 +66742,6 @@
 
 - [ilmila/springcss-cve-2014-3625](https://github.com/ilmila/springcss-cve-2014-3625)
 - [gforresu/SpringPathTraversal](https://github.com/gforresu/SpringPathTraversal)
-
-### CVE-2014-3651 (2017-12-29)
-
-<code>JBoss KeyCloak before 1.0.3.Final allows remote attackers to cause a denial of service (resource consumption) via a large value in the size parameter to auth/qrcode, related to QR code generation.
-</code>
-
-- [dawetmaster/CVE-2014-3651-keycloak-vulnerable](https://github.com/dawetmaster/CVE-2014-3651-keycloak-vulnerable)
 
 ### CVE-2014-3656 (2019-12-10)
 
@@ -67833,7 +67095,6 @@
 </code>
 
 - [shoucheng3/undertow-io__undertow_CVE-2014-7816_1-0-16-Final](https://github.com/shoucheng3/undertow-io__undertow_CVE-2014-7816_1-0-16-Final)
-- [dawetmaster/CVE-2014-7816-undertow-vulnerable](https://github.com/dawetmaster/CVE-2014-7816-undertow-vulnerable)
 
 ### CVE-2014-7911 (2014-12-15)
 
@@ -68184,13 +67445,6 @@
 
 - [0xGabe/FreeBSD-9.0-9.1-Privilege-Escalation](https://github.com/0xGabe/FreeBSD-9.0-9.1-Privilege-Escalation)
 
-### CVE-2013-2172 (2013-08-20)
-
-<code>jcp/xml/dsig/internal/dom/DOMCanonicalizationMethod.java in Apache Santuario XML Security for Java 1.4.x before 1.4.8 and 1.5.x before 1.5.5 allows context-dependent attackers to spoof an XML Signature by using the CanonicalizationMethod parameter to specify an arbitrary weak &quot;canonicalization algorithm to apply to the SignedInfo part of the Signature.&quot;
-</code>
-
-- [dawetmaster/CVE-2013-2172-santuario-java-vulnerable](https://github.com/dawetmaster/CVE-2013-2172-santuario-java-vulnerable)
-
 ### CVE-2013-2186 (2013-10-28)
 
 <code>The DiskFileItem class in Apache Commons FileUpload, as used in Red Hat JBoss BRMS 5.3.1; JBoss Portal 4.3 CP07, 5.2.2, and 6.0.0; and Red Hat JBoss Web Server 1.0.2 allows remote attackers to write to arbitrary files via a NULL byte in a file name in a serialized instance.
@@ -68199,7 +67453,6 @@
 - [GrrrDog/ACEDcup](https://github.com/GrrrDog/ACEDcup)
 - [sa1g0n1337/Payload_CVE_2013_2186](https://github.com/sa1g0n1337/Payload_CVE_2013_2186)
 - [sa1g0n1337/CVE_2013_2186](https://github.com/sa1g0n1337/CVE_2013_2186)
-- [dawetmaster/CVE-2013-2186-commons-fileupload-vulnerable](https://github.com/dawetmaster/CVE-2013-2186-commons-fileupload-vulnerable)
 
 ### CVE-2013-2217 (2013-09-23)
 
@@ -68377,13 +67630,6 @@
 
 - [styx00/Dropbear_CVE-2013-4434](https://github.com/styx00/Dropbear_CVE-2013-4434)
 
-### CVE-2013-4517 (2014-01-11)
-
-<code>Apache Santuario XML Security for Java before 1.5.6, when applying Transforms, allows remote attackers to cause a denial of service (memory consumption) via crafted Document Type Definitions (DTDs), related to signatures.
-</code>
-
-- [dawetmaster/CVE-2013-4517-santuario-java-vulnerable](https://github.com/dawetmaster/CVE-2013-4517-santuario-java-vulnerable)
-
 ### CVE-2013-4547 (2013-11-23)
 
 <code>nginx 0.8.41 through 1.4.3 and 1.5.x before 1.5.7 allows remote attackers to bypass intended restrictions via an unescaped space character in a URI.
@@ -68446,26 +67692,12 @@
 
 - [phusion/rails-cve-2012-5664-test](https://github.com/phusion/rails-cve-2012-5664-test)
 
-### CVE-2013-5679 (2013-09-30)
-
-<code>The authenticated-encryption feature in the symmetric-encryption implementation in the OWASP Enterprise Security API (ESAPI) for Java 2.x before 2.1.0 does not properly resist tampering with serialized ciphertext, which makes it easier for remote attackers to bypass intended cryptographic protection mechanisms via an attack against authenticity in the default configuration, involving a null MAC and a zero MAC length.
-</code>
-
-- [dawetmaster/CVE-2013-5679-esapi-java-legacy-vulnerable](https://github.com/dawetmaster/CVE-2013-5679-esapi-java-legacy-vulnerable)
-
 ### CVE-2013-5842 (2013-10-16)
 
 <code>Unspecified vulnerability in Oracle Java SE 7u40 and earlier, Java SE 6u60 and earlier, Java SE 5.0u51 and earlier, and Java SE Embedded 7u40 and earlier allows remote attackers to affect confidentiality, integrity, and availability via unknown vectors related to Libraries, a different vulnerability than CVE-2013-5850.
 </code>
 
 - [guhe120/CVE-2013-5842](https://github.com/guhe120/CVE-2013-5842)
-
-### CVE-2013-5960 (2013-09-30)
-
-<code>The authenticated-encryption feature in the symmetric-encryption implementation in the OWASP Enterprise Security API (ESAPI) for Java 2.x before 2.1.0.1 does not properly resist tampering with serialized ciphertext, which makes it easier for remote attackers to bypass intended cryptographic protection mechanisms via an attack against the intended cipher mode in a non-default configuration, a different vulnerability than CVE-2013-5679.
-</code>
-
-- [dawetmaster/CVE-2013-5960-esapi-java-legacy-vulnerable](https://github.com/dawetmaster/CVE-2013-5960-esapi-java-legacy-vulnerable)
 
 ### CVE-2013-6117 (2014-07-11)
 
@@ -68490,13 +67722,6 @@
 </code>
 
 - [bl4ck5un/cve-2013-6375](https://github.com/bl4ck5un/cve-2013-6375)
-
-### CVE-2013-6465 (2017-12-19)
-
-<code>Multiple cross-site scripting (XSS) vulnerabilities in JBPM KIE Workbench 6.0.x allow remote authenticated users to inject arbitrary web script or HTML via vectors related to task name html inputs.
-</code>
-
-- [dawetmaster/CVE-2013-6465-jjbpm-wbbpm-vulnerable](https://github.com/dawetmaster/CVE-2013-6465-jjbpm-wbbpm-vulnerable)
 
 ### CVE-2013-6490 (2014-02-06)
 
@@ -69044,7 +68269,6 @@
 </code>
 
 - [shoucheng3/apache__myfaces_CVE-2011-4367_2-0-11](https://github.com/shoucheng3/apache__myfaces_CVE-2011-4367_2-0-11)
-- [dawetmaster/CVE-2011-4367-myfaces-vulnerable](https://github.com/dawetmaster/CVE-2011-4367-myfaces-vulnerable)
 
 ### CVE-2011-4862 (2011-12-25)
 
