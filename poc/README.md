@@ -541,6 +541,13 @@
 
 - [kagancapar/CVE-2026-5201](https://github.com/kagancapar/CVE-2026-5201)
 
+### CVE-2026-5281 (2026-04-01)
+
+<code>Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)
+</code>
+
+- [umair-aziz025/CVE-2026-5281-Research-Toolkit](https://github.com/umair-aziz025/CVE-2026-5281-Research-Toolkit)
+
 ### CVE-2026-6111
 - [MonsterWsr-hub/CVE-2026-6111](https://github.com/MonsterWsr-hub/CVE-2026-6111)
 
@@ -2310,6 +2317,13 @@
 
 - [ChrisSub08/CVE-2026-33917_SqlInjectionVulnerabilityOpenEMR8.0.0](https://github.com/ChrisSub08/CVE-2026-33917_SqlInjectionVulnerabilityOpenEMR8.0.0)
 
+### CVE-2026-33936 (2026-03-27)
+
+<code>The `ecdsa` PyPI package is a pure Python implementation of ECC (Elliptic Curve Cryptography) with support for ECDSA (Elliptic Curve Digital Signature Algorithm), EdDSA (Edwards-curve Digital Signature Algorithm) and ECDH (Elliptic Curve Diffie-Hellman). Prior to version 0.19.2, an issue in the low-level DER parsing functions can cause unexpected exceptions to be raised from the public API functions. `ecdsa.der.remove_octet_string()` accepts truncated DER where the encoded length exceeds the available buffer. For example, an OCTET STRING that declares a length of 4096 bytes but provides only 3 bytes is parsed successfully instead of being rejected. Because of that, a crafted DER input can cause `SigningKey.from_der()` to raise an internal exception (`IndexError: index out of bounds on dimension 1`) rather than cleanly rejecting malformed DER (e.g., raising `UnexpectedDER` or `ValueError`). Applications that parse untrusted DER private keys may crash if they do not handle unexpected exceptions, resulting in a denial of service. Version 0.19.2 patches the issue.
+</code>
+
+- [0xmrma/CVE-2026-33936](https://github.com/0xmrma/CVE-2026-33936)
+
 ### CVE-2026-33937 (2026-03-27)
 
 <code>Handlebars provides the power necessary to let users build semantic templates. In versions 4.0.0 through 4.7.8, `Handlebars.compile()` accepts a pre-parsed AST object in addition to a template string. The `value` field of a `NumberLiteral` AST node is emitted directly into the generated JavaScript without quoting or sanitization. An attacker who can supply a crafted AST to `compile()` can therefore inject and execute arbitrary JavaScript, leading to Remote Code Execution on the server. Version 4.7.9 fixes the issue. Some workarounds are available. Validate input type before calling `Handlebars.compile()`; ensure the argument is always a  `string`, never a plain object or JSON-deserialized value. Use the Handlebars runtime-only build (`handlebars/runtime`) on the server if templates are pre-compiled at build time; `compile()` will be unavailable.
@@ -2351,6 +2365,9 @@
 </code>
 
 - [skoveit/CVE-2026-34227](https://github.com/skoveit/CVE-2026-34227)
+
+### CVE-2026-34828
+- [0xmrma/CVE-2026-34828](https://github.com/0xmrma/CVE-2026-34828)
 
 
 ## 2025
@@ -14995,7 +15012,7 @@
 <code>A flaw was found in openshift/builder. This vulnerability allows command injection via path traversal, where a malicious user can execute arbitrary commands on the OpenShift node running the builder container. When using the “Docker” strategy, executable files inside the privileged build container can be overridden using the `spec.source.secrets.secret.destinationDir` attribute of the `BuildConfig` definition. An attacker running code in a privileged container could escalate their permissions on the node running the container.
 </code>
 
-- [pwnc4t/cve-2024-7387](https://github.com/pwnc4t/cve-2024-7387)
+- [b334r/cve-2024-7387](https://github.com/b334r/cve-2024-7387)
 
 ### CVE-2024-7399 (2024-08-09)
 
@@ -21729,7 +21746,7 @@
 <code>A flaw was found in OpenShift. This issue occurs due to the misuse of elevated privileges in the OpenShift Container Platform's build process. During the build initialization step, the git-clone container is run with a privileged security context, allowing unrestricted access to the node. An attacker with developer-level access can provide a crafted .gitconfig file containing commands executed during the cloning process, leading to arbitrary command execution on the worker node. An attacker running code in a privileged container could escalate their permissions on the node running the container.
 </code>
 
-- [pwnc4t/cve-2024-45496](https://github.com/pwnc4t/cve-2024-45496)
+- [b334r/cve-2024-45496](https://github.com/b334r/cve-2024-45496)
 
 ### CVE-2024-45507 (2024-09-04)
 
@@ -33672,6 +33689,7 @@
 - [bluedragonsecurity/Linux-Kernel-Dirty-Pipe-Exploitation-Logic-Bug-](https://github.com/bluedragonsecurity/Linux-Kernel-Dirty-Pipe-Exploitation-Logic-Bug-)
 - [SimoesCTT/Chrono-Drip-Temporal-Viscosity-Exploitation-Framework-CVE-2022-0847](https://github.com/SimoesCTT/Chrono-Drip-Temporal-Viscosity-Exploitation-Framework-CVE-2022-0847)
 - [real-tim-johnston/megaquagga-pentest-report](https://github.com/real-tim-johnston/megaquagga-pentest-report)
+- [JeevanAnand1202/Penetration-Test](https://github.com/JeevanAnand1202/Penetration-Test)
 
 ### CVE-2022-0848 (2022-03-04)
 
@@ -67126,6 +67144,7 @@
 - [andres101c/Shellshock-CVE-2014-6271](https://github.com/andres101c/Shellshock-CVE-2014-6271)
 - [Industri4l-H3ll-Xpl0it3rs/CVE-2014-6271-Shellshock](https://github.com/Industri4l-H3ll-Xpl0it3rs/CVE-2014-6271-Shellshock)
 - [0xBlackash/CVE-2014-6271](https://github.com/0xBlackash/CVE-2014-6271)
+- [ambjlou/it355-lab4-enterprise-lan-security](https://github.com/ambjlou/it355-lab4-enterprise-lan-security)
 
 ### CVE-2014-6287 (2014-10-07)
 
