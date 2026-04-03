@@ -33,7 +33,7 @@
 
 ### CVE-2026-0651 (2026-02-10)
 
-<code>On TP-Link Tapo C260 v1 and D235 v1, path traversal is possible due to improper handling of specific GET request paths via https, allowing local unauthenticated probing of filesystem paths. An attacker on the local network can determine whether certain files exists on the device, with no read, write or code execution possibilities.
+<code>A path traversal vulnerability was identified TP-Link Tapo C260 v1, D235 v1 and C520WS v2.6 within the HTTP server’s handling of GET requests. The server performs path normalization before fully decoding URL encoded input and falls back to using the raw path when normalization fails. An attacker can exploit this logic flaw by supplying crafted, URL encoded traversal sequences that bypass directory restrictions and allow access to files outside the intended web root. \n\nSuccessful exploitation may allow authenticated attackers to get disclosure of sensitive system files and credentials, while unauthenticated attackers may gain access to non-sensitive static assets.
 </code>
 
 - [l0lsec/tapo-c260-rce](https://github.com/l0lsec/tapo-c260-rce)
@@ -66,6 +66,7 @@
 - [KOSEC-LLC/BYOVD-Research](https://github.com/KOSEC-LLC/BYOVD-Research)
 - [DeathShotXD/0xKern3lCrush-Foreverday-BYOVD-CVE-2026-0828](https://github.com/DeathShotXD/0xKern3lCrush-Foreverday-BYOVD-CVE-2026-0828)
 - [ANYLNK/STProcessMonitorBYOVD](https://github.com/ANYLNK/STProcessMonitorBYOVD)
+- [oxfemale/KillChain](https://github.com/oxfemale/KillChain)
 
 ### CVE-2026-0834 (2026-01-21)
 
@@ -367,6 +368,13 @@
 
 - [ali-py3/exploit-CVE-2026-2670](https://github.com/ali-py3/exploit-CVE-2026-2670)
 
+### CVE-2026-2699 (2026-04-02)
+
+<code>Customer Managed ShareFile Storage Zones Controller (SZC) allows an unauthenticated attacker to access restricted configuration pages. This leads to changing system configuration and potential remote code execution.
+</code>
+
+- [watchtowrlabs/watchTowr-vs-Progress-ShareFile-CVE-2026-2699](https://github.com/watchtowrlabs/watchTowr-vs-Progress-ShareFile-CVE-2026-2699)
+
 ### CVE-2026-2749 (2026-02-27)
 
 <code>Vulnerability in Centreon Centreon Open Tickets on Central Server on Linux (Centroen Open Ticket modules).This issue affects Centreon Open Tickets on Central Server: from all before 25.10.3, 24.10.8, 24.04.7.
@@ -534,6 +542,13 @@
 
 - [Perl-Code/CVE-2026-5000](https://github.com/Perl-Code/CVE-2026-5000)
 
+### CVE-2026-5027 (2026-03-27)
+
+<code>The 'POST /api/v2/files' endpoint does not sanitize the 'filename' parameter from the multipart form data, allowing an attacker to write files to arbitrary locations on the filesystem using path traversal sequences ('../').
+</code>
+
+- [yahiahamza/CVE-2026-5027](https://github.com/yahiahamza/CVE-2026-5027)
+
 ### CVE-2026-5201 (2026-03-31)
 
 <code>A flaw was found in the gdk-pixbuf library. This heap-based buffer overflow vulnerability occurs in the JPEG image loader due to improper validation of color component counts when processing a specially crafted JPEG image. A remote attacker can exploit this flaw without user interaction, for example, via thumbnail generation. Successful exploitation leads to application crashes and denial of service (DoS) conditions.
@@ -607,7 +622,7 @@
 
 ### CVE-2026-20660 (2026-02-11)
 
-<code>A path handling issue was addressed with improved logic. This issue is fixed in macOS Tahoe 26.3, macOS Sonoma 14.8.4, iOS 18.7.5 and iPadOS 18.7.5, visionOS 26.3, iOS 26.3 and iPadOS 26.3, Safari 26.3. A remote user may be able to write arbitrary files.
+<code>A path handling issue was addressed with improved logic. This issue is fixed in Safari 26.3, iOS 18.7.5 and iPadOS 18.7.5, iOS 26.3 and iPadOS 26.3, macOS Sequoia 15.7.5, macOS Sonoma 14.8.4, macOS Tahoe 26.3, visionOS 26.3. A remote user may be able to write arbitrary files.
 </code>
 
 - [retX0/CVE-2026-20660](https://github.com/retX0/CVE-2026-20660)
@@ -783,6 +798,13 @@
 
 - [yallasec/CVE-2026-21627---Tassos-Novarain-Framework-plg_system_nrframework-Exploit---Joomla](https://github.com/yallasec/CVE-2026-21627---Tassos-Novarain-Framework-plg_system_nrframework-Exploit---Joomla)
 
+### CVE-2026-21628 (2026-03-05)
+
+<code>A improperly secured file management feature allows uploads of dangerous data types for unauthenticated users, leading to remote code execution.
+</code>
+
+- [webshellseo8/CVE-2026-21628-POC](https://github.com/webshellseo8/CVE-2026-21628-POC)
+
 ### CVE-2026-21643 (2026-02-06)
 
 <code>An improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiClientEMS 7.4.4 may allow an unauthenticated attacker to execute unauthorized code or commands via specifically crafted HTTP requests.
@@ -938,6 +960,13 @@
 
 - [NULL200OK/CVE-2026-22730-Scanner](https://github.com/NULL200OK/CVE-2026-22730-Scanner)
 
+### CVE-2026-22738 (2026-03-27)
+
+<code>In Spring AI, a SpEL injection vulnerability exists in SimpleVectorStore when a user-supplied value is used as a filter expression key. A malicious actor could exploit this to execute arbitrary code. Only applications that use SimpleVectorStore and pass user-supplied input as a filter expression key are affected.\nThis issue affects Spring AI: from 1.0.0 before 1.0.5, from 1.1.0 before 1.1.4.
+</code>
+
+- [n0n4m3x41/CVE-2026-22738-POC](https://github.com/n0n4m3x41/CVE-2026-22738-POC)
+
 ### CVE-2026-22777 (2026-01-10)
 
 <code>ComfyUI-Manager is an extension designed to enhance the usability of ComfyUI. Prior to versions 3.39.2 and 4.0.5, an attacker can inject special characters into HTTP query parameters to add arbitrary configuration values to the config.ini file. This can lead to security setting tampering or modification of application behavior. This issue has been patched in versions 3.39.2 and 4.0.5.
@@ -992,6 +1021,13 @@
 </code>
 
 - [qzhodl/CVE-2026-22862](https://github.com/qzhodl/CVE-2026-22862)
+
+### CVE-2026-23416 (2026-04-02)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nmm/mseal: update VMA end correctly on merge\n\nPreviously we stored the end of the current VMA in curr_end, and then upon\niterating to the next VMA updated curr_start to curr_end to advance to the\nnext VMA.\n\nHowever, this doesn't take into account the fact that a VMA might be\nupdated due to a merge by vma_modify_flags(), which can result in curr_end\nbeing stale and thus, upon setting curr_start to curr_end, ending up with\nan incorrect curr_start on the next iteration.\n\nResolve the issue by setting curr_end to vma-&gt;vm_end unconditionally to\nensure this value remains updated should this occur.\n\nWhile we're here, eliminate this entire class of bug by simply setting\nconst curr_[start/end] to be clamped to the input range and VMAs, which\nalso happens to simplify the logic.
+</code>
+
+- [bluedragonsecurity/CVE-2026-23416-POC](https://github.com/bluedragonsecurity/CVE-2026-23416-POC)
 
 ### CVE-2026-23520 (2026-01-15)
 
@@ -1193,6 +1229,7 @@
 - [0xBlackash/CVE-2026-24061](https://github.com/0xBlackash/CVE-2026-24061)
 - [HD0x01/CVE-2026-24061-NSE](https://github.com/HD0x01/CVE-2026-24061-NSE)
 - [przemytn/CVE-2026-24061](https://github.com/przemytn/CVE-2026-24061)
+- [ekomsSavior/telnet_scan](https://github.com/ekomsSavior/telnet_scan)
 
 ### CVE-2026-24102
 - [SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition](https://github.com/SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition)
@@ -1357,6 +1394,9 @@
 </code>
 
 - [danaug23/detect_CVE-2026-25177](https://github.com/danaug23/detect_CVE-2026-25177)
+
+### CVE-2026-25197
+- [MichaelAdamGroberman/CVE-2026-25197](https://github.com/MichaelAdamGroberman/CVE-2026-25197)
 
 ### CVE-2026-25211 (2026-01-30)
 
@@ -1845,7 +1885,7 @@
 
 ### CVE-2026-27876 (2026-03-27)
 
-<code>A chained attack via SQL Expressions and a Grafana Enterprise plugin can lead to a remote arbitrary code execution impact (RCE). This is enabled by a feature in Grafana (OSS), so all users are always recommended to update to avoid future attack vectors going this path.\n\nOnly instances with the sqlExpressions feature toggle enabled are vulnerable.
+<code>A chained attack via SQL Expressions and a Grafana Enterprise plugin can lead to a remote arbitrary code execution impact (RCE). This is enabled by a feature in Grafana (OSS), so all users are always recommended to update to avoid future attack vectors going this path.\n\nOnly instances with the sqlExpressions feature toggle enabled are vulnerable.\n\nOnly instances in the following version ranges are affected:\n\n- 11.6.0 (inclusive) to 11.6.14 (exclusive): 11.6.14 has the fix. 11.5 and below are not affected.\n- 12.0.0 (inclusive) to 12.1.10 (exclusive): 12.1.10 has the fix. 12.0 did not receive an update, as it is end-of-life.\n- 12.2.0 (inclusive) to 12.2.8 (exclusive): 12.2.8 has the fix.\n- 12.3.0 (inclusive) to 12.3.6 (exclusive): 12.3.6 has the fix.\n- 12.4.0 (inclusive) to 12.4.2 (exclusive): 12.4.2 has the fix. 13.0.0 and above also have the fix: no v13 release is affected.
 </code>
 
 - [0xBlackash/CVE-2026-27876](https://github.com/0xBlackash/CVE-2026-27876)
@@ -1872,6 +1912,7 @@
 - [NULL200OK/CVE-2026-27944](https://github.com/NULL200OK/CVE-2026-27944)
 - [NULL200OK/-nginxui_discover](https://github.com/NULL200OK/-nginxui_discover)
 - [Skynoxk/CVE-2026-27944](https://github.com/Skynoxk/CVE-2026-27944)
+- [Goultarde/CVE-2026-27944-poc](https://github.com/Goultarde/CVE-2026-27944-poc)
 
 ### CVE-2026-27959 (2026-02-26)
 
@@ -1909,6 +1950,13 @@
 </code>
 
 - [Orioning/CVE-2026-28466](https://github.com/Orioning/CVE-2026-28466)
+
+### CVE-2026-28766
+- [MichaelAdamGroberman/ICSA-26-055-03](https://github.com/MichaelAdamGroberman/ICSA-26-055-03)
+- [MichaelAdamGroberman/CVE-2026-28766](https://github.com/MichaelAdamGroberman/CVE-2026-28766)
+
+### CVE-2026-28767
+- [MichaelAdamGroberman/CVE-2026-28767](https://github.com/MichaelAdamGroberman/CVE-2026-28767)
 
 ### CVE-2026-29000 (2026-03-04)
 
@@ -2031,7 +2079,11 @@
 
 - [Cr0wld3r/CVE-2026-30082](https://github.com/Cr0wld3r/CVE-2026-30082)
 
-### CVE-2026-30332
+### CVE-2026-30332 (2026-04-02)
+
+<code>A Time-of-Check to Time-of-Use (TOCTOU) race condition vulnerability in Balena Etcher for Windows prior to v2.1.4 allows attackers to escalate privileges and execute arbitrary code via replacing a legitimate script with a crafted payload during the flashing process.
+</code>
+
 - [B1tBreaker/CVE-2026-30332](https://github.com/B1tBreaker/CVE-2026-30332)
 
 ### CVE-2026-30345 (2026-03-18)
@@ -2191,6 +2243,12 @@
 </code>
 
 - [gibmat/CVE-2026-32606-POC](https://github.com/gibmat/CVE-2026-32606-POC)
+
+### CVE-2026-32646
+- [MichaelAdamGroberman/CVE-2026-32646](https://github.com/MichaelAdamGroberman/CVE-2026-32646)
+
+### CVE-2026-32662
+- [MichaelAdamGroberman/CVE-2026-32662](https://github.com/MichaelAdamGroberman/CVE-2026-32662)
 
 ### CVE-2026-32722 (2026-03-18)
 
@@ -2366,7 +2424,11 @@
 
 - [skoveit/CVE-2026-34227](https://github.com/skoveit/CVE-2026-34227)
 
-### CVE-2026-34828
+### CVE-2026-34828 (2026-04-02)
+
+<code>listmonk is a standalone, self-hosted, newsletter and mailing list manager. From version 4.1.0 to before version 6.1.0, a session management vulnerability allows previously issued authenticated sessions to remain valid after sensitive account security changes, specifically password reset and password change. As a result, an attacker who has already obtained a valid session cookie can retain access to the account even after the victim changes or resets their password. This weakens account recovery and session security guarantees. This issue has been patched in version 6.1.0.
+</code>
+
 - [0xmrma/CVE-2026-34828](https://github.com/0xmrma/CVE-2026-34828)
 
 
@@ -4575,6 +4637,9 @@
 
 - [jFriedli/CVE-2025-10658](https://github.com/jFriedli/CVE-2025-10658)
 
+### CVE-2025-10681
+- [MichaelAdamGroberman/CVE-2025-10681](https://github.com/MichaelAdamGroberman/CVE-2025-10681)
+
 ### CVE-2025-10720 (2025-10-13)
 
 <code>The WP Private Content Plus through 3.6.2 provides a global content protection feature that requires a password. However, the access control check is based only on the presence of an unprotected client-side cookie. As a result, an unauthenticated attacker can completely bypass the password protection by manually setting the cookie value in their browser.
@@ -5758,7 +5823,7 @@
 
 ### CVE-2025-24085 (2025-01-27)
 
-<code>A use after free issue was addressed with improved memory management. This issue is fixed in visionOS 2.3, iOS 18.3 and iPadOS 18.3, macOS Sequoia 15.3, watchOS 11.3, tvOS 18.3. A malicious application may be able to elevate privileges. Apple is aware of a report that this issue may have been actively exploited against versions of iOS before iOS 17.2.
+<code>A use after free issue was addressed with improved memory management. This issue is fixed in iOS 18.3 and iPadOS 18.3, iPadOS 17.7.6, macOS Sequoia 15.3, macOS Sonoma 14.7.5, macOS Ventura 13.7.5, tvOS 18.3, visionOS 2.3, watchOS 11.3. A malicious application may be able to elevate privileges. Apple is aware of a report that this issue may have been actively exploited against versions of iOS before iOS 17.2.
 </code>
 
 - [JGoyd/Glass-Cage-iOS18-CVE-2025-24085-CVE-2025-24201](https://github.com/JGoyd/Glass-Cage-iOS18-CVE-2025-24085-CVE-2025-24201)
@@ -5772,7 +5837,7 @@
 
 ### CVE-2025-24104 (2025-01-27)
 
-<code>This issue was addressed with improved handling of symlinks. This issue is fixed in iPadOS 17.7.4, iOS 18.3 and iPadOS 18.3. Restoring a maliciously crafted backup file may lead to modification of protected system files.
+<code>This issue was addressed with improved handling of symlinks. This issue is fixed in iOS 18.3 and iPadOS 18.3, iPadOS 17.7.4. Restoring a maliciously crafted backup file may lead to modification of protected system files.
 </code>
 
 - [ifpdz/CVE-2025-24104](https://github.com/ifpdz/CVE-2025-24104)
@@ -5787,7 +5852,7 @@
 
 ### CVE-2025-24132 (2025-04-30)
 
-<code>The issue was addressed with improved memory handling. This issue is fixed in AirPlay audio SDK 2.7.1, AirPlay video SDK 3.6.0.126, CarPlay Communication Plug-in R18.1. An attacker on the local network may cause an unexpected app termination.
+<code>The issue was addressed with improved memory handling. This issue is fixed in AirPlay audio SDK 2.7.1 and AirPlay video SDK 3.6.0.126. An attacker on the local network may cause an unexpected app termination.
 </code>
 
 - [Feralthedogg/CVE-2025-24132-Scanner](https://github.com/Feralthedogg/CVE-2025-24132-Scanner)
@@ -5795,7 +5860,7 @@
 
 ### CVE-2025-24201 (2025-03-11)
 
-<code>An out-of-bounds write issue was addressed with improved checks to prevent unauthorized actions. This issue is fixed in visionOS 2.3.2, iOS 18.3.2 and iPadOS 18.3.2, macOS Sequoia 15.3.2, Safari 18.3.1, watchOS 11.4, iPadOS 17.7.6, iOS 16.7.11 and iPadOS 16.7.11, iOS 15.8.4 and iPadOS 15.8.4. Maliciously crafted web content may be able to break out of Web Content sandbox. This is a supplementary fix for an attack that was blocked in iOS 17.2. (Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 17.2.).
+<code>An out-of-bounds write issue was addressed with improved checks to prevent unauthorized actions. This issue is fixed in Safari 18.3.1, iOS 15.8.4 and iPadOS 15.8.4, iOS 16.7.11 and iPadOS 16.7.11, iOS 18.3.2 and iPadOS 18.3.2, iPadOS 17.7.6, macOS Sequoia 15.3.2, visionOS 2.3.2, watchOS 11.4. Maliciously crafted web content may be able to break out of Web Content sandbox. This is a supplementary fix for an attack that was blocked in iOS 17.2. (Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 17.2.).
 </code>
 
 - [The-Maxu/CVE-2025-24201-WebKit-Vulnerability-Detector-PoC-](https://github.com/The-Maxu/CVE-2025-24201-WebKit-Vulnerability-Detector-PoC-)
@@ -5803,7 +5868,7 @@
 
 ### CVE-2025-24203 (2025-03-31)
 
-<code>The issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.7.5, iPadOS 17.7.6, macOS Sequoia 15.4, macOS Sonoma 14.7.5, iOS 18.4 and iPadOS 18.4, tvOS 18.4, visionOS 2.4, watchOS 11.4. An app may be able to modify protected parts of the file system.
+<code>The issue was addressed with improved checks. This issue is fixed in iOS 18.4 and iPadOS 18.4, iPadOS 17.7.6, macOS Sequoia 15.4, macOS Sonoma 14.7.5, macOS Ventura 13.7.5, tvOS 18.4, visionOS 2.4, watchOS 11.4. An app may be able to modify protected parts of the file system.
 </code>
 
 - [jailbreakdotparty/dirtyZero](https://github.com/jailbreakdotparty/dirtyZero)
@@ -5820,14 +5885,15 @@
 
 ### CVE-2025-24252 (2025-04-29)
 
-<code>A use-after-free issue was addressed with improved memory management. This issue is fixed in macOS Sequoia 15.4, tvOS 18.4, macOS Ventura 13.7.5, iPadOS 17.7.6, macOS Sonoma 14.7.5, iOS 18.4 and iPadOS 18.4, visionOS 2.4. An attacker on the local network may be able to corrupt process memory.
+<code>A use-after-free issue was addressed with improved memory management. This issue is fixed in iOS 18.4 and iPadOS 18.4, iPadOS 17.7.6, macOS Sequoia 15.4, macOS Sonoma 14.7.5, macOS Ventura 13.7.5, tvOS 18.4, visionOS 2.4. An attacker on the local network may be able to corrupt process memory.
 </code>
 
+- [ekomsSavior/AirBorne-PoC](https://github.com/ekomsSavior/AirBorne-PoC)
 - [cakescats/airborn-IOS-CVE-2025-24252](https://github.com/cakescats/airborn-IOS-CVE-2025-24252)
 
 ### CVE-2025-24271 (2025-04-29)
 
-<code>An access issue was addressed with improved access restrictions. This issue is fixed in macOS Sequoia 15.4, tvOS 18.4, macOS Ventura 13.7.5, iPadOS 17.7.6, macOS Sonoma 14.7.5, iOS 18.4 and iPadOS 18.4, visionOS 2.4. An unauthenticated user on the same network as a signed-in Mac could send it AirPlay commands without pairing.
+<code>An access issue was addressed with improved access restrictions. This issue is fixed in iOS 18.4 and iPadOS 18.4, iPadOS 17.7.6, macOS Sequoia 15.4, macOS Sonoma 14.7.5, macOS Ventura 13.7.5, tvOS 18.4, visionOS 2.4. An unauthenticated user on the same network as a signed-in Mac could send it AirPlay commands without pairing.
 </code>
 
 - [moften/CVE-2025-24271](https://github.com/moften/CVE-2025-24271)
@@ -6028,6 +6094,13 @@
 </code>
 
 - [airbus-cert/cve-2025-24985](https://github.com/airbus-cert/cve-2025-24985)
+
+### CVE-2025-24999 (2025-08-12)
+
+<code>Improper access control in SQL Server allows an authorized attacker to elevate privileges over a network.
+</code>
+
+- [emad-almousa/CVE-2025-24999](https://github.com/emad-almousa/CVE-2025-24999)
 
 ### CVE-2025-25014 (2025-05-06)
 
@@ -6414,6 +6487,7 @@
 
 - [rxerium/CVE-2025-26466](https://github.com/rxerium/CVE-2025-26466)
 - [mrowkoob/CVE-2025-26466-msf](https://github.com/mrowkoob/CVE-2025-26466-msf)
+- [tpirate/CVE-2025-26466](https://github.com/tpirate/CVE-2025-26466)
 
 ### CVE-2025-26529 (2025-02-24)
 
@@ -6996,6 +7070,7 @@
 - [dbwlsdnr95/CVE-2025-29927](https://github.com/dbwlsdnr95/CVE-2025-29927)
 - [sangrok-jeon/CVE-2025-29927-Nextjs-Analysis](https://github.com/sangrok-jeon/CVE-2025-29927-Nextjs-Analysis)
 - [Toddkk02/CVE-2025-29927](https://github.com/Toddkk02/CVE-2025-29927)
+- [metasploit403/cve-2025-29927-lab](https://github.com/metasploit403/cve-2025-29927-lab)
 
 ### CVE-2025-29943 (2026-01-16)
 
@@ -7238,7 +7313,7 @@
 
 ### CVE-2025-31200 (2025-04-16)
 
-<code>A memory corruption issue was addressed with improved bounds checking. This issue is fixed in tvOS 18.4.1, visionOS 2.4.1, iOS iOS 18.4.1 and iPadOS 18.4.1, macOS Sequoia 15.4.1. Processing an audio stream in a maliciously crafted media file may result in code execution. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on iOS.
+<code>A memory corruption issue was addressed with improved bounds checking. This issue is fixed in iOS 18.4.1 and iPadOS 18.4.1, macOS Sequoia 15.4.1, tvOS 18.4.1, visionOS 2.4.1, watchOS 11.5. Processing an audio stream in a maliciously crafted media file may result in code execution. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS released before iOS 18.4.1.
 </code>
 
 - [zhuowei/apple-positional-audio-codec-invalid-header](https://github.com/zhuowei/apple-positional-audio-codec-invalid-header)
@@ -7256,7 +7331,7 @@
 
 ### CVE-2025-31277 (2025-07-29)
 
-<code>The issue was addressed with improved memory handling. This issue is fixed in Safari 18.6, watchOS 11.6, visionOS 2.6, iOS 18.6 and iPadOS 18.6, macOS Sequoia 15.6, tvOS 18.6. Processing maliciously crafted web content may lead to memory corruption.
+<code>The issue was addressed with improved memory handling. This issue is fixed in Safari 18.6, iOS 18.6 and iPadOS 18.6, macOS Sequoia 15.6, tvOS 18.6, visionOS 2.6, watchOS 11.6. Processing maliciously crafted web content may lead to memory corruption.
 </code>
 
 - [stationedK-06/DarkSword_analysis](https://github.com/stationedK-06/DarkSword_analysis)
@@ -7477,6 +7552,7 @@
 </code>
 
 - [ProDefense/CVE-2025-32433](https://github.com/ProDefense/CVE-2025-32433)
+- [ekomsSavior/POC_CVE-2025-32433](https://github.com/ekomsSavior/POC_CVE-2025-32433)
 - [Epivalent/CVE-2025-32433-detection](https://github.com/Epivalent/CVE-2025-32433-detection)
 - [darses/CVE-2025-32433](https://github.com/darses/CVE-2025-32433)
 - [LemieOne/CVE-2025-32433](https://github.com/LemieOne/CVE-2025-32433)
@@ -7737,6 +7813,13 @@
 </code>
 
 - [Prabhukiran161/cve-2025-34036](https://github.com/Prabhukiran161/cve-2025-34036)
+
+### CVE-2025-34037 (2025-06-24)
+
+<code>An OS command injection vulnerability exists in various models of E-Series Linksys routers via the /tmUnblock.cgi and /hndUnblock.cgi endpoints over HTTP on port 8080. The CGI scripts improperly process user-supplied input passed to the ttcp_ip parameter without sanitization, allowing unauthenticated attackers to inject shell commands. This vulnerability was reported to be exploited in the wild by the &quot;TheMoon&quot; worm  in 2014 to deploy a MIPS ELF payload, enabling arbitrary code execution on the router. Additionally, this vulnerability may affect other Linksys products to include, but not limited to, WAG/WAP/WES/WET/WRT-series router models and Wireless-N access points and routers. Exploitation evidence was observed by the Shadowserver Foundation on 2025-02-06 UTC.
+</code>
+
+- [Taxanehh/CVE-2025-34037](https://github.com/Taxanehh/CVE-2025-34037)
 
 ### CVE-2025-34040 (2025-06-24)
 
@@ -8192,7 +8275,7 @@
 
 ### CVE-2025-43300 (2025-08-21)
 
-<code>An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 15.8.5 and iPadOS 15.8.5, iOS 16.7.12 and iPadOS 16.7.12. Processing a malicious image file may result in memory corruption. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals.
+<code>An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 15.8.5 and iPadOS 15.8.5, iOS 16.7.12 and iPadOS 16.7.12, iOS 18.6.2 and iPadOS 18.6.2, iPadOS 17.7.10, macOS Sequoia 15.6.1, macOS Sonoma 14.7.8, macOS Ventura 13.7.8. Processing a malicious image file may result in memory corruption. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals.
 </code>
 
 - [AR-DEV-1/CVE-2025-43300-exp](https://github.com/AR-DEV-1/CVE-2025-43300-exp)
@@ -8205,14 +8288,14 @@
 
 ### CVE-2025-43400 (2025-09-29)
 
-<code>An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in watchOS 26.1, tvOS 26.1. Processing a maliciously crafted font may lead to unexpected app termination or corrupt process memory.
+<code>An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 18.7.1 and iPadOS 18.7.1, iOS 26.0.1 and iPadOS 26.0.1, macOS Sequoia 15.7.1, macOS Sonoma 14.8.1, macOS Tahoe 26.0.1, tvOS 26.1, visionOS 26.0.1, watchOS 26.1. Processing a maliciously crafted font may lead to unexpected app termination or corrupt process memory.
 </code>
 
 - [csrXamfi/CVE-2025-43400](https://github.com/csrXamfi/CVE-2025-43400)
 
 ### CVE-2025-43426 (2025-11-04)
 
-<code>A logging issue was addressed with improved data redaction. This issue is fixed in macOS Tahoe 26.1, iOS 26.1 and iPadOS 26.1. An app may be able to access sensitive user data.
+<code>A logging issue was addressed with improved data redaction. This issue is fixed in iOS 26.1 and iPadOS 26.1, macOS Tahoe 26.1. An app may be able to access sensitive user data.
 </code>
 
 - [csrXamfi/CVE-2025-43426](https://github.com/csrXamfi/CVE-2025-43426)
@@ -8226,7 +8309,7 @@
 
 ### CVE-2025-43529 (2025-12-17)
 
-<code>A use-after-free issue was addressed with improved memory management. This issue is fixed in watchOS 26.2, Safari 26.2, iOS 18.7.3 and iPadOS 18.7.3, iOS 26.2 and iPadOS 26.2, macOS Tahoe 26.2, visionOS 26.2, tvOS 26.2. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 26. CVE-2025-14174 was also issued in response to this report.
+<code>A use-after-free issue was addressed with improved memory management. This issue is fixed in Safari 26.2, iOS 18.7.3 and iPadOS 18.7.3, iOS 26.2 and iPadOS 26.2, macOS Tahoe 26.2, tvOS 26.2, visionOS 26.2, watchOS 26.2. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 26. CVE-2025-14174 was also issued in response to this report.
 </code>
 
 - [jir4vv1t/CVE-2025-43529](https://github.com/jir4vv1t/CVE-2025-43529)
@@ -8741,7 +8824,7 @@
 - [dkstar11q/Blackash-CVE-2025-47812](https://github.com/dkstar11q/Blackash-CVE-2025-47812)
 - [matesz44/CVE-2025-47812](https://github.com/matesz44/CVE-2025-47812)
 - [shadowgit30/CVE-2025-47812](https://github.com/shadowgit30/CVE-2025-47812)
-- [Nara-sakurai/CVE-2025-47812-PoC](https://github.com/Nara-sakurai/CVE-2025-47812-PoC)
+- [havbay/CVE-2025-47812-PoC](https://github.com/havbay/CVE-2025-47812-PoC)
 - [estebanzarate/CVE-2025-47812-Wing-FTP-Server-7.4.3-Unauthenticated-RCE-PoC](https://github.com/estebanzarate/CVE-2025-47812-Wing-FTP-Server-7.4.3-Unauthenticated-RCE-PoC)
 - [popyue/CVE-2025-47812](https://github.com/popyue/CVE-2025-47812)
 - [0xjuarez/CVE-2025-47812](https://github.com/0xjuarez/CVE-2025-47812)
@@ -10562,6 +10645,7 @@
 - [l0lsec/cve-2025-55182-lab](https://github.com/l0lsec/cve-2025-55182-lab)
 - [0x0asif/CVE-2025-55182](https://github.com/0x0asif/CVE-2025-55182)
 - [amikanev/CVE-2025-55182-LAB](https://github.com/amikanev/CVE-2025-55182-LAB)
+- [hujiaozhuzhu/CVE-2025-55182_liyon](https://github.com/hujiaozhuzhu/CVE-2025-55182_liyon)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -17181,14 +17265,14 @@
 
 ### CVE-2024-23208 (2024-01-23)
 
-<code>The issue was addressed with improved memory handling. This issue is fixed in macOS Sonoma 14.3, watchOS 10.3, tvOS 17.3, iOS 17.3 and iPadOS 17.3. An app may be able to execute arbitrary code with kernel privileges.
+<code>The issue was addressed with improved memory handling. This issue is fixed in iOS 17.3 and iPadOS 17.3, macOS Sonoma 14.3, tvOS 17.3, watchOS 10.3. An app may be able to execute arbitrary code with kernel privileges.
 </code>
 
 - [hrtowii/CVE-2024-23208-test](https://github.com/hrtowii/CVE-2024-23208-test)
 
 ### CVE-2024-23222 (2024-01-23)
 
-<code>A type confusion issue was addressed with improved checks. This issue is fixed in iOS 17.3 and iPadOS 17.3, macOS Sonoma 14.3, tvOS 17.3, iOS 16.7.5 and iPadOS 16.7.5, iOS 15.8.7 and iPadOS 15.8.7. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been exploited.
+<code>A type confusion issue was addressed with improved checks. This issue is fixed in Safari 17.3, iOS 15.8.7 and iPadOS 15.8.7, iOS 16.7.5 and iPadOS 16.7.5, iOS 17.3 and iPadOS 17.3, macOS Monterey 12.7.3, macOS Sonoma 14.3, macOS Ventura 13.6.4, tvOS 17.3, visionOS 1.0.2. Processing maliciously crafted web content may lead to arbitrary code execution. This fix associated with the Coruna exploit was shipped in iOS 17.3 on January 22, 2024. This update brings that fix to devices that cannot update to the latest iOS version.
 </code>
 
 - [Rohitberiwala/CVE-2024-23222-Coruna-Exploit-Kit-Deobfuscated](https://github.com/Rohitberiwala/CVE-2024-23222-Coruna-Exploit-Kit-Deobfuscated)
@@ -17197,14 +17281,14 @@
 
 ### CVE-2024-23296 (2024-03-05)
 
-<code>A memory corruption issue was addressed with improved validation. This issue is fixed in iOS 17.4 and iPadOS 17.4. An attacker with arbitrary kernel read and write capability may be able to bypass kernel memory protections. Apple is aware of a report that this issue may have been exploited.
+<code>A memory corruption issue was addressed with improved validation. This issue is fixed in iOS 16.7.8 and iPadOS 16.7.8, iOS 17.4 and iPadOS 17.4, macOS Monterey 12.7.6, macOS Sonoma 14.4, macOS Ventura 13.6.7, tvOS 17.4, visionOS 1.1, watchOS 10.4. An attacker with arbitrary kernel read and write capability may be able to bypass kernel memory protections. Apple is aware of a report that this issue may have been exploited.
 </code>
 
 - [SimoesCTT/lCTT-Apple-Silicon--Resonance-Vulnerability-CVE-2024-23296](https://github.com/SimoesCTT/lCTT-Apple-Silicon--Resonance-Vulnerability-CVE-2024-23296)
 
 ### CVE-2024-23298 (2024-03-15)
 
-<code>A logic issue was addressed with improved state management.
+<code>A logic issue was addressed with improved state management. This issue is fixed in Xcode 15.3. An app may bypass Gatekeeper checks.
 </code>
 
 - [p1tsi/CVE-2024-23298.app](https://github.com/p1tsi/CVE-2024-23298.app)
@@ -18380,7 +18464,7 @@
 
 ### CVE-2024-27804 (2024-05-13)
 
-<code>The issue was addressed with improved memory handling. This issue is fixed in iOS 17.5 and iPadOS 17.5, tvOS 17.5, watchOS 10.5, macOS Sonoma 14.5. An app may be able to execute arbitrary code with kernel privileges.
+<code>The issue was addressed with improved memory handling. This issue is fixed in iOS 17.5 and iPadOS 17.5, macOS Sonoma 14.5, tvOS 17.5, visionOS 1.3, watchOS 10.5. An app may be able to cause unexpected system termination.
 </code>
 
 - [R00tkitSMM/CVE-2024-27804](https://github.com/R00tkitSMM/CVE-2024-27804)
@@ -18388,21 +18472,21 @@
 
 ### CVE-2024-27815 (2024-06-10)
 
-<code>An out-of-bounds write issue was addressed with improved input validation. This issue is fixed in tvOS 17.5, visionOS 1.2, iOS 17.5 and iPadOS 17.5, watchOS 10.5, macOS Sonoma 14.5. An app may be able to execute arbitrary code with kernel privileges.
+<code>An out-of-bounds write issue was addressed with improved input validation. This issue is fixed in iOS 17.5 and iPadOS 17.5, macOS Sonoma 14.5, tvOS 17.5, visionOS 1.2, watchOS 10.5. An app may be able to execute arbitrary code with kernel privileges.
 </code>
 
 - [jprx/CVE-2024-27815](https://github.com/jprx/CVE-2024-27815)
 
 ### CVE-2024-27821 (2024-05-13)
 
-<code>A path handling issue was addressed with improved validation. This issue is fixed in iOS 17.5 and iPadOS 17.5, watchOS 10.5, macOS Sonoma 14.5. A shortcut may output sensitive user data without consent.
+<code>A path handling issue was addressed with improved validation. This issue is fixed in iOS 17.5 and iPadOS 17.5, macOS Sonoma 14.5, watchOS 10.5. A shortcut may output sensitive user data without consent.
 </code>
 
 - [0xilis/CVE-2024-27821](https://github.com/0xilis/CVE-2024-27821)
 
 ### CVE-2024-27876 (2024-09-16)
 
-<code>A race condition was addressed with improved locking. This issue is fixed in macOS Ventura 13.7, iOS 17.7 and iPadOS 17.7, visionOS 2, iOS 18 and iPadOS 18, macOS Sonoma 14.7, macOS Sequoia 15. Unpacking a maliciously crafted archive may allow an attacker to write arbitrary files.
+<code>A race condition was addressed with improved locking. This issue is fixed in iOS 17.7 and iPadOS 17.7, iOS 18 and iPadOS 18, macOS Sequoia 15, macOS Sonoma 14.7, macOS Ventura 13.7, visionOS 2. Unpacking a maliciously crafted archive may allow an attacker to write arbitrary files.
 </code>
 
 - [0xilis/CVE-2024-27876](https://github.com/0xilis/CVE-2024-27876)
@@ -20934,7 +21018,7 @@
 
 ### CVE-2024-40815 (2024-07-29)
 
-<code>A race condition was addressed with additional validation. This issue is fixed in macOS Ventura 13.6.8, iOS 17.6 and iPadOS 17.6, watchOS 10.6, tvOS 17.6, macOS Sonoma 14.6. A malicious attacker with arbitrary read and write capability may be able to bypass Pointer Authentication.
+<code>A race condition was addressed with additional validation. This issue is fixed in iOS 17.6 and iPadOS 17.6, macOS Sonoma 14.6, macOS Ventura 13.6.8, tvOS 17.6, watchOS 10.6. A malicious attacker with arbitrary read and write capability may be able to bypass Pointer Authentication.
 </code>
 
 - [w0wbox/CVE-2024-40815](https://github.com/w0wbox/CVE-2024-40815)
@@ -21457,14 +21541,14 @@
 
 ### CVE-2024-44193 (2024-10-02)
 
-<code>A logic issue was addressed with improved restrictions. This issue is fixed in iTunes 12.13.3 for Windows. A local attacker may be able to elevate  their privileges.
+<code>A logic issue was addressed with improved restrictions. This issue is fixed in iTunes 12.13.3 for Windows. A local attacker may be able to elevate their privileges.
 </code>
 
 - [mbog14/CVE-2024-44193](https://github.com/mbog14/CVE-2024-44193)
 
 ### CVE-2024-44258 (2024-10-28)
 
-<code>This issue was addressed with improved handling of symlinks. This issue is fixed in iOS 18.1 and iPadOS 18.1, iOS 17.7.1 and iPadOS 17.7.1, visionOS 2.1, tvOS 18.1. Restoring a maliciously crafted backup file may lead to modification of protected system files.
+<code>This issue was addressed with improved handling of symlinks. This issue is fixed in iOS 17.7.1 and iPadOS 17.7.1, iOS 18.1 and iPadOS 18.1, tvOS 18.1, visionOS 2.1. Restoring a maliciously crafted backup file may lead to modification of protected system files.
 </code>
 
 - [ifpdz/CVE-2024-44258](https://github.com/ifpdz/CVE-2024-44258)
@@ -21472,14 +21556,14 @@
 
 ### CVE-2024-44285 (2024-10-28)
 
-<code>A use-after-free issue was addressed with improved memory management. This issue is fixed in iOS 18.1 and iPadOS 18.1, watchOS 11.1, visionOS 2.1, tvOS 18.1. An app may be able to cause unexpected system termination or corrupt kernel memory.
+<code>A use-after-free issue was addressed with improved memory management. This issue is fixed in iOS 18.1 and iPadOS 18.1, macOS Sequoia 15.1, tvOS 18.1, visionOS 2.1, watchOS 11.1. An app may be able to cause unexpected system termination or corrupt kernel memory.
 </code>
 
 - [slds1/explt](https://github.com/slds1/explt)
 
 ### CVE-2024-44308 (2024-11-19)
 
-<code>The issue was addressed with improved checks. This issue is fixed in Safari 18.1.1, iOS 17.7.2 and iPadOS 17.7.2, macOS Sequoia 15.1.1, iOS 18.1.1 and iPadOS 18.1.1, visionOS 2.1.1. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited on Intel-based Mac systems.
+<code>The issue was addressed with improved checks. This issue is fixed in Safari 18.1.1, iOS 17.7.2 and iPadOS 17.7.2, iOS 18.1.1 and iPadOS 18.1.1, macOS Sequoia 15.1.1, visionOS 2.1.1. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited on Intel-based Mac systems.
 </code>
 
 - [migopp/cve-2024-44308](https://github.com/migopp/cve-2024-44308)
@@ -23368,14 +23452,14 @@
 
 ### CVE-2024-54498 (2024-12-11)
 
-<code>A path handling issue was addressed with improved validation. This issue is fixed in macOS Sequoia 15.2, macOS Ventura 13.7.2, macOS Sonoma 14.7.2. An app may be able to break out of its sandbox.
+<code>A path handling issue was addressed with improved validation. This issue is fixed in macOS Sequoia 15.2, macOS Sonoma 14.7.2, macOS Ventura 13.7.2. An app may be able to break out of its sandbox.
 </code>
 
 - [wh1te4ever/CVE-2024-54498-PoC](https://github.com/wh1te4ever/CVE-2024-54498-PoC)
 
 ### CVE-2024-54507 (2025-01-27)
 
-<code>A type confusion issue was addressed with improved memory handling. This issue is fixed in macOS Sequoia 15.2, iOS 18.2 and iPadOS 18.2. An attacker with user privileges may be able to read kernel memory.
+<code>A type confusion issue was addressed with improved memory handling. This issue is fixed in iOS 18.2 and iPadOS 18.2, macOS Sequoia 15.2. An attacker with user privileges may be able to read kernel memory.
 </code>
 
 - [jprx/CVE-2024-54507](https://github.com/jprx/CVE-2024-54507)
@@ -32961,6 +33045,13 @@
 
 - [ahrixia/CVE-2023-50072](https://github.com/ahrixia/CVE-2023-50072)
 
+### CVE-2023-50094 (2024-01-01)
+
+<code>reNgine before 2.1.2 allows OS Command Injection if an adversary has a valid session ID. The attack places shell metacharacters in an api/tools/waf_detector/?url= string. The commands are executed as root via subprocess.check_output.
+</code>
+
+- [Zierax/CVE-2023-50094_POC](https://github.com/Zierax/CVE-2023-50094_POC)
+
 ### CVE-2023-50131
 - [sajaljat/CVE-2023-50131](https://github.com/sajaljat/CVE-2023-50131)
 
@@ -40446,6 +40537,7 @@
 - [lof1sec/CVE-2022-46169](https://github.com/lof1sec/CVE-2022-46169)
 - [RdBBB3/SHELL-POC-CVE-2022-46169](https://github.com/RdBBB3/SHELL-POC-CVE-2022-46169)
 - [alv-david/CVE-2022-46169-Cacti-1.2.22](https://github.com/alv-david/CVE-2022-46169-Cacti-1.2.22)
+- [nicostan15/CVE-2022-46169](https://github.com/nicostan15/CVE-2022-46169)
 
 ### CVE-2022-46175 (2022-12-24)
 
@@ -41572,7 +41664,6 @@
 - [halissha/CVE-2021-3156](https://github.com/halissha/CVE-2021-3156)
 - [sharkmoos/Baron-Samedit](https://github.com/sharkmoos/Baron-Samedit)
 - [chenaotian/CVE-2021-3156](https://github.com/chenaotian/CVE-2021-3156)
-- [ret2basic/SudoScience](https://github.com/ret2basic/SudoScience)
 - [RodricBr/CVE-2021-3156](https://github.com/RodricBr/CVE-2021-3156)
 - [ypl6/heaplens](https://github.com/ypl6/heaplens)
 - [q77190858/CVE-2021-3156](https://github.com/q77190858/CVE-2021-3156)
@@ -42151,19 +42242,13 @@
 
 - [Grayhaxor/CVE-2021-21148](https://github.com/Grayhaxor/CVE-2021-21148)
 
-### CVE-2021-21191 (2021-03-16)
-
-<code>Use after free in WebRTC in Google Chrome prior to 89.0.4389.90 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
-</code>
-
-- [JacobTaylor3/CVE-2021-21191---CVE-2021-21192](https://github.com/JacobTaylor3/CVE-2021-21191---CVE-2021-21192)
-
 ### CVE-2021-21220 (2021-04-26)
 
 <code>Insufficient validation of untrusted input in V8 in Google Chrome prior to 89.0.4389.128 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
 </code>
 
 - [AmesianX/CVE-2021-21220](https://github.com/AmesianX/CVE-2021-21220)
+- [JacobTaylor3/CVE-2021-21220](https://github.com/JacobTaylor3/CVE-2021-21220)
 
 ### CVE-2021-21234 (2021-01-05)
 
@@ -46501,6 +46586,7 @@
 - [baktistr/cve-2021-43798-enum](https://github.com/baktistr/cve-2021-43798-enum)
 - [notbside/CVE-2021-43798-PoC](https://github.com/notbside/CVE-2021-43798-PoC)
 - [Shoxake17/CVE-2021-43798](https://github.com/Shoxake17/CVE-2021-43798)
+- [kikechans/Grafana-LFI-Exploit-CVE-2021-43798-](https://github.com/kikechans/Grafana-LFI-Exploit-CVE-2021-43798-)
 
 ### CVE-2021-43799 (2022-01-25)
 
@@ -57807,7 +57893,6 @@
 </code>
 
 - [mgargiullo/cve-2018-1207](https://github.com/mgargiullo/cve-2018-1207)
-- [theinkbit/CVE-2018-1207](https://github.com/theinkbit/CVE-2018-1207)
 - [hironull/CVE-2018-1207-better](https://github.com/hironull/CVE-2018-1207-better)
 
 ### CVE-2018-1235 (2018-05-29)
@@ -60022,6 +60107,7 @@
 - [B1anda0/CVE-2018-13379](https://github.com/B1anda0/CVE-2018-13379)
 - [nivdolgin/CVE-2018-13379](https://github.com/nivdolgin/CVE-2018-13379)
 - [kh4sh3i/CVE-2018-13379](https://github.com/kh4sh3i/CVE-2018-13379)
+- [Zierax/CVE-2018-13379](https://github.com/Zierax/CVE-2018-13379)
 
 ### CVE-2018-13382 (2019-06-04)
 
@@ -60311,6 +60397,7 @@
 - [Remnant-DB/CVE-2018-15473](https://github.com/Remnant-DB/CVE-2018-15473)
 - [K3rn3l-32/Threaded-CVE-2018-15473](https://github.com/K3rn3l-32/Threaded-CVE-2018-15473)
 - [wtbacon/cve-2018-15473](https://github.com/wtbacon/cve-2018-15473)
+- [kikechans/SSH-Enum-CVE-2018-15473](https://github.com/kikechans/SSH-Enum-CVE-2018-15473)
 
 ### CVE-2018-15499 (2018-08-24)
 
@@ -61462,7 +61549,7 @@
 - [pelagornisandersi/WIndows-7-automated-exploitation-using-metasploit-framework-](https://github.com/pelagornisandersi/WIndows-7-automated-exploitation-using-metasploit-framework-)
 - [luckyman2907/SMB-Protocol-Vulnerability_CVE-2017-0144](https://github.com/luckyman2907/SMB-Protocol-Vulnerability_CVE-2017-0144)
 - [AdityaBhatt3010/VAPT-Report-on-SMB-Exploitation-in-Windows-10-Finance-Endpoint](https://github.com/AdityaBhatt3010/VAPT-Report-on-SMB-Exploitation-in-Windows-10-Finance-Endpoint)
-- [AbbeAlthany/Windows-7_och_CVE-2017-0144_Exploit](https://github.com/AbbeAlthany/Windows-7_och_CVE-2017-0144_Exploit)
+- [althany/CVE-2017-0144_Lab-Guide](https://github.com/althany/CVE-2017-0144_Lab-Guide)
 - [FireTemple/Blackash-CVE-2017-0144](https://github.com/FireTemple/Blackash-CVE-2017-0144)
 - [Mitsu-bis/Eternal-Blue-CVE-2017-0144-THM-Write-Up](https://github.com/Mitsu-bis/Eternal-Blue-CVE-2017-0144-THM-Write-Up)
 
@@ -69727,7 +69814,6 @@
 
 - [websecnl/Bulk_CVE-1999-0532_Scanner](https://github.com/websecnl/Bulk_CVE-1999-0532_Scanner)
 - [Rodney-O-C-Melby/dns-zone-transfer-test](https://github.com/Rodney-O-C-Melby/dns-zone-transfer-test)
-- [SleepTheGod/dns-zone-audit](https://github.com/SleepTheGod/dns-zone-audit)
 
 ### CVE-1999-0678 (2000-03-22)
 
