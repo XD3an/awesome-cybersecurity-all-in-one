@@ -549,6 +549,13 @@
 
 - [yahiahamza/CVE-2026-5027](https://github.com/yahiahamza/CVE-2026-5027)
 
+### CVE-2026-5147 (2026-03-30)
+
+<code>A security flaw has been discovered in YunaiV yudao-cloud up to 2026.01. This affects an unknown part of the file /admin-api/system/tenant/get-by-website. The manipulation of the argument Website results in sql injection. It is possible to launch the attack remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.
+</code>
+
+- [lan1oc/cve-2026-5147-exp](https://github.com/lan1oc/cve-2026-5147-exp)
+
 ### CVE-2026-5201 (2026-03-31)
 
 <code>A flaw was found in the gdk-pixbuf library. This heap-based buffer overflow vulnerability occurs in the JPEG image loader due to improper validation of color component counts when processing a specially crafted JPEG image. A remote attacker can exploit this flaw without user interaction, for example, via thumbnail generation. Successful exploitation leads to application crashes and denial of service (DoS) conditions.
@@ -1299,6 +1306,7 @@
 </code>
 
 - [poxsky/CVE-2026-24516-DigitalOcean-RCE](https://github.com/poxsky/CVE-2026-24516-DigitalOcean-RCE)
+- [poxsky/CVE-2026-24516-DigitalOcean-RCE.](https://github.com/poxsky/CVE-2026-24516-DigitalOcean-RCE.)
 
 ### CVE-2026-24688 (2026-01-27)
 
@@ -1973,6 +1981,7 @@
 - [PtechAmanja/CVE-2026-29000-pac4j-jwt-auth-bypass](https://github.com/PtechAmanja/CVE-2026-29000-pac4j-jwt-auth-bypass)
 - [ClayOfGilgamesh/CVE-2026-29000](https://github.com/ClayOfGilgamesh/CVE-2026-29000)
 - [0xW1LD/CVE-2026-29000](https://github.com/0xW1LD/CVE-2026-29000)
+- [yasirr10/CVE-2026-29000](https://github.com/yasirr10/CVE-2026-29000)
 
 ### CVE-2026-29041 (2026-03-06)
 
@@ -2307,12 +2316,33 @@
 - [z4yd3/PoC-CVE-2026-33017](https://github.com/z4yd3/PoC-CVE-2026-33017)
 - [EQSTLab/CVE-2026-33017](https://github.com/EQSTLab/CVE-2026-33017)
 
+### CVE-2026-33147 (2026-03-20)
+
+<code>GMT is an open source collection of command-line tools for manipulating geographic and Cartesian data sets. In versions from 6.6.0 and prior, a stack-based buffer overflow vulnerability was identified in the gmt_remote_dataset_id function within src/gmt_remote.c. This issue occurs when a specially crafted long string is passed as a dataset identifier (e.g., via the which module), leading to a crash or potential arbitrary code execution. This issue has been patched via commit 0ad2b49.
+</code>
+
+- [redyank/CVE-2026-33147](https://github.com/redyank/CVE-2026-33147)
+
 ### CVE-2026-33150 (2026-03-20)
 
 <code>libfuse is the reference implementation of the Linux FUSE. From version 3.18.0 to before version 3.18.2, a use-after-free vulnerability in the io_uring subsystem of libfuse allows a local attacker to crash FUSE filesystem processes and potentially execute arbitrary code. When io_uring thread creation fails due to resource exhaustion (e.g., cgroup pids.max), fuse_uring_start() frees the ring pool structure but stores the dangling pointer in the session state, leading to a use-after-free when the session shuts down. The trigger is reliable in containerized environments where cgroup pids.max limits naturally constrain thread creation. This issue has been patched in version 3.18.2.
 </code>
 
 - [abhinavagarwal07/abhinavagarwal07.github.io](https://github.com/abhinavagarwal07/abhinavagarwal07.github.io)
+
+### CVE-2026-33154 (2026-03-20)
+
+<code>dynaconf is a configuration management tool for Python. Prior to version 3.2.13, Dynaconf is vulnerable to Server-Side Template Injection (SSTI) due to unsafe template evaluation in the @Jinja resolver. When the jinja2 package is installed, Dynaconf evaluates template expressions embedded in configuration values without a sandboxed environment. This issue has been patched in version 3.2.13.
+</code>
+
+- [redyank/CVE-2026-33154](https://github.com/redyank/CVE-2026-33154)
+
+### CVE-2026-33310 (2026-03-24)
+
+<code>Intake is a package for finding, investigating, loading and disseminating data. Prior to version 2.0.9, the shell() syntax within parameter default values appears to be automatically expanded during the catalog parsing process. If a catalog contains a parameter default such as shell(&lt;command&gt;), the command may be executed when the catalog source is accessed. This means that if a user loads a malicious catalog YAML, embedded commands could execute on the host system. Version 2.0.9 mitigates the issue by making getshell False by default everywhere.
+</code>
+
+- [redyank/CVE-2026-33310](https://github.com/redyank/CVE-2026-33310)
 
 ### CVE-2026-33340 (2026-03-24)
 
@@ -2353,6 +2383,9 @@
 </code>
 
 - [SnailSploit/CVE-2026-33693](https://github.com/SnailSploit/CVE-2026-33693)
+
+### CVE-2026-33752
+- [redyank/CVE-2026-33752](https://github.com/redyank/CVE-2026-33752)
 
 ### CVE-2026-33868 (2026-03-27)
 
@@ -2423,6 +2456,9 @@
 </code>
 
 - [skoveit/CVE-2026-34227](https://github.com/skoveit/CVE-2026-34227)
+
+### CVE-2026-34444
+- [redyank/CVE-2026-34444](https://github.com/redyank/CVE-2026-34444)
 
 ### CVE-2026-34828 (2026-04-02)
 
@@ -7278,6 +7314,7 @@
 <code>runc is a CLI tool for spawning and running containers according to the OCI specification. In versions 1.2.7 and below, 1.3.0-rc.1 through 1.3.1, 1.4.0-rc.1 and 1.4.0-rc.2 files, runc would not perform sufficient verification that the source of the bind-mount (i.e., the container's /dev/null) was actually a real /dev/null inode when using the container's /dev/null to mask. This exposes two methods of attack:  an arbitrary mount gadget, leading to host information disclosure, host denial of service, container escape, or a bypassing of maskedPaths. This issue is fixed in versions 1.2.8, 1.3.3 and 1.4.0-rc.3.
 </code>
 
+- [sahar042/CVE-2025-31133](https://github.com/sahar042/CVE-2025-31133)
 - [skynet-f-nvidia/CVE-2025-31133](https://github.com/skynet-f-nvidia/CVE-2025-31133)
 - [scherepiuk/container-escape-ebpf](https://github.com/scherepiuk/container-escape-ebpf)
 - [C-h4ck-0/Learn-about-cve-2025-31133-poc](https://github.com/C-h4ck-0/Learn-about-cve-2025-31133-poc)
@@ -7813,13 +7850,6 @@
 </code>
 
 - [Prabhukiran161/cve-2025-34036](https://github.com/Prabhukiran161/cve-2025-34036)
-
-### CVE-2025-34037 (2025-06-24)
-
-<code>An OS command injection vulnerability exists in various models of E-Series Linksys routers via the /tmUnblock.cgi and /hndUnblock.cgi endpoints over HTTP on port 8080. The CGI scripts improperly process user-supplied input passed to the ttcp_ip parameter without sanitization, allowing unauthenticated attackers to inject shell commands. This vulnerability was reported to be exploited in the wild by the &quot;TheMoon&quot; worm  in 2014 to deploy a MIPS ELF payload, enabling arbitrary code execution on the router. Additionally, this vulnerability may affect other Linksys products to include, but not limited to, WAG/WAP/WES/WET/WRT-series router models and Wireless-N access points and routers. Exploitation evidence was observed by the Shadowserver Foundation on 2025-02-06 UTC.
-</code>
-
-- [Taxanehh/CVE-2025-34037](https://github.com/Taxanehh/CVE-2025-34037)
 
 ### CVE-2025-34040 (2025-06-24)
 
@@ -10257,7 +10287,6 @@
 - [c0rydoras/CVE-2025-55182](https://github.com/c0rydoras/CVE-2025-55182)
 - [CymulateResearch/React2Shell-Scanner](https://github.com/CymulateResearch/React2Shell-Scanner)
 - [0xPThree/cve-2025-55182](https://github.com/0xPThree/cve-2025-55182)
-- [SoICT-BKSEC/CVE-2025-55182-docker-lab](https://github.com/SoICT-BKSEC/CVE-2025-55182-docker-lab)
 - [acheong08/CVE-2025-55182-poc](https://github.com/acheong08/CVE-2025-55182-poc)
 - [jctommasi/react2shellVulnApp](https://github.com/jctommasi/react2shellVulnApp)
 - [shamo0/react2shell-PoC](https://github.com/shamo0/react2shell-PoC)
@@ -68045,6 +68074,7 @@
 - [nulltrace1336/PHP-CGI-Argument-Injection-Exploit](https://github.com/nulltrace1336/PHP-CGI-Argument-Injection-Exploit)
 - [waburig/Open-Worldwide-Application-Security-Project-OWASP-](https://github.com/waburig/Open-Worldwide-Application-Security-Project-OWASP-)
 - [hackherMind-Pixel/Vulnerable-Lab-Exploitation](https://github.com/hackherMind-Pixel/Vulnerable-Lab-Exploitation)
+- [tryj/CVE-2012-1823---PHP-CGI---RCE](https://github.com/tryj/CVE-2012-1823---PHP-CGI---RCE)
 
 ### CVE-2012-1831 (2012-07-05)
 
