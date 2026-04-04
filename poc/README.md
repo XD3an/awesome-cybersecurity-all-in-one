@@ -4938,13 +4938,6 @@
 
 - [kavin71725/CVE-2025-12543-Fix-for-Wildfly](https://github.com/kavin71725/CVE-2025-12543-Fix-for-Wildfly)
 
-### CVE-2025-12673 (2025-12-06)
-
-<code>The Flex QR Code Generator plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the update_qr_code() function in all versions up to, and including, 1.2.6. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
-</code>
-
-- [d0n601/CVE-2025-12673](https://github.com/d0n601/CVE-2025-12673)
-
 ### CVE-2025-12674 (2025-11-05)
 
 <code>The KiotViet Sync plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the create_media() function in all versions up to, and including, 1.8.5. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
@@ -5977,6 +5970,13 @@
 </code>
 
 - [cakescats/airborn-IOS-CVE-2025-24252](https://github.com/cakescats/airborn-IOS-CVE-2025-24252)
+
+### CVE-2025-24257 (2025-03-31)
+
+<code>An out-of-bounds write issue was addressed with improved input validation. This issue is fixed in iOS 18.4 and iPadOS 18.4, macOS Sequoia 15.4, visionOS 2.4, watchOS 11.4. An app may be able to cause unexpected system termination or write kernel memory.
+</code>
+
+- [Learningdisordercapital35/CVE_2025_24257----NOT-MINE](https://github.com/Learningdisordercapital35/CVE_2025_24257----NOT-MINE)
 
 ### CVE-2025-24271 (2025-04-29)
 
@@ -10727,6 +10727,7 @@
 - [amikanev/CVE-2025-55182-LAB](https://github.com/amikanev/CVE-2025-55182-LAB)
 - [hujiaozhuzhu/CVE-2025-55182_liyon](https://github.com/hujiaozhuzhu/CVE-2025-55182_liyon)
 - [aliksir/nextjs-security-scanner](https://github.com/aliksir/nextjs-security-scanner)
+- [toprak-t800/CVE-2025-55182](https://github.com/toprak-t800/CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -10737,6 +10738,7 @@
 - [kimtruth/CVE-2025-55183-poc](https://github.com/kimtruth/CVE-2025-55183-poc)
 - [williavs/nextjs-security-update](https://github.com/williavs/nextjs-security-update)
 - [X-Cotang/CVE-2025-55183_POC](https://github.com/X-Cotang/CVE-2025-55183_POC)
+- [omaidnebari/RSC-Scanner-POC](https://github.com/omaidnebari/RSC-Scanner-POC)
 - [StealthMoud/react-server-cve-lab](https://github.com/StealthMoud/react-server-cve-lab)
 
 ### CVE-2025-55184 (2025-12-11)
