@@ -464,6 +464,14 @@
 
 - [hacker1337itme/CVE-2026-3442](https://github.com/hacker1337itme/CVE-2026-3442)
 
+### CVE-2026-3502 (2026-03-30)
+
+<code>TrueConf Client downloads application update code and applies it without performing verification. An attacker who is able to influence the update delivery path can substitute a tampered update payload. If the payload is executed or installed by the updater, this may result in arbitrary code execution in the context of the updating process or user.
+</code>
+
+- [fevar54/CVE-2026-3502---TrueConf-Client-Update-Hijacking-PoC](https://github.com/fevar54/CVE-2026-3502---TrueConf-Client-Update-Hijacking-PoC)
+- [fevar54/CVE-2026-3502-Scanner---TrueConf-Vulnerability-Detection-Tool](https://github.com/fevar54/CVE-2026-3502-Scanner---TrueConf-Vulnerability-Detection-Tool)
+
 ### CVE-2026-3584 (2026-03-20)
 
 <code>The Kali Forms plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.4.9 via the 'form_process' function. This is due to the 'prepare_post_data' function mapping user-supplied keys directly into internal placeholder storage, combined with the use of 'call_user_func' on these placeholder values. This makes it possible for unauthenticated attackers to execute code on the server.
@@ -2375,6 +2383,13 @@
 
 - [redyank/CVE-2026-33310](https://github.com/redyank/CVE-2026-33310)
 
+### CVE-2026-33331 (2026-03-24)
+
+<code>oRPC is an tool that helps build APIs that are end-to-end type-safe and adhere to OpenAPI standards. Prior to version 1.13.9, a stored cross-site scripting (XSS) vulnerability exists in the OpenAPI documentation generation of orpc. If an attacker can control any field within the OpenAPI specification (such as info.description), they can break out of the JSON context and execute arbitrary JavaScript when a user views the generated API documentation. This issue has been patched in version 1.13.9.
+</code>
+
+- [abhayclasher/CVE-2026-33331](https://github.com/abhayclasher/CVE-2026-33331)
+
 ### CVE-2026-33340 (2026-03-24)
 
 <code>LoLLMs WEBUI provides the Web user interface for Lord of Large Language and Multi modal Systems. A critical Server-Side Request Forgery (SSRF) vulnerability has been identified in all known existing versions of `lollms-webui`. The `@router.post(&quot;/api/proxy&quot;)` endpoint allows unauthenticated attackers to force the server into making arbitrary GET requests. This can be exploited to access internal services, scan local networks, or exfiltrate sensitive cloud metadata (e.g., AWS/GCP IAM tokens). As of time of publication, no known patched versions are available.
@@ -2396,6 +2411,13 @@
 
 - [danwulff/astro_CVE-2026-33532](https://github.com/danwulff/astro_CVE-2026-33532)
 
+### CVE-2026-33579 (2026-03-31)
+
+<code>OpenClaw before 2026.3.28 contains a privilege escalation vulnerability in the /pair approve command path that fails to forward caller scopes into the core approval check. A caller with pairing privileges but without admin privileges can approve pending device requests asking for broader scopes including admin access by exploiting the missing scope validation in extensions/device-pair/index.ts and src/infra/device-pairing.ts.
+</code>
+
+- [atalovesyou/openclaw-security-checker](https://github.com/atalovesyou/openclaw-security-checker)
+
 ### CVE-2026-33634 (2026-03-23)
 
 <code>Trivy is a security scanner. On March 19, 2026, a threat actor used compromised credentials to publish a malicious Trivy v0.69.4 release, force-push 76 of 77 version tags in `aquasecurity/trivy-action` to credential-stealing malware, and replace all 7 tags in `aquasecurity/setup-trivy` with malicious commits. This incident is a continuation of the supply chain attack that began in late February 2026. Following the initial disclosure on March 1, credential rotation was performed but was not atomic (not all credentials were revoked simultaneously). The attacker could have use a valid token to exfiltrate newly rotated secrets during the rotation window (which lasted a few days). This could have allowed the attacker to retain access and execute the March 19 attack. Affected components include the `aquasecurity/trivy` Go / Container image version 0.69.4, the `aquasecurity/trivy-action` GitHub Action versions 0.0.1 – 0.34.2 (76/77), and the`aquasecurity/setup-trivy` GitHub Action versions 0.2.0 – 0.2.6, prior to the recreation of 0.2.6 with a safe commit. Known safe versions include versions 0.69.2 and 0.69.3 of the Trivy binary, version 0.35.0 of trivy-action, and version 0.2.6 of setup-trivy. Additionally, take other mitigations to ensure the safety of secrets. If there is any possibility that a compromised version ran in one's environment, all secrets accessible to affected pipelines must be treated as exposed and rotated immediately. Check whether one's organization pulled or executed Trivy v0.69.4 from any source. Remove any affected artifacts immediately. Review all workflows using `aquasecurity/trivy-action` or `aquasecurity/setup-trivy`. Those who referenced a version tag rather than a full commit SHA should check workflow run logs from March 19–20, 2026 for signs of compromise. Look for repositories named `tpcp-docs` in one's GitHub organization. The presence of such a repository may indicate that the fallback exfiltration mechanism was triggered and secrets were successfully stolen. Pin GitHub Actions to full, immutable commit SHA hashes, don't use mutable version tags.
@@ -2414,6 +2436,13 @@
 </code>
 
 - [SnailSploit/CVE-2026-33693](https://github.com/SnailSploit/CVE-2026-33693)
+
+### CVE-2026-33701 (2026-03-27)
+
+<code>OpenTelemetry Java Instrumentation provides OpenTelemetry auto-instrumentation and instrumentation libraries for Java. In versions prior to 2.26.1, the RMI instrumentation registered a custom endpoint that deserialized incoming data without applying serialization filters. On JDK version 16 and earlier, an attacker with network access to a JMX or RMI port on an instrumented JVM could exploit this to potentially achieve remote code execution. All three of the following conditions must be true to exploit this vulnerability: First, OpenTelemetry Java instrumentation is attached as a Java agent (`-javaagent`) on Java 16 or earlier. Second, JMX/RMI port has been explicitly configured via `-Dcom.sun.management.jmxremote.port` and is network-reachable. Third, gadget-chain-compatible library is present on the classpath. This results in arbitrary remote code execution with the privileges of the user running the instrumented JVM. For JDK &gt;= 17, no action is required, but upgrading is strongly encouraged. For JDK &lt; 17, upgrade to version 2.26.1 or later. As a workaround, set the system property `-Dotel.instrumentation.rmi.enabled=false` to disable the RMI integration.
+</code>
+
+- [pl4tyz/CVE-2026-33701-Unsafe-Deserialization-in-OpenTelemetry-Java-Agent-RMI-Instrumentation](https://github.com/pl4tyz/CVE-2026-33701-Unsafe-Deserialization-in-OpenTelemetry-Java-Agent-RMI-Instrumentation)
 
 ### CVE-2026-33752
 - [redyank/CVE-2026-33752](https://github.com/redyank/CVE-2026-33752)
@@ -2514,6 +2543,20 @@
 
 ### CVE-2026-35045
 - [FilipeGaudard/CVE-2026-35045-PoC](https://github.com/FilipeGaudard/CVE-2026-35045-PoC)
+
+### CVE-2026-35492
+- [redyank/CVE-2026-35492](https://github.com/redyank/CVE-2026-35492)
+
+### CVE-2026-35570
+- [Rickidevs/CVE-2026-35570](https://github.com/Rickidevs/CVE-2026-35570)
+
+### CVE-2026-35616 (2026-04-04)
+
+<code>A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.
+</code>
+
+- [0xBlackash/CVE-2026-35616](https://github.com/0xBlackash/CVE-2026-35616)
+- [z3r0h3ro/CVE-2026-35616-poc](https://github.com/z3r0h3ro/CVE-2026-35616-poc)
 
 
 ## 2025
@@ -3934,7 +3977,6 @@
 </code>
 
 - [ChaseHCS/CVE-2025-6514](https://github.com/ChaseHCS/CVE-2025-6514)
-- [darshjme/mcp-security-audit](https://github.com/darshjme/mcp-security-audit)
 
 ### CVE-2025-6543 (2025-06-25)
 
@@ -4951,13 +4993,6 @@
 </code>
 
 - [d0n601/CVE-2025-12720](https://github.com/d0n601/CVE-2025-12720)
-
-### CVE-2025-12721 (2025-12-06)
-
-<code>The g-FFL Cockpit plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.7.1 via the /server_status REST API endpoint due to a lack of capability checks. This makes it possible for unauthenticated attackers to extract information about the server.
-</code>
-
-- [d0n601/CVE-2025-12721](https://github.com/d0n601/CVE-2025-12721)
 
 ### CVE-2025-12735 (2025-11-05)
 
@@ -6661,6 +6696,13 @@
 - [absholi7ly/CVE-2025-27210_NodeJS_Path_Traversal_Exploit](https://github.com/absholi7ly/CVE-2025-27210_NodeJS_Path_Traversal_Exploit)
 - [mindeddu/Vulnerable-CVE-2025-27210](https://github.com/mindeddu/Vulnerable-CVE-2025-27210)
 
+### CVE-2025-27237 (2025-10-03)
+
+<code>In Zabbix Agent and Agent 2 on Windows, the OpenSSL configuration file is loaded from a path writable by low-privileged users, allowing malicious modification and potential local privilege escalation by injecting a DLL.
+</code>
+
+- [HackingLZ/CVE-2025-27237](https://github.com/HackingLZ/CVE-2025-27237)
+
 ### CVE-2025-27363 (2025-03-11)
 
 <code>An out of bounds write exists in FreeType versions 2.13.0 and below (newer versions of FreeType are not vulnerable) when attempting to parse font subglyph structures related to TrueType GX and variable font files. The vulnerable code assigns a signed short value to an unsigned long and then adds a static value causing it to wrap around and allocate too small of a heap buffer. The code then writes up to 6 signed long integers out of bounds relative to this buffer. This may result in arbitrary code execution. This vulnerability may have been exploited in the wild.
@@ -7152,6 +7194,7 @@
 - [Toddkk02/CVE-2025-29927](https://github.com/Toddkk02/CVE-2025-29927)
 - [hujiaozhuzhu/CVE-2025-29927__Next.js](https://github.com/hujiaozhuzhu/CVE-2025-29927__Next.js)
 - [metasploit403/cve-2025-29927-lab](https://github.com/metasploit403/cve-2025-29927-lab)
+- [shahin-shadow/nextjs-auth-bypass](https://github.com/shahin-shadow/nextjs-auth-bypass)
 
 ### CVE-2025-29943 (2026-01-16)
 
@@ -8372,6 +8415,13 @@
 </code>
 
 - [csrXamfi/CVE-2025-43400](https://github.com/csrXamfi/CVE-2025-43400)
+
+### CVE-2025-43407 (2025-11-04)
+
+<code>This issue was addressed with improved entitlements. This issue is fixed in iOS 26.1 and iPadOS 26.1, macOS Sequoia 15.7.2, macOS Sonoma 14.8.2, macOS Tahoe 26.1, tvOS 26.1, visionOS 26.1. An app may be able to break out of its sandbox.
+</code>
+
+- [mranonymous234/Sandbox-Escape-iOS-18.0-26.0](https://github.com/mranonymous234/Sandbox-Escape-iOS-18.0-26.0)
 
 ### CVE-2025-43426 (2025-11-04)
 
@@ -10728,6 +10778,7 @@
 - [hujiaozhuzhu/CVE-2025-55182_liyon](https://github.com/hujiaozhuzhu/CVE-2025-55182_liyon)
 - [aliksir/nextjs-security-scanner](https://github.com/aliksir/nextjs-security-scanner)
 - [toprak-t800/CVE-2025-55182](https://github.com/toprak-t800/CVE-2025-55182)
+- [porsellaj/cve-2025-55182-react2shell-analysis](https://github.com/porsellaj/cve-2025-55182-react2shell-analysis)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -11460,6 +11511,13 @@
 </code>
 
 - [0pepsi/CVE-2025-60458](https://github.com/0pepsi/CVE-2025-60458)
+
+### CVE-2025-60503 (2025-11-03)
+
+<code>A cross-site scripting (XSS) vulnerability exists in the administrative interface of ultimatefosters UltimatePOS 4.8 where input submitted in the purchase functionality is reflected without proper escaping in the admin log panel page in the 'reference No.' field. This flaw allows an authenticated attacker to execute arbitrary JavaScript in the context of an administrator's browser session, which could lead to session hijacking or other malicious actions.
+</code>
+
+- [H4zaz/CVE-2025-60503](https://github.com/H4zaz/CVE-2025-60503)
 
 ### CVE-2025-60574 (2025-11-07)
 
@@ -14055,6 +14113,7 @@
 - [hackura/xz-cve-2024-3094](https://github.com/hackura/xz-cve-2024-3094)
 - [michalAshurov/writeup-CVE-2024-3094](https://github.com/michalAshurov/writeup-CVE-2024-3094)
 - [extracoding-dozen/CVE-2024-3094](https://github.com/extracoding-dozen/CVE-2024-3094)
+- [ElinaNotElina/cve-2024-3094-analysis](https://github.com/ElinaNotElina/cve-2024-3094-analysis)
 
 ### CVE-2024-3105 (2024-06-15)
 
@@ -14158,6 +14217,7 @@
 - [Ravaan21/CVE-2024-3400](https://github.com/Ravaan21/CVE-2024-3400)
 - [tfrederick74656/cve-2024-3400-poc](https://github.com/tfrederick74656/cve-2024-3400-poc)
 - [pwnj0hn/CVE-2024-3400](https://github.com/pwnj0hn/CVE-2024-3400)
+- [HackingLZ/panrapidcheck](https://github.com/HackingLZ/panrapidcheck)
 - [Kr0ff/cve-2024-3400](https://github.com/Kr0ff/cve-2024-3400)
 - [zam89/CVE-2024-3400-pot](https://github.com/zam89/CVE-2024-3400-pot)
 - [terminalJunki3/CVE-2024-3400-Checker](https://github.com/terminalJunki3/CVE-2024-3400-Checker)
@@ -22512,6 +22572,7 @@
 - [1rhino2/SCRAPPED](https://github.com/1rhino2/SCRAPPED)
 - [onixgod/SOC335-Event-ID-313-CVE-2024-49138-Exploitation-Detected--Lest-Defend-Writeup](https://github.com/onixgod/SOC335-Event-ID-313-CVE-2024-49138-Exploitation-Detected--Lest-Defend-Writeup)
 - [Zedocun/soc-investigation-powershell-edrfreeze](https://github.com/Zedocun/soc-investigation-powershell-edrfreeze)
+- [vettrivel007/CVE-2024-49138](https://github.com/vettrivel007/CVE-2024-49138)
 
 ### CVE-2024-49328 (2024-10-20)
 
@@ -24832,6 +24893,7 @@
 - [SanjayRagavendar/Ubuntu-GameOver-Lay](https://github.com/SanjayRagavendar/Ubuntu-GameOver-Lay)
 - [Nkipohcs/CVE-2023-2640-CVE-2023-32629](https://github.com/Nkipohcs/CVE-2023-2640-CVE-2023-32629)
 - [K5LK/CVE-2023-2640-32629](https://github.com/K5LK/CVE-2023-2640-32629)
+- [z3usx01/CVE-2023-2640-3262-PoC](https://github.com/z3usx01/CVE-2023-2640-3262-PoC)
 
 ### CVE-2023-2645 (2023-05-11)
 
@@ -32021,6 +32083,7 @@
 </code>
 
 - [michalbednarski/TheLastBundleMismatch](https://github.com/michalbednarski/TheLastBundleMismatch)
+- [B-D-APL/silver-succotash](https://github.com/B-D-APL/silver-succotash)
 
 ### CVE-2023-45779 (2023-12-04)
 
@@ -49942,13 +50005,6 @@
 
 - [Al1ex/CVE-2020-9470](https://github.com/Al1ex/CVE-2020-9470)
 
-### CVE-2020-9472 (2020-03-16)
-
-<code>Umbraco CMS 8.5.3 allows an authenticated file upload (and consequently Remote Code Execution) via the Install Package functionality.
-</code>
-
-- [john-dooe/CVE-2020-9472](https://github.com/john-dooe/CVE-2020-9472)
-
 ### CVE-2020-9480 (2020-06-23)
 
 <code>In Apache Spark 2.4.5 and earlier, a standalone resource manager's master may be configured to require authentication (spark.authenticate) via a shared secret. When enabled, however, a specially-crafted RPC to the master can succeed in starting an application's resources on the Spark cluster, even without the shared key. This can be leveraged to execute shell commands on the host machine. This does not affect Spark clusters using other resource managers (YARN, Mesos, etc).
@@ -54514,13 +54570,6 @@
 </code>
 
 - [nikitapbst/cve-2019-6260](https://github.com/nikitapbst/cve-2019-6260)
-
-### CVE-2019-6263 (2019-01-16)
-
-<code>An issue was discovered in Joomla! before 3.9.2. Inadequate checks of the Global Configuration Text Filter settings allowed stored XSS.
-</code>
-
-- [praveensutar/CVE-2019-6263-Joomla-POC](https://github.com/praveensutar/CVE-2019-6263-Joomla-POC)
 
 ### CVE-2019-6329 (2019-06-25)
 
@@ -68492,6 +68541,7 @@
 - [yagnikkrish/metasploitable-penetration-testing-lab](https://github.com/yagnikkrish/metasploitable-penetration-testing-lab)
 - [brettsm/vsftpd2.3.4-backdoor-exploit](https://github.com/brettsm/vsftpd2.3.4-backdoor-exploit)
 - [Tr00jan99/PwnTillDawn-Portal-Walkthrough](https://github.com/Tr00jan99/PwnTillDawn-Portal-Walkthrough)
+- [Dahalsamir/CVE-2011-2523-exploit](https://github.com/Dahalsamir/CVE-2011-2523-exploit)
 
 ### CVE-2011-2553
 - [carlosrpastrana/cve-2011-2553](https://github.com/carlosrpastrana/cve-2011-2553)
