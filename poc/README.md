@@ -1952,6 +1952,13 @@
 
 - [0xBlackash/CVE-2026-28289](https://github.com/0xBlackash/CVE-2026-28289)
 
+### CVE-2026-28363 (2026-02-27)
+
+<code>In OpenClaw before 2026.2.23, tools.exec.safeBins validation for sort could be bypassed via GNU long-option abbreviations (such as --compress-prog) in allowlist mode, leading to approval-free execution paths that were intended to require approval. Only an exact string such as --compress-program was denied.
+</code>
+
+- [kaleth4/CVE-2026-28363](https://github.com/kaleth4/CVE-2026-28363)
+
 ### CVE-2026-28372 (2026-02-27)
 
 <code>telnetd in GNU inetutils through 2.7 allows privilege escalation that can be exploited by abusing systemd service credentials support added to the login(1) implementation of util-linux in release 2.40. This is related to client control over the CREDENTIALS_DIRECTORY environment variable, and requires an unprivileged local user to create a login.noauth file.
@@ -16913,6 +16920,7 @@
 - [SallocinAvalcante/lab-SMB-responder-CVE-2024-21413](https://github.com/SallocinAvalcante/lab-SMB-responder-CVE-2024-21413)
 - [E-m-e-k-a/Moniker-Link-Lab-Setup](https://github.com/E-m-e-k-a/Moniker-Link-Lab-Setup)
 - [TheMursalin/HTB-Mailing-A-Complete-Walkthrough](https://github.com/TheMursalin/HTB-Mailing-A-Complete-Walkthrough)
+- [pedro-lucas-melo/Estudo-de-Caso-CVE-2024-21413](https://github.com/pedro-lucas-melo/Estudo-de-Caso-CVE-2024-21413)
 
 ### CVE-2024-21513 (2024-07-15)
 
@@ -54570,6 +54578,13 @@
 </code>
 
 - [nikitapbst/cve-2019-6260](https://github.com/nikitapbst/cve-2019-6260)
+
+### CVE-2019-6263 (2019-01-16)
+
+<code>An issue was discovered in Joomla! before 3.9.2. Inadequate checks of the Global Configuration Text Filter settings allowed stored XSS.
+</code>
+
+- [praveensutar/CVE-2019-6263-Joomla-POC](https://github.com/praveensutar/CVE-2019-6263-Joomla-POC)
 
 ### CVE-2019-6329 (2019-06-25)
 
