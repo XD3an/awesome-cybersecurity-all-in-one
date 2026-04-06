@@ -942,6 +942,7 @@
 </code>
 
 - [GarethMSheldon/cve-2026-22557-unifi-detection](https://github.com/GarethMSheldon/cve-2026-22557-unifi-detection)
+- [0xBlackash/CVE-2026-22557](https://github.com/0xBlackash/CVE-2026-22557)
 
 ### CVE-2026-22610 (2026-01-10)
 
@@ -1035,6 +1036,13 @@
 
 - [qzhodl/CVE-2026-22862](https://github.com/qzhodl/CVE-2026-22862)
 
+### CVE-2026-23398 (2026-03-26)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nicmp: fix NULL pointer dereference in icmp_tag_validation()\n\nicmp_tag_validation() unconditionally dereferences the result of\nrcu_dereference(inet_protos[proto]) without checking for NULL.\nThe inet_protos[] array is sparse -- only about 15 of 256 protocol\nnumbers have registered handlers. When ip_no_pmtu_disc is set to 3\n(hardened PMTU mode) and the kernel receives an ICMP Fragmentation\nNeeded error with a quoted inner IP header containing an unregistered\nprotocol number, the NULL dereference causes a kernel panic in\nsoftirq context.\n\n Oops: general protection fault, probably for non-canonical address 0xdffffc0000000002: 0000 [#1] SMP KASAN NOPTI\n KASAN: null-ptr-deref in range [0x0000000000000010-0x0000000000000017]\n RIP: 0010:icmp_unreach (net/ipv4/icmp.c:1085 net/ipv4/icmp.c:1143)\n Call Trace:\n  &lt;IRQ&gt;\n  icmp_rcv (net/ipv4/icmp.c:1527)\n  ip_protocol_deliver_rcu (net/ipv4/ip_input.c:207)\n  ip_local_deliver_finish (net/ipv4/ip_input.c:242)\n  ip_local_deliver (net/ipv4/ip_input.c:262)\n  ip_rcv (net/ipv4/ip_input.c:573)\n  __netif_receive_skb_one_core (net/core/dev.c:6164)\n  process_backlog (net/core/dev.c:6628)\n  handle_softirqs (kernel/softirq.c:561)\n  &lt;/IRQ&gt;\n\nAdd a NULL check before accessing icmp_strict_tag_validation. If the\nprotocol has no registered handler, return false since it cannot\nperform strict tag validation.
+</code>
+
+- [JohannesLks/CVE-2026-23398](https://github.com/JohannesLks/CVE-2026-23398)
+
 ### CVE-2026-23416 (2026-04-02)
 
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nmm/mseal: update VMA end correctly on merge\n\nPreviously we stored the end of the current VMA in curr_end, and then upon\niterating to the next VMA updated curr_start to curr_end to advance to the\nnext VMA.\n\nHowever, this doesn't take into account the fact that a VMA might be\nupdated due to a merge by vma_modify_flags(), which can result in curr_end\nbeing stale and thus, upon setting curr_start to curr_end, ending up with\nan incorrect curr_start on the next iteration.\n\nResolve the issue by setting curr_end to vma-&gt;vm_end unconditionally to\nensure this value remains updated should this occur.\n\nWhile we're here, eliminate this entire class of bug by simply setting\nconst curr_[start/end] to be clamped to the input range and VMAs, which\nalso happens to simplify the logic.
@@ -1090,7 +1098,6 @@
 - [FrenzisRed/CVE-2026-23744](https://github.com/FrenzisRed/CVE-2026-23744)
 - [InzegoSec/CVE-2026-23744](https://github.com/InzegoSec/CVE-2026-23744)
 - [z4yd3/PoC-CVE-2026-23744](https://github.com/z4yd3/PoC-CVE-2026-23744)
-- [yassertioursi/htb-kobold-writeup](https://github.com/yassertioursi/htb-kobold-writeup)
 - [ctzisme/CVE-2026-23744](https://github.com/ctzisme/CVE-2026-23744)
 - [AhmadF77/CVE-2026-23744](https://github.com/AhmadF77/CVE-2026-23744)
 - [fcjaviergarcia/CVE-2026-23744-POC](https://github.com/fcjaviergarcia/CVE-2026-23744-POC)
@@ -1242,6 +1249,7 @@
 - [0xBlackash/CVE-2026-24061](https://github.com/0xBlackash/CVE-2026-24061)
 - [HD0x01/CVE-2026-24061-NSE](https://github.com/HD0x01/CVE-2026-24061-NSE)
 - [przemytn/CVE-2026-24061](https://github.com/przemytn/CVE-2026-24061)
+- [Risma2025/CVE-2026-24061-GNU-InetUtils-telnetd-Authentication-Bypass-Vulnerability](https://github.com/Risma2025/CVE-2026-24061-GNU-InetUtils-telnetd-Authentication-Bypass-Vulnerability)
 
 ### CVE-2026-24102
 - [SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition](https://github.com/SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition)
@@ -1551,6 +1559,7 @@
 
 - [hakaioffsec/CVE-2026-25769](https://github.com/hakaioffsec/CVE-2026-25769)
 - [Samres27/CVE-2026-25769---CVE-2026-25770](https://github.com/Samres27/CVE-2026-25769---CVE-2026-25770)
+- [njeru-codes/CVE-2026-25769](https://github.com/njeru-codes/CVE-2026-25769)
 
 ### CVE-2026-25807 (2026-02-09)
 
@@ -1945,6 +1954,13 @@
 
 - [Anon-Cyber-Team/CVE-2026-27966--RCE-in-Langflow](https://github.com/Anon-Cyber-Team/CVE-2026-27966--RCE-in-Langflow)
 
+### CVE-2026-28286 (2026-03-02)
+
+<code>ZimaOS is a fork of CasaOS, an operating system for Zima devices and x86-64 systems with UEFI. In version 1.5.2-beta3, the application enforces restrictions in the frontend/UI to prevent users from creating files or folders in internal OS paths. However, when interacting directly with the API, the restrictions are bypass-able. By sending a crafted request targeting paths like /etc, /usr, or other sensitive system directories, the API successfully creates files or directories in locations where normal users should have no write access. This indicates that the API does not properly validate the target path, allowing unauthorized operations on critical system directories. No known patch is publicly available.
+</code>
+
+- [Rushi9/zimaos-cve-2026-28286-arbitrary-file-write](https://github.com/Rushi9/zimaos-cve-2026-28286-arbitrary-file-write)
+
 ### CVE-2026-28289 (2026-03-03)
 
 <code>FreeScout is a free help desk and shared inbox built with PHP's Laravel framework. A patch bypass vulnerability for CVE-2026-27636 in FreeScout 1.8.206 and earlier allows any authenticated user with file upload permissions to achieve Remote Code Execution (RCE) on the server by uploading a malicious .htaccess file using a zero-width space character prefix to bypass the security check. The vulnerability exists in the sanitizeUploadedFileName() function in app/Http/Helper.php. The function contains a Time-of-Check to Time-of-Use (TOCTOU) flaw where the dot-prefix check occurs before sanitization removes invisible characters. This vulnerability is fixed in 1.8.207.
@@ -2078,6 +2094,9 @@
 
 - [qflksheep/CVE-2026-29909-MRCMS-vulnerability](https://github.com/qflksheep/CVE-2026-29909-MRCMS-vulnerability)
 
+### CVE-2026-29923
+- [Smarttfoxx/CVE-2026-29923](https://github.com/Smarttfoxx/CVE-2026-29923)
+
 ### CVE-2026-29954 (2026-03-30)
 
 <code>In KubePlus 4.1.4, the mutating webhook and kubeconfiggenerator components have an SSRF vulnerability when processing the chartURL field of ResourceComposition resources. The field is only URL-encoded without validating the target address. More critically, when kubeconfiggenerator uses wget to download charts, the chartURL is directly concatenated into the command, allowing attackers to inject wget's `--header` option to achieve arbitrary HTTP header injection.
@@ -2177,6 +2196,13 @@
 </code>
 
 - [FilipeGaudard/CVE-2026-30945-PoC](https://github.com/FilipeGaudard/CVE-2026-30945-PoC)
+
+### CVE-2026-30951 (2026-03-10)
+
+<code>Sequelize is a Node.js ORM tool. Prior to 6.37.8, there is SQL injection via unescaped cast type in JSON/JSONB where clause processing. The _traverseJSON() function splits JSON path keys on :: to extract a cast type, which is interpolated raw into CAST(... AS &lt;type&gt;) SQL. An attacker who controls JSON object keys can inject arbitrary SQL and exfiltrate data from any table. This vulnerability is fixed in 6.37.8.
+</code>
+
+- [EQSTLab/CVE-2026-30951](https://github.com/EQSTLab/CVE-2026-30951)
 
 ### CVE-2026-30952 (2026-03-10)
 
@@ -2860,6 +2886,20 @@
 - [xp3s/poc_CVE-2025-1716](https://github.com/xp3s/poc_CVE-2025-1716)
 - [0xDaeras/POC_CVE-2025-1716](https://github.com/0xDaeras/POC_CVE-2025-1716)
 - [danigil/cve-2025-1716](https://github.com/danigil/cve-2025-1716)
+
+### CVE-2025-1738 (2025-02-27)
+
+<code>A Password Transmitted over Query String vulnerability has been found in Trivision Camera NC227WF v5.8.0 from TrivisionSecurity, exposing this sensitive information to a third party.
+</code>
+
+- [n0n4m3x41/CVE-2025-1738](https://github.com/n0n4m3x41/CVE-2025-1738)
+
+### CVE-2025-1739 (2025-02-27)
+
+<code>An Authentication Bypass vulnerability has been found in Trivision Camera NC227WF v5.8.0 from TrivisionSecurity. This vulnerability allows an attacker to retrieve administrator's credentials in cleartext by sending a request against the server using curl with random credentials to &quot;/en/player/activex_pal.asp&quot; and successfully authenticating the application.
+</code>
+
+- [n0n4m3x41/CVE-2025-1739](https://github.com/n0n4m3x41/CVE-2025-1739)
 
 ### CVE-2025-1868 (2025-03-03)
 
@@ -17545,6 +17585,7 @@
 ### CVE-2024-23700
 - [canyie/CVE-2024-23700](https://github.com/canyie/CVE-2024-23700)
 - [kaitokidc500/CVE-2024-23700-C2-Server](https://github.com/kaitokidc500/CVE-2024-23700-C2-Server)
+- [vinh0212/CVE-2024-23700](https://github.com/vinh0212/CVE-2024-23700)
 
 ### CVE-2024-23708 (2024-05-07)
 
@@ -17898,7 +17939,7 @@
 <code>An issue in Shenzen Tenda Technology CP3V2.0 V11.10.00.2311090948 allows a local attacker to obtain sensitive information via the password component.
 </code>
 
-- [minj-ae/CVE-2024-24488](https://github.com/minj-ae/CVE-2024-24488)
+- [legacyobj/CVE-2024-24488](https://github.com/legacyobj/CVE-2024-24488)
 
 ### CVE-2024-24549 (2024-03-13)
 
@@ -20975,7 +21016,6 @@
 </code>
 
 - [Abdurahmon3236/CVE-2024-40110](https://github.com/Abdurahmon3236/CVE-2024-40110)
-- [thiagosmith/CVE-2024-40110](https://github.com/thiagosmith/CVE-2024-40110)
 - [AnGrY-Althaf/CVE-2024-40110](https://github.com/AnGrY-Althaf/CVE-2024-40110)
 
 ### CVE-2024-40111 (2024-08-23)
@@ -27372,6 +27412,7 @@
 - [dhmosfunk/CVE-2023-25690-POC](https://github.com/dhmosfunk/CVE-2023-25690-POC)
 - [thanhlam-attt/CVE-2023-25690](https://github.com/thanhlam-attt/CVE-2023-25690)
 - [oOCyginXOo/CVE-2023-25690-POC](https://github.com/oOCyginXOo/CVE-2023-25690-POC)
+- [arnavps/CTF-Web-Exploitation](https://github.com/arnavps/CTF-Web-Exploitation)
 
 ### CVE-2023-25725 (2023-02-14)
 
@@ -27759,6 +27800,7 @@
 - [karthi-the-hacker/CVE-2023-27524](https://github.com/karthi-the-hacker/CVE-2023-27524)
 - [Cappricio-Securities/CVE-2023-27524](https://github.com/Cappricio-Securities/CVE-2023-27524)
 - [sumaiyafathima-code/CVE-2023-27524](https://github.com/sumaiyafathima-code/CVE-2023-27524)
+- [rachidafaf/bola-CVE-2023-27524](https://github.com/rachidafaf/bola-CVE-2023-27524)
 
 ### CVE-2023-27532 (2023-03-10)
 
@@ -37198,6 +37240,7 @@
 
 - [plummm/CVE-2022-27666](https://github.com/plummm/CVE-2022-27666)
 - [Albocoder/cve-2022-27666-exploits](https://github.com/Albocoder/cve-2022-27666-exploits)
+- [ngtuonghung/CVE-2022-27666](https://github.com/ngtuonghung/CVE-2022-27666)
 
 ### CVE-2022-27772 (2022-03-30)
 
@@ -60542,6 +60585,7 @@
 - [K3rn3l-32/Threaded-CVE-2018-15473](https://github.com/K3rn3l-32/Threaded-CVE-2018-15473)
 - [wtbacon/cve-2018-15473](https://github.com/wtbacon/cve-2018-15473)
 - [kikechans/SSH-Enum-CVE-2018-15473](https://github.com/kikechans/SSH-Enum-CVE-2018-15473)
+- [kaktus5454/CVE-2018-15473](https://github.com/kaktus5454/CVE-2018-15473)
 
 ### CVE-2018-15499 (2018-08-24)
 
@@ -62256,6 +62300,7 @@
 - [FozilCV/Apache-Struts2-CVE-2017-5638](https://github.com/FozilCV/Apache-Struts2-CVE-2017-5638)
 - [ACharaf06/CVE-2017-5638-Attack-and-Defense](https://github.com/ACharaf06/CVE-2017-5638-Attack-and-Defense)
 - [soufiane-benchahyd/vulhub-struts2](https://github.com/soufiane-benchahyd/vulhub-struts2)
+- [AIPEAC/SC3010-Computer-Security](https://github.com/AIPEAC/SC3010-Computer-Security)
 
 ### CVE-2017-5645 (2017-04-17)
 
@@ -63373,7 +63418,7 @@
 - [Abdibimantara/Maldoc-Analysis](https://github.com/Abdibimantara/Maldoc-Analysis)
 - [nhuynhuy/cve-2017-11882](https://github.com/nhuynhuy/cve-2017-11882)
 - [jadeapar/Dragonfish-s-Malware-Cyber-Analysis](https://github.com/jadeapar/Dragonfish-s-Malware-Cyber-Analysis)
-- [yaseenibnakhtar/001-Malware-Analysis-CVE-2017-11882](https://github.com/yaseenibnakhtar/001-Malware-Analysis-CVE-2017-11882)
+- [pixelofapicture/001-Malware-Analysis-CVE-2017-11882](https://github.com/pixelofapicture/001-Malware-Analysis-CVE-2017-11882)
 - [xdrake1010/CVE-2017-11882-Preventer](https://github.com/xdrake1010/CVE-2017-11882-Preventer)
 - [imkidz0/CVE-2017-11882](https://github.com/imkidz0/CVE-2017-11882)
 
