@@ -631,6 +631,13 @@
 
 - [George0Papasotiriou/CVE-2026-20404-MediaTek-modem-remote-DoS-rogue-base-station-scenario-](https://github.com/George0Papasotiriou/CVE-2026-20404-MediaTek-modem-remote-DoS-rogue-base-station-scenario-)
 
+### CVE-2026-20637 (2026-03-25)
+
+<code>A use after free issue was addressed with improved memory management. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.3 and iPadOS 26.3, macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.3, tvOS 26.3, visionOS 26.3, watchOS 26.3. An app may be able to cause unexpected system termination.
+</code>
+
+- [zeroxjf/CVE-2026-20637-AppleSEPKeyStore-UAF](https://github.com/zeroxjf/CVE-2026-20637-AppleSEPKeyStore-UAF)
+
 ### CVE-2026-20643 (2026-03-17)
 
 <code>A cross-origin issue in the Navigation API was addressed with improved input validation. This issue is fixed in Background Security Improvements for iOS, iPadOS, and macOS, Safari 26.4, iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Tahoe 26.4, visionOS 26.4. Processing maliciously crafted web content may bypass Same Origin Policy.
@@ -651,7 +658,7 @@
 <code>A use after free issue was addressed with improved memory management. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Sequoia 15.7.5, macOS Tahoe 26.4, tvOS 26.4, watchOS 26.4. An app may be able to cause unexpected system termination or write kernel memory.
 </code>
 
-- [zeroxjf/CVE-2026-20687-AppleSEPKeyStore-UAF](https://github.com/zeroxjf/CVE-2026-20687-AppleSEPKeyStore-UAF)
+- [zeroxjf/CVE-2026-20687-AppleJPEGDriver-UAF](https://github.com/zeroxjf/CVE-2026-20687-AppleJPEGDriver-UAF)
 
 ### CVE-2026-20698 (2026-03-25)
 
@@ -958,6 +965,9 @@
 
 - [ashizZz/CVE-2026-22610](https://github.com/ashizZz/CVE-2026-22610)
 
+### CVE-2026-22666
+- [JivaSecurity/DOLIBARR-RCE-CVE-2026-22666](https://github.com/JivaSecurity/DOLIBARR-RCE-CVE-2026-22666)
+
 ### CVE-2026-22686 (2026-01-13)
 
 <code>Enclave is a secure JavaScript sandbox designed for safe AI agent code execution. Prior to 2.7.0, there is a critical sandbox escape vulnerability in enclave-vm that allows untrusted, sandboxed JavaScript code to execute arbitrary code in the host Node.js runtime. When a tool invocation fails, enclave-vm exposes a host-side Error object to sandboxed code. This Error object retains its host realm prototype chain, which can be traversed to reach the host Function constructor. An attacker can intentionally trigger a host error, then climb the prototype chain. Using the host Function constructor, arbitrary JavaScript can be compiled and executed in the host context, fully bypassing the sandbox and granting access to sensitive resources such as process.env, filesystem, and network. This breaks enclave-vm’s core security guarantee of isolating untrusted code. This vulnerability is fixed in 2.7.0.
@@ -1035,6 +1045,7 @@
 - [0xgh057r3c0n/CVE-2026-22812](https://github.com/0xgh057r3c0n/CVE-2026-22812)
 - [CayberMods/CVE-2026-22812-POC](https://github.com/CayberMods/CVE-2026-22812-POC)
 - [HodgeLuke/ai-agent-security-research](https://github.com/HodgeLuke/ai-agent-security-research)
+- [0xBlackash/CVE-2026-22812](https://github.com/0xBlackash/CVE-2026-22812)
 
 ### CVE-2026-22862 (2026-01-13)
 
@@ -1256,6 +1267,7 @@
 - [0xBlackash/CVE-2026-24061](https://github.com/0xBlackash/CVE-2026-24061)
 - [HD0x01/CVE-2026-24061-NSE](https://github.com/HD0x01/CVE-2026-24061-NSE)
 - [przemytn/CVE-2026-24061](https://github.com/przemytn/CVE-2026-24061)
+- [ekomsSavior/telnet_scan](https://github.com/ekomsSavior/telnet_scan)
 - [Risma2025/CVE-2026-24061-GNU-InetUtils-telnetd-Authentication-Bypass-Vulnerability](https://github.com/Risma2025/CVE-2026-24061-GNU-InetUtils-telnetd-Authentication-Bypass-Vulnerability)
 
 ### CVE-2026-24102
@@ -1909,6 +1921,13 @@
 
 - [hadhub/CVE-2026-27639-Mercator-XSS](https://github.com/hadhub/CVE-2026-27639-Mercator-XSS)
 
+### CVE-2026-27654 (2026-03-24)
+
+<code>NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_dav_module module that might allow an attacker to trigger a buffer overflow to the NGINX worker process; this vulnerability may result in termination of the NGINX worker process or modification of source or destination file names outside the document root. This issue affects NGINX Open Source and NGINX Plus when the configuration file uses DAV module MOVE or COPY methods, prefix location (nonregular expression location configuration), and alias directives. The integrity impact is constrained because the NGINX worker process user has low privileges and does not have access to the entire system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
+</code>
+
+- [JohannesLks/CVE-2026-27654](https://github.com/JohannesLks/CVE-2026-27654)
+
 ### CVE-2026-27825 (2026-03-10)
 
 <code>MCP Atlassian is a Model Context Protocol (MCP) server for Atlassian products (Confluence and Jira). Prior to version 0.17.0, the `confluence_download_attachment` MCP tool accepts a `download_path` parameter that is written to without any directory boundary enforcement. An attacker who can call this tool and supply or access a Confluence attachment with malicious content can write arbitrary content to any path the server process has write access to. Because the attacker controls both the write destination and the written content (via an uploaded Confluence attachment), this constitutes for arbitrary code execution (for example, writing a valid cron entry to `/etc/cron.d/` achieves code execution within one scheduler cycle with no server restart required). Version 0.17.0 fixes the issue.
@@ -2019,6 +2038,13 @@
 </code>
 
 - [MichaelAdamGroberman/CVE-2026-28767](https://github.com/MichaelAdamGroberman/CVE-2026-28767)
+
+### CVE-2026-28858 (2026-03-25)
+
+<code>A buffer overflow was addressed with improved bounds checking. This issue is fixed in iOS 26.4 and iPadOS 26.4. A remote user may be able to cause unexpected system termination or corrupt kernel memory.
+</code>
+
+- [kaleth4/CVE-2026-28858](https://github.com/kaleth4/CVE-2026-28858)
 
 ### CVE-2026-29000 (2026-03-04)
 
@@ -2376,6 +2402,13 @@
 
 - [skoveit/CVE-2026-32941](https://github.com/skoveit/CVE-2026-32941)
 
+### CVE-2026-32945 (2026-03-20)
+
+<code>PJSIP is a free and open source multimedia communication library written in C. Versions 2.16 and below have a Heap-based Buffer Overflowvulnerability in the DNS parser's name length handler. Thisimpacts applications using PJSIP's built-in DNS resolver, such as those configured with pjsua_config.nameserver or UaConfig.nameserver in PJSUA/PJSUA2. It does not affect users who rely on the OS resolver (e.g., getaddrinfo()) by not configuring a nameserver, or those using an external resolver via pjsip_resolver_set_ext_resolver(). This issue is fixed in version 2.17. For users unable to upgrade, a workaround is to disable DNS resolution in the PJSIP config (by setting nameserver_count to zero) or to use an external resolver implementation instead.
+</code>
+
+- [JohannesLks/CVE-2026-32945](https://github.com/JohannesLks/CVE-2026-32945)
+
 ### CVE-2026-33017 (2026-03-20)
 
 <code>Langflow is a tool for building and deploying AI-powered agents and workflows. In versions prior to 1.9.0, the POST /api/v1/build_public_tmp/{flow_id}/flow endpoint allows building public flows without requiring authentication. When the optional data parameter is supplied, the endpoint uses attacker-controlled flow data (containing arbitrary Python code in node definitions) instead of the stored flow data from the database. This code is passed to exec() with zero sandboxing, resulting in unauthenticated remote code execution. This is distinct from CVE-2025-3248, which fixed /api/v1/validate/code by adding authentication. The build_public_tmp endpoint is designed to be unauthenticated (for public flows) but incorrectly accepts attacker-supplied flow data containing arbitrary executable code. This issue has been fixed in version 1.9.0.
@@ -2422,6 +2455,13 @@
 </code>
 
 - [redyank/CVE-2026-33154](https://github.com/redyank/CVE-2026-33154)
+
+### CVE-2026-33186 (2026-03-20)
+
+<code>gRPC-Go is the Go language implementation of gRPC. Versions prior to 1.79.3 have an authorization bypass resulting from improper input validation of the HTTP/2 `:path` pseudo-header. The gRPC-Go server was too lenient in its routing logic, accepting requests where the `:path` omitted the mandatory leading slash (e.g., `Service/Method` instead of `/Service/Method`). While the server successfully routed these requests to the correct handler, authorization interceptors (including the official `grpc/authz` package) evaluated the raw, non-canonical path string. Consequently, &quot;deny&quot; rules defined using canonical paths (starting with `/`) failed to match the incoming request, allowing it to bypass the policy if a fallback &quot;allow&quot; rule was present. This affects gRPC-Go servers that use path-based authorization interceptors, such as the official RBAC implementation in `google.golang.org/grpc/authz` or custom interceptors relying on `info.FullMethod` or `grpc.Method(ctx)`; AND that have a security policy contains specific &quot;deny&quot; rules for canonical paths but allows other requests by default (a fallback &quot;allow&quot; rule). The vulnerability is exploitable by an attacker who can send raw HTTP/2 frames with malformed `:path` headers directly to the gRPC server. The fix in version 1.79.3 ensures that any request with a `:path` that does not start with a leading slash is immediately rejected with a `codes.Unimplemented` error, preventing it from reaching authorization interceptors or handlers with a non-canonical path string. While upgrading is the most secure and recommended path, users can mitigate the vulnerability using one of the following methods: Use a validating interceptor (recommended mitigation); infrastructure-level normalization; and/or policy hardening.
+</code>
+
+- [JohannesLks/CVE-2026-33186](https://github.com/JohannesLks/CVE-2026-33186)
 
 ### CVE-2026-33310 (2026-03-24)
 
@@ -2491,7 +2531,11 @@
 
 - [pl4tyz/CVE-2026-33701-Unsafe-Deserialization-in-OpenTelemetry-Java-Agent-RMI-Instrumentation](https://github.com/pl4tyz/CVE-2026-33701-Unsafe-Deserialization-in-OpenTelemetry-Java-Agent-RMI-Instrumentation)
 
-### CVE-2026-33752
+### CVE-2026-33752 (2026-04-06)
+
+<code>curl_cffi is the a Python binding for curl. Prior to 0.15.0, curl_cffi does not restrict requests to internal IP ranges, and follows redirects automatically via the underlying libcurl. Because of this, an attacker-controlled URL can redirect requests to internal services such as cloud metadata endpoints. In addition, curl_cffi’s TLS impersonation feature can make these requests appear as legitimate browser traffic, which may bypass certain network controls. This vulnerability is fixed in 0.15.0.
+</code>
+
 - [redyank/CVE-2026-33752](https://github.com/redyank/CVE-2026-33752)
 
 ### CVE-2026-33868 (2026-03-27)
@@ -2571,7 +2615,11 @@
 
 - [skoveit/CVE-2026-34227](https://github.com/skoveit/CVE-2026-34227)
 
-### CVE-2026-34444
+### CVE-2026-34444 (2026-04-06)
+
+<code>Lupa integrates the runtimes of Lua or LuaJIT2 into CPython. In 2.6 and earlier, attribute_filter is not consistently applied when attributes are accessed through built-in functions like getattr and setattr. This allows an attacker to bypass the intended restrictions and eventually achieve arbitrary code execution.
+</code>
+
 - [redyank/CVE-2026-34444](https://github.com/redyank/CVE-2026-34444)
 
 ### CVE-2026-34828 (2026-04-02)
@@ -2588,7 +2636,11 @@
 
 - [bamuwe/CVE-2026-34838](https://github.com/bamuwe/CVE-2026-34838)
 
-### CVE-2026-35045
+### CVE-2026-35045 (2026-04-06)
+
+<code>Tandoor Recipes is an application for managing recipes, planning meals, and building shopping lists. Prior to 2.6.4, the PUT /api/recipe/batch_update/ endpoint in Tandoor Recipes allows any authenticated user within a Space to modify any recipe in that Space, including recipes marked as private by other users. This bypasses all object-level authorization checks enforced on standard single-recipe endpoints (PUT /api/recipe/{id}/), enabling forced exposure of private recipes, unauthorized self-grant of access via the shared list, and metadata tampering. This vulnerability is fixed in 2.6.4.
+</code>
+
 - [FilipeGaudard/CVE-2026-35045-PoC](https://github.com/FilipeGaudard/CVE-2026-35045-PoC)
 
 ### CVE-2026-35492
@@ -2604,6 +2656,14 @@
 
 - [0xBlackash/CVE-2026-35616](https://github.com/0xBlackash/CVE-2026-35616)
 - [z3r0h3ro/CVE-2026-35616-poc](https://github.com/z3r0h3ro/CVE-2026-35616-poc)
+- [fevar54/CVE-2026-35616-detector.py](https://github.com/fevar54/CVE-2026-35616-detector.py)
+- [BishopFox/CVE-2026-35616-check](https://github.com/BishopFox/CVE-2026-35616-check)
+
+### CVE-2026-39324
+- [sm1ee/CVE-2026-39324](https://github.com/sm1ee/CVE-2026-39324)
+
+### CVE-2026-39371
+- [zebbernCVE/CVE-2026-39371](https://github.com/zebbernCVE/CVE-2026-39371)
 
 
 ## 2025
@@ -2963,6 +3023,8 @@
 - [I3r1h0n/IngressNightterror](https://github.com/I3r1h0n/IngressNightterror)
 - [gunyakit/CVE-2025-1974-PoC-exploit](https://github.com/gunyakit/CVE-2025-1974-PoC-exploit)
 - [BoianEduard/CVE-2025-1974](https://github.com/BoianEduard/CVE-2025-1974)
+- [zsxen/CVE-2025-1974](https://github.com/zsxen/CVE-2025-1974)
+- [zsxen/cve-2025-1974-lab](https://github.com/zsxen/cve-2025-1974-lab)
 
 ### CVE-2025-2005 (2025-04-02)
 
@@ -5421,6 +5483,7 @@
 - [InfoSecAntara/CVE-2025-14847-MongoDB](https://github.com/InfoSecAntara/CVE-2025-14847-MongoDB)
 - [sho-luv/MongoBleed](https://github.com/sho-luv/MongoBleed)
 - [0xBlackash/CVE-2025-14847](https://github.com/0xBlackash/CVE-2025-14847)
+- [dawnsmithcyber/azure-vulnerability-remediation-project](https://github.com/dawnsmithcyber/azure-vulnerability-remediation-project)
 
 ### CVE-2025-14855 (2025-12-21)
 
@@ -5848,6 +5911,7 @@
 </code>
 
 - [dajneem23/CVE-2025-23061](https://github.com/dajneem23/CVE-2025-23061)
+- [amikanev/CVE-2025-23061-LAB](https://github.com/amikanev/CVE-2025-23061-LAB)
 
 ### CVE-2025-23167 (2025-05-19)
 
@@ -6066,6 +6130,7 @@
 <code>A use-after-free issue was addressed with improved memory management. This issue is fixed in iOS 18.4 and iPadOS 18.4, iPadOS 17.7.6, macOS Sequoia 15.4, macOS Sonoma 14.7.5, macOS Ventura 13.7.5, tvOS 18.4, visionOS 2.4. An attacker on the local network may be able to corrupt process memory.
 </code>
 
+- [ekomsSavior/AirBorne-PoC](https://github.com/ekomsSavior/AirBorne-PoC)
 - [cakescats/airborn-IOS-CVE-2025-24252](https://github.com/cakescats/airborn-IOS-CVE-2025-24252)
 
 ### CVE-2025-24257 (2025-03-31)
@@ -7291,6 +7356,7 @@
 - [mouadk/parquet-rce-poc-CVE-2025-30065](https://github.com/mouadk/parquet-rce-poc-CVE-2025-30065)
 - [ThreatRadarAI/TRAI-001-Critical-RCE-Vulnerability-in-Apache-Parquet-CVE-2025-30065-Simulation](https://github.com/ThreatRadarAI/TRAI-001-Critical-RCE-Vulnerability-in-Apache-Parquet-CVE-2025-30065-Simulation)
 - [F5-Labs/parquet-canary-exploit-rce-poc-CVE-2025-30065](https://github.com/F5-Labs/parquet-canary-exploit-rce-poc-CVE-2025-30065)
+- [micrictor/parquet-avro-rce](https://github.com/micrictor/parquet-avro-rce)
 
 ### CVE-2025-30066 (2025-03-15)
 
@@ -7738,6 +7804,7 @@
 </code>
 
 - [ProDefense/CVE-2025-32433](https://github.com/ProDefense/CVE-2025-32433)
+- [ekomsSavior/POC_CVE-2025-32433](https://github.com/ekomsSavior/POC_CVE-2025-32433)
 - [Epivalent/CVE-2025-32433-detection](https://github.com/Epivalent/CVE-2025-32433-detection)
 - [darses/CVE-2025-32433](https://github.com/darses/CVE-2025-32433)
 - [LemieOne/CVE-2025-32433](https://github.com/LemieOne/CVE-2025-32433)
@@ -9169,19 +9236,19 @@
 
 - [B1tBreaker/CVE-2025-48708](https://github.com/B1tBreaker/CVE-2025-48708)
 
+### CVE-2025-48734 (2025-05-28)
+
+<code>Improper Access Control vulnerability in Apache Commons.\n\n\n\nA special BeanIntrospector class was added in version 1.9.2. This can be used to stop attackers from using the declared class property of Java enum objects to get access to the classloader. However this protection was not enabled by default. PropertyUtilsBean (and consequently BeanUtilsBean) now disallows declared class level property access by default.\n\n\n\n\n\nReleases 1.11.0 and 2.0.0-M2 address a potential security issue when accessing enum properties in an uncontrolled way. If an application using Commons BeanUtils passes property paths from an external source directly to the getProperty() method of PropertyUtilsBean, an attacker can access the enum’s class loader via the “declaredClass” property available on all Java “enum” objects. Accessing the enum’s “declaredClass” allows remote attackers to access the ClassLoader and execute arbitrary code. The same issue exists with PropertyUtilsBean.getNestedProperty().\nStarting in versions 1.11.0 and 2.0.0-M2 a special BeanIntrospector suppresses the “declaredClass” property. Note that this new BeanIntrospector is enabled by default, but you can disable it to regain the old behavior; see section 2.5 of the user's guide and the unit tests.\n\nThis issue affects Apache Commons BeanUtils 1.x before 1.11.0, and 2.x before 2.0.0-M2.Users of the artifact commons-beanutils:commons-beanutils\n\n 1.x are recommended to upgrade to version 1.11.0, which fixes the issue.\n\n\nUsers of the artifact org.apache.commons:commons-beanutils2\n\n 2.x are recommended to upgrade to version 2.0.0-M2, which fixes the issue.
+</code>
+
+- [h3raklez/CVE-2025-48734](https://github.com/h3raklez/CVE-2025-48734)
+
 ### CVE-2025-48757 (2025-05-30)
 
 <code>An insufficient database Row-Level Security policy in Lovable through 2025-04-15 allows remote unauthenticated attackers to read or write to arbitrary database tables of generated sites. NOTE: this is disputed by the Supplier because each individual customer of the Lovable platform accepts a responsibility over protecting the data of their application.
 </code>
 
 - [Farenhytee/supabase-sentinel](https://github.com/Farenhytee/supabase-sentinel)
-
-### CVE-2025-48784 (2025-06-06)
-
-<code>A missing authorization vulnerability in Soar Cloud HRD Human Resource Management System through version 7.3.2025.0408 allows remote attackers to modify system settings without prior authorization.
-</code>
-
-- [h3raklez/CVE-2025-48784](https://github.com/h3raklez/CVE-2025-48784)
 
 ### CVE-2025-48799 (2025-07-08)
 
@@ -9398,6 +9465,7 @@
 - [zbyszkok/CVE-2025-49844-RediShell-AI-made-Revshell](https://github.com/zbyszkok/CVE-2025-49844-RediShell-AI-made-Revshell)
 - [0xBlackash/CVE-2025-49844](https://github.com/0xBlackash/CVE-2025-49844)
 - [Cilectiy/CVE-2025-49844](https://github.com/Cilectiy/CVE-2025-49844)
+- [dajneem23/CVE-2025-49844](https://github.com/dajneem23/CVE-2025-49844)
 
 ### CVE-2025-50110 (2025-09-15)
 
@@ -10485,7 +10553,6 @@
 - [logesh-GIT001/CVE-2025-55182](https://github.com/logesh-GIT001/CVE-2025-55182)
 - [freeqaz/react2shell](https://github.com/freeqaz/react2shell)
 - [ABCFabian/React2Shell-CVE-2025-55182-Testing-Environment](https://github.com/ABCFabian/React2Shell-CVE-2025-55182-Testing-Environment)
-- [nanwinata/CVE-2025-55182-Scanner](https://github.com/nanwinata/CVE-2025-55182-Scanner)
 - [l4rm4nd/CVE-2025-55182](https://github.com/l4rm4nd/CVE-2025-55182)
 - [Airis101/CVE-2025-55182-analysis](https://github.com/Airis101/CVE-2025-55182-analysis)
 - [GelukCrab/React-Server-Components-RCE](https://github.com/GelukCrab/React-Server-Components-RCE)
@@ -10840,6 +10907,7 @@
 - [aliksir/nextjs-security-scanner](https://github.com/aliksir/nextjs-security-scanner)
 - [toprak-t800/CVE-2025-55182](https://github.com/toprak-t800/CVE-2025-55182)
 - [porsellaj/cve-2025-55182-react2shell-analysis](https://github.com/porsellaj/cve-2025-55182-react2shell-analysis)
+- [hexsh1dow/CVE-2025-55182](https://github.com/hexsh1dow/CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -13702,6 +13770,9 @@
 
 - [gunzf0x/Issabel-PBX-4.0.0-RCE-Authenticated](https://github.com/gunzf0x/Issabel-PBX-4.0.0-RCE-Authenticated)
 
+### CVE-2024-340
+- [SimoesCTT/-CTT-PAN-OS-EXPLOIT-CVE-2024-340](https://github.com/SimoesCTT/-CTT-PAN-OS-EXPLOIT-CVE-2024-340)
+
 ### CVE-2024-436
 - [Julian-gmz/CVE-2024-436_Exploit](https://github.com/Julian-gmz/CVE-2024-436_Exploit)
 
@@ -14287,7 +14358,6 @@
 - [andrelia-hacks/CVE-2024-3400](https://github.com/andrelia-hacks/CVE-2024-3400)
 - [ivan-n0v/cve-2024-3400](https://github.com/ivan-n0v/cve-2024-3400)
 - [workshop748/CVE-2024-3400](https://github.com/workshop748/CVE-2024-3400)
-- [nanwinata/CVE-2024-3400](https://github.com/nanwinata/CVE-2024-3400)
 - [hashdr1ft/SOC274-Palo-Alto-Networks-PAN-OS-Command-Injection-Vulnerability-Exploitation-CVE-2024-3400](https://github.com/hashdr1ft/SOC274-Palo-Alto-Networks-PAN-OS-Command-Injection-Vulnerability-Exploitation-CVE-2024-3400)
 - [CyprianAtsyor/letsdefend-cve2024-3400-case-study](https://github.com/CyprianAtsyor/letsdefend-cve2024-3400-case-study)
 - [CyberBibs/SOC274---Palo-Alto-Networks-PAN-OS-Command-Injection-Vulnerability-Exploitation-CVE-2024-3400-](https://github.com/CyberBibs/SOC274---Palo-Alto-Networks-PAN-OS-Command-Injection-Vulnerability-Exploitation-CVE-2024-3400-)
@@ -19101,6 +19171,7 @@
 </code>
 
 - [Sploitus/CVE-2024-29988-exploit](https://github.com/Sploitus/CVE-2024-29988-exploit)
+- [avitoriagomes/CVE-2024-29988](https://github.com/avitoriagomes/CVE-2024-29988)
 
 ### CVE-2024-30043 (2024-05-14)
 
@@ -20556,7 +20627,6 @@
 - [dweger-scripts/CVE-2024-38063-Remediation](https://github.com/dweger-scripts/CVE-2024-38063-Remediation)
 - [almogopp/Disable-IPv6-CVE-2024-38063-Fix](https://github.com/almogopp/Disable-IPv6-CVE-2024-38063-Fix)
 - [Th3Tr1ckst3r/CVE-2024-38063](https://github.com/Th3Tr1ckst3r/CVE-2024-38063)
-- [haroonawanofficial/AI-CVE-2024-38063-0-DAY](https://github.com/haroonawanofficial/AI-CVE-2024-38063-0-DAY)
 - [ynwarcs/CVE-2024-38063](https://github.com/ynwarcs/CVE-2024-38063)
 - [patchpoint/CVE-2024-38063](https://github.com/patchpoint/CVE-2024-38063)
 - [PumpkinBridge/Windows-CVE-2024-38063](https://github.com/PumpkinBridge/Windows-CVE-2024-38063)
@@ -20576,6 +20646,7 @@
 - [Dragkob/CVE-2024-38063](https://github.com/Dragkob/CVE-2024-38063)
 - [fredagsguf/Windows-CVE-2024-38063](https://github.com/fredagsguf/Windows-CVE-2024-38063)
 - [jip-0-0-0-0-0/CVE-2024-38063-scanner](https://github.com/jip-0-0-0-0-0/CVE-2024-38063-scanner)
+- [cyberzeuspakistan/CVE-2024-38063-Research-Tool](https://github.com/cyberzeuspakistan/CVE-2024-38063-Research-Tool)
 - [Skac44/CVE-2024-38063](https://github.com/Skac44/CVE-2024-38063)
 - [thealice01/CVE-2024-38063](https://github.com/thealice01/CVE-2024-38063)
 - [Avidan1/CVE-2024-38063](https://github.com/Avidan1/CVE-2024-38063)
@@ -23280,7 +23351,7 @@
 
 - [Nyamort/CVE-2024-52301](https://github.com/Nyamort/CVE-2024-52301)
 - [martinhaunschmid/CVE-2024-52301-Research](https://github.com/martinhaunschmid/CVE-2024-52301-Research)
-- [nanwinata/CVE-2024-52301](https://github.com/nanwinata/CVE-2024-52301)
+- [fckoo/nanwinata-CVE-2024-52301](https://github.com/fckoo/nanwinata-CVE-2024-52301)
 
 ### CVE-2024-52302 (2024-11-14)
 
@@ -25878,6 +25949,7 @@
 </code>
 
 - [elpe-pinillo/CVE-2023-6246](https://github.com/elpe-pinillo/CVE-2023-6246)
+- [SimoesCTT/CTT-Vsyslog-Vortex-CVE-2023-6246](https://github.com/SimoesCTT/CTT-Vsyslog-Vortex-CVE-2023-6246)
 
 ### CVE-2023-6275 (2023-11-24)
 
@@ -27897,6 +27969,7 @@
 - [delsploit/CVE-2023-27997](https://github.com/delsploit/CVE-2023-27997)
 - [node011/CVE-2023-27997-POC](https://github.com/node011/CVE-2023-27997-POC)
 - [onurkerembozkurt/fgt-cve-2023-27997-exploit](https://github.com/onurkerembozkurt/fgt-cve-2023-27997-exploit)
+- [george1-adel/CVE-2023-27997](https://github.com/george1-adel/CVE-2023-27997)
 
 ### CVE-2023-28121 (2023-04-12)
 
@@ -29060,6 +29133,7 @@
 </code>
 
 - [xcr-19/CVE-2023-32749](https://github.com/xcr-19/CVE-2023-32749)
+- [alaeddine03/CVE-2023-32749-PoC](https://github.com/alaeddine03/CVE-2023-32749-PoC)
 
 ### CVE-2023-32784 (2023-05-15)
 
@@ -33256,6 +33330,13 @@
 </code>
 
 - [ahrixia/CVE-2023-50072](https://github.com/ahrixia/CVE-2023-50072)
+
+### CVE-2023-50094 (2024-01-01)
+
+<code>reNgine before 2.1.2 allows OS Command Injection if an adversary has a valid session ID. The attack places shell metacharacters in an api/tools/waf_detector/?url= string. The commands are executed as root via subprocess.check_output.
+</code>
+
+- [Zierax/CVE-2023-50094_POC](https://github.com/Zierax/CVE-2023-50094_POC)
 
 ### CVE-2023-50131
 - [sajaljat/CVE-2023-50131](https://github.com/sajaljat/CVE-2023-50131)
@@ -40762,7 +40843,6 @@
 </code>
 
 - [kasem545/CVE-2022-46364-Poc](https://github.com/kasem545/CVE-2022-46364-Poc)
-- [cybermaksxx/CVE-2022-46364-Proof-of-the-concept](https://github.com/cybermaksxx/CVE-2022-46364-Proof-of-the-concept)
 - [Shashivanth009/CVE-2022-46364---Apache-CXF-XOP-Include-LFI-PoC](https://github.com/Shashivanth009/CVE-2022-46364---Apache-CXF-XOP-Include-LFI-PoC)
 - [0xmid00/CVE-2022-46364-poc](https://github.com/0xmid00/CVE-2022-46364-poc)
 - [jwsly12/CVE-2022-46364-htb-ctf](https://github.com/jwsly12/CVE-2022-46364-htb-ctf)
@@ -41795,6 +41875,7 @@
 - [GodOfServer/CVE-2021-3129](https://github.com/GodOfServer/CVE-2021-3129)
 - [Prabesh01/hoh4](https://github.com/Prabesh01/hoh4)
 - [lukwagoasuman/CVE-2021-3129---Laravel-RCE](https://github.com/lukwagoasuman/CVE-2021-3129---Laravel-RCE)
+- [Nullsecur1ty/CVE-2021-3129](https://github.com/Nullsecur1ty/CVE-2021-3129)
 
 ### CVE-2021-3130 (2021-01-20)
 
@@ -41873,7 +41954,6 @@
 - [halissha/CVE-2021-3156](https://github.com/halissha/CVE-2021-3156)
 - [sharkmoos/Baron-Samedit](https://github.com/sharkmoos/Baron-Samedit)
 - [chenaotian/CVE-2021-3156](https://github.com/chenaotian/CVE-2021-3156)
-- [ret2basic/SudoScience](https://github.com/ret2basic/SudoScience)
 - [RodricBr/CVE-2021-3156](https://github.com/RodricBr/CVE-2021-3156)
 - [ypl6/heaplens](https://github.com/ypl6/heaplens)
 - [q77190858/CVE-2021-3156](https://github.com/q77190858/CVE-2021-3156)
@@ -52714,13 +52794,6 @@
 - [motikan2010/CVE-2020-27223](https://github.com/motikan2010/CVE-2020-27223)
 - [ttestoo/Jetty-CVE-2020-27223](https://github.com/ttestoo/Jetty-CVE-2020-27223)
 
-### CVE-2020-27252 (2020-12-14)
-
-<code>Medtronic MyCareLink Smart 25000 is \n\nvulnerable to a race condition in the MCL Smart Patient Reader software update system, which allows unsigned firmware to be uploaded and executed on the Patient Reader. If exploited, an attacker could remotely execute code on the MCL Smart Patient Reader device, leading to control of the device.
-</code>
-
-- [OccultSlolem/GatorMed](https://github.com/OccultSlolem/GatorMed)
-
 ### CVE-2020-27301 (2021-06-04)
 
 <code>A stack buffer overflow in Realtek RTL8710 (and other Ameba-based devices) can lead to remote code execution via the &quot;AES_UnWRAP&quot; function, when an attacker in Wi-Fi range sends a crafted &quot;Encrypted GTK&quot; value as part of the WPA2 4-way-handshake.
@@ -60309,6 +60382,7 @@
 - [B1anda0/CVE-2018-13379](https://github.com/B1anda0/CVE-2018-13379)
 - [nivdolgin/CVE-2018-13379](https://github.com/nivdolgin/CVE-2018-13379)
 - [kh4sh3i/CVE-2018-13379](https://github.com/kh4sh3i/CVE-2018-13379)
+- [Zierax/CVE-2018-13379](https://github.com/Zierax/CVE-2018-13379)
 
 ### CVE-2018-13382 (2019-06-04)
 
