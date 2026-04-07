@@ -623,6 +623,7 @@
 - [Sushilsin/CVE-2026-20131](https://github.com/Sushilsin/CVE-2026-20131)
 - [p3Nt3st3r-sTAr/CVE-2026-20131-POC](https://github.com/p3Nt3st3r-sTAr/CVE-2026-20131-POC)
 - [sak110/CVE-2026-20131](https://github.com/sak110/CVE-2026-20131)
+- [Hassan-Pouladi/Cisco-FMC-honeypot](https://github.com/Hassan-Pouladi/Cisco-FMC-honeypot)
 
 ### CVE-2026-20404 (2026-02-02)
 
@@ -1650,6 +1651,13 @@
 
 - [drkim-dev/CVE-2026-25991](https://github.com/drkim-dev/CVE-2026-25991)
 
+### CVE-2026-25994 (2026-02-11)
+
+<code>PJSIP is a free and open source multimedia communication library written in C. In 2.16 and earlier, a buffer overflow vulnerability exists in PJNATH ICE Session when processing credentials with excessively long usernames.
+</code>
+
+- [VABISMO/cve-2026-25994_PJSIP](https://github.com/VABISMO/cve-2026-25994_PJSIP)
+
 ### CVE-2026-26012 (2026-02-11)
 
 <code>vaultwarden is an unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs. Prior to 1.35.3, a regular organization member can retrieve all ciphers within an organization, regardless of collection permissions. The endpoint /ciphers/organization-details is accessible to any organization member and internally uses Cipher::find_by_org to retrieve all ciphers. These ciphers are returned with CipherSyncType::Organization without enforcing collection-level access control. This vulnerability is fixed in 1.35.3.
@@ -2029,7 +2037,6 @@
 <code>A specific endpoint exposes all user account information for registered Gardyn users without requiring authentication.
 </code>
 
-- [MichaelAdamGroberman/ICSA-26-055-03](https://github.com/MichaelAdamGroberman/ICSA-26-055-03)
 - [MichaelAdamGroberman/CVE-2026-28766](https://github.com/MichaelAdamGroberman/CVE-2026-28766)
 
 ### CVE-2026-28767 (2026-04-03)
@@ -2868,7 +2875,6 @@
 <code>The administrative credentials can be extracted through application API responses, mobile application reverse engineering, and device firmware reverse engineering. The exposure may result in an attacker gaining  full administrative access to the Gardyn IoT Hub exposing connected devices to malicious control.
 </code>
 
-- [MichaelAdamGroberman/ICSA-26-055-03](https://github.com/MichaelAdamGroberman/ICSA-26-055-03)
 - [MichaelAdamGroberman/CVE-2025-1242](https://github.com/MichaelAdamGroberman/CVE-2025-1242)
 
 ### CVE-2025-1302 (2025-02-15)
@@ -4432,7 +4438,7 @@
 - [techcorp/CVE-2025-8088-Exploit](https://github.com/techcorp/CVE-2025-8088-Exploit)
 - [Shinkirou789/Cve-2025-8088-WinRar-vulnerability](https://github.com/Shinkirou789/Cve-2025-8088-WinRar-vulnerability)
 - [hbesljx/CVE-2025-8088-EXP](https://github.com/hbesljx/CVE-2025-8088-EXP)
-- [lucyna77/winrar-exploit](https://github.com/lucyna77/winrar-exploit)
+- [starfallreverie/winrar-exploit](https://github.com/starfallreverie/winrar-exploit)
 - [xi0onamdev/WinRAR-CVE-2025-8088-Exploitation-Toolkit](https://github.com/xi0onamdev/WinRAR-CVE-2025-8088-Exploitation-Toolkit)
 - [Markusino488/cve-2025-8088](https://github.com/Markusino488/cve-2025-8088)
 - [ilhamrzr/RAR-Anomaly-Inspector](https://github.com/ilhamrzr/RAR-Anomaly-Inspector)
@@ -13055,13 +13061,6 @@
 
 - [Ak-cybe/CVE-2025-68664-LangGrinch-PoC](https://github.com/Ak-cybe/CVE-2025-68664-LangGrinch-PoC)
 - [comerc/CVE-2025-68664](https://github.com/comerc/CVE-2025-68664)
-
-### CVE-2025-68668 (2025-12-26)
-
-<code>n8n is an open source workflow automation platform. From version 1.0.0 to before 2.0.0, a sandbox bypass vulnerability exists in the Python Code Node that uses Pyodide. An authenticated user with permission to create or modify workflows can exploit this vulnerability to execute arbitrary commands on the host system running n8n, using the same privileges as the n8n process. This issue has been patched in version 2.0.0. Workarounds for this issue involve disabling the Code Node by setting the environment variable NODES_EXCLUDE: &quot;[\&quot;n8n-nodes-base.code\&quot;]&quot;, disabling Python support in the Code node by setting the environment variable N8N_PYTHON_ENABLED=false, which was introduced in n8n version 1.104.0, and configuring n8n to use the task runner based Python sandbox via the N8N_RUNNERS_ENABLED and N8N_NATIVE_PYTHON_RUNNER environment variables.
-</code>
-
-- [eshan014/Internship_project_02](https://github.com/eshan014/Internship_project_02)
 
 ### CVE-2025-68705 (2026-01-07)
 
