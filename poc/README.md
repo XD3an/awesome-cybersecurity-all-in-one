@@ -37,6 +37,13 @@
 
 - [SnipersMaster/CVE-2026-0709](https://github.com/SnipersMaster/CVE-2026-0709)
 
+### CVE-2026-0740 (2026-04-07)
+
+<code>The Ninja Forms - File Uploads plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'NF_FU_AJAX_Controllers_Uploads::handle_upload' function in all versions up to, and including, 3.3.26. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible. Note: The vulnerability was partially patched in version 3.3.25 and fully patched in version 3.3.27.
+</code>
+
+- [xShadow-Here/CVE-2026-0740](https://github.com/xShadow-Here/CVE-2026-0740)
+
 ### CVE-2026-0766 (2026-01-23)
 
 <code>Open WebUI load_tool_module_by_id Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Open WebUI. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the load_tool_module_by_id function. The issue results from the lack of proper validation of a user-supplied string before using it to execute Python code. An attacker can leverage this vulnerability to execute code in the context of the service account. Was ZDI-CAN-28257.
@@ -270,7 +277,7 @@
 
 ### CVE-2026-1999 (2026-02-18)
 
-<code>A Server-Side Request Forgery (SSRF) vulnerability was identified in GitHub Enterprise Server that allowed an authenticated user to access internal services bound to loopback or unspecified addresses, potentially disrupting background job processing, accessing administrative endpoints, metrics, and profiling data, or manipulating job queues. Exploitation required an authenticated user with permissions to configure webhooks (repository, organization, or GitHub App administrator privileges). This vulnerability affected all versions of GitHub Enterprise Server prior to 3.20 and was fixed in versions 3.14.22, 3.15.17, 3.16.13, 3.17.10, 3.18.4, and 3.19.1. This vulnerability was reported via the GitHub Bug Bounty program.
+<code>An incorrect authorization vulnerability was identified in GitHub Enterprise Server that allowed an attacker to merge their own pull request into a repository without having push access by exploiting an authorization bypass in the enable_auto_merge mutation for pull requests. This issue only affected repositories that allow forking as the attack relies on opening a pull request from an attacker-controlled fork into the target repository. Exploitation was only possible in specific scenarios. It required a clean pull request status and only applied to branches without branch protection rules enabled. This vulnerability affected GitHub Enterprise Server versions prior to 3.19.2, 3.18.5, and 3.17.11, and was fixed in versions 3.19.2, 3.18.5, and 3.17.11. This vulnerability was reported via the GitHub Bug Bounty program.
 </code>
 
 - [jwde/automerge-test](https://github.com/jwde/automerge-test)
@@ -390,6 +397,14 @@
 
 - [ppwwiinn/CVE-2026-2763-POC](https://github.com/ppwwiinn/CVE-2026-2763-POC)
 
+### CVE-2026-2796 (2026-02-24)
+
+<code>JIT miscompilation in the JavaScript: WebAssembly component. This vulnerability affects Firefox &lt; 148 and Thunderbird &lt; 148.
+</code>
+
+- [WostGit/cve-2026-2796-repro](https://github.com/WostGit/cve-2026-2796-repro)
+- [WostGit/CVE-2026-2796](https://github.com/WostGit/CVE-2026-2796)
+
 ### CVE-2026-2898 (2026-02-22)
 
 <code>A vulnerability was detected in funadmin up to 7.1.0-rc4. This issue affects the function getMember of the file app/common/service/AuthCloudService.php of the component Backend Endpoint. The manipulation of the argument cloud_account results in deserialization. The attack may be performed from remote. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.
@@ -449,6 +464,7 @@
 </code>
 
 - [SnailSploit/CVE-2026-3288](https://github.com/SnailSploit/CVE-2026-3288)
+- [bvabhishek/CVE-2026-3288-lab](https://github.com/bvabhishek/CVE-2026-3288-lab)
 
 ### CVE-2026-3304 (2026-02-27)
 
@@ -527,6 +543,9 @@
 </code>
 
 - [g0w6y/CVE-2026-4092](https://github.com/g0w6y/CVE-2026-4092)
+
+### CVE-2026-4112
+- [Hann1bl3L3ct3r/CVE-2026-4112](https://github.com/Hann1bl3L3ct3r/CVE-2026-4112)
 
 ### CVE-2026-4342 (2026-03-19)
 
@@ -1097,6 +1116,7 @@
 </code>
 
 - [JohannesLks/CVE-2026-23398](https://github.com/JohannesLks/CVE-2026-23398)
+- [zpol/cve-2026-23398-poc](https://github.com/zpol/cve-2026-23398-poc)
 
 ### CVE-2026-23416 (2026-04-02)
 
@@ -1225,6 +1245,13 @@
 </code>
 
 - [boroeurnprach/CVE-2026-23947-PoC](https://github.com/boroeurnprach/CVE-2026-23947-PoC)
+
+### CVE-2026-23980 (2026-02-24)
+
+<code>Improper Neutralization of Special Elements used in a SQL Command ('SQL Injection') vulnerability in Apache Superset allows an authenticated user with read access to conduct error-based SQL injection via the sqlExpression or where parameters.\n\nThis issue affects Apache Superset: before 6.0.0.\n\nUsers are recommended to upgrade to version 6.0.0, which fixes the issue.
+</code>
+
+- [oscarmine/CVE-2026-23980-Exploit](https://github.com/oscarmine/CVE-2026-23980-Exploit)
 
 ### CVE-2026-24009 (2026-01-22)
 
@@ -1506,6 +1533,7 @@
 </code>
 
 - [ethiack/moltbot-1click-rce](https://github.com/ethiack/moltbot-1click-rce)
+- [msaleme/start-here](https://github.com/msaleme/start-here)
 - [adibirzu/openclaw-security-monitor](https://github.com/adibirzu/openclaw-security-monitor)
 - [Joseph19820124/openclaw-vuln-report](https://github.com/Joseph19820124/openclaw-vuln-report)
 - [al4n4n/CVE-2026-25253-research](https://github.com/al4n4n/CVE-2026-25253-research)
@@ -2488,6 +2516,7 @@
 - [z4yd3/PoC-CVE-2026-33017](https://github.com/z4yd3/PoC-CVE-2026-33017)
 - [EQSTLab/CVE-2026-33017](https://github.com/EQSTLab/CVE-2026-33017)
 - [masterwok/CVE-2026-33017-Langflow-POC](https://github.com/masterwok/CVE-2026-33017-Langflow-POC)
+- [oscarmine/CVE-2026-33017-Exploit](https://github.com/oscarmine/CVE-2026-33017-Exploit)
 
 ### CVE-2026-33032 (2026-03-30)
 
@@ -2670,6 +2699,15 @@
 - [0xBlackash/CVE-2026-34156](https://github.com/0xBlackash/CVE-2026-34156)
 - [franckboumendil/CVE-2026-34156](https://github.com/franckboumendil/CVE-2026-34156)
 
+### CVE-2026-34197 (2026-04-07)
+
+<code>Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ.\n\nApache ActiveMQ Classic exposes the Jolokia JMX-HTTP bridge at /api/jolokia/ on the web console. The default Jolokia access policy permits exec operations on all ActiveMQ MBeans (org.apache.activemq:*), including\nBrokerService.addNetworkConnector(String) and BrokerService.addConnector(String).\n\nAn authenticated attacker can invoke these operations with a crafted discovery URI that triggers the VM transport's brokerConfig parameter to load a remote Spring XML application context using ResourceXmlApplicationContext.\nBecause Spring's ResourceXmlApplicationContext instantiates all singleton beans before the BrokerService validates the configuration, arbitrary code execution occurs on the broker's JVM through bean factory methods such as Runtime.exec().\n\n\n\nThis issue affects Apache ActiveMQ Broker: before 5.19.4, from 6.0.0 before 6.2.3; Apache ActiveMQ All: before 5.19.4, from 6.0.0 before 6.2.3; Apache ActiveMQ: before 5.19.4, from 6.0.0 before 6.2.3.\n\n\n\nUsers are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the issue
+</code>
+
+- [0xBlackash/CVE-2026-34197](https://github.com/0xBlackash/CVE-2026-34197)
+- [dinosn/CVE-2026-34197](https://github.com/dinosn/CVE-2026-34197)
+- [DEVSECURITYSPRO/CVE-2026-34197](https://github.com/DEVSECURITYSPRO/CVE-2026-34197)
+
 ### CVE-2026-34200 (2026-03-31)
 
 <code>Nhost is an open source Firebase alternative with GraphQL. Prior to version 1.41.0, The Nhost CLI MCP server, when explicitly configured to listen on a network port, applies no inbound authentication and does not enforce strict CORS. This allows a malicious website visited on the same machine to issue cross-origin requests to the MCP server and invoke privileged tools using the developer's locally configured credentials. This vulnerability requires two explicit, non-default configuration steps to be exploitable. The default nhost mcp start configuration is not affected. This issue has been patched in version 1.41.0.
@@ -2738,6 +2776,13 @@
 </code>
 
 - [sm1ee/CVE-2026-39324](https://github.com/sm1ee/CVE-2026-39324)
+
+### CVE-2026-39363 (2026-04-07)
+
+<code>Vite is a frontend tooling framework for JavaScript. From 6.0.0 to before 6.4.2, 7.3.2, and 8.0.5, if it is possible to connect to the Vite dev server’s WebSocket without an Origin header, an attacker can invoke fetchModule via the custom WebSocket event vite:invoke and combine file://... with ?raw (or ?inline) to retrieve the contents of arbitrary files on the server as a JavaScript string (e.g., export default &quot;...&quot;). The access control enforced in the HTTP request path (such as server.fs.allow) is not applied to this WebSocket-based execution path. This vulnerability is fixed in 6.4.2, 7.3.2, and 8.0.5.
+</code>
+
+- [Firebasky/CVE-2026-39363](https://github.com/Firebasky/CVE-2026-39363)
 
 ### CVE-2026-39371 (2026-04-07)
 
@@ -3417,7 +3462,7 @@
 
 ### CVE-2025-3419 (2025-05-08)
 
-<code>The Event Manager, Events Calendar, Tickets, Registrations – Eventin plugin for WordPress is vulnerable to arbitrary file read in all versions up to, and including, 4.0.26 via the proxy_image() function. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information.
+<code>The Event Manager, Events Calendar, Tickets, Registrations – Eventin plugin for WordPress is vulnerable to arbitrary file read in all versions up to, and including, 4.0.26 via the proxy_image() function. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information. CVE-2025-47445 is a duplicate of this vulnerability.
 </code>
 
 - [Yucaerin/CVE-2025-3419](https://github.com/Yucaerin/CVE-2025-3419)
@@ -3461,7 +3506,7 @@
 
 ### CVE-2025-3605 (2025-05-09)
 
-<code>The Frontend Login and Registration Blocks plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 1.0.7. This is due to the plugin not properly validating a user's identity prior to updating their details like email via the flr_blocks_user_settings_handle_ajax_callback() function. This makes it possible for unauthenticated attackers to change arbitrary user's email addresses, including administrators, and leverage that to reset the user's password and gain access to their account.
+<code>The Frontend Login and Registration Blocks plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 1.1.1. This is due to the plugin not properly validating a user's identity prior to updating their details like email via the flr_blocks_user_settings_handle_ajax_callback() function. This makes it possible for unauthenticated attackers to change arbitrary user's email addresses, including administrators, and leverage that to reset the user's password and gain access to their account.
 </code>
 
 - [Nxploited/CVE-2025-3605](https://github.com/Nxploited/CVE-2025-3605)
@@ -3602,7 +3647,7 @@
 
 ### CVE-2025-4396 (2025-05-13)
 
-<code>The Relevanssi – A Better Search plugin for WordPress is vulnerable to time-based SQL Injection via the cats and tags query parameters in all versions up to, and including, 4.24.4 (Free) and &lt;= 2.27.4 (Premium) due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries to already existing queries that can be used to extract sensitive information from the database.
+<code>The Relevanssi – A Better Search plugin for WordPress is vulnerable to time-based SQL Injection via the cats and tags query parameters in all versions up to, and including, 4.24.4 (Free) and &lt;= 2.27.5 (Premium) due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries to already existing queries that can be used to extract sensitive information from the database.
 </code>
 
 - [Nefhara/CVE-2025-4396](https://github.com/Nefhara/CVE-2025-4396)
@@ -3897,7 +3942,7 @@
 
 ### CVE-2025-5394 (2025-07-15)
 
-<code>The Alone – Charity Multipurpose Non-profit WordPress Theme theme for WordPress is vulnerable to arbitrary file uploads due to a missing capability check on the alone_import_pack_install_plugin() function in all versions up to, and including, 7.8.3. This makes it possible for unauthenticated attackers to upload zip files containing webshells disguised as plugins from remote locations to achieve remote code execution.
+<code>The Alone – Charity Multipurpose Non-profit WordPress Theme theme for WordPress is vulnerable to arbitrary file uploads due to a missing capability check on the alone_import_pack_install_plugin() function in all versions up to, and including, 7.8.3. This makes it possible for unauthenticated attackers to upload zip files containing webshells disguised as plugins from remote locations to achieve remote code execution. CVE-2025-54019 is likely a duplicate of this.
 </code>
 
 - [fokda-prodz/CVE-2025-5394](https://github.com/fokda-prodz/CVE-2025-5394)
@@ -4321,7 +4366,7 @@
 
 ### CVE-2025-7340 (2025-07-15)
 
-<code>The HT Contact Form Widget For Elementor Page Builder &amp; Gutenberg Blocks &amp; Form Builder. plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the temp_file_upload function in all versions up to, and including, 2.2.1. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
+<code>The HT Contact Form Widget For Elementor Page Builder &amp; Gutenberg Blocks &amp; Form Builder plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the temp_file_upload() function in all versions up to, and including, 2.2.1. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
 </code>
 
 - [Nxploited/CVE-2025-7340](https://github.com/Nxploited/CVE-2025-7340)
@@ -4594,7 +4639,7 @@
 
 ### CVE-2025-8570 (2025-09-11)
 
-<code>The BeyondCart Connector plugin for WordPress is vulnerable to Privilege Escalation due to improper JWT secret management and authorization within the determine_current_user filter in versions 1.4.2 through 2.1.0. This makes it possible for unauthenticated attackers to craft valid tokens and assume any user’s identity.
+<code>The BeyondCart Connector plugin for WordPress is vulnerable to Privilege Escalation due to improper JWT secret management and authorization within the determine_current_user filter in versions 1.4.2 through 3.0.1. This makes it possible for unauthenticated attackers to craft valid tokens and assume any user’s identity.
 </code>
 
 - [Nxploited/CVE-2025-8570](https://github.com/Nxploited/CVE-2025-8570)
@@ -4982,13 +5027,6 @@
 
 - [lorenzocamilli/CVE-2025-10720-PoC](https://github.com/lorenzocamilli/CVE-2025-10720-PoC)
 
-### CVE-2025-10878 (2026-02-03)
-
-<code>A SQL injection vulnerability exists in the login functionality of Fikir Odalari AdminPando 1.0.1 before 2026-01-26. The username and password parameters are vulnerable to SQL injection, allowing unauthenticated attackers to bypass authentication completely. Successful exploitation grants full administrative access to the application, including the ability to manipulate the public-facing website content (HTML/DOM manipulation).
-</code>
-
-- [onurcangnc/CVE-2025-10878-AdminPandov1.0.1-SQLi](https://github.com/onurcangnc/CVE-2025-10878-AdminPandov1.0.1-SQLi)
-
 ### CVE-2025-11001 (2025-11-19)
 
 <code>7-Zip ZIP File Parsing Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. Interaction with this product is required to exploit this vulnerability but attack vectors may vary depending on the implementation.\n\nThe specific flaw exists within the handling of symbolic links in ZIP files. Crafted data in a ZIP file can cause the process to traverse to unintended directories. An attacker can leverage this vulnerability to execute code in the context of a service account. Was ZDI-CAN-26753.
@@ -5058,7 +5096,7 @@
 
 ### CVE-2025-11771 (2025-11-21)
 
-<code>The Cryptocurrency (Token), Launchpad (Presale), ICO &amp; IDO, Airdrop by TokenICO plugin for WordPress is vulnerable to unauthenticated and unauthorized modification of data due to missing authentication and capability checks on the 'createSaleRecord' function in all versions up to, and including, 2.4.6. This makes it possible for unauthenticated attackers to manipulate presales counters.
+<code>The Cryptocurrency (Token), Launchpad (Presale), ICO &amp; IDO, Airdrop by TokenICO plugin for WordPress is vulnerable to unauthenticated and unauthorized modification of data due to missing authentication and capability checks on the 'createSaleRecord' function in all versions up to, and including, 2.4.7. This makes it possible for unauthenticated attackers to manipulate presales counters.
 </code>
 
 - [jFriedli/CVE-2025-11771](https://github.com/jFriedli/CVE-2025-11771)
@@ -5159,7 +5197,7 @@
 
 ### CVE-2025-12163 (2025-12-05)
 
-<code>The Omnipress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via SVG File uploads in all versions up to, and including, 1.6.3 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses the SVG file.
+<code>The Omnipress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via SVG File uploads in all versions up to, and including, 1.6.5 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses the SVG file.
 </code>
 
 - [SnailSploit/CVE-2025-12163](https://github.com/SnailSploit/CVE-2025-12163)
@@ -5516,7 +5554,7 @@
 
 ### CVE-2025-14736 (2026-01-09)
 
-<code>The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.28.25. This is due to insufficient validation of user-supplied role values in the 'validate_value', 'pre_update_value', and 'get_fields_display' functions. This makes it possible for unauthenticated attackers to register as administrators and gain complete control of the site, granted they can access a user registration form containing a Role field.
+<code>The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.28.29. This is due to insufficient validation of user-supplied role values in the 'validate_value', 'pre_update_value', and 'get_fields_display' functions. This makes it possible for unauthenticated attackers to register as administrators and gain complete control of the site, granted they can access a user registration form containing a Role field.
 </code>
 
 - [hyunchiya/CVE-2025-14736](https://github.com/hyunchiya/CVE-2025-14736)
@@ -9480,6 +9518,7 @@
 - [popyue/CVE-2025-49132](https://github.com/popyue/CVE-2025-49132)
 - [4nuxd/CVE-2025-49132](https://github.com/4nuxd/CVE-2025-49132)
 - [revasec/CVE-2025-49132](https://github.com/revasec/CVE-2025-49132)
+- [V0idW1re/htb-pterodactyl-writeup](https://github.com/V0idW1re/htb-pterodactyl-writeup)
 
 ### CVE-2025-49144 (2025-06-23)
 
@@ -10696,7 +10735,7 @@
 - [sumanrox/rschunter](https://github.com/sumanrox/rschunter)
 - [I3r1h0n/React2Shell](https://github.com/I3r1h0n/React2Shell)
 - [zorejt/Rust_CVE-2025-55182](https://github.com/zorejt/Rust_CVE-2025-55182)
-- [StillSoul/CVE-2025-55182](https://github.com/StillSoul/CVE-2025-55182)
+- [Dread1ess/CVE-2025-55182](https://github.com/Dread1ess/CVE-2025-55182)
 - [MaxK9999/CVE-2025-55182](https://github.com/MaxK9999/CVE-2025-55182)
 - [Archerkong/CVE-2025-55182](https://github.com/Archerkong/CVE-2025-55182)
 - [philparzer/nextjs-react2shell-detect](https://github.com/philparzer/nextjs-react2shell-detect)
@@ -11469,13 +11508,6 @@
 </code>
 
 - [sanchitsahni/CVE-2025-57515](https://github.com/sanchitsahni/CVE-2025-57515)
-
-### CVE-2025-57520 (2025-09-10)
-
-<code>A Cross Site Scripting (XSS) vulnerability exists in Decap CMS thru 3.8.3. Input fields such as body, tags, title, and description are not properly sanitized before being rendered in the content preview pane. This enables an attacker to inject arbitrary JavaScript which executes whenever a user views the preview panel. The vulnerability affects multiple input vectors and does not require user interaction beyond viewing the affected content.
-</code>
-
-- [onurcangnc/CVE-2025-57520-Stored-XSS-in-Decap-CMS-3.8.3-](https://github.com/onurcangnc/CVE-2025-57520-Stored-XSS-in-Decap-CMS-3.8.3-)
 
 ### CVE-2025-57529 (2026-02-03)
 
@@ -13755,7 +13787,7 @@
 
 ### CVE-2024-0588 (2024-04-09)
 
-<code>The Paid Memberships Pro – Content Restriction, User Registration, &amp; Paid Subscriptions plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 2.12.10. This is due to missing nonce validation on the pmpro_lifter_save_streamline_option() function. This makes it possible for unauthenticated attackers to enable the streamline setting with Lifter LMS via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.
+<code>The Paid Memberships Pro – Content Restriction, User Registration, &amp; Paid Subscriptions plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 2.12.10. This is due to missing nonce validation on the pmpro_lifter_save_streamline_option() function. This makes it possible for unauthenticated attackers to enable the streamline setting with Lifter LMS via a forged request granted they can trick a site administrator into performing an action such as clicking on a link. CVE-2024-32793 and CVE-2024-32794 appear to be a duplicate of this issue.
 </code>
 
 - [kodaichodai/CVE-2024-0588](https://github.com/kodaichodai/CVE-2024-0588)
@@ -14003,7 +14035,7 @@
 
 ### CVE-2024-1380 (2024-03-13)
 
-<code>The Relevanssi – A Better Search plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the relevanssi_export_log_check() function in all versions up to, and including, 4.22.0. This makes it possible for unauthenticated attackers to export the query log data. The vendor has indicated that they may look into adding a capability check for proper authorization control, however, this vulnerability is theoretically patched as is.
+<code>The Relevanssi – A Better Search plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the relevanssi_export_log_check() function in all versions up to, and including, 4.22.0 (Free) and 2.25.0 (Premium). This makes it possible for unauthenticated attackers to export the query log data. The vendor has indicated that they may look into adding a capability check for proper authorization control, however, this vulnerability is theoretically patched as is.
 </code>
 
 - [RandomRobbieBF/CVE-2024-1380](https://github.com/RandomRobbieBF/CVE-2024-1380)
@@ -14995,7 +15027,7 @@
 
 ### CVE-2024-5324 (2024-06-06)
 
-<code>The Login/Signup Popup ( Inline Form + Woocommerce ) plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'import_settings' function in versions 2.7.1 to 2.7.2. This makes it possible for authenticated attackers, with Subscriber-level access and above, to change arbitrary options on affected sites. This can be used to enable new user registration and set the default role for new users to Administrator.
+<code>Multiple plugins for WordPress utilizing the XootiX Framework are vulnerable to unauthorized modification of data due to a missing capability check on the 'import_settings' function in various versions. This makes it possible for authenticated attackers, with Subscriber-level access and above, to change arbitrary options on affected sites. This can be used to enable new user registration and set the default role for new users to Administrator.
 </code>
 
 - [RandomRobbieBF/CVE-2024-5324](https://github.com/RandomRobbieBF/CVE-2024-5324)
@@ -15206,7 +15238,7 @@
 
 ### CVE-2024-6386 (2024-08-21)
 
-<code>The WPML plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 4.6.12 via the Twig Server-Side Template Injection. This is due to missing input validation and sanitization on the render function. This makes it possible for authenticated attackers, with Contributor-level access and above, to execute code on the server.
+<code>The WPML plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 4.6.12 via Twig Server-Side Template Injection. This is due to missing input validation and sanitization on the render function. This makes it possible for authenticated attackers, with Contributor-level access and above, to execute code on the server.
 </code>
 
 - [argendo/CVE-2024-6386](https://github.com/argendo/CVE-2024-6386)
@@ -15434,7 +15466,7 @@
 
 ### CVE-2024-7094 (2024-08-13)
 
-<code>The JS Help Desk – The Ultimate Help Desk &amp; Support Plugin plugin for WordPress is vulnerable to PHP Code Injection leading to Remote Code Execution in all versions up to, and including, 2.8.6 via the 'storeTheme' function. This is due to a lack of sanitization on user-supplied values, which replace values in the style.php file, along with missing capability checks. This makes it possible for unauthenticated attackers to execute code on the server. This issue was partially patched in 2.8.6 when the code injection issue was resolved, and fully patched in 2.8.7 when the missing authorization and cross-site request forgery protection was added.
+<code>The JS Help Desk – The Ultimate Help Desk &amp; Support Plugin plugin for WordPress is vulnerable to PHP Code Injection leading to Remote Code Execution in all versions up to, and including, 2.8.6 via the 'storeTheme' function. This is due to a lack of sanitization on user-supplied values, which replace values in the style.php file, along with missing capability checks. This makes it possible for unauthenticated attackers to execute code on the server. This issue was partially patched in 2.8.6 when the code injection issue was resolved, and fully patched in 2.8.7 when the missing authorization and cross-site request forgery protection was added. CVE-2024-43274 is likely a duplicate of this issue.
 </code>
 
 - [nastar-id/CVE-2024-7094](https://github.com/nastar-id/CVE-2024-7094)
@@ -15735,7 +15767,7 @@
 
 ### CVE-2024-8425 (2025-02-28)
 
-<code>The WooCommerce Ultimate Gift Card plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient file type validation in the 'mwb_wgm_preview_mail' and 'mwb_wgm_woocommerce_add_cart_item_data' functions in all versions up to, and including, 2.6.0. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
+<code>The WooCommerce Ultimate Gift Card plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient file type validation in the 'mwb_wgm_preview_mail' and 'mwb_wgm_woocommerce_add_cart_item_data' functions in all versions up to, and including, 2.9.2. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible. Please note that this may have been patched on an older version than 2.9.2, however, we do not have access to older versions of the software to confirm when the patch was added. The only patched version we have confirmed is 2.9.3.
 </code>
 
 - [KTN1990/CVE-2024-8425](https://github.com/KTN1990/CVE-2024-8425)
@@ -16073,7 +16105,7 @@
 
 ### CVE-2024-9821 (2024-10-12)
 
-<code>The Bot for Telegram on WooCommerce plugin for WordPress is vulnerable to sensitive information disclosure due to missing authorization checks on the 'stm_wpcfto_get_settings' AJAX action in all versions up to, and including, 1.2.4. This makes it possible for authenticated attackers, with subscriber-level access and above, to view the Telegram Bot Token, a secret token used to control the bot, which can then be used to log in as any existing user on the site, such as an administrator, if they know the username, due to the Login with Telegram feature.
+<code>The Bot for Telegram on WooCommerce plugin for WordPress is vulnerable to sensitive information disclosure due to missing authorization checks on the 'stm_wpcfto_get_settings' AJAX action in all versions up to, and including, 1.2.7.  This makes it possible for authenticated attackers, with subscriber-level access and above, to view the Telegram Bot Token, a secret token used to control the bot, which can then be used to log in as any existing user on the site, such as an administrator, if they know the username, due to the Login with Telegram feature.
 </code>
 
 - [RandomRobbieBF/CVE-2024-9821](https://github.com/RandomRobbieBF/CVE-2024-9821)
@@ -16087,7 +16119,7 @@
 
 ### CVE-2024-9890 (2024-10-26)
 
-<code>The User Toolkit plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.2.3. This is due to an improper capability check in the 'switchUser' function. This makes it possible for authenticated attackers, with subscriber-level permissions and above, to log in as any existing user on the site, such as an administrator.
+<code>The User Toolkit plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.2.3. This is due to an improper capability check in the 'switchUser' function. This makes it possible for authenticated attackers, with subscriber-level permissions and above, to log in as any existing user on the site, such as an administrator. CVE-2024-50503 may be a duplicate.
 </code>
 
 - [RandomRobbieBF/CVE-2024-9890](https://github.com/RandomRobbieBF/CVE-2024-9890)
@@ -16111,7 +16143,7 @@
 
 ### CVE-2024-9933 (2024-10-26)
 
-<code>The WatchTowerHQ plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 3.9.6. This is due to the 'watchtower_ota_token' default value is empty, and the not empty check is missing in the 'Password_Less_Access::login' function. This makes it possible for unauthenticated attackers to log in to the WatchTowerHQ client administrator user.
+<code>The WatchTowerHQ plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 3.10.1. This is due to the 'watchtower_ota_token' default value is empty, and the not empty check is missing in the 'Password_Less_Access::login' function. This makes it possible for unauthenticated attackers to log in to the WatchTowerHQ client administrator user.
 </code>
 
 - [RandomRobbieBF/CVE-2024-9933](https://github.com/RandomRobbieBF/CVE-2024-9933)
@@ -16119,7 +16151,7 @@
 
 ### CVE-2024-9935 (2024-11-16)
 
-<code>The PDF Generator Addon for Elementor Page Builder plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 1.7.5 via the rtw_pgaepb_dwnld_pdf() function. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information.
+<code>The PDF Generator Addon for Elementor Page Builder plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 2.0.0 via the rtw_pgaepb_dwnld_pdf() function. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information. CVE-2025-24569 may be a duplicate of this issue.
 </code>
 
 - [RandomRobbieBF/CVE-2024-9935](https://github.com/RandomRobbieBF/CVE-2024-9935)
@@ -16271,7 +16303,7 @@
 
 ### CVE-2024-10586 (2024-11-09)
 
-<code>The Debug Tool plugin for WordPress is vulnerable to arbitrary file creation due to a missing capability check on the dbt_pull_image() function and missing file type validation in all versions up to, and including, 2.2. This makes it possible for unauthenticated attackers to to create arbitrary files such as .php files that can be leveraged for remote code execution.
+<code>The Debug Tool plugin for WordPress is vulnerable to arbitrary file creation due to a missing capability check on the dbt_pull_image() function and missing file type validation in all versions up to, and including, 2.2. This makes it possible for unauthenticated attackers to to create arbitrary files such as .php files that can be leveraged for remote code execution. CVE-2024-52416 may be a duplicate of this issue.
 </code>
 
 - [RandomRobbieBF/CVE-2024-10586](https://github.com/RandomRobbieBF/CVE-2024-10586)
@@ -16286,7 +16318,7 @@
 
 ### CVE-2024-10629 (2024-11-13)
 
-<code>The GPX Viewer plugin for WordPress is vulnerable to arbitrary file creation due to a missing capability check and file type validation in the gpxv_file_upload() function in all versions up to, and including, 2.2.8. This makes it possible for authenticated attackers, with subscriber-level access and above, to create arbitrary files on the affected site's server which may make remote code execution possible.
+<code>The GPX Viewer plugin for WordPress is vulnerable to arbitrary file creation due to a missing capability check and file type validation in the gpxv_file_upload() function in all versions up to, and including, 2.2.9. This makes it possible for authenticated attackers, with subscriber-level access and above, to create arbitrary files on the affected site's server which may make remote code execution possible.
 </code>
 
 - [RandomRobbieBF/CVE-2024-10629](https://github.com/RandomRobbieBF/CVE-2024-10629)
@@ -17950,7 +17982,6 @@
 - [ShieldAuth-PHP/PBL05-CVE-Analsys](https://github.com/ShieldAuth-PHP/PBL05-CVE-Analsys)
 - [verylazytech/CVE-2024-23897](https://github.com/verylazytech/CVE-2024-23897)
 - [D1se0/CVE-2024-23897-Vulnerabilidad-Jenkins](https://github.com/D1se0/CVE-2024-23897-Vulnerabilidad-Jenkins)
-- [Marouane133/jenkins-lfi](https://github.com/Marouane133/jenkins-lfi)
 - [slytechroot/CVE-2024-23897](https://github.com/slytechroot/CVE-2024-23897)
 - [brandonhjh/Jenkins-CVE-2024-23897-Exploit-Demo](https://github.com/brandonhjh/Jenkins-CVE-2024-23897-Exploit-Demo)
 - [tvasari/CVE-2024-23897](https://github.com/tvasari/CVE-2024-23897)
@@ -24847,7 +24878,7 @@
 
 ### CVE-2023-1430 (2023-06-09)
 
-<code>The FluentCRM - Marketing Automation For WordPress  plugin for WordPress is vulnerable to unauthorized modification of data in versions up to, and including, 2.7.40 due to the use of an MD5 hash without a salt to control subscriptions. This makes it possible for unauthenticated attackers to unsubscribe users from lists and manage subscriptions, granted they gain access to any targeted subscribers email address.
+<code>The FluentCRM - Marketing Automation For WordPress  plugin for WordPress is vulnerable to unauthorized modification of data in versions up to, and including, 2.8.01 due to the use of an MD5 hash without a salt to control subscriptions. This makes it possible for unauthenticated attackers to unsubscribe users from lists and manage subscriptions, granted they gain access to any targeted subscribers email address.
 </code>
 
 - [karlemilnikka/CVE-2023-1430](https://github.com/karlemilnikka/CVE-2023-1430)
@@ -25317,7 +25348,7 @@
 
 ### CVE-2023-3244 (2023-08-17)
 
-<code>The Comments Like Dislike plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the restore_settings function called via an AJAX action in versions up to, and including, 1.1.9. This makes it possible for authenticated attackers with minimal permissions, such as a subscriber, to reset the plugin's settings. NOTE: After attempting to contact the developer with no response, and reporting this to the WordPress plugin's team 30 days ago we are disclosing this issue as it still is not updated.
+<code>The Comments Like Dislike plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the restore_settings function called via an AJAX action in versions up to, and including, 1.2.0. This makes it possible for authenticated attackers with minimal permissions, such as a subscriber, to reset the plugin's settings. NOTE: this issue is was only partially patched in version 1.2.0, as the nonce is still present to subscriber-level users.
 </code>
 
 - [drnull03/POC-CVE-2023-3244](https://github.com/drnull03/POC-CVE-2023-3244)
@@ -26216,7 +26247,7 @@
 
 ### CVE-2023-6875 (2024-01-11)
 
-<code>The POST SMTP Mailer – Email log, Delivery Failure Notifications and Best Mail SMTP for WordPress plugin for WordPress is vulnerable to unauthorized access of data and modification of data due to a type juggling issue on the connect-app REST endpoint in all versions up to, and including, 2.8.7. This makes it possible for unauthenticated attackers to reset the API key used to authenticate to the mailer and view logs, including password reset emails, allowing site takeover.
+<code>The POST SMTP Mailer – Email log, Delivery Failure Notifications and Best Mail SMTP for WordPress plugin for WordPress is vulnerable to unauthorized access of data and modification of data due to a type juggling issue on the connect-app REST endpoint in all versions up to, and including, 2.8.7. This makes it possible for unauthenticated attackers to reset the API key used to authenticate to the mailer and view logs, including password reset emails, allowing site takeover. CVE-2023-52233 appears to be a duplicate of this issue.
 </code>
 
 - [UlyssesSaicha/CVE-2023-6875](https://github.com/UlyssesSaicha/CVE-2023-6875)
@@ -28618,6 +28649,7 @@
 - [CankunWang/Tryhackme_Billing](https://github.com/CankunWang/Tryhackme_Billing)
 - [kayl22/magnus_billing_7.3.0_RCE_CVE-2023-30258](https://github.com/kayl22/magnus_billing_7.3.0_RCE_CVE-2023-30258)
 - [estebanzarate/CVE-2023-30258-Magnus-Billing-v7-Command-Injection-PoC](https://github.com/estebanzarate/CVE-2023-30258-Magnus-Billing-v7-Command-Injection-PoC)
+- [cyb3rk0ala/THM-MagnusBilling-CVE-2023-30258-Exploit](https://github.com/cyb3rk0ala/THM-MagnusBilling-CVE-2023-30258-Exploit)
 
 ### CVE-2023-30347 (2023-06-22)
 
@@ -30899,7 +30931,7 @@
 <code>install/aiz-uploader/upload in Campcodes Online Matrimonial Website System Script 3.3 allows XSS via a crafted SVG document.
 </code>
 
-- [Raj789-sec/CVE-2023-39115](https://github.com/Raj789-sec/CVE-2023-39115)
+- [0xrajdip/CVE-2023-39115](https://github.com/0xrajdip/CVE-2023-39115)
 
 ### CVE-2023-39141 (2023-08-22)
 
@@ -32088,6 +32120,7 @@
 - [sastraadiwiguna-purpleeliteteaming/DDoS-Purple-Teaming-Offensive-Multi-Vector-7-Tier-Defensive-Holistic-Blueprint-](https://github.com/sastraadiwiguna-purpleeliteteaming/DDoS-Purple-Teaming-Offensive-Multi-Vector-7-Tier-Defensive-Holistic-Blueprint-)
 - [dryfryce/phoenix-h2](https://github.com/dryfryce/phoenix-h2)
 - [dryfryce/phoenix-http2](https://github.com/dryfryce/phoenix-http2)
+- [TLevente20/HTTP-2-RapidReset-CVE-2023-44487-Testlab](https://github.com/TLevente20/HTTP-2-RapidReset-CVE-2023-44487-Testlab)
 
 ### CVE-2023-44758 (2023-10-06)
 
@@ -51717,7 +51750,7 @@
 <code>In TYPO3 CMS greater than or equal to 9.0.0 and less than 9.5.20, and greater than or equal to 10.0.0 and less than 10.4.6, in a case where an attacker manages to generate a valid cryptographic message authentication code (HMAC-SHA1) - either by using a different existing vulnerability or in case the internal encryptionKey was exposed - it is possible to retrieve arbitrary files of a TYPO3 installation. This includes the possibility to fetch typo3conf/LocalConfiguration.php, which again contains the encryptionKey as well as credentials of the database management system being used. In case a database server is directly accessible either via internet or in a shared hosting network, this allows the ability to completely retrieve, manipulate or delete database contents. This includes creating an administration user account - which can be used to trigger remote code execution by injecting custom extensions. This has been patched in versions 9.5.20 and 10.4.6.
 </code>
 
-- [StillSoul/CVE-2020-15099](https://github.com/StillSoul/CVE-2020-15099)
+- [Dread1ess/CVE-2020-15099](https://github.com/Dread1ess/CVE-2020-15099)
 
 ### CVE-2020-15148 (2020-09-15)
 
@@ -56881,6 +56914,7 @@
 - [EdouardosStav/CVE-2019-15107-RCE-WebMin](https://github.com/EdouardosStav/CVE-2019-15107-RCE-WebMin)
 - [bayazid-bit/CVE-2019-15107](https://github.com/bayazid-bit/CVE-2019-15107)
 - [ArtemCyberLab/Project-Exploitation-of-Webmin-Authentication-Vulnerability](https://github.com/ArtemCyberLab/Project-Exploitation-of-Webmin-Authentication-Vulnerability)
+- [adampawelczyk/CVE-2019-15107](https://github.com/adampawelczyk/CVE-2019-15107)
 
 ### CVE-2019-15120 (2019-08-16)
 
@@ -62508,7 +62542,7 @@
 - [FozilCV/Apache-Struts2-CVE-2017-5638](https://github.com/FozilCV/Apache-Struts2-CVE-2017-5638)
 - [ACharaf06/CVE-2017-5638-Attack-and-Defense](https://github.com/ACharaf06/CVE-2017-5638-Attack-and-Defense)
 - [soufiane-benchahyd/vulhub-struts2](https://github.com/soufiane-benchahyd/vulhub-struts2)
-- [AIPEAC/SC3010-Computer-Security](https://github.com/AIPEAC/SC3010-Computer-Security)
+- [AIPEACS/SC3010-Computer-Security](https://github.com/AIPEACS/SC3010-Computer-Security)
 
 ### CVE-2017-5645 (2017-04-17)
 
