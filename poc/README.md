@@ -547,6 +547,13 @@
 ### CVE-2026-4112
 - [Hann1bl3L3ct3r/CVE-2026-4112](https://github.com/Hann1bl3L3ct3r/CVE-2026-4112)
 
+### CVE-2026-4257 (2026-03-30)
+
+<code>The Contact Form by Supsystic plugin for WordPress is vulnerable to Server-Side Template Injection (SSTI) leading to Remote Code Execution (RCE) in all versions up to, and including, 1.7.36. This is due to the plugin using the Twig `Twig_Loader_String` template engine without sandboxing, combined with the `cfsPreFill` prefill functionality that allows unauthenticated users to inject arbitrary Twig expressions into form field values via GET parameters. This makes it possible for unauthenticated attackers to execute arbitrary PHP functions and OS commands on the server by leveraging Twig's `registerUndefinedFilterCallback()` method to register arbitrary PHP callbacks.
+</code>
+
+- [bootstrapbool/cve-2026-4257](https://github.com/bootstrapbool/cve-2026-4257)
+
 ### CVE-2026-4342 (2026-03-19)
 
 <code>A security issue was discovered in ingress-nginx where a combination of Ingress annotations can be used to inject configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)
@@ -560,6 +567,13 @@
 </code>
 
 - [Hann1bl3L3ct3r/CVE-2026-4406](https://github.com/Hann1bl3L3ct3r/CVE-2026-4406)
+
+### CVE-2026-4747 (2026-03-26)
+
+<code>Each RPCSEC_GSS data packet is validated by a routine which checks a signature in the packet.  This routine copies a portion of the packet into a stack buffer, but fails to ensure that the buffer is sufficiently large, and a malicious client can trigger a stack overflow.  Notably, this does not require the client to authenticate itself first.\n\nAs kgssapi.ko's RPCSEC_GSS implementation is vulnerable, remote code execution in the kernel is possible by an authenticated user that is able to send packets to the kernel's NFS server while kgssapi.ko is loaded into the kernel.\n\nIn userspace, applications which have librpcgss_sec loaded and run an RPC server are vulnerable to remote code execution from any client able to send it packets.  We are not aware of any such applications in the FreeBSD base system.
+</code>
+
+- [kaleth4/CVE-2026-4747](https://github.com/kaleth4/CVE-2026-4747)
 
 ### CVE-2026-4800 (2026-03-31)
 
@@ -595,6 +609,13 @@
 </code>
 
 - [lan1oc/cve-2026-5147-exp](https://github.com/lan1oc/cve-2026-5147-exp)
+
+### CVE-2026-5173 (2026-04-08)
+
+<code>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 16.9.6 before 18.8.9, 18.9 before 18.9.5, and 18.10 before 18.10.3 that could have allowed an authenticated user to invoke unintended server-side methods through websocket connections due to improper access control.
+</code>
+
+- [0xBlackash/CVE-2026-5173](https://github.com/0xBlackash/CVE-2026-5173)
 
 ### CVE-2026-5201 (2026-03-31)
 
@@ -929,6 +950,7 @@
 - [0xBlackash/CVE-2026-21858](https://github.com/0xBlackash/CVE-2026-21858)
 - [bamov970/CVE-2026-21858](https://github.com/bamov970/CVE-2026-21858)
 - [Yati2/Ni8mare-CVE-2026-21858](https://github.com/Yati2/Ni8mare-CVE-2026-21858)
+- [kaleth4/CVE-2026-21858](https://github.com/kaleth4/CVE-2026-21858)
 
 ### CVE-2026-21876 (2026-01-08)
 
@@ -2707,6 +2729,7 @@
 - [0xBlackash/CVE-2026-34197](https://github.com/0xBlackash/CVE-2026-34197)
 - [dinosn/CVE-2026-34197](https://github.com/dinosn/CVE-2026-34197)
 - [DEVSECURITYSPRO/CVE-2026-34197](https://github.com/DEVSECURITYSPRO/CVE-2026-34197)
+- [AtoposX-J/CVE-2026-34197-Apache-ActiveMQ-RCE](https://github.com/AtoposX-J/CVE-2026-34197-Apache-ActiveMQ-RCE)
 
 ### CVE-2026-34200 (2026-03-31)
 
@@ -7978,6 +8001,7 @@
 - [yonathanpy/CVE-2025-32433.py](https://github.com/yonathanpy/CVE-2025-32433.py)
 - [agustfricke/erlang-ssh-rce-CVE-2025-32433](https://github.com/agustfricke/erlang-ssh-rce-CVE-2025-32433)
 - [joshuavanderpoll/cve-2025-32433](https://github.com/joshuavanderpoll/cve-2025-32433)
+- [0xBlackash/CVE-2025-32433](https://github.com/0xBlackash/CVE-2025-32433)
 
 ### CVE-2025-32434 (2025-04-18)
 
@@ -8774,6 +8798,13 @@
 </code>
 
 - [far00t01/CVE-2025-43960](https://github.com/far00t01/CVE-2025-43960)
+
+### CVE-2025-43990 (2025-11-05)
+
+<code>Dell Command Monitor (DCM), versions prior to 10.12.3.28, contains an Execution with Unnecessary Privileges vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges.
+</code>
+
+- [AMkkk221/CVE-2025-43990-Magento-RCE](https://github.com/AMkkk221/CVE-2025-43990-Magento-RCE)
 
 ### CVE-2025-44039 (2025-05-13)
 
@@ -12722,6 +12753,7 @@
 - [v3cn4x00/POC-CVE-2025-66034](https://github.com/v3cn4x00/POC-CVE-2025-66034)
 - [4nuxd/CVE-2025-66034](https://github.com/4nuxd/CVE-2025-66034)
 - [jwsly12/CVE-2025-66034-htb-ctf](https://github.com/jwsly12/CVE-2025-66034-htb-ctf)
+- [V0idW1re/HTB-VariaType-Writeup](https://github.com/V0idW1re/HTB-VariaType-Writeup)
 
 ### CVE-2025-66039 (2025-12-09)
 
@@ -18338,6 +18370,7 @@
 
 - [AliElKhatteb/CVE-2024-25082_CVE-2024-25081](https://github.com/AliElKhatteb/CVE-2024-25082_CVE-2024-25081)
 - [moamenx8/CVE-2024-25082](https://github.com/moamenx8/CVE-2024-25082)
+- [V0idW1re/HTB-VariaType-Writeup](https://github.com/V0idW1re/HTB-VariaType-Writeup)
 
 ### CVE-2024-25092 (2024-06-09)
 
@@ -18880,6 +18913,7 @@
 </code>
 
 - [Ant1sec-ops/CVE-2024-27766](https://github.com/Ant1sec-ops/CVE-2024-27766)
+- [y0un9eee/CVE-2024-27766](https://github.com/y0un9eee/CVE-2024-27766)
 
 ### CVE-2024-27804 (2024-05-13)
 
@@ -24644,7 +24678,6 @@
 </code>
 
 - [im-hanzou/EVCer](https://github.com/im-hanzou/EVCer)
-- [Sn20393873/Extensive](https://github.com/Sn20393873/Extensive)
 
 ### CVE-2023-0179 (2023-03-27)
 
@@ -42025,7 +42058,6 @@
 - [GodOfServer/CVE-2021-3129](https://github.com/GodOfServer/CVE-2021-3129)
 - [Prabesh01/hoh4](https://github.com/Prabesh01/hoh4)
 - [lukwagoasuman/CVE-2021-3129---Laravel-RCE](https://github.com/lukwagoasuman/CVE-2021-3129---Laravel-RCE)
-- [Nullsecur1ty/CVE-2021-3129](https://github.com/Nullsecur1ty/CVE-2021-3129)
 
 ### CVE-2021-3130 (2021-01-20)
 
@@ -42104,6 +42136,7 @@
 - [halissha/CVE-2021-3156](https://github.com/halissha/CVE-2021-3156)
 - [sharkmoos/Baron-Samedit](https://github.com/sharkmoos/Baron-Samedit)
 - [chenaotian/CVE-2021-3156](https://github.com/chenaotian/CVE-2021-3156)
+- [ret2basic/SudoScience](https://github.com/ret2basic/SudoScience)
 - [RodricBr/CVE-2021-3156](https://github.com/RodricBr/CVE-2021-3156)
 - [ypl6/heaplens](https://github.com/ypl6/heaplens)
 - [q77190858/CVE-2021-3156](https://github.com/q77190858/CVE-2021-3156)
@@ -51035,6 +51068,7 @@
 </code>
 
 - [enessakircolak/Windows-11-24h2-Kernel-Exploit](https://github.com/enessakircolak/Windows-11-24h2-Kernel-Exploit)
+- [enessakircolak/CVE-2020-12446](https://github.com/enessakircolak/CVE-2020-12446)
 
 ### CVE-2020-12593 (2020-11-18)
 
@@ -60018,7 +60052,6 @@
 - [dego905/Cam](https://github.com/dego905/Cam)
 - [A-Alabdoo/CVE-DVr](https://github.com/A-Alabdoo/CVE-DVr)
 - [its-anya/DVR_Credential_Scanner](https://github.com/its-anya/DVR_Credential_Scanner)
-- [jameseyes/DVRC](https://github.com/jameseyes/DVRC)
 - [0xDamian/CVE-2018-9995-rs](https://github.com/0xDamian/CVE-2018-9995-rs)
 
 ### CVE-2018-10097 (2018-04-13)
@@ -64769,7 +64802,6 @@
 - [bazad/rootsh](https://github.com/bazad/rootsh)
 - [berritus163t/bazad5](https://github.com/berritus163t/bazad5)
 - [SideGreenHand100/bazad5](https://github.com/SideGreenHand100/bazad5)
-- [zqlblingzs/bazad5](https://github.com/zqlblingzs/bazad5)
 
 ### CVE-2016-2067 (2016-07-11)
 
@@ -67669,6 +67701,8 @@
 - [Industri4l-H3ll-Xpl0it3rs/CVE-2014-6271-Shellshock](https://github.com/Industri4l-H3ll-Xpl0it3rs/CVE-2014-6271-Shellshock)
 - [0xBlackash/CVE-2014-6271](https://github.com/0xBlackash/CVE-2014-6271)
 - [ambjlou/it355-lab4-enterprise-lan-security](https://github.com/ambjlou/it355-lab4-enterprise-lan-security)
+- [kaleth4/-CVE-2014-6271](https://github.com/kaleth4/-CVE-2014-6271)
+- [kaleth4/CVE-2014-6271](https://github.com/kaleth4/CVE-2014-6271)
 
 ### CVE-2014-6287 (2014-10-07)
 
