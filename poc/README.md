@@ -172,6 +172,7 @@
 </code>
 
 - [sw0rd1ight/CVE-2026-1312](https://github.com/sw0rd1ight/CVE-2026-1312)
+- [alpinine/CVE-2026-1312-Testing](https://github.com/alpinine/CVE-2026-1312-Testing)
 
 ### CVE-2026-1337 (2026-02-06)
 
@@ -552,6 +553,13 @@
 - [joshuavanderpoll/CVE-2026-3891](https://github.com/joshuavanderpoll/CVE-2026-3891)
 - [Nxploited/CVE-2026-3891](https://github.com/Nxploited/CVE-2026-3891)
 
+### CVE-2026-3909 (2026-03-12)
+
+<code>Out of bounds write in Skia in Google Chrome prior to 146.0.7680.75 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)
+</code>
+
+- [anansi2safe/CVE-2026-3909](https://github.com/anansi2safe/CVE-2026-3909)
+
 ### CVE-2026-4092 (2026-03-13)
 
 <code>Path Traversal in Clasp impacting versions &lt; 3.2.0 allows a remote attacker to perform remote code execution via a malicious Google Apps Script project containing specially crafted filenames with directory traversal sequences.
@@ -593,6 +601,7 @@
 </code>
 
 - [kaleth4/CVE-2026-4747](https://github.com/kaleth4/CVE-2026-4747)
+- [kaleth4/CVE-2026-4747-](https://github.com/kaleth4/CVE-2026-4747-)
 
 ### CVE-2026-4800 (2026-03-31)
 
@@ -657,6 +666,13 @@
 </code>
 
 - [kaleth4/CVE-2026-5465](https://github.com/kaleth4/CVE-2026-5465)
+
+### CVE-2026-5530 (2026-04-05)
+
+<code>A flaw has been found in Ollama up to 18.1. This issue affects some unknown processing of the file server/download.go of the component Model Pull API. Executing a manipulation can lead to server-side request forgery. The attack can be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.
+</code>
+
+- [davidrxchester/CVE-2026-5530](https://github.com/davidrxchester/CVE-2026-5530)
 
 ### CVE-2026-5733 (2026-04-07)
 
@@ -1229,6 +1245,7 @@
 - [d3vn0mi/CVE-2026-23744-POC](https://github.com/d3vn0mi/CVE-2026-23744-POC)
 - [d0x-awrqxavc/CVE-2026-23744-HACKTHEBOX](https://github.com/d0x-awrqxavc/CVE-2026-23744-HACKTHEBOX)
 - [CyLock11/CVE-2026-23744](https://github.com/CyLock11/CVE-2026-23744)
+- [luiskrnr/exploit-CVE-2026-23744](https://github.com/luiskrnr/exploit-CVE-2026-23744)
 
 ### CVE-2026-23745 (2026-01-16)
 
@@ -1266,6 +1283,13 @@
 </code>
 
 - [AdityaBhatt3010/CVE-2026-23842-Denial-of-Service-via-Database-Connection-Pool-Exhaustion-version-1.2.10](https://github.com/AdityaBhatt3010/CVE-2026-23842-Denial-of-Service-via-Database-Connection-Pool-Exhaustion-version-1.2.10)
+
+### CVE-2026-23869 (2026-04-08)
+
+<code>A denial of service vulnerability exists in React Server Components, affecting the following packages: react-server-dom-parcel, react-server-dom-turbopack and react-server-dom-webpack (versions 19.0.0 through 19.0.4, 19.1.0 through 19.1.5, and 19.2.0 through 19.2.4). The vulnerability is triggered by sending specially crafted HTTP requests to Server Function endpoints.The payload of the HTTP request causes excessive CPU usage for up to a minute ending in a thrown error that is catchable.
+</code>
+
+- [yohannslm/CVE-2026-23869](https://github.com/yohannslm/CVE-2026-23869)
 
 ### CVE-2026-23885 (2026-01-19)
 
@@ -2189,6 +2213,7 @@
 - [ClayOfGilgamesh/CVE-2026-29000](https://github.com/ClayOfGilgamesh/CVE-2026-29000)
 - [0xW1LD/CVE-2026-29000](https://github.com/0xW1LD/CVE-2026-29000)
 - [yasirr10/CVE-2026-29000](https://github.com/yasirr10/CVE-2026-29000)
+- [Gajraj238/CVE-2026-29000](https://github.com/Gajraj238/CVE-2026-29000)
 
 ### CVE-2026-29041 (2026-03-06)
 
@@ -2571,7 +2596,7 @@
 - [rootdirective-sec/CVE-2026-33017-Lab](https://github.com/rootdirective-sec/CVE-2026-33017-Lab)
 - [z4yd3/PoC-CVE-2026-33017](https://github.com/z4yd3/PoC-CVE-2026-33017)
 - [EQSTLab/CVE-2026-33017](https://github.com/EQSTLab/CVE-2026-33017)
-- [masterwok/CVE-2026-33017-Langflow-POC](https://github.com/masterwok/CVE-2026-33017-Langflow-POC)
+- [masterwok/CVE-2026-33017-Langflow-PoC](https://github.com/masterwok/CVE-2026-33017-Langflow-PoC)
 - [oscarmine/CVE-2026-33017-Exploit](https://github.com/oscarmine/CVE-2026-33017-Exploit)
 
 ### CVE-2026-33032 (2026-03-30)
@@ -2580,6 +2605,13 @@
 </code>
 
 - [Twinson333/cve-2026-33032-scanner](https://github.com/Twinson333/cve-2026-33032-scanner)
+
+### CVE-2026-33033 (2026-04-07)
+
+<code>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4.2.30.\n`MultiPartParser` allows remote attackers to degrade performance by submitting multipart uploads with `Content-Transfer-Encoding: base64` including excessive whitespace.\nEarlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.\nDjango would like to thank Seokchan Yoon for reporting this issue.
+</code>
+
+- [ch4n3-yoon/CVE-2026-33033-PoC](https://github.com/ch4n3-yoon/CVE-2026-33033-PoC)
 
 ### CVE-2026-33147 (2026-03-20)
 
@@ -2765,6 +2797,7 @@
 - [DEVSECURITYSPRO/CVE-2026-34197](https://github.com/DEVSECURITYSPRO/CVE-2026-34197)
 - [AtoposX-J/CVE-2026-34197-Apache-ActiveMQ-RCE](https://github.com/AtoposX-J/CVE-2026-34197-Apache-ActiveMQ-RCE)
 - [KONDORDEVSECURITYCORP/CVE-2026-34197](https://github.com/KONDORDEVSECURITYCORP/CVE-2026-34197)
+- [hg0434hongzh0/CVE-2026-34197](https://github.com/hg0434hongzh0/CVE-2026-34197)
 
 ### CVE-2026-34200 (2026-03-31)
 
@@ -2825,6 +2858,13 @@
 ### CVE-2026-35570
 - [Rickidevs/CVE-2026-35570](https://github.com/Rickidevs/CVE-2026-35570)
 
+### CVE-2026-35584 (2026-04-07)
+
+<code>FreeScout is a free help desk and shared inbox built with PHP's Laravel framework. Prior to 1.8.212, the endpoint GET /thread/read/{conversation_id}/{thread_id} does not require authentication and does not validate whether the given thread_id belongs to the given conversation_id. This allows any unauthenticated attacker to mark any thread as read by passing arbitrary IDs, enumerate valid thread IDs via HTTP response codes (200 vs 404), and manipulate opened_at timestamps across conversations (IDOR). This vulnerability is fixed in 1.8.212.
+</code>
+
+- [LeonardoNovais7/CVE-2026-35584](https://github.com/LeonardoNovais7/CVE-2026-35584)
+
 ### CVE-2026-35616 (2026-04-04)
 
 <code>A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.
@@ -2855,6 +2895,13 @@
 </code>
 
 - [zebbernCVE/CVE-2026-39371](https://github.com/zebbernCVE/CVE-2026-39371)
+
+### CVE-2026-39376 (2026-04-07)
+
+<code>FastFeedParser is a high performance RSS, Atom and RDF parser. Prior to 0.5.10, when parse() fetches a URL that returns an HTML page containing a &lt;meta http-equiv=&quot;refresh&quot;&gt; tag, it recursively calls itself with the redirect URL — with no depth limit, no visited-URL deduplication, and no redirect count cap. An attacker-controlled server that returns an infinite chain of HTML meta-refresh responses causes unbounded recursion, exhausting the Python call stack and crashing the process. This vulnerability can also be chained with the companion SSRF issue to reach internal network targets after bypassing the initial URL check. This vulnerability is fixed in 0.5.10.
+</code>
+
+- [redyank/CVE-2026-39376](https://github.com/redyank/CVE-2026-39376)
 
 ### CVE-2026-39912 (2026-04-09)
 
@@ -9676,6 +9723,7 @@
 
 - [ashiqrehan-21/MCP-Inspector-CVE-2025-49596](https://github.com/ashiqrehan-21/MCP-Inspector-CVE-2025-49596)
 - [pppxo/CVE-2025-49596-PoC](https://github.com/pppxo/CVE-2025-49596-PoC)
+- [acseguin21/trust-boundary-ctf](https://github.com/acseguin21/trust-boundary-ctf)
 
 ### CVE-2025-49619 (2025-06-07)
 
@@ -11158,6 +11206,7 @@
 - [toprak-t800/CVE-2025-55182](https://github.com/toprak-t800/CVE-2025-55182)
 - [porsellaj/cve-2025-55182-react2shell-analysis](https://github.com/porsellaj/cve-2025-55182-react2shell-analysis)
 - [hexsh1dow/CVE-2025-55182](https://github.com/hexsh1dow/CVE-2025-55182)
+- [masterwok/CVE-2025-55182-React2Shell-PoC](https://github.com/masterwok/CVE-2025-55182-React2Shell-PoC)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -26558,6 +26607,7 @@
 - [Religan/CVE-2023-20198](https://github.com/Religan/CVE-2023-20198)
 - [Gill-Singh-A/CVE-2023-20198-Exploit](https://github.com/Gill-Singh-A/CVE-2023-20198-Exploit)
 - [gustavorobertux/cisco-cve-2023-20198-checker](https://github.com/gustavorobertux/cisco-cve-2023-20198-checker)
+- [telly251/forwardnetworksdemo](https://github.com/telly251/forwardnetworksdemo)
 
 ### CVE-2023-20209 (2023-08-16)
 
@@ -42224,7 +42274,6 @@
 - [halissha/CVE-2021-3156](https://github.com/halissha/CVE-2021-3156)
 - [sharkmoos/Baron-Samedit](https://github.com/sharkmoos/Baron-Samedit)
 - [chenaotian/CVE-2021-3156](https://github.com/chenaotian/CVE-2021-3156)
-- [ret2basic/SudoScience](https://github.com/ret2basic/SudoScience)
 - [RodricBr/CVE-2021-3156](https://github.com/RodricBr/CVE-2021-3156)
 - [ypl6/heaplens](https://github.com/ypl6/heaplens)
 - [q77190858/CVE-2021-3156](https://github.com/q77190858/CVE-2021-3156)
@@ -47665,6 +47714,7 @@
 - [lathika-3006/Solar-exploiting-log-4j](https://github.com/lathika-3006/Solar-exploiting-log-4j)
 - [Lavanya2085/solar-exploiting-log4j](https://github.com/Lavanya2085/solar-exploiting-log4j)
 - [danieljosmariyan7254/TryHackMe-Solar-exploiting-log4j-](https://github.com/danieljosmariyan7254/TryHackMe-Solar-exploiting-log4j-)
+- [joaovicdev/EXPLOIT-CVE-2021-44228](https://github.com/joaovicdev/EXPLOIT-CVE-2021-44228)
 
 ### CVE-2021-44255 (2022-01-31)
 
