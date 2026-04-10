@@ -193,6 +193,13 @@
 - [Nxploited/CVE-2026-1357](https://github.com/Nxploited/CVE-2026-1357)
 - [0xBlackash/CVE-2026-1357](https://github.com/0xBlackash/CVE-2026-1357)
 
+### CVE-2026-1375 (2026-02-03)
+
+<code>The Tutor LMS – eLearning and online course solution plugin for WordPress is vulnerable to Insecure Direct Object References (IDOR) in all versions up to, and including, 3.9.5. This is due to missing object-level authorization checks in the `course_list_bulk_action()`, `bulk_delete_course()`, and `update_course_status()` functions. This makes it possible for authenticated attackers, with Tutor Instructor-level access and above, to modify or delete arbitrary courses they do not own by manipulating course IDs in bulk action requests.
+</code>
+
+- [d3kc4rt1/CVE-2026-1375](https://github.com/d3kc4rt1/CVE-2026-1375)
+
 ### CVE-2026-1405 (2026-02-19)
 
 <code>The Slider Future plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'slider_future_handle_image_upload' function in all versions up to, and including, 1.0.5. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
@@ -243,6 +250,7 @@
 </code>
 
 - [Vimash-Dilsara/-CVE-2026-1657](https://github.com/Vimash-Dilsara/-CVE-2026-1657)
+- [d3kc4rt1/CVE-2026-1657](https://github.com/d3kc4rt1/CVE-2026-1657)
 
 ### CVE-2026-1668 (2026-03-13)
 
@@ -496,6 +504,13 @@
 - [fevar54/CVE-2026-3502---TrueConf-Client-Update-Hijacking-PoC](https://github.com/fevar54/CVE-2026-3502---TrueConf-Client-Update-Hijacking-PoC)
 - [fevar54/CVE-2026-3502-Scanner---TrueConf-Vulnerability-Detection-Tool](https://github.com/fevar54/CVE-2026-3502-Scanner---TrueConf-Vulnerability-Detection-Tool)
 
+### CVE-2026-3516 (2026-03-20)
+
+<code>The Contact List plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the '_cl_map_iframe' parameter in all versions up to, and including, 3.0.18. This is due to insufficient input sanitization and output escaping when handling the Google Maps iframe custom field. The saveCustomFields() function in class-contact-list-custom-fields.php uses a regex to extract &lt;iframe&gt; tags from user input but does not validate or sanitize the iframe's attributes, allowing event handlers like 'onload' to be included. The extracted iframe HTML is stored via update_post_meta() and later rendered on the front-end in class-cl-public-card.php without any escaping or wp_kses filtering. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+</code>
+
+- [d3kc4rt1/CVE-2026-3516](https://github.com/d3kc4rt1/CVE-2026-3516)
+
 ### CVE-2026-3584 (2026-03-20)
 
 <code>The Kali Forms plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.4.9 via the 'form_process' function. This is due to the 'prepare_post_data' function mapping user-supplied keys directly into internal placeholder storage, combined with the use of 'call_user_func' on these placeholder values. This makes it possible for unauthenticated attackers to execute code on the server.
@@ -544,7 +559,11 @@
 
 - [g0w6y/CVE-2026-4092](https://github.com/g0w6y/CVE-2026-4092)
 
-### CVE-2026-4112
+### CVE-2026-4112 (2026-04-09)
+
+<code>Improper neutralization of special elements used in an SQL command (“SQL Injection”) in SonicWall SMA1000 series appliances allows a remote authenticated attacker with read-only administrator privileges to escalate privileges to primary administrator.
+</code>
+
 - [Hann1bl3L3ct3r/CVE-2026-4112](https://github.com/Hann1bl3L3ct3r/CVE-2026-4112)
 
 ### CVE-2026-4257 (2026-03-30)
@@ -957,6 +976,7 @@
 <code>The OWASP core rule set (CRS) is a set of generic attack detection rules for use with compatible web application firewalls. Prior to versions 4.22.0 and 3.3.8, the current rule 922110 has a bug when processing multipart requests with multiple parts. When the first rule in a chain iterates over a collection (like `MULTIPART_PART_HEADERS`), the capture variables (`TX:0`, `TX:1`) get overwritten with each iteration. Only the last captured value is available to the chained rule, which means malicious charsets in earlier parts can be missed if a later part has a legitimate charset. Versions 4.22.0 and 3.3.8 patch the issue.
 </code>
 
+- [Mefhika120/CVE-2026-21876](https://github.com/Mefhika120/CVE-2026-21876)
 - [daytriftnewgen/CVE-2026-21876](https://github.com/daytriftnewgen/CVE-2026-21876)
 
 ### CVE-2026-21902 (2026-02-25)
@@ -2237,6 +2257,9 @@
 - [Jvr2022/CVE-2026-29786](https://github.com/Jvr2022/CVE-2026-29786)
 - [Rohitberiwala/NodeJS-Tar-Symlink-Exploit-CVE-2026-29786](https://github.com/Rohitberiwala/NodeJS-Tar-Symlink-Exploit-CVE-2026-29786)
 
+### CVE-2026-29861
+- [amanyadav78/CVE-2026-29861](https://github.com/amanyadav78/CVE-2026-29861)
+
 ### CVE-2026-29905 (2026-03-26)
 
 <code>Kirby CMS through 5.1.4 allows an authenticated user with 'Editor' permissions to cause a persistent Denial of Service (DoS) via a malformed image upload. The application fails to properly validate the return value of the PHP getimagesize() function. When the system attempts to process this file for metadata or thumbnail generation, it triggers a fatal TypeError.
@@ -2251,7 +2274,11 @@
 
 - [qflksheep/CVE-2026-29909-MRCMS-vulnerability](https://github.com/qflksheep/CVE-2026-29909-MRCMS-vulnerability)
 
-### CVE-2026-29923
+### CVE-2026-29923 (2026-04-09)
+
+<code>The pstrip64.sys driver in EnTech Taiwan PowerStrip &lt;=3.90.736 allows local users to escalate privileges to SYSTEM via a crafted IOCTL request enabling unprivileged users to map arbitrary physical memory into their address space and modify critical kernel structures.
+</code>
+
 - [Smarttfoxx/CVE-2026-29923](https://github.com/Smarttfoxx/CVE-2026-29923)
 
 ### CVE-2026-29954 (2026-03-30)
@@ -2367,6 +2394,13 @@
 </code>
 
 - [MorielHarush/CVE-2026-30952-PoC](https://github.com/MorielHarush/CVE-2026-30952-PoC)
+
+### CVE-2026-31402 (2026-04-03)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nnfsd: fix heap overflow in NFSv4.0 LOCK replay cache\n\nThe NFSv4.0 replay cache uses a fixed 112-byte inline buffer\n(rp_ibuf[NFSD4_REPLAY_ISIZE]) to store encoded operation responses.\nThis size was calculated based on OPEN responses and does not account\nfor LOCK denied responses, which include the conflicting lock owner as\na variable-length field up to 1024 bytes (NFS4_OPAQUE_LIMIT).\n\nWhen a LOCK operation is denied due to a conflict with an existing lock\nthat has a large owner, nfsd4_encode_operation() copies the full encoded\nresponse into the undersized replay buffer via read_bytes_from_xdr_buf()\nwith no bounds check. This results in a slab-out-of-bounds write of up\nto 944 bytes past the end of the buffer, corrupting adjacent heap memory.\n\nThis can be triggered remotely by an unauthenticated attacker with two\ncooperating NFSv4.0 clients: one sets a lock with a large owner string,\nthen the other requests a conflicting lock to provoke the denial.\n\nWe could fix this by increasing NFSD4_REPLAY_ISIZE to allow for a full\nopaque, but that would increase the size of every stateowner, when most\nlockowners are not that large.\n\nInstead, fix this by checking the encoded response length against\nNFSD4_REPLAY_ISIZE before copying into the replay buffer. If the\nresponse is too large, set rp_buflen to 0 to skip caching the replay\npayload. The status is still cached, and the client already received the\ncorrect response on the original request.
+</code>
+
+- [0xBlackash/CVE-2026-31402](https://github.com/0xBlackash/CVE-2026-31402)
 
 ### CVE-2026-31802 (2026-03-09)
 
@@ -2730,6 +2764,7 @@
 - [dinosn/CVE-2026-34197](https://github.com/dinosn/CVE-2026-34197)
 - [DEVSECURITYSPRO/CVE-2026-34197](https://github.com/DEVSECURITYSPRO/CVE-2026-34197)
 - [AtoposX-J/CVE-2026-34197-Apache-ActiveMQ-RCE](https://github.com/AtoposX-J/CVE-2026-34197-Apache-ActiveMQ-RCE)
+- [KONDORDEVSECURITYCORP/CVE-2026-34197](https://github.com/KONDORDEVSECURITYCORP/CVE-2026-34197)
 
 ### CVE-2026-34200 (2026-03-31)
 
@@ -2751,6 +2786,13 @@
 </code>
 
 - [redyank/CVE-2026-34444](https://github.com/redyank/CVE-2026-34444)
+
+### CVE-2026-34724 (2026-04-08)
+
+<code>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0.1, a server-side template injection vulnerability  which leads to RCE via AI Agent exists. Impact is limited to environments where an attacker can control or influence type_enrichment_data (typically high-privilege administrative configuration). This vulnerability is fixed in 7.0.1.
+</code>
+
+- [0xBlackash/CVE-2026-34724](https://github.com/0xBlackash/CVE-2026-34724)
 
 ### CVE-2026-34828 (2026-04-02)
 
@@ -2813,6 +2855,13 @@
 </code>
 
 - [zebbernCVE/CVE-2026-39371](https://github.com/zebbernCVE/CVE-2026-39371)
+
+### CVE-2026-39912 (2026-04-09)
+
+<code>V2Board 1.6.1 through 1.7.4 and Xboard through 0.1.9 expose authentication tokens in HTTP response bodies of the loginWithMailLink endpoint when the login_with_mail_link_enable feature is active. Unauthenticated attackers can POST to the loginWithMailLink endpoint with a known email address to receive the full authentication URL in the response, then exchange the token at the token2Login endpoint to obtain a valid bearer token with complete account access including admin privileges.
+</code>
+
+- [Chocapikk/CVE-2026-39912](https://github.com/Chocapikk/CVE-2026-39912)
 
 
 ## 2025
@@ -5517,6 +5566,13 @@
 
 - [h3raklez/CVE-2025-14321](https://github.com/h3raklez/CVE-2025-14321)
 
+### CVE-2025-14325 (2025-12-09)
+
+<code>JIT miscompilation in the JavaScript Engine: JIT component. This vulnerability affects Firefox &lt; 146, Firefox ESR &lt; 140.6, Thunderbird &lt; 146, and Thunderbird &lt; 140.6.
+</code>
+
+- [WostGit/cve-2025-14325-full-repro](https://github.com/WostGit/cve-2025-14325-full-repro)
+
 ### CVE-2025-14340 (2026-02-18)
 
 <code>Cross-site scripting in REST Management Interface in Payara Server &lt;4.1.2.191.54, &lt;5.83.0, &lt;6.34.0, &lt;7.2026.1 allows an attacker to mislead the administrator to change the admin password via URL Payload.
@@ -5656,12 +5712,26 @@
 
 - [Ermensonx/CVE-2025-14857-MongoBleed](https://github.com/Ermensonx/CVE-2025-14857-MongoBleed)
 
+### CVE-2025-14893 (2026-01-09)
+
+<code>The IndieWeb plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Telephone' parameter in all versions up to, and including, 4.0.5 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with author level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+</code>
+
+- [d3kc4rt1/CVE-2025-14893](https://github.com/d3kc4rt1/CVE-2025-14893)
+
 ### CVE-2025-14998 (2026-01-02)
 
 <code>The Branda plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 3.4.24. This is due to the plugin not properly validating a user's identity prior to updating their password. This makes it possible for unauthenticated attackers to change arbitrary user's passwords, including administrators, and leverage that to gain access to their account.
 </code>
 
 - [KTN1990/CVE-2025-14998](https://github.com/KTN1990/CVE-2025-14998)
+
+### CVE-2025-15260 (2026-02-04)
+
+<code>The MyRewards – Loyalty Points and Rewards for WooCommerce plugin for WordPress is vulnerable to missing authorization in all versions up to, and including, 5.6.1. This is due to the plugin not properly verifying that a user is authorized to perform an action in the 'ajax' function. This makes it possible for authenticated attackers, with subscriber level access and above, to modify, add, or delete loyalty program earning rules, including manipulating point multipliers to arbitrary values.
+</code>
+
+- [d3kc4rt1/CVE-2025-15260](https://github.com/d3kc4rt1/CVE-2025-15260)
 
 ### CVE-2025-15276 (2025-12-31)
 
@@ -8236,6 +8306,13 @@
 
 - [Prabhukiran161/cve-2025-34036](https://github.com/Prabhukiran161/cve-2025-34036)
 
+### CVE-2025-34037 (2025-06-24)
+
+<code>An OS command injection vulnerability exists in various models of E-Series Linksys routers via the /tmUnblock.cgi and /hndUnblock.cgi endpoints over HTTP on port 8080. The CGI scripts improperly process user-supplied input passed to the ttcp_ip parameter without sanitization, allowing unauthenticated attackers to inject shell commands. This vulnerability was reported to be exploited in the wild by the &quot;TheMoon&quot; worm  in 2014 to deploy a MIPS ELF payload, enabling arbitrary code execution on the router. Additionally, this vulnerability may affect other Linksys products to include, but not limited to, WAG/WAP/WES/WET/WRT-series router models and Wireless-N access points and routers. Exploitation evidence was observed by the Shadowserver Foundation on 2025-02-06 UTC.
+</code>
+
+- [Taxanehh/CVE-2025-34037](https://github.com/Taxanehh/CVE-2025-34037)
+
 ### CVE-2025-34040 (2025-06-24)
 
 <code>An arbitrary file upload vulnerability exists in the Zhiyuan OA platform via the wpsAssistServlet interface. The realFileType and fileId parameters are improperly validated during multipart file uploads, allowing unauthenticated attackers to upload crafted JSP files outside of intended directories using path traversal. Successful exploitation enables remote code execution as the uploaded file can be accessed and executed through the web server. Exploitation evidence was observed by the Shadowserver Foundation on 2025-02-01 UTC.
@@ -8250,6 +8327,7 @@
 
 - [MrjHaxcore/CVE-2025-34077](https://github.com/MrjHaxcore/CVE-2025-34077)
 - [0xgh057r3c0n/CVE-2025-34077](https://github.com/0xgh057r3c0n/CVE-2025-34077)
+- [salimelh94/Web-Penetration-Test](https://github.com/salimelh94/Web-Penetration-Test)
 
 ### CVE-2025-34085
 - [MrjHaxcore/CVE-2025-34085](https://github.com/MrjHaxcore/CVE-2025-34085)
@@ -9256,6 +9334,7 @@
 - [estebanzarate/CVE-2025-47812-Wing-FTP-Server-7.4.3-Unauthenticated-RCE-PoC](https://github.com/estebanzarate/CVE-2025-47812-Wing-FTP-Server-7.4.3-Unauthenticated-RCE-PoC)
 - [popyue/CVE-2025-47812](https://github.com/popyue/CVE-2025-47812)
 - [0xjuarez/CVE-2025-47812](https://github.com/0xjuarez/CVE-2025-47812)
+- [Majdae/CVE-2025-47812-Research](https://github.com/Majdae/CVE-2025-47812-Research)
 
 ### CVE-2025-47827 (2025-06-05)
 
@@ -9548,7 +9627,7 @@
 - [nik123-py/CVE-2025-49132_HTB_SEASON10](https://github.com/nik123-py/CVE-2025-49132_HTB_SEASON10)
 - [popyue/CVE-2025-49132](https://github.com/popyue/CVE-2025-49132)
 - [4nuxd/CVE-2025-49132](https://github.com/4nuxd/CVE-2025-49132)
-- [revasec/CVE-2025-49132](https://github.com/revasec/CVE-2025-49132)
+- [unixskid/CVE-2025-49132](https://github.com/unixskid/CVE-2025-49132)
 - [V0idW1re/htb-pterodactyl-writeup](https://github.com/V0idW1re/htb-pterodactyl-writeup)
 
 ### CVE-2025-49144 (2025-06-23)
@@ -11059,7 +11138,7 @@
 - [orgito1015/CVE-2025-55182-Researching-process](https://github.com/orgito1015/CVE-2025-55182-Researching-process)
 - [0xBlackash/CVE-2025-55182](https://github.com/0xBlackash/CVE-2025-55182)
 - [alptexans/RSC-Detect-CVE-2025-55182](https://github.com/alptexans/RSC-Detect-CVE-2025-55182)
-- [revasec/CVE-2025-55182-Interactive-mode](https://github.com/revasec/CVE-2025-55182-Interactive-mode)
+- [unixskid/CVE-2025-55182-Interactive-mode](https://github.com/unixskid/CVE-2025-55182-Interactive-mode)
 - [MrMahile/MassScanning-CVE-2025-55182](https://github.com/MrMahile/MassScanning-CVE-2025-55182)
 - [androidteacher/REACT-CVE-2025-55182-Lab](https://github.com/androidteacher/REACT-CVE-2025-55182-Lab)
 - [InferiorAK/CVE-2025-55182-React2Shell-Async-Scanner](https://github.com/InferiorAK/CVE-2025-55182-React2Shell-Async-Scanner)
@@ -11835,6 +11914,13 @@
 ### CVE-2025-60656
 - [DotAdrien/CVE-2025-60656](https://github.com/DotAdrien/CVE-2025-60656)
 
+### CVE-2025-60709 (2025-11-11)
+
+<code>Out-of-bounds read in Windows Common Log File System Driver allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [KONDORDEVSECURITYCORP/CVE-2025-60709](https://github.com/KONDORDEVSECURITYCORP/CVE-2025-60709)
+
 ### CVE-2025-60710 (2025-11-11)
 
 <code>Improper link resolution before file access ('link following') in Host Process for Windows Tasks allows an authorized attacker to elevate privileges locally.
@@ -12132,6 +12218,7 @@
 </code>
 
 - [0xA1M/CVE-2025-63353](https://github.com/0xA1M/CVE-2025-63353)
+- [r0otk3r/CVE-2025-63353](https://github.com/r0otk3r/CVE-2025-63353)
 
 ### CVE-2025-63406 (2025-11-13)
 
@@ -14415,6 +14502,7 @@
 - [michalAshurov/writeup-CVE-2024-3094](https://github.com/michalAshurov/writeup-CVE-2024-3094)
 - [extracoding-dozen/CVE-2024-3094](https://github.com/extracoding-dozen/CVE-2024-3094)
 - [ElinaNotElina/cve-2024-3094-analysis](https://github.com/ElinaNotElina/cve-2024-3094-analysis)
+- [h3raklez/CVE-2024-3094](https://github.com/h3raklez/CVE-2024-3094)
 
 ### CVE-2024-3105 (2024-06-15)
 
@@ -24747,7 +24835,6 @@
 - [EstamelGG/CVE-2023-0386-libs](https://github.com/EstamelGG/CVE-2023-0386-libs)
 - [orilevy8/cve-2023-0386](https://github.com/orilevy8/cve-2023-0386)
 - [dragosbanica/CVE-2023-0386_POC](https://github.com/dragosbanica/CVE-2023-0386_POC)
-- [huovnn/CVE-2023-0386-go-poc](https://github.com/huovnn/CVE-2023-0386-go-poc)
 
 ### CVE-2023-0400 (2023-02-01)
 
@@ -29357,6 +29444,7 @@
 </code>
 
 - [complexusprada/Xibo-CMS-Zip-Slip-RCE-Exploit-CVE-2023-33177](https://github.com/complexusprada/Xibo-CMS-Zip-Slip-RCE-Exploit-CVE-2023-33177)
+- [kaxm23/-CVE-2023-33177-](https://github.com/kaxm23/-CVE-2023-33177-)
 
 ### CVE-2023-33242 (2023-08-09)
 
@@ -47429,7 +47517,7 @@
 - [metodidavidovic/log4j-quick-scan](https://github.com/metodidavidovic/log4j-quick-scan)
 - [WatchGuard-Threat-Lab/log4shell-iocs](https://github.com/WatchGuard-Threat-Lab/log4shell-iocs)
 - [Aschen/log4j-patched](https://github.com/Aschen/log4j-patched)
-- [Nikolas-Charalambidis/cve-2021-44228](https://github.com/Nikolas-Charalambidis/cve-2021-44228)
+- [nikolas-charalambidis/cve-2021-44228](https://github.com/nikolas-charalambidis/cve-2021-44228)
 - [m0rath/detect-log4j-exploitable](https://github.com/m0rath/detect-log4j-exploitable)
 - [nu11secur1ty/CVE-2021-44228-VULN-APP](https://github.com/nu11secur1ty/CVE-2021-44228-VULN-APP)
 - [ankur-katiyar/log4j-docker](https://github.com/ankur-katiyar/log4j-docker)
@@ -56948,7 +57036,6 @@
 - [EdouardosStav/CVE-2019-15107-RCE-WebMin](https://github.com/EdouardosStav/CVE-2019-15107-RCE-WebMin)
 - [bayazid-bit/CVE-2019-15107](https://github.com/bayazid-bit/CVE-2019-15107)
 - [ArtemCyberLab/Project-Exploitation-of-Webmin-Authentication-Vulnerability](https://github.com/ArtemCyberLab/Project-Exploitation-of-Webmin-Authentication-Vulnerability)
-- [adampawelczyk/CVE-2019-15107](https://github.com/adampawelczyk/CVE-2019-15107)
 
 ### CVE-2019-15120 (2019-08-16)
 
@@ -61102,6 +61189,7 @@
 - [ArtemCyberLab/Project-Exploiting-a-Vulnerability-in-Fuel-CMS-CVE-2018-16763-](https://github.com/ArtemCyberLab/Project-Exploiting-a-Vulnerability-in-Fuel-CMS-CVE-2018-16763-)
 - [B7T3/CVE-2018-16763_FuelCMS-1.4.1_RCE](https://github.com/B7T3/CVE-2018-16763_FuelCMS-1.4.1_RCE)
 - [Cyberuser-hash/CVE-2018-16763](https://github.com/Cyberuser-hash/CVE-2018-16763)
+- [estebanzarate/CVE-2018-16763-Fuel-CMS-1.4.1-Remote-Code-Execution-PoC](https://github.com/estebanzarate/CVE-2018-16763-Fuel-CMS-1.4.1-Remote-Code-Execution-PoC)
 
 ### CVE-2018-16809 (2019-03-07)
 
