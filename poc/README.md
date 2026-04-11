@@ -589,6 +589,13 @@
 
 - [stuartMoorhouse/CVE-2026-4342](https://github.com/stuartMoorhouse/CVE-2026-4342)
 
+### CVE-2026-4350 (2026-04-03)
+
+<code>The Perfmatters plugin for WordPress is vulnerable to arbitrary file deletion via path traversal in all versions up to, and including, 2.5.9.1. This is due to the `PMCS::action_handler()` method processing the `$_GET['delete']` parameter without any sanitization, authorization check, or nonce verification. The unsanitized filename is concatenated with the storage directory path and passed to `unlink()`. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete arbitrary files on the server by using `../` path traversal sequences, including `wp-config.php` which would force WordPress into the installation wizard and allow full site takeover.
+</code>
+
+- [whyiamsobusy/CVE-2026-4350](https://github.com/whyiamsobusy/CVE-2026-4350)
+
 ### CVE-2026-4406 (2026-04-07)
 
 <code>The Gravity Forms plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the `form_ids` parameter in the `gform_get_config` AJAX action in all versions up to, and including, 2.9.30. This is due to the `GFCommon::send_json()` method outputting JSON-encoded data wrapped in HTML comment delimiters using `echo` and `wp_die()`, which serves the response with a `Content-Type: text/html` header instead of `application/json`. The `wp_json_encode()` function does not HTML-encode angle brackets within JSON string values, allowing injected HTML/script tags in `form_ids` array values to be parsed and executed by the browser. The required `config_nonce` is generated with `wp_create_nonce('gform_config_ajax')` and is publicly embedded on every page that renders a Gravity Forms form, making it identical for all unauthenticated visitors within the same 12-hour nonce tick. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link. This vulnerability cannot be exploited against users who are authenticated on the target system, but could be used to alter the target page.
@@ -1298,6 +1305,7 @@
 </code>
 
 - [yohannslm/CVE-2026-23869](https://github.com/yohannslm/CVE-2026-23869)
+- [cybertechajju/CVE-2026-23869-Exploit](https://github.com/cybertechajju/CVE-2026-23869-Exploit)
 
 ### CVE-2026-23885 (2026-01-19)
 
@@ -5585,6 +5593,13 @@
 
 ### CVE-2025-13834
 - [sastraadiwiguna-purpleeliteteaming/CVE-2025-13834-A-Bluetooth-RFCOMM-Out-of-Bounds-Read-Vulnerability-in-Modern-Wireless-Devices](https://github.com/sastraadiwiguna-purpleeliteteaming/CVE-2025-13834-A-Bluetooth-RFCOMM-Out-of-Bounds-Read-Vulnerability-in-Modern-Wireless-Devices)
+
+### CVE-2025-14018 (2025-12-22)
+
+<code>Unquoted Search Path or Element vulnerability in NetBT Consulting Services Inc. E-Fatura allows Leveraging/Manipulating Configuration File Search Paths, Redirect Access to Libraries.This issue affects e-Fatura: before 1.2.15.
+</code>
+
+- [kaleth4/CVE-2025-14018](https://github.com/kaleth4/CVE-2025-14018)
 
 ### CVE-2025-14124 (2026-01-05)
 
@@ -37627,13 +37642,6 @@
 ### CVE-2022-27414
 - [lus33rr/CVE-2022-27414](https://github.com/lus33rr/CVE-2022-27414)
 
-### CVE-2022-27434 (2022-07-17)
-
-<code>UNIT4 TETA Mobile Edition (ME) before 29.5.HF17 was discovered to contain a SQL injection vulnerability via the ProfileName parameter in the errorReporting page.
-</code>
-
-- [LongWayHomie/CVE-2022-27434](https://github.com/LongWayHomie/CVE-2022-27434)
-
 ### CVE-2022-27438 (2022-06-06)
 
 <code>Caphyon Ltd Advanced Installer 19.3 and earlier and many products that use the updater from Advanced Installer (Advanced Updater) are affected by a remote code execution vulnerability via the CustomDetection parameter in the update check function. To exploit this vulnerability, a user must start an affected installation to trigger the update check.
@@ -40226,6 +40234,13 @@
 - [ITPATJIDR/CVE-2022-41040](https://github.com/ITPATJIDR/CVE-2022-41040)
 - [TaroballzChen/CVE-2022-41040-metasploit-ProxyNotShell](https://github.com/TaroballzChen/CVE-2022-41040-metasploit-ProxyNotShell)
 - [0-Gram/CVE-2022-41040](https://github.com/0-Gram/CVE-2022-41040)
+
+### CVE-2022-41055 (2022-11-09)
+
+<code>Windows Human Interface Device Information Disclosure Vulnerability
+</code>
+
+- [TroyWarez/hid_pwn](https://github.com/TroyWarez/hid_pwn)
 
 ### CVE-2022-41080 (2022-11-09)
 
@@ -47193,7 +47208,6 @@
 - [z3n70/CVE-2021-43798](https://github.com/z3n70/CVE-2021-43798)
 - [Mo0ns/Grafana_POC-CVE-2021-43798](https://github.com/Mo0ns/Grafana_POC-CVE-2021-43798)
 - [fanygit/Grafana-CVE-2021-43798Exp](https://github.com/fanygit/Grafana-CVE-2021-43798Exp)
-- [LongWayHomie/CVE-2021-43798](https://github.com/LongWayHomie/CVE-2021-43798)
 - [pedrohavay/exploit-grafana-CVE-2021-43798](https://github.com/pedrohavay/exploit-grafana-CVE-2021-43798)
 - [gixxyboy/CVE-2021-43798](https://github.com/gixxyboy/CVE-2021-43798)
 - [Ryze-T/CVE-2021-43798](https://github.com/Ryze-T/CVE-2021-43798)
@@ -47285,13 +47299,6 @@
 </code>
 
 - [Sudistark/vscode-rce-electrovolt](https://github.com/Sudistark/vscode-rce-electrovolt)
-
-### CVE-2021-43936 (2021-12-06)
-
-<code>The software allows the attacker to upload or transfer files of dangerous types to the WebHMI portal, that may be automatically processed within the product's environment or lead to arbitrary code execution.
-</code>
-
-- [LongWayHomie/CVE-2021-43936](https://github.com/LongWayHomie/CVE-2021-43936)
 
 ### CVE-2021-44026 (2021-11-19)
 
@@ -63957,7 +63964,6 @@
 - [ygouzerh/CVE-2017-12617](https://github.com/ygouzerh/CVE-2017-12617)
 - [tyranteye666/tomcat-cve-2017-12617](https://github.com/tyranteye666/tomcat-cve-2017-12617)
 - [jptr218/tc_hack](https://github.com/jptr218/tc_hack)
-- [LongWayHomie/CVE-2017-12617](https://github.com/LongWayHomie/CVE-2017-12617)
 - [K3ysTr0K3R/CVE-2017-12617-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2017-12617-EXPLOIT)
 - [scirusvulgaris/CVE-2017-12617](https://github.com/scirusvulgaris/CVE-2017-12617)
 - [yZee00/CVE-2017-12617](https://github.com/yZee00/CVE-2017-12617)
@@ -64679,7 +64685,6 @@
 - [cved-sources/cve-2017-1000486](https://github.com/cved-sources/cve-2017-1000486)
 - [Pastea/CVE-2017-1000486](https://github.com/Pastea/CVE-2017-1000486)
 - [0xdsm/pwnfaces](https://github.com/0xdsm/pwnfaces)
-- [LongWayHomie/CVE-2017-1000486](https://github.com/LongWayHomie/CVE-2017-1000486)
 - [jam620/primefaces](https://github.com/jam620/primefaces)
 
 ### CVE-2017-1000487 (2018-01-03)
