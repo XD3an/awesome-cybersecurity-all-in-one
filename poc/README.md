@@ -42,6 +42,7 @@
 <code>The Ninja Forms - File Uploads plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'NF_FU_AJAX_Controllers_Uploads::handle_upload' function in all versions up to, and including, 3.3.26. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible. Note: The vulnerability was partially patched in version 3.3.25 and fully patched in version 3.3.27.
 </code>
 
+- [whattheslime/CVE-2026-0740](https://github.com/whattheslime/CVE-2026-0740)
 - [xShadow-Here/CVE-2026-0740](https://github.com/xShadow-Here/CVE-2026-0740)
 
 ### CVE-2026-0766 (2026-01-23)
@@ -558,7 +559,7 @@
 <code>Out of bounds write in Skia in Google Chrome prior to 146.0.7680.75 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)
 </code>
 
-- [anansi2safe/CVE-2026-3909](https://github.com/anansi2safe/CVE-2026-3909)
+- [anansi2safe/CVE-2026-3909-PoC](https://github.com/anansi2safe/CVE-2026-3909-PoC)
 
 ### CVE-2026-4092 (2026-03-13)
 
@@ -594,6 +595,13 @@
 </code>
 
 - [Hann1bl3L3ct3r/CVE-2026-4406](https://github.com/Hann1bl3L3ct3r/CVE-2026-4406)
+
+### CVE-2026-4660 (2026-04-09)
+
+<code>HashiCorp’s go-getter library up to v1.8.5 may allow arbitrary file reads on the file system during certain git operations through a maliciously crafted URL. This vulnerability, CVE-2026-4660, is fixed in go-getter v1.8.6. This vulnerability does not affect the go-getter/v2 branch and package.
+</code>
+
+- [gouldnicholas/CVE-2026-4660-PoC](https://github.com/gouldnicholas/CVE-2026-4660-PoC)
 
 ### CVE-2026-4747 (2026-03-26)
 
@@ -2282,7 +2290,11 @@
 - [Jvr2022/CVE-2026-29786](https://github.com/Jvr2022/CVE-2026-29786)
 - [Rohitberiwala/NodeJS-Tar-Symlink-Exploit-CVE-2026-29786](https://github.com/Rohitberiwala/NodeJS-Tar-Symlink-Exploit-CVE-2026-29786)
 
-### CVE-2026-29861
+### CVE-2026-29861 (2026-04-10)
+
+<code>PHP-MYSQL-User-Login-System v1.0 was discovered to contain a SQL injection vulnerability via the username parameter at login.php.
+</code>
+
 - [amanyadav78/CVE-2026-29861](https://github.com/amanyadav78/CVE-2026-29861)
 
 ### CVE-2026-29905 (2026-03-26)
@@ -2305,6 +2317,7 @@
 </code>
 
 - [Smarttfoxx/CVE-2026-29923](https://github.com/Smarttfoxx/CVE-2026-29923)
+- [athenasec16/CVE-2026-29923](https://github.com/athenasec16/CVE-2026-29923)
 
 ### CVE-2026-29954 (2026-03-30)
 
@@ -2419,6 +2432,12 @@
 </code>
 
 - [MorielHarush/CVE-2026-30952-PoC](https://github.com/MorielHarush/CVE-2026-30952-PoC)
+
+### CVE-2026-31048
+- [Sif-0x01/security-advisories](https://github.com/Sif-0x01/security-advisories)
+
+### CVE-2026-31280
+- [CipherX1802/CVE-2026-31280-Insecure-Bluetooth-RFCOMM-Leading-to-Device-Crash-in-Parani-M10-Intercom](https://github.com/CipherX1802/CVE-2026-31280-Insecure-Bluetooth-RFCOMM-Leading-to-Device-Crash-in-Parani-M10-Intercom)
 
 ### CVE-2026-31402 (2026-04-03)
 
@@ -2909,6 +2928,13 @@
 </code>
 
 - [Chocapikk/CVE-2026-39912](https://github.com/Chocapikk/CVE-2026-39912)
+
+### CVE-2026-39983 (2026-04-09)
+
+<code>basic-ftp is an FTP client for Node.js. Prior to 5.2.1, basic-ftp allows FTP command injection via CRLF sequences (\r\n) in file path parameters passed to high-level path APIs such as cd(), remove(), rename(), uploadFrom(), downloadTo(), list(), and removeDir(). The library's protectWhitespace() helper only handles leading spaces and returns other paths unchanged, while FtpContext.send() writes the resulting command string directly to the control socket with \r\n appended. This lets attacker-controlled path strings split one intended FTP command into multiple commands. This vulnerability is fixed in 5.2.1.
+</code>
+
+- [zebbernCVE/CVE-2026-39983](https://github.com/zebbernCVE/CVE-2026-39983)
 
 
 ## 2025
@@ -4113,6 +4139,7 @@
 - [FKShield/CVE-2025-5548](https://github.com/FKShield/CVE-2025-5548)
 - [jesusdominguez87/CVE-2025-5548](https://github.com/jesusdominguez87/CVE-2025-5548)
 - [greycat-amc/CVE-2025-5548](https://github.com/greycat-amc/CVE-2025-5548)
+- [CryptoMachio/CVE-2025-5548](https://github.com/CryptoMachio/CVE-2025-5548)
 
 ### CVE-2025-5640 (2025-06-05)
 
@@ -10637,6 +10664,13 @@
 - [Sachinart/CVE-2025-54322](https://github.com/Sachinart/CVE-2025-54322)
 - [nkuty/CVE-2025-54322-exploit](https://github.com/nkuty/CVE-2025-54322-exploit)
 
+### CVE-2025-54328 (2026-04-06)
+
+<code>An issue was discovered in SMS in Samsung Mobile Processor, Wearable Processor, and Modem Exynos 980, 990, 850, 1080, 2100, 1280, 2200, 1330, 1380, 1480, 2400, 1580, 2500, 9110, W920, W930, W1000, Modem 5123, Modem 5300, and Modem 5400. A Stack-based Buffer Overflow occurs while parsing SMS RP-DATA messages.
+</code>
+
+- [Hunt-Benito/samsung-exynos-sms-stack-overflow-cve-2025-54328-critical-zero-click-baseband-rce](https://github.com/Hunt-Benito/samsung-exynos-sms-stack-overflow-cve-2025-54328-critical-zero-click-baseband-rce)
+
 ### CVE-2025-54352 (2025-07-21)
 
 <code>WordPress 3.5 through 6.8.2 allows remote attackers to guess titles of private and draft posts via pingback.ping XML-RPC requests. NOTE: the Supplier is not changing this behavior.
@@ -11207,6 +11241,8 @@
 - [porsellaj/cve-2025-55182-react2shell-analysis](https://github.com/porsellaj/cve-2025-55182-react2shell-analysis)
 - [hexsh1dow/CVE-2025-55182](https://github.com/hexsh1dow/CVE-2025-55182)
 - [masterwok/CVE-2025-55182-React2Shell-PoC](https://github.com/masterwok/CVE-2025-55182-React2Shell-PoC)
+- [kaxm23/CVE-2025-55182-Auto-Scanner](https://github.com/kaxm23/CVE-2025-55182-Auto-Scanner)
+- [kaxm23/rust-cve-2025-55182-scanner](https://github.com/kaxm23/rust-cve-2025-55182-scanner)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -14461,7 +14497,6 @@
 - [4wayhandshake/CVE-2024-2961](https://github.com/4wayhandshake/CVE-2024-2961)
 - [omarelshopky/exploit_cve-2023-26326_using_cve-2024-2961](https://github.com/omarelshopky/exploit_cve-2023-26326_using_cve-2024-2961)
 - [suce0155/CVE-2024-2961_buddyforms_2.7.7](https://github.com/suce0155/CVE-2024-2961_buddyforms_2.7.7)
-- [scriptSails/glibcs](https://github.com/scriptSails/glibcs)
 - [Clarissss/osTicketFileReadIntoRCE](https://github.com/Clarissss/osTicketFileReadIntoRCE)
 
 ### CVE-2024-2997 (2024-03-27)
@@ -25339,13 +25374,6 @@
 - [K5LK/CVE-2023-2640-32629](https://github.com/K5LK/CVE-2023-2640-32629)
 - [z3usx01/CVE-2023-2640-3262-PoC](https://github.com/z3usx01/CVE-2023-2640-3262-PoC)
 
-### CVE-2023-2645 (2023-05-11)
-
-<code>Es wurde eine Schwachstelle in USR USR-G806 1.0.41 gefunden. Sie wurde als kritisch eingestuft. Betroffen hiervon ist ein unbekannter Ablauf der Komponente Web Management Page. Durch das Manipulieren des Arguments username/password mit der Eingabe root mit unbekannten Daten kann eine use of hard-coded password-Schwachstelle ausgenutzt werden. Umgesetzt werden kann der Angriff über das Netzwerk. Der Exploit steht zur öffentlichen Verfügung. Als bestmögliche Massnahme werden Anpassungen an der Konfiguration empfohlen.
-</code>
-
-- [xymbiot-solution/CVE-2023-2645](https://github.com/xymbiot-solution/CVE-2023-2645)
-
 ### CVE-2023-2728 (2023-07-03)
 
 <code>Users may be able to launch containers that bypass the mountable secrets policy enforced by the ServiceAccount admission plugin when using ephemeral containers. The policy ensures pods running with a service account may only reference secrets specified in the service account’s secrets field. Kubernetes clusters are only affected if the ServiceAccount admission plugin and the `kubernetes.io/enforce-mountable-secrets` annotation are used together with ephemeral containers.
@@ -26357,6 +26385,7 @@
 - [motikan2010/CVE-2023-6553-PoC](https://github.com/motikan2010/CVE-2023-6553-PoC)
 - [cc3305/CVE-2023-6553](https://github.com/cc3305/CVE-2023-6553)
 - [Harshit-Mashru/CVE-2023-6553](https://github.com/Harshit-Mashru/CVE-2023-6553)
+- [Aliyankhan-source/CVE-2023-6553-RCE-Fancy-Exploit](https://github.com/Aliyankhan-source/CVE-2023-6553-RCE-Fancy-Exploit)
 
 ### CVE-2023-6567 (2024-01-11)
 
@@ -38355,6 +38384,7 @@
 - [nimesh895/Malware-Analysis-Follina-CVE-2022-30190](https://github.com/nimesh895/Malware-Analysis-Follina-CVE-2022-30190)
 - [bcarrulo/Lab-CVE-2022-30190](https://github.com/bcarrulo/Lab-CVE-2022-30190)
 - [ImVihanga03/Static-Malware-Analysis-Follina-CVE-2022-30190](https://github.com/ImVihanga03/Static-Malware-Analysis-Follina-CVE-2022-30190)
+- [shndnth/CVE-2022-30190](https://github.com/shndnth/CVE-2022-30190)
 
 ### CVE-2022-30203 (2022-07-12)
 
@@ -41965,8 +41995,6 @@
 - [Sp4ceDogy/NPE-CS-V-CVE-2021-1675](https://github.com/Sp4ceDogy/NPE-CS-V-CVE-2021-1675)
 - [CameraShutterBug/PrintNightmare](https://github.com/CameraShutterBug/PrintNightmare)
 - [DLL00P/CVE-2021-1675](https://github.com/DLL00P/CVE-2021-1675)
-- [GlacierGossip/PrintNightmare](https://github.com/GlacierGossip/PrintNightmare)
-- [VoiidByte/Impacket](https://github.com/VoiidByte/Impacket)
 - [ccordeiro/CVE-2021-1675](https://github.com/ccordeiro/CVE-2021-1675)
 
 ### CVE-2021-1678 (2021-01-12)
@@ -43374,6 +43402,7 @@
 - [octodi/CVE-2021-22911](https://github.com/octodi/CVE-2021-22911)
 - [TeneBrae93/RocketChat-NoSQLi-Chain-CVE-2021-22911](https://github.com/TeneBrae93/RocketChat-NoSQLi-Chain-CVE-2021-22911)
 - [Faridi-m/CVE-2021-22911-RocketChat](https://github.com/Faridi-m/CVE-2021-22911-RocketChat)
+- [roshanrajbanshi/rocketcat-cve-2021-22911-exploit](https://github.com/roshanrajbanshi/rocketcat-cve-2021-22911-exploit)
 
 ### CVE-2021-22924 (2021-08-05)
 
@@ -43409,6 +43438,7 @@
 - [west9b/F5-BIG-IP-POC](https://github.com/west9b/F5-BIG-IP-POC)
 - [amitlttwo/CVE-2021-22986](https://github.com/amitlttwo/CVE-2021-22986)
 - [huydung26/CVE-2021-22986](https://github.com/huydung26/CVE-2021-22986)
+- [whatheheckisthis/bigip-icontrol-rce-research](https://github.com/whatheheckisthis/bigip-icontrol-rce-research)
 
 ### CVE-2021-23017 (2021-06-01)
 
@@ -49120,6 +49150,7 @@
 - [nyambiblaise/Domain-Controller-DC-Exploitation-with-Metasploit-Impacket](https://github.com/nyambiblaise/Domain-Controller-DC-Exploitation-with-Metasploit-Impacket)
 - [mods20hh/ZeroLogon-PoC-DC-Pwn](https://github.com/mods20hh/ZeroLogon-PoC-DC-Pwn)
 - [commit2main/zerologon-lab](https://github.com/commit2main/zerologon-lab)
+- [noemvex/apex-predator](https://github.com/noemvex/apex-predator)
 
 ### CVE-2020-1493 (2020-08-17)
 
@@ -63700,13 +63731,6 @@
 </code>
 
 - [afbase/CVE-2017-10952](https://github.com/afbase/CVE-2017-10952)
-
-### CVE-2017-11165 (2017-07-12)
-
-<code>dataTaker DT80 dEX 1.50.012 allows remote attackers to obtain sensitive credential and configuration information via a direct request for the /services/getFile.cmd?userfile=config.xml URI.
-</code>
-
-- [xymbiot-solution/CVE-2017-11165](https://github.com/xymbiot-solution/CVE-2017-11165)
 
 ### CVE-2017-11176 (2017-07-11)
 
