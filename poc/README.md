@@ -160,13 +160,6 @@
 - [MehdiLeDeaut/CVE-2026-1281-Ivanti-EPMM-RCE](https://github.com/MehdiLeDeaut/CVE-2026-1281-Ivanti-EPMM-RCE)
 - [YunfeiGE18/CVE-2026-1281-CVE-2026-1340-Ivanti-EPMM-RCE](https://github.com/YunfeiGE18/CVE-2026-1281-CVE-2026-1340-Ivanti-EPMM-RCE)
 
-### CVE-2026-1311 (2026-02-26)
-
-<code>The Worry Proof Backup plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 0.2.4 via the backup upload functionality. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload a malicious ZIP archive with path traversal sequences to write arbitrary files anywhere on the server, including executable PHP files. This can lead to remote code execution.
-</code>
-
-- [hacker1337itme/CVE-2026-1311](https://github.com/hacker1337itme/CVE-2026-1311)
-
 ### CVE-2026-1312 (2026-02-03)
 
 <code>An issue was discovered in 6.0 before 6.0.2, 5.2 before 5.2.11, and 4.2 before 4.2.28.\n`.QuerySet.order_by()` is subject to SQL injection in column aliases containing periods when the same alias is, using a suitably crafted dictionary, with dictionary expansion, used in `FilteredRelation`.\nEarlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.\nDjango would like to thank Solomon Kebede for reporting this issue.
@@ -497,13 +490,6 @@
 
 - [mbanyamer/CVE-2026-3395-MaxSite-CMS-Unauthenticated-RCE](https://github.com/mbanyamer/CVE-2026-3395-MaxSite-CMS-Unauthenticated-RCE)
 - [rootdirective-sec/CVE-2026-3395-Lab](https://github.com/rootdirective-sec/CVE-2026-3395-Lab)
-
-### CVE-2026-3442 (2026-03-15)
-
-<code>A flaw was found in GNU Binutils. This vulnerability, a heap-based buffer overflow, specifically an out-of-bounds read, exists in the bfd linker component. An attacker could exploit this by convincing a user to process a specially crafted malicious XCOFF object file. Successful exploitation may lead to the disclosure of sensitive information or cause the application to crash, resulting in an application level denial of service.
-</code>
-
-- [hacker1337itme/CVE-2026-3442](https://github.com/hacker1337itme/CVE-2026-3442)
 
 ### CVE-2026-3502 (2026-03-30)
 
@@ -2097,13 +2083,6 @@
 </code>
 
 - [mbanyamer/CVE-2026-26988-LibreNMS-SQLi](https://github.com/mbanyamer/CVE-2026-26988-LibreNMS-SQLi)
-
-### CVE-2026-27097 (2026-03-05)
-
-<code>Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in AncoraThemes CasaMia | Property Rental Real Estate WordPress Theme casamia allows PHP Local File Inclusion.This issue affects CasaMia | Property Rental Real Estate WordPress Theme: from n/a through &lt;= 1.1.2.
-</code>
-
-- [hacker1337itme/CVE-2026-27097](https://github.com/hacker1337itme/CVE-2026-27097)
 
 ### CVE-2026-27135 (2026-03-18)
 
@@ -4920,6 +4899,7 @@
 - [manbahadurthapa1248/CVE-2025-8110-Authenticated-Remote-Code-Execution-on-Gogs-v0.13.3-](https://github.com/manbahadurthapa1248/CVE-2025-8110-Authenticated-Remote-Code-Execution-on-Gogs-v0.13.3-)
 - [TYehan/CVE-2025-8110-Gogs-RCE-Exploit](https://github.com/TYehan/CVE-2025-8110-Gogs-RCE-Exploit)
 - [0dgt/CVE-2025-8110](https://github.com/0dgt/CVE-2025-8110)
+- [popyue/CVE-2025-8110](https://github.com/popyue/CVE-2025-8110)
 
 ### CVE-2025-8191 (2025-07-26)
 
@@ -6438,6 +6418,7 @@
 - [r0binak/CVE-2025-23266](https://github.com/r0binak/CVE-2025-23266)
 - [Mindasy/cve-2025-23266-migration-bypass](https://github.com/Mindasy/cve-2025-23266-migration-bypass)
 - [mrk336/CVE-2025-23266](https://github.com/mrk336/CVE-2025-23266)
+- [ForeverLX/security-research](https://github.com/ForeverLX/security-research)
 
 ### CVE-2025-23339 (2025-09-24)
 
@@ -8760,6 +8741,7 @@
 
 - [SeanHeelan/o3_finds_cve-2025-37899](https://github.com/SeanHeelan/o3_finds_cve-2025-37899)
 - [vett3x/SMB-LINUX-CVE-2025-37899](https://github.com/vett3x/SMB-LINUX-CVE-2025-37899)
+- [ccss17/o3_finds_cve-2025-37899](https://github.com/ccss17/o3_finds_cve-2025-37899)
 
 ### CVE-2025-38001 (2025-06-06)
 
@@ -11451,6 +11433,7 @@
 - [kaxm23/rust-cve-2025-55182-scanner](https://github.com/kaxm23/rust-cve-2025-55182-scanner)
 - [RewantChaudhari/nextjs-rce-incident-response](https://github.com/RewantChaudhari/nextjs-rce-incident-response)
 - [oscar-mine/R2SAE](https://github.com/oscar-mine/R2SAE)
+- [AbdullahMaqbool22/Explosive-As-Hell-MCS-Qualifer-Web-500](https://github.com/AbdullahMaqbool22/Explosive-As-Hell-MCS-Qualifer-Web-500)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -11996,6 +11979,7 @@
 - [p1ctur3p3rf3ct/CVE-2025-58434](https://github.com/p1ctur3p3rf3ct/CVE-2025-58434)
 - [jwsly12/CVE-2025-58434-59528-htb-ctf](https://github.com/jwsly12/CVE-2025-58434-59528-htb-ctf)
 - [kartik2005221/CVE-2025-58434-poc](https://github.com/kartik2005221/CVE-2025-58434-poc)
+- [kartik2005221/CVE-2025-58434-AND-59528-POC](https://github.com/kartik2005221/CVE-2025-58434-AND-59528-POC)
 
 ### CVE-2025-58440
 - [ph-hitachi/CVE-2025-58440](https://github.com/ph-hitachi/CVE-2025-58440)
@@ -13339,13 +13323,6 @@
 
 ### CVE-2025-66850
 - [joelatplay/CVE-2025-66850](https://github.com/joelatplay/CVE-2025-66850)
-
-### CVE-2025-66866 (2025-12-29)
-
-<code>An issue was discovered in function d_abi_tags in file cp-demangle.c in BinUtils 2.26 allows attackers to cause a denial of service via crafted PE file.
-</code>
-
-- [hacker1337itme/CVE-2025-66866](https://github.com/hacker1337itme/CVE-2025-66866)
 
 ### CVE-2025-66947 (2025-12-26)
 
@@ -21667,13 +21644,6 @@
 
 - [typical-pashochek/CVE-2024-39713](https://github.com/typical-pashochek/CVE-2024-39713)
 - [blackcodersec/exploit-cve](https://github.com/blackcodersec/exploit-cve)
-
-### CVE-2024-39717 (2024-08-22)
-
-<code>The Versa Director GUI provides an option to customize the look and feel of the user interface. This option is only available for a user logged with Provider-Data-Center-Admin or Provider-Data-Center-System-Admin. (Tenant level users do not have this privilege). The “Change Favicon” (Favorite Icon) option can be mis-used to upload a malicious file ending with .png extension to masquerade as image file. This is possible only after a user with Provider-Data-Center-Admin or Provider-Data-Center-System-Admin has successfully authenticated and logged in.
-</code>
-
-- [ahays248/VT_Viz](https://github.com/ahays248/VT_Viz)
 
 ### CVE-2024-39719 (2024-10-31)
 
@@ -40555,13 +40525,6 @@
 - [ITPATJIDR/CVE-2022-41040](https://github.com/ITPATJIDR/CVE-2022-41040)
 - [TaroballzChen/CVE-2022-41040-metasploit-ProxyNotShell](https://github.com/TaroballzChen/CVE-2022-41040-metasploit-ProxyNotShell)
 - [0-Gram/CVE-2022-41040](https://github.com/0-Gram/CVE-2022-41040)
-
-### CVE-2022-41055 (2022-11-09)
-
-<code>Windows Human Interface Device Information Disclosure Vulnerability
-</code>
-
-- [TroyWarez/hid_pwn](https://github.com/TroyWarez/hid_pwn)
 
 ### CVE-2022-41080 (2022-11-09)
 
