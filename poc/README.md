@@ -541,6 +541,13 @@
 
 - [cwjchoi01/CVE-2026-3796](https://github.com/cwjchoi01/CVE-2026-3796)
 
+### CVE-2026-3805 (2026-03-11)
+
+<code>When doing a second SMB request to the same host again, curl would wrongly use\na data pointer pointing into already freed memory.
+</code>
+
+- [Rat5ak/CVE-2026-3805-curl-SMB-UAF](https://github.com/Rat5ak/CVE-2026-3805-curl-SMB-UAF)
+
 ### CVE-2026-3888 (2026-03-17)
 
 <code>Local privilege escalation in snapd on Linux allows local attackers to get root privilege by re-creating snap's private /tmp directory when systemd-tmpfiles is configured to automatically clean up this directory. This issue affects Ubuntu 16.04 LTS, 18.04 LTS, 20.04 LTS, 22.04 LTS, and 24.04 LTS.
@@ -560,6 +567,13 @@
 
 - [joshuavanderpoll/CVE-2026-3891](https://github.com/joshuavanderpoll/CVE-2026-3891)
 - [Nxploited/CVE-2026-3891](https://github.com/Nxploited/CVE-2026-3891)
+
+### CVE-2026-3909 (2026-03-12)
+
+<code>Out of bounds write in Skia in Google Chrome prior to 146.0.7680.75 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)
+</code>
+
+- [anansi2safe/CVE-2026-3909-PoC](https://github.com/anansi2safe/CVE-2026-3909-PoC)
 
 ### CVE-2026-4092 (2026-03-13)
 
@@ -1256,6 +1270,7 @@
 <code>Arcane provides modern docker management. Prior to 1.13.0, Arcane has a command injection in the updater service. Arcane’s updater service supported lifecycle labels com.getarcaneapp.arcane.lifecycle.pre-update and com.getarcaneapp.arcane.lifecycle.post-update that allowed defining a command to run before or after a container update. The label value is passed directly to /bin/sh -c without sanitization or validation. Because any authenticated user (not limited to administrators) can create projects through the API, an attacker can create a project that specifies one of these lifecycle labels with a malicious command. When an administrator later triggers a container update (either manually or via scheduled update checks), Arcane reads the lifecycle label and executes its value as a shell command inside the container. This vulnerability is fixed in 1.13.0.
 </code>
 
+- [secopssite/HTB](https://github.com/secopssite/HTB)
 - [Augmaster/POC-CVE-2026-23520](https://github.com/Augmaster/POC-CVE-2026-23520)
 - [0xzap/CVE-2026-23520](https://github.com/0xzap/CVE-2026-23520)
 - [cypher-21/CVE-2026-23520](https://github.com/cypher-21/CVE-2026-23520)
@@ -1386,7 +1401,7 @@
 <code>Improper Neutralization of Special Elements used in a SQL Command ('SQL Injection') vulnerability in Apache Superset allows an authenticated user with read access to conduct error-based SQL injection via the sqlExpression or where parameters.\n\nThis issue affects Apache Superset: before 6.0.0.\n\nUsers are recommended to upgrade to version 6.0.0, which fixes the issue.
 </code>
 
-- [oscarmine/CVE-2026-23980-Exploit](https://github.com/oscarmine/CVE-2026-23980-Exploit)
+- [oscar-mine/CVE-2026-23980-Exploit](https://github.com/oscar-mine/CVE-2026-23980-Exploit)
 
 ### CVE-2026-24009 (2026-01-22)
 
@@ -1842,6 +1857,13 @@
 </code>
 
 - [ibrahmsql/CVE-2026-25807-Exploit](https://github.com/ibrahmsql/CVE-2026-25807-Exploit)
+
+### CVE-2026-25854 (2026-04-09)
+
+<code>Occasional URL redirection to untrusted Site ('Open Redirect') vulnerability in Apache Tomcat via the LoadBalancerDrainingValve.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.18, from 10.1.0-M1 through 10.1.52, from 9.0.0.M23 through 9.0.115, from 8.5.30 through 8.5.100.\nOther, unsupported versions may also be affected\n\nUsers are recommended to upgrade to version 11.0.20, 10.1.53 or 9.0.116, which fix the issue.
+</code>
+
+- [gregk4sec/cve-2026-25854](https://github.com/gregk4sec/cve-2026-25854)
 
 ### CVE-2026-25857 (2026-02-07)
 
@@ -2360,6 +2382,13 @@
 
 - [Chocapikk/Windfall](https://github.com/Chocapikk/Windfall)
 
+### CVE-2026-29145 (2026-04-09)
+
+<code>CLIENT_CERT authentication does not fail as expected for some scenarios when soft fail is disabled vulnerability in Apache Tomcat, Apache Tomcat Native.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.18, from 10.1.0-M7 through 10.1.52, from 9.0.83 through 9.0.115; Apache Tomcat Native: from 1.1.23 through 1.1.34, from 1.2.0 through 1.2.39, from 1.3.0 through 1.3.6, from 2.0.0 through 2.0.13.\n\nUsers are recommended to upgrade to version Tomcat Native 1.3.7 or 2.0.14 and Tomcat 11.0.20, 10.1.53 and 9.0.116, which fix the issue.
+</code>
+
+- [gregk4sec/cve-2026-29145](https://github.com/gregk4sec/cve-2026-29145)
+
 ### CVE-2026-29187 (2026-03-25)
 
 <code>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, a Blind SQL Injection vulnerability exists in the Patient Search functionality (/interface/new/new_search_popup.php). The vulnerability allows an authenticated attacker to execute arbitrary SQL commands by manipulating the HTTP parameter keys rather than the values. Version 8.0.0.3 contains a patch.
@@ -2562,6 +2591,13 @@
 
 - [0xBlackash/CVE-2026-31402](https://github.com/0xBlackash/CVE-2026-31402)
 
+### CVE-2026-31413 (2026-04-12)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nbpf: Fix unsound scalar forking in maybe_fork_scalars() for BPF_OR\n\nmaybe_fork_scalars() is called for both BPF_AND and BPF_OR when the\nsource operand is a constant.  When dst has signed range [-1, 0], it\nforks the verifier state: the pushed path gets dst = 0, the current\npath gets dst = -1.\n\nFor BPF_AND this is correct: 0 &amp; K == 0.\nFor BPF_OR this is wrong:    0 | K == K, not 0.\n\nThe pushed path therefore tracks dst as 0 when the runtime value is K,\nproducing an exploitable verifier/runtime divergence that allows\nout-of-bounds map access.\n\nFix this by passing env-&gt;insn_idx (instead of env-&gt;insn_idx + 1) to\npush_stack(), so the pushed path re-executes the ALU instruction with\ndst = 0 and naturally computes the correct result for any opcode.
+</code>
+
+- [Rat5ak/CVE-2026-31413-BPF-Container-Escape](https://github.com/Rat5ak/CVE-2026-31413-BPF-Container-Escape)
+
 ### CVE-2026-31802 (2026-03-09)
 
 <code>node-tar is a full-featured Tar for Node.js. Prior to version 7.5.11, tar (npm) can be tricked into creating a symlink that points outside the extraction directory by using a drive-relative symlink target such as C:../../../target.txt, which enables file overwrite outside cwd during normal tar.x() extraction. This vulnerability is fixed in 7.5.11.
@@ -2732,7 +2768,7 @@
 - [z4yd3/PoC-CVE-2026-33017](https://github.com/z4yd3/PoC-CVE-2026-33017)
 - [EQSTLab/CVE-2026-33017](https://github.com/EQSTLab/CVE-2026-33017)
 - [masterwok/CVE-2026-33017-Langflow-PoC](https://github.com/masterwok/CVE-2026-33017-Langflow-PoC)
-- [oscarmine/CVE-2026-33017-Exploit](https://github.com/oscarmine/CVE-2026-33017-Exploit)
+- [oscar-mine/CVE-2026-33017-Exploit](https://github.com/oscar-mine/CVE-2026-33017-Exploit)
 
 ### CVE-2026-33032 (2026-03-30)
 
@@ -3061,6 +3097,20 @@
 </code>
 
 - [zebbernCVE/CVE-2026-39983](https://github.com/zebbernCVE/CVE-2026-39983)
+
+### CVE-2026-39987 (2026-04-09)
+
+<code>marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE vulnerability. The terminal WebSocket endpoint /terminal/ws lacks authentication validation, allowing an unauthenticated attacker to obtain a full PTY shell and execute arbitrary system commands. Unlike other WebSocket endpoints (e.g., /ws) that correctly call validate_auth() for authentication, the /terminal/ws endpoint only checks the running mode and platform support before accepting connections, completely skipping authentication verification. This vulnerability is fixed in 0.23.0.
+</code>
+
+- [0xBlackash/CVE-2026-39987](https://github.com/0xBlackash/CVE-2026-39987)
+
+### CVE-2026-40175 (2026-04-10)
+
+<code>Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.0, the Axios library is vulnerable to a specific &quot;Gadget&quot; attack chain that allows Prototype Pollution in any third-party dependency to be escalated into Remote Code Execution (RCE) or Full Cloud Compromise (via AWS IMDSv2 bypass). This vulnerability is fixed in 1.15.0.
+</code>
+
+- [0xBlackash/CVE-2026-40175](https://github.com/0xBlackash/CVE-2026-40175)
 
 
 ## 2025
@@ -4075,6 +4125,13 @@
 
 - [sahici/CVE-2025-4688](https://github.com/sahici/CVE-2025-4688)
 
+### CVE-2025-4720 (2025-05-15)
+
+<code>In SourceCodester Student Result Management System 1.0 wurde eine Schwachstelle ausgemacht. Sie wurde als kritisch eingestuft. Betroffen ist eine unbekannte Verarbeitung der Datei academic/core/drop_student.php. Durch Beeinflussen des Arguments img mit unbekannten Daten kann eine path traversal-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk passieren. Der Exploit steht zur öffentlichen Verfügung.
+</code>
+
+- [Xmyronn/duplicate-CVE-2025-4720-](https://github.com/Xmyronn/duplicate-CVE-2025-4720-)
+
 ### CVE-2025-4784 (2025-07-24)
 
 <code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Moderec Tourtella allows SQL Injection.This issue affects Tourtella: before 26.05.2025.
@@ -4861,6 +4918,8 @@
 - [Ghxstsec/CVE-2025-8110](https://github.com/Ghxstsec/CVE-2025-8110)
 - [kayl22/cve-2025-8110-GOGS-RCE](https://github.com/kayl22/cve-2025-8110-GOGS-RCE)
 - [manbahadurthapa1248/CVE-2025-8110-Authenticated-Remote-Code-Execution-on-Gogs-v0.13.3-](https://github.com/manbahadurthapa1248/CVE-2025-8110-Authenticated-Remote-Code-Execution-on-Gogs-v0.13.3-)
+- [TYehan/CVE-2025-8110-Gogs-RCE-Exploit](https://github.com/TYehan/CVE-2025-8110-Gogs-RCE-Exploit)
+- [0dgt/CVE-2025-8110](https://github.com/0dgt/CVE-2025-8110)
 
 ### CVE-2025-8191 (2025-07-26)
 
@@ -5512,6 +5571,13 @@
 </code>
 
 - [d0n601/CVE-2025-12720](https://github.com/d0n601/CVE-2025-12720)
+
+### CVE-2025-12721 (2025-12-06)
+
+<code>The g-FFL Cockpit plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.7.1 via the /server_status REST API endpoint due to a lack of capability checks. This makes it possible for unauthenticated attackers to extract information about the server.
+</code>
+
+- [d0n601/CVE-2025-12721](https://github.com/d0n601/CVE-2025-12721)
 
 ### CVE-2025-12735 (2025-11-05)
 
@@ -8223,6 +8289,7 @@
 - [byteReaper77/CVE-2025-32429](https://github.com/byteReaper77/CVE-2025-32429)
 - [amir-othman/CVE-2025-32429](https://github.com/amir-othman/CVE-2025-32429)
 - [imbas007/CVE-2025-32429-Checker](https://github.com/imbas007/CVE-2025-32429-Checker)
+- [TheNaderr/CVE-2025-32429](https://github.com/TheNaderr/CVE-2025-32429)
 
 ### CVE-2025-32432 (2025-04-25)
 
@@ -8524,6 +8591,13 @@
 </code>
 
 - [jisi-001/CVE-2025-34040Exp](https://github.com/jisi-001/CVE-2025-34040Exp)
+
+### CVE-2025-34065 (2025-07-01)
+
+<code>An authentication bypass vulnerability exists in AVTECH IP camera, DVR, and NVR devices’ streamd web server. The strstr() function allows unauthenticated access to any request containing &quot;/nobody&quot; in the URL, bypassing login controls.
+</code>
+
+- [Savanooo/avtech-cve-2025-34065-analysis](https://github.com/Savanooo/avtech-cve-2025-34065-analysis)
 
 ### CVE-2025-34077 (2025-07-09)
 
@@ -10690,6 +10764,7 @@
 - [z0d131482700x/Livewire2025CVE](https://github.com/z0d131482700x/Livewire2025CVE)
 - [flame-11/CVE-2025-54068-livewire](https://github.com/flame-11/CVE-2025-54068-livewire)
 - [haxorstars/CVE-2025-54068](https://github.com/haxorstars/CVE-2025-54068)
+- [HelgeSverre/livewire-honeypot](https://github.com/HelgeSverre/livewire-honeypot)
 
 ### CVE-2025-54100 (2025-12-09)
 
@@ -11205,7 +11280,6 @@
 - [Gymnott1/CVE-2025-55182](https://github.com/Gymnott1/CVE-2025-55182)
 - [J4ck3LSyN-Gen2/CVE-2025-55182](https://github.com/J4ck3LSyN-Gen2/CVE-2025-55182)
 - [pkrasulia/CVE-2025-55182-NextJS-RCE-PoC](https://github.com/pkrasulia/CVE-2025-55182-NextJS-RCE-PoC)
-- [oscarmine/R2SAE](https://github.com/oscarmine/R2SAE)
 - [min8282/CVE-2025-55182](https://github.com/min8282/CVE-2025-55182)
 - [Machine-farmer/PunchingBag-for-React2Shell](https://github.com/Machine-farmer/PunchingBag-for-React2Shell)
 - [exrienz/CVE-2025-55182-NextJS-Scanner-React2Shell-PoC](https://github.com/exrienz/CVE-2025-55182-NextJS-Scanner-React2Shell-PoC)
@@ -11376,6 +11450,7 @@
 - [kaxm23/CVE-2025-55182-Auto-Scanner](https://github.com/kaxm23/CVE-2025-55182-Auto-Scanner)
 - [kaxm23/rust-cve-2025-55182-scanner](https://github.com/kaxm23/rust-cve-2025-55182-scanner)
 - [RewantChaudhari/nextjs-rce-incident-response](https://github.com/RewantChaudhari/nextjs-rce-incident-response)
+- [oscar-mine/R2SAE](https://github.com/oscar-mine/R2SAE)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -11917,8 +11992,10 @@
 
 - [AzureADTrent/CVE-2025-58434-59528](https://github.com/AzureADTrent/CVE-2025-58434-59528)
 - [Kamigold/Flowise-RCE](https://github.com/Kamigold/Flowise-RCE)
-- [CVETeam/FlowiseAI-Critical-KillChain](https://github.com/CVETeam/FlowiseAI-Critical-KillChain)
 - [TYehan/CVE-2025-58434-59528](https://github.com/TYehan/CVE-2025-58434-59528)
+- [p1ctur3p3rf3ct/CVE-2025-58434](https://github.com/p1ctur3p3rf3ct/CVE-2025-58434)
+- [jwsly12/CVE-2025-58434-59528-htb-ctf](https://github.com/jwsly12/CVE-2025-58434-59528-htb-ctf)
+- [kartik2005221/CVE-2025-58434-poc](https://github.com/kartik2005221/CVE-2025-58434-poc)
 
 ### CVE-2025-58440
 - [ph-hitachi/CVE-2025-58440](https://github.com/ph-hitachi/CVE-2025-58440)
@@ -12031,6 +12108,13 @@
 </code>
 
 - [garrettfoster13/CVE-2025-59501](https://github.com/garrettfoster13/CVE-2025-59501)
+
+### CVE-2025-59528 (2025-09-22)
+
+<code>Flowise is a drag &amp; drop user interface to build a customized large language model flow. In version 3.0.5, Flowise is vulnerable to remote code execution. The CustomMCP node allows users to input configuration settings for connecting to an external MCP server. This node parses the user-provided mcpServerConfig string to build the MCP server configuration. However, during this process, it executes JavaScript code without any security validation. Specifically, inside the convertToValidJSONString function, user input is directly passed to the Function() constructor, which evaluates and executes the input as JavaScript code. Since this runs with full Node.js runtime privileges, it can access dangerous modules such as child_process and fs. This issue has been patched in version 3.0.6.
+</code>
+
+- [secopssite/HTB](https://github.com/secopssite/HTB)
 
 ### CVE-2025-59532 (2025-09-22)
 
@@ -15202,7 +15286,7 @@
 - [MihranGIT/CVE-2024-4367](https://github.com/MihranGIT/CVE-2024-4367)
 - [0xr2r/CVE-2024-4367](https://github.com/0xr2r/CVE-2024-4367)
 - [1337rokudenashi/Odoo_PDFjs_CVE-2024-4367.pdf](https://github.com/1337rokudenashi/Odoo_PDFjs_CVE-2024-4367.pdf)
-- [John-Popovici/CVE-2024-4367-pdfjs-exploit](https://github.com/John-Popovici/CVE-2024-4367-pdfjs-exploit)
+- [John-Popovici/CVE-2022-0543-redis-sandbox-escape](https://github.com/John-Popovici/CVE-2022-0543-redis-sandbox-escape)
 
 ### CVE-2024-4406 (2024-05-02)
 
@@ -18777,6 +18861,7 @@
 <code>Splinefont in FontForge through 20230101 allows command injection via crafted archives or compressed files.
 </code>
 
+- [secopssite/HTB](https://github.com/secopssite/HTB)
 - [AliElKhatteb/CVE-2024-25082_CVE-2024-25081](https://github.com/AliElKhatteb/CVE-2024-25082_CVE-2024-25081)
 - [moamenx8/CVE-2024-25082](https://github.com/moamenx8/CVE-2024-25082)
 - [V0idW1re/HTB-VariaType-Writeup](https://github.com/V0idW1re/HTB-VariaType-Writeup)
@@ -20591,6 +20676,7 @@
 - [Voorivex/CVE-2024-34351](https://github.com/Voorivex/CVE-2024-34351)
 - [avergnaud/Next.js_exploit_CVE-2024-34351](https://github.com/avergnaud/Next.js_exploit_CVE-2024-34351)
 - [God4n/nextjs-CVE-2024-34351-_exploit](https://github.com/God4n/nextjs-CVE-2024-34351-_exploit)
+- [Jinlei-Chen-UWO/cve-2024-34351-demo](https://github.com/Jinlei-Chen-UWO/cve-2024-34351-demo)
 
 ### CVE-2024-34361 (2024-07-05)
 
@@ -22985,6 +23071,13 @@
 </code>
 
 - [ibrahmsql/CVE-2024-47773](https://github.com/ibrahmsql/CVE-2024-47773)
+
+### CVE-2024-47823 (2024-10-08)
+
+<code>Livewire is a full-stack framework for Laravel that allows for dynamic UI components without leaving PHP. In livewire/livewire prior to `2.12.7` and `v3.5.2`, the file extension of an uploaded file is guessed based on the MIME type. As a result, the actual file extension from the file name is not validated. An attacker can therefore bypass the validation by uploading a file with a valid MIME type (e.g., `image/png`) and a “.php” file extension. If the following criteria are met, the attacker can carry out an RCE attack: 1. Filename is composed of the original file name using `$file-&gt;getClientOriginalName()`. 2. Files stored directly on your server in a public storage disk. 3. Webserver is configured to execute “.php” files. This issue has been addressed in release versions `2.12.7` and `3.5.2`. All users are advised to upgrade. There are no known workarounds for this vulnerability.
+</code>
+
+- [HelgeSverre/livewire-honeypot](https://github.com/HelgeSverre/livewire-honeypot)
 
 ### CVE-2024-47875 (2024-10-11)
 
@@ -29572,7 +29665,6 @@
 - [thatonesecguy/Wordpress-Vulnerability-Identification-Scripts](https://github.com/thatonesecguy/Wordpress-Vulnerability-Identification-Scripts)
 - [manavvedawala/CVE-2023-32243-proof-of-concept](https://github.com/manavvedawala/CVE-2023-32243-proof-of-concept)
 - [Jenderal92/WP-CVE-2023-32243](https://github.com/Jenderal92/WP-CVE-2023-32243)
-- [shaoyu521/Mass-CVE-2023-32243](https://github.com/shaoyu521/Mass-CVE-2023-32243)
 - [dev0558/CVE-2023-32243-Detection-and-Mitigation-in-WordPress](https://github.com/dev0558/CVE-2023-32243-Detection-and-Mitigation-in-WordPress)
 
 ### CVE-2023-32309 (2023-05-15)
@@ -31105,6 +31197,7 @@
 - [TX-One/CVE-2023-38408](https://github.com/TX-One/CVE-2023-38408)
 - [Adel2411/cve-2023-38408](https://github.com/Adel2411/cve-2023-38408)
 - [xitexploiter96-dot/CVE-2023-38408](https://github.com/xitexploiter96-dot/CVE-2023-38408)
+- [nonosticisiguzo-command/nmap-scan-results](https://github.com/nonosticisiguzo-command/nmap-scan-results)
 
 ### CVE-2023-38434 (2023-07-18)
 
@@ -31209,7 +31302,6 @@
 - [Shisones/MetabaseRCE_CVE-2023-38646](https://github.com/Shisones/MetabaseRCE_CVE-2023-38646)
 - [acesoyeo/METABASE-RCE-CVE-2023-38646-](https://github.com/acesoyeo/METABASE-RCE-CVE-2023-38646-)
 - [UserConnecting/Exploit-CVE-2023-38646-Metabase](https://github.com/UserConnecting/Exploit-CVE-2023-38646-Metabase)
-- [DaniTheHack3r/CVE-2023-38646](https://github.com/DaniTheHack3r/CVE-2023-38646)
 - [JayRyz/CVE-2023-38646-PoC-Metabase](https://github.com/JayRyz/CVE-2023-38646-PoC-Metabase)
 - [cleanmgr112/cve-2023-38646-poc](https://github.com/cleanmgr112/cve-2023-38646-poc)
 - [BreezeGalaxy/CVE-2023-38646](https://github.com/BreezeGalaxy/CVE-2023-38646)
@@ -34473,6 +34565,7 @@
 - [abramas/CVE-2022-0543](https://github.com/abramas/CVE-2022-0543)
 - [SiennaSkies/redisHack](https://github.com/SiennaSkies/redisHack)
 - [netw0rk7/CVE-2022-0543-Home-Lab](https://github.com/netw0rk7/CVE-2022-0543-Home-Lab)
+- [John-Popovici/CVE-2022-0543-redis-sandbox-escape](https://github.com/John-Popovici/CVE-2022-0543-redis-sandbox-escape)
 
 ### CVE-2022-0591 (2022-03-21)
 
@@ -38234,6 +38327,7 @@
 - [l0n3m4n/CVE-2022-29078](https://github.com/l0n3m4n/CVE-2022-29078)
 - [chuckdu21/CVE-2022-29078](https://github.com/chuckdu21/CVE-2022-29078)
 - [seal-sec-demo-2/npm-demo](https://github.com/seal-sec-demo-2/npm-demo)
+- [amusedx/CVE-2022-29078](https://github.com/amusedx/CVE-2022-29078)
 
 ### CVE-2022-29154 (2022-08-02)
 
@@ -42544,6 +42638,7 @@
 - [halissha/CVE-2021-3156](https://github.com/halissha/CVE-2021-3156)
 - [sharkmoos/Baron-Samedit](https://github.com/sharkmoos/Baron-Samedit)
 - [chenaotian/CVE-2021-3156](https://github.com/chenaotian/CVE-2021-3156)
+- [ret2basic/SudoScience](https://github.com/ret2basic/SudoScience)
 - [RodricBr/CVE-2021-3156](https://github.com/RodricBr/CVE-2021-3156)
 - [ypl6/heaplens](https://github.com/ypl6/heaplens)
 - [q77190858/CVE-2021-3156](https://github.com/q77190858/CVE-2021-3156)
@@ -42724,7 +42819,6 @@
 - [iamz24/CVE-2021-3493_CVE-2022-3357](https://github.com/iamz24/CVE-2021-3493_CVE-2022-3357)
 - [fathallah17/OverlayFS-CVE-2021-3493](https://github.com/fathallah17/OverlayFS-CVE-2021-3493)
 - [Sornphut/OverlayFS---CVE-2021-3493](https://github.com/Sornphut/OverlayFS---CVE-2021-3493)
-- [spideyctf/UbuntuTouchSecurityVAPTReport](https://github.com/spideyctf/UbuntuTouchSecurityVAPTReport)
 - [cyberx-1/OverlayFS-CVE-2021-3493](https://github.com/cyberx-1/OverlayFS-CVE-2021-3493)
 - [George-Yanni/DeepRoot](https://github.com/George-Yanni/DeepRoot)
 
@@ -45288,7 +45382,6 @@
 </code>
 
 - [dongpohezui/cve-2021-33045](https://github.com/dongpohezui/cve-2021-33045)
-- [lequoca/Camera-Dahua-CVE-2021-33045](https://github.com/lequoca/Camera-Dahua-CVE-2021-33045)
 
 ### CVE-2021-33104 (2023-02-16)
 
@@ -46798,6 +46891,7 @@
 - [skentagon/CVE-2021-41773](https://github.com/skentagon/CVE-2021-41773)
 - [zer0qs/CVE-2021-41773](https://github.com/zer0qs/CVE-2021-41773)
 - [bernardas/netsec-polygon](https://github.com/bernardas/netsec-polygon)
+- [CalfCrusher/Path-traversal-RCE-Apache-2.4.49-2.4.50-Exploit](https://github.com/CalfCrusher/Path-traversal-RCE-Apache-2.4.49-2.4.50-Exploit)
 - [Chocapikk/CVE-2021-41773](https://github.com/Chocapikk/CVE-2021-41773)
 - [wangfly-me/Apache_Penetration_Tool](https://github.com/wangfly-me/Apache_Penetration_Tool)
 - [anldori/CVE-2021-41773-Scanner](https://github.com/anldori/CVE-2021-41773-Scanner)
@@ -52932,6 +53026,13 @@
 
 - [lb0x/cve-2020-24572](https://github.com/lb0x/cve-2020-24572)
 - [gerbsec/CVE-2020-24572-POC](https://github.com/gerbsec/CVE-2020-24572-POC)
+
+### CVE-2020-24586 (2021-05-11)
+
+<code>The 802.11 standard that underpins Wi-Fi Protected Access (WPA, WPA2, and WPA3) and Wired Equivalent Privacy (WEP) doesn't require that received fragments be cleared from memory after (re)connecting to a network. Under the right circumstances, when another device sends fragmented frames encrypted using WEP, CCMP, or GCMP, this can be abused to inject arbitrary network packets and/or exfiltrate user data.
+</code>
+
+- [elvira-alec/fracture](https://github.com/elvira-alec/fracture)
 
 ### CVE-2020-24597
 - [HoangKien1020/CVE-2020-24597](https://github.com/HoangKien1020/CVE-2020-24597)
