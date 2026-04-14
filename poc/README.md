@@ -1,6 +1,9 @@
 # PoC in GitHub
 
 ## 2026
+### CVE-2026-000
+- [r3m0t3nu11/biotime-CVE-2026-000-Auth-rce](https://github.com/r3m0t3nu11/biotime-CVE-2026-000-Auth-rce)
+
 ### CVE-2026-0594 (2026-01-14)
 
 <code>The List Site Contributors plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'alpha' parameter in versions up to, and including, 1.1.8 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.
@@ -402,14 +405,14 @@
 
 ### CVE-2026-2763 (2026-02-24)
 
-<code>Use-after-free in the JavaScript Engine component. This vulnerability affects Firefox &lt; 148, Firefox ESR &lt; 115.33, Firefox ESR &lt; 140.8, Thunderbird &lt; 148, and Thunderbird &lt; 140.8.
+<code>Use-after-free in the JavaScript Engine component. This vulnerability was fixed in Firefox 148, Firefox ESR 115.33, Firefox ESR 140.8, Thunderbird 148, and Thunderbird 140.8.
 </code>
 
 - [ppwwiinn/CVE-2026-2763-POC](https://github.com/ppwwiinn/CVE-2026-2763-POC)
 
 ### CVE-2026-2796 (2026-02-24)
 
-<code>JIT miscompilation in the JavaScript: WebAssembly component. This vulnerability affects Firefox &lt; 148 and Thunderbird &lt; 148.
+<code>JIT miscompilation in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox 148 and Thunderbird 148.
 </code>
 
 - [WostGit/cve-2026-2796-repro](https://github.com/WostGit/cve-2026-2796-repro)
@@ -694,7 +697,7 @@
 
 ### CVE-2026-5733 (2026-04-07)
 
-<code>Incorrect boundary conditions in the Graphics: WebGPU component. This vulnerability affects Firefox &lt; 149.0.2 and Thunderbird &lt; 149.0.2.
+<code>Incorrect boundary conditions in the Graphics: WebGPU component. This vulnerability was fixed in Firefox 149.0.2 and Thunderbird 149.0.2.
 </code>
 
 - [Lechansky/CVE-2026-5733](https://github.com/Lechansky/CVE-2026-5733)
@@ -705,6 +708,37 @@
 </code>
 
 - [MonsterWsr-hub/CVE-2026-6111](https://github.com/MonsterWsr-hub/CVE-2026-6111)
+
+### CVE-2026-6182 (2026-04-13)
+
+<code>A vulnerability was identified in code-projects Simple Content Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /web/admin/login.php. Such manipulation of the argument User leads to sql injection. The attack may be launched remotely. The exploit is publicly available and might be used.
+</code>
+
+- [Xmyronn/CVE-2026-6182-SQLI-auth](https://github.com/Xmyronn/CVE-2026-6182-SQLI-auth)
+
+### CVE-2026-6183 (2026-04-13)
+
+<code>A security flaw has been discovered in code-projects Simple Content Management System 1.0. Affected by this issue is some unknown functionality of the file /web/index.php. Performing a manipulation of the argument ID results in sql injection. Remote exploitation of the attack is possible. The exploit has been released to the public and may be used for attacks.
+</code>
+
+- [Xmyronn/CVE-2026-6183-SQLI](https://github.com/Xmyronn/CVE-2026-6183-SQLI)
+
+### CVE-2026-6184 (2026-04-13)
+
+<code>A weakness has been identified in code-projects Simple Content Management System 1.0. This affects an unknown part of the file /web/admin/welcome.php. Executing a manipulation of the argument News Title can lead to cross site scripting. The attack can be executed remotely. The exploit has been made available to the public and could be used for attacks.
+</code>
+
+- [Xmyronn/CVE-2026-6184-stored-XSS](https://github.com/Xmyronn/CVE-2026-6184-stored-XSS)
+
+### CVE-2026-6201 (2026-04-13)
+
+<code>A vulnerability was identified in CodeAstro Online Job Portal 1.0. The impacted element is an unknown function of the file /jobs/job-delete.php of the component Delete Job Posting Handler. Such manipulation of the argument ID leads to improper access controls. The attack can be launched remotely. The exploit is publicly available and might be used.
+</code>
+
+- [Xmyronn/CVE-2026-6201-IDOR](https://github.com/Xmyronn/CVE-2026-6201-IDOR)
+
+### CVE-2026-6227
+- [Pixel-DefaultBR/CVE-2026-6227](https://github.com/Pixel-DefaultBR/CVE-2026-6227)
 
 ### CVE-2026-7731
 - [SimoesCTT/CTT-Refraction-Vortex-CVE-2026-7731-](https://github.com/SimoesCTT/CTT-Refraction-Vortex-CVE-2026-7731-)
@@ -1836,6 +1870,7 @@
 - [hakaioffsec/CVE-2026-25769](https://github.com/hakaioffsec/CVE-2026-25769)
 - [Samres27/CVE-2026-25769---CVE-2026-25770](https://github.com/Samres27/CVE-2026-25769---CVE-2026-25770)
 - [njeru-codes/CVE-2026-25769](https://github.com/njeru-codes/CVE-2026-25769)
+- [0xBlackash/CVE-2026-25769](https://github.com/0xBlackash/CVE-2026-25769)
 
 ### CVE-2026-25807 (2026-02-09)
 
@@ -2389,7 +2424,11 @@
 
 - [padayali-JD/CVE-2026-29598](https://github.com/padayali-JD/CVE-2026-29598)
 
-### CVE-2026-29628
+### CVE-2026-29628 (2026-04-13)
+
+<code>A stack overflow in the experimental/tinyobj_loader_opt.h file of tinyobjloader commit d56555b allows attackers to cause a Denial of Service (DoS) via supplying a crafted .mtl file.
+</code>
+
 - [kiyochii/CVE-2026-29628](https://github.com/kiyochii/CVE-2026-29628)
 
 ### CVE-2026-29780 (2026-03-07)
@@ -2450,7 +2489,11 @@
 
 - [b0b0haha/CVE-2026-29954](https://github.com/b0b0haha/CVE-2026-29954)
 
-### CVE-2026-29955
+### CVE-2026-29955 (2026-04-13)
+
+<code>The `/registercrd` endpoint in KubePlus 4.14 in the kubeconfiggenerator component is vulnerable to command injection. The component uses `subprocess.Popen()` with `shell=True` parameter to execute shell commands, and the user-supplied `chartName` parameter is directly concatenated into the command string without any sanitization or validation. An attacker can inject arbitrary shell commands by crafting a malicious `chartName` parameter value.
+</code>
+
 - [b0b0haha/CVE-2026-29955](https://github.com/b0b0haha/CVE-2026-29955)
 
 ### CVE-2026-29971
@@ -2490,6 +2533,9 @@
 </code>
 
 - [syphonetic/CVE-2026-30345](https://github.com/syphonetic/CVE-2026-30345)
+
+### CVE-2026-30480
+- [parlakbarann/CVE-2026-30480](https://github.com/parlakbarann/CVE-2026-30480)
 
 ### CVE-2026-30498
 - [Mehdi-Ben-Hamou/CVE-2026-30498](https://github.com/Mehdi-Ben-Hamou/CVE-2026-30498)
@@ -2557,11 +2603,40 @@
 
 - [MorielHarush/CVE-2026-30952-PoC](https://github.com/MorielHarush/CVE-2026-30952-PoC)
 
-### CVE-2026-31048
+### CVE-2026-31048 (2026-04-13)
+
+<code>An issue in the &lt;code&gt;pickle&lt;/code&gt; protocol of Pyro v3.x allows attackers to execute arbitrary code via supplying a crafted pickled string message.
+</code>
+
 - [Sif-0x01/security-advisories](https://github.com/Sif-0x01/security-advisories)
 
-### CVE-2026-31280
+### CVE-2026-31280 (2026-04-13)
+
+<code>An issue in the Bluetooth RFCOMM service of Parani M10 Motorcycle Intercom v2.1.3 allows unauthorized attackers to cause a Denial of Service (DoS) via supplying crafted RFCOMM frames.
+</code>
+
 - [CipherX1802/CVE-2026-31280-Insecure-Bluetooth-RFCOMM-Leading-to-Device-Crash-in-Parani-M10-Intercom](https://github.com/CipherX1802/CVE-2026-31280-Insecure-Bluetooth-RFCOMM-Leading-to-Device-Crash-in-Parani-M10-Intercom)
+
+### CVE-2026-31281 (2026-04-13)
+
+<code>Totara LMS v19.1.5 and before is vulnerable to HTLM Injection. An attacker can inject malicious HTLM code in a message and send it to all the users in the application, resulting in executing the code and may lead to session hijacking and executing commands on the victim's browser.
+</code>
+
+- [saykino/CVE-2026-31281](https://github.com/saykino/CVE-2026-31281)
+
+### CVE-2026-31282 (2026-04-13)
+
+<code>Totara LMS v19.1.5 and before is vulnerable to Incorrect Access Control. The login page code can be manipulated to reveal the login form. An attacker can chain that with missing rate-limit on the login form to launch a brute force attack.
+</code>
+
+- [saykino/CVE-2026-31282](https://github.com/saykino/CVE-2026-31282)
+
+### CVE-2026-31283 (2026-04-13)
+
+<code>In Totara LMS v19.1.5 and before, the forgot password API does not implement rate limiting for the target email address. which can be used for an Email Bombing attack.
+</code>
+
+- [saykino/CVE-2026-31283](https://github.com/saykino/CVE-2026-31283)
 
 ### CVE-2026-31402 (2026-04-03)
 
@@ -2748,6 +2823,7 @@
 - [EQSTLab/CVE-2026-33017](https://github.com/EQSTLab/CVE-2026-33017)
 - [masterwok/CVE-2026-33017-Langflow-PoC](https://github.com/masterwok/CVE-2026-33017-Langflow-PoC)
 - [oscar-mine/CVE-2026-33017-Exploit](https://github.com/oscar-mine/CVE-2026-33017-Exploit)
+- [Spydomain/CVE-2026-33017-lab](https://github.com/Spydomain/CVE-2026-33017-lab)
 
 ### CVE-2026-33032 (2026-03-30)
 
@@ -2977,6 +3053,14 @@
 
 - [redyank/CVE-2026-34444](https://github.com/redyank/CVE-2026-34444)
 
+### CVE-2026-34621 (2026-04-11)
+
+<code>Acrobat Reader versions 24.001.30356, 26.001.21367 and earlier are affected by an Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.
+</code>
+
+- [ercihan/CVE-2026-34621](https://github.com/ercihan/CVE-2026-34621)
+- [eduardorossi84/CVE-2026-34621-POC](https://github.com/eduardorossi84/CVE-2026-34621-POC)
+
 ### CVE-2026-34724 (2026-04-08)
 
 <code>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0.1, a server-side template injection vulnerability  which leads to RCE via AI Agent exists. Impact is limited to environments where an attacker can control or influence type_enrichment_data (typically high-privilege administrative configuration). This vulnerability is fixed in 7.0.1.
@@ -3031,6 +3115,7 @@
 - [z3r0h3ro/CVE-2026-35616-poc](https://github.com/z3r0h3ro/CVE-2026-35616-poc)
 - [fevar54/CVE-2026-35616-detector.py](https://github.com/fevar54/CVE-2026-35616-detector.py)
 - [BishopFox/CVE-2026-35616-check](https://github.com/BishopFox/CVE-2026-35616-check)
+- [keraattin/CVE-2026-35616](https://github.com/keraattin/CVE-2026-35616)
 
 ### CVE-2026-39324 (2026-04-07)
 
@@ -3083,6 +3168,8 @@
 </code>
 
 - [0xBlackash/CVE-2026-39987](https://github.com/0xBlackash/CVE-2026-39987)
+- [fevar54/marimo_CVE-2026-39987_RCE_PoC](https://github.com/fevar54/marimo_CVE-2026-39987_RCE_PoC)
+- [mki9/CVE-2026-39987_exploit](https://github.com/mki9/CVE-2026-39987_exploit)
 
 ### CVE-2026-40175 (2026-04-10)
 
@@ -3090,6 +3177,7 @@
 </code>
 
 - [0xBlackash/CVE-2026-40175](https://github.com/0xBlackash/CVE-2026-40175)
+- [kengzzzz/CVE-2026-40175](https://github.com/kengzzzz/CVE-2026-40175)
 
 
 ## 2025
@@ -3242,7 +3330,7 @@
 
 ### CVE-2025-1015 (2025-02-04)
 
-<code>The Thunderbird Address Book URI fields contained unsanitized links. This could be used by an attacker to create and export an address book containing a malicious payload in a field. For example, in the “Other” field of the Instant Messaging section. If another user imported the address book, clicking on the link could result in opening a web page inside Thunderbird, and that page could execute (unprivileged) JavaScript. This vulnerability affects Thunderbird &lt; 128.7 and Thunderbird &lt; 135.
+<code>The Thunderbird Address Book URI fields contained unsanitized links. This could be used by an attacker to create and export an address book containing a malicious payload in a field. For example, in the “Other” field of the Instant Messaging section. If another user imported the address book, clicking on the link could result in opening a web page inside Thunderbird, and that page could execute (unprivileged) JavaScript. This vulnerability was fixed in Thunderbird 128.7 and Thunderbird 135.
 </code>
 
 - [r3m0t3nu11/CVE-2025-1015](https://github.com/r3m0t3nu11/CVE-2025-1015)
@@ -5811,14 +5899,14 @@
 
 ### CVE-2025-14321 (2025-12-09)
 
-<code>Use-after-free in the WebRTC: Signaling component. This vulnerability affects Firefox &lt; 146, Firefox ESR &lt; 140.6, Thunderbird &lt; 146, and Thunderbird &lt; 140.6.
+<code>Use-after-free in the WebRTC: Signaling component. This vulnerability was fixed in Firefox 146, Firefox ESR 140.6, Thunderbird 146, and Thunderbird 140.6.
 </code>
 
 - [h3raklez/CVE-2025-14321](https://github.com/h3raklez/CVE-2025-14321)
 
 ### CVE-2025-14325 (2025-12-09)
 
-<code>JIT miscompilation in the JavaScript Engine: JIT component. This vulnerability affects Firefox &lt; 146, Firefox ESR &lt; 140.6, Thunderbird &lt; 146, and Thunderbird &lt; 140.6.
+<code>JIT miscompilation in the JavaScript Engine: JIT component. This vulnerability was fixed in Firefox 146, Firefox ESR 140.6, Thunderbird 146, and Thunderbird 140.6.
 </code>
 
 - [WostGit/cve-2025-14325-full-repro](https://github.com/WostGit/cve-2025-14325-full-repro)
@@ -10876,6 +10964,13 @@
 - [rockmelodies/bentoml_CVE-2025-54381](https://github.com/rockmelodies/bentoml_CVE-2025-54381)
 - [IS8123/CVE-2025-54381](https://github.com/IS8123/CVE-2025-54381)
 
+### CVE-2025-54416 (2025-07-26)
+
+<code>tj-actions/branch-names is a Github actions repository that contains workflows to retrieve branch or tag names with support for all events. In versions 8.2.1 and below, a critical vulnerability has been identified in the tj-actions/branch-names' GitHub Action workflow which allows arbitrary command execution in downstream workflows. This issue arises due to inconsistent input sanitization and unescaped output, enabling malicious actors to exploit specially crafted branch names or tags. While internal sanitization mechanisms have been implemented, the action outputs remain vulnerable, exposing consuming workflows to significant security risks. This is fixed in version 9.0.0
+</code>
+
+- [HexborneStudio/atlas-tj-actions-poc](https://github.com/HexborneStudio/atlas-tj-actions-poc)
+
 ### CVE-2025-54424 (2025-08-01)
 
 <code>1Panel is a web interface and MCP Server that manages websites, files, containers, databases, and LLMs on a Linux server. In versions 2.0.5 and below, the HTTPS protocol used for communication between the Core and Agent endpoints has incomplete certificate verification during certificate validation, leading to unauthorized interface access. Due to the presence of numerous command execution or high-privilege interfaces in 1Panel, this results in Remote Code Execution (RCE). This is fixed in version 2.0.6. The CVE has been translated from Simplified Chinese using GitHub Copilot.
@@ -11412,7 +11507,6 @@
 - [MrMahile/MassScanning-CVE-2025-55182](https://github.com/MrMahile/MassScanning-CVE-2025-55182)
 - [androidteacher/REACT-CVE-2025-55182-Lab](https://github.com/androidteacher/REACT-CVE-2025-55182-Lab)
 - [InferiorAK/CVE-2025-55182-React2Shell-Async-Scanner](https://github.com/InferiorAK/CVE-2025-55182-React2Shell-Async-Scanner)
-- [DeDnY/CVE-2025-55182-in-docker](https://github.com/DeDnY/CVE-2025-55182-in-docker)
 - [luoqichen/CVE-2025-55182-POC](https://github.com/luoqichen/CVE-2025-55182-POC)
 - [lutraat/CVE-2025-55182-React-RSC-Exploit](https://github.com/lutraat/CVE-2025-55182-React-RSC-Exploit)
 - [monarchfish/cve-2025-55182-poc](https://github.com/monarchfish/cve-2025-55182-poc)
@@ -11434,6 +11528,7 @@
 - [RewantChaudhari/nextjs-rce-incident-response](https://github.com/RewantChaudhari/nextjs-rce-incident-response)
 - [oscar-mine/R2SAE](https://github.com/oscar-mine/R2SAE)
 - [AbdullahMaqbool22/Explosive-As-Hell-MCS-Qualifer-Web-500](https://github.com/AbdullahMaqbool22/Explosive-As-Hell-MCS-Qualifer-Web-500)
+- [DeDnY/CVE-2025-55182-poc-panel](https://github.com/DeDnY/CVE-2025-55182-poc-panel)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -11495,6 +11590,13 @@
 - [sirredbeard/CVE-2025-55315-repro](https://github.com/sirredbeard/CVE-2025-55315-repro)
 - [ZemarKhos/CVE-2025-55315-PoC-Exploit](https://github.com/ZemarKhos/CVE-2025-55315-PoC-Exploit)
 - [MartinFabianIonut/CVE-2025-55315](https://github.com/MartinFabianIonut/CVE-2025-55315)
+
+### CVE-2025-55320 (2025-10-14)
+
+<code>Improper neutralization of special elements used in an sql command ('sql injection') in Microsoft Configuration Manager allows an authorized attacker to elevate privileges over an adjacent network.
+</code>
+
+- [synacktiv/CVE-2025-55320](https://github.com/synacktiv/CVE-2025-55320)
 
 ### CVE-2025-55349
 - [GoldenTicketLabs/CVE-2025-55349](https://github.com/GoldenTicketLabs/CVE-2025-55349)
@@ -12019,6 +12121,13 @@
 
 - [kawaii-ghost/CVE-2025-59194](https://github.com/kawaii-ghost/CVE-2025-59194)
 
+### CVE-2025-59213 (2025-10-14)
+
+<code>Improper neutralization of special elements used in an sql command ('sql injection') in Microsoft Configuration Manager allows an unauthorized attacker to elevate privileges over an adjacent network.
+</code>
+
+- [synacktiv/CVE-2025-59213](https://github.com/synacktiv/CVE-2025-59213)
+
 ### CVE-2025-59284 (2025-10-14)
 
 <code>Exposure of sensitive information to an unauthorized actor in Windows NTLM allows an unauthorized attacker to perform spoofing locally.
@@ -12099,6 +12208,8 @@
 </code>
 
 - [secopssite/HTB](https://github.com/secopssite/HTB)
+- [UsifAraby/CVE-2025-59528-POC](https://github.com/UsifAraby/CVE-2025-59528-POC)
+- [vanhari/CVE-2025-59528](https://github.com/vanhari/CVE-2025-59528)
 
 ### CVE-2025-59532 (2025-09-22)
 
@@ -13320,6 +13431,9 @@
 </code>
 
 - [saykino/CVE-2025-66838](https://github.com/saykino/CVE-2025-66838)
+
+### CVE-2025-66849
+- [wojtekchwala/CVE-2025-66849](https://github.com/wojtekchwala/CVE-2025-66849)
 
 ### CVE-2025-66850
 - [joelatplay/CVE-2025-66850](https://github.com/joelatplay/CVE-2025-66850)
@@ -22689,6 +22803,7 @@
 - [NHAS/CVE-2024-45337-POC](https://github.com/NHAS/CVE-2024-45337-POC)
 - [NHAS/VULNERABLE-CVE-2024-45337](https://github.com/NHAS/VULNERABLE-CVE-2024-45337)
 - [peace-maker/CVE-2024-45337](https://github.com/peace-maker/CVE-2024-45337)
+- [Backline-playground/gogs](https://github.com/Backline-playground/gogs)
 
 ### CVE-2024-45352 (2025-03-27)
 
@@ -26775,6 +26890,13 @@
 - [w2xim3/CVE-2023-6933](https://github.com/w2xim3/CVE-2023-6933)
 - [Trex96/vulnerable-bsr-lab-CVE-2023-6933](https://github.com/Trex96/vulnerable-bsr-lab-CVE-2023-6933)
 
+### CVE-2023-6972 (2023-12-23)
+
+<code>The Backup Migration plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 1.3.9 via the 'content-backups' and 'content-name', 'content-manifest', or 'content-bmitmp' and 'content-identy' HTTP headers. This makes it possible for unauthenticated attackers to delete arbitrary files, including the wp-config.php file, which can make site takeover and remote code execution possible.
+</code>
+
+- [Aliyankhan-source/CVE-2023-6972-Exploit-Arbitrary-File-Deletion](https://github.com/Aliyankhan-source/CVE-2023-6972-Exploit-Arbitrary-File-Deletion)
+
 ### CVE-2023-6985 (2024-02-05)
 
 <code>The 10Web AI Assistant – AI content writing assistant plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the install_plugin AJAX action in all versions up to, and including, 1.0.18. This makes it possible for authenticated attackers, with subscriber-level access and above, to install arbitrary plugins that can be used to gain further access to a compromised site.
@@ -27928,7 +28050,6 @@
 
 - [H4R335HR/CVE-2023-24329-PoC](https://github.com/H4R335HR/CVE-2023-24329-PoC)
 - [Pandante-Central/CVE-2023-24329-codeql-test](https://github.com/Pandante-Central/CVE-2023-24329-codeql-test)
-- [PenTestMano/CVE-2023-24329-Exploit](https://github.com/PenTestMano/CVE-2023-24329-Exploit)
 
 ### CVE-2023-24422 (2023-01-24)
 
@@ -28899,6 +29020,7 @@
 - [Jev1337/CVE-2023-29357-Check](https://github.com/Jev1337/CVE-2023-29357-Check)
 - [AhmedMansour93/Event-ID-189-Rule-Name-SOC227-CVE-2023-29357](https://github.com/AhmedMansour93/Event-ID-189-Rule-Name-SOC227-CVE-2023-29357)
 - [DeividasTerechovas/SOC227-Microsoft-SharePoint-Server-Elevation-of-Privilege-Possible-CVE-2023-29357-Exploitation](https://github.com/DeividasTerechovas/SOC227-Microsoft-SharePoint-Server-Elevation-of-Privilege-Possible-CVE-2023-29357-Exploitation)
+- [DonVorrin/CVE-2023-29357](https://github.com/DonVorrin/CVE-2023-29357)
 
 ### CVE-2023-29360 (2023-06-13)
 
@@ -29162,6 +29284,13 @@
 </code>
 
 - [huzefa2212/CVE-2023-30347](https://github.com/huzefa2212/CVE-2023-30347)
+
+### CVE-2023-30367 (2023-07-26)
+
+<code>Multi-Remote Next Generation Connection Manager (mRemoteNG) is free software that enables users to store and manage multi-protocol connection configurations to remotely connect to systems. mRemoteNG configuration files can be stored in an encrypted state on disk. mRemoteNG version &lt;= v1.76.20 and &lt;= 1.77.3-dev loads configuration files in plain text into memory (after decrypting them if necessary) at application start-up, even if no connection has been established yet. This allows attackers to access contents of configuration files in plain text through a memory dump and thus compromise user credentials when no custom password encryption key has been set. This also bypasses the connection configuration file encryption setting by dumping already decrypted configurations from memory.
+</code>
+
+- [S1lkys/CVE-2023-30367-mRemoteNG-password-dumper](https://github.com/S1lkys/CVE-2023-30367-mRemoteNG-password-dumper)
 
 ### CVE-2023-30383 (2023-07-18)
 
@@ -43737,7 +43866,7 @@
 - [west9b/F5-BIG-IP-POC](https://github.com/west9b/F5-BIG-IP-POC)
 - [amitlttwo/CVE-2021-22986](https://github.com/amitlttwo/CVE-2021-22986)
 - [huydung26/CVE-2021-22986](https://github.com/huydung26/CVE-2021-22986)
-- [whatheheckisthis/bigip-icontrol-rce-research](https://github.com/whatheheckisthis/bigip-icontrol-rce-research)
+- [whatheheckisthis/BigIP-iControl-RCE-Research](https://github.com/whatheheckisthis/BigIP-iControl-RCE-Research)
 
 ### CVE-2021-23017 (2021-06-01)
 
@@ -43980,6 +44109,13 @@
 </code>
 
 - [dldygnl/CVE-2021-24807](https://github.com/dldygnl/CVE-2021-24807)
+
+### CVE-2021-24884 (2021-10-25)
+
+<code>The Formidable Form Builder WordPress plugin before 4.09.05 allows to inject certain HTML Tags like &lt;audio&gt;,&lt;video&gt;,&lt;img&gt;,&lt;a&gt; and&lt;button&gt;.This could allow an unauthenticated, remote attacker to exploit a HTML-injection byinjecting a malicous link. The HTML-injection may trick authenticated users to follow the link. If the Link gets clicked, Javascript code can be executed. The vulnerability is due to insufficient sanitization of the &quot;data-frmverify&quot; tag for links in the web-based entry inspection page of affected systems. A successful exploitation incomibantion with CSRF could allow the attacker to perform arbitrary actions on an affected system with the privileges of the user. These actions include stealing the users account by changing their password or allowing attackers to submit their own code through an authenticated user resulting in Remote Code Execution. If an authenticated user who is able to edit Wordpress PHP Code in any kind, clicks the malicious link, PHP code can be edited.
+</code>
+
+- [S1lkys/CVE-2021-24884](https://github.com/S1lkys/CVE-2021-24884)
 
 ### CVE-2021-24891 (2021-11-23)
 
@@ -46266,6 +46402,13 @@
 
 - [lsw29475/CVE-2021-39863](https://github.com/lsw29475/CVE-2021-39863)
 - [WHS-SEGFAULT/CVE-2021-39863](https://github.com/WHS-SEGFAULT/CVE-2021-39863)
+
+### CVE-2021-40101 (2021-11-30)
+
+<code>An issue was discovered in Concrete CMS before 8.5.7. The Dashboard allows a user's password to be changed without a prompt for the current password.
+</code>
+
+- [S1lkys/CVE-2021-40101](https://github.com/S1lkys/CVE-2021-40101)
 
 ### CVE-2021-40113 (2021-11-04)
 
@@ -50134,6 +50277,13 @@
 
 - [ph4r05/ledger-app-monero-1.42-vuln](https://github.com/ph4r05/ledger-app-monero-1.42-vuln)
 
+### CVE-2020-6864 (2020-02-27)
+
+<code>ZTE E8820V3 router product is impacted by an information leak vulnerability. Attackers could use this vulnerability to to gain wireless passwords. After obtaining the wireless password, the attacker could collect information and attack the router.
+</code>
+
+- [gigachadusers/cve-2020-6864](https://github.com/gigachadusers/cve-2020-6864)
+
 ### CVE-2020-6888
 - [section-c/CVE-2020-6888](https://github.com/section-c/CVE-2020-6888)
 
@@ -51177,7 +51327,7 @@
 
 ### CVE-2020-11022 (2020-04-29)
 
-<code>In jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.
+<code>In jQuery starting with 1.12.0 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.
 </code>
 
 - [0xAJ2K/CVE-2020-11022-CVE-2020-11023](https://github.com/0xAJ2K/CVE-2020-11022-CVE-2020-11023)
@@ -51221,6 +51371,7 @@
 <code>An issue was discovered in XAMPP before 7.2.29, 7.3.x before 7.3.16 , and 7.4.x before 7.4.4 on Windows. An unprivileged user can change a .exe configuration in xampp-contol.ini for all users (including admins) to enable arbitrary command execution.
 </code>
 
+- [S1lkys/CVE-2020-11107](https://github.com/S1lkys/CVE-2020-11107)
 - [andripwn/CVE-2020-11107](https://github.com/andripwn/CVE-2020-11107)
 - [Mohnad-AL-saif/Mohnad-AL-saif-CVE-2020-11107-XAMPP-Local-Privilege-Escalation](https://github.com/Mohnad-AL-saif/Mohnad-AL-saif-CVE-2020-11107-XAMPP-Local-Privilege-Escalation)
 
@@ -51528,6 +51679,7 @@
 </code>
 
 - [enessakircolak/Windows-11-24h2-Kernel-Exploit](https://github.com/enessakircolak/Windows-11-24h2-Kernel-Exploit)
+- [S1lkys/Eneio64-LPE](https://github.com/S1lkys/Eneio64-LPE)
 - [enessakircolak/CVE-2020-12446](https://github.com/enessakircolak/CVE-2020-12446)
 
 ### CVE-2020-12593 (2020-11-18)
@@ -52402,6 +52554,13 @@
 </code>
 
 - [limerencee/cs4239-cve-2020-15873](https://github.com/limerencee/cs4239-cve-2020-15873)
+
+### CVE-2020-15906 (2020-10-22)
+
+<code>tiki-login.php in Tiki before 21.2 sets the admin password to a blank value after 50 invalid login attempts.
+</code>
+
+- [S1lkys/CVE-2020-15906](https://github.com/S1lkys/CVE-2020-15906)
 
 ### CVE-2020-15916 (2020-07-23)
 
@@ -53790,6 +53949,13 @@
 </code>
 
 - [shoucheng3/xuxueli__xxl-job_CVE-2020-29204_2-2-0](https://github.com/shoucheng3/xuxueli__xxl-job_CVE-2020-29204_2-2-0)
+
+### CVE-2020-29254 (2020-12-11)
+
+<code>TikiWiki 21.2 allows templates to be edited without CSRF protection. This could allow an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack and perform arbitrary actions on an affected system. The vulnerability is due to insufficient CSRF protections for the web-based management interface of the affected system. An attacker could exploit this vulnerability by persuading a user of the interface to follow a maliciously crafted link. A successful exploit could allow the attacker to perform arbitrary actions on an affected system with the privileges of the user. These action include allowing attackers to submit their own code through an authenticated user resulting in local file Inclusion. If an authenticated user who is able to edit TikiWiki templates visits an malicious website, template code can be edited.
+</code>
+
+- [S1lkys/CVE-2020-29254](https://github.com/S1lkys/CVE-2020-29254)
 
 ### CVE-2020-29364 (2020-11-30)
 
@@ -70221,13 +70387,6 @@
 </code>
 
 - [Axua/CVE-2006-1236](https://github.com/Axua/CVE-2006-1236)
-
-### CVE-2006-2369 (2006-05-15)
-
-<code>RealVNC 4.1.1, and other products that use RealVNC such as AdderLink IP and Cisco CallManager, allows remote attackers to bypass authentication via a request in which the client specifies an insecure security type such as &quot;Type 1 - None&quot;, which is accepted even if it is not offered by the server, as originally demonstrated using a long password.
-</code>
-
-- [hacker1337itme/CVE-2006-2369](https://github.com/hacker1337itme/CVE-2006-2369)
 
 ### CVE-2006-2842 (2006-06-06)
 
