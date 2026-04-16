@@ -65,6 +65,13 @@
 - [Yetazyyy/CVE-2026-0770](https://github.com/Yetazyyy/CVE-2026-0770)
 - [0xBlackash/CVE-2026-0770](https://github.com/0xBlackash/CVE-2026-0770)
 
+### CVE-2026-0827 (2026-04-15)
+
+<code>During an internal security assessment, a potential vulnerability was discovered in Lenovo Diagnostics and the HardwareScanAddin used in Lenovo Vantage that, during installation or when using hardware scan, could allow a local authenticated user to perform an arbitrary file write with elevated privileges.
+</code>
+
+- [ZeroMemoryEx/CVE-2026-0827](https://github.com/ZeroMemoryEx/CVE-2026-0827)
+
 ### CVE-2026-0828
 - [wutang700/STProcessMonitorBYOVD](https://github.com/wutang700/STProcessMonitorBYOVD)
 - [KOSEC-LLC/BYOVD-Research](https://github.com/KOSEC-LLC/BYOVD-Research)
@@ -281,6 +288,13 @@
 </code>
 
 - [adamshaikhma/CVE-2026-1844](https://github.com/adamshaikhma/CVE-2026-1844)
+
+### CVE-2026-1880 (2026-04-16)
+
+<code>An Incorrect Permission Assignment for Critical Resource vulnerability in the ASUS DriverHub update process allows privilege escalation due to improper protection of required execution resources during the validation phase, permitting a local user to make unprivileged modifications. This allows the altered resource to pass system checks and be executed with elevated privileges upon a user-initiated update.\nRefer to the 'Security Update for ASUS DriverHub' section on the ASUS Security Advisory for more information.
+</code>
+
+- [seokjohn/CVE-2026-1880](https://github.com/seokjohn/CVE-2026-1880)
 
 ### CVE-2026-1953 (2026-02-05)
 
@@ -522,7 +536,7 @@
 <code>A security flaw has been discovered in EasyCMS up to 1.6. The impacted element is an unknown function of the file /RbacuserAction.class.php of the component Request Parameter Handler. The manipulation of the argument _order results in sql injection. The attack can be launched remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.
 </code>
 
-- [snapdowgg/CVE-2026-3786](https://github.com/snapdowgg/CVE-2026-3786)
+- [Mefhika120/CVE-2026-3786](https://github.com/Mefhika120/CVE-2026-3786)
 
 ### CVE-2026-3796 (2026-03-09)
 
@@ -557,6 +571,7 @@
 
 - [joshuavanderpoll/CVE-2026-3891](https://github.com/joshuavanderpoll/CVE-2026-3891)
 - [Nxploited/CVE-2026-3891](https://github.com/Nxploited/CVE-2026-3891)
+- [AnggaTechI/Mass-Scanner-CVE-2026-3891](https://github.com/AnggaTechI/Mass-Scanner-CVE-2026-3891)
 
 ### CVE-2026-3909 (2026-03-12)
 
@@ -652,6 +667,13 @@
 - [min8282/CVE-2026-5027](https://github.com/min8282/CVE-2026-5027)
 - [EQSTLab/CVE-2026-5027](https://github.com/EQSTLab/CVE-2026-5027)
 - [0xBlackash/CVE-2026-5027](https://github.com/0xBlackash/CVE-2026-5027)
+
+### CVE-2026-5059 (2026-04-11)
+
+<code>aws-mcp-server AWS CLI Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of aws-mcp-server. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of the allowed commands list. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of the MCP server. Was ZDI-CAN-27969.
+</code>
+
+- [venom203020/CVE-2026-5059-poc](https://github.com/venom203020/CVE-2026-5059-poc)
 
 ### CVE-2026-5147 (2026-03-30)
 
@@ -3063,6 +3085,13 @@
 
 - [skoveit/CVE-2026-34200](https://github.com/skoveit/CVE-2026-34200)
 
+### CVE-2026-34220 (2026-03-31)
+
+<code>MikroORM is a TypeScript ORM for Node.js based on Data Mapper, Unit of Work and Identity Map patterns. Prior to versions 6.6.10 and 7.0.6, there is a SQL injection vulnerability when specially crafted objects are interpreted as raw SQL query fragments. This issue has been patched in versions 6.6.10 and 7.0.6.
+</code>
+
+- [EQSTLab/CVE-2026-34220](https://github.com/EQSTLab/CVE-2026-34220)
+
 ### CVE-2026-34227 (2026-03-31)
 
 <code>Sliver is a command and control framework that uses a custom Wireguard netstack. Prior to version 1.7.4, a single click on a malicious link gives an unauthenticated attacker immediate, silent control over every active C2 session or beacon, capable of exfiltrating all collected target data (e.g. SSH keys, ntds.dit) or destroying the entire compromised infrastructure, entirely through the operator's own browser. This issue has been patched in version 1.7.4.
@@ -3085,6 +3114,7 @@
 - [punitdarji/tomcat-cve-2026-34486](https://github.com/punitdarji/tomcat-cve-2026-34486)
 - [AirSkye/CVE-2026-34486-poc](https://github.com/AirSkye/CVE-2026-34486-poc)
 - [404-src/CVE-2026-34486](https://github.com/404-src/CVE-2026-34486)
+- [helGayhub233/CVE-2026-34486-Tribes](https://github.com/helGayhub233/CVE-2026-34486-Tribes)
 
 ### CVE-2026-34621 (2026-04-11)
 
@@ -3245,6 +3275,20 @@
 - [kengzzzz/CVE-2026-40175](https://github.com/kengzzzz/CVE-2026-40175)
 - [surri/audit-axios](https://github.com/surri/audit-axios)
 - [LeeKangHyun/axios-security-guide](https://github.com/LeeKangHyun/axios-security-guide)
+
+### CVE-2026-40176 (2026-04-15)
+
+<code>Composer is a dependency manager for PHP. Versions 1.0 through 2.2.26 and 2.3 through 2.9.5 contain a command injection vulnerability in the Perforce::generateP4Command() method, which constructs shell commands by interpolating user-supplied Perforce connection parameters (port, user, client) without proper escaping. An attacker can inject arbitrary commands through these values in a malicious composer.json declaring a Perforce VCS repository, leading to command execution in the context of the user running Composer, even if Perforce is not installed. VCS repositories are only loaded from the root composer.json or the composer config directory, so this cannot be exploited through composer.json files of packages installed as dependencies. Users are at risk if they run Composer commands on untrusted projects with attacker-supplied composer.json files. This issue has been fixed in Composer 2.2.27 (2.2 LTS) and 2.9.6 (mainline).
+</code>
+
+- [Saku0512/CVE-2026-40176-poc](https://github.com/Saku0512/CVE-2026-40176-poc)
+
+### CVE-2026-40261 (2026-04-15)
+
+<code>Composer is a dependency manager for PHP. Versions 1.0 through 2.2.26 and 2.3 through 2.9.5 contain a command injection vulnerability in the Perforce::syncCodeBase() method, which appends the $sourceReference parameter to a shell command without proper escaping, and additionally in the Perforce::generateP4Command() method as in GHSA-wg36-wvj6-r67p / CVE-2026-40176, which interpolates user-supplied Perforce connection parameters (port, user, client) from the source url field without proper escaping. An attacker can inject arbitrary commands through crafted source reference or source url values containing shell metacharacters, even if Perforce is not installed. Unlike CVE-2026-40176, the source reference and url are provided as part of package metadata, meaning any compromised or malicious Composer repository can serve package metadata declaring perforce as a source type with malicious values. This vulnerability is exploitable when installing or updating dependencies from source, including the default behavior when installing dev-prefixed versions. This issue has been fixed in Composer 2.2.27 (2.2 LTS) and 2.9.6 (mainline). If developers are unable to immediately update, they can avoid installing dependencies from source by using --prefer-dist or the preferred-install: dist config setting, and only use trusted Composer repositories as a workaround.
+</code>
+
+- [terminat0r7031/composer-CVE-2026-40261-CVE-2026-40176-PoC](https://github.com/terminat0r7031/composer-CVE-2026-40261-CVE-2026-40176-PoC)
 
 ### CVE-2026-40487
 - [Astaruf/CVE-2026-40487](https://github.com/Astaruf/CVE-2026-40487)
@@ -6967,6 +7011,7 @@
 - [BreakingRohit/CVE-2025-24893-PoC](https://github.com/BreakingRohit/CVE-2025-24893-PoC)
 - [TomKingori/xwiki-cve-2025-24893-exploit](https://github.com/TomKingori/xwiki-cve-2025-24893-exploit)
 - [nohack1212/CVE-2025-24893-](https://github.com/nohack1212/CVE-2025-24893-)
+- [rippsec/CVE-2025-24893-XWiki-SSTI-RCE](https://github.com/rippsec/CVE-2025-24893-XWiki-SSTI-RCE)
 
 ### CVE-2025-24963 (2025-02-04)
 
@@ -7583,6 +7628,7 @@
 - [0xDTC/Below-Logger-Symlink-Attack_CVE-2025-27591](https://github.com/0xDTC/Below-Logger-Symlink-Attack_CVE-2025-27591)
 - [0x00Jeff/CVE-2025-27591](https://github.com/0x00Jeff/CVE-2025-27591)
 - [Stp1t/CVE-2025-27591](https://github.com/Stp1t/CVE-2025-27591)
+- [rippsec/CVE-2025-27591-Meta-below-LPE](https://github.com/rippsec/CVE-2025-27591-Meta-below-LPE)
 
 ### CVE-2025-27607 (2025-03-07)
 
@@ -9693,7 +9739,6 @@
 </code>
 
 - [Nxploited/CVE-2025-47539](https://github.com/Nxploited/CVE-2025-47539)
-- [snapdowgg/CVE-2025-47539](https://github.com/snapdowgg/CVE-2025-47539)
 
 ### CVE-2025-47549 (2025-05-07)
 
@@ -10006,6 +10051,7 @@
 - [ankitpandey383/roundcube-cve-2025-49113-lab](https://github.com/ankitpandey383/roundcube-cve-2025-49113-lab)
 - [Evillm/CVE-2025-49113-PoC](https://github.com/Evillm/CVE-2025-49113-PoC)
 - [mooder1/CVE-2025-49113](https://github.com/mooder1/CVE-2025-49113)
+- [rippsec/CVE-2025-49113-Roundcube-RCE](https://github.com/rippsec/CVE-2025-49113-Roundcube-RCE)
 
 ### CVE-2025-49125 (2025-06-16)
 
@@ -14004,6 +14050,9 @@
 
 - [hexissam/CVE-2025-69295](https://github.com/hexissam/CVE-2025-69295)
 
+### CVE-2025-69428
+- [jasetpen/CVE-2025-69428](https://github.com/jasetpen/CVE-2025-69428)
+
 ### CVE-2025-69457
 - [Tagoletta/CVE-2025-69457](https://github.com/Tagoletta/CVE-2025-69457)
 
@@ -14200,6 +14249,9 @@
 </code>
 
 - [mathavamoorthi/CVE-2025-70899](https://github.com/mathavamoorthi/CVE-2025-70899)
+
+### CVE-2025-70962
+- [namaek2/CVE-2025-70962](https://github.com/namaek2/CVE-2025-70962)
 
 ### CVE-2025-70995 (2026-03-05)
 
@@ -15217,6 +15269,7 @@
 - [CyberBibs/SOC274---Palo-Alto-Networks-PAN-OS-Command-Injection-Vulnerability-Exploitation-CVE-2024-3400-](https://github.com/CyberBibs/SOC274---Palo-Alto-Networks-PAN-OS-Command-Injection-Vulnerability-Exploitation-CVE-2024-3400-)
 - [Yafiah-Darwesh/cs50-cyber-paloalto-oauth](https://github.com/Yafiah-Darwesh/cs50-cyber-paloalto-oauth)
 - [GhassanSabir/CVE-2024-3400-poc](https://github.com/GhassanSabir/CVE-2024-3400-poc)
+- [Zedocun/PAN-OS-CVE-2024-3400-Command-Injection-Investigation](https://github.com/Zedocun/PAN-OS-CVE-2024-3400-Command-Injection-Investigation)
 
 ### CVE-2024-3408 (2024-06-06)
 
@@ -34237,7 +34290,6 @@
 <code>An attacker can manipulate file upload params to enable paths traversal and under some circumstances this can lead to uploading a malicious file which can be used to perform Remote Code Execution.\nUsers are recommended to upgrade to versions Struts 2.5.33 or Struts 6.3.0.2 or greater to fix this issue.
 </code>
 
-- [minhbao15677/CVE-2023-50164](https://github.com/minhbao15677/CVE-2023-50164)
 - [jakabakos/CVE-2023-50164-Apache-Struts-RCE](https://github.com/jakabakos/CVE-2023-50164-Apache-Struts-RCE)
 - [bcdannyboy/CVE-2023-50164](https://github.com/bcdannyboy/CVE-2023-50164)
 - [dwisiswant0/cve-2023-50164-poc](https://github.com/dwisiswant0/cve-2023-50164-poc)
@@ -38457,48 +38509,6 @@
 
 - [FlaviuPopescu/CVE-2022-28986](https://github.com/FlaviuPopescu/CVE-2022-28986)
 
-### CVE-2022-29004 (2022-05-23)
-
-<code>Diary Management System v1.0 was discovered to contain a cross-site scripting (XSS) vulnerability via the Name parameter in search-result.php.
-</code>
-
-- [sudoninja-noob/CVE-2022-29004](https://github.com/sudoninja-noob/CVE-2022-29004)
-
-### CVE-2022-29005 (2022-05-23)
-
-<code>Multiple cross-site scripting (XSS) vulnerabilities in the component /obcs/user/profile.php of Online Birth Certificate System v1.2 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the fname or lname parameters.
-</code>
-
-- [sudoninja-noob/CVE-2022-29005](https://github.com/sudoninja-noob/CVE-2022-29005)
-
-### CVE-2022-29006 (2022-05-11)
-
-<code>Multiple SQL injection vulnerabilities via the username and password parameters in the Admin panel of Directory Management System v1.0 allows attackers to bypass authentication.
-</code>
-
-- [sudoninja-noob/CVE-2022-29006](https://github.com/sudoninja-noob/CVE-2022-29006)
-
-### CVE-2022-29007 (2022-05-11)
-
-<code>Multiple SQL injection vulnerabilities via the username and password parameters in the Admin panel of Dairy Farm Shop Management System v1.0 allows attackers to bypass authentication.
-</code>
-
-- [sudoninja-noob/CVE-2022-29007](https://github.com/sudoninja-noob/CVE-2022-29007)
-
-### CVE-2022-29008 (2022-05-11)
-
-<code>An insecure direct object reference (IDOR) vulnerability in the viewid parameter of Bus Pass Management System v1.0 allows attackers to access sensitive information.
-</code>
-
-- [sudoninja-noob/CVE-2022-29008](https://github.com/sudoninja-noob/CVE-2022-29008)
-
-### CVE-2022-29009 (2022-05-11)
-
-<code>Multiple SQL injection vulnerabilities via the username and password parameters in the Admin panel of Cyber Cafe Management System Project v1.0 allows attackers to bypass authentication.
-</code>
-
-- [sudoninja-noob/CVE-2022-29009](https://github.com/sudoninja-noob/CVE-2022-29009)
-
 ### CVE-2022-29056 (2023-03-09)
 
 <code>A improper restriction of excessive authentication attempts vulnerability [CWE-307] in Fortinet FortiMail version 6.4.0, version 6.2.0 through 6.2.4 and before 6.0.9 allows  a remote unauthenticated attacker to partially exhaust CPU and memory via sending numerous HTTP requests to the login form.
@@ -41219,13 +41229,6 @@
 
 - [Halcy0nic/CVE-2022-43343](https://github.com/Halcy0nic/CVE-2022-43343)
 
-### CVE-2022-43369 (2022-12-06)
-
-<code>AutoTaxi Stand Management System v1.0 was discovered to contain a cross-site scripting (XSS) vulnerability via the component search.php.
-</code>
-
-- [sudoninja-noob/CVE-2022-43369](https://github.com/sudoninja-noob/CVE-2022-43369)
-
 ### CVE-2022-43571 (2022-11-03)
 
 <code>In Splunk Enterprise versions below 8.2.9, 8.1.12, and 9.0.2, an authenticated user can execute arbitrary code through the dashboard PDF generation component.\n\n
@@ -41473,13 +41476,6 @@
 
 - [martinvks/CVE-2022-45059-demo](https://github.com/martinvks/CVE-2022-45059-demo)
 
-### CVE-2022-45217 (2022-12-07)
-
-<code>A cross-site scripting (XSS) vulnerability in Book Store Management System v1.0.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Level parameter under the Add New System User module.
-</code>
-
-- [sudoninja-noob/CVE-2022-45217](https://github.com/sudoninja-noob/CVE-2022-45217)
-
 ### CVE-2022-45265
 - [maikroservice/CVE-2022-45265](https://github.com/maikroservice/CVE-2022-45265)
 
@@ -41578,20 +41574,6 @@
 
 - [yerodin/CVE-2022-45701](https://github.com/yerodin/CVE-2022-45701)
 - [geniuszly/CVE-2022-45701](https://github.com/geniuszly/CVE-2022-45701)
-
-### CVE-2022-45728 (2023-01-12)
-
-<code>Doctor Appointment Management System v1.0.0 was discovered to contain a cross-site scripting (XSS) vulnerability.
-</code>
-
-- [sudoninja-noob/CVE-2022-45728](https://github.com/sudoninja-noob/CVE-2022-45728)
-
-### CVE-2022-45729 (2023-01-12)
-
-<code>A cross-site scripting (XSS) vulnerability in Doctor Appointment Management System v1.0.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Employee ID parameter.
-</code>
-
-- [sudoninja-noob/CVE-2022-45729](https://github.com/sudoninja-noob/CVE-2022-45729)
 
 ### CVE-2022-45770 (2023-01-26)
 
@@ -41794,20 +41776,6 @@
 - [galoget/ResponsiveFileManager-CVE-2022-46604](https://github.com/galoget/ResponsiveFileManager-CVE-2022-46604)
 - [CyberQuestor-infosec/CVE-2022-46604-Responsive-File-Manager](https://github.com/CyberQuestor-infosec/CVE-2022-46604-Responsive-File-Manager)
 
-### CVE-2022-46622 (2023-01-12)
-
-<code>A cross-site scripting (XSS) vulnerability in Judging Management System v1.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the firstname parameter.
-</code>
-
-- [sudoninja-noob/CVE-2022-46622](https://github.com/sudoninja-noob/CVE-2022-46622)
-
-### CVE-2022-46623 (2023-01-12)
-
-<code>Judging Management System v1.0.0 was discovered to contain a SQL injection vulnerability via the username parameter.
-</code>
-
-- [sudoninja-noob/CVE-2022-46623](https://github.com/sudoninja-noob/CVE-2022-46623)
-
 ### CVE-2022-46638
 - [naonymous101/CVE-2022-46638](https://github.com/naonymous101/CVE-2022-46638)
 
@@ -41853,13 +41821,6 @@
 </code>
 
 - [dest-3/CVE-2022-47052](https://github.com/dest-3/CVE-2022-47052)
-
-### CVE-2022-47102 (2023-01-12)
-
-<code>A cross-site scripting (XSS) vulnerability in Student Study Center Management System V 1.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the name parameter.
-</code>
-
-- [sudoninja-noob/CVE-2022-47102](https://github.com/sudoninja-noob/CVE-2022-47102)
 
 ### CVE-2022-47130 (2023-02-03)
 
@@ -42844,6 +42805,7 @@
 - [halissha/CVE-2021-3156](https://github.com/halissha/CVE-2021-3156)
 - [sharkmoos/Baron-Samedit](https://github.com/sharkmoos/Baron-Samedit)
 - [chenaotian/CVE-2021-3156](https://github.com/chenaotian/CVE-2021-3156)
+- [ret2basic/SudoScience](https://github.com/ret2basic/SudoScience)
 - [RodricBr/CVE-2021-3156](https://github.com/RodricBr/CVE-2021-3156)
 - [ypl6/heaplens](https://github.com/ypl6/heaplens)
 - [q77190858/CVE-2021-3156](https://github.com/q77190858/CVE-2021-3156)
@@ -47178,7 +47140,6 @@
 - [Areeba-Zehra-Jafri/CVE-2021-41773---Apache-Path-Traversal---RCE](https://github.com/Areeba-Zehra-Jafri/CVE-2021-41773---Apache-Path-Traversal---RCE)
 - [sobanahmed6061/CVE-2021-41773-RedTeam](https://github.com/sobanahmed6061/CVE-2021-41773-RedTeam)
 - [abds059/APACHE-PATH-TRAVERSAL-RCE-CVE-2021-41773-](https://github.com/abds059/APACHE-PATH-TRAVERSAL-RCE-CVE-2021-41773-)
-- [snapdowgg/CVE-2021-41773](https://github.com/snapdowgg/CVE-2021-41773)
 - [Kouf320/attacker-lab-cve-2017-5638-cve-2021-41773-paper](https://github.com/Kouf320/attacker-lab-cve-2017-5638-cve-2021-41773-paper)
 
 ### CVE-2021-41784 (2022-08-29)
