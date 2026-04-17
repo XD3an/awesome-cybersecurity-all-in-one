@@ -47,6 +47,7 @@
 
 - [whattheslime/CVE-2026-0740](https://github.com/whattheslime/CVE-2026-0740)
 - [xShadow-Here/CVE-2026-0740](https://github.com/xShadow-Here/CVE-2026-0740)
+- [0xgh057r3c0n/CVE-2026-0740](https://github.com/0xgh057r3c0n/CVE-2026-0740)
 
 ### CVE-2026-0766 (2026-01-23)
 
@@ -232,7 +233,7 @@
 <code>The User Registration &amp; Membership – Custom Registration Form Builder, Custom Login Form, User Profile, Content Restriction &amp; Membership Plugin plugin for WordPress is vulnerable to improper privilege management in all versions up to, and including, 5.1.2. This is due to the plugin accepting a user-supplied role during membership registration without properly enforcing a server-side allowlist. This makes it possible for unauthenticated attackers to create administrator accounts by supplying a role value during membership registration.
 </code>
 
-- [dreamboyim66-boop/CVE-2026-1492-POC](https://github.com/dreamboyim66-boop/CVE-2026-1492-POC)
+- [imad-z1/CVE-2026-1492-POC](https://github.com/imad-z1/CVE-2026-1492-POC)
 - [the8frust/CVE-2026-1492](https://github.com/the8frust/CVE-2026-1492)
 
 ### CVE-2026-1529 (2026-02-09)
@@ -3306,6 +3307,7 @@
 - [0xBlackash/CVE-2026-40175](https://github.com/0xBlackash/CVE-2026-40175)
 - [surri/audit-axios](https://github.com/surri/audit-axios)
 - [LeeKangHyun/axios-security-guide](https://github.com/LeeKangHyun/axios-security-guide)
+- [pjt3591oo/CVE-2026-40175-poc](https://github.com/pjt3591oo/CVE-2026-40175-poc)
 
 ### CVE-2026-40176 (2026-04-15)
 
@@ -3313,6 +3315,7 @@
 </code>
 
 - [Saku0512/CVE-2026-40176-poc](https://github.com/Saku0512/CVE-2026-40176-poc)
+- [daptheHuman/cve-2026-40176-cve-2026-40261](https://github.com/daptheHuman/cve-2026-40176-cve-2026-40261)
 
 ### CVE-2026-40261 (2026-04-15)
 
@@ -26846,13 +26849,6 @@
 
 - [josemlwdf/CVE-2023-5965](https://github.com/josemlwdf/CVE-2023-5965)
 
-### CVE-2023-5966 (2023-11-30)
-
-<code>An authenticated privileged attacker could upload a specially crafted zip to the EspoCRM server in version 7.2.5, via the extension deployment form, which could lead to arbitrary PHP code execution.
-</code>
-
-- [ll104567/cve-2023-5966](https://github.com/ll104567/cve-2023-5966)
-
 ### CVE-2023-6000 (2024-01-01)
 
 <code>The Popup Builder WordPress plugin before 4.2.3 does not prevent simple visitors from updating existing popups, and injecting raw JavaScript in them, which could lead to Stored XSS attacks.
@@ -27430,6 +27426,7 @@
 - [infobyte/CVE-2023-21036](https://github.com/infobyte/CVE-2023-21036)
 - [notaSWE/gocropalypse](https://github.com/notaSWE/gocropalypse)
 - [lordofpipes/acropadetect](https://github.com/lordofpipes/acropadetect)
+- [PolitoInc/XWFAcropalypse](https://github.com/PolitoInc/XWFAcropalypse)
 
 ### CVE-2023-21086 (2023-04-19)
 
@@ -47114,7 +47111,6 @@
 - [skentagon/CVE-2021-41773](https://github.com/skentagon/CVE-2021-41773)
 - [zer0qs/CVE-2021-41773](https://github.com/zer0qs/CVE-2021-41773)
 - [bernardas/netsec-polygon](https://github.com/bernardas/netsec-polygon)
-- [CalfCrusher/Path-traversal-RCE-Apache-2.4.49-2.4.50-Exploit](https://github.com/CalfCrusher/Path-traversal-RCE-Apache-2.4.49-2.4.50-Exploit)
 - [Chocapikk/CVE-2021-41773](https://github.com/Chocapikk/CVE-2021-41773)
 - [wangfly-me/Apache_Penetration_Tool](https://github.com/wangfly-me/Apache_Penetration_Tool)
 - [anldori/CVE-2021-41773-Scanner](https://github.com/anldori/CVE-2021-41773-Scanner)
