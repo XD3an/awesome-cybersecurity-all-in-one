@@ -1077,6 +1077,7 @@
 - [bamov970/CVE-2026-21858](https://github.com/bamov970/CVE-2026-21858)
 - [Yati2/Ni8mare-CVE-2026-21858](https://github.com/Yati2/Ni8mare-CVE-2026-21858)
 - [kaleth4/CVE-2026-21858](https://github.com/kaleth4/CVE-2026-21858)
+- [masterwok/PoC-CVE-2026-21858](https://github.com/masterwok/PoC-CVE-2026-21858)
 
 ### CVE-2026-21876 (2026-01-08)
 
@@ -1173,6 +1174,13 @@
 </code>
 
 - [JivaSecurity/DOLIBARR-RCE-CVE-2026-22666](https://github.com/JivaSecurity/DOLIBARR-RCE-CVE-2026-22666)
+
+### CVE-2026-22679 (2026-04-07)
+
+<code>Weaver (Fanwei) E-cology 10.0 versions prior to 20260312 contain an unauthenticated remote code execution vulnerability in the /papi/esearch/data/devops/dubboApi/debug/method endpoint that allows attackers to execute arbitrary commands by invoking exposed debug functionality. Attackers can craft POST requests with attacker-controlled interfaceName and methodName parameters to reach command-execution helpers and achieve arbitrary command execution on the system. Exploitation evidence was first observed by the Shadowserver Foundation on 2026-03-31 (UTC).
+</code>
+
+- [keraattin/CVE-2026-22679](https://github.com/keraattin/CVE-2026-22679)
 
 ### CVE-2026-22686 (2026-01-13)
 
@@ -2409,6 +2417,7 @@
 - [0xW1LD/CVE-2026-29000](https://github.com/0xW1LD/CVE-2026-29000)
 - [yasirr10/CVE-2026-29000](https://github.com/yasirr10/CVE-2026-29000)
 - [Gajraj238/CVE-2026-29000](https://github.com/Gajraj238/CVE-2026-29000)
+- [cipher1x1/CVE-2026-29000](https://github.com/cipher1x1/CVE-2026-29000)
 
 ### CVE-2026-29041 (2026-03-06)
 
@@ -2961,6 +2970,13 @@
 
 - [danwulff/astro_CVE-2026-33532](https://github.com/danwulff/astro_CVE-2026-33532)
 
+### CVE-2026-33555 (2026-04-13)
+
+<code>An issue was discovered in HAProxy before 3.3.6. The HTTP/3 parser does not check that the received body length matches a previously announced content-length when the stream is closed via a frame with an empty payload. This can cause desynchronization issues with the backend server and could be used for request smuggling. The earliest affected version is 2.6.
+</code>
+
+- [r3verii/CVE-2026-33555](https://github.com/r3verii/CVE-2026-33555)
+
 ### CVE-2026-33579 (2026-03-31)
 
 <code>OpenClaw before 2026.3.28 contains a privilege escalation vulnerability in the /pair approve command path that fails to forward caller scopes into the core approval check. A caller with pairing privileges but without admin privileges can approve pending device requests asking for broader scopes including admin access by exploiting the missing scope validation in extensions/device-pair/index.ts and src/infra/device-pairing.ts.
@@ -3000,6 +3016,13 @@
 </code>
 
 - [redyank/CVE-2026-33752](https://github.com/redyank/CVE-2026-33752)
+
+### CVE-2026-33824 (2026-04-14)
+
+<code>Double free in Windows IKE Extension allows an unauthorized attacker to execute code over a network.
+</code>
+
+- [z3r0h3ro/CVE-2026-33824](https://github.com/z3r0h3ro/CVE-2026-33824)
 
 ### CVE-2026-33868 (2026-03-27)
 
@@ -3203,6 +3226,15 @@
 - [BishopFox/CVE-2026-35616-check](https://github.com/BishopFox/CVE-2026-35616-check)
 - [keraattin/CVE-2026-35616](https://github.com/keraattin/CVE-2026-35616)
 
+### CVE-2026-37748
+- [menevarad007/CVE-2026-37748](https://github.com/menevarad007/CVE-2026-37748)
+
+### CVE-2026-37749
+- [menevarad007/CVE-2026-37749](https://github.com/menevarad007/CVE-2026-37749)
+
+### CVE-2026-37750
+- [menevarad007/CVE-2026-37750](https://github.com/menevarad007/CVE-2026-37750)
+
 ### CVE-2026-39324 (2026-04-07)
 
 <code>Rack::Session is a session management implementation for Rack. From 2.0.0 to before 2.1.2, Rack::Session::Cookie incorrectly handles decryption failures when configured with secrets:. If cookie decryption fails, the implementation falls back to a default decoder instead of rejecting the cookie. This allows an unauthenticated attacker to supply a crafted session cookie that is accepted as valid session data without knowledge of any configured secret. Because this mechanism is used to load session state, an attacker can manipulate session contents and potentially gain unauthorized access. This vulnerability is fixed in 2.1.2.
@@ -3272,7 +3304,6 @@
 </code>
 
 - [0xBlackash/CVE-2026-40175](https://github.com/0xBlackash/CVE-2026-40175)
-- [kengzzzz/CVE-2026-40175](https://github.com/kengzzzz/CVE-2026-40175)
 - [surri/audit-axios](https://github.com/surri/audit-axios)
 - [LeeKangHyun/axios-security-guide](https://github.com/LeeKangHyun/axios-security-guide)
 
@@ -5106,6 +5137,7 @@
 - [popyue/CVE-2025-8110](https://github.com/popyue/CVE-2025-8110)
 - [NetsecBandit/CVE-2025-8110-Exploit](https://github.com/NetsecBandit/CVE-2025-8110-Exploit)
 - [X4BROZER/CVE-2025-8110](https://github.com/X4BROZER/CVE-2025-8110)
+- [hassan-hamadi/CVE-2025-8110-Silentium-HTB](https://github.com/hassan-hamadi/CVE-2025-8110-Silentium-HTB)
 
 ### CVE-2025-8191 (2025-07-26)
 
@@ -6229,6 +6261,13 @@
 - [renat0z3r0/notepadpp-supply-chain-iocs](https://github.com/renat0z3r0/notepadpp-supply-chain-iocs)
 - [George0Papasotiriou/CVE-2025-15556-Notepad-WinGUp-Updater-RCE](https://github.com/George0Papasotiriou/CVE-2025-15556-Notepad-WinGUp-Updater-RCE)
 
+### CVE-2025-15602 (2026-03-06)
+
+<code>Snipe-IT versions prior to 8.3.7 contain sensitive user attributes related to account privileges that are insufficiently protected against mass assignment. An authenticated, low-privileged user can craft a malicious API request to modify restricted fields of another user account, including the Super Admin account. By changing the email address of the Super Admin and triggering a password reset, an attacker can fully take over the Super Admin account, resulting in complete administrative control of the Snipe-IT instance.
+</code>
+
+- [Nxvh1337/CVE-2025-15602-PoC](https://github.com/Nxvh1337/CVE-2025-15602-PoC)
+
 ### CVE-2025-20029 (2025-02-05)
 
 <code>Command injection vulnerability exists in iControl REST and BIG-IP TMOS Shell (tmsh) save command, which may allow an authenticated attacker to execute arbitrary system commands.\n\n \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
@@ -7018,7 +7057,7 @@
 <code>Vitest is a testing framework powered by Vite. The `__screenshot-error` handler on the browser mode HTTP server that responds any file on the file system. Especially if the server is exposed on the network by `browser.api.host: true`, an attacker can send a request to that handler from remote to get the content of arbitrary files.This `__screenshot-error` handler on the browser mode HTTP server responds any file on the file system. This code was added by commit `2d62051`. Users explicitly exposing the browser mode server to the network by `browser.api.host: true` may get any files exposed. This issue has been addressed in versions 2.1.9 and 3.0.4. Users are advised to upgrade. There are no known workarounds for this vulnerability.
 </code>
 
-- [0xdeviner/CVE-2025-24963](https://github.com/0xdeviner/CVE-2025-24963)
+- [hiteshpatra/CVE-2025-24963](https://github.com/hiteshpatra/CVE-2025-24963)
 
 ### CVE-2025-24971 (2025-02-04)
 
@@ -12217,6 +12256,7 @@
 - [jwsly12/CVE-2025-58434-59528-htb-ctf](https://github.com/jwsly12/CVE-2025-58434-59528-htb-ctf)
 - [kartik2005221/CVE-2025-58434-poc](https://github.com/kartik2005221/CVE-2025-58434-poc)
 - [kartik2005221/CVE-2025-58434-AND-59528-POC](https://github.com/kartik2005221/CVE-2025-58434-AND-59528-POC)
+- [honney336/CVE-2025-58434_CVE-2025-59528](https://github.com/honney336/CVE-2025-58434_CVE-2025-59528)
 - [r3nsi15/Flowise-CVE-2025-58434-PasswordReset](https://github.com/r3nsi15/Flowise-CVE-2025-58434-PasswordReset)
 
 ### CVE-2025-58440
@@ -20138,6 +20178,7 @@
 - [Admin9961/CVE-2024-30088](https://github.com/Admin9961/CVE-2024-30088)
 - [Justintroup85/exploits-forsale-collateral-damage](https://github.com/Justintroup85/exploits-forsale-collateral-damage)
 - [ramzihafiz/cve-2024-30088-binary](https://github.com/ramzihafiz/cve-2024-30088-binary)
+- [repo4Chu/CVE-2024-30088__Windows-TOCTOU-exploit](https://github.com/repo4Chu/CVE-2024-30088__Windows-TOCTOU-exploit)
 
 ### CVE-2024-30090 (2024-06-11)
 
@@ -22412,6 +22453,7 @@
 - [Bhanunamikaze/CVE-2024-42009](https://github.com/Bhanunamikaze/CVE-2024-42009)
 - [DaniTheHack3r/CVE-2024-42009-PoC](https://github.com/DaniTheHack3r/CVE-2024-42009-PoC)
 - [Shubhankargupta691/CVE-2024-42009](https://github.com/Shubhankargupta691/CVE-2024-42009)
+- [ZaidArif47/CVE-2024-42009](https://github.com/ZaidArif47/CVE-2024-42009)
 
 ### CVE-2024-42049 (2024-07-28)
 
@@ -24496,7 +24538,7 @@
 - [yangyanglo/CVE-2024-53677](https://github.com/yangyanglo/CVE-2024-53677)
 - [c4oocO/CVE-2024-53677-Docker](https://github.com/c4oocO/CVE-2024-53677-Docker)
 - [dustblessnotdust/CVE-2024-53677-S2-067-thread](https://github.com/dustblessnotdust/CVE-2024-53677-S2-067-thread)
-- [0xdeviner/CVE-2024-53677](https://github.com/0xdeviner/CVE-2024-53677)
+- [hiteshpatra/CVE-2024-53677](https://github.com/hiteshpatra/CVE-2024-53677)
 - [EQSTLab/CVE-2024-53677](https://github.com/EQSTLab/CVE-2024-53677)
 - [0xPThree/struts_cve-2024-53677](https://github.com/0xPThree/struts_cve-2024-53677)
 - [punitdarji/Apache-struts-cve-2024-53677](https://github.com/punitdarji/Apache-struts-cve-2024-53677)
@@ -42805,7 +42847,6 @@
 - [halissha/CVE-2021-3156](https://github.com/halissha/CVE-2021-3156)
 - [sharkmoos/Baron-Samedit](https://github.com/sharkmoos/Baron-Samedit)
 - [chenaotian/CVE-2021-3156](https://github.com/chenaotian/CVE-2021-3156)
-- [ret2basic/SudoScience](https://github.com/ret2basic/SudoScience)
 - [RodricBr/CVE-2021-3156](https://github.com/RodricBr/CVE-2021-3156)
 - [ypl6/heaplens](https://github.com/ypl6/heaplens)
 - [q77190858/CVE-2021-3156](https://github.com/q77190858/CVE-2021-3156)
@@ -48253,6 +48294,7 @@
 - [lathika-3006/Solar-exploiting-log-4j](https://github.com/lathika-3006/Solar-exploiting-log-4j)
 - [Lavanya2085/solar-exploiting-log4j](https://github.com/Lavanya2085/solar-exploiting-log4j)
 - [danieljosmariyan7254/TryHackMe-Solar-exploiting-log4j-](https://github.com/danieljosmariyan7254/TryHackMe-Solar-exploiting-log4j-)
+- [jdormannn/SecureOps-Lab](https://github.com/jdormannn/SecureOps-Lab)
 - [joaovicdev/EXPLOIT-CVE-2021-44228](https://github.com/joaovicdev/EXPLOIT-CVE-2021-44228)
 
 ### CVE-2021-44255 (2022-01-31)
@@ -60912,6 +60954,7 @@
 
 ### CVE-2018-10993
 - [nicolastsk/cve-2018-10993](https://github.com/nicolastsk/cve-2018-10993)
+- [azeus7/pt](https://github.com/azeus7/pt)
 
 ### CVE-2018-11235 (2018-05-30)
 
@@ -69780,6 +69823,7 @@
 - [FredBrave/CVE-2010-2075-UnrealIRCd-3.2.8.1](https://github.com/FredBrave/CVE-2010-2075-UnrealIRCd-3.2.8.1)
 - [JoseLRC97/UnrealIRCd-3.2.8.1-Backdoor-Command-Execution](https://github.com/JoseLRC97/UnrealIRCd-3.2.8.1-Backdoor-Command-Execution)
 - [earthbendergara/unrealircd3.2.8.1-local-exploit](https://github.com/earthbendergara/unrealircd3.2.8.1-local-exploit)
+- [Tc-XoNoR/CVE-2010-2075](https://github.com/Tc-XoNoR/CVE-2010-2075)
 
 ### CVE-2010-2387 (2012-12-21)
 
