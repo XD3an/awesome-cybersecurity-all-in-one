@@ -213,6 +213,7 @@
 </code>
 
 - [Nxploited/CVE-2026-1405](https://github.com/Nxploited/CVE-2026-1405)
+- [AnggaTechI/Mass-Scanner-CVE-2026-1405](https://github.com/AnggaTechI/Mass-Scanner-CVE-2026-1405)
 
 ### CVE-2026-1434 (2026-02-27)
 
@@ -243,6 +244,13 @@
 
 - [0x240x23elu/CVE-2026-1529](https://github.com/0x240x23elu/CVE-2026-1529)
 - [ackemed/CVE-2026-1529-PoC-keycloak-unauthorized-registration-via-improper-invitation-token-validation](https://github.com/ackemed/CVE-2026-1529-PoC-keycloak-unauthorized-registration-via-improper-invitation-token-validation)
+
+### CVE-2026-1555 (2026-04-15)
+
+<code>The WebStack theme for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the io_img_upload() function in all versions up to, and including, 1.2024. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
+</code>
+
+- [Nxploited/CVE-2026-1555](https://github.com/Nxploited/CVE-2026-1555)
 
 ### CVE-2026-1560 (2026-02-11)
 
@@ -388,6 +396,7 @@
 </code>
 
 - [Nxploited/CVE-2026-2631](https://github.com/Nxploited/CVE-2026-2631)
+- [AnggaTechI/Mass-Scanner-CVE-2026-2631](https://github.com/AnggaTechI/Mass-Scanner-CVE-2026-2631)
 
 ### CVE-2026-2636 (2026-02-25)
 
@@ -767,6 +776,9 @@
 </code>
 
 - [Pixel-DefaultBR/CVE-2026-6227](https://github.com/Pixel-DefaultBR/CVE-2026-6227)
+
+### CVE-2026-6355
+- [Penguinsecq/CVE-2026-6355](https://github.com/Penguinsecq/CVE-2026-6355)
 
 ### CVE-2026-7731
 - [SimoesCTT/CTT-Refraction-Vortex-CVE-2026-7731-](https://github.com/SimoesCTT/CTT-Refraction-Vortex-CVE-2026-7731-)
@@ -1326,7 +1338,11 @@
 
 - [lukasz-rybak/CVE-2026-23499](https://github.com/lukasz-rybak/CVE-2026-23499)
 
-### CVE-2026-23500
+### CVE-2026-23500 (2026-04-17)
+
+<code>Dolibarr is an enterprise resource planning (ERP) and customer relationship management (CRM) software package. In versions prior to 23.0.0 , the ODT to PDF conversion process in odf.php concatenates the MAIN_ODT_AS_PDF configuration constant directly into a shell command passed to exec() without sanitization. An authenticated administrator can inject arbitrary OS commands via this constant using command separators, achieving remote code execution as the web server user when any ODT template is generated. This issue has been fixed in version 23.0.0.
+</code>
+
 - [lukasz-rybak/CVE-2026-23500](https://github.com/lukasz-rybak/CVE-2026-23500)
 
 ### CVE-2026-23520 (2026-01-15)
@@ -1930,13 +1946,6 @@
 
 - [gregk4sec/cve-2026-25854](https://github.com/gregk4sec/cve-2026-25854)
 
-### CVE-2026-25857 (2026-02-07)
-
-<code>Tenda G300-F router firmware version 16.01.14.2 and prior contain an OS command injection vulnerability in the WAN diagnostic functionality (formSetWanDiag). The implementation constructs a shell command that invokes curl and incorporates attacker-controlled input into the command line without adequate neutralization. As a result, a remote attacker with access to the affected management interface can inject additional shell syntax and execute arbitrary commands on the device with the privileges of the management process.
-</code>
-
-- [eeeeeeeeeevan/CVE-2026-25857](https://github.com/eeeeeeeeeevan/CVE-2026-25857)
-
 ### CVE-2026-25890 (2026-02-09)
 
 <code>File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit files. Prior to 2.57.1, an authenticated user can bypass the application's &quot;Disallow&quot; file path rules by modifying the request URL. By adding multiple slashes (e.g., //private/) to the path, the authorization check fails to match the rule, while the underlying filesystem resolves the path correctly, granting unauthorized access to restricted files. This vulnerability is fixed in 2.57.1.
@@ -2155,6 +2164,7 @@
 </code>
 
 - [vognik/CVE-2026-26980](https://github.com/vognik/CVE-2026-26980)
+- [dinosn/ghost-cve-2026-26980](https://github.com/dinosn/ghost-cve-2026-26980)
 
 ### CVE-2026-26988 (2026-02-20)
 
@@ -2886,6 +2896,7 @@
 </code>
 
 - [Twinson333/cve-2026-33032-scanner](https://github.com/Twinson333/cve-2026-33032-scanner)
+- [Shreda/CVE-2026-33032-nginx-ui-vuln-lab](https://github.com/Shreda/CVE-2026-33032-nginx-ui-vuln-lab)
 
 ### CVE-2026-33033 (2026-04-07)
 
@@ -2997,6 +3008,13 @@
 ### CVE-2026-33656
 - [JivaSecurity/ESPOCRM-RCE-POC-CVE-2026-33656](https://github.com/JivaSecurity/ESPOCRM-RCE-POC-CVE-2026-33656)
 
+### CVE-2026-33671 (2026-03-26)
+
+<code>Picomatch is a glob matcher written JavaScript. Versions prior to 4.0.4, 3.0.2, and 2.3.2 are vulnerable to Regular Expression Denial of Service (ReDoS) when processing crafted extglob patterns. Certain patterns using extglob quantifiers such as `+()` and `*()`, especially when combined with overlapping alternatives or nested extglobs, are compiled into regular expressions that can exhibit catastrophic backtracking on non-matching input. Applications are impacted when they allow untrusted users to supply glob patterns that are passed to `picomatch` for compilation or matching. In those cases, an attacker can cause excessive CPU consumption and block the Node.js event loop, resulting in a denial of service. Applications that only use trusted, developer-controlled glob patterns are much less likely to be exposed in a security-relevant way. This issue is fixed in picomatch 4.0.4, 3.0.2 and 2.3.2. Users should upgrade to one of these versions or later, depending on their supported release line. If upgrading is not immediately possible, avoid passing untrusted glob patterns to `picomatch`. Possible mitigations include disabling extglob support for untrusted patterns by using `noextglob: true`, rejecting or sanitizing patterns containing nested extglobs or extglob quantifiers such as `+()` and `*()`, enforcing strict allowlists for accepted pattern syntax, running matching in an isolated worker or separate process with time and resource limits, and applying application-level request throttling and input validation for any endpoint that accepts glob patterns.
+</code>
+
+- [BeLazy167/next-picomatch-cve-repro](https://github.com/BeLazy167/next-picomatch-cve-repro)
+
 ### CVE-2026-33693 (2026-03-27)
 
 <code>Lemmy is a link aggregator and forum for the fediverse. Prior to version 0.7.0-beta.9, the `v4_is_invalid()` function in `activitypub-federation-rust` (`src/utils.rs`) does not check for `Ipv4Addr::UNSPECIFIED` (0.0.0.0). An unauthenticated attacker controlling a remote domain can point it to 0.0.0.0, bypass the SSRF protection introduced by the fix for CVE-2025-25194 (GHSA-7723-35v7-qcxw), and reach localhost services on the target server. Version 0.7.0-beta.9 patches the issue.
@@ -3024,6 +3042,13 @@
 </code>
 
 - [z3r0h3ro/CVE-2026-33824](https://github.com/z3r0h3ro/CVE-2026-33824)
+
+### CVE-2026-33825 (2026-04-14)
+
+<code>Insufficient granularity of access control in Microsoft Defender allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [Letlaka/redsun-bluehammer-undefend-detection-pack](https://github.com/Letlaka/redsun-bluehammer-undefend-detection-pack)
 
 ### CVE-2026-33868 (2026-03-27)
 
@@ -3149,6 +3174,7 @@
 - [eduardorossi84/CVE-2026-34621-POC](https://github.com/eduardorossi84/CVE-2026-34621-POC)
 - [KeulenR01/Remediate-AdobeAcrobat-CVE-2026-34621](https://github.com/KeulenR01/Remediate-AdobeAcrobat-CVE-2026-34621)
 - [NULL200OK/cve_2026_34621_advanced](https://github.com/NULL200OK/cve_2026_34621_advanced)
+- [ercihan/CVE-2026-34621_PDF_SAMPLE](https://github.com/ercihan/CVE-2026-34621_PDF_SAMPLE)
 
 ### CVE-2026-34724 (2026-04-08)
 
@@ -3230,7 +3256,11 @@
 ### CVE-2026-37748
 - [menevarad007/CVE-2026-37748](https://github.com/menevarad007/CVE-2026-37748)
 
-### CVE-2026-37749
+### CVE-2026-37749 (2026-04-17)
+
+<code>A SQL injection vulnerability in CodeAstro Simple Attendance Management System v1.0 allows remote unauthenticated attackers to bypass authentication via the username parameter in index.php.
+</code>
+
 - [menevarad007/CVE-2026-37749](https://github.com/menevarad007/CVE-2026-37749)
 
 ### CVE-2026-37750
@@ -3271,6 +3301,13 @@
 
 - [Lechansky/CVE-2026-39808](https://github.com/Lechansky/CVE-2026-39808)
 - [samu-delucas/CVE-2026-39808](https://github.com/samu-delucas/CVE-2026-39808)
+
+### CVE-2026-39842 (2026-04-14)
+
+<code>OpenRemote is an open-source IoT platform. Versions 1.21.0 and below contain two interrelated expression injection vulnerabilities in the rules engine that allow arbitrary code execution on the server. The JavaScript rules engine executes user-supplied scripts via Nashorn's ScriptEngine.eval() without sandboxing, class filtering, or access restrictions, and the authorization check in RulesResourceImpl only restricts Groovy rules to superusers while leaving JavaScript rules unrestricted for any user with the write:rules role. Additionally, the Groovy rules engine has a GroovyDenyAllFilter security filter that is defined but never registered, as the registration code is commented out, rendering the SandboxTransformer ineffective for superuser-created Groovy rules. A non-superuser attacker with the write:rules role can create JavaScript rulesets that execute with full JVM access, enabling remote code execution as root, arbitrary file read, environment variable theft including database credentials, and complete multi-tenant isolation bypass to access data across all realms. This issue has been fixed in version 1.22.0.
+</code>
+
+- [keraattin/CVE-2026-39842](https://github.com/keraattin/CVE-2026-39842)
 
 ### CVE-2026-39866
 - [abhayclasher/CVE-2026-39866](https://github.com/abhayclasher/CVE-2026-39866)
@@ -4154,6 +4191,7 @@
 - [IndominusRexes/CVE-2025-4322-Exploit](https://github.com/IndominusRexes/CVE-2025-4322-Exploit)
 - [Yucaerin/CVE-2025-4322](https://github.com/Yucaerin/CVE-2025-4322)
 - [gmh5225/Blackash-CVE-2025-4322](https://github.com/gmh5225/Blackash-CVE-2025-4322)
+- [zedeq/WP-CVE-2025-4322---Scan](https://github.com/zedeq/WP-CVE-2025-4322---Scan)
 
 ### CVE-2025-4334 (2025-06-26)
 
@@ -5003,6 +5041,7 @@
 - [xM0kht4r/CVE-2025-7771](https://github.com/xM0kht4r/CVE-2025-7771)
 - [lzty/CVE-2025-7771](https://github.com/lzty/CVE-2025-7771)
 - [DeathShotXD/0xKern3lCrush-Foreverday-BYOVD-CVE-2026-0828](https://github.com/DeathShotXD/0xKern3lCrush-Foreverday-BYOVD-CVE-2026-0828)
+- [D4rkks/CVE-2025-7771-Vulnerability-Exploration](https://github.com/D4rkks/CVE-2025-7771-Vulnerability-Exploration)
 
 ### CVE-2025-7775 (2025-08-26)
 
@@ -5792,6 +5831,13 @@
 </code>
 
 - [d0n601/CVE-2025-12720](https://github.com/d0n601/CVE-2025-12720)
+
+### CVE-2025-12721 (2025-12-06)
+
+<code>The g-FFL Cockpit plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.7.1 via the /server_status REST API endpoint due to a lack of capability checks. This makes it possible for unauthenticated attackers to extract information about the server.
+</code>
+
+- [d0n601/CVE-2025-12721](https://github.com/d0n601/CVE-2025-12721)
 
 ### CVE-2025-12735 (2025-11-05)
 
@@ -11395,7 +11441,6 @@
 - [orgito1015/CVE-2025-55182-RCE-Exploit](https://github.com/orgito1015/CVE-2025-55182-RCE-Exploit)
 - [keklick1337/CVE-2025-55182-golang-PoC](https://github.com/keklick1337/CVE-2025-55182-golang-PoC)
 - [rubensuxo-eh/react2shell-exploit](https://github.com/rubensuxo-eh/react2shell-exploit)
-- [CirqueiraDev/MassExploit-CVE-2025-55182](https://github.com/CirqueiraDev/MassExploit-CVE-2025-55182)
 - [aastikgakhar/CVE-2025-55182-react2shell](https://github.com/aastikgakhar/CVE-2025-55182-react2shell)
 - [zamdevio/r2s](https://github.com/zamdevio/r2s)
 - [AdityaBhatt3010/React2Shell-CVE-2025-55182-The-Deserialization-Bug-That-Broke-the-Web](https://github.com/AdityaBhatt3010/React2Shell-CVE-2025-55182-The-Deserialization-Bug-That-Broke-the-Web)
@@ -13626,6 +13671,9 @@
 
 - [kabir0104k/CVE-2025-66947](https://github.com/kabir0104k/CVE-2025-66947)
 
+### CVE-2025-66954
+- [DBmonster19/CVE-2025-66954](https://github.com/DBmonster19/CVE-2025-66954)
+
 ### CVE-2025-66955 (2026-03-12)
 
 <code>Local File Inclusion in Contact Plan, E-Mail, SMS and Fax components in Asseco SEE Live 2.0 allows remote authenticated users to access files on the host via &quot;path&quot; parameter in the downloadAttachment and downloadAttachmentFromPath API calls.
@@ -14247,7 +14295,11 @@
 ### CVE-2025-70600
 - [gpheheise/CVE-2025-70600---Urve-Smart-Office---Stored-XSS-in-iOS-App](https://github.com/gpheheise/CVE-2025-70600---Urve-Smart-Office---Stored-XSS-in-iOS-App)
 
-### CVE-2025-70795
+### CVE-2025-70795 (2026-04-17)
+
+<code>STProcessMonitor 11.11.4.0, part of the Safetica Application suite, allows an admin-privileged user to send crafted IOCTL requests to terminate processes that are protected through a third-party implementation. This is caused by insufficient caller validation in the driver's IOCTL handler, enabling unauthorized processes to perform those actions in kernel space. Successful exploitation can lead to denial of service by disrupting critical third-party services or applications. Unauthorized processes load the driver and send a crafted IOCTL request (0xB822200C) to terminate processes protected by a third-party implementation. This action exploits insufficient caller validation in the driver's IOCTL handler, allowing unauthorized processes to perform termination operations in kernel space. Successful exploitation can lead to denial of service by disrupting critical third-party services or applications.
+</code>
+
 - [wutang700/STProcessMonitorBYOVD](https://github.com/wutang700/STProcessMonitorBYOVD)
 - [ANYLNK/STProcessMonitorBYOVD](https://github.com/ANYLNK/STProcessMonitorBYOVD)
 
@@ -15673,7 +15725,6 @@
 - [r0otk3r/CVE-2024-4577](https://github.com/r0otk3r/CVE-2024-4577)
 - [mananjain61/PHP-CGI-INTERNAL-RCE](https://github.com/mananjain61/PHP-CGI-INTERNAL-RCE)
 - [Skycritch/CVE-2024-4577](https://github.com/Skycritch/CVE-2024-4577)
-- [CirqueiraDev/MassExploit-CVE-2024-4577](https://github.com/CirqueiraDev/MassExploit-CVE-2024-4577)
 - [Ianthinus/CVE-2024-4577](https://github.com/Ianthinus/CVE-2024-4577)
 - [InfoSec-DB/PHPCGIScanner](https://github.com/InfoSec-DB/PHPCGIScanner)
 - [a1ex-var1amov/ctf-cve-2024-4577](https://github.com/a1ex-var1amov/ctf-cve-2024-4577)
@@ -41327,13 +41378,6 @@
 - [yerodin/CVE-2022-44149](https://github.com/yerodin/CVE-2022-44149)
 - [geniuszly/CVE-2022-44149](https://github.com/geniuszly/CVE-2022-44149)
 
-### CVE-2022-44183 (2022-11-21)
-
-<code>Tenda AC18 V15.03.05.19 is vulnerable to Buffer Overflow via function formSetWifiGuestBasic.
-</code>
-
-- [flagqaz/CVE-2022-44183](https://github.com/flagqaz/CVE-2022-44183)
-
 ### CVE-2022-44215 (2023-08-22)
 
 <code>There is an open redirect vulnerability in Titan FTP server 19.0 and below. Users are redirected to any target URL.
@@ -42284,13 +42328,6 @@
 
 - [Satheesh575555/packages_apps_Settings_AOSP10_r33_CVE-2021-0506](https://github.com/Satheesh575555/packages_apps_Settings_AOSP10_r33_CVE-2021-0506)
 
-### CVE-2021-0507 (2021-06-21)
-
-<code>In handle_rc_metamsg_cmd of btif_rc.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution over Bluetooth with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-8.1 Android-9 Android-10Android ID: A-181860042
-</code>
-
-- [nanopathi/system_bt_AOSP10_r33_CVE-2021-0507](https://github.com/nanopathi/system_bt_AOSP10_r33_CVE-2021-0507)
-
 ### CVE-2021-0508 (2021-06-21)
 
 <code>In various functions of DrmPlugin.cpp, there is a possible use after free due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-8.1 Android-9 Android-10 Android-11Android ID: A-176444154
@@ -43075,6 +43112,7 @@
 - [SeimuPVE/CVE-2021-3560_Polkit](https://github.com/SeimuPVE/CVE-2021-3560_Polkit)
 - [m4lk3rnel/CVE-2021-3560](https://github.com/m4lk3rnel/CVE-2021-3560)
 - [realatharva15/polkit-CVE-2021-3560_writeup](https://github.com/realatharva15/polkit-CVE-2021-3560_writeup)
+- [yutasato88/CVE-2021-3560-PolkitPrivilegeEsclation](https://github.com/yutasato88/CVE-2021-3560-PolkitPrivilegeEsclation)
 
 ### CVE-2021-3572 (2021-11-10)
 
@@ -43179,7 +43217,6 @@
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [rvizx/CVE-2021-4034](https://github.com/rvizx/CVE-2021-4034)
 - [Nosferatuvjr/PwnKit](https://github.com/Nosferatuvjr/PwnKit)
-- [TotallyNotAHaxxer/CVE-2021-4034](https://github.com/TotallyNotAHaxxer/CVE-2021-4034)
 - [rhin0cer0s/CVE-2021-4034](https://github.com/rhin0cer0s/CVE-2021-4034)
 - [0x4ndy/CVE-2021-4034-PoC](https://github.com/0x4ndy/CVE-2021-4034-PoC)
 - [antoinenguyen-09/CVE-2021-4034](https://github.com/antoinenguyen-09/CVE-2021-4034)
@@ -44305,6 +44342,13 @@
 </code>
 
 - [Immersive-Labs-Sec/CVE-2021-25281](https://github.com/Immersive-Labs-Sec/CVE-2021-25281)
+
+### CVE-2021-25337 (2021-03-04)
+
+<code>Improper access control in clipboard service in Samsung mobile devices prior to SMR Mar-2021 Release 1 allows untrusted applications to read or write certain local files.
+</code>
+
+- [CrisZalSa/JustALampNothingElse](https://github.com/CrisZalSa/JustALampNothingElse)
 
 ### CVE-2021-25374 (2021-04-09)
 
@@ -54710,6 +54754,9 @@
 - [hualy13/CVE-2019-0708-Check](https://github.com/hualy13/CVE-2019-0708-Check)
 - [isabelacostaz/CVE-2019-0708-POC](https://github.com/isabelacostaz/CVE-2019-0708-POC)
 - [GopeshKachhadiya/Windows-2](https://github.com/GopeshKachhadiya/Windows-2)
+- [emmadej1234/bluekeep-metasploit-lab-project](https://github.com/emmadej1234/bluekeep-metasploit-lab-project)
+- [Ayomide-29/bluekeep_metasploit_practice](https://github.com/Ayomide-29/bluekeep_metasploit_practice)
+- [ayomideadams61-hub/bluekeep-metsploitable-lab](https://github.com/ayomideadams61-hub/bluekeep-metsploitable-lab)
 
 ### CVE-2019-0709 (2019-06-12)
 
@@ -56141,6 +56188,7 @@
 - [pasan2002/CVE-2019-9053---CMS-Made-Simple-SQL-Injection-Exploit-Modified-](https://github.com/pasan2002/CVE-2019-9053---CMS-Made-Simple-SQL-Injection-Exploit-Modified-)
 - [vadaysakiv/cve-2019-9053](https://github.com/vadaysakiv/cve-2019-9053)
 - [iTzR1g/CVE-2019-9053](https://github.com/iTzR1g/CVE-2019-9053)
+- [coolkiee/CVE-2019-9053](https://github.com/coolkiee/CVE-2019-9053)
 
 ### CVE-2019-9081
 - [nth347/CVE-2019-9081_PoC](https://github.com/nth347/CVE-2019-9081_PoC)
@@ -60024,6 +60072,7 @@
 - [manojcode/CloudMe-Sync-1.10.9---Buffer-Overflow-SEH-DEP-Bypass](https://github.com/manojcode/CloudMe-Sync-1.10.9---Buffer-Overflow-SEH-DEP-Bypass)
 - [manojcode/-Win10-x64-CloudMe-Sync-1.10.9-Buffer-Overflow-SEH-DEP-Bypass](https://github.com/manojcode/-Win10-x64-CloudMe-Sync-1.10.9-Buffer-Overflow-SEH-DEP-Bypass)
 - [latortuga71/CVE-2018-6892-Golang](https://github.com/latortuga71/CVE-2018-6892-Golang)
+- [crypticq/CLOUDME_B0F](https://github.com/crypticq/CLOUDME_B0F)
 
 ### CVE-2018-6905 (2018-04-08)
 
@@ -70412,6 +70461,7 @@
 - [abdulsaabir/CVE-2007-2447](https://github.com/abdulsaabir/CVE-2007-2447)
 - [vig9610/Exploiting-Samba-on-Metasploitable-2](https://github.com/vig9610/Exploiting-Samba-on-Metasploitable-2)
 - [r0tn3x/CVE-2007-2447](https://github.com/r0tn3x/CVE-2007-2447)
+- [Daviddoctor/Samba-CVE-2007-2447-Exploit-Username-Map-Script](https://github.com/Daviddoctor/Samba-CVE-2007-2447-Exploit-Username-Map-Script)
 
 ### CVE-2007-3280 (2007-06-19)
 
