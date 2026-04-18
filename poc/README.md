@@ -3361,7 +3361,11 @@
 
 - [terminat0r7031/composer-CVE-2026-40261-CVE-2026-40176-PoC](https://github.com/terminat0r7031/composer-CVE-2026-40261-CVE-2026-40176-PoC)
 
-### CVE-2026-40487
+### CVE-2026-40487 (2026-04-18)
+
+<code>Postiz is an AI social media scheduling tool. Prior to version 2.21.6, a file upload validation bypass allows any authenticated user to upload arbitrary HTML, SVG, or other executable file types to the server by spoofing the `Content-Type` header. The uploaded files are then served by nginx with a Content-Type derived from their original extension (`text/html`, `image/svg+xml`), enabling Stored Cross-Site Scripting (XSS) in the context of the application's origin. This can lead to session riding, account takeover, and full compromise of other users' accounts. Version 2.21.6 contains a fix.
+</code>
+
 - [Astaruf/CVE-2026-40487](https://github.com/Astaruf/CVE-2026-40487)
 
 ### CVE-2026-40579
@@ -6364,7 +6368,7 @@
 </code>
 
 - [skadevare/CiscoISE-CVE-2025-20282-POC](https://github.com/skadevare/CiscoISE-CVE-2025-20282-POC)
-- [pwnc4t/cve-2025-20282](https://github.com/pwnc4t/cve-2025-20282)
+- [biggerbangg/cve-2025-20282](https://github.com/biggerbangg/cve-2025-20282)
 
 ### CVE-2025-20343 (2025-11-05)
 
@@ -11743,6 +11747,7 @@
 - [AbdullahMaqbool22/Explosive-As-Hell-MCS-Qualifer-Web-500](https://github.com/AbdullahMaqbool22/Explosive-As-Hell-MCS-Qualifer-Web-500)
 - [DeDnY/CVE-2025-55182-poc-panel](https://github.com/DeDnY/CVE-2025-55182-poc-panel)
 - [opsecramdan/react2shell-cve-2025-55182](https://github.com/opsecramdan/react2shell-cve-2025-55182)
+- [Mohamedniane/cve-2025-55182-analysis](https://github.com/Mohamedniane/cve-2025-55182-analysis)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -16377,7 +16382,7 @@
 <code>A flaw was found in openshift/builder. This vulnerability allows command injection via path traversal, where a malicious user can execute arbitrary commands on the OpenShift node running the builder container. When using the “Docker” strategy, executable files inside the privileged build container can be overridden using the `spec.source.secrets.secret.destinationDir` attribute of the `BuildConfig` definition. An attacker running code in a privileged container could escalate their permissions on the node running the container.
 </code>
 
-- [pwnc4t/cve-2024-7387](https://github.com/pwnc4t/cve-2024-7387)
+- [biggerbangg/cve-2024-7387](https://github.com/biggerbangg/cve-2024-7387)
 
 ### CVE-2024-7399 (2024-08-09)
 
@@ -23117,7 +23122,7 @@
 <code>A flaw was found in OpenShift. This issue occurs due to the misuse of elevated privileges in the OpenShift Container Platform's build process. During the build initialization step, the git-clone container is run with a privileged security context, allowing unrestricted access to the node. An attacker with developer-level access can provide a crafted .gitconfig file containing commands executed during the cloning process, leading to arbitrary command execution on the worker node. An attacker running code in a privileged container could escalate their permissions on the node running the container.
 </code>
 
-- [pwnc4t/cve-2024-45496](https://github.com/pwnc4t/cve-2024-45496)
+- [biggerbangg/cve-2024-45496](https://github.com/biggerbangg/cve-2024-45496)
 
 ### CVE-2024-45507 (2024-09-04)
 
