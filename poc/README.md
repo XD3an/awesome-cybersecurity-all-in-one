@@ -135,6 +135,7 @@
 - [Galaxy-sc/CVE-2026-0920-WordPress-LA-Studio-Exploit](https://github.com/Galaxy-sc/CVE-2026-0920-WordPress-LA-Studio-Exploit)
 - [O99099O/By-Poloss..-..CVE-2026-0920](https://github.com/O99099O/By-Poloss..-..CVE-2026-0920)
 - [John-doe-code-a11/CVE-2026-0920](https://github.com/John-doe-code-a11/CVE-2026-0920)
+- [Nxploited/CVE-2026-0920-](https://github.com/Nxploited/CVE-2026-0920-)
 
 ### CVE-2026-30
 - [itsismarcos/ICS-MoxieManager-FileUpload-PoC](https://github.com/itsismarcos/ICS-MoxieManager-FileUpload-PoC)
@@ -236,6 +237,7 @@
 
 - [imad-z1/CVE-2026-1492-POC](https://github.com/imad-z1/CVE-2026-1492-POC)
 - [the8frust/CVE-2026-1492](https://github.com/the8frust/CVE-2026-1492)
+- [Nxploited/CVE-2026-1492](https://github.com/Nxploited/CVE-2026-1492)
 
 ### CVE-2026-1529 (2026-02-09)
 
@@ -304,6 +306,13 @@
 </code>
 
 - [seokjohn/CVE-2026-1880](https://github.com/seokjohn/CVE-2026-1880)
+
+### CVE-2026-1937 (2026-02-18)
+
+<code>The YayMail – WooCommerce Email Customizer plugin for WordPress is vulnerable to unauthorized modification of data that can lead to privilege escalation due to a missing capability check on the `yaymail_import_state` AJAX action in all versions up to, and including, 4.3.2. This makes it possible for authenticated attackers, with Shop Manager-level access and above, to update arbitrary options on the WordPress site. This can be leveraged to update the default role for registration to administrator and enable user registration for attackers to gain administrative user access to a vulnerable site.
+</code>
+
+- [Nxploited/CVE-2026-1937](https://github.com/Nxploited/CVE-2026-1937)
 
 ### CVE-2026-1953 (2026-02-05)
 
@@ -613,6 +622,7 @@
 </code>
 
 - [bootstrapbool/cve-2026-4257](https://github.com/bootstrapbool/cve-2026-4257)
+- [0xgh057r3c0n/CVE-2026-4257](https://github.com/0xgh057r3c0n/CVE-2026-4257)
 
 ### CVE-2026-4342 (2026-03-19)
 
@@ -634,6 +644,20 @@
 </code>
 
 - [Hann1bl3L3ct3r/CVE-2026-4406](https://github.com/Hann1bl3L3ct3r/CVE-2026-4406)
+
+### CVE-2026-4484 (2026-03-26)
+
+<code>The Masteriyo LMS plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.1.6. This is due to the plugin allowing a user to update the user role through the 'InstructorsController::prepare_object_for_database' function. This makes it possible for authenticated attackers, with Student-level access and above, to elevate their privileges to that of an administrator.
+</code>
+
+- [Nxploited/CVE-2026-4484](https://github.com/Nxploited/CVE-2026-4484)
+
+### CVE-2026-4631 (2026-04-07)
+
+<code>Cockpit's remote login feature passes user-supplied hostnames and usernames from the web interface to the SSH client without validation or sanitization. An attacker with network access to the Cockpit web service can craft a single HTTP request to the login endpoint that injects malicious SSH options or shell commands, achieving code execution on the Cockpit host without valid credentials. The injection occurs during the authentication flow before any credential verification takes place, meaning no login is required to exploit the vulnerability.
+</code>
+
+- [cyberheartmi9/CVE-2026-4631-cockpit-RCE](https://github.com/cyberheartmi9/CVE-2026-4631-cockpit-RCE)
 
 ### CVE-2026-4660 (2026-04-09)
 
@@ -779,6 +803,9 @@
 
 ### CVE-2026-6355
 - [Penguinsecq/CVE-2026-6355](https://github.com/Penguinsecq/CVE-2026-6355)
+
+### CVE-2026-6356
+- [Penguinsecq/CVE-2026-6356](https://github.com/Penguinsecq/CVE-2026-6356)
 
 ### CVE-2026-7731
 - [SimoesCTT/CTT-Refraction-Vortex-CVE-2026-7731-](https://github.com/SimoesCTT/CTT-Refraction-Vortex-CVE-2026-7731-)
@@ -1149,6 +1176,7 @@
 
 - [Ashifcoder/CVE-2026-22241](https://github.com/Ashifcoder/CVE-2026-22241)
 - [CVEs-Labs/CVE-2026-22241](https://github.com/CVEs-Labs/CVE-2026-22241)
+- [0xBlackash/CVE-2026-22241](https://github.com/0xBlackash/CVE-2026-22241)
 
 ### CVE-2026-22243 (2026-01-28)
 
@@ -1570,6 +1598,7 @@
 - [przemytn/CVE-2026-24061](https://github.com/przemytn/CVE-2026-24061)
 - [ekomsSavior/telnet_scan](https://github.com/ekomsSavior/telnet_scan)
 - [Risma2025/CVE-2026-24061-GNU-InetUtils-telnetd-Authentication-Bypass-Vulnerability](https://github.com/Risma2025/CVE-2026-24061-GNU-InetUtils-telnetd-Authentication-Bypass-Vulnerability)
+- [RStephanH/vuln-deb](https://github.com/RStephanH/vuln-deb)
 
 ### CVE-2026-24102
 - [SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition](https://github.com/SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition)
@@ -1785,6 +1814,13 @@
 
 - [mbanyamer/Llama-Stack-0.4.0rc3-local-CVE-2026-25211](https://github.com/mbanyamer/Llama-Stack-0.4.0rc3-local-CVE-2026-25211)
 
+### CVE-2026-25232 (2026-02-19)
+
+<code>Gogs is an open source self-hosted Git service. Versions 0.13.4 and below have an access control bypass vulnerability which allows any repository collaborator with Write permissions to delete protected branches (including the default branch) by sending a direct POST request, completely bypassing the branch protection mechanism. This vulnerability in the DeleteBranchPost function eenables privilege escalation from Write to Admin level, allowing low-privilege users to perform dangerous operations that should be restricted to administrators only. Although Git Hook layer correctly prevents protected branch deletion via SSH push, the web interface deletion operation does not trigger Git Hooks, resulting in complete bypass of protection mechanisms. In oder to exploit this vulnerability, attackers must have write permissions to the target repository, protected branches configured to the target repository and access to the Gogs web interface. This issue has been fixed in version 0.14.1.
+</code>
+
+- [H1sok444/CVE-2026-25232-PoC](https://github.com/H1sok444/CVE-2026-25232-PoC)
+
 ### CVE-2026-25242 (2026-02-19)
 
 <code>Gogs is an open source self-hosted Git service. Versions 0.13.4 and below expose unauthenticated file upload endpoints by default. When the global RequireSigninView setting is disabled (default), any remote user can upload arbitrary files to the server via /releases/attachments and /issues/attachments. This enables the instance to be abused as a public file host, potentially leading to disk exhaustion, content hosting, or delivery of malware. CSRF tokens do not mitigate this attack due to same-origin cookie issuance. This issue has been fixed in version 0.14.1.
@@ -1806,6 +1842,7 @@
 - [FrigateCaptain/openclaw_vulnerabilities_and_solutions](https://github.com/FrigateCaptain/openclaw_vulnerabilities_and_solutions)
 - [EQSTLab/CVE-2026-25253](https://github.com/EQSTLab/CVE-2026-25253)
 - [ZhaoymOvO/openclaw-1click-rce-env](https://github.com/ZhaoymOvO/openclaw-1click-rce-env)
+- [KajzingerAkos/CVE-2026-25253](https://github.com/KajzingerAkos/CVE-2026-25253)
 
 ### CVE-2026-25512 (2026-02-04)
 
@@ -2236,6 +2273,13 @@
 </code>
 
 - [rootdirective-sec/CVE-2026-27541-Analysis-Lab](https://github.com/rootdirective-sec/CVE-2026-27541-Analysis-Lab)
+
+### CVE-2026-27542 (2026-03-19)
+
+<code>Incorrect Privilege Assignment vulnerability in Rymera Web Co Pty Ltd. Woocommerce Wholesale Lead Capture allows Privilege Escalation.This issue affects Woocommerce Wholesale Lead Capture: from n/a through 2.0.3.1.
+</code>
+
+- [Nxploited/CVE-2026-27542-CVE-2026-27540-](https://github.com/Nxploited/CVE-2026-27542-CVE-2026-27540-)
 
 ### CVE-2026-27574 (2026-02-21)
 
@@ -2897,6 +2941,7 @@
 
 - [Twinson333/cve-2026-33032-scanner](https://github.com/Twinson333/cve-2026-33032-scanner)
 - [Shreda/CVE-2026-33032-nginx-ui-vuln-lab](https://github.com/Shreda/CVE-2026-33032-nginx-ui-vuln-lab)
+- [keraattin/CVE-2026-33032](https://github.com/keraattin/CVE-2026-33032)
 
 ### CVE-2026-33033 (2026-04-07)
 
@@ -3301,6 +3346,7 @@
 
 - [Lechansky/CVE-2026-39808](https://github.com/Lechansky/CVE-2026-39808)
 - [samu-delucas/CVE-2026-39808](https://github.com/samu-delucas/CVE-2026-39808)
+- [0xBlackash/CVE-2026-39808](https://github.com/0xBlackash/CVE-2026-39808)
 
 ### CVE-2026-39842 (2026-04-14)
 
@@ -3335,6 +3381,7 @@
 - [fevar54/marimo_CVE-2026-39987_RCE_PoC](https://github.com/fevar54/marimo_CVE-2026-39987_RCE_PoC)
 - [mki9/CVE-2026-39987_exploit](https://github.com/mki9/CVE-2026-39987_exploit)
 - [keraattin/CVE-2026-39987](https://github.com/keraattin/CVE-2026-39987)
+- [Nxploited/CVE-2026-39987](https://github.com/Nxploited/CVE-2026-39987)
 
 ### CVE-2026-40175 (2026-04-10)
 
@@ -3868,6 +3915,7 @@
 
 - [ubaydev/CVE-2025-2563](https://github.com/ubaydev/CVE-2025-2563)
 - [0axz-tools/CVE-2025-2563-POC](https://github.com/0axz-tools/CVE-2025-2563-POC)
+- [Nxploited/CVE-2025-2563](https://github.com/Nxploited/CVE-2025-2563)
 
 ### CVE-2025-2594 (2025-04-22)
 
@@ -4795,6 +4843,7 @@
 
 - [shac1x/Blackash-CVE-2025-6389](https://github.com/shac1x/Blackash-CVE-2025-6389)
 - [itsismarcos/SneeitScanner-CVE-2025-6389](https://github.com/itsismarcos/SneeitScanner-CVE-2025-6389)
+- [Nxploited/CVE-2025-6389](https://github.com/Nxploited/CVE-2025-6389)
 
 ### CVE-2025-6440 (2025-10-24)
 
@@ -5942,6 +5991,7 @@
 </code>
 
 - [Altelus1/CVE-2025-13342](https://github.com/Altelus1/CVE-2025-13342)
+- [Nxploited/CVE-2025-13342](https://github.com/Nxploited/CVE-2025-13342)
 
 ### CVE-2025-13374 (2026-01-24)
 
@@ -6114,6 +6164,13 @@
 
 - [DeepSecurityResearch/CVE-2025-14340](https://github.com/DeepSecurityResearch/CVE-2025-14340)
 
+### CVE-2025-14364 (2025-12-18)
+
+<code>The Demo Importer Plus plugin for WordPress is vulnerable to unauthorized modification of data, loss of data, and privilege escalation due to a missing capability check on the Ajax::handle_request() function in all versions up to, and including, 2.0.8. This makes it possible for authenticated attackers, with Subscriber-level access and above, to trigger a full site reset, dropping all database tables except users/usermeta and re-running wp_install(), which also assigns the Administrator role to the attacking subscriber account.
+</code>
+
+- [Nxploited/CVE-2025-14364](https://github.com/Nxploited/CVE-2025-14364)
+
 ### CVE-2025-14440 (2025-12-13)
 
 <code>The JAY Login &amp; Register plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.4.01. This is due to incorrect authentication checking in the 'jay_login_register_process_switch_back' function with the 'jay_login_register_process_switch_back' cookie value. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the user id.
@@ -6260,6 +6317,13 @@
 
 - [KTN1990/CVE-2025-14998](https://github.com/KTN1990/CVE-2025-14998)
 
+### CVE-2025-15030 (2026-02-02)
+
+<code>The User Profile Builder  WordPress plugin before 3.15.2 does not have a proper password reset process, allowing a few unauthenticated requests to reset the password of any user by knowing their username, such as administrator ones, and therefore gain access to their account
+</code>
+
+- [Nxploited/CVE-2025-15030](https://github.com/Nxploited/CVE-2025-15030)
+
 ### CVE-2025-15260 (2026-02-04)
 
 <code>The MyRewards – Loyalty Points and Rewards for WooCommerce plugin for WordPress is vulnerable to missing authorization in all versions up to, and including, 5.6.1. This is due to the plugin not properly verifying that a user is authorized to perform an action in the 'ajax' function. This makes it possible for authenticated attackers, with subscriber level access and above, to modify, add, or delete loyalty program earning rules, including manipulating point multipliers to arbitrary values.
@@ -6281,6 +6345,13 @@
 
 - [kazehere4you/CVE-2025-15368-Exploit](https://github.com/kazehere4you/CVE-2025-15368-Exploit)
 
+### CVE-2025-15403 (2026-01-17)
+
+<code>The RegistrationMagic plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 6.0.7.1. This is due to the 'add_menu' function is accessible via the 'rm_user_exists' AJAX action and allows arbitrary updates to the 'admin_order' setting. This makes it possible for unauthenticated attackers to injecting an empty slug into the order parameter, and manipulate the plugin's menu generation logic, and when the admin menu is subsequently built, the plugin adds 'manage_options' capability for the target role. Note: The vulnerability can only be exploited unauthenticated, but further privilege escalation requires at least a subscriber user.
+</code>
+
+- [Nxploited/CVE-2025-15403](https://github.com/Nxploited/CVE-2025-15403)
+
 ### CVE-2025-15467 (2026-01-27)
 
 <code>Issue summary: Parsing CMS AuthEnvelopedData or EnvelopedData message with\nmaliciously crafted AEAD parameters can trigger a stack buffer overflow.\n\nImpact summary: A stack buffer overflow may lead to a crash, causing Denial\nof Service, or potentially remote code execution.\n\nWhen parsing CMS (Auth)EnvelopedData structures that use AEAD ciphers such as\nAES-GCM, the IV (Initialization Vector) encoded in the ASN.1 parameters is\ncopied into a fixed-size stack buffer without verifying that its length fits\nthe destination. An attacker can supply a crafted CMS message with an\noversized IV, causing a stack-based out-of-bounds write before any\nauthentication or tag verification occurs.\n\nApplications and services that parse untrusted CMS or PKCS#7 content using\nAEAD ciphers (e.g., S/MIME (Auth)EnvelopedData with AES-GCM) are vulnerable.\nBecause the overflow occurs prior to authentication, no valid key material\nis required to trigger it. While exploitability to remote code execution\ndepends on platform and toolchain mitigations, the stack-based write\nprimitive represents a severe risk.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the CMS implementation is outside the OpenSSL FIPS module\nboundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3 and 3.0 are vulnerable to this issue.\n\nOpenSSL 1.1.1 and 1.0.2 are not affected by this issue.
@@ -6298,6 +6369,13 @@
 </code>
 
 - [Asim-QAZi/RCE-Simplephpblog-biggiedroid](https://github.com/Asim-QAZi/RCE-Simplephpblog-biggiedroid)
+
+### CVE-2025-15521 (2026-01-21)
+
+<code>The Academy LMS – WordPress LMS Plugin for Complete eLearning Solution plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 3.5.0. This is due to the plugin not properly validating a user's identity prior to updating their password and relying solely on a publicly-exposed nonce for authorization. This makes it possible for unauthenticated attackers to change arbitrary user's password, including administrators, and gain access to their account.
+</code>
+
+- [Nxploited/CVE-2025-15521](https://github.com/Nxploited/CVE-2025-15521)
 
 ### CVE-2025-15545 (2026-01-29)
 
@@ -7813,6 +7891,13 @@
 
 - [Nxploited/CVE-2025-28915](https://github.com/Nxploited/CVE-2025-28915)
 - [Pei4AN/CVE-2025-28915](https://github.com/Pei4AN/CVE-2025-28915)
+
+### CVE-2025-29009 (2025-07-16)
+
+<code>Unrestricted Upload of File with Dangerous Type vulnerability in Webkul Medical Prescription Attachment Plugin for WooCommerce medical-prescription-attachment-plugin-for-woocommerce allows Upload a Web Shell to a Web Server.This issue affects Medical Prescription Attachment Plugin for WooCommerce: from n/a through &lt;= 1.2.3.
+</code>
+
+- [Nxploited/CVE-2025-29009](https://github.com/Nxploited/CVE-2025-29009)
 
 ### CVE-2025-29015 (2025-04-17)
 
@@ -10280,6 +10365,13 @@
 - [Cilectiy/CVE-2025-49844](https://github.com/Cilectiy/CVE-2025-49844)
 - [dajneem23/CVE-2025-49844](https://github.com/dajneem23/CVE-2025-49844)
 
+### CVE-2025-49901 (2025-10-22)
+
+<code>Authentication Bypass Using an Alternate Path or Channel vulnerability in quantumcloud Simple Link Directory qc-simple-link-directory allows Authentication Abuse.This issue affects Simple Link Directory: from n/a through &lt; 14.8.1.
+</code>
+
+- [Nxploited/CVE-2025-49901](https://github.com/Nxploited/CVE-2025-49901)
+
 ### CVE-2025-50110 (2025-09-15)
 
 <code>An issue was discovered in the method push.lite.avtech.com.AvtechLib.GetHttpsResponse in AVTECH EagleEyes Lite 2.0.0, the GetHttpsResponse method transmits sensitive information - including internal server URLs, account IDs, passwords, and device tokens - as plaintext query parameters over HTTPS
@@ -10899,6 +10991,13 @@
 
 - [houqe/POC_CVE-2025-53558](https://github.com/houqe/POC_CVE-2025-53558)
 
+### CVE-2025-53580 (2025-08-20)
+
+<code>Incorrect Privilege Assignment vulnerability in quantumcloud Simple Business Directory Pro simple-business-directory-pro allows Privilege Escalation.This issue affects Simple Business Directory Pro: from n/a through &lt; 15.6.9.
+</code>
+
+- [Nxploited/CVE-2025-53580](https://github.com/Nxploited/CVE-2025-53580)
+
 ### CVE-2025-53632 (2025-07-10)
 
 <code>Chall-Manager is a platform-agnostic system able to start Challenges on Demand of a player. When decoding a scenario (i.e. a zip archive), the path of the file to write is not checked, potentially leading to zip slips. Exploitation does not require authentication nor authorization, so anyone can exploit it. It should nonetheless not be exploitable as it is highly recommended to bury Chall-Manager deep within the infrastructure due to its large capabilities, so no users could reach the system. Patch has been implemented by commit 47d188f and shipped in v0.1.4.
@@ -11197,6 +11296,9 @@
 - [Mr-xn/CVE-2025-54424](https://github.com/Mr-xn/CVE-2025-54424)
 - [hophtien/CVE-2025-54424](https://github.com/hophtien/CVE-2025-54424)
 - [anonnymous5/1Panel-CVE-2025-54424-](https://github.com/anonnymous5/1Panel-CVE-2025-54424-)
+
+### CVE-2025-54505
+- [siltyy/cve-2025-54505-fix](https://github.com/siltyy/cve-2025-54505-fix)
 
 ### CVE-2025-54554 (2025-08-04)
 
@@ -13867,6 +13969,13 @@
 </code>
 
 - [franckferman/CVE-2025-67906](https://github.com/franckferman/CVE-2025-67906)
+
+### CVE-2025-68001 (2026-01-22)
+
+<code>Unrestricted Upload of File with Dangerous Type vulnerability in garidium g-FFL Checkout g-ffl-checkout allows Upload a Web Shell to a Web Server.This issue affects g-FFL Checkout: from n/a through &lt;= 2.1.0.
+</code>
+
+- [Nxploited/CVE-2025-68001](https://github.com/Nxploited/CVE-2025-68001)
 
 ### CVE-2025-68055 (2025-12-16)
 
@@ -27890,7 +27999,6 @@
 - [xorbbo/cve-2023-22515](https://github.com/xorbbo/cve-2023-22515)
 - [spareack/CVE-2023-22515-NSE](https://github.com/spareack/CVE-2023-22515-NSE)
 - [Onedy1703/CVE-2023-22515-Confluence](https://github.com/Onedy1703/CVE-2023-22515-Confluence)
-- [killvxk/CVE-2023-22515-joaoviictorti](https://github.com/killvxk/CVE-2023-22515-joaoviictorti)
 - [vivigotnotime/CVE-2023-22515-Exploit-Script](https://github.com/vivigotnotime/CVE-2023-22515-Exploit-Script)
 - [tranphuc2005/CVE-2023-22515](https://github.com/tranphuc2005/CVE-2023-22515)
 - [Arkha-Corvus/LetsDefend-SOC235-Atlassian-Confluence-Broken-Access-Control-0-Day-CVE-2023-22515-EventID-197](https://github.com/Arkha-Corvus/LetsDefend-SOC235-Atlassian-Confluence-Broken-Access-Control-0-Day-CVE-2023-22515-EventID-197)
@@ -28307,6 +28415,7 @@
 
 - [H4R335HR/CVE-2023-24329-PoC](https://github.com/H4R335HR/CVE-2023-24329-PoC)
 - [Pandante-Central/CVE-2023-24329-codeql-test](https://github.com/Pandante-Central/CVE-2023-24329-codeql-test)
+- [jithinodattu/CVE-2023-24329-lab](https://github.com/jithinodattu/CVE-2023-24329-lab)
 
 ### CVE-2023-24422 (2023-01-24)
 
@@ -28816,6 +28925,7 @@
 - [theopaid/CVE-2023-27163-Request-Baskets-Local-Ports-Bruteforcer](https://github.com/theopaid/CVE-2023-27163-Request-Baskets-Local-Ports-Bruteforcer)
 - [thealchimist86/CVE-2023-27163---SSRF-Baskets-Requests](https://github.com/thealchimist86/CVE-2023-27163---SSRF-Baskets-Requests)
 - [thealchimist86/CVE-2023-27163---Maltrail-0.53---RCE](https://github.com/thealchimist86/CVE-2023-27163---Maltrail-0.53---RCE)
+- [tombstoneghost/htb-sau-exploit-chain](https://github.com/tombstoneghost/htb-sau-exploit-chain)
 
 ### CVE-2023-27216 (2023-04-12)
 
@@ -30588,7 +30698,6 @@
 - [Malwareman007/CVE-2023-34362](https://github.com/Malwareman007/CVE-2023-34362)
 - [toorandom/moveit-payload-decrypt-CVE-2023-34362](https://github.com/toorandom/moveit-payload-decrypt-CVE-2023-34362)
 - [errorfiathck/MOVEit-Exploit](https://github.com/errorfiathck/MOVEit-Exploit)
-- [Chinyemba-ck/MOVEit-CVE-2023-34362](https://github.com/Chinyemba-ck/MOVEit-CVE-2023-34362)
 - [glen-pearson/MoveIT-CVE-2023-34362-RCE](https://github.com/glen-pearson/MoveIT-CVE-2023-34362-RCE)
 - [aditibv/MOVEit-CVE-2023-34362](https://github.com/aditibv/MOVEit-CVE-2023-34362)
 - [Naveenbana5250/CVE-2023-34362-Defense-Package](https://github.com/Naveenbana5250/CVE-2023-34362-Defense-Package)
@@ -70500,6 +70609,7 @@
 - [luigigubello/trellix-tarslip-patch-bypass](https://github.com/luigigubello/trellix-tarslip-patch-bypass)
 - [m0d0ri205/wargame-tarpioka](https://github.com/m0d0ri205/wargame-tarpioka)
 - [depers-rus/CVE-2007-4559](https://github.com/depers-rus/CVE-2007-4559)
+- [jithinodattu/CVE-2007-4559-lab](https://github.com/jithinodattu/CVE-2007-4559-lab)
 
 ### CVE-2007-4560 (2007-08-28)
 
