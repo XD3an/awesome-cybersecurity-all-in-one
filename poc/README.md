@@ -1,9 +1,6 @@
 # PoC in GitHub
 
 ## 2026
-### CVE-2026-000
-- [r3m0t3nu11/biotime-CVE-2026-000-Auth-rce](https://github.com/r3m0t3nu11/biotime-CVE-2026-000-Auth-rce)
-
 ### CVE-2026-0594 (2026-01-14)
 
 <code>The List Site Contributors plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'alpha' parameter in versions up to, and including, 1.1.8 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.
@@ -536,6 +533,9 @@
 - [mbanyamer/CVE-2026-3395-MaxSite-CMS-Unauthenticated-RCE](https://github.com/mbanyamer/CVE-2026-3395-MaxSite-CMS-Unauthenticated-RCE)
 - [rootdirective-sec/CVE-2026-3395-Lab](https://github.com/rootdirective-sec/CVE-2026-3395-Lab)
 
+### CVE-2026-3462
+- [dajneem23/CVE-2026-3462](https://github.com/dajneem23/CVE-2026-3462)
+
 ### CVE-2026-3502 (2026-03-30)
 
 <code>TrueConf Client downloads application update code and applies it without performing verification. An attacker who is able to influence the update delivery path can substitute a tampered update payload. If the payload is executed or installed by the updater, this may result in arbitrary code execution in the context of the updating process or user.
@@ -630,7 +630,6 @@
 </code>
 
 - [bootstrapbool/cve-2026-4257](https://github.com/bootstrapbool/cve-2026-4257)
-- [0xgh057r3c0n/CVE-2026-4257](https://github.com/0xgh057r3c0n/CVE-2026-4257)
 
 ### CVE-2026-4342 (2026-03-19)
 
@@ -1114,6 +1113,7 @@
 
 - [atiilla/CVE-2026-21852-PoC](https://github.com/atiilla/CVE-2026-21852-PoC)
 - [M0broot/CVE-Archive](https://github.com/M0broot/CVE-Archive)
+- [TreRB/ai-ide-config-guard](https://github.com/TreRB/ai-ide-config-guard)
 
 ### CVE-2026-21857 (2026-01-07)
 
@@ -2934,6 +2934,7 @@
 </code>
 
 - [jeffaf/cve-2026-32746](https://github.com/jeffaf/cve-2026-32746)
+- [duduLiu8787/CVE-2026-32746-Exploit](https://github.com/duduLiu8787/CVE-2026-32746-Exploit)
 - [watchtowrlabs/watchtowr-vs-telnetd-CVE-2026-32746](https://github.com/watchtowrlabs/watchtowr-vs-telnetd-CVE-2026-32746)
 - [danindiana/cve-2026-32746-mitigation](https://github.com/danindiana/cve-2026-32746-mitigation)
 - [chosenonehacks/CVE-2026-32746](https://github.com/chosenonehacks/CVE-2026-32746)
@@ -3141,6 +3142,7 @@
 </code>
 
 - [Letlaka/redsun-bluehammer-undefend-detection-pack](https://github.com/Letlaka/redsun-bluehammer-undefend-detection-pack)
+- [Bilal3755/Detecting_blue_hammer_vuln](https://github.com/Bilal3755/Detecting_blue_hammer_vuln)
 
 ### CVE-2026-33868 (2026-03-27)
 
@@ -3218,6 +3220,8 @@
 - [KONDORDEVSECURITYCORP/CVE-2026-34197](https://github.com/KONDORDEVSECURITYCORP/CVE-2026-34197)
 - [hg0434hongzh0/CVE-2026-34197](https://github.com/hg0434hongzh0/CVE-2026-34197)
 - [keraattin/CVE-2026-34197](https://github.com/keraattin/CVE-2026-34197)
+- [xshysjhq/CVE-2026-34197-payload-Apache-ActiveMQ-](https://github.com/xshysjhq/CVE-2026-34197-payload-Apache-ActiveMQ-)
+- [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
 
 ### CVE-2026-34200 (2026-03-31)
 
@@ -3865,7 +3869,6 @@
 </code>
 
 - [Wa1nut4/CVE-2025-2135](https://github.com/Wa1nut4/CVE-2025-2135)
-- [sangnguyenthien/CVE-2025-2135](https://github.com/sangnguyenthien/CVE-2025-2135)
 
 ### CVE-2025-2249 (2025-03-29)
 
@@ -3965,6 +3968,7 @@
 - [ubaydev/CVE-2025-2563](https://github.com/ubaydev/CVE-2025-2563)
 - [0axz-tools/CVE-2025-2563-POC](https://github.com/0axz-tools/CVE-2025-2563-POC)
 - [Nxploited/CVE-2025-2563](https://github.com/Nxploited/CVE-2025-2563)
+- [dokter69/CVE-2025-2563](https://github.com/dokter69/CVE-2025-2563)
 
 ### CVE-2025-2594 (2025-04-22)
 
@@ -8911,6 +8915,7 @@
 </code>
 
 - [daryllundy/cve-2025-32711](https://github.com/daryllundy/cve-2025-32711)
+- [TreRB/markdown-exfil-tester](https://github.com/TreRB/markdown-exfil-tester)
 
 ### CVE-2025-32756 (2025-05-13)
 
@@ -12471,6 +12476,7 @@
 - [kartik2005221/CVE-2025-58434-AND-59528-POC](https://github.com/kartik2005221/CVE-2025-58434-AND-59528-POC)
 - [honney336/CVE-2025-58434_CVE-2025-59528](https://github.com/honney336/CVE-2025-58434_CVE-2025-59528)
 - [r3nsi15/Flowise-CVE-2025-58434-PasswordReset](https://github.com/r3nsi15/Flowise-CVE-2025-58434-PasswordReset)
+- [SteamPunk424/CVE-2025-58434-Unauthenticated-Password-Reset-Flowwise](https://github.com/SteamPunk424/CVE-2025-58434-Unauthenticated-Password-Reset-Flowwise)
 
 ### CVE-2025-58440
 - [ph-hitachi/CVE-2025-58440](https://github.com/ph-hitachi/CVE-2025-58440)
@@ -12615,6 +12621,7 @@
 - [Rohitberiwala/Claude-Code-MCP-Injection-PoC](https://github.com/Rohitberiwala/Claude-Code-MCP-Injection-PoC)
 - [DBarr3/AETHER-PROTOCOL-P](https://github.com/DBarr3/AETHER-PROTOCOL-P)
 - [NetVanguard-cmd/CVE-2025-59536](https://github.com/NetVanguard-cmd/CVE-2025-59536)
+- [TreRB/ai-ide-config-guard](https://github.com/TreRB/ai-ide-config-guard)
 
 ### CVE-2025-59718 (2025-12-09)
 
@@ -13860,9 +13867,6 @@
 </code>
 
 - [teteco/CVE-2025-67070-Intelbras-CFTV-MFA-Bypass](https://github.com/teteco/CVE-2025-67070-Intelbras-CFTV-MFA-Bypass)
-
-### CVE-2025-67126
-- [ashshh1/CVE-2025-67126](https://github.com/ashshh1/CVE-2025-67126)
 
 ### CVE-2025-67158 (2026-01-02)
 
@@ -20799,6 +20803,13 @@
 - [guinea-offensive-security/Ofbiz-RCE](https://github.com/guinea-offensive-security/Ofbiz-RCE)
 - [luizgaf/CVE-2024-32113-Exploit](https://github.com/luizgaf/CVE-2024-32113-Exploit)
 
+### CVE-2024-32114 (2024-05-02)
+
+<code>In Apache ActiveMQ 6.x, the default configuration doesn't secure the API web context (where the Jolokia JMX REST API and the Message REST API are located).\nIt means that anyone can use these layers without any required authentication. Potentially, anyone can interact with the broker (using Jolokia JMX REST API) and/or produce/consume messages or purge/delete destinations (using the Message REST API).\n\nTo mitigate, users can update the default conf/jetty.xml configuration file to add authentication requirement:\n&lt;bean id=&quot;securityConstraintMapping&quot; class=&quot;org.eclipse.jetty.security.ConstraintMapping&quot;&gt;\n  &lt;property name=&quot;constraint&quot; ref=&quot;securityConstraint&quot; /&gt;\n  &lt;property name=&quot;pathSpec&quot; value=&quot;/&quot; /&gt;\n&lt;/bean&gt;\n\nOr we encourage users to upgrade to Apache ActiveMQ 6.1.2 where the default configuration has been updated with authentication by default.\n
+</code>
+
+- [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
+
 ### CVE-2024-32136 (2024-04-15)
 
 <code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Xenioushk BWL Advanced FAQ Manager.This issue affects BWL Advanced FAQ Manager: from n/a through 2.0.3.\n\n
@@ -23492,7 +23503,7 @@
 - [sparrowhawk1113/Exploit-for-CVE-2024-46987](https://github.com/sparrowhawk1113/Exploit-for-CVE-2024-46987)
 - [Rival420/CVE-2024-46987](https://github.com/Rival420/CVE-2024-46987)
 - [advaitpathak21/CVE-2024-46987](https://github.com/advaitpathak21/CVE-2024-46987)
-- [rabouzia/CVE-2024-46987](https://github.com/rabouzia/CVE-2024-46987)
+- [ramzerk/CVE-2024-46987](https://github.com/ramzerk/CVE-2024-46987)
 - [BLUEBERRYP1LL/CVE-2024-46987](https://github.com/BLUEBERRYP1LL/CVE-2024-46987)
 - [bootstrapbool/msf-cve-2024-46987](https://github.com/bootstrapbool/msf-cve-2024-46987)
 
@@ -27483,6 +27494,7 @@
 - [Gill-Singh-A/CVE-2023-20198-Exploit](https://github.com/Gill-Singh-A/CVE-2023-20198-Exploit)
 - [gustavorobertux/cisco-cve-2023-20198-checker](https://github.com/gustavorobertux/cisco-cve-2023-20198-checker)
 - [telly251/forwardnetworksdemo](https://github.com/telly251/forwardnetworksdemo)
+- [AjayKalbhile/Cisco-SD-WAN-Auth-Bypass-Pentest](https://github.com/AjayKalbhile/Cisco-SD-WAN-Auth-Bypass-Pentest)
 
 ### CVE-2023-20209 (2023-08-16)
 
@@ -33739,6 +33751,7 @@
 - [RockyDesigne/SSP-Assignment-3-RCEYouLater](https://github.com/RockyDesigne/SSP-Assignment-3-RCEYouLater)
 - [sangrok-jeon/CVE-2023-46604-Analysis](https://github.com/sangrok-jeon/CVE-2023-46604-Analysis)
 - [mkdemir/activemq-lockbit-analysis](https://github.com/mkdemir/activemq-lockbit-analysis)
+- [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
 
 ### CVE-2023-46615 (2024-02-12)
 
@@ -34149,12 +34162,6 @@
 </code>
 
 - [vinnie1717/CVE-2023-48974](https://github.com/vinnie1717/CVE-2023-48974)
-
-### CVE-2023-48981
-- [tristao-io/CVE-2023-48981](https://github.com/tristao-io/CVE-2023-48981)
-
-### CVE-2023-48983
-- [tristao-io/CVE-2023-48983](https://github.com/tristao-io/CVE-2023-48983)
 
 ### CVE-2023-49002 (2023-12-27)
 
@@ -41187,6 +41194,7 @@
 
 - [mbadanoiu/CVE-2022-41678](https://github.com/mbadanoiu/CVE-2022-41678)
 - [URJACK2025/CVE-2022-41678](https://github.com/URJACK2025/CVE-2022-41678)
+- [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
 
 ### CVE-2022-41717 (2022-12-08)
 
@@ -42257,13 +42265,6 @@
 
 - [Satheesh575555/frameworks_minikin_AOSP10_r33_CVE-2021-0313](https://github.com/Satheesh575555/frameworks_minikin_AOSP10_r33_CVE-2021-0313)
 
-### CVE-2021-0314 (2021-02-10)
-
-<code>In onCreate of UninstallerActivity, there is a possible way to uninstall an all without informed user consent due to a tapjacking/overlay attack. This could lead to local escalation of privilege with User execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-8.1 Android-9Android ID: A-171221302
-</code>
-
-- [nanopathi/framework_base_AOSP10_r33_CVE-2021-0314](https://github.com/nanopathi/framework_base_AOSP10_r33_CVE-2021-0314)
-
 ### CVE-2021-0315 (2021-01-11)
 
 <code>In onCreate of GrantCredentialsPermissionActivity.java, there is a possible way to convince the user to grant an app access to an account due to a tapjacking/overlay attack. This could lead to local escalation of privilege with User execution privileges needed. User interaction is needed for exploitation. Product: Android; Versions: Android-8.1, Android-9, Android-10, Android-11, Android-8.0; Android ID: A-169763814.
@@ -43233,6 +43234,7 @@
 - [Sornphut/OverlayFS---CVE-2021-3493](https://github.com/Sornphut/OverlayFS---CVE-2021-3493)
 - [cyberx-1/OverlayFS-CVE-2021-3493](https://github.com/cyberx-1/OverlayFS-CVE-2021-3493)
 - [George-Yanni/DeepRoot](https://github.com/George-Yanni/DeepRoot)
+- [iqbalhussainas/OverlayFS-LPE-Exploit](https://github.com/iqbalhussainas/OverlayFS-LPE-Exploit)
 
 ### CVE-2021-3516 (2021-06-01)
 
@@ -47392,6 +47394,7 @@
 - [sobanahmed6061/CVE-2021-41773-RedTeam](https://github.com/sobanahmed6061/CVE-2021-41773-RedTeam)
 - [abds059/APACHE-PATH-TRAVERSAL-RCE-CVE-2021-41773-](https://github.com/abds059/APACHE-PATH-TRAVERSAL-RCE-CVE-2021-41773-)
 - [Kouf320/attacker-lab-cve-2017-5638-cve-2021-41773-paper](https://github.com/Kouf320/attacker-lab-cve-2017-5638-cve-2021-41773-paper)
+- [JKIM72403/CS4277-CVE-Path-Traversal-Apache-HTTP-Server](https://github.com/JKIM72403/CS4277-CVE-Path-Traversal-Apache-HTTP-Server)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -48741,7 +48744,6 @@
 <code>In Expat (aka libexpat) before 2.4.3, a left shift by 29 (or more) places in the storeAtts function in xmlparse.c can lead to realloc misbehavior (e.g., allocating too few bytes, or only freeing memory).
 </code>
 
-- [nanopathi/external_expat_AOSP10_r33_CVE-2021-45960](https://github.com/nanopathi/external_expat_AOSP10_r33_CVE-2021-45960)
 - [Trinadh465/external_lib_AOSP10_r33_CVE-2021-45960_CVE-2021-46143-](https://github.com/Trinadh465/external_lib_AOSP10_r33_CVE-2021-45960_CVE-2021-46143-)
 
 ### CVE-2021-46067 (2022-01-06)
@@ -61171,7 +61173,6 @@
 
 ### CVE-2018-10993
 - [nicolastsk/cve-2018-10993](https://github.com/nicolastsk/cve-2018-10993)
-- [azeus7/pt](https://github.com/azeus7/pt)
 
 ### CVE-2018-11235 (2018-05-30)
 
@@ -62985,6 +62986,9 @@
 - [althany/CVE-2017-0144_Lab-Guide](https://github.com/althany/CVE-2017-0144_Lab-Guide)
 - [FireTemple/Blackash-CVE-2017-0144](https://github.com/FireTemple/Blackash-CVE-2017-0144)
 - [Mitsu-bis/Eternal-Blue-CVE-2017-0144-THM-Write-Up](https://github.com/Mitsu-bis/Eternal-Blue-CVE-2017-0144-THM-Write-Up)
+- [klairmanraj/Multi-VLAN-Enterprise-Network-Security-Infrastructure](https://github.com/klairmanraj/Multi-VLAN-Enterprise-Network-Security-Infrastructure)
+- [klairmanraj/Vulnerability-Risk-Assessment-TVRA-Enterprise-Network](https://github.com/klairmanraj/Vulnerability-Risk-Assessment-TVRA-Enterprise-Network)
+- [klairmanraj/Multi-VLAN-Enterprise-Network-Vulnerability-Assessment](https://github.com/klairmanraj/Multi-VLAN-Enterprise-Network-Vulnerability-Assessment)
 
 ### CVE-2017-0145 (2017-03-17)
 
@@ -65921,6 +65925,7 @@
 - [cl4ym0re/CVE-2016-3088](https://github.com/cl4ym0re/CVE-2016-3088)
 - [YutuSec/ActiveMQ_Crack](https://github.com/YutuSec/ActiveMQ_Crack)
 - [HeArtE4t3r/CVE-2016-3088](https://github.com/HeArtE4t3r/CVE-2016-3088)
+- [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
 
 ### CVE-2016-3113 (2017-08-07)
 
@@ -67518,6 +67523,7 @@
 - [jas502n/CVE-2015-5254](https://github.com/jas502n/CVE-2015-5254)
 - [Ma1Dong/ActiveMQ_CVE-2015-5254](https://github.com/Ma1Dong/ActiveMQ_CVE-2015-5254)
 - [guigui237/Exploitation-de-la-vuln-rabilit-CVE-2015-5254-](https://github.com/guigui237/Exploitation-de-la-vuln-rabilit-CVE-2015-5254-)
+- [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
 
 ### CVE-2015-5347 (2016-04-12)
 
