@@ -403,6 +403,13 @@
 
 - [SowatKheang/CVE_2026_2576_PoC](https://github.com/SowatKheang/CVE_2026_2576_PoC)
 
+### CVE-2026-2600 (2026-04-04)
+
+<code>The ElementsKit Elementor Addons and Templates plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'ekit_tab_title' parameter in the Simple Tab widget in all versions up to, and including, 3.7.9 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+</code>
+
+- [FOLKS-iwd/CVE-2026-2600-POC](https://github.com/FOLKS-iwd/CVE-2026-2600-POC)
+
 ### CVE-2026-2631 (2026-03-11)
 
 <code>The Datalogics Ecommerce Delivery  WordPress plugin before 2.6.60 exposes an unauthenticated REST endpoint that allows any remote user to modify the option `datalogics_token` without verification. This token is subsequently used for authentication in a protected endpoint that allows users to perform arbitrary WordPress `update_option()` operations. Attackers can use this to enable registartion and to set the default role as Administrator.
@@ -440,6 +447,13 @@
 </code>
 
 - [hakaioffsec/Centreon-Exploits-2026](https://github.com/hakaioffsec/Centreon-Exploits-2026)
+
+### CVE-2026-2754 (2026-03-06)
+
+<code>Navtor NavBox exposes sensitive configuration and operational data due to missing authentication on HTTP API endpoints. An unauthenticated remote attacker with network access to the device can execute HTTP GET requests to TCP port 8080 to retrieve internal network parameters including ECDIS &amp; OT Information, device identifiers, and service status logs.
+</code>
+
+- [PegasusMetaSec/PEGASUS-CVE-2026-2754](https://github.com/PegasusMetaSec/PEGASUS-CVE-2026-2754)
 
 ### CVE-2026-2763 (2026-02-24)
 
@@ -665,6 +679,7 @@
 </code>
 
 - [Nxploited/CVE-2026-4484](https://github.com/Nxploited/CVE-2026-4484)
+- [PegasusMetaSec/PEGASUS-CVE-2026-4484](https://github.com/PegasusMetaSec/PEGASUS-CVE-2026-4484)
 
 ### CVE-2026-4631 (2026-04-07)
 
@@ -772,6 +787,13 @@
 </code>
 
 - [davidrxchester/CVE-2026-5530](https://github.com/davidrxchester/CVE-2026-5530)
+
+### CVE-2026-5760 (2026-04-20)
+
+<code>SGLang's reranking endpoint (/v1/rerank) achieves Remote Code Execution (RCE) when a model file containing a malcious tokenizer.chat_template is loaded, as the Jinja2 chat templates are rendered using an unsandboxed jinja2.Environment().
+</code>
+
+- [Stuub/SGLang-0.5.9-RCE](https://github.com/Stuub/SGLang-0.5.9-RCE)
 
 ### CVE-2026-6042 (2026-04-10)
 
@@ -969,13 +991,6 @@
 </code>
 
 - [jenniferreire26/CVE-2026-20963](https://github.com/jenniferreire26/CVE-2026-20963)
-
-### CVE-2026-20999 (2026-03-16)
-
-<code>Authentication bypass by replay in Smart Switch prior to version 3.7.69.15 allows remote attackers to trigger privileged functions.
-</code>
-
-- [lasdjk/CVE-2026-20999-my-thought](https://github.com/lasdjk/CVE-2026-20999-my-thought)
 
 ### CVE-2026-21385 (2026-03-02)
 
@@ -2132,7 +2147,11 @@
 
 - [mbanyamer/CVE-2026-26335-Calero-VeraSMART-RCE](https://github.com/mbanyamer/CVE-2026-26335-Calero-VeraSMART-RCE)
 
-### CVE-2026-26399
+### CVE-2026-26399 (2026-04-20)
+
+<code>A stack-use-after-return issue exists in the Arduino_Core_STM32 library prior to version 1.7.0. The pwm_start() function allocates a TIM_HandleTypeDef structure on the stack and passes its address to HAL initialization routines, where it is stored in a global timer handle registry. After the function returns, interrupt service routines may dereference this dangling pointer, resulting in memory corruption.
+</code>
+
 - [Acen28/CVE-2026-26399-Disclosure](https://github.com/Acen28/CVE-2026-26399-Disclosure)
 
 ### CVE-2026-26416 (2026-03-05)
@@ -2981,6 +3000,7 @@
 - [masterwok/PoC-CVE-2026-33017](https://github.com/masterwok/PoC-CVE-2026-33017)
 - [oscar-mine/CVE-2026-33017-Exploit](https://github.com/oscar-mine/CVE-2026-33017-Exploit)
 - [0xBlackash/CVE-2026-33017](https://github.com/0xBlackash/CVE-2026-33017)
+- [Jorrit-VM/CVE-2026-33017](https://github.com/Jorrit-VM/CVE-2026-33017)
 
 ### CVE-2026-33032 (2026-03-30)
 
@@ -3321,7 +3341,11 @@
 
 - [keraattin/CVE-2026-35517](https://github.com/keraattin/CVE-2026-35517)
 
-### CVE-2026-35570
+### CVE-2026-35570 (2026-04-20)
+
+<code>OpenClaude is an open-source coding-agent command line interface for cloud and local model providers. Versions prior to 0.5.1 have a logic flaw in `bashToolHasPermission()` inside `src/tools/BashTool/bashPermissions.ts`. When the sandbox auto-allow feature is active and no explicit deny rule is configured, the function returns an `allow` result immediately — before the path constraint filter (`checkPathConstraints`) is ever evaluated. This allows commands containing path traversal sequences (e.g., `../../../../../etc/passwd`) to bypass directory restrictions entirely. Version 0.5.1 contains a patch for the issue.
+</code>
+
 - [Rickidevs/CVE-2026-35570](https://github.com/Rickidevs/CVE-2026-35570)
 
 ### CVE-2026-35584 (2026-04-07)
@@ -3349,6 +3373,7 @@
 - [BishopFox/CVE-2026-35616-check](https://github.com/BishopFox/CVE-2026-35616-check)
 - [keraattin/CVE-2026-35616](https://github.com/keraattin/CVE-2026-35616)
 - [Alaatk/CVE-2026-35616](https://github.com/Alaatk/CVE-2026-35616)
+- [wa6n3r/CVE-2026-35616](https://github.com/wa6n3r/CVE-2026-35616)
 
 ### CVE-2026-37748
 - [menevarad007/CVE-2026-37748](https://github.com/menevarad007/CVE-2026-37748)
@@ -8490,6 +8515,7 @@
 - [Dairrow/CVE-2025-31161](https://github.com/Dairrow/CVE-2025-31161)
 - [Shisones/CVE-2025-31161](https://github.com/Shisones/CVE-2025-31161)
 - [eserror/CVE-2025-31161](https://github.com/eserror/CVE-2025-31161)
+- [0xBlackash/CVE-2025-31161](https://github.com/0xBlackash/CVE-2025-31161)
 
 ### CVE-2025-31200 (2025-04-16)
 
@@ -13844,7 +13870,11 @@
 
 - [kabir0104k/CVE-2025-66947](https://github.com/kabir0104k/CVE-2025-66947)
 
-### CVE-2025-66954
+### CVE-2025-66954 (2026-04-20)
+
+<code>A vulnerability exists in the Buffalo Link Station version 1.85-0.01 that allows unauthenticated or guest-level users to enumerate valid usernames and their associated privilege roles. The issue is triggered by modifying a parameter within requests sent to the /nasapi endpoint.
+</code>
+
 - [DBmonster19/CVE-2025-66954](https://github.com/DBmonster19/CVE-2025-66954)
 
 ### CVE-2025-66955 (2026-03-12)
@@ -14246,6 +14276,13 @@
 </code>
 
 - [ChewKeanHo/research-cve-2025-68971](https://github.com/ChewKeanHo/research-cve-2025-68971)
+
+### CVE-2025-68999 (2026-01-22)
+
+<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in HappyMonster Happy Addons for Elementor happy-elementor-addons allows Blind SQL Injection.This issue affects Happy Addons for Elementor: from n/a through &lt;= 3.20.4.
+</code>
+
+- [FOLKS-iwd/CVE-2025-68999-POC](https://github.com/FOLKS-iwd/CVE-2025-68999-POC)
 
 ### CVE-2025-69015 (2025-12-30)
 
@@ -15021,7 +15058,6 @@
 </code>
 
 - [Chocapikk/CVE-2024-1212](https://github.com/Chocapikk/CVE-2024-1212)
-- [Rehan07-Human/Exploiting-RCE-Cyber_Project_CVE-2024-1212](https://github.com/Rehan07-Human/Exploiting-RCE-Cyber_Project_CVE-2024-1212)
 - [r0otk3r/CVE-2024-1212](https://github.com/r0otk3r/CVE-2024-1212)
 
 ### CVE-2024-1247 (2024-02-09)
@@ -15422,6 +15458,7 @@
 - [michalAshurov/writeup-CVE-2024-3094](https://github.com/michalAshurov/writeup-CVE-2024-3094)
 - [extracoding-dozen/CVE-2024-3094](https://github.com/extracoding-dozen/CVE-2024-3094)
 - [ElinaNotElina/cve-2024-3094-analysis](https://github.com/ElinaNotElina/cve-2024-3094-analysis)
+- [vnchk1/sec_review_cve-2024-3094](https://github.com/vnchk1/sec_review_cve-2024-3094)
 - [h3raklez/CVE-2024-3094](https://github.com/h3raklez/CVE-2024-3094)
 - [Ava-Vispilio/CVE-2024-3094](https://github.com/Ava-Vispilio/CVE-2024-3094)
 
@@ -41985,7 +42022,7 @@
 </code>
 
 - [kasem545/CVE-2022-46364-Poc](https://github.com/kasem545/CVE-2022-46364-Poc)
-- [cybermaksxx/CVE-2022-46364-Proof-of-the-concept](https://github.com/cybermaksxx/CVE-2022-46364-Proof-of-the-concept)
+- [cybermaksx/CVE-2022-46364-Proof-of-the-concept](https://github.com/cybermaksx/CVE-2022-46364-Proof-of-the-concept)
 - [Shashivanth009/CVE-2022-46364---Apache-CXF-XOP-Include-LFI-PoC](https://github.com/Shashivanth009/CVE-2022-46364---Apache-CXF-XOP-Include-LFI-PoC)
 - [0xmid00/CVE-2022-46364-poc](https://github.com/0xmid00/CVE-2022-46364-poc)
 - [jwsly12/CVE-2022-46364-htb-ctf](https://github.com/jwsly12/CVE-2022-46364-htb-ctf)
@@ -70936,6 +70973,7 @@
 - [h3x0v3rl0rd/distccd_rce_CVE-2004-2687](https://github.com/h3x0v3rl0rd/distccd_rce_CVE-2004-2687)
 - [k4miyo/CVE-2004-2687](https://github.com/k4miyo/CVE-2004-2687)
 - [nulltrace1336/Metasploitable-2-Distcc-Exploit-via-Kali-Linux-CVE-2004-2687](https://github.com/nulltrace1336/Metasploitable-2-Distcc-Exploit-via-Kali-Linux-CVE-2004-2687)
+- [micheaol/distccd_rce_CVE-2004-2687](https://github.com/micheaol/distccd_rce_CVE-2004-2687)
 
 ### CVE-2004-6768
 - [yougboiz/Metasploit-CVE-2004-6768](https://github.com/yougboiz/Metasploit-CVE-2004-6768)
