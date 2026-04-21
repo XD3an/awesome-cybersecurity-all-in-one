@@ -3241,7 +3241,6 @@
 - [hg0434hongzh0/CVE-2026-34197](https://github.com/hg0434hongzh0/CVE-2026-34197)
 - [keraattin/CVE-2026-34197](https://github.com/keraattin/CVE-2026-34197)
 - [xshysjhq/CVE-2026-34197-payload-Apache-ActiveMQ-](https://github.com/xshysjhq/CVE-2026-34197-payload-Apache-ActiveMQ-)
-- [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
 
 ### CVE-2026-34200 (2026-03-31)
 
@@ -3353,7 +3352,7 @@
 <code>FreeScout is a free help desk and shared inbox built with PHP's Laravel framework. Prior to 1.8.212, the endpoint GET /thread/read/{conversation_id}/{thread_id} does not require authentication and does not validate whether the given thread_id belongs to the given conversation_id. This allows any unauthenticated attacker to mark any thread as read by passing arbitrary IDs, enumerate valid thread IDs via HTTP response codes (200 vs 404), and manipulate opened_at timestamps across conversations (IDOR). This vulnerability is fixed in 1.8.212.
 </code>
 
-- [NovaisLeonardo/CVE-2026-35584](https://github.com/NovaisLeonardo/CVE-2026-35584)
+- [LeonardoNovais7/CVE-2026-35584](https://github.com/LeonardoNovais7/CVE-2026-35584)
 
 ### CVE-2026-35585 (2026-04-07)
 
@@ -3432,7 +3431,11 @@
 
 - [keraattin/CVE-2026-39842](https://github.com/keraattin/CVE-2026-39842)
 
-### CVE-2026-39866
+### CVE-2026-39866 (2026-04-21)
+
+<code>Lawnchair is a free, open-source home app for Android. Prior to commit fcba413f55dd47f8a3921445252849126c6266b2, command injection in release_update.yml workflow dispatch input allows arbitrary code execution. Commit fcba413f55dd47f8a3921445252849126c6266b2 patches the issue.
+</code>
+
 - [abhayclasher/CVE-2026-39866](https://github.com/abhayclasher/CVE-2026-39866)
 
 ### CVE-2026-39912 (2026-04-09)
@@ -5799,6 +5802,13 @@
 
 - [fleetcaptain/everest-backup-cve-2025-11380](https://github.com/fleetcaptain/everest-backup-cve-2025-11380)
 
+### CVE-2025-11460 (2025-11-06)
+
+<code>Use after free in Storage in Google Chrome prior to 141.0.7390.65 allowed a remote attacker to execute arbitrary code via a crafted video file. (Chromium security severity: High)
+</code>
+
+- [lylzjnqe/CVE-2025-11460-Chrome-RCE](https://github.com/lylzjnqe/CVE-2025-11460-Chrome-RCE)
+
 ### CVE-2025-11492 (2025-10-16)
 
 <code>In the ConnectWise Automate Agent, communications could be configured to use HTTP instead of HTTPS. In such cases, an on-path threat actor with a man-in-the-middle network position could intercept, modify, or replay agent-server traffic. Additionally, the encryption method used to obfuscate some communications over the HTTP channel is updated in the Automate 2025.9 patch to enforce HTTPS for all agent communications.
@@ -5969,13 +5979,6 @@
 </code>
 
 - [d0n601/CVE-2025-12720](https://github.com/d0n601/CVE-2025-12720)
-
-### CVE-2025-12721 (2025-12-06)
-
-<code>The g-FFL Cockpit plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.7.1 via the /server_status REST API endpoint due to a lack of capability checks. This makes it possible for unauthenticated attackers to extract information about the server.
-</code>
-
-- [d0n601/CVE-2025-12721](https://github.com/d0n601/CVE-2025-12721)
 
 ### CVE-2025-12735 (2025-11-05)
 
@@ -11635,6 +11638,7 @@
 - [orgito1015/CVE-2025-55182-RCE-Exploit](https://github.com/orgito1015/CVE-2025-55182-RCE-Exploit)
 - [keklick1337/CVE-2025-55182-golang-PoC](https://github.com/keklick1337/CVE-2025-55182-golang-PoC)
 - [rubensuxo-eh/react2shell-exploit](https://github.com/rubensuxo-eh/react2shell-exploit)
+- [CirqueiraDev/MassExploit-CVE-2025-55182](https://github.com/CirqueiraDev/MassExploit-CVE-2025-55182)
 - [aastikgakhar/CVE-2025-55182-react2shell](https://github.com/aastikgakhar/CVE-2025-55182-react2shell)
 - [zamdevio/r2s](https://github.com/zamdevio/r2s)
 - [AdityaBhatt3010/React2Shell-CVE-2025-55182-The-Deserialization-Bug-That-Broke-the-Web](https://github.com/AdityaBhatt3010/React2Shell-CVE-2025-55182-The-Deserialization-Bug-That-Broke-the-Web)
@@ -15022,6 +15026,7 @@
 - [ndt2111200203/CVE-2024-1086](https://github.com/ndt2111200203/CVE-2024-1086)
 - [sandesh9978/cve-2024-1086-lpe](https://github.com/sandesh9978/cve-2024-1086-lpe)
 - [vettrivel007/CVE-2024-1086](https://github.com/vettrivel007/CVE-2024-1086)
+- [ClaraSto/CVE-2024-1086_Ausarbeitung](https://github.com/ClaraSto/CVE-2024-1086_Ausarbeitung)
 
 ### CVE-2024-1112 (2024-01-31)
 
@@ -15378,6 +15383,7 @@
 
 - [lfillaz/CVE-2024-2997](https://github.com/lfillaz/CVE-2024-2997)
 - [0xUho/CVE-2024-2997](https://github.com/0xUho/CVE-2024-2997)
+- [o9-9/CVE-2024-2997](https://github.com/o9-9/CVE-2024-2997)
 
 ### CVE-2024-3094 (2024-03-29)
 
@@ -15940,6 +15946,7 @@
 - [r0otk3r/CVE-2024-4577](https://github.com/r0otk3r/CVE-2024-4577)
 - [mananjain61/PHP-CGI-INTERNAL-RCE](https://github.com/mananjain61/PHP-CGI-INTERNAL-RCE)
 - [Skycritch/CVE-2024-4577](https://github.com/Skycritch/CVE-2024-4577)
+- [CirqueiraDev/MassExploit-CVE-2024-4577](https://github.com/CirqueiraDev/MassExploit-CVE-2024-4577)
 - [Ianthinus/CVE-2024-4577](https://github.com/Ianthinus/CVE-2024-4577)
 - [InfoSec-DB/PHPCGIScanner](https://github.com/InfoSec-DB/PHPCGIScanner)
 - [a1ex-var1amov/ctf-cve-2024-4577](https://github.com/a1ex-var1amov/ctf-cve-2024-4577)
@@ -20839,13 +20846,6 @@
 - [YongYe-Security/CVE-2024-32113](https://github.com/YongYe-Security/CVE-2024-32113)
 - [guinea-offensive-security/Ofbiz-RCE](https://github.com/guinea-offensive-security/Ofbiz-RCE)
 - [luizgaf/CVE-2024-32113-Exploit](https://github.com/luizgaf/CVE-2024-32113-Exploit)
-
-### CVE-2024-32114 (2024-05-02)
-
-<code>In Apache ActiveMQ 6.x, the default configuration doesn't secure the API web context (where the Jolokia JMX REST API and the Message REST API are located).\nIt means that anyone can use these layers without any required authentication. Potentially, anyone can interact with the broker (using Jolokia JMX REST API) and/or produce/consume messages or purge/delete destinations (using the Message REST API).\n\nTo mitigate, users can update the default conf/jetty.xml configuration file to add authentication requirement:\n&lt;bean id=&quot;securityConstraintMapping&quot; class=&quot;org.eclipse.jetty.security.ConstraintMapping&quot;&gt;\n  &lt;property name=&quot;constraint&quot; ref=&quot;securityConstraint&quot; /&gt;\n  &lt;property name=&quot;pathSpec&quot; value=&quot;/&quot; /&gt;\n&lt;/bean&gt;\n\nOr we encourage users to upgrade to Apache ActiveMQ 6.1.2 where the default configuration has been updated with authentication by default.\n
-</code>
-
-- [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
 
 ### CVE-2024-32136 (2024-04-15)
 
@@ -33788,7 +33788,6 @@
 - [RockyDesigne/SSP-Assignment-3-RCEYouLater](https://github.com/RockyDesigne/SSP-Assignment-3-RCEYouLater)
 - [sangrok-jeon/CVE-2023-46604-Analysis](https://github.com/sangrok-jeon/CVE-2023-46604-Analysis)
 - [mkdemir/activemq-lockbit-analysis](https://github.com/mkdemir/activemq-lockbit-analysis)
-- [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
 
 ### CVE-2023-46615 (2024-02-12)
 
@@ -34199,6 +34198,9 @@
 </code>
 
 - [vinnie1717/CVE-2023-48974](https://github.com/vinnie1717/CVE-2023-48974)
+
+### CVE-2023-48983
+- [tristao-io/CVE-2023-48983](https://github.com/tristao-io/CVE-2023-48983)
 
 ### CVE-2023-49002 (2023-12-27)
 
@@ -41231,7 +41233,6 @@
 
 - [mbadanoiu/CVE-2022-41678](https://github.com/mbadanoiu/CVE-2022-41678)
 - [URJACK2025/CVE-2022-41678](https://github.com/URJACK2025/CVE-2022-41678)
-- [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
 
 ### CVE-2022-41717 (2022-12-08)
 
@@ -65962,7 +65963,6 @@
 - [cl4ym0re/CVE-2016-3088](https://github.com/cl4ym0re/CVE-2016-3088)
 - [YutuSec/ActiveMQ_Crack](https://github.com/YutuSec/ActiveMQ_Crack)
 - [HeArtE4t3r/CVE-2016-3088](https://github.com/HeArtE4t3r/CVE-2016-3088)
-- [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
 
 ### CVE-2016-3113 (2017-08-07)
 
@@ -67560,7 +67560,6 @@
 - [jas502n/CVE-2015-5254](https://github.com/jas502n/CVE-2015-5254)
 - [Ma1Dong/ActiveMQ_CVE-2015-5254](https://github.com/Ma1Dong/ActiveMQ_CVE-2015-5254)
 - [guigui237/Exploitation-de-la-vuln-rabilit-CVE-2015-5254-](https://github.com/guigui237/Exploitation-de-la-vuln-rabilit-CVE-2015-5254-)
-- [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
 
 ### CVE-2015-5347 (2016-04-12)
 
