@@ -1,6 +1,13 @@
 # PoC in GitHub
 
 ## 2026
+### CVE-2026-0006 (2026-03-02)
+
+<code>In multiple locations, there is a possible out of bounds read and write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.
+</code>
+
+- [mobilehackinglab/CVE-2026-0006-openapv-poc](https://github.com/mobilehackinglab/CVE-2026-0006-openapv-poc)
+
 ### CVE-2026-0594 (2026-01-14)
 
 <code>The List Site Contributors plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'alpha' parameter in versions up to, and including, 1.1.8 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.
@@ -1956,6 +1963,13 @@
 
 - [lagathos/CVE-2026-25596](https://github.com/lagathos/CVE-2026-25596)
 
+### CVE-2026-25604 (2026-03-09)
+
+<code>In AWS Auth manager, the origin of the SAML authentication has been used as provided by the client and not verified against the actual instance URL. \nThis allowed to gain access to different instances with potentially different access controls by reusing SAML response from other instances.\n\nYou should upgrade to 9.22.0 version of provider if you use AWS Auth Manager.
+</code>
+
+- [John-Jung/CVE-2026-25604-PoC](https://github.com/John-Jung/CVE-2026-25604-PoC)
+
 ### CVE-2026-25643 (2026-02-06)
 
 <code>Frigate is a network video recorder (NVR) with realtime local object detection for IP cameras. Prior to 0.16.4, a critical Remote Command Execution (RCE) vulnerability has been identified in the Frigate integration with go2rtc. The application does not sanitize user input in the video stream configuration (config.yaml), allowing direct injection of system commands via the exec: directive. The go2rtc service executes these commands without restrictions. This vulnerability is only exploitable by an administrator or users who have exposed their Frigate install to the open internet with no authentication which allows anyone full administrative control. This vulnerability is fixed in 0.16.4.
@@ -2707,6 +2721,9 @@
 
 - [syphonetic/CVE-2026-30345](https://github.com/syphonetic/CVE-2026-30345)
 
+### CVE-2026-30368
+- [truekas/ls-poc](https://github.com/truekas/ls-poc)
+
 ### CVE-2026-30480 (2026-04-14)
 
 <code>A Local File Inclusion (LFI) vulnerability in the NFSen module (nfsen.inc.php) of LibreNMS 22.11.0-23-gd091788f2 allows authenticated attackers to include arbitrary PHP files from the server filesystem via path traversal sequences in the nfsen parameter.
@@ -3190,6 +3207,21 @@
 
 - [Letlaka/redsun-bluehammer-undefend-detection-pack](https://github.com/Letlaka/redsun-bluehammer-undefend-detection-pack)
 - [Bilal3755/Detecting_blue_hammer_vuln](https://github.com/Bilal3755/Detecting_blue_hammer_vuln)
+- [kaleth4/CVE-2026-33825](https://github.com/kaleth4/CVE-2026-33825)
+
+### CVE-2026-33826 (2026-04-14)
+
+<code>Improper input validation in Windows Active Directory allows an authorized attacker to execute code over an adjacent network.
+</code>
+
+- [kaleth4/CVE-2026-33826](https://github.com/kaleth4/CVE-2026-33826)
+
+### CVE-2026-33827 (2026-04-14)
+
+<code>Concurrent execution using shared resource with improper synchronization ('race condition') in Windows TCP/IP allows an unauthorized attacker to execute code over a network.
+</code>
+
+- [kaleth4/CVE-2026-33827](https://github.com/kaleth4/CVE-2026-33827)
 
 ### CVE-2026-33868 (2026-03-27)
 
@@ -3225,6 +3257,7 @@
 </code>
 
 - [dinhvaren/cve-2026-33937](https://github.com/dinhvaren/cve-2026-33937)
+- [EQSTLab/CVE-2026-33937](https://github.com/EQSTLab/CVE-2026-33937)
 
 ### CVE-2026-34005 (2026-03-29)
 
@@ -3268,6 +3301,7 @@
 - [hg0434hongzh0/CVE-2026-34197](https://github.com/hg0434hongzh0/CVE-2026-34197)
 - [keraattin/CVE-2026-34197](https://github.com/keraattin/CVE-2026-34197)
 - [xshysjhq/CVE-2026-34197-payload-Apache-ActiveMQ-](https://github.com/xshysjhq/CVE-2026-34197-payload-Apache-ActiveMQ-)
+- [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
 
 ### CVE-2026-34200 (2026-03-31)
 
@@ -12539,6 +12573,7 @@
 - [honney336/CVE-2025-58434_CVE-2025-59528](https://github.com/honney336/CVE-2025-58434_CVE-2025-59528)
 - [r3nsi15/Flowise-CVE-2025-58434-PasswordReset](https://github.com/r3nsi15/Flowise-CVE-2025-58434-PasswordReset)
 - [SteamPunk424/CVE-2025-58434-Unauthenticated-Password-Reset-Flowwise](https://github.com/SteamPunk424/CVE-2025-58434-Unauthenticated-Password-Reset-Flowwise)
+- [karimelsheikh1/HTB-Silentium-Writeup](https://github.com/karimelsheikh1/HTB-Silentium-Writeup)
 
 ### CVE-2025-58440
 - [ph-hitachi/CVE-2025-58440](https://github.com/ph-hitachi/CVE-2025-58440)
@@ -20879,6 +20914,13 @@
 - [guinea-offensive-security/Ofbiz-RCE](https://github.com/guinea-offensive-security/Ofbiz-RCE)
 - [luizgaf/CVE-2024-32113-Exploit](https://github.com/luizgaf/CVE-2024-32113-Exploit)
 
+### CVE-2024-32114 (2024-05-02)
+
+<code>In Apache ActiveMQ 6.x, the default configuration doesn't secure the API web context (where the Jolokia JMX REST API and the Message REST API are located).\nIt means that anyone can use these layers without any required authentication. Potentially, anyone can interact with the broker (using Jolokia JMX REST API) and/or produce/consume messages or purge/delete destinations (using the Message REST API).\n\nTo mitigate, users can update the default conf/jetty.xml configuration file to add authentication requirement:\n&lt;bean id=&quot;securityConstraintMapping&quot; class=&quot;org.eclipse.jetty.security.ConstraintMapping&quot;&gt;\n  &lt;property name=&quot;constraint&quot; ref=&quot;securityConstraint&quot; /&gt;\n  &lt;property name=&quot;pathSpec&quot; value=&quot;/&quot; /&gt;\n&lt;/bean&gt;\n\nOr we encourage users to upgrade to Apache ActiveMQ 6.1.2 where the default configuration has been updated with authentication by default.\n
+</code>
+
+- [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
+
 ### CVE-2024-32136 (2024-04-15)
 
 <code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Xenioushk BWL Advanced FAQ Manager.This issue affects BWL Advanced FAQ Manager: from n/a through 2.0.3.\n\n
@@ -23513,6 +23555,9 @@
 </code>
 
 - [h1thub/CVE-2024-46635](https://github.com/h1thub/CVE-2024-46635)
+
+### CVE-2024-46636
+- [NU1L0/CVE-2024-46636-SQLi-MODAPS](https://github.com/NU1L0/CVE-2024-46636-SQLi-MODAPS)
 
 ### CVE-2024-46658 (2024-10-03)
 
@@ -29524,7 +29569,6 @@
 - [LuemmelSec/CVE-2023-29357](https://github.com/LuemmelSec/CVE-2023-29357)
 - [KeyStrOke95/CVE-2023-29357-ExE](https://github.com/KeyStrOke95/CVE-2023-29357-ExE)
 - [Guillaume-Risch/cve-2023-29357-Sharepoint](https://github.com/Guillaume-Risch/cve-2023-29357-Sharepoint)
-- [Jev1337/CVE-2023-29357-Check](https://github.com/Jev1337/CVE-2023-29357-Check)
 - [AhmedMansour93/Event-ID-189-Rule-Name-SOC227-CVE-2023-29357](https://github.com/AhmedMansour93/Event-ID-189-Rule-Name-SOC227-CVE-2023-29357)
 - [DeividasTerechovas/SOC227-Microsoft-SharePoint-Server-Elevation-of-Privilege-Possible-CVE-2023-29357-Exploitation](https://github.com/DeividasTerechovas/SOC227-Microsoft-SharePoint-Server-Elevation-of-Privilege-Possible-CVE-2023-29357-Exploitation)
 - [DonVorrin/CVE-2023-29357](https://github.com/DonVorrin/CVE-2023-29357)
@@ -33827,6 +33871,7 @@
 - [RockyDesigne/SSP-Assignment-3-RCEYouLater](https://github.com/RockyDesigne/SSP-Assignment-3-RCEYouLater)
 - [sangrok-jeon/CVE-2023-46604-Analysis](https://github.com/sangrok-jeon/CVE-2023-46604-Analysis)
 - [mkdemir/activemq-lockbit-analysis](https://github.com/mkdemir/activemq-lockbit-analysis)
+- [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
 
 ### CVE-2023-46615 (2024-02-12)
 
@@ -36003,6 +36048,7 @@
 
 - [hxlxmj/CVE-2022-3590-WordPress-Vulnerability-Scanner](https://github.com/hxlxmj/CVE-2022-3590-WordPress-Vulnerability-Scanner)
 - [huynhvanphuc/CVE-2022-3590-WordPress-Vulnerability-Scanner](https://github.com/huynhvanphuc/CVE-2022-3590-WordPress-Vulnerability-Scanner)
+- [TJouleL/WordPress-6.9.1-Blind-SSRF](https://github.com/TJouleL/WordPress-6.9.1-Blind-SSRF)
 
 ### CVE-2022-3602 (2022-11-01)
 
@@ -41311,6 +41357,7 @@
 
 - [mbadanoiu/CVE-2022-41678](https://github.com/mbadanoiu/CVE-2022-41678)
 - [URJACK2025/CVE-2022-41678](https://github.com/URJACK2025/CVE-2022-41678)
+- [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
 
 ### CVE-2022-41717 (2022-12-08)
 
@@ -50631,7 +50678,6 @@
 - [jinnywc/CVE-2020-5902](https://github.com/jinnywc/CVE-2020-5902)
 - [GoodiesHQ/F5-Patch](https://github.com/GoodiesHQ/F5-Patch)
 - [jiansiting/CVE-2020-5902](https://github.com/jiansiting/CVE-2020-5902)
-- [wdlid/CVE-2020-5902-fix](https://github.com/wdlid/CVE-2020-5902-fix)
 - [Any3ite/CVE-2020-5902-F5BIG](https://github.com/Any3ite/CVE-2020-5902-F5BIG)
 - [k3nundrum/CVE-2020-5902](https://github.com/k3nundrum/CVE-2020-5902)
 - [inho28/CVE-2020-5902-F5-BIGIP](https://github.com/inho28/CVE-2020-5902-F5-BIGIP)
@@ -55506,6 +55552,7 @@
 - [0xbinder/android-kernel-exploitation-lab](https://github.com/0xbinder/android-kernel-exploitation-lab)
 - [mouseos/cve-2019-2215_SH-M08](https://github.com/mouseos/cve-2019-2215_SH-M08)
 - [i-redbyte/android-badbinder-demo](https://github.com/i-redbyte/android-badbinder-demo)
+- [wired0ut/CVE-2019-2215](https://github.com/wired0ut/CVE-2019-2215)
 
 ### CVE-2019-2525 (2019-01-16)
 
@@ -58084,6 +58131,7 @@
 - [bayazid-bit/CVE-2019-15107](https://github.com/bayazid-bit/CVE-2019-15107)
 - [ArtemCyberLab/Project-Exploitation-of-Webmin-Authentication-Vulnerability](https://github.com/ArtemCyberLab/Project-Exploitation-of-Webmin-Authentication-Vulnerability)
 - [adampawelczyk/cve-2019-15107](https://github.com/adampawelczyk/cve-2019-15107)
+- [viglia/cve-2019-15107](https://github.com/viglia/cve-2019-15107)
 
 ### CVE-2019-15120 (2019-08-16)
 
@@ -63154,6 +63202,7 @@
 - [klairmanraj/Multi-VLAN-Enterprise-Network-Security-Infrastructure](https://github.com/klairmanraj/Multi-VLAN-Enterprise-Network-Security-Infrastructure)
 - [klairmanraj/Vulnerability-Risk-Assessment-TVRA-Enterprise-Network](https://github.com/klairmanraj/Vulnerability-Risk-Assessment-TVRA-Enterprise-Network)
 - [klairmanraj/Multi-VLAN-Enterprise-Network-Vulnerability-Assessment](https://github.com/klairmanraj/Multi-VLAN-Enterprise-Network-Vulnerability-Assessment)
+- [dannic145/EternalBlue-DoublePulsar-Exploit-Demonstration](https://github.com/dannic145/EternalBlue-DoublePulsar-Exploit-Demonstration)
 
 ### CVE-2017-0145 (2017-03-17)
 
@@ -66090,6 +66139,7 @@
 - [cl4ym0re/CVE-2016-3088](https://github.com/cl4ym0re/CVE-2016-3088)
 - [YutuSec/ActiveMQ_Crack](https://github.com/YutuSec/ActiveMQ_Crack)
 - [HeArtE4t3r/CVE-2016-3088](https://github.com/HeArtE4t3r/CVE-2016-3088)
+- [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
 
 ### CVE-2016-3113 (2017-08-07)
 
@@ -67680,6 +67730,7 @@
 - [jas502n/CVE-2015-5254](https://github.com/jas502n/CVE-2015-5254)
 - [Ma1Dong/ActiveMQ_CVE-2015-5254](https://github.com/Ma1Dong/ActiveMQ_CVE-2015-5254)
 - [guigui237/Exploitation-de-la-vuln-rabilit-CVE-2015-5254-](https://github.com/guigui237/Exploitation-de-la-vuln-rabilit-CVE-2015-5254-)
+- [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
 
 ### CVE-2015-5347 (2016-04-12)
 
@@ -68828,6 +68879,7 @@
 - [ambjlou/it355-lab4-enterprise-lan-security](https://github.com/ambjlou/it355-lab4-enterprise-lan-security)
 - [kaleth4/-CVE-2014-6271](https://github.com/kaleth4/-CVE-2014-6271)
 - [kaleth4/CVE-2014-6271](https://github.com/kaleth4/CVE-2014-6271)
+- [V3nG4mxV1p3r/Mobile-Drop-Device-SOC-Detection](https://github.com/V3nG4mxV1p3r/Mobile-Drop-Device-SOC-Detection)
 
 ### CVE-2014-6287 (2014-10-07)
 
