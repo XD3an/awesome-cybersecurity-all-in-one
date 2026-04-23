@@ -15,6 +15,13 @@
 
 - [m4sh-wacker/CVE-2026-0594-ListSiteContributors-Plugin-Exploit](https://github.com/m4sh-wacker/CVE-2026-0594-ListSiteContributors-Plugin-Exploit)
 
+### CVE-2026-0603 (2026-01-23)
+
+<code>A flaw was found in Hibernate. A remote attacker with low privileges could exploit a second-order SQL injection vulnerability by providing specially crafted, unsanitized non-alphanumeric characters in the ID column when the InlineIdsOrClauseBuilder is used. This could lead to sensitive information disclosure, such as reading system files, and allow for data manipulation or deletion within the application's database, resulting in an application level denial of service.
+</code>
+
+- [EQSTLab/CVE-2026-0603](https://github.com/EQSTLab/CVE-2026-0603)
+
 ### CVE-2026-0622 (2026-01-20)
 
 <code>Open 5GS WebUI uses a hard-coded JWT signing key (change-me) whenever the environment variable JWT_SECRET_KEY is unset
@@ -807,6 +814,9 @@
 
 - [Stuub/SGLang-0.5.9-RCE](https://github.com/Stuub/SGLang-0.5.9-RCE)
 
+### CVE-2026-6018
+- [m0r4a/CVE-2026-6018-9-Local-Privilege-Escalation-Chain](https://github.com/m0r4a/CVE-2026-6018-9-Local-Privilege-Escalation-Chain)
+
 ### CVE-2026-6042 (2026-04-10)
 
 <code>A security flaw has been discovered in musl libc up to 1.2.6. Affected is the function iconv of the file src/locale/iconv.c of the component GB18030 4-byte Decoder. Performing a manipulation results in inefficient algorithmic complexity. The attack must be initiated from a local position. To fix this issue, it is recommended to deploy a patch.
@@ -1510,7 +1520,7 @@
 - [fcjaviergarcia/CVE-2026-23744-POC](https://github.com/fcjaviergarcia/CVE-2026-23744-POC)
 - [0xg00se/CVE-2026-23744-script](https://github.com/0xg00se/CVE-2026-23744-script)
 - [d3vn0mi/CVE-2026-23744-POC](https://github.com/d3vn0mi/CVE-2026-23744-POC)
-- [d0x-awrqxavc/CVE-2026-23744-HACKTHEBOX](https://github.com/d0x-awrqxavc/CVE-2026-23744-HACKTHEBOX)
+- [d0x-awrqxavc/CVE-2026-23744](https://github.com/d0x-awrqxavc/CVE-2026-23744)
 - [CyLock11/CVE-2026-23744](https://github.com/CyLock11/CVE-2026-23744)
 - [luiskrnr/exploit-CVE-2026-23744](https://github.com/luiskrnr/exploit-CVE-2026-23744)
 
@@ -6081,6 +6091,13 @@
 </code>
 
 - [Nxploited/CVE-2025-12674](https://github.com/Nxploited/CVE-2025-12674)
+
+### CVE-2025-12720 (2025-12-06)
+
+<code>The g-FFL Cockpit plugin for WordPress is vulnerable to unauthorized modification of data due to IP-based authorization that can be spoofed in the handle_enqueue_only() function in all versions up to, and including, 1.7.1. This makes it possible for unauthenticated attackers to delete arbitrary products.
+</code>
+
+- [d0n601/CVE-2025-12720](https://github.com/d0n601/CVE-2025-12720)
 
 ### CVE-2025-12735 (2025-11-05)
 
@@ -11739,7 +11756,6 @@
 - [orgito1015/CVE-2025-55182-RCE-Exploit](https://github.com/orgito1015/CVE-2025-55182-RCE-Exploit)
 - [keklick1337/CVE-2025-55182-golang-PoC](https://github.com/keklick1337/CVE-2025-55182-golang-PoC)
 - [rubensuxo-eh/react2shell-exploit](https://github.com/rubensuxo-eh/react2shell-exploit)
-- [CirqueiraDev/MassExploit-CVE-2025-55182](https://github.com/CirqueiraDev/MassExploit-CVE-2025-55182)
 - [aastikgakhar/CVE-2025-55182-react2shell](https://github.com/aastikgakhar/CVE-2025-55182-react2shell)
 - [zamdevio/r2s](https://github.com/zamdevio/r2s)
 - [AdityaBhatt3010/React2Shell-CVE-2025-55182-The-Deserialization-Bug-That-Broke-the-Web](https://github.com/AdityaBhatt3010/React2Shell-CVE-2025-55182-The-Deserialization-Bug-That-Broke-the-Web)
@@ -14668,6 +14684,9 @@
 ### CVE-2025-70962
 - [namaek2/CVE-2025-70962](https://github.com/namaek2/CVE-2025-70962)
 
+### CVE-2025-70994
+- [ktauchathuranga/CVE-2025-70994](https://github.com/ktauchathuranga/CVE-2025-70994)
+
 ### CVE-2025-70995 (2026-03-05)
 
 <code>An issue in Aranda Service Desk Web Edition (ASDK API 8.6) allows authenticated attackers to achieve remote code execution due to improper validation of uploaded files. An authenticated user can upload a crafted web.config file by sending a crafted POST request to /ASDKAPI/api/v8.6/item/addfile, which is processed by the ASP.NET runtime. The uploaded configuration file alters the execution context of the upload directory, enabling compilation and execution of attacker-controlled code (e.g., generation of an .aspx webshell). This allows remote command execution on the server without user interaction beyond authentication, impacting both On-Premise and SaaS deployments. The vendor has fixed the issue in Aranda Service Desk V8 8.30.6.
@@ -16048,7 +16067,6 @@
 - [r0otk3r/CVE-2024-4577](https://github.com/r0otk3r/CVE-2024-4577)
 - [mananjain61/PHP-CGI-INTERNAL-RCE](https://github.com/mananjain61/PHP-CGI-INTERNAL-RCE)
 - [Skycritch/CVE-2024-4577](https://github.com/Skycritch/CVE-2024-4577)
-- [CirqueiraDev/MassExploit-CVE-2024-4577](https://github.com/CirqueiraDev/MassExploit-CVE-2024-4577)
 - [Ianthinus/CVE-2024-4577](https://github.com/Ianthinus/CVE-2024-4577)
 - [InfoSec-DB/PHPCGIScanner](https://github.com/InfoSec-DB/PHPCGIScanner)
 - [a1ex-var1amov/ctf-cve-2024-4577](https://github.com/a1ex-var1amov/ctf-cve-2024-4577)
@@ -19189,6 +19207,7 @@
 - [harekrishnarai/CVE-2024-23897-test-windows](https://github.com/harekrishnarai/CVE-2024-23897-test-windows)
 - [wvverez/CVE-2024-23897](https://github.com/wvverez/CVE-2024-23897)
 - [vmc8ll/poc-CVE-2024-23897](https://github.com/vmc8ll/poc-CVE-2024-23897)
+- [w41l3r/jenkins_scan](https://github.com/w41l3r/jenkins_scan)
 
 ### CVE-2024-23898 (2024-01-24)
 
@@ -47629,6 +47648,7 @@
 - [abds059/APACHE-PATH-TRAVERSAL-RCE-CVE-2021-41773-](https://github.com/abds059/APACHE-PATH-TRAVERSAL-RCE-CVE-2021-41773-)
 - [Kouf320/attacker-lab-cve-2017-5638-cve-2021-41773-paper](https://github.com/Kouf320/attacker-lab-cve-2017-5638-cve-2021-41773-paper)
 - [JKIM72403/CS4277-CVE-Path-Traversal-Apache-HTTP-Server](https://github.com/JKIM72403/CS4277-CVE-Path-Traversal-Apache-HTTP-Server)
+- [klmntbelgium/cve-2021-41773-exploration](https://github.com/klmntbelgium/cve-2021-41773-exploration)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -49078,13 +49098,6 @@
 </code>
 
 - [g-rubert/CVE-2021-46108](https://github.com/g-rubert/CVE-2021-46108)
-
-### CVE-2021-46143 (2022-01-06)
-
-<code>In doProlog in xmlparse.c in Expat (aka libexpat) before 2.4.3, an integer overflow exists for m_groupSize.
-</code>
-
-- [nanopathi/external_expat_AOSP10_r33_CVE-2021-46143](https://github.com/nanopathi/external_expat_AOSP10_r33_CVE-2021-46143)
 
 ### CVE-2021-46361 (2022-02-11)
 
