@@ -100,7 +100,7 @@
 
 ### CVE-2026-0834 (2026-01-21)
 
-<code>Logic vulnerability in TP-Link Archer C20 v6.0 and Archer AX53 v1.0 (TDDP module) allows unauthenticated adjacent attackers to execute administrative commands including factory reset and device reboot without credentials. Attackers on the adjacent network can remotely trigger factory resets and reboots without credentials, causing configuration loss and interruption of device availability.This issue affects Archer C20 v6.0 &lt; V6_251031, Archer C20 v5 &lt;EU_V5_260317 or &lt; US_V5_260419\n\n\nArcher AX53 v1.0 &lt; \n\nV1_251215
+<code>Logic vulnerability in TP-Link Archer C20 v5, 6.0, Archer AX53 v1.0 and TL-WR841N v13 (TDDP module) allows unauthenticated adjacent attackers to execute administrative commands including factory reset and device reboot without credentials. Attackers on the adjacent network can remotely trigger factory resets and reboots without credentials, causing configuration loss and interruption of device availability.This issue affects Archer C20 v6.0 &lt; V6_251031, Archer C20 v5 &lt;EU_V5_260317 or &lt; US_V5_260419\n\n\nArcher AX53 v1.0 &lt; \n\nV1_251215\n\nTL-WR841N v13 &lt; 0.9.1 Build 20231120 Rel.62366
 </code>
 
 - [mattgsys/CVE-2026-0834](https://github.com/mattgsys/CVE-2026-0834)
@@ -248,6 +248,13 @@
 </code>
 
 - [ii4gsp/CVE-2026-1457](https://github.com/ii4gsp/CVE-2026-1457)
+
+### CVE-2026-1459 (2026-02-24)
+
+<code>A post-authentication command injection vulnerability in the TR-369 certificate download CGI program of the Zyxel VMG3625-T50B firmware versions through 5.50(ABPM.9.7)C0 could allow an authenticated attacker with administrator privileges to execute operating system (OS) commands on an affected device.
+</code>
+
+- [Toouch67/CVE-2026-1459-POC](https://github.com/Toouch67/CVE-2026-1459-POC)
 
 ### CVE-2026-1492 (2026-03-03)
 
@@ -643,7 +650,11 @@
 
 - [g0w6y/CVE-2026-4092](https://github.com/g0w6y/CVE-2026-4092)
 
-### CVE-2026-4106
+### CVE-2026-4106 (2026-04-23)
+
+<code>The HT Mega Addons for Elementor  WordPress plugin before 3.0.7 contains an unauthenticated AJAX action returning some PII (such as full name, city, state and country) of customers who placed orders in the last 7 days
+</code>
+
 - [ef3tr/CVE-2026-4106](https://github.com/ef3tr/CVE-2026-4106)
 
 ### CVE-2026-4112 (2026-04-09)
@@ -898,7 +909,6 @@
 <code>A vulnerability in the web interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to bypass authentication and execute script files on an affected device to obtain root access to the underlying operating system.\r\n\r This vulnerability is due to an improper system process that is created at boot time. An attacker could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful exploit could allow the attacker to execute a variety of scripts and commands that allow root access to the device.
 </code>
 
-- [Sushilsin/CVE-2026-20079](https://github.com/Sushilsin/CVE-2026-20079)
 - [0xBlackash/CVE-2026-20079](https://github.com/0xBlackash/CVE-2026-20079)
 
 ### CVE-2026-20127 (2026-02-25)
@@ -919,7 +929,6 @@
 <code>A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to execute arbitrary Java code as root&amp;nbsp;on an affected device.\r\n\r\nThis vulnerability is due to insecure deserialization of a user-supplied Java byte stream. An attacker could exploit this vulnerability by sending a crafted serialized Java object to the web-based management interface of an affected device. A successful exploit could allow the attacker to execute arbitrary code on the device and elevate privileges to root.\r\nNote: If the FMC management interface does not have public internet access, the attack surface that is associated with this vulnerability is reduced.
 </code>
 
-- [Sushilsin/CVE-2026-20131](https://github.com/Sushilsin/CVE-2026-20131)
 - [p3Nt3st3r-sTAr/CVE-2026-20131-POC](https://github.com/p3Nt3st3r-sTAr/CVE-2026-20131-POC)
 - [sak110/CVE-2026-20131](https://github.com/sak110/CVE-2026-20131)
 - [Hassan-Pouladi/Cisco-FMC-honeypot](https://github.com/Hassan-Pouladi/Cisco-FMC-honeypot)
@@ -2381,7 +2390,7 @@
 
 ### CVE-2026-27540 (2026-03-19)
 
-<code>Unrestricted Upload of File with Dangerous Type vulnerability in Rymera Web Co Pty Ltd. Woocommerce Wholesale Lead Capture allows Using Malicious Files.This issue affects Woocommerce Wholesale Lead Capture: from n/a through 2.0.3.1.
+<code>Unrestricted Upload of File with Dangerous Type vulnerability in Rymera Web Co Pty Ltd. Woocommerce Wholesale Lead Capture woocommerce-wholesale-lead-capture allows Using Malicious Files.This issue affects Woocommerce Wholesale Lead Capture: from n/a through &lt;= 2.0.3.1.
 </code>
 
 - [DeadExpl0it/CVE-2026-27540-WordPress-Exploit-PoC](https://github.com/DeadExpl0it/CVE-2026-27540-WordPress-Exploit-PoC)
@@ -2395,7 +2404,7 @@
 
 ### CVE-2026-27542 (2026-03-19)
 
-<code>Incorrect Privilege Assignment vulnerability in Rymera Web Co Pty Ltd. Woocommerce Wholesale Lead Capture allows Privilege Escalation.This issue affects Woocommerce Wholesale Lead Capture: from n/a through 2.0.3.1.
+<code>Incorrect Privilege Assignment vulnerability in Rymera Web Co Pty Ltd. Woocommerce Wholesale Lead Capture woocommerce-wholesale-lead-capture allows Privilege Escalation.This issue affects Woocommerce Wholesale Lead Capture: from n/a through &lt;= 2.0.3.1.
 </code>
 
 - [Nxploited/CVE-2026-27542-CVE-2026-27540-](https://github.com/Nxploited/CVE-2026-27542-CVE-2026-27540-)
@@ -2628,6 +2637,7 @@
 </code>
 
 - [gregk4sec/cve-2026-29145](https://github.com/gregk4sec/cve-2026-29145)
+- [sancliffe/CVE-2026-29145-Tester](https://github.com/sancliffe/CVE-2026-29145-Tester)
 
 ### CVE-2026-29187 (2026-03-25)
 
@@ -3235,6 +3245,13 @@
 
 - [pl4tyz/CVE-2026-33701-Unsafe-Deserialization-in-OpenTelemetry-Java-Agent-RMI-Instrumentation](https://github.com/pl4tyz/CVE-2026-33701-Unsafe-Deserialization-in-OpenTelemetry-Java-Agent-RMI-Instrumentation)
 
+### CVE-2026-33725 (2026-03-27)
+
+<code>Metabase is an open source business intelligence and embedded analytics tool. In Metabase Enterprise prior to versions 1.54.22, 1.55.22, 1.56.22, 1.57.16, 1.58.10, and 1.59.4, authenticated admins on Metabase Enterprise Edition can achieve Remote Code Execution (RCE) and Arbitrary File Read via the `POST /api/ee/serialization/import` endpoint. A crafted serialization archive injects an `INIT` property into the H2 JDBC spec, which can execute arbitrary SQL during a database sync. We confirmed this was possible on Metabase Cloud. This only affects Metabase Enterprise. Metabase OSS lacks the affected codepaths. All versions of Metabase Enterprise that have serialization, which dates back to at least version 1.47, are affected. Metabase Enterprise versions 1.54.22, 1.55.22, 1.56.22, 1.57.16, 1.58.10, and 1.59.4 patch the issue. As a workaround, disable the serialization import endpoint in their Metabase instance to prevent access to the vulnerable codepaths.
+</code>
+
+- [hakaioffsec/CVE-2026-33725](https://github.com/hakaioffsec/CVE-2026-33725)
+
 ### CVE-2026-33752 (2026-04-06)
 
 <code>curl_cffi is the a Python binding for curl. Prior to 0.15.0, curl_cffi does not restrict requests to internal IP ranges, and follows redirects automatically via the underlying libcurl. Because of this, an attacker-controlled URL can redirect requests to internal services such as cloud metadata endpoints. In addition, curl_cffi’s TLS impersonation feature can make these requests appear as legitimate browser traffic, which may bypass certain network controls. This vulnerability is fixed in 0.15.0.
@@ -3337,6 +3354,13 @@
 
 - [0xBlackash/CVE-2026-34156](https://github.com/0xBlackash/CVE-2026-34156)
 - [franckboumendil/CVE-2026-34156](https://github.com/franckboumendil/CVE-2026-34156)
+
+### CVE-2026-34159 (2026-04-01)
+
+<code>llama.cpp is an inference of several LLM models in C/C++. Prior to version b8492, the RPC backend's deserialize_tensor() skips all bounds validation when a tensor's buffer field is 0. An unauthenticated attacker can read and write arbitrary process memory via crafted GRAPH_COMPUTE messages. Combined with pointer leaks from ALLOC_BUFFER/BUFFER_GET_BASE, this gives full ASLR bypass and remote code execution. No authentication required, just TCP access to the RPC server port. This issue has been patched in version b8492.
+</code>
+
+- [casp3r0x0/CVE-2026-34159](https://github.com/casp3r0x0/CVE-2026-34159)
 
 ### CVE-2026-34197 (2026-04-07)
 
@@ -3502,6 +3526,9 @@
 ### CVE-2026-37750
 - [menevarad007/CVE-2026-37750](https://github.com/menevarad007/CVE-2026-37750)
 
+### CVE-2026-38751
+- [fuutianyii/poc](https://github.com/fuutianyii/poc)
+
 ### CVE-2026-39324 (2026-04-07)
 
 <code>Rack::Session is a session management implementation for Rack. From 2.0.0 to before 2.1.2, Rack::Session::Cookie incorrectly handles decryption failures when configured with secrets:. If cookie decryption fails, the implementation falls back to a default decoder instead of rejecting the cookie. This allows an unauthenticated attacker to supply a crafted session cookie that is accepted as valid session data without knowledge of any configured secret. Because this mechanism is used to load session state, an attacker can manipulate session contents and potentially gain unauthorized access. This vulnerability is fixed in 2.1.2.
@@ -3539,6 +3566,13 @@
 - [samu-delucas/CVE-2026-39808](https://github.com/samu-delucas/CVE-2026-39808)
 - [0xBlackash/CVE-2026-39808](https://github.com/0xBlackash/CVE-2026-39808)
 - [ynsmroztas/FortiSandbox-RCE-Exploit-CVE-2026-39808](https://github.com/ynsmroztas/FortiSandbox-RCE-Exploit-CVE-2026-39808)
+
+### CVE-2026-39813 (2026-04-14)
+
+<code>A path traversal: '../filedir' vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8 may allow attacker to escalation of privilege via &lt;insert attack vector here&gt;
+</code>
+
+- [0xBlackash/CVE-2026-39813](https://github.com/0xBlackash/CVE-2026-39813)
 
 ### CVE-2026-39842 (2026-04-14)
 
@@ -3614,8 +3648,23 @@
 ### CVE-2026-40579
 - [zebbernCVE/CVE-2026-40579](https://github.com/zebbernCVE/CVE-2026-40579)
 
+### CVE-2026-41303 (2026-04-20)
+
+<code>OpenClaw before 2026.3.28 contains an authorization bypass vulnerability in Discord text approval commands that allows non-approvers to resolve pending exec approvals. Attackers can send Discord text commands to bypass the channels.discord.execApprovals.approvers allowlist and approve pending host execution requests.
+</code>
+
+- [kaleth4/CVE-2026-41303](https://github.com/kaleth4/CVE-2026-41303)
+
 ### CVE-2026-41575
 - [krraze/CVE-2026-41575](https://github.com/krraze/CVE-2026-41575)
+
+### CVE-2026-41651 (2026-04-22)
+
+<code>PackageKit is a a D-Bus abstraction layer that allows the user to manage packages in a secure way using a cross-distro, cross-architecture API. PackageKit between and including versions 1.0.2 and 1.3.4 is vulnerable to a time-of-check time-of-use (TOCTOU) race condition on transaction flags that allows unprivileged users to install packages as root and thus leads to a local privilege escalation. This is patched in version 1.3.5.\n\nA local unprivileged user can install arbitrary RPM packages as root, including executing RPM scriptlets, without authentication. The vulnerability is a TOCTOU race condition on `transaction-&gt;cached_transaction_flags`  combined with a silent state-machine guard that discards illegal backward transitions while leaving corrupted flags in place. Three bugs exist in `src/pk-transaction.c`:\n1. Unconditional flag overwrite (line 4036): `InstallFiles()` writes caller-supplied flags to `transaction-&gt;cached_transaction_flags` without checking whether the transaction has already been  authorized/started. A second call blindly overwrites the flags even while the transaction is RUNNING.\n2. Silent state-transition rejection (lines 873–882): `pk_transaction_set_state()` silently discards backward state transitions (e.g. `RUNNING` → `WAITING_FOR_AUTH`) but the flag overwrite at step 1 already happened. The transaction continues running with corrupted flags.\n3. Late flag read at execution time (lines 2273–2277): The scheduler's idle callback reads cached_transaction_flags at dispatch time, not at authorization time. If flags were overwritten between authorization and execution, the backend sees the attacker's flags.
+</code>
+
+- [Vozec/CVE-2026-41651](https://github.com/Vozec/CVE-2026-41651)
+- [CipherCloak/CVE-2026-41651](https://github.com/CipherCloak/CVE-2026-41651)
 
 
 ## 2025
@@ -4912,6 +4961,13 @@
 
 - [KeyFrame-Bytes/CVE-2025-5844](https://github.com/KeyFrame-Bytes/CVE-2025-5844)
 
+### CVE-2025-5880 (2025-06-09)
+
+<code>In Whistle 2.9.98 wurde eine problematische Schwachstelle gefunden. Dabei geht es um eine nicht genauer bekannte Funktion der Datei /cgi-bin/sessions/get-temp-file. Durch Manipulieren des Arguments filename mit unbekannten Daten kann eine path traversal-Schwachstelle ausgenutzt werden. Der Exploit steht zur öffentlichen Verfügung.
+</code>
+
+- [yacine-rm/CVE-2025-5880-PoC](https://github.com/yacine-rm/CVE-2025-5880-PoC)
+
 ### CVE-2025-5961 (2025-07-03)
 
 <code>The Migration, Backup, Staging – WPvivid Backup &amp; Migration plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'wpvivid_upload_import_files' function in all versions up to, and including, 0.9.116. This makes it possible for authenticated attackers, with Administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. NOTE: Uploaded files are only accessible on WordPress instances running on the NGINX web server as the existing .htaccess within the target file upload folder prevents access on Apache servers.
@@ -5430,7 +5486,6 @@
 - [TYehan/CVE-2025-8110-Gogs-RCE-Exploit](https://github.com/TYehan/CVE-2025-8110-Gogs-RCE-Exploit)
 - [0dgt/CVE-2025-8110](https://github.com/0dgt/CVE-2025-8110)
 - [popyue/CVE-2025-8110](https://github.com/popyue/CVE-2025-8110)
-- [NetsecBandit/CVE-2025-8110-Exploit](https://github.com/NetsecBandit/CVE-2025-8110-Exploit)
 - [X4BROZER/CVE-2025-8110](https://github.com/X4BROZER/CVE-2025-8110)
 - [hassan-hamadi/CVE-2025-8110-Silentium-HTB](https://github.com/hassan-hamadi/CVE-2025-8110-Silentium-HTB)
 
@@ -5831,7 +5886,7 @@
 <code>SQL injection vulnerability based on the melis-cms module of the Melis platform from Melis Technology. This vulnerability allows an attacker to retrieve, create, update, and delete databases through the 'idPage' parameter in the '/melis/MelisCms/PageEdition/getTinyTemplates' endpoint.
 </code>
 
-- [ivansmc00/CVE-2025-10351-POC](https://github.com/ivansmc00/CVE-2025-10351-POC)
+- [ivansmc/CVE-2025-10351-POC](https://github.com/ivansmc/CVE-2025-10351-POC)
 
 ### CVE-2025-10353 (2025-10-08)
 
@@ -7853,7 +7908,7 @@
 
 ### CVE-2025-26892 (2025-05-19)
 
-<code>Unrestricted Upload of File with Dangerous Type vulnerability in dkszone Celestial Aura allows Using Malicious Files.This issue affects Celestial Aura: from n/a through 2.2.
+<code>Unrestricted Upload of File with Dangerous Type vulnerability in dkszone Celestial Aura celestial-aura allows Using Malicious Files.This issue affects Celestial Aura: from n/a through &lt;= 2.2.
 </code>
 
 - [Nxploited/CVE-2025-26892](https://github.com/Nxploited/CVE-2025-26892)
@@ -8556,7 +8611,7 @@
 
 ### CVE-2025-30967 (2025-04-15)
 
-<code>Cross-Site Request Forgery (CSRF) vulnerability in NotFound WPJobBoard allows Upload a Web Shell to a Web Server. This issue affects WPJobBoard: from n/a through n/a.
+<code>Cross-Site Request Forgery (CSRF) vulnerability in NotFound WPJobBoard wpjobboard allows Upload a Web Shell to a Web Server.This issue affects WPJobBoard: from n/a through &lt; 5.11.1.
 </code>
 
 - [Anton-ai111/CVE-2025-30967](https://github.com/Anton-ai111/CVE-2025-30967)
@@ -8648,6 +8703,13 @@
 - [JGoyd/iOS-Attack-Chain-CVE-2025-31200-CVE-2025-31201](https://github.com/JGoyd/iOS-Attack-Chain-CVE-2025-31200-CVE-2025-31201)
 - [serundengsapi/CVE-2025-31200-iOS-AudioConverter-RCE](https://github.com/serundengsapi/CVE-2025-31200-iOS-AudioConverter-RCE)
 - [hunters-sec/CVE-2025-31200](https://github.com/hunters-sec/CVE-2025-31200)
+
+### CVE-2025-31207 (2025-05-12)
+
+<code>A logic issue was addressed with improved checks. This issue is fixed in iOS 18.5 and iPadOS 18.5. An app may be able to enumerate a user's installed apps.
+</code>
+
+- [iCrazeiOS/AppEnumFix](https://github.com/iCrazeiOS/AppEnumFix)
 
 ### CVE-2025-31258 (2025-05-12)
 
@@ -12626,6 +12688,7 @@
 - [honney336/CVE-2025-58434_CVE-2025-59528](https://github.com/honney336/CVE-2025-58434_CVE-2025-59528)
 - [r3nsi15/Flowise-CVE-2025-58434-PasswordReset](https://github.com/r3nsi15/Flowise-CVE-2025-58434-PasswordReset)
 - [SteamPunk424/CVE-2025-58434-Unauthenticated-Password-Reset-Flowwise](https://github.com/SteamPunk424/CVE-2025-58434-Unauthenticated-Password-Reset-Flowwise)
+- [karimelsheikh1/HTB-Silentium-Writeup](https://github.com/karimelsheikh1/HTB-Silentium-Writeup)
 
 ### CVE-2025-58440
 - [ph-hitachi/CVE-2025-58440](https://github.com/ph-hitachi/CVE-2025-58440)
@@ -14684,7 +14747,11 @@
 ### CVE-2025-70962
 - [namaek2/CVE-2025-70962](https://github.com/namaek2/CVE-2025-70962)
 
-### CVE-2025-70994
+### CVE-2025-70994 (2026-04-23)
+
+<code>Yadea T5 Electric Bicycles (models manufactured in/after 2024) have a weak authentication mechanism in their keyless entry system. The system utilizes the EV1527 fixed-code RF protocol without implementing rolling codes or cryptographic challenge-response mechanisms. This is vulnerable to signal forgery after a local attacker intercepts any legitimate key fob transmission, allowing for complete unauthorized vehicle operation via a replay attack.
+</code>
+
 - [ktauchathuranga/CVE-2025-70994](https://github.com/ktauchathuranga/CVE-2025-70994)
 
 ### CVE-2025-70995 (2026-03-05)
@@ -15588,6 +15655,7 @@
 - [vnchk1/sec_review_cve-2024-3094](https://github.com/vnchk1/sec_review_cve-2024-3094)
 - [h3raklez/CVE-2024-3094](https://github.com/h3raklez/CVE-2024-3094)
 - [Ava-Vispilio/CVE-2024-3094](https://github.com/Ava-Vispilio/CVE-2024-3094)
+- [0xBlackash/CVE-2024-3094](https://github.com/0xBlackash/CVE-2024-3094)
 
 ### CVE-2024-3105 (2024-06-15)
 
@@ -20174,7 +20242,7 @@
 
 ### CVE-2024-28000 (2024-08-21)
 
-<code>Incorrect Privilege Assignment vulnerability in LiteSpeed Technologies LiteSpeed Cache litespeed-cache allows Privilege Escalation.This issue affects LiteSpeed Cache: from 1.9 through 6.3.0.1.
+<code>Incorrect Privilege Assignment vulnerability in LiteSpeed Technologies LiteSpeed Cache litespeed-cache.This issue affects LiteSpeed Cache: from n/a through &lt;= 6.3.0.1.
 </code>
 
 - [Alucard0x1/CVE-2024-28000](https://github.com/Alucard0x1/CVE-2024-28000)
@@ -20393,6 +20461,7 @@
 </code>
 
 - [ThaySolis/CVE-2024-29296](https://github.com/ThaySolis/CVE-2024-29296)
+- [Lavender-exe/CVE-2024-29296-PoC](https://github.com/Lavender-exe/CVE-2024-29296-PoC)
 
 ### CVE-2024-29375 (2024-04-04)
 
@@ -20573,6 +20642,7 @@
 - [Admin9961/CVE-2024-30088](https://github.com/Admin9961/CVE-2024-30088)
 - [Justintroup85/exploits-forsale-collateral-damage](https://github.com/Justintroup85/exploits-forsale-collateral-damage)
 - [ramzihafiz/cve-2024-30088-binary](https://github.com/ramzihafiz/cve-2024-30088-binary)
+- [oioio-space/maldev](https://github.com/oioio-space/maldev)
 - [repo4Chu/CVE-2024-30088__Windows-TOCTOU-exploit](https://github.com/repo4Chu/CVE-2024-30088__Windows-TOCTOU-exploit)
 
 ### CVE-2024-30090 (2024-06-11)
@@ -21390,7 +21460,7 @@
 
 ### CVE-2024-34444 (2024-06-19)
 
-<code>Missing Authorization vulnerability in ThemePunch OHG Slider Revolution.This issue affects Slider Revolution: from n/a before 6.7.0.
+<code>Missing Authorization vulnerability in ThemePunch OHG Slider Revolution revslider.This issue affects Slider Revolution: from n/a through &lt; 6.7.0.
 </code>
 
 - [dzmind2312/CVE-2024-34444-Exploit-Poc](https://github.com/dzmind2312/CVE-2024-34444-Exploit-Poc)
@@ -24253,7 +24323,7 @@
 
 ### CVE-2024-50478 (2024-10-28)
 
-<code>Authentication Bypass by Primary Weakness vulnerability in Swoop 1-Click Login: Passwordless Authentication allows Authentication Bypass.This issue affects 1-Click Login: Passwordless Authentication: 1.4.5.
+<code>Authentication Bypass by Primary Weakness vulnerability in swoopbrandon 1-Click Login: Passwordless Authentication swoop-password-free-authentication allows Authentication Bypass.This issue affects 1-Click Login: Passwordless Authentication: from n/a through 1.4.5.
 </code>
 
 - [RandomRobbieBF/CVE-2024-50478](https://github.com/RandomRobbieBF/CVE-2024-50478)
@@ -25943,6 +26013,7 @@
 - [EstamelGG/CVE-2023-0386-libs](https://github.com/EstamelGG/CVE-2023-0386-libs)
 - [orilevy8/cve-2023-0386](https://github.com/orilevy8/cve-2023-0386)
 - [dragosbanica/CVE-2023-0386_POC](https://github.com/dragosbanica/CVE-2023-0386_POC)
+- [karimelsheikh1/HTB-TwoMillion-Writeup](https://github.com/karimelsheikh1/HTB-TwoMillion-Writeup)
 
 ### CVE-2023-0400 (2023-02-01)
 
@@ -29920,7 +29991,7 @@
 
 ### CVE-2023-30486 (2024-12-09)
 
-<code>Missing Authorization vulnerability in HashThemes Square allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Square: from n/a through 2.0.0.
+<code>Missing Authorization vulnerability in hashthemes Square square allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Square: from n/a through &lt;= 2.0.0.
 </code>
 
 - [RandomRobbieBF/CVE-2023-30486](https://github.com/RandomRobbieBF/CVE-2023-30486)
@@ -30318,7 +30389,7 @@
 
 ### CVE-2023-32117 (2024-12-09)
 
-<code>Missing Authorization vulnerability in SoftLab Integrate Google Drive allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Integrate Google Drive: from n/a through 1.1.99.
+<code>Missing Authorization vulnerability in princeahmed Integrate Google Drive integrate-google-drive allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Integrate Google Drive: from n/a through &lt;= 1.1.99.
 </code>
 
 - [RandomRobbieBF/CVE-2023-32117](https://github.com/RandomRobbieBF/CVE-2023-32117)
@@ -31462,7 +31533,7 @@
 
 ### CVE-2023-36531 (2024-12-13)
 
-<code>Missing Authorization vulnerability in LiquidPoll LiquidPoll – Advanced Polls for Creators and Brands allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects LiquidPoll – Advanced Polls for Creators and Brands: from n/a through 3.3.68.
+<code>Missing Authorization vulnerability in liquidpoll LiquidPoll wp-poll allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects LiquidPoll: from n/a through &lt;= 3.3.68.
 </code>
 
 - [RandomRobbieBF/CVE-2023-36531](https://github.com/RandomRobbieBF/CVE-2023-36531)
@@ -33641,7 +33712,7 @@
 
 ### CVE-2023-45828 (2025-01-02)
 
-<code>Missing Authorization vulnerability in RumbleTalk Ltd RumbleTalk Live Group Chat allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects RumbleTalk Live Group Chat: from n/a through 6.2.5.
+<code>Missing Authorization vulnerability in RumbleTalk RumbleTalk Live Group Chat rumbletalk-chat-a-chat-with-themes allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects RumbleTalk Live Group Chat: from n/a through &lt;= 6.2.5.
 </code>
 
 - [RandomRobbieBF/CVE-2023-45828](https://github.com/RandomRobbieBF/CVE-2023-45828)
@@ -34102,7 +34173,7 @@
 
 ### CVE-2023-47179 (2025-01-02)
 
-<code>Missing Authorization vulnerability in ByConsole WooODT Lite allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WooODT Lite: from n/a through 2.4.6.
+<code>Missing Authorization vulnerability in mdalabar WooODT Lite byconsole-woo-order-delivery-time allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WooODT Lite: from n/a through &lt;= 2.4.6.
 </code>
 
 - [RandomRobbieBF/CVE-2023-47179](https://github.com/RandomRobbieBF/CVE-2023-47179)
@@ -34880,13 +34951,6 @@
 
 ### CVE-2023-51119
 - [OscarAkaElvis/CVE-2023-51119](https://github.com/OscarAkaElvis/CVE-2023-51119)
-
-### CVE-2023-51127 (2024-01-10)
-
-<code>FLIR AX8 thermal sensor cameras up to and including 1.46.16 are vulnerable to Directory Traversal due to improper access restriction. This vulnerability allows an unauthenticated, remote attacker to obtain arbitrary sensitive file contents by uploading a specially crafted symbolic link file. NOTE: The vendor has stated that with the introduction of firmware version 1.49.16 (Jan 2023) the FLIR AX8 should no longer be affected by the vulnerability reported. Latest firmware version (as of Oct 2025, was released Jun 2024) is 1.55.16.
-</code>
-
-- [risuxx/CVE-2023-51127](https://github.com/risuxx/CVE-2023-51127)
 
 ### CVE-2023-51214
 - [chandraprarikraj/CVE-2023-51214](https://github.com/chandraprarikraj/CVE-2023-51214)
@@ -49918,6 +49982,7 @@
 - [nyambiblaise/Microsoft-Windows-SMBGhost-Vulnerability-Checker---CVE-2020-0796---SMBv3-RCE](https://github.com/nyambiblaise/Microsoft-Windows-SMBGhost-Vulnerability-Checker---CVE-2020-0796---SMBv3-RCE)
 - [thai1012/cve-2020-0796](https://github.com/thai1012/cve-2020-0796)
 - [Justjeff211/conti-ransomware-writeup](https://github.com/Justjeff211/conti-ransomware-writeup)
+- [average-joe44/CVE-2020-0796-Forked-](https://github.com/average-joe44/CVE-2020-0796-Forked-)
 
 ### CVE-2020-0887 (2020-03-12)
 
@@ -60439,6 +60504,7 @@
 - [YoussefSalama1/CVE-2018-6574](https://github.com/YoussefSalama1/CVE-2018-6574)
 - [Rezy-Dev/CVE-2018-6574](https://github.com/Rezy-Dev/CVE-2018-6574)
 - [hbxxv/CVE-2018-6574](https://github.com/hbxxv/CVE-2018-6574)
+- [r00tpgp/CVE-2018-6574](https://github.com/r00tpgp/CVE-2018-6574)
 
 ### CVE-2018-6606 (2018-02-04)
 
@@ -63238,7 +63304,7 @@
 - [klairmanraj/Vulnerability-Risk-Assessment-TVRA-Enterprise-Network](https://github.com/klairmanraj/Vulnerability-Risk-Assessment-TVRA-Enterprise-Network)
 - [klairmanraj/Multi-VLAN-Enterprise-Network-Vulnerability-Assessment](https://github.com/klairmanraj/Multi-VLAN-Enterprise-Network-Vulnerability-Assessment)
 - [dannic145/EternalBlue-DoublePulsar-Exploit-Demonstration](https://github.com/dannic145/EternalBlue-DoublePulsar-Exploit-Demonstration)
-- [ichhyak22/EternalBlue-DoublePulsar-Exploit-Demonstration](https://github.com/ichhyak22/EternalBlue-DoublePulsar-Exploit-Demonstration)
+- [ichhyak22/EternalBlue-Exploit-Demonstration-MS17-010](https://github.com/ichhyak22/EternalBlue-Exploit-Demonstration-MS17-010)
 
 ### CVE-2017-0145 (2017-03-17)
 
