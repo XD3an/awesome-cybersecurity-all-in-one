@@ -615,6 +615,13 @@
 
 - [Rat5ak/CVE-2026-3805-curl-SMB-UAF](https://github.com/Rat5ak/CVE-2026-3805-curl-SMB-UAF)
 
+### CVE-2026-3844 (2026-04-23)
+
+<code>The Breeze Cache plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'fetch_gravatar_from_remote' function in all versions up to, and including, 2.4.4. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible. The vulnerability can only be exploited if &quot;Host Files Locally - Gravatars&quot; is enabled, which is disabled by default.
+</code>
+
+- [im-hanzou/CVE-2026-3844](https://github.com/im-hanzou/CVE-2026-3844)
+
 ### CVE-2026-3888 (2026-03-17)
 
 <code>Local privilege escalation in snapd on Linux allows local attackers to get root privilege by re-creating snap's private /tmp directory when systemd-tmpfiles is configured to automatically clean up this directory. This issue affects Ubuntu 16.04 LTS, 18.04 LTS, 20.04 LTS, 22.04 LTS, and 24.04 LTS.
@@ -2898,6 +2905,13 @@
 
 - [Rat5ak/CVE-2026-31413-BPF-Container-Escape](https://github.com/Rat5ak/CVE-2026-31413-BPF-Container-Escape)
 
+### CVE-2026-31429 (2026-04-20)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nnet: skb: fix cross-cache free of KFENCE-allocated skb head\n\nSKB_SMALL_HEAD_CACHE_SIZE is intentionally set to a non-power-of-2\nvalue (e.g. 704 on x86_64) to avoid collisions with generic kmalloc\nbucket sizes. This ensures that skb_kfree_head() can reliably use\nskb_end_offset to distinguish skb heads allocated from\nskb_small_head_cache vs. generic kmalloc caches.\n\nHowever, when KFENCE is enabled, kfence_ksize() returns the exact\nrequested allocation size instead of the slab bucket size. If a caller\n(e.g. bpf_test_init) allocates skb head data via kzalloc() and the\nrequested size happens to equal SKB_SMALL_HEAD_CACHE_SIZE, then\nslab_build_skb() -&gt; ksize() returns that exact value. After subtracting\nskb_shared_info overhead, skb_end_offset ends up matching\nSKB_SMALL_HEAD_HEADROOM, causing skb_kfree_head() to incorrectly free\nthe object to skb_small_head_cache instead of back to the original\nkmalloc cache, resulting in a slab cross-cache free:\n\n  kmem_cache_free(skbuff_small_head): Wrong slab cache. Expected\n  skbuff_small_head but got kmalloc-1k\n\nFix this by always calling kfree(head) in skb_kfree_head(). This keeps\nthe free path generic and avoids allocator-specific misclassification\nfor KFENCE objects.
+</code>
+
+- [bluedragonsecurity/CVE-2026-31429-POC](https://github.com/bluedragonsecurity/CVE-2026-31429-POC)
+
 ### CVE-2026-31802 (2026-03-09)
 
 <code>node-tar is a full-featured Tar for Node.js. Prior to version 7.5.11, tar (npm) can be tricked into creating a symlink that points outside the extraction directory by using a drive-relative symlink target such as C:../../../target.txt, which enables file overwrite outside cwd during normal tar.x() extraction. This vulnerability is fixed in 7.5.11.
@@ -4093,7 +4107,6 @@
 - [0xWhoami35/CVE-2025-2294](https://github.com/0xWhoami35/CVE-2025-2294)
 - [r0otk3r/CVE-2025-2294](https://github.com/r0otk3r/CVE-2025-2294)
 - [iteride/CVE-2025-2294](https://github.com/iteride/CVE-2025-2294)
-- [fumioryoto/CVE-2025-2294-Kubio-2.5.1-LFi-Checker](https://github.com/fumioryoto/CVE-2025-2294-Kubio-2.5.1-LFi-Checker)
 
 ### CVE-2025-2301 (2025-07-21)
 
@@ -5816,13 +5829,6 @@
 - [ThemeHackers/CVE-2025-10035](https://github.com/ThemeHackers/CVE-2025-10035)
 - [orange0Mint/CVE-2025-10035_GoAnywhere](https://github.com/orange0Mint/CVE-2025-10035_GoAnywhere)
 
-### CVE-2025-10042 (2025-09-17)
-
-<code>The Quiz Maker plugin for WordPress is vulnerable to SQL Injection via spoofed IP headers in all versions up to, and including, 6.7.0.56 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. This is only exploitable in configurations where the server is set up to retrieve the IP from a user-supplied field like `X-Forwarded-For` and limit users by IP is enabled.
-</code>
-
-- [fumioryoto/Quiz-Maker-SQL-Injection-CVE-2025-10042](https://github.com/fumioryoto/Quiz-Maker-SQL-Injection-CVE-2025-10042)
-
 ### CVE-2025-10046 (2025-09-06)
 
 <code>The ELEX WooCommerce Google Shopping (Google Product Feed) plugin for WordPress is vulnerable to SQL Injection via the 'file_to_delete' parameter in all versions up to, and including, 1.4.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for authenticated attackers, with Administrator-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.
@@ -6624,6 +6630,13 @@
 - [mr-r3b00t/CVE-2025-15467](https://github.com/mr-r3b00t/CVE-2025-15467)
 - [materaj2/cve-2025-15467](https://github.com/materaj2/cve-2025-15467)
 - [WostGit/cve-2025-15467-crash](https://github.com/WostGit/cve-2025-15467-crash)
+
+### CVE-2025-15474 (2026-01-07)
+
+<code>AuntyFey Smart Combination Lock firmware versions as of 2025-12-24 contain a vulnerability that allows an unauthenticated attacker within Bluetooth Low Energy (BLE) range to cause a denial of service by repeatedly initiating BLE connections. Sustained connection attempts interrupt keypad authentication input and repeatedly force the device into lockout states, preventing legitimate users from unlocking the device.
+</code>
+
+- [NSM-Barii/CVE-2025-15474](https://github.com/NSM-Barii/CVE-2025-15474)
 
 ### CVE-2025-15495 (2026-01-09)
 
@@ -8452,6 +8465,7 @@
 - [hujiaozhuzhu/CVE-2025-29927__Next.js](https://github.com/hujiaozhuzhu/CVE-2025-29927__Next.js)
 - [metasploit403/cve-2025-29927-lab](https://github.com/metasploit403/cve-2025-29927-lab)
 - [shahin-shadow/nextjs-auth-bypass](https://github.com/shahin-shadow/nextjs-auth-bypass)
+- [TheWaterbug/alpr-dashboard-patches](https://github.com/TheWaterbug/alpr-dashboard-patches)
 
 ### CVE-2025-29943 (2026-01-16)
 
@@ -9339,9 +9353,6 @@
 </code>
 
 - [mcorybillington/CVE-2025-34322_CVE-2025-34323_Nagios_Log_Server](https://github.com/mcorybillington/CVE-2025-34322_CVE-2025-34323_Nagios_Log_Server)
-
-### CVE-2025-34462
-- [NSM-Barii/CVE-2025-34462](https://github.com/NSM-Barii/CVE-2025-34462)
 
 ### CVE-2025-36041 (2025-06-15)
 
@@ -10545,6 +10556,7 @@
 - [popyue/CVE-2025-49132](https://github.com/popyue/CVE-2025-49132)
 - [4nuxd/CVE-2025-49132](https://github.com/4nuxd/CVE-2025-49132)
 - [unixskid/CVE-2025-49132](https://github.com/unixskid/CVE-2025-49132)
+- [karimelsheikh1/HTB-Pterodactyl-Writeup](https://github.com/karimelsheikh1/HTB-Pterodactyl-Writeup)
 
 ### CVE-2025-49144 (2025-06-23)
 
@@ -12175,6 +12187,13 @@
 </code>
 
 - [Eternalvalhalla/CVE-2025-55287-POC](https://github.com/Eternalvalhalla/CVE-2025-55287-POC)
+
+### CVE-2025-55292 (2026-01-27)
+
+<code>Meshtastic is an open source mesh networking solution. In the current Meshtastic architecture, a Node is identified by their NodeID, generated from the MAC address, rather than their public key. This aspect downgrades the security, specifically by abusing the HAM mode which doesn't use encryption. An attacker can, as such, forge a NodeInfo on behalf of a victim node advertising that the HAM mode is enabled. This, in turn, will allow the other nodes on the mesh to accept the new information and overwriting the NodeDB. The other nodes will then only be able to send direct messages to the victim by using the shared channel key instead of the PKC. Additionally, because HAM mode by design doesn't provide any confidentiality or authentication of information, the attacker could potentially also be able to change the Node details, like the full name, short code, etc. To keep the attack persistent, it is enough to regularly resend the forged NodeInfo, in particular right after the victim sends their own. A patch is available in version 2.7.6.834c3c5.
+</code>
+
+- [nightjoker7/meshtastic-spoof-research](https://github.com/nightjoker7/meshtastic-spoof-research)
 
 ### CVE-2025-55315 (2025-10-14)
 
@@ -13875,7 +13894,6 @@
 - [symphony2colour/varlib-cve-2025-66034](https://github.com/symphony2colour/varlib-cve-2025-66034)
 - [Liquid1998/Variatype.htb-CVE-2025-66034](https://github.com/Liquid1998/Variatype.htb-CVE-2025-66034)
 - [tristanqtn/CVE-2025-66034](https://github.com/tristanqtn/CVE-2025-66034)
-- [d0x-awrqxavc/CVE-2025-66034](https://github.com/d0x-awrqxavc/CVE-2025-66034)
 - [v3cn4x00/POC-CVE-2025-66034](https://github.com/v3cn4x00/POC-CVE-2025-66034)
 - [4nuxd/CVE-2025-66034](https://github.com/4nuxd/CVE-2025-66034)
 - [jwsly12/CVE-2025-66034-htb-ctf](https://github.com/jwsly12/CVE-2025-66034-htb-ctf)
@@ -21540,7 +21558,7 @@
 
 - [aelmokhtar/CVE-2024-34716](https://github.com/aelmokhtar/CVE-2024-34716)
 - [0xDTC/Prestashop-CVE-2024-34716](https://github.com/0xDTC/Prestashop-CVE-2024-34716)
-- [TU-M/Trickster-HTB](https://github.com/TU-M/Trickster-HTB)
+- [Pallangyo98/Trickster-HTB](https://github.com/Pallangyo98/Trickster-HTB)
 
 ### CVE-2024-34739 (2024-08-15)
 
@@ -33428,6 +33446,7 @@
 - [dryfryce/phoenix-h2](https://github.com/dryfryce/phoenix-h2)
 - [dryfryce/phoenix-http2](https://github.com/dryfryce/phoenix-http2)
 - [TLevente20/HTTP-2-RapidReset-CVE-2023-44487-Testlab](https://github.com/TLevente20/HTTP-2-RapidReset-CVE-2023-44487-Testlab)
+- [galletitaconpate/CVE-2023-44487](https://github.com/galletitaconpate/CVE-2023-44487)
 
 ### CVE-2023-44758 (2023-10-06)
 
@@ -34209,7 +34228,7 @@
 - [gmh5225/CVE-2023-47253](https://github.com/gmh5225/CVE-2023-47253)
 
 ### CVE-2023-47268
-- [TU-M/Trickster-HTB](https://github.com/TU-M/Trickster-HTB)
+- [Pallangyo98/Trickster-HTB](https://github.com/Pallangyo98/Trickster-HTB)
 
 ### CVE-2023-47355 (2024-02-05)
 
@@ -34378,7 +34397,6 @@
 
 - [TrixSec/CVE-2023-48795](https://github.com/TrixSec/CVE-2023-48795)
 - [Dr0xharakiri/CVE-2023-48795](https://github.com/Dr0xharakiri/CVE-2023-48795)
-- [fumioryoto/Terrapin-attack](https://github.com/fumioryoto/Terrapin-attack)
 
 ### CVE-2023-48842 (2023-12-01)
 
@@ -38728,6 +38746,13 @@
 ### CVE-2022-27414
 - [lus33rr/CVE-2022-27414](https://github.com/lus33rr/CVE-2022-27414)
 
+### CVE-2022-27434 (2022-07-17)
+
+<code>UNIT4 TETA Mobile Edition (ME) before 29.5.HF17 was discovered to contain a SQL injection vulnerability via the ProfileName parameter in the errorReporting page.
+</code>
+
+- [LongWayHomie/CVE-2022-27434](https://github.com/LongWayHomie/CVE-2022-27434)
+
 ### CVE-2022-27438 (2022-06-06)
 
 <code>Caphyon Ltd Advanced Installer 19.3 and earlier and many products that use the updater from Advanced Installer (Advanced Updater) are affected by a remote code execution vulnerability via the CustomDetection parameter in the update check function. To exploit this vulnerability, a user must start an affected installation to trigger the update check.
@@ -41680,7 +41705,7 @@
 - [ReachabilityOrg/cve-2022-42889-text4shell-docker](https://github.com/ReachabilityOrg/cve-2022-42889-text4shell-docker)
 - [Dima2021/cve-2022-42889-text4shell](https://github.com/Dima2021/cve-2022-42889-text4shell)
 - [aaronm-sysdig/text4shell-docker](https://github.com/aaronm-sysdig/text4shell-docker)
-- [808ale/CVE-2022-42889-Text4Shell-POC](https://github.com/808ale/CVE-2022-42889-Text4Shell-POC)
+- [alebrestado/CVE-2022-42889-Text4Shell-POC](https://github.com/alebrestado/CVE-2022-42889-Text4Shell-POC)
 - [Sic4rio/CVE-2022-42889](https://github.com/Sic4rio/CVE-2022-42889)
 - [34006133/CVE-2022-42889](https://github.com/34006133/CVE-2022-42889)
 - [DimaMend/cve-2022-42889-text4shell](https://github.com/DimaMend/cve-2022-42889-text4shell)
@@ -48282,6 +48307,7 @@
 - [z3n70/CVE-2021-43798](https://github.com/z3n70/CVE-2021-43798)
 - [Mo0ns/Grafana_POC-CVE-2021-43798](https://github.com/Mo0ns/Grafana_POC-CVE-2021-43798)
 - [fanygit/Grafana-CVE-2021-43798Exp](https://github.com/fanygit/Grafana-CVE-2021-43798Exp)
+- [LongWayHomie/CVE-2021-43798](https://github.com/LongWayHomie/CVE-2021-43798)
 - [pedrohavay/exploit-grafana-CVE-2021-43798](https://github.com/pedrohavay/exploit-grafana-CVE-2021-43798)
 - [gixxyboy/CVE-2021-43798](https://github.com/gixxyboy/CVE-2021-43798)
 - [Ryze-T/CVE-2021-43798](https://github.com/Ryze-T/CVE-2021-43798)
@@ -48373,6 +48399,13 @@
 </code>
 
 - [Sudistark/vscode-rce-electrovolt](https://github.com/Sudistark/vscode-rce-electrovolt)
+
+### CVE-2021-43936 (2021-12-06)
+
+<code>The software allows the attacker to upload or transfer files of dangerous types to the WebHMI portal, that may be automatically processed within the product's environment or lead to arbitrary code execution.
+</code>
+
+- [LongWayHomie/CVE-2021-43936](https://github.com/LongWayHomie/CVE-2021-43936)
 
 ### CVE-2021-44026 (2021-11-19)
 
@@ -57818,7 +57851,7 @@
 <code>A SQL Injection issue was discovered in webERP 4.15. Payments.php accepts payment data in base64 format. After this is decoded, it is deserialized. Then, this deserialized data goes directly into a SQL query, with no sanitizing checks.
 </code>
 
-- [808ale/CVE-2019-13292-WebERP_4.15](https://github.com/808ale/CVE-2019-13292-WebERP_4.15)
+- [alebrestado/CVE-2019-13292-WebERP_4.15](https://github.com/alebrestado/CVE-2019-13292-WebERP_4.15)
 
 ### CVE-2019-13361 (2019-09-05)
 
@@ -63303,7 +63336,7 @@
 - [klairmanraj/Multi-VLAN-Enterprise-Network-Security-Infrastructure](https://github.com/klairmanraj/Multi-VLAN-Enterprise-Network-Security-Infrastructure)
 - [klairmanraj/Vulnerability-Risk-Assessment-TVRA-Enterprise-Network](https://github.com/klairmanraj/Vulnerability-Risk-Assessment-TVRA-Enterprise-Network)
 - [klairmanraj/Multi-VLAN-Enterprise-Network-Vulnerability-Assessment](https://github.com/klairmanraj/Multi-VLAN-Enterprise-Network-Vulnerability-Assessment)
-- [dannic145/EternalBlue-DoublePulsar-Exploit-Demonstration](https://github.com/dannic145/EternalBlue-DoublePulsar-Exploit-Demonstration)
+- [dannic145/EternalBlue-Exploit-Demonstration](https://github.com/dannic145/EternalBlue-Exploit-Demonstration)
 - [ichhyak22/EternalBlue-Exploit-Demonstration-MS17-010](https://github.com/ichhyak22/EternalBlue-Exploit-Demonstration-MS17-010)
 
 ### CVE-2017-0145 (2017-03-17)
@@ -65080,6 +65113,7 @@
 - [ygouzerh/CVE-2017-12617](https://github.com/ygouzerh/CVE-2017-12617)
 - [tyranteye666/tomcat-cve-2017-12617](https://github.com/tyranteye666/tomcat-cve-2017-12617)
 - [jptr218/tc_hack](https://github.com/jptr218/tc_hack)
+- [LongWayHomie/CVE-2017-12617](https://github.com/LongWayHomie/CVE-2017-12617)
 - [K3ysTr0K3R/CVE-2017-12617-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2017-12617-EXPLOIT)
 - [scirusvulgaris/CVE-2017-12617](https://github.com/scirusvulgaris/CVE-2017-12617)
 - [yZee00/CVE-2017-12617](https://github.com/yZee00/CVE-2017-12617)
@@ -65801,6 +65835,7 @@
 - [cved-sources/cve-2017-1000486](https://github.com/cved-sources/cve-2017-1000486)
 - [Pastea/CVE-2017-1000486](https://github.com/Pastea/CVE-2017-1000486)
 - [0xdsm/pwnfaces](https://github.com/0xdsm/pwnfaces)
+- [LongWayHomie/CVE-2017-1000486](https://github.com/LongWayHomie/CVE-2017-1000486)
 - [jam620/primefaces](https://github.com/jam620/primefaces)
 
 ### CVE-2017-1000487 (2018-01-03)
@@ -67143,7 +67178,7 @@
 
 - [rvizx/CVE-2016-10924](https://github.com/rvizx/CVE-2016-10924)
 - [LGenAgul/Wordpress-ebook-CVE-2016-10924](https://github.com/LGenAgul/Wordpress-ebook-CVE-2016-10924)
-- [808ale/cve-2016-10924-POC](https://github.com/808ale/cve-2016-10924-POC)
+- [alebrestado/cve-2016-10924-POC](https://github.com/alebrestado/cve-2016-10924-POC)
 
 ### CVE-2016-10956 (2019-09-16)
 
@@ -68982,6 +69017,7 @@
 - [kaleth4/-CVE-2014-6271](https://github.com/kaleth4/-CVE-2014-6271)
 - [kaleth4/CVE-2014-6271](https://github.com/kaleth4/CVE-2014-6271)
 - [V3nG4mxV1p3r/Mobile-Drop-Device-SOC-Detection](https://github.com/V3nG4mxV1p3r/Mobile-Drop-Device-SOC-Detection)
+- [im2nerd/CVE-2014-6271](https://github.com/im2nerd/CVE-2014-6271)
 
 ### CVE-2014-6287 (2014-10-07)
 
