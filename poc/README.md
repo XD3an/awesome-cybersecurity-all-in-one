@@ -59,6 +59,7 @@
 - [whattheslime/CVE-2026-0740](https://github.com/whattheslime/CVE-2026-0740)
 - [xShadow-Here/CVE-2026-0740](https://github.com/xShadow-Here/CVE-2026-0740)
 - [0xgh057r3c0n/CVE-2026-0740](https://github.com/0xgh057r3c0n/CVE-2026-0740)
+- [murrez/CVE-2026-0740](https://github.com/murrez/CVE-2026-0740)
 
 ### CVE-2026-0745 (2026-02-14)
 
@@ -631,6 +632,7 @@
 - [im-hanzou/CVE-2026-3844](https://github.com/im-hanzou/CVE-2026-3844)
 - [0xgh057r3c0n/CVE-2026-3844](https://github.com/0xgh057r3c0n/CVE-2026-3844)
 - [tausifzaman/CVE-2026-3844](https://github.com/tausifzaman/CVE-2026-3844)
+- [dinosn/CVE-2026-3844](https://github.com/dinosn/CVE-2026-3844)
 
 ### CVE-2026-3888 (2026-03-17)
 
@@ -911,6 +913,9 @@
 ### CVE-2026-6849
 - [osmancanvural/CVE-2026-6849](https://github.com/osmancanvural/CVE-2026-6849)
 
+### CVE-2026-7020
+- [davidrxchester/CVE-2026-7020](https://github.com/davidrxchester/CVE-2026-7020)
+
 ### CVE-2026-7731
 - [SimoesCTT/CTT-Refraction-Vortex-CVE-2026-7731-](https://github.com/SimoesCTT/CTT-Refraction-Vortex-CVE-2026-7731-)
 
@@ -1188,6 +1193,9 @@
 </code>
 
 - [Leonideath/Exploit-LPE-CVE-2026-21721](https://github.com/Leonideath/Exploit-LPE-CVE-2026-21721)
+
+### CVE-2026-21847
+- [blaxkmiradev/CVE-2026-21847-Hardcoded-AES-Encryption-Key-in-DPDC-Customer-Portal](https://github.com/blaxkmiradev/CVE-2026-21847-Hardcoded-AES-Encryption-Key-in-DPDC-Customer-Portal)
 
 ### CVE-2026-21852 (2026-01-21)
 
@@ -1554,7 +1562,6 @@
 - [fcjaviergarcia/CVE-2026-23744-POC](https://github.com/fcjaviergarcia/CVE-2026-23744-POC)
 - [0xg00se/CVE-2026-23744-script](https://github.com/0xg00se/CVE-2026-23744-script)
 - [d3vn0mi/CVE-2026-23744-POC](https://github.com/d3vn0mi/CVE-2026-23744-POC)
-- [d0x-awrqxavc/CVE-2026-23744](https://github.com/d0x-awrqxavc/CVE-2026-23744)
 - [CyLock11/CVE-2026-23744](https://github.com/CyLock11/CVE-2026-23744)
 - [luiskrnr/exploit-CVE-2026-23744](https://github.com/luiskrnr/exploit-CVE-2026-23744)
 
@@ -3075,6 +3082,9 @@
 
 - [MichaelAdamGroberman/CVE-2026-32662](https://github.com/MichaelAdamGroberman/CVE-2026-32662)
 
+### CVE-2026-32699
+- [TurkiOS/cve-2026-32699-facturascripts-nick-bypass](https://github.com/TurkiOS/cve-2026-32699-facturascripts-nick-bypass)
+
 ### CVE-2026-32722 (2026-03-18)
 
 <code>Memray is a memory profiler for Python. Prior to Memray 1.19.2, Memray rendered the command line of the tracked process directly into generated HTML reports without escaping. Because there was no escaping, attacker-controlled command line arguments were inserted as raw HTML into the generated report. This allowed JavaScript execution when a victim opened the generated report in a browser. Version 1.19.2 fixes the issue.
@@ -3655,6 +3665,7 @@
 - [mki9/CVE-2026-39987_exploit](https://github.com/mki9/CVE-2026-39987_exploit)
 - [keraattin/CVE-2026-39987](https://github.com/keraattin/CVE-2026-39987)
 - [Nxploited/CVE-2026-39987](https://github.com/Nxploited/CVE-2026-39987)
+- [h3raklez/CVE-2026-39987](https://github.com/h3raklez/CVE-2026-39987)
 
 ### CVE-2026-40175 (2026-04-10)
 
@@ -3690,6 +3701,13 @@
 
 ### CVE-2026-40579
 - [zebbernCVE/CVE-2026-40579](https://github.com/zebbernCVE/CVE-2026-40579)
+
+### CVE-2026-41177 (2026-04-22)
+
+<code>Squidex is an open source headless content management system and content management hub. Prior to version 7.23.0, the Squidex Restore API is vulnerable to Blind Server-Side Request Forgery (SSRF). The application fails to validate the URI scheme of the user-supplied `Url` parameter, allowing the use of the `file://` protocol. This allows an authenticated administrator to force the backend server to interact with the local filesystem, which can lead to Local File Interaction (LFI) and potential disclosure of sensitive system information through side-channel analysis of internal logs. Version 7.23.0 contains a fix.
+</code>
+
+- [TurkiOS/CVE-2026-41177-Squidex-CMS](https://github.com/TurkiOS/CVE-2026-41177-Squidex-CMS)
 
 ### CVE-2026-41303 (2026-04-20)
 
@@ -4179,6 +4197,7 @@
 - [MAEN1-prog/maen1-prog.github.io](https://github.com/MAEN1-prog/maen1-prog.github.io)
 - [estebanzarate/CVE-2025-2304-Camaleon-CMS-Mass-Assignment-Privilege-Escalation-PoC](https://github.com/estebanzarate/CVE-2025-2304-Camaleon-CMS-Mass-Assignment-Privilege-Escalation-PoC)
 - [mattiapertusati/htb-facts](https://github.com/mattiapertusati/htb-facts)
+- [Jeanback1/CVE-2025-2304-exploit](https://github.com/Jeanback1/CVE-2025-2304-exploit)
 - [karimelsheikh1/HTB-Facts-Writeup](https://github.com/karimelsheikh1/HTB-Facts-Writeup)
 
 ### CVE-2025-2404 (2025-09-16)
@@ -7612,7 +7631,7 @@
 </code>
 
 - [numanturle/CVE-2025-25279](https://github.com/numanturle/CVE-2025-25279)
-- [Abokor-creator/CVE-2025-25279-Mattermost-Path-Traversal](https://github.com/Abokor-creator/CVE-2025-25279-Mattermost-Path-Traversal)
+- [AbokorMAHAMMADMOUSSE/CVE-2025-25279-Mattermost-Path-Traversal](https://github.com/AbokorMAHAMMADMOUSSE/CVE-2025-25279-Mattermost-Path-Traversal)
 
 ### CVE-2025-25296 (2025-02-14)
 
@@ -11421,7 +11440,7 @@
 - [3a7/CVE-2025-53770](https://github.com/3a7/CVE-2025-53770)
 - [r3xbugbounty/CVE-2025-53770](https://github.com/r3xbugbounty/CVE-2025-53770)
 - [daryllundy/CVE-2025-53770](https://github.com/daryllundy/CVE-2025-53770)
-- [0x-crypt/CVE-2025-53770-Scanner](https://github.com/0x-crypt/CVE-2025-53770-Scanner)
+- [0xisfet/CVE-2025-53770-Scanner](https://github.com/0xisfet/CVE-2025-53770-Scanner)
 - [Immersive-Labs-Sec/SharePoint-CVE-2025-53770-POC](https://github.com/Immersive-Labs-Sec/SharePoint-CVE-2025-53770-POC)
 - [harryhaxor/CVE-2025-53770-SharePoint-Deserialization-RCE-PoC](https://github.com/harryhaxor/CVE-2025-53770-SharePoint-Deserialization-RCE-PoC)
 - [Agampreet-Singh/CVE-2025-53770](https://github.com/Agampreet-Singh/CVE-2025-53770)
@@ -11571,7 +11590,7 @@
 </code>
 
 - [nihilor/cve-2025-54313](https://github.com/nihilor/cve-2025-54313)
-- [ShinP451/scavenger_scanner](https://github.com/ShinP451/scavenger_scanner)
+- [Paspke/scavenger_scanner](https://github.com/Paspke/scavenger_scanner)
 
 ### CVE-2025-54320 (2025-11-18)
 
@@ -12198,6 +12217,7 @@
 - [Mohamedniane/cve-2025-55182-analysis](https://github.com/Mohamedniane/cve-2025-55182-analysis)
 - [joaoreis13/flight-risk](https://github.com/joaoreis13/flight-risk)
 - [shibaaa204/React2Shell](https://github.com/shibaaa204/React2Shell)
+- [Cybersecurity-Enthusiasts-CE/CVE-2025-55182-Researching-process](https://github.com/Cybersecurity-Enthusiasts-CE/CVE-2025-55182-Researching-process)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -15808,6 +15828,7 @@
 - [mrrobot0o/CVE-2024-3273-](https://github.com/mrrobot0o/CVE-2024-3273-)
 - [OIivr/Turvan6rkus-CVE-2024-3273](https://github.com/OIivr/Turvan6rkus-CVE-2024-3273)
 - [X-Projetion/CVE-2024-3273-D-Link-Remote-Code-Execution-RCE](https://github.com/X-Projetion/CVE-2024-3273-D-Link-Remote-Code-Execution-RCE)
+- [askhatov21/CP3418_BestPracticesCybersecurity_OTANATA_Project](https://github.com/askhatov21/CP3418_BestPracticesCybersecurity_OTANATA_Project)
 
 ### CVE-2024-3293 (2024-04-23)
 
@@ -18554,6 +18575,7 @@
 - [TheMursalin/HTB-Mailing-A-Complete-Walkthrough](https://github.com/TheMursalin/HTB-Mailing-A-Complete-Walkthrough)
 - [pedro-lucas-melo/Estudo-de-Caso-CVE-2024-21413](https://github.com/pedro-lucas-melo/Estudo-de-Caso-CVE-2024-21413)
 - [FathanahHidayati/https-github.com-xaitax-CVE-2024-21413-Microsoft-Outlook-Remote-Code-Execution-Vulnerability](https://github.com/FathanahHidayati/https-github.com-xaitax-CVE-2024-21413-Microsoft-Outlook-Remote-Code-Execution-Vulnerability)
+- [bhatbhupendra/Moniker-Link--CVE-2024-21413-](https://github.com/bhatbhupendra/Moniker-Link--CVE-2024-21413-)
 
 ### CVE-2024-21513 (2024-07-15)
 
@@ -27706,13 +27728,6 @@
 - [szybnev/CVE-2023-7028](https://github.com/szybnev/CVE-2023-7028)
 - [KameliaZaman/Exploiting-GitLab-CVE-2023-7028](https://github.com/KameliaZaman/Exploiting-GitLab-CVE-2023-7028)
 
-### CVE-2023-7173 (2023-12-30)
-
-<code>Es wurde eine problematische Schwachstelle in PHPGurukul Hospital Management System 1.0 gefunden. Es geht dabei um eine nicht klar definierte Funktion der Datei registration.php. Durch das Beeinflussen des Arguments First Name mit unbekannten Daten kann eine cross site scripting-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk passieren. Der Exploit steht zur öffentlichen Verfügung.
-</code>
-
-- [sharathc213/CVE-2023-7173](https://github.com/sharathc213/CVE-2023-7173)
-
 ### CVE-2023-7231 (2025-05-15)
 
 <code>The illi Link Party! WordPress plugin through 1.0 lacks proper access controls, allowing unauthenticated visitors to delete links.
@@ -30641,6 +30656,7 @@
 - [ThrynSec/CVE-2023-32629-CVE-2023-2640---POC-Escalation](https://github.com/ThrynSec/CVE-2023-32629-CVE-2023-2640---POC-Escalation)
 - [k4but0/Ubuntu-LPE](https://github.com/k4but0/Ubuntu-LPE)
 - [xS9NTX/CVE-2023-32629-CVE-2023-2640-Ubuntu-Privilege-Escalation-POC](https://github.com/xS9NTX/CVE-2023-32629-CVE-2023-2640-Ubuntu-Privilege-Escalation-POC)
+- [h3raklez/CVE-2023-32629](https://github.com/h3raklez/CVE-2023-32629)
 
 ### CVE-2023-32681 (2023-05-26)
 
@@ -43012,13 +43028,6 @@
 
 - [pazhanivel07/frameworks_base_Aosp10_r33_CVE-2021-0595](https://github.com/pazhanivel07/frameworks_base_Aosp10_r33_CVE-2021-0595)
 
-### CVE-2021-0600 (2021-07-14)
-
-<code>In onCreate of DeviceAdminAdd.java, there is a possible way to mislead a user to activate a device admin app due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-8.1 Android-9 Android-10 Android-11Android ID: A-179042963
-</code>
-
-- [Satheesh575555/packages_apps_Settings_AOSP10_r33_CVE-2021-0600](https://github.com/Satheesh575555/packages_apps_Settings_AOSP10_r33_CVE-2021-0600)
-
 ### CVE-2021-0640 (2021-08-17)
 
 <code>In noteAtomLogged of StatsdStats.cpp, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-9Android ID: A-187957589
@@ -47817,6 +47826,7 @@
 - [Kouf320/attacker-lab-cve-2017-5638-cve-2021-41773-paper](https://github.com/Kouf320/attacker-lab-cve-2017-5638-cve-2021-41773-paper)
 - [JKIM72403/CS4277-CVE-Path-Traversal-Apache-HTTP-Server](https://github.com/JKIM72403/CS4277-CVE-Path-Traversal-Apache-HTTP-Server)
 - [klmntbelgium/cve-2021-41773-exploration](https://github.com/klmntbelgium/cve-2021-41773-exploration)
+- [im2nerd/CVE-2021-41773](https://github.com/im2nerd/CVE-2021-41773)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -56787,6 +56797,7 @@
 - [vadaysakiv/cve-2019-9053](https://github.com/vadaysakiv/cve-2019-9053)
 - [iTzR1g/CVE-2019-9053](https://github.com/iTzR1g/CVE-2019-9053)
 - [coolkiee/CVE-2019-9053](https://github.com/coolkiee/CVE-2019-9053)
+- [killukeren/-CVE-2019-9053](https://github.com/killukeren/-CVE-2019-9053)
 
 ### CVE-2019-9081
 - [nth347/CVE-2019-9081_PoC](https://github.com/nth347/CVE-2019-9081_PoC)
@@ -58119,6 +58130,7 @@
 - [MariliaMeira/CVE-2019-14287](https://github.com/MariliaMeira/CVE-2019-14287)
 - [Ijinleife/CVE-2019-14287](https://github.com/Ijinleife/CVE-2019-14287)
 - [lemonadern/poc-cve-2019-14287](https://github.com/lemonadern/poc-cve-2019-14287)
+- [HivinManjuSri/ubuntu-cve-2019-14287-patch-manager](https://github.com/HivinManjuSri/ubuntu-cve-2019-14287-patch-manager)
 
 ### CVE-2019-14314 (2019-08-27)
 
@@ -60836,6 +60848,7 @@
 - [bixiPRO/Drupalgeddon2-CVE-2018-7600](https://github.com/bixiPRO/Drupalgeddon2-CVE-2018-7600)
 - [Meraj1312/cve-2018-7600-drupalgeddon2-lab](https://github.com/Meraj1312/cve-2018-7600-drupalgeddon2-lab)
 - [erman-bolukbasi/web-penetration-drupal](https://github.com/erman-bolukbasi/web-penetration-drupal)
+- [MoriartyPuth-Labs/DC1-Lab](https://github.com/MoriartyPuth-Labs/DC1-Lab)
 
 ### CVE-2018-7602 (2018-07-19)
 
@@ -64409,7 +64422,6 @@
 - [K3ysTr0K3R/CVE-2017-7921-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2017-7921-EXPLOIT)
 - [AnonkiGroup/AnonHik](https://github.com/AnonkiGroup/AnonHik)
 - [b3pwn3d/CVE-2017-7921](https://github.com/b3pwn3d/CVE-2017-7921)
-- [yousouf-Tasfin/cve-2017-7921-Mass-Exploit](https://github.com/yousouf-Tasfin/cve-2017-7921-Mass-Exploit)
 - [kooroshsanaei/HikVision-CVE-2017-7921](https://github.com/kooroshsanaei/HikVision-CVE-2017-7921)
 - [aengussong/hikvision_probe](https://github.com/aengussong/hikvision_probe)
 - [GabrielAvls/CVE-2017-7921](https://github.com/GabrielAvls/CVE-2017-7921)
@@ -65102,6 +65114,7 @@
 - [pixelofapicture/001-Malware-Analysis-CVE-2017-11882](https://github.com/pixelofapicture/001-Malware-Analysis-CVE-2017-11882)
 - [xdrake1010/CVE-2017-11882-Preventer](https://github.com/xdrake1010/CVE-2017-11882-Preventer)
 - [imkidz0/CVE-2017-11882](https://github.com/imkidz0/CVE-2017-11882)
+- [DONKEY0xSHOT/CVE-2017-11882-Blocker](https://github.com/DONKEY0xSHOT/CVE-2017-11882-Blocker)
 
 ### CVE-2017-11907 (2017-12-12)
 
