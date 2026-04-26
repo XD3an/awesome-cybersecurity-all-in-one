@@ -176,6 +176,13 @@
 
 - [Iniivan13/CVE-2026-1107](https://github.com/Iniivan13/CVE-2026-1107)
 
+### CVE-2026-1207 (2026-02-03)
+
+<code>An issue was discovered in 6.0 before 6.0.2, 5.2 before 5.2.11, and 4.2 before 4.2.28.\nRaster lookups on ``RasterField`` (only implemented on PostGIS) allows remote attackers to inject SQL via the band index parameter.\nEarlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.\nDjango would like to thank Tarek Nakkouch for reporting this issue.
+</code>
+
+- [sw0rd1ight/CVE-2026-1207](https://github.com/sw0rd1ight/CVE-2026-1207)
+
 ### CVE-2026-1208 (2026-01-24)
 
 <code>The Friendly Functions for Welcart plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.2.5. This is due to missing or incorrect nonce validation on the settings page. This makes it possible for unauthenticated attackers to update plugin settings via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.
@@ -913,7 +920,11 @@
 ### CVE-2026-6849
 - [osmancanvural/CVE-2026-6849](https://github.com/osmancanvural/CVE-2026-6849)
 
-### CVE-2026-7020
+### CVE-2026-7020 (2026-04-26)
+
+<code>A security flaw has been discovered in Ollama up to 0.20.2. This affects the function digestToPath of the file x/imagegen/transfer/transfer.go of the component Tensor Model Transfer Handler. The manipulation of the argument digest results in path traversal. The attack may be performed from remote. This attack is characterized by high complexity. The exploitability is reported as difficult. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.
+</code>
+
 - [davidrxchester/CVE-2026-7020](https://github.com/davidrxchester/CVE-2026-7020)
 
 ### CVE-2026-7731
@@ -2571,6 +2582,13 @@
 
 - [Anon-Cyber-Team/CVE-2026-27966--RCE-in-Langflow](https://github.com/Anon-Cyber-Team/CVE-2026-27966--RCE-in-Langflow)
 
+### CVE-2026-27978 (2026-03-17)
+
+<code>Next.js is a React framework for building full-stack web applications. Starting in version 16.0.1 and prior to version 16.1.7, `origin: null` was treated as a &quot;missing&quot; origin during Server Action CSRF validation. As a result, requests from opaque contexts (such as sandboxed iframes) could bypass origin verification instead of being validated as cross-origin requests. An attacker could induce a victim browser to submit Server Actions from a sandboxed context, potentially executing state-changing actions with victim credentials (CSRF). This is fixed in version 16.1.7 by treating `'null'` as an explicit origin value and enforcing host/origin checks unless `'null'` is explicitly allowlisted in `experimental.serverActions.allowedOrigins`. If upgrading is not immediately possible, add CSRF tokens for sensitive Server Actions, prefer `SameSite=Strict` on sensitive auth cookies, and/or do not allow `'null'` in `serverActions.allowedOrigins` unless intentionally required and additionally protected.
+</code>
+
+- [Nayekah/Next.js-Proof-of-Concept](https://github.com/Nayekah/Next.js-Proof-of-Concept)
+
 ### CVE-2026-28286 (2026-03-02)
 
 <code>ZimaOS is a fork of CasaOS, an operating system for Zima devices and x86-64 systems with UEFI. In version 1.5.2-beta3, the application enforces restrictions in the frontend/UI to prevent users from creating files or folders in internal OS paths. However, when interacting directly with the API, the restrictions are bypass-able. By sending a crafted request targeting paths like /etc, /usr, or other sensitive system directories, the API successfully creates files or directories in locations where normal users should have no write access. This indicates that the API does not properly validate the target path, allowing unauthorized operations on critical system directories. No known patch is publicly available.
@@ -3666,6 +3684,7 @@
 - [keraattin/CVE-2026-39987](https://github.com/keraattin/CVE-2026-39987)
 - [Nxploited/CVE-2026-39987](https://github.com/Nxploited/CVE-2026-39987)
 - [h3raklez/CVE-2026-39987](https://github.com/h3raklez/CVE-2026-39987)
+- [Dhiaelhak-Rached/CVE-2026-39987-lab-or-marimo-cve-lab](https://github.com/Dhiaelhak-Rached/CVE-2026-39987-lab-or-marimo-cve-lab)
 
 ### CVE-2026-40175 (2026-04-10)
 
@@ -8538,6 +8557,7 @@
 - [metasploit403/cve-2025-29927-lab](https://github.com/metasploit403/cve-2025-29927-lab)
 - [shahin-shadow/nextjs-auth-bypass](https://github.com/shahin-shadow/nextjs-auth-bypass)
 - [TheWaterbug/alpr-dashboard-patches](https://github.com/TheWaterbug/alpr-dashboard-patches)
+- [Nayekah/Next.js-Proof-of-Concept](https://github.com/Nayekah/Next.js-Proof-of-Concept)
 
 ### CVE-2025-29943 (2026-01-16)
 
