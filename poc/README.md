@@ -927,6 +927,19 @@
 
 - [davidrxchester/CVE-2026-7020](https://github.com/davidrxchester/CVE-2026-7020)
 
+### CVE-2026-7028 (2026-04-26)
+
+<code>A security flaw has been discovered in CodeAstro Online Job Portal 1.0. The affected element is an unknown function of the file /admin/jobs-admins/delete-jobs.php of the component All Jobs Page. Performing a manipulation of the argument ID results in sql injection. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks.
+</code>
+
+- [Xmyronn/CVE-2026-7028-SQLI](https://github.com/Xmyronn/CVE-2026-7028-SQLI)
+
+### CVE-2026-7071
+- [Xmyronn/CVE-2026-7071-access-Control](https://github.com/Xmyronn/CVE-2026-7071-access-Control)
+
+### CVE-2026-7089
+- [Xmyronn/CVE-2026-7089-XSS](https://github.com/Xmyronn/CVE-2026-7089-XSS)
+
 ### CVE-2026-7731
 - [SimoesCTT/CTT-Refraction-Vortex-CVE-2026-7731-](https://github.com/SimoesCTT/CTT-Refraction-Vortex-CVE-2026-7731-)
 
@@ -1258,6 +1271,7 @@
 </code>
 
 - [CVEs-Labs/CVE-2026-21877](https://github.com/CVEs-Labs/CVE-2026-21877)
+- [monkeontheroof/cve-2026-21877-rce](https://github.com/monkeontheroof/cve-2026-21877-rce)
 
 ### CVE-2026-21902 (2026-02-25)
 
@@ -3728,6 +3742,13 @@
 
 - [TurkiOS/CVE-2026-41177-Squidex-CMS](https://github.com/TurkiOS/CVE-2026-41177-Squidex-CMS)
 
+### CVE-2026-41242 (2026-04-18)
+
+<code>protobufjs compiles protobuf definitions into JavaScript (JS) functions. In versions prior to 8.0.1 and 7.5.5, attackers can inject arbitrary code in the &quot;type&quot; fields of protobuf definitions, which will then execute during object decoding using that definition. Versions 8.0.1 and 7.5.5 patch the issue.
+</code>
+
+- [4chech/CVE-2026-41242](https://github.com/4chech/CVE-2026-41242)
+
 ### CVE-2026-41303 (2026-04-20)
 
 <code>OpenClaw before 2026.3.28 contains an authorization bypass vulnerability in Discord text approval commands that allows non-approvers to resolve pending exec approvals. Attackers can send Discord text commands to bypass the channels.discord.execApprovals.approvers allowlist and approve pending host execution requests.
@@ -3971,7 +3992,6 @@
 
 - [EQSTLab/CVE-2025-1302](https://github.com/EQSTLab/CVE-2025-1302)
 - [abrewer251/CVE-2025-1302_jsonpath-plus_RCE](https://github.com/abrewer251/CVE-2025-1302_jsonpath-plus_RCE)
-- [dbwlsdnr95/CVE-2025-1302](https://github.com/dbwlsdnr95/CVE-2025-1302)
 
 ### CVE-2025-1304 (2025-05-01)
 
@@ -5513,6 +5533,7 @@
 
 - [segura2010/lenovo-dispatcher-poc](https://github.com/segura2010/lenovo-dispatcher-poc)
 - [spawn451/CVE-2025-8061-Exploit](https://github.com/spawn451/CVE-2025-8061-Exploit)
+- [vxqs/Lenovo-CVE-2025-8061](https://github.com/vxqs/Lenovo-CVE-2025-8061)
 
 ### CVE-2025-8067 (2025-08-28)
 
@@ -5832,6 +5853,13 @@
 </code>
 
 - [Amperclock/CVE-2025-9491_POC](https://github.com/Amperclock/CVE-2025-9491_POC)
+
+### CVE-2025-9501 (2025-11-17)
+
+<code>The W3 Total Cache WordPress plugin before 2.8.13 is vulnerable to command injection via the _parse_dynamic_mfunc function, allowing unauthenticated users to execute PHP commands by submitting a comment with a malicious payload to a post.
+</code>
+
+- [InnerFireZ/CVE-2025_9501-POC](https://github.com/InnerFireZ/CVE-2025_9501-POC)
 
 ### CVE-2025-9728 (2025-08-31)
 
@@ -6242,6 +6270,13 @@
 </code>
 
 - [Nxploited/CVE-2025-12674](https://github.com/Nxploited/CVE-2025-12674)
+
+### CVE-2025-12720 (2025-12-06)
+
+<code>The g-FFL Cockpit plugin for WordPress is vulnerable to unauthorized modification of data due to IP-based authorization that can be spoofed in the handle_enqueue_only() function in all versions up to, and including, 1.7.1. This makes it possible for unauthenticated attackers to delete arbitrary products.
+</code>
+
+- [d0n601/CVE-2025-12720](https://github.com/d0n601/CVE-2025-12720)
 
 ### CVE-2025-12735 (2025-11-05)
 
@@ -8382,6 +8417,7 @@
 <code>A Gardyn Azure IoT Hub connection string is downloaded over an insecure HTTP connection in Gardyn Home Kit firmware before master.619, Home Kit Mobile Application before 2.11.0, and Home Kit Cloud API before 2.12.2026 leaving the string vulnerable to interception and modification through a Man-in-the-Middle attack. This may result in the attacker capturing device credentials or taking control of vulnerable home kits.
 </code>
 
+- [mselbrede/gardyn](https://github.com/mselbrede/gardyn)
 - [kristof-mattei/gardyn-hack](https://github.com/kristof-mattei/gardyn-hack)
 
 ### CVE-2025-29632 (2025-05-29)
@@ -8485,7 +8521,6 @@
 - [Nekicj/CVE-2025-29927-exploit](https://github.com/Nekicj/CVE-2025-29927-exploit)
 - [Heimd411/CVE-2025-29927-PoC](https://github.com/Heimd411/CVE-2025-29927-PoC)
 - [m2hcz/PoC-for-Next.js-Middleware](https://github.com/m2hcz/PoC-for-Next.js-Middleware)
-- [KaztoRay/CVE-2025-29927-Research](https://github.com/KaztoRay/CVE-2025-29927-Research)
 - [nocomp/CVE-2025-29927-scanner](https://github.com/nocomp/CVE-2025-29927-scanner)
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [luq0x/0xMiddleware](https://github.com/luq0x/0xMiddleware)
@@ -8550,7 +8585,6 @@
 - [liamromanis101/CVE-2025-29927-NextJS](https://github.com/liamromanis101/CVE-2025-29927-NextJS)
 - [DanielHallbro/CVE-2025-29927-Nextjs-Bypass-PoC](https://github.com/DanielHallbro/CVE-2025-29927-Nextjs-Bypass-PoC)
 - [Si-Ni/CVE-2025-29927-Proof-of-Concept](https://github.com/Si-Ni/CVE-2025-29927-Proof-of-Concept)
-- [dbwlsdnr95/CVE-2025-29927](https://github.com/dbwlsdnr95/CVE-2025-29927)
 - [sangrok-jeon/CVE-2025-29927-Nextjs-Analysis](https://github.com/sangrok-jeon/CVE-2025-29927-Nextjs-Analysis)
 - [Toddkk02/CVE-2025-29927](https://github.com/Toddkk02/CVE-2025-29927)
 - [hujiaozhuzhu/CVE-2025-29927__Next.js](https://github.com/hujiaozhuzhu/CVE-2025-29927__Next.js)
@@ -9031,7 +9065,6 @@
 - [byteReaper77/CVE-2025-32429](https://github.com/byteReaper77/CVE-2025-32429)
 - [amir-othman/CVE-2025-32429](https://github.com/amir-othman/CVE-2025-32429)
 - [imbas007/CVE-2025-32429-Checker](https://github.com/imbas007/CVE-2025-32429-Checker)
-- [TheNaderr/CVE-2025-32429](https://github.com/TheNaderr/CVE-2025-32429)
 
 ### CVE-2025-32432 (2025-04-25)
 
@@ -12132,7 +12165,6 @@
 - [mahaveer-choudhary/CVE-2025-55182](https://github.com/mahaveer-choudhary/CVE-2025-55182)
 - [MeGaNeKoS/secure-by-default-rce-demo](https://github.com/MeGaNeKoS/secure-by-default-rce-demo)
 - [TamaGorengs/react2shell-poc-CVE-2025-55182](https://github.com/TamaGorengs/react2shell-poc-CVE-2025-55182)
-- [dbwlsdnr95/CVE-2025-55182](https://github.com/dbwlsdnr95/CVE-2025-55182)
 - [xxxTectationxxx/React2Shell-CVE-Lab](https://github.com/xxxTectationxxx/React2Shell-CVE-Lab)
 - [vijay-shirhatti/RSC-Detect-CVE-2025-55182](https://github.com/vijay-shirhatti/RSC-Detect-CVE-2025-55182)
 - [p3ta00/react2shell-poc](https://github.com/p3ta00/react2shell-poc)
@@ -13088,6 +13120,7 @@
 - [lil0xplorer/CVE-2025-60787_PoC](https://github.com/lil0xplorer/CVE-2025-60787_PoC)
 - [d3vn0mi/CVE-2025-60787-POC](https://github.com/d3vn0mi/CVE-2025-60787-POC)
 - [agent-skywalker/CVE-2025-60787](https://github.com/agent-skywalker/CVE-2025-60787)
+- [Revnin/CCTV-MACHINE](https://github.com/Revnin/CCTV-MACHINE)
 
 ### CVE-2025-60852 (2025-10-23)
 
@@ -15848,7 +15881,7 @@
 - [mrrobot0o/CVE-2024-3273-](https://github.com/mrrobot0o/CVE-2024-3273-)
 - [OIivr/Turvan6rkus-CVE-2024-3273](https://github.com/OIivr/Turvan6rkus-CVE-2024-3273)
 - [X-Projetion/CVE-2024-3273-D-Link-Remote-Code-Execution-RCE](https://github.com/X-Projetion/CVE-2024-3273-D-Link-Remote-Code-Execution-RCE)
-- [askhatov21/CP3418_BestPracticesCybersecurity_OTANATA_Project](https://github.com/askhatov21/CP3418_BestPracticesCybersecurity_OTANATA_Project)
+- [askhatov21/Best-Practices-Cybersecurity-Otanata-Project](https://github.com/askhatov21/Best-Practices-Cybersecurity-Otanata-Project)
 
 ### CVE-2024-3293 (2024-04-23)
 
@@ -20159,7 +20192,6 @@
 - [Cythonic1/CVE-2024-27198_POC](https://github.com/Cythonic1/CVE-2024-27198_POC)
 - [ArtemCyberLab/Project-Exploiting-CVE-2024-27198-RCE-Vulnerability](https://github.com/ArtemCyberLab/Project-Exploiting-CVE-2024-27198-RCE-Vulnerability)
 - [EynaExp/CVE-2024-27198-POC](https://github.com/EynaExp/CVE-2024-27198-POC)
-- [dbwlsdnr95/CVE-2024-27198](https://github.com/dbwlsdnr95/CVE-2024-27198)
 
 ### CVE-2024-27292 (2024-02-29)
 
@@ -24815,6 +24847,7 @@
 - [Ravi-lk/CVE-2024-51482-ZoneMinder-v1.37.-1.37.64-SQL-Injection-POC](https://github.com/Ravi-lk/CVE-2024-51482-ZoneMinder-v1.37.-1.37.64-SQL-Injection-POC)
 - [lnn0v4/sqli-hunter-CVE-2024-51482-PoC](https://github.com/lnn0v4/sqli-hunter-CVE-2024-51482-PoC)
 - [Erhui-Li/CVE-2024-51482-ZoneMinder-CCTV-HTB-Reliable-EXP](https://github.com/Erhui-Li/CVE-2024-51482-ZoneMinder-CCTV-HTB-Reliable-EXP)
+- [Revnin/CCTV-MACHINE](https://github.com/Revnin/CCTV-MACHINE)
 
 ### CVE-2024-51567 (2024-10-29)
 
@@ -25537,13 +25570,6 @@
 </code>
 
 - [JAckLosingHeart/CVE-2024-55875](https://github.com/JAckLosingHeart/CVE-2024-55875)
-
-### CVE-2024-55879 (2024-12-12)
-
-<code>XWiki Platform is a generic wiki platform. Starting in version 2.3 and prior to versions 15.10.9, 16.3.0, any user with script rights can perform arbitrary remote code execution by adding instances of `XWiki.ConfigurableClass` to any page. This compromises the confidentiality, integrity and availability of the whole XWiki installation. This has been patched in XWiki 15.10.9 and 16.3.0. No known workarounds are available except upgrading.
-</code>
-
-- [dbwlsdnr95/CVE-2024-55879](https://github.com/dbwlsdnr95/CVE-2024-55879)
 
 ### CVE-2024-55890 (2024-12-13)
 
@@ -27748,6 +27774,13 @@
 - [szybnev/CVE-2023-7028](https://github.com/szybnev/CVE-2023-7028)
 - [KameliaZaman/Exploiting-GitLab-CVE-2023-7028](https://github.com/KameliaZaman/Exploiting-GitLab-CVE-2023-7028)
 
+### CVE-2023-7173 (2023-12-30)
+
+<code>Es wurde eine problematische Schwachstelle in PHPGurukul Hospital Management System 1.0 gefunden. Es geht dabei um eine nicht klar definierte Funktion der Datei registration.php. Durch das Beeinflussen des Arguments First Name mit unbekannten Daten kann eine cross site scripting-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk passieren. Der Exploit steht zur öffentlichen Verfügung.
+</code>
+
+- [sharathc213/CVE-2023-7173](https://github.com/sharathc213/CVE-2023-7173)
+
 ### CVE-2023-7231 (2025-05-15)
 
 <code>The illi Link Party! WordPress plugin through 1.0 lacks proper access controls, allowing unauthenticated visitors to delete links.
@@ -29534,7 +29567,6 @@
 - [delsploit/CVE-2023-27997](https://github.com/delsploit/CVE-2023-27997)
 - [node011/CVE-2023-27997-POC](https://github.com/node011/CVE-2023-27997-POC)
 - [onurkerembozkurt/fgt-cve-2023-27997-exploit](https://github.com/onurkerembozkurt/fgt-cve-2023-27997-exploit)
-- [george1-adel/CVE-2023-27997](https://github.com/george1-adel/CVE-2023-27997)
 
 ### CVE-2023-28121 (2023-04-12)
 
@@ -37493,7 +37525,6 @@
 - [NickoPS87/Spring4Shell-Python-Firewall-POC](https://github.com/NickoPS87/Spring4Shell-Python-Firewall-POC)
 - [xenosf/CS4239-Spring4Shell-POC](https://github.com/xenosf/CS4239-Spring4Shell-POC)
 - [mylo-2001/GhostStrike](https://github.com/mylo-2001/GhostStrike)
-- [dbwlsdnr95/CVE-2022-22965](https://github.com/dbwlsdnr95/CVE-2022-22965)
 - [nhattanhh/CVE-2022-22965](https://github.com/nhattanhh/CVE-2022-22965)
 - [Shakur1314/CVE-2022-22965-Spring4Shell-Security-Operations-Analysis](https://github.com/Shakur1314/CVE-2022-22965-Spring4Shell-Security-Operations-Analysis)
 - [suyash-R-K/dfir-malware-investigation](https://github.com/suyash-R-K/dfir-malware-investigation)
@@ -41208,7 +41239,6 @@
 </code>
 
 - [doyensec/CVE-2022-39299_PoC_Generator](https://github.com/doyensec/CVE-2022-39299_PoC_Generator)
-- [KaztoRay/CVE-2022-39299-Research](https://github.com/KaztoRay/CVE-2022-39299-Research)
 
 ### CVE-2022-39425 (2022-10-18)
 
@@ -43047,6 +43077,13 @@
 </code>
 
 - [pazhanivel07/frameworks_base_Aosp10_r33_CVE-2021-0595](https://github.com/pazhanivel07/frameworks_base_Aosp10_r33_CVE-2021-0595)
+
+### CVE-2021-0600 (2021-07-14)
+
+<code>In onCreate of DeviceAdminAdd.java, there is a possible way to mislead a user to activate a device admin app due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-8.1 Android-9 Android-10 Android-11Android ID: A-179042963
+</code>
+
+- [Satheesh575555/packages_apps_Settings_AOSP10_r33_CVE-2021-0600](https://github.com/Satheesh575555/packages_apps_Settings_AOSP10_r33_CVE-2021-0600)
 
 ### CVE-2021-0640 (2021-08-17)
 
@@ -48957,7 +48994,6 @@
 - [PCMKUIT/CVE-2021-44228---Log4Shell-Analysis](https://github.com/PCMKUIT/CVE-2021-44228---Log4Shell-Analysis)
 - [DrHaitham/Log4Shell-CVE-2021-44228](https://github.com/DrHaitham/Log4Shell-CVE-2021-44228)
 - [Loliverte/Log4j-Vulnerability](https://github.com/Loliverte/Log4j-Vulnerability)
-- [dbwlsdnr95/CVE-2021-44228](https://github.com/dbwlsdnr95/CVE-2021-44228)
 - [JoseMariaMicoli/Log4Shell-PoC](https://github.com/JoseMariaMicoli/Log4Shell-PoC)
 - [agylabs/log4shell-remediation](https://github.com/agylabs/log4shell-remediation)
 - [0xBlackash/CVE-2021-44228](https://github.com/0xBlackash/CVE-2021-44228)
@@ -62044,7 +62080,7 @@
 <code>Codiad through 2.8.4 allows Remote Code Execution, a different vulnerability than CVE-2017-11366 and CVE-2017-15689.
 </code>
 
-- [hidog123/Codiad-CVE-2018-14009](https://github.com/hidog123/Codiad-CVE-2018-14009)
+- [lolameroo/Codiad-CVE-2018-14009](https://github.com/lolameroo/Codiad-CVE-2018-14009)
 
 ### CVE-2018-14040 (2018-07-13)
 
@@ -65028,7 +65064,7 @@
 <code>components/filemanager/class.filemanager.php in Codiad before 2.8.4 is vulnerable to remote command execution because shell commands can be embedded in parameter values, as demonstrated by search_file_type.
 </code>
 
-- [hidog123/Codiad-CVE-2018-14009](https://github.com/hidog123/Codiad-CVE-2018-14009)
+- [lolameroo/Codiad-CVE-2018-14009](https://github.com/lolameroo/Codiad-CVE-2018-14009)
 
 ### CVE-2017-11427 (2019-04-17)
 
@@ -68831,6 +68867,7 @@
 - [mpgn/poodle-PoC](https://github.com/mpgn/poodle-PoC)
 - [uthrasri/openssl_g2.5_CVE-2014-3566](https://github.com/uthrasri/openssl_g2.5_CVE-2014-3566)
 - [GoRuGoo/poodle-attack-sandbox](https://github.com/GoRuGoo/poodle-attack-sandbox)
+- [josecl200/VC-PoodlePOC](https://github.com/josecl200/VC-PoodlePOC)
 
 ### CVE-2014-3570 (2015-01-09)
 
