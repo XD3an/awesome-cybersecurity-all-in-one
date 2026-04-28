@@ -938,6 +938,13 @@
 
 - [Penguinsecq/CVE-2026-6356](https://github.com/Penguinsecq/CVE-2026-6356)
 
+### CVE-2026-6643 (2026-04-20)
+
+<code>A stack-based buffer overflow vulnerability was found in the VPN Clients on the ADM. The issue stems from the use of unbounded sscanf() and passing user-controlled data directly to printf(). Due to the lack of PIE and Stack Canary protections, an authenticated remote attacker can exploit these to execute arbitrary code as the web server user. \nAffected products and versions include: from ADM 4.1.0 through ADM 4.3.3.RR42 as well as from ADM 5.0.0 through ADM 5.1.2.REO1.
+</code>
+
+- [mlgzackfly/CVE-2026-6643](https://github.com/mlgzackfly/CVE-2026-6643)
+
 ### CVE-2026-6849
 - [osmancanvural/CVE-2026-6849](https://github.com/osmancanvural/CVE-2026-6849)
 
@@ -962,10 +969,18 @@
 
 - [Xmyronn/CVE-2026-7089-XSS](https://github.com/Xmyronn/CVE-2026-7089-XSS)
 
-### CVE-2026-7222
+### CVE-2026-7222 (2026-04-28)
+
+<code>A vulnerability was determined in code-projects Coaching Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /cims/modules/student/complaint.php of the component Complaint Form Page. This manipulation of the argument Complaint causes cross site scripting. The attack can be initiated remotely. The exploit has been publicly disclosed and may be utilized.
+</code>
+
 - [Xmyronn/CVE-2026-7222-XSS](https://github.com/Xmyronn/CVE-2026-7222-XSS)
 
-### CVE-2026-7229
+### CVE-2026-7229 (2026-04-28)
+
+<code>A vulnerability was found in code-projects Coaching Management System 1.0. This affects an unknown function of the file /cims/modules/admin/reply.php of the component POST Handler. Performing a manipulation of the argument complaintreply results in sql injection. It is possible to initiate the attack remotely. The exploit has been made public and could be used.
+</code>
+
 - [Xmyronn/CVE-2026-7229-SQLI](https://github.com/Xmyronn/CVE-2026-7229-SQLI)
 
 ### CVE-2026-7731
@@ -1123,7 +1138,6 @@
 </code>
 
 - [automate-it0/qualcomm-vulnerability-scanner](https://github.com/automate-it0/qualcomm-vulnerability-scanner)
-- [unionnx/CVE-2026-21385](https://github.com/unionnx/CVE-2026-21385)
 
 ### CVE-2026-21436 (2026-01-01)
 
@@ -3332,6 +3346,7 @@
 </code>
 
 - [shreyas-malhotra/CVE-2026-33439-OpenAM](https://github.com/shreyas-malhotra/CVE-2026-33439-OpenAM)
+- [Ibonok/CVE-2026-33439-PoC](https://github.com/Ibonok/CVE-2026-33439-PoC)
 
 ### CVE-2026-33453 (2026-04-27)
 
@@ -3607,13 +3622,6 @@
 
 - [bamuwe/CVE-2026-34838](https://github.com/bamuwe/CVE-2026-34838)
 
-### CVE-2026-35022 (2026-04-06)
-
-<code>Anthropic Claude Code CLI and Claude Agent SDK contain an OS command injection vulnerability in authentication helper execution where helper configuration values are executed using shell=true without input validation. Attackers who can influence authentication settings can inject shell metacharacters through parameters like apiKeyHelper, awsAuthRefresh, awsCredentialExport, and gcpAuthRefresh to execute arbitrary commands with the privileges of the user or automation environment, enabling credential theft and environment variable exfiltration.
-</code>
-
-- [pjordann/malicious_test](https://github.com/pjordann/malicious_test)
-
 ### CVE-2026-35031 (2026-04-14)
 
 <code>Jellyfin is an open source self hosted media server. Versions prior to 10.11.7 contain a vulnerability chain in the subtitle upload endpoint (POST /Videos/{itemId}/Subtitles), where the Format field is not validated, allowing path traversal via the file extension and enabling arbitrary file write. This arbitrary file write can be chained into arbitrary file read via .strm files, database extraction, admin privilege escalation, and ultimately remote code execution as root via ld.so.preload. Exploitation requires an administrator account or a user that has been explicitly granted the &quot;Upload Subtitles&quot; permission. This issue has been fixed in version 10.11.7. If users are unable to upgrade immediately, they can grant non-administrator users Subtitle upload permissions to reduce attack surface.
@@ -3736,7 +3744,6 @@
 <code>A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 4.4.0 through 4.4.8 may allow attacker to execute unauthorized code or commands via &lt;insert attack vector here&gt;
 </code>
 
-- [Lechansky/CVE-2026-39808](https://github.com/Lechansky/CVE-2026-39808)
 - [samu-delucas/CVE-2026-39808](https://github.com/samu-delucas/CVE-2026-39808)
 - [0xBlackash/CVE-2026-39808](https://github.com/0xBlackash/CVE-2026-39808)
 - [ynsmroztas/FortiSandbox-RCE-Exploit-CVE-2026-39808](https://github.com/ynsmroztas/FortiSandbox-RCE-Exploit-CVE-2026-39808)
@@ -8994,7 +9001,7 @@
 </code>
 
 - [iSee857/CVE-2025-31486-PoC](https://github.com/iSee857/CVE-2025-31486-PoC)
-- [Ly4j/CVE-2025-31486](https://github.com/Ly4j/CVE-2025-31486)
+- [ll104567/CVE-2025-31486](https://github.com/ll104567/CVE-2025-31486)
 - [hackmelocal/CVE-2025-31486-Simulation](https://github.com/hackmelocal/CVE-2025-31486-Simulation)
 
 ### CVE-2025-31644 (2025-05-07)
@@ -12349,7 +12356,6 @@
 - [amikanev/CVE-2025-55182-LAB](https://github.com/amikanev/CVE-2025-55182-LAB)
 - [hujiaozhuzhu/CVE-2025-55182_liyon](https://github.com/hujiaozhuzhu/CVE-2025-55182_liyon)
 - [aliksir/nextjs-security-scanner](https://github.com/aliksir/nextjs-security-scanner)
-- [toprak-t800/CVE-2025-55182](https://github.com/toprak-t800/CVE-2025-55182)
 - [porsellaj/cve-2025-55182-react2shell-analysis](https://github.com/porsellaj/cve-2025-55182-react2shell-analysis)
 - [hexsh1dow/CVE-2025-55182](https://github.com/hexsh1dow/CVE-2025-55182)
 - [masterwok/PoC-CVE-2025-55182](https://github.com/masterwok/PoC-CVE-2025-55182)
@@ -14358,6 +14364,9 @@
 </code>
 
 - [kpatsakis/CVE-2025-67221](https://github.com/kpatsakis/CVE-2025-67221)
+
+### CVE-2025-67223
+- [brandonperezlara/CVE-2025-67223](https://github.com/brandonperezlara/CVE-2025-67223)
 
 ### CVE-2025-67246 (2026-01-15)
 
@@ -22176,7 +22185,6 @@
 
 - [Kayiyan/CVE-2024-37084-Poc](https://github.com/Kayiyan/CVE-2024-37084-Poc)
 - [vuhz/CVE-2024-37084](https://github.com/vuhz/CVE-2024-37084)
-- [Ly4j/CVE-2024-37084-Exp](https://github.com/Ly4j/CVE-2024-37084-Exp)
 
 ### CVE-2024-37085 (2024-06-25)
 
@@ -35859,7 +35867,6 @@
 
 - [pqlx/CVE-2022-1015](https://github.com/pqlx/CVE-2022-1015)
 - [zanezhub/CVE-2022-1015-1016](https://github.com/zanezhub/CVE-2022-1015-1016)
-- [shuttterman/bob_kern_exp1](https://github.com/shuttterman/bob_kern_exp1)
 - [ysanatomic/CVE-2022-1015](https://github.com/ysanatomic/CVE-2022-1015)
 - [wlswotmd/CVE-2022-1015](https://github.com/wlswotmd/CVE-2022-1015)
 - [delsploit/CVE-2022-1015](https://github.com/delsploit/CVE-2022-1015)
@@ -40371,7 +40378,6 @@
 - [Kristal-g/CVE-2022-32250](https://github.com/Kristal-g/CVE-2022-32250)
 - [seadragnol/CVE-2022-32250](https://github.com/seadragnol/CVE-2022-32250)
 - [KuanKuanQAQ/cve-testing](https://github.com/KuanKuanQAQ/cve-testing)
-- [g3un/cve-2022-32250](https://github.com/g3un/cve-2022-32250)
 - [rem0t3/CVE-2022-32250-Compiled](https://github.com/rem0t3/CVE-2022-32250-Compiled)
 - [LSinus/CacheMeIfYouCan](https://github.com/LSinus/CacheMeIfYouCan)
 - [Noidolosity/CVE-2022-32250](https://github.com/Noidolosity/CVE-2022-32250)
@@ -41134,13 +41140,6 @@
 
 - [MaherAzzouzi/CVE-2022-37704](https://github.com/MaherAzzouzi/CVE-2022-37704)
 
-### CVE-2022-37705 (2023-04-16)
-
-<code>A privilege escalation flaw was found in Amanda 3.5.1 in which the backup user can acquire root privileges. The vulnerable component is the runtar SUID program, which is a wrapper to run /usr/bin/tar with specific arguments that are controllable by the attacker. This program mishandles the arguments passed to tar binary (it expects that the argument name and value are separated with a space; however, separating them with an equals sign is also supported),
-</code>
-
-- [MaherAzzouzi/CVE-2022-37705](https://github.com/MaherAzzouzi/CVE-2022-37705)
-
 ### CVE-2022-37706 (2022-12-25)
 
 <code>enlightenment_sys in Enlightenment before 0.25.4 allows local users to gain privileges because it is setuid root, and the system library function mishandles pathnames that begin with a /dev/.. substring.
@@ -41314,7 +41313,6 @@
 - [hluwa/cobaltstrike_swing_xss2rce](https://github.com/hluwa/cobaltstrike_swing_xss2rce)
 - [4nth0ny1130/CVE-2022-39197-fix_patch](https://github.com/4nth0ny1130/CVE-2022-39197-fix_patch)
 - [its-arun/CVE-2022-39197](https://github.com/its-arun/CVE-2022-39197)
-- [TheCryingGame/CVE-2022-39197-RCE](https://github.com/TheCryingGame/CVE-2022-39197-RCE)
 - [adeljck/CVE-2022-39197](https://github.com/adeljck/CVE-2022-39197)
 - [xiao-zhu-zhu/pig_CS4.4](https://github.com/xiao-zhu-zhu/pig_CS4.4)
 - [Romanc9/Gui-poc-test](https://github.com/Romanc9/Gui-poc-test)
@@ -43083,13 +43081,6 @@
 
 - [ShaikUsaf/packages_apps_settings_AOSP10_r33_CVE-2021-0481](https://github.com/ShaikUsaf/packages_apps_settings_AOSP10_r33_CVE-2021-0481)
 
-### CVE-2021-0506 (2021-06-21)
-
-<code>In ActivityPicker.java, there is a possible bypass of user interaction in intent resolution due to a tapjacking/overlay attack. This could lead to local escalation of privilege with User execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-8.1 Android-9Android ID: A-181962311
-</code>
-
-- [Satheesh575555/packages_apps_Settings_AOSP10_r33_CVE-2021-0506](https://github.com/Satheesh575555/packages_apps_Settings_AOSP10_r33_CVE-2021-0506)
-
 ### CVE-2021-0508 (2021-06-21)
 
 <code>In various functions of DrmPlugin.cpp, there is a possible use after free due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-8.1 Android-9 Android-10 Android-11Android ID: A-176444154
@@ -43195,13 +43186,6 @@
 </code>
 
 - [nanopathi/framework_base_AOSP10_r33_CVE-2021-0683_CVE-2021-0708](https://github.com/nanopathi/framework_base_AOSP10_r33_CVE-2021-0683_CVE-2021-0708)
-
-### CVE-2021-0688 (2021-10-06)
-
-<code>In lockNow of PhoneWindowManager.java, there is a possible lock screen bypass due to a race condition. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-8.1 Android-9Android ID: A-161149543
-</code>
-
-- [Satheesh575555/frameworks_base_AOSP10_r33_CVE-2021-0688](https://github.com/Satheesh575555/frameworks_base_AOSP10_r33_CVE-2021-0688)
 
 ### CVE-2021-0705 (2021-10-22)
 
@@ -44027,6 +44011,7 @@
 - [Allu-mette/cve-2021-4034](https://github.com/Allu-mette/cve-2021-4034)
 - [vaibhavkrishna12004/ubuntu-privesc-lab](https://github.com/vaibhavkrishna12004/ubuntu-privesc-lab)
 - [Murguii/DEV-CVE-2021-4034](https://github.com/Murguii/DEV-CVE-2021-4034)
+- [B1gN0Se/PwnKit_CVE-2021-4034](https://github.com/B1gN0Se/PwnKit_CVE-2021-4034)
 
 ### CVE-2021-4044 (2021-12-14)
 
@@ -49102,9 +49087,9 @@
 - [danieljosmariyan7254/TryHackMe-Solar-exploiting-log4j-](https://github.com/danieljosmariyan7254/TryHackMe-Solar-exploiting-log4j-)
 - [jdormannn/SecureOps-Lab](https://github.com/jdormannn/SecureOps-Lab)
 - [joaovicdev/EXPLOIT-CVE-2021-44228](https://github.com/joaovicdev/EXPLOIT-CVE-2021-44228)
-- [davindersingh74569-lang/HTB-Unified-Writeup](https://github.com/davindersingh74569-lang/HTB-Unified-Writeup)
 - [pinaraltinok/Log4Shell-Attack](https://github.com/pinaraltinok/Log4Shell-Attack)
 - [kaleth4/CVE-2021-44228](https://github.com/kaleth4/CVE-2021-44228)
+- [tieupham267/log4shell-coraza](https://github.com/tieupham267/log4shell-coraza)
 
 ### CVE-2021-44255 (2022-01-31)
 
