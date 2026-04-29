@@ -669,6 +669,7 @@
 
 - [5kr1pt/CVE-2026-3854](https://github.com/5kr1pt/CVE-2026-3854)
 - [LACHHAB-Anas/Exploit_CVE-2026-3854](https://github.com/LACHHAB-Anas/Exploit_CVE-2026-3854)
+- [lysophavin18/CVE-2026-3854-PoC](https://github.com/lysophavin18/CVE-2026-3854-PoC)
 
 ### CVE-2026-3888 (2026-03-17)
 
@@ -697,6 +698,13 @@
 </code>
 
 - [anansi2safe/CVE-2026-3909-PoC](https://github.com/anansi2safe/CVE-2026-3909-PoC)
+
+### CVE-2026-3910 (2026-03-12)
+
+<code>Inappropriate implementation in V8 in Google Chrome prior to 146.0.7680.75 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)
+</code>
+
+- [5o1z/CVE-2026-3910](https://github.com/5o1z/CVE-2026-3910)
 
 ### CVE-2026-4092 (2026-03-13)
 
@@ -960,6 +968,13 @@
 
 - [mlgzackfly/CVE-2026-6643](https://github.com/mlgzackfly/CVE-2026-6643)
 
+### CVE-2026-6644 (2026-04-20)
+
+<code>A command injection vulnerability was found in the PPTP VPN Clients on the ADM. The vulnerability allows an administrative user to break out of the restricted web environment and execute arbitrary code on the underlying operating system. This occurs due to insufficient validation of user-supplied input before it is passed to a system shell. Successful exploitation allows an attacker to achieve Remote Code Execution (RCE) and fully compromise the system.\nAffected products and versions include: from ADM 4.1.0 through ADM 4.3.3.RR42 as well as from ADM 5.0.0 through ADM 5.1.2.REO1.
+</code>
+
+- [uky007/CVE-2026-6644](https://github.com/uky007/CVE-2026-6644)
+
 ### CVE-2026-6770 (2026-04-21)
 
 <code>Other issue in the Storage: IndexedDB component. This vulnerability was fixed in Firefox 150, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.
@@ -1011,6 +1026,15 @@
 </code>
 
 - [Xmyronn/CVE-2026-7229-SQLI](https://github.com/Xmyronn/CVE-2026-7229-SQLI)
+
+### CVE-2026-7393
+- [Xmyronn/CVE-2026-7393-RCE](https://github.com/Xmyronn/CVE-2026-7393-RCE)
+
+### CVE-2026-7394
+- [Xmyronn/CVE-2026-7394-SQLI](https://github.com/Xmyronn/CVE-2026-7394-SQLI)
+
+### CVE-2026-7401
+- [Xmyronn/CVE-2026-7401-XSS](https://github.com/Xmyronn/CVE-2026-7401-XSS)
 
 ### CVE-2026-7731
 - [SimoesCTT/CTT-Refraction-Vortex-CVE-2026-7731-](https://github.com/SimoesCTT/CTT-Refraction-Vortex-CVE-2026-7731-)
@@ -3658,6 +3682,13 @@
 
 - [FilipeGaudard/CVE-2026-35045-PoC](https://github.com/FilipeGaudard/CVE-2026-35045-PoC)
 
+### CVE-2026-35414 (2026-04-02)
+
+<code>OpenSSH before 10.3 mishandles the authorized_keys principals option in uncommon scenarios involving a principals list in conjunction with a Certificate Authority that makes certain use of comma characters.
+</code>
+
+- [killercd/CVE-2026-35414](https://github.com/killercd/CVE-2026-35414)
+
 ### CVE-2026-35492 (2026-04-07)
 
 <code>Kedro-Datasets is a Kendo plugin providing data connectors. Prior to 9.3.0, PartitionedDataset in kedro-datasets was vulnerable to path traversal. Partition IDs were concatenated directly with the dataset base path without validation. An attacker or malicious input containing .. components in a partition ID could cause files to be written outside the configured dataset directory, potentially overwriting arbitrary files on the filesystem. Users of PartitionedDataset with any storage backend (local filesystem, S3, GCS, etc.) are affected. This vulnerability is fixed in 9.3.0.
@@ -3736,6 +3767,9 @@
 </code>
 
 - [VadlaReddySai/diskoverdata-cve-writeups](https://github.com/VadlaReddySai/diskoverdata-cve-writeups)
+
+### CVE-2026-38945
+- [Wise-Security/CVE-2026-38945](https://github.com/Wise-Security/CVE-2026-38945)
 
 ### CVE-2026-39324 (2026-04-07)
 
@@ -3918,6 +3952,7 @@
 </code>
 
 - [ZeroPathAI/proftpd-CVE-2026-42167-poc](https://github.com/ZeroPathAI/proftpd-CVE-2026-42167-poc)
+- [dinosn/proftpd-CVE-2026-42167-analysis](https://github.com/dinosn/proftpd-CVE-2026-42167-analysis)
 
 ### CVE-2026-42208
 - [imjdl/CVE-2026-42208_lab](https://github.com/imjdl/CVE-2026-42208_lab)
@@ -6660,6 +6695,13 @@
 </code>
 
 - [CyberVinner/TP-Link-TL-WR820N-CVE-2025-14175](https://github.com/CyberVinner/TP-Link-TL-WR820N-CVE-2025-14175)
+
+### CVE-2025-14177 (2025-12-27)
+
+<code>In PHP versions:8.1.* before 8.1.34, 8.2.* before 8.2.30, 8.3.* before 8.3.29, 8.4.* before 8.4.16, 8.5.* before 8.5.1, the getimagesize() function may leak uninitialized heap memory into the APPn segments (e.g., APP1) when reading images in multi-chunk mode (such as via php://filter). This occurs due to a bug in php_read_stream_all_chunks() that overwrites the buffer without advancing the pointer, leaving tail bytes uninitialized. This may lead to information disclosure of sensitive heap data and affect the confidentiality of the target server.
+</code>
+
+- [gl1tch0x1/PHP_8.1.x_Exploit](https://github.com/gl1tch0x1/PHP_8.1.x_Exploit)
 
 ### CVE-2025-14221 (2025-12-08)
 
@@ -16472,6 +16514,7 @@
 - [InfoSec-DB/PHPCGIScanner](https://github.com/InfoSec-DB/PHPCGIScanner)
 - [a1ex-var1amov/ctf-cve-2024-4577](https://github.com/a1ex-var1amov/ctf-cve-2024-4577)
 - [rayngnpc/CVE-2024-4577-rayng](https://github.com/rayngnpc/CVE-2024-4577-rayng)
+- [gl1tch0x1/PHP_8.1.x_Exploit](https://github.com/gl1tch0x1/PHP_8.1.x_Exploit)
 
 ### CVE-2024-4701 (2024-05-10)
 
@@ -17393,6 +17436,13 @@
 </code>
 
 - [RandomRobbieBF/CVE-2024-8484](https://github.com/RandomRobbieBF/CVE-2024-8484)
+
+### CVE-2024-8503 (2024-09-10)
+
+<code>An unauthenticated attacker can leverage a time-based SQL injection vulnerability in VICIdial to enumerate database records. By default, VICIdial stores plaintext credentials within the database.
+</code>
+
+- [Machine-farmer/vicidial-cve-2024-8503-blind-sqli-poc](https://github.com/Machine-farmer/vicidial-cve-2024-8503-blind-sqli-poc)
 
 ### CVE-2024-8504 (2024-09-10)
 
@@ -27954,13 +28004,6 @@
 - [szybnev/CVE-2023-7028](https://github.com/szybnev/CVE-2023-7028)
 - [KameliaZaman/Exploiting-GitLab-CVE-2023-7028](https://github.com/KameliaZaman/Exploiting-GitLab-CVE-2023-7028)
 
-### CVE-2023-7173 (2023-12-30)
-
-<code>Es wurde eine problematische Schwachstelle in PHPGurukul Hospital Management System 1.0 gefunden. Es geht dabei um eine nicht klar definierte Funktion der Datei registration.php. Durch das Beeinflussen des Arguments First Name mit unbekannten Daten kann eine cross site scripting-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk passieren. Der Exploit steht zur öffentlichen Verfügung.
-</code>
-
-- [sharathc213/CVE-2023-7173](https://github.com/sharathc213/CVE-2023-7173)
-
 ### CVE-2023-7231 (2025-05-15)
 
 <code>The illi Link Party! WordPress plugin through 1.0 lacks proper access controls, allowing unauthenticated visitors to delete links.
@@ -29576,6 +29619,13 @@
 
 - [FzBacon/CVE-2023-27216_D-Link_DSL-3782_Router_command_injection](https://github.com/FzBacon/CVE-2023-27216_D-Link_DSL-3782_Router_command_injection)
 - [HoangREALER/CVE-2023-27216](https://github.com/HoangREALER/CVE-2023-27216)
+
+### CVE-2023-27321 (2024-05-07)
+
+<code>OPC Foundation UA .NET Standard ConditionRefresh Resource Exhaustion Denial-of-Service Vulnerability. This vulnerability allows remote attackers to create a denial-of-service condition on affected installations of OPC Foundation UA .NET Standard. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of OPC UA ConditionRefresh requests. By sending a large number of requests, an attacker can consume all available resources on the server. An attacker can leverage this vulnerability to create a denial-of-service condition on the system. Was ZDI-CAN-20505.
+</code>
+
+- [JustKhal/OPC-UA-Authentication-Challenge](https://github.com/JustKhal/OPC-UA-Authentication-Challenge)
 
 ### CVE-2023-27326 (2024-05-03)
 
@@ -36702,6 +36752,7 @@
 </code>
 
 - [sunichi/cve-2022-4543-wrapper](https://github.com/sunichi/cve-2022-4543-wrapper)
+- [ngtuonghung/CVE-2022-4543-EntryBleed](https://github.com/ngtuonghung/CVE-2022-4543-EntryBleed)
 
 ### CVE-2022-4556 (2022-12-16)
 
@@ -63642,6 +63693,7 @@
 - [klairmanraj/Multi-VLAN-Enterprise-Network-Vulnerability-Assessment](https://github.com/klairmanraj/Multi-VLAN-Enterprise-Network-Vulnerability-Assessment)
 - [dannic145/EternalBlue-Exploit-Demonstration](https://github.com/dannic145/EternalBlue-Exploit-Demonstration)
 - [ichhyak22/EternalBlue-Exploit-Demonstration-MS17-010](https://github.com/ichhyak22/EternalBlue-Exploit-Demonstration-MS17-010)
+- [joel6948/CVE-2017-0144](https://github.com/joel6948/CVE-2017-0144)
 
 ### CVE-2017-0145 (2017-03-17)
 
@@ -66996,7 +67048,7 @@
 - [justlce/CVE-2016-6210-Exploit](https://github.com/justlce/CVE-2016-6210-Exploit)
 - [goomdan/CVE-2016-6210-exploit](https://github.com/goomdan/CVE-2016-6210-exploit)
 - [samh4cks/CVE-2016-6210-OpenSSH-User-Enumeration](https://github.com/samh4cks/CVE-2016-6210-OpenSSH-User-Enumeration)
-- [coolbabayaga/CVE-2016-6210](https://github.com/coolbabayaga/CVE-2016-6210)
+- [wabiyagi/CVE-2016-6210](https://github.com/wabiyagi/CVE-2016-6210)
 - [nicoleman0/CVE-2016-6210-OpenSSHd-7.2p2](https://github.com/nicoleman0/CVE-2016-6210-OpenSSHd-7.2p2)
 - [KiPhuong/cve-2016-6210](https://github.com/KiPhuong/cve-2016-6210)
 
@@ -70508,6 +70560,7 @@
 - [RinAliyeva/metasploitable2-vsftpd-exploitation](https://github.com/RinAliyeva/metasploitable2-vsftpd-exploitation)
 - [emilebarnard242/pentest-metasploitable2](https://github.com/emilebarnard242/pentest-metasploitable2)
 - [Mithileshan/soc-investigation-lab](https://github.com/Mithileshan/soc-investigation-lab)
+- [IvoAlbacete/Kali-Metasploitable](https://github.com/IvoAlbacete/Kali-Metasploitable)
 
 ### CVE-2011-2553
 - [carlosrpastrana/cve-2011-2553](https://github.com/carlosrpastrana/cve-2011-2553)
