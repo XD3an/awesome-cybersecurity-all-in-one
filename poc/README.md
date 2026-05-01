@@ -1154,7 +1154,6 @@
 <code>Reliance on untrusted inputs in a security decision in Microsoft Office allows an unauthorized attacker to bypass a security feature locally.
 </code>
 
-- [kimstars/Ashwesker-CVE-2026-21509](https://github.com/kimstars/Ashwesker-CVE-2026-21509)
 - [gavz/CVE-2026-21509-PoC](https://github.com/gavz/CVE-2026-21509-PoC)
 - [ksk-itdk/KSK-ITDK-CVE-2026-21509-Mitigation](https://github.com/ksk-itdk/KSK-ITDK-CVE-2026-21509-Mitigation)
 - [SimoesCTT/CTT-NFS-Vortex-RCE](https://github.com/SimoesCTT/CTT-NFS-Vortex-RCE)
@@ -1300,7 +1299,6 @@
 <code>Vulnerability in the Oracle HTTP Server, Oracle Weblogic Server Proxy Plug-in product of Oracle Fusion Middleware (component: Weblogic Server Proxy Plug-in for Apache HTTP Server, Weblogic Server Proxy Plug-in for IIS).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle HTTP Server, Oracle Weblogic Server Proxy Plug-in.  While the vulnerability is in Oracle HTTP Server, Oracle Weblogic Server Proxy Plug-in, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle HTTP Server, Oracle Weblogic Server Proxy Plug-in accessible data as well as  unauthorized access to critical data or complete access to all Oracle HTTP Server, Oracle Weblogic Server Proxy Plug-in accessible data. Note: Affected version for Weblogic Server Proxy Plug-in for IIS is 12.2.1.4.0 only. CVSS 3.1 Base Score 10.0 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N).
 </code>
 
-- [ThumpBo/CVE-2026-21962](https://github.com/ThumpBo/CVE-2026-21962)
 - [gregk4sec/CVE-2026-21962-o](https://github.com/gregk4sec/CVE-2026-21962-o)
 - [George0Papasotiriou/CVE-2026-21962-Oracle-HTTP-Server-WebLogic-Proxy-Plug-in-Critical-](https://github.com/George0Papasotiriou/CVE-2026-21962-Oracle-HTTP-Server-WebLogic-Proxy-Plug-in-Critical-)
 - [gregk4sec/cve-2026-21962](https://github.com/gregk4sec/cve-2026-21962)
@@ -1593,13 +1591,6 @@
 - [yohannslm/CVE-2026-23869](https://github.com/yohannslm/CVE-2026-23869)
 - [cybertechajju/CVE-2026-23869-Exploit](https://github.com/cybertechajju/CVE-2026-23869-Exploit)
 
-### CVE-2026-23907 (2026-03-10)
-
-<code>This issue affects the \nExtractEmbeddedFiles example in Apache PDFBox: from 2.0.24 through 2.0.35, from 3.0.0 through 3.0.6.\n\n\nThe ExtractEmbeddedFiles example contains a path traversal vulnerability (CWE-22) because \nthe filename that is obtained from \nPDComplexFileSpecification.getFilename() is appended to the extraction path.\n\nUsers who have copied this example into their production code should \nreview it to ensure that the extraction path is acceptable. The example \nhas been changed accordingly, now the initial path and the extraction \npaths are converted into canonical paths and it is verified that \nextraction path contains the initial path. The documentation has also \nbeen adjusted.
-</code>
-
-- [JoakimBulow/CVE-2026-23907](https://github.com/JoakimBulow/CVE-2026-23907)
-
 ### CVE-2026-23980 (2026-02-24)
 
 <code>Improper Neutralization of Special Elements used in a SQL Command ('SQL Injection') vulnerability in Apache Superset allows an authenticated user with read access to conduct error-based SQL injection via the sqlExpression or where parameters.\n\nThis issue affects Apache Superset: before 6.0.0.\n\nUsers are recommended to upgrade to version 6.0.0, which fixes the issue.
@@ -1633,16 +1624,10 @@
 <code>telnetd in GNU Inetutils through 2.7 allows remote authentication bypass via a &quot;-f root&quot; value for the USER environment variable.
 </code>
 
-- [yanxinwu946/CVE-2026-24061--telnetd](https://github.com/yanxinwu946/CVE-2026-24061--telnetd)
-- [monstertsl/CVE-2026-24061](https://github.com/monstertsl/CVE-2026-24061)
 - [midox008/CVE-2026-24061](https://github.com/midox008/CVE-2026-24061)
 - [0p5cur/CVE-2026-24061-POC](https://github.com/0p5cur/CVE-2026-24061-POC)
 - [madfxr/Twenty-Three-Scanner](https://github.com/madfxr/Twenty-Three-Scanner)
-- [punitdarji/telnetd-cve-2026-24061](https://github.com/punitdarji/telnetd-cve-2026-24061)
-- [XsanFlip/CVE-2026-24061-Scanner](https://github.com/XsanFlip/CVE-2026-24061-Scanner)
 - [Lingzesec/CVE-2026-24061-GUI](https://github.com/Lingzesec/CVE-2026-24061-GUI)
-- [LucasPDiniz/CVE-2026-24061](https://github.com/LucasPDiniz/CVE-2026-24061)
-- [FurkanKAYAPINAR/CVE-2026-24061-telnet2root](https://github.com/FurkanKAYAPINAR/CVE-2026-24061-telnet2root)
 - [androidteacher/CVE-2026-24061-PoC-Telnetd](https://github.com/androidteacher/CVE-2026-24061-PoC-Telnetd)
 - [cumakurt/tscan](https://github.com/cumakurt/tscan)
 - [novitahk/Exploit-CVE-2026-24061](https://github.com/novitahk/Exploit-CVE-2026-24061)
@@ -1715,13 +1700,6 @@
 
 - [0xNDI/CVE-2026-24294](https://github.com/0xNDI/CVE-2026-24294)
 
-### CVE-2026-24306 (2026-01-22)
-
-<code>Improper access control in Azure Front Door (AFD) allows an unauthorized attacker to elevate privileges over a network.
-</code>
-
-- [ExploreUnknowed/CVE-2026-24306](https://github.com/ExploreUnknowed/CVE-2026-24306)
-
 ### CVE-2026-24415 (2026-03-03)
 
 <code>OpenSTAManager is an open source management software for technical assistance and invoicing. OpenSTAManager v2.9.8 and earlier contains Reflected XSS vulnerabilities in invoice/order/contract modification modals. The application fails to properly sanitize user-supplied input from the righe GET parameter before reflecting it in HTML output.The $_GET['righe'] parameter is directly echoed into the HTML value attribute without any sanitization using htmlspecialchars() or equivalent functions. This allows an attacker to break out of the attribute context and inject arbitrary HTML/JavaScript.
@@ -1785,13 +1763,6 @@
 
 - [poxsky/CVE-2026-24516-DigitalOcean-RCE](https://github.com/poxsky/CVE-2026-24516-DigitalOcean-RCE)
 - [poxsky/CVE-2026-24516-DigitalOcean-RCE.](https://github.com/poxsky/CVE-2026-24516-DigitalOcean-RCE.)
-
-### CVE-2026-24688 (2026-01-27)
-
-<code>pypdf is a free and open-source pure-python PDF library. An attacker who uses an infinite loop vulnerability that is present in versions prior to 6.6.2 can craft a PDF which leads to an infinite loop. This requires accessing the outlines/bookmarks. This has been fixed in pypdf 6.6.2. If projects cannot upgrade yet, consider applying the changes from PR #3610 manually.
-</code>
-
-- [JoakimBulow/CVE-2026-24688](https://github.com/JoakimBulow/CVE-2026-24688)
 
 ### CVE-2026-24841 (2026-01-28)
 
@@ -1915,7 +1886,6 @@
 <code>OpenClaw (aka clawdbot or Moltbot) before 2026.1.29 obtains a gatewayUrl value from a query string and automatically makes a WebSocket connection without prompting, sending a token value.
 </code>
 
-- [ethiack/moltbot-1click-rce](https://github.com/ethiack/moltbot-1click-rce)
 - [msaleme/start-here](https://github.com/msaleme/start-here)
 - [adibirzu/openclaw-security-monitor](https://github.com/adibirzu/openclaw-security-monitor)
 - [Joseph19820124/openclaw-vuln-report](https://github.com/Joseph19820124/openclaw-vuln-report)
@@ -2958,7 +2928,6 @@
 - [jiangban046-spec/CVE-2026-31431-exploit_py2_py3](https://github.com/jiangban046-spec/CVE-2026-31431-exploit_py2_py3)
 - [pcdoyle/copy-fail-cve-2026-31431](https://github.com/pcdoyle/copy-fail-cve-2026-31431)
 - [dorianhhuc/CVE-2026-31431](https://github.com/dorianhhuc/CVE-2026-31431)
-- [professional-slacker/alg_check](https://github.com/professional-slacker/alg_check)
 - [0xBlackash/CVE-2026-31431](https://github.com/0xBlackash/CVE-2026-31431)
 - [H1d3r/copy-fail_LPE_Interactive](https://github.com/H1d3r/copy-fail_LPE_Interactive)
 - [amdisrar/cve-2026-31431-mitigation](https://github.com/amdisrar/cve-2026-31431-mitigation)
@@ -3002,7 +2971,6 @@
 - [SeanRickerd/cve-2026-31431](https://github.com/SeanRickerd/cve-2026-31431)
 - [abdullaabdullazade/CVE-2026-31431](https://github.com/abdullaabdullazade/CVE-2026-31431)
 - [weirdindiankid/copy-fail](https://github.com/weirdindiankid/copy-fail)
-- [ShorterKing/Copyfail-rust](https://github.com/ShorterKing/Copyfail-rust)
 - [websecnl/CVE-2026-31431](https://github.com/websecnl/CVE-2026-31431)
 - [Koke-Seas/COPY-FAIL-CVE](https://github.com/Koke-Seas/COPY-FAIL-CVE)
 - [Koke-Seas/CVE-2026-31431-CopyFail](https://github.com/Koke-Seas/CVE-2026-31431-CopyFail)
@@ -3023,6 +2991,18 @@
 - [wvverez/CVE-2026-31431-Copy-Fail](https://github.com/wvverez/CVE-2026-31431-Copy-Fail)
 - [sngrotesque/CVE-2026-31431](https://github.com/sngrotesque/CVE-2026-31431)
 - [karollooool/Porting-CVE-2026-31431-Copy-Fail-to-a-Constrained-Java-Runner](https://github.com/karollooool/Porting-CVE-2026-31431-Copy-Fail-to-a-Constrained-Java-Runner)
+- [bryanvine/copy-fail-fix](https://github.com/bryanvine/copy-fail-fix)
+- [boliu83/cve-2026-31431-algif-aead-remediator](https://github.com/boliu83/cve-2026-31431-algif-aead-remediator)
+- [LeonardoNovais7/Copy-Fail-Exploit-CVE-2026-31431](https://github.com/LeonardoNovais7/Copy-Fail-Exploit-CVE-2026-31431)
+- [3jee/copy-fail-go](https://github.com/3jee/copy-fail-go)
+- [professional-slacker/alg_check](https://github.com/professional-slacker/alg_check)
+- [johanburati/CVE-2026-31431](https://github.com/johanburati/CVE-2026-31431)
+- [aestechno/cve-2026-31431-ansible](https://github.com/aestechno/cve-2026-31431-ansible)
+- [ashok523/cve-2026-31431](https://github.com/ashok523/cve-2026-31431)
+- [jodonnel/copyfail-briefing](https://github.com/jodonnel/copyfail-briefing)
+- [deckhouse/d8-copy-fail-mitigation](https://github.com/deckhouse/d8-copy-fail-mitigation)
+- [jneuhauser/copy-fail-CVE-2026-31431](https://github.com/jneuhauser/copy-fail-CVE-2026-31431)
+- [cyber-joker/copy-fail-python](https://github.com/cyber-joker/copy-fail-python)
 
 ### CVE-2026-31802 (2026-03-09)
 
@@ -4037,6 +4017,8 @@
 - [AndreiG6/cpanel-cve-2026-41940-ioc](https://github.com/AndreiG6/cpanel-cve-2026-41940-ioc)
 - [zedxod/CVE-2026-41940-POC](https://github.com/zedxod/CVE-2026-41940-POC)
 - [george1-adel/CVE-2026-41940_exploit](https://github.com/george1-adel/CVE-2026-41940_exploit)
+- [senyx122/CVE-2026-41940](https://github.com/senyx122/CVE-2026-41940)
+- [merdw/cPanel-CVE-2026-41940-Scanner](https://github.com/merdw/cPanel-CVE-2026-41940-Scanner)
 
 ### CVE-2026-42141
 - [H4zaz/CVE-2026-42141-xibo-ssrf](https://github.com/H4zaz/CVE-2026-42141-xibo-ssrf)
@@ -5614,7 +5596,6 @@
 - [0xgh057r3c0n/CVE-2025-6934](https://github.com/0xgh057r3c0n/CVE-2025-6934)
 - [yukinime/CVE-2025-6934](https://github.com/yukinime/CVE-2025-6934)
 - [AnotherSec/CVE-2025-6934](https://github.com/AnotherSec/CVE-2025-6934)
-- [Rosemary1337/CVE-2025-6934](https://github.com/Rosemary1337/CVE-2025-6934)
 - [qalesyaSN/CVE-2025-6934](https://github.com/qalesyaSN/CVE-2025-6934)
 - [1atakan1/CVE-2025-6934](https://github.com/1atakan1/CVE-2025-6934)
 - [0xTerror/CVE-2025-6934](https://github.com/0xTerror/CVE-2025-6934)
@@ -7556,6 +7537,7 @@
 - [Wind010/CVE-2025-24054_PoC](https://github.com/Wind010/CVE-2025-24054_PoC)
 - [Untouchable17/CVE-2025-24054](https://github.com/Untouchable17/CVE-2025-24054)
 - [SecurityLayer404/CVE-2025-24054-24071---Metasploit-Module](https://github.com/SecurityLayer404/CVE-2025-24054-24071---Metasploit-Module)
+- [simantchaudhari/CVE-2025-24054-PoC](https://github.com/simantchaudhari/CVE-2025-24054-PoC)
 
 ### CVE-2025-24071 (2025-03-11)
 
@@ -7742,7 +7724,6 @@
 
 - [MuhammadWaseem29/CVE-2025-24799](https://github.com/MuhammadWaseem29/CVE-2025-24799)
 - [MatheuZSecurity/Exploit-CVE-2025-24799](https://github.com/MatheuZSecurity/Exploit-CVE-2025-24799)
-- [Rosemary1337/CVE-2025-24799](https://github.com/Rosemary1337/CVE-2025-24799)
 - [airbus-cert/CVE-2025-24799-scanner](https://github.com/airbus-cert/CVE-2025-24799-scanner)
 
 ### CVE-2025-24801 (2025-03-18)
@@ -66468,7 +66449,7 @@
 <code>The resend_bytes function in roaming_common.c in the client in OpenSSH 5.x, 6.x, and 7.x before 7.1p2 allows remote servers to obtain sensitive information from process memory by requesting transmission of an entire buffer, as demonstrated by reading a private key.
 </code>
 
-- [Abdirisaq-ali-aynab/openssh-vulnerability-assessment](https://github.com/Abdirisaq-ali-aynab/openssh-vulnerability-assessment)
+- [Abdirisaq-ali-aynab/vulnerability-assessment](https://github.com/Abdirisaq-ali-aynab/vulnerability-assessment)
 
 ### CVE-2016-0792 (2016-04-07)
 
@@ -68414,7 +68395,7 @@
 <code>The kbdint_next_device function in auth2-chall.c in sshd in OpenSSH through 6.9 does not properly restrict the processing of keyboard-interactive devices within a single connection, which makes it easier for remote attackers to conduct brute-force attacks or cause a denial of service (CPU consumption) via a long and duplicative list in the ssh -oKbdInteractiveDevices option, as demonstrated by a modified client that provides a different password for each pam element on this list.
 </code>
 
-- [Abdirisaq-ali-aynab/openssh-vulnerability-assessment](https://github.com/Abdirisaq-ali-aynab/openssh-vulnerability-assessment)
+- [Abdirisaq-ali-aynab/vulnerability-assessment](https://github.com/Abdirisaq-ali-aynab/vulnerability-assessment)
 
 ### CVE-2015-5602 (2015-11-17)
 
