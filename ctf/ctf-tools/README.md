@@ -182,12 +182,12 @@ To add a tool (say, named *toolname*), do the following:
 
 1. Create a `toolname` directory.
 2. Create an `install` script.
-3. Add it to the readme.
+3. Add it to the README.
 4. (optional) if special uninstall steps are required, create an `uninstall` script.
 
 ### Install Scripts
 
-The install script will be run with `$PWD` being `toolname`. It should install the tool into this directory, in as contained a manner as possible.
+The install script will be run with `$PWD` being `toolname`. It should install the tool into this directory, in as contained of a manner as possible.
 Ideally, full uninstallation should be possible with a `git clean`.
 
 The install script should create a `bin` directory and put its executables there.
@@ -198,7 +198,7 @@ They could be launched from any directory, so don't make assumptions about the l
 
 The individual tools are all licensed under their own licenses.
 As for ctf-tools itself, it is licensed under BSD 2-Clause License.
-If you find it useful, star it on github (https://github.com/zardus/ctf-tools).
+If you find it useful, star it on GitHub (https://github.com/zardus/ctf-tools).
 
 Good luck!
 
