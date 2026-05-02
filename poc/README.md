@@ -163,13 +163,6 @@
 - [sw0rd1ight/CVE-2026-1312](https://github.com/sw0rd1ight/CVE-2026-1312)
 - [alpinine/CVE-2026-1312-Testing](https://github.com/alpinine/CVE-2026-1312-Testing)
 
-### CVE-2026-1337 (2026-02-06)
-
-<code>Insufficient escaping of unicode characters in query log in Neo4j Enterprise and Community editions prior to 2026.01 can lead to XSS if the user opens the logs in a tool that treats them as HTML. There is no security impact on Neo4j products, but this advisory is released as a precaution to treat the logs as plain text if using versions prior to 2026.01.\n\nProof of concept exploit:  https://github.com/JoakimBulow/CVE-2026-1337
-</code>
-
-- [JoakimBulow/CVE-2026-1337](https://github.com/JoakimBulow/CVE-2026-1337)
-
 ### CVE-2026-1357 (2026-02-11)
 
 <code>The Migration, Backup, Staging – WPvivid Backup &amp; Migration plugin for WordPress is vulnerable to Unauthenticated Arbitrary File Upload in versions up to and including 0.9.123. This is due to improper error handling in the RSA decryption process combined with a lack of path sanitization when writing uploaded files. When the plugin fails to decrypt a session key using openssl_private_decrypt(), it does not terminate execution and instead passes the boolean false value to the phpseclib library's AES cipher initialization. The library treats this false value as a string of null bytes, allowing an attacker to encrypt a malicious payload using a predictable null-byte key. Additionally, the plugin accepts filenames from the decrypted payload without sanitization, enabling directory traversal to escape the protected backup directory. This makes it possible for unauthenticated attackers to upload arbitrary PHP files to publicly accessible directories and achieve Remote Code Execution via the wpvivid_action=send_to_site parameter.
@@ -305,13 +298,6 @@
 </code>
 
 - [Nxploited/CVE-2026-1937](https://github.com/Nxploited/CVE-2026-1937)
-
-### CVE-2026-1953 (2026-02-05)
-
-<code>Nukegraphic CMS v3.1.2 contains a stored cross-site scripting (XSS) vulnerability in the user profile edit functionality at /ngc-cms/user-edit-profile.php. The application fails to properly sanitize user input in the name field before storing it in the database and rendering it across multiple CMS pages. An authenticated attacker with low privileges can inject malicious JavaScript payloads through the profile edit request, which are then executed site-wide whenever the affected user's name is displayed. This allows the attacker to execute arbitrary JavaScript in the context of other users' sessions, potentially leading to session hijacking, credential theft, or unauthorized actions performed on behalf of victims.
-</code>
-
-- [carlosbudiman/CVE-2026-1953-Disclosure](https://github.com/carlosbudiman/CVE-2026-1953-Disclosure)
 
 ### CVE-2026-1999 (2026-02-18)
 
@@ -1111,8 +1097,6 @@
 </code>
 
 - [SimoesCTT/CTT-MICROSOFT-OFFICE-OLE-MANIFOLD-BYPASS-CVE-2026-21509](https://github.com/SimoesCTT/CTT-MICROSOFT-OFFICE-OLE-MANIFOLD-BYPASS-CVE-2026-21509)
-- [decalage2/detect_CVE-2026-21509](https://github.com/decalage2/detect_CVE-2026-21509)
-- [kaizensecurity/CVE-2026-21509](https://github.com/kaizensecurity/CVE-2026-21509)
 - [planetoid/cve-2026-21509-mitigation](https://github.com/planetoid/cve-2026-21509-mitigation)
 - [suuhm/CVE-2026-21509-handler](https://github.com/suuhm/CVE-2026-21509-handler)
 - [DameDode/CVE-2026-21509-POC](https://github.com/DameDode/CVE-2026-21509-POC)
@@ -1561,10 +1545,6 @@
 - [midox008/CVE-2026-24061](https://github.com/midox008/CVE-2026-24061)
 - [0p5cur/CVE-2026-24061-POC](https://github.com/0p5cur/CVE-2026-24061-POC)
 - [obrunolima1910/CVE-2026-24061](https://github.com/obrunolima1910/CVE-2026-24061)
-- [lavabyte/telnet-CVE-2026-24061](https://github.com/lavabyte/telnet-CVE-2026-24061)
-- [canpilayda/inetutils-telnetd-cve-2026-24061](https://github.com/canpilayda/inetutils-telnetd-cve-2026-24061)
-- [killsystema/scan-cve-2026-24061](https://github.com/killsystema/scan-cve-2026-24061)
-- [nrnw/CVE-2026-24061-GNU-inetutils-Telnet-Detector](https://github.com/nrnw/CVE-2026-24061-GNU-inetutils-Telnet-Detector)
 - [scumfrog/cve-2026-24061](https://github.com/scumfrog/cve-2026-24061)
 - [tiborscholtz/CVE-2026-24061](https://github.com/tiborscholtz/CVE-2026-24061)
 - [athack-ctf/chall2026-telneted](https://github.com/athack-ctf/chall2026-telneted)
@@ -1584,13 +1564,6 @@
 </code>
 
 - [alexb616/Weblate-CVE-2026-24126](https://github.com/alexb616/Weblate-CVE-2026-24126)
-
-### CVE-2026-24135 (2026-02-06)
-
-<code>Gogs is an open source self-hosted Git service. In version 0.13.3 and prior, a path traversal vulnerability exists in the updateWikiPage function of Gogs. The vulnerability allows an authenticated user with write access to a repository's wiki to delete arbitrary files on the server by manipulating the old_title parameter in the wiki editing form. This issue has been patched in versions 0.13.4 and 0.14.0+dev.
-</code>
-
-- [reschjonas/CVE-2026-24135](https://github.com/reschjonas/CVE-2026-24135)
 
 ### CVE-2026-24291 (2026-03-10)
 
@@ -1744,20 +1717,12 @@
 
 - [msaleme/start-here](https://github.com/msaleme/start-here)
 - [adibirzu/openclaw-security-monitor](https://github.com/adibirzu/openclaw-security-monitor)
-- [Joseph19820124/openclaw-vuln-report](https://github.com/Joseph19820124/openclaw-vuln-report)
 - [al4n4n/CVE-2026-25253-research](https://github.com/al4n4n/CVE-2026-25253-research)
 - [Ckokoski/moatbot-security](https://github.com/Ckokoski/moatbot-security)
 - [FrigateCaptain/openclaw_vulnerabilities_and_solutions](https://github.com/FrigateCaptain/openclaw_vulnerabilities_and_solutions)
 - [EQSTLab/CVE-2026-25253](https://github.com/EQSTLab/CVE-2026-25253)
 - [ZhaoymOvO/openclaw-1click-rce-env](https://github.com/ZhaoymOvO/openclaw-1click-rce-env)
 - [KajzingerAkos/CVE-2026-25253](https://github.com/KajzingerAkos/CVE-2026-25253)
-
-### CVE-2026-25512 (2026-02-04)
-
-<code>Group-Office is an enterprise customer relationship management and groupware tool. Prior to versions 6.8.150, 25.0.82, and 26.0.5, there is a remote code execution (RCE) vulnerability in Group-Office. The endpoint email/message/tnefAttachmentFromTempFile directly concatenates the user-controlled parameter tmp_file into an exec() call. By injecting shell metacharacters into tmp_file, an authenticated attacker can execute arbitrary system commands on the server. This issue has been patched in versions 6.8.150, 25.0.82, and 26.0.5.
-</code>
-
-- [mbanyamer/CVE-2026-25512-PoC-Group-Office-Authenticated-RCE](https://github.com/mbanyamer/CVE-2026-25512-PoC-Group-Office-Authenticated-RCE)
 
 ### CVE-2026-25513 (2026-02-04)
 
@@ -1779,13 +1744,6 @@
 </code>
 
 - [av4nth1ka/jinjava-cve-2026-25526-poc](https://github.com/av4nth1ka/jinjava-cve-2026-25526-poc)
-
-### CVE-2026-25546 (2026-02-04)
-
-<code>Godot MCP is a Model Context Protocol (MCP) server for interacting with the Godot game engine. Prior to version 0.1.1, a command injection vulnerability in godot-mcp allows remote code execution. The executeOperation function passed user-controlled input (e.g., projectPath) directly to exec(), which spawns a shell. An attacker could inject shell metacharacters like $(command) or &amp;calc to execute arbitrary commands with the privileges of the MCP server process. This affects any tool that accepts projectPath, including create_scene, add_node, load_sprite, and others. This issue has been patched in version 0.1.1.
-</code>
-
-- [mbanyamer/CVE-2026-25546-godot-mcp-0.1.1-OS-Command-Injection](https://github.com/mbanyamer/CVE-2026-25546-godot-mcp-0.1.1-OS-Command-Injection)
 
 ### CVE-2026-25548 (2026-02-18)
 
@@ -1827,7 +1785,6 @@
 <code>Frigate is a network video recorder (NVR) with realtime local object detection for IP cameras. Prior to 0.16.4, a critical Remote Command Execution (RCE) vulnerability has been identified in the Frigate integration with go2rtc. The application does not sanitize user input in the video stream configuration (config.yaml), allowing direct injection of system commands via the exec: directive. The go2rtc service executes these commands without restrictions. This vulnerability is only exploitable by an administrator or users who have exposed their Frigate install to the open internet with no authentication which allows anyone full administrative control. This vulnerability is fixed in 0.16.4.
 </code>
 
-- [jduardo2704/CVE-2026-25643-Frigate-RCE](https://github.com/jduardo2704/CVE-2026-25643-Frigate-RCE)
 - [joshuavanderpoll/CVE-2026-25643](https://github.com/joshuavanderpoll/CVE-2026-25643)
 - [DyniePro/CVE-2026-25643](https://github.com/DyniePro/CVE-2026-25643)
 
@@ -2848,7 +2805,6 @@
 - [LeonardoNovais7/Copy-Fail-Exploit-CVE-2026-31431](https://github.com/LeonardoNovais7/Copy-Fail-Exploit-CVE-2026-31431)
 - [3jee/copy-fail-go](https://github.com/3jee/copy-fail-go)
 - [professional-slacker/alg_check](https://github.com/professional-slacker/alg_check)
-- [johanburati/CVE-2026-31431](https://github.com/johanburati/CVE-2026-31431)
 - [aestechno/cve-2026-31431-ansible](https://github.com/aestechno/cve-2026-31431-ansible)
 - [ashok523/cve-2026-31431](https://github.com/ashok523/cve-2026-31431)
 - [jodonnel/copyfail-briefing](https://github.com/jodonnel/copyfail-briefing)
@@ -2893,6 +2849,17 @@
 - [glask1d/CVE-2026-31431-PoC](https://github.com/glask1d/CVE-2026-31431-PoC)
 - [monobrau/copyfailscan](https://github.com/monobrau/copyfailscan)
 - [Emmmmllll/copy-fail-zig](https://github.com/Emmmmllll/copy-fail-zig)
+- [kdjnb/fix_CVE-2026-31431](https://github.com/kdjnb/fix_CVE-2026-31431)
+- [euriconicacio/copy-fail-CVE-2026-31431-poc](https://github.com/euriconicacio/copy-fail-CVE-2026-31431-poc)
+- [ROSNLR5/modrosnlr5](https://github.com/ROSNLR5/modrosnlr5)
+- [TheMursalin/CVE-2026-31431](https://github.com/TheMursalin/CVE-2026-31431)
+- [qi4L/CVE-2026-31431-Container-Escape](https://github.com/qi4L/CVE-2026-31431-Container-Escape)
+- [0xac1dc0de/CVE-2026-31431](https://github.com/0xac1dc0de/CVE-2026-31431)
+- [haydenjames/CVE-2026-31431-check](https://github.com/haydenjames/CVE-2026-31431-check)
+- [moaaz-mostafa123/CVE-2026-31431](https://github.com/moaaz-mostafa123/CVE-2026-31431)
+- [malwarekid/CVE-2026-31431](https://github.com/malwarekid/CVE-2026-31431)
+- [xd20111/CVE-2026-31431](https://github.com/xd20111/CVE-2026-31431)
+- [MartinPham/copy-fail-CVE-2026-31431-php](https://github.com/MartinPham/copy-fail-CVE-2026-31431-php)
 
 ### CVE-2026-31802 (2026-03-09)
 
@@ -3730,6 +3697,13 @@
 
 - [redyank/CVE-2026-39376](https://github.com/redyank/CVE-2026-39376)
 
+### CVE-2026-39387 (2026-04-14)
+
+<code>BoidCMS is an open-source, PHP-based flat-file CMS for building simple websites and blogs, using JSON as its database. Versions prior to 2.1.3 are vulnerable to a critical Local File Inclusion (LFI) attack via the tpl parameter, which can lead to Remote Code Execution (RCE).The application fails to sanitize the tpl (template) parameter during page creation and updates. This parameter is passed directly to a require_once() statement without path validation. An authenticated administrator can exploit this by injecting path traversal sequences (../) into the tpl value to escape the intended theme directory and include arbitrary files — specifically, files from the server's media/ directory. When combined with the file upload functionality, this becomes a full RCE chain: an attacker can first upload a file with embedded PHP code (e.g., disguised as image data), then use the path traversal vulnerability to include that file via require_once(), executing the embedded code with web server privileges. This issue has been fixed in version 2.1.3.
+</code>
+
+- [xp1tr/CVE-2026-39387](https://github.com/xp1tr/CVE-2026-39387)
+
 ### CVE-2026-39808 (2026-04-14)
 
 <code>A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 4.4.0 through 4.4.8 may allow attacker to execute unauthorized code or commands via &lt;insert attack vector here&gt;
@@ -3839,6 +3813,13 @@
 
 - [TurkiOS/CVE-2026-41177-Squidex-CMS](https://github.com/TurkiOS/CVE-2026-41177-Squidex-CMS)
 
+### CVE-2026-41200 (2026-04-23)
+
+<code>STIG Manager is an API and web client for managing  Security Technical Implementation Guides (STIG) assessments of Information Systems. Versions 1.5.10 through 1.6.7 have a reflected Cross-Site Scripting (XSS) vulnerability in the OIDC authentication error handling code in `src/init.js` and `public/reauth.html`. During the OIDC redirect flow, the `error` and `error_description` query parameters returned by the OIDC provider are written directly to the DOM via `innerHTML` without HTML escaping. An attacker who can craft a malicious redirect URL and convince a user to follow it can execute arbitrary JavaScript in the application's origin context. The vulnerability is most severe when the targeted user has an active STIG Manager session running in another browser tab — injected code executes in the same origin and can communicate with the SharedWorker managing the active access token, enabling authenticated API requests on behalf of the victim including reading and modifying collection data. The vulnerability is patched in version 1.6.8. There is no workaround short of upgrading. Deployments behind a web application firewall that filters reflected XSS payloads in query parameters may have partial mitigation, but this is not a substitute for patching.
+</code>
+
+- [Hunt-Benito/cve-2026-41200-stig-manager-oidc-reflected-xss](https://github.com/Hunt-Benito/cve-2026-41200-stig-manager-oidc-reflected-xss)
+
 ### CVE-2026-41242 (2026-04-18)
 
 <code>protobufjs compiles protobuf definitions into JavaScript (JS) functions. In versions prior to 8.0.1 and 7.5.5, attackers can inject arbitrary code in the &quot;type&quot; fields of protobuf definitions, which will then execute during object decoding using that definition. Versions 8.0.1 and 7.5.5 patch the issue.
@@ -3924,6 +3905,8 @@
 - [vineet7800/cpanel-malware-cleaner-cve-2026](https://github.com/vineet7800/cpanel-malware-cleaner-cve-2026)
 - [AmirrezaMarzban/portscan-CVE-2026-41940](https://github.com/AmirrezaMarzban/portscan-CVE-2026-41940)
 - [MrAriaNet/cPanel-Fix](https://github.com/MrAriaNet/cPanel-Fix)
+- [dennisec/CVE-2026-41940](https://github.com/dennisec/CVE-2026-41940)
+- [3tternp/CVE-2026-41940---cPanel-WHM-check](https://github.com/3tternp/CVE-2026-41940---cPanel-WHM-check)
 
 ### CVE-2026-42141
 - [H4zaz/CVE-2026-42141-xibo-ssrf](https://github.com/H4zaz/CVE-2026-42141-xibo-ssrf)
@@ -7586,6 +7569,7 @@
 - [SoftAndoWetto/CVE-2025-24367-PoC-Cacti](https://github.com/SoftAndoWetto/CVE-2025-24367-PoC-Cacti)
 - [matesz44/CVE-2025-24367](https://github.com/matesz44/CVE-2025-24367)
 - [ShoshinMaster/CVE-2025-24367](https://github.com/ShoshinMaster/CVE-2025-24367)
+- [dantedansh/CVE-2025-24367-WebShell-](https://github.com/dantedansh/CVE-2025-24367-WebShell-)
 
 ### CVE-2025-24514 (2025-03-24)
 
@@ -43482,7 +43466,6 @@
 - [Pai-Po/CVE-2021-1732](https://github.com/Pai-Po/CVE-2021-1732)
 - [exploitblizzard/Windows-Privilege-Escalation-CVE-2021-1732](https://github.com/exploitblizzard/Windows-Privilege-Escalation-CVE-2021-1732)
 - [BeneficialCode/CVE-2021-1732](https://github.com/BeneficialCode/CVE-2021-1732)
-- [ExploitCN/CVE-2021-1732-EXP-](https://github.com/ExploitCN/CVE-2021-1732-EXP-)
 - [fenalik/CVE-2021-1732](https://github.com/fenalik/CVE-2021-1732)
 - [4dp/CVE-2021-1732](https://github.com/4dp/CVE-2021-1732)
 - [yangshifan-git/CVE-2021-1732](https://github.com/yangshifan-git/CVE-2021-1732)
@@ -48037,7 +48020,6 @@
 - [skentagon/CVE-2021-41773](https://github.com/skentagon/CVE-2021-41773)
 - [zer0qs/CVE-2021-41773](https://github.com/zer0qs/CVE-2021-41773)
 - [bernardas/netsec-polygon](https://github.com/bernardas/netsec-polygon)
-- [Chocapikk/CVE-2021-41773](https://github.com/Chocapikk/CVE-2021-41773)
 - [wangfly-me/Apache_Penetration_Tool](https://github.com/wangfly-me/Apache_Penetration_Tool)
 - [anldori/CVE-2021-41773-Scanner](https://github.com/anldori/CVE-2021-41773-Scanner)
 - [iosifache/ApacheRCEEssay](https://github.com/iosifache/ApacheRCEEssay)
@@ -49231,6 +49213,8 @@
 - [pinaraltinok/Log4Shell-Attack](https://github.com/pinaraltinok/Log4Shell-Attack)
 - [kaleth4/CVE-2021-44228](https://github.com/kaleth4/CVE-2021-44228)
 - [tieupham267/log4shell-coraza](https://github.com/tieupham267/log4shell-coraza)
+- [sajanapamuditha/Cyber-Attack-Simulation-](https://github.com/sajanapamuditha/Cyber-Attack-Simulation-)
+- [neilc1964techned/craready-test-java-vulns](https://github.com/neilc1964techned/craready-test-java-vulns)
 
 ### CVE-2021-44255 (2022-01-31)
 
