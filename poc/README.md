@@ -244,6 +244,13 @@
 
 - [KKongTen/CVE-2026-3494_Verfication](https://github.com/KKongTen/CVE-2026-3494_Verfication)
 
+### CVE-2026-3600 (2026-04-08)
+
+<code>The Investi plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'investi-announcements-accordion' shortcode's 'maximum-num-years' attribute in all versions up to, and including, 1.0.26. This is due to insufficient input sanitization and output escaping on user-supplied shortcode attributes. Specifically, the 'maximum-num-years' attribute value is read directly from shortcode attributes and interpolated into a double-quoted HTML attribute without any escaping (no esc_attr(), htmlspecialchars(), or similar). This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+</code>
+
+- [K3ysTr0K3R/CVE-2026-3600](https://github.com/K3ysTr0K3R/CVE-2026-3600)
+
 ### CVE-2026-3609 (2026-05-11)
 
 <code>Wellbia's XIGNCODE3 xhunter1.sys kernel driver Privilege Escalation Vulnerability provides access to IRP_MJ_REITS command interface, which allows any user process to request a PROCESS_ALL_ACCESS.\r\nCross reference to KVE 2023-5589 (https://krcert.or.kr)
@@ -610,6 +617,9 @@
 
 - [HORKimhab/CVE-2026-8196](https://github.com/HORKimhab/CVE-2026-8196)
 
+### CVE-2026-8206
+- [O99099O/CVE-2026-8206-Poc-](https://github.com/O99099O/CVE-2026-8206-Poc-)
+
 ### CVE-2026-8380
 - [tiagob0b/CVE-2026-8380](https://github.com/tiagob0b/CVE-2026-8380)
 
@@ -712,13 +722,25 @@
 
 - [Xmyronn/CVE-2026-10243-AUTH](https://github.com/Xmyronn/CVE-2026-10243-AUTH)
 
-### CVE-2026-10288
+### CVE-2026-10288 (2026-06-01)
+
+<code>A vulnerability was identified in code-projects Hotel and Tourism Reservation System 1.0. This issue affects the function password_verify of the file /admin/login.php of the component Admin Login. Such manipulation of the argument Password leads to improper authentication. It is possible to launch the attack remotely. The exploit is publicly available and might be used.
+</code>
+
 - [Xmyronn/CVE-2026-10288-AUTH-BYPASS](https://github.com/Xmyronn/CVE-2026-10288-AUTH-BYPASS)
 
-### CVE-2026-10289
+### CVE-2026-10289 (2026-06-01)
+
+<code>A security flaw has been discovered in code-projects Hotel and Tourism Reservation System 1.0. Impacted is an unknown function of the file /ht/tour.php. Performing a manipulation of the argument name /email /people /number results in cross site scripting. The attack can be initiated remotely. The exploit has been released to the public and may be used for attacks.
+</code>
+
 - [Xmyronn/CVE-2026-10289-XSS](https://github.com/Xmyronn/CVE-2026-10289-XSS)
 
-### CVE-2026-10290
+### CVE-2026-10290 (2026-06-01)
+
+<code>A weakness has been identified in code-projects Hotel and Tourism Reservation System 1.0. The affected element is an unknown function of the file tour.php of the component GET Parameter Handler. Executing a manipulation of the argument tour can lead to sql injection. The attack can be launched remotely. The exploit has been made available to the public and could be used for attacks.
+</code>
+
 - [Xmyronn/CVE-2026-10290-SQLI](https://github.com/Xmyronn/CVE-2026-10290-SQLI)
 
 ### CVE-2026-20131 (2026-03-04)
@@ -773,6 +795,14 @@
 
 - [hamzamalik3461/CVE-2026-20841](https://github.com/hamzamalik3461/CVE-2026-20841)
 - [404godd/CVE-2026-20841-PoC](https://github.com/404godd/CVE-2026-20841-PoC)
+- [0xBlackash/CVE-2026-20841](https://github.com/0xBlackash/CVE-2026-20841)
+
+### CVE-2026-20980 (2026-02-04)
+
+<code>Improper input validation in PACM prior to SMR Feb-2026 Release 1 allows physical attacker to execute arbitrary commands.
+</code>
+
+- [Vikramaditya015/samsung-android-lpe](https://github.com/Vikramaditya015/samsung-android-lpe)
 
 ### CVE-2026-21250 (2026-02-10)
 
@@ -1056,6 +1086,7 @@
 </code>
 
 - [BishopFox/CVE-2026-27886-check](https://github.com/BishopFox/CVE-2026-27886-check)
+- [EvtDanya/CVE-2026-27886](https://github.com/EvtDanya/CVE-2026-27886)
 
 ### CVE-2026-27944 (2026-03-05)
 
@@ -1149,9 +1180,6 @@
 </code>
 
 - [John-Popovici/CVE-2026-31431-CopyFail-Linux-PrivEsc](https://github.com/John-Popovici/CVE-2026-31431-CopyFail-Linux-PrivEsc)
-- [theori-io/copy-fail-CVE-2026-31431](https://github.com/theori-io/copy-fail-CVE-2026-31431)
-- [Alfredooe/CVE-2026-31431](https://github.com/Alfredooe/CVE-2026-31431)
-- [painoob/Copy-Fail-Exploit-CVE-2026-31431](https://github.com/painoob/Copy-Fail-Exploit-CVE-2026-31431)
 - [badsectorlabs/copyfail-go](https://github.com/badsectorlabs/copyfail-go)
 - [tgies/copy-fail-c](https://github.com/tgies/copy-fail-c)
 - [ZephrFish/CopyFail-CVE-2026-31431](https://github.com/ZephrFish/CopyFail-CVE-2026-31431)
@@ -1264,7 +1292,6 @@
 - [ashok523/cve-2026-31431](https://github.com/ashok523/cve-2026-31431)
 - [jodonnel/copyfail-briefing](https://github.com/jodonnel/copyfail-briefing)
 - [deckhouse/d8-copy-fail-mitigation](https://github.com/deckhouse/d8-copy-fail-mitigation)
-- [jneuhauser/copy-fail-CVE-2026-31431](https://github.com/jneuhauser/copy-fail-CVE-2026-31431)
 - [cyber-joker/copy-fail-python](https://github.com/cyber-joker/copy-fail-python)
 - [HulnotHutu/CVE-2026-31431](https://github.com/HulnotHutu/CVE-2026-31431)
 - [mahradbt/copyfail-mitigation](https://github.com/mahradbt/copyfail-mitigation)
@@ -1469,6 +1496,7 @@
 - [Iamliuxiaozhen/copy_fail](https://github.com/Iamliuxiaozhen/copy_fail)
 - [songzzzz/CVE-2026-31431](https://github.com/songzzzz/CVE-2026-31431)
 - [vishvacyber/Detection-Tool-Kit-for-CVE-2026-31431](https://github.com/vishvacyber/Detection-Tool-Kit-for-CVE-2026-31431)
+- [tematemaru/CVE-2026-31431-simple-test](https://github.com/tematemaru/CVE-2026-31431-simple-test)
 
 ### CVE-2026-31635 (2026-04-24)
 
@@ -1510,13 +1538,6 @@
 
 - [solarlynxsqueeze/CVE-2026-32202](https://github.com/solarlynxsqueeze/CVE-2026-32202)
 - [virus-or-not/CVE-2026-32202](https://github.com/virus-or-not/CVE-2026-32202)
-
-### CVE-2026-32247 (2026-03-12)
-
-<code>Graphiti is a framework for building and querying temporal context graphs for AI agents. Graphiti versions before 0.28.2 contained a Cypher injection vulnerability in shared search-filter construction for non-Kuzu backends. Attacker-controlled label values supplied through SearchFilters.node_labels were concatenated directly into Cypher label expressions without validation. In MCP deployments, this was exploitable not only through direct untrusted access to the Graphiti MCP server, but also through prompt injection against an LLM client that could be induced to call search_nodes with attacker-controlled entity_types values. The MCP server mapped entity_types to SearchFilters.node_labels, which then reached the vulnerable Cypher construction path. Affected backends included Neo4j, FalkorDB, and Neptune. Kuzu was not affected by the label-injection issue because it used parameterized label handling rather than string-interpolated Cypher labels. This issue was mitigated in 0.28.2.
-</code>
-
-- [romain-deperne/CVE-2026-32247](https://github.com/romain-deperne/CVE-2026-32247)
 
 ### CVE-2026-32707 (2026-03-13)
 
@@ -1603,6 +1624,7 @@
 </code>
 
 - [nedlir/dasel-hardened-container](https://github.com/nedlir/dasel-hardened-container)
+- [rotavori/dasel-melange-apko](https://github.com/rotavori/dasel-melange-apko)
 
 ### CVE-2026-33439 (2026-04-07)
 
@@ -1934,41 +1956,6 @@
 ### CVE-2026-36748
 - [rufflabs/CVE-2026-36748](https://github.com/rufflabs/CVE-2026-36748)
 
-### CVE-2026-36956 (2026-04-30)
-
-<code>A Cross-Site Request Forgery (CSRF) vulnerability exists in the web management interface of the Dbit N300 T1 Pro wireless router V1.0.0. The router fails to implement proper CSRF protection mechanisms such as anti-CSRF tokens or strict Origin/Referer validation for administrative API endpoints. An attacker can craft a malicious webpage that sends forged HTTP requests to configuration endpoints such as /api/setWlan. If an authenticated administrator visits the malicious webpage, the victim's browser automatically includes the valid session cookie in the request, allowing the router to process the request as a legitimate administrative action.
-</code>
-
-- [kirubel-cve/CVE-2026-36956](https://github.com/kirubel-cve/CVE-2026-36956)
-
-### CVE-2026-36957 (2026-04-30)
-
-<code>Dbit N300 T1 Pro Easy Setup Wireless Wi-Fi Router V1.0.0 is vulnerable to Denial of Service via the boa web server URI handler. By initiating a high-volume flood of HTTP GET requests to non-existent URIs, an attacker can exhaust critical system resources, including file descriptors and memory buffers. This results in a kernel deadlock or system hang that disables the web management portal and all routing capabilities.
-</code>
-
-- [kirubel-cve/CVE-2026-36957](https://github.com/kirubel-cve/CVE-2026-36957)
-
-### CVE-2026-36958 (2026-04-30)
-
-<code>A denial-of-service vulnerability exists in the U-SPEED N300 V1.0.0 wireless router. By sending a large number of concurrent HTTP requests to random or non-existent endpoints on the web management interface, an attacker can exhaust system resources in the embedded Boa HTTP server. This causes the router web interface to become unresponsive and may require manual reboot to restore normal operation.
-</code>
-
-- [kirubel-cve/CVE-2026-36958](https://github.com/kirubel-cve/CVE-2026-36958)
-
-### CVE-2026-36959 (2026-04-30)
-
-<code>U-SPEED N300 router V1.0.0 does not implement rate limiting or account lockout protections on the /api/login endpoint. This allows an attacker on the local network to perform unlimited authentication attempts, enabling brute-force attacks against the administrator account and potential unauthorized access to the router management interface.
-</code>
-
-- [kirubel-cve/CVE-2026-36959](https://github.com/kirubel-cve/CVE-2026-36959)
-
-### CVE-2026-36960 (2026-04-30)
-
-<code>A Cross-Site Request Forgery (CSRF) vulnerability exists in the web management interface of the U-SPEED N300 Rounter V1.0.0. The device does not implement CSRF protection mechanisms such as anti-CSRF tokens or strict Origin/Referer validation for administrative API endpoints. An attacker can craft a malicious webpage that sends forged HTTP requests to configuration endpoints. If an authenticated administrator visits the malicious webpage, the victim's browser automatically includes the valid session cookie in the request, allowing the router to process the request as a legitimate administrative action.
-</code>
-
-- [kirubel-cve/CVE-2026-36960](https://github.com/kirubel-cve/CVE-2026-36960)
-
 ### CVE-2026-36980
 - [canomer/CVE-2026-36980-Kernel-BSOD-DoS-PoC](https://github.com/canomer/CVE-2026-36980-Kernel-BSOD-DoS-PoC)
 
@@ -2123,7 +2110,7 @@
 
 ### CVE-2026-40369 (2026-05-12)
 
-<code>Untrusted pointer dereference in Windows Kernel allows an authorized attacker to elevate privileges locally.
+<code>Heap-based buffer overflow in Windows Kernel allows an authorized attacker to elevate privileges locally.
 </code>
 
 - [orinimron123/CVE-2026-40369-EXPLOIT](https://github.com/orinimron123/CVE-2026-40369-EXPLOIT)
@@ -4328,7 +4315,7 @@
 <code>The Sneeit Framework plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 8.3 via the sneeit_articles_pagination_callback() function. This is due to the function accepting user input and then passing that through call_user_func(). This makes it possible for unauthenticated attackers to execute code on the server which can be leveraged to inject backdoors or, for example, create new administrative user accounts.
 </code>
 
-- [moritakaaz/Blackash-CVE-2025-6389](https://github.com/moritakaaz/Blackash-CVE-2025-6389)
+- [AivarSaar/blackash-cve-2025-6389](https://github.com/AivarSaar/blackash-cve-2025-6389)
 - [itsismarcos/SneeitScanner-CVE-2025-6389](https://github.com/itsismarcos/SneeitScanner-CVE-2025-6389)
 - [Nxploited/CVE-2025-6389](https://github.com/Nxploited/CVE-2025-6389)
 
@@ -4799,6 +4786,7 @@
 - [mateusm1403/PoC-CVE-2025-8671-MadeYouReset-HTTP-2](https://github.com/mateusm1403/PoC-CVE-2025-8671-MadeYouReset-HTTP-2)
 - [abiyeenzo/CVE-2025-8671](https://github.com/abiyeenzo/CVE-2025-8671)
 - [mysara2022/CVE-2025-8671-vulnerability-POC-](https://github.com/mysara2022/CVE-2025-8671-vulnerability-POC-)
+- [ayushghatkar8080/MadeYouReset_Tester](https://github.com/ayushghatkar8080/MadeYouReset_Tester)
 
 ### CVE-2025-8714 (2025-08-14)
 
@@ -8919,6 +8907,13 @@
 </code>
 
 - [kaleth4/CVE-2025-40271](https://github.com/kaleth4/CVE-2025-40271)
+
+### CVE-2025-40536 (2026-01-28)
+
+<code>SolarWinds Web Help Desk was found to be susceptible to a security control bypass vulnerability that if exploited, could allow an unauthenticated attacker to gain access to certain restricted functionality.
+</code>
+
+- [victoriaalicex/CVE-2025-40536-Analysis](https://github.com/victoriaalicex/CVE-2025-40536-Analysis)
 
 ### CVE-2025-40552 (2026-01-28)
 
@@ -14162,7 +14157,7 @@
 
 ### CVE-2025-69600 (2026-05-27)
 
-<code>Command injection in Raynet rvia 12.6.4392.49-amd64.deb allows adversaries to execute commands via getconfig, and upload through the URL argument, and oracle through the -o flag The Supplier's perspective is that this is caused by Argument Injection in the find command query in rvia 12.6.4392.49. This in an arbitrary code execution flaw caused by an incorrectly constructed find command. The application actively searches for a Java executable by using search criteria that is not properly terminated or sanitized. By constructing a crafted directory path that satisfies the malformed search criteria, an attacker can trick the application into executing arbitrary Java code. This differs from standard PATH manipulation because it stems from the application's internal search logic. Specifically, a local attacker can create a crafted directory structure and path that satisfies an improperly terminated find query used by the application to locate a Java runtime.
+<code>Command injection in Raynet rvia RayVentory Scan Engine 12.6 Update 8 and previous versions allows adversaries to execute commands via getconfig, upload, inventory, and oracle options.
 </code>
 
 - [Wise-Security/CVE-2025-69600](https://github.com/Wise-Security/CVE-2025-69600)
@@ -17761,7 +17756,7 @@
 
 ### CVE-2024-12970 (2025-01-06)
 
-<code>Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in TUBITAK BILGEM Pardus OS My Computer allows OS Command Injection.This issue affects Pardus OS My Computer: before 0.7.2.
+<code>Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in TUBITAK BILGEM Pardus OS My Computer allows OS Command Injection.\n\nThis issue affects Pardus OS My Computer: before 0.7.2.
 </code>
 
 - [osmancanvural/CVE-2024-12970](https://github.com/osmancanvural/CVE-2024-12970)
@@ -21821,7 +21816,7 @@
 - [jip-0-0-0-0-0/CVE-2024-38063-scanner](https://github.com/jip-0-0-0-0-0/CVE-2024-38063-scanner)
 - [Skac44/CVE-2024-38063](https://github.com/Skac44/CVE-2024-38063)
 - [thealice01/CVE-2024-38063](https://github.com/thealice01/CVE-2024-38063)
-- [Avidan1/CVE-2024-38063](https://github.com/Avidan1/CVE-2024-38063)
+- [AvidanMaatuk/CVE-2024-38063](https://github.com/AvidanMaatuk/CVE-2024-38063)
 - [arrhenius975/CVE-2024-38063-Exploit-Refactoring](https://github.com/arrhenius975/CVE-2024-38063-Exploit-Refactoring)
 - [SALMA-ESSAOUD/CVE-CVSS--CVE-2024-38063-IPv6-TCP-IP-Remote-Code-Execution-Analysis](https://github.com/SALMA-ESSAOUD/CVE-CVSS--CVE-2024-38063-IPv6-TCP-IP-Remote-Code-Execution-Analysis)
 - [RohitMalik7/cve-2024-38063-detection-mitigation-system](https://github.com/RohitMalik7/cve-2024-38063-detection-mitigation-system)
@@ -27244,7 +27239,6 @@
 <code>An issue has been discovered in GitLab CE/EE affecting all versions from 16.1 prior to 16.1.6, 16.2 prior to 16.2.9, 16.3 prior to 16.3.7, 16.4 prior to 16.4.5, 16.5 prior to 16.5.6, 16.6 prior to 16.6.4, and 16.7 prior to 16.7.2 in which user account password reset emails could be delivered to an unverified email address.
 </code>
 
-- [Vozec/CVE-2023-7028](https://github.com/Vozec/CVE-2023-7028)
 - [yoryio/CVE-2023-7028](https://github.com/yoryio/CVE-2023-7028)
 - [Esonhugh/gitlab_honeypot](https://github.com/Esonhugh/gitlab_honeypot)
 - [Shimon03/CVE-2023-7028-Account-Take-Over-Gitlab](https://github.com/Shimon03/CVE-2023-7028-Account-Take-Over-Gitlab)
@@ -31914,6 +31908,13 @@
 </code>
 
 - [ayrustogaru/cve-2023-39320](https://github.com/ayrustogaru/cve-2023-39320)
+
+### CVE-2023-39325 (2023-10-11)
+
+<code>A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing. With the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection. This issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2. The default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.
+</code>
+
+- [eilam-cell/cve-test-coredns-fork](https://github.com/eilam-cell/cve-test-coredns-fork)
 
 ### CVE-2023-39361 (2023-09-05)
 
@@ -42432,6 +42433,13 @@
 
 - [pazhanivel07/frameworks_base_Aosp10_r33_CVE-2021-0595](https://github.com/pazhanivel07/frameworks_base_Aosp10_r33_CVE-2021-0595)
 
+### CVE-2021-0640 (2021-08-17)
+
+<code>In noteAtomLogged of StatsdStats.cpp, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-9Android ID: A-187957589
+</code>
+
+- [Trinadh465/frameworks_base_AOSP10_r33_CVE-2021-0640](https://github.com/Trinadh465/frameworks_base_AOSP10_r33_CVE-2021-0640)
+
 ### CVE-2021-0683 (2021-10-06)
 
 <code>In runTraceIpcStop of ActivityManagerShellCommand.java, there is a possible deletion of system files due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-8.1 Android-9 Android-10Android ID: A-185398942
@@ -48316,7 +48324,6 @@
 - [x1ongsec/CVE-2021-44228-Log4j-JNDI](https://github.com/x1ongsec/CVE-2021-44228-Log4j-JNDI)
 - [fabioeletto/hka-seminar-log4shell](https://github.com/fabioeletto/hka-seminar-log4shell)
 - [cuijiung/log4j-CVE-2021-44228](https://github.com/cuijiung/log4j-CVE-2021-44228)
-- [Alan-coder-eng/log4j-cve-2021-44228-](https://github.com/Alan-coder-eng/log4j-cve-2021-44228-)
 - [Sorrence/CVE-2021-44228](https://github.com/Sorrence/CVE-2021-44228)
 - [moften/Log4Shell](https://github.com/moften/Log4Shell)
 - [KamalideenAK/Microsoft-Defender-for-Endpoint-Deployment-on-Windows-10-11-device](https://github.com/KamalideenAK/Microsoft-Defender-for-Endpoint-Deployment-on-Windows-10-11-device)
