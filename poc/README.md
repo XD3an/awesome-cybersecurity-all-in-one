@@ -51,6 +51,7 @@
 - [jennydokumi30/CVE-2026-0257](https://github.com/jennydokumi30/CVE-2026-0257)
 - [Mr-Robot-LP/CVE-2026-0257](https://github.com/Mr-Robot-LP/CVE-2026-0257)
 - [bolubey/CVE-2026-0257](https://github.com/bolubey/CVE-2026-0257)
+- [tushargurav28/CVE-2026-0257](https://github.com/tushargurav28/CVE-2026-0257)
 
 ### CVE-2026-0265 (2026-05-13)
 
@@ -326,6 +327,13 @@
 </code>
 
 - [shootcannon/CVE-2026-4257](https://github.com/shootcannon/CVE-2026-4257)
+
+### CVE-2026-4390 (2026-05-27)
+
+<code>A weakness has been identified in TeamSpeak 3 Server up to 3.13.7. This affects the function process_resend_queue of the component Connection State Management. This manipulation causes use after free. The attack may be initiated remotely. Upgrading to version 3.13.8 is able to mitigate this issue. The affected component should be upgraded.
+</code>
+
+- [born0monday/teamspeak3-vulnerabilities](https://github.com/born0monday/teamspeak3-vulnerabilities)
 
 ### CVE-2026-4802 (2026-05-11)
 
@@ -706,6 +714,7 @@
 - [suominen/CVE-2026-9256](https://github.com/suominen/CVE-2026-9256)
 - [W5M1n9/NGINX-ngx_http_rewrite_module-heap-buffer-overflow-CVE-2026-9256](https://github.com/W5M1n9/NGINX-ngx_http_rewrite_module-heap-buffer-overflow-CVE-2026-9256)
 - [3nou9h/CVE-2026-9256-Poc](https://github.com/3nou9h/CVE-2026-9256-Poc)
+- [06-ux/CVE-2026-9256-POC](https://github.com/06-ux/CVE-2026-9256-POC)
 
 ### CVE-2026-9560 (2026-05-26)
 
@@ -727,6 +736,13 @@
 </code>
 
 - [Xmyronn/CVE-2026-10170-RCE](https://github.com/Xmyronn/CVE-2026-10170-RCE)
+
+### CVE-2026-10187 (2026-05-31)
+
+<code>A vulnerability was detected in Totolink N300RH 6.1c.1353_B20190305. Affected by this issue is the function setWiFiBasicConfig of the file wireless.so of the component Web Management Interface. Performing a manipulation of the argument KeyStr results in stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit is now public and may be used.
+</code>
+
+- [passwa11/CVE-2026-10187](https://github.com/passwa11/CVE-2026-10187)
 
 ### CVE-2026-10243 (2026-06-01)
 
@@ -897,6 +913,7 @@
 - [m2sousa/CVE-2026-23744](https://github.com/m2sousa/CVE-2026-23744)
 - [TYehan/CVE-2026-23744](https://github.com/TYehan/CVE-2026-23744)
 - [MrR0b0t19/CVE-2026-23744-PoC](https://github.com/MrR0b0t19/CVE-2026-23744-PoC)
+- [jf-gondim/mcp-pwn](https://github.com/jf-gondim/mcp-pwn)
 
 ### CVE-2026-23813 (2026-03-11)
 
@@ -976,13 +993,6 @@
 </code>
 
 - [tracyliving606/RegPwn](https://github.com/tracyliving606/RegPwn)
-
-### CVE-2026-24294 (2026-03-10)
-
-<code>Improper authentication in Windows SMB Server allows an authorized attacker to elevate privileges locally.
-</code>
-
-- [0xNDI/CVE-2026-24294](https://github.com/0xNDI/CVE-2026-24294)
 
 ### CVE-2026-24332 (2026-01-22)
 
@@ -1072,6 +1082,13 @@
 - [Kulik-Labs-Development/Ghost-CMS-Code-Injection-Audit-CVE-2026-26980](https://github.com/Kulik-Labs-Development/Ghost-CMS-Code-Injection-Audit-CVE-2026-26980)
 - [EQSTLab/CVE-2026-26980](https://github.com/EQSTLab/CVE-2026-26980)
 
+### CVE-2026-27145 (2026-06-02)
+
+<code>(*x509.Certificate).VerifyHostname previously called matchHostnames in a loop over all DNS Subject Alternative Name (SAN) entries. This caused strings.Split(host, &quot;.&quot;) to execute repeatedly on the same input hostname. With a large DNS SAN list, verification costs scaled quadratically based on the number of SAN entries multiplied by the hostname's label count. Because x509.Verify validates hostnames before building the certificate chain, this overhead occurred even for untrusted certificates.
+</code>
+
+- [HORKimhab/CVE-2026-27145](https://github.com/HORKimhab/CVE-2026-27145)
+
 ### CVE-2026-27212 (2026-02-21)
 
 <code>Swiper is a free and mobile touch slider with hardware accelerated transitions and native behavior. Versions 6.5.1 through 12.1.1 have a Prototype pollution vulnerability. The vulnerability resides in line 94 of shared/utils.mjs, where the indexOf() function is used to check whether user provided input contain forbidden strings. Despite a previous fix that attempted to mitigate prototype pollution by checking whether user input contained a forbidden key, it is still possible to pollute Object.prototype via a crafted input using Array.prototype. The exploit works across Windows and Linux and on Node and Bun runtimes.  Any application that processes attacker-controlled input using this package may be affected  by the following: Authentication Bypass, Denial of Service and RCE. This issue is fixed in version 12.1.2.
@@ -1147,6 +1164,13 @@
 - [c0gnit00/CVE-2026-29000](https://github.com/c0gnit00/CVE-2026-29000)
 - [lucastran05/CVE-2026-29000](https://github.com/lucastran05/CVE-2026-29000)
 
+### CVE-2026-29198 (2026-04-22)
+
+<code>In Rocket.Chat &lt;8.3.0, &lt;8.2.1, &lt;8.1.2, &lt;8.0.3, &lt;7.13.5, &lt;7.12.6, &lt;7.11.6, and &lt;7.10.9, a NoSQL injection vulnerability can lead to account takeover of the first user with a generated token when an OAuth app is configured.
+</code>
+
+- [hieuminhnv/CVE-2026-29198-POC](https://github.com/hieuminhnv/CVE-2026-29198-POC)
+
 ### CVE-2026-29204 (2026-05-12)
 
 <code>Insufficient ownership check in `clientarea.php` allows an authenticated client area user to submit requests using another user’s `addonId` without any ownership validation leading to unauthorized access to the victim's account.
@@ -1210,24 +1234,14 @@
 - [gubaiovo/CVE-2026-31431](https://github.com/gubaiovo/CVE-2026-31431)
 - [Sndav/CVE-2026-31431-Advanced-Exploit](https://github.com/Sndav/CVE-2026-31431-Advanced-Exploit)
 - [insomnisec/Detections-CVE-2026-31431](https://github.com/insomnisec/Detections-CVE-2026-31431)
-- [desultory/CVE-2026-31431](https://github.com/desultory/CVE-2026-31431)
-- [someCorp/copyFail-CVE-2026-31431-workaround-bash](https://github.com/someCorp/copyFail-CVE-2026-31431-workaround-bash)
 - [iss4cf0ng/CVE-2026-31431-Linux-Copy-Fail](https://github.com/iss4cf0ng/CVE-2026-31431-Linux-Copy-Fail)
-- [adysec/cve-2026-31431](https://github.com/adysec/cve-2026-31431)
-- [novysodope/copy-fail-CVE-2026-31431-C](https://github.com/novysodope/copy-fail-CVE-2026-31431-C)
-- [thrandomv/cve-2026-31431-detection](https://github.com/thrandomv/cve-2026-31431-detection)
-- [Y5neKO/copy-fail-CVE-2026-31431-universal](https://github.com/Y5neKO/copy-fail-CVE-2026-31431-universal)
 - [bigwario/copy-fail-CVE-2026-31431-C](https://github.com/bigwario/copy-fail-CVE-2026-31431-C)
-- [twowb/CVE-2026-31431-](https://github.com/twowb/CVE-2026-31431-)
 - [arkdev1/check-cve-2026-31431](https://github.com/arkdev1/check-cve-2026-31431)
 - [wuwu001/CVE-2026-31431-exploit](https://github.com/wuwu001/CVE-2026-31431-exploit)
 - [ryan2929/CVE-2026-31431](https://github.com/ryan2929/CVE-2026-31431)
-- [0xShe/CVE-2026-31431](https://github.com/0xShe/CVE-2026-31431)
 - [WavesMan/cve-2026-31431-fleet-remediator](https://github.com/WavesMan/cve-2026-31431-fleet-remediator)
 - [wuzuowei/copy-fail-CVE-2026-31431](https://github.com/wuzuowei/copy-fail-CVE-2026-31431)
-- [Isw-9/copy-fail-cve-2026-31431-aarch64](https://github.com/Isw-9/copy-fail-cve-2026-31431-aarch64)
 - [Aurillium/RootRemover](https://github.com/Aurillium/RootRemover)
-- [freelabz/CVE-2026-31431](https://github.com/freelabz/CVE-2026-31431)
 - [mrowkoob/copy-fail-mitigate-no-reboot](https://github.com/mrowkoob/copy-fail-mitigate-no-reboot)
 - [nisec-eric/cve-2026-31431](https://github.com/nisec-eric/cve-2026-31431)
 - [pascal-gujer/CVE-2026-31431](https://github.com/pascal-gujer/CVE-2026-31431)
@@ -1513,6 +1527,7 @@
 - [songzzzz/CVE-2026-31431](https://github.com/songzzzz/CVE-2026-31431)
 - [vishvacyber/Detection-Tool-Kit-for-CVE-2026-31431](https://github.com/vishvacyber/Detection-Tool-Kit-for-CVE-2026-31431)
 - [tematemaru/CVE-2026-31431-simple-test](https://github.com/tematemaru/CVE-2026-31431-simple-test)
+- [1neptune/CopyFail](https://github.com/1neptune/CopyFail)
 
 ### CVE-2026-31525 (2026-04-22)
 
@@ -2131,6 +2146,8 @@
 - [0xABCD01/CVE-2026-41089](https://github.com/0xABCD01/CVE-2026-41089)
 - [0xBlackash/CVE-2026-41089](https://github.com/0xBlackash/CVE-2026-41089)
 - [sananpa/CVE-2026-41089](https://github.com/sananpa/CVE-2026-41089)
+- [hnytgl/cve-2026-41089-detector](https://github.com/hnytgl/cve-2026-41089-detector)
+- [hnytgl/CVE-2026-41089](https://github.com/hnytgl/CVE-2026-41089)
 
 ### CVE-2026-41091 (2026-05-20)
 
@@ -2192,8 +2209,6 @@
 <code>cPanel and WHM versions after 11.40 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.
 </code>
 
-- [rdyprtmx/poc-cve-2026-41940](https://github.com/rdyprtmx/poc-cve-2026-41940)
-- [Kagantua/cPanelWHM-AuthBypass](https://github.com/Kagantua/cPanelWHM-AuthBypass)
 - [Wesuiliye/CVE-2026-41940](https://github.com/Wesuiliye/CVE-2026-41940)
 - [assetnote/cpanel2shell-scanner](https://github.com/assetnote/cpanel2shell-scanner)
 - [realawaisakbar/CVE-2026-41940-Exploit-PoC](https://github.com/realawaisakbar/CVE-2026-41940-Exploit-PoC)
@@ -2269,13 +2284,6 @@
 </code>
 
 - [br0xpl/sparx_hack](https://github.com/br0xpl/sparx_hack)
-
-### CVE-2026-42141 (2026-05-12)
-
-<code>Xibo is an open source digital signage platform with a web content management system and Windows display player software. Prior to 4.4.1, an authenticated Server-Side Request Forgery (SSRF) vulnerability in the Xibo CMS allows users with Library upload permissions to make arbitrary HTTP requests from the CMS server to internal or external network resources. This can be exploited to scan internal infrastructure, access local cloud metadata endpoints (e.g., AWS IMDS), interact with internal services that lack authentication, or exfiltrate data. This vulnerability is fixed in 4.4.1.
-</code>
-
-- [H4zaz/CVE-2026-42141-xibo-ssrf](https://github.com/H4zaz/CVE-2026-42141-xibo-ssrf)
 
 ### CVE-2026-42154 (2026-05-04)
 
@@ -2443,6 +2451,7 @@
 - [josephfelix/CVE-2026-42945-nginx-rift](https://github.com/josephfelix/CVE-2026-42945-nginx-rift)
 - [niekaicheng/CVE-2026-42945_NGINX_Rift](https://github.com/niekaicheng/CVE-2026-42945_NGINX_Rift)
 - [quantumworld-dpdns-io/CVE-2026-42945](https://github.com/quantumworld-dpdns-io/CVE-2026-42945)
+- [strivepan/Nginx_cve-2026-42945-scanner-gui](https://github.com/strivepan/Nginx_cve-2026-42945-scanner-gui)
 
 ### CVE-2026-43284 (2026-05-08)
 
@@ -2474,6 +2483,7 @@
 - [DylanClaudio/Reporte-de-Escalada-de-Privilegios-Local-Dirty-Frag](https://github.com/DylanClaudio/Reporte-de-Escalada-de-Privilegios-Local-Dirty-Frag)
 - [AtlasVector/Dirty-Frag-CVE-2026-43284](https://github.com/AtlasVector/Dirty-Frag-CVE-2026-43284)
 - [K3ysTr0K3R/CVE-2026-43284-CVE-2026-43500-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2026-43284-CVE-2026-43500-EXPLOIT)
+- [1neptune/DirtyFrag](https://github.com/1neptune/DirtyFrag)
 
 ### CVE-2026-43494 (2026-05-21)
 
@@ -2683,6 +2693,7 @@
 - [Maxime288/Fragnesia-CVE-2026-46300](https://github.com/Maxime288/Fragnesia-CVE-2026-46300)
 - [AzDevops143/fragnesia-cve-2026-46300](https://github.com/AzDevops143/fragnesia-cve-2026-46300)
 - [AzDevops143/FRAGNESIA-Charan-cve-2026-46300](https://github.com/AzDevops143/FRAGNESIA-Charan-cve-2026-46300)
+- [1neptune/Fragnesia](https://github.com/1neptune/Fragnesia)
 
 ### CVE-2026-46333 (2026-05-15)
 
@@ -2818,6 +2829,13 @@
 
 ### CVE-2026-49345
 - [hadhub/CVE-2026-49345-Mercator-SSRF](https://github.com/hadhub/CVE-2026-49345-Mercator-SSRF)
+
+### CVE-2026-49943 (2026-06-02)
+
+<code>CZ.NIC BIRD Internet Routing Daemon through 2.19.0 contains a stack-based buffer overflow in the BGP AS_PATH mask matching implementation in nest/a-path.c. The as_path_match() function uses a fixed-size stack array of 2048 + 1 pm_pos entries, while parse_path() expands AS_PATH segments from a received BGP UPDATE without enforcing a corresponding capacity limit. When RFC 8654 BGP Extended Messages are enabled and a BIRD filter evaluates an AS path mask expression such as &quot;bgp_path ~ [= ... =]&quot;, an established BGP peer can send a long AS_PATH containing more than 2048 expanded ASNs. This causes parse_path()/as_path_match() to write beyond the fixed stack buffer, resulting in a crash of the daemon. NOTE: reportedly, the Supplier's position is that a fix is not being prioritized because all network operators should already be rejecting routes with unusually long attributes.
+</code>
+
+- [9Bakabaka/CVE-2026-49943-PoC](https://github.com/9Bakabaka/CVE-2026-49943-PoC)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -8325,6 +8343,7 @@
 - [agustfricke/erlang-ssh-rce-CVE-2025-32433](https://github.com/agustfricke/erlang-ssh-rce-CVE-2025-32433)
 - [joshuavanderpoll/cve-2025-32433](https://github.com/joshuavanderpoll/cve-2025-32433)
 - [0xBlackash/CVE-2025-32433](https://github.com/0xBlackash/CVE-2025-32433)
+- [leehunkoo/hk_CVE-2025-32433](https://github.com/leehunkoo/hk_CVE-2025-32433)
 
 ### CVE-2025-32434 (2025-04-18)
 
@@ -12606,6 +12625,7 @@
 </code>
 
 - [siddu7575/CVE-2025-61882-CVE-2025-61884](https://github.com/siddu7575/CVE-2025-61882-CVE-2025-61884)
+- [MindflareX/CVE-2025-61882-POC](https://github.com/MindflareX/CVE-2025-61882-POC)
 - [Zhert-lab/CVE-2025-61882-CVE-2025-61884](https://github.com/Zhert-lab/CVE-2025-61882-CVE-2025-61884)
 - [George0Papasotiriou/CVE-2025-61882-Oracle-BI-Publisher-RCE](https://github.com/George0Papasotiriou/CVE-2025-61882-Oracle-BI-Publisher-RCE)
 - [sid-203/Enterprise-Information-Security-Risk-Assessment-Oracle-E-Business-Suite-Case-Study](https://github.com/sid-203/Enterprise-Information-Security-Risk-Assessment-Oracle-E-Business-Suite-Case-Study)
@@ -12730,13 +12750,6 @@
 </code>
 
 - [t4e-3/CVE-2025-63296](https://github.com/t4e-3/CVE-2025-63296)
-
-### CVE-2025-63307 (2025-11-06)
-
-<code>alexusmai laravel-file-manager 3.3.1 is vulnerable to Cross Site Scripting (XSS). The application permits user-controlled upload, create, and rename of files to HTML and SVG types and serves those files inline without adequate content-type validation or output sanitization.
-</code>
-
-- [Theethat-Thamwasin/CVE-2025-63307](https://github.com/Theethat-Thamwasin/CVE-2025-63307)
 
 ### CVE-2025-63314 (2026-01-12)
 
@@ -43181,6 +43194,13 @@
 
 - [QiuhaoLi/CVE-2021-3929-3947](https://github.com/QiuhaoLi/CVE-2021-3929-3947)
 
+### CVE-2021-3972 (2022-04-22)
+
+<code>A potential vulnerability by a driver used during manufacturing process on some consumer Lenovo Notebook devices' BIOS that was mistakenly not deactivated may allow an attacker with elevated privileges to modify secure boot setting by modifying an NVRAM variable.
+</code>
+
+- [killvxk/CVE-2021-3972](https://github.com/killvxk/CVE-2021-3972)
+
 ### CVE-2021-4034 (2022-01-28)
 
 <code>A local privilege escalation vulnerability was found on polkit's pkexec utility. The pkexec application is a setuid tool designed to allow unprivileged users to run commands as privileged users according predefined policies. The current version of pkexec doesn't handle the calling parameters count correctly and ends trying to execute environment variables as commands. An attacker can leverage this by crafting environment variables in such a way it'll induce pkexec to execute arbitrary code. When successfully executed the attack can cause a local privilege escalation given unprivileged users administrative rights on the target machine.
@@ -46710,7 +46730,6 @@
 - [hakivvi/CVE-2021-40449](https://github.com/hakivvi/CVE-2021-40449)
 - [Kristal-g/CVE-2021-40449_poc](https://github.com/Kristal-g/CVE-2021-40449_poc)
 - [CppXL/cve-2021-40449-poc](https://github.com/CppXL/cve-2021-40449-poc)
-- [toanthang1842002/CVE-2021-40449](https://github.com/toanthang1842002/CVE-2021-40449)
 
 ### CVE-2021-40492 (2021-09-03)
 
@@ -48341,7 +48360,7 @@
 - [MAFO-sec/mi-laboratorio-log4shell](https://github.com/MAFO-sec/mi-laboratorio-log4shell)
 - [felisha-elmer/Sandbox-Challenge-Log4Shell-CVE-2021-44228-](https://github.com/felisha-elmer/Sandbox-Challenge-Log4Shell-CVE-2021-44228-)
 - [jomjosh17/Log4Shell-CVE-2021-44228-](https://github.com/jomjosh17/Log4Shell-CVE-2021-44228-)
-- [C00LN3T/Log4ShellAuditor](https://github.com/C00LN3T/Log4ShellAuditor)
+- [C00LN3T/SpringAudit](https://github.com/C00LN3T/SpringAudit)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -63599,7 +63618,6 @@
 </code>
 
 - [BimsaraMalinda/Linux-Kernel-4.4.0-Ubuntu---DCCP-Double-Free-Privilege-Escalation-CVE-2017-6074](https://github.com/BimsaraMalinda/Linux-Kernel-4.4.0-Ubuntu---DCCP-Double-Free-Privilege-Escalation-CVE-2017-6074)
-- [toanthang1842002/CVE-2017-6074](https://github.com/toanthang1842002/CVE-2017-6074)
 - [34zY/CVE-2017-6074-DOS](https://github.com/34zY/CVE-2017-6074-DOS)
 
 ### CVE-2017-6079 (2017-05-16)
@@ -69859,7 +69877,7 @@
 - [ByteForgeFr/CVE-2011-2523](https://github.com/ByteForgeFr/CVE-2011-2523)
 - [Jhatchi/NexaCorp-DFIR-INC-2026-001](https://github.com/Jhatchi/NexaCorp-DFIR-INC-2026-001)
 - [Chathura123git/ethical-hacking-CVE-2011-2523](https://github.com/Chathura123git/ethical-hacking-CVE-2011-2523)
-- [nitinsukthe/OpenVAS-Vulnerability-Assessment---Incident-Response](https://github.com/nitinsukthe/OpenVAS-Vulnerability-Assessment---Incident-Response)
+- [nitinsukthe/OpenVAS-Vulnerability-Assessment-Incident-Response](https://github.com/nitinsukthe/OpenVAS-Vulnerability-Assessment-Incident-Response)
 
 ### CVE-2011-2553
 - [carlosrpastrana/cve-2011-2553](https://github.com/carlosrpastrana/cve-2011-2553)
