@@ -34,6 +34,7 @@
 - [tc4dy/CVE-2026-0073-PoC-Exploit](https://github.com/tc4dy/CVE-2026-0073-PoC-Exploit)
 - [0xbinder/CVE-2026-0073](https://github.com/0xbinder/CVE-2026-0073)
 - [m00ddy/CVE-2026-0073-Android-client-TLS-auth-bypass](https://github.com/m00ddy/CVE-2026-0073-Android-client-TLS-auth-bypass)
+- [fredevsec/CVE-2026-0073](https://github.com/fredevsec/CVE-2026-0073)
 
 ### CVE-2026-0211
 - [frudotz/ISU-SecOps-Nginx-RCE](https://github.com/frudotz/ISU-SecOps-Nginx-RCE)
@@ -167,6 +168,7 @@
 </code>
 
 - [melbratic/CVE-2026-2256-Threat-Model----ms-agent-Command-Injection](https://github.com/melbratic/CVE-2026-2256-Threat-Model----ms-agent-Command-Injection)
+- [mruniversity/CVE-2026-2256-](https://github.com/mruniversity/CVE-2026-2256-)
 
 ### CVE-2026-2291 (2026-05-11)
 
@@ -192,6 +194,13 @@
 </code>
 
 - [megafart1/CVE-2026-2472-Vertex-AI-SDK-Google-Cloud](https://github.com/megafart1/CVE-2026-2472-Vertex-AI-SDK-Google-Cloud)
+
+### CVE-2026-2586 (2026-05-19)
+
+<code>An authenticated Remote Code Execution (RCE) vulnerability was identified in GlassFish's Administration Console. A user with access to the panel can send crafted requests that allow the execution of arbitrary operating system commands with the privileges of the application service user.
+</code>
+
+- [DeepSecurityResearch/CVE-2026-2586](https://github.com/DeepSecurityResearch/CVE-2026-2586)
 
 ### CVE-2026-2587 (2026-05-19)
 
@@ -366,6 +375,13 @@
 </code>
 
 - [lottiedeyan/CVE20264893poc](https://github.com/lottiedeyan/CVE20264893poc)
+
+### CVE-2026-5076 (2026-06-02)
+
+<code>The ARMember Premium plugin for WordPress is vulnerable to an insecure password reset mechanism in all versions up to, and including, 7.3.1. The plugin stores a plaintext copy of the password reset key in the `arm_reset_password_key` user meta field when a user requests a password reset. This is in addition to the hashed key that WordPress core stores securely in `wp_users.user_activation_key`. The plaintext key stored in `wp_usermeta` can be used with the plugin's custom `armrp` reset action to set a new password for any user. Combined with another vulnerability such as SQL Injection (CVE-2026-5073, CVE-2026-5074), this makes it possible for unauthenticated attackers to extract the plaintext reset key and take over any user account, including administrators.
+</code>
+
+- [zycoder0day/CVE-2026-5076](https://github.com/zycoder0day/CVE-2026-5076)
 
 ### CVE-2026-5118 (2026-05-21)
 
@@ -660,6 +676,7 @@
 </code>
 
 - [xShadow-Here/CVE-2026-8732](https://github.com/xShadow-Here/CVE-2026-8732)
+- [zycoder0day/CVE-2026-8732](https://github.com/zycoder0day/CVE-2026-8732)
 - [Jenderal92/CVE-2026-8732](https://github.com/Jenderal92/CVE-2026-8732)
 - [HORKimhab/CVE-2026-8732](https://github.com/HORKimhab/CVE-2026-8732)
 - [p3Nt3st3r-sTAr/CVE-2026-8732-POC](https://github.com/p3Nt3st3r-sTAr/CVE-2026-8732-POC)
@@ -898,6 +915,7 @@
 </code>
 
 - [yoyosh/DarkReplica](https://github.com/yoyosh/DarkReplica)
+- [HORKimhab/CVE-2026-23631](https://github.com/HORKimhab/CVE-2026-23631)
 
 ### CVE-2026-23744 (2026-01-16)
 
@@ -1210,6 +1228,12 @@
 
 - [Tharooon/CVE-2026-29971](https://github.com/Tharooon/CVE-2026-29971)
 
+### CVE-2026-30502
+- [dharmstm/CVE-2026-30502-OpenKM-6.3.12-Reflected-XSS](https://github.com/dharmstm/CVE-2026-30502-OpenKM-6.3.12-Reflected-XSS)
+
+### CVE-2026-30503
+- [dharmstm/CVE-2026-30503-OpenKM-6.3.12-Stored-XSS](https://github.com/dharmstm/CVE-2026-30503-OpenKM-6.3.12-Stored-XSS)
+
 ### CVE-2026-30690
 - [walidriouah/CVE-2026-30690](https://github.com/walidriouah/CVE-2026-30690)
 
@@ -1254,27 +1278,14 @@
 - [insomnisec/Detections-CVE-2026-31431](https://github.com/insomnisec/Detections-CVE-2026-31431)
 - [iss4cf0ng/CVE-2026-31431-Linux-Copy-Fail](https://github.com/iss4cf0ng/CVE-2026-31431-Linux-Copy-Fail)
 - [bigwario/copy-fail-CVE-2026-31431-C](https://github.com/bigwario/copy-fail-CVE-2026-31431-C)
-- [arkdev1/check-cve-2026-31431](https://github.com/arkdev1/check-cve-2026-31431)
 - [wuwu001/CVE-2026-31431-exploit](https://github.com/wuwu001/CVE-2026-31431-exploit)
 - [ryan2929/CVE-2026-31431](https://github.com/ryan2929/CVE-2026-31431)
 - [Aurillium/RootRemover](https://github.com/Aurillium/RootRemover)
 - [nisec-eric/cve-2026-31431](https://github.com/nisec-eric/cve-2026-31431)
-- [pascal-gujer/CVE-2026-31431](https://github.com/pascal-gujer/CVE-2026-31431)
-- [eleveni386/CVE-2026-31431-Golang](https://github.com/eleveni386/CVE-2026-31431-Golang)
 - [Linux-zs/cve-2026-31431-mitigation](https://github.com/Linux-zs/cve-2026-31431-mitigation)
-- [dixyes/fuck_cve_2026_31431](https://github.com/dixyes/fuck_cve_2026_31431)
-- [kadir/copy-fail-CVE-2026-31431-IOC](https://github.com/kadir/copy-fail-CVE-2026-31431-IOC)
-- [jbiniek/copy.fail-mitigation-MLM](https://github.com/jbiniek/copy.fail-mitigation-MLM)
-- [makitos666/CVE-2026-31431-Copy-Fail-Detection-Toolkit](https://github.com/makitos666/CVE-2026-31431-Copy-Fail-Detection-Toolkit)
 - [lonelyor/CVE-2026-31431-exp](https://github.com/lonelyor/CVE-2026-31431-exp)
 - [Phalanx-CCS/Copy-Fail](https://github.com/Phalanx-CCS/Copy-Fail)
-- [adampielak/CVE-2026-31431_SCA_WAZUH](https://github.com/adampielak/CVE-2026-31431_SCA_WAZUH)
-- [jiangban046-spec/CVE-2026-31431-exploit_py2_py3](https://github.com/jiangban046-spec/CVE-2026-31431-exploit_py2_py3)
-- [dorianhhuc/CVE-2026-31431](https://github.com/dorianhhuc/CVE-2026-31431)
-- [0xBlackash/CVE-2026-31431](https://github.com/0xBlackash/CVE-2026-31431)
-- [H1d3r/copy-fail_LPE_Interactive](https://github.com/H1d3r/copy-fail_LPE_Interactive)
 - [amdisrar/cve-2026-31431-mitigation](https://github.com/amdisrar/cve-2026-31431-mitigation)
-- [G01d3nW01f/CVE-2026-31431](https://github.com/G01d3nW01f/CVE-2026-31431)
 - [rio128128/copy-fail-CVE-2026-31431](https://github.com/rio128128/copy-fail-CVE-2026-31431)
 - [shadowabi/CVE-2026-31431-CopyFail-Universal-LPE](https://github.com/shadowabi/CVE-2026-31431-CopyFail-Universal-LPE)
 - [slauger/CVE-2026-31431](https://github.com/slauger/CVE-2026-31431)
@@ -1589,7 +1600,6 @@
 <code>Protection mechanism failure in Windows Shell allows an unauthorized attacker to perform spoofing over a network.
 </code>
 
-- [solarlynxsqueeze/CVE-2026-32202](https://github.com/solarlynxsqueeze/CVE-2026-32202)
 - [virus-or-not/CVE-2026-32202](https://github.com/virus-or-not/CVE-2026-32202)
 
 ### CVE-2026-32707 (2026-03-13)
@@ -1736,6 +1746,7 @@
 </code>
 
 - [rahultb-sec/CVE-2026-33829-Writeup](https://github.com/rahultb-sec/CVE-2026-33829-Writeup)
+- [tiffanykarihi23/CVE-2026-33829](https://github.com/tiffanykarihi23/CVE-2026-33829)
 
 ### CVE-2026-33937 (2026-03-27)
 
@@ -1943,13 +1954,6 @@
 
 - [totekuh/CVE-2026-36356](https://github.com/totekuh/CVE-2026-36356)
 
-### CVE-2026-36358 (2026-05-06)
-
-<code>Cross Site Scripting vulnerability in Juzaweb CMS v.5.0.0 allows a remote attacker via execute arbitrary code via a crafted script to the Add Banner Ads function
-</code>
-
-- [yuhuamiao/CVE-2026-36358](https://github.com/yuhuamiao/CVE-2026-36358)
-
 ### CVE-2026-36436
 - [vtrmK/CVE-2026-36436-Public-Reference-Pack](https://github.com/vtrmK/CVE-2026-36436-Public-Reference-Pack)
 
@@ -1975,6 +1979,9 @@
 
 ### CVE-2026-37272
 - [vytlanikhil/CVE-2026-37272](https://github.com/vytlanikhil/CVE-2026-37272)
+
+### CVE-2026-37432
+- [diao111111/CVE-2026-37432](https://github.com/diao111111/CVE-2026-37432)
 
 ### CVE-2026-37637
 - [SLO-CYBER-SEC/CVE-2026-37637](https://github.com/SLO-CYBER-SEC/CVE-2026-37637)
@@ -2237,7 +2244,6 @@
 </code>
 
 - [assetnote/cpanel2shell-scanner](https://github.com/assetnote/cpanel2shell-scanner)
-- [realawaisakbar/CVE-2026-41940-Exploit-PoC](https://github.com/realawaisakbar/CVE-2026-41940-Exploit-PoC)
 - [ilmndwntr/CVE-2026-41940-MASS-EXPLOIT](https://github.com/ilmndwntr/CVE-2026-41940-MASS-EXPLOIT)
 - [rfxn/cpanel-sessionscribe](https://github.com/rfxn/cpanel-sessionscribe)
 - [0xabdoulaye/CPANEL-CVE-2026-41940](https://github.com/0xabdoulaye/CPANEL-CVE-2026-41940)
@@ -2479,6 +2485,7 @@
 - [quantumworld-dpdns-io/CVE-2026-42945](https://github.com/quantumworld-dpdns-io/CVE-2026-42945)
 - [strivepan/Nginx_cve-2026-42945-scanner-gui](https://github.com/strivepan/Nginx_cve-2026-42945-scanner-gui)
 - [lowilol/CVE-2026-42945-NGINX-Rift-Check-Script](https://github.com/lowilol/CVE-2026-42945-NGINX-Rift-Check-Script)
+- [simota/nginx-rift-scanner](https://github.com/simota/nginx-rift-scanner)
 
 ### CVE-2026-43284 (2026-05-08)
 
@@ -2701,6 +2708,7 @@
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: reject userspace cifs.spnego descriptions\n\ncifs.spnego key descriptions contain authority-bearing fields such as\npid, uid, creduid, and upcall_target that cifs.upcall treats as\nkernel-originating inputs. However, userspace can also create keys of\nthis type through request_key(2) or add_key(2), allowing those fields to\nbe supplied without CIFS origin.\n\nOnly accept cifs.spnego descriptions while CIFS is using its private\nspnego_cred to request the key.
 </code>
 
+- [Koshmare-Blossom/CIFSwitch-go](https://github.com/Koshmare-Blossom/CIFSwitch-go)
 - [MrForkBomb/CIFSwitch-Checker-CVE-2026-46243](https://github.com/MrForkBomb/CIFSwitch-Checker-CVE-2026-46243)
 - [liamromanis101/cifswitch-check](https://github.com/liamromanis101/cifswitch-check)
 
@@ -2789,6 +2797,9 @@
 
 - [learner202649/CVE-2026-47102-PoC](https://github.com/learner202649/CVE-2026-47102-PoC)
 
+### CVE-2026-47423
+- [Galaxy-sc/CVE-2026-47423-dompurify-xss-detector](https://github.com/Galaxy-sc/CVE-2026-47423-dompurify-xss-detector)
+
 ### CVE-2026-47668
 - [Nxploited/CVE-2026-47668](https://github.com/Nxploited/CVE-2026-47668)
 
@@ -2866,6 +2877,10 @@
 
 ### CVE-2026-49975
 - [fevar54/Proof-of-Concept-POC---CVE-2026-49975-HTTP-2-Bomb-](https://github.com/fevar54/Proof-of-Concept-POC---CVE-2026-49975-HTTP-2-Bomb-)
+- [mrx-arafat/CVE-2026-49975-POC](https://github.com/mrx-arafat/CVE-2026-49975-POC)
+
+### CVE-2026-50142
+- [MuhammedHussein17/libheif-cve-2026-50142](https://github.com/MuhammedHussein17/libheif-cve-2026-50142)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -5681,7 +5696,7 @@
 
 ### CVE-2025-14018 (2025-12-22)
 
-<code>Unquoted Search Path or Element vulnerability in NetBT Consulting Services Inc. E-Fatura allows Leveraging/Manipulating Configuration File Search Paths, Redirect Access to Libraries.This issue affects e-Fatura: before 1.2.15.
+<code>Unquoted Search Path or Element vulnerability in NetBT Consulting Services Inc. E-Fatura allows Leveraging/Manipulating Configuration File Search Paths, Redirect Access to Libraries.\n\nThis issue affects e-Fatura: before 1.2.15.
 </code>
 
 - [kaleth4/CVE-2025-14018](https://github.com/kaleth4/CVE-2025-14018)
@@ -12797,6 +12812,13 @@
 - [r0otk3r/CVE-2025-63353](https://github.com/r0otk3r/CVE-2025-63353)
 - [Zvckster/CVE-2025-63353](https://github.com/Zvckster/CVE-2025-63353)
 
+### CVE-2025-63389 (2025-12-18)
+
+<code>A critical authentication bypass vulnerability exists in Ollama platform's API endpoints in versions prior to and including v0.12.3. The platform exposes multiple API endpoints without requiring authentication, enabling remote attackers to perform unauthorized model management operations.
+</code>
+
+- [nuclide-research/VisorGoose](https://github.com/nuclide-research/VisorGoose)
+
 ### CVE-2025-63406 (2025-11-13)
 
 <code>An issue in Intermesh BV GroupOffice vulnerable before v.25.0.47 and 6.8.136 allows a remote attacker to execute arbitrary code via the dbToApi() and eval() in the FunctionField.php
@@ -15018,6 +15040,7 @@
 - [kamranhasan/CVE-2024-1698-Exploit](https://github.com/kamranhasan/CVE-2024-1698-Exploit)
 - [shanglyu/CVE-2024-1698](https://github.com/shanglyu/CVE-2024-1698)
 - [jesicatjan/WordPress-NotificationX-CVE-2024-1698](https://github.com/jesicatjan/WordPress-NotificationX-CVE-2024-1698)
+- [Dhananjayasj/CVE-2024-1698-NotificationX-WordPress-Plugin-SQL-Injection-to-Admin-Credential-Extraction](https://github.com/Dhananjayasj/CVE-2024-1698-NotificationX-WordPress-Plugin-SQL-Injection-to-Admin-Credential-Extraction)
 
 ### CVE-2024-1709 (2024-02-21)
 
@@ -23838,7 +23861,6 @@
 
 - [Mitchellzhou1/CVE-2024-48910-PoC](https://github.com/Mitchellzhou1/CVE-2024-48910-PoC)
 - [Alex-Acero-Security/CVE-2024-48910-POC](https://github.com/Alex-Acero-Security/CVE-2024-48910-POC)
-- [Galaxy-sc/CVE-2024-48910-dompurify-xss-detector](https://github.com/Galaxy-sc/CVE-2024-48910-dompurify-xss-detector)
 
 ### CVE-2024-48914 (2024-10-15)
 
@@ -31304,7 +31326,6 @@
 
 - [vulncheck-oss/cve-2023-36845-scanner](https://github.com/vulncheck-oss/cve-2023-36845-scanner)
 - [kljunowsky/CVE-2023-36845](https://github.com/kljunowsky/CVE-2023-36845)
-- [toanln-cov/CVE-2023-36845](https://github.com/toanln-cov/CVE-2023-36845)
 - [halencarjunior/CVE-2023-36845](https://github.com/halencarjunior/CVE-2023-36845)
 - [zaenhaxor/CVE-2023-36845](https://github.com/zaenhaxor/CVE-2023-36845)
 - [simrotion13/CVE-2023-36845](https://github.com/simrotion13/CVE-2023-36845)
@@ -48383,7 +48404,7 @@
 - [MAFO-sec/mi-laboratorio-log4shell](https://github.com/MAFO-sec/mi-laboratorio-log4shell)
 - [felisha-elmer/Sandbox-Challenge-Log4Shell-CVE-2021-44228-](https://github.com/felisha-elmer/Sandbox-Challenge-Log4Shell-CVE-2021-44228-)
 - [jomjosh17/Log4Shell-CVE-2021-44228-](https://github.com/jomjosh17/Log4Shell-CVE-2021-44228-)
-- [C00LN3T/SpringAudit](https://github.com/C00LN3T/SpringAudit)
+- [C00LN3T/Log4ShellAuditor](https://github.com/C00LN3T/Log4ShellAuditor)
 - [bhimsekhar/vulnerable-java-app](https://github.com/bhimsekhar/vulnerable-java-app)
 
 ### CVE-2021-44255 (2022-01-31)
@@ -52963,6 +52984,7 @@
 - [arch1m3d/MiniPlasma-Detection](https://github.com/arch1m3d/MiniPlasma-Detection)
 - [AlexLinov/MiniPlasma-Runner](https://github.com/AlexLinov/MiniPlasma-Runner)
 - [mohammadzarnian1357/MiniPlasma](https://github.com/mohammadzarnian1357/MiniPlasma)
+- [rfranca777/miniplasma-advisory](https://github.com/rfranca777/miniplasma-advisory)
 
 ### CVE-2020-17136 (2020-12-09)
 
@@ -57610,6 +57632,7 @@
 </code>
 
 - [malvika-thakur/CVE-2019-14234](https://github.com/malvika-thakur/CVE-2019-14234)
+- [giuliodamico/CVE-2019-14234](https://github.com/giuliodamico/CVE-2019-14234)
 
 ### CVE-2019-14267 (2019-07-29)
 
@@ -68688,6 +68711,7 @@
 - [HevenTafese/Penetration-Testing-Walkthrough-Hacksudo-Thor](https://github.com/HevenTafese/Penetration-Testing-Walkthrough-Hacksudo-Thor)
 - [FacundoMfernandez/pentesting-obioba](https://github.com/FacundoMfernandez/pentesting-obioba)
 - [R3fr4kt/Shocker-TJNULL-OSCP-](https://github.com/R3fr4kt/Shocker-TJNULL-OSCP-)
+- [Reflyzal106/Cve-2014-Error-What-Is-The-Cve-2014-6271-Bash-Vulnerability](https://github.com/Reflyzal106/Cve-2014-Error-What-Is-The-Cve-2014-6271-Bash-Vulnerability)
 
 ### CVE-2014-6287 (2014-10-07)
 
@@ -69386,6 +69410,7 @@
 </code>
 
 - [milo2012/CVE-2013-6117](https://github.com/milo2012/CVE-2013-6117)
+- [fsn4k3/dahua-dvr-metasploit](https://github.com/fsn4k3/dahua-dvr-metasploit)
 
 ### CVE-2013-6282 (2013-11-19)
 
