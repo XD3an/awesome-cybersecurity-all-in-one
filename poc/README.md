@@ -33,7 +33,6 @@
 - [xqi1337/poc-CVE-2026-0073](https://github.com/xqi1337/poc-CVE-2026-0073)
 - [tc4dy/CVE-2026-0073-PoC-Exploit](https://github.com/tc4dy/CVE-2026-0073-PoC-Exploit)
 - [0xbinder/CVE-2026-0073](https://github.com/0xbinder/CVE-2026-0073)
-- [ridhinva/CVE-2026-0073-ADBD-Bypass](https://github.com/ridhinva/CVE-2026-0073-ADBD-Bypass)
 - [m00ddy/CVE-2026-0073-Android-client-TLS-auth-bypass](https://github.com/m00ddy/CVE-2026-0073-Android-client-TLS-auth-bypass)
 
 ### CVE-2026-0211
@@ -74,7 +73,6 @@
 - [shizuku198411/CVE-2026-0300](https://github.com/shizuku198411/CVE-2026-0300)
 - [p3Nt3st3r-sTAr/CVE-2026-0300-POC](https://github.com/p3Nt3st3r-sTAr/CVE-2026-0300-POC)
 - [lu4m575/CVE-2026-0300](https://github.com/lu4m575/CVE-2026-0300)
-- [ridhinva/CVE-2026-0300-PANOS-RCE](https://github.com/ridhinva/CVE-2026-0300-PANOS-RCE)
 
 ### CVE-2026-0596 (2026-03-31)
 
@@ -147,7 +145,6 @@
 </code>
 
 - [jakubie07/CVE-2026-1731](https://github.com/jakubie07/CVE-2026-1731)
-- [ridhinva/CVE-2026-1731-BeyondTrust-RCE](https://github.com/ridhinva/CVE-2026-1731-BeyondTrust-RCE)
 
 ### CVE-2026-1814 (2026-02-03)
 
@@ -163,6 +160,13 @@
 
 - [stvm8/CVE-2026-2005_lab](https://github.com/stvm8/CVE-2026-2005_lab)
 - [var77/CVE-2026-2005](https://github.com/var77/CVE-2026-2005)
+
+### CVE-2026-2256 (2026-03-02)
+
+<code>A command injection vulnerability in ModelScope's ms-agent versions v1.6.0rc1 and earlier exists, allowing an attacker to execute arbitrary operating system commands through crafted prompt-derived input.
+</code>
+
+- [melbratic/CVE-2026-2256-Threat-Model----ms-agent-Command-Injection](https://github.com/melbratic/CVE-2026-2256-Threat-Model----ms-agent-Command-Injection)
 
 ### CVE-2026-2291 (2026-05-11)
 
@@ -289,7 +293,6 @@
 </code>
 
 - [isagoakira/ghes-cve-scanner](https://github.com/isagoakira/ghes-cve-scanner)
-- [ridhinva/CVE-2026-3854-GHE-RCE](https://github.com/ridhinva/CVE-2026-3854-GHE-RCE)
 - [daniel30padd/CVE-2026-3854](https://github.com/daniel30padd/CVE-2026-3854)
 
 ### CVE-2026-3888 (2026-03-17)
@@ -700,7 +703,6 @@
 - [0xBlackash/CVE-2026-9082](https://github.com/0xBlackash/CVE-2026-9082)
 - [7h30th3r0n3/CVE-2026-9082-Drupal-PoC](https://github.com/7h30th3r0n3/CVE-2026-9082-Drupal-PoC)
 - [ywh-jfellus/CVE-2026-9082](https://github.com/ywh-jfellus/CVE-2026-9082)
-- [ridhinva/CVE-2026-9082](https://github.com/ridhinva/CVE-2026-9082)
 - [N45HT/drupal-cve-2026-9082-checker](https://github.com/N45HT/drupal-cve-2026-9082-checker)
 - [ambionics/cve-2026-9082-drupal-postgresql-rce](https://github.com/ambionics/cve-2026-9082-drupal-postgresql-rce)
 - [strobelpierre/CVE-2026-9082](https://github.com/strobelpierre/CVE-2026-9082)
@@ -1074,6 +1076,15 @@
 
 - [CEAarab/CVE-2026-26336-PoC](https://github.com/CEAarab/CVE-2026-26336-PoC)
 
+### CVE-2026-26897
+- [iwallplace/CVE-2026-26897-EcoOnline-DeepLink](https://github.com/iwallplace/CVE-2026-26897-EcoOnline-DeepLink)
+
+### CVE-2026-26898
+- [iwallplace/CVE-2026-26898-Xiaomi-SSRF-HostHeaderInjection](https://github.com/iwallplace/CVE-2026-26898-Xiaomi-SSRF-HostHeaderInjection)
+
+### CVE-2026-26899
+- [iwallplace/CVE-2026-26899-OpenWrt-Exploit](https://github.com/iwallplace/CVE-2026-26899-OpenWrt-Exploit)
+
 ### CVE-2026-26980 (2026-02-20)
 
 <code>Ghost is a Node.js content management system. Versions 3.24.0 through 6.19.0 allow unauthenticated attackers to perform arbitrary reads from the database. This issue has been fixed in version 6.19.1.
@@ -1143,6 +1154,13 @@
 </code>
 
 - [Nayekah/Next.js-Proof-of-Concept](https://github.com/Nayekah/Next.js-Proof-of-Concept)
+
+### CVE-2026-28990 (2026-05-11)
+
+<code>The issue was addressed with improved memory handling. This issue is fixed in iOS 26.5 and iPadOS 26.5, macOS Sequoia 15.7.7, macOS Sonoma 14.8.7, macOS Tahoe 26.5, tvOS 26.5, visionOS 26.5, watchOS 26.5. Processing a maliciously crafted image may corrupt process memory.
+</code>
+
+- [Billy-Ellis/exr-imageio-poc](https://github.com/Billy-Ellis/exr-imageio-poc)
 
 ### CVE-2026-28992 (2026-05-11)
 
@@ -1239,10 +1257,7 @@
 - [arkdev1/check-cve-2026-31431](https://github.com/arkdev1/check-cve-2026-31431)
 - [wuwu001/CVE-2026-31431-exploit](https://github.com/wuwu001/CVE-2026-31431-exploit)
 - [ryan2929/CVE-2026-31431](https://github.com/ryan2929/CVE-2026-31431)
-- [WavesMan/cve-2026-31431-fleet-remediator](https://github.com/WavesMan/cve-2026-31431-fleet-remediator)
-- [wuzuowei/copy-fail-CVE-2026-31431](https://github.com/wuzuowei/copy-fail-CVE-2026-31431)
 - [Aurillium/RootRemover](https://github.com/Aurillium/RootRemover)
-- [mrowkoob/copy-fail-mitigate-no-reboot](https://github.com/mrowkoob/copy-fail-mitigate-no-reboot)
 - [nisec-eric/cve-2026-31431](https://github.com/nisec-eric/cve-2026-31431)
 - [pascal-gujer/CVE-2026-31431](https://github.com/pascal-gujer/CVE-2026-31431)
 - [eleveni386/CVE-2026-31431-Golang](https://github.com/eleveni386/CVE-2026-31431-Golang)
@@ -1522,7 +1537,7 @@
 - [4n4s4zi/copyfail-alpine](https://github.com/4n4s4zi/copyfail-alpine)
 - [waltrone1/copyfail-safe-check](https://github.com/waltrone1/copyfail-safe-check)
 - [wh1sky02/copy-fail-python](https://github.com/wh1sky02/copy-fail-python)
-- [ridhinva/copyfail-checker](https://github.com/ridhinva/copyfail-checker)
+- [ridhinva/linux-kernel-algif-aead-checker](https://github.com/ridhinva/linux-kernel-algif-aead-checker)
 - [Iamliuxiaozhen/copy_fail](https://github.com/Iamliuxiaozhen/copy_fail)
 - [songzzzz/CVE-2026-31431](https://github.com/songzzzz/CVE-2026-31431)
 - [vishvacyber/Detection-Tool-Kit-for-CVE-2026-31431](https://github.com/vishvacyber/Detection-Tool-Kit-for-CVE-2026-31431)
@@ -1560,7 +1575,7 @@
 </code>
 
 - [Recorded-texteditor120/CVE-2026-31802](https://github.com/Recorded-texteditor120/CVE-2026-31802)
-- [ridhinva/npm-tar-traversal-scanner](https://github.com/ridhinva/npm-tar-traversal-scanner)
+- [ridhinva/npm-tar-path-traversal-scanner](https://github.com/ridhinva/npm-tar-path-traversal-scanner)
 
 ### CVE-2026-31899 (2026-03-13)
 
@@ -1880,6 +1895,9 @@
 - [HORKimhab/CVE-2026-35616](https://github.com/HORKimhab/CVE-2026-35616)
 - [jennydokumi30/CVE-2026-35616](https://github.com/jennydokumi30/CVE-2026-35616)
 
+### CVE-2026-35904
+- [PwnOnu/T3-Technology-CPE-Advisories](https://github.com/PwnOnu/T3-Technology-CPE-Advisories)
+
 ### CVE-2026-36226 (2026-05-22)
 
 <code>Cross Site Scripting vulnerability in Advantech WebAccess/SCADA 8.0-2015.08.16 allows a remote attacker to obtain sensitive information via the decryption field in the Create New Project User component
@@ -1942,7 +1960,11 @@
 
 - [kensh1k/CVE-2026-36438](https://github.com/kensh1k/CVE-2026-36438)
 
-### CVE-2026-36748
+### CVE-2026-36748 (2026-06-03)
+
+<code>RockRMS v16.13 and before v.17.7.0 is vulnerable to Cross Site Scripting (XSS) via Social Media links in user profile.
+</code>
+
 - [rufflabs/CVE-2026-36748](https://github.com/rufflabs/CVE-2026-36748)
 
 ### CVE-2026-36980
@@ -2021,7 +2043,11 @@
 
 - [Wise-Security/CVE-2026-38945](https://github.com/Wise-Security/CVE-2026-38945)
 
-### CVE-2026-39107
+### CVE-2026-39107 (2026-06-03)
+
+<code>A Cross Site Scripting vulnerability exists in the Kimi AI v1.0 web interface's 'Preview' feature. The application fails to properly sanitize or encode HTML/JavaScript payloads generated by the AI model. When a user switches to the 'Preview' tab to view AI-generated code, the malicious payload is rendered directly into the DOM, leading to arbitrary JavaScript execution in the victim's browser session.
+</code>
+
 - [MGTx2/CVE-2026-39107](https://github.com/MGTx2/CVE-2026-39107)
 
 ### CVE-2026-39292 (2026-05-29)
@@ -2148,6 +2174,7 @@
 - [sananpa/CVE-2026-41089](https://github.com/sananpa/CVE-2026-41089)
 - [hnytgl/cve-2026-41089-detector](https://github.com/hnytgl/cve-2026-41089-detector)
 - [hnytgl/CVE-2026-41089](https://github.com/hnytgl/CVE-2026-41089)
+- [ADScanPro/CVE-2026-41089-LongLogon](https://github.com/ADScanPro/CVE-2026-41089-LongLogon)
 
 ### CVE-2026-41091 (2026-05-20)
 
@@ -2155,7 +2182,7 @@
 </code>
 
 - [0xBlackash/CVE-2026-41091](https://github.com/0xBlackash/CVE-2026-41091)
-- [ridhinva/defender-vulnerability-scanner](https://github.com/ridhinva/defender-vulnerability-scanner)
+- [ridhinva/defender-privilege-escalation-scanner](https://github.com/ridhinva/defender-privilege-escalation-scanner)
 
 ### CVE-2026-41096 (2026-05-12)
 
@@ -2209,7 +2236,6 @@
 <code>cPanel and WHM versions after 11.40 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.
 </code>
 
-- [Wesuiliye/CVE-2026-41940](https://github.com/Wesuiliye/CVE-2026-41940)
 - [assetnote/cpanel2shell-scanner](https://github.com/assetnote/cpanel2shell-scanner)
 - [realawaisakbar/CVE-2026-41940-Exploit-PoC](https://github.com/realawaisakbar/CVE-2026-41940-Exploit-PoC)
 - [ilmndwntr/CVE-2026-41940-MASS-EXPLOIT](https://github.com/ilmndwntr/CVE-2026-41940-MASS-EXPLOIT)
@@ -2317,7 +2343,7 @@
 - [0xBlackash/CVE-2026-42208](https://github.com/0xBlackash/CVE-2026-42208)
 - [Zeltoc/threat-intel-brief-cve-2026-42208-litellm](https://github.com/Zeltoc/threat-intel-brief-cve-2026-42208-litellm)
 - [rootdirective-sec/cve-2026-42208-Lab](https://github.com/rootdirective-sec/cve-2026-42208-Lab)
-- [ridhinva/litellm-scanner](https://github.com/ridhinva/litellm-scanner)
+- [ridhinva/litellm-sqli-scanner](https://github.com/ridhinva/litellm-sqli-scanner)
 - [HAERIN-L/poc_cve-2026-42208](https://github.com/HAERIN-L/poc_cve-2026-42208)
 
 ### CVE-2026-42228 (2026-05-04)
@@ -2452,6 +2478,7 @@
 - [niekaicheng/CVE-2026-42945_NGINX_Rift](https://github.com/niekaicheng/CVE-2026-42945_NGINX_Rift)
 - [quantumworld-dpdns-io/CVE-2026-42945](https://github.com/quantumworld-dpdns-io/CVE-2026-42945)
 - [strivepan/Nginx_cve-2026-42945-scanner-gui](https://github.com/strivepan/Nginx_cve-2026-42945-scanner-gui)
+- [lowilol/CVE-2026-42945-NGINX-Rift-Check-Script](https://github.com/lowilol/CVE-2026-42945-NGINX-Rift-Check-Script)
 
 ### CVE-2026-43284 (2026-05-08)
 
@@ -2836,6 +2863,9 @@
 </code>
 
 - [9Bakabaka/CVE-2026-49943-PoC](https://github.com/9Bakabaka/CVE-2026-49943-PoC)
+
+### CVE-2026-49975
+- [fevar54/Proof-of-Concept-POC---CVE-2026-49975-HTTP-2-Bomb-](https://github.com/fevar54/Proof-of-Concept-POC---CVE-2026-49975-HTTP-2-Bomb-)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -8679,7 +8709,6 @@
 </code>
 
 - [amnnrth/CVE-2025-34291_cors_security_scanner](https://github.com/amnnrth/CVE-2025-34291_cors_security_scanner)
-- [ridhinva/CVE-2025-34291-Langflow-Scanner](https://github.com/ridhinva/CVE-2025-34291-Langflow-Scanner)
 
 ### CVE-2025-34299 (2025-11-07)
 
@@ -17106,7 +17135,6 @@
 </code>
 
 - [RandomRobbieBF/CVE-2024-10124](https://github.com/RandomRobbieBF/CVE-2024-10124)
-- [Nxploited/CVE-2024-10124-Poc](https://github.com/Nxploited/CVE-2024-10124-Poc)
 
 ### CVE-2024-10140 (2024-10-19)
 
@@ -17694,7 +17722,6 @@
 <code>The WP BASE Booking of Appointments, Services and Events plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the export_db function in all versions up to, and including, 4.9.2. This makes it possible for authenticated attackers, with Subscriber-level access and above, to expose sensitive information from the database, such as the hashed administrator password.
 </code>
 
-- [RandomRobbieBF/CVE-2024-12558](https://github.com/RandomRobbieBF/CVE-2024-12558)
 - [Nxploited/CVE-2024-12558-exploit](https://github.com/Nxploited/CVE-2024-12558-exploit)
 
 ### CVE-2024-12583 (2025-01-04)
@@ -21495,6 +21522,7 @@
 - [URJACK2025/CVE-2024-36401](https://github.com/URJACK2025/CVE-2024-36401)
 - [mantanhacker/CVE-2024-36401-MASS](https://github.com/mantanhacker/CVE-2024-36401-MASS)
 - [Delt-A/CVE-2024-36401-poc](https://github.com/Delt-A/CVE-2024-36401-poc)
+- [DanieleGiovanardi2408/cve-2024-36401-geoserver-rce](https://github.com/DanieleGiovanardi2408/cve-2024-36401-geoserver-rce)
 
 ### CVE-2024-36416 (2024-06-10)
 
@@ -23504,6 +23532,7 @@
 - [ramzerk/CVE-2024-46987](https://github.com/ramzerk/CVE-2024-46987)
 - [BLUEBERRYP1LL/CVE-2024-46987](https://github.com/BLUEBERRYP1LL/CVE-2024-46987)
 - [bootstrapbool/msf-cve-2024-46987](https://github.com/bootstrapbool/msf-cve-2024-46987)
+- [SuriyaBoon/HackTheBox-Facts](https://github.com/SuriyaBoon/HackTheBox-Facts)
 
 ### CVE-2024-47051 (2025-02-26)
 
@@ -23809,6 +23838,7 @@
 
 - [Mitchellzhou1/CVE-2024-48910-PoC](https://github.com/Mitchellzhou1/CVE-2024-48910-PoC)
 - [Alex-Acero-Security/CVE-2024-48910-POC](https://github.com/Alex-Acero-Security/CVE-2024-48910-POC)
+- [Galaxy-sc/CVE-2024-48910-dompurify-xss-detector](https://github.com/Galaxy-sc/CVE-2024-48910-dompurify-xss-detector)
 
 ### CVE-2024-48914 (2024-10-15)
 
@@ -23923,6 +23953,13 @@
 </code>
 
 - [Quantum-Sicarius/CVE-2024-49369](https://github.com/Quantum-Sicarius/CVE-2024-49369)
+
+### CVE-2024-49375 (2025-01-14)
+
+<code>Open source machine learning framework. A vulnerability has been identified in Rasa that enables an attacker who has the ability to load a maliciously crafted model remotely into a Rasa instance to achieve Remote Code Execution. The prerequisites for this are: 1. The HTTP API must be enabled on the Rasa instance eg with `--enable-api`. This is not the default configuration. 2. For unauthenticated RCE to be exploitable, the user must not have configured any authentication or other security controls recommended in our documentation. 3. For authenticated RCE, the attacker must posses a valid authentication token or JWT to interact with the Rasa API. This issue has been addressed in rasa version 3.6.21 and all users are advised to upgrade. Users unable to upgrade should ensure that they require authentication and that only trusted users are given access.
+</code>
+
+- [lierbushiwo/Rasa-cve-exp](https://github.com/lierbushiwo/Rasa-cve-exp)
 
 ### CVE-2024-49379 (2024-11-13)
 
@@ -25232,20 +25269,6 @@
 
 - [Nxploited/CVE-2024-56264](https://github.com/Nxploited/CVE-2024-56264)
 - [dpakmrya/CVE-2024-56264](https://github.com/dpakmrya/CVE-2024-56264)
-
-### CVE-2024-56278 (2025-01-07)
-
-<code>Improper Control of Generation of Code ('Code Injection') vulnerability in Smackcoders Inc., WP Ultimate Exporter wp-ultimate-exporter allows PHP Remote File Inclusion.This issue affects WP Ultimate Exporter: from n/a through &lt;= 2.9.1.
-</code>
-
-- [DoTTak/CVE-2024-56278](https://github.com/DoTTak/CVE-2024-56278)
-
-### CVE-2024-56289 (2025-01-07)
-
-<code>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Adrian Tobey Groundhogg groundhogg allows Reflected XSS.This issue affects Groundhogg: from n/a through &lt;= 3.7.3.3.
-</code>
-
-- [DoTTak/CVE-2024-56289](https://github.com/DoTTak/CVE-2024-56289)
 
 ### CVE-2024-56331 (2024-12-20)
 
@@ -30262,6 +30285,7 @@
 - [dev0558/CVE-2023-32784-EXPLOIT-REPORT](https://github.com/dev0558/CVE-2023-32784-EXPLOIT-REPORT)
 - [G4sp4rCS/CVE-2023-32784-password-combinator-fixer](https://github.com/G4sp4rCS/CVE-2023-32784-password-combinator-fixer)
 - [super-oof/keepass2-password-finder](https://github.com/super-oof/keepass2-password-finder)
+- [areebashoaib42/KeePass-CVE-2023-32784-Exploitation-and-Defense](https://github.com/areebashoaib42/KeePass-CVE-2023-32784-Exploitation-and-Defense)
 
 ### CVE-2023-32961 (2023-06-12)
 
@@ -42033,7 +42057,6 @@
 - [bomberfish/Mandela-Classic](https://github.com/bomberfish/Mandela-Classic)
 - [enty8080/MacDirtyCow](https://github.com/enty8080/MacDirtyCow)
 - [tdquang266/MDC](https://github.com/tdquang266/MDC)
-- [69camau/sw1tch](https://github.com/69camau/sw1tch)
 - [daviszhto/overwrite](https://github.com/daviszhto/overwrite)
 - [LumberjackStorys/CVE](https://github.com/LumberjackStorys/CVE)
 
@@ -43193,13 +43216,6 @@
 </code>
 
 - [QiuhaoLi/CVE-2021-3929-3947](https://github.com/QiuhaoLi/CVE-2021-3929-3947)
-
-### CVE-2021-3972 (2022-04-22)
-
-<code>A potential vulnerability by a driver used during manufacturing process on some consumer Lenovo Notebook devices' BIOS that was mistakenly not deactivated may allow an attacker with elevated privileges to modify secure boot setting by modifying an NVRAM variable.
-</code>
-
-- [killvxk/CVE-2021-3972](https://github.com/killvxk/CVE-2021-3972)
 
 ### CVE-2021-4034 (2022-01-28)
 
@@ -47446,6 +47462,13 @@
 ### CVE-2021-42505
 - [nyambiblaise/MedJed---Barracuda-Drive-insecure-folder-permissions-CVE-2021-42505-or-similar-Walkthrough](https://github.com/nyambiblaise/MedJed---Barracuda-Drive-insecure-folder-permissions-CVE-2021-42505-or-similar-Walkthrough)
 
+### CVE-2021-42556 (2021-10-22)
+
+<code>Rasa X before 0.42.4 allows Directory Traversal during archive extraction. In the functionality that allows a user to load a trained model archive, an attacker has arbitrary write capability within specific directories via a crafted archive file.
+</code>
+
+- [lierbushiwo/Rasa-cve-exp](https://github.com/lierbushiwo/Rasa-cve-exp)
+
 ### CVE-2021-42558 (2022-01-12)
 
 <code>An issue was discovered in CALDERA 2.8.1. It contains multiple reflected, stored, and self XSS vulnerabilities that may be exploited by authenticated and unauthenticated attackers.
@@ -48361,6 +48384,7 @@
 - [felisha-elmer/Sandbox-Challenge-Log4Shell-CVE-2021-44228-](https://github.com/felisha-elmer/Sandbox-Challenge-Log4Shell-CVE-2021-44228-)
 - [jomjosh17/Log4Shell-CVE-2021-44228-](https://github.com/jomjosh17/Log4Shell-CVE-2021-44228-)
 - [C00LN3T/SpringAudit](https://github.com/C00LN3T/SpringAudit)
+- [bhimsekhar/vulnerable-java-app](https://github.com/bhimsekhar/vulnerable-java-app)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -67365,6 +67389,7 @@
 - [cybersensei-EH/hackviser_labs_CVE-2015-3306](https://github.com/cybersensei-EH/hackviser_labs_CVE-2015-3306)
 - [netw0rk7/CVE-2015-3306-Home-Lab](https://github.com/netw0rk7/CVE-2015-3306-Home-Lab)
 - [canpilayda/proftpd-mod_copy-cve-2015-3306](https://github.com/canpilayda/proftpd-mod_copy-cve-2015-3306)
+- [bcononugbor-source/OpenVAS-Vulnerability-Analysis-Incident-Response-Report](https://github.com/bcononugbor-source/OpenVAS-Vulnerability-Analysis-Incident-Response-Report)
 
 ### CVE-2015-3337 (2015-05-01)
 
@@ -69725,6 +69750,13 @@
 </code>
 
 - [bongbongco/CVE-2012-6066](https://github.com/bongbongco/CVE-2012-6066)
+
+### CVE-2012-6422 (2012-12-18)
+
+<code>The kernel in Samsung Galaxy S2, Galaxy Note 2, MEIZU MX, and possibly other Android devices, when running an Exynos 4210 or 4412 processor, uses weak permissions (0666) for /dev/exynos-mem, which allows attackers to read or write arbitrary physical memory and gain privileges via a crafted application, as demonstrated by ExynosAbuse.
+</code>
+
+- [wired0ut/CVE-2012-6422](https://github.com/wired0ut/CVE-2012-6422)
 
 ### CVE-2012-6636 (2014-03-03)
 
