@@ -147,6 +147,13 @@
 
 - [horrister/beyondtrust-cve-2026-1232](https://github.com/horrister/beyondtrust-cve-2026-1232)
 
+### CVE-2026-1238 (2026-03-19)
+
+<code>The SlimStat Analytics plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'fh' (fingerprint) parameter in all versions up to, and including, 5.3.5 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+</code>
+
+- [mrk336/Breaking-AWS-IAM-Privilege-Escalation-via-Mis-Evaluated-Policy-Conditions-CVE-2026-1238-](https://github.com/mrk336/Breaking-AWS-IAM-Privilege-Escalation-via-Mis-Evaluated-Policy-Conditions-CVE-2026-1238-)
+
 ### CVE-2026-1731 (2026-02-06)
 
 <code>BeyondTrust Remote Support (RS) and certain older versions of Privileged Remote Access (PRA) contain a critical pre-authentication remote code execution vulnerability. By sending specially crafted requests, an unauthenticated remote attacker may be able to execute operating system commands in the context of the site user.
@@ -271,6 +278,7 @@
 </code>
 
 - [HORKimhab/CVE-2026-3300](https://github.com/HORKimhab/CVE-2026-3300)
+- [adamshaikhma/CVE-2026-3300](https://github.com/adamshaikhma/CVE-2026-3300)
 
 ### CVE-2026-3494 (2026-03-03)
 
@@ -785,6 +793,7 @@
 - [W5M1n9/NGINX-ngx_http_rewrite_module-heap-buffer-overflow-CVE-2026-9256](https://github.com/W5M1n9/NGINX-ngx_http_rewrite_module-heap-buffer-overflow-CVE-2026-9256)
 - [3nou9h/CVE-2026-9256-Poc](https://github.com/3nou9h/CVE-2026-9256-Poc)
 - [06-ux/CVE-2026-9256-POC](https://github.com/06-ux/CVE-2026-9256-POC)
+- [y198nt/Nginx-chain-Rift-Poolslip](https://github.com/y198nt/Nginx-chain-Rift-Poolslip)
 
 ### CVE-2026-9560 (2026-05-26)
 
@@ -842,7 +851,11 @@
 
 - [Xmyronn/CVE-2026-10290-SQLI](https://github.com/Xmyronn/CVE-2026-10290-SQLI)
 
-### CVE-2026-11344
+### CVE-2026-11344 (2026-06-05)
+
+<code>A vulnerability was found in code-projects Vehicle Management System 1.0. This impacts an unknown function of the file newdriver.php of the component New Driver Registration Form. Performing a manipulation of the argument photo results in unrestricted upload. The attack may be initiated remotely. The exploit has been made public and could be used.
+</code>
+
 - [Xmyronn/CVE-2026-11344-RCE](https://github.com/Xmyronn/CVE-2026-11344-RCE)
 
 ### CVE-2026-20131 (2026-03-04)
@@ -1138,6 +1151,9 @@
 
 - [Samres27/CVE-2026-25769---CVE-2026-25770](https://github.com/Samres27/CVE-2026-25769---CVE-2026-25770)
 
+### CVE-2026-25860
+- [partywavesec/CVE-2026-25860](https://github.com/partywavesec/CVE-2026-25860)
+
 ### CVE-2026-25895 (2026-02-09)
 
 <code>FUXA is a web-based Process Visualization (SCADA/HMI/Dashboard) software. A path traversal vulnerability in FUXA allows an unauthenticated, remote attacker to write arbitrary files to arbitrary locations on the server filesystem. This affects FUXA through version 1.2.9. This issue has been patched in FUXA version 1.2.10.
@@ -1363,6 +1379,13 @@
 
 - [unicorn-hyh/CVE-2026-31156](https://github.com/unicorn-hyh/CVE-2026-31156)
 
+### CVE-2026-31266 (2026-05-27)
+
+<code>Craft CMS 5.9.5 and earlier contains a Missing Authorization vulnerability in the migrate endpoint (/actions/app/migrate).
+</code>
+
+- [0xrixet/Craftcms-PoC-CVE-2026-31266](https://github.com/0xrixet/Craftcms-PoC-CVE-2026-31266)
+
 ### CVE-2026-31341
 - [Sc2-Ciberdefensa/cve-2026-31341-copy-fail-checker](https://github.com/Sc2-Ciberdefensa/cve-2026-31341-copy-fail-checker)
 
@@ -1383,7 +1406,6 @@
 - [nisec-eric/cve-2026-31431](https://github.com/nisec-eric/cve-2026-31431)
 - [lonelyor/CVE-2026-31431-exp](https://github.com/lonelyor/CVE-2026-31431-exp)
 - [Phalanx-CCS/Copy-Fail](https://github.com/Phalanx-CCS/Copy-Fail)
-- [amdisrar/cve-2026-31431-mitigation](https://github.com/amdisrar/cve-2026-31431-mitigation)
 - [shadowabi/CVE-2026-31431-CopyFail-Universal-LPE](https://github.com/shadowabi/CVE-2026-31431-CopyFail-Universal-LPE)
 - [Webhosting4U/Copy-Fail_Detect_and_mitigate_CVE-2026-31431](https://github.com/Webhosting4U/Copy-Fail_Detect_and_mitigate_CVE-2026-31431)
 - [Percivalll/Copy-Fail-CVE-2026-31431-Kubernetes-PoC](https://github.com/Percivalll/Copy-Fail-CVE-2026-31431-Kubernetes-PoC)
@@ -1397,19 +1419,13 @@
 - [mhdgning131/CopyFail-Patcher](https://github.com/mhdgning131/CopyFail-Patcher)
 - [Xerxes-2/CVE-2026-31431-rs](https://github.com/Xerxes-2/CVE-2026-31431-rs)
 - [SeanRickerd/cve-2026-31431](https://github.com/SeanRickerd/cve-2026-31431)
-- [Dabbleam/CVE-2026-31431-mitigation](https://github.com/Dabbleam/CVE-2026-31431-mitigation)
 - [selectel/mks-copy-fail-mitigation](https://github.com/selectel/mks-copy-fail-mitigation)
 - [devstuff/harden-docker-seccomp](https://github.com/devstuff/harden-docker-seccomp)
 - [yuspring/cve-2026-31431-poc](https://github.com/yuspring/cve-2026-31431-poc)
-- [mishl-dev/CVE_2026_31431](https://github.com/mishl-dev/CVE_2026_31431)
 - [Juguitos/copy-fail](https://github.com/Juguitos/copy-fail)
-- [DENNISDGR/CVE-2026-31431-poc](https://github.com/DENNISDGR/CVE-2026-31431-poc)
 - [liamromanis101/CVE-2026-31431-Copy-Fail---Vulnerability-Detection-Script](https://github.com/liamromanis101/CVE-2026-31431-Copy-Fail---Vulnerability-Detection-Script)
 - [mym0us3r/COPY-FAIL-Detection-with-Wazuh-4.14.4](https://github.com/mym0us3r/COPY-FAIL-Detection-with-Wazuh-4.14.4)
-- [B1gN0Se/copy-fail-CVE-2026-31431](https://github.com/B1gN0Se/copy-fail-CVE-2026-31431)
 - [maniakh/CVE-2026-31431---Copy-Fail-PoC](https://github.com/maniakh/CVE-2026-31431---Copy-Fail-PoC)
-- [meowteusz/copyfailautopatch](https://github.com/meowteusz/copyfailautopatch)
-- [effiesec/copy-fail-cve-2026-31431](https://github.com/effiesec/copy-fail-cve-2026-31431)
 - [offsecguy/CVE-2026-31431](https://github.com/offsecguy/CVE-2026-31431)
 - [poyea/CVE-2026-31431.c](https://github.com/poyea/CVE-2026-31431.c)
 - [wvverez/CVE-2026-31431-Copy-Fail](https://github.com/wvverez/CVE-2026-31431-Copy-Fail)
@@ -1838,6 +1854,7 @@
 
 - [rahultb-sec/CVE-2026-33829-Writeup](https://github.com/rahultb-sec/CVE-2026-33829-Writeup)
 - [tiffanykarihi23/CVE-2026-33829](https://github.com/tiffanykarihi23/CVE-2026-33829)
+- [seguridadentrerios/CVE-2026-33829](https://github.com/seguridadentrerios/CVE-2026-33829)
 
 ### CVE-2026-33937 (2026-03-27)
 
@@ -1926,6 +1943,13 @@
 </code>
 
 - [Dhiaelhak-Rached/CVE-2026-34753](https://github.com/Dhiaelhak-Rached/CVE-2026-34753)
+
+### CVE-2026-34908 (2026-05-22)
+
+<code>A malicious actor with access to the network could exploit an Improper Access Control vulnerability found in UniFi OS devices to make unauthorized changes to the system.
+</code>
+
+- [BishopFox/CVE-2026-34908-check](https://github.com/BishopFox/CVE-2026-34908-check)
 
 ### CVE-2026-34926 (2026-05-21)
 
@@ -2347,9 +2371,6 @@
 
 - [assetnote/cpanel2shell-scanner](https://github.com/assetnote/cpanel2shell-scanner)
 - [rfxn/cpanel-sessionscribe](https://github.com/rfxn/cpanel-sessionscribe)
-- [shahidmallaofficial/cpanel-cve-2026-41940-fix](https://github.com/shahidmallaofficial/cpanel-cve-2026-41940-fix)
-- [Andrei-Dr/cpanel-cve-2026-41940-ioc](https://github.com/Andrei-Dr/cpanel-cve-2026-41940-ioc)
-- [zedxod/CVE-2026-41940-POC](https://github.com/zedxod/CVE-2026-41940-POC)
 - [george1-adel/CVE-2026-41940_exploit](https://github.com/george1-adel/CVE-2026-41940_exploit)
 - [senyx122/CVE-2026-41940](https://github.com/senyx122/CVE-2026-41940)
 - [merdw/cPanel-CVE-2026-41940-Scanner](https://github.com/merdw/cPanel-CVE-2026-41940-Scanner)
@@ -2402,6 +2423,7 @@
 - [xxconi/CVE-2026-41940](https://github.com/xxconi/CVE-2026-41940)
 - [sardine-web/Automated-scanner-CVE-2026-41940](https://github.com/sardine-web/Automated-scanner-CVE-2026-41940)
 - [willygailo/CVE-2026-41940-Linux](https://github.com/willygailo/CVE-2026-41940-Linux)
+- [olofsatte/CVE-2026-41940-PoC](https://github.com/olofsatte/CVE-2026-41940-PoC)
 - [yurahshell/CVE-2026-41940](https://github.com/yurahshell/CVE-2026-41940)
 
 ### CVE-2026-42048 (2026-05-12)
@@ -2723,6 +2745,13 @@
 
 - [CryingN/CVE-2026-44656](https://github.com/CryingN/CVE-2026-44656)
 
+### CVE-2026-44706 (2026-05-26)
+
+<code>Chatwoot is a customer engagement suite. From 2.2.0 to before 4.11.2, a SQL injection vulnerability exists in the conversation and contact filter APIs. When filtering by a custom attribute of type date or number using the is_greater_than or is_less_than operators, user-supplied values in the values field of the filter payload are interpolated directly into the SQL query without parameterization. Any authenticated user with access to an account can exploit this to execute arbitrary SQL via time-based blind injection. This affects /api/v1/accounts/{account_id}/conversations/filter, /api/v1/accounts/{account_id}/contacts/filter, and /api/v1/accounts/{account_id}/custom_attribute_definitions. This vulnerability is fixed in 4.11.2.
+</code>
+
+- [hakaioffsec/CVE-2026-44706](https://github.com/hakaioffsec/CVE-2026-44706)
+
 ### CVE-2026-45091 (2026-05-12)
 
 <code>sealed-env is a cross-stack, zero-trust secret management library for Node.js and Java/Spring Boot. In sealed-env enterprise mode, versions 0.1.0-alpha.1 through 0.1.0-alpha.3 embedded the operator's literal TOTP secret in the JWS payload of every minted unseal token. JWS payload is base64-encoded JSON, NOT encrypted. Any party who could observe a minted token (CI build logs, container env dumps, kubectl describe pod, Sentry/Rollbar stack traces, log aggregators) could decode the payload and extract the TOTP secret in plaintext. This vulnerability is fixed in 0.1.0-alpha.4.
@@ -2864,7 +2893,11 @@
 
 - [portbuster1337/CVE-2026-46376](https://github.com/portbuster1337/CVE-2026-46376)
 
-### CVE-2026-46391
+### CVE-2026-46391 (2026-06-05)
+
+<code>HAX CMS helps manage microsite universe with PHP or NodeJs backends. Starting in version 9.0.1 and prior to version 26.0.0 of @haxtheweb/open-apis, multiple functions conduct substring-only matching to validate hostnames to which basic authorization should be sent. An attacker can append the matched substrings to an attacker-controlled endpoint and capture authentication. Version 26.0.0 fixes the issue.
+</code>
+
 - [bradyjmcl/cve-2026-46391](https://github.com/bradyjmcl/cve-2026-46391)
 
 ### CVE-2026-46529
@@ -2923,7 +2956,11 @@
 ### CVE-2026-48030
 - [muslimbek-0x/CVE-2026-48030](https://github.com/muslimbek-0x/CVE-2026-48030)
 
-### CVE-2026-48095
+### CVE-2026-48095 (2026-06-05)
+
+<code>7-Zip is a file archiver with a high compression ratio. Versions 26.00 and prior contain a heap buffer overflow vulnerability caused by an under-allocation in the NTFS compressed stream buffer (GetCuSize shift UB), potentially allowing attackers to cause arbitrary code execution or application crashes. CInStream::GetCuSize() in the NTFS handler computes the compression-unit buffer size as (UInt32)1 &lt;&lt; (BlockSizeLog + CompressionUnit), and a crafted image with ClusterSizeLog &gt;= 28 and CompressionUnit == 4 drives the exponent to 32, which is undefined behavior and collapses on x86/x64 so _inBuf is allocated as 1 byte. ReadStream_FALSE then writes up to 256 MB of attacker-controlled data into that 1-byte buffer in 64 KB iterations, and because the CInStream object sits only 304 bytes after _inBuf, its vtable pointer is overwritten and the next dispatched call achieves a vtable hijack. On 32-bit builds the overflow is unconditionally reached; on 64-bit it requires the parallel 8 GB _outBuf allocation to succeed, otherwise failing closed to denial of service. The NTFS handler is enabled by default in stock 7z.dll and, via signature-based fallback matching &quot;NTFS    &quot; at offset 3, will open a crafted image regardless of file extension during extraction or testing. Version 26.01 fixes the issue.
+</code>
+
 - [HORKimhab/CVE-2026-48095](https://github.com/HORKimhab/CVE-2026-48095)
 
 ### CVE-2026-48172 (2026-05-21)
@@ -2970,6 +3007,13 @@
 
 ### CVE-2026-48813
 - [7alen7/CVE-2026-48813-POC](https://github.com/7alen7/CVE-2026-48813-POC)
+
+### CVE-2026-48866 (2026-06-01)
+
+<code>Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Rocketgenius Inc. Gravity Forms allows Path Traversal.\n\nThis issue affects Gravity Forms: from n/a through 2.10.0.1.
+</code>
+
+- [0xABCD01/CVE-2026-48866](https://github.com/0xABCD01/CVE-2026-48866)
 
 ### CVE-2026-49009 (2026-05-27)
 
@@ -4035,14 +4079,14 @@
 
 ### CVE-2025-4686 (2026-01-30)
 
-<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Kodmatic Computer Software Tourism Construction Industry and Trade Ltd. Co. Online Exam and Assessment allows SQL Injection.This issue affects Online Exam and Assessment: through 30012026. \n\nNOTE: The vendor was contacted early about this disclosure but did not respond in any way.
+<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Kodmatic Computer Software Tourism Construction Industry and Trade Ltd. Co. Online Exam and Assessment allows SQL Injection.\n\nThis issue affects Online Exam and Assessment: through 30012026. \n\nNOTE: The vendor was contacted early about this disclosure but did not respond in any way.
 </code>
 
 - [sahici/CVE-2025-4686](https://github.com/sahici/CVE-2025-4686)
 
 ### CVE-2025-4688 (2025-09-16)
 
-<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in BGS Interactive SINAV.LINK Exam Result Module allows SQL Injection.This issue affects SINAV.LINK Exam Result Module: before 1.2.
+<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in BGS Interactive SINAV.LINK Exam Result Module allows SQL Injection.\n\nThis issue affects SINAV.LINK Exam Result Module: before 1.2.
 </code>
 
 - [sahici/CVE-2025-4688](https://github.com/sahici/CVE-2025-4688)
@@ -4056,7 +4100,7 @@
 
 ### CVE-2025-4784 (2025-07-24)
 
-<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Moderec Tourtella allows SQL Injection.This issue affects Tourtella: before 26.05.2025.
+<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Moderec Tourtella allows SQL Injection.\n\nThis issue affects Tourtella: before 26.05.2025.
 </code>
 
 - [sahici/CVE-2025-4784](https://github.com/sahici/CVE-2025-4784)
@@ -4077,7 +4121,7 @@
 
 ### CVE-2025-4822 (2025-07-24)
 
-<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Bayraktar Solar Energies ScadaWatt Otopilot allows SQL Injection.This issue affects ScadaWatt Otopilot: before 27.05.2025.
+<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Bayraktar Solar Energies ScadaWatt Otopilot allows SQL Injection.\n\nThis issue affects ScadaWatt Otopilot: before 27.05.2025.
 </code>
 
 - [sahici/CVE-2025-4822](https://github.com/sahici/CVE-2025-4822)
@@ -4178,14 +4222,14 @@
 
 ### CVE-2025-5319 (2026-02-03)
 
-<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Emit Informatics and Communication Technologies Industry and Trade Ltd. Co. DIGITA Efficiency Management System allows SQL Injection.This issue affects DIGITA Efficiency Management System: through 03022026. \nNOTE: The vendor was contacted early about this disclosure but did not respond in any way.
+<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Emit Informatics and Communication Technologies Industry and Trade Ltd. Co. DIGITA Efficiency Management System allows SQL Injection.\n\nThis issue affects DIGITA Efficiency Management System: through 03022026. \nNOTE: The vendor was contacted early about this disclosure but did not respond in any way.
 </code>
 
 - [sahici/CVE-2025-5319](https://github.com/sahici/CVE-2025-5319)
 
 ### CVE-2025-5329 (2026-02-04)
 
-<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Martcode Software Inc. Delta Course Automation allows SQL Injection.This issue affects Delta Course Automation: through 04022026.\n\nNOTE: The vendor was contacted early about this disclosure but did not respond in any way.
+<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Martcode Software Inc. Delta Course Automation allows SQL Injection.\n\nThis issue affects Delta Course Automation: through 04022026.\n\nNOTE: The vendor was contacted early about this disclosure but did not respond in any way.
 </code>
 
 - [sahici/CVE-2025-5329](https://github.com/sahici/CVE-2025-5329)
@@ -5049,13 +5093,6 @@
 </code>
 
 - [MooseLoveti/Trinity-Audio-CVE-Report](https://github.com/MooseLoveti/Trinity-Audio-CVE-Report)
-
-### CVE-2025-9209 (2025-10-03)
-
-<code>The RestroPress – Online Food Ordering System plugin for WordPress is vulnerable to Authentication Bypass in versions 3.0.0 to 3.1.9.2. This is due to the plugin exposing user private tokens and API data via the /wp-json/wp/v2/users REST API endpoint. This makes it possible for unauthenticated attackers to forge JWT tokens for other users, including administrators, and authenticate as them.
-</code>
-
-- [Nxploited/CVE-2025-9209](https://github.com/Nxploited/CVE-2025-9209)
 
 ### CVE-2025-9215 (2025-09-17)
 
@@ -8487,7 +8524,6 @@
 - [Know56/CVE-2025-32433](https://github.com/Know56/CVE-2025-32433)
 - [abrewer251/CVE-2025-32433_Erlang-OTP_PoC](https://github.com/abrewer251/CVE-2025-32433_Erlang-OTP_PoC)
 - [ODST-Forge/CVE-2025-32433_PoC](https://github.com/ODST-Forge/CVE-2025-32433_PoC)
-- [C9b3rD3vi1/Erlang-OTP-SSH-CVE-2025-32433](https://github.com/C9b3rD3vi1/Erlang-OTP-SSH-CVE-2025-32433)
 - [bilalz5-github/Erlang-OTP-SSH-CVE-2025-32433](https://github.com/bilalz5-github/Erlang-OTP-SSH-CVE-2025-32433)
 - [vigilante-1337/CVE-2025-32433](https://github.com/vigilante-1337/CVE-2025-32433)
 - [NiteeshPujari/CVE-2025-32433-PoC](https://github.com/NiteeshPujari/CVE-2025-32433-PoC)
@@ -10134,6 +10170,9 @@
 - [ammarm0010/CVE-2025-49144_PoC](https://github.com/ammarm0010/CVE-2025-49144_PoC)
 - [havertz2110/CVE-2025-49144-PoC](https://github.com/havertz2110/CVE-2025-49144-PoC)
 
+### CVE-2025-49173
+- [aliyabuz25/cve-2025-49173-macos-mavericks-10.9-local-root-privesc-auth-services](https://github.com/aliyabuz25/cve-2025-49173-macos-mavericks-10.9-local-root-privesc-auth-services)
+
 ### CVE-2025-49223 (2025-06-04)
 
 <code>billboard.js before 3.15.1 was discovered to contain a prototype pollution via the function generate, which could allow attackers to execute arbitrary code or cause a Denial of Service (DoS) via injecting arbitrary properties.
@@ -11740,6 +11779,7 @@
 - [hakkuri01/r2rs](https://github.com/hakkuri01/r2rs)
 - [tanvirahmedcs/CVE-2025-55182](https://github.com/tanvirahmedcs/CVE-2025-55182)
 - [yurahshell/CVE-2025-55182](https://github.com/yurahshell/CVE-2025-55182)
+- [rvzsec/react2shell](https://github.com/rvzsec/react2shell)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -12887,6 +12927,13 @@
 </code>
 
 - [Al-Lord0x/CVE-2025-62641](https://github.com/Al-Lord0x/CVE-2025-62641)
+
+### CVE-2025-62676 (2026-02-10)
+
+<code>An Improper Link Resolution Before File Access ('Link Following') vulnerability [CWE-59] vulnerability in Fortinet FortiClientWindows 7.4.0 through 7.4.4, FortiClientWindows 7.2.0 through 7.2.12, FortiClientWindows 7.0 all versions may allow a local low-privilege attacker to perform an arbitrary file write with elevated permissions via crafted named pipe messages.
+</code>
+
+- [SpacePlant/FortiLPE](https://github.com/SpacePlant/FortiLPE)
 
 ### CVE-2025-62726 (2025-10-30)
 
@@ -18204,6 +18251,7 @@
 - [k4it0k1d/CVE-2024-21182](https://github.com/k4it0k1d/CVE-2024-21182)
 - [kursadalsan/CVE-2024-21182](https://github.com/kursadalsan/CVE-2024-21182)
 - [dinosn/CVE-2024-21182](https://github.com/dinosn/CVE-2024-21182)
+- [johnniebozura31/CVE-2024-21182](https://github.com/johnniebozura31/CVE-2024-21182)
 
 ### CVE-2024-21262 (2024-10-15)
 
@@ -18575,6 +18623,7 @@
 - [W01fh4cker/CVE-2024-22120-RCE](https://github.com/W01fh4cker/CVE-2024-22120-RCE)
 - [isPique/CVE-2024-22120-RCE-with-gopher](https://github.com/isPique/CVE-2024-22120-RCE-with-gopher)
 - [g4nkd/CVE-2024-22120-RCE-with-gopher](https://github.com/g4nkd/CVE-2024-22120-RCE-with-gopher)
+- [darkbytehunter/CVE-2024-22120-RCE-with-gopher](https://github.com/darkbytehunter/CVE-2024-22120-RCE-with-gopher)
 
 ### CVE-2024-22127 (2024-03-12)
 
@@ -19692,7 +19741,6 @@
 - [leo-mitch/CVE-2024-25641-RCE-Automated-Exploit-Cacti-1.2.26](https://github.com/leo-mitch/CVE-2024-25641-RCE-Automated-Exploit-Cacti-1.2.26)
 - [Safarchand/CVE-2024-25641](https://github.com/Safarchand/CVE-2024-25641)
 - [StopThatTalace/CVE-2024-25641-CACTI-RCE-1.2.26](https://github.com/StopThatTalace/CVE-2024-25641-CACTI-RCE-1.2.26)
-- [D3Ext/CVE-2024-25641](https://github.com/D3Ext/CVE-2024-25641)
 - [regantemudo/CVE-2024-25641-Exploit-for-Cacti-1.2.26](https://github.com/regantemudo/CVE-2024-25641-Exploit-for-Cacti-1.2.26)
 - [GabrielCF10/CVE-2024-25641---Cacti](https://github.com/GabrielCF10/CVE-2024-25641---Cacti)
 
@@ -21203,6 +21251,7 @@
 </code>
 
 - [Akira07210/Exploit-CVE-2024-34070](https://github.com/Akira07210/Exploit-CVE-2024-34070)
+- [Okymi-X/CVE-2024-34070](https://github.com/Okymi-X/CVE-2024-34070)
 
 ### CVE-2024-34102 (2024-06-13)
 
@@ -24051,7 +24100,6 @@
 <code>Windows Lightweight Directory Access Protocol (LDAP) Denial of Service Vulnerability
 </code>
 
-- [Sachinart/CVE-2024-49113-Checker](https://github.com/Sachinart/CVE-2024-49113-Checker)
 - [0xMetr0/metasploit-ldapnightmare](https://github.com/0xMetr0/metasploit-ldapnightmare)
 - [alphatin123/CVE-2024-49113](https://github.com/alphatin123/CVE-2024-49113)
 
@@ -25462,13 +25510,6 @@
 </code>
 
 - [JonnyWhatshisface/CVE-2024-56433](https://github.com/JonnyWhatshisface/CVE-2024-56433)
-
-### CVE-2024-56512 (2024-12-28)
-
-<code>Apache NiFi 1.10.0 through 2.0.0 are missing fine-grained authorization checking for Parameter Contexts, referenced Controller Services, and referenced Parameter Providers, when creating new Process Groups.\n\nCreating a new Process Group can include binding to a Parameter Context, but in cases where the Process Group did not reference any Parameter values, the framework did not check user authorization for the bound Parameter Context. Missing authorization for a bound Parameter Context enabled clients to download non-sensitive Parameter values after creating the Process Group.\n\nCreating a new Process Group can also include referencing existing Controller Services or Parameter Providers. The framework did not check user authorization for referenced Controller Services or Parameter Providers, enabling clients to create Process Groups and use these components that were otherwise unauthorized.\n\nThis vulnerability is limited in scope to authenticated users authorized to create Process Groups. The scope is further limited to deployments with component-based authorization policies. Upgrading to Apache NiFi 2.1.0 is the recommended mitigation, which includes authorization checking for Parameter and Controller Service references on Process Group creation.
-</code>
-
-- [absholi7ly/CVE-2024-56512-Apache-NiFi-Exploit](https://github.com/absholi7ly/CVE-2024-56512-Apache-NiFi-Exploit)
 
 ### CVE-2024-56800 (2024-12-30)
 
@@ -30233,8 +30274,8 @@
 - [oferchen/POC-CVE-2023-32233](https://github.com/oferchen/POC-CVE-2023-32233)
 - [RogelioPumajulca/TEST-CVE-2023-32233](https://github.com/RogelioPumajulca/TEST-CVE-2023-32233)
 - [void0red/CVE-2023-32233](https://github.com/void0red/CVE-2023-32233)
-- [NiranjMahaswar/gemini-2.5-pro-nf-tables-red-teaming](https://github.com/NiranjMahaswar/gemini-2.5-pro-nf-tables-red-teaming)
-- [NiranjMahaswar/gemini-2.5-pro-nf-tables-red-teamin](https://github.com/NiranjMahaswar/gemini-2.5-pro-nf-tables-red-teamin)
+- [Destawell/gemini-2.5-pro-nf-tables-red-teaming](https://github.com/Destawell/gemini-2.5-pro-nf-tables-red-teaming)
+- [Destawell/gemini-2.5-pro-nf-tables-red-teamin](https://github.com/Destawell/gemini-2.5-pro-nf-tables-red-teamin)
 
 ### CVE-2023-32235 (2023-05-05)
 
@@ -70080,7 +70121,6 @@
 - [tkisason/KillApachePy](https://github.com/tkisason/KillApachePy)
 - [stcmjp/cve-2011-3192](https://github.com/stcmjp/cve-2011-3192)
 - [futurezayka/CVE-2011-3192](https://github.com/futurezayka/CVE-2011-3192)
-- [Karma4488/cve-2011-3192](https://github.com/Karma4488/cve-2011-3192)
 
 ### CVE-2011-3368 (2011-10-05)
 
@@ -70254,6 +70294,7 @@
 - [JoseLRC97/UnrealIRCd-3.2.8.1-Backdoor-Command-Execution](https://github.com/JoseLRC97/UnrealIRCd-3.2.8.1-Backdoor-Command-Execution)
 - [earthbendergara/unrealircd3.2.8.1-local-exploit](https://github.com/earthbendergara/unrealircd3.2.8.1-local-exploit)
 - [Tc-XoNoR/CVE-2010-2075](https://github.com/Tc-XoNoR/CVE-2010-2075)
+- [mishaqdev/cve-2010-2075-analysis](https://github.com/mishaqdev/cve-2010-2075-analysis)
 
 ### CVE-2010-2333 (2010-06-18)
 
