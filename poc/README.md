@@ -11,13 +11,6 @@
 
 - [inforcqb/cve-2026-0013-exploit](https://github.com/inforcqb/cve-2026-0013-exploit)
 
-### CVE-2026-0047 (2026-03-02)
-
-<code>In dumpBitmapsProto of ActivityManagerService.java, there is a possible way for an app to access private information due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
-</code>
-
-- [mobilehackinglab/CVE-2026-0047-poc](https://github.com/mobilehackinglab/CVE-2026-0047-poc)
-
 ### CVE-2026-0073 (2026-05-04)
 
 <code>In adbd_tls_verify_cert of auth.cpp, there is a possible bypass of wireless ADB mutual authentication due to a logic error in the code. This could lead to remote (proximal/adjacent) code execution as the shell user with no additional execution privileges needed. User interaction is not needed for exploitation.
@@ -852,6 +845,13 @@
 
 - [Xmyronn/CVE-2026-10290-SQLI](https://github.com/Xmyronn/CVE-2026-10290-SQLI)
 
+### CVE-2026-10580 (2026-06-05)
+
+<code>The Hippoo Mobile App for WooCommerce plugin for WordPress is vulnerable to Authentication Bypass leading to Administrator Account Takeover in all versions up to and including 1.9.4. This is due to a logic conflation in HippooPermissions::get_user_permissions(), which returns the same null sentinel for both administrators and unauthenticated visitors — a value that HippooPermissions::has_role_access() unconditionally interprets as full administrator access — causing override_extension_permission_callback() to assign __return_true as the permission callback for every WordPress and WooCommerce REST route cloned under /wc-hippoo/v1/ext/ by HippooControllerWithAuth::re_register_external_routes(), while the block_unauthorized_access() pre-dispatch guard fails to block unauthenticated users for the same reason. This makes it possible for unauthenticated attackers to invoke any core REST endpoint without credentials — most critically, sending a POST request to /wc-hippoo/v1/ext/wp/v2/users/&lt;id&gt; with a {&quot;password&quot;:&quot;&lt;new_password&gt;&quot;} body to reset the password of any WordPress user, including the site administrator, and gain full administrative control of the site.
+</code>
+
+- [O99099O/By-Poloss..-..CVE-2026-10580](https://github.com/O99099O/By-Poloss..-..CVE-2026-10580)
+
 ### CVE-2026-11344 (2026-06-05)
 
 <code>A vulnerability was found in code-projects Vehicle Management System 1.0. This impacts an unknown function of the file newdriver.php of the component New Driver Registration Form. Performing a manipulation of the argument photo results in unrestricted upload. The attack may be initiated remotely. The exploit has been made public and could be used.
@@ -1295,12 +1295,12 @@
 - [jake-young-dev/CVE-2026-27944](https://github.com/jake-young-dev/CVE-2026-27944)
 - [karimelsheikh1/HTB-Snapped-Writeup](https://github.com/karimelsheikh1/HTB-Snapped-Writeup)
 
-### CVE-2026-27978 (2026-03-17)
+### CVE-2026-28318 (2026-06-04)
 
-<code>Next.js is a React framework for building full-stack web applications. Starting in version 16.0.1 and prior to version 16.1.7, `origin: null` was treated as a &quot;missing&quot; origin during Server Action CSRF validation. As a result, requests from opaque contexts (such as sandboxed iframes) could bypass origin verification instead of being validated as cross-origin requests. An attacker could induce a victim browser to submit Server Actions from a sandboxed context, potentially executing state-changing actions with victim credentials (CSRF). This is fixed in version 16.1.7 by treating `'null'` as an explicit origin value and enforcing host/origin checks unless `'null'` is explicitly allowlisted in `experimental.serverActions.allowedOrigins`. If upgrading is not immediately possible, add CSRF tokens for sensitive Server Actions, prefer `SameSite=Strict` on sensitive auth cookies, and/or do not allow `'null'` in `serverActions.allowedOrigins` unless intentionally required and additionally protected.
+<code>SolarWinds Serv-U is susceptible to specially crafted POST requests that crash the Serv-U service without authentication using Content-Encoding: deflate. Mitigation steps are provided to secure customer environments in the SolarWinds Trust Center if you are unable to deploy the update
 </code>
 
-- [Nayekah/Next.js-Proof-of-Concept](https://github.com/Nayekah/Next.js-Proof-of-Concept)
+- [johnniebozura31/CVE-2026-28318](https://github.com/johnniebozura31/CVE-2026-28318)
 
 ### CVE-2026-28766 (2026-04-03)
 
@@ -1386,6 +1386,13 @@
 
 - [walidriouah/CVE-2026-30691](https://github.com/walidriouah/CVE-2026-30691)
 
+### CVE-2026-30849 (2026-03-23)
+
+<code>Mantis Bug Tracker (MantisBT) is an open source issue tracker. Versions prior to 2.28.1 running on MySQL family databases are affected by an authentication bypass vulnerability in the SOAP API, as a result of an improper type checking on the password parameter. Other database backends are not affected, as they do not perform implicit type conversion from string to integer. Using a crafted SOAP envelope, an attacker knowing the victim's username is able to login to the SOAP API with their account without knowledge of the actual password, and execute any API function they have access to. Version 2.28.1 contains a patch. Disabling the SOAP API significantly reduces the risk, but still allows the attacker to retrieve user account information including email address and real name.
+</code>
+
+- [Gumbraise/CVE-2026-30849-PoC](https://github.com/Gumbraise/CVE-2026-30849-PoC)
+
 ### CVE-2026-30950 (2026-05-18)
 
 <code>AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. Versions 0.6.36 through 0.6.50 are vulnerable to Authenticated Session Hijacking via IDOR. If an authenticated attacker can determine the session_id of another user's session, they can take it over, reading any messages in it and locking the legitimate user out. The PATCH /sessions/{session_id}/assign-user endpoint authenticates the caller but never verifies session ownership: the service layer invokes the session lookup with user_id=None, which the data access layer interprets as a privileged/system call that bypasses the ownership filter, allowing any authenticated user to reassign an arbitrary session to themselves. This issue has been patched in version 0.6.51.
@@ -1426,7 +1433,6 @@
 - [bigwario/copy-fail-CVE-2026-31431-C](https://github.com/bigwario/copy-fail-CVE-2026-31431-C)
 - [ryan2929/CVE-2026-31431](https://github.com/ryan2929/CVE-2026-31431)
 - [Aurillium/RootRemover](https://github.com/Aurillium/RootRemover)
-- [nisec-eric/cve-2026-31431](https://github.com/nisec-eric/cve-2026-31431)
 - [lonelyor/CVE-2026-31431-exp](https://github.com/lonelyor/CVE-2026-31431-exp)
 - [Phalanx-CCS/Copy-Fail](https://github.com/Phalanx-CCS/Copy-Fail)
 - [shadowabi/CVE-2026-31431-CopyFail-Universal-LPE](https://github.com/shadowabi/CVE-2026-31431-CopyFail-Universal-LPE)
@@ -1438,7 +1444,6 @@
 - [diemoeve/copyfail-rs](https://github.com/diemoeve/copyfail-rs)
 - [cozystack/copy-fail-blocker](https://github.com/cozystack/copy-fail-blocker)
 - [mhdgning131/CopyFail-Patcher](https://github.com/mhdgning131/CopyFail-Patcher)
-- [Xerxes-2/CVE-2026-31431-rs](https://github.com/Xerxes-2/CVE-2026-31431-rs)
 - [SeanRickerd/cve-2026-31431](https://github.com/SeanRickerd/cve-2026-31431)
 - [selectel/mks-copy-fail-mitigation](https://github.com/selectel/mks-copy-fail-mitigation)
 - [devstuff/harden-docker-seccomp](https://github.com/devstuff/harden-docker-seccomp)
@@ -1454,23 +1459,14 @@
 - [HulnotHutu/CVE-2026-31431](https://github.com/HulnotHutu/CVE-2026-31431)
 - [OmerAti/almalinux-fix-cve-2026-31431](https://github.com/OmerAti/almalinux-fix-cve-2026-31431)
 - [ErdemOzgen/copy-fail-cve-2026-31431](https://github.com/ErdemOzgen/copy-fail-cve-2026-31431)
-- [Fulucky0-yuri/CVE-2026-31431-PocC](https://github.com/Fulucky0-yuri/CVE-2026-31431-PocC)
-- [abhishekhargan/CVE-2026-31431](https://github.com/abhishekhargan/CVE-2026-31431)
-- [MarioHY/cve_2026_31431_audit](https://github.com/MarioHY/cve_2026_31431_audit)
-- [AliHzSec/CVE-2026-31431](https://github.com/AliHzSec/CVE-2026-31431)
 - [toxy4ny/copy-fail-exploit-on-c-redteam](https://github.com/toxy4ny/copy-fail-exploit-on-c-redteam)
-- [kvakirsanov/CVE-2026-31431-live-process-code-injection](https://github.com/kvakirsanov/CVE-2026-31431-live-process-code-injection)
 - [TheMalwareGuardian/CVE-2026-31431](https://github.com/TheMalwareGuardian/CVE-2026-31431)
-- [FrosterDL/CVE-2026-31431](https://github.com/FrosterDL/CVE-2026-31431)
-- [RecoFu/CVE-2026-31431-Copy-Fail](https://github.com/RecoFu/CVE-2026-31431-Copy-Fail)
 - [atgreen/block-copyfail](https://github.com/atgreen/block-copyfail)
 - [beatbeast007/Linux-CopyFail-C-Version-CVE-2026-31431](https://github.com/beatbeast007/Linux-CopyFail-C-Version-CVE-2026-31431)
 - [sbeteta42/CVE-2026-31431_je_sappelle_RoOt](https://github.com/sbeteta42/CVE-2026-31431_je_sappelle_RoOt)
 - [rvzsec/CVE-2026-31431](https://github.com/rvzsec/CVE-2026-31431)
-- [Silent0x0/Copy-Fail---CVE-2026-31431](https://github.com/Silent0x0/Copy-Fail---CVE-2026-31431)
 - [SpenserCai/copy_fail](https://github.com/SpenserCai/copy_fail)
 - [K3ysTr0K3R/CVE-2026-31431-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2026-31431-EXPLOIT)
-- [bedros-p/kopy-fail-CVE-2026-31431](https://github.com/bedros-p/kopy-fail-CVE-2026-31431)
 - [povzayd/CVE-2026-31431](https://github.com/povzayd/CVE-2026-31431)
 - [sebinxavi/cve-checker-2026](https://github.com/sebinxavi/cve-checker-2026)
 - [mlazzarotto/copy-fail-CVE-2026-31431-mitigation-ansible-playbook](https://github.com/mlazzarotto/copy-fail-CVE-2026-31431-mitigation-ansible-playbook)
@@ -1698,13 +1694,6 @@
 
 - [SnailSploit/CVE-2026-31899](https://github.com/SnailSploit/CVE-2026-31899)
 
-### CVE-2026-32202 (2026-04-14)
-
-<code>Protection mechanism failure in Windows Shell allows an unauthorized attacker to perform spoofing over a network.
-</code>
-
-- [virus-or-not/CVE-2026-32202](https://github.com/virus-or-not/CVE-2026-32202)
-
 ### CVE-2026-32646 (2026-04-03)
 
 <code>A specific administrative endpoint is accessible without proper authentication, exposing device management functions.
@@ -1798,13 +1787,6 @@
 
 - [nedlir/dasel-hardened-container](https://github.com/nedlir/dasel-hardened-container)
 - [rotavori/dasel-melange-apko](https://github.com/rotavori/dasel-melange-apko)
-
-### CVE-2026-33439 (2026-04-07)
-
-<code>Open Access Management (OpenAM) is an access management solution. Prior to 16.0.6, OpenIdentityPlatform OpenAM is vulnerable to pre-authentication Remote Code Execution (RCE) via unsafe Java deserialization of the jato.clientSession HTTP parameter. This bypasses the WhitelistObjectInputStream mitigation that was applied to the jato.pageSession parameter after CVE-2021-35464. An unauthenticated attacker can achieve arbitrary command execution on the server by sending a crafted serialized Java object as the jato.clientSession GET/POST parameter to any JATO ViewBean endpoint whose JSP contains &lt;jato:form&gt; tags (e.g., the Password Reset pages). This vulnerability is fixed in 16.0.6.
-</code>
-
-- [TheMalwareGuardian/CVE-2026-33439](https://github.com/TheMalwareGuardian/CVE-2026-33439)
 
 ### CVE-2026-33534 (2026-04-13)
 
@@ -2321,6 +2303,14 @@
 - [Fuchsiafromcurl/CVE-2026-41089-274](https://github.com/Fuchsiafromcurl/CVE-2026-41089-274)
 - [Mapclaregister/CVE-2026-41089-191](https://github.com/Mapclaregister/CVE-2026-41089-191)
 - [sectiondukestring25/CVE-2026-41089-971](https://github.com/sectiondukestring25/CVE-2026-41089-971)
+- [SightFinchFall/CVE-2026-41089-238](https://github.com/SightFinchFall/CVE-2026-41089-238)
+- [raingatorrouter/CVE-2026-41089-953](https://github.com/raingatorrouter/CVE-2026-41089-953)
+- [raingatorrouter/CVE-2026-41089-224](https://github.com/raingatorrouter/CVE-2026-41089-224)
+- [segmentjoninsecret/CVE-2026-41089-334](https://github.com/segmentjoninsecret/CVE-2026-41089-334)
+- [StampDreamFitting/CVE-2026-41089-986](https://github.com/StampDreamFitting/CVE-2026-41089-986)
+- [Powderbatpatch/CVE-2026-41089-397](https://github.com/Powderbatpatch/CVE-2026-41089-397)
+- [CrimsonKingfisher/CVE-2026-41089-245](https://github.com/CrimsonKingfisher/CVE-2026-41089-245)
+- [RoyalViceroyBear/CVE-2026-41089-706](https://github.com/RoyalViceroyBear/CVE-2026-41089-706)
 
 ### CVE-2026-41091 (2026-05-20)
 
@@ -2385,10 +2375,6 @@
 
 - [assetnote/cpanel2shell-scanner](https://github.com/assetnote/cpanel2shell-scanner)
 - [rfxn/cpanel-sessionscribe](https://github.com/rfxn/cpanel-sessionscribe)
-- [unteikyou/CVE-2026-41940-AuthBypass-Detector](https://github.com/unteikyou/CVE-2026-41940-AuthBypass-Detector)
-- [Lutfifakee-Project/CVE-2026-41940](https://github.com/Lutfifakee-Project/CVE-2026-41940)
-- [NULL200OK/cve-2026-41940-tool](https://github.com/NULL200OK/cve-2026-41940-tool)
-- [ynsmroztas/cPanelSniper](https://github.com/ynsmroztas/cPanelSniper)
 - [Christian93111/CVE-2026-41940](https://github.com/Christian93111/CVE-2026-41940)
 - [0dev1337/cpanelscanner](https://github.com/0dev1337/cpanelscanner)
 - [kmaruthisrikar/CVE-2026-41940-cPanel-Auth-Bypass-Exploit](https://github.com/kmaruthisrikar/CVE-2026-41940-cPanel-Auth-Bypass-Exploit)
@@ -2580,6 +2566,13 @@
 </code>
 
 - [atiilla/CVE-2026-42897](https://github.com/atiilla/CVE-2026-42897)
+
+### CVE-2026-42926 (2026-05-13)
+
+<code>When NGINX Open Source is configured to proxy HTTP/2 traffic by setting proxy_http_version to 2, and also uses proxy_set_body, an attacker may be able to inject frame headers and payload bytes to the upstream peer.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
+</code>
+
+- [ikarolaborda/CVE2026-42926](https://github.com/ikarolaborda/CVE2026-42926)
 
 ### CVE-2026-42940
 - [ndhet/bot-CVE-2026-42940](https://github.com/ndhet/bot-CVE-2026-42940)
@@ -2850,6 +2843,15 @@
 - [Nucleusiloot/yellowkey-bitlocker-471](https://github.com/Nucleusiloot/yellowkey-bitlocker-471)
 - [CeilingSector/yellowkey-bitlocker-875](https://github.com/CeilingSector/yellowkey-bitlocker-875)
 - [senseibreathhovel/yellowkey-bitlocker-911](https://github.com/senseibreathhovel/yellowkey-bitlocker-911)
+- [ChannelShape/yellowkey-bitlocker-243](https://github.com/ChannelShape/yellowkey-bitlocker-243)
+- [Restoireflect/yellowkey-bitlocker-525](https://github.com/Restoireflect/yellowkey-bitlocker-525)
+- [Drizzlekolog/yellowkey-bitlocker-579](https://github.com/Drizzlekolog/yellowkey-bitlocker-579)
+- [digitalantconverter/yellowkey-bitlocker-365](https://github.com/digitalantconverter/yellowkey-bitlocker-365)
+- [ColorsShogun/yellowkey-bitlocker-796](https://github.com/ColorsShogun/yellowkey-bitlocker-796)
+- [MysticMite92/yellowkey-bitlocker-544](https://github.com/MysticMite92/yellowkey-bitlocker-544)
+- [digitalantconverter/yellowkey-bitlocker-183](https://github.com/digitalantconverter/yellowkey-bitlocker-183)
+- [Lengthlyapipe/yellowkey-bitlocker-813](https://github.com/Lengthlyapipe/yellowkey-bitlocker-813)
+- [DepthCoxswain/yellowkey-bitlocker-255](https://github.com/DepthCoxswain/yellowkey-bitlocker-255)
 
 ### CVE-2026-45659 (2026-05-22)
 
@@ -3541,6 +3543,7 @@
 - [mattiapertusati/htb-facts](https://github.com/mattiapertusati/htb-facts)
 - [Jeanback1/CVE-2025-2304-exploit](https://github.com/Jeanback1/CVE-2025-2304-exploit)
 - [karimelsheikh1/HTB-Facts-Writeup](https://github.com/karimelsheikh1/HTB-Facts-Writeup)
+- [askiesec/CVE-2025-2304-POC](https://github.com/askiesec/CVE-2025-2304-POC)
 
 ### CVE-2025-2404 (2025-09-16)
 
@@ -11811,6 +11814,7 @@
 - [tanvirahmedcs/CVE-2025-55182](https://github.com/tanvirahmedcs/CVE-2025-55182)
 - [yurahshell/CVE-2025-55182](https://github.com/yurahshell/CVE-2025-55182)
 - [rvzsec/react2shell](https://github.com/rvzsec/react2shell)
+- [TechWithOrgito/CVE-2025-55182-Researching-process](https://github.com/TechWithOrgito/CVE-2025-55182-Researching-process)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -12347,6 +12351,8 @@
 - [MuhammadWaseem29/SQL-Injection-and-RCE_CVE-2025-57819](https://github.com/MuhammadWaseem29/SQL-Injection-and-RCE_CVE-2025-57819)
 - [xV4nd3Rx/CVE-2025-57819_FreePBX-PoC](https://github.com/xV4nd3Rx/CVE-2025-57819_FreePBX-PoC)
 - [orange0Mint/CVE-2025-57819_FreePBX](https://github.com/orange0Mint/CVE-2025-57819_FreePBX)
+- [b4sh2/CVE-2025-57819-poc](https://github.com/b4sh2/CVE-2025-57819-poc)
+- [0xEhab/FreePBX-CVE-2025-57819-RCE](https://github.com/0xEhab/FreePBX-CVE-2025-57819-RCE)
 
 ### CVE-2025-57833 (2025-09-03)
 
@@ -14780,6 +14786,7 @@
 - [Athexblackhat/EXPLOITER](https://github.com/Athexblackhat/EXPLOITER)
 - [HoyoenKim/CVE-2024-0044_PoC](https://github.com/HoyoenKim/CVE-2024-0044_PoC)
 - [JackTekno/Chrome-Forensic_CVE-2024-0044](https://github.com/JackTekno/Chrome-Forensic_CVE-2024-0044)
+- [bfurkanyildiz/Android-rce-analizi](https://github.com/bfurkanyildiz/Android-rce-analizi)
 
 ### CVE-2024-0070
 - [SimoesCTT/CVE-2024-0070-NVIDIA-GPU-Driver--Resonance-Vulnerability](https://github.com/SimoesCTT/CVE-2024-0070-NVIDIA-GPU-Driver--Resonance-Vulnerability)
@@ -19765,7 +19772,6 @@
 - [leo-mitch/CVE-2024-25641-RCE-Automated-Exploit-Cacti-1.2.26](https://github.com/leo-mitch/CVE-2024-25641-RCE-Automated-Exploit-Cacti-1.2.26)
 - [Safarchand/CVE-2024-25641](https://github.com/Safarchand/CVE-2024-25641)
 - [StopThatTalace/CVE-2024-25641-CACTI-RCE-1.2.26](https://github.com/StopThatTalace/CVE-2024-25641-CACTI-RCE-1.2.26)
-- [D3Ext/CVE-2024-25641](https://github.com/D3Ext/CVE-2024-25641)
 - [regantemudo/CVE-2024-25641-Exploit-for-Cacti-1.2.26](https://github.com/regantemudo/CVE-2024-25641-Exploit-for-Cacti-1.2.26)
 - [GabrielCF10/CVE-2024-25641---Cacti](https://github.com/GabrielCF10/CVE-2024-25641---Cacti)
 
@@ -25022,7 +25028,6 @@
 - [c4oocO/CVE-2024-53677-Docker](https://github.com/c4oocO/CVE-2024-53677-Docker)
 - [dustblessnotdust/CVE-2024-53677-S2-067-thread](https://github.com/dustblessnotdust/CVE-2024-53677-S2-067-thread)
 - [hiteshpatra/CVE-2024-53677](https://github.com/hiteshpatra/CVE-2024-53677)
-- [0xPThree/struts_cve-2024-53677](https://github.com/0xPThree/struts_cve-2024-53677)
 - [punitdarji/Apache-struts-cve-2024-53677](https://github.com/punitdarji/Apache-struts-cve-2024-53677)
 - [SeanRickerd/CVE-2024-53677](https://github.com/SeanRickerd/CVE-2024-53677)
 - [hopsypopsy8/CVE-2024-53677-Exploitation](https://github.com/hopsypopsy8/CVE-2024-53677-Exploitation)
@@ -25221,6 +25226,13 @@
 </code>
 
 - [ailenye/CVE-2024-54880](https://github.com/ailenye/CVE-2024-54880)
+
+### CVE-2024-54887 (2025-01-09)
+
+<code>TP-Link TL-WR940N V3 and V4 with firmware 3.16.9 and earlier contain a buffer overflow via the dnsserver1 and dnsserver2 parameters at /userRpm/Wan6to4TunnelCfgRpm.htm. This vulnerability allows an authenticated attacker to execute arbitrary code on the remote device in the context of the root user.
+</code>
+
+- [Gumbraise/CVE-2024-54887-PoC](https://github.com/Gumbraise/CVE-2024-54887-PoC)
 
 ### CVE-2024-54910 (2025-01-10)
 
@@ -27414,7 +27426,6 @@
 <code>The POST SMTP Mailer – Email log, Delivery Failure Notifications and Best Mail SMTP for WordPress plugin for WordPress is vulnerable to unauthorized access of data and modification of data due to a type juggling issue on the connect-app REST endpoint in all versions up to, and including, 2.8.7. This makes it possible for unauthenticated attackers to reset the API key used to authenticate to the mailer and view logs, including password reset emails, allowing site takeover. CVE-2023-52233 appears to be a duplicate of this issue.
 </code>
 
-- [UlyssesSaicha/CVE-2023-6875](https://github.com/UlyssesSaicha/CVE-2023-6875)
 - [gbrsh/CVE-2023-6875](https://github.com/gbrsh/CVE-2023-6875)
 - [hatlesswizard/CVE-2023-6875](https://github.com/hatlesswizard/CVE-2023-6875)
 
@@ -30891,6 +30902,7 @@
 - [khengar9274-web/moveit-transfer-2023-breach](https://github.com/khengar9274-web/moveit-transfer-2023-breach)
 - [tubaaiftikhar-ui/MOVEit-Transfer-Data-Breach-Analysis.](https://github.com/tubaaiftikhar-ui/MOVEit-Transfer-Data-Breach-Analysis.)
 - [KarmanyaT28/Multi-Stage-Exploitation-and-Detection-Engineering-Analysis-of-CVE-2023-34362-in-MOVEit-Transfer](https://github.com/KarmanyaT28/Multi-Stage-Exploitation-and-Detection-Engineering-Analysis-of-CVE-2023-34362-in-MOVEit-Transfer)
+- [horrister/moveit-transfer-cve-2023-34362](https://github.com/horrister/moveit-transfer-cve-2023-34362)
 
 ### CVE-2023-34468 (2023-06-12)
 
@@ -32781,7 +32793,6 @@
 - [H454NSec/CVE-2023-42793](https://github.com/H454NSec/CVE-2023-42793)
 - [whoamins/CVE-2023-42793](https://github.com/whoamins/CVE-2023-42793)
 - [Zenmovie/CVE-2023-42793](https://github.com/Zenmovie/CVE-2023-42793)
-- [StanleyJobsonAU/GhostTown](https://github.com/StanleyJobsonAU/GhostTown)
 - [hotplugin0x01/CVE-2023-42793](https://github.com/hotplugin0x01/CVE-2023-42793)
 - [B4l3rI0n/CVE-2023-42793](https://github.com/B4l3rI0n/CVE-2023-42793)
 - [junnythemarksman/CVE-2023-42793](https://github.com/junnythemarksman/CVE-2023-42793)
@@ -33289,6 +33300,7 @@
 - [TLevente20/HTTP-2-RapidReset-CVE-2023-44487-Testlab](https://github.com/TLevente20/HTTP-2-RapidReset-CVE-2023-44487-Testlab)
 - [galletitaconpate/CVE-2023-44487](https://github.com/galletitaconpate/CVE-2023-44487)
 - [Hirokiii/CVE-2023-44487](https://github.com/Hirokiii/CVE-2023-44487)
+- [madhantr0/http2-security-lab](https://github.com/madhantr0/http2-security-lab)
 
 ### CVE-2023-44758 (2023-10-06)
 
@@ -38275,7 +38287,6 @@
 - [hev0x/CVE-2022-26134](https://github.com/hev0x/CVE-2022-26134)
 - [archanchoudhury/Confluence-CVE-2022-26134](https://github.com/archanchoudhury/Confluence-CVE-2022-26134)
 - [SIFalcon/confluencePot](https://github.com/SIFalcon/confluencePot)
-- [CatAnnaDev/CVE-2022-26134](https://github.com/CatAnnaDev/CVE-2022-26134)
 - [vesperp/CVE-2022-26134-Confluence](https://github.com/vesperp/CVE-2022-26134-Confluence)
 - [li8u99/CVE-2022-26134](https://github.com/li8u99/CVE-2022-26134)
 - [reubensammut/cve-2022-26134](https://github.com/reubensammut/cve-2022-26134)
@@ -38285,6 +38296,7 @@
 - [Habib0x0/CVE-2022-26134](https://github.com/Habib0x0/CVE-2022-26134)
 - [Y000o/Confluence-CVE-2022-26134](https://github.com/Y000o/Confluence-CVE-2022-26134)
 - [redhuntlabs/ConfluentPwn](https://github.com/redhuntlabs/ConfluentPwn)
+- [secjia/CVE-2022-26134](https://github.com/secjia/CVE-2022-26134)
 - [cai-niao98/CVE-2022-26134](https://github.com/cai-niao98/CVE-2022-26134)
 - [sunny-kathuria/exploit_CVE-2022-26134](https://github.com/sunny-kathuria/exploit_CVE-2022-26134)
 - [KeepWannabe/BotCon](https://github.com/KeepWannabe/BotCon)
@@ -43086,8 +43098,8 @@
 - [donghyunlee00/CVE-2021-3156](https://github.com/donghyunlee00/CVE-2021-3156)
 - [TheFlash2k/CVE-2021-3156](https://github.com/TheFlash2k/CVE-2021-3156)
 - [Exodusro/CVE-2021-3156](https://github.com/Exodusro/CVE-2021-3156)
-- [CyberCommands/CVE-2021-3156](https://github.com/CyberCommands/CVE-2021-3156)
 - [0x7183/CVE-2021-3156](https://github.com/0x7183/CVE-2021-3156)
+- [sbladiamond/CVE-2021-3156](https://github.com/sbladiamond/CVE-2021-3156)
 - [redhawkeye/sudo-exploit](https://github.com/redhawkeye/sudo-exploit)
 - [d3c3ptic0n/CVE-2021-3156](https://github.com/d3c3ptic0n/CVE-2021-3156)
 - [musergi/CVE-2021-3156](https://github.com/musergi/CVE-2021-3156)
@@ -51542,6 +51554,7 @@
 
 - [rdoix/CVE-2020-10148-Solarwinds-Orion](https://github.com/rdoix/CVE-2020-10148-Solarwinds-Orion)
 - [B1anda0/CVE-2020-10148](https://github.com/B1anda0/CVE-2020-10148)
+- [horrister/solarwinds-sunburst-cve-2020-10148](https://github.com/horrister/solarwinds-sunburst-cve-2020-10148)
 
 ### CVE-2020-10189 (2020-03-06)
 
@@ -55772,6 +55785,13 @@
 </code>
 
 - [mmxsrup/CVE-2019-5489](https://github.com/mmxsrup/CVE-2019-5489)
+
+### CVE-2019-5513 (2019-04-09)
+
+<code>VMware Horizon Connection Server (7.x before 7.8, 7.5.x before 7.5.2, 6.x before 6.2.8) contains an information disclosure vulnerability. Successful exploitation of this issue may allow disclosure of internal domain names, the Connection Server’s internal name, or the gateway’s internal IP address.
+</code>
+
+- [sudosu01/CVE-2019-5513-scanner](https://github.com/sudosu01/CVE-2019-5513-scanner)
 
 ### CVE-2019-5544 (2019-12-06)
 
@@ -69639,7 +69659,6 @@
 </code>
 
 - [rutvijjethwa/RDP_jammer](https://github.com/rutvijjethwa/RDP_jammer)
-- [blandteampr/RDP-Killer](https://github.com/blandteampr/RDP-Killer)
 
 ### CVE-2012-0158 (2012-04-10)
 
