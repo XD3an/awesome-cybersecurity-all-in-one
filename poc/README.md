@@ -375,6 +375,7 @@
 </code>
 
 - [TheCyberGeek/CVE-2026-4480-PoC](https://github.com/TheCyberGeek/CVE-2026-4480-PoC)
+- [robinxiang/CVE-2026-4480](https://github.com/robinxiang/CVE-2026-4480)
 
 ### CVE-2026-4802 (2026-05-11)
 
@@ -515,6 +516,13 @@
 </code>
 
 - [Pumila03/CVE-2026-6009](https://github.com/Pumila03/CVE-2026-6009)
+
+### CVE-2026-6043 (2026-04-24)
+
+<code>P4 Server versions prior to 2026.1 are configured with insecure default settings that, when exposed to untrusted networks, allow unauthenticated attackers to create arbitrary user accounts, enumerate existing users, authenticate to accounts with no password set, and access depot contents via the built-in 'remote' user. These default settings, taken together, can lead to unauthorized access to source code repositories and other managed assets. The 2026.1 release, expected in May 2026, enforces secure-by-default configurations on upgrade and new installations
+</code>
+
+- [flyingllama87/p4wned](https://github.com/flyingllama87/p4wned)
 
 ### CVE-2026-6145 (2026-05-14)
 
@@ -701,7 +709,6 @@
 <code>The Kirki – Freeform Page Builder, Website Builder &amp; Customizer plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions 6.0.0 to 6.0.6. This is due to the plugin accepting an arbitrary email address when a username is used in the password reset request. This makes it possible for unauthenticated attackers to send a password reset link for any user registered on the site to their own email address.
 </code>
 
-- [O99099O/CVE-2026-8206-Poc-](https://github.com/O99099O/CVE-2026-8206-Poc-)
 - [Jenderal92/CVE-2026-8206](https://github.com/Jenderal92/CVE-2026-8206)
 - [rootdirective-sec/CVE-2026-8206-Lab](https://github.com/rootdirective-sec/CVE-2026-8206-Lab)
 
@@ -777,6 +784,7 @@
 - [ambionics/cve-2026-9082-drupal-postgresql-rce](https://github.com/ambionics/cve-2026-9082-drupal-postgresql-rce)
 - [strobelpierre/CVE-2026-9082](https://github.com/strobelpierre/CVE-2026-9082)
 - [thinhap/CVE-2026-9082-PoC](https://github.com/thinhap/CVE-2026-9082-PoC)
+- [11romain/CVE-2026-9082](https://github.com/11romain/CVE-2026-9082)
 
 ### CVE-2026-9256 (2026-05-22)
 
@@ -850,7 +858,7 @@
 <code>The Hippoo Mobile App for WooCommerce plugin for WordPress is vulnerable to Authentication Bypass leading to Administrator Account Takeover in all versions up to and including 1.9.4. This is due to a logic conflation in HippooPermissions::get_user_permissions(), which returns the same null sentinel for both administrators and unauthenticated visitors — a value that HippooPermissions::has_role_access() unconditionally interprets as full administrator access — causing override_extension_permission_callback() to assign __return_true as the permission callback for every WordPress and WooCommerce REST route cloned under /wc-hippoo/v1/ext/ by HippooControllerWithAuth::re_register_external_routes(), while the block_unauthorized_access() pre-dispatch guard fails to block unauthenticated users for the same reason. This makes it possible for unauthenticated attackers to invoke any core REST endpoint without credentials — most critically, sending a POST request to /wc-hippoo/v1/ext/wp/v2/users/&lt;id&gt; with a {&quot;password&quot;:&quot;&lt;new_password&gt;&quot;} body to reset the password of any WordPress user, including the site administrator, and gain full administrative control of the site.
 </code>
 
-- [O99099O/By-Poloss..-..CVE-2026-10580](https://github.com/O99099O/By-Poloss..-..CVE-2026-10580)
+- [Polosss/By-Poloss..-..CVE-2026-10580](https://github.com/Polosss/By-Poloss..-..CVE-2026-10580)
 
 ### CVE-2026-11344 (2026-06-05)
 
@@ -1462,12 +1470,8 @@
 - [toxy4ny/copy-fail-exploit-on-c-redteam](https://github.com/toxy4ny/copy-fail-exploit-on-c-redteam)
 - [TheMalwareGuardian/CVE-2026-31431](https://github.com/TheMalwareGuardian/CVE-2026-31431)
 - [atgreen/block-copyfail](https://github.com/atgreen/block-copyfail)
-- [beatbeast007/Linux-CopyFail-C-Version-CVE-2026-31431](https://github.com/beatbeast007/Linux-CopyFail-C-Version-CVE-2026-31431)
-- [sbeteta42/CVE-2026-31431_je_sappelle_RoOt](https://github.com/sbeteta42/CVE-2026-31431_je_sappelle_RoOt)
 - [rvzsec/CVE-2026-31431](https://github.com/rvzsec/CVE-2026-31431)
-- [SpenserCai/copy_fail](https://github.com/SpenserCai/copy_fail)
 - [K3ysTr0K3R/CVE-2026-31431-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2026-31431-EXPLOIT)
-- [povzayd/CVE-2026-31431](https://github.com/povzayd/CVE-2026-31431)
 - [sebinxavi/cve-checker-2026](https://github.com/sebinxavi/cve-checker-2026)
 - [mlazzarotto/copy-fail-CVE-2026-31431-mitigation-ansible-playbook](https://github.com/mlazzarotto/copy-fail-CVE-2026-31431-mitigation-ansible-playbook)
 - [ExploitEoom/CVE-2026-31431](https://github.com/ExploitEoom/CVE-2026-31431)
@@ -1854,6 +1858,13 @@
 </code>
 
 - [dinhvaren/cve-2026-33937](https://github.com/dinhvaren/cve-2026-33937)
+
+### CVE-2026-34040 (2026-03-31)
+
+<code>Moby is an open source container framework. Prior to version 29.3.1, a security vulnerability has been detected that allows attackers to bypass authorization plugins (AuthZ). This issue has been patched in version 29.3.1.
+</code>
+
+- [m0nk3ygod/CVE-2026-34040-PoC](https://github.com/m0nk3ygod/CVE-2026-34040-PoC)
 
 ### CVE-2026-34156 (2026-03-31)
 
@@ -12353,6 +12364,7 @@
 - [orange0Mint/CVE-2025-57819_FreePBX](https://github.com/orange0Mint/CVE-2025-57819_FreePBX)
 - [b4sh2/CVE-2025-57819-poc](https://github.com/b4sh2/CVE-2025-57819-poc)
 - [0xEhab/FreePBX-CVE-2025-57819-RCE](https://github.com/0xEhab/FreePBX-CVE-2025-57819-RCE)
+- [Jeanback1/CVE-2025-57819-exploit](https://github.com/Jeanback1/CVE-2025-57819-exploit)
 
 ### CVE-2025-57833 (2025-09-03)
 
@@ -32635,13 +32647,6 @@
 </code>
 
 - [federella/CVE-2023-41717](https://github.com/federella/CVE-2023-41717)
-
-### CVE-2023-41772 (2023-10-10)
-
-<code>Win32k Elevation of Privilege Vulnerability
-</code>
-
-- [R41N3RZUF477/CVE-2023-41772](https://github.com/R41N3RZUF477/CVE-2023-41772)
 
 ### CVE-2023-41892 (2023-09-13)
 
@@ -66109,7 +66114,7 @@
 </code>
 
 - [Ma1Dong/ActiveMQ_putshell-CVE-2016-3088](https://github.com/Ma1Dong/ActiveMQ_putshell-CVE-2016-3088)
-- [pudiding/CVE-2016-3088](https://github.com/pudiding/CVE-2016-3088)
+- [wood03mm/CVE-2016-3088](https://github.com/wood03mm/CVE-2016-3088)
 - [cyberaguiar/CVE-2016-3088](https://github.com/cyberaguiar/CVE-2016-3088)
 - [vonderchild/CVE-2016-3088](https://github.com/vonderchild/CVE-2016-3088)
 - [cl4ym0re/CVE-2016-3088](https://github.com/cl4ym0re/CVE-2016-3088)
