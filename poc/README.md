@@ -147,6 +147,13 @@
 
 - [mrk336/Breaking-AWS-IAM-Privilege-Escalation-via-Mis-Evaluated-Policy-Conditions-CVE-2026-1238-](https://github.com/mrk336/Breaking-AWS-IAM-Privilege-Escalation-via-Mis-Evaluated-Policy-Conditions-CVE-2026-1238-)
 
+### CVE-2026-1492 (2026-03-03)
+
+<code>The User Registration &amp; Membership – Custom Registration Form Builder, Custom Login Form, User Profile, Content Restriction &amp; Membership Plugin plugin for WordPress is vulnerable to improper privilege management in all versions up to, and including, 5.1.2. This is due to the plugin accepting a user-supplied role during membership registration without properly enforcing a server-side allowlist. This makes it possible for unauthenticated attackers to create administrator accounts by supplying a role value during membership registration.
+</code>
+
+- [limo57640-crypto/wp-user-registration-vuln-checker](https://github.com/limo57640-crypto/wp-user-registration-vuln-checker)
+
 ### CVE-2026-1731 (2026-02-06)
 
 <code>BeyondTrust Remote Support (RS) and certain older versions of Privileged Remote Access (PRA) contain a critical pre-authentication remote code execution vulnerability. By sending specially crafted requests, an unauthenticated remote attacker may be able to execute operating system commands in the context of the site user.
@@ -376,6 +383,7 @@
 
 - [TheCyberGeek/CVE-2026-4480-PoC](https://github.com/TheCyberGeek/CVE-2026-4480-PoC)
 - [robinxiang/CVE-2026-4480](https://github.com/robinxiang/CVE-2026-4480)
+- [0xBlackash/CVE-2026-4480](https://github.com/0xBlackash/CVE-2026-4480)
 
 ### CVE-2026-4802 (2026-05-11)
 
@@ -867,6 +875,9 @@
 
 - [Xmyronn/CVE-2026-11344-RCE](https://github.com/Xmyronn/CVE-2026-11344-RCE)
 
+### CVE-2026-11518
+- [Xmyronn/CVE-2026-11518-XSS](https://github.com/Xmyronn/CVE-2026-11518-XSS)
+
 ### CVE-2026-20131 (2026-03-04)
 
 <code>A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to execute arbitrary Java code as root&amp;nbsp;on an affected device.\r\n\r\nThis vulnerability is due to insecure deserialization of a user-supplied Java byte stream. An attacker could exploit this vulnerability by sending a crafted serialized Java object to the web-based management interface of an affected device. A successful exploit could allow the attacker to execute arbitrary code on the device and elevate privileges to root.\r\nNote: If the FMC management interface does not have public internet access, the attack surface that is associated with this vulnerability is reduced.
@@ -1012,6 +1023,7 @@
 </code>
 
 - [pduggusa/redis-cve-2026-23479-check](https://github.com/pduggusa/redis-cve-2026-23479-check)
+- [daniel30padd/CVE-2026-23479](https://github.com/daniel30padd/CVE-2026-23479)
 
 ### CVE-2026-23520 (2026-01-15)
 
@@ -1444,7 +1456,6 @@
 - [lonelyor/CVE-2026-31431-exp](https://github.com/lonelyor/CVE-2026-31431-exp)
 - [Phalanx-CCS/Copy-Fail](https://github.com/Phalanx-CCS/Copy-Fail)
 - [shadowabi/CVE-2026-31431-CopyFail-Universal-LPE](https://github.com/shadowabi/CVE-2026-31431-CopyFail-Universal-LPE)
-- [Webhosting4U/Copy-Fail_Detect_and_mitigate_CVE-2026-31431](https://github.com/Webhosting4U/Copy-Fail_Detect_and_mitigate_CVE-2026-31431)
 - [Percivalll/Copy-Fail-CVE-2026-31431-Kubernetes-PoC](https://github.com/Percivalll/Copy-Fail-CVE-2026-31431-Kubernetes-PoC)
 - [yandex-cloud-examples/yc-mk8s-copy-fail-mitigation](https://github.com/yandex-cloud-examples/yc-mk8s-copy-fail-mitigation)
 - [mfloresdacunha/CVE-2026-31431](https://github.com/mfloresdacunha/CVE-2026-31431)
@@ -1452,7 +1463,6 @@
 - [diemoeve/copyfail-rs](https://github.com/diemoeve/copyfail-rs)
 - [cozystack/copy-fail-blocker](https://github.com/cozystack/copy-fail-blocker)
 - [mhdgning131/CopyFail-Patcher](https://github.com/mhdgning131/CopyFail-Patcher)
-- [SeanRickerd/cve-2026-31431](https://github.com/SeanRickerd/cve-2026-31431)
 - [selectel/mks-copy-fail-mitigation](https://github.com/selectel/mks-copy-fail-mitigation)
 - [devstuff/harden-docker-seccomp](https://github.com/devstuff/harden-docker-seccomp)
 - [Juguitos/copy-fail](https://github.com/Juguitos/copy-fail)
@@ -1473,10 +1483,7 @@
 - [rvzsec/CVE-2026-31431](https://github.com/rvzsec/CVE-2026-31431)
 - [K3ysTr0K3R/CVE-2026-31431-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2026-31431-EXPLOIT)
 - [sebinxavi/cve-checker-2026](https://github.com/sebinxavi/cve-checker-2026)
-- [mlazzarotto/copy-fail-CVE-2026-31431-mitigation-ansible-playbook](https://github.com/mlazzarotto/copy-fail-CVE-2026-31431-mitigation-ansible-playbook)
 - [ExploitEoom/CVE-2026-31431](https://github.com/ExploitEoom/CVE-2026-31431)
-- [ben-slates/CVE-2026-31431-Exploit](https://github.com/ben-slates/CVE-2026-31431-Exploit)
-- [sercuritycyber/COPY-FAIL-CVE-2026-31431](https://github.com/sercuritycyber/COPY-FAIL-CVE-2026-31431)
 - [bootsareme/copyfail-deconstructed](https://github.com/bootsareme/copyfail-deconstructed)
 - [mrunalp/block-copyfail](https://github.com/mrunalp/block-copyfail)
 - [1amBa7Man/Linux-copy-fail-CVE-2026-31431](https://github.com/1amBa7Man/Linux-copy-fail-CVE-2026-31431)
@@ -2426,7 +2433,8 @@
 - [44pie/cpsniper](https://github.com/44pie/cpsniper)
 - [ngksiva/cpanel-forensics](https://github.com/ngksiva/cpanel-forensics)
 - [anach-ai/CVE-2026-41940](https://github.com/anach-ai/CVE-2026-41940)
-- [tc4dy/CVE-2026-41940-POC-Exploit](https://github.com/tc4dy/CVE-2026-41940-POC-Exploit)
+- [tc4dy/CVE-2026-41940-PoC-Exploit](https://github.com/tc4dy/CVE-2026-41940-PoC-Exploit)
+- [limo57640-crypto/cpanel-cve-41940-detector](https://github.com/limo57640-crypto/cpanel-cve-41940-detector)
 - [xxconi/CVE-2026-41940](https://github.com/xxconi/CVE-2026-41940)
 - [sardine-web/Automated-scanner-CVE-2026-41940](https://github.com/sardine-web/Automated-scanner-CVE-2026-41940)
 - [willygailo/CVE-2026-41940-Linux](https://github.com/willygailo/CVE-2026-41940-Linux)
@@ -2611,6 +2619,7 @@
 - [byezero/nginx-cve-2026-42945-check](https://github.com/byezero/nginx-cve-2026-42945-check)
 - [dinosn/cve-2026-42945-nginx32-lab](https://github.com/dinosn/cve-2026-42945-nginx32-lab)
 - [sibersan/web-server-audit_CVE-2026-42945](https://github.com/sibersan/web-server-audit_CVE-2026-42945)
+- [limo57640-crypto/nginx-rift-detector](https://github.com/limo57640-crypto/nginx-rift-detector)
 - [MateusVerass/nGixshell](https://github.com/MateusVerass/nGixshell)
 - [BarAppTeam/nginx-cve-fix](https://github.com/BarAppTeam/nginx-cve-fix)
 - [tal7aouy/nginx-cve-2026-42945](https://github.com/tal7aouy/nginx-cve-2026-42945)
@@ -12365,6 +12374,7 @@
 - [b4sh2/CVE-2025-57819-poc](https://github.com/b4sh2/CVE-2025-57819-poc)
 - [0xEhab/FreePBX-CVE-2025-57819-RCE](https://github.com/0xEhab/FreePBX-CVE-2025-57819-RCE)
 - [Jeanback1/CVE-2025-57819-exploit](https://github.com/Jeanback1/CVE-2025-57819-exploit)
+- [jf-gondim/freepbx-endpoint-sqli-rce](https://github.com/jf-gondim/freepbx-endpoint-sqli-rce)
 
 ### CVE-2025-57833 (2025-09-03)
 
@@ -15415,7 +15425,7 @@
 - [c0d3zilla/CVE-2024-2876](https://github.com/c0d3zilla/CVE-2024-2876)
 - [chsxthwik/CVE-2024-2876](https://github.com/chsxthwik/CVE-2024-2876)
 - [0xAgun/CVE-2024-2876](https://github.com/0xAgun/CVE-2024-2876)
-- [kernel364/CVE-2024-2876](https://github.com/kernel364/CVE-2024-2876)
+- [intel365/CVE-2024-2876](https://github.com/intel365/CVE-2024-2876)
 
 ### CVE-2024-2879 (2024-04-03)
 
@@ -16768,7 +16778,7 @@
 
 - [rxerium/CVE-2024-7593](https://github.com/rxerium/CVE-2024-7593)
 - [D3N14LD15K/CVE-2024-7593_PoC_Exploit](https://github.com/D3N14LD15K/CVE-2024-7593_PoC_Exploit)
-- [kernel364/CVE-2024-7593](https://github.com/kernel364/CVE-2024-7593)
+- [intel365/CVE-2024-7593](https://github.com/intel365/CVE-2024-7593)
 
 ### CVE-2024-7595 (2025-02-05)
 
@@ -19557,7 +19567,7 @@
 - [LuisMateo1/Arbitrary-File-Read-CVE-2024-24919](https://github.com/LuisMateo1/Arbitrary-File-Read-CVE-2024-24919)
 - [AhmedMansour93/Event-ID-263-Rule-Name-SOC287---Arbitrary-File-Read-on-Checkpoint-Security-Gateway-CVE-2024-24919-](https://github.com/AhmedMansour93/Event-ID-263-Rule-Name-SOC287---Arbitrary-File-Read-on-Checkpoint-Security-Gateway-CVE-2024-24919-)
 - [geniuszly/CVE-2024-24919](https://github.com/geniuszly/CVE-2024-24919)
-- [kernel364/CVE-2024-24919](https://github.com/kernel364/CVE-2024-24919)
+- [intel365/CVE-2024-24919](https://github.com/intel365/CVE-2024-24919)
 - [sar-3mar/CVE-2024-24919_POC](https://github.com/sar-3mar/CVE-2024-24919_POC)
 - [NingXin2002/Check-Point_poc](https://github.com/NingXin2002/Check-Point_poc)
 - [hashdr1ft/SOC_287](https://github.com/hashdr1ft/SOC_287)
@@ -20564,7 +20574,7 @@
 - [NanoWraith/CVE-2024-29973](https://github.com/NanoWraith/CVE-2024-29973)
 - [p0et08/CVE-2024-29973](https://github.com/p0et08/CVE-2024-29973)
 - [RevoltSecurities/CVE-2024-29973](https://github.com/RevoltSecurities/CVE-2024-29973)
-- [kernel364/CVE-2024-29973](https://github.com/kernel364/CVE-2024-29973)
+- [intel365/CVE-2024-29973](https://github.com/intel365/CVE-2024-29973)
 
 ### CVE-2024-29988 (2024-04-09)
 
@@ -23707,6 +23717,13 @@
 </code>
 
 - [jackalkarlos/CVE-2024-46658](https://github.com/jackalkarlos/CVE-2024-46658)
+
+### CVE-2024-46671 (2025-04-08)
+
+<code>An Incorrect User Management vulnerability [CWE-286] in FortiWeb version 7.6.2 and below, version 7.4.6 and below, version 7.2.10 and below, version 7.0.11 and below widgets dashboard may allow an authenticated attacker with at least read-only admin permission to perform operations on the dashboard of other administrators via crafted requests.
+</code>
+
+- [ixec-lab/fortinet-cve-2024-46671](https://github.com/ixec-lab/fortinet-cve-2024-46671)
 
 ### CVE-2024-46878 (2026-03-23)
 
@@ -53161,6 +53178,7 @@
 - [AlexLinov/MiniPlasma-Runner](https://github.com/AlexLinov/MiniPlasma-Runner)
 - [mohammadzarnian1357/MiniPlasma](https://github.com/mohammadzarnian1357/MiniPlasma)
 - [rfranca777/miniplasma-advisory](https://github.com/rfranca777/miniplasma-advisory)
+- [0xBlackash/CVE-2020-17103](https://github.com/0xBlackash/CVE-2020-17103)
 
 ### CVE-2020-17136 (2020-12-09)
 
@@ -57815,7 +57833,6 @@
 </code>
 
 - [malvika-thakur/CVE-2019-14234](https://github.com/malvika-thakur/CVE-2019-14234)
-- [giuliodamico/CVE-2019-14234](https://github.com/giuliodamico/CVE-2019-14234)
 
 ### CVE-2019-14267 (2019-07-29)
 
@@ -70112,6 +70129,7 @@
 - [Chathura123git/ethical-hacking-CVE-2011-2523](https://github.com/Chathura123git/ethical-hacking-CVE-2011-2523)
 - [nitinsukthe/OpenVAS-Vulnerability-Assessment-Incident-Response](https://github.com/nitinsukthe/OpenVAS-Vulnerability-Assessment-Incident-Response)
 - [H4R335HR/vsftpd-234-backdoor](https://github.com/H4R335HR/vsftpd-234-backdoor)
+- [kmrlbhr/pwntilldawn-10.150.150.12](https://github.com/kmrlbhr/pwntilldawn-10.150.150.12)
 
 ### CVE-2011-2553
 - [carlosrpastrana/cve-2011-2553](https://github.com/carlosrpastrana/cve-2011-2553)
