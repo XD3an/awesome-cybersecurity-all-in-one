@@ -263,6 +263,7 @@
 </code>
 
 - [cardosource/cve-2026-3180](https://github.com/cardosource/cve-2026-3180)
+- [carlosalbertotuma/cve-2026-3180-poc](https://github.com/carlosalbertotuma/cve-2026-3180-poc)
 
 ### CVE-2026-3288 (2026-03-09)
 
@@ -292,13 +293,6 @@
 </code>
 
 - [KKongTen/CVE-2026-3494_Verfication](https://github.com/KKongTen/CVE-2026-3494_Verfication)
-
-### CVE-2026-3600 (2026-04-08)
-
-<code>The Investi plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'investi-announcements-accordion' shortcode's 'maximum-num-years' attribute in all versions up to, and including, 1.0.26. This is due to insufficient input sanitization and output escaping on user-supplied shortcode attributes. Specifically, the 'maximum-num-years' attribute value is read directly from shortcode attributes and interpolated into a double-quoted HTML attribute without any escaping (no esc_attr(), htmlspecialchars(), or similar). This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
-</code>
-
-- [K3ysTr0K3R/CVE-2026-3600](https://github.com/K3ysTr0K3R/CVE-2026-3600)
 
 ### CVE-2026-3609 (2026-05-11)
 
@@ -389,6 +383,7 @@
 - [TheCyberGeek/CVE-2026-4480-PoC](https://github.com/TheCyberGeek/CVE-2026-4480-PoC)
 - [robinxiang/CVE-2026-4480](https://github.com/robinxiang/CVE-2026-4480)
 - [0xBlackash/CVE-2026-4480](https://github.com/0xBlackash/CVE-2026-4480)
+- [CarlosEduardoPM/CVE-2026-4480](https://github.com/CarlosEduardoPM/CVE-2026-4480)
 
 ### CVE-2026-4802 (2026-05-11)
 
@@ -492,7 +487,7 @@
 </code>
 
 - [kyukazamiqq/cve-2026-5718](https://github.com/kyukazamiqq/cve-2026-5718)
-- [rootdirective-sec/cve-2026-5718-Lab](https://github.com/rootdirective-sec/cve-2026-5718-Lab)
+- [rootdirective-sec/CVE-2026-5718-Lab](https://github.com/rootdirective-sec/CVE-2026-5718-Lab)
 - [xxconi/CVE-2026-5718](https://github.com/xxconi/CVE-2026-5718)
 
 ### CVE-2026-5724 (2026-04-10)
@@ -642,6 +637,7 @@
 </code>
 
 - [endangcamon/CVE-2026-7465-POC](https://github.com/endangcamon/CVE-2026-7465-POC)
+- [rootdirective-sec/CVE-2026-7465-Lab](https://github.com/rootdirective-sec/CVE-2026-7465-Lab)
 
 ### CVE-2026-7482 (2026-05-04)
 
@@ -887,7 +883,11 @@
 
 - [0xBlackash/CVE-2026-11499](https://github.com/0xBlackash/CVE-2026-11499)
 
-### CVE-2026-11518
+### CVE-2026-11518 (2026-06-08)
+
+<code>A vulnerability was identified in SourceCodester Inventory System 1.0. Affected is an unknown function of the file /users.php of the component User Management Page. The manipulation of the argument fullname/username leads to cross site scripting. The attack is possible to be carried out remotely. The exploit is publicly available and might be used.
+</code>
+
 - [Xmyronn/CVE-2026-11518-XSS](https://github.com/Xmyronn/CVE-2026-11518-XSS)
 
 ### CVE-2026-20131 (2026-03-04)
@@ -1125,6 +1125,8 @@
 - [ekomsSavior/telnet_scan](https://github.com/ekomsSavior/telnet_scan)
 - [ahmadsadeeq/TelnetdBypass-](https://github.com/ahmadsadeeq/TelnetdBypass-)
 - [tc4dy/CVE-2026-24061-PoC-Exploit](https://github.com/tc4dy/CVE-2026-24061-PoC-Exploit)
+- [K3ysTr0K3R/CVE-2026-24061](https://github.com/K3ysTr0K3R/CVE-2026-24061)
+- [achnouri/CVE-2026-24061-GNU-InetUtils-telnetd](https://github.com/achnouri/CVE-2026-24061-GNU-InetUtils-telnetd)
 
 ### CVE-2026-24072 (2026-05-04)
 
@@ -1317,6 +1319,7 @@
 
 - [BishopFox/CVE-2026-27886-check](https://github.com/BishopFox/CVE-2026-27886-check)
 - [EvtDanya/CVE-2026-27886](https://github.com/EvtDanya/CVE-2026-27886)
+- [thesw0rd/CVE-2026-27886-PoC-Account-Takeover](https://github.com/thesw0rd/CVE-2026-27886-PoC-Account-Takeover)
 
 ### CVE-2026-27944 (2026-03-05)
 
@@ -1491,6 +1494,7 @@
 - [HulnotHutu/CVE-2026-31431](https://github.com/HulnotHutu/CVE-2026-31431)
 - [OmerAti/almalinux-fix-cve-2026-31431](https://github.com/OmerAti/almalinux-fix-cve-2026-31431)
 - [ErdemOzgen/copy-fail-cve-2026-31431](https://github.com/ErdemOzgen/copy-fail-cve-2026-31431)
+- [Fulucky0-yuri/CVE-2026-31431-PocC](https://github.com/Fulucky0-yuri/CVE-2026-31431-PocC)
 - [abhishekhargan/CVE-2026-31431](https://github.com/abhishekhargan/CVE-2026-31431)
 - [MarioHY/cve_2026_31431_audit](https://github.com/MarioHY/cve_2026_31431_audit)
 - [AliHzSec/CVE-2026-31431](https://github.com/AliHzSec/CVE-2026-31431)
@@ -1834,6 +1838,13 @@
 
 - [nedlir/dasel-hardened-container](https://github.com/nedlir/dasel-hardened-container)
 - [rotavori/dasel-melange-apko](https://github.com/rotavori/dasel-melange-apko)
+
+### CVE-2026-33439 (2026-04-07)
+
+<code>Open Access Management (OpenAM) is an access management solution. Prior to 16.0.6, OpenIdentityPlatform OpenAM is vulnerable to pre-authentication Remote Code Execution (RCE) via unsafe Java deserialization of the jato.clientSession HTTP parameter. This bypasses the WhitelistObjectInputStream mitigation that was applied to the jato.pageSession parameter after CVE-2021-35464. An unauthenticated attacker can achieve arbitrary command execution on the server by sending a crafted serialized Java object as the jato.clientSession GET/POST parameter to any JATO ViewBean endpoint whose JSP contains &lt;jato:form&gt; tags (e.g., the Password Reset pages). This vulnerability is fixed in 16.0.6.
+</code>
+
+- [TheMalwareGuardian/CVE-2026-33439](https://github.com/TheMalwareGuardian/CVE-2026-33439)
 
 ### CVE-2026-33534 (2026-04-13)
 
@@ -2347,8 +2358,6 @@
 - [ADScanPro/CVE-2026-41089-LongLogon](https://github.com/ADScanPro/CVE-2026-41089-LongLogon)
 - [System32manager/CVE-2026-41089-699](https://github.com/System32manager/CVE-2026-41089-699)
 - [sidechairmanblast/CVE-2026-41089-984](https://github.com/sidechairmanblast/CVE-2026-41089-984)
-- [senseibreathhovel/CVE-2026-41089-663](https://github.com/senseibreathhovel/CVE-2026-41089-663)
-- [SkySmokeMoat/CVE-2026-41089-552](https://github.com/SkySmokeMoat/CVE-2026-41089-552)
 - [Planetpliexpose/CVE-2026-41089-277](https://github.com/Planetpliexpose/CVE-2026-41089-277)
 - [GalleryJoiner/CVE-2026-41089-686](https://github.com/GalleryJoiner/CVE-2026-41089-686)
 - [Mapclaregister/CVE-2026-41089-191](https://github.com/Mapclaregister/CVE-2026-41089-191)
@@ -2425,6 +2434,7 @@
 
 - [assetnote/cpanel2shell-scanner](https://github.com/assetnote/cpanel2shell-scanner)
 - [rfxn/cpanel-sessionscribe](https://github.com/rfxn/cpanel-sessionscribe)
+- [unteikyou/CVE-2026-41940-AuthBypass-Detector](https://github.com/unteikyou/CVE-2026-41940-AuthBypass-Detector)
 - [Lutfifakee-Project/CVE-2026-41940](https://github.com/Lutfifakee-Project/CVE-2026-41940)
 - [NULL200OK/cve-2026-41940-tool](https://github.com/NULL200OK/cve-2026-41940-tool)
 - [ynsmroztas/cPanelSniper](https://github.com/ynsmroztas/cPanelSniper)
@@ -2522,7 +2532,7 @@
 
 - [0xBlackash/CVE-2026-42208](https://github.com/0xBlackash/CVE-2026-42208)
 - [Zeltoc/threat-intel-brief-cve-2026-42208-litellm](https://github.com/Zeltoc/threat-intel-brief-cve-2026-42208-litellm)
-- [rootdirective-sec/cve-2026-42208-Lab](https://github.com/rootdirective-sec/cve-2026-42208-Lab)
+- [rootdirective-sec/CVE-2026-42208-Lab](https://github.com/rootdirective-sec/CVE-2026-42208-Lab)
 - [ridhinva/litellm-sqli-scanner](https://github.com/ridhinva/litellm-sqli-scanner)
 - [HAERIN-L/poc_cve-2026-42208](https://github.com/HAERIN-L/poc_cve-2026-42208)
 
@@ -2705,7 +2715,6 @@
 - [Koshmare-Blossom/DirtyFrag-go](https://github.com/Koshmare-Blossom/DirtyFrag-go)
 - [DylanClaudio/Reporte-de-Escalada-de-Privilegios-Local-Dirty-Frag](https://github.com/DylanClaudio/Reporte-de-Escalada-de-Privilegios-Local-Dirty-Frag)
 - [AtlasVector/Dirty-Frag-CVE-2026-43284](https://github.com/AtlasVector/Dirty-Frag-CVE-2026-43284)
-- [K3ysTr0K3R/CVE-2026-43284-CVE-2026-43500-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2026-43284-CVE-2026-43500-EXPLOIT)
 - [1neptune/DirtyFrag](https://github.com/1neptune/DirtyFrag)
 - [t1ckprivate/CVE-2026-43284-Dirty-Frag](https://github.com/t1ckprivate/CVE-2026-43284-Dirty-Frag)
 
@@ -2727,6 +2736,13 @@
 
 - [attaattaatta/CVE-2026-43500](https://github.com/attaattaatta/CVE-2026-43500)
 - [vorkampfer/dirty_frag_mitigation](https://github.com/vorkampfer/dirty_frag_mitigation)
+
+### CVE-2026-43512 (2026-05-12)
+
+<code>DEPRECATED: Authentication Bypass Issues vulnerability in digest authentication in Apache Tomcat.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.21, from 10.1.0-M1 through 10.1.54, from 9.0.0.M1 through 9.0.117, from 8.5.0 through 8.5.100, from before 7.0.0.\nOlder unsupported versions any also be affect\n\nUsers are recommended to upgrade to version 11.0.22, 10.1.55 or 9.0.118 which fix the issue.
+</code>
+
+- [covepseng/cve-2026-43512-poc](https://github.com/covepseng/cve-2026-43512-poc)
 
 ### CVE-2026-43893 (2026-05-11)
 
@@ -2889,15 +2905,6 @@
 - [andrei-majer/bitlocker-hardening](https://github.com/andrei-majer/bitlocker-hardening)
 - [0xBlackash/CVE-2026-45585](https://github.com/0xBlackash/CVE-2026-45585)
 - [ChanderManiPandey2022/Yellow-Key-Check](https://github.com/ChanderManiPandey2022/Yellow-Key-Check)
-- [WellElementalist/yellowkey-bitlocker-313](https://github.com/WellElementalist/yellowkey-bitlocker-313)
-- [SkySmokeMoat/yellowkey-bitlocker-644](https://github.com/SkySmokeMoat/yellowkey-bitlocker-644)
-- [CeilingSector/yellowkey-bitlocker-875](https://github.com/CeilingSector/yellowkey-bitlocker-875)
-- [senseibreathhovel/yellowkey-bitlocker-911](https://github.com/senseibreathhovel/yellowkey-bitlocker-911)
-- [ChannelShape/yellowkey-bitlocker-243](https://github.com/ChannelShape/yellowkey-bitlocker-243)
-- [Restoireflect/yellowkey-bitlocker-525](https://github.com/Restoireflect/yellowkey-bitlocker-525)
-- [digitalantconverter/yellowkey-bitlocker-365](https://github.com/digitalantconverter/yellowkey-bitlocker-365)
-- [digitalantconverter/yellowkey-bitlocker-183](https://github.com/digitalantconverter/yellowkey-bitlocker-183)
-- [Lengthlyapipe/yellowkey-bitlocker-813](https://github.com/Lengthlyapipe/yellowkey-bitlocker-813)
 - [ChanderManiPandey2022/YellowKey-BitLocker-Bypass-CVE-2026-45585-Detect-Fix-Automatically-via-Microsoft-Intune](https://github.com/ChanderManiPandey2022/YellowKey-BitLocker-Bypass-CVE-2026-45585-Detect-Fix-Automatically-via-Microsoft-Intune)
 
 ### CVE-2026-45659 (2026-05-22)
@@ -2925,7 +2932,11 @@
 - [MrForkBomb/CIFSwitch-Checker-CVE-2026-46243](https://github.com/MrForkBomb/CIFSwitch-Checker-CVE-2026-46243)
 - [liamromanis101/cifswitch-check](https://github.com/liamromanis101/cifswitch-check)
 
-### CVE-2026-46275
+### CVE-2026-46275 (2026-06-08)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: hci_uart: fix UAFs and race conditions in close and init paths\n\nVulnerabilities leading to Use-After-Free (UAF) and Null Pointer\nDereference (NPD) conditions were observed in the lifecycle management\nof hci_uart.\n\nThe primary issue arises because the workqueues (init_ready and\nwrite_work) are only flushed/cancelled if the HCI_UART_PROTO_READY\nflag is set during TTY close. If a hangup occurs before setup completes,\nhci_uart_tty_close() skips the teardown of these workqueues and\nproceeds to free the `hu` struct. When the scheduled work executes\nlater, it blindly dereferences the freed `hu` struct.\n\nFurthermore, several data races and UAFs were identified in the teardown\nsequence:\n1. Calling hci_uart_flush() from hci_uart_close() without effectively\n   disabling write_work causes a race condition where both can concurrently\n   double-free hu-&gt;tx_skb. This happens because protocol timers can\n   concurrently invoke hci_uart_tx_wakeup() and requeue write_work.\n2. Calling hci_free_dev(hdev) before hu-&gt;proto-&gt;close(hu) causes a UAF\n   when vendor specific protocol close callbacks dereference hu-&gt;hdev.\n3. In the initialization error paths, failing to take the proto_lock\n   write lock before clearing PROTO_READY leads to races with active\n   readers. Additionally, hci_uart_tty_receive() accesses hu-&gt;hdev\n   outside the read lock, leading to UAFs if the initialization error\n   path frees hdev concurrently.\n\nFix these synchronization and lifecycle issues by:\n1. Re-ordering hci_uart_tty_close() to clear HCI_UART_PROTO_READY first,\n   followed immediately by a cancel_work_sync(&amp;hu-&gt;write_work). Clearing\n   the flag locks out concurrent protocol timers from successfully invoking\n   hci_uart_tx_wakeup(), effectively rendering the cancellation permanent\n   and preventing the tx_skb double-free.\n2. Note: Clearing PROTO_READY early causes hci_uart_close() to skip\n   hu-&gt;proto-&gt;flush(). This is perfectly safe in the tty_close path\n   because hu-&gt;proto-&gt;close() executes shortly after, which intrinsically\n   purges all protocol SKB queues and tears down the state.\n3. Relocating hu-&gt;proto-&gt;close(hu) strictly prior to hci_free_dev(hdev)\n   across all close and error paths to prevent vendor-level UAFs.\n4. Moving the hdev-&gt;stat.byte_rx increment in hci_uart_tty_receive()\n   inside the proto_lock read-side critical section to safely synchronize\n   with device unregistration.\n5. Adding cancel_work_sync(&amp;hu-&gt;write_work) to hci_uart_close() to safely\n   flush the workqueue before hci_uart_flush() is invoked via the HCI core.\n6. Utilizing cancel_work_sync() instead of disable_work_sync() across\n   all paths to prevent permanently breaking user-space retry capabilities.
+</code>
+
 - [xxconi/CVE-2026-46275](https://github.com/xxconi/CVE-2026-46275)
 
 ### CVE-2026-46300 (2026-05-23)
@@ -3102,13 +3113,26 @@
 
 - [9Bakabaka/CVE-2026-49943-PoC](https://github.com/9Bakabaka/CVE-2026-49943-PoC)
 
-### CVE-2026-49975
+### CVE-2026-49975 (2026-06-08)
+
+<code>Memory Allocation with Excessive Size Value vulnerability in Apache HTTP Server's mod_http leads to denial of service via malicious HTTP requests.\n\nThis issue affects Apache HTTP Server: from 2.4.17 through 2.4.67.
+</code>
+
 - [fevar54/Proof-of-Concept-POC---CVE-2026-49975-HTTP-2-Bomb-](https://github.com/fevar54/Proof-of-Concept-POC---CVE-2026-49975-HTTP-2-Bomb-)
 - [mrx-arafat/CVE-2026-49975-POC](https://github.com/mrx-arafat/CVE-2026-49975-POC)
 - [obrige/http2-bomb](https://github.com/obrige/http2-bomb)
+- [renzi25031469/CVE-2026-49975-HTTP-2-Bomb](https://github.com/renzi25031469/CVE-2026-49975-HTTP-2-Bomb)
 
 ### CVE-2026-50142
 - [MuhammedHussein17/libheif-cve-2026-50142](https://github.com/MuhammedHussein17/libheif-cve-2026-50142)
+
+### CVE-2026-50751 (2026-06-08)
+
+<code>A logic flow weakness in Remote Access and Mobile Access certificate validation in deprecated IKEv1 key exchange allows an unauthenticated remote attacker to bypass user authentication and establish a remote access VPN connection without a valid user password.
+</code>
+
+- [WadesWeaponShed/CVE-2026-50751-Mitigation-Scripts](https://github.com/WadesWeaponShed/CVE-2026-50751-Mitigation-Scripts)
+- [0xBlackash/CVE-2026-50751](https://github.com/0xBlackash/CVE-2026-50751)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -12627,6 +12651,7 @@
 - [mananispiwpiw/CVE-2025-59528-PoC](https://github.com/mananispiwpiw/CVE-2025-59528-PoC)
 - [im-nymii/CVE-2025-59528](https://github.com/im-nymii/CVE-2025-59528)
 - [corey-farley/CVE-2025-59528-Flowise-RCE](https://github.com/corey-farley/CVE-2025-59528-Flowise-RCE)
+- [Moon-Harvest/CVE-2025-59528](https://github.com/Moon-Harvest/CVE-2025-59528)
 
 ### CVE-2025-59532 (2025-09-22)
 
@@ -14897,6 +14922,13 @@
 
 - [Cappricio-Securities/CVE-2024-0235](https://github.com/Cappricio-Securities/CVE-2024-0235)
 - [Nxploited/CVE-2024-0235-PoC](https://github.com/Nxploited/CVE-2024-0235-PoC)
+
+### CVE-2024-0258 (2024-03-08)
+
+<code>The issue was addressed with improved memory handling. This issue is fixed in iOS 17.4 and iPadOS 17.4, macOS Sonoma 14.4, tvOS 17.4, watchOS 10.4. An app may be able to execute arbitrary code out of its sandbox or with certain elevated privileges.
+</code>
+
+- [aliyabuz25/CVE-2024-0258-Research](https://github.com/aliyabuz25/CVE-2024-0258-Research)
 
 ### CVE-2024-0305 (2024-01-08)
 
@@ -22539,13 +22571,6 @@
 </code>
 
 - [9874621368/FOG-Project](https://github.com/9874621368/FOG-Project)
-
-### CVE-2024-39924 (2024-09-13)
-
-<code>An issue was discovered in Vaultwarden (formerly Bitwarden_RS) 1.30.3. A vulnerability has been identified in the authentication and authorization process of the endpoint responsible for altering the metadata of an emergency access. It permits an attacker with granted emergency access to escalate their privileges by changing the access level and modifying the wait time. Consequently, the attacker can gain full control over the vault (when only intended to have read access) while bypassing the necessary wait period.
-</code>
-
-- [l4rm4nd/PoC-CVE-2024-39924](https://github.com/l4rm4nd/PoC-CVE-2024-39924)
 
 ### CVE-2024-39929 (2024-07-04)
 
@@ -34297,6 +34322,7 @@
 - [Dr0xharakiri/CVE-2023-48795](https://github.com/Dr0xharakiri/CVE-2023-48795)
 - [fumioryoto/Terrapin-attack](https://github.com/fumioryoto/Terrapin-attack)
 - [oseasfr/Scanner_CVE_OpenSSH](https://github.com/oseasfr/Scanner_CVE_OpenSSH)
+- [Mr-Whiskerss/SSH-Terrapin-Prefix-Truncation-Weakness-CVE-2023-48795-Checker](https://github.com/Mr-Whiskerss/SSH-Terrapin-Prefix-Truncation-Weakness-CVE-2023-48795-Checker)
 
 ### CVE-2023-48842 (2023-12-01)
 
@@ -34734,7 +34760,6 @@
 - [miles3719/cve-2023-50164](https://github.com/miles3719/cve-2023-50164)
 - [aaronm-sysdig/cve-2023-50164](https://github.com/aaronm-sysdig/cve-2023-50164)
 - [snyk-labs/CVE-2023-50164-POC](https://github.com/snyk-labs/CVE-2023-50164-POC)
-- [sunnyvale-it/CVE-2023-50164-PoC](https://github.com/sunnyvale-it/CVE-2023-50164-PoC)
 - [AsfandAliMemon25/CVE-2023-50164Analysis-](https://github.com/AsfandAliMemon25/CVE-2023-50164Analysis-)
 - [NikitaPark/CVE-2023-50164-PoC](https://github.com/NikitaPark/CVE-2023-50164-PoC)
 - [Trackflaw/CVE-2024-10924-Wordpress-Docker](https://github.com/Trackflaw/CVE-2024-10924-Wordpress-Docker)
