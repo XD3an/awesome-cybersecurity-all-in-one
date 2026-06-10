@@ -1,6 +1,9 @@
 # PoC in GitHub
 
 ## 2026
+### CVE-2026-00000
+- [4ybrick/CVE-2026-00000](https://github.com/4ybrick/CVE-2026-00000)
+
 ### CVE-2026-0001
 - [HORKimhab/CVE-2026-0001](https://github.com/HORKimhab/CVE-2026-0001)
 
@@ -499,20 +502,6 @@
 
 - [tibrn/CVE-2026-5724](https://github.com/tibrn/CVE-2026-5724)
 
-### CVE-2026-5817 (2026-05-22)
-
-<code>The vllm-metal inference backend in Docker Model Runner on macOS unconditionally sets trust_remote_code=True when loading model tokenizers, and runs without sandboxing. This causes transformers.AutoTokenizer.from_pretrained() to import and execute arbitrary Python files included in any model pulled from an OCI registry, resulting in arbitrary code execution on the Docker host as the Docker Desktop user when inference is triggered.\n\nAny container on the Docker network can trigger this by calling the model-runner.docker.internal API to pull a malicious model and request inference.
-</code>
-
-- [gouldnicholas/CVE-2026-5817-PoC](https://github.com/gouldnicholas/CVE-2026-5817-PoC)
-
-### CVE-2026-5843 (2026-05-22)
-
-<code>The MLX inference backend in Docker Model Runner on macOS uses the MLX-LM library, which unconditionally imports and executes arbitrary Python files from model directories via the model_file configuration field in config.json. When a model's config.json specifies a model_file pointing to a Python file, MLX-LM uses importlib to load and execute it with no trust_remote_code gate or equivalent safety check. The MLX backend runs without sandboxing, resulting in arbitrary code execution on the Docker host as the Docker Desktop user.\n\nAny container on the Docker network can trigger this by calling the model-runner.docker.internal API to pull a malicious model from an attacker-controlled OCI registry and request inference.
-</code>
-
-- [davidrxchester/CVE-2026-5843](https://github.com/davidrxchester/CVE-2026-5843)
-
 ### CVE-2026-5865 (2026-04-08)
 
 <code>Type Confusion in V8 in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)
@@ -656,13 +645,6 @@
 </code>
 
 - [amirhosseinjamshidi64/CVE-2026-7567-POC](https://github.com/amirhosseinjamshidi64/CVE-2026-7567-POC)
-
-### CVE-2026-7669 (2026-05-02)
-
-<code>A vulnerability was detected in sgl-project SGLang up to 0.5.9. Impacted is the function get_tokenizer of the file python/sglang/srt/utils/hf_transformers_utils.py of the component HuggingFace Transformer Handler. The manipulation of the argument trust_remote_code with the input False as part of Boolean results in code injection. The attack can be executed remotely. A high complexity level is associated with this attack. The exploitability is considered difficult. In get_tokenizer(), when the caller passes trust_remote_code=False and HuggingFace transformers v5 returns a TokenizersBackend instance (the generic fallback for tokenizer classes not in the registry), SGLang silently re-invokes AutoTokenizer.from_pretrained with trust_remote_code=True, overriding the caller's explicit security setting. A model repository containing a malicious tokenizer.py referenced via auto_map in tokenizer_config.json will execute arbitrary Python in the SGLang process during this second call. No log line or warning is emitted. The override affects all current SGLang versions because transformers==5.3.0 is pinned in pyproject.toml. Both tokenizer_mode=&quot;auto&quot; and tokenizer_mode=&quot;slow&quot; are affected. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.
-</code>
-
-- [gouldnicholas/CVE-2026-7669-PoC](https://github.com/gouldnicholas/CVE-2026-7669-PoC)
 
 ### CVE-2026-7671 (2026-05-02)
 
@@ -871,6 +853,13 @@
 
 - [Xmyronn/CVE-2026-10290-SQLI](https://github.com/Xmyronn/CVE-2026-10290-SQLI)
 
+### CVE-2026-10520 (2026-06-09)
+
+<code>An OS Command Injection vulnerability in Ivanti Sentry before the R10.5.2, R10.6.2 and R10.7.1 versions allows a remote unauthenticated user to achieve root-level remote code execution
+</code>
+
+- [watchtowrlabs/watchTowr-vs-Ivanti-Sentry-RCE-CVE-2026-10520-CVE-2026-10523](https://github.com/watchtowrlabs/watchTowr-vs-Ivanti-Sentry-RCE-CVE-2026-10520-CVE-2026-10523)
+
 ### CVE-2026-10580 (2026-06-05)
 
 <code>The Hippoo Mobile App for WooCommerce plugin for WordPress is vulnerable to Authentication Bypass leading to Administrator Account Takeover in all versions up to and including 1.9.4. This is due to a logic conflation in HippooPermissions::get_user_permissions(), which returns the same null sentinel for both administrators and unauthenticated visitors — a value that HippooPermissions::has_role_access() unconditionally interprets as full administrator access — causing override_extension_permission_callback() to assign __return_true as the permission callback for every WordPress and WooCommerce REST route cloned under /wc-hippoo/v1/ext/ by HippooControllerWithAuth::re_register_external_routes(), while the block_unauthorized_access() pre-dispatch guard fails to block unauthenticated users for the same reason. This makes it possible for unauthenticated attackers to invoke any core REST endpoint without credentials — most critically, sending a POST request to /wc-hippoo/v1/ext/wp/v2/users/&lt;id&gt; with a {&quot;password&quot;:&quot;&lt;new_password&gt;&quot;} body to reset the password of any WordPress user, including the site administrator, and gain full administrative control of the site.
@@ -938,7 +927,7 @@
 
 ### CVE-2026-20245 (2026-06-04)
 
-<code>A vulnerability in the CLI of Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, could allow an authenticated, local attacker to execute arbitrary commands as root by supplying a crafted file to the affected system.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by uploading a crafted file to the affected system. A successful exploit could allow the attacker to perform command injection attacks on an affected system and elevate their privileges as the root user.\r\nTo exploit this vulnerability, the attacker must have netadmin privileges on the affected system. This would require valid credentials or exploitation of  or . Cisco is not aware of successful exploitation by other methods. Cisco has observed limited cases where the exploitation of this bug resulted in a configuration change pushed to edge devices.\r\nCisco recommends that customers upgrade to the fixed software that is documented in the  that was published on May 14, 2026, and verify the configuration of the edge devices.
+<code>A vulnerability in the CLI of Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, and Cisco Catalyst SD-WAN Validator, formerly SD-WAN vBond, could allow an authenticated, local attacker to execute arbitrary commands as root by supplying a crafted file to the affected system.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by uploading a crafted file to the affected system. A successful exploit could allow the attacker to perform command injection attacks on an affected system and elevate their privileges as the root user.&amp;nbsp;\r\nTo exploit this vulnerability, the attacker must have netadmin privileges on the affected system. This would require valid credentials or exploitation of  or . Cisco is not aware of successful exploitation by other methods. Cisco has observed limited cases where the exploitation of this bug resulted in a configuration change pushed to edge devices.\r\nCisco recommends that customers upgrade to the fixed software that is documented in the  that was published on May 14, 2026, and verify the configuration of the edge devices.
 </code>
 
 - [HORKimhab/CVE-2026-20245](https://github.com/HORKimhab/CVE-2026-20245)
@@ -1090,6 +1079,7 @@
 - [Dahalsamir/CVE-2026-23744-MCPJAM-RCE-exploit](https://github.com/Dahalsamir/CVE-2026-23744-MCPJAM-RCE-exploit)
 - [keeieb79/CVE-2026-23744-poc](https://github.com/keeieb79/CVE-2026-23744-poc)
 - [oryk0/CVE-2026-23744](https://github.com/oryk0/CVE-2026-23744)
+- [kennedy-aikohi/mcpjam-cve-2026-23744-validator](https://github.com/kennedy-aikohi/mcpjam-cve-2026-23744-validator)
 
 ### CVE-2026-23813 (2026-03-11)
 
@@ -1125,6 +1115,13 @@
 - [striga-ai/CVE-2026-23918](https://github.com/striga-ai/CVE-2026-23918)
 - [Bencodin/CVE-2026-23918-poc](https://github.com/Bencodin/CVE-2026-23918-poc)
 - [sibersan/apache_audit_cve-2026-23918](https://github.com/sibersan/apache_audit_cve-2026-23918)
+
+### CVE-2026-23921 (2026-03-24)
+
+<code>A low privilege Zabbix user with API access can exploit a blind SQL injection vulnerability in include/classes/api/CApiService.php to execute arbitrary SQL selects via the sortfield parameter. Although query results are not returned directly, an attacker can exfiltrate arbitrary database data through time-based techniques, potentially leading to session identifier disclosure and administrator account compromise.
+</code>
+
+- [RichJJ98/analise-vulnerabilidades-zabbix-notebooklm](https://github.com/RichJJ98/analise-vulnerabilidades-zabbix-notebooklm)
 
 ### CVE-2026-24055 (2026-01-22)
 
@@ -1226,7 +1223,11 @@
 
 - [DyniePro/CVE-2026-25643](https://github.com/DyniePro/CVE-2026-25643)
 
-### CVE-2026-25860
+### CVE-2026-25860 (2026-06-09)
+
+<code>OpenClinic GA 5.351.19 contains a reflected cross-site scripting vulnerability in the DICOM image upload handler that allows attackers to execute arbitrary JavaScript in a victim's browser by embedding malicious payloads in DICOM file metadata fields. Attackers can craft a DICOM file with JavaScript payloads in metadata fields such as Study Description, which are reflected without sanitization in popup.jsp and archiving/uploadfiles_jsp.java when processed through the Upload DICOM images feature.
+</code>
+
 - [partywavesec/CVE-2026-25860](https://github.com/partywavesec/CVE-2026-25860)
 
 ### CVE-2026-25895 (2026-02-09)
@@ -1488,7 +1489,6 @@
 - [lonelyor/CVE-2026-31431-exp](https://github.com/lonelyor/CVE-2026-31431-exp)
 - [Phalanx-CCS/Copy-Fail](https://github.com/Phalanx-CCS/Copy-Fail)
 - [shadowabi/CVE-2026-31431-CopyFail-Universal-LPE](https://github.com/shadowabi/CVE-2026-31431-CopyFail-Universal-LPE)
-- [Webhosting4U/Copy-Fail_Detect_and_mitigate_CVE-2026-31431](https://github.com/Webhosting4U/Copy-Fail_Detect_and_mitigate_CVE-2026-31431)
 - [Percivalll/Copy-Fail-CVE-2026-31431-Kubernetes-PoC](https://github.com/Percivalll/Copy-Fail-CVE-2026-31431-Kubernetes-PoC)
 - [yandex-cloud-examples/yc-mk8s-copy-fail-mitigation](https://github.com/yandex-cloud-examples/yc-mk8s-copy-fail-mitigation)
 - [mfloresdacunha/CVE-2026-31431](https://github.com/mfloresdacunha/CVE-2026-31431)
@@ -1496,7 +1496,6 @@
 - [diemoeve/copyfail-rs](https://github.com/diemoeve/copyfail-rs)
 - [cozystack/copy-fail-blocker](https://github.com/cozystack/copy-fail-blocker)
 - [mhdgning131/CopyFail-Patcher](https://github.com/mhdgning131/CopyFail-Patcher)
-- [SeanRickerd/cve-2026-31431](https://github.com/SeanRickerd/cve-2026-31431)
 - [selectel/mks-copy-fail-mitigation](https://github.com/selectel/mks-copy-fail-mitigation)
 - [devstuff/harden-docker-seccomp](https://github.com/devstuff/harden-docker-seccomp)
 - [Juguitos/copy-fail](https://github.com/Juguitos/copy-fail)
@@ -1514,15 +1513,10 @@
 - [toxy4ny/copy-fail-exploit-on-c-redteam](https://github.com/toxy4ny/copy-fail-exploit-on-c-redteam)
 - [TheMalwareGuardian/CVE-2026-31431](https://github.com/TheMalwareGuardian/CVE-2026-31431)
 - [atgreen/block-copyfail](https://github.com/atgreen/block-copyfail)
-- [beatbeast007/Linux-CopyFail-C-Version-CVE-2026-31431](https://github.com/beatbeast007/Linux-CopyFail-C-Version-CVE-2026-31431)
 - [rvzsec/CVE-2026-31431](https://github.com/rvzsec/CVE-2026-31431)
 - [K3ysTr0K3R/CVE-2026-31431-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2026-31431-EXPLOIT)
-- [povzayd/CVE-2026-31431](https://github.com/povzayd/CVE-2026-31431)
 - [sebinxavi/cve-checker-2026](https://github.com/sebinxavi/cve-checker-2026)
-- [mlazzarotto/copy-fail-CVE-2026-31431-mitigation-ansible-playbook](https://github.com/mlazzarotto/copy-fail-CVE-2026-31431-mitigation-ansible-playbook)
 - [ExploitEoom/CVE-2026-31431](https://github.com/ExploitEoom/CVE-2026-31431)
-- [ben-slates/CVE-2026-31431-Exploit](https://github.com/ben-slates/CVE-2026-31431-Exploit)
-- [sercuritycyber/COPY-FAIL-CVE-2026-31431](https://github.com/sercuritycyber/COPY-FAIL-CVE-2026-31431)
 - [bootsareme/copyfail-deconstructed](https://github.com/bootsareme/copyfail-deconstructed)
 - [mrunalp/block-copyfail](https://github.com/mrunalp/block-copyfail)
 - [1amBa7Man/Linux-copy-fail-CVE-2026-31431](https://github.com/1amBa7Man/Linux-copy-fail-CVE-2026-31431)
@@ -2100,9 +2094,6 @@
 
 - [NullByte8080/CVE-2026-36228](https://github.com/NullByte8080/CVE-2026-36228)
 
-### CVE-2026-36229
-- [NullByte8080/CVE-2026-36229](https://github.com/NullByte8080/CVE-2026-36229)
-
 ### CVE-2026-36239 (2026-05-26)
 
 <code>PbootCMS v.3.2.11 contains a code injection vulnerability in its site configuration functionality
@@ -2133,6 +2124,9 @@
 </code>
 
 - [kensh1k/CVE-2026-36438](https://github.com/kensh1k/CVE-2026-36438)
+
+### CVE-2026-36670
+- [Gabriel-Lacorte/CVE-2026-36670](https://github.com/Gabriel-Lacorte/CVE-2026-36670)
 
 ### CVE-2026-36748 (2026-06-03)
 
@@ -2355,7 +2349,6 @@
 - [hnytgl/CVE-2026-41089](https://github.com/hnytgl/CVE-2026-41089)
 - [ADScanPro/CVE-2026-41089-LongLogon](https://github.com/ADScanPro/CVE-2026-41089-LongLogon)
 - [System32manager/CVE-2026-41089-699](https://github.com/System32manager/CVE-2026-41089-699)
-- [sidechairmanblast/CVE-2026-41089-984](https://github.com/sidechairmanblast/CVE-2026-41089-984)
 - [Planetpliexpose/CVE-2026-41089-277](https://github.com/Planetpliexpose/CVE-2026-41089-277)
 - [GalleryJoiner/CVE-2026-41089-686](https://github.com/GalleryJoiner/CVE-2026-41089-686)
 - [Mapclaregister/CVE-2026-41089-191](https://github.com/Mapclaregister/CVE-2026-41089-191)
@@ -2369,6 +2362,8 @@
 - [CrimsonKingfisher/CVE-2026-41089-245](https://github.com/CrimsonKingfisher/CVE-2026-41089-245)
 - [RoyalViceroyBear/CVE-2026-41089-706](https://github.com/RoyalViceroyBear/CVE-2026-41089-706)
 - [jenniferreire26/CVE-2026-41089](https://github.com/jenniferreire26/CVE-2026-41089)
+- [SpiralSealFill/CVE-2026-41089-hub](https://github.com/SpiralSealFill/CVE-2026-41089-hub)
+- [Coasttruvitalize/CVE-2026-41089-latest](https://github.com/Coasttruvitalize/CVE-2026-41089-latest)
 
 ### CVE-2026-41091 (2026-05-20)
 
@@ -2849,6 +2844,7 @@
 </code>
 
 - [HORKimhab/CVE-2026-45247](https://github.com/HORKimhab/CVE-2026-45247)
+- [fevar54/PoC-Funcional---CVE-2026-45247-Mirasvit-Full-Page-Cache-Warmer-RCE-](https://github.com/fevar54/PoC-Funcional---CVE-2026-45247-Mirasvit-Full-Page-Cache-Warmer-RCE-)
 
 ### CVE-2026-45250 (2026-05-21)
 
@@ -2978,6 +2974,20 @@
 
 - [bradyjmcl/cve-2026-46391](https://github.com/bradyjmcl/cve-2026-46391)
 
+### CVE-2026-46394 (2026-06-05)
+
+<code>HAX CMS helps manage microsite universe with PHP or NodeJs backends. Prior to version 26.0.0, an OS command injection vulnerability exists in the Git.php library of the HAXcms PHP backend. The application constructs shell command strings using unsanitized input and executes them via proc_open(). An attacker who can control parameters passed into Git operations can execute arbitrary OS commands with the privileges of the web server. Out of 17 functions that invoke shell commands only 1 function (`commit()`) correctly uses `escapeshellarg()`. When combined with another vulnerability that allows configuration manipulation, this issue can lead to full remote code execution and complete system compromise. Version 26.0.0 patches the issue.
+</code>
+
+- [shreyas-challa/CVE-2026-46394-haxcms-git-command-injection](https://github.com/shreyas-challa/CVE-2026-46394-haxcms-git-command-injection)
+
+### CVE-2026-46395 (2026-06-05)
+
+<code>HAX CMS helps manage microsite universe with PHP or NodeJs backends. Prior to version 26.0.0, the `hmacBase64()` function in the HAXcms Node.js backend contains two critical cryptographic implementation errors that together allow any unauthenticated attacker to extract the system’s private signing key and forge arbitrary admin-level JSON Web Tokens (JWTs) allowing them to get full admin access with a single HTTP request. First, the function passes the literal string &quot;0&quot; as the HMAC signing key instead of the key parameter, making every HAXcms instance compute identical HMACs for the same input. Then, after computing the HMAC, the function concatenates the real key parameter which is &quot;this.privateKey + this.salt&quot;, the system’s master signing secret is directly onto the output. The combined buffer is base64-encoded and returned as the token. Every base64url token produced has the same structure: 32 bytes HMAC keyed with &quot;0&quot; and N bytes of `privateKey+salt`. An attacker base64-decodes any token, discards the first 32 bytes, and reads the private key directly. The `/system/api/connectionSettings` endpoint is unauthenticated and returns multiple tokens generated by this function. A single GET request to this endpoint exposes the private key. The PHP backend implements this function correctly with the actual key and returns only the hash. The PHP version produces 44-character tokens whereas the broken Node.js version produces 139+ character tokens. Version 26.0.0 fixes the issue.
+</code>
+
+- [shreyas-challa/CVE-2026-46395-haxcms-hmac-key-leak](https://github.com/shreyas-challa/CVE-2026-46395-haxcms-hmac-key-leak)
+
 ### CVE-2026-46529
 - [N1et/CVE-2026-46529](https://github.com/N1et/CVE-2026-46529)
 
@@ -3090,6 +3100,9 @@
 - [xtremebeing/starlette-host-header-lab](https://github.com/xtremebeing/starlette-host-header-lab)
 - [Bhanunamikaze/BadHost-CVE-2026-48710-Exploit](https://github.com/Bhanunamikaze/BadHost-CVE-2026-48710-Exploit)
 
+### CVE-2026-48732
+- [Saku0512/CVE-2026-48732-poc](https://github.com/Saku0512/CVE-2026-48732-poc)
+
 ### CVE-2026-48770
 - [atiilla/Notepad-8.9.6-PoC](https://github.com/atiilla/Notepad-8.9.6-PoC)
 
@@ -3109,6 +3122,13 @@
 </code>
 
 - [0xABCD01/CVE-2026-48866](https://github.com/0xABCD01/CVE-2026-48866)
+
+### CVE-2026-48907 (2026-06-05)
+
+<code>A vulnerability in the JCE editor extension for Joomla allows the creation of new editor profiles for unauthenticated users, ultimately resulting in PHP code upload and execution.
+</code>
+
+- [webshellseo8/CVE-2026-48907-Unauthenticated-RCE-in-JCE](https://github.com/webshellseo8/CVE-2026-48907-Unauthenticated-RCE-in-JCE)
 
 ### CVE-2026-49009 (2026-05-27)
 
@@ -3151,6 +3171,9 @@
 
 - [WadesWeaponShed/CVE-2026-50751-Mitigation-Scripts](https://github.com/WadesWeaponShed/CVE-2026-50751-Mitigation-Scripts)
 - [0xBlackash/CVE-2026-50751](https://github.com/0xBlackash/CVE-2026-50751)
+
+### CVE-2026-52885
+- [v3s9er/CVE-2026-52885](https://github.com/v3s9er/CVE-2026-52885)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -5561,6 +5584,13 @@
 </code>
 
 - [learner202649/CVE-2025-11203-PoC](https://github.com/learner202649/CVE-2025-11203-PoC)
+
+### CVE-2025-11262 (2026-05-29)
+
+<code>The Link Whisper Free plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the user_id parameter in all versions up to, and including, 0.9.0 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+</code>
+
+- [rootdirective-sec/CVE-2025-11262-Lab](https://github.com/rootdirective-sec/CVE-2025-11262-Lab)
 
 ### CVE-2025-11380 (2025-10-11)
 
@@ -9821,6 +9851,13 @@
 
 - [b-L-x/CVE-2025-46811](https://github.com/b-L-x/CVE-2025-46811)
 
+### CVE-2025-46816 (2025-05-06)
+
+<code>goshs is a SimpleHTTPServer written in Go. Starting in version 0.3.4 and prior to version 1.0.5, running goshs without arguments makes it possible for anyone to execute commands on the server. The function `dispatchReadPump` does not checks the option cli `-c`, thus allowing anyone to execute arbitrary command through the use of websockets. Version 1.0.5 fixes the issue.
+</code>
+
+- [Guilhem7/CVE-2025-46816](https://github.com/Guilhem7/CVE-2025-46816)
+
 ### CVE-2025-46822 (2025-05-21)
 
 <code>OsamaTaher/Java-springboot-codebase is a collection of Java and Spring Boot code snippets, applications, and projects. Prior to commit c835c6f7799eacada4c0fc77e0816f250af01ad2, insufficient path traversal mechanisms make absolute path traversal possible. This vulnerability allows unauthorized access to sensitive internal files. Commit c835c6f7799eacada4c0fc77e0816f250af01ad2 contains a patch for the issue.
@@ -10114,6 +10151,7 @@
 </code>
 
 - [HORKimhab/CVE-2025-48595](https://github.com/HORKimhab/CVE-2025-48595)
+- [fevar54/CVE-2025-48595-Android-Framework-Integer-Overflow-](https://github.com/fevar54/CVE-2025-48595-Android-Framework-Integer-Overflow-)
 
 ### CVE-2025-48703 (2025-09-19)
 
@@ -15373,7 +15411,6 @@
 - [sxyrxyy/CVE-2024-1709-ConnectWise-ScreenConnect-Authentication-Bypass](https://github.com/sxyrxyy/CVE-2024-1709-ConnectWise-ScreenConnect-Authentication-Bypass)
 - [cjybao/CVE-2024-1709-and-CVE-2024-1708](https://github.com/cjybao/CVE-2024-1709-and-CVE-2024-1708)
 - [AhmedMansour93/Event-ID-229-Rule-Name-SOC262-CVE-2024-1709-](https://github.com/AhmedMansour93/Event-ID-229-Rule-Name-SOC262-CVE-2024-1709-)
-- [tdawg506/ScreenConnect-CVE-2024-1709-Exploit](https://github.com/tdawg506/ScreenConnect-CVE-2024-1709-Exploit)
 
 ### CVE-2024-1781 (2024-02-23)
 
@@ -18018,6 +18055,13 @@
 
 - [LiChaser/CVE-2024-12484](https://github.com/LiChaser/CVE-2024-12484)
 
+### CVE-2024-12535 (2025-01-07)
+
+<code>The Host PHP Info plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check when including the 'phpinfo' function in all versions up to, and including, 1.0.4. This makes it possible for unauthenticated attackers to read configuration settings and predefined variables on the site's server. The plugin does not need to be activated for the vulnerability to be exploited.
+</code>
+
+- [RandomRobbieBF/CVE-2024-12535](https://github.com/RandomRobbieBF/CVE-2024-12535)
+
 ### CVE-2024-12537 (2025-03-20)
 
 <code>In version 0.3.32 of open-webui/open-webui, the absence of authentication mechanisms allows any unauthenticated attacker to access the `api/v1/utils/code/format` endpoint. If a malicious actor sends a POST request with an excessively high volume of content, the server could become completely unresponsive. This could lead to severe performance issues, causing the server to become unresponsive or experience significant degradation, ultimately resulting in service interruptions for legitimate users.
@@ -18368,6 +18412,7 @@
 - [kursadalsan/CVE-2024-21182](https://github.com/kursadalsan/CVE-2024-21182)
 - [dinosn/CVE-2024-21182](https://github.com/dinosn/CVE-2024-21182)
 - [jenniferreire26/CVE-2024-21182](https://github.com/jenniferreire26/CVE-2024-21182)
+- [fevar54/CVE-2024-21182---Oracle-WebLogic-Server-JNDI-Injection-RCE](https://github.com/fevar54/CVE-2024-21182---Oracle-WebLogic-Server-JNDI-Injection-RCE)
 
 ### CVE-2024-21262 (2024-10-15)
 
@@ -19319,7 +19364,6 @@
 - [wvverez/CVE-2024-23897](https://github.com/wvverez/CVE-2024-23897)
 - [vmc8ll/poc-CVE-2024-23897](https://github.com/vmc8ll/poc-CVE-2024-23897)
 - [w41l3r/jenkins_scan](https://github.com/w41l3r/jenkins_scan)
-- [kmrlbhr/pwntilldawn-10.150.150.38](https://github.com/kmrlbhr/pwntilldawn-10.150.150.38)
 
 ### CVE-2024-23898 (2024-01-24)
 
@@ -20691,7 +20735,6 @@
 - [Admin9961/CVE-2024-30088](https://github.com/Admin9961/CVE-2024-30088)
 - [Justintroup85/exploits-forsale-collateral-damage](https://github.com/Justintroup85/exploits-forsale-collateral-damage)
 - [ramzihafiz/cve-2024-30088-binary](https://github.com/ramzihafiz/cve-2024-30088-binary)
-- [repo4Chu/CVE-2024-30088__Windows-TOCTOU-exploit](https://github.com/repo4Chu/CVE-2024-30088__Windows-TOCTOU-exploit)
 
 ### CVE-2024-30090 (2024-06-11)
 
@@ -23029,6 +23072,7 @@
 - [godylockz/CVE-2024-42327](https://github.com/godylockz/CVE-2024-42327)
 - [874anthony/CVE-2024-42327_Zabbix_SQLi](https://github.com/874anthony/CVE-2024-42327_Zabbix_SQLi)
 - [fellipefelix06/Zabbix-CVE-2024-42327](https://github.com/fellipefelix06/Zabbix-CVE-2024-42327)
+- [RichJJ98/analise-vulnerabilidades-zabbix-notebooklm](https://github.com/RichJJ98/analise-vulnerabilidades-zabbix-notebooklm)
 
 ### CVE-2024-42346 (2024-09-20)
 
@@ -43570,7 +43614,7 @@
 - [vaibhavkrishna12004/ubuntu-privesc-lab](https://github.com/vaibhavkrishna12004/ubuntu-privesc-lab)
 - [Murguii/DEV-CVE-2021-4034](https://github.com/Murguii/DEV-CVE-2021-4034)
 - [B1gN0Se/PwnKit_CVE-2021-4034](https://github.com/B1gN0Se/PwnKit_CVE-2021-4034)
-- [usman-khan-23626/-CVE-2021-4034](https://github.com/usman-khan-23626/-CVE-2021-4034)
+- [usmansec/-CVE-2021-4034](https://github.com/usmansec/-CVE-2021-4034)
 - [trinetra-1308/PwnKit-](https://github.com/trinetra-1308/PwnKit-)
 - [vorkampfer/pwnkit_safety_check](https://github.com/vorkampfer/pwnkit_safety_check)
 - [jayhutajulu1/PwnKit-CVE-2021-4034](https://github.com/jayhutajulu1/PwnKit-CVE-2021-4034)
@@ -65605,6 +65649,13 @@
 
 - [flame-11/CVE-2017-20192-formidable-forms](https://github.com/flame-11/CVE-2017-20192-formidable-forms)
 
+### CVE-2017-20251 (2026-06-09)
+
+<code>WordPress Insert PHP plugin versions before 3.3.1 contain a PHP code injection vulnerability that allows unauthenticated attackers to execute arbitrary PHP code by injecting malicious shortcodes through the WordPress REST API. Attackers can send POST requests to the wp-json/wp/v2/posts endpoint with crafted content containing insert_php shortcodes to include and execute remote PHP files on the server.
+</code>
+
+- [Polosss/By-Poloss..-..CVE-2017-20251](https://github.com/Polosss/By-Poloss..-..CVE-2017-20251)
+
 ### CVE-2017-98505
 - [mike-williams/Struts2Vuln](https://github.com/mike-williams/Struts2Vuln)
 
@@ -70186,7 +70237,6 @@
 - [Chathura123git/ethical-hacking-CVE-2011-2523](https://github.com/Chathura123git/ethical-hacking-CVE-2011-2523)
 - [nitinsukthe/OpenVAS-Vulnerability-Assessment-Incident-Response](https://github.com/nitinsukthe/OpenVAS-Vulnerability-Assessment-Incident-Response)
 - [H4R335HR/vsftpd-234-backdoor](https://github.com/H4R335HR/vsftpd-234-backdoor)
-- [kmrlbhr/pwntilldawn-10.150.150.12](https://github.com/kmrlbhr/pwntilldawn-10.150.150.12)
 
 ### CVE-2011-2553
 - [carlosrpastrana/cve-2011-2553](https://github.com/carlosrpastrana/cve-2011-2553)
