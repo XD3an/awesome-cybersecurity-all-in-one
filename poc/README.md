@@ -48,6 +48,7 @@
 - [bolubey/CVE-2026-0257](https://github.com/bolubey/CVE-2026-0257)
 - [tushargurav28/CVE-2026-0257](https://github.com/tushargurav28/CVE-2026-0257)
 - [jenniferreire26/CVE-2026-0257](https://github.com/jenniferreire26/CVE-2026-0257)
+- [grayxploit/CVE-2026-0257](https://github.com/grayxploit/CVE-2026-0257)
 
 ### CVE-2026-0265 (2026-05-13)
 
@@ -70,6 +71,13 @@
 - [shizuku198411/CVE-2026-0300](https://github.com/shizuku198411/CVE-2026-0300)
 - [p3Nt3st3r-sTAr/CVE-2026-0300-POC](https://github.com/p3Nt3st3r-sTAr/CVE-2026-0300-POC)
 - [lu4m575/CVE-2026-0300](https://github.com/lu4m575/CVE-2026-0300)
+
+### CVE-2026-0542 (2026-02-25)
+
+<code>ServiceNow has addressed a remote code execution vulnerability that was identified in the ServiceNow AI platform.  This vulnerability could enable an unauthenticated user, in certain circumstances, to execute code within the ServiceNow Sandbox.   \n\n\n\n\n\nServiceNow addressed this vulnerability by deploying a security update to hosted instances. Relevant security updates also have been provided to ServiceNow self-hosted customers and partners. Further, the vulnerability is addressed in the listed patches and hot fixes. While we are not currently aware of exploitation against customer instances, we recommend customers promptly apply appropriate updates or upgrade if they have not already done so.
+</code>
+
+- [HORKimhab/CVE-2026-0542](https://github.com/HORKimhab/CVE-2026-0542)
 
 ### CVE-2026-0596 (2026-03-31)
 
@@ -128,6 +136,9 @@
 
 ### CVE-2026-1
 - [Pluto2362/CVE-2026-1](https://github.com/Pluto2362/CVE-2026-1)
+
+### CVE-2026-442
+- [HORKimhab/CVE-2026-442_](https://github.com/HORKimhab/CVE-2026-442_)
 
 ### CVE-2026-1208 (2026-01-24)
 
@@ -859,6 +870,7 @@
 </code>
 
 - [watchtowrlabs/watchTowr-vs-Ivanti-Sentry-RCE-CVE-2026-10520-CVE-2026-10523](https://github.com/watchtowrlabs/watchTowr-vs-Ivanti-Sentry-RCE-CVE-2026-10520-CVE-2026-10523)
+- [ogenich/CVE-2026-10520](https://github.com/ogenich/CVE-2026-10520)
 
 ### CVE-2026-10580 (2026-06-05)
 
@@ -1027,6 +1039,7 @@
 
 - [HORKimhab/CVE-2026-23111](https://github.com/HORKimhab/CVE-2026-23111)
 - [0xBlackash/CVE-2026-23111](https://github.com/0xBlackash/CVE-2026-23111)
+- [seguridadentrerios/CVE-2026-23111](https://github.com/seguridadentrerios/CVE-2026-23111)
 
 ### CVE-2026-23416 (2026-04-02)
 
@@ -1184,6 +1197,13 @@
 </code>
 
 - [doany1/CVE-2026-24849](https://github.com/doany1/CVE-2026-24849)
+
+### CVE-2026-25089 (2026-06-09)
+
+<code>A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox 4.2 all versions, FortiSandbox Cloud 5.0.4 through 5.0.5, FortiSandbox PaaS 5.0.4 through 5.0.5 may allow an unauthenticated attacker to execute unauthorized commands via specifically crafted HTTP requests
+</code>
+
+- [HORKimhab/CVE-2026-25089](https://github.com/HORKimhab/CVE-2026-25089)
 
 ### CVE-2026-25172 (2026-03-10)
 
@@ -1354,6 +1374,7 @@
 </code>
 
 - [jenniferreire26/CVE-2026-28318](https://github.com/jenniferreire26/CVE-2026-28318)
+- [EaEa0001/servu-cve-2026-28318-poc](https://github.com/EaEa0001/servu-cve-2026-28318-poc)
 
 ### CVE-2026-28766 (2026-04-03)
 
@@ -1495,9 +1516,7 @@
 - [JuanBindez/CVE-2026-31431](https://github.com/JuanBindez/CVE-2026-31431)
 - [diemoeve/copyfail-rs](https://github.com/diemoeve/copyfail-rs)
 - [cozystack/copy-fail-blocker](https://github.com/cozystack/copy-fail-blocker)
-- [mhdgning131/CopyFail-Patcher](https://github.com/mhdgning131/CopyFail-Patcher)
 - [selectel/mks-copy-fail-mitigation](https://github.com/selectel/mks-copy-fail-mitigation)
-- [devstuff/harden-docker-seccomp](https://github.com/devstuff/harden-docker-seccomp)
 - [Juguitos/copy-fail](https://github.com/Juguitos/copy-fail)
 - [liamromanis101/CVE-2026-31431-Copy-Fail---Vulnerability-Detection-Script](https://github.com/liamromanis101/CVE-2026-31431-Copy-Fail---Vulnerability-Detection-Script)
 - [mym0us3r/COPY-FAIL-Detection-with-Wazuh-4.14.4](https://github.com/mym0us3r/COPY-FAIL-Detection-with-Wazuh-4.14.4)
@@ -1510,18 +1529,14 @@
 - [HulnotHutu/CVE-2026-31431](https://github.com/HulnotHutu/CVE-2026-31431)
 - [OmerAti/almalinux-fix-cve-2026-31431](https://github.com/OmerAti/almalinux-fix-cve-2026-31431)
 - [ErdemOzgen/copy-fail-cve-2026-31431](https://github.com/ErdemOzgen/copy-fail-cve-2026-31431)
-- [toxy4ny/copy-fail-exploit-on-c-redteam](https://github.com/toxy4ny/copy-fail-exploit-on-c-redteam)
 - [TheMalwareGuardian/CVE-2026-31431](https://github.com/TheMalwareGuardian/CVE-2026-31431)
 - [atgreen/block-copyfail](https://github.com/atgreen/block-copyfail)
 - [rvzsec/CVE-2026-31431](https://github.com/rvzsec/CVE-2026-31431)
 - [K3ysTr0K3R/CVE-2026-31431-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2026-31431-EXPLOIT)
 - [sebinxavi/cve-checker-2026](https://github.com/sebinxavi/cve-checker-2026)
-- [ExploitEoom/CVE-2026-31431](https://github.com/ExploitEoom/CVE-2026-31431)
 - [bootsareme/copyfail-deconstructed](https://github.com/bootsareme/copyfail-deconstructed)
 - [mrunalp/block-copyfail](https://github.com/mrunalp/block-copyfail)
 - [1amBa7Man/Linux-copy-fail-CVE-2026-31431](https://github.com/1amBa7Man/Linux-copy-fail-CVE-2026-31431)
-- [Lyutoon/CopyFail-Experiment](https://github.com/Lyutoon/CopyFail-Experiment)
-- [ledlight33/copyfail-dfir](https://github.com/ledlight33/copyfail-dfir)
 - [Smarttfoxx/copyfail](https://github.com/Smarttfoxx/copyfail)
 - [parmstro/cfDr](https://github.com/parmstro/cfDr)
 - [RoflSecurity/copy_fail](https://github.com/RoflSecurity/copy_fail)
@@ -2429,13 +2444,8 @@
 - [assetnote/cpanel2shell-scanner](https://github.com/assetnote/cpanel2shell-scanner)
 - [rfxn/cpanel-sessionscribe](https://github.com/rfxn/cpanel-sessionscribe)
 - [Christian93111/CVE-2026-41940](https://github.com/Christian93111/CVE-2026-41940)
-- [0dev1337/cpanelscanner](https://github.com/0dev1337/cpanelscanner)
-- [kmaruthisrikar/CVE-2026-41940-cPanel-Auth-Bypass-Exploit](https://github.com/kmaruthisrikar/CVE-2026-41940-cPanel-Auth-Bypass-Exploit)
 - [Jenderal92/CVE-2026-41940](https://github.com/Jenderal92/CVE-2026-41940)
-- [XsanFlip/poc-cpanel-cve-2026-41940](https://github.com/XsanFlip/poc-cpanel-cve-2026-41940)
 - [0xBlackash/CVE-2026-41940](https://github.com/0xBlackash/CVE-2026-41940)
-- [devtint/CVE-2026-41940](https://github.com/devtint/CVE-2026-41940)
-- [vineet7800/cpanel-malware-cleaner-cve-2026](https://github.com/vineet7800/cpanel-malware-cleaner-cve-2026)
 - [AmirrezaMarzban/portscan-CVE-2026-41940](https://github.com/AmirrezaMarzban/portscan-CVE-2026-41940)
 - [MrAriaNet/cPanel-Fix](https://github.com/MrAriaNet/cPanel-Fix)
 - [dennisec/CVE-2026-41940](https://github.com/dennisec/CVE-2026-41940)
@@ -2819,6 +2829,13 @@
 
 - [hakaioffsec/CVE-2026-44706](https://github.com/hakaioffsec/CVE-2026-44706)
 
+### CVE-2026-44963 (2026-06-09)
+
+<code>A vulnerability allowing remote code execution (RCE) on the Backup Server by an authenticated domain user.
+</code>
+
+- [HORKimhab/CVE-2026-44963](https://github.com/HORKimhab/CVE-2026-44963)
+
 ### CVE-2026-45067
 - [HORKimhab/CVE-2026-45067](https://github.com/HORKimhab/CVE-2026-45067)
 
@@ -3130,6 +3147,13 @@
 
 - [webshellseo8/CVE-2026-48907-Unauthenticated-RCE-in-JCE](https://github.com/webshellseo8/CVE-2026-48907-Unauthenticated-RCE-in-JCE)
 
+### CVE-2026-48962 (2026-05-27)
+
+<code>IO::Compress versions before 2.220 for Perl can execute arbitrary code in File::GlobMapper via an attacker-controlled output glob.\n\n_parseOutputGlob() wraps the caller-supplied output glob string in double quotes and stores it in the parser state; _getFiles() then runs the stored expression through eval STRING. A literal double quote in the output glob closes the dquote wrapper, and the characters that follow are evaluated as Perl.\n\nArbitrary Perl in the output glob executes at the calling process's privilege.
+</code>
+
+- [JoakimBulow/CVE-2026-48962](https://github.com/JoakimBulow/CVE-2026-48962)
+
 ### CVE-2026-49009 (2026-05-27)
 
 <code>Northern.tech Mender Server v4.1.0, v4.0.1 and below, and fixed in v4.1.1 and v4.0.2 allows Directory Traversal.
@@ -3160,6 +3184,8 @@
 - [mrx-arafat/CVE-2026-49975-POC](https://github.com/mrx-arafat/CVE-2026-49975-POC)
 - [obrige/http2-bomb](https://github.com/obrige/http2-bomb)
 - [renzi25031469/CVE-2026-49975-HTTP-2-Bomb](https://github.com/renzi25031469/CVE-2026-49975-HTTP-2-Bomb)
+- [EQSTLab/CVE-2026-49975](https://github.com/EQSTLab/CVE-2026-49975)
+- [qpzmalqp/CVE-2026-49975](https://github.com/qpzmalqp/CVE-2026-49975)
 
 ### CVE-2026-50142
 - [MuhammedHussein17/libheif-cve-2026-50142](https://github.com/MuhammedHussein17/libheif-cve-2026-50142)
@@ -7087,6 +7113,7 @@
 - [EQSTLab/CVE-2025-24813](https://github.com/EQSTLab/CVE-2025-24813)
 - [suil12/CVE-2025-24813_presentation](https://github.com/suil12/CVE-2025-24813_presentation)
 - [JTMH37/Apache-Tomcat-CVE-2025-24813-Lab](https://github.com/JTMH37/Apache-Tomcat-CVE-2025-24813-Lab)
+- [Dhananjayasj/CVE-2025-24813-Apache-Tomcat-Partial-PUT-Deserialization-RCE-](https://github.com/Dhananjayasj/CVE-2025-24813-Apache-Tomcat-Partial-PUT-Deserialization-RCE-)
 
 ### CVE-2025-24893 (2025-02-20)
 
@@ -8166,6 +8193,7 @@
 - [Nayekah/Next.js-Proof-of-Concept](https://github.com/Nayekah/Next.js-Proof-of-Concept)
 - [bk-security/auth-header-trust-rules](https://github.com/bk-security/auth-header-trust-rules)
 - [gitgudKrish/cve-2025-29927-nextjs](https://github.com/gitgudKrish/cve-2025-29927-nextjs)
+- [SwapnilDeshpande/cve-2025-29927-lab](https://github.com/SwapnilDeshpande/cve-2025-29927-lab)
 
 ### CVE-2025-29943 (2026-01-16)
 
@@ -18055,13 +18083,6 @@
 
 - [LiChaser/CVE-2024-12484](https://github.com/LiChaser/CVE-2024-12484)
 
-### CVE-2024-12535 (2025-01-07)
-
-<code>The Host PHP Info plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check when including the 'phpinfo' function in all versions up to, and including, 1.0.4. This makes it possible for unauthenticated attackers to read configuration settings and predefined variables on the site's server. The plugin does not need to be activated for the vulnerability to be exploited.
-</code>
-
-- [RandomRobbieBF/CVE-2024-12535](https://github.com/RandomRobbieBF/CVE-2024-12535)
-
 ### CVE-2024-12537 (2025-03-20)
 
 <code>In version 0.3.32 of open-webui/open-webui, the absence of authentication mechanisms allows any unauthenticated attacker to access the `api/v1/utils/code/format` endpoint. If a malicious actor sends a POST request with an excessively high volume of content, the server could become completely unresponsive. This could lead to severe performance issues, causing the server to become unresponsive or experience significant degradation, ultimately resulting in service interruptions for legitimate users.
@@ -18275,6 +18296,13 @@
 </code>
 
 - [takistmr/CVE-2024-20137](https://github.com/takistmr/CVE-2024-20137)
+
+### CVE-2024-20154 (2025-01-06)
+
+<code>In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY00720348; Issue ID: MSV-2392.
+</code>
+
+- [sneakid/CVE-2024-20154](https://github.com/sneakid/CVE-2024-20154)
 
 ### CVE-2024-20338 (2024-03-06)
 
@@ -29145,13 +29173,6 @@
 
 - [Trinadh465/linux-4.1.15_CVE-2023-26607](https://github.com/Trinadh465/linux-4.1.15_CVE-2023-26607)
 
-### CVE-2023-26609 (2023-02-27)
-
-<code>ABUS TVIP 20000-21150 devices allows remote attackers to execute arbitrary code via shell metacharacters in the /cgi-bin/mft/wireless_mft ap field.
-</code>
-
-- [D1G17/CVE-2023-26609](https://github.com/D1G17/CVE-2023-26609)
-
 ### CVE-2023-26692 (2023-03-30)
 
 <code>ZCBS Zijper Collectie Beheer Systeem (ZCBS), Zijper Publication Management System (ZPBS), and Zijper Image Bank Management System (ZBBS) 4.14k is vulnerable to Cross Site Scripting (XSS).
@@ -31624,6 +31645,13 @@
 - [x0rb3l/CVE-2023-36802-MSKSSRV-LPE](https://github.com/x0rb3l/CVE-2023-36802-MSKSSRV-LPE)
 - [Nero22k/cve-2023-36802](https://github.com/Nero22k/cve-2023-36802)
 - [rahul0xkr/Reproducing-CVE-2023-36802](https://github.com/rahul0xkr/Reproducing-CVE-2023-36802)
+
+### CVE-2023-36808 (2023-07-05)
+
+<code>GLPI is a free asset and IT management software package. Starting in version 0.80 and prior to version 10.0.8, Computer Virtual Machine form and GLPI inventory request can be used to perform a SQL injection attack. Version 10.0.8 has a patch for this issue. As a workaround, one may disable native inventory.
+</code>
+
+- [fransosiche/exploit-cve-2023-36808](https://github.com/fransosiche/exploit-cve-2023-36808)
 
 ### CVE-2023-36812 (2023-06-30)
 
@@ -38069,7 +38097,7 @@
 <code>qs before 6.10.3, as used in Express before 4.17.3 and other products, allows attackers to cause a Node process hang for an Express application because an __ proto__ key can be used. In many typical Express use cases, an unauthenticated remote attacker can place the attack payload in the query string of the URL that is used to visit the application, such as a[__proto__]=b&amp;a[__proto__]&amp;a[length]=100000000. The fix was backported to qs 6.9.7, 6.8.3, 6.7.3, 6.6.1, 6.5.3, 6.4.1, 6.3.3, and 6.2.4 (and therefore Express 4.17.3, which has &quot;deps: qs@6.9.7&quot; in its release description, is not vulnerable).
 </code>
 
-- [n8tz/CVE-2022-24999](https://github.com/n8tz/CVE-2022-24999)
+- [9pings/CVE-2022-24999](https://github.com/9pings/CVE-2022-24999)
 
 ### CVE-2022-25012 (2022-03-01)
 
@@ -67001,6 +67029,13 @@
 </code>
 
 - [r00t4dm/Jenkins-CVE-2016-9299](https://github.com/r00t4dm/Jenkins-CVE-2016-9299)
+
+### CVE-2016-9355 (2017-02-13)
+
+<code>An issue was discovered in Becton, Dickinson and Company (BD) Alaris 8015 Point of Care (PC) unit, Version 9.5 and prior versions, and Version 9.7. An unauthorized user with physical access to an Alaris 8015 PC unit may be able to obtain unencrypted wireless network authentication credentials and other sensitive technical data by disassembling an Alaris 8015 PC unit and accessing the device's flash memory. Older software versions of the Alaris 8015 PC unit, Version 9.5 and prior versions, store wireless network authentication credentials and other sensitive technical data on the affected device's removable flash memory. Being able to remove the flash memory from the affected device reduces the risk of detection, allowing an attacker to extract stored data at the attacker's convenience.
+</code>
+
+- [nadafarafat/bd-alaris-firmware-analysis](https://github.com/nadafarafat/bd-alaris-firmware-analysis)
 
 ### CVE-2016-9795 (2017-01-27)
 
