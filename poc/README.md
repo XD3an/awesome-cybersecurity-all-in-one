@@ -65,6 +65,13 @@
 - [tstephens1080/palo-alto-cve-2026-0265-checker](https://github.com/tstephens1080/palo-alto-cve-2026-0265-checker)
 - [BishopFox/CVE-2026-0265-check](https://github.com/BishopFox/CVE-2026-0265-check)
 
+### CVE-2026-0273 (2026-06-10)
+
+<code>A command injection vulnerability in Palo Alto Networks PAN-OS® software enables an authenticated administrator to bypass system restrictions and run arbitrary commands as a root user. To be able to exploit this issue, the user must have access to the PAN-OS CLI or Web UI.\n\nThe security risk posed by this issue is significantly minimized when CLI access is restricted to a limited group of administrators and by restricting access to the management web interface to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\nThis issue is applicable to PAN-OS software on PA-Series and VM-Series firewalls and on Panorama (virtual and M-Series).\n\nCloud NGFW and Prisma® Access are not affected by this vulnerability.
+</code>
+
+- [HORKimhab/CVE-2026-0273](https://github.com/HORKimhab/CVE-2026-0273)
+
 ### CVE-2026-0300 (2026-05-06)
 
 <code>A buffer overflow vulnerability in the User-ID™ Authentication Portal (aka Captive Portal) service of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially crafted packets. \n\nThe risk of this issue is greatly reduced if you secure access to the User-ID™ Authentication Portal per the  best practice guidelines https://knowledgebase.paloaltonetworks.com/KCSArticleDetail  by restricting access to only trusted internal IP addresses.\n\nPrisma Access, Cloud NGFW and Panorama appliances are not impacted by this vulnerability.
@@ -181,13 +188,6 @@
 </code>
 
 - [willygailo/WG-CVE-2026-1555-Linux](https://github.com/willygailo/WG-CVE-2026-1555-Linux)
-
-### CVE-2026-1731 (2026-02-06)
-
-<code>BeyondTrust Remote Support (RS) and certain older versions of Privileged Remote Access (PRA) contain a critical pre-authentication remote code execution vulnerability. By sending specially crafted requests, an unauthenticated remote attacker may be able to execute operating system commands in the context of the site user.
-</code>
-
-- [jakubie07/CVE-2026-1731](https://github.com/jakubie07/CVE-2026-1731)
 
 ### CVE-2026-1814 (2026-02-03)
 
@@ -781,6 +781,13 @@
 - [HORKimhab/CVE-2026-8732](https://github.com/HORKimhab/CVE-2026-8732)
 - [p3Nt3st3r-sTAr/CVE-2026-8732-POC](https://github.com/p3Nt3st3r-sTAr/CVE-2026-8732-POC)
 - [Diznev/CVE-2026-8732-EXPLOIT](https://github.com/Diznev/CVE-2026-8732-EXPLOIT)
+
+### CVE-2026-8809 (2026-05-28)
+
+<code>The Advanced Custom Fields: Extended plugin for WordPress is vulnerable to Privilege Escalation via Validation Bypass in all versions up to and including 0.9.2.5. The vulnerability exists due to the after_validate_save_post() function unconditionally trusting the attacker-controlled _acf_post_id POST parameter — with no authentication or integrity verification — to select a cleanup branch that silently discards all validation errors not prefixed with acfe:. This makes it possible for unauthenticated attackers to suppress both the role allow-list validation error added by acfe_field_user_roles::validate_front_value() and the administrator-role capability guard error added by acfe_module_form_action_user::validate_action(), causing wp_insert_user() to execute with an attacker-supplied administrator role argument and resulting in the creation of a new administrator-level user account. Exploitation requires the target site to expose a public ACFE frontend form configured with a Create User action that maps a role field.
+</code>
+
+- [izxci/CVE-2026-8809](https://github.com/izxci/CVE-2026-8809)
 
 ### CVE-2026-8832 (2026-05-27)
 
@@ -1480,7 +1487,7 @@
 <code>pac4j-jwt versions prior to 4.5.9, 5.7.9, and 6.3.3 contain an authentication bypass vulnerability in JwtAuthenticator when processing encrypted JWTs that allows remote attackers to forge authentication tokens. Attackers who possess the server's RSA public key can create a JWE-wrapped PlainJWT with arbitrary subject and role claims, bypassing signature verification to authenticate as any user including administrators.
 </code>
 
-- [STK-Security/CVE-2026-29000-pac4j-jwt](https://github.com/STK-Security/CVE-2026-29000-pac4j-jwt)
+- [Strikoder-Premium/CVE-2026-29000-pac4j-jwt](https://github.com/Strikoder-Premium/CVE-2026-29000-pac4j-jwt)
 - [ledksv/Principal-HackTheBox](https://github.com/ledksv/Principal-HackTheBox)
 - [zF-tm/CVE-2026-29000](https://github.com/zF-tm/CVE-2026-29000)
 - [tc4dy/CVE-2026-29000-PoC-Exploit](https://github.com/tc4dy/CVE-2026-29000-PoC-Exploit)
@@ -1572,7 +1579,6 @@
 
 - [John-Popovici/CVE-2026-31431-CopyFail-Linux-PrivEsc](https://github.com/John-Popovici/CVE-2026-31431-CopyFail-Linux-PrivEsc)
 - [tgies/copy-fail-c](https://github.com/tgies/copy-fail-c)
-- [Crihexe/copy-fail-tiny-elf-CVE-2026-31431](https://github.com/Crihexe/copy-fail-tiny-elf-CVE-2026-31431)
 - [gubaiovo/CVE-2026-31431](https://github.com/gubaiovo/CVE-2026-31431)
 - [insomnisec/Detections-CVE-2026-31431](https://github.com/insomnisec/Detections-CVE-2026-31431)
 - [bigwario/copy-fail-CVE-2026-31431-C](https://github.com/bigwario/copy-fail-CVE-2026-31431-C)
@@ -1601,7 +1607,6 @@
 - [atgreen/block-copyfail](https://github.com/atgreen/block-copyfail)
 - [rvzsec/CVE-2026-31431](https://github.com/rvzsec/CVE-2026-31431)
 - [K3ysTr0K3R/CVE-2026-31431-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2026-31431-EXPLOIT)
-- [sebinxavi/cve-checker-2026](https://github.com/sebinxavi/cve-checker-2026)
 - [bootsareme/copyfail-deconstructed](https://github.com/bootsareme/copyfail-deconstructed)
 - [mrunalp/block-copyfail](https://github.com/mrunalp/block-copyfail)
 - [1amBa7Man/Linux-copy-fail-CVE-2026-31431](https://github.com/1amBa7Man/Linux-copy-fail-CVE-2026-31431)
@@ -1611,16 +1616,9 @@
 - [ROSNLR5/modrosnlr5](https://github.com/ROSNLR5/modrosnlr5)
 - [KanbaraAkihito/CVE-2026-31431-copyfail-rs](https://github.com/KanbaraAkihito/CVE-2026-31431-copyfail-rs)
 - [suominen/CVE-2026-31431](https://github.com/suominen/CVE-2026-31431)
-- [pulentoski/CVE-2026-31431](https://github.com/pulentoski/CVE-2026-31431)
 - [joltcan/ansible-role-cve-2026-31431](https://github.com/joltcan/ansible-role-cve-2026-31431)
-- [Gr-1m/CVE-2026-31431](https://github.com/Gr-1m/CVE-2026-31431)
 - [ctzisme/copyfail-guard](https://github.com/ctzisme/copyfail-guard)
-- [rivaldofwijaya/copy-success](https://github.com/rivaldofwijaya/copy-success)
-- [CybroZeus/Copy-Fail-Exploit-CVE-2026-31431](https://github.com/CybroZeus/Copy-Fail-Exploit-CVE-2026-31431)
 - [AvPrince26/copy-fail-CVE-2026-31431-Python-Golfing](https://github.com/AvPrince26/copy-fail-CVE-2026-31431-Python-Golfing)
-- [pedromizz/copy-fail](https://github.com/pedromizz/copy-fail)
-- [astounds/copy-fail-CVE-2026-31431](https://github.com/astounds/copy-fail-CVE-2026-31431)
-- [jbnetwork-git/copy-fail-check](https://github.com/jbnetwork-git/copy-fail-check)
 - [danimrtzp/CVE-2026-31431-REVSHELL](https://github.com/danimrtzp/CVE-2026-31431-REVSHELL)
 - [pyroceper/copy-fail-CVE-2026-31431](https://github.com/pyroceper/copy-fail-CVE-2026-31431)
 - [aexdyhaxor/CVE-2026-31431-copy-fail](https://github.com/aexdyhaxor/CVE-2026-31431-copy-fail)
@@ -1647,7 +1645,6 @@
 - [g1nt0n1x/copy-fail-CVE-2026-31431-shell](https://github.com/g1nt0n1x/copy-fail-CVE-2026-31431-shell)
 - [Qengineering/RK35xx-CopyFail-Hotfix](https://github.com/Qengineering/RK35xx-CopyFail-Hotfix)
 - [ShahaB108/CVE-2026-31431_Kernel_Checker](https://github.com/ShahaB108/CVE-2026-31431_Kernel_Checker)
-- [vasyapokemon/cve-2026-31431](https://github.com/vasyapokemon/cve-2026-31431)
 - [xeloxa/copyfail-exploit](https://github.com/xeloxa/copyfail-exploit)
 - [Mrhudson69/cve-2026-31431](https://github.com/Mrhudson69/cve-2026-31431)
 - [net0bsd/Mitigaciones](https://github.com/net0bsd/Mitigaciones)
@@ -2098,6 +2095,14 @@
 
 - [xooxo/CVE-2026-35250](https://github.com/xooxo/CVE-2026-35250)
 
+### CVE-2026-35273 (2026-06-11)
+
+<code>Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Updates Environment Management). Supported versions that are affected are 8.61 and 8.62. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise PeopleSoft Enterprise PeopleTools. Successful attacks of this vulnerability can result in takeover of PeopleSoft Enterprise PeopleTools. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).
+</code>
+
+- [HORKimhab/CVE-2026-35273](https://github.com/HORKimhab/CVE-2026-35273)
+- [0xBlackash/CVE-2026-35273](https://github.com/0xBlackash/CVE-2026-35273)
+
 ### CVE-2026-35330
 - [JohannesLks/CVE-2026-35330](https://github.com/JohannesLks/CVE-2026-35330)
 
@@ -2390,6 +2395,9 @@
 ### CVE-2026-40776
 - [lorenzofradeani/CVE-2026-40776](https://github.com/lorenzofradeani/CVE-2026-40776)
 
+### CVE-2026-40791
+- [Rat5ak/CVE-2026-40791-WP-Time-Slots-Booking-Form-XSS](https://github.com/Rat5ak/CVE-2026-40791-WP-Time-Slots-Booking-Form-XSS)
+
 ### CVE-2026-40897 (2026-04-24)
 
 <code>Math.js is an extensive math library for JavaScript and Node.js. From 13.1.1 to before 15.2.0, a vulnerability allowed executing arbitrary JavaScript via the expression parser of mathjs. You can be affected when you have an application where users can evaluate arbitrary expressions using the mathjs expression parser. This vulnerability is fixed in 15.2.0.
@@ -2490,7 +2498,6 @@
 - [Jenderal92/CVE-2026-41940](https://github.com/Jenderal92/CVE-2026-41940)
 - [0xBlackash/CVE-2026-41940](https://github.com/0xBlackash/CVE-2026-41940)
 - [MrAriaNet/cPanel-Fix](https://github.com/MrAriaNet/cPanel-Fix)
-- [Ishanoshada/CVE-2026-41940-Exploit-PoC](https://github.com/Ishanoshada/CVE-2026-41940-Exploit-PoC)
 - [MrOplus/CVE-2026-41940](https://github.com/MrOplus/CVE-2026-41940)
 - [imbas007/POC_CVE-2026-41940](https://github.com/imbas007/POC_CVE-2026-41940)
 - [tfawnies/CVE-2026-41940-next](https://github.com/tfawnies/CVE-2026-41940-next)
@@ -3073,6 +3080,13 @@
 
 - [lwd3c/CVE-2026-46586](https://github.com/lwd3c/CVE-2026-46586)
 
+### CVE-2026-46645 (2026-06-10)
+
+<code>SQLAdmin is a flexible Admin interface for SQLAlchemy models. Prior to version 0.25.1, the ajax_lookup endpoint in application.py bypasses the is_accessible() access control check that all other endpoints enforce. If a developer restricts model access by overriding is_accessible(), an authenticated user can still query that model's data through the ajax_lookup endpoint — silently bypassing the restriction. This issue has been patched in version 0.25.1.
+</code>
+
+- [rootdirective-sec/CVE-2026-46645-Analysis-Lab](https://github.com/rootdirective-sec/CVE-2026-46645-Analysis-Lab)
+
 ### CVE-2026-46680
 - [r0binak/CVE-2026-46680](https://github.com/r0binak/CVE-2026-46680)
 
@@ -3113,6 +3127,13 @@
 </code>
 
 - [ManagerEmpty/CVE-2026-47291-httpsys](https://github.com/ManagerEmpty/CVE-2026-47291-httpsys)
+
+### CVE-2026-47342 (2026-06-10)
+
+<code>A privilege escalation vulnerability in Apache OFBiz allows a low-privileged authenticated user to obtain higher privileges\n\n\n\nThis issue affects Apache OFBiz: before 24.09.07.\n\nUsers are recommended to upgrade to version 24.09.07, which fixes the issue.
+</code>
+
+- [lwd3c/CVE-2026-47342](https://github.com/lwd3c/CVE-2026-47342)
 
 ### CVE-2026-47423
 - [Galaxy-sc/CVE-2026-47423-dompurify-xss-detector](https://github.com/Galaxy-sc/CVE-2026-47423-dompurify-xss-detector)
@@ -3209,6 +3230,7 @@
 
 - [webshellseo8/CVE-2026-48907-Unauthenticated-RCE-in-JCE](https://github.com/webshellseo8/CVE-2026-48907-Unauthenticated-RCE-in-JCE)
 - [ywh-jfellus/CVE-2026-48907](https://github.com/ywh-jfellus/CVE-2026-48907)
+- [0xBlackash/CVE-2026-48907](https://github.com/0xBlackash/CVE-2026-48907)
 
 ### CVE-2026-48962 (2026-05-27)
 
@@ -3240,6 +3262,13 @@
 </code>
 
 - [byte16384/CVE-2026-49492-PoC](https://github.com/byte16384/CVE-2026-49492-PoC)
+
+### CVE-2026-49777 (2026-06-05)
+
+<code>Improper Validation of Specified Quantity in Input vulnerability in ShapedPlugin, LLC Product Slider Pro for WooCommerce allows Malicious Software Implanted.\n\nThis issue affects Product Slider Pro for WooCommerce: from n/a before 3.5.4.
+</code>
+
+- [izxci/CVE-2026-49777](https://github.com/izxci/CVE-2026-49777)
 
 ### CVE-2026-49943 (2026-06-02)
 
@@ -3280,9 +3309,16 @@
 - [0xBlackash/CVE-2026-50751](https://github.com/0xBlackash/CVE-2026-50751)
 - [fevar54/CVE-2026-50751---Check-Point-IKEv1-Authentication-Bypass-Exploit](https://github.com/fevar54/CVE-2026-50751---Check-Point-IKEv1-Authentication-Bypass-Exploit)
 - [fernstedt/CVE-2026-50751](https://github.com/fernstedt/CVE-2026-50751)
+- [watchtowrlabs/watchTowr-vs-Check-Point-CVE-2026-50751](https://github.com/watchtowrlabs/watchTowr-vs-Check-Point-CVE-2026-50751)
 
 ### CVE-2026-52885
 - [v3s9er/CVE-2026-52885](https://github.com/v3s9er/CVE-2026-52885)
+
+### CVE-2026-53647
+- [7megaumka7/FOSKiller](https://github.com/7megaumka7/FOSKiller)
+
+### CVE-2026-54088
+- [Saku0512/CVE-2026-54088-poc](https://github.com/Saku0512/CVE-2026-54088-poc)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -6492,7 +6528,7 @@
 </code>
 
 - [skadevare/CiscoISE-CVE-2025-20282-POC](https://github.com/skadevare/CiscoISE-CVE-2025-20282-POC)
-- [tevsho/cve-2025-20282](https://github.com/tevsho/cve-2025-20282)
+- [pairofglasses/cve-2025-20282](https://github.com/pairofglasses/cve-2025-20282)
 
 ### CVE-2025-20333 (2025-09-25)
 
@@ -9594,7 +9630,7 @@
 - [SimoesCTT/CTT-Apple-Silicon-Refraction](https://github.com/SimoesCTT/CTT-Apple-Silicon-Refraction)
 - [bjrjk/CVE-2025-43529](https://github.com/bjrjk/CVE-2025-43529)
 - [kmeps4/bugtest](https://github.com/kmeps4/bugtest)
-- [GenericCoding/cve-2025-43529-arbitrary-ref](https://github.com/GenericCoding/cve-2025-43529-arbitrary-ref)
+- [GenericCoding/pois0nSword](https://github.com/GenericCoding/pois0nSword)
 
 ### CVE-2025-43537 (2026-02-11)
 
@@ -16102,6 +16138,7 @@
 - [rahisec/CVE-2024-4040](https://github.com/rahisec/CVE-2024-4040)
 - [ill-deed/CrushFTP-CVE-2024-4040-illdeed](https://github.com/ill-deed/CrushFTP-CVE-2024-4040-illdeed)
 - [juanorts/CrushFTP10-Docker-CVE-2024-4040](https://github.com/juanorts/CrushFTP10-Docker-CVE-2024-4040)
+- [cthhhhhh/CrushFTP-SSTI-LFI-Proof-of-Concept](https://github.com/cthhhhhh/CrushFTP-SSTI-LFI-Proof-of-Concept)
 - [Sidjaz/CrushFTP-CVE-2024-4040-Proof-of-Concept](https://github.com/Sidjaz/CrushFTP-CVE-2024-4040-Proof-of-Concept)
 
 ### CVE-2024-4041 (2024-05-09)
@@ -16983,7 +17020,7 @@
 <code>A flaw was found in openshift/builder. This vulnerability allows command injection via path traversal, where a malicious user can execute arbitrary commands on the OpenShift node running the builder container. When using the “Docker” strategy, executable files inside the privileged build container can be overridden using the `spec.source.secrets.secret.destinationDir` attribute of the `BuildConfig` definition. An attacker running code in a privileged container could escalate their permissions on the node running the container.
 </code>
 
-- [tevsho/cve-2024-7387](https://github.com/tevsho/cve-2024-7387)
+- [pairofglasses/cve-2024-7387](https://github.com/pairofglasses/cve-2024-7387)
 
 ### CVE-2024-7399 (2024-08-09)
 
@@ -18225,13 +18262,6 @@
 
 - [fanjm2025-jeremy/CVE-2024-12828-PoC](https://github.com/fanjm2025-jeremy/CVE-2024-12828-PoC)
 
-### CVE-2024-12849 (2025-01-07)
-
-<code>The Error Log Viewer By WP Guru plugin for WordPress is vulnerable to Arbitrary File Read in all versions up to, and including, 1.0.1.3 via the wp_ajax_nopriv_elvwp_log_download AJAX action. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information.
-</code>
-
-- [Nxploited/CVE-2024-12849-Poc](https://github.com/Nxploited/CVE-2024-12849-Poc)
-
 ### CVE-2024-12856 (2024-12-27)
 
 <code>The Four-Faith router models F3x24 and F3x36 are affected by an operating system (OS) command injection vulnerability. At least firmware version 2.0 allows authenticated and remote attackers to execute arbitrary OS commands over HTTP when modifying the system time via apply.cgi. Additionally, this firmware version has default credentials which, if not changed, would effectively change this vulnerability into an unauthenticated and remote OS command execution issue.
@@ -18763,7 +18793,7 @@
 - [adaammmeeee/little-joke](https://github.com/adaammmeeee/little-joke)
 - [R4mbb/CVE-2024-21626-PoC](https://github.com/R4mbb/CVE-2024-21626-PoC)
 - [scherepiuk/container-escape-ebpf](https://github.com/scherepiuk/container-escape-ebpf)
-- [STK-Security/cve-2024-21626-runc-1.1.11-escape](https://github.com/STK-Security/cve-2024-21626-runc-1.1.11-escape)
+- [Strikoder-Premium/cve-2024-21626-runc-1.1.11-escape](https://github.com/Strikoder-Premium/cve-2024-21626-runc-1.1.11-escape)
 
 ### CVE-2024-21633 (2024-01-03)
 
@@ -23787,7 +23817,7 @@
 <code>A flaw was found in OpenShift. This issue occurs due to the misuse of elevated privileges in the OpenShift Container Platform's build process. During the build initialization step, the git-clone container is run with a privileged security context, allowing unrestricted access to the node. An attacker with developer-level access can provide a crafted .gitconfig file containing commands executed during the cloning process, leading to arbitrary command execution on the worker node. An attacker running code in a privileged container could escalate their permissions on the node running the container.
 </code>
 
-- [tevsho/cve-2024-45496](https://github.com/tevsho/cve-2024-45496)
+- [pairofglasses/cve-2024-45496](https://github.com/pairofglasses/cve-2024-45496)
 
 ### CVE-2024-45507 (2024-09-04)
 
@@ -35563,7 +35593,6 @@
 - [h4ckm310n/CVE-2022-0847-eBPF](https://github.com/h4ckm310n/CVE-2022-0847-eBPF)
 - [joeymeech/CVE-2022-0847-Exploit-Implementation](https://github.com/joeymeech/CVE-2022-0847-Exploit-Implementation)
 - [pashayogi/DirtyPipe](https://github.com/pashayogi/DirtyPipe)
-- [n3rada/DirtyPipe](https://github.com/n3rada/DirtyPipe)
 - [ayushx007/CVE-2022-0847-dirty-pipe-checker](https://github.com/ayushx007/CVE-2022-0847-dirty-pipe-checker)
 - [ayushx007/CVE-2022-0847-DirtyPipe-Exploits](https://github.com/ayushx007/CVE-2022-0847-DirtyPipe-Exploits)
 - [solomon12354/LockingGirl-----CVE-2022-0847-Dirty_Pipe_virus](https://github.com/solomon12354/LockingGirl-----CVE-2022-0847-Dirty_Pipe_virus)
@@ -35572,6 +35601,7 @@
 - [xsxtw/CVE-2022-0847](https://github.com/xsxtw/CVE-2022-0847)
 - [muhammad1596/CVE-2022-0847-dirty-pipe-checker](https://github.com/muhammad1596/CVE-2022-0847-dirty-pipe-checker)
 - [muhammad1596/CVE-2022-0847-DirtyPipe-Exploits](https://github.com/muhammad1596/CVE-2022-0847-DirtyPipe-Exploits)
+- [aswanepo/DirtyPipe](https://github.com/aswanepo/DirtyPipe)
 - [JustinYe377/CTF-CVE-2022-0847](https://github.com/JustinYe377/CTF-CVE-2022-0847)
 - [mithunmadhukuttan/Dirty-Pipe-Exploit](https://github.com/mithunmadhukuttan/Dirty-Pipe-Exploit)
 - [Mephierr/DirtyPipe_exploit](https://github.com/Mephierr/DirtyPipe_exploit)
@@ -45874,6 +45904,7 @@
 </code>
 
 - [pyroxenites/s2-062](https://github.com/pyroxenites/s2-062)
+- [aeyesec/CVE-2021-31805](https://github.com/aeyesec/CVE-2021-31805)
 - [z92g/CVE-2021-31805](https://github.com/z92g/CVE-2021-31805)
 - [nth347/CVE-2021-31805](https://github.com/nth347/CVE-2021-31805)
 
@@ -47626,7 +47657,6 @@
 - [MatanelGordon/docker-cve-2021-41773](https://github.com/MatanelGordon/docker-cve-2021-41773)
 - [0xGabe/Apache-CVEs](https://github.com/0xGabe/Apache-CVEs)
 - [OfriOuzan/CVE-2021-41773_CVE-2021-42013_Exploits](https://github.com/OfriOuzan/CVE-2021-41773_CVE-2021-42013_Exploits)
-- [belajarqywok/CVE-2021-41773-MSF](https://github.com/belajarqywok/CVE-2021-41773-MSF)
 - [Iris288/CVE-2021-41773](https://github.com/Iris288/CVE-2021-41773)
 - [Maybe4a6f7365/CVE-2021-41773](https://github.com/Maybe4a6f7365/CVE-2021-41773)
 - [Zyx2440/Apache-HTTP-Server-2.4.50-RCE](https://github.com/Zyx2440/Apache-HTTP-Server-2.4.50-RCE)
@@ -48275,7 +48305,7 @@
 - [suljov/Grafana-LFI-exploit](https://github.com/suljov/Grafana-LFI-exploit)
 - [abuyazeen/CVE-2021-43798-Grafana-path-traversal-tester](https://github.com/abuyazeen/CVE-2021-43798-Grafana-path-traversal-tester)
 - [0xf3d0rq/CVE-2021-43798](https://github.com/0xf3d0rq/CVE-2021-43798)
-- [STK-Security/Grafana-Password-Decryptor](https://github.com/STK-Security/Grafana-Password-Decryptor)
+- [Strikoder-Premium/Grafana-Password-Decryptor](https://github.com/Strikoder-Premium/Grafana-Password-Decryptor)
 - [baktistr/cve-2021-43798-enum](https://github.com/baktistr/cve-2021-43798-enum)
 - [notbside/CVE-2021-43798-PoC](https://github.com/notbside/CVE-2021-43798-PoC)
 - [Shoxake17/CVE-2021-43798](https://github.com/Shoxake17/CVE-2021-43798)
@@ -66776,6 +66806,7 @@
 - [wabiyagi/CVE-2016-6210](https://github.com/wabiyagi/CVE-2016-6210)
 - [nicoleman0/CVE-2016-6210-OpenSSHd-7.2p2](https://github.com/nicoleman0/CVE-2016-6210-OpenSSHd-7.2p2)
 - [KiPhuong/cve-2016-6210](https://github.com/KiPhuong/cve-2016-6210)
+- [Alisha-chaudhary/ssh-enum](https://github.com/Alisha-chaudhary/ssh-enum)
 - [serexp/poc-CVE20166210](https://github.com/serexp/poc-CVE20166210)
 
 ### CVE-2016-6271 (2017-01-18)
@@ -71220,7 +71251,7 @@
 </code>
 
 - [0x1sac/ClamAV-Milter-Sendmail-0.91.2-Remote-Code-Execution](https://github.com/0x1sac/ClamAV-Milter-Sendmail-0.91.2-Remote-Code-Execution)
-- [STK-Security/sendmail-clamav-exploit-CVE-2007-4560](https://github.com/STK-Security/sendmail-clamav-exploit-CVE-2007-4560)
+- [Strikoder-Premium/sendmail-clamav-exploit-CVE-2007-4560](https://github.com/Strikoder-Premium/sendmail-clamav-exploit-CVE-2007-4560)
 
 ### CVE-2007-4607 (2007-08-31)
 
