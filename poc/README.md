@@ -284,8 +284,8 @@
 <code>The Contest Gallery – Upload &amp; Vote Photos, Media, Sell with PayPal &amp; Stripe plugin for WordPress is vulnerable to blind SQL Injection via the ‘cgLostPasswordEmail’ and the ’cgl_mail’ parameter in all versions up to, and including, 28.1.4 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. The vulnerability's ’cgLostPasswordEmail’ parameter was patched in version 28.1.4, and the ’cgl_mail’ parameter was patched in version 28.1.5.
 </code>
 
-- [cardosource/cve-2026-3180](https://github.com/cardosource/cve-2026-3180)
 - [carlosalbertotuma/cve-2026-3180-poc](https://github.com/carlosalbertotuma/cve-2026-3180-poc)
+- [cardosource/cve-2026-3180](https://github.com/cardosource/cve-2026-3180)
 
 ### CVE-2026-3288 (2026-03-09)
 
@@ -694,13 +694,6 @@
 
 - [anirudhmakkar/cve-2026-7665](https://github.com/anirudhmakkar/cve-2026-7665)
 
-### CVE-2026-7671 (2026-05-02)
-
-<code>A vulnerability has been found in CodeWise Tornet Scooter Mobile App 4.75 on iOS/Android. The impacted element is an unknown function of the file /TwoFactor. Such manipulation leads to improper restriction of excessive authentication attempts. The attack may be performed from remote. Attacks of this nature are highly complex. The exploitability is regarded as difficult. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.
-</code>
-
-- [CaginKyr/CVE-2026-7671](https://github.com/CaginKyr/CVE-2026-7671)
-
 ### CVE-2026-7791 (2026-05-04)
 
 <code>Improper privilege management in the log rotation mechanism of the Skylight Workspace Config Service in Amazon WorkSpaces for Windows before 2.6.2034.0 allows a local non-admin authenticated user to place arbitrary files into arbitrary locations bypassing file system permission protections, leading to local privilege escalation to SYSTEM.
@@ -931,6 +924,7 @@
 </code>
 
 - [izxci/CVE-2026-10795](https://github.com/izxci/CVE-2026-10795)
+- [webshellseo8/CVE-2026-10795-POC](https://github.com/webshellseo8/CVE-2026-10795-POC)
 
 ### CVE-2026-11344 (2026-06-05)
 
@@ -960,6 +954,7 @@
 
 - [fevar54/CVE-2026-11645-Out-of-bounds-Read-Write](https://github.com/fevar54/CVE-2026-11645-Out-of-bounds-Read-Write)
 - [adamshaikhma/CVE-2026-11645](https://github.com/adamshaikhma/CVE-2026-11645)
+- [0xBlackash/CVE-2026-11645](https://github.com/0xBlackash/CVE-2026-11645)
 
 ### CVE-2026-20131 (2026-03-04)
 
@@ -1100,8 +1095,10 @@
 </code>
 
 - [HORKimhab/CVE-2026-23111](https://github.com/HORKimhab/CVE-2026-23111)
+- [criann/check-cve-2026-23111](https://github.com/criann/check-cve-2026-23111)
 - [0xBlackash/CVE-2026-23111](https://github.com/0xBlackash/CVE-2026-23111)
 - [seguridadentrerios/CVE-2026-23111](https://github.com/seguridadentrerios/CVE-2026-23111)
+- [ishankaru/CVE-2026-23111-nftables-lab](https://github.com/ishankaru/CVE-2026-23111-nftables-lab)
 
 ### CVE-2026-23416 (2026-04-02)
 
@@ -1117,6 +1114,7 @@
 
 - [pduggusa/redis-cve-2026-23479-check](https://github.com/pduggusa/redis-cve-2026-23479-check)
 - [jenniferreire26/CVE-2026-23479](https://github.com/jenniferreire26/CVE-2026-23479)
+- [v1c0mmrt/redis-cve-2026-23479-scanner](https://github.com/v1c0mmrt/redis-cve-2026-23479-scanner)
 
 ### CVE-2026-23520 (2026-01-15)
 
@@ -1610,13 +1608,9 @@
 - [Smarttfoxx/copyfail](https://github.com/Smarttfoxx/copyfail)
 - [parmstro/cfDr](https://github.com/parmstro/cfDr)
 - [monobrau/copyfailscan](https://github.com/monobrau/copyfailscan)
-- [Emmmmllll/copy-fail-zig](https://github.com/Emmmmllll/copy-fail-zig)
 - [ROSNLR5/modrosnlr5](https://github.com/ROSNLR5/modrosnlr5)
 - [KanbaraAkihito/CVE-2026-31431-copyfail-rs](https://github.com/KanbaraAkihito/CVE-2026-31431-copyfail-rs)
 - [suominen/CVE-2026-31431](https://github.com/suominen/CVE-2026-31431)
-- [M4xSec/CVE-2026-31431-RCE-Exploit](https://github.com/M4xSec/CVE-2026-31431-RCE-Exploit)
-- [Huchangzhi/autorootlinux](https://github.com/Huchangzhi/autorootlinux)
-- [Sl4cK0TH/CVE-2026-31431-PoC](https://github.com/Sl4cK0TH/CVE-2026-31431-PoC)
 - [pulentoski/CVE-2026-31431](https://github.com/pulentoski/CVE-2026-31431)
 - [joltcan/ansible-role-cve-2026-31431](https://github.com/joltcan/ansible-role-cve-2026-31431)
 - [Gr-1m/CVE-2026-31431](https://github.com/Gr-1m/CVE-2026-31431)
@@ -2496,7 +2490,6 @@
 - [Jenderal92/CVE-2026-41940](https://github.com/Jenderal92/CVE-2026-41940)
 - [0xBlackash/CVE-2026-41940](https://github.com/0xBlackash/CVE-2026-41940)
 - [MrAriaNet/cPanel-Fix](https://github.com/MrAriaNet/cPanel-Fix)
-- [linko-iheb/cve-2026-41940-scanner](https://github.com/linko-iheb/cve-2026-41940-scanner)
 - [Ishanoshada/CVE-2026-41940-Exploit-PoC](https://github.com/Ishanoshada/CVE-2026-41940-Exploit-PoC)
 - [MrOplus/CVE-2026-41940](https://github.com/MrOplus/CVE-2026-41940)
 - [imbas007/POC_CVE-2026-41940](https://github.com/imbas007/POC_CVE-2026-41940)
@@ -2558,7 +2551,6 @@
 <code>mod_sql in ProFTPD before 1.3.9a allows remote attackers to execute arbitrary code via a username, in scenarios where there is logging of USER requests with an expansion such as %U, and the SQL backend allows commands (e.g., COPY TO PROGRAM).
 </code>
 
-- [jimmexploit/CVE-2026-42167-PoC](https://github.com/jimmexploit/CVE-2026-42167-PoC)
 - [kaleth4/CVE-2026-42167](https://github.com/kaleth4/CVE-2026-42167)
 
 ### CVE-2026-42203 (2026-05-08)
@@ -2760,6 +2752,7 @@
 - [AtlasVector/Dirty-Frag-CVE-2026-43284](https://github.com/AtlasVector/Dirty-Frag-CVE-2026-43284)
 - [1neptune/DirtyFrag](https://github.com/1neptune/DirtyFrag)
 - [t1ckprivate/CVE-2026-43284-Dirty-Frag](https://github.com/t1ckprivate/CVE-2026-43284-Dirty-Frag)
+- [g0thamRabb1t/dirtyfrag-cve-2026-43284-auditd-detection](https://github.com/g0thamRabb1t/dirtyfrag-cve-2026-43284-auditd-detection)
 
 ### CVE-2026-43494 (2026-05-21)
 
@@ -3215,6 +3208,7 @@
 </code>
 
 - [webshellseo8/CVE-2026-48907-Unauthenticated-RCE-in-JCE](https://github.com/webshellseo8/CVE-2026-48907-Unauthenticated-RCE-in-JCE)
+- [ywh-jfellus/CVE-2026-48907](https://github.com/ywh-jfellus/CVE-2026-48907)
 
 ### CVE-2026-48962 (2026-05-27)
 
@@ -4751,6 +4745,13 @@
 </code>
 
 - [d0n601/CVE-2025-6220](https://github.com/d0n601/CVE-2025-6220)
+
+### CVE-2025-6254 (2026-06-10)
+
+<code>The Doctreat Core plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.6.8. This is due to the doctreat_process_registration() function not properly restricting the roles that a user can register with. This makes it possible for unauthenticated attackers to register as an administrator user.
+</code>
+
+- [xxconi/CVE-2025-6254](https://github.com/xxconi/CVE-2025-6254)
 
 ### CVE-2025-6264 (2025-06-20)
 
@@ -9562,7 +9563,7 @@
 
 ### CVE-2025-43407 (2025-11-04)
 
-<code>This issue was addressed with improved entitlements. This issue is fixed in iOS 26.1 and iPadOS 26.1, macOS Sequoia 15.7.2, macOS Sonoma 14.8.2, macOS Tahoe 26.1, tvOS 26.1, visionOS 26.1. An app may be able to break out of its sandbox.
+<code>This issue was addressed with improved entitlements. This issue is fixed in iOS 18.7.2 and iPadOS 18.7.2, iOS 26.1 and iPadOS 26.1, macOS Sequoia 15.7.2, macOS Sonoma 14.8.2, macOS Tahoe 26.1, tvOS 26.1, visionOS 26.1. An app may be able to break out of its sandbox.
 </code>
 
 - [mranonymous234/Sandbox-Escape-iOS-18.0-26.0](https://github.com/mranonymous234/Sandbox-Escape-iOS-18.0-26.0)
@@ -43744,6 +43745,7 @@
 - [0xbinder/CVE-2021-4045](https://github.com/0xbinder/CVE-2021-4045)
 - [DorskFR/tapodate](https://github.com/DorskFR/tapodate)
 - [234329a423853/CVE-2021-4045](https://github.com/234329a423853/CVE-2021-4045)
+- [kaleth4/CVE-2021-4045](https://github.com/kaleth4/CVE-2021-4045)
 
 ### CVE-2021-4104 (2021-12-14)
 
@@ -45872,7 +45874,6 @@
 </code>
 
 - [pyroxenites/s2-062](https://github.com/pyroxenites/s2-062)
-- [aeyesec/CVE-2021-31805](https://github.com/aeyesec/CVE-2021-31805)
 - [z92g/CVE-2021-31805](https://github.com/z92g/CVE-2021-31805)
 - [nth347/CVE-2021-31805](https://github.com/nth347/CVE-2021-31805)
 
@@ -70340,7 +70341,6 @@
 - [krill-x7/CVE-2011-2523](https://github.com/krill-x7/CVE-2011-2523)
 - [BolivarJ/CVE-2011-2523](https://github.com/BolivarJ/CVE-2011-2523)
 - [hajisthabegum/Exploiting-vsFTPd-2.3.4-Backdoor-Vulnerability-Ethical-Hacking-Lab-with-Metasploitable-2-Metasploit](https://github.com/hajisthabegum/Exploiting-vsFTPd-2.3.4-Backdoor-Vulnerability-Ethical-Hacking-Lab-with-Metasploitable-2-Metasploit)
-- [avivyap/CVE-2011-2523](https://github.com/avivyap/CVE-2011-2523)
 - [KlyneZyro/Metasploitable2-VAPT-Report](https://github.com/KlyneZyro/Metasploitable2-VAPT-Report)
 - [Mirza-22144/Vulnerability-Assessment-Exploitation-Lab](https://github.com/Mirza-22144/Vulnerability-Assessment-Exploitation-Lab)
 - [tshaq17/vsftpd-2.3.4---Backdoor-Command-Execution](https://github.com/tshaq17/vsftpd-2.3.4---Backdoor-Command-Execution)
