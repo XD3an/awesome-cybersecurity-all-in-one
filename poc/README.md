@@ -551,6 +551,13 @@
 
 - [flyingllama87/p4wned](https://github.com/flyingllama87/p4wned)
 
+### CVE-2026-6130 (2026-04-12)
+
+<code>A flaw has been found in chatboxai chatbox up to 1.20.0. This impacts the function StdioClientTransport of the file src/main/mcp/ipc-stdio-transport.ts of the component Model Context Protocol Server Management System. Executing a manipulation of the argument args/env can lead to os command injection. The attack can be launched remotely. The exploit has been published and may be used. The project was informed of the problem early through an issue report but has not responded yet.
+</code>
+
+- [fan-67/local-mcp](https://github.com/fan-67/local-mcp)
+
 ### CVE-2026-6145 (2026-05-14)
 
 <code>The User Registration &amp; Membership plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 5.1.5. This is due to the is_admin_creation_process() method relying solely on the presence of action=createuser in the $_REQUEST superglobal without performing any authentication or capability check. This makes it possible for unauthenticated attackers to bypass the admin approval requirement when registering new accounts via the fallback submission path.
@@ -579,6 +586,8 @@
 
 - [xxconi/CVE-2026-6279](https://github.com/xxconi/CVE-2026-6279)
 - [zycoder0day/CVE-2026-6279](https://github.com/zycoder0day/CVE-2026-6279)
+- [87achrafg-stack/CVE-2026-6279.py](https://github.com/87achrafg-stack/CVE-2026-6279.py)
+- [87achrafg-stack/CVE-2026-6279](https://github.com/87achrafg-stack/CVE-2026-6279)
 
 ### CVE-2026-6379 (2026-05-18)
 
@@ -853,13 +862,6 @@
 
 - [HORKimhab/CVE-2026-9560](https://github.com/HORKimhab/CVE-2026-9560)
 
-### CVE-2026-10110 (2026-05-30)
-
-<code>A vulnerability was detected in code-projects Student Details Management System 1.0. This affects an unknown function of the file /index.php. Performing a manipulation of the argument roll results in sql injection. The attack is possible to be carried out remotely. The exploit is now public and may be used.
-</code>
-
-- [Xmyronn/CVE-2026-10110-SQLi](https://github.com/Xmyronn/CVE-2026-10110-SQLi)
-
 ### CVE-2026-10170 (2026-05-31)
 
 <code>A flaw has been found in code-projects Visitor Management System 1.0. Affected by this issue is some unknown functionality of the file /vms/php/phone_0.php. This manipulation of the argument phone causes sql injection. The attack may be initiated remotely. The exploit has been published and may be used.
@@ -933,6 +935,13 @@
 </code>
 
 - [Xmyronn/CVE-2026-11344-RCE](https://github.com/Xmyronn/CVE-2026-11344-RCE)
+
+### CVE-2026-11450 (2026-06-07)
+
+<code>A vulnerability was detected in GL.iNet GL-MT3000 4.4.5. This affects the function dlopen in the library /usr/lib/oui-httpd/rpc/ of the component Path Normalization Handler. Performing a manipulation of the argument dev_name results in command injection. It is possible to initiate the attack remotely. Upgrading to version 4.7 mitigates this issue. It is advisable to upgrade the affected component. The vendor confirms: &quot; From version 4.7 onward, we have enabled method‑level validation at the HTTP /rpc layer. nas‑web.eject_disk is no longer in the whitelist of allowed methods. Consequently, directly calling eject_disk through the default /rpc endpoint returns Invalid params, preventing entry into subsequent dangerous functions and blocking the remote exploit chain described in the report.&quot;
+</code>
+
+- [Hunt-Benito/glinet-beryl-ax-triple-rce-cve-2026-11450-11451-11452-unauthenticated-root-on-travel-router](https://github.com/Hunt-Benito/glinet-beryl-ax-triple-rce-cve-2026-11450-11451-11452-unauthenticated-root-on-travel-router)
 
 ### CVE-2026-11499 (2026-06-08)
 
@@ -1083,6 +1092,13 @@
 </code>
 
 - [daytriftnewgen/CVE-2026-21876](https://github.com/daytriftnewgen/CVE-2026-21876)
+
+### CVE-2026-22356 (2026-02-20)
+
+<code>Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Automattic Jetpack CRM zero-bs-crm allows PHP Local File Inclusion.This issue affects Jetpack CRM: from n/a through &lt;= 6.7.0.
+</code>
+
+- [xxconi/CVE-2026-22356](https://github.com/xxconi/CVE-2026-22356)
 
 ### CVE-2026-22553 (2026-02-24)
 
@@ -1409,7 +1425,7 @@
 <code>Swiper is a free and mobile touch slider with hardware accelerated transitions and native behavior. Versions 6.5.1 through 12.1.1 have a Prototype pollution vulnerability. The vulnerability resides in line 94 of shared/utils.mjs, where the indexOf() function is used to check whether user provided input contain forbidden strings. Despite a previous fix that attempted to mitigate prototype pollution by checking whether user input contained a forbidden key, it is still possible to pollute Object.prototype via a crafted input using Array.prototype. The exploit works across Windows and Linux and on Node and Bun runtimes.  Any application that processes attacker-controlled input using this package may be affected  by the following: Authentication Bypass, Denial of Service and RCE. This issue is fixed in version 12.1.2.
 </code>
 
-- [stealth-compute/resize-image-before-upload-secure](https://github.com/stealth-compute/resize-image-before-upload-secure)
+- [stealth-rd/resize-image-before-upload-secure](https://github.com/stealth-rd/resize-image-before-upload-secure)
 
 ### CVE-2026-27384 (2026-03-05)
 
@@ -1631,14 +1647,7 @@
 - [AvPrince26/copy-fail-CVE-2026-31431-Python-Golfing](https://github.com/AvPrince26/copy-fail-CVE-2026-31431-Python-Golfing)
 - [aexdyhaxor/CVE-2026-31431-copy-fail](https://github.com/aexdyhaxor/CVE-2026-31431-copy-fail)
 - [ncmprbll/copy-fail-rs](https://github.com/ncmprbll/copy-fail-rs)
-- [jamal-soc21/Weekly-Breach-Investigation--006](https://github.com/jamal-soc21/Weekly-Breach-Investigation--006)
-- [tfawnies/CVE-2026-31431](https://github.com/tfawnies/CVE-2026-31431)
 - [ravindercodes/copy-fail-CVE-2026-31431](https://github.com/ravindercodes/copy-fail-CVE-2026-31431)
-- [ChernStepanov/CopyFail-for-dummies](https://github.com/ChernStepanov/CopyFail-for-dummies)
-- [kaleth4/CVE-2026-31431](https://github.com/kaleth4/CVE-2026-31431)
-- [mCub3/CVE-2026-31431](https://github.com/mCub3/CVE-2026-31431)
-- [juliosuas/copyfail-guard](https://github.com/juliosuas/copyfail-guard)
-- [codesource/copyfail-check](https://github.com/codesource/copyfail-check)
 - [xn0kkx/CVE-2026-31431_CopyFail_LinuxKernel_LPE](https://github.com/xn0kkx/CVE-2026-31431_CopyFail_LinuxKernel_LPE)
 - [MetaspIoit/CVE-2026-31431](https://github.com/MetaspIoit/CVE-2026-31431)
 - [kvendler/BigFix-CopyFail-AlmaLinux-Content](https://github.com/kvendler/BigFix-CopyFail-AlmaLinux-Content)
@@ -2042,13 +2051,6 @@
 
 - [azefzafyoussef/CVE-2026-34621](https://github.com/azefzafyoussef/CVE-2026-34621)
 
-### CVE-2026-34753 (2026-04-06)
-
-<code>vLLM is an inference and serving engine for large language models (LLMs). From 0.16.0 to before 0.19.0, a server-side request forgery (SSRF) vulnerability in download_bytes_from_url allows any actor who can control batch input JSON to make the vLLM batch runner issue arbitrary HTTP/HTTPS requests from the server, without any URL validation or domain restrictions.\nThis can be used to target internal services (e.g. cloud metadata endpoints or internal HTTP APIs) reachable from the vLLM host. This vulnerability is fixed in 0.19.0.
-</code>
-
-- [Dhiaelhak-Rached/CVE-2026-34753](https://github.com/Dhiaelhak-Rached/CVE-2026-34753)
-
 ### CVE-2026-34908 (2026-05-22)
 
 <code>A malicious actor with access to the network could exploit an Improper Access Control vulnerability found in UniFi OS devices to make unauthorized changes to the system.
@@ -2171,13 +2173,6 @@
 </code>
 
 - [TazmiDev/CVE-2026-36239](https://github.com/TazmiDev/CVE-2026-36239)
-
-### CVE-2026-36355 (2026-05-05)
-
-<code>The rtl8192cd Wi-Fi kernel driver in the Realtek rtl819x Jungle SDK (all known versions through v3.4.14B) does not perform any access control checks on the write_mem (ioctl 0x89F5) and read_mem (ioctl 0x89F6) debug handlers, which are compiled into production builds via the unconditionally defined _IOCTL_DEBUG_CMD_ macro in 8192cd_cfg.h
-</code>
-
-- [totekuh/CVE-2026-36355](https://github.com/totekuh/CVE-2026-36355)
 
 ### CVE-2026-36356 (2026-05-05)
 
@@ -2404,6 +2399,13 @@
 ### CVE-2026-40791
 - [Rat5ak/CVE-2026-40791-WP-Time-Slots-Booking-Form-XSS](https://github.com/Rat5ak/CVE-2026-40791-WP-Time-Slots-Booking-Form-XSS)
 
+### CVE-2026-40864 (2026-05-22)
+
+<code>JupyterHub is software that allows users to create a multi-user server for Jupyter notebooks. In versions 4.1.0 through 5.4.4, XSRF protection (updated in 4.1.0) inappropriately treated requests with Sec-Fetch-Mode: no-cors as same-origin requests, bypassing XSRF checks. The JSON API is not affected, only HTTP form endpoints, such as /hub/spawn and /hub/accept-share, meaning attackers could trigger server spawn (but not access the server) and if the attacker is a JupyterHub user permitted to share access to their server, cause a user to accept a share and have access to the attacker's server. This issue has been fixed in version 5.4.5. If developers are unable to immediately upgrade, they can temporarily mitigate this issue by dropping requests to JupyterHub with Sec-Fetch-Mode: no-cors if they are using a reverse proxy.
+</code>
+
+- [romain-deperne/CVE-2026-40864](https://github.com/romain-deperne/CVE-2026-40864)
+
 ### CVE-2026-40897 (2026-04-24)
 
 <code>Math.js is an extensive math library for JavaScript and Node.js. From 13.1.1 to before 15.2.0, a vulnerability allowed executing arbitrary JavaScript via the expression parser of mathjs. You can be affected when you have an application where users can evaluate arbitrary expressions using the mathjs expression parser. This vulnerability is fixed in 15.2.0.
@@ -2475,6 +2477,13 @@
 
 - [Rat5ak/CVE-2026-41285-OpenBSD-v6daemons-go-brrr](https://github.com/Rat5ak/CVE-2026-41285-OpenBSD-v6daemons-go-brrr)
 
+### CVE-2026-41490 (2026-05-07)
+
+<code>Dagster is an orchestration platform for the development, production, and observation of data assets. Prior to Dagster Core version 1.13.1 and prior to Dagster libraries version 0.29.1, the DuckDB, Snowflake, BigQuery, and DeltaLake I/O managers constructed SQL WHERE clauses by interpolating dynamic partition key values into queries without escaping. A user with the Add Dynamic Partitions permission could create a partition key that injects arbitrary SQL, which would execute against the target database backend under the I/O manager's credentials. Only deployments that use dynamic partitions are affected. Pipelines using static or time-window partitions are not impacted. This issue has been patched in Dagster Core version 1.13.1 and Dagster libraries version 0.29.1.
+</code>
+
+- [romain-deperne/CVE-2026-41490](https://github.com/romain-deperne/CVE-2026-41490)
+
 ### CVE-2026-41651 (2026-04-22)
 
 <code>PackageKit is a a D-Bus abstraction layer that allows the user to manage packages in a secure way using a cross-distro, cross-architecture API. PackageKit between and including versions 1.0.2 and 1.3.4 is vulnerable to a time-of-check time-of-use (TOCTOU) race condition on transaction flags that allows unprivileged users to install packages as root and thus leads to a local privilege escalation. This is patched in version 1.3.5.\n\nA local unprivileged user can install arbitrary RPM packages as root, including executing RPM scriptlets, without authentication. The vulnerability is a TOCTOU race condition on `transaction-&gt;cached_transaction_flags`  combined with a silent state-machine guard that discards illegal backward transitions while leaving corrupted flags in place. Three bugs exist in `src/pk-transaction.c`:\n1. Unconditional flag overwrite (line 4036): `InstallFiles()` writes caller-supplied flags to `transaction-&gt;cached_transaction_flags` without checking whether the transaction has already been  authorized/started. A second call blindly overwrites the flags even while the transaction is RUNNING.\n2. Silent state-transition rejection (lines 873–882): `pk_transaction_set_state()` silently discards backward state transitions (e.g. `RUNNING` → `WAITING_FOR_AUTH`) but the flag overwrite at step 1 already happened. The transaction continues running with corrupted flags.\n3. Late flag read at execution time (lines 2273–2277): The scheduler's idle callback reads cached_transaction_flags at dispatch time, not at authorization time. If flags were overwritten between authorization and execution, the backend sees the attacker's flags.
@@ -2517,9 +2526,7 @@
 - [Jenderal92/CVE-2026-41940](https://github.com/Jenderal92/CVE-2026-41940)
 - [0xBlackash/CVE-2026-41940](https://github.com/0xBlackash/CVE-2026-41940)
 - [MrOplus/CVE-2026-41940](https://github.com/MrOplus/CVE-2026-41940)
-- [tfawnies/CVE-2026-41940-next](https://github.com/tfawnies/CVE-2026-41940-next)
 - [Underh0st/CPanel-Audit-Remediation-Tool](https://github.com/Underh0st/CPanel-Audit-Remediation-Tool)
-- [cy3erm/CVE-2026-41940-POC](https://github.com/cy3erm/CVE-2026-41940-POC)
 - [zwanski2019/cPanelSniper](https://github.com/zwanski2019/cPanelSniper)
 - [habibkaratas/sorry-ransomware-analysis](https://github.com/habibkaratas/sorry-ransomware-analysis)
 - [sercanokur/CVE-2026-41940-cPanel-WHM-Verification-Tool](https://github.com/sercanokur/CVE-2026-41940-cPanel-WHM-Verification-Tool)
@@ -2938,6 +2945,9 @@
 
 - [venglin/setcred](https://github.com/venglin/setcred)
 
+### CVE-2026-45258
+- [Yayoi-cs/CVE-2026-45258_1day_LPE_exploit](https://github.com/Yayoi-cs/CVE-2026-45258_1day_LPE_exploit)
+
 ### CVE-2026-45321 (2026-05-12)
 
 <code>On 2026-05-11, between approximately 19:20 and 19:26 UTC, 84 malicious versions across 42 @tanstack/* packages were published to the npm registry. The publishes were authenticated via the legitimate GitHub Actions OIDC trusted-publisher binding for TanStack/router, but the publish workflow itself was not modified. The attacker chained three known vulnerability classes — a pull_request_target &quot;Pwn Request&quot; misconfiguration, GitHub Actions cache poisoning across the fork↔base trust boundary, and runtime memory extraction of the OIDC token from the Actions runner process — to publish credential-stealing malware under a trusted identity. Each affected package received exactly two malicious versions, published a few minutes apart.
@@ -3166,6 +3176,9 @@
 ### CVE-2026-47668
 - [Nxploited/CVE-2026-47668](https://github.com/Nxploited/CVE-2026-47668)
 
+### CVE-2026-48017
+- [romain-deperne/CVE-2026-48017](https://github.com/romain-deperne/CVE-2026-48017)
+
 ### CVE-2026-48030
 - [muslimbek-0x/CVE-2026-48030](https://github.com/muslimbek-0x/CVE-2026-48030)
 
@@ -3253,6 +3266,7 @@
 - [webshellseo8/CVE-2026-48907-Unauthenticated-RCE-in-JCE](https://github.com/webshellseo8/CVE-2026-48907-Unauthenticated-RCE-in-JCE)
 - [ywh-jfellus/CVE-2026-48907](https://github.com/ywh-jfellus/CVE-2026-48907)
 - [0xBlackash/CVE-2026-48907](https://github.com/0xBlackash/CVE-2026-48907)
+- [87achrafg-stack/CVE-2026-48907](https://github.com/87achrafg-stack/CVE-2026-48907)
 
 ### CVE-2026-48962 (2026-05-27)
 
@@ -3277,6 +3291,9 @@
 
 ### CVE-2026-49413
 - [ii4gsp/CVE-2026-49413](https://github.com/ii4gsp/CVE-2026-49413)
+
+### CVE-2026-49417
+- [Yayoi-cs/CVE-2026-49417_1day_LPE_exploit](https://github.com/Yayoi-cs/CVE-2026-49417_1day_LPE_exploit)
 
 ### CVE-2026-49492 (2026-06-05)
 
@@ -3311,6 +3328,8 @@
 - [EQSTLab/CVE-2026-49975](https://github.com/EQSTLab/CVE-2026-49975)
 - [LSG-PolarBear/CVE-2026-49975](https://github.com/LSG-PolarBear/CVE-2026-49975)
 - [LiaoZiqi-GZFLS/CVE-2026-49975](https://github.com/LiaoZiqi-GZFLS/CVE-2026-49975)
+- [minc-nice-100/http2-bomb-analysis-paper](https://github.com/minc-nice-100/http2-bomb-analysis-paper)
+- [adminlove520/http2-bomb-detector](https://github.com/adminlove520/http2-bomb-detector)
 
 ### CVE-2026-50142
 - [MuhammedHussein17/libheif-cve-2026-50142](https://github.com/MuhammedHussein17/libheif-cve-2026-50142)
@@ -16292,6 +16311,7 @@
 - [0xr2r/CVE-2024-4367](https://github.com/0xr2r/CVE-2024-4367)
 - [1337rokudenashi/Odoo_PDFjs_CVE-2024-4367.pdf](https://github.com/1337rokudenashi/Odoo_PDFjs_CVE-2024-4367.pdf)
 - [xiaoqiesec0x1/CVE-2024-4367-PDF.js-xss](https://github.com/xiaoqiesec0x1/CVE-2024-4367-PDF.js-xss)
+- [J1nKsC/CVE-2024-4367_test](https://github.com/J1nKsC/CVE-2024-4367_test)
 
 ### CVE-2024-4406 (2024-05-02)
 
@@ -17455,7 +17475,6 @@
 </code>
 
 - [iSee857/CVE-2024-9047-PoC](https://github.com/iSee857/CVE-2024-9047-PoC)
-- [verylazytech/CVE-2024-9047](https://github.com/verylazytech/CVE-2024-9047)
 - [Nxploited/CVE-2024-9047-Exploit](https://github.com/Nxploited/CVE-2024-9047-Exploit)
 - [tpdlshdmlrkfmcla/CVE-2024-9047](https://github.com/tpdlshdmlrkfmcla/CVE-2024-9047)
 - [amirqusairy99/WordPress-File-Upload-4.24.11---Unauthenticated-Path-Traversal](https://github.com/amirqusairy99/WordPress-File-Upload-4.24.11---Unauthenticated-Path-Traversal)
@@ -20158,6 +20177,13 @@
 
 - [kautilyagupt/CVE-2024-26169-Detail-1](https://github.com/kautilyagupt/CVE-2024-26169-Detail-1)
 
+### CVE-2024-26170 (2024-03-12)
+
+<code>Windows Composite Image File System (CimFS) Elevation of Privilege Vulnerability
+</code>
+
+- [ProbNotAnExploiter/CVE-2024-26170-extended](https://github.com/ProbNotAnExploiter/CVE-2024-26170-extended)
+
 ### CVE-2024-26218 (2024-04-09)
 
 <code>Windows Kernel Elevation of Privilege Vulnerability
@@ -22632,7 +22658,6 @@
 
 ### CVE-2024-38998
 - [z3ldr1/PP_CVE-2024-38998](https://github.com/z3ldr1/PP_CVE-2024-38998)
-- [cesarbtakeda/PP_CVE-2024-38998](https://github.com/cesarbtakeda/PP_CVE-2024-38998)
 
 ### CVE-2024-39031 (2024-07-09)
 
@@ -42824,13 +42849,6 @@
 
 - [ShaikUsaf/packages_apps_Bluetooth_AOSP10_r33_CVE-2021-0329](https://github.com/ShaikUsaf/packages_apps_Bluetooth_AOSP10_r33_CVE-2021-0329)
 
-### CVE-2021-0336 (2021-02-10)
-
-<code>In onReceive of BluetoothPermissionRequest.java, there is a possible permissions bypass due to a mutable PendingIntent. This could lead to local escalation of privilege that bypasses a permission check, with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-9 Android-10 Android-11 Android-8.1Android ID: A-158219161
-</code>
-
-- [Trinadh465/packages_apps_Settings_AOSP10_r33_CVE-2021-0336](https://github.com/Trinadh465/packages_apps_Settings_AOSP10_r33_CVE-2021-0336)
-
 ### CVE-2021-0337 (2021-02-10)
 
 <code>In moveInMediaStore of FileSystemProvider.java, there is a possible file exposure due to stale metadata. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-8.1 Android-9 Android-10 Android-11Android ID: A-157474195
@@ -44120,6 +44138,7 @@
 - [CsEnox/CVE-2021-21425](https://github.com/CsEnox/CVE-2021-21425)
 - [bluetoothStrawberry/cve-2021-21425](https://github.com/bluetoothStrawberry/cve-2021-21425)
 - [afifudinmtop/CVE-2021-21425](https://github.com/afifudinmtop/CVE-2021-21425)
+- [d4ytox/CVE-2021-21425](https://github.com/d4ytox/CVE-2021-21425)
 
 ### CVE-2021-21514 (2021-03-02)
 
@@ -44387,6 +44406,7 @@
 - [battleofthebots/dejavu](https://github.com/battleofthebots/dejavu)
 - [cc3305/CVE-2021-22204](https://github.com/cc3305/CVE-2021-22204)
 - [Roronoawjd/CVE-2021-22204](https://github.com/Roronoawjd/CVE-2021-22204)
+- [d4ytox/CVE-2021-22204](https://github.com/d4ytox/CVE-2021-22204)
 
 ### CVE-2021-22205 (2021-04-23)
 
@@ -45935,7 +45955,6 @@
 </code>
 
 - [pyroxenites/s2-062](https://github.com/pyroxenites/s2-062)
-- [aeyesec/CVE-2021-31805](https://github.com/aeyesec/CVE-2021-31805)
 - [z92g/CVE-2021-31805](https://github.com/z92g/CVE-2021-31805)
 - [nth347/CVE-2021-31805](https://github.com/nth347/CVE-2021-31805)
 
@@ -59775,6 +59794,13 @@
 - [darrynten/MoodleExploit](https://github.com/darrynten/MoodleExploit)
 - [Feidao-fei/MOODLE-3.X-Remote-Code-Execution](https://github.com/Feidao-fei/MOODLE-3.X-Remote-Code-Execution)
 - [That-Guy-Steve/CVE-2018-1133-Exploit](https://github.com/That-Guy-Steve/CVE-2018-1133-Exploit)
+
+### CVE-2018-1156 (2018-08-23)
+
+<code>Mikrotik RouterOS before 6.42.7 and 6.40.9 is vulnerable to stack buffer overflow through the license upgrade interface. This vulnerability could theoretically allow a remote authenticated attacker execute arbitrary code on the system.
+</code>
+
+- [JonathanInfinity01/SOC-L1-OSINT-Investigation-MikroTik-CVE-2018-1156](https://github.com/JonathanInfinity01/SOC-L1-OSINT-Investigation-MikroTik-CVE-2018-1156)
 
 ### CVE-2018-1160 (2018-12-20)
 
