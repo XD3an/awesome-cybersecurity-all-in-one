@@ -189,6 +189,7 @@
 </code>
 
 - [willygailo/WG-CVE-2026-1555-Linux](https://github.com/willygailo/WG-CVE-2026-1555-Linux)
+- [webshellseo8/CVE-2026-1555-POC](https://github.com/webshellseo8/CVE-2026-1555-POC)
 
 ### CVE-2026-1814 (2026-02-03)
 
@@ -409,6 +410,13 @@
 - [0xBlackash/CVE-2026-4480](https://github.com/0xBlackash/CVE-2026-4480)
 - [CarlosEduardoPM/CVE-2026-4480-POC](https://github.com/CarlosEduardoPM/CVE-2026-4480-POC)
 
+### CVE-2026-4524 (2026-05-14)
+
+<code>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.9.1 before 18.9.7, 18.10 before 18.10.6, and 18.11 before 18.11.3 that could have allowed an authenticated user to access confidential issue content in public projects without proper authorization due to improper authorization checks.
+</code>
+
+- [CyruxSec/CVE-2026-4524](https://github.com/CyruxSec/CVE-2026-4524)
+
 ### CVE-2026-4802 (2026-05-11)
 
 <code>A flaw was found in Cockpit. This vulnerability allows a remote attacker to achieve arbitrary command execution on the host by exploiting unsanitized user-controlled parameters within crafted links in the system logs user interface (UI). An attacker can inject shell metacharacters and command substitutions into these parameters, leading to the execution of arbitrary shell commands on the affected system. This could result in a complete system compromise.
@@ -537,6 +545,13 @@
 
 - [Crihexe/v8-poc-CVE-2026-5865](https://github.com/Crihexe/v8-poc-CVE-2026-5865)
 
+### CVE-2026-5950 (2026-05-20)
+
+<code>An unbounded resend loop vulnerability exists in the BIND 9 resolver state machine during bad-server handling, enabling a remote unauthenticated attacker to cause severe resource exhaustion by sending queries that trigger specific retry conditions.\nThis issue affects BIND 9 versions 9.18.36 through 9.18.48, 9.20.8 through 9.20.22, 9.21.7 through 9.21.21, 9.18.36-S1 through 9.18.48-S1, and 9.20.9-S1 through 9.20.22-S1.
+</code>
+
+- [billybaraja/cve-2026-5950-bind9-resolver-dos](https://github.com/billybaraja/cve-2026-5950-bind9-resolver-dos)
+
 ### CVE-2026-6009 (2026-05-19)
 
 <code>Java Deserialisation Vulnerability in Jaspersoft Reports Library leads to Remote Code Execution (RCE), potentially allowing code execution on the affected system
@@ -588,13 +603,6 @@
 - [zycoder0day/CVE-2026-6279](https://github.com/zycoder0day/CVE-2026-6279)
 - [87achrafg-stack/CVE-2026-6279.py](https://github.com/87achrafg-stack/CVE-2026-6279.py)
 - [87achrafg-stack/CVE-2026-6279](https://github.com/87achrafg-stack/CVE-2026-6279)
-
-### CVE-2026-6379 (2026-05-18)
-
-<code>The WP Photo Album Plus WordPress plugin before 9.1.11.001 does not properly sanitize and escape a parameter before using it in a SQL query, allowing unauthenticated users to perform SQL injection attacks.
-</code>
-
-- [dinosn/cve-2026-6379](https://github.com/dinosn/cve-2026-6379)
 
 ### CVE-2026-6433 (2026-05-11)
 
@@ -936,6 +944,13 @@
 
 - [Xmyronn/CVE-2026-11344-RCE](https://github.com/Xmyronn/CVE-2026-11344-RCE)
 
+### CVE-2026-11417 (2026-06-10)
+
+<code>OS command injection in the NodejsFunction local bundling pipeline in aws-cdk-lib before 2.245.0 (2.246.0 on Windows) might allow an actor who controls the value of one or more bundling properties (externalModules, define, loader, inject, or esbuildArgs) to execute arbitrary commands on the host running the CDK toolchain via injected shell metacharacters. This issue requires the threat actor to control the value of one or more of the affected bundling properties in the CDK application.\n\n\n\nTo remediate this issue, users should upgrade to aws-cdk-lib 2.245.0 (2.246.0 on Windows) or later.
+</code>
+
+- [HeshamASH/CVE-2026-11417-AWS-CDK-RCE](https://github.com/HeshamASH/CVE-2026-11417-AWS-CDK-RCE)
+
 ### CVE-2026-11450 (2026-06-07)
 
 <code>A vulnerability was detected in GL.iNet GL-MT3000 4.4.5. This affects the function dlopen in the library /usr/lib/oui-httpd/rpc/ of the component Path Normalization Handler. Performing a manipulation of the argument dev_name results in command injection. It is possible to initiate the attack remotely. Upgrading to version 4.7 mitigates this issue. It is advisable to upgrade the affected component. The vendor confirms: &quot; From version 4.7 onward, we have enabled method‑level validation at the HTTP /rpc layer. nas‑web.eject_disk is no longer in the whitelist of allowed methods. Consequently, directly calling eject_disk through the default /rpc endpoint returns Invalid params, preventing entry into subsequent dangerous functions and blocking the remote exploit chain described in the report.&quot;
@@ -1018,6 +1033,7 @@
 </code>
 
 - [watchtowrlabs/watchTowr-vs-Splunk-CVE-2026-20253](https://github.com/watchtowrlabs/watchTowr-vs-Splunk-CVE-2026-20253)
+- [0xBlackash/CVE-2026-20253](https://github.com/0xBlackash/CVE-2026-20253)
 
 ### CVE-2026-20452 (2026-06-01)
 
@@ -1425,7 +1441,7 @@
 <code>Swiper is a free and mobile touch slider with hardware accelerated transitions and native behavior. Versions 6.5.1 through 12.1.1 have a Prototype pollution vulnerability. The vulnerability resides in line 94 of shared/utils.mjs, where the indexOf() function is used to check whether user provided input contain forbidden strings. Despite a previous fix that attempted to mitigate prototype pollution by checking whether user input contained a forbidden key, it is still possible to pollute Object.prototype via a crafted input using Array.prototype. The exploit works across Windows and Linux and on Node and Bun runtimes.  Any application that processes attacker-controlled input using this package may be affected  by the following: Authentication Bypass, Denial of Service and RCE. This issue is fixed in version 12.1.2.
 </code>
 
-- [stealth-rd/resize-image-before-upload-secure](https://github.com/stealth-rd/resize-image-before-upload-secure)
+- [stealth-src/resize-image-before-upload-secure](https://github.com/stealth-src/resize-image-before-upload-secure)
 
 ### CVE-2026-27384 (2026-03-05)
 
@@ -1444,13 +1460,6 @@
 ### CVE-2026-27771
 - [HORKimhab/CVE-2026-27771](https://github.com/HORKimhab/CVE-2026-27771)
 - [portbuster1337/CVE-2026-27771](https://github.com/portbuster1337/CVE-2026-27771)
-
-### CVE-2026-27778 (2026-03-05)
-
-<code>The WebSocket Application Programming Interface lacks restrictions on the number of authentication requests. This absence of rate limiting may allow an attacker to conduct denial-of-service attacks by suppressing or mis-routing legitimate charger telemetry, or conduct brute-force attacks to gain unauthorized access.
-</code>
-
-- [KimJ6/PoC-Simulator_CVE-2026-27778](https://github.com/KimJ6/PoC-Simulator_CVE-2026-27778)
 
 ### CVE-2026-27886 (2026-05-14)
 
@@ -1648,13 +1657,8 @@
 - [aexdyhaxor/CVE-2026-31431-copy-fail](https://github.com/aexdyhaxor/CVE-2026-31431-copy-fail)
 - [ncmprbll/copy-fail-rs](https://github.com/ncmprbll/copy-fail-rs)
 - [ravindercodes/copy-fail-CVE-2026-31431](https://github.com/ravindercodes/copy-fail-CVE-2026-31431)
-- [xn0kkx/CVE-2026-31431_CopyFail_LinuxKernel_LPE](https://github.com/xn0kkx/CVE-2026-31431_CopyFail_LinuxKernel_LPE)
-- [MetaspIoit/CVE-2026-31431](https://github.com/MetaspIoit/CVE-2026-31431)
-- [kvendler/BigFix-CopyFail-AlmaLinux-Content](https://github.com/kvendler/BigFix-CopyFail-AlmaLinux-Content)
-- [chavezvic/CopyFail-Penguin](https://github.com/chavezvic/CopyFail-Penguin)
 - [samanzamani/copy-fail-checker](https://github.com/samanzamani/copy-fail-checker)
 - [ochebotar/copy-fail-CVE-2026-31431-detection-probe](https://github.com/ochebotar/copy-fail-CVE-2026-31431-detection-probe)
-- [g1nt0n1x/copy-fail-CVE-2026-31431-shell](https://github.com/g1nt0n1x/copy-fail-CVE-2026-31431-shell)
 - [Qengineering/RK35xx-CopyFail-Hotfix](https://github.com/Qengineering/RK35xx-CopyFail-Hotfix)
 - [ShahaB108/CVE-2026-31431_Kernel_Checker](https://github.com/ShahaB108/CVE-2026-31431_Kernel_Checker)
 - [xeloxa/copyfail-exploit](https://github.com/xeloxa/copyfail-exploit)
@@ -2210,6 +2214,9 @@
 ### CVE-2026-37196
 - [Pavanvootla-sec/CVE-2026-37196](https://github.com/Pavanvootla-sec/CVE-2026-37196)
 
+### CVE-2026-37197
+- [Pavanvootla-sec/CVE-2026-37197](https://github.com/Pavanvootla-sec/CVE-2026-37197)
+
 ### CVE-2026-37272
 - [vytlanikhil/CVE-2026-37272](https://github.com/vytlanikhil/CVE-2026-37272)
 
@@ -2442,8 +2449,6 @@
 - [Mapclaregister/CVE-2026-41089-191](https://github.com/Mapclaregister/CVE-2026-41089-191)
 - [sectiondukestring25/CVE-2026-41089-971](https://github.com/sectiondukestring25/CVE-2026-41089-971)
 - [SightFinchFall/CVE-2026-41089-238](https://github.com/SightFinchFall/CVE-2026-41089-238)
-- [raingatorrouter/CVE-2026-41089-953](https://github.com/raingatorrouter/CVE-2026-41089-953)
-- [raingatorrouter/CVE-2026-41089-224](https://github.com/raingatorrouter/CVE-2026-41089-224)
 - [segmentjoninsecret/CVE-2026-41089-334](https://github.com/segmentjoninsecret/CVE-2026-41089-334)
 - [StampDreamFitting/CVE-2026-41089-986](https://github.com/StampDreamFitting/CVE-2026-41089-986)
 - [CrimsonKingfisher/CVE-2026-41089-245](https://github.com/CrimsonKingfisher/CVE-2026-41089-245)
@@ -2526,7 +2531,6 @@
 - [Jenderal92/CVE-2026-41940](https://github.com/Jenderal92/CVE-2026-41940)
 - [0xBlackash/CVE-2026-41940](https://github.com/0xBlackash/CVE-2026-41940)
 - [MrOplus/CVE-2026-41940](https://github.com/MrOplus/CVE-2026-41940)
-- [Underh0st/CPanel-Audit-Remediation-Tool](https://github.com/Underh0st/CPanel-Audit-Remediation-Tool)
 - [zwanski2019/cPanelSniper](https://github.com/zwanski2019/cPanelSniper)
 - [habibkaratas/sorry-ransomware-analysis](https://github.com/habibkaratas/sorry-ransomware-analysis)
 - [sercanokur/CVE-2026-41940-cPanel-WHM-Verification-Tool](https://github.com/sercanokur/CVE-2026-41940-cPanel-WHM-Verification-Tool)
@@ -2576,13 +2580,6 @@
 </code>
 
 - [ShadowByte1/CVE-2026-42154](https://github.com/ShadowByte1/CVE-2026-42154)
-
-### CVE-2026-42167 (2026-04-28)
-
-<code>mod_sql in ProFTPD before 1.3.9a allows remote attackers to execute arbitrary code via a username, in scenarios where there is logging of USER requests with an expansion such as %U, and the SQL backend allows commands (e.g., COPY TO PROGRAM).
-</code>
-
-- [kaleth4/CVE-2026-42167](https://github.com/kaleth4/CVE-2026-42167)
 
 ### CVE-2026-42203 (2026-05-08)
 
@@ -2659,6 +2656,13 @@
 </code>
 
 - [fineman999/POC_CVE-2026-42589](https://github.com/fineman999/POC_CVE-2026-42589)
+
+### CVE-2026-42647 (2026-06-11)
+
+<code>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Beardev JoomSport allows Blind SQL Injection.\n\nThis issue affects JoomSport: from n/a through 5.7.7.
+</code>
+
+- [rootdirective-sec/CVE-2026-42647-Lab](https://github.com/rootdirective-sec/CVE-2026-42647-Lab)
 
 ### CVE-2026-42778 (2026-05-01)
 
@@ -2985,6 +2989,7 @@
 </code>
 
 - [HORKimhab/CVE-2026-45447](https://github.com/HORKimhab/CVE-2026-45447)
+- [0xBlackash/CVE-2026-45447](https://github.com/0xBlackash/CVE-2026-45447)
 
 ### CVE-2026-45584 (2026-05-20)
 
@@ -3226,6 +3231,13 @@
 
 - [workshops-de/google_gax](https://github.com/workshops-de/google_gax)
 
+### CVE-2026-48611 (2026-06-12)
+
+<code>Improper authentication checks in the OAuth implementation allow account hijacking even when OAuth is not configured or enabled leading to unauthorized access in default installations.
+</code>
+
+- [citruscitruscitruscitruscitrusci/CVE-2026-48611-poc](https://github.com/citruscitruscitruscitruscitrusci/CVE-2026-48611-poc)
+
 ### CVE-2026-48710 (2026-05-26)
 
 <code>Starlette is a lightweight ASGI framework/toolkit. Prior to version 1.0.1, the HTTP `Host` request header was not validated before being used to reconstruct `request.url`. Because the routing algorithm relies on the raw HTTP path while `request.url` is rebuilt from the `Host` header, a malformed header could make `request.url.path` differ from the path that was actually requested. Middleware and endpoints that apply security restrictions based on `request.url` (rather than the raw `scope` path) could therefore be bypassed. Users should upgrade to a version greater than or equal to version 1.0.1, which validates the `Host` header against the grammar of RFC 9112 §3.2 / RFC 3986 §3.2.2 when constructing `request.url` and falls back to `scope[&quot;server&quot;]` for malformed values.
@@ -3330,6 +3342,7 @@
 - [LiaoZiqi-GZFLS/CVE-2026-49975](https://github.com/LiaoZiqi-GZFLS/CVE-2026-49975)
 - [minc-nice-100/http2-bomb-analysis-paper](https://github.com/minc-nice-100/http2-bomb-analysis-paper)
 - [adminlove520/http2-bomb-detector](https://github.com/adminlove520/http2-bomb-detector)
+- [razureink/cve-2026-49975-http2bomb_reproduction](https://github.com/razureink/cve-2026-49975-http2bomb_reproduction)
 
 ### CVE-2026-50142
 - [MuhammedHussein17/libheif-cve-2026-50142](https://github.com/MuhammedHussein17/libheif-cve-2026-50142)
@@ -5434,13 +5447,6 @@
 </code>
 
 - [MooseLoveti/Trinity-Audio-CVE-Report](https://github.com/MooseLoveti/Trinity-Audio-CVE-Report)
-
-### CVE-2025-9209 (2025-10-03)
-
-<code>The RestroPress – Online Food Ordering System plugin for WordPress is vulnerable to Authentication Bypass in versions 3.0.0 to 3.1.9.2. This is due to the plugin exposing user private tokens and API data via the /wp-json/wp/v2/users REST API endpoint. This makes it possible for unauthenticated attackers to forge JWT tokens for other users, including administrators, and authenticate as them.
-</code>
-
-- [Nxploited/CVE-2025-9209](https://github.com/Nxploited/CVE-2025-9209)
 
 ### CVE-2025-9215 (2025-09-17)
 
@@ -9045,6 +9051,7 @@
 
 - [daryllundy/cve-2025-32711](https://github.com/daryllundy/cve-2025-32711)
 - [TreRB/markdown-exfil-tester](https://github.com/TreRB/markdown-exfil-tester)
+- [Danielossai12/aisecplus-week01-danielossai](https://github.com/Danielossai12/aisecplus-week01-danielossai)
 
 ### CVE-2025-32756 (2025-05-13)
 
@@ -11156,8 +11163,8 @@
 <code>Successful exploitation of the vulnerability could allow an unauthenticated attacker to upload arbitrary files to any location on the mail server, potentially enabling remote code execution.
 </code>
 
-- [yt2w/CVE-2025-52691](https://github.com/yt2w/CVE-2025-52691)
 - [rxerium/CVE-2025-52691](https://github.com/rxerium/CVE-2025-52691)
+- [Udyz/CVE-2025-52691](https://github.com/Udyz/CVE-2025-52691)
 - [you-ssef9/CVE-2025-52691](https://github.com/you-ssef9/CVE-2025-52691)
 - [DeathShotXD/CVE-2025-52691-APT-PoC](https://github.com/DeathShotXD/CVE-2025-52691-APT-PoC)
 - [mohammadzarnian1357/Ashwesker-CVE-2025-52691](https://github.com/mohammadzarnian1357/Ashwesker-CVE-2025-52691)
@@ -12155,6 +12162,7 @@
 - [TechWithOrgito/CVE-2025-55182-Researching-process](https://github.com/TechWithOrgito/CVE-2025-55182-Researching-process)
 - [AkhmadKholmurodov/React2Shell_Exploit](https://github.com/AkhmadKholmurodov/React2Shell_Exploit)
 - [Alejandro609x/JEFAZO-CVE-2025-55182-Checker](https://github.com/Alejandro609x/JEFAZO-CVE-2025-55182-Checker)
+- [cc3305/CVE-2025-55182](https://github.com/cc3305/CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -14365,6 +14373,13 @@
 
 - [Chocapikk/CVE-2025-67494](https://github.com/Chocapikk/CVE-2025-67494)
 
+### CVE-2025-67511 (2025-12-10)
+
+<code>Cybersecurity AI (CAI) is an open-source framework for building and deploying AI-powered offensive and defensive automation. Versions 0.5.9 and below are vulnerable to Command Injection through the run_ssh_command_with_credentials() function, which is  available to AI agents. Only password and command inputs are escaped in run_ssh_command_with_credentials to prevent shell injection; while username, host and port values are injectable. This issue does not have a fix at the time of publication.
+</code>
+
+- [edoardottt/CVE-2025-67511](https://github.com/edoardottt/CVE-2025-67511)
+
 ### CVE-2025-67586 (2025-12-09)
 
 <code>Missing Authorization vulnerability in Ronald Huereca Highlight and Share highlight-and-share allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Highlight and Share: from n/a through &lt;= 5.2.0.
@@ -15303,7 +15318,6 @@
 - [101010zyl/CVE-2024-0582-dataonly](https://github.com/101010zyl/CVE-2024-0582-dataonly)
 - [kuzeyardabulut/CVE-2024-0582](https://github.com/kuzeyardabulut/CVE-2024-0582)
 - [pwnmonk/io_uring-n-day](https://github.com/pwnmonk/io_uring-n-day)
-- [nanabingies/CVE-2024-0582](https://github.com/nanabingies/CVE-2024-0582)
 
 ### CVE-2024-0588 (2024-04-09)
 
@@ -15908,6 +15922,7 @@
 - [Ava-Vispilio/CVE-2024-3094](https://github.com/Ava-Vispilio/CVE-2024-3094)
 - [0xBlackash/CVE-2024-3094](https://github.com/0xBlackash/CVE-2024-3094)
 - [vesjolyjd/Kaspersky_CVE-2024-3094](https://github.com/vesjolyjd/Kaspersky_CVE-2024-3094)
+- [stevehenderson/lab_xz_backdoor](https://github.com/stevehenderson/lab_xz_backdoor)
 
 ### CVE-2024-3105 (2024-06-15)
 
@@ -32317,6 +32332,7 @@
 - [JayRyz/CVE-2023-38646-PoC-Metabase](https://github.com/JayRyz/CVE-2023-38646-PoC-Metabase)
 - [cleanmgr112/cve-2023-38646-poc](https://github.com/cleanmgr112/cve-2023-38646-poc)
 - [BreezeGalaxy/CVE-2023-38646](https://github.com/BreezeGalaxy/CVE-2023-38646)
+- [NosrevytsNg/Metabase-Pre-Auth-RCE-POC](https://github.com/NosrevytsNg/Metabase-Pre-Auth-RCE-POC)
 
 ### CVE-2023-38709 (2024-04-04)
 
@@ -33595,13 +33611,6 @@
 </code>
 
 - [SoundarXploit/CVE-2023-44061](https://github.com/SoundarXploit/CVE-2023-44061)
-
-### CVE-2023-44451 (2024-05-03)
-
-<code>Linux Mint Xreader EPUB File Parsing Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Linux Mint Xreader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of EPUB files. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-21897.
-</code>
-
-- [febinrev/slippy-book-exploit](https://github.com/febinrev/slippy-book-exploit)
 
 ### CVE-2023-44487 (2023-10-10)
 
@@ -61405,6 +61414,7 @@
 - [andyfeili/CVE-2018-9276](https://github.com/andyfeili/CVE-2018-9276)
 - [alvinsmith-eroad/CVE-2018-9276](https://github.com/alvinsmith-eroad/CVE-2018-9276)
 - [AC8999/PRTG-Network-Monitor-18.2.38---Authenticated-Remote-Code-Execution-CVE-2018-9276](https://github.com/AC8999/PRTG-Network-Monitor-18.2.38---Authenticated-Remote-Code-Execution-CVE-2018-9276)
+- [BardLaudian/CVE_2018_9276](https://github.com/BardLaudian/CVE_2018_9276)
 
 ### CVE-2018-9338 (2024-11-19)
 
@@ -65348,6 +65358,13 @@
 </code>
 
 - [aress31/cve-2017-12945](https://github.com/aress31/cve-2017-12945)
+
+### CVE-2017-13077 (2017-10-17)
+
+<code>Wi-Fi Protected Access (WPA and WPA2) allows reinstallation of the Pairwise Transient Key (PTK) Temporal Key (TK) during the four-way handshake, allowing an attacker within radio range to replay, decrypt, or spoof frames.
+</code>
+
+- [mugheeskhan5/wpa2-krack-lab](https://github.com/mugheeskhan5/wpa2-krack-lab)
 
 ### CVE-2017-13089 (2017-10-27)
 
