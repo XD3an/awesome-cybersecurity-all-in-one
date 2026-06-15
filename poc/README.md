@@ -527,6 +527,7 @@
 </code>
 
 - [Xaanziu/CVE-2026-5513](https://github.com/Xaanziu/CVE-2026-5513)
+- [87achrafg-stack/CVE-2026-5513](https://github.com/87achrafg-stack/CVE-2026-5513)
 
 ### CVE-2026-5615 (2026-04-06)
 
@@ -988,6 +989,13 @@
 - [adamshaikhma/CVE-2026-11645](https://github.com/adamshaikhma/CVE-2026-11645)
 - [0xBlackash/CVE-2026-11645](https://github.com/0xBlackash/CVE-2026-11645)
 
+### CVE-2026-20127 (2026-02-25)
+
+<code>A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, could allow an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.\r\n\r\nThis vulnerability exists because the peering authentication mechanism in an affected system is not working properly. An attacker could exploit this vulnerability by sending crafted requests to an affected system. A successful exploit could allow the attacker to log in to an affected Cisco Catalyst SD-WAN Controller as an internal, high-privileged, non-root&amp;nbsp;user account. Using this account, the attacker could access NETCONF, which would then allow the attacker to manipulate network configuration for the SD-WAN fabric.&amp;nbsp;
+</code>
+
+- [0xBlackash/CVE-2026-20127](https://github.com/0xBlackash/CVE-2026-20127)
+
 ### CVE-2026-20131 (2026-03-04)
 
 <code>A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to execute arbitrary Java code as root&amp;nbsp;on an affected device.\r\n\r\nThis vulnerability is due to insecure deserialization of a user-supplied Java byte stream. An attacker could exploit this vulnerability by sending a crafted serialized Java object to the web-based management interface of an affected device. A successful exploit could allow the attacker to execute arbitrary code on the device and elevate privileges to root.\r\nNote: If the FMC management interface does not have public internet access, the attack surface that is associated with this vulnerability is reduced.
@@ -1193,6 +1201,7 @@
 <code>MCPJam inspector is the local-first development platform for MCP servers. Versions 1.4.2 and earlier are vulnerable to remote code execution (RCE) vulnerability, which allows an attacker to send a crafted HTTP request that triggers the installation of an MCP server, leading to RCE. Since MCPJam inspector by default listens on 0.0.0.0 instead of 127.0.0.1, an attacker can trigger the RCE remotely via a simple HTTP request. Version 1.4.3 contains a patch.
 </code>
 
+- [ibreakthingsforaliving/CVE-2026-23744-PoC](https://github.com/ibreakthingsforaliving/CVE-2026-23744-PoC)
 - [SuriyaBoon/DevHub-HackTheBox-ss11](https://github.com/SuriyaBoon/DevHub-HackTheBox-ss11)
 - [p1ctur3p3rf3ct/CVE-2026-23744](https://github.com/p1ctur3p3rf3ct/CVE-2026-23744)
 - [thisisish/HTB-DevHub](https://github.com/thisisish/HTB-DevHub)
@@ -1210,6 +1219,7 @@
 - [keeieb79/CVE-2026-23744-poc](https://github.com/keeieb79/CVE-2026-23744-poc)
 - [oryk0/CVE-2026-23744](https://github.com/oryk0/CVE-2026-23744)
 - [kennedy-aikohi/mcpjam-cve-2026-23744-validator](https://github.com/kennedy-aikohi/mcpjam-cve-2026-23744-validator)
+- [rohit-sundar/cve-2026-23744](https://github.com/rohit-sundar/cve-2026-23744)
 
 ### CVE-2026-23813 (2026-03-11)
 
@@ -1450,7 +1460,7 @@
 <code>Swiper is a free and mobile touch slider with hardware accelerated transitions and native behavior. Versions 6.5.1 through 12.1.1 have a Prototype pollution vulnerability. The vulnerability resides in line 94 of shared/utils.mjs, where the indexOf() function is used to check whether user provided input contain forbidden strings. Despite a previous fix that attempted to mitigate prototype pollution by checking whether user input contained a forbidden key, it is still possible to pollute Object.prototype via a crafted input using Array.prototype. The exploit works across Windows and Linux and on Node and Bun runtimes.  Any application that processes attacker-controlled input using this package may be affected  by the following: Authentication Bypass, Denial of Service and RCE. This issue is fixed in version 12.1.2.
 </code>
 
-- [stealth-src/resize-image-before-upload-secure](https://github.com/stealth-src/resize-image-before-upload-secure)
+- [stealth-engine/resize-image-before-upload-secure](https://github.com/stealth-engine/resize-image-before-upload-secure)
 
 ### CVE-2026-27384 (2026-03-05)
 
@@ -1632,7 +1642,6 @@
 - [shadowabi/CVE-2026-31431-CopyFail-Universal-LPE](https://github.com/shadowabi/CVE-2026-31431-CopyFail-Universal-LPE)
 - [Percivalll/Copy-Fail-CVE-2026-31431-Kubernetes-PoC](https://github.com/Percivalll/Copy-Fail-CVE-2026-31431-Kubernetes-PoC)
 - [yandex-cloud-examples/yc-mk8s-copy-fail-mitigation](https://github.com/yandex-cloud-examples/yc-mk8s-copy-fail-mitigation)
-- [mfloresdacunha/CVE-2026-31431](https://github.com/mfloresdacunha/CVE-2026-31431)
 - [JuanBindez/CVE-2026-31431](https://github.com/JuanBindez/CVE-2026-31431)
 - [diemoeve/copyfail-rs](https://github.com/diemoeve/copyfail-rs)
 - [cozystack/copy-fail-blocker](https://github.com/cozystack/copy-fail-blocker)
@@ -1666,7 +1675,6 @@
 - [ncmprbll/copy-fail-rs](https://github.com/ncmprbll/copy-fail-rs)
 - [samanzamani/copy-fail-checker](https://github.com/samanzamani/copy-fail-checker)
 - [ochebotar/copy-fail-CVE-2026-31431-detection-probe](https://github.com/ochebotar/copy-fail-CVE-2026-31431-detection-probe)
-- [Qengineering/RK35xx-CopyFail-Hotfix](https://github.com/Qengineering/RK35xx-CopyFail-Hotfix)
 - [ShahaB108/CVE-2026-31431_Kernel_Checker](https://github.com/ShahaB108/CVE-2026-31431_Kernel_Checker)
 - [xeloxa/copyfail-exploit](https://github.com/xeloxa/copyfail-exploit)
 - [Mrhudson69/cve-2026-31431](https://github.com/Mrhudson69/cve-2026-31431)
@@ -2205,6 +2213,9 @@
 
 - [rufflabs/CVE-2026-36748](https://github.com/rufflabs/CVE-2026-36748)
 
+### CVE-2026-36826
+- [Forklit/CVE-2026-36826](https://github.com/Forklit/CVE-2026-36826)
+
 ### CVE-2026-36980
 - [canomer/CVE-2026-36980-Kernel-BSOD-DoS-PoC](https://github.com/canomer/CVE-2026-36980-Kernel-BSOD-DoS-PoC)
 
@@ -2340,7 +2351,6 @@
 <code>marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE vulnerability. The terminal WebSocket endpoint /terminal/ws lacks authentication validation, allowing an unauthenticated attacker to obtain a full PTY shell and execute arbitrary system commands. Unlike other WebSocket endpoints (e.g., /ws) that correctly call validate_auth() for authentication, the /terminal/ws endpoint only checks the running mode and platform support before accepting connections, completely skipping authentication verification. This vulnerability is fixed in 0.23.0.
 </code>
 
-- [rootdirective-sec/CVE-2026-39987-Lab](https://github.com/rootdirective-sec/CVE-2026-39987-Lab)
 - [0xdeadroot/CVE-2026-39987-marimo-rce](https://github.com/0xdeadroot/CVE-2026-39987-marimo-rce)
 - [M3PH1569/CVE-2026-39987-POC](https://github.com/M3PH1569/CVE-2026-39987-POC)
 - [HORKimhab/CVE-2026-39987](https://github.com/HORKimhab/CVE-2026-39987)
@@ -2524,9 +2534,6 @@
 - [Jenderal92/CVE-2026-41940](https://github.com/Jenderal92/CVE-2026-41940)
 - [0xBlackash/CVE-2026-41940](https://github.com/0xBlackash/CVE-2026-41940)
 - [MrOplus/CVE-2026-41940](https://github.com/MrOplus/CVE-2026-41940)
-- [zwanski2019/cPanelSniper](https://github.com/zwanski2019/cPanelSniper)
-- [habibkaratas/sorry-ransomware-analysis](https://github.com/habibkaratas/sorry-ransomware-analysis)
-- [sercanokur/CVE-2026-41940-cPanel-WHM-Verification-Tool](https://github.com/sercanokur/CVE-2026-41940-cPanel-WHM-Verification-Tool)
 - [nickpaulsec/2026-41940-poc](https://github.com/nickpaulsec/2026-41940-poc)
 - [iSee857/cPanel-WHM-CVE-2026-41940-AuthBypass](https://github.com/iSee857/cPanel-WHM-CVE-2026-41940-AuthBypass)
 - [itsismarcos/CVE-2026-41940](https://github.com/itsismarcos/CVE-2026-41940)
@@ -2741,13 +2748,13 @@
 - [nu0l/NGINX-Rift](https://github.com/nu0l/NGINX-Rift)
 - [bamov970/CVE-2026-42945-Nginx-RCE-bypass-ASLR](https://github.com/bamov970/CVE-2026-42945-Nginx-RCE-bypass-ASLR)
 - [josephfelix/CVE-2026-42945-nginx-rift](https://github.com/josephfelix/CVE-2026-42945-nginx-rift)
-- [niekaicheng/CVE-2026-42945_NGINX_Rift](https://github.com/niekaicheng/CVE-2026-42945_NGINX_Rift)
 - [quantumworld-dpdns-io/CVE-2026-42945](https://github.com/quantumworld-dpdns-io/CVE-2026-42945)
 - [strivepan/Nginx_cve-2026-42945-scanner-gui](https://github.com/strivepan/Nginx_cve-2026-42945-scanner-gui)
 - [lowilol/CVE-2026-42945-NGINX-Rift-Check-Script](https://github.com/lowilol/CVE-2026-42945-NGINX-Rift-Check-Script)
 - [simota/nginx-rift-scanner](https://github.com/simota/nginx-rift-scanner)
 - [jenniferreire26/CVE-2026-42945](https://github.com/jenniferreire26/CVE-2026-42945)
 - [LiaoZiqi-GZFLS/CVE-2026-42945](https://github.com/LiaoZiqi-GZFLS/CVE-2026-42945)
+- [sec-sys/CVE-2026-42945-Reverse-Shell-POC](https://github.com/sec-sys/CVE-2026-42945-Reverse-Shell-POC)
 
 ### CVE-2026-43284 (2026-05-08)
 
@@ -3374,6 +3381,13 @@
 
 ### CVE-2026-53647
 - [7megaumka7/FOSKiller](https://github.com/7megaumka7/FOSKiller)
+
+### CVE-2026-53787 (2026-06-12)
+
+<code>Amasty Order Attributes for Magento 2 before version 4.0.0 contains an unauthenticated arbitrary file upload vulnerability that allows unauthenticated attackers to write arbitrary files to the store's media directory by submitting files of any type or name to the upload endpoint without authentication, session validation, or cart context. Attackers can upload PHP files to achieve remote code execution on servers where the media directory permits PHP execution, or alternatively enable malware hosting, stored cross-site scripting via HTML or SVG uploads, and path traversal to write files outside the intended upload directory.
+</code>
+
+- [webshellseo8/CVE-2026-53787-POC-](https://github.com/webshellseo8/CVE-2026-53787-POC-)
 
 ### CVE-2026-54088
 - [Saku0512/CVE-2026-54088-poc](https://github.com/Saku0512/CVE-2026-54088-poc)
@@ -5880,7 +5894,7 @@
 
 - [GhoStZA-debug/PoC-CVE-collection](https://github.com/GhoStZA-debug/PoC-CVE-collection)
 - [Mr-In4inci3le/CVE-2025-11953-POC-](https://github.com/Mr-In4inci3le/CVE-2025-11953-POC-)
-- [boroeurnprach/CVE-2025-11953-PoC](https://github.com/boroeurnprach/CVE-2025-11953-PoC)
+- [ibreakthingsforaliving/CVE-2025-11953-PoC](https://github.com/ibreakthingsforaliving/CVE-2025-11953-PoC)
 
 ### CVE-2025-11973 (2025-11-21)
 
@@ -6420,6 +6434,7 @@
 - [sho-luv/MongoBleed](https://github.com/sho-luv/MongoBleed)
 - [0xBlackash/CVE-2025-14847](https://github.com/0xBlackash/CVE-2025-14847)
 - [dawnsmithcyber/azure-vulnerability-remediation-project](https://github.com/dawnsmithcyber/azure-vulnerability-remediation-project)
+- [shokribardiya/CVE-2025-14847-mongobleed](https://github.com/shokribardiya/CVE-2025-14847-mongobleed)
 
 ### CVE-2025-14855 (2025-12-21)
 
@@ -11233,6 +11248,13 @@
 
 - [galbarnahum/CVE-2025-53020-PoC](https://github.com/galbarnahum/CVE-2025-53020-PoC)
 
+### CVE-2025-53024 (2025-07-15)
+
+<code>Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core).   The supported version that is affected is 7.1.10. Easily exploitable vulnerability allows high privileged attacker with logon to the infrastructure where Oracle VM VirtualBox executes to compromise Oracle VM VirtualBox.  While the vulnerability is in Oracle VM VirtualBox, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle VM VirtualBox. CVSS 3.1 Base Score 8.2 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H).
+</code>
+
+- [minq0x1412/CVE-2025-53024](https://github.com/minq0x1412/CVE-2025-53024)
+
 ### CVE-2025-53136 (2025-08-12)
 
 <code>Exposure of sensitive information to an unauthorized actor in Windows NT OS Kernel allows an authorized attacker to disclose information locally.
@@ -12666,13 +12688,6 @@
 
 - [graypixel2121/CVE-2025-57489](https://github.com/graypixel2121/CVE-2025-57489)
 
-### CVE-2025-57515 (2025-10-06)
-
-<code>A SQL injection vulnerability has been identified in Uniclare Student Portal v2. This flaw allows remote attackers to inject arbitrary SQL commands via vulnerable input fields, enabling the execution of time-delay functions to infer database responses.
-</code>
-
-- [sanchitsahni/CVE-2025-57515](https://github.com/sanchitsahni/CVE-2025-57515)
-
 ### CVE-2025-57529 (2026-02-03)
 
 <code>YouDataSum CPAS Audit Management System &lt;=v4.9 is vulnerable to SQL Injection in /cpasList/findArchiveReportByDah due to insufficient input validation. This allows remote unauthenticated attackers to execute arbitrary SQL commands via crafted input to the parameter. Successful exploitation could lead to unauthorized data access
@@ -12809,7 +12824,7 @@
 <code>React Router is a router for React. In @remix-run/react versions 1.15.0 through 2.17.0. and react-router versions 7.0.0 through 7.8.2, a XSS vulnerability exists in in React Router's meta()/&lt;Meta&gt; APIs in Framework Mode when generating script:ld+json tags which could allow arbitrary JavaScript execution during SSR if untrusted content is used to generate the tag. There is no impact if the application is being used in Declarative Mode (&lt;BrowserRouter&gt;) or Data Mode (createBrowserRouter/&lt;RouterProvider&gt;). This issue has been patched in @remix-run/react version 2.17.1 and react-router version 7.9.0.
 </code>
 
-- [boroeurnprach/CVE-2025-59057-PoC](https://github.com/boroeurnprach/CVE-2025-59057-PoC)
+- [ibreakthingsforaliving/CVE-2025-59057-PoC](https://github.com/ibreakthingsforaliving/CVE-2025-59057-PoC)
 
 ### CVE-2025-59059 (2026-03-03)
 
@@ -13207,7 +13222,7 @@
 
 - [FlowerWitch/CVE-2025-61686_docker](https://github.com/FlowerWitch/CVE-2025-61686_docker)
 - [Kai-One001/React-Router-CVE-2025-61686-](https://github.com/Kai-One001/React-Router-CVE-2025-61686-)
-- [boroeurnprach/CVE-2025-61686-PoC](https://github.com/boroeurnprach/CVE-2025-61686-PoC)
+- [ibreakthingsforaliving/CVE-2025-61686-PoC](https://github.com/ibreakthingsforaliving/CVE-2025-61686-PoC)
 
 ### CVE-2025-61757 (2025-10-21)
 
@@ -15925,6 +15940,7 @@
 - [0xBlackash/CVE-2024-3094](https://github.com/0xBlackash/CVE-2024-3094)
 - [vesjolyjd/Kaspersky_CVE-2024-3094](https://github.com/vesjolyjd/Kaspersky_CVE-2024-3094)
 - [stevehenderson/lab_xz_backdoor](https://github.com/stevehenderson/lab_xz_backdoor)
+- [nnatsopoulos/xz-backdoor-research](https://github.com/nnatsopoulos/xz-backdoor-research)
 
 ### CVE-2024-3105 (2024-06-15)
 
@@ -25897,13 +25913,6 @@
 </code>
 
 - [UnionTech-Software/libtheora-CVE-2024-56431-PoC](https://github.com/UnionTech-Software/libtheora-CVE-2024-56431-PoC)
-
-### CVE-2024-56433 (2024-12-26)
-
-<code>shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.
-</code>
-
-- [JonnyWhatshisface/CVE-2024-56433](https://github.com/JonnyWhatshisface/CVE-2024-56433)
 
 ### CVE-2024-56800 (2024-12-30)
 
@@ -39661,6 +39670,7 @@
 - [ImVihanga03/Static-Malware-Analysis-Follina-CVE-2022-30190](https://github.com/ImVihanga03/Static-Malware-Analysis-Follina-CVE-2022-30190)
 - [shndnth/CVE-2022-30190](https://github.com/shndnth/CVE-2022-30190)
 - [u1tr0nex/CVE-2022-30190-Follina-Lab](https://github.com/u1tr0nex/CVE-2022-30190-Follina-Lab)
+- [kaleth4/CVE-2022-30190](https://github.com/kaleth4/CVE-2022-30190)
 
 ### CVE-2022-30203 (2022-07-12)
 
@@ -42860,6 +42870,13 @@
 
 - [ShaikUsaf/packages_apps_Bluetooth_AOSP10_r33_CVE-2021-0329](https://github.com/ShaikUsaf/packages_apps_Bluetooth_AOSP10_r33_CVE-2021-0329)
 
+### CVE-2021-0336 (2021-02-10)
+
+<code>In onReceive of BluetoothPermissionRequest.java, there is a possible permissions bypass due to a mutable PendingIntent. This could lead to local escalation of privilege that bypasses a permission check, with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-9 Android-10 Android-11 Android-8.1Android ID: A-158219161
+</code>
+
+- [Trinadh465/packages_apps_Settings_AOSP10_r33_CVE-2021-0336](https://github.com/Trinadh465/packages_apps_Settings_AOSP10_r33_CVE-2021-0336)
+
 ### CVE-2021-0337 (2021-02-10)
 
 <code>In moveInMediaStore of FileSystemProvider.java, there is a possible file exposure due to stale metadata. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-8.1 Android-9 Android-10 Android-11Android ID: A-157474195
@@ -43603,7 +43620,6 @@
 - [puckiestyle/CVE-2021-3493](https://github.com/puckiestyle/CVE-2021-3493)
 - [fei9747/CVE-2021-3493](https://github.com/fei9747/CVE-2021-3493)
 - [pmihsan/OverlayFS-CVE-2021-3493](https://github.com/pmihsan/OverlayFS-CVE-2021-3493)
-- [smallkill/CVE-2021-3493](https://github.com/smallkill/CVE-2021-3493)
 - [ptkhai15/OverlayFS---CVE-2021-3493](https://github.com/ptkhai15/OverlayFS---CVE-2021-3493)
 - [iamz24/CVE-2021-3493_CVE-2022-3357](https://github.com/iamz24/CVE-2021-3493_CVE-2022-3357)
 - [fathallah17/OverlayFS-CVE-2021-3493](https://github.com/fathallah17/OverlayFS-CVE-2021-3493)
@@ -44752,8 +44768,7 @@
 <code>In the Reponsive Menu (free and Pro) WordPress plugins before 4.0.4, subscribers could upload zip archives containing malicious PHP files that would get extracted to the /rmp-menu/ directory. These files could then be accessed via the front end of the site to trigger remote code execution and ultimately allow an attacker to execute commands to further infect a WordPress site.
 </code>
 
-- [hnthuan1998/CVE-2021-24160](https://github.com/hnthuan1998/CVE-2021-24160)
-- [hnthuan1998/Exploit-CVE-2021-24160](https://github.com/hnthuan1998/Exploit-CVE-2021-24160)
+- [likeww/Exploit-CVE-2021-24160](https://github.com/likeww/Exploit-CVE-2021-24160)
 
 ### CVE-2021-24356 (2021-06-14)
 
@@ -47762,6 +47777,7 @@
 - [klmntbelgium/cve-2021-41773-exploration](https://github.com/klmntbelgium/cve-2021-41773-exploration)
 - [im2sinister/CVE-2021-41773](https://github.com/im2sinister/CVE-2021-41773)
 - [wvverez/CVE-2021-41773-PoC](https://github.com/wvverez/CVE-2021-41773-PoC)
+- [fxdyx-a/CVE-2021-41773-POC](https://github.com/fxdyx-a/CVE-2021-41773-POC)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -63510,6 +63526,7 @@
 - [dannic145/EternalBlue-Exploit-Demonstration](https://github.com/dannic145/EternalBlue-Exploit-Demonstration)
 - [ichhyak22/EternalBlue-Exploit-Demonstration-MS17-010](https://github.com/ichhyak22/EternalBlue-Exploit-Demonstration-MS17-010)
 - [trinadh-dasari-cyber/eternalblue-ms17-010-research](https://github.com/trinadh-dasari-cyber/eternalblue-ms17-010-research)
+- [0xBlackash/CVE-2017-0144](https://github.com/0xBlackash/CVE-2017-0144)
 
 ### CVE-2017-0145 (2017-03-17)
 
