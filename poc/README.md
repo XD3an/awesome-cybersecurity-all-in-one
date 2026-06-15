@@ -56,6 +56,7 @@
 - [tushargurav28/CVE-2026-0257](https://github.com/tushargurav28/CVE-2026-0257)
 - [jenniferreire26/CVE-2026-0257](https://github.com/jenniferreire26/CVE-2026-0257)
 - [grayxploit/CVE-2026-0257](https://github.com/grayxploit/CVE-2026-0257)
+- [Ez4rd1x1/CVE-2026-0257](https://github.com/Ez4rd1x1/CVE-2026-0257)
 
 ### CVE-2026-0265 (2026-05-13)
 
@@ -203,7 +204,6 @@
 <code>Heap buffer overflow in PostgreSQL pgcrypto allows a ciphertext provider to execute arbitrary code as the operating system user running the database.  Versions before PostgreSQL 18.2, 17.8, 16.12, 15.16, and 14.21 are affected.
 </code>
 
-- [stvm8/CVE-2026-2005_lab](https://github.com/stvm8/CVE-2026-2005_lab)
 - [var77/CVE-2026-2005](https://github.com/var77/CVE-2026-2005)
 
 ### CVE-2026-2256 (2026-03-02)
@@ -944,6 +944,7 @@
 
 - [izxci/CVE-2026-10795](https://github.com/izxci/CVE-2026-10795)
 - [webshellseo8/CVE-2026-10795-POC](https://github.com/webshellseo8/CVE-2026-10795-POC)
+- [rootdirective-sec/CVE-2026-10795-Lab](https://github.com/rootdirective-sec/CVE-2026-10795-Lab)
 
 ### CVE-2026-11344 (2026-06-05)
 
@@ -1090,26 +1091,12 @@
 
 - [Vikramaditya015/samsung-android-lpe](https://github.com/Vikramaditya015/samsung-android-lpe)
 
-### CVE-2026-21250 (2026-02-10)
-
-<code>Untrusted pointer dereference in Windows HTTP.sys allows an authorized attacker to elevate privileges locally.
-</code>
-
-- [kaleth4/CVE-2026-21250](https://github.com/kaleth4/CVE-2026-21250)
-
 ### CVE-2026-21510 (2026-02-10)
 
 <code>Protection mechanism failure in Windows Shell allows an unauthorized attacker to bypass a security feature over a network.
 </code>
 
 - [EpSiLoNPoInTOrI/EpSiLoNPoInTlnk](https://github.com/EpSiLoNPoInTOrI/EpSiLoNPoInTlnk)
-
-### CVE-2026-21514 (2026-02-10)
-
-<code>Reliance on untrusted inputs in a security decision in Microsoft Office Word allows an unauthorized attacker to bypass a security feature locally.
-</code>
-
-- [ChaitanyaHaritash/CVE-2026-21514_CVE-2026-21510](https://github.com/ChaitanyaHaritash/CVE-2026-21514_CVE-2026-21510)
 
 ### CVE-2026-21858 (2026-01-07)
 
@@ -1623,9 +1610,6 @@
 
 - [0xrixet/Craftcms-PoC-CVE-2026-31266](https://github.com/0xrixet/Craftcms-PoC-CVE-2026-31266)
 
-### CVE-2026-31341
-- [Sc2-Ciberdefensa/cve-2026-31341-copy-fail-checker](https://github.com/Sc2-Ciberdefensa/cve-2026-31341-copy-fail-checker)
-
 ### CVE-2026-31431 (2026-04-22)
 
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: algif_aead - Revert to operating out-of-place\n\nThis mostly reverts commit 72548b093ee3 except for the copying of\nthe associated data.\n\nThere is no benefit in operating in-place in algif_aead since the\nsource and destination come from different mappings.  Get rid of\nall the complexity added for in-place operation and just copy the\nAD directly.
@@ -1648,10 +1632,8 @@
 - [selectel/mks-copy-fail-mitigation](https://github.com/selectel/mks-copy-fail-mitigation)
 - [Juguitos/copy-fail](https://github.com/Juguitos/copy-fail)
 - [liamromanis101/CVE-2026-31431-Copy-Fail---Vulnerability-Detection-Script](https://github.com/liamromanis101/CVE-2026-31431-Copy-Fail---Vulnerability-Detection-Script)
-- [mym0us3r/COPY-FAIL-Detection-with-Wazuh-4.14.4](https://github.com/mym0us3r/COPY-FAIL-Detection-with-Wazuh-4.14.4)
 - [wvverez/CVE-2026-31431-Copy-Fail](https://github.com/wvverez/CVE-2026-31431-Copy-Fail)
 - [karollooool/Porting-CVE-2026-31431-Copy-Fail-to-a-Constrained-Java-Runner](https://github.com/karollooool/Porting-CVE-2026-31431-Copy-Fail-to-a-Constrained-Java-Runner)
-- [professional-slacker/alg_check](https://github.com/professional-slacker/alg_check)
 - [deckhouse/d8-copy-fail-mitigation](https://github.com/deckhouse/d8-copy-fail-mitigation)
 - [HulnotHutu/CVE-2026-31431](https://github.com/HulnotHutu/CVE-2026-31431)
 - [OmerAti/almalinux-fix-cve-2026-31431](https://github.com/OmerAti/almalinux-fix-cve-2026-31431)
@@ -1663,7 +1645,6 @@
 - [mrunalp/block-copyfail](https://github.com/mrunalp/block-copyfail)
 - [1amBa7Man/Linux-copy-fail-CVE-2026-31431](https://github.com/1amBa7Man/Linux-copy-fail-CVE-2026-31431)
 - [Smarttfoxx/copyfail](https://github.com/Smarttfoxx/copyfail)
-- [parmstro/cfDr](https://github.com/parmstro/cfDr)
 - [monobrau/copyfailscan](https://github.com/monobrau/copyfailscan)
 - [ROSNLR5/modrosnlr5](https://github.com/ROSNLR5/modrosnlr5)
 - [KanbaraAkihito/CVE-2026-31431-copyfail-rs](https://github.com/KanbaraAkihito/CVE-2026-31431-copyfail-rs)
@@ -1672,7 +1653,6 @@
 - [ctzisme/copyfail-guard](https://github.com/ctzisme/copyfail-guard)
 - [AvPrince26/copy-fail-CVE-2026-31431-Python-Golfing](https://github.com/AvPrince26/copy-fail-CVE-2026-31431-Python-Golfing)
 - [aexdyhaxor/CVE-2026-31431-copy-fail](https://github.com/aexdyhaxor/CVE-2026-31431-copy-fail)
-- [ncmprbll/copy-fail-rs](https://github.com/ncmprbll/copy-fail-rs)
 - [samanzamani/copy-fail-checker](https://github.com/samanzamani/copy-fail-checker)
 - [ochebotar/copy-fail-CVE-2026-31431-detection-probe](https://github.com/ochebotar/copy-fail-CVE-2026-31431-detection-probe)
 - [ShahaB108/CVE-2026-31431_Kernel_Checker](https://github.com/ShahaB108/CVE-2026-31431_Kernel_Checker)
@@ -1680,9 +1660,7 @@
 - [Mrhudson69/cve-2026-31431](https://github.com/Mrhudson69/cve-2026-31431)
 - [net0bsd/Mitigaciones](https://github.com/net0bsd/Mitigaciones)
 - [imkk000/play-go-copy-fail-cve-2026-31431](https://github.com/imkk000/play-go-copy-fail-cve-2026-31431)
-- [alvaroguzmancode/CVE-2026-31431-mitigacion](https://github.com/alvaroguzmancode/CVE-2026-31431-mitigacion)
 - [AdityaBhatt3010/CVE-2026-31431](https://github.com/AdityaBhatt3010/CVE-2026-31431)
-- [jshDevs/CVE_kernellinux_jsh](https://github.com/jshDevs/CVE_kernellinux_jsh)
 - [KhaosFarbauti/CVE-2026-31431](https://github.com/KhaosFarbauti/CVE-2026-31431)
 - [rippsec/CVE-2026-31431-Copy-Fail](https://github.com/rippsec/CVE-2026-31431-Copy-Fail)
 - [Silent4Labs/check-copyfail-cve-2026-31431](https://github.com/Silent4Labs/check-copyfail-cve-2026-31431)
@@ -2222,6 +2200,36 @@
 ### CVE-2026-36981
 - [canomer/CVE-2026-36981-Kernel-EoP-PoC](https://github.com/canomer/CVE-2026-36981-Kernel-EoP-PoC)
 
+### CVE-2026-37064
+- [jfs-jfs/CVE-2026-37064](https://github.com/jfs-jfs/CVE-2026-37064)
+
+### CVE-2026-37065
+- [jfs-jfs/CVE-2026-37065](https://github.com/jfs-jfs/CVE-2026-37065)
+
+### CVE-2026-37066
+- [jfs-jfs/CVE-2026-37066](https://github.com/jfs-jfs/CVE-2026-37066)
+
+### CVE-2026-37067
+- [jfs-jfs/CVE-2026-37067](https://github.com/jfs-jfs/CVE-2026-37067)
+
+### CVE-2026-37068
+- [jfs-jfs/CVE-2026-37068](https://github.com/jfs-jfs/CVE-2026-37068)
+
+### CVE-2026-37069
+- [jfs-jfs/CVE-2026-37069](https://github.com/jfs-jfs/CVE-2026-37069)
+
+### CVE-2026-37070
+- [jfs-jfs/CVE-2026-37070](https://github.com/jfs-jfs/CVE-2026-37070)
+
+### CVE-2026-37071
+- [jfs-jfs/CVE-2026-37071](https://github.com/jfs-jfs/CVE-2026-37071)
+
+### CVE-2026-37072
+- [jfs-jfs/CVE-2026-37072](https://github.com/jfs-jfs/CVE-2026-37072)
+
+### CVE-2026-37073
+- [jfs-jfs/CVE-2026-37073](https://github.com/jfs-jfs/CVE-2026-37073)
+
 ### CVE-2026-37196
 - [Pavanvootla-sec/CVE-2026-37196](https://github.com/Pavanvootla-sec/CVE-2026-37196)
 
@@ -2294,6 +2302,9 @@
 ### CVE-2026-38766
 - [D7EAD/CVE-2026-38766](https://github.com/D7EAD/CVE-2026-38766)
 
+### CVE-2026-38812
+- [jjcjgo/CVE-2026-38812-RuoYi-SQL-Injection](https://github.com/jjcjgo/CVE-2026-38812-RuoYi-SQL-Injection)
+
 ### CVE-2026-38945 (2026-05-27)
 
 <code>Command injection in Raynet rvia version 12.6 Update 8 and previous versions allows adversaries to execute arbitrary code via a crafted path that matches the improperly terminated search criteria of rvia's Java search using the find command.
@@ -2324,13 +2335,6 @@
 </code>
 
 - [f4s1on/CVE-2026-39363](https://github.com/f4s1on/CVE-2026-39363)
-
-### CVE-2026-39387 (2026-04-14)
-
-<code>BoidCMS is an open-source, PHP-based flat-file CMS for building simple websites and blogs, using JSON as its database. Versions prior to 2.1.3 are vulnerable to a critical Local File Inclusion (LFI) attack via the tpl parameter, which can lead to Remote Code Execution (RCE).The application fails to sanitize the tpl (template) parameter during page creation and updates. This parameter is passed directly to a require_once() statement without path validation. An authenticated administrator can exploit this by injecting path traversal sequences (../) into the tpl value to escape the intended theme directory and include arbitrary files — specifically, files from the server's media/ directory. When combined with the file upload functionality, this becomes a full RCE chain: an attacker can first upload a file with embedded PHP code (e.g., disguised as image data), then use the path traversal vulnerability to include that file via require_once(), executing the embedded code with web server privileges. This issue has been fixed in version 2.1.3.
-</code>
-
-- [xp1tr/CVE-2026-39387](https://github.com/xp1tr/CVE-2026-39387)
 
 ### CVE-2026-39636 (2026-04-08)
 
@@ -2369,6 +2373,13 @@
 </code>
 
 - [u1tr0nex/cve-2026-40072-ssrf-lab](https://github.com/u1tr0nex/cve-2026-40072-ssrf-lab)
+
+### CVE-2026-40176 (2026-04-15)
+
+<code>Composer is a dependency manager for PHP. Versions 1.0 through 2.2.26 and 2.3 through 2.9.5 contain a command injection vulnerability in the Perforce::generateP4Command() method, which constructs shell commands by interpolating user-supplied Perforce connection parameters (port, user, client) without proper escaping. An attacker can inject arbitrary commands through these values in a malicious composer.json declaring a Perforce VCS repository, leading to command execution in the context of the user running Composer, even if Perforce is not installed. VCS repositories are only loaded from the root composer.json or the composer config directory, so this cannot be exploited through composer.json files of packages installed as dependencies. Users are at risk if they run Composer commands on untrusted projects with attacker-supplied composer.json files. This issue has been fixed in Composer 2.2.27 (2.2 LTS) and 2.9.6 (mainline).
+</code>
+
+- [ikarolaborda/CVE-2026-40176](https://github.com/ikarolaborda/CVE-2026-40176)
 
 ### CVE-2026-40217 (2026-04-10)
 
@@ -2534,8 +2545,6 @@
 - [Jenderal92/CVE-2026-41940](https://github.com/Jenderal92/CVE-2026-41940)
 - [0xBlackash/CVE-2026-41940](https://github.com/0xBlackash/CVE-2026-41940)
 - [MrOplus/CVE-2026-41940](https://github.com/MrOplus/CVE-2026-41940)
-- [nickpaulsec/2026-41940-poc](https://github.com/nickpaulsec/2026-41940-poc)
-- [iSee857/cPanel-WHM-CVE-2026-41940-AuthBypass](https://github.com/iSee857/cPanel-WHM-CVE-2026-41940-AuthBypass)
 - [itsismarcos/CVE-2026-41940](https://github.com/itsismarcos/CVE-2026-41940)
 - [ZildanZ/CVE-2026-41940](https://github.com/ZildanZ/CVE-2026-41940)
 - [Unfold-Security/CVE-2026-41940-Detection](https://github.com/Unfold-Security/CVE-2026-41940-Detection)
@@ -2593,7 +2602,6 @@
 <code>LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. From version 1.81.16 to before version 1.83.7, a database query used during proxy API key checks mixed the caller-supplied key value into the query text instead of passing it as a separate parameter. An unauthenticated attacker could send a specially crafted Authorization header to any LLM API route (for example POST /chat/completions) and reach this query through the proxy's error-handling path. An attacker could read data from the proxy's database and may be able to modify it, leading to unauthorised access to the proxy and the credentials it manages. This issue has been patched in version 1.83.7.
 </code>
 
-- [0xBlackash/CVE-2026-42208](https://github.com/0xBlackash/CVE-2026-42208)
 - [Zeltoc/threat-intel-brief-cve-2026-42208-litellm](https://github.com/Zeltoc/threat-intel-brief-cve-2026-42208-litellm)
 - [rootdirective-sec/CVE-2026-42208-Lab](https://github.com/rootdirective-sec/CVE-2026-42208-Lab)
 - [ridhinva/litellm-sqli-scanner](https://github.com/ridhinva/litellm-sqli-scanner)
@@ -2663,13 +2671,6 @@
 </code>
 
 - [rootdirective-sec/CVE-2026-42647-Lab](https://github.com/rootdirective-sec/CVE-2026-42647-Lab)
-
-### CVE-2026-42778 (2026-05-01)
-
-<code>The fix for CVE-2026-41409 was not applied to the 2.1.X and 2.2.X branches. Here was the original issue description:\n\n\n\n\nThe fix for CVE-2024-52046 in Apache MINA AbstractIoBuffer.getObject() was incomplete. The classname allowlist of classes allowed to be deserialized was applied too late after a static initializer in a class to be read might already have been executed.\n\n\n\n\nAffected versions are Apache MINA 2.1.0 &lt;= 2.1.11, and 2.2.0 &lt;= 2.2.6.\n\n\n\n\nThe problem is resolved in Apache MINA 2.1.12, and 2.2.7 by \napplying the classname allowlist earlier.\n\n\n\n\nAffected are applications using Apache MINA that call IoBuffer.getObject().\n\n\n\n\nApplications using Apache MINA are advised to upgrade\n\n\n\n\n\n\nThe fix for CVE-2024-52046 in Apache MINA AbstractIoBuffer.getObject() was incomplete. The classname allowlist of classes allowed to be deserialized was applied too late after a static initializer in a class to be read might already have been executed.\n\n\n\n\nAffected versions are Apache MINA 2.1.0 &lt;= 2.1.110, and 2.2.0 &lt;= 2.2.6.\n\n\n\n\nThe problem is resolved in Apache MINA 2.1.12, and 2.2.7 by \napplying the classname allowlist earlier.\n\n\n\n\nAffected are applications using Apache MINA that call IoBuffer.getObject().\n\n\n\n\nApplications using Apache MINA are advised to upgrade
-</code>
-
-- [Akinfue/CVE-2026-42778-POC](https://github.com/Akinfue/CVE-2026-42778-POC)
 
 ### CVE-2026-42796 (2026-05-04)
 
@@ -3265,6 +3266,13 @@
 
 ### CVE-2026-48813
 - [7alen7/CVE-2026-48813-POC](https://github.com/7alen7/CVE-2026-48813-POC)
+
+### CVE-2026-48849 (2026-05-25)
+
+<code>In Roundcube Webmail 1.6.x before 1.6.16 and 1.7.x before 1.7.1, an unsanitized subject field in the draft restored value could lead to stored XSS/HTML/CSS injection on shared mailboxes.
+</code>
+
+- [AnandJogawade/CVE-2026-48849-Roundcube-Webmail-Stored-XSS](https://github.com/AnandJogawade/CVE-2026-48849-Roundcube-Webmail-Stored-XSS)
 
 ### CVE-2026-48866 (2026-06-01)
 
@@ -11247,13 +11255,6 @@
 </code>
 
 - [galbarnahum/CVE-2025-53020-PoC](https://github.com/galbarnahum/CVE-2025-53020-PoC)
-
-### CVE-2025-53024 (2025-07-15)
-
-<code>Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core).   The supported version that is affected is 7.1.10. Easily exploitable vulnerability allows high privileged attacker with logon to the infrastructure where Oracle VM VirtualBox executes to compromise Oracle VM VirtualBox.  While the vulnerability is in Oracle VM VirtualBox, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle VM VirtualBox. CVSS 3.1 Base Score 8.2 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H).
-</code>
-
-- [minq0x1412/CVE-2025-53024](https://github.com/minq0x1412/CVE-2025-53024)
 
 ### CVE-2025-53136 (2025-08-12)
 
@@ -28148,6 +28149,7 @@
 - [notaSWE/gocropalypse](https://github.com/notaSWE/gocropalypse)
 - [lordofpipes/acropadetect](https://github.com/lordofpipes/acropadetect)
 - [PolitoInc/XWFAcropalypse](https://github.com/PolitoInc/XWFAcropalypse)
+- [iqbaalilmii/acropalypse-reconstructor](https://github.com/iqbaalilmii/acropalypse-reconstructor)
 
 ### CVE-2023-21086 (2023-04-19)
 
@@ -30579,13 +30581,6 @@
 </code>
 
 - [KIL0BYT3X/CVE-2023-31753](https://github.com/KIL0BYT3X/CVE-2023-31753)
-
-### CVE-2023-31756 (2023-05-19)
-
-<code>A command injection vulnerability exists in the administrative web portal in TP-Link Archer VR1600V devices running firmware Versions &lt;= 0.1.0. 0.9.1 v5006.0 Build 220518 Rel.32480n which allows remote attackers, authenticated to the administrative web portal as an administrator user to open an operating system level shell via the 'X_TP_IfName' parameter.
-</code>
-
-- [StanleyJobsonAU/LongBow](https://github.com/StanleyJobsonAU/LongBow)
 
 ### CVE-2023-31779 (2023-05-22)
 
@@ -41163,6 +41158,7 @@
 </code>
 
 - [TomKing062/CVE-2022-38691_38692](https://github.com/TomKing062/CVE-2022-38691_38692)
+- [mutur4/CVE-2022-38691](https://github.com/mutur4/CVE-2022-38691)
 
 ### CVE-2022-38694 (2025-09-01)
 
@@ -42869,13 +42865,6 @@
 </code>
 
 - [ShaikUsaf/packages_apps_Bluetooth_AOSP10_r33_CVE-2021-0329](https://github.com/ShaikUsaf/packages_apps_Bluetooth_AOSP10_r33_CVE-2021-0329)
-
-### CVE-2021-0336 (2021-02-10)
-
-<code>In onReceive of BluetoothPermissionRequest.java, there is a possible permissions bypass due to a mutable PendingIntent. This could lead to local escalation of privilege that bypasses a permission check, with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-9 Android-10 Android-11 Android-8.1Android ID: A-158219161
-</code>
-
-- [Trinadh465/packages_apps_Settings_AOSP10_r33_CVE-2021-0336](https://github.com/Trinadh465/packages_apps_Settings_AOSP10_r33_CVE-2021-0336)
 
 ### CVE-2021-0337 (2021-02-10)
 
@@ -48842,7 +48831,7 @@
 - [ocastel/log4j-shell-poc](https://github.com/ocastel/log4j-shell-poc)
 - [bcdunbar/CVE-2021-44228-poc](https://github.com/bcdunbar/CVE-2021-44228-poc)
 - [srcporter/CVE-2021-44228](https://github.com/srcporter/CVE-2021-44228)
-- [Rainyseason-c/log4j2_CVE-2021-44228](https://github.com/Rainyseason-c/log4j2_CVE-2021-44228)
+- [sqsec/log4j2_CVE-2021-44228](https://github.com/sqsec/log4j2_CVE-2021-44228)
 - [demining/Log4j-Vulnerability](https://github.com/demining/Log4j-Vulnerability)
 - [pierpaolosestito-dev/Log4Shell-CVE-2021-44228-PoC](https://github.com/pierpaolosestito-dev/Log4Shell-CVE-2021-44228-PoC)
 - [Sumitpathania03/LOG4J-CVE-2021-44228](https://github.com/Sumitpathania03/LOG4J-CVE-2021-44228)
@@ -48919,6 +48908,7 @@
 - [bhimsekhar/vulnerable-java-app](https://github.com/bhimsekhar/vulnerable-java-app)
 - [horrister/log4shell-cve-2021-44228](https://github.com/horrister/log4shell-cve-2021-44228)
 - [hmxh123/Log4Shell-Vulnerability-Replication](https://github.com/hmxh123/Log4Shell-Vulnerability-Replication)
+- [limxuan/ehir-vuln-enterprise-login](https://github.com/limxuan/ehir-vuln-enterprise-login)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -52307,6 +52297,13 @@
 
 - [Fans0n-Fan/Treck20-Related](https://github.com/Fans0n-Fan/Treck20-Related)
 - [0xkol/ripple20-digi-connect-exploit](https://github.com/0xkol/ripple20-digi-connect-exploit)
+
+### CVE-2020-11898 (2020-06-17)
+
+<code>The Treck TCP/IP stack before 6.0.1.66 improperly handles an IPv4/ICMPv4 Length Parameter Inconsistency, which might allow remote attackers to trigger an information leak.
+</code>
+
+- [Ransc0rp1on/Ripple20](https://github.com/Ransc0rp1on/Ripple20)
 
 ### CVE-2020-11932 (2020-05-13)
 
