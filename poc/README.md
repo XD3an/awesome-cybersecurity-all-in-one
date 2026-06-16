@@ -311,6 +311,13 @@
 - [HORKimhab/CVE-2026-3300](https://github.com/HORKimhab/CVE-2026-3300)
 - [adamshaikhma/CVE-2026-3300](https://github.com/adamshaikhma/CVE-2026-3300)
 
+### CVE-2026-3437 (2026-03-03)
+
+<code>An Improper Restriction of Operations within the Bounds of a Memory Buffer vulnerability in Portwell Engineering Toolkits version 4.8.2 could allow a local authenticated attacker to read and write to arbitrary memory via the Portwell Engineering Toolkits driver. Successful exploitation of this vulnerability could result in escalation of privileges or cause a denial-of-service condition.
+</code>
+
+- [tihomirocrew/cve-2026-3437](https://github.com/tihomirocrew/cve-2026-3437)
+
 ### CVE-2026-3494 (2026-03-03)
 
 <code>In MariaDB server version through 11.8.5, when server audit plugin is enabled with server_audit_events variable configured with QUERY_DCL, QUERY_DDL, or QUERY_DML filtering, if an authenticated database user invokes a SQL statement prefixed with double-hyphen (—) or hash (#) style comments, the statement is not logged.
@@ -871,6 +878,13 @@
 - [06-ux/CVE-2026-9256-POC](https://github.com/06-ux/CVE-2026-9256-POC)
 - [y198nt/Nginx-chain-Rift-Poolslip](https://github.com/y198nt/Nginx-chain-Rift-Poolslip)
 
+### CVE-2026-9277 (2026-05-22)
+
+<code>shell-quote's `quote()` function did not validate object-token inputs against the operator model used by `parse()`. The `.op` field was backslash-escaped character by character using `/(.)/g`, which in JavaScript does not match line terminators (\n, \r, U+2028, U+2029). A line terminator in `.op` therefore passed through unescaped into the output; POSIX shells treat a literal newline as a command separator, so any content after it would execute as a second command. The vulnerable code path is reachable in two ways: (1) direct construction of `{ op: '...\n...' }` from external input, and (2) via `parse(cmd, envFn)` when `envFn` returns object tokens whose `.op` is attacker-influenced. Both are documented API surface. Fixed by replacing the per-character escape with strict shape validation: `.op` must match the parser's control-operator allowlist; `{ op: 'glob', pattern }` validates `pattern` and forbids line terminators; `{ comment }` validates `comment` and forbids line terminators; any other object shape throws `TypeError`.
+</code>
+
+- [DylanZahedi/CVE-2026-9277](https://github.com/DylanZahedi/CVE-2026-9277)
+
 ### CVE-2026-9560 (2026-05-26)
 
 <code>Privilege escalation via background service of OpenVPN Connect 3.5.1 through 3.8.1 on macOS allows attackers to execute arbitrary commands with elevated privileges via local IPC channel
@@ -1046,7 +1060,7 @@
 
 ### CVE-2026-20253 (2026-06-10)
 
-<code>In Splunk Enterprise versions below 10.2.4 and 10.0.7, and Splunk Cloud Platform versions below 10.4.2604.3 and 10.2.2510.14, an unauthenticated user could create or truncate arbitrary files through a PostgreSQL sidecar service endpoint.&lt;br&gt;&lt;br&gt;The vulnerability exists because the PostgreSQL sidecar service endpoint lacks authentication controls, allowing any network-reachable user to invoke file operations without credentials.
+<code>In Splunk Enterprise 10.2 versions below 10.2.4 and 10 versions below 10.0.7, an unauthenticated user could create or truncate arbitrary files through a PostgreSQL sidecar service endpoint. The vulnerability exists because the PostgreSQL sidecar service endpoint lacks authentication controls, allowing any network-reachable user to invoke file operations without credentials. Splunk Enterprise versions 9.4 and earlier are not affected. If you cannot immediately upgrade to a fixed version, you can mitigate this vulnerability by disabling the PostgreSQL sidecar service.
 </code>
 
 - [watchtowrlabs/watchTowr-vs-Splunk-CVE-2026-20253](https://github.com/watchtowrlabs/watchTowr-vs-Splunk-CVE-2026-20253)
@@ -1610,6 +1624,9 @@
 
 - [0xrixet/Craftcms-PoC-CVE-2026-31266](https://github.com/0xrixet/Craftcms-PoC-CVE-2026-31266)
 
+### CVE-2026-31341
+- [Sc2-Ciberdefensa/cve-2026-31341-copy-fail-checker](https://github.com/Sc2-Ciberdefensa/cve-2026-31341-copy-fail-checker)
+
 ### CVE-2026-31431 (2026-04-22)
 
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: algif_aead - Revert to operating out-of-place\n\nThis mostly reverts commit 72548b093ee3 except for the copying of\nthe associated data.\n\nThere is no benefit in operating in-place in algif_aead since the\nsource and destination come from different mappings.  Get rid of\nall the complexity added for in-place operation and just copy the\nAD directly.
@@ -1653,6 +1670,7 @@
 - [ctzisme/copyfail-guard](https://github.com/ctzisme/copyfail-guard)
 - [AvPrince26/copy-fail-CVE-2026-31431-Python-Golfing](https://github.com/AvPrince26/copy-fail-CVE-2026-31431-Python-Golfing)
 - [aexdyhaxor/CVE-2026-31431-copy-fail](https://github.com/aexdyhaxor/CVE-2026-31431-copy-fail)
+- [ncmprbll/copy-fail-rs](https://github.com/ncmprbll/copy-fail-rs)
 - [samanzamani/copy-fail-checker](https://github.com/samanzamani/copy-fail-checker)
 - [ochebotar/copy-fail-CVE-2026-31431-detection-probe](https://github.com/ochebotar/copy-fail-CVE-2026-31431-detection-probe)
 - [ShahaB108/CVE-2026-31431_Kernel_Checker](https://github.com/ShahaB108/CVE-2026-31431_Kernel_Checker)
@@ -2133,7 +2151,11 @@
 
 - [PwnOnu/T3-Technology-CPE-Advisories](https://github.com/PwnOnu/T3-Technology-CPE-Advisories)
 
-### CVE-2026-36213
+### CVE-2026-36213 (2026-06-15)
+
+<code>An issue in Microvirt MEmu Android Emulator 9.2.7.0 allows a local attacker to escalate privileges via the MemuService.exe component.
+</code>
+
 - [sec-zone/CVE-2026-36213](https://github.com/sec-zone/CVE-2026-36213)
 
 ### CVE-2026-36226 (2026-05-22)
@@ -2181,7 +2203,11 @@
 
 - [kensh1k/CVE-2026-36438](https://github.com/kensh1k/CVE-2026-36438)
 
-### CVE-2026-36670
+### CVE-2026-36670 (2026-06-15)
+
+<code>A Time-Based Blind SQL Injection vulnerability in the alias_management module of OpenSIPS Control Panel (opensips-cp) prior to version 9.3.3 allows authenticated attackers to execute arbitrary SQL commands via the 'table' GET parameter in alias_management.php.
+</code>
+
 - [Gabriel-Lacorte/CVE-2026-36670](https://github.com/Gabriel-Lacorte/CVE-2026-36670)
 
 ### CVE-2026-36748 (2026-06-03)
@@ -2245,6 +2271,9 @@
 ### CVE-2026-37637
 - [SLO-CYBER-SEC/CVE-2026-37637](https://github.com/SLO-CYBER-SEC/CVE-2026-37637)
 
+### CVE-2026-38194
+- [4D4J/cormem-read-poc](https://github.com/4D4J/cormem-read-poc)
+
 ### CVE-2026-38360 (2026-05-08)
 
 <code>Directory Traversal vulnerability in fohrloop dash-uploader v.0.1.0 through v.0.7.0a2 allows a remote attacker to execute arbitrary code via the dash_uploader/httprequesthandler.py, BaseHttpRequestHandler.get_temp_root(), BaseHttpRequestHandler._post() components.
@@ -2302,7 +2331,11 @@
 ### CVE-2026-38766
 - [D7EAD/CVE-2026-38766](https://github.com/D7EAD/CVE-2026-38766)
 
-### CVE-2026-38812
+### CVE-2026-38812 (2026-06-15)
+
+<code>RuoYi v4.8.2 is vulnerable to SQL Injection via the /tool/gen/createTable endpoint. The issue affects the code generation module and may allow an authenticated attacker with administrative privileges to access sensitive database information.
+</code>
+
 - [jjcjgo/CVE-2026-38812-RuoYi-SQL-Injection](https://github.com/jjcjgo/CVE-2026-38812-RuoYi-SQL-Injection)
 
 ### CVE-2026-38945 (2026-05-27)
@@ -2414,10 +2447,18 @@
 
 - [edgecases-PurpleHax/cve-images](https://github.com/edgecases-PurpleHax/cve-images)
 
-### CVE-2026-40776
+### CVE-2026-40776 (2026-06-15)
+
+<code>Unauthenticated Broken Access Control in WP Event SOlution &lt;= 4.1.8 versions.
+</code>
+
 - [lorenzofradeani/CVE-2026-40776](https://github.com/lorenzofradeani/CVE-2026-40776)
 
-### CVE-2026-40791
+### CVE-2026-40791 (2026-06-15)
+
+<code>Unauthenticated Cross Site Scripting (XSS) in WP Time Slots Booking Form &lt;= 1.2.46 versions.
+</code>
+
 - [Rat5ak/CVE-2026-40791-WP-Time-Slots-Booking-Form-XSS](https://github.com/Rat5ak/CVE-2026-40791-WP-Time-Slots-Booking-Form-XSS)
 
 ### CVE-2026-40864 (2026-05-22)
@@ -2458,18 +2499,8 @@
 - [hnytgl/CVE-2026-41089-Detector](https://github.com/hnytgl/CVE-2026-41089-Detector)
 - [hnytgl/CVE-2026-41089](https://github.com/hnytgl/CVE-2026-41089)
 - [ADScanPro/CVE-2026-41089-LongLogon](https://github.com/ADScanPro/CVE-2026-41089-LongLogon)
-- [Planetpliexpose/CVE-2026-41089-277](https://github.com/Planetpliexpose/CVE-2026-41089-277)
-- [GalleryJoiner/CVE-2026-41089-686](https://github.com/GalleryJoiner/CVE-2026-41089-686)
-- [Mapclaregister/CVE-2026-41089-191](https://github.com/Mapclaregister/CVE-2026-41089-191)
-- [sectiondukestring25/CVE-2026-41089-971](https://github.com/sectiondukestring25/CVE-2026-41089-971)
-- [SightFinchFall/CVE-2026-41089-238](https://github.com/SightFinchFall/CVE-2026-41089-238)
-- [segmentjoninsecret/CVE-2026-41089-334](https://github.com/segmentjoninsecret/CVE-2026-41089-334)
-- [StampDreamFitting/CVE-2026-41089-986](https://github.com/StampDreamFitting/CVE-2026-41089-986)
-- [CrimsonKingfisher/CVE-2026-41089-245](https://github.com/CrimsonKingfisher/CVE-2026-41089-245)
-- [RoyalViceroyBear/CVE-2026-41089-706](https://github.com/RoyalViceroyBear/CVE-2026-41089-706)
 - [jenniferreire26/CVE-2026-41089](https://github.com/jenniferreire26/CVE-2026-41089)
 - [SpiralSealFill/CVE-2026-41089-hub](https://github.com/SpiralSealFill/CVE-2026-41089-hub)
-- [Coasttruvitalize/CVE-2026-41089-latest](https://github.com/Coasttruvitalize/CVE-2026-41089-latest)
 
 ### CVE-2026-41091 (2026-05-20)
 
@@ -2541,6 +2572,7 @@
 
 - [assetnote/cpanel2shell-scanner](https://github.com/assetnote/cpanel2shell-scanner)
 - [rfxn/cpanel-sessionscribe](https://github.com/rfxn/cpanel-sessionscribe)
+- [mahfuzreham/cpanel-cve-2026-41940](https://github.com/mahfuzreham/cpanel-cve-2026-41940)
 - [Christian93111/CVE-2026-41940](https://github.com/Christian93111/CVE-2026-41940)
 - [Jenderal92/CVE-2026-41940](https://github.com/Jenderal92/CVE-2026-41940)
 - [0xBlackash/CVE-2026-41940](https://github.com/0xBlackash/CVE-2026-41940)
@@ -3182,7 +3214,11 @@
 ### CVE-2026-47668
 - [Nxploited/CVE-2026-47668](https://github.com/Nxploited/CVE-2026-47668)
 
-### CVE-2026-48017
+### CVE-2026-48017 (2026-06-15)
+
+<code>DbGate is cross-platform database manager. In versions 7.1.8 and prior, the POST /runners/load-reader endpoint in DbGate accepts a functionName parameter that is directly interpolated into a JavaScript code template without any sanitization or validation. An authenticated user (with basic access, no special permissions required) can inject arbitrary JavaScript code that executes on the server with full process privileges, bypassing the require=null sandbox restriction. An authenticated user with basic access (no admin role, no run-shell-script permission required) can: execute arbitrary OS commands on the DbGate server with the privileges of the Node.js process, read/write any file accessible to the process, pivot to connected databases by reading connection credentials from DbGate's storage, and compromise the host system - in Docker deployments, this typically means root access within the container.
+</code>
+
 - [romain-deperne/CVE-2026-48017](https://github.com/romain-deperne/CVE-2026-48017)
 
 ### CVE-2026-48019
@@ -3306,6 +3342,13 @@
 - [j0xh-sec/CVE-2026-49009](https://github.com/j0xh-sec/CVE-2026-49009)
 - [INTELEON404/CVE-2026-49009](https://github.com/INTELEON404/CVE-2026-49009)
 
+### CVE-2026-49160 (2026-06-09)
+
+<code>Uncontrolled resource consumption in HTTP/2 allows an unauthorized attacker to deny service over a network.
+</code>
+
+- [dhmosfunk/CVE-2026-49160-HTTP.sys](https://github.com/dhmosfunk/CVE-2026-49160-HTTP.sys)
+
 ### CVE-2026-49344
 - [hadhub/CVE-2026-49344-Mercator-JSON-DSL](https://github.com/hadhub/CVE-2026-49344-Mercator-JSON-DSL)
 
@@ -3387,6 +3430,13 @@
 
 - [AmesianX/CVE-2026-53435](https://github.com/AmesianX/CVE-2026-53435)
 
+### CVE-2026-53519 (2026-06-12)
+
+<code>Nezha Monitoring is a self-hostable, lightweight, servers and websites monitoring and O&amp;M tool. Prior to version 2.0.13, fallbackToFrontend in the dashboard's NoRoute handler treats any URL whose raw string starts with /dashboard as an admin-frontend asset request. The check uses strings.HasPrefix, not a path-segment match, so the input /dashboard../data/config.yaml is accepted; strings.TrimPrefix leaves ../data/config.yaml; and path.Join(&quot;admin-dist&quot;, &quot;../data/config.yaml&quot;) normalizes to data/config.yaml — which os.Stat finds and http.ServeFile returns. No authentication required. This issue has been patched in version 2.0.13.
+</code>
+
+- [tar-xz/CVE-2026-53519-PoC](https://github.com/tar-xz/CVE-2026-53519-PoC)
+
 ### CVE-2026-53647
 - [7megaumka7/FOSKiller](https://github.com/7megaumka7/FOSKiller)
 
@@ -3399,6 +3449,12 @@
 
 ### CVE-2026-54088
 - [Saku0512/CVE-2026-54088-poc](https://github.com/Saku0512/CVE-2026-54088-poc)
+
+### CVE-2026-54596
+- [iltosec/CVE-2026-54596](https://github.com/iltosec/CVE-2026-54596)
+
+### CVE-2026-54597
+- [iltosec/CVE-2026-54597](https://github.com/iltosec/CVE-2026-54597)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -3974,6 +4030,7 @@
 - [Alchemist3dot14/CVE-2025-2783](https://github.com/Alchemist3dot14/CVE-2025-2783)
 - [byteReaper77/CVE-2025-2783](https://github.com/byteReaper77/CVE-2025-2783)
 - [aronfour/CVE-2025-2783](https://github.com/aronfour/CVE-2025-2783)
+- [ElianGonzi00/CVE-2025-2783](https://github.com/ElianGonzi00/CVE-2025-2783)
 
 ### CVE-2025-2807 (2025-04-08)
 
@@ -5424,7 +5481,6 @@
 <code>A vulnerability was identified in Docker Desktop that allows local running Linux containers to access the Docker Engine API via the configured Docker subnet, at 192.168.65.7:2375 by default. This vulnerability occurs with or without Enhanced Container Isolation (ECI) enabled, and with or without the &quot;Expose daemon on tcp://localhost:2375 without TLS&quot; option enabled.\nThis can lead to execution of a wide range of privileged commands to the engine API, including controlling other containers, creating new ones, managing images etc. In some circumstances (e.g. Docker Desktop for Windows with WSL backend) it also allows mounting the host drive with the same privileges as the user running Docker Desktop.
 </code>
 
-- [KvzinNcpx7/CVE-2025-9074_DAEMON_KILLER](https://github.com/KvzinNcpx7/CVE-2025-9074_DAEMON_KILLER)
 - [XRayZen/cve-2025-9074-poc](https://github.com/XRayZen/cve-2025-9074-poc)
 - [zenzue/CVE-2025-9074](https://github.com/zenzue/CVE-2025-9074)
 - [j3r1ch0123/CVE-2025-9074](https://github.com/j3r1ch0123/CVE-2025-9074)
@@ -5437,7 +5493,6 @@
 - [fsoc-ghost-0x/CVE-2025-9074_DAEMON_KILLER](https://github.com/fsoc-ghost-0x/CVE-2025-9074_DAEMON_KILLER)
 - [zaydbf/CVE-2025-9074-Poc](https://github.com/zaydbf/CVE-2025-9074-Poc)
 - [Shaoshi17/CVE-2025-9074-Docker-Exploit](https://github.com/Shaoshi17/CVE-2025-9074-Docker-Exploit)
-- [KvzinNcpx7/kvzinncpx7.github.io](https://github.com/KvzinNcpx7/kvzinncpx7.github.io)
 - [x0da6h/POC-for-CVE-2025-9074](https://github.com/x0da6h/POC-for-CVE-2025-9074)
 - [matesz44/CVE-2025-9074](https://github.com/matesz44/CVE-2025-9074)
 - [rocket-panda/CVE-2025-9074](https://github.com/rocket-panda/CVE-2025-9074)
@@ -5988,6 +6043,7 @@
 </code>
 
 - [cyberdudebivash/CYBERDUDEBIVASH-ServiceNow-AI-Agent-Audit-Script](https://github.com/cyberdudebivash/CYBERDUDEBIVASH-ServiceNow-AI-Agent-Audit-Script)
+- [OloladeAbiola03/aisecplus-week01-servicenow-ai-security-incident](https://github.com/OloladeAbiola03/aisecplus-week01-servicenow-ai-security-incident)
 
 ### CVE-2025-12539 (2025-11-11)
 
@@ -12079,7 +12135,6 @@
 - [jensnesten/React2Shell-PoC](https://github.com/jensnesten/React2Shell-PoC)
 - [Farhan9488/CVE-2025-55182-research](https://github.com/Farhan9488/CVE-2025-55182-research)
 - [bigbluewhale111/CVE-2025-55182-LAB](https://github.com/bigbluewhale111/CVE-2025-55182-LAB)
-- [Ghost121111/Blackash-CVE-2025-55182](https://github.com/Ghost121111/Blackash-CVE-2025-55182)
 - [slreaperking/CVE-2025-55182-poc](https://github.com/slreaperking/CVE-2025-55182-poc)
 - [guiimoraes/react2shell-evolved](https://github.com/guiimoraes/react2shell-evolved)
 - [sobuj0007/Nextjs_RCE_Exploit_Tool](https://github.com/sobuj0007/Nextjs_RCE_Exploit_Tool)
@@ -12187,6 +12242,7 @@
 - [TechWithOrgito/CVE-2025-55182-Researching-process](https://github.com/TechWithOrgito/CVE-2025-55182-Researching-process)
 - [AkhmadKholmurodov/React2Shell_Exploit](https://github.com/AkhmadKholmurodov/React2Shell_Exploit)
 - [Alejandro609x/JEFAZO-CVE-2025-55182-Checker](https://github.com/Alejandro609x/JEFAZO-CVE-2025-55182-Checker)
+- [olezhaku/react2shell-toolkit](https://github.com/olezhaku/react2shell-toolkit)
 - [cc3305/CVE-2025-55182](https://github.com/cc3305/CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
@@ -13378,6 +13434,13 @@
 </code>
 
 - [t4e-3/CVE-2025-63296](https://github.com/t4e-3/CVE-2025-63296)
+
+### CVE-2025-63307 (2025-11-06)
+
+<code>alexusmai laravel-file-manager 3.3.1 is vulnerable to Cross Site Scripting (XSS). The application permits user-controlled upload, create, and rename of files to HTML and SVG types and serves those files inline without adequate content-type validation or output sanitization.
+</code>
+
+- [Theethat-Thamwasin/CVE-2025-63307](https://github.com/Theethat-Thamwasin/CVE-2025-63307)
 
 ### CVE-2025-63314 (2026-01-12)
 
@@ -39666,6 +39729,7 @@
 - [shndnth/CVE-2022-30190](https://github.com/shndnth/CVE-2022-30190)
 - [u1tr0nex/CVE-2022-30190-Follina-Lab](https://github.com/u1tr0nex/CVE-2022-30190-Follina-Lab)
 - [kaleth4/CVE-2022-30190](https://github.com/kaleth4/CVE-2022-30190)
+- [czabatta/THM-Tempest](https://github.com/czabatta/THM-Tempest)
 
 ### CVE-2022-30203 (2022-07-12)
 
@@ -67417,7 +67481,6 @@
 <code>The Frontend File Manager (versions &lt; 4.0), N-Media Post Front-end Form (versions &lt; 1.1) plugins for WordPress are vulnerable to arbitrary file uploads due to missing file type validation via the `nm_filemanager_upload_file` and `nm_postfront_upload_file` AJAX actions. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected sites server which may make remote code execution possible.
 </code>
 
-- [Aditya43621/lab-cve-2016-15042](https://github.com/Aditya43621/lab-cve-2016-15042)
 - [ImBIOS/lab-cve-2016-15042](https://github.com/ImBIOS/lab-cve-2016-15042)
 
 ### CVE-2016-16113
