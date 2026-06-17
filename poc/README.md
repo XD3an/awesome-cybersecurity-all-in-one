@@ -854,6 +854,7 @@
 - [strobelpierre/CVE-2026-9082](https://github.com/strobelpierre/CVE-2026-9082)
 - [thinhap/CVE-2026-9082-PoC](https://github.com/thinhap/CVE-2026-9082-PoC)
 - [11romain/CVE-2026-9082](https://github.com/11romain/CVE-2026-9082)
+- [sourcecode347/CVE-2026-9082-Mass_Scanner](https://github.com/sourcecode347/CVE-2026-9082-Mass_Scanner)
 
 ### CVE-2026-9256 (2026-05-22)
 
@@ -987,7 +988,7 @@
 
 ### CVE-2026-20127 (2026-02-25)
 
-<code>A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, could allow an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.\r\n\r\nThis vulnerability exists because the peering authentication mechanism in an affected system is not working properly. An attacker could exploit this vulnerability by sending crafted requests to an affected system. A successful exploit could allow the attacker to log in to an affected Cisco Catalyst SD-WAN Controller as an internal, high-privileged, non-root&amp;nbsp;user account. Using this account, the attacker could access NETCONF, which would then allow the attacker to manipulate network configuration for the SD-WAN fabric.&amp;nbsp;
+<code>A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, and Cisco Catalyst SD-WAN Validator, formerly SD-WAN vBond, could allow an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.\r\n\r\nThis vulnerability exists because the peering authentication mechanism in an affected system is not working properly. An attacker could exploit this vulnerability by sending crafted requests to an affected system. A successful exploit could allow the attacker to log in to an affected Cisco Catalyst SD-WAN Controller as an internal, high-privileged, non-root&amp;nbsp;user account. Using this account, the attacker could access NETCONF, which would then allow the attacker to manipulate network configuration for the SD-WAN fabric.&amp;nbsp;
 </code>
 
 - [0xBlackash/CVE-2026-20127](https://github.com/0xBlackash/CVE-2026-20127)
@@ -1001,7 +1002,7 @@
 
 ### CVE-2026-20182 (2026-05-14)
 
-<code>May 2026: This security advisory provides the details and fix information for a vulnerability that was discovered and fixed after the  was disclosed in February 2026. This new advisory is for a new vulnerability in the control connection handshaking. The  section of this advisory includes Show Control Connections guidance to help with system checks.&amp;nbsp;\r\n\r\nA vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, could allow an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.\r\nThis vulnerability exists because the peering authentication mechanism in an affected system is not working properly. An attacker could exploit this vulnerability by sending crafted requests to the affected system. A successful exploit could allow the attacker to log in to an affected Cisco Catalyst SD-WAN Controller as an internal, high-privileged, non-root user account. Using this account, the attacker could access NETCONF, which would then allow the attacker to manipulate network configuration for the SD-WAN fabric.
+<code>May 2026: This security advisory provides the details and fix information for a vulnerability that was discovered and fixed after the  was disclosed in February 2026. This new advisory is for a new vulnerability in the control connection handshaking. The  section of this advisory includes Show Control Connections guidance to help with system checks.&amp;nbsp;\r\n\r\nA vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, and Cisco Catalyst SD-WAN Validator, formerly SD-WAN vBond, could allow an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.\r\nThis vulnerability exists because the peering authentication mechanism in an affected system is not working properly. An attacker could exploit this vulnerability by sending crafted requests to the affected system. A successful exploit could allow the attacker to log in to an affected Cisco Catalyst SD-WAN Controller as an internal, high-privileged, non-root user account. Using this account, the attacker could access NETCONF, which would then allow the attacker to manipulate network configuration for the SD-WAN fabric.
 </code>
 
 - [portbuster1337/CVE-2026-20182](https://github.com/portbuster1337/CVE-2026-20182)
@@ -1632,6 +1633,7 @@
 - [ryan2929/CVE-2026-31431](https://github.com/ryan2929/CVE-2026-31431)
 - [Aurillium/RootRemover](https://github.com/Aurillium/RootRemover)
 - [lonelyor/CVE-2026-31431-exp](https://github.com/lonelyor/CVE-2026-31431-exp)
+- [adampielak/CVE-2026-31431_SCA_WAZUH](https://github.com/adampielak/CVE-2026-31431_SCA_WAZUH)
 - [shadowabi/CVE-2026-31431-CopyFail-Universal-LPE](https://github.com/shadowabi/CVE-2026-31431-CopyFail-Universal-LPE)
 - [Percivalll/Copy-Fail-CVE-2026-31431-Kubernetes-PoC](https://github.com/Percivalll/Copy-Fail-CVE-2026-31431-Kubernetes-PoC)
 - [yandex-cloud-examples/yc-mk8s-copy-fail-mitigation](https://github.com/yandex-cloud-examples/yc-mk8s-copy-fail-mitigation)
@@ -1663,16 +1665,11 @@
 - [aexdyhaxor/CVE-2026-31431-copy-fail](https://github.com/aexdyhaxor/CVE-2026-31431-copy-fail)
 - [samanzamani/copy-fail-checker](https://github.com/samanzamani/copy-fail-checker)
 - [ochebotar/copy-fail-CVE-2026-31431-detection-probe](https://github.com/ochebotar/copy-fail-CVE-2026-31431-detection-probe)
-- [ShahaB108/CVE-2026-31431_Kernel_Checker](https://github.com/ShahaB108/CVE-2026-31431_Kernel_Checker)
-- [xeloxa/copyfail-exploit](https://github.com/xeloxa/copyfail-exploit)
 - [Mrhudson69/cve-2026-31431](https://github.com/Mrhudson69/cve-2026-31431)
 - [net0bsd/Mitigaciones](https://github.com/net0bsd/Mitigaciones)
 - [AdityaBhatt3010/CVE-2026-31431](https://github.com/AdityaBhatt3010/CVE-2026-31431)
-- [KhaosFarbauti/CVE-2026-31431](https://github.com/KhaosFarbauti/CVE-2026-31431)
 - [6abc/Copy-Fail-CVE-2026-31431-dirty-frag-CVE-2026-43284](https://github.com/6abc/Copy-Fail-CVE-2026-31431-dirty-frag-CVE-2026-43284)
 - [Liverwortenuresis371/copyfail-rs](https://github.com/Liverwortenuresis371/copyfail-rs)
-- [deadRabbit92/mitigate-copy-fail.yml](https://github.com/deadRabbit92/mitigate-copy-fail.yml)
-- [sudoytang/copyfail-arm64](https://github.com/sudoytang/copyfail-arm64)
 - [MrMixies/Copy-Fail---CVE-2026-31431](https://github.com/MrMixies/Copy-Fail---CVE-2026-31431)
 - [Industri4l-H3ll-Xpl0it3rs/CVE-2026-31431-Copy-Fail](https://github.com/Industri4l-H3ll-Xpl0it3rs/CVE-2026-31431-Copy-Fail)
 - [Rat5ak/CVE-2026-31431-CopyFail-static-ELF--POC](https://github.com/Rat5ak/CVE-2026-31431-CopyFail-static-ELF--POC)
@@ -2373,6 +2370,9 @@
 
 - [ZeroPathAI/nifi-CVE-2026-39816-poc](https://github.com/ZeroPathAI/nifi-CVE-2026-39816-poc)
 
+### CVE-2026-39949
+- [lukehebe/CVE-2026-39949](https://github.com/lukehebe/CVE-2026-39949)
+
 ### CVE-2026-39987 (2026-04-09)
 
 <code>marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE vulnerability. The terminal WebSocket endpoint /terminal/ws lacks authentication validation, allowing an unauthenticated attacker to obtain a full PTY shell and execute arbitrary system commands. Unlike other WebSocket endpoints (e.g., /ws) that correctly call validate_auth() for authentication, the /terminal/ws endpoint only checks the running mode and platform support before accepting connections, completely skipping authentication verification. This vulnerability is fixed in 0.23.0.
@@ -2588,6 +2588,7 @@
 - [willygailo/CVE-2026-41940-Linux](https://github.com/willygailo/CVE-2026-41940-Linux)
 - [yurahshell/CVE-2026-41940](https://github.com/yurahshell/CVE-2026-41940)
 - [asdasddqwdq29-a11y/CVE-2026-41940](https://github.com/asdasddqwdq29-a11y/CVE-2026-41940)
+- [clsmight/CVE-2026-41940-PoC](https://github.com/clsmight/CVE-2026-41940-PoC)
 
 ### CVE-2026-42048 (2026-05-12)
 
@@ -3329,7 +3330,7 @@
 <code>Uncontrolled resource consumption in HTTP/2 allows an unauthorized attacker to deny service over a network.
 </code>
 
-- [dhmosfunk/CVE-2026-49160-HTTP.sys](https://github.com/dhmosfunk/CVE-2026-49160-HTTP.sys)
+- [dhmosfunk/CVE-2026-49160-CVE-2026-47291-HTTP.sys](https://github.com/dhmosfunk/CVE-2026-49160-CVE-2026-47291-HTTP.sys)
 
 ### CVE-2026-49344
 - [hadhub/CVE-2026-49344-Mercator-JSON-DSL](https://github.com/hadhub/CVE-2026-49344-Mercator-JSON-DSL)
@@ -3454,6 +3455,9 @@
 ### CVE-2026-54686
 - [Saku0512/CVE-2026-54686-poc](https://github.com/Saku0512/CVE-2026-54686-poc)
 - [87achrafg-stack/CVE-2026-54686](https://github.com/87achrafg-stack/CVE-2026-54686)
+
+### CVE-2026-55168
+- [KovachVL/CVE-2026-55168](https://github.com/KovachVL/CVE-2026-55168)
 
 ### CVE-2026-999999
 - [24520597-blip/CVE-2026-999999](https://github.com/24520597-blip/CVE-2026-999999)
@@ -8526,6 +8530,7 @@
 - [ThemeHackers/CVE-2025-30208](https://github.com/ThemeHackers/CVE-2025-30208)
 - [TH-SecForge/CVE-2025-30208](https://github.com/TH-SecForge/CVE-2025-30208)
 - [HazaVVIP/CVE-2025-30208](https://github.com/HazaVVIP/CVE-2025-30208)
+- [cc3305/CVE-2025-30208](https://github.com/cc3305/CVE-2025-30208)
 
 ### CVE-2025-30216 (2025-03-25)
 
@@ -10604,6 +10609,7 @@
 - [V0idW1re/HTB-Pterodactyl-Writeup](https://github.com/V0idW1re/HTB-Pterodactyl-Writeup)
 - [karimelsheikh1/HTB-Pterodactyl-Writeup](https://github.com/karimelsheikh1/HTB-Pterodactyl-Writeup)
 - [yurahshell/CVE-2025-49132](https://github.com/yurahshell/CVE-2025-49132)
+- [vimmwy/CVE-2025-49132](https://github.com/vimmwy/CVE-2025-49132)
 
 ### CVE-2025-49144 (2025-06-23)
 
@@ -12474,6 +12480,7 @@
 </code>
 
 - [zer0t0/CVE-2025-56383-Proof-of-Concept](https://github.com/zer0t0/CVE-2025-56383-Proof-of-Concept)
+- [NewComrade12211/CVE-2025-56383](https://github.com/NewComrade12211/CVE-2025-56383)
 
 ### CVE-2025-56399 (2025-10-28)
 
@@ -18174,13 +18181,6 @@
 
 - [TheN00bBuilder/cve-2024-11477-writeup](https://github.com/TheN00bBuilder/cve-2024-11477-writeup)
 
-### CVE-2024-11613 (2025-01-08)
-
-<code>The WordPress File Upload plugin for WordPress is vulnerable to Remote Code Execution, Arbitrary File Read, and Arbitrary File Deletion in all versions up to, and including, 4.24.15 via the 'wfu_file_downloader.php' file. This is due to lack of proper sanitization of the 'source' parameter and allowing a user-defined directory path. This makes it possible for unauthenticated attackers to execute code on the server.
-</code>
-
-- [Sachinart/CVE-2024-11613-wp-file-upload](https://github.com/Sachinart/CVE-2024-11613-wp-file-upload)
-
 ### CVE-2024-11616 (2024-12-19)
 
 <code>Netskope was made aware of a security vulnerability in Netskope Endpoint DLP’s Content Control Driver where a double-fetch issue leads to heap overflow. The vulnerability arises from the fact that the NumberOfBytes argument to ExAllocatePoolWithTag, and the Length argument for RtlCopyMemory, both independently dereference their value from the user supplied input buffer inside the EpdlpSetUsbAction function, known as a double-fetch. If this length value grows to a higher value in between these two calls, it will result in the RtlCopyMemory call copying user-supplied memory contents outside the range of the allocated buffer, resulting in a heap overflow. A malicious attacker will need admin privileges to exploit the issue.\nThis issue affects Endpoint DLP version below R119.
@@ -18229,7 +18229,6 @@
 <code>The Hunk Companion WordPress plugin before 1.9.0 does not correctly authorize some REST API endpoints, allowing unauthenticated requests to install and activate arbitrary Hunk Companion WordPress plugin before 1.9.0 from the WordPress.org repo, including vulnerable Hunk Companion WordPress plugin before 1.9.0 that have been closed.
 </code>
 
-- [NoxPenguin/exploit-CVE-2024-11972](https://github.com/NoxPenguin/exploit-CVE-2024-11972)
 - [RonF98/CVE-2024-11972-POC](https://github.com/RonF98/CVE-2024-11972-POC)
 - [Nxploited/CVE-2024-11972-PoC](https://github.com/Nxploited/CVE-2024-11972-PoC)
 
@@ -19650,6 +19649,7 @@
 - [wvverez/CVE-2024-23897](https://github.com/wvverez/CVE-2024-23897)
 - [vmc8ll/poc-CVE-2024-23897](https://github.com/vmc8ll/poc-CVE-2024-23897)
 - [w41l3r/jenkins_scan](https://github.com/w41l3r/jenkins_scan)
+- [rivaedoardo62-boop/cve-2024-23897-jenkins-poc](https://github.com/rivaedoardo62-boop/cve-2024-23897-jenkins-poc)
 
 ### CVE-2024-23898 (2024-01-24)
 
@@ -31323,6 +31323,7 @@
 - [shoucheng3/asf__nifi_CVE-2023-34468_1-21-00](https://github.com/shoucheng3/asf__nifi_CVE-2023-34468_1-21-00)
 - [sbouabid-sec/CVE-2023-34468-POC](https://github.com/sbouabid-sec/CVE-2023-34468-POC)
 - [Jeanpt/CVE-2023-34468](https://github.com/Jeanpt/CVE-2023-34468)
+- [spikeyjr/CVE-2023-34468-PoC](https://github.com/spikeyjr/CVE-2023-34468-PoC)
 
 ### CVE-2023-34478 (2023-07-24)
 
@@ -34293,7 +34294,6 @@
 
 - [yoryio/CVE-2023-46805](https://github.com/yoryio/CVE-2023-46805)
 - [cbeek-r7/CVE-2023-46805](https://github.com/cbeek-r7/CVE-2023-46805)
-- [duy-31/CVE-2023-46805_CVE-2024-21887](https://github.com/duy-31/CVE-2023-46805_CVE-2024-21887)
 - [raminkarimkhani1996/CVE-2023-46805_CVE-2024-21887](https://github.com/raminkarimkhani1996/CVE-2023-46805_CVE-2024-21887)
 - [seajaysec/Ivanti-Connect-Around-Scan](https://github.com/seajaysec/Ivanti-Connect-Around-Scan)
 - [Chocapikk/CVE-2023-46805](https://github.com/Chocapikk/CVE-2023-46805)
@@ -64397,6 +64397,7 @@
 - [geniuszly/CVE-2017-7269](https://github.com/geniuszly/CVE-2017-7269)
 - [nika0x38/CVE-2017-7269](https://github.com/nika0x38/CVE-2017-7269)
 - [Killian0713/Assignement_3-CVE-2017-7269](https://github.com/Killian0713/Assignement_3-CVE-2017-7269)
+- [Admin2099/Penetration-Testing-Assessment-23-04-2026](https://github.com/Admin2099/Penetration-Testing-Assessment-23-04-2026)
 
 ### CVE-2017-7308 (2017-03-29)
 
