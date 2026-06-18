@@ -91,13 +91,6 @@
 
 - [SparshBiswas-AI/CVE-2026-0596-Reproduction](https://github.com/SparshBiswas-AI/CVE-2026-0596-Reproduction)
 
-### CVE-2026-0603 (2026-01-23)
-
-<code>A flaw was found in Hibernate. A remote attacker with low privileges could exploit a second-order SQL injection vulnerability by providing specially crafted, unsanitized non-alphanumeric characters in the ID column when the InlineIdsOrClauseBuilder is used. This could lead to sensitive information disclosure, such as reading system files, and allow for data manipulation or deletion within the application's database, resulting in an application level denial of service.
-</code>
-
-- [EQSTLab/CVE-2026-0603](https://github.com/EQSTLab/CVE-2026-0603)
-
 ### CVE-2026-0740 (2026-04-07)
 
 <code>The Ninja Forms - File Uploads plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'NF_FU_AJAX_Controllers_Uploads::handle_upload' function in all versions up to, and including, 3.3.26. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible. Note: The vulnerability was partially patched in version 3.3.25 and fully patched in version 3.3.27.
@@ -1673,7 +1666,6 @@
 - [selectel/mks-copy-fail-mitigation](https://github.com/selectel/mks-copy-fail-mitigation)
 - [Juguitos/copy-fail](https://github.com/Juguitos/copy-fail)
 - [liamromanis101/CVE-2026-31431-Copy-Fail---Vulnerability-Detection-Script](https://github.com/liamromanis101/CVE-2026-31431-Copy-Fail---Vulnerability-Detection-Script)
-- [wvverez/CVE-2026-31431-Copy-Fail](https://github.com/wvverez/CVE-2026-31431-Copy-Fail)
 - [karollooool/Porting-CVE-2026-31431-Copy-Fail-to-a-Constrained-Java-Runner](https://github.com/karollooool/Porting-CVE-2026-31431-Copy-Fail-to-a-Constrained-Java-Runner)
 - [deckhouse/d8-copy-fail-mitigation](https://github.com/deckhouse/d8-copy-fail-mitigation)
 - [HulnotHutu/CVE-2026-31431](https://github.com/HulnotHutu/CVE-2026-31431)
@@ -1686,10 +1678,10 @@
 - [Smarttfoxx/copyfail](https://github.com/Smarttfoxx/copyfail)
 - [monobrau/copyfailscan](https://github.com/monobrau/copyfailscan)
 - [ROSNLR5/modrosnlr5](https://github.com/ROSNLR5/modrosnlr5)
-- [KanbaraAkihito/CVE-2026-31431-copyfail-rs](https://github.com/KanbaraAkihito/CVE-2026-31431-copyfail-rs)
 - [suominen/CVE-2026-31431](https://github.com/suominen/CVE-2026-31431)
 - [joltcan/ansible-role-cve-2026-31431](https://github.com/joltcan/ansible-role-cve-2026-31431)
 - [aexdyhaxor/CVE-2026-31431-copy-fail](https://github.com/aexdyhaxor/CVE-2026-31431-copy-fail)
+- [juliosuas/copyfail-guard](https://github.com/juliosuas/copyfail-guard)
 - [samanzamani/copy-fail-checker](https://github.com/samanzamani/copy-fail-checker)
 - [ochebotar/copy-fail-CVE-2026-31431-detection-probe](https://github.com/ochebotar/copy-fail-CVE-2026-31431-detection-probe)
 - [Mrhudson69/cve-2026-31431](https://github.com/Mrhudson69/cve-2026-31431)
@@ -1698,9 +1690,7 @@
 - [Liverwortenuresis371/copyfail-rs](https://github.com/Liverwortenuresis371/copyfail-rs)
 - [itsystem/afalg-check](https://github.com/itsystem/afalg-check)
 - [RazvanDuda/GhostShell](https://github.com/RazvanDuda/GhostShell)
-- [darioomatos/cve-2026-31431-copyfail](https://github.com/darioomatos/cve-2026-31431-copyfail)
 - [sgkdev/page_inject](https://github.com/sgkdev/page_inject)
-- [OneDemobird/copy-fail-CVE-2026-31431-pythonlower3.10](https://github.com/OneDemobird/copy-fail-CVE-2026-31431-pythonlower3.10)
 - [reubensammut/CVE-2026-31431-Copy-Fail](https://github.com/reubensammut/CVE-2026-31431-Copy-Fail)
 - [ECHO6789/CVE-2026-31431-fix](https://github.com/ECHO6789/CVE-2026-31431-fix)
 - [zenzue/CVE-2026-31431-Checker-Mitigator](https://github.com/zenzue/CVE-2026-31431-Checker-Mitigator)
@@ -2260,6 +2250,9 @@
 ### CVE-2026-37637
 - [SLO-CYBER-SEC/CVE-2026-37637](https://github.com/SLO-CYBER-SEC/CVE-2026-37637)
 
+### CVE-2026-38165
+- [AT190510-Cuong/CVE-2026-38165-SSTI-](https://github.com/AT190510-Cuong/CVE-2026-38165-SSTI-)
+
 ### CVE-2026-38194
 - [4D4J/cormem-read-poc](https://github.com/4D4J/cormem-read-poc)
 
@@ -2351,13 +2344,6 @@
 
 - [krishnadevpmelevila/CVE-2026-39292](https://github.com/krishnadevpmelevila/CVE-2026-39292)
 
-### CVE-2026-39363 (2026-04-07)
-
-<code>Vite is a frontend tooling framework for JavaScript. From 6.0.0 to before 6.4.2, 7.3.2, and 8.0.5, if it is possible to connect to the Vite dev server’s WebSocket without an Origin header, an attacker can invoke fetchModule via the custom WebSocket event vite:invoke and combine file://... with ?raw (or ?inline) to retrieve the contents of arbitrary files on the server as a JavaScript string (e.g., export default &quot;...&quot;). The access control enforced in the HTTP request path (such as server.fs.allow) is not applied to this WebSocket-based execution path. This vulnerability is fixed in 6.4.2, 7.3.2, and 8.0.5.
-</code>
-
-- [f4s1on/CVE-2026-39363](https://github.com/f4s1on/CVE-2026-39363)
-
 ### CVE-2026-39636 (2026-04-08)
 
 <code>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in livemesh Livemesh Addons for Elementor addons-for-elementor allows Stored XSS.This issue affects Livemesh Addons for Elementor: from n/a through &lt;= 9.0.
@@ -2374,7 +2360,7 @@
 
 ### CVE-2026-39813 (2026-04-14)
 
-<code>A path traversal: '../filedir' vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8 may allow attacker to escalation of privilege via &lt;insert attack vector here&gt;
+<code>A path traversal: '../filedir' vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8 may allow attacker to escalation of privilege via specially crafted HTTP requests.
 </code>
 
 - [HORKimhab/CVE-2026-39813](https://github.com/HORKimhab/CVE-2026-39813)
@@ -2679,6 +2665,7 @@
 
 - [strivepan/ActiveMQ-cve-2026-42588-scanner-gui](https://github.com/strivepan/ActiveMQ-cve-2026-42588-scanner-gui)
 - [hnytgl/CVE-2026-42588](https://github.com/hnytgl/CVE-2026-42588)
+- [gentleman567/POC](https://github.com/gentleman567/POC)
 
 ### CVE-2026-42589 (2026-05-14)
 
@@ -2935,6 +2922,7 @@
 </code>
 
 - [HORKimhab/CVE-2026-44963](https://github.com/HORKimhab/CVE-2026-44963)
+- [SentinelXofficial/CVE-2026-44963](https://github.com/SentinelXofficial/CVE-2026-44963)
 
 ### CVE-2026-45034
 - [Cyber-DarkNay/CVE-2026-45034](https://github.com/Cyber-DarkNay/CVE-2026-45034)
@@ -3513,6 +3501,9 @@
 
 ### CVE-2026-54088
 - [Saku0512/CVE-2026-54088-poc](https://github.com/Saku0512/CVE-2026-54088-poc)
+
+### CVE-2026-54316
+- [InertFluid/cve-2026-54316-lab](https://github.com/InertFluid/cve-2026-54316-lab)
 
 ### CVE-2026-54420 (2026-06-14)
 
@@ -4996,6 +4987,7 @@
 </code>
 
 - [xxconi/CVE-2025-6254](https://github.com/xxconi/CVE-2025-6254)
+- [Yucaerin/CVE-2025-6254](https://github.com/Yucaerin/CVE-2025-6254)
 
 ### CVE-2025-6264 (2025-06-20)
 
@@ -11393,6 +11385,13 @@
 
 - [galbarnahum/CVE-2025-53020-PoC](https://github.com/galbarnahum/CVE-2025-53020-PoC)
 
+### CVE-2025-53024 (2025-07-15)
+
+<code>Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core).   The supported version that is affected is 7.1.10. Easily exploitable vulnerability allows high privileged attacker with logon to the infrastructure where Oracle VM VirtualBox executes to compromise Oracle VM VirtualBox.  While the vulnerability is in Oracle VM VirtualBox, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle VM VirtualBox. CVSS 3.1 Base Score 8.2 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H).
+</code>
+
+- [minq0x1412/CVE-2025-53024](https://github.com/minq0x1412/CVE-2025-53024)
+
 ### CVE-2025-53136 (2025-08-12)
 
 <code>Exposure of sensitive information to an unauthorized actor in Windows NT OS Kernel allows an authorized attacker to disclose information locally.
@@ -11621,6 +11620,7 @@
 - [f4dee-backup/CVE-2025-54123](https://github.com/f4dee-backup/CVE-2025-54123)
 - [davidzzo23/CVE-2025-54123](https://github.com/davidzzo23/CVE-2025-54123)
 - [0x00phantom-hat/Hoverfly-1.11.3-RCE-CVE-2025-54123-Exploit](https://github.com/0x00phantom-hat/Hoverfly-1.11.3-RCE-CVE-2025-54123-Exploit)
+- [0xk4rth1/CVE-2025-54123](https://github.com/0xk4rth1/CVE-2025-54123)
 
 ### CVE-2025-54135 (2025-08-05)
 
@@ -15814,6 +15814,13 @@
 
 - [Icycu123/CVE-2024-1781](https://github.com/Icycu123/CVE-2024-1781)
 
+### CVE-2024-1813 (2024-04-09)
+
+<code>The Simple Job Board plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.11.0 via deserialization of untrusted input in the job_board_applicant_list_columns_value function. This makes it possible for unauthenticated attackers to inject a PHP Object. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code when a submitted job application is viewed.
+</code>
+
+- [MobetaSec/CVE-2024-1813-POC](https://github.com/MobetaSec/CVE-2024-1813-POC)
+
 ### CVE-2024-1874 (2024-04-29)
 
 <code>In PHP versions 8.1.* before 8.1.28, 8.2.* before 8.2.18, 8.3.* before 8.3.5, when using proc_open() command with array syntax, due to insufficient escaping, if the arguments of the executed command are controlled by a malicious user, the user can supply arguments that would execute arbitrary commands in Windows shell.
@@ -19745,7 +19752,6 @@
 - [hybinn/CVE-2024-23897](https://github.com/hybinn/CVE-2024-23897)
 - [aadi0258/Exploit-CVE-2024-23897](https://github.com/aadi0258/Exploit-CVE-2024-23897)
 - [harekrishnarai/CVE-2024-23897-test-windows](https://github.com/harekrishnarai/CVE-2024-23897-test-windows)
-- [wvverez/CVE-2024-23897](https://github.com/wvverez/CVE-2024-23897)
 - [vmc8ll/poc-CVE-2024-23897](https://github.com/vmc8ll/poc-CVE-2024-23897)
 - [w41l3r/jenkins_scan](https://github.com/w41l3r/jenkins_scan)
 - [rivaedoardo62-boop/cve-2024-23897-jenkins-poc](https://github.com/rivaedoardo62-boop/cve-2024-23897-jenkins-poc)
@@ -28613,6 +28619,7 @@
 </code>
 
 - [chunzhennn/cve-2023-21987-poc](https://github.com/chunzhennn/cve-2023-21987-poc)
+- [minq0x1412/CVE-2023-21987-and-CVE-2023-21991](https://github.com/minq0x1412/CVE-2023-21987-and-CVE-2023-21991)
 
 ### CVE-2023-22047 (2023-07-18)
 
@@ -34814,13 +34821,6 @@
 </code>
 
 - [louiselalanne/CVE-2023-49314](https://github.com/louiselalanne/CVE-2023-49314)
-
-### CVE-2023-49339 (2024-02-13)
-
-<code>Ellucian Banner 9.17 allows Insecure Direct Object Reference (IDOR) via a modified bannerId to the /StudentSelfService/ssb/studentCard/retrieveData endpoint.
-</code>
-
-- [3zizme/CVE-2023-49339](https://github.com/3zizme/CVE-2023-49339)
 
 ### CVE-2023-49367 (2025-09-18)
 
@@ -43068,13 +43068,6 @@
 
 - [uthrasri/frameworks_opt_net_wifi_CVE-2021-0466](https://github.com/uthrasri/frameworks_opt_net_wifi_CVE-2021-0466)
 
-### CVE-2021-0481 (2021-06-11)
-
-<code>In onActivityResult of EditUserPhotoController.java, there is a possible access of unauthorized files due to an unexpected URI handler. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-8.1 Android-9 Android-10 Android-11Android ID: A-172939189
-</code>
-
-- [ShaikUsaf/packages_apps_settings_AOSP10_r33_CVE-2021-0481](https://github.com/ShaikUsaf/packages_apps_settings_AOSP10_r33_CVE-2021-0481)
-
 ### CVE-2021-0511 (2021-06-21)
 
 <code>In Dex2oat of dex2oat.cc, there is a possible way to inject bytecode into an app due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-9 Android-10 Android-11Android ID: A-178055795
@@ -45565,6 +45558,13 @@
 - [Ovi3/CVE_2021_27850_POC](https://github.com/Ovi3/CVE_2021_27850_POC)
 - [novysodope/CVE-2021-27850](https://github.com/novysodope/CVE-2021-27850)
 
+### CVE-2021-27876 (2021-03-01)
+
+<code>An issue was discovered in Veritas Backup Exec before 21.2. The communication between a client and an Agent requires successful authentication, which is typically completed over a secure TLS communication. However, due to a vulnerability in the SHA Authentication scheme, an attacker is able to gain unauthorized access and complete the authentication process. Subsequently, the client can execute data management protocol commands on the authenticated connection. By using crafted input parameters in one of these commands, an attacker can access an arbitrary file on the system using System privileges.
+</code>
+
+- [wingerbijay/CVE-2021-27876](https://github.com/wingerbijay/CVE-2021-27876)
+
 ### CVE-2021-27890 (2021-03-15)
 
 <code>SQL Injection vulnerablity in MyBB before 1.8.26 via theme properties included in theme XML files.
@@ -47890,7 +47890,7 @@
 - [JKIM72403/CS4277-CVE-Path-Traversal-Apache-HTTP-Server](https://github.com/JKIM72403/CS4277-CVE-Path-Traversal-Apache-HTTP-Server)
 - [klmntbelgium/cve-2021-41773-exploration](https://github.com/klmntbelgium/cve-2021-41773-exploration)
 - [im2sinister/CVE-2021-41773](https://github.com/im2sinister/CVE-2021-41773)
-- [wvverez/CVE-2021-41773-PoC](https://github.com/wvverez/CVE-2021-41773-PoC)
+- [a24ac1/CVE-2021-41773-PoC](https://github.com/a24ac1/CVE-2021-41773-PoC)
 - [fxdyx-a/CVE-2021-41773-POC](https://github.com/fxdyx-a/CVE-2021-41773-POC)
 
 ### CVE-2021-41784 (2022-08-29)
