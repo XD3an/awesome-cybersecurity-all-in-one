@@ -167,7 +167,7 @@ This repository contains a curated collection of cybersecurity resources organiz
 - **[NVD](https://nvd.nist.gov/)** - National Vulnerability Database
 - **[Exploit DB](https://www.exploit-db.com/)** - Archive of public exploits
 - **[0day.today](https://0day.today/)** - Zero-day exploits database
-- **[CVE PoC Search](https://labs.jamessawyer.co.uk/cves/)** - Search public GitHub proof-of-concept repositories by CVE identifier
+- **[CVE PoC Search](https://labs.jamessawyer.co.uk/cves/)** - Instantly find public GitHub proof-of-concept exploit code for any CVE identifier
 
 ### 🔬 Research Tools
 
