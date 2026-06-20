@@ -20,7 +20,6 @@
 <code>In adbd_tls_verify_cert of auth.cpp, there is a possible bypass of wireless ADB mutual authentication due to a logic error in the code. This could lead to remote (proximal/adjacent) code execution as the shell user with no additional execution privileges needed. User interaction is not needed for exploitation.
 </code>
 
-- [novaek/CVE-2026-0073-Research](https://github.com/novaek/CVE-2026-0073-Research)
 - [devtint/CVE-2026-0073](https://github.com/devtint/CVE-2026-0073)
 - [adityatelange/poc-CVE-2026-0073](https://github.com/adityatelange/poc-CVE-2026-0073)
 - [MartinPSDev/CVE-2026-0073-Android-ADBD-bypass-POC](https://github.com/MartinPSDev/CVE-2026-0073-Android-ADBD-bypass-POC)
@@ -68,7 +67,6 @@
 <code>A buffer overflow vulnerability in the User-ID™ Authentication Portal (aka Captive Portal) service of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially crafted packets. \n\nThe risk of this issue is greatly reduced if you secure access to the User-ID™ Authentication Portal per the  best practice guidelines https://knowledgebase.paloaltonetworks.com/KCSArticleDetail  by restricting access to only trusted internal IP addresses.\n\nPrisma Access, Cloud NGFW and Panorama appliances are not impacted by this vulnerability.
 </code>
 
-- [0xBlackash/CVE-2026-0300](https://github.com/0xBlackash/CVE-2026-0300)
 - [TailwindRG/cve-2026-0300-audit](https://github.com/TailwindRG/cve-2026-0300-audit)
 - [bannned-bit/CVE-2026-0300-PANOS](https://github.com/bannned-bit/CVE-2026-0300-PANOS)
 - [shizuku198411/CVE-2026-0300](https://github.com/shizuku198411/CVE-2026-0300)
@@ -1020,6 +1018,14 @@
 
 - [Xmyronn/CVE-2026-11518-XSS](https://github.com/Xmyronn/CVE-2026-11518-XSS)
 
+### CVE-2026-11551 (2026-06-19)
+
+<code>The Branda plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 3.4.29. This is due to the plugin not properly validating a user's identity prior to updating their password. This makes it possible for unauthenticated attackers to change arbitrary user's passwords, including administrators, and leverage that to gain access to their account.
+</code>
+
+- [Polosss/By-Poloss..-..CVE-2026-11551-PoC](https://github.com/Polosss/By-Poloss..-..CVE-2026-11551-PoC)
+- [xxconi/2026-11551](https://github.com/xxconi/2026-11551)
+
 ### CVE-2026-11645 (2026-06-08)
 
 <code>Out of bounds read and write in V8 in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)
@@ -1028,6 +1034,13 @@
 - [fevar54/CVE-2026-11645-Out-of-bounds-Read-Write](https://github.com/fevar54/CVE-2026-11645-Out-of-bounds-Read-Write)
 - [adamshaikhma/CVE-2026-11645](https://github.com/adamshaikhma/CVE-2026-11645)
 - [0xBlackash/CVE-2026-11645](https://github.com/0xBlackash/CVE-2026-11645)
+
+### CVE-2026-11784 (2026-06-18)
+
+<code>The Optimole – Optimize Images | Convert WebP &amp; AVIF | CDN &amp; Lazy Load | Image Optimization plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 4.2.6. This is due to missing or incorrect nonce validation on the replace_file function. This makes it possible for unauthenticated attackers to overwrite existing media attachments with attacker-supplied file content by supplying a forged multipart POST request targeting any attachment the victim has edit_post capability over via a forged request granted they can trick a site administrator into performing an action such as clicking on a link. The forged request requires a victim with at least Author-level privileges, as the handler enforces a current_user_can('edit_post', $id) check; tricking an Author-level or higher user into clicking a crafted link is sufficient to trigger the overwrite against attachments that user can edit.
+</code>
+
+- [AlexMihailEngineer/CVE-2026-11784-Optimole-CSRF](https://github.com/AlexMihailEngineer/CVE-2026-11784-Optimole-CSRF)
 
 ### CVE-2026-20127 (2026-02-25)
 
@@ -1244,7 +1257,6 @@
 - [afifudinmtop/MCPJam-Inspector-1.4.2-Remote-Code-Execution-CVE-2026-23744](https://github.com/afifudinmtop/MCPJam-Inspector-1.4.2-Remote-Code-Execution-CVE-2026-23744)
 - [alisster00/CVE-2026-23744-RCE](https://github.com/alisster00/CVE-2026-23744-RCE)
 - [m2sousa/CVE-2026-23744](https://github.com/m2sousa/CVE-2026-23744)
-- [TYehan/CVE-2026-23744](https://github.com/TYehan/CVE-2026-23744)
 - [MrR0b0t19/CVE-2026-23744-PoC](https://github.com/MrR0b0t19/CVE-2026-23744-PoC)
 - [jf-gondim/mcp-pwn](https://github.com/jf-gondim/mcp-pwn)
 - [avivyap/CVE-2026-23744](https://github.com/avivyap/CVE-2026-23744)
@@ -1282,7 +1294,6 @@
 </code>
 
 - [aa022/CVE-2026-23918-Passive-Audit](https://github.com/aa022/CVE-2026-23918-Passive-Audit)
-- [seguridadentrerios/CVE-2026-23918](https://github.com/seguridadentrerios/CVE-2026-23918)
 - [xeloxa/CVE-2026-23918-Apache-H2-PoC](https://github.com/xeloxa/CVE-2026-23918-Apache-H2-PoC)
 - [hackervlogofficial/CVE-2026-23918](https://github.com/hackervlogofficial/CVE-2026-23918)
 - [CYFARE/CVE-2026-23918-Apache-HTTP-Server-DoubleFree-PoC](https://github.com/CYFARE/CVE-2026-23918-Apache-HTTP-Server-DoubleFree-PoC)
@@ -1398,6 +1409,13 @@
 </code>
 
 - [MichaelAdamGroberman/CVE-2026-25197](https://github.com/MichaelAdamGroberman/CVE-2026-25197)
+
+### CVE-2026-25212 (2026-04-02)
+
+<code>An issue was discovered in Percona PMM before 3.7. Because an internal database user retains specific superuser privileges, an attacker with pmm-admin rights can abuse the &quot;Add data source&quot; feature to break out of the database context and execute shell commands on the underlying operating system.
+</code>
+
+- [5170Temp/CVE-2026-25212](https://github.com/5170Temp/CVE-2026-25212)
 
 ### CVE-2026-25253 (2026-02-01)
 
@@ -1684,11 +1702,8 @@
 - [6abc/Copy-Fail-CVE-2026-31431-dirty-frag-CVE-2026-43284](https://github.com/6abc/Copy-Fail-CVE-2026-31431-dirty-frag-CVE-2026-43284)
 - [Liverwortenuresis371/copyfail-rs](https://github.com/Liverwortenuresis371/copyfail-rs)
 - [itsystem/afalg-check](https://github.com/itsystem/afalg-check)
-- [RazvanDuda/GhostShell](https://github.com/RazvanDuda/GhostShell)
 - [sgkdev/page_inject](https://github.com/sgkdev/page_inject)
-- [zenzue/CVE-2026-31431-Checker-Mitigator](https://github.com/zenzue/CVE-2026-31431-Checker-Mitigator)
 - [luoqianlin/copyfail-c](https://github.com/luoqianlin/copyfail-c)
-- [0xN7y/CVE-2026-31431](https://github.com/0xN7y/CVE-2026-31431)
 - [Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail](https://github.com/Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail)
 - [iblamenear/CVE-2026-31431-Copy-Fail---Advanced-LPE-Proof-of-Concept---C-Rewrite](https://github.com/iblamenear/CVE-2026-31431-Copy-Fail---Advanced-LPE-Proof-of-Concept---C-Rewrite)
 - [grabesec/XCP_ng_CVE-2026-31431_tester](https://github.com/grabesec/XCP_ng_CVE-2026-31431_tester)
@@ -1826,13 +1841,6 @@
 </code>
 
 - [mbanyamer/CVE-2026-32707-PX4-Autopilot-tattu_can-Stack-Buffer-Overflow-DoS-](https://github.com/mbanyamer/CVE-2026-32707-PX4-Autopilot-tattu_can-Stack-Buffer-Overflow-DoS-)
-
-### CVE-2026-32710 (2026-03-20)
-
-<code>MariaDB server is a community developed fork of MySQL server. An authenticated user can crash MariaDB versions 11.4 before 11.4.10 and 11.8 before 11.8.6 via a bug in JSON_SCHEMA_VALID() function. Under certain conditions it might be possible to turn the crash into a remote code execution. These conditions require tight control over memory layout which is generally only attainable in a lab environment. This issue is fixed in MariaDB 11.4.10, MariaDB 11.8.6, and MariaDB 12.2.2.
-</code>
-
-- [dinosn/CVE-2026-32710](https://github.com/dinosn/CVE-2026-32710)
 
 ### CVE-2026-32743 (2026-03-18)
 
@@ -2328,6 +2336,9 @@
 
 - [MGTx2/CVE-2026-39107](https://github.com/MGTx2/CVE-2026-39107)
 
+### CVE-2026-39259
+- [yousif-IQ/CVE-2026-39259](https://github.com/yousif-IQ/CVE-2026-39259)
+
 ### CVE-2026-39292 (2026-05-29)
 
 <code>Falco Solutions PHPPageBuilder v0.31.0 contains an unrestricted file upload vulnerability in the pagemanager/pagebuilder module that allows remote attackers to upload arbitrary files and achieve remote code execution. The vulnerability exists due to insufficient validation of uploaded file types and executable content.
@@ -2649,6 +2660,8 @@
 </code>
 
 - [HORKimhab/CVE-2026-42530](https://github.com/HORKimhab/CVE-2026-42530)
+- [v4ltonn/CVE-2026-42530](https://github.com/v4ltonn/CVE-2026-42530)
+- [0xBlackash/CVE-2026-42530](https://github.com/0xBlackash/CVE-2026-42530)
 
 ### CVE-2026-42568 (2026-06-10)
 
@@ -3419,10 +3432,18 @@
 
 - [dhmosfunk/CVE-2026-49160-CVE-2026-47291-HTTP.sys](https://github.com/dhmosfunk/CVE-2026-49160-CVE-2026-47291-HTTP.sys)
 
-### CVE-2026-49344
+### CVE-2026-49344 (2026-06-19)
+
+<code>Mercator is an open source web application that enables mapping of the information system. Prior to version 2025.05.19, Mercator's Query Engine (`/admin/queries/execute`) accepts a JSON DSL (`from` / `select` / `filters` / `traverse` / `output`), translates it into an Eloquent query, and returns results as JSON. The controller method `QueryController::execute()` does not enforce an authorization gate, unlike `store()` and `massDestroy()` in the same controller which are correctly protected. As a result, any authenticated account — including the read-only Auditor role — can query models beyond its intended scope, including the `User` model. Additionally, the `password` column, although declared `$hidden`, is not excluded from filter predicates, which allows it to be used in `LIKE` conditions. The `schema()` and `schemaModel()` endpoints of the same controller are similarly unguarded. The Query Engine is read-only; integrity and availability are not affected. Version 2025.05.19 patches the issue.
+</code>
+
 - [hadhub/CVE-2026-49344-Mercator-JSON-DSL](https://github.com/hadhub/CVE-2026-49344-Mercator-JSON-DSL)
 
-### CVE-2026-49345
+### CVE-2026-49345 (2026-06-19)
+
+<code>Mercator is an open source web application that enables mapping of the information system. Prior to version 2025.05.19, a Server-Side Request Forgery (SSRF) vulnerability exists in Mercator's CVE configuration panel (`/admin/config/parameters`). The `testProvider()` method in `ConfigurationController` passes user-supplied input directly to `curl_init()` without validating the scheme, hostname, or destination IP address. An authenticated user with the `configure` permission can force the Mercator server to issue arbitrary outbound network requests. The suffix `/api/dbInfo` appended to the URL can be bypassed by injecting a `#` fragment character (e.g. `http://TARGET/PATH#`), allowing full control over the target URL. No scheme whitelist, host whitelist, or private/loopback IP block is applied. The `telnet://` scheme can be used for internal port scanning; the `gopher://` scheme enables interaction with unauthenticated internal services (Redis, Memcached), potentially leading to Remote Code Execution under specific deployment conditions. Version 2025.05.19 patches the issue.
+</code>
+
 - [hadhub/CVE-2026-49345-Mercator-SSRF](https://github.com/hadhub/CVE-2026-49345-Mercator-SSRF)
 
 ### CVE-2026-49413
@@ -3561,6 +3582,9 @@
 
 ### CVE-2026-54686
 - [Saku0512/CVE-2026-54686-poc](https://github.com/Saku0512/CVE-2026-54686-poc)
+
+### CVE-2026-54761
+- [Saku0512/CVE-2026-54761-poc](https://github.com/Saku0512/CVE-2026-54761-poc)
 
 ### CVE-2026-55168
 - [KovachVL/CVE-2026-55168](https://github.com/KovachVL/CVE-2026-55168)
@@ -5442,11 +5466,11 @@
 - [3jee/CVE-2025-8110](https://github.com/3jee/CVE-2025-8110)
 - [Ghxstsec/CVE-2025-8110](https://github.com/Ghxstsec/CVE-2025-8110)
 - [kayl22/cve-2025-8110-GOGS-RCE](https://github.com/kayl22/cve-2025-8110-GOGS-RCE)
-- [TYehan/CVE-2025-8110-Gogs-RCE-Exploit](https://github.com/TYehan/CVE-2025-8110-Gogs-RCE-Exploit)
 - [0dgt/CVE-2025-8110](https://github.com/0dgt/CVE-2025-8110)
 - [popyue/CVE-2025-8110](https://github.com/popyue/CVE-2025-8110)
 - [X4BROZER/CVE-2025-8110](https://github.com/X4BROZER/CVE-2025-8110)
 - [hassan-hamadi/CVE-2025-8110-Silentium-HTB](https://github.com/hassan-hamadi/CVE-2025-8110-Silentium-HTB)
+- [AdityaInnovates/CVE-2025-8110-Gogs-RCE-Exploit](https://github.com/AdityaInnovates/CVE-2025-8110-Gogs-RCE-Exploit)
 - [get-xor/coreweave-demo-2026-05](https://github.com/get-xor/coreweave-demo-2026-05)
 - [mananispiwpiw/CVE-2025-8110-PoC](https://github.com/mananispiwpiw/CVE-2025-8110-PoC)
 
@@ -12940,7 +12964,6 @@
 - [AzureADTrent/CVE-2025-58434-59528](https://github.com/AzureADTrent/CVE-2025-58434-59528)
 - [Kamigold/Flowise-RCE](https://github.com/Kamigold/Flowise-RCE)
 - [CVETeam/FlowiseAI-Critical-KillChain](https://github.com/CVETeam/FlowiseAI-Critical-KillChain)
-- [TYehan/CVE-2025-58434-59528](https://github.com/TYehan/CVE-2025-58434-59528)
 - [p1ctur3p3rf3ct/CVE-2025-58434](https://github.com/p1ctur3p3rf3ct/CVE-2025-58434)
 - [jwsly12/CVE-2025-58434-59528-htb-ctf](https://github.com/jwsly12/CVE-2025-58434-59528-htb-ctf)
 - [kartik2005221/CVE-2025-58434-poc](https://github.com/kartik2005221/CVE-2025-58434-poc)
@@ -13513,7 +13536,11 @@
 - [baktistr/cve-2025-62726-poc](https://github.com/baktistr/cve-2025-62726-poc)
 - [Muzyli/cve-2025-62726-malicious-repo](https://github.com/Muzyli/cve-2025-62726-malicious-repo)
 
-### CVE-2025-62821
+### CVE-2025-62821 (2026-06-19)
+
+<code>Microsoft HEIF Image Extensions 1.2.22.0 has an out-of-bounds read because CHEIFItemInfoEntry_GetDataSize can return success while leaving the reported data size as 0. This causes a caller to make a 1-byte allocation. Later, CopyPixels computes copy_size = stride * abs(roi_height) but does not check the source buffer length before a memmove call.
+</code>
+
 - [hyunjungg/CVE-2025-62821](https://github.com/hyunjungg/CVE-2025-62821)
 
 ### CVE-2025-62878 (2026-02-25)
@@ -13560,13 +13587,6 @@
 - [0xA1M/CVE-2025-63353](https://github.com/0xA1M/CVE-2025-63353)
 - [r0otk3r/CVE-2025-63353](https://github.com/r0otk3r/CVE-2025-63353)
 - [Zvckster/CVE-2025-63353](https://github.com/Zvckster/CVE-2025-63353)
-
-### CVE-2025-63389 (2025-12-18)
-
-<code>A critical authentication bypass vulnerability exists in Ollama platform's API endpoints in versions prior to and including v0.12.3. The platform exposes multiple API endpoints without requiring authentication, enabling remote attackers to perform unauthorized model management operations.
-</code>
-
-- [nuclide-research/VisorGoose](https://github.com/nuclide-research/VisorGoose)
 
 ### CVE-2025-63406 (2025-11-13)
 
@@ -27773,6 +27793,7 @@
 - [FireWolfWang/CVE-2023-6019](https://github.com/FireWolfWang/CVE-2023-6019)
 - [Clydeston/CVE-2023-6019](https://github.com/Clydeston/CVE-2023-6019)
 - [Zohaibkhan1472/cve-2023-6019](https://github.com/Zohaibkhan1472/cve-2023-6019)
+- [joaquinrrr/CVE-2023-6019](https://github.com/joaquinrrr/CVE-2023-6019)
 
 ### CVE-2023-6036 (2024-02-12)
 
@@ -30746,13 +30767,6 @@
 </code>
 
 - [KIL0BYT3X/CVE-2023-31753](https://github.com/KIL0BYT3X/CVE-2023-31753)
-
-### CVE-2023-31756 (2023-05-19)
-
-<code>A command injection vulnerability exists in the administrative web portal in TP-Link Archer VR1600V devices running firmware Versions &lt;= 0.1.0. 0.9.1 v5006.0 Build 220518 Rel.32480n which allows remote attackers, authenticated to the administrative web portal as an administrator user to open an operating system level shell via the 'X_TP_IfName' parameter.
-</code>
-
-- [StanleyJobsonAU/LongBow](https://github.com/StanleyJobsonAU/LongBow)
 
 ### CVE-2023-31779 (2023-05-22)
 
@@ -35680,6 +35694,7 @@
 - [OpsCipher/CVE-2022-0543](https://github.com/OpsCipher/CVE-2022-0543)
 - [SiennaSkies/redisHack](https://github.com/SiennaSkies/redisHack)
 - [netw0rk7/CVE-2022-0543-Home-Lab](https://github.com/netw0rk7/CVE-2022-0543-Home-Lab)
+- [K3ysTr0K3R/CVE-2022-0543](https://github.com/K3ysTr0K3R/CVE-2022-0543)
 
 ### CVE-2022-0591 (2022-03-21)
 
@@ -43108,13 +43123,6 @@
 
 - [uthrasri/frameworks_opt_net_wifi_CVE-2021-0466](https://github.com/uthrasri/frameworks_opt_net_wifi_CVE-2021-0466)
 
-### CVE-2021-0481 (2021-06-11)
-
-<code>In onActivityResult of EditUserPhotoController.java, there is a possible access of unauthorized files due to an unexpected URI handler. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-8.1 Android-9 Android-10 Android-11Android ID: A-172939189
-</code>
-
-- [ShaikUsaf/packages_apps_settings_AOSP10_r33_CVE-2021-0481](https://github.com/ShaikUsaf/packages_apps_settings_AOSP10_r33_CVE-2021-0481)
-
 ### CVE-2021-0511 (2021-06-21)
 
 <code>In Dex2oat of dex2oat.cc, there is a possible way to inject bytecode into an app due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-9 Android-10 Android-11Android ID: A-178055795
@@ -43824,6 +43832,7 @@
 - [realatharva15/polkit-CVE-2021-3560_writeup](https://github.com/realatharva15/polkit-CVE-2021-3560_writeup)
 - [yutasato88/CVE-2021-3560-PolkitPrivilegeEsclation](https://github.com/yutasato88/CVE-2021-3560-PolkitPrivilegeEsclation)
 - [Jeanback1/CVE-2021-3560-exploit](https://github.com/Jeanback1/CVE-2021-3560-exploit)
+- [adakoifman/CVE-2021-3560](https://github.com/adakoifman/CVE-2021-3560)
 
 ### CVE-2021-3572 (2021-11-10)
 
@@ -58582,7 +58591,6 @@
 - [gozn/detect-CVE-2019-15107-by-pyshark](https://github.com/gozn/detect-CVE-2019-15107-by-pyshark)
 - [h4ck0rman/CVE-2019-15107](https://github.com/h4ck0rman/CVE-2019-15107)
 - [olingo99/CVE-2019-15107](https://github.com/olingo99/CVE-2019-15107)
-- [aamfrk/Webmin-CVE-2019-15107](https://github.com/aamfrk/Webmin-CVE-2019-15107)
 - [0x4r2/Webmin-CVE-2019-15107](https://github.com/0x4r2/Webmin-CVE-2019-15107)
 - [NasrallahBaadi/CVE-2019-15107](https://github.com/NasrallahBaadi/CVE-2019-15107)
 - [D4rkScare/CVE-2019-15107](https://github.com/D4rkScare/CVE-2019-15107)
@@ -71474,6 +71482,7 @@
 - [r3vpwnx/CVE-2007-2447](https://github.com/r3vpwnx/CVE-2007-2447)
 - [Daviddoctor/Samba-CVE-2007-2447-Exploit-Username-Map-Script](https://github.com/Daviddoctor/Samba-CVE-2007-2447-Exploit-Username-Map-Script)
 - [Youneskc/SMB-Penetration-Testing-NTLM-Relay-Version-2-](https://github.com/Youneskc/SMB-Penetration-Testing-NTLM-Relay-Version-2-)
+- [harshiys/cybersecurity-home-lab-btp](https://github.com/harshiys/cybersecurity-home-lab-btp)
 - [DesmondHinds94/S22_The_Verification_Protocol](https://github.com/DesmondHinds94/S22_The_Verification_Protocol)
 
 ### CVE-2007-3280 (2007-06-19)
