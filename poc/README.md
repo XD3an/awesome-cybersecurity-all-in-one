@@ -67,7 +67,6 @@
 <code>A buffer overflow vulnerability in the User-ID™ Authentication Portal (aka Captive Portal) service of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially crafted packets. \n\nThe risk of this issue is greatly reduced if you secure access to the User-ID™ Authentication Portal per the  best practice guidelines https://knowledgebase.paloaltonetworks.com/KCSArticleDetail  by restricting access to only trusted internal IP addresses.\n\nPrisma Access, Cloud NGFW and Panorama appliances are not impacted by this vulnerability.
 </code>
 
-- [TailwindRG/cve-2026-0300-audit](https://github.com/TailwindRG/cve-2026-0300-audit)
 - [bannned-bit/CVE-2026-0300-PANOS](https://github.com/bannned-bit/CVE-2026-0300-PANOS)
 - [shizuku198411/CVE-2026-0300](https://github.com/shizuku198411/CVE-2026-0300)
 - [p3Nt3st3r-sTAr/CVE-2026-0300-POC](https://github.com/p3Nt3st3r-sTAr/CVE-2026-0300-POC)
@@ -1042,6 +1041,13 @@
 
 - [AlexMihailEngineer/CVE-2026-11784-Optimole-CSRF](https://github.com/AlexMihailEngineer/CVE-2026-11784-Optimole-CSRF)
 
+### CVE-2026-11912 (2026-06-20)
+
+<code>The Simple File List plugin for WordPress is vulnerable to arbitrary file modification due to insufficient authorization checks in all versions up to, and including, 6.3.7. This makes it possible for unauthenticated attackers to delete and modify files on the serve. This vulnerability is exploitable even when the administrator has not enabled the AllowFrontManage setting, because the is_admin() check unconditionally short-circuits the guard before that setting is evaluated.
+</code>
+
+- [Polosss/By-Poloss..-..CVE-2026-11912](https://github.com/Polosss/By-Poloss..-..CVE-2026-11912)
+
 ### CVE-2026-20127 (2026-02-25)
 
 <code>A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, and Cisco Catalyst SD-WAN Validator, formerly SD-WAN vBond, could allow an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.\r\n\r\nThis vulnerability exists because the peering authentication mechanism in an affected system is not working properly. An attacker could exploit this vulnerability by sending crafted requests to an affected system. A successful exploit could allow the attacker to log in to an affected Cisco Catalyst SD-WAN Controller as an internal, high-privileged, non-root&amp;nbsp;user account. Using this account, the attacker could access NETCONF, which would then allow the attacker to manipulate network configuration for the SD-WAN fabric.&amp;nbsp;
@@ -1294,7 +1300,6 @@
 </code>
 
 - [aa022/CVE-2026-23918-Passive-Audit](https://github.com/aa022/CVE-2026-23918-Passive-Audit)
-- [xeloxa/CVE-2026-23918-Apache-H2-PoC](https://github.com/xeloxa/CVE-2026-23918-Apache-H2-PoC)
 - [hackervlogofficial/CVE-2026-23918](https://github.com/hackervlogofficial/CVE-2026-23918)
 - [CYFARE/CVE-2026-23918-Apache-HTTP-Server-DoubleFree-PoC](https://github.com/CYFARE/CVE-2026-23918-Apache-HTTP-Server-DoubleFree-PoC)
 - [alt3kx/CVE-2026-23918](https://github.com/alt3kx/CVE-2026-23918)
@@ -1676,7 +1681,6 @@
 - [Percivalll/Copy-Fail-CVE-2026-31431-Kubernetes-PoC](https://github.com/Percivalll/Copy-Fail-CVE-2026-31431-Kubernetes-PoC)
 - [yandex-cloud-examples/yc-mk8s-copy-fail-mitigation](https://github.com/yandex-cloud-examples/yc-mk8s-copy-fail-mitigation)
 - [JuanBindez/CVE-2026-31431](https://github.com/JuanBindez/CVE-2026-31431)
-- [diemoeve/copyfail-rs](https://github.com/diemoeve/copyfail-rs)
 - [cozystack/copy-fail-blocker](https://github.com/cozystack/copy-fail-blocker)
 - [selectel/mks-copy-fail-mitigation](https://github.com/selectel/mks-copy-fail-mitigation)
 - [Juguitos/copy-fail](https://github.com/Juguitos/copy-fail)
@@ -1705,8 +1709,6 @@
 - [sgkdev/page_inject](https://github.com/sgkdev/page_inject)
 - [luoqianlin/copyfail-c](https://github.com/luoqianlin/copyfail-c)
 - [Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail](https://github.com/Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail)
-- [iblamenear/CVE-2026-31431-Copy-Fail---Advanced-LPE-Proof-of-Concept---C-Rewrite](https://github.com/iblamenear/CVE-2026-31431-Copy-Fail---Advanced-LPE-Proof-of-Concept---C-Rewrite)
-- [grabesec/XCP_ng_CVE-2026-31431_tester](https://github.com/grabesec/XCP_ng_CVE-2026-31431_tester)
 - [philfry/cve-2026-31431-ftrace](https://github.com/philfry/cve-2026-31431-ftrace)
 - [hans362/CVE-2026-31431-Copy-Fail-Container-Escape](https://github.com/hans362/CVE-2026-31431-Copy-Fail-Container-Escape)
 - [StarxSky/CVE-2026-31431](https://github.com/StarxSky/CVE-2026-31431)
@@ -2234,6 +2236,9 @@
 ### CVE-2026-37073
 - [jfs-jfs/CVE-2026-37073](https://github.com/jfs-jfs/CVE-2026-37073)
 
+### CVE-2026-37149
+- [pateldhyeyit/CVE-2026-37149](https://github.com/pateldhyeyit/CVE-2026-37149)
+
 ### CVE-2026-37196
 - [Pavanvootla-sec/CVE-2026-37196](https://github.com/Pavanvootla-sec/CVE-2026-37196)
 
@@ -2498,6 +2503,7 @@
 
 - [0xBlackash/CVE-2026-41091](https://github.com/0xBlackash/CVE-2026-41091)
 - [ridhinva/defender-privilege-escalation-scanner](https://github.com/ridhinva/defender-privilege-escalation-scanner)
+- [tc4dy/CVE-2026-41091-PoC-Exploit](https://github.com/tc4dy/CVE-2026-41091-PoC-Exploit)
 
 ### CVE-2026-41096 (2026-05-12)
 
@@ -2897,6 +2903,7 @@
 - [dinosn/CVE-2026-44578](https://github.com/dinosn/CVE-2026-44578)
 - [0xBlackash/CVE-2026-44578](https://github.com/0xBlackash/CVE-2026-44578)
 - [BS2010-AirborneTroops/NEXT-SSRF](https://github.com/BS2010-AirborneTroops/NEXT-SSRF)
+- [GadaLuBau1337/CVE-2026-44578](https://github.com/GadaLuBau1337/CVE-2026-44578)
 
 ### CVE-2026-44590 (2026-05-27)
 
@@ -3563,6 +3570,9 @@
 
 ### CVE-2026-54316
 - [InertFluid/cve-2026-54316-lab](https://github.com/InertFluid/cve-2026-54316-lab)
+
+### CVE-2026-54337
+- [4qu4r1um/CVE-2026-54337-PoC](https://github.com/4qu4r1um/CVE-2026-54337-PoC)
 
 ### CVE-2026-54420 (2026-06-14)
 
@@ -13587,6 +13597,13 @@
 - [0xA1M/CVE-2025-63353](https://github.com/0xA1M/CVE-2025-63353)
 - [r0otk3r/CVE-2025-63353](https://github.com/r0otk3r/CVE-2025-63353)
 - [Zvckster/CVE-2025-63353](https://github.com/Zvckster/CVE-2025-63353)
+
+### CVE-2025-63389 (2025-12-18)
+
+<code>A critical authentication bypass vulnerability exists in Ollama platform's API endpoints in versions prior to and including v0.12.3. The platform exposes multiple API endpoints without requiring authentication, enabling remote attackers to perform unauthorized model management operations.
+</code>
+
+- [nuclide-research/VisorGoose](https://github.com/nuclide-research/VisorGoose)
 
 ### CVE-2025-63406 (2025-11-13)
 
@@ -57032,6 +57049,7 @@
 - [ImperialX1104/Simple-CTF-Writeup](https://github.com/ImperialX1104/Simple-CTF-Writeup)
 - [Jeanback1/CVE-2019-9053-exploit](https://github.com/Jeanback1/CVE-2019-9053-exploit)
 - [rideckszz/poc-CVE-2019-9053](https://github.com/rideckszz/poc-CVE-2019-9053)
+- [rgkue/mysqli](https://github.com/rgkue/mysqli)
 
 ### CVE-2019-9081
 - [nth347/CVE-2019-9081_PoC](https://github.com/nth347/CVE-2019-9081_PoC)
