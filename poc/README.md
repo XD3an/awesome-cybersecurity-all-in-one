@@ -67,8 +67,6 @@
 <code>A buffer overflow vulnerability in the User-ID™ Authentication Portal (aka Captive Portal) service of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially crafted packets. \n\nThe risk of this issue is greatly reduced if you secure access to the User-ID™ Authentication Portal per the  best practice guidelines https://knowledgebase.paloaltonetworks.com/KCSArticleDetail  by restricting access to only trusted internal IP addresses.\n\nPrisma Access, Cloud NGFW and Panorama appliances are not impacted by this vulnerability.
 </code>
 
-- [TailwindRG/cve-2026-0300-audit](https://github.com/TailwindRG/cve-2026-0300-audit)
-- [bannned-bit/CVE-2026-0300-PANOS](https://github.com/bannned-bit/CVE-2026-0300-PANOS)
 - [shizuku198411/CVE-2026-0300](https://github.com/shizuku198411/CVE-2026-0300)
 - [p3Nt3st3r-sTAr/CVE-2026-0300-POC](https://github.com/p3Nt3st3r-sTAr/CVE-2026-0300-POC)
 - [lu4m575/CVE-2026-0300](https://github.com/lu4m575/CVE-2026-0300)
@@ -1026,6 +1024,14 @@
 
 - [Polosss/By-Poloss..-..CVE-2026-11551-PoC](https://github.com/Polosss/By-Poloss..-..CVE-2026-11551-PoC)
 - [xxconi/2026-11551](https://github.com/xxconi/2026-11551)
+- [ubaydev/CVE-2026-11551-PoC](https://github.com/ubaydev/CVE-2026-11551-PoC)
+
+### CVE-2026-11561 (2026-06-11)
+
+<code>Improper neutralization of special elements used in an expression language statement ('expression language injection') vulnerability in Soagen Informatics Technologies Software and Consulting Inc. Apinizer allows Code Injection.\n\nThis issue affects Apinizer: from 2026.04.0 before 2026.04.6.
+</code>
+
+- [alperenkesk/CVE-2026-11561](https://github.com/alperenkesk/CVE-2026-11561)
 
 ### CVE-2026-11645 (2026-06-08)
 
@@ -1166,6 +1172,13 @@
 
 - [EpSiLoNPoInTOrI/EpSiLoNPoInTlnk](https://github.com/EpSiLoNPoInTOrI/EpSiLoNPoInTlnk)
 
+### CVE-2026-21852 (2026-01-21)
+
+<code>Claude Code is an agentic coding tool. Prior to version 2.0.65, vulnerability in Claude Code's project-load flow allowed malicious repositories to exfiltrate data including Anthropic API keys before users confirmed trust. An attacker-controlled repository could include a settings file that sets ANTHROPIC_BASE_URL to an attacker-controlled endpoint and when the repository was opened, Claude Code would read the configuration and immediately issue API requests before showing the trust prompt, potentially leaking the user's API keys. Users on standard Claude Code auto-update have received this fix already. Users performing manual updates are advised to update to version 2.0.65, which contains a patch, or to the latest version.
+</code>
+
+- [Perufitlife/dotclaude-security](https://github.com/Perufitlife/dotclaude-security)
+
 ### CVE-2026-21858 (2026-01-07)
 
 <code>n8n is an open source workflow automation platform. Versions starting with 1.65.0 and below 1.121.0 enable an attacker to access files on the underlying server through execution of certain form-based workflows. A vulnerable workflow could grant access to an unauthenticated remote attacker, resulting in exposure of sensitive information stored on the system and may enable further compromise depending on deployment configuration and workflow usage. This issue is fixed in version 1.121.0.
@@ -1302,7 +1315,6 @@
 </code>
 
 - [aa022/CVE-2026-23918-Passive-Audit](https://github.com/aa022/CVE-2026-23918-Passive-Audit)
-- [hackervlogofficial/CVE-2026-23918](https://github.com/hackervlogofficial/CVE-2026-23918)
 - [CYFARE/CVE-2026-23918-Apache-HTTP-Server-DoubleFree-PoC](https://github.com/CYFARE/CVE-2026-23918-Apache-HTTP-Server-DoubleFree-PoC)
 - [alt3kx/CVE-2026-23918](https://github.com/alt3kx/CVE-2026-23918)
 - [insomnisec/Detections-CVE-2026-23918](https://github.com/insomnisec/Detections-CVE-2026-23918)
@@ -1679,14 +1691,12 @@
 - [Aurillium/RootRemover](https://github.com/Aurillium/RootRemover)
 - [lonelyor/CVE-2026-31431-exp](https://github.com/lonelyor/CVE-2026-31431-exp)
 - [adampielak/CVE-2026-31431_SCA_WAZUH](https://github.com/adampielak/CVE-2026-31431_SCA_WAZUH)
-- [shadowabi/CVE-2026-31431-CopyFail-Universal-LPE](https://github.com/shadowabi/CVE-2026-31431-CopyFail-Universal-LPE)
 - [Percivalll/Copy-Fail-CVE-2026-31431-Kubernetes-PoC](https://github.com/Percivalll/Copy-Fail-CVE-2026-31431-Kubernetes-PoC)
 - [yandex-cloud-examples/yc-mk8s-copy-fail-mitigation](https://github.com/yandex-cloud-examples/yc-mk8s-copy-fail-mitigation)
 - [JuanBindez/CVE-2026-31431](https://github.com/JuanBindez/CVE-2026-31431)
 - [cozystack/copy-fail-blocker](https://github.com/cozystack/copy-fail-blocker)
 - [selectel/mks-copy-fail-mitigation](https://github.com/selectel/mks-copy-fail-mitigation)
 - [Juguitos/copy-fail](https://github.com/Juguitos/copy-fail)
-- [liamromanis101/CVE-2026-31431-Copy-Fail---Vulnerability-Detection-Script](https://github.com/liamromanis101/CVE-2026-31431-Copy-Fail---Vulnerability-Detection-Script)
 - [karollooool/Porting-CVE-2026-31431-Copy-Fail-to-a-Constrained-Java-Runner](https://github.com/karollooool/Porting-CVE-2026-31431-Copy-Fail-to-a-Constrained-Java-Runner)
 - [deckhouse/d8-copy-fail-mitigation](https://github.com/deckhouse/d8-copy-fail-mitigation)
 - [HulnotHutu/CVE-2026-31431](https://github.com/HulnotHutu/CVE-2026-31431)
@@ -1699,7 +1709,6 @@
 - [monobrau/copyfailscan](https://github.com/monobrau/copyfailscan)
 - [ROSNLR5/modrosnlr5](https://github.com/ROSNLR5/modrosnlr5)
 - [suominen/CVE-2026-31431](https://github.com/suominen/CVE-2026-31431)
-- [joltcan/ansible-role-cve-2026-31431](https://github.com/joltcan/ansible-role-cve-2026-31431)
 - [aexdyhaxor/CVE-2026-31431-copy-fail](https://github.com/aexdyhaxor/CVE-2026-31431-copy-fail)
 - [juliosuas/copyfail-guard](https://github.com/juliosuas/copyfail-guard)
 - [samanzamani/copy-fail-checker](https://github.com/samanzamani/copy-fail-checker)
@@ -1713,7 +1722,6 @@
 - [Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail](https://github.com/Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail)
 - [philfry/cve-2026-31431-ftrace](https://github.com/philfry/cve-2026-31431-ftrace)
 - [hans362/CVE-2026-31431-Copy-Fail-Container-Escape](https://github.com/hans362/CVE-2026-31431-Copy-Fail-Container-Escape)
-- [StarxSky/CVE-2026-31431](https://github.com/StarxSky/CVE-2026-31431)
 - [pedro-lucas-melo/Estudo-de-Caso-CVE-2026-31431-CopyFail](https://github.com/pedro-lucas-melo/Estudo-de-Caso-CVE-2026-31431-CopyFail)
 - [ikow/CVE-2026-31431-live-code-corruption](https://github.com/ikow/CVE-2026-31431-live-code-corruption)
 - [gagaltotal/cve-2026-31431-copy-fail](https://github.com/gagaltotal/cve-2026-31431-copy-fail)
@@ -2516,6 +2524,13 @@
 - [m0n1x90/CVE-2026-41096](https://github.com/m0n1x90/CVE-2026-41096)
 - [TwoSevenOneT/CVE-2026-41096-Attack-Surface](https://github.com/TwoSevenOneT/CVE-2026-41096-Attack-Surface)
 
+### CVE-2026-41200 (2026-04-23)
+
+<code>STIG Manager is an API and web client for managing  Security Technical Implementation Guides (STIG) assessments of Information Systems. Versions 1.5.10 through 1.6.7 have a reflected Cross-Site Scripting (XSS) vulnerability in the OIDC authentication error handling code in `src/init.js` and `public/reauth.html`. During the OIDC redirect flow, the `error` and `error_description` query parameters returned by the OIDC provider are written directly to the DOM via `innerHTML` without HTML escaping. An attacker who can craft a malicious redirect URL and convince a user to follow it can execute arbitrary JavaScript in the application's origin context. The vulnerability is most severe when the targeted user has an active STIG Manager session running in another browser tab — injected code executes in the same origin and can communicate with the SharedWorker managing the active access token, enabling authenticated API requests on behalf of the victim including reading and modifying collection data. The vulnerability is patched in version 1.6.8. There is no workaround short of upgrading. Deployments behind a web application firewall that filters reflected XSS payloads in query parameters may have partial mitigation, but this is not a substitute for patching.
+</code>
+
+- [Hunt-Benito/cve-2026-41200-stig-manager-oidc-reflected-xss](https://github.com/Hunt-Benito/cve-2026-41200-stig-manager-oidc-reflected-xss)
+
 ### CVE-2026-41285 (2026-04-20)
 
 <code>In OpenBSD through 7.8, the slaacd and rad daemons have an infinite loop when they receive a crafted ICMPv6 Neighbor Discovery (ND) option (over a local network) with length zero, because of an &quot;nd_opt_len * 8 - 2&quot; expression with no preceding check for whether nd_opt_len is zero.
@@ -2570,7 +2585,6 @@
 - [mahfuzreham/cpanel-cve-2026-41940](https://github.com/mahfuzreham/cpanel-cve-2026-41940)
 - [Christian93111/CVE-2026-41940](https://github.com/Christian93111/CVE-2026-41940)
 - [Jenderal92/CVE-2026-41940](https://github.com/Jenderal92/CVE-2026-41940)
-- [0xBlackash/CVE-2026-41940](https://github.com/0xBlackash/CVE-2026-41940)
 - [MrOplus/CVE-2026-41940](https://github.com/MrOplus/CVE-2026-41940)
 - [ZildanZ/CVE-2026-41940](https://github.com/ZildanZ/CVE-2026-41940)
 - [Unfold-Security/CVE-2026-41940-Detection](https://github.com/Unfold-Security/CVE-2026-41940-Detection)
@@ -3010,6 +3024,7 @@
 - [nkopylov/tanscript-exploit-check](https://github.com/nkopylov/tanscript-exploit-check)
 - [prashanthnataraj/mini-shai-hulud-detector](https://github.com/prashanthnataraj/mini-shai-hulud-detector)
 - [renewablehacking/CVE-2026-45321-Tanstack](https://github.com/renewablehacking/CVE-2026-45321-Tanstack)
+- [adriannurrr/CVE-2026-45321-Tanstack](https://github.com/adriannurrr/CVE-2026-45321-Tanstack)
 
 ### CVE-2026-45332 (2026-05-28)
 
@@ -3374,6 +3389,13 @@
 - [wearehackers160/CVE-2026-48907](https://github.com/wearehackers160/CVE-2026-48907)
 - [g0thamRabb1t/joomla-jce-cve-2026-48907-detection](https://github.com/g0thamRabb1t/joomla-jce-cve-2026-48907-detection)
 
+### CVE-2026-48908 (2026-06-20)
+
+<code>A vulnerability in SP Page Builder for Joomla allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and execution of PHP code.
+</code>
+
+- [webshellseo8/CVE-2026-48908-POC](https://github.com/webshellseo8/CVE-2026-48908-POC)
+
 ### CVE-2026-48962 (2026-05-27)
 
 <code>IO::Compress versions before 2.220 for Perl can execute arbitrary code in File::GlobMapper via an attacker-controlled output glob.\n\n_parseOutputGlob() wraps the caller-supplied output glob string in double quotes and stores it in the parser state; _getFiles() then runs the stored expression through eval STRING. A literal double quote in the output glob closes the dquote wrapper, and the characters that follow are evaluated as Perl.\n\nArbitrary Perl in the output glob executes at the calling process's privilege.
@@ -3465,6 +3487,13 @@
 </code>
 
 - [byte16384/CVE-2026-49492-PoC](https://github.com/byte16384/CVE-2026-49492-PoC)
+
+### CVE-2026-49757 (2026-06-15)
+
+<code>Authentication Bypass by Spoofing vulnerability in team-alembic AshAuthentication allows account takeover of local users via OAuth2/OIDC sign-in.\n\nAshAuthentication's OAuth2 and OIDC family strategies matched the local user by email address (an upsert on the email field, or a user-defined sign-in filter) rather than by the OpenID Connect iss/sub claim combination. Per OpenID Connect Core §5.7, only iss/sub uniquely and stably identifies an end-user; other claims, including email, MUST NOT be used as unique identifiers.\n\nA provider login presenting a victim's email, including an unverified email, a reused email, or an account with email_verified: false, resolved to and signed in as the victim's existing local account. An unauthenticated attacker who can register an account on any accepted OAuth provider with the victim's email (or who benefits from provider-side email reuse or reclamation) obtains the victim's full local privileges.\n\nThe fix resolves users by the (strategy, sub) identity stored in a user identity resource, and only links a new sub to an existing local account by email when the provider's email_verified claim is trusted (trust_email_verified?).\n\nThis issue affects ash_authentication from 0.1.0 before 4.14.0 and from 5.0.0-rc.0 before 5.0.0-rc.10.
+</code>
+
+- [Hunt-Benito/ash-authentication-oauth2-oidc-account-takeover-cve-2026-49757-email-based-user-matching](https://github.com/Hunt-Benito/ash-authentication-oauth2-oidc-account-takeover-cve-2026-49757-email-based-user-matching)
 
 ### CVE-2026-49777 (2026-06-05)
 
@@ -10572,6 +10601,7 @@
 <code>In bta_hf_client_cb_init of bta_hf_client_main.cc, there is a possible remote code execution due to a use after free. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.
 </code>
 
+- [C0D331ng/Blackash-CVE-2025-48593](https://github.com/C0D331ng/Blackash-CVE-2025-48593)
 - [logesh-GIT001/CVE-2025-48593](https://github.com/logesh-GIT001/CVE-2025-48593)
 - [zhuowei/blueshrimp](https://github.com/zhuowei/blueshrimp)
 - [ranasen-rat/CVE-2025-48593](https://github.com/ranasen-rat/CVE-2025-48593)
@@ -11639,6 +11669,13 @@
 </code>
 
 - [iQingshan/Blackash-CVE-2025-53833](https://github.com/iQingshan/Blackash-CVE-2025-53833)
+
+### CVE-2025-53887 (2025-07-14)
+
+<code>Directus is a real-time API and App dashboard for managing SQL database content. Starting in version 9.0.0 and prior to version 11.9.0, the exact Directus version number is incorrectly being used as OpenAPI Spec version this means that it is being exposed by the `/server/specs/oas` endpoint without authentication. With the exact version information a malicious attacker can look for known vulnerabilities in Directus core or any of its shipped dependencies in that specific running version. Version 11.9.0 fixes the issue.
+</code>
+
+- [Perufitlife/directus-security](https://github.com/Perufitlife/directus-security)
 
 ### CVE-2025-53964 (2025-07-17)
 
@@ -13148,6 +13185,7 @@
 - [NetVanguard-cmd/CVE-2025-59536](https://github.com/NetVanguard-cmd/CVE-2025-59536)
 - [TreRB/ai-ide-config-guard](https://github.com/TreRB/ai-ide-config-guard)
 - [Razi-Interactive/claude-project-scanner](https://github.com/Razi-Interactive/claude-project-scanner)
+- [Perufitlife/dotclaude-security](https://github.com/Perufitlife/dotclaude-security)
 
 ### CVE-2025-59718 (2025-12-09)
 
@@ -29069,6 +29107,7 @@
 - [h3x0v3rl0rd/CVE-2023-23752](https://github.com/h3x0v3rl0rd/CVE-2023-23752)
 - [Aureum01/CVE-2023-23752](https://github.com/Aureum01/CVE-2023-23752)
 - [Marwan651/Joomla-CMS-Full-Lifecycle-Pentest](https://github.com/Marwan651/Joomla-CMS-Full-Lifecycle-Pentest)
+- [Sharma01672/traveller-htb](https://github.com/Sharma01672/traveller-htb)
 
 ### CVE-2023-23924 (2023-01-31)
 
@@ -31663,7 +31702,6 @@
 
 - [synacktiv/CVE-2023-35001](https://github.com/synacktiv/CVE-2023-35001)
 - [syedhafiz1234/nftables-oob-read-write-exploit-CVE-2023-35001-](https://github.com/syedhafiz1234/nftables-oob-read-write-exploit-CVE-2023-35001-)
-- [mrbrelax/Exploit_CVE-2023-35001](https://github.com/mrbrelax/Exploit_CVE-2023-35001)
 
 ### CVE-2023-35078 (2023-07-25)
 
@@ -37752,6 +37790,7 @@
 - [felisha-elmer/Sandbox-Challenge-Spring4Shell-CVE-2022-22965-](https://github.com/felisha-elmer/Sandbox-Challenge-Spring4Shell-CVE-2022-22965-)
 - [YUTING-HUANG0/Spring4Shell-CTF](https://github.com/YUTING-HUANG0/Spring4Shell-CTF)
 - [march0n/PoC-CVE-2022-22965-Spring4Shell](https://github.com/march0n/PoC-CVE-2022-22965-Spring4Shell)
+- [ernestom-commits/jfrog-apptrust-demo](https://github.com/ernestom-commits/jfrog-apptrust-demo)
 
 ### CVE-2022-22968 (2022-04-14)
 
@@ -70674,7 +70713,7 @@
 - [ByteForgeFr/CVE-2011-2523](https://github.com/ByteForgeFr/CVE-2011-2523)
 - [Jhatchi/NexaCorp-DFIR-INC-2026-001](https://github.com/Jhatchi/NexaCorp-DFIR-INC-2026-001)
 - [Chathura123git/ethical-hacking-CVE-2011-2523](https://github.com/Chathura123git/ethical-hacking-CVE-2011-2523)
-- [nitinsukthe/OpenVAS-Vulnerability-Assessment-Incident-Response](https://github.com/nitinsukthe/OpenVAS-Vulnerability-Assessment-Incident-Response)
+- [NitinSukthe-G/OpenVAS-Vulnerability-Assessment-Incident-Response](https://github.com/NitinSukthe-G/OpenVAS-Vulnerability-Assessment-Incident-Response)
 - [H4R335HR/vsftpd-234-backdoor](https://github.com/H4R335HR/vsftpd-234-backdoor)
 
 ### CVE-2011-2553
@@ -71749,6 +71788,7 @@
 - [darrynb89/CVE-2004-1561](https://github.com/darrynb89/CVE-2004-1561)
 - [thel1nus/CVE-2004-1561-Notes](https://github.com/thel1nus/CVE-2004-1561-Notes)
 - [Danyw24/CVE-2004-1561-Icecast-Header-Overwrite-buffer-overflow-RCE-2.0.1-Win32-](https://github.com/Danyw24/CVE-2004-1561-Icecast-Header-Overwrite-buffer-overflow-RCE-2.0.1-Win32-)
+- [MonseigneurPatas/thm-ice-icecast-rce-privesc](https://github.com/MonseigneurPatas/thm-ice-icecast-rce-privesc)
 
 ### CVE-2004-1769 (2005-03-10)
 
