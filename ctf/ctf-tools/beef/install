@@ -3,7 +3,14 @@
 git clone --depth 1 https://github.com/beefproject/beef
 
 cd beef
-rm Gemfile.lock
+rm -f Gemfile.lock
+# Ubuntu noble ships Ruby 3.2, while upstream test gems require Ruby 3.3+.
+ruby <<'RUBY'
+gemfile = File.read("Gemfile")
+updated = gemfile.sub(/^group :test do\n.*?^end\n/m, "")
+abort "Could not remove BeEF test dependency group" if updated == gemfile
+File.write("Gemfile", updated)
+RUBY
 bundle install
 cd ..
 

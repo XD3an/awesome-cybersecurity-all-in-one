@@ -1,3 +1,14 @@
 #!/bin/bash -ex
 
-pipx install --python $(which pypy3) "manticore[native]"
+VENV="$PWD/venv"
+
+virtualenv -p "$(which pypy3)" "$VENV"
+"$VENV/bin/pip" install \
+	"protobuf<4" \
+	"rlp<3" \
+	"eth-utils<2" \
+	"manticore[native]"
+
+mkdir -p bin
+ln -sf ../venv/bin/manticore bin/manticore
+ln -sf ../venv/bin/manticore-verifier bin/manticore-verifier
