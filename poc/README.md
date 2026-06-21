@@ -67,6 +67,7 @@
 <code>A buffer overflow vulnerability in the User-ID™ Authentication Portal (aka Captive Portal) service of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially crafted packets. \n\nThe risk of this issue is greatly reduced if you secure access to the User-ID™ Authentication Portal per the  best practice guidelines https://knowledgebase.paloaltonetworks.com/KCSArticleDetail  by restricting access to only trusted internal IP addresses.\n\nPrisma Access, Cloud NGFW and Panorama appliances are not impacted by this vulnerability.
 </code>
 
+- [TailwindRG/cve-2026-0300-audit](https://github.com/TailwindRG/cve-2026-0300-audit)
 - [bannned-bit/CVE-2026-0300-PANOS](https://github.com/bannned-bit/CVE-2026-0300-PANOS)
 - [shizuku198411/CVE-2026-0300](https://github.com/shizuku198411/CVE-2026-0300)
 - [p3Nt3st3r-sTAr/CVE-2026-0300-POC](https://github.com/p3Nt3st3r-sTAr/CVE-2026-0300-POC)
@@ -387,6 +388,7 @@
 - [0xBlackash/CVE-2026-4480](https://github.com/0xBlackash/CVE-2026-4480)
 - [CarlosEduardoPM/CVE-2026-4480-POC](https://github.com/CarlosEduardoPM/CVE-2026-4480-POC)
 - [Vusal777/CVE-2026-4480-exploit-poc](https://github.com/Vusal777/CVE-2026-4480-exploit-poc)
+- [ClearLotus-git/CVE-2026-4480-PoC](https://github.com/ClearLotus-git/CVE-2026-4480-PoC)
 
 ### CVE-2026-4524 (2026-05-14)
 
@@ -1757,7 +1759,6 @@
 - [Sebastian294/cve-2026-31431](https://github.com/Sebastian294/cve-2026-31431)
 - [0xFuffM3/CVE-2026-31431-CopyFail](https://github.com/0xFuffM3/CVE-2026-31431-CopyFail)
 - [dotPY-hax/CopyFail](https://github.com/dotPY-hax/CopyFail)
-- [whosfault/CVE-2026-31431](https://github.com/whosfault/CVE-2026-31431)
 - [zKaaanon/ProyectoFinalSO](https://github.com/zKaaanon/ProyectoFinalSO)
 - [adityasingh108/CVE-2026-31431-Metasploit-exploit](https://github.com/adityasingh108/CVE-2026-31431-Metasploit-exploit)
 - [Maxime288/CVE-2026-31431-Copy-Fail-R-pertoire-de-Pr-vention](https://github.com/Maxime288/CVE-2026-31431-Copy-Fail-R-pertoire-de-Pr-vention)
@@ -2812,7 +2813,6 @@
 - [ChernStepanov/DirtyFrag-for-dummies](https://github.com/ChernStepanov/DirtyFrag-for-dummies)
 - [xd20111/CVE-2026-43284](https://github.com/xd20111/CVE-2026-43284)
 - [grabesec/XCP_ng_CVE-2026-43284_tester](https://github.com/grabesec/XCP_ng_CVE-2026-43284_tester)
-- [whosfault/CVE-2026-43284](https://github.com/whosfault/CVE-2026-43284)
 - [LucasPDiniz/CVE-2026-43284](https://github.com/LucasPDiniz/CVE-2026-43284)
 - [kuniyal08/Dirty-Frag-CVE-2026-43284](https://github.com/kuniyal08/Dirty-Frag-CVE-2026-43284)
 - [Koshmare-Blossom/DirtyFrag-go](https://github.com/Koshmare-Blossom/DirtyFrag-go)
@@ -24872,6 +24872,7 @@
 - [Lux-J/CVE-2024-50379-exp](https://github.com/Lux-J/CVE-2024-50379-exp)
 - [pwnosec/CVE-2024-50379](https://github.com/pwnosec/CVE-2024-50379)
 - [thunww/CVE-2024-50379](https://github.com/thunww/CVE-2024-50379)
+- [azilRababe/CVE-2024-50379](https://github.com/azilRababe/CVE-2024-50379)
 
 ### CVE-2024-50395 (2024-11-22)
 
@@ -26021,13 +26022,6 @@
 </code>
 
 - [RandomRobbieBF/CVE-2024-56059](https://github.com/RandomRobbieBF/CVE-2024-56059)
-
-### CVE-2024-56064 (2024-12-31)
-
-<code>Unrestricted Upload of File with Dangerous Type vulnerability in azzaroco WP SuperBackup indeed-wp-superbackup allows Upload a Web Shell to a Web Server.This issue affects WP SuperBackup: from n/a through &lt;= 2.3.3.
-</code>
-
-- [RandomRobbieBF/CVE-2024-56064](https://github.com/RandomRobbieBF/CVE-2024-56064)
 
 ### CVE-2024-56071 (2024-12-31)
 
@@ -30813,6 +30807,13 @@
 
 - [CalfCrusher/CVE-2023-31853](https://github.com/CalfCrusher/CVE-2023-31853)
 
+### CVE-2023-31902 (2023-05-17)
+
+<code>RPA Technology Mobile Mouse 3.6.0.4 is vulnerable to Remote Code Execution (RCE).
+</code>
+
+- [xl337x/CVE-2023-31902](https://github.com/xl337x/CVE-2023-31902)
+
 ### CVE-2023-32031 (2023-06-14)
 
 <code>Microsoft Exchange Server Remote Code Execution Vulnerability
@@ -34406,6 +34407,7 @@
 - [KlaasStessens/CVE-2023-46604](https://github.com/KlaasStessens/CVE-2023-46604)
 - [trnguyen03/activemq-ids-ips-lab](https://github.com/trnguyen03/activemq-ids-ips-lab)
 - [REGGYRAIDER/CVE-2023-46604-RCE](https://github.com/REGGYRAIDER/CVE-2023-46604-RCE)
+- [aelshimony-cloud/OpenWire-CVE-2023-46604-Investigation](https://github.com/aelshimony-cloud/OpenWire-CVE-2023-46604-Investigation)
 
 ### CVE-2023-46615 (2024-02-12)
 
@@ -34450,7 +34452,6 @@
 
 - [yoryio/CVE-2023-46805](https://github.com/yoryio/CVE-2023-46805)
 - [cbeek-r7/CVE-2023-46805](https://github.com/cbeek-r7/CVE-2023-46805)
-- [duy-31/CVE-2023-46805_CVE-2024-21887](https://github.com/duy-31/CVE-2023-46805_CVE-2024-21887)
 - [raminkarimkhani1996/CVE-2023-46805_CVE-2024-21887](https://github.com/raminkarimkhani1996/CVE-2023-46805_CVE-2024-21887)
 - [seajaysec/Ivanti-Connect-Around-Scan](https://github.com/seajaysec/Ivanti-Connect-Around-Scan)
 - [Chocapikk/CVE-2023-46805](https://github.com/Chocapikk/CVE-2023-46805)
@@ -34885,13 +34886,6 @@
 </code>
 
 - [louiselalanne/CVE-2023-49314](https://github.com/louiselalanne/CVE-2023-49314)
-
-### CVE-2023-49339 (2024-02-13)
-
-<code>Ellucian Banner 9.17 allows Insecure Direct Object Reference (IDOR) via a modified bannerId to the /StudentSelfService/ssb/studentCard/retrieveData endpoint.
-</code>
-
-- [3zizme/CVE-2023-49339](https://github.com/3zizme/CVE-2023-49339)
 
 ### CVE-2023-49367 (2025-09-18)
 
@@ -64226,7 +64220,6 @@
 - [jrrdev/cve-2017-5638](https://github.com/jrrdev/cve-2017-5638)
 - [opt9/Strutshock](https://github.com/opt9/Strutshock)
 - [falcon-lnhg/StrutsShell](https://github.com/falcon-lnhg/StrutsShell)
-- [bhagdave/CVE-2017-5638](https://github.com/bhagdave/CVE-2017-5638)
 - [jas502n/st2-046-poc](https://github.com/jas502n/st2-046-poc)
 - [KarzsGHR/S2-046_S2-045_POC](https://github.com/KarzsGHR/S2-046_S2-045_POC)
 - [gsfish/S2-Reaper](https://github.com/gsfish/S2-Reaper)
