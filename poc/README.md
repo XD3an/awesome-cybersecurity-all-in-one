@@ -20,8 +20,6 @@
 <code>In adbd_tls_verify_cert of auth.cpp, there is a possible bypass of wireless ADB mutual authentication due to a logic error in the code. This could lead to remote (proximal/adjacent) code execution as the shell user with no additional execution privileges needed. User interaction is not needed for exploitation.
 </code>
 
-- [devtint/CVE-2026-0073](https://github.com/devtint/CVE-2026-0073)
-- [adityatelange/poc-CVE-2026-0073](https://github.com/adityatelange/poc-CVE-2026-0073)
 - [MartinPSDev/CVE-2026-0073-Android-ADBD-bypass-POC](https://github.com/MartinPSDev/CVE-2026-0073-Android-ADBD-bypass-POC)
 - [unnaim/adbHijacker](https://github.com/unnaim/adbHijacker)
 - [0xBlackash/CVE-2026-0073](https://github.com/0xBlackash/CVE-2026-0073)
@@ -1186,6 +1184,7 @@
 
 - [EQSTLab/CVE-2026-21858](https://github.com/EQSTLab/CVE-2026-21858)
 - [Bannt08/Research-CVE-2026-21858](https://github.com/Bannt08/Research-CVE-2026-21858)
+- [Fomovet/cve-2026-21858](https://github.com/Fomovet/cve-2026-21858)
 
 ### CVE-2026-21876 (2026-01-08)
 
@@ -1315,7 +1314,6 @@
 </code>
 
 - [aa022/CVE-2026-23918-Passive-Audit](https://github.com/aa022/CVE-2026-23918-Passive-Audit)
-- [CYFARE/CVE-2026-23918-Apache-HTTP-Server-DoubleFree-PoC](https://github.com/CYFARE/CVE-2026-23918-Apache-HTTP-Server-DoubleFree-PoC)
 - [alt3kx/CVE-2026-23918](https://github.com/alt3kx/CVE-2026-23918)
 - [insomnisec/Detections-CVE-2026-23918](https://github.com/insomnisec/Detections-CVE-2026-23918)
 - [striga-ai/CVE-2026-23918](https://github.com/striga-ai/CVE-2026-23918)
@@ -1386,12 +1384,12 @@
 
 - [tracyliving606/RegPwn](https://github.com/tracyliving606/RegPwn)
 
-### CVE-2026-24332 (2026-01-22)
+### CVE-2026-24688 (2026-01-27)
 
-<code>Discord through 2026-01-16 allows gathering information about whether a user's client state is Invisible (and not actually offline) because the response to a WebSocket API request includes the user in the presences array (with &quot;status&quot;: &quot;offline&quot;), whereas offline users are omitted from the presences array. This is arguably inconsistent with the UI description of Invisible as &quot;You will appear offline.&quot;
+<code>pypdf is a free and open-source pure-python PDF library. An attacker who uses an infinite loop vulnerability that is present in versions prior to 6.6.2 can craft a PDF which leads to an infinite loop. This requires accessing the outlines/bookmarks. This has been fixed in pypdf 6.6.2. If projects cannot upgrade yet, consider applying the changes from PR #3610 manually.
 </code>
 
-- [WhiteTPoison100/Discord-CVE-2026-24332-demo](https://github.com/WhiteTPoison100/Discord-CVE-2026-24332-demo)
+- [Fomovet/cve-2026-24688](https://github.com/Fomovet/cve-2026-24688)
 
 ### CVE-2026-24849 (2026-02-25)
 
@@ -1467,6 +1465,13 @@
 
 - [Hann1bl3L3ct3r/FUXAPWN](https://github.com/Hann1bl3L3ct3r/FUXAPWN)
 
+### CVE-2026-26114 (2026-03-10)
+
+<code>Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.
+</code>
+
+- [huynambka/cve-2026-26114](https://github.com/huynambka/cve-2026-26114)
+
 ### CVE-2026-26179 (2026-04-14)
 
 <code>Double free in Windows Kernel allows an authorized attacker to elevate privileges locally.
@@ -1480,13 +1485,6 @@
 </code>
 
 - [dhawaldesai/agentic-ioc-scanner](https://github.com/dhawaldesai/agentic-ioc-scanner)
-
-### CVE-2026-26336 (2026-02-19)
-
-<code>Hyland Alfresco allows unauthenticated attackers to read arbitrary files from protected directories (like WEB-INF) via the &quot;/share/page/resource/&quot; endpoint, thus leading to the disclosure of sensitive configuration files.
-</code>
-
-- [CEAarab/CVE-2026-26336-PoC](https://github.com/CEAarab/CVE-2026-26336-PoC)
 
 ### CVE-2026-26555
 - [horrister/axios-supply-chain-cve-2026-26555](https://github.com/horrister/axios-supply-chain-cve-2026-26555)
@@ -1717,7 +1715,6 @@
 - [6abc/Copy-Fail-CVE-2026-31431-dirty-frag-CVE-2026-43284](https://github.com/6abc/Copy-Fail-CVE-2026-31431-dirty-frag-CVE-2026-43284)
 - [Liverwortenuresis371/copyfail-rs](https://github.com/Liverwortenuresis371/copyfail-rs)
 - [itsystem/afalg-check](https://github.com/itsystem/afalg-check)
-- [sgkdev/page_inject](https://github.com/sgkdev/page_inject)
 - [luoqianlin/copyfail-c](https://github.com/luoqianlin/copyfail-c)
 - [Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail](https://github.com/Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail)
 - [philfry/cve-2026-31431-ftrace](https://github.com/philfry/cve-2026-31431-ftrace)
@@ -1823,6 +1820,13 @@
 </code>
 
 - [SnailSploit/CVE-2026-31899](https://github.com/SnailSploit/CVE-2026-31899)
+
+### CVE-2026-32202 (2026-04-14)
+
+<code>Protection mechanism failure in Windows Shell allows an unauthorized attacker to perform spoofing over a network.
+</code>
+
+- [alexlanum/CVE-2026-32202](https://github.com/alexlanum/CVE-2026-32202)
 
 ### CVE-2026-32488 (2026-03-25)
 
@@ -2367,6 +2371,13 @@
 
 - [CatchCatOoO/CVE-2026-39636-vulnerability-exp](https://github.com/CatchCatOoO/CVE-2026-39636-vulnerability-exp)
 
+### CVE-2026-39676 (2026-04-08)
+
+<code>Missing Authorization vulnerability in Shahjada Download Manager download-manager allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Download Manager: from n/a through &lt;= 3.3.52.
+</code>
+
+- [OkamiSpade/Cve-2026-39676](https://github.com/OkamiSpade/Cve-2026-39676)
+
 ### CVE-2026-39808 (2026-04-14)
 
 <code>A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 4.4.0 through 4.4.8 may allow attacker to execute unauthorized code or commands via &lt;insert attack vector here&gt;
@@ -2503,7 +2514,6 @@
 - [hnytgl/CVE-2026-41089](https://github.com/hnytgl/CVE-2026-41089)
 - [ADScanPro/CVE-2026-41089-LongLogon](https://github.com/ADScanPro/CVE-2026-41089-LongLogon)
 - [jenniferreire26/CVE-2026-41089](https://github.com/jenniferreire26/CVE-2026-41089)
-- [SpiralSealFill/CVE-2026-41089-hub](https://github.com/SpiralSealFill/CVE-2026-41089-hub)
 
 ### CVE-2026-41091 (2026-05-20)
 
@@ -2560,13 +2570,6 @@
 </code>
 
 - [daehyuh/CVE-2026-41729](https://github.com/daehyuh/CVE-2026-41729)
-
-### CVE-2026-41900 (2026-05-08)
-
-<code>OpenLearnX is an open-source, decentralized learning and assessment platform. Prior to version 2.0.3, a remote code execution (RCE) vulnerability was identified in the OpenLearnX code execution environment, allowing sandbox escape and arbitrary command execution. This issue has been patched in version 2.0.3.
-</code>
-
-- [Christbowel/CVE-2026-41900-POC](https://github.com/Christbowel/CVE-2026-41900-POC)
 
 ### CVE-2026-41901 (2026-05-12)
 
@@ -2868,6 +2871,13 @@
 </code>
 
 - [covepseng/cve-2026-43515-poc](https://github.com/covepseng/cve-2026-43515-poc)
+
+### CVE-2026-43655 (2026-05-11)
+
+<code>An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in iOS 26.5 and iPadOS 26.5, macOS Tahoe 26.5, tvOS 26.5, watchOS 26.5. An app may be able to cause unexpected system termination or read kernel memory.
+</code>
+
+- [Somisomair/CVE-2026-43655-AppleM2ScalerCSCDriver-UAF](https://github.com/Somisomair/CVE-2026-43655-AppleM2ScalerCSCDriver-UAF)
 
 ### CVE-2026-44166 (2026-05-12)
 
@@ -3272,6 +3282,9 @@
 ### CVE-2026-47670
 - [error-inside/CVE-2026-47670](https://github.com/error-inside/CVE-2026-47670)
 
+### CVE-2026-47729
+- [0xBlackash/CVE-2026-47729](https://github.com/0xBlackash/CVE-2026-47729)
+
 ### CVE-2026-48017 (2026-06-15)
 
 <code>DbGate is cross-platform database manager. In versions 7.1.8 and prior, the POST /runners/load-reader endpoint in DbGate accepts a functionName parameter that is directly interpolated into a JavaScript code template without any sanitization or validation. An authenticated user (with basic access, no special permissions required) can inject arbitrary JavaScript code that executes on the server with full process privileges, bypassing the require=null sandbox restriction. An authenticated user with basic access (no admin role, no run-shell-script permission required) can: execute arbitrary OS commands on the DbGate server with the privileges of the Node.js process, read/write any file accessible to the process, pivot to connected databases by reading connection credentials from DbGate's storage, and compromise the host system - in Docker deployments, this typically means root access within the container.
@@ -3396,6 +3409,13 @@
 
 - [webshellseo8/CVE-2026-48908-POC](https://github.com/webshellseo8/CVE-2026-48908-POC)
 
+### CVE-2026-48909 (2026-06-20)
+
+<code>SP LMS (com_splms) &lt; 4.1.4 by JoomShaper deserializes user-controlled cookie data without validation, enabling an unauthenticated remote attacker to execute arbitrary code on the server.
+</code>
+
+- [Is4yev/CVE-2026-48909](https://github.com/Is4yev/CVE-2026-48909)
+
 ### CVE-2026-48962 (2026-05-27)
 
 <code>IO::Compress versions before 2.220 for Perl can execute arbitrary code in File::GlobMapper via an attacker-controlled output glob.\n\n_parseOutputGlob() wraps the caller-supplied output glob string in double quotes and stores it in the parser state; _getFiles() then runs the stored expression through eval STRING. A literal double quote in the output glob closes the dquote wrapper, and the characters that follow are evaluated as Perl.\n\nArbitrary Perl in the output glob executes at the calling process's privilege.
@@ -3501,6 +3521,7 @@
 </code>
 
 - [izxci/CVE-2026-49777](https://github.com/izxci/CVE-2026-49777)
+- [xxconi/CVE-2026-49777-CVE-2026-10735](https://github.com/xxconi/CVE-2026-49777-CVE-2026-10735)
 
 ### CVE-2026-49943 (2026-06-02)
 
@@ -6381,6 +6402,13 @@
 
 - [ciscocamelo/CVE-2025-13401-XSS-Stored](https://github.com/ciscocamelo/CVE-2025-13401-XSS-Stored)
 
+### CVE-2025-13407 (2025-12-24)
+
+<code>The Gravity Forms WordPress plugin before 2.9.23.1 does not properly prevent users from uploading dangerous files through its chunked upload functionality, allowing attackers to upload PHP files to affected sites and achieve Remote Code Execution, granted they can discover or enumerate the upload path.
+</code>
+
+- [xxconi/CVE-2025-13407](https://github.com/xxconi/CVE-2025-13407)
+
 ### CVE-2025-13425 (2025-11-20)
 
 <code>A bug in the filesystem traversal fallback path causes fs/diriterate/diriterate.go:Next() to overindex an empty slice when ReadDir returns nil for an empty directory, resulting in a panic (index out of range) and an application crash (denial of service) in OSV-SCALIBR.
@@ -7194,7 +7222,7 @@
 - [r0binak/CVE-2025-23266](https://github.com/r0binak/CVE-2025-23266)
 - [Mindasy/cve-2025-23266-migration-bypass](https://github.com/Mindasy/cve-2025-23266-migration-bypass)
 - [mrk336/CVE-2025-23266](https://github.com/mrk336/CVE-2025-23266)
-- [ForeverLX/security-research](https://github.com/ForeverLX/security-research)
+- [CR1MS0N-Operator/security-research](https://github.com/CR1MS0N-Operator/security-research)
 
 ### CVE-2025-23339 (2025-09-24)
 
@@ -7288,6 +7316,7 @@
 - [Untouchable17/CVE-2025-24054](https://github.com/Untouchable17/CVE-2025-24054)
 - [SecurityLayer404/CVE-2025-24054-24071---Metasploit-Module](https://github.com/SecurityLayer404/CVE-2025-24054-24071---Metasploit-Module)
 - [simantchaudhari/CVE-2025-24054-PoC](https://github.com/simantchaudhari/CVE-2025-24054-PoC)
+- [Fomovet/cve-2025-24054](https://github.com/Fomovet/cve-2025-24054)
 
 ### CVE-2025-24071 (2025-03-11)
 
@@ -7315,6 +7344,7 @@
 - [Abdelrahman0Sayed/CVE-2025-24071](https://github.com/Abdelrahman0Sayed/CVE-2025-24071)
 - [fsoc-ghost-0x/Fsociety-CVE-2025-24071-NTLM-Coercion](https://github.com/fsoc-ghost-0x/Fsociety-CVE-2025-24071-NTLM-Coercion)
 - [hyperchk/CVE-2025-24071-POC](https://github.com/hyperchk/CVE-2025-24071-POC)
+- [Fomovet/cve-2025-24071](https://github.com/Fomovet/cve-2025-24071)
 
 ### CVE-2025-24076 (2025-03-11)
 
@@ -7587,6 +7617,7 @@
 - [rippsec/CVE-2025-24893-XWiki-SSTI-RCE](https://github.com/rippsec/CVE-2025-24893-XWiki-SSTI-RCE)
 - [hasecto/CVE-2025-24893](https://github.com/hasecto/CVE-2025-24893)
 - [vasilysaint/CVE-2025-24893](https://github.com/vasilysaint/CVE-2025-24893)
+- [Fomovet/cve-2025-24893](https://github.com/Fomovet/cve-2025-24893)
 
 ### CVE-2025-24963 (2025-02-04)
 
@@ -8400,6 +8431,7 @@
 </code>
 
 - [Otsmane-Ahmed/cve-2025-29384-poc](https://github.com/Otsmane-Ahmed/cve-2025-29384-poc)
+- [Fomovet/cve-2025-29384](https://github.com/Fomovet/cve-2025-29384)
 
 ### CVE-2025-29448 (2025-05-07)
 
@@ -8627,6 +8659,7 @@
 - [bk-security/auth-header-trust-rules](https://github.com/bk-security/auth-header-trust-rules)
 - [gitgudKrish/cve-2025-29927-nextjs](https://github.com/gitgudKrish/cve-2025-29927-nextjs)
 - [SwapnilDeshpande/cve-2025-29927-lab](https://github.com/SwapnilDeshpande/cve-2025-29927-lab)
+- [Fomovet/cve-2025-29927](https://github.com/Fomovet/cve-2025-29927)
 
 ### CVE-2025-29943 (2026-01-16)
 
@@ -9251,6 +9284,7 @@
 - [danilo1992-sys/CVE-2025-32463](https://github.com/danilo1992-sys/CVE-2025-32463)
 - [0xBlackash/CVE-2025-32463](https://github.com/0xBlackash/CVE-2025-32463)
 - [0xzap/CVE-2025-32463](https://github.com/0xzap/CVE-2025-32463)
+- [Fomovet/cve-2025-32463](https://github.com/Fomovet/cve-2025-32463)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -10567,6 +10601,7 @@
 - [vignesh21-git/CVE-2025-48384-submodule](https://github.com/vignesh21-git/CVE-2025-48384-submodule)
 - [DayDayDayDreaming/backup-exec-cve-48384](https://github.com/DayDayDayDreaming/backup-exec-cve-48384)
 - [sathish46-lab/CVE-2025-48384-submodule](https://github.com/sathish46-lab/CVE-2025-48384-submodule)
+- [Fomovet/cve-2025-48384](https://github.com/Fomovet/cve-2025-48384)
 
 ### CVE-2025-48461 (2025-06-24)
 
@@ -12402,7 +12437,6 @@
 - [SpeatX/React2Shell-CVE-2025-55182](https://github.com/SpeatX/React2Shell-CVE-2025-55182)
 - [w3nch/CVE-2025-55182-in-go](https://github.com/w3nch/CVE-2025-55182-in-go)
 - [Jenderal92/CVE-2025-55182-React2shell](https://github.com/Jenderal92/CVE-2025-55182-React2shell)
-- [lvx9101-ux/CVE-2025-55182](https://github.com/lvx9101-ux/CVE-2025-55182)
 - [Jeanback1/react-rsc-cve-2025-55182-lab](https://github.com/Jeanback1/react-rsc-cve-2025-55182-lab)
 - [sonnycroco/HTB-Reactor-Linux-Machine---Walkthrough](https://github.com/sonnycroco/HTB-Reactor-Linux-Machine---Walkthrough)
 - [LuizHenz/PoC-CVE-2025-55182](https://github.com/LuizHenz/PoC-CVE-2025-55182)
@@ -12416,6 +12450,7 @@
 - [olezhaku/react2shell-toolkit](https://github.com/olezhaku/react2shell-toolkit)
 - [cc3305/CVE-2025-55182](https://github.com/cc3305/CVE-2025-55182)
 - [SentinelXofficial/CVE-2025-55182](https://github.com/SentinelXofficial/CVE-2025-55182)
+- [Fomovet/cve-2025-55182](https://github.com/Fomovet/cve-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -14841,6 +14876,7 @@
 - [Victorhugofariasvieir66/relatorio-n8n.md](https://github.com/Victorhugofariasvieir66/relatorio-n8n.md)
 - [h3raklez/CVE-2025-68613](https://github.com/h3raklez/CVE-2025-68613)
 - [canpilayda/n8n-RCE-CVE-2025-68613](https://github.com/canpilayda/n8n-RCE-CVE-2025-68613)
+- [azilRababe/CVE-2025-68613](https://github.com/azilRababe/CVE-2025-68613)
 
 ### CVE-2025-68621 (2026-02-06)
 
@@ -15749,6 +15785,7 @@
 - [vettrivel007/CVE-2024-1086](https://github.com/vettrivel007/CVE-2024-1086)
 - [ClaraSto/CVE-2024-1086_Ausarbeitung](https://github.com/ClaraSto/CVE-2024-1086_Ausarbeitung)
 - [b1nhack/CVE-2024-1086](https://github.com/b1nhack/CVE-2024-1086)
+- [Luisbuilds-data/cve-2024-1086-writeup](https://github.com/Luisbuilds-data/cve-2024-1086-writeup)
 
 ### CVE-2024-1112 (2024-01-31)
 
@@ -16305,7 +16342,6 @@
 - [CyprianAtsyor/letsdefend-cve2024-3400-case-study](https://github.com/CyprianAtsyor/letsdefend-cve2024-3400-case-study)
 - [CyberBibs/SOC274---Palo-Alto-Networks-PAN-OS-Command-Injection-Vulnerability-Exploitation-CVE-2024-3400-](https://github.com/CyberBibs/SOC274---Palo-Alto-Networks-PAN-OS-Command-Injection-Vulnerability-Exploitation-CVE-2024-3400-)
 - [Yafiah-Darwesh/cs50-cyber-paloalto-oauth](https://github.com/Yafiah-Darwesh/cs50-cyber-paloalto-oauth)
-- [GhassanSabir/CVE-2024-3400-poc](https://github.com/GhassanSabir/CVE-2024-3400-poc)
 - [Zedocun/PAN-OS-CVE-2024-3400-Command-Injection-Investigation](https://github.com/Zedocun/PAN-OS-CVE-2024-3400-Command-Injection-Investigation)
 - [wa6n3r/CVE-2024-3400](https://github.com/wa6n3r/CVE-2024-3400)
 - [P4rC3L/Global-Protect_VPN_Vuln](https://github.com/P4rC3L/Global-Protect_VPN_Vuln)
@@ -28097,7 +28133,6 @@
 </code>
 
 - [yoryio/CVE-2023-7028](https://github.com/yoryio/CVE-2023-7028)
-- [Esonhugh/gitlab_honeypot](https://github.com/Esonhugh/gitlab_honeypot)
 - [Shimon03/CVE-2023-7028-Account-Take-Over-Gitlab](https://github.com/Shimon03/CVE-2023-7028-Account-Take-Over-Gitlab)
 - [thanhlam-attt/CVE-2023-7028](https://github.com/thanhlam-attt/CVE-2023-7028)
 - [Trackflaw/CVE-2023-7028-Docker](https://github.com/Trackflaw/CVE-2023-7028-Docker)
@@ -31992,6 +32027,13 @@
 
 - [tagomaru/CVE-2023-36281](https://github.com/tagomaru/CVE-2023-36281)
 
+### CVE-2023-36308 (2023-09-05)
+
+<code>disintegration Imaging 1.6.2 allows attackers to cause a panic (because of an integer index out of range during a Grayscale call) via a crafted TIFF file to the scan function of scanner.go. NOTE: it is unclear whether there are common use cases in which this panic could have any security consequence
+</code>
+
+- [vtemlabs/imaging](https://github.com/vtemlabs/imaging)
+
 ### CVE-2023-36319 (2023-09-19)
 
 <code>File Upload vulnerability in Openupload Stable v.0.4.3 allows a remote attacker to execute arbitrary code via the action parameter of the compress-inc.php file.
@@ -34070,13 +34112,6 @@
 </code>
 
 - [hex0punk/cont-flood-poc](https://github.com/hex0punk/cont-flood-poc)
-
-### CVE-2023-45471 (2023-10-20)
-
-<code>The QAD Search Server is vulnerable to Stored Cross-Site Scripting (XSS) in versions up to, and including, 1.0.0.315 due to insufficient checks on indexes. This makes it possible for unauthenticated attackers to create a new index and inject a malicious web script into its name, that will execute whenever a user accesses the search page.
-</code>
-
-- [aptx0x/CVE-2023-45471](https://github.com/aptx0x/CVE-2023-45471)
 
 ### CVE-2023-45503 (2024-04-15)
 
@@ -48835,7 +48870,6 @@
 - [ph0lk3r/anti-jndi](https://github.com/ph0lk3r/anti-jndi)
 - [bigsizeme/Log4j-check](https://github.com/bigsizeme/Log4j-check)
 - [pedrohavay/exploit-CVE-2021-44228](https://github.com/pedrohavay/exploit-CVE-2021-44228)
-- [0xRyan/log4j-nullroute](https://github.com/0xRyan/log4j-nullroute)
 - [fireeye/CVE-2021-44228](https://github.com/fireeye/CVE-2021-44228)
 - [fullhunt/log4j-scan](https://github.com/fullhunt/log4j-scan)
 - [rubo77/log4j_checker_beta](https://github.com/rubo77/log4j_checker_beta)
@@ -69484,7 +69518,6 @@
 - [HevenTafese/Penetration-Testing-Walkthrough-Hacksudo-Thor](https://github.com/HevenTafese/Penetration-Testing-Walkthrough-Hacksudo-Thor)
 - [FacundoMfernandez/pentesting-obioba](https://github.com/FacundoMfernandez/pentesting-obioba)
 - [R3fr4kt/Shocker-TJNULL-OSCP-](https://github.com/R3fr4kt/Shocker-TJNULL-OSCP-)
-- [Reflyzal106/Cve-2014-Error-What-Is-The-Cve-2014-6271-Bash-Vulnerability](https://github.com/Reflyzal106/Cve-2014-Error-What-Is-The-Cve-2014-6271-Bash-Vulnerability)
 
 ### CVE-2014-6287 (2014-10-07)
 
