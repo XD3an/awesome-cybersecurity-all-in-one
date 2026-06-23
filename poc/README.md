@@ -20,7 +20,6 @@
 <code>In adbd_tls_verify_cert of auth.cpp, there is a possible bypass of wireless ADB mutual authentication due to a logic error in the code. This could lead to remote (proximal/adjacent) code execution as the shell user with no additional execution privileges needed. User interaction is not needed for exploitation.
 </code>
 
-- [MartinPSDev/CVE-2026-0073-Android-ADBD-bypass-POC](https://github.com/MartinPSDev/CVE-2026-0073-Android-ADBD-bypass-POC)
 - [0xBlackash/CVE-2026-0073](https://github.com/0xBlackash/CVE-2026-0073)
 - [xqi1337/poc-CVE-2026-0073](https://github.com/xqi1337/poc-CVE-2026-0073)
 - [tc4dy/CVE-2026-0073-PoC-Exploit](https://github.com/tc4dy/CVE-2026-0073-PoC-Exploit)
@@ -1175,6 +1174,13 @@
 
 - [Vikramaditya015/samsung-android-lpe](https://github.com/Vikramaditya015/samsung-android-lpe)
 
+### CVE-2026-21018 (2026-05-13)
+
+<code>Out-of-bounds write in SveService prior to SMR May-2026 Release 1 allows local privileged attackers to execute arbitrary code.
+</code>
+
+- [Filipemendonca1978/CVE-2026-21018](https://github.com/Filipemendonca1978/CVE-2026-21018)
+
 ### CVE-2026-21510 (2026-02-10)
 
 <code>Protection mechanism failure in Windows Shell allows an unauthorized attacker to bypass a security feature over a network.
@@ -1739,8 +1745,6 @@
 - [gagaltotal/cve-2026-31431-copy-fail](https://github.com/gagaltotal/cve-2026-31431-copy-fail)
 - [Mr-bv/Copy-fail-CVE-2026-31431-Exploit-in-C](https://github.com/Mr-bv/Copy-fail-CVE-2026-31431-Exploit-in-C)
 - [adilkurtulmus/linux-copy-fail-CVE-2026-31431](https://github.com/adilkurtulmus/linux-copy-fail-CVE-2026-31431)
-- [Vatson112/deny-af-alg-bpf](https://github.com/Vatson112/deny-af-alg-bpf)
-- [kwilck/copyfail](https://github.com/kwilck/copyfail)
 - [pvpaulo01/cve-2026-31431](https://github.com/pvpaulo01/cve-2026-31431)
 - [tang-yikai/copy-fail-mitigation-with-bpftrace](https://github.com/tang-yikai/copy-fail-mitigation-with-bpftrace)
 - [abdelkabirouadoukou/CVE-2026-31431-Analysis-and-Fix](https://github.com/abdelkabirouadoukou/CVE-2026-31431-Analysis-and-Fix)
@@ -2370,6 +2374,9 @@
 
 - [MGTx2/CVE-2026-39107](https://github.com/MGTx2/CVE-2026-39107)
 
+### CVE-2026-39253
+- [timtimxs/CVE-2026-39253-Advisory](https://github.com/timtimxs/CVE-2026-39253-Advisory)
+
 ### CVE-2026-39259
 - [yousif-IQ/CVE-2026-39259](https://github.com/yousif-IQ/CVE-2026-39259)
 
@@ -2473,6 +2480,7 @@
 - [ercihan/CVE-2026-40369](https://github.com/ercihan/CVE-2026-40369)
 - [piffd0s/ntoskrnl-metadata](https://github.com/piffd0s/ntoskrnl-metadata)
 - [0xBlackash/CVE-2026-40369](https://github.com/0xBlackash/CVE-2026-40369)
+- [CCELEND/CVE-2026-40369](https://github.com/CCELEND/CVE-2026-40369)
 
 ### CVE-2026-40564 (2026-05-26)
 
@@ -2672,6 +2680,13 @@
 - [HAERIN-L/poc_cve-2026-42208](https://github.com/HAERIN-L/poc_cve-2026-42208)
 - [yendpoint/CVE-2026-42208-LAB](https://github.com/yendpoint/CVE-2026-42208-LAB)
 
+### CVE-2026-42221 (2026-05-04)
+
+<code>Nginx UI is a web user interface for the Nginx web server. From version 2.0.0 to before version 2.3.8, an unauthenticated network attacker can claim the initial administrator account on a fresh nginx-ui instance during the first-run setup window. The public /api/install endpoint is reachable without authentication, and the request-encryption flow only protects payload confidentiality in transit; it does not authenticate who is allowed to perform installation. A remote attacker who reaches the service before the legitimate operator can set the admin email, username, and password, causing permanent initial-instance takeover. This issue has been patched in version 2.3.8.
+</code>
+
+- [fuchiuebusi-lab/nginx-ui-CVE-2026-42221-CVE-2026-42238-](https://github.com/fuchiuebusi-lab/nginx-ui-CVE-2026-42221-CVE-2026-42238-)
+
 ### CVE-2026-42271 (2026-05-08)
 
 <code>LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. From version 1.74.2 to before version 1.83.7, two endpoints used to preview an MCP server before saving it — POST /mcp-rest/test/connection and POST /mcp-rest/test/tools/list — accepted a full server configuration in the request body, including the command, args, and env fields used by the stdio transport. When called with a stdio configuration, the endpoints attempted to connect, which spawned the supplied command as a subprocess on the proxy host with the privileges of the proxy process. The endpoints were gated only by a valid proxy API key, with no role check. Any authenticated user — including holders of low-privilege internal-user keys — could therefore run arbitrary commands on the host. This issue has been patched in version 1.83.7.
@@ -2798,7 +2813,6 @@
 - [F2u0a0d3/CVE-2026-42945-nginx-rift-poc](https://github.com/F2u0a0d3/CVE-2026-42945-nginx-rift-poc)
 - [webdev75950-ux/nginx-rce-cve-2026-42945](https://github.com/webdev75950-ux/nginx-rce-cve-2026-42945)
 - [nu0l/NGINX-Rift](https://github.com/nu0l/NGINX-Rift)
-- [bamov970/CVE-2026-42945-Nginx-RCE-bypass-ASLR](https://github.com/bamov970/CVE-2026-42945-Nginx-RCE-bypass-ASLR)
 - [josephfelix/CVE-2026-42945-nginx-rift](https://github.com/josephfelix/CVE-2026-42945-nginx-rift)
 - [quantumworld-dpdns-io/CVE-2026-42945](https://github.com/quantumworld-dpdns-io/CVE-2026-42945)
 - [strivepan/Nginx_cve-2026-42945-scanner-gui](https://github.com/strivepan/Nginx_cve-2026-42945-scanner-gui)
@@ -11824,6 +11838,7 @@
 </code>
 
 - [Shivshantp/CVE-2025-54253-Exploit-Demo](https://github.com/Shivshantp/CVE-2025-54253-Exploit-Demo)
+- [AdityaBhatt3010/CVE-2025-54253-Inside-the-Adobe-AEM-Forms-Zero-Day](https://github.com/AdityaBhatt3010/CVE-2025-54253-Inside-the-Adobe-AEM-Forms-Zero-Day)
 - [zoomdbz/AEMPWN](https://github.com/zoomdbz/AEMPWN)
 
 ### CVE-2025-54309 (2025-07-18)
@@ -12153,7 +12168,6 @@
 - [sumanrox/rschunter](https://github.com/sumanrox/rschunter)
 - [I3r1h0n/React2Shell](https://github.com/I3r1h0n/React2Shell)
 - [zorejt/Rust_CVE-2025-55182](https://github.com/zorejt/Rust_CVE-2025-55182)
-- [MaxK9999/CVE-2025-55182](https://github.com/MaxK9999/CVE-2025-55182)
 - [Archerkong/CVE-2025-55182](https://github.com/Archerkong/CVE-2025-55182)
 - [philparzer/nextjs-react2shell-detect](https://github.com/philparzer/nextjs-react2shell-detect)
 - [yunaranyancat/CVE-2025-55182-NSE](https://github.com/yunaranyancat/CVE-2025-55182-NSE)
@@ -16481,13 +16495,6 @@
 
 - [taeseongk/CVE-2024-3690](https://github.com/taeseongk/CVE-2024-3690)
 
-### CVE-2024-3721 (2024-04-13)
-
-<code>Eine kritische Schwachstelle wurde in TBK DVR-4104 and DVR-4216 bis 20240412 gefunden. Betroffen davon ist ein unbekannter Prozess der Datei /device.rsp?opt=sys&amp;cmd=___S_O_S_T_R_E_A_MAX___. Mittels dem Manipulieren des Arguments mdb/mdc mit unbekannten Daten kann eine os command injection-Schwachstelle ausgenutzt werden. Die Umsetzung des Angriffs kann dabei über das Netzwerk erfolgen. Der Exploit steht zur öffentlichen Verfügung.
-</code>
-
-- [bytecategory/homeip](https://github.com/bytecategory/homeip)
-
 ### CVE-2024-3806 (2024-05-09)
 
 <code>The Porto theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 7.1.0 via the 'porto_ajax_posts' function. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where php file type can be uploaded and included.
@@ -18623,6 +18630,7 @@
 <code>The linkID plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check when including the 'phpinfo' function in all versions up to, and including, 0.1.2. This makes it possible for unauthenticated attackers to read configuration settings and predefined variables on the site's server. The plugin does not need to be activated for the vulnerability to be exploited.
 </code>
 
+- [RandomRobbieBF/CVE-2024-12542](https://github.com/RandomRobbieBF/CVE-2024-12542)
 - [Nxploited/CVE-2024-12542-PoC](https://github.com/Nxploited/CVE-2024-12542-PoC)
 
 ### CVE-2024-12558 (2024-12-21)
@@ -43178,13 +43186,6 @@
 
 - [ShaikUsaf/packages_apps_Bluetooth_AOSP10_r33_CVE-2021-0329](https://github.com/ShaikUsaf/packages_apps_Bluetooth_AOSP10_r33_CVE-2021-0329)
 
-### CVE-2021-0337 (2021-02-10)
-
-<code>In moveInMediaStore of FileSystemProvider.java, there is a possible file exposure due to stale metadata. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-8.1 Android-9 Android-10 Android-11Android ID: A-157474195
-</code>
-
-- [ShaikUsaf/frameworks_base_AOSP10_r33_CVE-2021-0337](https://github.com/ShaikUsaf/frameworks_base_AOSP10_r33_CVE-2021-0337)
-
 ### CVE-2021-0339 (2021-02-10)
 
 <code>In loadAnimation of WindowContainer.java, there is a possible way to keep displaying a malicious app while a target app is brought to the foreground. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-10 Android-8.1 Android-9Android ID: A-145728687
@@ -43249,13 +43250,6 @@
 
 - [Trinadh465/platform_art_AOSP10_r33_CVE-2021-0511](https://github.com/Trinadh465/platform_art_AOSP10_r33_CVE-2021-0511)
 
-### CVE-2021-0513 (2021-06-21)
-
-<code>In deleteNotificationChannel and related functions of NotificationManagerService.java, there is a possible permission bypass due to improper state validation. This could lead to local escalation of privilege via hidden services with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-9 Android-10 Android-11 Android-8.1Android ID: A-156090809
-</code>
-
-- [nanopathi/framework_base_AOSP10_r33_CVE-2021-0513](https://github.com/nanopathi/framework_base_AOSP10_r33_CVE-2021-0513)
-
 ### CVE-2021-0516 (2021-06-21)
 
 <code>In p2p_process_prov_disc_req of p2p_pd.c, there is a possible out of bounds read and write due to a use after free. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-8.1 Android-9 Android-10Android ID: A-181660448
@@ -43284,13 +43278,6 @@
 
 - [Trinadh465/System_bt_AOSP10_r33_CVE-2021-0589](https://github.com/Trinadh465/System_bt_AOSP10_r33_CVE-2021-0589)
 - [Satheesh575555/system_bt_AOSP10_r33_CVE-2021-0589](https://github.com/Satheesh575555/system_bt_AOSP10_r33_CVE-2021-0589)
-
-### CVE-2021-0705 (2021-10-22)
-
-<code>In sanitizeSbn of NotificationManagerService.java, there is a possible way to keep service running in foreground and keep granted permissions due to Bypass of Background Service Restrictions. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-10Android ID: A-185388103
-</code>
-
-- [Trinadh465/frameworks_base_AOSP10_r33_CVE-2021-0705](https://github.com/Trinadh465/frameworks_base_AOSP10_r33_CVE-2021-0705)
 
 ### CVE-2021-0954 (2021-12-15)
 
@@ -43855,6 +43842,13 @@
 </code>
 
 - [riptl/cve-2021-3449](https://github.com/riptl/cve-2021-3449)
+
+### CVE-2021-3450 (2021-03-25)
+
+<code>The X509_V_FLAG_X509_STRICT flag enables additional security checks of the certificates present in a certificate chain. It is not set by default. Starting from OpenSSL version 1.1.1h a check to disallow certificates in the chain that have explicitly encoded elliptic curve parameters was added as an additional strict check. An error in the implementation of this check meant that the result of a previous check to confirm that certificates in the chain are valid CA certificates was overwritten. This effectively bypasses the check that non-CA certificates must not be able to issue other certificates. If a &quot;purpose&quot; has been configured then there is a subsequent opportunity for checks that the certificate is a valid CA. All of the named &quot;purpose&quot; values implemented in libcrypto perform this check. Therefore, where a purpose is set the certificate chain will still be rejected even when the strict flag has been used. A purpose is set by default in libssl client and server certificate verification routines, but it can be overridden or removed by an application. In order to be affected, an application must explicitly set the X509_V_FLAG_X509_STRICT verification flag and either not set a purpose for the certificate verification or, in the case of TLS client or server applications, override the default purpose. OpenSSL versions 1.1.1h and newer are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1k. OpenSSL 1.0.2 is not impacted by this issue. Fixed in OpenSSL 1.1.1k (Affected 1.1.1h-1.1.1j).
+</code>
+
+- [dedellix/MUT-BC-SS-01](https://github.com/dedellix/MUT-BC-SS-01)
 
 ### CVE-2021-3456 (2022-03-30)
 
@@ -47071,6 +47065,13 @@
 
 - [dievus/CVE-2021-37833](https://github.com/dievus/CVE-2021-37833)
 
+### CVE-2021-37840 (2021-08-02)
+
+<code>aaPanel through 6.8.12 allows Cross-Site WebSocket Hijacking (CSWH) involving OS commands within WebSocket messages at a ws:// URL for /webssh (the victim must have configured Terminal with at least one host). Successful exploitation depends on the browser used by a potential victim (e.g., exploitation can occur with Firefox but not Chrome).
+</code>
+
+- [EonSecurity/aapanel-ws-bypass](https://github.com/EonSecurity/aapanel-ws-bypass)
+
 ### CVE-2021-37910 (2021-11-12)
 
 <code>ASUS routers Wi-Fi protected access protocol (WPA2 and WPA3-SAE) has improper control of Interaction frequency vulnerability, an unauthenticated attacker can remotely disconnect other users' connections by sending specially crafted SAE authentication frames.
@@ -48067,6 +48068,7 @@
 - [im2sinister/CVE-2021-41773](https://github.com/im2sinister/CVE-2021-41773)
 - [a24ac1/CVE-2021-41773-PoC](https://github.com/a24ac1/CVE-2021-41773-PoC)
 - [fxdyx-a/CVE-2021-41773-POC](https://github.com/fxdyx-a/CVE-2021-41773-POC)
+- [Joapath/CVE-2021-41773](https://github.com/Joapath/CVE-2021-41773)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -48918,7 +48920,7 @@
 - [JiuBanSec/Log4j-CVE-2021-44228](https://github.com/JiuBanSec/Log4j-CVE-2021-44228)
 - [ycdxsb/Log4Shell-CVE-2021-44228-ENV](https://github.com/ycdxsb/Log4Shell-CVE-2021-44228-ENV)
 - [avwolferen/Sitecore.Solr-log4j-mitigation](https://github.com/avwolferen/Sitecore.Solr-log4j-mitigation)
-- [kek-Sec/log4j-scanner-CVE-2021-44228](https://github.com/kek-Sec/log4j-scanner-CVE-2021-44228)
+- [george-petrakis/log4j-scanner-CVE-2021-44228](https://github.com/george-petrakis/log4j-scanner-CVE-2021-44228)
 - [Camphul/log4shell-spring-framework-research](https://github.com/Camphul/log4shell-spring-framework-research)
 - [lov3r/cve-2021-44228-log4j-exploits](https://github.com/lov3r/cve-2021-44228-log4j-exploits)
 - [sinakeshmiri/log4jScan](https://github.com/sinakeshmiri/log4jScan)
@@ -52532,6 +52534,7 @@
 - [appcheck-ng/salt-rce-scanner-CVE-2020-11651-CVE-2020-11652](https://github.com/appcheck-ng/salt-rce-scanner-CVE-2020-11651-CVE-2020-11652)
 - [hardsoftsecurity/CVE-2020-11651-PoC](https://github.com/hardsoftsecurity/CVE-2020-11651-PoC)
 - [Drew-Alleman/CVE-2020-11651](https://github.com/Drew-Alleman/CVE-2020-11651)
+- [s1lentf00thold/CVE-2020-11651-Poc](https://github.com/s1lentf00thold/CVE-2020-11651-Poc)
 
 ### CVE-2020-11652 (2020-04-30)
 
