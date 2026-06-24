@@ -707,7 +707,6 @@
 <code>Ollama before 0.17.1 contains a heap out-of-bounds read vulnerability in the GGUF model loader. The /api/create endpoint accepts an attacker-supplied GGUF file in which the declared tensor offset and size exceed the file's actual length; during quantization in fs/ggml/gguf.go and server/quantization.go (WriteTo()), the server reads past the allocated heap buffer. The leaked memory contents may include environment variables, API keys, system prompts, and concurrent users' conversation data, and can be exfiltrated by uploading the resulting model artifact through the /api/push endpoint to an attacker-controlled registry. The /api/create and /api/push endpoints have no authentication in the upstream distribution. Default deployments bind to 127.0.0.1, but the documented OLLAMA_HOST=0.0.0.0 configuration is widely used in practice (large public-internet exposure observed).
 </code>
 
-- [szybnev/CVE-2026-7482](https://github.com/szybnev/CVE-2026-7482)
 - [kaleth4/CVE-2026-7482](https://github.com/kaleth4/CVE-2026-7482)
 
 ### CVE-2026-7515 (2026-06-19)
@@ -808,6 +807,8 @@
 </code>
 
 - [anyanything/CVE-2026-8461-PoC](https://github.com/anyanything/CVE-2026-8461-PoC)
+- [Y5neKO/CVE-2026-8461-EXP](https://github.com/Y5neKO/CVE-2026-8461-EXP)
+- [HORKimhab/CVE-2026-8461](https://github.com/HORKimhab/CVE-2026-8461)
 
 ### CVE-2026-8697 (2026-05-28)
 
@@ -1346,7 +1347,6 @@
 </code>
 
 - [aa022/CVE-2026-23918-Passive-Audit](https://github.com/aa022/CVE-2026-23918-Passive-Audit)
-- [alt3kx/CVE-2026-23918](https://github.com/alt3kx/CVE-2026-23918)
 - [insomnisec/Detections-CVE-2026-23918](https://github.com/insomnisec/Detections-CVE-2026-23918)
 - [striga-ai/CVE-2026-23918](https://github.com/striga-ai/CVE-2026-23918)
 - [Bencodin/CVE-2026-23918-poc](https://github.com/Bencodin/CVE-2026-23918-poc)
@@ -1756,12 +1756,8 @@
 - [Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail](https://github.com/Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail)
 - [philfry/cve-2026-31431-ftrace](https://github.com/philfry/cve-2026-31431-ftrace)
 - [ikow/CVE-2026-31431-live-code-corruption](https://github.com/ikow/CVE-2026-31431-live-code-corruption)
-- [gagaltotal/cve-2026-31431-copy-fail](https://github.com/gagaltotal/cve-2026-31431-copy-fail)
 - [Mr-bv/Copy-fail-CVE-2026-31431-Exploit-in-C](https://github.com/Mr-bv/Copy-fail-CVE-2026-31431-Exploit-in-C)
 - [adilkurtulmus/linux-copy-fail-CVE-2026-31431](https://github.com/adilkurtulmus/linux-copy-fail-CVE-2026-31431)
-- [tang-yikai/copy-fail-mitigation-with-bpftrace](https://github.com/tang-yikai/copy-fail-mitigation-with-bpftrace)
-- [abdelkabirouadoukou/CVE-2026-31431-Analysis-and-Fix](https://github.com/abdelkabirouadoukou/CVE-2026-31431-Analysis-and-Fix)
-- [julichaan/CVE-2026-31431-python-copyfail-POC](https://github.com/julichaan/CVE-2026-31431-python-copyfail-POC)
 - [guiimoraes/CVE-2026-31431](https://github.com/guiimoraes/CVE-2026-31431)
 - [Morton-Li/copy-fail-CVE-2026-31431](https://github.com/Morton-Li/copy-fail-CVE-2026-31431)
 - [OpenPixelSystems/c-copy-fail](https://github.com/OpenPixelSystems/c-copy-fail)
@@ -1817,6 +1813,7 @@
 - [1neptune/CopyFail](https://github.com/1neptune/CopyFail)
 - [zs1n/copy-fail-CVE-2026-31431](https://github.com/zs1n/copy-fail-CVE-2026-31431)
 - [t1ckprivate/CVE-2026-31431-Copy-Fail](https://github.com/t1ckprivate/CVE-2026-31431-Copy-Fail)
+- [kinryulabs/rootpacket-cve-2026-31431](https://github.com/kinryulabs/rootpacket-cve-2026-31431)
 
 ### CVE-2026-31525 (2026-04-22)
 
@@ -1921,7 +1918,6 @@
 <code>Langflow is a tool for building and deploying AI-powered agents and workflows. In versions prior to 1.9.0, the POST /api/v1/build_public_tmp/{flow_id}/flow endpoint allows building public flows without requiring authentication. When the optional data parameter is supplied, the endpoint uses attacker-controlled flow data (containing arbitrary Python code in node definitions) instead of the stored flow data from the database. This code is passed to exec() with zero sandboxing, resulting in unauthenticated remote code execution. This is distinct from CVE-2025-3248, which fixed /api/v1/validate/code by adding authentication. The build_public_tmp endpoint is designed to be unauthenticated (for public flows) but incorrectly accepts attacker-supplied flow data containing arbitrary executable code. This issue has been fixed in version 1.9.0.
 </code>
 
-- [Jorrit-VM/CVE-2026-33017](https://github.com/Jorrit-VM/CVE-2026-33017)
 - [r3nsi15/CVE-2026-33017-langflow-rce](https://github.com/r3nsi15/CVE-2026-33017-langflow-rce)
 
 ### CVE-2026-33067 (2026-03-20)
@@ -2625,7 +2621,6 @@
 - [bughunt4me/cpanelCVE-2026-41940](https://github.com/bughunt4me/cpanelCVE-2026-41940)
 - [Defacto-ridgepole254/CVE-2026-41940-Exploit-PoC](https://github.com/Defacto-ridgepole254/CVE-2026-41940-Exploit-PoC)
 - [murrez/CVE-2026-41940](https://github.com/murrez/CVE-2026-41940)
-- [thekawix/CVE-2026-41940](https://github.com/thekawix/CVE-2026-41940)
 - [branixsolutions/Security-CVE-2026-41940-cPanel-WHM-WP2](https://github.com/branixsolutions/Security-CVE-2026-41940-cPanel-WHM-WP2)
 - [acuciureanu/cpanel2shell-honeypot](https://github.com/acuciureanu/cpanel2shell-honeypot)
 - [SreejaPuthan/cpanel-control-plane-exposure-check](https://github.com/SreejaPuthan/cpanel-control-plane-exposure-check)
@@ -2953,13 +2948,6 @@
 - [BS2010-AirborneTroops/NEXT-SSRF](https://github.com/BS2010-AirborneTroops/NEXT-SSRF)
 - [GadaLuBau1337/CVE-2026-44578](https://github.com/GadaLuBau1337/CVE-2026-44578)
 
-### CVE-2026-44590 (2026-05-27)
-
-<code>Sherlock hunts down social media accounts by username across social networks. Prior to 0.16.1, the GitHub Actions workflow validate_modified_targets.yml is vulnerable to command injection via the pull_request_target trigger. Any GitHub user can execute arbitrary commands on the CI runner and exfiltrate the GITHUB_TOKEN by opening a pull request. No approval, review, or merge is required. This vulnerability is fixed in 0.16.1.
-</code>
-
-- [Astaruf/CVE-2026-44590](https://github.com/Astaruf/CVE-2026-44590)
-
 ### CVE-2026-44595
 - [ex-cal1bur/CVE-2026-44595](https://github.com/ex-cal1bur/CVE-2026-44595)
 
@@ -3092,6 +3080,13 @@
 
 - [HORKimhab/CVE-2026-45447](https://github.com/HORKimhab/CVE-2026-45447)
 - [0xBlackash/CVE-2026-45447](https://github.com/0xBlackash/CVE-2026-45447)
+
+### CVE-2026-45504 (2026-06-09)
+
+<code>Server-side request forgery (ssrf) in Microsoft Exchange Server allows an authorized attacker to elevate privileges over a network.
+</code>
+
+- [hawktrace/CVE-2026-45504](https://github.com/hawktrace/CVE-2026-45504)
 
 ### CVE-2026-45584 (2026-05-20)
 
@@ -3451,6 +3446,8 @@
 
 - [webshellseo8/CVE-2026-48908-POC](https://github.com/webshellseo8/CVE-2026-48908-POC)
 - [papageo75/CVE-2026-48908-PoC](https://github.com/papageo75/CVE-2026-48908-PoC)
+- [gagaltotal/CVE-2026-48908-SP-Page-Builder-Joomla](https://github.com/gagaltotal/CVE-2026-48908-SP-Page-Builder-Joomla)
+- [ogenich/CVE-2026-48908](https://github.com/ogenich/CVE-2026-48908)
 
 ### CVE-2026-48909 (2026-06-20)
 
@@ -3572,6 +3569,7 @@
 
 - [izxci/CVE-2026-49777](https://github.com/izxci/CVE-2026-49777)
 - [xxconi/CVE-2026-49777-CVE-2026-10735](https://github.com/xxconi/CVE-2026-49777-CVE-2026-10735)
+- [HORKimhab/CVE-Wordpress](https://github.com/HORKimhab/CVE-Wordpress)
 
 ### CVE-2026-49943 (2026-06-02)
 
@@ -3637,6 +3635,13 @@
 
 ### CVE-2026-52885
 - [v3s9er/CVE-2026-52885](https://github.com/v3s9er/CVE-2026-52885)
+
+### CVE-2026-52943 (2026-06-24)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nnet: skbuff: fix missing zerocopy reference in pskb_carve helpers\n\npskb_carve_inside_header() and pskb_carve_inside_nonlinear() both copy\nthe old skb_shared_info header into a new buffer via memcpy(), which\nincludes the destructor_arg pointer (uarg) for MSG_ZEROCOPY skbs.\nNeither function calls net_zcopy_get() for the new shinfo, creating an\nunaccounted holder: every skb_shared_info with destructor_arg set will\ncall skb_zcopy_clear() once when freed, but the corresponding\nnet_zcopy_get() was never called for the new copy. Repeated calls\ndrive uarg-&gt;refcnt to zero prematurely, freeing ubuf_info_msgzc while\nTX skbs still hold live destructor_arg pointers.\n\nKASAN reports use-after-free on a freed ubuf_info_msgzc:\n\n  BUG: KASAN: slab-use-after-free in skb_release_data+0x77b/0x810\n  Read of size 8 at addr ffff88801574d3e8 by task poc/220\n\n  Call Trace:\n   skb_release_data+0x77b/0x810\n   kfree_skb_list_reason+0x13e/0x610\n   skb_release_data+0x4cd/0x810\n   sk_skb_reason_drop+0xf3/0x340\n   skb_queue_purge_reason+0x282/0x440\n   rds_tcp_inc_free+0x1e/0x30\n   rds_recvmsg+0x354/0x1780\n   __sys_recvmsg+0xdf/0x180\n\n  Allocated by task 219:\n   msg_zerocopy_realloc+0x157/0x7b0\n   tcp_sendmsg_locked+0x2892/0x3ba0\n\n  Freed by task 219:\n   ip_recv_error+0x74a/0xb10\n   tcp_recvmsg+0x475/0x530\n\nThe skb consuming the late access still referenced the same uarg via\nshinfo-&gt;destructor_arg copied by pskb_carve_inside_nonlinear() without\na refcount bump. This has been verified to be reliably exploitable: a\nworking proof-of-concept achieves full root privilege escalation from\nan unprivileged local user on a default kernel configuration.\n\nThe fix follows the pattern of pskb_expand_head() which has the same\nmemcpy/cloned structure. For pskb_carve_inside_header(), net_zcopy_get()\nis placed after skb_orphan_frags() succeeds, so the orphan error path\nneeds no cleanup. For pskb_carve_inside_nonlinear(), net_zcopy_get() is\nplaced after all failure points and just before skb_release_data(), so\nno error path needs cleanup at all -- matching pskb_expand_head() more\nclosely and avoiding the need for a balancing net_zcopy_put().
+</code>
+
+- [vn-lazyming/CVE-2026-52943](https://github.com/vn-lazyming/CVE-2026-52943)
 
 ### CVE-2026-53435 (2026-06-10)
 
@@ -9219,6 +9224,7 @@
 - [bambooqj/CVE-2025-32432](https://github.com/bambooqj/CVE-2025-32432)
 - [TheMursalin/CVE-2025-32432](https://github.com/TheMursalin/CVE-2025-32432)
 - [cd-ratel/CVE-2025-32432](https://github.com/cd-ratel/CVE-2025-32432)
+- [n40y/PoC_CVE-2025-32432](https://github.com/n40y/PoC_CVE-2025-32432)
 
 ### CVE-2025-32433 (2025-04-16)
 
@@ -12530,6 +12536,7 @@
 - [SentinelXofficial/CVE-2025-55182](https://github.com/SentinelXofficial/CVE-2025-55182)
 - [Fomovet/cve-2025-55182](https://github.com/Fomovet/cve-2025-55182)
 - [avoidme12/CVE-2025-55182-POC](https://github.com/avoidme12/CVE-2025-55182-POC)
+- [litndat/React2Shell-PoC-CVE-2025-55182](https://github.com/litndat/React2Shell-PoC-CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -14007,6 +14014,7 @@
 - [lequoca/fortinet-fortiweb-cve-2025-64446-58034](https://github.com/lequoca/fortinet-fortiweb-cve-2025-64446-58034)
 - [eagle-nett/FORTIWEB_CVE-2025-64446-58034](https://github.com/eagle-nett/FORTIWEB_CVE-2025-64446-58034)
 - [0xBlackash/CVE-2025-64446](https://github.com/0xBlackash/CVE-2025-64446)
+- [litndat/Vulnerability-CVE-2025-64446-CVE-2025-58034](https://github.com/litndat/Vulnerability-CVE-2025-64446-CVE-2025-58034)
 
 ### CVE-2025-64458 (2025-11-05)
 
@@ -14972,7 +14980,7 @@
 - [chinaxploiter/CVE-2025-68645-PoC](https://github.com/chinaxploiter/CVE-2025-68645-PoC)
 - [MaxMnMl/zimbramail-CVE-2025-68645-poc](https://github.com/MaxMnMl/zimbramail-CVE-2025-68645-poc)
 - [faysalferdous/CVE-2025-68645-Exploiting-Zimbra-Webmail-LFI-Vulnerability](https://github.com/faysalferdous/CVE-2025-68645-Exploiting-Zimbra-Webmail-LFI-Vulnerability)
-- [its970/CVE-2025-68645](https://github.com/its970/CVE-2025-68645)
+- [Crow5-oss/CVE-2025-68645](https://github.com/Crow5-oss/CVE-2025-68645)
 - [0xBlackash/CVE-2025-68645](https://github.com/0xBlackash/CVE-2025-68645)
 - [HarisAidhin/Poc_CVE-2025-68645](https://github.com/HarisAidhin/Poc_CVE-2025-68645)
 
@@ -15738,6 +15746,7 @@
 - [Nikopmpm/Fsociety-CVE-2024-0670-CheckMK-LPE](https://github.com/Nikopmpm/Fsociety-CVE-2024-0670-CheckMK-LPE)
 - [Nikopmpm/nikopmpm.github.io](https://github.com/Nikopmpm/nikopmpm.github.io)
 - [tralsesec/CVE-2024-0670](https://github.com/tralsesec/CVE-2024-0670)
+- [dfdxarjy/HTB-NanoCorp-CVE-2024-0670](https://github.com/dfdxarjy/HTB-NanoCorp-CVE-2024-0670)
 
 ### CVE-2024-0679 (2024-01-20)
 
@@ -22560,13 +22569,6 @@
 
 - [phtcloud-dev/CVE-2024-36837](https://github.com/phtcloud-dev/CVE-2024-36837)
 - [lhc321-source/CVE-2024-36837](https://github.com/lhc321-source/CVE-2024-36837)
-
-### CVE-2024-36840 (2024-06-12)
-
-<code>SQL Injection vulnerability in Boelter Blue System Management v.1.3 allows a remote attacker to execute arbitrary code and obtain sensitive information via the id parameter to news_details.php and location_details.php; and the section parameter to services.php.
-</code>
-
-- [theexploiters/CVE-2024-36840-Exploit](https://github.com/theexploiters/CVE-2024-36840-Exploit)
 
 ### CVE-2024-36842 (2025-04-15)
 
@@ -43782,13 +43784,6 @@
 
 - [kaisersource/CVE-2021-3166](https://github.com/kaisersource/CVE-2021-3166)
 
-### CVE-2021-3279 (2021-07-19)
-
-<code>sz.chat version 4 allows injection of web scripts and HTML in the message box.
-</code>
-
-- [rafaelchriss/CVE-2021-3279](https://github.com/rafaelchriss/CVE-2021-3279)
-
 ### CVE-2021-3281 (2021-02-02)
 
 <code>In Django 2.2 before 2.2.18, 3.0 before 3.0.12, and 3.1 before 3.1.6, the django.utils.archive.extract method (used by &quot;startapp --template&quot; and &quot;startproject --template&quot;) allows directory traversal via an archive with absolute paths or relative paths with dot segments.
@@ -48174,6 +48169,7 @@
 - [drackyjr/CVE-2021-42013](https://github.com/drackyjr/CVE-2021-42013)
 - [ranasen-rat/cve-2021-42013](https://github.com/ranasen-rat/cve-2021-42013)
 - [zeynepglygt/apache-cve-2021-42013-rce](https://github.com/zeynepglygt/apache-cve-2021-42013-rce)
+- [Joapath/CVE-2021-42013](https://github.com/Joapath/CVE-2021-42013)
 
 ### CVE-2021-42056 (2022-06-24)
 
