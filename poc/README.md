@@ -26,6 +26,13 @@
 - [m00ddy/CVE-2026-0073-Android-client-TLS-auth-bypass](https://github.com/m00ddy/CVE-2026-0073-Android-client-TLS-auth-bypass)
 - [fredevsec/CVE-2026-0073](https://github.com/fredevsec/CVE-2026-0073)
 
+### CVE-2026-0091 (2026-06-01)
+
+<code>In multiple locations, there is a possible way to execute code in the launcher process due to an over-privileged shell user. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
+</code>
+
+- [canyie/TransitionPlayer](https://github.com/canyie/TransitionPlayer)
+
 ### CVE-2026-0257 (2026-05-13)
 
 <code>Authentication bypass vulnerabilities in the GlobalProtect portal and gateway of Palo Alto Networks PAN-OS® software allows the attacker to bypass security restrictions and establish an unauthorized VPN connection.\n\nPanorama and Cloud NGFW are not impacted by these issues.
@@ -353,6 +360,13 @@
 </code>
 
 - [ydking0911/CVE-2026-4060-PoC](https://github.com/ydking0911/CVE-2026-4060-PoC)
+
+### CVE-2026-4253 (2026-03-16)
+
+<code>A security flaw has been discovered in Tenda AC8 16.03.50.11. This affects the function route_set_user_policy_rule of the file /cgi-bin/UploadCfg of the component Web Interface. The manipulation of the argument wans.policy.list1 results in os command injection. It is possible to launch the attack remotely. The exploit has been released to the public and may be used for attacks.
+</code>
+
+- [renzi25031469/CVE-2026-4253-Scanner](https://github.com/renzi25031469/CVE-2026-4253-Scanner)
 
 ### CVE-2026-4255 (2026-03-16)
 
@@ -717,6 +731,13 @@
 - [Polosss/By-Poloss..-..CVE-2026-7515-PoC](https://github.com/Polosss/By-Poloss..-..CVE-2026-7515-PoC)
 - [izxci/CVE_2026_7515](https://github.com/izxci/CVE_2026_7515)
 
+### CVE-2026-7574 (2026-06-23)
+
+<code>Anthropic Claude Desktop Cowork VM image handling (confirmed across v1.1348.0 through v1.2278.0, including v1.1348.0, v1.1617.0, and v1.2278.0) validates only file presence and a version marker string before booting rootfs.img, but does not verify image content integrity at time-of-use. A local attacker with unprivileged code execution as the victim macOS user can modify the VM root filesystem image and have it trusted on subsequent Cowork VM boots, enabling persistent arbitrary code execution in the VM and access to host-mounted directories. The estimated CWE mapping is CWE-353 (Missing Support for Integrity Check).
+</code>
+
+- [0xBlackash/CVE-2026-7574](https://github.com/0xBlackash/CVE-2026-7574)
+
 ### CVE-2026-7654 (2026-06-05)
 
 <code>The Admin Columns plugin for WordPress is vulnerable to PHP Object Injection leading to Remote Code Execution in versions up to and including 7.0.18. This is due to the use of `unserialize()` without an `allowed_classes` restriction in the `IdsToCollection::get_ids_from_string()` function, which processes attacker-controlled post meta values without proper validation. This makes it possible for authenticated attackers with Contributor-level access and above to inject a serialized PHP object into a post's custom meta field and trigger arbitrary code execution by exploiting a bundled POP gadget chain, resulting in remote code execution as the web server user.
@@ -774,6 +795,7 @@
 - [x48ps/CVE-2026-8181](https://github.com/x48ps/CVE-2026-8181)
 - [Yucaerin/CVE-2026-8181](https://github.com/Yucaerin/CVE-2026-8181)
 - [Ez4rd1x1/CVE-2026-8181](https://github.com/Ez4rd1x1/CVE-2026-8181)
+- [Squamity/CVE-2026-8181-PoC](https://github.com/Squamity/CVE-2026-8181-PoC)
 
 ### CVE-2026-8196 (2026-05-09)
 
@@ -1129,6 +1151,7 @@
 
 - [HORKimhab/CVE-2026-20230](https://github.com/HORKimhab/CVE-2026-20230)
 - [HalilDeniz/CVE-2026-20230-Scanner](https://github.com/HalilDeniz/CVE-2026-20230-Scanner)
+- [W5M1n9/Cisco-Unified-Communications-Manager-Server-Side-Forgery-Request-Vulnerability-CVE-2026-20230](https://github.com/W5M1n9/Cisco-Unified-Communications-Manager-Server-Side-Forgery-Request-Vulnerability-CVE-2026-20230)
 
 ### CVE-2026-20245 (2026-06-04)
 
@@ -1222,7 +1245,6 @@
 
 - [SystemVll/CVE-2026-21858](https://github.com/SystemVll/CVE-2026-21858)
 - [EQSTLab/CVE-2026-21858](https://github.com/EQSTLab/CVE-2026-21858)
-- [Bannt08/Research-CVE-2026-21858](https://github.com/Bannt08/Research-CVE-2026-21858)
 - [Fomovet/cve-2026-21858](https://github.com/Fomovet/cve-2026-21858)
 
 ### CVE-2026-21876 (2026-01-08)
@@ -1263,6 +1285,7 @@
 - [0xBlackash/CVE-2026-23111](https://github.com/0xBlackash/CVE-2026-23111)
 - [seguridadentrerios/CVE-2026-23111](https://github.com/seguridadentrerios/CVE-2026-23111)
 - [ishankaru/CVE-2026-23111-nftables-lab](https://github.com/ishankaru/CVE-2026-23111-nftables-lab)
+- [Baba01hacker666/CVE-2026-23111](https://github.com/Baba01hacker666/CVE-2026-23111)
 
 ### CVE-2026-23416 (2026-04-02)
 
@@ -1748,15 +1771,12 @@
 - [juliosuas/copyfail-guard](https://github.com/juliosuas/copyfail-guard)
 - [samanzamani/copy-fail-checker](https://github.com/samanzamani/copy-fail-checker)
 - [ochebotar/copy-fail-CVE-2026-31431-detection-probe](https://github.com/ochebotar/copy-fail-CVE-2026-31431-detection-probe)
-- [Mrhudson69/cve-2026-31431](https://github.com/Mrhudson69/cve-2026-31431)
 - [6abc/Copy-Fail-CVE-2026-31431-dirty-frag-CVE-2026-43284](https://github.com/6abc/Copy-Fail-CVE-2026-31431-dirty-frag-CVE-2026-43284)
 - [Liverwortenuresis371/copyfail-rs](https://github.com/Liverwortenuresis371/copyfail-rs)
 - [itsystem/afalg-check](https://github.com/itsystem/afalg-check)
 - [luoqianlin/copyfail-c](https://github.com/luoqianlin/copyfail-c)
 - [Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail](https://github.com/Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail)
 - [philfry/cve-2026-31431-ftrace](https://github.com/philfry/cve-2026-31431-ftrace)
-- [ikow/CVE-2026-31431-live-code-corruption](https://github.com/ikow/CVE-2026-31431-live-code-corruption)
-- [Mr-bv/Copy-fail-CVE-2026-31431-Exploit-in-C](https://github.com/Mr-bv/Copy-fail-CVE-2026-31431-Exploit-in-C)
 - [adilkurtulmus/linux-copy-fail-CVE-2026-31431](https://github.com/adilkurtulmus/linux-copy-fail-CVE-2026-31431)
 - [Morton-Li/copy-fail-CVE-2026-31431](https://github.com/Morton-Li/copy-fail-CVE-2026-31431)
 - [OpenPixelSystems/c-copy-fail](https://github.com/OpenPixelSystems/c-copy-fail)
@@ -2027,7 +2047,6 @@
 </code>
 
 - [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
-- [rootdirective-sec/CVE-2026-34197-Lab](https://github.com/rootdirective-sec/CVE-2026-34197-Lab)
 - [LAT-06/CVE-2026-34197](https://github.com/LAT-06/CVE-2026-34197)
 - [hnytgl/CVE-2026-34197](https://github.com/hnytgl/CVE-2026-34197)
 - [asdasddqwdq29-a11y/CVE-2026-34197](https://github.com/asdasddqwdq29-a11y/CVE-2026-34197)
@@ -2144,6 +2163,13 @@
 </code>
 
 - [emanuelepns/immich-exfiltration-demo](https://github.com/emanuelepns/immich-exfiltration-demo)
+
+### CVE-2026-35603 (2026-04-17)
+
+<code>Claude Code is an agentic coding tool. In versions prior to 2.1.75 on Windows, Claude Code loaded the system-wide default configuration from C:\ProgramData\ClaudeCode\managed-settings.json without validating directory ownership or access permissions. Because the ProgramData directory is writable by non-administrative users by default and the ClaudeCode subdirectory was not pre-created or access-restricted, a low-privileged local user could create this directory and place a malicious configuration file that would be automatically loaded for any user launching Claude Code on the same machine. Exploiting this would have required a shared multi-user Windows system and a victim user to launch Claude Code after the malicious configuration was placed. This issue has been fixed on version 2.1.75.
+</code>
+
+- [jchable/miasma-toolkit](https://github.com/jchable/miasma-toolkit)
 
 ### CVE-2026-35616 (2026-04-04)
 
@@ -2610,7 +2636,6 @@
 - [Christian93111/CVE-2026-41940](https://github.com/Christian93111/CVE-2026-41940)
 - [Jenderal92/CVE-2026-41940](https://github.com/Jenderal92/CVE-2026-41940)
 - [MrOplus/CVE-2026-41940](https://github.com/MrOplus/CVE-2026-41940)
-- [ZildanZ/CVE-2026-41940](https://github.com/ZildanZ/CVE-2026-41940)
 - [bughunt4me/cpanelCVE-2026-41940](https://github.com/bughunt4me/cpanelCVE-2026-41940)
 - [Defacto-ridgepole254/CVE-2026-41940-Exploit-PoC](https://github.com/Defacto-ridgepole254/CVE-2026-41940-Exploit-PoC)
 - [murrez/CVE-2026-41940](https://github.com/murrez/CVE-2026-41940)
@@ -2832,7 +2857,6 @@
 </code>
 
 - [Percivalll/Dirty-Frag-Kubernetes-PoC](https://github.com/Percivalll/Dirty-Frag-Kubernetes-PoC)
-- [scriptzteam/Paranoid-Dirty-Frag-CVE-2026-43284](https://github.com/scriptzteam/Paranoid-Dirty-Frag-CVE-2026-43284)
 - [mym0us3r/DIRTY-FRAG-Detection-with-Wazuh-4.14.4](https://github.com/mym0us3r/DIRTY-FRAG-Detection-with-Wazuh-4.14.4)
 - [0xBlackash/CVE-2026-43284](https://github.com/0xBlackash/CVE-2026-43284)
 - [suominen/CVE-2026-43284](https://github.com/suominen/CVE-2026-43284)
@@ -3044,6 +3068,7 @@
 - [prashanthnataraj/mini-shai-hulud-detector](https://github.com/prashanthnataraj/mini-shai-hulud-detector)
 - [renewablehacking/CVE-2026-45321-Tanstack](https://github.com/renewablehacking/CVE-2026-45321-Tanstack)
 - [adriannurrr/CVE-2026-45321-Tanstack](https://github.com/adriannurrr/CVE-2026-45321-Tanstack)
+- [7whyex/CVE-2026-45321-Tanstack](https://github.com/7whyex/CVE-2026-45321-Tanstack)
 
 ### CVE-2026-45332 (2026-05-28)
 
@@ -3633,6 +3658,13 @@
 </code>
 
 - [vn-lazyming/CVE-2026-52943](https://github.com/vn-lazyming/CVE-2026-52943)
+
+### CVE-2026-53075 (2026-06-24)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nppp: require CAP_NET_ADMIN in target netns for unattached ioctls\n\n/dev/ppp open is currently authorized against file-&gt;f_cred-&gt;user_ns,\nwhile unattached administrative ioctls operate on current-&gt;nsproxy-&gt;net_ns.\n\nAs a result, a local unprivileged user can create a new user namespace\nwith CLONE_NEWUSER, gain CAP_NET_ADMIN only in that new user namespace,\nand still issue PPPIOCNEWUNIT, PPPIOCATTACH, or PPPIOCATTCHAN against\nan inherited network namespace.\n\nRequire CAP_NET_ADMIN in the user namespace that owns the target network\nnamespace before handling unattached PPP administrative ioctls.\n\nThis preserves normal pppd operation in the network namespace it is\nactually privileged in, while rejecting the userns-only inherited-netns\ncase.
+</code>
+
+- [lottiedeyan/CVE-2026-53075poc](https://github.com/lottiedeyan/CVE-2026-53075poc)
 
 ### CVE-2026-53435 (2026-06-10)
 
@@ -14648,6 +14680,13 @@
 
 - [TheWoodenBench/CVE-2025-66956](https://github.com/TheWoodenBench/CVE-2025-66956)
 
+### CVE-2025-67038 (2026-03-11)
+
+<code>An issue was discovered in Lantronix EDS5000 2.1.0.0R3. The HTTP RPC module executes a shell command to write logs when user's authantication fails. The username is directly concatenated with the command without any sanitization. This allow attackers to inject arbitrary OS commands into the username parameter. Injected commands are executed with root privileges.
+</code>
+
+- [HORKimhab/CVE-2025-67038](https://github.com/HORKimhab/CVE-2025-67038)
+
 ### CVE-2025-67070 (2026-01-09)
 
 <code>A vulnerability exists in Intelbras CFTV IP NVD 9032 R Ftd V2.800.00IB00C.0.T, which allows an unauthenticated attacker to bypass the multi-factor authentication (MFA) mechanism during the password recovery process. This results in the ability to change the admin password and gain full access to the administrative panel.
@@ -16719,6 +16758,7 @@
 - [1337rokudenashi/Odoo_PDFjs_CVE-2024-4367.pdf](https://github.com/1337rokudenashi/Odoo_PDFjs_CVE-2024-4367.pdf)
 - [xiaoqiesec0x1/CVE-2024-4367-PDF.js-xss](https://github.com/xiaoqiesec0x1/CVE-2024-4367-PDF.js-xss)
 - [J1nKsC/CVE-2024-4367_test](https://github.com/J1nKsC/CVE-2024-4367_test)
+- [veronimo669/pdf.js-CVE-2024-4367](https://github.com/veronimo669/pdf.js-CVE-2024-4367)
 
 ### CVE-2024-4406 (2024-05-02)
 
@@ -21923,13 +21963,6 @@
 </code>
 
 - [fdzdev/CVE-2024-33231](https://github.com/fdzdev/CVE-2024-33231)
-
-### CVE-2024-33297 (2025-01-10)
-
-<code>Cross Site Scripting vulnerability in Microweber v.2.0.9 allows a remote attacker to execute arbitrary code via the campaign Name (Internal Name) field in the Add new campaign function
-</code>
-
-- [MathSabo/CVE-2024-33297](https://github.com/MathSabo/CVE-2024-33297)
 
 ### CVE-2024-33299 (2025-01-10)
 
@@ -28327,6 +28360,7 @@
 - [Gill-Singh-A/CVE-2023-20198-Exploit](https://github.com/Gill-Singh-A/CVE-2023-20198-Exploit)
 - [gustavorobertux/cisco-cve-2023-20198-checker](https://github.com/gustavorobertux/cisco-cve-2023-20198-checker)
 - [telly251/forwardnetworksdemo](https://github.com/telly251/forwardnetworksdemo)
+- [charlesjson/CVE-2023-20198](https://github.com/charlesjson/CVE-2023-20198)
 
 ### CVE-2023-20209 (2023-08-16)
 
@@ -34605,7 +34639,6 @@
 - [cbeek-r7/CVE-2023-46805](https://github.com/cbeek-r7/CVE-2023-46805)
 - [raminkarimkhani1996/CVE-2023-46805_CVE-2024-21887](https://github.com/raminkarimkhani1996/CVE-2023-46805_CVE-2024-21887)
 - [seajaysec/Ivanti-Connect-Around-Scan](https://github.com/seajaysec/Ivanti-Connect-Around-Scan)
-- [Chocapikk/CVE-2023-46805](https://github.com/Chocapikk/CVE-2023-46805)
 - [w2xim3/CVE-2023-46805](https://github.com/w2xim3/CVE-2023-46805)
 - [rxwx/pulse-meter](https://github.com/rxwx/pulse-meter)
 - [Hexastrike/Ivanti-Connect-Secure-Logs-Parser](https://github.com/Hexastrike/Ivanti-Connect-Secure-Logs-Parser)
@@ -43307,13 +43340,6 @@
 - [Trinadh465/System_bt_AOSP10_r33_CVE-2021-0589](https://github.com/Trinadh465/System_bt_AOSP10_r33_CVE-2021-0589)
 - [Satheesh575555/system_bt_AOSP10_r33_CVE-2021-0589](https://github.com/Satheesh575555/system_bt_AOSP10_r33_CVE-2021-0589)
 
-### CVE-2021-0954 (2021-12-15)
-
-<code>In ResolverActivity, there is a possible user interaction bypass due to a tapjacking/overlay attack. This could lead to local escalation of privilege with User execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-10 Android-11Android ID: A-143559931
-</code>
-
-- [nanopathi/framework_base_AOSP10_r33_CVE-2021-0954](https://github.com/nanopathi/framework_base_AOSP10_r33_CVE-2021-0954)
-
 ### CVE-2021-0963 (2021-12-15)
 
 <code>In onCreate of KeyChainActivity.java, there is a possible way to use an app certificate stored in keychain due to a tapjacking/overlay attack. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-9Android ID: A-199754277
@@ -45953,6 +45979,7 @@
 
 - [hh-hunter/nacos-cve-2021-29441](https://github.com/hh-hunter/nacos-cve-2021-29441)
 - [azhao1981/CVE-2021-29441](https://github.com/azhao1981/CVE-2021-29441)
+- [K3ysTr0K3R/CVE-2021-29441](https://github.com/K3ysTr0K3R/CVE-2021-29441)
 
 ### CVE-2021-29442 (2021-04-27)
 
@@ -57187,6 +57214,7 @@
 - [Jeanback1/CVE-2019-9053-exploit](https://github.com/Jeanback1/CVE-2019-9053-exploit)
 - [rideckszz/poc-CVE-2019-9053](https://github.com/rideckszz/poc-CVE-2019-9053)
 - [rgkue/mysqli](https://github.com/rgkue/mysqli)
+- [Vedantrana73/cve-2019-9053-py3](https://github.com/Vedantrana73/cve-2019-9053-py3)
 
 ### CVE-2019-9081
 - [nth347/CVE-2019-9081_PoC](https://github.com/nth347/CVE-2019-9081_PoC)
@@ -65543,6 +65571,7 @@
 - [pixelofapicture/001-Malware-Analysis-CVE-2017-11882](https://github.com/pixelofapicture/001-Malware-Analysis-CVE-2017-11882)
 - [xdrake1010/CVE-2017-11882-Preventer](https://github.com/xdrake1010/CVE-2017-11882-Preventer)
 - [DONKEY0xSHOT/CVE-2017-11882-Blocker](https://github.com/DONKEY0xSHOT/CVE-2017-11882-Blocker)
+- [Mo200909/Office-Malware-Forensics-Lab-REMnux-Static-Analysis](https://github.com/Mo200909/Office-Malware-Forensics-Lab-REMnux-Static-Analysis)
 
 ### CVE-2017-11907 (2017-12-12)
 
@@ -67141,6 +67170,7 @@
 - [elhaddadalaa788-alt/kernel-exploit-dirtycow-project-subm](https://github.com/elhaddadalaa788-alt/kernel-exploit-dirtycow-project-subm)
 - [theo543/OSDS_Paper_CVE-2016-5195](https://github.com/theo543/OSDS_Paper_CVE-2016-5195)
 - [maur0amaya/Escalamiento-de-Privilegios-usando-el-Kernel-Exploit-Dirty-Cow](https://github.com/maur0amaya/Escalamiento-de-Privilegios-usando-el-Kernel-Exploit-Dirty-Cow)
+- [GonzaBot/kernel-exploit-dirtycow](https://github.com/GonzaBot/kernel-exploit-dirtycow)
 
 ### CVE-2016-5345 (2018-01-23)
 
@@ -68145,7 +68175,6 @@
 
 - [Tare05/Intel-CVE-2015-2291](https://github.com/Tare05/Intel-CVE-2015-2291)
 - [gmh5225/CVE-2015-2291](https://github.com/gmh5225/CVE-2015-2291)
-- [paysonism/CVE-2015-2291-Spoofer-Analysis](https://github.com/paysonism/CVE-2015-2291-Spoofer-Analysis)
 - [ethanedits/iqvw64e-privilege-escalation](https://github.com/ethanedits/iqvw64e-privilege-escalation)
 
 ### CVE-2015-2315 (2015-03-17)
