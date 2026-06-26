@@ -252,6 +252,13 @@
 - [carlosalbertotuma/cve-2026-3180-poc](https://github.com/carlosalbertotuma/cve-2026-3180-poc)
 - [cardosource/cve-2026-3180](https://github.com/cardosource/cve-2026-3180)
 
+### CVE-2026-3227 (2026-03-13)
+
+<code>A command injection vulnerability was identified in TP-Link TL-WR802N v4, TL-WR841N v14, and TL-WR840N v6 due to improper neutralization of special elements used in an OS command.  In the router configuration import function allows an authenticated attacker to upload a crafted configuration file that results in execution of OS commands with root privileges during port-trigger processing.  \nSuccessful exploitation allows an authenticated attacker to execute system commands with root privileges, leading to full device compromise.
+</code>
+
+- [do4choo/CVE-2026-3227](https://github.com/do4choo/CVE-2026-3227)
+
 ### CVE-2026-3288 (2026-03-09)
 
 <code>A security issue was discovered in ingress-nginx where the `nginx.ingress.kubernetes.io/rewrite-target` Ingress annotation can be used to inject configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)
@@ -283,7 +290,7 @@
 
 ### CVE-2026-3437 (2026-03-03)
 
-<code>An Improper Restriction of Operations within the Bounds of a Memory Buffer vulnerability in Portwell Engineering Toolkits version 4.8.2 could allow a local authenticated attacker to read and write to arbitrary memory via the Portwell Engineering Toolkits driver. Successful exploitation of this vulnerability could result in escalation of privileges or cause a denial-of-service condition.
+<code>An improper restriction of operations within the bounds of a memory buffer vulnerability in Portwell Engineering Toolkits version 4.8.2 could allow a local authenticated attacker to read and write to arbitrary memory via the Portwell Engineering Toolkits driver. Successful exploitation of this vulnerability could result in escalation of privileges or cause a denial-of-service condition.
 </code>
 
 - [tihomirocrew/cve-2026-3437](https://github.com/tihomirocrew/cve-2026-3437)
@@ -309,13 +316,6 @@
 </code>
 
 - [PySecTools/CVE-2026-3629](https://github.com/PySecTools/CVE-2026-3629)
-
-### CVE-2026-3805 (2026-03-11)
-
-<code>When doing a second SMB request to the same host again, curl would wrongly use\na data pointer pointing into already freed memory.
-</code>
-
-- [Rat5ak/CVE-2026-3805-curl-SMB-UAF](https://github.com/Rat5ak/CVE-2026-3805-curl-SMB-UAF)
 
 ### CVE-2026-3844 (2026-04-23)
 
@@ -400,13 +400,6 @@
 - [CarlosEduardoPM/CVE-2026-4480-POC](https://github.com/CarlosEduardoPM/CVE-2026-4480-POC)
 - [Vusal777/CVE-2026-4480-exploit-poc](https://github.com/Vusal777/CVE-2026-4480-exploit-poc)
 - [ClearLotus-git/CVE-2026-4480-PoC](https://github.com/ClearLotus-git/CVE-2026-4480-PoC)
-
-### CVE-2026-4524 (2026-05-14)
-
-<code>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.9.1 before 18.9.7, 18.10 before 18.10.6, and 18.11 before 18.11.3 that could have allowed an authenticated user to access confidential issue content in public projects without proper authorization due to improper authorization checks.
-</code>
-
-- [CyruxSec/CVE-2026-4524](https://github.com/CyruxSec/CVE-2026-4524)
 
 ### CVE-2026-4782 (2026-05-13)
 
@@ -758,6 +751,9 @@
 </code>
 
 - [BenZamir/CVE-2026-7791](https://github.com/BenZamir/CVE-2026-7791)
+
+### CVE-2026-7867
+- [azqzazq1/CVE-2026-7867-disk2root](https://github.com/azqzazq1/CVE-2026-7867-disk2root)
 
 ### CVE-2026-8053 (2026-05-12)
 
@@ -1405,6 +1401,7 @@
 - [obrunolima1910/CVE-2026-24061](https://github.com/obrunolima1910/CVE-2026-24061)
 - [athack-ctf/chall2026-telneted](https://github.com/athack-ctf/chall2026-telneted)
 - [jacubes/CVE-2026-24061](https://github.com/jacubes/CVE-2026-24061)
+- [0xBlackash/CVE-2026-24061](https://github.com/0xBlackash/CVE-2026-24061)
 - [ekomsSavior/telnet_scan](https://github.com/ekomsSavior/telnet_scan)
 - [ahmadsadeeq/TelnetdBypass-](https://github.com/ahmadsadeeq/TelnetdBypass-)
 - [tc4dy/CVE-2026-24061-PoC-Exploit](https://github.com/tc4dy/CVE-2026-24061-PoC-Exploit)
@@ -1753,7 +1750,6 @@
 - [adampielak/CVE-2026-31431_SCA_WAZUH](https://github.com/adampielak/CVE-2026-31431_SCA_WAZUH)
 - [yandex-cloud-examples/yc-mk8s-copy-fail-mitigation](https://github.com/yandex-cloud-examples/yc-mk8s-copy-fail-mitigation)
 - [JuanBindez/CVE-2026-31431](https://github.com/JuanBindez/CVE-2026-31431)
-- [cozystack/copy-fail-blocker](https://github.com/cozystack/copy-fail-blocker)
 - [selectel/mks-copy-fail-mitigation](https://github.com/selectel/mks-copy-fail-mitigation)
 - [Juguitos/copy-fail](https://github.com/Juguitos/copy-fail)
 - [karollooool/Porting-CVE-2026-31431-Copy-Fail-to-a-Constrained-Java-Runner](https://github.com/karollooool/Porting-CVE-2026-31431-Copy-Fail-to-a-Constrained-Java-Runner)
@@ -1773,13 +1769,11 @@
 - [ochebotar/copy-fail-CVE-2026-31431-detection-probe](https://github.com/ochebotar/copy-fail-CVE-2026-31431-detection-probe)
 - [6abc/Copy-Fail-CVE-2026-31431-dirty-frag-CVE-2026-43284](https://github.com/6abc/Copy-Fail-CVE-2026-31431-dirty-frag-CVE-2026-43284)
 - [Liverwortenuresis371/copyfail-rs](https://github.com/Liverwortenuresis371/copyfail-rs)
-- [itsystem/afalg-check](https://github.com/itsystem/afalg-check)
 - [luoqianlin/copyfail-c](https://github.com/luoqianlin/copyfail-c)
 - [Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail](https://github.com/Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail)
 - [philfry/cve-2026-31431-ftrace](https://github.com/philfry/cve-2026-31431-ftrace)
 - [adilkurtulmus/linux-copy-fail-CVE-2026-31431](https://github.com/adilkurtulmus/linux-copy-fail-CVE-2026-31431)
 - [Morton-Li/copy-fail-CVE-2026-31431](https://github.com/Morton-Li/copy-fail-CVE-2026-31431)
-- [OpenPixelSystems/c-copy-fail](https://github.com/OpenPixelSystems/c-copy-fail)
 - [p401a-ops/Copy-Fail](https://github.com/p401a-ops/Copy-Fail)
 - [infiniroot/ansible-mitigate-copyfail-dirtyfrag](https://github.com/infiniroot/ansible-mitigate-copyfail-dirtyfrag)
 - [KaraZajac/DIRTYFAIL](https://github.com/KaraZajac/DIRTYFAIL)
@@ -2293,7 +2287,11 @@
 ### CVE-2026-37073
 - [jfs-jfs/CVE-2026-37073](https://github.com/jfs-jfs/CVE-2026-37073)
 
-### CVE-2026-37149
+### CVE-2026-37149 (2026-06-25)
+
+<code>GROCERY-STORE-MANAGEMENT-SYSTEM-USING-PHP-AND-MYSQL-PHPMYADMIN v1.0 was discovered to contain a SQL injection vulnerability in the scost parameter in /grocery/search_products.php. This vulnerability allows attackers to access sensitive database information via a crafted SQL statement.
+</code>
+
 - [pateldhyeyit/CVE-2026-37149](https://github.com/pateldhyeyit/CVE-2026-37149)
 
 ### CVE-2026-37196
@@ -2768,13 +2766,6 @@
 
 - [izxci/CVE-2026-42758](https://github.com/izxci/CVE-2026-42758)
 
-### CVE-2026-42796 (2026-05-04)
-
-<code>Arelle before 2.39.10 contains an unauthenticated remote code execution vulnerability in the /rest/configure REST endpoint that accepts a plugins query parameter and forwards it to the plugin manager without authentication or authorization. Attackers can supply a URL to a malicious Python file through the plugins parameter, causing the Arelle webserver to download and execute the attacker-controlled code within the Arelle process with its privileges.
-</code>
-
-- [ameerhamza-malik/CVE-2026-42796](https://github.com/ameerhamza-malik/CVE-2026-42796)
-
 ### CVE-2026-42880 (2026-05-07)
 
 <code>Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. From versions 3.2.0 to before 3.2.11 and 3.3.0 to before 3.3.9, there is a missing authorization and data-masking gap in Argo CD's ServerSideDiff endpoint that allows an attacker with read-only access to extract plaintext Kubernetes Secret data from etcd via the Kubernetes API server's Server-Side Apply dry-run mechanism. This issue has been patched in versions 3.2.11 and 3.3.9.
@@ -2900,6 +2891,14 @@
 
 - [attaattaatta/CVE-2026-43500](https://github.com/attaattaatta/CVE-2026-43500)
 - [vorkampfer/dirty_frag_mitigation](https://github.com/vorkampfer/dirty_frag_mitigation)
+
+### CVE-2026-43503 (2026-05-23)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nnet: skbuff: propagate shared-frag marker through frag-transfer helpers\n\nTwo frag-transfer helpers (__pskb_copy_fclone() and skb_shift()) fail\nto propagate the SKBFL_SHARED_FRAG bit in skb_shinfo()-&gt;flags when\nmoving frags from source to destination.  __pskb_copy_fclone() defers\nthe rest of the shinfo metadata to skb_copy_header() after copying\nfrag descriptors, but that helper only carries over gso_{size,segs,\ntype} and never touches skb_shinfo()-&gt;flags; skb_shift() moves frag\ndescriptors directly and leaves flags untouched.  As a result, the\ndestination skb keeps a reference to the same externally-owned or\npage-cache-backed pages while reporting skb_has_shared_frag() as\nfalse.\n\nThe mismatch is harmful in any in-place writer that uses\nskb_has_shared_frag() to decide whether shared pages must be detoured\nthrough skb_cow_data().  ESP input is one such writer (esp4.c,\nesp6.c), and a single nft 'dup to &lt;local&gt;' rule -- or any other\nnf_dup_ipv4() / xt_TEE caller -- is enough to land a pskb_copy()'d\nskb in esp_input() with the marker stripped, letting an unprivileged\nuser write into the page cache of a root-owned read-only file via\nauthencesn-ESN stray writes.\n\nSet SKBFL_SHARED_FRAG on the destination whenever frag descriptors\nwere actually moved from the source.  skb_copy() and skb_copy_expand()\nshare skb_copy_header() too but linearize all paged data into freshly\nallocated head storage and emerge with nr_frags == 0, so\nskb_has_shared_frag() returns false on its own; they need no change.\n\nThe same omission exists in skb_gro_receive() and skb_gro_receive_list().\nThe former moves the incoming skb's frag descriptors into the\naccumulator's last sub-skb via two paths (a direct frag-move loop and\nthe head_frag + memcpy path); the latter chains the incoming skb whole\nonto p's frag_list.  Downstream skb_segment() reads only\nskb_shinfo(p)-&gt;flags, and skb_segment_list() reuses each sub-skb's\nshinfo as the nskb -- both p and lp must carry the marker.\n\nThe same omission also exists in tcp_clone_payload(), which builds an\nMTU probe skb by moving frag descriptors from skbs on sk_write_queue\ninto a freshly allocated nskb.  The helper falls into the same family\nand warrants the same fix for consistency; no TCP TX-side in-place\nwriter is currently known to reach a user page through this gap, but\na future consumer depending on the marker would regress silently.\n\nThe same omission exists in skb_segment(): the per-iteration flag\nmerge takes only head_skb's flag, and the inner switch that rebinds\nfrag_skb to list_skb on head_skb-frags exhaustion does not fold the\nnew frag_skb's flag into nskb.  Fold frag_skb's flag at both sites\nso segments drawing frags from frag_list members carry the marker.
+</code>
+
+- [0xBlackash/CVE-2026-43503](https://github.com/0xBlackash/CVE-2026-43503)
+- [mooder1/dirtyclone-CVE-2026-43503](https://github.com/mooder1/dirtyclone-CVE-2026-43503)
 
 ### CVE-2026-43512 (2026-05-12)
 
@@ -3693,7 +3692,11 @@
 
 - [webshellseo8/CVE-2026-53787-POC-](https://github.com/webshellseo8/CVE-2026-53787-POC-)
 
-### CVE-2026-54088
+### CVE-2026-54088 (2026-06-25)
+
+<code>File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. Prior to 2.63.6, the Hook Authentication feature in File Browser allows administrators to delegate login verification to an external shell command. User-supplied credentials (username and password) are interpolated into this command string using os.Expand without sanitization. An unauthenticated remote attacker can inject shell metacharacters in the username or password field at the login screen, causing the server to execute arbitrary OS commands before any authentication takes place. This is a critical pre-authentication RCE. This vulnerability is fixed in 2.63.6.
+</code>
+
 - [Saku0512/CVE-2026-54088-poc](https://github.com/Saku0512/CVE-2026-54088-poc)
 
 ### CVE-2026-54316 (2026-06-23)
@@ -3752,6 +3755,9 @@
 </code>
 
 - [0xBlackash/CVE-2026-55200](https://github.com/0xBlackash/CVE-2026-55200)
+
+### CVE-2026-55584
+- [mirackayikci/CVE-2026-55584](https://github.com/mirackayikci/CVE-2026-55584)
 
 ### CVE-2026-56111 (2026-06-24)
 
@@ -4700,6 +4706,7 @@
 </code>
 
 - [ptrstr/CVE-2025-4524](https://github.com/ptrstr/CVE-2025-4524)
+- [CyruxSec/CVE-2025-4524](https://github.com/CyruxSec/CVE-2025-4524)
 
 ### CVE-2025-4578 (2025-06-04)
 
@@ -5644,6 +5651,7 @@
 - [AdityaInnovates/CVE-2025-8110-Gogs-RCE-Exploit](https://github.com/AdityaInnovates/CVE-2025-8110-Gogs-RCE-Exploit)
 - [get-xor/coreweave-demo-2026-05](https://github.com/get-xor/coreweave-demo-2026-05)
 - [mananispiwpiw/CVE-2025-8110-PoC](https://github.com/mananispiwpiw/CVE-2025-8110-PoC)
+- [joaquinrrr/CVE-2025-8110](https://github.com/joaquinrrr/CVE-2025-8110)
 
 ### CVE-2025-8191 (2025-07-26)
 
@@ -13531,6 +13539,7 @@
 </code>
 
 - [pollotherunner/CVE-2025-61155](https://github.com/pollotherunner/CVE-2025-61155)
+- [sys0xFF/CVE-2025-61155](https://github.com/sys0xFF/CVE-2025-61155)
 
 ### CVE-2025-61183 (2025-10-08)
 
@@ -34636,7 +34645,6 @@
 </code>
 
 - [yoryio/CVE-2023-46805](https://github.com/yoryio/CVE-2023-46805)
-- [cbeek-r7/CVE-2023-46805](https://github.com/cbeek-r7/CVE-2023-46805)
 - [raminkarimkhani1996/CVE-2023-46805_CVE-2024-21887](https://github.com/raminkarimkhani1996/CVE-2023-46805_CVE-2024-21887)
 - [seajaysec/Ivanti-Connect-Around-Scan](https://github.com/seajaysec/Ivanti-Connect-Around-Scan)
 - [w2xim3/CVE-2023-46805](https://github.com/w2xim3/CVE-2023-46805)
@@ -34967,6 +34975,7 @@
 <code>The SSH transport protocol with certain OpenSSH extensions, found in OpenSSH before 9.6 and other products, allows remote attackers to bypass integrity checks such that some packets are omitted (from the extension negotiation message), and a client and server may consequently end up with a connection for which some security features have been downgraded or disabled, aka a Terrapin attack. This occurs because the SSH Binary Packet Protocol (BPP), implemented by these extensions, mishandles the handshake phase and mishandles use of sequence numbers. For example, there is an effective attack against SSH's use of ChaCha20-Poly1305 (and CBC with Encrypt-then-MAC). The bypass occurs in chacha20-poly1305@openssh.com and (if CBC is used) the -etm@openssh.com MAC algorithms. This also affects Maverick Synergy Java SSH API before 3.1.0-SNAPSHOT, Dropbear through 2022.83, Ssh before 5.1.1 in Erlang/OTP, PuTTY before 0.80, AsyncSSH before 2.14.2, golang.org/x/crypto before 0.17.0, libssh before 0.10.6, libssh2 through 1.11.0, Thorn Tech SFTP Gateway before 3.4.6, Tera Term before 5.1, Paramiko before 3.4.0, jsch before 0.2.15, SFTPGo before 2.5.6, Netgate pfSense Plus through 23.09.1, Netgate pfSense CE through 2.7.2, HPN-SSH through 18.2.0, ProFTPD before 1.3.8b (and before 1.3.9rc2), ORYX CycloneSSH before 2.3.4, NetSarang XShell 7 before Build 0144, CrushFTP before 10.6.0, ConnectBot SSH library before 2.2.22, Apache MINA sshd through 2.11.0, sshj through 0.37.0, TinySSH through 20230101, trilead-ssh2 6401, LANCOM LCOS and LANconfig, FileZilla before 3.66.4, Nova before 11.8, PKIX-SSH before 14.4, SecureCRT before 9.4.3, Transmit5 before 5.10.4, Win32-OpenSSH before 9.5.0.0p1-Beta, WinSCP before 6.2.2, Bitvise SSH Server before 9.32, Bitvise SSH Client before 9.33, KiTTY through 0.76.1.13, the net-ssh gem 7.2.0 for Ruby, the mscdex ssh2 module before 1.15.0 for Node.js, the thrussh library before 0.35.1 for Rust, and the Russh crate before 0.40.2 for Rust.
 </code>
 
+- [kabiri-labs/sshfinder](https://github.com/kabiri-labs/sshfinder)
 - [TrixSec/CVE-2023-48795](https://github.com/TrixSec/CVE-2023-48795)
 - [Dr0xharakiri/CVE-2023-48795](https://github.com/Dr0xharakiri/CVE-2023-48795)
 - [fumioryoto/Terrapin-attack](https://github.com/fumioryoto/Terrapin-attack)
@@ -46075,6 +46084,13 @@
 
 - [shoucheng3/apache__incubator-dubbo_CVE-2021-30181_2-6-8](https://github.com/shoucheng3/apache__incubator-dubbo_CVE-2021-30181_2-6-8)
 
+### CVE-2021-30327 (2022-06-14)
+
+<code>Buffer overflow in sahara protocol while processing commands leads to overwrite of secure configuration data in Snapdragon Mobile, Snapdragon Compute, Snapdragon Auto, Snapdragon IOT, Snapdragon Connectivity, Snapdragon Voice &amp; Music
+</code>
+
+- [Daniel224455/katana](https://github.com/Daniel224455/katana)
+
 ### CVE-2021-30357 (2021-06-08)
 
 <code>SSL Network Extender Client for Linux before build 800008302 reveals part of the contents of the configuration file supplied, which allows partially disclosing files to which the user did not have access.
@@ -46477,13 +46493,6 @@
 </code>
 
 - [Abady0x1/CVE-2021-32819](https://github.com/Abady0x1/CVE-2021-32819)
-
-### CVE-2021-32849 (2022-01-26)
-
-<code>Gerapy is a distributed crawler management framework. Prior to version 0.9.9, an authenticated user could execute arbitrary commands. This issue is fixed in version 0.9.9. There are no known workarounds.
-</code>
-
-- [lowkey0808/cve-2021-32849](https://github.com/lowkey0808/cve-2021-32849)
 
 ### CVE-2021-33026 (2021-05-13)
 
