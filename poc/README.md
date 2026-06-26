@@ -136,13 +136,6 @@
 ### CVE-2026-442
 - [HORKimhab/CVE-2026-442_](https://github.com/HORKimhab/CVE-2026-442_)
 
-### CVE-2026-1208 (2026-01-24)
-
-<code>The Friendly Functions for Welcart plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.2.5. This is due to missing or incorrect nonce validation on the settings page. This makes it possible for unauthenticated attackers to update plugin settings via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.
-</code>
-
-- [SnailSploit/CVE-2026-1208](https://github.com/SnailSploit/CVE-2026-1208)
-
 ### CVE-2026-1232 (2026-02-02)
 
 <code>A medium-severity vulnerability has been identified in BeyondTrust Privilege Management for Windows versions &lt;=25.7. Under certain conditions, a local authenticated user with elevated privileges may be able to bypass the product’s anti-tamper protections, which could allow access to protected application components and the ability to modify product configuration.
@@ -809,7 +802,11 @@
 - [rootdirective-sec/CVE-2026-8206-Lab](https://github.com/rootdirective-sec/CVE-2026-8206-Lab)
 - [izxci/CVE-2026-8206](https://github.com/izxci/CVE-2026-8206)
 
-### CVE-2026-8380
+### CVE-2026-8380 (2026-06-26)
+
+<code>The Frontend File Manager Plugin WordPress plugin through 23.6 does not properly verify ownership of every targeted post before permanent deletion, allowing authenticated users with author-level access and above to permanently delete arbitrary posts and pages. When the Frontend File Manager Plugin WordPress plugin through 23.6's &quot;Allow guest uploads&quot; setting is enabled by an administrator, the same deletion primitive becomes reachable by unauthenticated users.
+</code>
+
 - [tiagob0b/CVE-2026-8380](https://github.com/tiagob0b/CVE-2026-8380)
 
 ### CVE-2026-8389 (2026-05-12)
@@ -827,6 +824,7 @@
 - [anyanything/CVE-2026-8461-PoC](https://github.com/anyanything/CVE-2026-8461-PoC)
 - [Y5neKO/CVE-2026-8461-EXP](https://github.com/Y5neKO/CVE-2026-8461-EXP)
 - [HORKimhab/CVE-2026-8461](https://github.com/HORKimhab/CVE-2026-8461)
+- [0xBlackash/CVE-2026-8461](https://github.com/0xBlackash/CVE-2026-8461)
 
 ### CVE-2026-8697 (2026-05-28)
 
@@ -1430,6 +1428,13 @@
 
 - [BlankBire/CVE-2026-24136-Lab](https://github.com/BlankBire/CVE-2026-24136-Lab)
 
+### CVE-2026-24207 (2026-05-20)
+
+<code>NVIDIA Triton Inference Server contains a vulnerability where an attacker could cause an authentication bypass. A successful exploit of this vulnerability might lead to code execution, escalation of privileges, data tampering, denial of service, or information disclosure.
+</code>
+
+- [offseckit/CVE-2026-24207](https://github.com/offseckit/CVE-2026-24207)
+
 ### CVE-2026-24291 (2026-03-10)
 
 <code>Incorrect permission assignment for critical resource in Windows Accessibility Infrastructure (ATBroker.exe) allows an authorized attacker to elevate privileges locally.
@@ -1505,13 +1510,6 @@
 
 - [hanyvert/cve-2026-25541-fuel-analysis](https://github.com/hanyvert/cve-2026-25541-fuel-analysis)
 
-### CVE-2026-25589 (2026-05-05)
-
-<code>RedisBloom is a probabilistic data structures module for Redis. In all versions of RedisBloom before 2.8.20, the module does not properly validate serialized values processed through the Redis RESTORE command. An authenticated attacker with permission to execute RESTORE on a server with the RedisBloom module loaded can supply a crafted serialized payload that triggers invalid memory access and may lead to remote code execution. A workaround is to restrict access to the RESTORE command with ACL rules. This issue is fixed in version 2.8.20.
-</code>
-
-- [mgiay/CVE-2026-25589-25588-25243-23631-23479-REDIS](https://github.com/mgiay/CVE-2026-25589-25588-25243-23631-23479-REDIS)
-
 ### CVE-2026-25860 (2026-06-09)
 
 <code>OpenClinic GA 5.351.19 contains a reflected cross-site scripting vulnerability in the DICOM image upload handler that allows attackers to execute arbitrary JavaScript in a victim's browser by embedding malicious payloads in DICOM file metadata fields. Attackers can craft a DICOM file with JavaScript payloads in metadata fields such as Study Description, which are reflected without sanitization in popup.jsp and archiving/uploadfiles_jsp.java when processed through the Upload DICOM images feature.
@@ -1570,6 +1568,7 @@
 
 - [Kulik-Labs-Development/Ghost-CMS-Code-Injection-Audit-CVE-2026-26980](https://github.com/Kulik-Labs-Development/Ghost-CMS-Code-Injection-Audit-CVE-2026-26980)
 - [EQSTLab/CVE-2026-26980](https://github.com/EQSTLab/CVE-2026-26980)
+- [gagaltotal/CVE-2026-26980-Ghost-CMS-Api](https://github.com/gagaltotal/CVE-2026-26980-Ghost-CMS-Api)
 
 ### CVE-2026-27145 (2026-06-02)
 
@@ -1755,13 +1754,10 @@
 - [karollooool/Porting-CVE-2026-31431-Copy-Fail-to-a-Constrained-Java-Runner](https://github.com/karollooool/Porting-CVE-2026-31431-Copy-Fail-to-a-Constrained-Java-Runner)
 - [deckhouse/d8-copy-fail-mitigation](https://github.com/deckhouse/d8-copy-fail-mitigation)
 - [HulnotHutu/CVE-2026-31431](https://github.com/HulnotHutu/CVE-2026-31431)
-- [OmerAti/almalinux-fix-cve-2026-31431](https://github.com/OmerAti/almalinux-fix-cve-2026-31431)
-- [rvzsec/CVE-2026-31431](https://github.com/rvzsec/CVE-2026-31431)
 - [K3ysTr0K3R/CVE-2026-31431-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2026-31431-EXPLOIT)
 - [bootsareme/copyfail-deconstructed](https://github.com/bootsareme/copyfail-deconstructed)
 - [Smarttfoxx/copyfail](https://github.com/Smarttfoxx/copyfail)
 - [monobrau/copyfailscan](https://github.com/monobrau/copyfailscan)
-- [ROSNLR5/modrosnlr5](https://github.com/ROSNLR5/modrosnlr5)
 - [suominen/CVE-2026-31431](https://github.com/suominen/CVE-2026-31431)
 - [aexdyhaxor/CVE-2026-31431-copy-fail](https://github.com/aexdyhaxor/CVE-2026-31431-copy-fail)
 - [juliosuas/copyfail-guard](https://github.com/juliosuas/copyfail-guard)
@@ -1777,7 +1773,6 @@
 - [p401a-ops/Copy-Fail](https://github.com/p401a-ops/Copy-Fail)
 - [infiniroot/ansible-mitigate-copyfail-dirtyfrag](https://github.com/infiniroot/ansible-mitigate-copyfail-dirtyfrag)
 - [KaraZajac/DIRTYFAIL](https://github.com/KaraZajac/DIRTYFAIL)
-- [ROSNLR5/MitigationToolkit-ROSN-LR5-Full](https://github.com/ROSNLR5/MitigationToolkit-ROSN-LR5-Full)
 - [hori0729/CVE-2026-31431-Verificador-Exploit](https://github.com/hori0729/CVE-2026-31431-Verificador-Exploit)
 - [krisiasty/vcheck](https://github.com/krisiasty/vcheck)
 - [vorkampfer/copy_fail_mitigation](https://github.com/vorkampfer/copy_fail_mitigation)
@@ -1796,7 +1791,6 @@
 - [studiogangster/CVE-2026-31431](https://github.com/studiogangster/CVE-2026-31431)
 - [hyz-is/copyfail-fix](https://github.com/hyz-is/copyfail-fix)
 - [SystemVll/CVE-2026-31431-copyfail-aarch64](https://github.com/SystemVll/CVE-2026-31431-copyfail-aarch64)
-- [DroPZsec/SplicePrivillegeEscalationFIX](https://github.com/DroPZsec/SplicePrivillegeEscalationFIX)
 - [Koshmare-Blossom/Copyfail-sh](https://github.com/Koshmare-Blossom/Copyfail-sh)
 - [kuniyal08/Copy-Fail-CVE-2026-31431-Lab](https://github.com/kuniyal08/Copy-Fail-CVE-2026-31431-Lab)
 - [SilverRuler/copy-fail-CVE-2026-31431](https://github.com/SilverRuler/copy-fail-CVE-2026-31431)
@@ -1854,13 +1848,6 @@
 - [Recorded-texteditor120/CVE-2026-31802](https://github.com/Recorded-texteditor120/CVE-2026-31802)
 - [ridhinva/npm-tar-path-traversal-scanner](https://github.com/ridhinva/npm-tar-path-traversal-scanner)
 
-### CVE-2026-31899 (2026-03-13)
-
-<code>CairoSVG is an SVG converter based on Cairo, a 2D graphics library. Prior to Kozea/CairoSVG has exponential denial of service via recursive &lt;use&gt; element amplification in cairosvg/defs.py. This causes CPU exhaustion from a small input.
-</code>
-
-- [SnailSploit/CVE-2026-31899](https://github.com/SnailSploit/CVE-2026-31899)
-
 ### CVE-2026-32202 (2026-04-14)
 
 <code>Protection mechanism failure in Windows Shell allows an unauthorized attacker to perform spoofing over a network.
@@ -1889,13 +1876,6 @@
 </code>
 
 - [MichaelAdamGroberman/CVE-2026-32662](https://github.com/MichaelAdamGroberman/CVE-2026-32662)
-
-### CVE-2026-32707 (2026-03-13)
-
-<code>PX4 autopilot is a flight control solution for drones. Prior to 1.17.0-rc2, tattu_can contains an unbounded memcpy in its multi-frame assembly loop, allowing stack memory overwrite when crafted CAN frames are processed. In deployments where tattu_can is enabled and running, a CAN-injection-capable attacker can trigger a crash (DoS) and memory corruption. This vulnerability is fixed in 1.17.0-rc2.
-</code>
-
-- [mbanyamer/CVE-2026-32707-PX4-Autopilot-tattu_can-Stack-Buffer-Overflow-DoS-](https://github.com/mbanyamer/CVE-2026-32707-PX4-Autopilot-tattu_can-Stack-Buffer-Overflow-DoS-)
 
 ### CVE-2026-32743 (2026-03-18)
 
@@ -1946,6 +1926,13 @@
 </code>
 
 - [portbuster1337/CVE-2026-33137](https://github.com/portbuster1337/CVE-2026-33137)
+
+### CVE-2026-33146 (2026-04-14)
+
+<code>Docmost is open-source collaborative wiki and documentation software. An authorization bypass vulnerability in versions 0.70.0 through 0.70.2 exposes restricted child page titles and text snippets through the public search endpoint (`POST /api/search/share-search`) for publicly shared content. This flaw allows unauthenticated users to enumerate and retrieve content that should remain hidden from public share viewers, leading to a confidentiality breach. Version 0.70.3 contains a patch.
+</code>
+
+- [0xmrma/CVE-2026-33146](https://github.com/0xmrma/CVE-2026-33146)
 
 ### CVE-2026-33150 (2026-03-20)
 
@@ -2045,6 +2032,27 @@
 - [hnytgl/CVE-2026-34197](https://github.com/hnytgl/CVE-2026-34197)
 - [asdasddqwdq29-a11y/CVE-2026-34197](https://github.com/asdasddqwdq29-a11y/CVE-2026-34197)
 
+### CVE-2026-34207 (2026-05-22)
+
+<code>TypeBot is a chatbot builder tool. In versions prior to 3.16.0, SSRF protection for Webhook / HTTP Request blocks validates only the URL string, blocked hostname literals, and literal IP formats. It does not resolve DNS before allowing the request. As a result, a hostname such as ssrf-repro.example that resolves to 127.0.0.1, 169.254.169.254, or RFC1918/private space passes validation and is later fetched by the backend HTTP client. This enables server-side request forgery to loopback, cloud metadata, and private network targets. This issue has been resolved in version 3.16.0.
+</code>
+
+- [0xmrma/CVE-2026-34207](https://github.com/0xmrma/CVE-2026-34207)
+
+### CVE-2026-34212 (2026-04-14)
+
+<code>Docmost is open-source collaborative wiki and documentation software. In versions prior to 0.71.0, improper neutralization of attachment URLs in Docmost allows a low-privileged authenticated user to store a malicious `javascript:` URL inside an attachment node in page content. When another user views the page and activates the attachment link/icon, attacker-controlled JavaScript executes in the context of the Docmost origin. Version 0.71.0 patches the issue.
+</code>
+
+- [0xmrma/CVE-2026-34212](https://github.com/0xmrma/CVE-2026-34212)
+
+### CVE-2026-34213 (2026-04-14)
+
+<code>Docmost is open-source collaborative wiki and documentation software. Starting in version 0.3.0 and prior to version 0.71.0, improper authorization in Docmost allows a low-privileged authenticated user to overwrite another page's attachment within the same workspace by supplying a victim `attachmentId` to `POST /api/files/upload`. This is a remote integrity issue requiring no victim interaction. Version 0.71.0 contains a patch.
+</code>
+
+- [0xmrma/CVE-2026-34213](https://github.com/0xmrma/CVE-2026-34213)
+
 ### CVE-2026-34234 (2026-05-19)
 
 <code>CtrlPanel is open-source billing software for hosting providers. In versions 1.1.1 and prior, the web-based installer (public/installer/index.php) is vulnerable to unauthenticated Remote Code Execution (RCE) because it performs the install.lock check only after including and executing form handler files, leaving installer endpoints reachable on already-installed instances. The handlers also pass unsanitized user input directly into shell commands, allowing an attacker to submit crafted requests that execute arbitrary commands on the server. The vulnerability stems from two combined weaknesses: (1) premature form handler execution before the lock file gate, and (2) unsafe use of user input in shell command construction. This issue is reported to be actively exploited in the wild. The issue has been fixed in version 1.2.0.
@@ -2137,6 +2145,7 @@
 
 - [HORKimhab/CVE-2026-35273](https://github.com/HORKimhab/CVE-2026-35273)
 - [0xBlackash/CVE-2026-35273](https://github.com/0xBlackash/CVE-2026-35273)
+- [12hrformat/CVE-2026-35273-POC](https://github.com/12hrformat/CVE-2026-35273-POC)
 
 ### CVE-2026-35330
 - [JohannesLks/CVE-2026-35330](https://github.com/JohannesLks/CVE-2026-35330)
@@ -2637,7 +2646,6 @@
 - [bughunt4me/cpanelCVE-2026-41940](https://github.com/bughunt4me/cpanelCVE-2026-41940)
 - [Defacto-ridgepole254/CVE-2026-41940-Exploit-PoC](https://github.com/Defacto-ridgepole254/CVE-2026-41940-Exploit-PoC)
 - [murrez/CVE-2026-41940](https://github.com/murrez/CVE-2026-41940)
-- [branixsolutions/Security-CVE-2026-41940-cPanel-WHM-WP2](https://github.com/branixsolutions/Security-CVE-2026-41940-cPanel-WHM-WP2)
 - [acuciureanu/cpanel2shell-honeypot](https://github.com/acuciureanu/cpanel2shell-honeypot)
 - [SreejaPuthan/cpanel-control-plane-exposure-check](https://github.com/SreejaPuthan/cpanel-control-plane-exposure-check)
 - [44pie/cpsniper](https://github.com/44pie/cpsniper)
@@ -2650,7 +2658,6 @@
 - [willygailo/CVE-2026-41940-Linux](https://github.com/willygailo/CVE-2026-41940-Linux)
 - [yurahshell/CVE-2026-41940](https://github.com/yurahshell/CVE-2026-41940)
 - [asdasddqwdq29-a11y/CVE-2026-41940](https://github.com/asdasddqwdq29-a11y/CVE-2026-41940)
-- [clsmight/CVE-2026-41940-PoC](https://github.com/clsmight/CVE-2026-41940-PoC)
 
 ### CVE-2026-42048 (2026-05-12)
 
@@ -2665,6 +2672,13 @@
 </code>
 
 - [HORKimhab/CVE-2026-42055](https://github.com/HORKimhab/CVE-2026-42055)
+
+### CVE-2026-42089 (2026-06-16)
+
+<code>Yeoman Environment provides an API to discover, create, and run generators, and to configure where and how a generator is resolved. Versions 2.9.0 through 6.0.0 install missing local generator packages from caller-supplied package names without user confirmation. In downstream consumers that pass attacker-controlled project configuration into this path, this can result in arbitrary package installation and code execution during CLI bootstrap. The vulnerable method is installLocalGenerators(), which calls repository.install() directly without prompting the user. This issue has been fixed in version 6.0.0.
+</code>
+
+- [0xmrma/CVE-2026-42089](https://github.com/0xmrma/CVE-2026-42089)
 
 ### CVE-2026-42096 (2026-05-19)
 
@@ -2847,7 +2861,6 @@
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nxfrm: esp: avoid in-place decrypt on shared skb frags\n\nMSG_SPLICE_PAGES can attach pages from a pipe directly to an skb. TCP\nmarks such skbs with SKBFL_SHARED_FRAG after skb_splice_from_iter(),\nso later paths that may modify packet data can first make a private\ncopy. The IPv4/IPv6 datagram append paths did not set this flag when\nsplicing pages into UDP skbs.\n\nThat leaves an ESP-in-UDP packet made from shared pipe pages looking\nlike an ordinary uncloned nonlinear skb. ESP input then takes the no-COW\nfast path for uncloned skbs without a frag_list and decrypts in place\nover data that is not owned privately by the skb.\n\nMark IPv4/IPv6 datagram splice frags with SKBFL_SHARED_FRAG, matching\nTCP. Also make ESP input fall back to skb_cow_data() when the flag is\npresent, so ESP does not decrypt externally backed frags in place.\nPrivate nonlinear skb frags still use the existing fast path.\n\nThis intentionally does not change ESP output. In esp_output_head(),\nthe path that appends the ESP trailer to existing skb tailroom without\ncalling skb_cow_data() is not reachable for nonlinear skbs:\nskb_tailroom() returns zero when skb-&gt;data_len is nonzero, while ESP\ntailen is positive. Thus ESP output will either use the separate\ndestination-frag path or fall back to skb_cow_data().
 </code>
 
-- [Percivalll/Dirty-Frag-Kubernetes-PoC](https://github.com/Percivalll/Dirty-Frag-Kubernetes-PoC)
 - [mym0us3r/DIRTY-FRAG-Detection-with-Wazuh-4.14.4](https://github.com/mym0us3r/DIRTY-FRAG-Detection-with-Wazuh-4.14.4)
 - [0xBlackash/CVE-2026-43284](https://github.com/0xBlackash/CVE-2026-43284)
 - [suominen/CVE-2026-43284](https://github.com/suominen/CVE-2026-43284)
@@ -2899,6 +2912,7 @@
 
 - [0xBlackash/CVE-2026-43503](https://github.com/0xBlackash/CVE-2026-43503)
 - [mooder1/dirtyclone-CVE-2026-43503](https://github.com/mooder1/dirtyclone-CVE-2026-43503)
+- [aexdyhaxor/CVE-2026-43503-DirtyClone](https://github.com/aexdyhaxor/CVE-2026-43503-DirtyClone)
 
 ### CVE-2026-43512 (2026-05-12)
 
@@ -2984,6 +2998,13 @@
 
 - [hakaioffsec/CVE-2026-44706](https://github.com/hakaioffsec/CVE-2026-44706)
 
+### CVE-2026-44788 (2026-05-26)
+
+<code>SharpCompress is a fully managed C# library to deal with many compression types and formats. In 0.47.4 and earlier, a path traversal vulnerability in IArchive.WriteToDirectory() allows a malicious archive to create directories outside the intended extraction root. For TAR archives, this can be escalated to arbitrary file writes by chaining with a symlink entry, giving a full write primitive on the target filesystem subject to the permissions of the running process.
+</code>
+
+- [e-corp-demo/CVE-2026-44788](https://github.com/e-corp-demo/CVE-2026-44788)
+
 ### CVE-2026-44881 (2026-05-28)
 
 <code>Portainer Community Edition is a lightweight service delivery platform for containerized applications that can be used to manage Docker, Swarm, Kubernetes and ACI environments. From 2.33.0 to before 2.33.8, 2.39.2, and 2.41.0, Portainer supports deploying stacks from Git repositories. When a Git-backed stack is created or updated, Portainer clones the repository using go-git v5, which translates Git blob entries with mode 0o120000 (symlink) into real OS symlinks on the host filesystem via os.Symlink. The only entry blocked from becoming a symlink is .gitmodules; every other path is created as a symlink without validation. Portainer's GET /api/stacks/{id}/file endpoint then reads the stack entry point with os.ReadFile, which follows OS symlinks transparently. A repository containing docker-compose.yml as a symlink to an arbitrary filesystem path causes the symlink target's contents to be returned verbatim in the HTTP response. Any authenticated user with rights to create or update a Git-backed stack — the default configuration in Portainer CE — can read arbitrary files accessible to the Portainer process. This vulnerability is fixed in 2.33.8, 2.39.2, and 2.41.0.
@@ -3066,7 +3087,6 @@
 - [nkopylov/tanscript-exploit-check](https://github.com/nkopylov/tanscript-exploit-check)
 - [prashanthnataraj/mini-shai-hulud-detector](https://github.com/prashanthnataraj/mini-shai-hulud-detector)
 - [renewablehacking/CVE-2026-45321-Tanstack](https://github.com/renewablehacking/CVE-2026-45321-Tanstack)
-- [adriannurrr/CVE-2026-45321-Tanstack](https://github.com/adriannurrr/CVE-2026-45321-Tanstack)
 - [7whyex/CVE-2026-45321-Tanstack](https://github.com/7whyex/CVE-2026-45321-Tanstack)
 
 ### CVE-2026-45332 (2026-05-28)
@@ -3133,6 +3153,9 @@
 </code>
 
 - [morepoints/CVE-2026-45777](https://github.com/morepoints/CVE-2026-45777)
+
+### CVE-2026-45806
+- [0xmrma/CVE-2026-45806](https://github.com/0xmrma/CVE-2026-45806)
 
 ### CVE-2026-45829 (2026-05-18)
 
@@ -3745,6 +3768,13 @@
 </code>
 
 - [joshuavanderpoll/CVE-2026-54806](https://github.com/joshuavanderpoll/CVE-2026-54806)
+
+### CVE-2026-54807 (2026-06-17)
+
+<code>Unauthenticated Privilege Escalation in Registration Form for WooCommerce &lt;= 1.0.9 versions.
+</code>
+
+- [izxci/CVE-2026-54807](https://github.com/izxci/CVE-2026-54807)
 
 ### CVE-2026-55168
 - [KovachVL/CVE-2026-55168](https://github.com/KovachVL/CVE-2026-55168)
@@ -5623,6 +5653,7 @@
 - [undefined-name12/CVE-2025-8088-Winrar](https://github.com/undefined-name12/CVE-2025-8088-Winrar)
 - [lennertdefauw/CVE-2025-8088](https://github.com/lennertdefauw/CVE-2025-8088)
 - [shaheeryasirofficial/CVE-2025-8088](https://github.com/shaheeryasirofficial/CVE-2025-8088)
+- [Lewis-Ricardo/Amaranth-Project](https://github.com/Lewis-Ricardo/Amaranth-Project)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -6976,7 +7007,6 @@
 </code>
 
 - [skadevare/CiscoISE-CVE-2025-20282-POC](https://github.com/skadevare/CiscoISE-CVE-2025-20282-POC)
-- [pairofglasses/cve-2025-20282](https://github.com/pairofglasses/cve-2025-20282)
 
 ### CVE-2025-20333 (2025-09-25)
 
@@ -12842,13 +12872,6 @@
 - [Theethat-Thamwasin/CVE-2025-56399](https://github.com/Theethat-Thamwasin/CVE-2025-56399)
 - [im-hanzou/CVE-2025-56399](https://github.com/im-hanzou/CVE-2025-56399)
 
-### CVE-2025-56450 (2025-10-21)
-
-<code>Log2Space Subscriber Management Software 1.1 is vulnerable to unauthenticated SQL injection via the `lead_id` parameter in the `/l2s/api/selfcareLeadHistory` endpoint. A remote attacker can exploit this by sending a specially crafted POST request, resulting in the execution of arbitrary SQL queries. The backend fails to sanitize the user input, allowing enumeration of database schemas, table names, and potentially leading to full database compromise.
-</code>
-
-- [apboss123/CVE-2025-56450](https://github.com/apboss123/CVE-2025-56450)
-
 ### CVE-2025-56499 (2025-11-18)
 
 <code>Incorrect access control in mihomo v1.19.11 allows authenticated attackers with low-level privileges to read arbitrary files with elevated privileges via obtaining the external control key from the config file.
@@ -13264,6 +13287,7 @@
 <code>Deserialization of untrusted data in Windows Server Update Service allows an unauthorized attacker to execute code over a network.
 </code>
 
+- [QurtiDev/WSUS-CVE-2025-59287-RCE](https://github.com/QurtiDev/WSUS-CVE-2025-59287-RCE)
 - [Twodimensionalitylevelcrossing817/CVE-2025-59287](https://github.com/Twodimensionalitylevelcrossing817/CVE-2025-59287)
 - [M507/CVE-2025-59287-PoC](https://github.com/M507/CVE-2025-59287-PoC)
 - [Adel-kaka-dz/cve-2025-59287](https://github.com/Adel-kaka-dz/cve-2025-59287)
@@ -17529,13 +17553,6 @@
 </code>
 
 - [RevoltSecurities/CVE-2024-7339](https://github.com/RevoltSecurities/CVE-2024-7339)
-
-### CVE-2024-7387 (2024-09-16)
-
-<code>A flaw was found in openshift/builder. This vulnerability allows command injection via path traversal, where a malicious user can execute arbitrary commands on the OpenShift node running the builder container. When using the “Docker” strategy, executable files inside the privileged build container can be overridden using the `spec.source.secrets.secret.destinationDir` attribute of the `BuildConfig` definition. An attacker running code in a privileged container could escalate their permissions on the node running the container.
-</code>
-
-- [pairofglasses/cve-2024-7387](https://github.com/pairofglasses/cve-2024-7387)
 
 ### CVE-2024-7399 (2024-08-09)
 
@@ -21973,6 +21990,20 @@
 
 - [fdzdev/CVE-2024-33231](https://github.com/fdzdev/CVE-2024-33231)
 
+### CVE-2024-33297 (2025-01-10)
+
+<code>Cross Site Scripting vulnerability in Microweber v.2.0.9 allows a remote attacker to execute arbitrary code via the campaign Name (Internal Name) field in the Add new campaign function
+</code>
+
+- [MathSabo/CVE-2024-33297](https://github.com/MathSabo/CVE-2024-33297)
+
+### CVE-2024-33298 (2025-01-10)
+
+<code>Microweber Cross Site Scripting vulnerability in Microweber v.2.0.9 allows a remote attacker to execute arbitrary code via the create new backup function in the endpoint /admin/module/view?type=admin__backup
+</code>
+
+- [MathSabo/CVE-2024-33298](https://github.com/MathSabo/CVE-2024-33298)
+
 ### CVE-2024-33299 (2025-01-10)
 
 <code>Cross Site Scripting vulnerability in Microweber v.2.0.9 allows a remote attacker to execute arbitrary code via the First Name and Last Name parameters in the endpoint /admin/module/view?type=users
@@ -24312,13 +24343,6 @@
 
 - [w0r1i0g1ht/CVE-2024-45440](https://github.com/w0r1i0g1ht/CVE-2024-45440)
 - [zoomdbz/CVE-2024-45440](https://github.com/zoomdbz/CVE-2024-45440)
-
-### CVE-2024-45496 (2024-09-16)
-
-<code>A flaw was found in OpenShift. This issue occurs due to the misuse of elevated privileges in the OpenShift Container Platform's build process. During the build initialization step, the git-clone container is run with a privileged security context, allowing unrestricted access to the node. An attacker with developer-level access can provide a crafted .gitconfig file containing commands executed during the cloning process, leading to arbitrary command execution on the worker node. An attacker running code in a privileged container could escalate their permissions on the node running the container.
-</code>
-
-- [pairofglasses/cve-2024-45496](https://github.com/pairofglasses/cve-2024-45496)
 
 ### CVE-2024-45507 (2024-09-04)
 
@@ -71676,6 +71700,7 @@
 - [Youneskc/SMB-Penetration-Testing-NTLM-Relay-Version-2-](https://github.com/Youneskc/SMB-Penetration-Testing-NTLM-Relay-Version-2-)
 - [harshiys/cybersecurity-home-lab-btp](https://github.com/harshiys/cybersecurity-home-lab-btp)
 - [DesmondHinds94/S22_The_Verification_Protocol](https://github.com/DesmondHinds94/S22_The_Verification_Protocol)
+- [EthicalHackingLabs/metasploitable2-exploitation-metasploit](https://github.com/EthicalHackingLabs/metasploitable2-exploitation-metasploit)
 
 ### CVE-2007-3280 (2007-06-19)
 
