@@ -25,6 +25,7 @@
 - [0xbinder/CVE-2026-0073](https://github.com/0xbinder/CVE-2026-0073)
 - [m00ddy/CVE-2026-0073-Android-client-TLS-auth-bypass](https://github.com/m00ddy/CVE-2026-0073-Android-client-TLS-auth-bypass)
 - [fredevsec/CVE-2026-0073](https://github.com/fredevsec/CVE-2026-0073)
+- [ctnBobong32/CVE-2026-0073-Android-ADBD-bypass-POC_zh_CN](https://github.com/ctnBobong32/CVE-2026-0073-Android-ADBD-bypass-POC_zh_CN)
 
 ### CVE-2026-0091 (2026-06-01)
 
@@ -943,13 +944,6 @@
 
 - [passwa11/CVE-2026-10187](https://github.com/passwa11/CVE-2026-10187)
 
-### CVE-2026-10243 (2026-06-01)
-
-<code>A security vulnerability has been detected in code-projects Smart Parking System 1.0. Affected is an unknown function of the component Admin Endpoint. Such manipulation leads to missing authentication. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used. Multiple endpoints are affected.
-</code>
-
-- [Xmyronn/CVE-2026-10243-AUTH](https://github.com/Xmyronn/CVE-2026-10243-AUTH)
-
 ### CVE-2026-10288 (2026-06-01)
 
 <code>A vulnerability was identified in code-projects Hotel and Tourism Reservation System 1.0. This issue affects the function password_verify of the file /admin/login.php of the component Admin Login. Such manipulation of the argument Password leads to improper authentication. It is possible to launch the attack remotely. The exploit is publicly available and might be used.
@@ -1093,7 +1087,11 @@
 
 - [Polosss/By-Poloss..-..CVE-2026-11912](https://github.com/Polosss/By-Poloss..-..CVE-2026-11912)
 
-### CVE-2026-12415
+### CVE-2026-12415 (2026-06-27)
+
+<code>The Invoice Generator plugin for WordPress is vulnerable to privilege escalation due to a missing capability check on the pravel_invoice_edit_account() AJAX action in versions up to, and including, 1.0.0. The handler is exposed via wp_ajax_nopriv_pravel_invoice_edit_account, accepts an attacker-controlled user_id and user_email from POST data, and calls wp_update_user() without verifying authentication, ownership, or a nonce. This makes it possible for unauthenticated attackers to change the email address of any user, including administrators, and then trigger WordPress's password reset flow to gain access to the targeted account.
+</code>
+
 - [xxconi/CVE-2026-12415-or-CVE-2026-12416.py](https://github.com/xxconi/CVE-2026-12415-or-CVE-2026-12416.py)
 
 ### CVE-2026-12416 (2026-06-24)
@@ -1102,6 +1100,13 @@
 </code>
 
 - [Nxploited/CVE-2026-12416-CVE-2026-12417](https://github.com/Nxploited/CVE-2026-12416-CVE-2026-12417)
+
+### CVE-2026-12432 (2026-06-27)
+
+<code>The WP Full Stripe Free plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 8.4.3 via the wpfs_update_failed_payment_status AJAX action. The handler is registered through both wp_ajax_ and wp_ajax_nopriv_ hooks and the underlying update_failed_payment_status() function performs no capability check, no nonce verification, and no logged-in check before calling $this-&gt;db-&gt;updatePaymentByEventId() with attacker-controlled POST parameters. This makes it possible for unauthenticated attackers who can obtain a valid Stripe Payment Intent ID for the target site (Payment Intent IDs are exposed to the customer browser during normal Stripe.js checkout flows) to manipulate payment records in the site's database, marking previously successful payments as failed and overwriting failure codes and messages with attacker-supplied values.
+</code>
+
+- [Polosss/By-Poloss..-..CVE-2026-12432-PoC](https://github.com/Polosss/By-Poloss..-..CVE-2026-12432-PoC)
 
 ### CVE-2026-20127 (2026-02-25)
 
@@ -1416,6 +1421,7 @@
 - [K3ysTr0K3R/CVE-2026-24061](https://github.com/K3ysTr0K3R/CVE-2026-24061)
 - [anxs3c/CVE-2026-24061-GNU-InetUtils-telnetd](https://github.com/anxs3c/CVE-2026-24061-GNU-InetUtils-telnetd)
 - [akpmarcelin/CVE-2026-24061-lab](https://github.com/akpmarcelin/CVE-2026-24061-lab)
+- [Cosm3No1de/htb-orion-writeup](https://github.com/Cosm3No1de/htb-orion-writeup)
 
 ### CVE-2026-24072 (2026-05-04)
 
@@ -1894,13 +1900,6 @@
 
 - [kaleth4/CVE-2026-32746](https://github.com/kaleth4/CVE-2026-32746)
 
-### CVE-2026-33006 (2026-05-04)
-
-<code>A timing attack against mod_auth_digest in Apache HTTP Server 2.4.66 allows a bypass of Digest authentication by a remote attacker.\n\nUsers are recommended to upgrade to version 2.4.67, which fixes this issue.
-</code>
-
-- [SimoesCTT/CTT-enhanced-Apache-mod_auth_digest-timing-attack-exploit](https://github.com/SimoesCTT/CTT-enhanced-Apache-mod_auth_digest-timing-attack-exploit)
-
 ### CVE-2026-33017 (2026-03-20)
 
 <code>Langflow is a tool for building and deploying AI-powered agents and workflows. In versions prior to 1.9.0, the POST /api/v1/build_public_tmp/{flow_id}/flow endpoint allows building public flows without requiring authentication. When the optional data parameter is supplied, the endpoint uses attacker-controlled flow data (containing arbitrary Python code in node definitions) instead of the stored flow data from the database. This code is passed to exec() with zero sandboxing, resulting in unauthenticated remote code execution. This is distinct from CVE-2025-3248, which fixed /api/v1/validate/code by adding authentication. The build_public_tmp endpoint is designed to be unauthenticated (for public flows) but incorrectly accepts attacker-supplied flow data containing arbitrary executable code. This issue has been fixed in version 1.9.0.
@@ -2155,6 +2154,13 @@
 
 - [emanuelepns/immich-exfiltration-demo](https://github.com/emanuelepns/immich-exfiltration-demo)
 
+### CVE-2026-35585 (2026-04-07)
+
+<code>File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. From 2.0.0 until 2.33.8, the hook system in File Browser — which executes administrator-defined shell commands on file events such as upload, rename, and delete — is vulnerable to OS command injection. Variable substitution for values like $FILE and $USERNAME is performed via os.Expand without sanitization. An attacker with file write permission can craft a malicious filename containing shell metacharacters, causing the server to execute arbitrary OS commands when the hook fires. This results in Remote Code Execution (RCE). This feature has been disabled by default for all installations from v2.33.8 onwards, including for existent installations.
+</code>
+
+- [Saku0512/CVE-2026-35585-poc](https://github.com/Saku0512/CVE-2026-35585-poc)
+
 ### CVE-2026-35603 (2026-04-17)
 
 <code>Claude Code is an agentic coding tool. In versions prior to 2.1.75 on Windows, Claude Code loaded the system-wide default configuration from C:\ProgramData\ClaudeCode\managed-settings.json without validating directory ownership or access permissions. Because the ProgramData directory is writable by non-administrative users by default and the ClaudeCode subdirectory was not pre-created or access-restricted, a low-privileged local user could create this directory and place a malicious configuration file that would be automatically loaded for any user launching Claude Code on the same machine. Exploiting this would have required a shared multi-user Windows system and a victim user to launch Claude Code after the malicious configuration was placed. This issue has been fixed on version 2.1.75.
@@ -2245,6 +2251,9 @@
 ### CVE-2026-36826
 - [Forklit/CVE-2026-36826](https://github.com/Forklit/CVE-2026-36826)
 
+### CVE-2026-36834
+- [kpatsakis/CVE-2026-36834](https://github.com/kpatsakis/CVE-2026-36834)
+
 ### CVE-2026-36980
 - [canomer/CVE-2026-36980-Kernel-BSOD-DoS-PoC](https://github.com/canomer/CVE-2026-36980-Kernel-BSOD-DoS-PoC)
 
@@ -2297,28 +2306,11 @@
 ### CVE-2026-37432
 - [diao111111/CVE-2026-37432](https://github.com/diao111111/CVE-2026-37432)
 
-### CVE-2026-37637
-- [SLO-CYBER-SEC/CVE-2026-37637](https://github.com/SLO-CYBER-SEC/CVE-2026-37637)
-
 ### CVE-2026-38165
 - [AT190510-Cuong/CVE-2026-38165-SSTI-](https://github.com/AT190510-Cuong/CVE-2026-38165-SSTI-)
 
 ### CVE-2026-38194
 - [4D4J/cormem-read-poc](https://github.com/4D4J/cormem-read-poc)
-
-### CVE-2026-38360 (2026-05-08)
-
-<code>Directory Traversal vulnerability in fohrloop dash-uploader v.0.1.0 through v.0.7.0a2 allows a remote attacker to execute arbitrary code via the dash_uploader/httprequesthandler.py, BaseHttpRequestHandler.get_temp_root(), BaseHttpRequestHandler._post() components.
-</code>
-
-- [a1ohadance/CVE-2026-38360](https://github.com/a1ohadance/CVE-2026-38360)
-
-### CVE-2026-38361 (2026-05-08)
-
-<code>Multiple unauthenticated denial-of-service (DoS) issues in fohrloop dash-uploader v0.1.0 through v0.7.0a2. The chunked-upload handler (dash_uploader/httprequesthandler.py, dash_uploader/upload.py) trusts unsanitized, attacker-controlled upload parameters (e.g. flowTotalChunks) and does not enforce the documented max_file_size limit, allowing a remote, unauthenticated attacker to cause an out-of-memory (OOM) process crash (unbounded range(1, flowTotalChunks + 1) allocation), truncation of the target file to zero bytes (flowTotalChunks=0, where the all([]) == True quirk runs the file-assembly branch on zero chunks), permanent disk exhaustion (never-cleaned-up temporary directories per flowIdentifier), and a complete bypass of the documented max_file_size limit.
-</code>
-
-- [a1ohadance/CVE-2026-38361](https://github.com/a1ohadance/CVE-2026-38361)
 
 ### CVE-2026-38422 (2026-05-27)
 
@@ -2447,13 +2439,6 @@
 </code>
 
 - [HORKimhab/CVE-2026-39813](https://github.com/HORKimhab/CVE-2026-39813)
-
-### CVE-2026-39816 (2026-05-08)
-
-<code>The optional extension component TinkerpopClientService is missing the Restricted annotation with the Execute Code Required Permission in Apache NiFi 2.0.0-M1 through 2.8.0. The TinkerpopClientService supports configuration of ByteCode Submission for the Script Submission Type, enabling Groovy Script execution in the service prior to submitting the query. The missing Restricted annotation allows users without the Execute Code Permission to configure the Service in installations that use fine-grained authorization and have the optional TinkerpopClientService installed. Apache NiFi installations that do not have the nifi-other-graph-services-nar installed are not subject to this vulnerability. Upgrading to Apache NiFi 2.9.0 is the recommended mitigation.
-</code>
-
-- [ZeroPathAI/nifi-CVE-2026-39816-poc](https://github.com/ZeroPathAI/nifi-CVE-2026-39816-poc)
 
 ### CVE-2026-39938 (2026-06-24)
 
@@ -2638,11 +2623,9 @@
 - [mahfuzreham/cpanel-cve-2026-41940](https://github.com/mahfuzreham/cpanel-cve-2026-41940)
 - [Christian93111/CVE-2026-41940](https://github.com/Christian93111/CVE-2026-41940)
 - [Jenderal92/CVE-2026-41940](https://github.com/Jenderal92/CVE-2026-41940)
-- [MrOplus/CVE-2026-41940](https://github.com/MrOplus/CVE-2026-41940)
 - [bughunt4me/cpanelCVE-2026-41940](https://github.com/bughunt4me/cpanelCVE-2026-41940)
 - [Defacto-ridgepole254/CVE-2026-41940-Exploit-PoC](https://github.com/Defacto-ridgepole254/CVE-2026-41940-Exploit-PoC)
 - [murrez/CVE-2026-41940](https://github.com/murrez/CVE-2026-41940)
-- [acuciureanu/cpanel2shell-honeypot](https://github.com/acuciureanu/cpanel2shell-honeypot)
 - [SreejaPuthan/cpanel-control-plane-exposure-check](https://github.com/SreejaPuthan/cpanel-control-plane-exposure-check)
 - [44pie/cpsniper](https://github.com/44pie/cpsniper)
 - [ngksiva/cpanel-forensics](https://github.com/ngksiva/cpanel-forensics)
@@ -2859,7 +2842,6 @@
 
 - [mym0us3r/DIRTY-FRAG-Detection-with-Wazuh-4.14.4](https://github.com/mym0us3r/DIRTY-FRAG-Detection-with-Wazuh-4.14.4)
 - [suominen/CVE-2026-43284](https://github.com/suominen/CVE-2026-43284)
-- [AK777177/Dirty-Frag-Analysis](https://github.com/AK777177/Dirty-Frag-Analysis)
 - [haydenjames/dirty-frag-check](https://github.com/haydenjames/dirty-frag-check)
 - [metalx1993/dirtyfrag-patches](https://github.com/metalx1993/dirtyfrag-patches)
 - [ryan2929/CVE-2026-43284-](https://github.com/ryan2929/CVE-2026-43284-)
@@ -2891,6 +2873,12 @@
 - [tanzz1337/CVE-2026-43494-PinTheft-PoC](https://github.com/tanzz1337/CVE-2026-43494-PinTheft-PoC)
 - [Koshmare-Blossom/PinTheft-asm](https://github.com/Koshmare-Blossom/PinTheft-asm)
 - [letsr00t/CVE-2026-43494-PinTheft-PoC](https://github.com/letsr00t/CVE-2026-43494-PinTheft-PoC)
+
+### CVE-2026-43499 (2026-05-21)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nrtmutex: Use waiter::task instead of current in remove_waiter()\n\nremove_waiter() is used by the slowlock paths, but it is also used for\nproxy-lock rollback in rt_mutex_start_proxy_lock() when invoked from\nfutex_requeue().\n\nIn the latter case waiter::task is not current, but remove_waiter()\noperates on current for the dequeue operation. That results in several\nproblems:\n\n  1) the rbtree dequeue happens without waiter::task::pi_lock being held\n\n  2) the waiter task's pi_blocked_on state is not cleared, which leaves a\n     dangling pointer primed for UAF around.\n\n  3) rt_mutex_adjust_prio_chain() operates on the wrong top priority waiter\n     task\n\nUse waiter::task instead of current in all related operations in\nremove_waiter() to cure those problems.\n\n[ tglx: Fixup rt_mutex_adjust_prio_chain(), add a comment and amend the\n  </code>
+
+- [MobiusM/CVE-2026-43499](https://github.com/MobiusM/CVE-2026-43499)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -3064,7 +3052,11 @@
 
 - [venglin/setcred](https://github.com/venglin/setcred)
 
-### CVE-2026-45258
+### CVE-2026-45258 (2026-06-27)
+
+<code>dsp_mmap_single() validated the requested mapping by checking the sum of the user-supplied offset and length against the buffer size.  This addition could overflow, so that a large offset and length wrapped around and passed the check.  The offset was then narrowed from 64 to 32 bits when converted to a buffer address, yielding a mapping that extended past the audio buffer into unrelated kernel memory.\n\nThe /dev/dsp device nodes are world-accessible by default.  On a system with an audio device, either issue allows an unprivileged local user to read and write kernel memory, which can be used to escalate privileges, potentially gaining full control of the affected system.  At a minimum, an attacker can crash the kernel, resulting in a Denial of Service (DoS).
+</code>
+
 - [Yayoi-cs/CVE-2026-45258_1day_LPE_exploit](https://github.com/Yayoi-cs/CVE-2026-45258_1day_LPE_exploit)
 
 ### CVE-2026-45321 (2026-05-12)
@@ -3208,6 +3200,7 @@
 
 - [sgkdev/packet_edit_meme](https://github.com/sgkdev/packet_edit_meme)
 - [0xBlackash/CVE-2026-46331](https://github.com/0xBlackash/CVE-2026-46331)
+- [HORKimhab/CVE-2026-46331](https://github.com/HORKimhab/CVE-2026-46331)
 
 ### CVE-2026-46333 (2026-05-15)
 
@@ -3367,6 +3360,13 @@
 ### CVE-2026-48019
 - [derrickschoen/laravel-framework](https://github.com/derrickschoen/laravel-framework)
 
+### CVE-2026-48020 (2026-06-23)
+
+<code>Traefik is an HTTP reverse proxy and load balancer. Prior to 2.11.48, 3.6.19, and 3.7.3, there is a high severity vulnerability in Traefik's StripPrefix middleware that allows an unauthenticated attacker to bypass route-level authentication and authorization. When a public router matches on a PathPrefix rule and applies the StripPrefix middleware, a request path containing .. or its percent-encoded form %2e%2e can match the public route at routing time and then, after the prefix is stripped and the path is normalized, resolve to a path served by a separate, authenticated router. As a result, an attacker can reach protected backend paths — such as admin or internal configuration endpoints — without satisfying the authentication middleware attached to the protected router. This vulnerability is fixed in 2.11.48, 3.6.19, and 3.7.3.
+</code>
+
+- [Hunt-Benito/traefik-stripprefix-auth-bypass-cve-2026-48020-path-normalization](https://github.com/Hunt-Benito/traefik-stripprefix-auth-bypass-cve-2026-48020-path-normalization)
+
 ### CVE-2026-48030
 - [muslimbek-0x/CVE-2026-48030](https://github.com/muslimbek-0x/CVE-2026-48030)
 
@@ -3490,7 +3490,8 @@
 - [wearehackers160/CVE-2026-48907](https://github.com/wearehackers160/CVE-2026-48907)
 - [g0thamRabb1t/joomla-jce-cve-2026-48907-detection](https://github.com/g0thamRabb1t/joomla-jce-cve-2026-48907-detection)
 - [sec0x/CVE-2026-48907](https://github.com/sec0x/CVE-2026-48907)
-- [0xgh057r3c0n/CVE-2026-48907](https://github.com/0xgh057r3c0n/CVE-2026-48907)
+- [gh1mau/masta-cve-2026-48907](https://github.com/gh1mau/masta-cve-2026-48907)
+- [grayxploit/CVE-2026-48907](https://github.com/grayxploit/CVE-2026-48907)
 
 ### CVE-2026-48908 (2026-06-20)
 
@@ -3589,10 +3590,18 @@
 
 - [hadhub/CVE-2026-49345-Mercator-SSRF](https://github.com/hadhub/CVE-2026-49345-Mercator-SSRF)
 
-### CVE-2026-49413
+### CVE-2026-49413 (2026-06-27)
+
+<code>The Linuxulator determined whether a binary was set-user-ID or set-group-ID by checking the P_SUGID process flag.  During execve(2), this flag is not yet set at the point where the auxiliary vector is constructed, so AT_SECURE was incorrectly set to zero for set-user-ID and set-group-ID executables.\n\nAn unprivileged local user can inject a shared library via LD_PRELOAD into a set-user-ID or set-group-ID Linux binary, gaining the privileges of that binary.
+</code>
+
 - [ii4gsp/CVE-2026-49413](https://github.com/ii4gsp/CVE-2026-49413)
 
-### CVE-2026-49417
+### CVE-2026-49417 (2026-06-27)
+
+<code>Second, the audio buffer backing a mapping could be freed when the device was closed even though the mapping remained valid.  The freed memory could then be reused elsewhere while still accessible through the stale mapping.\n\nThe /dev/dsp device nodes are world-accessible by default.  On a system with an audio device, either issue allows an unprivileged local user to read and write kernel memory, which can be used to escalate privileges, potentially gaining full control of the affected system.  At a minimum, an attacker can crash the kernel, resulting in a Denial of Service (DoS).
+</code>
+
 - [Yayoi-cs/CVE-2026-49417_1day_LPE_exploit](https://github.com/Yayoi-cs/CVE-2026-49417_1day_LPE_exploit)
 
 ### CVE-2026-49492 (2026-06-05)
@@ -9317,6 +9326,7 @@
 - [TheMursalin/CVE-2025-32432](https://github.com/TheMursalin/CVE-2025-32432)
 - [cd-ratel/CVE-2025-32432](https://github.com/cd-ratel/CVE-2025-32432)
 - [n40y/PoC_CVE-2025-32432](https://github.com/n40y/PoC_CVE-2025-32432)
+- [Cosm3No1de/htb-orion-writeup](https://github.com/Cosm3No1de/htb-orion-writeup)
 
 ### CVE-2025-32433 (2025-04-16)
 
@@ -10880,13 +10890,6 @@
 </code>
 
 - [ill-deed/vBulletin-CVE-2025-48828-Multi-target](https://github.com/ill-deed/vBulletin-CVE-2025-48828-Multi-target)
-
-### CVE-2025-48907 (2025-06-06)
-
-<code>Deserialization vulnerability in the IPC module\nImpact: Successful exploitation of this vulnerability may affect availability.
-</code>
-
-- [0xgh057r3c0n/CVE-2026-48907](https://github.com/0xgh057r3c0n/CVE-2026-48907)
 
 ### CVE-2025-48924 (2025-07-11)
 
@@ -15635,6 +15638,7 @@
 - [l1ackerronin/CVE-2024-0044](https://github.com/l1ackerronin/CVE-2024-0044)
 - [MrW0l05zyn/cve-2024-0044](https://github.com/MrW0l05zyn/cve-2024-0044)
 - [canyie/CVE-2024-0044](https://github.com/canyie/CVE-2024-0044)
+- [k4ran909/cve_2024_0044](https://github.com/k4ran909/cve_2024_0044)
 - [TheBl4ckPh4nt0m/CVE-2024-0044](https://github.com/TheBl4ckPh4nt0m/CVE-2024-0044)
 - [Athexblackhat/EXPLOITER](https://github.com/Athexblackhat/EXPLOITER)
 - [HoyoenKim/CVE-2024-0044_PoC](https://github.com/HoyoenKim/CVE-2024-0044_PoC)
@@ -43299,13 +43303,6 @@
 
 - [ShaikUsaf/packages_apps_Bluetooth_AOSP10_r33_CVE-2021-0329](https://github.com/ShaikUsaf/packages_apps_Bluetooth_AOSP10_r33_CVE-2021-0329)
 
-### CVE-2021-0339 (2021-02-10)
-
-<code>In loadAnimation of WindowContainer.java, there is a possible way to keep displaying a malicious app while a target app is brought to the foreground. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-10 Android-8.1 Android-9Android ID: A-145728687
-</code>
-
-- [nanopathi/framework_base_AOSP10_r33_CVE-2021-0339](https://github.com/nanopathi/framework_base_AOSP10_r33_CVE-2021-0339)
-
 ### CVE-2021-0390 (2021-03-10)
 
 <code>In various methods of WifiNetworkSuggestionsManager.java, there is a possible modification of suggested networks due to a missing permission check. This could lead to local escalation of privilege by a background user on the same device with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-8.1 Android-9 Android-10Android ID: A-174749461
@@ -44205,6 +44202,7 @@
 - [usmansec/-CVE-2021-4034](https://github.com/usmansec/-CVE-2021-4034)
 - [trinetra-1308/PwnKit-](https://github.com/trinetra-1308/PwnKit-)
 - [vorkampfer/pwnkit_safety_check](https://github.com/vorkampfer/pwnkit_safety_check)
+- [rusakalimantan/PwnKit-CVE-2021-4034](https://github.com/rusakalimantan/PwnKit-CVE-2021-4034)
 - [jayhutajulu1/PwnKit-CVE-2021-4034](https://github.com/jayhutajulu1/PwnKit-CVE-2021-4034)
 - [Leemyunglyul/cve-2021-4034-mock](https://github.com/Leemyunglyul/cve-2021-4034-mock)
 - [ropydev/CVE-2021-4034-PwnKit](https://github.com/ropydev/CVE-2021-4034-PwnKit)
@@ -48925,6 +48923,7 @@
 - [OopsieWoopsie/mc-log4j-patcher](https://github.com/OopsieWoopsie/mc-log4j-patcher)
 - [wheezysec/CVE-2021-44228-kusto](https://github.com/wheezysec/CVE-2021-44228-kusto)
 - [izzyacademy/log4shell-mitigation](https://github.com/izzyacademy/log4shell-mitigation)
+- [Kadantte/CVE-2021-44228-poc](https://github.com/Kadantte/CVE-2021-44228-poc)
 - [takito1812/log4j-detect](https://github.com/takito1812/log4j-detect)
 - [winnpixie/log4noshell](https://github.com/winnpixie/log4noshell)
 - [Azeemering/CVE-2021-44228-DFIR-Notes](https://github.com/Azeemering/CVE-2021-44228-DFIR-Notes)
@@ -71009,7 +71008,7 @@
 <code>Apache Axis2, as used in dswsbobje.war in SAP BusinessObjects Enterprise XI 3.2, CA ARCserve D2D r15, and other products, has a default password of axis2 for the admin account, which makes it easier for remote attackers to execute arbitrary code by uploading a crafted web service.
 </code>
 
-- [veritas-rt/CVE-2010-0219](https://github.com/veritas-rt/CVE-2010-0219)
+- [vvts-alpha/CVE-2010-0219](https://github.com/vvts-alpha/CVE-2010-0219)
 
 ### CVE-2010-0232 (2010-01-21)
 
