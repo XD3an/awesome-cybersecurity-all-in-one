@@ -284,7 +284,7 @@
 <code>An improper restriction of operations within the bounds of a memory buffer vulnerability in Portwell Engineering Toolkits version 4.8.2 could allow a local authenticated attacker to read and write to arbitrary memory via the Portwell Engineering Toolkits driver. Successful exploitation of this vulnerability could result in escalation of privileges or cause a denial-of-service condition.
 </code>
 
-- [tihomirocrew/cve-2026-3437](https://github.com/tihomirocrew/cve-2026-3437)
+- [tihomirocrew/portwell-lpe](https://github.com/tihomirocrew/portwell-lpe)
 
 ### CVE-2026-3494 (2026-03-03)
 
@@ -1351,6 +1351,7 @@
 - [kennedy-aikohi/mcpjam-cve-2026-23744-validator](https://github.com/kennedy-aikohi/mcpjam-cve-2026-23744-validator)
 - [rohit-sundar/cve-2026-23744](https://github.com/rohit-sundar/cve-2026-23744)
 - [daemoncibsec/mcpExec](https://github.com/daemoncibsec/mcpExec)
+- [timgad794/DevHub-HTB-Walkthrough](https://github.com/timgad794/DevHub-HTB-Walkthrough)
 
 ### CVE-2026-23760 (2026-01-22)
 
@@ -1609,6 +1610,7 @@
 </code>
 
 - [JohannesLks/CVE-2026-27654](https://github.com/JohannesLks/CVE-2026-27654)
+- [dead-lamer/CVE-2026-27654](https://github.com/dead-lamer/CVE-2026-27654)
 
 ### CVE-2026-27771
 - [HORKimhab/CVE-2026-27771](https://github.com/HORKimhab/CVE-2026-27771)
@@ -1762,8 +1764,6 @@
 - [yandex-cloud-examples/yc-mk8s-copy-fail-mitigation](https://github.com/yandex-cloud-examples/yc-mk8s-copy-fail-mitigation)
 - [JuanBindez/CVE-2026-31431](https://github.com/JuanBindez/CVE-2026-31431)
 - [selectel/mks-copy-fail-mitigation](https://github.com/selectel/mks-copy-fail-mitigation)
-- [Juguitos/copy-fail](https://github.com/Juguitos/copy-fail)
-- [karollooool/Porting-CVE-2026-31431-Copy-Fail-to-a-Constrained-Java-Runner](https://github.com/karollooool/Porting-CVE-2026-31431-Copy-Fail-to-a-Constrained-Java-Runner)
 - [deckhouse/d8-copy-fail-mitigation](https://github.com/deckhouse/d8-copy-fail-mitigation)
 - [HulnotHutu/CVE-2026-31431](https://github.com/HulnotHutu/CVE-2026-31431)
 - [K3ysTr0K3R/CVE-2026-31431-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2026-31431-EXPLOIT)
@@ -1914,13 +1914,6 @@
 </code>
 
 - [0xmrma/CVE-2026-33146](https://github.com/0xmrma/CVE-2026-33146)
-
-### CVE-2026-33150 (2026-03-20)
-
-<code>libfuse is the reference implementation of the Linux FUSE. From version 3.18.0 to before version 3.18.2, a use-after-free vulnerability in the io_uring subsystem of libfuse allows a local attacker to crash FUSE filesystem processes and potentially execute arbitrary code. When io_uring thread creation fails due to resource exhaustion (e.g., cgroup pids.max), fuse_uring_start() frees the ring pool structure but stores the dangling pointer in the session state, leading to a use-after-free when the session shuts down. The trigger is reliable in containerized environments where cgroup pids.max limits naturally constrain thread creation. This issue has been patched in version 3.18.2.
-</code>
-
-- [abhinavagarwal07/abhinavagarwal07.github.io](https://github.com/abhinavagarwal07/abhinavagarwal07.github.io)
 
 ### CVE-2026-33320 (2026-03-24)
 
@@ -2313,6 +2306,9 @@
 
 - [sermikr0/CVE-2026-38427](https://github.com/sermikr0/CVE-2026-38427)
 
+### CVE-2026-38444
+- [fr3akhacks/cve-disclosures](https://github.com/fr3akhacks/cve-disclosures)
+
 ### CVE-2026-38526 (2026-04-14)
 
 <code>An authenticated arbitrary file upload vulnerability in the /admin/tinymce/upload endpoint of Webkul Krayin CRM v2.2.x allows attackers to execute arbitrary code via uploading a crafted PHP file.
@@ -2557,6 +2553,13 @@
 - [TwoSevenOneT/CVE-2026-41096-Attack-Surface](https://github.com/TwoSevenOneT/CVE-2026-41096-Attack-Surface)
 - [personnumber3377/dns_client_fuzzing](https://github.com/personnumber3377/dns_client_fuzzing)
 
+### CVE-2026-41179 (2026-04-23)
+
+<code>Rclone is a command-line program to sync files and directories to and from different cloud storage providers. Starting in version 1.48.0 and prior to version 1.73.5, the RC endpoint `operations/fsinfo` is exposed without `AuthRequired: true` and accepts attacker-controlled `fs` input. Because `rc.GetFs(...)` supports inline backend definitions, an unauthenticated attacker can instantiate an attacker-controlled backend on demand. For the WebDAV backend, `bearer_token_command` is executed during backend initialization, making single-request unauthenticated local command execution possible on reachable RC deployments without global HTTP authentication. Version 1.73.5 patches the issue.
+</code>
+
+- [pssec-io/CVE-2026-41179](https://github.com/pssec-io/CVE-2026-41179)
+
 ### CVE-2026-41200 (2026-04-23)
 
 <code>STIG Manager is an API and web client for managing  Security Technical Implementation Guides (STIG) assessments of Information Systems. Versions 1.5.10 through 1.6.7 have a reflected Cross-Site Scripting (XSS) vulnerability in the OIDC authentication error handling code in `src/init.js` and `public/reauth.html`. During the OIDC redirect flow, the `error` and `error_description` query parameters returned by the OIDC provider are written directly to the DOM via `innerHTML` without HTML escaping. An attacker who can craft a malicious redirect URL and convince a user to follow it can execute arbitrary JavaScript in the application's origin context. The vulnerability is most severe when the targeted user has an active STIG Manager session running in another browser tab — injected code executes in the same origin and can communicate with the SharedWorker managing the active access token, enabling authenticated API requests on behalf of the victim including reading and modifying collection data. The vulnerability is patched in version 1.6.8. There is no workaround short of upgrading. Deployments behind a web application firewall that filters reflected XSS payloads in query parameters may have partial mitigation, but this is not a substitute for patching.
@@ -2613,7 +2616,6 @@
 - [Jenderal92/CVE-2026-41940](https://github.com/Jenderal92/CVE-2026-41940)
 - [Defacto-ridgepole254/CVE-2026-41940-Exploit-PoC](https://github.com/Defacto-ridgepole254/CVE-2026-41940-Exploit-PoC)
 - [murrez/CVE-2026-41940](https://github.com/murrez/CVE-2026-41940)
-- [SreejaPuthan/cpanel-control-plane-exposure-check](https://github.com/SreejaPuthan/cpanel-control-plane-exposure-check)
 - [44pie/cpsniper](https://github.com/44pie/cpsniper)
 - [ngksiva/cpanel-forensics](https://github.com/ngksiva/cpanel-forensics)
 - [anach-ai/CVE-2026-41940](https://github.com/anach-ai/CVE-2026-41940)
@@ -2624,6 +2626,7 @@
 - [willygailo/CVE-2026-41940-Linux](https://github.com/willygailo/CVE-2026-41940-Linux)
 - [yurahshell/CVE-2026-41940](https://github.com/yurahshell/CVE-2026-41940)
 - [asdasddqwdq29-a11y/CVE-2026-41940](https://github.com/asdasddqwdq29-a11y/CVE-2026-41940)
+- [aquace/CVE-2026-41940-PoC](https://github.com/aquace/CVE-2026-41940-PoC)
 
 ### CVE-2026-42048 (2026-05-12)
 
@@ -2672,7 +2675,6 @@
 <code>LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. From version 1.81.16 to before version 1.83.7, a database query used during proxy API key checks mixed the caller-supplied key value into the query text instead of passing it as a separate parameter. An unauthenticated attacker could send a specially crafted Authorization header to any LLM API route (for example POST /chat/completions) and reach this query through the proxy's error-handling path. An attacker could read data from the proxy's database and may be able to modify it, leading to unauthorised access to the proxy and the credentials it manages. This issue has been patched in version 1.83.7.
 </code>
 
-- [Zeltoc/threat-intel-brief-cve-2026-42208-litellm](https://github.com/Zeltoc/threat-intel-brief-cve-2026-42208-litellm)
 - [rootdirective-sec/CVE-2026-42208-Lab](https://github.com/rootdirective-sec/CVE-2026-42208-Lab)
 - [ridhinva/litellm-sqli-scanner](https://github.com/ridhinva/litellm-sqli-scanner)
 - [HAERIN-L/poc_cve-2026-42208](https://github.com/HAERIN-L/poc_cve-2026-42208)
@@ -2830,8 +2832,6 @@
 - [mym0us3r/DIRTY-FRAG-Detection-with-Wazuh-4.14.4](https://github.com/mym0us3r/DIRTY-FRAG-Detection-with-Wazuh-4.14.4)
 - [suominen/CVE-2026-43284](https://github.com/suominen/CVE-2026-43284)
 - [haydenjames/dirty-frag-check](https://github.com/haydenjames/dirty-frag-check)
-- [metalx1993/dirtyfrag-patches](https://github.com/metalx1993/dirtyfrag-patches)
-- [ryan2929/CVE-2026-43284-](https://github.com/ryan2929/CVE-2026-43284-)
 - [linnemanlabs/dirtyfrag-arm64](https://github.com/linnemanlabs/dirtyfrag-arm64)
 - [gagaltotal/CVE-2026-43284-CVE-2026-43500-scan](https://github.com/gagaltotal/CVE-2026-43284-CVE-2026-43500-scan)
 - [Aiyakami/rust_dirtyfrag](https://github.com/Aiyakami/rust_dirtyfrag)
@@ -2885,6 +2885,7 @@
 - [aexdyhaxor/CVE-2026-43503-DirtyClone](https://github.com/aexdyhaxor/CVE-2026-43503-DirtyClone)
 - [sec0x/CVE-2026-43503](https://github.com/sec0x/CVE-2026-43503)
 - [douglasmun/pagecache-lpe-containment-kit](https://github.com/douglasmun/pagecache-lpe-containment-kit)
+- [gl1tch0x1/DirtyClone](https://github.com/gl1tch0x1/DirtyClone)
 
 ### CVE-2026-43512 (2026-05-12)
 
@@ -3182,6 +3183,7 @@
 - [sgkdev/packet_edit_meme](https://github.com/sgkdev/packet_edit_meme)
 - [0xBlackash/CVE-2026-46331](https://github.com/0xBlackash/CVE-2026-46331)
 - [HORKimhab/CVE-2026-46331](https://github.com/HORKimhab/CVE-2026-46331)
+- [vulnquest58/dirtyclone-exploit](https://github.com/vulnquest58/dirtyclone-exploit)
 
 ### CVE-2026-46333 (2026-05-15)
 
@@ -12882,6 +12884,7 @@
 
 - [Theethat-Thamwasin/CVE-2025-56399](https://github.com/Theethat-Thamwasin/CVE-2025-56399)
 - [im-hanzou/CVE-2025-56399](https://github.com/im-hanzou/CVE-2025-56399)
+- [Jenderal92/laravel-filemanager-unrestricted-upload](https://github.com/Jenderal92/laravel-filemanager-unrestricted-upload)
 
 ### CVE-2025-56499 (2025-11-18)
 
@@ -22010,13 +22013,6 @@
 
 - [MathSabo/CVE-2024-33297](https://github.com/MathSabo/CVE-2024-33297)
 
-### CVE-2024-33298 (2025-01-10)
-
-<code>Microweber Cross Site Scripting vulnerability in Microweber v.2.0.9 allows a remote attacker to execute arbitrary code via the create new backup function in the endpoint /admin/module/view?type=admin__backup
-</code>
-
-- [MathSabo/CVE-2024-33298](https://github.com/MathSabo/CVE-2024-33298)
-
 ### CVE-2024-33299 (2025-01-10)
 
 <code>Cross Site Scripting vulnerability in Microweber v.2.0.9 allows a remote attacker to execute arbitrary code via the First Name and Last Name parameters in the endpoint /admin/module/view?type=users
@@ -23060,6 +23056,13 @@
 </code>
 
 - [abanop22333/Apache-Authentication-Flaw-Research-CVE-2024-38476-](https://github.com/abanop22333/Apache-Authentication-Flaw-Research-CVE-2024-38476-)
+
+### CVE-2024-38513 (2024-07-01)
+
+<code>Fiber is an Express-inspired web framework written in Go A vulnerability present in versions prior to 2.52.5 is a session middleware issue in GoFiber versions 2 and above. This vulnerability allows users to supply their own session_id value, resulting in the creation of a session with that key. If a website relies on the mere presence of a session for security purposes, this can lead to significant security risks, including unauthorized access and session fixation attacks. All users utilizing GoFiber's session middleware in the affected versions are impacted. The issue has been addressed in version 2.52.5. Users are strongly encouraged to upgrade to version 2.52.5 or higher to mitigate this vulnerability. Users who are unable to upgrade immediately can apply the following workarounds to reduce the risk: Either implement additional validation to ensure session IDs are not supplied by the user and are securely generated by the server, or regularly rotate session IDs and enforce strict session expiration policies.
+</code>
+
+- [Oyeonseok/GoFiber-CVE-2024-38513](https://github.com/Oyeonseok/GoFiber-CVE-2024-38513)
 
 ### CVE-2024-38526 (2024-06-25)
 
@@ -69351,6 +69354,7 @@
 - [GoRuGoo/poodle-attack-sandbox](https://github.com/GoRuGoo/poodle-attack-sandbox)
 - [josecl200/VC-PoodlePOC](https://github.com/josecl200/VC-PoodlePOC)
 - [jmonge12/Home-Network-Vulnerability-Assessment](https://github.com/jmonge12/Home-Network-Vulnerability-Assessment)
+- [Karma4488/CVE-2014-3566](https://github.com/Karma4488/CVE-2014-3566)
 
 ### CVE-2014-3570 (2015-01-09)
 
