@@ -496,6 +496,13 @@
 
 - [xxconi/CVE-2026-5364](https://github.com/xxconi/CVE-2026-5364)
 
+### CVE-2026-5366 (2026-06-20)
+
+<code>Prefect version 3.6.23 is vulnerable to remote code execution due to improper handling of user-controlled input in the `GitRepository` storage class. The `commit_sha` parameter, which is passed to git commands, lacks validation and does not include a `--` separator to distinguish user input from git flags. This allows attackers to inject arbitrary git flags, such as `--upload-pack`, enabling execution of external programs. Additionally, the `directories` parameter can be exploited to inject git flags during sparse-checkout operations. These vulnerabilities allow any user with deployment creation permissions to execute arbitrary commands on worker machines, compromising shared work pools in multi-tenant environments.
+</code>
+
+- [renat0z3r0/prefect-cve-2026-5366](https://github.com/renat0z3r0/prefect-cve-2026-5366)
+
 ### CVE-2026-5411 (2026-06-05)
 
 <code>The WP Captcha PRO (the premium version of the Advanced Google reCAPTCHA plugin, both have the same slug) plugin for WordPress is vulnerable to arbitrary file upload in all versions up to, and including, 5.38. This is due to a capability check in the save_ajax() function of the licensing module, combined with unrestricted file extraction in sync_cloud_protection(). This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files including PHP webshells to the server by injecting a malicious cloud_protection_url into the license meta, which the plugin then downloads and extracts without file type validation into a web-accessible uploads directory. This can be used for remote code execution. Note: The vulnerability can only be exploited with a remote URL if &quot;allow_url_fopen&quot; is enabled in the php.ini config.
@@ -648,13 +655,6 @@
 </code>
 
 - [nicholas-howland/CVE-2026-6992-PoC](https://github.com/nicholas-howland/CVE-2026-6992-PoC)
-
-### CVE-2026-7270 (2026-04-30)
-
-<code>An operator precedence bug in the kernel results in a scenario where a buffer overflow causes attacker-controlled data to overwrite adjacent execve(2) argument buffers.\n\nThe bug may be exploitable by an unprivileged user to obtain superuser privileges.
-</code>
-
-- [babyshen/freebsd-CVE-2026-7270](https://github.com/babyshen/freebsd-CVE-2026-7270)
 
 ### CVE-2026-7299 (2026-06-02)
 
@@ -822,6 +822,7 @@
 - [Y5neKO/CVE-2026-8461-EXP](https://github.com/Y5neKO/CVE-2026-8461-EXP)
 - [HORKimhab/CVE-2026-8461](https://github.com/HORKimhab/CVE-2026-8461)
 - [0xBlackash/CVE-2026-8461](https://github.com/0xBlackash/CVE-2026-8461)
+- [ray-goldman/ffmpeg-jellyfix](https://github.com/ray-goldman/ffmpeg-jellyfix)
 
 ### CVE-2026-8697 (2026-05-28)
 
@@ -1233,13 +1234,6 @@
 
 - [Filipemendonca1978/CVE-2026-21018](https://github.com/Filipemendonca1978/CVE-2026-21018)
 
-### CVE-2026-21510 (2026-02-10)
-
-<code>Protection mechanism failure in Windows Shell allows an unauthorized attacker to bypass a security feature over a network.
-</code>
-
-- [EpSiLoNPoInTOrI/EpSiLoNPoInTlnk](https://github.com/EpSiLoNPoInTOrI/EpSiLoNPoInTlnk)
-
 ### CVE-2026-21852 (2026-01-21)
 
 <code>Claude Code is an agentic coding tool. Prior to version 2.0.65, vulnerability in Claude Code's project-load flow allowed malicious repositories to exfiltrate data including Anthropic API keys before users confirmed trust. An attacker-controlled repository could include a settings file that sets ANTHROPIC_BASE_URL to an attacker-controlled endpoint and when the repository was opened, Claude Code would read the configuration and immediately issue API requests before showing the trust prompt, potentially leaking the user's API keys. Users on standard Claude Code auto-update have received this fix already. Users performing manual updates are advised to update to version 2.0.65, which contains a patch, or to the latest version.
@@ -1422,6 +1416,7 @@
 - [anxs3c/CVE-2026-24061-GNU-InetUtils-telnetd](https://github.com/anxs3c/CVE-2026-24061-GNU-InetUtils-telnetd)
 - [akpmarcelin/CVE-2026-24061-lab](https://github.com/akpmarcelin/CVE-2026-24061-lab)
 - [Cosm3No1de/htb-orion-writeup](https://github.com/Cosm3No1de/htb-orion-writeup)
+- [kyukazamiqq/CVE-2026-24061](https://github.com/kyukazamiqq/CVE-2026-24061)
 
 ### CVE-2026-24072 (2026-05-04)
 
@@ -1781,7 +1776,6 @@
 - [samanzamani/copy-fail-checker](https://github.com/samanzamani/copy-fail-checker)
 - [ochebotar/copy-fail-CVE-2026-31431-detection-probe](https://github.com/ochebotar/copy-fail-CVE-2026-31431-detection-probe)
 - [Liverwortenuresis371/copyfail-rs](https://github.com/Liverwortenuresis371/copyfail-rs)
-- [luoqianlin/copyfail-c](https://github.com/luoqianlin/copyfail-c)
 - [Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail](https://github.com/Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail)
 - [philfry/cve-2026-31431-ftrace](https://github.com/philfry/cve-2026-31431-ftrace)
 - [adilkurtulmus/linux-copy-fail-CVE-2026-31431](https://github.com/adilkurtulmus/linux-copy-fail-CVE-2026-31431)
@@ -1790,7 +1784,6 @@
 - [infiniroot/ansible-mitigate-copyfail-dirtyfrag](https://github.com/infiniroot/ansible-mitigate-copyfail-dirtyfrag)
 - [KaraZajac/DIRTYFAIL](https://github.com/KaraZajac/DIRTYFAIL)
 - [krisiasty/vcheck](https://github.com/krisiasty/vcheck)
-- [vorkampfer/copy_fail_mitigation](https://github.com/vorkampfer/copy_fail_mitigation)
 - [Hunt-Benito/copy-fail-cve-2026-31431-linux-kernel-page-cache-lpe](https://github.com/Hunt-Benito/copy-fail-cve-2026-31431-linux-kernel-page-cache-lpe)
 - [Helios973/CVE-2026-31431_exp.c](https://github.com/Helios973/CVE-2026-31431_exp.c)
 - [haydenjames/CVE-2026-31431-check](https://github.com/haydenjames/CVE-2026-31431-check)
@@ -1837,6 +1830,7 @@
 - [zs1n/copy-fail-CVE-2026-31431](https://github.com/zs1n/copy-fail-CVE-2026-31431)
 - [t1ckprivate/CVE-2026-31431-Copy-Fail](https://github.com/t1ckprivate/CVE-2026-31431-Copy-Fail)
 - [kinryulabs/rootpacket-cve-2026-31431](https://github.com/kinryulabs/rootpacket-cve-2026-31431)
+- [SugiB3o/CVE-2026-31431](https://github.com/SugiB3o/CVE-2026-31431)
 
 ### CVE-2026-31525 (2026-04-22)
 
@@ -1892,13 +1886,6 @@
 </code>
 
 - [MichaelAdamGroberman/CVE-2026-32662](https://github.com/MichaelAdamGroberman/CVE-2026-32662)
-
-### CVE-2026-32746 (2026-03-13)
-
-<code>telnetd in GNU inetutils through 2.7 allows an out-of-bounds write in the LINEMODE SLC (Set Local Characters) suboption handler because add_slc does not check whether the buffer is full.
-</code>
-
-- [kaleth4/CVE-2026-32746](https://github.com/kaleth4/CVE-2026-32746)
 
 ### CVE-2026-33017 (2026-03-20)
 
@@ -2140,13 +2127,6 @@
 ### CVE-2026-35333
 - [JohannesLks/CVE-2026-35333](https://github.com/JohannesLks/CVE-2026-35333)
 
-### CVE-2026-35397 (2026-05-05)
-
-<code>Jupyter Server is the backend for Jupyter web applications. In versions 2.17.0 and earlier, a path traversal vulnerability in the REST API allows an authenticated user to escape the configured root_dir and access sibling directories whose names begin with the same prefix as the root_dir. For example, with a root_dir named &quot;test&quot;, the API permits access to a sibling directory named &quot;testtest&quot; through a crafted request to the /api/contents endpoint using encoded path components. An attacker can read, write, and delete files in affected sibling directories. Multi-tenant deployments using predictable naming schemes are particularly at risk, as a user with a directory named &quot;user1&quot; could access directories for user10 through user19 and beyond. A user who can choose a single-character folder name could gain access to a significant number of sibling directories. \n\nVersion 2.18.0 contains a fix. As a workaround, ensure folder names do not share a common prefix with any sibling directory.
-</code>
-
-- [HiteshGorana/susvibes-jupyter-server-cve-2026-35397](https://github.com/HiteshGorana/susvibes-jupyter-server-cve-2026-35397)
-
 ### CVE-2026-35455 (2026-04-08)
 
 <code>immich is a high performance self-hosted photo and video management solution. Prior to 2.7.0, sStored Cross-Site Scripting (XSS) in the 360° panorama viewer allows any authenticated user to execute arbitrary JavaScript in the browser of any other user who views the malicious panorama with the OCR overlay enabled. The attacker uploads an equirectangular image containing crafted text; OCR extracts it, and the panorama viewer renders it via innerHTML without sanitization. This enables session hijacking (via persistent API key creation), private photo exfiltration, and access to GPS location history and face biometric data. This vulnerability is fixed in 2.7.0.
@@ -2344,6 +2324,13 @@
 ### CVE-2026-38698
 - [vital-information-resource-under-siege/CVE-2026-38698-and-CVE-2026-38699](https://github.com/vital-information-resource-under-siege/CVE-2026-38698-and-CVE-2026-38699)
 
+### CVE-2026-38751 (2026-05-04)
+
+<code>OpenSTAManager version 2.10 and earlier contains an arbitrary file upload vulnerability in the module update functionality (modules/aggiornamenti/upload_modules.php)
+</code>
+
+- [b0ySie7e/OpenSTAManager-RCE-Exploit-CVE-2026-38751](https://github.com/b0ySie7e/OpenSTAManager-RCE-Exploit-CVE-2026-38751)
+
 ### CVE-2026-38763
 - [D7EAD/CVE-2026-38763](https://github.com/D7EAD/CVE-2026-38763)
 
@@ -2472,6 +2459,7 @@
 <code>Composer is a dependency manager for PHP. Versions 1.0 through 2.2.26 and 2.3 through 2.9.5 contain a command injection vulnerability in the Perforce::generateP4Command() method, which constructs shell commands by interpolating user-supplied Perforce connection parameters (port, user, client) without proper escaping. An attacker can inject arbitrary commands through these values in a malicious composer.json declaring a Perforce VCS repository, leading to command execution in the context of the user running Composer, even if Perforce is not installed. VCS repositories are only loaded from the root composer.json or the composer config directory, so this cannot be exploited through composer.json files of packages installed as dependencies. Users are at risk if they run Composer commands on untrusted projects with attacker-supplied composer.json files. This issue has been fixed in Composer 2.2.27 (2.2 LTS) and 2.9.6 (mainline).
 </code>
 
+- [Saku0512/CVE-2026-40176-poc](https://github.com/Saku0512/CVE-2026-40176-poc)
 - [ikarolaborda/CVE-2026-40176](https://github.com/ikarolaborda/CVE-2026-40176)
 
 ### CVE-2026-40217 (2026-04-10)
@@ -2623,7 +2611,6 @@
 - [mahfuzreham/cpanel-cve-2026-41940](https://github.com/mahfuzreham/cpanel-cve-2026-41940)
 - [Christian93111/CVE-2026-41940](https://github.com/Christian93111/CVE-2026-41940)
 - [Jenderal92/CVE-2026-41940](https://github.com/Jenderal92/CVE-2026-41940)
-- [bughunt4me/cpanelCVE-2026-41940](https://github.com/bughunt4me/cpanelCVE-2026-41940)
 - [Defacto-ridgepole254/CVE-2026-41940-Exploit-PoC](https://github.com/Defacto-ridgepole254/CVE-2026-41940-Exploit-PoC)
 - [murrez/CVE-2026-41940](https://github.com/murrez/CVE-2026-41940)
 - [SreejaPuthan/cpanel-control-plane-exposure-check](https://github.com/SreejaPuthan/cpanel-control-plane-exposure-check)
@@ -2897,6 +2884,7 @@
 - [mooder1/dirtyclone-CVE-2026-43503](https://github.com/mooder1/dirtyclone-CVE-2026-43503)
 - [aexdyhaxor/CVE-2026-43503-DirtyClone](https://github.com/aexdyhaxor/CVE-2026-43503-DirtyClone)
 - [sec0x/CVE-2026-43503](https://github.com/sec0x/CVE-2026-43503)
+- [douglasmun/pagecache-lpe-containment-kit](https://github.com/douglasmun/pagecache-lpe-containment-kit)
 
 ### CVE-2026-43512 (2026-05-12)
 
@@ -2967,13 +2955,6 @@
 
 ### CVE-2026-44596
 - [ex-cal1bur/CVE-2026-44596](https://github.com/ex-cal1bur/CVE-2026-44596)
-
-### CVE-2026-44656 (2026-05-08)
-
-<code>Vim is an open source, command line text editor. Prior to version 9.2.0435, an OS command injection vulnerability exists in Vim's :find command-line completion. When the path option contains backtick-enclosed shell commands, those commands are executed during file name completion. Because the path option lacks the P_SECURE flag, it can be set from a modeline, allowing an attacker who controls the contents of a file to execute arbitrary shell commands when the user opens that file in Vim and triggers :find completion. This issue has been patched in version 9.2.0435.
-</code>
-
-- [CryingN/CVE-2026-44656](https://github.com/CryingN/CVE-2026-44656)
 
 ### CVE-2026-44706 (2026-05-26)
 
@@ -3490,6 +3471,7 @@
 - [wearehackers160/CVE-2026-48907](https://github.com/wearehackers160/CVE-2026-48907)
 - [g0thamRabb1t/joomla-jce-cve-2026-48907-detection](https://github.com/g0thamRabb1t/joomla-jce-cve-2026-48907-detection)
 - [sec0x/CVE-2026-48907](https://github.com/sec0x/CVE-2026-48907)
+- [0xgh057r3c0n/CVE-2026-48907](https://github.com/0xgh057r3c0n/CVE-2026-48907)
 - [gh1mau/masta-cve-2026-48907](https://github.com/gh1mau/masta-cve-2026-48907)
 - [grayxploit/CVE-2026-48907](https://github.com/grayxploit/CVE-2026-48907)
 
@@ -10891,6 +10873,13 @@
 
 - [ill-deed/vBulletin-CVE-2025-48828-Multi-target](https://github.com/ill-deed/vBulletin-CVE-2025-48828-Multi-target)
 
+### CVE-2025-48907 (2025-06-06)
+
+<code>Deserialization vulnerability in the IPC module\nImpact: Successful exploitation of this vulnerability may affect availability.
+</code>
+
+- [0xgh057r3c0n/CVE-2026-48907](https://github.com/0xgh057r3c0n/CVE-2026-48907)
+
 ### CVE-2025-48924 (2025-07-11)
 
 <code>Uncontrolled Recursion vulnerability in Apache Commons Lang.\n\nThis issue affects Apache Commons Lang: Starting with commons-lang:commons-lang 2.0 to 2.6, and, from org.apache.commons:commons-lang3 3.0 before 3.18.0.\n\nThe methods ClassUtils.getClass(...) can throw StackOverflowError on very long inputs. Because an Error is usually not handled by applications and libraries, a \nStackOverflowError could cause an application to stop.\n\nUsers are recommended to upgrade to version 3.18.0, which fixes the issue.
@@ -15200,6 +15189,7 @@
 </code>
 
 - [lukasz-rybak/CVE-2025-69212](https://github.com/lukasz-rybak/CVE-2025-69212)
+- [tohib09/CVE-2025-69212-PoC](https://github.com/tohib09/CVE-2025-69212-PoC)
 
 ### CVE-2025-69213 (2026-02-04)
 
@@ -67223,6 +67213,7 @@
 - [theo543/OSDS_Paper_CVE-2016-5195](https://github.com/theo543/OSDS_Paper_CVE-2016-5195)
 - [maur0amaya/Escalamiento-de-Privilegios-usando-el-Kernel-Exploit-Dirty-Cow](https://github.com/maur0amaya/Escalamiento-de-Privilegios-usando-el-Kernel-Exploit-Dirty-Cow)
 - [GonzaBot/kernel-exploit-dirtycow](https://github.com/GonzaBot/kernel-exploit-dirtycow)
+- [gogooma125732/CVE-2016-5195](https://github.com/gogooma125732/CVE-2016-5195)
 
 ### CVE-2016-5345 (2018-01-23)
 
