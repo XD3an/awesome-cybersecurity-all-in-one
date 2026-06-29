@@ -44,7 +44,6 @@
 - [HORKimhab/CVE-2026-0257](https://github.com/HORKimhab/CVE-2026-0257)
 - [0xBlackash/CVE-2026-0257](https://github.com/0xBlackash/CVE-2026-0257)
 - [Mr-Robot-LP/CVE-2026-0257](https://github.com/Mr-Robot-LP/CVE-2026-0257)
-- [bolubey/CVE-2026-0257](https://github.com/bolubey/CVE-2026-0257)
 - [tushargurav28/CVE-2026-0257](https://github.com/tushargurav28/CVE-2026-0257)
 - [jenniferreire26/CVE-2026-0257](https://github.com/jenniferreire26/CVE-2026-0257)
 - [grayxploit/CVE-2026-0257](https://github.com/grayxploit/CVE-2026-0257)
@@ -216,14 +215,14 @@
 
 ### CVE-2026-2586 (2026-05-19)
 
-<code>An authenticated Remote Code Execution (RCE) vulnerability was identified in GlassFish's Administration Console. A user with access to the panel can send crafted requests that allow the execution of arbitrary operating system commands with the privileges of the application service user.
+<code>An authenticated Remote Code Execution (RCE) vulnerability was identified in GlassFish's Administration Console. A user with access to the panel can send crafted requests that allow the execution of arbitrary operating system commands with the privileges of the application service user. This issue affects Eclipse GlassFish: from 8.0.0 to 8.0.1, fixed in 8.0.2; 7.1.0, fixed in 7.1.1; from 7.0.0 to 7.0.25, fixed in 7.0.26. Impact on versions from 5.1.0 to 6.2.5 is unknown.
 </code>
 
 - [DeepSecurityResearch/CVE-2026-2586](https://github.com/DeepSecurityResearch/CVE-2026-2586)
 
 ### CVE-2026-2587 (2026-05-19)
 
-<code>A critical Remote Code Execution (RCE) vulnerability was identified in the server-side template rendering mechanism used by the Glassfish gadget handler. The application processes .xml files and evaluates user-supplied values within a context where Expression Language (EL) “expressions” are processed without proper sanitization or escaping. By injecting expressions such as #{7*7}, the server returns 49, confirming server-side EL evaluation. This issue allows a remote attacker to fully compromise the underlying host, enabling capabilities as reading/modifying data, executing arbitrary commands, persistence, and lateral movement.
+<code>A critical Remote Code Execution (RCE) vulnerability was identified in the server-side template rendering mechanism used by the Glassfish gadget handler. The application processes .xml files and evaluates user-supplied values within a context where Expression Language (EL) “expressions” are processed without proper sanitization or escaping. By injecting expressions such as #{7*7}, the server returns 49, confirming server-side EL evaluation. This issue allows a remote attacker to fully compromise the underlying host, enabling capabilities as reading/modifying data, executing arbitrary commands, persistence, and lateral movement. This issue affects Eclipse GlassFish: from 8.0.0 to 8.0.1, fixed in 8.0.2; 7.1.0, fixed in 7.1.1; from 7.0.0 to 7.0.25, fixed in 7.0.26. Impact on versions from 5.1.0 to 6.2.5 is unknown.
 </code>
 
 - [Bhanunamikaze/CVE-2026-2587-Exploit-POC](https://github.com/Bhanunamikaze/CVE-2026-2587-Exploit-POC)
@@ -524,6 +523,13 @@
 
 - [Xaanziu/CVE-2026-5513](https://github.com/Xaanziu/CVE-2026-5513)
 - [87achrafg-stack/CVE-2026-5513](https://github.com/87achrafg-stack/CVE-2026-5513)
+
+### CVE-2026-5562 (2026-04-05)
+
+<code>A vulnerability was identified in provectus kafka-ui up to 0.7.2. This impacts the function validateAccess of the file /api/smartfilters/testexecutions of the component Endpoint. The manipulation leads to code injection. The attack can be initiated remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.
+</code>
+
+- [HutTwoThreeFour/CVE-2026-5562-Exploit](https://github.com/HutTwoThreeFour/CVE-2026-5562-Exploit)
 
 ### CVE-2026-5718 (2026-04-17)
 
@@ -958,7 +964,6 @@
 </code>
 
 - [watchtowrlabs/watchTowr-vs-Ivanti-Sentry-RCE-CVE-2026-10520-CVE-2026-10523](https://github.com/watchtowrlabs/watchTowr-vs-Ivanti-Sentry-RCE-CVE-2026-10520-CVE-2026-10523)
-- [ogenich/CVE-2026-10520](https://github.com/ogenich/CVE-2026-10520)
 - [HORKimhab/CVE-2026-10520-10523](https://github.com/HORKimhab/CVE-2026-10520-10523)
 - [0xBlackash/CVE-2026-10520](https://github.com/0xBlackash/CVE-2026-10520)
 - [error-inside/CVE-2026-10520](https://github.com/error-inside/CVE-2026-10520)
@@ -1166,6 +1171,7 @@
 - [0xBlackash/CVE-2026-20253](https://github.com/0xBlackash/CVE-2026-20253)
 - [HORKimhab/CVE-2026-20253](https://github.com/HORKimhab/CVE-2026-20253)
 - [fevar54/CVE-2026-20253-Splunk-Enterprise-Pre-Auth-RCE-](https://github.com/fevar54/CVE-2026-20253-Splunk-Enterprise-Pre-Auth-RCE-)
+- [pssec-io/CVE-2026-20253](https://github.com/pssec-io/CVE-2026-20253)
 
 ### CVE-2026-20262 (2026-06-15)
 
@@ -1256,6 +1262,13 @@
 </code>
 
 - [daytriftnewgen/CVE-2026-21876](https://github.com/daytriftnewgen/CVE-2026-21876)
+
+### CVE-2026-22226 (2026-02-02)
+
+<code>A command injection vulnerability may be exploited after the admin's authentication in the VPN server configuration module on TP-Link Archer BE230 v1.2 and Archer AX73 v2. Successful exploitation could allow an attacker to gain full administrative control of the device, resulting in severe compromise of configuration integrity, network security, and service availability.\n\n\nThis CVE covers one of multiple distinct OS command injection issues identified across separate code paths. Although similar in nature, each instance is tracked under a unique CVE ID.\n\n\nThis issue affects Archer BE230 v1.2 &lt; 1.2.4 Build 20251218 rel.70420 and Archer AX73 v2 &lt; 1.3.1\nBuild 20260430.
+</code>
+
+- [LucasVanHaaren/CVE-2026-22226](https://github.com/LucasVanHaaren/CVE-2026-22226)
 
 ### CVE-2026-22356 (2026-02-20)
 
@@ -1795,7 +1808,6 @@
 - [Helios973/CVE-2026-31431_exp.c](https://github.com/Helios973/CVE-2026-31431_exp.c)
 - [haydenjames/CVE-2026-31431-check](https://github.com/haydenjames/CVE-2026-31431-check)
 - [vorkampfer/copyfail2_electric_boogaloo_fix](https://github.com/vorkampfer/copyfail2_electric_boogaloo_fix)
-- [Karim33z/CVE-2026-31431](https://github.com/Karim33z/CVE-2026-31431)
 - [Lutfifakee-Project/CVE-2026-31431](https://github.com/Lutfifakee-Project/CVE-2026-31431)
 - [u1tr0nex/CVE-2026-31431-CopyFail-Lab](https://github.com/u1tr0nex/CVE-2026-31431-CopyFail-Lab)
 - [mauricioportela/CVE-2026-31431-Analysis](https://github.com/mauricioportela/CVE-2026-31431-Analysis)
@@ -2236,9 +2248,6 @@
 ### CVE-2026-36980
 - [canomer/CVE-2026-36980-Kernel-BSOD-DoS-PoC](https://github.com/canomer/CVE-2026-36980-Kernel-BSOD-DoS-PoC)
 
-### CVE-2026-36981
-- [canomer/CVE-2026-36981-Kernel-EoP-PoC](https://github.com/canomer/CVE-2026-36981-Kernel-EoP-PoC)
-
 ### CVE-2026-37064
 - [jfs-jfs/CVE-2026-37064](https://github.com/jfs-jfs/CVE-2026-37064)
 
@@ -2616,8 +2625,6 @@
 - [Jenderal92/CVE-2026-41940](https://github.com/Jenderal92/CVE-2026-41940)
 - [Defacto-ridgepole254/CVE-2026-41940-Exploit-PoC](https://github.com/Defacto-ridgepole254/CVE-2026-41940-Exploit-PoC)
 - [murrez/CVE-2026-41940](https://github.com/murrez/CVE-2026-41940)
-- [44pie/cpsniper](https://github.com/44pie/cpsniper)
-- [ngksiva/cpanel-forensics](https://github.com/ngksiva/cpanel-forensics)
 - [anach-ai/CVE-2026-41940](https://github.com/anach-ai/CVE-2026-41940)
 - [tc4dy/CVE-2026-41940-PoC-Exploit](https://github.com/tc4dy/CVE-2026-41940-PoC-Exploit)
 - [limo57640-crypto/cpanel-cve-41940-detector](https://github.com/limo57640-crypto/cpanel-cve-41940-detector)
@@ -2884,6 +2891,7 @@
 - [sec0x/CVE-2026-43503](https://github.com/sec0x/CVE-2026-43503)
 - [douglasmun/pagecache-lpe-containment-kit](https://github.com/douglasmun/pagecache-lpe-containment-kit)
 - [gl1tch0x1/DirtyClone](https://github.com/gl1tch0x1/DirtyClone)
+- [entra1337/DirtyClone](https://github.com/entra1337/DirtyClone)
 
 ### CVE-2026-43512 (2026-05-12)
 
@@ -3474,6 +3482,8 @@
 - [0xgh057r3c0n/CVE-2026-48907](https://github.com/0xgh057r3c0n/CVE-2026-48907)
 - [gh1mau/masta-cve-2026-48907](https://github.com/gh1mau/masta-cve-2026-48907)
 - [grayxploit/CVE-2026-48907](https://github.com/grayxploit/CVE-2026-48907)
+- [xitexploiter96-dot/CVE-2026-48907-](https://github.com/xitexploiter96-dot/CVE-2026-48907-)
+- [Almavj/Joomla_CVE_2026_48907](https://github.com/Almavj/Joomla_CVE_2026_48907)
 
 ### CVE-2026-48908 (2026-06-20)
 
@@ -3483,8 +3493,8 @@
 - [webshellseo8/CVE-2026-48908-POC](https://github.com/webshellseo8/CVE-2026-48908-POC)
 - [papageo75/CVE-2026-48908-PoC](https://github.com/papageo75/CVE-2026-48908-PoC)
 - [gagaltotal/CVE-2026-48908-SP-Page-Builder-Joomla](https://github.com/gagaltotal/CVE-2026-48908-SP-Page-Builder-Joomla)
-- [ogenich/CVE-2026-48908](https://github.com/ogenich/CVE-2026-48908)
 - [0xBlackash/CVE-2026-48908](https://github.com/0xBlackash/CVE-2026-48908)
+- [ayiezola/CVE-2026-48908](https://github.com/ayiezola/CVE-2026-48908)
 
 ### CVE-2026-48909 (2026-06-20)
 
@@ -3492,6 +3502,13 @@
 </code>
 
 - [Is4yev/CVE-2026-48909](https://github.com/Is4yev/CVE-2026-48909)
+
+### CVE-2026-48939 (2026-06-20)
+
+<code>A vulnerability in the iCagenda extension for Joomla allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution.
+</code>
+
+- [Polosss/By-Poloss..-..CVE-2026-48939](https://github.com/Polosss/By-Poloss..-..CVE-2026-48939)
 
 ### CVE-2026-48962 (2026-05-27)
 
@@ -3682,7 +3699,6 @@
 - [fernstedt/CVE-2026-50751](https://github.com/fernstedt/CVE-2026-50751)
 - [watchtowrlabs/watchTowr-vs-Check-Point-CVE-2026-50751](https://github.com/watchtowrlabs/watchTowr-vs-Check-Point-CVE-2026-50751)
 - [hlkysipv/CVE-2026-50751-Check-Point-IKEv1-Authentication-Bypass](https://github.com/hlkysipv/CVE-2026-50751-Check-Point-IKEv1-Authentication-Bypass)
-- [bolubey/CVE-2026-50751](https://github.com/bolubey/CVE-2026-50751)
 - [WadesWeaponShed/CheckPoint-CVE-Webscanner](https://github.com/WadesWeaponShed/CheckPoint-CVE-Webscanner)
 
 ### CVE-2026-52885 (2026-06-26)
@@ -3803,6 +3819,7 @@
 </code>
 
 - [0xBlackash/CVE-2026-55200](https://github.com/0xBlackash/CVE-2026-55200)
+- [xd20111/CVE-2026-55200](https://github.com/xd20111/CVE-2026-55200)
 
 ### CVE-2026-55584
 - [mirackayikci/CVE-2026-55584](https://github.com/mirackayikci/CVE-2026-55584)
@@ -3862,6 +3879,7 @@
 - [shawarkhanethicalhacker/CVE-2025-0133-exploit](https://github.com/shawarkhanethicalhacker/CVE-2025-0133-exploit)
 - [adhamelhansye/CVE-2025-0133](https://github.com/adhamelhansye/CVE-2025-0133)
 - [cruxN3T/CVE-2025-0133](https://github.com/cruxN3T/CVE-2025-0133)
+- [radityahack/cve-2025-0133](https://github.com/radityahack/cve-2025-0133)
 
 ### CVE-2025-0184 (2025-03-20)
 
@@ -15203,7 +15221,9 @@
 </code>
 
 - [lukasz-rybak/CVE-2025-69212](https://github.com/lukasz-rybak/CVE-2025-69212)
+- [jonathan-corbin/CVE-2025-69212-Authenticated-RCE-PoC](https://github.com/jonathan-corbin/CVE-2025-69212-Authenticated-RCE-PoC)
 - [tohib09/CVE-2025-69212-PoC](https://github.com/tohib09/CVE-2025-69212-PoC)
+- [w3nch/CVE-2025-69212](https://github.com/w3nch/CVE-2025-69212)
 
 ### CVE-2025-69213 (2026-02-04)
 
@@ -18038,6 +18058,7 @@
 - [rvzsec/CVE-2024-9264](https://github.com/rvzsec/CVE-2024-9264)
 - [patrickpichler/grafana-CVE-2024-9264](https://github.com/patrickpichler/grafana-CVE-2024-9264)
 - [amalpvatayam67/day05-grafana-sqlexpr-lab](https://github.com/amalpvatayam67/day05-grafana-sqlexpr-lab)
+- [yeonchoda/CVE-2024-9264](https://github.com/yeonchoda/CVE-2024-9264)
 
 ### CVE-2024-9290 (2024-12-13)
 
@@ -22023,13 +22044,6 @@
 </code>
 
 - [MathSabo/CVE-2024-33297](https://github.com/MathSabo/CVE-2024-33297)
-
-### CVE-2024-33298 (2025-01-10)
-
-<code>Microweber Cross Site Scripting vulnerability in Microweber v.2.0.9 allows a remote attacker to execute arbitrary code via the create new backup function in the endpoint /admin/module/view?type=admin__backup
-</code>
-
-- [MathSabo/CVE-2024-33298](https://github.com/MathSabo/CVE-2024-33298)
 
 ### CVE-2024-33299 (2025-01-10)
 
@@ -37903,6 +37917,7 @@
 - [gunzf0x/CVE-2022-22963](https://github.com/gunzf0x/CVE-2022-22963)
 - [nikn0laty/RCE-in-Spring-Cloud-CVE-2022-22963](https://github.com/nikn0laty/RCE-in-Spring-Cloud-CVE-2022-22963)
 - [BearClaw96/CVE-2022-22963-Poc-Bearcules](https://github.com/BearClaw96/CVE-2022-22963-Poc-Bearcules)
+- [xmqaq/CVE-2022-22963](https://github.com/xmqaq/CVE-2022-22963)
 - [jrbH4CK/CVE-2022-22963](https://github.com/jrbH4CK/CVE-2022-22963)
 - [Shayz614/CVE-2022-22963](https://github.com/Shayz614/CVE-2022-22963)
 - [cyberager/CVE-2022-22963](https://github.com/cyberager/CVE-2022-22963)
@@ -70561,6 +70576,13 @@
 - [cyberharsh/Oracle-mysql-CVE-2012-2122](https://github.com/cyberharsh/Oracle-mysql-CVE-2012-2122)
 - [zhangkaibin0921/CVE-2012-2122](https://github.com/zhangkaibin0921/CVE-2012-2122)
 - [netw0rk7/CVE-2012-2122-Home-Lab](https://github.com/netw0rk7/CVE-2012-2122-Home-Lab)
+
+### CVE-2012-2459 (2012-08-06)
+
+<code>Unspecified vulnerability in bitcoind and Bitcoin-Qt before 0.4.6, 0.5.x before 0.5.5, 0.6.0.x before 0.6.0.7, and 0.6.x before 0.6.2 allows remote attackers to cause a denial of service (block-processing outage and incorrect block count) via unknown behavior on a Bitcoin network.
+</code>
+
+- [systemslibrarian/crypto-lab-merkle-proofs](https://github.com/systemslibrarian/crypto-lab-merkle-proofs)
 
 ### CVE-2012-2593 (2020-02-06)
 
