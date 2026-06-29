@@ -286,13 +286,6 @@
 
 - [tihomirocrew/portwell-lpe](https://github.com/tihomirocrew/portwell-lpe)
 
-### CVE-2026-3494 (2026-03-03)
-
-<code>In MariaDB server version through 11.8.5, when server audit plugin is enabled with server_audit_events variable configured with QUERY_DCL, QUERY_DDL, or QUERY_DML filtering, if an authenticated database user invokes a SQL statement prefixed with double-hyphen (—) or hash (#) style comments, the statement is not logged.
-</code>
-
-- [KKongTen/CVE-2026-3494_Verfication](https://github.com/KKongTen/CVE-2026-3494_Verfication)
-
 ### CVE-2026-3609 (2026-05-11)
 
 <code>Wellbia's XIGNCODE3 xhunter1.sys kernel driver Privilege Escalation Vulnerability provides access to IRP_MJ_REITS command interface, which allows any user process to request a PROCESS_ALL_ACCESS.\r\nCross reference to KVE 2023-5589 (https://krcert.or.kr)
@@ -540,13 +533,6 @@
 - [rootdirective-sec/CVE-2026-5718-Lab](https://github.com/rootdirective-sec/CVE-2026-5718-Lab)
 - [xxconi/CVE-2026-5718](https://github.com/xxconi/CVE-2026-5718)
 - [xxconi/CVE-2026-5718-PR-V-EXPLO-T](https://github.com/xxconi/CVE-2026-5718-PR-V-EXPLO-T)
-
-### CVE-2026-5865 (2026-04-08)
-
-<code>Type Confusion in V8 in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)
-</code>
-
-- [Crihexe/v8-poc-CVE-2026-5865](https://github.com/Crihexe/v8-poc-CVE-2026-5865)
 
 ### CVE-2026-5950 (2026-05-20)
 
@@ -1109,19 +1095,19 @@
 
 - [Polosss/By-Poloss..-..CVE-2026-12432-PoC](https://github.com/Polosss/By-Poloss..-..CVE-2026-12432-PoC)
 
+### CVE-2026-12485 (2026-06-24)
+
+<code>GV-I/O Box 4E is a smart embedded device with 4 input and 4 relays output that can be controlled over Ethernet and RS-485.\n\nDVRSearch is a service running by default on the IOBox listening for UDP messages on port 10001. Any user on the network can send messages to this service and interact with it. \n\n\n\nUpon receiving a UDP message,  the server reads at most 1460 bytes into a local buffer and a pointer to the buffer is stored in a global variable:\n\n\n#### IP field stack overflow\n\nThe following code is vulnerable to a stack overflow that is attacker-controlled:\n\n\n\n      v3 = strlen(g_network_config-&gt;ip_addr);\n\n      memcpy(&amp;reply_buf[36], g_network_config-&gt;ip_addr, v3);
+</code>
+
+- [0xBlackash/CVE-2026-12485](https://github.com/0xBlackash/CVE-2026-12485)
+
 ### CVE-2026-20127 (2026-02-25)
 
 <code>A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, and Cisco Catalyst SD-WAN Validator, formerly SD-WAN vBond, could allow an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.\r\n\r\nThis vulnerability exists because the peering authentication mechanism in an affected system is not working properly. An attacker could exploit this vulnerability by sending crafted requests to an affected system. A successful exploit could allow the attacker to log in to an affected Cisco Catalyst SD-WAN Controller as an internal, high-privileged, non-root&amp;nbsp;user account. Using this account, the attacker could access NETCONF, which would then allow the attacker to manipulate network configuration for the SD-WAN fabric.&amp;nbsp;
 </code>
 
 - [0xBlackash/CVE-2026-20127](https://github.com/0xBlackash/CVE-2026-20127)
-
-### CVE-2026-20131 (2026-03-04)
-
-<code>A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to execute arbitrary Java code as root&amp;nbsp;on an affected device.\r\n\r\nThis vulnerability is due to insecure deserialization of a user-supplied Java byte stream. An attacker could exploit this vulnerability by sending a crafted serialized Java object to the web-based management interface of an affected device. A successful exploit could allow the attacker to execute arbitrary code on the device and elevate privileges to root.\r\nNote: If the FMC management interface does not have public internet access, the attack surface that is associated with this vulnerability is reduced.
-</code>
-
-- [0xBlackash/CVE-2026-20131](https://github.com/0xBlackash/CVE-2026-20131)
 
 ### CVE-2026-20182 (2026-05-14)
 
@@ -1195,6 +1181,20 @@
 </code>
 
 - [Hunt-Benito/mediatek-wlan-heap-overflow-cve-2026-20452-filogic-router-rce](https://github.com/Hunt-Benito/mediatek-wlan-heap-overflow-cve-2026-20452-filogic-router-rce)
+
+### CVE-2026-20637 (2026-03-25)
+
+<code>A use after free issue was addressed with improved memory management. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.3 and iPadOS 26.3, macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.3, tvOS 26.3, visionOS 26.3, watchOS 26.3. An app may be able to cause unexpected system termination.
+</code>
+
+- [zeroxjf/CVE-2026-20637-AppleSEPKeyStore-UAF](https://github.com/zeroxjf/CVE-2026-20637-AppleSEPKeyStore-UAF)
+
+### CVE-2026-20643 (2026-03-17)
+
+<code>A cross-origin issue in the Navigation API was addressed with improved input validation. This issue is fixed in Background Security Improvements for iOS, iPadOS, and macOS, Safari 26.4, iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Tahoe 26.4, visionOS 26.4. Processing maliciously crafted web content may bypass Same Origin Policy.
+</code>
+
+- [zeroxjf/WebKit-NavigationAPI-SOP-Bypass](https://github.com/zeroxjf/WebKit-NavigationAPI-SOP-Bypass)
 
 ### CVE-2026-20700 (2026-02-11)
 
@@ -1385,6 +1385,7 @@
 - [striga-ai/CVE-2026-23918](https://github.com/striga-ai/CVE-2026-23918)
 - [Bencodin/CVE-2026-23918-poc](https://github.com/Bencodin/CVE-2026-23918-poc)
 - [sibersan/apache_audit_cve-2026-23918](https://github.com/sibersan/apache_audit_cve-2026-23918)
+- [gagaltotal/CVE-2026-23918-Double-free-Apache-httpd-mod_http2](https://github.com/gagaltotal/CVE-2026-23918-Double-free-Apache-httpd-mod_http2)
 
 ### CVE-2026-23921 (2026-03-24)
 
@@ -1453,6 +1454,13 @@
 </code>
 
 - [tracyliving606/RegPwn](https://github.com/tracyliving606/RegPwn)
+
+### CVE-2026-24418 (2026-02-06)
+
+<code>OpenSTAManager is an open source management software for technical assistance and invoicing. OpenSTAManager v2.9.8 and earlier contain a critical Error-Based SQL Injection vulnerability in the bulk operations handler for the Scadenzario (Payment Schedule) module. The application fails to validate that elements of the id_records array are integers before using them in an SQL IN() clause, allowing attackers to inject arbitrary SQL commands and extract sensitive data through XPATH error messages.
+</code>
+
+- [BridgerAlderson/CVE-2026-24418](https://github.com/BridgerAlderson/CVE-2026-24418)
 
 ### CVE-2026-24688 (2026-01-27)
 
@@ -1779,7 +1787,6 @@
 - [Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail](https://github.com/Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail)
 - [philfry/cve-2026-31431-ftrace](https://github.com/philfry/cve-2026-31431-ftrace)
 - [adilkurtulmus/linux-copy-fail-CVE-2026-31431](https://github.com/adilkurtulmus/linux-copy-fail-CVE-2026-31431)
-- [Morton-Li/copy-fail-CVE-2026-31431](https://github.com/Morton-Li/copy-fail-CVE-2026-31431)
 - [p401a-ops/Copy-Fail](https://github.com/p401a-ops/Copy-Fail)
 - [infiniroot/ansible-mitigate-copyfail-dirtyfrag](https://github.com/infiniroot/ansible-mitigate-copyfail-dirtyfrag)
 - [KaraZajac/DIRTYFAIL](https://github.com/KaraZajac/DIRTYFAIL)
@@ -1787,7 +1794,6 @@
 - [Hunt-Benito/copy-fail-cve-2026-31431-linux-kernel-page-cache-lpe](https://github.com/Hunt-Benito/copy-fail-cve-2026-31431-linux-kernel-page-cache-lpe)
 - [Helios973/CVE-2026-31431_exp.c](https://github.com/Helios973/CVE-2026-31431_exp.c)
 - [haydenjames/CVE-2026-31431-check](https://github.com/haydenjames/CVE-2026-31431-check)
-- [cleozi/Copy_Grail](https://github.com/cleozi/Copy_Grail)
 - [vorkampfer/copyfail2_electric_boogaloo_fix](https://github.com/vorkampfer/copyfail2_electric_boogaloo_fix)
 - [Karim33z/CVE-2026-31431](https://github.com/Karim33z/CVE-2026-31431)
 - [Lutfifakee-Project/CVE-2026-31431](https://github.com/Lutfifakee-Project/CVE-2026-31431)
@@ -1863,7 +1869,7 @@
 <code>Protection mechanism failure in Windows Shell allows an unauthorized attacker to perform spoofing over a network.
 </code>
 
-- [alexlanum/CVE-2026-32202](https://github.com/alexlanum/CVE-2026-32202)
+- [1fox23/CVE-2026-32202](https://github.com/1fox23/CVE-2026-32202)
 
 ### CVE-2026-32488 (2026-03-25)
 
@@ -2326,6 +2332,7 @@
 </code>
 
 - [b0ySie7e/OpenSTAManager-RCE-Exploit-CVE-2026-38751](https://github.com/b0ySie7e/OpenSTAManager-RCE-Exploit-CVE-2026-38751)
+- [Why-Shell/CVE-2026-38751](https://github.com/Why-Shell/CVE-2026-38751)
 
 ### CVE-2026-38763
 - [D7EAD/CVE-2026-38763](https://github.com/D7EAD/CVE-2026-38763)
@@ -2567,13 +2574,6 @@
 
 - [Hunt-Benito/cve-2026-41200-stig-manager-oidc-reflected-xss](https://github.com/Hunt-Benito/cve-2026-41200-stig-manager-oidc-reflected-xss)
 
-### CVE-2026-41285 (2026-04-20)
-
-<code>In OpenBSD through 7.8, the slaacd and rad daemons have an infinite loop when they receive a crafted ICMPv6 Neighbor Discovery (ND) option (over a local network) with length zero, because of an &quot;nd_opt_len * 8 - 2&quot; expression with no preceding check for whether nd_opt_len is zero.
-</code>
-
-- [Rat5ak/CVE-2026-41285-OpenBSD-v6daemons-go-brrr](https://github.com/Rat5ak/CVE-2026-41285-OpenBSD-v6daemons-go-brrr)
-
 ### CVE-2026-41490 (2026-05-07)
 
 <code>Dagster is an orchestration platform for the development, production, and observation of data assets. Prior to Dagster Core version 1.13.1 and prior to Dagster libraries version 0.29.1, the DuckDB, Snowflake, BigQuery, and DeltaLake I/O managers constructed SQL WHERE clauses by interpolating dynamic partition key values into queries without escaping. A user with the Add Dynamic Partitions permission could create a partition key that injects arbitrary SQL, which would execute against the target database backend under the I/O manager's credentials. Only deployments that use dynamic partitions are affected. Pipelines using static or time-window partitions are not impacted. This issue has been patched in Dagster Core version 1.13.1 and Dagster libraries version 0.29.1.
@@ -2675,10 +2675,8 @@
 <code>LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. From version 1.81.16 to before version 1.83.7, a database query used during proxy API key checks mixed the caller-supplied key value into the query text instead of passing it as a separate parameter. An unauthenticated attacker could send a specially crafted Authorization header to any LLM API route (for example POST /chat/completions) and reach this query through the proxy's error-handling path. An attacker could read data from the proxy's database and may be able to modify it, leading to unauthorised access to the proxy and the credentials it manages. This issue has been patched in version 1.83.7.
 </code>
 
-- [rootdirective-sec/CVE-2026-42208-Lab](https://github.com/rootdirective-sec/CVE-2026-42208-Lab)
 - [ridhinva/litellm-sqli-scanner](https://github.com/ridhinva/litellm-sqli-scanner)
 - [HAERIN-L/poc_cve-2026-42208](https://github.com/HAERIN-L/poc_cve-2026-42208)
-- [yendpoint/CVE-2026-42208-LAB](https://github.com/yendpoint/CVE-2026-42208-LAB)
 
 ### CVE-2026-42221 (2026-05-04)
 
@@ -3510,6 +3508,13 @@
 - [j0xh-sec/CVE-2026-49009](https://github.com/j0xh-sec/CVE-2026-49009)
 - [INTELEON404/CVE-2026-49009](https://github.com/INTELEON404/CVE-2026-49009)
 
+### CVE-2026-49048 (2026-06-28)
+
+<code>The Joomla extension JoomCCK exposes a front-end controller task, that builds two SQL statements by directly concatenating a user-supplied request parameter into the query string without escaping or parameterisation.
+</code>
+
+- [KARA-git/CVE-2026-49048-JoomCCK-SQLi](https://github.com/KARA-git/CVE-2026-49048-JoomCCK-SQLi)
+
 ### CVE-2026-49060 (2026-06-11)
 
 <code>Incorrect Privilege Assignment vulnerability in Hippoo Mobile App for WooCommerce allows Privilege Escalation.\n\nThis issue affects Hippoo Mobile App for WooCommerce: from n/a through 1.9.4.
@@ -3808,6 +3813,9 @@
 </code>
 
 - [Christbowel/CVE-2026-56111](https://github.com/Christbowel/CVE-2026-56111)
+
+### CVE-2026-69212
+- [c0gnit00/CVE-2026-69212](https://github.com/c0gnit00/CVE-2026-69212)
 
 ### CVE-2026-999999
 - [24520597-blip/CVE-2026-999999](https://github.com/24520597-blip/CVE-2026-999999)
@@ -12628,6 +12636,8 @@
 - [Fomovet/cve-2025-55182](https://github.com/Fomovet/cve-2025-55182)
 - [avoidme12/CVE-2025-55182-POC](https://github.com/avoidme12/CVE-2025-55182-POC)
 - [litndat/React2Shell-PoC-CVE-2025-55182](https://github.com/litndat/React2Shell-PoC-CVE-2025-55182)
+- [k1llmelira/react2shell-exploit](https://github.com/k1llmelira/react2shell-exploit)
+- [Herick-Costa/CVE-2025-55182-React2Shell-RCE](https://github.com/Herick-Costa/CVE-2025-55182-React2Shell-RCE)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -14655,6 +14665,7 @@
 </code>
 
 - [cwjchoi01/CVE-2025-66680](https://github.com/cwjchoi01/CVE-2025-66680)
+- [skimask1690/WiseDelete](https://github.com/skimask1690/WiseDelete)
 
 ### CVE-2025-66683
 - [scap3sh4rk/CVE-2025-66683](https://github.com/scap3sh4rk/CVE-2025-66683)
@@ -16267,7 +16278,7 @@
 - [c0d3zilla/CVE-2024-2876](https://github.com/c0d3zilla/CVE-2024-2876)
 - [chsxthwik/CVE-2024-2876](https://github.com/chsxthwik/CVE-2024-2876)
 - [0xAgun/CVE-2024-2876](https://github.com/0xAgun/CVE-2024-2876)
-- [intel365/CVE-2024-2876](https://github.com/intel365/CVE-2024-2876)
+- [h21n/CVE-2024-2876](https://github.com/h21n/CVE-2024-2876)
 
 ### CVE-2024-2879 (2024-04-03)
 
@@ -17613,7 +17624,7 @@
 
 - [rxerium/CVE-2024-7593](https://github.com/rxerium/CVE-2024-7593)
 - [D3N14LD15K/CVE-2024-7593_PoC_Exploit](https://github.com/D3N14LD15K/CVE-2024-7593_PoC_Exploit)
-- [intel365/CVE-2024-7593](https://github.com/intel365/CVE-2024-7593)
+- [h21n/CVE-2024-7593](https://github.com/h21n/CVE-2024-7593)
 
 ### CVE-2024-7595 (2025-02-05)
 
@@ -20371,7 +20382,7 @@
 - [LuisMateo1/Arbitrary-File-Read-CVE-2024-24919](https://github.com/LuisMateo1/Arbitrary-File-Read-CVE-2024-24919)
 - [AhmedMansour93/Event-ID-263-Rule-Name-SOC287---Arbitrary-File-Read-on-Checkpoint-Security-Gateway-CVE-2024-24919-](https://github.com/AhmedMansour93/Event-ID-263-Rule-Name-SOC287---Arbitrary-File-Read-on-Checkpoint-Security-Gateway-CVE-2024-24919-)
 - [geniuszly/CVE-2024-24919](https://github.com/geniuszly/CVE-2024-24919)
-- [intel365/CVE-2024-24919](https://github.com/intel365/CVE-2024-24919)
+- [h21n/CVE-2024-24919](https://github.com/h21n/CVE-2024-24919)
 - [sar-3mar/CVE-2024-24919_POC](https://github.com/sar-3mar/CVE-2024-24919_POC)
 - [NingXin2002/Check-Point_poc](https://github.com/NingXin2002/Check-Point_poc)
 - [hashdr1ft/SOC_287](https://github.com/hashdr1ft/SOC_287)
@@ -21386,7 +21397,7 @@
 - [NanoWraith/CVE-2024-29973](https://github.com/NanoWraith/CVE-2024-29973)
 - [p0et08/CVE-2024-29973](https://github.com/p0et08/CVE-2024-29973)
 - [RevoltSecurities/CVE-2024-29973](https://github.com/RevoltSecurities/CVE-2024-29973)
-- [intel365/CVE-2024-29973](https://github.com/intel365/CVE-2024-29973)
+- [h21n/CVE-2024-29973](https://github.com/h21n/CVE-2024-29973)
 
 ### CVE-2024-29988 (2024-04-09)
 
@@ -22012,6 +22023,13 @@
 </code>
 
 - [MathSabo/CVE-2024-33297](https://github.com/MathSabo/CVE-2024-33297)
+
+### CVE-2024-33298 (2025-01-10)
+
+<code>Microweber Cross Site Scripting vulnerability in Microweber v.2.0.9 allows a remote attacker to execute arbitrary code via the create new backup function in the endpoint /admin/module/view?type=admin__backup
+</code>
+
+- [MathSabo/CVE-2024-33298](https://github.com/MathSabo/CVE-2024-33298)
 
 ### CVE-2024-33299 (2025-01-10)
 
@@ -23056,13 +23074,6 @@
 </code>
 
 - [abanop22333/Apache-Authentication-Flaw-Research-CVE-2024-38476-](https://github.com/abanop22333/Apache-Authentication-Flaw-Research-CVE-2024-38476-)
-
-### CVE-2024-38513 (2024-07-01)
-
-<code>Fiber is an Express-inspired web framework written in Go A vulnerability present in versions prior to 2.52.5 is a session middleware issue in GoFiber versions 2 and above. This vulnerability allows users to supply their own session_id value, resulting in the creation of a session with that key. If a website relies on the mere presence of a session for security purposes, this can lead to significant security risks, including unauthorized access and session fixation attacks. All users utilizing GoFiber's session middleware in the affected versions are impacted. The issue has been addressed in version 2.52.5. Users are strongly encouraged to upgrade to version 2.52.5 or higher to mitigate this vulnerability. Users who are unable to upgrade immediately can apply the following workarounds to reduce the risk: Either implement additional validation to ensure session IDs are not supplied by the user and are securely generated by the server, or regularly rotate session IDs and enforce strict session expiration policies.
-</code>
-
-- [Oyeonseok/GoFiber-CVE-2024-38513](https://github.com/Oyeonseok/GoFiber-CVE-2024-38513)
 
 ### CVE-2024-38526 (2024-06-25)
 
@@ -26732,6 +26743,7 @@
 - [karimelsheikh1/HTB-TwoMillion-Writeup](https://github.com/karimelsheikh1/HTB-TwoMillion-Writeup)
 - [julianertle/CVE-2023-0386-CTF](https://github.com/julianertle/CVE-2023-0386-CTF)
 - [anxs3c/TwoMillion-Machine](https://github.com/anxs3c/TwoMillion-Machine)
+- [pwncone/CVE-2023-0386-OverlayFS](https://github.com/pwncone/CVE-2023-0386-OverlayFS)
 
 ### CVE-2023-0400 (2023-02-01)
 
@@ -28463,6 +28475,13 @@
 </code>
 
 - [H4rk3nz0/CVE-2023-20598-PDFWKRNL](https://github.com/H4rk3nz0/CVE-2023-20598-PDFWKRNL)
+
+### CVE-2023-20696 (2023-05-15)
+
+<code>In preloader, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07856356 / ALPS07874388 (For MT6880 and MT6890 only); Issue ID: ALPS07856356 / ALPS07874388 (For MT6880 and MT6890 only).
+</code>
+
+- [kasnria001/pwnage24mtk](https://github.com/kasnria001/pwnage24mtk)
 
 ### CVE-2023-20860 (2023-03-27)
 
@@ -30280,8 +30299,6 @@
 <code>Transient DOS in Bluetooth Host while rfc slot allocation.
 </code>
 
-- [uthrasri/CVE-2023-28588](https://github.com/uthrasri/CVE-2023-28588)
-- [uthrasri/CVE-2023-28588_Singlefile](https://github.com/uthrasri/CVE-2023-28588_Singlefile)
 - [uthrasri/G2.5_CVE-2023-28588](https://github.com/uthrasri/G2.5_CVE-2023-28588)
 - [uthrasri/CVE-2023-28588_G2.5_singlefile](https://github.com/uthrasri/CVE-2023-28588_G2.5_singlefile)
 
@@ -51459,6 +51476,7 @@
 - [SimonSchoeni/CVE-2020-7247-POC](https://github.com/SimonSchoeni/CVE-2020-7247-POC)
 - [presentdaypresenttime/shai_hulud](https://github.com/presentdaypresenttime/shai_hulud)
 - [minhluannguyen/CVE-2020-7247-reproducer](https://github.com/minhluannguyen/CVE-2020-7247-reproducer)
+- [solmin111/OpenSMTPD-CVE-2020-7247-](https://github.com/solmin111/OpenSMTPD-CVE-2020-7247-)
 
 ### CVE-2020-7283 (2020-07-03)
 
@@ -63268,6 +63286,7 @@
 
 - [cyberharsh/Mini_httpd-CVE-2018-18778](https://github.com/cyberharsh/Mini_httpd-CVE-2018-18778)
 - [auk0x01/CVE-2018-18778-Scanner](https://github.com/auk0x01/CVE-2018-18778-Scanner)
+- [K3ysTr0K3R/CVE-2018-18778](https://github.com/K3ysTr0K3R/CVE-2018-18778)
 
 ### CVE-2018-18820 (2018-11-05)
 
