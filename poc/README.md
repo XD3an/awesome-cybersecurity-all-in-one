@@ -1438,6 +1438,13 @@
 
 - [offseckit/CVE-2026-23813](https://github.com/offseckit/CVE-2026-23813)
 
+### CVE-2026-23869 (2026-04-08)
+
+<code>A denial of service vulnerability exists in React Server Components, affecting the following packages: react-server-dom-parcel, react-server-dom-turbopack and react-server-dom-webpack (versions 19.0.0 through 19.0.4, 19.1.0 through 19.1.5, and 19.2.0 through 19.2.4). The vulnerability is triggered by sending specially crafted HTTP requests to Server Function endpoints.The payload of the HTTP request causes excessive CPU usage for up to a minute ending in a thrown error that is catchable.
+</code>
+
+- [shaheryar773/mitigate-cve-2026-23869-react-server-component-loops](https://github.com/shaheryar773/mitigate-cve-2026-23869-react-server-component-loops)
+
 ### CVE-2026-23870 (2026-05-06)
 
 <code>A denial of service vulnerability could be triggered by sending specially crafted HTTP requests to server function endpoints, this could lead to server crashes, out-of-memory exceptions or excessive CPU usage; affecting the following packages: react-server-dom-webpack, react-server-dom-parcel, react-server-dom-turbopack (versions 19.0.0 through 19.0.5, 19.1.0 through 19.1.6, and 19.2.0 through 19.2.5).
@@ -1859,7 +1866,7 @@
 - [tgies/copy-fail-c](https://github.com/tgies/copy-fail-c)
 - [insomnisec/Detections-CVE-2026-31431](https://github.com/insomnisec/Detections-CVE-2026-31431)
 - [ryan2929/CVE-2026-31431](https://github.com/ryan2929/CVE-2026-31431)
-- [Aurillium/RootRemover](https://github.com/Aurillium/RootRemover)
+- [st4rburn/RootRemover](https://github.com/st4rburn/RootRemover)
 - [adampielak/CVE-2026-31431_SCA_WAZUH](https://github.com/adampielak/CVE-2026-31431_SCA_WAZUH)
 - [JuanBindez/CVE-2026-31431](https://github.com/JuanBindez/CVE-2026-31431)
 - [selectel/mks-copy-fail-mitigation](https://github.com/selectel/mks-copy-fail-mitigation)
@@ -1867,6 +1874,7 @@
 - [HulnotHutu/CVE-2026-31431](https://github.com/HulnotHutu/CVE-2026-31431)
 - [K3ysTr0K3R/CVE-2026-31431-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2026-31431-EXPLOIT)
 - [bootsareme/copyfail-deconstructed](https://github.com/bootsareme/copyfail-deconstructed)
+- [Smarttfoxx/copyfail](https://github.com/Smarttfoxx/copyfail)
 - [monobrau/copyfailscan](https://github.com/monobrau/copyfailscan)
 - [suominen/CVE-2026-31431](https://github.com/suominen/CVE-2026-31431)
 - [aexdyhaxor/CVE-2026-31431-copy-fail](https://github.com/aexdyhaxor/CVE-2026-31431-copy-fail)
@@ -1885,6 +1893,7 @@
 - [Lutfifakee-Project/CVE-2026-31431](https://github.com/Lutfifakee-Project/CVE-2026-31431)
 - [mauricioportela/CVE-2026-31431-Analysis](https://github.com/mauricioportela/CVE-2026-31431-Analysis)
 - [gbonacini/CVE-2026-31431](https://github.com/gbonacini/CVE-2026-31431)
+- [studiogangster/CVE-2026-31431](https://github.com/studiogangster/CVE-2026-31431)
 - [hyz-is/copyfail-fix](https://github.com/hyz-is/copyfail-fix)
 - [SystemVll/CVE-2026-31431-copyfail-aarch64](https://github.com/SystemVll/CVE-2026-31431-copyfail-aarch64)
 - [DroPZsec/SplicePrivillegeEscalationFIX](https://github.com/DroPZsec/SplicePrivillegeEscalationFIX)
@@ -1989,6 +1998,7 @@
 
 - [r3nsi15/CVE-2026-33017-langflow-rce](https://github.com/r3nsi15/CVE-2026-33017-langflow-rce)
 - [c0gnit00/CVE-2026-33017](https://github.com/c0gnit00/CVE-2026-33017)
+- [yayip/CVE-2026-33017](https://github.com/yayip/CVE-2026-33017)
 
 ### CVE-2026-33067 (2026-03-20)
 
@@ -2064,6 +2074,9 @@
 - [seguridadentrerios/CVE-2026-33829](https://github.com/seguridadentrerios/CVE-2026-33829)
 - [jenniferreire26/CVE-2026-33829](https://github.com/jenniferreire26/CVE-2026-33829)
 
+### CVE-2026-34038
+- [ThemeHackers/CVE-2026-34038](https://github.com/ThemeHackers/CVE-2026-34038)
+
 ### CVE-2026-34040 (2026-03-31)
 
 <code>Moby is an open source container framework. Prior to version 29.3.1, a security vulnerability has been detected that allows attackers to bypass authorization plugins (AuthZ). This issue has been patched in version 29.3.1.
@@ -2087,6 +2100,7 @@
 - [LAT-06/CVE-2026-34197](https://github.com/LAT-06/CVE-2026-34197)
 - [hnytgl/CVE-2026-34197](https://github.com/hnytgl/CVE-2026-34197)
 - [asdasddqwdq29-a11y/CVE-2026-34197](https://github.com/asdasddqwdq29-a11y/CVE-2026-34197)
+- [dinosn/apache-activemq-rce-research](https://github.com/dinosn/apache-activemq-rce-research)
 
 ### CVE-2026-34207 (2026-05-22)
 
@@ -2925,6 +2939,7 @@
 
 - [mym0us3r/DIRTY-FRAG-Detection-with-Wazuh-4.14.4](https://github.com/mym0us3r/DIRTY-FRAG-Detection-with-Wazuh-4.14.4)
 - [suominen/CVE-2026-43284](https://github.com/suominen/CVE-2026-43284)
+- [haydenjames/dirty-frag-check](https://github.com/haydenjames/dirty-frag-check)
 - [linnemanlabs/dirtyfrag-arm64](https://github.com/linnemanlabs/dirtyfrag-arm64)
 - [FrosterDL/CVE-2026-43284](https://github.com/FrosterDL/CVE-2026-43284)
 - [ChernStepanov/DirtyFrag-for-dummies](https://github.com/ChernStepanov/DirtyFrag-for-dummies)
@@ -3321,7 +3336,7 @@
 </code>
 
 - [KaraZajac/CHARON](https://github.com/KaraZajac/CHARON)
-- [Aurillium/public-passwd](https://github.com/Aurillium/public-passwd)
+- [st4rburn/public-passwd](https://github.com/st4rburn/public-passwd)
 - [0xBlackash/CVE-2026-46333](https://github.com/0xBlackash/CVE-2026-46333)
 - [studiogangster/CVE-2026-46333](https://github.com/studiogangster/CVE-2026-46333)
 
@@ -3623,6 +3638,7 @@
 - [K3ysTr0K3R/CVE-2026-48907](https://github.com/K3ysTr0K3R/CVE-2026-48907)
 - [pssec-io/CVE-2026-48907](https://github.com/pssec-io/CVE-2026-48907)
 - [NoXiVaR/CVE-2026-48907](https://github.com/NoXiVaR/CVE-2026-48907)
+- [bayu06802/CVE-2026-48907](https://github.com/bayu06802/CVE-2026-48907)
 
 ### CVE-2026-48908 (2026-06-20)
 
@@ -3892,6 +3908,9 @@
 
 - [lottiedeyan/CVE-2026-53075poc](https://github.com/lottiedeyan/CVE-2026-53075poc)
 
+### CVE-2026-53360
+- [0xCyberstan/CVE-2026-53360-POC](https://github.com/0xCyberstan/CVE-2026-53360-POC)
+
 ### CVE-2026-53435 (2026-06-10)
 
 <code>In Jenkins 2.567 and earlier, LTS 2.555.2 and earlier, it is possible for attackers to have Jenkins deserialize arbitrary types defined in Jenkins core or plugins from an attacker-controlled `config.xml` submission in a way that allows them to handle HTTP requests afterwards.\nThis can be used to impersonate any user and send HTTP requests on their behalf, up to and including use of the Script Console to run arbitrary code, or to read arbitrary files from the Jenkins controller.
@@ -3954,6 +3973,13 @@
 ### CVE-2026-54337
 - [4qu4r1um/CVE-2026-54337-PoC](https://github.com/4qu4r1um/CVE-2026-54337-PoC)
 
+### CVE-2026-54415 (2026-06-17)
+
+<code>Missing Authorization in the server management routes (routes/admin.php) in Azuriom Azuriom CMS before 1.2.11 on all platforms allows an authenticated attacker with the admin.access permission to create AzLink server tokens and take over non-admin user accounts by changing their passwords and email addresses via crafted HTTP requests to /admin/servers/create and the AzLink API endpoints (/api/azlink/password, /api/azlink/email, /api/azlink/user/{id}).
+</code>
+
+- [abdugafforov-bobur/CVE-2026-54415-PoC](https://github.com/abdugafforov-bobur/CVE-2026-54415-PoC)
+
 ### CVE-2026-54420 (2026-06-14)
 
 <code>LiteSpeed cPanel plugin before 2.4.8 (as distributed in LiteSpeed WHM PlugIn before 5.3.2.0) mishandles symlinks provided by a user with FTP or web shell access on a shared hosting server running CloudLinux/CageFS, as exploited in the wild in May 2026.
@@ -3964,7 +3990,11 @@
 - [mahfuzreham/litespeed-cpanel-cve-2026-54420-fix](https://github.com/mahfuzreham/litespeed-cpanel-cve-2026-54420-fix)
 - [fevar54/CVE-2026-54420-LiteSpeed-Symlink-Exploit](https://github.com/fevar54/CVE-2026-54420-LiteSpeed-Symlink-Exploit)
 
-### CVE-2026-54424
+### CVE-2026-54424 (2026-07-04)
+
+<code>An Incorrect Use of Privileged APIs vulnerability in Unity Parsec on Windows hosts leads to a potential Elevation of Privilege. This issue affects Parsec through v2026-05-04.0. The patched version is Parsec for Windows version 150-104a. A user can generate a situation where there is an instance of parsecd.exe running as NT AUTHORITY\SYSTEM with a user-controlled value of the AppData environment variable.
+</code>
+
 - [tomadimitrie/CVE-2026-54424](https://github.com/tomadimitrie/CVE-2026-54424)
 
 ### CVE-2026-54477 (2026-07-02)
@@ -4070,6 +4100,7 @@
 <code>The Joomla extension Page Builder CK is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.
 </code>
 
+- [sagsooz/PageBuilderCK-CVE-2026-56290-Exploit](https://github.com/sagsooz/PageBuilderCK-CVE-2026-56290-Exploit)
 - [shinthink/pbck-exploit](https://github.com/shinthink/pbck-exploit)
 
 ### CVE-2026-56782 (2026-06-29)
@@ -15246,6 +15277,13 @@
 
 - [x0root/CVE-2025-68116](https://github.com/x0root/CVE-2025-68116)
 
+### CVE-2025-68143 (2025-12-17)
+
+<code>Model Context Protocol Servers is a collection of reference implementations for the model context protocol (MCP). In mcp-server-git versions prior to 2025.9.25, the git_init tool accepted arbitrary filesystem paths and created Git repositories without validating the target location. Unlike other tools which required an existing repository, git_init could operate on any directory accessible to the server process, making those directories eligible for subsequent git operations. The tool was removed entirely, as the server is intended to operate on existing repositories only. Users are advised to upgrade to 2025.9.25 or newer to remediate this issue.
+</code>
+
+- [mcp-guard76/mcp-guard](https://github.com/mcp-guard76/mcp-guard)
+
 ### CVE-2025-68147 (2025-12-17)
 
 <code>Open Source Point of Sale (opensourcepos) is a web based point of sale application written in PHP using CodeIgniter framework. Starting in version 3.4.0 and prior to version 3.4.2, a Stored Cross-Site Scripting (XSS) vulnerability exists in the &quot;Return Policy&quot; configuration field. The application does not properly sanitize user input before saving it to the database or displaying it on receipts. An attacker with access to the &quot;Store Configuration&quot; (such as a rogue administrator or an account compromised via the separate CSRF vulnerability) can inject malicious JavaScript payloads into this field. These payloads are executed in the browser of any user (including other administrators and sales staff) whenever they view a receipt or complete a transaction. This can lead to session hijacking, theft of sensitive data, or unauthorized actions performed on behalf of the victim. The vulnerability has been patched in version 3.4.2 by ensuring the output is escaped using the `esc()` function in the receipt template. As a temporary mitigation, administrators should ensure the &quot;Return Policy&quot; field contains only plain text and strictly avoid entering any HTML tags. There is no code-based workaround other than applying the patch.
@@ -19536,6 +19574,7 @@
 - [KaiHaoChen04/monikerlinktest](https://github.com/KaiHaoChen04/monikerlinktest)
 - [Dhananjayasj/CVE-2024-21413-Microsoft-Outlook-Remote-Code-Execution-Vulnerability](https://github.com/Dhananjayasj/CVE-2024-21413-Microsoft-Outlook-Remote-Code-Execution-Vulnerability)
 - [H1ssBl1tz/Blind-Trust-CVE-2024-21413-Research](https://github.com/H1ssBl1tz/Blind-Trust-CVE-2024-21413-Research)
+- [YoguiCR/CVE-2024-21413-Outlook-Assessment](https://github.com/YoguiCR/CVE-2024-21413-Outlook-Assessment)
 
 ### CVE-2024-21490 (2024-02-10)
 
@@ -26324,13 +26363,6 @@
 
 - [Gumbraise/CVE-2024-54887-PoC](https://github.com/Gumbraise/CVE-2024-54887-PoC)
 
-### CVE-2024-54910 (2025-01-10)
-
-<code>Hasleo Backup Suite Free v4.9.4 and before is vulnerable to Insecure Permissions via the File recovery function.
-</code>
-
-- [KrakenEU/CVE-2024-54910](https://github.com/KrakenEU/CVE-2024-54910)
-
 ### CVE-2024-54916 (2025-02-11)
 
 <code>An issue in the SharedConfig class of Telegram Android APK v.11.7.0 allows a physically proximate attacker to bypass authentication and escalate privileges by manipulating the return value of the checkPasscode method.
@@ -28283,6 +28315,13 @@
 </code>
 
 - [josemlwdf/CVE-2023-5965](https://github.com/josemlwdf/CVE-2023-5965)
+
+### CVE-2023-5968 (2023-11-06)
+
+<code>Mattermost fails to properly sanitize the user object when updating the username, resulting in the password hash being included in the response body. \n\n
+</code>
+
+- [Curtail-Inc/hello-ReGrade-security](https://github.com/Curtail-Inc/hello-ReGrade-security)
 
 ### CVE-2023-6000 (2024-01-01)
 
@@ -41524,6 +41563,7 @@
 - [p0dalirius/CVE-2022-36446-Webmin-Software-Package-Updates-RCE](https://github.com/p0dalirius/CVE-2022-36446-Webmin-Software-Package-Updates-RCE)
 - [emirpolatt/CVE-2022-36446](https://github.com/emirpolatt/CVE-2022-36446)
 - [Kang3639/CVE-2022-36446](https://github.com/Kang3639/CVE-2022-36446)
+- [darnabin/CVE-2022-36446-Webmin-RCE](https://github.com/darnabin/CVE-2022-36446-Webmin-RCE)
 
 ### CVE-2022-36532 (2022-09-16)
 
