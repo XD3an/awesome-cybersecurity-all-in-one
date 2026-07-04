@@ -510,6 +510,13 @@
 - [Xaanziu/CVE-2026-5513](https://github.com/Xaanziu/CVE-2026-5513)
 - [87achrafg-stack/CVE-2026-5513](https://github.com/87achrafg-stack/CVE-2026-5513)
 
+### CVE-2026-5524 (2026-07-02)
+
+<code>The Divi Form Builder plugin for WordPress is vulnerable to Arbitrary File Upload leading to Remote Code Execution in all versions up to and including 5.1.8. This is due to insufficient file extension validation in the do_image_upload() function where user-supplied input from the acceptFileTypes POST parameter is directly interpolated into a regular expression used to validate uploaded files. Attackers can specify PHP-executable extensions such as .phtml, .phar, .php5, or .php7 to bypass the plugin's .htaccess protection which only blocks .php files specifically. Additionally, on Nginx-based servers, the .htaccess protection is completely ineffective as Nginx does not process .htaccess files. This makes it possible for unauthenticated attackers (who can obtain a nonce from any public page containing a form) to upload executable PHP files to the publicly accessible /wp-content/uploads/de_fb_uploads/ directory and achieve Remote Code Execution by accessing the uploaded file via HTTP. The vulnerability was partially patched in version 5.1.3.
+</code>
+
+- [caterscam/CVE-2026-5524-PoC](https://github.com/caterscam/CVE-2026-5524-PoC)
+
 ### CVE-2026-5562 (2026-04-05)
 
 <code>A vulnerability was identified in provectus kafka-ui up to 0.7.2. This impacts the function validateAccess of the file /api/smartfilters/testexecutions of the component Endpoint. The manipulation leads to code injection. The attack can be initiated remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.
@@ -800,6 +807,7 @@
 - [watchtowrlabs/watchTowr-vs-Netscaler-CVE-2026-8451](https://github.com/watchtowrlabs/watchTowr-vs-Netscaler-CVE-2026-8451)
 - [derekpreston81/CVE_ADC_IOC_2026](https://github.com/derekpreston81/CVE_ADC_IOC_2026)
 - [attarwahyup/Netscaler-CVE-2026-8451](https://github.com/attarwahyup/Netscaler-CVE-2026-8451)
+- [0xBlackash/CVE-2026-8451](https://github.com/0xBlackash/CVE-2026-8451)
 
 ### CVE-2026-8461 (2026-06-18)
 
@@ -1126,12 +1134,26 @@
 
 - [MichaelAdamGroberman/CVE-2026-13768](https://github.com/MichaelAdamGroberman/CVE-2026-13768)
 
+### CVE-2026-14459 (2026-07-03)
+
+<code>Improper neutralization of argument delimiters in a command ('argument injection') vulnerability in TUBITAK BILGEM Software Technologies Research Institute pardus-software allows Argument Injection.\n\nThis issue affects pardus-software: from &lt;= 1.0.4 before 1.0.5.
+</code>
+
+- [dasokkk/CVE-2026-14459-14460-pardus-software](https://github.com/dasokkk/CVE-2026-14459-14460-pardus-software)
+
 ### CVE-2026-20127 (2026-02-25)
 
 <code>A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, and Cisco Catalyst SD-WAN Validator, formerly SD-WAN vBond, could allow an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.\r\n\r\nThis vulnerability exists because the peering authentication mechanism in an affected system is not working properly. An attacker could exploit this vulnerability by sending crafted requests to an affected system. A successful exploit could allow the attacker to log in to an affected Cisco Catalyst SD-WAN Controller as an internal, high-privileged, non-root&amp;nbsp;user account. Using this account, the attacker could access NETCONF, which would then allow the attacker to manipulate network configuration for the SD-WAN fabric.&amp;nbsp;
 </code>
 
 - [0xBlackash/CVE-2026-20127](https://github.com/0xBlackash/CVE-2026-20127)
+
+### CVE-2026-20131 (2026-03-04)
+
+<code>A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to execute arbitrary Java code as root&amp;nbsp;on an affected device.\r\n\r\nThis vulnerability is due to insecure deserialization of a user-supplied Java byte stream. An attacker could exploit this vulnerability by sending a crafted serialized Java object to the web-based management interface of an affected device. A successful exploit could allow the attacker to execute arbitrary code on the device and elevate privileges to root.\r\nNote: If the FMC management interface does not have public internet access, the attack surface that is associated with this vulnerability is reduced.
+</code>
+
+- [Hassan-Pouladi/Cisco-FMC-honeypot](https://github.com/Hassan-Pouladi/Cisco-FMC-honeypot)
 
 ### CVE-2026-20182 (2026-05-14)
 
@@ -1245,7 +1267,11 @@
 - [404godd/CVE-2026-20841-PoC](https://github.com/404godd/CVE-2026-20841-PoC)
 - [0xBlackash/CVE-2026-20841](https://github.com/0xBlackash/CVE-2026-20841)
 
-### CVE-2026-20896
+### CVE-2026-20896 (2026-07-03)
+
+<code>Gitea Docker image versions up to and including 1.26.2 use REVERSE_PROXY_TRUSTED_PROXIES=* by default, allowing any source IP to impersonate a user when reverse-proxy authentication headers such as X-WEBAUTH-USER are enabled.
+</code>
+
 - [kaleth4/CVE-2026-20896](https://github.com/kaleth4/CVE-2026-20896)
 
 ### CVE-2026-20980 (2026-02-04)
@@ -1591,7 +1617,7 @@
 <code>Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.
 </code>
 
-- [huynambka/cve-2026-26114](https://github.com/huynambka/cve-2026-26114)
+- [huynambka/cve-2026-26114-poc](https://github.com/huynambka/cve-2026-26114-poc)
 
 ### CVE-2026-26179 (2026-04-14)
 
@@ -1662,7 +1688,11 @@
 - [JohannesLks/CVE-2026-27654](https://github.com/JohannesLks/CVE-2026-27654)
 - [dead-lamer/CVE-2026-27654](https://github.com/dead-lamer/CVE-2026-27654)
 
-### CVE-2026-27771
+### CVE-2026-27771 (2026-07-03)
+
+<code>Gitea versions up to and including 1.26.1 have insufficient permission checks for Composer package source links, which can expose private or internal package source information.
+</code>
+
 - [HORKimhab/CVE-2026-27771](https://github.com/HORKimhab/CVE-2026-27771)
 - [portbuster1337/CVE-2026-27771](https://github.com/portbuster1337/CVE-2026-27771)
 
@@ -1691,7 +1721,11 @@
 
 - [rootdirective-sec/CVE-2026-28496-Lab](https://github.com/rootdirective-sec/CVE-2026-28496-Lab)
 
-### CVE-2026-28699
+### CVE-2026-28699 (2026-07-03)
+
+<code>Gitea versions up to and including 1.26.1 allow OAuth2 access token scope enforcement to be bypassed through HTTP Basic authentication.
+</code>
+
 - [Alardiians/gitea-CVE-2026-28699](https://github.com/Alardiians/gitea-CVE-2026-28699)
 
 ### CVE-2026-28766 (2026-04-03)
@@ -2300,6 +2334,9 @@
 </code>
 
 - [calligraf0/CVE-2026-36848](https://github.com/calligraf0/CVE-2026-36848)
+
+### CVE-2026-36851
+- [SyntaxSaiyan/CVE-2026-36851](https://github.com/SyntaxSaiyan/CVE-2026-36851)
 
 ### CVE-2026-37064
 - [jfs-jfs/CVE-2026-37064](https://github.com/jfs-jfs/CVE-2026-37064)
@@ -3044,6 +3081,13 @@
 </code>
 
 - [BiiTts/CVE-2026-44789-n8n-PrototypePollution-RCE](https://github.com/BiiTts/CVE-2026-44789-n8n-PrototypePollution-RCE)
+
+### CVE-2026-44825 (2026-06-01)
+
+<code>Hardcoded credentials in the Basic Authentication setup tool (bin/solr auth enable) in Apache Solr versions 9.4.0 through 9.10.1 and 10.0.0 allows a remote attacker to gain full administrative access to the cluster via publicly known default credentials installed silently alongside the user-specified account. \n\nAs an immediate workaround without upgrading, delete the template users (superadmin, admin, search, index) from security.json or change their passwords.\nThe future, not yet released, versions 9.11.0 and 10.1.0 will not be vulnerable, and it will be enough to upgrade to solve the issue.\n\nNot affected:\n  *  Clusters where bin/solr auth enable was not used to bootstrap BasicAuth\n  *  Clusters where template users have been assigned strong passwords after bootstrap
+</code>
+
+- [shinthink/solrradar](https://github.com/shinthink/solrradar)
 
 ### CVE-2026-44881 (2026-05-28)
 
@@ -4020,6 +4064,13 @@
 </code>
 
 - [BiiTts/CVE-2026-56121-Feast-Unauth-RCE](https://github.com/BiiTts/CVE-2026-56121-Feast-Unauth-RCE)
+
+### CVE-2026-56290 (2026-06-29)
+
+<code>The Joomla extension Page Builder CK is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.
+</code>
+
+- [shinthink/pbck-exploit](https://github.com/shinthink/pbck-exploit)
 
 ### CVE-2026-56782 (2026-06-29)
 
@@ -16338,6 +16389,7 @@
 
 - [DiabloHTB/CVE-2024-1561](https://github.com/DiabloHTB/CVE-2024-1561)
 - [DiabloHTB/Nuclei-Template-CVE-2024-1561](https://github.com/DiabloHTB/Nuclei-Template-CVE-2024-1561)
+- [K3ysTr0K3R/CVE-2024-1561](https://github.com/K3ysTr0K3R/CVE-2024-1561)
 
 ### CVE-2024-1651 (2024-02-19)
 
@@ -18550,7 +18602,6 @@
 </code>
 
 - [RandomRobbieBF/CVE-2024-10470](https://github.com/RandomRobbieBF/CVE-2024-10470)
-- [0xshoriful/CVE-2024-10470](https://github.com/0xshoriful/CVE-2024-10470)
 
 ### CVE-2024-10508 (2024-11-09)
 
@@ -23593,13 +23644,6 @@
 - [thiagosmith/CVE-2024-40110](https://github.com/thiagosmith/CVE-2024-40110)
 - [AnGrY-Althaf/CVE-2024-40110](https://github.com/AnGrY-Althaf/CVE-2024-40110)
 
-### CVE-2024-40111 (2024-08-23)
-
-<code>A persistent (stored) cross-site scripting (XSS) vulnerability has been identified in Automad 2.0.0-alpha.4. This vulnerability enables an attacker to inject malicious JavaScript code into the template body. The injected code is stored within the flat file CMS and is executed in the browser of any user visiting the forum.
-</code>
-
-- [theexploiters/CVE-2024-40111-Exploit](https://github.com/theexploiters/CVE-2024-40111-Exploit)
-
 ### CVE-2024-40119 (2024-07-17)
 
 <code>Nepstech Wifi Router xpon (terminal) model NTPL-Xpon1GFEVN v.1.0 Firmware V2.0.1 contains a Cross-Site Request Forgery (CSRF) vulnerability in the password change function, which allows remote attackers to change the admin password without the user's consent, leading to a potential account takeover.
@@ -25903,7 +25947,6 @@
 </code>
 
 - [RandomRobbieBF/CVE-2024-52380](https://github.com/RandomRobbieBF/CVE-2024-52380)
-- [0xshoriful/CVE-2024-52380](https://github.com/0xshoriful/CVE-2024-52380)
 - [Nxploited/CVE-2024-52380-Exploit](https://github.com/Nxploited/CVE-2024-52380-Exploit)
 
 ### CVE-2024-52382 (2024-11-14)
@@ -53284,7 +53327,6 @@
 </code>
 
 - [mrnazu/CVE-2020-13405](https://github.com/mrnazu/CVE-2020-13405)
-- [Moniruzzaman995/CVE-2020-13405](https://github.com/Moniruzzaman995/CVE-2020-13405)
 
 ### CVE-2020-13424 (2020-05-23)
 
@@ -61578,7 +61620,6 @@
 - [bixiPRO/Drupalgeddon2-CVE-2018-7600](https://github.com/bixiPRO/Drupalgeddon2-CVE-2018-7600)
 - [Meraj1312/cve-2018-7600-drupalgeddon2-lab](https://github.com/Meraj1312/cve-2018-7600-drupalgeddon2-lab)
 - [erman-bolukbasi/web-penetration-drupal](https://github.com/erman-bolukbasi/web-penetration-drupal)
-- [MoriartyPuth-Labs/DC1-Lab](https://github.com/MoriartyPuth-Labs/DC1-Lab)
 - [Dungsocool/CVE-2018-7600](https://github.com/Dungsocool/CVE-2018-7600)
 - [nayem-m/drupalgeddon2-cli](https://github.com/nayem-m/drupalgeddon2-cli)
 
@@ -65939,6 +65980,7 @@
 - [edyekomu/CVE-2017-12615-PoC](https://github.com/edyekomu/CVE-2017-12615-PoC)
 - [Fa1c0n35/CVE-2017-12615](https://github.com/Fa1c0n35/CVE-2017-12615)
 - [netw0rk7/CVE-2017-12615-Home-Lab](https://github.com/netw0rk7/CVE-2017-12615-Home-Lab)
+- [K3ysTr0K3R/CVE-2017-12615](https://github.com/K3ysTr0K3R/CVE-2017-12615)
 
 ### CVE-2017-12617 (2017-10-03)
 
@@ -65952,7 +65994,6 @@
 - [tyranteye666/tomcat-cve-2017-12617](https://github.com/tyranteye666/tomcat-cve-2017-12617)
 - [jptr218/tc_hack](https://github.com/jptr218/tc_hack)
 - [LongWayHomie/CVE-2017-12617](https://github.com/LongWayHomie/CVE-2017-12617)
-- [K3ysTr0K3R/CVE-2017-12617-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2017-12617-EXPLOIT)
 - [scirusvulgaris/CVE-2017-12617](https://github.com/scirusvulgaris/CVE-2017-12617)
 - [yZee00/CVE-2017-12617](https://github.com/yZee00/CVE-2017-12617)
 - [DevaDJ/CVE-2017-12617](https://github.com/DevaDJ/CVE-2017-12617)
@@ -71154,6 +71195,7 @@
 - [Chathura123git/ethical-hacking-CVE-2011-2523](https://github.com/Chathura123git/ethical-hacking-CVE-2011-2523)
 - [NitinSukthe-G/OpenVAS-Vulnerability-Assessment-Incident-Response](https://github.com/NitinSukthe-G/OpenVAS-Vulnerability-Assessment-Incident-Response)
 - [H4R335HR/vsftpd-234-backdoor](https://github.com/H4R335HR/vsftpd-234-backdoor)
+- [kn9annihilator/CVE-2011-2523-vsFTPd-2.3.4-Writeup](https://github.com/kn9annihilator/CVE-2011-2523-vsFTPd-2.3.4-Writeup)
 
 ### CVE-2011-2553
 - [carlosrpastrana/cve-2011-2553](https://github.com/carlosrpastrana/cve-2011-2553)
