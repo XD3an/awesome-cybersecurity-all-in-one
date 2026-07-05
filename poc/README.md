@@ -92,7 +92,6 @@
 
 - [whattheslime/CVE-2026-0740](https://github.com/whattheslime/CVE-2026-0740)
 - [a24ac1/CVE-2026-0740](https://github.com/a24ac1/CVE-2026-0740)
-- [BastianXploited/CVE-2026-0740-mass](https://github.com/BastianXploited/CVE-2026-0740-mass)
 
 ### CVE-2026-0745 (2026-02-14)
 
@@ -114,7 +113,7 @@
 <code>Discord Client Uncontrolled Search Path Element Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of Discord Client. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\n\nThe specific flaw exists within the discord_rpc module. The product loads a file from an unsecured location. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of a target user. Was ZDI-CAN-27057.
 </code>
 
-- [0x18F/CVE-2026-0776](https://github.com/0x18F/CVE-2026-0776)
+- [autopsyx/CVE-2026-0776](https://github.com/autopsyx/CVE-2026-0776)
 
 ### CVE-2026-0828 (2026-06-26)
 
@@ -1404,6 +1403,7 @@
 </code>
 
 - [Cyber-DarkNay/CVE-2026-23550](https://github.com/Cyber-DarkNay/CVE-2026-23550)
+- [1beelze/CVE-2026-23550](https://github.com/1beelze/CVE-2026-23550)
 
 ### CVE-2026-23631 (2026-05-05)
 
@@ -1727,6 +1727,13 @@
 - [EvtDanya/CVE-2026-27886](https://github.com/EvtDanya/CVE-2026-27886)
 - [thesw0rd/CVE-2026-27886-PoC-Account-Takeover](https://github.com/thesw0rd/CVE-2026-27886-PoC-Account-Takeover)
 
+### CVE-2026-27944 (2026-03-05)
+
+<code>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.3, the /api/backup endpoint is accessible without authentication and discloses the encryption keys required to decrypt the backup in the X-Backup-Security response header. This allows an unauthenticated attacker to download a full system backup containing sensitive data (user credentials, session tokens, SSL private keys, Nginx configurations) and decrypt it immediately. This issue has been patched in version 2.3.3.
+</code>
+
+- [BimaBalance/Cve-2026-27944-Tools-Exploit](https://github.com/BimaBalance/Cve-2026-27944-Tools-Exploit)
+
 ### CVE-2026-28318 (2026-06-04)
 
 <code>SolarWinds Serv-U is susceptible to specially crafted POST requests that crash the Serv-U service without authentication using Content-Encoding: deflate. Mitigation steps are provided to secure customer environments in the SolarWinds Trust Center if you are unable to deploy the update
@@ -1763,6 +1770,13 @@
 </code>
 
 - [MichaelAdamGroberman/CVE-2026-28767](https://github.com/MichaelAdamGroberman/CVE-2026-28767)
+
+### CVE-2026-28867 (2026-03-25)
+
+<code>This issue was addressed with improved authentication. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Sequoia 15.7.5, macOS Tahoe 26.4, tvOS 26.4, visionOS 26.4, watchOS 26.4. An app may be able to leak sensitive kernel state.
+</code>
+
+- [speedyfriend433/CVE-2026-28867-PoC](https://github.com/speedyfriend433/CVE-2026-28867-PoC)
 
 ### CVE-2026-28990 (2026-05-11)
 
@@ -1872,6 +1886,9 @@
 
 - [0xrixet/Craftcms-PoC-CVE-2026-31266](https://github.com/0xrixet/Craftcms-PoC-CVE-2026-31266)
 
+### CVE-2026-31309
+- [Sch8ill/CVE-2026-31309](https://github.com/Sch8ill/CVE-2026-31309)
+
 ### CVE-2026-31431 (2026-04-22)
 
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: algif_aead - Revert to operating out-of-place\n\nThis mostly reverts commit 72548b093ee3 except for the copying of\nthe associated data.\n\nThere is no benefit in operating in-place in algif_aead since the\nsource and destination come from different mappings.  Get rid of\nall the complexity added for in-place operation and just copy the\nAD directly.
@@ -1908,7 +1925,6 @@
 - [Lutfifakee-Project/CVE-2026-31431](https://github.com/Lutfifakee-Project/CVE-2026-31431)
 - [mauricioportela/CVE-2026-31431-Analysis](https://github.com/mauricioportela/CVE-2026-31431-Analysis)
 - [gbonacini/CVE-2026-31431](https://github.com/gbonacini/CVE-2026-31431)
-- [studiogangster/CVE-2026-31431](https://github.com/studiogangster/CVE-2026-31431)
 - [hyz-is/copyfail-fix](https://github.com/hyz-is/copyfail-fix)
 - [SystemVll/CVE-2026-31431-copyfail-aarch64](https://github.com/SystemVll/CVE-2026-31431-copyfail-aarch64)
 - [DroPZsec/SplicePrivillegeEscalationFIX](https://github.com/DroPZsec/SplicePrivillegeEscalationFIX)
@@ -2500,6 +2516,13 @@
 </code>
 
 - [user6400/cve-2026-39031-lansweeper-lsrunase2-lsencrypt2](https://github.com/user6400/cve-2026-39031-lansweeper-lsrunase2-lsencrypt2)
+
+### CVE-2026-39047 (2026-05-20)
+
+<code>Buffer Overflow vulnerability in EPSON L14150 FL27PB allows a remote attacker to execute arbitrary code via the RAW Printing Service (JetDirect) on TCP port 9100
+</code>
+
+- [J4ck3LSyN-Gen2/CVE-2026-39047](https://github.com/J4ck3LSyN-Gen2/CVE-2026-39047)
 
 ### CVE-2026-39107 (2026-06-03)
 
@@ -3866,7 +3889,7 @@
 - [LSG-PolarBear/CVE-2026-49975](https://github.com/LSG-PolarBear/CVE-2026-49975)
 - [LiaoZiqi-GZFLS/CVE-2026-49975](https://github.com/LiaoZiqi-GZFLS/CVE-2026-49975)
 - [minc-nice-100/http2-bomb-analysis-paper](https://github.com/minc-nice-100/http2-bomb-analysis-paper)
-- [mindcodings/http2-bomb-detector](https://github.com/mindcodings/http2-bomb-detector)
+- [adminlove520/http2-bomb-detector](https://github.com/adminlove520/http2-bomb-detector)
 - [razureink/cve-2026-49975-http2bomb_reproduction](https://github.com/razureink/cve-2026-49975-http2bomb_reproduction)
 - [0xc03307b/CVE-2026-49975](https://github.com/0xc03307b/CVE-2026-49975)
 
@@ -13699,6 +13722,13 @@
 
 - [william31212/CVE-Requests-1896609](https://github.com/william31212/CVE-Requests-1896609)
 
+### CVE-2025-59382 (2026-06-10)
+
+<code>QTS, QuTS hero, QuTScloud are not affected.\n\nWe have already fixed the vulnerability in the following version:
+</code>
+
+- [Rat5ak/CVE-2025-59382-QNAP-Password-Reset-Account-Takeover](https://github.com/Rat5ak/CVE-2025-59382-QNAP-Password-Reset-Account-Takeover)
+
 ### CVE-2025-59390 (2025-11-26)
 
 <code>Apache Druid’s Kerberos authenticator uses a weak fallback secret when the `druid.auth.authenticator.kerberos.cookieSignatureSecret` configuration is not explicitly set. In this case, the secret is generated using `ThreadLocalRandom`,\n which is not a crypto-graphically secure random number generator. This \nmay allow an attacker to predict or brute force the secret used to sign \nauthentication cookies, potentially enabling token forgery or \nauthentication bypass. Additionally, each process generates its own \nfallback secret, resulting in inconsistent secrets across nodes. This \ncauses authentication failures in distributed or multi-broker \ndeployments, effectively leading to a incorrectly configured clusters. Users are \nadvised to configure a strong `druid.auth.authenticator.kerberos.cookieSignatureSecret`\n\n\n\nThis issue affects Apache Druid: through 34.0.0.\n\nUsers are recommended to upgrade to version 35.0.0, which fixes the issue making it mandatory to set `druid.auth.authenticator.kerberos.cookieSignatureSecret` when using the Kerberos authenticator. Services will fail to come up if the secret is not set.
@@ -16049,7 +16079,7 @@
 - [horizon3ai/CVE-2024-0204](https://github.com/horizon3ai/CVE-2024-0204)
 - [cbeek-r7/CVE-2024-0204](https://github.com/cbeek-r7/CVE-2024-0204)
 - [m-cetin/CVE-2024-0204](https://github.com/m-cetin/CVE-2024-0204)
-- [mindcodings/CVE-2024-0204](https://github.com/mindcodings/CVE-2024-0204)
+- [adminlove520/CVE-2024-0204](https://github.com/adminlove520/CVE-2024-0204)
 - [ibrahmsql/CVE-2024-0204](https://github.com/ibrahmsql/CVE-2024-0204)
 
 ### CVE-2024-0230 (2024-01-12)
@@ -16300,9 +16330,6 @@
 </code>
 
 - [gunzf0x/Issabel-PBX-4.0.0-RCE-Authenticated](https://github.com/gunzf0x/Issabel-PBX-4.0.0-RCE-Authenticated)
-
-### CVE-2024-111
-- [mindcodings/CVE-2024-111](https://github.com/mindcodings/CVE-2024-111)
 
 ### CVE-2024-340
 - [SimoesCTT/-CTT-PAN-OS-EXPLOIT-CVE-2024-340](https://github.com/SimoesCTT/-CTT-PAN-OS-EXPLOIT-CVE-2024-340)
@@ -19321,9 +19348,6 @@
 </code>
 
 - [lcfr-eth/CVE-2024-14027_slop](https://github.com/lcfr-eth/CVE-2024-14027_slop)
-
-### CVE-2024-19002
-- [mindcodings/cve-2024-19002](https://github.com/mindcodings/cve-2024-19002)
 
 ### CVE-2024-20017 (2024-03-04)
 
@@ -29386,7 +29410,7 @@
 - [yoryio/CVE-2023-22527](https://github.com/yoryio/CVE-2023-22527)
 - [Privia-Security/CVE-2023-22527](https://github.com/Privia-Security/CVE-2023-22527)
 - [MaanVader/CVE-2023-22527-POC](https://github.com/MaanVader/CVE-2023-22527-POC)
-- [mindcodings/CVE-2023-22527](https://github.com/mindcodings/CVE-2023-22527)
+- [adminlove520/CVE-2023-22527](https://github.com/adminlove520/CVE-2023-22527)
 - [YongYe-Security/CVE-2023-22527](https://github.com/YongYe-Security/CVE-2023-22527)
 - [Boogipop/CVE-2023-22527-Godzilla-MEMSHELL](https://github.com/Boogipop/CVE-2023-22527-Godzilla-MEMSHELL)
 - [M0untainShley/CVE-2023-22527-MEMSHELL](https://github.com/M0untainShley/CVE-2023-22527-MEMSHELL)
@@ -45705,7 +45729,7 @@
 
 ### CVE-2021-25679 (2021-04-20)
 
-<code>The AdTran Personal Phone Manager software is vulnerable to an authenticated stored cross-site scripting (XSS) issues. These issues impact at minimum versions 10.8.1 and below but potentially impact later versions as well since they have not previously been disclosed. Only version 10.8.1 was able to be confirmed during primary research. NOTE: The affected appliances NetVanta 7060 and NetVanta 7100 are considered End of Life and as such this issue will not be patched
+<code>The AdTran Personal Phone Manager software is vulnerable to an authenticated stored cross-site scripting (XSS) issues. These issues impact at minimum versions 10.8.1 and below but potentially impact later versions as well since they have not previously been disclosed. Only version 10.8.1 was able to be confirmed during primary research. NOTE: The affected appliances NetVanta 7060 and NetVanta 7100 are considered End of Life and as such this issue will not be patched.
 </code>
 
 - [3ndG4me/AdTran-Personal-Phone-Manager-Vulns](https://github.com/3ndG4me/AdTran-Personal-Phone-Manager-Vulns)
@@ -64904,6 +64928,7 @@
 - [mathse/meltdown-spectre-bios-list](https://github.com/mathse/meltdown-spectre-bios-list)
 - [GregAskew/SpeculativeExecutionAssessment](https://github.com/GregAskew/SpeculativeExecutionAssessment)
 - [GalloLuigi/Analisi-CVE-2017-5715](https://github.com/GalloLuigi/Analisi-CVE-2017-5715)
+- [iamshivambhatt/Hardware-Vulnerability-with-Proof-of-Concept-](https://github.com/iamshivambhatt/Hardware-Vulnerability-with-Proof-of-Concept-)
 
 ### CVE-2017-5721 (2017-10-11)
 
@@ -69271,6 +69296,13 @@
 </code>
 
 - [Kairo-one/CVE-2015-9331](https://github.com/Kairo-one/CVE-2015-9331)
+
+### CVE-2015-9357 (2019-08-28)
+
+<code>The akismet plugin before 3.1.5 for WordPress has XSS.
+</code>
+
+- [saretawa/CVE-2015-9357-POC](https://github.com/saretawa/CVE-2015-9357-POC)
 
 ### CVE-2015-10034 (2023-01-09)
 
