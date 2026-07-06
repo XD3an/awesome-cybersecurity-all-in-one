@@ -306,6 +306,13 @@
 
 - [PySecTools/CVE-2026-3629](https://github.com/PySecTools/CVE-2026-3629)
 
+### CVE-2026-3805 (2026-03-11)
+
+<code>When doing a second SMB request to the same host again, curl would wrongly use\na data pointer pointing into already freed memory.
+</code>
+
+- [Rat5ak/CVE-2026-3805-curl-SMB-UAF](https://github.com/Rat5ak/CVE-2026-3805-curl-SMB-UAF)
+
 ### CVE-2026-3844 (2026-04-23)
 
 <code>The Breeze Cache plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'fetch_gravatar_from_remote' function in all versions up to, and including, 2.4.4. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible. The vulnerability can only be exploited if &quot;Host Files Locally - Gravatars&quot; is enabled, which is disabled by default.
@@ -382,6 +389,7 @@
 - [CarlosEduardoPM/CVE-2026-4480-POC](https://github.com/CarlosEduardoPM/CVE-2026-4480-POC)
 - [Vusal777/CVE-2026-4480-exploit-poc](https://github.com/Vusal777/CVE-2026-4480-exploit-poc)
 - [ClearLotus-git/CVE-2026-4480-PoC](https://github.com/ClearLotus-git/CVE-2026-4480-PoC)
+- [Cosm3No1de/HTB-Abducted-Writeup](https://github.com/Cosm3No1de/HTB-Abducted-Writeup)
 
 ### CVE-2026-4782 (2026-05-13)
 
@@ -599,6 +607,13 @@
 - [0xsha/CVE-2026-6307](https://github.com/0xsha/CVE-2026-6307)
 - [J4ck3LSyN-Gen2/CVE-2026-6307-Longinus](https://github.com/J4ck3LSyN-Gen2/CVE-2026-6307-Longinus)
 
+### CVE-2026-6421 (2026-04-17)
+
+<code>A vulnerability has been found in Mobatek MobaXterm Home Edition up to 26.1. This affects an unknown part in the library msimg32.dll. The manipulation leads to uncontrolled search path. An attack has to be approached locally. The attack is considered to have high complexity. It is indicated that the exploitability is difficult. The exploit has been disclosed to the public and may be used. Upgrading to version 26.2 is able to mitigate this issue. It is suggested to upgrade the affected component. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.
+</code>
+
+- [1neptune/chimera](https://github.com/1neptune/chimera)
+
 ### CVE-2026-6433 (2026-05-11)
 
 <code>The Custom css-js-php WordPress plugin through 2.0.7 does not properly sanitize user input before using it in a SQL query, and the result is passed to eval(), allowing unauthenticated users to execute arbitrary PHP code on the server.
@@ -769,7 +784,6 @@
 - [whattheslime/CVE-2026-8181](https://github.com/whattheslime/CVE-2026-8181)
 - [rootdirective-sec/CVE-2026-8181-Lab](https://github.com/rootdirective-sec/CVE-2026-8181-Lab)
 - [xShadow-Here/CVE-2026-8181](https://github.com/xShadow-Here/CVE-2026-8181)
-- [BastianXploited/CVE-2026-8181](https://github.com/BastianXploited/CVE-2026-8181)
 - [x48ps/CVE-2026-8181](https://github.com/x48ps/CVE-2026-8181)
 - [Yucaerin/CVE-2026-8181](https://github.com/Yucaerin/CVE-2026-8181)
 - [Ez4rd1x1/CVE-2026-8181](https://github.com/Ez4rd1x1/CVE-2026-8181)
@@ -1650,6 +1664,13 @@
 
 - [hanyvert/cve-2026-25541-fuel-analysis](https://github.com/hanyvert/cve-2026-25541-fuel-analysis)
 
+### CVE-2026-25555 (2026-06-08)
+
+<code>OpenBullet2 through version 0.3.2 contains an authentication bypass vulnerability in the API key authentication middleware that allows unauthenticated attackers to gain admin access by supplying an empty X-Api-Key header value. Attackers can exploit the middleware's comparison of the supplied header against an empty AdminApiKey default string to access the admin console and all API endpoints without valid credentials.
+</code>
+
+- [thecodeb0ss/CVE-2026-25555](https://github.com/thecodeb0ss/CVE-2026-25555)
+
 ### CVE-2026-25860 (2026-06-09)
 
 <code>OpenClinic GA 5.351.19 contains a reflected cross-site scripting vulnerability in the DICOM image upload handler that allows attackers to execute arbitrary JavaScript in a victim's browser by embedding malicious payloads in DICOM file metadata fields. Attackers can craft a DICOM file with JavaScript payloads in metadata fields such as Study Description, which are reflected without sanitization in popup.jsp and archiving/uploadfiles_jsp.java when processed through the Upload DICOM images feature.
@@ -1717,6 +1738,13 @@
 </code>
 
 - [HORKimhab/CVE-2026-27145](https://github.com/HORKimhab/CVE-2026-27145)
+
+### CVE-2026-27172 (2026-04-27)
+
+<code>The ConsulRegistry in the camel-consul component (class org.apache.camel.component.consul.ConsulRegistry and its inner ConsulRegistryUtils.deserialize method) read Java-serialized values from the Consul KV store and passed them to ObjectInputStream.readObject() without configuring an ObjectInputFilter. An attacker who can write to the Consul KV store backing a Camel ConsulRegistry instance could inject a malicious serialized Java object that is deserialized the next time Camel performs a lookup against that registry, leading to arbitrary code execution in the Camel process. The issue mirrors the class of vulnerability already addressed for other Camel components in CVE-2024-22369, CVE-2024-23114 and CVE-2026-25747, and was overlooked during the original remediation of those CVEs.\n\nThis issue affects Apache Camel: from 3.0.0 before 4.14.6, from 4.15.0 before 4.18.1.\n\nUsers are recommended to upgrade to version 4.19.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.6. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.1.
+</code>
+
+- [oscerd/CVE-2026-27172](https://github.com/oscerd/CVE-2026-27172)
 
 ### CVE-2026-27212 (2026-02-21)
 
@@ -2003,6 +2031,7 @@
 - [t1ckprivate/CVE-2026-31431-Copy-Fail](https://github.com/t1ckprivate/CVE-2026-31431-Copy-Fail)
 - [kinryulabs/rootpacket-cve-2026-31431](https://github.com/kinryulabs/rootpacket-cve-2026-31431)
 - [SugiB3o/CVE-2026-31431](https://github.com/SugiB3o/CVE-2026-31431)
+- [jihwan77/Linux-Kernel-Copy-Fail-CVE-2026-31431-](https://github.com/jihwan77/Linux-Kernel-Copy-Fail-CVE-2026-31431-)
 
 ### CVE-2026-31525 (2026-04-22)
 
@@ -2112,6 +2141,13 @@
 - [nedlir/dasel-hardened-container](https://github.com/nedlir/dasel-hardened-container)
 - [rotavori/dasel-melange-apko](https://github.com/rotavori/dasel-melange-apko)
 - [GonSarrabia/Minimus-Junior-Backend-Exercise](https://github.com/GonSarrabia/Minimus-Junior-Backend-Exercise)
+
+### CVE-2026-33453 (2026-04-27)
+
+<code>Improperly Controlled Modification of Dynamically-Determined Object Attributes vulnerability in Apache Camel Camel-Coap component.\n\nApache Camel's camel-coap component is vulnerable to Camel message header injection, leading to remote code execution when routes forward CoAP requests to header-sensitive producers (e.g. camel-exec)\n\nThe camel-coap component maps incoming CoAP request URI query parameters directly into Camel Exchange In message headers without applying any HeaderFilterStrategy.    \nSpecifically, CamelCoapResource.handleRequest() iterates over OptionSet.getUriQuery() and calls camelExchange.getIn().setHeader(...) for every query parameter. CoAPEndpoint extends DefaultEndpoint rather than DefaultHeaderFilterStrategyEndpoint, and CoAPComponent does not implement HeaderFilterStrategyComponent; the component contains no references to HeaderFilterStrategy at all.\n\nAs a result, an unauthenticated attacker who can send a single CoAP UDP packet to a Camel route consuming from coap:// can inject arbitrary Camel internal headers (those prefixed with Camel*) into the Exchange. When the route delivers the message to a header-sensitive producer such as camel-exec, camel-sql, camel-bean, camel-file, or template components (camel-freemarker, camel-velocity), the injected headers can alter the producer's behavior. In the case of camel-exec, the CamelExecCommandExecutable and CamelExecCommandArgs headers override the executable and arguments configured on the endpoint, resulting in arbitrary OS command execution under the privileges of the Camel process.\n\nThe producer's output is written back to the Exchange body and returned in the CoAP response payload by CamelCoapResource, giving the attacker an interactive RCE channel without any need for out-of-band exfiltration.\n                                                                                                                                                                         \nExploitation prerequisites are minimal: a single unauthenticated UDP datagram to the CoAP port (default 5683). CoAP (RFC 7252) has no built-in authentication, and DTLS is optional and disabled by default. Because the protocol is UDP-based, HTTP-layer WAF/IDS controls do not apply.\nThis issue affects Apache Camel: from 4.14.0 through 4.14.5, from 4.18.0 before 4.18.1, 4.19.0.\n\nUsers are recommended to upgrade to version 4.18.1 or 4.19.0, fixing the issue.
+</code>
+
+- [oscerd/CVE-2026-33453](https://github.com/oscerd/CVE-2026-33453)
 
 ### CVE-2026-33626 (2026-04-20)
 
@@ -3850,6 +3886,9 @@
 </code>
 
 - [hadhub/CVE-2026-49345-Mercator-SSRF](https://github.com/hadhub/CVE-2026-49345-Mercator-SSRF)
+
+### CVE-2026-49352
+- [covepseng/cve-2026-49352-poc](https://github.com/covepseng/cve-2026-49352-poc)
 
 ### CVE-2026-49413 (2026-06-27)
 
@@ -5753,7 +5792,6 @@
 - [m2hcz/CVE-2025-6440-Poc-Exploit](https://github.com/m2hcz/CVE-2025-6440-Poc-Exploit)
 - [rimbadirgantara/CVE-2025-6440](https://github.com/rimbadirgantara/CVE-2025-6440)
 - [0axz-tools/CVE-2025-6440](https://github.com/0axz-tools/CVE-2025-6440)
-- [BastianXploited/CVE-2025-6440](https://github.com/BastianXploited/CVE-2025-6440)
 - [sahmsec/CVE-2025-6440](https://github.com/sahmsec/CVE-2025-6440)
 - [Cyber-DarkNay/CVE-2025-6440](https://github.com/Cyber-DarkNay/CVE-2025-6440)
 
@@ -7333,7 +7371,6 @@
 </code>
 
 - [Nxploited/CVE-2025-15030](https://github.com/Nxploited/CVE-2025-15030)
-- [BastianXploited/CVE-2025-15030](https://github.com/BastianXploited/CVE-2025-15030)
 
 ### CVE-2025-15260 (2026-02-04)
 
@@ -16237,6 +16274,13 @@
 
 - [kodaichodai/CVE-2024-0509](https://github.com/kodaichodai/CVE-2024-0509)
 
+### CVE-2024-0519 (2024-01-16)
+
+<code>Out of bounds memory access in V8 in Google Chrome prior to 120.0.6099.224 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+</code>
+
+- [Insaida/cve-2024-0519-rca-research](https://github.com/Insaida/cve-2024-0519-rca-research)
+
 ### CVE-2024-0520 (2024-06-06)
 
 <code>A vulnerability in mlflow/mlflow version 8.2.1 allows for remote code execution due to improper neutralization of special elements used in an OS command ('Command Injection') within the `mlflow.data.http_dataset_source.py` module. Specifically, when loading a dataset from a source URL with an HTTP scheme, the filename extracted from the `Content-Disposition` header or the URL path is used to generate the final file path without proper sanitization. This flaw enables an attacker to control the file path fully by utilizing path traversal or absolute path techniques, such as '../../tmp/poc.txt' or '/tmp/poc.txt', leading to arbitrary file write. Exploiting this vulnerability could allow a malicious user to execute commands on the vulnerable machine, potentially gaining access to data and model information. The issue is fixed in version 2.9.0.
@@ -23805,13 +23849,6 @@
 - [Abdurahmon3236/CVE-2024-40110](https://github.com/Abdurahmon3236/CVE-2024-40110)
 - [thiagosmith/CVE-2024-40110](https://github.com/thiagosmith/CVE-2024-40110)
 - [AnGrY-Althaf/CVE-2024-40110](https://github.com/AnGrY-Althaf/CVE-2024-40110)
-
-### CVE-2024-40111 (2024-08-23)
-
-<code>A persistent (stored) cross-site scripting (XSS) vulnerability has been identified in Automad 2.0.0-alpha.4. This vulnerability enables an attacker to inject malicious JavaScript code into the template body. The injected code is stored within the flat file CMS and is executed in the browser of any user visiting the forum.
-</code>
-
-- [theexploiters/CVE-2024-40111-Exploit](https://github.com/theexploiters/CVE-2024-40111-Exploit)
 
 ### CVE-2024-40119 (2024-07-17)
 
@@ -34772,7 +34809,6 @@
 <code>In checkKeyIntentParceledCorrectly of AccountManagerService.java, there is a possible way to launch arbitrary activities using system privileges due to Parcel Mismatch. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
 </code>
 
-- [michalbednarski/TheLastBundleMismatch](https://github.com/michalbednarski/TheLastBundleMismatch)
 - [B-D-APL/silver-succotash](https://github.com/B-D-APL/silver-succotash)
 
 ### CVE-2023-45779 (2023-12-04)
@@ -36055,6 +36091,7 @@
 - [GroundCTL2MajorTom/CVE-2023-51385POC](https://github.com/GroundCTL2MajorTom/CVE-2023-51385POC)
 - [GroundCTL2MajorTom/CVE-2023-51385P-POC](https://github.com/GroundCTL2MajorTom/CVE-2023-51385P-POC)
 - [saarcastified/CVE-2023-51385---OpenSSH-ProxyCommand-Injection-PoC](https://github.com/saarcastified/CVE-2023-51385---OpenSSH-ProxyCommand-Injection-PoC)
+- [LSP1025923/cve-2023-51385](https://github.com/LSP1025923/cve-2023-51385)
 
 ### CVE-2023-51409 (2024-04-12)
 
