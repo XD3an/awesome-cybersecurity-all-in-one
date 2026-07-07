@@ -1067,6 +1067,13 @@
 
 - [1beelze/CVE-2026-11387](https://github.com/1beelze/CVE-2026-11387)
 
+### CVE-2026-11405 (2026-07-06)
+
+<code>The web server binary /bin/httpd contains a hidden backdoor authentication mechanism in the login() function at 004c88b8.\r\n\r\n- The function contains a normal authentication path using MD5/hash-based password verification (prod_encode64/PasswordToMd5/check_rand_key).\r\n- After normal authentication fails, it calls GetValue(&quot;sys.rzadmin.password&quot;) to read a backdoor password from the device configuration.\r\n- It performs a direct strcmp() comparison (plaintext, not hashed) between the config value and the user-supplied password.\r\n\r\nA successful match grants role=2 (admin-level access) and creates a valid session. The rzadmin username is never checked — any username works with the backdoor
+</code>
+
+- [HORKimhab/CVE-2026-11405](https://github.com/HORKimhab/CVE-2026-11405)
+
 ### CVE-2026-11417 (2026-06-10)
 
 <code>OS command injection in the NodejsFunction local bundling pipeline in aws-cdk-lib before 2.245.0 (2.246.0 on Windows) might allow an actor who controls the value of one or more bundling properties (externalModules, define, loader, inject, or esbuildArgs) to execute arbitrary commands on the host running the CDK toolchain via injected shell metacharacters. This issue requires the threat actor to control the value of one or more of the affected bundling properties in the CDK application.\n\n\n\nTo remediate this issue, users should upgrade to aws-cdk-lib 2.245.0 (2.246.0 on Windows) or later.
@@ -1190,6 +1197,13 @@
 
 - [MichaelAdamGroberman/CVE-2026-13768](https://github.com/MichaelAdamGroberman/CVE-2026-13768)
 
+### CVE-2026-14191 (2026-07-01)
+
+<code>An out-of-bounds heap write exists in the RAR5 recovery-volume (.rev) parser in WinRAR and UnRAR (RecVolumes5::ReadHeader in recvol5.cpp). The RecItems vector is sized only when the first .rev file in a set is processed; subsequent .rev files supply an independent RecNum value that is validated against that file's own TotalCount field but never against the actual size of RecItems. A crafted set of two or more .rev files can therefore write an attacker-controlled 32-bit value (the header's RevCRC field) to RecItems[RecNum] at an attacker-controlled offset up to 65534 * sizeof(RecVolItem) bytes past the allocation, corrupting adjacent heap objects. Triggering requires the victim to run a recovery/test operation on an attacker-supplied .rev set (for example 'unrar t x.part1.rev', WinRAR 'Repair archive', or auto-recovery when extracting a volume set with a missing .rar part). This is the RAR5-path sibling of CVE-2023-40477 (which was fixed in the RAR3 path only in WinRAR 6.23). Fixed in WinRAR / RAR 7.23.
+</code>
+
+- [HORKimhab/CVE-2026-14191](https://github.com/HORKimhab/CVE-2026-14191)
+
 ### CVE-2026-14459 (2026-07-03)
 
 <code>Improper neutralization of argument delimiters in a command ('argument injection') vulnerability in TUBITAK BILGEM Software Technologies Research Institute pardus-software allows Argument Injection.\n\nThis issue affects pardus-software: from &lt;= 1.0.4 before 1.0.5.
@@ -1203,6 +1217,13 @@
 </code>
 
 - [MESLIMOHAMEDM22005188/path-traversal-CVE-2026-14628](https://github.com/MESLIMOHAMEDM22005188/path-traversal-CVE-2026-14628)
+
+### CVE-2026-14762 (2026-07-05)
+
+<code>A vulnerability was detected in code-projects Hotel and Tourism Reservation 1.0. The impacted element is an unknown function of the file /admin/rooms.php of the component Room Management Page. The manipulation of the argument delete results in sql injection. It is possible to launch the attack remotely. The exploit is now public and may be used.
+</code>
+
+- [tc4dy/CVE-2026-14762-PoC-Exploit](https://github.com/tc4dy/CVE-2026-14762-PoC-Exploit)
 
 ### CVE-2026-20127 (2026-02-25)
 
@@ -1665,6 +1686,9 @@
 - [msaleme/start-here](https://github.com/msaleme/start-here)
 - [adibirzu/openclaw-security-monitor](https://github.com/adibirzu/openclaw-security-monitor)
 - [EQSTLab/CVE-2026-25253](https://github.com/EQSTLab/CVE-2026-25253)
+
+### CVE-2026-25262
+- [shurikgo/cve-2026-25262-sm8450-research](https://github.com/shurikgo/cve-2026-25262-sm8450-research)
 
 ### CVE-2026-25541 (2026-02-04)
 
@@ -2659,6 +2683,13 @@
 
 - [HackinKraken/Security-Research-and-CVE](https://github.com/HackinKraken/Security-Research-and-CVE)
 
+### CVE-2026-39492 (2026-06-15)
+
+<code>Unauthenticated SQL Injection in WP Maps &lt;= 4.9.1 versions.
+</code>
+
+- [shinthink/CVE-2026-39492](https://github.com/shinthink/CVE-2026-39492)
+
 ### CVE-2026-39636 (2026-04-08)
 
 <code>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in livemesh Livemesh Addons for Elementor addons-for-elementor allows Stored XSS.This issue affects Livemesh Addons for Elementor: from n/a through &lt;= 9.0.
@@ -2747,6 +2778,13 @@
 - [piffd0s/ntoskrnl-metadata](https://github.com/piffd0s/ntoskrnl-metadata)
 - [0xBlackash/CVE-2026-40369](https://github.com/0xBlackash/CVE-2026-40369)
 - [CCELEND/CVE-2026-40369](https://github.com/CCELEND/CVE-2026-40369)
+
+### CVE-2026-40519 (2026-06-08)
+
+<code>Nginx Proxy Manager versions 2.9.14 through 2.15.1, fixed in commit a5db5ed, contain an authenticated remote code execution vulnerability via OS command injection in the setupCertbotPlugins() function in backend/setup.js, allowing attackers with certificates:manage permission to execute arbitrary commands by storing a malicious payload in the dns_provider_credentials field. The user-controlled dns_provider_credentials value is interpolated directly into a shell command executed via child_process.exec() without sanitization or escaping, causing the injected command to execute upon backend restart.
+</code>
+
+- [namu1030/CVE-2026-40519](https://github.com/namu1030/CVE-2026-40519)
 
 ### CVE-2026-40564 (2026-05-26)
 
@@ -3078,6 +3116,13 @@
 </code>
 
 - [grizzzer/CVE-2026-42978-PoC-Research](https://github.com/grizzzer/CVE-2026-42978-PoC-Research)
+
+### CVE-2026-42980 (2026-06-09)
+
+<code>Integer underflow (wrap or wraparound) in Windows NT OS Kernel allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [G4sp4rCS/CVE-2026-42980-POC](https://github.com/G4sp4rCS/CVE-2026-42980-POC)
 
 ### CVE-2026-43284 (2026-05-08)
 
@@ -3811,6 +3856,7 @@
 - [0xBlackash/CVE-2026-48908](https://github.com/0xBlackash/CVE-2026-48908)
 - [ayiezola/CVE-2026-48908](https://github.com/ayiezola/CVE-2026-48908)
 - [bayu06802/CVE-2026-48908](https://github.com/bayu06802/CVE-2026-48908)
+- [Jenderal92/CVE-2026-48908](https://github.com/Jenderal92/CVE-2026-48908)
 
 ### CVE-2026-48909 (2026-06-20)
 
@@ -4089,6 +4135,15 @@
 
 - [lottiedeyan/CVE-2026-53075poc](https://github.com/lottiedeyan/CVE-2026-53075poc)
 
+### CVE-2026-53359 (2026-07-04)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: x86: Fix shadow paging use-after-free due to unexpected role\n\nCommit 0cb2af2ea66ad (&quot;KVM: x86: Fix shadow paging use-after-free due\nto unexpected GFN&quot;) fixed a shadow paging mismatch between stored and\ncomputed GFNs; the bug could be triggered by changing a PDE mapping from\noutside the guest, and then deleting a memslot.  The rmap_remove()\ncall would miss entries created after the PDE change because the GFN\nof the leaf SPTE does not match the GFN of the struct kvm_mmu_page.\n\nA similar hole however remains if the modified PDE points to a non-leaf\npage.  In this case the gfn can be made to match, but the role does not\nmatch: the original large 2MB page creates a kvm_mmu_page with direct=1,\nwhile the new 4KB needs a kvm_mmu_page with direct=0.  However,\nkvm_mmu_get_child_sp() does not compare the role, and therefore reuses\nthe page.\n\nThe next step is installing a leaf (4KB) SPTE on the new path which\nrecords an rmap entry under the gfn resolved by the walk.  But when\nthat child is zapped its parent kvm_mmu_page has direct=1 and\nkvm_mmu_page_get_gfn() computes the gfn for the 4KB page as\nsp-&gt;gfn + index instead of using sp-&gt;shadowed_translation[] (or sp-&gt;gfns[]\nin older kernels).  It therefore fails to remove the recorded entry.\n\nWhen the memslot is dropped the shadow page is freed but the rmap\nentry survives, as in the scenario that was already fixed.  Code that\nlater walks that gfn (dirty logging, MMU notifier invalidation, and\nso on) dereferences an sptep that lies in the freed page, causing the\nuse-after-free.
+</code>
+
+- [HORKimhab/CVE-2026-53359](https://github.com/HORKimhab/CVE-2026-53359)
+- [0xBlackash/CVE-2026-53359](https://github.com/0xBlackash/CVE-2026-53359)
+- [Aoripus-LTD/Januscape-Hotfix](https://github.com/Aoripus-LTD/Januscape-Hotfix)
+
 ### CVE-2026-53360 (2026-07-04)
 
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: SEV: Require in-GHCB scratch area if GHCB v2+ is in use\n\nAs per the GHCB spec, when using GHCB v2+ require the software scratch area\nto reside in the GHCB's shared buffer.  Note, things like Page State Change\n(PSC) requests _rely_ on this behavior, as the guest can't provide a length\nwhen making the request, i.e. the size of the guest payload is bounded by\nthe size of the shared buffer.\n\nFailure to force usage of the GHCB, and a slew of other flaws, lets a\nmalicious SNP guest corrupt host kernel heap memory, and leak host heap\nlayout information.\n\nsetup_vmgexit_scratch() allocates a buffer via kvzalloc(exit_info_2),\nwhere exit_info_2 is guest-controlled. With exit_info_2=24, this yields\na 24-byte allocation in kmalloc-cg-32 (32-byte slab objects). The buffer\nholds an 8-byte psc_hdr followed by 8-byte psc_entry structs, so only\nentries[0] and entries[1] are in-bounds.\n\nsnp_begin_psc() validates end_entry against VMGEXIT_PSC_MAX_COUNT (253)\nbut NOT against the actual buffer size:\n\n      idx_end = hdr-&gt;end_entry;\n\n      if (idx_end &gt;= VMGEXIT_PSC_MAX_COUNT) {   // checks 253, not buffer\n          snp_complete_psc(svm, ...);\n          return 1;\n      }\n\n      for (idx = idx_start; idx &lt;= idx_end; idx++) {\n          entry_start = entries[idx];           // OOB when idx &gt;= 2\n\nThe guest sets end_entry=10+, causing the host to iterate entries[2+]\nwhich are OOB into adjacent slab objects. For each OOB entry:\n\n  - The host reads 8 bytes (OOB READ / info leak oracle)\n  - If the data passes PSC validation, __snp_complete_one_psc() writes\n    cur_page = 1 or 512 into the entry (OOB WRITE, sev.c:3806)\n  - If validation fails, the error response reveals whether adjacent\n    memory is zero vs non-zero (information disclosure to guest)\n\nThe guest controls allocation size (exit_info_2), entry range\n(cur_entry/end_entry), and can fire unlimited VMGEXITs to repeatedly\nhit different slab positions.\n\nBy exploiting the variety of bugs, a malicious SEV-SNP guest can:\n    - OOB read adjacent kmalloc-cg-32 objects (heap layout disclosure)\n    - OOB write cur_page bits into adjacent objects (heap corruption)\n    - Trigger use-after-free conditions across VMGEXITs\n\nE.g. with KASAN enabled, a single insmod of the PoC guest module\nproduces 73 KASAN reports:\n\n    BUG: KASAN: slab-out-of-bounds in snp_begin_psc+0x126/0x890\n    Read of size 8 at addr ffff888219ffb5e0 by task qemu-system-x86/2199\n\n    BUG: KASAN: slab-out-of-bounds in snp_begin_psc+0x468/0x890\n    Write of size 8 at addr ffff888351566648 by task qemu-system-x86/2199\n\n    The buggy address belongs to the object at ffff888XXXXXXXXX\n     which belongs to the cache kmalloc-cg-32 of size 32\n    The buggy address is located N bytes to the right of\n     allocated 32-byte region [ffff888XXXXXXXXX, ffff888XXXXXXXXX)\n\n  Breakdown:\n    62 slab-out-of-bounds (reads + writes past allocation)\n     7 slab-use-after-free\n     4 use-after-free\n\nAll credit to Stan for the wonderful description and reproducer!\n\n[sean: write changelog]
@@ -4161,6 +4216,13 @@
 
 ### CVE-2026-54337
 - [4qu4r1um/CVE-2026-54337-PoC](https://github.com/4qu4r1um/CVE-2026-54337-PoC)
+
+### CVE-2026-54350 (2026-06-26)
+
+<code>Budibase is an open-source low-code platform. Prior to 3.39.12,  an unauthenticated visitor of any published Budibase app reads every document of the backing MongoDB, CouchDB, Elasticsearch, DynamoDB-PartiQL, or REST-with-JSON-body collection and, where the builder has published a PUBLIC write query, modifies every document of that collection with one HTTP request. enrichContext at packages/server/src/sdk/workspace/queries/queries.ts:121-138 substitutes parameter values into the raw JSON body of a query, then JSON.parses the result. The validator validateQueryInputs at packages/server/src/api/controllers/query/index.ts:61-71 rejects only Handlebars markers ({{, }}) in user input and does not escape JSON metacharacters (&quot;, \, }). A parameter value containing a closing quote and additional keys lifts attacker-controlled fields into the parsed filter object. For Mongo find, the parsed filter passes directly to collection.find() (packages/server/src/integrations/mongodb.ts:506-510). Duplicate-key JSON parsing overrides the builder's {name: &quot;...&quot;} with {name: {$exists: true}} and returns every document. The same primitive against an updateMany query (mongodb.ts:577-585) widens the filter scope to the full collection while the builder-controlled $set body runs against every matched document. The authorized middleware at packages/server/src/middleware/authorized.ts:141-148 short-circuits when the query's role is PUBLIC. CSRF is not enforced on this path. POST /api/v2/queries/:queryId (packages/server/src/api/routes/query.ts:63) accepts the call with no session, only an x-budibase-app-id header that is public from the published-app URL. This vulnerability is fixed in 3.39.12.
+</code>
+
+- [BiiTts/CVE-2026-54350-Budibase-NoSQL-Injection](https://github.com/BiiTts/CVE-2026-54350-Budibase-NoSQL-Injection)
 
 ### CVE-2026-54415 (2026-06-17)
 
@@ -21524,7 +21586,7 @@
 <code>An issue in MariaDB v.11.1 allows a remote attacker to execute arbitrary code via the lib_mysqludf_sys.so function. NOTE: this is disputed by the MariaDB Foundation because no privilege boundary is crossed.
 </code>
 
-- [Ant1sec-ops/CVE-2024-27766](https://github.com/Ant1sec-ops/CVE-2024-27766)
+- [Hissec/Mysql_CVE-2024-27766](https://github.com/Hissec/Mysql_CVE-2024-27766)
 - [y0un9eee/CVE-2024-27766](https://github.com/y0un9eee/CVE-2024-27766)
 
 ### CVE-2024-27804 (2024-05-13)
@@ -22081,13 +22143,6 @@
 </code>
 
 - [chebuya/CVE-2024-30851-jasmin-ransomware-path-traversal-poc](https://github.com/chebuya/CVE-2024-30851-jasmin-ransomware-path-traversal-poc)
-
-### CVE-2024-30875 (2024-10-17)
-
-<code>Cross Site Scripting vulnerability in JavaScript Library jquery-ui v.1.13.1 allows a remote attacker to obtain sensitive information and execute arbitrary code via a crafted payload to the window.addEventListener component. NOTE: this is disputed by the Supplier because it cannot be reproduced, and because the exploitation example does not indicate whether, or how, the example website is using jQuery UI.
-</code>
-
-- [Ant1sec-ops/CVE-2024-30875](https://github.com/Ant1sec-ops/CVE-2024-30875)
 
 ### CVE-2024-30896 (2024-11-21)
 
@@ -23131,6 +23186,7 @@
 - [mantanhacker/CVE-2024-36401-MASS](https://github.com/mantanhacker/CVE-2024-36401-MASS)
 - [Delt-A/CVE-2024-36401-poc](https://github.com/Delt-A/CVE-2024-36401-poc)
 - [DanieleGiovanardi2408/cve-2024-36401-geoserver-rce](https://github.com/DanieleGiovanardi2408/cve-2024-36401-geoserver-rce)
+- [keelanbrady1011/CVE-2024-36401](https://github.com/keelanbrady1011/CVE-2024-36401)
 
 ### CVE-2024-36416 (2024-06-10)
 
@@ -24219,7 +24275,6 @@
 - [watchtowrlabs/Mitel-MiCollab-Auth-Bypass_CVE-2024-41713](https://github.com/watchtowrlabs/Mitel-MiCollab-Auth-Bypass_CVE-2024-41713)
 - [zxj-hub/CVE-2024-41713POC](https://github.com/zxj-hub/CVE-2024-41713POC)
 - [Sanandd/cve-2024-CVE-2024-41713](https://github.com/Sanandd/cve-2024-CVE-2024-41713)
-- [amanverma-wsu/CVE-2024-41713-Scan](https://github.com/amanverma-wsu/CVE-2024-41713-Scan)
 - [gunyakit/CVE-2024-41713-PoC-exploit](https://github.com/gunyakit/CVE-2024-41713-PoC-exploit)
 
 ### CVE-2024-41817 (2024-07-29)
@@ -30359,13 +30414,6 @@
 
 - [bigzooooz/CVE-2023-26692](https://github.com/bigzooooz/CVE-2023-26692)
 
-### CVE-2023-26785 (2024-10-17)
-
-<code>MariaDB v10.5 was discovered to contain a remote code execution (RCE) vulnerability via UDF Code in a Shared Object File, followed by a &quot;create function&quot; statement. NOTE: this is disputed by the MariaDB Foundation because no privilege boundary is crossed.
-</code>
-
-- [Ant1sec-ops/CVE-2023-26785](https://github.com/Ant1sec-ops/CVE-2023-26785)
-
 ### CVE-2023-26818 (2023-05-19)
 
 <code>Telegram 9.3.1 and 9.4.0 allows attackers to access restricted files, microphone ,or video recording via the DYLD_INSERT_LIBRARIES flag.
@@ -34857,6 +34905,7 @@
 <code>In checkKeyIntentParceledCorrectly of AccountManagerService.java, there is a possible way to launch arbitrary activities using system privileges due to Parcel Mismatch. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
 </code>
 
+- [michalbednarski/TheLastBundleMismatch](https://github.com/michalbednarski/TheLastBundleMismatch)
 - [B-D-APL/silver-succotash](https://github.com/B-D-APL/silver-succotash)
 
 ### CVE-2023-45779 (2023-12-04)
@@ -37663,7 +37712,6 @@
 
 - [Bariskizilkaya/CVE-2022-20186_CTXZ](https://github.com/Bariskizilkaya/CVE-2022-20186_CTXZ)
 - [SmileTabLabo/CVE-2022-20186](https://github.com/SmileTabLabo/CVE-2022-20186)
-- [flora6907/CVE-2022-20186](https://github.com/flora6907/CVE-2022-20186)
 
 ### CVE-2022-20223 (2022-07-13)
 
@@ -38523,6 +38571,7 @@
 - [march0n/PoC-CVE-2022-22965-Spring4Shell](https://github.com/march0n/PoC-CVE-2022-22965-Spring4Shell)
 - [ernestom-commits/jfrog-apptrust-demo](https://github.com/ernestom-commits/jfrog-apptrust-demo)
 - [Kuri119/CVE-2022-22965-Spring4Shell](https://github.com/Kuri119/CVE-2022-22965-Spring4Shell)
+- [RootEvil333/CVE-2022-22965](https://github.com/RootEvil333/CVE-2022-22965)
 
 ### CVE-2022-22968 (2022-04-14)
 
@@ -43799,8 +43848,6 @@
 <code>In onCreate of GrantCredentialsPermissionActivity.java, there is a possible way to convince the user to grant an app access to an account due to a tapjacking/overlay attack. This could lead to local escalation of privilege with User execution privileges needed. User interaction is needed for exploitation. Product: Android; Versions: Android-8.1, Android-9, Android-10, Android-11, Android-8.0; Android ID: A-169763814.
 </code>
 
-- [nanopathi/framework_base_AOSP10_r33_CVE-2021-0315](https://github.com/nanopathi/framework_base_AOSP10_r33_CVE-2021-0315)
-- [pazhanivel07/frameworks_base_Aosp10_r33_CVE-2021-0315](https://github.com/pazhanivel07/frameworks_base_Aosp10_r33_CVE-2021-0315)
 - [nanopathi/frameworks_base1_CVE-2021-0315](https://github.com/nanopathi/frameworks_base1_CVE-2021-0315)
 
 ### CVE-2021-0325 (2021-02-10)
@@ -48701,6 +48748,7 @@
 - [a24ac1/CVE-2021-41773-PoC](https://github.com/a24ac1/CVE-2021-41773-PoC)
 - [fxdyx-a/CVE-2021-41773-POC](https://github.com/fxdyx-a/CVE-2021-41773-POC)
 - [Joapath/CVE-2021-41773](https://github.com/Joapath/CVE-2021-41773)
+- [Park123r/CVE-2021-41773](https://github.com/Park123r/CVE-2021-41773)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -48853,6 +48901,7 @@
 - [waterrr/noPac](https://github.com/waterrr/noPac)
 - [ly4k/Pachine](https://github.com/ly4k/Pachine)
 - [cybersecurityworks553/noPac-detection](https://github.com/cybersecurityworks553/noPac-detection)
+- [xLTJ/noPac](https://github.com/xLTJ/noPac)
 
 ### CVE-2021-42287 (2021-11-10)
 
@@ -60033,6 +60082,7 @@
 - [ngyinkit/cve-2019-18634](https://github.com/ngyinkit/cve-2019-18634)
 - [letsr00t/-CVE-2019-18634-sudo-pwfeedback](https://github.com/letsr00t/-CVE-2019-18634-sudo-pwfeedback)
 - [CyrusRazavi/CVE-2019-18634-writeup](https://github.com/CyrusRazavi/CVE-2019-18634-writeup)
+- [Moscvv/thm-cybersec-portfolio](https://github.com/Moscvv/thm-cybersec-portfolio)
 
 ### CVE-2019-18655 (2019-11-12)
 
@@ -64705,7 +64755,6 @@
 </code>
 
 - [maximehip/extra_recipe](https://github.com/maximehip/extra_recipe)
-- [ldebug/extra_recipe](https://github.com/ldebug/extra_recipe)
 - [Rootkitsmm-zz/extra_recipe-iOS-10.2](https://github.com/Rootkitsmm-zz/extra_recipe-iOS-10.2)
 - [Peterpan0927/CVE-2017-2370](https://github.com/Peterpan0927/CVE-2017-2370)
 
@@ -70224,6 +70273,7 @@
 - [FacundoMfernandez/pentesting-obioba](https://github.com/FacundoMfernandez/pentesting-obioba)
 - [R3fr4kt/Shocker-TJNULL-OSCP-](https://github.com/R3fr4kt/Shocker-TJNULL-OSCP-)
 - [cyberexpert111/Blind-SSRF-to-Remote-Code-Execution-Shellshock-Professional-Bug-Bounty-Report](https://github.com/cyberexpert111/Blind-SSRF-to-Remote-Code-Execution-Shellshock-Professional-Bug-Bounty-Report)
+- [caverm/Shellshock_CVE-2014-6271](https://github.com/caverm/Shellshock_CVE-2014-6271)
 
 ### CVE-2014-6287 (2014-10-07)
 
@@ -71381,6 +71431,7 @@
 </code>
 
 - [Pashkela/CVE-2011-1485](https://github.com/Pashkela/CVE-2011-1485)
+- [bluedragonsecurity/CVE-2011-1485-pkexec-exploit](https://github.com/bluedragonsecurity/CVE-2011-1485-pkexec-exploit)
 
 ### CVE-2011-1571 (2011-05-07)
 
@@ -71498,6 +71549,7 @@
 - [tkisason/KillApachePy](https://github.com/tkisason/KillApachePy)
 - [stcmjp/cve-2011-3192](https://github.com/stcmjp/cve-2011-3192)
 - [futurezayka/CVE-2011-3192](https://github.com/futurezayka/CVE-2011-3192)
+- [bluedragonsecurity/CVE-2011-3192-apache-exploit](https://github.com/bluedragonsecurity/CVE-2011-3192-apache-exploit)
 
 ### CVE-2011-3368 (2011-10-05)
 
@@ -72480,6 +72532,7 @@
 </code>
 
 - [MayaOfVeil/CVE-2005-0575](https://github.com/MayaOfVeil/CVE-2005-0575)
+- [bluedragonsecurity/CVE-2005-0575-knet-exploit](https://github.com/bluedragonsecurity/CVE-2005-0575-knet-exploit)
 
 ### CVE-2005-0603 (2005-03-01)
 
