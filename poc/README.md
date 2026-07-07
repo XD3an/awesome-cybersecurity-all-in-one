@@ -113,7 +113,8 @@
 <code>Discord Client Uncontrolled Search Path Element Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of Discord Client. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\n\nThe specific flaw exists within the discord_rpc module. The product loads a file from an unsecured location. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of a target user. Was ZDI-CAN-27057.
 </code>
 
-- [paIantir/CVE-2026-0776](https://github.com/paIantir/CVE-2026-0776)
+- [xsuf/CVE-2026-0776](https://github.com/xsuf/CVE-2026-0776)
+- [OverlayCS/Helix](https://github.com/OverlayCS/Helix)
 
 ### CVE-2026-0828 (2026-06-26)
 
@@ -620,6 +621,13 @@
 </code>
 
 - [murrez/CVE-2026-6433](https://github.com/murrez/CVE-2026-6433)
+
+### CVE-2026-6508 (2026-05-07)
+
+<code>Origin Validation Error vulnerability in TUBITAK BILGEM Software Technologies Research Institute Liderahenk allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects Liderahenk: from 2.0.1 before 2.0.2.
+</code>
+
+- [jackalkarlos/EvilAhenk](https://github.com/jackalkarlos/EvilAhenk)
 
 ### CVE-2026-6664 (2026-05-09)
 
@@ -1561,6 +1569,7 @@
 - [akpmarcelin/CVE-2026-24061-lab](https://github.com/akpmarcelin/CVE-2026-24061-lab)
 - [Cosm3No1de/htb-orion-writeup](https://github.com/Cosm3No1de/htb-orion-writeup)
 - [kyukazamiqq/CVE-2026-24061](https://github.com/kyukazamiqq/CVE-2026-24061)
+- [harygovind/CVE-2026-24061](https://github.com/harygovind/CVE-2026-24061)
 
 ### CVE-2026-24135 (2026-02-06)
 
@@ -1978,7 +1987,6 @@
 - [HulnotHutu/CVE-2026-31431](https://github.com/HulnotHutu/CVE-2026-31431)
 - [K3ysTr0K3R/CVE-2026-31431-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2026-31431-EXPLOIT)
 - [bootsareme/copyfail-deconstructed](https://github.com/bootsareme/copyfail-deconstructed)
-- [Smarttfoxx/copyfail](https://github.com/Smarttfoxx/copyfail)
 - [monobrau/copyfailscan](https://github.com/monobrau/copyfailscan)
 - [suominen/CVE-2026-31431](https://github.com/suominen/CVE-2026-31431)
 - [aexdyhaxor/CVE-2026-31431-copy-fail](https://github.com/aexdyhaxor/CVE-2026-31431-copy-fail)
@@ -2149,6 +2157,13 @@
 
 - [oscerd/CVE-2026-33453](https://github.com/oscerd/CVE-2026-33453)
 
+### CVE-2026-33454 (2026-04-27)
+
+<code>The Camel-Mail component is vulnerable to Camel message header injection. The custom header filter strategy used by the component (MailHeaderFilterStrategy) only filters the 'out' direction via setOutFilterStartsWith, while it does not configure the 'in' direction via setInFilterStartsWith. As a result, when a Camel application consumes mail through camel-mail (for example via from(\&quot;imap://...\&quot;) or from(\&quot;pop3://...\&quot;)) the inbound filter check is skipped and Camel-prefixed MIME headers are mapped unfiltered into the Exchange. An attacker who can deliver an email to a mailbox monitored by such a consumer can inject Camel-specific headers that, for some Camel components downstream of the mail consumer (such as camel-bean, camel-exec, or camel-sql), can alter the behaviour of the route. This is the same pattern that was previously addressed in camel-undertow (CVE-2025-30177) and the broader incoming-header filter (CVE-2025-27636 and CVE-2025-29891).\n\nThis issue affects Apache Camel: from 3.0.0 before 4.14.6, from 4.15.0 before 4.18.1.\n\nUsers are recommended to upgrade to version 4.19.0, which fixes the issue. If users are on the 4.18.x LTS releases stream, then they are suggested to upgrade to 4.18.1. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.6.
+</code>
+
+- [oscerd/CVE-2026-33454](https://github.com/oscerd/CVE-2026-33454)
+
 ### CVE-2026-33626 (2026-04-20)
 
 <code>LMDeploy is a toolkit for compressing, deploying, and serving large language models. Versions prior to 0.12.3 have a Server-Side Request Forgery (SSRF) vulnerability in LMDeploy's vision-language module. The `load_image()` function in `lmdeploy/vl/utils.py` fetches arbitrary URLs without validating internal/private IP addresses, allowing attackers to access cloud metadata services, internal networks, and sensitive resources. Version 0.12.3 patches the issue.
@@ -2186,7 +2201,11 @@
 - [seguridadentrerios/CVE-2026-33829](https://github.com/seguridadentrerios/CVE-2026-33829)
 - [jenniferreire26/CVE-2026-33829](https://github.com/jenniferreire26/CVE-2026-33829)
 
-### CVE-2026-34038
+### CVE-2026-34038 (2026-07-06)
+
+<code>Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.469, an authenticated remote command injection vulnerability in application deployment handling allows users with application write permissions to achieve remote code execution and exfiltrate sensitive environment variables through deployment logs via fields such as dockerfile_location and deployment commands. This issue is fixed in version 4.0.0-beta.469.
+</code>
+
 - [ThemeHackers/CVE-2026-34038](https://github.com/ThemeHackers/CVE-2026-34038)
 
 ### CVE-2026-34040 (2026-03-31)
@@ -2547,6 +2566,8 @@
 
 - [NathanHimself/CVE-2026-38526-PoC](https://github.com/NathanHimself/CVE-2026-38526-PoC)
 - [pawpic/CVE-2026-38526-POC](https://github.com/pawpic/CVE-2026-38526-POC)
+- [mmoobbeeiidat-design/Hack-The-Box-Nexus-Findings-Report](https://github.com/mmoobbeeiidat-design/Hack-The-Box-Nexus-Findings-Report)
+- [diamorphine666/CVE-2026-38526-Exploit](https://github.com/diamorphine666/CVE-2026-38526-Exploit)
 
 ### CVE-2026-38698
 - [vital-information-resource-under-siege/CVE-2026-38698-and-CVE-2026-38699](https://github.com/vital-information-resource-under-siege/CVE-2026-38698-and-CVE-2026-38699)
@@ -2686,6 +2707,13 @@
 - [M3PH1569/CVE-2026-39987-POC](https://github.com/M3PH1569/CVE-2026-39987-POC)
 - [HORKimhab/CVE-2026-39987](https://github.com/HORKimhab/CVE-2026-39987)
 - [jenniferreire26/CVE-2026-39987](https://github.com/jenniferreire26/CVE-2026-39987)
+
+### CVE-2026-40022 (2026-04-27)
+
+<code>When authentication is enabled on the Apache Camel embedded HTTP server or embedded management server (camel-platform-http-main) and a non-root context path such as /api or /admin is configured via camel.server.path or camel.management.path, the BasicAuthenticationConfigurer and JWTAuthenticationConfigurer classes derive the authentication path from properties.getPath() when camel.server.authenticationPath / camel.management.authenticationPath is not explicitly set. Combined with the Vert.x sub-router mounting model - the sub-router is mounted at _path_* and the authentication handler is registered inside the sub-router at the resolved path - this causes the authentication handler to match only the exact configured context path, not its subpaths. Unauthenticated requests to subpaths such as /api/_route_ or /admin/observe/info therefore reach protected business routes and management endpoints without being challenged for credentials. The /observe/info endpoint can disclose runtime metadata such as the user, working directory, home directory, process ID, JVM and operating system information.\n\nThis issue affects Apache Camel: from 4.14.1 before 4.14.6, from 4.18.0 before 4.18.2.\n\nUsers are recommended to upgrade to version 4.20.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, they are suggested to upgrade to 4.14.6. If users are on the 4.18.x LTS releases stream, they are suggested to upgrade to 4.18.2.
+</code>
+
+- [oscerd/CVE-2026-40022](https://github.com/oscerd/CVE-2026-40022)
 
 ### CVE-2026-40072 (2026-04-09)
 
@@ -3058,7 +3086,6 @@
 
 - [mym0us3r/DIRTY-FRAG-Detection-with-Wazuh-4.14.4](https://github.com/mym0us3r/DIRTY-FRAG-Detection-with-Wazuh-4.14.4)
 - [suominen/CVE-2026-43284](https://github.com/suominen/CVE-2026-43284)
-- [haydenjames/dirty-frag-check](https://github.com/haydenjames/dirty-frag-check)
 - [linnemanlabs/dirtyfrag-arm64](https://github.com/linnemanlabs/dirtyfrag-arm64)
 - [FrosterDL/CVE-2026-43284](https://github.com/FrosterDL/CVE-2026-43284)
 - [ChernStepanov/DirtyFrag-for-dummies](https://github.com/ChernStepanov/DirtyFrag-for-dummies)
@@ -3659,6 +3686,13 @@
 
 - [Habuon/CVE-2026-48208](https://github.com/Habuon/CVE-2026-48208)
 
+### CVE-2026-48282 (2026-06-30)
+
+<code>ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.
+</code>
+
+- [imbas007/CVE-2026-48282](https://github.com/imbas007/CVE-2026-48282)
+
 ### CVE-2026-48558 (2026-06-12)
 
 <code>SimpleHelp versions 5.5.15 and prior and 6.0 pre-release versions contain an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication. No user interaction is required.
@@ -4020,6 +4054,13 @@
 ### CVE-2026-52217
 - [teteco/CVE-2026-52217-VTEX-Checkout-CrossTenant-IDOR](https://github.com/teteco/CVE-2026-52217-VTEX-Checkout-CrossTenant-IDOR)
 
+### CVE-2026-52806 (2026-06-24)
+
+<code>Gogs is an open source self-hosted Git service. Prior to 0.14.3, Gogs allows authenticated users to achieve Remote Code Execution (RCE) on the server by creating a pull request with a specially crafted branch name that injects the --exec flag into the git rebase command during the &quot;Rebase before merging&quot; merge operation. This vulnerability is fixed in 0.14.3.
+</code>
+
+- [portbuster1337/CVE-2026-52806](https://github.com/portbuster1337/CVE-2026-52806)
+
 ### CVE-2026-52813 (2026-06-24)
 
 <code>Gogs is an open source self-hosted Git service. Prior to 0.14.3, organization names containing path traversal sequences (../) are accepted by Gogs, and repositories under them are written to paths following these path traversals. This allows storing/retrieving data for repositories at arbitrary locations on the filesystem. By creating nested structure of Git repositories, one can overwrite the other's hooks configuration to result in Remote Code Execution (RCE). This vulnerability is fixed in 0.14.3.
@@ -4072,7 +4113,11 @@
 ### CVE-2026-53582
 - [eev4n/CVE-2026-53582](https://github.com/eev4n/CVE-2026-53582)
 
-### CVE-2026-53647
+### CVE-2026-53647 (2026-07-06)
+
+<code>FOSSBilling is a free, open-source billing and client management system. In versions 0.5.3 through 0.7.2, the Guest `serviceapikey/get_info` API endpoint is accessible without authentication. Any caller with a valid API key can retrieve all custom configuration parameters (`custom_*` fields) stored in the key's database record. These custom fields are populated by billing administrators and can contain business-sensitive data such as pricing tiers, feature flags, rate limits, expiry overrides, or access scope data. Version 0.8.0 patches the issue. Some workarounds are available. Administrators can avoid storing sensitive data in `custom_*` API key configuration fields, monitor API logs for suspicious calls to `/api/guest/serviceapikey/get_info`, and/or disable the Serviceapikey module if not in active use.
+</code>
+
 - [7megaumka7/FOSKiller](https://github.com/7megaumka7/FOSKiller)
 
 ### CVE-2026-53694 (2026-06-10)
@@ -7540,6 +7585,13 @@
 - [StasonJatham/cisco-sa-sma-attack-N9bf4](https://github.com/StasonJatham/cisco-sa-sma-attack-N9bf4)
 - [redpack-kr/Blackash-CVE-2025-20393](https://github.com/redpack-kr/Blackash-CVE-2025-20393)
 - [cyberdudebivash/CYBERDUDEBIVASH-Cisco-AsyncOS-CVE-2025-20393-Scanner](https://github.com/cyberdudebivash/CYBERDUDEBIVASH-Cisco-AsyncOS-CVE-2025-20393-Scanner)
+
+### CVE-2025-20700 (2025-08-04)
+
+<code>In the Airoha Bluetooth audio SDK, there is a possible permission bypass that allows access critical data of RACE protocol through Bluetooth LE GATT service. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
+</code>
+
+- [SpiritualMachines/buds-audit](https://github.com/SpiritualMachines/buds-audit)
 
 ### CVE-2025-21042 (2025-09-12)
 
@@ -13101,6 +13153,7 @@
 - [litndat/React2Shell-PoC-CVE-2025-55182](https://github.com/litndat/React2Shell-PoC-CVE-2025-55182)
 - [k1llmelira/react2shell-exploit](https://github.com/k1llmelira/react2shell-exploit)
 - [Herick-Costa/CVE-2025-55182-React2Shell-RCE](https://github.com/Herick-Costa/CVE-2025-55182-React2Shell-RCE)
+- [diamorphine666/React2shell-CVE-2025-55182-Exploit](https://github.com/diamorphine666/React2shell-CVE-2025-55182-Exploit)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -14327,13 +14380,6 @@
 - [0xA1M/CVE-2025-63353](https://github.com/0xA1M/CVE-2025-63353)
 - [r0otk3r/CVE-2025-63353](https://github.com/r0otk3r/CVE-2025-63353)
 - [Zvckster/CVE-2025-63353](https://github.com/Zvckster/CVE-2025-63353)
-
-### CVE-2025-63389 (2025-12-18)
-
-<code>A critical authentication bypass vulnerability exists in Ollama platform's API endpoints in versions prior to and including v0.12.3. The platform exposes multiple API endpoints without requiring authentication, enabling remote attackers to perform unauthorized model management operations.
-</code>
-
-- [nuclide-research/VisorGoose](https://github.com/nuclide-research/VisorGoose)
 
 ### CVE-2025-63406 (2025-11-13)
 
@@ -23644,6 +23690,9 @@
 ### CVE-2024-38998
 - [z3ldr1/PP_CVE-2024-38998](https://github.com/z3ldr1/PP_CVE-2024-38998)
 
+### CVE-2024-39024
+- [ly1g3/packetfence-CVE-2024-39024](https://github.com/ly1g3/packetfence-CVE-2024-39024)
+
 ### CVE-2024-39031 (2024-07-09)
 
 <code>In Silverpeas Core &lt;= 6.3.5, in Mes Agendas, a user can create new events and add them to their calendar. Additionally, users can invite others from the same domain, including administrators, to these events. A standard user can inject an XSS payload into the &quot;Titre&quot; and &quot;Description&quot; fields when creating an event and then add the administrator or any user to the event. When the invited user (victim) views their own profile, the payload will be executed on their side, even if they do not click on the event.
@@ -26529,13 +26578,6 @@
 </code>
 
 - [Gumbraise/CVE-2024-54887-PoC](https://github.com/Gumbraise/CVE-2024-54887-PoC)
-
-### CVE-2024-54910 (2025-01-10)
-
-<code>Hasleo Backup Suite Free v4.9.4 and before is vulnerable to Insecure Permissions via the File recovery function.
-</code>
-
-- [KrakenEU/CVE-2024-54910](https://github.com/KrakenEU/CVE-2024-54910)
 
 ### CVE-2024-54916 (2025-02-11)
 
@@ -29438,6 +29480,13 @@
 </code>
 
 - [buitanhung144/SSRF-CVE-2023-22493](https://github.com/buitanhung144/SSRF-CVE-2023-22493)
+
+### CVE-2023-22496 (2023-01-14)
+
+<code>Netdata is an open source option for real-time infrastructure monitoring and troubleshooting. An attacker with the ability to establish a streaming connection can execute arbitrary commands on the targeted Netdata agent. When an alert is triggered, the function `health_alarm_execute` is called. This function performs different checks and then enqueues a command by calling `spawn_enq_cmd`. This command is populated with several arguments that are not sanitized. One of them is the `registry_hostname` of the node for which the alert is raised. By providing a specially crafted `registry_hostname` as part of the health data that is streamed to a Netdata (parent) agent, an attacker can execute arbitrary commands at the remote host as a side-effect of the raised alert. Note that the commands are executed as the user running the Netdata Agent. This user is usually named `netdata`. The ability to run arbitrary commands may allow an attacker to escalate privileges by escalating other vulnerabilities in the system, as that user. The problem has been fixed in: Netdata agent v1.37 (stable) and Netdata agent v1.36.0-409 (nightly). As a workaround, streaming is not enabled by default. If you have previously enabled this, it can be disabled. Limiting access to the port on the recipient Agent to trusted child connections may mitigate the impact of this vulnerability.
+</code>
+
+- [jstjep00/CVE-2023-22496-PoC](https://github.com/jstjep00/CVE-2023-22496-PoC)
 
 ### CVE-2023-22515 (2023-10-04)
 
@@ -33258,7 +33307,6 @@
 - [cleanmgr112/cve-2023-38646-poc](https://github.com/cleanmgr112/cve-2023-38646-poc)
 - [BreezeGalaxy/CVE-2023-38646](https://github.com/BreezeGalaxy/CVE-2023-38646)
 - [NosrevytsNg/Metabase-Pre-Auth-RCE-POC](https://github.com/NosrevytsNg/Metabase-Pre-Auth-RCE-POC)
-- [nuclide-research/metabase-cve-2023-38646](https://github.com/nuclide-research/metabase-cve-2023-38646)
 
 ### CVE-2023-38709 (2024-04-04)
 
@@ -44685,7 +44733,7 @@
 - [Murguii/DEV-CVE-2021-4034](https://github.com/Murguii/DEV-CVE-2021-4034)
 - [B1gN0Se/PwnKit_CVE-2021-4034](https://github.com/B1gN0Se/PwnKit_CVE-2021-4034)
 - [usmansec/-CVE-2021-4034](https://github.com/usmansec/-CVE-2021-4034)
-- [trinetra-1308/PwnKit-](https://github.com/trinetra-1308/PwnKit-)
+- [1820hitler/PwnKit-](https://github.com/1820hitler/PwnKit-)
 - [vorkampfer/pwnkit_safety_check](https://github.com/vorkampfer/pwnkit_safety_check)
 - [rusakalimantan/PwnKit-CVE-2021-4034](https://github.com/rusakalimantan/PwnKit-CVE-2021-4034)
 - [jayhutajulu1/PwnKit-CVE-2021-4034](https://github.com/jayhutajulu1/PwnKit-CVE-2021-4034)
@@ -51146,7 +51194,7 @@
 - [0xcccc666/cve-2020-1472_Tool-collection](https://github.com/0xcccc666/cve-2020-1472_Tool-collection)
 - [murataydemir/CVE-2020-1472](https://github.com/murataydemir/CVE-2020-1472)
 - [npocmak/CVE-2020-1472](https://github.com/npocmak/CVE-2020-1472)
-- [victim10wq3/CVE-2020-1472](https://github.com/victim10wq3/CVE-2020-1472)
+- [FaFcFF41/CVE-2020-1472](https://github.com/FaFcFF41/CVE-2020-1472)
 - [zeronetworks/zerologon](https://github.com/zeronetworks/zerologon)
 - [sv3nbeast/CVE-2020-1472](https://github.com/sv3nbeast/CVE-2020-1472)
 - [midpipps/CVE-2020-1472-Easy](https://github.com/midpipps/CVE-2020-1472-Easy)
@@ -67709,6 +67757,7 @@
 - [elhaddadalaa788-alt/kernel-exploit-dirtycow-project-subm](https://github.com/elhaddadalaa788-alt/kernel-exploit-dirtycow-project-subm)
 - [theo543/OSDS_Paper_CVE-2016-5195](https://github.com/theo543/OSDS_Paper_CVE-2016-5195)
 - [maur0amaya/Escalamiento-de-Privilegios-usando-el-Kernel-Exploit-Dirty-Cow](https://github.com/maur0amaya/Escalamiento-de-Privilegios-usando-el-Kernel-Exploit-Dirty-Cow)
+- [rauljvc8/Exploit-Dirty-Cow](https://github.com/rauljvc8/Exploit-Dirty-Cow)
 - [GonzaBot/kernel-exploit-dirtycow](https://github.com/GonzaBot/kernel-exploit-dirtycow)
 
 ### CVE-2016-5345 (2018-01-23)
@@ -68108,6 +68157,7 @@
 
 - [LakshmiDesai/CVE-2016-9079](https://github.com/LakshmiDesai/CVE-2016-9079)
 - [dangokyo/CVE-2016-9079](https://github.com/dangokyo/CVE-2016-9079)
+- [soham23/firefox-rce-nssmil](https://github.com/soham23/firefox-rce-nssmil)
 - [Tau-hub/Firefox-CVE-2016-9079](https://github.com/Tau-hub/Firefox-CVE-2016-9079)
 
 ### CVE-2016-9177 (2016-11-04)
@@ -71052,6 +71102,7 @@
 - [cyberharsh/Oracle-mysql-CVE-2012-2122](https://github.com/cyberharsh/Oracle-mysql-CVE-2012-2122)
 - [zhangkaibin0921/CVE-2012-2122](https://github.com/zhangkaibin0921/CVE-2012-2122)
 - [netw0rk7/CVE-2012-2122-Home-Lab](https://github.com/netw0rk7/CVE-2012-2122-Home-Lab)
+- [K3ysTr0K3R/CVE-2012-2122](https://github.com/K3ysTr0K3R/CVE-2012-2122)
 
 ### CVE-2012-2459 (2012-08-06)
 
