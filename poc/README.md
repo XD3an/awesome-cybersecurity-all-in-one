@@ -114,7 +114,7 @@
 <code>Discord Client Uncontrolled Search Path Element Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of Discord Client. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\n\nThe specific flaw exists within the discord_rpc module. The product loads a file from an unsecured location. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of a target user. Was ZDI-CAN-27057.
 </code>
 
-- [bufferoverfIow/CVE-2026-0776](https://github.com/bufferoverfIow/CVE-2026-0776)
+- [0x18F/CVE-2026-0776](https://github.com/0x18F/CVE-2026-0776)
 - [OverlayCS/Helix](https://github.com/OverlayCS/Helix)
 
 ### CVE-2026-0828 (2026-06-26)
@@ -600,6 +600,13 @@
 - [zycoder0day/CVE-2026-6279](https://github.com/zycoder0day/CVE-2026-6279)
 - [87achrafg-stack/CVE-2026-6279.py](https://github.com/87achrafg-stack/CVE-2026-6279.py)
 - [87achrafg-stack/CVE-2026-6279](https://github.com/87achrafg-stack/CVE-2026-6279)
+
+### CVE-2026-6300 (2026-04-15)
+
+<code>Use after free in CSS in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)
+</code>
+
+- [notthemystery/CVE-2026-6300-PoC](https://github.com/notthemystery/CVE-2026-6300-PoC)
 
 ### CVE-2026-6307 (2026-04-15)
 
@@ -1213,6 +1220,13 @@
 </code>
 
 - [HORKimhab/CVE-2026-14191](https://github.com/HORKimhab/CVE-2026-14191)
+
+### CVE-2026-14382 (2026-07-01)
+
+<code>Insufficient validation of untrusted input in ANGLE in Google Chrome prior to 150.0.7871.46 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)
+</code>
+
+- [jaf0rk/CVE-2026-14382](https://github.com/jaf0rk/CVE-2026-14382)
 
 ### CVE-2026-14459 (2026-07-03)
 
@@ -2281,6 +2295,7 @@
 - [hnytgl/CVE-2026-34197](https://github.com/hnytgl/CVE-2026-34197)
 - [asdasddqwdq29-a11y/CVE-2026-34197](https://github.com/asdasddqwdq29-a11y/CVE-2026-34197)
 - [dinosn/apache-activemq-rce-research](https://github.com/dinosn/apache-activemq-rce-research)
+- [pssec-io/CVE-2026-34197](https://github.com/pssec-io/CVE-2026-34197)
 
 ### CVE-2026-34207 (2026-05-22)
 
@@ -2393,6 +2408,13 @@
 </code>
 
 - [kx00007/CVE-2026-35196](https://github.com/kx00007/CVE-2026-35196)
+
+### CVE-2026-35204 (2026-04-09)
+
+<code>Helm is a package manager for Charts for Kubernetes. From 4.0.0 to 4.1.3, a specially crafted Helm plugin, when installed or updated, will cause Helm to write the contents of the plugin to an arbitrary filesystem location. To prevent this, validate that the plugin.yaml of the Helm plugin does not include a version: field containing POSIX dot-dot path separators ie. &quot;/../&quot;. This vulnerability is fixed in 4.1.4.
+</code>
+
+- [h3ck13r/CVE-2026-35204](https://github.com/h3ck13r/CVE-2026-35204)
 
 ### CVE-2026-35273 (2026-06-11)
 
@@ -2774,6 +2796,13 @@
 
 - [oscerd/CVE-2026-40022](https://github.com/oscerd/CVE-2026-40022)
 
+### CVE-2026-40047 (2026-07-06)
+
+<code>Improper Neutralization of Argument Delimiters in a Command ('Argument Injection') vulnerability in Apache Camel Docling component.\n\nThe camel-docling component invokes the external `docling` command-line tool by assembling an argument list in DoclingProducer and executing it through java.lang.ProcessBuilder. Custom CLI arguments supplied through the `CamelDoclingCustomArguments` exchange header (a List&lt;String&gt;) were appended to that argument list with insufficient validation: the original implementation relied on a denylist of disallowed flags and only rejected path values that contained a literal `../` sequence. As a result, a Camel route that forwards externally-influenced data into the `CamelDoclingCustomArguments` header (or into the path-bearing headers used to build the invocation) could cause the producer to pass unrecognized or unintended `docling` CLI flags to the subprocess, and could supply path-like argument values that resolved outside the intended directory through traversal sequences not caught by the literal `../` check. Because Camel itself builds the `docling` invocation from these values, the component is responsible for constraining them, and the weak validation allowed CLI-argument injection and directory traversal in the arguments passed to the external tool. The invocation uses the list-based form of ProcessBuilder, so a shell does not interpret the argument values; OS command injection through shell metacharacters was not possible, and the metacharacter rejection added by the fix is defense-in-depth.\nThis issue affects Apache Camel: from 4.15.0 before 4.18.3.\n\nUsers are recommended to upgrade to a release that contains the CAMEL-23212 fix. On the mainline the fix is included from Apache Camel 4.19.0 (and later releases such as 4.20.0). For users on the 4.18.x LTS releases stream, upgrade to 4.18.3. The fix replaces the denylist with a strict allowlist of recognized `docling` CLI flags (rejecting any unrecognized flag, and rejecting producer-managed flags such as the output-directory flags), defensively rejects shell metacharacters in argument values, and normalizes path-like values with Path.normalize() before validating them so that traversal sequences which bypass a literal `../` check are detected. As defence in depth, route authors should avoid mapping untrusted message content into the `CamelDoclingCustomArguments` header and the path-bearing headers, and should strip Camel-internal headers from messages that arrive from untrusted producers.
+</code>
+
+- [oscerd/CVE-2026-40047](https://github.com/oscerd/CVE-2026-40047)
+
 ### CVE-2026-40072 (2026-04-09)
 
 <code>web3.py allows you to interact with the Ethereum blockchain using Python. From 6.0.0b3 to before 7.15.0 and 8.0.0b2, web3.py implements CCIP Read / OffchainLookup (EIP-3668) by performing HTTP requests to URLs supplied by smart contracts in offchain_lookup_payload[&quot;urls&quot;]. The implementation uses these contract-supplied URLs directly (after {sender} / {data} template substitution) without any destination validation. CCIP Read is enabled by default (global_ccip_read_enabled = True on all providers), meaning any application using web3.py's .call() method is exposed without explicit opt-in. This results in Server-Side Request Forgery (SSRF) when web3.py is used in backend services, indexers, APIs, or any environment that performs eth_call / .call() against untrusted or user-supplied contract addresses. A malicious contract can force the web3.py process to issue HTTP requests to arbitrary destinations, including internal network services and cloud metadata endpoints. This vulnerability is fixed in 7.15.0 and 8.0.0b2.
@@ -2806,13 +2835,6 @@
 - [piffd0s/ntoskrnl-metadata](https://github.com/piffd0s/ntoskrnl-metadata)
 - [0xBlackash/CVE-2026-40369](https://github.com/0xBlackash/CVE-2026-40369)
 - [CCELEND/CVE-2026-40369](https://github.com/CCELEND/CVE-2026-40369)
-
-### CVE-2026-40519 (2026-06-08)
-
-<code>Nginx Proxy Manager versions 2.9.14 through 2.15.1, fixed in commit a5db5ed, contain an authenticated remote code execution vulnerability via OS command injection in the setupCertbotPlugins() function in backend/setup.js, allowing attackers with certificates:manage permission to execute arbitrary commands by storing a malicious payload in the dns_provider_credentials field. The user-controlled dns_provider_credentials value is interpolated directly into a shell command executed via child_process.exec() without sanitization or escaping, causing the injected command to execute upon backend restart.
-</code>
-
-- [namu1030/CVE-2026-40519](https://github.com/namu1030/CVE-2026-40519)
 
 ### CVE-2026-40564 (2026-05-26)
 
@@ -3174,6 +3196,7 @@
 - [t1ckprivate/CVE-2026-43284-Dirty-Frag](https://github.com/t1ckprivate/CVE-2026-43284-Dirty-Frag)
 - [g0thamRabb1t/dirtyfrag-cve-2026-43284-auditd-detection](https://github.com/g0thamRabb1t/dirtyfrag-cve-2026-43284-auditd-detection)
 - [lukeslp/redtail-ioc](https://github.com/lukeslp/redtail-ioc)
+- [armircetaj/tetragon-dirtyfrag](https://github.com/armircetaj/tetragon-dirtyfrag)
 
 ### CVE-2026-43494 (2026-05-21)
 
@@ -3191,6 +3214,7 @@
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nrtmutex: Use waiter::task instead of current in remove_waiter()\n\nremove_waiter() is used by the slowlock paths, but it is also used for\nproxy-lock rollback in rt_mutex_start_proxy_lock() when invoked from\nfutex_requeue().\n\nIn the latter case waiter::task is not current, but remove_waiter()\noperates on current for the dequeue operation. That results in several\nproblems:\n\n  1) the rbtree dequeue happens without waiter::task::pi_lock being held\n\n  2) the waiter task's pi_blocked_on state is not cleared, which leaves a\n     dangling pointer primed for UAF around.\n\n  3) rt_mutex_adjust_prio_chain() operates on the wrong top priority waiter\n     task\n\nUse waiter::task instead of current in all related operations in\nremove_waiter() to cure those problems.\n\n[ tglx: Fixup rt_mutex_adjust_prio_chain(), add a comment and amend the\n  </code>
 
 - [MobiusM/CVE-2026-43499](https://github.com/MobiusM/CVE-2026-43499)
+- [HORKimhab/CVE-2026-43499](https://github.com/HORKimhab/CVE-2026-43499)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -4098,6 +4122,13 @@
 ### CVE-2026-50142
 - [MuhammedHussein17/libheif-cve-2026-50142](https://github.com/MuhammedHussein17/libheif-cve-2026-50142)
 
+### CVE-2026-50229 (2026-06-29)
+
+<code>Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability in the number guess example for Apache Tomcat.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.22, from 10.1.0-M1 through 10.1.55, from 9.0.0.M1 through 9.0.118, from 8.5.0 through 8.5.100, from 7.0.0 through 7.0.109. Other versions that have reached end of support may also be affected.\n\nUsers are recommended to upgrade to version 11.0.23, 10.1.56 or 9.0.119, which fix the issue.
+</code>
+
+- [zero-trace7/CVE-2026-50229](https://github.com/zero-trace7/CVE-2026-50229)
+
 ### CVE-2026-50507 (2026-06-09)
 
 <code>Protection mechanism failure in Windows BitLocker allows an unauthorized attacker to bypass a security feature with a physical attack.
@@ -4399,6 +4430,7 @@
 
 - [sagsooz/PageBuilderCK-CVE-2026-56290-Exploit](https://github.com/sagsooz/PageBuilderCK-CVE-2026-56290-Exploit)
 - [shinthink/pbck-exploit](https://github.com/shinthink/pbck-exploit)
+- [Jenderal92/CVE-2026-56290](https://github.com/Jenderal92/CVE-2026-56290)
 
 ### CVE-2026-56782 (2026-06-29)
 
@@ -7762,7 +7794,6 @@
 </code>
 
 - [Dmitri131313/CVE-2025-21420-PoC](https://github.com/Dmitri131313/CVE-2025-21420-PoC)
-- [toxy4ny/edge-maradeur](https://github.com/toxy4ny/edge-maradeur)
 - [moiz-2x/CVE-2025-21420_POC](https://github.com/moiz-2x/CVE-2025-21420_POC)
 
 ### CVE-2025-21479 (2025-06-03)
@@ -10053,7 +10084,6 @@
 - [morgenm/sudo-chroot-CVE-2025-32463](https://github.com/morgenm/sudo-chroot-CVE-2025-32463)
 - [MohamedKarrab/CVE-2025-32463](https://github.com/MohamedKarrab/CVE-2025-32463)
 - [krypton-0x00/CVE-2025-32463-Chwoot-POC](https://github.com/krypton-0x00/CVE-2025-32463-Chwoot-POC)
-- [Floodnut/CVE-2025-32463](https://github.com/Floodnut/CVE-2025-32463)
 - [Rajneeshkarya/CVE-2025-32463](https://github.com/Rajneeshkarya/CVE-2025-32463)
 - [MGunturG/CVE-2025-32463](https://github.com/MGunturG/CVE-2025-32463)
 - [Maalfer/Sudo-CVE-2021-3156](https://github.com/Maalfer/Sudo-CVE-2021-3156)
@@ -12581,6 +12611,7 @@
 </code>
 
 - [PRE5T0/CVE-2025-54136](https://github.com/PRE5T0/CVE-2025-54136)
+- [Sushank05/mcp-doorman](https://github.com/Sushank05/mcp-doorman)
 
 ### CVE-2025-54236 (2025-09-09)
 
@@ -12858,6 +12889,7 @@
 - [EynaExp/CVE-2025-55182-POC](https://github.com/EynaExp/CVE-2025-55182-POC)
 - [im-hanzou/CVE-2025-55182-POC-SCANNER](https://github.com/im-hanzou/CVE-2025-55182-POC-SCANNER)
 - [klassiker/CVE-2025-55182](https://github.com/klassiker/CVE-2025-55182)
+- [Emiyelbarto/CVE-2025-55182-PoC](https://github.com/Emiyelbarto/CVE-2025-55182-PoC)
 - [MrR0b0t19/CVE-2025-55182-shellinteractive](https://github.com/MrR0b0t19/CVE-2025-55182-shellinteractive)
 - [ps-interactive/cve-2025-55182](https://github.com/ps-interactive/cve-2025-55182)
 - [tobiasGuta/Next.js-RSC-RCE-Scanner-Burp-Suite-Extension](https://github.com/tobiasGuta/Next.js-RSC-RCE-Scanner-Burp-Suite-Extension)
@@ -13262,6 +13294,7 @@
 - [k1llmelira/react2shell-exploit](https://github.com/k1llmelira/react2shell-exploit)
 - [Herick-Costa/CVE-2025-55182-React2Shell-RCE](https://github.com/Herick-Costa/CVE-2025-55182-React2Shell-RCE)
 - [diamorphine666/React2shell-CVE-2025-55182-Exploit](https://github.com/diamorphine666/React2shell-CVE-2025-55182-Exploit)
+- [RootEvil333/CVE-2025-55182](https://github.com/RootEvil333/CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -19431,13 +19464,6 @@
 
 - [Nxploited/CVE-2024-12542-PoC](https://github.com/Nxploited/CVE-2024-12542-PoC)
 
-### CVE-2024-12558 (2024-12-21)
-
-<code>The WP BASE Booking of Appointments, Services and Events plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the export_db function in all versions up to, and including, 4.9.2. This makes it possible for authenticated attackers, with Subscriber-level access and above, to expose sensitive information from the database, such as the hashed administrator password.
-</code>
-
-- [Nxploited/CVE-2024-12558-exploit](https://github.com/Nxploited/CVE-2024-12558-exploit)
-
 ### CVE-2024-12583 (2025-01-04)
 
 <code>The Dynamics 365 Integration plugin for WordPress is vulnerable to Remote Code Execution and Arbitrary File Read in all versions up to, and including, 1.3.23 via Twig Server-Side Template Injection. This is due to missing input validation and sanitization on the render function. This makes it possible for authenticated attackers, with Contributor-level access and above, to execute code on the server.
@@ -22688,6 +22714,13 @@
 </code>
 
 - [julio-cfa/CVE-2024-33438](https://github.com/julio-cfa/CVE-2024-33438)
+
+### CVE-2024-33452 (2025-04-22)
+
+<code>An issue in OpenResty lua-nginx-module v.0.10.26 and before allows a remote attacker to conduct HTTP request smuggling via a crafted HEAD request.
+</code>
+
+- [namu17/CVE-2024-33452](https://github.com/namu17/CVE-2024-33452)
 
 ### CVE-2024-33453 (2024-10-17)
 
@@ -29696,7 +29729,6 @@
 - [thanhlam-attt/CVE-2023-22527](https://github.com/thanhlam-attt/CVE-2023-22527)
 - [Manh130902/CVE-2023-22527-POC](https://github.com/Manh130902/CVE-2023-22527-POC)
 - [Vozec/CVE-2023-22527](https://github.com/Vozec/CVE-2023-22527)
-- [C1ph3rX13/CVE-2023-22527](https://github.com/C1ph3rX13/CVE-2023-22527)
 - [Niuwoo/CVE-2023-22527](https://github.com/Niuwoo/CVE-2023-22527)
 - [Chocapikk/CVE-2023-22527](https://github.com/Chocapikk/CVE-2023-22527)
 - [RevoltSecurities/CVE-2023-22527](https://github.com/RevoltSecurities/CVE-2023-22527)
@@ -32362,6 +32394,13 @@
 - [tubaaiftikhar-ui/MOVEit-Transfer-Data-Breach-Analysis.](https://github.com/tubaaiftikhar-ui/MOVEit-Transfer-Data-Breach-Analysis.)
 - [KarmanyaT28/Multi-Stage-Exploitation-and-Detection-Engineering-Analysis-of-CVE-2023-34362-in-MOVEit-Transfer](https://github.com/KarmanyaT28/Multi-Stage-Exploitation-and-Detection-Engineering-Analysis-of-CVE-2023-34362-in-MOVEit-Transfer)
 - [horrister/moveit-transfer-cve-2023-34362](https://github.com/horrister/moveit-transfer-cve-2023-34362)
+
+### CVE-2023-34446 (2023-10-25)
+
+<code>iTop is an open source, web-based IT service management platform. Prior to versions 3.0.4 and 3.1.0, when displaying `pages/preferences.php`, cross site scripting is possible. This issue is fixed in versions 3.0.4 and 3.1.0.\n
+</code>
+
+- [minsmiths/cve-2023-34446](https://github.com/minsmiths/cve-2023-34446)
 
 ### CVE-2023-34468 (2023-06-12)
 
@@ -38514,6 +38553,7 @@
 - [amit-pathak009/CVE-2022-22954](https://github.com/amit-pathak009/CVE-2022-22954)
 - [amit-pathak009/CVE-2022-22954-PoC](https://github.com/amit-pathak009/CVE-2022-22954-PoC)
 - [Schira4396/VcenterKiller](https://github.com/Schira4396/VcenterKiller)
+- [nieldk/VMware-CVE-2022-22954](https://github.com/nieldk/VMware-CVE-2022-22954)
 
 ### CVE-2022-22963 (2022-04-01)
 
@@ -38771,7 +38811,6 @@
 - [fork-bombed/CVE-2022-23131](https://github.com/fork-bombed/CVE-2022-23131)
 - [davidzzo23/CVE-2022-23131](https://github.com/davidzzo23/CVE-2022-23131)
 - [dagowda/Zabbix-cve-2022-23131-SSO-bypass](https://github.com/dagowda/Zabbix-cve-2022-23131-SSO-bypass)
-- [Chaelsoo/CVE-2022-23131-Wrappers](https://github.com/Chaelsoo/CVE-2022-23131-Wrappers)
 
 ### CVE-2022-23134 (2022-01-13)
 
@@ -39222,6 +39261,7 @@
 - [ahmetsabrimert/Apache-CouchDB-CVE-2022-24706-RCE-Exploits-Blog-post-](https://github.com/ahmetsabrimert/Apache-CouchDB-CVE-2022-24706-RCE-Exploits-Blog-post-)
 - [superzerosec/CVE-2022-24706](https://github.com/superzerosec/CVE-2022-24706)
 - [becrevex/CVE-2022-24706](https://github.com/becrevex/CVE-2022-24706)
+- [junghyeonkum/CVE-2022-24706](https://github.com/junghyeonkum/CVE-2022-24706)
 
 ### CVE-2022-24707 (2022-02-23)
 
@@ -43946,7 +43986,6 @@
 <code>In p2p_copy_client_info of p2p.c, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution if the target device is performing a Wi-Fi Direct search, with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-8.1 Android-9Android ID: A-172937525
 </code>
 
-- [nanopathi/wpa_supplicant_8_CVE-2021-0326.](https://github.com/nanopathi/wpa_supplicant_8_CVE-2021-0326.)
 - [Satheesh575555/external_wpa_supplicant_8_AOSP10_r33_CVE-2021-0326](https://github.com/Satheesh575555/external_wpa_supplicant_8_AOSP10_r33_CVE-2021-0326)
 - [nanopathi/Packages_wpa_supplicant8_CVE-2021-0326](https://github.com/nanopathi/Packages_wpa_supplicant8_CVE-2021-0326)
 - [ShaikUsaf/external_wpa_supplicant_8_AOSP10_r33CVE-2021-0326](https://github.com/ShaikUsaf/external_wpa_supplicant_8_AOSP10_r33CVE-2021-0326)
@@ -44810,7 +44849,6 @@
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [rvzsec/CVE-2021-4034](https://github.com/rvzsec/CVE-2021-4034)
 - [Nosferatuvjr/PwnKit](https://github.com/Nosferatuvjr/PwnKit)
-- [0x4ndy/CVE-2021-4034-PoC](https://github.com/0x4ndy/CVE-2021-4034-PoC)
 - [antoinenguyen-09/CVE-2021-4034](https://github.com/antoinenguyen-09/CVE-2021-4034)
 - [wudicainiao/cve-2021-4034](https://github.com/wudicainiao/cve-2021-4034)
 - [TanmoyG1800/CVE-2021-4034](https://github.com/TanmoyG1800/CVE-2021-4034)
@@ -45312,6 +45350,7 @@
 - [hateme021202/cve-2021-21974](https://github.com/hateme021202/cve-2021-21974)
 - [mercylessghost/CVE-2021-21974](https://github.com/mercylessghost/CVE-2021-21974)
 - [abirasecurity/CVE-2021-21974_vuln_dectection](https://github.com/abirasecurity/CVE-2021-21974_vuln_dectection)
+- [Aiyakami/CVE-2021-21974](https://github.com/Aiyakami/CVE-2021-21974)
 
 ### CVE-2021-21975 (2021-03-31)
 
@@ -48910,6 +48949,7 @@
 - [ranasen-rat/cve-2021-42013](https://github.com/ranasen-rat/cve-2021-42013)
 - [zeynepglygt/apache-cve-2021-42013-rce](https://github.com/zeynepglygt/apache-cve-2021-42013-rce)
 - [Joapath/CVE-2021-42013](https://github.com/Joapath/CVE-2021-42013)
+- [eunho87/CVE-2021-42013](https://github.com/eunho87/CVE-2021-42013)
 
 ### CVE-2021-42056 (2022-06-24)
 
@@ -68667,7 +68707,7 @@
 <code>The ping tool in multiple D-Link and TRENDnet devices allow remote attackers to execute arbitrary code via the ping_addr parameter to ping.ccp.
 </code>
 
-- [christopher-leese/cve-2015-1187-dir820l-reproduction](https://github.com/christopher-leese/cve-2015-1187-dir820l-reproduction)
+- [christopher-leese/cve-2015-1187-dir820l-firmware-reverse-engineering](https://github.com/christopher-leese/cve-2015-1187-dir820l-firmware-reverse-engineering)
 
 ### CVE-2015-1318 (2015-04-17)
 
