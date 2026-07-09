@@ -1702,6 +1702,9 @@
 
 - [HORKimhab/CVE-2026-25177](https://github.com/HORKimhab/CVE-2026-25177)
 
+### CVE-2026-25194
+- [DexSemon/CVE-2026-25194](https://github.com/DexSemon/CVE-2026-25194)
+
 ### CVE-2026-25197 (2026-04-03)
 
 <code>A specific endpoint allows authenticated users to pivot to other user profiles by modifying the id number in the API call.
@@ -1831,6 +1834,13 @@
 </code>
 
 - [xxconi/CVE-2026-27384](https://github.com/xxconi/CVE-2026-27384)
+
+### CVE-2026-27495 (2026-02-25)
+
+<code>n8n is an open source workflow automation platform. Prior to versions 2.10.1, 2.9.3, and 1.123.22, an authenticated user with permission to create or modify workflows could exploit a vulnerability in the JavaScript Task Runner sandbox to execute arbitrary code outside the sandbox boundary. On instances using internal Task Runners (default runner mode), this could result in full compromise of the n8n host. On instances using external Task Runners, the attacker might gain access to or impact other task executed on the Task Runner. Task Runners must be enabled using `N8N_RUNNERS_ENABLED=true`. The issue has been fixed in n8n versions 2.10.1, 2.9.3, and 1.123.22. Users should upgrade to one of these versions or later to remediate the vulnerability. If upgrading is not immediately possible, administrators should consider the following temporary mitigations. Limit workflow creation and editing permissions to fully trusted users only, and/or use external runner mode (`N8N_RUNNERS_MODE=external`) to limit the blast radius. These workarounds do not fully remediate the risk and should only be used as short-term mitigation measures.
+</code>
+
+- [DexSemon/CVE-2026-27495](https://github.com/DexSemon/CVE-2026-27495)
 
 ### CVE-2026-27626 (2026-02-25)
 
@@ -2030,7 +2040,11 @@
 
 - [0xrixet/Craftcms-PoC-CVE-2026-31266](https://github.com/0xrixet/Craftcms-PoC-CVE-2026-31266)
 
-### CVE-2026-31309
+### CVE-2026-31309 (2026-07-08)
+
+<code>Improper authorization in the /tequilapi/config/user endpoint of Mysterium Node before v1.36.0 allows unauthenticated attackers to arbitrarily overwrite the node's configuration and achieve a full node takeover via supplying a crafted POST request.
+</code>
+
 - [Sch8ill/CVE-2026-31309](https://github.com/Sch8ill/CVE-2026-31309)
 
 ### CVE-2026-31431 (2026-04-22)
@@ -2067,7 +2081,6 @@
 - [Lutfifakee-Project/CVE-2026-31431](https://github.com/Lutfifakee-Project/CVE-2026-31431)
 - [mauricioportela/CVE-2026-31431-Analysis](https://github.com/mauricioportela/CVE-2026-31431-Analysis)
 - [gbonacini/CVE-2026-31431](https://github.com/gbonacini/CVE-2026-31431)
-- [hyz-is/copyfail-fix](https://github.com/hyz-is/copyfail-fix)
 - [sh4den/CVE-2026-31431-copyfail-aarch64](https://github.com/sh4den/CVE-2026-31431-copyfail-aarch64)
 - [DroPZsec/SplicePrivillegeEscalationFIX](https://github.com/DroPZsec/SplicePrivillegeEscalationFIX)
 - [Koshmare-Blossom/Copyfail-sh](https://github.com/Koshmare-Blossom/Copyfail-sh)
@@ -2467,7 +2480,11 @@
 
 - [PwnOnu/T3-Technology-CPE-Advisories](https://github.com/PwnOnu/T3-Technology-CPE-Advisories)
 
-### CVE-2026-36027
+### CVE-2026-36027 (2026-07-08)
+
+<code>An issue in Code27 Companion Hub SQ3A.220705.003.A1 allows a physically proximate attacker to execute arbitrary code via the USB debugging (ADB) and Android Debug Bridge components
+</code>
+
 - [redr0nin/Code-27-Companion-Hub-Exploits](https://github.com/redr0nin/Code-27-Companion-Hub-Exploits)
 
 ### CVE-2026-36213 (2026-06-15)
@@ -2642,6 +2659,7 @@
 - [pawpic/CVE-2026-38526-POC](https://github.com/pawpic/CVE-2026-38526-POC)
 - [mmoobbeeiidat-design/Hack-The-Box-Nexus-Findings-Report](https://github.com/mmoobbeeiidat-design/Hack-The-Box-Nexus-Findings-Report)
 - [diamorphine666/CVE-2026-38526-Exploit](https://github.com/diamorphine666/CVE-2026-38526-Exploit)
+- [b0nyo/CVE-2026-38526](https://github.com/b0nyo/CVE-2026-38526)
 
 ### CVE-2026-38698
 - [vital-information-resource-under-siege/CVE-2026-38698-and-CVE-2026-38699](https://github.com/vital-information-resource-under-siege/CVE-2026-38698-and-CVE-2026-38699)
@@ -2803,6 +2821,13 @@
 
 - [oscerd/CVE-2026-40047](https://github.com/oscerd/CVE-2026-40047)
 
+### CVE-2026-40048 (2026-04-27)
+
+<code>The Camel-PQC FileBasedKeyLifecycleManager class deserializes the contents of `&lt;keyId&gt;.key` files in the configured key directory using java.io.ObjectInputStream without applying any ObjectInputFilter or class-loading restrictions. The cast to `java.security.KeyPair` is evaluated only after `readObject()` has already returned, so any `readObject()` side effects in the deserialized object run before the type check. An attacker who can write to the key directory used by a Camel application — for example through a path traversal into the directory, misconfigured filesystem permissions on the volume where keys are stored, a compromised key provisioning pipeline, or a symlink attack — can place a crafted serialized Java object that, when deserialized during normal key lifecycle operations, results in arbitrary code execution in the context of the application.\n\nThis issue affects Apache Camel: from 4.19.0 before 4.20.0, from 4.18.0 before 4.18.2.\n\nUsers are recommended to upgrade to version 4.20.0, which fixes the issue by replacing java.io.ObjectInputStream-based key and metadata storage with standard PKCS#8 (private key) / X.509 SubjectPublicKeyInfo (public key) Base64 JSON encoding. For users on the 4.18.x LTS releases stream, upgrade to 4.18.2.
+</code>
+
+- [oscerd/CVE-2026-40048](https://github.com/oscerd/CVE-2026-40048)
+
 ### CVE-2026-40072 (2026-04-09)
 
 <code>web3.py allows you to interact with the Ethereum blockchain using Python. From 6.0.0b3 to before 7.15.0 and 8.0.0b2, web3.py implements CCIP Read / OffchainLookup (EIP-3668) by performing HTTP requests to URLs supplied by smart contracts in offchain_lookup_payload[&quot;urls&quot;]. The implementation uses these contract-supplied URLs directly (after {sender} / {data} template substitution) without any destination validation. CCIP Read is enabled by default (global_ccip_read_enabled = True on all providers), meaning any application using web3.py's .call() method is exposed without explicit opt-in. This results in Server-Side Request Forgery (SSRF) when web3.py is used in backend services, indexers, APIs, or any environment that performs eth_call / .call() against untrusted or user-supplied contract addresses. A malicious contract can force the web3.py process to issue HTTP requests to arbitrary destinations, including internal network services and cloud metadata endpoints. This vulnerability is fixed in 7.15.0 and 8.0.0b2.
@@ -2835,6 +2860,13 @@
 - [piffd0s/ntoskrnl-metadata](https://github.com/piffd0s/ntoskrnl-metadata)
 - [0xBlackash/CVE-2026-40369](https://github.com/0xBlackash/CVE-2026-40369)
 - [CCELEND/CVE-2026-40369](https://github.com/CCELEND/CVE-2026-40369)
+
+### CVE-2026-40453 (2026-04-27)
+
+<code>The fix for CVE-2025-27636 added setLowerCase(true) to HttpHeaderFilterStrategy so that case-variant header names such as 'CAmelExecCommandExecutable' are filtered out alongside 'CamelExecCommandExecutable'. The same setLowerCase(true) call was not applied to five non-HTTP HeaderFilterStrategy implementations: JmsHeaderFilterStrategy and ClassicJmsHeaderFilterStrategy in camel-jms, SjmsHeaderFilterStrategy in camel-sjms, CoAPHeaderFilterStrategy in camel-coap, and GooglePubsubHeaderFilterStrategy in camel-google-pubsub. Because those strategies use case-sensitive String.startsWith('Camel'/'camel') filtering while the Camel Exchange stores headers in a case-insensitive map, an attacker with JMS (or equivalent) producer access to the broker consumed by a Camel route can inject case-variant Camel internal headers, which are then resolved by downstream components such as camel-exec and camel-file using their canonical casing. This enables remote code execution and arbitrary file write on routes that forward JMS messages to header-driven components.\n\nThis issue affects Apache Camel: from 3.0.0 before 4.14.6, from 4.15.0 before 4.18.2, from 4.19.0 before 4.20.0.\n\nUsers are recommended to upgrade to version 4.20.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.6. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.2.
+</code>
+
+- [oscerd/CVE-2026-40453](https://github.com/oscerd/CVE-2026-40453)
 
 ### CVE-2026-40564 (2026-05-26)
 
@@ -3215,6 +3247,8 @@
 
 - [MobiusM/CVE-2026-43499](https://github.com/MobiusM/CVE-2026-43499)
 - [HORKimhab/CVE-2026-43499](https://github.com/HORKimhab/CVE-2026-43499)
+- [0xBlackash/CVE-2026-43499](https://github.com/0xBlackash/CVE-2026-43499)
+- [tc3650/CVE-2026-43499-armv7](https://github.com/tc3650/CVE-2026-43499-armv7)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -3348,6 +3382,7 @@
 </code>
 
 - [shinthink/solrradar](https://github.com/shinthink/solrradar)
+- [gagaltotal/CVE-2026-44825-Apache-Solr-Scanner](https://github.com/gagaltotal/CVE-2026-44825-Apache-Solr-Scanner)
 
 ### CVE-2026-44881 (2026-05-28)
 
@@ -4044,7 +4079,7 @@
 
 ### CVE-2026-49468 (2026-06-22)
 
-<code>LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. Prior to 1.84.0,  This vulnerability is fixed in 1.84.0.
+<code>LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. Prior to 1.84.0, a Host-header parsing flaw in the LiteLLM proxy could, under specific conditions, allow unauthenticated access to protected management routes. The auth layer derived the effective route from request.url.path in litellm/proxy/auth/auth_utils.py::get_request_route(), which Starlette reconstructs from the Host header. A crafted Host could therefore make the auth gate evaluate a different route from the one FastAPI dispatched. This vulnerability is fixed in 1.84.0.
 </code>
 
 - [BiiTts/CVE-2026-49468-LiteLLM-Auth-Bypass](https://github.com/BiiTts/CVE-2026-49468-LiteLLM-Auth-Bypass)
@@ -4119,8 +4154,18 @@
 - [0xc03307b/CVE-2026-49975](https://github.com/0xc03307b/CVE-2026-49975)
 - [Manisso/http2-bomb](https://github.com/Manisso/http2-bomb)
 
+### CVE-2026-50131 (2026-06-10)
+
+<code>Fedify is a TypeScript library for building federated server apps powered by ActivityPub. Fedify previously addressed SSRF/internal network access in GHSA-p9cg-vqcc-grcx by adding public URL validation before runtime document and media fetching. However, the IPv4 validation logic present starting in version 0.11.2 and prior to versions 1.9.12, 1.10.11, 2.0.19, 2.1.15, and 2.2.4 appears incomplete. The `validatePublicUrl()` protection relies on `isValidPublicIPv4Address()` to reject non-public IPv4 destinations. The function blocks common private and local ranges such as `10.0.0.0/8`, `127.0.0.0/8`, `169.254.0.0/16`, `172.16.0.0/12`, and `192.168.0.0/16`, but it still treats several special-use, reserved, multicast, benchmarking, and carrier-grade NAT IPv4 ranges as valid public destinations. Because this validation is used as an SSRF defense before outbound fetches, this appears to be an incomplete mitigation or bypass class for the previous SSRF issue. Versions 1.9.12, 1.10.11, 2.0.19, 2.1.15, and 2.2.4 contain an updated patch.
+</code>
+
+- [chaitanyagarware/CVE-2026-50131](https://github.com/chaitanyagarware/CVE-2026-50131)
+
 ### CVE-2026-50142
 - [MuhammedHussein17/libheif-cve-2026-50142](https://github.com/MuhammedHussein17/libheif-cve-2026-50142)
+
+### CVE-2026-50181
+- [chaitanyagarware/CVE-2026-50181](https://github.com/chaitanyagarware/CVE-2026-50181)
 
 ### CVE-2026-50229 (2026-06-29)
 
@@ -4131,14 +4176,14 @@
 
 ### CVE-2026-50507 (2026-06-09)
 
-<code>Protection mechanism failure in Windows BitLocker allows an unauthorized attacker to bypass a security feature with a physical attack.
+<code>Missing authentication for critical function in Windows BitLocker allows an unauthorized attacker to bypass a security feature with a physical attack.
 </code>
 
 - [HORKimhab/CVE-2026-50507](https://github.com/HORKimhab/CVE-2026-50507)
 
 ### CVE-2026-50656 (2026-06-16)
 
-<code>Microsoft is aware of an elevation of privilege in the Microsoft Malware Protection Engine in Microsoft Defender publicly referred to as &amp;quot;RoguePlanet &amp;quot;. We are working to provide a high quality security update that addresses this vulnerability. We will provide information in this CVE when the update is available.
+<code>Microsoft is aware of an elevation of privilege in the Microsoft Malware Protection Engine in Microsoft Defender publicly referred to as &amp;quot;RoguePlanet &amp;quot;.
 </code>
 
 - [0xBlackash/CVE-2026-50656](https://github.com/0xBlackash/CVE-2026-50656)
@@ -4159,6 +4204,9 @@
 ### CVE-2026-51119
 - [A17-ba/CVE-2026-51119](https://github.com/A17-ba/CVE-2026-51119)
 
+### CVE-2026-51788
+- [aykhan32/CVE-2026-51788](https://github.com/aykhan32/CVE-2026-51788)
+
 ### CVE-2026-51947 (2026-07-01)
 
 <code>An issue in Pivotal CRM 6.6.4.08 and systems using patch-ghi-15381-cwe-502-20251225.zip (fixed in Pivotal CRM 6.6.5.10 and Patch_CWE502_20260316.zip) allows a remote attacker to execute arbitrary code via the Pivotal.Engine.Client.Services.Conversion.dll component. NOTE: this issue exists because of an incomplete fix for CVE-2026-39253.
@@ -4168,6 +4216,9 @@
 
 ### CVE-2026-52217
 - [teteco/CVE-2026-52217-VTEX-Checkout-CrossTenant-IDOR](https://github.com/teteco/CVE-2026-52217-VTEX-Checkout-CrossTenant-IDOR)
+
+### CVE-2026-52658
+- [mirackayikci/CVE-2026-52658](https://github.com/mirackayikci/CVE-2026-52658)
 
 ### CVE-2026-52806 (2026-06-24)
 
@@ -4324,6 +4375,12 @@
 </code>
 
 - [MichaelAdamGroberman/CVE-2026-54477](https://github.com/MichaelAdamGroberman/CVE-2026-54477)
+
+### CVE-2026-54519
+- [chaitanyagarware/CVE-2026-54519](https://github.com/chaitanyagarware/CVE-2026-54519)
+
+### CVE-2026-54520
+- [chaitanyagarware/CVE-2026-54520](https://github.com/chaitanyagarware/CVE-2026-54520)
 
 ### CVE-2026-54596
 - [iltosec/CVE-2026-54596](https://github.com/iltosec/CVE-2026-54596)
@@ -9095,6 +9152,7 @@
 
 - [akamai/CVE-2025-27636-Apache-Camel-PoC](https://github.com/akamai/CVE-2025-27636-Apache-Camel-PoC)
 - [enochgitgamefied/CVE-2025-27636-Practical-Lab](https://github.com/enochgitgamefied/CVE-2025-27636-Practical-Lab)
+- [oscerd/CVE-2026-40453](https://github.com/oscerd/CVE-2026-40453)
 
 ### CVE-2025-27817 (2025-06-10)
 
@@ -9484,7 +9542,6 @@
 - [gitgudKrish/cve-2025-29927-nextjs](https://github.com/gitgudKrish/cve-2025-29927-nextjs)
 - [SwapnilDeshpande/cve-2025-29927-lab](https://github.com/SwapnilDeshpande/cve-2025-29927-lab)
 - [Fomovet/cve-2025-29927](https://github.com/Fomovet/cve-2025-29927)
-- [surajpandeyp/CVE-2025-29927](https://github.com/surajpandeyp/CVE-2025-29927)
 
 ### CVE-2025-29943 (2026-01-16)
 
@@ -14218,7 +14275,6 @@
 - [lil0xplorer/CVE-2025-60787_PoC](https://github.com/lil0xplorer/CVE-2025-60787_PoC)
 - [d3vn0mi/CVE-2025-60787-POC](https://github.com/d3vn0mi/CVE-2025-60787-POC)
 - [agent-skywalker/CVE-2025-60787](https://github.com/agent-skywalker/CVE-2025-60787)
-- [Revnin/CCTV-MACHINE](https://github.com/Revnin/CCTV-MACHINE)
 
 ### CVE-2025-60852 (2025-10-23)
 
@@ -16197,6 +16253,9 @@
 </code>
 
 - [watchtowrlabs/watchTowr-vs-BMC-Footprints-RCE-CVE-2025-71257-CVE-2025-71260](https://github.com/watchtowrlabs/watchTowr-vs-BMC-Footprints-RCE-CVE-2025-71257-CVE-2025-71260)
+
+### CVE-2025-71384
+- [Scorpion-Security-Labs/CVE-2025-71384](https://github.com/Scorpion-Security-Labs/CVE-2025-71384)
 
 ### CVE-2025-81110
 - [BridgerAlderson/CVE-2025-81110-PoC](https://github.com/BridgerAlderson/CVE-2025-81110-PoC)
@@ -19463,6 +19522,13 @@
 </code>
 
 - [Nxploited/CVE-2024-12542-PoC](https://github.com/Nxploited/CVE-2024-12542-PoC)
+
+### CVE-2024-12558 (2024-12-21)
+
+<code>The WP BASE Booking of Appointments, Services and Events plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the export_db function in all versions up to, and including, 4.9.2. This makes it possible for authenticated attackers, with Subscriber-level access and above, to expose sensitive information from the database, such as the hashed administrator password.
+</code>
+
+- [Nxploited/CVE-2024-12558-exploit](https://github.com/Nxploited/CVE-2024-12558-exploit)
 
 ### CVE-2024-12583 (2025-01-04)
 
@@ -24361,6 +24427,7 @@
 - [watchtowrlabs/Mitel-MiCollab-Auth-Bypass_CVE-2024-41713](https://github.com/watchtowrlabs/Mitel-MiCollab-Auth-Bypass_CVE-2024-41713)
 - [zxj-hub/CVE-2024-41713POC](https://github.com/zxj-hub/CVE-2024-41713POC)
 - [Sanandd/cve-2024-CVE-2024-41713](https://github.com/Sanandd/cve-2024-CVE-2024-41713)
+- [amanverma-wsu/CVE-2024-41713-Scan](https://github.com/amanverma-wsu/CVE-2024-41713-Scan)
 - [gunyakit/CVE-2024-41713-PoC-exploit](https://github.com/gunyakit/CVE-2024-41713-PoC-exploit)
 
 ### CVE-2024-41817 (2024-07-29)
@@ -26194,9 +26261,7 @@
 - [Ravi-lk/CVE-2024-51482-ZoneMinder-v1.37.-1.37.64-SQL-Injection-POC](https://github.com/Ravi-lk/CVE-2024-51482-ZoneMinder-v1.37.-1.37.64-SQL-Injection-POC)
 - [lnn0v4/sqli-hunter-CVE-2024-51482-PoC](https://github.com/lnn0v4/sqli-hunter-CVE-2024-51482-PoC)
 - [Erhui-Li/CVE-2024-51482-ZoneMinder-CCTV-HTB-Reliable-EXP](https://github.com/Erhui-Li/CVE-2024-51482-ZoneMinder-CCTV-HTB-Reliable-EXP)
-- [Revnin/CCTV-MACHINE](https://github.com/Revnin/CCTV-MACHINE)
 - [0xDaeras/CVE-2024-51482-POC](https://github.com/0xDaeras/CVE-2024-51482-POC)
-- [mattiapertusati/htb-cctv](https://github.com/mattiapertusati/htb-cctv)
 
 ### CVE-2024-51567 (2024-10-29)
 
@@ -27395,6 +27460,7 @@
 - [julianertle/CVE-2023-0386-CTF](https://github.com/julianertle/CVE-2023-0386-CTF)
 - [anxs3c/TwoMillion-Machine](https://github.com/anxs3c/TwoMillion-Machine)
 - [pwncone/CVE-2023-0386-OverlayFS](https://github.com/pwncone/CVE-2023-0386-OverlayFS)
+- [Cosm3No1de/TwoMillion-HTB-Write-up](https://github.com/Cosm3No1de/TwoMillion-HTB-Write-up)
 
 ### CVE-2023-0400 (2023-02-01)
 
@@ -28666,13 +28732,6 @@
 - [TopskiyPavelQwertyGang/Review.CVE-2023-5612](https://github.com/TopskiyPavelQwertyGang/Review.CVE-2023-5612)
 - [mad3E7cat/CVE-2023-5612](https://github.com/mad3E7cat/CVE-2023-5612)
 
-### CVE-2023-5717 (2023-10-25)
-
-<code>A heap out-of-bounds write vulnerability in the Linux kernel's Linux Kernel Performance Events (perf) component can be exploited to achieve local privilege escalation.\n\nIf perf_read_group() is called while an event's sibling_list is smaller than its child's sibling_list, it can increment or write to memory locations outside of the allocated buffer.\n\nWe recommend upgrading past commit 32671e3799ca2e4590773fd0e63aaa4229e50c06.
-</code>
-
-- [uthrasri/CVE-2023-5717](https://github.com/uthrasri/CVE-2023-5717)
-
 ### CVE-2023-5808 (2023-12-04)
 
 <code>SMU versions prior to 14.8.7825.01 are susceptible to unintended information disclosure, through URL manipulation. Authenticated users in a Storage administrative role are able to access HNAS configuration backup and diagnostic data, that would normally be barred to that specific administrative role.
@@ -29102,6 +29161,7 @@
 - [gustavorobertux/cisco-cve-2023-20198-checker](https://github.com/gustavorobertux/cisco-cve-2023-20198-checker)
 - [telly251/forwardnetworksdemo](https://github.com/telly251/forwardnetworksdemo)
 - [charlesjson/CVE-2023-20198](https://github.com/charlesjson/CVE-2023-20198)
+- [abrahamsurf/CVE-2023-20198-Scanner](https://github.com/abrahamsurf/CVE-2023-20198-Scanner)
 
 ### CVE-2023-20209 (2023-08-16)
 
@@ -29728,7 +29788,6 @@
 - [Avento/CVE-2023-22527_Confluence_RCE](https://github.com/Avento/CVE-2023-22527_Confluence_RCE)
 - [thanhlam-attt/CVE-2023-22527](https://github.com/thanhlam-attt/CVE-2023-22527)
 - [Manh130902/CVE-2023-22527-POC](https://github.com/Manh130902/CVE-2023-22527-POC)
-- [Vozec/CVE-2023-22527](https://github.com/Vozec/CVE-2023-22527)
 - [Niuwoo/CVE-2023-22527](https://github.com/Niuwoo/CVE-2023-22527)
 - [Chocapikk/CVE-2023-22527](https://github.com/Chocapikk/CVE-2023-22527)
 - [RevoltSecurities/CVE-2023-22527](https://github.com/RevoltSecurities/CVE-2023-22527)
@@ -34284,7 +34343,7 @@
 
 ### CVE-2023-42789 (2024-03-12)
 
-<code>A out-of-bounds write in Fortinet FortiOS 7.4.0 through 7.4.1, 7.2.0 through 7.2.5, 7.0.0 through 7.0.12, 6.4.0 through 6.4.14, 6.2.0 through 6.2.15, FortiProxy 7.4.0, 7.2.0 through 7.2.6, 7.0.0 through 7.0.12, 2.0.0 through 2.0.13 allows attacker to execute unauthorized code or commands via specially crafted HTTP requests.
+<code>A out-of-bounds write vulnerability in Fortinet FortiOS 7.4.0 through 7.4.1, FortiOS 7.2.0 through 7.2.5, FortiOS 7.0.0 through 7.0.12, FortiOS 6.4.0 through 6.4.14, FortiOS 6.2.0 through 6.2.15, FortiProxy 7.4.0, FortiProxy 7.2.0 through 7.2.6, FortiProxy 7.0.0 through 7.0.12, FortiProxy 2.0.0 through 2.0.13, FortiSASE 23.2.b allows attacker to execute unauthorized code or commands via specially crafted HTTP requests.
 </code>
 
 - [jhonnybonny/CVE-2023-42789](https://github.com/jhonnybonny/CVE-2023-42789)
@@ -44902,7 +44961,6 @@
 - [Murguii/DEV-CVE-2021-4034](https://github.com/Murguii/DEV-CVE-2021-4034)
 - [B1gN0Se/PwnKit_CVE-2021-4034](https://github.com/B1gN0Se/PwnKit_CVE-2021-4034)
 - [usmansec/-CVE-2021-4034](https://github.com/usmansec/-CVE-2021-4034)
-- [1820hitler/PwnKit-](https://github.com/1820hitler/PwnKit-)
 - [vorkampfer/pwnkit_safety_check](https://github.com/vorkampfer/pwnkit_safety_check)
 - [rusakalimantan/PwnKit-CVE-2021-4034](https://github.com/rusakalimantan/PwnKit-CVE-2021-4034)
 - [jayhutajulu1/PwnKit-CVE-2021-4034](https://github.com/jayhutajulu1/PwnKit-CVE-2021-4034)
@@ -48269,6 +48327,7 @@
 - [alikarimi999/CVE-2021-40346](https://github.com/alikarimi999/CVE-2021-40346)
 - [Vulnmachines/HAProxy_CVE-2021-40346](https://github.com/Vulnmachines/HAProxy_CVE-2021-40346)
 - [BoianEduard/CVE-2021-40346](https://github.com/BoianEduard/CVE-2021-40346)
+- [jmg0929/CVE-2021-40346](https://github.com/jmg0929/CVE-2021-40346)
 
 ### CVE-2021-40352 (2021-09-01)
 
@@ -57933,7 +57992,6 @@
 - [ELIZEUOPAIN/CVE-2019-9053-CMS-Made-Simple-2.2.10---SQL-Injection-Exploit](https://github.com/ELIZEUOPAIN/CVE-2019-9053-CMS-Made-Simple-2.2.10---SQL-Injection-Exploit)
 - [Mahamedm/CVE-2019-9053-Exploit-Python-3](https://github.com/Mahamedm/CVE-2019-9053-Exploit-Python-3)
 - [im-suman-roy/CVE-2019-9053](https://github.com/im-suman-roy/CVE-2019-9053)
-- [bthnrml/guncel-cve-2019-9053.py](https://github.com/bthnrml/guncel-cve-2019-9053.py)
 - [kahluri/CVE-2019-9053](https://github.com/kahluri/CVE-2019-9053)
 - [fernandobortotti/CVE-2019-9053](https://github.com/fernandobortotti/CVE-2019-9053)
 - [byrek/CVE-2019-9053](https://github.com/byrek/CVE-2019-9053)
@@ -62033,7 +62091,7 @@
 - [ruthvikvegunta/Drupalgeddon2](https://github.com/ruthvikvegunta/Drupalgeddon2)
 - [ludy-dev/drupal8-REST-RCE](https://github.com/ludy-dev/drupal8-REST-RCE)
 - [0xAJ2K/CVE-2018-7600](https://github.com/0xAJ2K/CVE-2018-7600)
-- [rafaelcaria/drupalgeddon2-CVE-2018-7600](https://github.com/rafaelcaria/drupalgeddon2-CVE-2018-7600)
+- [RB4C/drupalgeddon2-CVE-2018-7600](https://github.com/RB4C/drupalgeddon2-CVE-2018-7600)
 - [vphnguyen/ANM_CVE-2018-7600](https://github.com/vphnguyen/ANM_CVE-2018-7600)
 - [anldori/CVE-2018-7600](https://github.com/anldori/CVE-2018-7600)
 - [r0lh/CVE-2018-7600](https://github.com/r0lh/CVE-2018-7600)
@@ -63111,6 +63169,7 @@
 - [0x00-0x00/CVE-2018-12613](https://github.com/0x00-0x00/CVE-2018-12613)
 - [ivanitlearning/CVE-2018-12613](https://github.com/ivanitlearning/CVE-2018-12613)
 - [eastmountyxz/CVE-2018-12613-phpMyAdmin](https://github.com/eastmountyxz/CVE-2018-12613-phpMyAdmin)
+- [hs2131019/phpMyAdmin-CVE-2018-12613](https://github.com/hs2131019/phpMyAdmin-CVE-2018-12613)
 
 ### CVE-2018-12633 (2018-06-22)
 
