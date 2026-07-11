@@ -373,13 +373,6 @@
 
 - [Ard33/CVE-2026-4255](https://github.com/Ard33/CVE-2026-4255)
 
-### CVE-2026-4257 (2026-03-30)
-
-<code>The Contact Form by Supsystic plugin for WordPress is vulnerable to Server-Side Template Injection (SSTI) leading to Remote Code Execution (RCE) in all versions up to, and including, 1.7.36. This is due to the plugin using the Twig `Twig_Loader_String` template engine without sandboxing, combined with the `cfsPreFill` prefill functionality that allows unauthenticated users to inject arbitrary Twig expressions into form field values via GET parameters. This makes it possible for unauthenticated attackers to execute arbitrary PHP functions and OS commands on the server by leveraging Twig's `registerUndefinedFilterCallback()` method to register arbitrary PHP callbacks.
-</code>
-
-- [dann3xplo1t/CVE-2026-4257](https://github.com/dann3xplo1t/CVE-2026-4257)
-
 ### CVE-2026-4390 (2026-05-27)
 
 <code>A weakness has been identified in TeamSpeak 3 Server up to 3.13.7. This affects the function process_resend_queue of the component Connection State Management. This manipulation causes use after free. The attack may be initiated remotely. Upgrading to version 3.13.8 is able to mitigate this issue. The affected component should be upgraded.
@@ -643,6 +636,13 @@
 </code>
 
 - [jackalkarlos/EvilAhenk](https://github.com/jackalkarlos/EvilAhenk)
+
+### CVE-2026-6664 (2026-05-09)
+
+<code>An integer overflow in network packet parsing code in PgBouncer before 1.25.2 bypasses a boundary check and can lead to a crash. An unauthenticated remote attacker can crash PgBouncer with a malformed SCRAM authentication packet.
+</code>
+
+- [nicolasjulian/bouncer-overflow](https://github.com/nicolasjulian/bouncer-overflow)
 
 ### CVE-2026-6741 (2026-04-27)
 
@@ -1639,6 +1639,7 @@
 - [Cosm3No1de/htb-orion-writeup](https://github.com/Cosm3No1de/htb-orion-writeup)
 - [kyukazamiqq/CVE-2026-24061](https://github.com/kyukazamiqq/CVE-2026-24061)
 - [harygovind/CVE-2026-24061](https://github.com/harygovind/CVE-2026-24061)
+- [stoerti2/Abyssal](https://github.com/stoerti2/Abyssal)
 
 ### CVE-2026-24135 (2026-02-06)
 
@@ -1733,7 +1734,6 @@
 <code>OpenClaw (aka clawdbot or Moltbot) before 2026.1.29 obtains a gatewayUrl value from a query string and automatically makes a WebSocket connection without prompting, sending a token value.
 </code>
 
-- [msaleme/red-team-blue-team-agent-fabric](https://github.com/msaleme/red-team-blue-team-agent-fabric)
 - [msaleme/start-here](https://github.com/msaleme/start-here)
 - [adibirzu/openclaw-security-monitor](https://github.com/adibirzu/openclaw-security-monitor)
 - [EQSTLab/CVE-2026-25253](https://github.com/EQSTLab/CVE-2026-25253)
@@ -1851,6 +1851,7 @@
 </code>
 
 - [0xh7ml/CVE-2026-27626-PoC](https://github.com/0xh7ml/CVE-2026-27626-PoC)
+- [Cobrastrike62/CVE-2026-27626-POC](https://github.com/Cobrastrike62/CVE-2026-27626-POC)
 
 ### CVE-2026-27654 (2026-03-24)
 
@@ -1948,6 +1949,7 @@
 </code>
 
 - [zeroxjf/CVE-2026-28992-IOHIDFamily-FastPathUserClient-Race-Conditions](https://github.com/zeroxjf/CVE-2026-28992-IOHIDFamily-FastPathUserClient-Race-Conditions)
+- [clogan9019-dotcom/IOHIDFamily-PoC-Research](https://github.com/clogan9019-dotcom/IOHIDFamily-PoC-Research)
 
 ### CVE-2026-28995 (2026-05-11)
 
@@ -1979,7 +1981,11 @@
 
 - [bogdanrotariu/cve-2026-29204-whmcs-clientarea-addonid](https://github.com/bogdanrotariu/cve-2026-29204-whmcs-clientarea-addonid)
 
-### CVE-2026-29519
+### CVE-2026-29519 (2026-07-10)
+
+<code>Lucee CFML Server versions across the 5.3.x, 6.1.x, 6.2.x, and 7.0.x release lines contain a reflected cross-site scripting vulnerability in URL path parsing that allows unauthenticated remote attackers to execute arbitrary JavaScript in a victim's browser by embedding HTML or JavaScript payloads within the request path. Attackers can craft a malicious URL containing injected script content that is reflected in the server's response without proper output encoding, enabling session hijacking or unauthorized actions against the Lucee administrative interface when a victim visits the crafted link.
+</code>
+
 - [L4V4D0/CVE-2026-29519-Lucee-Reflected-XSS](https://github.com/L4V4D0/CVE-2026-29519-Lucee-Reflected-XSS)
 
 ### CVE-2026-29923 (2026-04-09)
@@ -2193,6 +2199,13 @@
 - [c0gnit00/CVE-2026-33017](https://github.com/c0gnit00/CVE-2026-33017)
 - [yayip/CVE-2026-33017](https://github.com/yayip/CVE-2026-33017)
 - [diamorphine666/CVE-2026-33017-Exploit](https://github.com/diamorphine666/CVE-2026-33017-Exploit)
+
+### CVE-2026-33067 (2026-03-20)
+
+<code>SiYuan is a personal knowledge management system. Versions 3.6.0 and below render package metadata fields (displayName, description) using template literals without HTML escaping. A malicious package author can inject arbitrary HTML/JavaScript into these fields, which executes automatically when any user browses the Bazaar page. Because SiYuan's Electron configuration enables nodeIntegration: true with contextIsolation: false, this XSS escalates directly to full Remote Code Execution on the victim's operating system — with zero user interaction beyond opening the marketplace tab. This issue has been fixed in version 3.6.1.
+</code>
+
+- [Lopseg/cve-2026-33067](https://github.com/Lopseg/cve-2026-33067)
 
 ### CVE-2026-33137 (2026-05-20)
 
@@ -3278,6 +3291,7 @@
 - [tc3650/CVE-2026-43499-armv7](https://github.com/tc3650/CVE-2026-43499-armv7)
 - [pubglite55/oppo-ghostlock](https://github.com/pubglite55/oppo-ghostlock)
 - [inforcqb/CVE-2026-43499-pja110](https://github.com/inforcqb/CVE-2026-43499-pja110)
+- [caspy123/CVE-2026-43499](https://github.com/caspy123/CVE-2026-43499)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -3568,13 +3582,6 @@
 - [mistbarbarianspot/CVE-2026-45659-SharePoint-RCE](https://github.com/mistbarbarianspot/CVE-2026-45659-SharePoint-RCE)
 - [jenniferreire26/CVE-2026-45659](https://github.com/jenniferreire26/CVE-2026-45659)
 - [amnsecurity/CVE-2026-45659-SharePoint-RCE](https://github.com/amnsecurity/CVE-2026-45659-SharePoint-RCE)
-
-### CVE-2026-45777 (2026-06-05)
-
-<code>OpenXDMoD is an open framework for collecting and analyzing HPC metrics. Starting in version 9.5.0 and prior to version 11.0.3, an attacker can remotely execute arbitrary system commands on the web server hosting Open XDMoD with the privileges of the web server process. This could allow an attacker to read or modify application data, alter system configuration, or disrupt service availability. All deployments of Open XDMoD versions 9.5.0 through 11.0.2 (inclusive) are impacted. This issue was reported privately on 2026-04-06, and at this time there is no evidence that this vulnerability has been exploited in the wild. The vulnerability was patched in Open XDMoD 11.0.3 on 2026-05-12. As a workaround, apply the patch manually.
-</code>
-
-- [morepoints/CVE-2026-45777](https://github.com/morepoints/CVE-2026-45777)
 
 ### CVE-2026-45806
 - [0xmrma/CVE-2026-45806](https://github.com/0xmrma/CVE-2026-45806)
@@ -4261,7 +4268,11 @@
 ### CVE-2026-50980
 - [bugresearch/CVE-2026-50980](https://github.com/bugresearch/CVE-2026-50980)
 
-### CVE-2026-51119
+### CVE-2026-51119 (2026-07-10)
+
+<code>An issue in Invixium IXM WEB v.2.3.85.25 allows an attacker to escalate privileges via the /SystemUsers/CreateAppUser components
+</code>
+
 - [A17-ba/CVE-2026-51119](https://github.com/A17-ba/CVE-2026-51119)
 
 ### CVE-2026-51788
@@ -5881,6 +5892,7 @@
 - [jesusdominguez87/CVE-2025-5548](https://github.com/jesusdominguez87/CVE-2025-5548)
 - [greycat-amc/CVE-2025-5548](https://github.com/greycat-amc/CVE-2025-5548)
 - [CryptoMachio/CVE-2025-5548](https://github.com/CryptoMachio/CVE-2025-5548)
+- [sudoand3rs0n/CVE-2025-5548](https://github.com/sudoand3rs0n/CVE-2025-5548)
 
 ### CVE-2025-5640 (2025-06-05)
 
@@ -6862,6 +6874,7 @@
 - [rxerium/CVE-2025-10035](https://github.com/rxerium/CVE-2025-10035)
 - [ThemeHackers/CVE-2025-10035](https://github.com/ThemeHackers/CVE-2025-10035)
 - [orange0Mint/CVE-2025-10035_GoAnywhere](https://github.com/orange0Mint/CVE-2025-10035_GoAnywhere)
+- [sentinel-aidefense/CVE-2025-10035](https://github.com/sentinel-aidefense/CVE-2025-10035)
 
 ### CVE-2025-10042 (2025-09-17)
 
@@ -14400,6 +14413,7 @@
 - [lil0xplorer/CVE-2025-60787_PoC](https://github.com/lil0xplorer/CVE-2025-60787_PoC)
 - [d3vn0mi/CVE-2025-60787-POC](https://github.com/d3vn0mi/CVE-2025-60787-POC)
 - [agent-skywalker/CVE-2025-60787](https://github.com/agent-skywalker/CVE-2025-60787)
+- [ozcanpng/CVE-2025-60787](https://github.com/ozcanpng/CVE-2025-60787)
 
 ### CVE-2025-60852 (2025-10-23)
 
@@ -14435,7 +14449,7 @@
 </code>
 
 - [pollotherunner/CVE-2025-61155](https://github.com/pollotherunner/CVE-2025-61155)
-- [sys0xFF/CVE-2025-61155](https://github.com/sys0xFF/CVE-2025-61155)
+- [sys0xff/CVE-2025-61155](https://github.com/sys0xff/CVE-2025-61155)
 
 ### CVE-2025-61183 (2025-10-08)
 
@@ -16566,7 +16580,7 @@
 <code>The issue was addressed with improved memory handling. This issue is fixed in iOS 17.4 and iPadOS 17.4, macOS Sonoma 14.4, tvOS 17.4, watchOS 10.4. An app may be able to execute arbitrary code out of its sandbox or with certain elevated privileges.
 </code>
 
-- [aliyabuz25/CVE-2024-0258-Research](https://github.com/aliyabuz25/CVE-2024-0258-Research)
+- [aliyabuz25/CVE-2024-0258](https://github.com/aliyabuz25/CVE-2024-0258)
 
 ### CVE-2024-0305 (2024-01-08)
 
@@ -17288,7 +17302,6 @@
 - [vesjolyjd/Kaspersky_CVE-2024-3094](https://github.com/vesjolyjd/Kaspersky_CVE-2024-3094)
 - [stevehenderson/lab_xz_backdoor](https://github.com/stevehenderson/lab_xz_backdoor)
 - [nnatsopoulos/xz-backdoor-research](https://github.com/nnatsopoulos/xz-backdoor-research)
-- [Bryn018/Semantic-Backdoor-Detector](https://github.com/Bryn018/Semantic-Backdoor-Detector)
 
 ### CVE-2024-3105 (2024-06-15)
 
@@ -25487,6 +25500,7 @@
 - [deancooreman/CVE-2024-47176](https://github.com/deancooreman/CVE-2024-47176)
 - [jimi2x/dirtycups](https://github.com/jimi2x/dirtycups)
 - [Rhyru9/CUPS-CVE-2024-47176](https://github.com/Rhyru9/CUPS-CVE-2024-47176)
+- [Stickxx00/Cups-RCE-Exploit](https://github.com/Stickxx00/Cups-RCE-Exploit)
 
 ### CVE-2024-47177
 - [referefref/cupspot-2024-47177](https://github.com/referefref/cupspot-2024-47177)
@@ -34343,6 +34357,7 @@
 - [acesoyeo/CVE-2023-41892](https://github.com/acesoyeo/CVE-2023-41892)
 - [CERTologists/HTTP-Request-for-PHP-object-injection-attack-on-CVE-2023-41892](https://github.com/CERTologists/HTTP-Request-for-PHP-object-injection-attack-on-CVE-2023-41892)
 - [user01-1/CVE-2023-41892_poc](https://github.com/user01-1/CVE-2023-41892_poc)
+- [lyccyc/CVE-2023-41892_PoC](https://github.com/lyccyc/CVE-2023-41892_PoC)
 
 ### CVE-2023-41991 (2023-09-21)
 
@@ -34491,7 +34506,6 @@
 - [becrevex/CVE-2023-42793](https://github.com/becrevex/CVE-2023-42793)
 - [jakehomb/cve-2023-42793](https://github.com/jakehomb/cve-2023-42793)
 - [syaifulandy/Nuclei-Template-CVE-2023-42793.yaml](https://github.com/syaifulandy/Nuclei-Template-CVE-2023-42793.yaml)
-- [syorik/CVE-2023-42793](https://github.com/syorik/CVE-2023-42793)
 - [cxdxnt/CVE-2023-42793](https://github.com/cxdxnt/CVE-2023-42793)
 - [DDestinys/CVE-2023-42793](https://github.com/DDestinys/CVE-2023-42793)
 
@@ -45089,6 +45103,7 @@
 - [rusakalimantan/PwnKit-CVE-2021-4034](https://github.com/rusakalimantan/PwnKit-CVE-2021-4034)
 - [jayhutajulu1/PwnKit-CVE-2021-4034](https://github.com/jayhutajulu1/PwnKit-CVE-2021-4034)
 - [Leemyunglyul/cve-2021-4034-mock](https://github.com/Leemyunglyul/cve-2021-4034-mock)
+- [mac3d0/CVE-2021-4034-pwnkit](https://github.com/mac3d0/CVE-2021-4034-pwnkit)
 - [ropydev/CVE-2021-4034-PwnKit](https://github.com/ropydev/CVE-2021-4034-PwnKit)
 - [krleejihyeong/WHS4_CVE-2021-4034](https://github.com/krleejihyeong/WHS4_CVE-2021-4034)
 
@@ -46789,6 +46804,13 @@
 </code>
 
 - [uthrasri/CVE-2021-28165](https://github.com/uthrasri/CVE-2021-28165)
+
+### CVE-2021-28235 (2023-04-04)
+
+<code>Authentication vulnerability found in Etcd-io v.3.4.10 allows remote attackers to escalate privileges via the debug function.
+</code>
+
+- [h3ck13r/CVE-2021-28235](https://github.com/h3ck13r/CVE-2021-28235)
 
 ### CVE-2021-28310 (2021-04-13)
 
@@ -48548,7 +48570,6 @@
 - [lisinan988/CVE-2021-40444-exp](https://github.com/lisinan988/CVE-2021-40444-exp)
 - [34zY/Microsoft-Office-Word-MSHTML-Remote-Code-Execution-Exploit](https://github.com/34zY/Microsoft-Office-Word-MSHTML-Remote-Code-Execution-Exploit)
 - [MRacumen/CVE-2021-40444](https://github.com/MRacumen/CVE-2021-40444)
-- [RedLeavesChilde/CVE-2021-40444](https://github.com/RedLeavesChilde/CVE-2021-40444)
 - [nvchungkma/CVE-2021-40444-Microsoft-Office-Word-Remote-Code-Execution-](https://github.com/nvchungkma/CVE-2021-40444-Microsoft-Office-Word-Remote-Code-Execution-)
 - [hqdat809/CVE-2021-40444](https://github.com/hqdat809/CVE-2021-40444)
 - [basim-ahmad/Follina-CVE-and-CVE-2021-40444](https://github.com/basim-ahmad/Follina-CVE-and-CVE-2021-40444)
@@ -50072,7 +50093,6 @@
 - [intel-xeon/CVE-2021-44228---detection-with-PowerShell](https://github.com/intel-xeon/CVE-2021-44228---detection-with-PowerShell)
 - [chandru-gunasekaran/log4j-fix-CVE-2021-44228](https://github.com/chandru-gunasekaran/log4j-fix-CVE-2021-44228)
 - [snapattack/damn-vulnerable-log4j-app](https://github.com/snapattack/damn-vulnerable-log4j-app)
-- [sassoftware/loguccino](https://github.com/sassoftware/loguccino)
 - [xx-zhang/apache-log4j2-CVE-2021-44228](https://github.com/xx-zhang/apache-log4j2-CVE-2021-44228)
 - [r00thunter/Log4Shell-Scanner](https://github.com/r00thunter/Log4Shell-Scanner)
 - [mn-io/log4j-spring-vuln-poc](https://github.com/mn-io/log4j-spring-vuln-poc)
@@ -50086,6 +50106,7 @@
 - [badb33f/Apache-Log4j-POC](https://github.com/badb33f/Apache-Log4j-POC)
 - [TaroballzChen/CVE-2021-44228-log4jVulnScanner-metasploit](https://github.com/TaroballzChen/CVE-2021-44228-log4jVulnScanner-metasploit)
 - [lucab85/ansible-role-log4shell](https://github.com/lucab85/ansible-role-log4shell)
+- [briml3y/loguccino](https://github.com/briml3y/loguccino)
 - [grimch/log4j-CVE-2021-44228-workaround](https://github.com/grimch/log4j-CVE-2021-44228-workaround)
 - [cybersecurityworks553/log4j-shell-csw](https://github.com/cybersecurityworks553/log4j-shell-csw)
 - [Toolsec/log4j-scan](https://github.com/Toolsec/log4j-scan)
