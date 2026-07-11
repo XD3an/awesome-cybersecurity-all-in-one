@@ -952,6 +952,7 @@
 - [11romain/CVE-2026-9082](https://github.com/11romain/CVE-2026-9082)
 - [sourcecode347/CVE-2026-9082-Mass_Scanner](https://github.com/sourcecode347/CVE-2026-9082-Mass_Scanner)
 - [eliHiHo/portfolio-drupal-cve-2026-9082](https://github.com/eliHiHo/portfolio-drupal-cve-2026-9082)
+- [MW-HF/Drupal-CVE-2026-9082](https://github.com/MW-HF/Drupal-CVE-2026-9082)
 
 ### CVE-2026-9256 (2026-05-22)
 
@@ -1967,6 +1968,27 @@
 - [c0gnit00/CVE-2026-29000](https://github.com/c0gnit00/CVE-2026-29000)
 - [lucastran05/CVE-2026-29000](https://github.com/lucastran05/CVE-2026-29000)
 
+### CVE-2026-29114 (2026-06-10)
+
+<code>A vulnerability has been found in some Dahua products. An attacker\nmay obtain the device’s CA root certificate. If that CA is installed and\ntrusted on client systems, the attacker could issue fraudulent certificates\ntrusted by those clients and undermine the certificate trust chain.
+</code>
+
+- [CrimsonfiedOfficial/CVE-2026-29114](https://github.com/CrimsonfiedOfficial/CVE-2026-29114)
+
+### CVE-2026-29115 (2026-06-10)
+
+<code>A vulnerability has been found in some Dahua products could allow an authenticated remote attacker to send a specially crafted packet, triggering an exception that causes the system to reboot unexpectedly, resulting in a denial of service.
+</code>
+
+- [CrimsonfiedOfficial/CVE-2026-29115](https://github.com/CrimsonfiedOfficial/CVE-2026-29115)
+
+### CVE-2026-29116 (2026-06-10)
+
+<code>A vulnerability has been found in some Dahua products could\nallow an unauthenticated remote attacker to send a specially crafted packet,\ntriggering an exception that causes the system to reboot unexpectedly,\nresulting in a denial of service.
+</code>
+
+- [CrimsonfiedOfficial/CVE-2026-29116](https://github.com/CrimsonfiedOfficial/CVE-2026-29116)
+
 ### CVE-2026-29198 (2026-04-22)
 
 <code>In Rocket.Chat &lt;8.3.0, &lt;8.2.1, &lt;8.1.2, &lt;8.0.3, &lt;7.13.5, &lt;7.12.6, &lt;7.11.6, and &lt;7.10.9, a NoSQL injection vulnerability can lead to account takeover of the first user with a generated token when an OAuth app is configured.
@@ -2939,6 +2961,13 @@
 
 - [romain-deperne/CVE-2026-40864](https://github.com/romain-deperne/CVE-2026-40864)
 
+### CVE-2026-40887 (2026-04-21)
+
+<code>Vendure is an open-source headless commerce platform. Starting in version 1.7.4 and prior to versions 2.3.4, 3.5.7, and 3.6.2, an unauthenticated SQL injection vulnerability exists in the Vendure Shop API. A user-controlled query string parameter is interpolated directly into a raw SQL expression without parameterization or validation, allowing an attacker to execute arbitrary SQL against the database. This affects all supported database backends (PostgreSQL, MySQL/MariaDB, SQLite). The Admin API is also affected, though exploitation there requires authentication. Versions 2.3.4, 3.5.7, and 3.6.2 contain a patch. For those who are unable to upgrade immediately, Vendure has made a hotfix available that uses `RequestContextService.getLanguageCode` to validate the `languageCode` input at the boundary. This blocks injection payloads before they can reach any query. The hotfix replaces the existing `getLanguageCode` method in `packages/core/src/service/helpers/request-context/request-context.service.ts`. Invalid values are silently dropped and the channel's default language is used instead. The patched versions additionally convert the vulnerable SQL interpolation to a parameterized query as defense in depth.
+</code>
+
+- [thecodeb0ss/CVE-2026-40887](https://github.com/thecodeb0ss/CVE-2026-40887)
+
 ### CVE-2026-40897 (2026-04-24)
 
 <code>Math.js is an extensive math library for JavaScript and Node.js. From 13.1.1 to before 15.2.0, a vulnerability allowed executing arbitrary JavaScript via the expression parser of mathjs. You can be affected when you have an application where users can evaluate arbitrary expressions using the mathjs expression parser. This vulnerability is fixed in 15.2.0.
@@ -3301,6 +3330,12 @@
 - [attaattaatta/CVE-2026-43500](https://github.com/attaattaatta/CVE-2026-43500)
 - [vorkampfer/dirty_frag_mitigation](https://github.com/vorkampfer/dirty_frag_mitigation)
 
+### CVE-2026-43501 (2026-05-21)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nipv6: rpl: reserve mac_len headroom when recompressed SRH grows\n\nipv6_rpl_srh_rcv() decompresses an RFC 6554 Source Routing Header, swaps\nthe next segment into ipv6_hdr-&gt;daddr, recompresses, then pulls the old\nheader and pushes the new one plus the IPv6 header back.  The\nrecompressed header can be larger than the received one when the swap\nreduces the common-prefix length the segments share with daddr (CmprI=0,\nCmprE&gt;0, seg[0][0] != daddr[0] gives the maximum +8 bytes).\n\npskb_expand_head() was gated on segments_left == 0, so on earlier\nsegments the push consumed unchecked headroom.  Once skb_push() leaves\nfewer than skb-&gt;mac_len bytes in front of data,\nskb_mac_header_rebuild()'s call to:\n\n</code>
+
+- [Anyone202/cybermeowfia-termux](https://github.com/Anyone202/cybermeowfia-termux)
+
 ### CVE-2026-43503 (2026-05-23)
 
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nnet: skbuff: propagate shared-frag marker through frag-transfer helpers\n\nTwo frag-transfer helpers (__pskb_copy_fclone() and skb_shift()) fail\nto propagate the SKBFL_SHARED_FRAG bit in skb_shinfo()-&gt;flags when\nmoving frags from source to destination.  __pskb_copy_fclone() defers\nthe rest of the shinfo metadata to skb_copy_header() after copying\nfrag descriptors, but that helper only carries over gso_{size,segs,\ntype} and never touches skb_shinfo()-&gt;flags; skb_shift() moves frag\ndescriptors directly and leaves flags untouched.  As a result, the\ndestination skb keeps a reference to the same externally-owned or\npage-cache-backed pages while reporting skb_has_shared_frag() as\nfalse.\n\nThe mismatch is harmful in any in-place writer that uses\nskb_has_shared_frag() to decide whether shared pages must be detoured\nthrough skb_cow_data().  ESP input is one such writer (esp4.c,\nesp6.c), and a single nft 'dup to &lt;local&gt;' rule -- or any other\nnf_dup_ipv4() / xt_TEE caller -- is enough to land a pskb_copy()'d\nskb in esp_input() with the marker stripped, letting an unprivileged\nuser write into the page cache of a root-owned read-only file via\nauthencesn-ESN stray writes.\n\nSet SKBFL_SHARED_FRAG on the destination whenever frag descriptors\nwere actually moved from the source.  skb_copy() and skb_copy_expand()\nshare skb_copy_header() too but linearize all paged data into freshly\nallocated head storage and emerge with nr_frags == 0, so\nskb_has_shared_frag() returns false on its own; they need no change.\n\nThe same omission exists in skb_gro_receive() and skb_gro_receive_list().\nThe former moves the incoming skb's frag descriptors into the\naccumulator's last sub-skb via two paths (a direct frag-move loop and\nthe head_frag + memcpy path); the latter chains the incoming skb whole\nonto p's frag_list.  Downstream skb_segment() reads only\nskb_shinfo(p)-&gt;flags, and skb_segment_list() reuses each sub-skb's\nshinfo as the nskb -- both p and lp must carry the marker.\n\nThe same omission also exists in tcp_clone_payload(), which builds an\nMTU probe skb by moving frag descriptors from skbs on sk_write_queue\ninto a freshly allocated nskb.  The helper falls into the same family\nand warrants the same fix for consistency; no TCP TX-side in-place\nwriter is currently known to reach a user page through this gap, but\na future consumer depending on the marker would regress silently.\n\nThe same omission exists in skb_segment(): the per-iteration flag\nmerge takes only head_skb's flag, and the inner switch that rebinds\nfrag_skb to list_skb on head_skb-frags exhaustion does not fold the\nnew frag_skb's flag into nskb.  Fold frag_skb's flag at both sites\nso segments drawing frags from frag_list members carry the marker.
@@ -3608,6 +3643,7 @@
 
 - [0xBlackash/CVE-2026-46242](https://github.com/0xBlackash/CVE-2026-46242)
 - [SaithFranklinB/ScannerBadEpoll](https://github.com/SaithFranklinB/ScannerBadEpoll)
+- [Baba01hacker666/CVE-2026-46242](https://github.com/Baba01hacker666/CVE-2026-46242)
 
 ### CVE-2026-46243 (2026-06-01)
 
@@ -3657,6 +3693,7 @@
 - [g0thamRabb1t/CVE-2026-46331-pedit-COW-detection](https://github.com/g0thamRabb1t/CVE-2026-46331-pedit-COW-detection)
 - [V0IDNETWORK/CVE-2026-46331](https://github.com/V0IDNETWORK/CVE-2026-46331)
 - [aexdyhaxor/CVE-2026-46331](https://github.com/aexdyhaxor/CVE-2026-46331)
+- [yanxinwu946/CVE-2026-46331](https://github.com/yanxinwu946/CVE-2026-46331)
 
 ### CVE-2026-46333 (2026-05-15)
 
@@ -11319,6 +11356,13 @@
 </code>
 
 - [1Altruist/CVE-2025-46271-Reverse-Shell-PoC](https://github.com/1Altruist/CVE-2025-46271-Reverse-Shell-PoC)
+
+### CVE-2025-46285 (2025-12-12)
+
+<code>An integer overflow was addressed by adopting 64-bit timestamps. This issue is fixed in iOS 18.7.3 and iPadOS 18.7.3, iOS 26.2 and iPadOS 26.2, macOS Sequoia 15.7.3, macOS Sonoma 14.8.3, macOS Tahoe 26.2, tvOS 26.2, visionOS 26.2, watchOS 26.2. An app may be able to gain root privileges.
+</code>
+
+- [Yankeelucas/OpenSovix](https://github.com/Yankeelucas/OpenSovix)
 
 ### CVE-2025-46295 (2025-12-16)
 
@@ -19825,6 +19869,13 @@
 
 - [d0n601/CVE-2024-13869](https://github.com/d0n601/CVE-2024-13869)
 
+### CVE-2024-13985 (2025-08-27)
+
+<code>A command injection vulnerability in Dahua EIMS versions prior to 2240008 allows unauthenticated remote attackers to execute arbitrary system commands via the capture_handle.action interface. The flaw stems from improper input validation in the captureCommand parameter, which is processed without sanitization or authentication. By sending crafted HTTP requests, attackers can inject OS-level commands that are executed on the server, leading to full system compromise. Exploitation evidence was first observed by the Shadowserver Foundation on 2024-04-06 UTC.
+</code>
+
+- [CrimsonfiedOfficial/CVE-2024-13985](https://github.com/CrimsonfiedOfficial/CVE-2024-13985)
+
 ### CVE-2024-14027 (2026-03-09)
 
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nfs/xattr: missing fdput() in fremovexattr error path\n\nIn the Linux kernel, the fremovexattr() syscall calls fdget() to acquire a\nfile reference but returns early without calling fdput() when\nstrncpy_from_user() fails on the name argument. In multi-threaded processes\nwhere fdget() takes the slow path, this permanently leaks one\nfile reference per call, pinning the struct file and associated kernel\nobjects in memory. An unprivileged local user can exploit this to cause\nkernel memory exhaustion. The issue was inadvertently fixed by commit\na71874379ec8 (&quot;xattr: switch to CLASS(fd)&quot;).
@@ -21725,6 +21776,7 @@
 - [Ne0zer01/CVE-2024-27198_LAB](https://github.com/Ne0zer01/CVE-2024-27198_LAB)
 - [ptd200110/CVE-2024-27198-SOC-Lab](https://github.com/ptd200110/CVE-2024-27198-SOC-Lab)
 - [BilalAlshiekh912/Incident-Response-Report-TeamCity-Compromise-CVE-2024-27198-](https://github.com/BilalAlshiekh912/Incident-Response-Report-TeamCity-Compromise-CVE-2024-27198-)
+- [swimmmmy/CVE-2024-27198-teamcity-auth-bypass](https://github.com/swimmmmy/CVE-2024-27198-teamcity-auth-bypass)
 
 ### CVE-2024-27292 (2024-02-29)
 
@@ -24551,7 +24603,6 @@
 - [watchtowrlabs/Mitel-MiCollab-Auth-Bypass_CVE-2024-41713](https://github.com/watchtowrlabs/Mitel-MiCollab-Auth-Bypass_CVE-2024-41713)
 - [zxj-hub/CVE-2024-41713POC](https://github.com/zxj-hub/CVE-2024-41713POC)
 - [Sanandd/cve-2024-CVE-2024-41713](https://github.com/Sanandd/cve-2024-CVE-2024-41713)
-- [amanverma-wsu/CVE-2024-41713-Scan](https://github.com/amanverma-wsu/CVE-2024-41713-Scan)
 - [gunyakit/CVE-2024-41713-PoC-exploit](https://github.com/gunyakit/CVE-2024-41713-PoC-exploit)
 
 ### CVE-2024-41817 (2024-07-29)
@@ -26910,13 +26961,6 @@
 </code>
 
 - [Gumbraise/CVE-2024-54887-PoC](https://github.com/Gumbraise/CVE-2024-54887-PoC)
-
-### CVE-2024-54910 (2025-01-10)
-
-<code>Hasleo Backup Suite Free v4.9.4 and before is vulnerable to Insecure Permissions via the File recovery function.
-</code>
-
-- [KrakenEU/CVE-2024-54910](https://github.com/KrakenEU/CVE-2024-54910)
 
 ### CVE-2024-54916 (2025-02-11)
 
@@ -29354,6 +29398,7 @@
 <code>In preloader, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07856356 / ALPS07874388 (For MT6880 and MT6890 only); Issue ID: ALPS07856356 / ALPS07874388 (For MT6880 and MT6890 only).
 </code>
 
+- [kasnria001/pwnage24mtk](https://github.com/kasnria001/pwnage24mtk)
 - [wzy114514sb/pwnage24mtk](https://github.com/wzy114514sb/pwnage24mtk)
 
 ### CVE-2023-20860 (2023-03-27)
@@ -29918,7 +29963,6 @@
 <code>A template injection vulnerability on older versions of Confluence Data Center and Server allows an unauthenticated attacker to achieve RCE on an affected instance. Customers using an affected version must take immediate action.\n\nMost recent supported versions of Confluence Data Center and Server are not affected by this vulnerability as it was ultimately mitigated during regular version updates. However, Atlassian recommends that customers take care to install the latest version to protect their instances from non-critical vulnerabilities outlined in Atlassian’s January Security Bulletin.
 </code>
 
-- [Avento/CVE-2023-22527_Confluence_RCE](https://github.com/Avento/CVE-2023-22527_Confluence_RCE)
 - [thanhlam-attt/CVE-2023-22527](https://github.com/thanhlam-attt/CVE-2023-22527)
 - [Manh130902/CVE-2023-22527-POC](https://github.com/Manh130902/CVE-2023-22527-POC)
 - [Niuwoo/CVE-2023-22527](https://github.com/Niuwoo/CVE-2023-22527)
@@ -46526,8 +46570,8 @@
 - [yaoxiaoangry3/Flangvik](https://github.com/yaoxiaoangry3/Flangvik)
 - [thau0x01/poc_proxylogon](https://github.com/thau0x01/poc_proxylogon)
 - [1342486672/Flangvik](https://github.com/1342486672/Flangvik)
-- [TheDudeD6/ExchangeSmash](https://github.com/TheDudeD6/ExchangeSmash)
 - [kh4sh3i/ProxyLogon](https://github.com/kh4sh3i/ProxyLogon)
+- [wysssadda/ExchangeSmash](https://github.com/wysssadda/ExchangeSmash)
 - [ssrsec/Microsoft-Exchange-RCE](https://github.com/ssrsec/Microsoft-Exchange-RCE)
 - [glen-pearson/ProxyLogon-CVE-2021-26855](https://github.com/glen-pearson/ProxyLogon-CVE-2021-26855)
 - [ShyTangerine/cve-2021-26855](https://github.com/ShyTangerine/cve-2021-26855)
@@ -68147,6 +68191,7 @@
 - [maur0amaya/Escalamiento-de-Privilegios-usando-el-Kernel-Exploit-Dirty-Cow](https://github.com/maur0amaya/Escalamiento-de-Privilegios-usando-el-Kernel-Exploit-Dirty-Cow)
 - [rauljvc8/Exploit-Dirty-Cow](https://github.com/rauljvc8/Exploit-Dirty-Cow)
 - [GonzaBot/kernel-exploit-dirtycow](https://github.com/GonzaBot/kernel-exploit-dirtycow)
+- [endgtryna/lenovo-a1000g-mt8317-A412_01_09_130907-kernel-3.4.0-root-cve-2016-5195](https://github.com/endgtryna/lenovo-a1000g-mt8317-A412_01_09_130907-kernel-3.4.0-root-cve-2016-5195)
 
 ### CVE-2016-5345 (2018-01-23)
 
