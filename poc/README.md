@@ -1283,6 +1283,7 @@
 </code>
 
 - [0xBlackash/CVE-2026-20127](https://github.com/0xBlackash/CVE-2026-20127)
+- [anuththara2007-W/CVE-2026-20127-Exploit-Extension](https://github.com/anuththara2007-W/CVE-2026-20127-Exploit-Extension)
 
 ### CVE-2026-20131 (2026-03-04)
 
@@ -48491,13 +48492,6 @@
 </code>
 
 - [nidhihcl/frameworks_base_AOSP_10_r33_CVE-2021-39696](https://github.com/nidhihcl/frameworks_base_AOSP_10_r33_CVE-2021-39696)
-
-### CVE-2021-39706 (2022-03-16)
-
-<code>In onResume of CredentialStorage.java, there is a possible way to cleanup content of credentials storage due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12Android ID: A-200164168
-</code>
-
-- [Trinadh465/packages_apps_Settings_AOSP10_r33_CVE-2021-39706](https://github.com/Trinadh465/packages_apps_Settings_AOSP10_r33_CVE-2021-39706)
 
 ### CVE-2021-39863 (2021-09-29)
 
