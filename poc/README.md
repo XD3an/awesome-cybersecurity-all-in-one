@@ -45,7 +45,6 @@
 - [0xBlackash/CVE-2026-0257](https://github.com/0xBlackash/CVE-2026-0257)
 - [Mr-Robot-LP/CVE-2026-0257](https://github.com/Mr-Robot-LP/CVE-2026-0257)
 - [tushargurav28/CVE-2026-0257](https://github.com/tushargurav28/CVE-2026-0257)
-- [jenniferreire26/CVE-2026-0257](https://github.com/jenniferreire26/CVE-2026-0257)
 - [grayxploit/CVE-2026-0257](https://github.com/grayxploit/CVE-2026-0257)
 - [Ez4rd1x1/CVE-2026-0257](https://github.com/Ez4rd1x1/CVE-2026-0257)
 - [amnsecurity/CVE-2026-0257-GlobalProtect-Bypass](https://github.com/amnsecurity/CVE-2026-0257-GlobalProtect-Bypass)
@@ -301,6 +300,7 @@
 </code>
 
 - [BlackSnufkin/BYOVD](https://github.com/BlackSnufkin/BYOVD)
+- [BlackSnufkin/CredsHunter](https://github.com/BlackSnufkin/CredsHunter)
 
 ### CVE-2026-3629 (2026-03-21)
 
@@ -323,13 +323,6 @@
 
 - [rootdirective-sec/CVE-2026-3844-Lab](https://github.com/rootdirective-sec/CVE-2026-3844-Lab)
 - [Dhananjayasj/CVE-2026-3844-Breeze-Cache-WordPress-Plugin-Remote-Code-Execution](https://github.com/Dhananjayasj/CVE-2026-3844-Breeze-Cache-WordPress-Plugin-Remote-Code-Execution)
-
-### CVE-2026-3854 (2026-03-10)
-
-<code>An improper neutralization of special elements vulnerability was identified in GitHub Enterprise Server that allowed an attacker with push access to a repository to achieve remote code execution on the instance. During a git push operation, user-supplied push option values were not properly sanitized before being included in internal service headers. Because the internal header format used a delimiter character that could also appear in user input, an attacker could inject additional metadata fields through crafted push option values. This vulnerability was reported via the GitHub Bug Bounty program and has been fixed in GitHub Enterprise Server versions 3.14.25, 3.15.20, 3.16.16, 3.17.13, 3.18.7 and 3.19.4.
-</code>
-
-- [jenniferreire26/CVE-2026-3854](https://github.com/jenniferreire26/CVE-2026-3854)
 
 ### CVE-2026-3888 (2026-03-17)
 
@@ -469,6 +462,7 @@
 - [puj790201-lab/CVE-2026-5118](https://github.com/puj790201-lab/CVE-2026-5118)
 - [Jenderal92/CVE-2026-5118](https://github.com/Jenderal92/CVE-2026-5118)
 - [Yucaerin/CVE-2026-5118](https://github.com/Yucaerin/CVE-2026-5118)
+- [1beelze/CVE-2026-5118](https://github.com/1beelze/CVE-2026-5118)
 
 ### CVE-2026-5172 (2026-05-11)
 
@@ -651,6 +645,13 @@
 </code>
 
 - [jackalkarlos/EvilAhenk](https://github.com/jackalkarlos/EvilAhenk)
+
+### CVE-2026-6664 (2026-05-09)
+
+<code>An integer overflow in network packet parsing code in PgBouncer before 1.25.2 bypasses a boundary check and can lead to a crash. An unauthenticated remote attacker can crash PgBouncer with a malformed SCRAM authentication packet.
+</code>
+
+- [nicolasjulian/bouncer-overflow](https://github.com/nicolasjulian/bouncer-overflow)
 
 ### CVE-2026-6741 (2026-04-27)
 
@@ -1522,6 +1523,13 @@
 - [bakano98/cve-2026-23111-poc](https://github.com/bakano98/cve-2026-23111-poc)
 - [vrtlbob/Linux-Kernel-Vulnerabilities-CVE-2026-23111](https://github.com/vrtlbob/Linux-Kernel-Vulnerabilities-CVE-2026-23111)
 
+### CVE-2026-23415 (2026-04-02)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nfutex: Fix UaF between futex_key_to_node_opt() and vma_replace_policy()\n\nDuring futex_key_to_node_opt() execution, vma-&gt;vm_policy is read under\nspeculative mmap lock and RCU. Concurrently, mbind() may call\nvma_replace_policy() which frees the old mempolicy immediately via\nkmem_cache_free().\n\nThis creates a race where __futex_key_to_node() dereferences a freed\nmempolicy pointer, causing a use-after-free read of mpol-&gt;mode.\n\n[  151.412631] BUG: KASAN: slab-use-after-free in __futex_key_to_node (kernel/futex/core.c:349)\n[  151.414046] Read of size 2 at addr ffff888001c49634 by task e/87\n\n[  151.415969] Call Trace:\n\n[  151.416732]  __asan_load2 (mm/kasan/generic.c:271)\n[  151.416777]  __futex_key_to_node (kernel/futex/core.c:349)\n[  151.416822]  get_futex_key (kernel/futex/core.c:374 kernel/futex/core.c:386 kernel/futex/core.c:593)\n\nFix by adding rcu to __mpol_put().
+</code>
+
+- [addman2/uaf-exploit-cve-2026-23415](https://github.com/addman2/uaf-exploit-cve-2026-23415)
+
 ### CVE-2026-23416 (2026-04-02)
 
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nmm/mseal: update VMA end correctly on merge\n\nPreviously we stored the end of the current VMA in curr_end, and then upon\niterating to the next VMA updated curr_start to curr_end to advance to the\nnext VMA.\n\nHowever, this doesn't take into account the fact that a VMA might be\nupdated due to a merge by vma_modify_flags(), which can result in curr_end\nbeing stale and thus, upon setting curr_start to curr_end, ending up with\nan incorrect curr_start on the next iteration.\n\nResolve the issue by setting curr_end to vma-&gt;vm_end unconditionally to\nensure this value remains updated should this occur.\n\nWhile we're here, eliminate this entire class of bug by simply setting\nconst curr_[start/end] to be clamped to the input range and VMAs, which\nalso happens to simplify the logic.
@@ -1535,7 +1543,6 @@
 </code>
 
 - [pduggusa/redis-cve-2026-23479-check](https://github.com/pduggusa/redis-cve-2026-23479-check)
-- [jenniferreire26/CVE-2026-23479](https://github.com/jenniferreire26/CVE-2026-23479)
 - [v1c0mmrt/redis-cve-2026-23479-scanner](https://github.com/v1c0mmrt/redis-cve-2026-23479-scanner)
 
 ### CVE-2026-23520 (2026-01-15)
@@ -1881,6 +1888,13 @@
 
 - [xxconi/CVE-2026-27384](https://github.com/xxconi/CVE-2026-27384)
 
+### CVE-2026-27495 (2026-02-25)
+
+<code>n8n is an open source workflow automation platform. Prior to versions 2.10.1, 2.9.3, and 1.123.22, an authenticated user with permission to create or modify workflows could exploit a vulnerability in the JavaScript Task Runner sandbox to execute arbitrary code outside the sandbox boundary. On instances using internal Task Runners (default runner mode), this could result in full compromise of the n8n host. On instances using external Task Runners, the attacker might gain access to or impact other task executed on the Task Runner. Task Runners must be enabled using `N8N_RUNNERS_ENABLED=true`. The issue has been fixed in n8n versions 2.10.1, 2.9.3, and 1.123.22. Users should upgrade to one of these versions or later to remediate the vulnerability. If upgrading is not immediately possible, administrators should consider the following temporary mitigations. Limit workflow creation and editing permissions to fully trusted users only, and/or use external runner mode (`N8N_RUNNERS_MODE=external`) to limit the blast radius. These workarounds do not fully remediate the risk and should only be used as short-term mitigation measures.
+</code>
+
+- [DexSemon/CVE-2026-27495](https://github.com/DexSemon/CVE-2026-27495)
+
 ### CVE-2026-27626 (2026-02-25)
 
 <code>OliveTin gives access to predefined shell commands from a web interface. In versions up to and including 3000.10.0, OliveTin's shell mode safety check (`checkShellArgumentSafety`) blocks several dangerous argument types but not `password`. A user supplying a `password`-typed argument can inject shell metacharacters that execute arbitrary OS commands. A second independent vector allows unauthenticated RCE via webhook-extracted JSON values that skip type safety checks entirely before reaching `sh -c`. When exploiting vector 1, any authenticated user (registration enabled by default, `authType: none` by default) can execute arbitrary OS commands on the OliveTin host with the permissions of the OliveTin process. When exploiting vector 2, an unauthenticated attacker can achieve the same if the instance receives webhooks from external sources, which is a primary OliveTin use case. When an attacker exploits both vectors, this results in unauthenticated RCE on any OliveTin instance using Shell mode with webhook-triggered actions. As of time of publication, a patched version is not available.
@@ -1933,7 +1947,6 @@
 <code>SolarWinds Serv-U is susceptible to specially crafted POST requests that crash the Serv-U service without authentication using Content-Encoding: deflate. Mitigation steps are provided to secure customer environments in the SolarWinds Trust Center if you are unable to deploy the update
 </code>
 
-- [jenniferreire26/CVE-2026-28318](https://github.com/jenniferreire26/CVE-2026-28318)
 - [EaEa0001/servu-cve-2026-28318-poc](https://github.com/EaEa0001/servu-cve-2026-28318-poc)
 - [BishopFox/CVE-2026-28318-check](https://github.com/BishopFox/CVE-2026-28318-check)
 
@@ -2135,12 +2148,14 @@
 - [ryan2929/CVE-2026-31431](https://github.com/ryan2929/CVE-2026-31431)
 - [st4rburn/RootRemover](https://github.com/st4rburn/RootRemover)
 - [adampielak/CVE-2026-31431_SCA_WAZUH](https://github.com/adampielak/CVE-2026-31431_SCA_WAZUH)
+- [yandex-cloud-examples/yc-mk8s-copy-fail-mitigation](https://github.com/yandex-cloud-examples/yc-mk8s-copy-fail-mitigation)
 - [JuanBindez/CVE-2026-31431](https://github.com/JuanBindez/CVE-2026-31431)
 - [selectel/mks-copy-fail-mitigation](https://github.com/selectel/mks-copy-fail-mitigation)
 - [deckhouse/d8-copy-fail-mitigation](https://github.com/deckhouse/d8-copy-fail-mitigation)
 - [HulnotHutu/CVE-2026-31431](https://github.com/HulnotHutu/CVE-2026-31431)
 - [K3ysTr0K3R/CVE-2026-31431-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2026-31431-EXPLOIT)
 - [bootsareme/copyfail-deconstructed](https://github.com/bootsareme/copyfail-deconstructed)
+- [Smarttfoxx/copyfail](https://github.com/Smarttfoxx/copyfail)
 - [monobrau/copyfailscan](https://github.com/monobrau/copyfailscan)
 - [suominen/CVE-2026-31431](https://github.com/suominen/CVE-2026-31431)
 - [aexdyhaxor/CVE-2026-31431-copy-fail](https://github.com/aexdyhaxor/CVE-2026-31431-copy-fail)
@@ -2149,15 +2164,20 @@
 - [ochebotar/copy-fail-CVE-2026-31431-detection-probe](https://github.com/ochebotar/copy-fail-CVE-2026-31431-detection-probe)
 - [Liverwortenuresis371/copyfail-rs](https://github.com/Liverwortenuresis371/copyfail-rs)
 - [Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail](https://github.com/Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail)
+- [philfry/cve-2026-31431-ftrace](https://github.com/philfry/cve-2026-31431-ftrace)
+- [p401a-ops/Copy-Fail](https://github.com/p401a-ops/Copy-Fail)
 - [infiniroot/ansible-mitigate-copyfail-dirtyfrag](https://github.com/infiniroot/ansible-mitigate-copyfail-dirtyfrag)
 - [KaraZajac/DIRTYFAIL](https://github.com/KaraZajac/DIRTYFAIL)
 - [krisiasty/vcheck](https://github.com/krisiasty/vcheck)
 - [Hunt-Benito/copy-fail-cve-2026-31431-linux-kernel-page-cache-lpe](https://github.com/Hunt-Benito/copy-fail-cve-2026-31431-linux-kernel-page-cache-lpe)
 - [Helios973/CVE-2026-31431_exp.c](https://github.com/Helios973/CVE-2026-31431_exp.c)
+- [haydenjames/CVE-2026-31431-check](https://github.com/haydenjames/CVE-2026-31431-check)
 - [vorkampfer/copyfail2_electric_boogaloo_fix](https://github.com/vorkampfer/copyfail2_electric_boogaloo_fix)
 - [Lutfifakee-Project/CVE-2026-31431](https://github.com/Lutfifakee-Project/CVE-2026-31431)
 - [mauricioportela/CVE-2026-31431-Analysis](https://github.com/mauricioportela/CVE-2026-31431-Analysis)
 - [gbonacini/CVE-2026-31431](https://github.com/gbonacini/CVE-2026-31431)
+- [studiogangster/CVE-2026-31431](https://github.com/studiogangster/CVE-2026-31431)
+- [hyz-is/copyfail-fix](https://github.com/hyz-is/copyfail-fix)
 - [sh4den/CVE-2026-31431-copyfail-aarch64](https://github.com/sh4den/CVE-2026-31431-copyfail-aarch64)
 - [DroPZsec/SplicePrivillegeEscalationFIX](https://github.com/DroPZsec/SplicePrivillegeEscalationFIX)
 - [Koshmare-Blossom/Copyfail-sh](https://github.com/Koshmare-Blossom/Copyfail-sh)
@@ -2352,7 +2372,6 @@
 
 - [rahultb-sec/CVE-2026-33829-Writeup](https://github.com/rahultb-sec/CVE-2026-33829-Writeup)
 - [seguridadentrerios/CVE-2026-33829](https://github.com/seguridadentrerios/CVE-2026-33829)
-- [jenniferreire26/CVE-2026-33829](https://github.com/jenniferreire26/CVE-2026-33829)
 
 ### CVE-2026-34038 (2026-07-06)
 
@@ -2367,6 +2386,13 @@
 </code>
 
 - [m0nk3ygod/CVE-2026-34040-PoC](https://github.com/m0nk3ygod/CVE-2026-34040-PoC)
+
+### CVE-2026-34048 (2026-07-07)
+
+<code>Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, terminal websocket bootstrap routes only check authentication and do not enforce terminal authorization, allowing a low-privileged team member to connect to terminal routes and execute commands on team servers. This issue is fixed in version 4.0.0-beta.471.
+</code>
+
+- [0xmrma/CVE-2026-34048](https://github.com/0xmrma/CVE-2026-34048)
 
 ### CVE-2026-34156 (2026-03-31)
 
@@ -2548,7 +2574,6 @@
 </code>
 
 - [HORKimhab/CVE-2026-35616](https://github.com/HORKimhab/CVE-2026-35616)
-- [jenniferreire26/CVE-2026-35616](https://github.com/jenniferreire26/CVE-2026-35616)
 
 ### CVE-2026-35904 (2026-06-04)
 
@@ -2738,6 +2763,7 @@
 - [diamorphine666/CVE-2026-38526-Exploit](https://github.com/diamorphine666/CVE-2026-38526-Exploit)
 - [b0nyo/CVE-2026-38526](https://github.com/b0nyo/CVE-2026-38526)
 - [Resolvdd/CVE-2026-38526-PoC-htb-nexus](https://github.com/Resolvdd/CVE-2026-38526-PoC-htb-nexus)
+- [Qurclinc/CVE-2026-38526](https://github.com/Qurclinc/CVE-2026-38526)
 
 ### CVE-2026-38698
 - [vital-information-resource-under-siege/CVE-2026-38698-and-CVE-2026-38699](https://github.com/vital-information-resource-under-siege/CVE-2026-38698-and-CVE-2026-38699)
@@ -2884,7 +2910,6 @@
 - [0xdeadroot/CVE-2026-39987-marimo-rce](https://github.com/0xdeadroot/CVE-2026-39987-marimo-rce)
 - [M3PH1569/CVE-2026-39987-POC](https://github.com/M3PH1569/CVE-2026-39987-POC)
 - [HORKimhab/CVE-2026-39987](https://github.com/HORKimhab/CVE-2026-39987)
-- [jenniferreire26/CVE-2026-39987](https://github.com/jenniferreire26/CVE-2026-39987)
 
 ### CVE-2026-40022 (2026-04-27)
 
@@ -3037,7 +3062,6 @@
 - [hnytgl/CVE-2026-41089-Detector](https://github.com/hnytgl/CVE-2026-41089-Detector)
 - [hnytgl/CVE-2026-41089](https://github.com/hnytgl/CVE-2026-41089)
 - [ADScanPro/CVE-2026-41089-LongLogon](https://github.com/ADScanPro/CVE-2026-41089-LongLogon)
-- [jenniferreire26/CVE-2026-41089](https://github.com/jenniferreire26/CVE-2026-41089)
 
 ### CVE-2026-41091 (2026-05-20)
 
@@ -3307,7 +3331,6 @@
 - [strivepan/Nginx_cve-2026-42945-scanner-gui](https://github.com/strivepan/Nginx_cve-2026-42945-scanner-gui)
 - [lowilol/CVE-2026-42945-NGINX-Rift-Check-Script](https://github.com/lowilol/CVE-2026-42945-NGINX-Rift-Check-Script)
 - [simota/nginx-rift-scanner](https://github.com/simota/nginx-rift-scanner)
-- [jenniferreire26/CVE-2026-42945](https://github.com/jenniferreire26/CVE-2026-42945)
 - [LiaoZiqi-GZFLS/CVE-2026-42945](https://github.com/LiaoZiqi-GZFLS/CVE-2026-42945)
 - [sec-sys/CVE-2026-42945-Reverse-Shell-POC](https://github.com/sec-sys/CVE-2026-42945-Reverse-Shell-POC)
 - [hulina9900-boop/DIY-CVE-2026-42945-POC](https://github.com/hulina9900-boop/DIY-CVE-2026-42945-POC)
@@ -3335,6 +3358,7 @@
 
 - [mym0us3r/DIRTY-FRAG-Detection-with-Wazuh-4.14.4](https://github.com/mym0us3r/DIRTY-FRAG-Detection-with-Wazuh-4.14.4)
 - [suominen/CVE-2026-43284](https://github.com/suominen/CVE-2026-43284)
+- [haydenjames/dirty-frag-check](https://github.com/haydenjames/dirty-frag-check)
 - [linnemanlabs/dirtyfrag-arm64](https://github.com/linnemanlabs/dirtyfrag-arm64)
 - [FrosterDL/CVE-2026-43284](https://github.com/FrosterDL/CVE-2026-43284)
 - [ChernStepanov/DirtyFrag-for-dummies](https://github.com/ChernStepanov/DirtyFrag-for-dummies)
@@ -3376,6 +3400,9 @@
 - [x-spy/CVE-2026-43499-popsicle](https://github.com/x-spy/CVE-2026-43499-popsicle)
 - [dmcdtc/openvz-cve-patch-2026](https://github.com/dmcdtc/openvz-cve-patch-2026)
 - [Linuxoid-cn/Mi8E5-Unlocker-by-CVE-2026-43499](https://github.com/Linuxoid-cn/Mi8E5-Unlocker-by-CVE-2026-43499)
+- [joehquak/Mi8E5-Unlocker-by-CVE-2026-43499](https://github.com/joehquak/Mi8E5-Unlocker-by-CVE-2026-43499)
+- [Yakayna/SpringPeace](https://github.com/Yakayna/SpringPeace)
+- [Thiasap/oppo-pgem10-ghostlock](https://github.com/Thiasap/oppo-pgem10-ghostlock)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -3454,6 +3481,13 @@
 </code>
 
 - [oscerd/CVE-2026-43866](https://github.com/oscerd/CVE-2026-43866)
+
+### CVE-2026-43867 (2026-07-06)
+
+<code>Deserialization of Untrusted Data vulnerability in Apache Camel PQC Component.\n\nThe camel-pqc component persists post-quantum key metadata (KeyMetadata) through pluggable KeyLifecycleManager implementations. AwsSecretsManagerKeyLifecycleManager.deserializeMetadata() reads that metadata back from the configured AWS Secrets Manager secret by Base64-decoding the stored value and deserializing it with a raw java.io.ObjectInputStream.readObject() and no ObjectInputFilter or class allow-list; the cast to KeyMetadata happens only after readObject() returns, so any readObject() side effects in a crafted object run before the type check. A principal who can write to the AWS Secrets Manager secret that holds this metadata (requiring secretsmanager:PutSecretValue on that secret) could store a crafted serialized object that is deserialized during normal key-lifecycle operations, potentially leading to code execution in the context of the application that manages the keys. This is the same underlying defect, in the same code path and remediated by the same fix, as CVE-2026-46590, which was reported independently and additionally covers the HashiCorp Vault and file-based sibling managers; both are incomplete-remediation follow-ons to CVE-2026-40048 (CAMEL-23200).\nThis issue affects Apache Camel: from 4.18.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.18.x LTS releases stream, then they are suggested to upgrade to 4.18.3. For deployments that cannot upgrade immediately, restrict write access to the AWS Secrets Manager secret that holds the camel-pqc key metadata so that only the application’s own identity holds secretsmanager:PutSecretValue on it (least-privilege IAM), and keep the PQC key material in a secret separate from any data that less-trusted principals can write.
+</code>
+
+- [oscerd/CVE-2026-43867](https://github.com/oscerd/CVE-2026-43867)
 
 ### CVE-2026-44166 (2026-05-12)
 
@@ -3684,7 +3718,6 @@
 
 - [HORKimhab/CVE-2026-45659](https://github.com/HORKimhab/CVE-2026-45659)
 - [mistbarbarianspot/CVE-2026-45659-SharePoint-RCE](https://github.com/mistbarbarianspot/CVE-2026-45659-SharePoint-RCE)
-- [jenniferreire26/CVE-2026-45659](https://github.com/jenniferreire26/CVE-2026-45659)
 - [amnsecurity/CVE-2026-45659-SharePoint-RCE](https://github.com/amnsecurity/CVE-2026-45659-SharePoint-RCE)
 
 ### CVE-2026-45806
@@ -3810,6 +3843,13 @@
 </code>
 
 - [shreyas-challa/CVE-2026-46395-haxcms-hmac-key-leak](https://github.com/shreyas-challa/CVE-2026-46395-haxcms-hmac-key-leak)
+
+### CVE-2026-46453 (2026-07-06)
+
+<code>Improper Input Validation, Authorization Bypass Through User-Controlled Key vulnerability in Apache Camel ElasticSearch Rest Client.\n\nThe camel-elasticsearch-rest-client component reads several Exchange headers to control its behaviour - SEARCH_QUERY (an advanced query body), OPERATION (which Elasticsearch operation to run), INDEX_NAME, INDEX_SETTINGS and ID. The string values of these header constants, defined in ElasticSearchRestClientConstant, are plain unprefixed names ('SEARCH_QUERY', 'OPERATION', 'INDEX_NAME', 'INDEX_SETTINGS', 'ID') rather than the 'Camel'-prefixed names used by every other Camel component (for example CamelSqlQuery, CamelMongoDbCriteria, CamelCqlQuery). Camel's inbound HTTP header filter, HttpHeaderFilterStrategy, blocks only header names that begin with 'Camel' or 'camel'. Because the Elasticsearch header names do not carry that prefix, they pass through the inbound filter unchanged. When a Camel route exposes an HTTP entry point (for example platform-http) in front of an elasticsearch-rest-client producer, an untrusted HTTP client can set these headers directly on its request and override the query and operation that the route author configured: reading every document in the index (SEARCH_QUERY with a match_all query), deleting documents (OPERATION set to Delete together with ID), or exfiltrating selected fields. No credentials are required and the producer reads the headers unconditionally.\nThis issue affects Apache Camel: from 4.3.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. The fix renames the camel-elasticsearch-rest-client Exchange header constant string values (ID, SEARCH_QUERY, INDEX_SETTINGS, INDEX_NAME, OPERATION) to carry the Camel prefix (CamelElasticsearchId, CamelElasticsearchSearchQuery, CamelElasticsearchIndexSettings, CamelElasticsearchIndexName, CamelElasticsearchOperation) so that they are blocked by the inbound HttpHeaderFilterStrategy; the Java field names are unchanged. For deployments that cannot upgrade immediately, strip the affected headers from untrusted inbound messages before they reach the producer (for example removeHeader('SEARCH_QUERY'), removeHeader('OPERATION'), removeHeader('INDEX_NAME'), removeHeader('INDEX_SETTINGS') and removeHeader('ID') in front of the elasticsearch-rest-client endpoint), or apply a custom HeaderFilterStrategy that blocks these names.
+</code>
+
+- [oscerd/CVE-2026-46453](https://github.com/oscerd/CVE-2026-46453)
 
 ### CVE-2026-46490 (2026-06-08)
 
@@ -3983,13 +4023,6 @@
 </code>
 
 - [J4ck3LSyN-Gen2/CVE-2026-48558](https://github.com/J4ck3LSyN-Gen2/CVE-2026-48558)
-
-### CVE-2026-48595 (2026-06-02)
-
-<code>Improper Handling of Case Sensitivity vulnerability in elixir-tesla tesla allows credential leakage to a third-party origin on cross-origin redirects.\n\nTesla.Middleware.FollowRedirects strips security-sensitive headers on cross-origin redirects using a case-sensitive string comparison against a lowercase filter list (@filter_headers [&quot;authorization&quot;, &quot;host&quot;]). HTTP header names are case-insensitive per RFC 7230, but Tesla preserves header keys verbatim as supplied by the caller without normalizing case. A header set as {&quot;Authorization&quot;, &quot;Bearer …&quot;} (the RFC 7235 canonical casing used by virtually all HTTP libraries and documentation) does not match the lowercase filter entry and is forwarded to the redirect destination. An attacker who can control or influence a Location: response seen by the client (via their own endpoint, a redirect-open upstream, or a compromised origin) receives the bearer token or other Authorization material on the cross-origin request.\n\nThis issue affects tesla: from 1.4.0 before 1.18.3.
-</code>
-
-- [jenniferreire26/CVE-2026-48595](https://github.com/jenniferreire26/CVE-2026-48595)
 
 ### CVE-2026-48598 (2026-06-02)
 
@@ -4396,6 +4429,13 @@
 ### CVE-2026-52100
 - [nk7667/-linx-server-vulnerability-report](https://github.com/nk7667/-linx-server-vulnerability-report)
 
+### CVE-2026-52200 (2026-07-08)
+
+<code>An issue in Generic OEM UZ801_v2.1 4G LTE Router V3.4.3 allows a remote attacker to execute arbitrary code via the /ajax web management API endpoint in MifiService.apk
+</code>
+
+- [lamaper/CVE-2026-52200](https://github.com/lamaper/CVE-2026-52200)
+
 ### CVE-2026-52217
 - [teteco/CVE-2026-52217-VTEX-Checkout-CrossTenant-IDOR](https://github.com/teteco/CVE-2026-52217-VTEX-Checkout-CrossTenant-IDOR)
 
@@ -4507,6 +4547,13 @@
 </code>
 
 - [webshellseo8/CVE-2026-53787-POC-](https://github.com/webshellseo8/CVE-2026-53787-POC-)
+
+### CVE-2026-53805 (2026-06-17)
+
+<code>NVIDIA Spatial Intelligence Lab's (SIL) GEN3C contains an unauthenticated remote code execution vulnerability in the inference API server where the /request-inference and /seed-model endpoints deserialize raw HTTP request bodies using Python's pickle.loads() without authentication or input validation. Attackers can supply a crafted payload containing a __reduce__ gadget to the inference API port to achieve remote code execution as the inference process.
+</code>
+
+- [HORKimhab/CVE-2026-53805](https://github.com/HORKimhab/CVE-2026-53805)
 
 ### CVE-2026-54088 (2026-06-25)
 
@@ -4646,6 +4693,9 @@
 
 - [thecodeb0ss/CVE-2026-55488](https://github.com/thecodeb0ss/CVE-2026-55488)
 
+### CVE-2026-55494
+- [4qu4r1um/tugtainer-1.30.2-RCE](https://github.com/4qu4r1um/tugtainer-1.30.2-RCE)
+
 ### CVE-2026-55584
 - [mirackayikci/CVE-2026-55584](https://github.com/mirackayikci/CVE-2026-55584)
 
@@ -4693,6 +4743,13 @@
 - [shinthink/pbck-exploit](https://github.com/shinthink/pbck-exploit)
 - [Jenderal92/CVE-2026-56290](https://github.com/Jenderal92/CVE-2026-56290)
 
+### CVE-2026-56291 (2026-07-09)
+
+<code>The Joomla extension Balbooa Forms is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.
+</code>
+
+- [shinthink/CVE-2026-56291](https://github.com/shinthink/CVE-2026-56291)
+
 ### CVE-2026-56423 (2026-06-22)
 
 <code>MISP Core contained broken access-control checks in the bulk deletion flows for Event Reports and Sharing Groups. The affected deleteSelection handlers authorized deletion using broad role-level permissions instead of validating authorization for each selected object.\n\nFor Event Reports, EventReportsController::deleteSelection relied on the global perm_add capability rather than a per-report ownership/authorization check. As a result, a contributor-level user could submit report IDs or UUIDs for reports belonging to other organisations and hard-delete them instance-wide. The fix changed the callback to call EventReport::fetchIfAuthorized($user, $itemId, 'delete') for each selected report before deletion.\n\n\n\n\nFor Sharing Groups, SharingGroupsController::deleteSelection relied on the global perm_sharing_group capability rather than verifying ownership of each selected sharing group. This allowed a sharing-group-capable user to hard-delete sharing groups owned by other organisations, bypassing the per-object ownership gate used by the single-object delete action. The fix changed the callback to call SharingGroup::checkIfOwner($user, $itemId) for each selected sharing group.\n\n\n\n\nAn authenticated attacker with the relevant broad role permission could abuse the affected bulk deletion endpoints to delete objects outside their organisation’s authorization scope, causing loss of event-report content or sharing-group configuration across the instance.
@@ -4722,6 +4779,20 @@
 
 - [shinthink/CVE-2026-57517](https://github.com/shinthink/CVE-2026-57517)
 - [gagaltotal/CVE-2026-57517-CWP](https://github.com/gagaltotal/CVE-2026-57517-CWP)
+
+### CVE-2026-57829 (2026-07-13)
+
+<code>The Joomla extension Helix Ultimate is vulnerable to an unauthenticated stored XSS.
+</code>
+
+- [Is4yev/CVE-2026-57829](https://github.com/Is4yev/CVE-2026-57829)
+
+### CVE-2026-57830 (2026-07-13)
+
+<code>The Joomla extension Helix Ultimate is vulnerable to an unauthenticated arbitrary file deletion.
+</code>
+
+- [Is4yev/CVE-2026-57830](https://github.com/Is4yev/CVE-2026-57830)
 
 ### CVE-2026-57850 (2026-07-10)
 
@@ -10525,6 +10596,7 @@
 - [irjfifndn-prog/Blackash-CVE-2025-33073](https://github.com/irjfifndn-prog/Blackash-CVE-2025-33073)
 - [EgCupCake/cupntlm-Automated-Exploit-For-CVE-2025-33073-](https://github.com/EgCupCake/cupntlm-Automated-Exploit-For-CVE-2025-33073-)
 - [IyarGross/SMB-CVE-2025-33073](https://github.com/IyarGross/SMB-CVE-2025-33073)
+- [sentinel-aidefense/CVE-2025-33073](https://github.com/sentinel-aidefense/CVE-2025-33073)
 
 ### CVE-2025-34028 (2025-04-22)
 
@@ -13230,7 +13302,7 @@
 - [lachlan2k/React2Shell-CVE-2025-55182-original-poc](https://github.com/lachlan2k/React2Shell-CVE-2025-55182-original-poc)
 - [hualy13/CVE-2025-55182](https://github.com/hualy13/CVE-2025-55182)
 - [RuoJi6/CVE-2025-55182-RCE-shell](https://github.com/RuoJi6/CVE-2025-55182-RCE-shell)
-- [Saturate/CVE-2025-55182-Scanner](https://github.com/Saturate/CVE-2025-55182-Scanner)
+- [Saturate/CVE-2025-55182-react2shell](https://github.com/Saturate/CVE-2025-55182-react2shell)
 - [hoosin/CVE-2025-55182](https://github.com/hoosin/CVE-2025-55182)
 - [Pizz33/CVE-2025-55182-burpscanner](https://github.com/Pizz33/CVE-2025-55182-burpscanner)
 - [Y3B3L4Y3/CVE-2025-55182-test](https://github.com/Y3B3L4Y3/CVE-2025-55182-test)
@@ -20133,7 +20205,6 @@
 - [k4it0k1d/CVE-2024-21182](https://github.com/k4it0k1d/CVE-2024-21182)
 - [kursadalsan/CVE-2024-21182](https://github.com/kursadalsan/CVE-2024-21182)
 - [dinosn/CVE-2024-21182](https://github.com/dinosn/CVE-2024-21182)
-- [jenniferreire26/CVE-2024-21182](https://github.com/jenniferreire26/CVE-2024-21182)
 - [fevar54/CVE-2024-21182---Oracle-WebLogic-Server-JNDI-Injection-RCE](https://github.com/fevar54/CVE-2024-21182---Oracle-WebLogic-Server-JNDI-Injection-RCE)
 
 ### CVE-2024-21262 (2024-10-15)
@@ -21863,7 +21934,6 @@
 - [Ne0zer01/CVE-2024-27198_LAB](https://github.com/Ne0zer01/CVE-2024-27198_LAB)
 - [ptd200110/CVE-2024-27198-SOC-Lab](https://github.com/ptd200110/CVE-2024-27198-SOC-Lab)
 - [BilalAlshiekh912/Incident-Response-Report-TeamCity-Compromise-CVE-2024-27198-](https://github.com/BilalAlshiekh912/Incident-Response-Report-TeamCity-Compromise-CVE-2024-27198-)
-- [swimmmmy/CVE-2024-27198-teamcity-auth-bypass](https://github.com/swimmmmy/CVE-2024-27198-teamcity-auth-bypass)
 
 ### CVE-2024-27292 (2024-02-29)
 
@@ -24547,6 +24617,13 @@
 </code>
 
 - [w0wbox/CVE-2024-40815](https://github.com/w0wbox/CVE-2024-40815)
+
+### CVE-2024-40842 (2024-09-16)
+
+<code>An issue was addressed with improved validation of environment variables. This issue is fixed in macOS Sequoia 15. An app may be able to access user-sensitive data.
+</code>
+
+- [dunihiz/Ph-n-t-ch-CVE-2024-40842-XProtectRemediatorDubRobber-Information-Leak-tr-n-macOS](https://github.com/dunihiz/Ph-n-t-ch-CVE-2024-40842-XProtectRemediatorDubRobber-Information-Leak-tr-n-macOS)
 
 ### CVE-2024-40892 (2024-08-12)
 
@@ -65198,6 +65275,7 @@
 </code>
 
 - [maximehip/extra_recipe](https://github.com/maximehip/extra_recipe)
+- [ldebug/extra_recipe](https://github.com/ldebug/extra_recipe)
 - [Rootkitsmm-zz/extra_recipe-iOS-10.2](https://github.com/Rootkitsmm-zz/extra_recipe-iOS-10.2)
 - [Peterpan0927/CVE-2017-2370](https://github.com/Peterpan0927/CVE-2017-2370)
 
@@ -68246,7 +68324,6 @@
 - [Samuel-G3/Escalamiento-de-Privilegios-usando-el-Kernel-Exploit-Dirty-Cow](https://github.com/Samuel-G3/Escalamiento-de-Privilegios-usando-el-Kernel-Exploit-Dirty-Cow)
 - [mohammadamin382/dirtycow-lab](https://github.com/mohammadamin382/dirtycow-lab)
 - [MarioAlejos-Cs/dirtycow-lab](https://github.com/MarioAlejos-Cs/dirtycow-lab)
-- [pardhu045/linux-privilege-escalation](https://github.com/pardhu045/linux-privilege-escalation)
 - [ramahmdr/dirtycow](https://github.com/ramahmdr/dirtycow)
 - [elhaddadalaa788-alt/kernel-exploit-dirtycow-project-subm](https://github.com/elhaddadalaa788-alt/kernel-exploit-dirtycow-project-subm)
 - [theo543/OSDS_Paper_CVE-2016-5195](https://github.com/theo543/OSDS_Paper_CVE-2016-5195)
