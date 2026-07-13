@@ -115,7 +115,7 @@
 <code>Discord Client Uncontrolled Search Path Element Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of Discord Client. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\n\nThe specific flaw exists within the discord_rpc module. The product loads a file from an unsecured location. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of a target user. Was ZDI-CAN-27057.
 </code>
 
-- [zerkl/CVE-2026-0776](https://github.com/zerkl/CVE-2026-0776)
+- [AnhedonicX/CVE-2026-0776](https://github.com/AnhedonicX/CVE-2026-0776)
 - [OverlayCS/Helix](https://github.com/OverlayCS/Helix)
 
 ### CVE-2026-0828 (2026-06-26)
@@ -400,6 +400,13 @@
 - [Vusal777/CVE-2026-4480-exploit-poc](https://github.com/Vusal777/CVE-2026-4480-exploit-poc)
 - [ClearLotus-git/CVE-2026-4480-PoC](https://github.com/ClearLotus-git/CVE-2026-4480-PoC)
 - [Cosm3No1de/HTB-Abducted-Writeup](https://github.com/Cosm3No1de/HTB-Abducted-Writeup)
+
+### CVE-2026-4631 (2026-04-07)
+
+<code>Cockpit's remote login feature passes user-supplied hostnames and usernames from the web interface to the SSH client without validation or sanitization. An attacker with network access to the Cockpit web service can craft a single HTTP request to the login endpoint that injects malicious SSH options or shell commands, achieving code execution on the Cockpit host without valid credentials. The injection occurs during the authentication flow before any credential verification takes place, meaning no login is required to exploit the vulnerability.
+</code>
+
+- [ExDev994/CVE-2026-4631-cockpit-RCE](https://github.com/ExDev994/CVE-2026-4631-cockpit-RCE)
 
 ### CVE-2026-4782 (2026-05-13)
 
@@ -1427,6 +1434,13 @@
 
 - [Filipemendonca1978/CVE-2026-21018](https://github.com/Filipemendonca1978/CVE-2026-21018)
 
+### CVE-2026-21055 (2026-07-10)
+
+<code>Improper export of android application components in Bixby prior to version 4.0.70.8 allows local attackers to execute arbitrary commands with Bixby privilege.
+</code>
+
+- [Hunt-Benito/samsung-bixby-command-execution-cve-2026-21055-improper-component-export](https://github.com/Hunt-Benito/samsung-bixby-command-execution-cve-2026-21055-improper-component-export)
+
 ### CVE-2026-21509 (2026-01-26)
 
 <code>Reliance on untrusted inputs in a security decision in Microsoft Office allows an unauthorized attacker to bypass a security feature locally.
@@ -1756,7 +1770,6 @@
 <code>OpenClaw (aka clawdbot or Moltbot) before 2026.1.29 obtains a gatewayUrl value from a query string and automatically makes a WebSocket connection without prompting, sending a token value.
 </code>
 
-- [msaleme/start-here](https://github.com/msaleme/start-here)
 - [adibirzu/openclaw-security-monitor](https://github.com/adibirzu/openclaw-security-monitor)
 - [FrigateCaptain/openclaw_vulnerabilities_and_solutions](https://github.com/FrigateCaptain/openclaw_vulnerabilities_and_solutions)
 - [EQSTLab/CVE-2026-25253](https://github.com/EQSTLab/CVE-2026-25253)
@@ -2251,6 +2264,13 @@
 - [c0gnit00/CVE-2026-33017](https://github.com/c0gnit00/CVE-2026-33017)
 - [yayip/CVE-2026-33017](https://github.com/yayip/CVE-2026-33017)
 - [diamorphine666/CVE-2026-33017-Exploit](https://github.com/diamorphine666/CVE-2026-33017-Exploit)
+
+### CVE-2026-33067 (2026-03-20)
+
+<code>SiYuan is a personal knowledge management system. Versions 3.6.0 and below render package metadata fields (displayName, description) using template literals without HTML escaping. A malicious package author can inject arbitrary HTML/JavaScript into these fields, which executes automatically when any user browses the Bazaar page. Because SiYuan's Electron configuration enables nodeIntegration: true with contextIsolation: false, this XSS escalates directly to full Remote Code Execution on the victim's operating system — with zero user interaction beyond opening the marketplace tab. This issue has been fixed in version 3.6.1.
+</code>
+
+- [Lopseg/cve-2026-33067](https://github.com/Lopseg/cve-2026-33067)
 
 ### CVE-2026-33137 (2026-05-20)
 
@@ -3353,6 +3373,9 @@
 - [pubglite55/oppo-ghostlock](https://github.com/pubglite55/oppo-ghostlock)
 - [inforcqb/CVE-2026-43499-pja110](https://github.com/inforcqb/CVE-2026-43499-pja110)
 - [caspy123/CVE-2026-43499](https://github.com/caspy123/CVE-2026-43499)
+- [x-spy/CVE-2026-43499-popsicle](https://github.com/x-spy/CVE-2026-43499-popsicle)
+- [dmcdtc/openvz-cve-patch-2026](https://github.com/dmcdtc/openvz-cve-patch-2026)
+- [Linuxoid-cn/Mi8E5-Unlocker-by-CVE-2026-43499](https://github.com/Linuxoid-cn/Mi8E5-Unlocker-by-CVE-2026-43499)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -3417,6 +3440,20 @@
 </code>
 
 - [dem0ns/CVE-2026-43735](https://github.com/dem0ns/CVE-2026-43735)
+
+### CVE-2026-43865 (2026-07-06)
+
+<code>Deserialization of Untrusted Data vulnerability in Apache Camel Hazelcast component.\n\nThe camel-hazelcast component creates and manages Hazelcast instances using a default configuration that applies no Java deserialization filter. When Camel builds the Hazelcast Config itself - that is, when no user-supplied HazelcastInstance, hazelcastConfigUri, or referenced Config bean is provided - neither Hazelcast's JavaSerializationFilterConfig nor a Camel-side ObjectInputFilter is configured, so objects received over the Hazelcast cluster protocol are deserialized inside Hazelcast's own serialization layer (ObjectInputStream.readObject) before Camel ever processes them. An attacker who can join or otherwise reach the Hazelcast cluster can publish a crafted serialized Java object that is then deserialized on every Camel node, resulting in remote code execution. The exposure is present by default and requires no opt-in endpoint configuration: any route using a hazelcast consumer (hazelcast-topic, hazelcast-queue, hazelcast-seda, hazelcast-map, hazelcast-multimap, hazelcast-replicatedmap, hazelcast-list, hazelcast-set), as well as the HazelcastAggregationRepository and HazelcastIdempotentRepository, is affected whenever the managed instance is created from Camel's default configuration.\nThis issue affects Apache Camel: from 4.0.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. The fix makes Camel apply a default Hazelcast JavaSerializationFilterConfig (whitelisting the java., javax. and org.apache.camel. class-name prefixes and blacklisting java.net.) to instances it creates from its own default configuration, while leaving any user-supplied Config or HazelcastInstance untouched. For deployments that cannot upgrade immediately, configure a deserialization filter on the Hazelcast instance (Hazelcast JavaSerializationFilterConfig, or the JVM-wide system property -Djdk.serialFilter=!java.net.**;java.**;javax.**;org.apache.camel.**;!*) and enable Hazelcast cluster authentication and TLS to restrict who can reach the cluster.
+</code>
+
+- [oscerd/CVE-2026-43865](https://github.com/oscerd/CVE-2026-43865)
+
+### CVE-2026-43866 (2026-07-06)
+
+<code>Deserialization of Untrusted Data vulnerability in Apache Camel, Apache Camel JMS component.\n\nJmsBinding.extractBodyFromJms() in camel-jms - and the equivalent JmsBinding in camel-sjms - deserializes the payload of an incoming JMS ObjectMessage via jakarta.jms.ObjectMessage.getObject() whenever the mapJmsMessage option is enabled (the default) and Camel acts as a JMS consumer. The CVE-2026-40860 hardening added a post-deserialization class check that rejects classes outside the default allow-list java.**;javax.**;org.apache.camel.**;!*. However org.apache.camel.support.DefaultExchangeHolder itself lives in the allow-listed org.apache.camel.** namespace, so an ObjectMessage whose top-level object is a DefaultExchangeHolder passes the check. The receiving side then calls DefaultExchangeHolder.unmarshal() on it without requiring the transferExchange option to be enabled - an asymmetric trust boundary, since the sending side gates ObjectMessage and transferExchange handling but the receiving side did not - writing every non-null field of the holder into the Exchange: the message body, the IN and OUT headers, the exchange properties, the variables, the exchange id and the exception. An attacker who can publish an ObjectMessage to a queue or topic consumed by an affected Camel application can therefore inject arbitrary Exchange state using only universally-trusted java.lang and java.util types, with no deserialization gadget chain required, to manipulate routing and headers, exchange properties and error handling. The same handling applies to camel-sjms and camel-sjms2, and to the JMS-family components built on JmsComponent and JmsBinding: camel-amqp, camel-activemq and camel-activemq6. This is a bypass of the CVE-2026-40860 fix rather than a flaw in it.\nThis issue affects Apache Camel: from 3.0.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0; Apache Camel: from 3.0.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. After upgrading, JMS ObjectMessage handling is disabled by default in camel-jms, camel-sjms and the JMS-family components (a new objectMessageEnabled option defaults to false at the component and endpoint level), so an incoming ObjectMessage - including a DefaultExchangeHolder payload - is no longer deserialized unless the option is explicitly enabled; only set objectMessageEnabled=true when the consumed JMS destination is fed exclusively by trusted producers. For deployments that cannot upgrade immediately, restrict publish access to the queues and topics consumed by Camel to trusted producers via JMS broker authorization, and do not expose JMS consumers that map ObjectMessage bodies to untrusted networks; a JMS-provider deserialization allow-list does not mitigate this specific bypass because the crafted payload uses only universally-trusted classes.
+</code>
+
+- [oscerd/CVE-2026-43866](https://github.com/oscerd/CVE-2026-43866)
 
 ### CVE-2026-44166 (2026-05-12)
 
@@ -3727,6 +3764,7 @@
 - [V0IDNETWORK/CVE-2026-46331](https://github.com/V0IDNETWORK/CVE-2026-46331)
 - [aexdyhaxor/CVE-2026-46331](https://github.com/aexdyhaxor/CVE-2026-46331)
 - [yanxinwu946/CVE-2026-46331](https://github.com/yanxinwu946/CVE-2026-46331)
+- [MarwahHadi/CVE-2026-46331-pedit-cow](https://github.com/MarwahHadi/CVE-2026-46331-pedit-cow)
 
 ### CVE-2026-46333 (2026-05-15)
 
@@ -6616,7 +6654,7 @@
 - [get-xor/coreweave-demo-2026-05](https://github.com/get-xor/coreweave-demo-2026-05)
 - [mananispiwpiw/CVE-2025-8110-PoC](https://github.com/mananispiwpiw/CVE-2025-8110-PoC)
 - [joaquinrrr/CVE-2025-8110](https://github.com/joaquinrrr/CVE-2025-8110)
-- [amnsecurity/ghostlink-writeup](https://github.com/amnsecurity/ghostlink-writeup)
+- [amnsecurity/internal-domain-development-compromise-assessment](https://github.com/amnsecurity/internal-domain-development-compromise-assessment)
 
 ### CVE-2025-8191 (2025-07-26)
 
@@ -8669,6 +8707,7 @@
 - [suil12/CVE-2025-24813_presentation](https://github.com/suil12/CVE-2025-24813_presentation)
 - [JTMH37/Apache-Tomcat-CVE-2025-24813-Lab](https://github.com/JTMH37/Apache-Tomcat-CVE-2025-24813-Lab)
 - [Dhananjayasj/CVE-2025-24813-Apache-Tomcat-Partial-PUT-Deserialization-RCE-](https://github.com/Dhananjayasj/CVE-2025-24813-Apache-Tomcat-Partial-PUT-Deserialization-RCE-)
+- [yuzuki-ayanami/CVE-2025-24813](https://github.com/yuzuki-ayanami/CVE-2025-24813)
 
 ### CVE-2025-24893 (2025-02-20)
 
@@ -10013,13 +10052,6 @@
 - [JGoyd/iOS-Attack-Chain-CVE-2025-31200-CVE-2025-31201](https://github.com/JGoyd/iOS-Attack-Chain-CVE-2025-31200-CVE-2025-31201)
 - [serundengsapi/CVE-2025-31200-iOS-AudioConverter-RCE](https://github.com/serundengsapi/CVE-2025-31200-iOS-AudioConverter-RCE)
 - [hunters-sec/CVE-2025-31200](https://github.com/hunters-sec/CVE-2025-31200)
-
-### CVE-2025-31207 (2025-05-12)
-
-<code>A logic issue was addressed with improved checks. This issue is fixed in iOS 18.5 and iPadOS 18.5. An app may be able to enumerate a user's installed apps.
-</code>
-
-- [iCrazeiOS/AppEnumFix](https://github.com/iCrazeiOS/AppEnumFix)
 
 ### CVE-2025-31258 (2025-05-12)
 
@@ -16172,6 +16204,7 @@
 - [alaeddine03/CVE-2025-69212-PoC](https://github.com/alaeddine03/CVE-2025-69212-PoC)
 - [m2sousa/CVE-2025-69212](https://github.com/m2sousa/CVE-2025-69212)
 - [0Zetrium0/CVE-2025-69212_PoC](https://github.com/0Zetrium0/CVE-2025-69212_PoC)
+- [mmoobbeeiidat-design/Hack-The-Box-Enigma-Findings-Report](https://github.com/mmoobbeeiidat-design/Hack-The-Box-Enigma-Findings-Report)
 
 ### CVE-2025-69213 (2026-02-04)
 
@@ -28787,6 +28820,7 @@
 - [Aryan20057/CVE-2023-4911](https://github.com/Aryan20057/CVE-2023-4911)
 - [0xMOGA/CVE-2023-4911-Lab](https://github.com/0xMOGA/CVE-2023-4911-Lab)
 - [jarpex/cve-2023-4911-exploit-optimized](https://github.com/jarpex/cve-2023-4911-exploit-optimized)
+- [baeseungwon1010/CVE-2023-4911](https://github.com/baeseungwon1010/CVE-2023-4911)
 
 ### CVE-2023-4966 (2023-10-10)
 
@@ -29260,7 +29294,6 @@
 </code>
 
 - [yoryio/CVE-2023-7028](https://github.com/yoryio/CVE-2023-7028)
-- [Shimon03/CVE-2023-7028-Account-Take-Over-Gitlab](https://github.com/Shimon03/CVE-2023-7028-Account-Take-Over-Gitlab)
 - [thanhlam-attt/CVE-2023-7028](https://github.com/thanhlam-attt/CVE-2023-7028)
 - [Trackflaw/CVE-2023-7028-Docker](https://github.com/Trackflaw/CVE-2023-7028-Docker)
 - [mochammadrafi/CVE-2023-7028](https://github.com/mochammadrafi/CVE-2023-7028)
@@ -30018,9 +30051,7 @@
 </code>
 
 - [thanhlam-attt/CVE-2023-22527](https://github.com/thanhlam-attt/CVE-2023-22527)
-- [Manh130902/CVE-2023-22527-POC](https://github.com/Manh130902/CVE-2023-22527-POC)
 - [Niuwoo/CVE-2023-22527](https://github.com/Niuwoo/CVE-2023-22527)
-- [Chocapikk/CVE-2023-22527](https://github.com/Chocapikk/CVE-2023-22527)
 - [RevoltSecurities/CVE-2023-22527](https://github.com/RevoltSecurities/CVE-2023-22527)
 - [yoryio/CVE-2023-22527](https://github.com/yoryio/CVE-2023-22527)
 - [Privia-Security/CVE-2023-22527](https://github.com/Privia-Security/CVE-2023-22527)
@@ -31307,6 +31338,7 @@
 
 - [timb-machine-mirrors/seongil-wi-CVE-2023-29017](https://github.com/timb-machine-mirrors/seongil-wi-CVE-2023-29017)
 - [passwa11/CVE-2023-29017-reverse-shell](https://github.com/passwa11/CVE-2023-29017-reverse-shell)
+- [gunwoo105/Node_CVE-2023-29017](https://github.com/gunwoo105/Node_CVE-2023-29017)
 
 ### CVE-2023-29084 (2023-04-13)
 
@@ -32702,6 +32734,7 @@
 - [sbouabid-sec/CVE-2023-34468-POC](https://github.com/sbouabid-sec/CVE-2023-34468-POC)
 - [Jeanpt/CVE-2023-34468](https://github.com/Jeanpt/CVE-2023-34468)
 - [spikeyjr/CVE-2023-34468-PoC](https://github.com/spikeyjr/CVE-2023-34468-PoC)
+- [ozcanpng/CVE-2023-34468](https://github.com/ozcanpng/CVE-2023-34468)
 
 ### CVE-2023-34478 (2023-07-24)
 
@@ -33645,6 +33678,7 @@
 - [exploits-forsale/themebleed](https://github.com/exploits-forsale/themebleed)
 - [Jnnshschl/CVE-2023-38146](https://github.com/Jnnshschl/CVE-2023-38146)
 - [Durge5/ThemeBleedPy](https://github.com/Durge5/ThemeBleedPy)
+- [CH0ico/CVE-2023-38146-Poc](https://github.com/CH0ico/CVE-2023-38146-Poc)
 
 ### CVE-2023-38408 (2023-07-20)
 
@@ -33846,7 +33880,6 @@
 - [h3xecute/SideCopy-Exploits-CVE-2023-38831](https://github.com/h3xecute/SideCopy-Exploits-CVE-2023-38831)
 - [s4m98/winrar-cve-2023-38831-poc-gen](https://github.com/s4m98/winrar-cve-2023-38831-poc-gen)
 - [xk-mt/WinRAR-Vulnerability-recurrence-tutorial](https://github.com/xk-mt/WinRAR-Vulnerability-recurrence-tutorial)
-- [MyStuffYT/CVE-2023-38831-POC](https://github.com/MyStuffYT/CVE-2023-38831-POC)
 - [SpamixOfficial/CVE-2023-38831](https://github.com/SpamixOfficial/CVE-2023-38831)
 - [r1yaz/winDED](https://github.com/r1yaz/winDED)
 - [youmulijiang/evil-winrar](https://github.com/youmulijiang/evil-winrar)
@@ -34116,13 +34149,6 @@
 </code>
 
 - [kenbuckler/WS_FTP-CVE-2023-40044](https://github.com/kenbuckler/WS_FTP-CVE-2023-40044)
-
-### CVE-2023-40109 (2024-02-15)
-
-<code>In createFromParcel of UsbConfiguration.java, there is a possible background activity launch (BAL) due to a permissions bypass. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.
-</code>
-
-- [uthrasri/CVE-2023-40109](https://github.com/uthrasri/CVE-2023-40109)
 
 ### CVE-2023-40127 (2023-10-27)
 
@@ -46148,13 +46174,6 @@
 - [jytmX/CVE-2021-24499](https://github.com/jytmX/CVE-2021-24499)
 - [jayhutajulu1/CVE-2021-24499](https://github.com/jayhutajulu1/CVE-2021-24499)
 
-### CVE-2021-24507 (2021-08-09)
-
-<code>The Astra Pro Addon WordPress plugin before 3.5.2 did not properly sanitise or escape some of the POST parameters from the astra_pagination_infinite and astra_shop_pagination_infinite AJAX action (available to both unauthenticated and authenticated user) before using them in SQL statement, leading to an SQL Injection issues
-</code>
-
-- [RandomRobbieBF/CVE-2021-24507](https://github.com/RandomRobbieBF/CVE-2021-24507)
-
 ### CVE-2021-24545 (2021-10-11)
 
 <code>The WP HTML Author Bio WordPress plugin through 1.2.0 does not sanitise the HTML allowed in the Bio of users, allowing them to use malicious JavaScript code, which will be executed when anyone visit a post in the frontend made by such user. As a result, user with a role as low as author could perform Cross-Site Scripting attacks against users, which could potentially lead to privilege escalation when an admin view the related post/s.
@@ -49165,6 +49184,7 @@
 - [Park123r/CVE-2021-41773](https://github.com/Park123r/CVE-2021-41773)
 - [johnwickakash12/CVE-2021-41773](https://github.com/johnwickakash12/CVE-2021-41773)
 - [lheeeesoo/Apache-CVE-2021-41773](https://github.com/lheeeesoo/Apache-CVE-2021-41773)
+- [ninthsgrsj-source/vulhub-apache](https://github.com/ninthsgrsj-source/vulhub-apache)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -56618,6 +56638,8 @@
 - [Jorge2Rubio/CVE-2019-0232](https://github.com/Jorge2Rubio/CVE-2019-0232)
 - [r4vl1t0/CVE-2019-0232](https://github.com/r4vl1t0/CVE-2019-0232)
 - [blackjuker2/CVE-2019-0232](https://github.com/blackjuker2/CVE-2019-0232)
+- [luongchivi/Preproduce-CVE-2019-0232](https://github.com/luongchivi/Preproduce-CVE-2019-0232)
+- [yuzuki-ayanami/CVE-2019-0232](https://github.com/yuzuki-ayanami/CVE-2019-0232)
 
 ### CVE-2019-0539 (2019-01-08)
 
@@ -64745,6 +64767,13 @@
 
 - [realbatuhan/JWT-Bruteforcer](https://github.com/realbatuhan/JWT-Bruteforcer)
 
+### CVE-2018-1000533 (2018-06-26)
+
+<code>klaussilveira GitList version &lt;= 0.6 contains a Passing incorrectly sanitized input to system function vulnerability in `searchTree` function that can result in Execute any code as PHP user. This attack appear to be exploitable via Send POST request using search form. This vulnerability appears to have been fixed in 0.7 after commit 87b8c26b023c3fc37f0796b14bb13710f397b322.
+</code>
+
+- [dddo0/CVE-2018-1000533](https://github.com/dddo0/CVE-2018-1000533)
+
 ### CVE-2018-1000542 (2018-06-26)
 
 <code>netbeans-mmd-plugin version &lt;= 1.4.3 contains a XML External Entity (XXE) vulnerability in MMD file import that can result in Possible information disclosure, server-side request forgery, or remote code execution. This attack appear to be exploitable via Specially crafted MMD file.
@@ -70668,7 +70697,7 @@
 - [AlissonFaoli/Shellshock](https://github.com/AlissonFaoli/Shellshock)
 - [ajansha/shellshock](https://github.com/ajansha/shellshock)
 - [K3ysTr0K3R/CVE-2014-6271-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2014-6271-EXPLOIT)
-- [TheRealCiscoo/Shellshock-Exploit](https://github.com/TheRealCiscoo/Shellshock-Exploit)
+- [TheRealCiscoo/shellshock-poc](https://github.com/TheRealCiscoo/shellshock-poc)
 - [RadYio/CVE-2014-6271](https://github.com/RadYio/CVE-2014-6271)
 - [YunchoHang/CVE-2014-6271-SHELLSHOCK](https://github.com/YunchoHang/CVE-2014-6271-SHELLSHOCK)
 - [moften/CVE-2014-6271](https://github.com/moften/CVE-2014-6271)
@@ -71933,6 +71962,8 @@
 - [NitinSukthe-G/OpenVAS-Vulnerability-Assessment-Incident-Response](https://github.com/NitinSukthe-G/OpenVAS-Vulnerability-Assessment-Incident-Response)
 - [H4R335HR/vsftpd-234-backdoor](https://github.com/H4R335HR/vsftpd-234-backdoor)
 - [kn9annihilator/CVE-2011-2523-vsFTPd-2.3.4-Writeup](https://github.com/kn9annihilator/CVE-2011-2523-vsFTPd-2.3.4-Writeup)
+- [Orevic21/wazuh-home-soc](https://github.com/Orevic21/wazuh-home-soc)
+- [solomonhenry-afk/vsftpd-cve-2011-2523-detection-signature](https://github.com/solomonhenry-afk/vsftpd-cve-2011-2523-detection-signature)
 
 ### CVE-2011-2553
 - [carlosrpastrana/cve-2011-2553](https://github.com/carlosrpastrana/cve-2011-2553)
