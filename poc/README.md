@@ -624,6 +624,7 @@
 
 - [0xsha/CVE-2026-6307](https://github.com/0xsha/CVE-2026-6307)
 - [J4ck3LSyN-Gen2/CVE-2026-6307-Longinus](https://github.com/J4ck3LSyN-Gen2/CVE-2026-6307-Longinus)
+- [amnsecurity/CVE-2026-6307-Chrome-V8-Sandbox-Escape](https://github.com/amnsecurity/CVE-2026-6307-Chrome-V8-Sandbox-Escape)
 
 ### CVE-2026-6421 (2026-04-17)
 
@@ -2164,7 +2165,6 @@
 - [ochebotar/copy-fail-CVE-2026-31431-detection-probe](https://github.com/ochebotar/copy-fail-CVE-2026-31431-detection-probe)
 - [Liverwortenuresis371/copyfail-rs](https://github.com/Liverwortenuresis371/copyfail-rs)
 - [Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail](https://github.com/Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail)
-- [philfry/cve-2026-31431-ftrace](https://github.com/philfry/cve-2026-31431-ftrace)
 - [p401a-ops/Copy-Fail](https://github.com/p401a-ops/Copy-Fail)
 - [infiniroot/ansible-mitigate-copyfail-dirtyfrag](https://github.com/infiniroot/ansible-mitigate-copyfail-dirtyfrag)
 - [KaraZajac/DIRTYFAIL](https://github.com/KaraZajac/DIRTYFAIL)
@@ -2531,6 +2531,7 @@
 </code>
 
 - [h3ck13r/CVE-2026-35204](https://github.com/h3ck13r/CVE-2026-35204)
+- [amnsecurity/CVE-2026-35204-Helm-Plugin-Traversal](https://github.com/amnsecurity/CVE-2026-35204-Helm-Plugin-Traversal)
 
 ### CVE-2026-35273 (2026-06-11)
 
@@ -2598,6 +2599,7 @@
 
 ### CVE-2026-36214
 - [WesWrench/CVE-2026-36214](https://github.com/WesWrench/CVE-2026-36214)
+- [amnsecurity/CVE-2026-36214-osTicket-XSS](https://github.com/amnsecurity/CVE-2026-36214-osTicket-XSS)
 
 ### CVE-2026-36226 (2026-05-22)
 
@@ -2764,6 +2766,7 @@
 - [b0nyo/CVE-2026-38526](https://github.com/b0nyo/CVE-2026-38526)
 - [Resolvdd/CVE-2026-38526-PoC-htb-nexus](https://github.com/Resolvdd/CVE-2026-38526-PoC-htb-nexus)
 - [Qurclinc/CVE-2026-38526](https://github.com/Qurclinc/CVE-2026-38526)
+- [CerberusMrXi/KrayinCRM-RCE-Exploit-CVE-2026-38526](https://github.com/CerberusMrXi/KrayinCRM-RCE-Exploit-CVE-2026-38526)
 
 ### CVE-2026-38698
 - [vital-information-resource-under-siege/CVE-2026-38698-and-CVE-2026-38699](https://github.com/vital-information-resource-under-siege/CVE-2026-38698-and-CVE-2026-38699)
@@ -2924,6 +2927,7 @@
 </code>
 
 - [oscerd/CVE-2026-40047](https://github.com/oscerd/CVE-2026-40047)
+- [amnsecurity/CVE-2026-40047-Apache-Camel-Docling-Injection](https://github.com/amnsecurity/CVE-2026-40047-Apache-Camel-Docling-Injection)
 
 ### CVE-2026-40048 (2026-04-27)
 
@@ -3403,6 +3407,8 @@
 - [joehquak/Mi8E5-Unlocker-by-CVE-2026-43499](https://github.com/joehquak/Mi8E5-Unlocker-by-CVE-2026-43499)
 - [Yakayna/SpringPeace](https://github.com/Yakayna/SpringPeace)
 - [Thiasap/oppo-pgem10-ghostlock](https://github.com/Thiasap/oppo-pgem10-ghostlock)
+- [CakesTwix/Android-CVE-2026-43499](https://github.com/CakesTwix/Android-CVE-2026-43499)
+- [Bartixxx32/CVE-2026-43499-OnePlus15](https://github.com/Bartixxx32/CVE-2026-43499-OnePlus15)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -3460,6 +3466,13 @@
 </code>
 
 - [dem0ns/CVE-2026-43700](https://github.com/dem0ns/CVE-2026-43700)
+
+### CVE-2026-43724 (2026-06-29)
+
+<code>The issue was addressed with improved input sanitization. This issue is fixed in iOS 26.5.2 and iPadOS 26.5.2, macOS Tahoe 26.5.2. An app may be able to cause unexpected system termination or write kernel memory.
+</code>
+
+- [impost0r/Rie](https://github.com/impost0r/Rie)
 
 ### CVE-2026-43735 (2026-06-29)
 
@@ -3773,6 +3786,7 @@
 - [Sentebale/CVE-2026-46300](https://github.com/Sentebale/CVE-2026-46300)
 - [0xBlackash/CVE-2026-46300](https://github.com/0xBlackash/CVE-2026-46300)
 - [ExploitEoom/CVE-2026-46300](https://github.com/ExploitEoom/CVE-2026-46300)
+- [First-John/cve_2026_frag_family_fix](https://github.com/First-John/cve_2026_frag_family_fix)
 - [Koshmare-Blossom/Fragnesia-go](https://github.com/Koshmare-Blossom/Fragnesia-go)
 - [Maxime288/Fragnesia-CVE-2026-46300](https://github.com/Maxime288/Fragnesia-CVE-2026-46300)
 - [AzDevops143/FRAGNESIA-Charan-cve-2026-46300](https://github.com/AzDevops143/FRAGNESIA-Charan-cve-2026-46300)
@@ -3851,6 +3865,27 @@
 
 - [oscerd/CVE-2026-46453](https://github.com/oscerd/CVE-2026-46453)
 
+### CVE-2026-46454 (2026-07-06)
+
+<code>Improper Input Validation vulnerability in Apache Camel Cometd Component.\n\nThe camel-cometd component maps inbound Bayeux (CometD) message headers into the Camel Exchange without applying a HeaderFilterStrategy. CometdBinding.populateExchangeFromMessage copies the entire ext.CamelHeaders map supplied by the CometD client directly onto the Camel message (message.setHeaders), so any header name - including Camel-internal control headers such as CamelHttpUri, CamelFileName or CamelJmsDestinationName - is accepted unmodified. Because a CometdComponent installs no Bayeux SecurityPolicy by default, any client that can complete the Bayeux handshake against the CometD endpoint can publish such a message without authentication. An attacker can therefore inject arbitrary Camel control headers that influence the behaviour of downstream producers in the route (for example redirecting an HTTP producer, changing a file name, or overriding a JMS destination); the injected headers also persist across internal direct, seda and vm hops. The concrete downstream impact depends on which producers the route uses.\nThis issue affects Apache Camel: from 4.0.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. The fix implements a HeaderFilterStrategy in the camel-cometd binding (a long-standing TODO in the code) that filters the Camel header namespace case-insensitively on inbound mapping, so client-supplied Camel* / camel* headers are no longer copied into the Exchange. For deployments that cannot upgrade immediately, strip the Camel control headers from inbound CometD messages before they reach any downstream producer (for example removeHeaders('Camel*') and removeHeaders('camel*') at the start of the route), and install an explicit Bayeux SecurityPolicy on the CometdComponent so that only authenticated clients can publish.
+</code>
+
+- [oscerd/CVE-2026-46454](https://github.com/oscerd/CVE-2026-46454)
+
+### CVE-2026-46455 (2026-07-06)
+
+<code>Insufficient Session Expiration vulnerability in Apache Camel Keycloak Component.\n\nThe camel-keycloak security helper KeycloakSecurityHelper.parseAndVerifyAccessToken builds a Keycloak TokenVerifier using withChecks(...) with only the subject-exists check and the realm-URL (issuer) check. Keycloak's TokenVerifier.withChecks(...) appends to an initially empty check list - the upstream default checks are installed only when withDefaultChecks() is called - so the built-in IS_ACTIVE predicate, which validates the token's exp (expiration) and nbf (not-before) claims, is never applied. As a result the helper verifies the token signature, subject and issuer but does not enforce the token's validity window: an access token that is expired, or not yet valid, is accepted as valid. Routes that rely on this helper to authenticate inbound requests therefore accept access tokens that are outside their intended lifetime.\nThis issue affects Apache Camel: from 4.18.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. The fix makes KeycloakSecurityHelper.parseAndVerifyAccessToken include the TokenVerifier.IS_ACTIVE check so that expired or not-yet-valid access tokens are rejected, aligning the helper with Keycloak's default check set. For deployments that cannot upgrade immediately, enforce token expiration outside the helper - for example validate the access token's exp/nbf claims in the route before trusting it, keep Keycloak access-token lifetimes short, and ensure any upstream gateway or resource server also validates the token validity window.
+</code>
+
+- [oscerd/CVE-2026-46455](https://github.com/oscerd/CVE-2026-46455)
+
+### CVE-2026-46456 (2026-07-06)
+
+<code>Improper Input Validation vulnerability in Apache Camel AWS2-SQS Component.\n\n\nThe camel-aws2-sqs component map inbound message attributes into the Camel Exchange through a component-specific HeaderFilterStrategy. Sqs2HeaderFilterStrategy configured only an outbound filter (setOutFilterPattern, which blocks Camel*, breadcrumbId and org.apache.camel.* headers being written to the broker) but did not configure an inbound filter. As a result, when Sqs2Consumer copies each SQS MessageAttribute into the Exchange via HeaderFilterStrategy.applyFilterToExternalHeaders, DefaultHeaderFilterStrategy applied no inbound rule and treated every header name as not filtered - including Camel-internal control headers such as CamelHttpUri, CamelFileName or CamelSqlQuery - copying them unmodified onto the Camel message. Any principal able to send messages to the consumed SQS queue (for example a cross-account sender or a lower-privileged in-account component holding sqs:SendMessage) could therefore set arbitrary Camel control headers that influence the behaviour of downstream producers in the route (for example redirecting an HTTP producer, changing a file name, or overriding a query); the injected headers also persist across internal direct, seda and vm hops. The concrete downstream impact depends on which producers the route uses.\n\n\nThis issue affects Apache Camel: from 4.0.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. The fix adds an inbound HeaderFilterStrategy rule to Sqs2HeaderFilterStrategy that filters the Camel header namespace case-insensitively on inbound mapping, so sender-supplied Camel* / camel* headers are no longer copied into the Exchange. For deployments that cannot upgrade immediately, strip the Camel control headers from inbound messages before they reach any downstream producer (for example removeHeaders('Camel*') and removeHeaders('camel*') at the start of the route), and restrict who may send to the consumed SQS queue by applying least-privilege sqs:SendMessage permissions on the queue resource policy.
+</code>
+
+- [oscerd/CVE-2026-46456](https://github.com/oscerd/CVE-2026-46456)
+
 ### CVE-2026-46490 (2026-06-08)
 
 <code>samlify is a Node.js library for SAML single sign-on. Prior to version 2.13.0, samlify’s template substitution only escapes attribute contexts. Values inserted into element text (e.g., &lt;saml:AttributeValue&gt;) are not escaped. A normal user can inject XML markup into an attribute value (e.g., email, name) and add new &lt;saml:Attribute&gt; elements inside the signed assertion. The IdP then signs the tampered assertion and the SP accepts the injected attributes as trusted. This allows privilege escalation when attributes are used for authorization (roles/groups). This issue has been patched in version 2.13.0.
@@ -3864,6 +3899,7 @@
 </code>
 
 - [N1et/CVE-2026-46529](https://github.com/N1et/CVE-2026-46529)
+- [amnsecurity/CVE-2026-46529-Atril-PDF-RCE](https://github.com/amnsecurity/CVE-2026-46529-Atril-PDF-RCE)
 
 ### CVE-2026-46552 (2026-06-23)
 
@@ -4117,6 +4153,7 @@
 - [pssec-io/CVE-2026-48907](https://github.com/pssec-io/CVE-2026-48907)
 - [NoXiVaR/CVE-2026-48907](https://github.com/NoXiVaR/CVE-2026-48907)
 - [bayu06802/CVE-2026-48907](https://github.com/bayu06802/CVE-2026-48907)
+- [amnsecurity/CVE-2026-48907-Joomla-JCE-RCE](https://github.com/amnsecurity/CVE-2026-48907-Joomla-JCE-RCE)
 
 ### CVE-2026-48908 (2026-06-20)
 
@@ -4178,6 +4215,7 @@
 - [shinthink/CVE-2026-49049](https://github.com/shinthink/CVE-2026-49049)
 - [frada321/asdsadsadasdasdsadsad](https://github.com/frada321/asdsadsadasdasdsadsad)
 - [Dr-D25/CVE-2026-49049](https://github.com/Dr-D25/CVE-2026-49049)
+- [ExDev994/CVE-2026-49049](https://github.com/ExDev994/CVE-2026-49049)
 
 ### CVE-2026-49060 (2026-06-11)
 
@@ -4749,6 +4787,8 @@
 </code>
 
 - [shinthink/CVE-2026-56291](https://github.com/shinthink/CVE-2026-56291)
+- [rimbadirgantara/CVE-2026-56291.yaml](https://github.com/rimbadirgantara/CVE-2026-56291.yaml)
+- [0xdenis77/CVE-2026-56291](https://github.com/0xdenis77/CVE-2026-56291)
 
 ### CVE-2026-56423 (2026-06-22)
 
@@ -6354,7 +6394,6 @@
 <code>mcp-remote is exposed to OS command injection when connecting to untrusted MCP servers due to crafted input from the authorization_endpoint response URL
 </code>
 
-- [ChaseHCS/CVE-2025-6514](https://github.com/ChaseHCS/CVE-2025-6514)
 - [Cyberency/CVE-2025-6514](https://github.com/Cyberency/CVE-2025-6514)
 
 ### CVE-2025-6543 (2025-06-25)
@@ -10123,6 +10162,13 @@
 - [JGoyd/iOS-Attack-Chain-CVE-2025-31200-CVE-2025-31201](https://github.com/JGoyd/iOS-Attack-Chain-CVE-2025-31200-CVE-2025-31201)
 - [serundengsapi/CVE-2025-31200-iOS-AudioConverter-RCE](https://github.com/serundengsapi/CVE-2025-31200-iOS-AudioConverter-RCE)
 - [hunters-sec/CVE-2025-31200](https://github.com/hunters-sec/CVE-2025-31200)
+
+### CVE-2025-31207 (2025-05-12)
+
+<code>A logic issue was addressed with improved checks. This issue is fixed in iOS 18.5 and iPadOS 18.5. An app may be able to enumerate a user's installed apps.
+</code>
+
+- [iCrazeiOS/AppEnumFix](https://github.com/iCrazeiOS/AppEnumFix)
 
 ### CVE-2025-31258 (2025-05-12)
 
@@ -19857,13 +19903,6 @@
 
 - [Nxploited/CVE-2024-12542-PoC](https://github.com/Nxploited/CVE-2024-12542-PoC)
 
-### CVE-2024-12558 (2024-12-21)
-
-<code>The WP BASE Booking of Appointments, Services and Events plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the export_db function in all versions up to, and including, 4.9.2. This makes it possible for authenticated attackers, with Subscriber-level access and above, to expose sensitive information from the database, such as the hashed administrator password.
-</code>
-
-- [Nxploited/CVE-2024-12558-exploit](https://github.com/Nxploited/CVE-2024-12558-exploit)
-
 ### CVE-2024-12583 (2025-01-04)
 
 <code>The Dynamics 365 Integration plugin for WordPress is vulnerable to Remote Code Execution and Arbitrary File Read in all versions up to, and including, 1.3.23 via Twig Server-Side Template Injection. This is due to missing input validation and sanitization on the render function. This makes it possible for authenticated attackers, with Contributor-level access and above, to execute code on the server.
@@ -24228,9 +24267,6 @@
 - [AlissonFaoli/Apache-OFBiz-Exploit](https://github.com/AlissonFaoli/Apache-OFBiz-Exploit)
 - [Hex00-0x4/CVE-2024-38856-Apache-OFBiz](https://github.com/Hex00-0x4/CVE-2024-38856-Apache-OFBiz)
 
-### CVE-2024-38998
-- [z3ldr1/PP_CVE-2024-38998](https://github.com/z3ldr1/PP_CVE-2024-38998)
-
 ### CVE-2024-39024
 - [ly1g3/packetfence-CVE-2024-39024](https://github.com/ly1g3/packetfence-CVE-2024-39024)
 
@@ -24503,6 +24539,7 @@
 </code>
 
 - [BwithE/CVE-2024-40453](https://github.com/BwithE/CVE-2024-40453)
+- [surajpandeyp/CVE-2024-40453](https://github.com/surajpandeyp/CVE-2024-40453)
 
 ### CVE-2024-40457 (2024-09-12)
 
@@ -26699,6 +26736,12 @@
 
 - [HORKimhab/CVE-2024-52011](https://github.com/HORKimhab/CVE-2024-52011)
 
+### CVE-2024-52046 (2024-12-25)
+
+<code>The ObjectSerializationDecoder in Apache MINA uses Java’s native deserialization protocol to process\nincoming serialized data but lacks the necessary security checks and defenses. This vulnerability allows\nattackers to exploit the deserialization process by sending specially crafted malicious serialized data,\npotentially leading to remote code execution (RCE) attacks.\n\n\n\n</code>
+
+- [amnsecurity/CVE-2024-52046-Apache-MINA-RCE](https://github.com/amnsecurity/CVE-2024-52046-Apache-MINA-RCE)
+
 ### CVE-2024-52301 (2024-11-12)
 
 <code>Laravel is a web application framework. When the register_argc_argv php directive is set to on , and users call any URL with a special crafted query string, they are able to change the environment used by the framework when handling the request. The vulnerability fixed in 6.20.45, 7.30.7, 8.83.28, 9.52.17, 10.48.23, and 11.31.0. The framework now ignores argv values for environment detection on non-cli SAPIs.
@@ -26927,7 +26970,6 @@
 - [c4oocO/CVE-2024-53677-Docker](https://github.com/c4oocO/CVE-2024-53677-Docker)
 - [dustblessnotdust/CVE-2024-53677-S2-067-thread](https://github.com/dustblessnotdust/CVE-2024-53677-S2-067-thread)
 - [hiteshpatra/CVE-2024-53677](https://github.com/hiteshpatra/CVE-2024-53677)
-- [punitdarji/Apache-struts-cve-2024-53677](https://github.com/punitdarji/Apache-struts-cve-2024-53677)
 - [SeanRickerd/CVE-2024-53677](https://github.com/SeanRickerd/CVE-2024-53677)
 - [hopsypopsy8/CVE-2024-53677-Exploitation](https://github.com/hopsypopsy8/CVE-2024-53677-Exploitation)
 - [shishirghimir/CVE-2024-53677-Exploit](https://github.com/shishirghimir/CVE-2024-53677-Exploit)
@@ -30129,7 +30171,6 @@
 
 - [thanhlam-attt/CVE-2023-22527](https://github.com/thanhlam-attt/CVE-2023-22527)
 - [Niuwoo/CVE-2023-22527](https://github.com/Niuwoo/CVE-2023-22527)
-- [RevoltSecurities/CVE-2023-22527](https://github.com/RevoltSecurities/CVE-2023-22527)
 - [yoryio/CVE-2023-22527](https://github.com/yoryio/CVE-2023-22527)
 - [Privia-Security/CVE-2023-22527](https://github.com/Privia-Security/CVE-2023-22527)
 - [MaanVader/CVE-2023-22527-POC](https://github.com/MaanVader/CVE-2023-22527-POC)
@@ -30646,6 +30687,7 @@
 - [dr-cable-tv/Geoserver-CVE-2023-25157](https://github.com/dr-cable-tv/Geoserver-CVE-2023-25157)
 - [custiya/geoserver-CVE-2023-25157](https://github.com/custiya/geoserver-CVE-2023-25157)
 - [charis3306/CVE-2023-25157](https://github.com/charis3306/CVE-2023-25157)
+- [Giangdurian/CVE-2023-25157-GeoServer-SQLi-Lab](https://github.com/Giangdurian/CVE-2023-25157-GeoServer-SQLi-Lab)
 
 ### CVE-2023-25194 (2023-02-07)
 
@@ -31721,7 +31763,7 @@
 - [tinashelorenzi/CVE-2023-30258-magnus-billing-v7-exploit](https://github.com/tinashelorenzi/CVE-2023-30258-magnus-billing-v7-exploit)
 - [Chocapikk/CVE-2023-30258](https://github.com/Chocapikk/CVE-2023-30258)
 - [n00o00b/CVE-2023-30258-RCE-POC](https://github.com/n00o00b/CVE-2023-30258-RCE-POC)
-- [AdityaBhatt3010/TryHackMe-Room-Walkthrough-Billing](https://github.com/AdityaBhatt3010/TryHackMe-Room-Walkthrough-Billing)
+- [AdityaBhatt3010/Room-Walkthrough-Billing](https://github.com/AdityaBhatt3010/Room-Walkthrough-Billing)
 - [abdullohqurbon0v/CVE-2023-30258-Exploit-For-Magnus-Billing-System](https://github.com/abdullohqurbon0v/CVE-2023-30258-Exploit-For-Magnus-Billing-System)
 - [CankunWang/Tryhackme_Billing](https://github.com/CankunWang/Tryhackme_Billing)
 - [kayl22/magnus_billing_7.3.0_RCE_CVE-2023-30258](https://github.com/kayl22/magnus_billing_7.3.0_RCE_CVE-2023-30258)
@@ -37556,6 +37598,7 @@
 - [seal-sec-demo-2/yaml-payload](https://github.com/seal-sec-demo-2/yaml-payload)
 - [jelee2555/CVE-2022-1471-attacker](https://github.com/jelee2555/CVE-2022-1471-attacker)
 - [anupamojha-eng/sentinel-transitive-cve-demo](https://github.com/anupamojha-eng/sentinel-transitive-cve-demo)
+- [seal-sec-demo-2/Java-Example](https://github.com/seal-sec-demo-2/Java-Example)
 
 ### CVE-2022-1565 (2022-07-18)
 
@@ -40823,6 +40866,7 @@
 - [test-avm-714877d2df585126/vuln-ejs-critical](https://github.com/test-avm-714877d2df585126/vuln-ejs-critical)
 - [test-avm-714877d2df585126/C-test-2](https://github.com/test-avm-714877d2df585126/C-test-2)
 - [taka3636/CVE-2022-29078](https://github.com/taka3636/CVE-2022-29078)
+- [seal-sec-demo-2/JavaScript-Example](https://github.com/seal-sec-demo-2/JavaScript-Example)
 
 ### CVE-2022-29154 (2022-08-02)
 
@@ -54459,6 +54503,7 @@
 - [j4k0m/loader-CVE-2020-14343](https://github.com/j4k0m/loader-CVE-2020-14343)
 - [Kairo-one/CVE-2020-14343-PyYAML](https://github.com/Kairo-one/CVE-2020-14343-PyYAML)
 - [sijie52/yasa-cve-2020-14343](https://github.com/sijie52/yasa-cve-2020-14343)
+- [seal-sec-demo-2/Python-Example](https://github.com/seal-sec-demo-2/Python-Example)
 
 ### CVE-2020-14356 (2020-08-19)
 
@@ -64019,6 +64064,13 @@
 
 - [snappyJack/CVE-2018-16373](https://github.com/snappyJack/CVE-2018-16373)
 
+### CVE-2018-16385 (2018-09-03)
+
+<code>ThinkPHP before 5.1.23 allows SQL Injection via the public/index/index/test/index query string.
+</code>
+
+- [buzhimingdeaikun/SQL-ThinkPHP-5.0.24-RCE-](https://github.com/buzhimingdeaikun/SQL-ThinkPHP-5.0.24-RCE-)
+
 ### CVE-2018-16431 (2018-09-04)
 
 <code>admin/admin/adminsave.html in YFCMF v3.0 allows CSRF to add an administrator account.
@@ -66901,13 +66953,6 @@
 </code>
 
 - [aress31/cve-2017-12945](https://github.com/aress31/cve-2017-12945)
-
-### CVE-2017-13077 (2017-10-17)
-
-<code>Wi-Fi Protected Access (WPA and WPA2) allows reinstallation of the Pairwise Transient Key (PTK) Temporal Key (TK) during the four-way handshake, allowing an attacker within radio range to replay, decrypt, or spoof frames.
-</code>
-
-- [mugheeskhan5/wpa2-zero-hardware-krack-lab](https://github.com/mugheeskhan5/wpa2-zero-hardware-krack-lab)
 
 ### CVE-2017-13089 (2017-10-27)
 
