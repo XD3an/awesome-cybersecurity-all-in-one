@@ -3886,6 +3886,13 @@
 
 - [oscerd/CVE-2026-46456](https://github.com/oscerd/CVE-2026-46456)
 
+### CVE-2026-46457 (2026-07-06)
+
+<code>Improper Input Validation vulnerability in Apache Camel NATS component.\n\nThe camel-nats component maps inbound NATS message headers into the Camel Exchange but defaulted its headerFilterStrategy to a bare new DefaultHeaderFilterStrategy() with no inbound rules configured (NatsConfiguration). With no inFilter, inFilterPattern or inFilterStartsWith set, DefaultHeaderFilterStrategy.applyFilterToExternalHeaders returns not filtered for every header name, so NatsConsumer copies every NATS message header - including Camel-internal control headers such as CamelHttpUri, CamelFileName or CamelSqlQuery - unmodified onto the Camel message. A client able to publish to the consumed NATS subject can therefore inject arbitrary Camel control headers that influence the behaviour of downstream producers in the route (for example redirecting an HTTP producer, changing a file name, or overriding a query); the injected headers also persist across internal direct, seda and vm hops. The concrete downstream impact depends on which producers the route uses. NATS message headers require NATS 2.2 or later, and the issue is reachable without credentials when the NATS server is configured without authentication (the NATS server default).\nThis issue affects Apache Camel: from 4.0.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. The fix makes camel-nats default to a dedicated NatsHeaderFilterStrategy that filters the Camel header namespace case-insensitively on inbound mapping, so client-supplied Camel* / camel* headers are no longer copied into the Exchange. For deployments that cannot upgrade immediately, strip the Camel control headers from inbound NATS messages before they reach any downstream producer (for example removeHeaders('Camel*') and removeHeaders('camel*') at the start of the route), and enable authentication on the NATS server so that only trusted clients can publish to the consumed subject.
+</code>
+
+- [oscerd/CVE-2026-46457](https://github.com/oscerd/CVE-2026-46457)
+
 ### CVE-2026-46490 (2026-06-08)
 
 <code>samlify is a Node.js library for SAML single sign-on. Prior to version 2.13.0, samlify’s template substitution only escapes attribute contexts. Values inserted into element text (e.g., &lt;saml:AttributeValue&gt;) are not escaped. A normal user can inject XML markup into an attribute value (e.g., email, name) and add new &lt;saml:Attribute&gt; elements inside the signed assertion. The IdP then signs the tampered assertion and the SP accepts the injected attributes as trusted. This allows privilege escalation when attributes are used for authorization (roles/groups). This issue has been patched in version 2.13.0.
@@ -4477,6 +4484,9 @@
 ### CVE-2026-52217
 - [teteco/CVE-2026-52217-VTEX-Checkout-CrossTenant-IDOR](https://github.com/teteco/CVE-2026-52217-VTEX-Checkout-CrossTenant-IDOR)
 
+### CVE-2026-52614
+- [Chinesespeople/CVE-2026-52614](https://github.com/Chinesespeople/CVE-2026-52614)
+
 ### CVE-2026-52658
 - [mirackayikci/CVE-2026-52658](https://github.com/mirackayikci/CVE-2026-52658)
 
@@ -4732,7 +4742,7 @@
 - [thecodeb0ss/CVE-2026-55488](https://github.com/thecodeb0ss/CVE-2026-55488)
 
 ### CVE-2026-55494
-- [4qu4r1um/tugtainer-1.30.2-RCE](https://github.com/4qu4r1um/tugtainer-1.30.2-RCE)
+- [4qu4r1um/tugtainer-1.30.2-CVE-2026-55494-and-CVE-2026-62308-to-RCE](https://github.com/4qu4r1um/tugtainer-1.30.2-CVE-2026-55494-and-CVE-2026-62308-to-RCE)
 
 ### CVE-2026-55584
 - [mirackayikci/CVE-2026-55584](https://github.com/mirackayikci/CVE-2026-55584)
@@ -8176,6 +8186,7 @@
 </code>
 
 - [ahmedumarehman/CVE-2025-21293](https://github.com/ahmedumarehman/CVE-2025-21293)
+- [Dashlane04/threat-simlab](https://github.com/Dashlane04/threat-simlab)
 
 ### CVE-2025-21298 (2025-01-14)
 
@@ -14278,6 +14289,7 @@
 - [JazzTheRabbit/FreePBX-SQLi-RCE](https://github.com/JazzTheRabbit/FreePBX-SQLi-RCE)
 - [Its1Zero/cve-2025-57819-exploit](https://github.com/Its1Zero/cve-2025-57819-exploit)
 - [K3ysTr0K3R/CVE-2025-57819](https://github.com/K3ysTr0K3R/CVE-2025-57819)
+- [Samik-Parajuli/htb-connected-writeup](https://github.com/Samik-Parajuli/htb-connected-writeup)
 
 ### CVE-2025-57833 (2025-09-03)
 
@@ -33921,6 +33933,7 @@
 - [cleanmgr112/cve-2023-38646-poc](https://github.com/cleanmgr112/cve-2023-38646-poc)
 - [BreezeGalaxy/CVE-2023-38646](https://github.com/BreezeGalaxy/CVE-2023-38646)
 - [NosrevytsNg/Metabase-Pre-Auth-RCE-POC](https://github.com/NosrevytsNg/Metabase-Pre-Auth-RCE-POC)
+- [Kushiro45/metabase-cve-2023-38646](https://github.com/Kushiro45/metabase-cve-2023-38646)
 
 ### CVE-2023-38709 (2024-04-04)
 
@@ -36847,13 +36860,6 @@
 </code>
 
 - [hackintoanetwork/CVE-2023-52235-PoC-SPACEX-STARLINK-DNS-Rebinding](https://github.com/hackintoanetwork/CVE-2023-52235-PoC-SPACEX-STARLINK-DNS-Rebinding)
-
-### CVE-2023-52251 (2024-01-25)
-
-<code>An issue discovered in provectus kafka-ui 0.4.0 through 0.7.1 allows remote attackers to execute arbitrary code via the q parameter of /api/clusters/local/topics/{topic}/messages.
-</code>
-
-- [BobTheShoplifter/CVE-2023-52251-POC](https://github.com/BobTheShoplifter/CVE-2023-52251-POC)
 
 ### CVE-2023-52268 (2024-11-12)
 
@@ -44859,6 +44865,7 @@
 - [GodOfServer/CVE-2021-3129](https://github.com/GodOfServer/CVE-2021-3129)
 - [Prabesh01/hoh4](https://github.com/Prabesh01/hoh4)
 - [lukwagoasuman/CVE-2021-3129---Laravel-RCE](https://github.com/lukwagoasuman/CVE-2021-3129---Laravel-RCE)
+- [M4rrow/CVE-2021-3129](https://github.com/M4rrow/CVE-2021-3129)
 
 ### CVE-2021-3130 (2021-01-20)
 
@@ -47381,13 +47388,6 @@
 
 - [3h6-1/CVE-2021-30862](https://github.com/3h6-1/CVE-2021-30862)
 
-### CVE-2021-30937 (2021-08-24)
-
-<code>A memory corruption vulnerability was addressed with improved locking. This issue is fixed in macOS Big Sur 11.6.2, tvOS 15.2, macOS Monterey 12.1, Security Update 2021-008 Catalina, iOS 15.2 and iPadOS 15.2, watchOS 8.3. A malicious application may be able to execute arbitrary code with kernel privileges.
-</code>
-
-- [realrodri/ExploiteameEsta](https://github.com/realrodri/ExploiteameEsta)
-
 ### CVE-2021-30955 (2021-08-24)
 
 <code>A race condition was addressed with improved state handling. This issue is fixed in macOS Monterey 12.1, watchOS 8.3, iOS 15.2 and iPadOS 15.2, tvOS 15.2. A malicious application may be able to execute arbitrary code with kernel privileges.
@@ -47985,7 +47985,6 @@
 - [YouGina/CVE-2021-35042](https://github.com/YouGina/CVE-2021-35042)
 - [mrlihd/CVE-2021-35042](https://github.com/mrlihd/CVE-2021-35042)
 - [r4vi/CVE-2021-35042](https://github.com/r4vi/CVE-2021-35042)
-- [zer0qs/CVE-2021-35042](https://github.com/zer0qs/CVE-2021-35042)
 - [LUUANHDUC/CVE-2021-35042](https://github.com/LUUANHDUC/CVE-2021-35042)
 - [vutiendat323/INT14107_CVE-2021-35042](https://github.com/vutiendat323/INT14107_CVE-2021-35042)
 
@@ -50449,6 +50448,7 @@
 - [hmxh123/Log4Shell-Vulnerability-Replication](https://github.com/hmxh123/Log4Shell-Vulnerability-Replication)
 - [limxuan/ehir-vuln-enterprise-login](https://github.com/limxuan/ehir-vuln-enterprise-login)
 - [DAADAISMYLIFE/log4shell-lab](https://github.com/DAADAISMYLIFE/log4shell-lab)
+- [Ricardo354/homelab-CVE-2021-44228](https://github.com/Ricardo354/homelab-CVE-2021-44228)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -66095,6 +66095,7 @@
 - [Wyl-cmd/CVE-2017-7921-Research-Toolkit](https://github.com/Wyl-cmd/CVE-2017-7921-Research-Toolkit)
 - [mverschu/CVE-2017-7921](https://github.com/mverschu/CVE-2017-7921)
 - [KelvinWin10/CVE-2017-7921-rewrite](https://github.com/KelvinWin10/CVE-2017-7921-rewrite)
+- [MK-ULTRA-project-monarch/CVE-2017-7921-Writeup-2026](https://github.com/MK-ULTRA-project-monarch/CVE-2017-7921-Writeup-2026)
 
 ### CVE-2017-7998 (2018-01-08)
 
@@ -70900,6 +70901,7 @@
 - [chef-boneyard/bash-shellshock](https://github.com/chef-boneyard/bash-shellshock)
 - [gina-alaska/bash-cve-2014-7169-cookbook](https://github.com/gina-alaska/bash-cve-2014-7169-cookbook)
 - [Gobinath-B/SHELL-SCHOCK](https://github.com/Gobinath-B/SHELL-SCHOCK)
+- [Kushiro45/shellshock-poc-cve-2014-7169](https://github.com/Kushiro45/shellshock-poc-cve-2014-7169)
 
 ### CVE-2014-7205 (2014-10-08)
 
@@ -72086,6 +72088,7 @@
 - [kn9annihilator/CVE-2011-2523-vsFTPd-2.3.4-Writeup](https://github.com/kn9annihilator/CVE-2011-2523-vsFTPd-2.3.4-Writeup)
 - [Orevic21/wazuh-home-soc](https://github.com/Orevic21/wazuh-home-soc)
 - [solomonhenry-afk/vsftpd-cve-2011-2523-detection-signature](https://github.com/solomonhenry-afk/vsftpd-cve-2011-2523-detection-signature)
+- [IndiQuarks/vsftpd-cve-2011-2523-lab](https://github.com/IndiQuarks/vsftpd-cve-2011-2523-lab)
 
 ### CVE-2011-2553
 - [carlosrpastrana/cve-2011-2553](https://github.com/carlosrpastrana/cve-2011-2553)
@@ -73540,6 +73543,7 @@
 - [threatlabindonesia/CVE-1999-0524-ICMP-Timestamp-and-Address-Mask-Request-Exploit](https://github.com/threatlabindonesia/CVE-1999-0524-ICMP-Timestamp-and-Address-Mask-Request-Exploit)
 - [Ransc0rp1on/ICMP-Timestamp-POC](https://github.com/Ransc0rp1on/ICMP-Timestamp-POC)
 - [b1tsec/CVE-1999-0524](https://github.com/b1tsec/CVE-1999-0524)
+- [biontdv/CVE-1999-0524-POC](https://github.com/biontdv/CVE-1999-0524-POC)
 
 ### CVE-1999-0532 (2000-02-04)
 
