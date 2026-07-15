@@ -93,6 +93,7 @@
 - [whattheslime/CVE-2026-0740](https://github.com/whattheslime/CVE-2026-0740)
 - [a24ac1/CVE-2026-0740](https://github.com/a24ac1/CVE-2026-0740)
 - [ExDev994/CVE-2026-0740-mass](https://github.com/ExDev994/CVE-2026-0740-mass)
+- [MadExploits/ninja-form-exploit](https://github.com/MadExploits/ninja-form-exploit)
 
 ### CVE-2026-0745 (2026-02-14)
 
@@ -776,7 +777,7 @@
 
 ### CVE-2026-8023 (2026-06-29)
 
-<code>Zephyr's HTTP server (subsys/net/lib/http) provides a static-filesystem resource type (HTTP_RESOURCE_TYPE_STATIC_FS, available when CONFIG_FILE_SYSTEM is enabled) that serves files from a configured root directory. Before this fix, both the HTTP/1 and HTTP/2 front-ends placed the raw, attacker-controlled request path into client-url_buffer (assembled in on_url() for HTTP/1 and copied verbatim from the :path pseudo-header for HTTP/2) without resolving ./.. segments. The static-FS handler then built the on-disk filename by directly concatenating the configured root with that raw URL (snprintk(fname, ..., &quot;%s%s&quot;, static_fs_detail-fs_path, client-url_buffer) at http_server_http1.c:603 and http_server_http2.c:490) and opened it with fs_open(fname, FS_O_READ). Because the handler is reached via wildcard/leading-dir (fnmatch FNM_LEADING_DIR) or fallback resource matching, a request such as GET /&lt;prefix/../../&lt;file is dispatched to the handler and, after the underlying filesystem (e.g. LittleFS/FAT) resolves the .. segments, escapes the configured web root, letting an unauthenticated remote client read arbitrary readable files on the mounted volume (information disclosure). The HTTP server requires no TLS or authentication to reach this path. The fix adds http_server_remove_dot_segments(), which canonicalizes the path portion of the URL before resource lookup in both protocol handlers, neutralizing the traversal. Affects releases v4.0.0 through v4.4.0 for deployments that register a static-filesystem resource.
+<code>Zephyr's HTTP server (subsys/net/lib/http) provides a static-filesystem resource type (HTTP_RESOURCE_TYPE_STATIC_FS, available when CONFIG_FILE_SYSTEM is enabled) that serves files from a configured root directory. Before this fix, both the HTTP/1 and HTTP/2 front-ends placed the raw, attacker-controlled request path into client-&gt;url_buffer (assembled in on_url() for HTTP/1 and copied verbatim from the :path pseudo-header for HTTP/2) without resolving ./.. segments. The static-FS handler then built the on-disk filename by directly concatenating the configured root with that raw URL (snprintk(fname, ..., &quot;%s%s&quot;, static_fs_detail-&gt;fs_path, client-&gt;url_buffer) at http_server_http1.c:603 and http_server_http2.c:490) and opened it with fs_open(fname, FS_O_READ). Because the handler is reached via wildcard/leading-dir (fnmatch FNM_LEADING_DIR) or fallback resource matching, a request such as GET /&lt;prefix&gt;/../../&lt;file&gt; is dispatched to the handler and, after the underlying filesystem (e.g. LittleFS/FAT) resolves the .. segments, escapes the configured web root, letting an unauthenticated remote client read arbitrary readable files on the mounted volume (information disclosure). The HTTP server requires no TLS or authentication to reach this path. The fix adds http_server_remove_dot_segments(), which canonicalizes the path portion of the URL before resource lookup in both protocol handlers, neutralizing the traversal. Affects releases v4.0.0 through v4.4.0 for deployments that register a static-filesystem resource.
 </code>
 
 - [ret2c/CVE-2026-8023](https://github.com/ret2c/CVE-2026-8023)
@@ -818,6 +819,7 @@
 - [Yucaerin/CVE-2026-8181](https://github.com/Yucaerin/CVE-2026-8181)
 - [Ez4rd1x1/CVE-2026-8181](https://github.com/Ez4rd1x1/CVE-2026-8181)
 - [Squamity/CVE-2026-8181-PoC](https://github.com/Squamity/CVE-2026-8181-PoC)
+- [HudzaifahArrantisi/CVE-2026-8181](https://github.com/HudzaifahArrantisi/CVE-2026-8181)
 
 ### CVE-2026-8196 (2026-05-09)
 
@@ -1286,6 +1288,9 @@
 
 - [shinthink/CVE-2026-15282](https://github.com/shinthink/CVE-2026-15282)
 
+### CVE-2026-15706
+- [musana/CVE-2026-15706](https://github.com/musana/CVE-2026-15706)
+
 ### CVE-2026-20127 (2026-02-25)
 
 <code>A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, and Cisco Catalyst SD-WAN Validator, formerly SD-WAN vBond, could allow an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.\r\n\r\nThis vulnerability exists because the peering authentication mechanism in an affected system is not working properly. An attacker could exploit this vulnerability by sending crafted requests to an affected system. A successful exploit could allow the attacker to log in to an affected Cisco Catalyst SD-WAN Controller as an internal, high-privileged, non-root&amp;nbsp;user account. Using this account, the attacker could access NETCONF, which would then allow the attacker to manipulate network configuration for the SD-WAN fabric.&amp;nbsp;
@@ -1450,6 +1455,13 @@
 
 - [sentinel-aidefense/CVE-2026-21509](https://github.com/sentinel-aidefense/CVE-2026-21509)
 
+### CVE-2026-21628 (2026-03-05)
+
+<code>A improperly secured file management feature allows uploads of dangerous data types for unauthenticated users, leading to remote code execution.
+</code>
+
+- [webshellseo8/CVE-2026-21628-POC](https://github.com/webshellseo8/CVE-2026-21628-POC)
+
 ### CVE-2026-21852 (2026-01-21)
 
 <code>Claude Code is an agentic coding tool. Prior to version 2.0.65, vulnerability in Claude Code's project-load flow allowed malicious repositories to exfiltrate data including Anthropic API keys before users confirmed trust. An attacker-controlled repository could include a settings file that sets ANTHROPIC_BASE_URL to an attacker-controlled endpoint and when the repository was opened, Claude Code would read the configuration and immediately issue API requests before showing the trust prompt, potentially leaking the user's API keys. Users on standard Claude Code auto-update have received this fix already. Users performing manual updates are advised to update to version 2.0.65, which contains a patch, or to the latest version.
@@ -1610,6 +1622,7 @@
 - [diamorphine666/CVE-2026-23744-exploit](https://github.com/diamorphine666/CVE-2026-23744-exploit)
 - [0x77FSec/CVE-2026-23744](https://github.com/0x77FSec/CVE-2026-23744)
 - [ozcanpng/CVE-2026-23744](https://github.com/ozcanpng/CVE-2026-23744)
+- [CerberusMrXi/CVE-2026-23744-MCPJam-Exploit](https://github.com/CerberusMrXi/CVE-2026-23744-MCPJam-Exploit)
 
 ### CVE-2026-23760 (2026-01-22)
 
@@ -1844,6 +1857,12 @@
 
 ### CVE-2026-26555
 - [horrister/axios-supply-chain-cve-2026-26555](https://github.com/horrister/axios-supply-chain-cve-2026-26555)
+
+### CVE-2026-26718
+- [Ibrahim-Sartawi/CVE-2026-26718](https://github.com/Ibrahim-Sartawi/CVE-2026-26718)
+
+### CVE-2026-26719
+- [Ibrahim-Sartawi/CVE-2026-26719](https://github.com/Ibrahim-Sartawi/CVE-2026-26719)
 
 ### CVE-2026-26897
 - [iwallplace/CVE-2026-26897-EcoOnline-DeepLink](https://github.com/iwallplace/CVE-2026-26897-EcoOnline-DeepLink)
@@ -2133,7 +2152,7 @@
 
 ### CVE-2026-31309 (2026-07-08)
 
-<code>Improper authorization in the /tequilapi/config/user endpoint of Mysterium Node before v1.36.0 allows unauthenticated attackers to arbitrarily overwrite the node's configuration and achieve a full node takeover via supplying a crafted POST request.
+<code>Improper authorization in the /tequilapi/config/user endpoint of Mysterium Node from v1.21.1-rc0 before v1.36.0 allows an unauthenticated attacker to arbitrarily overwrite the node's configuration and achieve a full node takeover via a crafted POST request.
 </code>
 
 - [Sch8ill/CVE-2026-31309](https://github.com/Sch8ill/CVE-2026-31309)
@@ -2165,7 +2184,6 @@
 - [ochebotar/copy-fail-CVE-2026-31431-detection-probe](https://github.com/ochebotar/copy-fail-CVE-2026-31431-detection-probe)
 - [Liverwortenuresis371/copyfail-rs](https://github.com/Liverwortenuresis371/copyfail-rs)
 - [Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail](https://github.com/Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail)
-- [p401a-ops/Copy-Fail](https://github.com/p401a-ops/Copy-Fail)
 - [infiniroot/ansible-mitigate-copyfail-dirtyfrag](https://github.com/infiniroot/ansible-mitigate-copyfail-dirtyfrag)
 - [KaraZajac/DIRTYFAIL](https://github.com/KaraZajac/DIRTYFAIL)
 - [krisiasty/vcheck](https://github.com/krisiasty/vcheck)
@@ -2597,7 +2615,11 @@
 
 - [sec-zone/CVE-2026-36213](https://github.com/sec-zone/CVE-2026-36213)
 
-### CVE-2026-36214
+### CVE-2026-36214 (2026-07-14)
+
+<code>osTicket versions from 1.10 up to 1.17.7 and from 1.18.0 up to 1.18.3 are vulnerable to a stored XSS due to a vulnerable Bootstrap Tooltip component and insufficient HTML sanitization, allowing remote attackers to execute arbitrary JavaScript in Agent or Admin sessions.
+</code>
+
 - [WesWrench/CVE-2026-36214](https://github.com/WesWrench/CVE-2026-36214)
 - [amnsecurity/CVE-2026-36214-osTicket-XSS](https://github.com/amnsecurity/CVE-2026-36214-osTicket-XSS)
 
@@ -2799,6 +2821,13 @@
 </code>
 
 - [jjcjgo/CVE-2026-38812-RuoYi-SQL-Injection](https://github.com/jjcjgo/CVE-2026-38812-RuoYi-SQL-Injection)
+
+### CVE-2026-38934 (2026-04-27)
+
+<code>Cross Site Request Forgery vulnerability in diskoverdata diskover-community v.2.3.5. and before allows a remote attacker to escalate privileges and obtain sensitive information via the public/settings_process.php
+</code>
+
+- [VadlaReddySai/cve-writeups](https://github.com/VadlaReddySai/cve-writeups)
 
 ### CVE-2026-38945 (2026-05-27)
 
@@ -3403,12 +3432,15 @@
 - [caspy123/CVE-2026-43499](https://github.com/caspy123/CVE-2026-43499)
 - [x-spy/CVE-2026-43499-popsicle](https://github.com/x-spy/CVE-2026-43499-popsicle)
 - [dmcdtc/openvz-cve-patch-2026](https://github.com/dmcdtc/openvz-cve-patch-2026)
+- [JoinChang/ghostlock-oneplus](https://github.com/JoinChang/ghostlock-oneplus)
 - [Linuxoid-cn/Mi8E5-Unlocker-by-CVE-2026-43499](https://github.com/Linuxoid-cn/Mi8E5-Unlocker-by-CVE-2026-43499)
 - [joehquak/Mi8E5-Unlocker-by-CVE-2026-43499](https://github.com/joehquak/Mi8E5-Unlocker-by-CVE-2026-43499)
 - [Yakayna/SpringPeace](https://github.com/Yakayna/SpringPeace)
 - [Thiasap/oppo-pgem10-ghostlock](https://github.com/Thiasap/oppo-pgem10-ghostlock)
 - [CakesTwix/Android-CVE-2026-43499](https://github.com/CakesTwix/Android-CVE-2026-43499)
 - [Bartixxx32/CVE-2026-43499-OnePlus15](https://github.com/Bartixxx32/CVE-2026-43499-OnePlus15)
+- [Linuxoid-cn/CVE-2026-43499-Poc-Analysis](https://github.com/Linuxoid-cn/CVE-2026-43499-Poc-Analysis)
+- [qsvggff-spec/oppo-A5-PRO-5G-CVE-2026-43499](https://github.com/qsvggff-spec/oppo-A5-PRO-5G-CVE-2026-43499)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -3601,7 +3633,11 @@
 
 - [Cyber-DarkNay/CVE-2026-45034](https://github.com/Cyber-DarkNay/CVE-2026-45034)
 
-### CVE-2026-45067
+### CVE-2026-45067 (2026-07-14)
+
+<code>### Description\n\n`Symfony\Component\Mime\Address` is the value-object every Symfony Mailer address (to/cc/bcc/from/reply-to) flows through; its constructor is documented as validating the address and throwing on invalid input, so developers treat it as a security boundary.\n\nThe constructor accepts email addresses whose local-part (the part before `@`) is an RFC-5322 *quoted string* containing raw `\r\n` bytes — e.g. `&quot;x\r\nBcc: attacker@evil&quot;@example.com`. The stored address is later emitted verbatim into (1) the rendered message headers and (2) `SmtpTransport`'s `MAIL FROM:&lt;...&gt;` / `RCPT TO:&lt;...&gt;` protocol lines, turning the embedded CRLF into a new mail header and/or a new SMTP command.\n\n### Resolution\n\nThe `Address` constructor now rejects addresses containing line breaks.\n\nThe patch for this issue is available [here](https://github.com/symfony/symfony/commit/dc2dbd29211eb4ddc451373fa1374fb926e94604) for branch 5.4.\n\n### Credits\n\nWe would like to thank Claude Mythos Preview (via Project Glasswing) for reporting the issue and providing the fix.
+</code>
+
 - [HORKimhab/CVE-2026-45067](https://github.com/HORKimhab/CVE-2026-45067)
 
 ### CVE-2026-45091 (2026-05-12)
@@ -3922,6 +3958,13 @@
 
 - [0xmrma/CVE-2026-46558](https://github.com/0xmrma/CVE-2026-46558)
 
+### CVE-2026-46584 (2026-07-06)
+
+<code>Improper Input Validation, Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Apache Camel Mail Component.\n\nThe camel-mail producer (MailProducer.getSender) scanned the outgoing Exchange for message headers in the mail.smtp. / mail.smtps. namespace and, when any were present, built a per-message JavaMail sender with those values applied as JavaMail session properties, overriding the endpoint configuration. This namespace is Camel-internal - only MailProducer interprets it - and was not blocked by any HeaderFilterStrategy, so the values could originate from any inbound protocol (for example platform-http query parameters or request headers, or JMS / Kafka messages from untrusted producers) that feeds a route ending in an smtp / smtps producer without an intervening removeHeaders. The maximal impact is version-dependent: on releases before 4.19.0, setting mail.smtp.host redirects the SMTP connection to a server under the attacker's control, and because the producer then authenticates with the endpoint's configured username and password those credentials are transmitted to the attacker; on 4.19.0 and later the producer connects to the endpoint's configured host explicitly, so the reachable impact is limited to weakening transport security (for example mail.smtp.ssl.trust, mail.smtp.starttls.enable or mail.smtp.socks.host) and interception of the outgoing message rather than host redirect. Exploitation requires a route that channels untrusted input into the mail producer without stripping the namespace.\nThis issue affects Apache Camel: from 4.0.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. After upgrading, the per-message override is disabled by default; enable it only on trusted endpoints with useJavaMailSessionPropertiesFromHeaders=true. For deployments that cannot upgrade immediately, strip the namespace before the mail producer with removeHeaders('mail.smtp.*') and removeHeaders('mail.smtps.*') between any untrusted ingress and the smtp / smtps producer. Even with the opt-in enabled, route authors should still strip the namespace on any path that carries untrusted input.
+</code>
+
+- [oscerd/CVE-2026-46584](https://github.com/oscerd/CVE-2026-46584)
+
 ### CVE-2026-46645 (2026-06-10)
 
 <code>SQLAdmin is a flexible Admin interface for SQLAlchemy models. Prior to version 0.25.1, the ajax_lookup endpoint in application.py bypasses the is_accessible() access control check that all other endpoints enforce. If a developer restricts model access by overriding is_accessible(), an authenticated user can still query that model's data through the ajax_lookup endpoint — silently bypassing the restriction. This issue has been patched in version 0.25.1.
@@ -3987,10 +4030,18 @@
 
 - [ManagerEmpty/CVE-2026-47291-httpsys](https://github.com/ManagerEmpty/CVE-2026-47291-httpsys)
 
-### CVE-2026-47423
+### CVE-2026-47423 (2026-07-14)
+
+<code>DOMPurify is a DOM-only cross-site scripting sanitizer for HTML, MathML, and SVG. In 3.4.4, DOMPurify allowed selectedcontent by default, allowing browsers to re-clone an XSS payload after sanitization so that unsanitized markup inside &lt;selectedcontent&gt; is returned. This issue is fixed in version 3.4.5.
+</code>
+
 - [Galaxy-sc/CVE-2026-47423-dompurify-xss-detector](https://github.com/Galaxy-sc/CVE-2026-47423-dompurify-xss-detector)
 
-### CVE-2026-47429
+### CVE-2026-47429 (2026-07-14)
+
+<code>Vitest is a testing framework powered by Vite. Prior to 3.2.5 and 4.1.0, the Vitest UI/API server on Windows used isFileServingAllowed incorrectly for /__vitest_attachment__, allowing \\?\\..\\ path traversal to read files outside the project; exposed API write and rerun features such as saveTestFile and rerun could also allow arbitrary script execution. This issue is fixed in versions 3.2.5 and 4.1.0.
+</code>
+
 - [az9713/cve-lite-on-pi](https://github.com/az9713/cve-lite-on-pi)
 
 ### CVE-2026-47668
@@ -4079,7 +4130,6 @@
 <code>Improper authentication checks in the OAuth implementation allow account hijacking even when OAuth is not configured or enabled leading to unauthorized access in default installations.
 </code>
 
-- [citruscitruscitruscitruscitrusci/CVE-2026-48611-poc](https://github.com/citruscitruscitruscitruscitrusci/CVE-2026-48611-poc)
 - [Diznev/CVE-2026-48611-EXPLOIT](https://github.com/Diznev/CVE-2026-48611-EXPLOIT)
 - [wanmywan/CVE-2026-48611-phpBB](https://github.com/wanmywan/CVE-2026-48611-phpBB)
 
@@ -4413,6 +4463,13 @@
 
 - [zero-trace7/CVE-2026-50229](https://github.com/zero-trace7/CVE-2026-50229)
 
+### CVE-2026-50338 (2026-07-14)
+
+<code>Improper authentication in Azure Spring Apps allows an authorized attacker to elevate privileges over a network.
+</code>
+
+- [JohannesLks/CVE-2026-50338](https://github.com/JohannesLks/CVE-2026-50338)
+
 ### CVE-2026-50507 (2026-06-09)
 
 <code>Missing authentication for critical function in Windows BitLocker allows an unauthorized attacker to bypass a security feature with a physical attack.
@@ -4464,6 +4521,9 @@
 ### CVE-2026-51788
 - [aykhan32/CVE-2026-51788](https://github.com/aykhan32/CVE-2026-51788)
 
+### CVE-2026-51833
+- [dennywise/CVE-2026-51833-Public-Disclosure](https://github.com/dennywise/CVE-2026-51833-Public-Disclosure)
+
 ### CVE-2026-51947 (2026-07-01)
 
 <code>An issue in Pivotal CRM 6.6.4.08 and systems using patch-ghi-15381-cwe-502-20251225.zip (fixed in Pivotal CRM 6.6.5.10 and Patch_CWE502_20260316.zip) allows a remote attacker to execute arbitrary code via the Pivotal.Engine.Client.Services.Conversion.dll component. NOTE: this issue exists because of an incomplete fix for CVE-2026-39253.
@@ -4471,15 +4531,12 @@
 
 - [timtimxs/CVE-2026-51947-Advisory](https://github.com/timtimxs/CVE-2026-51947-Advisory)
 
-### CVE-2026-52100
-- [nk7667/-linx-server-vulnerability-report](https://github.com/nk7667/-linx-server-vulnerability-report)
+### CVE-2026-52100 (2026-07-14)
 
-### CVE-2026-52200 (2026-07-08)
-
-<code>An issue in Generic OEM UZ801_v2.1 4G LTE Router V3.4.3 allows a remote attacker to execute arbitrary code via the /ajax web management API endpoint in MifiService.apk
+<code>Cross Site Request Forgery vulnerability in andreimarcu linux-server v.1.0 through v.2.3.8 allows a remote attacker to execute arbitrary code via the uploadPutHandler function
 </code>
 
-- [lamaper/CVE-2026-52200](https://github.com/lamaper/CVE-2026-52200)
+- [nk7667/-linx-server-vulnerability-report](https://github.com/nk7667/-linx-server-vulnerability-report)
 
 ### CVE-2026-52217
 - [teteco/CVE-2026-52217-VTEX-Checkout-CrossTenant-IDOR](https://github.com/teteco/CVE-2026-52217-VTEX-Checkout-CrossTenant-IDOR)
@@ -4743,6 +4800,9 @@
 
 ### CVE-2026-55494
 - [4qu4r1um/tugtainer-1.30.2-CVE-2026-55494-and-CVE-2026-62308-to-RCE](https://github.com/4qu4r1um/tugtainer-1.30.2-CVE-2026-55494-and-CVE-2026-62308-to-RCE)
+
+### CVE-2026-55511
+- [junfuture1103/CVE-2026-55511](https://github.com/junfuture1103/CVE-2026-55511)
 
 ### CVE-2026-55584
 - [mirackayikci/CVE-2026-55584](https://github.com/mirackayikci/CVE-2026-55584)
@@ -5580,6 +5640,7 @@
 - [b0ySie7e/CVE-2025-3248-POC](https://github.com/b0ySie7e/CVE-2025-3248-POC)
 - [12-test-12/CVE-2025-3248](https://github.com/12-test-12/CVE-2025-3248)
 - [nebari-playground/langflow-cve-2025-3248](https://github.com/nebari-playground/langflow-cve-2025-3248)
+- [Atomics-hub/exposecheck](https://github.com/Atomics-hub/exposecheck)
 
 ### CVE-2025-3419 (2025-05-08)
 
@@ -10186,7 +10247,6 @@
 <code>This issue was addressed by removing the vulnerable code. This issue is fixed in macOS Sequoia 15.5. An app may be able to break out of its sandbox.
 </code>
 
-- [sureshkumarsat/CVE-2025-31258-PoC](https://github.com/sureshkumarsat/CVE-2025-31258-PoC)
 - [wh1te4ever/CVE-2025-31258-PoC](https://github.com/wh1te4ever/CVE-2025-31258-PoC)
 
 ### CVE-2025-31277 (2025-07-29)
@@ -14709,7 +14769,7 @@
 </code>
 
 - [pollotherunner/CVE-2025-61155](https://github.com/pollotherunner/CVE-2025-61155)
-- [sys0xff/CVE-2025-61155](https://github.com/sys0xff/CVE-2025-61155)
+- [sf0rzin/CVE-2025-61155](https://github.com/sf0rzin/CVE-2025-61155)
 
 ### CVE-2025-61183 (2025-10-08)
 
@@ -22517,7 +22577,6 @@
 - [Stuub/CVE-2024-29895-CactiRCE-PoC](https://github.com/Stuub/CVE-2024-29895-CactiRCE-PoC)
 - [secunnix/CVE-2024-29895](https://github.com/secunnix/CVE-2024-29895)
 - [ticofookfook/CVE-2024-29895.py](https://github.com/ticofookfook/CVE-2024-29895.py)
-- [apaz-dev/CVE-2024-29895](https://github.com/apaz-dev/CVE-2024-29895)
 
 ### CVE-2024-29943 (2024-03-22)
 
@@ -39030,7 +39089,7 @@
 - [xmqaq/CVE-2022-22963](https://github.com/xmqaq/CVE-2022-22963)
 - [jrbH4CK/CVE-2022-22963](https://github.com/jrbH4CK/CVE-2022-22963)
 - [Shayz614/CVE-2022-22963](https://github.com/Shayz614/CVE-2022-22963)
-- [cyberager/CVE-2022-22963](https://github.com/cyberager/CVE-2022-22963)
+- [808rsec/CVE-2022-22963](https://github.com/808rsec/CVE-2022-22963)
 
 ### CVE-2022-22965 (2022-04-01)
 
@@ -44496,13 +44555,6 @@
 
 - [Trinadh465/platform_art_AOSP10_r33_CVE-2021-0511](https://github.com/Trinadh465/platform_art_AOSP10_r33_CVE-2021-0511)
 
-### CVE-2021-0516 (2021-06-21)
-
-<code>In p2p_process_prov_disc_req of p2p_pd.c, there is a possible out of bounds read and write due to a use after free. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-8.1 Android-9 Android-10Android ID: A-181660448
-</code>
-
-- [Satheesh575555/external_wpa_supplicant_8_AOSP10_r33_CVE-2021-0516](https://github.com/Satheesh575555/external_wpa_supplicant_8_AOSP10_r33_CVE-2021-0516)
-
 ### CVE-2021-0520 (2021-06-21)
 
 <code>In several functions of MemoryFileSystem.cpp and related files, there is a possible use after free due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-10Android ID: A-176237595
@@ -44866,6 +44918,7 @@
 - [Prabesh01/hoh4](https://github.com/Prabesh01/hoh4)
 - [lukwagoasuman/CVE-2021-3129---Laravel-RCE](https://github.com/lukwagoasuman/CVE-2021-3129---Laravel-RCE)
 - [M4rrow/CVE-2021-3129](https://github.com/M4rrow/CVE-2021-3129)
+- [M4rrow/CVE-2021-3129-EXP](https://github.com/M4rrow/CVE-2021-3129-EXP)
 
 ### CVE-2021-3130 (2021-01-20)
 
@@ -48029,7 +48082,7 @@
 <code>Emote Interactive Remote Mouse 3.008 on Windows allows attackers to execute arbitrary programs as Administrator by using the Image Transfer Folder feature to navigate to cmd.exe. It binds to local ports to listen for incoming connections.
 </code>
 
-- [Goultarde/CVE-2021-35448_RemoteMouse-3.008-RCE](https://github.com/Goultarde/CVE-2021-35448_RemoteMouse-3.008-RCE)
+- [Goultarde/RemoteMouse-3.008-RCE](https://github.com/Goultarde/RemoteMouse-3.008-RCE)
 
 ### CVE-2021-35464 (2021-07-22)
 
@@ -49710,13 +49763,6 @@
 
 - [SakuraSamuraii/CVE-2021-43032](https://github.com/SakuraSamuraii/CVE-2021-43032)
 
-### CVE-2021-43129 (2022-04-19)
-
-<code>A bypass exists for Desire2Learn/D2L Brightspace’s “Disable Right Click” option in the quizzing feature, which allows a quiz-taker to access print and copy functionality via the browser’s right click menu even when “Disable Right Click” is enabled on the quiz.
-</code>
-
-- [Skotizo/CVE-2021-43129](https://github.com/Skotizo/CVE-2021-43129)
-
 ### CVE-2021-43141 (2021-11-03)
 
 <code>Cross Site Scripting (XSS) vulnerability exists in Sourcecodester Simple Subscription Website 1.0 via the id parameter in plan_application.
@@ -50449,6 +50495,7 @@
 - [limxuan/ehir-vuln-enterprise-login](https://github.com/limxuan/ehir-vuln-enterprise-login)
 - [DAADAISMYLIFE/log4shell-lab](https://github.com/DAADAISMYLIFE/log4shell-lab)
 - [Ricardo354/homelab-CVE-2021-44228](https://github.com/Ricardo354/homelab-CVE-2021-44228)
+- [AstralJays/TraditionalJay](https://github.com/AstralJays/TraditionalJay)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -53643,6 +53690,7 @@
 - [honeyb33z/cve-2020-11023-scanner](https://github.com/honeyb33z/cve-2020-11023-scanner)
 - [towaos/towaos-lab-cve-2020-11023](https://github.com/towaos/towaos-lab-cve-2020-11023)
 - [GarlicB/jquery35-local-agent](https://github.com/GarlicB/jquery35-local-agent)
+- [asoka666/Cve-2020-11023](https://github.com/asoka666/Cve-2020-11023)
 
 ### CVE-2020-11060 (2020-05-12)
 
@@ -55444,7 +55492,6 @@
 - [substing/CVE-2020-24186_reverse_shell_upload](https://github.com/substing/CVE-2020-24186_reverse_shell_upload)
 - [GazettEl/CVE-2020-24186](https://github.com/GazettEl/CVE-2020-24186)
 - [sec-dojo-com/CVE-2020-24186](https://github.com/sec-dojo-com/CVE-2020-24186)
-- [wvverez/CVE-2020-24186](https://github.com/wvverez/CVE-2020-24186)
 
 ### CVE-2020-24227 (2020-11-23)
 
@@ -58532,6 +58579,13 @@
 </code>
 
 - [mgrube/CVE-2019-9673](https://github.com/mgrube/CVE-2019-9673)
+
+### CVE-2019-9702 (2019-07-01)
+
+<code>Symantec Endpoint Encryption, prior to SEE 11.3.0, may be susceptible to a privilege escalation vulnerability, which is a type of issue that allows a user to gain elevated access to resources that are normally protected at lower access levels.
+</code>
+
+- [DavidCarliez/CVE-2019-9702_Symantec_Encryption_Desktop_LPE_PoC](https://github.com/DavidCarliez/CVE-2019-9702_Symantec_Encryption_Desktop_LPE_PoC)
 
 ### CVE-2019-9729 (2019-03-12)
 
@@ -71029,6 +71083,13 @@
 - [c0r3dump3d/wp_drupal_timing_attack](https://github.com/c0r3dump3d/wp_drupal_timing_attack)
 - [Primus27/WordPress-Long-Password-Denial-of-Service](https://github.com/Primus27/WordPress-Long-Password-Denial-of-Service)
 
+### CVE-2014-9173 (2014-12-02)
+
+<code>SQL injection vulnerability in view.php in the Google Doc Embedder plugin before 2.5.15 for WordPress allows remote attackers to execute arbitrary SQL commands via the gpid parameter.
+</code>
+
+- [ratiros01/CVE-2014-9173](https://github.com/ratiros01/CVE-2014-9173)
+
 ### CVE-2014-9219 (2014-12-08)
 
 <code>Cross-site scripting (XSS) vulnerability in the redirection feature in url.php in phpMyAdmin 4.2.x before 4.2.13.1 allows remote attackers to inject arbitrary web script or HTML via the url parameter.
@@ -73051,13 +73112,6 @@
 </code>
 
 - [defensahacker/CVE-2006-3747](https://github.com/defensahacker/CVE-2006-3747)
-
-### CVE-2006-3918 (2006-07-28)
-
-<code>http_protocol.c in (1) IBM HTTP Server 6.0 before 6.0.2.13 and 6.1 before 6.1.0.1, and (2) Apache HTTP Server 1.3 before 1.3.35, 2.0 before 2.0.58, and 2.2 before 2.2.2, does not sanitize the Expect header from an HTTP request when it is reflected back in an error message, which might allow cross-site scripting (XSS) style attacks using web client components that can send arbitrary headers in requests, as demonstrated using a Flash SWF file.
-</code>
-
-- [reallyngb/badstore-webapp-pentest](https://github.com/reallyngb/badstore-webapp-pentest)
 
 ### CVE-2006-4777 (2006-09-14)
 
