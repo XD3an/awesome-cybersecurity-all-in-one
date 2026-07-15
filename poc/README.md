@@ -301,7 +301,6 @@
 </code>
 
 - [BlackSnufkin/BYOVD](https://github.com/BlackSnufkin/BYOVD)
-- [BlackSnufkin/CredsHunter](https://github.com/BlackSnufkin/CredsHunter)
 
 ### CVE-2026-3629 (2026-03-21)
 
@@ -967,7 +966,6 @@
 - [11romain/CVE-2026-9082](https://github.com/11romain/CVE-2026-9082)
 - [sourcecode347/CVE-2026-9082-Mass_Scanner](https://github.com/sourcecode347/CVE-2026-9082-Mass_Scanner)
 - [eliHiHo/portfolio-drupal-cve-2026-9082](https://github.com/eliHiHo/portfolio-drupal-cve-2026-9082)
-- [MW-HF/Drupal-CVE-2026-9082](https://github.com/MW-HF/Drupal-CVE-2026-9082)
 
 ### CVE-2026-9256 (2026-05-22)
 
@@ -1231,6 +1229,13 @@
 
 - [0xBlackash/CVE-2026-12485](https://github.com/0xBlackash/CVE-2026-12485)
 
+### CVE-2026-13001 (2026-07-14)
+
+<code>The Podlove Podcast Publisher plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'podlove_handle_cache_files' function in all versions up to, and including, 4.5.1. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
+</code>
+
+- [Raimu0x19/CVE-2026-13001](https://github.com/Raimu0x19/CVE-2026-13001)
+
 ### CVE-2026-13768 (2026-07-02)
 
 <code>Gardyn devices expose a privileged iothubowner key. Access to this key will allow a malicious user to invoke an IoTHub Registry Manager function which returns connection information for all Gardyn Home Kit and Studio devices. Access to this key also allows a malicious user to execute arbitrary commands on a specific connected device and may allow the malicious user to pivot to other devices on the user's network.
@@ -1287,6 +1292,20 @@
 </code>
 
 - [shinthink/CVE-2026-15282](https://github.com/shinthink/CVE-2026-15282)
+
+### CVE-2026-15409 (2026-07-14)
+
+<code>A Server-side request forgery (SSRF) vulnerability has been identified in the SMA1000 Appliance Work Place interface. A remote unauthenticated attacker could potentially cause the appliance to make requests to unintended location.
+</code>
+
+- [HORKimhab/CVE-2026-15409](https://github.com/HORKimhab/CVE-2026-15409)
+
+### CVE-2026-15410 (2026-07-14)
+
+<code>Post-authentication improper control of generation of code ('Code Injection') vulnerability has been identified in the SMA1000 Appliance Management Console (AMC) which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands.
+</code>
+
+- [HORKimhab/CVE-2026-15410](https://github.com/HORKimhab/CVE-2026-15410)
 
 ### CVE-2026-15706
 - [musana/CVE-2026-15706](https://github.com/musana/CVE-2026-15706)
@@ -1908,6 +1927,13 @@
 
 - [xxconi/CVE-2026-27384](https://github.com/xxconi/CVE-2026-27384)
 
+### CVE-2026-27483 (2026-02-24)
+
+<code>MindsDB is a platform for building artificial intelligence from enterprise data. Prior to version 25.9.1.1, there is a path traversal vulnerability in Mindsdb's /api/files interface, which an authenticated attacker can exploit to achieve remote command execution. The vulnerability exists in the &quot;Upload File&quot; module, which corresponds to the API endpoint /api/files. Since the multipart file upload does not perform security checks on the uploaded file path, an attacker can perform path traversal by using `../` sequences in the filename field. The file write operation occurs before calling clear_filename and save_file, meaning there is no filtering of filenames or file types, allowing arbitrary content to be written to any path on the server. Version 25.9.1.1 patches the issue.
+</code>
+
+- [nabhan-mohy/cve-2026-27483-lab](https://github.com/nabhan-mohy/cve-2026-27483-lab)
+
 ### CVE-2026-27495 (2026-02-25)
 
 <code>n8n is an open source workflow automation platform. Prior to versions 2.10.1, 2.9.3, and 1.123.22, an authenticated user with permission to create or modify workflows could exploit a vulnerability in the JavaScript Task Runner sandbox to execute arbitrary code outside the sandbox boundary. On instances using internal Task Runners (default runner mode), this could result in full compromise of the n8n host. On instances using external Task Runners, the attacker might gain access to or impact other task executed on the Task Runner. Task Runners must be enabled using `N8N_RUNNERS_ENABLED=true`. The issue has been fixed in n8n versions 2.10.1, 2.9.3, and 1.123.22. Users should upgrade to one of these versions or later to remediate the vulnerability. If upgrading is not immediately possible, administrators should consider the following temporary mitigations. Limit workflow creation and editing permissions to fully trusted users only, and/or use external runner mode (`N8N_RUNNERS_MODE=external`) to limit the blast radius. These workarounds do not fully remediate the risk and should only be used as short-term mitigation measures.
@@ -1954,6 +1980,7 @@
 </code>
 
 - [BimaBalance/Cve-2026-27944-Tools-Exploit](https://github.com/BimaBalance/Cve-2026-27944-Tools-Exploit)
+- [Cosm3No1de/HTB-Snapped-Writeup](https://github.com/Cosm3No1de/HTB-Snapped-Writeup)
 
 ### CVE-2026-27966 (2026-02-26)
 
@@ -2669,6 +2696,9 @@
 
 ### CVE-2026-36590
 - [MoXie25/NanoMQ-Memory-Leak-Research](https://github.com/MoXie25/NanoMQ-Memory-Leak-Research)
+
+### CVE-2026-36669
+- [firstlax6t/CVE-2026-36669-FengOffice](https://github.com/firstlax6t/CVE-2026-36669-FengOffice)
 
 ### CVE-2026-36670 (2026-06-15)
 
@@ -3441,6 +3471,13 @@
 - [Bartixxx32/CVE-2026-43499-OnePlus15](https://github.com/Bartixxx32/CVE-2026-43499-OnePlus15)
 - [Linuxoid-cn/CVE-2026-43499-Poc-Analysis](https://github.com/Linuxoid-cn/CVE-2026-43499-Poc-Analysis)
 - [qsvggff-spec/oppo-A5-PRO-5G-CVE-2026-43499](https://github.com/qsvggff-spec/oppo-A5-PRO-5G-CVE-2026-43499)
+- [HYCQAQ/Logitech-G-Cloud-GhostLock-CVE-2026-43499](https://github.com/HYCQAQ/Logitech-G-Cloud-GhostLock-CVE-2026-43499)
+- [Colorful-glassblock/duchamp-root](https://github.com/Colorful-glassblock/duchamp-root)
+- [Cxyofficial/x200-cve-2026-43499](https://github.com/Cxyofficial/x200-cve-2026-43499)
+- [ctnBobong32/CVE-2026-43499-so-build](https://github.com/ctnBobong32/CVE-2026-43499-so-build)
+- [onesmiledx/CVE-2026-43499](https://github.com/onesmiledx/CVE-2026-43499)
+- [ctnBobong32/auto_extract_offsets](https://github.com/ctnBobong32/auto_extract_offsets)
+- [qianmo-xw/CVE-2026-43499-popsicle](https://github.com/qianmo-xw/CVE-2026-43499-popsicle)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -3758,7 +3795,6 @@
 - [ChanderManiPandey2022/Yellow-Key-Check](https://github.com/ChanderManiPandey2022/Yellow-Key-Check)
 - [ChanderManiPandey2022/YellowKey-BitLocker-Bypass-CVE-2026-45585-Detect-Fix-Automatically-via-Microsoft-Intune](https://github.com/ChanderManiPandey2022/YellowKey-BitLocker-Bypass-CVE-2026-45585-Detect-Fix-Automatically-via-Microsoft-Intune)
 - [Desireeontrial76/yellowkey-bitlocker](https://github.com/Desireeontrial76/yellowkey-bitlocker)
-- [yellow-key/yellowkey-bitlocker](https://github.com/yellow-key/yellowkey-bitlocker)
 
 ### CVE-2026-45659 (2026-05-22)
 
@@ -3965,6 +4001,27 @@
 
 - [oscerd/CVE-2026-46584](https://github.com/oscerd/CVE-2026-46584)
 
+### CVE-2026-46585 (2026-07-06)
+
+<code>Improper Input Validation, Authorization Bypass Through User-Controlled Key vulnerability in Apache Camel Lucene Component.\n\nThe camel-lucene producer reads the search phrase from an Exchange header (LuceneConstants.HEADER_QUERY) whose value was the plain string QUERY (and RETURN_LUCENE_DOCS for HEADER_RETURN_LUCENE_DOCS). Because these names do not start with the Camel / camel prefix, HttpHeaderFilterStrategy - which blocks only the Camel header namespace on the HTTP boundary - let them pass from an inbound HTTP request straight into the Exchange. In a route that exposes a Lucene query operation behind an HTTP consumer (for example platform-http), any HTTP client could therefore set the QUERY header and have its value executed against the full-text index, overriding the query the route intended to run. Depending on what is indexed, this allows reading documents the request should not have access to (for example a match-all query returns the entire index, or the route's intended per-user filter can be replaced), and expensive regular-expression queries can consume significant CPU. No credentials are required when the HTTP consumer is unauthenticated.\nThis issue affects Apache Camel: from 4.0.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. After upgrading, routes that set the query via the raw header name must use CamelLuceneQuery (and CamelLuceneReturnLuceneDocs) instead of QUERY / RETURN_LUCENE_DOCS. For deployments that cannot upgrade immediately, strip the attacker-controllable headers before the Lucene producer and set the query from a trusted source (for example removeHeader('QUERY') and removeHeader('RETURN_LUCENE_DOCS'), then setHeader('QUERY', constant(...)) at the start of the route).
+</code>
+
+- [oscerd/CVE-2026-46585](https://github.com/oscerd/CVE-2026-46585)
+
+### CVE-2026-46587 (2026-07-06)
+
+<code>Improper Input Validation vulnerability in Apache Camel.\n\nThis issue affects Apache Camel: through 4.14.7, from 4.15.0 through 4.18.2, from 4.19.0 through 4.20.0.\n\nUsers are recommended to upgrade to version 4.14.8, 4.18.3, 4.21.0, which fixes the issue.
+</code>
+
+- [oscerd/CVE-2026-46587](https://github.com/oscerd/CVE-2026-46587)
+
+### CVE-2026-46588 (2026-07-06)
+
+<code>Improper Input Validation vulnerability in Apache Camel.\n\nThis issue affects Apache Camel: through 4.14.7, from 4.15.0 through 4.18.2, from 4.19.0 through 4.20.0.\n\nUsers are recommended to upgrade to version 4.14.8, 4.18.3, 4.21.0, which fixes the issue.
+</code>
+
+- [oscerd/CVE-2026-46588](https://github.com/oscerd/CVE-2026-46588)
+
 ### CVE-2026-46645 (2026-06-10)
 
 <code>SQLAdmin is a flexible Admin interface for SQLAlchemy models. Prior to version 0.25.1, the ajax_lookup endpoint in application.py bypasses the is_accessible() access control check that all other endpoints enforce. If a developer restricts model access by overriding is_accessible(), an authenticated user can still query that model's data through the ajax_lookup endpoint — silently bypassing the restriction. This issue has been patched in version 0.25.1.
@@ -4110,6 +4167,7 @@
 
 - [imbas007/CVE-2026-48282](https://github.com/imbas007/CVE-2026-48282)
 - [g0thamRabb1t/CVE-2026-48282-coldfusion-rds-detection](https://github.com/g0thamRabb1t/CVE-2026-48282-coldfusion-rds-detection)
+- [arpit-bansal15/cve-2026-48282-pentest-lab](https://github.com/arpit-bansal15/cve-2026-48282-pentest-lab)
 
 ### CVE-2026-48558 (2026-06-12)
 
@@ -4485,6 +4543,13 @@
 - [g0thamRabb1t/CVE-2026-50656-rogueplanet-validation](https://github.com/g0thamRabb1t/CVE-2026-50656-rogueplanet-validation)
 - [0xBlackash/CVE-2026-50656](https://github.com/0xBlackash/CVE-2026-50656)
 
+### CVE-2026-50657 (2026-07-14)
+
+<code>Exposure of private personal information to an unauthorized actor in Microsoft Defender allows an authorized attacker to disclose information locally.
+</code>
+
+- [NeseOS-Corp/CVE-2026-50657](https://github.com/NeseOS-Corp/CVE-2026-50657)
+
 ### CVE-2026-50746 (2026-07-02)
 
 <code>A malicious actor with access to the network could exploit an Improper Access Control vulnerability found in UniFi Connect Application to execute a Command Injection on the host device.
@@ -4592,6 +4657,7 @@
 - [Aoripus-LTD/Januscape-Hotfix](https://github.com/Aoripus-LTD/Januscape-Hotfix)
 - [chuzhongyun/CVE-2026-53359-Kernel-Fix](https://github.com/chuzhongyun/CVE-2026-53359-Kernel-Fix)
 - [xj2268-TA/KVM-Januscape](https://github.com/xj2268-TA/KVM-Januscape)
+- [ndouglas-cloudsmith/CVE-2026-53359](https://github.com/ndouglas-cloudsmith/CVE-2026-53359)
 
 ### CVE-2026-53360 (2026-07-04)
 
@@ -4842,6 +4908,13 @@
 
 - [valium007/qiomem](https://github.com/valium007/qiomem)
 
+### CVE-2026-56164 (2026-07-14)
+
+<code>Missing authentication for critical function in Microsoft Office SharePoint allows an unauthorized attacker to elevate privileges over a network.
+</code>
+
+- [sentinel-aidefense/CVE-2026-56164-EXP](https://github.com/sentinel-aidefense/CVE-2026-56164-EXP)
+
 ### CVE-2026-56290 (2026-06-29)
 
 <code>The Joomla extension Page Builder CK is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.
@@ -4881,6 +4954,13 @@
 </code>
 
 - [ziad626/CVE-2026-56876-POC](https://github.com/ziad626/CVE-2026-56876-POC)
+
+### CVE-2026-57239 (2026-07-08)
+
+<code>The user-controllable executable files will be directly executed by high-privilege processes, allowing low-privilege users to have the opportunity to elevate their privileges to NT AUTHORITY\SYSTEM.
+</code>
+
+- [Paradoxis/CVE-2026-57239](https://github.com/Paradoxis/CVE-2026-57239)
 
 ### CVE-2026-57517 (2026-07-01)
 
@@ -4939,12 +5019,22 @@
 
 - [cybertechajju/CVE-2026-59734-POC](https://github.com/cybertechajju/CVE-2026-59734-POC)
 
+### CVE-2026-59827 (2026-07-09)
+
+<code>Metabase is an open-source business intelligence and embedded analytics tool. Prior to 1.58.15, 1.59.12, 1.60.6.3, and 1.61.1.4, Metabase instances with an H2 database connection, including the default sample database, deserialize arbitrary Java objects returned in H2 native query result columns of type OTHER without validation, allowing an authenticated user who can run native H2 queries to execute code on the Metabase server. This issue is fixed in versions 1.58.15, 1.59.12, 1.60.6.3, and 1.61.1.4.
+</code>
+
+- [c0gnit00/CVE-2026-59827](https://github.com/c0gnit00/CVE-2026-59827)
+
 ### CVE-2026-61343 (2026-07-09)
 
 <code>LibreBooking's email template editor save action passes the submitted template name directly into the destination file path, allowing a remote attacker with administrator credentials to write an arbitrary file outside the template directory and execute code. Fixed in 5.1.0.
 </code>
 
 - [nmagill123/CVE-2026-61343-poc-librebooking-rce](https://github.com/nmagill123/CVE-2026-61343-poc-librebooking-rce)
+
+### CVE-2026-62958
+- [0Linear/CVE-2026-62958](https://github.com/0Linear/CVE-2026-62958)
 
 ### CVE-2026-69212
 - [c0gnit00/CVE-2026-69212](https://github.com/c0gnit00/CVE-2026-69212)
@@ -9573,6 +9663,7 @@
 - [0x00Jeff/CVE-2025-27591](https://github.com/0x00Jeff/CVE-2025-27591)
 - [Stp1t/CVE-2025-27591](https://github.com/Stp1t/CVE-2025-27591)
 - [rippsec/CVE-2025-27591-Meta-below-LPE](https://github.com/rippsec/CVE-2025-27591-Meta-below-LPE)
+- [MoTechStore/CVE-2025-27591-PoC](https://github.com/MoTechStore/CVE-2025-27591-PoC)
 
 ### CVE-2025-27607 (2025-03-07)
 
@@ -14644,6 +14735,9 @@
 </code>
 
 - [m4sh-wacker/CVE-2025-60188-Atarim-Plugin-Exploit](https://github.com/m4sh-wacker/CVE-2025-60188-Atarim-Plugin-Exploit)
+
+### CVE-2025-60357
+- [Nullbyte3117/CVE-2025-60357](https://github.com/Nullbyte3117/CVE-2025-60357)
 
 ### CVE-2025-60424 (2025-10-27)
 
@@ -29484,7 +29578,6 @@
 </code>
 
 - [yoryio/CVE-2023-7028](https://github.com/yoryio/CVE-2023-7028)
-- [thanhlam-attt/CVE-2023-7028](https://github.com/thanhlam-attt/CVE-2023-7028)
 - [Trackflaw/CVE-2023-7028-Docker](https://github.com/Trackflaw/CVE-2023-7028-Docker)
 - [mochammadrafi/CVE-2023-7028](https://github.com/mochammadrafi/CVE-2023-7028)
 - [hackeremmen/gitlab-exploit](https://github.com/hackeremmen/gitlab-exploit)
@@ -35596,6 +35689,7 @@
 - [ladyg00se/CVE-2023-45866_WIP](https://github.com/ladyg00se/CVE-2023-45866_WIP)
 - [Sergeb250/BlueDucky](https://github.com/Sergeb250/BlueDucky)
 - [hegaz0y/-BuL](https://github.com/hegaz0y/-BuL)
+- [0xBADACTOR/CVE-2023-45866](https://github.com/0xBADACTOR/CVE-2023-45866)
 
 ### CVE-2023-45878 (2023-11-14)
 
@@ -39196,6 +39290,7 @@
 - [ernestom-commits/jfrog-apptrust-demo](https://github.com/ernestom-commits/jfrog-apptrust-demo)
 - [Kuri119/CVE-2022-22965-Spring4Shell](https://github.com/Kuri119/CVE-2022-22965-Spring4Shell)
 - [RootEvil333/CVE-2022-22965](https://github.com/RootEvil333/CVE-2022-22965)
+- [meng-security/spring4shell-local-verification-lab](https://github.com/meng-security/spring4shell-local-verification-lab)
 
 ### CVE-2022-22968 (2022-04-14)
 
@@ -43581,6 +43676,7 @@
 - [engranaabubakar/CVE-2022-42889](https://github.com/engranaabubakar/CVE-2022-42889)
 - [sangrok-jeon/CVE-2022-42889-Analysis](https://github.com/sangrok-jeon/CVE-2022-42889-Analysis)
 - [KosmicOwl045/ICT287-CVE-2022-42889](https://github.com/KosmicOwl045/ICT287-CVE-2022-42889)
+- [Hkaeeeer/CVE-2022-42889](https://github.com/Hkaeeeer/CVE-2022-42889)
 
 ### CVE-2022-42896 (2022-11-23)
 
@@ -44470,13 +44566,6 @@
 </code>
 
 - [Trinadh465/platform_external_gptfdisk_AOSP10_r33_CVE-2021-0308](https://github.com/Trinadh465/platform_external_gptfdisk_AOSP10_r33_CVE-2021-0308)
-
-### CVE-2021-0313 (2021-01-11)
-
-<code>In isWordBreakAfter of LayoutUtils.cpp, there is a possible way to slow or crash a TextView due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Product: Android; Versions: Android-9, Android-10, Android-11, Android-8.0, Android-8.1; Android ID: A-170968514.
-</code>
-
-- [Satheesh575555/frameworks_minikin_AOSP10_r33_CVE-2021-0313](https://github.com/Satheesh575555/frameworks_minikin_AOSP10_r33_CVE-2021-0313)
 
 ### CVE-2021-0315 (2021-01-11)
 
@@ -49358,6 +49447,7 @@
 - [johnwickakash12/CVE-2021-41773](https://github.com/johnwickakash12/CVE-2021-41773)
 - [lheeeesoo/Apache-CVE-2021-41773](https://github.com/lheeeesoo/Apache-CVE-2021-41773)
 - [ninthsgrsj-source/vulhub-apache](https://github.com/ninthsgrsj-source/vulhub-apache)
+- [0xrogg/CVE-2021-41773](https://github.com/0xrogg/CVE-2021-41773)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -57528,7 +57618,6 @@
 - [Avento/CVE-2019-3396-Memshell-for-Behinder](https://github.com/Avento/CVE-2019-3396-Memshell-for-Behinder)
 - [tranphuc2005/CVE-2019-3396](https://github.com/tranphuc2005/CVE-2019-3396)
 - [kh4sh3i/CVE-2019-3396](https://github.com/kh4sh3i/CVE-2019-3396)
-- [HK4zCzi/CVE-2019-3396-Velocity-Server-Side-Template-Injection](https://github.com/HK4zCzi/CVE-2019-3396-Velocity-Server-Side-Template-Injection)
 - [tno01/cve-2019-3396](https://github.com/tno01/cve-2019-3396)
 
 ### CVE-2019-3398 (2019-04-18)
@@ -58002,6 +58091,7 @@
 - [vino-theva/CVE-2019-6447](https://github.com/vino-theva/CVE-2019-6447)
 - [KaviDk/CVE-2019-6447-in-Mobile-Application](https://github.com/KaviDk/CVE-2019-6447-in-Mobile-Application)
 - [Cmadhushanka/CVE-2019-6447-Exploitation](https://github.com/Cmadhushanka/CVE-2019-6447-Exploitation)
+- [acloudinthebluesky/CVE-2019-6447-ES-File-Explorer](https://github.com/acloudinthebluesky/CVE-2019-6447-ES-File-Explorer)
 
 ### CVE-2019-6453 (2019-02-18)
 
