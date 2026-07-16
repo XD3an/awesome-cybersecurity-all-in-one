@@ -78,6 +78,13 @@
 
 - [HORKimhab/CVE-2026-0542](https://github.com/HORKimhab/CVE-2026-0542)
 
+### CVE-2026-0594 (2026-01-14)
+
+<code>The List Site Contributors plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'alpha' parameter in versions up to, and including, 1.1.8 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.
+</code>
+
+- [m4sh-wacker/CVE-2026-0594-ListSiteContributors-Plugin-Exploit](https://github.com/m4sh-wacker/CVE-2026-0594-ListSiteContributors-Plugin-Exploit)
+
 ### CVE-2026-0596 (2026-03-31)
 
 <code>A command injection vulnerability exists in mlflow/mlflow when serving a model with `enable_mlserver=True`. The `model_uri` is embedded directly into a shell command executed via `bash -c` without proper sanitization. If the `model_uri` contains shell metacharacters, such as `$()` or backticks, it allows for command substitution and execution of attacker-controlled commands. This vulnerability affects the latest version of mlflow/mlflow and can lead to privilege escalation if a higher-privileged service serves models from a directory writable by lower-privileged users.
@@ -337,6 +344,8 @@
 </code>
 
 - [willygailo/CVE-2026-3891-Linux](https://github.com/willygailo/CVE-2026-3891-Linux)
+- [m4sh-wacker/CVE-2026-3891-Pix-for-WooCommerce-Plugin-Exploit](https://github.com/m4sh-wacker/CVE-2026-3891-Pix-for-WooCommerce-Plugin-Exploit)
+- [shinthink/CVE-2026-3891](https://github.com/shinthink/CVE-2026-3891)
 
 ### CVE-2026-4020 (2026-03-31)
 
@@ -1180,6 +1189,13 @@
 
 - [Polosss/By-Poloss..-..CVE-2026-11912](https://github.com/Polosss/By-Poloss..-..CVE-2026-11912)
 
+### CVE-2026-11989 (2026-06-19)
+
+<code>The Bit integrations – Form Integration, Webhook, Spreadsheets, CRM, LMS &amp; Email Automation plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 2.8.7 via the upload_attachment. This makes it possible for unauthenticated attackers to make web requests to arbitrary locations originating from the web application and can be used to query and modify information from internal services. Exploitation requires a form integration to be configured with a field mapped to a WooCommerce product image, product gallery, downloadable files, or Google Contacts attachment field, which is a default use case for these integrations.
+</code>
+
+- [repo-ranger21/security-portfolio-chris-peterson](https://github.com/repo-ranger21/security-portfolio-chris-peterson)
+
 ### CVE-2026-12166 (2026-07-02)
 
 <code>A NULL pointer dereference vulnerability for driver `GFAC_Sys_x64.sys` in Little Orbit GFAC allows a local attacker to cause a denial of service via crafted requests that trigger a system crash.
@@ -1235,6 +1251,7 @@
 </code>
 
 - [Raimu0x19/CVE-2026-13001](https://github.com/Raimu0x19/CVE-2026-13001)
+- [shinthink/CVE-2026-13001](https://github.com/shinthink/CVE-2026-13001)
 
 ### CVE-2026-13768 (2026-07-02)
 
@@ -1279,12 +1296,22 @@
 
 - [tc4dy/CVE-2026-14762-PoC-Exploit](https://github.com/tc4dy/CVE-2026-14762-PoC-Exploit)
 
+### CVE-2026-14871
+- [JFOZ1010/CVE-2026-14871](https://github.com/JFOZ1010/CVE-2026-14871)
+
 ### CVE-2026-14894 (2026-07-10)
 
 <code>The Super Forms – Drag &amp; Drop Form Builder plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 6.3.313 via the submit_form function. This is due to missing file type validation and the absence of any capability check on the submit_form nopriv AJAX handler, whose only barrier is a session nonce freely obtainable by unauthenticated visitors via a separate nopriv endpoint. This makes it possible for unauthenticated attackers to upload files that may be executable, which makes remote code execution possible. The nonce requirement is trivially bypassed because the super_create_nonce nopriv AJAX action allows any unauthenticated visitor to mint a valid sf_nonce and session cookie in a single prior request, reducing exploitation to two unauthenticated HTTP requests.
 </code>
 
 - [1beelze/CVE-2026-14894](https://github.com/1beelze/CVE-2026-14894)
+
+### CVE-2026-14960 (2026-07-15)
+
+<code>Pegatron `Tdelo64.sys` improperly exposes privileged hardware access functionality through the `\\.\TdeIo` device interface. IOCTL handlers including `TDE_IOCTL_INDEXIO_READ` and `TDE_IOCTL_INDEXIO_WRITE` permit unprivileged user-mode callers to perform arbitrary hardware I/O port reads and writes without authorization checks. A local attacker can abuse this functionality to manipulate hardware registers, tamper with firmware-related interfaces, cause system instability, or establish persistent low-level compromise.
+</code>
+
+- [FzRsLLaSheR/CVE-2026-14960-CVE-2026-14961](https://github.com/FzRsLLaSheR/CVE-2026-14960-CVE-2026-14961)
 
 ### CVE-2026-15282 (2026-07-10)
 
@@ -1299,6 +1326,8 @@
 </code>
 
 - [HORKimhab/CVE-2026-15409](https://github.com/HORKimhab/CVE-2026-15409)
+- [remmons-r7/rapid7-CVE-2026-15409](https://github.com/remmons-r7/rapid7-CVE-2026-15409)
+- [0xBlackash/CVE-2026-15409](https://github.com/0xBlackash/CVE-2026-15409)
 
 ### CVE-2026-15410 (2026-07-14)
 
@@ -1459,6 +1488,13 @@
 </code>
 
 - [Filipemendonca1978/CVE-2026-21018](https://github.com/Filipemendonca1978/CVE-2026-21018)
+
+### CVE-2026-21045 (2026-07-10)
+
+<code>Out-of-bounds write in parsing TIFF format in libimagecodec.media.quram.so prior to SMR Jul-2026 Release 1 allows remote attackers to write out-of-bounds memory.
+</code>
+
+- [Filipemendonca1978/CVE-2026-21045_and_CVE-2026-21048](https://github.com/Filipemendonca1978/CVE-2026-21045_and_CVE-2026-21048)
 
 ### CVE-2026-21055 (2026-07-10)
 
@@ -1823,7 +1859,7 @@
 <code>Bytes is a utility library for working with bytes. From version 1.2.1 to before 1.11.1, Bytes is vulnerable to integer overflow in BytesMut::reserve. In the unique reclaim path of BytesMut::reserve, if the condition &quot;v_capacity &gt;= new_cap + offset&quot; uses an unchecked addition. When new_cap + offset overflows usize in release builds, this condition may incorrectly pass, causing self.cap to be set to a value that exceeds the actual allocated capacity. Subsequent APIs such as spare_capacity_mut() then trust this corrupted cap value and may create out-of-bounds slices, leading to UB. This behavior is observable in release builds (integer overflow wraps), whereas debug builds panic due to overflow checks. This issue has been patched in version 1.11.1.
 </code>
 
-- [hanyvert/cve-2026-25541-fuel-analysis](https://github.com/hanyvert/cve-2026-25541-fuel-analysis)
+- [trajanOx/cve-2026-25541-fuel-analysis](https://github.com/trajanOx/cve-2026-25541-fuel-analysis)
 
 ### CVE-2026-25555 (2026-06-08)
 
@@ -1877,10 +1913,18 @@
 ### CVE-2026-26555
 - [horrister/axios-supply-chain-cve-2026-26555](https://github.com/horrister/axios-supply-chain-cve-2026-26555)
 
-### CVE-2026-26718
+### CVE-2026-26718 (2026-07-15)
+
+<code>A Cross-Site Request Forgery (CSRF) vulnerability exists in the xxl-job-admin web application v.3.0.0 that allows an attacker to perform unauthorized modifications to Glue IDE shell scripts. The affected endpoint lacks proper CSRF token validation and accepts arbitrary HTTP methods via a permissive request mapping
+</code>
+
 - [Ibrahim-Sartawi/CVE-2026-26718](https://github.com/Ibrahim-Sartawi/CVE-2026-26718)
 
-### CVE-2026-26719
+### CVE-2026-26719 (2026-07-15)
+
+<code>Cross Site Scripting vulnerability in xxl-job-admin v.3.0.0 allows a remote attacker to execute arbitrary code via a crafted HTTP GET request containing a malicious script
+</code>
+
 - [Ibrahim-Sartawi/CVE-2026-26719](https://github.com/Ibrahim-Sartawi/CVE-2026-26719)
 
 ### CVE-2026-26897
@@ -2195,7 +2239,6 @@
 - [ryan2929/CVE-2026-31431](https://github.com/ryan2929/CVE-2026-31431)
 - [st4rburn/RootRemover](https://github.com/st4rburn/RootRemover)
 - [adampielak/CVE-2026-31431_SCA_WAZUH](https://github.com/adampielak/CVE-2026-31431_SCA_WAZUH)
-- [yandex-cloud-examples/yc-mk8s-copy-fail-mitigation](https://github.com/yandex-cloud-examples/yc-mk8s-copy-fail-mitigation)
 - [JuanBindez/CVE-2026-31431](https://github.com/JuanBindez/CVE-2026-31431)
 - [selectel/mks-copy-fail-mitigation](https://github.com/selectel/mks-copy-fail-mitigation)
 - [deckhouse/d8-copy-fail-mitigation](https://github.com/deckhouse/d8-copy-fail-mitigation)
@@ -2221,7 +2264,6 @@
 - [Lutfifakee-Project/CVE-2026-31431](https://github.com/Lutfifakee-Project/CVE-2026-31431)
 - [mauricioportela/CVE-2026-31431-Analysis](https://github.com/mauricioportela/CVE-2026-31431-Analysis)
 - [gbonacini/CVE-2026-31431](https://github.com/gbonacini/CVE-2026-31431)
-- [studiogangster/CVE-2026-31431](https://github.com/studiogangster/CVE-2026-31431)
 - [hyz-is/copyfail-fix](https://github.com/hyz-is/copyfail-fix)
 - [sh4den/CVE-2026-31431-copyfail-aarch64](https://github.com/sh4den/CVE-2026-31431-copyfail-aarch64)
 - [DroPZsec/SplicePrivillegeEscalationFIX](https://github.com/DroPZsec/SplicePrivillegeEscalationFIX)
@@ -2694,7 +2736,11 @@
 ### CVE-2026-36522
 - [deepwoodssec/CVE-2026-36522](https://github.com/deepwoodssec/CVE-2026-36522)
 
-### CVE-2026-36590
+### CVE-2026-36590 (2026-07-15)
+
+<code>An issue in EMQ NanoMQ v.0.24.9 allows a remote attacker to cause a denial of service via the nni_qos_db_set function in broker_tcp.c component
+</code>
+
 - [MoXie25/NanoMQ-Memory-Leak-Research](https://github.com/MoXie25/NanoMQ-Memory-Leak-Research)
 
 ### CVE-2026-36669
@@ -3294,6 +3340,13 @@
 - [v4ltonn/CVE-2026-42530](https://github.com/v4ltonn/CVE-2026-42530)
 - [0xBlackash/CVE-2026-42530](https://github.com/0xBlackash/CVE-2026-42530)
 
+### CVE-2026-42533 (2026-07-15)
+
+<code>A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and a string expression references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
+</code>
+
+- [0xCyberstan/CVE-2026-42533-Scanner](https://github.com/0xCyberstan/CVE-2026-42533-Scanner)
+
 ### CVE-2026-42568 (2026-06-10)
 
 <code>Yamcs is a mission control framework. Prior to versions 5.13.0 and 5.12.7, an LDAP injection vulnerability exists in `org.yamcs.security.LdapAuthModule` when constructing search filters. The username parameter is inserted directly into the LDAP filter without proper RFC 4515 escaping. Versions 5.13.0 and 5.12.7 patch the issue.
@@ -3805,7 +3858,11 @@
 - [mistbarbarianspot/CVE-2026-45659-SharePoint-RCE](https://github.com/mistbarbarianspot/CVE-2026-45659-SharePoint-RCE)
 - [amnsecurity/CVE-2026-45659-SharePoint-RCE](https://github.com/amnsecurity/CVE-2026-45659-SharePoint-RCE)
 
-### CVE-2026-45806
+### CVE-2026-45806 (2026-07-15)
+
+<code>Penpot is an open-source design tool for design and code collaboration. Prior to 2.15.0, Penpot's remote image import passed the user-controlled url from frontend/src/app/main/data/workspace/media.cljs into the backend RPC method :create-file-media-object-from-url in backend/src/app/rpc/commands/media.clj, where media/download-image in backend/src/app/media.clj used the shared HTTP client without destination filtering, allowing an authenticated file editor to reach internal-only endpoints. This issue is fixed in version 2.15.0.
+</code>
+
 - [0xmrma/CVE-2026-45806](https://github.com/0xmrma/CVE-2026-45806)
 
 ### CVE-2026-45829 (2026-05-18)
@@ -4021,6 +4078,20 @@
 </code>
 
 - [oscerd/CVE-2026-46588](https://github.com/oscerd/CVE-2026-46588)
+
+### CVE-2026-46590 (2026-07-06)
+
+<code>Deserialization of Untrusted Data vulnerability in Apache Camel PQC component.\n\nThe camel-pqc component persists post-quantum key metadata (KeyMetadata) through pluggable KeyLifecycleManager implementations. HashicorpVaultKeyLifecycleManager and AwsSecretsManagerKeyLifecycleManager read that metadata back from the configured secret backend by deserializing a Base64-wrapped value with a raw java.io.ObjectInputStream.readObject() and no ObjectInputFilter or class allow-list; the cast to KeyMetadata happens only after readObject() returns, so any readObject() side effects in a crafted object run before the type check. The same unfiltered legacy-migration read also remained in FileBasedKeyLifecycleManager (for the stored KeyPair and KeyMetadata). A principal who can write to the operator-controlled backend that holds these values - the HashiCorp Vault KV path, or the AWS Secrets Manager secret (requiring a Vault token or secretsmanager:PutSecretValue) - could store a crafted serialized object that is deserialized during normal key-lifecycle operations, potentially leading to code execution in the context of the application that manages the keys. This is an incomplete-remediation follow-on to CVE-2026-40048 (CAMEL-23200), which changed FileBasedKeyLifecycleManager to store metadata as JSON / PKCS#8 / X.509 but did not add an ObjectInputFilter, did not cover the Vault and AWS sibling managers, and left FileBasedKeyLifecycleManager's own legacy-migration deserialization unfiltered.\nThis issue affects Apache Camel: from 4.18.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.18.x LTS releases stream, then they are suggested to upgrade to 4.18.3. For deployments that cannot upgrade immediately, restrict write access to the key backend so that only the application's own identity can write the camel-pqc secrets (least-privilege HashiCorp Vault policies and secretsmanager:PutSecretValue IAM), and keep the PQC key material in a backend separate from any data that less-trusted principals can write.
+</code>
+
+- [oscerd/CVE-2026-46590](https://github.com/oscerd/CVE-2026-46590)
+
+### CVE-2026-46591 (2026-07-06)
+
+<code>Improper Neutralization of Special Elements in Data Query Logic vulnerability in Apache Camel Neo4J component.\n\nThe camel-neo4j producer builds the Cypher WHERE clause for its match/retrieve and delete operations from the CamelNeo4jMatchProperties map. CVE-2025-66169 addressed Cypher injection through the property values by binding them as query parameters ($paramN), but the property names (the JSON keys of that map) were still concatenated into the query string verbatim in Neo4jProducer.retrieveNodes() and deleteNode(). A property name containing Cypher syntax therefore alters the structure of the executed query. Where a route maps untrusted input into the CamelNeo4jMatchProperties map - for example by passing a request body as the match map, or from a consumer that does not filter inbound Camel* headers - an attacker who controls the JSON key names can inject arbitrary Cypher and read, modify or delete any node or relationship in the Neo4j database. The CamelNeo4jMatchProperties header is itself Camel-prefixed and is filtered by the HTTP header-filter strategy, so a plain HTTP client cannot set it directly; the issue is reachable through routes that deliberately or inadvertently carry untrusted data into that header.\nThis issue affects Apache Camel: from 4.10.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. For deployments that cannot upgrade immediately, do not populate the CamelNeo4jMatchProperties map from untrusted input: validate or allow-list the property names (for example against ^[A-Za-z_][A-Za-z0-9_]*$) before the Neo4j producer, and ensure that any consumer feeding such a route filters inbound Camel* / camel* headers so the match header cannot be supplied by an external sender.
+</code>
+
+- [oscerd/CVE-2026-46591](https://github.com/oscerd/CVE-2026-46591)
 
 ### CVE-2026-46645 (2026-06-10)
 
@@ -4291,6 +4362,7 @@
 </code>
 
 - [Is4yev/CVE-2026-48909](https://github.com/Is4yev/CVE-2026-48909)
+- [CerberusMrXi/CVE-2026-48909-Joomla-SP-Exploit](https://github.com/CerberusMrXi/CVE-2026-48909-Joomla-SP-Exploit)
 
 ### CVE-2026-48939 (2026-06-20)
 
@@ -4403,7 +4475,11 @@
 
 - [hadhub/CVE-2026-49345-Mercator-SSRF](https://github.com/hadhub/CVE-2026-49345-Mercator-SSRF)
 
-### CVE-2026-49352
+### CVE-2026-49352 (2026-07-15)
+
+<code>9Router is an AI router &amp; token saver. From 0.2.21 until 0.4.44, 9Router used the hardcoded fallback JWT secret 9router-default-secret-change-me in src/app/api/auth/login/route.js, src/middleware.js, and later src/lib/auth/dashboardSession.js, allowing attackers to forge an auth_token cookie when JWT_SECRET was unset. This issue is fixed in version 0.4.44
+</code>
+
 - [covepseng/cve-2026-49352-poc](https://github.com/covepseng/cve-2026-49352-poc)
 
 ### CVE-2026-49413 (2026-06-27)
@@ -4603,6 +4679,9 @@
 
 - [nk7667/-linx-server-vulnerability-report](https://github.com/nk7667/-linx-server-vulnerability-report)
 
+### CVE-2026-52199
+- [lamaper/CVE-2026-52199](https://github.com/lamaper/CVE-2026-52199)
+
 ### CVE-2026-52217
 - [teteco/CVE-2026-52217-VTEX-Checkout-CrossTenant-IDOR](https://github.com/teteco/CVE-2026-52217-VTEX-Checkout-CrossTenant-IDOR)
 
@@ -4658,6 +4737,7 @@
 - [chuzhongyun/CVE-2026-53359-Kernel-Fix](https://github.com/chuzhongyun/CVE-2026-53359-Kernel-Fix)
 - [xj2268-TA/KVM-Januscape](https://github.com/xj2268-TA/KVM-Januscape)
 - [ndouglas-cloudsmith/CVE-2026-53359](https://github.com/ndouglas-cloudsmith/CVE-2026-53359)
+- [x024n/almalinux-januscape-mitigation](https://github.com/x024n/almalinux-januscape-mitigation)
 
 ### CVE-2026-53360 (2026-07-04)
 
@@ -5011,6 +5091,15 @@
 </code>
 
 - [BiiTts/CVE-2026-58138-Conductor-Unauth-RCE](https://github.com/BiiTts/CVE-2026-58138-Conductor-Unauth-RCE)
+- [seqra/cve-2026-58138](https://github.com/seqra/cve-2026-58138)
+- [Ch4120N/CVE-2026-58138](https://github.com/Ch4120N/CVE-2026-58138)
+
+### CVE-2026-58635 (2026-07-14)
+
+<code>Improper neutralization of special elements used in a command ('command injection') in Windows Narrator Braille allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [DavidCarliez/CVE-2026-58635-PoC](https://github.com/DavidCarliez/CVE-2026-58635-PoC)
 
 ### CVE-2026-59734 (2026-07-09)
 
@@ -8303,13 +8392,6 @@
 
 - [SpiritualMachines/buds-audit](https://github.com/SpiritualMachines/buds-audit)
 
-### CVE-2025-20720 (2025-10-14)
-
-<code>In wlan AP driver, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote (proximal/adjacent) escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00418954; Issue ID: MSV-3569.
-</code>
-
-- [shinthink/CVE-2025-20720](https://github.com/shinthink/CVE-2025-20720)
-
 ### CVE-2025-21042 (2025-09-12)
 
 <code>Out-of-bounds write in libimagecodec.quram.so prior to SMR Apr-2025 Release 1 allows remote attackers to execute arbitrary code.
@@ -10474,6 +10556,13 @@
 - [leesh3288/CVE-2025-32023](https://github.com/leesh3288/CVE-2025-32023)
 - [LordBheem/CVE-2025-32023](https://github.com/LordBheem/CVE-2025-32023)
 - [44528zja/Blackash-CVE-2025-32023](https://github.com/44528zja/Blackash-CVE-2025-32023)
+
+### CVE-2025-32044 (2025-04-25)
+
+<code>A flaw has been identified in Moodle where, on certain sites, unauthenticated users could retrieve sensitive user data—including names, contact information, and hashed passwords—via stack traces returned by specific API calls. Sites with PHP configured with zend.exception_ignore_args = 1 in the php.ini file are not affected by this vulnerability.
+</code>
+
+- [shinthink/CVE-2025-32044](https://github.com/shinthink/CVE-2025-32044)
 
 ### CVE-2025-32094 (2025-08-07)
 
@@ -13891,7 +13980,6 @@
 - [Herick-Costa/CVE-2025-55182-React2Shell-RCE](https://github.com/Herick-Costa/CVE-2025-55182-React2Shell-RCE)
 - [diamorphine666/React2shell-CVE-2025-55182-Exploit](https://github.com/diamorphine666/React2shell-CVE-2025-55182-Exploit)
 - [RootEvil333/CVE-2025-55182](https://github.com/RootEvil333/CVE-2025-55182)
-- [xp101t/react2shell](https://github.com/xp101t/react2shell)
 - [amnsecurity/reactorwatch-pentest](https://github.com/amnsecurity/reactorwatch-pentest)
 
 ### CVE-2025-55183 (2025-12-11)
@@ -18217,6 +18305,7 @@
 - [a1ex-var1amov/ctf-cve-2024-4577](https://github.com/a1ex-var1amov/ctf-cve-2024-4577)
 - [rayngnpc/CVE-2024-4577-rayng](https://github.com/rayngnpc/CVE-2024-4577-rayng)
 - [gl1tch0x1/PHP_8.1.x_Exploit](https://github.com/gl1tch0x1/PHP_8.1.x_Exploit)
+- [Kanak-CypherX/cve-2024-4577-lab](https://github.com/Kanak-CypherX/cve-2024-4577-lab)
 
 ### CVE-2024-4701 (2024-05-10)
 
@@ -18320,6 +18409,13 @@
 
 - [sinsinology/CVE-2024-5009](https://github.com/sinsinology/CVE-2024-5009)
 - [th3gokul/CVE-2024-5009](https://github.com/th3gokul/CVE-2024-5009)
+
+### CVE-2024-5082 (2024-11-14)
+
+<code>A Remote Code Execution vulnerability has been discovered in Sonatype Nexus Repository 2. \n\nThis issue affects Nexus Repository 2 OSS/Pro versions up to and including 2.15.1.
+</code>
+
+- [h4mr3r/CVE-2024-5082](https://github.com/h4mr3r/CVE-2024-5082)
 
 ### CVE-2024-5083 (2024-11-14)
 
@@ -18696,6 +18792,7 @@
 - [kaleth4/CVE-2024-6387](https://github.com/kaleth4/CVE-2024-6387)
 - [oseasfr/Scanner_CVE_OpenSSH](https://github.com/oseasfr/Scanner_CVE_OpenSSH)
 - [vuducmanhno100-cloud/CVE-2024-6387](https://github.com/vuducmanhno100-cloud/CVE-2024-6387)
+- [m0n3ef/regreSSHion-Checker](https://github.com/m0n3ef/regreSSHion-Checker)
 
 ### CVE-2024-6460 (2024-08-16)
 
@@ -20090,19 +20187,11 @@
 
 - [fanjm2025-jeremy/CVE-2024-12828-PoC](https://github.com/fanjm2025-jeremy/CVE-2024-12828-PoC)
 
-### CVE-2024-12856 (2024-12-27)
-
-<code>The Four-Faith router models F3x24 and F3x36 are affected by an operating system (OS) command injection vulnerability. At least firmware version 2.0 allows authenticated and remote attackers to execute arbitrary OS commands over HTTP when modifying the system time via apply.cgi. Additionally, this firmware version has default credentials which, if not changed, would effectively change this vulnerability into an unauthenticated and remote OS command execution issue.
-</code>
-
-- [nu113d/CVE-2024-12856](https://github.com/nu113d/CVE-2024-12856)
-
 ### CVE-2024-12877 (2025-01-11)
 
 <code>The GiveWP – Donation Plugin and Fundraising Platform plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.19.2 via deserialization of untrusted input from the donation form like 'firstName'. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to delete arbitrary files on the server that makes remote code execution possible. Please note this was only partially patched in 3.19.3, a fully sufficient patch was not released until 3.19.4. However, another CVE was assigned by another CNA for version 3.19.3 so we will leave this as affecting 3.19.2 and before. We have recommended the vendor use JSON encoding to prevent any further deserialization vulnerabilities from being present.
 </code>
 
-- [RandomRobbieBF/CVE-2024-12877](https://github.com/RandomRobbieBF/CVE-2024-12877)
 - [soltanali0/CVE-2024-12877-Exploit](https://github.com/soltanali0/CVE-2024-12877-Exploit)
 
 ### CVE-2024-12883 (2024-12-21)
@@ -26264,7 +26353,6 @@
 </code>
 
 - [RandomRobbieBF/CVE-2024-49328](https://github.com/RandomRobbieBF/CVE-2024-49328)
-- [Nxploited/CVE-2024-49328-exploit](https://github.com/Nxploited/CVE-2024-49328-exploit)
 
 ### CVE-2024-49368 (2024-10-21)
 
@@ -44567,6 +44655,13 @@
 
 - [Trinadh465/platform_external_gptfdisk_AOSP10_r33_CVE-2021-0308](https://github.com/Trinadh465/platform_external_gptfdisk_AOSP10_r33_CVE-2021-0308)
 
+### CVE-2021-0313 (2021-01-11)
+
+<code>In isWordBreakAfter of LayoutUtils.cpp, there is a possible way to slow or crash a TextView due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Product: Android; Versions: Android-9, Android-10, Android-11, Android-8.0, Android-8.1; Android ID: A-170968514.
+</code>
+
+- [Satheesh575555/frameworks_minikin_AOSP10_r33_CVE-2021-0313](https://github.com/Satheesh575555/frameworks_minikin_AOSP10_r33_CVE-2021-0313)
+
 ### CVE-2021-0315 (2021-01-11)
 
 <code>In onCreate of GrantCredentialsPermissionActivity.java, there is a possible way to convince the user to grant an app access to an account due to a tapjacking/overlay attack. This could lead to local escalation of privilege with User execution privileges needed. User interaction is needed for exploitation. Product: Android; Versions: Android-8.1, Android-9, Android-10, Android-11, Android-8.0; Android ID: A-169763814.
@@ -45006,8 +45101,6 @@
 - [GodOfServer/CVE-2021-3129](https://github.com/GodOfServer/CVE-2021-3129)
 - [Prabesh01/hoh4](https://github.com/Prabesh01/hoh4)
 - [lukwagoasuman/CVE-2021-3129---Laravel-RCE](https://github.com/lukwagoasuman/CVE-2021-3129---Laravel-RCE)
-- [M4rrow/CVE-2021-3129](https://github.com/M4rrow/CVE-2021-3129)
-- [M4rrow/CVE-2021-3129-EXP](https://github.com/M4rrow/CVE-2021-3129-EXP)
 
 ### CVE-2021-3130 (2021-01-20)
 
@@ -45119,6 +45212,7 @@
 - [Robblackcatchai/porfolio-Baron-Samedit](https://github.com/Robblackcatchai/porfolio-Baron-Samedit)
 - [calonnuotcabe/CVE-2021-3156](https://github.com/calonnuotcabe/CVE-2021-3156)
 - [Kranti08/CVE-2021-3156-Baron-Samedit](https://github.com/Kranti08/CVE-2021-3156-Baron-Samedit)
+- [IJBaig/CVE-2021-3156](https://github.com/IJBaig/CVE-2021-3156)
 
 ### CVE-2021-3157
 - [CrackerCat/cve-2021-3157](https://github.com/CrackerCat/cve-2021-3157)
@@ -62224,6 +62318,7 @@
 - [Swiftloke/fusee-toy](https://github.com/Swiftloke/fusee-toy)
 - [nikameru/nxboot](https://github.com/nikameru/nxboot)
 - [Resi-le/NXLoader](https://github.com/Resi-le/NXLoader)
+- [oliviaholly/fusee-gelee](https://github.com/oliviaholly/fusee-gelee)
 
 ### CVE-2018-6341 (2018-12-31)
 
@@ -68845,6 +68940,7 @@
 - [KosukeShimofuji/CVE-2016-8655](https://github.com/KosukeShimofuji/CVE-2016-8655)
 - [agkunkle/chocobo](https://github.com/agkunkle/chocobo)
 - [martinmullins/CVE-2016-8655_Android](https://github.com/martinmullins/CVE-2016-8655_Android)
+- [WhatsWrongAndWhy/CVE-2016-8655](https://github.com/WhatsWrongAndWhy/CVE-2016-8655)
 
 ### CVE-2016-8735 (2017-04-06)
 
@@ -68958,6 +69054,13 @@
 </code>
 
 - [nadafarafat/bd-alaris-firmware-analysis](https://github.com/nadafarafat/bd-alaris-firmware-analysis)
+
+### CVE-2016-9793 (2016-12-28)
+
+<code>The sock_setsockopt function in net/core/sock.c in the Linux kernel before 4.8.14 mishandles negative values of sk_sndbuf and sk_rcvbuf, which allows local users to cause a denial of service (memory corruption and system crash) or possibly have unspecified other impact by leveraging the CAP_NET_ADMIN capability for a crafted setsockopt system call with the (1) SO_SNDBUFFORCE or (2) SO_RCVBUFFORCE option.
+</code>
+
+- [WhatsWrongAndWhy/CVE-2016-9793](https://github.com/WhatsWrongAndWhy/CVE-2016-9793)
 
 ### CVE-2016-9795 (2017-01-27)
 
@@ -69318,6 +69421,7 @@
 - [thieveshkar/RootQuest-CTF-Box-Multi-Stage-Exploitation-VM](https://github.com/thieveshkar/RootQuest-CTF-Box-Multi-Stage-Exploitation-VM)
 - [0xf1d0/CVE-2015-1328](https://github.com/0xf1d0/CVE-2015-1328)
 - [saqib-butt2/blackbox-pentesting-infsecos](https://github.com/saqib-butt2/blackbox-pentesting-infsecos)
+- [WhatsWrongAndWhy/CVE-2015-1328](https://github.com/WhatsWrongAndWhy/CVE-2015-1328)
 
 ### CVE-2015-1397 (2015-04-29)
 
@@ -70133,6 +70237,13 @@
 </code>
 
 - [bittorrent3389/CVE-2015-8543_for_SLE12SP1](https://github.com/bittorrent3389/CVE-2015-8543_for_SLE12SP1)
+
+### CVE-2015-8550 (2016-04-14)
+
+<code>Xen, when used on a system providing PV backends, allows local guest OS administrators to cause a denial of service (host OS crash) or gain privileges by writing to memory shared between the frontend and backend, aka a double fetch vulnerability.
+</code>
+
+- [WhatsWrongAndWhy/CVE-2015-8550](https://github.com/WhatsWrongAndWhy/CVE-2015-8550)
 
 ### CVE-2015-8562 (2015-12-16)
 
