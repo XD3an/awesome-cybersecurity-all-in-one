@@ -265,6 +265,7 @@
 
 - [carlosalbertotuma/cve-2026-3180-poc](https://github.com/carlosalbertotuma/cve-2026-3180-poc)
 - [cardosource/cve-2026-3180](https://github.com/cardosource/cve-2026-3180)
+- [CerberusMrXi/WP-Contest-Gallery-28.1.4-Exploit](https://github.com/CerberusMrXi/WP-Contest-Gallery-28.1.4-Exploit)
 
 ### CVE-2026-3227 (2026-03-13)
 
@@ -853,6 +854,13 @@
 
 - [tiagob0b/CVE-2026-8380](https://github.com/tiagob0b/CVE-2026-8380)
 
+### CVE-2026-8388 (2026-05-12)
+
+<code>Incorrect boundary conditions in the JavaScript Engine: JIT component. This vulnerability was fixed in Firefox 150.0.3, Firefox ESR 115.36, Firefox ESR 140.11, and Thunderbird 140.11.
+</code>
+
+- [Sana-404/CVE-2026-8388-Mitigation-and-Detection](https://github.com/Sana-404/CVE-2026-8388-Mitigation-and-Detection)
+
 ### CVE-2026-8389 (2026-05-12)
 
 <code>JIT miscompilation in the JavaScript Engine: JIT component. This vulnerability was fixed in Firefox 150.0.3.
@@ -936,6 +944,7 @@
 </code>
 
 - [Maxime288/CVE-2026-8838-RCE](https://github.com/Maxime288/CVE-2026-8838-RCE)
+- [Sana-404/CVE-2026-8838-Mitigation-and-Detection](https://github.com/Sana-404/CVE-2026-8838-Mitigation-and-Detection)
 
 ### CVE-2026-8932 (2026-07-03)
 
@@ -1328,6 +1337,7 @@
 - [HORKimhab/CVE-2026-15409](https://github.com/HORKimhab/CVE-2026-15409)
 - [remmons-r7/rapid7-CVE-2026-15409](https://github.com/remmons-r7/rapid7-CVE-2026-15409)
 - [0xBlackash/CVE-2026-15409](https://github.com/0xBlackash/CVE-2026-15409)
+- [MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check](https://github.com/MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check)
 
 ### CVE-2026-15410 (2026-07-14)
 
@@ -1457,6 +1467,13 @@
 
 - [dwgth4i/CVE-2026-20817](https://github.com/dwgth4i/CVE-2026-20817)
 
+### CVE-2026-20833 (2026-01-13)
+
+<code>Use of a broken or risky cryptographic algorithm in Windows Kerberos allows an authorized attacker to disclose information locally.
+</code>
+
+- [AlMarWorld/KerberosAudit-PS](https://github.com/AlMarWorld/KerberosAudit-PS)
+
 ### CVE-2026-20841 (2026-02-10)
 
 <code>Improper neutralization of special elements used in a command ('command injection') in Windows Notepad App allows an unauthorized attacker to execute code locally.
@@ -1539,6 +1556,13 @@
 </code>
 
 - [daytriftnewgen/CVE-2026-21876](https://github.com/daytriftnewgen/CVE-2026-21876)
+
+### CVE-2026-21955 (2026-01-20)
+
+<code>Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core).  Supported versions that are affected are 7.1.14 and  7.2.4. Easily exploitable vulnerability allows high privileged attacker with logon to the infrastructure where Oracle VM VirtualBox executes to compromise Oracle VM VirtualBox.  While the vulnerability is in Oracle VM VirtualBox, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle VM VirtualBox. CVSS 3.1 Base Score 8.2 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H).
+</code>
+
+- [minq0x1412/CVE-2026-21955](https://github.com/minq0x1412/CVE-2026-21955)
 
 ### CVE-2026-22241 (2026-01-08)
 
@@ -1881,6 +1905,13 @@
 </code>
 
 - [Hann1bl3L3ct3r/FUXAPWN](https://github.com/Hann1bl3L3ct3r/FUXAPWN)
+
+### CVE-2026-25993 (2026-02-10)
+
+<code>EverShop is a TypeScript-first eCommerce platform. During category update and deletion event handling, the application embeds\npath / request_path values—derived from the url_key stored in the database—into SQL statements via string concatenation and passes them to execute(). As a result, if a malicious string is stored in url_key , subsequent event processing modifies and executes the SQL statement, leading to a second-order SQL injection. Patched from v2.1.1.
+</code>
+
+- [MoxitPanchal/EverShop-Lab-CVE-2026-25993](https://github.com/MoxitPanchal/EverShop-Lab-CVE-2026-25993)
 
 ### CVE-2026-26030 (2026-02-19)
 
@@ -2245,7 +2276,6 @@
 - [HulnotHutu/CVE-2026-31431](https://github.com/HulnotHutu/CVE-2026-31431)
 - [K3ysTr0K3R/CVE-2026-31431-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2026-31431-EXPLOIT)
 - [bootsareme/copyfail-deconstructed](https://github.com/bootsareme/copyfail-deconstructed)
-- [Smarttfoxx/copyfail](https://github.com/Smarttfoxx/copyfail)
 - [monobrau/copyfailscan](https://github.com/monobrau/copyfailscan)
 - [suominen/CVE-2026-31431](https://github.com/suominen/CVE-2026-31431)
 - [aexdyhaxor/CVE-2026-31431-copy-fail](https://github.com/aexdyhaxor/CVE-2026-31431-copy-fail)
@@ -2259,7 +2289,6 @@
 - [krisiasty/vcheck](https://github.com/krisiasty/vcheck)
 - [Hunt-Benito/copy-fail-cve-2026-31431-linux-kernel-page-cache-lpe](https://github.com/Hunt-Benito/copy-fail-cve-2026-31431-linux-kernel-page-cache-lpe)
 - [Helios973/CVE-2026-31431_exp.c](https://github.com/Helios973/CVE-2026-31431_exp.c)
-- [haydenjames/CVE-2026-31431-check](https://github.com/haydenjames/CVE-2026-31431-check)
 - [vorkampfer/copyfail2_electric_boogaloo_fix](https://github.com/vorkampfer/copyfail2_electric_boogaloo_fix)
 - [Lutfifakee-Project/CVE-2026-31431](https://github.com/Lutfifakee-Project/CVE-2026-31431)
 - [mauricioportela/CVE-2026-31431-Analysis](https://github.com/mauricioportela/CVE-2026-31431-Analysis)
@@ -2430,6 +2459,13 @@
 </code>
 
 - [rootdirective-sec/CVE-2026-33626-Lab](https://github.com/rootdirective-sec/CVE-2026-33626-Lab)
+
+### CVE-2026-33634 (2026-03-23)
+
+<code>Trivy is a security scanner. On March 19, 2026, a threat actor used compromised credentials to publish a malicious Trivy v0.69.4 release, force-push 76 of 77 version tags in `aquasecurity/trivy-action` to credential-stealing malware, and replace all 7 tags in `aquasecurity/setup-trivy` with malicious commits. This incident is a continuation of the supply chain attack that began in late February 2026. Following the initial disclosure on March 1, credential rotation was performed but was not atomic (not all credentials were revoked simultaneously). The attacker could have use a valid token to exfiltrate newly rotated secrets during the rotation window (which lasted a few days). This could have allowed the attacker to retain access and execute the March 19 attack. Affected components include the `aquasecurity/trivy` Go / Container image version 0.69.4, the `aquasecurity/trivy-action` GitHub Action versions 0.0.1 – 0.34.2 (76/77), and the`aquasecurity/setup-trivy` GitHub Action versions 0.2.0 – 0.2.6, prior to the recreation of 0.2.6 with a safe commit. Known safe versions include versions 0.69.2 and 0.69.3 of the Trivy binary, version 0.35.0 of trivy-action, and version 0.2.6 of setup-trivy. Additionally, take other mitigations to ensure the safety of secrets. If there is any possibility that a compromised version ran in one's environment, all secrets accessible to affected pipelines must be treated as exposed and rotated immediately. Check whether one's organization pulled or executed Trivy v0.69.4 from any source. Remove any affected artifacts immediately. Review all workflows using `aquasecurity/trivy-action` or `aquasecurity/setup-trivy`. Those who referenced a version tag rather than a full commit SHA should check workflow run logs from March 19–20, 2026 for signs of compromise. Look for repositories named `tpcp-docs` in one's GitHub organization. The presence of such a repository may indicate that the fallback exfiltration mechanism was triggered and secrets were successfully stolen. Pin GitHub Actions to full, immutable commit SHA hashes, don't use mutable version tags.
+</code>
+
+- [dfs333/trivysupplychainanalysis](https://github.com/dfs333/trivysupplychainanalysis)
 
 ### CVE-2026-33712 (2026-05-22)
 
@@ -3474,7 +3510,6 @@
 
 - [mym0us3r/DIRTY-FRAG-Detection-with-Wazuh-4.14.4](https://github.com/mym0us3r/DIRTY-FRAG-Detection-with-Wazuh-4.14.4)
 - [suominen/CVE-2026-43284](https://github.com/suominen/CVE-2026-43284)
-- [haydenjames/dirty-frag-check](https://github.com/haydenjames/dirty-frag-check)
 - [linnemanlabs/dirtyfrag-arm64](https://github.com/linnemanlabs/dirtyfrag-arm64)
 - [FrosterDL/CVE-2026-43284](https://github.com/FrosterDL/CVE-2026-43284)
 - [ChernStepanov/DirtyFrag-for-dummies](https://github.com/ChernStepanov/DirtyFrag-for-dummies)
@@ -3485,6 +3520,7 @@
 - [Koshmare-Blossom/DirtyFrag-go](https://github.com/Koshmare-Blossom/DirtyFrag-go)
 - [DylanClaudio/Reporte-de-Escalada-de-Privilegios-Local-Dirty-Frag](https://github.com/DylanClaudio/Reporte-de-Escalada-de-Privilegios-Local-Dirty-Frag)
 - [AtlasVector/Dirty-Frag-CVE-2026-43284](https://github.com/AtlasVector/Dirty-Frag-CVE-2026-43284)
+- [jayhutajulu1/CVE-2026-43284-DirtyFrag-PoC](https://github.com/jayhutajulu1/CVE-2026-43284-DirtyFrag-PoC)
 - [1neptune/DirtyFrag](https://github.com/1neptune/DirtyFrag)
 - [t1ckprivate/CVE-2026-43284-Dirty-Frag](https://github.com/t1ckprivate/CVE-2026-43284-Dirty-Frag)
 - [g0thamRabb1t/CVE-2026-43284-dirtyfrag-detection](https://github.com/g0thamRabb1t/CVE-2026-43284-dirtyfrag-detection)
@@ -3498,6 +3534,7 @@
 
 - [Koshmare-Blossom/PinTheft-go](https://github.com/Koshmare-Blossom/PinTheft-go)
 - [0xBlackash/CVE-2026-43494](https://github.com/0xBlackash/CVE-2026-43494)
+- [jayhutajulu1/CVE-2026-43494-PinTheft-PoC](https://github.com/jayhutajulu1/CVE-2026-43494-PinTheft-PoC)
 - [tanzz1337/CVE-2026-43494-PinTheft-PoC](https://github.com/tanzz1337/CVE-2026-43494-PinTheft-PoC)
 - [Koshmare-Blossom/PinTheft-asm](https://github.com/Koshmare-Blossom/PinTheft-asm)
 - [letsr00t/CVE-2026-43494-PinTheft-PoC](https://github.com/letsr00t/CVE-2026-43494-PinTheft-PoC)
@@ -3531,6 +3568,9 @@
 - [onesmiledx/CVE-2026-43499](https://github.com/onesmiledx/CVE-2026-43499)
 - [ctnBobong32/auto_extract_offsets](https://github.com/ctnBobong32/auto_extract_offsets)
 - [qianmo-xw/CVE-2026-43499-popsicle](https://github.com/qianmo-xw/CVE-2026-43499-popsicle)
+- [SlightNeko/ghostlock-rothko](https://github.com/SlightNeko/ghostlock-rothko)
+- [DistrictBlauw/CyberMeowfia-ace3](https://github.com/DistrictBlauw/CyberMeowfia-ace3)
+- [BuSung-dev/CVE-2026-43499-S25U](https://github.com/BuSung-dev/CVE-2026-43499-S25U)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -4093,6 +4133,13 @@
 
 - [oscerd/CVE-2026-46591](https://github.com/oscerd/CVE-2026-46591)
 
+### CVE-2026-46592 (2026-07-06)
+
+<code>Improper Input Validation, Unintended Proxy or Intermediary ('Confused Deputy') vulnerability in Apache Camel CXF SOAP component.\n\nThe camel-cxf producer selects which SOAP operation to invoke on the backend service from the operationName (and operationNamespace) Exchange header, whose constant values (CxfConstants.OPERATION_NAME / OPERATION_NAMESPACE) were the plain strings operationName / operationNamespace. Because these names do not start with the Camel / camel prefix, HttpHeaderFilterStrategy - which blocks only the Camel header namespace on the HTTP boundary - let them pass from an inbound HTTP request straight into the Exchange. In a route that bridges an HTTP consumer (for example platform-http) into a cxf: producer, any HTTP client could therefore set the operationName header and have CxfProducer resolve and invoke a different WSDL operation than the route intended - for example replacing a read operation with a destructive one - against the backend SOAP service (a confused-deputy redirection). The constant is defined in the shared camel-cxf-common module, so the same non-prefixed names also applied to camel-cxfrs. No credentials are required when the bridging consumer is unauthenticated.\nThis issue affects Apache Camel: from 4.0.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. After upgrading, the operation-selection headers are named CamelCxfOperationName / CamelCxfOperationNamespace and are filtered at transport boundaries; see the 4.21 upgrade guide for the cross-transport carrier-header pattern. For deployments that cannot upgrade immediately, do not select the CXF operation from untrusted input: strip the operationName and operationNamespace headers from any untrusted ingress before the cxf: producer and set the operation from a trusted source in the route.
+</code>
+
+- [oscerd/CVE-2026-46592](https://github.com/oscerd/CVE-2026-46592)
+
 ### CVE-2026-46645 (2026-06-10)
 
 <code>SQLAdmin is a flexible Admin interface for SQLAlchemy models. Prior to version 0.25.1, the ajax_lookup endpoint in application.py bypasses the is_accessible() access control check that all other endpoints enforce. If a developer restricts model access by overriding is_accessible(), an authenticated user can still query that model's data through the ajax_lookup endpoint — silently bypassing the restriction. This issue has been patched in version 0.25.1.
@@ -4604,6 +4651,20 @@
 
 - [JohannesLks/CVE-2026-50338](https://github.com/JohannesLks/CVE-2026-50338)
 
+### CVE-2026-50343 (2026-07-14)
+
+<code>Improper privilege management in Microsoft Install Service allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [Rat5ak/CVE-2026-50343-InstallService-EoP](https://github.com/Rat5ak/CVE-2026-50343-InstallService-EoP)
+
+### CVE-2026-50369 (2026-07-14)
+
+<code>Use after free in Windows Remote Desktop Services allows an authorized attacker to elevate privileges over a network.
+</code>
+
+- [syxlox/CVE-2026-50369](https://github.com/syxlox/CVE-2026-50369)
+
 ### CVE-2026-50507 (2026-06-09)
 
 <code>Missing authentication for critical function in Windows BitLocker allows an unauthorized attacker to bypass a security feature with a physical attack.
@@ -4738,6 +4799,7 @@
 - [xj2268-TA/KVM-Januscape](https://github.com/xj2268-TA/KVM-Januscape)
 - [ndouglas-cloudsmith/CVE-2026-53359](https://github.com/ndouglas-cloudsmith/CVE-2026-53359)
 - [x024n/almalinux-januscape-mitigation](https://github.com/x024n/almalinux-januscape-mitigation)
+- [x024n/kvm-kernelcare-januscape](https://github.com/x024n/kvm-kernelcare-januscape)
 
 ### CVE-2026-53360 (2026-07-04)
 
@@ -4911,6 +4973,13 @@
 
 - [izxci/CVE-2026-54807](https://github.com/izxci/CVE-2026-54807)
 
+### CVE-2026-54992 (2026-07-14)
+
+<code>Heap-based buffer overflow in Windows Message Queuing Queue Manager allows an unauthorized attacker to execute code locally.
+</code>
+
+- [DavidCarliez/CVE-2026-54992-PoC](https://github.com/DavidCarliez/CVE-2026-54992-PoC)
+
 ### CVE-2026-54998 (2026-07-02)
 
 <code>Incorrect authorization in Microsoft Exchange Online allows an authorized attacker to elevate privileges over a network.
@@ -5035,6 +5104,9 @@
 
 - [ziad626/CVE-2026-56876-POC](https://github.com/ziad626/CVE-2026-56876-POC)
 
+### CVE-2026-57155
+- [babyshen/CVE-2026-57155](https://github.com/babyshen/CVE-2026-57155)
+
 ### CVE-2026-57239 (2026-07-08)
 
 <code>The user-controllable executable files will be directly executed by high-privilege processes, allowing low-privilege users to have the opportunity to elevate their privileges to NT AUTHORITY\SYSTEM.
@@ -5049,6 +5121,13 @@
 
 - [shinthink/CVE-2026-57517](https://github.com/shinthink/CVE-2026-57517)
 - [gagaltotal/CVE-2026-57517-CWP](https://github.com/gagaltotal/CVE-2026-57517-CWP)
+
+### CVE-2026-57821 (2026-07-15)
+
+<code>A SQL Injection vulnerability exists in Apache Fineract's Office Search API (GET /api/v1/offices) in versions up to and including 1.14.0. The orderBy request parameter is concatenated into a SQL query without sufficient validation, allowing an authenticated user with permission to view offices to inject arbitrary SQL via a crafted orderBy value. This is a bypass of the ColumnValidator fix introduced for CVE-2024-32838, which does not detect bare subqueries in the ORDER BY position. This can be leveraged to perform time-based blind SQL injection for data exfiltration. Because the injected query blocks the database connection for its full duration, concurrent exploitation can exhaust the application's database connection pool, resulting in denial of service for other users. Users are recommended to upgrade to a version containing the fix.
+</code>
+
+- [tc4dy/CVE-2026-57821-PoC-Exploit](https://github.com/tc4dy/CVE-2026-57821-PoC-Exploit)
 
 ### CVE-2026-57829 (2026-07-13)
 
@@ -6462,7 +6541,7 @@
 <code>Eine problematische Schwachstelle wurde in ESAPI esapi-java-legacy gefunden. Es geht hierbei um die Funktion Encoder.encodeForSQL der Komponente SQL Injection Defense. Durch das Manipulieren mit unbekannten Daten kann eine improper neutralization of special elements-Schwachstelle ausgenutzt werden. Der Angriff kann über das Netzwerk angegangen werden. Der Exploit steht zur öffentlichen Verfügung. Ein Aktualisieren auf die Version 2.7.0.0 vermag dieses Problem zu lösen. Der Patch wird als f75ac2c2647a81d2cfbdc9c899f8719c240ed512 bezeichnet. Als bestmögliche Massnahme wird das Einspielen eines Upgrades empfohlen.
 </code>
 
-- [dickfu/ESAPI-SQLinjection-CVE-2025-5878-Exploit](https://github.com/dickfu/ESAPI-SQLinjection-CVE-2025-5878-Exploit)
+- [fantasy-fql/ESAPI-SQLinjection-CVE-2025-5878-Exploit](https://github.com/fantasy-fql/ESAPI-SQLinjection-CVE-2025-5878-Exploit)
 
 ### CVE-2025-5880 (2025-06-09)
 
@@ -7014,7 +7093,6 @@
 - [get-xor/coreweave-demo-2026-05](https://github.com/get-xor/coreweave-demo-2026-05)
 - [mananispiwpiw/CVE-2025-8110-PoC](https://github.com/mananispiwpiw/CVE-2025-8110-PoC)
 - [joaquinrrr/CVE-2025-8110](https://github.com/joaquinrrr/CVE-2025-8110)
-- [amnsecurity/internal-domain-development-compromise-assessment](https://github.com/amnsecurity/internal-domain-development-compromise-assessment)
 
 ### CVE-2025-8191 (2025-07-26)
 
@@ -8441,6 +8519,7 @@
 - [MrAle98/CVE-2025-21333-POC](https://github.com/MrAle98/CVE-2025-21333-POC)
 - [aleongx/KQL_sentinel_CVE-2025-21333](https://github.com/aleongx/KQL_sentinel_CVE-2025-21333)
 - [nu1lptr0/CVE-2025-21333](https://github.com/nu1lptr0/CVE-2025-21333)
+- [uname1able/CVE-2025-21333](https://github.com/uname1able/CVE-2025-21333)
 
 ### CVE-2025-21385 (2025-01-09)
 
@@ -13980,7 +14059,7 @@
 - [Herick-Costa/CVE-2025-55182-React2Shell-RCE](https://github.com/Herick-Costa/CVE-2025-55182-React2Shell-RCE)
 - [diamorphine666/React2shell-CVE-2025-55182-Exploit](https://github.com/diamorphine666/React2shell-CVE-2025-55182-Exploit)
 - [RootEvil333/CVE-2025-55182](https://github.com/RootEvil333/CVE-2025-55182)
-- [amnsecurity/reactorwatch-pentest](https://github.com/amnsecurity/reactorwatch-pentest)
+- [se1zer/Nextjs_Exploit_Tool](https://github.com/se1zer/Nextjs_Exploit_Tool)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -19605,7 +19684,6 @@
 </code>
 
 - [RandomRobbieBF/CVE-2024-9932](https://github.com/RandomRobbieBF/CVE-2024-9932)
-- [Nxploited/CVE-2024-9932-POC](https://github.com/Nxploited/CVE-2024-9932-POC)
 - [JoshuaProvoste/0-click-RCE-Exploit-for-CVE-2024-9932](https://github.com/JoshuaProvoste/0-click-RCE-Exploit-for-CVE-2024-9932)
 
 ### CVE-2024-9933 (2024-10-26)
@@ -24772,6 +24850,13 @@
 </code>
 
 - [SpiralBL0CK/CVE-2024-40431-CVE-2022-25479-EOP-CHAIN](https://github.com/SpiralBL0CK/CVE-2024-40431-CVE-2022-25479-EOP-CHAIN)
+
+### CVE-2024-40432 (2024-10-23)
+
+<code>A lack of input validation in Realtek SD card reader driver before 10.0.26100.21374 through the implementation of the IOCTL_SFFDISK_DEVICE_COMMAND control of the SD card reader driver allows a privileged attacker to crash the OS.
+</code>
+
+- [HORKimhab/CVE-2022-25477](https://github.com/HORKimhab/CVE-2022-25477)
 
 ### CVE-2024-40443 (2024-11-13)
 
@@ -33687,6 +33772,7 @@
 - [x0rb3l/CVE-2023-36802-MSKSSRV-LPE](https://github.com/x0rb3l/CVE-2023-36802-MSKSSRV-LPE)
 - [Nero22k/cve-2023-36802](https://github.com/Nero22k/cve-2023-36802)
 - [rahul0xkr/Reproducing-CVE-2023-36802](https://github.com/rahul0xkr/Reproducing-CVE-2023-36802)
+- [nhh9905/CVE-2023-36802](https://github.com/nhh9905/CVE-2023-36802)
 
 ### CVE-2023-36808 (2023-07-05)
 
@@ -35768,7 +35854,6 @@
 </code>
 
 - [pentestfunctions/BlueDucky](https://github.com/pentestfunctions/BlueDucky)
-- [jjjjjjjj987/cve-2023-45866-py](https://github.com/jjjjjjjj987/cve-2023-45866-py)
 - [cisnarfu/Bluepop](https://github.com/cisnarfu/Bluepop)
 - [AvishekDhakal/CVE-2023-45866_EXPLOITS](https://github.com/AvishekDhakal/CVE-2023-45866_EXPLOITS)
 - [Chedrian07/CVE-2023-45866-POC](https://github.com/Chedrian07/CVE-2023-45866-POC)
@@ -40304,6 +40389,16 @@
 
 - [szymonh/rndis-co](https://github.com/szymonh/rndis-co)
 
+### CVE-2022-25476
+- [HORKimhab/CVE-2022-25476](https://github.com/HORKimhab/CVE-2022-25476)
+
+### CVE-2022-25477 (2024-07-02)
+
+<code>Vulnerability in Realtek RtsPer driver for PCIe Card Reader (RtsPer.sys) before 10.0.22000.21355 and Realtek RtsUer driver for USB Card Reader (RtsUer.sys) before 10.0.22000.31274 leaks driver logs that contain addresses of kernel mode objects, weakening KASLR.
+</code>
+
+- [HORKimhab/CVE-2022-25477](https://github.com/HORKimhab/CVE-2022-25477)
+
 ### CVE-2022-25479 (2024-07-02)
 
 <code>Vulnerability in Realtek RtsPer driver for PCIe Card Reader (RtsPer.sys) before 10.0.22000.21355 and Realtek RtsUer driver for USB Card Reader (RtsUer.sys) before 10.0.22000.31274 allows for the leakage of kernel memory from both the stack and the heap.
@@ -44655,13 +44750,6 @@
 
 - [Trinadh465/platform_external_gptfdisk_AOSP10_r33_CVE-2021-0308](https://github.com/Trinadh465/platform_external_gptfdisk_AOSP10_r33_CVE-2021-0308)
 
-### CVE-2021-0313 (2021-01-11)
-
-<code>In isWordBreakAfter of LayoutUtils.cpp, there is a possible way to slow or crash a TextView due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Product: Android; Versions: Android-9, Android-10, Android-11, Android-8.0, Android-8.1; Android ID: A-170968514.
-</code>
-
-- [Satheesh575555/frameworks_minikin_AOSP10_r33_CVE-2021-0313](https://github.com/Satheesh575555/frameworks_minikin_AOSP10_r33_CVE-2021-0313)
-
 ### CVE-2021-0315 (2021-01-11)
 
 <code>In onCreate of GrantCredentialsPermissionActivity.java, there is a possible way to convince the user to grant an app access to an account due to a tapjacking/overlay attack. This could lead to local escalation of privilege with User execution privileges needed. User interaction is needed for exploitation. Product: Android; Versions: Android-8.1, Android-9, Android-10, Android-11, Android-8.0; Android ID: A-169763814.
@@ -44854,7 +44942,6 @@
 - [bartimusprimed/CVE-2021-1675-Yara](https://github.com/bartimusprimed/CVE-2021-1675-Yara)
 - [k8gege/cve-2021-1675](https://github.com/k8gege/cve-2021-1675)
 - [galoget/PrintNightmare-CVE-2021-1675-CVE-2021-34527](https://github.com/galoget/PrintNightmare-CVE-2021-1675-CVE-2021-34527)
-- [thalpius/microsoft-cve-2021-1675](https://github.com/thalpius/microsoft-cve-2021-1675)
 - [zha0/Microsoft-CVE-2021-1675](https://github.com/zha0/Microsoft-CVE-2021-1675)
 - [Winter3un/CVE-2021-1675](https://github.com/Winter3un/CVE-2021-1675)
 - [hahaleyile/my-CVE-2021-1675](https://github.com/hahaleyile/my-CVE-2021-1675)
