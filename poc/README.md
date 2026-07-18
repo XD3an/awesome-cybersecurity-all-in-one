@@ -990,6 +990,13 @@
 - [3nou9h/CVE-2026-9256-Poc](https://github.com/3nou9h/CVE-2026-9256-Poc)
 - [06-ux/CVE-2026-9256-POC](https://github.com/06-ux/CVE-2026-9256-POC)
 
+### CVE-2026-9271 (2026-06-12)
+
+<code>Vulnerability Title
+</code>
+
+- [CerberusMrXi/WordPress-KeepInMind-CVE-2026-9271-Exploit](https://github.com/CerberusMrXi/WordPress-KeepInMind-CVE-2026-9271-Exploit)
+
 ### CVE-2026-9277 (2026-05-22)
 
 <code>shell-quote's `quote()` function did not validate object-token inputs against the operator model used by `parse()`. The `.op` field was backslash-escaped character by character using `/(.)/g`, which in JavaScript does not match line terminators (\n, \r, U+2028, U+2029). A line terminator in `.op` therefore passed through unescaped into the output; POSIX shells treat a literal newline as a command separator, so any content after it would execute as a second command. The vulnerable code path is reachable in two ways: (1) direct construction of `{ op: '...\n...' }` from external input, and (2) via `parse(cmd, envFn)` when `envFn` returns object tokens whose `.op` is attacker-influenced. Both are documented API surface. Fixed by replacing the per-character escape with strict shape validation: `.op` must match the parser's control-operator allowlist; `{ op: 'glob', pattern }` validates `pattern` and forbids line terminators; `{ comment }` validates `comment` and forbids line terminators; any other object shape throws `TypeError`.
@@ -1256,7 +1263,6 @@
 
 - [Raimu0x19/CVE-2026-13001](https://github.com/Raimu0x19/CVE-2026-13001)
 - [shinthink/CVE-2026-13001](https://github.com/shinthink/CVE-2026-13001)
-- [sadb98523-eng/CVE-2026-13001](https://github.com/sadb98523-eng/CVE-2026-13001)
 
 ### CVE-2026-13585 (2026-07-15)
 
@@ -1318,7 +1324,11 @@
 
 - [tc4dy/CVE-2026-14762-PoC-Exploit](https://github.com/tc4dy/CVE-2026-14762-PoC-Exploit)
 
-### CVE-2026-14871
+### CVE-2026-14871 (2026-07-17)
+
+<code>osTicket versions v1.18.3 and v1.17.7 contain a Broken Object Level Authorization (BOLA) leading to Insecure Direct Object Reference (IDOR) in the AJAX ticket-management subsystem.
+</code>
+
 - [JFOZ1010/CVE-2026-14871](https://github.com/JFOZ1010/CVE-2026-14871)
 
 ### CVE-2026-14894 (2026-07-10)
@@ -1352,6 +1362,7 @@
 - [remmons-r7/rapid7-CVE-2026-15409](https://github.com/remmons-r7/rapid7-CVE-2026-15409)
 - [0xBlackash/CVE-2026-15409](https://github.com/0xBlackash/CVE-2026-15409)
 - [MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check](https://github.com/MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check)
+- [tc4dy/CVE-2026-15409-15410-Framework](https://github.com/tc4dy/CVE-2026-15409-15410-Framework)
 
 ### CVE-2026-15410 (2026-07-14)
 
@@ -1359,6 +1370,13 @@
 </code>
 
 - [HORKimhab/CVE-2026-15410](https://github.com/HORKimhab/CVE-2026-15410)
+
+### CVE-2026-15583 (2026-07-15)
+
+<code>A confused-deputy flaw in Grafana MCP Server allows an unauthenticated remote attacker to exfiltrate the server's environment-configured Grafana service-account token by supplying a crafted X-Grafana-URL request header. This also enables SSRF against arbitrary internal services, including cloud metadata endpoints.
+</code>
+
+- [codeb0ssx/CVE-2026-15583-PoC](https://github.com/codeb0ssx/CVE-2026-15583-PoC)
 
 ### CVE-2026-15706
 - [musana/CVE-2026-15706](https://github.com/musana/CVE-2026-15706)
@@ -1900,13 +1918,6 @@
 
 - [trajanOx/cve-2026-25541-fuel-analysis](https://github.com/trajanOx/cve-2026-25541-fuel-analysis)
 
-### CVE-2026-25555 (2026-06-08)
-
-<code>OpenBullet2 through version 0.3.2 contains an authentication bypass vulnerability in the API key authentication middleware that allows unauthenticated attackers to gain admin access by supplying an empty X-Api-Key header value. Attackers can exploit the middleware's comparison of the supplied header against an empty AdminApiKey default string to access the admin console and all API endpoints without valid credentials.
-</code>
-
-- [thecodeb0ss/CVE-2026-25555](https://github.com/thecodeb0ss/CVE-2026-25555)
-
 ### CVE-2026-25860 (2026-06-09)
 
 <code>OpenClinic GA 5.351.19 contains a reflected cross-site scripting vulnerability in the DICOM image upload handler that allows attackers to execute arbitrary JavaScript in a victim's browser by embedding malicious payloads in DICOM file metadata fields. Attackers can craft a DICOM file with JavaScript payloads in metadata fields such as Study Description, which are reflected without sanitization in popup.jsp and archiving/uploadfiles_jsp.java when processed through the Upload DICOM images feature.
@@ -2417,6 +2428,7 @@
 - [c0gnit00/CVE-2026-33017](https://github.com/c0gnit00/CVE-2026-33017)
 - [yayip/CVE-2026-33017](https://github.com/yayip/CVE-2026-33017)
 - [diamorphine666/CVE-2026-33017-Exploit](https://github.com/diamorphine666/CVE-2026-33017-Exploit)
+- [Usman0220/CVE-2026-33017-Langflow-RCE](https://github.com/Usman0220/CVE-2026-33017-Langflow-RCE)
 - [Industri4l-H3ll-Xpl0it3rs/CVE-2026-33017-Langflow-RCE](https://github.com/Industri4l-H3ll-Xpl0it3rs/CVE-2026-33017-Langflow-RCE)
 
 ### CVE-2026-33067 (2026-03-20)
@@ -2800,7 +2812,11 @@
 
 - [MoXie25/NanoMQ-Memory-Leak-Research](https://github.com/MoXie25/NanoMQ-Memory-Leak-Research)
 
-### CVE-2026-36669
+### CVE-2026-36669 (2026-07-17)
+
+<code>An unauthenticated arbitrary file upload vulnerability in ck_upload_handler.php in Feng Office 3.11.13.11 allows remote attackers to upload malicious files (such as .html) to the web-accessible /tmp/ directory.
+</code>
+
 - [firstlax6t/CVE-2026-36669-FengOffice](https://github.com/firstlax6t/CVE-2026-36669-FengOffice)
 
 ### CVE-2026-36670 (2026-06-15)
@@ -3203,13 +3219,6 @@
 
 - [romain-deperne/CVE-2026-40864](https://github.com/romain-deperne/CVE-2026-40864)
 
-### CVE-2026-40887 (2026-04-21)
-
-<code>Vendure is an open-source headless commerce platform. Starting in version 1.7.4 and prior to versions 2.3.4, 3.5.7, and 3.6.2, an unauthenticated SQL injection vulnerability exists in the Vendure Shop API. A user-controlled query string parameter is interpolated directly into a raw SQL expression without parameterization or validation, allowing an attacker to execute arbitrary SQL against the database. This affects all supported database backends (PostgreSQL, MySQL/MariaDB, SQLite). The Admin API is also affected, though exploitation there requires authentication. Versions 2.3.4, 3.5.7, and 3.6.2 contain a patch. For those who are unable to upgrade immediately, Vendure has made a hotfix available that uses `RequestContextService.getLanguageCode` to validate the `languageCode` input at the boundary. This blocks injection payloads before they can reach any query. The hotfix replaces the existing `getLanguageCode` method in `packages/core/src/service/helpers/request-context/request-context.service.ts`. Invalid values are silently dropped and the channel's default language is used instead. The patched versions additionally convert the vulnerable SQL interpolation to a parameterized query as defense in depth.
-</code>
-
-- [thecodeb0ss/CVE-2026-40887](https://github.com/thecodeb0ss/CVE-2026-40887)
-
 ### CVE-2026-40897 (2026-04-24)
 
 <code>Math.js is an extensive math library for JavaScript and Node.js. From 13.1.1 to before 15.2.0, a vulnerability allowed executing arbitrary JavaScript via the expression parser of mathjs. You can be affected when you have an application where users can evaluate arbitrary expressions using the mathjs expression parser. This vulnerability is fixed in 15.2.0.
@@ -3594,11 +3603,13 @@
 - [onesmiledx/CVE-2026-43499](https://github.com/onesmiledx/CVE-2026-43499)
 - [ctnBobong32/auto_extract_offsets](https://github.com/ctnBobong32/auto_extract_offsets)
 - [SlightNeko/ghostlock-rothko](https://github.com/SlightNeko/ghostlock-rothko)
-- [DistrictBlauw/CyberMeowfia-ace3](https://github.com/DistrictBlauw/CyberMeowfia-ace3)
 - [BuSung-dev/CVE-2026-43499-S25U](https://github.com/BuSung-dev/CVE-2026-43499-S25U)
 - [ayyy7128/CVE-2026-43499-jinghu](https://github.com/ayyy7128/CVE-2026-43499-jinghu)
+- [justsoman/CyberMeowfia-ace3](https://github.com/justsoman/CyberMeowfia-ace3)
 - [2932796375github/CVE-2026-43499_OPPO-MT6835](https://github.com/2932796375github/CVE-2026-43499_OPPO-MT6835)
 - [MiaPatsune/cve-2026-43499](https://github.com/MiaPatsune/cve-2026-43499)
+- [sorrow404Null/CVE-2026-43499-RMX5200](https://github.com/sorrow404Null/CVE-2026-43499-RMX5200)
+- [fuukliam/vivo-x-fold6-ghostlock](https://github.com/fuukliam/vivo-x-fold6-ghostlock)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -4060,6 +4071,13 @@
 
 - [shreyas-challa/CVE-2026-46395-haxcms-hmac-key-leak](https://github.com/shreyas-challa/CVE-2026-46395-haxcms-hmac-key-leak)
 
+### CVE-2026-46442 (2026-06-08)
+
+<code>Flowise is a drag &amp; drop user interface to build a customized large language model flow. Prior to version 3.1.2, POST /api/v1/node-custom-function lacks route-level authorization, allowing any authenticated user or API key to submit arbitrary JavaScript to the Custom JS Function node. When E2B_APIKEY is not configured — the common deployment case — Flowise executes this code inside a NodeVM sandbox. This sandbox can be escaped, allowing an attacker to reach the host process object and execute system commands via child_process. The result is authenticated remote code execution on the Flowise server host. This issue has been patched in version 3.1.2.
+</code>
+
+- [codeb0ssx/CVE-2026-46442-PoC](https://github.com/codeb0ssx/CVE-2026-46442-PoC)
+
 ### CVE-2026-46453 (2026-07-06)
 
 <code>Improper Input Validation, Authorization Bypass Through User-Controlled Key vulnerability in Apache Camel ElasticSearch Rest Client.\n\nThe camel-elasticsearch-rest-client component reads several Exchange headers to control its behaviour - SEARCH_QUERY (an advanced query body), OPERATION (which Elasticsearch operation to run), INDEX_NAME, INDEX_SETTINGS and ID. The string values of these header constants, defined in ElasticSearchRestClientConstant, are plain unprefixed names ('SEARCH_QUERY', 'OPERATION', 'INDEX_NAME', 'INDEX_SETTINGS', 'ID') rather than the 'Camel'-prefixed names used by every other Camel component (for example CamelSqlQuery, CamelMongoDbCriteria, CamelCqlQuery). Camel's inbound HTTP header filter, HttpHeaderFilterStrategy, blocks only header names that begin with 'Camel' or 'camel'. Because the Elasticsearch header names do not carry that prefix, they pass through the inbound filter unchanged. When a Camel route exposes an HTTP entry point (for example platform-http) in front of an elasticsearch-rest-client producer, an untrusted HTTP client can set these headers directly on its request and override the query and operation that the route author configured: reading every document in the index (SEARCH_QUERY with a match_all query), deleting documents (OPERATION set to Delete together with ID), or exfiltrating selected fields. No credentials are required and the producer reads the headers unconditionally.\nThis issue affects Apache Camel: from 4.3.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. The fix renames the camel-elasticsearch-rest-client Exchange header constant string values (ID, SEARCH_QUERY, INDEX_SETTINGS, INDEX_NAME, OPERATION) to carry the Camel prefix (CamelElasticsearchId, CamelElasticsearchSearchQuery, CamelElasticsearchIndexSettings, CamelElasticsearchIndexName, CamelElasticsearchOperation) so that they are blocked by the inbound HttpHeaderFilterStrategy; the Java field names are unchanged. For deployments that cannot upgrade immediately, strip the affected headers from untrusted inbound messages before they reach the producer (for example removeHeader('SEARCH_QUERY'), removeHeader('OPERATION'), removeHeader('INDEX_NAME'), removeHeader('INDEX_SETTINGS') and removeHeader('ID') in front of the elasticsearch-rest-client endpoint), or apply a custom HeaderFilterStrategy that blocks these names.
@@ -4271,6 +4289,13 @@
 
 - [0xBlackash/CVE-2026-47729](https://github.com/0xBlackash/CVE-2026-47729)
 
+### CVE-2026-47777 (2026-06-15)
+
+<code>Mastodon is a free, open-source social network server based on ActivityPub. In versions there is a missing condition in the check if remote accounts consented to be featured in a remote Collection could lead to attackers bypassing the check and faking consent. An attacker could forge the FeatureAuthorization object that is used to verify consent to be featured in a Collection and thus make it appear as if an account is allowed to be in a Collection when it actually is not. While the FeatureAuthorization must reside on the same domain as the object it is for, a check is missing to make sure said object is actually the same as in the Collection item. This allows an attacker to forge the authorization. Mastodon servers are affected only if running the main branch or nightly builds who have opted into testing the experimental &quot;Collections&quot; feature by setting the environment variable EXPERIMENTAL_FEATURES to a value including collections. This has been patched in version 4.6.0-beta.1.
+</code>
+
+- [bekwiner/cve-2026-47777](https://github.com/bekwiner/cve-2026-47777)
+
 ### CVE-2026-48017 (2026-06-15)
 
 <code>DbGate is cross-platform database manager. In versions 7.1.8 and prior, the POST /runners/load-reader endpoint in DbGate accepts a functionName parameter that is directly interpolated into a JavaScript code template without any sanitization or validation. An authenticated user (with basic access, no special permissions required) can inject arbitrary JavaScript code that executes on the server with full process privileges, bypassing the require=null sandbox restriction. An authenticated user with basic access (no admin role, no run-shell-script permission required) can: execute arbitrary OS commands on the DbGate server with the privileges of the Node.js process, read/write any file accessible to the process, pivot to connected databases by reading connection credentials from DbGate's storage, and compromise the host system - in Docker deployments, this typically means root access within the container.
@@ -4320,6 +4345,20 @@
 </code>
 
 - [oscerd/CVE-2026-48203](https://github.com/oscerd/CVE-2026-48203)
+
+### CVE-2026-48204 (2026-07-06)
+
+<code>Improper Input Validation, Improper Access Control vulnerability in Apache Camel in Camel Mongodb Gridfs component.\n\nThe camel-mongodb-gridfs producer selects the GridFS operation to perform from the gridfs.operation Exchange header when the endpoint's operation parameter is not set - which is the default. The control-header constants (GridFsConstants.GRIDFS_OPERATION, GRIDFS_OBJECT_ID, GRIDFS_METADATA, GRIDFS_CHUNKSIZE, GRIDFS_FILE_ID_PRODUCED) were the plain strings gridfs.operation, gridfs.objectid, gridfs.metadata, gridfs.chunksize and gridfs.fileid. Because these names do not start with the Camel / camel prefix, HttpHeaderFilterStrategy - which blocks only the Camel header namespace on the HTTP boundary - let them pass from an inbound HTTP request straight into the Exchange. In a route that bridges an HTTP consumer (for example platform-http) into a mongodb-gridfs: producer with no explicit operation, any HTTP client could therefore set the gridfs.operation header to override the route's intended operation - switching, for example, a file upload to remove (deleting a file identified by the attacker-supplied gridfs.objectid), listAll (enumerating every file in the bucket) or findOne (reading a file) - and supply a gridfs.metadata value that is parsed as a MongoDB document, enabling NoSQL operator injection. No credentials are required when the bridging consumer is unauthenticated.\nThis issue affects Apache Camel: from 4.0.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. After upgrading, routes that drive GridFS operations or metadata via the raw header names must use CamelGridFsOperation / CamelGridFsObjectId / CamelGridFsMetadata / CamelGridFsChunkSize / CamelGridFsFileId instead of the gridfs.* names. For deployments that cannot upgrade immediately, set an explicit operation on the mongodb-gridfs: endpoint so the operation is not taken from a header, and strip the gridfs.* headers from any untrusted ingress before the producer.
+</code>
+
+- [oscerd/CVE-2026-48204](https://github.com/oscerd/CVE-2026-48204)
+
+### CVE-2026-48205 (2026-07-06)
+
+<code>Improper Input Validation, Server-Side Request Forgery (SSRF) vulnerability in Apache Camel DNS component.\n\nThe camel-dns producers read DNS operation parameters - the resolver to query, the name or domain to look up, the record type and class, and the search term - from Exchange message headers whose constant values (DnsConstants.DNS_SERVER, DNS_NAME, DNS_DOMAIN, DNS_TYPE, DNS_CLASS, TERM) were the plain strings dns.server, dns.name, dns.domain, dns.type, dns.class and term. Because these names do not start with the Camel / camel prefix, HttpHeaderFilterStrategy - which blocks only the Camel header namespace on the HTTP boundary - let them pass from an inbound HTTP request straight into the Exchange. In a route that bridges an HTTP consumer (for example platform-http) into a dns: producer, any HTTP client could therefore set the dns.server header to make the dig producer build a SimpleResolver pointing at an attacker-controlled DNS server - a server-side request forgery via DNS, through which the attacker observes the queried name and can return poisoned responses - and set the dns.name / dns.domain headers to resolve arbitrary internal hostnames, disclosing whether they exist (internal network reconnaissance). No credentials are required when the bridging consumer is unauthenticated.\nThis issue affects Apache Camel: from 4.0.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. After upgrading, routes that drive DNS operations via the raw header names must use CamelDnsServer / CamelDnsName / CamelDnsDomain / CamelDnsType / CamelDnsClass / CamelDnsTerm instead of the dns.* / term names. For deployments that cannot upgrade immediately, strip the dns.* and term headers from any untrusted ingress before the dns: producer, and set the DNS server and lookup parameters from a trusted source in the route.
+</code>
+
+- [oscerd/CVE-2026-48205](https://github.com/oscerd/CVE-2026-48205)
 
 ### CVE-2026-48208 (2026-06-01)
 
@@ -4786,7 +4825,11 @@
 ### CVE-2026-51788
 - [aykhan32/CVE-2026-51788](https://github.com/aykhan32/CVE-2026-51788)
 
-### CVE-2026-51833
+### CVE-2026-51833 (2026-07-17)
+
+<code>Xenforo 2.3.8 is vulnerable to SSRF. Attackers that have administrator privileges or are able to add/save RSS feeds can enumerate internal services (ports) or expose the original IP address of the server.
+</code>
+
 - [dennywise/CVE-2026-51833-Public-Disclosure](https://github.com/dennywise/CVE-2026-51833-Public-Disclosure)
 
 ### CVE-2026-51947 (2026-07-01)
@@ -4803,7 +4846,11 @@
 
 - [nk7667/-linx-server-vulnerability-report](https://github.com/nk7667/-linx-server-vulnerability-report)
 
-### CVE-2026-52199
+### CVE-2026-52199 (2026-07-17)
+
+<code>An issue in Generic OEM UZ801_v2.1 4G LTE Router V3.4.3 allows a remote attacker to execute arbitrary code via the sbin/adbd component
+</code>
+
 - [lamaper/CVE-2026-52199](https://github.com/lamaper/CVE-2026-52199)
 
 ### CVE-2026-52217
@@ -4821,13 +4868,6 @@
 </code>
 
 - [portbuster1337/CVE-2026-52806](https://github.com/portbuster1337/CVE-2026-52806)
-
-### CVE-2026-52813 (2026-06-24)
-
-<code>Gogs is an open source self-hosted Git service. Prior to 0.14.3, organization names containing path traversal sequences (../) are accepted by Gogs, and repositories under them are written to paths following these path traversals. This allows storing/retrieving data for repositories at arbitrary locations on the filesystem. By creating nested structure of Git repositories, one can overwrite the other's hooks configuration to result in Remote Code Execution (RCE). This vulnerability is fixed in 0.14.3.
-</code>
-
-- [thecodeb0ss/CVE-2026-52813](https://github.com/thecodeb0ss/CVE-2026-52813)
 
 ### CVE-2026-52885 (2026-06-26)
 
@@ -4915,7 +4955,6 @@
 </code>
 
 - [BiiTts/CVE-2026-53753-Crawl4AI-RCE](https://github.com/BiiTts/CVE-2026-53753-Crawl4AI-RCE)
-- [thecodeb0ss/Advanced-CVE-2026-53753](https://github.com/thecodeb0ss/Advanced-CVE-2026-53753)
 
 ### CVE-2026-53787 (2026-06-12)
 
@@ -5069,13 +5108,6 @@
 
 - [rootdirective-sec/CVE-2026-55255-Lab](https://github.com/rootdirective-sec/CVE-2026-55255-Lab)
 
-### CVE-2026-55488 (2026-06-24)
-
-<code>motionEye (mEye) is an online interface for a piece of software called &quot;motion,&quot; which is a video surveillance program with motion detection. Versions prior to 0.44.0 contain an absolute path traversal vulnerability in multiple media file handlers that allows an attacker to read arbitrary files from the filesystem. The affected handlers accept a user-controlled filename parameter and construct filesystem paths using `os.path.join()`. When an absolute path is supplied, Python discards the configured media directory and returns the attacker-supplied path directly. The application then bypasses Tornado's built-in path validation by overriding the relevant safety checks. As a result, an attacker can access files outside of the configured camera media directory, subject to the permissions of the motionEye process. Version 0.44.0 fixes the issue.
-</code>
-
-- [thecodeb0ss/CVE-2026-55488](https://github.com/thecodeb0ss/CVE-2026-55488)
-
 ### CVE-2026-55494
 - [4qu4r1um/tugtainer-1.30.2-CVE-2026-55494-and-CVE-2026-62308-to-RCE](https://github.com/4qu4r1um/tugtainer-1.30.2-CVE-2026-55494-and-CVE-2026-62308-to-RCE)
 
@@ -5161,7 +5193,6 @@
 </code>
 
 - [BiiTts/CVE-2026-56782-Gorse-Auth-Bypass](https://github.com/BiiTts/CVE-2026-56782-Gorse-Auth-Bypass)
-- [thecodeb0ss/CVE-2026-56782](https://github.com/thecodeb0ss/CVE-2026-56782)
 
 ### CVE-2026-56876 (2026-06-26)
 
@@ -5276,6 +5307,16 @@
 
 ### CVE-2026-62958
 - [0Linear/CVE-2026-62958](https://github.com/0Linear/CVE-2026-62958)
+
+### CVE-2026-63030 (2026-07-17)
+
+<code>WordPress 6.9.x before 6.9.5 and 7.0.x before 7.0.2 is affected by a REST API batch endpoint route confusion issue which, combined with the author__not_in WP_Query SQL Injection (CVE-2026-60137), could allow an attacker to perform SQL Injection and achieve Remote Code Execution.
+</code>
+
+- [Icex0/wp2shell-poc](https://github.com/Icex0/wp2shell-poc)
+- [attackercan/wp2shell-poc2](https://github.com/attackercan/wp2shell-poc2)
+- [ZephrFish/wp2shell-scanner](https://github.com/ZephrFish/wp2shell-scanner)
+- [Senanfurkan/wordpress-cve-2026-63030](https://github.com/Senanfurkan/wordpress-cve-2026-63030)
 
 ### CVE-2026-69212
 - [c0gnit00/CVE-2026-69212](https://github.com/c0gnit00/CVE-2026-69212)
@@ -7167,6 +7208,7 @@
 - [mananispiwpiw/CVE-2025-8110-PoC](https://github.com/mananispiwpiw/CVE-2025-8110-PoC)
 - [joaquinrrr/CVE-2025-8110](https://github.com/joaquinrrr/CVE-2025-8110)
 - [Xdezen/CVE-2025-8110](https://github.com/Xdezen/CVE-2025-8110)
+- [Shirouuu/CVE-2025-8110-gogs-poc](https://github.com/Shirouuu/CVE-2025-8110-gogs-poc)
 
 ### CVE-2025-8191 (2025-07-26)
 
@@ -8303,7 +8345,7 @@
 - [franksec42/mongobleed-exploit-CVE-2025-14847](https://github.com/franksec42/mongobleed-exploit-CVE-2025-14847)
 - [lincemorado97/CVE-2025-14847](https://github.com/lincemorado97/CVE-2025-14847)
 - [Security-Phoenix-demo/mongobleed-exploit-CVE-2025-14847](https://github.com/Security-Phoenix-demo/mongobleed-exploit-CVE-2025-14847)
-- [chinaxploiter/CVE-2025-14847-PoC](https://github.com/chinaxploiter/CVE-2025-14847-PoC)
+- [codeb0ssx/CVE-2025-14847-PoC](https://github.com/codeb0ssx/CVE-2025-14847-PoC)
 - [14mb1v45h/CYBERDUDEBIVASH-MONGODB-DETECTOR-v2026](https://github.com/14mb1v45h/CYBERDUDEBIVASH-MONGODB-DETECTOR-v2026)
 - [kuyrathdaro/cve-2025-14847](https://github.com/kuyrathdaro/cve-2025-14847)
 - [joshuavanderpoll/CVE-2025-14847](https://github.com/joshuavanderpoll/CVE-2025-14847)
@@ -8709,7 +8751,6 @@
 - [sfewer-r7/CVE-2025-22457](https://github.com/sfewer-r7/CVE-2025-22457)
 - [securekomodo/CVE-2025-22457](https://github.com/securekomodo/CVE-2025-22457)
 - [TRone-ux/CVE-2025-22457](https://github.com/TRone-ux/CVE-2025-22457)
-- [melisakumral/CVE-2025-22457](https://github.com/melisakumral/CVE-2025-22457)
 - [benmevic/cve-2025-22457](https://github.com/benmevic/cve-2025-22457)
 
 ### CVE-2025-22510 (2025-01-09)
@@ -14984,7 +15025,11 @@
 
 - [m4sh-wacker/CVE-2025-60188-Atarim-Plugin-Exploit](https://github.com/m4sh-wacker/CVE-2025-60188-Atarim-Plugin-Exploit)
 
-### CVE-2025-60357
+### CVE-2025-60357 (2026-07-17)
+
+<code>AhnLab EPP Management v1.0.14.32-6249 was discovered to contain a NoSQL injection vulnerability via the eventlog/agentEvent/list endpoint.
+</code>
+
 - [Nullbyte3117/CVE-2025-60357](https://github.com/Nullbyte3117/CVE-2025-60357)
 
 ### CVE-2025-60424 (2025-10-27)
@@ -16608,7 +16653,7 @@
 <code>A Local File Inclusion (LFI) vulnerability exists in the Webmail Classic UI of Zimbra Collaboration (ZCS) 10.0 and 10.1 because of improper handling of user-supplied request parameters in the RestFilter servlet. An unauthenticated remote attacker can craft requests to the /h/rest endpoint to influence internal request dispatching, allowing inclusion of arbitrary files from the WebRoot directory.
 </code>
 
-- [chinaxploiter/CVE-2025-68645-PoC](https://github.com/chinaxploiter/CVE-2025-68645-PoC)
+- [codeb0ssx/CVE-2025-68645-PoC](https://github.com/codeb0ssx/CVE-2025-68645-PoC)
 - [MaxMnMl/zimbramail-CVE-2025-68645-poc](https://github.com/MaxMnMl/zimbramail-CVE-2025-68645-poc)
 - [faysalferdous/CVE-2025-68645-Exploiting-Zimbra-Webmail-LFI-Vulnerability](https://github.com/faysalferdous/CVE-2025-68645-Exploiting-Zimbra-Webmail-LFI-Vulnerability)
 - [Crow5-oss/CVE-2025-68645](https://github.com/Crow5-oss/CVE-2025-68645)
@@ -30571,7 +30616,6 @@
 - [RevoltSecurities/CVE-2023-22518](https://github.com/RevoltSecurities/CVE-2023-22518)
 - [0x0d3ad/CVE-2023-22518](https://github.com/0x0d3ad/CVE-2023-22518)
 - [C1ph3rX13/CVE-2023-22518](https://github.com/C1ph3rX13/CVE-2023-22518)
-- [bibo318/CVE-2023-22518](https://github.com/bibo318/CVE-2023-22518)
 - [Lilly-dox/Exploit-CVE-2023-22518](https://github.com/Lilly-dox/Exploit-CVE-2023-22518)
 - [ductink98lhp/analyze-Exploit-CVE-2023-22518-Confluence](https://github.com/ductink98lhp/analyze-Exploit-CVE-2023-22518-Confluence)
 
@@ -30856,6 +30900,7 @@
 - [Aureum01/CVE-2023-23752](https://github.com/Aureum01/CVE-2023-23752)
 - [Marwan651/Joomla-CMS-Full-Lifecycle-Pentest](https://github.com/Marwan651/Joomla-CMS-Full-Lifecycle-Pentest)
 - [Sharma01672/traveller-htb](https://github.com/Sharma01672/traveller-htb)
+- [BardLaudian/CVE-2023-23752](https://github.com/BardLaudian/CVE-2023-23752)
 
 ### CVE-2023-23924 (2023-01-31)
 
@@ -31233,6 +31278,13 @@
 - [heapbytes/CVE-2023-26035](https://github.com/heapbytes/CVE-2023-26035)
 - [Yuma-Tsushima07/CVE-2023-26035](https://github.com/Yuma-Tsushima07/CVE-2023-26035)
 - [0xfalafel/zoneminder_CVE-2023-26035](https://github.com/0xfalafel/zoneminder_CVE-2023-26035)
+
+### CVE-2023-26039 (2023-02-25)
+
+<code>ZoneMinder is a free, open source Closed-circuit television software application for Linux which supports IP, USB and Analog cameras. Versions prior to 1.36.33 and 1.37.33 contain an OS Command Injection via daemonControl() in (/web/api/app/Controller/HostController.php). Any authenticated user can construct an api command to execute any shell command as the web user. This issue is patched in versions 1.36.33 and 1.37.33.
+</code>
+
+- [ungabunga-ctf/CVE-2023-26039](https://github.com/ungabunga-ctf/CVE-2023-26039)
 
 ### CVE-2023-26048 (2023-04-18)
 
@@ -31733,7 +31785,6 @@
 - [fortra/CVE-2023-28252](https://github.com/fortra/CVE-2023-28252)
 - [726232111/CVE-2023-28252](https://github.com/726232111/CVE-2023-28252)
 - [Danasuley/CVE-2023-28252-](https://github.com/Danasuley/CVE-2023-28252-)
-- [duck-sec/CVE-2023-28252-Compiled-exe](https://github.com/duck-sec/CVE-2023-28252-Compiled-exe)
 - [byt3n33dl3/CLFS](https://github.com/byt3n33dl3/CLFS)
 - [Vulmatch/CVE-2023-28252](https://github.com/Vulmatch/CVE-2023-28252)
 
@@ -38013,6 +38064,8 @@
 - [jelee2555/CVE-2022-1471-attacker](https://github.com/jelee2555/CVE-2022-1471-attacker)
 - [anupamojha-eng/sentinel-transitive-cve-demo](https://github.com/anupamojha-eng/sentinel-transitive-cve-demo)
 - [seal-sec-demo-2/Java-Example](https://github.com/seal-sec-demo-2/Java-Example)
+- [seal-sean-org/yaml-payload](https://github.com/seal-sean-org/yaml-payload)
+- [seal-sean-org/seans-surf-and-skate](https://github.com/seal-sean-org/seans-surf-and-skate)
 
 ### CVE-2022-1565 (2022-07-18)
 
@@ -42643,6 +42696,12 @@
 
 - [safe3s/CVE-2022-35416](https://github.com/safe3s/CVE-2022-35416)
 
+### CVE-2022-35497
+- [PN-Tester/CVE-2022-35497](https://github.com/PN-Tester/CVE-2022-35497)
+
+### CVE-2022-35499
+- [PN-Tester/CVE-2022-35499](https://github.com/PN-Tester/CVE-2022-35499)
+
 ### CVE-2022-35500 (2022-11-23)
 
 <code>Amasty Blog 2.10.3 is vulnerable to Cross Site Scripting (XSS) via leave comment functionality.
@@ -44846,13 +44905,6 @@
 
 - [nanopathi/external_libavc_AOSP10_r33_CVE-2021-0325](https://github.com/nanopathi/external_libavc_AOSP10_r33_CVE-2021-0325)
 
-### CVE-2021-0326 (2021-02-10)
-
-<code>In p2p_copy_client_info of p2p.c, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution if the target device is performing a Wi-Fi Direct search, with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-8.1 Android-9Android ID: A-172937525
-</code>
-
-- [ShaikUsaf/external_wpa_supplicant_8_AOSP10_r33CVE-2021-0326](https://github.com/ShaikUsaf/external_wpa_supplicant_8_AOSP10_r33CVE-2021-0326)
-
 ### CVE-2021-0390 (2021-03-10)
 
 <code>In various methods of WifiNetworkSuggestionsManager.java, there is a possible modification of suggested networks due to a missing permission check. This could lead to local escalation of privilege by a background user on the same device with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-8.1 Android-9 Android-10Android ID: A-174749461
@@ -44866,13 +44918,6 @@
 </code>
 
 - [uthrasri/System_Connectivity_Wificond_CVE-2021-0392](https://github.com/uthrasri/System_Connectivity_Wificond_CVE-2021-0392)
-
-### CVE-2021-0393 (2021-03-10)
-
-<code>In Scanner::LiteralBuffer::NewCapacity of scanner.cc, there is a possible out of bounds write due to an integer overflow. This could lead to remote code execution if an attacker can supply a malicious PAC file, with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-8.1 Android-9 Android-10Android ID: A-168041375
-</code>
-
-- [Trinadh465/external_v8_AOSP10_r33_CVE-2021-0393](https://github.com/Trinadh465/external_v8_AOSP10_r33_CVE-2021-0393)
 
 ### CVE-2021-0394 (2021-03-10)
 
@@ -48497,6 +48542,7 @@
 - [yanxinwu946/hikvision-unauthenticated-rce-cve-2021-36260](https://github.com/yanxinwu946/hikvision-unauthenticated-rce-cve-2021-36260)
 - [saaydmr/hikvision-exploiter](https://github.com/saaydmr/hikvision-exploiter)
 - [code-msga/HikvisionExploiter_fixed](https://github.com/code-msga/HikvisionExploiter_fixed)
+- [sylhetyhackvenger/HIKRAVEN](https://github.com/sylhetyhackvenger/HIKRAVEN)
 
 ### CVE-2021-36393 (2023-03-06)
 
@@ -50849,6 +50895,7 @@
 - [DAADAISMYLIFE/log4shell-lab](https://github.com/DAADAISMYLIFE/log4shell-lab)
 - [Ricardo354/homelab-CVE-2021-44228](https://github.com/Ricardo354/homelab-CVE-2021-44228)
 - [AstralJays/TraditionalJay](https://github.com/AstralJays/TraditionalJay)
+- [arpitgupta369/log4shell-scanner](https://github.com/arpitgupta369/log4shell-scanner)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -63394,7 +63441,7 @@
 - [andyfeili/CVE-2018-9276](https://github.com/andyfeili/CVE-2018-9276)
 - [alvinsmith-eroad/CVE-2018-9276](https://github.com/alvinsmith-eroad/CVE-2018-9276)
 - [AC8999/PRTG-Network-Monitor-18.2.38---Authenticated-Remote-Code-Execution-CVE-2018-9276](https://github.com/AC8999/PRTG-Network-Monitor-18.2.38---Authenticated-Remote-Code-Execution-CVE-2018-9276)
-- [BardLaudian/CVE_2018_9276](https://github.com/BardLaudian/CVE_2018_9276)
+- [BardLaudian/CVE-2018-9276](https://github.com/BardLaudian/CVE-2018-9276)
 
 ### CVE-2018-9338 (2024-11-19)
 
@@ -64300,7 +64347,6 @@
 - [4xolotl/CVE-2018-15473](https://github.com/4xolotl/CVE-2018-15473)
 - [NestyF/SSH_Enum_CVE-2018-15473](https://github.com/NestyF/SSH_Enum_CVE-2018-15473)
 - [yZee00/CVE-2018-15473](https://github.com/yZee00/CVE-2018-15473)
-- [MahdiOsman/CVE-2018-15473-SNMPv1-2-Community-String-Vulnerability-Testing](https://github.com/MahdiOsman/CVE-2018-15473-SNMPv1-2-Community-String-Vulnerability-Testing)
 - [SUDORM0X/PoC-CVE-2018-15473](https://github.com/SUDORM0X/PoC-CVE-2018-15473)
 - [OmarV4066/SSHEnumKL](https://github.com/OmarV4066/SSHEnumKL)
 - [0xNehru/ssh_Enum_vaild](https://github.com/0xNehru/ssh_Enum_vaild)
@@ -67389,6 +67435,13 @@
 </code>
 
 - [idanshechter/CVE-2017-13208-Scanner](https://github.com/idanshechter/CVE-2017-13208-Scanner)
+
+### CVE-2017-13209 (2018-01-12)
+
+<code>In the ServiceManager::add function in the hardware service manager, there is an insecure permissions check based on the PID of the caller which could allow an application or service to replace a HAL service with its own service. This could lead to a local elevation of privilege enabling code execution as a privileged process with no additional execution privileges needed. User interaction is not needed for exploitation. Product: Android. Versions: 8.0, 8.1. Android ID: A-68217907.
+</code>
+
+- [caofangkuai/CVE-2017-13209](https://github.com/caofangkuai/CVE-2017-13209)
 
 ### CVE-2017-13253 (2018-04-04)
 
@@ -70659,6 +70712,7 @@
 - [0xBlackash/CVE-2014-0160](https://github.com/0xBlackash/CVE-2014-0160)
 - [Ryo-Soikutsu/Heartbleed](https://github.com/Ryo-Soikutsu/Heartbleed)
 - [victoriacfigueiredo/heartbleed-lab](https://github.com/victoriacfigueiredo/heartbleed-lab)
+- [tungduongNT/CVE-2014-0160.](https://github.com/tungduongNT/CVE-2014-0160.)
 
 ### CVE-2014-0166 (2014-04-09)
 
@@ -73340,6 +73394,7 @@
 - [harshiys/cybersecurity-home-lab-btp](https://github.com/harshiys/cybersecurity-home-lab-btp)
 - [DesmondHinds94/S22_The_Verification_Protocol](https://github.com/DesmondHinds94/S22_The_Verification_Protocol)
 - [EthicalHackingLabs/metasploitable2-exploitation-metasploit](https://github.com/EthicalHackingLabs/metasploitable2-exploitation-metasploit)
+- [Mboatella25/metasploitable-pentest-lab](https://github.com/Mboatella25/metasploitable-pentest-lab)
 
 ### CVE-2007-3280 (2007-06-19)
 
