@@ -185,6 +185,13 @@
 
 - [pbrass/CVE-2026-1814](https://github.com/pbrass/CVE-2026-1814)
 
+### CVE-2026-1999 (2026-02-18)
+
+<code>An incorrect authorization vulnerability was identified in GitHub Enterprise Server that allowed an attacker to merge their own pull request into a repository without having push access by exploiting an authorization bypass in the enable_auto_merge mutation for pull requests. This issue only affected repositories that allow forking as the attack relies on opening a pull request from an attacker-controlled fork into the target repository. Exploitation was only possible in specific scenarios. It required a clean pull request status and only applied to branches without branch protection rules enabled. This vulnerability affected GitHub Enterprise Server versions prior to 3.19.2, 3.18.5, and 3.17.11, and was fixed in versions 3.19.2, 3.18.5, and 3.17.11. This vulnerability was reported via the GitHub Bug Bounty program.
+</code>
+
+- [manoelprovider20-lgtm/merge-authz-test](https://github.com/manoelprovider20-lgtm/merge-authz-test)
+
 ### CVE-2026-2002 (2026-02-17)
 
 <code>The Forminator Forms – Contact Form, Payment Form &amp; Custom Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the form_name parameter in all versions up to, and including, 1.50.2 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level access, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. The plugin allows admins to give form management permissions to lower level users, which could make this exploitable by users such as subscribers.
@@ -2395,7 +2402,7 @@
 <code>Protection mechanism failure in Windows Shell allows an unauthorized attacker to perform spoofing over a network.
 </code>
 
-- [1fox23/CVE-2026-32202](https://github.com/1fox23/CVE-2026-32202)
+- [cloud2783/CVE-2026-32202](https://github.com/cloud2783/CVE-2026-32202)
 
 ### CVE-2026-32488 (2026-03-25)
 
@@ -3329,6 +3336,7 @@
 - [yurahshell/CVE-2026-41940](https://github.com/yurahshell/CVE-2026-41940)
 - [asdasddqwdq29-a11y/CVE-2026-41940](https://github.com/asdasddqwdq29-a11y/CVE-2026-41940)
 - [aquace/CVE-2026-41940-PoC](https://github.com/aquace/CVE-2026-41940-PoC)
+- [oguz-kagan-akar/CVE-2026-41940-analysis](https://github.com/oguz-kagan-akar/CVE-2026-41940-analysis)
 
 ### CVE-2026-42048 (2026-05-12)
 
@@ -3538,6 +3546,13 @@
 
 - [G4sp4rCS/CVE-2026-42980-POC](https://github.com/G4sp4rCS/CVE-2026-42980-POC)
 
+### CVE-2026-43074 (2026-05-06)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\neventpoll: defer struct eventpoll free to RCU grace period\n\nIn certain situations, ep_free() in eventpoll.c will kfree the epi-&gt;ep\neventpoll struct while it still being used by another concurrent thread.\nDefer the kfree() to an RCU callback to prevent UAF.
+</code>
+
+- [PeronGH/badepoll-selinux-disabler](https://github.com/PeronGH/badepoll-selinux-disabler)
+
 ### CVE-2026-43284 (2026-05-08)
 
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nxfrm: esp: avoid in-place decrypt on shared skb frags\n\nMSG_SPLICE_PAGES can attach pages from a pipe directly to an skb. TCP\nmarks such skbs with SKBFL_SHARED_FRAG after skb_splice_from_iter(),\nso later paths that may modify packet data can first make a private\ncopy. The IPv4/IPv6 datagram append paths did not set this flag when\nsplicing pages into UDP skbs.\n\nThat leaves an ESP-in-UDP packet made from shared pipe pages looking\nlike an ordinary uncloned nonlinear skb. ESP input then takes the no-COW\nfast path for uncloned skbs without a frag_list and decrypts in place\nover data that is not owned privately by the skb.\n\nMark IPv4/IPv6 datagram splice frags with SKBFL_SHARED_FRAG, matching\nTCP. Also make ESP input fall back to skb_cow_data() when the flag is\npresent, so ESP does not decrypt externally backed frags in place.\nPrivate nonlinear skb frags still use the existing fast path.\n\nThis intentionally does not change ESP output. In esp_output_head(),\nthe path that appends the ESP trailer to existing skb tailroom without\ncalling skb_cow_data() is not reachable for nonlinear skbs:\nskb_tailroom() returns zero when skb-&gt;data_len is nonzero, while ESP\ntailen is positive. Thus ESP output will either use the separate\ndestination-frag path or fall back to skb_cow_data().
@@ -3610,6 +3625,7 @@
 - [MiaPatsune/cve-2026-43499](https://github.com/MiaPatsune/cve-2026-43499)
 - [sorrow404Null/CVE-2026-43499-RMX5200](https://github.com/sorrow404Null/CVE-2026-43499-RMX5200)
 - [fuukliam/vivo-x-fold6-ghostlock](https://github.com/fuukliam/vivo-x-fold6-ghostlock)
+- [p2p3p/GhostLock-for-OnePlus](https://github.com/p2p3p/GhostLock-for-OnePlus)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -3709,6 +3725,13 @@
 </code>
 
 - [Alardiians/pocketbase-CVE-2026-44166](https://github.com/Alardiians/pocketbase-CVE-2026-44166)
+
+### CVE-2026-44262 (2026-05-12)
+
+<code>Scramble generates API documentation for Laravel project. From 0.13.2 to before 0.13.22, when documentation endpoints are publicly accessible and validation rules reference user-controlled input, request supplied data may be evaluated during documentation generation, leading to execution of arbitrary PHP code in the application context. This vulnerability is fixed in 0.13.22.
+</code>
+
+- [akash-osmsec/CVE-2026-44262-](https://github.com/akash-osmsec/CVE-2026-44262-)
 
 ### CVE-2026-44277 (2026-05-12)
 
@@ -4702,9 +4725,9 @@
 - [LSG-PolarBear/CVE-2026-49975](https://github.com/LSG-PolarBear/CVE-2026-49975)
 - [LiaoZiqi-GZFLS/CVE-2026-49975](https://github.com/LiaoZiqi-GZFLS/CVE-2026-49975)
 - [minc-nice-100/http2-bomb-analysis-paper](https://github.com/minc-nice-100/http2-bomb-analysis-paper)
-- [adminlove520/http2-bomb-detector](https://github.com/adminlove520/http2-bomb-detector)
 - [razureink/cve-2026-49975-http2bomb_reproduction](https://github.com/razureink/cve-2026-49975-http2bomb_reproduction)
 - [0xc03307b/CVE-2026-49975](https://github.com/0xc03307b/CVE-2026-49975)
+- [wlor0623/http2-bomb-detector](https://github.com/wlor0623/http2-bomb-detector)
 - [Manisso/http2-bomb](https://github.com/Manisso/http2-bomb)
 
 ### CVE-2026-50011 (2026-06-12)
@@ -5313,10 +5336,14 @@
 <code>WordPress 6.9.x before 6.9.5 and 7.0.x before 7.0.2 is affected by a REST API batch endpoint route confusion issue which, combined with the author__not_in WP_Query SQL Injection (CVE-2026-60137), could allow an attacker to perform SQL Injection and achieve Remote Code Execution.
 </code>
 
-- [Icex0/wp2shell-poc](https://github.com/Icex0/wp2shell-poc)
 - [attackercan/wp2shell-poc2](https://github.com/attackercan/wp2shell-poc2)
 - [ZephrFish/wp2shell-scanner](https://github.com/ZephrFish/wp2shell-scanner)
 - [Senanfurkan/wordpress-cve-2026-63030](https://github.com/Senanfurkan/wordpress-cve-2026-63030)
+- [tcyph3r/wp2shell-cve-2026-63030-root-cause](https://github.com/tcyph3r/wp2shell-cve-2026-63030-root-cause)
+- [dinosn/wp2shell-lab](https://github.com/dinosn/wp2shell-lab)
+- [47Cid/wp2shell-lab](https://github.com/47Cid/wp2shell-lab)
+- [Lutfifakee-Project/wp2shell](https://github.com/Lutfifakee-Project/wp2shell)
+- [ekomsSavior/wp2shell](https://github.com/ekomsSavior/wp2shell)
 
 ### CVE-2026-69212
 - [c0gnit00/CVE-2026-69212](https://github.com/c0gnit00/CVE-2026-69212)
@@ -17265,7 +17292,6 @@
 - [horizon3ai/CVE-2024-0204](https://github.com/horizon3ai/CVE-2024-0204)
 - [cbeek-r7/CVE-2024-0204](https://github.com/cbeek-r7/CVE-2024-0204)
 - [m-cetin/CVE-2024-0204](https://github.com/m-cetin/CVE-2024-0204)
-- [adminlove520/CVE-2024-0204](https://github.com/adminlove520/CVE-2024-0204)
 - [ibrahmsql/CVE-2024-0204](https://github.com/ibrahmsql/CVE-2024-0204)
 
 ### CVE-2024-0230 (2024-01-12)
@@ -30636,7 +30662,6 @@
 - [yoryio/CVE-2023-22527](https://github.com/yoryio/CVE-2023-22527)
 - [Privia-Security/CVE-2023-22527](https://github.com/Privia-Security/CVE-2023-22527)
 - [MaanVader/CVE-2023-22527-POC](https://github.com/MaanVader/CVE-2023-22527-POC)
-- [adminlove520/CVE-2023-22527](https://github.com/adminlove520/CVE-2023-22527)
 - [YongYe-Security/CVE-2023-22527](https://github.com/YongYe-Security/CVE-2023-22527)
 - [Boogipop/CVE-2023-22527-Godzilla-MEMSHELL](https://github.com/Boogipop/CVE-2023-22527-Godzilla-MEMSHELL)
 - [M0untainShley/CVE-2023-22527-MEMSHELL](https://github.com/M0untainShley/CVE-2023-22527-MEMSHELL)
@@ -31785,6 +31810,7 @@
 - [fortra/CVE-2023-28252](https://github.com/fortra/CVE-2023-28252)
 - [726232111/CVE-2023-28252](https://github.com/726232111/CVE-2023-28252)
 - [Danasuley/CVE-2023-28252-](https://github.com/Danasuley/CVE-2023-28252-)
+- [duck-sec/CVE-2023-28252-Compiled-exe](https://github.com/duck-sec/CVE-2023-28252-Compiled-exe)
 - [byt3n33dl3/CLFS](https://github.com/byt3n33dl3/CLFS)
 - [Vulmatch/CVE-2023-28252](https://github.com/Vulmatch/CVE-2023-28252)
 
@@ -67435,13 +67461,6 @@
 </code>
 
 - [idanshechter/CVE-2017-13208-Scanner](https://github.com/idanshechter/CVE-2017-13208-Scanner)
-
-### CVE-2017-13209 (2018-01-12)
-
-<code>In the ServiceManager::add function in the hardware service manager, there is an insecure permissions check based on the PID of the caller which could allow an application or service to replace a HAL service with its own service. This could lead to a local elevation of privilege enabling code execution as a privileged process with no additional execution privileges needed. User interaction is not needed for exploitation. Product: Android. Versions: 8.0, 8.1. Android ID: A-68217907.
-</code>
-
-- [caofangkuai/CVE-2017-13209](https://github.com/caofangkuai/CVE-2017-13209)
 
 ### CVE-2017-13253 (2018-04-04)
 
