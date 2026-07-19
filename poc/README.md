@@ -97,6 +97,7 @@
 </code>
 
 - [whattheslime/CVE-2026-0740](https://github.com/whattheslime/CVE-2026-0740)
+- [0xgh057r3c0n/CVE-2026-0740](https://github.com/0xgh057r3c0n/CVE-2026-0740)
 - [a24ac1/CVE-2026-0740](https://github.com/a24ac1/CVE-2026-0740)
 - [ExDev994/CVE-2026-0740-mass](https://github.com/ExDev994/CVE-2026-0740-mass)
 - [MadExploits/ninja-form-exploit](https://github.com/MadExploits/ninja-form-exploit)
@@ -1093,6 +1094,13 @@
 - [Polosss/By-Poloss..-..CVE-2026-10580](https://github.com/Polosss/By-Poloss..-..CVE-2026-10580)
 - [0xgh057r3c0n/CVE-2026-10580](https://github.com/0xgh057r3c0n/CVE-2026-10580)
 
+### CVE-2026-10672 (2026-07-14)
+
+<code>subsys/net/lib/lwm2m/lwm2m_pull_context.c copied the firmware-update Package URI into a fixed static buffer (context.uri, size CONFIG_LWM2M_SWMGMT_PACKAGE_URI_LEN, default 128) with memcpy(context.uri, uri, LWM2M_PACKAGE_URI_LEN), copying exactly the destination size with no length validation. The Firmware-Update object stores the server-supplied Package URI (/5/0/1) in a 255-byte buffer, so a LwM2M management server (or an on-path attacker on a session lacking strong DTLS) can WRITE a URI of 128-254 characters; only the first 128 bytes are then copied into context.uri with no NUL terminator. That buffer is subsequently consumed as a C string by http_parser_parse_url(context.uri, strlen(context.uri), ...), strlen-based CoAP URI-path/PROXY-URI option appends, and lwm2m_parse_peerinfo(), causing an out-of-bounds read of adjacent static memory. The over-read bytes are appended to outbound CoAP requests (information disclosure of adjacent device memory to the server/proxy) and can crash the device (denial of service). The vulnerable copy was introduced by the pull-context refactor (first released in v3.0.0) and is present through v4.4.0; the default-on CONFIG_LWM2M_FIRMWARE_UPDATE_PULL_SUPPORT path is affected. The fix adds a strlen(uri) &gt;= sizeof(context.uri) check returning -ENOMEM and switches to strcpy(), guaranteeing a bounded, NUL-terminated buffer.
+</code>
+
+- [Hunt-Benito/zephyr-lwm2m-firmware-update-oob-read-cve-2026-10672-truncated-package-uri](https://github.com/Hunt-Benito/zephyr-lwm2m-firmware-update-oob-read-cve-2026-10672-truncated-package-uri)
+
 ### CVE-2026-10795 (2026-06-11)
 
 <code>The UpdraftPlus: WP Backup &amp; Migration Plugin plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 1.26.4 via the UpdraftPlus_Remote_Communications_V2::wp_loaded function. This is due to insufficient validation of the remote communications message format, where signature verification can be bypassed and unchecked decryption return values collapse to a predictable all-zero encryption key. This makes it possible for unauthenticated attackers to forge arbitrary RPC commands and run them as the connected administrator, such as uploading and activating a malicious plugin, which ultimately leads to remote code execution.
@@ -1461,6 +1469,7 @@
 - [HORKimhab/CVE-2026-20253](https://github.com/HORKimhab/CVE-2026-20253)
 - [fevar54/CVE-2026-20253-Splunk-Enterprise-Pre-Auth-RCE-](https://github.com/fevar54/CVE-2026-20253-Splunk-Enterprise-Pre-Auth-RCE-)
 - [pssec-io/CVE-2026-20253](https://github.com/pssec-io/CVE-2026-20253)
+- [Het-Kalariya/CVE-2026-20253](https://github.com/Het-Kalariya/CVE-2026-20253)
 
 ### CVE-2026-20262 (2026-06-15)
 
@@ -1573,6 +1582,7 @@
 </code>
 
 - [webshellseo8/CVE-2026-21628-POC](https://github.com/webshellseo8/CVE-2026-21628-POC)
+- [ChiefYoru/CVE-2026-21628_PoC](https://github.com/ChiefYoru/CVE-2026-21628_PoC)
 
 ### CVE-2026-21852 (2026-01-21)
 
@@ -1603,6 +1613,13 @@
 </code>
 
 - [minq0x1412/CVE-2026-21955](https://github.com/minq0x1412/CVE-2026-21955)
+
+### CVE-2026-21978 (2026-01-20)
+
+<code>Vulnerability in the Oracle FLEXCUBE Universal Banking product of Oracle Financial Services Applications (component: Relationship Pricing).  Supported versions that are affected are 14.0.0.0.0-14.8.0.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle FLEXCUBE Universal Banking.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle FLEXCUBE Universal Banking accessible data. CVSS 3.1 Base Score 6.5 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N).
+</code>
+
+- [Eangly/CVE-2026-21978](https://github.com/Eangly/CVE-2026-21978)
 
 ### CVE-2026-22241 (2026-01-08)
 
@@ -2323,12 +2340,10 @@
 - [krisiasty/vcheck](https://github.com/krisiasty/vcheck)
 - [Hunt-Benito/copy-fail-cve-2026-31431-linux-kernel-page-cache-lpe](https://github.com/Hunt-Benito/copy-fail-cve-2026-31431-linux-kernel-page-cache-lpe)
 - [Helios973/CVE-2026-31431_exp.c](https://github.com/Helios973/CVE-2026-31431_exp.c)
-- [haydenjames/CVE-2026-31431-check](https://github.com/haydenjames/CVE-2026-31431-check)
 - [vorkampfer/copyfail2_electric_boogaloo_fix](https://github.com/vorkampfer/copyfail2_electric_boogaloo_fix)
 - [Lutfifakee-Project/CVE-2026-31431](https://github.com/Lutfifakee-Project/CVE-2026-31431)
 - [mauricioportela/CVE-2026-31431-Analysis](https://github.com/mauricioportela/CVE-2026-31431-Analysis)
 - [gbonacini/CVE-2026-31431](https://github.com/gbonacini/CVE-2026-31431)
-- [hyz-is/copyfail-fix](https://github.com/hyz-is/copyfail-fix)
 - [sh4den/CVE-2026-31431-copyfail-aarch64](https://github.com/sh4den/CVE-2026-31431-copyfail-aarch64)
 - [DroPZsec/SplicePrivillegeEscalationFIX](https://github.com/DroPZsec/SplicePrivillegeEscalationFIX)
 - [Koshmare-Blossom/Copyfail-sh](https://github.com/Koshmare-Blossom/Copyfail-sh)
@@ -3016,6 +3031,9 @@
 
 - [MGTx2/CVE-2026-39107](https://github.com/MGTx2/CVE-2026-39107)
 
+### CVE-2026-39200
+- [r00tali/CVE-2026-39200](https://github.com/r00tali/CVE-2026-39200)
+
 ### CVE-2026-39253 (2026-06-23)
 
 <code>An issue in Pivotal CRM v.6.6.04.08 allows a remote attacker to execute arbitrary code via the Pivotal.Core.Common.dll and Pivotal.Engine.Client.Services.Conversion.dll components.
@@ -3624,8 +3642,12 @@
 - [2932796375github/CVE-2026-43499_OPPO-MT6835](https://github.com/2932796375github/CVE-2026-43499_OPPO-MT6835)
 - [MiaPatsune/cve-2026-43499](https://github.com/MiaPatsune/cve-2026-43499)
 - [sorrow404Null/CVE-2026-43499-RMX5200](https://github.com/sorrow404Null/CVE-2026-43499-RMX5200)
-- [fuukliam/vivo-x-fold6-ghostlock](https://github.com/fuukliam/vivo-x-fold6-ghostlock)
+- [BuSung-dev/Root-My-Galaxy](https://github.com/BuSung-dev/Root-My-Galaxy)
+- [PeronGH/ghostlock-selinux-disabler](https://github.com/PeronGH/ghostlock-selinux-disabler)
 - [p2p3p/GhostLock-for-OnePlus](https://github.com/p2p3p/GhostLock-for-OnePlus)
+- [Wtrwx/smt878u-ionstack-poc](https://github.com/Wtrwx/smt878u-ionstack-poc)
+- [d224407/CVE-2026-43499](https://github.com/d224407/CVE-2026-43499)
+- [Kananosa/CVE-2026-43499-For-Xiaomi-17T-chagall](https://github.com/Kananosa/CVE-2026-43499-For-Xiaomi-17T-chagall)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -4094,6 +4116,13 @@
 
 - [shreyas-challa/CVE-2026-46395-haxcms-hmac-key-leak](https://github.com/shreyas-challa/CVE-2026-46395-haxcms-hmac-key-leak)
 
+### CVE-2026-46420 (2026-07-17)
+
+<code>setup-php is a GitHub action to set up PHP with extensions, php.ini configuration, coverage drivers, and tools. From 2.25.0 prior to 2.37.1, shivammathur/setup-php resolves the PHP version from repository-controlled files such as .php-version, composer.lock through platform-overrides.php, and composer.json through config.platform.php, and insufficiently constrains those values before incorporating them into generated shell or PowerShell setup scripts, allowing command injection on a GitHub Actions runner when workflows such as pull_request_target check out attacker-controlled contents before invoking setup-php. This issue is fixed in version 2.37.1.
+</code>
+
+- [Jvr2022/CVE-2026-46420](https://github.com/Jvr2022/CVE-2026-46420)
+
 ### CVE-2026-46442 (2026-06-08)
 
 <code>Flowise is a drag &amp; drop user interface to build a customized large language model flow. Prior to version 3.1.2, POST /api/v1/node-custom-function lacks route-level authorization, allowing any authenticated user or API key to submit arbitrary JavaScript to the Custom JS Function node. When E2B_APIKEY is not configured — the common deployment case — Flowise executes this code inside a NodeVM sandbox. This sandbox can be escaped, allowing an attacker to reach the host process object and execute system commands via child_process. The result is authenticated remote code execution on the Flowise server host. This issue has been patched in version 3.1.2.
@@ -4529,6 +4558,7 @@
 
 - [Polosss/By-Poloss..-..CVE-2026-48939](https://github.com/Polosss/By-Poloss..-..CVE-2026-48939)
 - [shinthink/CVE-2026-48939](https://github.com/shinthink/CVE-2026-48939)
+- [ChiefYoru/CVE-2026-48939_PoC](https://github.com/ChiefYoru/CVE-2026-48939_PoC)
 
 ### CVE-2026-48962 (2026-05-27)
 
@@ -4845,6 +4875,9 @@
 
 - [A17-ba/CVE-2026-51119](https://github.com/A17-ba/CVE-2026-51119)
 
+### CVE-2026-51385
+- [Arturo0x90/CVE-2026-51385](https://github.com/Arturo0x90/CVE-2026-51385)
+
 ### CVE-2026-51788
 - [aykhan32/CVE-2026-51788](https://github.com/aykhan32/CVE-2026-51788)
 
@@ -4881,6 +4914,9 @@
 
 ### CVE-2026-52614
 - [Chinesespeople/CVE-2026-52614](https://github.com/Chinesespeople/CVE-2026-52614)
+
+### CVE-2026-52656
+- [keowu/sjcam](https://github.com/keowu/sjcam)
 
 ### CVE-2026-52658
 - [mirackayikci/CVE-2026-52658](https://github.com/mirackayikci/CVE-2026-52658)
@@ -5202,6 +5238,7 @@
 - [shinthink/CVE-2026-56291](https://github.com/shinthink/CVE-2026-56291)
 - [rimbadirgantara/CVE-2026-56291.yaml](https://github.com/rimbadirgantara/CVE-2026-56291.yaml)
 - [0xdenis77/CVE-2026-56291](https://github.com/0xdenis77/CVE-2026-56291)
+- [ChiefYoru/CVE-2026-56291_PoC](https://github.com/ChiefYoru/CVE-2026-56291_PoC)
 
 ### CVE-2026-56423 (2026-06-22)
 
@@ -5321,6 +5358,16 @@
 
 - [c0gnit00/CVE-2026-59827](https://github.com/c0gnit00/CVE-2026-59827)
 
+### CVE-2026-60137 (2026-07-17)
+
+<code>WordPress 6.8.x before 6.8.6, 6.9.x before 6.9.5, and 7.0.x before 7.0.2 does not properly sanitise the author__not_in parameter of WP_Query, which could allow SQL Injection when a plugin or theme passes untrusted input to the parameter.
+</code>
+
+- [h4cd0c/wp2shell](https://github.com/h4cd0c/wp2shell)
+- [yoerivegt/wp2shell-poc](https://github.com/yoerivegt/wp2shell-poc)
+- [ebrasha/abdal-cve-2026-60137](https://github.com/ebrasha/abdal-cve-2026-60137)
+- [codeb0ssx/Ultimate-wp2shell](https://github.com/codeb0ssx/Ultimate-wp2shell)
+
 ### CVE-2026-61343 (2026-07-09)
 
 <code>LibreBooking's email template editor save action passes the submitted template name directly into the destination file path, allowing a remote attacker with administrator credentials to write an arbitrary file outside the template directory and execute code. Fixed in 5.1.0.
@@ -5336,6 +5383,7 @@
 <code>WordPress 6.9.x before 6.9.5 and 7.0.x before 7.0.2 is affected by a REST API batch endpoint route confusion issue which, combined with the author__not_in WP_Query SQL Injection (CVE-2026-60137), could allow an attacker to perform SQL Injection and achieve Remote Code Execution.
 </code>
 
+- [Icex0/wp2shell-poc](https://github.com/Icex0/wp2shell-poc)
 - [attackercan/wp2shell-poc2](https://github.com/attackercan/wp2shell-poc2)
 - [ZephrFish/wp2shell-scanner](https://github.com/ZephrFish/wp2shell-scanner)
 - [Senanfurkan/wordpress-cve-2026-63030](https://github.com/Senanfurkan/wordpress-cve-2026-63030)
@@ -5344,6 +5392,25 @@
 - [47Cid/wp2shell-lab](https://github.com/47Cid/wp2shell-lab)
 - [Lutfifakee-Project/wp2shell](https://github.com/Lutfifakee-Project/wp2shell)
 - [ekomsSavior/wp2shell](https://github.com/ekomsSavior/wp2shell)
+- [NULL200OK/WP2Shell](https://github.com/NULL200OK/WP2Shell)
+- [kulichr/wp2shell](https://github.com/kulichr/wp2shell)
+- [CybersecSpirit/CVE-2026-63030](https://github.com/CybersecSpirit/CVE-2026-63030)
+- [4minx/CVE-2026-63030](https://github.com/4minx/CVE-2026-63030)
+- [mverschu/CVE-2026-63030](https://github.com/mverschu/CVE-2026-63030)
+- [0xsha/wp2shell](https://github.com/0xsha/wp2shell)
+- [J4ck3LSyN-Gen2/CVE-2026-63030-wp2r00t](https://github.com/J4ck3LSyN-Gen2/CVE-2026-63030-wp2r00t)
+- [gbrsh/CVE-2026-63030](https://github.com/gbrsh/CVE-2026-63030)
+- [0xBlackash/CVE-2026-63030](https://github.com/0xBlackash/CVE-2026-63030)
+- [mrx-arafat/CVE-2026-63030-POC](https://github.com/mrx-arafat/CVE-2026-63030-POC)
+- [0xWhoknows/wp2shell](https://github.com/0xWhoknows/wp2shell)
+- [zi3lak/wp2shell_scanner](https://github.com/zi3lak/wp2shell_scanner)
+- [ebrasha/abdal-cve-2026-63030](https://github.com/ebrasha/abdal-cve-2026-63030)
+- [securelayer7/WordPresShell](https://github.com/securelayer7/WordPresShell)
+- [fullhunt/wp2shell-scan](https://github.com/fullhunt/wp2shell-scan)
+- [ChiefYoru/CVE-2026-63030_PoC](https://github.com/ChiefYoru/CVE-2026-63030_PoC)
+- [own2pwn-fr/wp2shell-detect](https://github.com/own2pwn-fr/wp2shell-detect)
+- [JohenLastGen-JLG/wp2shell](https://github.com/JohenLastGen-JLG/wp2shell)
+- [mhtsec/CVE-2026-63030](https://github.com/mhtsec/CVE-2026-63030)
 
 ### CVE-2026-69212
 - [c0gnit00/CVE-2026-69212](https://github.com/c0gnit00/CVE-2026-69212)
@@ -16667,6 +16734,13 @@
 - [h3raklez/CVE-2025-68613](https://github.com/h3raklez/CVE-2025-68613)
 - [canpilayda/n8n-RCE-CVE-2025-68613](https://github.com/canpilayda/n8n-RCE-CVE-2025-68613)
 - [azilRababe/CVE-2025-68613](https://github.com/azilRababe/CVE-2025-68613)
+
+### CVE-2025-68616 (2026-01-19)
+
+<code>WeasyPrint helps web developers to create PDF documents. Prior to version 68.0, a server-side request forgery (SSRF) protection bypass exists in WeasyPrint's `default_url_fetcher`. The vulnerability allows attackers to access internal network resources (such as `localhost` services or cloud metadata endpoints) even when a developer has implemented a custom `url_fetcher` to block such access. This occurs because the underlying `urllib` library follows HTTP redirects automatically without re-validating the new destination against the developer's security policy. Version 68.0 contains a patch for the issue.
+</code>
+
+- [rauljvc8/CVE-2025-68616-Detecting-and-Patching-an-SSRF-in-WeasyPrint-with-Wazuh](https://github.com/rauljvc8/CVE-2025-68616-Detecting-and-Patching-an-SSRF-in-WeasyPrint-with-Wazuh)
 
 ### CVE-2025-68621 (2026-02-06)
 
@@ -30660,7 +30734,6 @@
 
 - [thanhlam-attt/CVE-2023-22527](https://github.com/thanhlam-attt/CVE-2023-22527)
 - [yoryio/CVE-2023-22527](https://github.com/yoryio/CVE-2023-22527)
-- [Privia-Security/CVE-2023-22527](https://github.com/Privia-Security/CVE-2023-22527)
 - [MaanVader/CVE-2023-22527-POC](https://github.com/MaanVader/CVE-2023-22527-POC)
 - [YongYe-Security/CVE-2023-22527](https://github.com/YongYe-Security/CVE-2023-22527)
 - [Boogipop/CVE-2023-22527-Godzilla-MEMSHELL](https://github.com/Boogipop/CVE-2023-22527-Godzilla-MEMSHELL)
@@ -31810,7 +31883,6 @@
 - [fortra/CVE-2023-28252](https://github.com/fortra/CVE-2023-28252)
 - [726232111/CVE-2023-28252](https://github.com/726232111/CVE-2023-28252)
 - [Danasuley/CVE-2023-28252-](https://github.com/Danasuley/CVE-2023-28252-)
-- [duck-sec/CVE-2023-28252-Compiled-exe](https://github.com/duck-sec/CVE-2023-28252-Compiled-exe)
 - [byt3n33dl3/CLFS](https://github.com/byt3n33dl3/CLFS)
 - [Vulmatch/CVE-2023-28252](https://github.com/Vulmatch/CVE-2023-28252)
 
@@ -32949,6 +33021,7 @@
 </code>
 
 - [keto0422/CVE-2023-33107](https://github.com/keto0422/CVE-2023-33107)
+- [264312431/picohaxx](https://github.com/264312431/picohaxx)
 
 ### CVE-2023-33177 (2023-05-30)
 
@@ -35725,6 +35798,7 @@
 - [TLevente20/HTTP-2-RapidReset-CVE-2023-44487-Testlab](https://github.com/TLevente20/HTTP-2-RapidReset-CVE-2023-44487-Testlab)
 - [Hirokiii/CVE-2023-44487](https://github.com/Hirokiii/CVE-2023-44487)
 - [madhantr0/http2-security-lab](https://github.com/madhantr0/http2-security-lab)
+- [tahaXafous/CVE-2023-44487-dos](https://github.com/tahaXafous/CVE-2023-44487-dos)
 
 ### CVE-2023-44758 (2023-10-06)
 
@@ -35872,13 +35946,6 @@
 </code>
 
 - [afine-com/CVE-2023-45184](https://github.com/afine-com/CVE-2023-45184)
-
-### CVE-2023-45185 (2023-12-14)
-
-<code>IBM i Access Client Solutions 1.1.2 through 1.1.4 and 1.1.4.3 through 1.1.9.3 could allow an attacker to execute remote code.  Due to improper authority checks the attacker could perform operations on the PC under the user's authority.  IBM X-Force ID:  268273.
-</code>
-
-- [afine-com/CVE-2023-45185](https://github.com/afine-com/CVE-2023-45185)
 
 ### CVE-2023-45239 (2023-10-06)
 
@@ -36714,6 +36781,13 @@
 - [D0g3-8Bit/OFBiz-Attack](https://github.com/D0g3-8Bit/OFBiz-Attack)
 - [UserConnecting/Exploit-CVE-2023-49070-and-CVE-2023-51467-Apache-OFBiz](https://github.com/UserConnecting/Exploit-CVE-2023-49070-and-CVE-2023-51467-Apache-OFBiz)
 - [Praison001/Apache-OFBiz-Auth-Bypass-and-RCE-Exploit-CVE-2023-49070-CVE-2023-51467](https://github.com/Praison001/Apache-OFBiz-Auth-Bypass-and-RCE-Exploit-CVE-2023-49070-CVE-2023-51467)
+
+### CVE-2023-49092 (2023-11-28)
+
+<code>RustCrypto/RSA is a portable RSA implementation in pure Rust. Due to a non-constant-time implementation, information about the private key is leaked through timing information which is observable over the network. An attacker may be able to use that information to recover the key. There is currently no fix available. As a workaround, avoid using the RSA crate in settings where attackers are able to observe timing information, e.g. local use on a non-compromised computer.
+</code>
+
+- [omonuj/fanout-cve-rollout](https://github.com/omonuj/fanout-cve-rollout)
 
 ### CVE-2023-49103 (2023-11-21)
 
@@ -42388,7 +42462,6 @@
 - [seadragnol/CVE-2022-32250](https://github.com/seadragnol/CVE-2022-32250)
 - [KuanKuanQAQ/cve-testing](https://github.com/KuanKuanQAQ/cve-testing)
 - [rem0t3/CVE-2022-32250-Compiled](https://github.com/rem0t3/CVE-2022-32250-Compiled)
-- [LSinus/CacheMeIfYouCan](https://github.com/LSinus/CacheMeIfYouCan)
 - [Noidolosity/CVE-2022-32250](https://github.com/Noidolosity/CVE-2022-32250)
 
 ### CVE-2022-32287 (2022-11-03)
@@ -45341,6 +45414,7 @@
 - [GodOfServer/CVE-2021-3129](https://github.com/GodOfServer/CVE-2021-3129)
 - [Prabesh01/hoh4](https://github.com/Prabesh01/hoh4)
 - [lukwagoasuman/CVE-2021-3129---Laravel-RCE](https://github.com/lukwagoasuman/CVE-2021-3129---Laravel-RCE)
+- [theNareshofficial/CVE-2021-3129-Lab](https://github.com/theNareshofficial/CVE-2021-3129-Lab)
 
 ### CVE-2021-3130 (2021-01-20)
 
@@ -46677,7 +46751,6 @@
 <code>The OpenSSL public API function X509_issuer_and_serial_hash() attempts to create a unique hash value based on the issuer and serial number data contained within an X509 certificate. However it fails to correctly handle any errors that may occur while parsing the issuer field (which might occur if the issuer field is maliciously constructed). This may subsequently result in a NULL pointer deref and a crash leading to a potential denial of service attack. The function X509_issuer_and_serial_hash() is never directly called by OpenSSL itself so applications are only vulnerable if they use this function directly and they use it on certificates that may have been obtained from untrusted sources. OpenSSL versions 1.1.1i and below are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1j. OpenSSL versions 1.0.2x and below are affected by this issue. However OpenSSL 1.0.2 is out of support and no longer receiving public updates. Premium support customers of OpenSSL 1.0.2 should upgrade to 1.0.2y. Other users should upgrade to 1.1.1j. Fixed in OpenSSL 1.1.1j (Affected 1.1.1-1.1.1i). Fixed in OpenSSL 1.0.2y (Affected 1.0.2-1.0.2x).
 </code>
 
-- [Trinadh465/external_boringssl_openssl_1.1.0g_CVE-2021-23841](https://github.com/Trinadh465/external_boringssl_openssl_1.1.0g_CVE-2021-23841)
 - [Satheesh575555/Openssl_1_1_0_CVE-2021-23841](https://github.com/Satheesh575555/Openssl_1_1_0_CVE-2021-23841)
 
 ### CVE-2021-24006 (2021-09-06)
@@ -64380,7 +64453,6 @@
 - [makmour/open-ssh-user-enumeration](https://github.com/makmour/open-ssh-user-enumeration)
 - [Alph4Sec/ssh_enum_py](https://github.com/Alph4Sec/ssh_enum_py)
 - [anonymous121029034720384234234/py-network-scanner](https://github.com/anonymous121029034720384234234/py-network-scanner)
-- [jubeenshah/CVE-2018-15473-Exploit](https://github.com/jubeenshah/CVE-2018-15473-Exploit)
 - [Remnant-DB/CVE-2018-15473](https://github.com/Remnant-DB/CVE-2018-15473)
 - [K3rn3l-32/Threaded-CVE-2018-15473](https://github.com/K3rn3l-32/Threaded-CVE-2018-15473)
 - [wtbacon/cve-2018-15473](https://github.com/wtbacon/cve-2018-15473)
