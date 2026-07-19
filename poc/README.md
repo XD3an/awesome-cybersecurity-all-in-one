@@ -4009,6 +4009,7 @@
 
 - [0xCyberstan/CVE-2026-46215-POC](https://github.com/0xCyberstan/CVE-2026-46215-POC)
 - [bluedragonsecurity/CVE-2026-46215-EXPLOIT](https://github.com/bluedragonsecurity/CVE-2026-46215-EXPLOIT)
+- [bluedragonsecurity/CVE-2026-46215-exploit-linux-7.0-uaf-stable](https://github.com/bluedragonsecurity/CVE-2026-46215-exploit-linux-7.0-uaf-stable)
 
 ### CVE-2026-46242 (2026-05-30)
 
@@ -5411,6 +5412,8 @@
 - [own2pwn-fr/wp2shell-detect](https://github.com/own2pwn-fr/wp2shell-detect)
 - [JohenLastGen-JLG/wp2shell](https://github.com/JohenLastGen-JLG/wp2shell)
 - [mhtsec/CVE-2026-63030](https://github.com/mhtsec/CVE-2026-63030)
+- [c0gnit00/Wp2Shell](https://github.com/c0gnit00/Wp2Shell)
+- [ikow/wp2shell](https://github.com/ikow/wp2shell)
 
 ### CVE-2026-69212
 - [c0gnit00/CVE-2026-69212](https://github.com/c0gnit00/CVE-2026-69212)
@@ -14256,6 +14259,7 @@
 - [w3nch/CVE-2025-55182-in-go](https://github.com/w3nch/CVE-2025-55182-in-go)
 - [Jenderal92/CVE-2025-55182-React2shell](https://github.com/Jenderal92/CVE-2025-55182-React2shell)
 - [Jeanback1/react-rsc-cve-2025-55182-lab](https://github.com/Jeanback1/react-rsc-cve-2025-55182-lab)
+- [sonnycroco/HTB-Reactor-Linux-Machine---Walkthrough](https://github.com/sonnycroco/HTB-Reactor-Linux-Machine---Walkthrough)
 - [LuizHenz/PoC-CVE-2025-55182](https://github.com/LuizHenz/PoC-CVE-2025-55182)
 - [hakkuri01/r2rs](https://github.com/hakkuri01/r2rs)
 - [tanvirahmedcs/CVE-2025-55182](https://github.com/tanvirahmedcs/CVE-2025-55182)
@@ -20069,6 +20073,7 @@
 </code>
 
 - [RandomRobbieBF/CVE-2024-10586](https://github.com/RandomRobbieBF/CVE-2024-10586)
+- [Nxploited/CVE-2024-10586-Poc](https://github.com/Nxploited/CVE-2024-10586-Poc)
 
 ### CVE-2024-10605 (2024-10-31)
 
@@ -25104,7 +25109,6 @@
 </code>
 
 - [BwithE/CVE-2024-40453](https://github.com/BwithE/CVE-2024-40453)
-- [surajpandeyp/CVE-2024-40453](https://github.com/surajpandeyp/CVE-2024-40453)
 
 ### CVE-2024-40457 (2024-09-12)
 
@@ -71991,6 +71995,7 @@
 - [oukridrig772/-WinVerifyTrust-Signature-Validation-CVE-2013-3900-Mitigation](https://github.com/oukridrig772/-WinVerifyTrust-Signature-Validation-CVE-2013-3900-Mitigation)
 - [ksgassama-lab/vulnerability-remediation-cve-2013-3900](https://github.com/ksgassama-lab/vulnerability-remediation-cve-2013-3900)
 - [SDimitri05/cve-2013-3900-winverifytrust-mitigation](https://github.com/SDimitri05/cve-2013-3900-winverifytrust-mitigation)
+- [kingsrule50/nessus-vulnerability-scanning-lab](https://github.com/kingsrule50/nessus-vulnerability-scanning-lab)
 
 ### CVE-2013-4002 (2013-07-23)
 
