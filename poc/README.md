@@ -122,7 +122,7 @@
 <code>Discord Client Uncontrolled Search Path Element Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of Discord Client. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\n\nThe specific flaw exists within the discord_rpc module. The product loads a file from an unsecured location. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of a target user. Was ZDI-CAN-27057.
 </code>
 
-- [AnhedonicX/CVE-2026-0776](https://github.com/AnhedonicX/CVE-2026-0776)
+- [whoanx/CVE-2026-0776](https://github.com/whoanx/CVE-2026-0776)
 - [OverlayCS/Helix](https://github.com/OverlayCS/Helix)
 
 ### CVE-2026-0828 (2026-06-26)
@@ -353,6 +353,7 @@
 - [willygailo/CVE-2026-3891-Linux](https://github.com/willygailo/CVE-2026-3891-Linux)
 - [m4sh-wacker/CVE-2026-3891-Pix-for-WooCommerce-Plugin-Exploit](https://github.com/m4sh-wacker/CVE-2026-3891-Pix-for-WooCommerce-Plugin-Exploit)
 - [shinthink/CVE-2026-3891](https://github.com/shinthink/CVE-2026-3891)
+- [VeronnX666/CVE-2026-3891](https://github.com/VeronnX666/CVE-2026-3891)
 
 ### CVE-2026-4020 (2026-03-31)
 
@@ -1736,7 +1737,7 @@
 <code>MCPJam inspector is the local-first development platform for MCP servers. Versions 1.4.2 and earlier are vulnerable to remote code execution (RCE) vulnerability, which allows an attacker to send a crafted HTTP request that triggers the installation of an MCP server, leading to RCE. Since MCPJam inspector by default listens on 0.0.0.0 instead of 127.0.0.1, an attacker can trigger the RCE remotely via a simple HTTP request. Version 1.4.3 contains a patch.
 </code>
 
-- [ibreakthingsforaliving/CVE-2026-23744-PoC](https://github.com/ibreakthingsforaliving/CVE-2026-23744-PoC)
+- [boroeurnprach/CVE-2026-23744-PoC](https://github.com/boroeurnprach/CVE-2026-23744-PoC)
 - [p1ctur3p3rf3ct/CVE-2026-23744](https://github.com/p1ctur3p3rf3ct/CVE-2026-23744)
 - [thisisish/HTB-DevHub](https://github.com/thisisish/HTB-DevHub)
 - [SrGinebras/CVE-2026-23744-RCE-for-MCPjam-inspector-v1.4.2](https://github.com/SrGinebras/CVE-2026-23744-RCE-for-MCPjam-inspector-v1.4.2)
@@ -2417,7 +2418,7 @@
 <code>Protection mechanism failure in Windows Shell allows an unauthorized attacker to perform spoofing over a network.
 </code>
 
-- [cloud2783/CVE-2026-32202](https://github.com/cloud2783/CVE-2026-32202)
+- [asdrf5gh67j8ki/CVE-2026-32202](https://github.com/asdrf5gh67j8ki/CVE-2026-32202)
 
 ### CVE-2026-32488 (2026-03-25)
 
@@ -2452,6 +2453,7 @@
 - [diamorphine666/CVE-2026-33017-Exploit](https://github.com/diamorphine666/CVE-2026-33017-Exploit)
 - [Usman0220/CVE-2026-33017-Langflow-RCE](https://github.com/Usman0220/CVE-2026-33017-Langflow-RCE)
 - [Industri4l-H3ll-Xpl0it3rs/CVE-2026-33017-Langflow-RCE](https://github.com/Industri4l-H3ll-Xpl0it3rs/CVE-2026-33017-Langflow-RCE)
+- [CerberusMrXi/Langflow-cve-2026-33017-exploit](https://github.com/CerberusMrXi/Langflow-cve-2026-33017-exploit)
 
 ### CVE-2026-33067 (2026-03-20)
 
@@ -3648,6 +3650,7 @@
 - [Wtrwx/smt878u-ionstack-poc](https://github.com/Wtrwx/smt878u-ionstack-poc)
 - [d224407/CVE-2026-43499](https://github.com/d224407/CVE-2026-43499)
 - [Kananosa/CVE-2026-43499-For-Xiaomi-17T-chagall](https://github.com/Kananosa/CVE-2026-43499-For-Xiaomi-17T-chagall)
+- [mumaosong/CVE-2026-43499-cloudflare-gate](https://github.com/mumaosong/CVE-2026-43499-cloudflare-gate)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -3979,6 +3982,7 @@
 - [ChanderManiPandey2022/Yellow-Key-Check](https://github.com/ChanderManiPandey2022/Yellow-Key-Check)
 - [ChanderManiPandey2022/YellowKey-BitLocker-Bypass-CVE-2026-45585-Detect-Fix-Automatically-via-Microsoft-Intune](https://github.com/ChanderManiPandey2022/YellowKey-BitLocker-Bypass-CVE-2026-45585-Detect-Fix-Automatically-via-Microsoft-Intune)
 - [Desireeontrial76/yellowkey-bitlocker](https://github.com/Desireeontrial76/yellowkey-bitlocker)
+- [yellowkey-bitlocker/YellowKey-Bitlocker](https://github.com/yellowkey-bitlocker/YellowKey-Bitlocker)
 
 ### CVE-2026-45659 (2026-05-22)
 
@@ -4528,6 +4532,7 @@
 - [pssec-io/CVE-2026-48907](https://github.com/pssec-io/CVE-2026-48907)
 - [NoXiVaR/CVE-2026-48907](https://github.com/NoXiVaR/CVE-2026-48907)
 - [bayu06802/CVE-2026-48907](https://github.com/bayu06802/CVE-2026-48907)
+- [ChiefYoru/CVE-2026-48907_PoC](https://github.com/ChiefYoru/CVE-2026-48907_PoC)
 
 ### CVE-2026-48908 (2026-06-20)
 
@@ -4643,6 +4648,13 @@
 
 - [dhmosfunk/CVE-2026-49160-CVE-2026-47291-HTTP.sys](https://github.com/dhmosfunk/CVE-2026-49160-CVE-2026-47291-HTTP.sys)
 
+### CVE-2026-49176 (2026-07-14)
+
+<code>Improper privilege management in Windows WalletService allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [DavidCarliez/CVE-2026-49176_LPE_POC](https://github.com/DavidCarliez/CVE-2026-49176_LPE_POC)
+
 ### CVE-2026-49230 (2026-06-19)
 
 <code>Improper Validation of Integrity Check Value vulnerability in Apache APISIX.\n\nThe jwe-decrypt plugin under default configuration is vulnerable to authentication bypass. \nThis issue affects Apache APISIX: from 3.8.0 through 3.16.0.\n\nUsers are recommended to upgrade to version 3.17.0, which fixes the issue.
@@ -4734,7 +4746,7 @@
 <code>CZ.NIC BIRD Internet Routing Daemon through 2.19.0 contains a stack-based buffer overflow in the BGP AS_PATH mask matching implementation in nest/a-path.c. The as_path_match() function uses a fixed-size stack array of 2048 + 1 pm_pos entries, while parse_path() expands AS_PATH segments from a received BGP UPDATE without enforcing a corresponding capacity limit. When RFC 8654 BGP Extended Messages are enabled and a BIRD filter evaluates an AS path mask expression such as &quot;bgp_path ~ [= ... =]&quot;, an established BGP peer can send a long AS_PATH containing more than 2048 expanded ASNs. This causes parse_path()/as_path_match() to write beyond the fixed stack buffer, resulting in a crash of the daemon. NOTE: reportedly, the Supplier's position is that a fix is not being prioritized because all network operators should already be rejecting routes with unusually long attributes.
 </code>
 
-- [9Bakabaka/CVE-2026-49943-PoC](https://github.com/9Bakabaka/CVE-2026-49943-PoC)
+- [cxwx/CVE-2026-49943-PoC](https://github.com/cxwx/CVE-2026-49943-PoC)
 
 ### CVE-2026-49952 (2026-06-15)
 
@@ -4813,6 +4825,13 @@
 </code>
 
 - [syxlox/CVE-2026-50369](https://github.com/syxlox/CVE-2026-50369)
+
+### CVE-2026-50402 (2026-07-14)
+
+<code>Incorrect conversion between numeric types in Windows NTFS allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [SY115/CVE-Writeups](https://github.com/SY115/CVE-Writeups)
 
 ### CVE-2026-50416 (2026-07-14)
 
@@ -5230,6 +5249,7 @@
 - [sagsooz/PageBuilderCK-CVE-2026-56290-Exploit](https://github.com/sagsooz/PageBuilderCK-CVE-2026-56290-Exploit)
 - [shinthink/pbck-exploit](https://github.com/shinthink/pbck-exploit)
 - [Jenderal92/CVE-2026-56290](https://github.com/Jenderal92/CVE-2026-56290)
+- [ChiefYoru/CVE-2026-56290_PoC](https://github.com/ChiefYoru/CVE-2026-56290_PoC)
 
 ### CVE-2026-56291 (2026-07-09)
 
@@ -5414,6 +5434,17 @@
 - [mhtsec/CVE-2026-63030](https://github.com/mhtsec/CVE-2026-63030)
 - [c0gnit00/Wp2Shell](https://github.com/c0gnit00/Wp2Shell)
 - [ikow/wp2shell](https://github.com/ikow/wp2shell)
+- [bahartanir/wp2shell-scanner](https://github.com/bahartanir/wp2shell-scanner)
+- [eyesecurity/wp2shell-compromise-scanner-plugin](https://github.com/eyesecurity/wp2shell-compromise-scanner-plugin)
+- [0xh7ml/CVE-2026-63030](https://github.com/0xh7ml/CVE-2026-63030)
+- [4B3R4M4-607D/CVE-2026-63030-POC](https://github.com/4B3R4M4-607D/CVE-2026-63030-POC)
+- [InstaWP/wp2shell-scan](https://github.com/InstaWP/wp2shell-scan)
+- [hidden-investigations/wp2shell-scanner](https://github.com/hidden-investigations/wp2shell-scanner)
+- [ananay/wp2shell-lab](https://github.com/ananay/wp2shell-lab)
+- [Lukols-Dev/wp-cve-2026-63030-check](https://github.com/Lukols-Dev/wp-cve-2026-63030-check)
+- [skelersecurity/wordpress-skelersecurity-core-security-CVE-2026-63030](https://github.com/skelersecurity/wordpress-skelersecurity-core-security-CVE-2026-63030)
+- [vulnquest58/PressVector](https://github.com/vulnquest58/PressVector)
+- [ZenithGenius/wordpress-batch-rce-lab](https://github.com/ZenithGenius/wordpress-batch-rce-lab)
 
 ### CVE-2026-69212
 - [c0gnit00/CVE-2026-69212](https://github.com/c0gnit00/CVE-2026-69212)
@@ -7618,6 +7649,13 @@
 
 - [titanmaster96/cve-2025-9933](https://github.com/titanmaster96/cve-2025-9933)
 
+### CVE-2025-9951 (2025-09-09)
+
+<code>A heap-buffer-overflow write exists in jpeg2000dec FFmpeg which allows an attacker to potentially gain remote code execution or cause denial of service via the channel definition cdef atom of JPEG2000.
+</code>
+
+- [fm0ss/cve-2025-9951-ffmpeg-jp2-poc](https://github.com/fm0ss/cve-2025-9951-ffmpeg-jp2-poc)
+
 ### CVE-2025-9961 (2025-09-06)
 
 <code>An authenticated attacker may remotely execute arbitrary code via the CWMP binary on the devices AX10 and AX1500. \n\nThe exploit can only be conducted via a Man-In-The-Middle (MITM) attack. \n\nThis issue affects AX10 V1/V1.2/V2/V2.6/V3/V3.6: before 1.2.1; AX1500 V1/V1.20/V1.26/V1.60/V1.80/V2.60/V3.6: before 1.3.11.
@@ -7922,7 +7960,7 @@
 - [SaidBenaissa/cve-2025-11953-vulnerability-demo](https://github.com/SaidBenaissa/cve-2025-11953-vulnerability-demo)
 - [GhoStZA-debug/PoC-CVE-collection](https://github.com/GhoStZA-debug/PoC-CVE-collection)
 - [Mr-In4inci3le/CVE-2025-11953-POC-](https://github.com/Mr-In4inci3le/CVE-2025-11953-POC-)
-- [ibreakthingsforaliving/CVE-2025-11953-PoC](https://github.com/ibreakthingsforaliving/CVE-2025-11953-PoC)
+- [boroeurnprach/CVE-2025-11953-PoC](https://github.com/boroeurnprach/CVE-2025-11953-PoC)
 
 ### CVE-2025-11973 (2025-11-21)
 
@@ -8710,7 +8748,6 @@
 </code>
 
 - [ahmedumarehman/CVE-2025-21293](https://github.com/ahmedumarehman/CVE-2025-21293)
-- [Dashlane04/threat-simlab](https://github.com/Dashlane04/threat-simlab)
 
 ### CVE-2025-21298 (2025-01-14)
 
@@ -9477,6 +9514,13 @@
 </code>
 
 - [dwictor0/PoC-CVE-2025-25200](https://github.com/dwictor0/PoC-CVE-2025-25200)
+
+### CVE-2025-25227 (2025-04-08)
+
+<code>Insufficient state checks lead to a vector that allows to bypass 2FA checks.
+</code>
+
+- [rvzsec/joombrute](https://github.com/rvzsec/joombrute)
 
 ### CVE-2025-25231 (2025-08-11)
 
@@ -10981,7 +11025,6 @@
 - [yonathanpy/CVE-2025-32433.py](https://github.com/yonathanpy/CVE-2025-32433.py)
 - [joshuavanderpoll/cve-2025-32433](https://github.com/joshuavanderpoll/cve-2025-32433)
 - [0xBlackash/CVE-2025-32433](https://github.com/0xBlackash/CVE-2025-32433)
-- [leehunkoo/hk_CVE-2025-32433](https://github.com/leehunkoo/hk_CVE-2025-32433)
 - [chuzouX/CVE-2025-32433-Exploit-edited](https://github.com/chuzouX/CVE-2025-32433-Exploit-edited)
 - [dampedcoast/Exploiting-a-vulnerability-using-reverse-shell](https://github.com/dampedcoast/Exploiting-a-vulnerability-using-reverse-shell)
 
@@ -14929,7 +14972,7 @@
 <code>React Router is a router for React. In @remix-run/react versions 1.15.0 through 2.17.0. and react-router versions 7.0.0 through 7.8.2, a XSS vulnerability exists in in React Router's meta()/&lt;Meta&gt; APIs in Framework Mode when generating script:ld+json tags which could allow arbitrary JavaScript execution during SSR if untrusted content is used to generate the tag. There is no impact if the application is being used in Declarative Mode (&lt;BrowserRouter&gt;) or Data Mode (createBrowserRouter/&lt;RouterProvider&gt;). This issue has been patched in @remix-run/react version 2.17.1 and react-router version 7.9.0.
 </code>
 
-- [ibreakthingsforaliving/CVE-2025-59057-PoC](https://github.com/ibreakthingsforaliving/CVE-2025-59057-PoC)
+- [boroeurnprach/CVE-2025-59057-PoC](https://github.com/boroeurnprach/CVE-2025-59057-PoC)
 
 ### CVE-2025-59059 (2026-03-03)
 
@@ -15336,7 +15379,7 @@
 
 - [FlowerWitch/CVE-2025-61686_docker](https://github.com/FlowerWitch/CVE-2025-61686_docker)
 - [Kai-One001/React-Router-CVE-2025-61686-](https://github.com/Kai-One001/React-Router-CVE-2025-61686-)
-- [ibreakthingsforaliving/CVE-2025-61686-PoC](https://github.com/ibreakthingsforaliving/CVE-2025-61686-PoC)
+- [boroeurnprach/CVE-2025-61686-PoC](https://github.com/boroeurnprach/CVE-2025-61686-PoC)
 
 ### CVE-2025-61757 (2025-10-21)
 
@@ -15809,6 +15852,7 @@
 </code>
 
 - [luigigubello/CVE-2025-64512-Polyglot-PoC](https://github.com/luigigubello/CVE-2025-64512-Polyglot-PoC)
+- [matesz44/CVE-2025-64512](https://github.com/matesz44/CVE-2025-64512)
 
 ### CVE-2025-64513 (2025-11-10)
 
@@ -19914,6 +19958,7 @@
 </code>
 
 - [RandomRobbieBF/CVE-2024-9932](https://github.com/RandomRobbieBF/CVE-2024-9932)
+- [Nxploited/CVE-2024-9932-POC](https://github.com/Nxploited/CVE-2024-9932-POC)
 - [JoshuaProvoste/0-click-RCE-Exploit-for-CVE-2024-9932](https://github.com/JoshuaProvoste/0-click-RCE-Exploit-for-CVE-2024-9932)
 
 ### CVE-2024-9933 (2024-10-26)
@@ -23105,7 +23150,6 @@
 
 - [Sploitus/CVE-2024-29988-exploit](https://github.com/Sploitus/CVE-2024-29988-exploit)
 - [avitoriagomes/CVE-2024-29988](https://github.com/avitoriagomes/CVE-2024-29988)
-- [dinhthihanhle1989-max/CVE-2024-29988](https://github.com/dinhthihanhle1989-max/CVE-2024-29988)
 
 ### CVE-2024-30043 (2024-05-14)
 
@@ -31002,6 +31046,7 @@
 - [Aureum01/CVE-2023-23752](https://github.com/Aureum01/CVE-2023-23752)
 - [Marwan651/Joomla-CMS-Full-Lifecycle-Pentest](https://github.com/Marwan651/Joomla-CMS-Full-Lifecycle-Pentest)
 - [Sharma01672/traveller-htb](https://github.com/Sharma01672/traveller-htb)
+- [rvzsec/joombrute](https://github.com/rvzsec/joombrute)
 - [BardLaudian/CVE-2023-23752](https://github.com/BardLaudian/CVE-2023-23752)
 
 ### CVE-2023-23924 (2023-01-31)
@@ -36784,7 +36829,6 @@
 - [0xrobiul/CVE-2023-49070](https://github.com/0xrobiul/CVE-2023-49070)
 - [D0g3-8Bit/OFBiz-Attack](https://github.com/D0g3-8Bit/OFBiz-Attack)
 - [UserConnecting/Exploit-CVE-2023-49070-and-CVE-2023-51467-Apache-OFBiz](https://github.com/UserConnecting/Exploit-CVE-2023-49070-and-CVE-2023-51467-Apache-OFBiz)
-- [Praison001/Apache-OFBiz-Auth-Bypass-and-RCE-Exploit-CVE-2023-49070-CVE-2023-51467](https://github.com/Praison001/Apache-OFBiz-Auth-Bypass-and-RCE-Exploit-CVE-2023-49070-CVE-2023-51467)
 
 ### CVE-2023-49092 (2023-11-28)
 
@@ -57905,6 +57949,7 @@
 - [wired0ut/CVE-2019-2215](https://github.com/wired0ut/CVE-2019-2215)
 - [mythicaltree/CVE-2019-2215](https://github.com/mythicaltree/CVE-2019-2215)
 - [flipphoneguy/root-sonim-xp3800](https://github.com/flipphoneguy/root-sonim-xp3800)
+- [NESTle19/CVE-2019-2215](https://github.com/NESTle19/CVE-2019-2215)
 
 ### CVE-2019-2525 (2019-01-16)
 
@@ -65654,6 +65699,7 @@
 - [ichhyak22/EternalBlue-Exploit-Demonstration-MS17-010](https://github.com/ichhyak22/EternalBlue-Exploit-Demonstration-MS17-010)
 - [trinadh-dasari-cyber/eternalblue-ms17-010-research](https://github.com/trinadh-dasari-cyber/eternalblue-ms17-010-research)
 - [0xBlackash/CVE-2017-0144](https://github.com/0xBlackash/CVE-2017-0144)
+- [KitSkater/legacyshield-CVE-2017-0144](https://github.com/KitSkater/legacyshield-CVE-2017-0144)
 
 ### CVE-2017-0145 (2017-03-17)
 
