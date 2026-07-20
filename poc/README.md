@@ -425,6 +425,13 @@
 
 - [xxconi/CVE-2026-4782](https://github.com/xxconi/CVE-2026-4782)
 
+### CVE-2026-4858 (2026-05-21)
+
+<code>Mattermost versions 11.6.x &lt;= 11.6.0, 11.5.x &lt;= 11.5.3, 11.4.x &lt;= 11.4.4, 10.11.x &lt;= 10.11.14 fail to check integration URL for path traversal which allows an malicious authenticated user  to call an arbitrary API via system admin Mattermost auth token using via path traversal in integration action URL.. Mattermost Advisory ID: MMSA-2026-00640
+</code>
+
+- [EvtDanya/CVE-2026-4858](https://github.com/EvtDanya/CVE-2026-4858)
+
 ### CVE-2026-4882 (2026-05-02)
 
 <code>The User Registration Advanced Fields plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'URAF_AJAX::method_upload' function in all versions up to, and including, 1.6.20. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible. Note: The vulnerability can only be exploited if a &quot;Profile Picture&quot; field is added to the form.
@@ -461,6 +468,13 @@
 
 - [Layer-6/CVE-2026-5027-Langflow](https://github.com/Layer-6/CVE-2026-5027-Langflow)
 - [HORKimhab/-CVE-2026-5027](https://github.com/HORKimhab/-CVE-2026-5027)
+
+### CVE-2026-5029 (2026-05-12)
+
+<code>A remote code execution vulnerability exists in Code Runner MCP Server when run with the --transport http option, which exposes the /mcp JSON-RPC endpoint without authentication on port 3088. An unauthenticated remote attacker can invoke the run-code MCP tool to supply arbitrary source code and execute it via child_process.exec() using the specified language interpreter. This allows execution of arbitrary code with the privileges of the user running the server. This vulnerability has not been fixed and might affect the project in all versions.
+</code>
+
+- [0x00phantom-hat/CVE-2026-5029-Exploit](https://github.com/0x00phantom-hat/CVE-2026-5029-Exploit)
 
 ### CVE-2026-5076 (2026-06-02)
 
@@ -662,13 +676,6 @@
 </code>
 
 - [jackalkarlos/EvilAhenk](https://github.com/jackalkarlos/EvilAhenk)
-
-### CVE-2026-6664 (2026-05-09)
-
-<code>An integer overflow in network packet parsing code in PgBouncer before 1.25.2 bypasses a boundary check and can lead to a crash. An unauthenticated remote attacker can crash PgBouncer with a malformed SCRAM authentication packet.
-</code>
-
-- [nicolasjulian/bouncer-overflow](https://github.com/nicolasjulian/bouncer-overflow)
 
 ### CVE-2026-6741 (2026-04-27)
 
@@ -1118,7 +1125,11 @@
 
 - [Xmyronn/CVE-2026-11344-RCE](https://github.com/Xmyronn/CVE-2026-11344-RCE)
 
-### CVE-2026-11349
+### CVE-2026-11349 (2026-07-20)
+
+<code>The Modern Event Calendar Pro WordPress plugin before 7.34.0, Modern Events Calendar Lite WordPress plugin before 7.34.0 do not sanitise and escape a request parameter before using it in a SQL statement, through an AJAX action available to unauthenticated users, leading to an unauthenticated SQL injection vulnerability that allows attackers to extract sensitive data from the database.
+</code>
+
 - [Hann1bl3L3ct3r/CVE-2026-11349](https://github.com/Hann1bl3L3ct3r/CVE-2026-11349)
 
 ### CVE-2026-11387 (2026-07-01)
@@ -2447,6 +2458,7 @@
 <code>Langflow is a tool for building and deploying AI-powered agents and workflows. In versions prior to 1.9.0, the POST /api/v1/build_public_tmp/{flow_id}/flow endpoint allows building public flows without requiring authentication. When the optional data parameter is supplied, the endpoint uses attacker-controlled flow data (containing arbitrary Python code in node definitions) instead of the stored flow data from the database. This code is passed to exec() with zero sandboxing, resulting in unauthenticated remote code execution. This is distinct from CVE-2025-3248, which fixed /api/v1/validate/code by adding authentication. The build_public_tmp endpoint is designed to be unauthenticated (for public flows) but incorrectly accepts attacker-supplied flow data containing arbitrary executable code. This issue has been fixed in version 1.9.0.
 </code>
 
+- [EQSTLab/CVE-2026-33017](https://github.com/EQSTLab/CVE-2026-33017)
 - [r3nsi15/CVE-2026-33017-langflow-rce](https://github.com/r3nsi15/CVE-2026-33017-langflow-rce)
 - [c0gnit00/CVE-2026-33017](https://github.com/c0gnit00/CVE-2026-33017)
 - [yayip/CVE-2026-33017](https://github.com/yayip/CVE-2026-33017)
@@ -3445,6 +3457,8 @@
 </code>
 
 - [0xCyberstan/CVE-2026-42533-Config-Scanner](https://github.com/0xCyberstan/CVE-2026-42533-Config-Scanner)
+- [srkyn/nginx-map-risk-audit](https://github.com/srkyn/nginx-map-risk-audit)
+- [Daniyal48/ghostlock-vagrant-box](https://github.com/Daniyal48/ghostlock-vagrant-box)
 
 ### CVE-2026-42568 (2026-06-10)
 
@@ -3650,7 +3664,6 @@
 - [Wtrwx/smt878u-ionstack-poc](https://github.com/Wtrwx/smt878u-ionstack-poc)
 - [d224407/CVE-2026-43499](https://github.com/d224407/CVE-2026-43499)
 - [Kananosa/CVE-2026-43499-For-Xiaomi-17T-chagall](https://github.com/Kananosa/CVE-2026-43499-For-Xiaomi-17T-chagall)
-- [mumaosong/CVE-2026-43499-cloudflare-gate](https://github.com/mumaosong/CVE-2026-43499-cloudflare-gate)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -3982,7 +3995,6 @@
 - [ChanderManiPandey2022/Yellow-Key-Check](https://github.com/ChanderManiPandey2022/Yellow-Key-Check)
 - [ChanderManiPandey2022/YellowKey-BitLocker-Bypass-CVE-2026-45585-Detect-Fix-Automatically-via-Microsoft-Intune](https://github.com/ChanderManiPandey2022/YellowKey-BitLocker-Bypass-CVE-2026-45585-Detect-Fix-Automatically-via-Microsoft-Intune)
 - [Desireeontrial76/yellowkey-bitlocker](https://github.com/Desireeontrial76/yellowkey-bitlocker)
-- [yellowkey-bitlocker/YellowKey-Bitlocker](https://github.com/yellowkey-bitlocker/YellowKey-Bitlocker)
 
 ### CVE-2026-45659 (2026-05-22)
 
@@ -4417,6 +4429,13 @@
 
 - [oscerd/CVE-2026-48205](https://github.com/oscerd/CVE-2026-48205)
 
+### CVE-2026-48206 (2026-07-06)
+
+<code>Improper Input Validation, Authorization Bypass Through User-Controlled Key vulnerability in Apache Camel JIRA component.\n\nThe camel-jira producers read their operation parameters - the issue key, project key, transition id, summary, type, assignee, components, watchers, link type, work-log minutes and others - from Exchange message headers. The header constants defined in JiraConstants (for example ISSUE_KEY = IssueKey, ISSUE_PROJECT_KEY = ProjectKey, ISSUE_TRANSITION_ID = IssueTransitionId, LINK_TYPE = linkType) used plain, non-Camel-prefixed values. Because these names do not start with the Camel / camel prefix, HttpHeaderFilterStrategy - which blocks only the Camel header namespace on the HTTP boundary - let them pass from an inbound HTTP request straight into the Exchange. In a route that bridges an HTTP consumer (for example platform-http) into a jira: producer, any HTTP client could therefore supply these headers and override the values the route intended, driving JIRA operations against the configured JIRA instance with the endpoint's configured service-account credentials - for example deleting or transitioning an arbitrary issue (via IssueKey / IssueTransitionId), creating an issue in a different project (via ProjectKey), modifying issue fields, adding or removing watchers, or logging work. The operations are bounded by what the configured service account is permitted to do. No credentials are required from the attacker when the bridging consumer is unauthenticated.\nThis issue affects Apache Camel: from 4.0.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. After upgrading, routes that drive JIRA operations via the raw header names must use the CamelJira* names (for example CamelJiraIssueKey) instead of the old values. For deployments that cannot upgrade immediately, strip the camel-jira control headers from any untrusted ingress before the jira: producer (for example removing the IssueKey, ProjectKey, IssueTransitionId and related headers at the start of the route), and set the required JIRA operation parameters from a trusted source.
+</code>
+
+- [oscerd/CVE-2026-48206](https://github.com/oscerd/CVE-2026-48206)
+
 ### CVE-2026-48208 (2026-06-01)
 
 <code>An improper neutralization of active SVG content in OTRS or ((OTRS)) Community Edition ticket article rendering allows attackers to inject specially crafted SVG payloads via email content, leading to browser-side resource exhaustion and denial of service when affected tickets are opened by an agent or customer. The issue can be exploited without JavaScript execution and is not mitigated by the configured Content Security Policy (CSP).\n\nThis issue affects OTRS:\n\n  *  7.0.X\n  *  8.0.X\n  *  2023.X\n  *  2024.X\n  *  2025.X\n  *  2026.X before 2026.4.X\n\nPlease note that ((OTRS)) Community Edition 6.x and before are vulnerable. Products based on the ((OTRS)) Community Edition also very likely to be affected
@@ -4581,6 +4600,13 @@
 - [j0xh-sec/CVE-2026-49009](https://github.com/j0xh-sec/CVE-2026-49009)
 - [INTELEON404/CVE-2026-49009](https://github.com/INTELEON404/CVE-2026-49009)
 
+### CVE-2026-49042 (2026-07-06)
+
+<code>Improper Input Validation vulnerability in Apache Camel.\n\nThis issue affects Apache Camel: from 4.8.0 through 4.18.2, from 4.19.0 through 4.20.0.\n\nUsers are recommended to upgrade to version 4.18.3, 4.21.0, which fixes the issue.
+</code>
+
+- [oscerd/CVE-2026-49042](https://github.com/oscerd/CVE-2026-49042)
+
 ### CVE-2026-49048 (2026-06-28)
 
 <code>The Joomla extension JoomCCK exposes a front-end controller task, that builds two SQL statements by directly concatenating a user-supplied request parameter into the query string without escaping or parameterisation.
@@ -4626,6 +4652,13 @@
 </code>
 
 - [izxci/CVE-2026-49085](https://github.com/izxci/CVE-2026-49085)
+
+### CVE-2026-49086 (2026-07-06)
+
+<code>Improper Input Validation, Unintended Proxy or Intermediary ('Confused Deputy') vulnerability in Apache Camel DAPR component.\n\nThe camel-dapr Dapr Pub/Sub consumer (DaprPubSubConsumer) copied two fields from each inbound CloudEvent - its Pub/Sub component name and its topic - into the CamelDaprPubSubName and CamelDaprTopic Exchange headers. These two headers are producer-direction routing headers: when the route republishes through a Dapr producer, DaprConfigurationOptionsProxy reads them back and prefers them over the destination configured on the endpoint. As a result, in a route that consumes from one Dapr Pub/Sub topic and republishes to another (for example from('dapr-pubsub:p:t').to('dapr-pubsub:p:other')), an actor able to publish a message to the subscribed topic could set the CloudEvent's pub/sub-name and topic to values of their choosing and cause the re-published message to be delivered to an arbitrary Dapr Pub/Sub component and topic instead of the configured destination - redirecting or exfiltrating the message and bypassing the route's intended routing and any topic-level access controls in the underlying broker. Exploitation requires the ability to publish to the topic the route subscribes to; no other authentication or user interaction is needed.\nThis issue affects Apache Camel: from 4.12.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. For deployments that cannot upgrade immediately, remove the CamelDaprPubSubName and CamelDaprTopic headers from the Exchange between the Dapr consumer and any Dapr producer in the route (for example removeHeaders('CamelDaprPubSubName', 'CamelDaprTopic')), and restrict who can publish to the subscribed Dapr Pub/Sub topic so that only trusted producers can send to it.
+</code>
+
+- [oscerd/CVE-2026-49086](https://github.com/oscerd/CVE-2026-49086)
 
 ### CVE-2026-49104 (2026-06-15)
 
@@ -5379,6 +5412,13 @@
 
 - [c0gnit00/CVE-2026-59827](https://github.com/c0gnit00/CVE-2026-59827)
 
+### CVE-2026-60121 (2026-07-13)
+
+<code>Vitec Flamingo 4.12.2 contains an unauthenticated OS command injection vulnerability in the admin/ajax/ping.php endpoint that allows remote attackers to execute arbitrary commands by exploiting a double-evaluation flaw in shell argument handling. The endpoint applies escapeshellarg() to the user-supplied host POST parameter before passing it to a system wrapper, but the wrapper retrieves the decoded value from argv and incorporates it into a second shell_exec() call without escaping, allowing injected commands to execute with root privileges via passwordless sudo.
+</code>
+
+- [HORKimhab/CVE-2026-60121-CVE-2026-61498](https://github.com/HORKimhab/CVE-2026-60121-CVE-2026-61498)
+
 ### CVE-2026-60137 (2026-07-17)
 
 <code>WordPress 6.8.x before 6.8.6, 6.9.x before 6.9.5, and 7.0.x before 7.0.2 does not properly sanitise the author__not_in parameter of WP_Query, which could allow SQL Injection when a plugin or theme passes untrusted input to the parameter.
@@ -5434,6 +5474,7 @@
 - [mhtsec/CVE-2026-63030](https://github.com/mhtsec/CVE-2026-63030)
 - [c0gnit00/Wp2Shell](https://github.com/c0gnit00/Wp2Shell)
 - [ikow/wp2shell](https://github.com/ikow/wp2shell)
+- [TomorrowX6/CVE-2026-63030-poc](https://github.com/TomorrowX6/CVE-2026-63030-poc)
 - [bahartanir/wp2shell-scanner](https://github.com/bahartanir/wp2shell-scanner)
 - [eyesecurity/wp2shell-compromise-scanner-plugin](https://github.com/eyesecurity/wp2shell-compromise-scanner-plugin)
 - [0xh7ml/CVE-2026-63030](https://github.com/0xh7ml/CVE-2026-63030)
@@ -5445,6 +5486,12 @@
 - [skelersecurity/wordpress-skelersecurity-core-security-CVE-2026-63030](https://github.com/skelersecurity/wordpress-skelersecurity-core-security-CVE-2026-63030)
 - [vulnquest58/PressVector](https://github.com/vulnquest58/PressVector)
 - [ZenithGenius/wordpress-batch-rce-lab](https://github.com/ZenithGenius/wordpress-batch-rce-lab)
+- [Crypto-Cat/wp2shell](https://github.com/Crypto-Cat/wp2shell)
+- [administrator-01001/CVE-2026-63030](https://github.com/administrator-01001/CVE-2026-63030)
+- [joaovicdev/EXPLOIT-CVE-2026-63030](https://github.com/joaovicdev/EXPLOIT-CVE-2026-63030)
+- [0xjessie21/wp2shell-checker](https://github.com/0xjessie21/wp2shell-checker)
+- [SentinelXofficial/sxwp2shell](https://github.com/SentinelXofficial/sxwp2shell)
+- [OffByOn3/wp2shell-poc](https://github.com/OffByOn3/wp2shell-poc)
 
 ### CVE-2026-69212
 - [c0gnit00/CVE-2026-69212](https://github.com/c0gnit00/CVE-2026-69212)
@@ -14871,6 +14918,7 @@
 - [Its1Zero/cve-2025-57819-exploit](https://github.com/Its1Zero/cve-2025-57819-exploit)
 - [K3ysTr0K3R/CVE-2025-57819](https://github.com/K3ysTr0K3R/CVE-2025-57819)
 - [Samik-Parajuli/htb-connected-writeup](https://github.com/Samik-Parajuli/htb-connected-writeup)
+- [Neobee714/CVE-2025-57819-POC](https://github.com/Neobee714/CVE-2025-57819-POC)
 
 ### CVE-2025-57833 (2025-09-03)
 
@@ -19958,7 +20006,6 @@
 </code>
 
 - [RandomRobbieBF/CVE-2024-9932](https://github.com/RandomRobbieBF/CVE-2024-9932)
-- [Nxploited/CVE-2024-9932-POC](https://github.com/Nxploited/CVE-2024-9932-POC)
 - [JoshuaProvoste/0-click-RCE-Exploit-for-CVE-2024-9932](https://github.com/JoshuaProvoste/0-click-RCE-Exploit-for-CVE-2024-9932)
 
 ### CVE-2024-9933 (2024-10-26)
@@ -21806,6 +21853,7 @@
 - [vmc8ll/poc-CVE-2024-23897](https://github.com/vmc8ll/poc-CVE-2024-23897)
 - [w41l3r/jenkins_scan](https://github.com/w41l3r/jenkins_scan)
 - [rivaedoardo62-boop/cve-2024-23897-jenkins-poc](https://github.com/rivaedoardo62-boop/cve-2024-23897-jenkins-poc)
+- [Dungsocool/CVE-2024-23897](https://github.com/Dungsocool/CVE-2024-23897)
 
 ### CVE-2024-23898 (2024-01-24)
 
@@ -31018,7 +31066,6 @@
 - [0xNahim/CVE-2023-23752](https://github.com/0xNahim/CVE-2023-23752)
 - [adhikara13/CVE-2023-23752](https://github.com/adhikara13/CVE-2023-23752)
 - [AkbarWiraN/Joomla-Scanner](https://github.com/AkbarWiraN/Joomla-Scanner)
-- [Ge-Per/Scanner-CVE-2023-23752](https://github.com/Ge-Per/Scanner-CVE-2023-23752)
 - [Ap0dexMe0/CVE-2023-23752](https://github.com/Ap0dexMe0/CVE-2023-23752)
 - [Sweelg/CVE-2023-23752](https://github.com/Sweelg/CVE-2023-23752)
 - [MrP4nda1337/CVE-2023-23752](https://github.com/MrP4nda1337/CVE-2023-23752)
@@ -45123,13 +45170,6 @@
 - [Trinadh465/System_bt_AOSP10_r33_CVE-2021-0589](https://github.com/Trinadh465/System_bt_AOSP10_r33_CVE-2021-0589)
 - [Satheesh575555/system_bt_AOSP10_r33_CVE-2021-0589](https://github.com/Satheesh575555/system_bt_AOSP10_r33_CVE-2021-0589)
 
-### CVE-2021-0963 (2021-12-15)
-
-<code>In onCreate of KeyChainActivity.java, there is a possible way to use an app certificate stored in keychain due to a tapjacking/overlay attack. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-9Android ID: A-199754277
-</code>
-
-- [Trinadh465/packages_apps_KeyChain_AOSP10_r33_CVE-2021-0963](https://github.com/Trinadh465/packages_apps_KeyChain_AOSP10_r33_CVE-2021-0963)
-
 ### CVE-2021-22
 - [LingerANR/CVE-2021-22-555](https://github.com/LingerANR/CVE-2021-22-555)
 
@@ -45234,6 +45274,7 @@
 - [CameraShutterBug/PrintNightmare](https://github.com/CameraShutterBug/PrintNightmare)
 - [DLL00P/CVE-2021-1675](https://github.com/DLL00P/CVE-2021-1675)
 - [ccordeiro/CVE-2021-1675](https://github.com/ccordeiro/CVE-2021-1675)
+- [kaiw-icspark25/PrintNightmare-CVE-2021-1675-Analysis](https://github.com/kaiw-icspark25/PrintNightmare-CVE-2021-1675-Analysis)
 
 ### CVE-2021-1678 (2021-01-12)
 
@@ -64146,7 +64187,6 @@
 - [0x00-0x00/CVE-2018-12613](https://github.com/0x00-0x00/CVE-2018-12613)
 - [ivanitlearning/CVE-2018-12613](https://github.com/ivanitlearning/CVE-2018-12613)
 - [eastmountyxz/CVE-2018-12613-phpMyAdmin](https://github.com/eastmountyxz/CVE-2018-12613-phpMyAdmin)
-- [hs2131019/phpMyAdmin-CVE-2018-12613](https://github.com/hs2131019/phpMyAdmin-CVE-2018-12613)
 
 ### CVE-2018-12633 (2018-06-22)
 
