@@ -122,7 +122,7 @@
 <code>Discord Client Uncontrolled Search Path Element Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of Discord Client. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\n\nThe specific flaw exists within the discord_rpc module. The product loads a file from an unsecured location. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of a target user. Was ZDI-CAN-27057.
 </code>
 
-- [whoanx/CVE-2026-0776](https://github.com/whoanx/CVE-2026-0776)
+- [whenx/CVE-2026-0776](https://github.com/whenx/CVE-2026-0776)
 - [OverlayCS/Helix](https://github.com/OverlayCS/Helix)
 
 ### CVE-2026-0828 (2026-06-26)
@@ -1132,6 +1132,13 @@
 
 - [Hann1bl3L3ct3r/CVE-2026-11349](https://github.com/Hann1bl3L3ct3r/CVE-2026-11349)
 
+### CVE-2026-11374 (2026-06-23)
+
+<code>In ManageEngine ADSelfService Plus, RecoveryManager Plus, M365 Manager Plus, and ADAudit Plus, the SSO tickets generated to authenticate that session could be predicted\n by an unauthenticated user, leading to account takeover.
+</code>
+
+- [BishopFox/CVE-2026-11374-check](https://github.com/BishopFox/CVE-2026-11374-check)
+
 ### CVE-2026-11387 (2026-07-01)
 
 <code>The SMS Alert – SMS &amp; OTP for WooCommerce, Order Notifications &amp; Abandoned Cart Recovery plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 3.9.5. This is due to the plugin not properly validating a user's identity prior to updating their details like reset the password of any user account, including administrators, and gain full access to those accounts. This makes it possible for unauthenticated attackers to change arbitrary user's email addresses, including administrators, and leverage that to reset the user's password and gain access to their account. This is only vulnerable on sites with OTP verification for password resets enabled, and where the administrator (or other user) has set a phone number for OTP verification.
@@ -1240,6 +1247,13 @@
 </code>
 
 - [FzRsLLaSheR/CVE-2026-12166_CVE-2026-12167_CVE-2026-12168](https://github.com/FzRsLLaSheR/CVE-2026-12166_CVE-2026-12167_CVE-2026-12168)
+
+### CVE-2026-12191 (2026-06-14)
+
+<code>A vulnerability was found in Comma AI Openpilot 0.11. This issue affects the function pickle.load/pickle.loads of the file selfdrive/modeld/modeld.py of the component Pickle Module. The manipulation results in deserialization. The attack is only possible with local access. The vendor was contacted early about this disclosure but did not respond in any way.
+</code>
+
+- [hakaioffsec/CVE-2026-12191](https://github.com/hakaioffsec/CVE-2026-12191)
 
 ### CVE-2026-12277 (2026-07-07)
 
@@ -1407,6 +1421,13 @@
 
 ### CVE-2026-15706
 - [musana/CVE-2026-15706](https://github.com/musana/CVE-2026-15706)
+
+### CVE-2026-16219 (2026-07-19)
+
+<code>A flaw has been found in Croogo CMS up to 4.0.7. This affects the function FileManager::isEditable of the file FileManager/src/Utility/FileManager.php of the component Admin File Manager. This manipulation causes path traversal. The attack can be initiated remotely. The exploit has been published and may be used. The project was informed of the problem early through an issue report but has not responded yet.
+</code>
+
+- [HELLBOY3110/cve-2026-16219-croogo-lab](https://github.com/HELLBOY3110/cve-2026-16219-croogo-lab)
 
 ### CVE-2026-20127 (2026-02-25)
 
@@ -1720,6 +1741,7 @@
 
 - [Cyber-DarkNay/CVE-2026-23550](https://github.com/Cyber-DarkNay/CVE-2026-23550)
 - [1beelze/CVE-2026-23550](https://github.com/1beelze/CVE-2026-23550)
+- [baktistr/cve-2026-23550-poc](https://github.com/baktistr/cve-2026-23550-poc)
 
 ### CVE-2026-23631 (2026-05-05)
 
@@ -2313,6 +2335,9 @@
 </code>
 
 - [0xrixet/Craftcms-PoC-CVE-2026-31266](https://github.com/0xrixet/Craftcms-PoC-CVE-2026-31266)
+
+### CVE-2026-31278
+- [mda1r/CVE-2026-31278](https://github.com/mda1r/CVE-2026-31278)
 
 ### CVE-2026-31309 (2026-07-08)
 
@@ -3367,8 +3392,8 @@
 - [willygailo/CVE-2026-41940-Linux](https://github.com/willygailo/CVE-2026-41940-Linux)
 - [yurahshell/CVE-2026-41940](https://github.com/yurahshell/CVE-2026-41940)
 - [asdasddqwdq29-a11y/CVE-2026-41940](https://github.com/asdasddqwdq29-a11y/CVE-2026-41940)
-- [aquace/CVE-2026-41940-PoC](https://github.com/aquace/CVE-2026-41940-PoC)
 - [oguz-kagan-akar/CVE-2026-41940-analysis](https://github.com/oguz-kagan-akar/CVE-2026-41940-analysis)
+- [soverineg/cve-2026-41940-PoC](https://github.com/soverineg/cve-2026-41940-PoC)
 
 ### CVE-2026-42048 (2026-05-12)
 
@@ -3819,6 +3844,13 @@
 
 - [ex-cal1bur/CVE-2026-44596](https://github.com/ex-cal1bur/CVE-2026-44596)
 
+### CVE-2026-44680 (2026-05-26)
+
+<code>MikroORM is a TypeScript ORM for Node.js based on Data Mapper, Unit of Work and Identity Map patterns. Prior to @mikro-orm/knex 6.6.14 and @mikro-orm/sql 7.0.14, MikroORM's identifier-quoting helper (Platform.quoteIdentifier and the postgres/mssql overrides) and its JSON-path emitters (Platform.getSearchJsonPropertyKey, quoteJsonKey) did not properly escape characters that delimit the SQL identifier or string-literal context they emit into. When application code passes attacker-influenced strings to public ORM APIs that expect an identifier or a JSON-property filter, an attacker can break out of the quoted context and inject arbitrary SQL. This vulnerability is fixed in @mikro-orm/knex 6.6.14 and @mikro-orm/sql 7.0.14.
+</code>
+
+- [CerberusMrXi/CVE-2026-44680-MikroORM-SQL-Injection-Exploit-Framework](https://github.com/CerberusMrXi/CVE-2026-44680-MikroORM-SQL-Injection-Exploit-Framework)
+
 ### CVE-2026-44706 (2026-05-26)
 
 <code>Chatwoot is a customer engagement suite. From 2.2.0 to before 4.11.2, a SQL injection vulnerability exists in the conversation and contact filter APIs. When filtering by a custom attribute of type date or number using the is_greater_than or is_less_than operators, user-supplied values in the values field of the filter payload are interpolated directly into the SQL query without parameterization. Any authenticated user with access to an account can exploit this to execute arbitrary SQL via time-based blind injection. This affects /api/v1/accounts/{account_id}/conversations/filter, /api/v1/accounts/{account_id}/contacts/filter, and /api/v1/accounts/{account_id}/custom_attribute_definitions. This vulnerability is fixed in 4.11.2.
@@ -3995,6 +4027,7 @@
 - [ChanderManiPandey2022/Yellow-Key-Check](https://github.com/ChanderManiPandey2022/Yellow-Key-Check)
 - [ChanderManiPandey2022/YellowKey-BitLocker-Bypass-CVE-2026-45585-Detect-Fix-Automatically-via-Microsoft-Intune](https://github.com/ChanderManiPandey2022/YellowKey-BitLocker-Bypass-CVE-2026-45585-Detect-Fix-Automatically-via-Microsoft-Intune)
 - [Desireeontrial76/yellowkey-bitlocker](https://github.com/Desireeontrial76/yellowkey-bitlocker)
+- [yellowkeys/YellowKey-Bitlocker-CVE-2026-45585](https://github.com/yellowkeys/YellowKey-Bitlocker-CVE-2026-45585)
 
 ### CVE-2026-45659 (2026-05-22)
 
@@ -4660,6 +4693,20 @@
 
 - [oscerd/CVE-2026-49086](https://github.com/oscerd/CVE-2026-49086)
 
+### CVE-2026-49097 (2026-07-06)
+
+<code>Improper Input Validation, Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection') vulnerability in Apache Camel IRC component.\n\nThe camel-irc producer chooses the destination of an outgoing IRC message from the irc.sendTo Exchange header (the constant IrcConstants.IRC_SEND_TO, value irc.sendTo); when that header is present it overrides the channel list configured on the endpoint, and the message is sent only to the specified destination. This and the component's other control headers (irc.target, irc.messageType, irc.user.*, irc.num, irc.value) used plain, non-Camel-prefixed values. Because these names do not start with the Camel / camel prefix, HttpHeaderFilterStrategy - which blocks only the Camel header namespace on the HTTP boundary - let them pass from an inbound HTTP request straight into the Exchange. In a route that bridges an HTTP consumer (for example platform-http) into an irc: producer, any HTTP client could therefore set the irc.sendTo header and redirect a message that the route intended for a configured channel to an arbitrary IRC channel or user - exfiltrating the message content to an attacker-chosen nickname, leaking it into a public channel, or delivering messages that appear to come from the bot. No credentials are required when the bridging consumer is unauthenticated.\nThis issue affects Apache Camel: from 4.0.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. After upgrading, routes that set IRC headers via the raw header names must use the CamelIrc* names (for example CamelIrcSendTo) instead of the old irc.* values. For deployments that cannot upgrade immediately, strip the irc.* headers from any untrusted ingress before the irc: producer (for example removeHeaders('irc.*') at the start of the route), and set the IRC destination from a trusted source.
+</code>
+
+- [oscerd/CVE-2026-49097](https://github.com/oscerd/CVE-2026-49097)
+
+### CVE-2026-49098 (2026-07-06)
+
+<code>Improper Input Validation, Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection') vulnerability in Apache Camel Kafka Component.\n\nThe camel-kafka producer can override its configured target topic at runtime from the kafka.OVERRIDE_TOPIC Exchange header: KafkaProducer.evaluateTopic() returns the header value in preference to the topic configured on the endpoint. The control-header constants in KafkaConstants (for example OVERRIDE_TOPIC = kafka.OVERRIDE_TOPIC, OVERRIDE_TIMESTAMP = kafka.OVERRIDE_TIMESTAMP, PARTITION_KEY = kafka.PARTITION_KEY) used plain, non-Camel-prefixed values. camel-kafka's own KafkaHeaderFilterStrategy does filter the kafka.* namespace, but only on the Kafka-to-Exchange serialization boundary (reading Kafka record headers into the Exchange, and writing Exchange headers into a Kafka record); it does not apply to headers that arrive from an upstream consumer in a multi-component route. The upstream HTTP consumer uses HttpHeaderFilterStrategy, which blocks only the Camel / camel namespace, so a kafka.* header passes through unfiltered. As a result, in a route that bridges an HTTP consumer (for example platform-http) into a kafka: producer, any HTTP client could set the kafka.OVERRIDE_TOPIC header and cause the message to be published to an arbitrary Kafka topic instead of the configured one - redirecting it to a sensitive internal topic, or injecting attacker-crafted messages into a topic consumed by a critical downstream service. The related kafka.OVERRIDE_TIMESTAMP and kafka.PARTITION_KEY headers could likewise be injected to backdate messages or target specific partitions. No credentials are required when the bridging consumer is unauthenticated.\nThis issue affects Apache Camel: from 4.0.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. After upgrading, routes that set or read Kafka headers via the raw header names must use the CamelKafka* names (for example CamelKafkaOverrideTopic and CamelKafkaTopic) instead of the old kafka.* values. For deployments that cannot upgrade immediately, strip the kafka.* headers from any untrusted ingress before the kafka: producer (for example removeHeaders('kafka.*') at the start of the route), and set the target topic from a trusted source.
+</code>
+
+- [oscerd/CVE-2026-49098](https://github.com/oscerd/CVE-2026-49098)
+
 ### CVE-2026-49104 (2026-06-15)
 
 <code>Unauthenticated PHP Object Injection in Integration for Keap/infusionsoft and Contact Form 7, WPForms, Elementor, Formidable, Ninja Forms &lt;= 1.2.1 versions.
@@ -4928,7 +4975,11 @@
 
 - [A17-ba/CVE-2026-51119](https://github.com/A17-ba/CVE-2026-51119)
 
-### CVE-2026-51385
+### CVE-2026-51385 (2026-07-20)
+
+<code>An issue in safishamsi Open-Source GRAPHIFY v.0.3.2 through v0.4.29 allows a remote attacker to execute arbitrary code via the validate_url, safe_fetch, _build_opener, _fetch_html and _download_binary functions.
+</code>
+
 - [Arturo0x90/CVE-2026-51385](https://github.com/Arturo0x90/CVE-2026-51385)
 
 ### CVE-2026-51788
@@ -4968,7 +5019,11 @@
 ### CVE-2026-52614
 - [Chinesespeople/CVE-2026-52614](https://github.com/Chinesespeople/CVE-2026-52614)
 
-### CVE-2026-52656
+### CVE-2026-52656 (2026-07-20)
+
+<code>An issue in SJCAM AllWinner Tech products SJ4000-Air V1.4C and before and Whitelabel based v.1.4C and before allows an attacker to execute arbitrary code via a crafted FEX file
+</code>
+
 - [keowu/sjcam](https://github.com/keowu/sjcam)
 
 ### CVE-2026-52658
@@ -4987,6 +5042,13 @@
 </code>
 
 - [v3s9er/CVE-2026-52885](https://github.com/v3s9er/CVE-2026-52885)
+
+### CVE-2026-52910 (2026-06-19)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nbpf: Free reuseport cBPF prog after RCU grace period.\n\nEulgyu Kim reported the splat below with a repro. [0]\n\nThe repro sets up a UDP reuseport group with a cBPF prog and\nreplaces it with a new one while another thread is sending\na UDP packet to the group.\n\nThe reuseport prog is freed by sk_reuseport_prog_free().\nbpf_prog_put() is called for &quot;e&quot;BPF prog to destruct through\nmultiple stages while cBPF prog is freed immediately by\nbpf_release_orig_filter() and bpf_prog_free().\n\nIf a reuseport prog is detached from the setsockopt() path\n(reuseport_attach_prog() or reuseport_detach_prog()),\nsk_reuseport_prog_free() is called without waiting for RCU\nreaders to complete, resulting in various bugs.\n\nLet's defer freeing the reuseport cBPF prog after one RCU\ngrace period.\n\nNote &quot;e&quot;BPF prog is safe as is unless the fast path starts\nto touch fields destroyed in bpf_prog_put_deferred() and\n__bpf_prog_put_noref().\n\n[0]:\nBUG: KASAN: vmalloc-out-of-bounds in reuseport_select_sock+0xedc/0x1220 net/core/sock_reuseport.c:596\nRead of size 4 at addr ffffc9000051e004 by task slowme/10208\nCPU: 6 UID: 1000 PID: 10208 Comm: slowme Not tainted 7.0.0-geb7ac95ff75e #32 PREEMPT(full)\nHardware name: QEMU Ubuntu 24.04 PC v2 (i440FX + PIIX, arch_caps fix, 1996), BIOS 1.16.3-debian-1.16.3-2 04/01/2014\nCall Trace:\n &lt;IRQ&gt;\n dump_stack_lvl+0xe8/0x150 lib/dump_stack.c:120\n print_address_description mm/kasan/report.c:378 [inline]\n print_report+0xca/0x240 mm/kasan/report.c:482\n kasan_report+0x118/0x150 mm/kasan/report.c:595\n reuseport_select_sock+0xedc/0x1220 net/core/sock_reuseport.c:596\n udp4_lib_lookup2+0x3bc/0x950 net/ipv4/udp.c:495\n __udp4_lib_lookup+0x768/0xe20 net/ipv4/udp.c:723\n __udp4_lib_lookup_skb+0x297/0x390 net/ipv4/udp.c:752\n __udp4_lib_rcv+0x1312/0x2620 net/ipv4/udp.c:2752\n ip_protocol_deliver_rcu+0x282/0x440 net/ipv4/ip_input.c:207\n ip_local_deliver_finish+0x3bb/0x6f0 net/ipv4/ip_input.c:241\n NF_HOOK+0x30c/0x3a0 include/linux/netfilter.h:318\n NF_HOOK+0x30c/0x3a0 include/linux/netfilter.h:318\n __netif_receive_skb_one_core net/core/dev.c:6181 [inline]\n __netif_receive_skb net/core/dev.c:6294 [inline]\n process_backlog+0xaa4/0x1960 net/core/dev.c:6645\n __napi_poll+0xae/0x340 net/core/dev.c:7709\n napi_poll net/core/dev.c:7772 [inline]\n net_rx_action+0x5d7/0xf50 net/core/dev.c:7929\n handle_softirqs+0x22b/0x870 kernel/softirq.c:622\n do_softirq+0x76/0xd0 kernel/softirq.c:523\n &lt;/IRQ&gt;\n &lt;TASK&gt;\n __local_bh_enable_ip+0xf8/0x130 kernel/softirq.c:450\n local_bh_enable include/linux/bottom_half.h:33 [inline]\n rcu_read_unlock_bh include/linux/rcupdate.h:924 [inline]\n __dev_queue_xmit+0x1dd7/0x3710 net/core/dev.c:4890\n neigh_output include/net/neighbour.h:556 [inline]\n ip_finish_output2+0xca9/0x1070 net/ipv4/ip_output.c:237\n NF_HOOK_COND include/linux/netfilter.h:307 [inline]\n ip_output+0x29f/0x450 net/ipv4/ip_output.c:438\n ip_send_skb+0x45/0xc0 net/ipv4/ip_output.c:1508\n udp_send_skb+0xb04/0x1510 net/ipv4/udp.c:1195\n udp_sendmsg+0x1a71/0x2350 net/ipv4/udp.c:1485\n sock_sendmsg_nosec net/socket.c:727 [inline]\n __sock_sendmsg net/socket.c:742 [inline]\n __sys_sendto+0x554/0x680 net/socket.c:2206\n __do_sys_sendto net/socket.c:2213 [inline]\n __se_sys_sendto net/socket.c:2209 [inline]\n __x64_sys_sendto+0xde/0x100 net/socket.c:2209\n do_syscall_x64 arch/x86/entry/syscall_64.c:63 [inline]\n do_syscall_64+0x160/0xf80 arch/x86/entry/syscall_64.c:94\n entry_SYSCALL_64_after_hwframe+0x77/0x7f\nRIP: 0033:0x415a2d\nCode: b3 66 2e 0f 1f 84 00 00 00 00 00 66 90 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 &lt;48&gt; 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b8 ff ff ff f7 d8 64 89 01 48\nRSP: 002b:00007f6bc31e41e8 EFLAGS: 00000212 ORIG_RAX: 000000000000002c\nRAX: ffffffffffffffda RBX: 00007f6bc31e4cdc RCX: 0000000000415a2d\nRDX: 0000000000000001 RSI: 00007f6bc31e421f RDI: 0000000000000003\nRBP: 00007f6bc31e4240 R08: 00007f6bc31e4220 R09: 0000000000000010\nR10: 0000000000000000 R11: \n---truncated---
+</code>
+
+- [Dere3046/ElevateMe_noLKM](https://github.com/Dere3046/ElevateMe_noLKM)
 
 ### CVE-2026-52943 (2026-06-24)
 
@@ -5436,6 +5498,13 @@
 
 - [nmagill123/CVE-2026-61343-poc-librebooking-rce](https://github.com/nmagill123/CVE-2026-61343-poc-librebooking-rce)
 
+### CVE-2026-62183 (2026-07-20)
+
+<code>Improper Privilege Management vulnerability in Apache Syncope.\n\nWhen:\n\n* the all-Java user workflow adapter is configured, or\n* the Flowable user workflow adapter is configured, bearing a BPMN definition not requiring admin approval for user self registration of self update requests\n\nthe following scenario could happen.\nA REST API call can allow the user to grant themselves one or more of defined Roles, thus gaining their Entitlements and becoming in fact an administrator; the actual Entitlements gained depend on the Roles that are effectively defined on the specific Syncope deployment.\n\n\nThis issue affects Apache Syncope: from 3.0.0-M0 through 3.0.16, from 4.0.0-M0 Through 4.0.6, from 4.1.0-M0 through 4.1.1.\n\nUsers are recommended to upgrade to version 4.0.7 / 4.1.2, which fix this issue.
+</code>
+
+- [NicPWNs/CVE-2026-62183](https://github.com/NicPWNs/CVE-2026-62183)
+
 ### CVE-2026-62958
 - [0Linear/CVE-2026-62958](https://github.com/0Linear/CVE-2026-62958)
 
@@ -5491,7 +5560,10 @@
 - [joaovicdev/EXPLOIT-CVE-2026-63030](https://github.com/joaovicdev/EXPLOIT-CVE-2026-63030)
 - [0xjessie21/wp2shell-checker](https://github.com/0xjessie21/wp2shell-checker)
 - [SentinelXofficial/sxwp2shell](https://github.com/SentinelXofficial/sxwp2shell)
-- [OffByOn3/wp2shell-poc](https://github.com/OffByOn3/wp2shell-poc)
+- [OffByOn3/CVE-2026-63030-Wp2Shell](https://github.com/OffByOn3/CVE-2026-63030-Wp2Shell)
+- [ASYquan/wp2shell-cf-WAF-bypass](https://github.com/ASYquan/wp2shell-cf-WAF-bypass)
+- [lucifer0xf/wp2shell-Wordpress-TOWN](https://github.com/lucifer0xf/wp2shell-Wordpress-TOWN)
+- [Ch4120N/CVE-2026-63030](https://github.com/Ch4120N/CVE-2026-63030)
 
 ### CVE-2026-69212
 - [c0gnit00/CVE-2026-69212](https://github.com/c0gnit00/CVE-2026-69212)
@@ -7589,6 +7661,7 @@
 </code>
 
 - [watchtowrlabs/watchTowr-vs-WatchGuard-CVE-2025-9242](https://github.com/watchtowrlabs/watchTowr-vs-WatchGuard-CVE-2025-9242)
+- [UnusualGiraffe/PoC-Unauthenticated-RCE-in-WatchGuard-Fireware-12.7-Build-640389-CVE-2025-9242](https://github.com/UnusualGiraffe/PoC-Unauthenticated-RCE-in-WatchGuard-Fireware-12.7-Build-640389-CVE-2025-9242)
 
 ### CVE-2025-9267 (2025-09-26)
 
@@ -9436,6 +9509,7 @@
 - [suil12/CVE-2025-24813_presentation](https://github.com/suil12/CVE-2025-24813_presentation)
 - [JTMH37/Apache-Tomcat-CVE-2025-24813-Lab](https://github.com/JTMH37/Apache-Tomcat-CVE-2025-24813-Lab)
 - [Dhananjayasj/CVE-2025-24813-Apache-Tomcat-Partial-PUT-Deserialization-RCE-](https://github.com/Dhananjayasj/CVE-2025-24813-Apache-Tomcat-Partial-PUT-Deserialization-RCE-)
+- [Loufa0/CVE-2025-24813](https://github.com/Loufa0/CVE-2025-24813)
 - [yuzuki-ayanami/CVE-2025-24813](https://github.com/yuzuki-ayanami/CVE-2025-24813)
 
 ### CVE-2025-24893 (2025-02-20)
@@ -21539,7 +21613,7 @@
 - [CheckCve2/CVE-2024-23113](https://github.com/CheckCve2/CVE-2024-23113)
 - [p33d/CVE-2024-23113](https://github.com/p33d/CVE-2024-23113)
 - [puckiestyle/CVE-2024-23113](https://github.com/puckiestyle/CVE-2024-23113)
-- [valornode/CVE-2024-23113](https://github.com/valornode/CVE-2024-23113)
+- [iambrayden/CVE-2024-23113](https://github.com/iambrayden/CVE-2024-23113)
 - [MAVRICK-1/cve-2024-23113-test-env](https://github.com/MAVRICK-1/cve-2024-23113-test-env)
 - [MinhPham123456789/PoC-CVE-2024-23113](https://github.com/MinhPham123456789/PoC-CVE-2024-23113)
 
@@ -22499,6 +22573,7 @@
 - [team-MineDEV/CVE-2024-26229](https://github.com/team-MineDEV/CVE-2024-26229)
 - [Cracked5pider/eop24-26229](https://github.com/Cracked5pider/eop24-26229)
 - [mqxmm/CVE-2024-26229](https://github.com/mqxmm/CVE-2024-26229)
+- [shinspace92/cve-2024-26229](https://github.com/shinspace92/cve-2024-26229)
 - [vettrivel007/CVE-2024-26229](https://github.com/vettrivel007/CVE-2024-26229)
 - [0xGunrunner/CVE-2024-26229-BOF](https://github.com/0xGunrunner/CVE-2024-26229-BOF)
 
@@ -46709,13 +46784,6 @@
 - [Faridi-m/CVE-2021-22911-RocketChat](https://github.com/Faridi-m/CVE-2021-22911-RocketChat)
 - [roshanrajbanshi/rocketcat-cve-2021-22911-exploit](https://github.com/roshanrajbanshi/rocketcat-cve-2021-22911-exploit)
 
-### CVE-2021-22924 (2021-08-05)
-
-<code>libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse, if one of them matches the setup.Due to errors in the logic, the config matching function did not take 'issuercert' into account and it compared the involved paths *case insensitively*,which could lead to libcurl reusing wrong connections.File paths are, or can be, case sensitive on many systems but not all, and caneven vary depending on used file systems.The comparison also didn't include the 'issuer cert' which a transfer can setto qualify how to verify the server certificate.
-</code>
-
-- [Trinadh465/external_curl_AOSP10_r33_CVE-2021-22924](https://github.com/Trinadh465/external_curl_AOSP10_r33_CVE-2021-22924)
-
 ### CVE-2021-22941 (2021-09-23)
 
 <code>Improper Access Control in Citrix ShareFile storage zones controller before 5.11.20 may allow an unauthenticated attacker to remotely compromise the storage zones controller.
@@ -50023,6 +50091,7 @@
 - [zeynepglygt/apache-cve-2021-42013-rce](https://github.com/zeynepglygt/apache-cve-2021-42013-rce)
 - [Joapath/CVE-2021-42013](https://github.com/Joapath/CVE-2021-42013)
 - [eunho87/CVE-2021-42013](https://github.com/eunho87/CVE-2021-42013)
+- [berraesen/apache-cve-2021-42013-lab](https://github.com/berraesen/apache-cve-2021-42013-lab)
 
 ### CVE-2021-42056 (2022-06-24)
 
