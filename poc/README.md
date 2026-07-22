@@ -439,13 +439,6 @@
 
 - [xxconi/CVE-2026-4782](https://github.com/xxconi/CVE-2026-4782)
 
-### CVE-2026-4858 (2026-05-21)
-
-<code>Mattermost versions 11.6.x &lt;= 11.6.0, 11.5.x &lt;= 11.5.3, 11.4.x &lt;= 11.4.4, 10.11.x &lt;= 10.11.14 fail to check integration URL for path traversal which allows an malicious authenticated user  to call an arbitrary API via system admin Mattermost auth token using via path traversal in integration action URL.. Mattermost Advisory ID: MMSA-2026-00640
-</code>
-
-- [EvtDanya/CVE-2026-4858](https://github.com/EvtDanya/CVE-2026-4858)
-
 ### CVE-2026-4882 (2026-05-02)
 
 <code>The User Registration Advanced Fields plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'URAF_AJAX::method_upload' function in all versions up to, and including, 1.6.20. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible. Note: The vulnerability can only be exploited if a &quot;Profile Picture&quot; field is added to the form.
@@ -3093,6 +3086,7 @@
 - [Resolvdd/CVE-2026-38526-PoC-htb-nexus](https://github.com/Resolvdd/CVE-2026-38526-PoC-htb-nexus)
 - [Qurclinc/CVE-2026-38526](https://github.com/Qurclinc/CVE-2026-38526)
 - [CerberusMrXi/KrayinCRM-RCE-Exploit-CVE-2026-38526](https://github.com/CerberusMrXi/KrayinCRM-RCE-Exploit-CVE-2026-38526)
+- [Industri4l-H3ll-Xpl0it3rs/CVE-2026-38526-KrayinCRM-RCE](https://github.com/Industri4l-H3ll-Xpl0it3rs/CVE-2026-38526-KrayinCRM-RCE)
 
 ### CVE-2026-38698
 - [vital-information-resource-under-siege/CVE-2026-38698-and-CVE-2026-38699](https://github.com/vital-information-resource-under-siege/CVE-2026-38698-and-CVE-2026-38699)
@@ -3580,6 +3574,7 @@
 - [srkyn/nginx-map-risk-audit](https://github.com/srkyn/nginx-map-risk-audit)
 - [Daniyal48/ghostlock-vagrant-box](https://github.com/Daniyal48/ghostlock-vagrant-box)
 - [suominen/CVE-2026-42533](https://github.com/suominen/CVE-2026-42533)
+- [seguridadentrerios/CVE-2026-42533-](https://github.com/seguridadentrerios/CVE-2026-42533-)
 
 ### CVE-2026-42568 (2026-06-10)
 
@@ -3787,6 +3782,7 @@
 - [geecjdj/CVE-2026-43499](https://github.com/geecjdj/CVE-2026-43499)
 - [Petalrain224/CVE-2026-43499-Redmi-Turbo5](https://github.com/Petalrain224/CVE-2026-43499-Redmi-Turbo5)
 - [DistrictBlauw/Ace3-GhostLock-Preload](https://github.com/DistrictBlauw/Ace3-GhostLock-Preload)
+- [gagaltotal/CVE-2026-43499-PoC-Scanner](https://github.com/gagaltotal/CVE-2026-43499-PoC-Scanner)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -4133,6 +4129,13 @@
 </code>
 
 - [HORKimhab/CVE-2026-45659](https://github.com/HORKimhab/CVE-2026-45659)
+
+### CVE-2026-45729 (2026-06-01)
+
+<code>Thor Vector Graphics (ThorVG) is a production-ready vector graphics engine. Prior to version 1.0.5, a null pointer dereference in SvgLoader::run() allows any caller that passes untrusted SVG data to Picture::load() to crash the process with a 6-byte payload. This issue has been patched in version 1.0.5.
+</code>
+
+- [yeahhbean/CVE-2026-45729](https://github.com/yeahhbean/CVE-2026-45729)
 
 ### CVE-2026-45806 (2026-07-15)
 
@@ -4973,6 +4976,9 @@
 - [bibotai/secveri-cve-2026-50011-positive](https://github.com/bibotai/secveri-cve-2026-50011-positive)
 - [bibotai/secveri-cve-2026-50011-negative](https://github.com/bibotai/secveri-cve-2026-50011-negative)
 
+### CVE-2026-50055
+- [HORKimhab/CVE-2026-50055](https://github.com/HORKimhab/CVE-2026-50055)
+
 ### CVE-2026-50131 (2026-06-10)
 
 <code>Fedify is a TypeScript library for building federated server apps powered by ActivityPub. Fedify previously addressed SSRF/internal network access in GHSA-p9cg-vqcc-grcx by adding public URL validation before runtime document and media fetching. However, the IPv4 validation logic present starting in version 0.11.2 and prior to versions 1.9.12, 1.10.11, 2.0.19, 2.1.15, and 2.2.4 appears incomplete. The `validatePublicUrl()` protection relies on `isValidPublicIPv4Address()` to reject non-public IPv4 destinations. The function blocks common private and local ranges such as `10.0.0.0/8`, `127.0.0.0/8`, `169.254.0.0/16`, `172.16.0.0/12`, and `192.168.0.0/16`, but it still treats several special-use, reserved, multicast, benchmarking, and carrier-grade NAT IPv4 ranges as valid public destinations. Because this validation is used as an SSRF defense before outbound fetches, this appears to be an incomplete mitigation or bypass class for the previous SSRF issue. Versions 1.9.12, 1.10.11, 2.0.19, 2.1.15, and 2.2.4 contain an updated patch.
@@ -5038,6 +5044,13 @@
 </code>
 
 - [HORKimhab/CVE-2026-50507](https://github.com/HORKimhab/CVE-2026-50507)
+
+### CVE-2026-50522 (2026-07-14)
+
+<code>Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network.
+</code>
+
+- [HORKimhab/CVE-2026-50522](https://github.com/HORKimhab/CVE-2026-50522)
 
 ### CVE-2026-50656 (2026-06-16)
 
@@ -5433,6 +5446,20 @@
 
 - [MichaelAdamGroberman/CVE-2026-55726](https://github.com/MichaelAdamGroberman/CVE-2026-55726)
 
+### CVE-2026-55993 (2026-07-06)
+
+<code>Improper Input Validation, Exposure of Sensitive Information to an Unauthorized Actor, Server-Side Request Forgery (SSRF) vulnerability in Apache Camel in Atmosphere Websocket Component.\n\nThe camel-atmosphere-websocket consumer mapped inbound WebSocket query parameters into the Camel Exchange header map without applying any HeaderFilterStrategy (WebsocketConsumer.sendEventNotification() iterates the query-string map collected in WebsocketConsumer.service() and copies each entry into the Exchange). Because nothing blocked the Camel header namespace, a client connecting to the WebSocket endpoint could set Camel-internal control headers - including CamelHttpUri (Exchange.HTTP_URI) - simply by supplying them as query parameters. In a route where the WebSocket consumer feeds a downstream HTTP producer, the injected CamelHttpUri redirects the server-side HTTP request to an attacker-chosen destination (server-side request forgery - for example to an internal service or a cloud metadata endpoint). In addition, the HTTP producer resolves Camel property placeholders on the resulting (attacker-controlled) URI, so placeholders embedded in the injected value - such as an environment-variable reference, an application property, or a vault reference - are resolved to their real values and sent to the attacker, disclosing environment variables, application properties and vault secrets. When the WebSocket endpoint is exposed without authentication, this is reachable by an unauthenticated remote attacker.\nThis issue affects Apache Camel: from 4.0.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. The fix makes the consumer apply the HeaderFilterStrategy it already inherits from the HTTP/servlet stack, filtering the Camel header namespace case-insensitively on inbound mapping, so externally-supplied Camel* / camel* headers are no longer copied into the Exchange. For deployments that cannot upgrade immediately, strip the Camel control headers from the inbound message before they reach any downstream producer (for example removeHeaders('Camel*') and removeHeaders('camel*') at the start of the route), require authentication on the WebSocket endpoint, and avoid bridging an untrusted consumer directly into an HTTP producer whose target URI can be driven from message headers.
+</code>
+
+- [oscerd/CVE-2026-55993](https://github.com/oscerd/CVE-2026-55993)
+
+### CVE-2026-55994 (2026-07-06)
+
+<code>Improper Input Validation, Exposure of Sensitive Information to an Unauthorized Actor, Server-Side Request Forgery (SSRF) vulnerability in Apache Camel in Iggy component.\n\nThe camel-iggy consumer mapped the user-headers of inbound Iggy messages into the Camel Exchange header map without applying any HeaderFilterStrategy (IggyFetchRecords copied the message user-headers straight into the Exchange). Because nothing blocked the Camel header namespace, an actor able to publish to the consumed Iggy stream/topic could set Camel-internal control headers - including CamelHttpUri (Exchange.HTTP_URI) - simply by supplying them as message user-headers. In a route where the Iggy consumer feeds a downstream HTTP producer, the injected CamelHttpUri redirects the server-side HTTP request to an attacker-chosen destination (server-side request forgery - for example to an internal service or a cloud metadata endpoint). In addition, the HTTP producer resolves Camel property placeholders on the resulting (attacker-controlled) URI, so placeholders embedded in the injected value - such as an environment-variable reference, an application property, or a vault reference - are resolved to their real values and sent to the attacker, disclosing environment variables, application properties and vault secrets.\nThis issue affects Apache Camel: from 4.17.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. The fix adds a dedicated IggyHeaderFilterStrategy (and a headerFilterStrategy endpoint option) that filters the Camel header namespace case-insensitively on inbound mapping, so externally-supplied Camel* / camel* headers are no longer copied into the Exchange. For deployments that cannot upgrade immediately, strip the Camel control headers from the inbound message before they reach any downstream producer (for example removeHeaders('Camel*') and removeHeaders('camel*') at the start of the route), restrict who can publish to the consumed Iggy stream/topic, and avoid bridging an untrusted consumer directly into an HTTP producer whose target URI can be driven from message headers.
+</code>
+
+- [oscerd/CVE-2026-55994](https://github.com/oscerd/CVE-2026-55994)
+
 ### CVE-2026-56011 (2026-06-26)
 
 <code>Unauthenticated Cross Site Scripting (XSS) in MapPress Maps for WordPress &lt;= 2.97.3 versions.
@@ -5460,6 +5487,13 @@
 </code>
 
 - [valium007/qiomem](https://github.com/valium007/qiomem)
+
+### CVE-2026-56139 (2026-07-06)
+
+<code>Generation of Error Message Containing Sensitive Information vulnerability in Apache Camel Undertow Component.\n\nThe camel-undertow HTTP server consumer exposes a muteException option that controls what is returned to the client when a route processing error occurs. This option defaulted to false, whereas the other Camel HTTP server components (camel-http / camel-jetty / camel-servlet and camel-platform-http) default it to true. With muteException=false, when a request triggers an exception during route processing the consumer writes the full Throwable stack trace into the HTTP response body as text/plain instead of returning an empty body. Any unauthenticated client that can reach the endpoint and cause a processing error - for example by sending a malformed request body, an invalid parameter, or otherwise triggering a route-internal failure - therefore receives a complete Java stack trace. Such a stack trace can disclose sensitive internal information, including credentials embedded in exception messages, internal host names and IP addresses, filesystem paths, dependency and version details, database and class names, and the application's internal structure, which an attacker can use to plan further attacks. In addition, for Rest DSL consumers the muteException option was not honoured at all: the RestUndertowHttpBinding was created with a hard-coded false, so the stack trace was returned even when muteException=true had been configured.\nThis issue affects Apache Camel: from 4.0.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to version 4.21.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.8. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.3. For deployments that cannot upgrade immediately, set muteException=true explicitly on the camel-undertow consumer (for example undertow: http://0.0.0.0:8080/api?muteException=true , or globally via the camel.component.undertow.mute-exception=true property), so that processing errors no longer return the stack trace to the client; note that on affected releases this workaround does not cover Rest DSL consumers, whose binding ignores the option until the fix is applied.
+</code>
+
+- [oscerd/CVE-2026-56139](https://github.com/oscerd/CVE-2026-56139)
 
 ### CVE-2026-56164 (2026-07-14)
 
@@ -5706,6 +5740,8 @@
 - [lucifer0xf/wp2shell-Wordpress-TOWN](https://github.com/lucifer0xf/wp2shell-Wordpress-TOWN)
 - [Ch4120N/CVE-2026-63030](https://github.com/Ch4120N/CVE-2026-63030)
 - [Bhanunamikaze/WP2Shell-CVE-2026-63030-POC](https://github.com/Bhanunamikaze/WP2Shell-CVE-2026-63030-POC)
+- [mcipekci/wp2shell](https://github.com/mcipekci/wp2shell)
+- [Adrees-Basheer/wp2shell-vulnerability-scanner](https://github.com/Adrees-Basheer/wp2shell-vulnerability-scanner)
 
 ### CVE-2026-69212
 - [c0gnit00/CVE-2026-69212](https://github.com/c0gnit00/CVE-2026-69212)
@@ -8228,7 +8264,6 @@
 </code>
 
 - [SaidBenaissa/cve-2025-11953-vulnerability-demo](https://github.com/SaidBenaissa/cve-2025-11953-vulnerability-demo)
-- [GhoStZA-debug/PoC-CVE-collection](https://github.com/GhoStZA-debug/PoC-CVE-collection)
 - [Mr-In4inci3le/CVE-2025-11953-POC-](https://github.com/Mr-In4inci3le/CVE-2025-11953-POC-)
 - [boroeurnprach/CVE-2025-11953-PoC](https://github.com/boroeurnprach/CVE-2025-11953-PoC)
 
@@ -16131,6 +16166,7 @@
 - [joeack123/PoC-for-CVE-2025-64512](https://github.com/joeack123/PoC-for-CVE-2025-64512)
 - [BardLaudian/CVE-2025-64512](https://github.com/BardLaudian/CVE-2025-64512)
 - [MehdiChyhab/CVE-2025-64512-exploit](https://github.com/MehdiChyhab/CVE-2025-64512-exploit)
+- [Cosm3No1de/Bedside.htb_solved](https://github.com/Cosm3No1de/Bedside.htb_solved)
 
 ### CVE-2025-64513 (2025-11-10)
 
@@ -17262,6 +17298,27 @@
 </code>
 
 - [hexissam/CVE-2025-69295](https://github.com/hexissam/CVE-2025-69295)
+
+### CVE-2025-69419 (2026-01-27)
+
+<code>Issue summary: Calling PKCS12_get_friendlyname() function on a maliciously\ncrafted PKCS#12 file with a BMPString (UTF-16BE) friendly name containing\nnon-ASCII BMP code point can trigger a one byte write before the allocated\nbuffer.\n\nImpact summary: The out-of-bounds write can cause a memory corruption\nwhich can have various consequences including a Denial of Service.\n\nThe OPENSSL_uni2utf8() function performs a two-pass conversion of a PKCS#12\nBMPString (UTF-16BE) to UTF-8. In the second pass, when emitting UTF-8 bytes,\nthe helper function bmp_to_utf8() incorrectly forwards the remaining UTF-16\nsource byte count as the destination buffer capacity to UTF8_putc(). For BMP\ncode points above U+07FF, UTF-8 requires three bytes, but the forwarded\ncapacity can be just two bytes. UTF8_putc() then returns -1, and this negative\nvalue is added to the output length without validation, causing the\nlength to become negative. The subsequent trailing NUL byte is then written\nat a negative offset, causing write outside of heap allocated buffer.\n\nThe vulnerability is reachable via the public PKCS12_get_friendlyname() API\nwhen parsing attacker-controlled PKCS#12 files. While PKCS12_parse() uses a\ndifferent code path that avoids this issue, PKCS12_get_friendlyname() directly\ninvokes the vulnerable function. Exploitation requires an attacker to provide\na malicious PKCS#12 file to be parsed by the application and the attacker\ncan just trigger a one zero byte write before the allocated buffer.\nFor that reason the issue was assessed as Low severity according to our\nSecurity Policy.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the PKCS#12 implementation is outside the OpenSSL FIPS module boundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0 and 1.1.1 are vulnerable to this issue.\n\nOpenSSL 1.0.2 is not affected by this issue.
+</code>
+
+- [Kha-Beleh/PoC-CVE-2025-69419](https://github.com/Kha-Beleh/PoC-CVE-2025-69419)
+
+### CVE-2025-69420 (2026-01-27)
+
+<code>Issue summary: A type confusion vulnerability exists in the TimeStamp Response\nverification code where an ASN1_TYPE union member is accessed without first\nvalidating the type, causing an invalid or NULL pointer dereference when\nprocessing a malformed TimeStamp Response file.\n\nImpact summary: An application calling TS_RESP_verify_response() with a\nmalformed TimeStamp Response can be caused to dereference an invalid or\nNULL pointer when reading, resulting in a Denial of Service.\n\nThe functions ossl_ess_get_signing_cert() and ossl_ess_get_signing_cert_v2()\naccess the signing cert attribute value without validating its type.\nWhen the type is not V_ASN1_SEQUENCE, this results in accessing invalid memory\nthrough the ASN1_TYPE union, causing a crash.\n\nExploiting this vulnerability requires an attacker to provide a malformed\nTimeStamp Response to an application that verifies timestamp responses. The\nTimeStamp protocol (RFC 3161) is not widely used and the impact of the\nexploit is just a Denial of Service. For these reasons the issue was\nassessed as Low severity.\n\nThe FIPS modules in 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the TimeStamp Response implementation is outside the OpenSSL FIPS module\nboundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0 and 1.1.1 are vulnerable to this issue.\n\nOpenSSL 1.0.2 is not affected by this issue.
+</code>
+
+- [Kha-Beleh/PoC-CVE-2025-69420](https://github.com/Kha-Beleh/PoC-CVE-2025-69420)
+
+### CVE-2025-69421 (2026-01-27)
+
+<code>Issue summary: Processing a malformed PKCS#12 file can trigger a NULL pointer\ndereference in the PKCS12_item_decrypt_d2i_ex() function.\n\nImpact summary: A NULL pointer dereference can trigger a crash which leads to\nDenial of Service for an application processing PKCS#12 files.\n\nThe PKCS12_item_decrypt_d2i_ex() function does not check whether the oct\nparameter is NULL before dereferencing it. When called from\nPKCS12_unpack_p7encdata() with a malformed PKCS#12 file, this parameter can\nbe NULL, causing a crash. The vulnerability is limited to Denial of Service\nand cannot be escalated to achieve code execution or memory disclosure.\n\nExploiting this issue requires an attacker to provide a malformed PKCS#12 file\nto an application that processes it. For that reason the issue was assessed as\nLow severity according to our Security Policy.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the PKCS#12 implementation is outside the OpenSSL FIPS module boundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0, 1.1.1 and 1.0.2 are vulnerable to this issue.
+</code>
+
+- [Kha-Beleh/PoC-CVE-2025-69421](https://github.com/Kha-Beleh/PoC-CVE-2025-69421)
 
 ### CVE-2025-69428 (2026-04-27)
 
@@ -18438,6 +18495,7 @@
 - [stevehenderson/lab_xz_backdoor](https://github.com/stevehenderson/lab_xz_backdoor)
 - [nnatsopoulos/xz-backdoor-research](https://github.com/nnatsopoulos/xz-backdoor-research)
 - [x-cmd-build/xz](https://github.com/x-cmd-build/xz)
+- [Preacher98/Report-XZ-Utils-CVE-2024-3094](https://github.com/Preacher98/Report-XZ-Utils-CVE-2024-3094)
 
 ### CVE-2024-3105 (2024-06-15)
 
@@ -18609,13 +18667,6 @@
 </code>
 
 - [alperenugurlu/CVE-2024-3596-Detector](https://github.com/alperenugurlu/CVE-2024-3596-Detector)
-
-### CVE-2024-3605 (2024-06-20)
-
-<code>The WP Hotel Booking plugin for WordPress is vulnerable to SQL Injection via the 'room_type' parameter of the /wphb/v1/rooms/search-rooms REST API endpoint in all versions up to, and including, 2.1.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.
-</code>
-
-- [RandomRobbieBF/CVE-2024-3605](https://github.com/RandomRobbieBF/CVE-2024-3605)
 
 ### CVE-2024-3640 (2024-05-16)
 
@@ -29168,6 +29219,7 @@
 - [K5LK/CVE-2023-2640-32629](https://github.com/K5LK/CVE-2023-2640-32629)
 - [z3usx01/CVE-2023-2640-3262-PoC](https://github.com/z3usx01/CVE-2023-2640-3262-PoC)
 - [amar-imamovic/CVE-2023-2640-CVE-2023-32629-Interactive-PoC](https://github.com/amar-imamovic/CVE-2023-2640-CVE-2023-32629-Interactive-PoC)
+- [WhatsWrongAndWhy/CVE-2023-2640-CVE-2023-32629](https://github.com/WhatsWrongAndWhy/CVE-2023-2640-CVE-2023-32629)
 
 ### CVE-2023-2728 (2023-07-03)
 
@@ -31060,7 +31112,6 @@
 
 - [thanhlam-attt/CVE-2023-22527](https://github.com/thanhlam-attt/CVE-2023-22527)
 - [yoryio/CVE-2023-22527](https://github.com/yoryio/CVE-2023-22527)
-- [MaanVader/CVE-2023-22527-POC](https://github.com/MaanVader/CVE-2023-22527-POC)
 - [YongYe-Security/CVE-2023-22527](https://github.com/YongYe-Security/CVE-2023-22527)
 - [Boogipop/CVE-2023-22527-Godzilla-MEMSHELL](https://github.com/Boogipop/CVE-2023-22527-Godzilla-MEMSHELL)
 - [M0untainShley/CVE-2023-22527-MEMSHELL](https://github.com/M0untainShley/CVE-2023-22527-MEMSHELL)
