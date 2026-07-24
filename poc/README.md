@@ -1,6 +1,13 @@
 # PoC in GitHub
 
 ## 2026
+### CVE-2026-0009 (2026-06-01)
+
+<code>In multiple locations, there is a possible tapjacking due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
+</code>
+
+- [cduram/NotCVE-2026-0009](https://github.com/cduram/NotCVE-2026-0009)
+
 ### CVE-2026-0013 (2026-03-02)
 
 <code>In setupLayout of PickActivity.java, there is a possible way to start any activity as a DocumentsUI app due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
@@ -1886,6 +1893,7 @@
 - [0x77FSec/CVE-2026-23744](https://github.com/0x77FSec/CVE-2026-23744)
 - [ozcanpng/CVE-2026-23744](https://github.com/ozcanpng/CVE-2026-23744)
 - [CerberusMrXi/CVE-2026-23744-MCPJam-Exploit](https://github.com/CerberusMrXi/CVE-2026-23744-MCPJam-Exploit)
+- [nullRoot-Red/CVE-2026-23744](https://github.com/nullRoot-Red/CVE-2026-23744)
 
 ### CVE-2026-23760 (2026-01-22)
 
@@ -2637,6 +2645,13 @@
 
 - [0xmrma/CVE-2026-33146](https://github.com/0xmrma/CVE-2026-33146)
 
+### CVE-2026-33150 (2026-03-20)
+
+<code>libfuse is the reference implementation of the Linux FUSE. From version 3.18.0 to before version 3.18.2, a use-after-free vulnerability in the io_uring subsystem of libfuse allows a local attacker to crash FUSE filesystem processes and potentially execute arbitrary code. When io_uring thread creation fails due to resource exhaustion (e.g., cgroup pids.max), fuse_uring_start() frees the ring pool structure but stores the dangling pointer in the session state, leading to a use-after-free when the session shuts down. The trigger is reliable in containerized environments where cgroup pids.max limits naturally constrain thread creation. This issue has been patched in version 3.18.2.
+</code>
+
+- [abhinavagarwal07/abhinavagarwal07.github.io](https://github.com/abhinavagarwal07/abhinavagarwal07.github.io)
+
 ### CVE-2026-33186 (2026-03-20)
 
 <code>gRPC-Go is the Go language implementation of gRPC. Versions prior to 1.79.3 have an authorization bypass resulting from improper input validation of the HTTP/2 `:path` pseudo-header. The gRPC-Go server was too lenient in its routing logic, accepting requests where the `:path` omitted the mandatory leading slash (e.g., `Service/Method` instead of `/Service/Method`). While the server successfully routed these requests to the correct handler, authorization interceptors (including the official `grpc/authz` package) evaluated the raw, non-canonical path string. Consequently, &quot;deny&quot; rules defined using canonical paths (starting with `/`) failed to match the incoming request, allowing it to bypass the policy if a fallback &quot;allow&quot; rule was present. This affects gRPC-Go servers that use path-based authorization interceptors, such as the official RBAC implementation in `google.golang.org/grpc/authz` or custom interceptors relying on `info.FullMethod` or `grpc.Method(ctx)`; AND that have a security policy contains specific &quot;deny&quot; rules for canonical paths but allows other requests by default (a fallback &quot;allow&quot; rule). The vulnerability is exploitable by an attacker who can send raw HTTP/2 frames with malformed `:path` headers directly to the gRPC server. The fix in version 1.79.3 ensures that any request with a `:path` that does not start with a leading slash is immediately rejected with a `codes.Unimplemented` error, preventing it from reaching authorization interceptors or handlers with a non-canonical path string. While upgrading is the most secure and recommended path, users can mitigate the vulnerability using one of the following methods: Use a validating interceptor (recommended mitigation); infrastructure-level normalization; and/or policy hardening.
@@ -3146,7 +3161,11 @@
 
 - [D7EAD/CVE-2026-38763](https://github.com/D7EAD/CVE-2026-38763)
 
-### CVE-2026-38764
+### CVE-2026-38764 (2026-07-23)
+
+<code>An issue in Unistal Systems Pvt. Ltd.Protegent 360 v2.0.0.4 allows a local attacker to escalate privileges via the kernel driver pgsecdl.sys
+</code>
+
 - [D7EAD/CVE-2026-38764](https://github.com/D7EAD/CVE-2026-38764)
 
 ### CVE-2026-38765 (2026-07-22)
@@ -3535,6 +3554,7 @@
 - [oguz-kagan-akar/CVE-2026-41940-analysis](https://github.com/oguz-kagan-akar/CVE-2026-41940-analysis)
 - [soverineg/cve-2026-41940-PoC](https://github.com/soverineg/cve-2026-41940-PoC)
 - [razureink/cve-2026-41940-cpanel_authbypass_reproduction](https://github.com/razureink/cve-2026-41940-cpanel_authbypass_reproduction)
+- [dann3xplo1t/Cpanel](https://github.com/dann3xplo1t/Cpanel)
 
 ### CVE-2026-42048 (2026-05-12)
 
@@ -4065,6 +4085,13 @@
 
 - [HORKimhab/CVE-2026-45091](https://github.com/HORKimhab/CVE-2026-45091)
 
+### CVE-2026-45132 (2026-06-01)
+
+<code>CloudPirates Open Source Helm Charts is a collection of Helm charts. Prior to commit fcf9302, a GitHub Actions workflow (generate-schema.yaml) exposes sensitive credentials (Personal Access Token and SSH signing key) to fork-controlled code due to unsafe checkout and credential handling practices. This issue has been patched via commit fcf9302.
+</code>
+
+- [ghapvharmo/gha-lab-a815a82f03-1](https://github.com/ghapvharmo/gha-lab-a815a82f03-1)
+
 ### CVE-2026-45156 (2026-06-01)
 
 <code>Nextcloud is an open source content collaboration platform. From versions 0.3.0 to before 3.1.0, 5.0.0 to before 5.1.0, and 6.0.0 to before 6.4.0, a missing signature verification in User OIDC allowed a malicious ID4me authority to identify as any user. This issue has been patched in versions 3.1.0, 4.1.0, 5.1.0, 6.4.0 and 8.3.0.
@@ -4077,7 +4104,6 @@
 <code>Exim before 4.99.3, in certain GnuTLS configurations, has a remotely reachable use-after-free in the BDAT body parsing path. It is triggered when a client sends a TLS close_notify mid-body during a CHUNKING transfer, followed by a final cleartext byte on the same TCP connection. This can lead to heap corruption. An unauthenticated network attacker exploiting this vulnerability could execute arbitrary code.
 </code>
 
-- [liamromanis101/Dead.Letter-CVE-2026-45185](https://github.com/liamromanis101/Dead.Letter-CVE-2026-45185)
 - [materaj2/cve-2026-45185-detection-script](https://github.com/materaj2/cve-2026-45185-detection-script)
 - [MJ-bin/POC_CVE-2026-45185](https://github.com/MJ-bin/POC_CVE-2026-45185)
 
@@ -4110,7 +4136,6 @@
 
 - [ry-allan/tanstack-compromise-checker](https://github.com/ry-allan/tanstack-compromise-checker)
 - [Yomisana/are-you-get-tanstack-attack](https://github.com/Yomisana/are-you-get-tanstack-attack)
-- [qi-scape/scan-shai-hulud](https://github.com/qi-scape/scan-shai-hulud)
 - [shayr1/shai-hulud-scan](https://github.com/shayr1/shai-hulud-scan)
 - [Intrudify/mini-shai-hulud-scanner](https://github.com/Intrudify/mini-shai-hulud-scanner)
 - [fabriziosalmi/tanstack-compromise-checker](https://github.com/fabriziosalmi/tanstack-compromise-checker)
@@ -4176,6 +4201,7 @@
 - [ChanderManiPandey2022/YellowKey-BitLocker-Bypass-CVE-2026-45585-Detect-Fix-Automatically-via-Microsoft-Intune](https://github.com/ChanderManiPandey2022/YellowKey-BitLocker-Bypass-CVE-2026-45585-Detect-Fix-Automatically-via-Microsoft-Intune)
 - [Desireeontrial76/yellowkey-bitlocker](https://github.com/Desireeontrial76/yellowkey-bitlocker)
 - [boobalover7/YellowKey-Bitlocker-CVE-2026-45585](https://github.com/boobalover7/YellowKey-Bitlocker-CVE-2026-45585)
+- [yellowkey-exploit/YellowKey-Bitlocker](https://github.com/yellowkey-exploit/YellowKey-Bitlocker)
 
 ### CVE-2026-45659 (2026-05-22)
 
@@ -4533,10 +4559,18 @@
 
 - [az9713/cve-lite-on-pi](https://github.com/az9713/cve-lite-on-pi)
 
-### CVE-2026-47668
+### CVE-2026-47668 (2026-07-23)
+
+<code>DbGate is cross-platform database manager. In versions 7.1.8 and prior, DbGate's JSON script runner (`POST /runners/start`) allows remote code execution via code injection in the `functionName` parameter of JSON script `assign` commands. The `functionName` value is interpolated directly into dynamically generated JavaScript source code via string concatenation. The generated code is then executed in a forked Node.js child process. Version 7.1.9 contains a patch.
+</code>
+
 - [Nxploited/CVE-2026-47668](https://github.com/Nxploited/CVE-2026-47668)
 
-### CVE-2026-47670
+### CVE-2026-47670 (2026-07-23)
+
+<code>DbGate is cross-platform database manager. Versions 7.1.8 and prior are vulnerable to authenticated Remote Code Execution (RCE). Any user with valid DbGate credentials can execute arbitrary OS commands as root by exploiting an unsanitized `functionName` parameter in the `/runners/load-reader` endpoint. The `require = null` mitigation is trivially bypassed via dynamic `import()`. Version 7.1.9 contains a patch.
+</code>
+
 - [error-inside/CVE-2026-47670](https://github.com/error-inside/CVE-2026-47670)
 
 ### CVE-2026-47729 (2026-07-16)
@@ -4555,7 +4589,7 @@
 
 ### CVE-2026-48017 (2026-06-15)
 
-<code>DbGate is cross-platform database manager. In versions 7.1.8 and prior, the POST /runners/load-reader endpoint in DbGate accepts a functionName parameter that is directly interpolated into a JavaScript code template without any sanitization or validation. An authenticated user (with basic access, no special permissions required) can inject arbitrary JavaScript code that executes on the server with full process privileges, bypassing the require=null sandbox restriction. An authenticated user with basic access (no admin role, no run-shell-script permission required) can: execute arbitrary OS commands on the DbGate server with the privileges of the Node.js process, read/write any file accessible to the process, pivot to connected databases by reading connection credentials from DbGate's storage, and compromise the host system - in Docker deployments, this typically means root access within the container.
+<code>DbGate is cross-platform database manager. In versions 7.1.8 and prior, the POST /runners/load-reader endpoint in DbGate accepts a functionName parameter that is directly interpolated into a JavaScript code template without any sanitization or validation. An authenticated user (with basic access, no special permissions required) can inject arbitrary JavaScript code that executes on the server with full process privileges, bypassing the require=null sandbox restriction. An authenticated user with basic access (no admin role, no run-shell-script permission required) can: execute arbitrary OS commands on the DbGate server with the privileges of the Node.js process, read/write any file accessible to the process, pivot to connected databases by reading connection credentials from DbGate's storage, and compromise the host system - in Docker deployments, this typically means root access within the container. Version 7.1.9 contains a patch.
 </code>
 
 - [romain-deperne/CVE-2026-48017](https://github.com/romain-deperne/CVE-2026-48017)
@@ -4639,6 +4673,13 @@
 - [imbas007/CVE-2026-48282](https://github.com/imbas007/CVE-2026-48282)
 - [g0thamRabb1t/CVE-2026-48282-coldfusion-rds-detection](https://github.com/g0thamRabb1t/CVE-2026-48282-coldfusion-rds-detection)
 - [arpit-bansal15/cve-2026-48282-pentest-lab](https://github.com/arpit-bansal15/cve-2026-48282-pentest-lab)
+
+### CVE-2026-48546 (2026-06-11)
+
+<code>KanaDojo before 0.1.18 contains a sandbox escape vulnerability that allows an attacker to execute arbitrary code by exploiting the explicit passing of the global require function into a Node.js vm.runInNewContext() sandbox context in the issue-auto-respond.yml workflow. Attackers can submit a pull request modifying messages.cjs to import arbitrary Node.js modules, bypassing sandbox restrictions and achieving remote code execution with full GitHub Actions runner privileges including access to AUTOMATION_PR_TOKEN.
+</code>
+
+- [ghapvharmo/gha-lab-a5c1876997-1](https://github.com/ghapvharmo/gha-lab-a5c1876997-1)
 
 ### CVE-2026-48558 (2026-06-12)
 
@@ -5559,7 +5600,7 @@
 
 ### CVE-2026-56290 (2026-06-29)
 
-<code>The Joomla extension Page Builder CK is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.
+<code>Joomla Extension - joomlack.fr - Unauthenticated file upload in Page Builder CK extension &lt; 3.6.0 - The Joomla extension Page Builder CK is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.
 </code>
 
 - [sagsooz/PageBuilderCK-CVE-2026-56290-Exploit](https://github.com/sagsooz/PageBuilderCK-CVE-2026-56290-Exploit)
@@ -5569,7 +5610,7 @@
 
 ### CVE-2026-56291 (2026-07-09)
 
-<code>The Joomla extension Balbooa Forms is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.
+<code>Joomla Extension - balbooa.com - Unauthenticated file upload in Balbooa Forms extension &lt; 2.4.1 - The Joomla extension Balbooa Forms is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.
 </code>
 
 - [shinthink/CVE-2026-56291](https://github.com/shinthink/CVE-2026-56291)
@@ -5632,14 +5673,14 @@
 
 ### CVE-2026-57829 (2026-07-13)
 
-<code>The Joomla extension Helix Ultimate is vulnerable to an unauthenticated stored XSS.
+<code>Joomla Extension - joomshaper.com - Unauthenticated stored XSS in Helix Ultimate &lt; 2.2.7 - The Joomla extension Helix Ultimate is vulnerable to an unauthenticated stored XSS.
 </code>
 
 - [Is4yev/CVE-2026-57829](https://github.com/Is4yev/CVE-2026-57829)
 
 ### CVE-2026-57830 (2026-07-13)
 
-<code>The Joomla extension Helix Ultimate is vulnerable to an unauthenticated arbitrary file deletion.
+<code>Joomla Extension - joomshaper.com - Unauthenticated arbitrary file deletion in Helix Ultimate &lt; 2.2.7 - The Joomla extension Helix Ultimate is vulnerable to an unauthenticated arbitrary file deletion.
 </code>
 
 - [Is4yev/CVE-2026-57830](https://github.com/Is4yev/CVE-2026-57830)
@@ -5657,6 +5698,13 @@
 </code>
 
 - [readmsr/MSI_FeatureManager_CVE](https://github.com/readmsr/MSI_FeatureManager_CVE)
+
+### CVE-2026-58057 (2026-06-28)
+
+<code>Flowise before 3.1.3 validates Custom MCP stdio environment variables against a denylist using a case-sensitive comparison, so on Windows, where environment names are case-insensitive, supplying 'node_options' bypasses the NODE_OPTIONS denylist entry. An authenticated user who can configure a Custom MCP node can thereby inject NODE_OPTIONS --require and execute arbitrary code in the Flowise server context.
+</code>
+
+- [CerberusMrXi/Flowise-CVE-2026-58057-exploit](https://github.com/CerberusMrXi/Flowise-CVE-2026-58057-exploit)
 
 ### CVE-2026-58116 (2026-06-30)
 
@@ -5703,6 +5751,13 @@
 
 - [c0gnit00/CVE-2026-59827](https://github.com/c0gnit00/CVE-2026-59827)
 - [pickl31/CVE-2026-59827](https://github.com/pickl31/CVE-2026-59827)
+
+### CVE-2026-59880 (2026-07-08)
+
+<code>Immutable.js provides many Persistent Immutable data structures. Prior to 4.3.9 and 5.1.8, Immutable.Map and Immutable.Set keep keys that share the same 32-bit hash in a HashCollisionNode collision bucket that is scanned linearly, allowing an attacker who controls keys inserted into a Map, such as through Immutable.Map(obj), Immutable.fromJS(obj), state.merge(userObject), or mergeDeep, to craft many colliding keys and degrade insertion and lookup to consume disproportionate CPU. This issue is fixed in versions 4.3.9 and 5.1.8.
+</code>
+
+- [nvth/cve-2026-59880](https://github.com/nvth/cve-2026-59880)
 
 ### CVE-2026-60121 (2026-07-13)
 
@@ -5818,6 +5873,9 @@
 
 - [0xBlackash/CVE-2026-64600](https://github.com/0xBlackash/CVE-2026-64600)
 - [HORKimhab/CVE-2026-64600](https://github.com/HORKimhab/CVE-2026-64600)
+
+### CVE-2026-65971
+- [BiiTts/POC-CVE-2026-65971](https://github.com/BiiTts/POC-CVE-2026-65971)
 
 ### CVE-2026-69212
 - [c0gnit00/CVE-2026-69212](https://github.com/c0gnit00/CVE-2026-69212)
@@ -7919,6 +7977,7 @@
 
 - [watchtowrlabs/watchTowr-vs-WatchGuard-CVE-2025-9242](https://github.com/watchtowrlabs/watchTowr-vs-WatchGuard-CVE-2025-9242)
 - [UnusualGiraffe/PoC-Unauthenticated-RCE-in-WatchGuard-Fireware-12.7-Build-640389-CVE-2025-9242](https://github.com/UnusualGiraffe/PoC-Unauthenticated-RCE-in-WatchGuard-Fireware-12.7-Build-640389-CVE-2025-9242)
+- [UnusualGiraffe/Mass-Scanner-CVE-2025-9242](https://github.com/UnusualGiraffe/Mass-Scanner-CVE-2025-9242)
 
 ### CVE-2025-9267 (2025-09-26)
 
@@ -9104,6 +9163,13 @@
 </code>
 
 - [SpiritualMachines/buds-audit](https://github.com/SpiritualMachines/buds-audit)
+
+### CVE-2025-20701 (2025-08-04)
+
+<code>In the Airoha Bluetooth audio SDK, there is a possible way to pair Bluetooth audio device without user consent. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
+</code>
+
+- [x0jac0b0x/skullcandy-dime3-cve-2025-20701](https://github.com/x0jac0b0x/skullcandy-dime3-cve-2025-20701)
 
 ### CVE-2025-21042 (2025-09-12)
 
@@ -19576,6 +19642,7 @@
 - [oseasfr/Scanner_CVE_OpenSSH](https://github.com/oseasfr/Scanner_CVE_OpenSSH)
 - [vuducmanhno100-cloud/CVE-2024-6387](https://github.com/vuducmanhno100-cloud/CVE-2024-6387)
 - [m0n3ef/regreSSHion-Checker](https://github.com/m0n3ef/regreSSHion-Checker)
+- [al7araziruby-jpg/CVE-2024-6387-OpenSSH-Analysis](https://github.com/al7araziruby-jpg/CVE-2024-6387-OpenSSH-Analysis)
 
 ### CVE-2024-6460 (2024-08-16)
 
@@ -28348,13 +28415,6 @@
 
 - [Wi1DN00B/CVE-2024-55968](https://github.com/Wi1DN00B/CVE-2024-55968)
 - [null-event/CVE-2024-55968](https://github.com/null-event/CVE-2024-55968)
-
-### CVE-2024-56058 (2024-12-18)
-
-<code>Deserialization of Untrusted Data vulnerability in denniskravetstns VRPConnector vrpconnector allows Object Injection.This issue affects VRPConnector: from n/a through &lt;= 2.0.1.
-</code>
-
-- [RandomRobbieBF/CVE-2024-56058](https://github.com/RandomRobbieBF/CVE-2024-56058)
 
 ### CVE-2024-56059 (2024-12-18)
 
@@ -52819,6 +52879,7 @@
 - [nyambiblaise/Domain-Controller-DC-Exploitation-with-Metasploit-Impacket](https://github.com/nyambiblaise/Domain-Controller-DC-Exploitation-with-Metasploit-Impacket)
 - [mods20hh/ZeroLogon-PoC-DC-Pwn](https://github.com/mods20hh/ZeroLogon-PoC-DC-Pwn)
 - [commit2main/zerologon-lab](https://github.com/commit2main/zerologon-lab)
+- [abdullah50i/internal-penetration-testing-project-using-Metasploit](https://github.com/abdullah50i/internal-penetration-testing-project-using-Metasploit)
 
 ### CVE-2020-1493 (2020-08-17)
 
@@ -58564,6 +58625,13 @@
 
 - [ianxtianxt/CVE-2019-5096-GoAhead-Web-Server-Dos-Exploit](https://github.com/ianxtianxt/CVE-2019-5096-GoAhead-Web-Server-Dos-Exploit)
 
+### CVE-2019-5392 (2019-06-05)
+
+<code>A disclosure of information vulnerability was identified in HPE Intelligent Management Center (IMC) PLAT earlier than version 7.3 E0506P09.
+</code>
+
+- [jozliner/CVE-2019-5392-for-Python3](https://github.com/jozliner/CVE-2019-5392-for-Python3)
+
 ### CVE-2019-5413 (2019-03-17)
 
 <code>An attacker can use the format parameter to inject arbitrary commands in the npm package morgan &lt; 1.9.1.
@@ -63247,6 +63315,7 @@
 - [Rezy-Dev/CVE-2018-6574](https://github.com/Rezy-Dev/CVE-2018-6574)
 - [hbxxv/CVE-2018-6574](https://github.com/hbxxv/CVE-2018-6574)
 - [r00tpgp/CVE-2018-6574](https://github.com/r00tpgp/CVE-2018-6574)
+- [s-p4rk/CVE-2018-6574](https://github.com/s-p4rk/CVE-2018-6574)
 
 ### CVE-2018-6606 (2018-02-04)
 
@@ -70166,6 +70235,7 @@
 - [0xf1d0/CVE-2015-1328](https://github.com/0xf1d0/CVE-2015-1328)
 - [saqib-butt2/blackbox-pentesting-infsecos](https://github.com/saqib-butt2/blackbox-pentesting-infsecos)
 - [WhatsWrongAndWhy/CVE-2015-1328](https://github.com/WhatsWrongAndWhy/CVE-2015-1328)
+- [FernandoCassioDev/CVE-2015-1328](https://github.com/FernandoCassioDev/CVE-2015-1328)
 
 ### CVE-2015-1397 (2015-04-29)
 
@@ -73098,6 +73168,7 @@
 - [Orevic21/wazuh-home-soc](https://github.com/Orevic21/wazuh-home-soc)
 - [solomonhenry-afk/vsftpd-cve-2011-2523-detection-signature](https://github.com/solomonhenry-afk/vsftpd-cve-2011-2523-detection-signature)
 - [IndiQuarks/vsftpd-cve-2011-2523-lab](https://github.com/IndiQuarks/vsftpd-cve-2011-2523-lab)
+- [VictorGlass/DockerLabs-Tproot](https://github.com/VictorGlass/DockerLabs-Tproot)
 
 ### CVE-2011-2553
 - [carlosrpastrana/cve-2011-2553](https://github.com/carlosrpastrana/cve-2011-2553)
