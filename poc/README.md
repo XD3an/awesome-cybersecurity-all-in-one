@@ -406,6 +406,13 @@
 
 - [renzi25031469/CVE-2026-4253-Scanner](https://github.com/renzi25031469/CVE-2026-4253-Scanner)
 
+### CVE-2026-4255 (2026-03-16)
+
+<code>A DLL search order hijacking vulnerability in Thermalright TR-VISION HOME on Windows (64-bit) allows a local attacker to escalate privileges via DLL side-loading. The application loads certain dynamic-link library (DLL) dependencies using the default Windows search order, which includes directories that may be writable by non-privileged users.\n\n\n\nBecause these directories can be modified by unprivileged users, an attacker can place a malicious DLL with the same name as a legitimate dependency in a directory that is searched before trusted system locations. When the application is executed, which is always with administrative privileges, the malicious DLL is loaded instead of the legitimate library.\n\n\n\nThe application does not enforce restrictions on DLL loading locations and does not verify the integrity or digital signature of loaded libraries. As a result, attacker-controlled code may be executed within the security context of the application, allowing arbitrary code execution with elevated privileges.\n\n\n\nSuccessful exploitation requires that an attacker place a crafted malicious DLL in a user-writable directory that is included in the application's DLL search path and then cause the affected application to be executed. Once loaded, the malicious DLL runs with the same privileges as the application.\n\n\n\nThis issue affects \nTR-VISION HOME  versions up to and including 2.0.5.
+</code>
+
+- [Ard33/CVE-2026-4255](https://github.com/Ard33/CVE-2026-4255)
+
 ### CVE-2026-4257 (2026-03-30)
 
 <code>The Contact Form by Supsystic plugin for WordPress is vulnerable to Server-Side Template Injection (SSTI) leading to Remote Code Execution (RCE) in all versions up to, and including, 1.7.36. This is due to the plugin using the Twig `Twig_Loader_String` template engine without sandboxing, combined with the `cfsPreFill` prefill functionality that allows unauthenticated users to inject arbitrary Twig expressions into form field values via GET parameters. This makes it possible for unauthenticated attackers to execute arbitrary PHP functions and OS commands on the server by leveraging Twig's `registerUndefinedFilterCallback()` method to register arbitrary PHP callbacks.
@@ -1040,6 +1047,7 @@
 
 - [0xdak/CVE-2026-9198_exploit](https://github.com/0xdak/CVE-2026-9198_exploit)
 - [ywh-jfellus/CVE-2026-9198](https://github.com/ywh-jfellus/CVE-2026-9198)
+- [0xgh057r3c0n/CVE-2026-9198](https://github.com/0xgh057r3c0n/CVE-2026-9198)
 
 ### CVE-2026-9256 (2026-05-22)
 
@@ -1672,6 +1680,7 @@
 - [rz1027/CVE-2026-20896](https://github.com/rz1027/CVE-2026-20896)
 - [szybnev/cve-2026-20896-gitea-poc](https://github.com/szybnev/cve-2026-20896-gitea-poc)
 - [XaocZenon/CVE-2026-20896](https://github.com/XaocZenon/CVE-2026-20896)
+- [Lite-os15/Lab-001-Gitea-CVE-2026-20896-](https://github.com/Lite-os15/Lab-001-Gitea-CVE-2026-20896-)
 
 ### CVE-2026-20980 (2026-02-04)
 
@@ -2528,7 +2537,6 @@
 - [gbonacini/CVE-2026-31431](https://github.com/gbonacini/CVE-2026-31431)
 - [sh4den/CVE-2026-31431-copyfail-aarch64](https://github.com/sh4den/CVE-2026-31431-copyfail-aarch64)
 - [DroPZsec/SplicePrivillegeEscalationFIX](https://github.com/DroPZsec/SplicePrivillegeEscalationFIX)
-- [Koshmare-Blossom/Copyfail-sh](https://github.com/Koshmare-Blossom/Copyfail-sh)
 - [kuniyal08/Copy-Fail-CVE-2026-31431-Lab](https://github.com/kuniyal08/Copy-Fail-CVE-2026-31431-Lab)
 - [SilverRuler/copy-fail-CVE-2026-31431](https://github.com/SilverRuler/copy-fail-CVE-2026-31431)
 - [Sebastian294/cve-2026-31431](https://github.com/Sebastian294/cve-2026-31431)
@@ -2553,6 +2561,7 @@
 - [Iamliuxiaozhen/copy_fail](https://github.com/Iamliuxiaozhen/copy_fail)
 - [songzzzz/CVE-2026-31431](https://github.com/songzzzz/CVE-2026-31431)
 - [vishvacyber/Detection-Tool-Kit-for-CVE-2026-31431](https://github.com/vishvacyber/Detection-Tool-Kit-for-CVE-2026-31431)
+- [nonameuserosint-hue/Copyfail-sh](https://github.com/nonameuserosint-hue/Copyfail-sh)
 - [tematemaru/CVE-2026-31431-simple-test](https://github.com/tematemaru/CVE-2026-31431-simple-test)
 - [1neptune/CopyFail](https://github.com/1neptune/CopyFail)
 - [zs1n/copy-fail-CVE-2026-31431](https://github.com/zs1n/copy-fail-CVE-2026-31431)
@@ -2576,7 +2585,6 @@
 - [0xBlackash/CVE-2026-31635](https://github.com/0xBlackash/CVE-2026-31635)
 - [Lutfifakee-Project/CVE-2026-31635](https://github.com/Lutfifakee-Project/CVE-2026-31635)
 - [0xFuffM3/CVE-2026-31635-DirtyDecrypt](https://github.com/0xFuffM3/CVE-2026-31635-DirtyDecrypt)
-- [Koshmare-Blossom/DirtyDecrypt-go](https://github.com/Koshmare-Blossom/DirtyDecrypt-go)
 
 ### CVE-2026-31694 (2026-05-01)
 
@@ -3573,6 +3581,7 @@
 - [oguz-kagan-akar/CVE-2026-41940-analysis](https://github.com/oguz-kagan-akar/CVE-2026-41940-analysis)
 - [soverineg/cve-2026-41940-PoC](https://github.com/soverineg/cve-2026-41940-PoC)
 - [razureink/cve-2026-41940-cpanel_authbypass_reproduction](https://github.com/razureink/cve-2026-41940-cpanel_authbypass_reproduction)
+- [AnotherSec/CVE-2026-41940](https://github.com/AnotherSec/CVE-2026-41940)
 
 ### CVE-2026-42048 (2026-05-12)
 
@@ -3808,10 +3817,10 @@
 - [grabesec/XCP_ng_CVE-2026-43284_tester](https://github.com/grabesec/XCP_ng_CVE-2026-43284_tester)
 - [LucasPDiniz/CVE-2026-43284](https://github.com/LucasPDiniz/CVE-2026-43284)
 - [kuniyal08/Dirty-Frag-CVE-2026-43284](https://github.com/kuniyal08/Dirty-Frag-CVE-2026-43284)
-- [Koshmare-Blossom/DirtyFrag-go](https://github.com/Koshmare-Blossom/DirtyFrag-go)
 - [DylanClaudio/Reporte-de-Escalada-de-Privilegios-Local-Dirty-Frag](https://github.com/DylanClaudio/Reporte-de-Escalada-de-Privilegios-Local-Dirty-Frag)
 - [AtlasVector/Dirty-Frag-CVE-2026-43284](https://github.com/AtlasVector/Dirty-Frag-CVE-2026-43284)
 - [jayhutajulu1/CVE-2026-43284-DirtyFrag-PoC](https://github.com/jayhutajulu1/CVE-2026-43284-DirtyFrag-PoC)
+- [nonameuserosint-hue/DirtyFrag-go](https://github.com/nonameuserosint-hue/DirtyFrag-go)
 - [1neptune/DirtyFrag](https://github.com/1neptune/DirtyFrag)
 - [t1ckprivate/CVE-2026-43284-Dirty-Frag](https://github.com/t1ckprivate/CVE-2026-43284-Dirty-Frag)
 - [g0thamRabb1t/CVE-2026-43284-dirtyfrag-detection](https://github.com/g0thamRabb1t/CVE-2026-43284-dirtyfrag-detection)
@@ -3823,8 +3832,8 @@
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nnet/rds: reset op_nents when zerocopy page pin fails\n\nWhen iov_iter_get_pages2() fails in rds_message_zcopy_from_user(),\nthe pinned pages are released with put_page(), and\nrm-&gt;data.op_mmp_znotifier is cleared.  But we fail to properly\nclear rm-&gt;data.op_nents.\n\nLater when rds_message_purge() is called from rds_sendmsg() the\ncleanup loop iterates over the incorrectly non zero number of\nop_nents and frees them again.\n\nFix this by properly resetting op_nents when it should be in\nrds_message_zcopy_from_user().
 </code>
 
-- [Koshmare-Blossom/PinTheft-go](https://github.com/Koshmare-Blossom/PinTheft-go)
 - [0xBlackash/CVE-2026-43494](https://github.com/0xBlackash/CVE-2026-43494)
+- [Kagantua/PinTheft-go](https://github.com/Kagantua/PinTheft-go)
 - [jayhutajulu1/CVE-2026-43494-PinTheft-PoC](https://github.com/jayhutajulu1/CVE-2026-43494-PinTheft-PoC)
 - [tanzz1337/CVE-2026-43494-PinTheft-PoC](https://github.com/tanzz1337/CVE-2026-43494-PinTheft-PoC)
 - [Koshmare-Blossom/PinTheft-asm](https://github.com/Koshmare-Blossom/PinTheft-asm)
@@ -3850,8 +3859,8 @@
 - [Thiasap/oppo-pgem10-ghostlock](https://github.com/Thiasap/oppo-pgem10-ghostlock)
 - [CakesTwix/Android-CVE-2026-43499](https://github.com/CakesTwix/Android-CVE-2026-43499)
 - [Bartixxx32/CVE-2026-43499-OnePlus15](https://github.com/Bartixxx32/CVE-2026-43499-OnePlus15)
-- [Linuxoid-cn/CVE-2026-43499-Poc-Analysis](https://github.com/Linuxoid-cn/CVE-2026-43499-Poc-Analysis)
 - [qsvggff-spec/oppo-A5-PRO-5G-CVE-2026-43499](https://github.com/qsvggff-spec/oppo-A5-PRO-5G-CVE-2026-43499)
+- [xianwan1314/CVE-2026-43499-Poc-Analysis](https://github.com/xianwan1314/CVE-2026-43499-Poc-Analysis)
 - [HYCQAQ/Logitech-G-Cloud-GhostLock-CVE-2026-43499](https://github.com/HYCQAQ/Logitech-G-Cloud-GhostLock-CVE-2026-43499)
 - [Colorful-glassblock/duchamp-root](https://github.com/Colorful-glassblock/duchamp-root)
 - [Cxyofficial/x200-cve-2026-43499](https://github.com/Cxyofficial/x200-cve-2026-43499)
@@ -3876,6 +3885,7 @@
 - [soralis0912/CVE-2026-43499-aristotle](https://github.com/soralis0912/CVE-2026-43499-aristotle)
 - [soralis0912/CVE-2026-43499-aristotle-apk](https://github.com/soralis0912/CVE-2026-43499-aristotle-apk)
 - [Bailan766/rmx3888-cve-2026-43499-config](https://github.com/Bailan766/rmx3888-cve-2026-43499-config)
+- [mumaosong/cve-2026-43499-CyberMeowfia](https://github.com/mumaosong/cve-2026-43499-CyberMeowfia)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -4154,6 +4164,7 @@
 
 - [ry-allan/tanstack-compromise-checker](https://github.com/ry-allan/tanstack-compromise-checker)
 - [Yomisana/are-you-get-tanstack-attack](https://github.com/Yomisana/are-you-get-tanstack-attack)
+- [Caixa-git/tanstack-shield](https://github.com/Caixa-git/tanstack-shield)
 - [qi-scape/scan-shai-hulud](https://github.com/qi-scape/scan-shai-hulud)
 - [shayr1/shai-hulud-scan](https://github.com/shayr1/shai-hulud-scan)
 - [Intrudify/mini-shai-hulud-scanner](https://github.com/Intrudify/mini-shai-hulud-scanner)
@@ -4274,7 +4285,6 @@
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: reject userspace cifs.spnego descriptions\n\ncifs.spnego key descriptions contain authority-bearing fields such as\npid, uid, creduid, and upcall_target that cifs.upcall treats as\nkernel-originating inputs. However, userspace can also create keys of\nthis type through request_key(2) or add_key(2), allowing those fields to\nbe supplied without CIFS origin.\n\nOnly accept cifs.spnego descriptions while CIFS is using its private\nspnego_cred to request the key.
 </code>
 
-- [Koshmare-Blossom/CIFSwitch-go](https://github.com/Koshmare-Blossom/CIFSwitch-go)
 - [MrForkBomb/CIFSwitch-Checker-CVE-2026-46243](https://github.com/MrForkBomb/CIFSwitch-Checker-CVE-2026-46243)
 - [liamromanis101/cifswitch-check](https://github.com/liamromanis101/cifswitch-check)
 
@@ -4295,8 +4305,8 @@
 - [0xBlackash/CVE-2026-46300](https://github.com/0xBlackash/CVE-2026-46300)
 - [ExploitEoom/CVE-2026-46300](https://github.com/ExploitEoom/CVE-2026-46300)
 - [First-John/cve_2026_frag_family_fix](https://github.com/First-John/cve_2026_frag_family_fix)
-- [Koshmare-Blossom/Fragnesia-go](https://github.com/Koshmare-Blossom/Fragnesia-go)
 - [Maxime288/Fragnesia-CVE-2026-46300](https://github.com/Maxime288/Fragnesia-CVE-2026-46300)
+- [nonameuserosint-hue/Fragnesia-go](https://github.com/nonameuserosint-hue/Fragnesia-go)
 - [AzDevops143/FRAGNESIA-Charan-cve-2026-46300](https://github.com/AzDevops143/FRAGNESIA-Charan-cve-2026-46300)
 - [1neptune/Fragnesia](https://github.com/1neptune/Fragnesia)
 - [BenedictEjepu/CVE-2026-46300-Fragnesia---TryHackMe-Lab-Walkthrough](https://github.com/BenedictEjepu/CVE-2026-46300-Fragnesia---TryHackMe-Lab-Walkthrough)
@@ -4320,6 +4330,7 @@
 - [yanxinwu946/CVE-2026-46331](https://github.com/yanxinwu946/CVE-2026-46331)
 - [MarwahHadi/CVE-2026-46331-pedit-cow](https://github.com/MarwahHadi/CVE-2026-46331-pedit-cow)
 - [rjt-gupta/page-cache-corruption-lpes](https://github.com/rjt-gupta/page-cache-corruption-lpes)
+- [cherrycherrymay/PoC-CVE-2026-46331](https://github.com/cherrycherrymay/PoC-CVE-2026-46331)
 
 ### CVE-2026-46333 (2026-05-15)
 
@@ -5070,6 +5081,7 @@
 </code>
 
 - [passwa11/CVE-2026-49952](https://github.com/passwa11/CVE-2026-49952)
+- [CerberusMrXi/Discuz-X5.0-Authentication-Bypass-Exploit-Framework](https://github.com/CerberusMrXi/Discuz-X5.0-Authentication-Bypass-Exploit-Framework)
 
 ### CVE-2026-49975 (2026-06-08)
 
@@ -5228,6 +5240,9 @@
 
 - [Arturo0x90/CVE-2026-51385](https://github.com/Arturo0x90/CVE-2026-51385)
 
+### CVE-2026-51592
+- [ardakrg/CVE-2026-51592](https://github.com/ardakrg/CVE-2026-51592)
+
 ### CVE-2026-51788
 - [aykhan32/CVE-2026-51788](https://github.com/aykhan32/CVE-2026-51788)
 
@@ -5301,7 +5316,6 @@
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nbpf: Free reuseport cBPF prog after RCU grace period.\n\nEulgyu Kim reported the splat below with a repro. [0]\n\nThe repro sets up a UDP reuseport group with a cBPF prog and\nreplaces it with a new one while another thread is sending\na UDP packet to the group.\n\nThe reuseport prog is freed by sk_reuseport_prog_free().\nbpf_prog_put() is called for &quot;e&quot;BPF prog to destruct through\nmultiple stages while cBPF prog is freed immediately by\nbpf_release_orig_filter() and bpf_prog_free().\n\nIf a reuseport prog is detached from the setsockopt() path\n(reuseport_attach_prog() or reuseport_detach_prog()),\nsk_reuseport_prog_free() is called without waiting for RCU\nreaders to complete, resulting in various bugs.\n\nLet's defer freeing the reuseport cBPF prog after one RCU\ngrace period.\n\nNote &quot;e&quot;BPF prog is safe as is unless the fast path starts\nto touch fields destroyed in bpf_prog_put_deferred() and\n__bpf_prog_put_noref().\n\n[0]:\nBUG: KASAN: vmalloc-out-of-bounds in reuseport_select_sock+0xedc/0x1220 net/core/sock_reuseport.c:596\nRead of size 4 at addr ffffc9000051e004 by task slowme/10208\nCPU: 6 UID: 1000 PID: 10208 Comm: slowme Not tainted 7.0.0-geb7ac95ff75e #32 PREEMPT(full)\nHardware name: QEMU Ubuntu 24.04 PC v2 (i440FX + PIIX, arch_caps fix, 1996), BIOS 1.16.3-debian-1.16.3-2 04/01/2014\nCall Trace:\n &lt;IRQ&gt;\n dump_stack_lvl+0xe8/0x150 lib/dump_stack.c:120\n print_address_description mm/kasan/report.c:378 [inline]\n print_report+0xca/0x240 mm/kasan/report.c:482\n kasan_report+0x118/0x150 mm/kasan/report.c:595\n reuseport_select_sock+0xedc/0x1220 net/core/sock_reuseport.c:596\n udp4_lib_lookup2+0x3bc/0x950 net/ipv4/udp.c:495\n __udp4_lib_lookup+0x768/0xe20 net/ipv4/udp.c:723\n __udp4_lib_lookup_skb+0x297/0x390 net/ipv4/udp.c:752\n __udp4_lib_rcv+0x1312/0x2620 net/ipv4/udp.c:2752\n ip_protocol_deliver_rcu+0x282/0x440 net/ipv4/ip_input.c:207\n ip_local_deliver_finish+0x3bb/0x6f0 net/ipv4/ip_input.c:241\n NF_HOOK+0x30c/0x3a0 include/linux/netfilter.h:318\n NF_HOOK+0x30c/0x3a0 include/linux/netfilter.h:318\n __netif_receive_skb_one_core net/core/dev.c:6181 [inline]\n __netif_receive_skb net/core/dev.c:6294 [inline]\n process_backlog+0xaa4/0x1960 net/core/dev.c:6645\n __napi_poll+0xae/0x340 net/core/dev.c:7709\n napi_poll net/core/dev.c:7772 [inline]\n net_rx_action+0x5d7/0xf50 net/core/dev.c:7929\n handle_softirqs+0x22b/0x870 kernel/softirq.c:622\n do_softirq+0x76/0xd0 kernel/softirq.c:523\n &lt;/IRQ&gt;\n &lt;TASK&gt;\n __local_bh_enable_ip+0xf8/0x130 kernel/softirq.c:450\n local_bh_enable include/linux/bottom_half.h:33 [inline]\n rcu_read_unlock_bh include/linux/rcupdate.h:924 [inline]\n __dev_queue_xmit+0x1dd7/0x3710 net/core/dev.c:4890\n neigh_output include/net/neighbour.h:556 [inline]\n ip_finish_output2+0xca9/0x1070 net/ipv4/ip_output.c:237\n NF_HOOK_COND include/linux/netfilter.h:307 [inline]\n ip_output+0x29f/0x450 net/ipv4/ip_output.c:438\n ip_send_skb+0x45/0xc0 net/ipv4/ip_output.c:1508\n udp_send_skb+0xb04/0x1510 net/ipv4/udp.c:1195\n udp_sendmsg+0x1a71/0x2350 net/ipv4/udp.c:1485\n sock_sendmsg_nosec net/socket.c:727 [inline]\n __sock_sendmsg net/socket.c:742 [inline]\n __sys_sendto+0x554/0x680 net/socket.c:2206\n __do_sys_sendto net/socket.c:2213 [inline]\n __se_sys_sendto net/socket.c:2209 [inline]\n __x64_sys_sendto+0xde/0x100 net/socket.c:2209\n do_syscall_x64 arch/x86/entry/syscall_64.c:63 [inline]\n do_syscall_64+0x160/0xf80 arch/x86/entry/syscall_64.c:94\n entry_SYSCALL_64_after_hwframe+0x77/0x7f\nRIP: 0033:0x415a2d\nCode: b3 66 2e 0f 1f 84 00 00 00 00 00 66 90 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 &lt;48&gt; 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b8 ff ff ff f7 d8 64 89 01 48\nRSP: 002b:00007f6bc31e41e8 EFLAGS: 00000212 ORIG_RAX: 000000000000002c\nRAX: ffffffffffffffda RBX: 00007f6bc31e4cdc RCX: 0000000000415a2d\nRDX: 0000000000000001 RSI: 00007f6bc31e421f RDI: 0000000000000003\nRBP: 00007f6bc31e4240 R08: 00007f6bc31e4220 R09: 0000000000000010\nR10: 0000000000000000 R11: \n---truncated---
 </code>
 
-- [Dere3046/ElevateMe_noLKM](https://github.com/Dere3046/ElevateMe_noLKM)
 - [Dere3046/ScreenOff](https://github.com/Dere3046/ScreenOff)
 
 ### CVE-2026-52943 (2026-06-24)
@@ -5811,6 +5825,7 @@
 
 - [0xBlackash/CVE-2026-60206](https://github.com/0xBlackash/CVE-2026-60206)
 - [imbas007/POC-CVE-2026-60206](https://github.com/imbas007/POC-CVE-2026-60206)
+- [tc4dy/CVE-2026-60206-PoC-Exploit](https://github.com/tc4dy/CVE-2026-60206-PoC-Exploit)
 
 ### CVE-2026-61343 (2026-07-09)
 
@@ -5880,7 +5895,7 @@
 - [administrator-01001/CVE-2026-63030](https://github.com/administrator-01001/CVE-2026-63030)
 - [joaovicdev/EXPLOIT-CVE-2026-63030](https://github.com/joaovicdev/EXPLOIT-CVE-2026-63030)
 - [0xjessie21/wp2shell-checker](https://github.com/0xjessie21/wp2shell-checker)
-- [wn-iqbal/wp2shell](https://github.com/wn-iqbal/wp2shell)
+- [Iqbalx7/wp2shell](https://github.com/Iqbalx7/wp2shell)
 - [SentinelXofficial/sxwp2shell](https://github.com/SentinelXofficial/sxwp2shell)
 - [GhostInExile/CVE-2026-63030-Wp2Shell](https://github.com/GhostInExile/CVE-2026-63030-Wp2Shell)
 - [lucifer0xf/wp2shell-Wordpress-TOWN](https://github.com/lucifer0xf/wp2shell-Wordpress-TOWN)
@@ -5908,6 +5923,7 @@
 
 - [0xBlackash/CVE-2026-64600](https://github.com/0xBlackash/CVE-2026-64600)
 - [HORKimhab/CVE-2026-64600](https://github.com/HORKimhab/CVE-2026-64600)
+- [vulnquest58/VQ-RefluxCore](https://github.com/vulnquest58/VQ-RefluxCore)
 
 ### CVE-2026-65650 (2026-07-22)
 
@@ -10531,6 +10547,7 @@
 
 - [amalpvatayam67/day09-bentoml-deser-lab](https://github.com/amalpvatayam67/day09-bentoml-deser-lab)
 - [Evillm/CVE-2025-27520-PoC](https://github.com/Evillm/CVE-2025-27520-PoC)
+- [electricsheep08/CVE-2025-27520](https://github.com/electricsheep08/CVE-2025-27520)
 
 ### CVE-2025-27533 (2025-05-07)
 
@@ -13826,10 +13843,8 @@
 - [Udyz/CVE-2025-52691](https://github.com/Udyz/CVE-2025-52691)
 - [you-ssef9/CVE-2025-52691](https://github.com/you-ssef9/CVE-2025-52691)
 - [DeathShotXD/CVE-2025-52691-APT-PoC](https://github.com/DeathShotXD/CVE-2025-52691-APT-PoC)
-- [mohammadzarnian1357/Ashwesker-CVE-2025-52691](https://github.com/mohammadzarnian1357/Ashwesker-CVE-2025-52691)
 - [nxgn-kd01/smartermail-cve-scanner](https://github.com/nxgn-kd01/smartermail-cve-scanner)
 - [watchtowrlabs/watchTowr-vs-SmarterMail-CVE-2025-52691](https://github.com/watchtowrlabs/watchTowr-vs-SmarterMail-CVE-2025-52691)
-- [rimbadirgantara/CVE-2025-52691-poc](https://github.com/rimbadirgantara/CVE-2025-52691-poc)
 - [ninjazan420/CVE-2025-52691-PoC-SmarterMail-authentication-bypass-exploit-WT-2026-0001](https://github.com/ninjazan420/CVE-2025-52691-PoC-SmarterMail-authentication-bypass-exploit-WT-2026-0001)
 
 ### CVE-2025-52694 (2026-01-12)
@@ -14843,6 +14858,7 @@
 - [se1zer/Nextjs_Exploit_Tool](https://github.com/se1zer/Nextjs_Exploit_Tool)
 - [6t2kydmp8k-jpg/CVE-2025-55182-Vulnerability-Proof-of-Concept-Group-Project-](https://github.com/6t2kydmp8k-jpg/CVE-2025-55182-Vulnerability-Proof-of-Concept-Group-Project-)
 - [razureink/cve-2025-55182-react2shell_reproduction](https://github.com/razureink/cve-2025-55182-react2shell_reproduction)
+- [indra-031/React2Shell-Exploit-CVE-2025-55182](https://github.com/indra-031/React2Shell-Exploit-CVE-2025-55182)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -16096,6 +16112,13 @@
 - [Nxvh1337/CVE-2025-63406-PoC](https://github.com/Nxvh1337/CVE-2025-63406-PoC)
 - [richard-natan/PoC-CVE-2025-63406](https://github.com/richard-natan/PoC-CVE-2025-63406)
 
+### CVE-2025-63408 (2025-11-18)
+
+<code>Local Agent DVR versions thru 6.6.1.0 are vulnerable to directory traversal that allows an unauthenticated local attacker to gain access to sensitive information, cause a server-side forgery request (SSRF), or execute OS commands.
+</code>
+
+- [s-vx/CVE-2025-63408](https://github.com/s-vx/CVE-2025-63408)
+
 ### CVE-2025-63419 (2025-11-12)
 
 <code>Cross Site Scripting (XSS) vulnerability in CrushFTP 11.3.6_48. The Web-Based Server has a feature where users can share files, the feature reflects the filename to an emailbody field with no sanitations leading to HTML Injection.
@@ -17119,13 +17142,6 @@
 </code>
 
 - [mbanyamer/CVE-2025-67644-LangGraph-3.0.1-SQLite-Checkpoint-SQL-Injection](https://github.com/mbanyamer/CVE-2025-67644-LangGraph-3.0.1-SQLite-Checkpoint-SQL-Injection)
-
-### CVE-2025-67730 (2025-12-12)
-
-<code>Frappe Learning Management System (LMS) is a learning system that helps users structure their content. Versions prior to 2.42.0 allow authenticated users to add malicious HTML and JavaScript through description fields in the Job, Course and Batch forms. This issue is fixed in version 2.42.0.
-</code>
-
-- [Dharan10/CVE-2025-67730](https://github.com/Dharan10/CVE-2025-67730)
 
 ### CVE-2025-67733 (2026-02-23)
 
@@ -18573,7 +18589,7 @@
 - [c0d3zilla/CVE-2024-2876](https://github.com/c0d3zilla/CVE-2024-2876)
 - [chsxthwik/CVE-2024-2876](https://github.com/chsxthwik/CVE-2024-2876)
 - [0xAgun/CVE-2024-2876](https://github.com/0xAgun/CVE-2024-2876)
-- [solo364/CVE-2024-2876](https://github.com/solo364/CVE-2024-2876)
+- [kernel364/CVE-2024-2876](https://github.com/kernel364/CVE-2024-2876)
 
 ### CVE-2024-2879 (2024-04-03)
 
@@ -19932,7 +19948,7 @@
 
 - [rxerium/CVE-2024-7593](https://github.com/rxerium/CVE-2024-7593)
 - [D3N14LD15K/CVE-2024-7593_PoC_Exploit](https://github.com/D3N14LD15K/CVE-2024-7593_PoC_Exploit)
-- [solo364/CVE-2024-7593](https://github.com/solo364/CVE-2024-7593)
+- [kernel364/CVE-2024-7593](https://github.com/kernel364/CVE-2024-7593)
 
 ### CVE-2024-7595 (2025-02-05)
 
@@ -21730,6 +21746,13 @@
 
 - [0xkickit/iCUE_DllHijack_LPE-CVE-2024-22002](https://github.com/0xkickit/iCUE_DllHijack_LPE-CVE-2024-22002)
 
+### CVE-2024-22019 (2024-02-20)
+
+<code>A vulnerability in Node.js HTTP servers allows an attacker to send a specially crafted HTTP request with chunked encoding, leading to resource exhaustion and denial of service (DoS). The server reads an unbounded number of bytes from a single connection, exploiting the lack of limitations on chunk extension bytes. The issue can cause CPU and network bandwidth exhaustion, bypassing standard safeguards like timeouts and body size limits.
+</code>
+
+- [kos2001/code-shield](https://github.com/kos2001/code-shield)
+
 ### CVE-2024-22024 (2024-02-13)
 
 <code>An XML external entity or XXE vulnerability in the SAML component of Ivanti Connect Secure (9.x, 22.x), Ivanti Policy Secure (9.x, 22.x) and ZTA gateways which allows an attacker to access certain restricted resources without authentication.
@@ -22651,7 +22674,7 @@
 - [LuisMateo1/Arbitrary-File-Read-CVE-2024-24919](https://github.com/LuisMateo1/Arbitrary-File-Read-CVE-2024-24919)
 - [AhmedMansour93/Event-ID-263-Rule-Name-SOC287---Arbitrary-File-Read-on-Checkpoint-Security-Gateway-CVE-2024-24919-](https://github.com/AhmedMansour93/Event-ID-263-Rule-Name-SOC287---Arbitrary-File-Read-on-Checkpoint-Security-Gateway-CVE-2024-24919-)
 - [geniuszly/CVE-2024-24919](https://github.com/geniuszly/CVE-2024-24919)
-- [solo364/CVE-2024-24919](https://github.com/solo364/CVE-2024-24919)
+- [kernel364/CVE-2024-24919](https://github.com/kernel364/CVE-2024-24919)
 - [sar-3mar/CVE-2024-24919_POC](https://github.com/sar-3mar/CVE-2024-24919_POC)
 - [NingXin2002/Check-Point_poc](https://github.com/NingXin2002/Check-Point_poc)
 - [hashdr1ft/SOC_287](https://github.com/hashdr1ft/SOC_287)
@@ -23670,7 +23693,7 @@
 - [NanoWraith/CVE-2024-29973](https://github.com/NanoWraith/CVE-2024-29973)
 - [p0et08/CVE-2024-29973](https://github.com/p0et08/CVE-2024-29973)
 - [RevoltSecurities/CVE-2024-29973](https://github.com/RevoltSecurities/CVE-2024-29973)
-- [solo364/CVE-2024-29973](https://github.com/solo364/CVE-2024-29973)
+- [kernel364/CVE-2024-29973](https://github.com/kernel364/CVE-2024-29973)
 
 ### CVE-2024-29988 (2024-04-09)
 
@@ -28050,13 +28073,6 @@
 </code>
 
 - [ThottySploity/CVE-2024-53376](https://github.com/ThottySploity/CVE-2024-53376)
-
-### CVE-2024-53407 (2025-01-15)
-
-<code>In Phiewer 4.1.0, a dylib injection leads to Command Execution which allow attackers to inject dylib file potentially leading to remote control and unauthorized access to sensitive user data.
-</code>
-
-- [SyFi/CVE-2024-53407](https://github.com/SyFi/CVE-2024-53407)
 
 ### CVE-2024-53476 (2024-12-27)
 
@@ -49475,7 +49491,6 @@
 - [orangmuda/CVE-2021-38314](https://github.com/orangmuda/CVE-2021-38314)
 - [phrantom/cve-2021-38314](https://github.com/phrantom/cve-2021-38314)
 - [shubhayu-64/CVE-2021-38314](https://github.com/shubhayu-64/CVE-2021-38314)
-- [twseptian/cve-2021-38314](https://github.com/twseptian/cve-2021-38314)
 - [c0ff33b34n/CVE-2021-38314](https://github.com/c0ff33b34n/CVE-2021-38314)
 - [akhilkoradiya/CVE-2021-38314](https://github.com/akhilkoradiya/CVE-2021-38314)
 - [0xGabe/CVE-2021-38314](https://github.com/0xGabe/CVE-2021-38314)
@@ -51004,6 +51019,7 @@
 - [Asbawy/GrafTraverse-CVE-2021-43798](https://github.com/Asbawy/GrafTraverse-CVE-2021-43798)
 - [Okymi-X/CVE-2021-43798](https://github.com/Okymi-X/CVE-2021-43798)
 - [Lim-ahmin/CVE-2021-43798](https://github.com/Lim-ahmin/CVE-2021-43798)
+- [sbimoxa/cve-2021-43798-lab](https://github.com/sbimoxa/cve-2021-43798-lab)
 
 ### CVE-2021-43799 (2022-01-25)
 
@@ -65596,6 +65612,7 @@
 
 - [aeroot/WP-GDPR-Compliance-Plugin-Exploit](https://github.com/aeroot/WP-GDPR-Compliance-Plugin-Exploit)
 - [cved-sources/cve-2018-19207](https://github.com/cved-sources/cve-2018-19207)
+- [AnotherSec/CVE-2018-19207](https://github.com/AnotherSec/CVE-2018-19207)
 
 ### CVE-2018-19246 (2018-11-13)
 
@@ -70283,6 +70300,7 @@
 - [saqib-butt2/blackbox-pentesting-infsecos](https://github.com/saqib-butt2/blackbox-pentesting-infsecos)
 - [WhatsWrongAndWhy/CVE-2015-1328](https://github.com/WhatsWrongAndWhy/CVE-2015-1328)
 - [FernandoCassioDev/CVE-2015-1328](https://github.com/FernandoCassioDev/CVE-2015-1328)
+- [bansalkrish007-arch/cve-2015-1328](https://github.com/bansalkrish007-arch/cve-2015-1328)
 
 ### CVE-2015-1397 (2015-04-29)
 
