@@ -257,6 +257,7 @@
 </code>
 
 - [DeepSecurityResearch/CVE-2026-2586](https://github.com/DeepSecurityResearch/CVE-2026-2586)
+- [GabrielHA12/Glassfish-research](https://github.com/GabrielHA12/Glassfish-research)
 
 ### CVE-2026-2587 (2026-05-19)
 
@@ -1405,7 +1406,6 @@
 <code>The Podlove Podcast Publisher plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'podlove_handle_cache_files' function in all versions up to, and including, 4.5.1. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
 </code>
 
-- [Raimu0x19/CVE-2026-13001](https://github.com/Raimu0x19/CVE-2026-13001)
 - [shinthink/CVE-2026-13001](https://github.com/shinthink/CVE-2026-13001)
 - [ghostpels/CVE-2026-13001](https://github.com/ghostpels/CVE-2026-13001)
 
@@ -1445,7 +1445,11 @@
 
 - [HORKimhab/CVE-2026-14191](https://github.com/HORKimhab/CVE-2026-14191)
 
-### CVE-2026-14266
+### CVE-2026-14266 (2026-07-29)
+
+<code>7-Zip XZ Decompression Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the processing of XZ chunked data. Crafted XZ-compressed data can trigger an overflow of a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-30169.
+</code>
+
 - [hg0434hongzh0/CVE-2026-14266](https://github.com/hg0434hongzh0/CVE-2026-14266)
 - [4minx/CVE-2026-14266](https://github.com/4minx/CVE-2026-14266)
 - [liyuxuan504-byte/CVE-2026-14266](https://github.com/liyuxuan504-byte/CVE-2026-14266)
@@ -3271,7 +3275,7 @@
 - [pawpic/CVE-2026-38526-POC](https://github.com/pawpic/CVE-2026-38526-POC)
 - [mmoobbeeiidat-design/Hack-The-Box-Nexus-Findings-Report](https://github.com/mmoobbeeiidat-design/Hack-The-Box-Nexus-Findings-Report)
 - [diamorphine666/CVE-2026-38526-Exploit](https://github.com/diamorphine666/CVE-2026-38526-Exploit)
-- [b0nyo/CVE-2026-38526](https://github.com/b0nyo/CVE-2026-38526)
+- [b0nyo/PoC-CVE-2026-38526](https://github.com/b0nyo/PoC-CVE-2026-38526)
 - [Resolvdd/CVE-2026-38526-PoC-htb-nexus](https://github.com/Resolvdd/CVE-2026-38526-PoC-htb-nexus)
 - [Qurclinc/CVE-2026-38526](https://github.com/Qurclinc/CVE-2026-38526)
 - [CerberusMrXi/KrayinCRM-RCE-Exploit-CVE-2026-38526](https://github.com/CerberusMrXi/KrayinCRM-RCE-Exploit-CVE-2026-38526)
@@ -3999,6 +4003,7 @@
 - [Thiasap/oppo-pgem10-ghostlock](https://github.com/Thiasap/oppo-pgem10-ghostlock)
 - [CakesTwix/Android-CVE-2026-43499](https://github.com/CakesTwix/Android-CVE-2026-43499)
 - [Bartixxx32/CVE-2026-43499-OnePlus15](https://github.com/Bartixxx32/CVE-2026-43499-OnePlus15)
+- [Linuxoid-cn/CVE-2026-43499-Poc-Analysis](https://github.com/Linuxoid-cn/CVE-2026-43499-Poc-Analysis)
 - [qsvggff-spec/oppo-A5-PRO-5G-CVE-2026-43499](https://github.com/qsvggff-spec/oppo-A5-PRO-5G-CVE-2026-43499)
 - [xianwan1314/CVE-2026-43499-Poc-Analysis](https://github.com/xianwan1314/CVE-2026-43499-Poc-Analysis)
 - [HYCQAQ/Logitech-G-Cloud-GhostLock-CVE-2026-43499](https://github.com/HYCQAQ/Logitech-G-Cloud-GhostLock-CVE-2026-43499)
@@ -4105,6 +4110,13 @@
 </code>
 
 - [dem0ns/CVE-2026-43735](https://github.com/dem0ns/CVE-2026-43735)
+
+### CVE-2026-43813 (2026-07-27)
+
+<code>A validation issue was addressed with improved input sanitization. This issue is fixed in iOS 26.6 and iPadOS 26.6, macOS Tahoe 26.6, tvOS 26.6, visionOS 26.6, watchOS 26.6. A maliciously crafted app may be able to bypass code signing enforcement.
+</code>
+
+- [EastArctica/CVE-2026-43813](https://github.com/EastArctica/CVE-2026-43813)
 
 ### CVE-2026-43865 (2026-07-06)
 
@@ -4396,6 +4408,13 @@
 </code>
 
 - [yeahhbean/CVE-2026-45729](https://github.com/yeahhbean/CVE-2026-45729)
+
+### CVE-2026-45746 (2026-06-05)
+
+<code>Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. Prior to version 2.3.2, the File Manager functionality in Termix contains a critical Broken Access Control vulnerability due to improper validation of the sessionId parameter. The backend trusts a client-controlled identifier without verifying that it belongs to the authenticated user. This allows an attacker to manipulate the value and access active File Manager sessions belonging to other users. Since these sessions are tied to SSH connections to remote VPS instances, exploitation allows unauthorized interaction with another user's remote filesystem. Because the File Manager exposes functionality such as file reading, writing, uploading, and execution, this vulnerability enables direct command execution on another user's VPS (RCE). Version 2.3.2 patches the issue.
+</code>
+
+- [GabrielHA12/Termix-research](https://github.com/GabrielHA12/Termix-research)
 
 ### CVE-2026-45806 (2026-07-15)
 
@@ -5440,7 +5459,11 @@
 
 - [timtimxs/CVE-2026-51947-Advisory](https://github.com/timtimxs/CVE-2026-51947-Advisory)
 
-### CVE-2026-51992
+### CVE-2026-51992 (2026-07-29)
+
+<code>SQL Injection vulnerability in ClickHouse Server Versions &lt;= 26.3.9.8 allows a remote attacker to execute arbitrary code via the create dictionaries function.
+</code>
+
 - [TheLiimbo/CVE-2026-51992](https://github.com/TheLiimbo/CVE-2026-51992)
 
 ### CVE-2026-52100 (2026-07-14)
@@ -5449,6 +5472,9 @@
 </code>
 
 - [nk7667/-linx-server-vulnerability-report](https://github.com/nk7667/-linx-server-vulnerability-report)
+
+### CVE-2026-52134
+- [if-forget/CVE-2026-52134-libiec61850](https://github.com/if-forget/CVE-2026-52134-libiec61850)
 
 ### CVE-2026-52199 (2026-07-17)
 
@@ -5634,6 +5660,13 @@
 </code>
 
 - [Saku0512/CVE-2026-54088-poc](https://github.com/Saku0512/CVE-2026-54088-poc)
+
+### CVE-2026-54107 (2026-07-14)
+
+<code>Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Win32K allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [Pravin761/CVE-2026-54107](https://github.com/Pravin761/CVE-2026-54107)
 
 ### CVE-2026-54121 (2026-07-14)
 
@@ -5946,6 +5979,13 @@
 
 - [tc4dy/CVE-2026-57821-PoC-Exploit](https://github.com/tc4dy/CVE-2026-57821-PoC-Exploit)
 
+### CVE-2026-57827 (2026-07-11)
+
+<code>Joomla Extension - rsjoomla.com - Unauthenticated file upload in RSFiles component &lt; 1.17.12 - The Joomla extension RSFiles is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.
+</code>
+
+- [shinthink/CVE-2026-57827](https://github.com/shinthink/CVE-2026-57827)
+
 ### CVE-2026-57829 (2026-07-13)
 
 <code>Joomla Extension - joomshaper.com - Unauthenticated stored XSS in Helix Ultimate &lt; 2.2.7 - The Joomla extension Helix Ultimate is vulnerable to an unauthenticated stored XSS.
@@ -5980,6 +6020,13 @@
 </code>
 
 - [riddhimaan-sth404/CVE-2026-57973](https://github.com/riddhimaan-sth404/CVE-2026-57973)
+
+### CVE-2026-58025 (2026-07-01)
+
+<code>Deserialization of untrusted data vulnerability in Wikimedia Foundation MediaWiki.\n\n This vulnerability is associated with program files includes/Import/WikiImporter.Php, includes/Import/WikiRevision.Php, includes/Logging/LogEntryBase.Php.\n\n\n\nThis issue affects MediaWiki: from * before 1.46.0, 1.45.4, 1.44.6, 1.43.9.
+</code>
+
+- [shinthink/CVE-2026-58025](https://github.com/shinthink/CVE-2026-58025)
 
 ### CVE-2026-58057 (2026-06-28)
 
@@ -6271,6 +6318,11 @@
 </code>
 
 - [Hunt-Benito/siyuan-mcp-admin-takeover-cve-2026-66012-missing-authorization](https://github.com/Hunt-Benito/siyuan-mcp-admin-takeover-cve-2026-66012-missing-authorization)
+
+### CVE-2026-66066
+- [paveg/rails-activestorage-vips-audit](https://github.com/paveg/rails-activestorage-vips-audit)
+- [0xBlackash/CVE-2026-66066](https://github.com/0xBlackash/CVE-2026-66066)
+- [Zer0SumGam3/CVE-2026-66066-POC](https://github.com/Zer0SumGam3/CVE-2026-66066-POC)
 
 ### CVE-2026-66374 (2026-07-25)
 
@@ -10850,6 +10902,7 @@
 - [rxerium/CVE-2025-26466](https://github.com/rxerium/CVE-2025-26466)
 - [mrowkoob/CVE-2025-26466-msf](https://github.com/mrowkoob/CVE-2025-26466-msf)
 - [tpirate/CVE-2025-26466](https://github.com/tpirate/CVE-2025-26466)
+- [acidboonrs/cve-2025-26466-openssh-poc](https://github.com/acidboonrs/cve-2025-26466-openssh-poc)
 
 ### CVE-2025-26529 (2025-02-24)
 
@@ -14301,7 +14354,6 @@
 - [DeathShotXD/CVE-2025-52691-APT-PoC](https://github.com/DeathShotXD/CVE-2025-52691-APT-PoC)
 - [nxgn-kd01/smartermail-cve-scanner](https://github.com/nxgn-kd01/smartermail-cve-scanner)
 - [watchtowrlabs/watchTowr-vs-SmarterMail-CVE-2025-52691](https://github.com/watchtowrlabs/watchTowr-vs-SmarterMail-CVE-2025-52691)
-- [rimbadirgantara/CVE-2025-52691-poc](https://github.com/rimbadirgantara/CVE-2025-52691-poc)
 - [ninjazan420/CVE-2025-52691-PoC-SmarterMail-authentication-bypass-exploit-WT-2026-0001](https://github.com/ninjazan420/CVE-2025-52691-PoC-SmarterMail-authentication-bypass-exploit-WT-2026-0001)
 
 ### CVE-2025-52694 (2026-01-12)
@@ -25309,6 +25361,7 @@
 </code>
 
 - [ggfzx/CVE-2024-36104](https://github.com/ggfzx/CVE-2024-36104)
+- [Groppoxx/CVE-2024-36104-PoC](https://github.com/Groppoxx/CVE-2024-36104-PoC)
 
 ### CVE-2024-36401 (2024-07-01)
 
@@ -29241,13 +29294,6 @@
 
 - [KUK3N4N/CVE-2024-57778](https://github.com/KUK3N4N/CVE-2024-57778)
 
-### CVE-2024-57785 (2025-01-16)
-
-<code>Zenitel AlphaWeb XE v11.2.3.10 was discovered to contain a local file inclusion vulnerability via the component amc_uploads.php.
-</code>
-
-- [s4fv4n/CVE-2024-57785](https://github.com/s4fv4n/CVE-2024-57785)
-
 ### CVE-2024-57972 (2025-03-06)
 
 <code>The pairing API request handler in Microsoft HoloLens 1 (Windows Holographic) through 10.0.17763.3046 and HoloLens 2 (Windows Holographic) through 10.0.22621.1244 allows remote attackers to cause a Denial of Service (resource consumption and device unusability) by sending many requests through the Device Portal framework.
@@ -29649,7 +29695,7 @@
 
 ### CVE-2023-1829 (2023-04-12)
 
-<code>A use-after-free vulnerability in the Linux Kernel traffic control index filter (tcindex) can be exploited to achieve local privilege escalation. The tcindex_delete function which does not properly deactivate filters in case of a perfect hashes while deleting the underlying structure which can later lead to double freeing the structure. A local attacker user can use this vulnerability to elevate its privileges to root.\nWe recommend upgrading past commit 8c710f75256bb3cf05ac7b1672c82b92c43f3d28.
+<code>A use-after-free vulnerability in the Linux Kernel traffic control index filter (tcindex) can be exploited to achieve local privilege escalation. The tcindex_delete function which does not properly deactivate filters in case of a perfect hashes while deleting the underlying structure which can later lead to double freeing the structure. A local attacker user can use this vulnerability to elevate its privileges to root.\n\n\nWe recommend upgrading past commit   8c710f75256bb3cf05ac7b1672c82b92c43f3d28 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/ .
 </code>
 
 - [lanleft/CVE-2023-1829](https://github.com/lanleft/CVE-2023-1829)
@@ -41367,7 +41413,7 @@
 </code>
 
 - [convisolabs/CVE-2022-24834](https://github.com/convisolabs/CVE-2022-24834)
-- [DukeSec97/CVE-2022-24834-](https://github.com/DukeSec97/CVE-2022-24834-)
+- [Nullx97/CVE-2022-24834-](https://github.com/Nullx97/CVE-2022-24834-)
 
 ### CVE-2022-24853 (2022-04-14)
 
@@ -44320,6 +44366,7 @@
 - [Pro-me3us/CVE_2022_38181_Gazelle](https://github.com/Pro-me3us/CVE_2022_38181_Gazelle)
 - [R0rt1z2/CVE-2022-38181](https://github.com/R0rt1z2/CVE-2022-38181)
 - [soralis0912/CVE-2022-38181-aristotle](https://github.com/soralis0912/CVE-2022-38181-aristotle)
+- [hackintoanetwork/SCRoot](https://github.com/hackintoanetwork/SCRoot)
 
 ### CVE-2022-38374 (2022-11-02)
 
@@ -46489,7 +46536,6 @@
 - [musergi/CVE-2021-3156](https://github.com/musergi/CVE-2021-3156)
 - [halissha/CVE-2021-3156](https://github.com/halissha/CVE-2021-3156)
 - [sharkmoos/Baron-Samedit](https://github.com/sharkmoos/Baron-Samedit)
-- [chenaotian/CVE-2021-3156](https://github.com/chenaotian/CVE-2021-3156)
 - [RodricBr/CVE-2021-3156](https://github.com/RodricBr/CVE-2021-3156)
 - [q77190858/CVE-2021-3156](https://github.com/q77190858/CVE-2021-3156)
 - [arvindshima/CVE-2021-3156](https://github.com/arvindshima/CVE-2021-3156)
@@ -46824,7 +46870,6 @@
 - [berdav/CVE-2021-4034](https://github.com/berdav/CVE-2021-4034)
 - [arthepsy/CVE-2021-4034](https://github.com/arthepsy/CVE-2021-4034)
 - [Y3A/CVE-2021-4034](https://github.com/Y3A/CVE-2021-4034)
-- [chenaotian/CVE-2021-4034](https://github.com/chenaotian/CVE-2021-4034)
 - [ly4k/PwnKit](https://github.com/ly4k/PwnKit)
 - [xcanwin/CVE-2021-4034-UniontechOS](https://github.com/xcanwin/CVE-2021-4034-UniontechOS)
 - [artemis-mike/cve-2021-4034](https://github.com/artemis-mike/cve-2021-4034)
@@ -50868,6 +50913,7 @@
 - [gagaltotal/CVE-2021-41773-apache](https://github.com/gagaltotal/CVE-2021-41773-apache)
 - [KunalKhandelwal-dev/cve-2021-41773-source-code-analysis](https://github.com/KunalKhandelwal-dev/cve-2021-41773-source-code-analysis)
 - [tr3m0x/CVE-2021-41773](https://github.com/tr3m0x/CVE-2021-41773)
+- [sbimoxa/cve-2021-41773-lab](https://github.com/sbimoxa/cve-2021-41773-lab)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -51998,6 +52044,7 @@
 - [hmxh123/Log4Shell-Vulnerability-Replication](https://github.com/hmxh123/Log4Shell-Vulnerability-Replication)
 - [limxuan/ehir-vuln-enterprise-login](https://github.com/limxuan/ehir-vuln-enterprise-login)
 - [DAADAISMYLIFE/log4shell-lab](https://github.com/DAADAISMYLIFE/log4shell-lab)
+- [sydneysamantha/Triage-CVE-2021-44228-Log4Shell-Log4j-](https://github.com/sydneysamantha/Triage-CVE-2021-44228-Log4Shell-Log4j-)
 - [Ricardo354/homelab-CVE-2021-44228](https://github.com/Ricardo354/homelab-CVE-2021-44228)
 - [AstralJays/TraditionalJay](https://github.com/AstralJays/TraditionalJay)
 - [prmawyer/log4shell-vulnerable-app](https://github.com/prmawyer/log4shell-vulnerable-app)
@@ -56919,6 +56966,7 @@
 </code>
 
 - [underprotection/CVE-2020-24028](https://github.com/underprotection/CVE-2020-24028)
+- [RedTeamBrasil/CVE-2020-24028](https://github.com/RedTeamBrasil/CVE-2020-24028)
 
 ### CVE-2020-24029 (2020-09-02)
 
@@ -56926,6 +56974,7 @@
 </code>
 
 - [underprotection/CVE-2020-24029](https://github.com/underprotection/CVE-2020-24029)
+- [RedTeamBrasil/CVE-2020-24029](https://github.com/RedTeamBrasil/CVE-2020-24029)
 
 ### CVE-2020-24030 (2020-09-02)
 
@@ -56933,6 +56982,7 @@
 </code>
 
 - [underprotection/CVE-2020-24030](https://github.com/underprotection/CVE-2020-24030)
+- [RedTeamBrasil/CVE-2020-24030](https://github.com/RedTeamBrasil/CVE-2020-24030)
 
 ### CVE-2020-24032 (2020-08-18)
 
@@ -62360,6 +62410,7 @@
 </code>
 
 - [underprotection/CVE-2019-19550](https://github.com/underprotection/CVE-2019-19550)
+- [RedTeamBrasil/CVE-2019-19550](https://github.com/RedTeamBrasil/CVE-2019-19550)
 
 ### CVE-2019-19576 (2019-12-04)
 
