@@ -404,6 +404,13 @@
 
 - [BlackSnufkin/BYOVD](https://github.com/BlackSnufkin/BYOVD)
 
+### CVE-2026-3611 (2026-03-12)
+
+<code>The Honeywell IQ4x building management controller, exposes its full web-based HMI without authentication in its factory-default configuration. With no user module configured, security is disabled by design and the system operates under a System Guest (level 100) context, granting read/write privileges to any party able to reach the HTTP interface. Authentication controls are only enforced after a web user is created via U.htm, which dynamically enables the user module. Because this function is accessible prior to authentication, a remote user can create a new account with administrative read/write permissions enabling the user module and imposing authentication under attacker-controlled credentials. This action can effectively lock legitimate operators out of local and web-based configuration and administration.
+</code>
+
+- [spinfosecurity/BAS-Guardian](https://github.com/spinfosecurity/BAS-Guardian)
+
 ### CVE-2026-3629 (2026-03-21)
 
 <code>The Import and export users and customers plugin for WordPress is vulnerable to privilege escalation in all versions up to, and including, 1.29.7. This is due to the 'save_extra_user_profile_fields' function not properly restricting which user meta keys can be updated via profile fields. The 'get_restricted_fields' method does not include sensitive meta keys such as 'wp_capabilities'. This makes it possible for unauthenticated attackers to escalate their privileges to Administrator by submitting a crafted registration request that sets the 'wp_capabilities' meta key. The vulnerability can only be exploited if the &quot;Show fields in profile&quot; setting is enabled and a CSV with a wp_capabilities column header has been previously imported.
@@ -1929,6 +1936,7 @@
 </code>
 
 - [MadExploits/CVE-2026-14483](https://github.com/MadExploits/CVE-2026-14483)
+- [0xdak/CVE-2026-14483_exploit](https://github.com/0xdak/CVE-2026-14483_exploit)
 
 ### CVE-2026-14628 (2026-07-04)
 
@@ -2044,7 +2052,7 @@
 
 - [WadesWeaponShed/Check-Point-Trusted-Access-Review](https://github.com/WadesWeaponShed/Check-Point-Trusted-Access-Review)
 - [sfewer-r7/CVE-2026-16232](https://github.com/sfewer-r7/CVE-2026-16232)
-- [HackSpeak/checkpoint-smartconsole-poc](https://github.com/HackSpeak/checkpoint-smartconsole-poc)
+- [HackSpeak/CVE-2026-16232](https://github.com/HackSpeak/CVE-2026-16232)
 
 ### CVE-2026-16475
 - [afertar/CVE-2026-16475-PoC](https://github.com/afertar/CVE-2026-16475-PoC)
@@ -2079,6 +2087,13 @@
 
 - [Hunt-Benito/pgadmin-ai-assistant-sql-injection-cve-2026-17351-lexer-differential-bypass](https://github.com/Hunt-Benito/pgadmin-ai-assistant-sql-injection-cve-2026-17351-lexer-differential-bypass)
 
+### CVE-2026-17543 (2026-07-30)
+
+<code>Improper escaping of backslashes in attacker-provided parameters would allow for trivial SQL injection in PHP versions from 8.2.* before 8.2.33, from 8.3.* before 8.3.33, from 8.4.* before 8.4.24, and from 8.5.* before 8.5.9.
+</code>
+
+- [pratham220/CVE-2026-17543-PHP-Exposure-Validator](https://github.com/pratham220/CVE-2026-17543-PHP-Exposure-Validator)
+
 ### CVE-2026-17583
 - [HORKimhab/CVE-2026-17583](https://github.com/HORKimhab/CVE-2026-17583)
 
@@ -2088,6 +2103,13 @@
 </code>
 
 - [4D4J/objdump-Out-Of-Bounds-write](https://github.com/4D4J/objdump-Out-Of-Bounds-write)
+
+### CVE-2026-18577 (2026-08-02)
+
+<code>An incomplete patch for CVE-2026-18556 allows for authentication bypass and account takeover in N-central Versions through 2026.3.1
+</code>
+
+- [HORKimhab/CVE-2026-18577](https://github.com/HORKimhab/CVE-2026-18577)
 
 ### CVE-2026-18718 (2026-08-03)
 
@@ -2257,12 +2279,146 @@
 
 - [Vikramaditya015/samsung-android-lpe](https://github.com/Vikramaditya015/samsung-android-lpe)
 
+### CVE-2026-21001 (2026-03-16)
+
+<code>Path traversal in Galaxy Store prior to version 4.6.03.8 allows local attacker to create file with Galaxy Store privilege.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21001-WebAssembly-Linear-Memory-OOB-via-Table-Index-Confusion](https://github.com/George0Papasotiriou/CVE-2026-21001-WebAssembly-Linear-Memory-OOB-via-Table-Index-Confusion)
+
+### CVE-2026-21002 (2026-03-16)
+
+<code>Improper verification of cryptographic signature in Galaxy Store prior to version 4.6.03.8 allows local attacker to install arbitrary application.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21002-Serverless-Cold-Start-Credential-Leakage-via-Reused-tmp](https://github.com/George0Papasotiriou/CVE-2026-21002-Serverless-Cold-Start-Credential-Leakage-via-Reused-tmp)
+
+### CVE-2026-21003 (2026-04-13)
+
+<code>Improper input validation in data related to network restrictions prior to SMR Apr-2026 Release 1 allows physical attackers to bypass the restrictions.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21003-JWT-none-Algorithm-Bypass-via-kid-Header-Omission](https://github.com/George0Papasotiriou/CVE-2026-21003-JWT-none-Algorithm-Bypass-via-kid-Header-Omission)
+
+### CVE-2026-21004 (2026-03-16)
+
+<code>Improper authentication in Smart Switch prior to version 3.7.69.15 allows adjacent attackers to trigger a denial of service.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21004-SQLite-FTS3-Match-Infoleak-via-Query-Crafting](https://github.com/George0Papasotiriou/CVE-2026-21004-SQLite-FTS3-Match-Infoleak-via-Query-Crafting)
+
+### CVE-2026-21005 (2026-03-16)
+
+<code>Path traversal in Smart Switch prior to version 3.7.69.15 allows adjacent attackers to overwrite arbitrary files with Smart Switch privilege.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21005-Docker-Registry-V2-Schema-1-Image-Poisoning](https://github.com/George0Papasotiriou/CVE-2026-21005-Docker-Registry-V2-Schema-1-Image-Poisoning)
+
+### CVE-2026-21006 (2026-04-13)
+
+<code>Improper access control in Samsung DeX prior to SMR Apr-2026 Release 1 allows physical attackers to access to hidden notification contents.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21006-Zigbee-Light-Link-Factory-Reset-Exploit](https://github.com/George0Papasotiriou/CVE-2026-21006-Zigbee-Light-Link-Factory-Reset-Exploit)
+
+### CVE-2026-21007 (2026-04-13)
+
+<code>Improper check for exceptional conditions in Device Care prior to SMR Apr-2026 Release 1 allows physical attackers to bypass Knox Guard.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21007-GPU-Driver-ioctl-Race-Condition-Kernel-Memory-Mapping-](https://github.com/George0Papasotiriou/CVE-2026-21007-GPU-Driver-ioctl-Race-Condition-Kernel-Memory-Mapping-)
+
+### CVE-2026-21008 (2026-04-13)
+
+<code>Exposure of sensitive information in S Share prior to SMR Apr-2026 Release 1 allows adjacent attacker to access sensitive information.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21008-Kubernetes-Service-Account-Token-Mounted-in-HostPath](https://github.com/George0Papasotiriou/CVE-2026-21008-Kubernetes-Service-Account-Token-Mounted-in-HostPath)
+
+### CVE-2026-21009 (2026-04-13)
+
+<code>Improper check for exceptional conditions in Recents prior to SMR Apr-2026 Release 1 allows physical attacker to bypass App Pinning.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21009-ECDSA-Nonce-Reuse-in-IoT-Firmware-Signing](https://github.com/George0Papasotiriou/CVE-2026-21009-ECDSA-Nonce-Reuse-in-IoT-Firmware-Signing)
+
+### CVE-2026-21010 (2026-04-13)
+
+<code>Improper input validation in Retail Mode prior to SMR Apr-2026 Release 1 allows local attackers to trigger privileged functions.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21010-VoIP-SIP-Digest-Authentication-Replay](https://github.com/George0Papasotiriou/CVE-2026-21010-VoIP-SIP-Digest-Authentication-Replay)
+
+### CVE-2026-21011 (2026-04-13)
+
+<code>Incorrect privilege assignment in Bluetooth in Maintenance mode prior to SMR Apr-2026 Release 1 allows physical attackers to bypass Extend Unlock.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21011-Log4j-style-JNDI-Injection-in-Custom-Logger-Simulated-](https://github.com/George0Papasotiriou/CVE-2026-21011-Log4j-style-JNDI-Injection-in-Custom-Logger-Simulated-)
+
+### CVE-2026-21012 (2026-04-13)
+
+<code>External control of file name in AODManager prior to SMR Apr-2026 Release 1 allows privileged local attacker to create file with system privilege.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21012-Rust-serde-Deserialization-of-Untrusted-Enum-Variant-Injection-](https://github.com/George0Papasotiriou/CVE-2026-21012-Rust-serde-Deserialization-of-Untrusted-Enum-Variant-Injection-)
+
+### CVE-2026-21013 (2026-04-13)
+
+<code>Incorrect default permission in Galaxy Wearable prior to version 2.2.68.26 allows local attackers to access sensitive information.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21013-PDF-JavaScript-Injection-via-Embedded-Script](https://github.com/George0Papasotiriou/CVE-2026-21013-PDF-JavaScript-Injection-via-Embedded-Script)
+
+### CVE-2026-21014 (2026-04-13)
+
+<code>Improper access control in Samsung Camera prior to version 16.5.00.28 allows local attacker to access location data. User interaction is required for triggering this vulnerability.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21014-CAN-Bus-Frame-Replay-Attack-on-Automotive-ECU](https://github.com/George0Papasotiriou/CVE-2026-21014-CAN-Bus-Frame-Replay-Attack-on-Automotive-ECU)
+
+### CVE-2026-21015 (2026-05-13)
+
+<code>Incorrect default permissions in FactoryCamera prior to SMR May-2026 Release 1 allows local attacker to access unique identifier.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21015-PHP-Filter-Chain-Arbitrary-File-Read](https://github.com/George0Papasotiriou/CVE-2026-21015-PHP-Filter-Chain-Arbitrary-File-Read)
+
+### CVE-2026-21016 (2026-05-13)
+
+<code>Incorrect privilege assignment in LocationManager prior to SMR May-2026 Release 1 allows local attackers to access sensitive information.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21016-Malicious-PyPI-Package-Install-Hook-setup.py-Execution-](https://github.com/George0Papasotiriou/CVE-2026-21016-Malicious-PyPI-Package-Install-Hook-setup.py-Execution-)
+
+### CVE-2026-21017 (2026-06-05)
+
+<code>Improper handling of insufficient privileges in SecTelephonyProvider prior to SMR Jun-2026 Release 1 allows local attackers to access privileged files.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21017-LDAP-Anonymous-Bind-Privilege-Escalation](https://github.com/George0Papasotiriou/CVE-2026-21017-LDAP-Anonymous-Bind-Privilege-Escalation)
+
 ### CVE-2026-21018 (2026-05-13)
 
 <code>Out-of-bounds write in SveService prior to SMR May-2026 Release 1 allows local privileged attackers to execute arbitrary code.
 </code>
 
 - [Filipemendonca1978/CVE-2026-21018](https://github.com/Filipemendonca1978/CVE-2026-21018)
+- [George0Papasotiriou/CVE-2026-21018-OPC-UA-Authentication-Bypass-via-None-Security-Policy](https://github.com/George0Papasotiriou/CVE-2026-21018-OPC-UA-Authentication-Bypass-via-None-Security-Policy)
+
+### CVE-2026-21019 (2026-05-13)
+
+<code>Improper input validation in FacAtFunction in Galaxy Watch prior to SMR May-2026 Release 1 allows local attacker to execute arbitrary code with system privilege.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21019-Kubernetes-CronJob-Suspended-Execution-via-Time-Manipulation](https://github.com/George0Papasotiriou/CVE-2026-21019-Kubernetes-CronJob-Suspended-Execution-via-Time-Manipulation)
+
+### CVE-2026-21020 (2026-05-13)
+
+<code>Improper export of android application components in OmaCP prior to SMR May-2026 Release 1 allows local attackers to trigger privileged functions.
+</code>
+
+- [George0Papasotiriou/CVE-2026-21020-Protobuf-Message-Parsing-Polymorphic-Deserialization-Vulnerability](https://github.com/George0Papasotiriou/CVE-2026-21020-Protobuf-Message-Parsing-Polymorphic-Deserialization-Vulnerability)
 
 ### CVE-2026-21045 (2026-07-10)
 
@@ -2332,6 +2488,100 @@
 </code>
 
 - [Eangly/CVE-2026-21978](https://github.com/Eangly/CVE-2026-21978)
+
+### CVE-2026-22001 (2026-04-21)
+
+<code>Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Information Schema).  Supported versions that are affected are 8.0.0-8.0.45, 8.4.0-8.4.8 and  9.0.0-9.6.0. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in  unauthorized read access to a subset of MySQL Server accessible data. CVSS 3.1 Base Score 2.7 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N).
+</code>
+
+- [George0Papasotiriou/CVE-2026-22001-SPHINCS-WOTS-Weak-Randomness-Forgeable-Signature](https://github.com/George0Papasotiriou/CVE-2026-22001-SPHINCS-WOTS-Weak-Randomness-Forgeable-Signature)
+
+### CVE-2026-22002 (2026-04-21)
+
+<code>Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer).  Supported versions that are affected are 8.0.0-8.0.45, 8.4.0-8.4.8 and  9.0.0-9.6.0. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H).
+</code>
+
+- [George0Papasotiriou/CVE-2026-22002-VNC-Authentication-Bypass-via-Protocol-Version-Confusion](https://github.com/George0Papasotiriou/CVE-2026-22002-VNC-Authentication-Bypass-via-Protocol-Version-Confusion)
+
+### CVE-2026-22003 (2026-04-21)
+
+<code>Vulnerability in the Oracle Java SE, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Hotspot).  Supported versions that are affected are Oracle Java SE: 8u481 and  8u481-b50; Oracle GraalVM Enterprise Edition: 21.3.17. Difficult to exploit vulnerability allows low privileged attacker with logon to the infrastructure where Oracle Java SE, Oracle GraalVM Enterprise Edition executes to compromise Oracle Java SE, Oracle GraalVM Enterprise Edition.  Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Java SE, Oracle GraalVM Enterprise Edition accessible data and unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of Oracle Java SE, Oracle GraalVM Enterprise Edition. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator). CVSS 3.1 Base Score 6.0 (Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:H).
+</code>
+
+- [George0Papasotiriou/CVE-2026-22003-Redis-Lua-Sandbox-Escape-via-debug.sethook-](https://github.com/George0Papasotiriou/CVE-2026-22003-Redis-Lua-Sandbox-Escape-via-debug.sethook-)
+
+### CVE-2026-22004 (2026-04-21)
+
+<code>Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB).  Supported versions that are affected are 8.0.0-8.0.45, 8.4.0-8.4.8 and  9.0.0-9.6.0. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H).
+</code>
+
+- [George0Papasotiriou/CVE-2026-22004-Git-LFS-Pointer-Poisoning-Supply-Chain-](https://github.com/George0Papasotiriou/CVE-2026-22004-Git-LFS-Pointer-Poisoning-Supply-Chain-)
+
+### CVE-2026-22005 (2026-04-21)
+
+<code>Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer).  Supported versions that are affected are 8.0.0-8.0.45, 8.4.0-8.4.8 and  9.0.0-9.6.0. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H).
+</code>
+
+- [George0Papasotiriou/CVE-2026-22005-OAuth-2.0-Device-Code-Phishing-Short-Interval-](https://github.com/George0Papasotiriou/CVE-2026-22005-OAuth-2.0-Device-Code-Phishing-Short-Interval-)
+
+### CVE-2026-22006 (2026-04-21)
+
+<code>Vulnerability in the PeopleSoft Enterprise HCM Human Resources product of Oracle PeopleSoft (component: Employee Snapshot).   The supported version that is affected is 9.2. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise PeopleSoft Enterprise HCM Human Resources.  Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in PeopleSoft Enterprise HCM Human Resources, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of PeopleSoft Enterprise HCM Human Resources accessible data as well as  unauthorized read access to a subset of PeopleSoft Enterprise HCM Human Resources accessible data. CVSS 3.1 Base Score 5.4 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N).
+</code>
+
+- [George0Papasotiriou/CVE-2026-22006-XSLT-Server-Side-Injection-via-xsl-script-](https://github.com/George0Papasotiriou/CVE-2026-22006-XSLT-Server-Side-Injection-via-xsl-script-)
+
+### CVE-2026-22007 (2026-04-21)
+
+<code>Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Security).  Supported versions that are affected are Oracle Java SE: 8u481, 8u481-b50, 8u481-perf, 11.0.30, 17.0.18, 21.0.10, 25.0.2, 26; Oracle GraalVM for JDK: 17.0.18 and  21.0.10; Oracle GraalVM Enterprise Edition: 21.3.17. Difficult to exploit vulnerability allows unauthenticated attacker with logon to the infrastructure where Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition executes to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized read access to a subset of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. This vulnerability also applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. CVSS 3.1 Base Score 2.9 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N).
+</code>
+
+- [George0Papasotiriou/CVE-2026-22007-NTP-monlist-Amplification-over-IPv6](https://github.com/George0Papasotiriou/CVE-2026-22007-NTP-monlist-Amplification-over-IPv6)
+
+### CVE-2026-22008 (2026-04-21)
+
+<code>Vulnerability in Oracle Java SE (component: Libraries).   The supported version that is affected is Oracle Java SE: 25.0.1. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE.  Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of Oracle Java SE accessible data. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator). CVSS 3.1 Base Score 3.7 (Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N).
+</code>
+
+- [George0Papasotiriou/CVE-2026-22008-AWS-Lambda-Layer-Injection-via-Shared-Layer-ARN](https://github.com/George0Papasotiriou/CVE-2026-22008-AWS-Lambda-Layer-Injection-via-Shared-Layer-ARN)
+
+### CVE-2026-22009 (2026-04-21)
+
+<code>Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer).  Supported versions that are affected are 8.0.0-8.0.45, 8.4.0-8.4.8 and  9.0.0-9.6.0. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 6.5 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H).
+</code>
+
+- [George0Papasotiriou/CVE-2026-22009-Linux-eBPF-Map-Locking-Race-Use-After-Free](https://github.com/George0Papasotiriou/CVE-2026-22009-Linux-eBPF-Map-Locking-Race-Use-After-Free)
+
+### CVE-2026-22010 (2026-04-21)
+
+<code>Vulnerability in the Oracle Financial Services Analytical Applications Infrastructure product of Oracle Financial Services Applications (component: Platform).  Supported versions that are affected are 8.0.7.9, 8.0.8.7 and  8.1.2.5. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Financial Services Analytical Applications Infrastructure.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Financial Services Analytical Applications Infrastructure accessible data. CVSS 3.1 Base Score 7.5 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N).
+</code>
+
+- [George0Papasotiriou/CVE-2026-22010-Android-Intent-Redirection-to-Exported-Component](https://github.com/George0Papasotiriou/CVE-2026-22010-Android-Intent-Redirection-to-Exported-Component)
+
+### CVE-2026-22011 (2026-04-21)
+
+<code>Vulnerability in the Oracle Applications DBA product of Oracle E-Business Suite (component: ADPatch).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allows high privileged attacker with network access via HTTP to compromise Oracle Applications DBA.  Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Oracle Applications DBA, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in takeover of Oracle Applications DBA. CVSS 3.1 Base Score 7.6 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H).
+</code>
+
+- [George0Papasotiriou/CVE-2026-22011-iOS-MDM-Profile-Delivery-over-HTTP](https://github.com/George0Papasotiriou/CVE-2026-22011-iOS-MDM-Profile-Delivery-over-HTTP)
+
+### CVE-2026-22012
+- [George0Papasotiriou/CVE-2026-22012-Diameter-Protocol-Credit-Control-Bypass-in-5G](https://github.com/George0Papasotiriou/CVE-2026-22012-Diameter-Protocol-Credit-Control-Bypass-in-5G)
+
+### CVE-2026-22013 (2026-04-21)
+
+<code>Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: JGSS).  Supported versions that are affected are Oracle Java SE: 8u481, 8u481-b50, 8u481-perf, 11.0.30, 17.0.18, 21.0.10, 25.0.2, 26; Oracle GraalVM for JDK: 17.0.18 and  21.0.10; Oracle GraalVM Enterprise Edition: 21.3.17. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator). CVSS 3.1 Base Score 5.3 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N).
+</code>
+
+- [George0Papasotiriou/CVE-2026-22013-Hardware-Wallet-USB-Descriptor-Buffer-Overflow](https://github.com/George0Papasotiriou/CVE-2026-22013-Hardware-Wallet-USB-Descriptor-Buffer-Overflow)
+
+### CVE-2026-22014 (2026-04-21)
+
+<code>Vulnerability in the Oracle User Management product of Oracle E-Business Suite (component: Workflow and Business Events).  Supported versions that are affected are 12.2.7-12.2.15. Easily exploitable vulnerability allows high privileged attacker with network access via HTTP to compromise Oracle User Management.  Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of Oracle User Management accessible data as well as  unauthorized read access to a subset of Oracle User Management accessible data. CVSS 3.1 Base Score 3.8 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N).
+</code>
+
+- [George0Papasotiriou/CVE-2026-22014-GraphQL-Persisted-Queries-Injection-via-ID-Manipulation](https://github.com/George0Papasotiriou/CVE-2026-22014-GraphQL-Persisted-Queries-Injection-via-ID-Manipulation)
 
 ### CVE-2026-22226 (2026-02-02)
 
@@ -2412,6 +2662,7 @@
 
 - [pduggusa/redis-cve-2026-23479-check](https://github.com/pduggusa/redis-cve-2026-23479-check)
 - [v1c0mmrt/redis-cve-2026-23479-scanner](https://github.com/v1c0mmrt/redis-cve-2026-23479-scanner)
+- [rizlmaulanaa/CVE-2026-23479-Redis-UAF-Proof-of-Concept](https://github.com/rizlmaulanaa/CVE-2026-23479-Redis-UAF-Proof-of-Concept)
 
 ### CVE-2026-23520 (2026-01-15)
 
@@ -2969,6 +3220,7 @@
 - [c0gnit00/CVE-2026-29000](https://github.com/c0gnit00/CVE-2026-29000)
 - [lucastran05/CVE-2026-29000](https://github.com/lucastran05/CVE-2026-29000)
 - [dua2z3rr/CVE-2026-29000-PoC](https://github.com/dua2z3rr/CVE-2026-29000-PoC)
+- [xiaoqiMikko/pac4j-check](https://github.com/xiaoqiMikko/pac4j-check)
 
 ### CVE-2026-29114 (2026-06-10)
 
@@ -3928,6 +4180,13 @@
 
 - [HackinKraken/Security-Research-and-CVE](https://github.com/HackinKraken/Security-Research-and-CVE)
 
+### CVE-2026-39363 (2026-04-07)
+
+<code>Vite is a frontend tooling framework for JavaScript. From 6.0.0 to before 6.4.2, 7.3.2, and 8.0.5, if it is possible to connect to the Vite dev server’s WebSocket without an Origin header, an attacker can invoke fetchModule via the custom WebSocket event vite:invoke and combine file://... with ?raw (or ?inline) to retrieve the contents of arbitrary files on the server as a JavaScript string (e.g., export default &quot;...&quot;). The access control enforced in the HTTP request path (such as server.fs.allow) is not applied to this WebSocket-based execution path. This vulnerability is fixed in 6.4.2, 7.3.2, and 8.0.5.
+</code>
+
+- [sunynov/CVE-2026-39363](https://github.com/sunynov/CVE-2026-39363)
+
 ### CVE-2026-39492 (2026-06-15)
 
 <code>Unauthenticated SQL Injection in WP Maps &lt;= 4.9.1 versions.
@@ -4514,7 +4773,6 @@
 - [lukeslp/redtail-ioc](https://github.com/lukeslp/redtail-ioc)
 - [armircetaj/tetragon-dirtyfrag](https://github.com/armircetaj/tetragon-dirtyfrag)
 - [nabhan-mohy/Dirty-Frag-Research-CVE-2026-43284-](https://github.com/nabhan-mohy/Dirty-Frag-Research-CVE-2026-43284-)
-- [AadityaKandel/CVE-2026-43284](https://github.com/AadityaKandel/CVE-2026-43284)
 - [RevyHub/CVE-2026-43284---DirtyFrag-Analysis-THM-](https://github.com/RevyHub/CVE-2026-43284---DirtyFrag-Analysis-THM-)
 
 ### CVE-2026-43494 (2026-05-21)
@@ -4598,6 +4856,7 @@
 - [boxiaolanya2008/CVE-2026-43499-Neo11Plus](https://github.com/boxiaolanya2008/CVE-2026-43499-Neo11Plus)
 - [alex193a/Root-My-Pixel](https://github.com/alex193a/Root-My-Pixel)
 - [jason5545/ghostlock-myron-tw](https://github.com/jason5545/ghostlock-myron-tw)
+- [eroorvbsyes-hotmail/CVE-2026-43499_x86_Exploit](https://github.com/eroorvbsyes-hotmail/CVE-2026-43499_x86_Exploit)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -4820,6 +5079,13 @@
 
 - [HORKimhab/CVE-2026-44963](https://github.com/HORKimhab/CVE-2026-44963)
 - [SentinelXofficial/CVE-2026-44963](https://github.com/SentinelXofficial/CVE-2026-44963)
+
+### CVE-2026-45033 (2026-05-13)
+
+<code>GitHub Copilot CLI brings AI-powered coding assistance directly to your command line. Prior to 1.0.43, a  security vulnerability has been identified in GitHub Copilot CLI where a malicious bare git repository nested inside a project directory can achieve arbitrary code execution when the agent performs git operations. By exploiting git's automatic bare repository discovery during directory traversal, an attacker can set core.fsmonitor or other executable config keys to run arbitrary commands without user awareness or approval. The vulnerability arises because git's core.fsmonitor config key (and 15+ similar keys such as core.hookspath, diff.external, merge.tool, etc.) can specify arbitrary shell commands that git will execute as part of normal operations like status, diff, or rev-parse. This vulnerability is fixed in 1.0.43.
+</code>
+
+- [grassplatypus/cve-2026-45033-class](https://github.com/grassplatypus/cve-2026-45033-class)
 
 ### CVE-2026-45034 (2026-06-22)
 
@@ -6092,6 +6358,13 @@
 ### CVE-2026-52658
 - [mirackayikci/CVE-2026-52658](https://github.com/mirackayikci/CVE-2026-52658)
 
+### CVE-2026-52680 (2026-07-30)
+
+<code>Apache Kyuubi REST batch multipart upload handling uses the client-supplied multipart filename when creating a temporary uploaded resource. A remote attacker who can access the REST batch upload endpoint can provide path traversal sequences in the filename and cause the Kyuubi server process to write controlled content outside the intended upload directory, subject to filesystem permissions.\n\n\nThis issue affects Apache Kyuubi: from 1.7.0 through 1.11.1.\n\nUsers are recommended to upgrade to version 1.12.0, which fixes the issue.
+</code>
+
+- [0xdak/CVE-2026-52680_exploit](https://github.com/0xdak/CVE-2026-52680_exploit)
+
 ### CVE-2026-52806 (2026-06-24)
 
 <code>Gogs is an open source self-hosted Git service. Prior to 0.14.3, Gogs allows authenticated users to achieve Remote Code Execution (RCE) on the server by creating a pull request with a specially crafted branch name that injects the --exec flag into the git rebase command during the &quot;Rebase before merging&quot; merge operation. This vulnerability is fixed in 0.14.3.
@@ -6105,6 +6378,9 @@
 </code>
 
 - [iqx6889/CVE-2026-52813-Gogs-RCE](https://github.com/iqx6889/CVE-2026-52813-Gogs-RCE)
+
+### CVE-2026-52824
+- [AzureADTrent/CVE-2026-52824](https://github.com/AzureADTrent/CVE-2026-52824)
 
 ### CVE-2026-52832
 - [mdvpat/CVE-2026-52832-PoC-exploit-nuclio-dashboard](https://github.com/mdvpat/CVE-2026-52832-PoC-exploit-nuclio-dashboard)
@@ -6651,6 +6927,13 @@
 
 - [shinthink/CVE-2026-58025](https://github.com/shinthink/CVE-2026-58025)
 
+### CVE-2026-58048 (2026-07-31)
+
+<code>Improper preservation of SQL mode when renaming databases in  cPanel allows execution of SQL in root context.
+</code>
+
+- [imbas007/POC-CVE-2026-58048](https://github.com/imbas007/POC-CVE-2026-58048)
+
 ### CVE-2026-58057 (2026-06-28)
 
 <code>Flowise before 3.1.3 validates Custom MCP stdio environment variables against a denylist using a case-sensitive comparison, so on Windows, where environment names are case-insensitive, supplying 'node_options' bypasses the NODE_OPTIONS denylist entry. An authenticated user who can configure a Custom MCP node can thereby inject NODE_OPTIONS --require and execute arbitrary code in the Flowise server context.
@@ -6753,6 +7036,7 @@
 - [0xBlackash/CVE-2026-60004](https://github.com/0xBlackash/CVE-2026-60004)
 - [imbas007/CVE-2026-60004-POC](https://github.com/imbas007/CVE-2026-60004-POC)
 - [shinthink/CVE-2026-60004](https://github.com/shinthink/CVE-2026-60004)
+- [HackSpeak/CVE-2026-60004](https://github.com/HackSpeak/CVE-2026-60004)
 
 ### CVE-2026-60121 (2026-07-13)
 
@@ -6897,7 +7181,9 @@
 - [yuag/wp2shell](https://github.com/yuag/wp2shell)
 - [BytesPulse-OE/wp2shell-Hestia-Scanner](https://github.com/BytesPulse-OE/wp2shell-Hestia-Scanner)
 - [Industri4l-H3ll-Xpl0it3rs/CVE-2026-63030-WP2Shell](https://github.com/Industri4l-H3ll-Xpl0it3rs/CVE-2026-63030-WP2Shell)
+- [johnlodan/wp2shell-rce](https://github.com/johnlodan/wp2shell-rce)
 - [Procjevt/CVE-2026-63030](https://github.com/Procjevt/CVE-2026-63030)
+- [x-znn/CVE-2026-63030](https://github.com/x-znn/CVE-2026-63030)
 
 ### CVE-2026-63077 (2026-07-27)
 
@@ -6912,6 +7198,7 @@
 </code>
 
 - [imbas007/CVE-2026-63223-POC](https://github.com/imbas007/CVE-2026-63223-POC)
+- [shinthink/CVE-2026-63223](https://github.com/shinthink/CVE-2026-63223)
 
 ### CVE-2026-63563 (2026-08-03)
 
@@ -6942,7 +7229,7 @@
 - [suominen/ovswrap](https://github.com/suominen/ovswrap)
 - [mahfuzreham/OVSwrap-CVE-2026-64531-Mitigation-Tool](https://github.com/mahfuzreham/OVSwrap-CVE-2026-64531-Mitigation-Tool)
 - [0xBlackash/CVE-2026-64531](https://github.com/0xBlackash/CVE-2026-64531)
-- [HackSpeak/ovswrap-poc](https://github.com/HackSpeak/ovswrap-poc)
+- [HackSpeak/CVE-2026-64531](https://github.com/HackSpeak/CVE-2026-64531)
 
 ### CVE-2026-64560 (2026-07-29)
 
@@ -7040,7 +7327,8 @@
 - [Zer0SumGam3/CVE-2026-66066-POC](https://github.com/Zer0SumGam3/CVE-2026-66066-POC)
 - [rails/rails-forensics-CVE-2026-66066](https://github.com/rails/rails-forensics-CVE-2026-66066)
 - [0xsha/KindaRails2Shell](https://github.com/0xsha/KindaRails2Shell)
-- [HackSpeak/kindarails2shell-poc](https://github.com/HackSpeak/kindarails2shell-poc)
+- [HackSpeak/CVE-2026-66066](https://github.com/HackSpeak/CVE-2026-66066)
+- [shinthink/CVE-2026-66066](https://github.com/shinthink/CVE-2026-66066)
 
 ### CVE-2026-66374 (2026-07-25)
 
@@ -7188,6 +7476,13 @@
 </code>
 
 - [anirbala98/CVE-2026-67206](https://github.com/anirbala98/CVE-2026-67206)
+
+### CVE-2026-67340 (2026-08-01)
+
+<code>ArcadeDB before 26.7.2 (arcadedb-engine) allows trigger scripts to look up host classes in java.lang.* (via Java.type) because ScriptTriggerExecutor adds java.lang.* to the allowed packages. An authenticated user with UPDATE_SCHEMA permission can create a JavaScript trigger that invokes java.lang.Runtime.getRuntime().exec() (or ProcessBuilder), achieving OS command execution when the trigger fires.
+</code>
+
+- [0xdak/CVE-2026-67340_exploit](https://github.com/0xdak/CVE-2026-67340_exploit)
 
 ### CVE-2026-67595 (2026-07-29)
 
@@ -7525,6 +7820,13 @@
 
 - [xp3s/poc_CVE-2025-1716](https://github.com/xp3s/poc_CVE-2025-1716)
 - [danigil/cve-2025-1716](https://github.com/danigil/cve-2025-1716)
+
+### CVE-2025-1727 (2025-07-10)
+
+<code>The protocol used for remote linking over RF for End-of-Train and \nHead-of-Train (also known as a FRED) relies on a BCH checksum for packet\n creation. It is possible to create these EoT and HoT packets with a \nsoftware defined radio and issue brake control commands to the EoT \ndevice, disrupting operations or potentially overwhelming the brake \nsystems.
+</code>
+
+- [spinfosecurity/Rail-OT-Protector](https://github.com/spinfosecurity/Rail-OT-Protector)
 
 ### CVE-2025-1738 (2025-02-27)
 
@@ -10136,7 +10438,6 @@
 </code>
 
 - [Satirush/CVE-2025-14174-Poc](https://github.com/Satirush/CVE-2025-14174-Poc)
-- [typeconfused/CVE-2025-14174-analysis](https://github.com/typeconfused/CVE-2025-14174-analysis)
 - [George0Papasotiriou/CVE-2025-14174-Chrome-Zero-Day](https://github.com/George0Papasotiriou/CVE-2025-14174-Chrome-Zero-Day)
 
 ### CVE-2025-14175 (2025-12-29)
@@ -11897,7 +12198,6 @@
 - [VisaiCyber/CVE-2025-27591-below-](https://github.com/VisaiCyber/CVE-2025-27591-below-)
 - [0xDTC/Below-Logger-Symlink-Attack_CVE-2025-27591](https://github.com/0xDTC/Below-Logger-Symlink-Attack_CVE-2025-27591)
 - [0x00Jeff/CVE-2025-27591](https://github.com/0x00Jeff/CVE-2025-27591)
-- [Stp1t/CVE-2025-27591](https://github.com/Stp1t/CVE-2025-27591)
 - [rippsec/CVE-2025-27591-Meta-below-LPE](https://github.com/rippsec/CVE-2025-27591-Meta-below-LPE)
 - [MoTechStore/CVE-2025-27591-PoC](https://github.com/MoTechStore/CVE-2025-27591-PoC)
 
@@ -12934,6 +13234,7 @@
 - [danilo1992-sys/CVE-2025-32463](https://github.com/danilo1992-sys/CVE-2025-32463)
 - [0xBlackash/CVE-2025-32463](https://github.com/0xBlackash/CVE-2025-32463)
 - [Fomovet/cve-2025-32463](https://github.com/Fomovet/cve-2025-32463)
+- [0xdak/CVE-2025-32463_exploit](https://github.com/0xdak/CVE-2025-32463_exploit)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -15358,6 +15659,7 @@
 - [J4ck3LSyN-Gen2/CVE-2025-53770](https://github.com/J4ck3LSyN-Gen2/CVE-2025-53770)
 - [Zedocun/SharePoint-ToolShell-CVE-2025-53770-Incident-Analysis](https://github.com/Zedocun/SharePoint-ToolShell-CVE-2025-53770-Incident-Analysis)
 - [doerrdan/it-sec-toolshell](https://github.com/doerrdan/it-sec-toolshell)
+- [mfarshadabdullahkhan-png/cve-2025-53770-research](https://github.com/mfarshadabdullahkhan-png/cve-2025-53770-research)
 
 ### CVE-2025-53772 (2025-08-12)
 
@@ -17257,7 +17559,6 @@
 </code>
 
 - [captaincookie34/Vulnerability-Playground-CVE-2025-61922](https://github.com/captaincookie34/Vulnerability-Playground-CVE-2025-61922)
-- [g0vguy/CVE-2025-61922-PoC](https://github.com/g0vguy/CVE-2025-61922-PoC)
 
 ### CVE-2025-62168 (2025-10-17)
 
@@ -34524,6 +34825,7 @@
 </code>
 
 - [xl337x/CVE-2023-31902](https://github.com/xl337x/CVE-2023-31902)
+- [lypd0/mouseserver-exploit](https://github.com/lypd0/mouseserver-exploit)
 
 ### CVE-2023-32031 (2023-06-14)
 
@@ -38315,9 +38617,6 @@
 </code>
 
 - [actuator/com.eypcnnapps.quickreboot](https://github.com/actuator/com.eypcnnapps.quickreboot)
-
-### CVE-2023-47400
-- [LucasVanHaaren/CVE-2023-47400](https://github.com/LucasVanHaaren/CVE-2023-47400)
 
 ### CVE-2023-47437 (2023-11-27)
 
@@ -51595,6 +51894,7 @@
 - [tr3m0x/CVE-2021-41773](https://github.com/tr3m0x/CVE-2021-41773)
 - [manfredgabriel/cve-2021-41773-lab](https://github.com/manfredgabriel/cve-2021-41773-lab)
 - [KunalKhandelwal-dev/cve-2021-41773-lab](https://github.com/KunalKhandelwal-dev/cve-2021-41773-lab)
+- [Shams-Ul-Mehmood/CVE-2021-41773-Exploit](https://github.com/Shams-Ul-Mehmood/CVE-2021-41773-Exploit)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -52635,7 +52935,6 @@
 - [hotpotcookie/CVE-2021-44228-white-box](https://github.com/hotpotcookie/CVE-2021-44228-white-box)
 - [s-retlaw/l4srs](https://github.com/s-retlaw/l4srs)
 - [TPower2112/Writing-Sample-1](https://github.com/TPower2112/Writing-Sample-1)
-- [r3kind1e/Log4Shell-obfuscated-payloads-generator](https://github.com/r3kind1e/Log4Shell-obfuscated-payloads-generator)
 - [yuuki1967/CVE-2021-44228-Apache-Log4j-Rce](https://github.com/yuuki1967/CVE-2021-44228-Apache-Log4j-Rce)
 - [moshuum/tf-log4j-aws-poc](https://github.com/moshuum/tf-log4j-aws-poc)
 - [jaehnri/CVE-2021-44228](https://github.com/jaehnri/CVE-2021-44228)
