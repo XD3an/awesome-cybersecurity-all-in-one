@@ -449,6 +449,7 @@
 - [m4sh-wacker/CVE-2026-3891-Pix-for-WooCommerce-Plugin-Exploit](https://github.com/m4sh-wacker/CVE-2026-3891-Pix-for-WooCommerce-Plugin-Exploit)
 - [shinthink/CVE-2026-3891](https://github.com/shinthink/CVE-2026-3891)
 - [VeronnX666/CVE-2026-3891](https://github.com/VeronnX666/CVE-2026-3891)
+- [Ch4120N/CVE-2026-3891](https://github.com/Ch4120N/CVE-2026-3891)
 
 ### CVE-2026-4020 (2026-03-31)
 
@@ -1473,6 +1474,146 @@
 
 - [Nxploited/CVE-2026-10818](https://github.com/Nxploited/CVE-2026-10818)
 
+### CVE-2026-11101 (2026-06-04)
+
+<code>Uninitialized Use in Dawn in Google Chrome on Windows prior to 149.0.7827.53 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11101-HTTP-Cache-Poisoning-via-Unkeyed-Query-Parameter](https://github.com/George0Papasotiriou/CVE-2026-11101-HTTP-Cache-Poisoning-via-Unkeyed-Query-Parameter)
+
+### CVE-2026-11102 (2026-06-04)
+
+<code>Inappropriate implementation in Isolated Web Apps in Google Chrome prior to 149.0.7827.53 allowed a remote attacker to execute arbitrary code inside a sandbox via a malicious file. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11102-OAuth2-Implicit-Grant-Fragment-Hijacking](https://github.com/George0Papasotiriou/CVE-2026-11102-OAuth2-Implicit-Grant-Fragment-Hijacking)
+
+### CVE-2026-11103 (2026-06-04)
+
+<code>Inappropriate implementation in Installer in Google Chrome on Windows prior to 149.0.7827.53 allowed a local attacker to perform OS-level privilege escalation via a malicious file. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11103-GraphQL-Batching-Alias-Rate-Limit-Bypass](https://github.com/George0Papasotiriou/CVE-2026-11103-GraphQL-Batching-Alias-Rate-Limit-Bypass)
+
+### CVE-2026-11104 (2026-06-04)
+
+<code>Uninitialized Use in ANGLE in Google Chrome prior to 149.0.7827.53 allowed a remote attacker who had compromised the renderer process to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11104-Python-SSTI-via-Jinja2-attr-Filter-Bypass](https://github.com/George0Papasotiriou/CVE-2026-11104-Python-SSTI-via-Jinja2-attr-Filter-Bypass)
+
+### CVE-2026-11105 (2026-06-04)
+
+<code>Insufficient validation of untrusted input in WebUI in Google Chrome prior to 149.0.7827.53 allowed a remote attacker who had compromised the renderer process to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11105-Stack-Buffer-Overflow-in-Custom-Base64-Decoder](https://github.com/George0Papasotiriou/CVE-2026-11105-Stack-Buffer-Overflow-in-Custom-Base64-Decoder)
+
+### CVE-2026-11106 (2026-06-04)
+
+<code>Inappropriate implementation in Media in Google Chrome prior to 149.0.7827.53 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11106-DNS-Zone-Transfer-AXFR-Information-Disclosure](https://github.com/George0Papasotiriou/CVE-2026-11106-DNS-Zone-Transfer-AXFR-Information-Disclosure)
+
+### CVE-2026-11107 (2026-06-04)
+
+<code>Inappropriate implementation in Downloads in Google Chrome prior to 149.0.7827.53 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11107-Insecure-Direct-Object-Reference-with-Predictable-UUIDv1](https://github.com/George0Papasotiriou/CVE-2026-11107-Insecure-Direct-Object-Reference-with-Predictable-UUIDv1)
+
+### CVE-2026-11108 (2026-06-04)
+
+<code>Inappropriate implementation in NFC in Google Chrome on Android prior to 149.0.7827.53 allowed a remote attacker to perform privilege escalation via a crafted HTML page. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11108-Integer-Overflow-in-Memory-Allocator-kmalloc-Sim-](https://github.com/George0Papasotiriou/CVE-2026-11108-Integer-Overflow-in-Memory-Allocator-kmalloc-Sim-)
+
+### CVE-2026-11109 (2026-06-04)
+
+<code>Uninitialized Use in ANGLE in Google Chrome prior to 149.0.7827.53 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11109-Bluetooth-Classic-KNOB-Attack-Key-Negotiation-of-Bluetooth-](https://github.com/George0Papasotiriou/CVE-2026-11109-Bluetooth-Classic-KNOB-Attack-Key-Negotiation-of-Bluetooth-)
+
+### CVE-2026-11110 (2026-06-04)
+
+<code>Uninitialized Use in ANGLE in Google Chrome prior to 149.0.7827.53 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11110-AES-GCM-Nonce-Reuse-Leading-to-Key-Recovery](https://github.com/George0Papasotiriou/CVE-2026-11110-AES-GCM-Nonce-Reuse-Leading-to-Key-Recovery)
+
+### CVE-2026-11111 (2026-06-04)
+
+<code>Out of bounds read in ANGLE in Google Chrome prior to 149.0.7827.53 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11111-TOCTOU-in-File-Permission-Check-Before-Open](https://github.com/George0Papasotiriou/CVE-2026-11111-TOCTOU-in-File-Permission-Check-Before-Open)
+
+### CVE-2026-11112 (2026-06-04)
+
+<code>Insufficient validation of untrusted input in Chromoting in Google Chrome on Linux prior to 149.0.7827.53 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted Chrome Extension. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11112-XXE-via-SVG-Image-Upload](https://github.com/George0Papasotiriou/CVE-2026-11112-XXE-via-SVG-Image-Upload)
+
+### CVE-2026-11113 (2026-06-04)
+
+<code>Insufficient validation of untrusted input in ANGLE in Google Chrome prior to 149.0.7827.53 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11113-SMTP-Header-Injection-in-Contact-Form](https://github.com/George0Papasotiriou/CVE-2026-11113-SMTP-Header-Injection-in-Contact-Form)
+
+### CVE-2026-11114 (2026-06-04)
+
+<code>Use after free in Device Trust in Google Chrome on Mac prior to 149.0.7827.53 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11114-Node.js-vm-Sandbox-Escape-via-Proxy](https://github.com/George0Papasotiriou/CVE-2026-11114-Node.js-vm-Sandbox-Escape-via-Proxy)
+
+### CVE-2026-11115 (2026-06-04)
+
+<code>Use after free in Updater in Google Chrome on Windows prior to 149.0.7827.53 allowed a local attacker to perform OS-level privilege escalation via a malicious file. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11115-Database-Connection-String-Injection-via-Env-Variable](https://github.com/George0Papasotiriou/CVE-2026-11115-Database-Connection-String-Injection-via-Env-Variable)
+
+### CVE-2026-11116 (2026-06-04)
+
+<code>Use after free in Chromoting in Google Chrome prior to 149.0.7827.53 allowed a remote attacker to execute arbitrary code via malicious network traffic. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11116-SNMPv3-Authentication-Bypass-via-Default-EngineID](https://github.com/George0Papasotiriou/CVE-2026-11116-SNMPv3-Authentication-Bypass-via-Default-EngineID)
+
+### CVE-2026-11117 (2026-06-04)
+
+<code>Use after free in Views in Google Chrome on Windows prior to 149.0.7827.53 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11117-WPA2-4-Way-Handshake-Reinstallation-KRACK-Sim-](https://github.com/George0Papasotiriou/CVE-2026-11117-WPA2-4-Way-Handshake-Reinstallation-KRACK-Sim-)
+
+### CVE-2026-11118 (2026-06-04)
+
+<code>Use after free in WebRTC in Google Chrome prior to 149.0.7827.53 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11118-HTTP-2-Rapid-Reset-DDoS](https://github.com/George0Papasotiriou/CVE-2026-11118-HTTP-2-Rapid-Reset-DDoS)
+
+### CVE-2026-11119 (2026-06-04)
+
+<code>Inappropriate implementation in GPU in Google Chrome on Android prior to 149.0.7827.53 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11119-Padding-Oracle-Attack-on-CBC-Mode-Encryption](https://github.com/George0Papasotiriou/CVE-2026-11119-Padding-Oracle-Attack-on-CBC-Mode-Encryption)
+
+### CVE-2026-11120 (2026-06-04)
+
+<code>Insufficient validation of untrusted input in Enterprise Reporting in Google Chrome prior to 149.0.7827.53 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)
+</code>
+
+- [George0Papasotiriou/CVE-2026-11120-Command-Injection-via-Git-URL-in-CI-CD-Pipeline](https://github.com/George0Papasotiriou/CVE-2026-11120-Command-Injection-via-Git-URL-in-CI-CD-Pipeline)
+
 ### CVE-2026-11344 (2026-06-05)
 
 <code>A vulnerability was found in code-projects Vehicle Management System 1.0. This impacts an unknown function of the file newdriver.php of the component New Driver Registration Form. Performing a manipulation of the argument photo results in unrestricted upload. The attack may be initiated remotely. The exploit has been made public and could be used.
@@ -1856,6 +1997,7 @@
 - [0xBlackash/CVE-2026-15409](https://github.com/0xBlackash/CVE-2026-15409)
 - [MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check](https://github.com/MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check)
 - [tc4dy/CVE-2026-15409-15410-Framework](https://github.com/tc4dy/CVE-2026-15409-15410-Framework)
+- [Ch4120N/CVE-2026-15409](https://github.com/Ch4120N/CVE-2026-15409)
 
 ### CVE-2026-15410 (2026-07-14)
 
@@ -1902,6 +2044,7 @@
 
 - [WadesWeaponShed/Check-Point-Trusted-Access-Review](https://github.com/WadesWeaponShed/Check-Point-Trusted-Access-Review)
 - [sfewer-r7/CVE-2026-16232](https://github.com/sfewer-r7/CVE-2026-16232)
+- [HackSpeak/checkpoint-smartconsole-poc](https://github.com/HackSpeak/checkpoint-smartconsole-poc)
 
 ### CVE-2026-16475
 - [afertar/CVE-2026-16475-PoC](https://github.com/afertar/CVE-2026-16475-PoC)
@@ -1945,6 +2088,13 @@
 </code>
 
 - [4D4J/objdump-Out-Of-Bounds-write](https://github.com/4D4J/objdump-Out-Of-Bounds-write)
+
+### CVE-2026-18718 (2026-08-03)
+
+<code>Ghidra contains an arbitrary code execution vulnerability in the Swift demangler analyzer that allows an attacker to execute arbitrary binaries by supplying a malicious Ghidra project with a crafted Swift tool directory path. When a victim opens the attacker-supplied project, SwiftDemanglerAnalyzer restores the persisted Swift binary directory from project state and SwiftNativeDemangler executes the resolved binary without integrity or signature verification, causing attacker-controlled executables to run under the Ghidra process user with no prompt or confirmation.
+</code>
+
+- [sn0x-sharma/CVE-2026-18718](https://github.com/sn0x-sharma/CVE-2026-18718)
 
 ### CVE-2026-20127 (2026-02-25)
 
@@ -2563,6 +2713,7 @@
 </code>
 
 - [huynambka/cve-2026-26114-poc](https://github.com/huynambka/cve-2026-26114-poc)
+- [fazilbaig1/CVE-2026-26114-Patch](https://github.com/fazilbaig1/CVE-2026-26114-Patch)
 
 ### CVE-2026-26118 (2026-03-10)
 
@@ -3081,6 +3232,13 @@
 
 - [webshellseo8/CVE-2026-32488-POC](https://github.com/webshellseo8/CVE-2026-32488-POC)
 - [izxci/CVE-2026-32488](https://github.com/izxci/CVE-2026-32488)
+
+### CVE-2026-32621 (2026-03-13)
+
+<code>Apollo Federation is an architecture for declaratively composing APIs into a unified graph. Prior to 2.9.6, 2.10.5, 2.11.6, 2.12.3, and 2.13.2, a vulnerability exists in query plan execution within the gateway that may allow pollution of Object.prototype in certain scenarios. A malicious client may be able to pollute Object.prototype in gateway directly by crafting operations with field aliases and/or variable names that target prototype-inheritable properties. Alternatively, if a subgraph were to be compromised by a malicious actor, they may be able to pollute Object.prototype in gateway by crafting JSON response payloads that target prototype-inheritable properties. This vulnerability is fixed in 2.9.6, 2.10.5, 2.11.6, 2.12.3, and 2.13.2.
+</code>
+
+- [sam00/POC-CVE-2026-32621-Apollo-Federation-XSS-Vulnerability](https://github.com/sam00/POC-CVE-2026-32621-Apollo-Federation-XSS-Vulnerability)
 
 ### CVE-2026-32646 (2026-04-03)
 
@@ -3632,7 +3790,11 @@
 
 - [sermikr0/CVE-2026-38427](https://github.com/sermikr0/CVE-2026-38427)
 
-### CVE-2026-38444
+### CVE-2026-38444 (2026-08-03)
+
+<code>osTicket v1.18.3 is vulnerable to Stored Cross-Site Scripting (XSS) via the email From-header display name. The value is extracted without sanitization in include/class.mailparse.php and stored raw in the poster field of ost_thread_entry. When an unauthenticated attacker sends a reply email to an existing ticket from an unregistered address with an XSS payload in the From display name.
+</code>
+
 - [fr3akhacks/cve-disclosures](https://github.com/fr3akhacks/cve-disclosures)
 
 ### CVE-2026-38526 (2026-04-14)
@@ -4232,6 +4394,13 @@
 
 - [izxci/CVE-2026-42758](https://github.com/izxci/CVE-2026-42758)
 
+### CVE-2026-42826 (2026-05-07)
+
+<code>Exposure of sensitive information to an unauthorized actor in Azure DevOps allows an unauthorized attacker to disclose information over a network.
+</code>
+
+- [sam00/POC-CVE-2026-42826-2026-42826-Microsoft-Azure-DevOps-Information-Disclosure-Vulnerability](https://github.com/sam00/POC-CVE-2026-42826-2026-42826-Microsoft-Azure-DevOps-Information-Disclosure-Vulnerability)
+
 ### CVE-2026-42880 (2026-05-07)
 
 <code>Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. From versions 3.2.0 to before 3.2.11 and 3.3.0 to before 3.3.9, there is a missing authorization and data-masking gap in Argo CD's ServerSideDiff endpoint that allows an attacker with read-only access to extract plaintext Kubernetes Secret data from etcd via the Kubernetes API server's Server-Side Apply dry-run mechanism. This issue has been patched in versions 3.2.11 and 3.3.9.
@@ -4278,6 +4447,7 @@
 - [limo57640-crypto/nginx-rift-detector](https://github.com/limo57640-crypto/nginx-rift-detector)
 - [MateusVerass/nGixshell](https://github.com/MateusVerass/nGixshell)
 - [BarAppTeam/nginx-cve-fix](https://github.com/BarAppTeam/nginx-cve-fix)
+- [tal7aouy/nginx-cve-2026-42945](https://github.com/tal7aouy/nginx-cve-2026-42945)
 - [Renison-Gohel/CVE-2026-42945-NGINX-Rift](https://github.com/Renison-Gohel/CVE-2026-42945-NGINX-Rift)
 - [hnytgl/CVE-2026-42945](https://github.com/hnytgl/CVE-2026-42945)
 - [imSre9/CVE-2026-42945](https://github.com/imSre9/CVE-2026-42945)
@@ -4427,6 +4597,7 @@
 - [veygax/HORiZonstack](https://github.com/veygax/HORiZonstack)
 - [boxiaolanya2008/CVE-2026-43499-Neo11Plus](https://github.com/boxiaolanya2008/CVE-2026-43499-Neo11Plus)
 - [alex193a/Root-My-Pixel](https://github.com/alex193a/Root-My-Pixel)
+- [jason5545/ghostlock-myron-tw](https://github.com/jason5545/ghostlock-myron-tw)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -4722,7 +4893,6 @@
 
 - [ry-allan/tanstack-compromise-checker](https://github.com/ry-allan/tanstack-compromise-checker)
 - [Yomisana/are-you-get-tanstack-attack](https://github.com/Yomisana/are-you-get-tanstack-attack)
-- [qi-scape/scan-shai-hulud](https://github.com/qi-scape/scan-shai-hulud)
 - [shayr1/shai-hulud-scan](https://github.com/shayr1/shai-hulud-scan)
 - [Intrudify/mini-shai-hulud-scanner](https://github.com/Intrudify/mini-shai-hulud-scanner)
 - [fabriziosalmi/tanstack-compromise-checker](https://github.com/fabriziosalmi/tanstack-compromise-checker)
@@ -4791,6 +4961,7 @@
 - [tchuin2609/YellowKey-Bitlocker](https://github.com/tchuin2609/YellowKey-Bitlocker)
 - [tchuin2609/tchuin2609.github.io](https://github.com/tchuin2609/tchuin2609.github.io)
 - [yellowkeybitlocker/YellowKey-Bitlocker-CVE-2026-45585](https://github.com/yellowkeybitlocker/YellowKey-Bitlocker-CVE-2026-45585)
+- [Donalhighnecked528/YellowKey-Bitlocker-CVE-2026-45585](https://github.com/Donalhighnecked528/YellowKey-Bitlocker-CVE-2026-45585)
 
 ### CVE-2026-45659 (2026-05-22)
 
@@ -4854,6 +5025,7 @@
 - [suominen/cifswitch](https://github.com/suominen/cifswitch)
 - [MrForkBomb/CIFSwitch-Checker-CVE-2026-46243](https://github.com/MrForkBomb/CIFSwitch-Checker-CVE-2026-46243)
 - [liamromanis101/cifswitch-check](https://github.com/liamromanis101/cifswitch-check)
+- [0xBlackash/CVE-2026-46243](https://github.com/0xBlackash/CVE-2026-46243)
 
 ### CVE-2026-46275 (2026-06-08)
 
@@ -5328,6 +5500,7 @@
 - [eris-ths/supply-chain-guard](https://github.com/eris-ths/supply-chain-guard)
 - [xtremebeing/starlette-host-header-lab](https://github.com/xtremebeing/starlette-host-header-lab)
 - [Bhanunamikaze/BadHost-CVE-2026-48710-Exploit](https://github.com/Bhanunamikaze/BadHost-CVE-2026-48710-Exploit)
+- [sb-ox/repro-OXDEV-77637-uv-workspace](https://github.com/sb-ox/repro-OXDEV-77637-uv-workspace)
 
 ### CVE-2026-48732 (2026-06-24)
 
@@ -6123,6 +6296,8 @@
 - [ChPratik/CVE-2026-54121](https://github.com/ChPratik/CVE-2026-54121)
 - [nafiez/Metasploit-CVE-2026-54121-Certighost](https://github.com/nafiez/Metasploit-CVE-2026-54121-Certighost)
 - [KrakenEU/CVE-2026-54121-CertiGhost](https://github.com/KrakenEU/CVE-2026-54121-CertiGhost)
+- [AtlasVector/Certighost-CVE-2026-54121](https://github.com/AtlasVector/Certighost-CVE-2026-54121)
+- [sam00/POC-CVE-2026-54121-Certighost](https://github.com/sam00/POC-CVE-2026-54121-Certighost)
 
 ### CVE-2026-54161
 - [ja-errorpro/CVE-2026-54161](https://github.com/ja-errorpro/CVE-2026-54161)
@@ -6334,6 +6509,9 @@
 </code>
 
 - [oscerd/CVE-2026-56139](https://github.com/oscerd/CVE-2026-56139)
+
+### CVE-2026-56158
+- [sam00/CVE-2026-56158-.NET-Framework-RCE-PoC-Exploit](https://github.com/sam00/CVE-2026-56158-.NET-Framework-RCE-PoC-Exploit)
 
 ### CVE-2026-56164 (2026-07-14)
 
@@ -7018,8 +7196,26 @@
 
 - [IlhomjonR/CVE-2026-67595](https://github.com/IlhomjonR/CVE-2026-67595)
 
-### CVE-2026-67599
+### CVE-2026-67599 (2026-08-03)
+
+<code>ClearOS 7.9 contains an OS command injection vulnerability in the Log Viewer component that allows authenticated attackers to execute arbitrary commands by submitting unsanitized input through the filter parameter, which is interpolated directly into a shell command in File.php. Attackers can inject command substitution payloads into the filter parameter to execute arbitrary commands as the webconfig user, and due to extensive NOPASSWD sudo privileges granted to that user by default, immediately escalate to root.
+</code>
+
 - [LazyTitan33/CVE-2026-67599_ClearOS_RCE](https://github.com/LazyTitan33/CVE-2026-67599_ClearOS_RCE)
+
+### CVE-2026-68771 (2026-07-31)
+
+<code>ComfyUI v0.23.0 contains an unsafe deserialization vulnerability in the LoadTrainingDataset node that allows unauthenticated remote attackers to execute arbitrary Python code by uploading a crafted pickle file and triggering its deserialization. Attackers can upload a malicious shard_*.pkl file via the unauthenticated POST /upload/image endpoint and then queue a workflow graph via POST /prompt referencing the uploaded file, causing torch.load to deserialize the attacker-controlled pickle payload using __reduce__ and execute arbitrary commands as the ComfyUI process user.
+</code>
+
+- [0xdak/CVE-2026-68771_exploit](https://github.com/0xdak/CVE-2026-68771_exploit)
+
+### CVE-2026-69083 (2026-08-03)
+
+<code>SiYuan versions before v3.7.3 contain SQL injection vulnerabilities in the fullTextSearchAssetContent endpoint reachable by unauthenticated users and publish RoleReader tokens. Attackers can execute arbitrary SQL on the read-write asset-content database via unescaped method parameters and REGEXP clauses to read, modify, or delete cross-notebook data.
+</code>
+
+- [0xdak/CVE-2026-69083_exploit](https://github.com/0xdak/CVE-2026-69083_exploit)
 
 ### CVE-2026-69212
 - [c0gnit00/CVE-2026-69212](https://github.com/c0gnit00/CVE-2026-69212)
@@ -15856,7 +16052,6 @@
 - [xiaoLvChen/CVE-2025-55182](https://github.com/xiaoLvChen/CVE-2025-55182)
 - [captain4554/CVE-2025-55182-Scanner](https://github.com/captain4554/CVE-2025-55182-Scanner)
 - [captain4554/captain4554.github.io](https://github.com/captain4554/captain4554.github.io)
-- [HackIndex-io/React2Shell-CVE-2025-55182](https://github.com/HackIndex-io/React2Shell-CVE-2025-55182)
 - [rahuulmiishra/react2shell-CVE-2025-55182](https://github.com/rahuulmiishra/react2shell-CVE-2025-55182)
 - [m3ngx1ng/CVE-2025-55182-GUI](https://github.com/m3ngx1ng/CVE-2025-55182-GUI)
 - [joaovicdev/EXPLOIT-CVE-2025-55182](https://github.com/joaovicdev/EXPLOIT-CVE-2025-55182)
@@ -16374,6 +16569,13 @@
 </code>
 
 - [xyyzxc/CVE-2025-56819](https://github.com/xyyzxc/CVE-2025-56819)
+
+### CVE-2025-57052 (2025-09-03)
+
+<code>cJSON 1.5.0 through 1.7.18 allows out-of-bounds access via the decode_array_index_from_pointer function in cJSON_Utils.c, allowing remote attackers to bypass array bounds checking and access restricted data via malformed JSON pointer strings containing alphanumeric characters.
+</code>
+
+- [DhruvP2205/cjson-rust-port](https://github.com/DhruvP2205/cjson-rust-port)
 
 ### CVE-2025-57055 (2025-09-17)
 
@@ -20223,6 +20425,7 @@
 - [veronimo669/pdf.js-CVE-2024-4367](https://github.com/veronimo669/pdf.js-CVE-2024-4367)
 - [yuimamur/CVE-2024-4367-hands-on](https://github.com/yuimamur/CVE-2024-4367-hands-on)
 - [yuimamur/CVE-2024-4367-hands-on-01](https://github.com/yuimamur/CVE-2024-4367-hands-on-01)
+- [DharmarajPS/pdfjs-cve-2024-4367-poc](https://github.com/DharmarajPS/pdfjs-cve-2024-4367-poc)
 
 ### CVE-2024-4406 (2024-05-02)
 
@@ -28685,13 +28888,6 @@
 
 ### CVE-2024-50964
 - [fdzdev/CVE-2024-50964](https://github.com/fdzdev/CVE-2024-50964)
-
-### CVE-2024-50967 (2025-01-17)
-
-<code>The /rest/rights/ REST API endpoint in Becon DATAGerry through 2.2.0 contains an Incorrect Access Control vulnerability. An attacker can remotely access this endpoint without authentication, leading to unauthorized disclosure of sensitive information.
-</code>
-
-- [0xByteHunter/CVE-2024-50967](https://github.com/0xByteHunter/CVE-2024-50967)
 
 ### CVE-2024-50968 (2024-11-14)
 
@@ -41241,6 +41437,7 @@
 - [march0n/PoC-CVE-2022-22965-Spring4Shell](https://github.com/march0n/PoC-CVE-2022-22965-Spring4Shell)
 - [Kuri119/CVE-2022-22965-Spring4Shell](https://github.com/Kuri119/CVE-2022-22965-Spring4Shell)
 - [meng-security/spring4shell-local-verification-lab](https://github.com/meng-security/spring4shell-local-verification-lab)
+- [PrinceH4k/Spring4Shell-POC](https://github.com/PrinceH4k/Spring4Shell-POC)
 
 ### CVE-2022-22968 (2022-04-14)
 
@@ -47021,7 +47218,6 @@
 - [halissha/CVE-2021-3156](https://github.com/halissha/CVE-2021-3156)
 - [sharkmoos/Baron-Samedit](https://github.com/sharkmoos/Baron-Samedit)
 - [RodricBr/CVE-2021-3156](https://github.com/RodricBr/CVE-2021-3156)
-- [q77190858/CVE-2021-3156](https://github.com/q77190858/CVE-2021-3156)
 - [arvindshima/CVE-2021-3156](https://github.com/arvindshima/CVE-2021-3156)
 - [Mhackiori/CVE-2021-3156](https://github.com/Mhackiori/CVE-2021-3156)
 - [PhuketIsland/CVE-2021-3156-centos7](https://github.com/PhuketIsland/CVE-2021-3156-centos7)
@@ -50022,6 +50218,7 @@
 - [Hirusha-N/CVE-2021-34527-CVE-2023-38831-and-CVE-2023-32784](https://github.com/Hirusha-N/CVE-2021-34527-CVE-2023-38831-and-CVE-2023-32784)
 - [AUSK1LL9/CVE-2021-34527](https://github.com/AUSK1LL9/CVE-2021-34527)
 - [AlDawli/CVE-2021-34527-](https://github.com/AlDawli/CVE-2021-34527-)
+- [KaritaMW/printnightmare-detection-mitigation-lab](https://github.com/KaritaMW/printnightmare-detection-mitigation-lab)
 
 ### CVE-2021-34558 (2021-07-15)
 
@@ -59290,6 +59487,13 @@
 </code>
 
 - [raytran54/CVE-2019-1698](https://github.com/raytran54/CVE-2019-1698)
+
+### CVE-2019-1749 (2019-03-27)
+
+<code>A vulnerability in the ingress traffic validation of Cisco IOS XE Software for Cisco Aggregation Services Router (ASR) 900 Route Switch Processor 3 (RSP3) could allow an unauthenticated, adjacent attacker to trigger a reload of an affected device, resulting in a denial of service (DoS) condition. The vulnerability exists because the software insufficiently validates ingress traffic on the ASIC used on the RSP3 platform. An attacker could exploit this vulnerability by sending a malformed OSPF version 2 (OSPFv2) message to an affected device. A successful exploit could allow the attacker to cause a reload of the iosd process, triggering a reload of the affected device and resulting in a DoS condition.
+</code>
+
+- [delbertgiovanni/test-xss-swagger-CVE-2019-1749](https://github.com/delbertgiovanni/test-xss-swagger-CVE-2019-1749)
 
 ### CVE-2019-1759 (2019-03-28)
 
@@ -68911,6 +69115,7 @@
 - [assalielmehdi/CVE-2017-12635](https://github.com/assalielmehdi/CVE-2017-12635)
 - [cyberharsh/Apache-couchdb-CVE-2017-12635](https://github.com/cyberharsh/Apache-couchdb-CVE-2017-12635)
 - [Dungsocool/CVE-2017-12635_36](https://github.com/Dungsocool/CVE-2017-12635_36)
+- [Darabium/couchdb-exploit](https://github.com/Darabium/couchdb-exploit)
 
 ### CVE-2017-12636 (2017-11-14)
 
