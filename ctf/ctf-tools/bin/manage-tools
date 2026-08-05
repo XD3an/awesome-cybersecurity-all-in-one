@@ -1,0 +1,255 @@
+#!/usr/bin/env bash
+set -eu -o pipefail
+# set -x
+#
+# ctf-tools is all-in on Nix. Every tool is an output of the flake in this repo
+# (see flake.nix and nix/). This script is a thin convenience wrapper around
+# `nix profile` + `nix eval` so the familiar `manage-tools install <tool>` verbs
+# keep working. There is no longer a per-distro / ./install-script backend.
+
+CTF_TOOLS_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+FLAKE="${CTF_TOOLS_FLAKE:-$CTF_TOOLS_ROOT}"
+
+function usage()
+{
+	cat <<END
+Usage: $(basename $0) [-vf] (list|install|uninstall|reinstall|upgrade|search|setup) [tool]
+
+Everything is backed by Nix. Tools live in the flake at:
+    $FLAKE
+so anything below is equivalent to the underlying \`nix\` command shown.
+
+Where:
+    -v      verbose mode (pass -L / show nix build logs)
+    -f      force: on install, remove an existing copy first
+    tool    the name of the tool. if "all", acts on all tools.
+
+Actions:
+    list            list all available tools   (-i: only installed, -u: only uninstalled)
+    install  TOOL   nix profile install $FLAKE#TOOL
+    uninstall TOOL  nix profile remove  TOOL
+    reinstall TOOL  remove then install
+    upgrade [TOOL]  nix profile upgrade TOOL   (no TOOL / "all" => upgrade everything)
+    search   TERM   search tool names + README descriptions
+    setup           print how the Nix profile puts tools on your PATH
+
+Examples:
+    $(basename $0) install qira
+    nix profile install $FLAKE#qira        # ... is all the above really does
+    nix run $FLAKE#pwntools
+END
+}
+
+VERBOSE=0
+FORCE=0
+
+function tool_log()
+{
+	echo "$(tput setaf 4 2>/dev/null)TOOLS | ${TOOL:-*} |$(tput sgr0 2>/dev/null) $@"
+}
+
+function nix_cmd()
+{
+	nix --extra-experimental-features 'nix-command flakes' "$@"
+}
+
+# nix system double, e.g. x86_64-linux
+SYSTEM="$(nix_cmd eval --impure --raw --expr 'builtins.currentSystem')"
+
+# newline-separated list of every tool the flake exposes (minus the "default" env)
+function all_tools()
+{
+	nix_cmd eval --raw "$FLAKE#packages.$SYSTEM" \
+		--apply 'ns: builtins.concatStringsSep "\n" (builtins.filter (n: n != "default") (builtins.attrNames ns))'
+}
+
+# best-effort: tool names currently present in the active nix profile
+function installed_tools()
+{
+	nix_cmd profile list 2>/dev/null \
+		| grep -oE "packages\.$SYSTEM\.[^ ]+" \
+		| sed "s/packages\.$SYSTEM\.//" \
+		| sort -u
+}
+
+function is_tool()
+{
+	all_tools | grep -qxF "$1"
+}
+
+function require_tool()
+{
+	if [[ -z "${TOOL:-}" ]]; then
+		TOOL="$ACTION" tool_log "must provide a tool name (see: $(basename $0) list)"
+		exit 1
+	fi
+	if [[ "$TOOL" == "all" ]]; then
+		return 0
+	fi
+	if ! is_tool "$TOOL"; then
+		TOOL="$ACTION" tool_log "unknown tool '$TOOL' (see: $(basename $0) list)"
+		exit 1
+	fi
+}
+
+function do_install()
+{
+	local t="$1"
+	[[ "$FORCE" -eq 1 ]] && nix_cmd profile remove "$t" >/dev/null 2>&1 || true
+	TOOL="$t" tool_log "nix profile install $FLAKE#$t"
+	if [[ "$VERBOSE" -eq 1 ]]; then
+		nix_cmd profile install -L "$FLAKE#$t"
+	else
+		nix_cmd profile install "$FLAKE#$t"
+	fi
+}
+
+function do_uninstall()
+{
+	local t="$1"
+	TOOL="$t" tool_log "nix profile remove $t"
+	nix_cmd profile remove "$t" 2>/dev/null \
+		|| nix_cmd profile remove ".*#$t\$" 2>/dev/null \
+		|| TOOL="$t" tool_log "not present in nix profile"
+}
+
+# Bootstrap the machine for Nix-based installs: ensure nix exists, flakes are
+# enabled, and the ctftools binary cache is configured (so installs are
+# prebuilt). Idempotent.
+CACHE_URL="https://ctftools.cachix.org"
+CACHE_KEY="ctftools.cachix.org-1:sBvy7vTAU6dLkJJizYtgYh4/NzpxjwRBrBGJLrVAzgA="
+
+function do_setup()
+{
+	# 1. Nix present?
+	if ! command -v nix >/dev/null 2>&1; then
+		TOOL=setup tool_log "Nix is not installed. Install it, then re-run 'setup':"
+		TOOL=setup tool_log "  curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install"
+		TOOL=setup tool_log "  (or see https://nixos.org/download)"
+		return 1
+	fi
+	TOOL=setup tool_log "found $(nix --version)"
+
+	local conf="${NIX_USER_CONF_DIR:-$HOME/.config/nix}/nix.conf"
+	mkdir -p "$(dirname "$conf")"; touch "$conf"
+
+	# 2. Enable flakes + the unified CLI if not already active.
+	if nix show-config 2>/dev/null | grep -qE '^experimental-features.*flakes'; then
+		TOOL=setup tool_log "flakes already enabled"
+	elif grep -qE '^experimental-features' "$conf"; then
+		TOOL=setup tool_log "add 'nix-command flakes' to experimental-features in $conf"
+	else
+		echo 'experimental-features = nix-command flakes' >> "$conf"
+		TOOL=setup tool_log "enabled nix-command + flakes in $conf"
+	fi
+
+	# 3. Configure the ctftools binary cache so installs download prebuilt.
+	#    Prefer cachix (it also sorts out trusted-users on daemon installs).
+	if command -v cachix >/dev/null 2>&1; then
+		cachix use ctftools && TOOL=setup tool_log "configured ctftools cache via cachix"
+	elif grep -q 'ctftools.cachix.org' "$conf"; then
+		TOOL=setup tool_log "ctftools cache already in $conf"
+	else
+		{
+			echo "extra-substituters = $CACHE_URL"
+			echo "extra-trusted-public-keys = $CACHE_KEY"
+		} >> "$conf"
+		TOOL=setup tool_log "added ctftools cache to $conf"
+		TOOL=setup tool_log "(on a multi-user/daemon install this only applies if you're a trusted-user;"
+		TOOL=setup tool_log " otherwise install cachix and run 'cachix use ctftools', or pass --accept-flake-config)"
+	fi
+
+	# 4. PATH sanity.
+	case ":$PATH:" in
+		*":$HOME/.nix-profile/bin:"*) : ;;
+		*) TOOL=setup tool_log "ensure ~/.nix-profile/bin is on your PATH (re-login or source your Nix profile script)" ;;
+	esac
+
+	TOOL=setup tool_log "setup complete — try: $(basename "$0") install <tool>"
+}
+
+## ---- argument parsing --------------------------------------------------
+
+[[ $# -eq 0 ]] && { usage; exit 1; }
+
+while [[ "${1:-}" == -* ]]; do
+	case "$1" in
+		-v) VERBOSE=1 ;;
+		-f) FORCE=1 ;;
+		-h|--help) usage; exit 0 ;;
+		*) usage; exit 1 ;;
+	esac
+	shift
+done
+
+ACTION="${1:-}"
+TOOL="${2:-}"
+
+## ---- dispatch ----------------------------------------------------------
+
+case "$ACTION" in
+	list)
+		case "${TOOL:-}" in
+			"")   all_tools ;;
+			-i)   comm -12 <(all_tools | sort) <(installed_tools) ;;
+			-u)   comm -23 <(all_tools | sort) <(installed_tools) ;;
+			*)    usage; exit 1 ;;
+		esac
+		;;
+
+	install)
+		require_tool
+		if [[ "$TOOL" == "all" ]]; then
+			for t in $(all_tools); do do_install "$t" || tool_log "FAILED: $t"; done
+		else
+			do_install "$TOOL"
+		fi
+		;;
+
+	uninstall)
+		require_tool
+		if [[ "$TOOL" == "all" ]]; then
+			for t in $(installed_tools); do do_uninstall "$t"; done
+		else
+			do_uninstall "$TOOL"
+		fi
+		;;
+
+	reinstall)
+		require_tool
+		do_uninstall "$TOOL"
+		do_install "$TOOL"
+		;;
+
+	upgrade)
+		if [[ -z "${TOOL:-}" || "$TOOL" == "all" ]]; then
+			TOOL="all" tool_log "updating flake + upgrading all installed tools"
+			nix_cmd flake update --flake "$FLAKE" || true
+			nix_cmd profile upgrade --all
+		else
+			require_tool
+			TOOL="$TOOL" tool_log "nix profile upgrade $TOOL"
+			nix_cmd profile upgrade "$TOOL"
+		fi
+		;;
+
+	search)
+		[[ -z "${TOOL:-}" ]] && { usage; exit 1; }
+		# names...
+		all_tools | grep -i "$TOOL" || true
+		# ...and README descriptions
+		[[ -e "$CTF_TOOLS_ROOT/README.md" ]] && \
+			grep "<\!--tool-->" "$CTF_TOOLS_ROOT/README.md" 2>/dev/null \
+			| sed "s/<\!--[^-]*-->//g" | grep -i "$TOOL" || true
+		;;
+
+	setup)
+		do_setup
+		;;
+
+	*)
+		TOOL="ERROR" tool_log "unknown action '${ACTION:-}'"
+		usage
+		exit 1
+		;;
+esac
