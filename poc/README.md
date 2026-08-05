@@ -55,6 +55,13 @@
 
 - [canyie/TransitionPlayer](https://github.com/canyie/TransitionPlayer)
 
+### CVE-2026-0092 (2026-06-17)
+
+<code>In Package Manager, there is a possible device lock controller bypass due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
+</code>
+
+- [Majorjayyy1/CVE-2026-0092](https://github.com/Majorjayyy1/CVE-2026-0092)
+
 ### CVE-2026-0101
 - [George0Papasotiriou/CVE-2026-0101-BLE-Address-Spoofing-via-Weak-Resolvable-Private-Address](https://github.com/George0Papasotiriou/CVE-2026-0101-BLE-Address-Spoofing-via-Weak-Resolvable-Private-Address)
 
@@ -584,7 +591,7 @@
 </code>
 
 - [Layer-6/CVE-2026-5027-Langflow](https://github.com/Layer-6/CVE-2026-5027-Langflow)
-- [HORKimhab/-CVE-2026-5027](https://github.com/HORKimhab/-CVE-2026-5027)
+- [HORKimhab/CVE-2026-5027](https://github.com/HORKimhab/CVE-2026-5027)
 
 ### CVE-2026-5029 (2026-05-12)
 
@@ -1893,6 +1900,13 @@
 - [MichaelAdamGroberman/CVE-2026-13768](https://github.com/MichaelAdamGroberman/CVE-2026-13768)
 - [J4ck3LSyN-Gen2/CVE-2026-13768](https://github.com/J4ck3LSyN-Gen2/CVE-2026-13768)
 
+### CVE-2026-13934 (2026-06-30)
+
+<code>Insufficient validation of untrusted input in Dawn in Google Chrome on Android prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)
+</code>
+
+- [ArtWide/cve-2026-13934](https://github.com/ArtWide/cve-2026-13934)
+
 ### CVE-2026-14191 (2026-07-01)
 
 <code>An out-of-bounds heap write exists in the RAR5 recovery-volume (.rev) parser in WinRAR and UnRAR (RecVolumes5::ReadHeader in recvol5.cpp). The RecItems vector is sized only when the first .rev file in a set is processed; subsequent .rev files supply an independent RecNum value that is validated against that file's own TotalCount field but never against the actual size of RecItems. A crafted set of two or more .rev files can therefore write an attacker-controlled 32-bit value (the header's RevCRC field) to RecItems[RecNum] at an attacker-controlled offset up to 65534 * sizeof(RecVolItem) bytes past the allocation, corrupting adjacent heap objects. Triggering requires the victim to run a recovery/test operation on an attacker-supplied .rev set (for example 'unrar t x.part1.rev', WinRAR 'Repair archive', or auto-recovery when extracting a volume set with a missing .rar part). This is the RAR5-path sibling of CVE-2023-40477 (which was fixed in the RAR3 path only in WinRAR 6.23). Fixed in WinRAR / RAR 7.23.
@@ -2021,6 +2035,13 @@
 
 - [HORKimhab/CVE-2026-15410](https://github.com/HORKimhab/CVE-2026-15410)
 
+### CVE-2026-15430 (2026-08-03)
+
+<code>Improper access control in the IRP_MJ_WRITE command interface in\r\nWellbia XIGNCODE3 xhunter2.sys, version 2026.6.1.192, allows a local, unprivileged attacker to achieve local privilege escalation to\r\nNT AUTHORITY\SYSTEM, extract credentials from PPL-protected\r\nlsass.exe, and terminate PPL-protected security processes.
+</code>
+
+- [BlackSnufkin/AxHunter](https://github.com/BlackSnufkin/AxHunter)
+
 ### CVE-2026-15583 (2026-07-15)
 
 <code>A confused-deputy flaw in Grafana MCP Server allows an unauthenticated remote attacker to exfiltrate the server's environment-configured Grafana service-account token by supplying a crafted X-Grafana-URL request header. This also enables SSRF against arbitrary internal services, including cloud metadata endpoints.
@@ -2083,6 +2104,7 @@
 - [1xPwn/CVE-2026-16723](https://github.com/1xPwn/CVE-2026-16723)
 - [fazilbaig1/CVE-2026-16723](https://github.com/fazilbaig1/CVE-2026-16723)
 - [xiaoqiMikko/fastjson-check](https://github.com/xiaoqiMikko/fastjson-check)
+- [learner330/fastjson-cve-2026-16723](https://github.com/learner330/fastjson-cve-2026-16723)
 
 ### CVE-2026-17001
 - [llaytynher/CVE-2026-17001](https://github.com/llaytynher/CVE-2026-17001)
@@ -2093,6 +2115,13 @@
 </code>
 
 - [Hunt-Benito/pgadmin-ai-assistant-sql-injection-cve-2026-17351-lexer-differential-bypass](https://github.com/Hunt-Benito/pgadmin-ai-assistant-sql-injection-cve-2026-17351-lexer-differential-bypass)
+
+### CVE-2026-17532 (2026-08-05)
+
+<code>The Seraphinite Accelerator plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'seraph_accel_prep' parameter in versions up to, and including, 2.29.15. This is due to the CacheExtractPreparePageParams() function using PHP's loose inequality operator (!=) to compare the expected HMAC string against the JSON-decoded 'nonce' value — supplying the JSON boolean true causes any non-empty HMAC string to compare as loosely equal, bypassing the signature check — combined with insufficient output escaping in the _CbContentFinishSkip() function, which concatenates the attacker-controlled 'selfTest' field directly into the HTML response body. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a specially crafted link.
+</code>
+
+- [kalhoralireza/CVE-2026-17532](https://github.com/kalhoralireza/CVE-2026-17532)
 
 ### CVE-2026-17543 (2026-07-30)
 
@@ -3035,6 +3064,13 @@
 
 - [nikosecurity/CVE-2026-26179](https://github.com/nikosecurity/CVE-2026-26179)
 
+### CVE-2026-26190 (2026-02-13)
+
+<code>Milvus is an open-source vector database built for generative AI applications. Prior to 2.5.27 and 2.6.10, Milvus exposes TCP port 9091 by default, which enables authentication bypasses. The /expr debug endpoint uses a weak, predictable default authentication token derived from etcd.rootPath (default: by-dev), enabling arbitrary expression evaluation. The full REST API (/api/v1/*) is registered on the metrics/management port without any authentication, allowing unauthenticated access to all business operations including data manipulation and credential management. This vulnerability is fixed in 2.5.27 and 2.6.10.
+</code>
+
+- [qianlijaingshan/milvus-auth-audit](https://github.com/qianlijaingshan/milvus-auth-audit)
+
 ### CVE-2026-26216 (2026-02-12)
 
 <code>Crawl4AI versions prior to 0.8.0 contain a remote code execution vulnerability in the Docker API deployment. The /crawl endpoint accepts a hooks parameter containing Python code that is executed using exec(). The __import__ builtin was included in the allowed builtins, allowing unauthenticated remote attackers to import arbitrary modules and execute system commands. Successful exploitation allows full server compromise, including arbitrary command execution, file read and write access, sensitive data exfiltration, and lateral movement within internal networks.
@@ -3480,6 +3516,7 @@
 - [TeamN4C/SG-2026-0013](https://github.com/TeamN4C/SG-2026-0013)
 - [TrevoCastles/CVE-2026-31431-copy-fail](https://github.com/TrevoCastles/CVE-2026-31431-copy-fail)
 - [dev1681/CVE-2026-31431](https://github.com/dev1681/CVE-2026-31431)
+- [joaocalciolari07/copyfail-guard](https://github.com/joaocalciolari07/copyfail-guard)
 
 ### CVE-2026-31525 (2026-04-22)
 
@@ -5021,6 +5058,13 @@
 </code>
 
 - [oscerd/CVE-2026-43867](https://github.com/oscerd/CVE-2026-43867)
+
+### CVE-2026-44024 (2026-07-08)
+
+<code>Fluentd collects events from various data sources and writes them to files, RDBMS, NoSQL, IaaS, SaaS, Hadoop and so on. Prior to 1.19.3, Fluentd allows dynamically constructing file paths using the ${tag} placeholder, and insufficient validation of ${tag} in file configurations such as the path parameter of the out_file plugin allows attackers sending untrusted tags containing path traversal characters to write or overwrite arbitrary files and potentially achieve remote code execution. This issue is fixed in version 1.19.3.
+</code>
+
+- [0xdak/CVE-2026-44024_exploit](https://github.com/0xdak/CVE-2026-44024_exploit)
 
 ### CVE-2026-44166 (2026-05-12)
 
@@ -6748,6 +6792,13 @@
 
 - [HORKimhab/CVE-2026-54900](https://github.com/HORKimhab/CVE-2026-54900)
 
+### CVE-2026-54917 (2026-06-25)
+
+<code>SeaweedFS is a distributed storage system for object storage (S3), file systems, and Iceberg tables. Prior to 4.30, the S3 API gateway and the Iceberg REST catalog gateway construct their routers with mux.NewRouter().SkipClean(true). With path cleaning disabled, a .. segment inside the URL survives routing, so a request such as `GET /bucket-A/../evil-bucket/key`, is matched as bucket=bucket-A, object=../evil-bucket/key. The captured object key is then joined into a filer path with util.JoinPath (S3) / path.Join (Iceberg), which collapse the .. server-side, so the actual read or write lands in evil-bucket. This vulnerability is fixed in 4.30.
+</code>
+
+- [BiiTts/CVE-2026-54917-SeaweedFS-Cross-Bucket-Traversal](https://github.com/BiiTts/CVE-2026-54917-SeaweedFS-Cross-Bucket-Traversal)
+
 ### CVE-2026-54992 (2026-07-14)
 
 <code>Heap-based buffer overflow in Windows Message Queuing Queue Manager allows an unauthorized attacker to execute code locally.
@@ -7130,6 +7181,7 @@
 - [michael-kanda/Wp2shell-ioc-scanner](https://github.com/michael-kanda/Wp2shell-ioc-scanner)
 - [AdarshThakur14777-cyber/CVE-2026-60137](https://github.com/AdarshThakur14777-cyber/CVE-2026-60137)
 - [AbdullahMaqbool22/CVE-2026-60137-WordPress-Core-SQL-Injection-PoC](https://github.com/AbdullahMaqbool22/CVE-2026-60137-WordPress-Core-SQL-Injection-PoC)
+- [Dungsocool/CVE-2026-60137-CVE-2026-63030](https://github.com/Dungsocool/CVE-2026-60137-CVE-2026-63030)
 
 ### CVE-2026-60206 (2026-07-21)
 
@@ -7256,6 +7308,7 @@
 - [Procjevt/CVE-2026-63030](https://github.com/Procjevt/CVE-2026-63030)
 - [x-znn/CVE-2026-63030](https://github.com/x-znn/CVE-2026-63030)
 - [rechandra/wp2exp-2026](https://github.com/rechandra/wp2exp-2026)
+- [minwunn/wp2shell-CVE-2026-63030](https://github.com/minwunn/wp2shell-CVE-2026-63030)
 
 ### CVE-2026-63077 (2026-07-27)
 
@@ -9139,7 +9192,6 @@
 - [AnotherSec/CVE-2025-6440](https://github.com/AnotherSec/CVE-2025-6440)
 - [Nxploited/CVE-2025-6440](https://github.com/Nxploited/CVE-2025-6440)
 - [m2hcz/CVE-2025-6440-Poc-Exploit](https://github.com/m2hcz/CVE-2025-6440-Poc-Exploit)
-- [rimbadirgantara/CVE-2025-6440](https://github.com/rimbadirgantara/CVE-2025-6440)
 - [0axz-tools/CVE-2025-6440](https://github.com/0axz-tools/CVE-2025-6440)
 - [sahmsec/CVE-2025-6440](https://github.com/sahmsec/CVE-2025-6440)
 - [Cyber-DarkNay/CVE-2025-6440](https://github.com/Cyber-DarkNay/CVE-2025-6440)
@@ -12335,6 +12387,7 @@
 - [em0gi/CVE-2025-27840](https://github.com/em0gi/CVE-2025-27840)
 - [demining/Bluetooth-Attacks-CVE-2025-27840](https://github.com/demining/Bluetooth-Attacks-CVE-2025-27840)
 - [ladyg00se/CVE-2025-27840-WIP](https://github.com/ladyg00se/CVE-2025-27840-WIP)
+- [JasonW88/esp32-cve-2025-27840-power-trace-experiment](https://github.com/JasonW88/esp32-cve-2025-27840-power-trace-experiment)
 
 ### CVE-2025-27893 (2025-03-11)
 
@@ -12911,7 +12964,6 @@
 <code>runc is a CLI tool for spawning and running containers according to the OCI specification. In versions 1.2.7 and below, 1.3.0-rc.1 through 1.3.1, 1.4.0-rc.1 and 1.4.0-rc.2 files, runc would not perform sufficient verification that the source of the bind-mount (i.e., the container's /dev/null) was actually a real /dev/null inode when using the container's /dev/null to mask. This exposes two methods of attack:  an arbitrary mount gadget, leading to host information disclosure, host denial of service, container escape, or a bypassing of maskedPaths. This issue is fixed in versions 1.2.8, 1.3.3 and 1.4.0-rc.3.
 </code>
 
-- [sahar042/CVE-2025-31133](https://github.com/sahar042/CVE-2025-31133)
 - [skynet-f-nvidia/CVE-2025-31133](https://github.com/skynet-f-nvidia/CVE-2025-31133)
 - [scherepiuk/container-escape-ebpf](https://github.com/scherepiuk/container-escape-ebpf)
 - [C-h4ck-0/Learn-about-cve-2025-31133-poc](https://github.com/C-h4ck-0/Learn-about-cve-2025-31133-poc)
@@ -15030,6 +15082,13 @@
 
 - [encrypter15/CVE-2025-50165-x64-Exploit](https://github.com/encrypter15/CVE-2025-50165-x64-Exploit)
 
+### CVE-2025-50168 (2025-08-12)
+
+<code>Access of resource using incompatible type ('type confusion') in Windows Win32K - ICOMP allows an authorized attacker to elevate privileges locally.
+</code>
+
+- [D4m0n/CVE-2025-50168-pwn2own-berlin-2025](https://github.com/D4m0n/CVE-2025-50168-pwn2own-berlin-2025)
+
 ### CVE-2025-50286 (2025-08-06)
 
 <code>A Remote Code Execution (RCE) vulnerability in Grav CMS v1.7.48 allows an authenticated admin to upload a malicious plugin via the /admin/tools/direct-install interface. Once uploaded, the plugin is automatically extracted and loaded, allowing arbitrary PHP code execution and reverse shell access.
@@ -15748,7 +15807,7 @@
 - [3a7/CVE-2025-53770](https://github.com/3a7/CVE-2025-53770)
 - [r3xbugbounty/CVE-2025-53770](https://github.com/r3xbugbounty/CVE-2025-53770)
 - [daryllundy/CVE-2025-53770](https://github.com/daryllundy/CVE-2025-53770)
-- [0xisfet/CVE-2025-53770-Scanner](https://github.com/0xisfet/CVE-2025-53770-Scanner)
+- [0xKr1x/CVE-2025-53770-Scanner](https://github.com/0xKr1x/CVE-2025-53770-Scanner)
 - [Immersive-Labs-Sec/SharePoint-CVE-2025-53770-POC](https://github.com/Immersive-Labs-Sec/SharePoint-CVE-2025-53770-POC)
 - [harryhaxor/CVE-2025-53770-SharePoint-Deserialization-RCE-PoC](https://github.com/harryhaxor/CVE-2025-53770-SharePoint-Deserialization-RCE-PoC)
 - [Agampreet-Singh/CVE-2025-53770](https://github.com/Agampreet-Singh/CVE-2025-53770)
@@ -15762,7 +15821,7 @@
 - [J4ck3LSyN-Gen2/CVE-2025-53770](https://github.com/J4ck3LSyN-Gen2/CVE-2025-53770)
 - [Zedocun/SharePoint-ToolShell-CVE-2025-53770-Incident-Analysis](https://github.com/Zedocun/SharePoint-ToolShell-CVE-2025-53770-Incident-Analysis)
 - [doerrdan/it-sec-toolshell](https://github.com/doerrdan/it-sec-toolshell)
-- [mfarshadabdullahkhan-png/cve-2025-53770-research](https://github.com/mfarshadabdullahkhan-png/cve-2025-53770-research)
+- [mfarshad-abdullah-khan/cve-2025-53770-research](https://github.com/mfarshad-abdullah-khan/cve-2025-53770-research)
 
 ### CVE-2025-53772 (2025-08-12)
 
@@ -18120,6 +18179,7 @@
 </code>
 
 - [shinyseam/CVE-2025-64513](https://github.com/shinyseam/CVE-2025-64513)
+- [qianlijaingshan/milvus-auth-audit](https://github.com/qianlijaingshan/milvus-auth-audit)
 
 ### CVE-2025-64516 (2026-01-15)
 
@@ -18780,9 +18840,6 @@
 - [materaj2/exploit_cve_2025_67303](https://github.com/materaj2/exploit_cve_2025_67303)
 - [wcnmwcis/CVE-2026-22777](https://github.com/wcnmwcis/CVE-2026-22777)
 - [jcaz2378/ComfyUIrce](https://github.com/jcaz2378/ComfyUIrce)
-
-### CVE-2025-67315
-- [r-pradyun/CVE-2025-67315](https://github.com/r-pradyun/CVE-2025-67315)
 
 ### CVE-2025-67325 (2026-01-08)
 
@@ -23206,6 +23263,8 @@
 - [Dhananjayasj/CVE-2024-21413-Microsoft-Outlook-Remote-Code-Execution-Vulnerability](https://github.com/Dhananjayasj/CVE-2024-21413-Microsoft-Outlook-Remote-Code-Execution-Vulnerability)
 - [H1ssBl1tz/Blind-Trust-CVE-2024-21413-Research](https://github.com/H1ssBl1tz/Blind-Trust-CVE-2024-21413-Research)
 - [YoguiCR/CVE-2024-21413-Outlook-Assessment](https://github.com/YoguiCR/CVE-2024-21413-Outlook-Assessment)
+- [h4cknain/CVE-2024-21413-Microsoft-Outlook-Moniker-Link-Vulnerability](https://github.com/h4cknain/CVE-2024-21413-Microsoft-Outlook-Moniker-Link-Vulnerability)
+- [OmarMahmoud1024/tryhackme-monikerlink-writeup](https://github.com/OmarMahmoud1024/tryhackme-monikerlink-writeup)
 
 ### CVE-2024-21490 (2024-02-10)
 
@@ -29587,7 +29646,6 @@
 </code>
 
 - [RandomRobbieBF/CVE-2024-52380](https://github.com/RandomRobbieBF/CVE-2024-52380)
-- [Nxploited/CVE-2024-52380-Exploit](https://github.com/Nxploited/CVE-2024-52380-Exploit)
 
 ### CVE-2024-52382 (2024-11-14)
 
@@ -30412,13 +30470,6 @@
 </code>
 
 - [pointedsec/CVE-2024-57725](https://github.com/pointedsec/CVE-2024-57725)
-
-### CVE-2024-57727 (2025-01-15)
-
-<code>SimpleHelp remote support software v5.5.7 and before is vulnerable to multiple path traversal vulnerabilities that enable unauthenticated remote attackers to download arbitrary files from the SimpleHelp host via crafted HTTP requests. These files include server configuration files containing various secrets and hashed user passwords.
-</code>
-
-- [imjdl/CVE-2024-57727](https://github.com/imjdl/CVE-2024-57727)
 
 ### CVE-2024-57778 (2025-02-14)
 
@@ -32159,7 +32210,6 @@
 </code>
 
 - [yoryio/CVE-2023-7028](https://github.com/yoryio/CVE-2023-7028)
-- [hackeremmen/gitlab-exploit](https://github.com/hackeremmen/gitlab-exploit)
 - [soltanali0/CVE-2023-7028](https://github.com/soltanali0/CVE-2023-7028)
 - [gh-ost00/CVE-2023-7028](https://github.com/gh-ost00/CVE-2023-7028)
 - [sariamubeen/CVE-2023-7028](https://github.com/sariamubeen/CVE-2023-7028)
@@ -32349,6 +32399,13 @@
 
 - [kasnria001/pwnage24mtk](https://github.com/kasnria001/pwnage24mtk)
 - [wzy114514sb/pwnage24mtk](https://github.com/wzy114514sb/pwnage24mtk)
+
+### CVE-2023-20768 (2023-07-04)
+
+<code>In ion, there is a possible out of bounds read due to type confusion. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07560720; Issue ID: ALPS07559800.
+</code>
+
+- [murf-xd/cve-2023-20768](https://github.com/murf-xd/cve-2023-20768)
 
 ### CVE-2023-20860 (2023-03-27)
 
@@ -32902,7 +32959,7 @@
 - [0x0d3ad/CVE-2023-22518](https://github.com/0x0d3ad/CVE-2023-22518)
 - [C1ph3rX13/CVE-2023-22518](https://github.com/C1ph3rX13/CVE-2023-22518)
 - [Lilly-dox/Exploit-CVE-2023-22518](https://github.com/Lilly-dox/Exploit-CVE-2023-22518)
-- [ductink98lhp/analyze-Exploit-CVE-2023-22518-Confluence](https://github.com/ductink98lhp/analyze-Exploit-CVE-2023-22518-Confluence)
+- [d3ckkNo0b/analyze-Exploit-CVE-2023-22518-Confluence](https://github.com/d3ckkNo0b/analyze-Exploit-CVE-2023-22518-Confluence)
 
 ### CVE-2023-22524 (2023-12-06)
 
@@ -42598,6 +42655,7 @@
 - [s3l33/CVE-2022-25012](https://github.com/s3l33/CVE-2022-25012)
 - [G4sp4rCS/CVE-2022-25012-POC](https://github.com/G4sp4rCS/CVE-2022-25012-POC)
 - [XK3NF4/CVE-2022-25012](https://github.com/XK3NF4/CVE-2022-25012)
+- [m1kb0k/CVE-2022-25012-dvr4-weak-password-encryption](https://github.com/m1kb0k/CVE-2022-25012-dvr4-weak-password-encryption)
 
 ### CVE-2022-25018 (2022-03-01)
 
@@ -47963,7 +48021,6 @@
 - [galoget/PwnKit-CVE-2021-4034](https://github.com/galoget/PwnKit-CVE-2021-4034)
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [rvzsec/CVE-2021-4034](https://github.com/rvzsec/CVE-2021-4034)
-- [Nosferatuvjr/PwnKit](https://github.com/Nosferatuvjr/PwnKit)
 - [antoinenguyen-09/CVE-2021-4034](https://github.com/antoinenguyen-09/CVE-2021-4034)
 - [wudicainiao/cve-2021-4034](https://github.com/wudicainiao/cve-2021-4034)
 - [TanmoyG1800/CVE-2021-4034](https://github.com/TanmoyG1800/CVE-2021-4034)
@@ -52001,6 +52058,7 @@
 - [manfredgabriel/cve-2021-41773-lab](https://github.com/manfredgabriel/cve-2021-41773-lab)
 - [KunalKhandelwal-dev/cve-2021-41773-lab](https://github.com/KunalKhandelwal-dev/cve-2021-41773-lab)
 - [Shams-Ul-Mehmood/CVE-2021-41773-Exploit](https://github.com/Shams-Ul-Mehmood/CVE-2021-41773-Exploit)
+- [lucastran05/CVE-2021-41773](https://github.com/lucastran05/CVE-2021-41773)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -64722,7 +64780,6 @@
 </code>
 
 - [diwangs/react16-ssr](https://github.com/diwangs/react16-ssr)
-- [nitindevelopermca/react-CVE-2018-6341](https://github.com/nitindevelopermca/react-CVE-2018-6341)
 
 ### CVE-2018-6376 (2018-01-30)
 
