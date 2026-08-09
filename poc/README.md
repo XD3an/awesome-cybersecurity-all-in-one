@@ -462,6 +462,7 @@
 
 - [rootdirective-sec/CVE-2026-3844-Lab](https://github.com/rootdirective-sec/CVE-2026-3844-Lab)
 - [Dhananjayasj/CVE-2026-3844-Breeze-Cache-WordPress-Plugin-Remote-Code-Execution](https://github.com/Dhananjayasj/CVE-2026-3844-Breeze-Cache-WordPress-Plugin-Remote-Code-Execution)
+- [AnggaTechI/CVE-2026-3844](https://github.com/AnggaTechI/CVE-2026-3844)
 
 ### CVE-2026-3854 (2026-03-10)
 
@@ -3366,6 +3367,7 @@
 </code>
 
 - [Semperis-Community/ResetNightmare](https://github.com/Semperis-Community/ResetNightmare)
+- [mihat2/ResetNightmare-impacket](https://github.com/mihat2/ResetNightmare-impacket)
 
 ### CVE-2026-27944 (2026-03-05)
 
@@ -4740,6 +4742,13 @@
 
 - [Giangdurian/CVE-2026-41242](https://github.com/Giangdurian/CVE-2026-41242)
 
+### CVE-2026-41293 (2026-05-12)
+
+<code>Improper Input Validation vulnerability in Apache Tomcat.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.21, from 10.1.0-M1 through 10.1.54, from 9.0.0.M1 through 9.0.117, from 10.0.0-M1 through 10.0.27.\nOlder, end of support versions may also be affected.\n\nUsers are recommended to upgrade to version [FIXED_VERSION], which fixes the issue.
+</code>
+
+- [xiaoqiMikko/tomcat-check](https://github.com/xiaoqiMikko/tomcat-check)
+
 ### CVE-2026-41472 (2026-04-24)
 
 <code>CyberPanel versions prior to 2.4.4 contain a stored cross-site scripting vulnerability in the AI Scanner dashboard where the POST /api/ai-scanner/callback endpoint lacks authentication and allows unauthenticated attackers to inject malicious JavaScript by overwriting the findings_json field of ScanHistory records. Attackers can inject JavaScript that executes in an administrator's authenticated session when they visit the AI Scanner dashboard, allowing them to issue same-origin requests to plant cron jobs and achieve remote code execution on the server.
@@ -5144,6 +5153,7 @@
 - [eroorvbsyes-hotmail/CVE-2026-43499_x86_Exploit](https://github.com/eroorvbsyes-hotmail/CVE-2026-43499_x86_Exploit)
 - [oopnv70-lab/ghostlock-honor-aak](https://github.com/oopnv70-lab/ghostlock-honor-aak)
 - [Meowkis/tcp-zerocopy-sm](https://github.com/Meowkis/tcp-zerocopy-sm)
+- [wxxsfxyzm/GhostLock-Galaxy](https://github.com/wxxsfxyzm/GhostLock-Galaxy)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -6300,6 +6310,13 @@
 
 - [BiiTts/CVE-2026-49230-APISIX-jwe-decrypt-Auth-Bypass](https://github.com/BiiTts/CVE-2026-49230-APISIX-jwe-decrypt-Auth-Bypass)
 
+### CVE-2026-49268 (2026-06-17)
+
+<code>A remote attacker can inject LDAP special characters into the Distinguished Name (DN) construction in DefaultLdapRealm class. User-supplied username input is directly concatenated into the LDAP DN template without any escaping of RFC 2253 special characters. This allows an attacker to manipulate the DN structure used for LDAP bind authentication, potentially bypassing authentication or impersonating other users.\n\nThis issue affects all Apache Shiro versions through 2.2.0, and 3.0.0-alpha-1 when using DefaultLdapRealm\nUpgrade to Apache Shiro 2.2.1 or 3.0.0-alpha-2 or later, which fixes the issue.
+</code>
+
+- [xiaoqiMikko/shiro-check](https://github.com/xiaoqiMikko/shiro-check)
+
 ### CVE-2026-49344 (2026-06-19)
 
 <code>Mercator is an open source web application that enables mapping of the information system. Prior to version 2025.05.19, Mercator's Query Engine (`/admin/queries/execute`) accepts a JSON DSL (`from` / `select` / `filters` / `traverse` / `output`), translates it into an Eloquent query, and returns results as JSON. The controller method `QueryController::execute()` does not enforce an authorization gate, unlike `store()` and `massDestroy()` in the same controller which are correctly protected. As a result, any authenticated account — including the read-only Auditor role — can query models beyond its intended scope, including the `User` model. Additionally, the `password` column, although declared `$hidden`, is not excluded from filter predicates, which allows it to be used in `LIKE` conditions. The `schema()` and `schemaModel()` endpoints of the same controller are similarly unguarded. The Query Engine is read-only; integrity and availability are not affected. Version 2025.05.19 patches the issue.
@@ -6378,6 +6395,13 @@
 - [izxci/CVE-2026-49777](https://github.com/izxci/CVE-2026-49777)
 - [xxconi/CVE-2026-49777-CVE-2026-10735](https://github.com/xxconi/CVE-2026-49777-CVE-2026-10735)
 - [HORKimhab/CVE-Wordpress](https://github.com/HORKimhab/CVE-Wordpress)
+
+### CVE-2026-49844 (2026-07-10)
+
+<code>Improper encoding of non-finite floating-point values during MapMessage JSON serialization in Apache Log4j API produces output that is not valid JSON. This issue affects Apache Log4j API versions 2.13.1 through 2.25.4 and version 2.26.0.\n\nThe fix for CVE-2026-34481 did not cover all code paths: when a MapMessage contains a non-finite IEEE 754 value (NaN, Infinity, or -Infinity), MapMessage.asJson() emits the corresponding bare token. RFC 8259 does not permit these tokens, so a conformant parser rejects the resulting document.\n\nThe defect is reachable only when both of the following conditions hold:\n\n  *  The application uses the  message resolver https://logging.apache.org/log4j/2.x/manual/json-template-layout.html#event-template-resolver-message  of JsonTemplateLayout or any other layout that relies on MapMessage.asJson() or MapMessage.getFormattedMessage(new String[]{&quot;JSON&quot;}).\n  *  The application logs a MapMessage that contains an attacker-controlled floating-point value.\n\n\nAn attacker who can supply a non-finite value can cause the affected layout to emit malformed JSON, which may corrupt the enclosing log record or disrupt downstream log ingestion and parsing.\n\nUsers are advised to upgrade to Apache Log4j API 2.25.5 or 2.26.1, both of which emit RFC 8259-compliant JSON for non-finite values.
+</code>
+
+- [xiaoqiMikko/log4j-check](https://github.com/xiaoqiMikko/log4j-check)
 
 ### CVE-2026-49865
 - [cyeezy08/Kimai-CVE-2026-49865-POC](https://github.com/cyeezy08/Kimai-CVE-2026-49865-POC)
@@ -6933,6 +6957,13 @@
 
 - [MichaelAdamGroberman/CVE-2026-54477](https://github.com/MichaelAdamGroberman/CVE-2026-54477)
 
+### CVE-2026-54515 (2026-06-23)
+
+<code>jackson-databind contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor. From 2.8.0 until 2.18.9, 2.21.5, and 3.1.4, in BeanDeserializerBase.createContextual(), per-property @JsonIgnoreProperties exclusions are applied by _handleByNameInclusion(), producing a contextual deserializer whose BeanPropertyMap has the ignored properties removed. The subsequent per-property case-insensitivity block (triggered by @JsonFormat(ACCEPT_CASE_INSENSITIVE_PROPERTIES)) rebuilds from this._beanProperties (the original, unfiltered map) instead of contextual._beanProperties, then overwrites the filtered map — restoring every property _handleByNameInclusion had just removed. The ignored property becomes writable again. This vulnerability is fixed in 2.18.9, 2.21.5, and 3.1.4.
+</code>
+
+- [xiaoqiMikko/jackson-check](https://github.com/xiaoqiMikko/jackson-check)
+
 ### CVE-2026-54519
 - [chaitanyagarware/CVE-2026-54519](https://github.com/chaitanyagarware/CVE-2026-54519)
 
@@ -7362,6 +7393,7 @@
 - [shinthink/CVE-2026-60004](https://github.com/shinthink/CVE-2026-60004)
 - [HackSpeak/CVE-2026-60004](https://github.com/HackSpeak/CVE-2026-60004)
 - [Sachinart/CVE-2026-60004-gitea-0day](https://github.com/Sachinart/CVE-2026-60004-gitea-0day)
+- [gagaltotal/CVE-2026-60004-poc-gitea](https://github.com/gagaltotal/CVE-2026-60004-poc-gitea)
 
 ### CVE-2026-60121 (2026-07-13)
 
@@ -7514,6 +7546,7 @@
 - [minwunn/wp2shell-CVE-2026-63030](https://github.com/minwunn/wp2shell-CVE-2026-63030)
 - [sowarma/wp2shell-PoC](https://github.com/sowarma/wp2shell-PoC)
 - [AnggaTechI/CVE-2026-63030](https://github.com/AnggaTechI/CVE-2026-63030)
+- [M4xSec/wp2shell-Exploit-Waf-Bypass](https://github.com/M4xSec/wp2shell-Exploit-Waf-Bypass)
 
 ### CVE-2026-63077 (2026-07-27)
 
@@ -7580,6 +7613,7 @@
 - [aarif450/Zapscape](https://github.com/aarif450/Zapscape)
 - [aarif450/aarif450.github.io](https://github.com/aarif450/aarif450.github.io)
 - [HackSpeak/CVE-2026-64561](https://github.com/HackSpeak/CVE-2026-64561)
+- [chuzhongyun/CVE-2026-64561-Kernel-Fix](https://github.com/chuzhongyun/CVE-2026-64561-Kernel-Fix)
 
 ### CVE-2026-64564 (2026-08-04)
 
@@ -7601,6 +7635,7 @@
 - [litosmartin/CVE-2026-64600-Refluxfs-PoC](https://github.com/litosmartin/CVE-2026-64600-Refluxfs-PoC)
 - [bha-vin/CVE-2026-64600-Exploit](https://github.com/bha-vin/CVE-2026-64600-Exploit)
 - [letsr00t/RefluxFS_CVE-2026-64600](https://github.com/letsr00t/RefluxFS_CVE-2026-64600)
+- [masrikky/CVE-2026-64600-RefluXFS](https://github.com/masrikky/CVE-2026-64600-RefluXFS)
 
 ### CVE-2026-64633 (2026-08-04)
 
@@ -7625,6 +7660,11 @@
 - [renzi25031469/CVE-2026-64638-WordPress-Core-XSS2Shell](https://github.com/renzi25031469/CVE-2026-64638-WordPress-Core-XSS2Shell)
 - [imbas007/CVE-2026-64638-POC](https://github.com/imbas007/CVE-2026-64638-POC)
 - [yogaGymn/XSS2Shell-CVE-2026-64638](https://github.com/yogaGymn/XSS2Shell-CVE-2026-64638)
+- [4minx/CVE-2026-64638](https://github.com/4minx/CVE-2026-64638)
+- [HackSpeak/CVE-2026-64638](https://github.com/HackSpeak/CVE-2026-64638)
+- [tc4dy/CVE-2026-64638-PoC-Exploit](https://github.com/tc4dy/CVE-2026-64638-PoC-Exploit)
+- [mohwahyudi/poc-CVE-2026-64638-](https://github.com/mohwahyudi/poc-CVE-2026-64638-)
+- [Dungsocool/CVE-2026-64638](https://github.com/Dungsocool/CVE-2026-64638)
 
 ### CVE-2026-64640 (2026-08-06)
 
@@ -7747,6 +7787,27 @@
 </code>
 
 - [theopaid/CVE-2026-66421-OpenClaw-Dashboard-Stored-XSS-via-lastMessage-Session-Field](https://github.com/theopaid/CVE-2026-66421-OpenClaw-Dashboard-Stored-XSS-via-lastMessage-Session-Field)
+
+### CVE-2026-66491 (2026-08-07)
+
+<code>Joomla Extension - phoca.cz - Arbitrary File Read in Phoca Commander 1.0.0-6.1.3 - Improper limitation of paths in the getSource function lead to an arbitrary file read vulnerability.
+</code>
+
+- [toanln-cov/CVE-2026-66491](https://github.com/toanln-cov/CVE-2026-66491)
+
+### CVE-2026-66492 (2026-08-07)
+
+<code>Joomla Extension - phoca.cz - Path Traversal vulnerability in Phoca Commander 1.0.0-6.1.3 - Improper limitation of paths in the file upload action lead to path a traversal vulnerability.
+</code>
+
+- [toanln-cov/CVE-2026-66492](https://github.com/toanln-cov/CVE-2026-66492)
+
+### CVE-2026-66493 (2026-08-07)
+
+<code>Joomla Extension - phoca.cz - Path Traversal vulnerability in Phoca Commander 1.0.0-6.1.3 - Improper limitation of paths for delete, copy and move actions lead to path traversal vulnerabilities.
+</code>
+
+- [toanln-cov/CVE-2026-66493](https://github.com/toanln-cov/CVE-2026-66493)
 
 ### CVE-2026-66729 (2026-07-27)
 
@@ -7895,7 +7956,11 @@
 
 - [LazyTitan33/CVE-2026-67599_ClearOS_RCE](https://github.com/LazyTitan33/CVE-2026-67599_ClearOS_RCE)
 
-### CVE-2026-67620
+### CVE-2026-67620 (2026-08-08)
+
+<code>Flowise through 3.1.4 contains a server-side request forgery vulnerability in the SSRF guard implemented in httpSecurity.ts, where the DEFAULT_DENY_LIST omits the Oracle Cloud Infrastructure metadata endpoint 192.0.0.192 and the Alibaba Cloud metadata endpoint 100.100.100.200, allowing authenticated attackers to force the server to issue arbitrary GET requests to cloud instance metadata services. Attackers can send requests to the fetch-links API endpoint with a crafted URL parameter, bypassing deny-list validation including redirect-based bypasses, to reach instance metadata services and expose instance identity data and role credentials on Oracle Cloud Infrastructure or Alibaba Cloud deployments, with unauthenticated access possible when URL-fetching nodes exist in public chatflows.
+</code>
+
 - [abdugafforov-bobur/CVE-2026-67620-poc](https://github.com/abdugafforov-bobur/CVE-2026-67620-poc)
 
 ### CVE-2026-67687 (2026-08-06)
@@ -7993,7 +8058,6 @@
 <code>h2 is a pure-Python implementation of a HTTP/2 protocol stack. Versions up to and including 4.4.0 accept request header blocks containing more than one Host header, and forward every Host header to the consuming application. Where the consumer downgrades HTTP/2 to HTTP/1.1, the resulting request carries two Host header lines, providing a request smuggling primitive. This issue is fixed in version 4.4.1.
 </code>
 
-- [SunandM/poc-h2-duplicate-host](https://github.com/SunandM/poc-h2-duplicate-host)
 - [SunandM/poc-h2-CVE-2026-71554](https://github.com/SunandM/poc-h2-CVE-2026-71554)
 
 ### CVE-2026-71557 (2026-08-07)
@@ -35376,6 +35440,7 @@
 - [void0red/CVE-2023-32233](https://github.com/void0red/CVE-2023-32233)
 - [Destawell/gemini-2.5-pro-nf-tables-red-teaming](https://github.com/Destawell/gemini-2.5-pro-nf-tables-red-teaming)
 - [Destawell/gemini-2.5-pro-nf-tables-red-teamin](https://github.com/Destawell/gemini-2.5-pro-nf-tables-red-teamin)
+- [BurnSkyup/CVE-2023-32233-reproduction](https://github.com/BurnSkyup/CVE-2023-32233-reproduction)
 
 ### CVE-2023-32235 (2023-05-05)
 
@@ -36968,7 +37033,6 @@
 - [bcdannyboy/CVE-2023-38545](https://github.com/bcdannyboy/CVE-2023-38545)
 - [d0rb/CVE-2023-38545](https://github.com/d0rb/CVE-2023-38545)
 - [Yang-Shun-Yu/CVE-2023-38545](https://github.com/Yang-Shun-Yu/CVE-2023-38545)
-- [nphuang/NS-Project-2024-Spring](https://github.com/nphuang/NS-Project-2024-Spring)
 
 ### CVE-2023-38571 (2023-07-28)
 
