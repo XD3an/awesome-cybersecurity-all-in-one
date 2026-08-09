@@ -181,6 +181,9 @@
 - [KOSEC-LLC/BYOVD-Research](https://github.com/KOSEC-LLC/BYOVD-Research)
 - [mein-0/cve-2026-0828](https://github.com/mein-0/cve-2026-0828)
 
+### CVE-2026-0866
+- [mdshoaibuddinchanda/zombieguard](https://github.com/mdshoaibuddinchanda/zombieguard)
+
 ### CVE-2026-0920 (2026-01-22)
 
 <code>The LA-Studio Element Kit for Elementor plugin for WordPress is vulnerable to Administrative User Creation in all versions up to, and including, 1.5.6.3. This is due to the 'ajax_register_handle' function not restricting what user roles a user can register with. This makes it possible for unauthenticated attackers to supply the 'lakit_bkrole' parameter during registration and gain administrator access to the site.
@@ -1091,13 +1094,6 @@
 - [Ez4rd1x1/CVE-2026-8181](https://github.com/Ez4rd1x1/CVE-2026-8181)
 - [Squamity/CVE-2026-8181-PoC](https://github.com/Squamity/CVE-2026-8181-PoC)
 - [HudzaifahArrantisi/CVE-2026-8181](https://github.com/HudzaifahArrantisi/CVE-2026-8181)
-
-### CVE-2026-8196 (2026-05-09)
-
-<code>A flaw has been found in JeecgBoot 3.9.1. The impacted element is an unknown function of the file jeecg-module-system/jeecg-system-biz/src/main/java/org/jeecg/modules/system/controller/LoginController.java of the component mLogin Endpoint. This manipulation causes authorization bypass. The attack is possible to be carried out remotely. The attack is considered to have high complexity. The exploitability is regarded as difficult. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.
-</code>
-
-- [HORKimhab/CVE-2026-8196](https://github.com/HORKimhab/CVE-2026-8196)
 
 ### CVE-2026-8206 (2026-06-02)
 
@@ -2230,6 +2226,20 @@
 </code>
 
 - [ronamosa/CVE-2026-18953](https://github.com/ronamosa/CVE-2026-18953)
+
+### CVE-2026-19193 (2026-08-07)
+
+<code>A flaw has been found in Jiangmin Antivirus 21. Impacted is the function MessageNotifyCallback in the library kvcore.sys of the component Minifilter Port. Executing a manipulation can lead to improper access controls. The attack needs to be launched locally. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.
+</code>
+
+- [patrickt2017/CVE-2026-19193-PoC](https://github.com/patrickt2017/CVE-2026-19193-PoC)
+
+### CVE-2026-19195 (2026-08-07)
+
+<code>A vulnerability has been found in V-Secure Jingyun Antivirus 2.4.2.39. The affected element is an unknown function in the library ZyArk.sys of the component Kernel Driver. The manipulation leads to improper access controls. The attack needs to be performed locally. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.
+</code>
+
+- [patrickt2017/CVE-2026-19195-PoC](https://github.com/patrickt2017/CVE-2026-19195-PoC)
 
 ### CVE-2026-20127 (2026-02-25)
 
@@ -4798,6 +4808,7 @@
 - [mahfuzreham/cpanel-cve-2026-41940](https://github.com/mahfuzreham/cpanel-cve-2026-41940)
 - [Kill1234545/CVE-2026-41940](https://github.com/Kill1234545/CVE-2026-41940)
 - [Jenderal92/CVE-2026-41940](https://github.com/Jenderal92/CVE-2026-41940)
+- [ZildanZ/CVE-2026-41940](https://github.com/ZildanZ/CVE-2026-41940)
 - [Defacto-ridgepole254/CVE-2026-41940-Exploit-PoC](https://github.com/Defacto-ridgepole254/CVE-2026-41940-Exploit-PoC)
 - [anach-ai/CVE-2026-41940](https://github.com/anach-ai/CVE-2026-41940)
 - [tc4dy/CVE-2026-41940-PoC-Exploit](https://github.com/tc4dy/CVE-2026-41940-PoC-Exploit)
@@ -5049,7 +5060,6 @@
 
 - [mym0us3r/DIRTY-FRAG-Detection-with-Wazuh-4.14.4](https://github.com/mym0us3r/DIRTY-FRAG-Detection-with-Wazuh-4.14.4)
 - [suominen/CVE-2026-43284](https://github.com/suominen/CVE-2026-43284)
-- [linnemanlabs/dirtyfrag-arm64](https://github.com/linnemanlabs/dirtyfrag-arm64)
 - [FrosterDL/CVE-2026-43284](https://github.com/FrosterDL/CVE-2026-43284)
 - [ChernStepanov/DirtyFrag-for-dummies](https://github.com/ChernStepanov/DirtyFrag-for-dummies)
 - [xd20111/CVE-2026-43284](https://github.com/xd20111/CVE-2026-43284)
@@ -7665,6 +7675,8 @@
 - [tc4dy/CVE-2026-64638-PoC-Exploit](https://github.com/tc4dy/CVE-2026-64638-PoC-Exploit)
 - [mohwahyudi/poc-CVE-2026-64638-](https://github.com/mohwahyudi/poc-CVE-2026-64638-)
 - [Dungsocool/CVE-2026-64638](https://github.com/Dungsocool/CVE-2026-64638)
+- [MR-LeonardoGomes/XSS2Shell-CVE-2026-64638](https://github.com/MR-LeonardoGomes/XSS2Shell-CVE-2026-64638)
+- [jendmaoul/XSS2Shell-CVE-2026-64638](https://github.com/jendmaoul/XSS2Shell-CVE-2026-64638)
 
 ### CVE-2026-64640 (2026-08-06)
 
@@ -47761,7 +47773,6 @@
 - [CameraShutterBug/PrintNightmare](https://github.com/CameraShutterBug/PrintNightmare)
 - [DLL00P/CVE-2021-1675](https://github.com/DLL00P/CVE-2021-1675)
 - [ccordeiro/CVE-2021-1675](https://github.com/ccordeiro/CVE-2021-1675)
-- [kaiw-icspark25/PrintNightmare-CVE-2021-1675-Analysis](https://github.com/kaiw-icspark25/PrintNightmare-CVE-2021-1675-Analysis)
 
 ### CVE-2021-1678 (2021-01-12)
 
@@ -48411,6 +48422,7 @@
 - [galoget/PwnKit-CVE-2021-4034](https://github.com/galoget/PwnKit-CVE-2021-4034)
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [rvzsec/CVE-2021-4034](https://github.com/rvzsec/CVE-2021-4034)
+- [Nosferatuvjr/PwnKit](https://github.com/Nosferatuvjr/PwnKit)
 - [antoinenguyen-09/CVE-2021-4034](https://github.com/antoinenguyen-09/CVE-2021-4034)
 - [wudicainiao/cve-2021-4034](https://github.com/wudicainiao/cve-2021-4034)
 - [TanmoyG1800/CVE-2021-4034](https://github.com/TanmoyG1800/CVE-2021-4034)
@@ -69109,6 +69121,7 @@
 - [fu2x2000/CVE-2017-7529-Nginx---Remote-Integer-Overflow-Exploit](https://github.com/fu2x2000/CVE-2017-7529-Nginx---Remote-Integer-Overflow-Exploit)
 - [Shehzadcyber/CVE-2017-7529](https://github.com/Shehzadcyber/CVE-2017-7529)
 - [coolman6942o/-Exploit-CVE-2017-7529](https://github.com/coolman6942o/-Exploit-CVE-2017-7529)
+- [SirEagIe/CVE-2017-7529](https://github.com/SirEagIe/CVE-2017-7529)
 - [Fenil2511/CVE-2017-7529-POC](https://github.com/Fenil2511/CVE-2017-7529-POC)
 - [youngmin0104/CVE-2017-7529-](https://github.com/youngmin0104/CVE-2017-7529-)
 - [portfolio10/nginx](https://github.com/portfolio10/nginx)
