@@ -23,19 +23,43 @@ or repairs a runtime/build gap, each commented in that file:
 
 ## Tools with hand-written derivations
 
-51 tools under `nix/pkgs/<name>/default.nix`, each with sources pinned by hash.
+52 tools under `nix/pkgs/<name>/default.nix`, each with sources pinned by hash.
 All build and, where they produce a CLI, were run to confirm they work.
 
 ### Notable / non-obvious ones
 
-- **angr** / **angr-management** — no longer nixpkgs passthroughs. nixpkgs'
-  `python3Packages.angr` 9.2.193 does not build (its `angr.rustylib` extension
-  needs setuptools-rust, and it pins archinfo/cle/pyvex `==9.2.193` while the
-  same nixpkgs rev ships those at 9.2.154). `nix/pkgs/angr/python.nix` pins the
-  whole angr family down to 9.2.154 — the release nixpkgs' pyvex/archinfo/cle
-  and angr-management already sit on, and one that predates the Rust extension
-  entirely. `angr` restores the two pre-nix commands `angr-python` and
-  `angr-ipython`; `angr-management` reuses the same repaired interpreter.
+- **angr** / **angr-management** — no longer nixpkgs passthroughs, and no
+  longer built from nixpkgs' angr at all. nixpkgs cannot give us a working one:
+  at our rev its `python3Packages.angr` claims 9.2.193 while the
+  `pyvex`/`archinfo`/`cle` beside it are 9.2.154 and angr pins those
+  `==9.2.193`, so it does not build — and the whole family is a year behind
+  upstream besides. `nix/pkgs/angr/python.nix` therefore builds the current
+  release (**9.3.2**) of archinfo/pyvex/claripy/cle/angr from upstream's PyPI
+  sdists, plus the three dependencies nixpkgs lacks (`angr-data`,
+  `uefi-firmware`, and pypcode bumped to 4.0). Three things about angr's build
+  that a plain `buildPythonPackage` does not do, all handled there: setuptools-
+  rust compiles the `angr.rustylib` extension (vendored with
+  `rustPlatform.fetchCargoVendor`), `make` builds `native/unicornlib` against
+  the headers pyvex installs, and `grpc_tools.protoc` generates
+  `angr/protos/*_pb2.py` during the build. Both tools now ship angr's `unicorn`
+  extra, so the fast engine is actually available instead of logging "unicorn
+  support disabled" at startup — 9.3 asks for stock `unicorn==2.1.4`, which
+  nixpkgs has, rather than the `unicorn-angr` fork (itself broken at our rev).
+  `angr` restores the two pre-nix commands `angr-python` and `angr-ipython`
+  alongside upstream's `angr` CLI; `angr-management` (9.3.2, matching, since it
+  pins `angr==9.3.2`) reuses the very same interpreter.
+
+  Two dependencies are deliberately not what upstream asks for. `pyxdia`, cle's
+  PDB reader, is dropped: its Linux wheel is a bag of Windows blobs
+  (`msdia140.dll`, an `xdia.exe`, a loader for them) and its sdist builds by
+  downloading those, which a sandboxed build cannot do; cle imports it in a
+  try/except, so PE PDB symbol loading logs that it is unavailable and nothing
+  else changes. And nixpkgs' `libbs` (via binsync, an angr-management
+  dependency) still calls `pycparser.ply`, removed in pycparser 3.00 — the old
+  workaround for that, holding pycparser at 2.x, is no longer possible now that
+  angr requires `pycparser~=3.0`, so libbs' type-parser tests are skipped and
+  binsync's "parse this C type" path stays as broken as nixpkgs has it. Fixing
+  it properly means libbs ≥3.8, which drags in declib/pyghidra/wordfreq.
 - **qiling** — built from a pinned git tag (1.4.10) rather than the PyPI sdist,
   which has been stuck at 1.4.6 since 2023, and against `python312` rather than
   the default interpreter (its `python-fx` dependency does not survive python
@@ -69,22 +93,51 @@ All build and, where they produce a CLI, were run to confirm they work.
   IDA install, located via `IDA_HOME=/path/to/ida`, else `~/.idapro`, `~/ida*`,
   an `ida` already on `$PATH`, or a `~/Downloads/{ida,IDA}*.tar.?z` tarball it
   unpacks into `~/.cache/ctf-tools/ida` on first run (the pre-nix drop-in
-  contract). `ida` dispatches between two launch modes: `ida-fhs`
-  (`buildFHSEnv`/bubblewrap, required on NixOS, needs unprivileged user
-  namespaces) and `ida-native` (plain exec with the same libraries behind the
-  host's on `LD_LIBRARY_PATH`). It probes for a usable user namespace and falls
-  back to native with a one-line hint on hosts that block them (Ubuntu 24.04+
-  defaults to `kernel.apparmor_restrict_unprivileged_userns=1`, which affects
-  *every* bwrap-based package here); force either mode with
-  `CTF_TOOLS_IDA_MODE=fhs|native`. `ida --activate-idalib [--force]` reproduces
-  the pre-nix `py-activate-idalib.py` step into a venv under
-  `~/.local/share/ctf-tools/ida` — explicit and idempotent, not implicit on
-  every start.
-- **ida-pro-mcp** — the MCP server the pre-nix `ida/install` cloned, now its own
-  output (`ida-pro-mcp --install` for the IDA plugin + MCP clients,
-  `idalib-mcp` for headless). The `idapro` binding it needs for headless mode
-  only exists inside a licensed IDA install and comes from
-  `ida --activate-idalib`.
+  contract). `ida` dispatches between two launch modes: `ida-native` (plain
+  exec with the libraries it needs behind the host's on `LD_LIBRARY_PATH`) and
+  `ida-fhs` (`buildFHSEnv`/bubblewrap). It picks native wherever the host
+  provides the ELF interpreter the vendor binary asks for
+  (`/lib64/ld-linux-x86-64.so.2`), which is everywhere except NixOS — the
+  sandbox exists for hosts where the binary cannot exec at all, and it can only
+  ever approximate the host's fonts, icon themes and GPU drivers. Note the
+  sandbox also needs unprivileged user namespaces, which Ubuntu 24.04+ denies
+  to the store's bwrap (`kernel.apparmor_restrict_unprivileged_userns=1`,
+  affecting *every* bwrap-based package here). Force either mode with
+  `CTF_TOOLS_IDA_MODE=fhs|native`.
+
+  `ida --activate-idalib [--force]` reproduces the pre-nix
+  `py-activate-idalib.py` step into a venv under
+  `~/.local/share/ctf-tools/ida`, and additionally installs IDA's bundled
+  `idalib/python/idapro-*.whl` — as of 9.3 that script only writes
+  `~/.idapro/ida-config.json` and no longer installs the binding itself. The
+  activation stamp is written only after `import idapro` succeeds, so a partial
+  activation retries instead of reporting success forever.
+
+  You do not normally run it: it happens by itself after the first-run
+  `~/Downloads` unpack (as the pre-nix installer did) and on the first
+  `idalib-mcp` launch if the venv is missing. Both are best-effort — IDA Free
+  ships no idalib, and that must stop neither IDA nor the MCP server from
+  starting.
+- **ida-pro-mcp** — the MCP server the pre-nix `ida/install` cloned. It is its
+  own output *and* is joined into `ida`, because pre-nix it came with IDA
+  (`ida-pro-mcp --install` for the IDA plugin + MCP clients, `idalib-mcp` for
+  headless). The `idapro` binding headless mode needs only exists inside a
+  licensed IDA install, so the `idalib-mcp` on `PATH` hands off to the
+  activation venv's copy when there is one, and otherwise says what to run.
+- **kuna** — the only tool here that is not in the pre-nix installer; a Rust
+  decompiler (Ghidra's C++ decompiler ported and then diverged), pinned to the
+  `v1.119` release tag. Two things the derivation does that a plain
+  `buildRustPackage` would not, both from upstream's Makefile: it installs all
+  four workspace binaries, because the `kuna` CLI is a driver that shells out to
+  `decomp_dbg`/`decomp_test_dbg`/`slacomp` and finds them as siblings of its own
+  argv[0]; and it runs the freshly built `slacomp` over the vendored SLEIGH
+  spec tree (`make specs`), since the repo ships only `.slaspec` sources and the
+  decoder cannot disassemble anything without the compiled `.sla`. The compiled
+  tree is installed to `share/kuna/specs` and pointed at with `KUNA_SPECS`
+  (`SLEIGHHOME` for the engine console) — kuna otherwise looks for it three
+  directories above its own binary, which only resolves inside a source
+  checkout. The install check decompiles a function out of a freshly compiled
+  ELF, so a spec tree that failed to build or install fails the build.
 - **cross2** — the 2006-era `binutils-2.21.1` + `gcc-3.4.6` + `newlib-1.20.0`
   toolchain, built from pinned sources (upstream book patches vendored under
   `nix/pkgs/cross2/patch/`).
