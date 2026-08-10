@@ -2380,6 +2380,13 @@
 
 - [0xjohnnydev/WebKit-NavigationAPI-SOP-Bypass](https://github.com/0xjohnnydev/WebKit-NavigationAPI-SOP-Bypass)
 
+### CVE-2026-20685 (2026-05-18)
+
+<code>An attacker in a privileged network position may be able to leak sensitive information. A path handling issue was addressed with improved validation. This issue is fixed in PCC Release 5E290.3.
+</code>
+
+- [HORKimhab/CVE-2026-20685](https://github.com/HORKimhab/CVE-2026-20685)
+
 ### CVE-2026-20700 (2026-02-11)
 
 <code>A memory corruption issue was addressed with improved state management. This issue is fixed in iOS 26.3 and iPadOS 26.3, macOS Tahoe 26.3, tvOS 26.3, visionOS 26.3, watchOS 26.3. An attacker with memory write capability may be able to execute arbitrary code. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 26. CVE-2025-14174 and CVE-2025-43529 were also issued in response to this report.
@@ -3253,6 +3260,7 @@
 <code>Improper authentication in Windows Admin Center allows an authorized attacker to elevate privileges over a network.
 </code>
 
+- [Cyb3rWitch3r/CVE-2026-26119](https://github.com/Cyb3rWitch3r/CVE-2026-26119)
 - [r3vpwnx/CVE-2026-26119](https://github.com/r3vpwnx/CVE-2026-26119)
 
 ### CVE-2026-26179 (2026-04-14)
@@ -4576,6 +4584,7 @@
 - [vanhari/CVE-2026-39987](https://github.com/vanhari/CVE-2026-39987)
 - [Wind010/CVE-2026-39987_PoC](https://github.com/Wind010/CVE-2026-39987_PoC)
 - [alreadyClosed/CVE-2026-39987](https://github.com/alreadyClosed/CVE-2026-39987)
+- [MADA0L/CVE-2026-39987-Poc](https://github.com/MADA0L/CVE-2026-39987-Poc)
 
 ### CVE-2026-40000 (2026-07-27)
 
@@ -4825,6 +4834,13 @@
 - [Lutfifakee-Project/CVE-2026-41651](https://github.com/Lutfifakee-Project/CVE-2026-41651)
 - [0xDVRK/CVE-2026-41651](https://github.com/0xDVRK/CVE-2026-41651)
 - [gbuyssens/CVE-2026-41651](https://github.com/gbuyssens/CVE-2026-41651)
+
+### CVE-2026-41710 (2026-06-09)
+
+<code>An attacker can craft a large number of unique requests that trigger a failure, exhausting the capacity of the application-wide stateful retry cache. Once the cache is full, it permanently rejects any further updates, causing all later stateful retries and circuit breakers in the application to fail.\n\nAffected versions:\nSpring Retry 2.0.0 through 2.0.12; 1.3.0 through 1.3.4.
+</code>
+
+- [NicheToolkit/spring-retry-toolkit](https://github.com/NicheToolkit/spring-retry-toolkit)
 
 ### CVE-2026-41729 (2026-06-09)
 
@@ -5208,6 +5224,7 @@
 - [Meowkis/tcp-zerocopy-sm](https://github.com/Meowkis/tcp-zerocopy-sm)
 - [wxxsfxyzm/GhostLock-Galaxy](https://github.com/wxxsfxyzm/GhostLock-Galaxy)
 - [ruik-tech/Root-My-Galaxy](https://github.com/ruik-tech/Root-My-Galaxy)
+- [OhLookItsTheIRS/Root-My-Galaxy-tests](https://github.com/OhLookItsTheIRS/Root-My-Galaxy-tests)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -6903,6 +6920,7 @@
 </code>
 
 - [webshellseo8/CVE-2026-53787-POC-](https://github.com/webshellseo8/CVE-2026-53787-POC-)
+- [ChrisSEC2014/amasty-chekout-POC-rce](https://github.com/ChrisSEC2014/amasty-chekout-POC-rce)
 
 ### CVE-2026-53805 (2026-06-17)
 
@@ -7676,6 +7694,7 @@
 
 - [ethanolgolf/CVE-2026-64564](https://github.com/ethanolgolf/CVE-2026-64564)
 - [HackSpeak/CVE-2026-64564](https://github.com/HackSpeak/CVE-2026-64564)
+- [suominen/sctphantom](https://github.com/suominen/sctphantom)
 
 ### CVE-2026-64600 (2026-07-23)
 
@@ -7744,13 +7763,6 @@
 </code>
 
 - [zer0dayf/CVE-2026-65008](https://github.com/zer0dayf/CVE-2026-65008)
-
-### CVE-2026-65058 (2026-07-21)
-
-<code>Trezor Safe 3, Safe 5, and Safe 7 firmware contains a confirmation-binding flaw in the Ethereum sign_tx / sign_tx_eip1559 flow. For contract interactions, the device confirms only the initial calldata chunk while the signature commits to the full streamed calldata. An attacker could present calldata to a victim then supply a different tail that changes the signed transaction. Fixed in 70c9b0c.
-</code>
-
-- [iktok90-design/trezor-cve-2026-65058](https://github.com/iktok90-design/trezor-cve-2026-65058)
 
 ### CVE-2026-65321 (2026-08-02)
 
@@ -8058,6 +8070,13 @@
 </code>
 
 - [0xdak/CVE-2026-69083_exploit](https://github.com/0xdak/CVE-2026-69083_exploit)
+
+### CVE-2026-69084 (2026-08-03)
+
+<code>SiYuan versions &lt;= v3.7.2 expose the /api/search/searchEmbedBlock endpoint, which passes a client-supplied SQL statement verbatim to the main read-write siyuan.db handle with no single-statement, read-only, or admin restrictions. The endpoint is gated only by CheckAuth, making it reachable by the publish RoleReader token and by anonymous users when publish authentication is disabled. Because the underlying driver executes stacked statements, an attacker can read and modify content across all opened cleartext notebooks (encrypted per-box notebooks are excluded). Fixed in v3.7.3.
+</code>
+
+- [Boreas37/CVE-2026-69084-PoC](https://github.com/Boreas37/CVE-2026-69084-PoC)
 
 ### CVE-2026-69098 (2026-08-04)
 
@@ -8830,6 +8849,7 @@
 - [12-test-12/CVE-2025-3248](https://github.com/12-test-12/CVE-2025-3248)
 - [nebari-playground/langflow-cve-2025-3248](https://github.com/nebari-playground/langflow-cve-2025-3248)
 - [Atomics-hub/exposecheck](https://github.com/Atomics-hub/exposecheck)
+- [preemware/langflow-exploit](https://github.com/preemware/langflow-exploit)
 
 ### CVE-2025-3419 (2025-05-08)
 
@@ -9798,6 +9818,13 @@
 </code>
 
 - [mind2hex/CVE-2025-6998-CalibreWeb-0.6.24-ReDoS](https://github.com/mind2hex/CVE-2025-6998-CalibreWeb-0.6.24-ReDoS)
+
+### CVE-2025-7026 (2025-07-11)
+
+<code>A vulnerability in the Software SMI handler (SwSmiInputValue 0xB2) allows a local attacker to control the RBX register, which is used as an unchecked pointer in the CommandRcx0 function. If the contents at RBX match certain expected values (e.g., '$DB$' or '2DB$'), the function performs arbitrary writes to System Management RAM (SMRAM), leading to potential privilege escalation to System Management Mode (SMM) and persistent firmware compromise.
+</code>
+
+- [Tobss8/GIGABYTE-H510M-K-V2-BIOS-SMM-Reverse-Engineering-CVE-2025-7026-7027-7028-7029-Research](https://github.com/Tobss8/GIGABYTE-H510M-K-V2-BIOS-SMM-Reverse-Engineering-CVE-2025-7026-7027-7028-7029-Research)
 
 ### CVE-2025-7029 (2025-07-11)
 
@@ -16957,13 +16984,11 @@
 - [git0xLai/React2ShellPoC](https://github.com/git0xLai/React2ShellPoC)
 - [hndko/react2shell-rce-autobot](https://github.com/hndko/react2shell-rce-autobot)
 - [Goultarde/CVE-2025-55182-React2Shell-Lab](https://github.com/Goultarde/CVE-2025-55182-React2Shell-Lab)
-- [xiaoLvChen/CVE-2025-55182](https://github.com/xiaoLvChen/CVE-2025-55182)
 - [captain4554/CVE-2025-55182-Scanner](https://github.com/captain4554/CVE-2025-55182-Scanner)
 - [captain4554/captain4554.github.io](https://github.com/captain4554/captain4554.github.io)
 - [joaovicdev/EXPLOIT-CVE-2025-55182](https://github.com/joaovicdev/EXPLOIT-CVE-2025-55182)
 - [AdityaBhatt3010/React2Shell-CVE-2025-55182](https://github.com/AdityaBhatt3010/React2Shell-CVE-2025-55182)
 - [gahoole77/gahoole77.github.io](https://github.com/gahoole77/gahoole77.github.io)
-- [lucyz1125/CVE-2025-55182-Next.js-RCE](https://github.com/lucyz1125/CVE-2025-55182-Next.js-RCE)
 - [hyan0116/Next.js-RCE-CVE-2025-55182](https://github.com/hyan0116/Next.js-RCE-CVE-2025-55182)
 - [MyCompanyOrganization/React2Shell-Kingdom](https://github.com/MyCompanyOrganization/React2Shell-Kingdom)
 - [yannisduvignau/react2shell-exploit](https://github.com/yannisduvignau/react2shell-exploit)
@@ -20940,6 +20965,7 @@
 - [nnatsopoulos/xz-backdoor-research](https://github.com/nnatsopoulos/xz-backdoor-research)
 - [x-cmd-build/xz](https://github.com/x-cmd-build/xz)
 - [Preacher98/Report-XZ-Utils-CVE-2024-3094](https://github.com/Preacher98/Report-XZ-Utils-CVE-2024-3094)
+- [namegabevictoire01-sys/cs50-cybersecurity-final-project](https://github.com/namegabevictoire01-sys/cs50-cybersecurity-final-project)
 
 ### CVE-2024-3105 (2024-06-15)
 
@@ -25866,6 +25892,7 @@
 
 - [bjrjk/CVE-2024-29943](https://github.com/bjrjk/CVE-2024-29943)
 - [seadragnol/CVE-2024-29943](https://github.com/seadragnol/CVE-2024-29943)
+- [SneakyNachos/CVE-2024-29943-but-with-wasm](https://github.com/SneakyNachos/CVE-2024-29943-but-with-wasm)
 
 ### CVE-2024-29972 (2024-06-04)
 
@@ -25944,6 +25971,7 @@
 - [Admin9961/CVE-2024-30088](https://github.com/Admin9961/CVE-2024-30088)
 - [Justintroup85/exploits-forsale-collateral-damage](https://github.com/Justintroup85/exploits-forsale-collateral-damage)
 - [ramzihafiz/cve-2024-30088-binary](https://github.com/ramzihafiz/cve-2024-30088-binary)
+- [th3g3ntl3m4n84/CVE-2024-30088__Windows-TOCTOU-exploit](https://github.com/th3g3ntl3m4n84/CVE-2024-30088__Windows-TOCTOU-exploit)
 - [FangFang-Yi/CVE-2024-30088](https://github.com/FangFang-Yi/CVE-2024-30088)
 
 ### CVE-2024-30090 (2024-06-11)
@@ -27589,7 +27617,6 @@
 </code>
 
 - [mouadk/cve-2024-38821](https://github.com/mouadk/cve-2024-38821)
-- [masa42/CVE-2024-38821-POC](https://github.com/masa42/CVE-2024-38821-POC)
 
 ### CVE-2024-38828 (2024-11-18)
 
@@ -30352,7 +30379,6 @@
 </code>
 
 - [RandomRobbieBF/CVE-2024-54369](https://github.com/RandomRobbieBF/CVE-2024-54369)
-- [Nxploited/CVE-2024-54369-PoC](https://github.com/Nxploited/CVE-2024-54369-PoC)
 
 ### CVE-2024-54378 (2024-12-16)
 
@@ -30545,13 +30571,6 @@
 </code>
 
 - [SyFi/CVE-2024-55503](https://github.com/SyFi/CVE-2024-55503)
-
-### CVE-2024-55504 (2025-01-21)
-
-<code>An issue in RAR Extractor - Unarchiver Free and Pro v.6.4.0 allows local attackers to inject arbitrary code potentially leading to remote control and unauthorized access to sensitive user data via the exploit_combined.dylib component on MacOS.
-</code>
-
-- [SyFi/CVE-2024-55504](https://github.com/SyFi/CVE-2024-55504)
 
 ### CVE-2024-55511 (2025-01-16)
 
@@ -45987,6 +46006,13 @@
 
 - [sornram9254/CVE-2022-38577-Processmaker](https://github.com/sornram9254/CVE-2022-38577-Processmaker)
 
+### CVE-2022-38599 (2022-12-08)
+
+<code>Teleport v3.2.2, Teleport v3.5.6-rc6, and Teleport v3.6.3-b2 was discovered to contain an information leak via the /user/get-role-list web interface.
+</code>
+
+- [arleyna/CVE-2022-38599](https://github.com/arleyna/CVE-2022-38599)
+
 ### CVE-2022-38601
 - [jet-pentest/CVE-2022-38601](https://github.com/jet-pentest/CVE-2022-38601)
 
@@ -58417,6 +58443,13 @@
 </code>
 
 - [DXY0411/CVE-2020-23342](https://github.com/DXY0411/CVE-2020-23342)
+
+### CVE-2020-23349 (2022-04-05)
+
+<code>An intent redirection issue was doscovered in Sina Weibo Android SDK 4.2.7 (com.sina.weibo.sdk.share.WbShareTransActivity), any unexported Activities could be started by the com.sina.weibo.sdk.share.WbShareTransActivity.
+</code>
+
+- [LazyBear8372/CVE-2020-23349_Lab](https://github.com/LazyBear8372/CVE-2020-23349_Lab)
 
 ### CVE-2020-23489 (2020-11-16)
 
