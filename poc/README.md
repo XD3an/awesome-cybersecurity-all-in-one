@@ -529,6 +529,13 @@
 
 - [dann3xplo1t/CVE-2026-4257](https://github.com/dann3xplo1t/CVE-2026-4257)
 
+### CVE-2026-4282 (2026-04-02)
+
+<code>A flaw was found in Keycloak. The SingleUseObjectProvider, a global key-value store, lacks proper type and namespace isolation. This vulnerability allows an unauthenticated attacker to forge authorization codes. Successful exploitation can lead to the creation of admin-capable access tokens, resulting in privilege escalation.
+</code>
+
+- [hexissam/CVE-2026-4282-Scanner](https://github.com/hexissam/CVE-2026-4282-Scanner)
+
 ### CVE-2026-4390 (2026-05-27)
 
 <code>A weakness has been identified in TeamSpeak 3 Server up to 3.13.7. This affects the function process_resend_queue of the component Connection State Management. This manipulation causes use after free. The attack may be initiated remotely. Upgrading to version 3.13.8 is able to mitigate this issue. The affected component should be upgraded.
@@ -1352,6 +1359,13 @@
 
 - [HORKimhab/CVE-2026-9560](https://github.com/HORKimhab/CVE-2026-9560)
 
+### CVE-2026-9645 (2026-05-28)
+
+<code>Exposed methods allow authenticated users to create and execute arbitrary JavaScript code on the server. The scripts execute with full access, enabling complete system compromise as commands are executed as root.
+</code>
+
+- [0xmhany/CVE-2026-9645-ScadaBR-Analysis](https://github.com/0xmhany/CVE-2026-9645-ScadaBR-Analysis)
+
 ### CVE-2026-9691 (2026-06-15)
 
 <code>Unauthenticated PHP Object Injection in Integration for ActiveCampaign and Contact Form 7, WPForms, Elementor, Ninja Forms &lt;= 1.1.1 versions.
@@ -2048,6 +2062,13 @@
 </code>
 
 - [zer0dayf/CVE-2026-15013](https://github.com/zer0dayf/CVE-2026-15013)
+
+### CVE-2026-15038 (2026-08-09)
+
+<code>The InfiniteWP Client WordPress plugin before 1.13.6 does not properly verify the site-connection state and the authenticity of requests to its remote-management endpoint on WordPress Multisite installations, allowing unauthenticated attackers to bind their own key, hijack an administrator session, and take over the entire network, leading to remote code execution.
+</code>
+
+- [Polosss/By-Poloss..-..CVE-2026-15038-POC](https://github.com/Polosss/By-Poloss..-..CVE-2026-15038-POC)
 
 ### CVE-2026-15282 (2026-07-10)
 
@@ -2787,6 +2808,13 @@
 - [BishopFox/CVE-2026-22557-check](https://github.com/BishopFox/CVE-2026-22557-check)
 - [gagaltotal/CVE-2026-22557-Path-Traversal-Ubiquti-UniFi](https://github.com/gagaltotal/CVE-2026-22557-Path-Traversal-Ubiquti-UniFi)
 
+### CVE-2026-22747 (2026-04-22)
+
+<code>Vulnerability in Spring Spring Security. SubjectX500PrincipalExtractor does not correctly handle certain malformed X.509 certificate CN values, which can lead to reading the wrong value for the username. In a carefully crafted certificate, this can lead to an attacker impersonating another user.\nThis issue affects Spring Security: from 7.0.0 through 7.0.4.
+</code>
+
+- [gsadagopan/cve-2026-22747-sandbox](https://github.com/gsadagopan/cve-2026-22747-sandbox)
+
 ### CVE-2026-22874 (2026-07-03)
 
 <code>Gitea versions up to and including 1.26.2 have incomplete SSRF protection in webhook and migration allow-list filtering.
@@ -3219,6 +3247,13 @@
 </code>
 
 - [j-dahl7/mcp-attack-detection-sentinel](https://github.com/j-dahl7/mcp-attack-detection-sentinel)
+
+### CVE-2026-26119 (2026-02-17)
+
+<code>Improper authentication in Windows Admin Center allows an authorized attacker to elevate privileges over a network.
+</code>
+
+- [r3vpwnx/CVE-2026-26119](https://github.com/r3vpwnx/CVE-2026-26119)
 
 ### CVE-2026-26179 (2026-04-14)
 
@@ -4027,6 +4062,13 @@
 
 - [BishopFox/CVE-2026-34908-check](https://github.com/BishopFox/CVE-2026-34908-check)
 
+### CVE-2026-34910 (2026-05-22)
+
+<code>A malicious actor with access to the network could exploit an Improper Input Validation vulnerability found in UniFi OS devices to execute a Command Injection.
+</code>
+
+- [Boreas37/CVE-2026-34910-PoC](https://github.com/Boreas37/CVE-2026-34910-PoC)
+
 ### CVE-2026-34926 (2026-05-21)
 
 <code>A directory traversal vulnerability in the Apex One (on-premise) server could allow a pre-authenticated local attacker to modify a key table on the server to inject malicious code to deploy to agents on affected installations.\n\n\r\nThis vulnerability is only exploitable on the on-premise version of Apex One and a potential attacker must have access to the Apex One Server and already obtained administrative credentials to the server via some other method to exploit this vulnerability.
@@ -4718,6 +4760,7 @@
 - [0xBlackash/CVE-2026-41091](https://github.com/0xBlackash/CVE-2026-41091)
 - [ridhinva/defender-privilege-escalation-scanner](https://github.com/ridhinva/defender-privilege-escalation-scanner)
 - [tc4dy/CVE-2026-41091-PoC-Exploit](https://github.com/tc4dy/CVE-2026-41091-PoC-Exploit)
+- [s4m98/RedSun-](https://github.com/s4m98/RedSun-)
 
 ### CVE-2026-41096 (2026-05-12)
 
@@ -5164,6 +5207,7 @@
 - [oopnv70-lab/ghostlock-honor-aak](https://github.com/oopnv70-lab/ghostlock-honor-aak)
 - [Meowkis/tcp-zerocopy-sm](https://github.com/Meowkis/tcp-zerocopy-sm)
 - [wxxsfxyzm/GhostLock-Galaxy](https://github.com/wxxsfxyzm/GhostLock-Galaxy)
+- [ruik-tech/Root-My-Galaxy](https://github.com/ruik-tech/Root-My-Galaxy)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -7660,7 +7704,7 @@
 </code>
 
 - [HORKimhab/CVE-2026-64638](https://github.com/HORKimhab/CVE-2026-64638)
-- [Boreas37/CVE-2026-64638-PoC](https://github.com/Boreas37/CVE-2026-64638-PoC)
+- [Boreas37/CVE-2026-64638-PoC-XSS2Shell-](https://github.com/Boreas37/CVE-2026-64638-PoC-XSS2Shell-)
 - [686f6c61/POC-WP-XSS2Shell-CVE-2026-64638](https://github.com/686f6c61/POC-WP-XSS2Shell-CVE-2026-64638)
 - [wordsec/XSS2Shell](https://github.com/wordsec/XSS2Shell)
 - [5yu4n/CVE-2026-64638](https://github.com/5yu4n/CVE-2026-64638)
@@ -7677,6 +7721,8 @@
 - [Dungsocool/CVE-2026-64638](https://github.com/Dungsocool/CVE-2026-64638)
 - [MR-LeonardoGomes/XSS2Shell-CVE-2026-64638](https://github.com/MR-LeonardoGomes/XSS2Shell-CVE-2026-64638)
 - [jendmaoul/XSS2Shell-CVE-2026-64638](https://github.com/jendmaoul/XSS2Shell-CVE-2026-64638)
+- [eh-amish/CVE-2026-64638-XSS-to-Shell-PoC](https://github.com/eh-amish/CVE-2026-64638-XSS-to-Shell-PoC)
+- [0xlipon/xss2shell](https://github.com/0xlipon/xss2shell)
 
 ### CVE-2026-64640 (2026-08-06)
 
@@ -11194,13 +11240,6 @@
 
 - [d3kc4rt1/CVE-2025-14893](https://github.com/d3kc4rt1/CVE-2025-14893)
 
-### CVE-2025-14998 (2026-01-02)
-
-<code>The Branda plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 3.4.24. This is due to the plugin not properly validating a user's identity prior to updating their password. This makes it possible for unauthenticated attackers to change arbitrary user's passwords, including administrators, and leverage that to gain access to their account.
-</code>
-
-- [KTN1990/CVE-2025-14998](https://github.com/KTN1990/CVE-2025-14998)
-
 ### CVE-2025-15001 (2026-01-06)
 
 <code>The FS Registration Password plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 1.0.1. This is due to the plugin not properly validating a user's identity prior to updating their password. This makes it possible for unauthenticated attackers to change arbitrary user's passwords, including administrators, and leverage that to gain access to their account.
@@ -14153,7 +14192,6 @@
 </code>
 
 - [farazsth98/poc-CVE-2025-38352](https://github.com/farazsth98/poc-CVE-2025-38352)
-- [farazsth98/chronomaly](https://github.com/farazsth98/chronomaly)
 - [Crime2/poc-CVE-2025-38352](https://github.com/Crime2/poc-CVE-2025-38352)
 - [jordelmir/Elysium-Vanguard-Sentinel-Audit](https://github.com/jordelmir/Elysium-Vanguard-Sentinel-Audit)
 - [AnalyticETH/chronomaly-webos](https://github.com/AnalyticETH/chronomaly-webos)
@@ -15217,6 +15255,7 @@
 
 - [Farenhytee/database-sentinel](https://github.com/Farenhytee/database-sentinel)
 - [git-akki/cso-vibecheck](https://github.com/git-akki/cso-vibecheck)
+- [boxed-dev/vibe-coding-security](https://github.com/boxed-dev/vibe-coding-security)
 
 ### CVE-2025-48799 (2025-07-08)
 
@@ -17804,6 +17843,7 @@
 - [im-nymii/CVE-2025-59528](https://github.com/im-nymii/CVE-2025-59528)
 - [corey-farley/CVE-2025-59528-Flowise-RCE](https://github.com/corey-farley/CVE-2025-59528-Flowise-RCE)
 - [Moon-Harvest/CVE-2025-59528](https://github.com/Moon-Harvest/CVE-2025-59528)
+- [Loaxert/CVE-2025-59528-PoC](https://github.com/Loaxert/CVE-2025-59528-PoC)
 
 ### CVE-2025-59532 (2025-09-22)
 
@@ -47665,7 +47705,6 @@
 <code>In BTM_TryAllocateSCN of btm_scn.cc, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-8.1 Android-9 Android-10Android ID: A-180939982
 </code>
 
-- [Trinadh465/System_bt_AOSP10_r33_CVE-2021-0589](https://github.com/Trinadh465/System_bt_AOSP10_r33_CVE-2021-0589)
 - [Satheesh575555/system_bt_AOSP10_r33_CVE-2021-0589](https://github.com/Satheesh575555/system_bt_AOSP10_r33_CVE-2021-0589)
 
 ### CVE-2021-22
@@ -48422,7 +48461,6 @@
 - [galoget/PwnKit-CVE-2021-4034](https://github.com/galoget/PwnKit-CVE-2021-4034)
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [rvzsec/CVE-2021-4034](https://github.com/rvzsec/CVE-2021-4034)
-- [Nosferatuvjr/PwnKit](https://github.com/Nosferatuvjr/PwnKit)
 - [antoinenguyen-09/CVE-2021-4034](https://github.com/antoinenguyen-09/CVE-2021-4034)
 - [wudicainiao/cve-2021-4034](https://github.com/wudicainiao/cve-2021-4034)
 - [TanmoyG1800/CVE-2021-4034](https://github.com/TanmoyG1800/CVE-2021-4034)
@@ -49420,13 +49458,6 @@
 </code>
 
 - [0dayNinja/CVE-2021-24155.rb](https://github.com/0dayNinja/CVE-2021-24155.rb)
-
-### CVE-2021-24160 (2021-04-05)
-
-<code>In the Reponsive Menu (free and Pro) WordPress plugins before 4.0.4, subscribers could upload zip archives containing malicious PHP files that would get extracted to the /rmp-menu/ directory. These files could then be accessed via the front end of the site to trigger remote code execution and ultimately allow an attacker to execute commands to further infect a WordPress site.
-</code>
-
-- [likeww/Exploit-CVE-2021-24160](https://github.com/likeww/Exploit-CVE-2021-24160)
 
 ### CVE-2021-24356 (2021-06-14)
 
@@ -50599,6 +50630,13 @@
 </code>
 
 - [karthi-the-hacker/CVE-2021-31589](https://github.com/karthi-the-hacker/CVE-2021-31589)
+
+### CVE-2021-31602 (2021-11-08)
+
+<code>An issue was discovered in Hitachi Vantara Pentaho through 9.1 and Pentaho Business Intelligence Server through 7.x. The Security Model has different layers of Access Control. One of these layers is the applicationContext security, which is defined in the applicationContext-spring-security.xml file. The default configuration allows an unauthenticated user with no previous knowledge of the platform settings to extract pieces of information without possessing valid credentials.
+</code>
+
+- [0cool-design/PWNtaho](https://github.com/0cool-design/PWNtaho)
 
 ### CVE-2021-31630 (2021-08-03)
 
@@ -52453,6 +52491,7 @@
 - [KunalKhandelwal-dev/cve-2021-41773-lab](https://github.com/KunalKhandelwal-dev/cve-2021-41773-lab)
 - [Shams-Ul-Mehmood/CVE-2021-41773-Exploit](https://github.com/Shams-Ul-Mehmood/CVE-2021-41773-Exploit)
 - [lucastran05/CVE-2021-41773](https://github.com/lucastran05/CVE-2021-41773)
+- [Emaar1x/CVE-2021-41773](https://github.com/Emaar1x/CVE-2021-41773)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -53590,6 +53629,7 @@
 - [yili-soc/vm-homelab-log4shell-assessment](https://github.com/yili-soc/vm-homelab-log4shell-assessment)
 - [sanasimran1403-jpg/log4shell](https://github.com/sanasimran1403-jpg/log4shell)
 - [AhndreWalters/ProjectSecurity-Homelab](https://github.com/AhndreWalters/ProjectSecurity-Homelab)
+- [Jiahong-Guan/log4j-shell-poc](https://github.com/Jiahong-Guan/log4j-shell-poc)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -69276,6 +69316,7 @@
 - [TrG-1999/DetectPacket-CVE-2017-8464](https://github.com/TrG-1999/DetectPacket-CVE-2017-8464)
 - [tuankiethkt020/Phat-hien-CVE-2017-8464](https://github.com/tuankiethkt020/Phat-hien-CVE-2017-8464)
 - [TieuLong21Prosper/Detect-CVE-2017-8464](https://github.com/TieuLong21Prosper/Detect-CVE-2017-8464)
+- [PlayBoiSK8/POC-CVE-2017-8464-OpenCalculator](https://github.com/PlayBoiSK8/POC-CVE-2017-8464-OpenCalculator)
 
 ### CVE-2017-8465 (2017-06-15)
 
