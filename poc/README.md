@@ -55,6 +55,13 @@
 - [fredevsec/CVE-2026-0073](https://github.com/fredevsec/CVE-2026-0073)
 - [ctn-Qvo/CVE-2026-0073-Android-ADBD-bypass-POC_zh_CN](https://github.com/ctn-Qvo/CVE-2026-0073-Android-ADBD-bypass-POC_zh_CN)
 
+### CVE-2026-0075 (2026-06-01)
+
+<code>In multiple functions, there is a possible way to access the contacts database due to a SQL injection. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
+</code>
+
+- [QM4RS/CVE-2026-0075](https://github.com/QM4RS/CVE-2026-0075)
+
 ### CVE-2026-0091 (2026-06-01)
 
 <code>In multiple locations, there is a possible way to execute code in the launcher process due to an over-privileged shell user. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
@@ -769,13 +776,6 @@
 
 - [Xaanziu/CVE-2026-5513](https://github.com/Xaanziu/CVE-2026-5513)
 - [87achrafg-stack/CVE-2026-5513](https://github.com/87achrafg-stack/CVE-2026-5513)
-
-### CVE-2026-5524 (2026-07-02)
-
-<code>The Divi Form Builder plugin for WordPress is vulnerable to Arbitrary File Upload leading to Remote Code Execution in all versions up to and including 5.1.8. This is due to insufficient file extension validation in the do_image_upload() function where user-supplied input from the acceptFileTypes POST parameter is directly interpolated into a regular expression used to validate uploaded files. Attackers can specify PHP-executable extensions such as .phtml, .phar, .php5, or .php7 to bypass the plugin's .htaccess protection which only blocks .php files specifically. Additionally, on Nginx-based servers, the .htaccess protection is completely ineffective as Nginx does not process .htaccess files. This makes it possible for unauthenticated attackers (who can obtain a nonce from any public page containing a form) to upload executable PHP files to the publicly accessible /wp-content/uploads/de_fb_uploads/ directory and achieve Remote Code Execution by accessing the uploaded file via HTTP. The vulnerability was partially patched in version 5.1.3.
-</code>
-
-- [caterscam/CVE-2026-5524-PoC](https://github.com/caterscam/CVE-2026-5524-PoC)
 
 ### CVE-2026-5555 (2026-04-05)
 
@@ -1732,13 +1732,6 @@
 
 - [BishopFox/CVE-2026-11374-check](https://github.com/BishopFox/CVE-2026-11374-check)
 
-### CVE-2026-11387 (2026-07-01)
-
-<code>The SMS Alert – SMS &amp; OTP for WooCommerce, Order Notifications &amp; Abandoned Cart Recovery plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 3.9.5. This is due to the plugin not properly validating a user's identity prior to updating their details like reset the password of any user account, including administrators, and gain full access to those accounts. This makes it possible for unauthenticated attackers to change arbitrary user's email addresses, including administrators, and leverage that to reset the user's password and gain access to their account. This is only vulnerable on sites with OTP verification for password resets enabled, and where the administrator (or other user) has set a phone number for OTP verification.
-</code>
-
-- [1beelze/CVE-2026-11387](https://github.com/1beelze/CVE-2026-11387)
-
 ### CVE-2026-11405 (2026-07-06)
 
 <code>The web server binary /bin/httpd contains a hidden backdoor authentication mechanism in the login() function at 004c88b8.\r\n\r\n- The function contains a normal authentication path using MD5/hash-based password verification (prod_encode64/PasswordToMd5/check_rand_key).\r\n- After normal authentication fails, it calls GetValue(&quot;sys.rzadmin.password&quot;) to read a backdoor password from the device configuration.\r\n- It performs a direct strcmp() comparison (plaintext, not hashed) between the config value and the user-supplied password.\r\n\r\nA successful match grants role=2 (admin-level access) and creates a valid session. The rzadmin username is never checked — any username works with the backdoor
@@ -1980,7 +1973,6 @@
 <code>Gardyn devices expose a privileged iothubowner key. Access to this key will allow a malicious user to invoke an IoTHub Registry Manager function which returns connection information for all Gardyn Home Kit and Studio devices. Access to this key also allows a malicious user to execute arbitrary commands on a specific connected device and may allow the malicious user to pivot to other devices on the user's network.
 </code>
 
-- [MichaelAdamGroberman/CVE-2026-13768](https://github.com/MichaelAdamGroberman/CVE-2026-13768)
 - [J4ck3LSyN-Gen2/CVE-2026-13768](https://github.com/J4ck3LSyN-Gen2/CVE-2026-13768)
 
 ### CVE-2026-13934 (2026-06-30)
@@ -2006,6 +1998,13 @@
 - [4minx/CVE-2026-14266](https://github.com/4minx/CVE-2026-14266)
 - [liyuxuan504-byte/CVE-2026-14266](https://github.com/liyuxuan504-byte/CVE-2026-14266)
 
+### CVE-2026-14282 (2026-07-23)
+
+<code>The GoDAM – Organize WordPress Media Library &amp; File Manager with Unlimited Folders for Images, Videos &amp; more plugin for WordPress is vulnerable to arbitrary file uploads in versions up to, and including, 1.12.2. This is due to insufficient file type validation in the save_video_file() function hooked into WPForms' public wpforms_process_before_filter, which trusts the attacker-supplied multipart Content-Type header, preserves the original filename via wp_unique_filename(), and moves the raw upload with $wp_filesystem-&gt;move() into a web-served directory — bypassing wp_handle_upload()'s MIME/extension allowlist. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.
+</code>
+
+- [nullwhisper/CVE-2026-14282](https://github.com/nullwhisper/CVE-2026-14282)
+
 ### CVE-2026-14361 (2026-07-08)
 
 <code>The consul-template library before version 0.42.1 is vulnerable to a path redirection issue in the writeToFile template helper that may allow template output to be written outside the intended directory or to overwrite an existing file. This vulnerability (CVE-2026-14361) is fixed in consul-template 0.42.1.
@@ -2026,13 +2025,6 @@
 </code>
 
 - [jaf0rk/CVE-2026-14431](https://github.com/jaf0rk/CVE-2026-14431)
-
-### CVE-2026-14459 (2026-07-03)
-
-<code>Improper neutralization of argument delimiters in a command ('argument injection') vulnerability in TUBITAK BILGEM Software Technologies Research Institute pardus-software allows Argument Injection.\n\nThis issue affects pardus-software: from &lt;= 1.0.4 before 1.0.5.
-</code>
-
-- [dasokkk/CVE-2026-14459-14460-pardus-software](https://github.com/dasokkk/CVE-2026-14459-14460-pardus-software)
 
 ### CVE-2026-14483 (2026-07-31)
 
@@ -2062,6 +2054,13 @@
 </code>
 
 - [IamDremig/CVE-2026-14802](https://github.com/IamDremig/CVE-2026-14802)
+
+### CVE-2026-14840 (2026-08-01)
+
+<code>The YOP Poll WordPress plugin before 7.0.6 does not validate the connection's origin IP address and instead trusts client-controlled forwarding headers when enforcing its per-IP vote restriction, allowing unauthenticated attackers to bypass the vote limit and cast unlimited votes on a public poll.
+</code>
+
+- [nullwhisper/CVE-2026-14840](https://github.com/nullwhisper/CVE-2026-14840)
 
 ### CVE-2026-14856 (2026-07-27)
 
@@ -2216,6 +2215,7 @@
 ### CVE-2026-17106
 - [masasron/CopyEscape-CVE-2026-17106](https://github.com/masasron/CopyEscape-CVE-2026-17106)
 - [HackSpeak/CVE-2026-17106](https://github.com/HackSpeak/CVE-2026-17106)
+- [686f6c61/POC-CopyEscape-CVE-2026-17106](https://github.com/686f6c61/POC-CopyEscape-CVE-2026-17106)
 
 ### CVE-2026-17351 (2026-07-31)
 
@@ -2238,6 +2238,13 @@
 
 - [pratham220/CVE-2026-17543-PHP-Exposure-Validator](https://github.com/pratham220/CVE-2026-17543-PHP-Exposure-Validator)
 - [Hunt-Benito/e-is-for-exploit-cve-2026-17543-php-pgsql-sql-injection-backslash-breakout](https://github.com/Hunt-Benito/e-is-for-exploit-cve-2026-17543-php-pgsql-sql-injection-backslash-breakout)
+
+### CVE-2026-17544 (2026-07-30)
+
+<code>Attacker-provided inputs to bccomp() could lead to an out-of-bounds write with stack and heap corruption in PHP versions from 8.4.* before 8.4.24 and from 8.5.* before 8.5.9.
+</code>
+
+- [Boreas37/CVE-2026-17544-PoC](https://github.com/Boreas37/CVE-2026-17544-PoC)
 
 ### CVE-2026-17566 (2026-07-31)
 
@@ -2492,7 +2499,6 @@
 <code>Gitea Docker image versions up to and including 1.26.2 use REVERSE_PROXY_TRUSTED_PROXIES=* by default, allowing any source IP to impersonate a user when reverse-proxy authentication headers such as X-WEBAUTH-USER are enabled.
 </code>
 
-- [kaleth4/CVE-2026-20896](https://github.com/kaleth4/CVE-2026-20896)
 - [rz1027/CVE-2026-20896](https://github.com/rz1027/CVE-2026-20896)
 - [szybnev/cve-2026-20896-gitea-poc](https://github.com/szybnev/cve-2026-20896-gitea-poc)
 - [XaocZenon/CVE-2026-20896](https://github.com/XaocZenon/CVE-2026-20896)
@@ -2979,6 +2985,7 @@
 - [seguridadentrerios/CVE-2026-23111](https://github.com/seguridadentrerios/CVE-2026-23111)
 - [ishankaru/CVE-2026-23111-nftables-lab](https://github.com/ishankaru/CVE-2026-23111-nftables-lab)
 - [Baba01hacker666/CVE-2026-23111](https://github.com/Baba01hacker666/CVE-2026-23111)
+- [Knz-source/CVE-2026-23111-POC-noddlenpottato](https://github.com/Knz-source/CVE-2026-23111-POC-noddlenpottato)
 
 ### CVE-2026-23415 (2026-04-02)
 
@@ -3101,13 +3108,6 @@
 
 - [offseckit/CVE-2026-23813](https://github.com/offseckit/CVE-2026-23813)
 
-### CVE-2026-23869 (2026-04-08)
-
-<code>A denial of service vulnerability exists in React Server Components, affecting the following packages: react-server-dom-parcel, react-server-dom-turbopack and react-server-dom-webpack (versions 19.0.0 through 19.0.4, 19.1.0 through 19.1.5, and 19.2.0 through 19.2.4). The vulnerability is triggered by sending specially crafted HTTP requests to Server Function endpoints.The payload of the HTTP request causes excessive CPU usage for up to a minute ending in a thrown error that is catchable.
-</code>
-
-- [shaheryar773/mitigate-cve-2026-23869-react-server-component-loops](https://github.com/shaheryar773/mitigate-cve-2026-23869-react-server-component-loops)
-
 ### CVE-2026-23870 (2026-05-06)
 
 <code>A denial of service vulnerability could be triggered by sending specially crafted HTTP requests to server function endpoints, this could lead to server crashes, out-of-memory exceptions or excessive CPU usage; affecting the following packages: react-server-dom-webpack, react-server-dom-parcel, react-server-dom-turbopack (versions 19.0.0 through 19.0.5, 19.1.0 through 19.1.6, and 19.2.0 through 19.2.5).
@@ -3131,6 +3131,13 @@
 </code>
 
 - [RichJJ98/analise-vulnerabilidades-zabbix-notebooklm](https://github.com/RichJJ98/analise-vulnerabilidades-zabbix-notebooklm)
+
+### CVE-2026-24031 (2026-03-27)
+
+<code>Dovecot SQL based authentication can be bypassed when auth_username_chars is cleared by admin. This vulnerability allows bypassing authentication for any user and user enumeration. Do not clear auth_username_chars. If this is not possible, install latest fixed version. No publicly available exploits are known.
+</code>
+
+- [aramosf/CVE-2026-24031](https://github.com/aramosf/CVE-2026-24031)
 
 ### CVE-2026-24055 (2026-01-22)
 
@@ -3424,6 +3431,13 @@
 
 - [stealth-engine/resize-image-before-upload-secure](https://github.com/stealth-engine/resize-image-before-upload-secure)
 
+### CVE-2026-27344 (2026-03-05)
+
+<code>Missing Authorization vulnerability in inseriswiss inseri core inseri-core allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects inseri core: from n/a through &lt;= 1.0.5.
+</code>
+
+- [AC8999/CVE-2026-27344](https://github.com/AC8999/CVE-2026-27344)
+
 ### CVE-2026-27384 (2026-03-05)
 
 <code>Improper Validation of Specified Quantity in Input vulnerability in BoldGrid W3 Total Cache w3-total-cache allows Accessing Functionality Not Properly Constrained by ACLs.This issue affects W3 Total Cache: from n/a through &lt;= 2.9.1.
@@ -3579,6 +3593,13 @@
 
 - [speedyfriend433/CVE-2026-28867-PoC](https://github.com/speedyfriend433/CVE-2026-28867-PoC)
 
+### CVE-2026-28956 (2026-05-11)
+
+<code>A memory corruption issue was addressed with improved input validation. This issue is fixed in iOS 26.5 and iPadOS 26.5, macOS Sequoia 15.7.7, macOS Sonoma 14.8.7, macOS Tahoe 26.5, tvOS 26.5, visionOS 26.5, watchOS 26.5. Processing a maliciously crafted media file may lead to unexpected app termination or corrupt process memory.
+</code>
+
+- [HORKimhab/CVE-2026-28956](https://github.com/HORKimhab/CVE-2026-28956)
+
 ### CVE-2026-28990 (2026-05-11)
 
 <code>The issue was addressed with improved memory handling. This issue is fixed in iOS 26.5 and iPadOS 26.5, macOS Sequoia 15.7.7, macOS Sonoma 14.8.7, macOS Tahoe 26.5, tvOS 26.5, visionOS 26.5, watchOS 26.5. Processing a maliciously crafted image may corrupt process memory.
@@ -3593,13 +3614,6 @@
 
 - [0xjohnnydev/CVE-2026-28992-IOHIDFamily-FastPathUserClient-Race-Conditions](https://github.com/0xjohnnydev/CVE-2026-28992-IOHIDFamily-FastPathUserClient-Race-Conditions)
 - [clogan9019-dotcom/IOHIDFamily-PoC-Research](https://github.com/clogan9019-dotcom/IOHIDFamily-PoC-Research)
-
-### CVE-2026-28995 (2026-05-11)
-
-<code>A logic issue was addressed with improved restrictions. This issue is fixed in iOS 18.7.9 and iPadOS 18.7.9, iOS 26.5 and iPadOS 26.5, macOS Tahoe 26.5, tvOS 26.5, visionOS 26.5, watchOS 26.5. A malicious app may be able to break out of its sandbox.
-</code>
-
-- [Robertmak2014-sudow/CVE-2026-28995](https://github.com/Robertmak2014-sudow/CVE-2026-28995)
 
 ### CVE-2026-29000 (2026-03-04)
 
@@ -3763,6 +3777,7 @@
 - [gbonacini/CVE-2026-31431](https://github.com/gbonacini/CVE-2026-31431)
 - [sh4den/CVE-2026-31431-copyfail-aarch64](https://github.com/sh4den/CVE-2026-31431-copyfail-aarch64)
 - [kuniyal08/Copy-Fail-CVE-2026-31431-Lab](https://github.com/kuniyal08/Copy-Fail-CVE-2026-31431-Lab)
+- [SilverRuler/copy-fail-CVE-2026-31431](https://github.com/SilverRuler/copy-fail-CVE-2026-31431)
 - [Sebastian294/cve-2026-31431](https://github.com/Sebastian294/cve-2026-31431)
 - [0xFuffM3/CVE-2026-31431-CopyFail](https://github.com/0xFuffM3/CVE-2026-31431-CopyFail)
 - [dotPY-hax/CopyFail](https://github.com/dotPY-hax/CopyFail)
@@ -3900,7 +3915,6 @@
 
 - [EQSTLab/CVE-2026-33017](https://github.com/EQSTLab/CVE-2026-33017)
 - [r3nsi15/CVE-2026-33017-langflow-rce](https://github.com/r3nsi15/CVE-2026-33017-langflow-rce)
-- [yayip/CVE-2026-33017](https://github.com/yayip/CVE-2026-33017)
 - [diamorphine666/CVE-2026-33017-Exploit](https://github.com/diamorphine666/CVE-2026-33017-Exploit)
 - [Usman0220/CVE-2026-33017-Langflow-RCE](https://github.com/Usman0220/CVE-2026-33017-Langflow-RCE)
 - [Industri4l-H3ll-Xpl0it3rs/CVE-2026-33017-Langflow-RCE](https://github.com/Industri4l-H3ll-Xpl0it3rs/CVE-2026-33017-Langflow-RCE)
@@ -3935,6 +3949,13 @@
 </code>
 
 - [JohannesLks/CVE-2026-33186](https://github.com/JohannesLks/CVE-2026-33186)
+
+### CVE-2026-33267 (2026-07-29)
+
+<code>Improper Input Validation vulnerability in Apache Traffic Server.\n\nThis issue affects Apache Traffic Server: from 9.2.0 through 9.2.14, from 10.1.0 through 10.1.3.\n\nUsers are recommended to upgrade to version 9.2.15 or 10.1.4, which fixes the issue.
+</code>
+
+- [Boreas37/CVE-2026-33267-PoC](https://github.com/Boreas37/CVE-2026-33267-PoC)
 
 ### CVE-2026-33320 (2026-03-24)
 
@@ -4025,13 +4046,6 @@
 - [garlic-wizard/CVE-2026-33937-for-DarkZeroReturns](https://github.com/garlic-wizard/CVE-2026-33937-for-DarkZeroReturns)
 - [c0gnit00/CVE-2026-33937](https://github.com/c0gnit00/CVE-2026-33937)
 
-### CVE-2026-34038 (2026-07-06)
-
-<code>Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.469, an authenticated remote command injection vulnerability in application deployment handling allows users with application write permissions to achieve remote code execution and exfiltrate sensitive environment variables through deployment logs via fields such as dockerfile_location and deployment commands. This issue is fixed in version 4.0.0-beta.469.
-</code>
-
-- [ThemeHackers/CVE-2026-34038](https://github.com/ThemeHackers/CVE-2026-34038)
-
 ### CVE-2026-34040 (2026-03-31)
 
 <code>Moby is an open source container framework. Prior to version 29.3.1, a security vulnerability has been detected that allows attackers to bypass authorization plugins (AuthZ). This issue has been patched in version 29.3.1.
@@ -4062,7 +4076,6 @@
 - [LAT-06/CVE-2026-34197](https://github.com/LAT-06/CVE-2026-34197)
 - [hnytgl/CVE-2026-34197](https://github.com/hnytgl/CVE-2026-34197)
 - [asdasddqwdq29-a11y/CVE-2026-34197](https://github.com/asdasddqwdq29-a11y/CVE-2026-34197)
-- [dinosn/apache-activemq-rce-research](https://github.com/dinosn/apache-activemq-rce-research)
 - [pssec-io/CVE-2026-34197](https://github.com/pssec-io/CVE-2026-34197)
 - [K3ysTr0K3R/CVE-2026-34197](https://github.com/K3ysTr0K3R/CVE-2026-34197)
 
@@ -4129,13 +4142,6 @@
 
 - [anonmrc/CVE-2026-34486-e-Tomcat-Tribes](https://github.com/anonmrc/CVE-2026-34486-e-Tomcat-Tribes)
 - [razureink/cve-2026-34486-tomcat_encrypt_bypass_reproduction](https://github.com/razureink/cve-2026-34486-tomcat_encrypt_bypass_reproduction)
-
-### CVE-2026-34835 (2026-04-02)
-
-<code>Rack is a modular Ruby web server interface. From versions 3.0.0.beta1 to before 3.1.21, and 3.2.0 to before 3.2.6, Rack::Request parses the Host header using an AUTHORITY regular expression that accepts characters not permitted in RFC-compliant hostnames, including /, ?, #, and @. Because req.host returns the full parsed value, applications that validate hosts using naive prefix or suffix checks can be bypassed. This can lead to host header poisoning in applications that use req.host, req.url, or req.base_url for link generation, redirects, or origin validation. This issue has been patched in versions 3.1.21 and 3.2.6.
-</code>
-
-- [Cyber-note/CVE-2026-34835-Black-box-Analysis](https://github.com/Cyber-note/CVE-2026-34835-Black-box-Analysis)
 
 ### CVE-2026-34908 (2026-05-22)
 
@@ -4257,13 +4263,6 @@
 
 - [PwnOnu/T3-Technology-CPE-Advisories](https://github.com/PwnOnu/T3-Technology-CPE-Advisories)
 
-### CVE-2026-36027 (2026-07-08)
-
-<code>An issue in Code27 Companion Hub SQ3A.220705.003.A1 allows a physically proximate attacker to execute arbitrary code via the USB debugging (ADB) and Android Debug Bridge components
-</code>
-
-- [redr0nin/Code-27-Companion-Hub-Exploits](https://github.com/redr0nin/Code-27-Companion-Hub-Exploits)
-
 ### CVE-2026-36213 (2026-06-15)
 
 <code>An issue in Microvirt MEmu Android Emulator 9.2.7.0 allows a local attacker to escalate privileges via the MemuService.exe component.
@@ -4366,9 +4365,6 @@
 </code>
 
 - [calligraf0/CVE-2026-36848](https://github.com/calligraf0/CVE-2026-36848)
-
-### CVE-2026-36851
-- [SyntaxSaiyan/CVE-2026-36851](https://github.com/SyntaxSaiyan/CVE-2026-36851)
 
 ### CVE-2026-37064
 - [jfs-jfs/CVE-2026-37064](https://github.com/jfs-jfs/CVE-2026-37064)
@@ -4478,7 +4474,6 @@
 
 - [b0ySie7e/OpenSTAManager-RCE-Exploit-CVE-2026-38751](https://github.com/b0ySie7e/OpenSTAManager-RCE-Exploit-CVE-2026-38751)
 - [Why-Shell/CVE-2026-38751](https://github.com/Why-Shell/CVE-2026-38751)
-- [Mkps/CVE-2026-38751-OpenSTAManager-Arbitrary-File-Upload-PoC](https://github.com/Mkps/CVE-2026-38751-OpenSTAManager-Arbitrary-File-Upload-PoC)
 
 ### CVE-2026-38763 (2026-07-22)
 
@@ -4658,6 +4653,7 @@
 - [Wind010/CVE-2026-39987_PoC](https://github.com/Wind010/CVE-2026-39987_PoC)
 - [alreadyClosed/CVE-2026-39987](https://github.com/alreadyClosed/CVE-2026-39987)
 - [MADA0L/CVE-2026-39987-Poc](https://github.com/MADA0L/CVE-2026-39987-Poc)
+- [matesz44/cve-2026-39987](https://github.com/matesz44/cve-2026-39987)
 
 ### CVE-2026-40000 (2026-07-27)
 
@@ -4883,6 +4879,13 @@
 </code>
 
 - [xiaoqiMikko/tomcat-check](https://github.com/xiaoqiMikko/tomcat-check)
+
+### CVE-2026-41452 (2026-08-03)
+
+<code>Krayin CRM 2.2.4 contains a missing authentication vulnerability in the installer middleware that allows unauthenticated remote attackers to overwrite the primary administrator account by sending a crafted HTTP POST request with the X-Requested-With: XMLHttpRequest header to bypass the CanInstall middleware redirect check. Attackers can supply arbitrary name, email, and password values to the admin-config-setup endpoint, which performs an unauthenticated updateOrInsert targeting the hardcoded administrator user ID, enabling full administrative access to all CRM data.
+</code>
+
+- [Boreas37/CVE-2026-41452-PoC](https://github.com/Boreas37/CVE-2026-41452-PoC)
 
 ### CVE-2026-41472 (2026-04-24)
 
@@ -5308,6 +5311,8 @@
 - [xiaohj233/ghostlock-x200-root](https://github.com/xiaohj233/ghostlock-x200-root)
 - [yijiacloud/GhostLock-OPPO-PCKM00](https://github.com/yijiacloud/GhostLock-OPPO-PCKM00)
 - [yijiacloud/ghostlock-cve-2026-43499-4.19-k40](https://github.com/yijiacloud/ghostlock-cve-2026-43499-4.19-k40)
+- [E-R-Butch/F9360-CVE43499](https://github.com/E-R-Butch/F9360-CVE43499)
+- [hybLOVE/iqoo-temp-root](https://github.com/hybLOVE/iqoo-temp-root)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -5454,6 +5459,9 @@
 
 - [sn0x-sharma/CVE-2026-44401](https://github.com/sn0x-sharma/CVE-2026-44401)
 
+### CVE-2026-44402
+- [Virgula0/CVE-2026-44402](https://github.com/Virgula0/CVE-2026-44402)
+
 ### CVE-2026-44403 (2026-05-12)
 
 <code>Wing FTP Server before 8.1.3 contains an authenticated remote code execution vulnerability in the session serialization mechanism that allows authenticated administrators to inject arbitrary Lua code through the domain admin mydirectory field. Attackers can exploit unsafe serialization of session values into Lua source code without proper escaping of closing delimiters, causing the injected code to be executed when the poisoned session is loaded via loadfile().
@@ -5530,7 +5538,6 @@
 <code>Hardcoded credentials in the Basic Authentication setup tool (bin/solr auth enable) in Apache Solr versions 9.4.0 through 9.10.1 and 10.0.0 allows a remote attacker to gain full administrative access to the cluster via publicly known default credentials installed silently alongside the user-specified account. \n\nAs an immediate workaround without upgrading, delete the template users (superadmin, admin, search, index) from security.json or change their passwords.\nThe future, not yet released, versions 9.11.0 and 10.1.0 will not be vulnerable, and it will be enough to upgrade to solve the issue.\n\nNot affected:\n  *  Clusters where bin/solr auth enable was not used to bootstrap BasicAuth\n  *  Clusters where template users have been assigned strong passwords after bootstrap
 </code>
 
-- [shinthink/solrradar](https://github.com/shinthink/solrradar)
 - [gagaltotal/CVE-2026-44825-Apache-Solr-Scanner](https://github.com/gagaltotal/CVE-2026-44825-Apache-Solr-Scanner)
 
 ### CVE-2026-44881 (2026-05-28)
@@ -5738,7 +5745,6 @@
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\neventpoll: fix ep_remove struct eventpoll / struct file UAF\n\nep_remove() (via ep_remove_file()) cleared file-&gt;f_ep under\nfile-&gt;f_lock but then kept using @file inside the critical section\n(is_file_epoll(), hlist_del_rcu() through the head, spin_unlock).\nA concurrent __fput() taking the eventpoll_release() fastpath in\nthat window observed the transient NULL, skipped\neventpoll_release_file() and ran to f_op-&gt;release / file_free().\n\nFor the epoll-watches-epoll case, f_op-&gt;release is\nep_eventpoll_release() -&gt; ep_clear_and_put() -&gt; ep_free(), which\nkfree()s the watched struct eventpoll. Its embedded -&gt;refs\nhlist_head is exactly where epi-&gt;fllink.pprev points, so the\nsubsequent hlist_del_rcu()'s &quot;*pprev = next&quot; scribbles into freed\nkmalloc-192 memory.\n\nIn addition, struct file is SLAB_TYPESAFE_BY_RCU, so the slot\nbacking @file could be recycled by alloc_empty_file() --\nreinitializing f_lock and f_ep -- while ep_remove() is still\nnominally inside that lock. The upshot is an attacker-controllable\nkmem_cache_free() against the wrong slab cache.\n\nPin @file via epi_fget() at the top of ep_remove() and gate the\ncritical section on the pin succeeding. With the pin held @file\ncannot reach refcount zero, which holds __fput() off and\ntransitively keeps the watched struct eventpoll alive across the\nhlist_del_rcu() and the f_lock use, closing both UAFs.\n\nIf the pin fails @file has already reached refcount zero and its\n__fput() is in flight. Because we bailed before clearing f_ep,\nthat path takes the eventpoll_release() slow path into\neventpoll_release_file() and blocks on ep-&gt;mtx until the waiter\nside's ep_clear_and_put() drops it. The bailed epi's share of\nep-&gt;refcount stays intact, so the trailing ep_refcount_dec_and_test()\nin ep_clear_and_put() cannot free the eventpoll out from under\neventpoll_release_file(); the orphaned epi is then cleaned up\nthere.\n\nA successful pin also proves we are not racing\neventpoll_release_file() on this epi, so drop the now-redundant\nre-check of epi-&gt;dying under f_lock. The cheap lockless\nREAD_ONCE(epi-&gt;dying) fast-path bailout stays.
 </code>
 
-- [0xBlackash/CVE-2026-46242](https://github.com/0xBlackash/CVE-2026-46242)
 - [SaithFranklinB/ScannerBadEpoll](https://github.com/SaithFranklinB/ScannerBadEpoll)
 - [Baba01hacker666/CVE-2026-46242](https://github.com/Baba01hacker666/CVE-2026-46242)
 
@@ -6187,13 +6193,6 @@
 
 - [ghapvharmo/gha-lab-a5c1876997-1](https://github.com/ghapvharmo/gha-lab-a5c1876997-1)
 
-### CVE-2026-48558 (2026-06-12)
-
-<code>SimpleHelp versions 5.5.15 and prior and 6.0 pre-release versions contain an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication. No user interaction is required.
-</code>
-
-- [J4ck3LSyN-Gen2/CVE-2026-48558](https://github.com/J4ck3LSyN-Gen2/CVE-2026-48558)
-
 ### CVE-2026-48598 (2026-06-02)
 
 <code>Improper Encoding or Escaping of Output vulnerability in elixir-tesla tesla allows multipart part header injection via unescaped Content-Disposition parameter values.\n\nTesla.Multipart.part_headers_for_disposition/1 interpolates each disposition parameter as #{k}=&quot;#{v}&quot; with no validation of CR (\r), LF (\n), or double-quote characters. The values come verbatim from the caller via Tesla.Multipart.add_field/4 (the name parameter), Tesla.Multipart.add_file/3, and Tesla.Multipart.add_file_content/4 (both the filename parameter and other disposition opts). A &quot; in the value closes the quoted parameter early; a \r\n ends the Content-Disposition header line and starts a new part header (such as a forged Content-Type), or, after a second \r\n, ends the entire part header block and prepends bytes to the part body. The default-filename path in add_file/3 derives the filename via Path.basename/1, which does not strip CR or LF, so any application forwarding a partially-attacker-controlled file path inherits the same issue.\n\nThis issue affects tesla: from 0.8.0 before 1.18.3.
@@ -6290,7 +6289,6 @@
 - [Almavj/Joomla_CVE_2026_48907](https://github.com/Almavj/Joomla_CVE_2026_48907)
 - [K3ysTr0K3R/CVE-2026-48907](https://github.com/K3ysTr0K3R/CVE-2026-48907)
 - [pssec-io/CVE-2026-48907](https://github.com/pssec-io/CVE-2026-48907)
-- [bayu06802/CVE-2026-48907](https://github.com/bayu06802/CVE-2026-48907)
 - [ChiefYoru/CVE-2026-48907_PoC](https://github.com/ChiefYoru/CVE-2026-48907_PoC)
 
 ### CVE-2026-48908 (2026-06-20)
@@ -6308,6 +6306,7 @@
 - [cazzysoci/cve-2026-48908](https://github.com/cazzysoci/cve-2026-48908)
 - [g0thamRabb1t/CVE-2026-48908-joomla-sp-page-builder-detection](https://github.com/g0thamRabb1t/CVE-2026-48908-joomla-sp-page-builder-detection)
 - [imXur/CVE-2026-48908-Joomla-SP-Page-Builder-RCE](https://github.com/imXur/CVE-2026-48908-Joomla-SP-Page-Builder-RCE)
+- [yora1928/CVE-2026-48908-by-yora](https://github.com/yora1928/CVE-2026-48908-by-yora)
 
 ### CVE-2026-48909 (2026-06-20)
 
@@ -6466,20 +6465,6 @@
 
 - [xiaoqiMikko/shiro-check](https://github.com/xiaoqiMikko/shiro-check)
 
-### CVE-2026-49344 (2026-06-19)
-
-<code>Mercator is an open source web application that enables mapping of the information system. Prior to version 2025.05.19, Mercator's Query Engine (`/admin/queries/execute`) accepts a JSON DSL (`from` / `select` / `filters` / `traverse` / `output`), translates it into an Eloquent query, and returns results as JSON. The controller method `QueryController::execute()` does not enforce an authorization gate, unlike `store()` and `massDestroy()` in the same controller which are correctly protected. As a result, any authenticated account — including the read-only Auditor role — can query models beyond its intended scope, including the `User` model. Additionally, the `password` column, although declared `$hidden`, is not excluded from filter predicates, which allows it to be used in `LIKE` conditions. The `schema()` and `schemaModel()` endpoints of the same controller are similarly unguarded. The Query Engine is read-only; integrity and availability are not affected. Version 2025.05.19 patches the issue.
-</code>
-
-- [hadhub/CVE-2026-49344-Mercator-JSON-DSL](https://github.com/hadhub/CVE-2026-49344-Mercator-JSON-DSL)
-
-### CVE-2026-49345 (2026-06-19)
-
-<code>Mercator is an open source web application that enables mapping of the information system. Prior to version 2025.05.19, a Server-Side Request Forgery (SSRF) vulnerability exists in Mercator's CVE configuration panel (`/admin/config/parameters`). The `testProvider()` method in `ConfigurationController` passes user-supplied input directly to `curl_init()` without validating the scheme, hostname, or destination IP address. An authenticated user with the `configure` permission can force the Mercator server to issue arbitrary outbound network requests. The suffix `/api/dbInfo` appended to the URL can be bypassed by injecting a `#` fragment character (e.g. `http://TARGET/PATH#`), allowing full control over the target URL. No scheme whitelist, host whitelist, or private/loopback IP block is applied. The `telnet://` scheme can be used for internal port scanning; the `gopher://` scheme enables interaction with unauthenticated internal services (Redis, Memcached), potentially leading to Remote Code Execution under specific deployment conditions. Version 2025.05.19 patches the issue.
-</code>
-
-- [hadhub/CVE-2026-49345-Mercator-SSRF](https://github.com/hadhub/CVE-2026-49345-Mercator-SSRF)
-
 ### CVE-2026-49352 (2026-07-15)
 
 <code>9Router is an AI router &amp; token saver. From 0.2.21 until 0.4.44, 9Router used the hardcoded fallback JWT secret 9router-default-secret-change-me in src/app/api/auth/login/route.js, src/middleware.js, and later src/lib/auth/dashboardSession.js, allowing attackers to forge an auth_token cookie when JWT_SECRET was unset. This issue is fixed in version 0.4.44
@@ -6507,13 +6492,6 @@
 </code>
 
 - [Yayoi-cs/CVE-2026-49417_1day_LPE_exploit](https://github.com/Yayoi-cs/CVE-2026-49417_1day_LPE_exploit)
-
-### CVE-2026-49468 (2026-06-22)
-
-<code>LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. Prior to 1.84.0, a Host-header parsing flaw in the LiteLLM proxy could, under specific conditions, allow unauthenticated access to protected management routes. The auth layer derived the effective route from request.url.path in litellm/proxy/auth/auth_utils.py::get_request_route(), which Starlette reconstructs from the Host header. A crafted Host could therefore make the auth gate evaluate a different route from the one FastAPI dispatched. This vulnerability is fixed in 1.84.0.
-</code>
-
-- [BiiTts/CVE-2026-49468-LiteLLM-Auth-Bypass](https://github.com/BiiTts/CVE-2026-49468-LiteLLM-Auth-Bypass)
 
 ### CVE-2026-49492 (2026-06-05)
 
@@ -6691,6 +6669,7 @@
 
 - [g0thamRabb1t/CVE-2026-50656-rogueplanet-validation](https://github.com/g0thamRabb1t/CVE-2026-50656-rogueplanet-validation)
 - [0xBlackash/CVE-2026-50656](https://github.com/0xBlackash/CVE-2026-50656)
+- [HORKimhab/CVE-2026-50656](https://github.com/HORKimhab/CVE-2026-50656)
 
 ### CVE-2026-50657 (2026-07-14)
 
@@ -6913,13 +6892,6 @@
 - [xj2268-TA/KVM-Januscape](https://github.com/xj2268-TA/KVM-Januscape)
 - [ndouglas-cloudsmith/CVE-2026-53359](https://github.com/ndouglas-cloudsmith/CVE-2026-53359)
 
-### CVE-2026-53360 (2026-07-04)
-
-<code>In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: SEV: Require in-GHCB scratch area if GHCB v2+ is in use\n\nAs per the GHCB spec, when using GHCB v2+ require the software scratch area\nto reside in the GHCB's shared buffer.  Note, things like Page State Change\n(PSC) requests _rely_ on this behavior, as the guest can't provide a length\nwhen making the request, i.e. the size of the guest payload is bounded by\nthe size of the shared buffer.\n\nFailure to force usage of the GHCB, and a slew of other flaws, lets a\nmalicious SNP guest corrupt host kernel heap memory, and leak host heap\nlayout information.\n\nsetup_vmgexit_scratch() allocates a buffer via kvzalloc(exit_info_2),\nwhere exit_info_2 is guest-controlled. With exit_info_2=24, this yields\na 24-byte allocation in kmalloc-cg-32 (32-byte slab objects). The buffer\nholds an 8-byte psc_hdr followed by 8-byte psc_entry structs, so only\nentries[0] and entries[1] are in-bounds.\n\nsnp_begin_psc() validates end_entry against VMGEXIT_PSC_MAX_COUNT (253)\nbut NOT against the actual buffer size:\n\n      idx_end = hdr-&gt;end_entry;\n\n      if (idx_end &gt;= VMGEXIT_PSC_MAX_COUNT) {   // checks 253, not buffer\n          snp_complete_psc(svm, ...);\n          return 1;\n      }\n\n      for (idx = idx_start; idx &lt;= idx_end; idx++) {\n          entry_start = entries[idx];           // OOB when idx &gt;= 2\n\nThe guest sets end_entry=10+, causing the host to iterate entries[2+]\nwhich are OOB into adjacent slab objects. For each OOB entry:\n\n  - The host reads 8 bytes (OOB READ / info leak oracle)\n  - If the data passes PSC validation, __snp_complete_one_psc() writes\n    cur_page = 1 or 512 into the entry (OOB WRITE, sev.c:3806)\n  - If validation fails, the error response reveals whether adjacent\n    memory is zero vs non-zero (information disclosure to guest)\n\nThe guest controls allocation size (exit_info_2), entry range\n(cur_entry/end_entry), and can fire unlimited VMGEXITs to repeatedly\nhit different slab positions.\n\nBy exploiting the variety of bugs, a malicious SEV-SNP guest can:\n    - OOB read adjacent kmalloc-cg-32 objects (heap layout disclosure)\n    - OOB write cur_page bits into adjacent objects (heap corruption)\n    - Trigger use-after-free conditions across VMGEXITs\n\nE.g. with KASAN enabled, a single insmod of the PoC guest module\nproduces 73 KASAN reports:\n\n    BUG: KASAN: slab-out-of-bounds in snp_begin_psc+0x126/0x890\n    Read of size 8 at addr ffff888219ffb5e0 by task qemu-system-x86/2199\n\n    BUG: KASAN: slab-out-of-bounds in snp_begin_psc+0x468/0x890\n    Write of size 8 at addr ffff888351566648 by task qemu-system-x86/2199\n\n    The buggy address belongs to the object at ffff888XXXXXXXXX\n     which belongs to the cache kmalloc-cg-32 of size 32\n    The buggy address is located N bytes to the right of\n     allocated 32-byte region [ffff888XXXXXXXXX, ffff888XXXXXXXXX)\n\n  Breakdown:\n    62 slab-out-of-bounds (reads + writes past allocation)\n     7 slab-use-after-free\n     4 use-after-free\n\nAll credit to Stan for the wonderful description and reproducer!\n\n[sean: write changelog]
-</code>
-
-- [0xCyberstan/CVE-2026-53360-POC](https://github.com/0xCyberstan/CVE-2026-53360-POC)
-
 ### CVE-2026-53361 (2026-07-04)
 
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\naf_unix: Set gc_in_progress to true in unix_gc().\n\nIgor Ushakov reported that unix_gc() could run with gc_in_progress\nbeing false if the work is scheduled while running:\n\n  Thread 1         Thread 2                     Thread 3\n  --------         --------                     --------\n                   unix_schedule_gc()           unix_schedule_gc()\n                   `- if (!gc_in_progress)      `- if (!gc_in_progress)\n                      |- gc_in_progress = true     |\n                      `- queue_work()              |\n  unix_gc() &lt;----------------/                     |\n  |                                                |- gc_in_progress = true\n  ...                                              `- queue_work()\n  |                                                       |\n  `- gc_in_progress = false                               |\n                                                          |\n  unix_gc() &lt;---------------------------------------------'\n  |\n  ... /* gc_in_progress == false */\n  |\n  `- gc_in_progress = false\n\nunix_peek_fpl() relies on gc_in_progress not to confuse GC\nby MSG_PEEK.\n\nLet's set gc_in_progress to true in unix_gc().
@@ -7075,13 +7047,6 @@
 
 - [shinthink/CVE-2026-54390](https://github.com/shinthink/CVE-2026-54390)
 
-### CVE-2026-54415 (2026-06-17)
-
-<code>Missing Authorization in the server management routes (routes/admin.php) in Azuriom Azuriom CMS before 1.2.11 on all platforms allows an authenticated attacker with the admin.access permission to create AzLink server tokens and take over non-admin user accounts by changing their passwords and email addresses via crafted HTTP requests to /admin/servers/create and the AzLink API endpoints (/api/azlink/password, /api/azlink/email, /api/azlink/user/{id}).
-</code>
-
-- [abdugafforov-bobur/CVE-2026-54415-PoC](https://github.com/abdugafforov-bobur/CVE-2026-54415-PoC)
-
 ### CVE-2026-54420 (2026-06-14)
 
 <code>LiteSpeed cPanel plugin before 2.4.8 (as distributed in LiteSpeed WHM PlugIn before 5.3.2.0) mishandles symlinks provided by a user with FTP or web shell access on a shared hosting server running CloudLinux/CageFS, as exploited in the wild in May 2026.
@@ -7098,13 +7063,6 @@
 </code>
 
 - [tomadimitrie/CVE-2026-54424](https://github.com/tomadimitrie/CVE-2026-54424)
-
-### CVE-2026-54477 (2026-07-02)
-
-<code>The admin panel lacks standard security headers, enabling clickjacking and cross-site scripting attacks.
-</code>
-
-- [MichaelAdamGroberman/CVE-2026-54477](https://github.com/MichaelAdamGroberman/CVE-2026-54477)
 
 ### CVE-2026-54515 (2026-06-23)
 
@@ -7167,6 +7125,13 @@
 
 - [BiiTts/CVE-2026-54917-SeaweedFS-Cross-Bucket-Traversal](https://github.com/BiiTts/CVE-2026-54917-SeaweedFS-Cross-Bucket-Traversal)
 
+### CVE-2026-54984 (2026-08-11)
+
+<code>Heap-based buffer overflow in Windows Imaging Component allows an unauthorized attacker to execute code locally.
+</code>
+
+- [kagancapar/CVE-2026-54984](https://github.com/kagancapar/CVE-2026-54984)
+
 ### CVE-2026-54992 (2026-07-14)
 
 <code>Heap-based buffer overflow in Windows Message Queuing Queue Manager allows an unauthorized attacker to execute code locally.
@@ -7199,7 +7164,6 @@
 
 - [0xBlackash/CVE-2026-55200](https://github.com/0xBlackash/CVE-2026-55200)
 - [xd20111/CVE-2026-55200](https://github.com/xd20111/CVE-2026-55200)
-- [kaleth4/CVE-2026-55200](https://github.com/kaleth4/CVE-2026-55200)
 
 ### CVE-2026-55255 (2026-06-23)
 
@@ -7223,13 +7187,6 @@
 
 ### CVE-2026-55584
 - [mirackayikci/CVE-2026-55584](https://github.com/mirackayikci/CVE-2026-55584)
-
-### CVE-2026-55726 (2026-07-02)
-
-<code>The Azure Blob Storage container used for Gardyn device logs is publicly listable without authentication. A malicious user would be able to access any device log file available in the blob storage container.
-</code>
-
-- [MichaelAdamGroberman/CVE-2026-55726](https://github.com/MichaelAdamGroberman/CVE-2026-55726)
 
 ### CVE-2026-55957 (2026-06-29)
 
@@ -7297,8 +7254,6 @@
 <code>Joomla Extension - joomlack.fr - Unauthenticated file upload in Page Builder CK extension &lt; 3.6.0 - The Joomla extension Page Builder CK is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.
 </code>
 
-- [sagsooz/PageBuilderCK-CVE-2026-56290-Exploit](https://github.com/sagsooz/PageBuilderCK-CVE-2026-56290-Exploit)
-- [shinthink/pbck-exploit](https://github.com/shinthink/pbck-exploit)
 - [Jenderal92/CVE-2026-56290](https://github.com/Jenderal92/CVE-2026-56290)
 - [ChiefYoru/CVE-2026-56290_PoC](https://github.com/ChiefYoru/CVE-2026-56290_PoC)
 
@@ -7410,7 +7365,11 @@
 
 - [readmsr/MSI_FeatureManager_CVE](https://github.com/readmsr/MSI_FeatureManager_CVE)
 
-### CVE-2026-57858
+### CVE-2026-57858 (2026-08-12)
+
+<code>Cal.com Cal.diy versions 2.1.1 through 6.2.0 contain a stored cross-site scripting vulnerability in the BookingPageTagManager component that allows authenticated event owners to inject arbitrary JavaScript by supplying a malicious analytics tracking ID without sanitization. Attackers can close the inline script string literal with a crafted payload that executes in the browser of every visitor to the affected public booking page, enabling session cookie theft, forged authenticated requests, and wormable propagation by chaining with CSRF-able endpoints to persist payloads on additional events.
+</code>
+
 - [zylideum/CVE-2026-57858](https://github.com/zylideum/CVE-2026-57858)
 
 ### CVE-2026-57973 (2026-07-14)
@@ -7520,6 +7479,7 @@
 
 - [c0gnit00/CVE-2026-59827](https://github.com/c0gnit00/CVE-2026-59827)
 - [pickl31/CVE-2026-59827](https://github.com/pickl31/CVE-2026-59827)
+- [Gutierre0x80/CVE-2026-59827](https://github.com/Gutierre0x80/CVE-2026-59827)
 
 ### CVE-2026-59891 (2026-07-14)
 
@@ -7773,6 +7733,13 @@
 - [HackSpeak/CVE-2026-64561](https://github.com/HackSpeak/CVE-2026-64561)
 - [chuzhongyun/CVE-2026-64561-Kernel-Fix](https://github.com/chuzhongyun/CVE-2026-64561-Kernel-Fix)
 
+### CVE-2026-64563 (2026-08-04)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nrhashtable: clear stale iter-&gt;p on table restart\n\nrhashtable_walk_start_check() has two restart paths when resuming a walk.\nWhen iter-&gt;walker.tbl is valid, it re-validates iter-&gt;p against the table\nand sets iter-&gt;p = NULL if the object is gone.  When iter-&gt;walker.tbl is\nNULL (table was freed during resize), it resets slot and skip but forgets\nto clear iter-&gt;p.\n\nrhashtable_walk_next() then dereferences the stale iter-&gt;p, reading\nfreed memory.  This is a use-after-free.\n\nAny caller that does multi-fragment rhashtable walks across\nwalk_stop/walk_start boundaries is affected.  Concrete cases include\nnetlink_diag (__netlink_diag_dump in net/netlink/diag.c) and TIPC\n(tipc_nl_sk_walk in net/tipc/socket.c).\n\nCrash stack (netlink_diag):\n  BUG: KASAN: slab-use-after-free in rhashtable_walk_next+0x365/0x3c0\n  Read of size 8 at addr ffff88801a9d2438 (freed kmalloc-2k, offset 1080)\n  Call Trace:\n   rhashtable_walk_next+0x365/0x3c0 (lib/rhashtable.c:1016)\n   __netlink_diag_dump+0x160/0x760 (net/netlink/diag.c:122)\n   netlink_diag_dump+0xc2/0x240\n   netlink_dump+0x5bc/0x1270\n   netlink_recvmsg+0x7a3/0x980\n   sock_recvmsg+0x1bc/0x200\n   __sys_recvfrom+0x1d4/0x2c0
+</code>
+
+- [guard-wait/CVE-2026-64563_EXP](https://github.com/guard-wait/CVE-2026-64563_EXP)
+
 ### CVE-2026-64564 (2026-08-04)
 
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nsctp: don't free the ASCONF's own transport in DEL-IP processing\n\nsctp_process_asconf() caches the transport the ASCONF chunk is processed\nagainst in asconf-&gt;transport (== chunk-&gt;transport, set once in sctp_rcv()).\nFor an ASCONF located through its Address Parameter by\n__sctp_rcv_asconf_lookup(), that cached transport corresponds to the\nAddress Parameter, which need not be the packet's source address.\n\nsctp_process_asconf_param() rejects a DEL-IP for the packet source address\n(ADDIP D8, SCTP_ERROR_DEL_SRC_IP), but nothing protects asconf-&gt;transport.\nA single ASCONF can therefore carry, in order:\n\n    [Address Parameter L] [DEL-IP L] [DEL-IP 0.0.0.0]\n\nwhere L differs from the source. The DEL-IP for L passes the D8 check and\ncalls sctp_assoc_rm_peer() on the transport that asconf-&gt;transport still\npoints at, freeing it (RCU-deferred). The following wildcard DEL-IP then\nreuses the now-dangling asconf-&gt;transport in sctp_assoc_set_primary() and\nsctp_assoc_del_nonprimary_peers(): set_primary() dereferences the freed\ntransport (-&gt;ipaddr, -&gt;state) and plants the dangling pointer into\nasoc-&gt;peer.primary_path / active_path, and del_nonprimary_peers(), keeping\nonly the pointer that is no longer on the list, removes every real\ntransport, leaving the association with a transport_count of 0 and\nprimary_path/active_path pointing at freed memory.\n\nReject a DEL-IP that targets the transport the ASCONF is being processed\nagainst, mirroring the existing source-address guard, so the wildcard\nbranch can never reuse a freed transport.
@@ -7829,6 +7796,7 @@
 - [g0d150ne/XSS2Shell](https://github.com/g0d150ne/XSS2Shell)
 - [eh-amish/CVE-2026-64638-XSS-to-Shell-PoC](https://github.com/eh-amish/CVE-2026-64638-XSS-to-Shell-PoC)
 - [0xlipon/xss2shell](https://github.com/0xlipon/xss2shell)
+- [ZildanZ/CVE-2026-64638](https://github.com/ZildanZ/CVE-2026-64638)
 
 ### CVE-2026-64640 (2026-08-06)
 
@@ -8182,6 +8150,20 @@
 ### CVE-2026-68004
 - [xuwu-xuwu/CVE-2026-68004](https://github.com/xuwu-xuwu/CVE-2026-68004)
 
+### CVE-2026-68138 (2026-08-10)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: serialize qdisc_rtab_list against concurrent get/put\n\nqdisc_get_rtab() and qdisc_put_rtab() mutate the process-global singly\nlinked list qdisc_rtab_list and a plain non-atomic 'int refcnt' with no\nlock. This was only safe because every caller historically held the RTNL\nmutex, which serialized all rate-table lookups, inserts and frees.\n\nThat invariant no longer holds. cls_flower sets\nTCF_PROTO_OPS_DOIT_UNLOCKED, so tc_new_tfilter() keeps rtnl_held == false\nfor it and sets TCA_ACT_FLAGS_NO_RTNL. That flag propagates through\ntcf_exts_validate_ex() -&gt; tcf_action_init() -&gt; tcf_action_init_1() -&gt;\ntcf_police_init(), which calls qdisc_get_rtab()/qdisc_put_rtab() with the\nRTNL mutex NOT held. Two RTM_NEWTFILTER requests on different CPUs, each\nadding a flower filter with a police action carrying the same rate, then\nrace on qdisc_rtab_list and on the non-atomic refcnt, leading to a\nuse-after-free / double-free of the kmalloc-2k struct qdisc_rate_table.\nqdisc_rtab_list is a single global (not per-netns), so the corrupted\nobject is shared system-wide.\n\n  BUG: KASAN: slab-use-after-free in qdisc_put_rtab+0x12f/0x160\n   qdisc_put_rtab+0x12f/0x160\n   tcf_police_init+0xda9/0x1590\n   tcf_action_init_1+0x460/0x6b0\n   tcf_action_init+0x439/0xa40\n   tcf_exts_validate_ex+0x42d/0x550\n   fl_change+0xddd/0x7da0\n   tc_new_tfilter+0xaa7/0x2420\n   rtnetlink_rcv_msg+0x95e/0xe90\n  which belongs to the cache kmalloc-2k of size 2048\n\nProtect qdisc_rtab_list and the refcount with a dedicated spinlock. The\n(sleeping, GFP_KERNEL) allocation in qdisc_get_rtab() is performed before\ntaking the lock; if a concurrent inserter added an identical table in the\nmeantime the freshly allocated one is freed under the lock, so no\nduplicate is leaked. qdisc_put_rtab() now decrements the refcount and\nunlinks under the same lock.
+</code>
+
+- [aramosf/CVE-2026-68138](https://github.com/aramosf/CVE-2026-68138)
+
+### CVE-2026-68398 (2026-08-10)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nppp: defer channel free to an RCU grace period to fix pppol2tp RX UAF\n\npppol2tp_recv() runs in the L2TP UDP-encap softirq RX path:\n\n l2tp_udp_encap_recv() -&gt; l2tp_recv_common() -&gt; pppol2tp_recv()\n   -&gt; ppp_input(&amp;po-&gt;chan)\n\nIt runs under rcu_read_lock() holding only an l2tp_session reference and\ntakes NO reference on the internal PPP channel (struct channel,\nchan-&gt;ppp) that ppp_input() dereferences.\n\nThe pppox socket is SOCK_RCU_FREE, so 'po' and the embedded ppp_channel\nare RCU-safe.  But the internal struct channel is a separate allocation\nthat ppp_release_channel() frees with a plain kfree():\n\n close(data socket) -&gt; pppol2tp_release() -&gt; pppox_unbind_sock()\n   -&gt; ppp_unregister_channel() -&gt; ppp_release_channel() -&gt; kfree(pch)\n\nFor a channel that is bound (PPPIOCGCHAN) but not attached to a ppp unit\n(no PPPIOCCONNECT, pch-&gt;ppp == NULL) and not bridged, teardown skips\nboth ppp_disconnect_channel()'s synchronize_net() and\nppp_unbridge_channels()'s synchronize_rcu(), so the kfree() has no grace\nperiod.  rcu_read_lock() in pppol2tp_recv() does not protect against a\nplain kfree(), so an in-flight ppp_input() on one CPU can dereference\nthe channel just freed by close() on another CPU.\n\nThe bug is reachable by an unprivileged user.\n\nDefer the channel free to an RCU callback via call_rcu() so the grace\nperiod fences any in-flight ppp_input(). The disconnect and unbridge\nteardown paths already fence with synchronize_net()/synchronize_rcu();\ncall_rcu() does the same here without stalling the close() path.
+</code>
+
+- [aramosf/CVE-2026-68398](https://github.com/aramosf/CVE-2026-68398)
+
 ### CVE-2026-68771 (2026-07-31)
 
 <code>ComfyUI v0.23.0 contains an unsafe deserialization vulnerability in the LoadTrainingDataset node that allows unauthenticated remote attackers to execute arbitrary Python code by uploading a crafted pickle file and triggering its deserialization. Attackers can upload a malicious shard_*.pkl file via the unauthenticated POST /upload/image endpoint and then queue a workflow graph via POST /prompt referencing the uploaded file, causing torch.load to deserialize the attacker-controlled pickle payload using __reduce__ and execute arbitrary commands as the ComfyUI process user.
@@ -8219,6 +8201,20 @@
 </code>
 
 - [JVBotelho/cve-2026-69243-poc-aiohttp-smuggling](https://github.com/JVBotelho/cve-2026-69243-poc-aiohttp-smuggling)
+
+### CVE-2026-69263 (2026-08-04)
+
+<code>Flowise is a drag &amp; drop user interface to build a customized large language model flow. Prior to 3.1.3, the mitigation for CVE-2025-8943 blocked -y and --yes flags on npx, but packages/components/nodes/tools/MCP/core.ts denied only PATH, LD_LIBRARY_PATH, DYLD_LIBRARY_PATH, and NODE_OPTIONS by exact environment-variable name. Because npm reads configuration from npm_config_* variables, setting npm_config_yes=true reproduced --yes behavior without using a blocked flag, causing npx to auto-install and execute the named package when a Custom MCP server launched. This issue is fixed in version 3.1.3.
+</code>
+
+- [leoelsolh/CVE-2026-69263](https://github.com/leoelsolh/CVE-2026-69263)
+
+### CVE-2026-70376 (2026-08-05)
+
+<code>Pluck CMS's admin panel relies solely on a Referer-header comparison (requestedByTheSameDomain in data/inc/functions.admin.php, gating every admin.php action) for CSRF protection, with no per-request anti-CSRF token anywhere in the admin area.
+</code>
+
+- [IlhomjonR/PluckCMS-CSRF-RCE](https://github.com/IlhomjonR/PluckCMS-CSRF-RCE)
 
 ### CVE-2026-70481 (2026-08-04)
 
@@ -8268,6 +8264,20 @@
 </code>
 
 - [Saku0512/CVE-2026-71557-poc](https://github.com/Saku0512/CVE-2026-71557-poc)
+
+### CVE-2026-72898 (2026-08-10)
+
+<code>Metabase allows a remote, unauthenticated attacker to inject arbitrary SQL via the '/reset_password' database endpoint and gain administrator access to the connected Metabase instance.
+</code>
+
+- [0xBlackash/CVE-2026-72898](https://github.com/0xBlackash/CVE-2026-72898)
+
+### CVE-2026-73034 (2026-08-11)
+
+<code>DB-GPT v0.8.1 contains an unauthenticated path traversal vulnerability that allows remote attackers to write arbitrary files to any location on the server by injecting directory traversal sequences into the user_id HTTP header of the Python file-upload endpoint. Attackers can send a crafted multipart upload request with a traversal-poisoned user_id header to escape the intended upload directory and write attacker-controlled content to locations such as Python startup hooks, cron directories, or agent scripts, resulting in remote code execution.
+</code>
+
+- [Boreas37/CVE-2026-73034-PoC](https://github.com/Boreas37/CVE-2026-73034-PoC)
 
 ### CVE-2026-999999
 - [24520597-blip/CVE-2026-999999](https://github.com/24520597-blip/CVE-2026-999999)
@@ -15594,7 +15604,7 @@
 - [havertz2110/CVE-2025-49144-PoC](https://github.com/havertz2110/CVE-2025-49144-PoC)
 
 ### CVE-2025-49173
-- [aliyabuz25/cve-2025-49173-macos-mavericks-10.9-local-root-privesc-auth-services](https://github.com/aliyabuz25/cve-2025-49173-macos-mavericks-10.9-local-root-privesc-auth-services)
+- [aliyabuz25/CVE-2025-49173](https://github.com/aliyabuz25/CVE-2025-49173)
 
 ### CVE-2025-49223 (2025-06-04)
 
@@ -17205,6 +17215,7 @@
 - [Phucc29/CVE-2025-55182](https://github.com/Phucc29/CVE-2025-55182)
 - [CerberusMrXi/CVE-2025-55182-Advanced-React-Server-Components-RCE-Exploit](https://github.com/CerberusMrXi/CVE-2025-55182-Advanced-React-Server-Components-RCE-Exploit)
 - [dotnetguard/CVE-2025-55182-Exploit](https://github.com/dotnetguard/CVE-2025-55182-Exploit)
+- [aisha-jimoh/cve-2025-55182-react2shell-analysis](https://github.com/aisha-jimoh/cve-2025-55182-react2shell-analysis)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -18878,7 +18889,6 @@
 </code>
 
 - [amaansiddd787/CVE-2025-65354](https://github.com/amaansiddd787/CVE-2025-65354)
-- [EarthAngel666/CVE-2025-65354](https://github.com/EarthAngel666/CVE-2025-65354)
 
 ### CVE-2025-65427 (2025-12-16)
 
@@ -27797,7 +27807,6 @@
 </code>
 
 - [mouadk/cve-2024-38821](https://github.com/mouadk/cve-2024-38821)
-- [masa42/CVE-2024-38821-POC](https://github.com/masa42/CVE-2024-38821-POC)
 
 ### CVE-2024-38828 (2024-11-18)
 
@@ -30379,6 +30388,13 @@
 </code>
 
 - [JAckLosingHeart/GHSA-4cx5-89vm-833x-POC](https://github.com/JAckLosingHeart/GHSA-4cx5-89vm-833x-POC)
+
+### CVE-2024-52806 (2024-12-02)
+
+<code>SimpleSAMLphp SAML2 library is a PHP library for SAML2 related functionality. When loading an (untrusted) XML document, for example the SAMLResponse, it's possible to induce an XXE. This vulnerability is fixed in 4.6.14 and 5.0.0-alpha.18.
+</code>
+
+- [heartlesseorg-dot/CVE-2024-52806-PoC](https://github.com/heartlesseorg-dot/CVE-2024-52806-PoC)
 
 ### CVE-2024-52940 (2024-11-18)
 
@@ -48709,7 +48725,6 @@
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [rvzsec/CVE-2021-4034](https://github.com/rvzsec/CVE-2021-4034)
 - [antoinenguyen-09/CVE-2021-4034](https://github.com/antoinenguyen-09/CVE-2021-4034)
-- [wudicainiao/cve-2021-4034](https://github.com/wudicainiao/cve-2021-4034)
 - [TanmoyG1800/CVE-2021-4034](https://github.com/TanmoyG1800/CVE-2021-4034)
 - [CronoX1/CVE-2021-4034](https://github.com/CronoX1/CVE-2021-4034)
 - [supportingmx/cve-2021-4034](https://github.com/supportingmx/cve-2021-4034)
@@ -53022,6 +53037,7 @@
 - [waseeld/CVE-2021-42574](https://github.com/waseeld/CVE-2021-42574)
 - [tin-z/solidity_CVE-2021-42574-POC](https://github.com/tin-z/solidity_CVE-2021-42574-POC)
 - [Moshe-ship/bidi-guard](https://github.com/Moshe-ship/bidi-guard)
+- [LuisCastellanos-dev/cobol-shield](https://github.com/LuisCastellanos-dev/cobol-shield)
 
 ### CVE-2021-42662 (2021-11-05)
 
@@ -56426,6 +56442,7 @@
 - [winmin/CVE-2020-8597](https://github.com/winmin/CVE-2020-8597)
 - [Dilan-Diaz/Point-to-Point-Protocol-Daemon-RCE-Vulnerability-CVE-2020-8597-](https://github.com/Dilan-Diaz/Point-to-Point-Protocol-Daemon-RCE-Vulnerability-CVE-2020-8597-)
 - [lakwsh/CVE-2020-8597](https://github.com/lakwsh/CVE-2020-8597)
+- [anna-kravets/codeql-buffer-overflow-variant](https://github.com/anna-kravets/codeql-buffer-overflow-variant)
 
 ### CVE-2020-8617 (2020-05-19)
 
@@ -56866,6 +56883,7 @@
 - [zhzyker/CVE-2020-10199_POC-EXP](https://github.com/zhzyker/CVE-2020-10199_POC-EXP)
 - [aleenzz/CVE-2020-10199](https://github.com/aleenzz/CVE-2020-10199)
 - [hugosg97/CVE-2020-10199-Nexus-3.21.01](https://github.com/hugosg97/CVE-2020-10199-Nexus-3.21.01)
+- [finn79426/CVE-2020-10199](https://github.com/finn79426/CVE-2020-10199)
 
 ### CVE-2020-10204 (2020-04-01)
 
@@ -57560,13 +57578,6 @@
 </code>
 
 - [danpalmer/django-cve-2020-13254](https://github.com/danpalmer/django-cve-2020-13254)
-
-### CVE-2020-13259 (2020-09-16)
-
-<code>A vulnerability in the web-based management interface of RAD SecFlow-1v os-image SF_0290_2.3.01.26 could allow an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack on an affected system. The vulnerability is due to insufficient CSRF protections for the web UI on an affected device. An attacker could exploit this vulnerability by persuading a user of the interface to follow a malicious link. A successful exploit could allow the attacker to perform arbitrary actions with the privilege level of the affected user. This could be exploited in conjunction with CVE-2020-13260.
-</code>
-
-- [UrielYochpaz/CVE-2020-13259](https://github.com/UrielYochpaz/CVE-2020-13259)
 
 ### CVE-2020-13277 (2020-06-19)
 
@@ -65003,7 +65014,6 @@
 
 - [MostafaSoliman/Oracle-OAM-Padding-Oracle-CVE-2018-2879-Exploit](https://github.com/MostafaSoliman/Oracle-OAM-Padding-Oracle-CVE-2018-2879-Exploit)
 - [AymanElSherif/oracle-oam-authentication-bypas-exploit](https://github.com/AymanElSherif/oracle-oam-authentication-bypas-exploit)
-- [redtimmy/OAMBuster](https://github.com/redtimmy/OAMBuster)
 
 ### CVE-2018-2893 (2018-07-18)
 
@@ -69897,7 +69907,7 @@
 - [rvermeulen/apache-struts-cve-2017-9805](https://github.com/rvermeulen/apache-struts-cve-2017-9805)
 - [jongmartinez/-CVE-2017-9805-](https://github.com/jongmartinez/-CVE-2017-9805-)
 - [z3bd/CVE-2017-9805](https://github.com/z3bd/CVE-2017-9805)
-- [0xd3vil/CVE-2017-9805-Exploit](https://github.com/0xd3vil/CVE-2017-9805-Exploit)
+- [agent3137/CVE-2017-9805-Exploit](https://github.com/agent3137/CVE-2017-9805-Exploit)
 - [Shakun8/CVE-2017-9805](https://github.com/Shakun8/CVE-2017-9805)
 - [NoSpaceAvailable/CVE-2017-9805_example_build](https://github.com/NoSpaceAvailable/CVE-2017-9805_example_build)
 - [Fl5xia/CVE-2017-9805](https://github.com/Fl5xia/CVE-2017-9805)
@@ -76049,6 +76059,13 @@
 
 - [Alexeyan/CVE-2009-4137](https://github.com/Alexeyan/CVE-2009-4137)
 
+### CVE-2009-4496 (2010-01-13)
+
+<code>Boa 0.94.14rc21 writes data to a log file without sanitizing non-printable characters, which might allow remote attackers to modify a window's title, or possibly execute arbitrary commands or overwrite files, via an HTTP request containing an escape sequence for a terminal emulator.
+</code>
+
+- [enriquenegri-cyberlaw/boa-cve-2009-4496-analysis](https://github.com/enriquenegri-cyberlaw/boa-cve-2009-4496-analysis)
+
 ### CVE-2009-4623 (2010-01-18)
 
 <code>Multiple PHP remote file inclusion vulnerabilities in Advanced Comment System 1.0 allow remote attackers to execute arbitrary PHP code via a URL in the ACS_path parameter to (1) index.php and (2) admin.php in advanced_comment_system/. NOTE: this might only be a vulnerability when the administrator has not followed installation instructions in install.php. NOTE: this might be the same as CVE-2020-35598.
@@ -76306,7 +76323,6 @@
 - [Alien0ne/CVE-2007-2447](https://github.com/Alien0ne/CVE-2007-2447)
 - [3t4n/samba-3.0.24-CVE-2007-2447-vunerable-](https://github.com/3t4n/samba-3.0.24-CVE-2007-2447-vunerable-)
 - [xbufu/CVE-2007-2447](https://github.com/xbufu/CVE-2007-2447)
-- [s4msec/CVE-2007-2447](https://github.com/s4msec/CVE-2007-2447)
 - [Nosferatuvjr/Samba-Usermap-exploit](https://github.com/Nosferatuvjr/Samba-Usermap-exploit)
 - [testaross4/CVE-2007-2447](https://github.com/testaross4/CVE-2007-2447)
 - [b33m0x00/CVE-2007-2447](https://github.com/b33m0x00/CVE-2007-2447)
