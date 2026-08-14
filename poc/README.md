@@ -1487,13 +1487,6 @@
 - [George0Papasotiriou/CVE-2026-9999-Serverless-Event-Injection-to-Code-Overwrite](https://github.com/George0Papasotiriou/CVE-2026-9999-Serverless-Event-Injection-to-Code-Overwrite)
 - [josephfarah-ciso/CVE-2026-9999-exploit](https://github.com/josephfarah-ciso/CVE-2026-9999-exploit)
 
-### CVE-2026-10104 (2026-07-02)
-
-<code>The Product Video Gallery for Woocommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via custom_thumbnail Parameter in all versions up to, and including, 1.5.1.8 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with shop manager-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
-</code>
-
-- [Ravi-lk/CVE-2026-10104-POC](https://github.com/Ravi-lk/CVE-2026-10104-POC)
-
 ### CVE-2026-10187 (2026-05-31)
 
 <code>A vulnerability was detected in Totolink N300RH 6.1c.1353_B20190305. Affected by this issue is the function setWiFiBasicConfig of the file wireless.so of the component Web Management Interface. Performing a manipulation of the argument KeyStr results in stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit is now public and may be used.
@@ -1553,7 +1546,6 @@
 </code>
 
 - [HORKimhab/CVE-2026-10702](https://github.com/HORKimhab/CVE-2026-10702)
-- [raihants/cve-2026-10702](https://github.com/raihants/cve-2026-10702)
 
 ### CVE-2026-10795 (2026-06-11)
 
@@ -2034,13 +2026,6 @@
 - [MadExploits/CVE-2026-14483](https://github.com/MadExploits/CVE-2026-14483)
 - [0xdak/CVE-2026-14483_exploit](https://github.com/0xdak/CVE-2026-14483_exploit)
 
-### CVE-2026-14628 (2026-07-04)
-
-<code>A vulnerability was detected in NousResearch hermes-agent up to 2026.5.16. This impacts the function extract_media of the file gateway/platforms/base.py of the component Live Webhook Endpoint. Performing a manipulation results in path traversal. The attack may be initiated remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.
-</code>
-
-- [MESLIMOHAMEDM22005188/path-traversal-CVE-2026-14628](https://github.com/MESLIMOHAMEDM22005188/path-traversal-CVE-2026-14628)
-
 ### CVE-2026-14762 (2026-07-05)
 
 <code>A vulnerability was detected in code-projects Hotel and Tourism Reservation 1.0. The impacted element is an unknown function of the file /admin/rooms.php of the component Room Management Page. The manipulation of the argument delete results in sql injection. It is possible to launch the attack remotely. The exploit is now public and may be used.
@@ -2499,7 +2484,6 @@
 <code>Gitea Docker image versions up to and including 1.26.2 use REVERSE_PROXY_TRUSTED_PROXIES=* by default, allowing any source IP to impersonate a user when reverse-proxy authentication headers such as X-WEBAUTH-USER are enabled.
 </code>
 
-- [rz1027/CVE-2026-20896](https://github.com/rz1027/CVE-2026-20896)
 - [szybnev/cve-2026-20896-gitea-poc](https://github.com/szybnev/cve-2026-20896-gitea-poc)
 - [XaocZenon/CVE-2026-20896](https://github.com/XaocZenon/CVE-2026-20896)
 - [Lite-os15/Lab-001-Gitea-CVE-2026-20896-](https://github.com/Lite-os15/Lab-001-Gitea-CVE-2026-20896-)
@@ -2904,13 +2888,6 @@
 
 - [gsadagopan/cve-2026-22747-sandbox](https://github.com/gsadagopan/cve-2026-22747-sandbox)
 
-### CVE-2026-22874 (2026-07-03)
-
-<code>Gitea versions up to and including 1.26.2 have incomplete SSRF protection in webhook and migration allow-list filtering.
-</code>
-
-- [Eliot-code/CVE-2026-22874-PoC](https://github.com/Eliot-code/CVE-2026-22874-PoC)
-
 ### CVE-2026-23001 (2026-01-25)
 
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nmacvlan: fix possible UAF in macvlan_forward_source()\n\nAdd RCU protection on (struct macvlan_source_entry)-&gt;vlan.\n\nWhenever macvlan_hash_del_source() is called, we must clear\nentry-&gt;vlan pointer before RCU grace period starts.\n\nThis allows macvlan_forward_source() to skip over\nentries queued for freeing.\n\nNote that macvlan_dev are already RCU protected, as they\nare embedded in a standard netdev (netdev_priv(ndev)).\n\nhttps: //lore.kernel.org/netdev/695fb1e8.050a0220.1c677c.039f.GAE@google.com/T/#u
@@ -3111,13 +3088,6 @@
 </code>
 
 - [offseckit/CVE-2026-23813](https://github.com/offseckit/CVE-2026-23813)
-
-### CVE-2026-23870 (2026-05-06)
-
-<code>A denial of service vulnerability could be triggered by sending specially crafted HTTP requests to server function endpoints, this could lead to server crashes, out-of-memory exceptions or excessive CPU usage; affecting the following packages: react-server-dom-webpack, react-server-dom-parcel, react-server-dom-turbopack (versions 19.0.0 through 19.0.5, 19.1.0 through 19.1.6, and 19.2.0 through 19.2.5).
-</code>
-
-- [emresandikci/nextjs-cve-2026-23870-checker](https://github.com/emresandikci/nextjs-cve-2026-23870-checker)
 
 ### CVE-2026-23918 (2026-05-04)
 
@@ -5313,6 +5283,9 @@
 - [E-R-Butch/F9360-CVE43499](https://github.com/E-R-Butch/F9360-CVE43499)
 - [hybLOVE/iqoo-temp-root](https://github.com/hybLOVE/iqoo-temp-root)
 - [wzhdgithub/GhostLock](https://github.com/wzhdgithub/GhostLock)
+- [pimpamebanihah/cve-2026-43499-app.so](https://github.com/pimpamebanihah/cve-2026-43499-app.so)
+- [pimpamebanihah/cve-2026-43499-app.s0](https://github.com/pimpamebanihah/cve-2026-43499-app.s0)
+- [Bugel/cve-2026-43499-m3q-azf1](https://github.com/Bugel/cve-2026-43499-m3q-azf1)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -6575,7 +6548,6 @@
 - [razureink/cve-2026-49975-http2bomb_reproduction](https://github.com/razureink/cve-2026-49975-http2bomb_reproduction)
 - [0xc03307b/CVE-2026-49975](https://github.com/0xc03307b/CVE-2026-49975)
 - [wlor0623/http2-bomb-detector](https://github.com/wlor0623/http2-bomb-detector)
-- [Manisso/http2-bomb](https://github.com/Manisso/http2-bomb)
 
 ### CVE-2026-50011 (2026-06-12)
 
@@ -6966,6 +6938,9 @@
 </code>
 
 - [BiiTts/CVE-2026-53753-Crawl4AI-RCE](https://github.com/BiiTts/CVE-2026-53753-Crawl4AI-RCE)
+
+### CVE-2026-53767
+- [iltosec/chyrp-lite-rce-poc](https://github.com/iltosec/chyrp-lite-rce-poc)
 
 ### CVE-2026-53787 (2026-06-12)
 
@@ -8279,12 +8254,20 @@
 
 - [Saku0512/CVE-2026-71557-poc](https://github.com/Saku0512/CVE-2026-71557-poc)
 
+### CVE-2026-72550 (2026-08-11)
+
+<code>An SQL injection vulnerability in Friendica through the 2026.08-dev branch allows unauthenticated remote attackers to execute arbitrary SQL statements via the photo-view order parameter. The parameter is concatenated unescaped into a SHOW COLUMNS query via a bare PDO::query() call, enabling stacked statement injection. An unauthenticated attacker can read, modify, or delete the entire database.
+</code>
+
+- [abdugafforov-bobur/CVE-2026-72550-poc](https://github.com/abdugafforov-bobur/CVE-2026-72550-poc)
+
 ### CVE-2026-72898 (2026-08-10)
 
 <code>Metabase allows a remote, unauthenticated attacker to inject arbitrary SQL via the '/reset_password' database endpoint and gain administrator access to the connected Metabase instance.
 </code>
 
 - [0xBlackash/CVE-2026-72898](https://github.com/0xBlackash/CVE-2026-72898)
+- [codeb0ssx/CVE-2026-72898-PoC](https://github.com/codeb0ssx/CVE-2026-72898-PoC)
 
 ### CVE-2026-73034 (2026-08-11)
 
@@ -8292,6 +8275,9 @@
 </code>
 
 - [Boreas37/CVE-2026-73034-PoC](https://github.com/Boreas37/CVE-2026-73034-PoC)
+
+### CVE-2026-73673
+- [ozcanpng/CVE-2026-73673](https://github.com/ozcanpng/CVE-2026-73673)
 
 ### CVE-2026-999999
 - [24520597-blip/CVE-2026-999999](https://github.com/24520597-blip/CVE-2026-999999)
@@ -8439,6 +8425,13 @@
 </code>
 
 - [JNDataRT/VirtualLockSensorLPE](https://github.com/JNDataRT/VirtualLockSensorLPE)
+
+### CVE-2025-0890 (2025-02-04)
+
+<code>**UNSUPPORTED WHEN ASSIGNED**\nInsecure default credentials for the Telnet function in the legacy DSL CPE Zyxel VMG4325-B10A firmware version 1.00(AAFR.4)C0_20170615 could allow an attacker to log in to the management interface if the administrators have the option to change the default credentials but fail to do so.
+</code>
+
+- [Danyw24/zyxel-p870hn-hardware-hacking](https://github.com/Danyw24/zyxel-p870hn-hardware-hacking)
 
 ### CVE-2025-0924 (2025-02-17)
 
@@ -19814,13 +19807,6 @@
 
 - [Sudo-WP/sudowp-crowdsignal-forms](https://github.com/Sudo-WP/sudowp-crowdsignal-forms)
 
-### CVE-2025-69194 (2026-01-09)
-
-<code>A security issue was discovered in GNU Wget2 when handling Metalink documents. The application fails to properly validate file paths provided in Metalink &lt;file name&gt; elements. An attacker can abuse this behavior to write files to unintended locations on the system. This can lead to data loss or potentially allow further compromise of the user’s environment.
-</code>
-
-- [secdongle/POC_CVE-2025-69194](https://github.com/secdongle/POC_CVE-2025-69194)
-
 ### CVE-2025-69212 (2026-02-06)
 
 <code>OpenSTAManager is an open source management software for technical assistance and invoicing. In 2.9.8 and earlier, a critical OS Command Injection vulnerability exists in the P7M (signed XML) file decoding functionality. An authenticated attacker can upload a ZIP file containing a .p7m file with a malicious filename to execute arbitrary system commands on the server.
@@ -28246,6 +28232,13 @@
 
 - [dunihiz/Ph-n-t-ch-CVE-2024-40842-XProtectRemediatorDubRobber-Information-Leak-tr-n-macOS](https://github.com/dunihiz/Ph-n-t-ch-CVE-2024-40842-XProtectRemediatorDubRobber-Information-Leak-tr-n-macOS)
 
+### CVE-2024-40891 (2025-02-04)
+
+<code>**UNSUPPORTED WHEN ASSIGNED**\nA post-authentication command injection vulnerability in the management commands of the legacy DSL CPE Zyxel VMG4325-B10A firmware version 1.00(AAFR.4)C0_20170615 could allow an authenticated attacker to execute operating system (OS) commands on an affected device via Telnet.
+</code>
+
+- [Danyw24/zyxel-p870hn-hardware-hacking](https://github.com/Danyw24/zyxel-p870hn-hardware-hacking)
+
 ### CVE-2024-40892 (2024-08-12)
 
 <code>A weak credential vulnerability exists in Firewalla Box Software versions before 1.979. This vulnerability allows a physically close attacker to use the license UUID for authentication and provision SSH credentials over the Bluetooth Low-Energy (BTLE) interface. Once an attacker gains access to the LAN, they could log into the SSH interface using the provisioned credentials. The license UUID can be acquired through plain-text Bluetooth sniffing, reading the QR code on the bottom of the device, or brute-forcing the UUID (though this is less likely).
@@ -30778,13 +30771,6 @@
 </code>
 
 - [SyFi/CVE-2024-55503](https://github.com/SyFi/CVE-2024-55503)
-
-### CVE-2024-55504 (2025-01-21)
-
-<code>An issue in RAR Extractor - Unarchiver Free and Pro v.6.4.0 allows local attackers to inject arbitrary code potentially leading to remote control and unauthorized access to sensitive user data via the exploit_combined.dylib component on MacOS.
-</code>
-
-- [SyFi/CVE-2024-55504](https://github.com/SyFi/CVE-2024-55504)
 
 ### CVE-2024-55511 (2025-01-16)
 
@@ -35902,6 +35888,7 @@
 - [G4sp4rCS/CVE-2023-32784-password-combinator-fixer](https://github.com/G4sp4rCS/CVE-2023-32784-password-combinator-fixer)
 - [super-oof/keepass2-password-finder](https://github.com/super-oof/keepass2-password-finder)
 - [areebashoaib42/KeePass-CVE-2023-32784-Exploitation-and-Defense](https://github.com/areebashoaib42/KeePass-CVE-2023-32784-Exploitation-and-Defense)
+- [Pugazhendii22/keepass-exfil-forensics](https://github.com/Pugazhendii22/keepass-exfil-forensics)
 
 ### CVE-2023-32961 (2023-06-12)
 
@@ -36553,13 +36540,6 @@
 </code>
 
 - [M507/CVE-2025-59287-PoC](https://github.com/M507/CVE-2025-59287-PoC)
-
-### CVE-2023-35636 (2023-12-12)
-
-<code>Microsoft Outlook Information Disclosure Vulnerability
-</code>
-
-- [duy-31/CVE-2023-35636](https://github.com/duy-31/CVE-2023-35636)
 
 ### CVE-2023-35671 (2023-09-11)
 
@@ -48734,7 +48714,6 @@
 - [CYB3RK1D/CVE-2021-4034-POC](https://github.com/CYB3RK1D/CVE-2021-4034-POC)
 - [rvzsec/CVE-2021-4034](https://github.com/rvzsec/CVE-2021-4034)
 - [antoinenguyen-09/CVE-2021-4034](https://github.com/antoinenguyen-09/CVE-2021-4034)
-- [TanmoyG1800/CVE-2021-4034](https://github.com/TanmoyG1800/CVE-2021-4034)
 - [CronoX1/CVE-2021-4034](https://github.com/CronoX1/CVE-2021-4034)
 - [supportingmx/cve-2021-4034](https://github.com/supportingmx/cve-2021-4034)
 - [A1vinSmith/CVE-2021-4034](https://github.com/A1vinSmith/CVE-2021-4034)
@@ -48792,6 +48771,7 @@
 - [mac3d0/CVE-2021-4034-pwnkit](https://github.com/mac3d0/CVE-2021-4034-pwnkit)
 - [ropydev/CVE-2021-4034-PwnKit](https://github.com/ropydev/CVE-2021-4034-PwnKit)
 - [krleejihyeong/WHS4_CVE-2021-4034](https://github.com/krleejihyeong/WHS4_CVE-2021-4034)
+- [jeffmarlonmandela/CVE-2021-4034-PwnKit](https://github.com/jeffmarlonmandela/CVE-2021-4034-PwnKit)
 
 ### CVE-2021-4044 (2021-12-14)
 
@@ -49331,13 +49311,6 @@
 
 - [SecCoder-Security-Lab/spring-cloud-netflix-hystrix-dashboard-cve-2021-22053](https://github.com/SecCoder-Security-Lab/spring-cloud-netflix-hystrix-dashboard-cve-2021-22053)
 - [Vulnmachines/CVE-2021-22053](https://github.com/Vulnmachines/CVE-2021-22053)
-
-### CVE-2021-22054 (2021-12-17)
-
-<code>VMware Workspace ONE UEM console 20.0.8 prior to 20.0.8.37, 20.11.0 prior to 20.11.0.40, 21.2.0 prior to 21.2.0.27, and 21.5.0 prior to 21.5.0.37 contain an SSRF vulnerability. This issue may allow a malicious actor with network access to UEM to send their requests without authentication and to gain access to sensitive information.
-</code>
-
-- [MKSx/CVE-2021-22054](https://github.com/MKSx/CVE-2021-22054)
 
 ### CVE-2021-22119 (2021-06-29)
 
@@ -51457,13 +51430,6 @@
 - [LUUANHDUC/CVE-2021-35042](https://github.com/LUUANHDUC/CVE-2021-35042)
 - [vutiendat323/INT14107_CVE-2021-35042](https://github.com/vutiendat323/INT14107_CVE-2021-35042)
 
-### CVE-2021-35064 (2021-07-12)
-
-<code>KramerAV VIAWare, all tested versions, allow privilege escalation through misconfiguration of sudo. Sudoers permits running of multiple dangerous commands, including unzip, systemctl and dpkg.
-</code>
-
-- [Chocapikk/CVE-2021-35064](https://github.com/Chocapikk/CVE-2021-35064)
-
 ### CVE-2021-35211 (2021-07-14)
 
 <code>Microsoft discovered a remote code execution (RCE) vulnerability in the SolarWinds Serv-U product utilizing a Remote Memory Escape Vulnerability. If exploited, a threat actor may be able to gain privileged access to the machine hosting Serv-U Only. SolarWinds Serv-U Managed File Transfer and Serv-U Secure FTP for Windows before 15.2.3 HF2 are affected by this vulnerability.
@@ -52770,6 +52736,8 @@
 - [Shams-Ul-Mehmood/CVE-2021-41773-Exploit](https://github.com/Shams-Ul-Mehmood/CVE-2021-41773-Exploit)
 - [lucastran05/CVE-2021-41773](https://github.com/lucastran05/CVE-2021-41773)
 - [Emaar1x/CVE-2021-41773](https://github.com/Emaar1x/CVE-2021-41773)
+- [s-amnajafri/CVE-2021-41773-Apache-Lab](https://github.com/s-amnajafri/CVE-2021-41773-Apache-Lab)
+- [GlebUsalt/cybersecurity_portfolio](https://github.com/GlebUsalt/cybersecurity_portfolio)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -62064,6 +62032,13 @@
 </code>
 
 - [cianananan/CVE-2019-10068-PoC](https://github.com/cianananan/CVE-2019-10068-PoC)
+
+### CVE-2019-10070 (2019-11-18)
+
+<code>Apache Atlas versions 0.8.3 and 1.1.0 were found vulnerable to Stored Cross-Site Scripting in the search functionality
+</code>
+
+- [PerfectPoH/cve-2019-10070-apache-atlas-xss](https://github.com/PerfectPoH/cve-2019-10070-apache-atlas-xss)
 
 ### CVE-2019-10076 (2019-05-20)
 
