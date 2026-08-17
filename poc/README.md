@@ -283,7 +283,6 @@
 <code>Heap buffer overflow in PostgreSQL pgcrypto allows a ciphertext provider to execute arbitrary code as the operating system user running the database.  Versions before PostgreSQL 18.2, 17.8, 16.12, 15.16, and 14.21 are affected.
 </code>
 
-- [var77/CVE-2026-2005](https://github.com/var77/CVE-2026-2005)
 - [open-flaw/CVE-2026-2005](https://github.com/open-flaw/CVE-2026-2005)
 
 ### CVE-2026-2020 (2026-03-07)
@@ -2027,13 +2026,6 @@
 - [MadExploits/CVE-2026-14483](https://github.com/MadExploits/CVE-2026-14483)
 - [0xdak/CVE-2026-14483_exploit](https://github.com/0xdak/CVE-2026-14483_exploit)
 
-### CVE-2026-14762 (2026-07-05)
-
-<code>A vulnerability was detected in code-projects Hotel and Tourism Reservation 1.0. The impacted element is an unknown function of the file /admin/rooms.php of the component Room Management Page. The manipulation of the argument delete results in sql injection. It is possible to launch the attack remotely. The exploit is now public and may be used.
-</code>
-
-- [tc4dy/CVE-2026-14762-PoC-Exploit](https://github.com/tc4dy/CVE-2026-14762-PoC-Exploit)
-
 ### CVE-2026-14802 (2026-07-06)
 
 <code>A vulnerability was detected in react create-react-app up to 5.0.1 on macOS. This affects the function startBrowserProcess of the file openBrowser.js of the component react-dev-utils. Performing a manipulation results in os command injection. Remote exploitation of the attack is possible. The exploit is now public and may be used. The project was informed of the problem early through an issue report but has not responded yet.
@@ -2253,6 +2245,13 @@
 </code>
 
 - [4D4J/objdump-Out-Of-Bounds-write](https://github.com/4D4J/objdump-Out-Of-Bounds-write)
+
+### CVE-2026-18366 (2026-08-12)
+
+<code>The Events Manager  WordPress plugin before 7.4.1 does not properly scope its capability mapping, discarding the access control decisions WordPress already made for unrelated privileged actions, which allows unauthenticated users to change the password of, escalate to Administrator, or delete any account whose user ID happens to match the ID of one of the Events Manager  WordPress plugin before 7.4.1's own posts.
+</code>
+
+- [Nxploited/CVE-2026-18366](https://github.com/Nxploited/CVE-2026-18366)
 
 ### CVE-2026-18556 (2026-08-01)
 
@@ -3200,13 +3199,6 @@
 
 - [HORKimhab/CVE-2026-25177](https://github.com/HORKimhab/CVE-2026-25177)
 
-### CVE-2026-25194 (2026-08-11)
-
-<code>Out-of-bounds write in the firmware for the Intel(R) Slim Bootloader may allow a denial of service. System software adversary with a privileged user combined with a low complexity attack may enable denial of service. This result may potentially occur via local access when attack requirements are present without special internal knowledge and requires no user interaction. The potential vulnerability may impact the confidentiality (none), integrity (none) and availability (low) of the vulnerable system, resulting in subsequent system confidentiality (none), integrity (none) and availability (none) impacts.
-</code>
-
-- [DexSemon/CVE-2026-25194](https://github.com/DexSemon/CVE-2026-25194)
-
 ### CVE-2026-25197 (2026-04-03)
 
 <code>A specific endpoint allows authenticated users to pivot to other user profiles by modifying the id number in the API call.
@@ -3315,6 +3307,7 @@
 
 - [Cyb3rWitch3r/CVE-2026-26119](https://github.com/Cyb3rWitch3r/CVE-2026-26119)
 - [r3vpwnx/CVE-2026-26119](https://github.com/r3vpwnx/CVE-2026-26119)
+- [abdelaaziz0/WACJack](https://github.com/abdelaaziz0/WACJack)
 
 ### CVE-2026-26179 (2026-04-14)
 
@@ -3372,6 +3365,7 @@
 <code>Ghost is a Node.js content management system. Versions 3.24.0 through 6.19.0 allow unauthenticated attackers to perform arbitrary reads from the database. This issue has been fixed in version 6.19.1.
 </code>
 
+- [vognik/CVE-2026-26980](https://github.com/vognik/CVE-2026-26980)
 - [Kulik-Labs-Development/Ghost-CMS-Code-Injection-Audit-CVE-2026-26980](https://github.com/Kulik-Labs-Development/Ghost-CMS-Code-Injection-Audit-CVE-2026-26980)
 - [EQSTLab/CVE-2026-26980](https://github.com/EQSTLab/CVE-2026-26980)
 - [gagaltotal/CVE-2026-26980-Ghost-CMS-Api](https://github.com/gagaltotal/CVE-2026-26980-Ghost-CMS-Api)
@@ -3411,13 +3405,6 @@
 </code>
 
 - [nabhan-mohy/cve-2026-27483-lab](https://github.com/nabhan-mohy/cve-2026-27483-lab)
-
-### CVE-2026-27495 (2026-02-25)
-
-<code>n8n is an open source workflow automation platform. Prior to versions 2.10.1, 2.9.3, and 1.123.22, an authenticated user with permission to create or modify workflows could exploit a vulnerability in the JavaScript Task Runner sandbox to execute arbitrary code outside the sandbox boundary. On instances using internal Task Runners (default runner mode), this could result in full compromise of the n8n host. On instances using external Task Runners, the attacker might gain access to or impact other task executed on the Task Runner. Task Runners must be enabled using `N8N_RUNNERS_ENABLED=true`. The issue has been fixed in n8n versions 2.10.1, 2.9.3, and 1.123.22. Users should upgrade to one of these versions or later to remediate the vulnerability. If upgrading is not immediately possible, administrators should consider the following temporary mitigations. Limit workflow creation and editing permissions to fully trusted users only, and/or use external runner mode (`N8N_RUNNERS_MODE=external`) to limit the blast radius. These workarounds do not fully remediate the risk and should only be used as short-term mitigation measures.
-</code>
-
-- [DexSemon/CVE-2026-27495](https://github.com/DexSemon/CVE-2026-27495)
 
 ### CVE-2026-27577 (2026-02-25)
 
@@ -3679,6 +3666,9 @@
 
 - [Sch8ill/CVE-2026-31309](https://github.com/Sch8ill/CVE-2026-31309)
 
+### CVE-2026-31367
+- [hereticL1nk/EITS-Portal-Exploit-CVE-2026-31367-PoC](https://github.com/hereticL1nk/EITS-Portal-Exploit-CVE-2026-31367-PoC)
+
 ### CVE-2026-31431 (2026-04-22)
 
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: algif_aead - Revert to operating out-of-place\n\nThis mostly reverts commit 72548b093ee3 except for the copying of\nthe associated data.\n\nThere is no benefit in operating in-place in algif_aead since the\nsource and destination come from different mappings.  Get rid of\nall the complexity added for in-place operation and just copy the\nAD directly.
@@ -3860,7 +3850,6 @@
 
 - [EQSTLab/CVE-2026-33017](https://github.com/EQSTLab/CVE-2026-33017)
 - [r3nsi15/CVE-2026-33017-langflow-rce](https://github.com/r3nsi15/CVE-2026-33017-langflow-rce)
-- [Usman0220/CVE-2026-33017-Langflow-RCE](https://github.com/Usman0220/CVE-2026-33017-Langflow-RCE)
 - [Industri4l-H3ll-Xpl0it3rs/CVE-2026-33017-Langflow-RCE](https://github.com/Industri4l-H3ll-Xpl0it3rs/CVE-2026-33017-Langflow-RCE)
 - [CerberusMrXi/Langflow-cve-2026-33017-exploit](https://github.com/CerberusMrXi/Langflow-cve-2026-33017-exploit)
 - [Dynamo2k1/CVE-2026-33017](https://github.com/Dynamo2k1/CVE-2026-33017)
@@ -4008,7 +3997,6 @@
 - [LAT-06/CVE-2026-34197](https://github.com/LAT-06/CVE-2026-34197)
 - [hnytgl/CVE-2026-34197](https://github.com/hnytgl/CVE-2026-34197)
 - [asdasddqwdq29-a11y/CVE-2026-34197](https://github.com/asdasddqwdq29-a11y/CVE-2026-34197)
-- [pssec-io/CVE-2026-34197](https://github.com/pssec-io/CVE-2026-34197)
 - [K3ysTr0K3R/CVE-2026-34197](https://github.com/K3ysTr0K3R/CVE-2026-34197)
 
 ### CVE-2026-34207 (2026-05-22)
@@ -4571,13 +4559,6 @@
 
 - [Skorpion96/CVE-2026-40000](https://github.com/Skorpion96/CVE-2026-40000)
 
-### CVE-2026-40048 (2026-04-27)
-
-<code>The Camel-PQC FileBasedKeyLifecycleManager class deserializes the contents of `&lt;keyId&gt;.key` files in the configured key directory using java.io.ObjectInputStream without applying any ObjectInputFilter or class-loading restrictions. The cast to `java.security.KeyPair` is evaluated only after `readObject()` has already returned, so any `readObject()` side effects in the deserialized object run before the type check. An attacker who can write to the key directory used by a Camel application — for example through a path traversal into the directory, misconfigured filesystem permissions on the volume where keys are stored, a compromised key provisioning pipeline, or a symlink attack — can place a crafted serialized Java object that, when deserialized during normal key lifecycle operations, results in arbitrary code execution in the context of the application.\n\nThis issue affects Apache Camel: from 4.19.0 before 4.20.0, from 4.18.0 before 4.18.2.\n\nUsers are recommended to upgrade to version 4.20.0, which fixes the issue by replacing java.io.ObjectInputStream-based key and metadata storage with standard PKCS#8 (private key) / X.509 SubjectPublicKeyInfo (public key) Base64 JSON encoding. For users on the 4.18.x LTS releases stream, upgrade to 4.18.2.
-</code>
-
-- [oscerd/CVE-2026-40048](https://github.com/oscerd/CVE-2026-40048)
-
 ### CVE-2026-40072 (2026-04-09)
 
 <code>web3.py allows you to interact with the Ethereum blockchain using Python. From 6.0.0b3 to before 7.15.0 and 8.0.0b2, web3.py implements CCIP Read / OffchainLookup (EIP-3668) by performing HTTP requests to URLs supplied by smart contracts in offchain_lookup_payload[&quot;urls&quot;]. The implementation uses these contract-supplied URLs directly (after {sender} / {data} template substitution) without any destination validation. CCIP Read is enabled by default (global_ccip_read_enabled = True on all providers), meaning any application using web3.py's .call() method is exposed without explicit opt-in. This results in Server-Side Request Forgery (SSRF) when web3.py is used in backend services, indexers, APIs, or any environment that performs eth_call / .call() against untrusted or user-supplied contract addresses. A malicious contract can force the web3.py process to issue HTTP requests to arbitrary destinations, including internal network services and cloud metadata endpoints. This vulnerability is fixed in 7.15.0 and 8.0.0b2.
@@ -4617,13 +4598,6 @@
 - [piffd0s/ntoskrnl-metadata](https://github.com/piffd0s/ntoskrnl-metadata)
 - [0xBlackash/CVE-2026-40369](https://github.com/0xBlackash/CVE-2026-40369)
 - [CCELEND/CVE-2026-40369](https://github.com/CCELEND/CVE-2026-40369)
-
-### CVE-2026-40453 (2026-04-27)
-
-<code>The fix for CVE-2025-27636 added setLowerCase(true) to HttpHeaderFilterStrategy so that case-variant header names such as 'CAmelExecCommandExecutable' are filtered out alongside 'CamelExecCommandExecutable'. The same setLowerCase(true) call was not applied to five non-HTTP HeaderFilterStrategy implementations: JmsHeaderFilterStrategy and ClassicJmsHeaderFilterStrategy in camel-jms, SjmsHeaderFilterStrategy in camel-sjms, CoAPHeaderFilterStrategy in camel-coap, and GooglePubsubHeaderFilterStrategy in camel-google-pubsub. Because those strategies use case-sensitive String.startsWith('Camel'/'camel') filtering while the Camel Exchange stores headers in a case-insensitive map, an attacker with JMS (or equivalent) producer access to the broker consumed by a Camel route can inject case-variant Camel internal headers, which are then resolved by downstream components such as camel-exec and camel-file using their canonical casing. This enables remote code execution and arbitrary file write on routes that forward JMS messages to header-driven components.\n\nThis issue affects Apache Camel: from 3.0.0 before 4.14.6, from 4.15.0 before 4.18.2, from 4.19.0 before 4.20.0.\n\nUsers are recommended to upgrade to version 4.20.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.6. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.2.
-</code>
-
-- [oscerd/CVE-2026-40453](https://github.com/oscerd/CVE-2026-40453)
 
 ### CVE-2026-40473 (2026-04-27)
 
@@ -5430,13 +5404,6 @@
 </code>
 
 - [BiiTts/CVE-2026-44789-n8n-PrototypePollution-RCE](https://github.com/BiiTts/CVE-2026-44789-n8n-PrototypePollution-RCE)
-
-### CVE-2026-44825 (2026-06-01)
-
-<code>Hardcoded credentials in the Basic Authentication setup tool (bin/solr auth enable) in Apache Solr versions 9.4.0 through 9.10.1 and 10.0.0 allows a remote attacker to gain full administrative access to the cluster via publicly known default credentials installed silently alongside the user-specified account. \n\nAs an immediate workaround without upgrading, delete the template users (superadmin, admin, search, index) from security.json or change their passwords.\nThe future, not yet released, versions 9.11.0 and 10.1.0 will not be vulnerable, and it will be enough to upgrade to solve the issue.\n\nNot affected:\n  *  Clusters where bin/solr auth enable was not used to bootstrap BasicAuth\n  *  Clusters where template users have been assigned strong passwords after bootstrap
-</code>
-
-- [gagaltotal/CVE-2026-44825-Apache-Solr-Scanner](https://github.com/gagaltotal/CVE-2026-44825-Apache-Solr-Scanner)
 
 ### CVE-2026-44881 (2026-05-28)
 
@@ -6780,8 +6747,6 @@
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: x86: Fix shadow paging use-after-free due to unexpected role\n\nCommit 0cb2af2ea66ad (&quot;KVM: x86: Fix shadow paging use-after-free due\nto unexpected GFN&quot;) fixed a shadow paging mismatch between stored and\ncomputed GFNs; the bug could be triggered by changing a PDE mapping from\noutside the guest, and then deleting a memslot.  The rmap_remove()\ncall would miss entries created after the PDE change because the GFN\nof the leaf SPTE does not match the GFN of the struct kvm_mmu_page.\n\nA similar hole however remains if the modified PDE points to a non-leaf\npage.  In this case the gfn can be made to match, but the role does not\nmatch: the original large 2MB page creates a kvm_mmu_page with direct=1,\nwhile the new 4KB needs a kvm_mmu_page with direct=0.  However,\nkvm_mmu_get_child_sp() does not compare the role, and therefore reuses\nthe page.\n\nThe next step is installing a leaf (4KB) SPTE on the new path which\nrecords an rmap entry under the gfn resolved by the walk.  But when\nthat child is zapped its parent kvm_mmu_page has direct=1 and\nkvm_mmu_page_get_gfn() computes the gfn for the 4KB page as\nsp-&gt;gfn + index instead of using sp-&gt;shadowed_translation[] (or sp-&gt;gfns[]\nin older kernels).  It therefore fails to remove the recorded entry.\n\nWhen the memslot is dropped the shadow page is freed but the rmap\nentry survives, as in the scenario that was already fixed.  Code that\nlater walks that gfn (dirty logging, MMU notifier invalidation, and\nso on) dereferences an sptep that lies in the freed page, causing the\nuse-after-free.
 </code>
 
-- [Aoripus-LTD/Januscape-Hotfix](https://github.com/Aoripus-LTD/Januscape-Hotfix)
-- [chuzhongyun/CVE-2026-53359-Kernel-Fix](https://github.com/chuzhongyun/CVE-2026-53359-Kernel-Fix)
 - [suominen/januscape](https://github.com/suominen/januscape)
 - [xj2268-TA/KVM-Januscape](https://github.com/xj2268-TA/KVM-Januscape)
 - [ndouglas-cloudsmith/CVE-2026-53359](https://github.com/ndouglas-cloudsmith/CVE-2026-53359)
@@ -7743,6 +7708,7 @@
 </code>
 
 - [jiuyi155/agxprobe](https://github.com/jiuyi155/agxprobe)
+- [yiyeshi0-hash/ave263-chain](https://github.com/yiyeshi0-hash/ave263-chain)
 
 ### CVE-2026-64824 (2026-07-21)
 
@@ -8181,6 +8147,34 @@
 
 - [Hunt-Benito/one-multiply-too-many-cve-2026-70638-llama-cpp-android-jni-integer-overflow](https://github.com/Hunt-Benito/one-multiply-too-many-cve-2026-70638-llama-cpp-android-jni-integer-overflow)
 
+### CVE-2026-71203 (2026-08-05)
+
+<code>changedetection.io's REST API resources are protected by an @auth.check_token decorator validating the caller's x-api-key header, except the Spec resource registered at /api/v1/full-spec (changedetectionio/api/Spec.py), whose get method carries neither @auth.check_token nor @validate_openapi_request.
+</code>
+
+- [Nel-droid/CVE-2026-71203-PoC](https://github.com/Nel-droid/CVE-2026-71203-PoC)
+
+### CVE-2026-71204 (2026-08-05)
+
+<code>changedetection.io's /settings save handler builds an update dict from form.data['application'] and blind-merges it into the stored application settings via .update.
+</code>
+
+- [Nel-droid/CVE-2026-71204-PoC](https://github.com/Nel-droid/CVE-2026-71204-PoC)
+
+### CVE-2026-71205 (2026-08-05)
+
+<code>changedetection.io's /login route checks the submitted password against a single PBKDF2-HMAC-SHA256 hash with no per-IP or per-session rate limiting, failed-attempt counter, or lockout (no rate-limiting library is present in requirements.txt).
+</code>
+
+- [Nel-droid/CVE-2026-71205-PoC](https://github.com/Nel-droid/CVE-2026-71205-PoC)
+
+### CVE-2026-71206 (2026-08-05)
+
+<code>Shiori's CheckToken function (internal/domains/auth.go) validates only the JWT's HMAC signature and returns the embedded claims.Account object unmodified, never re-fetching the account from the database. No session store or token-revocation mechanism exists in the codebase.
+</code>
+
+- [Nel-droid/CVE-2026-71206-PoC](https://github.com/Nel-droid/CVE-2026-71206-PoC)
+
 ### CVE-2026-71211 (2026-08-05)
 
 <code>MLflow's AI Gateway accepts an auth_config.api_base value when creating a gateway secret (mlflow/server/handlers.py, _create_gateway_secret) with no validation of scheme, host, or IP range; the value is stored verbatim. The gateway proxy endpoint (mlflow/server/gateway_api.py, raw_proxy) subsequently issues an HTTP request to that stored api_base plus a caller-supplied path and returns the full response body.
@@ -8215,6 +8209,13 @@
 </code>
 
 - [abdugafforov-bobur/CVE-2026-72550-poc](https://github.com/abdugafforov-bobur/CVE-2026-72550-poc)
+
+### CVE-2026-72585 (2026-08-10)
+
+<code>An authorization bypass vulnerability in Grafana through 13.2.0 allows an Editor-role user to delete protected contact points (receivers) without the required alert.notifications.receivers.protected:write permission.
+</code>
+
+- [Nel-droid/CVE-2026-72585-PoC](https://github.com/Nel-droid/CVE-2026-72585-PoC)
 
 ### CVE-2026-72898 (2026-08-10)
 
@@ -8270,6 +8271,13 @@
 </code>
 
 - [squeeze440/CVE-2026-73847-emlog-PoC](https://github.com/squeeze440/CVE-2026-73847-emlog-PoC)
+
+### CVE-2026-74251 (2026-08-16)
+
+<code>Joomla Extension - phoca.cz -  Unauthenticated SQL injection via attribute filter in Phoca Cart 5.0.0-6.1.6 - The a[] (attribute) and s[] (specification) GET array parameters on Phoca Cart's public shop items page are concatenated raw into SQL WHERE clauses without parameterization or escaping. An unauthenticated attacker can inject arbitrary SQL through these parameters, enabling full database extraction via time-based blind techniques.
+</code>
+
+- [toanln-cov/CVE-2026-74251](https://github.com/toanln-cov/CVE-2026-74251)
 
 ### CVE-2026-999999
 - [24520597-blip/CVE-2026-999999](https://github.com/24520597-blip/CVE-2026-999999)
@@ -15584,7 +15592,7 @@
 - [V0idW1re/HTB-Pterodactyl-Writeup](https://github.com/V0idW1re/HTB-Pterodactyl-Writeup)
 - [karimelsheikh1/HTB-Pterodactyl-Writeup](https://github.com/karimelsheikh1/HTB-Pterodactyl-Writeup)
 - [yurahshell/CVE-2025-49132](https://github.com/yurahshell/CVE-2025-49132)
-- [vimmwy/CVE-2025-49132](https://github.com/vimmwy/CVE-2025-49132)
+- [aleewyy/CVE-2025-49132](https://github.com/aleewyy/CVE-2025-49132)
 
 ### CVE-2025-49144 (2025-06-23)
 
@@ -20760,7 +20768,6 @@
 </code>
 
 - [sharpicx/CVE-2024-1651-PoC](https://github.com/sharpicx/CVE-2024-1651-PoC)
-- [hy011121/CVE-2024-1651-exploit-RCE](https://github.com/hy011121/CVE-2024-1651-exploit-RCE)
 - [Whiteh4tWolf/CVE-2024-1651-PoC](https://github.com/Whiteh4tWolf/CVE-2024-1651-PoC)
 - [killukeren/cve-2024-1651](https://github.com/killukeren/cve-2024-1651)
 
@@ -25255,7 +25262,6 @@
 - [Chocapikk/CVE-2024-25600](https://github.com/Chocapikk/CVE-2024-25600)
 - [Christbowel/CVE-2024-25600_Nuclei-Template](https://github.com/Christbowel/CVE-2024-25600_Nuclei-Template)
 - [Tornad0007/CVE-2024-25600-Bricks-Builder-plugin-for-WordPress](https://github.com/Tornad0007/CVE-2024-25600-Bricks-Builder-plugin-for-WordPress)
-- [hy011121/CVE-2024-25600-wordpress-Exploit-RCE](https://github.com/hy011121/CVE-2024-25600-wordpress-Exploit-RCE)
 - [K3ysTr0K3R/CVE-2024-25600-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2024-25600-EXPLOIT)
 - [X-Projetion/WORDPRESS-CVE-2024-25600-EXPLOIT-RCE](https://github.com/X-Projetion/WORDPRESS-CVE-2024-25600-EXPLOIT-RCE)
 - [svchostmm/CVE-2024-25600-mass](https://github.com/svchostmm/CVE-2024-25600-mass)
@@ -32322,7 +32328,7 @@
 - [LiveOverflow/webp-CVE-2023-4863](https://github.com/LiveOverflow/webp-CVE-2023-4863)
 - [caoweiquan322/NotEnough](https://github.com/caoweiquan322/NotEnough)
 - [CrackerCat/CVE-2023-4863-](https://github.com/CrackerCat/CVE-2023-4863-)
-- [jpselva/CVE-2023-4863](https://github.com/jpselva/CVE-2023-4863)
+- [jpsbern/CVE-2023-4863](https://github.com/jpsbern/CVE-2023-4863)
 - [577Industries/aegisgraph](https://github.com/577Industries/aegisgraph)
 - [pixelotes/lab-cve-2023-4863](https://github.com/pixelotes/lab-cve-2023-4863)
 - [Shcesama/cve-2023-4863-analysis](https://github.com/Shcesama/cve-2023-4863-analysis)
@@ -48663,7 +48669,6 @@
 <code>A local privilege escalation vulnerability was found on polkit's pkexec utility. The pkexec application is a setuid tool designed to allow unprivileged users to run commands as privileged users according predefined policies. The current version of pkexec doesn't handle the calling parameters count correctly and ends trying to execute environment variables as commands. An attacker can leverage this by crafting environment variables in such a way it'll induce pkexec to execute arbitrary code. When successfully executed the attack can cause a local privilege escalation given unprivileged users administrative rights on the target machine.
 </code>
 
-- [berdav/CVE-2021-4034](https://github.com/berdav/CVE-2021-4034)
 - [arthepsy/CVE-2021-4034](https://github.com/arthepsy/CVE-2021-4034)
 - [Y3A/CVE-2021-4034](https://github.com/Y3A/CVE-2021-4034)
 - [ly4k/PwnKit](https://github.com/ly4k/PwnKit)
@@ -53819,6 +53824,7 @@
 - [MAFO-sec/mi-laboratorio-log4shell](https://github.com/MAFO-sec/mi-laboratorio-log4shell)
 - [felisha-elmer/Sandbox-Challenge-Log4Shell-CVE-2021-44228-](https://github.com/felisha-elmer/Sandbox-Challenge-Log4Shell-CVE-2021-44228-)
 - [jomjosh17/Log4Shell-CVE-2021-44228-](https://github.com/jomjosh17/Log4Shell-CVE-2021-44228-)
+- [C00LN3T/Log4ShellAuditor](https://github.com/C00LN3T/Log4ShellAuditor)
 - [bhimsekhar/vulnerable-java-app](https://github.com/bhimsekhar/vulnerable-java-app)
 - [horrister/log4shell-cve-2021-44228](https://github.com/horrister/log4shell-cve-2021-44228)
 - [hmxh123/Log4Shell-Vulnerability-Replication](https://github.com/hmxh123/Log4Shell-Vulnerability-Replication)
@@ -66231,6 +66237,7 @@
 </code>
 
 - [lsw29475/CVE-2018-8611](https://github.com/lsw29475/CVE-2018-8611)
+- [ahm3dgg/cve-2018-8611](https://github.com/ahm3dgg/cve-2018-8611)
 
 ### CVE-2018-8639 (2018-12-12)
 
