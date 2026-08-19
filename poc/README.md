@@ -1845,13 +1845,6 @@
 
 - [hakaioffsec/CVE-2026-12191](https://github.com/hakaioffsec/CVE-2026-12191)
 
-### CVE-2026-12400 (2026-07-10)
-
-<code>The FlowForms – Conversational Form Builder plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 1.1.1 via the update_form due to missing validation on a user controlled key. This makes it possible for authenticated attackers, with contributor-level access and above, to modify the content, design, and settings of, as well as publish or revert, any form on the site — including forms owned by administrators — by supplying an arbitrary form ID in the REST URL.
-</code>
-
-- [0x00phantom-hat/CVE-2026-12400-Exploit](https://github.com/0x00phantom-hat/CVE-2026-12400-Exploit)
-
 ### CVE-2026-12415 (2026-06-27)
 
 <code>The Invoice Generator plugin for WordPress is vulnerable to privilege escalation due to a missing capability check on the pravel_invoice_edit_account() AJAX action in versions up to, and including, 1.0.0. The handler is exposed via wp_ajax_nopriv_pravel_invoice_edit_account, accepts an attacker-controlled user_id and user_email from POST data, and calls wp_update_user() without verifying authentication, ownership, or a nonce. This makes it possible for unauthenticated attackers to change the email address of any user, including administrators, and then trigger WordPress's password reset flow to gain access to the targeted account.
@@ -2025,6 +2018,13 @@
 - [MadExploits/CVE-2026-14483](https://github.com/MadExploits/CVE-2026-14483)
 - [0xdak/CVE-2026-14483_exploit](https://github.com/0xdak/CVE-2026-14483_exploit)
 
+### CVE-2026-14669 (2026-08-13)
+
+<code>Heap buffer overflow in PostgreSQL to_char(timestamptz) allows the party choosing the timezone to execute arbitrary code as the operating system user running the database, via a long POSIX timezone abbreviation.  Versions before PostgreSQL 18.5, 17.11, 16.15, 15.19, and 14.24 are affected.
+</code>
+
+- [HackSpeak/CVE-2026-14669](https://github.com/HackSpeak/CVE-2026-14669)
+
 ### CVE-2026-14802 (2026-07-06)
 
 <code>A vulnerability was detected in react create-react-app up to 5.0.1 on macOS. This affects the function startBrowserProcess of the file openBrowser.js of the component react-dev-utils. Performing a manipulation results in os command injection. Remote exploitation of the attack is possible. The exploit is now public and may be used. The project was informed of the problem early through an issue report but has not responded yet.
@@ -2131,6 +2131,13 @@
 
 ### CVE-2026-15706
 - [musana/CVE-2026-15706](https://github.com/musana/CVE-2026-15706)
+
+### CVE-2026-15748 (2026-08-18)
+
+<code>The Forminator Forms plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 1.56.1 via the handle_file_upload function. This is due to insufficient file type validation in handle_file_upload, where the dangerous-extension blocklist performs exact-key matching that is bypassed by pipe-alternative MIME type keys, combined with a public submission handler that trusts attacker-controlled upload field configuration injected via a forged Select field value. This makes it possible for unauthenticated attackers to upload files that may be executable, which makes remote code execution possible.
+</code>
+
+- [yora1928/cve-2026-15748](https://github.com/yora1928/cve-2026-15748)
 
 ### CVE-2026-15826 (2026-08-15)
 
@@ -2329,6 +2336,34 @@
 </code>
 
 - [DarkLycn1976/CVE-2026-19264](https://github.com/DarkLycn1976/CVE-2026-19264)
+
+### CVE-2026-19478 (2026-08-17)
+
+<code>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 before 18.11.11, 19.0 before 19.0.8, 19.1 before 19.1.6, and 19.2 before 19.2.4 that under certain conditions could allow an unauthenticated user to remotely modify or delete public projects and user data via a GraphQL directive.
+</code>
+
+- [davkharrr/CVE-2026-19478-PoC](https://github.com/davkharrr/CVE-2026-19478-PoC)
+
+### CVE-2026-19500 (2026-08-18)
+
+<code>The Entries component in Brainstorm Force SureForms version, less than 2.1.3, does not enforce adequate limits on user-controlled form fields or submitted content during processing and rendering, which allows a remote attacker to exhaust server resources, prevent administrators from accessing the Entries interface, and trigger HTTP 500 errors via crafted form submissions.
+</code>
+
+- [typedefabcd1234ntd/CVE-2026-19500-poc](https://github.com/typedefabcd1234ntd/CVE-2026-19500-poc)
+
+### CVE-2026-19501 (2026-08-18)
+
+<code>CSV export functionality in Brainstorm Force SureForms version, &lt;= 2.1.1, fails to neutralize spreadsheet formula characters in user-controlled form field names before generating CSV exports, which allows a remote attacker to execute spreadsheet formulas on an administrator's workstation when the exported CSV file is opened in a vulnerable spreadsheet application.
+</code>
+
+- [typedefabcd1234ntd/CVE-2026-19501-poc](https://github.com/typedefabcd1234ntd/CVE-2026-19501-poc)
+
+### CVE-2026-19598 (2026-08-15)
+
+<code>The Pods – Custom Content Types and Fields plugin for WordPress is vulnerable to Privilege Escalation via Authorization Bypass in all versions up to, and including, 3.3.9. The vulnerability exists because the pods_admin AJAX router funnels every access check — including the method allowlist, nonce verification, login enforcement, and capability gate — through pods_error(), which under the JSON meta-box-loader compatibility path only writes failures to the PHP error log and returns false instead of terminating the request, rendering all guards ineffective.  This makes it possible for unauthenticated attackers to escalate their privileges to Administrator or overwrite the password of any user account, including the site owner's, enabling complete site takeover, or perform another administrator action.
+</code>
+
+- [ksotaria1337/CVE-2026-19598](https://github.com/ksotaria1337/CVE-2026-19598)
 
 ### CVE-2026-19650 (2026-08-17)
 
@@ -3628,13 +3663,6 @@
 
 - [bogdanrotariu/cve-2026-29204-whmcs-clientarea-addonid](https://github.com/bogdanrotariu/cve-2026-29204-whmcs-clientarea-addonid)
 
-### CVE-2026-29519 (2026-07-10)
-
-<code>Lucee CFML Server versions across the 5.3.x, 6.1.x, 6.2.x, and 7.0.x release lines contain a reflected cross-site scripting vulnerability in URL path parsing that allows unauthenticated remote attackers to execute arbitrary JavaScript in a victim's browser by embedding HTML or JavaScript payloads within the request path. Attackers can craft a malicious URL containing injected script content that is reflected in the server's response without proper output encoding, enabling session hijacking or unauthorized actions against the Lucee administrative interface when a victim visits the crafted link.
-</code>
-
-- [L4V4D0/CVE-2026-29519-Lucee-Reflected-XSS](https://github.com/L4V4D0/CVE-2026-29519-Lucee-Reflected-XSS)
-
 ### CVE-2026-29923 (2026-04-09)
 
 <code>The pstrip64.sys driver in EnTech Taiwan PowerStrip &lt;=3.90.736 allows local users to escalate privileges to SYSTEM via a crafted IOCTL request enabling unprivileged users to map arbitrary physical memory into their address space and modify critical kernel structures.
@@ -3825,6 +3853,13 @@
 </code>
 
 - [K3ysTr0K3R/CVE-2026-31816](https://github.com/K3ysTr0K3R/CVE-2026-31816)
+
+### CVE-2026-32128 (2026-03-11)
+
+<code>FastGPT is an AI Agent building platform. In 4.14.7 and earlier, FastGPT's Python Sandbox (fastgpt-sandbox) includes guardrails intended to prevent file writes (static detection + seccomp). These guardrails are bypassable by remapping stdout (fd 1) to an arbitrary writable file descriptor using fcntl. After remapping, writing via sys.stdout.write() still satisfies the seccomp rule write(fd==1), enabling arbitrary file creation/overwrite inside the sandbox container despite the intended no file writes restriction.
+</code>
+
+- [qianlijaingshan/fastgpt-sandbox-audit](https://github.com/qianlijaingshan/fastgpt-sandbox-audit)
 
 ### CVE-2026-32194 (2026-03-19)
 
@@ -5164,7 +5199,6 @@
 - [tc3650/CVE-2026-43499-armv7](https://github.com/tc3650/CVE-2026-43499-armv7)
 - [suominen/ghostlock](https://github.com/suominen/ghostlock)
 - [pubglite55/oppo-ghostlock](https://github.com/pubglite55/oppo-ghostlock)
-- [inforcqb/CVE-2026-43499-pja110](https://github.com/inforcqb/CVE-2026-43499-pja110)
 - [caspy123/CVE-2026-43499](https://github.com/caspy123/CVE-2026-43499)
 - [x-spy/CVE-2026-43499-popsicle](https://github.com/x-spy/CVE-2026-43499-popsicle)
 - [dmcdtc/openvz-cve-patch-2026](https://github.com/dmcdtc/openvz-cve-patch-2026)
@@ -5224,7 +5258,6 @@
 - [oopnv70-lab/ghostlock-honor-aak](https://github.com/oopnv70-lab/ghostlock-honor-aak)
 - [Meowkis/tcp-zerocopy-sm](https://github.com/Meowkis/tcp-zerocopy-sm)
 - [wxxsfxyzm/GhostLock-Galaxy](https://github.com/wxxsfxyzm/GhostLock-Galaxy)
-- [ruik-tech/Root-My-Galaxy](https://github.com/ruik-tech/Root-My-Galaxy)
 - [OhLookItsTheIRS/Root-My-Galaxy-tests](https://github.com/OhLookItsTheIRS/Root-My-Galaxy-tests)
 - [zzzxxxxxxxxxx/GhostLock-GOT-W29](https://github.com/zzzxxxxxxxxxx/GhostLock-GOT-W29)
 - [oopnv70-lab/ghostlock-apk](https://github.com/oopnv70-lab/ghostlock-apk)
@@ -5243,6 +5276,7 @@
 - [knowlily/cve-2026-43499-honor](https://github.com/knowlily/cve-2026-43499-honor)
 - [NanoTurtle1145/root-my-s9280](https://github.com/NanoTurtle1145/root-my-s9280)
 - [R0rt1z2/GhostLock-5.10](https://github.com/R0rt1z2/GhostLock-5.10)
+- [gitchw/ghostlock-cve-2026-43499](https://github.com/gitchw/ghostlock-cve-2026-43499)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -5412,6 +5446,7 @@
 - [love07oj/nextjs-cve-2026-44578](https://github.com/love07oj/nextjs-cve-2026-44578)
 - [dinosn/CVE-2026-44578](https://github.com/dinosn/CVE-2026-44578)
 - [0xBlackash/CVE-2026-44578](https://github.com/0xBlackash/CVE-2026-44578)
+- [lxxexxbxx/CVE-2026-44578](https://github.com/lxxexxbxx/CVE-2026-44578)
 
 ### CVE-2026-44595 (2026-07-16)
 
@@ -6239,8 +6274,6 @@
 - [gagaltotal/CVE-2026-48908-SP-Page-Builder-Joomla](https://github.com/gagaltotal/CVE-2026-48908-SP-Page-Builder-Joomla)
 - [0xBlackash/CVE-2026-48908](https://github.com/0xBlackash/CVE-2026-48908)
 - [ayiezola/CVE-2026-48908](https://github.com/ayiezola/CVE-2026-48908)
-- [cazzysoci/cve-2026-48908](https://github.com/cazzysoci/cve-2026-48908)
-- [g0thamRabb1t/CVE-2026-48908-joomla-sp-page-builder-detection](https://github.com/g0thamRabb1t/CVE-2026-48908-joomla-sp-page-builder-detection)
 - [imXur/CVE-2026-48908-Joomla-SP-Page-Builder-RCE](https://github.com/imXur/CVE-2026-48908-Joomla-SP-Page-Builder-RCE)
 - [yora1928/CVE-2026-48908-by-yora](https://github.com/yora1928/CVE-2026-48908-by-yora)
 
@@ -6383,13 +6416,6 @@
 
 - [DavidCarliez/CVE-2026-49176_LPE_POC](https://github.com/DavidCarliez/CVE-2026-49176_LPE_POC)
 - [777erp/CVE-2026-49176_BOF](https://github.com/777erp/CVE-2026-49176_BOF)
-
-### CVE-2026-49230 (2026-06-19)
-
-<code>Improper Validation of Integrity Check Value vulnerability in Apache APISIX.\n\nThe jwe-decrypt plugin under default configuration is vulnerable to authentication bypass. \nThis issue affects Apache APISIX: from 3.8.0 through 3.16.0.\n\nUsers are recommended to upgrade to version 3.17.0, which fixes the issue.
-</code>
-
-- [BiiTts/CVE-2026-49230-APISIX-jwe-decrypt-Auth-Bypass](https://github.com/BiiTts/CVE-2026-49230-APISIX-jwe-decrypt-Auth-Bypass)
 
 ### CVE-2026-49268 (2026-06-17)
 
@@ -6593,9 +6619,6 @@
 - [fernstedt/CVE-2026-50751](https://github.com/fernstedt/CVE-2026-50751)
 - [watchtowrlabs/watchTowr-vs-Check-Point-CVE-2026-50751](https://github.com/watchtowrlabs/watchTowr-vs-Check-Point-CVE-2026-50751)
 - [WadesWeaponShed/CheckPoint-CVE-Webscanner](https://github.com/WadesWeaponShed/CheckPoint-CVE-Webscanner)
-
-### CVE-2026-50979
-- [bugresearch/CVE-2026-50979](https://github.com/bugresearch/CVE-2026-50979)
 
 ### CVE-2026-50980
 - [bugresearch/CVE-2026-50980](https://github.com/bugresearch/CVE-2026-50980)
@@ -7162,13 +7185,6 @@
 
 - [nullwhisper/CVE-2026-56292-AcyMailing-SQLi](https://github.com/nullwhisper/CVE-2026-56292-AcyMailing-SQLi)
 
-### CVE-2026-56423 (2026-06-22)
-
-<code>MISP Core contained broken access-control checks in the bulk deletion flows for Event Reports and Sharing Groups. The affected deleteSelection handlers authorized deletion using broad role-level permissions instead of validating authorization for each selected object.\n\nFor Event Reports, EventReportsController::deleteSelection relied on the global perm_add capability rather than a per-report ownership/authorization check. As a result, a contributor-level user could submit report IDs or UUIDs for reports belonging to other organisations and hard-delete them instance-wide. The fix changed the callback to call EventReport::fetchIfAuthorized($user, $itemId, 'delete') for each selected report before deletion.\n\n\n\n\nFor Sharing Groups, SharingGroupsController::deleteSelection relied on the global perm_sharing_group capability rather than verifying ownership of each selected sharing group. This allowed a sharing-group-capable user to hard-delete sharing groups owned by other organisations, bypassing the per-object ownership gate used by the single-object delete action. The fix changed the callback to call SharingGroup::checkIfOwner($user, $itemId) for each selected sharing group.\n\n\n\n\nAn authenticated attacker with the relevant broad role permission could abuse the affected bulk deletion endpoints to delete objects outside their organisation’s authorization scope, causing loss of event-report content or sharing-group configuration across the instance.
-</code>
-
-- [BiiTts/CVE-2026-56423-MISP-deleteSelection-BrokenAccessControl](https://github.com/BiiTts/CVE-2026-56423-MISP-deleteSelection-BrokenAccessControl)
-
 ### CVE-2026-56782 (2026-06-29)
 
 <code>Gorse before 0.5.10 contains an authentication bypass vulnerability in the /api/dump and /api/restore endpoints that allows unauthenticated attackers to access protected functionality when admin_api_key is empty, which is the default configuration. Remote attackers can exfiltrate the entire database including user records, items, and feedback data containing personally identifiable information, or completely overwrite the dataset without authentication.
@@ -7251,13 +7267,6 @@
 </code>
 
 - [zylideum/CVE-2026-57858](https://github.com/zylideum/CVE-2026-57858)
-
-### CVE-2026-57973 (2026-07-14)
-
-<code>Time-of-check time-of-use (toctou) race condition in Windows Subsystem for Linux allows an authorized attacker to perform tampering locally.
-</code>
-
-- [riddhimaan-sth404/CVE-2026-57973](https://github.com/riddhimaan-sth404/CVE-2026-57973)
 
 ### CVE-2026-58025 (2026-07-01)
 
@@ -7471,7 +7480,6 @@
 </code>
 
 - [DavidCarliez/cve-2026-62737-lab](https://github.com/DavidCarliez/cve-2026-62737-lab)
-- [loanvui/CVE-2026-62737](https://github.com/loanvui/CVE-2026-62737)
 
 ### CVE-2026-62958
 - [0Linear/CVE-2026-62958](https://github.com/0Linear/CVE-2026-62958)
@@ -8044,7 +8052,11 @@
 
 - [Hunt-Benito/go-without-bounds-cve-2026-67822-stack-overflow-in-tenda-w6-s-wifissidset](https://github.com/Hunt-Benito/go-without-bounds-cve-2026-67822-stack-overflow-in-tenda-w6-s-wifissidset)
 
-### CVE-2026-67846
+### CVE-2026-67846 (2026-08-18)
+
+<code>Berkeley Out-of-Order Machine (BOOM) commit 5223e44cfeb26f41380057a2eb4d651197475f69 contains a potential incorrect privilege assignment issue in the v3 and v4 NBDTLB implementations. The raw mstatus.SUM value participates in the read and write permission logic without an explicit local satp.MODE validity check at the use site
+</code>
+
 - [duan528/CVE-2026-67846-BOOM-NBDTLB](https://github.com/duan528/CVE-2026-67846-BOOM-NBDTLB)
 
 ### CVE-2026-68004 (2026-08-17)
@@ -8129,6 +8141,13 @@
 </code>
 
 - [leoelsolh/CVE-2026-69263](https://github.com/leoelsolh/CVE-2026-69263)
+
+### CVE-2026-69414 (2026-08-14)
+
+<code>Microsoft is aware of an elevation of privilege in the Microsoft Malware Protection Engine in Microsoft Defender publicly referred to as &amp;quot;ShieldBreak &amp;quot;.\nWe are working to provide a high quality security update that addresses this vulnerability. We will provide information in this CVE when the update is available.
+</code>
+
+- [1neptune/ShieldBreak](https://github.com/1neptune/ShieldBreak)
 
 ### CVE-2026-70376 (2026-08-05)
 
@@ -8235,11 +8254,7 @@
 
 - [abdugafforov-bobur/CVE-2026-72550-poc](https://github.com/abdugafforov-bobur/CVE-2026-72550-poc)
 
-### CVE-2026-72585 (2026-08-10)
-
-<code>An authorization bypass vulnerability in Grafana through 13.2.0 allows an Editor-role user to delete protected contact points (receivers) without the required alert.notifications.receivers.protected:write permission.
-</code>
-
+### CVE-2026-72585
 - [Nel-droid/CVE-2026-72585-PoC](https://github.com/Nel-droid/CVE-2026-72585-PoC)
 
 ### CVE-2026-72898 (2026-08-10)
@@ -8260,6 +8275,13 @@
 </code>
 
 - [Boreas37/CVE-2026-73034-PoC](https://github.com/Boreas37/CVE-2026-73034-PoC)
+
+### CVE-2026-73292 (2026-08-12)
+
+<code>Semaphore UI is a web interface for managing DevOps tools. Prior to 2.18.21, the /api/users/{id}/password endpoint accepts a cross-site request using the authenticated user's semaphore session cookie without CSRF protection or current-password confirmation, allowing an unauthenticated attacker to change an administrator's or another user's password after user interaction. This issue is fixed in version 2.18.21.
+</code>
+
+- [CamilleGR/CVE-2026-73292](https://github.com/CamilleGR/CVE-2026-73292)
 
 ### CVE-2026-73519 (2026-08-12)
 
@@ -8304,13 +8326,25 @@
 
 - [toanln-cov/CVE-2026-74251](https://github.com/toanln-cov/CVE-2026-74251)
 
-### CVE-2026-74943
+### CVE-2026-74943 (2026-08-18)
+
+<code>Use-after-free in the Graphics: ImageLib component. This vulnerability was fixed in Firefox 154, Firefox ESR 115.39, Firefox ESR 140.14, and Firefox ESR 153.1.
+</code>
+
 - [defineid/Revenant](https://github.com/defineid/Revenant)
 
-### CVE-2026-74945
+### CVE-2026-74945 (2026-08-18)
+
+<code>Information disclosure in the Graphics: Text component. This vulnerability was fixed in Firefox 154, Firefox ESR 115.39, Firefox ESR 140.14, and Firefox ESR 153.1.
+</code>
+
 - [defineid/Palimpsest](https://github.com/defineid/Palimpsest)
 
-### CVE-2026-74970
+### CVE-2026-74970 (2026-08-18)
+
+<code>Site isolation issue in the Graphics component. This vulnerability was fixed in Firefox 154 and Firefox ESR 153.1.
+</code>
+
 - [defineid/Trespasser](https://github.com/defineid/Trespasser)
 
 ### CVE-2026-999999
@@ -20015,7 +20049,7 @@
 <code>NetBox is an open-source infrastructure resource modeling and IP address management platform. A reflected cross-site scripting (XSS) vulnerability exists in versions 2.11.0 through 3.7.x in the ProtectedError handling logic, where object names are included in HTML error messages without proper escaping. This allows user-controlled content to be rendered in the web interface when a delete operation fails due to protected relationships, potentially enabling execution of arbitrary client-side code in the context of a privileged user.
 </code>
 
-- [alkimcoskun/security-advisories](https://github.com/alkimcoskun/security-advisories)
+- [alkimcoskun/CVE-2025-69848-security-advisories](https://github.com/alkimcoskun/CVE-2025-69848-security-advisories)
 
 ### CVE-2025-69906 (2026-02-05)
 
@@ -48057,6 +48091,7 @@
 - [Sp4ceDogy/NPE-CS-V-CVE-2021-1675](https://github.com/Sp4ceDogy/NPE-CS-V-CVE-2021-1675)
 - [DLL00P/CVE-2021-1675](https://github.com/DLL00P/CVE-2021-1675)
 - [ccordeiro/CVE-2021-1675](https://github.com/ccordeiro/CVE-2021-1675)
+- [VelesSecurity/CVE-2021-1675-PrintNightmare-Analysis](https://github.com/VelesSecurity/CVE-2021-1675-PrintNightmare-Analysis)
 
 ### CVE-2021-1678 (2021-01-12)
 
@@ -48695,7 +48730,6 @@
 <code>A local privilege escalation vulnerability was found on polkit's pkexec utility. The pkexec application is a setuid tool designed to allow unprivileged users to run commands as privileged users according predefined policies. The current version of pkexec doesn't handle the calling parameters count correctly and ends trying to execute environment variables as commands. An attacker can leverage this by crafting environment variables in such a way it'll induce pkexec to execute arbitrary code. When successfully executed the attack can cause a local privilege escalation given unprivileged users administrative rights on the target machine.
 </code>
 
-- [berdav/CVE-2021-4034](https://github.com/berdav/CVE-2021-4034)
 - [arthepsy/CVE-2021-4034](https://github.com/arthepsy/CVE-2021-4034)
 - [Y3A/CVE-2021-4034](https://github.com/Y3A/CVE-2021-4034)
 - [ly4k/PwnKit](https://github.com/ly4k/PwnKit)
@@ -58026,6 +58060,7 @@
 - [AleksaZatezalo/CVE-2020-14882](https://github.com/AleksaZatezalo/CVE-2020-14882)
 - [KKC73/weblogic-cve-2020-14882](https://github.com/KKC73/weblogic-cve-2020-14882)
 - [b1g-b33f/CVE-2020-14882](https://github.com/b1g-b33f/CVE-2020-14882)
+- [VelesSecurity/CVE-2020-14882-WebLogic-Analysis](https://github.com/VelesSecurity/CVE-2020-14882-WebLogic-Analysis)
 
 ### CVE-2020-14883 (2020-10-21)
 
@@ -72737,6 +72772,7 @@
 - [FloatingGuy/cve-2015-1805](https://github.com/FloatingGuy/cve-2015-1805)
 - [mobilelinux/iovy_root_research](https://github.com/mobilelinux/iovy_root_research)
 - [ireshchaminda1/Android-Privilege-Escalation-Remote-Access-Vulnerability-CVE-2015-1805](https://github.com/ireshchaminda1/Android-Privilege-Escalation-Remote-Access-Vulnerability-CVE-2015-1805)
+- [valentineus/hp-slate7-root-kit](https://github.com/valentineus/hp-slate7-root-kit)
 
 ### CVE-2015-1855 (2019-11-29)
 
@@ -73645,6 +73681,7 @@
 - [Ryo-Soikutsu/Heartbleed](https://github.com/Ryo-Soikutsu/Heartbleed)
 - [victoriacfigueiredo/heartbleed-lab](https://github.com/victoriacfigueiredo/heartbleed-lab)
 - [tungduongNT/CVE-2014-0160.](https://github.com/tungduongNT/CVE-2014-0160.)
+- [IhsSpotlight/HeartBleed-CVE-2014-0160--SCRIPTS-python3](https://github.com/IhsSpotlight/HeartBleed-CVE-2014-0160--SCRIPTS-python3)
 
 ### CVE-2014-0166 (2014-04-09)
 
