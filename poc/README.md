@@ -2372,6 +2372,13 @@
 - [HORKimhab/CVE-2026-8461](https://github.com/HORKimhab/CVE-2026-8461)
 - [0xBlackash/CVE-2026-8461](https://github.com/0xBlackash/CVE-2026-8461)
 
+### CVE-2026-8467 (2026-05-20)
+
+<code>Code Injection vulnerability in phenixdigital phoenix_storybook allows unauthenticated remote code execution via unsanitized attribute value interpolation in HEEx template generation.\n\nThe psb-assign WebSocket event handler in 'Elixir.PhoenixStorybook.Story.PlaygroundPreviewLive':handle_event/3 accepts arbitrary attribute names and values from unauthenticated clients. These values are passed to 'Elixir.PhoenixStorybook.Helpers.ExtraAssignsHelpers':handle_set_variation_assign/3, which stores them verbatim. When rendering, 'Elixir.PhoenixStorybook.Rendering.ComponentRenderer':attributes_markup/1 interpolates binary attribute values directly into a HEEx template string as name=&quot;&lt;val&gt;&quot; without escaping double quotes or HEEx expression delimiters. An attacker can supply a value containing a closing quote followed by a HEEx expression block (e.g. foo&quot; injected={EXPR} bar=&quot;), which causes EXPR to be treated as an inline Elixir expression. The resulting template is compiled via EEx.compile_string/2 and executed via Code.eval_quoted_with_env/3 with full Kernel imports and no sandbox, giving the attacker arbitrary code execution on the server.\n\nThis issue affects phoenix_storybook from 0.5.0 before 1.1.0.
+</code>
+
+- [HORKimhab/CVE-2026-8467](https://github.com/HORKimhab/CVE-2026-8467)
+
 ### CVE-2026-8508 (2026-08-04)
 
 <code>An improper authentication vulnerability in the &quot;social_login.cgi&quot; CGI program in Zyxel WAX650S firmware versions through 7.10(ABRM.4)C0 could allow an attacker on the WLAN to bypass captive portal authentication.
@@ -3668,6 +3675,13 @@
 - [Nxploited/CVE-2026-18366](https://github.com/Nxploited/CVE-2026-18366)
 - [ghostpels/CVE-2026-18366](https://github.com/ghostpels/CVE-2026-18366)
 
+### CVE-2026-18431 (2026-08-26)
+
+<code>The Avada theme for WordPress is vulnerable to Arbitrary File Write in all versions up to, and including, 7.16 when the Fusion Builder plugin is installed and active in versions up to, and including, 3.16. This is due to a chain of authorization and input validation weaknesses across the two components that makes it possible for unauthenticated attackers to write attacker-controlled files to the server. This can be used to create and execute arbitrary PHP files, resulting in remote code execution and complete site compromise. Successful exploitation requires both Avada and Fusion Builder to be installed and active, as well as certain administrator-authored content to be present.
+</code>
+
+- [HORKimhab/CVE-2026-18431](https://github.com/HORKimhab/CVE-2026-18431)
+
 ### CVE-2026-18504 (2026-08-18)
 
 <code>fastify is a fast and low overhead web framework for Node.js. Versions of fastify before 5.12.1 are affected by a schema validation bypass when a request body schema targets a root primitive value. When the schema validates a top-level primitive such as an integer, Ajv can coerce a JSON string into the expected type during validation, but Fastify does not replace the root request body with the coerced value, so the route handler receives the original unvalidated string. As a result, a request that should have failed validation can reach application logic with a value that does not satisfy the schema, which can undermine integrity and access-control checks that rely on the validated type. Users should upgrade to fastify 5.12.1, which fixes the mismatch. No known workarounds are available.
@@ -3735,6 +3749,7 @@
 - [T0w0T/POC-CVE-2026-18963](https://github.com/T0w0T/POC-CVE-2026-18963)
 - [Red-Darkin/CVE-2026-18963-keycloak](https://github.com/Red-Darkin/CVE-2026-18963-keycloak)
 - [prot0tw/Keycloak_CVE-2026-18963_PoC](https://github.com/prot0tw/Keycloak_CVE-2026-18963_PoC)
+- [BlackHatExploitation/Exploit-For-CVE-2026-18963](https://github.com/BlackHatExploitation/Exploit-For-CVE-2026-18963)
 - [gman0x00/keycloak-CVE-2026-18963](https://github.com/gman0x00/keycloak-CVE-2026-18963)
 - [debugactiveprocess/CVE-2026-18963](https://github.com/debugactiveprocess/CVE-2026-18963)
 
@@ -3769,6 +3784,7 @@
 - [renzi25031469/CVE-2026-19478](https://github.com/renzi25031469/CVE-2026-19478)
 - [n0xdaemon/cve-2026-19478](https://github.com/n0xdaemon/cve-2026-19478)
 - [punitdarji/Gitlab-CVE-2026-19478](https://github.com/punitdarji/Gitlab-CVE-2026-19478)
+- [EQSTLab/CVE-2026-19478](https://github.com/EQSTLab/CVE-2026-19478)
 
 ### CVE-2026-19500 (2026-08-18)
 
@@ -3981,6 +3997,13 @@
 
 - [HORKimhab/CVE-2026-20262](https://github.com/HORKimhab/CVE-2026-20262)
 - [fevar54/CVE-2026-20262-Cisco-Catalyst-SD-WAN-Manager-Arbitrary-File-Write-](https://github.com/fevar54/CVE-2026-20262-Cisco-Catalyst-SD-WAN-Manager-Arbitrary-File-Write-)
+
+### CVE-2026-20303 (2026-08-05)
+
+<code>As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Catalyst SD-WAN engineering team has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-2026-20303 are related to improper input validation issues that are grouped under the Common Weakness Enumeration (CWE) CWE-20.
+</code>
+
+- [HORKimhab/Cisco-CVE-2026-20303-More](https://github.com/HORKimhab/Cisco-CVE-2026-20303-More)
 
 ### CVE-2026-20404 (2026-02-02)
 
@@ -4512,6 +4535,7 @@
 - [gregk4sec/cve-2026-21962](https://github.com/gregk4sec/cve-2026-21962)
 - [naozibuhao/CVE-2026-21962_Java_GUI_Exploit_Tool](https://github.com/naozibuhao/CVE-2026-21962_Java_GUI_Exploit_Tool)
 - [0xBlackash/CVE-2026-21962](https://github.com/0xBlackash/CVE-2026-21962)
+- [zeetee1235/CVE-2026-21962](https://github.com/zeetee1235/CVE-2026-21962)
 
 ### CVE-2026-21978 (2026-01-20)
 
@@ -9012,6 +9036,7 @@
 - [Qurclinc/CVE-2026-38526](https://github.com/Qurclinc/CVE-2026-38526)
 - [CerberusMrXi/KrayinCRM-RCE-Exploit-CVE-2026-38526](https://github.com/CerberusMrXi/KrayinCRM-RCE-Exploit-CVE-2026-38526)
 - [Industri4l-H3ll-Xpl0it3rs/CVE-2026-38526-KrayinCRM-RCE](https://github.com/Industri4l-H3ll-Xpl0it3rs/CVE-2026-38526-KrayinCRM-RCE)
+- [DiegoRivas1/htb-labs-nexus](https://github.com/DiegoRivas1/htb-labs-nexus)
 
 ### CVE-2026-38698
 - [vital-information-resource-under-siege/CVE-2026-38698-and-CVE-2026-38699](https://github.com/vital-information-resource-under-siege/CVE-2026-38698-and-CVE-2026-38699)
@@ -10244,6 +10269,7 @@
 - [soralis0912/CVE-2026-43499-pmg110-root](https://github.com/soralis0912/CVE-2026-43499-pmg110-root)
 - [dnlid/CVE-2026-43499](https://github.com/dnlid/CVE-2026-43499)
 - [WitAqua-tools/Root-My-Device](https://github.com/WitAqua-tools/Root-My-Device)
+- [YuKongA/ghostlock-app](https://github.com/YuKongA/ghostlock-app)
 - [233laoliu/mt6985-CVE-2026-43499](https://github.com/233laoliu/mt6985-CVE-2026-43499)
 - [2932796375github/CVE-2026-43499_OPPO-MT6835](https://github.com/2932796375github/CVE-2026-43499_OPPO-MT6835)
 - [datfooldive/ghostlock-emerald](https://github.com/datfooldive/ghostlock-emerald)
@@ -10297,6 +10323,7 @@
 - [JingMatrix/pixel-ksu-root](https://github.com/JingMatrix/pixel-ksu-root)
 - [sgswzglwlx/vivo-root-build](https://github.com/sgswzglwlx/vivo-root-build)
 - [rsyzee/ghostlock-infinix-hot70](https://github.com/rsyzee/ghostlock-infinix-hot70)
+- [hackyangwen-lgtm/rmg-s9180-fzg1](https://github.com/hackyangwen-lgtm/rmg-s9180-fzg1)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -11206,7 +11233,11 @@
 
 - [realstatus/CVE-2026-47858](https://github.com/realstatus/CVE-2026-47858)
 
-### CVE-2026-47883
+### CVE-2026-47883 (2026-08-27)
+
+<code>UrlHandlerFilter can be vulnerable to an open redirect when configured with very broadly matching patterns. The issue applies to the filter variants in both Spring MVC and Spring WebFlux.\nSpring Framework 7.0.0 - 7.0.8\nSpring Framework 6.2.0 - 6.2.19
+</code>
+
 - [daehyuh/CVE-2026-47883](https://github.com/daehyuh/CVE-2026-47883)
 
 ### CVE-2026-48017 (2026-06-15)
@@ -11232,6 +11263,13 @@
 </code>
 
 - [muslimbek-0x/CVE-2026-48030](https://github.com/muslimbek-0x/CVE-2026-48030)
+
+### CVE-2026-48060 (2026-07-28)
+
+<code>Litestar is an Asynchronous Server Gateway Interface (ASGI) framework. Prior to version 2.20.0, Litestar instances which use a template engine in conjunction with CSRF protection are vulnerable to HTML Injection which can be escalated to Cross Site Scripting due to the contents of the CSRF cookie being excluded from automatic escaping by the template engine when configured inline with documentation recommendations. This issue has been patched in version 2.20.0.
+</code>
+
+- [Blinky-Keys/CVE-2026-48060](https://github.com/Blinky-Keys/CVE-2026-48060)
 
 ### CVE-2026-48095 (2026-06-05)
 
@@ -11831,6 +11869,9 @@
 - [watchtowrlabs/watchTowr-vs-Check-Point-CVE-2026-50751](https://github.com/watchtowrlabs/watchTowr-vs-Check-Point-CVE-2026-50751)
 - [WadesWeaponShed/CheckPoint-CVE-Webscanner](https://github.com/WadesWeaponShed/CheckPoint-CVE-Webscanner)
 
+### CVE-2026-50787
+- [brynax/CVE-2026-50787](https://github.com/brynax/CVE-2026-50787)
+
 ### CVE-2026-50979
 - [bugresearch/CVE-2026-50979](https://github.com/bugresearch/CVE-2026-50979)
 
@@ -12403,6 +12444,7 @@
 - [l0ggg/CVE-2026-55040](https://github.com/l0ggg/CVE-2026-55040)
 - [sfewer-r7/CVE-2026-55040](https://github.com/sfewer-r7/CVE-2026-55040)
 - [zenzue/CVE-2026-55040](https://github.com/zenzue/CVE-2026-55040)
+- [maxprog-svg/CVE-2026-55040-Mass-Exploit](https://github.com/maxprog-svg/CVE-2026-55040-Mass-Exploit)
 
 ### CVE-2026-55168 (2026-08-21)
 
@@ -13871,6 +13913,7 @@
 - [VuxNx/CVE-2026-72898](https://github.com/VuxNx/CVE-2026-72898)
 - [Franc-Zar/CVE-2026-72898-safe-detection](https://github.com/Franc-Zar/CVE-2026-72898-safe-detection)
 - [d-maggipinto/CVE-2026-72898-metabase-sqli](https://github.com/d-maggipinto/CVE-2026-72898-metabase-sqli)
+- [EQSTLab/CVE-2026-72898](https://github.com/EQSTLab/CVE-2026-72898)
 
 ### CVE-2026-73034 (2026-08-11)
 
@@ -13984,6 +14027,7 @@
 ### CVE-2026-75604
 - [rafabd1/CVE-2026-75604-poc](https://github.com/rafabd1/CVE-2026-75604-poc)
 - [HackSpeak/CVE-2026-75604](https://github.com/HackSpeak/CVE-2026-75604)
+- [e4zyy/Project-CVE-2026-75604](https://github.com/e4zyy/Project-CVE-2026-75604)
 
 ### CVE-2026-75616 (2026-08-19)
 
@@ -14051,6 +14095,13 @@
 </code>
 
 - [0xROI/CVE-2026-77113](https://github.com/0xROI/CVE-2026-77113)
+
+### CVE-2026-77542 (2026-08-26)
+
+<code>A malicious actor with access to the network and high privileges could exploit an Improper Input Validation vulnerability found in UID Enterprise Agent to execute a Command Injection on the host device.
+</code>
+
+- [HORKimhab/CVE-Ubiquiti](https://github.com/HORKimhab/CVE-Ubiquiti)
 
 ### CVE-2026-77622
 - [Squ1shification/PNGboomer-CVE-2026-77622](https://github.com/Squ1shification/PNGboomer-CVE-2026-77622)
@@ -16090,9 +16141,9 @@
 - [techcorp/CVE-2025-8088-Exploit](https://github.com/techcorp/CVE-2025-8088-Exploit)
 - [Shinkirou789/Cve-2025-8088-WinRar-vulnerability](https://github.com/Shinkirou789/Cve-2025-8088-WinRar-vulnerability)
 - [hbesljx/CVE-2025-8088-EXP](https://github.com/hbesljx/CVE-2025-8088-EXP)
-- [starfallreverie/winrar-exploit](https://github.com/starfallreverie/winrar-exploit)
 - [papcaii2004/CVE-2025-8088-WinRAR-builder](https://github.com/papcaii2004/CVE-2025-8088-WinRAR-builder)
 - [nuky-alt/CVE-2025-8088](https://github.com/nuky-alt/CVE-2025-8088)
+- [skander1337/winrar-exploit](https://github.com/skander1337/winrar-exploit)
 - [xi0onamdev/WinRAR-CVE-2025-8088-Exploitation-Toolkit](https://github.com/xi0onamdev/WinRAR-CVE-2025-8088-Exploitation-Toolkit)
 - [ilhamrzr/RAR-Anomaly-Inspector](https://github.com/ilhamrzr/RAR-Anomaly-Inspector)
 - [IsmaelCosma/CVE-2025-8088](https://github.com/IsmaelCosma/CVE-2025-8088)
@@ -28450,7 +28501,6 @@
 - [veronimo669/pdf.js-CVE-2024-4367](https://github.com/veronimo669/pdf.js-CVE-2024-4367)
 - [yuimamur/CVE-2024-4367-hands-on](https://github.com/yuimamur/CVE-2024-4367-hands-on)
 - [yuimamur/CVE-2024-4367-hands-on-01](https://github.com/yuimamur/CVE-2024-4367-hands-on-01)
-- [DharmarajPS/pdfjs-cve-2024-4367-poc](https://github.com/DharmarajPS/pdfjs-cve-2024-4367-poc)
 
 ### CVE-2024-4406 (2024-05-02)
 
@@ -43380,7 +43430,6 @@
 - [bryanqb07/CVE-2023-32315](https://github.com/bryanqb07/CVE-2023-32315)
 - [asepsaepdin/CVE-2023-32315](https://github.com/asepsaepdin/CVE-2023-32315)
 - [pulentoski/Explotacion-CVE-2023-32315-Openfire](https://github.com/pulentoski/Explotacion-CVE-2023-32315-Openfire)
-- [shiyingzhencai/CVE-2023-32315-java7-](https://github.com/shiyingzhencai/CVE-2023-32315-java7-)
 
 ### CVE-2023-32353 (2023-06-23)
 
@@ -45110,6 +45159,7 @@
 - [h3xecute/SideCopy-Exploits-CVE-2023-38831](https://github.com/h3xecute/SideCopy-Exploits-CVE-2023-38831)
 - [s4m98/winrar-cve-2023-38831-poc-gen](https://github.com/s4m98/winrar-cve-2023-38831-poc-gen)
 - [xk-mt/WinRAR-Vulnerability-recurrence-tutorial](https://github.com/xk-mt/WinRAR-Vulnerability-recurrence-tutorial)
+- [MyStuffYT/CVE-2023-38831-POC](https://github.com/MyStuffYT/CVE-2023-38831-POC)
 - [SpamixOfficial/CVE-2023-38831](https://github.com/SpamixOfficial/CVE-2023-38831)
 - [r1yaz/winDED](https://github.com/r1yaz/winDED)
 - [youmulijiang/evil-winrar](https://github.com/youmulijiang/evil-winrar)
@@ -58923,6 +58973,7 @@
 </code>
 
 - [wingerbijay/CVE-2021-27876](https://github.com/wingerbijay/CVE-2021-27876)
+- [hyderpwn/CVE-2021-27876-veritas-backup](https://github.com/hyderpwn/CVE-2021-27876-veritas-backup)
 
 ### CVE-2021-27877 (2021-03-01)
 
@@ -81900,6 +81951,13 @@
 - [RenukaSelvar/libunwind_CVE-2015-3239_AfterPatch](https://github.com/RenukaSelvar/libunwind_CVE-2015-3239_AfterPatch)
 - [RenukaSelvar/libunwind_CVE-2015-3239_After](https://github.com/RenukaSelvar/libunwind_CVE-2015-3239_After)
 
+### CVE-2015-3246 (2015-08-11)
+
+<code>libuser before 0.56.13-8 and 0.60 before 0.60-7, as used in the userhelper program in the usermode package, directly modifies /etc/passwd, which allows local users to cause a denial of service (inconsistent file state) by causing an error during the modification. NOTE: this issue can be combined with CVE-2015-3245 to gain privileges.
+</code>
+
+- [HORKimhab/CVE-2015-3246](https://github.com/HORKimhab/CVE-2015-3246)
+
 ### CVE-2015-3256 (2015-10-26)
 
 <code>PolicyKit (aka polkit) before 0.113 allows local users to cause a denial of service (memory corruption and polkitd daemon crash) and possibly gain privileges via unspecified vectors, related to &quot;javascript rule evaluation.&quot;
@@ -82064,6 +82122,13 @@
 - [Ma1Dong/ActiveMQ_CVE-2015-5254](https://github.com/Ma1Dong/ActiveMQ_CVE-2015-5254)
 - [guigui237/Exploitation-de-la-vuln-rabilit-CVE-2015-5254-](https://github.com/guigui237/Exploitation-de-la-vuln-rabilit-CVE-2015-5254-)
 - [Catherines77/ActiveMQ-EXPtools](https://github.com/Catherines77/ActiveMQ-EXPtools)
+
+### CVE-2015-5287 (2015-12-07)
+
+<code>The abrt-hook-ccpp help program in Automatic Bug Reporting Tool (ABRT) before 2.7.1 allows local users with certain permissions to gain privileges via a symlink attack on a file with a predictable name, as demonstrated by /var/tmp/abrt/abrt-hax-coredump or /var/spool/abrt/abrt-hax-coredump.
+</code>
+
+- [HORKimhab/CVE-2015-5287](https://github.com/HORKimhab/CVE-2015-5287)
 
 ### CVE-2015-5347 (2016-04-12)
 
@@ -84516,6 +84581,7 @@
 - [sonalisarkar-2003/FTP-vsFTPD-CVE-2011-2523-VAPT-Report](https://github.com/sonalisarkar-2003/FTP-vsFTPD-CVE-2011-2523-VAPT-Report)
 - [aish19siddiqua-commits/mtechweek_04](https://github.com/aish19siddiqua-commits/mtechweek_04)
 - [rsakthikumar-cmd/metasploitable2-vsftpd-writeup](https://github.com/rsakthikumar-cmd/metasploitable2-vsftpd-writeup)
+- [Gvln-S/CVE-2011-2523](https://github.com/Gvln-S/CVE-2011-2523)
 
 ### CVE-2011-2553
 - [carlosrpastrana/cve-2011-2553](https://github.com/carlosrpastrana/cve-2011-2553)
@@ -84673,6 +84739,7 @@
 - [omarothmann/Embedded-Backdoor-Connection](https://github.com/omarothmann/Embedded-Backdoor-Connection)
 - [asepsaepdin/CVE-2010-1240](https://github.com/asepsaepdin/CVE-2010-1240)
 - [12345qwert123456/CVE-2010-1240](https://github.com/12345qwert123456/CVE-2010-1240)
+- [ocfagb/hacktivity-vulns-exploits-lab](https://github.com/ocfagb/hacktivity-vulns-exploits-lab)
 
 ### CVE-2010-1411 (2010-06-17)
 
@@ -85665,6 +85732,7 @@
 - [nulltrace1336/Metasploitable-2-Distcc-Exploit-via-Kali-Linux-CVE-2004-2687](https://github.com/nulltrace1336/Metasploitable-2-Distcc-Exploit-via-Kali-Linux-CVE-2004-2687)
 - [micheaol/distccd_rce_CVE-2004-2687](https://github.com/micheaol/distccd_rce_CVE-2004-2687)
 - [aish19siddiqua-commits/mtechweek_04](https://github.com/aish19siddiqua-commits/mtechweek_04)
+- [ocfagb/hacktivity-vulns-exploits-lab](https://github.com/ocfagb/hacktivity-vulns-exploits-lab)
 
 ### CVE-2004-6768
 - [yougboiz/Metasploit-CVE-2004-6768](https://github.com/yougboiz/Metasploit-CVE-2004-6768)
