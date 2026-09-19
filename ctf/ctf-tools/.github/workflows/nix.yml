@@ -1,8 +1,8 @@
 name: Nix build & cache
 
-# Builds our own tool derivations (`.#ciTargets`), pushes them to the `ctftools`
-# Cachix cache, and (on non-PR events) builds a per-tool Docker image that
-# installs the tool with Nix.
+# Builds our own tool derivations and locally overridden passthroughs
+# (`.#ciTargets`), pushes them to the `ctftools` Cachix cache, and (on non-PR
+# events) builds a per-tool Docker image that installs the tool with Nix.
 #
 # The nixpkgs passthroughs (nix/passthrough.nix) are not rebuilt here —
 # cache.nixos.org already serves them — but they are not unchecked either: the
@@ -56,6 +56,14 @@ jobs:
         # failure is an eval error naming the attribute and its line in
         # nix/passthrough.nix.
         run: nix eval --raw .#ciPassthroughCheck.x86_64-linux
+      - name: ARM package set evaluates (builds remain local and uncached)
+        # Force every exposed aarch64 package to a drvPath so unsupported
+        # packages cannot break ARM users unnoticed. This is evaluation only:
+        # this job has no authenticated cachix-action and uploads no store path.
+        # The generated cross2/crosstool-ng toolchain fleet is x86_64-only.
+        run: |
+          nix eval --json .#packages.aarch64-linux \
+            --apply 'ps: builtins.mapAttrs (_: p: p.drvPath) ps' >/dev/null
 
   listcheck:
     name: README tool table matches the flake
@@ -116,7 +124,22 @@ jobs:
         run: |
           ./bin/manage-tools list | tee /tmp/tools.txt
           grep -qx pwntools /tmp/tools.txt
-          test "$(wc -l < /tmp/tools.txt)" -gt 50
+          test "$(wc -l < /tmp/tools.txt)" \
+            -eq "$(nix eval --json .#catalogTargets.x86_64-linux | jq length)"
+          if grep -q '^cross2-arm-elf$' /tmp/tools.txt; then
+            exit 1
+          fi
+
+          ./bin/manage-tools list -t | tee /tmp/toolchains.txt
+          grep -qx cross2-arm-elf /tmp/toolchains.txt
+          grep -qx crosstool-ng-arm-none-eabi /tmp/toolchains.txt
+          test "$(wc -l < /tmp/toolchains.txt)" \
+            -eq "$(nix eval --json .#toolchainTargets.x86_64-linux | jq length)"
+      - name: aggregate profiles evaluate
+        run: |
+          nix eval --raw .#packages.x86_64-linux.all.drvPath
+          nix eval --raw .#packages.x86_64-linux.all-toolchains.drvPath
+          nix eval --raw .#packages.x86_64-linux.everything.drvPath
       - name: search
         run: ./bin/manage-tools search stego | grep -qi steg
       - name: install / list -i / uninstall round-trip
@@ -219,6 +242,11 @@ jobs:
     if: ${{ always() && github.event_name != 'pull_request' && needs.tools.result == 'success' }}
     strategy:
       fail-fast: false
+      # Docker Hub rejects the burst from starting every image at once with
+      # HTTP 429 responses, including on authenticated pushes and manifest
+      # tagging. Keep a small number in flight and retry those transient
+      # failures below; BuildKit reuses the completed layers between attempts.
+      max-parallel: 4
       matrix:
         tool: ${{ fromJSON(needs.tools.outputs.tools) }}
     runs-on: ubuntu-latest
@@ -243,18 +271,25 @@ jobs:
           EOF
           echo "NAME=$NAME" >> "$GITHUB_ENV"
           cat Dockerfile
-      - uses: docker/setup-buildx-action@v3
       - uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - uses: docker/setup-buildx-action@v3
       - name: Build & push ctftools/${{ env.NAME }}
-        uses: docker/build-push-action@v6
-        with:
-          context: .
-          push: true
-          tags: |
-            ctftools/${{ env.NAME }}:latest
+        run: |
+          for attempt in 1 2 3 4 5; do
+            if docker buildx build --attest type=provenance,mode=max --push \
+                 --tag "ctftools/${NAME}:latest" .; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 5 ]; then
+              delay=$((15 * 2 ** (attempt - 1)))
+              echo "push attempt $attempt failed; retrying in ${delay}s"
+              sleep "$delay"
+            fi
+          done
+          exit 1
       - name: Tag the dated build (this is what the README badges show)
         # README's `img.shields.io/docker/v/ctftools/<tool>?label=built` badges
         # resolve to the most recently *pushed* tag, so with only `:latest` they
@@ -262,6 +297,16 @@ jobs:
         # after `latest`: listing both in `tags:` above stamps them in the same
         # push with no defined tie-break, and the badge could pick either.
         run: |
-          docker buildx imagetools create \
-            -t "ctftools/${{ env.NAME }}:$(date +%Y-%m-%d)" \
-            "ctftools/${{ env.NAME }}:latest"
+          for attempt in 1 2 3 4 5; do
+            if docker buildx imagetools create \
+                 -t "ctftools/${NAME}:$(date +%Y-%m-%d)" \
+                 "ctftools/${NAME}:latest"; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 5 ]; then
+              delay=$((15 * 2 ** (attempt - 1)))
+              echo "tag attempt $attempt failed; retrying in ${delay}s"
+              sleep "$delay"
+            fi
+          done
+          exit 1
