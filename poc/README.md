@@ -3460,6 +3460,13 @@
 
 - [KuniNogu/drupal-openai-provider-ssrf-cve-2026-13233](https://github.com/KuniNogu/drupal-openai-provider-ssrf-cve-2026-13233)
 
+### CVE-2026-13355 (2026-09-22)
+
+<code>The Meta Box AIO plugin for WordPress is vulnerable to Privilege Escalation to Administrator in versions up to, and including, 3.11.0. This is due to a chained flaw: the populate_via_query_string() function in the mb-frontend-submission component unconditionally overrides the form's target object_id from the GET parameter 'rwmb_frontend_field_object_id' without any authorization check, and Form::process() lacks the user_can_edit() check present in render(), allowing unauthenticated attackers to overwrite the post_content of any page with an arbitrary shortcode via wp_update_post(); the mb-user-profile component then directly trusts the 'role' and 'auto_login' shortcode attributes in the injected [mb_user_profile_register] shortcode with no role validation. This makes it possible for unauthenticated attackers to elevate their privileges to Administrator. The standalone plugins Meta Box Frontend Submission (in versions up to 4.5.6) and Meta Box User Profile (versions up to 3.11.0) are also affected.
+</code>
+
+- [murrez/CVE-2026-13355](https://github.com/murrez/CVE-2026-13355)
+
 ### CVE-2026-13447 (2026-09-05)
 
 <code>The Mstore Api plugin for WordPress is vulnerable to Authentication Bypass via JWT Forgery in versions up to, and including, 4.20.0 This is due to missing cryptographic signature verification in the FirebasePhoneAuthHelper::verify_id_token() function, which decodes and validates Firebase ID token claims (alg, kid, aud, iss) but never calls openssl_verify() or any equivalent to validate the JWT signature against Google's actual public key certificates. This makes it possible for unauthenticated attackers to forge a Firebase Phone Auth JWT signed with a self-generated RSA key pair and impersonate any phone number, resulting in unauthorized access to existing WordPress accounts or creation of new arbitrary accounts.
@@ -4201,6 +4208,13 @@
 </code>
 
 - [HORKimhab/CVE-2026-19650-CVE-2026-19478](https://github.com/HORKimhab/CVE-2026-19650-CVE-2026-19478)
+
+### CVE-2026-19658 (2026-09-22)
+
+<code>The Give Tributes plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.3.1 via deserialization of untrusted input . This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software, which means this vulnerability has no impact unless another plugin or theme containing a POP chain is installed on the site. If a POP chain is present via an additional plugin or theme installed on the target system, it may allow the attacker to perform actions like delete arbitrary files, retrieve sensitive data, or execute code depending on the POP chain present. This vulnerability is only reachable when the &quot;Allow Multiple Recipients&quot; option is enabled for the donation form, as the single-recipient code path applies sanitize_textarea_field() which would neutralize the payload. Exploitation additionally requires the eCard &quot;Custom Message&quot; option to be disabled, which is the plugin default: when it is enabled the personalized message becomes a required field and GiveWP's give_clean() blanks serialized input during validation, causing the donation to be rejected before it is stored.
+</code>
+
+- [murrez/CVE-2026-19658](https://github.com/murrez/CVE-2026-19658)
 
 ### CVE-2026-19679 (2026-08-14)
 
@@ -6233,7 +6247,11 @@
 - [siyad01/agentbox](https://github.com/siyad01/agentbox)
 - [cain66666/openclaw-hardening-check](https://github.com/cain66666/openclaw-hardening-check)
 
-### CVE-2026-25262
+### CVE-2026-25262 (2026-09-22)
+
+<code>Memory corruption while processing a crafted ELF file in the Primary Bootloader.
+</code>
+
 - [shurikgo/cve-2026-25262-sm8450-research](https://github.com/shurikgo/cve-2026-25262-sm8450-research)
 
 ### CVE-2026-25512 (2026-02-04)
@@ -7206,6 +7224,7 @@
 </code>
 
 - [mobilehackinglab/CVE-2026-28576-poc](https://github.com/mobilehackinglab/CVE-2026-28576-poc)
+- [Aayushbankar/cve-2026-28576](https://github.com/Aayushbankar/cve-2026-28576)
 
 ### CVE-2026-28609 (2026-09-08)
 
@@ -11725,7 +11744,6 @@
 - [tchuin2609/YellowKey-Bitlocker](https://github.com/tchuin2609/YellowKey-Bitlocker)
 - [tchuin2609/tchuin2609.github.io](https://github.com/tchuin2609/tchuin2609.github.io)
 - [Neccie/YellowKey-Bitlocker-CVE-2026-45585](https://github.com/Neccie/YellowKey-Bitlocker-CVE-2026-45585)
-- [yellowkeycve2026/YellowKey-BitLocker-CVE-2026-45585](https://github.com/yellowkeycve2026/YellowKey-BitLocker-CVE-2026-45585)
 
 ### CVE-2026-45659 (2026-05-22)
 
@@ -12947,6 +12965,9 @@
 ### CVE-2026-51592
 - [ardakrg/CVE-2026-51592](https://github.com/ardakrg/CVE-2026-51592)
 
+### CVE-2026-51772
+- [sadandbset/CVE-2026-51772-CVE-2026-51773](https://github.com/sadandbset/CVE-2026-51772-CVE-2026-51773)
+
 ### CVE-2026-51788 (2026-09-01)
 
 <code>An issue in cleverange_auth v.0.1.10 allows a remote attacker to cause a denial of service via the account_verification function and the accounts/models.py component
@@ -13178,6 +13199,7 @@
 </code>
 
 - [suominen/CVE-2026-53266](https://github.com/suominen/CVE-2026-53266)
+- [mc493/linux-kernel-zero-day-mitigation-zero-downtime-kernel-defense-](https://github.com/mc493/linux-kernel-zero-day-mitigation-zero-downtime-kernel-defense-)
 
 ### CVE-2026-53359 (2026-07-04)
 
@@ -14150,6 +14172,13 @@
 ### CVE-2026-61578
 - [HORKimhab/CVE-Chamilo-LMS](https://github.com/HORKimhab/CVE-Chamilo-LMS)
 
+### CVE-2026-61628 (2026-09-21)
+
+<code>nginx ignition is a user interface for the nginx web server. Prior to version 2.41.1, `POST /api/users/onboarding/finish` is registered as anonymous (unauthenticated) and creates a user with full ReadWrite admin permissions. Because the handler uses a check-then-act (TOCTOU) pattern between the &quot;onboarding already completed?&quot; check and the user-creation write, with no atomic guard, a remote unauthenticated attacker who can reach an instance in its pre-onboarding state can create an administrator account for themselves — and concurrent requests can create multiple admin accounts in a single race. Version 2.41.1 patches the issue.
+</code>
+
+- [abraxas/CVE-2026-61628](https://github.com/abraxas/CVE-2026-61628)
+
 ### CVE-2026-61797
 - [itres-labs/CVE-2026-61797](https://github.com/itres-labs/CVE-2026-61797)
 
@@ -15070,6 +15099,13 @@
 - [aramosf/CVE-2026-68138](https://github.com/aramosf/CVE-2026-68138)
 - [suominen/CVE-2026-68138](https://github.com/suominen/CVE-2026-68138)
 - [jangkrikkbozz/CVE-2026-68138](https://github.com/jangkrikkbozz/CVE-2026-68138)
+
+### CVE-2026-68376 (2026-08-10)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nsctp: fix auth_hmacs array size in struct sctp_cookie\n\nThe auth_hmacs array in struct sctp_cookie is supposed to store a complete\nSCTP_AUTH_HMAC_ALGO parameter, which consists of a struct sctp_paramhdr\nfollowed by N HMAC identifiers.\n\nHowever, the array size was calculated using an extra 2 bytes instead of\nsizeof(struct sctp_paramhdr), which is 4 bytes. When four HMAC identifiers\nare configured, the HMAC-ALGO parameter stored in the endpoint is larger\nthan the auth_hmacs buffer in the cookie.\n\nAs a result, sctp_association_init() copies beyond the end of auth_hmacs\nwhen initializing the association, corrupting the adjacent auth_chunks\nfield. This can lead to an invalid HMAC identifier being accepted and later\ncause an out-of-bounds read in sctp_auth_get_hmac().\n\nFix the array size calculation by including the full SCTP parameter header\nsize.
+</code>
+
+- [gagaltotal/CVE-2026-68376-Ubuntu-7.0.0-30-Poc](https://github.com/gagaltotal/CVE-2026-68376-Ubuntu-7.0.0-30-Poc)
 
 ### CVE-2026-68398 (2026-08-10)
 
@@ -16412,7 +16448,6 @@
 - [jithinkrishnanrs/gitlab-cve-2026-85706-ioc](https://github.com/jithinkrishnanrs/gitlab-cve-2026-85706-ioc)
 - [0xlyvio/cve-2026-85706-poc-exploit-gitlab](https://github.com/0xlyvio/cve-2026-85706-poc-exploit-gitlab)
 - [gagaltotal/CVE-2026-85706-gitlab-poc](https://github.com/gagaltotal/CVE-2026-85706-gitlab-poc)
-- [brigadeops32/CVE-2026-85706](https://github.com/brigadeops32/CVE-2026-85706)
 - [plur1bu5/gitread](https://github.com/plur1bu5/gitread)
 - [gabrielunknown/CVE-2026-85706](https://github.com/gabrielunknown/CVE-2026-85706)
 - [0xenesbayram/cve-2026-85706](https://github.com/0xenesbayram/cve-2026-85706)
@@ -16628,6 +16663,7 @@
 </code>
 
 - [murrez/HP-HPLIP-Mass-CVE-checker-2026-09-](https://github.com/murrez/HP-HPLIP-Mass-CVE-checker-2026-09-)
+- [Nxploited/CVE-2026-91097-CVE-2026-91106](https://github.com/Nxploited/CVE-2026-91097-CVE-2026-91106)
 
 ### CVE-2026-91843 (2026-09-16)
 
@@ -16674,6 +16710,13 @@
 
 - [Faceless0x7/CVE-2026-93453](https://github.com/Faceless0x7/CVE-2026-93453)
 
+### CVE-2026-93485 (2026-09-18)
+
+<code>Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Automattic WordPress core allows DOM-Based XSS.\n\n\nThis issue affects WordPress versions 7.1 before 7.1.1; 7.0 through 7.0.4; 6.9 through 6.9.7; 6.8 through 6.8.8; 6.7 through 6.7.7; 6.6 through 6.6.7; 6.5 through 6.5.10; 6.4 through 6.4.10; 6.3 through 6.3.10; 6.2 through 6.2.11; 6.1 through 6.1.12; 6.0 through 6.0.14; 5.9 through 5.9.16; 5.8 through 5.8.15; 5.7 through 5.7.17; 5.6 through 5.6.19; 5.5 through 5.5.20; 5.4 through 5.4.21; 5.3 through 5.3.23; 5.2 through 5.2.26; 5.1 through 5.1.24; 5.0 through 5.0.27; 4.9 through 4.9.31; 4.8 through 4.8.30; and 4.7 through 4.7.35.\n\n\n\n\nThe Unauthenticated Stored XSS vulnerability in the WordPress core can be reproduced on a default WordPress installation. Comment moderation is disabled by default, and the requirement for commenters to have a previously approved comment can be bypassed.
+</code>
+
+- [HORKimhab/CVE-2026-93485](https://github.com/HORKimhab/CVE-2026-93485)
+
 ### CVE-2026-93528
 - [muradislamzada/CVE-2026-93528](https://github.com/muradislamzada/CVE-2026-93528)
 
@@ -16683,6 +16726,9 @@
 </code>
 
 - [prince325/CVE-2026-93659-writeup](https://github.com/prince325/CVE-2026-93659-writeup)
+
+### CVE-2026-93674
+- [rmhowe425/POC-CVE-2026-93674](https://github.com/rmhowe425/POC-CVE-2026-93674)
 
 ### CVE-2026-93680
 - [rmhowe425/POC-CVE-2026-93680](https://github.com/rmhowe425/POC-CVE-2026-93680)
@@ -23508,6 +23554,7 @@
 
 - [n1k0oowang/CVE-2025-39964_EXP](https://github.com/n1k0oowang/CVE-2025-39964_EXP)
 - [suominen/CVE-2025-39964](https://github.com/suominen/CVE-2025-39964)
+- [mc493/linux-kernel-zero-day-mitigation-zero-downtime-kernel-defense-](https://github.com/mc493/linux-kernel-zero-day-mitigation-zero-downtime-kernel-defense-)
 
 ### CVE-2025-39965 (2025-10-13)
 
@@ -62340,6 +62387,7 @@
 - [aazhuliang/CVE-2021-31956-EXP](https://github.com/aazhuliang/CVE-2021-31956-EXP)
 - [Y3A/CVE-2021-31956](https://github.com/Y3A/CVE-2021-31956)
 - [hoangprod/CVE-2021-31956-POC](https://github.com/hoangprod/CVE-2021-31956-POC)
+- [DaoshuReal/UAC-Elevation-CVE](https://github.com/DaoshuReal/UAC-Elevation-CVE)
 - [deletehead/Pool-Overflow-CVE-2021-31956](https://github.com/deletehead/Pool-Overflow-CVE-2021-31956)
 
 ### CVE-2021-32099 (2021-05-07)
