@@ -635,6 +635,13 @@
 - [hex0user/CVE-2026-1731](https://github.com/hex0user/CVE-2026-1731)
 - [ridhinva/beyondtrust-rce-scanner](https://github.com/ridhinva/beyondtrust-rce-scanner)
 
+### CVE-2026-1769 (2026-02-06)
+
+<code>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Xerox CentreWare on Windows allows Stored XSS.This issue affects CentreWare: through 7.0.6. \n\nConsider \nupgrading Xerox® CentreWare Web® to v7.2.2.25 via the software available on Xerox.com
+</code>
+
+- [Leox48/CVE-2026-1769-WriteUp](https://github.com/Leox48/CVE-2026-1769-WriteUp)
+
 ### CVE-2026-1801 (2026-02-03)
 
 <code>A flaw was found in libsoup, an HTTP client/server library. This HTTP Request Smuggling vulnerability arises from non-RFC-compliant parsing in the soup_filter_input_stream_read_line() logic, where libsoup accepts malformed chunk headers, such as lone line feed (LF) characters instead of the required carriage return and line feed (CRLF). A remote attacker can exploit this without authentication or user interaction by sending specially crafted chunked requests. This allows libsoup to parse and process multiple HTTP requests from a single network message, potentially leading to information disclosure.
@@ -7355,7 +7362,6 @@
 - [cipher1x1/CVE-2026-29000](https://github.com/cipher1x1/CVE-2026-29000)
 - [jake-young-dev/CVE-2026-29000](https://github.com/jake-young-dev/CVE-2026-29000)
 - [Strikoder-Premium/CVE-2026-29000-pac4j-jwt](https://github.com/Strikoder-Premium/CVE-2026-29000-pac4j-jwt)
-- [ledksv/Principal-HackTheBox](https://github.com/ledksv/Principal-HackTheBox)
 - [zF-tm/CVE-2026-29000](https://github.com/zF-tm/CVE-2026-29000)
 - [tc4dy/CVE-2026-29000-PoC-Exploit](https://github.com/tc4dy/CVE-2026-29000-PoC-Exploit)
 - [c0gnit00/CVE-2026-29000](https://github.com/c0gnit00/CVE-2026-29000)
@@ -16506,6 +16512,7 @@
 </code>
 
 - [bahirul/cve-2026-86060](https://github.com/bahirul/cve-2026-86060)
+- [digiprosec/MicroTrick](https://github.com/digiprosec/MicroTrick)
 
 ### CVE-2026-86218 (2026-09-06)
 
@@ -16514,6 +16521,7 @@
 
 - [HORKimhab/CVE-2026-86218](https://github.com/HORKimhab/CVE-2026-86218)
 - [Udyz/CVE-2026-86218](https://github.com/Udyz/CVE-2026-86218)
+- [super-meuw/CVE-2026-86218](https://github.com/super-meuw/CVE-2026-86218)
 
 ### CVE-2026-86259 (2026-09-06)
 
@@ -16615,7 +16623,11 @@
 - [abraxas/CVE-2026-87902](https://github.com/abraxas/CVE-2026-87902)
 - [vulpecuna/CVE-2026-87902](https://github.com/vulpecuna/CVE-2026-87902)
 - [ressl/cve-2026-87902-poc](https://github.com/ressl/cve-2026-87902-poc)
-- [griisemine/cve-2026-87902-detection](https://github.com/griisemine/cve-2026-87902-detection)
+- [rabakuku/CVE-2026-87902-A-working-PoC-for-WordPress-s-critical-path-traversal](https://github.com/rabakuku/CVE-2026-87902-A-working-PoC-for-WordPress-s-critical-path-traversal)
+- [dinosn/cve-2026-87902-wordpress-lfi-lab](https://github.com/dinosn/cve-2026-87902-wordpress-lfi-lab)
+- [zer0dayf/CVE-2026-87902](https://github.com/zer0dayf/CVE-2026-87902)
+- [Hassham1/CVE-2026-87902](https://github.com/Hassham1/CVE-2026-87902)
+- [ynsmroztas/WPSniper](https://github.com/ynsmroztas/WPSniper)
 
 ### CVE-2026-87930 (2026-09-09)
 
@@ -16700,6 +16712,13 @@
 - [murrez/CVE-2026-90817](https://github.com/murrez/CVE-2026-90817)
 - [ExDev994/CVE-2026-90817](https://github.com/ExDev994/CVE-2026-90817)
 
+### CVE-2026-90847 (2026-09-15)
+
+<code>A vulnerability was determined in EFM ipTIME C200E 1.094. The impacted element is an unknown function of the file iux_set.cgi of the component System Setup. This manipulation causes os command injection. It is possible to initiate the attack remotely. The exploit has been publicly disclosed and may be utilized.
+</code>
+
+- [shlln/CVE-2026-90847](https://github.com/shlln/CVE-2026-90847)
+
 ### CVE-2026-90898 (2026-09-14)
 
 <code>Bifrost registers MCP clients through its management API. A stdio client is a command plus args. Bifrost starts that program in the gateway the moment the client is added. No MCP handshake required.\n\n\n\nThe default is governance.auth_config.is_enabled=false. Auth off means every caller is a local admin. One unauthenticated POST /api/mcp/client is enough to run a program as the Bifrost process user (appuser on the official image).\n\n\n\n transports/v2.1.0 refuses an unauthenticated stdio registration with 403. transports/v2.0.0 still allows it.
@@ -16768,7 +16787,11 @@
 - [HORKimhab/CVE-2026-93485](https://github.com/HORKimhab/CVE-2026-93485)
 - [0xBlackash/CVE-2026-93485](https://github.com/0xBlackash/CVE-2026-93485)
 
-### CVE-2026-93528
+### CVE-2026-93528 (2026-09-23)
+
+<code>The NP Quote Request for WooCommerce WordPress plugin before 2.4.16 does not verify order ownership before rendering an order's details, allowing unauthenticated attackers to view another customer's order using the order's key.
+</code>
+
 - [muradislamzada/CVE-2026-93528](https://github.com/muradislamzada/CVE-2026-93528)
 
 ### CVE-2026-93616 (2026-09-22)
@@ -16777,6 +16800,7 @@
 </code>
 
 - [WadesWeaponShed/CVE-2026-93616_Checks](https://github.com/WadesWeaponShed/CVE-2026-93616_Checks)
+- [Nebula-Consulting-Limited/CVE-2026-93616-PoC](https://github.com/Nebula-Consulting-Limited/CVE-2026-93616-PoC)
 
 ### CVE-2026-93659 (2026-09-18)
 
@@ -16812,6 +16836,13 @@
 
 - [HackSpeak/CVE-2026-94095](https://github.com/HackSpeak/CVE-2026-94095)
 
+### CVE-2026-94127 (2026-09-22)
+
+<code>When a BIG-IP APM access policy and an OAuth profile are configured on a virtual server, specific malicious traffic can lead to remote code execution (RCE). This vulnerability is only present when BIG-IP APM is configured as an OAuth Authorization Server. Deployments using APM strictly as an OAuth Client / Resource Server (without OAuth authorization server profiles configured) are not affected by this vulnerability.\n\nImpact:\nThis vulnerability allows an unauthenticated attacker to perform remote code execution. The BIG-IP system in Appliance mode is also vulnerable. This is a data plane issue; there is no control plane exposure.\n\n \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
+</code>
+
+- [FurkanKAYAPINAR/CVE-2026-94127](https://github.com/FurkanKAYAPINAR/CVE-2026-94127)
+
 ### CVE-2026-94128 (2026-09-21)
 
 <code>A security vulnerability has been detected in BioStar VIVID LED DJ 4.0.2411.1500. This affects the function sub_1105C of the file BS_LED64.sys of the component IOCTL Handler. The manipulation of the argument AssociatedIrp leads to write-what-where condition. Local access is required to approach this attack. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.
@@ -16825,6 +16856,9 @@
 </code>
 
 - [lzty/CVE-2026-94129](https://github.com/lzty/CVE-2026-94129)
+
+### CVE-2026-94545
+- [HORKimhab/CVE-2026-94545](https://github.com/HORKimhab/CVE-2026-94545)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -17802,7 +17836,6 @@
 <code>The Relevanssi – A Better Search plugin for WordPress is vulnerable to time-based SQL Injection via the cats and tags query parameters in all versions up to, and including, 4.24.4 (Free) and &lt;= 2.27.5 (Premium) due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries to already existing queries that can be used to extract sensitive information from the database.
 </code>
 
-- [Nefhara/CVE-2025-4396](https://github.com/Nefhara/CVE-2025-4396)
 - [sup3rDav3/CVE-2025-4396](https://github.com/sup3rDav3/CVE-2025-4396)
 
 ### CVE-2025-4403 (2025-05-09)
@@ -20719,6 +20752,7 @@
 - [securekomodo/CVE-2025-22457](https://github.com/securekomodo/CVE-2025-22457)
 - [TRone-ux/CVE-2025-22457](https://github.com/TRone-ux/CVE-2025-22457)
 - [benmevic/cve-2025-22457](https://github.com/benmevic/cve-2025-22457)
+- [donofly/CVE-2025-22457-vulnserver-lab](https://github.com/donofly/CVE-2025-22457-vulnserver-lab)
 
 ### CVE-2025-22510 (2025-01-09)
 
@@ -21149,7 +21183,6 @@
 - [matesz44/CVE-2025-24367](https://github.com/matesz44/CVE-2025-24367)
 - [ShoshinMaster/CVE-2025-24367](https://github.com/ShoshinMaster/CVE-2025-24367)
 - [dantedansh/CVE-2025-24367-Cacti-Exploit](https://github.com/dantedansh/CVE-2025-24367-Cacti-Exploit)
-- [ledksv/monitorsfour](https://github.com/ledksv/monitorsfour)
 
 ### CVE-2025-24472 (2025-02-11)
 
@@ -24458,7 +24491,6 @@
 - [0xjuarez/CVE-2025-47812](https://github.com/0xjuarez/CVE-2025-47812)
 - [Majdae/CVE-2025-47812-Research](https://github.com/Majdae/CVE-2025-47812-Research)
 - [H3XploR/Exploit_CVE-2025-47812](https://github.com/H3XploR/Exploit_CVE-2025-47812)
-- [ledksv/wingdata](https://github.com/ledksv/wingdata)
 - [0xS4N4TG/CVE-2025-47812](https://github.com/0xS4N4TG/CVE-2025-47812)
 
 ### CVE-2025-47827 (2025-06-05)
@@ -24833,7 +24865,6 @@
 - [4nuxd/CVE-2025-49132](https://github.com/4nuxd/CVE-2025-49132)
 - [V0idW1re/HTB-Pterodactyl-Writeup](https://github.com/V0idW1re/HTB-Pterodactyl-Writeup)
 - [karimelsheikh1/HTB-Pterodactyl-Writeup](https://github.com/karimelsheikh1/HTB-Pterodactyl-Writeup)
-- [ledksv/pterodactyl](https://github.com/ledksv/pterodactyl)
 
 ### CVE-2025-49144 (2025-06-23)
 
@@ -25828,7 +25859,6 @@
 - [tristanqtn/CVE-2025-54123](https://github.com/tristanqtn/CVE-2025-54123)
 - [f4dee-backup/CVE-2025-54123](https://github.com/f4dee-backup/CVE-2025-54123)
 - [davidzzo23/CVE-2025-54123](https://github.com/davidzzo23/CVE-2025-54123)
-- [ledksv/devarea](https://github.com/ledksv/devarea)
 - [0x00phantom-hat/Hoverfly-1.11.3-RCE-CVE-2025-54123-Exploit](https://github.com/0x00phantom-hat/Hoverfly-1.11.3-RCE-CVE-2025-54123-Exploit)
 - [0xk4rth1/CVE-2025-54123](https://github.com/0xk4rth1/CVE-2025-54123)
 
@@ -27829,7 +27859,6 @@
 - [lil0xplorer/CVE-2025-60787_PoC](https://github.com/lil0xplorer/CVE-2025-60787_PoC)
 - [d3vn0mi/CVE-2025-60787-POC](https://github.com/d3vn0mi/CVE-2025-60787-POC)
 - [agent-skywalker/CVE-2025-60787](https://github.com/agent-skywalker/CVE-2025-60787)
-- [ledksv/cctv](https://github.com/ledksv/cctv)
 - [ozcanpng/CVE-2025-60787](https://github.com/ozcanpng/CVE-2025-60787)
 
 ### CVE-2025-60791 (2025-10-27)
@@ -39785,6 +39814,7 @@
 - [NadineElliottCyber/SOC335-CVE-2024-49138-Investigation](https://github.com/NadineElliottCyber/SOC335-CVE-2024-49138-Investigation)
 - [Adisasoc/CVE-2024-49138-SOC-Investigation](https://github.com/Adisasoc/CVE-2024-49138-SOC-Investigation)
 - [FabianCH20/SOC335---CVE-2024-49138-Exploitation-Detected](https://github.com/FabianCH20/SOC335---CVE-2024-49138-Exploitation-Detected)
+- [mohamedbrek/SOC335-CVE-2024-49138-Exploitation-Detected](https://github.com/mohamedbrek/SOC335-CVE-2024-49138-Exploitation-Detected)
 
 ### CVE-2024-49328 (2024-10-20)
 
@@ -40349,7 +40379,6 @@
 - [lnn0v4/sqli-hunter-CVE-2024-51482-PoC](https://github.com/lnn0v4/sqli-hunter-CVE-2024-51482-PoC)
 - [Erhui-Li/CVE-2024-51482-ZoneMinder-CCTV-HTB-Reliable-EXP](https://github.com/Erhui-Li/CVE-2024-51482-ZoneMinder-CCTV-HTB-Reliable-EXP)
 - [0xDaeras/CVE-2024-51482-POC](https://github.com/0xDaeras/CVE-2024-51482-POC)
-- [ledksv/cctv](https://github.com/ledksv/cctv)
 - [c0gnit00/CVE-2024-51482](https://github.com/c0gnit00/CVE-2024-51482)
 
 ### CVE-2024-51567 (2024-10-29)
@@ -48914,7 +48943,6 @@
 - [LunaLynx12/cve-2023-43208-poc](https://github.com/LunaLynx12/cve-2023-43208-poc)
 - [Criz117/CVE-2023-43208-PoC](https://github.com/Criz117/CVE-2023-43208-PoC)
 - [Humberto-pixel/CVE-2023-43208-PoC](https://github.com/Humberto-pixel/CVE-2023-43208-PoC)
-- [ledksv/Interpreter-HackTheBox](https://github.com/ledksv/Interpreter-HackTheBox)
 
 ### CVE-2023-43261 (2023-10-04)
 
@@ -54560,7 +54588,6 @@
 - [Yowise/CVE-2022-26923](https://github.com/Yowise/CVE-2022-26923)
 - [rayngnpc/CVE-2022-26923-rayng](https://github.com/rayngnpc/CVE-2022-26923-rayng)
 - [Eliasdekiniweek/CVE-2022-26923](https://github.com/Eliasdekiniweek/CVE-2022-26923)
-- [Nefhara/CVE-2022-26923](https://github.com/Nefhara/CVE-2022-26923)
 
 ### CVE-2022-26927 (2022-05-10)
 
@@ -58313,7 +58340,6 @@
 - [Shashivanth009/CVE-2022-46364---Apache-CXF-XOP-Include-LFI-PoC](https://github.com/Shashivanth009/CVE-2022-46364---Apache-CXF-XOP-Include-LFI-PoC)
 - [0xmid00/CVE-2022-46364-poc](https://github.com/0xmid00/CVE-2022-46364-poc)
 - [jwsly12/CVE-2022-46364-htb-ctf](https://github.com/jwsly12/CVE-2022-46364-htb-ctf)
-- [ledksv/devarea](https://github.com/ledksv/devarea)
 - [c0gnit00/CVE-2022-46364](https://github.com/c0gnit00/CVE-2022-46364)
 
 ### CVE-2022-46381 (2022-12-13)
@@ -63770,6 +63796,7 @@
 - [nvchungkma/CVE-2021-40444-Microsoft-Office-Word-Remote-Code-Execution-](https://github.com/nvchungkma/CVE-2021-40444-Microsoft-Office-Word-Remote-Code-Execution-)
 - [hqdat809/CVE-2021-40444](https://github.com/hqdat809/CVE-2021-40444)
 - [basim-ahmad/Follina-CVE-and-CVE-2021-40444](https://github.com/basim-ahmad/Follina-CVE-and-CVE-2021-40444)
+- [rankthree/SOC-Detection-T1003.001-CVE-2021-40444](https://github.com/rankthree/SOC-Detection-T1003.001-CVE-2021-40444)
 
 ### CVE-2021-40449 (2021-10-13)
 
@@ -69792,6 +69819,7 @@
 - [Y4er/CVE-2020-14645](https://github.com/Y4er/CVE-2020-14645)
 - [DaBoQuan/CVE-2020-14645](https://github.com/DaBoQuan/CVE-2020-14645)
 - [ChenZIDu/CVE-2020-14645](https://github.com/ChenZIDu/CVE-2020-14645)
+- [jlvsjp/Weblogic_CVE-2020-14645](https://github.com/jlvsjp/Weblogic_CVE-2020-14645)
 - [HYWZ36/CVE-2020-14645-code](https://github.com/HYWZ36/CVE-2020-14645-code)
 - [Schira4396/CVE-2020-14645](https://github.com/Schira4396/CVE-2020-14645)
 
@@ -74247,6 +74275,7 @@
 - [vigneshsrao/CVE-2019-11707](https://github.com/vigneshsrao/CVE-2019-11707)
 - [flabbergastedbd/cve-2019-11707](https://github.com/flabbergastedbd/cve-2019-11707)
 - [CosminGGeorgescu/CVE-2019-11707-PoC](https://github.com/CosminGGeorgescu/CVE-2019-11707-PoC)
+- [G4sp4rCS/CVE-2019-11707-from-an-IonMonkey-type-confusion-to-SYSTEM-](https://github.com/G4sp4rCS/CVE-2019-11707-from-an-IonMonkey-type-confusion-to-SYSTEM-)
 
 ### CVE-2019-11708 (2019-07-23)
 
