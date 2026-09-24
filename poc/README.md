@@ -4109,6 +4109,13 @@
 
 - [abraxas/CVE-2026-19089-WooCommerce-Tyche](https://github.com/abraxas/CVE-2026-19089-WooCommerce-Tyche)
 
+### CVE-2026-19125 (2026-09-23)
+
+<code>The EthPress – Web3 Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 2.3.5. This is due to the verify_login() function in app/Login.php containing a missing return statement in the signature verification failure branch — when Signature::verify2() reports a mismatch, the function only assigns a WP_Error to a local variable and continues executing, causing unconditional fall-through to the login block where Address::log_in() calls wp_set_auth_cookie() regardless of whether the submitted signature is valid. This makes it possible for unauthenticated attackers to log in as any WordPress user who has a linked wallet address — including administrators — by submitting that user's public wallet address alongside an arbitrary well-formed signature, enabling full site takeover.
+</code>
+
+- [Polosss/By-Poloss..-..CVE-2026-19125](https://github.com/Polosss/By-Poloss..-..CVE-2026-19125)
+
 ### CVE-2026-19193 (2026-08-07)
 
 <code>A flaw has been found in Jiangmin Antivirus 21. Impacted is the function MessageNotifyCallback in the library kvcore.sys of the component Minifilter Port. Executing a manipulation can lead to improper access controls. The attack needs to be launched locally. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.
@@ -7005,6 +7012,7 @@
 
 - [0xh7ml/CVE-2026-27626-PoC](https://github.com/0xh7ml/CVE-2026-27626-PoC)
 - [Cobrastrike62/CVE-2026-27626-POC](https://github.com/Cobrastrike62/CVE-2026-27626-POC)
+- [abdelhakimgaferNetworkSec/Enigm-Writeup](https://github.com/abdelhakimgaferNetworkSec/Enigm-Writeup)
 
 ### CVE-2026-27636 (2026-02-25)
 
@@ -11237,6 +11245,7 @@
 - [TheAndersMadsen/humane-aipin-ghostlock](https://github.com/TheAndersMadsen/humane-aipin-ghostlock)
 - [deancyl/s9180-rootmygalaxy](https://github.com/deancyl/s9180-rootmygalaxy)
 - [MKE84/neo8-ghostlock-adaptation](https://github.com/MKE84/neo8-ghostlock-adaptation)
+- [AriyanPegu/ghostlock-app](https://github.com/AriyanPegu/ghostlock-app)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -12844,7 +12853,7 @@
 <code>Use after free in Windows Remote Desktop Services allows an authorized attacker to elevate privileges over a network.
 </code>
 
-- [syxlox/CVE-2026-50369](https://github.com/syxlox/CVE-2026-50369)
+- [Mofarthim/CVE-2026-50369](https://github.com/Mofarthim/CVE-2026-50369)
 
 ### CVE-2026-50402 (2026-07-14)
 
@@ -14241,13 +14250,6 @@
 - [DavidCarliez/cve-2026-62737-lab](https://github.com/DavidCarliez/cve-2026-62737-lab)
 - [loanvui/CVE-2026-62737](https://github.com/loanvui/CVE-2026-62737)
 
-### CVE-2026-62878 (2026-08-11)
-
-<code>Stack-based buffer overflow in Windows DNS allows an unauthorized attacker to execute code over a network.
-</code>
-
-- [nmlz/CVE-2026-62878](https://github.com/nmlz/CVE-2026-62878)
-
 ### CVE-2026-62911 (2026-08-11)
 
 <code>Authentication bypass by capture-replay in Microsoft Exchange Server allows an authorized attacker to elevate privileges over a network.
@@ -14337,6 +14339,7 @@
 - [DeadExpl0it/wp2shell-poc](https://github.com/DeadExpl0it/wp2shell-poc)
 - [Sec-Dan/WP2Shell-Scanner](https://github.com/Sec-Dan/WP2Shell-Scanner)
 - [arvindear/wp2shell-PoC](https://github.com/arvindear/wp2shell-PoC)
+- [fl0ydsec/CVE-2026-63030](https://github.com/fl0ydsec/CVE-2026-63030)
 
 ### CVE-2026-63039 (2026-08-20)
 
@@ -16476,7 +16479,7 @@
 
 ### CVE-2026-85706 (2026-09-12)
 
-<code>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.7 before 19.1.8, 19.2 before 19.2.6, and 19.3 before 19.3.2 that, under certain conditions, an unauthenticated user could have read arbitrary files from the GitLab server due to improper path confinement and missing authentication enforcement in the repository commits API.
+<code>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.7 before 18.11.12, 19.0 before 19.0.9, 19.1 before 19.1.8, 19.2 before 19.2.6, and 19.3 before 19.3.2 that, under certain conditions, an unauthenticated user could have read arbitrary files from the GitLab server due to improper path confinement and missing authentication enforcement in the repository commits API.
 </code>
 
 - [FlowerWitch/CVE-2026-85706_docker_exp](https://github.com/FlowerWitch/CVE-2026-85706_docker_exp)
@@ -16628,6 +16631,10 @@
 - [zer0dayf/CVE-2026-87902](https://github.com/zer0dayf/CVE-2026-87902)
 - [Hassham1/CVE-2026-87902](https://github.com/Hassham1/CVE-2026-87902)
 - [ynsmroztas/WPSniper](https://github.com/ynsmroztas/WPSniper)
+- [bhideki/CVE-2026-87902](https://github.com/bhideki/CVE-2026-87902)
+- [tc4dy/CVE-2026-87902-Toolkit](https://github.com/tc4dy/CVE-2026-87902-Toolkit)
+- [Lutfifakee-Project/CVE-2026-87902](https://github.com/Lutfifakee-Project/CVE-2026-87902)
+- [nextco/wordpress-cve-2026-87902](https://github.com/nextco/wordpress-cve-2026-87902)
 
 ### CVE-2026-87930 (2026-09-09)
 
@@ -16660,6 +16667,13 @@
 
 - [uziii2208/CVE-2026-88899](https://github.com/uziii2208/CVE-2026-88899)
 
+### CVE-2026-88997 (2026-09-23)
+
+<code>The JSM Show Post Metadata WordPress plugin before 4.9.1 does not properly escape a post meta key before outputting it into an inline event-handler attribute in an admin-facing meta box, allowing users with contributor-level access and above to inject arbitrary JavaScript that executes in the session of a higher-privileged user who reviews the affected post.
+</code>
+
+- [pervinzahidli/CVE-2026-88997](https://github.com/pervinzahidli/CVE-2026-88997)
+
 ### CVE-2026-89012 (2026-09-11)
 
 <code>Dolibarr 24.0.0 before 24.0.1 contains a case-sensitive denylist bypass vulnerability in the sqlfilters API query parameter that allows authenticated attackers to recover protected database fields by supplying uppercase variants of denylist-protected field names. Attackers can exploit the case-insensitive database column resolution against the case-sensitive denylist check in the core library to use prefix-matching predicates as a boolean oracle and extract full password hashes for any user account, including administrators.
@@ -16689,6 +16703,7 @@
 
 - [murrez/CVE-2026-89274](https://github.com/murrez/CVE-2026-89274)
 - [Polosss/By-Poloss..-.CVE-2026-89274](https://github.com/Polosss/By-Poloss..-.CVE-2026-89274)
+- [Hassham1/CVE-2026-89274-wp-recipe-maker-poc](https://github.com/Hassham1/CVE-2026-89274-wp-recipe-maker-poc)
 
 ### CVE-2026-90781 (2026-09-13)
 
@@ -16758,6 +16773,9 @@
 
 - [d1n3sh-0x3/CVE-2026-92247](https://github.com/d1n3sh-0x3/CVE-2026-92247)
 
+### CVE-2026-92680
+- [grepstrength/CVE-2026-92680](https://github.com/grepstrength/CVE-2026-92680)
+
 ### CVE-2026-92701 (2026-09-18)
 
 <code>Cocos AI is a confidential computing system for running AI workloads inside trusted execution environments. In versions up to and including 0.8.2, the intra-handshake attested TLS (aTLS) Intel TDX verification path does not copy the expected current-session freshness value into the TDX quote-body policy before quote validation, so structurally valid TDX QuoteV4 Evidence is accepted without checking that its REPORT_DATA field matches the reportData expected for the current session. A relying party using this path can therefore accept Evidence with a mismatched or reused reportData and release application data after the handshake, enabling session-misbinding to an unintended attestation context. The issue is fixed in version 0.9.0.
@@ -16771,6 +16789,13 @@
 </code>
 
 - [cflowsec/CVE-2026-92805](https://github.com/cflowsec/CVE-2026-92805)
+
+### CVE-2026-93349 (2026-09-23)
+
+<code>Frictionless through 5.20.0rc1 contains an OS command injection vulnerability in the explore console command that allows an attacker who supplies a crafted Data Package descriptor to execute arbitrary operating system commands as the user who explores it. Attackers can place shell metacharacters in resource path values within a datapackage.json descriptor, which are passed unsanitized to os.system through a shell, causing arbitrary command execution in the victim's security context when they run the explore command against the untrusted package.
+</code>
+
+- [SaiTeja-Erukude/CVE-2026-93349-frictionless-command-injection](https://github.com/SaiTeja-Erukude/CVE-2026-93349-frictionless-command-injection)
 
 ### CVE-2026-93453 (2026-09-17)
 
@@ -16857,8 +16882,16 @@
 
 - [lzty/CVE-2026-94129](https://github.com/lzty/CVE-2026-94129)
 
+### CVE-2026-94504 (2026-09-22)
+
+<code>Ninja Forms 3.15.3 stores an anonymous non-RTE textarea value and renders it without safe HTML encoding in the legacy submission editor. An attacker can break out of the textarea with stored script. When an Administrator opens the attacker-known direct submission URL, the script runs in the WordPress admin origin.
+</code>
+
+- [cflowsec/cve-2026-94504](https://github.com/cflowsec/cve-2026-94504)
+
 ### CVE-2026-94545
 - [HORKimhab/CVE-2026-94545](https://github.com/HORKimhab/CVE-2026-94545)
+- [Hassham1/CVE-2026-94545-nextjs-og-poc](https://github.com/Hassham1/CVE-2026-94545-nextjs-og-poc)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -37527,6 +37560,7 @@
 - [Spydomain/CVE-2024-37054-MLflow-reverse-shell](https://github.com/Spydomain/CVE-2024-37054-MLflow-reverse-shell)
 - [tristanqtn/CVE-2024-37054](https://github.com/tristanqtn/CVE-2024-37054)
 - [ClearLotus-git/CVE-2024-37054-PoC](https://github.com/ClearLotus-git/CVE-2024-37054-PoC)
+- [BardLaudian/CVE-2024-37054](https://github.com/BardLaudian/CVE-2024-37054)
 
 ### CVE-2024-37081 (2024-06-18)
 
@@ -46264,7 +46298,7 @@
 - [void0red/CVE-2023-32233](https://github.com/void0red/CVE-2023-32233)
 - [Destawell/gemini-2.5-pro-nf-tables-red-teaming](https://github.com/Destawell/gemini-2.5-pro-nf-tables-red-teaming)
 - [Destawell/gemini-2.5-pro-nf-tables-red-teamin](https://github.com/Destawell/gemini-2.5-pro-nf-tables-red-teamin)
-- [BurnSkyup/CVE-2023-32233-reproduction](https://github.com/BurnSkyup/CVE-2023-32233-reproduction)
+- [adeadukagi/CVE-2023-32233-reproduction](https://github.com/adeadukagi/CVE-2023-32233-reproduction)
 
 ### CVE-2023-32235 (2023-05-05)
 
@@ -57316,6 +57350,7 @@
 </code>
 
 - [PLSRcoin/CVE-2022-40769](https://github.com/PLSRcoin/CVE-2022-40769)
+- [artsbykriss/profanity-verifier](https://github.com/artsbykriss/profanity-verifier)
 
 ### CVE-2022-40881 (2022-11-17)
 
@@ -64348,6 +64383,7 @@
 - [GlebUsalt/cybersecurity_portfolio](https://github.com/GlebUsalt/cybersecurity_portfolio)
 - [SANR01/CVE-2021-41773-Exploit-Lab](https://github.com/SANR01/CVE-2021-41773-Exploit-Lab)
 - [abdulrafay25-svg/CVE-2021-41773-Exploit](https://github.com/abdulrafay25-svg/CVE-2021-41773-Exploit)
+- [1833ravikumar-max/CVE-2021-41773-Apache-Path-Traversal-Lab](https://github.com/1833ravikumar-max/CVE-2021-41773-Apache-Path-Traversal-Lab)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -68739,6 +68775,13 @@
 
 - [HoangKien1020/CVE-2020-10239](https://github.com/HoangKien1020/CVE-2020-10239)
 
+### CVE-2020-10257 (2020-03-09)
+
+<code>The ThemeREX Addons plugin before 2020-03-09 for WordPress lacks access control on the /trx_addons/v2/get/sc_layout REST API endpoint, allowing for PHP functions to be executed by any users, because includes/plugin.rest-api.php calls trx_addons_rest_get_sc_layout with an unsafe sc parameter.
+</code>
+
+- [Darkcast/CVE-2020-10257](https://github.com/Darkcast/CVE-2020-10257)
+
 ### CVE-2020-10551 (2020-04-09)
 
 <code>QQBrowser before 10.5.3870.400 installs a Windows service TsService.exe. This file is writable by anyone belonging to the NT AUTHORITY\Authenticated Users group, which includes all local and remote users. This can be abused by local attackers to escalate privileges to NT AUTHORITY\SYSTEM by writing a malicious executable to the location of TsService.
@@ -70038,6 +70081,7 @@
 
 - [stong/CVE-2020-15368](https://github.com/stong/CVE-2020-15368)
 - [R7flex/asrockploit](https://github.com/R7flex/asrockploit)
+- [egorrsp/CVE-2020-15368-AsrDrv103-research](https://github.com/egorrsp/CVE-2020-15368-AsrDrv103-research)
 
 ### CVE-2020-15392 (2020-07-07)
 
