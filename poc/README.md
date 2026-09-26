@@ -1686,6 +1686,7 @@
 </code>
 
 - [HORKimhab/CVE-2026-5430](https://github.com/HORKimhab/CVE-2026-5430)
+- [abraxas/CVE-2026-5430](https://github.com/abraxas/CVE-2026-5430)
 
 ### CVE-2026-5432
 - [George0Papasotiriou/CVE-2026-5432-GraphQL-Batching-Alias-Confusion-SQL-Injection](https://github.com/George0Papasotiriou/CVE-2026-5432-GraphQL-Batching-Alias-Confusion-SQL-Injection)
@@ -3906,6 +3907,13 @@
 - [Superman-L/CVE-2026-16723](https://github.com/Superman-L/CVE-2026-16723)
 - [yym8538/CVE-2026-16723](https://github.com/yym8538/CVE-2026-16723)
 - [ipisav/fastjson-cve](https://github.com/ipisav/fastjson-cve)
+
+### CVE-2026-16764 (2026-07-23)
+
+<code>A vulnerability was identified in OWASP DefectDojo 2.59.0. This issue affects the function UserSerializer of the file dojo/api_v2/serializers.py of the component API/Web. Such manipulation of the argument is_staff leads to improper privilege management. The attack may be performed from remote. The exploit is publicly available and might be used. Upgrading to version 2.58.3 and 3.0.0 is capable of addressing this issue. The name of the patch is 68a272f299d096249fd3ba9c2676bf69012857bf. It is advisable to upgrade the affected component. 2.59.0 was not intended to be released and has been removed.
+</code>
+
+- [hakaioffsec/CVE-2026-16764](https://github.com/hakaioffsec/CVE-2026-16764)
 
 ### CVE-2026-17001
 - [llaytynher/CVE-2026-17001](https://github.com/llaytynher/CVE-2026-17001)
@@ -7253,6 +7261,13 @@
 
 - [EaEa0001/servu-cve-2026-28318-poc](https://github.com/EaEa0001/servu-cve-2026-28318-poc)
 - [BishopFox/CVE-2026-28318-check](https://github.com/BishopFox/CVE-2026-28318-check)
+
+### CVE-2026-28326 (2026-09-17)
+
+<code>SolarWinds Access Rights Manager was reported to be affected by an unauthenticated remote code execution vulnerability. The issue stems from a hardcoded static key.
+</code>
+
+- [BishopFox/CVE-2026-28326-check](https://github.com/BishopFox/CVE-2026-28326-check)
 
 ### CVE-2026-28363 (2026-02-27)
 
@@ -11308,6 +11323,7 @@
 - [pyyyc/honor-6.12.38-43499-research](https://github.com/pyyyc/honor-6.12.38-43499-research)
 - [AthBe1337/CVE-2026-43499-poc](https://github.com/AthBe1337/CVE-2026-43499-poc)
 - [0ch4/ghostlock-mrx-w09](https://github.com/0ch4/ghostlock-mrx-w09)
+- [RELIHR/CVE-2026-43499](https://github.com/RELIHR/CVE-2026-43499)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -12147,6 +12163,13 @@
 </code>
 
 - [oscerd/CVE-2026-46592](https://github.com/oscerd/CVE-2026-46592)
+
+### CVE-2026-46595 (2026-05-22)
+
+<code>Previously, CVE-2024-45337 fixed an authorization bypass for misused ssh server configurations; if any other type of callback is passed other than public key, then the source-address validation would be skipped.
+</code>
+
+- [sdodson/CVE-2026-46595-proof](https://github.com/sdodson/CVE-2026-46595-proof)
 
 ### CVE-2026-46645 (2026-06-10)
 
@@ -13411,10 +13434,18 @@
 ### CVE-2026-53613
 - [mohamedjawady/CVE-2026-53613-poc](https://github.com/mohamedjawady/CVE-2026-53613-poc)
 
-### CVE-2026-53625
+### CVE-2026-53625 (2026-09-25)
+
+<code>GLPI is a free asset and IT management software package. From 0.70 until 10.0.26 and 11.0.8, a technician can manipulate the authtype value through the API to change another user's authentication method. Under configurations using the legacy API REST interface or SSO logins, this can change a super-administrator's authentication method and enable account takeover. This issue is fixed in versions 11.0.8 and 10.0.26.
+</code>
+
 - [7h30th3r0n3/CVE-2026-53625-GLPI-PoC](https://github.com/7h30th3r0n3/CVE-2026-53625-GLPI-PoC)
 
-### CVE-2026-53629
+### CVE-2026-53629 (2026-09-25)
+
+<code>GLPI is a free asset and IT management software package. From 9.4.0 until 10.0.26 and 11.0.8, an attacker with the READ right on logs can craft a URL for the history tab that injects attacker-controlled values into a database query. This permits SQL injection through the history tab endpoint. This issue is fixed in versions 11.0.8 and 10.0.26.
+</code>
+
 - [5kr1pt/glpi-logbleed](https://github.com/5kr1pt/glpi-logbleed)
 
 ### CVE-2026-53647 (2026-07-06)
@@ -14134,6 +14165,7 @@
 
 - [HORKimhab/CVE-2026-59310](https://github.com/HORKimhab/CVE-2026-59310)
 - [BiuTrap/CVE-2026-59310](https://github.com/BiuTrap/CVE-2026-59310)
+- [ChinaRan0/CVE-2026-59310-POC](https://github.com/ChinaRan0/CVE-2026-59310-POC)
 
 ### CVE-2026-59346
 - [0xCyberstan/CVE-2026-59346-POC](https://github.com/0xCyberstan/CVE-2026-59346-POC)
@@ -14309,6 +14341,13 @@
 </code>
 
 - [Rat5ak/CVE-2026-61946-Easy-Appointments-IDOR](https://github.com/Rat5ak/CVE-2026-61946-Easy-Appointments-IDOR)
+
+### CVE-2026-62062 (2026-09-25)
+
+<code>Cross-Site Request Forgery (CSRF) vulnerability in Elementor Website Builder allows Cross Site Request Forgery.\n\nThis issue affects Elementor Website Builder: from n/a through 4.3.1.
+</code>
+
+- [abraxas/CVE-2026-62062](https://github.com/abraxas/CVE-2026-62062)
 
 ### CVE-2026-62183 (2026-07-20)
 
@@ -14540,6 +14579,8 @@
 - [quyicheng03-boop/xiaomi15-dada-cve-2026-64560](https://github.com/quyicheng03-boop/xiaomi15-dada-cve-2026-64560)
 - [RMDycz/K80Pro-miro-CVE-2026-64560](https://github.com/RMDycz/K80Pro-miro-CVE-2026-64560)
 - [a23bc/op13-cve-2026-64560](https://github.com/a23bc/op13-cve-2026-64560)
+- [Become-ILLUSORY/cve-2026-64560-a16](https://github.com/Become-ILLUSORY/cve-2026-64560-a16)
+- [Wangs-official/opace6-cve-2026-64560](https://github.com/Wangs-official/opace6-cve-2026-64560)
 
 ### CVE-2026-64561 (2026-08-04)
 
@@ -14807,6 +14848,7 @@
 </code>
 
 - [HORKimhab/CVE-2026-65660](https://github.com/HORKimhab/CVE-2026-65660)
+- [ShadowForge-Cyber/CVE-2026-65660-Poc](https://github.com/ShadowForge-Cyber/CVE-2026-65660-Poc)
 
 ### CVE-2026-65694 (2026-07-23)
 
@@ -16633,6 +16675,7 @@
 
 - [bahirul/cve-2026-86060](https://github.com/bahirul/cve-2026-86060)
 - [digiprosec/MicroTrick](https://github.com/digiprosec/MicroTrick)
+- [gagaltotal/CVE-2026-mikrotik-poc](https://github.com/gagaltotal/CVE-2026-mikrotik-poc)
 
 ### CVE-2026-86218 (2026-09-06)
 
@@ -16656,6 +16699,13 @@
 </code>
 
 - [Freire007-byte/sentric-core](https://github.com/Freire007-byte/sentric-core)
+
+### CVE-2026-86350 (2026-09-23)
+
+<code>Inconsistent interpretation of HTTP/2 requests ('HTTP Request/Response smuggling') vulnerability in Apache Tomcat caused by a regression in fix for CVE-2026-41293 can trigger request header mix-up.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.22 through 11.0.25, from 10.1.55 through 10.1.59, from 9.0.118 through 9.0.121.\n\n\n\nUsers are recommended to upgrade to version 11.0.26, 10.1.60 or 9.0.122, which fix the issue.
+</code>
+
+- [abraxas/CVE-2026-86350](https://github.com/abraxas/CVE-2026-86350)
 
 ### CVE-2026-86547 (2026-09-09)
 
@@ -16754,8 +16804,9 @@
 - [Lutfifakee-Project/CVE-2026-87902](https://github.com/Lutfifakee-Project/CVE-2026-87902)
 - [nextco/wordpress-cve-2026-87902](https://github.com/nextco/wordpress-cve-2026-87902)
 - [zyphorixofficialmain-lab/cve-2026-87902](https://github.com/zyphorixofficialmain-lab/cve-2026-87902)
-- [khellwan/CVE-2026-87902_PoC](https://github.com/khellwan/CVE-2026-87902_PoC)
+- [crowsec-edtech/CVE-2026-87902](https://github.com/crowsec-edtech/CVE-2026-87902)
 - [joaovicdev/EXPLOIT-CVE-2026-87902](https://github.com/joaovicdev/EXPLOIT-CVE-2026-87902)
+- [SVTagan/WP-CVE-2026-87902](https://github.com/SVTagan/WP-CVE-2026-87902)
 
 ### CVE-2026-87915 (2026-09-18)
 
@@ -16869,6 +16920,7 @@
 - [murrez/CVE-2026-90817](https://github.com/murrez/CVE-2026-90817)
 - [ExDev994/CVE-2026-90817](https://github.com/ExDev994/CVE-2026-90817)
 - [yulisec/CVE-2026-90817](https://github.com/yulisec/CVE-2026-90817)
+- [Farih123/CVE-2026-90817](https://github.com/Farih123/CVE-2026-90817)
 
 ### CVE-2026-90847 (2026-09-15)
 
@@ -17061,6 +17113,14 @@
 </code>
 
 - [d6fault/CVE-2026-95675](https://github.com/d6fault/CVE-2026-95675)
+
+### CVE-2026-96512 (2026-09-23)
+
+<code>A flaw was found in sudo. When sudoers rules use NOTBEFORE or NOTAFTER time-based access restrictions with timestamps that omit the trailing 'Z' timezone indicator, the time evaluation relies on the TZ environment variable inherited from the calling user. Because sudo is a setuid-root program, an unprivileged local user can set TZ to an extreme timezone offset to shift the authorization window by up to approximately 25 hours, causing expired rules to be treated as valid. This allows the user to execute commands outside the intended time window. Authentication is not bypassed; only the time-based authorization check is affected.
+</code>
+
+- [Ermensonx/sudotimewarp-cve-2026-96512-](https://github.com/Ermensonx/sudotimewarp-cve-2026-96512-)
+- [abraxas/CVE-2026-96512](https://github.com/abraxas/CVE-2026-96512)
 
 ### CVE-2026-96515 (2026-09-24)
 
@@ -20837,6 +20897,7 @@
 - [tarunbharathe/Zero-Click-RCE-Incident-Response-CVE-2025-21298](https://github.com/tarunbharathe/Zero-Click-RCE-Incident-Response-CVE-2025-21298)
 - [C-G-creator/LetsDefend-SOC336-Windows-OLE-Zero-Click-RCE-Exploitation-Detected-CVE-2025-21298](https://github.com/C-G-creator/LetsDefend-SOC336-Windows-OLE-Zero-Click-RCE-Exploitation-Detected-CVE-2025-21298)
 - [abc1230940/SOC336-Windows-OLE-Zero-Click-RCE-Exploitation-Detected-CVE-2025-21298](https://github.com/abc1230940/SOC336-Windows-OLE-Zero-Click-RCE-Exploitation-Detected-CVE-2025-21298)
+- [mohamedbrek/SOC336-CVE-2025-21298-Investigation](https://github.com/mohamedbrek/SOC336-CVE-2025-21298-Investigation)
 
 ### CVE-2025-21333 (2025-01-14)
 
@@ -31440,6 +31501,13 @@
 </code>
 
 - [H1ng007/CVE-2024-3640_WafBypass](https://github.com/H1ng007/CVE-2024-3640_WafBypass)
+
+### CVE-2024-3651 (2024-07-07)
+
+<code>A vulnerability was identified in the kjd/idna library, specifically within the `idna.encode()` function, affecting version 3.6. The issue arises from the function's handling of crafted input strings, which can lead to quadratic complexity and consequently, a denial of service condition. This vulnerability is triggered by a crafted input that causes the `idna.encode()` function to process the input with considerable computational load, significantly increasing the processing time in a quadratic manner relative to the input size.
+</code>
+
+- [redhat-tssc-tmm/CVE-2024-3651-exploit](https://github.com/redhat-tssc-tmm/CVE-2024-3651-exploit)
 
 ### CVE-2024-3656 (2024-10-09)
 
@@ -79355,6 +79423,7 @@
 
 - [cved-sources/cve-2018-15877](https://github.com/cved-sources/cve-2018-15877)
 - [Cinnamon1212/CVE-2018-15877-RCE](https://github.com/Cinnamon1212/CVE-2018-15877-RCE)
+- [firasotoom85-droid/wp-plainview-auth-RCE-broken-cookie-to-session-fix](https://github.com/firasotoom85-droid/wp-plainview-auth-RCE-broken-cookie-to-session-fix)
 
 ### CVE-2018-15912 (2018-08-29)
 
@@ -87024,6 +87093,7 @@
 </code>
 
 - [systemslibrarian/crypto-lab-merkle-proofs](https://github.com/systemslibrarian/crypto-lab-merkle-proofs)
+- [condeDeveloper/arvore-merkle](https://github.com/condeDeveloper/arvore-merkle)
 
 ### CVE-2012-2593 (2020-02-06)
 
@@ -87388,6 +87458,7 @@
 - [samirchapagain/metasploit-lab-report](https://github.com/samirchapagain/metasploit-lab-report)
 - [DanReis20/pentest-lab-metasploitable2](https://github.com/DanReis20/pentest-lab-metasploitable2)
 - [rushikesh-a-bhujbal/CVE-2011-2523](https://github.com/rushikesh-a-bhujbal/CVE-2011-2523)
+- [delmag138/NovaShyld_Task_3](https://github.com/delmag138/NovaShyld_Task_3)
 
 ### CVE-2011-2553
 - [carlosrpastrana/cve-2011-2553](https://github.com/carlosrpastrana/cve-2011-2553)
@@ -88238,6 +88309,7 @@
 - [EthicalHackingLabs/metasploitable2-exploitation-metasploit](https://github.com/EthicalHackingLabs/metasploitable2-exploitation-metasploit)
 - [Mboatella25/metasploitable-pentest-lab](https://github.com/Mboatella25/metasploitable-pentest-lab)
 - [ronankongala/metasploit-pentest-report](https://github.com/ronankongala/metasploit-pentest-report)
+- [rushikesh-a-bhujbal/CVE-2007-2447](https://github.com/rushikesh-a-bhujbal/CVE-2007-2447)
 
 ### CVE-2007-3280 (2007-06-19)
 
