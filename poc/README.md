@@ -5744,6 +5744,7 @@
 - [Mluex0/CVE-2026-23744-PoC](https://github.com/Mluex0/CVE-2026-23744-PoC)
 - [sonnelon/CVE-2026-23744-PoC](https://github.com/sonnelon/CVE-2026-23744-PoC)
 - [itsC1SCO/mcpjam-to-root](https://github.com/itsC1SCO/mcpjam-to-root)
+- [wvverez/CVE-2026-23744](https://github.com/wvverez/CVE-2026-23744)
 
 ### CVE-2026-23745 (2026-01-16)
 
@@ -10503,6 +10504,7 @@
 - [ZeroDayVPN/CVE-2026-41089-Netlogon](https://github.com/ZeroDayVPN/CVE-2026-41089-Netlogon)
 - [SyntaxMethod/CVE-2026-41089-Netlogon-RCE-PoC](https://github.com/SyntaxMethod/CVE-2026-41089-Netlogon-RCE-PoC)
 - [Gillarchnganasan2735/CVE-2026-41089-Netlogon-RCE-PoC](https://github.com/Gillarchnganasan2735/CVE-2026-41089-Netlogon-RCE-PoC)
+- [1posix/CVE-2026-41089-POC](https://github.com/1posix/CVE-2026-41089-POC)
 
 ### CVE-2026-41091 (2026-05-20)
 
@@ -10788,6 +10790,7 @@
 - [0xgh057r3c0n/CVE-2026-41940](https://github.com/0xgh057r3c0n/CVE-2026-41940)
 - [Xrzmodz444/cve-2026-41940-PoC-Linux](https://github.com/Xrzmodz444/cve-2026-41940-PoC-Linux)
 - [yasouxken/cve-2026-41940-PoC](https://github.com/yasouxken/cve-2026-41940-PoC)
+- [hitechcloud-vietnam/cve-2026-41940-PoC](https://github.com/hitechcloud-vietnam/cve-2026-41940-PoC)
 
 ### CVE-2026-42031 (2026-05-13)
 
@@ -11345,7 +11348,6 @@
 - [wonjj6768/Lenovo-TB365FC-GhostLock-CVE-2026-43499](https://github.com/wonjj6768/Lenovo-TB365FC-GhostLock-CVE-2026-43499)
 - [AriyanPegu/ghostlock-app](https://github.com/AriyanPegu/ghostlock-app)
 - [pyyyc/honor-6.12.38-43499-research](https://github.com/pyyyc/honor-6.12.38-43499-research)
-- [AthBe1337/CVE-2026-43499-poc](https://github.com/AthBe1337/CVE-2026-43499-poc)
 - [0ch4/ghostlock-mrx-w09](https://github.com/0ch4/ghostlock-mrx-w09)
 - [RELIHR/CVE-2026-43499](https://github.com/RELIHR/CVE-2026-43499)
 - [WitAqua-tools/Root-My-Device](https://github.com/WitAqua-tools/Root-My-Device)
@@ -11461,6 +11463,7 @@
 </code>
 
 - [Malwation/CVE-2026-43786](https://github.com/Malwation/CVE-2026-43786)
+- [0xBlackash/CVE-2026-43786](https://github.com/0xBlackash/CVE-2026-43786)
 
 ### CVE-2026-43813 (2026-07-27)
 
@@ -13382,7 +13385,6 @@
 </code>
 
 - [suominen/CVE-2026-53266](https://github.com/suominen/CVE-2026-53266)
-- [mc493/linux-kernel-zero-day-mitigation-zero-downtime-kernel-defense-](https://github.com/mc493/linux-kernel-zero-day-mitigation-zero-downtime-kernel-defense-)
 
 ### CVE-2026-53359 (2026-07-04)
 
@@ -14355,6 +14357,13 @@
 
 - [shinthink/CVE-2026-61424](https://github.com/shinthink/CVE-2026-61424)
 
+### CVE-2026-61500 (2026-07-13)
+
+<code>Rejetto HFS 3.0.0 through 3.2.0 derives its session-cookie signing key from the non-cryptographic Math.random() generator and discloses outputs of the same generator to unauthenticated clients during login. A remote attacker can collect a small number of login responses, reconstruct the generator's state, recover the signing key, and forge a valid administrator session cookie, leading to full administrative access and remote code execution via the server_code configuration feature.
+</code>
+
+- [aramosf/CVE-2026-61500](https://github.com/aramosf/CVE-2026-61500)
+
 ### CVE-2026-61511 (2026-07-27)
 
 <code>vBulletin 5.x through 5.7.5 and 6.x through 6.2.1 contains an eval injection vulnerability in the vB5_Template_Runtime::runMaths() method within the template runtime that allows unauthenticated remote attackers to execute arbitrary PHP code by supplying crafted input through the pagenav[pagenumber] parameter. Attackers can exploit the insufficiently restrictive regex filter by using phpfuck-style encoding with permitted characters to inject and execute arbitrary PHP code via the unauthenticated ajax/render template route without any authentication.
@@ -14521,6 +14530,7 @@
 - [Sec-Dan/WP2Shell-Scanner](https://github.com/Sec-Dan/WP2Shell-Scanner)
 - [arvindear/wp2shell-PoC](https://github.com/arvindear/wp2shell-PoC)
 - [fl0ydsec/CVE-2026-63030](https://github.com/fl0ydsec/CVE-2026-63030)
+- [langz337/CVE-2026-63030](https://github.com/langz337/CVE-2026-63030)
 
 ### CVE-2026-63039 (2026-08-20)
 
@@ -16566,6 +16576,13 @@
 
 - [Hunt-Benito/the-key-ships-with-the-lock-cve-2026-82876-phison-s11-ssd-firmware-signature-bypass](https://github.com/Hunt-Benito/the-key-ships-with-the-lock-cve-2026-82876-phison-s11-ssd-firmware-signature-bypass)
 
+### CVE-2026-82901 (2026-09-26)
+
+<code>The Ultra Addons for Contact Form 7 plugin for WordPress is vulnerable to Arbitrary File Upload due to insufficient file type validation in the 'uacf7_wpcf7_mail_components' function in all versions up to, and including, 3.5.50. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible. Note: This is only exploitable when the plugin's PDF Generator module is enabled, which is disabled by default.
+</code>
+
+- [murrez/CVE-2026-82901](https://github.com/murrez/CVE-2026-82901)
+
 ### CVE-2026-83548 (2026-09-01)
 
 <code>A Pre-authentication SSRF vulnerability exists in the SMA1000 Appliance Work Place interface due to an unintended alternate access path. A remote unauthenticated attacker could potentially exploit this vulnerability to gain unauthorized access to sensitive functionality and perform unauthorized operations.
@@ -17112,6 +17129,13 @@
 ### CVE-2026-93680
 - [rmhowe425/POC-CVE-2026-93680](https://github.com/rmhowe425/POC-CVE-2026-93680)
 
+### CVE-2026-93834 (2026-09-25)
+
+<code>A use-after-free vulnerability was found in QEMU's 9pfs subsystem. A race condition between the main thread and a worker thread when processing concurrent Tlcreate and Twalk requests allows a malicious guest user to craft a fid path containing stale heap data, bypassing directory traversal restrictions and escaping the shared directory boundary. This can lead to arbitrary host file read/write and code execution (VM escape) as the QEMU process user.
+</code>
+
+- [suominen/CVE-2026-93834](https://github.com/suominen/CVE-2026-93834)
+
 ### CVE-2026-93958 (2026-09-20)
 
 <code>A vulnerability was found in D-Link R95 BE9500_1.00.16. This vulnerability affects the function system of the file /bin/ssi of the component DHMAPI. The manipulation of the argument NTPServer results in os command injection. The attack can be executed remotely. The exploit has been made public and could be used.
@@ -17154,6 +17178,20 @@
 </code>
 
 - [lzty/CVE-2026-94129](https://github.com/lzty/CVE-2026-94129)
+
+### CVE-2026-94130 (2026-09-26)
+
+<code>Joomla Extension - joomlaboat.com - Unauthenticated SQL injection in YouTube Gallery extension &lt; 5.7.3 - An SQL injection vulnerability in video search functionality and sorting allowed attackers to inject SQL commands in read queries.
+</code>
+
+- [murrez/CVE-2026-94130](https://github.com/murrez/CVE-2026-94130)
+
+### CVE-2026-94132 (2026-09-26)
+
+<code>Joomla Extension - acymailing.com - Remote Code Execution vulnerability in mailbox action feature in AcyMailing Enterprise extension &lt; 11.1.0 - MIME parts of incoming emails were saved to media/com_acym/upload/ with no extension check, so anyone who could email the monitored mailbox could write a PHP file into the web root.
+</code>
+
+- [murrez/CVE-2026-94132](https://github.com/murrez/CVE-2026-94132)
 
 ### CVE-2026-94504 (2026-09-22)
 
@@ -17201,6 +17239,28 @@
 </code>
 
 - [rafabd1/VectorFreed](https://github.com/rafabd1/VectorFreed)
+
+### CVE-2026-97160 (2026-09-26)
+
+<code>Joomla Extension - lomart.fr - Authenticated, privileged PHP command injection in UP plugin extension 5.0.0-5.2.0, 6.0.0-6.0.29
+</code>
+
+- [murrez/CVE-2026-97160](https://github.com/murrez/CVE-2026-97160)
+
+### CVE-2026-97161 (2026-09-26)
+
+<code>Joomla Extension - lomart.fr - Various path traversal / file access vectors in UP plugin extension 5.0.0-5.2.0, 6.0.0-6.0.29
+</code>
+
+- [murrez/CVE-2026-97161](https://github.com/murrez/CVE-2026-97161)
+
+### CVE-2026-97163 (2026-09-26)
+
+<code>Joomla Extension - lomart.fr - Unauthenticated remote code installation in UP plugin extension 5.0.0-5.2.0, 6.0.0-6.0.29
+</code>
+
+- [qeize/cve-2026-97163-payload](https://github.com/qeize/cve-2026-97163-payload)
+- [murrez/CVE-2026-97163](https://github.com/murrez/CVE-2026-97163)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -23992,7 +24052,6 @@
 
 - [n1k0oowang/CVE-2025-39964_EXP](https://github.com/n1k0oowang/CVE-2025-39964_EXP)
 - [suominen/CVE-2025-39964](https://github.com/suominen/CVE-2025-39964)
-- [mc493/linux-kernel-zero-day-mitigation-zero-downtime-kernel-defense-](https://github.com/mc493/linux-kernel-zero-day-mitigation-zero-downtime-kernel-defense-)
 
 ### CVE-2025-39965 (2025-10-13)
 
@@ -25101,13 +25160,6 @@
 ### CVE-2025-48932
 - [XploitGh0st/CVE-2025-48932---exploit](https://github.com/XploitGh0st/CVE-2025-48932---exploit)
 - [CerberusMrXi/CVE-2025-48932-Invision-Community-SQLi-Exploit](https://github.com/CerberusMrXi/CVE-2025-48932-Invision-Community-SQLi-Exploit)
-
-### CVE-2025-48939 (2025-07-03)
-
-<code>tarteaucitron.js is a compliant and accessible cookie banner. Prior to version 1.22.0, a vulnerability was identified in tarteaucitron.js where document.currentScript was accessed without verifying that it referenced an actual &lt;script&gt; element. If an attacker injected an HTML element, it could clobber the document.currentScript property. This causes the script to resolve incorrectly to an element instead of the &lt;script&gt; tag, leading to unexpected behavior or failure to load the script path correctly. This issue arises because in some browser environments, named DOM elements become properties on the global document object. An attacker with control over the HTML could exploit this to change the CDN domain of tarteaucitron. This issue has been patched in version 1.22.0.
-</code>
-
-- [NymiiTechTips/CVE-2025-48939](https://github.com/NymiiTechTips/CVE-2025-48939)
 
 ### CVE-2025-48976 (2025-06-16)
 
@@ -65982,6 +66034,7 @@
 - [KalidouLabghaly/log4shell-exploitation-detection](https://github.com/KalidouLabghaly/log4shell-exploitation-detection)
 - [rh-rahulshetty/log4shell-CVE-2021-44228](https://github.com/rh-rahulshetty/log4shell-CVE-2021-44228)
 - [mcpmark-eval-liuhezi/log4shell-audit](https://github.com/mcpmark-eval-liuhezi/log4shell-audit)
+- [Muskann02/cve-2021-44228-lab](https://github.com/Muskann02/cve-2021-44228-lab)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -70038,6 +70091,7 @@
 
 - [JackHars/cve-2020-14008](https://github.com/JackHars/cve-2020-14008)
 - [0x0d3ad/CVE-2020-14008](https://github.com/0x0d3ad/CVE-2020-14008)
+- [raflesiait/CVE-2020-14008](https://github.com/raflesiait/CVE-2020-14008)
 
 ### CVE-2020-14064 (2020-07-15)
 
