@@ -2491,6 +2491,7 @@
 - [watchtowrlabs/watchTowr-vs-Citrix-Netscaler-PreAuth-RCE-CVE-2026-8452](https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-PreAuth-RCE-CVE-2026-8452)
 - [BishopFox/CVE-2026-8452-check](https://github.com/BishopFox/CVE-2026-8452-check)
 - [maxprog-svg/CitrixBleedCVE-2026-8452-2025-5777](https://github.com/maxprog-svg/CitrixBleedCVE-2026-8452-2025-5777)
+- [techupdate24/citrix-netscaler-cve-2026-8452-rce](https://github.com/techupdate24/citrix-netscaler-cve-2026-8452-rce)
 
 ### CVE-2026-8461 (2026-06-18)
 
@@ -2523,6 +2524,13 @@
 </code>
 
 - [itzmetanjim/cve-2026-8697](https://github.com/itzmetanjim/cve-2026-8697)
+
+### CVE-2026-8712 (2026-09-01)
+
+<code>Wyoming before 1.10.2 contains a server-side request forgery vulnerability that allows unauthenticated attackers with network access to force outbound connections to arbitrary targets by supplying a malicious `uri` query parameter to the HTTP API. Attackers can pass arbitrary `tcp://` or `unix://` URIs to affected endpoints including /api/info, /api/speech-to-text, and /api/text-to-speech to override the server-configured backend and redirect connections to attacker-chosen hosts.
+</code>
+
+- [rahulreddykarne/CVE-2026-8712-Wyoming](https://github.com/rahulreddykarne/CVE-2026-8712-Wyoming)
 
 ### CVE-2026-8713 (2026-06-19)
 
@@ -3317,6 +3325,7 @@
 
 - [murrez/CVE-2026-12227](https://github.com/murrez/CVE-2026-12227)
 - [Hassham1/CVE-2026-12227-visualcomposer-lfi-poc](https://github.com/Hassham1/CVE-2026-12227-visualcomposer-lfi-poc)
+- [be-keb/CVE-2026-12227](https://github.com/be-keb/CVE-2026-12227)
 
 ### CVE-2026-12243
 - [morzelowski/CVE-2026-12243-NLTK-PoC](https://github.com/morzelowski/CVE-2026-12243-NLTK-PoC)
@@ -5744,7 +5753,6 @@
 - [Mluex0/CVE-2026-23744-PoC](https://github.com/Mluex0/CVE-2026-23744-PoC)
 - [sonnelon/CVE-2026-23744-PoC](https://github.com/sonnelon/CVE-2026-23744-PoC)
 - [itsC1SCO/mcpjam-to-root](https://github.com/itsC1SCO/mcpjam-to-root)
-- [wvverez/CVE-2026-23744](https://github.com/wvverez/CVE-2026-23744)
 
 ### CVE-2026-23745 (2026-01-16)
 
@@ -7352,6 +7360,13 @@
 </code>
 
 - [oscerd/CVE-2026-28672](https://github.com/oscerd/CVE-2026-28672)
+
+### CVE-2026-28695 (2026-03-04)
+
+<code>Craft is a content management system (CMS). There is an authenticated admin RCE in Craft CMS 5.8.21 via Server-Side Template Injection using the create() Twig function combined with a Symfony Process gadget chain. The create() Twig function exposes Craft::createObject(), which allows instantiation of arbitrary PHP classes with constructor arguments. Combined with the bundled symfony/process dependency, this enables RCE. This bypasses the fix implemented for CVE-2025-57811 (patched in 5.8.7). This vulnerability is fixed in 5.9.0-beta.1 and 4.17.0-beta.1.
+</code>
+
+- [gbuyssens/CVE-2026-28695-craft-rce-bypass](https://github.com/gbuyssens/CVE-2026-28695-craft-rce-bypass)
 
 ### CVE-2026-28699 (2026-07-03)
 
@@ -9354,6 +9369,8 @@
 </code>
 
 - [HORKimhab/CVE-2026-34990](https://github.com/HORKimhab/CVE-2026-34990)
+- [0xc4rc3l/CVE-2026-34990-poc](https://github.com/0xc4rc3l/CVE-2026-34990-poc)
+- [gbuyssens/CVE-2026-34990](https://github.com/gbuyssens/CVE-2026-34990)
 
 ### CVE-2026-35029 (2026-04-06)
 
@@ -11507,6 +11524,13 @@
 
 - [Boreas37/CVE-2026-43914-PoC](https://github.com/Boreas37/CVE-2026-43914-PoC)
 
+### CVE-2026-44011 (2026-05-12)
+
+<code>Craft CMS is a content management system (CMS). From 4.0.0 to before 4.17.12 and 5.9.18, Craft CMS which contains an input-handling flaw in a Yii object creation path that let any authenticated user inject malicious configuration and execute arbitrary commands on the server. The request-controlled condition field layouts data is converted into a live FieldLayout object without a Component::cleanseConfig() boundary. Because Craft configures models before parent::__construct(), attacker-controlled special config keys can take effect during object creation, and FieldLayout initialization then triggers a same-request event. This vulnerability is fixed in 4.17.12 and 5.9.18.
+</code>
+
+- [4xura/CVE-2026-44011-craftcms-auth-rce](https://github.com/4xura/CVE-2026-44011-craftcms-auth-rce)
+
 ### CVE-2026-44024 (2026-07-08)
 
 <code>Fluentd collects events from various data sources and writes them to files, RDBMS, NoSQL, IaaS, SaaS, Hadoop and so on. Prior to 1.19.3, Fluentd allows dynamically constructing file paths using the ${tag} placeholder, and insufficient validation of ${tag} in file configurations such as the path parameter of the out_file plugin allows attackers sending untrusted tags containing path traversal characters to write or overwrite arbitrary files and potentially achieve remote code execution. This issue is fixed in version 1.19.3.
@@ -11580,6 +11604,13 @@
 </code>
 
 - [ZemarKhos/CVE-2026-44403-WingFTP-v8.1.2-POC-Exploit](https://github.com/ZemarKhos/CVE-2026-44403-WingFTP-v8.1.2-POC-Exploit)
+
+### CVE-2026-44431 (2026-05-13)
+
+<code>urllib3 is an HTTP client library for Python. From 1.23 to before 2.7.0, cross-origin redirects followed from the low-level API via ProxyManager.connection_from_url().urlopen(..., assert_same_host=False) still forward these sensitive headers. This vulnerability is fixed in 2.7.0.
+</code>
+
+- [SSH-PuR66/cve-replay](https://github.com/SSH-PuR66/cve-replay)
 
 ### CVE-2026-44438
 - [llaytynher/CVE-2026-44438](https://github.com/llaytynher/CVE-2026-44438)
@@ -11890,6 +11921,7 @@
 - [tchuin2609/YellowKey-Bitlocker](https://github.com/tchuin2609/YellowKey-Bitlocker)
 - [tchuin2609/tchuin2609.github.io](https://github.com/tchuin2609/tchuin2609.github.io)
 - [Neccie/YellowKey-Bitlocker-CVE-2026-45585](https://github.com/Neccie/YellowKey-Bitlocker-CVE-2026-45585)
+- [YellowKeyBitLocker-CVE/YellowKey-BitLocker-CVE-2026-45585](https://github.com/YellowKeyBitLocker-CVE/YellowKey-BitLocker-CVE-2026-45585)
 
 ### CVE-2026-45659 (2026-05-22)
 
@@ -12585,6 +12617,7 @@
 </code>
 
 - [murrez/CVE-2026-48842](https://github.com/murrez/CVE-2026-48842)
+- [4minx/CVE-2026-48842](https://github.com/4minx/CVE-2026-48842)
 
 ### CVE-2026-48849 (2026-05-25)
 
@@ -14531,6 +14564,7 @@
 - [arvindear/wp2shell-PoC](https://github.com/arvindear/wp2shell-PoC)
 - [fl0ydsec/CVE-2026-63030](https://github.com/fl0ydsec/CVE-2026-63030)
 - [langz337/CVE-2026-63030](https://github.com/langz337/CVE-2026-63030)
+- [jed-parsec/CVE-2026-63030-60137-wp2shell-lab](https://github.com/jed-parsec/CVE-2026-63030-60137-wp2shell-lab)
 
 ### CVE-2026-63039 (2026-08-20)
 
@@ -15212,6 +15246,7 @@
 </code>
 
 - [HackSpeak/CVE-2026-67279](https://github.com/HackSpeak/CVE-2026-67279)
+- [tc4dy/CVE-2026-67279-86060-Toolkit](https://github.com/tc4dy/CVE-2026-67279-86060-Toolkit)
 
 ### CVE-2026-67340 (2026-08-01)
 
@@ -16732,7 +16767,7 @@
 - [gagaltotal/CVE-2026-85706-gitlab-poc](https://github.com/gagaltotal/CVE-2026-85706-gitlab-poc)
 - [plur1bu5/gitread](https://github.com/plur1bu5/gitread)
 - [gabrielunknown/CVE-2026-85706](https://github.com/gabrielunknown/CVE-2026-85706)
-- [0xenesbayram/cve-2026-85706](https://github.com/0xenesbayram/cve-2026-85706)
+- [unh00k3d/cve-2026-85706](https://github.com/unh00k3d/cve-2026-85706)
 - [tc4dy/CVE-2026-85706-PoC-Toolkit](https://github.com/tc4dy/CVE-2026-85706-PoC-Toolkit)
 
 ### CVE-2026-85721 (2026-09-17)
@@ -16889,6 +16924,8 @@
 - [joaovicdev/EXPLOIT-CVE-2026-87902](https://github.com/joaovicdev/EXPLOIT-CVE-2026-87902)
 - [SVTagan/WP-CVE-2026-87902](https://github.com/SVTagan/WP-CVE-2026-87902)
 - [itskill-jp/wordpress-upgrade-check](https://github.com/itskill-jp/wordpress-upgrade-check)
+- [rwxrwxs/CVE-2026-87902](https://github.com/rwxrwxs/CVE-2026-87902)
+- [langz337/CVE-2026-87902](https://github.com/langz337/CVE-2026-87902)
 
 ### CVE-2026-87915 (2026-09-18)
 
@@ -17084,6 +17121,7 @@
 </code>
 
 - [murrez/CVE-2026-93399](https://github.com/murrez/CVE-2026-93399)
+- [josemour8/CVE-2026-93399](https://github.com/josemour8/CVE-2026-93399)
 
 ### CVE-2026-93453 (2026-09-17)
 
@@ -17261,6 +17299,20 @@
 
 - [qeize/cve-2026-97163-payload](https://github.com/qeize/cve-2026-97163-payload)
 - [murrez/CVE-2026-97163](https://github.com/murrez/CVE-2026-97163)
+
+### CVE-2026-100740 (2026-09-27)
+
+<code>A vulnerability was detected in D-Link DIR-895L A1_102b07. Impacted is the function tunnel_set_params of the file tunnel.c of the component L2TP Control Channel Parser. Performing a manipulation results in out-of-bounds write. The attack may be initiated remotely. The exploit is now public and may be used.
+</code>
+
+- [murrez/CVE-2026-100740](https://github.com/murrez/CVE-2026-100740)
+
+### CVE-2026-100835 (2026-09-27)
+
+<code>Contrast before 1.16.0 is susceptible to remote attestation relay attacks. Contrast accepted any TEE attestation report that verified correctly and contained the expected firmware patch levels and software measurements, regardless of which machine produced it, so attestation was not bound to specific, physically trusted hardware. An attacker who can both intercept network traffic between the CLI and the Coordinator (or between the Coordinator and an attested component) and forge reports or extract secrets from any single TEE machine under their physical control can relay such a report to impersonate a Contrast Coordinator or a Contrast workload, defeating identity verification in Contrast's attested TLS (aTLS).
+</code>
+
+- [murrez/CVE-2026-100835](https://github.com/murrez/CVE-2026-100835)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -18422,7 +18474,7 @@
 <code>Untrusted LD_LIBRARY_PATH environment variable vulnerability in the GNU C Library version 2.27 to 2.38 allows attacker controlled loading of dynamically shared library in statically compiled setuid binaries that call dlopen (including internal dlopen calls after setlocale or calls to NSS functions such as getaddrinfo).
 </code>
 
-- [Betim-Hodza/CVE-2025-4802-Proof-of-Concept](https://github.com/Betim-Hodza/CVE-2025-4802-Proof-of-Concept)
+- [betizzel/CVE-2025-4802-Proof-of-Concept](https://github.com/betizzel/CVE-2025-4802-Proof-of-Concept)
 
 ### CVE-2025-4822 (2025-07-24)
 
@@ -19998,6 +20050,13 @@
 </code>
 
 - [metadust/CVE-2025-11187](https://github.com/metadust/CVE-2025-11187)
+
+### CVE-2025-11201 (2025-10-29)
+
+<code>MLflow Tracking Server Model Creation Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of MLflow Tracking Server. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of model file paths. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to execute code in the context of the service account. Was ZDI-CAN-26921.
+</code>
+
+- [rmhowe425/POC-CVE-2025-11201](https://github.com/rmhowe425/POC-CVE-2025-11201)
 
 ### CVE-2025-11203 (2025-10-29)
 
@@ -23415,6 +23474,7 @@
 - [razureink/cve-2025-32433-erlang_ssh_rce_reproduction](https://github.com/razureink/cve-2025-32433-erlang_ssh_rce_reproduction)
 - [Liam-Worsley/CVE-2025-32433-PoC-Analysis](https://github.com/Liam-Worsley/CVE-2025-32433-PoC-Analysis)
 - [damnkrishna/CVE-2025-32433-LAB](https://github.com/damnkrishna/CVE-2025-32433-LAB)
+- [X-Bulow/Reproduce-CVE-2025-32433](https://github.com/X-Bulow/Reproduce-CVE-2025-32433)
 
 ### CVE-2025-32434 (2025-04-18)
 
@@ -66035,6 +66095,7 @@
 - [rh-rahulshetty/log4shell-CVE-2021-44228](https://github.com/rh-rahulshetty/log4shell-CVE-2021-44228)
 - [mcpmark-eval-liuhezi/log4shell-audit](https://github.com/mcpmark-eval-liuhezi/log4shell-audit)
 - [Muskann02/cve-2021-44228-lab](https://github.com/Muskann02/cve-2021-44228-lab)
+- [osflaky/exp-logpresso-CVE-2021-44228-Scanner](https://github.com/osflaky/exp-logpresso-CVE-2021-44228-Scanner)
 
 ### CVE-2021-44255 (2022-01-31)
 
@@ -70091,7 +70152,7 @@
 
 - [JackHars/cve-2020-14008](https://github.com/JackHars/cve-2020-14008)
 - [0x0d3ad/CVE-2020-14008](https://github.com/0x0d3ad/CVE-2020-14008)
-- [raflesiait/CVE-2020-14008](https://github.com/raflesiait/CVE-2020-14008)
+- [raflesiait/CVE-2020-14008---ManageEngine](https://github.com/raflesiait/CVE-2020-14008---ManageEngine)
 
 ### CVE-2020-14064 (2020-07-15)
 
@@ -71139,7 +71200,6 @@
 - [substing/CVE-2020-24186_reverse_shell_upload](https://github.com/substing/CVE-2020-24186_reverse_shell_upload)
 - [GazettEl/CVE-2020-24186](https://github.com/GazettEl/CVE-2020-24186)
 - [sec-dojo-com/CVE-2020-24186](https://github.com/sec-dojo-com/CVE-2020-24186)
-- [wvverez/CVE-2020-24186](https://github.com/wvverez/CVE-2020-24186)
 
 ### CVE-2020-24227 (2020-11-23)
 
@@ -88796,7 +88856,6 @@
 </code>
 
 - [KernelPan1k/trans2open-CVE-2003-0201](https://github.com/KernelPan1k/trans2open-CVE-2003-0201)
-- [Bakr-Ht/samba-trans2open-exploit-report](https://github.com/Bakr-Ht/samba-trans2open-exploit-report)
 - [deepakkcybersec-eng/Kioptrix-Level1-Vulnerability-Analysis](https://github.com/deepakkcybersec-eng/Kioptrix-Level1-Vulnerability-Analysis)
 - [americooo/pentest-writeups](https://github.com/americooo/pentest-writeups)
 
