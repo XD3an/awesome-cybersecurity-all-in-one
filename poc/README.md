@@ -3591,6 +3591,7 @@
 
 - [murrez/CVE-2026-14281](https://github.com/murrez/CVE-2026-14281)
 - [langz337/CVE-2026-14281](https://github.com/langz337/CVE-2026-14281)
+- [abatsakidis/CVE-2026-14281-check](https://github.com/abatsakidis/CVE-2026-14281-check)
 
 ### CVE-2026-14282 (2026-07-23)
 
@@ -5573,7 +5574,7 @@
 - [bakano98/cve-2026-23111-poc](https://github.com/bakano98/cve-2026-23111-poc)
 - [vrtlbob/Linux-Kernel-Vulnerabilities-CVE-2026-23111](https://github.com/vrtlbob/Linux-Kernel-Vulnerabilities-CVE-2026-23111)
 - [Knz-source/CVE-2026-23111-POC-noddlenpottato](https://github.com/Knz-source/CVE-2026-23111-POC-noddlenpottato)
-- [vvsy46/CVE-2026-23111-PoC](https://github.com/vvsy46/CVE-2026-23111-PoC)
+- [imeiplus/CVE-2026-23111-PoC](https://github.com/imeiplus/CVE-2026-23111-PoC)
 
 ### CVE-2026-23398 (2026-03-26)
 
@@ -7367,6 +7368,7 @@
 </code>
 
 - [gbuyssens/CVE-2026-28695-craft-rce-bypass](https://github.com/gbuyssens/CVE-2026-28695-craft-rce-bypass)
+- [predyy/CVE-2026-28695](https://github.com/predyy/CVE-2026-28695)
 
 ### CVE-2026-28699 (2026-07-03)
 
@@ -9371,6 +9373,9 @@
 - [HORKimhab/CVE-2026-34990](https://github.com/HORKimhab/CVE-2026-34990)
 - [0xc4rc3l/CVE-2026-34990-poc](https://github.com/0xc4rc3l/CVE-2026-34990-poc)
 - [gbuyssens/CVE-2026-34990](https://github.com/gbuyssens/CVE-2026-34990)
+- [DENNISDGR/CVE-2026-34990-poc](https://github.com/DENNISDGR/CVE-2026-34990-poc)
+- [predyy/CVE-2026-34990](https://github.com/predyy/CVE-2026-34990)
+- [khush-613/CVE-2026-34990-poc](https://github.com/khush-613/CVE-2026-34990-poc)
 
 ### CVE-2026-35029 (2026-04-06)
 
@@ -11206,6 +11211,7 @@
 - [TeamN4C/SG-2026-0024](https://github.com/TeamN4C/SG-2026-0024)
 - [Minime794/DirtyFrag](https://github.com/Minime794/DirtyFrag)
 - [nihan-silent-reign/CVE-2026-43284-DIRTY-FRAG-](https://github.com/nihan-silent-reign/CVE-2026-43284-DIRTY-FRAG-)
+- [a2333c/DFRoot](https://github.com/a2333c/DFRoot)
 
 ### CVE-2026-43494 (2026-05-21)
 
@@ -11482,6 +11488,13 @@
 - [Malwation/CVE-2026-43786](https://github.com/Malwation/CVE-2026-43786)
 - [0xBlackash/CVE-2026-43786](https://github.com/0xBlackash/CVE-2026-43786)
 
+### CVE-2026-43805 (2026-07-27)
+
+<code>A race condition was addressed with improved state handling. This issue is fixed in iOS 26.6 and iPadOS 26.6, macOS Sequoia 15.7.8, macOS Sonoma 14.8.8, macOS Tahoe 26.6, watchOS 26.6. An app may be able to cause unexpected system termination or write kernel memory.
+</code>
+
+- [tls456/CVE-2026-43805-PoC](https://github.com/tls456/CVE-2026-43805-PoC)
+
 ### CVE-2026-43813 (2026-07-27)
 
 <code>A validation issue was addressed with improved input sanitization. This issue is fixed in iOS 26.6 and iPadOS 26.6, macOS Tahoe 26.6, tvOS 26.6, visionOS 26.6, watchOS 26.6. A maliciously crafted app may be able to bypass code signing enforcement.
@@ -11530,6 +11543,9 @@
 </code>
 
 - [4xura/CVE-2026-44011-craftcms-auth-rce](https://github.com/4xura/CVE-2026-44011-craftcms-auth-rce)
+- [DENNISDGR/CVE-2026-44011-poc](https://github.com/DENNISDGR/CVE-2026-44011-poc)
+- [Cyberuser-hash/CVE-2026-44011-craft-rce-poc](https://github.com/Cyberuser-hash/CVE-2026-44011-craft-rce-poc)
+- [khush-613/CVE-2026-44011-poc](https://github.com/khush-613/CVE-2026-44011-poc)
 
 ### CVE-2026-44024 (2026-07-08)
 
@@ -15638,6 +15654,13 @@
 
 - [Hunt-Benito/the-same-key-opens-every-box-cve-2026-71960-hard-coded-jwt-secret-in-cudy-wr3000-mesh-mqtt](https://github.com/Hunt-Benito/the-same-key-opens-every-box-cve-2026-71960-hard-coded-jwt-secret-in-cudy-wr3000-mesh-mqtt)
 
+### CVE-2026-71963 (2026-09-03)
+
+<code>Hermes Agent 0.18.2 through 0.21.0, fixed in commit f6234d0, contains a remote code execution vulnerability that allows attackers to execute arbitrary OS commands by supplying a malicious repository with a crafted .git/config that sets core.fsmonitor to an attacker-controlled command. When a user opens the malicious repository and sends any message, the agent triggers a git status index refresh which executes the injected command in the user's process context, exposing the full environment including configured provider API keys.
+</code>
+
+- [Boreas37/CVE-2026-71963-PoC](https://github.com/Boreas37/CVE-2026-71963-PoC)
+
 ### CVE-2026-71981 (2026-09-01)
 
 <code>Cypht before 2.12.2 contains a PHP object injection vulnerability that allows authenticated attackers to execute arbitrary operating system commands by supplying a crafted PHP object graph in the back_query GET parameter of the logout handler. Attackers can pass a base64-encoded serialized payload through this parameter, which is decoded and passed directly to unserialize() without an allow-list, signature check, or type restriction, enabling gadget-chain exploitation to achieve remote code execution as the web server process.
@@ -16099,6 +16122,13 @@
 - [fevar54/CVE-2026-76461-Detection-Kit-](https://github.com/fevar54/CVE-2026-76461-Detection-Kit-)
 - [S3v3n-JG/CVE-2026-76461](https://github.com/S3v3n-JG/CVE-2026-76461)
 
+### CVE-2026-76547 (2026-08-29)
+
+<code>The User Profile Builder  WordPress plugin before 4.0.1 does not validate the type of data being deserialized when importing a configuration file, allowing high privilege users such as administrators to conduct PHP Object Injection. The affected feature is a free add-on which is disabled by default, and no POP chain is present in the User Profile Builder  WordPress plugin before 4.0.1 itself, so further impact requires a suitable gadget from another installed User Profile Builder  WordPress plugin before 4.0.1 or .
+</code>
+
+- [H4zaz/CVE-2026-76547](https://github.com/H4zaz/CVE-2026-76547)
+
 ### CVE-2026-76564 (2026-08-20)
 
 <code>Joomla Extension - phoca.cz -  Stored XSS via User-Agent header in Admin Order View in Phoca Cart 5.0.0-6.1.7
@@ -16249,6 +16279,7 @@
 </code>
 
 - [DeadExpl0it/CVE-2026-78006-POC](https://github.com/DeadExpl0it/CVE-2026-78006-POC)
+- [antid00t/CVE-2026-78006-CVE-2026-78159](https://github.com/antid00t/CVE-2026-78006-CVE-2026-78159)
 
 ### CVE-2026-78070 (2026-08-28)
 
@@ -16627,6 +16658,13 @@
 - [xcoy0te/CVE-2026-83548-checker](https://github.com/xcoy0te/CVE-2026-83548-checker)
 - [HORKimhab/CVE-2026-83548-CVE-2026-83549](https://github.com/HORKimhab/CVE-2026-83548-CVE-2026-83549)
 
+### CVE-2026-83603 (2026-09-22)
+
+<code>Netdata is an open source observability tool. Prior to 2.10.4, the setuid-root ndsudo helper command fail2ban-client-status-socket in src/collectors/utils/ndsudo.c accepts a caller-controlled --socket_path from the low-privileged netdata service account. The account can direct root fail2ban-client to a malicious UNIX socket, and fail2ban/client/csocket.py CSocket.receive() passes the returned data to pickle.loads(), allowing attacker-controlled code to execute as root on systems with fail2ban-client installed. This issue is fixed in version 2.10.4 and nightly build 2.10.0-782-nightly.
+</code>
+
+- [OhWelp/CVE-2026-83603-LPE-PoC](https://github.com/OhWelp/CVE-2026-83603-LPE-PoC)
+
 ### CVE-2026-83991 (2026-09-08)
 
 <code>Missing authentication for critical function in Windows Cloud Files Mini Filter Driver allows an authorized attacker to perform tampering locally.
@@ -16926,6 +16964,8 @@
 - [itskill-jp/wordpress-upgrade-check](https://github.com/itskill-jp/wordpress-upgrade-check)
 - [rwxrwxs/CVE-2026-87902](https://github.com/rwxrwxs/CVE-2026-87902)
 - [langz337/CVE-2026-87902](https://github.com/langz337/CVE-2026-87902)
+- [abatsakidis/wp-cve-2026-87902-checker](https://github.com/abatsakidis/wp-cve-2026-87902-checker)
+- [Maalfer/CVE-2026-87902-exploit](https://github.com/Maalfer/CVE-2026-87902-exploit)
 
 ### CVE-2026-87915 (2026-09-18)
 
@@ -16941,8 +16981,22 @@
 
 - [winrarzipsexploit/CVE-2026-87930](https://github.com/winrarzipsexploit/CVE-2026-87930)
 
+### CVE-2026-88008 (2026-09-10)
+
+<code>Traefik is an open source HTTP reverse proxy and load balancer. From 2.11.26 until 2.11.57 and 3.7.13, Traefik forwards a client-supplied Connection header requesting Upgrade, the Upgrade: h2c token, and HTTP2-Settings to a shared backend. If the backend accepts h2c and returns 101 Switching Protocols, Traefik enters a raw tunnel and no longer applies routers, BasicAuth, ForwardAuth, IPAllowList, RateLimit, access logging, metrics, or tracing to later HTTP/2 requests, allowing an unauthenticated request through an unprotected route to reach protected paths on the same backend. This issue is fixed in 2.11.57 and 3.7.13.
+</code>
+
+- [Boreas37/CVE-2026-88008-PoC](https://github.com/Boreas37/CVE-2026-88008-PoC)
+
 ### CVE-2026-88533
 - [HEMLOCK-LYK/CVE-2026-88533](https://github.com/HEMLOCK-LYK/CVE-2026-88533)
+
+### CVE-2026-88772 (2026-09-27)
+
+<code>Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to Remote Code Execution or Denial of Service
+</code>
+
+- [murrez/CVE-2026-88772](https://github.com/murrez/CVE-2026-88772)
 
 ### CVE-2026-88854 (2026-09-20)
 
@@ -17300,6 +17354,13 @@
 - [qeize/cve-2026-97163-payload](https://github.com/qeize/cve-2026-97163-payload)
 - [murrez/CVE-2026-97163](https://github.com/murrez/CVE-2026-97163)
 
+### CVE-2026-100382 (2026-09-25)
+
+<code>Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Wikimedia Foundation Mediawiki - ExternalData Extension allows OS Command Injection.\n\nThis issue affects Mediawiki - ExternalData Extension: from * before 3.7.
+</code>
+
+- [nth347/mediawiki-CVE-2026-100382](https://github.com/nth347/mediawiki-CVE-2026-100382)
+
 ### CVE-2026-100740 (2026-09-27)
 
 <code>A vulnerability was detected in D-Link DIR-895L A1_102b07. Impacted is the function tunnel_set_params of the file tunnel.c of the component L2TP Control Channel Parser. Performing a manipulation results in out-of-bounds write. The attack may be initiated remotely. The exploit is now public and may be used.
@@ -17316,6 +17377,9 @@
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
+
+### CVE-2026-600004
+- [ImperfectP/CVE-2026-600004](https://github.com/ImperfectP/CVE-2026-600004)
 
 ### CVE-2026-999999
 - [24520597-blip/CVE-2026-999999](https://github.com/24520597-blip/CVE-2026-999999)
@@ -22829,7 +22893,7 @@
 - [yuzu-juice/CVE-2025-29927_demo](https://github.com/yuzu-juice/CVE-2025-29927_demo)
 - [AnonKryptiQuz/NextSploit](https://github.com/AnonKryptiQuz/NextSploit)
 - [w2hcorp/CVE-2025-29927-PoC](https://github.com/w2hcorp/CVE-2025-29927-PoC)
-- [ferpalma21/Automated-Next.js-Security-Scanner-for-CVE-2025-29927](https://github.com/ferpalma21/Automated-Next.js-Security-Scanner-for-CVE-2025-29927)
+- [ferpalma21/nextjs-scanner](https://github.com/ferpalma21/nextjs-scanner)
 - [dante01yoon/CVE-2025-29927](https://github.com/dante01yoon/CVE-2025-29927)
 - [ayato-shitomi/WebLab_CVE-2025-29927](https://github.com/ayato-shitomi/WebLab_CVE-2025-29927)
 - [Kamal-418/Vulnerable-Lab-NextJS-CVE-2025-29927](https://github.com/Kamal-418/Vulnerable-Lab-NextJS-CVE-2025-29927)
@@ -27365,6 +27429,8 @@
 </code>
 
 - [tom025/ply_exploit_rejection](https://github.com/tom025/ply_exploit_rejection)
+- [gdfurr98/ply-safepickle](https://github.com/gdfurr98/ply-safepickle)
+- [gdfurr98/ply-cve-2025-56005-lab](https://github.com/gdfurr98/ply-cve-2025-56005-lab)
 
 ### CVE-2025-56015 (2026-04-07)
 
@@ -27805,7 +27871,7 @@
 - [YuvrajSHAD/FreePBX-CVE-2025-57819](https://github.com/YuvrajSHAD/FreePBX-CVE-2025-57819)
 - [0xyngtg/FreePBX-CVE-2025-57819-CVE-2025-61678](https://github.com/0xyngtg/FreePBX-CVE-2025-57819-CVE-2025-61678)
 - [ozcanpng/CVE-2025-57819-FreePBX-RCE2Root](https://github.com/ozcanpng/CVE-2025-57819-FreePBX-RCE2Root)
-- [JazzTheRabbit/FreePBX-SQLi-RCE](https://github.com/JazzTheRabbit/FreePBX-SQLi-RCE)
+- [RokuSec/FreePBX-SQLi-RCE](https://github.com/RokuSec/FreePBX-SQLi-RCE)
 - [Its1Zero/cve-2025-57819-exploit](https://github.com/Its1Zero/cve-2025-57819-exploit)
 - [K3ysTr0K3R/CVE-2025-57819](https://github.com/K3ysTr0K3R/CVE-2025-57819)
 - [Neobee714/CVE-2025-57819-POC](https://github.com/Neobee714/CVE-2025-57819-POC)
@@ -31928,6 +31994,7 @@
 - [J1nKsC/CVE-2024-4367_test](https://github.com/J1nKsC/CVE-2024-4367_test)
 - [veronimo669/pdf.js-CVE-2024-4367](https://github.com/veronimo669/pdf.js-CVE-2024-4367)
 - [yuimamur/CVE-2024-4367-hands-on-01](https://github.com/yuimamur/CVE-2024-4367-hands-on-01)
+- [stuara1/cpc-pdfjs-poc](https://github.com/stuara1/cpc-pdfjs-poc)
 
 ### CVE-2024-4406 (2024-05-02)
 
@@ -35301,6 +35368,7 @@
 - [razureink/cve-2024-23897-jenkins_lfi_reproduction](https://github.com/razureink/cve-2024-23897-jenkins_lfi_reproduction)
 - [dheeraj-jayaswal/CICD-Goat-Vapt-Writeup](https://github.com/dheeraj-jayaswal/CICD-Goat-Vapt-Writeup)
 - [MachiavelliII/CVE-2024-23897](https://github.com/MachiavelliII/CVE-2024-23897)
+- [Alexandertanay/jenkins-cve-2024-23897-lab](https://github.com/Alexandertanay/jenkins-cve-2024-23897-lab)
 
 ### CVE-2024-23898 (2024-01-24)
 
@@ -65497,6 +65565,7 @@
 - [Lim-ahmin/CVE-2021-43798](https://github.com/Lim-ahmin/CVE-2021-43798)
 - [Squ1shification/Grafana-Plugin-Enumerator-CVE-2021-43798](https://github.com/Squ1shification/Grafana-Plugin-Enumerator-CVE-2021-43798)
 - [shivamg2004/-INE_Shivam_Gupta_23104003](https://github.com/shivamg2004/-INE_Shivam_Gupta_23104003)
+- [khanna419/cve-2021-43798-lab](https://github.com/khanna419/cve-2021-43798-lab)
 
 ### CVE-2021-43799 (2022-01-25)
 
