@@ -2391,7 +2391,7 @@
 
 ### CVE-2026-8065 (2026-09-29)
 
-<code>An authentication bypass vulnerability in the firmware update endpoint of Hitachi Energy RTU500 allows an unauthenticated attacker to upload arbitrary firmware through a crafted POST request. Successful exploitation could allow the attacker to modify device functionality or compromise the integrity or availability of the device.
+<code>An authentication bypass vulnerability in the firmware update endpoint of Hitachi Energy RTU500 end-of-life versions allows an unauthenticated attacker to upload arbitrary firmware through a crafted POST request. Successful exploitation could allow the attacker to modify device functionality or compromise the integrity or availability of the device.
 </code>
 
 - [murrez/CVE-2026-8065](https://github.com/murrez/CVE-2026-8065)
@@ -8346,6 +8346,7 @@
 - [silentbyte69/copy-fail-CVE-2026-31431-cpp](https://github.com/silentbyte69/copy-fail-CVE-2026-31431-cpp)
 - [Minime794/copyfail](https://github.com/Minime794/copyfail)
 - [ZeroDayEvil/CVE-2026-31431](https://github.com/ZeroDayEvil/CVE-2026-31431)
+- [rifkyards/Copy-Fail-CVE-2026-31431-Kubernetes-PoC](https://github.com/rifkyards/Copy-Fail-CVE-2026-31431-Kubernetes-PoC)
 
 ### CVE-2026-31525 (2026-04-22)
 
@@ -8428,6 +8429,13 @@
 </code>
 
 - [pvharmo2/gha-lab-3f1ff30e9c](https://github.com/pvharmo2/gha-lab-3f1ff30e9c)
+
+### CVE-2026-31857 (2026-03-11)
+
+<code>Craft is a content management system (CMS). Prior to 5.9.9 and 4.17.4, a Remote Code Execution vulnerability exists in the Craft CMS 5 conditions system. The BaseElementSelectConditionRule::getElementIds() method passes user-controlled string input through renderObjectTemplate() -- an unsandboxed Twig rendering function with escaping disabled. Any authenticated Control Panel user (including non-admin roles such as Author or Editor) can achieve full RCE by sending a crafted condition rule via standard element listing endpoints. This vulnerability requires no admin privileges, no special permissions beyond basic control panel access, and bypasses all production hardening settings (allowAdminChanges: false, devMode: false, enableTwigSandbox: true). Users should update to the patched 5.9.9 or 4.17.4 release to mitigate the issue.
+</code>
+
+- [0xTatsuki/CVE-2026-31857](https://github.com/0xTatsuki/CVE-2026-31857)
 
 ### CVE-2026-31891 (2026-03-18)
 
@@ -9457,6 +9465,7 @@
 - [Noorkhalel/CVE-2026-34990-CUPS-LPE-PoC](https://github.com/Noorkhalel/CVE-2026-34990-CUPS-LPE-PoC)
 - [OffensiveBias20/CVE-2026-34990-POC](https://github.com/OffensiveBias20/CVE-2026-34990-POC)
 - [ungabunga-ctf/CVE-2026-34990](https://github.com/ungabunga-ctf/CVE-2026-34990)
+- [mrdebora/cups-2.4.16-lpe](https://github.com/mrdebora/cups-2.4.16-lpe)
 
 ### CVE-2026-35029 (2026-04-06)
 
@@ -10611,7 +10620,7 @@
 - [ZeroDayVPN/CVE-2026-41089-Netlogon](https://github.com/ZeroDayVPN/CVE-2026-41089-Netlogon)
 - [SyntaxMethod/CVE-2026-41089-Netlogon-RCE-PoC](https://github.com/SyntaxMethod/CVE-2026-41089-Netlogon-RCE-PoC)
 - [Gillarchnganasan2735/CVE-2026-41089-Netlogon-RCE-PoC](https://github.com/Gillarchnganasan2735/CVE-2026-41089-Netlogon-RCE-PoC)
-- [1posix/CVE-2026-41089-POC](https://github.com/1posix/CVE-2026-41089-POC)
+- [1posix/CVE-2026-41089-PoC](https://github.com/1posix/CVE-2026-41089-PoC)
 
 ### CVE-2026-41091 (2026-05-20)
 
@@ -11465,7 +11474,6 @@
 - [CKwasd/zenfone9-ghostlock](https://github.com/CKwasd/zenfone9-ghostlock)
 - [mo2g/redmi-note-12t-pro-kernel](https://github.com/mo2g/redmi-note-12t-pro-kernel)
 - [L-1124/RootMyVivo-rs](https://github.com/L-1124/RootMyVivo-rs)
-- [L-1124/RootMyVivo-Exploit](https://github.com/L-1124/RootMyVivo-Exploit)
 - [ZeroDayEvil/CVE-2026-43499](https://github.com/ZeroDayEvil/CVE-2026-43499)
 - [shubhampathak65/CVE-2026-43499](https://github.com/shubhampathak65/CVE-2026-43499)
 
@@ -12574,6 +12582,13 @@
 </code>
 
 - [HORKimhab/CVE-2026-48095](https://github.com/HORKimhab/CVE-2026-48095)
+
+### CVE-2026-48121 (2026-08-04)
+
+<code>@langchain/langgraph-checkpoint-mongodb provides a LangGraph.js CheckpointSaver implementation that uses MongoDB for storage. Versions 1.3.0 and below are vulnerable to NoSQL injection: checkpoint identifiers (thread_id, checkpoint_ns, checkpoint_id) from config.configurable are passed into MongoDB find() queries in MongoDBSaver.getTuple() without type enforcement. If an attacker supplies an object payload (such as MongoDB operators $gt or $ne) instead of a string, it can be interpreted as a query operator, bypassing thread scoping and leaking checkpoints, including pending writes, across tenants. Applications are at risk if they forward untrusted input into config.configurable without coercing it to strings or validating it against a schema, particularly in multi-tenant or user-isolated setups. Apps that only use server-issued, string-typed identifiers with schema validation rejecting non-string fields are not affected. This issue has been fixed in version 1.3.1.
+</code>
+
+- [decker757/cs440-langgraph-nosql-demo](https://github.com/decker757/cs440-langgraph-nosql-demo)
 
 ### CVE-2026-48172 (2026-05-21)
 
@@ -14689,6 +14704,7 @@
 - [fl0ydsec/CVE-2026-63030](https://github.com/fl0ydsec/CVE-2026-63030)
 - [langz337/CVE-2026-63030](https://github.com/langz337/CVE-2026-63030)
 - [jed-parsec/CVE-2026-63030-60137-wp2shell-lab](https://github.com/jed-parsec/CVE-2026-63030-60137-wp2shell-lab)
+- [MRdark-ops/WP2Shell--CVE-2026-63030-CVE-2026-60137-](https://github.com/MRdark-ops/WP2Shell--CVE-2026-63030-CVE-2026-60137-)
 
 ### CVE-2026-63039 (2026-08-20)
 
@@ -16557,7 +16573,11 @@
 
 - [jhli07/CVE-2026-79387-PbootCMS-SQL-Injection](https://github.com/jhli07/CVE-2026-79387-PbootCMS-SQL-Injection)
 
-### CVE-2026-79417
+### CVE-2026-79417 (2026-09-29)
+
+<code>Improper Access Control in ArgusMonitor.sys in Argotronic eGbR ArgusMonitor 7.4.02 and earlier allows local, low-privileged users to bypass device handle access restrictions via a TOCTOU condition in IRP_MJ_CREATE and send a crafted IOCTL 0x9C4024A8 request, causing denial-of-service.
+</code>
+
 - [connorjaydunn/CVE-2026-79417](https://github.com/connorjaydunn/CVE-2026-79417)
 
 ### CVE-2026-79483 (2026-08-31)
@@ -16616,6 +16636,7 @@
 </code>
 
 - [Markakd/Container_escape](https://github.com/Markakd/Container_escape)
+- [rifkyards/Container_escape-CVE-2026-80521-CVE-2026-52910](https://github.com/rifkyards/Container_escape-CVE-2026-80521-CVE-2026-52910)
 
 ### CVE-2026-80724 (2026-08-28)
 
@@ -16811,6 +16832,13 @@
 </code>
 
 - [Saku0512/CVE-2026-84361-poc](https://github.com/Saku0512/CVE-2026-84361-poc)
+
+### CVE-2026-84383 (2026-09-18)
+
+<code>libheif is a HEIF and AVIF file format decoder and encoder. From 1.22.0 until 1.23.2, a crafted HEIF, HEIC, or AVIF item graph using nested iden and auxl references can make HeifPixelImage::transfer_channel_from_image_as() append duplicate Alpha planes with different bit depths to m_storage. HeifPixelImage::scale_nearest_neighbor() in libheif/image/pixelimage.cc allocates the destination Alpha plane using the first plane's 8-bit depth, then iterates a later 10-bit or 12-bit Alpha component and writes uint16_t samples into the same 8-bit allocation. The output geometry controls the overflow extent and the encoded sample values control the data written, allowing a remote file processed by heif_decode_image() to cause a heap out-of-bounds write. This issue is fixed in version 1.23.2.
+</code>
+
+- [dinosn/libheif-cve-2026-84383-lab](https://github.com/dinosn/libheif-cve-2026-84383-lab)
 
 ### CVE-2026-84388 (2026-09-22)
 
@@ -17115,6 +17143,7 @@
 - [Maalfer/CVE-2026-87902-exploit](https://github.com/Maalfer/CVE-2026-87902-exploit)
 - [HackfutSecRoot/CVE-2026-87902](https://github.com/HackfutSecRoot/CVE-2026-87902)
 - [MRdark-ops/CVE-2026-87902](https://github.com/MRdark-ops/CVE-2026-87902)
+- [tonydelouvre/CVE-2026-87902](https://github.com/tonydelouvre/CVE-2026-87902)
 
 ### CVE-2026-87915 (2026-09-18)
 
@@ -17140,6 +17169,9 @@
 ### CVE-2026-88533
 - [HEMLOCK-LYK/CVE-2026-88533](https://github.com/HEMLOCK-LYK/CVE-2026-88533)
 
+### CVE-2026-88629
+- [ExploreIO/CVE-2026-88629-fastgpt-mcp-client-ssrf](https://github.com/ExploreIO/CVE-2026-88629-fastgpt-mcp-client-ssrf)
+
 ### CVE-2026-88771 (2026-09-27)
 
 <code>Improper input validation vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to an unauthenticated attacker to execute arbitrary commands.
@@ -17150,6 +17182,7 @@
 - [EXEcution-py/CVE-2026-88771-POC](https://github.com/EXEcution-py/CVE-2026-88771-POC)
 - [ThomasPoppelgaard/netscaler-ctx697096-checker](https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker)
 - [techupdate24/citrix-netscaler-cve-2026-88771-rce](https://github.com/techupdate24/citrix-netscaler-cve-2026-88771-rce)
+- [SwiftSecur/CVE-2026-88771-HuntScript](https://github.com/SwiftSecur/CVE-2026-88771-HuntScript)
 
 ### CVE-2026-88772 (2026-09-27)
 
@@ -17383,6 +17416,13 @@
 ### CVE-2026-93680
 - [rmhowe425/POC-CVE-2026-93680](https://github.com/rmhowe425/POC-CVE-2026-93680)
 
+### CVE-2026-93687 (2026-09-18)
+
+<code>braces through 3.0.3 contains a stack overflow vulnerability in the recursive AST walkers that lack depth guards. Attackers can supply deeply nested brace patterns under the character limit to exhaust the call stack and terminate the Node.js process with an uncaught RangeError.
+</code>
+
+- [scastillo-jp/braces-fork](https://github.com/scastillo-jp/braces-fork)
+
 ### CVE-2026-93834 (2026-09-25)
 
 <code>A use-after-free vulnerability was found in QEMU's 9pfs subsystem. A race condition between the main thread and a worker thread when processing concurrent Tlcreate and Twalk requests allows a malicious guest user to craft a fid path containing stale heap data, bypassing directory traversal restrictions and escaping the shared directory boundary. This can lead to arbitrary host file read/write and code execution (VM escape) as the QEMU process user.
@@ -17489,6 +17529,55 @@
 
 - [whoami-012/CVE-2026-96515](https://github.com/whoami-012/CVE-2026-96515)
 
+### CVE-2026-96872 (2026-09-23)
+
+<code>Improper handling of insufficient permissions or privileges vulnerability in The Wikimedia Foundation Mediawiki - WikiLambda Extension on Linux, MacOS, and Windows allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects Mediawiki - WikiLambda Extension: before 1.47.0.
+</code>
+
+- [BomboBombone/CVE-2026-96872](https://github.com/BomboBombone/CVE-2026-96872)
+
+### CVE-2026-96873 (2026-09-24)
+
+<code>Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Mediawiki - CirrusSearch extension allows Reflected XSS.\n\nThis issue affects Mediawiki - CirrusSearch extension through 1.46.0.
+</code>
+
+- [BomboBombone/CVE-2026-96873](https://github.com/BomboBombone/CVE-2026-96873)
+
+### CVE-2026-96874 (2026-09-25)
+
+<code>Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in the Mediawiki - Cargo extension allows Stored XSS.\n\n\n\n\n\n\nThis issue affects Mediawiki - Cargo extension: through 3.9.4.
+</code>
+
+- [BomboBombone/CVE-2026-96874](https://github.com/BomboBombone/CVE-2026-96874)
+
+### CVE-2026-96875 (2026-09-25)
+
+<code>Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Mediawiki - Cargo extension allows Stored XSS.\n\n\nThis issue affects Mediawiki - Cargo extension: through 3.9.4.
+</code>
+
+- [BomboBombone/CVE-2026-96875](https://github.com/BomboBombone/CVE-2026-96875)
+
+### CVE-2026-96876 (2026-09-25)
+
+<code>Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Mediawiki - Cargo extension allows Reflected XSS.\n\nThis issue affects Mediawiki - Cargo extension: through 3.9.4.
+</code>
+
+- [BomboBombone/CVE-2026-96876](https://github.com/BomboBombone/CVE-2026-96876)
+
+### CVE-2026-96877 (2026-09-25)
+
+<code>Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Mediawiki - Cargo extension allows Reflected XSS.\n\nThis issue affects Mediawiki - Cargo extension: through 3.9.4.
+</code>
+
+- [BomboBombone/CVE-2026-96877](https://github.com/BomboBombone/CVE-2026-96877)
+
+### CVE-2026-96878 (2026-09-25)
+
+<code>Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Mediawiki - Cargo extension allows Reflected XSS.\n\nThis issue affects Mediawiki - Cargo extension: through 3.9.4.
+</code>
+
+- [BomboBombone/CVE-2026-96878](https://github.com/BomboBombone/CVE-2026-96878)
+
 ### CVE-2026-96889 (2026-09-23)
 
 <code>A flaw was found in librsvg. When processing an SVG document containing nested XML inclusions (Xincludes) with duplicate entity declarations, a use-after-free error can occur. This vulnerability arises because the library incorrectly frees an XML entity that is still in use by the parser. An attacker could potentially exploit this to cause a denial of service or execute arbitrary code.
@@ -17517,6 +17606,20 @@
 
 - [qeize/cve-2026-97163-payload](https://github.com/qeize/cve-2026-97163-payload)
 - [murrez/CVE-2026-97163](https://github.com/murrez/CVE-2026-97163)
+
+### CVE-2026-100380 (2026-09-25)
+
+<code>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation Mediawiki - Wikibase Extension allows Cross-Site Scripting (XSS).\n\nThis issue affects Mediawiki - Wikibase Extension: from * before 1.46.1, 1.45.5, 1.43.10.
+</code>
+
+- [BomboBombone/CVE-2026-100380](https://github.com/BomboBombone/CVE-2026-100380)
+
+### CVE-2026-100381 (2026-09-25)
+
+<code>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation Mediawiki - UploadWizard Extension allows Cross-Site Scripting (XSS).\n\nThis issue affects Mediawiki - UploadWizard Extension: from * before 1.46.1, 1.45.5, 1.43.10.
+</code>
+
+- [BomboBombone/CVE-2026-100381](https://github.com/BomboBombone/CVE-2026-100381)
 
 ### CVE-2026-100382 (2026-09-25)
 
@@ -17602,6 +17705,13 @@
 </code>
 
 - [murrez/CVE-2026-101894](https://github.com/murrez/CVE-2026-101894)
+
+### CVE-2026-102261 (2026-09-29)
+
+<code>A flaw has been found in owen2345 Camaleon CMS up to 2.9.2. Impacted is the function crop of the file app/controllers/camaleon_cms/admin/media_controller.rb of the component Media Crop Handler. This manipulation of the argument saved_avatar causes authorization bypass. The attack may be initiated remotely. The exploit has been published and may be used. Upgrading to version 2.9.3 is recommended to address this issue. Patch name: c143e145caa600947e70a240e87f2fed889149d3. It is suggested to upgrade the affected component.
+</code>
+
+- [7acini/CVE-2026-102261](https://github.com/7acini/CVE-2026-102261)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -18486,6 +18596,7 @@
 - [punitdarji/Grafana-cve-2025-4123](https://github.com/punitdarji/Grafana-cve-2025-4123)
 - [ItsNee/Grafana-CVE-2025-4123-POC](https://github.com/ItsNee/Grafana-CVE-2025-4123-POC)
 - [MorphyKutay/CVE-2025-4123-Exploit](https://github.com/MorphyKutay/CVE-2025-4123-Exploit)
+- [primesec-dev/grafana_mythos_cve-2025-4123](https://github.com/primesec-dev/grafana_mythos_cve-2025-4123)
 
 ### CVE-2025-4126 (2025-05-15)
 
@@ -19396,13 +19507,6 @@
 </code>
 
 - [Tobss8/GIGABYTE-H510M-K-V2-BIOS-SMM-Reverse-Engineering-CVE-2025-7026-7027-7028-7029-Research](https://github.com/Tobss8/GIGABYTE-H510M-K-V2-BIOS-SMM-Reverse-Engineering-CVE-2025-7026-7027-7028-7029-Research)
-
-### CVE-2025-7029 (2025-07-11)
-
-<code>A vulnerability in the Software SMI handler (SwSmiInputValue 0xB2) allows a local attacker to control the RBX register, which is used to derive pointers (OcHeader, OcData) passed into power and thermal configuration logic. These buffers are not validated before performing multiple structured memory writes based on OcSetup NVRAM values, enabling arbitrary SMRAM corruption and potential SMM privilege escalation.
-</code>
-
-- [ARES-SYS/uefi_bootkit_softlanding](https://github.com/ARES-SYS/uefi_bootkit_softlanding)
 
 ### CVE-2025-7338 (2025-07-17)
 
@@ -34854,6 +34958,7 @@
 - [R4mbb/CVE-2024-21626-PoC](https://github.com/R4mbb/CVE-2024-21626-PoC)
 - [scherepiuk/container-escape-ebpf](https://github.com/scherepiuk/container-escape-ebpf)
 - [Strikoder-Premium/cve-2024-21626-runc-1.1.11-escape](https://github.com/Strikoder-Premium/cve-2024-21626-runc-1.1.11-escape)
+- [RnW29/cve-2024-21626-runc-lab](https://github.com/RnW29/cve-2024-21626-runc-lab)
 
 ### CVE-2024-21633 (2024-01-03)
 
@@ -41707,7 +41812,7 @@
 <code>An access control issue in the component /juis_boxinfo.xml of AVM FRITZ!Box 7530 AX v7.59 allows attackers to obtain sensitive information without authentication. NOTE: this is disputed by the Supplier because it cannot be reproduced, and the issue report focuses on an unintended configuration with direct Internet exposure.
 </code>
 
-- [sysadmin420/AVM-FRITZ-Box-CVE-2024-54767-Exploit](https://github.com/sysadmin420/AVM-FRITZ-Box-CVE-2024-54767-Exploit)
+- [lowlevelsec/AVM-FRITZ-Box-CVE-2024-54767-Exploit](https://github.com/lowlevelsec/AVM-FRITZ-Box-CVE-2024-54767-Exploit)
 
 ### CVE-2024-54772 (2025-02-11)
 
@@ -49275,7 +49380,7 @@
 </code>
 
 - [sealldeveloper/CVE-2023-40931-PoC](https://github.com/sealldeveloper/CVE-2023-40931-PoC)
-- [datboi6942/Nagios-XI-s-CVE-2023-40931-Exploit](https://github.com/datboi6942/Nagios-XI-s-CVE-2023-40931-Exploit)
+- [NCF0126/Nagios-XI-s-CVE-2023-40931-Exploit](https://github.com/NCF0126/Nagios-XI-s-CVE-2023-40931-Exploit)
 - [G4sp4rCS/CVE-2023-40931-POC](https://github.com/G4sp4rCS/CVE-2023-40931-POC)
 
 ### CVE-2023-40933 (2023-09-19)
@@ -49909,6 +50014,7 @@
 
 - [libertycityhacker/CVE-2023-43364-Exploit-CVE](https://github.com/libertycityhacker/CVE-2023-43364-Exploit-CVE)
 - [Herick-Costa/CVE-2023-43364-Searchor-RCE-Exploit](https://github.com/Herick-Costa/CVE-2023-43364-Searchor-RCE-Exploit)
+- [IamSaishi/CVE-2023-43364_Exploit](https://github.com/IamSaishi/CVE-2023-43364_Exploit)
 
 ### CVE-2023-43481 (2023-12-27)
 
@@ -71508,6 +71614,7 @@
 - [substing/CVE-2020-24186_reverse_shell_upload](https://github.com/substing/CVE-2020-24186_reverse_shell_upload)
 - [GazettEl/CVE-2020-24186](https://github.com/GazettEl/CVE-2020-24186)
 - [sec-dojo-com/CVE-2020-24186](https://github.com/sec-dojo-com/CVE-2020-24186)
+- [kiyingiericmark-wq/CVE-2020-24186](https://github.com/kiyingiericmark-wq/CVE-2020-24186)
 
 ### CVE-2020-24227 (2020-11-23)
 
