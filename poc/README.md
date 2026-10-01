@@ -5468,7 +5468,7 @@
 <code>ComfyUI-Manager is an extension designed to enhance the usability of ComfyUI. Prior to versions 3.39.2 and 4.0.5, an attacker can inject special characters into HTTP query parameters to add arbitrary configuration values to the config.ini file. This can lead to security setting tampering or modification of application behavior. This issue has been patched in versions 3.39.2 and 4.0.5.
 </code>
 
-- [e5dfdd568a75282b712b6d93a7a18e12/CVE-2026-22777](https://github.com/e5dfdd568a75282b712b6d93a7a18e12/CVE-2026-22777)
+- [Si13NTTT/CVE-2026-22777](https://github.com/Si13NTTT/CVE-2026-22777)
 
 ### CVE-2026-22778 (2026-02-02)
 
@@ -6711,6 +6711,7 @@
 
 - [CEAarab/CVE-2026-26026-PoC](https://github.com/CEAarab/CVE-2026-26026-PoC)
 - [wuyou6956-glitch/CVE-2026-26026-PoC](https://github.com/wuyou6956-glitch/CVE-2026-26026-PoC)
+- [petriQore/CVE-2026-26026_PoC](https://github.com/petriQore/CVE-2026-26026_PoC)
 
 ### CVE-2026-26030 (2026-02-19)
 
@@ -8162,6 +8163,7 @@
 - [Silent0x0/Copy-Fail---CVE-2026-31431](https://github.com/Silent0x0/Copy-Fail---CVE-2026-31431)
 - [SpenserCai/copy_fail](https://github.com/SpenserCai/copy_fail)
 - [K3ysTr0K3R/CVE-2026-31431-EXPLOIT](https://github.com/K3ysTr0K3R/CVE-2026-31431-EXPLOIT)
+- [Quaerendir/copyfail-audit](https://github.com/Quaerendir/copyfail-audit)
 - [povzayd/CVE-2026-31431](https://github.com/povzayd/CVE-2026-31431)
 - [sebinxavi/cve-checker-2026](https://github.com/sebinxavi/cve-checker-2026)
 - [mlazzarotto/copy-fail-CVE-2026-31431-mitigation-ansible-playbook](https://github.com/mlazzarotto/copy-fail-CVE-2026-31431-mitigation-ansible-playbook)
@@ -8583,6 +8585,7 @@
 - [sahmsec/CVE-2026-32475](https://github.com/sahmsec/CVE-2026-32475)
 - [dinosn/cve-2026-32475-elementor-pro-lab](https://github.com/dinosn/cve-2026-32475-elementor-pro-lab)
 - [4minx/CVE-2026-32475](https://github.com/4minx/CVE-2026-32475)
+- [cyeezy08/WordPress_Exploit_Directory](https://github.com/cyeezy08/WordPress_Exploit_Directory)
 
 ### CVE-2026-32488 (2026-03-25)
 
@@ -9100,6 +9103,7 @@
 - [kaleth4/CVE-2026-33825](https://github.com/kaleth4/CVE-2026-33825)
 - [Joe1sn/CVE-2026-33825](https://github.com/Joe1sn/CVE-2026-33825)
 - [0xBlackash/CVE-2026-33825](https://github.com/0xBlackash/CVE-2026-33825)
+- [anasabugaddara-ux/defender-bluehammer-audit](https://github.com/anasabugaddara-ux/defender-bluehammer-audit)
 
 ### CVE-2026-33826 (2026-04-14)
 
@@ -10910,7 +10914,6 @@
 - [CerberusMrXi/cPanel-WHM-CVE-2026-41940-auth-bypass-exploit](https://github.com/CerberusMrXi/cPanel-WHM-CVE-2026-41940-auth-bypass-exploit)
 - [keithbennedict/CVE-2026-41940-Linux](https://github.com/keithbennedict/CVE-2026-41940-Linux)
 - [yanchenyu360/CVE-2026-41940-Security-Patch](https://github.com/yanchenyu360/CVE-2026-41940-Security-Patch)
-- [t4xo/CVE-2026-41940](https://github.com/t4xo/CVE-2026-41940)
 - [0xgh057r3c0n/CVE-2026-41940](https://github.com/0xgh057r3c0n/CVE-2026-41940)
 - [Xrzmodz444/cve-2026-41940-PoC-Linux](https://github.com/Xrzmodz444/cve-2026-41940-PoC-Linux)
 - [yasouxken/cve-2026-41940-PoC](https://github.com/yasouxken/cve-2026-41940-PoC)
@@ -11298,6 +11301,7 @@
 - [xd20111/CVE-2026-43284](https://github.com/xd20111/CVE-2026-43284)
 - [grabesec/XCP_ng_CVE-2026-43284_tester](https://github.com/grabesec/XCP_ng_CVE-2026-43284_tester)
 - [cyber-niz/Dirty-Frag](https://github.com/cyber-niz/Dirty-Frag)
+- [Quaerendir/dirtyfrag-audit](https://github.com/Quaerendir/dirtyfrag-audit)
 - [LucasPDiniz/CVE-2026-43284](https://github.com/LucasPDiniz/CVE-2026-43284)
 - [kuniyal08/Dirty-Frag-CVE-2026-43284](https://github.com/kuniyal08/Dirty-Frag-CVE-2026-43284)
 - [DylanClaudio/Reporte-de-Escalada-de-Privilegios-Local-Dirty-Frag](https://github.com/DylanClaudio/Reporte-de-Escalada-de-Privilegios-Local-Dirty-Frag)
@@ -11480,10 +11484,12 @@
 - [CKwasd/zenfone9-ghostlock](https://github.com/CKwasd/zenfone9-ghostlock)
 - [mo2g/redmi-note-12t-pro-kernel](https://github.com/mo2g/redmi-note-12t-pro-kernel)
 - [L-1124/RootMyVivo-rs](https://github.com/L-1124/RootMyVivo-rs)
+- [L-1124/RootMyVivo-Exploit](https://github.com/L-1124/RootMyVivo-Exploit)
 - [ZeroDayEvil/CVE-2026-43499](https://github.com/ZeroDayEvil/CVE-2026-43499)
 - [shubhampathak65/CVE-2026-43499](https://github.com/shubhampathak65/CVE-2026-43499)
 - [HaSiyo/Root-My-Galaxy-Payloads-KernelSU-Next](https://github.com/HaSiyo/Root-My-Galaxy-Payloads-KernelSU-Next)
 - [HaSiyo/Root-My-Galaxy-Payloads-KernelSU](https://github.com/HaSiyo/Root-My-Galaxy-Payloads-KernelSU)
+- [YUE546/IQOO-neo7-ghostlock-43499](https://github.com/YUE546/IQOO-neo7-ghostlock-43499)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -12665,6 +12671,13 @@
 
 - [abraxas/CVE-2026-48356](https://github.com/abraxas/CVE-2026-48356)
 
+### CVE-2026-48500 (2026-06-22)
+
+<code>Filament is a collection of full-stack components for accelerated Laravel development. From 3.0.0 until 3.3.52, 4.11.5, and 5.6.5, any schema can contain a file upload form field, so Filament applies Livewire's WithFileUploads trait to the Livewire component the schema is embedded in. However, some schemas, such as the panel login form, do not require file uploads, and exposing unauthenticated temporary file uploads on these components is not an acceptable risk. On these components, an unauthenticated attacker could upload arbitrary files to the application's temporary storage, which could be abused to exhaust disk space or inflate storage costs. This vulnerability is fixed in 3.3.52, 4.11.5, and 5.6.5.
+</code>
+
+- [rimbadirgantara/CVE-2026-48500](https://github.com/rimbadirgantara/CVE-2026-48500)
+
 ### CVE-2026-48519 (2026-06-23)
 
 <code>Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.9.2, the &quot;Shareable Playground&quot; (or &quot;Public Flows&quot; in code) contains a critical RCE vulnerability. Shareable Playground feature works by enabling the execution of workflows by unauthenticated users, by accessing a link. Specifically, it enables the route /api/v1/build_public_tmp to execute any public flow, given a public flow ID. When the route executes the flow, it allows for providing arbitrary custom Python code as the nodes code, inside the JSON payload. The vulnerable field is data.nodes[X].data.node.template.code.value. This vulnerability is fixed in 1.9.2.
@@ -13045,13 +13058,6 @@
 </code>
 
 - [xiaoqiMikko/log4j-check](https://github.com/xiaoqiMikko/log4j-check)
-
-### CVE-2026-49865 (2026-09-11)
-
-<code>Kimai is an open-source time tracking application. Versions prior to 2.58.0 contain a server-side request forgery vulnerability in their invoice PDF preview and generation workflow. If an attacker can control Markdown content that is later rendered into an invoice PDF, such as `Customer.invoiceText`, the server-side PDF renderer will fetch remote image URLs embedded in Markdown image syntax. This allows the application server to issue outbound requests to attacker-controlled or internal targets during PDF rendering. The behavior can be used for internal network probing, server-side reachability checks, and potentially follow-on exploitation depending on deployment environment and accessible internal services. Version 2.58.0 patches the issue.
-</code>
-
-- [cyeezy08/Kimai-CVE-2026-49865-POC](https://github.com/cyeezy08/Kimai-CVE-2026-49865-POC)
 
 ### CVE-2026-49869 (2026-06-26)
 
@@ -13468,6 +13474,7 @@
 <code>Kimai is an open-source time tracking application. Prior to 2.58.0, the official Docker image sets APP_SECRET to the public value change_this_to_something_unique in Dockerfile, and .docker/entrypoint.sh neither replaces nor rejects that value before Symfony uses it as kernel.secret. An unauthenticated attacker who reaches a deployment that did not override APP_SECRET, knows a username, correctly guesses the account ID associated with that username, and targets an account without active two-factor authentication can forge HMAC-protected authentication artifacts, including KIMAI_REMEMBER cookies and login links, to access the account without its password. The updated entrypoint generates and persists a random secret when no safe operator-provided value exists. This issue is fixed in version 2.58.0.
 </code>
 
+- [cyeezy08/Kimai-CVE-2026-52824-POC](https://github.com/cyeezy08/Kimai-CVE-2026-52824-POC)
 - [AzureADTrent/CVE-2026-52824](https://github.com/AzureADTrent/CVE-2026-52824)
 
 ### CVE-2026-52832 (2026-09-02)
@@ -14326,6 +14333,7 @@
 - [0xgh057r3c0n/CVE-2026-58138](https://github.com/0xgh057r3c0n/CVE-2026-58138)
 - [Procjevt/CVE-2026-58138](https://github.com/Procjevt/CVE-2026-58138)
 - [0xBlackash/CVE-2026-58138](https://github.com/0xBlackash/CVE-2026-58138)
+- [Ez4rd1x1/CVE-2026-58138-Research](https://github.com/Ez4rd1x1/CVE-2026-58138-Research)
 
 ### CVE-2026-58225 (2026-07-10)
 
@@ -14592,6 +14600,13 @@
 </code>
 
 - [abraxas/CVE-2026-62062](https://github.com/abraxas/CVE-2026-62062)
+
+### CVE-2026-62146 (2026-09-30)
+
+<code>A trust-boundary flaw in CRI-O's sandbox state persistence allows attacker-influenced pod metadata to overwrite CRI-O's own reserved sandbox bookkeeping; once reloaded as trusted after a restart, a later container recreate in that sandbox can expose a host-side runtime-management resource inside the container, enabling container escape.
+</code>
+
+- [TeamN4C/SG-2026-0026](https://github.com/TeamN4C/SG-2026-0026)
 
 ### CVE-2026-62183 (2026-07-20)
 
@@ -17238,6 +17253,8 @@
 - [ThomasPoppelgaard/netscaler-ctx697096-checker](https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker)
 - [techupdate24/citrix-netscaler-cve-2026-88771-rce](https://github.com/techupdate24/citrix-netscaler-cve-2026-88771-rce)
 - [SwiftSecur/CVE-2026-88771-HuntScript](https://github.com/SwiftSecur/CVE-2026-88771-HuntScript)
+- [bkchaudhari/NetScaler-CTX697096-Assessment-Script](https://github.com/bkchaudhari/NetScaler-CTX697096-Assessment-Script)
+- [emilstahl/pitscaler](https://github.com/emilstahl/pitscaler)
 
 ### CVE-2026-88772 (2026-09-27)
 
@@ -17247,6 +17264,13 @@
 - [watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772](https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772)
 - [murrez/CVE-2026-88772](https://github.com/murrez/CVE-2026-88772)
 - [FollowerSeize/CVE-2026-88772-POC](https://github.com/FollowerSeize/CVE-2026-88772-POC)
+
+### CVE-2026-88789 (2026-10-01)
+
+<code>Improper Restriction of XML External Entity Reference in the XSLT support extension (camel-quarkus-support-xalan) in Apache Camel Quarkus from 3.2.0 before 3.33.3 and from 3.34.0 before 3.40.0 on all platforms allows an attacker who supplies the XML document being transformed to read local files or issue requests to internal network locations via an external entity declaration in that document.\n\nThe extension supplies its own Xalan-backed TransformerFactory to the xslt component and registers it as the JAXP default. Xalan-J 2.7.x predates JAXP 1.5 and does not honour javax.xml.XMLConstants.ACCESS_EXTERNAL_DTD or ACCESS_EXTERNAL_STYLESHEET, so the external access restrictions Apache Camel applies to the TransformerFactory it creates were not in effect. On the xslt component path this affects message bodies that reach the transformer already as a javax.xml.transform.Source; bodies of other types are converted to a SAXSource by Apache Camel with external entities and external DTD loading disabled, and are not affected. Because the factory is also the JAXP default, other code in the application obtaining one through TransformerFactory.newInstance() loses the same restrictions without error.\n\nApplications are affected if they use any of camel-quarkus-xslt, camel-quarkus-xslt-saxon, camel-quarkus-tika or camel-quarkus-xmlsecurity, each of which brings the XSLT support extension onto the classpath. For all but camel-quarkus-xslt, the exposure is limited to the JAXP default factory, since those extensions do not perform XSLT transformations themselves.\n\nUsers are recommended to upgrade to version 3.33.3 or 3.40.0, which fixes this issue.
+</code>
+
+- [oscerd/CVE-2026-88789](https://github.com/oscerd/CVE-2026-88789)
 
 ### CVE-2026-88854 (2026-09-20)
 
@@ -17275,6 +17299,13 @@
 </code>
 
 - [uziii2208/CVE-2026-88899](https://github.com/uziii2208/CVE-2026-88899)
+
+### CVE-2026-88996 (2026-09-25)
+
+<code>The WPForms – AI Form Builder for WordPress – Contact Forms, Payment Forms, Survey Form, Quiz &amp; More plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via 'page_title' POST Parameter via {page_title} Smart Tag in all versions up to, and including, 2.0.2 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link. This is only exploitable on forms whose admin-authored confirmation message places the {page_title} Smart Tag inside an HTML attribute context.
+</code>
+
+- [dorkerdevil/wpforms-xss-fix-bypass](https://github.com/dorkerdevil/wpforms-xss-fix-bypass)
 
 ### CVE-2026-88997 (2026-09-23)
 
@@ -17376,6 +17407,13 @@
 
 - [HORKimhab/CVE-2026-91843](https://github.com/HORKimhab/CVE-2026-91843)
 
+### CVE-2026-92099 (2026-09-19)
+
+<code>The WPGraphQL Smart Cache WordPress plugin before 2.3.2 does not require authorisation or validate a caller-supplied query identifier before storing a persisted query from a request, allowing unauthenticated users to publish arbitrary query documents and claim query aliases before a site's own frontend registers them.
+</code>
+
+- [MS-0x404/CVE-2026-92099](https://github.com/MS-0x404/CVE-2026-92099)
+
 ### CVE-2026-92162
 - [0xSemizzz/CVE-2026-92162](https://github.com/0xSemizzz/CVE-2026-92162)
 
@@ -17406,6 +17444,13 @@
 </code>
 
 - [muhammad-usama-sardar/intra-handshake-fail](https://github.com/muhammad-usama-sardar/intra-handshake-fail)
+
+### CVE-2026-92966 (2026-10-01)
+
+<code>The The Appointment Booking Plugin – LatePoint | Calendar &amp; Scheduling for WordPress plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 5.7.0. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes. The payload is planted during the unauthenticated booking flow and triggered when the Customer Cabinet block rendered by render_customer_dashboard() outputs the stored name into the content stream, where WordPress core's do_shortcode filter at priority 11 re-parses and executes it.
+</code>
+
+- [murrez/CVE-2026-92966](https://github.com/murrez/CVE-2026-92966)
 
 ### CVE-2026-93349 (2026-09-23)
 
@@ -17562,6 +17607,13 @@
 </code>
 
 - [d6fault/CVE-2026-95675](https://github.com/d6fault/CVE-2026-95675)
+
+### CVE-2026-96349 (2026-09-30)
+
+<code>Unauthenticated Remote Code Execution (RCE) in SiteSkite &lt;= 2.1.8 versions.
+</code>
+
+- [murrez/CVE-2026-96349](https://github.com/murrez/CVE-2026-96349)
 
 ### CVE-2026-96512 (2026-09-23)
 
@@ -17785,6 +17837,7 @@
 </code>
 
 - [murrez/CVE-2026-102425](https://github.com/murrez/CVE-2026-102425)
+- [tonydelouvre/CVE-2026-102425](https://github.com/tonydelouvre/CVE-2026-102425)
 
 ### CVE-2026-102427 (2026-09-30)
 
@@ -19942,6 +19995,7 @@
 - [ixZODiAK/CVE-2025-8110](https://github.com/ixZODiAK/CVE-2025-8110)
 - [9xh4kv/CVE-2025-8110](https://github.com/9xh4kv/CVE-2025-8110)
 - [r3vpwnx/CVE-2025-8110](https://github.com/r3vpwnx/CVE-2025-8110)
+- [Makis6/CVE-2025-8110](https://github.com/Makis6/CVE-2025-8110)
 
 ### CVE-2025-8191 (2025-07-26)
 
@@ -21676,6 +21730,7 @@
 - [xjoker/lenovo_y700_tb320fc_on_CVE-2025-21479](https://github.com/xjoker/lenovo_y700_tb320fc_on_CVE-2025-21479)
 - [RamenFast/zenfone9-root](https://github.com/RamenFast/zenfone9-root)
 - [diyiqiuye/CVE-2025-21479-FX5P](https://github.com/diyiqiuye/CVE-2025-21479-FX5P)
+- [diyiqiuye/CVE-2025-21479-FX3](https://github.com/diyiqiuye/CVE-2025-21479-FX3)
 
 ### CVE-2025-21574 (2025-04-15)
 
@@ -22323,7 +22378,8 @@
 - [yym8538/CVE-2025-24813](https://github.com/yym8538/CVE-2025-24813)
 - [Mega-Starmie/tomcat-cve-2025-24813-lab](https://github.com/Mega-Starmie/tomcat-cve-2025-24813-lab)
 - [SebastianMautner/nuclei-CVE-2025-24813](https://github.com/SebastianMautner/nuclei-CVE-2025-24813)
-- [e5dfdd568a75282b712b6d93a7a18e12/CVE-2025-24813](https://github.com/e5dfdd568a75282b712b6d93a7a18e12/CVE-2025-24813)
+- [Si13NTTT/CVE-2025-24813](https://github.com/Si13NTTT/CVE-2025-24813)
+- [HwangEojin/CVE-2025-24813-Tomcat11-Lab](https://github.com/HwangEojin/CVE-2025-24813-Tomcat11-Lab)
 
 ### CVE-2025-24893 (2025-02-20)
 
@@ -23970,7 +24026,7 @@
 - [HeltonPojo/CVE-2025-32432](https://github.com/HeltonPojo/CVE-2025-32432)
 - [PsyGuy007-sys/craftcms-cve-2025-32432-rce](https://github.com/PsyGuy007-sys/craftcms-cve-2025-32432-rce)
 - [EzraMansor/CVE-2025-32432-PoC](https://github.com/EzraMansor/CVE-2025-32432-PoC)
-- [e5dfdd568a75282b712b6d93a7a18e12/CVE-2025-32432](https://github.com/e5dfdd568a75282b712b6d93a7a18e12/CVE-2025-32432)
+- [Si13NTTT/CVE-2025-32432](https://github.com/Si13NTTT/CVE-2025-32432)
 - [P34NUT2/CVE-2025-32432-exploit-by-P34NUT](https://github.com/P34NUT2/CVE-2025-32432-exploit-by-P34NUT)
 
 ### CVE-2025-32433 (2025-04-16)
@@ -25193,6 +25249,9 @@
 </code>
 
 - [yggcwhat/CVE-2025-46080](https://github.com/yggcwhat/CVE-2025-46080)
+
+### CVE-2025-46087
+- [Rollingzzzzz/heif-heist-lab](https://github.com/Rollingzzzzz/heif-heist-lab)
 
 ### CVE-2025-46099 (2025-07-23)
 
@@ -27637,6 +27696,7 @@
 - [razureink/cve-2025-55182-react2shell_reproduction](https://github.com/razureink/cve-2025-55182-react2shell_reproduction)
 - [indra-031/React2Shell-Exploit-CVE-2025-55182](https://github.com/indra-031/React2Shell-Exploit-CVE-2025-55182)
 - [Phucc29/CVE-2025-55182](https://github.com/Phucc29/CVE-2025-55182)
+- [3SC0133/CVE-2025-55182-React2Shell](https://github.com/3SC0133/CVE-2025-55182-React2Shell)
 - [CerberusMrXi/CVE-2025-55182-Advanced-React-Server-Components-RCE-Exploit](https://github.com/CerberusMrXi/CVE-2025-55182-Advanced-React-Server-Components-RCE-Exploit)
 - [dotnetguard/CVE-2025-55182-Exploit](https://github.com/dotnetguard/CVE-2025-55182-Exploit)
 - [aisha-jimoh/cve-2025-55182-react2shell-analysis](https://github.com/aisha-jimoh/cve-2025-55182-react2shell-analysis)
@@ -30322,7 +30382,7 @@
 - [ExploreUnknowed/CVE-2025-67303](https://github.com/ExploreUnknowed/CVE-2025-67303)
 - [materaj2/exploit_cve_2025_67303](https://github.com/materaj2/exploit_cve_2025_67303)
 - [jcaz2378/ComfyUIrce](https://github.com/jcaz2378/ComfyUIrce)
-- [e5dfdd568a75282b712b6d93a7a18e12/CVE-2026-22777](https://github.com/e5dfdd568a75282b712b6d93a7a18e12/CVE-2026-22777)
+- [Si13NTTT/CVE-2026-22777](https://github.com/Si13NTTT/CVE-2026-22777)
 
 ### CVE-2025-67315
 - [r-pradyun/CVE-2025-67315](https://github.com/r-pradyun/CVE-2025-67315)
@@ -42162,6 +42222,7 @@
 - [0x7556/CVE-2024-55591](https://github.com/0x7556/CVE-2024-55591)
 - [UMChacker/CVE-2024-55591-POC](https://github.com/UMChacker/CVE-2024-55591-POC)
 - [uLl0a/cve-2024-55591-poc](https://github.com/uLl0a/cve-2024-55591-poc)
+- [gotr00t0day/CVE-2024-55591](https://github.com/gotr00t0day/CVE-2024-55591)
 
 ### CVE-2024-55656 (2025-01-08)
 
