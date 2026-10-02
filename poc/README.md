@@ -3240,7 +3240,7 @@
 
 ### CVE-2026-11499 (2026-06-08)
 
-<code>A vulnerability was determined in Tenda HG7HG9 and HG10 300001138_en_xpon. This affects the function formDOMAINBLK of the file /boaform/formDOMAINBLK. Executing a manipulation of the argument blkDomain can lead to stack-based buffer overflow. The attack may be performed from remote.
+<code>A vulnerability was determined in Tenda HG7, HG9 and HG10 300001138_en_xpon. This affects the function formDOMAINBLK of the file /boaform/formDOMAINBLK. Executing a manipulation of the argument blkDomain can lead to stack-based buffer overflow. The attack may be performed from remote.
 </code>
 
 - [0xBlackash/CVE-2026-11499](https://github.com/0xBlackash/CVE-2026-11499)
@@ -3263,7 +3263,7 @@
 
 ### CVE-2026-11553 (2026-06-08)
 
-<code>A vulnerability was found in Tenda HG7HG9 and HG10 300001138_en_xpon. This affects the function formPPPEdit of the file /boaform/formPPPEdit. The manipulation of the argument encodename results in stack-based buffer overflow. The attack can be launched remotely. The exploit has been made public and could be used.
+<code>A vulnerability was found in Tenda HG7, HG9 and HG10 300001138_en_xpon. This affects the function formPPPEdit of the file /boaform/formPPPEdit. The manipulation of the argument encodename results in stack-based buffer overflow. The attack can be launched remotely. The exploit has been made public and could be used.
 </code>
 
 - [gduma-phData/patch-CVE-2026-11553](https://github.com/gduma-phData/patch-CVE-2026-11553)
@@ -3652,6 +3652,14 @@
 </code>
 
 - [0xmrma/CVE-2026-14361](https://github.com/0xmrma/CVE-2026-14361)
+
+### CVE-2026-14378 (2026-10-02)
+
+<code>The DevKit Pro plugin for WordPress is vulnerable to Authentication Bypass Leading to Administrator Account Takeover in all versions up to, and including, 2.3.0 This is due to the `revert_switch` handler trusting the attacker-controlled `original_user_id` cookie as the privileged identity: `verify_nonce_and_capability()` incorrectly checks the `manage_options` capability on the user identified by the cookie rather than on the actual requester via `current_user_can()`, while the switch-back form and a valid session-bound nonce are emitted publicly via `wp_footer` to any visitor — including unauthenticated users — whenever that cookie is present. This makes it possible for unauthenticated attackers to set the `original_user_id` cookie to any administrator's user ID, collect the rendered nonce, and POST it back to the `revert_switch` handler, causing `wp_set_auth_cookie()` to be called with the administrator's ID and granting the attacker a full administrator-level authenticated session and complete site takeover.
+</code>
+
+- [anoxhunterdump-ctrl/CVE-2026-14378-DevKit-Pro-Auth-Bypass](https://github.com/anoxhunterdump-ctrl/CVE-2026-14378-DevKit-Pro-Auth-Bypass)
+- [murrez/CVE-2026-14378](https://github.com/murrez/CVE-2026-14378)
 
 ### CVE-2026-14382 (2026-07-01)
 
@@ -4273,6 +4281,13 @@
 
 - [rmhowe425/POC-CVE-2026-19295](https://github.com/rmhowe425/POC-CVE-2026-19295)
 
+### CVE-2026-19445 (2026-09-30)
+
+<code>A remote, unauthenticated TLS client can make a server crash or call\nthrough a freed pointer if its sni_callback assigns a different context to\nSSLSocket.context (the documented way to select a certificate per server\nname) and nothing else keeps the original ssl.SSLContext alive. Typical\ncases are servers that create an SSLContext per connection or replace it\nwhile connections are open; servers that wrap their listening socket with\nit are not affected.\n\n\nMitigation: keep a reference to every SSLContext that sets sni_callback for\nthe lifetime of the server. TLS clients are not affected.
+</code>
+
+- [abraxas/cve-2026-19445-sni-uaf](https://github.com/abraxas/cve-2026-19445-sni-uaf)
+
 ### CVE-2026-19478 (2026-08-17)
 
 <code>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 before 18.11.11, 19.0 before 19.0.8, 19.1 before 19.1.6, and 19.2 before 19.2.4 that under certain conditions could allow an unauthenticated user to remotely modify or delete public projects and user data via a GraphQL directive.
@@ -4313,6 +4328,13 @@
 </code>
 
 - [HORKimhab/CVE-2026-19516](https://github.com/HORKimhab/CVE-2026-19516)
+
+### CVE-2026-19553 (2026-09-30)
+
+<code>ssl.SSLContext.wrap_bio() didn't require the server_hostname argument\nto not be None if ssl.SSLContext.check_hostname was set. Due to a\nmissing parameter check in SSLObject, if the server_hostname argument\nisn't supplied then hostname verification would be silently skipped.\n\n\nThis defect could lead to programs where certificate hostname verification\n*appeared* to be succeeding with SSLContext.check_hostname = True and no\nValueError being raised due to misconfiguration.\n\n\nIf the program passes a server_hostname value that isn't an empty string\nor None to any of these APIs then certificate hostname verification\nproceeds as expected and the program is not affected by this vulnerability.\n\n\nMitigating this vulnerability doesn't require updating Python or applying\nthe patch. To mitigate, pass a valid non-None and non-empty\nserver_hostname value to SSLContext.wrap_bio(),\nasyncio.create_connection(), or asyncio.loop.start_tls() and\ncertificate hostname verification will proceed as expected. Upgrading to\nthe latest version of Python or applying the patch only changes the\nbehavior from silently skipping hostname verification to raising a\nValueError, similar to SSLContext.wrap_socket(), when server_hostname\nisn't supplied.
+</code>
+
+- [abraxas/cve-2026-19553-wrap-bio](https://github.com/abraxas/cve-2026-19553-wrap-bio)
 
 ### CVE-2026-19586 (2026-08-20)
 
@@ -4359,6 +4381,13 @@
 </code>
 
 - [murrez/CVE-2026-19658](https://github.com/murrez/CVE-2026-19658)
+
+### CVE-2026-19660 (2026-10-02)
+
+<code>The Divi Membership plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 2.3.0. The `process_paypal_callback` function, hooked to the `init` action, accepts a base64-encoded `paypal_param` GET parameter with no IPN validation, no cryptographic signature check, no ownership verification, and no nonce, allowing it to trust an entirely attacker-controlled user ID value that is passed directly to `wp_set_current_user()` and `wp_set_auth_cookie()`. This makes it possible for unauthenticated attackers to log in as any existing WordPress user — including administrators — by supplying an arbitrary user ID in the `paypal_param` GET parameter, resulting in full site takeover. The vulnerability is further compounded by the fact that the PayPal gateway class is instantiated unconditionally regardless of whether PayPal is enabled or configured, ensuring the vulnerable hook is always registered on every front-end request.
+</code>
+
+- [murrez/CVE-2026-19660](https://github.com/murrez/CVE-2026-19660)
 
 ### CVE-2026-19679 (2026-08-14)
 
@@ -6133,6 +6162,13 @@
 </code>
 
 - [0xNDI/CVE-2026-24294](https://github.com/0xNDI/CVE-2026-24294)
+
+### CVE-2026-24301 (2026-08-18)
+
+<code>Improper neutralization of special elements used in a command ('command injection') in Microsoft Copilot allows an unauthorized attacker to disclose information over a network.
+</code>
+
+- [CSOAI-ORG/memory-poisoning-axis](https://github.com/CSOAI-ORG/memory-poisoning-axis)
 
 ### CVE-2026-24306 (2026-01-22)
 
@@ -10355,6 +10391,7 @@
 - [dodeepsink/CVE-2026-39987.py](https://github.com/dodeepsink/CVE-2026-39987.py)
 - [Ghxstsec/CVE-2026-39987](https://github.com/Ghxstsec/CVE-2026-39987)
 - [stapat1245/CVE-2026-39987-PoC](https://github.com/stapat1245/CVE-2026-39987-PoC)
+- [Th3Purge/CVE-2026-39987](https://github.com/Th3Purge/CVE-2026-39987)
 - [julichaan/CVE-2026-39987_POC](https://github.com/julichaan/CVE-2026-39987_POC)
 - [mfahdk/CVE-2026-39987_RCE_PoC](https://github.com/mfahdk/CVE-2026-39987_RCE_PoC)
 - [LaArana12/CVE-2026-39987-Marimo-Preauth-RCE](https://github.com/LaArana12/CVE-2026-39987-Marimo-Preauth-RCE)
@@ -11657,6 +11694,7 @@
 - [DENNISDGR/CVE-2026-44011-poc](https://github.com/DENNISDGR/CVE-2026-44011-poc)
 - [Cyberuser-hash/CVE-2026-44011-craft-rce-poc](https://github.com/Cyberuser-hash/CVE-2026-44011-craft-rce-poc)
 - [khush-613/CVE-2026-44011-poc](https://github.com/khush-613/CVE-2026-44011-poc)
+- [0xyngtg/CraftCMS-CVE-2026-44011-PoC-RCE](https://github.com/0xyngtg/CraftCMS-CVE-2026-44011-PoC-RCE)
 
 ### CVE-2026-44024 (2026-07-08)
 
@@ -14076,7 +14114,7 @@
 <code>Generic IO &amp; Memory Access driver for PCs provided by TOSHIBA CORPORATION and Dynabook Inc. exposes its IOCTL with insufficient access control. A logged-in user with no administrative privilege may access physical memory.
 </code>
 
-- [valium007/qiomem](https://github.com/valium007/qiomem)
+- [valium007/CVE-2026-56129](https://github.com/valium007/CVE-2026-56129)
 
 ### CVE-2026-56139 (2026-07-06)
 
@@ -14251,9 +14289,6 @@
 
 - [Is4yev/CVE-2026-57830](https://github.com/Is4yev/CVE-2026-57830)
 
-### CVE-2026-57836
-- [rahulreddykarne/CVE-2026-57836-Confluent_Kafka](https://github.com/rahulreddykarne/CVE-2026-57836-Confluent_Kafka)
-
 ### CVE-2026-57850 (2026-07-10)
 
 <code>RustDesk before 1.4.9 does not enforce a session's authorized connection scope on the server side, so a peer granted a limited session type (FileTransfer, PortForward, ViewCamera, or Terminal) can send control messages and login options reserved for a full Remote session. An authenticated remote peer can exploit this missing scope check to act outside its granted scope, injecting out-of-scope control messages to observe and control the host beyond the permissions it was given.
@@ -14274,6 +14309,13 @@
 </code>
 
 - [zylideum/CVE-2026-57858](https://github.com/zylideum/CVE-2026-57858)
+
+### CVE-2026-57973 (2026-07-14)
+
+<code>Time-of-check time-of-use (toctou) race condition in Windows Subsystem for Linux allows an authorized attacker to perform tampering locally.
+</code>
+
+- [riddhimaan-sth404/CVE-2026-57973](https://github.com/riddhimaan-sth404/CVE-2026-57973)
 
 ### CVE-2026-58025 (2026-07-01)
 
@@ -14778,6 +14820,13 @@
 - [imbas007/CVE-2026-63223-POC](https://github.com/imbas007/CVE-2026-63223-POC)
 - [shinthink/CVE-2026-63223](https://github.com/shinthink/CVE-2026-63223)
 
+### CVE-2026-63292 (2026-10-01)
+
+<code>Stack-based buffer overflow in mod_vhost_alias in Apache Software Foundation Apache HTTP Server through 2.4.68 on all platforms allows a remote client to cause a denial of service or potentially execute arbitrary code via an HTTP request with a Host header exceeding 8192 bytes when VirtualDocumentRoot uses a hostname format specifier and LimitRequestFieldSize is raised above the default.\n\nUsers are recommended to upgrade to version 2.4.69, which fixes this issue.
+</code>
+
+- [0xBlackash/CVE-2026-63292](https://github.com/0xBlackash/CVE-2026-63292)
+
 ### CVE-2026-63520 (2026-08-11)
 
 <code>Improper input validation in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network.
@@ -14855,6 +14904,7 @@
 - [Become-ILLUSORY/cve-2026-64560-a16](https://github.com/Become-ILLUSORY/cve-2026-64560-a16)
 - [Wangs-official/opace6-cve-2026-64560](https://github.com/Wangs-official/opace6-cve-2026-64560)
 - [qingle009/opace6-cve-2026-64560](https://github.com/qingle009/opace6-cve-2026-64560)
+- [Meniben/redmi14c-pond-cve-2026-64560](https://github.com/Meniben/redmi14c-pond-cve-2026-64560)
 
 ### CVE-2026-64561 (2026-08-04)
 
@@ -17252,6 +17302,7 @@
 - [SwiftSecur/CVE-2026-88771-HuntScript](https://github.com/SwiftSecur/CVE-2026-88771-HuntScript)
 - [bkchaudhari/NetScaler-CTX697096-Assessment-Script](https://github.com/bkchaudhari/NetScaler-CTX697096-Assessment-Script)
 - [emilstahl/pitscaler](https://github.com/emilstahl/pitscaler)
+- [orjanj/netscaler_threat_hunt_helper](https://github.com/orjanj/netscaler_threat_hunt_helper)
 
 ### CVE-2026-88772 (2026-09-27)
 
@@ -17589,6 +17640,13 @@
 
 - [murrez/CVE-2026-94132](https://github.com/murrez/CVE-2026-94132)
 
+### CVE-2026-94541 (2026-10-02)
+
+<code>The WPMobile.App – Android and iOS App Builder plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 11.82 This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to exfiltrate password-reset URLs for arbitrary users, including administrators, mirrored into the push queue by the mail-to-push feature, and use those URLs to take over the targeted accounts. This exploit chain requires the plugin's mail-to-push feature (wpmobile_auto_mail=1) to be enabled, as that setting is what causes outbound WordPress password-reset emails — including the reset URL and key — to be mirrored into the push row queue where they become accessible to the attacker.
+</code>
+
+- [anoxhunterdump-ctrl/CVE-2026-94541-WPMobileApp-AuthBypass](https://github.com/anoxhunterdump-ctrl/CVE-2026-94541-WPMobileApp-AuthBypass)
+
 ### CVE-2026-94545 (2026-09-30)
 
 <code>Satori is a library to convert HTML and CSS to SVG. Starting in version 0.0.27 and prior to version 0.33.5, Satori does not properly escape certain values before including them in generated SVG output. This can allow crafted values to be interpreted as SVG markup. The impact depends on how the generated SVG is consumed. Version 0.33.5 contains a patch. No complete workaround exists besides upgrading. Applications that cannot immediately upgrade should not render attacker-controlled content with Satori.
@@ -17748,6 +17806,13 @@
 </code>
 
 - [nth347/mediawiki-CVE-2026-100382](https://github.com/nth347/mediawiki-CVE-2026-100382)
+
+### CVE-2026-100520 (2026-09-26)
+
+<code>Laranode versions before 1.2.1 contain a path traversal vulnerability in the POST /filemanager/upload-file endpoint that allows authenticated users to write arbitrary files outside their home directory. Attackers can supply directory traversal sequences in the path parameter to write PHP files into other tenants' web roots and execute code as those tenants.
+</code>
+
+- [wvllxe/CVE-2026-100520-laranode-path-traversal](https://github.com/wvllxe/CVE-2026-100520-laranode-path-traversal)
 
 ### CVE-2026-100633 (2026-09-26)
 
@@ -17927,8 +17992,29 @@
 
 - [BomboBombone/CVE-2026-103585](https://github.com/BomboBombone/CVE-2026-103585)
 
+### CVE-2026-103752 (2026-10-01)
+
+<code>Unauthenticated Privilege Escalation in Authorizer &lt;= 3.15.3 versions.
+</code>
+
+- [anoxhunterdump-ctrl/CVE-2026-103752-Authorizer-Privilege-Escalation](https://github.com/anoxhunterdump-ctrl/CVE-2026-103752-Authorizer-Privilege-Escalation)
+
+### CVE-2026-103922 (2026-10-01)
+
+<code>Capacitor is a cross-platform native runtime for web applications. From 6.0.0 until 6.2.2, 7.6.9, 8.3.5, 8.4.3, and 8.5.1, the Android and iOS WebView navigation guard validates a target URL's host and scheme but not its path, allowing a victim who activates an untrusted link to navigate a frame to /_capacitor_http_interceptor_. The native proxy can fetch an attacker-selected URL and return the response as a document at the application's own origin, allowing script in that response to access same-origin storage, cookies, and registered Capacitor plugin capabilities. Applications remain affected when CapacitorHttp is disabled because affected releases serve the proxy path regardless of that setting. This issue is fixed in versions 6.2.2, 7.6.9, 8.3.5, 8.4.3, and 8.5.1.
+</code>
+
+- [techupdate24/capacitor-flaw-cve-2026-103922](https://github.com/techupdate24/capacitor-flaw-cve-2026-103922)
+
 ### CVE-2026-103977
 - [pervinzahidli/CVE-2026-103977](https://github.com/pervinzahidli/CVE-2026-103977)
+
+### CVE-2026-104051 (2026-10-01)
+
+<code>PictShare before 3.7.1 contains an information disclosure vulnerability that allows unauthenticated attackers to obtain the secret delete_code and uploader metadata by calling the API::info() endpoint which returns the complete raw metadata object without a field whitelist. Attackers can use the publicly visible file hash to retrieve the delete_code via the info API and then invoke the delete API to permanently delete arbitrary files, while also exposing uploader IP, User Agent, remote port, and SHA-1 hash, resulting in loss of content integrity, availability, and uploader privacy.
+</code>
+
+- [wvllxe/CVE-2026-104051-pictshare-info-disclosure](https://github.com/wvllxe/CVE-2026-104051-pictshare-info-disclosure)
 
 ### CVE-2026-104110
 - [pervinzahidli/CVE-2026-104110](https://github.com/pervinzahidli/CVE-2026-104110)
@@ -17939,6 +18025,14 @@
 </code>
 
 - [ShadowForge-Cyber/CVE-2026-104286-POC](https://github.com/ShadowForge-Cyber/CVE-2026-104286-POC)
+- [techupdate24/fortimail-zero-day-cve-2026-104286](https://github.com/techupdate24/fortimail-zero-day-cve-2026-104286)
+
+### CVE-2026-104356 (2026-10-01)
+
+<code>PictShare before version 3.7.1 contains a weak randomness vulnerability where the getRandomString() function uses the non-cryptographic rand() PRNG to generate the delete_code authorization token in src/inc/core.php. Attackers can predict or infer the PRNG state to guess valid delete_code values and perform unauthorized deletion of hosted files without needing to read the code from the info endpoint.
+</code>
+
+- [wvllxe/CVE-2026-104356-pictshare-weak-delete-code](https://github.com/wvllxe/CVE-2026-104356-pictshare-weak-delete-code)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -22341,6 +22435,7 @@
 
 - [r1beirin/Exploit-CVE-2025-24801](https://github.com/r1beirin/Exploit-CVE-2025-24801)
 - [fatkz/CVE-2025-24801](https://github.com/fatkz/CVE-2025-24801)
+- [kevenpanchal/CVE-2025-24801-GLPI-10.0.17-and-prior-Authenticated-RCE](https://github.com/kevenpanchal/CVE-2025-24801-GLPI-10.0.17-and-prior-Authenticated-RCE)
 
 ### CVE-2025-24813 (2025-03-10)
 
@@ -33855,7 +33950,7 @@
 </code>
 
 - [horizon3ai/CVE-2024-9465](https://github.com/horizon3ai/CVE-2024-9465)
-- [mustafaakalin/CVE-2024-9465](https://github.com/mustafaakalin/CVE-2024-9465)
+- [rszqx/CVE-2024-9465](https://github.com/rszqx/CVE-2024-9465)
 - [Qlng/CVE-2024-9465](https://github.com/Qlng/CVE-2024-9465)
 
 ### CVE-2024-9466 (2024-10-09)
@@ -36728,7 +36823,6 @@
 - [ptd200110/CVE-2024-27198-SOC-Lab](https://github.com/ptd200110/CVE-2024-27198-SOC-Lab)
 - [BilalAlshiekh912/Incident-Response-Report-TeamCity-Compromise-CVE-2024-27198-](https://github.com/BilalAlshiekh912/Incident-Response-Report-TeamCity-Compromise-CVE-2024-27198-)
 - [kxom9ks/CVE-2024-27198-TeamCity](https://github.com/kxom9ks/CVE-2024-27198-TeamCity)
-- [abiral-timalsina/Cyber-Defenders-lab-](https://github.com/abiral-timalsina/Cyber-Defenders-lab-)
 
 ### CVE-2024-27292 (2024-02-29)
 
