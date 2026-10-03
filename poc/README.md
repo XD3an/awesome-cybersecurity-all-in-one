@@ -1404,6 +1404,7 @@
 - [CarlosEduardoPM/CVE-2026-4480-POC](https://github.com/CarlosEduardoPM/CVE-2026-4480-POC)
 - [Vusal777/CVE-2026-4480-exploit-poc](https://github.com/Vusal777/CVE-2026-4480-exploit-poc)
 - [ClearLotus-git/CVE-2026-4480-PoC](https://github.com/ClearLotus-git/CVE-2026-4480-PoC)
+- [timgad794/Abducted-HTB-Writeup](https://github.com/timgad794/Abducted-HTB-Writeup)
 
 ### CVE-2026-4484 (2026-03-26)
 
@@ -3902,6 +3903,14 @@
 
 - [Nxploited/CVE-2026-15981](https://github.com/Nxploited/CVE-2026-15981)
 - [katranSefa/CVE-2026-15981](https://github.com/katranSefa/CVE-2026-15981)
+
+### CVE-2026-15989 (2026-10-01)
+
+<code>The Super Forms – Drag &amp; Drop Form Builder plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 6.3.316. This is due to the Register &amp; Login add-on's before_email_success_msg() function whitelisting the client-submitted 'role' key and copying it into the user-data array that is passed directly to wp_insert_user(), without validating the submitted role against the administrator-configured register_user_role, without an allow-list, and without any current_user_can() capability check. This makes it possible for unauthenticated attackers to register a new account with the Administrator role by injecting role=administrator into the data submitted to any published Super Forms registration form (register_login_action='register').
+</code>
+
+- [fl0ydsec/CVE-2026-15989](https://github.com/fl0ydsec/CVE-2026-15989)
+- [antid00t/CVE-2026-15989](https://github.com/antid00t/CVE-2026-15989)
 
 ### CVE-2026-16219 (2026-07-19)
 
@@ -10491,6 +10500,7 @@
 </code>
 
 - [0xgh057r3c0n/CVE-2026-40281](https://github.com/0xgh057r3c0n/CVE-2026-40281)
+- [MRdark-ops/CVE-2026-40281-exploit](https://github.com/MRdark-ops/CVE-2026-40281-exploit)
 
 ### CVE-2026-40345 (2026-08-20)
 
@@ -11078,6 +11088,13 @@
 
 - [pvharmo2/gha-lab-677752506e](https://github.com/pvharmo2/gha-lab-677752506e)
 
+### CVE-2026-42322 (2026-09-25)
+
+<code>Piwigo is a full featured open source photo gallery application for the web. Prior to 16.4.0, admin/themes_standard_pages.php validates uploaded logo content by MIME type but reuses the attacker-controlled extension from std_pgs_logo when constructing the stored filename. An authenticated administrator can upload image content with a server-executable final extension, causing the file to be placed in the web-accessible logo directory and executed when requested if the web server handles that extension. This can permit arbitrary command execution, data disclosure, modification, persistence, and service disruption. This vulnerability is fixed in 16.4.0.
+</code>
+
+- [LipeOzyy/CVE-2026-42322](https://github.com/LipeOzyy/CVE-2026-42322)
+
 ### CVE-2026-42527 (2026-07-06)
 
 <code>Deserialization of Untrusted Data vulnerability in Apache Camel.\n\nThe default ObjectInputFilter pattern shipped with several Apache Camel components for defense-in-depth deserialization filtering ('java.**;javax.**;org.apache.camel.**;!*', or the no-'javax.**' variant in the aggregation-repository components) uses a recursive 'java.**' glob that admits classes whose hashCode/equals/readObject methods perform network I/O, notably java.net.URL and java.net.InetAddress. When an attacker can deliver a Java-serialized payload to an affected Camel consumer, deserialization of a HashMap (or any collection that calls hashCode on its elements) containing java.net.URL keys causes the JVM to issue DNS queries to the attacker-supplied host during the deserialization side-effect. The class-level filter check passes because the resulting object's class (HashMap) is allow-listed; the DNS query is observable on an attacker-controlled DNS server, providing an out-of-band side channel. The exposure is highest on the camel-jms family because JmsBinding.extractBodyFromJms invokes ObjectMessage.getObject() unconditionally when mapJmsMessage=true (default). Affected components: camel-jms, camel-sjms, camel-amqp, camel-mina, camel-netty, camel-netty-http, camel-vertx-http, camel-infinispan, and the aggregation repository components camel-leveldb, camel-cassandraql, camel-consul, camel-sql (JDBC aggregation repository).\nThis issue affects Apache Camel: from 4.14.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to a version that contains the CAMEL-23372 fix once available: 4.21.0 for the 4.21.x line, 4.18.3 for the 4.18.x line, and 4.14.8 for the 4.14.x line. For deployments that cannot upgrade immediately, configure a JMS-provider-side allow-list (Apache ActiveMQ Artemis 'deserializationAllowList' / 'deserializationDenyList', Apache ActiveMQ Classic 'org.apache.activemq.SERIALIZABLE_PACKAGES') as the primary mitigation, and/or override the in-code default via the endpoint-level 'deserializationFilter' option or the JVM-wide '-Djdk.serialFilter' system property with an explicit deny: '!java.net.**;java.**;javax.**;org.apache.camel.**;!*' (or '!java.net.**;java.**;org.apache.camel.**;!*' for the aggregation-repository components, which do not include javax.**).
@@ -11155,6 +11172,7 @@
 </code>
 
 - [fineman999/POC_CVE-2026-42589](https://github.com/fineman999/POC_CVE-2026-42589)
+- [codeb0ssx/CVE-2026-42589xCVE-2026-40281-PoC](https://github.com/codeb0ssx/CVE-2026-42589xCVE-2026-40281-PoC)
 
 ### CVE-2026-42613 (2026-05-11)
 
@@ -11356,6 +11374,7 @@
 - [nihan-silent-reign/CVE-2026-43284-DIRTY-FRAG-](https://github.com/nihan-silent-reign/CVE-2026-43284-DIRTY-FRAG-)
 - [a2333c/DFRoot](https://github.com/a2333c/DFRoot)
 - [coey0814/DirtyFrag-Galaxy](https://github.com/coey0814/DirtyFrag-Galaxy)
+- [ankitrawatgit/DirtyFrag-Android-Root-Jailbreak](https://github.com/ankitrawatgit/DirtyFrag-Android-Root-Jailbreak)
 
 ### CVE-2026-43494 (2026-05-21)
 
@@ -11524,6 +11543,7 @@
 - [shubhampathak65/CVE-2026-43499](https://github.com/shubhampathak65/CVE-2026-43499)
 - [YUE546/IQOO-neo7-ghostlock-43499](https://github.com/YUE546/IQOO-neo7-ghostlock-43499)
 - [yexiaoqq/rmg-s9110-research](https://github.com/yexiaoqq/rmg-s9110-research)
+- [alfzki/ghostlock-app](https://github.com/alfzki/ghostlock-app)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -12115,6 +12135,13 @@
 </code>
 
 - [GabrielHA12/Termix-research](https://github.com/GabrielHA12/Termix-research)
+
+### CVE-2026-45805 (2026-07-15)
+
+<code>Penpot is an open-source design tool for design and code collaboration. Prior to 2.15.0, Penpot MCP's mcp/packages/server/src/ReplServer.ts bound the ReplServer to 0.0.0.0:4403 and exposed an unauthenticated /execute endpoint that passed the code field to PluginBridge.executePluginTask(), allowing anyone on the network to execute JavaScript on the server. This issue is fixed in version 2.15.0.
+</code>
+
+- [overgrowncarrot1/PenPot-RCE](https://github.com/overgrowncarrot1/PenPot-RCE)
 
 ### CVE-2026-45806 (2026-07-15)
 
@@ -14030,6 +14057,13 @@
 
 - [junfuture1103/CVE-2026-55511](https://github.com/junfuture1103/CVE-2026-55511)
 
+### CVE-2026-55559 (2026-08-28)
+
+<code>Yamcs is a mission control framework. Prior to 5.12.8 and 5.13.2, Yamcs inserts templateArgs from POST /api/instances and PATCH /api/instances/{instance} into YAML through VarStatement.append in yamcs-core/src/main/java/org/yamcs/templating/VarStatement.java without YAML-context escaping. The rendered configuration is parsed by YamcsServer.createInstance and loaded by YamcsServerInstance, allowing an attacker to inject a services entry for org.yamcs.ProcessRunner. Deployments without security.yaml expose the operation through the guest superuser, while secured deployments require SystemPrivilege.CreateInstances. Successful exploitation executes commands as the Yamcs service account. This issue is fixed in versions 5.12.8 and 5.13.2.
+</code>
+
+- [MRdark-ops/CVE-2026-55559](https://github.com/MRdark-ops/CVE-2026-55559)
+
 ### CVE-2026-55579 (2026-07-27)
 
 <code>Pheditor is a single-file editor and file manager written in PHP. From version 2.0.1 to before version 2.0.6, Pheditor ships with a hardcoded default password admin (SHA-512 hash stored at pheditor.php:11). There is no mechanism to force a password change on first login. Any deployment using the default credentials grants an attacker full access to the file editor, file upload, and terminal features, enabling arbitrary file read/write and remote code execution. This issue has been patched in version 2.0.6.
@@ -15038,7 +15072,7 @@
 
 ### CVE-2026-64849 (2026-08-17)
 
-<code>MLflow is an open source AI engineering platform for agents, large language models, and machine learning models. Prior to 3.15.0, the unauthenticated POST /api/2.0/mlflow/webhooks/{id}/test endpoint calls _validate_webhook_url() in mlflow/utils/validation.py only for the original URL while mlflow/webhooks/delivery.py follows redirects and re-resolves the hostname without pinning the validated address, allowing attackers to reach internal or cloud metadata services and receive response_status and response_body. This issue is fixed in version 3.15.0.
+<code>MLflow is an open source AI engineering platform for agents, large language models, and machine learning models. Starting in 3.3.0 and prior to 3.15.0, the unauthenticated POST /api/2.0/mlflow/webhooks/{id}/test endpoint calls _validate_webhook_url() in mlflow/utils/validation.py only for the original URL while mlflow/webhooks/delivery.py follows redirects and re-resolves the hostname without pinning the validated address, allowing attackers to reach internal or cloud metadata services and receive response_status and response_body. This issue is fixed in version 3.15.0.
 </code>
 
 - [codeb0ssx/CVE-2026-64849-PoC](https://github.com/codeb0ssx/CVE-2026-64849-PoC)
@@ -17161,6 +17195,7 @@
 
 - [DeAurity/CVE-2026-86950-POC](https://github.com/DeAurity/CVE-2026-86950-POC)
 - [msuiche/hotcell](https://github.com/msuiche/hotcell)
+- [decalage2/detect_CVE-2026-86950](https://github.com/decalage2/detect_CVE-2026-86950)
 
 ### CVE-2026-86998
 - [squeeze440/pasteguard-PoC](https://github.com/squeeze440/pasteguard-PoC)
@@ -17312,6 +17347,13 @@
 - [watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772](https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772)
 - [murrez/CVE-2026-88772](https://github.com/murrez/CVE-2026-88772)
 - [FollowerSeize/CVE-2026-88772-POC](https://github.com/FollowerSeize/CVE-2026-88772-POC)
+
+### CVE-2026-88773 (2026-09-27)
+
+<code>Inconsistent interpretation of HTTP requests ('HTTP Request/Response smuggling') vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1-37.279 and NDcPP; Gateway: before 14.1-73.37 FIPS and before 13.1-64.23.
+</code>
+
+- [Scyrix-LLC/CVE-2026-88773](https://github.com/Scyrix-LLC/CVE-2026-88773)
 
 ### CVE-2026-88789 (2026-10-01)
 
@@ -17906,8 +17948,16 @@
 
 - [7acini/CVE-2026-102261](https://github.com/7acini/CVE-2026-102261)
 
+### CVE-2026-102268 (2026-09-28)
+
+<code>PyJWT is a Python implementation of JSON Web Token standards. Prior to 2.14.0, is_pem_format in jwt/utils.py is affected because is_pem_format does not recognize every PEM representation accepted by the cryptography loader. This occurs when an application mixes HMAC and asymmetric algorithms and supplies a mutated public-key PEM as raw key bytes. As a result, HMACAlgorithm.prepare_key treats the unrecognized asymmetric public key as an HMAC secret. Consequently, an attacker who knows the public key can forge authenticated HMAC tokens. This issue is fixed in version 2.14.0.
+</code>
+
+- [covepseng/cve-2026-102268-poc](https://github.com/covepseng/cve-2026-102268-poc)
+
 ### CVE-2026-102282
 - [x86byte/adm-zip_LPE-PoC](https://github.com/x86byte/adm-zip_LPE-PoC)
+- [Ahmed-Elmahgob/POC-CVE-2026-102282](https://github.com/Ahmed-Elmahgob/POC-CVE-2026-102282)
 
 ### CVE-2026-102425 (2026-09-29)
 
@@ -18006,8 +18056,14 @@
 
 - [techupdate24/capacitor-flaw-cve-2026-103922](https://github.com/techupdate24/capacitor-flaw-cve-2026-103922)
 
+### CVE-2026-103931
+- [overgrowncarrot1/Instatic-Stored-XSS-CVE-2026-103931](https://github.com/overgrowncarrot1/Instatic-Stored-XSS-CVE-2026-103931)
+
 ### CVE-2026-103977
 - [pervinzahidli/CVE-2026-103977](https://github.com/pervinzahidli/CVE-2026-103977)
+
+### CVE-2026-103978
+- [KiwKNR/CVE-2026-103978](https://github.com/KiwKNR/CVE-2026-103978)
 
 ### CVE-2026-104051 (2026-10-01)
 
@@ -18033,6 +18089,16 @@
 </code>
 
 - [wvllxe/CVE-2026-104356-pictshare-weak-delete-code](https://github.com/wvllxe/CVE-2026-104356-pictshare-weak-delete-code)
+
+### CVE-2026-104826
+- [KiwKNR/CVE-2026-104826](https://github.com/KiwKNR/CVE-2026-104826)
+
+### CVE-2026-105030 (2026-10-02)
+
+<code>Kener 4.0.0 before 4.1.6 contains an information disclosure vulnerability that allows unauthenticated attackers to retrieve hidden or inactive monitor data by querying dashboard API handlers lacking visibility filters. Attackers can supply a known or guessed monitor tag to endpoints such as monitor-bar and monitor-latency-chart to obtain names, descriptions, status, uptime history and latency.
+</code>
+
+- [asvorg/CVE-2026-105030-poc](https://github.com/asvorg/CVE-2026-105030-poc)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -21850,6 +21916,7 @@
 - [RamenFast/zenfone9-root](https://github.com/RamenFast/zenfone9-root)
 - [diyiqiuye/CVE-2025-21479-FX5P](https://github.com/diyiqiuye/CVE-2025-21479-FX5P)
 - [diyiqiuye/CVE-2025-21479-FX3](https://github.com/diyiqiuye/CVE-2025-21479-FX3)
+- [longg66/cve-2025-21479_iqooneo7speed](https://github.com/longg66/cve-2025-21479_iqooneo7speed)
 
 ### CVE-2025-21574 (2025-04-15)
 
@@ -25302,6 +25369,13 @@
 
 ### CVE-2025-45710
 - [partywavesec/CVE-2025-45710](https://github.com/partywavesec/CVE-2025-45710)
+
+### CVE-2025-45737 (2025-06-27)
+
+<code>An issue in NetEase (Hangzhou) Network Co., Ltd NeacSafe64 Driver before v1.0.0.8 allows attackers to escalate privileges via sending crafted IOCTL commands to the NeacSafe64.sys component.
+</code>
+
+- [Shinn-Home/CVE-2025-45737](https://github.com/Shinn-Home/CVE-2025-45737)
 
 ### CVE-2025-45778 (2025-08-01)
 
@@ -32149,7 +32223,6 @@
 
 - [lfillaz/CVE-2024-2997](https://github.com/lfillaz/CVE-2024-2997)
 - [0xUho/CVE-2024-2997](https://github.com/0xUho/CVE-2024-2997)
-- [o9-9/CVE-2024-2997](https://github.com/o9-9/CVE-2024-2997)
 
 ### CVE-2024-3094 (2024-03-29)
 
@@ -36768,13 +36841,6 @@
 </code>
 
 - [200101WhoAmI/CVE-2024-27088](https://github.com/200101WhoAmI/CVE-2024-27088)
-
-### CVE-2024-27102 (2024-03-13)
-
-<code>Wings is the server control plane for Pterodactyl Panel. This vulnerability impacts anyone running the affected versions of Wings. The vulnerability can potentially be used to access files and directories on the host system. The full scope of impact is exactly unknown, but reading files outside of a server's base directory (sandbox root) is possible. In order to use this exploit, an attacker must have an existing &quot;server&quot; allocated and controlled by Wings. Details on the exploitation of this vulnerability are embargoed until March 27th, 2024 at 18:00 UTC. In order to mitigate this vulnerability, a full rewrite of the entire server filesystem was necessary. Because of this, the size of the patch is massive, however effort was made to reduce the amount of breaking changes. Users are advised to update to version 1.11.9. There are no known workarounds for this vulnerability.
-</code>
-
-- [0ord/Magnohost-Vulnerabilities-pentest](https://github.com/0ord/Magnohost-Vulnerabilities-pentest)
 
 ### CVE-2024-27115 (2024-09-11)
 
@@ -82399,6 +82465,7 @@
 - [KelvinWin10/CVE-2017-7921-rewrite](https://github.com/KelvinWin10/CVE-2017-7921-rewrite)
 - [MK-ULTRA-project-monarch/CVE-2017-7921-Writeup-2026](https://github.com/MK-ULTRA-project-monarch/CVE-2017-7921-Writeup-2026)
 - [xjghnxhlh/hikihack](https://github.com/xjghnxhlh/hikihack)
+- [Th3Purge/CVE-2017-7921-Exploit](https://github.com/Th3Purge/CVE-2017-7921-Exploit)
 
 ### CVE-2017-7998 (2018-01-08)
 
@@ -83116,7 +83183,7 @@
 <code>A remote code execution vulnerability in HPE intelligent Management Center (iMC) PLAT version Plat 7.3 E0504P4 and earlier was found.
 </code>
 
-- [Everdoh/CVE-2017-12561](https://github.com/Everdoh/CVE-2017-12561)
+- [parapapinho/CVE-2017-12561](https://github.com/parapapinho/CVE-2017-12561)
 
 ### CVE-2017-12611 (2017-09-20)
 
@@ -87937,6 +88004,7 @@
 - [tryj/CVE-2012-1823---PHP-CGI---RCE](https://github.com/tryj/CVE-2012-1823---PHP-CGI---RCE)
 - [mehedi-hasan-sami98/DVWA-ZAP-PENTEST](https://github.com/mehedi-hasan-sami98/DVWA-ZAP-PENTEST)
 - [tanasescualexandrugabriel/Vulnerability-Assessment-and-OSINT-CVE-2012-1823](https://github.com/tanasescualexandrugabriel/Vulnerability-Assessment-and-OSINT-CVE-2012-1823)
+- [mujtaba815/metasploitable2-php-cgi-exploit](https://github.com/mujtaba815/metasploitable2-php-cgi-exploit)
 
 ### CVE-2012-1831 (2012-07-05)
 
@@ -88343,6 +88411,7 @@
 - [DanReis20/pentest-lab-metasploitable2](https://github.com/DanReis20/pentest-lab-metasploitable2)
 - [rushikesh-a-bhujbal/CVE-2011-2523](https://github.com/rushikesh-a-bhujbal/CVE-2011-2523)
 - [delmag138/NovaShyld_Task_3](https://github.com/delmag138/NovaShyld_Task_3)
+- [Spidey1919/vsftpd-2.3.4-rce-assessment](https://github.com/Spidey1919/vsftpd-2.3.4-rce-assessment)
 
 ### CVE-2011-2553
 - [carlosrpastrana/cve-2011-2553](https://github.com/carlosrpastrana/cve-2011-2553)
