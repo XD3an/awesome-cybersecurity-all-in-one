@@ -2454,6 +2454,7 @@
 - [rootdirective-sec/CVE-2026-8206-Lab](https://github.com/rootdirective-sec/CVE-2026-8206-Lab)
 - [izxci/CVE-2026-8206](https://github.com/izxci/CVE-2026-8206)
 - [Dungsocool/CVE-2026-8206](https://github.com/Dungsocool/CVE-2026-8206)
+- [Sanjith1236/CVE-2026-8206-Kirki-Exploit-Analysis](https://github.com/Sanjith1236/CVE-2026-8206-Kirki-Exploit-Analysis)
 
 ### CVE-2026-8237 (2026-05-21)
 
@@ -2953,6 +2954,13 @@
 </code>
 
 - [passwa11/CVE-2026-10187](https://github.com/passwa11/CVE-2026-10187)
+
+### CVE-2026-10196 (2026-09-05)
+
+<code>The Mail Mint – Email Marketing, Newsletter, Email Automation &amp; WooCommerce Emails plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.31.0 via deserialization of untrusted input in the 'handle_form_submission' function. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to execute code on the server. The vulnerability was partially patched in version 1.23.1.
+</code>
+
+- [0xCyp1337/CVE-2026-10196](https://github.com/0xCyp1337/CVE-2026-10196)
 
 ### CVE-2026-10243 (2026-06-01)
 
@@ -11623,6 +11631,7 @@
 - [a23bc/ALI-AN00-cve-2026-43499](https://github.com/a23bc/ALI-AN00-cve-2026-43499)
 - [maulanasdqn/ghostlock-honor-brpnx1](https://github.com/maulanasdqn/ghostlock-honor-brpnx1)
 - [Nixbones/ghostlock-rmx5085](https://github.com/Nixbones/ghostlock-rmx5085)
+- [linux-tools/VIVO-IQOO-Neo9-Root-Tools](https://github.com/linux-tools/VIVO-IQOO-Neo9-Root-Tools)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -16314,6 +16323,13 @@
 
 - [TarPeg007/CVE-2026-74586](https://github.com/TarPeg007/CVE-2026-74586)
 
+### CVE-2026-74727 (2026-08-22)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\novpn: skip rehash for peers already removed from by_id\n\novpn_nl_peer_set_doit() resolves the target peer via\novpn_peer_get_by_id() before taking ovpn-&gt;lock. In the window between\nthe lookup (which only takes a refcount) and the subsequent\nspin_lock_bh(&amp;ovpn-&gt;lock), a concurrent OVPN_CMD_PEER_DEL, keepalive\nexpiry, or socket teardown can take ovpn-&gt;lock first, run\novpn_peer_remove() to unhash the peer from all four tables (by_id,\nby_vpn_addr4/6, by_transp_addr) and release the lock. set_doit then\nacquires ovpn-&gt;lock and calls ovpn_peer_hash_vpn_ip(), which\nre-inserts the now-removed peer back into the rehashing tables.\n\nThe same race affects the float path: ovpn_peer_endpoints_update()\nholds only a refcount and acquires ovpn-&gt;lock very late (after async\nAEAD decrypt and a netlink notification), then rehashes the peer\nin the by_transp_addr table.\n\nThe resurrected peer becomes reachable again from the RX lookup\n(ovpn_peer_get_by_transp_addr) and the TX VPN-IP lookup, even though\nuserspace believes it is gone. Once the data-path refcount drops the\npeer is freed via call_rcu while the hash entries embedded in it\nremain linked, opening a UAF window.\n\nBail out of the rehash when hash_entry_id is unhashed, mirroring\nthe sentinel already used by ovpn_peer_remove() to detect the\nalready-removed state. The check is safe under ovpn-&gt;lock, which\nserializes every mutation of hash_entry_id, and is a no-op for the\nadd path because ovpn_peer_add_mp() inserts hash_entry_id before\ncalling ovpn_peer_hash_vpn_ip().
+</code>
+
+- [Kosifuchs/ovpn-kernel-backport](https://github.com/Kosifuchs/ovpn-kernel-backport)
+
 ### CVE-2026-74936 (2026-08-18)
 
 <code>Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox 154, Firefox ESR 140.14, Firefox ESR 153.1, Thunderbird 154, Thunderbird 140.14, and Thunderbird 153.1.
@@ -17312,6 +17328,7 @@
 </code>
 
 - [DeAurity/CVE-2026-86950-POC](https://github.com/DeAurity/CVE-2026-86950-POC)
+- [34zY/CVE-2026-86950](https://github.com/34zY/CVE-2026-86950)
 - [msuiche/hotcell](https://github.com/msuiche/hotcell)
 - [decalage2/detect_CVE-2026-86950](https://github.com/decalage2/detect_CVE-2026-86950)
 - [0xBlackash/CVE-2026-86950](https://github.com/0xBlackash/CVE-2026-86950)
@@ -17979,6 +17996,13 @@
 - [kize7/cve-2026-97163-payload](https://github.com/kize7/cve-2026-97163-payload)
 - [murrez/CVE-2026-97163](https://github.com/murrez/CVE-2026-97163)
 
+### CVE-2026-97286 (2026-09-30)
+
+<code>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in WP Chill Strong Testimonials strong-testimonials allows Stored XSS.This issue affects Strong Testimonials: from n/a through 3.3.11.
+</code>
+
+- [Rully2212/CVE-2026-97286](https://github.com/Rully2212/CVE-2026-97286)
+
 ### CVE-2026-97347 (2026-09-30)
 
 <code>The Post Views Stats Counter plugin for WordPress is vulnerable to Stored Cross-Site Scripting via User-Agent Header in all versions up to, and including, 1.1.7 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. The plugin's only input filter is a substring blacklist for known bot signatures (e.g. 'bot', 'spider', 'crawler'), which can be trivially bypassed by crafting a User-Agent payload that omits those strings.
@@ -18276,6 +18300,13 @@
 ### CVE-2026-104826
 - [KiwKNR/CVE-2026-104826](https://github.com/KiwKNR/CVE-2026-104826)
 
+### CVE-2026-104905 (2026-10-05)
+
+<code>FacturaScripts before version 2026.7 contains a PHP object injection vulnerability in WidgetSelect::processFormData() that allows authenticated attackers to trigger unserialize() on raw POST data without an allowed_classes filter for multiple-select fields. Attackers can submit a serialized XLSXWriter object as the field value to invoke its __destruct() method, deleting arbitrary attacker-specified files such as config.php or backup data, resulting in denial of service and potential application reinstall hijack.
+</code>
+
+- [wvllxe/CVE-2026-104905-facturascripts-object-injection](https://github.com/wvllxe/CVE-2026-104905-facturascripts-object-injection)
+
 ### CVE-2026-104991 (2026-10-02)
 
 <code>Phproject before 1.8.7 contains a missing object-level authorization vulnerability in the REST API issue endpoints (single_get, single_comments, single_comments_post) that allows authenticated API key holders to bypass the security.restrict_access confidentiality control by never invoking the allowAccess() authorization routine. Attackers can use a valid API key to read restricted issue contents and comments, including owner and author email addresses, and post unauthorized comments to issues they should not have access to.
@@ -18289,6 +18320,13 @@
 </code>
 
 - [asvorg/CVE-2026-105030-poc](https://github.com/asvorg/CVE-2026-105030-poc)
+
+### CVE-2026-105080 (2026-10-03)
+
+<code>In ConvertX before 0.19.0, converters/calibre.ts does not block recipe files, and instead passes them to the ebook-convert program from Calibre. This affects executable code in a .recipe or .downloaded_recipe file.
+</code>
+
+- [beyavuz/cve-2026-105080-poc](https://github.com/beyavuz/cve-2026-105080-poc)
 
 ### CVE-2026-105134 (2026-10-04)
 
@@ -18310,6 +18348,9 @@
 </code>
 
 - [kashishtopi/CVE-2026-105314](https://github.com/kashishtopi/CVE-2026-105314)
+
+### CVE-2026-105319
+- [kashishtopi/CVE-2026-105319](https://github.com/kashishtopi/CVE-2026-105319)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -20047,6 +20088,13 @@
 </code>
 
 - [byteReaper77/CVE-2025-6860](https://github.com/byteReaper77/CVE-2025-6860)
+
+### CVE-2025-6867 (2025-06-29)
+
+<code>Eine kritische Schwachstelle wurde in SourceCodester Simple Company Website 1.0 gefunden. Hierbei geht es um eine nicht exakt ausgemachte Funktion der Datei /admin/services/manage.php. Durch die Manipulation des Arguments ID mit unbekannten Daten kann eine sql injection-Schwachstelle ausgenutzt werden. Umgesetzt werden kann der Angriff über das Netzwerk. Der Exploit steht zur öffentlichen Verfügung.
+</code>
+
+- [richard1026/CVE-2025-6867-reproduction](https://github.com/richard1026/CVE-2025-6867-reproduction)
 
 ### CVE-2025-6907 (2025-06-30)
 
@@ -22135,6 +22183,7 @@
 - [RamenFast/zenfone9-root](https://github.com/RamenFast/zenfone9-root)
 - [diyiqiuye/CVE-2025-21479-FX5P](https://github.com/diyiqiuye/CVE-2025-21479-FX5P)
 - [longg66/cve-2025-21479_iqooneo7speed](https://github.com/longg66/cve-2025-21479_iqooneo7speed)
+- [linux-tools/VIVO-IQOO-Neo9-Root-Tools](https://github.com/linux-tools/VIVO-IQOO-Neo9-Root-Tools)
 
 ### CVE-2025-21574 (2025-04-15)
 
@@ -24746,6 +24795,13 @@
 </code>
 
 - [Savanooo/avtech-cve-2025-34065-analysis](https://github.com/Savanooo/avtech-cve-2025-34065-analysis)
+
+### CVE-2025-34069 (2025-07-02)
+
+<code>An authentication bypass vulnerability exists in GFI Kerio Control 9.4.5 due to insecure default proxy configuration and weak access control in the GFIAgent service. The non-transparent proxy on TCP port 3128 can be used to forward unauthenticated requests to internal services such as GFIAgent, bypassing firewall restrictions and exposing internal management endpoints. This enables unauthenticated attackers to access the GFIAgent service on ports 7995 and 7996, retrieve the appliance UUID, and issue administrative requests via the proxy. Exploitation results in full administrative access to the Kerio Control appliance.
+</code>
+
+- [cppghoul/CVE-2025-34069](https://github.com/cppghoul/CVE-2025-34069)
 
 ### CVE-2025-34077 (2025-07-09)
 
@@ -28139,6 +28195,7 @@
 - [iapetus12/hackcar-writeup](https://github.com/iapetus12/hackcar-writeup)
 - [abhaybansal16/cve-2025-55182-lab](https://github.com/abhaybansal16/cve-2025-55182-lab)
 - [RashmithaDeSilva/React2Shell_CVE-2025-55182](https://github.com/RashmithaDeSilva/React2Shell_CVE-2025-55182)
+- [OhSoomin812/cve-2025-55182-ctf](https://github.com/OhSoomin812/cve-2025-55182-ctf)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -44554,7 +44611,7 @@
 <code>An issue has been discovered in GitLab affecting all versions before 16.6.6, 16.7 prior to 16.7.4, and 16.8 prior to 16.8.1. It was possible to read the user email address via tags feed although the visibility in the user profile has been disabled.
 </code>
 
-- [TopskiyPavelQwertyGang/Review.CVE-2023-5612](https://github.com/TopskiyPavelQwertyGang/Review.CVE-2023-5612)
+- [ConstantineFedorov/Review.CVE-2023-5612](https://github.com/ConstantineFedorov/Review.CVE-2023-5612)
 - [mad3E7cat/CVE-2023-5612](https://github.com/mad3E7cat/CVE-2023-5612)
 
 ### CVE-2023-5717 (2023-10-25)
@@ -61063,7 +61120,7 @@
 - [shishirpandey18/CVE-2021-3156](https://github.com/shishirpandey18/CVE-2021-3156)
 - [Shuhaib88/Baron-Samedit-Heap-Buffer-Overflow-CVE-2021-3156](https://github.com/Shuhaib88/Baron-Samedit-Heap-Buffer-Overflow-CVE-2021-3156)
 - [gmh5225/cve-2021-3156-](https://github.com/gmh5225/cve-2021-3156-)
-- [TopskiyPavelQwertyGang/Review.CVE-2021-3156](https://github.com/TopskiyPavelQwertyGang/Review.CVE-2021-3156)
+- [ConstantineFedorov/Review.CVE-2021-3156](https://github.com/ConstantineFedorov/Review.CVE-2021-3156)
 - [Maalfer/Sudo-CVE-2021-3156](https://github.com/Maalfer/Sudo-CVE-2021-3156)
 - [HuzaifaTariqAfzalKhan/CVE-Exploit-Research-Development-ITSOLERA](https://github.com/HuzaifaTariqAfzalKhan/CVE-Exploit-Research-Development-ITSOLERA)
 - [VilmarTuminskii/cve-2021-3156-sudo-lab](https://github.com/VilmarTuminskii/cve-2021-3156-sudo-lab)
@@ -82303,6 +82360,7 @@
 - [Majaktech/apache-struts-cve-2017-5638-project](https://github.com/Majaktech/apache-struts-cve-2017-5638-project)
 - [Dungsocool/CVE-2017-5638](https://github.com/Dungsocool/CVE-2017-5638)
 - [GU-007/struts2-tool](https://github.com/GU-007/struts2-tool)
+- [Piyush-Tiwatne/struts-patch-gap-auditor](https://github.com/Piyush-Tiwatne/struts-patch-gap-auditor)
 
 ### CVE-2017-5645 (2017-04-17)
 
@@ -89513,6 +89571,9 @@
 - [Mboatella25/metasploitable-pentest-lab](https://github.com/Mboatella25/metasploitable-pentest-lab)
 - [ronankongala/metasploit-pentest-report](https://github.com/ronankongala/metasploit-pentest-report)
 - [rushikesh-a-bhujbal/CVE-2007-2447](https://github.com/rushikesh-a-bhujbal/CVE-2007-2447)
+- [malredfan/xxxxxxxxxxxxxxxx](https://github.com/malredfan/xxxxxxxxxxxxxxxx)
+- [malredfan/vvvvvvvv2](https://github.com/malredfan/vvvvvvvv2)
+- [malredfan/gggggggggggggggggg](https://github.com/malredfan/gggggggggggggggggg)
 
 ### CVE-2007-3280 (2007-06-19)
 
