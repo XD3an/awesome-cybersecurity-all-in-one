@@ -3971,6 +3971,13 @@
 
 - [Slagzz/CVE-2026-16348](https://github.com/Slagzz/CVE-2026-16348)
 
+### CVE-2026-16444 (2026-08-26)
+
+<code>Improper\nneutralization of path traversal sequences in TeamViewer Desktop Clients prior\nVersion 15.81.5 allows an authenticated remote session participant to write files\nto unintended locations on the local file system via file transfer or virtual\nfile clipboard mechanisms. An attacker can leverage this behavior to achieve\narbitrary file write and potentially execute code with the privileges of the\naffected user.
+</code>
+
+- [jamir0quai/CVE-2026-16444](https://github.com/jamir0quai/CVE-2026-16444)
+
 ### CVE-2026-16475
 - [afertar/CVE-2026-16475-PoC](https://github.com/afertar/CVE-2026-16475-PoC)
 
@@ -4965,6 +4972,13 @@
 </code>
 
 - [Hunt-Benito/samsung-bixby-command-execution-cve-2026-21055-improper-component-export](https://github.com/Hunt-Benito/samsung-bixby-command-execution-cve-2026-21055-improper-component-export)
+
+### CVE-2026-21096 (2026-09-09)
+
+<code>Heap-based buffer overflow in JPEG decoder of libimagecodec.quram.so prior to SMR Sep-2026 Release 1 allows remote attackers to execute arbitrary code.
+</code>
+
+- [Xen0nize/CVE-2026-21096](https://github.com/Xen0nize/CVE-2026-21096)
 
 ### CVE-2026-21250 (2026-02-10)
 
@@ -7450,6 +7464,13 @@
 
 - [kaleth4/CVE-2026-28363](https://github.com/kaleth4/CVE-2026-28363)
 
+### CVE-2026-28364 (2026-02-27)
+
+<code>In OCaml before 4.14.3 and 5.x before 5.4.1, a buffer over-read in Marshal deserialization (runtime/intern.c) enables remote code execution through a multi-phase attack chain. The vulnerability stems from missing bounds validation in the readblock() function, which performs unbounded memcpy() operations using attacker-controlled lengths from crafted Marshal data.
+</code>
+
+- [Akshay-M-Singh/ocaml-marshal-vulnerability](https://github.com/Akshay-M-Singh/ocaml-marshal-vulnerability)
+
 ### CVE-2026-28372 (2026-02-27)
 
 <code>telnetd in GNU inetutils through 2.7 allows privilege escalation that can be exploited by abusing systemd service credentials support added to the login(1) implementation of util-linux in release 2.40. This is related to client control over the CREDENTIALS_DIRECTORY environment variable, and requires an unprivileged local user to create a login.noauth file.
@@ -8517,6 +8538,7 @@
 - [TRX-0/CVE-2026-31857-craftcms-ssti](https://github.com/TRX-0/CVE-2026-31857-craftcms-ssti)
 - [0xTatsuki/CVE-2026-31857](https://github.com/0xTatsuki/CVE-2026-31857)
 - [0Asylum/CVE-2026-31857](https://github.com/0Asylum/CVE-2026-31857)
+- [WhiteMachin3/CVE-2026-31857](https://github.com/WhiteMachin3/CVE-2026-31857)
 
 ### CVE-2026-31891 (2026-03-18)
 
@@ -10447,6 +10469,7 @@
 - [julichaan/CVE-2026-39987_POC](https://github.com/julichaan/CVE-2026-39987_POC)
 - [mfahdk/CVE-2026-39987_RCE_PoC](https://github.com/mfahdk/CVE-2026-39987_RCE_PoC)
 - [LaArana12/CVE-2026-39987-Marimo-Preauth-RCE](https://github.com/LaArana12/CVE-2026-39987-Marimo-Preauth-RCE)
+- [Industri4l-H3ll-Xpl0it3rs/CVE-2026-39987-Marimo-RCE](https://github.com/Industri4l-H3ll-Xpl0it3rs/CVE-2026-39987-Marimo-RCE)
 
 ### CVE-2026-40000 (2026-07-27)
 
@@ -10911,6 +10934,13 @@
 </code>
 
 - [daehyuh/CVE-2026-41729](https://github.com/daehyuh/CVE-2026-41729)
+
+### CVE-2026-41875 (2026-09-29)
+
+<code>Quick.Cart is vulnerable to Cross-Site Request Forgery in admin config panel. Malicious attacker can craft special website, which when visited by the admin, will automatically send a POST request that changes admin's login and password.\nThis software does implement simple protection against this type of attack, but it is easily bypassed by manipulating the referer header. All forms available in this software are potentially vulnerable.\n\nThis issue was fixed in a patch to version 6.7 published on 09.11.2026, deployments without this patch are still vulnerable
+</code>
+
+- [hhg69/CVE-2026-41875-EXPLOIT-QuickCart-one-click-Account-Takeover](https://github.com/hhg69/CVE-2026-41875-EXPLOIT-QuickCart-one-click-Account-Takeover)
 
 ### CVE-2026-41900 (2026-05-08)
 
@@ -11416,7 +11446,7 @@
 - [millikanjohnl-blip/dirtyfrag-detection-rules](https://github.com/millikanjohnl-blip/dirtyfrag-detection-rules)
 - [TeamN4C/SG-2026-0024](https://github.com/TeamN4C/SG-2026-0024)
 - [Minime794/DirtyFrag](https://github.com/Minime794/DirtyFrag)
-- [nihan-silent-reign/CVE-2026-43284-DIRTY-FRAG-](https://github.com/nihan-silent-reign/CVE-2026-43284-DIRTY-FRAG-)
+- [mhdnihan/CVE-2026-43284-DIRTY-FRAG-](https://github.com/mhdnihan/CVE-2026-43284-DIRTY-FRAG-)
 - [a2333c/DFRoot](https://github.com/a2333c/DFRoot)
 - [coey0814/DirtyFrag-Galaxy](https://github.com/coey0814/DirtyFrag-Galaxy)
 - [ankitrawatgit/DirtyFrag-Android-Root-Jailbreak](https://github.com/ankitrawatgit/DirtyFrag-Android-Root-Jailbreak)
@@ -11590,6 +11620,9 @@
 - [yexiaoqq/rmg-s9110-research](https://github.com/yexiaoqq/rmg-s9110-research)
 - [alfzki/ghostlock-app](https://github.com/alfzki/ghostlock-app)
 - [litianyuan-91/Ghostlock-Honor70Pro](https://github.com/litianyuan-91/Ghostlock-Honor70Pro)
+- [a23bc/ALI-AN00-cve-2026-43499](https://github.com/a23bc/ALI-AN00-cve-2026-43499)
+- [maulanasdqn/ghostlock-honor-brpnx1](https://github.com/maulanasdqn/ghostlock-honor-brpnx1)
+- [Nixbones/ghostlock-rmx5085](https://github.com/Nixbones/ghostlock-rmx5085)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -11836,13 +11869,6 @@
 </code>
 
 - [ZemarKhos/CVE-2026-44403-WingFTP-v8.1.2-POC-Exploit](https://github.com/ZemarKhos/CVE-2026-44403-WingFTP-v8.1.2-POC-Exploit)
-
-### CVE-2026-44431 (2026-05-13)
-
-<code>urllib3 is an HTTP client library for Python. From 1.23 to before 2.7.0, cross-origin redirects followed from the low-level API via ProxyManager.connection_from_url().urlopen(..., assert_same_host=False) still forward these sensitive headers. This vulnerability is fixed in 2.7.0.
-</code>
-
-- [SSH-PuR66/cve-replay](https://github.com/SSH-PuR66/cve-replay)
 
 ### CVE-2026-44438
 - [llaytynher/CVE-2026-44438](https://github.com/llaytynher/CVE-2026-44438)
@@ -12303,6 +12329,7 @@
 - [st4rburn/public-passwd](https://github.com/st4rburn/public-passwd)
 - [0xBlackash/CVE-2026-46333](https://github.com/0xBlackash/CVE-2026-46333)
 - [studiogangster/CVE-2026-46333](https://github.com/studiogangster/CVE-2026-46333)
+- [dr4mohamed/CVE-2026-46333](https://github.com/dr4mohamed/CVE-2026-46333)
 
 ### CVE-2026-46339 (2026-07-15)
 
@@ -14868,7 +14895,6 @@
 - [mhassani97/cve-2026-63030-lab](https://github.com/mhassani97/cve-2026-63030-lab)
 - [DeadExpl0it/wp2shell-poc](https://github.com/DeadExpl0it/wp2shell-poc)
 - [Sec-Dan/WP2Shell-Scanner](https://github.com/Sec-Dan/WP2Shell-Scanner)
-- [arvindear/wp2shell-PoC](https://github.com/arvindear/wp2shell-PoC)
 - [fl0ydsec/CVE-2026-63030](https://github.com/fl0ydsec/CVE-2026-63030)
 - [langz337/CVE-2026-63030](https://github.com/langz337/CVE-2026-63030)
 - [jed-parsec/CVE-2026-63030-60137-wp2shell-lab](https://github.com/jed-parsec/CVE-2026-63030-60137-wp2shell-lab)
@@ -15926,6 +15952,13 @@
 </code>
 
 - [dinosn/cve-2026-71362-magento-lab](https://github.com/dinosn/cve-2026-71362-magento-lab)
+
+### CVE-2026-71486 (2026-08-17)
+
+<code>vLLM is an inference and serving engine for large language models. Prior to 0.26.0, the /v1/completions/derender and /v1/chat/completions/derender endpoints accept caller-supplied GenerateResponse objects whose generate_responses, choices, token_ids, prompt_logprobs, logprobs.content, top_logprobs, and routed_experts structures are processed by OnlineDerenderer and tokenizer.decode before max_model_len, max_tokens, max_num_seqs, or response-size limits are enforced, allowing an authenticated API client to consume excessive CPU and memory and produce oversized responses. This issue is fixed in version 0.26.0.
+</code>
+
+- [tmvictorpeters/jbo4rgl](https://github.com/tmvictorpeters/jbo4rgl)
 
 ### CVE-2026-71518 (2026-08-17)
 
@@ -17266,6 +17299,13 @@
 
 - [Hasanuyarrr/CVE-2026-86595-Iron-Mountain-enVision-EBYSde-Kimlik-Dogrulamal-SQL-Enjeksiyonu-Zafiyeti](https://github.com/Hasanuyarrr/CVE-2026-86595-Iron-Mountain-enVision-EBYSde-Kimlik-Dogrulamal-SQL-Enjeksiyonu-Zafiyeti)
 
+### CVE-2026-86881 (2026-09-14)
+
+<code>A certificate validation issue was addressed with improved certificate validation. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27 and iPadOS 27, macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7, tvOS 27, visionOS 27, watchOS 27. An attacker with a compromised intermediate certificate authority may be able to issue certificates with arbitrary extended key usages.
+</code>
+
+- [0xcrypto/CVE-2026-86881](https://github.com/0xcrypto/CVE-2026-86881)
+
 ### CVE-2026-86950 (2026-09-28)
 
 <code>An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 26.7.1 and iPadOS 26.7.1, macOS Sequoia 15.8.1, macOS Tahoe 26.7.1. Processing a maliciously crafted file may lead to arbitrary code execution. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 27.
@@ -17274,6 +17314,7 @@
 - [DeAurity/CVE-2026-86950-POC](https://github.com/DeAurity/CVE-2026-86950-POC)
 - [msuiche/hotcell](https://github.com/msuiche/hotcell)
 - [decalage2/detect_CVE-2026-86950](https://github.com/decalage2/detect_CVE-2026-86950)
+- [0xBlackash/CVE-2026-86950](https://github.com/0xBlackash/CVE-2026-86950)
 
 ### CVE-2026-86998
 - [squeeze440/pasteguard-PoC](https://github.com/squeeze440/pasteguard-PoC)
@@ -17715,6 +17756,7 @@
 </code>
 
 - [scastillo-jp/braces-fork](https://github.com/scastillo-jp/braces-fork)
+- [pillarsdotnet/node-braces](https://github.com/pillarsdotnet/node-braces)
 
 ### CVE-2026-93834 (2026-09-25)
 
@@ -17805,6 +17847,9 @@
 </code>
 
 - [anthonyk2923/CVE-2026-94609](https://github.com/anthonyk2923/CVE-2026-94609)
+
+### CVE-2026-95622
+- [0xSemizzz/CVE-2026-95622](https://github.com/0xSemizzz/CVE-2026-95622)
 
 ### CVE-2026-95675 (2026-09-22)
 
@@ -17904,6 +17949,13 @@
 </code>
 
 - [rafabd1/VectorFreed](https://github.com/rafabd1/VectorFreed)
+
+### CVE-2026-96940 (2026-10-02)
+
+<code>Weak authorization in Microsoft Exchange Server allows an authenticated attacker to elevate privileges over a network.
+</code>
+
+- [HORKimhab/CVE-2026-96940](https://github.com/HORKimhab/CVE-2026-96940)
 
 ### CVE-2026-97160 (2026-09-26)
 
@@ -18061,7 +18113,11 @@
 
 - [covepseng/cve-2026-102268-poc](https://github.com/covepseng/cve-2026-102268-poc)
 
-### CVE-2026-102282
+### CVE-2026-102282 (2026-10-05)
+
+<code>adm-zip is a JavaScript library for creating and extracting ZIP archives in Node.js. Prior to 0.6.1, adm-zip applies the Unix permission bits stored in a zip entry directly to the extracted file via `fs.chmodSync()` when `keepOriginalPermission=true` is passed to `extractAllTo()`/`extractEntryTo()` — and it never filters the setuid/setgid/sticky bits out of those bits. A zip crafted by an attacker can therefore produce an extracted binary with mode `04755`. When extraction runs as root (the default posture in Docker builds, CI runners, and privileged install steps — the exact environments where this flag is used), the resulting root-owned setuid file is executed later by a lesser-privileged user, turning the attacker's code into a root execution. Version 0.6.1 fixes the issue.
+</code>
+
 - [x86byte/adm-zip_LPE-PoC](https://github.com/x86byte/adm-zip_LPE-PoC)
 - [Ahmed-Elmahgob/POC-CVE-2026-102282](https://github.com/Ahmed-Elmahgob/POC-CVE-2026-102282)
 
@@ -18233,6 +18289,27 @@
 </code>
 
 - [asvorg/CVE-2026-105030-poc](https://github.com/asvorg/CVE-2026-105030-poc)
+
+### CVE-2026-105134 (2026-10-04)
+
+<code>A flaw has been found in Ahsay AhsayCBS up to 10.3.2. This vulnerability affects unknown code of the file /rps/api/json/UpdateReceivers.do of the component Replication Receiver. Executing a manipulation of the argument random can lead to os command injection. It is possible to launch the attack remotely. The exploit has been published and may be used. Upgrading to version 10.3.4 is able to resolve this issue. Upgrading the affected component is advised.
+</code>
+
+- [RayanAlmulhim/CVE-2026-105134-lab](https://github.com/RayanAlmulhim/CVE-2026-105134-lab)
+
+### CVE-2026-105221 (2026-10-04)
+
+<code>The gist RubyGem before 6.1.0 contains an improper certificate validation vulnerability that allows on-path attackers to intercept HTTPS traffic because http_connection in lib/gist.rb sets VERIFY_NONE. Attackers can present any certificate to read or modify GitHub API traffic, stealing OAuth tokens and login credentials to read and modify the victim's gists.
+</code>
+
+- [abraxas/cve-2026-105221-gist-tls](https://github.com/abraxas/cve-2026-105221-gist-tls)
+
+### CVE-2026-105314 (2026-10-05)
+
+<code>Papermerge 3.5.3 allows remote code execution by a standard user via directory traversal in a /api/documents/upload call. A Python .pth file can be written to site-packages, and its code is executed upon the next start of the Python interpreter.
+</code>
+
+- [kashishtopi/CVE-2026-105314](https://github.com/kashishtopi/CVE-2026-105314)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -18463,6 +18540,7 @@
 </code>
 
 - [FWNavy/RMASmoke](https://github.com/FWNavy/RMASmoke)
+- [MCRideable3963/RMASmoke-v2](https://github.com/MCRideable3963/RMASmoke-v2)
 
 ### CVE-2025-1219 (2025-03-30)
 
@@ -21619,7 +21697,7 @@
 <code>A vulnerability was detected in D-Link DIR-860LB1 and DIR-868LB1 203b01/203b03. Affected is an unknown function of the component DHCP Daemon. The manipulation of the argument Hostname results in command injection. It is possible to launch the attack remotely. The exploit is now public and may be used.
 </code>
 
-- [PeterLinccl/Vulnerability-DLink-CVE-2025-14659](https://github.com/PeterLinccl/Vulnerability-DLink-CVE-2025-14659)
+- [PeterLinccl/CVE-2025-14659-DIR-860L](https://github.com/PeterLinccl/CVE-2025-14659-DIR-860L)
 
 ### CVE-2025-14700 (2025-12-17)
 
@@ -26084,6 +26162,13 @@
 - [fevar54/CVE-2025-48595-Android-Framework-Integer-Overflow-](https://github.com/fevar54/CVE-2025-48595-Android-Framework-Integer-Overflow-)
 - [XiaoBaiLovesStirring/CVE-2025-48595-Exploit](https://github.com/XiaoBaiLovesStirring/CVE-2025-48595-Exploit)
 
+### CVE-2025-48617 (2026-06-17)
+
+<code>In overrideConfig of CarrierConfigLoader.java, there is a possible way to bypass UID check due to a permissions bypass. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
+</code>
+
+- [K1tor/PixelVolte5G](https://github.com/K1tor/PixelVolte5G)
+
 ### CVE-2025-48703 (2025-09-19)
 
 <code>CWP (aka Control Web Panel or CentOS Web Panel) before 0.9.8.1205 allows unauthenticated remote code execution via shell metacharacters in the t_total parameter in a filemanager changePerm request. A valid non-root username must be known.
@@ -26111,7 +26196,6 @@
 <code>An insufficient database Row-Level Security policy in Lovable through 2025-04-15 allows remote unauthenticated attackers to read or write to arbitrary database tables of generated sites. NOTE: this is disputed by the Supplier because each individual customer of the Lovable platform accepts a responsibility over protecting the data of their application.
 </code>
 
-- [Farenhytee/database-sentinel](https://github.com/Farenhytee/database-sentinel)
 - [git-akki/cso-vibecheck](https://github.com/git-akki/cso-vibecheck)
 - [boxed-dev/vibe-coding-security](https://github.com/boxed-dev/vibe-coding-security)
 
@@ -27472,6 +27556,7 @@
 </code>
 
 - [byteReaper77/CVE-2025-54769](https://github.com/byteReaper77/CVE-2025-54769)
+- [tunahantekeoglu/CVE-2025-54769](https://github.com/tunahantekeoglu/CVE-2025-54769)
 
 ### CVE-2025-54782 (2025-08-01)
 
@@ -28761,6 +28846,7 @@
 - [r3vpwnx/CVE-2025-57819](https://github.com/r3vpwnx/CVE-2025-57819)
 - [shivammittal2403/cve-2025-57819-freepbx-range](https://github.com/shivammittal2403/cve-2025-57819-freepbx-range)
 - [donggle0802-code/cve-2025-57819](https://github.com/donggle0802-code/cve-2025-57819)
+- [kelltich-756/FreePBX-Breaker](https://github.com/kelltich-756/FreePBX-Breaker)
 
 ### CVE-2025-57833 (2025-09-03)
 
@@ -30414,7 +30500,7 @@
 </code>
 
 - [symphony2colour/varlib-cve-2025-66034](https://github.com/symphony2colour/varlib-cve-2025-66034)
-- [Liquid1998/Variatype.htb-CVE-2025-66034](https://github.com/Liquid1998/Variatype.htb-CVE-2025-66034)
+- [Liquid-Sec/Variatype.htb-CVE-2025-66034](https://github.com/Liquid-Sec/Variatype.htb-CVE-2025-66034)
 - [tristanqtn/CVE-2025-66034](https://github.com/tristanqtn/CVE-2025-66034)
 - [v3cn4x00/POC-CVE-2025-66034](https://github.com/v3cn4x00/POC-CVE-2025-66034)
 - [4nuxd/CVE-2025-66034](https://github.com/4nuxd/CVE-2025-66034)
@@ -32885,6 +32971,7 @@
 - [veronimo669/pdf.js-CVE-2024-4367](https://github.com/veronimo669/pdf.js-CVE-2024-4367)
 - [yuimamur/CVE-2024-4367-hands-on-01](https://github.com/yuimamur/CVE-2024-4367-hands-on-01)
 - [stuara1/cpc-pdfjs-poc](https://github.com/stuara1/cpc-pdfjs-poc)
+- [weae26/cve-2024-4367-poc](https://github.com/weae26/cve-2024-4367-poc)
 
 ### CVE-2024-4406 (2024-05-02)
 
@@ -34167,7 +34254,7 @@
 </code>
 
 - [horizon3ai/CVE-2024-9465](https://github.com/horizon3ai/CVE-2024-9465)
-- [rszqx/CVE-2024-9465](https://github.com/rszqx/CVE-2024-9465)
+- [mustafaakalin/CVE-2024-9465](https://github.com/mustafaakalin/CVE-2024-9465)
 - [Qlng/CVE-2024-9465](https://github.com/Qlng/CVE-2024-9465)
 
 ### CVE-2024-9466 (2024-10-09)
@@ -39653,6 +39740,7 @@
 </code>
 
 - [BwithE/CVE-2024-40453](https://github.com/BwithE/CVE-2024-40453)
+- [AC8999/CVE-2024-40453](https://github.com/AC8999/CVE-2024-40453)
 
 ### CVE-2024-40457 (2024-09-12)
 
@@ -51052,6 +51140,7 @@
 - [v3ilsm1th/CVE-2023-45866_WIP](https://github.com/v3ilsm1th/CVE-2023-45866_WIP)
 - [Sergeb250/BlueDucky](https://github.com/Sergeb250/BlueDucky)
 - [hegaz0y/-BuL](https://github.com/hegaz0y/-BuL)
+- [KiroShehata/CVE-2023-45866-Bluetooth-Security-Research](https://github.com/KiroShehata/CVE-2023-45866-Bluetooth-Security-Research)
 
 ### CVE-2023-45878 (2023-11-14)
 
@@ -60685,6 +60774,7 @@
 - [FakeShell/CVE-2021-1931-BBRY-KEY2](https://github.com/FakeShell/CVE-2021-1931-BBRY-KEY2)
 - [aomsin2526/xperia_5_bl_unlocker_poc](https://github.com/aomsin2526/xperia_5_bl_unlocker_poc)
 - [starseed12345/QuestStack](https://github.com/starseed12345/QuestStack)
+- [stanw47/Blackberry-Key2-Research](https://github.com/stanw47/Blackberry-Key2-Research)
 
 ### CVE-2021-1961 (2021-09-09)
 
@@ -63753,6 +63843,13 @@
 </code>
 
 - [0cool-design/PWNtaho](https://github.com/0cool-design/PWNtaho)
+
+### CVE-2021-31624 (2021-10-29)
+
+<code>Buffer Overflow vulnerability in Tenda AC9 V1.0 through V15.03.05.19(6318), and AC9 V3.0 V15.03.06.42_multi, allows attackers to execute arbitrary code via the urls parameter.
+</code>
+
+- [sifatnotes/Learn-SecByte-CTF-Labs-Tabnabbing-Web-Recon-Nmap-Netdiscover-CVE-Labs](https://github.com/sifatnotes/Learn-SecByte-CTF-Labs-Tabnabbing-Web-Recon-Nmap-Netdiscover-CVE-Labs)
 
 ### CVE-2021-31630 (2021-08-03)
 
@@ -70313,7 +70410,6 @@
 - [0xAJ2K/CVE-2020-11022-CVE-2020-11023](https://github.com/0xAJ2K/CVE-2020-11022-CVE-2020-11023)
 - [Snorlyd/https-nj.gov---CVE-2020-11022](https://github.com/Snorlyd/https-nj.gov---CVE-2020-11022)
 - [okni2k/HW-Pyton-10](https://github.com/okni2k/HW-Pyton-10)
-- [ibnurusdianto/CVE-2020-11022](https://github.com/ibnurusdianto/CVE-2020-11022)
 
 ### CVE-2020-11023 (2020-04-29)
 
@@ -71957,6 +72053,13 @@
 </code>
 
 - [al-sultani/AVideo3xploit](https://github.com/al-sultani/AVideo3xploit)
+
+### CVE-2020-23546 (2021-10-28)
+
+<code>IrfanView 4.54 allows attackers to cause a denial of service or possibly other unspecified impacts via a crafted XBM file, related to a &quot;Data from Faulting Address is used as one or more arguments in a subsequent Function Call starting at FORMATS!ReadMosaic+0x0000000000000981.
+</code>
+
+- [sifatnotes/Learn-SecByte-CTF-Labs-Tabnabbing-Web-Recon-Nmap-Netdiscover-CVE-Labs](https://github.com/sifatnotes/Learn-SecByte-CTF-Labs-Tabnabbing-Web-Recon-Nmap-Netdiscover-CVE-Labs)
 
 ### CVE-2020-23582 (2022-11-21)
 
@@ -88571,6 +88674,7 @@
 - [rushikesh-a-bhujbal/CVE-2011-2523](https://github.com/rushikesh-a-bhujbal/CVE-2011-2523)
 - [delmag138/NovaShyld_Task_3](https://github.com/delmag138/NovaShyld_Task_3)
 - [Spidey1919/vsftpd-2.3.4-rce-assessment](https://github.com/Spidey1919/vsftpd-2.3.4-rce-assessment)
+- [Vijishanmugavel/metasploitable2-vsftpd-cve-2011-2523](https://github.com/Vijishanmugavel/metasploitable2-vsftpd-cve-2011-2523)
 
 ### CVE-2011-2553
 - [carlosrpastrana/cve-2011-2553](https://github.com/carlosrpastrana/cve-2011-2553)
@@ -89493,6 +89597,7 @@
 </code>
 
 - [sarjanpatel22/siem-threat-detection-lab](https://github.com/sarjanpatel22/siem-threat-detection-lab)
+- [RoflSecurity/nodeloris](https://github.com/RoflSecurity/nodeloris)
 
 
 ## 2006
