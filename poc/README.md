@@ -5098,6 +5098,8 @@
 - [watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589](https://github.com/watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589)
 - [MarcusProgram/CVE-2026-21589](https://github.com/MarcusProgram/CVE-2026-21589)
 - [tc4dy/CVE-2026-21589-PoC-Exploit](https://github.com/tc4dy/CVE-2026-21589-PoC-Exploit)
+- [aduli198/CVE-2026-21589](https://github.com/aduli198/CVE-2026-21589)
+- [BimBoxH4/CVE-2026-21589](https://github.com/BimBoxH4/CVE-2026-21589)
 
 ### CVE-2026-21627 (2026-02-20)
 
@@ -9050,6 +9052,7 @@
 - [infernosalex/CVE-2026-33439-Python-PoC](https://github.com/infernosalex/CVE-2026-33439-Python-PoC)
 - [JonasChen0103/CVE-2026-33439-PoC](https://github.com/JonasChen0103/CVE-2026-33439-PoC)
 - [rh33t/CVE-2026-33439-Poc](https://github.com/rh33t/CVE-2026-33439-Poc)
+- [amis13/openam-clean](https://github.com/amis13/openam-clean)
 
 ### CVE-2026-33453 (2026-04-27)
 
@@ -11467,6 +11470,7 @@
 - [a2333c/DFRoot](https://github.com/a2333c/DFRoot)
 - [coey0814/DirtyFrag-Galaxy](https://github.com/coey0814/DirtyFrag-Galaxy)
 - [ankitrawatgit/DirtyFrag-Android-Root-Jailbreak](https://github.com/ankitrawatgit/DirtyFrag-Android-Root-Jailbreak)
+- [HirokiAkihiko/dirtyfrag-research](https://github.com/HirokiAkihiko/dirtyfrag-research)
 
 ### CVE-2026-43494 (2026-05-21)
 
@@ -11629,11 +11633,10 @@
 - [WitAqua-tools/Root-My-Device](https://github.com/WitAqua-tools/Root-My-Device)
 - [CKwasd/zenfone9-ghostlock](https://github.com/CKwasd/zenfone9-ghostlock)
 - [mo2g/redmi-note-12t-pro-kernel](https://github.com/mo2g/redmi-note-12t-pro-kernel)
-- [L-1124/RootMyVivo-rs](https://github.com/L-1124/RootMyVivo-rs)
-- [L-1124/RootMyVivo-Exploit](https://github.com/L-1124/RootMyVivo-Exploit)
 - [ZeroDayEvil/CVE-2026-43499](https://github.com/ZeroDayEvil/CVE-2026-43499)
 - [shubhampathak65/CVE-2026-43499](https://github.com/shubhampathak65/CVE-2026-43499)
 - [YUE546/IQOO-neo7-ghostlock-43499](https://github.com/YUE546/IQOO-neo7-ghostlock-43499)
+- [THORBHAIxTRUSTED/RootMyVivo-Exploit](https://github.com/THORBHAIxTRUSTED/RootMyVivo-Exploit)
 - [yexiaoqq/rmg-s9110-research](https://github.com/yexiaoqq/rmg-s9110-research)
 - [alfzki/ghostlock-app](https://github.com/alfzki/ghostlock-app)
 - [litianyuan-91/Ghostlock-Honor70Pro](https://github.com/litianyuan-91/Ghostlock-Honor70Pro)
@@ -14590,8 +14593,19 @@
 - [vpxuser/CVE-2026-59310](https://github.com/vpxuser/CVE-2026-59310)
 - [chu0119/vc-strike](https://github.com/chu0119/vc-strike)
 
-### CVE-2026-59346
+### CVE-2026-59346 (2026-10-07)
+
+<code>VMware Workstation and Fusion contain an integer-overflow vulnerability. A malicious actor with local administrative privileges on a virtual machine with VMXNET3 virtual network adapter may exploit this issue to execute code on the host.\n\nAffected versions:\n- VMware Workstation: 25H2, 26H1 (fixed in 26H1u1)\n- VMware Fusion: 25H2, 26H1 (fixed in 26H1u1)
+</code>
+
 - [0xCyberstan/CVE-2026-59346-POC](https://github.com/0xCyberstan/CVE-2026-59346-POC)
+
+### CVE-2026-59358 (2026-10-06)
+
+<code>Improper authentication (CWE-287) in the OAuth token endpoint in Cloud Foundry UAA allows a remote, authenticated attacker holding a valid user access token to obtain a fully-privileged client_credentials token for the OAuth client that issued it, by presenting the user token as an OAuth 2.0 Bearer credential on a client_credentials grant request in place of the client’s configured secret.\n\n\n\nUAA’s client_credentials handling does not verify that the Bearer credential supplied for client authentication is actually a client credential (a client secret or a valid configured client authentication method); it accepts any valid access token whose client_id matches the request. A token obtained by a normal end user through a public authorization_code + PKCE flow — scoped only to uaa.user, carrying a user_id, and recording client_auth_method=none — satisfies this check. That user token cannot itself administer OAuth clients (POST /oauth/clients correctly returns 403), but when replayed as Bearer authentication on a client_credentials request for the same client, UAA issues a new client-only token carrying the client’s full authorities, such as clients.write. An attacker can use that token to create arbitrary new OAuth clients, including clients with attacker-chosen authorities, without ever possessing the client’s actual secret.\n\n\n\nExploitation requires a valid user access token (the attacker’s own) for a client that is configured to support both a public, user-facing authorization flow and the client_credentials grant type on the same client_id — a non-default combination. Practical impact scales with the authorities assigned to that client.
+</code>
+
+- [abraxas/CVE-2026-59358](https://github.com/abraxas/CVE-2026-59358)
 
 ### CVE-2026-59550 (2026-07-27)
 
@@ -16129,6 +16143,7 @@
 - [d-maggipinto/CVE-2026-72898-metabase-sqli](https://github.com/d-maggipinto/CVE-2026-72898-metabase-sqli)
 - [EQSTLab/CVE-2026-72898](https://github.com/EQSTLab/CVE-2026-72898)
 - [34zY/CVE-2026-72898](https://github.com/34zY/CVE-2026-72898)
+- [amier-ge/CVE-2026-72898](https://github.com/amier-ge/CVE-2026-72898)
 
 ### CVE-2026-73034 (2026-08-11)
 
@@ -16776,34 +16791,6 @@
 ### CVE-2026-78851
 - [SLO-CYBER-SEC/CVE-2026-78851](https://github.com/SLO-CYBER-SEC/CVE-2026-78851)
 
-### CVE-2026-78903 (2026-08-25)
-
-<code>Incomplete cleanup in SiteIsolation in Google Chrome prior to 152.0.7977.65 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: Medium)
-</code>
-
-- [vxssroott/CVE-2026-78903-SWIFT-Kick-to-the-Creds](https://github.com/vxssroott/CVE-2026-78903-SWIFT-Kick-to-the-Creds)
-
-### CVE-2026-78904 (2026-08-25)
-
-<code>Type confusion in ANGLE in Google Chrome prior to 152.0.7977.65 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)
-</code>
-
-- [vxssroott/CVE-2026-78904-Digital-Dinar-Drain](https://github.com/vxssroott/CVE-2026-78904-Digital-Dinar-Drain)
-
-### CVE-2026-78905 (2026-08-25)
-
-<code>Type confusion in ANGLE in Google Chrome prior to 152.0.7977.65 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)
-</code>
-
-- [vxssroott/CVE-2026-78905-Facebook-Account-Takeover](https://github.com/vxssroott/CVE-2026-78905-Facebook-Account-Takeover)
-
-### CVE-2026-78906 (2026-08-25)
-
-<code>Race condition in ANGLE in Google Chrome prior to 152.0.7977.65 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)
-</code>
-
-- [vxssroott/CVE-2026-78906-ChatGPT-Prompt-Injection](https://github.com/vxssroott/CVE-2026-78906-ChatGPT-Prompt-Injection)
-
 ### CVE-2026-78938 (2026-08-25)
 
 <code>Type confusion in V8 in Google Chrome prior to 152.0.7977.65 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)
@@ -16986,6 +16973,7 @@
 </code>
 
 - [0xTerror/CVE-2026-81780-Hash-Form](https://github.com/0xTerror/CVE-2026-81780-Hash-Form)
+- [0xCyp1337/CVE-2026-81780](https://github.com/0xCyp1337/CVE-2026-81780)
 
 ### CVE-2026-81861 (2026-09-11)
 
@@ -17053,6 +17041,13 @@
 </code>
 
 - [murrez/CVE-2026-82384](https://github.com/murrez/CVE-2026-82384)
+
+### CVE-2026-82531 (2026-10-06)
+
+<code>Smarty before 4.5.8 and 5.x before 5.8.5 contains a code injection vulnerability where the top-level nocache_hash is never restored during extends:/multi-component template inheritance, leaving it null. Attackers can supply assigned data containing a forged SmartyNocache marker that is copied verbatim into the regenerated PHP cache file, executing arbitrary PHP on include for remote code execution.
+</code>
+
+- [murrez/CVE-2026-82531](https://github.com/murrez/CVE-2026-82531)
 
 ### CVE-2026-82539 (2026-08-30)
 
@@ -17216,6 +17211,13 @@
 </code>
 
 - [SneakyNachos/CVE-2026-85048-the-gpu-died](https://github.com/SneakyNachos/CVE-2026-85048-the-gpu-died)
+
+### CVE-2026-85102 (2026-09-09)
+
+<code>Improper certificate trust validation during VPN negotiation in Check Point Quantum Security Gateway may allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.
+</code>
+
+- [aduli198/CVE-2026-85102](https://github.com/aduli198/CVE-2026-85102)
 
 ### CVE-2026-85520 (2026-09-29)
 
@@ -17455,6 +17457,7 @@
 - [HackfutSecRoot/CVE-2026-87902](https://github.com/HackfutSecRoot/CVE-2026-87902)
 - [MRdark-ops/CVE-2026-87902](https://github.com/MRdark-ops/CVE-2026-87902)
 - [tonydelouvre/CVE-2026-87902](https://github.com/tonydelouvre/CVE-2026-87902)
+- [xiaxiu555/cve-2026-87902](https://github.com/xiaxiu555/cve-2026-87902)
 
 ### CVE-2026-87915 (2026-09-18)
 
@@ -17737,6 +17740,13 @@
 </code>
 
 - [SaiTeja-Erukude/CVE-2026-93349-frictionless-command-injection](https://github.com/SaiTeja-Erukude/CVE-2026-93349-frictionless-command-injection)
+
+### CVE-2026-93355 (2026-09-28)
+
+<code>LiteLLM contains a weak authentication vulnerability that allows an attacker holding a valid JWT from the configured identity provider to authenticate as any existing user by exploiting an email-based fallback lookup in the JWT authentication flow without verifying the email_verified claim. Attackers can present a token with an unverified email address matching a victim's account to inherit the victim's role, including proxy_admin privileges, and permanently overwrite the victim's stored identity binding to retain persistent unauthorized access to administrative endpoints exposing API keys and user management.
+</code>
+
+- [InertFluid/cve-2026-93355-lab](https://github.com/InertFluid/cve-2026-93355-lab)
 
 ### CVE-2026-93399 (2026-09-25)
 
@@ -18173,6 +18183,13 @@
 - [x86byte/adm-zip_LPE-PoC](https://github.com/x86byte/adm-zip_LPE-PoC)
 - [Ahmed-Elmahgob/POC-CVE-2026-102282](https://github.com/Ahmed-Elmahgob/POC-CVE-2026-102282)
 
+### CVE-2026-102422 (2026-09-29)
+
+<code>shell-quote's `quote()` function emits a `{ comment }` token as `#` followed by its text, which comments out the rest of the shell line, including the opening quote of any later string token. A line terminator (\n, \r, U+2028, U+2029) in that later string therefore ends the comment, and the rest of the string is parsed as shell input: `quote(['echo', 'ok', { comment: 'x' }, 'a\nid;#'])` runs `id` in sh, bash, dash, ksh and zsh. `parse()` emits a comment token for a `#` in the middle of a word (for example `http://example.com/#frag`), so callers that combine `parse()` output with another untrusted string, such as `quote(parse(untrustedCommand).concat(untrustedArg))`, are affected. The fix for CVE-2026-9277 rejected line terminators in the comment's own text, but not in the tokens after it. Fixed in 1.11.0: `quote()` throws a `TypeError` when a string after a `{ comment }` token contains a line terminator.
+</code>
+
+- [DevVaibhav07/CVE-2026-102422](https://github.com/DevVaibhav07/CVE-2026-102422)
+
 ### CVE-2026-102425 (2026-09-29)
 
 <code>Joomla Extension - balbooa.com - Unauthenticated RCE via field shortcode injection in Balbooa Forms &lt; 2.4.3.4 - Balbooa Forms supports administrator-defined PHP code which runs after a public form submission. The feature also supports form-field shortcodes inside that PHP. Before calling `eval()`, the component replaces each shortcode with the raw value submitted by the visitor, leading to an RCE vector. A public form must use the product's optional PHP-after-submission action and interpolate an attacker-controlled field shortcode inside a double-quoted PHP string to be vulnerable.
@@ -18187,6 +18204,14 @@
 </code>
 
 - [murrez/CVE-2026-102427](https://github.com/murrez/CVE-2026-102427)
+
+### CVE-2026-102489 (2026-09-30)
+
+<code>Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The vulnerability is also present in version 7.0.0 to version 7.1.3, but not exploitable due to environment conditions.
+</code>
+
+- [horizon3ai/CVE-2026-102489](https://github.com/horizon3ai/CVE-2026-102489)
+- [Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce](https://github.com/Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce)
 
 ### CVE-2026-102607
 - [d4kw1n/CVE-2026-102607-ZoneMinder](https://github.com/d4kw1n/CVE-2026-102607-ZoneMinder)
@@ -19593,7 +19618,7 @@
 
 ### CVE-2025-5154 (2025-05-25)
 
-<code>Es wurde eine Schwachstelle in PhonePe App 25.03.21.0 für Android gefunden. Sie wurde als problematisch eingestuft. Es geht dabei um eine nicht klar definierte Funktion der Datei /data/data/com.phonepe.app/databases/ der Komponente SQLite Database. Durch das Beeinflussen mit unbekannten Daten kann eine cleartext storage in a file or on disk-Schwachstelle ausgenutzt werden. Der Angriff hat dabei lokal zu erfolgen. Der Exploit steht zur öffentlichen Verfügung.
+<code>A vulnerability was identified in PhonePe App 25.03.21.0 on Android. This affects an unknown function of the file /data/data/com.phonepe.app/databases/ of the component SQLite Database. The manipulation leads to cleartext storage in a file or on disk. The attack needs to be performed locally. The exploit is publicly available and might be used. The actual existence of this vulnerability is currently in question. The root-requirement of the attack is reflected by the CVSS vector attribute PR:H. The vendor explains: &quot;[A]s per the PoC this vulnerability needs a rooted device to exploit. PhonePe does not consider vulnerabilities found in rooted device as valid because there is not real-world exploit scenario.&quot;
 </code>
 
 - [honestcorrupt/phonepe-sensitive-data-exposure-cve-2025-5154](https://github.com/honestcorrupt/phonepe-sensitive-data-exposure-cve-2025-5154)
@@ -23987,6 +24012,7 @@
 - [kuyrathdaro/cve-2025-29927](https://github.com/kuyrathdaro/cve-2025-29927)
 - [Ritinify/CVE-2025-29927-PoC](https://github.com/Ritinify/CVE-2025-29927-PoC)
 - [vulnace/CVE-2025-29927](https://github.com/vulnace/CVE-2025-29927)
+- [sungue1/CVE-2025-29927](https://github.com/sungue1/CVE-2025-29927)
 
 ### CVE-2025-29943 (2026-01-16)
 
@@ -27879,7 +27905,6 @@
 - [rapticore/ore_react2shell_scanner](https://github.com/rapticore/ore_react2shell_scanner)
 - [fankh/cve-2025-55182-test-lab-windows](https://github.com/fankh/cve-2025-55182-test-lab-windows)
 - [cypholab/evilact](https://github.com/cypholab/evilact)
-- [greenheadHQ/CVE-2025-55182](https://github.com/greenheadHQ/CVE-2025-55182)
 - [sumanrox/rschunter](https://github.com/sumanrox/rschunter)
 - [I3r1h0n/React2Shell](https://github.com/I3r1h0n/React2Shell)
 - [zorejt/Rust_CVE-2025-55182](https://github.com/zorejt/Rust_CVE-2025-55182)
@@ -28201,6 +28226,7 @@
 - [litndat/React2Shell-PoC-CVE-2025-55182](https://github.com/litndat/React2Shell-PoC-CVE-2025-55182)
 - [k1llmelira/react2shell-exploit](https://github.com/k1llmelira/react2shell-exploit)
 - [Herick-Costa/CVE-2025-55182-React2Shell-RCE](https://github.com/Herick-Costa/CVE-2025-55182-React2Shell-RCE)
+- [tammin86/4thProject_Team1-CVE-2025-55182-](https://github.com/tammin86/4thProject_Team1-CVE-2025-55182-)
 - [diamorphine666/React2shell-CVE-2025-55182-Exploit](https://github.com/diamorphine666/React2shell-CVE-2025-55182-Exploit)
 - [se1zer/Nextjs_Exploit_Tool](https://github.com/se1zer/Nextjs_Exploit_Tool)
 - [PedroPLCode/CVE-2025-55182_react2shell_exploit.py](https://github.com/PedroPLCode/CVE-2025-55182_react2shell_exploit.py)
@@ -33980,6 +34006,7 @@
 </code>
 
 - [mistymntncop/CVE-2024-7971](https://github.com/mistymntncop/CVE-2024-7971)
+- [pepoc3/cve-2024-7971-poc](https://github.com/pepoc3/cve-2024-7971-poc)
 
 ### CVE-2024-7985 (2024-10-29)
 
@@ -35284,7 +35311,7 @@
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nfs/xattr: missing fdput() in fremovexattr error path\n\nIn the Linux kernel, the fremovexattr() syscall calls fdget() to acquire a\nfile reference but returns early without calling fdput() when\nstrncpy_from_user() fails on the name argument. In multi-threaded processes\nwhere fdget() takes the slow path, this permanently leaks one\nfile reference per call, pinning the struct file and associated kernel\nobjects in memory. An unprivileged local user can exploit this to cause\nkernel memory exhaustion. The issue was inadvertently fixed by commit\na71874379ec8 (&quot;xattr: switch to CLASS(fd)&quot;).
 </code>
 
-- [lcfr-eth/CVE-2024-14027_slop](https://github.com/lcfr-eth/CVE-2024-14027_slop)
+- [lcfr-hax/CVE-2024-14027_slop](https://github.com/lcfr-hax/CVE-2024-14027_slop)
 
 ### CVE-2024-20017 (2024-03-04)
 
@@ -36187,6 +36214,7 @@
 </code>
 
 - [abian2/CVE-2024-23652](https://github.com/abian2/CVE-2024-23652)
+- [hgyc/CVE-stand](https://github.com/hgyc/CVE-stand)
 
 ### CVE-2024-23653 (2024-01-31)
 
@@ -52721,6 +52749,7 @@
 - [sandesh9978/CVE-2022-0185-Analysis-and-Exploit](https://github.com/sandesh9978/CVE-2022-0185-Analysis-and-Exploit)
 - [prabeershakya/CVE-2022-0185-POC](https://github.com/prabeershakya/CVE-2022-0185-POC)
 - [shakyanayann/CVE-2022-0185](https://github.com/shakyanayann/CVE-2022-0185)
+- [secjuhl/CVE-2022-0185](https://github.com/secjuhl/CVE-2022-0185)
 
 ### CVE-2022-0219 (2022-01-20)
 
@@ -52827,6 +52856,7 @@
 - [KianaBin/CVE-2022-0492-Container-Escape](https://github.com/KianaBin/CVE-2022-0492-Container-Escape)
 - [T1erno/CVE-2022-0492-Docker-Breakout-Checker-and-PoC](https://github.com/T1erno/CVE-2022-0492-Docker-Breakout-Checker-and-PoC)
 - [Perimora/cve_2022_0492](https://github.com/Perimora/cve_2022_0492)
+- [hgyc/CVE-stand](https://github.com/hgyc/CVE-stand)
 
 ### CVE-2022-0529 (2022-02-09)
 
@@ -74195,6 +74225,7 @@
 - [0xbinder/CVE_2019_2215](https://github.com/0xbinder/CVE_2019_2215)
 - [Begitdj/cve-2019-2215-markw](https://github.com/Begitdj/cve-2019-2215-markw)
 - [saaedimam/sony-bravia-root-toolkit](https://github.com/saaedimam/sony-bravia-root-toolkit)
+- [WJNKAC/cve-2019-2215-oppo-a77t](https://github.com/WJNKAC/cve-2019-2215-oppo-a77t)
 
 ### CVE-2019-2525 (2019-01-16)
 
@@ -81887,7 +81918,7 @@
 - [Sunqiz/CVE-2017-0199-reprofuction](https://github.com/Sunqiz/CVE-2017-0199-reprofuction)
 - [TheCyberWatchers/CVE-2017-0199-v5.0](https://github.com/TheCyberWatchers/CVE-2017-0199-v5.0)
 - [kash-123/CVE-2017-0199](https://github.com/kash-123/CVE-2017-0199)
-- [ahmed-tarek22752/RCE-CVE-2017-0199-detection-analysis](https://github.com/ahmed-tarek22752/RCE-CVE-2017-0199-detection-analysis)
+- [ahmed-tarek22752/security-vulnerability-in-Microsoft-Office.](https://github.com/ahmed-tarek22752/security-vulnerability-in-Microsoft-Office.)
 - [BlackOclock/XLS-to-DBatLoader-or-GuLoader-for-AgentTesla-variant](https://github.com/BlackOclock/XLS-to-DBatLoader-or-GuLoader-for-AgentTesla-variant)
 
 ### CVE-2017-0204 (2017-04-12)
@@ -88722,6 +88753,7 @@
 - [hklabCR/CVE-2011-2523](https://github.com/hklabCR/CVE-2011-2523)
 - [krill-x7/CVE-2011-2523](https://github.com/krill-x7/CVE-2011-2523)
 - [BolivarJ/CVE-2011-2523](https://github.com/BolivarJ/CVE-2011-2523)
+- [Maalfer/vsftpd-2.3.4-exploit](https://github.com/Maalfer/vsftpd-2.3.4-exploit)
 - [KlyneZyro/Metasploitable2-VAPT-Report](https://github.com/KlyneZyro/Metasploitable2-VAPT-Report)
 - [Mirza-22144/Vulnerability-Assessment-Exploitation-Lab](https://github.com/Mirza-22144/Vulnerability-Assessment-Exploitation-Lab)
 - [tshaq17/vsftpd-2.3.4---Backdoor-Command-Execution](https://github.com/tshaq17/vsftpd-2.3.4---Backdoor-Command-Execution)
@@ -90216,13 +90248,6 @@
 - [rafaelh/CVE-2000-0649](https://github.com/rafaelh/CVE-2000-0649)
 - [stevenvegar/cve-2000-0649](https://github.com/stevenvegar/cve-2000-0649)
 - [Downgraderz/PoC-CVE-2000-0649](https://github.com/Downgraderz/PoC-CVE-2000-0649)
-
-### CVE-2000-0979 (2001-01-22)
-
-<code>File and Print Sharing service in Windows 95, Windows 98, and Windows Me does not properly check the password for a file share, which allows remote attackers to bypass share access controls by sending a 1-byte password that matches the first character of the real password, aka the &quot;Share Level Password&quot; vulnerability.
-</code>
-
-- [Z6543/CVE-2000-0979](https://github.com/Z6543/CVE-2000-0979)
 
 
 ## 1999
