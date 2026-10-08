@@ -1704,6 +1704,7 @@
 
 - [HORKimhab/CVE-2026-5430](https://github.com/HORKimhab/CVE-2026-5430)
 - [abraxas/CVE-2026-5430](https://github.com/abraxas/CVE-2026-5430)
+- [davidvrns/CVE-2026-5430-WSO2](https://github.com/davidvrns/CVE-2026-5430-WSO2)
 
 ### CVE-2026-5432
 - [George0Papasotiriou/CVE-2026-5432-GraphQL-Batching-Alias-Confusion-SQL-Injection](https://github.com/George0Papasotiriou/CVE-2026-5432-GraphQL-Batching-Alias-Confusion-SQL-Injection)
@@ -3003,6 +3004,7 @@
 - [emilliewatson96/spryCVE-2026-10520](https://github.com/emilliewatson96/spryCVE-2026-10520)
 - [gduma-phData/patch-CVE-2026-10520](https://github.com/gduma-phData/patch-CVE-2026-10520)
 - [imbas007/RCE-CVE-2026-10520-CVE-2026-10523](https://github.com/imbas007/RCE-CVE-2026-10520-CVE-2026-10523)
+- [01xJB/CVE-2026-10520-POC](https://github.com/01xJB/CVE-2026-10520-POC)
 
 ### CVE-2026-10523 (2026-06-09)
 
@@ -3509,6 +3511,13 @@
 
 - [shinthink/CVE-2026-13001](https://github.com/shinthink/CVE-2026-13001)
 - [ghostpels/CVE-2026-13001](https://github.com/ghostpels/CVE-2026-13001)
+
+### CVE-2026-13043 (2026-10-01)
+
+<code>A missing authentication vulnerability in the Kernel Memory Access Driver (PSKMAD) used by WatchGuard endpoint security products allows a local, authenticated attacker to bypass the driver's access-control handshake and issue arbitrary privileged commands to the driver, resulting in disclosure of kernel and process memory.
+</code>
+
+- [TheMalwareGuardian/CVE-2026-13043](https://github.com/TheMalwareGuardian/CVE-2026-13043)
 
 ### CVE-2026-13152 (2026-07-27)
 
@@ -5100,6 +5109,8 @@
 - [tc4dy/CVE-2026-21589-PoC-Exploit](https://github.com/tc4dy/CVE-2026-21589-PoC-Exploit)
 - [aduli198/CVE-2026-21589](https://github.com/aduli198/CVE-2026-21589)
 - [BimBoxH4/CVE-2026-21589](https://github.com/BimBoxH4/CVE-2026-21589)
+- [0xBlackash/CVE-2026-21589](https://github.com/0xBlackash/CVE-2026-21589)
+- [ynsmroztas/AtlasSniper](https://github.com/ynsmroztas/AtlasSniper)
 
 ### CVE-2026-21627 (2026-02-20)
 
@@ -5912,6 +5923,7 @@
 - [Mluex0/CVE-2026-23744-PoC](https://github.com/Mluex0/CVE-2026-23744-PoC)
 - [sonnelon/CVE-2026-23744-PoC](https://github.com/sonnelon/CVE-2026-23744-PoC)
 - [itsC1SCO/mcpjam-to-root](https://github.com/itsC1SCO/mcpjam-to-root)
+- [01xJB/CVE-2026-23744-POC](https://github.com/01xJB/CVE-2026-23744-POC)
 
 ### CVE-2026-23745 (2026-01-16)
 
@@ -6159,6 +6171,7 @@
 - [Ish3ng0m4/CVE-2026-24061-Telnetd](https://github.com/Ish3ng0m4/CVE-2026-24061-Telnetd)
 - [skyejacobson/CyberhawksLab-telnetCVE](https://github.com/skyejacobson/CyberhawksLab-telnetCVE)
 - [ZeroDayEvil/CVE-2026-24061](https://github.com/ZeroDayEvil/CVE-2026-24061)
+- [Yoksulcvt/CVE-2026-24061-Telnet-Authentication-Bypass](https://github.com/Yoksulcvt/CVE-2026-24061-Telnet-Authentication-Bypass)
 
 ### CVE-2026-24072 (2026-05-04)
 
@@ -11644,6 +11657,7 @@
 - [maulanasdqn/ghostlock-honor-brpnx1](https://github.com/maulanasdqn/ghostlock-honor-brpnx1)
 - [Nixbones/ghostlock-rmx5085](https://github.com/Nixbones/ghostlock-rmx5085)
 - [linux-tools/VIVO-IQOO-Neo9-Root-Tools](https://github.com/linux-tools/VIVO-IQOO-Neo9-Root-Tools)
+- [GrandFuzard/redmi-13-5g-ghostlock-findings](https://github.com/GrandFuzard/redmi-13-5g-ghostlock-findings)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -11761,7 +11775,6 @@
 <code>A race condition was addressed with improved state handling. This issue is fixed in iOS 26.6 and iPadOS 26.6, macOS Sequoia 15.7.8, macOS Sonoma 14.8.8, macOS Tahoe 26.6, watchOS 26.6. An app may be able to cause unexpected system termination or write kernel memory.
 </code>
 
-- [tls456/CVE-2026-43805-PoC](https://github.com/tls456/CVE-2026-43805-PoC)
 - [WTCYJ/CVE-2026-43805-analysis](https://github.com/WTCYJ/CVE-2026-43805-analysis)
 
 ### CVE-2026-43813 (2026-07-27)
@@ -14939,6 +14952,7 @@
 - [jed-parsec/CVE-2026-63030-60137-wp2shell-lab](https://github.com/jed-parsec/CVE-2026-63030-60137-wp2shell-lab)
 - [MRdark-ops/WP2Shell--CVE-2026-63030-CVE-2026-60137-](https://github.com/MRdark-ops/WP2Shell--CVE-2026-63030-CVE-2026-60137-)
 - [hitechcloud-vietnam/wp2shell-PoC](https://github.com/hitechcloud-vietnam/wp2shell-PoC)
+- [manpisetsu/wp2shell](https://github.com/manpisetsu/wp2shell)
 
 ### CVE-2026-63039 (2026-08-20)
 
@@ -16556,6 +16570,13 @@
 
 - [H4zaz/CVE-2026-76547](https://github.com/H4zaz/CVE-2026-76547)
 
+### CVE-2026-76555 (2026-09-16)
+
+<code>The WP Import Export Lite WordPress plugin before 3.9.33 does not validate a user-supplied file path before reading it and copying it into a publicly accessible directory, allowing any user whose role an administrator has granted the WP Import Export Lite WordPress plugin before 3.9.33's import permission to disclose sensitive files from the server, including files located outside the web root. The same code path also relaxes the file-system permissions of any path it is given, whether or not the copy succeeds.
+</code>
+
+- [Hasyros/CVE-2026-76555-path-traversal-wp-import-export-lite](https://github.com/Hasyros/CVE-2026-76555-path-traversal-wp-import-export-lite)
+
 ### CVE-2026-76564 (2026-08-20)
 
 <code>Joomla Extension - phoca.cz -  Stored XSS via User-Agent header in Admin Order View in Phoca Cart 5.0.0-6.1.7
@@ -17501,6 +17522,8 @@
 - [bkchaudhari/NetScaler-CTX697096-Assessment-Script](https://github.com/bkchaudhari/NetScaler-CTX697096-Assessment-Script)
 - [emilstahl/pitscaler](https://github.com/emilstahl/pitscaler)
 - [orjanj/netscaler_threat_hunt_helper](https://github.com/orjanj/netscaler_threat_hunt_helper)
+- [watchtowrlabs/citrix-netscaler-cve-2026-88771-iocs](https://github.com/watchtowrlabs/citrix-netscaler-cve-2026-88771-iocs)
+- [grupooruss/netscaler-defensive-checker](https://github.com/grupooruss/netscaler-defensive-checker)
 
 ### CVE-2026-88772 (2026-09-27)
 
@@ -17657,6 +17680,13 @@
 
 - [techupdate24/gitlab-ai-gateway-cve-2026-90970](https://github.com/techupdate24/gitlab-ai-gateway-cve-2026-90970)
 
+### CVE-2026-90977 (2026-09-18)
+
+<code>The Clean Login WordPress plugin before 1.19 does not verify its registration CAPTCHA when the stored session value is empty, allowing unauthenticated users to bypass the anti-automation control on the registration form and create accounts without solving it.
+</code>
+
+- [aminquliyev057/CVE-2026-90977](https://github.com/aminquliyev057/CVE-2026-90977)
+
 ### CVE-2026-91097 (2026-09-16)
 
 <code>HP has identified and remediated multiple externally reported vulnerabilities within HPLIP. The findings affect several software components that could potentially enable remote code execution, privilege escalation, denial of service, information disclosure, or unauthorized file modification under certain conditions.
@@ -17795,6 +17825,13 @@
 
 - [prince325/CVE-2026-93659-writeup](https://github.com/prince325/CVE-2026-93659-writeup)
 
+### CVE-2026-93661 (2026-09-24)
+
+<code>The Events Manager  WordPress plugin before 7.4.5 does not stop a ticket-update request from replacing the identifiers of the ticket it was authorized against, letting a user who can manage one event's tickets overwrite and reassign any ticket on the site to their own event.
+</code>
+
+- [Hasyros/CVE-2026-93661-idor-events-manager](https://github.com/Hasyros/CVE-2026-93661-idor-events-manager)
+
 ### CVE-2026-93674 (2026-10-07)
 
 <code>IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.
@@ -17926,6 +17963,7 @@
 </code>
 
 - [Nxploited/CVE-2026-96451](https://github.com/Nxploited/CVE-2026-96451)
+- [MRdark-ops/wpexploit-CVE-2026-96451](https://github.com/MRdark-ops/wpexploit-CVE-2026-96451)
 
 ### CVE-2026-96512 (2026-09-23)
 
@@ -18041,6 +18079,13 @@
 
 - [Rully2212/CVE-2026-97286](https://github.com/Rully2212/CVE-2026-97286)
 
+### CVE-2026-97332 (2026-10-04)
+
+<code>The User Private Files  WordPress plugin before 2.2.0 does not properly protect its stored private files on multisite installations, where the rewrite rule it relies on to route file requests through its access check is never reached, allowing unauthenticated users to retrieve other users' private files directly.
+</code>
+
+- [Kolya080808/CVE-2026-97332-PoC](https://github.com/Kolya080808/CVE-2026-97332-PoC)
+
 ### CVE-2026-97347 (2026-09-30)
 
 <code>The Post Views Stats Counter plugin for WordPress is vulnerable to Stored Cross-Site Scripting via User-Agent Header in all versions up to, and including, 1.1.7 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. The plugin's only input filter is a substring blacklist for known bot signatures (e.g. 'bot', 'spider', 'crawler'), which can be trivially bypassed by crafting a User-Agent payload that omits those strings.
@@ -18154,12 +18199,40 @@
 
 - [murrez/CVE-2026-101110](https://github.com/murrez/CVE-2026-101110)
 
+### CVE-2026-101160 (2026-10-03)
+
+<code>The WP Ultimate Review WordPress plugin before 2.4.4 does not validate that a submitted review rating is numeric before storing it and later using it in numeric operations when rendering reviews, allowing unauthenticated users to make the reviewed content fail with a fatal error for all visitors until the review is removed (a persistent denial of service), when user reviews are enabled.
+</code>
+
+- [Hasyros/CVE-2026-101160-dos-wp-ultimate-review-rating](https://github.com/Hasyros/CVE-2026-101160-dos-wp-ultimate-review-rating)
+
+### CVE-2026-101161 (2026-10-03)
+
+<code>The WP Ultimate Review WordPress plugin before 2.4.4 does not prevent unauthenticated users from storing crafted review content that makes the reviewed page fail with a fatal error on every subsequent visit, resulting in a persistent denial of service when the WP Ultimate Review WordPress plugin before 2.4.4's review display settings have never been saved.
+</code>
+
+- [Hasyros/CVE-2026-101161-dos-wp-ultimate-review-shortcode](https://github.com/Hasyros/CVE-2026-101161-dos-wp-ultimate-review-shortcode)
+
+### CVE-2026-101162 (2026-10-03)
+
+<code>The WP Ultimate Review WordPress plugin before 2.4.4 does not escape some of its review overview settings before outputting them in posts, which could allow users with a role as low as author to perform Stored Cross-Site Scripting attacks, when author reviews are enabled.
+</code>
+
+- [Hasyros/CVE-2026-101162-xss-wp-ultimate-review](https://github.com/Hasyros/CVE-2026-101162-xss-wp-ultimate-review)
+
 ### CVE-2026-101894 (2026-09-28)
 
 <code>The decompress package for Node.js extracts archives. Prior to 10.2.2 and 11.1.4, the default decompress(input, output) API relies on lexical containment checks that do not account for the kernel following a planted symlink chain. An attacker can supply a crafted archive containing chained symlink entries so that a later entry resolves outside the output directory. This allows files outside output to be read or written, and overwriting startup scripts or configuration can lead to remote code execution. The maintained @xhmikosr/decompress package is fixed in 10.2.2 and 11.1.4, but the separately affected unmaintained decompress package remains unpatched through 4.2.1. This vulnerability results from a bypass of the incomplete hardening for CVE-2026-53486. @xhmikosr/decompress is fixed in versions 10.2.2 and 11.1.4.
 </code>
 
 - [murrez/CVE-2026-101894](https://github.com/murrez/CVE-2026-101894)
+
+### CVE-2026-102253 (2026-09-29)
+
+<code>iperf3 versions prior to 3.22 contains a denial of service vulnerability that allows unauthenticated remote attackers to crash-loop the server's UDP receive worker into an unrecoverable infinite loop by sending a single crafted control-channel parameter message followed by one 16-byte UDP datagram. Attackers can permanently pin the affected per-stream receive thread at approximately 100% CPU usage, rendering the server unusable until forcibly killed with SIGKILL, as the process does not respond to normal control-channel closure.
+</code>
+
+- [Ravi-lk/CVE-2026-102253-POC](https://github.com/Ravi-lk/CVE-2026-102253-POC)
 
 ### CVE-2026-102261 (2026-09-29)
 
@@ -18207,7 +18280,7 @@
 
 ### CVE-2026-102489 (2026-09-30)
 
-<code>Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The vulnerability is also present in version 7.0.0 to version 7.1.3, but not exploitable due to environment conditions.
+<code>Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The bug is also present in version 7.0.0 to version 7.1.2, but not exploitable due to changes in the underlying framework.
 </code>
 
 - [horizon3ai/CVE-2026-102489](https://github.com/horizon3ai/CVE-2026-102489)
@@ -18215,6 +18288,13 @@
 
 ### CVE-2026-102607
 - [d4kw1n/CVE-2026-102607-ZoneMinder](https://github.com/d4kw1n/CVE-2026-102607-ZoneMinder)
+
+### CVE-2026-102782 (2026-10-07)
+
+<code>Joomla Extension - ordasoft.com - Unauthenticated SQL injection in OrdaSoft Simple Membership &lt; 7.4.0 - site/simplemembership.php dispatches task=checkLoginPass with no authentication or access control check of any kind. The handler reads a login request parameter through Joomla’s generic, non-sanitizing input filter, which strips HTML/script tags but never touches quotes or SQL syntax, and concatenates it directly into a query string with no escaping or parameterization:
+</code>
+
+- [murrez/CVE-2026-102782](https://github.com/murrez/CVE-2026-102782)
 
 ### CVE-2026-102971
 - [BomboBombone/CVE-2026-102971](https://github.com/BomboBombone/CVE-2026-102971)
@@ -18404,6 +18484,13 @@
 
 ### CVE-2026-105319
 - [kashishtopi/CVE-2026-105319](https://github.com/kashishtopi/CVE-2026-105319)
+
+### CVE-2026-105844 (2026-10-06)
+
+<code>Payload is a free and open source headless content management system. In versions from 3.0.0 before 3.88.0 and canary versions before 4.0.0-canary.27, an unauthenticated user can submit prototype-sensitive field paths when @payloadcms/plugin-import-export is enabled, causing unintended application behavior that can lead to remote code execution. This issue is fixed in versions 3.88.0 and 4.0.0-canary.27.
+</code>
+
+- [murrez/CVE-2026-105844](https://github.com/murrez/CVE-2026-105844)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -29006,6 +29093,13 @@
 </code>
 
 - [prabhatverma47/CVE-2025-58180](https://github.com/prabhatverma47/CVE-2025-58180)
+
+### CVE-2025-58226 (2025-09-22)
+
+<code>Insertion of Sensitive Information Into Sent Data vulnerability in iberezansky 3D FlipBook – PDF Flipbook Viewer, Flipbook Image Gallery interactive-3d-flipbook-powered-physics-engine allows Retrieve Embedded Sensitive Data.This issue affects 3D FlipBook – PDF Flipbook Viewer, Flipbook Image Gallery: from n/a through &lt;= 1.16.16.
+</code>
+
+- [QASIM1401/CVE-2025-58226-PoC](https://github.com/QASIM1401/CVE-2025-58226-PoC)
 
 ### CVE-2025-58360 (2025-11-25)
 
@@ -52979,6 +53073,7 @@
 - [edsonjt81/CVE-2022-0847-Linux](https://github.com/edsonjt81/CVE-2022-0847-Linux)
 - [chenaotian/CVE-2022-0847](https://github.com/chenaotian/CVE-2022-0847)
 - [V0WKeep3r/CVE-2022-0847-DirtyPipe-Exploit](https://github.com/V0WKeep3r/CVE-2022-0847-DirtyPipe-Exploit)
+- [osungjinwoo/CVE-2022-0847-Dirty-Pipe](https://github.com/osungjinwoo/CVE-2022-0847-Dirty-Pipe)
 - [Greetdawn/CVE-2022-0847-DirtyPipe-](https://github.com/Greetdawn/CVE-2022-0847-DirtyPipe-)
 - [crusoe112/DirtyPipePython](https://github.com/crusoe112/DirtyPipePython)
 - [nanaao/dirtyPipe-automaticRoot](https://github.com/nanaao/dirtyPipe-automaticRoot)
@@ -54887,6 +54982,7 @@
 - [guigui237/Expoitation-de-la-vuln-rabilit-CVE-2022-22965](https://github.com/guigui237/Expoitation-de-la-vuln-rabilit-CVE-2022-22965)
 - [jashan-lefty/Spring4Shell](https://github.com/jashan-lefty/Spring4Shell)
 - [brunoh6/web-threat-mitigation](https://github.com/brunoh6/web-threat-mitigation)
+- [osungjinwoo/CVE-2022-22965](https://github.com/osungjinwoo/CVE-2022-22965)
 - [Nosie12/fire-wall-server](https://github.com/Nosie12/fire-wall-server)
 - [salo-404/firewall](https://github.com/salo-404/firewall)
 - [shoucheng3/spring-projects__spring-framework_CVE-2022-22965_5-2-19-RELEASE](https://github.com/shoucheng3/spring-projects__spring-framework_CVE-2022-22965_5-2-19-RELEASE)
@@ -62375,6 +62471,7 @@
 - [pizza-power/Golang-CVE-2021-22205-POC](https://github.com/pizza-power/Golang-CVE-2021-22205-POC)
 - [DIVD-NL/GitLab-cve-2021-22205-nse](https://github.com/DIVD-NL/GitLab-cve-2021-22205-nse)
 - [w0x68y/Gitlab-CVE-2021-22205](https://github.com/w0x68y/Gitlab-CVE-2021-22205)
+- [osungjinwoo/CVE-2021-22205-gitlab](https://github.com/osungjinwoo/CVE-2021-22205-gitlab)
 - [momika233/cve-2021-22205-GitLab-13.10.2---Remote-Code-Execution-RCE-Unauthenticated-](https://github.com/momika233/cve-2021-22205-GitLab-13.10.2---Remote-Code-Execution-RCE-Unauthenticated-)
 - [keven1z/CVE-2021-22205](https://github.com/keven1z/CVE-2021-22205)
 - [overgrowncarrot1/DejaVu-CVE-2021-22205](https://github.com/overgrowncarrot1/DejaVu-CVE-2021-22205)
@@ -65069,6 +65166,13 @@
 - [HuskyHacks/CVE-2021-38699-Reflected-XSS](https://github.com/HuskyHacks/CVE-2021-38699-Reflected-XSS)
 - [HuskyHacks/CVE-2021-38699-Stored-XSS](https://github.com/HuskyHacks/CVE-2021-38699-Stored-XSS)
 - [Justin-1993/CVE-2021-38699](https://github.com/Justin-1993/CVE-2021-38699)
+
+### CVE-2021-38759 (2021-12-07)
+
+<code>Raspberry Pi OS through 5.10 has the raspberry default password for the pi account. If not changed, attackers can gain administrator privileges.
+</code>
+
+- [Hu2ie/CVE-2021-38759](https://github.com/Hu2ie/CVE-2021-38759)
 
 ### CVE-2021-38817
 - [HuskyHacks/CVE-2021-38817-Remote-OS-Command-Injection](https://github.com/HuskyHacks/CVE-2021-38817-Remote-OS-Command-Injection)
@@ -82829,7 +82933,6 @@
 - [alkaid176/CVE-2017-7921](https://github.com/alkaid176/CVE-2017-7921)
 - [inj3ction/CVE-2017-7921-EXP](https://github.com/inj3ction/CVE-2017-7921-EXP)
 - [krypton612/hikivision](https://github.com/krypton612/hikivision)
-- [blacksheepstudio/CVE-2017-7921-EXP](https://github.com/blacksheepstudio/CVE-2017-7921-EXP)
 - [AnonkiGroup/AnonHik](https://github.com/AnonkiGroup/AnonHik)
 - [b3pwn3d/CVE-2017-7921](https://github.com/b3pwn3d/CVE-2017-7921)
 - [kooroshsanaei/HikVision-CVE-2017-7921](https://github.com/kooroshsanaei/HikVision-CVE-2017-7921)
@@ -87211,13 +87314,6 @@
 </code>
 
 - [Satheesh575555/openSSL_1.0.1g_CVE-2014-3507](https://github.com/Satheesh575555/openSSL_1.0.1g_CVE-2014-3507)
-
-### CVE-2014-3544 (2014-07-29)
-
-<code>Cross-site scripting (XSS) vulnerability in user/profile.php in Moodle through 2.3.11, 2.4.x before 2.4.11, 2.5.x before 2.5.7, 2.6.x before 2.6.4, and 2.7.x before 2.7.1 allows remote authenticated users to inject arbitrary web script or HTML via the Skype ID profile field.
-</code>
-
-- [aforesaid/MoodleHack](https://github.com/aforesaid/MoodleHack)
 
 ### CVE-2014-3551 (2014-07-29)
 
