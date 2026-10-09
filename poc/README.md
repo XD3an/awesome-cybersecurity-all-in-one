@@ -6089,6 +6089,13 @@
 
 - [aramosf/CVE-2026-24031](https://github.com/aramosf/CVE-2026-24031)
 
+### CVE-2026-24046 (2026-01-21)
+
+<code>Backstage is an open framework for building developer portals. Multiple Scaffolder actions and archive extraction utilities were vulnerable to symlink-based path traversal attacks. An attacker with access to create and execute Scaffolder templates could exploit symlinks to read arbitrary files via the `debug:log` action by creating a symlink pointing to sensitive files (e.g., `/etc/passwd`, configuration files, secrets); delete arbitrary files via the `fs:delete` action by creating symlinks pointing outside the workspace, and write files outside the workspace via archive extraction (tar/zip) containing malicious symlinks. This affects any Backstage deployment where users can create or execute Scaffolder templates. This vulnerability is fixed in `@backstage/backend-defaults` versions 0.12.2, 0.13.2, 0.14.1, and 0.15.0; `@backstage/plugin-scaffolder-backend` versions 2.2.2, 3.0.2, and 3.1.1; and `@backstage/plugin-scaffolder-node` versions 0.11.2 and 0.12.3. Users should upgrade to these versions or later. Some workarounds are available. Follow the recommendation in the Backstage Threat Model to limit access to creating and updating templates, restrict who can create and execute Scaffolder templates using the permissions framework, audit existing templates for symlink usage, and/or run Backstage in a containerized environment with limited filesystem access.
+</code>
+
+- [Rem1L/cve-2026-24046-poc](https://github.com/Rem1L/cve-2026-24046-poc)
+
 ### CVE-2026-24049 (2026-01-22)
 
 <code>wheel is a command line tool for manipulating Python wheel files, as defined in PEP 427. In versions 0.40.0 through 0.46.1, the unpack function is vulnerable to file permission modification through mishandling of file permissions after extraction. The logic blindly trusts the filename from the archive header for the chmod operation, even though the extraction process itself might have sanitized the path. Attackers can craft a malicious wheel file that, when unpacked, changes the permissions of critical system files (e.g., /etc/passwd, SSH keys, config files), allowing for Privilege Escalation or arbitrary code execution by modifying now-writable scripts. This issue has been fixed in version 0.46.2.
@@ -7597,6 +7604,13 @@
 </code>
 
 - [MichaelAdamGroberman/CVE-2026-28767](https://github.com/MichaelAdamGroberman/CVE-2026-28767)
+
+### CVE-2026-28775 (2026-03-04)
+
+<code>An unauthenticated Remote Code Execution (RCE) vulnerability exists in the SNMP service of International Datacasting Corporation (IDC) SFX Series SuperFlex SatelliteReceiver. The deployment insecurely provisions the `private` SNMP community string with read/write access by default. Because the SNMP agent runs as root, an unauthenticated remote attacker can utilize `NET-SNMP-EXTEND-MIB` directives, abusing the fact that the system runs a vulnerable version of net-snmp pre 5.8, to execute arbitrary operating system commands with root privileges.
+</code>
+
+- [Udyz/CVE-2026-28775](https://github.com/Udyz/CVE-2026-28775)
 
 ### CVE-2026-28797 (2026-04-03)
 
@@ -11664,6 +11678,7 @@
 - [linux-tools/VIVO-IQOO-Neo9-Root-Tools](https://github.com/linux-tools/VIVO-IQOO-Neo9-Root-Tools)
 - [GrandFuzard/redmi-13-5g-ghostlock-findings](https://github.com/GrandFuzard/redmi-13-5g-ghostlock-findings)
 - [zimza1abim/Root-My-Galaxy-Payloads-SM-S928N](https://github.com/zimza1abim/Root-My-Galaxy-Payloads-SM-S928N)
+- [d16ug-a1l/REDMI_Root](https://github.com/d16ug-a1l/REDMI_Root)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -15106,6 +15121,7 @@
 - [Wangs-official/opace6-cve-2026-64560](https://github.com/Wangs-official/opace6-cve-2026-64560)
 - [qingle009/opace6-cve-2026-64560](https://github.com/qingle009/opace6-cve-2026-64560)
 - [Meniben/redmi14c-pond-cve-2026-64560](https://github.com/Meniben/redmi14c-pond-cve-2026-64560)
+- [sangsheng2026/honor-90gt-mag-an00-root-research](https://github.com/sangsheng2026/honor-90gt-mag-an00-root-research)
 
 ### CVE-2026-64561 (2026-08-04)
 
@@ -16937,6 +16953,7 @@
 
 - [digiprosec/CVE-2026-80428](https://github.com/digiprosec/CVE-2026-80428)
 - [shivammittal2403/cve-2026-80428-ctf](https://github.com/shivammittal2403/cve-2026-80428-ctf)
+- [HackfutSecRoot/CVE-2026-80428](https://github.com/HackfutSecRoot/CVE-2026-80428)
 
 ### CVE-2026-80444 (2026-09-23)
 
@@ -17973,12 +17990,18 @@
 - [mhtsec/CVE-2026-94545](https://github.com/mhtsec/CVE-2026-94545)
 - [MRdark-ops/CVE-2026-94545-](https://github.com/MRdark-ops/CVE-2026-94545-)
 
+### CVE-2026-94597
+- [canhieu/CVE-2026-94597-poc](https://github.com/canhieu/CVE-2026-94597-poc)
+
 ### CVE-2026-94609 (2026-09-24)
 
 <code>authentik is an open-source identity provider. Prior to 2026.2.7, 2026.5.7, and 2026.8.2, an account with delegated permission to manage a group, group membership, or a user can grant superuser status to an account or assign an existing role to a group without holding the permissions that gate those privileges. Group hierarchy checks do not consistently account for superuser status inherited from ancestor groups, and role assignment to a group lacks the required authorization check. Only deployments that delegate these management capabilities to accounts that are not full administrators are affected. This issue is fixed in versions 2026.2.7, 2026.5.7, and 2026.8.2.
 </code>
 
 - [anthonyk2923/CVE-2026-94609](https://github.com/anthonyk2923/CVE-2026-94609)
+
+### CVE-2026-95149
+- [reputati0n/CVE-2026-95149](https://github.com/reputati0n/CVE-2026-95149)
 
 ### CVE-2026-95622
 - [0xSemizzz/CVE-2026-95622](https://github.com/0xSemizzz/CVE-2026-95622)
@@ -18545,6 +18568,14 @@
 ### CVE-2026-107268
 - [yuwkaaa/CVE-2026-107268](https://github.com/yuwkaaa/CVE-2026-107268)
 
+### CVE-2026-107406 (2026-10-08)
+
+<code>Memory overflow vulnerability leading to Remote Code Execution or Denial of Service Vulnerability in NetScaler ADC.\n\n\nNetScaler ADC or NetScaler Gateway must be configured as a SAML SP or SAML IdP, subject to the following version-specific requirements:\n\n\n\n \n\n  *  For the following versions: Applicable only when configured as a SAML IdP:\n  *  NetScaler ADC and NetScaler Gateway between 14.1-73.37 and 14.1-73.41, inclusive\n  *  NetScaler ADC 14.1-FIPS between 14.1-73.37 FIPS and 14.1-73.41 FIPS, inclusive\n  *  NetScaler ADC and NetScaler Gateway between 13.1-64.23 and 13.1-64.28, inclusive\n  *  NetScaler ADC 13.1-FIPS between 13.1-NDcPP 13.1-37.279 and 13.1- 37.282, inclusive\n\n\n\n\n \n\n\n\nFor the following versions: Applicable only when configured as a SAML SP or SAML IdP:\n\n  *  NetScaler ADC and NetScaler Gateway before 14.1-73.37 \n  *  NetScaler ADC 14.1-FIPS before 14.1-73.37 FIPS \n  *  NetScaler ADC and NetScaler Gateway before 13.1-64.23\n  *  NetScaler ADC 13.1-FIPS before13.1-NDcPP 13.1-37.279
+</code>
+
+- [techupdate24/citrix-netscaler-rce-cve-2026-107406](https://github.com/techupdate24/citrix-netscaler-rce-cve-2026-107406)
+- [ApexBreach/CVE-2026-107406-Poc](https://github.com/ApexBreach/CVE-2026-107406-Poc)
+
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
 
@@ -18774,6 +18805,7 @@
 
 - [FWNavy/RMASmoke](https://github.com/FWNavy/RMASmoke)
 - [IsolatedAnarchy/RMASmoke-v2](https://github.com/IsolatedAnarchy/RMASmoke-v2)
+- [MCRideable3963/exploit-docs](https://github.com/MCRideable3963/exploit-docs)
 
 ### CVE-2025-1219 (2025-03-30)
 
@@ -23521,6 +23553,7 @@
 - [mrowkoob/CVE-2025-26466-msf](https://github.com/mrowkoob/CVE-2025-26466-msf)
 - [tpirate/CVE-2025-26466](https://github.com/tpirate/CVE-2025-26466)
 - [acidboonrs/cve-2025-26466-openssh-poc](https://github.com/acidboonrs/cve-2025-26466-openssh-poc)
+- [K0n9-log/cve-2025-26466-canvas](https://github.com/K0n9-log/cve-2025-26466-canvas)
 
 ### CVE-2025-26529 (2025-02-24)
 
@@ -25536,6 +25569,13 @@
 - [rxerium/CVE-2025-41244](https://github.com/rxerium/CVE-2025-41244)
 - [haspiranti/CVE-2025-41244-PoC](https://github.com/haspiranti/CVE-2025-41244-PoC)
 - [NULL200OK/CVE-2025-41244](https://github.com/NULL200OK/CVE-2025-41244)
+
+### CVE-2025-41249 (2025-09-16)
+
+<code>The Spring Framework annotation detection mechanism may not correctly resolve annotations on methods within type hierarchies with a parameterized super type with unbounded generics. This can be an issue if such annotations are used for authorization decisions.\n\nYour application may be affected by this if you are using Spring Security's @EnableMethodSecurity feature.\n\nYou are not affected by this if you are not using @EnableMethodSecurity or if you do not use security annotations on methods in generic superclasses or generic interfaces.\n\nThis CVE is published in conjunction with  CVE-2025-41248 https://spring.io/security/cve-2025-41248 .
+</code>
+
+- [edwin/simulating-cve-2025-41249](https://github.com/edwin/simulating-cve-2025-41249)
 
 ### CVE-2025-41373 (2025-08-01)
 
@@ -39188,6 +39228,13 @@
 </code>
 
 - [meeeeing/CVE-2024-36587](https://github.com/meeeeing/CVE-2024-36587)
+
+### CVE-2024-36774 (2024-06-06)
+
+<code>An arbitrary file upload vulnerability in Monstra CMS v3.0.4 allows attackers to execute arbitrary code via uploading a crafted PHP file.
+</code>
+
+- [PawFV/CVE-2024-36774-Monstra-CMS-RCE-PoC](https://github.com/PawFV/CVE-2024-36774-Monstra-CMS-RCE-PoC)
 
 ### CVE-2024-36821 (2024-06-11)
 
@@ -52854,7 +52901,7 @@
 </code>
 
 - [disqualifier/psa-2026-00043-recovery](https://github.com/disqualifier/psa-2026-00043-recovery)
-- [alexandrov666/CVE-2023-54391-RCE](https://github.com/alexandrov666/CVE-2023-54391-RCE)
+- [alexand0www/CVE-2023-54391-RCE](https://github.com/alexand0www/CVE-2023-54391-RCE)
 
 
 ## 2022
@@ -54494,6 +54541,13 @@
 </code>
 
 - [docfate111/CVE-2022-21789](https://github.com/docfate111/CVE-2022-21789)
+
+### CVE-2022-21812 (2022-08-18)
+
+<code>Improper access control in the Intel(R) HAXM software before version 7.7.1 may allow an authenticated user to potentially enable escalation of privilege via local access.
+</code>
+
+- [NeroMinddd/intel-haxm-kernel-reverse-engineering-cve-2022-21812](https://github.com/NeroMinddd/intel-haxm-kernel-reverse-engineering-cve-2022-21812)
 
 ### CVE-2022-21831 (2022-05-26)
 
@@ -63312,6 +63366,7 @@
 
 - [hev0x/CVE-2021-26828_ScadaBR_RCE](https://github.com/hev0x/CVE-2021-26828_ScadaBR_RCE)
 - [ridpath/CVE-2021-26828-Ultimate](https://github.com/ridpath/CVE-2021-26828-Ultimate)
+- [h002733/CVE-2021-26828](https://github.com/h002733/CVE-2021-26828)
 
 ### CVE-2021-26832 (2021-04-14)
 
@@ -67428,6 +67483,7 @@
 - [osflaky/exp-logpresso-CVE-2021-44228-Scanner](https://github.com/osflaky/exp-logpresso-CVE-2021-44228-Scanner)
 - [CyberCTF/vulhub-log4j-cve-2021-44228](https://github.com/CyberCTF/vulhub-log4j-cve-2021-44228)
 - [ResoluteRacoons/log4-Java-logging-poc](https://github.com/ResoluteRacoons/log4-Java-logging-poc)
+- [hoangvvthu/CVE-2021-44228-Log4Shell-Lab](https://github.com/hoangvvthu/CVE-2021-44228-Log4Shell-Lab)
 
 ### CVE-2021-44255 (2022-01-31)
 
