@@ -5112,6 +5112,7 @@
 - [murrez/CVE-2026-21589](https://github.com/murrez/CVE-2026-21589)
 - [renzi25031469/CVE-2026-21589](https://github.com/renzi25031469/CVE-2026-21589)
 - [gotr00t0day/CVE-2026-21589](https://github.com/gotr00t0day/CVE-2026-21589)
+- [webserverdude/f5_CVE-2026-21589_mitigation](https://github.com/webserverdude/f5_CVE-2026-21589_mitigation)
 
 ### CVE-2026-21627 (2026-02-20)
 
@@ -10050,6 +10051,9 @@
 </code>
 
 - [jfs-jfs/CVE-2026-37073](https://github.com/jfs-jfs/CVE-2026-37073)
+
+### CVE-2026-37107
+- [KyrieKlay/CVE-2026-37107](https://github.com/KyrieKlay/CVE-2026-37107)
 
 ### CVE-2026-37149 (2026-06-25)
 
@@ -17239,6 +17243,13 @@
 
 - [SneakyNachos/CVE-2026-85048-the-gpu-died](https://github.com/SneakyNachos/CVE-2026-85048-the-gpu-died)
 
+### CVE-2026-85097 (2026-10-08)
+
+<code>The Bricksforge plugin for WordPress is vulnerable to unauthenticated arbitrary file upload in versions up to, and including, 3.1.8.9. This is due to insufficient validation of the attacker-controlled URL field in the 'temporaryFileUploads' parameter during form submission. An unauthenticated attacker can first obtain a valid nonce via the bricksforge_regenerate_nonce AJAX endpoint, then upload a GIF/PHP polyglot file to the temporary upload directory where MIME type validation is correctly performed. Subsequently, the attacker can submit a form with a crafted 'temporaryFileUploads' parameter where the server-side file path points to the validated GIF file, but the attacker-controlled url field ends with a .php extension. This makes it possible for unauthenticated attackers to upload and execute arbitrary PHP code on the server.
+</code>
+
+- [Wayang1337/CVE-2026-85097](https://github.com/Wayang1337/CVE-2026-85097)
+
 ### CVE-2026-85102 (2026-09-09)
 
 <code>Improper certificate trust validation during VPN negotiation in Check Point Quantum Security Gateway may allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.
@@ -17876,6 +17887,7 @@
 
 - [scastillo-jp/braces-fork](https://github.com/scastillo-jp/braces-fork)
 - [pillarsdotnet/node-braces](https://github.com/pillarsdotnet/node-braces)
+- [BernydotJar/braces-security-backport](https://github.com/BernydotJar/braces-security-backport)
 
 ### CVE-2026-93834 (2026-09-25)
 
@@ -17941,6 +17953,13 @@
 </code>
 
 - [murrez/CVE-2026-94132](https://github.com/murrez/CVE-2026-94132)
+
+### CVE-2026-94503 (2026-10-09)
+
+<code>Unrestricted Upload of File with Dangerous Type vulnerability in PX-lab Zombify zombify allows Upload a Web Shell to a Web Server.This issue affects Zombify: from n/a through 1.7.7.
+</code>
+
+- [Wayang1337/CVE-2026-94503](https://github.com/Wayang1337/CVE-2026-94503)
 
 ### CVE-2026-94541 (2026-10-02)
 
@@ -18311,6 +18330,13 @@
 
 - [murrez/CVE-2026-102427](https://github.com/murrez/CVE-2026-102427)
 
+### CVE-2026-102428 (2026-10-05)
+
+<code>Joomla Extension - ordasoft.com - Unauthenticated SQL injection in OrdaSoft Joomla CCK &lt; 8.3.16 - The order column for records was user provided and not properly validated, leading to a SQL injection vector.
+</code>
+
+- [murrez/CVE-2026-102428](https://github.com/murrez/CVE-2026-102428)
+
 ### CVE-2026-102489 (2026-09-30)
 
 <code>Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The bug is also present in version 7.0.0 to version 7.1.2, but not exploitable due to changes in the underlying framework.
@@ -18408,6 +18434,13 @@
 
 - [EterNullSec/CVE-2026-103648](https://github.com/EterNullSec/CVE-2026-103648)
 
+### CVE-2026-103690 (2026-10-01)
+
+<code>A flaw has been found in itsourcecode Leave Management System 1.0. This vulnerability affects unknown code of the file /module/leave/controller.php. Executing a manipulation of the argument LEAVEID can lead to sql injection. The attack may be performed from remote. The exploit has been published and may be used.
+</code>
+
+- [Masuer-mengxing/CVE-2026-103690](https://github.com/Masuer-mengxing/CVE-2026-103690)
+
 ### CVE-2026-103752 (2026-10-01)
 
 <code>Unauthenticated Privilege Escalation in Authorizer &lt;= 3.15.3 versions.
@@ -18455,6 +18488,7 @@
 
 - [ShadowForge-Cyber/CVE-2026-104286-POC](https://github.com/ShadowForge-Cyber/CVE-2026-104286-POC)
 - [techupdate24/fortimail-zero-day-cve-2026-104286](https://github.com/techupdate24/fortimail-zero-day-cve-2026-104286)
+- [kh20134/fortimail-cve-2026-104286-response](https://github.com/kh20134/fortimail-cve-2026-104286-response)
 
 ### CVE-2026-104356 (2026-10-01)
 
@@ -18544,6 +18578,13 @@
 
 - [murrez/CVE-2026-105844](https://github.com/murrez/CVE-2026-105844)
 
+### CVE-2026-106445 (2026-10-06)
+
+<code>Handlebars provides the power necessary to let users build semantic templates. From 4.0.0 until 4.7.10, Handlebars lookupProperty returns Function.prototype.constructor before applying the prototype-access deny list because constructor is an own property of Function.prototype. When an attacker can render a controlled template with allowProtoMethodsByDefault enabled and an accessible function in the template context, the template can traverse from that function through its prototype to Function.prototype and then obtain the Function constructor through the own-property bypass. This permits attacker-controlled JavaScript to execute with the server application's privileges. This issue is fixed in version 4.7.10.
+</code>
+
+- [murrez/CVE-2026-106445](https://github.com/murrez/CVE-2026-106445)
+
 ### CVE-2026-106610
 - [KevineCharles/CVE-2026-106610-miniorange-otp-ato](https://github.com/KevineCharles/CVE-2026-106610-miniorange-otp-ato)
 
@@ -18564,6 +18605,13 @@
 
 - [techupdate24/citrix-netscaler-rce-cve-2026-107406](https://github.com/techupdate24/citrix-netscaler-rce-cve-2026-107406)
 - [ApexBreach/CVE-2026-107406-Poc](https://github.com/ApexBreach/CVE-2026-107406-Poc)
+
+### CVE-2026-107806 (2026-10-09)
+
+<code>Nginx UI is a web user interface for the Nginx web server. From 2.3.8 until 2.5.0, an authenticated administrator with an active secure session can submit attacker-controlled portable backup key material and a matching manifest to POST /api/restore. The restore flow trusts the supplied key, decrypts attacker-controlled contents, and replaces the live app.ini, including protected nginx command settings such as TestConfigCmd. Triggering POST /api/nginx/test then executes the restored command in the Nginx UI runtime context, affecting confidentiality, integrity, and availability. This issue is fixed in version 2.5.0.
+</code>
+
+- [murrez/CVE-2026-107806](https://github.com/murrez/CVE-2026-107806)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -18793,7 +18841,7 @@
 </code>
 
 - [FWNavy/RMASmoke](https://github.com/FWNavy/RMASmoke)
-- [IsolatedAnarchy/RMASmoke-v2](https://github.com/IsolatedAnarchy/RMASmoke-v2)
+- [MCRideable3963/RMASmoke-v2](https://github.com/MCRideable3963/RMASmoke-v2)
 - [MCRideable3963/exploit-docs](https://github.com/MCRideable3963/exploit-docs)
 
 ### CVE-2025-1219 (2025-03-30)
@@ -29126,7 +29174,7 @@
 - [YuvrajSHAD/FreePBX-CVE-2025-57819](https://github.com/YuvrajSHAD/FreePBX-CVE-2025-57819)
 - [0xyngtg/FreePBX-CVE-2025-57819-CVE-2025-61678](https://github.com/0xyngtg/FreePBX-CVE-2025-57819-CVE-2025-61678)
 - [ozcanpng/CVE-2025-57819-FreePBX-RCE2Root](https://github.com/ozcanpng/CVE-2025-57819-FreePBX-RCE2Root)
-- [TheScriptKiddoz/FreePBX-SQLi-RCE](https://github.com/TheScriptKiddoz/FreePBX-SQLi-RCE)
+- [HexBytee/FreePBX-SQLi-RCE](https://github.com/HexBytee/FreePBX-SQLi-RCE)
 - [Its1Zero/cve-2025-57819-exploit](https://github.com/Its1Zero/cve-2025-57819-exploit)
 - [Neobee714/CVE-2025-57819-POC](https://github.com/Neobee714/CVE-2025-57819-POC)
 - [TeteREN/CVE-2025-57819-RCE](https://github.com/TeteREN/CVE-2025-57819-RCE)
@@ -33264,6 +33312,7 @@
 - [yuimamur/CVE-2024-4367-hands-on-01](https://github.com/yuimamur/CVE-2024-4367-hands-on-01)
 - [stuara1/cpc-pdfjs-poc](https://github.com/stuara1/cpc-pdfjs-poc)
 - [weae26/cve-2024-4367-poc](https://github.com/weae26/cve-2024-4367-poc)
+- [lewiskb/Docker-Lab-CVE-2024-4367](https://github.com/lewiskb/Docker-Lab-CVE-2024-4367)
 
 ### CVE-2024-4406 (2024-05-02)
 
@@ -63464,6 +63513,7 @@
 <code>Remote Access API Elevation of Privilege Vulnerability
 </code>
 
+- [songjianyang/CVE-2021-26882](https://github.com/songjianyang/CVE-2021-26882)
 - [taiji-xo/CVE-2021-26882](https://github.com/taiji-xo/CVE-2021-26882)
 
 ### CVE-2021-26903 (2021-02-26)
@@ -66284,6 +66334,13 @@
 - [berraesen/apache-cve-2021-42013-lab](https://github.com/berraesen/apache-cve-2021-42013-lab)
 - [andreamammano89-maker/CVE-2021-42013_821311](https://github.com/andreamammano89-maker/CVE-2021-42013_821311)
 - [CyberCTF/vulhub-httpd-cve-2021-42013](https://github.com/CyberCTF/vulhub-httpd-cve-2021-42013)
+
+### CVE-2021-42023 (2021-12-14)
+
+<code>A vulnerability has been identified in ModelSim Simulation (All versions), Questa Simulation (All versions). The RSA white-box implementation in affected applications insufficiently protects the built-in private keys that are required to decrypt electronic intellectual property (IP) data in accordance with the IEEE 1735 recommended practice. This could allow a sophisticated attacker to discover the keys, bypassing the protection intended by the IEEE 1735 recommended practice.
+</code>
+
+- [Geeoon/ModelSim-Decryptor](https://github.com/Geeoon/ModelSim-Decryptor)
 
 ### CVE-2021-42056 (2022-06-24)
 
