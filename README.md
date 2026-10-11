@@ -50,6 +50,7 @@ This repository contains a curated collection of cybersecurity resources organiz
 - **[Burp Suite](https://portswigger.net/burp)** - Leading toolkit for web application security testing
 - **[OWASP ZAP](https://owasp.org/www-project-zap/)** - Free security testing proxy
 - **[Sn1per](https://github.com/1N3/Sn1per)** - Attack Surface Management Platform
+- **[Darkmoon](https://github.com/ASCIT31/Dark-Moon)** - Open source (GPL-3.0) autonomous AI penetration testing platform covering web, API, Active Directory and Kubernetes
 - **[BunkerWeb](https://github.com/bunkerity/bunkerweb)** - Next-generation Web Application Firewall
 
 ### 🔐 Cryptography & Encryption
