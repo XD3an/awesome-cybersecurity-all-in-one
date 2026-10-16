@@ -4498,7 +4498,7 @@
 
 ### CVE-2026-19745 (2026-08-13)
 
-<code>A flaw has been found in Calix GigaSpire 26.1.0. Impacted is an unknown function of the file utilities_configurationsave.cgi of the component Web Management Interface. Executing a manipulation of the argument sessionKey can lead to denial of service. The attack can be launched remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.
+<code>A flaw has been found in Calix GigaSpire 26.1.0. Impacted is an unknown function of the file utilities_configurationsave.cgi of the component Web Management Interface. Executing a manipulation of the argument sessionKey can lead to denial of service. The attack can be launched remotely. The exploit has been published and may be used. The existence of this vulnerability is still disputed at present. The vendor explains: &quot;We reproduced the reported request pattern. The observed delay results from expected input-timeout handling while the handler waits for input data. We did not observe a backend crash, resource exhaustion, service instability, or loss of EWI availability, and the interface remained accessible during and after testing.&quot;
 </code>
 
 - [drbloop2000/CVE-2026-19745](https://github.com/drbloop2000/CVE-2026-19745)
@@ -9822,7 +9822,7 @@
 </code>
 
 - [sec-zone/CVE-2026-36213](https://github.com/sec-zone/CVE-2026-36213)
-- [yzy0okrkv1hngo0r/CVE-2026-36213-poc](https://github.com/yzy0okrkv1hngo0r/CVE-2026-36213-poc)
+- [pc2eva/CVE-2026-36213-poc](https://github.com/pc2eva/CVE-2026-36213-poc)
 
 ### CVE-2026-36214 (2026-07-14)
 
@@ -11721,6 +11721,8 @@
 - [tingao/debian-on-s23-ultra](https://github.com/tingao/debian-on-s23-ultra)
 - [villager1314/CVE-2026-43499-Analysis](https://github.com/villager1314/CVE-2026-43499-Analysis)
 - [y896406256-lang/ghostlock-brt-w09](https://github.com/y896406256-lang/ghostlock-brt-w09)
+- [saltlyfish666/magicpad3-root-research](https://github.com/saltlyfish666/magicpad3-root-research)
+- [MSEDGE-CORE/GhostLock-HonorFne](https://github.com/MSEDGE-CORE/GhostLock-HonorFne)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -13520,6 +13522,20 @@
 
 - [A17-ba/CVE-2026-51119](https://github.com/A17-ba/CVE-2026-51119)
 
+### CVE-2026-51366 (2026-08-19)
+
+<code>SQL Injection vulnerability in Bottinelli Informatica Vedo Suite v.1.2.5 allows a remote attacker to execute arbitrary code via the api_vedo/chat endpoint and the utente_chat parameter
+</code>
+
+- [StefanoAndreatta/CVE-2026-51366-SQL-Injection-leading-to-Remote-Code-Execution](https://github.com/StefanoAndreatta/CVE-2026-51366-SQL-Injection-leading-to-Remote-Code-Execution)
+
+### CVE-2026-51367 (2026-08-19)
+
+<code>An issue in Bottinelli Informatica Vedo Suite v.1.2.5 allows a remote attacker to obtain sensitive information via the api_vedo/chat endpoint and the utente_chat parameter
+</code>
+
+- [StefanoAndreatta/CVE-2026-51367-Insecure-Direct-Object-Reference-IDOR](https://github.com/StefanoAndreatta/CVE-2026-51367-Insecure-Direct-Object-Reference-IDOR)
+
 ### CVE-2026-51376 (2026-08-28)
 
 <code>An issue in BitChat for iOS v1.15.0 allows a remote attacker to cause a denial of service via an unauthenticated MESSAGE packet into the mesh gossip cache
@@ -14300,7 +14316,7 @@
 <code>NanaZip is the 7-Zip derivative intended for the modern Windows experience. Prior to 6.5.1749.0, NanaZip's UFS and FFS image handler in NanaZip.Codecs.Archive.Ufs.cpp validates the superblock block size only against the MINBSIZE lower bound and does not validate the fs_fsize fragment size, allowing attacker-controlled 32-bit fields to flow into indirect-block, directory, and extraction buffer allocations. A tiny crafted UFS image can force multi-gigabyte allocations during open or extraction, causing memory exhaustion or process termination. This issue is fixed in version 6.5.1749.0.
 </code>
 
-- [yzy0okrkv1hngo0r/CVE-2026-55781-poc](https://github.com/yzy0okrkv1hngo0r/CVE-2026-55781-poc)
+- [pc2eva/CVE-2026-55781-poc](https://github.com/pc2eva/CVE-2026-55781-poc)
 
 ### CVE-2026-55794 (2026-07-01)
 
@@ -16944,6 +16960,18 @@
 
 - [abraxas/CVE-2026-78159](https://github.com/abraxas/CVE-2026-78159)
 
+### CVE-2026-78162
+- [oscerd/CVE-2026-78162](https://github.com/oscerd/CVE-2026-78162)
+
+### CVE-2026-78163
+- [oscerd/CVE-2026-78163](https://github.com/oscerd/CVE-2026-78163)
+
+### CVE-2026-78164
+- [oscerd/CVE-2026-78164](https://github.com/oscerd/CVE-2026-78164)
+
+### CVE-2026-78165
+- [oscerd/CVE-2026-78165](https://github.com/oscerd/CVE-2026-78165)
+
 ### CVE-2026-78306 (2026-08-24)
 
 <code>DJI drones expose an unauthenticated DUML command interface over Bluetooth that allows an attacker within Bluetooth range to modify Wi-Fi configuration parameters, including the SSID, PSK, MAC address, regulatory country code, and wireless channel. An attacker can overwrite the Wi-Fi PSK with a known value and connect to the drone's internal Wi-Fi network, potentially gaining access to the flight control interface and issuing flight commands. Crafted DUML commands can also disable or restart the Wi-Fi and Bluetooth interfaces, disconnect Wi-Fi clients, or reset wireless configuration, resulting in a denial-of-service condition that can disrupt the operator's wireless control, video, and telemetry connections during flight.\n\nAffected models are DJI Neo until 01.00.0400, DJI Neo 2 until 01.00.0500, DJI Flip until 01.00.1200, DJI Air 3 until 01.00.1600, DJI Air 3S until 01.00.1400, DJI Avata 2 until 01.00.0400, DJI Avata 360 until 01.00.0300, DJI Mavic 3 until 01.00.1400, DJI Mavic 3 Classic until 01.00.0800, DJI Mavic 3 Pro until 01.01.0700, DJI Mavic 4 Pro until 01.00.0500, DJI Mini 2 until 01.07.0200, DJI Mini 3 until 01.00.0500, DJI Mini 3 Pro until 01.00.0900, DJI Mini 4 Pro until 01.00.1100, and DJI Mini 5 Pro until 01.00.0600.\n\n\nRemediation requires a firmware update from the vendor.
@@ -17091,6 +17119,18 @@
 </code>
 
 - [abraxas/CVE-2026-79752](https://github.com/abraxas/CVE-2026-79752)
+
+### CVE-2026-79983
+- [oscerd/CVE-2026-79983](https://github.com/oscerd/CVE-2026-79983)
+
+### CVE-2026-79984
+- [oscerd/CVE-2026-79984](https://github.com/oscerd/CVE-2026-79984)
+
+### CVE-2026-79985
+- [oscerd/CVE-2026-79985](https://github.com/oscerd/CVE-2026-79985)
+
+### CVE-2026-79986
+- [oscerd/CVE-2026-79986](https://github.com/oscerd/CVE-2026-79986)
 
 ### CVE-2026-79987 (2026-09-10)
 
@@ -17881,6 +17921,13 @@
 
 - [murrez/CVE-2026-89055](https://github.com/murrez/CVE-2026-89055)
 
+### CVE-2026-89079 (2026-10-16)
+
+<code>The Theme My Login plugin for WordPress is vulnerable to privilege escalation via account takeover in versions up to, and including, 7.2.1. This is due to the plugin not properly validating a user's identity prior to updating their password. This makes it possible for unauthenticated attackers to change arbitrary user's passwords on multi-site setups in certain configurations.
+</code>
+
+- [murrez/CVE-2026-89079](https://github.com/murrez/CVE-2026-89079)
+
 ### CVE-2026-89274 (2026-09-19)
 
 <code>The WP Recipe Maker plugin for WordPress is vulnerable to Arbitrary Shortcode Execution in all versions up to, and including, 10.8.1. The vulnerability exists because `WPRM_Metadata::sanitize_metadata()` recursively calls `do_shortcode()` on every scalar field of the recipe's structured metadata array — including the `reviewBody` field, which is populated verbatim from the `comment_content` of approved `wprm-comment-rating` comments — without sanitizing or stripping shortcode tokens before execution; the subsequent `wp_strip_all_tags()` and `strip_shortcodes()` calls operate only on the output string after execution has already fully occurred, providing no protection against server-side shortcode invocation. This makes it possible for unauthenticated attackers to execute arbitrary registered WordPress shortcodes server-side on every recipe page render, causing shortcode output — such as attachment captions, private post fields, or other data exposed by installed shortcodes — to be embedded in the page's JSON-LD `reviewBody` metadata and disclosed to all visitors who load the recipe page. Successful exploitation requires the attacker's rated comment to pass the site's comment approval threshold, either via auto-approval or moderator action, before the injected shortcode begins executing on page loads.
@@ -17914,6 +17961,7 @@
 - [yulisec/CVE-2026-90817](https://github.com/yulisec/CVE-2026-90817)
 - [Farih123/CVE-2026-90817](https://github.com/Farih123/CVE-2026-90817)
 - [securifera/CVE-2026-90817](https://github.com/securifera/CVE-2026-90817)
+- [ctsit/redcap_cve_2026_90817_scan](https://github.com/ctsit/redcap_cve_2026_90817_scan)
 
 ### CVE-2026-90847 (2026-09-15)
 
@@ -18211,6 +18259,13 @@
 
 - [murrez/CVE-2026-94132](https://github.com/murrez/CVE-2026-94132)
 
+### CVE-2026-94134 (2026-10-15)
+
+<code>The Apache Airflow SSH provider hook disables SSH host-key verification by default: unless `host_key` is configured or `no_host_key_check` is explicitly set to false, it accepts any server key. This affects SSH and SFTP connections that rely on the default. An attacker in a machine-in-the-middle position between the worker and the SSH or SFTP server can impersonate the server and capture the credentials or data a task sends.\n\nUsers of apache-airflow-providers-ssh and apache-airflow-providers-sftp are recommended to upgrade to apache-airflow-providers-ssh 7.0.0 and apache-airflow-providers-sftp 7.0.0 or later. The deferrable SFTP code paths had the same default and are covered separately by CVE-2026-94135; apache-airflow-providers-sftp 7.0.0 fixes both.
+</code>
+
+- [MosesOX/POC-CVE-2026-94134](https://github.com/MosesOX/POC-CVE-2026-94134)
+
 ### CVE-2026-94503 (2026-10-09)
 
 <code>Unrestricted Upload of File with Dangerous Type vulnerability in PX-lab Zombify zombify allows Upload a Web Shell to a Web Server.This issue affects Zombify: from n/a through 1.7.7.
@@ -18358,6 +18413,7 @@
 </code>
 
 - [rafabd1/VectorFreed](https://github.com/rafabd1/VectorFreed)
+- [lion9453/CVE-2026-96889-nextjs-rce](https://github.com/lion9453/CVE-2026-96889-nextjs-rce)
 
 ### CVE-2026-96940 (2026-10-02)
 
@@ -18402,6 +18458,7 @@
 
 - [AmpedWasTaken/CVE-2026-97229-GitLab-CI-CD-Regex-Compiler-RCE](https://github.com/AmpedWasTaken/CVE-2026-97229-GitLab-CI-CD-Regex-Compiler-RCE)
 - [jburgess-r7/CVE-2026-97229-PoC](https://github.com/jburgess-r7/CVE-2026-97229-PoC)
+- [OppositDeer/Gitlab-RCE-CVE-2026-97229](https://github.com/OppositDeer/Gitlab-RCE-CVE-2026-97229)
 
 ### CVE-2026-97286 (2026-09-30)
 
@@ -18894,8 +18951,19 @@
 - [uday952/CVE-2026-104711](https://github.com/uday952/CVE-2026-104711)
 - [uday952/CVE-2026-104711-POC-NEW-VARIANT](https://github.com/uday952/CVE-2026-104711-POC-NEW-VARIANT)
 
-### CVE-2026-104715
+### CVE-2026-104715 (2026-10-16)
+
+<code>A flaw was found in cifs-utils. This flaw allows an unprivileged local user to achieve privilege escalation. When a privileged service mounts a Common Internet File System (CIFS) share using a user-controlled credentials file, input values are not properly sanitized before being assembled into mount options. A local attacker can exploit this vulnerability to inject unauthorized mount options, allowing them to bypass permission checks and execute files with administrative (root) privileges.
+</code>
+
 - [M3aCulpa/CVE-2026-104715](https://github.com/M3aCulpa/CVE-2026-104715)
+
+### CVE-2026-104745 (2026-10-16)
+
+<code>The Customer Email Verification for WooCommerce plugin for WordPress is vulnerable to Privilege Escalation via the `alg_wc_ev_verify_email` parameter in versions up to, and including, 3.3.0. The vulnerability exists because `alg_wc_ev_generate_user_code()` generates the per-user activation secret using `wp_rand(100)` when the plugin's 'Encoding method' is set to 'hashids', producing only ~101 possible values (~7 bits of entropy); the resulting token is a reversible Hashids encoding with no cryptographic MAC, and the unauthenticated `verify()` handler — hooked to `init` at `PHP_INT_MAX` with no nonce check and no rate limiting — accepts and acts on the attacker-controlled `?alg_wc_ev_verify_email=` GET parameter directly. This makes it possible for unauthenticated attackers to gain authentication as any unverified WordPress account, including administrator-level accounts, by brute-forcing the trivially small activation code space via a forged verification URL. Exploitation requires that the 'Encoding method' setting be changed to 'hashids' (non-default), that the attacker recover or brute-force the Hashids salt (which defaults to an `md5(time())` value set at first initialization), and that the target account's email address remain unverified.
+</code>
+
+- [rxsklife/CVE-2026-104745](https://github.com/rxsklife/CVE-2026-104745)
 
 ### CVE-2026-104748 (2026-10-14)
 
@@ -19078,6 +19146,9 @@
 
 - [pinebudweiser/CVE-2026-107821-PoC](https://github.com/pinebudweiser/CVE-2026-107821-PoC)
 
+### CVE-2026-108097
+- [FurkanKAYAPINAR/CVE-2026-108097](https://github.com/FurkanKAYAPINAR/CVE-2026-108097)
+
 ### CVE-2026-108578 (2026-10-11)
 
 <code>A vulnerability was identified in Neterbit NW-431F 20250715. Impacted is an unknown function of the file /sms.json of the component Embedded Web Server. Such manipulation leads to information disclosure. The attack may be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.
@@ -19091,6 +19162,13 @@
 </code>
 
 - [asvorg/CVE-2026-108592-poc](https://github.com/asvorg/CVE-2026-108592-poc)
+
+### CVE-2026-108598 (2026-10-10)
+
+<code>Floci 1.1.0 before 2.2.0 contains a code injection vulnerability in VtlTemplateEngine that allows unauthenticated attackers to execute commands via unrestricted Velocity mapping templates. Attackers can create a REST API with a MOCK integration whose template uses $util reflection to reach Runtime or ProcessBuilder, executing OS commands in the Floci JVM.
+</code>
+
+- [Sidesploitx/CVE-2026-108598](https://github.com/Sidesploitx/CVE-2026-108598)
 
 ### CVE-2026-108924 (2026-10-12)
 
@@ -19134,6 +19212,13 @@
 
 - [Iceman2050/cve-2026-110447-checker](https://github.com/Iceman2050/cve-2026-110447-checker)
 
+### CVE-2026-110896 (2026-10-16)
+
+<code>Missing Authorization vulnerability in WP Chill Passster content-protector allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Passster: from n/a through 4.3.18.
+</code>
+
+- [azqzazq1/CVE-2026-110896](https://github.com/azqzazq1/CVE-2026-110896)
+
 ### CVE-2026-110912 (2026-10-15)
 
 <code>In DragonFly BSD through 6.4.2 before 4bb22ff, the ARP input handlers arpintr() and in_arpinput() (sys/netinet/if_ether.c) do not validate the hardware address length (ar_hln) and protocol address length (ar_pln) fields of incoming ARP packets. in_arpreply() then uses these attacker-controlled values as memcpy lengths when copying from kernel buffers that are only 6 and 4 bytes long, resulting in an out-of-bounds read of kernel heap and stack memory that is copied into the ARP reply sent back to the requester. An unauthenticated attacker on the adjacent network can use a single crafted ARP request to disclose up to roughly 250 bytes of each type of kernel memory, including kernel pointers. This is expected to be fixed in the 6.6 stable release when that is available.
@@ -19148,6 +19233,20 @@
 </code>
 
 - [shlln/CVE-2026-110958](https://github.com/shlln/CVE-2026-110958)
+
+### CVE-2026-111389 (2026-10-16)
+
+<code>Frappe HRMS 14.x before 14.38.2, 15.x before 15.64.0, and 16.x before 16.18.0 contains a SQL injection vulnerability in some endpoints caused by missing input validation. Any authenticated attacker, including a low-privilege account, can send specially crafted requests to these endpoints to extract sensitive information from the database.
+</code>
+
+- [Syscallh00k/CVE-2026-111389](https://github.com/Syscallh00k/CVE-2026-111389)
+
+### CVE-2026-111444 (2026-10-16)
+
+<code>Wheels through 4.1.2 allows SQL injection on MySQL/MariaDB with backslash escaping enabled (NO_BACKSLASH_ESCAPES absent) when an application supplies request data to inline-literal paths. These include opt-in parameterize=false queries and IN lists, and positions in developer-written where strings that the parser does not bind, such as BETWEEN bounds, function arguments and LIKE ESCAPE literals. Doubling single quotes without accounting for backslash escapes allows a value to alter the query. Bound paths are not affected; whereBetween() is bound from 4.1.2. This is fixed in 4.2.0.
+</code>
+
+- [Syscallh00k/CVE-2026-111444](https://github.com/Syscallh00k/CVE-2026-111444)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -33461,6 +33560,7 @@
 - [namegabevictoire01-sys/cs50-cybersecurity-final-project](https://github.com/namegabevictoire01-sys/cs50-cybersecurity-final-project)
 - [mhicairo-hue/cs50-cybersecurity-final-project](https://github.com/mhicairo-hue/cs50-cybersecurity-final-project)
 - [Michel-DV/xz-utils-backdoor-case-study](https://github.com/Michel-DV/xz-utils-backdoor-case-study)
+- [Subzero710/CVE-2024-3094-demo](https://github.com/Subzero710/CVE-2024-3094-demo)
 
 ### CVE-2024-3105 (2024-06-15)
 
@@ -34458,7 +34558,6 @@
 - [X-Projetion/CVE-2023-4596-OpenSSH-Multi-Checker](https://github.com/X-Projetion/CVE-2023-4596-OpenSSH-Multi-Checker)
 - [s1d6point7bugcrowd/CVE-2024-6387-Race-Condition-in-Signal-Handling-for-OpenSSH](https://github.com/s1d6point7bugcrowd/CVE-2024-6387-Race-Condition-in-Signal-Handling-for-OpenSSH)
 - [almogopp/OpenSSH-CVE-2024-6387-Fix](https://github.com/almogopp/OpenSSH-CVE-2024-6387-Fix)
-- [HadesNull123/CVE-2024-6387_Check](https://github.com/HadesNull123/CVE-2024-6387_Check)
 - [identity-threat-labs/CVE-2024-6387-Vulnerability-Checker](https://github.com/identity-threat-labs/CVE-2024-6387-Vulnerability-Checker)
 - [identity-threat-labs/Article-RegreSSHion-CVE-2024-6387](https://github.com/identity-threat-labs/Article-RegreSSHion-CVE-2024-6387)
 - [anhvutuan/CVE-2024-6387-poc-1](https://github.com/anhvutuan/CVE-2024-6387-poc-1)
@@ -38030,7 +38129,6 @@
 - [cmpnn-romain/CVE-2024-27198_Lab](https://github.com/cmpnn-romain/CVE-2024-27198_Lab)
 - [Ne0zer01/CVE-2024-27198_LAB](https://github.com/Ne0zer01/CVE-2024-27198_LAB)
 - [ptd200110/CVE-2024-27198-SOC-Lab](https://github.com/ptd200110/CVE-2024-27198-SOC-Lab)
-- [BilalAlshiekh912/Incident-Response-Report-TeamCity-Compromise-CVE-2024-27198-](https://github.com/BilalAlshiekh912/Incident-Response-Report-TeamCity-Compromise-CVE-2024-27198-)
 - [kxom9ks/CVE-2024-27198-TeamCity](https://github.com/kxom9ks/CVE-2024-27198-TeamCity)
 
 ### CVE-2024-27292 (2024-02-29)
@@ -63192,6 +63290,7 @@
 - [battleofthebots/dejavu](https://github.com/battleofthebots/dejavu)
 - [cc3305/CVE-2021-22204](https://github.com/cc3305/CVE-2021-22204)
 - [Roronoawjd/CVE-2021-22204](https://github.com/Roronoawjd/CVE-2021-22204)
+- [cyfrowesny/exiftool-7.44-12.23-exploit-CVE-2021-22204-](https://github.com/cyfrowesny/exiftool-7.44-12.23-exploit-CVE-2021-22204-)
 
 ### CVE-2021-22205 (2021-04-23)
 
@@ -67122,6 +67221,7 @@
 - [tin-z/solidity_CVE-2021-42574-POC](https://github.com/tin-z/solidity_CVE-2021-42574-POC)
 - [Moshe-ship/bidi-guard](https://github.com/Moshe-ship/bidi-guard)
 - [rakib-nyc/nullorigin](https://github.com/rakib-nyc/nullorigin)
+- [gitstq/GlyphGuard](https://github.com/gitstq/GlyphGuard)
 
 ### CVE-2021-42662 (2021-11-05)
 
