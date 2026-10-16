@@ -612,13 +612,6 @@
 - [tangrs/cve-2026-1668-poc](https://github.com/tangrs/cve-2026-1668-poc)
 - [wuyou6956-glitch/cve-2026-1668-poc](https://github.com/wuyou6956-glitch/cve-2026-1668-poc)
 
-### CVE-2026-1689 (2026-01-30)
-
-<code>A vulnerability was detected in Tenda HG10 US_HG7_HG9_HG10re_300001138_en_xpon. The impacted element is the function checkUserFromLanOrWan of the file /boaform/admin/formLogin of the component Login Interface. The manipulation of the argument Host results in command injection. The attack can be launched remotely. The exploit is now public and may be used.
-</code>
-
-- [e76f01z/tenda-hg10-rce](https://github.com/e76f01z/tenda-hg10-rce)
-
 ### CVE-2026-1699 (2026-01-30)
 
 <code>In the Eclipse Theia Website repository, the GitHub Actions workflow .github/workflows/preview.yml used pull_request_target trigger while checking out and executing untrusted pull request code. This allowed any GitHub user to execute arbitrary code in the repository's CI environment with access to repository secrets and a GITHUB_TOKEN with extensive write permissions (contents:write, packages:write, pages:write, actions:write). An attacker could exfiltrate secrets, publish malicious packages to the eclipse-theia organization, modify the official Theia website, and push malicious code to the repository.
@@ -6238,13 +6231,6 @@
 
 - [aniketlab/POCO-M7-Plus-Jailbreak](https://github.com/aniketlab/POCO-M7-Plus-Jailbreak)
 
-### CVE-2026-24090 (2026-06-01)
-
-<code>Cryptographic issue while processing partition table entries allows unauthorized modification of boot flow.
-</code>
-
-- [wnduddld0513/Lenovo_Qcom_RPMB_Tool](https://github.com/wnduddld0513/Lenovo_Qcom_RPMB_Tool)
-
 ### CVE-2026-24102
 - [SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition](https://github.com/SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition)
 
@@ -9926,7 +9912,11 @@
 - [redteamfortress/CVE-2026-36425](https://github.com/redteamfortress/CVE-2026-36425)
 - [gongchuang1089/EDRKiller](https://github.com/gongchuang1089/EDRKiller)
 
-### CVE-2026-36436
+### CVE-2026-36436 (2026-10-15)
+
+<code>An issue in Trisolutions BRPerfX version 1.4.4.0 exposes LDAP credentials in plaintext within the administrative configuration interface. An authenticated administrator can inspect the client-side code to retrieve the credential.
+</code>
+
 - [vtrmK/CVE-2026-36436-Public-Reference-Pack](https://github.com/vtrmK/CVE-2026-36436-Public-Reference-Pack)
 
 ### CVE-2026-36438 (2026-05-18)
@@ -12291,7 +12281,6 @@
 - [Neccie/YellowKey-Bitlocker-CVE-2026-45585](https://github.com/Neccie/YellowKey-Bitlocker-CVE-2026-45585)
 - [sinhalese-congocopal6379/YellowKey-BitLocker-CVE-2026-45585](https://github.com/sinhalese-congocopal6379/YellowKey-BitLocker-CVE-2026-45585)
 - [sinhalese-congocopal6379/sinhalese-congocopal6379.github.io](https://github.com/sinhalese-congocopal6379/sinhalese-congocopal6379.github.io)
-- [YellowKeyBitLocker-CVE/YellowKey-BitLocker-CVE-2026-45585](https://github.com/YellowKeyBitLocker-CVE/YellowKey-BitLocker-CVE-2026-45585)
 
 ### CVE-2026-45659 (2026-05-22)
 
@@ -13868,6 +13857,7 @@
 
 - [HORKimhab/CVE-2026-53365](https://github.com/HORKimhab/CVE-2026-53365)
 - [HackSpeak/CVE-2026-53365](https://github.com/HackSpeak/CVE-2026-53365)
+- [hoodoer/VsockDrop-Adapted-CVE-2026-53365](https://github.com/hoodoer/VsockDrop-Adapted-CVE-2026-53365)
 
 ### CVE-2026-53413 (2026-08-11)
 
@@ -13906,7 +13896,11 @@
 - [TamatahYT/CVE-2026-53576](https://github.com/TamatahYT/CVE-2026-53576)
 - [AtlasVector/Kestra-cve-2026-53576](https://github.com/AtlasVector/Kestra-cve-2026-53576)
 
-### CVE-2026-53582
+### CVE-2026-53582 (2026-10-15)
+
+<code>OPNsense is a FreeBSD based firewall and routing platform. Prior to version 26.1.10, the Trust module stores attacker-controlled certificate authority and certificate refid values and interpolates them into XPath expressions in src/opnsense/mvc/app/models/OPNsense/Trust/FieldTypes/CAsField.php and src/opnsense/mvc/app/models/OPNsense/Trust/FieldTypes/CertificatesField.php. A user with CA Manager or Certificate Manager privileges can submit a crafted refid and repeatedly retrieve the object to obtain a boolean refcount oracle, allowing values in config.xml to be recovered character by character. Exposed values can include password hashes, API credentials, certificate private keys, VPN key material, and high-availability credentials, enabling privilege escalation and compromise of other security domains. This issue is fixed in version 26.1.10.
+</code>
+
 - [eev4n/CVE-2026-53582](https://github.com/eev4n/CVE-2026-53582)
 
 ### CVE-2026-53587 (2026-08-20)
@@ -14484,7 +14478,11 @@
 
 - [goldendivider/gpgsm-cve-2026-57062-cms-gcm-short-tag](https://github.com/goldendivider/gpgsm-cve-2026-57062-cms-gcm-short-tag)
 
-### CVE-2026-57155
+### CVE-2026-57155 (2026-10-15)
+
+<code>OPNsense is a FreeBSD based firewall and routing platform. Prior to version 26.1.11, the Firewall Alias GeoIP importer's process_zip() and process_gzip() paths in src/opnsense/scripts/filter/lib/alias/geoip.py use an unvalidated CSV country_code value to construct output filenames below /usr/local/share/GeoIP/alias. A user with Firewall Alias Edit privilege can configure an attacker-controlled GeoIP source URL and supply an archive whose country code traverses into another existing directory, causing attacker-controlled content to be written as root with an -IPv4 or -IPv6 suffix. A crafted newsyslog fragment and oversized log file can use the default hourly root cron job to execute commands as root, resulting in complete firewall compromise. This issue is fixed in version 26.1.11.
+</code>
+
 - [babyshen/CVE-2026-57155](https://github.com/babyshen/CVE-2026-57155)
 
 ### CVE-2026-57239 (2026-07-08)
@@ -14725,7 +14723,7 @@
 
 - [HORKimhab/CVE-2026-59310](https://github.com/HORKimhab/CVE-2026-59310)
 - [BiuTrap/CVE-2026-59310](https://github.com/BiuTrap/CVE-2026-59310)
-- [ChinaRan0/CVE-2026-59310-POC](https://github.com/ChinaRan0/CVE-2026-59310-POC)
+- [zgsfsec/CVE-2026-59310-POC](https://github.com/zgsfsec/CVE-2026-59310-POC)
 - [vpxuser/CVE-2026-59310](https://github.com/vpxuser/CVE-2026-59310)
 - [chu0119/vc-strike](https://github.com/chu0119/vc-strike)
 
@@ -15080,6 +15078,7 @@
 - [MRdark-ops/WP2Shell--CVE-2026-63030-CVE-2026-60137-](https://github.com/MRdark-ops/WP2Shell--CVE-2026-63030-CVE-2026-60137-)
 - [hitechcloud-vietnam/wp2shell-PoC](https://github.com/hitechcloud-vietnam/wp2shell-PoC)
 - [0xCyp1337/CVE-2026-63030-CVE-2026-60137-WP2SHELL](https://github.com/0xCyp1337/CVE-2026-63030-CVE-2026-60137-WP2SHELL)
+- [gichirimaku/wp2shell-PoC](https://github.com/gichirimaku/wp2shell-PoC)
 
 ### CVE-2026-63039 (2026-08-20)
 
@@ -15186,6 +15185,13 @@
 
 - [aramosf/CVE-2026-64468](https://github.com/aramosf/CVE-2026-64468)
 
+### CVE-2026-64507 (2026-07-25)
+
+<code>In the Linux kernel, the following vulnerability has been resolved:\n\nx86/bugs: Enable IBPB flush on BPF JIT allocation\n\nEnable hardening against JIT spraying when Spectre-v2 mitigations are in\nuse. Specifically, issue an IBPB flush on BPF JIT memory reuse. Skip\nenabling the IBPB flush if the BPF dispatcher is already using a retpoline\nsequence.\n\nThis hardening applies only when BPF-JIT is in use. Guard the enabling\nunder CONFIG_BPF_JIT so that bugs.c still builds with CONFIG_BPF_JIT=n.
+</code>
+
+- [manalejandro/CVE-2026-64507](https://github.com/manalejandro/CVE-2026-64507)
+
 ### CVE-2026-64531 (2026-07-27)
 
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nnet: openvswitch: reject oversized nested action attrs\n\nOpen vSwitch stores generated flow actions as nlattrs, whose nla_len\nfield is u16. Commit a1e64addf3ff (&quot;net: openvswitch: remove\nmisbehaving actions length check&quot;) allowed the total sw_flow_actions\nstream to grow beyond 64 KiB, which is valid, but also removed the last\nguard preventing a generated nested action attribute from exceeding\nU16_MAX.\n\nAn oversized generated container can thus be closed with a truncated\nnla_len. A later dump or teardown then walks a structurally different\nstream than the one that was validated. In particular, an oversized\nnested CLONE/CT action may cause subsequent bytes in the generated\nstream to be interpreted as independent actions.\n\nKeep the larger total-action-stream behavior, but make nested action\nclose reject generated containers that do not fit in nla_len, and return\nthe error through all callers. For recursive SAMPLE, CLONE, DEC_TTL, and\nCHECK_PKT_LEN builders, trim resource-owning action-list tails in reverse\nconstruction order before discarding failed wrappers, so resources copied\ninto the rejected tails are released before the wrappers are removed.\n\nMost failed outer wrappers are discarded by truncating actions_len after\nchild resources have been released. CHECK_PKT_LEN also trims its parent\nafter branch resources are gone. SET/TUNNEL close failures unwind their\nknown tun_dst ownership directly, and SET_TO_MASKED has no external\nownership and truncates on close failure.
@@ -15210,6 +15216,7 @@
 - [qingle009/opace6-cve-2026-64560](https://github.com/qingle009/opace6-cve-2026-64560)
 - [Meniben/redmi14c-pond-cve-2026-64560](https://github.com/Meniben/redmi14c-pond-cve-2026-64560)
 - [sangsheng2026/honor-90gt-mag-an00-root-research](https://github.com/sangsheng2026/honor-90gt-mag-an00-root-research)
+- [feiguang-ai/plz110-6.12.69-cve-2026-64560-ksu](https://github.com/feiguang-ai/plz110-6.12.69-cve-2026-64560-ksu)
 
 ### CVE-2026-64561 (2026-08-04)
 
@@ -16986,10 +16993,18 @@
 ### CVE-2026-78844
 - [0Linear/CVE-2026-78844](https://github.com/0Linear/CVE-2026-78844)
 
-### CVE-2026-78850
+### CVE-2026-78850 (2026-10-15)
+
+<code>An issue in Matomo v.5.11.2 allows a remote attacker to obtain sensitive information via the SiteContentDetector / SitesManager component
+</code>
+
 - [SLO-CYBER-SEC/CVE-2026-78850](https://github.com/SLO-CYBER-SEC/CVE-2026-78850)
 
-### CVE-2026-78851
+### CVE-2026-78851 (2026-10-15)
+
+<code>Directory Traversal vulnerability in Grav CMS 2.0.3 through 2.0.6 allows a remote attacker to obtain sensitive information via the GravExtension.php and the mediaDirFunc method.
+</code>
+
 - [SLO-CYBER-SEC/CVE-2026-78851](https://github.com/SLO-CYBER-SEC/CVE-2026-78851)
 
 ### CVE-2026-78938 (2026-08-25)
@@ -18643,6 +18658,13 @@
 ### CVE-2026-102607
 - [d4kw1n/CVE-2026-102607-ZoneMinder](https://github.com/d4kw1n/CVE-2026-102607-ZoneMinder)
 
+### CVE-2026-102697 (2026-09-29)
+
+<code>Ollama versions 0.14.0 before 0.31.2 contain an incorrect authorization vulnerability in the experimental agent mode Bash tool approval mechanism that fails to properly parse shell syntax. Attackers who can influence model output through prompt injection can execute additional shell commands by appending control operators like semicolons or logical operators to approved commands, bypassing the session approval requirement.
+</code>
+
+- [akinerkisa/blindllama-cve-2026-102697](https://github.com/akinerkisa/blindllama-cve-2026-102697)
+
 ### CVE-2026-102718 (2026-09-29)
 
 <code>hey,\n\n\n\n`_nx_snmp_utility_object_id_get` in the NetX Duo SNMP addon does not validate the claimed OID data length against the actual buffer size when the OID uses BER multibyte length encoding, so a remote attacker can send a crafted SNMP packet with a multibyte OID length larger than the available buffer, causing the parser to read past the packet buffer boundary into adjacent heap memory. the OOB bytes are decoded as OID component values and written into the agents internal OID string buffer, corrupting agent state. on systems with memory protection the OOB read poses the risk of crashing the SNMP agent thread, causing denial of service. on bare metal embedded systems without memory protection the read silently succeeds and corrupts the agents internal state with heap data.
@@ -18850,7 +18872,11 @@
 
 - [AmalJafarzade/CVE-2026-104585](https://github.com/AmalJafarzade/CVE-2026-104585)
 
-### CVE-2026-104586
+### CVE-2026-104586 (2026-10-15)
+
+<code>AUTOM8N (WHM/cPanel plugin) through commit 82821f7 contains an OS Command Injection in borg_restore.cgi.
+</code>
+
 - [AmalJafarzade/CVE-2026-104586](https://github.com/AmalJafarzade/CVE-2026-104586)
 
 ### CVE-2026-104587 (2026-10-13)
@@ -18867,6 +18893,9 @@
 
 - [uday952/CVE-2026-104711](https://github.com/uday952/CVE-2026-104711)
 - [uday952/CVE-2026-104711-POC-NEW-VARIANT](https://github.com/uday952/CVE-2026-104711-POC-NEW-VARIANT)
+
+### CVE-2026-104715
+- [M3aCulpa/CVE-2026-104715](https://github.com/M3aCulpa/CVE-2026-104715)
 
 ### CVE-2026-104748 (2026-10-14)
 
@@ -19049,6 +19078,13 @@
 
 - [pinebudweiser/CVE-2026-107821-PoC](https://github.com/pinebudweiser/CVE-2026-107821-PoC)
 
+### CVE-2026-108578 (2026-10-11)
+
+<code>A vulnerability was identified in Neterbit NW-431F 20250715. Impacted is an unknown function of the file /sms.json of the component Embedded Web Server. Such manipulation leads to information disclosure. The attack may be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.
+</code>
+
+- [KernelDotDLL/CVE-2026-108578](https://github.com/KernelDotDLL/CVE-2026-108578)
+
 ### CVE-2026-108592 (2026-10-10)
 
 <code>mini-swe-agent 1.10.0 through 2.4.6 contains an information exposure vulnerability in BubblewrapEnvironment because bwrap omits --clearenv, so sandboxed commands inherit the host environment. Attackers using prompt injection in processed task content can make the agent read API keys from the environment and exfiltrate them over the shared network.
@@ -19104,8 +19140,13 @@
 </code>
 
 - [dreamfast/CVE-2026-110912](https://github.com/dreamfast/CVE-2026-110912)
+- [0xBlackash/CVE-2026-110912](https://github.com/0xBlackash/CVE-2026-110912)
 
-### CVE-2026-110958
+### CVE-2026-110958 (2026-10-15)
+
+<code>A vulnerability was found in Wavlink WN530HG4B M30HG4B_V260724. The impacted element is an unknown function of the file api.cgi. The manipulation results in heap-based buffer overflow. It is possible to launch the attack remotely. The exploit has been made public and could be used. Upgrading to version 2026-09-24-841a51c6d5_tclinux.bin is sufficient to resolve this issue. The affected component should be upgraded. The vendor confirms: &quot;We confirm the finding, and it has already been addressed. In the current firmware the api=info&amp;client=app handler no longer builds a shell command: the login script is now invoked through an argument vector (execvp) instead of system(), and the client address is length-limited and null-checked.&quot;
+</code>
+
 - [shlln/CVE-2026-110958](https://github.com/shlln/CVE-2026-110958)
 
 ### CVE-2026-350234
@@ -25415,6 +25456,7 @@
 - [Fomovet/cve-2025-32463](https://github.com/Fomovet/cve-2025-32463)
 - [0xdak/CVE-2025-32463_exploit](https://github.com/0xdak/CVE-2025-32463_exploit)
 - [klvlo/CVE-2025-32463](https://github.com/klvlo/CVE-2025-32463)
+- [begzodxasanboev/Driftnet](https://github.com/begzodxasanboev/Driftnet)
 
 ### CVE-2025-32579 (2025-04-11)
 
@@ -33320,6 +33362,7 @@
 - [whyuhurtz/wongpress](https://github.com/whyuhurtz/wongpress)
 - [HORKimhab/CVE-2022-31626-CVE-2024-2961-CVE-2019-6977](https://github.com/HORKimhab/CVE-2022-31626-CVE-2024-2961-CVE-2019-6977)
 - [qinglove777/CVE-2024-2961-XXE-Exploit](https://github.com/qinglove777/CVE-2024-2961-XXE-Exploit)
+- [Sib1110/cve-2024-2961](https://github.com/Sib1110/cve-2024-2961)
 
 ### CVE-2024-2997 (2024-03-27)
 
@@ -36937,6 +36980,7 @@
 - [Betan423/CVE-2024-23334-PoC](https://github.com/Betan423/CVE-2024-23334-PoC)
 - [BestDevOfc/CVE-2024-23334-PoC](https://github.com/BestDevOfc/CVE-2024-23334-PoC)
 - [Sn0wBaall/CVE-2024-23334-PoC](https://github.com/Sn0wBaall/CVE-2024-23334-PoC)
+- [begzodxasanboev/Driftnet](https://github.com/begzodxasanboev/Driftnet)
 
 ### CVE-2024-23339 (2024-01-22)
 
@@ -90353,7 +90397,6 @@
 </code>
 
 - [0b0111100/2008](https://github.com/0b0111100/2008)
-- [yilmaz8596/metasploitable-vulnerability-assessment](https://github.com/yilmaz8596/metasploitable-vulnerability-assessment)
 
 ### CVE-2008-1447 (2008-07-08)
 
