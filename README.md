@@ -43,6 +43,7 @@ This repository contains a curated collection of cybersecurity resources organiz
 - **[Trivy](https://github.com/aquasecurity/trivy)** - Find vulnerabilities, misconfigurations, secrets, SBOM in containers
 - **[Wazuh](https://github.com/wazuh/wazuh)** - Open Source Security Platform (XDR and SIEM)
 - **[Vuls](https://github.com/future-architect/vuls)** - Agent-less vulnerability scanner for Linux, FreeBSD, Container
+- **[Website Vulnerability Scanner](https://github.com/RanaKhan77/Website-Vulnerability-Scanner)** - Self-hosted web protection suite with 200 deterministic scanner modules — OWASP Top 10, WordPress/CMS deep scans, subdomain takeover, AI/LLM stack exposure, CVSS-scored evidence reports
 
 ### 🕳️ Penetration Testing
 
