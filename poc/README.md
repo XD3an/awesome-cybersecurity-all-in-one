@@ -2654,6 +2654,13 @@
 - [0xBlackash/CVE-2026-8932](https://github.com/0xBlackash/CVE-2026-8932)
 - [nimaarek/CVE-2026-8932-PoC](https://github.com/nimaarek/CVE-2026-8932-PoC)
 
+### CVE-2026-8933 (2026-07-21)
+
+<code>A local privilege escalation vulnerability exists in snap-confine, a set-capabilities core component used internally by Canonical snapd to construct the secure execution environment for snap applications. This vulnerability uniquely affects versions of snap-confine configured with set-capabilities (rather than standard set-uid-root installations).\nDue to a flaw in how privilege boundaries or security sandboxes are initialized when the binary runs under limited ambient capabilities, a local, unprivileged attacker can exploit this behavior to bypass intended restrictions and execute arbitrary code. Successful exploitation allows the local user to elevate their privileges to full root authority.
+</code>
+
+- [songzzzz/CVE-2026-8933](https://github.com/songzzzz/CVE-2026-8933)
+
 ### CVE-2026-9018 (2026-05-22)
 
 <code>The Easy Elements for Elementor – Addons &amp; Website Templates plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.4.5 via the `easyel_handle_register()` function. This is due to the `wp_ajax_nopriv_eel_register` AJAX handler iterating the attacker-controlled `custom_meta` POST array and writing every supplied key-value pair to the newly created user's meta via `update_user_meta()` without any key whitelist or blocklist, allowing the `wp_capabilities` user meta key to be overwritten after `wp_insert_user()` has already assigned a safe role. This makes it possible for unauthenticated attackers to register a new account with full administrator-level privileges by supplying `custom_meta[wp_capabilities][administrator]=1`. Exploitation requires that user registration is enabled on the site and that at least one page exposes the Login/Register widget, which publishes the required `easy_elements_nonce` into the page DOM where it can be retrieved by any unauthenticated visitor via a simple GET request.
@@ -6237,13 +6244,6 @@
 
 - [aniketlab/POCO-M7-Plus-Jailbreak](https://github.com/aniketlab/POCO-M7-Plus-Jailbreak)
 
-### CVE-2026-24090 (2026-06-01)
-
-<code>Cryptographic issue while processing partition table entries allows unauthorized modification of boot flow.
-</code>
-
-- [wnduddld0513/Lenovo_Qcom_RPMB_Tool](https://github.com/wnduddld0513/Lenovo_Qcom_RPMB_Tool)
-
 ### CVE-2026-24102
 - [SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition](https://github.com/SimoesCTT/CTT-Kernel-Resonance-io_uring-Temporal-Phase-Transition)
 
@@ -7203,6 +7203,7 @@
 </code>
 
 - [R3n3r0/CVE-2026-27280](https://github.com/R3n3r0/CVE-2026-27280)
+- [Nehust/CVE-2026-27280](https://github.com/Nehust/CVE-2026-27280)
 
 ### CVE-2026-27344 (2026-03-05)
 
@@ -11730,6 +11731,7 @@
 - [y896406256-lang/ghostlock-brt-w09](https://github.com/y896406256-lang/ghostlock-brt-w09)
 - [saltlyfish666/magicpad3-root-research](https://github.com/saltlyfish666/magicpad3-root-research)
 - [MSEDGE-CORE/GhostLock-HonorFne](https://github.com/MSEDGE-CORE/GhostLock-HonorFne)
+- [Venshell/hlk-al00-kernel-build](https://github.com/Venshell/hlk-al00-kernel-build)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -15065,7 +15067,6 @@
 - [ChiefYoru/CVE-2026-63030_PoC](https://github.com/ChiefYoru/CVE-2026-63030_PoC)
 - [own2pwn-fr/wp2shell-detect](https://github.com/own2pwn-fr/wp2shell-detect)
 - [JohenLastGen-JLG/wp2shell](https://github.com/JohenLastGen-JLG/wp2shell)
-- [mhtsec/CVE-2026-63030](https://github.com/mhtsec/CVE-2026-63030)
 - [c0gnit00/Wp2Shell](https://github.com/c0gnit00/Wp2Shell)
 - [ikow/wp2shell](https://github.com/ikow/wp2shell)
 - [TomorrowX6/CVE-2026-63030-poc](https://github.com/TomorrowX6/CVE-2026-63030-poc)
@@ -15256,6 +15257,9 @@
 - [Meniben/redmi14c-pond-cve-2026-64560](https://github.com/Meniben/redmi14c-pond-cve-2026-64560)
 - [sangsheng2026/honor-90gt-mag-an00-root-research](https://github.com/sangsheng2026/honor-90gt-mag-an00-root-research)
 - [feiguang-ai/plz110-6.12.69-cve-2026-64560-ksu](https://github.com/feiguang-ai/plz110-6.12.69-cve-2026-64560-ksu)
+- [maosasagawa/pmx110-cve-2026-64560](https://github.com/maosasagawa/pmx110-cve-2026-64560)
+- [ChaYeWuu/prague-CVE-2026-64560-OS4.0](https://github.com/ChaYeWuu/prague-CVE-2026-64560-OS4.0)
+- [totsiaw/cve-2026-64560-rmx6699](https://github.com/totsiaw/cve-2026-64560-rmx6699)
 
 ### CVE-2026-64561 (2026-08-04)
 
@@ -17488,13 +17492,6 @@
 
 - [Ping-2o/ios.CVE-2026-84616-84607](https://github.com/Ping-2o/ios.CVE-2026-84616-84607)
 
-### CVE-2026-84645 (2026-09-02)
-
-<code>In Jenkins 2.579 and earlier, LTS 2.568.2 and earlier, objects of types marked as storing their configuration in independent top-level configuration files in Jenkins (such as the global configuration and jobs) can appear as nested field values in user-submitted `config.xml` documents and subsequently handle HTTP requests via Stapler, resulting in remote code execution.
-</code>
-
-- [mhtsec/CVE-2026-84645](https://github.com/mhtsec/CVE-2026-84645)
-
 ### CVE-2026-84753 (2026-09-03)
 
 <code>Unauthenticated PHP Object Injection in Mail Mint &lt;= 1.31.0 versions.
@@ -17577,7 +17574,6 @@
 - [FlowerWitch/CVE-2026-85706_docker_exp](https://github.com/FlowerWitch/CVE-2026-85706_docker_exp)
 - [guneykabel/cve-2026-85706](https://github.com/guneykabel/cve-2026-85706)
 - [solivaquaant/CVE-2026-85706](https://github.com/solivaquaant/CVE-2026-85706)
-- [mhtsec/CVE-2026-85706](https://github.com/mhtsec/CVE-2026-85706)
 - [ynsmroztas/GitLabSniper](https://github.com/ynsmroztas/GitLabSniper)
 - [jithinkrishnanrs/gitlab-cve-2026-85706-ioc](https://github.com/jithinkrishnanrs/gitlab-cve-2026-85706-ioc)
 - [0xlyvio/cve-2026-85706-poc-exploit-gitlab](https://github.com/0xlyvio/cve-2026-85706-poc-exploit-gitlab)
@@ -17959,6 +17955,13 @@
 - [Polosss/By-Poloss..-.CVE-2026-89274](https://github.com/Polosss/By-Poloss..-.CVE-2026-89274)
 - [Hassham1/CVE-2026-89274-wp-recipe-maker-poc](https://github.com/Hassham1/CVE-2026-89274-wp-recipe-maker-poc)
 
+### CVE-2026-89282 (2026-09-22)
+
+<code>The Apache Lounge Windows distribution of Apache HTTP Server build contains an insecure installation directory permissions vulnerability through its default install directory on C:\, which inherits write access for Authenticated Users.
+</code>
+
+- [dorkerdevil/CVE-2026-89282](https://github.com/dorkerdevil/CVE-2026-89282)
+
 ### CVE-2026-90781 (2026-09-13)
 
 <code>alsa-lib through 1.2.16.1 contains a stack buffer overflow in the __snd_ctl_ascii_elem_id_parse() function that writes one byte past a 64-byte buffer when parsing a name= field with 64 or more characters. Attackers can supply a long control-element identifier string through saved state files or command-line arguments to overwrite adjacent stack memory and crash the calling process.
@@ -18166,7 +18169,7 @@
 
 ### CVE-2026-93485 (2026-09-18)
 
-<code>Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Automattic WordPress core allows DOM-Based XSS.\n\n\nThis issue affects WordPress versions 7.1 before 7.1.1; 7.0 through 7.0.4; 6.9 through 6.9.7; 6.8 through 6.8.8; 6.7 through 6.7.7; 6.6 through 6.6.7; 6.5 through 6.5.10; 6.4 through 6.4.10; 6.3 through 6.3.10; 6.2 through 6.2.11; 6.1 through 6.1.12; 6.0 through 6.0.14; 5.9 through 5.9.16; 5.8 through 5.8.15; 5.7 through 5.7.17; 5.6 through 5.6.19; 5.5 through 5.5.20; 5.4 through 5.4.21; 5.3 through 5.3.23; 5.2 through 5.2.26; 5.1 through 5.1.24; 5.0 through 5.0.27; 4.9 through 4.9.31; 4.8 through 4.8.30; and 4.7 through 4.7.35.\n\n\n\n\nThe Unauthenticated Stored XSS vulnerability in the WordPress core can be reproduced on a default WordPress installation. Comment moderation is disabled by default, and the requirement for commenters to have a previously approved comment can be bypassed.
+<code>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Automattic WordPress wordpress allows DOM-Based XSS.This issue affects WordPress: from n/a through 7.1.
 </code>
 
 - [HORKimhab/CVE-2026-93485](https://github.com/HORKimhab/CVE-2026-93485)
@@ -18316,7 +18319,6 @@
 - [HORKimhab/CVE-2026-94545](https://github.com/HORKimhab/CVE-2026-94545)
 - [Hassham1/CVE-2026-94545-nextjs-og-poc](https://github.com/Hassham1/CVE-2026-94545-nextjs-og-poc)
 - [EQSTLab/CVE-2026-94545](https://github.com/EQSTLab/CVE-2026-94545)
-- [mhtsec/CVE-2026-94545](https://github.com/mhtsec/CVE-2026-94545)
 - [MRdark-ops/CVE-2026-94545-](https://github.com/MRdark-ops/CVE-2026-94545-)
 
 ### CVE-2026-94597
@@ -18449,6 +18451,7 @@
 
 - [rafabd1/VectorFreed](https://github.com/rafabd1/VectorFreed)
 - [lion9453/CVE-2026-96889-nextjs-rce](https://github.com/lion9453/CVE-2026-96889-nextjs-rce)
+- [pauleprichna/cybersecurity](https://github.com/pauleprichna/cybersecurity)
 
 ### CVE-2026-96940 (2026-10-02)
 
@@ -18529,6 +18532,8 @@
 </code>
 
 - [MChorfa/csumguard](https://github.com/MChorfa/csumguard)
+- [PeronGH/CVE-2026-99999](https://github.com/PeronGH/CVE-2026-99999)
+- [Quaerendir/cve-2026-99999-audit](https://github.com/Quaerendir/cve-2026-99999-audit)
 
 ### CVE-2026-100380 (2026-09-25)
 
@@ -19011,7 +19016,11 @@
 
 - [M3aCulpa/CVE-2026-104715](https://github.com/M3aCulpa/CVE-2026-104715)
 
-### CVE-2026-104736
+### CVE-2026-104736 (2026-10-17)
+
+<code>The LearnPress plugin for WordPress is vulnerable to PHP Object Injection in versions up to, and including, 4.4.10 via deserialization of untrusted input from the 'checkout-email' request parameter during the checkout AJAX action. The value is passed through sanitize_text_field(), which does not strip serialized object syntax, then stored in the LearnPress session table and later fed to LP_Helper::maybe_unserialize() → unserialize() (without an allowed_classes restriction) by LP_Session_Handler::get() on subsequent requests. This makes it possible for unauthenticated attackers to inject a PHP Object.
+</code>
+
 - [BIBILZERODAY/CVE-2026-104736---Proof-of-Concept-PoC-Exploit-Details](https://github.com/BIBILZERODAY/CVE-2026-104736---Proof-of-Concept-PoC-Exploit-Details)
 
 ### CVE-2026-104745 (2026-10-16)
@@ -19160,6 +19169,12 @@
 
 ### CVE-2026-107082
 - [Primandito/CVE-2026-107082](https://github.com/Primandito/CVE-2026-107082)
+
+### CVE-2026-107083
+- [Primandito/CVE-2026-107083](https://github.com/Primandito/CVE-2026-107083)
+
+### CVE-2026-107084
+- [Primandito/CVE-2026-107084](https://github.com/Primandito/CVE-2026-107084)
 
 ### CVE-2026-107159 (2026-10-07)
 
@@ -19313,6 +19328,13 @@
 </code>
 
 - [Syscallh00k/CVE-2026-111444](https://github.com/Syscallh00k/CVE-2026-111444)
+
+### CVE-2026-111823 (2026-10-16)
+
+<code>Mage OSS through 0.9.80 before 76c4f46 can proceed with session creation upon encountering an unknown OAuth provider.
+</code>
+
+- [murrez/CVE-2026-111823](https://github.com/murrez/CVE-2026-111823)
 
 ### CVE-2026-350234
 - [usernameisunavailable-cell/Bili-cracker](https://github.com/usernameisunavailable-cell/Bili-cracker)
@@ -21373,9 +21395,6 @@
 - [lennertdefauw/CVE-2025-8088](https://github.com/lennertdefauw/CVE-2025-8088)
 - [shaheeryasirofficial/CVE-2025-8088](https://github.com/shaheeryasirofficial/CVE-2025-8088)
 - [Lewis-Ricardo/Amaranth-Project](https://github.com/Lewis-Ricardo/Amaranth-Project)
-- [roof1948576qwd/CVE-2025-8088-WinRAR-PoC-1](https://github.com/roof1948576qwd/CVE-2025-8088-WinRAR-PoC-1)
-- [roof1948576qwd/CVE-2025-8088-WinRAR-PoC-2](https://github.com/roof1948576qwd/CVE-2025-8088-WinRAR-PoC-2)
-- [roof1948576qwd/CVE-2025-8088-WinRAR-PoC-3](https://github.com/roof1948576qwd/CVE-2025-8088-WinRAR-PoC-3)
 
 ### CVE-2025-8091 (2025-08-15)
 
@@ -28401,6 +28420,7 @@
 - [haxorstars/CVE-2025-54068](https://github.com/haxorstars/CVE-2025-54068)
 - [HelgeSverre/livewire-honeypot](https://github.com/HelgeSverre/livewire-honeypot)
 - [luisdalmolin/recon-test-livewire](https://github.com/luisdalmolin/recon-test-livewire)
+- [GustavoLopreto/cve-2025-54068-vuln-intel](https://github.com/GustavoLopreto/cve-2025-54068-vuln-intel)
 
 ### CVE-2025-54100 (2025-12-09)
 
@@ -31508,13 +31528,6 @@
 
 ### CVE-2025-65862
 - [rimbadirgantara/opac-fast-automation](https://github.com/rimbadirgantara/opac-fast-automation)
-
-### CVE-2025-65881 (2025-12-02)
-
-<code>Sourcecodester Zoo Management System v1.0 is vulnerable to Cross Site Scripting (XSS) in /classes/Login.php.
-</code>
-
-- [MMAKINGDOM/CVE-2025-65881](https://github.com/MMAKINGDOM/CVE-2025-65881)
 
 ### CVE-2025-65899 (2025-12-04)
 
@@ -40278,6 +40291,7 @@
 - [zenzue/CVE-2024-38063-POC](https://github.com/zenzue/CVE-2024-38063-POC)
 - [AdminPentester/CVE-2024-38063-](https://github.com/AdminPentester/CVE-2024-38063-)
 - [ThemeHackers/CVE-2024-38063](https://github.com/ThemeHackers/CVE-2024-38063)
+- [KernelKraze/CVE-2024-38063_PoC](https://github.com/KernelKraze/CVE-2024-38063_PoC)
 - [ps-interactive/cve-2024-38063](https://github.com/ps-interactive/cve-2024-38063)
 - [brownpanda29/Cve-2024-38063](https://github.com/brownpanda29/Cve-2024-38063)
 - [FrancescoDiSalesGithub/quick-fix-cve-2024-38063](https://github.com/FrancescoDiSalesGithub/quick-fix-cve-2024-38063)
@@ -48124,6 +48138,7 @@
 - [AhmedMansour93/Event-ID-189-Rule-Name-SOC227-CVE-2023-29357](https://github.com/AhmedMansour93/Event-ID-189-Rule-Name-SOC227-CVE-2023-29357)
 - [DeividasTerechovas/SOC227-Microsoft-SharePoint-Server-Elevation-of-Privilege-Possible-CVE-2023-29357-Exploitation](https://github.com/DeividasTerechovas/SOC227-Microsoft-SharePoint-Server-Elevation-of-Privilege-Possible-CVE-2023-29357-Exploitation)
 - [DonVorrin/CVE-2023-29357](https://github.com/DonVorrin/CVE-2023-29357)
+- [Zedocun/Sharepoint-cve-2023-29357-incident-response](https://github.com/Zedocun/Sharepoint-cve-2023-29357-incident-response)
 
 ### CVE-2023-29360 (2023-06-13)
 
@@ -48133,13 +48148,6 @@
 - [Nero22k/cve-2023-29360](https://github.com/Nero22k/cve-2023-29360)
 - [0xDivyanshu-new/CVE-2023-29360](https://github.com/0xDivyanshu-new/CVE-2023-29360)
 - [Scottman625/CVE-2023-29360](https://github.com/Scottman625/CVE-2023-29360)
-
-### CVE-2023-29375 (2023-04-10)
-
-<code>An issue was discovered in Progress Sitefinity 13.3 before 13.3.7647, 14.0 before 14.0.7736, 14.1 before 14.1.7826, 14.2 before 14.2.7930, and 14.3 before 14.3.8025. There is potentially dangerous file upload through the SharePoint connector.
-</code>
-
-- [Zedocun/Sharepoint-cve-2023-29375-incident-response](https://github.com/Zedocun/Sharepoint-cve-2023-29375-incident-response)
 
 ### CVE-2023-29384 (2023-12-20)
 
@@ -56061,6 +56069,7 @@
 - [HynekPetrak/log4shell-finder](https://github.com/HynekPetrak/log4shell-finder)
 - [AlphabugX/CVE-2022-RCE](https://github.com/AlphabugX/CVE-2022-RCE)
 - [tkomlodi/CVE-2022-23305_POC](https://github.com/tkomlodi/CVE-2022-23305_POC)
+- [hoor113/CVE-2022-23305-Demo-and-Whitebox-Report](https://github.com/hoor113/CVE-2022-23305-Demo-and-Whitebox-Report)
 
 ### CVE-2022-23342 (2022-06-21)
 
