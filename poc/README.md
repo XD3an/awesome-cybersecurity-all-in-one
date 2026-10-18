@@ -4121,9 +4121,6 @@
 
 - [HORKimhab/CVE-2026-17583](https://github.com/HORKimhab/CVE-2026-17583)
 
-### CVE-2026-17588
-- [abraxas/qemu-xhci-complete-uaf](https://github.com/abraxas/qemu-xhci-complete-uaf)
-
 ### CVE-2026-17633 (2026-08-05)
 
 <code>IBM Langflow OSS 1.0.0 through 1.10.3 could allow a remote authenticated attacker to execute arbitrary code due to code injection.
@@ -8474,7 +8471,6 @@
 - [cleozi/Copy_Grail](https://github.com/cleozi/Copy_Grail)
 - [vorkampfer/copyfail2_electric_boogaloo_fix](https://github.com/vorkampfer/copyfail2_electric_boogaloo_fix)
 - [AdemZero/CVE-2026-31431](https://github.com/AdemZero/CVE-2026-31431)
-- [Lutfifakee-Project/CVE-2026-31431](https://github.com/Lutfifakee-Project/CVE-2026-31431)
 - [u1tr0nex/CVE-2026-31431-CopyFail-Lab](https://github.com/u1tr0nex/CVE-2026-31431-CopyFail-Lab)
 - [mauricioportela/CVE-2026-31431-Analysis](https://github.com/mauricioportela/CVE-2026-31431-Analysis)
 - [dgrobinson0/CopyFile_CVE-2026-31431](https://github.com/dgrobinson0/CopyFile_CVE-2026-31431)
@@ -8539,7 +8535,6 @@
 </code>
 
 - [0xBlackash/CVE-2026-31635](https://github.com/0xBlackash/CVE-2026-31635)
-- [Lutfifakee-Project/CVE-2026-31635](https://github.com/Lutfifakee-Project/CVE-2026-31635)
 - [0xFuffM3/CVE-2026-31635-DirtyDecrypt](https://github.com/0xFuffM3/CVE-2026-31635-DirtyDecrypt)
 - [Koshmare-Blossom/DirtyDecrypt-go](https://github.com/Koshmare-Blossom/DirtyDecrypt-go)
 
@@ -10296,6 +10291,9 @@
 - [jjcjgo/CVE-2026-38812-RuoYi-SQL-Injection](https://github.com/jjcjgo/CVE-2026-38812-RuoYi-SQL-Injection)
 - [YYF1337/RuoYi-CVE-2026-38812-UNFIX](https://github.com/YYF1337/RuoYi-CVE-2026-38812-UNFIX)
 
+### CVE-2026-38838
+- [pawelskokowski/CVE-2026-38838](https://github.com/pawelskokowski/CVE-2026-38838)
+
 ### CVE-2026-38934 (2026-04-27)
 
 <code>Cross Site Request Forgery vulnerability in diskoverdata diskover-community v.2.3.5. and before allows a remote attacker to escalate privileges and obtain sensitive information via the public/settings_process.php
@@ -10999,7 +10997,6 @@
 - [shibaaa204/Pack2TheRoot](https://github.com/shibaaa204/Pack2TheRoot)
 - [Kowntaewook/CVE-2026-41651-analysis](https://github.com/Kowntaewook/CVE-2026-41651-analysis)
 - [mawussid/CVE-2026-41651-Python](https://github.com/mawussid/CVE-2026-41651-Python)
-- [Lutfifakee-Project/CVE-2026-41651](https://github.com/Lutfifakee-Project/CVE-2026-41651)
 - [0xDVRK/CVE-2026-41651](https://github.com/0xDVRK/CVE-2026-41651)
 - [gbuyssens/CVE-2026-41651](https://github.com/gbuyssens/CVE-2026-41651)
 - [ZeroDayEvil/CVE-2026-41651](https://github.com/ZeroDayEvil/CVE-2026-41651)
@@ -11077,7 +11074,6 @@
 - [Rosemary1337/CVE-2026-41940](https://github.com/Rosemary1337/CVE-2026-41940)
 - [mahfuzreham/cpanel-cve-2026-41940](https://github.com/mahfuzreham/cpanel-cve-2026-41940)
 - [unteikyou/CVE-2026-41940-AuthBypass-Detector](https://github.com/unteikyou/CVE-2026-41940-AuthBypass-Detector)
-- [Lutfifakee-Project/CVE-2026-41940](https://github.com/Lutfifakee-Project/CVE-2026-41940)
 - [NULL200OK/cve-2026-41940-tool](https://github.com/NULL200OK/cve-2026-41940-tool)
 - [ynsmroztas/cPanelSniper](https://github.com/ynsmroztas/cPanelSniper)
 - [0xYuR1/CVE-2026-41940](https://github.com/0xYuR1/CVE-2026-41940)
@@ -13061,6 +13057,7 @@
 - [ksotaria1337/-CVE-2026-48907-](https://github.com/ksotaria1337/-CVE-2026-48907-)
 - [NONAME-ELV/CVE-2026-48907](https://github.com/NONAME-ELV/CVE-2026-48907)
 - [theendofabbys/CVE-2026-48907](https://github.com/theendofabbys/CVE-2026-48907)
+- [0xCyp1337/CVE-2026-48907-RCE](https://github.com/0xCyp1337/CVE-2026-48907-RCE)
 
 ### CVE-2026-48908 (2026-06-20)
 
@@ -13407,6 +13404,13 @@
 </code>
 
 - [chaitanyagarware/CVE-2026-50181](https://github.com/chaitanyagarware/CVE-2026-50181)
+
+### CVE-2026-50229 (2026-06-29)
+
+<code>Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability in the number guess example for Apache Tomcat.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.22, from 10.1.0-M1 through 10.1.55, from 9.0.0.M1 through 9.0.118, from 8.5.0 through 8.5.100, from 7.0.0 through 7.0.109. Other versions that have reached end of support may also be affected.\n\nUsers are recommended to upgrade to version 11.0.23, 10.1.56 or 9.0.119, which fix the issue.
+</code>
+
+- [flvzx/CVE-2026-50229](https://github.com/flvzx/CVE-2026-50229)
 
 ### CVE-2026-50338 (2026-07-14)
 
@@ -14020,6 +14024,9 @@
 </code>
 
 - [anirbala98/CVE-2026-53959](https://github.com/anirbala98/CVE-2026-53959)
+
+### CVE-2026-53995
+- [SaiTeja-Erukude/CVE-2026-53995-mlflow-path-traversal](https://github.com/SaiTeja-Erukude/CVE-2026-53995-mlflow-path-traversal)
 
 ### CVE-2026-54088 (2026-06-25)
 
@@ -15047,7 +15054,6 @@
 - [tcyph3r/wp2shell-cve-2026-63030-root-cause](https://github.com/tcyph3r/wp2shell-cve-2026-63030-root-cause)
 - [dinosn/wp2shell-lab](https://github.com/dinosn/wp2shell-lab)
 - [47Cid/wp2shell-lab](https://github.com/47Cid/wp2shell-lab)
-- [Lutfifakee-Project/wp2shell](https://github.com/Lutfifakee-Project/wp2shell)
 - [ekomsSavior/wp2shell](https://github.com/ekomsSavior/wp2shell)
 - [NULL200OK/WP2Shell](https://github.com/NULL200OK/WP2Shell)
 - [kulichr/wp2shell](https://github.com/kulichr/wp2shell)
@@ -15246,7 +15252,7 @@
 
 <code>In the Linux kernel, the following vulnerability has been resolved:\n\nposix-cpu-timers: Prevent UAF caused by non-leader exec() race\n\nWongi and Jungwoo decoded and reported a non-leader exec() related race\nwhich can result in an UAF:\n\n sys_timer_delete()</code>
 
-- [imkidz0/CVE-2026-64560-exploit](https://github.com/imkidz0/CVE-2026-64560-exploit)
+- [imkidz0/exploit-CVE-2026-64560](https://github.com/imkidz0/exploit-CVE-2026-64560)
 - [villager1314/CVE-2026-64560-Analysis](https://github.com/villager1314/CVE-2026-64560-Analysis)
 - [quyicheng03-boop/xiaomi15-dada-cve-2026-64560](https://github.com/quyicheng03-boop/xiaomi15-dada-cve-2026-64560)
 - [RMDycz/K80Pro-miro-CVE-2026-64560](https://github.com/RMDycz/K80Pro-miro-CVE-2026-64560)
@@ -15830,6 +15836,7 @@
 - [HackSpeak/CVE-2026-67279](https://github.com/HackSpeak/CVE-2026-67279)
 - [tc4dy/CVE-2026-67279-86060-Toolkit](https://github.com/tc4dy/CVE-2026-67279-86060-Toolkit)
 - [shmaki4/CVE-2026-67279-Mikrotik-6.42-POC](https://github.com/shmaki4/CVE-2026-67279-Mikrotik-6.42-POC)
+- [GoldAden/mikrotrick-verifier](https://github.com/GoldAden/mikrotrick-verifier)
 
 ### CVE-2026-67281 (2026-09-05)
 
@@ -16569,6 +16576,7 @@
 
 - [techupdate24/linux-kernel-cve-2026-74580-vghost](https://github.com/techupdate24/linux-kernel-cve-2026-74580-vghost)
 - [ABC00012345/CVE-2026-74580](https://github.com/ABC00012345/CVE-2026-74580)
+- [V01DL1NG/vghost-watch](https://github.com/V01DL1NG/vghost-watch)
 
 ### CVE-2026-74586 (2026-08-22)
 
@@ -17778,7 +17786,6 @@
 - [ynsmroztas/WPSniper](https://github.com/ynsmroztas/WPSniper)
 - [bhideki/CVE-2026-87902](https://github.com/bhideki/CVE-2026-87902)
 - [tc4dy/CVE-2026-87902-Toolkit](https://github.com/tc4dy/CVE-2026-87902-Toolkit)
-- [Lutfifakee-Project/CVE-2026-87902](https://github.com/Lutfifakee-Project/CVE-2026-87902)
 - [nextco/wordpress-cve-2026-87902](https://github.com/nextco/wordpress-cve-2026-87902)
 - [zyphorixofficialmain-lab/cve-2026-87902](https://github.com/zyphorixofficialmain-lab/cve-2026-87902)
 - [crowsec-edtech/CVE-2026-87902](https://github.com/crowsec-edtech/CVE-2026-87902)
@@ -18297,6 +18304,13 @@
 
 - [MosesOX/POC-CVE-2026-94134](https://github.com/MosesOX/POC-CVE-2026-94134)
 
+### CVE-2026-94169 (2026-10-16)
+
+<code>Improper Control of Generation of Code ('Code Injection') vulnerability in Theme-one The Grid the-grid allows Command Injection.This issue affects The Grid: from n/a through 2.8.1.
+</code>
+
+- [kize7/CVE-2026-94169](https://github.com/kize7/CVE-2026-94169)
+
 ### CVE-2026-94503 (2026-10-09)
 
 <code>Unrestricted Upload of File with Dangerous Type vulnerability in PX-lab Zombify zombify allows Upload a Web Shell to a Web Server.This issue affects Zombify: from n/a through 1.7.7.
@@ -18497,6 +18511,7 @@
 - [AmpedWasTaken/CVE-2026-97229-GitLab-CI-CD-Regex-Compiler-RCE](https://github.com/AmpedWasTaken/CVE-2026-97229-GitLab-CI-CD-Regex-Compiler-RCE)
 - [jburgess-r7/CVE-2026-97229-PoC](https://github.com/jburgess-r7/CVE-2026-97229-PoC)
 - [OppositDeer/Gitlab-RCE-CVE-2026-97229](https://github.com/OppositDeer/Gitlab-RCE-CVE-2026-97229)
+- [gandli/cve-2026-97229-lab](https://github.com/gandli/cve-2026-97229-lab)
 
 ### CVE-2026-97286 (2026-09-30)
 
@@ -19041,6 +19056,13 @@
 ### CVE-2026-104826
 - [KiwKNR/CVE-2026-104826](https://github.com/KiwKNR/CVE-2026-104826)
 
+### CVE-2026-104850 (2026-10-06)
+
+<code>MCP TypeScript SDK is the official TypeScript SDK for Model Context Protocol servers and clients. Starting in version 1.12.0 and prior to versions 1.31.0 and 2.2.0, the SDK's OAuth client support let the MCP server a client connected to decide which authorization server received the client's OAuth credentials. Stored and pre-provisioned credentials were not bound to the authorization server they belong to. A malicious or compromised MCP server could name its own authorization server in its protected resource metadata. Without any user interaction, the client would send that server the `refresh_token` and `client_secret` stored from an earlier sign-in (1.x), or the configured `client_secret` or signed assertion of a bundled non-interactive provider (1.x and 2.x). Only those applications that use the SDK as an MCP client over HTTP with an `authProvider`: your own `OAuthClientProvider`, or the bundled `ClientCredentialsProvider`, `PrivateKeyJwtProvider`, `StaticPrivateKeyJwtProvider` or (2.x) `CrossAppAccessProvider` and that may connect to an MCP server the owners does not fully trust while holding credentials for a legitimate authorization server are affected. `@modelcontextprotocol/sdk` 1.31.0 (1.x) and `@modelcontextprotocol/client` 2.2.0 (2.x) patch the issue. A workaround for those who cannot upgrade is available. 2.0.0 and 2.1.0 already accept `expectedIssuer`. On 1.x, the only workaround is to connect OAuth-enabled clients only to MCP servers you trust.
+</code>
+
+- [Iceman2050/mcp-oauth-discovery-prober](https://github.com/Iceman2050/mcp-oauth-discovery-prober)
+
 ### CVE-2026-104905 (2026-10-05)
 
 <code>FacturaScripts before version 2026.7 contains a PHP object injection vulnerability in WidgetSelect::processFormData() that allows authenticated attackers to trigger unserialize() on raw POST data without an allowed_classes filter for multiple-select fields. Attackers can submit a serialized XLSXWriter object as the field value to invoke its __destruct() method, deleting arbitrary attacker-specified files such as config.php or backup data, resulting in denial of service and potential application reinstall hijack.
@@ -19284,6 +19306,7 @@
 <code>Collabora Online Built-in CODE Server before 26.4.303 (richdocumentscode), a Nextcloud app, allows remote code execution, as exploited in the wild in September and October 2026, a different vulnerability than CVE-2025-66208. This is an OS command injection in proxy.php when the CODE server isn't running (e.g., the product was recently restarted). The vulnerability is not present in standalone Collabora Online servers; only this deployment with CODE Server is affected.
 </code>
 
+- [adriyansyah-mf/cve-2026-110447](https://github.com/adriyansyah-mf/cve-2026-110447)
 - [Iceman2050/cve-2026-110447-checker](https://github.com/Iceman2050/cve-2026-110447-checker)
 
 ### CVE-2026-110896 (2026-10-16)
@@ -19321,6 +19344,9 @@
 </code>
 
 - [Syscallh00k/CVE-2026-111389](https://github.com/Syscallh00k/CVE-2026-111389)
+
+### CVE-2026-111437
+- [ulvigulmaliyev/CVE-2026-111437-Denial-of-Service-Advisory-Technical-Report](https://github.com/ulvigulmaliyev/CVE-2026-111437-Denial-of-Service-Advisory-Technical-Report)
 
 ### CVE-2026-111444 (2026-10-16)
 
@@ -19564,8 +19590,8 @@
 </code>
 
 - [FWNavy/RMASmoke](https://github.com/FWNavy/RMASmoke)
-- [ts2023dev/RMASmoke-v2](https://github.com/ts2023dev/RMASmoke-v2)
-- [ts2023dev/exploit-docs](https://github.com/ts2023dev/exploit-docs)
+- [jenson8161/RMASmoke-v2](https://github.com/jenson8161/RMASmoke-v2)
+- [jenson8161/exploit-docs](https://github.com/jenson8161/exploit-docs)
 
 ### CVE-2025-1219 (2025-03-30)
 
@@ -27399,6 +27425,7 @@
 - [Evillm/CVE-2025-49113-PoC](https://github.com/Evillm/CVE-2025-49113-PoC)
 - [mooder1/CVE-2025-49113](https://github.com/mooder1/CVE-2025-49113)
 - [rippsec/CVE-2025-49113-Roundcube-RCE](https://github.com/rippsec/CVE-2025-49113-Roundcube-RCE)
+- [rank03031/CVE-2025-49113-CTF](https://github.com/rank03031/CVE-2025-49113-CTF)
 
 ### CVE-2025-49125 (2025-06-16)
 
@@ -39308,6 +39335,13 @@
 
 - [SpiralBL0CK/CVE-2024-32462](https://github.com/SpiralBL0CK/CVE-2024-32462)
 
+### CVE-2024-32507 (2024-05-17)
+
+<code>Incorrect Privilege Assignment vulnerability in Hamid Alinia Login with phone number login-with-phone-number.This issue affects Login with phone number: from n/a through &lt;= 1.7.16.
+</code>
+
+- [4minx/CVE-2024-32507](https://github.com/4minx/CVE-2024-32507)
+
 ### CVE-2024-32640 (2025-08-11)
 
 <code>MASA CMS is an Enterprise Content Management platform based on open source technology. Versions prior to 7.4.5, 7.3.12, and 7.2.7 contain a SQL injection vulnerability in the `processAsyncObject` method that can result in remote code execution. Versions 7.4.5, 7.3.12, and 7.2.7 contain a fix for the issue.
@@ -40445,6 +40479,7 @@
 - [abrewer251/CVE-2024-38475_SonicBoom_Apache_URL_Traversal_PoC](https://github.com/abrewer251/CVE-2024-38475_SonicBoom_Apache_URL_Traversal_PoC)
 - [syaifulandy/CVE-2024-38475](https://github.com/syaifulandy/CVE-2024-38475)
 - [Nyakki-Labs-0x420/Myesve](https://github.com/Nyakki-Labs-0x420/Myesve)
+- [akabul0us/apache_poc](https://github.com/akabul0us/apache_poc)
 
 ### CVE-2024-38476 (2024-07-01)
 
@@ -62488,7 +62523,6 @@
 </code>
 
 - [QiuhaoLi/CVE-2021-3929-3947](https://github.com/QiuhaoLi/CVE-2021-3929-3947)
-- [abraxas/qemu-nvme-sgl-bar](https://github.com/abraxas/qemu-nvme-sgl-bar)
 
 ### CVE-2021-3972 (2022-04-22)
 
@@ -65507,6 +65541,7 @@
 - [AlDawli/CVE-2021-34527-](https://github.com/AlDawli/CVE-2021-34527-)
 - [KaritaMW/printnightmare-detection-mitigation-lab](https://github.com/KaritaMW/printnightmare-detection-mitigation-lab)
 - [joertx07/printnightmare-detection-lab](https://github.com/joertx07/printnightmare-detection-lab)
+- [s1kh/Vulnerability-Analysis-and-Mitigation](https://github.com/s1kh/Vulnerability-Analysis-and-Mitigation)
 
 ### CVE-2021-34558 (2021-07-15)
 
@@ -83527,6 +83562,7 @@
 - [Dungsocool/CVE-2017-5638](https://github.com/Dungsocool/CVE-2017-5638)
 - [GU-007/struts2-tool](https://github.com/GU-007/struts2-tool)
 - [Piyush-Tiwatne/struts-patch-gap-auditor](https://github.com/Piyush-Tiwatne/struts-patch-gap-auditor)
+- [s1kh/Vulnerability-Analysis-and-Mitigation](https://github.com/s1kh/Vulnerability-Analysis-and-Mitigation)
 
 ### CVE-2017-5645 (2017-04-17)
 
