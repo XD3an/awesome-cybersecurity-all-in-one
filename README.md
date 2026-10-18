@@ -239,3 +239,4 @@ This repository contains a curated collection of cybersecurity resources organiz
 - **[The Hacker News](https://thehackernews.com/)** - Cybersecurity news and updates
 - **[Dark Reading](https://www.darkreading.com/)** - Cybersecurity news and analysis
 - **[Threatpost](https://threatpost.com/)** - Security news and research
+- **[ICHI – Internet Cyber Health Index](https://ichi.global)** - Free, source-transparent daily barometer of internet cyber health, aggregating 20+ named public feeds (CISA, NCSC, vendor advisories, threat-intel blogs) into a single live view of the threat landscape
