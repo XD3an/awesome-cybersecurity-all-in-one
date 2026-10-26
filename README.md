@@ -182,6 +182,7 @@ This repository contains a curated collection of cybersecurity resources organiz
 - **[Shodan](https://www.shodan.io/)** - Search engine for Internet-connected devices
 - **[Censys](https://censys.io/)** - Internet-wide scanning and analysis platform
 - **[GreyNoise](https://www.greynoise.io/)** - Internet background noise analysis
+- **[Opsis](https://useopsis.com/)** - Find accounts linked to an email address, username or domain (freemium)
 
 ### 📈 Threat Hunting
 
