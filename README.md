@@ -182,6 +182,7 @@ This repository contains a curated collection of cybersecurity resources organiz
 - **[Shodan](https://www.shodan.io/)** - Search engine for Internet-connected devices
 - **[Censys](https://censys.io/)** - Internet-wide scanning and analysis platform
 - **[GreyNoise](https://www.greynoise.io/)** - Internet background noise analysis
+- **[Whatoblock](https://whatoblock.com/)** - Honeypot-observed scanner, botnet, proxy and Tor exit IP lookups
 
 ### 📈 Threat Hunting
 
